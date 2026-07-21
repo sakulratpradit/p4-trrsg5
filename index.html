@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Pillar 4 — US Portfolio Command Center</title>
+<style>
+:root{ color-scheme: light dark; }
+.viz-root{
+  color-scheme: light;
+  --surface-1:#fcfcfb; --page:#f9f9f7;
+  --ink-1:#0b0b0b; --ink-2:#52514e; --ink-3:#898781;
+  --grid:#e1e0d9; --axis:#c3c2b7; --ring:rgba(11,11,11,0.10);
+  --s1:#2a78d6; --s2:#008300; --s3:#e87ba4; --s4:#eda100; --s5:#1baf7a; --s6:#eb6834; --s7:#4a3aa7; --s8:#e34948; --s9:#767471; --s10:#184f95; --s11:#8c1d18;
+  --good:#006300; --bad:#d03b3b; --warn:#fab219; --chip:#f0efec;
+}
+:root[data-theme="dark"] .viz-root, .viz-root.dark{
+  color-scheme: dark;
+  --surface-1:#1a1a19; --page:#0d0d0d;
+  --ink-1:#ffffff; --ink-2:#c3c2b7; --ink-3:#898781;
+  --grid:#2c2c2a; --axis:#383835; --ring:rgba(255,255,255,0.10);
+  --s1:#3987e5; --s2:#008300; --s3:#d55181; --s4:#c98500; --s5:#199e70; --s6:#d95926; --s7:#9085e9; --s8:#e66767; --s9:#98968f; --s10:#86b6ef; --s11:#d97b73;
+  --good:#0ca30c; --bad:#e66767; --warn:#fab219; --chip:#262624;
+}
+*{box-sizing:border-box; margin:0; padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif; background:var(--page); color:var(--ink-1)}
+.viz-root{background:var(--page); color:var(--ink-1); min-height:100vh; padding:20px clamp(12px,3vw,36px) 60px}
+a{color:var(--s1)}
+header.top{display:flex; flex-wrap:wrap; gap:12px; align-items:baseline; justify-content:space-between; margin-bottom:6px}
+h1{font-size:clamp(20px,2.4vw,28px); letter-spacing:-.02em}
+h1 .sub{font-size:13px; color:var(--ink-3); font-weight:400; display:block; margin-top:2px}
+.meta-line{font-size:12px; color:var(--ink-3); text-align:right}
+.meta-line b{color:var(--ink-2); font-weight:600}
+.toggle{border:1px solid var(--ring); background:var(--surface-1); color:var(--ink-2); border-radius:8px; padding:5px 12px; font-size:12px; cursor:pointer}
+.tape-wrap{margin:14px 0 4px; border:1px solid var(--ring); border-radius:10px; overflow:hidden; background:var(--surface-1); min-height:46px}
+.tape-fallback{padding:12px 16px; font-size:12px; color:var(--ink-3)}
+.tiles{display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:12px; margin:16px 0}
+.tile{background:var(--surface-1); border:1px solid var(--ring); border-radius:12px; padding:14px 16px}
+.tile .k{font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:var(--ink-3); margin-bottom:6px}
+.tile .v{font-size:24px; font-weight:650; letter-spacing:-.02em}
+.tile .d{font-size:12px; color:var(--ink-2); margin-top:4px}
+.pos{color:var(--good)} .neg{color:var(--bad)}
+h2{font-size:15px; margin:26px 0 4px; display:flex; align-items:center; gap:8px}
+h2 .n{font-size:11px; color:var(--ink-3); font-weight:400}
+.note{font-size:12px; color:var(--ink-3); margin-bottom:10px}
+/* filter chips */
+.chipbar{display:flex; flex-wrap:wrap; gap:8px; margin:14px 0 4px; position:sticky; top:0; z-index:20; background:var(--page); padding:8px 0}
+.fchip{display:inline-flex; align-items:center; gap:7px; border:1px solid var(--ring); background:var(--surface-1); color:var(--ink-2); border-radius:20px; padding:5px 13px; font-size:12px; cursor:pointer}
+.fchip .dot{width:9px;height:9px;border-radius:3px}
+.fchip.on{border-color:var(--ink-2); color:var(--ink-1); font-weight:650; box-shadow:inset 0 0 0 1px var(--ink-2)}
+.fchip .ct{color:var(--ink-3); font-size:10.5px}
+/* fv ladder */
+.fv-card{background:var(--surface-1); border:1px solid var(--ring); border-radius:12px; padding:18px}
+.fv-ghead{font-size:11px; text-transform:uppercase; letter-spacing:.07em; color:var(--ink-2); font-weight:650; padding:12px 0 4px; display:flex; align-items:center; gap:7px}
+.fv-ghead:first-child{padding-top:0}
+.fv-row{display:grid; grid-template-columns:64px 1fr 248px 112px; gap:14px; align-items:center; padding:8px 0; border-bottom:1px solid var(--grid)}
+/* conviction vs devastation paired bars */
+.cd{display:flex; flex-direction:column; gap:3px; position:relative; padding:2px 0}
+.cd::before{content:""; position:absolute; left:50%; top:0; bottom:0; width:1px; background:var(--axis)}
+.lane{display:flex; height:11px}
+.half{width:50%; display:flex; align-items:center; gap:4px; min-width:0}
+.half.l{justify-content:flex-end}
+.cdbar{height:7px; border-radius:3px; flex:none}
+.cdbar.up{background:var(--good)} .cdbar.dn{background:var(--bad)}
+.cdv{font-size:9.5px; font-variant-numeric:tabular-nums; color:var(--ink-2); white-space:nowrap; flex:none}
+.cdv.na{color:var(--ink-3); font-style:italic}
+.fv-row:last-child{border-bottom:none}
+.fv-tick{font-weight:650; font-size:13.5px; display:flex; align-items:center; gap:8px}
+.dot{width:10px; height:10px; border-radius:3px; flex:none}
+.fv-track{position:relative; height:26px}
+.fv-base{position:absolute; left:0; right:0; top:12px; height:2px; background:var(--grid); border-radius:2px}
+.fv-range{position:absolute; top:9px; height:8px; border-radius:4px; opacity:.30}
+.fv-avg{position:absolute; top:5px; width:2px; height:16px; background:var(--ink-2)}
+.fv-now{position:absolute; top:7px; width:12px; height:12px; border-radius:50%; border:2px solid var(--surface-1); transform:translateX(-6px)}
+.fv-lab{font-size:12px; color:var(--ink-2); font-variant-numeric:tabular-nums; text-align:right}
+.fv-lab b{font-size:13px; color:var(--ink-1)}
+/* bubble map */
+.bub-card{background:var(--surface-1); border:1px solid var(--ring); border-radius:12px; padding:18px 18px 8px; position:relative}
+.bub-card svg{width:100%; max-width:760px; height:auto; display:block; margin:0 auto}
+.bub-card .axis-t{font-size:14px; fill:var(--ink-3)}
+.bub-card .axis-cap{font-size:15px; fill:var(--ink-2); font-weight:600}
+.bub-card .quad{font-size:13px; fill:var(--ink-3); opacity:.85}
+.bub-card .blab{font-size:14px; font-weight:700; fill:var(--ink-1)}
+.bub-tip{position:absolute; pointer-events:none; background:var(--surface-1); border:1px solid var(--ring); box-shadow:0 4px 14px rgba(0,0,0,.18); border-radius:8px; padding:8px 11px; font-size:11.5px; color:var(--ink-2); display:none; z-index:5; min-width:150px; line-height:1.5}
+.bub-tip b{color:var(--ink-1)}
+/* matrix */
+.tbl-wrap{overflow:auto; background:var(--surface-1); border:1px solid var(--ring); border-radius:12px; max-height:76vh}
+table{border-collapse:collapse; font-size:12.5px}
+th,td{padding:6px 10px; text-align:right; font-variant-numeric:tabular-nums; border-bottom:1px solid var(--grid); white-space:nowrap}
+th{font-weight:600}
+thead th{position:sticky; background:var(--surface-1); font-size:12.5px; z-index:3}
+thead tr.gband th{top:0; font-size:10px; text-transform:uppercase; letter-spacing:.06em; color:#fff; padding:3px 10px; text-align:left}
+thead tr.tkr th{top:22px; border-bottom:2px solid var(--axis)}
+tbody th{text-align:left; font-weight:500; color:var(--ink-2); position:sticky; left:0; background:var(--surface-1); z-index:2; max-width:225px}
+thead tr.tkr th:first-child, thead tr.gband th:first-child{left:0; z-index:4; background:var(--surface-1)}
+tbody th .idx{color:var(--ink-3); font-size:10.5px; margin-right:6px}
+tr.group td, tr.group th{background:var(--chip); color:var(--ink-2); font-size:11px; text-transform:uppercase; letter-spacing:.07em; font-weight:650; padding:5px 10px; text-align:left}
+thead .tk{display:inline-flex; align-items:center; gap:6px}
+td .arr{font-size:10px}
+tbody tr:hover td, tbody tr:hover th{background:color-mix(in oklab, var(--s1) 6%, var(--surface-1))}
+tbody tr.group:hover td, tbody tr.group:hover th{background:var(--chip)}
+/* cards */
+.cards{display:grid; grid-template-columns:repeat(auto-fill,minmax(330px,1fr)); gap:14px}
+.card{background:var(--surface-1); border:1px solid var(--ring); border-radius:12px; padding:16px; display:flex; flex-direction:column; gap:10px}
+.card .head{display:flex; justify-content:space-between; align-items:baseline}
+.card .head .t{font-size:17px; font-weight:700; display:flex; gap:8px; align-items:center}
+.card .head .p{font-size:17px; font-weight:650; font-variant-numeric:tabular-nums}
+.card .gname{font-size:10.5px; color:var(--ink-3); text-transform:uppercase; letter-spacing:.05em}
+.chips{display:flex; flex-wrap:wrap; gap:6px}
+.chip{background:var(--chip); border-radius:20px; padding:3px 10px; font-size:11px; color:var(--ink-2); font-variant-numeric:tabular-nums}
+.chip b{color:var(--ink-1)}
+.mini{border:1px solid var(--grid); border-radius:8px; overflow:hidden; min-height:70px}
+.kv{display:grid; grid-template-columns:1fr 1fr; gap:4px 16px; font-size:12px}
+.kv div{display:flex; justify-content:space-between; border-bottom:1px dotted var(--grid); padding:3px 0}
+.kv span:first-child{color:var(--ink-3)}
+.kv span:last-child{font-variant-numeric:tabular-nums; font-weight:550}
+.inp-row{display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; font-size:11px; color:var(--ink-3)}
+.inp-row label{display:flex; flex-direction:column; gap:3px}
+.inp-row input{background:transparent; border:1px dashed var(--axis); border-radius:6px; color:var(--ink-1); font:inherit; padding:4px 8px; font-variant-numeric:tabular-nums}
+.posline{font-size:12px; color:var(--ink-2); border-top:1px solid var(--grid); padding-top:8px; display:flex; justify-content:space-between; font-variant-numeric:tabular-nums}
+footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
+.legend{display:flex; flex-wrap:wrap; gap:14px; font-size:11px; color:var(--ink-3); margin:8px 0 2px}
+.legend span{display:inline-flex; align-items:center; gap:5px}
+@media print {.mini,.tape-wrap{display:none}}
+</style>
+</head>
+<body>
+<div class="viz-root" id="root">
+
+<header class="top">
+  <h1>Pillar 4 · US Portfolio Command Center
+    <span class="sub">48 positions · AI · Semis · Infrastructure — Salee's book</span>
+  </h1>
+  <div style="display:flex; gap:10px; align-items:center">
+    <div class="meta-line">Fundamentals as of <b id="asof"></b> · prices = last close<br>Next scheduled refresh: <b>Mon 08:00 Bangkok</b></div>
+    <button class="toggle" id="themeBtn">◐ Theme</button>
+  </div>
+</header>
+
+<div class="tape-wrap" id="tape">
+  <div class="tape-fallback">Live ticker loading… (TradingView) — if it doesn't appear, your viewer blocks external embeds; figures below are from the last refresh close.</div>
+</div>
+
+<div class="tiles" id="tiles"></div>
+
+<div class="chipbar" id="chipbar"></div>
+<div class="note" style="margin-top:0">Salee's grouping (notebook Jul 21 + corrections). <b style="color:var(--bad)">⚠ To Be Sold: IREN · NBIS</b> — exit pending, kept visible until sold. CDNS sold Jul 20 → removed. Click a group to focus every panel.</div>
+
+<h2>Fair-value ladder <span class="n">bar = analyst min→max target · | = avg target · ● = last close · right column, shared zero center: <b>FV</b> = conviction to avg target · <b>ATH</b> = devastation vs 52-wk high · <b>YTD</b> = price growth since Jan 2 '26 open</span></h2>
+<div class="fv-card" id="fvladder"></div>
+
+<h2>Valuation map <span class="n">x = gross margin % · y = P/E (log scale; hollow ring = forward P/E where unprofitable) · bubble area = position value</span></h2>
+<div class="note" id="bubnote">Bottom-right = fat margins at a reasonable multiple. Dashed lines = median of shown names. Unlabeled small bubbles: hover for details.</div>
+<div class="bub-card" id="bubwrap"><svg id="bubble" viewBox="0 0 940 560" role="img" aria-label="Bubble chart of gross margin versus P/E, bubble size is position market value"></svg><div class="bub-tip" id="bubtip"></div></div>
+
+<h2>Metric matrix <span class="n">your notebook, digitized — 27 metrics × <span id="mcount"></span> stocks</span></h2>
+<div class="legend">
+  <span><span class="dot" style="background:var(--good)"></span>▲ favorable</span>
+  <span><span class="dot" style="background:var(--bad)"></span>▼ unfavorable</span>
+  <span>“—” = not meaningful (e.g. negative earnings) · Budget row awaits your numbers · edit cost/shares in cards below</span>
+</div>
+<div class="tbl-wrap"><table id="matrix"></table></div>
+
+<h2>Position cards <span class="n">charts load as you scroll · edits recompute instantly (in-memory until I bake them in)</span></h2>
+<div class="cards" id="cards"></div>
+
+<footer id="foot"></footer>
+</div>
+
+<script>
+/* ============ DATA — refreshed weekly by Claude ============ */
+const ASOF = "Jul 17, 2026 (US close)";
+const GROUPS = ["Hyperscalers","Computing Chips","Chips Manufacturing","Memory Chips","Photonic & Optic Fiber","Energy","Robotic / Automation / EV","Space / Drone / Defense","Quantum","SaaS","\u26a0 To Be Sold"];
+const STOCKS = [{"t":"MSFT","name":"Microsoft","ex":"NASDAQ","g":0,"price":393.82,"jan2":482.24,"mcapB":2930,"ath":555.45,"fvMin":400,"fvAvg":558.77,"fvMax":870,"an":56,"peg":1.3,"ps":9.19,"fpe":21.26,"pe":23.46,"gm":68.31,"pm":39.34,"revB":318.27,"revG":17.9,"eps":16.79,"epsG":29.8,"roi":27.24,"roe":34.01,"fcfB":72.92,"capexB":97.23,"r40":40.8},{"t":"GOOGL","name":"Alphabet","ex":"NASDAQ","g":0,"price":354.46,"jan2":316.9,"mcapB":4330,"ath":408.61,"fvMin":340,"fvAvg":433.51,"fvMax":515,"an":64,"peg":1.72,"ps":10.02,"fpe":28.01,"pe":27.04,"gm":60.37,"pm":37.92,"revB":422.5,"revG":17.5,"eps":13.11,"epsG":46.4,"roi":28.34,"roe":38.88,"fcfB":64.43,"capexB":109.92,"r40":32.8},{"t":"AMZN","name":"Amazon","ex":"NASDAQ","g":0,"price":247.23,"jan2":231.34,"mcapB":2660,"ath":278.56,"fvMin":207,"fvAvg":314.23,"fvMax":370,"an":65,"peg":1.39,"ps":3.58,"fpe":29.55,"pe":29.57,"gm":50.6,"pm":12.22,"revB":742.78,"revG":14.2,"eps":8.36,"epsG":36.2,"roi":13.49,"roe":24.28,"fcfB":-2.47,"capexB":151.0,"r40":13.9},{"t":"META","name":"Meta Platforms","ex":"NASDAQ","g":0,"price":646.01,"jan2":649.25,"mcapB":1640,"ath":796.25,"fvMin":664.46,"fvAvg":822.69,"fvMax":1015,"an":63,"peg":0.96,"ps":7.63,"fpe":19.82,"pe":23.5,"gm":81.94,"pm":32.84,"revB":214.96,"revG":26.2,"eps":27.49,"epsG":7.3,"roi":29.8,"roe":32.93,"fcfB":48.25,"capexB":75.75,"r40":48.6},{"t":"AAPL","name":"Apple","ex":"NASDAQ","g":0,"price":333.74,"jan2":270.51,"mcapB":4900,"ath":334.99,"fvMin":215,"fvAvg":318.25,"fvMax":400,"an":47,"peg":3.19,"ps":10.86,"fpe":36.57,"pe":40.46,"gm":47.86,"pm":27.15,"revB":451.44,"revG":12.8,"eps":8.25,"epsG":28.8,"roi":104.33,"roe":141.47,"fcfB":129.17,"capexB":11.05,"r40":41.4},{"t":"ORCL","name":"Oracle","ex":"NYSE","g":0,"price":126.41,"jan2":193.84,"mcapB":364,"ath":345.72,"fvMin":155,"fvAvg":251.85,"fvMax":400,"an":43,"peg":0.55,"ps":5.41,"fpe":15.76,"pe":21.68,"gm":65.82,"pm":25.37,"revB":67.36,"revG":17.4,"eps":5.83,"epsG":34.3,"roi":11.48,"roe":53.38,"fcfB":-23.69,"capexB":55.66,"r40":-17.8},{"t":"NVDA","name":"NVIDIA","ex":"NASDAQ","g":1,"price":202.81,"jan2":189.6,"mcapB":4910,"ath":236.54,"fvMin":180,"fvAvg":301.62,"fvMax":500,"an":61,"peg":0.46,"ps":19.38,"fpe":20.34,"pe":31.06,"gm":74.15,"pm":62.97,"revB":253.49,"revG":70.7,"eps":6.53,"epsG":110.6,"roi":104.67,"roe":114.29,"fcfB":119.08,"capexB":6.57,"r40":117.7},{"t":"AMD","name":"Advanced Micro Devices","ex":"NASDAQ","g":1,"price":495.76,"jan2":218.9,"mcapB":808.4,"ath":584.73,"fvMin":320,"fvAvg":525.4,"fvMax":725,"an":51,"peg":0.95,"ps":21.58,"fpe":56.08,"pe":162.5,"gm":53.06,"pm":13.37,"revB":37.45,"revG":35.0,"eps":3.05,"epsG":122.4,"roi":7.83,"roe":8.06,"fcfB":8.57,"capexB":1.15,"r40":57.9},{"t":"AVGO","name":"Broadcom","ex":"NASDAQ","g":1,"price":370.83,"jan2":352.78,"mcapB":1760,"ath":495.0,"fvMin":215.88,"fvAvg":523.73,"fvMax":650,"an":48,"peg":0.52,"ps":23.38,"fpe":23.53,"pe":61.72,"gm":68.28,"pm":38.85,"revB":75.47,"revG":32.3,"eps":6.01,"epsG":124.7,"roi":24.22,"roe":37.28,"fcfB":32.76,"capexB":0.86,"r40":75.7},{"t":"MRVL","name":"Marvell Technology","ex":"NASDAQ","g":1,"price":188.68,"jan2":86.74,"mcapB":165.2,"ath":329.88,"fvMin":110,"fvAvg":252.56,"fvMax":385,"an":43,"peg":1.17,"ps":18.96,"fpe":41.55,"pe":65.17,"gm":51.5,"pm":28.99,"revB":8.72,"revG":34.1,"eps":2.89,"epsG":null,"roi":6.87,"roe":16.03,"fcfB":1.67,"capexB":0.39,"r40":53.2},{"t":"INTC","name":"Intel","ex":"NASDAQ","g":1,"price":95.04,"jan2":37.77,"mcapB":477.7,"ath":142.35,"fvMin":45,"fvAvg":106.7,"fvMax":200,"an":48,"peg":1.18,"ps":8.88,"fpe":87.49,"pe":null,"gm":37.2,"pm":-5.9,"revB":53.76,"revG":1.4,"eps":-0.67,"epsG":null,"roi":1.47,"roe":-2.91,"fcfB":-3.12,"capexB":13.1,"r40":-4.4},{"t":"QCOM","name":"Qualcomm","ex":"NASDAQ","g":1,"price":171.78,"jan2":173.8,"mcapB":181.1,"ath":259.92,"fvMin":100,"fvAvg":221.9,"fvMax":314,"an":36,"peg":5.98,"ps":4.07,"fpe":17.39,"pe":18.77,"gm":54.8,"pm":22.31,"revB":44.49,"revG":5.2,"eps":9.15,"epsG":-6.3,"roi":32.94,"roe":36.08,"fcfB":12.5,"capexB":1.78,"r40":33.3},{"t":"TSM","name":"Taiwan Semiconductor","ex":"NYSE","g":1,"price":398.37,"jan2":311.98,"mcapB":1860,"ath":479.0,"fvMin":354,"fvAvg":520.37,"fvMax":700,"an":19,"peg":null,"ps":13.3,"fpe":18.8,"pe":26.64,"gm":64.23,"pm":49.92,"revB":139.57,"revG":30.6,"eps":13.44,"epsG":53.4,"roi":54.61,"roe":39.97,"fcfB":35.28,"capexB":46.87,"r40":55.8},{"t":"MPWR","name":"Monolithic Power","ex":"NASDAQ","g":1,"price":1312.0,"jan2":927.61,"mcapB":64.5,"ath":1714.09,"fvMin":1500,"fvAvg":1789.23,"fvMax":2000,"an":15,"peg":1.97,"ps":21.8,"fpe":51.22,"pe":93.89,"gm":55.18,"pm":22.98,"revB":2.96,"revG":23.9,"eps":13.97,"epsG":-58.6,"roi":28.02,"roe":19.57,"fcfB":0.63,"capexB":0.2,"r40":45.2},{"t":"AMKR","name":"Amkor Technology","ex":"NASDAQ","g":2,"price":62.94,"jan2":41.05,"mcapB":15.6,"ath":96.68,"fvMin":60,"fvAvg":78.0,"fvMax":90,"an":10,"peg":1.4,"ps":2.21,"fpe":28.95,"pe":36.2,"gm":14.43,"pm":6.17,"revB":7.07,"revG":12.7,"eps":1.74,"epsG":35.8,"roi":10.71,"roe":10.01,"fcfB":0.17,"capexB":1.05,"r40":15.1},{"t":"ASML","name":"ASML Holding","ex":"NASDAQ","g":2,"price":1747.58,"jan2":1133.76,"mcapB":675.6,"ath":1999.96,"fvMin":885.04,"fvAvg":2122.44,"fvMax":2859,"an":44,"peg":null,"ps":16.77,"fpe":31.47,"pe":55.68,"gm":52.73,"pm":30.11,"revB":40.29,"revG":9.8,"eps":31.41,"epsG":14.5,"roi":65.98,"roe":53.94,"fcfB":11.49,"capexB":1.65,"r40":38.4},{"t":"AMAT","name":"Applied Materials","ex":"NASDAQ","g":2,"price":529.66,"jan2":267.08,"mcapB":420.5,"ath":739.67,"fvMin":358,"fvAvg":623.06,"fvMax":900,"an":39,"peg":1.28,"ps":14.49,"fpe":35.46,"pe":49.82,"gm":48.96,"pm":29.31,"revB":29.02,"revG":3.3,"eps":10.63,"epsG":29.6,"roi":33.23,"roe":39.69,"fcfB":5.34,"capexB":2.65,"r40":21.7},{"t":"LRCX","name":"Lam Research","ex":"NASDAQ","g":2,"price":313.3,"jan2":177.85,"mcapB":391.8,"ath":438.5,"fvMin":220,"fvAvg":366.48,"fvMax":500,"an":35,"peg":1.87,"ps":18.07,"fpe":41.37,"pe":59.18,"gm":49.98,"pm":30.94,"revB":21.68,"revG":26.5,"eps":5.29,"epsG":47.6,"roi":73.88,"roe":66.76,"fcfB":6.0,"capexB":0.95,"r40":54.2},{"t":"KLAC","name":"KLA Corporation","ex":"NASDAQ","g":2,"price":212.75,"jan2":125.97,"mcapB":277.9,"ath":307.37,"fvMin":150,"fvAvg":234.57,"fvMax":325,"an":29,"peg":2.14,"ps":21.22,"fpe":44.29,"pe":60.23,"gm":61.45,"pm":35.66,"revB":13.1,"revG":13.4,"eps":3.53,"epsG":28.4,"roi":70.73,"roe":94.98,"fcfB":4.01,"capexB":0.39,"r40":44.0},{"t":"CRWD","name":"CrowdStrike","ex":"NASDAQ","g":2,"price":203.08,"jan2":118.5,"mcapB":206.8,"ath":217.5,"fvMin":103.25,"fvAvg":187.4,"fvMax":250,"an":52,"peg":5.49,"ps":40.59,"fpe":155.49,"pe":null,"gm":75.14,"pm":-0.6,"revB":5.09,"revG":23.2,"eps":-0.03,"epsG":null,"roi":-31.88,"roe":-0.25,"fcfB":1.51,"capexB":0.31,"r40":52.7},{"t":"PANW","name":"Palo Alto Networks","ex":"NASDAQ","g":2,"price":358.68,"jan2":184.81,"mcapB":292.3,"ath":368.8,"fvMin":162.34,"fvAvg":325.37,"fvMax":433,"an":54,"peg":6.03,"ps":27.56,"fpe":91.41,"pe":346.81,"gm":71.96,"pm":7.95,"revB":10.61,"revG":19.5,"eps":1.15,"epsG":-30.3,"roi":3.65,"roe":4.83,"fcfB":3.79,"capexB":0.42,"r40":55.3},{"t":"MU","name":"Micron Technology","ex":"NASDAQ","g":3,"price":848.95,"jan2":295.13,"mcapB":958.8,"ath":1255.0,"fvMin":361,"fvAvg":1486,"fvMax":2200,"an":45,"peg":0.03,"ps":10.62,"fpe":5.92,"pe":19.16,"gm":72.57,"pm":55.91,"revB":90.27,"revG":167.0,"eps":44.31,"epsG":695.9,"roi":67.64,"roe":66.64,"fcfB":26.17,"capexB":25.26,"r40":196.0},{"t":"ALAB","name":"Astera Labs","ex":"NASDAQ","g":4,"price":303.62,"jan2":171.69,"mcapB":52.0,"ath":499.48,"fvMin":155,"fvAvg":281.56,"fvMax":460,"an":26,"peg":1.77,"ps":51.97,"fpe":89.54,"pe":205.27,"gm":75.99,"pm":26.72,"revB":1.0,"revG":104.2,"eps":1.48,"epsG":486.3,"roi":79.74,"roe":21.11,"fcfB":0.34,"capexB":0.04,"r40":138.4},{"t":"CRDO","name":"Credo Technology","ex":"NASDAQ","g":4,"price":202.68,"jan2":148.4,"mcapB":37.8,"ath":308.67,"fvMin":184,"fvAvg":271.92,"fvMax":350,"an":19,"peg":0.73,"ps":28.31,"fpe":33.07,"pe":80.75,"gm":68.04,"pm":35.37,"revB":1.34,"revG":205.7,"eps":2.51,"epsG":765.5,"roi":73.1,"roe":34.41,"fcfB":0.41,"capexB":0.06,"r40":236.2},{"t":"ANET","name":"Arista Networks","ex":"NYSE","g":4,"price":168.61,"jan2":134.05,"mcapB":212.3,"ath":189.82,"fvMin":164,"fvAvg":191.75,"fvMax":220,"an":30,"peg":2.22,"ps":21.87,"fpe":44.53,"pe":57.94,"gm":63.54,"pm":38.32,"revB":9.71,"revG":30.6,"eps":2.91,"epsG":23.7,"roi":237.43,"roe":31.52,"fcfB":5.28,"capexB":0.15,"r40":84.9},{"t":"APH","name":"Amphenol","ex":"NYSE","g":4,"price":151.2,"jan2":137.12,"mcapB":186.0,"ath":178.52,"fvMin":165,"fvAvg":187.83,"fvMax":215,"an":18,"peg":1.76,"ps":7.18,"fpe":29.81,"pe":43.5,"gm":37.92,"pm":17.24,"revB":25.9,"revG":54.4,"eps":3.48,"epsG":68.9,"roi":21.63,"roe":36.82,"fcfB":4.63,"capexB":1.1,"r40":72.3},{"t":"LITE","name":"Lumentum","ex":"NASDAQ","g":4,"price":732.82,"jan2":379.38,"mcapB":57.0,"ath":1085.68,"fvMin":600,"fvAvg":1103.49,"fvMax":1400,"an":25,"peg":0.41,"ps":22.91,"fpe":46.0,"pe":139.31,"gm":40.84,"pm":17.68,"revB":2.49,"revG":69.0,"eps":5.26,"epsG":null,"roi":8.3,"roe":22.83,"fcfB":0.11,"capexB":0.34,"r40":73.6},{"t":"VRT","name":"Vertiv Holdings","ex":"NYSE","g":5,"price":289.56,"jan2":169.47,"mcapB":111.2,"ath":379.94,"fvMin":236,"fvAvg":380.0,"fvMax":500,"an":27,"peg":1.28,"ps":10.26,"fpe":42.38,"pe":72.77,"gm":37.15,"pm":14.37,"revB":10.84,"revG":29.0,"eps":3.98,"epsG":131.4,"roi":32.13,"roe":45.1,"fcfB":2.28,"capexB":0.3,"r40":50.0},{"t":"ETN","name":"Eaton","ex":"NYSE","g":5,"price":399.99,"jan2":323.21,"mcapB":155.3,"ath":436.74,"fvMin":321,"fvAvg":455.79,"fvMax":534,"an":27,"peg":2.96,"ps":5.45,"fpe":28.42,"pe":39.13,"gm":37.1,"pm":13.99,"revB":28.52,"revG":12.7,"eps":10.22,"epsG":3.1,"roi":12.39,"roe":20.84,"fcfB":3.78,"capexB":0.97,"r40":25.9},{"t":"GEV","name":"GE Vernova","ex":"NYSE","g":5,"price":1057.84,"jan2":661.19,"mcapB":284.3,"ath":1195.94,"fvMin":836,"fvAvg":1221.48,"fvMax":1424,"an":38,"peg":1.81,"ps":7.22,"fpe":57.29,"pe":30.95,"gm":20.28,"pm":23.81,"revB":39.38,"revG":10.3,"eps":34.17,"epsG":393.5,"roi":35.65,"roe":75.71,"fcfB":7.53,"capexB":1.49,"r40":29.4},{"t":"VST","name":"Vistra","ex":"NYSE","g":5,"price":155.44,"jan2":163.89,"mcapB":52.4,"ath":219.82,"fvMin":99,"fvAvg":222.89,"fvMax":320,"an":20,"peg":0.38,"ps":2.78,"fpe":15.79,"pe":26.3,"gm":38.64,"pm":11.52,"revB":19.45,"revG":7.4,"eps":5.92,"epsG":-6.1,"roi":9.96,"roe":42.9,"fcfB":1.8,"capexB":2.87,"r40":16.7},{"t":"CEG","name":"Constellation Energy","ex":"NASDAQ","g":5,"price":252.39,"jan2":358.0,"mcapB":91.1,"ath":412.7,"fvMin":296,"fvAvg":357.81,"fvMax":441,"an":23,"peg":1.31,"ps":3.05,"fpe":21.5,"pe":21.6,"gm":23.26,"pm":12.69,"revB":29.87,"revG":23.4,"eps":11.71,"epsG":21.3,"roi":8.03,"roe":16.1,"fcfB":1.12,"capexB":3.43,"r40":27.2},{"t":"BWXT","name":"BWX Technologies","ex":"NYSE","g":5,"price":171.18,"jan2":174.53,"mcapB":15.7,"ath":241.82,"fvMin":200,"fvAvg":238.79,"fvMax":290,"an":15,"peg":2.98,"ps":4.64,"fpe":35.91,"pe":45.65,"gm":22.66,"pm":10.2,"revB":3.38,"revG":21.4,"eps":3.75,"epsG":19.1,"roi":10.54,"roe":29.03,"fcfB":0.33,"capexB":0.19,"r40":31.1},{"t":"TSLA","name":"Tesla","ex":"NASDAQ","g":6,"price":380.84,"jan2":457.8,"mcapB":1430,"ath":498.83,"fvMin":125,"fvAvg":425.49,"fvMax":600,"an":47,"peg":3.95,"ps":14.61,"fpe":168.32,"pe":370.36,"gm":19.07,"pm":3.95,"revB":97.88,"revG":2.3,"eps":1.09,"epsG":-37.4,"roi":6.34,"roe":4.9,"fcfB":7.0,"capexB":9.53,"r40":9.4},{"t":"TER","name":"Teradyne","ex":"NASDAQ","g":6,"price":322.36,"jan2":199.29,"mcapB":50.5,"ath":487.91,"fvMin":270,"fvAvg":423.41,"fvMax":550,"an":18,"peg":1.4,"ps":13.33,"fpe":46.58,"pe":59.86,"gm":58.7,"pm":22.55,"revB":3.79,"revG":30.3,"eps":5.39,"epsG":52.5,"roi":31.29,"roe":28.75,"fcfB":0.55,"capexB":0.22,"r40":44.9},{"t":"CGNX","name":"Cognex","ex":"NASDAQ","g":6,"price":64.07,"jan2":36.43,"mcapB":10.7,"ath":72.88,"fvMin":62,"fvAvg":77.6,"fvMax":94,"an":21,"peg":null,"ps":10.19,"fpe":43.35,"pe":75.39,"gm":68.02,"pm":13.62,"revB":1.05,"revG":13.8,"eps":0.85,"epsG":23.5,"roi":10.38,"roe":9.75,"fcfB":0.24,"capexB":0.01,"r40":36.8},{"t":"ISRG","name":"Intuitive Surgical","ex":"NASDAQ","g":6,"price":345.42,"jan2":566.78,"mcapB":122.3,"ath":603.88,"fvMin":324,"fvAvg":504.15,"fvMax":685,"an":33,"peg":1.93,"ps":11.09,"fpe":30.8,"pe":39.61,"gm":66.77,"pm":28.45,"revB":11.03,"revG":20.7,"eps":8.72,"epsG":21.8,"roi":25.25,"roe":17.42,"fcfB":2.83,"capexB":0.53,"r40":47.4},{"t":"PLTR","name":"Palantir","ex":"NASDAQ","g":7,"price":132.38,"jan2":181.3,"mcapB":317.4,"ath":207.52,"fvMin":70,"fvAvg":183.12,"fvMax":255,"an":32,"peg":1.62,"ps":60.75,"fpe":83.32,"pe":148.81,"gm":84.07,"pm":43.67,"revB":5.22,"revG":67.7,"eps":0.89,"epsG":287.0,"roi":306.8,"roe":32.59,"fcfB":2.69,"capexB":0.04,"r40":119.2},{"t":"AVAV","name":"AeroVironment","ex":"NASDAQ","g":7,"price":142.2,"jan2":248.45,"mcapB":7.2,"ath":417.86,"fvMin":166,"fvAvg":231.68,"fvMax":326,"an":20,"peg":1.6,"ps":3.63,"fpe":43.95,"pe":null,"gm":25.33,"pm":-13.41,"revB":1.98,"revG":140.9,"eps":-5.4,"epsG":null,"roi":-1.55,"roe":-10.03,"fcfB":-0.14,"capexB":0.06,"r40":133.8},{"t":"RKLB","name":"Rocket Lab","ex":"NASDAQ","g":7,"price":67.62,"jan2":70.63,"mcapB":40.5,"ath":151.0,"fvMin":77,"fvAvg":116.57,"fvMax":150,"an":16,"peg":null,"ps":59.52,"fpe":null,"pe":null,"gm":36.56,"pm":-26.87,"revB":0.68,"revG":45.8,"eps":-0.33,"epsG":null,"roi":-8.06,"roe":-13.55,"fcfB":-0.32,"capexB":0.15,"r40":-0.7},{"t":"ONDS","name":"Ondas Holdings","ex":"NASDAQ","g":7,"price":6.53,"jan2":10.14,"mcapB":3.7,"ath":15.28,"fvMin":16,"fvAvg":19.81,"fvMax":25,"an":8,"peg":null,"ps":38.49,"fpe":null,"pe":14.92,"gm":44.85,"pm":251.92,"revB":0.1,"revG":793.2,"eps":0.44,"epsG":null,"roi":-9.11,"roe":42.95,"fcfB":-0.09,"capexB":0.003,"r40":703.6},{"t":"IONQ","name":"IonQ","ex":"NYSE","g":8,"price":34.78,"jan2":46.01,"mcapB":13.0,"ath":84.64,"fvMin":44.78,"fvAvg":68.79,"fvMax":100,"an":13,"peg":null,"ps":69.38,"fpe":null,"pe":37.75,"gm":36.11,"pm":174.88,"revB":0.19,"revG":334.6,"eps":0.92,"epsG":null,"roi":-16.68,"roe":11.29,"fcfB":-0.42,"capexB":0.02,"r40":108.2},{"t":"IBM","name":"IBM","ex":"NYSE","g":9,"price":212.67,"jan2":297.56,"mcapB":199.9,"ath":332.46,"fvMin":175,"fvAvg":273.75,"fvMax":350,"an":24,"peg":2.6,"ps":2.9,"fpe":17.6,"pe":18.84,"gm":58.36,"pm":15.61,"revB":68.91,"revG":9.7,"eps":11.31,"epsG":94.2,"roi":14.97,"roe":35.77,"fcfB":12.91,"capexB":1.08,"r40":28.4},{"t":"CRM","name":"Salesforce","ex":"NYSE","g":9,"price":170.77,"jan2":265.0,"mcapB":139.9,"ath":274.0,"fvMin":160,"fvAvg":245.41,"fvMax":475,"an":52,"peg":0.76,"ps":3.27,"fpe":12.26,"pe":19.82,"gm":77.64,"pm":18.73,"revB":42.83,"revG":11.0,"eps":8.61,"epsG":34.8,"roi":11.07,"roe":16.91,"fcfB":14.66,"capexB":0.56,"r40":45.2},{"t":"ZETA","name":"Zeta Global","ex":"NYSE","g":9,"price":21.68,"jan2":20.54,"mcapB":5.4,"ath":25.95,"fvMin":22,"fvAvg":28.68,"fvMax":44,"an":14,"peg":0.73,"ps":3.71,"fpe":22.16,"pe":null,"gm":60.14,"pm":-1.61,"revB":1.44,"revG":33.6,"eps":-0.11,"epsG":null,"roi":1.98,"roe":-2.97,"fcfB":0.2,"capexB":0.01,"r40":47.5},{"t":"IREN","name":"IREN (Iris Energy)","ex":"NASDAQ","g":10,"price":33.62,"jan2":39.01,"mcapB":12.0,"ath":76.87,"fvMin":41,"fvAvg":80.93,"fvMax":126,"an":16,"peg":null,"ps":15.87,"fpe":null,"pe":61.89,"gm":68.4,"pm":20.88,"revB":0.76,"revG":104.8,"eps":0.54,"epsG":null,"roi":-5.92,"roe":7.73,"fcfB":-2.32,"capexB":2.71,"r40":-201.6},{"t":"NBIS","name":"Nebius Group","ex":"NASDAQ","g":10,"price":177.71,"jan2":86.99,"mcapB":45.5,"ath":299.86,"fvMin":120,"fvAvg":244.21,"fvMax":380,"an":16,"peg":null,"ps":51.83,"fpe":null,"pe":55.52,"gm":72.06,"pm":93.09,"revB":0.88,"revG":574.9,"eps":3.2,"epsG":null,"roi":-9.33,"roe":14.14,"fcfB":-3.16,"capexB":6.0,"r40":215.5}];
+const POS = {"MSFT":{"budget":null,"cost":50818.44,"shares":113},"GOOGL":{"budget":null,"cost":53089.04,"shares":198},"AMZN":{"budget":null,"cost":44634.03,"shares":194},"META":{"budget":null,"cost":37189.63,"shares":56},"AAPL":{"budget":null,"cost":11437.61,"shares":46},"ORCL":{"budget":null,"cost":15629.6,"shares":94},"NVDA":{"budget":null,"cost":71481.74,"shares":383},"AMD":{"budget":null,"cost":13789.22,"shares":55},"AVGO":{"budget":null,"cost":28571.53,"shares":84},"MRVL":{"budget":null,"cost":7872.66,"shares":48.5},"INTC":{"budget":null,"cost":2029.6,"shares":45},"QCOM":{"budget":null,"cost":1959.96,"shares":11},"TSM":{"budget":null,"cost":35969.08,"shares":103},"MPWR":{"budget":null,"cost":1538.56,"shares":1},"AMKR":{"budget":null,"cost":3454.62,"shares":55},"ASML":{"budget":null,"cost":16394.06,"shares":13},"AMAT":{"budget":null,"cost":8162.07,"shares":34},"LRCX":{"budget":null,"cost":4100.12,"shares":22},"KLAC":{"budget":null,"cost":3510.69,"shares":18},"CRWD":{"budget":null,"cost":3914.12,"shares":40},"PANW":{"budget":null,"cost":3760.62,"shares":22},"MU":{"budget":null,"cost":15392.02,"shares":27.45},"ALAB":{"budget":null,"cost":3805.47,"shares":15},"CRDO":{"budget":null,"cost":7700.99,"shares":54},"ANET":{"budget":null,"cost":13650.01,"shares":88},"APH":{"budget":null,"cost":2004.4,"shares":16},"LITE":{"budget":null,"cost":5892.26,"shares":7.5},"VRT":{"budget":null,"cost":3524.44,"shares":14},"ETN":{"budget":null,"cost":7879.55,"shares":19},"GEV":{"budget":null,"cost":2147.3,"shares":2},"VST":{"budget":null,"cost":6078.05,"shares":42},"CEG":{"budget":null,"cost":4040.98,"shares":15},"BWXT":{"budget":null,"cost":1994.06,"shares":10},"TSLA":{"budget":null,"cost":4304.62,"shares":10},"TER":{"budget":null,"cost":3567.37,"shares":10},"CGNX":{"budget":null,"cost":4067.62,"shares":62},"ISRG":{"budget":null,"cost":12721.43,"shares":28},"PLTR":{"budget":null,"cost":5533.09,"shares":40},"AVAV":{"budget":null,"cost":3758.3,"shares":18},"RKLB":{"budget":null,"cost":1942.58,"shares":23},"ONDS":{"budget":null,"cost":2030.54,"shares":200},"IONQ":{"budget":null,"cost":3569.26,"shares":81},"IBM":{"budget":null,"cost":1713.07,"shares":6},"CRM":{"budget":null,"cost":1888.07,"shares":11},"ZETA":{"budget":null,"cost":2004.33,"shares":111},"IREN":{"budget":null,"cost":3470.33,"shares":90},"NBIS":{"budget":null,"cost":3856.65,"shares":27}};
+
+let FILTER = "all";
+const vis = () => FILTER==="all" ? STOCKS : STOCKS.filter(s=>s.g===FILTER);
+const slot = s => s.g+1;
+
+/* ============ computed ============ */
+const conv = s => (s.fvAvg - s.price)/s.price*100;
+const devas = s => s.price >= s.ath*0.995 ? null : (s.price - s.ath)/s.ath*100;
+const ytd  = s => (s.price - s.jan2)/s.jan2*100;
+const mv   = s => POS[s.t].shares!=null ? POS[s.t].shares*s.price : null;
+const upl  = s => (POS[s.t].cost && mv(s)!=null) ? (mv(s)-POS[s.t].cost)/POS[s.t].cost*100 : null;
+
+const fmt  = (v,d=2) => v==null ? "—" : v.toLocaleString("en-US",{minimumFractionDigits:d,maximumFractionDigits:d});
+const fmt0 = v => fmt(v,0);
+const pct  = (v,signed=true) => {
+  if(v==null) return "—";
+  const cls = v>=0 ? "pos":"neg", a = v>=0 ? "▲":"▼";
+  return `<span class="${signed?cls:''}">${signed?`<span class="arr">${a}</span> `:''}${Math.abs(v)<0.005?'0.0':v.toFixed(1)}%</span>`;
+};
+const money = v => v==null ? "—" : "$"+v.toLocaleString("en-US",{maximumFractionDigits:0});
+const mcap = b => b>=1000 ? fmt(b/1000)+" T" : fmt(b,1)+" B";
+
+/* ============ filter chips ============ */
+function renderChips(){
+  const bar = document.getElementById("chipbar");
+  const chip = (id,label,color,count) =>
+    `<button class="fchip ${FILTER===id?'on':''}" onclick="setFilter(${JSON.stringify(id)})">${color!=null?`<span class="dot" style="background:var(--s${color})"></span>`:""}${label} <span class="ct">${count}</span></button>`;
+  bar.innerHTML = chip("all","All",null,STOCKS.length) + GROUPS.map((g,i)=>chip(i,g,i+1,STOCKS.filter(s=>s.g===i).length)).join("");
+}
+function setFilter(f){ FILTER=f; renderChips(); renderLadder(); renderBubble(); renderMatrix(); renderCards(); }
+
+/* ============ tiles (always whole book) ============ */
+function renderTiles(){
+  const best = [...STOCKS].sort((a,b)=>ytd(b)-ytd(a))[0];
+  const worst= [...STOCKS].sort((a,b)=>ytd(a)-ytd(b))[0];
+  const totCost = STOCKS.reduce((a,s)=>a+(POS[s.t].cost||0),0);
+  const totMV = STOCKS.reduce((a,s)=>a+(mv(s)||0),0);
+  const byG = GROUPS.map((g,i)=>({g,i,mv:STOCKS.filter(s=>s.g===i).reduce((a,s)=>a+(mv(s)||0),0)})).sort((a,b)=>b.mv-a.mv);
+  document.getElementById("tiles").innerHTML = `
+   <div class="tile"><div class="k">Positions</div><div class="v">${STOCKS.length}</div><div class="d">${GROUPS.length} groups (Salee's cut) · CRWV &amp; APP closed</div></div>
+   <div class="tile"><div class="k">Portfolio market value</div><div class="v">${money(totMV)}</div><div class="d">vs cost ${money(totCost)} · ${pct((totMV-totCost)/totCost*100)}</div></div>
+   <div class="tile"><div class="k">Largest group</div><div class="v" style="font-size:17px">${byG[0].g}</div><div class="d">${money(byG[0].mv)} · ${(byG[0].mv/totMV*100).toFixed(0)}% of book</div></div>
+   <div class="tile"><div class="k">Best YTD</div><div class="v">${best.t}</div><div class="d">${pct(ytd(best))} since Jan 2 open</div></div>
+   <div class="tile"><div class="k">Worst YTD</div><div class="v">${worst.t}</div><div class="d">${pct(ytd(worst))} since Jan 2 open</div></div>`;
+}
+
+/* ============ fair-value ladder (grouped) ============ */
+function renderLadder(){
+  const V = vis();
+  // shared scale for conviction/devastation bars across visible stocks
+  const maxAbs = Math.max(...V.map(s=>Math.max(Math.abs(conv(s)), Math.abs(devas(s)??0), Math.abs(ytd(s)))), 1);
+  const lane = (v, tag) => {
+    // one lane, zero at center, positive→right, negative→left; tag names the lane inside the label
+    if(v==null) return `<div class="lane"><div class="half l"></div><div class="half"><span class="cdv na">${tag} — at ATH</span></div></div>`;
+    const w = Math.max(1.5, Math.abs(v)/maxAbs*100).toFixed(1)+"%";
+    const cls = v>=0 ? "up":"dn", arrow = v>=0 ? "▲":"▼";
+    const bar = `<span class="cdbar ${cls}" style="width:${w}"></span>`;
+    const lab = `<span class="cdv">${tag} ${arrow}${Math.abs(v).toFixed(0)}%</span>`;
+    return v>=0
+      ? `<div class="lane"><div class="half l"></div><div class="half">${bar}${lab}</div></div>`
+      : `<div class="lane"><div class="half l">${lab}${bar}</div><div class="half"></div></div>`;
+  };
+  const html = GROUPS.map((g,gi)=>{
+    const rows = V.filter(s=>s.g===gi);
+    if(!rows.length) return "";
+    return `<div class="fv-ghead"><span class="dot" style="background:var(--s${gi+1})"></span>${g}</div>` + rows.map(s=>{
+      const a = Math.min(s.fvMin,s.price)*0.90, b = Math.max(s.fvMax,s.price,s.ath)*1.03;
+      const X = v => ((v-a)/(b-a)*100).toFixed(2)+"%";
+      const W = (v1,v2)=>((v2-v1)/(b-a)*100).toFixed(2)+"%";
+      return `<div class="fv-row">
+        <div class="fv-tick">${s.t}</div>
+        <div class="fv-track">
+          <div class="fv-base"></div>
+          <div class="fv-range" style="left:${X(s.fvMin)};width:${W(s.fvMin,s.fvMax)};background:var(--s${slot(s)})"></div>
+          <div class="fv-avg" style="left:${X(s.fvAvg)}"></div>
+          <div class="fv-now" style="left:${X(s.price)};background:var(--s${slot(s)})" title="${s.t} last close ${fmt(s.price)}"></div>
+        </div>
+        <div class="cd" title="${s.t} — conviction ${conv(s).toFixed(1)}% to avg FV · ${devas(s)==null?'at 52-wk high':'devastation '+devas(s).toFixed(1)+'% vs 52-wk high'} · YTD ${ytd(s).toFixed(1)}% since Jan 2 open">
+          ${lane(conv(s),'FV')}
+          ${lane(devas(s),'ATH')}
+          ${lane(ytd(s),'YTD')}
+        </div>
+        <div class="fv-lab"><b>${fmt(s.price)}</b> → FV ${fmt0(s.fvAvg)}</div>
+      </div>`;
+    }).join("");
+  }).join("");
+  document.getElementById("fvladder").innerHTML = html;
+}
+
+/* ============ bubble map: GM% vs PE (log) ============ */
+function renderBubble(){
+  const svg = document.getElementById("bubble");
+  const V = vis().map(s=>({s, peUsed: s.pe!=null?s.pe:s.fpe, fwd: s.pe==null&&s.fpe!=null})).filter(x=>x.peUsed!=null && x.s.gm!=null);
+  const skipped = vis().filter(s=>s.pe==null&&s.fpe==null).map(s=>s.t);
+  document.getElementById("bubnote").innerHTML = "Bottom-right = fat margins at a reasonable multiple. Dashed lines = median of shown names. Hover any bubble for details." + (skipped.length?` <b>Not plotted (no earnings): ${skipped.join(", ")}.</b>`:"");
+  const W=940, H=560, m={t:30, r:30, b:56, l:64};
+  const iw=W-m.l-m.r, ih=H-m.t-m.b;
+  const xs=V.map(x=>x.s.gm), ys=V.map(x=>x.peUsed);
+  const xmin=Math.max(0,Math.floor((Math.min(...xs)-6)/10)*10), xmax=Math.ceil((Math.max(...xs)+5)/10)*10;
+  const ymin=Math.max(4,Math.floor(Math.min(...ys)*0.8)), ymax=Math.ceil(Math.max(...ys)*1.25);
+  const X=v=>m.l+(v-xmin)/(xmax-xmin)*iw;
+  const LY=v=>m.t+ih-(Math.log(v)-Math.log(ymin))/(Math.log(ymax)-Math.log(ymin))*ih;
+  const sizes=V.map(x=>mv(x.s)??1000);
+  const maxS=Math.max(...sizes), R=v=>Math.max(7, Math.sqrt(v/maxS)*44);
+  const med=a=>{const b=[...a].sort((p,q)=>p-q); return b[(b.length-1)>>1]};
+  const medX=med(xs), medY=med(ys);
+  let g="";
+  for(let gx=Math.max(0,xmin); gx<=xmax; gx+=10){ g+=`<line x1="${X(gx)}" y1="${m.t}" x2="${X(gx)}" y2="${m.t+ih}" stroke="var(--grid)"/><text class="axis-t" x="${X(gx)}" y="${m.t+ih+20}" text-anchor="middle">${gx}%</text>`; }
+  const yticks=[5,10,15,20,30,50,80,130,200,320,500].filter(v=>v>=ymin&&v<=ymax);
+  yticks.forEach(v=>{ g+=`<line x1="${m.l}" y1="${LY(v)}" x2="${m.l+iw}" y2="${LY(v)}" stroke="var(--grid)"/><text class="axis-t" x="${m.l-8}" y="${LY(v)+5}" text-anchor="end">${v}</text>`; });
+  g+=`<line x1="${m.l}" y1="${m.t+ih}" x2="${m.l+iw}" y2="${m.t+ih}" stroke="var(--axis)" stroke-width="1.5"/>`;
+  g+=`<line x1="${m.l}" y1="${m.t}" x2="${m.l}" y2="${m.t+ih}" stroke="var(--axis)" stroke-width="1.5"/>`;
+  g+=`<line x1="${X(medX)}" y1="${m.t}" x2="${X(medX)}" y2="${m.t+ih}" stroke="var(--axis)" stroke-dasharray="4 5"/>`;
+  g+=`<line x1="${m.l}" y1="${LY(medY)}" x2="${m.l+iw}" y2="${LY(medY)}" stroke="var(--axis)" stroke-dasharray="4 5"/>`;
+  g+=`<text class="quad" x="${m.l+8}" y="${m.t+16}">expensive · thin margin</text>`;
+  g+=`<text class="quad" x="${m.l+iw-8}" y="${m.t+16}" text-anchor="end">expensive · fat margin</text>`;
+  g+=`<text class="quad" x="${m.l+8}" y="${m.t+ih-10}">cheap · thin margin</text>`;
+  g+=`<text class="quad" x="${m.l+iw-8}" y="${m.t+ih-10}" text-anchor="end">cheap · fat margin ✓</text>`;
+  g+=`<text class="axis-cap" x="${m.l+iw/2}" y="${H-12}" text-anchor="middle">Gross margin % (TTM)</text>`;
+  g+=`<text class="axis-cap" x="18" y="${m.t+ih/2}" text-anchor="middle" transform="rotate(-90 18 ${m.t+ih/2})">P/E (TTM, log scale)</text>`;
+  const order=[...V].sort((a,b)=>(mv(b.s)??0)-(mv(a.s)??0));
+  const labelSet = new Set(order.slice(0, V.length<=16 ? V.length : 18).map(x=>x.s.t));
+  order.forEach(x=>{
+    const s=x.s, r=R(mv(s)??1000), cx=X(s.gm), cy=LY(x.peUsed);
+    g+=`<circle class="bub" data-t="${s.t}" cx="${cx}" cy="${cy}" r="${r}" fill="${x.fwd?'none':`var(--s${slot(s)})`}" ${x.fwd?`stroke="var(--s${slot(s)})" stroke-width="3" stroke-dasharray="5 3"`:`fill-opacity="0.55" stroke="var(--surface-1)" stroke-width="2"`} style="cursor:pointer"/>`;
+    if(labelSet.has(s.t)){
+      const ly = cy - r - 5;
+      g+=`<text class="blab" x="${cx}" y="${ly<m.t+12? cy+4 : ly}" text-anchor="middle" pointer-events="none">${s.t}</text>`;
+    }
+  });
+  svg.innerHTML=g;
+  const tip=document.getElementById("bubtip"), wrap=document.getElementById("bubwrap");
+  svg.querySelectorAll(".bub").forEach(c=>{
+    c.addEventListener("mousemove",e=>{
+      const s=STOCKS.find(q=>q.t===c.dataset.t);
+      const wr=wrap.getBoundingClientRect();
+      tip.style.display="block";
+      tip.style.left=Math.min(e.clientX-wr.left+14, wr.width-185)+"px";
+      tip.style.top=(e.clientY-wr.top+10)+"px";
+      tip.innerHTML=`<b>${s.t}</b> · ${s.name}<br><span style="color:var(--s${slot(s)})">${GROUPS[s.g]}</span><br>Gross margin <b>${fmt(s.gm,1)}%</b><br>P/E <b>${fmt(s.pe,1)}</b> · Fwd <b>${fmt(s.fpe,1)}</b><br>Position <b>${money(mv(s))}</b> · ${pct(upl(s))}<br>Conviction ${pct(conv(s))}`;
+    });
+    c.addEventListener("mouseleave",()=>{ tip.style.display="none"; });
+  });
+}
+
+/* ============ metric matrix (metrics = rows, grouped columns) ============ */
+const ROWS = [
+ {g:"Position"},
+ {n:"0",  l:"Open price Jan 2 '26",      f:s=>fmt(s.jan2)},
+ {n:"1",  l:"Market cap",                 f:s=>mcap(s.mcapB)},
+ {n:"2",  l:"Allocated budget ($)",       f:s=>money(POS[s.t].budget)},
+ {n:"3",  l:"Cost of investment ($)",     f:s=>money(POS[s.t].cost)},
+ {n:"4",  l:"Market value ($)",           f:s=>money(mv(s))},
+ {n:"5",  l:"Unrealized G/L %",           f:s=>pct(upl(s))},
+ {g:"Price & valuation"},
+ {n:"6",  l:"Current price (last close)", f:s=>fmt(s.price)},
+ {n:"7",  l:"Fair value min / avg / max", f:s=>`${fmt0(s.fvMin)} / <b>${fmt0(s.fvAvg)}</b> / ${fmt0(s.fvMax)}`},
+ {n:"8",  l:"52-wk high (ATH)",           f:s=>fmt(s.ath)},
+ {n:"9",  l:"% conviction (to avg FV)",   f:s=>pct(conv(s))},
+ {n:"10", l:"% devastation (vs ATH)",     f:s=>devas(s)==null?"—":pct(devas(s))},
+ {n:"11", l:"% growth YTD (vs Jan 2)",    f:s=>pct(ytd(s))},
+ {n:"12", l:"PEG",                        f:s=>fmt(s.peg)},
+ {n:"13", l:"Price / Sales",              f:s=>fmt(s.ps,1)},
+ {n:"14", l:"Forward P/E",                f:s=>fmt(s.fpe,1)},
+ {n:"15", l:"P/E (TTM)",                  f:s=>fmt(s.pe,1)},
+ {g:"Fundamentals (TTM)"},
+ {n:"16", l:"Gross margin %",             f:s=>s.gm==null?"—":fmt(s.gm,1)+"%"},
+ {n:"17", l:"Revenue ($B)",               f:s=>fmt(s.revB,1)},
+ {n:"18", l:"Revenue growth %",           f:s=>pct(s.revG)},
+ {n:"19", l:"EPS ($)",                    f:s=>fmt(s.eps)},
+ {n:"20", l:"EPS growth %",               f:s=>pct(s.epsG)},
+ {n:"21", l:"ROI / ROIC %",               f:s=>s.roi==null?"—":fmt(s.roi,1)+"%"},
+ {n:"22", l:"ROE %",                      f:s=>s.roe==null?"—":fmt(s.roe,1)+"%"},
+ {n:"23", l:"Profit margin %",            f:s=>s.pm==null?"—":fmt(s.pm,1)+"%"},
+ {n:"24", l:"Rule of 40 (FCF)",           f:s=>pct(s.r40)},
+ {n:"24b",l:"Rule of 40 (NI)",            f:s=>(s.revG==null||s.pm==null)?"—":pct(s.revG+s.pm)},
+ {n:"25", l:"Free cash flow ($B)",        f:s=>`<span class="${s.fcfB<0?'neg':''}">${fmt(s.fcfB,1)}</span>`},
+ {n:"26", l:"CAPEX ($B)",                 f:s=>fmt(s.capexB,1)},
+];
+function renderMatrix(){
+  const V = vis();
+  document.getElementById("mcount").textContent = V.length;
+  // group band row
+  let band = `<tr class="gband"><th style="background:var(--surface-1)"></th>`;
+  GROUPS.forEach((g,gi)=>{
+    const n = V.filter(s=>s.g===gi).length;
+    if(n) band += `<th colspan="${n}" style="background:var(--s${gi+1})">${g}</th>`;
+  });
+  band += "</tr>";
+  const tkr = `<tr class="tkr"><th style="text-align:left">Metric</th>${V.map(s=>`<th><span class="tk">${s.t}</span></th>`).join("")}</tr>`;
+  const body = ROWS.map(r=>{
+    if(r.g) return `<tr class="group"><th>${r.g}</th><td colspan="${V.length}"></td></tr>`;
+    return `<tr><th><span class="idx">${r.n}</span>${r.l}</th>${V.map(s=>`<td>${r.f(s)}</td>`).join("")}</tr>`;
+  }).join("");
+  document.getElementById("matrix").innerHTML = `<thead>${band}${tkr}</thead><tbody>${body}</tbody>`;
+}
+
+/* ============ cards (lazy TradingView minis) ============ */
+let observer=null;
+function renderCards(){
+  const V = vis();
+  document.getElementById("cards").innerHTML = V.map(s=>{
+    const p = POS[s.t]; const d = devas(s);
+    return `<div class="card" id="card-${s.t}">
+      <div class="head">
+        <span class="t"><span class="dot" style="background:var(--s${slot(s)})"></span>${s.t}${GROUPS[s.g].startsWith("⚠")?' <span style="background:var(--bad);color:#fff;border-radius:6px;padding:1px 8px;font-size:10px;font-weight:700;vertical-align:middle">SELL</span>':''} <span style="font-weight:400;font-size:12px;color:var(--ink-3)">${s.name}</span></span>
+        <span class="p">$${fmt(s.price)}</span>
+      </div>
+      <div class="gname">${GROUPS[s.g]}</div>
+      <div class="chips">
+        <span class="chip">YTD <b>${pct(ytd(s))}</b></span>
+        <span class="chip">Conviction <b>${pct(conv(s))}</b></span>
+        <span class="chip">vs ATH <b>${d==null?"at ATH":pct(d)}</b></span>
+        <span class="chip">Rule 40 <b>${pct(s.r40)}</b></span>
+      </div>
+      <div class="mini" id="tv-${s.t}" data-t="${s.t}" data-ex="${s.ex}"></div>
+      <div class="kv">
+        <div><span>Mkt cap</span><span>${mcap(s.mcapB)}</span></div>
+        <div><span>FV min·avg·max</span><span>${fmt0(s.fvMin)} · ${fmt0(s.fvAvg)} · ${fmt0(s.fvMax)}</span></div>
+        <div><span>P/E · Fwd P/E</span><span>${fmt(s.pe,1)} · ${fmt(s.fpe,1)}</span></div>
+        <div><span>PEG · P/S</span><span>${fmt(s.peg)} · ${fmt(s.ps,1)}</span></div>
+        <div><span>Rev (TTM)</span><span>$${fmt(s.revB,1)}B · ${s.revG>=0?"+":""}${fmt(s.revG,1)}%</span></div>
+        <div><span>EPS</span><span>${s.eps==null?"—":"$"+fmt(s.eps)} · ${s.epsG==null?"—":(s.epsG>=0?"+":"")+fmt(s.epsG,1)+"%"}</span></div>
+        <div><span>Margins G·P</span><span>${fmt(s.gm,1)} · ${fmt(s.pm,1)}%</span></div>
+        <div><span>ROIC · ROE</span><span>${fmt(s.roi,1)} · ${fmt(s.roe,1)}%</span></div>
+        <div><span>FCF (TTM)</span><span class="${s.fcfB<0?'neg':''}">$${fmt(s.fcfB,1)}B</span></div>
+        <div><span>CAPEX (TTM)</span><span>$${fmt(s.capexB,1)}B</span></div>
+      </div>
+      <div class="inp-row">
+        <label>Budget $<input type="number" min="0" step="100" value="${p.budget??''}" onchange="setPos('${s.t}','budget',this.value)"></label>
+        <label>Cost $<input type="number" min="0" step="100" value="${p.cost??''}" onchange="setPos('${s.t}','cost',this.value)"></label>
+        <label>Shares<input type="number" min="0" step="0.01" value="${p.shares??''}" onchange="setPos('${s.t}','shares',this.value)"></label>
+      </div>
+      <div class="posline"><span>Market value: <b>${money(mv(s))}</b></span><span>Unrealized: ${pct(upl(s))}</span></div>
+    </div>`;
+  }).join("");
+  // lazy mount TradingView minis
+  if(observer) observer.disconnect();
+  observer = new IntersectionObserver(entries=>{
+    entries.forEach(en=>{
+      if(en.isIntersecting){ mountMini(en.target); observer.unobserve(en.target); }
+    });
+  },{rootMargin:"200px"});
+  document.querySelectorAll(".mini").forEach(el=>observer.observe(el));
+}
+function setPos(t,k,v){ POS[t][k] = v===""?null:parseFloat(v); renderTiles(); renderBubble(); renderMatrix(); renderCards(); }
+
+/* ============ TradingView widgets ============ */
+function mountMini(el){
+  const dark = document.getElementById("root").classList.contains("dark");
+  el.innerHTML = "";
+  try{
+    const wrap = document.createElement("div"); wrap.className="tradingview-widget-container"; el.appendChild(wrap);
+    const sc = document.createElement("script");
+    sc.src = "https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js";
+    sc.async = true;
+    sc.text = JSON.stringify({symbol:`${el.dataset.ex}:${el.dataset.t}`, width:"100%", height:150, locale:"en", dateRange:"12M",
+      colorTheme: dark?"dark":"light", isTransparent:true, autosize:false, largeChartUrl:""});
+    wrap.appendChild(sc);
+    setTimeout(()=>{ if(!wrap.querySelector("iframe")) el.style.display="none"; }, 6000);
+  }catch(e){ el.style.display="none"; }
+}
+function mountTape(){
+  try{
+    const el = document.getElementById("tape");
+    el.innerHTML = "";
+    const wrap = document.createElement("div"); wrap.className="tradingview-widget-container"; el.appendChild(wrap);
+    const sc = document.createElement("script");
+    sc.src = "https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js";
+    sc.async = true;
+    sc.text = JSON.stringify({
+      symbols: STOCKS.map(s=>({proName:`${s.ex}:${s.t}`, title:s.t})),
+      showSymbolLogo:true, isTransparent:true, displayMode:"adaptive",
+      colorTheme: document.getElementById("root").classList.contains("dark")?"dark":"light", locale:"en"
+    });
+    wrap.appendChild(sc);
+    setTimeout(()=>{ if(!wrap.querySelector("iframe")) el.innerHTML = `<div class="tape-fallback">Live ticker unavailable in this viewer — figures below are from the ${ASOF} refresh.</div>`; }, 6000);
+  }catch(e){}
+}
+
+/* ============ theme + boot ============ */
+function applyTheme(dark){
+  document.getElementById("root").classList.toggle("dark", dark);
+  mountTape(); renderCards();
+}
+document.getElementById("themeBtn").onclick = ()=> applyTheme(!document.getElementById("root").classList.contains("dark"));
+
+function renderAll(){
+  document.getElementById("asof").textContent = ASOF;
+  renderChips(); renderTiles(); renderLadder(); renderBubble(); renderMatrix(); renderCards();
+  document.getElementById("foot").innerHTML =
+   `Definitions — <b>Conviction</b> = (avg analyst target − last close) ÷ last close. <b>Devastation</b> = (last close − 52-wk high) ÷ 52-wk high; “—” within 0.5% of the high. <b>Growth YTD</b> = vs Jan 2, 2026 open. <b>Rule of 40 (FCF)</b> = revenue growth % + FCF margin % (TTM) — the conservative primary. <b>Rule of 40 (NI)</b> = revenue growth % + net profit margin %; a wide gap between the two = accounting profits not converting to cash (see ORCL), and NI is distorted by non-operating gains for IONQ/ONDS. ROI shown as ROIC. “—” = not meaningful (negative earnings or not published). CRWD figures reflect its July 2026 4-for-1 split.<br>
+    Data: stockanalysis.com, TradingView, Macrotrends — refreshed weekly (Mon 08:00 Asia/Bangkok) by Claude; live prices via TradingView embeds when available. Positions from Salee's broker statement Jul 20, 2026 (settled + outstanding; CRWV &amp; APP closed, excluded; CDNS sold Jul 20, removed). ⚠ IREN, NBIS marked To Be Sold — flagged until exit executes.<br>
+    ผมไม่ใช่ financial advisor — ตัวเลขเพื่อการวิเคราะห์ ไม่ใช่คำแนะนำซื้อขาย · Built for Salee · Pillar 4`;
+  mountTape();
+}
+renderAll();
+if(matchMedia && matchMedia("(prefers-color-scheme: dark)").matches) applyTheme(true);
+</script>
+</body>
+</html>
