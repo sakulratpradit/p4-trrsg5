@@ -216,6 +216,8 @@ const devas = s => s.price >= s.ath*0.995 ? null : (s.price - s.ath)/s.ath*100;
 const ytd  = s => (s.price - s.jan2)/s.jan2*100;
 const mv   = s => POS[s.t].shares!=null ? POS[s.t].shares*s.price : null;
 const upl  = s => (POS[s.t].cost && mv(s)!=null) ? (mv(s)-POS[s.t].cost)/POS[s.t].cost*100 : null;
+const bleft = s => POS[s.t].budget==null ? null : POS[s.t].budget - (POS[s.t].cost||0);
+const smoney = v => v==null ? "—" : `<span class="${v>=0?'pos':'neg'}">${v>=0?'+':'−'}$${Math.abs(v).toLocaleString("en-US",{maximumFractionDigits:0})}${v<0?' over':''}</span>`;
 
 const fmt  = (v,d=2) => v==null ? "—" : v.toLocaleString("en-US",{minimumFractionDigits:d,maximumFractionDigits:d});
 const fmt0 = v => fmt(v,0);
@@ -358,6 +360,7 @@ const ROWS = [
  {n:"1",  l:"Market cap",                 f:s=>mcap(s.mcapB)},
  {n:"2",  l:"Allocated budget ($)",       f:s=>money(POS[s.t].budget)},
  {n:"3",  l:"Cost of investment ($)",     f:s=>money(POS[s.t].cost)},
+ {n:"3b", l:"Budget remaining ($)",       f:s=>smoney(bleft(s))},
  {n:"4",  l:"Market value ($)",           f:s=>money(mv(s))},
  {n:"5",  l:"Unrealized G/L %",           f:s=>pct(upl(s))},
  {g:"Price & valuation"},
@@ -440,6 +443,7 @@ function renderCards(){
         <label>Shares<input type="number" min="0" step="0.01" value="${p.shares??''}" onchange="setPos('${s.t}','shares',this.value)"></label>
       </div>
       <div class="posline"><span>Market value: <b>${money(mv(s))}</b></span><span>Unrealized: ${pct(upl(s))}</span></div>
+      ${p.budget!=null?`<div class="posline" style="border-top:none;padding-top:0"><span>Budget: <b>${money(p.budget)}</b></span><span>${bleft(s)>=0?"Left to invest":"Over budget"}: ${smoney(bleft(s))}</span></div>`:""}
       <div class="flinks">Forecasts:
         <a href="https://stockanalysis.com/stocks/${s.t.toLowerCase()}/forecast/" target="_blank" rel="noopener">StockAnalysis</a>
         <a href="https://finance.yahoo.com/quote/${s.t}/analysis" target="_blank" rel="noopener">Yahoo (revisions)</a>
