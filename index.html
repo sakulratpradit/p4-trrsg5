@@ -130,7 +130,7 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
 
 <header class="top">
   <h1>Pillar 4 · US Portfolio Command Center
-    <span class="sub">48 positions · AI · Semis · Infrastructure — Salee's book</span>
+    <span class="sub" id="subline">AI · Semis · Infrastructure — Salee's book</span>
   </h1>
   <div style="display:flex; gap:10px; align-items:center">
     <div class="meta-line">Fundamentals as of <b id="asof"></b> · prices = last close<br>Next scheduled refresh: <b>Mon 08:00 Bangkok</b></div>
@@ -463,6 +463,7 @@ document.getElementById("themeBtn").onclick = ()=> applyTheme(!document.getEleme
 
 function renderAll(){
   document.getElementById("asof").textContent = ASOF;
+  document.getElementById("subline").textContent = `${STOCKS.length} positions · AI · Semis · Infrastructure — Salee's book`;
   renderChips(); renderTiles(); renderLadder(); renderBubble(); renderMatrix(); renderCards();
   document.getElementById("foot").innerHTML =
    `Definitions — <b>Conviction</b> = (avg analyst target − last close) ÷ last close. <b>Devastation</b> = (last close − 52-wk high) ÷ 52-wk high; “—” within 0.5% of the high. <b>Growth YTD</b> = vs Jan 2, 2026 open. <b>Rule of 40 (FCF)</b> = revenue growth % + FCF margin % (TTM) — the conservative primary. <b>Rule of 40 (NI)</b> = revenue growth % + net profit margin %; a wide gap between the two = accounting profits not converting to cash (see ORCL), and NI is distorted by non-operating gains for IONQ/ONDS. ROI shown as ROIC. “—” = not meaningful (negative earnings or not published). CRWD figures reflect its July 2026 4-for-1 split.<br>
