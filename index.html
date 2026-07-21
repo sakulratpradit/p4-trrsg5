@@ -119,6 +119,9 @@ tbody tr.group:hover td, tbody tr.group:hover th{background:var(--chip)}
 .inp-row label{display:flex; flex-direction:column; gap:3px}
 .inp-row input{background:transparent; border:1px dashed var(--axis); border-radius:6px; color:var(--ink-1); font:inherit; padding:4px 8px; font-variant-numeric:tabular-nums}
 .posline{font-size:12px; color:var(--ink-2); border-top:1px solid var(--grid); padding-top:8px; display:flex; justify-content:space-between; font-variant-numeric:tabular-nums}
+.flinks{font-size:11px; color:var(--ink-3); display:flex; gap:10px; flex-wrap:wrap}
+.flinks a{color:var(--s1); text-decoration:none}
+.flinks a:hover{text-decoration:underline}
 footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
 .legend{display:flex; flex-wrap:wrap; gap:14px; font-size:11px; color:var(--ink-3); margin:8px 0 2px}
 .legend span{display:inline-flex; align-items:center; gap:5px}
@@ -408,6 +411,12 @@ function renderCards(){
         <label>Shares<input type="number" min="0" step="0.01" value="${p.shares??''}" onchange="setPos('${s.t}','shares',this.value)"></label>
       </div>
       <div class="posline"><span>Market value: <b>${money(mv(s))}</b></span><span>Unrealized: ${pct(upl(s))}</span></div>
+      <div class="flinks">Forecasts:
+        <a href="https://stockanalysis.com/stocks/${s.t.toLowerCase()}/forecast/" target="_blank" rel="noopener">StockAnalysis</a>
+        <a href="https://finance.yahoo.com/quote/${s.t}/analysis" target="_blank" rel="noopener">Yahoo (revisions)</a>
+        <a href="https://www.tradingview.com/symbols/${s.ex}-${s.t}/forecast/" target="_blank" rel="noopener">TradingView</a>
+        <a href="https://finviz.com/quote.ashx?t=${s.t}" target="_blank" rel="noopener">Finviz</a>
+      </div>
     </div>`;
   }).join("");
   // lazy mount TradingView minis
