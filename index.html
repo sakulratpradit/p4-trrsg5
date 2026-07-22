@@ -35,11 +35,11 @@ h1 .sub{font-size:13px; color:var(--ink-3); font-weight:400; display:block; marg
 .toggle{border:1px solid var(--ring); background:var(--surface-1); color:var(--ink-2); border-radius:8px; padding:5px 12px; font-size:12px; cursor:pointer}
 .tape-wrap{margin:14px 0 4px; border:1px solid var(--ring); border-radius:10px; overflow:hidden; background:var(--surface-1); min-height:46px}
 .tape-fallback{padding:12px 16px; font-size:12px; color:var(--ink-3)}
-.tiles{display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:12px; margin:16px 0}
-.tile{background:var(--surface-1); border:1px solid var(--ring); border-radius:12px; padding:14px 16px}
-.tile .k{font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:var(--ink-3); margin-bottom:6px}
-.tile .v{font-size:24px; font-weight:650; letter-spacing:-.02em}
-.tile .d{font-size:12px; color:var(--ink-2); margin-top:4px}
+.tiles{display:grid; grid-template-columns:repeat(auto-fit,minmax(148px,1fr)); gap:10px; margin:14px 0}
+.tile{background:var(--surface-1); border:1px solid var(--ring); border-radius:12px; padding:10px 14px}
+.tile .k{font-size:10.5px; text-transform:uppercase; letter-spacing:.05em; color:var(--ink-3); margin-bottom:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.tile .v{font-size:21px; font-weight:650; letter-spacing:-.02em}
+.tile .d{font-size:11.5px; color:var(--ink-2); margin-top:3px}
 .pos{color:var(--good)} .neg{color:var(--bad)}
 h2{font-size:15px; margin:26px 0 4px; display:flex; align-items:center; gap:8px}
 h2 .n{font-size:11px; color:var(--ink-3); font-weight:400}
@@ -268,7 +268,7 @@ function renderTiles(){
   const byG = GROUPS.map((g,i)=>({g,i,mv:STOCKS.filter(s=>s.g===i).reduce((a,s)=>a+(mv(s)||0),0)})).sort((a,b)=>b.mv-a.mv);
   document.getElementById("tiles").innerHTML = `
    <div class="tile"><div class="k">Positions</div><div class="v">${STOCKS.filter(s=>POS[s.t].shares!=null).length}</div><div class="d">+${STOCKS.filter(s=>POS[s.t].shares==null).length} watchlist · ${GROUPS.length} groups</div></div>
-   <div class="tile"><div class="k">Portfolio market value</div><div class="v">${money(totMV)}</div><div class="d">vs cost ${money(totCost)} · <span class="${totMV>=totCost?'pos':'neg'}">${totMV>=totCost?"+":"\u2212"}$${Math.abs(totMV-totCost).toLocaleString("en-US",{maximumFractionDigits:0})}</span> · ${pct((totMV-totCost)/totCost*100)}</div></div>
+   <div class="tile"><div class="k">Port. market value</div><div class="v">${money(totMV)}</div><div class="d">vs cost ${money(totCost)} · <span class="${totMV>=totCost?'pos':'neg'}">${totMV>=totCost?"+":"\u2212"}$${Math.abs(totMV-totCost).toLocaleString("en-US",{maximumFractionDigits:0})}</span> · ${pct((totMV-totCost)/totCost*100)}</div></div>
    <div class="tile"><div class="k">Cash left · POEMS (live)</div><div class="v">$${CASH.amount.toLocaleString("en-US",{minimumFractionDigits:2})}</div><div class="d">${CASH.currency} · as of ${CASH.asof} · pre-settlement</div></div>
    <div class="tile"><div class="k">Largest group</div><div class="v" style="font-size:17px">${byG[0].g}</div><div class="d">${money(byG[0].mv)} · ${(byG[0].mv/totMV*100).toFixed(0)}% of book</div></div>
    <div class="tile"><div class="k">Best YTD</div><div class="v">${best.t}</div><div class="d">${pct(ytd(best))} since Jan 2 open</div></div>
