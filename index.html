@@ -275,6 +275,7 @@ function renderTiles(){
   document.getElementById("tiles").innerHTML = `
    <div class="tile"><div class="k">Positions</div><div class="v">${STOCKS.filter(s=>POS[s.t].shares!=null).length}</div><div class="d">+${STOCKS.filter(s=>POS[s.t].shares==null).length} watchlist · ${GROUPS.length} groups</div></div>
    <div class="tile"><div class="k">Portfolio market value</div><div class="v">${money(totMV)}</div><div class="d">vs cost ${money(totCost)} · ${pct((totMV-totCost)/totCost*100)}</div></div>
+   <div class="tile"><div class="k">Cash left · POEMS (live)</div><div class="v">$${CASH.amount.toLocaleString("en-US",{minimumFractionDigits:2})}</div><div class="d">${CASH.currency} · as of ${CASH.asof} · pre-settlement</div></div>
    <div class="tile"><div class="k">Largest group</div><div class="v" style="font-size:17px">${byG[0].g}</div><div class="d">${money(byG[0].mv)} · ${(byG[0].mv/totMV*100).toFixed(0)}% of book</div></div>
    <div class="tile"><div class="k">Best YTD</div><div class="v">${best.t}</div><div class="d">${pct(ytd(best))} since Jan 2 open</div></div>
    <div class="tile"><div class="k">Worst YTD</div><div class="v">${worst.t}</div><div class="d">${pct(ytd(worst))} since Jan 2 open</div></div>`;
