@@ -123,11 +123,6 @@ tbody tr.group:hover td, tbody tr.group:hover th{background:var(--chip)}
 .flinks a{color:var(--s1); text-decoration:none}
 .flinks a:hover{text-decoration:underline}
 footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
-.cash-card{background:var(--surface-1); border:1px solid var(--grid); border-radius:12px; padding:14px 18px; display:inline-block; min-width:280px; margin-bottom:10px}
-.cash-k{font-size:11px; color:var(--ink-3); text-transform:uppercase; letter-spacing:.06em}
-.cash-v{font-size:26px; font-weight:700; margin:4px 0; font-variant-numeric:tabular-nums}
-.cash-cur{font-size:13px; color:var(--ink-2); font-weight:500}
-.cash-n{font-size:11px; color:var(--ink-3); max-width:340px}
 .tday{margin:12px 0 20px}
 .tday-h{display:flex; flex-wrap:wrap; gap:10px; align-items:baseline; margin-bottom:6px}
 .tday-sum{font-size:12px; color:var(--ink-2)}
@@ -217,7 +212,6 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
 <div class="cards" id="cards"></div>
 
 <h2>Daily trading activity <span class="n">booked from Salee's fills, day by day · dad's POEMS (Phillip Securities) port</span></h2>
-<div id="cashrow"></div>
 <div id="tradedays"></div>
 
 <footer id="foot"></footer>
@@ -529,10 +523,6 @@ function mountTape(){
 const pmoney = v => v==null ? "\u2014" : `<span class="${v>=0?'pos':'neg'}">${v>=0?'+':'\u2212'}$${Math.abs(v).toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2})}</span>`;
 const dmoney = v => "$"+v.toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
 function renderTrades(){
-  document.getElementById("cashrow").innerHTML =
-    `<div class="cash-card"><div class="cash-k">Cash balance (live) \u00b7 ${CASH.broker}</div>
-     <div class="cash-v">${dmoney(CASH.amount)} <span class="cash-cur">${CASH.currency}</span></div>
-     <div class="cash-n">before settlement of outstanding contracts &amp; accrued interest/fees \u00b7 as of ${CASH.asof}</div></div>`;
   const days = {};
   TRADES.forEach(t=>{ (days[t.date]=days[t.date]||[]).push(t); });
   const el = document.getElementById("tradedays");
