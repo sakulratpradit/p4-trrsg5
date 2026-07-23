@@ -41,6 +41,23 @@ h1 .sub{font-size:13px; color:var(--ink-3); font-weight:400; display:block; marg
 .tile .v{font-size:21px; font-weight:650; letter-spacing:-.02em}
 .tile .d{font-size:11.5px; color:var(--ink-2); margin-top:3px}
 .pos{color:var(--good)} .neg{color:var(--bad)}
+.tabbar{display:flex; gap:2px; margin:12px 0 2px; border-bottom:2px solid var(--grid); position:sticky; top:0; z-index:30; background:var(--page); padding-top:4px; overflow-x:auto; scrollbar-width:none}
+.tabbar::-webkit-scrollbar{display:none}
+.tab{border:none; background:none; color:var(--ink-3); font-size:14px; font-weight:600; padding:10px 18px; cursor:pointer; border-bottom:3px solid transparent; margin-bottom:-2px; white-space:nowrap}
+.tab.on{color:var(--ink-1); border-bottom-color:var(--s1)}
+.tab:hover{color:var(--ink-2)}
+.page{display:none} .page.on{display:block}
+.big-tiles{display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:12px; margin:14px 0}
+.bt{background:var(--surface-1); border:1px solid var(--ring); border-radius:12px; padding:15px 18px}
+.bt .k{font-size:11px; text-transform:uppercase; letter-spacing:.05em; color:var(--ink-3); margin-bottom:6px}
+.bt .v{font-size:22px; font-weight:700; letter-spacing:-.02em}
+.bt .v2{font-size:12.5px; color:var(--ink-2); margin-top:4px}
+.perf-wrap{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:14px; margin:12px 0}
+.perf-card{background:var(--surface-1); border:1px solid var(--ring); border-radius:12px; padding:16px 18px}
+.wl-bar{display:flex; height:16px; border-radius:8px; overflow:hidden; margin:12px 0 8px; background:var(--grid)}
+.wl-w{background:var(--good)} .wl-l{background:var(--bad)}
+#gsum thead th, #gstock thead th{position:static; top:auto}
+#gstock{width:100%}
 h2{font-size:15px; margin:26px 0 4px; display:flex; align-items:center; gap:8px}
 h2 .n{font-size:11px; color:var(--ink-3); font-weight:400}
 .note{font-size:12px; color:var(--ink-3); margin-bottom:10px}
@@ -184,15 +201,19 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
   </div>
 </header>
 
+<div class="tabbar" id="tabbar">
+  <button class="tab on" data-p="main">Main</button>
+  <button class="tab" data-p="groups">Group Summary</button>
+  <button class="tab" data-p="trading">Trading</button>
+  <button class="tab" data-p="vision">Vision</button>
+</div>
+
+<div class="page on" id="page-main">
 <div class="tape-wrap" id="tape">
   <div class="tape-fallback">Live ticker loading… (TradingView) — if it doesn't appear, your viewer blocks external embeds; figures below are from the last refresh close.</div>
 </div>
 
 <div class="tiles" id="tiles"></div>
-
-<style>#gsum thead th{position:static; top:auto} #gsum{width:100%}</style>
-<h2>Group summary <span class="n">budget vs invested vs realized &amp; unrealized P/L · whole book</span></h2>
-<div class="tbl-wrap" style="max-height:none"><table id="gsum"></table></div>
 
 <div class="chipbar" id="chipbar"></div>
 <div class="note" style="margin-top:0">Salee's grouping (notebook Jul 21 + corrections). <b>Neocloud Watch</b>: IREN <b style="color:var(--bad)">(45 sh held, tranche-2 sell plan still active)</b> + NBIS (exited Jul 21) + CRWV (exited earlier) — watched for an industry turnaround. Click a group to focus every panel.</div>
@@ -214,9 +235,29 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
 
 <h2>Position cards <span class="n">charts load as you scroll · edits recompute instantly (in-memory until I bake them in)</span></h2>
 <div class="cards" id="cards"></div>
+</div><!-- /page-main -->
 
-<h2>Daily trading activity <span class="n">booked from Salee's fills, day by day · dad's POEMS (Phillip Securities) port</span></h2>
+<div class="page" id="page-groups">
+<h2>Portfolio totals <span class="n">whole book, since inception · Jul 2025</span></h2>
+<div class="big-tiles" id="gtotals"></div>
+<h2>By group <span class="n">budget vs invested vs realized &amp; unrealized P/L</span></h2>
+<div class="tbl-wrap" style="max-height:none"><table id="gsum"></table></div>
+<h2>By stock <span class="n">every held position, grouped · realized shown where a lot was sold</span></h2>
+<div class="tbl-wrap"><table id="gstock"></table></div>
+<h2>Performance <span class="n">win / lose rate · win = positive G/L</span></h2>
+<div class="perf-wrap" id="perf"></div>
+</div><!-- /page-groups -->
+
+<div class="page" id="page-trading">
+<h2>Daily trading activity <span class="n">booked from Salee's fills, day by day · Jul 2026 onward</span></h2>
 <div id="tradedays"></div>
+<h2>Monthly summary <span class="n">all history since Jul 2025 · tap a month for by-stock detail</span></h2>
+<div id="monthly"></div>
+</div><!-- /page-trading -->
+
+<div class="page" id="page-vision">
+<div id="vision"></div>
+</div><!-- /page-vision -->
 
 <footer id="foot"></footer>
 </div>
@@ -231,6 +272,9 @@ const TRADES = [{"date":"Jul 21, 2026","action":"BUY","t":"MU","shares":2,"price
 const SELLPLAN = ["IREN"];
 const CASH = {"currency":"USD","amount":25394.23,"asof":"Jul 23, 2026","broker":"POEMS (Phillip Securities)"};
 const REALIZED = [{"t":"NBIS","g":12,"amount":1404.52},{"t":"IREN","g":12,"amount":98.52},{"t":"CRWV","g":12,"amount":-786.02},{"t":"ORCL","g":0,"amount":-1961.73},{"t":"IONQ","g":8,"amount":-772.46},{"t":"SNPS","g":9,"amount":-263.2},{"t":"NOW","g":9,"amount":-401.51},{"t":"TTD","g":null,"amount":-421.11},{"t":"MELI","g":null,"amount":272.72},{"t":"APP","g":null,"amount":-393.16},{"t":"SOFI","g":null,"amount":-152.4},{"t":"HOOD","g":null,"amount":897.82}];
+const TOTALS = {"investedEverUSD":573228.69,"investedEverTHB":18447934,"soldCostUSD":34025.62,"soldCostTHB":1143440,"realizedUSD":-2478.01,"realizedTHB":-83170,"fx":33.75,"inceptionDate":"Jul 15, 2025"};
+const SOLD = [{"t":"NBIS","qty":27,"costUSD":3856.65,"costTHB":129891.8,"glUSD":1404.51,"glTHB":47304.07,"g":12,"lastDate":"2026-07-21"},{"t":"HOOD","qty":25,"costUSD":1933.56,"costTHB":64909.61,"glUSD":897.82,"glTHB":30139.82,"g":-1,"lastDate":"2026-07-16"},{"t":"MELI","qty":1,"costUSD":1582.36,"costTHB":53119.83,"glUSD":272.72,"glTHB":9155.21,"g":-1,"lastDate":"2026-07-16"},{"t":"IREN","qty":45,"costUSD":1735.17,"costTHB":58440.36,"glUSD":98.52,"glTHB":3318.32,"g":12,"lastDate":"2026-07-21"},{"t":"SOFI","qty":105,"costUSD":2006.51,"costTHB":67358.56,"glUSD":-152.4,"glTHB":-5116.08,"g":-1,"lastDate":"2026-07-16"},{"t":"SNPS","qty":4,"costUSD":1934.56,"costTHB":64943.18,"glUSD":-263.2,"glTHB":-8835.62,"g":9,"lastDate":"2026-07-16"},{"t":"APP","qty":4,"costUSD":2060.56,"costTHB":69193.6,"glUSD":-393.16,"glTHB":-13202.31,"g":-1,"lastDate":"2026-07-17"},{"t":"NOW","qty":37,"costUSD":4081.76,"costTHB":137024.61,"glUSD":-401.51,"glTHB":-13478.62,"g":9,"lastDate":"2026-07-16"},{"t":"TTD","qty":80,"costUSD":1951.7,"costTHB":65518.57,"glUSD":-421.11,"glTHB":-14136.66,"g":9,"lastDate":"2026-07-16"},{"t":"IONQ","qty":81,"costUSD":3569.26,"costTHB":119998.38,"glUSD":-772.46,"glTHB":-25969.96,"g":8,"lastDate":"2026-07-20"},{"t":"CRWV","qty":17,"costUSD":1997.56,"costTHB":67078.06,"glUSD":-786.02,"glTHB":-26394.55,"g":12,"lastDate":"2026-07-17"},{"t":"ORCL","qty":44,"costUSD":7315.98,"costTHB":245963.36,"glUSD":-1961.73,"glTHB":-65953.47,"g":0,"lastDate":"2026-07-20"}];
+const MONTHLY = [{"ym":"2025-07","buyUSD":19750.54,"buyLots":4,"sellUSD":0.0,"sellLots":0,"realizedUSD":0.0,"realizedTHB":0,"byStock":[{"t":"NVDA","buy":10266.29,"sell":0.0,"real":0.0},{"t":"GOOGL","buy":9484.25,"sell":0.0,"real":0.0}],"byGroup":[{"g":0,"buy":9484.25,"sell":0.0,"real":0.0},{"g":1,"buy":10266.29,"sell":0.0,"real":0.0}]},{"ym":"2025-08","buyUSD":36743.8,"buyLots":9,"sellUSD":0.0,"sellLots":0,"realizedUSD":0.0,"realizedTHB":0,"byStock":[{"t":"AMZN","buy":8463.05,"sell":0.0,"real":0.0},{"t":"MSFT","buy":6099.24,"sell":0.0,"real":0.0},{"t":"GOOGL","buy":5675.18,"sell":0.0,"real":0.0},{"t":"META","buy":4509.63,"sell":0.0,"real":0.0},{"t":"NVDA","buy":4171.91,"sell":0.0,"real":0.0},{"t":"AAPL","buy":4088.73,"sell":0.0,"real":0.0},{"t":"ASML","buy":3736.06,"sell":0.0,"real":0.0}],"byGroup":[{"g":0,"buy":28835.83,"sell":0.0,"real":0.0},{"g":1,"buy":4171.91,"sell":0.0,"real":0.0},{"g":2,"buy":3736.06,"sell":0.0,"real":0.0}]},{"ym":"2025-09","buyUSD":34133.89,"buyLots":8,"sellUSD":0.0,"sellLots":0,"realizedUSD":0.0,"realizedTHB":0,"byStock":[{"t":"ISRG","buy":8949.11,"sell":0.0,"real":0.0},{"t":"META","buy":4569.76,"sell":0.0,"real":0.0},{"t":"TSM","buy":4200.97,"sell":0.0,"real":0.0},{"t":"AMZN","buy":4148.86,"sell":0.0,"real":0.0},{"t":"NVDA","buy":4124.81,"sell":0.0,"real":0.0},{"t":"AMAT","buy":4083.72,"sell":0.0,"real":0.0},{"t":"MSFT","buy":4056.66,"sell":0.0,"real":0.0}],"byGroup":[{"g":0,"buy":12775.28,"sell":0.0,"real":0.0},{"g":1,"buy":8325.78,"sell":0.0,"real":0.0},{"g":2,"buy":4083.72,"sell":0.0,"real":0.0},{"g":6,"buy":8949.11,"sell":0.0,"real":0.0}]},{"ym":"2025-10","buyUSD":20924.7,"buyLots":5,"sellUSD":0.0,"sellLots":0,"realizedUSD":0.0,"realizedTHB":0,"byStock":[{"t":"MSFT","buy":8281.69,"sell":0.0,"real":0.0},{"t":"META","buy":4311.21,"sell":0.0,"real":0.0},{"t":"AMZN","buy":4227.03,"sell":0.0,"real":0.0},{"t":"GOOGL","buy":4104.77,"sell":0.0,"real":0.0}],"byGroup":[{"g":0,"buy":20924.7,"sell":0.0,"real":0.0}]},{"ym":"2025-11","buyUSD":17712.19,"buyLots":6,"sellUSD":0.0,"sellLots":0,"realizedUSD":0.0,"realizedTHB":0,"byStock":[{"t":"META","buy":8873.95,"sell":0.0,"real":0.0},{"t":"NVDA","buy":3625.12,"sell":0.0,"real":0.0},{"t":"GOOGL","buy":3188.56,"sell":0.0,"real":0.0},{"t":"TSM","buy":2024.56,"sell":0.0,"real":0.0}],"byGroup":[{"g":0,"buy":12062.51,"sell":0.0,"real":0.0},{"g":1,"buy":5649.68,"sell":0.0,"real":0.0}]},{"ym":"2025-12","buyUSD":19329.84,"buyLots":9,"sellUSD":0.0,"sellLots":0,"realizedUSD":0.0,"realizedTHB":0,"byStock":[{"t":"AVGO","buy":4426.52,"sell":0.0,"real":0.0},{"t":"AMZN","buy":4184.12,"sell":0.0,"real":0.0},{"t":"MSFT","buy":2416.06,"sell":0.0,"real":0.0},{"t":"GOOGL","buy":2190.46,"sell":0.0,"real":0.0},{"t":"LRCX","buy":2108.56,"sell":0.0,"real":0.0},{"t":"NVDA","buy":2065.56,"sell":0.0,"real":0.0},{"t":"ORCL","buy":1938.56,"sell":0.0,"real":0.0}],"byGroup":[{"g":0,"buy":10729.2,"sell":0.0,"real":0.0},{"g":1,"buy":6492.08,"sell":0.0,"real":0.0},{"g":2,"buy":2108.56,"sell":0.0,"real":0.0}]},{"ym":"2026-01","buyUSD":75906.87,"buyLots":36,"sellUSD":0.0,"sellLots":0,"realizedUSD":0.0,"realizedTHB":0,"byStock":[{"t":"NVDA","buy":14665.32,"sell":0.0,"real":0.0},{"t":"TSM","buy":12433.01,"sell":0.0,"real":0.0},{"t":"MSFT","buy":10646.8,"sell":0.0,"real":0.0},{"t":"AVGO","buy":10449.8,"sell":0.0,"real":0.0},{"t":"GOOGL","buy":6320.48,"sell":0.0,"real":0.0},{"t":"MU","buy":5875.68,"sell":0.0,"real":0.0},{"t":"ASML","buy":2868.28,"sell":0.0,"real":0.0},{"t":"TSLA","buy":2246.06,"sell":0.0,"real":0.0},{"t":"AMZN","buy":2195.56,"sell":0.0,"real":0.0},{"t":"META","buy":2168.56,"sell":0.0,"real":0.0},{"t":"INTC","buy":2029.6,"sell":0.0,"real":0.0},{"t":"ORCL","buy":2016.16,"sell":0.0,"real":0.0},{"t":"LRCX","buy":1991.56,"sell":0.0,"real":0.0}],"byGroup":[{"g":0,"buy":23347.56,"sell":0.0,"real":0.0},{"g":1,"buy":39577.73,"sell":0.0,"real":0.0},{"g":2,"buy":4859.84,"sell":0.0,"real":0.0},{"g":3,"buy":5875.68,"sell":0.0,"real":0.0},{"g":6,"buy":2246.06,"sell":0.0,"real":0.0}]},{"ym":"2026-02","buyUSD":56458.99,"buyLots":30,"sellUSD":0.0,"sellLots":0,"realizedUSD":0.0,"realizedTHB":0,"byStock":[{"t":"NVDA","buy":9438.8,"sell":0.0,"real":0.0},{"t":"GOOGL","buy":6328.33,"sell":0.0,"real":0.0},{"t":"AMD","buy":5992.08,"sell":0.0,"real":0.0},{"t":"MSFT","buy":4342.12,"sell":0.0,"real":0.0},{"t":"AVGO","buy":4168.12,"sell":0.0,"real":0.0},{"t":"PLTR","buy":3597.36,"sell":0.0,"real":0.0},{"t":"AMZN","buy":3546.3,"sell":0.0,"real":0.0},{"t":"ASML","buy":2752.56,"sell":0.0,"real":0.0},{"t":"TSLA","buy":2058.56,"sell":0.0,"real":0.0},{"t":"CRWD","buy":2055.56,"sell":0.0,"real":0.0},{"t":"AVAV","buy":1676.56,"sell":0.0,"real":0.0},{"t":"IONQ","buy":1566.96,"sell":0.0,"real":0.0},{"t":"AAPL","buy":1562.56,"sell":0.0,"real":0.0},{"t":"AMKR","buy":1508.56,"sell":0.0,"real":0.0},{"t":"IREN","buy":1493.56,"sell":0.0,"real":0.0},{"t":"KLAC","buy":1474.56,"sell":0.0,"real":0.0},{"t":"TSM","buy":1460.56,"sell":0.0,"real":0.0},{"t":"VRT","buy":1435.88,"sell":0.0,"real":0.0}],"byGroup":[{"g":0,"buy":15779.31,"sell":0.0,"real":0.0},{"g":1,"buy":21059.56,"sell":0.0,"real":0.0},{"g":2,"buy":7791.24,"sell":0.0,"real":0.0},{"g":5,"buy":1435.88,"sell":0.0,"real":0.0},{"g":6,"buy":2058.56,"sell":0.0,"real":0.0},{"g":7,"buy":5273.92,"sell":0.0,"real":0.0},{"g":8,"buy":1566.96,"sell":0.0,"real":0.0},{"g":12,"buy":1493.56,"sell":0.0,"real":0.0}]},{"ym":"2026-03","buyUSD":64002.08,"buyLots":32,"sellUSD":0.0,"sellLots":0,"realizedUSD":0.0,"realizedTHB":0,"byStock":[{"t":"NVDA","buy":7631.39,"sell":0.0,"real":0.0},{"t":"MSFT","buy":7608.08,"sell":0.0,"real":0.0},{"t":"AMZN","buy":5899.83,"sell":0.0,"real":0.0},{"t":"AVGO","buy":5883.84,"sell":0.0,"real":0.0},{"t":"META","buy":5566.2,"sell":0.0,"real":0.0},{"t":"ORCL","buy":3902.97,"sell":0.0,"real":0.0},{"t":"CRDO","buy":3881.37,"sell":0.0,"real":0.0},{"t":"ISRG","buy":3772.32,"sell":0.0,"real":0.0},{"t":"LITE","buy":2123.56,"sell":0.0,"real":0.0},{"t":"GOOGL","buy":2088.64,"sell":0.0,"real":0.0},{"t":"VRT","buy":2088.56,"sell":0.0,"real":0.0},{"t":"MU","buy":2033.56,"sell":0.0,"real":0.0},{"t":"BWXT","buy":1994.06,"sell":0.0,"real":0.0},{"t":"TSM","buy":1981.96,"sell":0.0,"real":0.0},{"t":"MRVL","buy":1944.56,"sell":0.0,"real":0.0},{"t":"HOOD","buy":1933.56,"sell":0.0,"real":0.0},{"t":"CRWD","buy":1863.56,"sell":0.0,"real":0.0},{"t":"AMD","buy":1804.06,"sell":0.0,"real":0.0}],"byGroup":[{"g":-1,"buy":1933.56,"sell":0.0,"real":0.0},{"g":0,"buy":25065.72,"sell":0.0,"real":0.0},{"g":1,"buy":19245.81,"sell":0.0,"real":0.0},{"g":2,"buy":1863.56,"sell":0.0,"real":0.0},{"g":3,"buy":2033.56,"sell":0.0,"real":0.0},{"g":4,"buy":6004.93,"sell":0.0,"real":0.0},{"g":5,"buy":4082.62,"sell":0.0,"real":0.0},{"g":6,"buy":3772.32,"sell":0.0,"real":0.0}]},{"ym":"2026-04","buyUSD":57480.27,"buyLots":30,"sellUSD":0.0,"sellLots":0,"realizedUSD":0.0,"realizedTHB":0,"byStock":[{"t":"ETN","buy":4129.92,"sell":0.0,"real":0.0},{"t":"PANW","buy":3760.62,"sell":0.0,"real":0.0},{"t":"MSFT","buy":3724.76,"sell":0.0,"real":0.0},{"t":"META","buy":3543.83,"sell":0.0,"real":0.0},{"t":"TSM","buy":2211.7,"sell":0.0,"real":0.0},{"t":"AMZN","buy":2031.12,"sell":0.0,"real":0.0},{"t":"CDNS","buy":2007.28,"sell":0.0,"real":0.0},{"t":"SOFI","buy":2006.51,"sell":0.0,"real":0.0},{"t":"NVDA","buy":2004.56,"sell":0.0,"real":0.0},{"t":"ZETA","buy":2004.34,"sell":0.0,"real":0.0},{"t":"MRVL","buy":2003.41,"sell":0.0,"real":0.0},{"t":"NOW","buy":2001.1,"sell":0.0,"real":0.0},{"t":"CRWV","buy":1997.56,"sell":0.0,"real":0.0},{"t":"ANET","buy":1994.56,"sell":0.0,"real":0.0},{"t":"AMD","buy":1979.56,"sell":0.0,"real":0.0},{"t":"IREN","buy":1976.77,"sell":0.0,"real":0.0},{"t":"AMKR","buy":1946.06,"sell":0.0,"real":0.0},{"t":"SNPS","buy":1934.56,"sell":0.0,"real":0.0},{"t":"ALAB","buy":1930.56,"sell":0.0,"real":0.0},{"t":"NBIS","buy":1918.09,"sell":0.0,"real":0.0},{"t":"GOOGL","buy":1888.36,"sell":0.0,"real":0.0},{"t":"CRM","buy":1888.07,"sell":0.0,"real":0.0},{"t":"ORCL","buy":1874.3,"sell":0.0,"real":0.0},{"t":"AVGO","buy":1718.56,"sell":0.0,"real":0.0},{"t":"MPWR","buy":1538.56,"sell":0.0,"real":0.0},{"t":"ASML","buy":1465.56,"sell":0.0,"real":0.0}],"byGroup":[{"g":-1,"buy":2006.51,"sell":0.0,"real":0.0},{"g":0,"buy":13062.37,"sell":0.0,"real":0.0},{"g":1,"buy":9917.79,"sell":0.0,"real":0.0},{"g":2,"buy":7172.24,"sell":0.0,"real":0.0},{"g":4,"buy":3925.12,"sell":0.0,"real":0.0},{"g":5,"buy":5668.48,"sell":0.0,"real":0.0},{"g":9,"buy":9835.34,"sell":0.0,"real":0.0},{"g":12,"buy":5892.41,"sell":0.0,"real":0.0}]},{"ym":"2026-05","buyUSD":68940.1,"buyLots":36,"sellUSD":0.0,"sellLots":0,"realizedUSD":0.0,"realizedTHB":0,"byStock":[{"t":"GOOGL","buy":5881.88,"sell":0.0,"real":0.0},{"t":"ANET","buy":5815.25,"sell":0.0,"real":0.0},{"t":"NVDA","buy":5620.81,"sell":0.0,"real":0.0},{"t":"TSM","buy":4148.12,"sell":0.0,"real":0.0},{"t":"AAPL","buy":3820.35,"sell":0.0,"real":0.0},{"t":"ETN","buy":3749.63,"sell":0.0,"real":0.0},{"t":"AMZN","buy":3740.6,"sell":0.0,"real":0.0},{"t":"GEV","buy":2147.3,"sell":0.0,"real":0.0},{"t":"AMAT","buy":2054.39,"sell":0.0,"real":0.0},{"t":"ONDS","buy":2030.54,"sell":0.0,"real":0.0},{"t":"CEG","buy":2016.3,"sell":0.0,"real":0.0},{"t":"APH","buy":2004.4,"sell":0.0,"real":0.0},{"t":"IONQ","buy":2002.3,"sell":0.0,"real":0.0},{"t":"VST","buy":1997.93,"sell":0.0,"real":0.0},{"t":"QCOM","buy":1959.96,"sell":0.0,"real":0.0},{"t":"TTD","buy":1951.7,"sell":0.0,"real":0.0},{"t":"NBIS","buy":1938.56,"sell":0.0,"real":0.0},{"t":"PLTR","buy":1935.73,"sell":0.0,"real":0.0},{"t":"ORCL","buy":1919.31,"sell":0.0,"real":0.0},{"t":"CRDO","buy":1853.56,"sell":0.0,"real":0.0},{"t":"META","buy":1814.4,"sell":0.0,"real":0.0},{"t":"AMD","buy":1811.36,"sell":0.0,"real":0.0},{"t":"TER","buy":1724.56,"sell":0.0,"real":0.0},{"t":"MU","buy":1710.56,"sell":0.0,"real":0.0},{"t":"MSFT","buy":1708.24,"sell":0.0,"real":0.0},{"t":"MELI","buy":1582.36,"sell":0.0,"real":0.0}],"byGroup":[{"g":-1,"buy":1582.36,"sell":0.0,"real":0.0},{"g":0,"buy":18884.78,"sell":0.0,"real":0.0},{"g":1,"buy":13540.25,"sell":0.0,"real":0.0},{"g":2,"buy":2054.39,"sell":0.0,"real":0.0},{"g":3,"buy":1710.56,"sell":0.0,"real":0.0},{"g":4,"buy":9673.21,"sell":0.0,"real":0.0},{"g":5,"buy":9911.16,"sell":0.0,"real":0.0},{"g":6,"buy":1724.56,"sell":0.0,"real":0.0},{"g":7,"buy":3966.27,"sell":0.0,"real":0.0},{"g":8,"buy":2002.3,"sell":0.0,"real":0.0},{"g":9,"buy":1951.7,"sell":0.0,"real":0.0},{"g":12,"buy":1938.56,"sell":0.0,"real":0.0}]},{"ym":"2026-06","buyUSD":72759.17,"buyLots":37,"sellUSD":0.0,"sellLots":0,"realizedUSD":0.0,"realizedTHB":0,"byStock":[{"t":"TSM","buy":7509.37,"sell":0.0,"real":0.0},{"t":"ANET","buy":5902.03,"sell":0.0,"real":0.0},{"t":"NVDA","buy":5827.6,"sell":0.0,"real":0.0},{"t":"MU","buy":5822.22,"sell":0.0,"real":0.0},{"t":"GOOGL","buy":4140.2,"sell":0.0,"real":0.0},{"t":"CGNX","buy":4067.62,"sell":0.0,"real":0.0},{"t":"ORCL","buy":3978.3,"sell":0.0,"real":0.0},{"t":"MRVL","buy":3924.69,"sell":0.0,"real":0.0},{"t":"LITE","buy":3768.7,"sell":0.0,"real":0.0},{"t":"AMD","buy":2202.16,"sell":0.0,"real":0.0},{"t":"VST","buy":2089.06,"sell":0.0,"real":0.0},{"t":"NOW","buy":2080.66,"sell":0.0,"real":0.0},{"t":"KLAC","buy":2036.13,"sell":0.0,"real":0.0},{"t":"AMAT","buy":2023.96,"sell":0.0,"real":0.0},{"t":"ASML","buy":1994.56,"sell":0.0,"real":0.0},{"t":"CRDO","buy":1966.06,"sell":0.0,"real":0.0},{"t":"AAPL","buy":1965.97,"sell":0.0,"real":0.0},{"t":"TER","buy":1961.06,"sell":0.0,"real":0.0},{"t":"RKLB","buy":1942.58,"sell":0.0,"real":0.0},{"t":"AVGO","buy":1924.68,"sell":0.0,"real":0.0},{"t":"AMZN","buy":1924.56,"sell":0.0,"real":0.0},{"t":"ALAB","buy":1874.91,"sell":0.0,"real":0.0},{"t":"META","buy":1832.09,"sell":0.0,"real":0.0}],"byGroup":[{"g":0,"buy":13841.12,"sell":0.0,"real":0.0},{"g":1,"buy":21388.51,"sell":0.0,"real":0.0},{"g":2,"buy":6054.64,"sell":0.0,"real":0.0},{"g":3,"buy":5822.22,"sell":0.0,"real":0.0},{"g":4,"buy":13511.7,"sell":0.0,"real":0.0},{"g":5,"buy":2089.06,"sell":0.0,"real":0.0},{"g":6,"buy":6028.68,"sell":0.0,"real":0.0},{"g":7,"buy":1942.58,"sell":0.0,"real":0.0},{"g":9,"buy":2080.66,"sell":0.0,"real":0.0}]},{"ym":"2026-07","buyUSD":29086.25,"buyLots":15,"sellUSD":31547.61,"sellLots":13,"realizedUSD":-2478.01,"realizedTHB":-83170,"byStock":[{"t":"AMZN","buy":6233.64,"sell":0.0,"real":0.0},{"t":"ASML","buy":3577.04,"sell":0.0,"real":0.0},{"t":"AVAV","buy":2081.74,"sell":0.0,"real":0.0},{"t":"APP","buy":2060.56,"sell":1667.4,"real":-393.16},{"t":"NVDA","buy":2057.56,"sell":0.0,"real":0.0},{"t":"CEG","buy":2024.68,"sell":0.0,"real":0.0},{"t":"VST","buy":1991.06,"sell":0.0,"real":0.0},{"t":"MSFT","buy":1934.7,"sell":0.0,"real":0.0},{"t":"MU","buy":1850.58,"sell":0.0,"real":0.0},{"t":"GOOGL","buy":1797.92,"sell":0.0,"real":0.0},{"t":"ISRG","buy":1763.71,"sell":0.0,"real":0.0},{"t":"IBM","buy":1713.07,"sell":0.0,"real":0.0},{"t":"TTD","buy":0.0,"sell":1530.59,"real":-421.11},{"t":"SNPS","buy":0.0,"sell":1671.36,"real":-263.2},{"t":"SOFI","buy":0.0,"sell":1854.11,"real":-152.4},{"t":"NOW","buy":0.0,"sell":3680.25,"real":-401.51},{"t":"HOOD","buy":0.0,"sell":2831.38,"real":897.82},{"t":"MELI","buy":0.0,"sell":1855.08,"real":272.72},{"t":"CRWV","buy":0.0,"sell":1211.54,"real":-786.02},{"t":"ORCL","buy":0.0,"sell":5354.25,"real":-1961.73},{"t":"IONQ","buy":0.0,"sell":2796.8,"real":-772.46},{"t":"IREN","buy":0.0,"sell":1833.69,"real":98.52},{"t":"NBIS","buy":0.0,"sell":5261.16,"real":1404.51}],"byGroup":[{"g":-1,"buy":2060.56,"sell":8207.97,"real":624.98},{"g":0,"buy":9966.25,"sell":5354.25,"real":-1961.73},{"g":1,"buy":2057.56,"sell":0.0,"real":0.0},{"g":2,"buy":3577.04,"sell":0.0,"real":0.0},{"g":3,"buy":1850.58,"sell":0.0,"real":0.0},{"g":5,"buy":4015.74,"sell":0.0,"real":0.0},{"g":6,"buy":1763.71,"sell":0.0,"real":0.0},{"g":7,"buy":2081.74,"sell":0.0,"real":0.0},{"g":8,"buy":0.0,"sell":2796.8,"real":-772.46},{"g":9,"buy":1713.07,"sell":6882.2,"real":-1085.82},{"g":12,"buy":0.0,"sell":8306.39,"real":717.02}]}];
 
 let FILTER = "all";
 const vis = () => FILTER==="all" ? STOCKS : STOCKS.filter(s=>s.g===FILTER);
@@ -593,6 +637,113 @@ function renderTrades(){
   }).join("");
 }
 
+/* ============ Group Summary page ============ */
+function renderTotals(){
+  const gm = v => v==null?"—":"$"+Math.round(v).toLocaleString("en-US");
+  const sm = v => `<span class="${v>=0?'pos':'neg'}">${v>=0?'+':'−'}$${Math.abs(Math.round(v)).toLocaleString("en-US")}</span>`;
+  const heldCost = STOCKS.reduce((a,s)=>a+(POS[s.t].cost||0),0);
+  const heldMV = STOCKS.reduce((a,s)=>a+(mv(s)||0),0);
+  const unreal = heldMV-heldCost;
+  const investedEver = heldCost + TOTALS.soldCostUSD;
+  const lifetime = (unreal + TOTALS.realizedUSD)/investedEver*100;
+  const current = unreal/heldCost*100;
+  document.getElementById("gtotals").innerHTML = `
+   <div class="bt"><div class="k">Total invested to date</div><div class="v">${gm(investedEver)}</div><div class="v2">held ${gm(heldCost)} + sold ${gm(TOTALS.soldCostUSD)} · ≈฿${(TOTALS.investedEverTHB/1e6).toFixed(2)}M at cost FX</div></div>
+   <div class="bt"><div class="k">Total market value (held)</div><div class="v">${gm(heldMV)}</div><div class="v2">unrealized ${sm(unreal)}</div></div>
+   <div class="bt"><div class="k">Sold-out cost basis</div><div class="v">${gm(TOTALS.soldCostUSD)}</div><div class="v2">฿${TOTALS.soldCostTHB.toLocaleString()} · ${SOLD.length} tickers exited/trimmed</div></div>
+   <div class="bt"><div class="k">Realized P/L (lifetime)</div><div class="v ${TOTALS.realizedUSD>=0?'pos':'neg'}">${sm(TOTALS.realizedUSD)}</div><div class="v2">฿${TOTALS.realizedTHB.toLocaleString()} · since ${TOTALS.inceptionDate}</div></div>
+   <div class="bt"><div class="k">Total return · lifetime</div><div class="v ${lifetime>=0?'pos':'neg'}">${lifetime>=0?'▲':'▼'} ${lifetime.toFixed(1)}%</div><div class="v2">(unrealized + realized) ÷ invested-ever</div></div>
+   <div class="bt"><div class="k">Total return · current holdings</div><div class="v ${current>=0?'pos':'neg'}">${current>=0?'▲':'▼'} ${current.toFixed(1)}%</div><div class="v2">unrealized ÷ held cost</div></div>`;
+}
+function renderStockSummary(){
+  const gm=v=>v==null?"—":"$"+Math.round(v).toLocaleString("en-US");
+  const gpm=v=>v==null?"—":`<span class="${v>=0?'pos':'neg'}">${v>=0?'+':'−'}$${Math.abs(Math.round(v)).toLocaleString("en-US")}</span>`;
+  const soldReal={}; SOLD.forEach(s=>soldReal[s.t]=s.glUSD);
+  let html=`<thead><tr class="tkr"><th style="text-align:left">Stock</th><th>Budget</th><th>Invested</th><th>Mkt value</th><th>Unrealized</th><th>%</th><th>Realized</th></tr></thead><tbody>`;
+  GROUPS.forEach((g,gi)=>{
+    const ss=STOCKS.filter(s=>s.g===gi && POS[s.t].shares!=null);
+    if(!ss.length) return;
+    html+=`<tr><th colspan="7" style="text-align:left;background:var(--s${gi+1});color:#fff;font-size:10px;text-transform:uppercase;letter-spacing:.05em;position:static">${g}</th></tr>`;
+    ss.forEach(s=>{
+      const cost=POS[s.t].cost, m=mv(s), un=(m!=null&&cost!=null)?m-cost:null;
+      html+=`<tr><th>${s.t} <span style="color:var(--ink-3);font-weight:400">${s.name}</span></th>
+       <td>${gm(POS[s.t].budget)}</td><td>${gm(cost)}</td><td>${gm(m)}</td><td>${gpm(un)}</td>
+       <td>${(un!=null&&cost)?`<span class="${un>=0?'pos':'neg'}">${(un/cost*100).toFixed(1)}%</span>`:"—"}</td>
+       <td>${soldReal[s.t]!=null?gpm(soldReal[s.t]):"—"}</td></tr>`;
+    });
+  });
+  const heldSet=new Set(STOCKS.filter(s=>POS[s.t].shares!=null).map(s=>s.t));
+  const soldOnly=SOLD.filter(s=>!heldSet.has(s.t));
+  if(soldOnly.length){
+    html+=`<tr><th colspan="7" style="text-align:left;background:var(--ink-3);color:#fff;font-size:10px;text-transform:uppercase;letter-spacing:.05em;position:static">Fully exited · no current holding</th></tr>`;
+    soldOnly.forEach(s=>{ html+=`<tr><th>${s.t}</th><td>—</td><td>${gm(s.costUSD)}</td><td>—</td><td>—</td><td>—</td><td>${gpm(s.glUSD)}</td></tr>`; });
+  }
+  document.getElementById("gstock").innerHTML=html+`</tbody>`;
+}
+function renderPerformance(){
+  const held=STOCKS.filter(s=>POS[s.t].shares!=null);
+  let hw=0,hl=0;
+  held.forEach(s=>{ const m=mv(s),c=POS[s.t].cost; if(m==null||c==null)return; const u=m-c; if(u>0)hw++; else if(u<0)hl++; });
+  let sw=0,sl=0; SOLD.forEach(s=>{ if(s.glUSD>0)sw++; else if(s.glUSD<0)sl++; });
+  const bar=(w,l)=>{ const t=(w+l)||1; return `<div class="wl-bar"><div class="wl-w" style="width:${w/t*100}%"></div><div class="wl-l" style="width:${l/t*100}%"></div></div>`; };
+  const pc=(a,b)=>(((a)/(((a)+(b))||1))*100).toFixed(0);
+  const card=(title,w,l,note)=>`<div class="perf-card"><div class="k" style="font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-3)">${title}</div>${bar(w,l)}
+     <div style="display:flex;justify-content:space-between;font-size:14px;font-weight:600"><span class="pos">Win ${w} · ${pc(w,l)}%</span><span class="neg">Lose ${l} · ${pc(l,w)}%</span></div>
+     <div style="font-size:11px;color:var(--ink-3);margin-top:7px">${note}</div></div>`;
+  document.getElementById("perf").innerHTML =
+    card(`On-hand stocks · ${held.length} positions`, hw, hl, "win = positive unrealized G/L at last close") +
+    card(`Sold-out stocks · ${SOLD.length} tickers`, sw, sl, "win = positive realized G/L on exit");
+}
+/* ============ Trading page: monthly summary ============ */
+function renderMonthly(){
+  const gm=v=>"$"+Math.round(v).toLocaleString("en-US");
+  const gpm=v=>(!v)?"—":`<span class="${v>=0?'pos':'neg'}">${v>=0?'+':'−'}$${Math.abs(Math.round(v)).toLocaleString("en-US")}</span>`;
+  const MN=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  const lab=ym=>{const p=ym.split("-");return MN[+p[1]-1]+" "+p[0];};
+  let html="";
+  [...MONTHLY].reverse().forEach(m=>{
+    const rows=m.byStock.map(x=>`<tr><td class="tt-tick" style="text-align:left">${x.t}</td><td class="num">${x.buy?gm(x.buy):"—"}</td><td class="num">${x.sell?gm(x.sell):"—"}</td><td class="num">${gpm(x.real)}</td></tr>`).join("");
+    html+=`<div class="tday">
+      <div class="tday-h"><b>${lab(m.ym)}</b><span class="tday-sum">bought ${gm(m.buyUSD)} (${m.buyLots} lots) · sold ${m.sellUSD?gm(m.sellUSD):"$0"} (${m.sellLots}) · realized ${gpm(m.realizedUSD)}${m.realizedTHB?` / ฿${Math.round(m.realizedTHB).toLocaleString()}`:""}</span></div>
+      <details><summary style="cursor:pointer;font-size:12px;color:var(--s1);margin:2px 0 6px">by stock (${m.byStock.length})</summary>
+      <div class="tbl-wrap" style="max-height:none"><table class="ttbl"><thead><tr><th style="text-align:left">Ticker</th><th class="num">Bought</th><th class="num">Sold</th><th class="num">Realized</th></tr></thead><tbody>${rows}</tbody></table></div></details>
+    </div>`;
+  });
+  document.getElementById("monthly").innerHTML=html;
+}
+/* ============ Vision page ============ */
+function renderVision(){
+  const gm=v=>"$"+Math.round(v).toLocaleString("en-US");
+  const heldCost=STOCKS.reduce((a,s)=>a+(POS[s.t].cost||0),0);
+  const investedEver=heldCost+TOTALS.soldCostUSD;
+  const heldMV=STOCKS.reduce((a,s)=>a+(mv(s)||0),0);
+  const target=1000000, prog=Math.min(investedEver/target*100,100);
+  const tiers=[{n:"Standard · Must Do (minimum)",mult:2,col:"var(--s5)"},{n:"Objective · Should Do",mult:5,col:"var(--s1)"},{n:"Goal · Wish",mult:10,col:"var(--s4)"}];
+  const cagr=m=>((Math.pow(m,1/8)-1)*100).toFixed(1);
+  document.getElementById("vision").innerHTML=`
+   <h2>Dad's vision <span class="n">Pillar 4 US portfolio — the long game</span></h2>
+   <div class="bt" style="margin:12px 0"><div class="k">Budget target · deploy by 2027</div>
+     <div class="v">${gm(target)} <span style="font-size:14px;color:var(--ink-2)">invested cost</span></div>
+     <div style="background:var(--grid);border-radius:8px;height:18px;margin:12px 0;overflow:hidden"><div style="background:var(--s2);height:100%;width:${prog}%"></div></div>
+     <div class="v2">${gm(investedEver)} deployed to date · <b>${prog.toFixed(0)}%</b> of the way · ${gm(target-investedEver)} to go</div></div>
+   <h2>Expected return <span class="n">multiples of the $1M cost base, by 2035</span></h2>
+   <div class="big-tiles">${tiers.map(t=>`
+     <div class="bt" style="border-left:5px solid ${t.col}"><div class="k">${t.n}</div>
+       <div class="v">${t.mult}× → ${gm(target*t.mult)}</div>
+       <div class="v2">implied ${cagr(t.mult)}%/yr, compounding 8 yrs (2027→2035)</div></div>`).join("")}</div>
+   <div class="note" style="margin-top:14px;line-height:1.7">Today's book is worth ${gm(heldMV)} — already ${(heldMV/target).toFixed(2)}× the eventual $1M cost target while still mid-deployment. The 2× / 5× / 10× goals assume the full $1M of cost is invested by 2027, then compounds untouched to 2035. Reaching even the <b>Must Do</b> 2× requires ~9%/yr — the <b>Wish</b> 10× needs sustained ~33%/yr, the kind of run only a genuine multi-year AI supercycle delivers. Cash returned from sold stocks is meant to be recycled into the book, not withdrawn.</div>`;
+}
+
+/* ============ tab switching ============ */
+document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{
+  document.querySelectorAll(".tab").forEach(x=>x.classList.remove("on"));
+  document.querySelectorAll(".page").forEach(x=>x.classList.remove("on"));
+  b.classList.add("on");
+  document.getElementById("page-"+b.dataset.p).classList.add("on");
+  window.scrollTo(0,0);
+  if(b.dataset.p==="main") mountTape();
+});
+
 /* ============ theme + boot ============ */
 function applyTheme(dark){
   document.getElementById("root").classList.toggle("dark", dark);
@@ -604,6 +755,7 @@ function renderAll(){
   document.getElementById("asof").textContent = ASOF;
   document.getElementById("subline").textContent = `${STOCKS.length} positions · AI · Semis · Infrastructure — Salee's book`;
   renderChips(); renderTiles(); renderGroupSummary(); renderLadder(); renderBubble(); renderMatrix(); renderCards(); renderTrades();
+  renderTotals(); renderStockSummary(); renderPerformance(); renderMonthly(); renderVision();
   document.getElementById("foot").innerHTML =
    `Definitions — <b>Conviction</b> = (avg analyst target − last close) ÷ last close. <b>Devastation</b> = (last close − 52-wk high) ÷ 52-wk high; “—” within 0.5% of the high. <b>Growth YTD</b> = vs Jan 2, 2026 open. <b>Rule of 40 (FCF)</b> = revenue growth % + FCF margin % (TTM) — the conservative primary. <b>Rule of 40 (NI)</b> = revenue growth % + net profit margin %; a wide gap between the two = accounting profits not converting to cash (see ORCL), and NI is distorted by non-operating gains for IONQ/ONDS. ROI shown as ROIC. “—” = not meaningful (negative earnings or not published). CRWD figures reflect its July 2026 4-for-1 split.<br>
     Data: stockanalysis.com, TradingView, Macrotrends — refreshed weekly (Mon 08:00 Asia/Bangkok) by Claude; live prices via TradingView embeds when available. Positions reconciled to POEMS statement Jul 22, 2026 (settled + outstanding; ties to the cent: cost $536,988.31, MV $635,013.32; APP closed, excluded). ⚠ NBIS fully exited &amp; IONQ off the book Jul 21–22; IREN trimmed to 45 sh (tranche-2 sell plan active); IREN/NBIS/CRWV kept visible as Neocloud Watch; CDNS re-appeared with 6 sh, ISRG +5 sh, ORCL trimmed to 50 sh (fills not yet sent to Claude).<br>
