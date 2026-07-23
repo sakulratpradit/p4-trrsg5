@@ -71,25 +71,27 @@ h2 .n{font-size:11px; color:var(--ink-3); font-weight:400}
 .fv-card{background:var(--surface-1); border:1px solid var(--ring); border-radius:12px; padding:18px}
 .fv-ghead{font-size:11px; text-transform:uppercase; letter-spacing:.07em; color:var(--ink-2); font-weight:650; padding:12px 0 4px; display:flex; align-items:center; gap:7px}
 .fv-ghead:first-child{padding-top:0}
-.fv-row{display:grid; grid-template-columns:64px 1fr 248px 112px; gap:14px; align-items:center; padding:8px 0; border-bottom:1px solid var(--grid)}
+.fv-row{display:grid; grid-template-columns:60px 1fr 300px; gap:16px; align-items:center; padding:11px 0; border-bottom:1px solid var(--grid)}
 /* conviction vs devastation paired bars */
 .cd{display:flex; flex-direction:column; gap:3px; position:relative; padding:2px 0}
 .cd::before{content:""; position:absolute; left:50%; top:0; bottom:0; width:1px; background:var(--axis)}
-.lane{display:flex; height:11px}
+.lane{display:flex; height:17px; align-items:center}
 .half{width:50%; display:flex; align-items:center; gap:4px; min-width:0}
 .half.l{justify-content:flex-end}
-.cdbar{height:7px; border-radius:3px; flex:none}
+.cdbar{height:8px; border-radius:3px; flex:none}
 .cdbar.up{background:var(--good)} .cdbar.dn{background:var(--bad)}
-.cdv{font-size:9.5px; font-variant-numeric:tabular-nums; color:var(--ink-2); white-space:nowrap; flex:none}
+.cdv{font-size:13px; font-weight:650; font-variant-numeric:tabular-nums; color:var(--ink-1); white-space:nowrap; flex:none}
 .cdv.na{color:var(--ink-3); font-style:italic}
 .fv-row:last-child{border-bottom:none}
 .fv-tick{font-weight:650; font-size:13.5px; display:flex; align-items:center; gap:8px}
 .dot{width:10px; height:10px; border-radius:3px; flex:none}
-.fv-track{position:relative; height:26px}
-.fv-base{position:absolute; left:0; right:0; top:12px; height:2px; background:var(--grid); border-radius:2px}
-.fv-range{position:absolute; top:9px; height:8px; border-radius:4px; opacity:.30}
-.fv-avg{position:absolute; top:5px; width:2px; height:16px; background:var(--ink-2)}
-.fv-now{position:absolute; top:7px; width:12px; height:12px; border-radius:50%; border:2px solid var(--surface-1); transform:translateX(-6px)}
+.fv-track{position:relative; height:46px}
+.fv-nowlab{position:absolute; top:0; transform:translateX(-50%); font-size:12.5px; font-weight:700; color:var(--ink-1); white-space:nowrap; background:var(--surface-1); padding:0 3px; border-radius:3px}
+.fv-avglab{position:absolute; bottom:0; transform:translateX(-50%); font-size:11.5px; font-weight:600; color:var(--ink-2); white-space:nowrap}
+.fv-base{position:absolute; left:0; right:0; top:24px; height:2px; background:var(--grid); border-radius:2px}
+.fv-range{position:absolute; top:21px; height:8px; border-radius:4px; opacity:.30}
+.fv-avg{position:absolute; top:17px; width:2px; height:16px; background:var(--ink-2)}
+.fv-now{position:absolute; top:19px; width:13px; height:13px; border-radius:50%; border:2px solid var(--surface-1); transform:translateX(-6.5px)}
 .fv-lab{font-size:12px; color:var(--ink-2); font-variant-numeric:tabular-nums; text-align:right}
 .fv-lab b{font-size:13px; color:var(--ink-1)}
 /* bubble map */
@@ -202,8 +204,8 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
 </header>
 
 <div class="tabbar" id="tabbar">
-  <button class="tab on" data-p="main">Main</button>
-  <button class="tab" data-p="groups">Group Summary</button>
+  <button class="tab on" data-p="main">Overview</button>
+  <button class="tab" data-p="groups">Portfolio</button>
   <button class="tab" data-p="trading">Trading</button>
   <button class="tab" data-p="vision">Vision</button>
 </div>
@@ -238,17 +240,19 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
 </div><!-- /page-main -->
 
 <div class="page" id="page-groups">
-<h2>Portfolio totals <span class="n">whole book, since inception · Jul 2025</span></h2>
+<h2>Totals &amp; returns <span class="n">whole book, since inception · Jul 15 2025</span></h2>
 <div class="big-tiles" id="gtotals"></div>
-<h2>By group <span class="n">budget vs invested vs realized &amp; unrealized P/L</span></h2>
-<div class="tbl-wrap" style="max-height:none"><table id="gsum"></table></div>
-<h2>By stock <span class="n">every held position, grouped · realized shown where a lot was sold</span></h2>
-<div class="tbl-wrap"><table id="gstock"></table></div>
-<h2>Performance <span class="n">win / lose rate · win = positive G/L</span></h2>
+<h2>Win / loss record <span class="n">win = positive G/L · on-hand vs sold-out</span></h2>
 <div class="perf-wrap" id="perf"></div>
+<div class="chipbar" id="gchipbar"></div>
+<h2>P&amp;L by group <span class="n">budget · invested · market value · realized &amp; unrealized (USD + THB)</span></h2>
+<div class="tbl-wrap" style="max-height:none"><table id="gsum"></table></div>
+<h2>P&amp;L by stock <span class="n">held positions, grouped · realized shown where a lot was sold</span></h2>
+<div class="tbl-wrap"><table id="gstock"></table></div>
 </div><!-- /page-groups -->
 
 <div class="page" id="page-trading">
+<div class="bt" id="tradecash" style="max-width:360px;margin:14px 0"></div>
 <h2>Daily trading activity <span class="n">booked from Salee's fills, day by day · Jul 2026 onward</span></h2>
 <div id="tradedays"></div>
 <h2>Monthly summary <span class="n">all history since Jul 2025 · tap a month for by-stock detail</span></h2>
@@ -308,6 +312,14 @@ function renderChips(){
   bar.innerHTML = chip("all","All",null,STOCKS.length) + GROUPS.map((g,i)=>chip(i,g,i+1,STOCKS.filter(s=>s.g===i).length)).join("");
 }
 function setFilter(f){ FILTER=f; renderChips(); renderLadder(); renderBubble(); renderMatrix(); renderCards(); }
+let GFILTER="all";
+function renderGroupChips(){
+  const bar=document.getElementById("gchipbar"); if(!bar) return;
+  const chip=(id,label,color,count)=>`<button class="fchip ${GFILTER===id?'on':''}" onclick="setGFilter(${JSON.stringify(id)})">${color!=null?`<span class="dot" style="background:var(--s${color})"></span>`:""}${label} <span class="ct">${count}</span></button>`;
+  const heldTot=STOCKS.filter(s=>POS[s.t].shares!=null).length;
+  bar.innerHTML=chip("all","All",null,heldTot)+GROUPS.map((g,i)=>{const c=STOCKS.filter(s=>s.g===i&&POS[s.t].shares!=null).length; return c?chip(i,g,i+1,c):"";}).join("");
+}
+function setGFilter(f){ GFILTER=f; renderGroupChips(); renderGroupSummary(); renderStockSummary(); }
 
 /* ============ tiles (always whole book) ============ */
 function renderTiles(){
@@ -346,24 +358,26 @@ function renderLadder(){
     const rows = V.filter(s=>s.g===gi);
     if(!rows.length) return "";
     return `<div class="fv-ghead"><span class="dot" style="background:var(--s${gi+1})"></span>${g}</div>` + rows.map(s=>{
-      if(s.price==null||s.fvAvg==null) return `<div class="fv-row"><div class="fv-tick">${s.t}</div><div class="note" style="grid-column:2/5;margin:0">${s.price==null?"private company — no listed market data":"no analyst coverage"}</div></div>`;
+      if(s.price==null||s.fvAvg==null) return `<div class="fv-row"><div class="fv-tick">${s.t}</div><div class="note" style="grid-column:2/4;margin:0">${s.price==null?"private company — no listed market data":"no analyst coverage"}</div></div>`;
       const a = Math.min(s.fvMin,s.price)*0.90, b = Math.max(s.fvMax,s.price,s.ath)*1.03;
       const X = v => ((v-a)/(b-a)*100).toFixed(2)+"%";
       const W = (v1,v2)=>((v2-v1)/(b-a)*100).toFixed(2)+"%";
+      const clampL = x => `clamp(0%, ${x}, 100%)`;
       return `<div class="fv-row">
         <div class="fv-tick">${s.t}</div>
         <div class="fv-track">
+          <div class="fv-nowlab" style="left:${X(s.price)}">${fmt(s.price)}</div>
           <div class="fv-base"></div>
           <div class="fv-range" style="left:${X(s.fvMin)};width:${W(s.fvMin,s.fvMax)};background:var(--s${slot(s)})"></div>
           <div class="fv-avg" style="left:${X(s.fvAvg)}"></div>
-          <div class="fv-now" style="left:${X(s.price)};background:var(--s${slot(s)})" title="${s.t} last close ${fmt(s.price)}"></div>
+          <div class="fv-now" style="left:${X(s.price)};background:var(--s${slot(s)})"></div>
+          <div class="fv-avglab" style="left:${X(s.fvAvg)}">FV ${fmt0(s.fvAvg)}</div>
         </div>
         <div class="cd" title="${s.t} — conviction ${conv(s).toFixed(1)}% to avg FV · ${devas(s)==null?'at 52-wk high':'devastation '+devas(s).toFixed(1)+'% vs 52-wk high'} · YTD ${ytd(s)==null?'n/a (listed mid-year)':ytd(s).toFixed(1)+'%'} since Jan 2 open">
           ${lane(conv(s),'FV')}
           ${lane(devas(s),'ATH', (s.ath!=null&&s.price!=null)?'at ATH':'n/a')}
           ${lane(ytd(s),'YTD')}
         </div>
-        <div class="fv-lab"><b>${fmt(s.price)}</b> → FV ${fmt0(s.fvAvg)}</div>
       </div>`;
     }).join("");
   }).join("");
@@ -591,7 +605,7 @@ function renderGroupSummary(){
     const unB=(mvvB!=null&&costB!=null)?mvvB-costB:null; return {g,i,budget,cost,costB,mvv,mvvB,un,unB,unp:(un!=null&&cost)?un/cost*100:null,real:realByG[i]??null,realB:realByGB[i]??null,left:(budget!=null)?budget-(cost||0):null};
   });
   rows.push({g:"Closed / other (pre-dashboard)",i:-1,budget:null,cost:null,costB:null,mvv:null,mvvB:null,un:null,unB:null,unp:null,real:realOther,realB:realOtherB,left:null});
-  const tb = rows.filter(r=>r.budget||r.cost||r.real!=null);
+  const tb = rows.filter(r=>r.budget||r.cost||r.real!=null).filter(r=> GFILTER==="all" ? true : r.i===GFILTER);
   const T = {budget:tb.reduce((a,r)=>a+(r.budget||0),0), cost:tb.reduce((a,r)=>a+(r.cost||0),0),
              costB:tb.reduce((a,r)=>a+(r.costB||0),0), mvv:tb.reduce((a,r)=>a+(r.mvv||0),0),
              mvvB:tb.reduce((a,r)=>a+(r.mvvB||0),0), real:tb.reduce((a,r)=>a+(r.real||0),0),
@@ -604,11 +618,11 @@ function renderGroupSummary(){
      <td>${gm(r.budget)}</td><td>${gm(r.cost)}</td><td style="color:var(--ink-3)">${gmB(r.costB)}</td><td>${gm(r.mvv)}</td><td style="color:var(--ink-3)">${gmB(r.mvvB)}</td>
      <td>${gpm(r.un)}</td><td>${gpmB(r.unB)}</td><td>${r.unp==null?"\u2014":`<span class="${r.unp>=0?'pos':'neg'}">${r.unp>=0?"\u25b2":"\u25bc"} ${Math.abs(r.unp).toFixed(1)}%</span>`}</td>
      <td>${r.real==null?"\u2014":gpm(r.real)}</td><td>${r.realB==null?"\u2014":gpmB(r.realB)}</td>
-     <td>${r.left==null?"\u2014":gpm(r.left).replace("+$","$").replace("\u2212$","\u2212$")}</td></tr>`).join("") + `
+     <td>${r.left==null?"\u2014":gpm(r.left).replace("+$","$").replace("\u2212$","\u2212$")}</td></tr>`).join("") + (GFILTER==="all" ? `
     <tr style="font-weight:700;border-top:2px solid var(--axis)"><th>TOTAL</th>
      <td>${gm(T.budget)}</td><td>${gm(T.cost)}</td><td style="color:var(--ink-2)">${gmB(T.costB)}</td><td>${gm(T.mvv)}</td><td style="color:var(--ink-2)">${gmB(T.mvvB)}</td>
      <td>${gpm(T.un)}</td><td>${gpmB(T.unB)}</td><td><span class="${T.un>=0?'pos':'neg'}">${T.un>=0?"\u25b2":"\u25bc"} ${(T.un/T.cost*100).toFixed(1)}%</span></td>
-     <td>${gpm(T.real)}</td><td>${gpmB(T.realB)}</td><td>${gm(T.budget-T.cost)}</td></tr>
+     <td>${gpm(T.real)}</td><td>${gpmB(T.realB)}</td><td>${gm(T.budget-T.cost)}</td></tr>` : "") + `
    </tbody>`;
 }
 
@@ -616,6 +630,8 @@ function renderGroupSummary(){
 const pmoney = v => v==null ? "\u2014" : `<span class="${v>=0?'pos':'neg'}">${v>=0?'+':'\u2212'}$${Math.abs(v).toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2})}</span>`;
 const dmoney = v => "$"+v.toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
 function renderTrades(){
+  const tc=document.getElementById("tradecash");
+  if(tc) tc.innerHTML=`<div class="k">Cash balance · ${CASH.broker}</div><div class="v">$${CASH.amount.toLocaleString("en-US",{minimumFractionDigits:2})} <span style="font-size:13px;color:var(--ink-2)">${CASH.currency}</span></div><div class="v2">as of ${CASH.asof} · before settlement of outstanding contracts &amp; fees</div>`;
   const days = {};
   TRADES.forEach(t=>{ (days[t.date]=days[t.date]||[]).push(t); });
   const el = document.getElementById("tradedays");
@@ -677,6 +693,7 @@ function renderStockSummary(){
   const soldReal={}; SOLD.forEach(s=>soldReal[s.t]=s.glUSD);
   let html=`<thead><tr class="tkr"><th style="text-align:left">Stock</th><th>Budget</th><th>Invested</th><th>Mkt value</th><th>Unrealized</th><th>%</th><th>Realized</th></tr></thead><tbody>`;
   GROUPS.forEach((g,gi)=>{
+    if(GFILTER!=="all" && gi!==GFILTER) return;
     const ss=STOCKS.filter(s=>s.g===gi && POS[s.t].shares!=null);
     if(!ss.length) return;
     html+=`<tr><th colspan="7" style="text-align:left;background:var(--s${gi+1});color:#fff;font-size:10px;text-transform:uppercase;letter-spacing:.05em;position:static">${g}</th></tr>`;
@@ -690,7 +707,7 @@ function renderStockSummary(){
   });
   const heldSet=new Set(STOCKS.filter(s=>POS[s.t].shares!=null).map(s=>s.t));
   const soldOnly=SOLD.filter(s=>!heldSet.has(s.t));
-  if(soldOnly.length){
+  if(GFILTER==="all" && soldOnly.length){
     html+=`<tr><th colspan="7" style="text-align:left;background:var(--ink-3);color:#fff;font-size:10px;text-transform:uppercase;letter-spacing:.05em;position:static">Fully exited · no current holding</th></tr>`;
     soldOnly.forEach(s=>{ html+=`<tr><th>${s.t}</th><td>—</td><td>${gm(s.costUSD)}</td><td>—</td><td>—</td><td>—</td><td>${gpm(s.glUSD)}</td></tr>`; });
   }
@@ -720,11 +737,11 @@ function renderMonthly(){
   const lab=ym=>{const p=ym.split("-");return MN[+p[1]-1]+" "+p[0];};
   let html="";
   [...MONTHLY].reverse().forEach(m=>{
-    const rows=m.byStock.map(x=>`<tr><td class="tt-tick" style="text-align:left">${x.t}</td><td class="num">${x.buy?gm(x.buy):"—"}</td><td class="num">${x.sell?gm(x.sell):"—"}</td><td class="num">${gpm(x.real)}</td></tr>`).join("");
+    const rows=m.byStock.map(x=>{const c=x.sell-x.real; const rp=(x.sell&&c)?x.real/c*100:null; return `<tr><td class="tt-tick" style="text-align:left">${x.t}</td><td class="num">${x.buy?gm(x.buy):"—"}</td><td class="num">${x.sell?gm(x.sell):"—"}</td><td class="num">${gpm(x.real)}</td><td class="num">${rp==null?"—":`<span class="${rp>=0?'pos':'neg'}">${rp>=0?'+':'−'}${Math.abs(rp).toFixed(1)}%</span>`}</td></tr>`;}).join("");
     html+=`<div class="tday">
       <div class="tday-h"><b>${lab(m.ym)}</b><span class="tday-sum">bought ${gm(m.buyUSD)} (${m.buyLots} lots) · sold ${m.sellUSD?gm(m.sellUSD):"$0"} (${m.sellLots}) · realized ${gpm(m.realizedUSD)}${m.realizedTHB?` / ฿${Math.round(m.realizedTHB).toLocaleString()}`:""}</span></div>
       <details><summary style="cursor:pointer;font-size:12px;color:var(--s1);margin:2px 0 6px">by stock (${m.byStock.length})</summary>
-      <div class="tbl-wrap" style="max-height:none"><table class="ttbl"><thead><tr><th style="text-align:left">Ticker</th><th class="num">Bought</th><th class="num">Sold</th><th class="num">Realized</th></tr></thead><tbody>${rows}</tbody></table></div></details>
+      <div class="tbl-wrap" style="max-height:none"><table class="ttbl"><thead><tr><th style="text-align:left">Ticker</th><th class="num">Bought</th><th class="num">Sold</th><th class="num">Realized</th><th class="num">Realized %</th></tr></thead><tbody>${rows}</tbody></table></div></details>
     </div>`;
   });
   document.getElementById("monthly").innerHTML=html;
@@ -773,7 +790,7 @@ function renderAll(){
   document.getElementById("asof").textContent = ASOF;
   document.getElementById("subline").textContent = `${STOCKS.length} positions · AI · Semis · Infrastructure — Salee's book`;
   renderChips(); renderTiles(); renderGroupSummary(); renderLadder(); renderBubble(); renderMatrix(); renderCards(); renderTrades();
-  renderTotals(); renderStockSummary(); renderPerformance(); renderMonthly(); renderVision();
+  renderTotals(); renderGroupChips(); renderStockSummary(); renderPerformance(); renderMonthly(); renderVision();
   document.getElementById("foot").innerHTML =
    `Definitions — <b>Conviction</b> = (avg analyst target − last close) ÷ last close. <b>Devastation</b> = (last close − 52-wk high) ÷ 52-wk high; “—” within 0.5% of the high. <b>Growth YTD</b> = vs Jan 2, 2026 open. <b>Rule of 40 (FCF)</b> = revenue growth % + FCF margin % (TTM) — the conservative primary. <b>Rule of 40 (NI)</b> = revenue growth % + net profit margin %; a wide gap between the two = accounting profits not converting to cash (see ORCL), and NI is distorted by non-operating gains for IONQ/ONDS. ROI shown as ROIC. “—” = not meaningful (negative earnings or not published). CRWD figures reflect its July 2026 4-for-1 split.<br>
     Data: stockanalysis.com, TradingView, Macrotrends — refreshed weekly (Mon 08:00 Asia/Bangkok) by Claude; live prices via TradingView embeds when available. Positions reconciled to POEMS statement Jul 22, 2026 (settled + outstanding; ties to the cent: cost $536,988.31, MV $635,013.32; APP closed, excluded). ⚠ NBIS fully exited &amp; IONQ off the book Jul 21–22; IREN trimmed to 45 sh (tranche-2 sell plan active); IREN/NBIS/CRWV kept visible as Neocloud Watch; CDNS re-appeared with 6 sh, ISRG +5 sh, ORCL trimmed to 50 sh (fills not yet sent to Claude).<br>
