@@ -57,6 +57,15 @@ h1 .sub{font-size:13px; color:var(--ink-3); font-weight:400; display:block; marg
 .wl-bar{display:flex; height:16px; border-radius:8px; overflow:hidden; margin:12px 0 8px; background:var(--grid)}
 .wl-w{background:var(--good)} .wl-l{background:var(--bad)}
 #gsum thead th, #gstock thead th{position:static; top:auto}
+.ccy-toggle{display:inline-flex; border:1px solid var(--ring); border-radius:8px; overflow:hidden; margin:2px 0 8px}
+.ccy-toggle button{border:none; background:var(--surface-1); color:var(--ink-2); font-size:12px; font-weight:600; padding:6px 14px; cursor:pointer; border-right:1px solid var(--ring)}
+.ccy-toggle button:last-child{border-right:none}
+.ccy-toggle button.on{background:var(--s1); color:#fff}
+#gsum .thbcol{border-left:1px solid var(--grid)}
+#gsum.ccy-both .thbcol{background:rgba(42,120,214,0.05)}
+.viz-root.dark #gsum.ccy-both .thbcol{background:rgba(134,182,239,0.09)}
+#gsum.ccy-usd .thbcol{display:none}
+#gsum.ccy-thb .usdcol, #gsum.ccy-thb .budgetcol{display:none}
 #gstock{width:100%}
 h2{font-size:15px; margin:26px 0 4px; display:flex; align-items:center; gap:8px}
 h2 .n{font-size:11px; color:var(--ink-3); font-weight:400}
@@ -245,8 +254,9 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
 <h2>Win / loss record <span class="n">win = positive G/L · on-hand vs sold-out</span></h2>
 <div class="perf-wrap" id="perf"></div>
 <div class="chipbar" id="gchipbar"></div>
-<h2>P&amp;L by group <span class="n">budget · invested · market value · realized &amp; unrealized (USD + THB)</span></h2>
-<div class="tbl-wrap" style="max-height:none"><table id="gsum"></table></div>
+<h2>P&amp;L by group <span class="n">budget · invested · market value · realized &amp; unrealized</span></h2>
+<div class="ccy-toggle" id="ccytoggle"><button class="on" data-c="both" onclick="setCcy('both')">USD + ฿</button><button data-c="usd" onclick="setCcy('usd')">USD only</button><button data-c="thb" onclick="setCcy('thb')">฿ only</button></div>
+<div class="tbl-wrap" style="max-height:none"><table id="gsum" class="ccy-both"></table></div>
 <h2>P&amp;L by stock <span class="n">held positions, grouped · realized shown where a lot was sold</span></h2>
 <div class="tbl-wrap"><table id="gstock"></table></div>
 </div><!-- /page-groups -->
@@ -320,6 +330,7 @@ function renderGroupChips(){
   bar.innerHTML=chip("all","All",null,heldTot)+GROUPS.map((g,i)=>{const c=STOCKS.filter(s=>s.g===i&&POS[s.t].shares!=null).length; return c?chip(i,g,i+1,c):"";}).join("");
 }
 function setGFilter(f){ GFILTER=f; renderGroupChips(); renderGroupSummary(); renderStockSummary(); }
+function setCcy(c){ document.getElementById("gsum").className="ccy-"+c; document.querySelectorAll("#ccytoggle button").forEach(b=>b.classList.toggle("on", b.dataset.c===c)); }
 
 /* ============ tiles (always whole book) ============ */
 function renderTiles(){
@@ -612,17 +623,17 @@ function renderGroupSummary(){
              realB:tb.reduce((a,r)=>a+(r.realB||0),0)};
   T.un = T.mvv - T.cost; T.unB = T.mvvB - T.costB;
   document.getElementById("gsum").innerHTML = `
-   <thead><tr class="tkr"><th style="text-align:left">Group</th><th>Budget</th><th>Invested $</th><th>Invested ฿</th><th>Mkt val $</th><th>Mkt val ฿</th><th>Unreal $</th><th>Unreal ฿</th><th>Unr %</th><th>Realized $</th><th>Realized ฿</th><th>Budget left</th></tr></thead>
+   <thead><tr class="tkr"><th style="text-align:left">Group</th><th class="budgetcol">Budget</th><th class="usdcol">Invested $</th><th class="thbcol">Invested ฿</th><th class="usdcol">Mkt val $</th><th class="thbcol">Mkt val ฿</th><th class="usdcol">Unreal $</th><th class="thbcol">Unreal ฿</th><th>Unr %</th><th class="usdcol">Realized $</th><th class="thbcol">Realized ฿</th><th class="budgetcol">Budget left</th></tr></thead>
    <tbody>` + tb.map(r=>`
     <tr><th>${r.i>=0?`<span class="dot" style="background:var(--s${r.i+1});display:inline-block;vertical-align:middle;margin-right:7px"></span>`:""}${r.g}</th>
-     <td>${gm(r.budget)}</td><td>${gm(r.cost)}</td><td style="color:var(--ink-3)">${gmB(r.costB)}</td><td>${gm(r.mvv)}</td><td style="color:var(--ink-3)">${gmB(r.mvvB)}</td>
-     <td>${gpm(r.un)}</td><td>${gpmB(r.unB)}</td><td>${r.unp==null?"\u2014":`<span class="${r.unp>=0?'pos':'neg'}">${r.unp>=0?"\u25b2":"\u25bc"} ${Math.abs(r.unp).toFixed(1)}%</span>`}</td>
-     <td>${r.real==null?"\u2014":gpm(r.real)}</td><td>${r.realB==null?"\u2014":gpmB(r.realB)}</td>
-     <td>${r.left==null?"\u2014":gpm(r.left).replace("+$","$").replace("\u2212$","\u2212$")}</td></tr>`).join("") + (GFILTER==="all" ? `
+     <td class="budgetcol">${gm(r.budget)}</td><td class="usdcol">${gm(r.cost)}</td><td class="thbcol" style="color:var(--ink-3)">${gmB(r.costB)}</td><td class="usdcol">${gm(r.mvv)}</td><td class="thbcol" style="color:var(--ink-3)">${gmB(r.mvvB)}</td>
+     <td class="usdcol">${gpm(r.un)}</td><td class="thbcol">${gpmB(r.unB)}</td><td>${r.unp==null?"\u2014":`<span class="${r.unp>=0?'pos':'neg'}">${r.unp>=0?"\u25b2":"\u25bc"} ${Math.abs(r.unp).toFixed(1)}%</span>`}</td>
+     <td class="usdcol">${r.real==null?"\u2014":gpm(r.real)}</td><td class="thbcol">${r.realB==null?"\u2014":gpmB(r.realB)}</td>
+     <td class="budgetcol">${r.left==null?"\u2014":gpm(r.left).replace("+$","$").replace("\u2212$","\u2212$")}</td></tr>`).join("") + (GFILTER==="all" ? `
     <tr style="font-weight:700;border-top:2px solid var(--axis)"><th>TOTAL</th>
-     <td>${gm(T.budget)}</td><td>${gm(T.cost)}</td><td style="color:var(--ink-2)">${gmB(T.costB)}</td><td>${gm(T.mvv)}</td><td style="color:var(--ink-2)">${gmB(T.mvvB)}</td>
-     <td>${gpm(T.un)}</td><td>${gpmB(T.unB)}</td><td><span class="${T.un>=0?'pos':'neg'}">${T.un>=0?"\u25b2":"\u25bc"} ${(T.un/T.cost*100).toFixed(1)}%</span></td>
-     <td>${gpm(T.real)}</td><td>${gpmB(T.realB)}</td><td>${gm(T.budget-T.cost)}</td></tr>` : "") + `
+     <td class="budgetcol">${gm(T.budget)}</td><td class="usdcol">${gm(T.cost)}</td><td class="thbcol" style="color:var(--ink-2)">${gmB(T.costB)}</td><td class="usdcol">${gm(T.mvv)}</td><td class="thbcol" style="color:var(--ink-2)">${gmB(T.mvvB)}</td>
+     <td class="usdcol">${gpm(T.un)}</td><td class="thbcol">${gpmB(T.unB)}</td><td><span class="${T.un>=0?'pos':'neg'}">${T.un>=0?"\u25b2":"\u25bc"} ${(T.un/T.cost*100).toFixed(1)}%</span></td>
+     <td class="usdcol">${gpm(T.real)}</td><td class="thbcol">${gpmB(T.realB)}</td><td class="budgetcol">${gm(T.budget-T.cost)}</td></tr>` : "") + `
    </tbody>`;
 }
 
