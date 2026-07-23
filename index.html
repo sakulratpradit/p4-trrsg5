@@ -71,27 +71,27 @@ h2 .n{font-size:11px; color:var(--ink-3); font-weight:400}
 .fv-card{background:var(--surface-1); border:1px solid var(--ring); border-radius:12px; padding:18px}
 .fv-ghead{font-size:11px; text-transform:uppercase; letter-spacing:.07em; color:var(--ink-2); font-weight:650; padding:12px 0 4px; display:flex; align-items:center; gap:7px}
 .fv-ghead:first-child{padding-top:0}
-.fv-row{display:grid; grid-template-columns:60px 1fr 300px; gap:16px; align-items:center; padding:11px 0; border-bottom:1px solid var(--grid)}
+.fv-row{display:grid; grid-template-columns:60px 1fr 300px; gap:16px; align-items:center; padding:6px 0; border-bottom:1px solid var(--grid)}
 /* conviction vs devastation paired bars */
 .cd{display:flex; flex-direction:column; gap:3px; position:relative; padding:2px 0}
 .cd::before{content:""; position:absolute; left:50%; top:0; bottom:0; width:1px; background:var(--axis)}
-.lane{display:flex; height:17px; align-items:center}
+.lane{display:flex; height:14px; align-items:center}
 .half{width:50%; display:flex; align-items:center; gap:4px; min-width:0}
 .half.l{justify-content:flex-end}
 .cdbar{height:8px; border-radius:3px; flex:none}
 .cdbar.up{background:var(--good)} .cdbar.dn{background:var(--bad)}
-.cdv{font-size:13px; font-weight:650; font-variant-numeric:tabular-nums; color:var(--ink-1); white-space:nowrap; flex:none}
+.cdv{font-size:12px; font-weight:400; font-variant-numeric:tabular-nums; color:var(--ink-1); white-space:nowrap; flex:none}
 .cdv.na{color:var(--ink-3); font-style:italic}
 .fv-row:last-child{border-bottom:none}
 .fv-tick{font-weight:650; font-size:13.5px; display:flex; align-items:center; gap:8px}
 .dot{width:10px; height:10px; border-radius:3px; flex:none}
-.fv-track{position:relative; height:46px}
+.fv-track{position:relative; height:40px}
 .fv-nowlab{position:absolute; top:0; transform:translateX(-50%); font-size:12.5px; font-weight:700; color:var(--ink-1); white-space:nowrap; background:var(--surface-1); padding:0 3px; border-radius:3px}
 .fv-avglab{position:absolute; bottom:0; transform:translateX(-50%); font-size:11.5px; font-weight:600; color:var(--ink-2); white-space:nowrap}
-.fv-base{position:absolute; left:0; right:0; top:24px; height:2px; background:var(--grid); border-radius:2px}
-.fv-range{position:absolute; top:21px; height:8px; border-radius:4px; opacity:.30}
-.fv-avg{position:absolute; top:17px; width:2px; height:16px; background:var(--ink-2)}
-.fv-now{position:absolute; top:19px; width:13px; height:13px; border-radius:50%; border:2px solid var(--surface-1); transform:translateX(-6.5px)}
+.fv-base{position:absolute; left:0; right:0; top:21px; height:2px; background:var(--grid); border-radius:2px}
+.fv-range{position:absolute; top:18px; height:8px; border-radius:4px; opacity:.30}
+.fv-avg{position:absolute; top:14px; width:2px; height:16px; background:var(--ink-2)}
+.fv-now{position:absolute; top:16px; width:13px; height:13px; border-radius:50%; border:2px solid var(--surface-1); transform:translateX(-6.5px)}
 .fv-lab{font-size:12px; color:var(--ink-2); font-variant-numeric:tabular-nums; text-align:right}
 .fv-lab b{font-size:13px; color:var(--ink-1)}
 /* bubble map */
@@ -308,14 +308,14 @@ const mcap = b => b>=1000 ? fmt(b/1000)+" T" : fmt(b,1)+" B";
 function renderChips(){
   const bar = document.getElementById("chipbar");
   const chip = (id,label,color,count) =>
-    `<button class="fchip ${FILTER===id?'on':''}" onclick="setFilter(${JSON.stringify(id)})">${color!=null?`<span class="dot" style="background:var(--s${color})"></span>`:""}${label} <span class="ct">${count}</span></button>`;
+    `<button class="fchip ${FILTER===id?'on':''}" onclick='setFilter(${JSON.stringify(id)})'>${color!=null?`<span class="dot" style="background:var(--s${color})"></span>`:""}${label} <span class="ct">${count}</span></button>`;
   bar.innerHTML = chip("all","All",null,STOCKS.length) + GROUPS.map((g,i)=>chip(i,g,i+1,STOCKS.filter(s=>s.g===i).length)).join("");
 }
 function setFilter(f){ FILTER=f; renderChips(); renderLadder(); renderBubble(); renderMatrix(); renderCards(); }
 let GFILTER="all";
 function renderGroupChips(){
   const bar=document.getElementById("gchipbar"); if(!bar) return;
-  const chip=(id,label,color,count)=>`<button class="fchip ${GFILTER===id?'on':''}" onclick="setGFilter(${JSON.stringify(id)})">${color!=null?`<span class="dot" style="background:var(--s${color})"></span>`:""}${label} <span class="ct">${count}</span></button>`;
+  const chip=(id,label,color,count)=>`<button class="fchip ${GFILTER===id?'on':''}" onclick='setGFilter(${JSON.stringify(id)})'>${color!=null?`<span class="dot" style="background:var(--s${color})"></span>`:""}${label} <span class="ct">${count}</span></button>`;
   const heldTot=STOCKS.filter(s=>POS[s.t].shares!=null).length;
   bar.innerHTML=chip("all","All",null,heldTot)+GROUPS.map((g,i)=>{const c=STOCKS.filter(s=>s.g===i&&POS[s.t].shares!=null).length; return c?chip(i,g,i+1,c):"";}).join("");
 }
