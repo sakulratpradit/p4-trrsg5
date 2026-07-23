@@ -623,17 +623,17 @@ function renderGroupSummary(){
              realB:tb.reduce((a,r)=>a+(r.realB||0),0)};
   T.un = T.mvv - T.cost; T.unB = T.mvvB - T.costB;
   document.getElementById("gsum").innerHTML = `
-   <thead><tr class="tkr"><th style="text-align:left">Group</th><th class="budgetcol">Budget</th><th class="usdcol">Invested $</th><th class="thbcol">Invested ฿</th><th class="usdcol">Mkt val $</th><th class="thbcol">Mkt val ฿</th><th class="usdcol">Unreal $</th><th class="thbcol">Unreal ฿</th><th>Unr %</th><th class="usdcol">Realized $</th><th class="thbcol">Realized ฿</th><th class="budgetcol">Budget left</th></tr></thead>
+   <thead><tr class="tkr"><th style="text-align:left">Group</th><th class="budgetcol">Budget</th><th class="usdcol">Invested $</th><th class="thbcol">Invested ฿</th><th class="usdcol">Mkt val $</th><th class="thbcol">Mkt val ฿</th><th class="usdcol">Unreal $</th><th class="thbcol">Unreal ฿</th><th>Unr %</th><th class="usdcol">Realized $</th><th class="thbcol">Realized ฿</th><th class="budgetcol">Budget left $</th><th class="thbcol">Budget left ฿</th></tr></thead>
    <tbody>` + tb.map(r=>`
     <tr><th>${r.i>=0?`<span class="dot" style="background:var(--s${r.i+1});display:inline-block;vertical-align:middle;margin-right:7px"></span>`:""}${r.g}</th>
      <td class="budgetcol">${gm(r.budget)}</td><td class="usdcol">${gm(r.cost)}</td><td class="thbcol" style="color:var(--ink-3)">${gmB(r.costB)}</td><td class="usdcol">${gm(r.mvv)}</td><td class="thbcol" style="color:var(--ink-3)">${gmB(r.mvvB)}</td>
      <td class="usdcol">${gpm(r.un)}</td><td class="thbcol">${gpmB(r.unB)}</td><td>${r.unp==null?"\u2014":`<span class="${r.unp>=0?'pos':'neg'}">${r.unp>=0?"\u25b2":"\u25bc"} ${Math.abs(r.unp).toFixed(1)}%</span>`}</td>
      <td class="usdcol">${r.real==null?"\u2014":gpm(r.real)}</td><td class="thbcol">${r.realB==null?"\u2014":gpmB(r.realB)}</td>
-     <td class="budgetcol">${r.left==null?"\u2014":gpm(r.left).replace("+$","$").replace("\u2212$","\u2212$")}</td></tr>`).join("") + (GFILTER==="all" ? `
+     <td class="budgetcol">${r.left==null?"\u2014":gpm(r.left).replace("+$","$").replace("\u2212$","\u2212$")}</td><td class="thbcol" style="color:var(--ink-3)">${r.left==null?"\u2014":gmB(r.left*TOTALS.fx)}</td></tr>`).join("") + (GFILTER==="all" ? `
     <tr style="font-weight:700;border-top:2px solid var(--axis)"><th>TOTAL</th>
      <td class="budgetcol">${gm(T.budget)}</td><td class="usdcol">${gm(T.cost)}</td><td class="thbcol" style="color:var(--ink-2)">${gmB(T.costB)}</td><td class="usdcol">${gm(T.mvv)}</td><td class="thbcol" style="color:var(--ink-2)">${gmB(T.mvvB)}</td>
      <td class="usdcol">${gpm(T.un)}</td><td class="thbcol">${gpmB(T.unB)}</td><td><span class="${T.un>=0?'pos':'neg'}">${T.un>=0?"\u25b2":"\u25bc"} ${(T.un/T.cost*100).toFixed(1)}%</span></td>
-     <td class="usdcol">${gpm(T.real)}</td><td class="thbcol">${gpmB(T.realB)}</td><td class="budgetcol">${gm(T.budget-T.cost)}</td></tr>` : "") + `
+     <td class="usdcol">${gpm(T.real)}</td><td class="thbcol">${gpmB(T.realB)}</td><td class="budgetcol">${gm(T.budget-T.cost)}</td><td class="thbcol" style="color:var(--ink-2)">${gmB((T.budget-T.cost)*TOTALS.fx)}</td></tr>` : "") + `
    </tbody>`;
 }
 
@@ -701,26 +701,27 @@ function renderTotals(){
 function renderStockSummary(){
   const gm=v=>v==null?"—":"$"+Math.round(v).toLocaleString("en-US");
   const gpm=v=>v==null?"—":`<span class="${v>=0?'pos':'neg'}">${v>=0?'+':'−'}$${Math.abs(Math.round(v)).toLocaleString("en-US")}</span>`;
-  const soldReal={}; SOLD.forEach(s=>soldReal[s.t]=s.glUSD);
-  let html=`<thead><tr class="tkr"><th style="text-align:left">Stock</th><th>Budget</th><th>Invested</th><th>Mkt value</th><th>Unrealized</th><th>%</th><th>Realized</th></tr></thead><tbody>`;
+  const soldReal={}, soldPct={}; SOLD.forEach(s=>{soldReal[s.t]=s.glUSD; soldPct[s.t]=s.costUSD?s.glUSD/s.costUSD*100:null;});
+  const rpc=v=>v==null?"\u2014":`<span class="${v>=0?'pos':'neg'}">${v>=0?'+':'\u2212'}${Math.abs(v).toFixed(1)}%</span>`;
+  let html=`<thead><tr class="tkr"><th style="text-align:left">Stock</th><th>Budget</th><th>Invested</th><th>Mkt value</th><th>Unrealized</th><th>%</th><th>Realized</th><th>Realized %</th></tr></thead><tbody>`;
   GROUPS.forEach((g,gi)=>{
     if(GFILTER!=="all" && gi!==GFILTER) return;
     const ss=STOCKS.filter(s=>s.g===gi && POS[s.t].shares!=null);
     if(!ss.length) return;
-    html+=`<tr><th colspan="7" style="text-align:left;background:var(--s${gi+1});color:#fff;font-size:10px;text-transform:uppercase;letter-spacing:.05em;position:static">${g}</th></tr>`;
+    html+=`<tr><th colspan="8" style="text-align:left;background:var(--s${gi+1});color:#fff;font-size:10px;text-transform:uppercase;letter-spacing:.05em;position:static">${g}</th></tr>`;
     ss.forEach(s=>{
       const cost=POS[s.t].cost, m=mv(s), un=(m!=null&&cost!=null)?m-cost:null;
       html+=`<tr><th>${s.t} <span style="color:var(--ink-3);font-weight:400">${s.name}</span></th>
        <td>${gm(POS[s.t].budget)}</td><td>${gm(cost)}</td><td>${gm(m)}</td><td>${gpm(un)}</td>
        <td>${(un!=null&&cost)?`<span class="${un>=0?'pos':'neg'}">${(un/cost*100).toFixed(1)}%</span>`:"—"}</td>
-       <td>${soldReal[s.t]!=null?gpm(soldReal[s.t]):"—"}</td></tr>`;
+       <td>${soldReal[s.t]!=null?gpm(soldReal[s.t]):"—"}</td><td>${rpc(soldPct[s.t])}</td></tr>`;
     });
   });
   const heldSet=new Set(STOCKS.filter(s=>POS[s.t].shares!=null).map(s=>s.t));
   const soldOnly=SOLD.filter(s=>!heldSet.has(s.t));
   if(GFILTER==="all" && soldOnly.length){
-    html+=`<tr><th colspan="7" style="text-align:left;background:var(--ink-3);color:#fff;font-size:10px;text-transform:uppercase;letter-spacing:.05em;position:static">Fully exited · no current holding</th></tr>`;
-    soldOnly.forEach(s=>{ html+=`<tr><th>${s.t}</th><td>—</td><td>${gm(s.costUSD)}</td><td>—</td><td>—</td><td>—</td><td>${gpm(s.glUSD)}</td></tr>`; });
+    html+=`<tr><th colspan="8" style="text-align:left;background:var(--ink-3);color:#fff;font-size:10px;text-transform:uppercase;letter-spacing:.05em;position:static">Fully exited · no current holding</th></tr>`;
+    soldOnly.forEach(s=>{ html+=`<tr><th>${s.t}</th><td>—</td><td>${gm(s.costUSD)}</td><td>—</td><td>—</td><td>—</td><td>${gpm(s.glUSD)}</td><td>${rpc(s.costUSD?s.glUSD/s.costUSD*100:null)}</td></tr>`; });
   }
   document.getElementById("gstock").innerHTML=html+`</tbody>`;
 }
