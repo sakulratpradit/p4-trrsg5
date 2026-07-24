@@ -692,17 +692,22 @@ function renderTotals(){
   const heldMVTHB = STOCKS.reduce((a,s)=>a+(mvTHB(s)||0),0);
   const heldMV = STOCKS.reduce((a,s)=>a+(mv(s)||0),0);
   const unreal = heldMV-heldCost;
-  const investedEver = heldCost + TOTALS.soldCostUSD;
-  const lifetime = (unreal + TOTALS.realizedUSD)/investedEver*100;
+  const grossBuys = heldCost + TOTALS.soldCostUSD;                 // cost of all buys ever
+  const proceeds  = TOTALS.soldCostUSD + TOTALS.realizedUSD;       // cash returned from sales
+  const cash = CASH.amount;
+  const netCapital = grossBuys - proceeds + cash;                  // = held cost − realized P/L + cash (your MAIN_2 method)
+  const cashTHB = cash * TOTALS.fx;
+  const netCapitalTHB = heldCostTHB - TOTALS.realizedTHB + cashTHB;
+  const totalPL = unreal + TOTALS.realizedUSD;
+  const lifetime = totalPL/netCapital*100;                         // total return on net capital invested
   const current = unreal/heldCost*100;
-  const investedEverTHB = heldCostTHB + TOTALS.soldCostTHB;
   document.getElementById("gtotals").innerHTML = `
-   <div class="bt"><div class="k">Total invested to date</div><div class="v">${gm(investedEver)}</div><div class="v2"><b>฿${Math.round(investedEverTHB).toLocaleString()}</b> · held ${gm(heldCost)} + sold ${gm(TOTALS.soldCostUSD)} · at cost FX</div></div>
+   <div class="bt"><div class="k">Net capital invested</div><div class="v">${gm(netCapital)}</div><div class="v2"><b>฿${Math.round(netCapitalTHB).toLocaleString()}</b> · gross buys ${gm(grossBuys)} − proceeds ${gm(proceeds)} + cash ${gm(cash)}</div></div>
    <div class="bt"><div class="k">Total market value (held)</div><div class="v">${gm(heldMV)}</div><div class="v2"><b>฿${Math.round(heldMVTHB).toLocaleString()}</b> @ ${TOTALS.fx} · unrealized ${sm(unreal)} / ${smB(heldMVTHB-heldCostTHB)}</div></div>
    <div class="bt"><div class="k">Sold-out cost basis</div><div class="v">${gm(TOTALS.soldCostUSD)}</div><div class="v2"><b>฿${TOTALS.soldCostTHB.toLocaleString()}</b> · ${SOLD.length} tickers exited/trimmed</div></div>
    <div class="bt"><div class="k">Realized P/L (lifetime)</div><div class="v ${TOTALS.realizedUSD>=0?'pos':'neg'}">${sm(TOTALS.realizedUSD)}</div><div class="v2"><b>${smB(TOTALS.realizedTHB)}</b> · since ${TOTALS.inceptionDate}</div></div>
-   <div class="bt"><div class="k">Total return · lifetime</div><div class="v ${lifetime>=0?'pos':'neg'}">${lifetime>=0?'▲':'▼'} ${lifetime.toFixed(1)}%</div><div class="v2">(unrealized + realized) ÷ invested-ever</div></div>
-   <div class="bt"><div class="k">Total return · current holdings</div><div class="v ${current>=0?'pos':'neg'}">${current>=0?'▲':'▼'} ${current.toFixed(1)}%</div><div class="v2">unrealized ÷ held cost</div></div>
+   <div class="bt"><div class="k">Total return · lifetime</div><div class="v ${lifetime>=0?'pos':'neg'}">${lifetime>=0?'▲':'▼'} ${lifetime.toFixed(1)}%</div><div class="v2">(realized ${sm(TOTALS.realizedUSD)} + unrealized ${sm(unreal)}) ÷ net capital</div></div>
+   <div class="bt"><div class="k">Total return · current holdings</div><div class="v ${current>=0?'pos':'neg'}">${current>=0?'▲':'▼'} ${current.toFixed(1)}%</div><div class="v2">unrealized ÷ held cost (money in stocks now)</div></div>
    <div class="bt"><div class="k">Cash left · POEMS (live)</div><div class="v">$${CASH.amount.toLocaleString("en-US",{minimumFractionDigits:2})}</div><div class="v2">${CASH.currency} · as of ${CASH.asof} · pre-settlement</div></div>`;
 }
 function renderStockSummary(){
