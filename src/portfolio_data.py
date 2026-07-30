@@ -3410,7 +3410,7 @@ TRADES = [{'date': 'Jul 21, 2026',
   'note': 'Dad pick, unadvised - filled overnight Jul 28 BKK; 10 sh @ $195.895 = $1,958.95 + $8.56 fees. Contract was '
           'still unsettled on the Jul 30 POEMS screen, which is why cash had already dropped but the trade was never '
           'logged. 402 sh total, avg cost $187.4561 incl fees; budget left $4,642.65'},
- {'date': 'Jul 30, 2026',
+ {'date': 'Jul 29, 2026',
   'action': 'BUY',
   't': 'SKHY',
   'shares': 15,
