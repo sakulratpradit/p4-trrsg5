@@ -41,11 +41,42 @@ h1 .sub{font-size:13px; color:var(--ink-3); font-weight:400; display:block; marg
 .tile .v{font-size:21px; font-weight:650; letter-spacing:-.02em}
 .tile .d{font-size:11.5px; color:var(--ink-2); margin-top:3px}
 .pos{color:var(--good)} .neg{color:var(--bad)}
-.tabbar{display:flex; gap:2px; margin:12px 0 2px; border-bottom:2px solid var(--grid); position:sticky; top:0; z-index:30; background:var(--page); padding-top:4px; overflow-x:auto; scrollbar-width:none}
+.navbar{position:sticky; top:0; z-index:40; background:var(--page); display:flex; gap:14px; align-items:flex-end; border-bottom:2px solid var(--grid); margin:12px 0 2px}
+.tabbar{display:flex; gap:2px; padding-top:4px; overflow-x:auto; scrollbar-width:none; min-width:0}
 .tabbar::-webkit-scrollbar{display:none}
 .tab{border:none; background:none; color:var(--ink-3); font-size:14px; font-weight:600; padding:10px 18px; cursor:pointer; border-bottom:3px solid transparent; margin-bottom:-2px; white-space:nowrap}
 .tab.on{color:var(--ink-1); border-bottom-color:var(--s1)}
 .tab:hover{color:var(--ink-2)}
+/* ---- ticker search ---- */
+.searchwrap{position:relative; margin-left:auto; padding-bottom:6px; flex:0 0 auto}
+.sbox{display:flex; align-items:center; gap:7px; border:1px solid var(--ring); background:var(--surface-1); border-radius:9px; padding:0 9px; height:34px; width:min(360px,50vw)}
+.sbox:focus-within{border-color:var(--s1); box-shadow:0 0 0 2px rgba(42,120,214,.16)}
+.sic{color:var(--ink-3); font-size:15px; line-height:1}
+.sbox input{border:none; outline:none; background:none; color:var(--ink-1); font-size:13px; font-family:inherit; width:100%; padding:0; min-width:0}
+.sbox input::placeholder{color:var(--ink-3)}
+.skbd{font-size:10px; color:var(--ink-3); border:1px solid var(--ring); border-radius:4px; padding:1px 5px; white-space:nowrap}
+.sxc{border:none; background:none; color:var(--ink-3); cursor:pointer; font-size:13px; padding:2px; line-height:1; display:none}
+.sxc.on{display:block}
+.sug{position:absolute; top:calc(100% - 2px); left:0; right:0; background:var(--surface-1); border:1px solid var(--ring); border-radius:10px; box-shadow:0 10px 28px rgba(0,0,0,.18); z-index:60; display:none; max-height:min(60vh,380px); overflow-y:auto}
+.sug.on{display:block}
+.sug-i{display:flex; align-items:center; gap:9px; padding:7px 11px; cursor:pointer; font-size:13px; border-bottom:1px solid var(--grid)}
+.sug-i:last-child{border-bottom:none}
+.sug-i.sel{background:var(--chip)}
+.sug-t{font-weight:700; min-width:54px}
+.sug-n{color:var(--ink-2); font-size:12px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; flex:1}
+.sug-g{font-size:10px; color:var(--ink-3); white-space:nowrap}
+.sug-hd{padding:9px 11px; font-size:12px; color:var(--ink-3)}
+.sug mark{background:none; color:var(--s1); font-weight:700}
+.fbar{display:none; margin:12px 0 2px; border:1px solid var(--ring); border-left:4px solid var(--s1); background:var(--surface-1); border-radius:10px; padding:12px 15px}
+.fbar.on{display:block}
+.fb-h{display:flex; align-items:center; gap:10px; flex-wrap:wrap}
+.fb-t{font-size:20px; font-weight:700; letter-spacing:-.02em}
+.fb-n{font-size:13px; color:var(--ink-2)}
+.fb-x{margin-left:auto; border:1px solid var(--ring); background:var(--page); color:var(--ink-2); border-radius:8px; padding:4px 11px; font-size:12px; cursor:pointer; white-space:nowrap}
+.fb-s{display:flex; flex-wrap:wrap; gap:10px 26px; margin-top:10px}
+.fb-s>div{font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-3)}
+.fb-s b{display:block; font-size:15px; color:var(--ink-1); font-weight:650; margin-top:2px; text-transform:none; letter-spacing:0}
+.fdim{opacity:.38; pointer-events:none}
 .page{display:none} .page.on{display:block}
 .big-tiles{display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:12px; margin:14px 0}
 .bt{background:var(--surface-1); border:1px solid var(--ring); border-radius:12px; padding:15px 18px}
@@ -192,6 +223,11 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
   /* chip bar: one swipeable row instead of tall wrap */
   .chipbar{flex-wrap:nowrap; overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none; padding:8px 0 10px}
   .chipbar::-webkit-scrollbar{display:none}
+  .navbar{flex-wrap:wrap; gap:0}
+  .tabbar{width:100%; order:1}
+  .searchwrap{order:2; margin-left:0; width:100%; padding:7px 0 8px}
+  .sbox{width:100%}
+  .skbd{display:none}
   .fchip{flex:none}
   /* ladder rows restack: ticker + price/FV on top, target bar mid, signal lanes below */
   .fv-row{grid-template-columns:minmax(0,1fr) auto; gap:4px 10px; padding:10px 0}
@@ -227,12 +263,26 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
   </div>
 </header>
 
-<div class="tabbar" id="tabbar">
-  <button class="tab on" data-p="main">Overview</button>
-  <button class="tab" data-p="groups">Portfolio</button>
-  <button class="tab" data-p="trading">Trading</button>
-  <button class="tab" data-p="vision">Vision</button>
+<div class="navbar">
+  <div class="tabbar" id="tabbar">
+    <button class="tab on" data-p="main">Overview</button>
+    <button class="tab" data-p="groups">Portfolio</button>
+    <button class="tab" data-p="trading">Trading</button>
+    <button class="tab" data-p="vision">Vision</button>
+  </div>
+  <div class="searchwrap">
+    <div class="sbox">
+      <span class="sic">&#9906;</span>
+      <input id="tsearch" type="text" autocomplete="off" autocorrect="off" autocapitalize="characters"
+             spellcheck="false" placeholder="Find a ticker or company — e.g. NVDA or Nvidia" aria-label="Search ticker">
+      <span class="skbd" id="skbd">/</span>
+      <button class="sxc" id="sxc" title="Clear (Esc)">&#10005;</button>
+    </div>
+    <div class="sug" id="sug"></div>
+  </div>
 </div>
+
+<div class="fbar" id="fbar"></div>
 
 <div class="page on" id="page-main">
 <div class="tape-wrap" id="tape">
@@ -308,7 +358,13 @@ const THBFX = {"GOOGL":32.2446,"NVDA":32.084,"AMZN":32.3066,"AAPL":32.4331,"ASML
 const M3 = {"GOOGL":{"pfcf":72.54,"ev":21.6,"de":0.18},"AMZN":{"pfcf":null,"ev":16.66,"de":0.4},"MSFT":{"pfcf":43.88,"ev":14.98,"de":0.3},"META":{"pfcf":39.9,"ev":14.85,"de":0.43},"AAPL":{"pfcf":35.15,"ev":28.23,"de":0.78},"ORCL":{"pfcf":null,"ev":16.33,"de":3.89},"NVDA":{"pfcf":42.14,"ev":30.07,"de":0.07},"TSM":{"pfcf":54.38,"ev":18.5,"de":0.15},"AVGO":{"pfcf":57.14,"ev":45.56,"de":0.74},"AMD":{"pfcf":105.04,"ev":120.07,"de":0.06},"MRVL":{"pfcf":110.19,"ev":69.19,"de":0.29},"INTC":{"pfcf":null,"ev":55.86,"de":0.36},"QCOM":{"pfcf":14.81,"ev":14.66,"de":0.56},"ARM":{"pfcf":309.19,"ev":281.38,"de":0.06},"ASML":{"pfcf":60.95,"ev":44.88,"de":0.09},"AMAT":{"pfcf":82.31,"ev":47.31,"de":0.3},"CRWD":{"pfcf":127.47,"ev":3171.48,"de":0.18},"PANW":{"pfcf":69.75,"ev":121.08,"de":0.08},"LRCX":{"pfcf":66.5,"ev":50.75,"de":0.35},"KLAC":{"pfcf":69.72,"ev":48.14,"de":0.93},"AMKR":{"pfcf":99.27,"ev":13.7,"de":0.35},"MU":{"pfcf":41.4,"ev":15.54,"de":0.06},"SKHY":{"pfcf":33.37,"ev":15.36,"de":0.13},"STX":{"pfcf":54.45,"ev":39.12,"de":1.65},"SNDK":{"pfcf":53.1,"ev":41.43,"de":0.02},"WDC":{"pfcf":66.05,"ev":48.46,"de":0.18},"ANET":{"pfcf":42.63,"ev":50.19,"de":null},"CRDO":{"pfcf":107.31,"ev":88.02,"de":0.01},"LITE":{"pfcf":566.23,"ev":127.15,"de":1.11},"ALAB":{"pfcf":165.45,"ev":238.13,"de":0.03},"APH":{"pfcf":41.84,"ev":25.45,"de":1.33},"GLW":{"pfcf":89.93,"ev":37.08,"de":0.8},"FN":{"pfcf":401.79,"ev":36.4,"de":0.0},"AAOI":{"pfcf":null,"ev":null,"de":0.25},"ETN":{"pfcf":42.37,"ev":29.24,"de":1.02},"VST":{"pfcf":31.18,"ev":11.21,"de":3.29},"VRT":{"pfcf":50.71,"ev":48.86,"de":0.77},"CEG":{"pfcf":87.42,"ev":15.05,"de":0.65},"GEV":{"pfcf":35.65,"ev":87.4,"de":0.21},"BWXT":{"pfcf":50.12,"ev":39.99,"de":1.58},"MPWR":{"pfcf":113.97,"ev":75.6,"de":0.01},"ISRG":{"pfcf":null,"ev":26.22,"de":null},"CGNX":{"pfcf":43.08,"ev":44.88,"de":0.05},"TSLA":{"pfcf":209.58,"ev":108.16,"de":0.11},"TER":{"pfcf":104.55,"ev":49.53,"de":0.03},"OUST":{"pfcf":null,"ev":null,"de":0.06},"ROK":{"pfcf":38.08,"ev":27.74,"de":1.13},"RKLB":{"pfcf":null,"ev":null,"de":0.06},"ASTS":{"pfcf":null,"ev":null,"de":1.12},"SPCX":{"pfcf":null,"ev":null,"de":0.69},"PLTR":{"pfcf":111.09,"ev":144.09,"de":0.02},"AVAV":{"pfcf":null,"ev":39.99,"de":0.19},"ONDS":{"pfcf":null,"ev":null,"de":0.02},"MDB":{"pfcf":40.54,"ev":null,"de":0.02},"IONQ":{"pfcf":null,"ev":null,"de":0.01},"ZETA":{"pfcf":25.18,"ev":55.94,"de":0.25},"ADBE":{"pfcf":9.19,"ev":9.74,"de":0.61},"NOW":{"pfcf":23.83,"ev":32.43,"de":0.68},"SNOW":{"pfcf":80.87,"ev":null,"de":1.43},"DDOG":{"pfcf":84.5,"ev":null,"de":0.32},"CDNS":{"pfcf":64.96,"ev":51.84,"de":0.47},"CRM":{"pfcf":9.11,"ev":12.73,"de":1.24},"IBM":{"pfcf":14.01,"ev":14.24,"de":1.89},"SBUX":{"pfcf":32.81,"ev":27.81,"de":null},"MCD":{"pfcf":26.6,"ev":16.21,"de":null},"UNH":{"pfcf":16.59,"ev":17.99,"de":0.69},"IREN":{"pfcf":null,"ev":112.14,"de":1.49},"NBIS":{"pfcf":null,"ev":null,"de":1.32},"CRWV":{"pfcf":null,"ev":25.78,"de":7.39},"JNJ":{"pfcf":34.7,"ev":25.14,"de":0.68},"KO":{"pfcf":27.8,"ev":24.51,"de":1.25},"YUM":{"pfcf":25.76,"ev":18.26,"de":null},"TEM":{"pfcf":null,"ev":null,"de":3.25},"OKLO":{"pfcf":null,"ev":null,"de":0.0},"SMR":{"pfcf":null,"ev":null,"de":0.01},"NNE":{"pfcf":null,"ev":null,"de":0.0},"CCJ":{"pfcf":94.99,"ev":68.18,"de":0.17},"TE":{"pfcf":null,"ev":2.09,"de":1.78},"EOSE":{"pfcf":null,"ev":1.55,"de":null},"ENPH":{"pfcf":33.34,"ev":4.52,"de":0.56},"NEE":{"pfcf":null,"ev":294.58,"de":1.62},"BE":{"pfcf":75.97,"ev":118.17,"de":1.71},"XE":{"pfcf":null,"ev":null,"de":0.03},"V":{"pfcf":31.63,"ev":24.66,"de":0.67},"MA":{"pfcf":31.17,"ev":23.58,"de":4.4},"PYPL":{"pfcf":9.0,"ev":7.43,"de":0.58},"FI":{"pfcf":6.59,"ev":6.48,"de":1.12},"COIN":{"pfcf":null,"ev":null,"de":0.5},"HOOD":{"pfcf":28.24,"ev":29.41,"de":0.23},"SOFI":{"pfcf":null,"ev":null,"de":0.3},"AFRM":{"pfcf":30.31,"ev":49.35,"de":2.4},"NU":{"pfcf":null,"ev":null,"de":null},"SHOP":{"pfcf":69.76,"ev":84.45,"de":0.01},"MELI":{"pfcf":7.73,"ev":24.88,"de":1.7},"SE":{"pfcf":12.85,"ev":25.02,"de":0.28},"UBER":{"pfcf":13.7,"ev":19.47,"de":0.48},"APLD":{"pfcf":null,"ev":null,"de":1.1},"CIFR":{"pfcf":null,"ev":null,"de":6.42},"HUT":{"pfcf":null,"ev":null,"de":0.25},"DELL":{"pfcf":29.94,"ev":22.13,"de":null},"HPE":{"pfcf":15.83,"ev":15.74,"de":0.84},"SMCI":{"pfcf":null,"ev":17.12,"de":1.21},"LUNR":{"pfcf":null,"ev":null,"de":0.62},"AEHR":{"pfcf":null,"ev":null,"de":0.05},"ZS":{"pfcf":23.89,"ev":98.99,"de":0.79},"NET":{"pfcf":300.64,"ev":861.84,"de":2.31},"FTNT":{"pfcf":45.84,"ev":40.05,"de":0.57},"POET":{"pfcf":null,"ev":null,"de":0.02},"AMPX":{"pfcf":null,"ev":null,"de":0.06},"NOK":{"pfcf":83.09,"ev":24.02,"de":0.16}};
 
 let FILTER = "all";
-const vis = () => FILTER==="all" ? STOCKS : STOCKS.filter(s=>s.g===FILTER);
+/* TFOCUS: single-ticker focus set by the search box. When it is set it
+   overrides the group chips everywhere, so every panel on every tab shows
+   that one name and nothing else. null = normal whole-board view. */
+let TFOCUS = null;
+const inFocus = t => !TFOCUS || t===TFOCUS;
+const vis = () => TFOCUS ? STOCKS.filter(s=>s.t===TFOCUS)
+                         : (FILTER==="all" ? STOCKS : STOCKS.filter(s=>s.g===FILTER));
 const slot = s => s.g+1;
 
 /* ============ computed ============ */
@@ -358,6 +414,7 @@ function renderChips(){
   const chip = (id,label,color,count) =>
     `<button class="fchip ${FILTER===id?'on':''}" onclick='setFilter(${JSON.stringify(id)})'>${color!=null?`<span class="dot" style="background:var(--s${color})"></span>`:""}${label} <span class="ct">${count}</span></button>`;
   bar.innerHTML = chip("all","All",null,STOCKS.length) + GROUPS.map((g,i)=>chip(i,g,i+1,STOCKS.filter(s=>s.g===i).length)).join("");
+  bar.classList.toggle("fdim", !!TFOCUS);
 }
 function setFilter(f){ FILTER=f; renderChips(); renderLadder(); renderBubble(); renderMatrix(); renderCards(); }
 let GFILTER="all";
@@ -366,6 +423,7 @@ function renderGroupChips(){
   const chip=(id,label,color,count)=>`<button class="fchip ${GFILTER===id?'on':''}" onclick='setGFilter(${JSON.stringify(id)})'>${color!=null?`<span class="dot" style="background:var(--s${color})"></span>`:""}${label} <span class="ct">${count}</span></button>`;
   const heldTot=STOCKS.filter(s=>POS[s.t].shares!=null).length;
   bar.innerHTML=chip("all","All",null,heldTot)+GROUPS.map((g,i)=>{const c=STOCKS.filter(s=>s.g===i&&POS[s.t].shares!=null).length; return c?chip(i,g,i+1,c):"";}).join("");
+  bar.classList.toggle("fdim", !!TFOCUS);
 }
 function setGFilter(f){ GFILTER=f; renderGroupChips(); renderGroupSummary(); renderStockSummary(); }
 function setCcy(c){ document.getElementById("gsum").className="ccy-"+c; document.querySelectorAll("#ccytoggle button").forEach(b=>b.classList.toggle("on", b.dataset.c===c)); }
@@ -454,6 +512,15 @@ function renderBubble(){
   const V = vis().map(s=>({s, peUsed: s.pe!=null?s.pe:s.fpe, fwd: s.pe==null&&s.fpe!=null})).filter(x=>x.peUsed!=null && x.s.gm!=null);
   const skipped = vis().filter(s=>s.pe==null&&s.fpe==null).map(s=>s.t);
   document.getElementById("bubnote").innerHTML = "Bottom-right = fat margins at a reasonable multiple. Dashed lines = median of shown names. Hover any bubble for details." + (skipped.length?` <b>Not plotted (no earnings): ${skipped.join(", ")}.</b>`:"");
+  /* nothing plottable (e.g. focused on a pre-earnings name) — bail out before
+     Math.min of an empty array poisons every coordinate in the chart */
+  if(!V.length){
+    svg.innerHTML = `<text class="axis-cap" x="470" y="250" text-anchor="middle">${
+      skipped.length ? skipped.join(", ")+" — no earnings yet, nothing to plot on a P/E axis"
+                     : "Nothing to plot for this selection"}</text>`;
+    const t0=document.getElementById("bubtip"); if(t0) t0.style.display="none";
+    return;
+  }
   const W=940, H=560, m={t:30, r:30, b:56, l:64};
   const iw=W-m.l-m.r, ih=H-m.t-m.b;
   const xs=V.map(x=>x.s.gm), ys=V.map(x=>x.peUsed);
@@ -660,11 +727,11 @@ function renderGroupSummary(){
   const gmB = v => v==null ? "\u2014" : "\u0e3f"+(v/1e6).toFixed(2)+"M";
   const gpmB = v => v==null ? "\u2014" : `<span class="${v>=0?'pos':'neg'}">${v>=0?'+':'\u2212'}\u0e3f${(Math.abs(v)/1e6).toFixed(2)}M</span>`;
   const realByG = {}; let realOther = 0;
-  REALIZED.forEach(x => { if(x.g==null) realOther += x.amount; else realByG[x.g] = (realByG[x.g]||0) + x.amount; });
+  REALIZED.forEach(x => { if(!inFocus(x.t)) return; if(x.g==null) realOther += x.amount; else realByG[x.g] = (realByG[x.g]||0) + x.amount; });
   const realByGB = {}; let realOtherB = 0;
-  SOLD.forEach(x => { if(x.g<0) realOtherB += x.glTHB; else realByGB[x.g] = (realByGB[x.g]||0) + x.glTHB; });
+  SOLD.forEach(x => { if(!inFocus(x.t)) return; if(x.g<0) realOtherB += x.glTHB; else realByGB[x.g] = (realByGB[x.g]||0) + x.glTHB; });
   const rows = GROUPS.map((g,i)=>{
-    const ss = STOCKS.filter(x=>x.g===i);
+    const ss = STOCKS.filter(x=>x.g===i && inFocus(x.t));
     const budget = ss.reduce((a,x)=>a+(POS[x.t].budget||0),0) || null;
     const cost = ss.reduce((a,x)=>a+(POS[x.t].cost||0),0) || null;
     const costB = ss.reduce((a,x)=>a+((POS[x.t].cost!=null)?POS[x.t].cost*(THBFX[x.t]||TOTALS.fx):0),0) || null;
@@ -673,7 +740,10 @@ function renderGroupSummary(){
     const un = (mvv!=null&&cost!=null) ? mvv-cost : null;
     const unB=(mvvB!=null&&costB!=null)?mvvB-costB:null; return {g,i,budget,cost,costB,mvv,mvvB,un,unB,unp:(un!=null&&cost)?un/cost*100:null,real:realByG[i]??null,realB:realByGB[i]??null,left:(budget!=null)?budget-(cost||0):null};
   });
-  rows.push({g:"Closed / other (pre-dashboard)",i:-1,budget:null,cost:null,costB:null,mvv:null,mvvB:null,un:null,unB:null,unp:null,real:realOther,realB:realOtherB,left:null});
+  /* the catch-all row carries a 0 rather than a null, so it always survives the
+     filter below — under single-ticker focus that shows a phantom $0 line */
+  if(!TFOCUS || realOther || realOtherB)
+    rows.push({g:"Closed / other (pre-dashboard)",i:-1,budget:null,cost:null,costB:null,mvv:null,mvvB:null,un:null,unB:null,unp:null,real:realOther,realB:realOtherB,left:null});
   const tb = rows.filter(r=>r.budget||r.cost||r.real!=null).filter(r=> GFILTER==="all" ? true : r.i===GFILTER);
   const T = {budget:tb.reduce((a,r)=>a+(r.budget||0),0), cost:tb.reduce((a,r)=>a+(r.cost||0),0),
              costB:tb.reduce((a,r)=>a+(r.costB||0),0), mvv:tb.reduce((a,r)=>a+(r.mvv||0),0),
@@ -687,7 +757,8 @@ function renderGroupSummary(){
      <td class="budgetcol">${gm(r.budget)}</td><td class="usdcol">${gm(r.cost)}</td><td class="thbcol" style="color:var(--ink-3)">${gmB(r.costB)}</td><td class="usdcol">${gm(r.mvv)}</td><td class="thbcol" style="color:var(--ink-3)">${gmB(r.mvvB)}</td>
      <td class="usdcol">${gpm(r.un)}</td><td class="thbcol">${gpmB(r.unB)}</td><td>${r.unp==null?"\u2014":`<span class="${r.unp>=0?'pos':'neg'}">${r.unp>=0?"\u25b2":"\u25bc"} ${Math.abs(r.unp).toFixed(1)}%</span>`}</td>
      <td class="usdcol">${r.real==null?"\u2014":gpm(r.real)}</td><td class="thbcol">${r.realB==null?"\u2014":gpmB(r.realB)}</td>
-     <td class="budgetcol">${r.left==null?"\u2014":gpm(r.left).replace("+$","$").replace("\u2212$","\u2212$")}</td><td class="thbcol" style="color:var(--ink-3)">${r.left==null?"\u2014":gmB(r.left*TOTALS.fx)}</td></tr>`).join("") + (GFILTER==="all" ? `
+     <td class="budgetcol">${r.left==null?"\u2014":gpm(r.left).replace("+$","$").replace("\u2212$","\u2212$")}</td><td class="thbcol" style="color:var(--ink-3)">${r.left==null?"\u2014":gmB(r.left*TOTALS.fx)}</td></tr>`).join("") + (!tb.length ? `
+    <tr><td colspan="13" style="color:var(--ink-3);padding:14px 4px">${TFOCUS} \u2014 no money committed yet (watchlist name, nothing invested and nothing realized)</td></tr>` : "") + (GFILTER==="all" && !TFOCUS ? `
     <tr style="font-weight:700;border-top:2px solid var(--axis)"><th>TOTAL</th>
      <td class="budgetcol">${gm(T.budget)}</td><td class="usdcol">${gm(T.cost)}</td><td class="thbcol" style="color:var(--ink-2)">${gmB(T.costB)}</td><td class="usdcol">${gm(T.mvv)}</td><td class="thbcol" style="color:var(--ink-2)">${gmB(T.mvvB)}</td>
      <td class="usdcol">${gpm(T.un)}</td><td class="thbcol">${gpmB(T.unB)}</td><td><span class="${T.un>=0?'pos':'neg'}">${T.un>=0?"\u25b2":"\u25bc"} ${(T.un/T.cost*100).toFixed(1)}%</span></td>
@@ -702,12 +773,12 @@ function renderTrades(){
   const tc=document.getElementById("tradecash");
   if(tc) tc.innerHTML=`<div class="k">Cash balance · ${CASH.broker}</div><div class="v">$${CASH.amount.toLocaleString("en-US",{minimumFractionDigits:2})} <span style="font-size:13px;color:var(--ink-2)">${CASH.currency}</span></div><div class="v2">as of ${CASH.asof} · before settlement of outstanding contracts &amp; fees</div>`;
   const days = {};
-  TRADES.forEach(t=>{ (days[t.date]=days[t.date]||[]).push(t); });
+  TRADES.forEach(t=>{ if(!inFocus(t.t)) return; (days[t.date]=days[t.date]||[]).push(t); });
   const el = document.getElementById("tradedays");
   const _mn={Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Aug:7,Sep:8,Oct:9,Nov:10,Dec:11};
   const _dv=d=>{const m=d.match(/(\w+) (\d+), (\d+)/); return m?(+m[3])*10000+_mn[m[1]]*100+(+m[2]):0;};
   const keys = Object.keys(days).sort((a,b)=>_dv(b)-_dv(a));
-  if(!keys.length){ el.innerHTML = `<div class="tday-empty">No trades booked yet \u2014 Salee sends fills daily and I log them here.</div>`; return; }
+  if(!keys.length){ el.innerHTML = `<div class="tday-empty">${TFOCUS ? `No trades booked for ${TFOCUS} in this log.` : "No trades booked yet \u2014 Salee sends fills daily and I log them here."}</div>`; return; }
   el.innerHTML = keys.map(d=>{
     const rows = days[d];
     let buys=0, sells=0, realized=0, anyEst=false, anyReal=false;
@@ -771,9 +842,11 @@ function renderStockSummary(){
   const soldReal={}, soldPct={}; SOLD.forEach(s=>{soldReal[s.t]=s.glUSD; soldPct[s.t]=s.costUSD?s.glUSD/s.costUSD*100:null;});
   const rpc=v=>v==null?"\u2014":`<span class="${v>=0?'pos':'neg'}">${v>=0?'+':'\u2212'}${Math.abs(v).toFixed(1)}%</span>`;
   let html=`<thead><tr class="tkr"><th style="text-align:left">Stock</th><th>Budget</th><th>Invested</th><th>Mkt value</th><th>Unrealized</th><th>%</th><th>Realized</th><th>Realized %</th></tr></thead><tbody>`;
+  let nrow=0;
   GROUPS.forEach((g,gi)=>{
-    if(GFILTER!=="all" && gi!==GFILTER) return;
-    const ss=STOCKS.filter(s=>s.g===gi && POS[s.t].shares!=null);
+    if(GFILTER!=="all" && !TFOCUS && gi!==GFILTER) return;
+    const ss=STOCKS.filter(s=>s.g===gi && POS[s.t].shares!=null && inFocus(s.t));
+    nrow += ss.length;
     if(!ss.length) return;
     html+=`<tr><th colspan="8" style="text-align:left;background:var(--s${gi+1});color:#fff;font-size:10px;text-transform:uppercase;letter-spacing:.05em;position:static">${g}</th></tr>`;
     ss.forEach(s=>{
@@ -785,11 +858,13 @@ function renderStockSummary(){
     });
   });
   const heldSet=new Set(STOCKS.filter(s=>POS[s.t].shares!=null).map(s=>s.t));
-  const soldOnly=SOLD.filter(s=>!heldSet.has(s.t));
-  if(GFILTER==="all" && soldOnly.length){
+  const soldOnly=SOLD.filter(s=>!heldSet.has(s.t) && inFocus(s.t));
+  if((GFILTER==="all"||TFOCUS) && soldOnly.length){
+    nrow += soldOnly.length;
     html+=`<tr><th colspan="8" style="text-align:left;background:var(--ink-3);color:#fff;font-size:10px;text-transform:uppercase;letter-spacing:.05em;position:static">Fully exited · no current holding</th></tr>`;
     soldOnly.forEach(s=>{ html+=`<tr><th>${s.t}</th><td>—</td><td>${gm(s.costUSD)}</td><td>—</td><td>—</td><td>—</td><td>${gpm(s.glUSD)}</td><td>${rpc(s.costUSD?s.glUSD/s.costUSD*100:null)}</td></tr>`; });
   }
+  if(TFOCUS && !nrow) html+=`<tr><td colspan="8" style="color:var(--ink-3);padding:14px 4px">${TFOCUS} — watchlist only, no shares held and none sold</td></tr>`;
   document.getElementById("gstock").innerHTML=html+`</tbody>`;
 }
 function renderPerformance(){
@@ -816,13 +891,22 @@ function renderMonthly(){
   const lab=ym=>{const p=ym.split("-");return MN[+p[1]-1]+" "+p[0];};
   let html="";
   [...MONTHLY].reverse().forEach(m=>{
-    const rows=m.byStock.map(x=>{const c=x.sell-x.real; const rp=(x.sell&&c)?x.real/c*100:null; return `<tr><td class="tt-tick" style="text-align:left">${x.t}</td><td class="num">${x.buy?gm(x.buy):"—"}</td><td class="num">${x.sell?gm(x.sell):"—"}</td><td class="num">${gpm(x.real)}</td><td class="num">${rp==null?"—":`<span class="${rp>=0?'pos':'neg'}">${rp>=0?'+':'−'}${Math.abs(rp).toFixed(1)}%</span>`}</td></tr>`;}).join("");
+    /* when one ticker is in focus, keep only its line and re-total the month
+       header from that line alone — the whole-book sums would be misleading */
+    const bs = m.byStock.filter(x=>inFocus(x.t));
+    if(TFOCUS && !bs.length) return;
+    const sum = k => bs.reduce((a,x)=>a+(x[k]||0),0);
+    const hBuy = TFOCUS ? sum("buy") : m.buyUSD;
+    const hSell= TFOCUS ? sum("sell"): m.sellUSD;
+    const hReal= TFOCUS ? sum("real"): m.realizedUSD;
+    const rows=bs.map(x=>{const c=x.sell-x.real; const rp=(x.sell&&c)?x.real/c*100:null; return `<tr><td class="tt-tick" style="text-align:left">${x.t}</td><td class="num">${x.buy?gm(x.buy):"—"}</td><td class="num">${x.sell?gm(x.sell):"—"}</td><td class="num">${gpm(x.real)}</td><td class="num">${rp==null?"—":`<span class="${rp>=0?'pos':'neg'}">${rp>=0?'+':'−'}${Math.abs(rp).toFixed(1)}%</span>`}</td></tr>`;}).join("");
     html+=`<div class="tday">
-      <div class="tday-h"><b>${lab(m.ym)}</b><span class="tday-sum">bought ${gm(m.buyUSD)} (${m.buyLots} lots) · sold ${m.sellUSD?gm(m.sellUSD):"$0"} (${m.sellLots}) · realized ${gpm(m.realizedUSD)}${m.realizedTHB?` / ฿${Math.round(m.realizedTHB).toLocaleString()}`:""}</span></div>
-      <details><summary style="cursor:pointer;font-size:12px;color:var(--s1);margin:2px 0 6px">by stock (${m.byStock.length})</summary>
+      <div class="tday-h"><b>${lab(m.ym)}</b><span class="tday-sum">bought ${gm(hBuy)}${TFOCUS?"":` (${m.buyLots} lots)`} · sold ${hSell?gm(hSell):"$0"}${TFOCUS?"":` (${m.sellLots})`} · realized ${gpm(hReal)}${(!TFOCUS&&m.realizedTHB)?` / ฿${Math.round(m.realizedTHB).toLocaleString()}`:""}</span></div>
+      <details${TFOCUS?" open":""}><summary style="cursor:pointer;font-size:12px;color:var(--s1);margin:2px 0 6px">by stock (${bs.length})</summary>
       <div class="tbl-wrap" style="max-height:none"><table class="ttbl"><thead><tr><th style="text-align:left">Ticker</th><th class="num">Bought</th><th class="num">Sold</th><th class="num">Realized</th><th class="num">Realized %</th></tr></thead><tbody>${rows}</tbody></table></div></details>
     </div>`;
   });
+  if(TFOCUS && !html) html=`<div class="tday-empty">No monthly activity recorded for ${TFOCUS}.</div>`;
   document.getElementById("monthly").innerHTML=html;
 }
 /* ============ Vision page ============ */
@@ -847,6 +931,151 @@ function renderVision(){
        <div class="v2">implied ${cagr(t.mult)}%/yr, compounding 8 yrs (2027→2035)</div></div>`).join("")}</div>
    <div class="note" style="margin-top:14px;line-height:1.7">Today's book is worth ${gm(heldMV)} — already ${(heldMV/target).toFixed(2)}× the eventual $1M cost target while still mid-deployment. The 2× / 5× / 10× goals assume the full $1M of cost is invested by 2027, then compounds untouched to 2035. Reaching even the <b>Must Do</b> 2× requires ~9%/yr — the <b>Wish</b> 10× needs sustained ~33%/yr, the kind of run only a genuine multi-year AI supercycle delivers. Cash returned from sold stocks is meant to be recycled into the book, not withdrawn.</div>`;
 }
+
+/* ============ ticker search + single-name focus ============
+   setFocus(t) pins the whole dashboard to one ticker: every panel on every
+   tab re-renders showing that name only. setFocus(null) puts it all back. */
+function renderFocus(){
+  const bar = document.getElementById("fbar"); if(!bar) return;
+  const inp = document.getElementById("tsearch"), xc = document.getElementById("sxc");
+  if(!TFOCUS){
+    bar.classList.remove("on"); bar.innerHTML = "";
+    if(xc) xc.classList.remove("on");
+    return;
+  }
+  const s = STOCKS.find(x=>x.t===TFOCUS);
+  if(!s){ bar.classList.remove("on"); bar.innerHTML=""; return; }
+  if(inp && inp.value.trim().toUpperCase()!==s.t) inp.value = s.t;
+  if(xc) xc.classList.add("on");
+  const p = POS[s.t] || {}, m = mv(s), u = upl(s), y = ytd(s);
+  const sold = SOLD.find(x=>x.t===s.t);
+  const cell = (k,v) => `<div>${k}<b>${v}</b></div>`;
+  let stats = "";
+  if(p.shares!=null){
+    stats = cell("Shares", p.shares.toLocaleString("en-US"))
+          + cell("Avg cost", p.cost!=null ? "$"+(p.cost/p.shares).toFixed(2) : "—")
+          + cell("Invested", money(p.cost))
+          + cell("Market value", money(m))
+          + cell("Unrealized", `<span class="${(u??0)>=0?'pos':'neg'}">${u==null?"—":(u>=0?"+":"−")+Math.abs(u).toFixed(1)+"%"}</span>`);
+  } else if(sold){
+    stats = cell("Position", "fully exited")
+          + cell("Invested", money(sold.costUSD))
+          + cell("Realized", `<span class="${sold.glUSD>=0?'pos':'neg'}">${sold.glUSD>=0?"+":"−"}$${Math.abs(Math.round(sold.glUSD)).toLocaleString("en-US")}</span>`);
+  } else {
+    stats = cell("Position", "watchlist — none held")
+          + cell("Budget", p.budget!=null ? money(p.budget) : "not set");
+  }
+  stats = cell("Last close", "$"+fmt(s.price)+pxbadge(s))
+        + cell("YTD", y==null?"—":`<span class="${y>=0?'pos':'neg'}">${y>=0?"+":"−"}${Math.abs(y).toFixed(1)}%</span>`)
+        + stats
+        + cell("52-wk range", (s.lo52!=null&&h52(s)!=null) ? `$${fmt(s.lo52)} – $${fmt(h52(s))}` : "—")
+        + cell("Analyst avg", s.fvAvg!=null ? "$"+fmt(s.fvAvg) : "no coverage");
+  bar.innerHTML = `<div class="fb-h">
+      <span class="dot" style="background:var(--s${s.g+1})"></span>
+      <span class="fb-t">${s.t}</span>
+      <span class="fb-n">${s.name} · ${s.ex} · ${GROUPS[s.g]}</span>
+      <button class="fb-x" onclick="setFocus(null)">Show all ${STOCKS.length} ✕</button>
+    </div>
+    <div class="fb-s">${stats}</div>
+    <div class="fb-s" style="margin-top:8px;color:var(--ink-3);font-size:11px">Every panel below is showing ${s.t} only. Clear the search box, press Esc, or click “Show all” to go back.</div>`;
+  bar.classList.add("on");
+}
+function setFocus(t){
+  TFOCUS = t || null;
+  if(TFOCUS){ FILTER="all"; GFILTER="all"; }
+  closeSug();
+  if(!TFOCUS){ const i=document.getElementById("tsearch"); if(i) i.value=""; }
+  renderChips(); renderGroupChips();
+  renderLadder(); renderBubble(); renderMatrix(); renderCards();
+  renderGroupSummary(); renderStockSummary(); renderTrades(); renderMonthly();
+  renderFocus();
+  if(TFOCUS) window.scrollTo(0,0);
+}
+
+/* ---- suggestion list ---- */
+let SUGL = [], SUGI = -1;
+const esc = x => String(x).replace(/[&<>"]/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function hl(text,q){
+  const i = text.toUpperCase().indexOf(q.toUpperCase());
+  if(i<0) return esc(text);
+  return esc(text.slice(0,i))+"<mark>"+esc(text.slice(i,i+q.length))+"</mark>"+esc(text.slice(i+q.length));
+}
+function matches(q){
+  q = q.trim(); if(!q) return [];
+  const Q = q.toUpperCase();
+  const a=[],b=[],c=[];
+  STOCKS.forEach(s=>{
+    if(s.t.toUpperCase().startsWith(Q)) a.push(s);
+    else if(s.t.toUpperCase().includes(Q)) b.push(s);
+    else if(s.name.toUpperCase().includes(Q)) c.push(s);
+  });
+  return a.concat(b,c).slice(0,8);
+}
+function closeSug(){ const d=document.getElementById("sug"); if(d){ d.classList.remove("on"); d.innerHTML=""; } SUGL=[]; SUGI=-1; }
+function drawSug(q){
+  const d = document.getElementById("sug"); if(!d) return;
+  SUGL = matches(q); SUGI = SUGL.length ? 0 : -1;
+  if(!q.trim()){ closeSug(); return; }
+  if(!SUGL.length){
+    d.innerHTML = `<div class="sug-hd">No ticker or company matches “${esc(q)}”.</div>`;
+    d.classList.add("on"); return;
+  }
+  d.innerHTML = SUGL.map((s,i)=>{
+    const held = POS[s.t] && POS[s.t].shares!=null;
+    return `<div class="sug-i${i===SUGI?" sel":""}" data-t="${s.t}" data-i="${i}">
+      <span class="dot" style="background:var(--s${s.g+1})"></span>
+      <span class="sug-t">${hl(s.t,q)}</span>
+      <span class="sug-n">${hl(s.name,q)}</span>
+      <span class="sug-g">${held?"held · ":""}${esc(GROUPS[s.g])}</span></div>`;
+  }).join("");
+  d.classList.add("on");
+}
+function moveSug(step){
+  if(!SUGL.length) return;
+  SUGI = (SUGI + step + SUGL.length) % SUGL.length;
+  const d = document.getElementById("sug");
+  [...d.querySelectorAll(".sug-i")].forEach((el,i)=>el.classList.toggle("sel", i===SUGI));
+  const sel = d.querySelector(".sug-i.sel"); if(sel) sel.scrollIntoView({block:"nearest"});
+}
+function commitSearch(){
+  const inp = document.getElementById("tsearch");
+  const q = inp.value.trim();
+  if(!q){ setFocus(null); return; }
+  /* the highlighted suggestion wins; otherwise fall back to an exact ticker */
+  let pick = (SUGI>=0 && SUGL[SUGI]) ? SUGL[SUGI] : STOCKS.find(s=>s.t.toUpperCase()===q.toUpperCase());
+  if(!pick){ const m = matches(q); pick = m[0]; }
+  if(pick) setFocus(pick.t);
+  else {
+    const d = document.getElementById("sug");
+    d.innerHTML = `<div class="sug-hd">No ticker or company matches “${esc(q)}”.</div>`;
+    d.classList.add("on");
+  }
+}
+(function wireSearch(){
+  const inp = document.getElementById("tsearch"), sug = document.getElementById("sug"),
+        xc  = document.getElementById("sxc");
+  if(!inp) return;
+  inp.addEventListener("input", ()=>{ if(xc) xc.classList.toggle("on", !!inp.value); drawSug(inp.value); });
+  inp.addEventListener("focus", ()=>{ if(inp.value.trim()) drawSug(inp.value); });
+  inp.addEventListener("keydown", e=>{
+    if(e.key==="ArrowDown"){ e.preventDefault(); moveSug(1); }
+    else if(e.key==="ArrowUp"){ e.preventDefault(); moveSug(-1); }
+    else if(e.key==="Enter"){ e.preventDefault(); commitSearch(); inp.blur(); }
+    else if(e.key==="Escape"){ e.preventDefault(); inp.value=""; if(xc) xc.classList.remove("on"); closeSug(); setFocus(null); inp.blur(); }
+  });
+  sug.addEventListener("mousedown", e=>{
+    const it = e.target.closest(".sug-i"); if(!it) return;
+    e.preventDefault(); setFocus(it.dataset.t);
+  });
+  if(xc) xc.onclick = ()=>{ inp.value=""; xc.classList.remove("on"); setFocus(null); inp.focus(); };
+  document.addEventListener("click", e=>{ if(!e.target.closest(".searchwrap")) closeSug(); });
+  document.addEventListener("keydown", e=>{
+    const tag = (e.target.tagName||"").toLowerCase();
+    if(tag==="input" || tag==="textarea" || e.metaKey || e.ctrlKey || e.altKey) return;
+    if(e.key==="/"){ e.preventDefault(); inp.focus(); inp.select(); }
+    else if(e.key==="Escape" && TFOCUS){ setFocus(null); }
+  });
+})();
 
 /* ============ tab switching ============ */
 document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{
@@ -878,7 +1107,7 @@ function renderAll(){
   })();
   document.getElementById("subline").textContent = `${STOCKS.length} positions · AI · Semis · Infrastructure — Salee's book`;
   renderChips(); renderTiles(); renderGroupSummary(); renderLadder(); renderBubble(); renderMatrix(); renderCards(); renderTrades();
-  renderTotals(); renderGroupChips(); renderStockSummary(); renderPerformance(); renderMonthly(); renderVision();
+  renderTotals(); renderGroupChips(); renderStockSummary(); renderPerformance(); renderMonthly(); renderVision(); renderFocus();
   document.getElementById("foot").innerHTML =
    `Definitions — <b>Conviction</b> = (avg analyst target − last close) ÷ last close. <b>Devastation</b> = (last close − 52-wk high) ÷ 52-wk high; “—” within 0.5% of the high. <b>Growth YTD</b> = vs Jan 2, 2026 open. <b>Rule of 40 (FCF)</b> = revenue growth % + FCF margin % (TTM) — the conservative primary. <b>Rule of 40 (NI)</b> = revenue growth % + net profit margin %; a wide gap between the two = accounting profits not converting to cash (see ORCL), and NI is distorted by non-operating gains for IONQ/ONDS. ROI shown as ROIC. “—” = not meaningful (negative earnings or not published). CRWD figures reflect its July 2026 4-for-1 split.<br>
     Data: stockanalysis.com, TradingView, Macrotrends — refreshed weekly (Mon 08:00 Asia/Bangkok) by Claude; live prices via TradingView embeds when available. Positions reconciled to POEMS statement Jul 22, 2026 (settled + outstanding; ties to the cent: cost $536,988.31, MV $635,013.32; APP closed, excluded). ⚠ NBIS fully exited &amp; IONQ off the book Jul 21–22; IREN trimmed to 45 sh (tranche-2 sell plan active); IREN/NBIS/CRWV kept visible as Neocloud Watch; CDNS re-appeared with 6 sh, ISRG +5 sh, ORCL trimmed to 50 sh (fills not yet sent to Claude).<br>
