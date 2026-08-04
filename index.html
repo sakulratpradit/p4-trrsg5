@@ -248,6 +248,31 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
 @media (min-width: 901px) and (max-width: 1180px){
   .cards{grid-template-columns:repeat(2,1fr)}
 }
+
+/* ---- portfolio wheel ---- */
+.wheel-card{background:var(--surface-1); border:1px solid var(--ring); border-radius:12px; padding:14px 18px 10px; position:relative}
+.wheel-card svg{width:100%; max-width:900px; height:auto; display:block; margin:0 auto}
+.wheel-card .wseg{cursor:pointer}
+.wheel-card .wlab{font-weight:700; letter-spacing:.02em; paint-order:stroke; stroke-linejoin:round; pointer-events:none}
+.wheel-card .wlab.in{fill:#ffffff; stroke:#0b1526; stroke-width:3.8px; stroke-opacity:.85}
+.wheel-card .wlab.out{fill:var(--ink-1); stroke:var(--surface-1); stroke-width:3.6px}
+.wheel-card .wlab .p{font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-weight:700}
+.wheel-card .wlab.in .p{fill:#e9b949}
+.wheel-card .wlab.out .p{fill:var(--ink-3)}
+.wheel-card .wc-k{font-size:17px; fill:var(--ink-3); letter-spacing:.18em; font-weight:600}
+.wheel-card .wc-v{font-size:54px; fill:var(--ink-1); font-weight:700; letter-spacing:-.02em}
+.wheel-card .wc-s{font-size:21px; fill:var(--ink-2); font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.wheel-card .wc-g{font-size:34px; font-weight:700; font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.wheel-card .wc-gp{font-size:25px; font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.wheel-card .wc-n{font-size:15px; fill:var(--ink-3); letter-spacing:.2em; font-weight:600}
+.wheel-card .wc-g.pos,.wheel-card .wc-gp.pos{fill:var(--good)} .wheel-card .wc-g.neg,.wheel-card .wc-gp.neg{fill:var(--bad)}
+.wlegend{display:flex; flex-wrap:wrap; gap:8px 22px; justify-content:center; font-size:11.5px; color:var(--ink-3); padding:2px 0 8px}
+.wlegend span{display:flex; align-items:center; gap:6px}
+.wlegend i{width:22px; height:9px; border-radius:2px; display:inline-block}
+@media (max-width:640px){
+  .wheel-card{overflow-x:auto; -webkit-overflow-scrolling:touch}
+  .wheel-card svg{min-width:640px}
+}
 </style>
 </head>
 <body>
@@ -290,6 +315,9 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
 </div>
 
 <div class="tiles" id="tiles"></div>
+
+<h2>Portfolio wheel <span class="n">the whole book at a glance &mdash; wedge width = share of market value &middot; the coloured band on the outer edge = profit (gold) or loss (red), and the deeper the band the bigger the move &middot; tap any wedge to pull that stock up everywhere</span></h2>
+<div class="wheel-card" id="wheelwrap"><svg id="wheel" viewBox="0 0 1248 1074" role="img" aria-label="Donut chart of the portfolio: wedge width is share of market value, the outer band shows profit or loss"></svg><div class="wlegend" id="wlegend"></div><div class="bub-tip" id="wheeltip"></div></div>
 
 <div class="chipbar" id="chipbar"></div>
 <div class="note" style="margin-top:0">Salee's grouping (notebook Jul 21 + corrections). <b>Neocloud Watch</b>: IREN <b style="color:var(--bad)">(45 sh held, tranche-2 sell plan still active)</b> + NBIS (exited Jul 21) + CRWV (exited earlier) — watched for an industry turnaround. Click a group to focus every panel.</div>
@@ -572,6 +600,130 @@ function renderBubble(){
   svg.addEventListener("click",e=>{ if(!e.target.classList.contains("bub")) tip.style.display="none"; });
 }
 
+/* ============ portfolio wheel (whole book, always) ============
+   Redrawn from STOCKS/POS on every render, so the morning price refresh
+   updates it automatically. Top 20 holdings by market value get their own
+   wedge; everything else is pooled into one "OTHER n" wedge. */
+const LOGOS = {"NVDA":{"p":"M8.948 8.798v-1.43a6.7 6.7 0 0 1 .424-.018c3.922-.124 6.493 3.374 6.493 3.374s-2.774 3.851-5.75 3.851c-.398 0-.787-.062-1.158-.185v-4.346c1.528.185 1.837.857 2.747 2.385l2.04-1.714s-1.492-1.952-4-1.952a6.016 6.016 0 0 0-.796.035m0-4.735v2.138l.424-.027c5.45-.185 9.01 4.47 9.01 4.47s-4.08 4.964-8.33 4.964c-.37 0-.733-.035-1.095-.097v1.325c.3.035.61.062.91.062 3.957 0 6.82-2.023 9.593-4.408.459.371 2.34 1.263 2.73 1.652-2.633 2.208-8.772 3.984-12.253 3.984-.335 0-.653-.018-.971-.053v1.864H24V4.063zm0 10.326v1.131c-3.657-.654-4.673-4.46-4.673-4.46s1.758-1.944 4.673-2.262v1.237H8.94c-1.528-.186-2.73 1.245-2.73 1.245s.68 2.412 2.739 3.11M2.456 10.9s2.164-3.197 6.5-3.533V6.201C4.153 6.59 0 10.653 0 10.653s2.35 6.802 8.948 7.42v-1.237c-4.84-.6-6.492-5.936-6.492-5.936z","vb":"0 0 24 24"},"GOOGL":{"p":"M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z","vb":"0 0 24 24"},"META":{"p":"M6.915 4.03c-1.968 0-3.683 1.28-4.871 3.113C.704 9.208 0 11.883 0 14.449c0 .706.07 1.369.21 1.973a6.624 6.624 0 0 0 .265.86 5.297 5.297 0 0 0 .371.761c.696 1.159 1.818 1.927 3.593 1.927 1.497 0 2.633-.671 3.965-2.444.76-1.012 1.144-1.626 2.663-4.32l.756-1.339.186-.325c.061.1.121.196.183.3l2.152 3.595c.724 1.21 1.665 2.556 2.47 3.314 1.046.987 1.992 1.22 3.06 1.22 1.075 0 1.876-.355 2.455-.843a3.743 3.743 0 0 0 .81-.973c.542-.939.861-2.127.861-3.745 0-2.72-.681-5.357-2.084-7.45-1.282-1.912-2.957-2.93-4.716-2.93-1.047 0-2.088.467-3.053 1.308-.652.57-1.257 1.29-1.82 2.05-.69-.875-1.335-1.547-1.958-2.056-1.182-.966-2.315-1.303-3.454-1.303zm10.16 2.053c1.147 0 2.188.758 2.992 1.999 1.132 1.748 1.647 4.195 1.647 6.4 0 1.548-.368 2.9-1.839 2.9-.58 0-1.027-.23-1.664-1.004-.496-.601-1.343-1.878-2.832-4.358l-.617-1.028a44.908 44.908 0 0 0-1.255-1.98c.07-.109.141-.224.211-.327 1.12-1.667 2.118-2.602 3.358-2.602zm-10.201.553c1.265 0 2.058.791 2.675 1.446.307.327.737.871 1.234 1.579l-1.02 1.566c-.757 1.163-1.882 3.017-2.837 4.338-1.191 1.649-1.81 1.817-2.486 1.817-.524 0-1.038-.237-1.383-.794-.263-.426-.464-1.13-.464-2.046 0-2.221.63-4.535 1.66-6.088.454-.687.964-1.226 1.533-1.533a2.264 2.264 0 0 1 1.088-.285z","vb":"0 0 24 24"},"AVGO":{"p":"M12 0c6.628 0 12 5.372 12 12a12 12 0 0 1-.56 3.63 13.641 13.641 0 0 0-.867-.388c-1.372-.546-2.629-.363-3.888.4 0 0-.459.28-.597.366-.586.37-1.14.717-1.672.717-.508 0-1.007-.135-1.218-1.117-.33-1.533-1.135-5.298-1.486-7.162-.206-1.097-.319-1.688-.436-2.088-.208-.706-.586-1.09-1.124-1.15 0 0-.084-.013-.152-.013-.068 0-.162.014-.162.014-.531.064-.907.447-1.114 1.15-.117.4-.23.99-.436 2.087-.351 1.864-1.156 5.63-1.486 7.162-.21.982-.71 1.117-1.218 1.117-.531 0-1.086-.348-1.672-.717-.138-.086-.597-.366-.597-.366-1.259-.763-2.516-.946-3.888-.4-.301.12-.586.251-.867.387A11.995 11.995 0 0 1 0 12C0 5.372 5.372 0 12 0m8.375 16.976c-.453.152-.855.42-1.256.672-.756.475-1.613 1.014-2.704 1.014-1.614 0-2.749-.964-3.112-2.647C13.023 14.712 12 9.793 12 9.793a496.28 496.28 0 0 1-1.303 6.222c-.362 1.683-1.497 2.647-3.112 2.647-1.09 0-1.946-.539-2.703-1.014-.401-.252-.804-.52-1.256-.672a2.319 2.319 0 0 0-1.414-.01c-.33.097-.644.234-.951.386C3.227 21.292 7.207 24 11.91 24s8.863-2.708 10.83-6.648a5.958 5.958 0 0 0-.95-.386 2.322 2.322 0 0 0-1.415.01","vb":"0 0 24 24"},"AMD":{"p":"M18.324 9.137l1.559 1.56h2.556v2.557L24 14.814V9.137zM2 9.52l-2 4.96h1.309l.37-.982H3.9l.408.982h1.338L3.432 9.52zm4.209 0v4.955h1.238v-3.092l1.338 1.562h.188l1.338-1.556v3.091h1.238V9.52H10.47l-1.592 1.845L7.287 9.52zm6.283 0v4.96h2.057c1.979 0 2.88-1.046 2.88-2.472 0-1.36-.937-2.488-2.747-2.488zm1.237.91h.792c1.17 0 1.63.711 1.63 1.57 0 .728-.372 1.572-1.616 1.572h-.806zm-10.985.273l.791 1.932H2.008zm17.137.307l-1.604 1.603v2.25h2.246l1.604-1.607h-2.246z","vb":"0 0 24 24"},"AAPL":{"p":"M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701","vb":"0 0 24 24"},"PANW":{"p":"m10.278 15.443 1.705 1.705-3.426 3.426-3.427-3.426 8.592-8.591-1.705-1.705 3.426-3.426 3.427 3.426-8.592 8.591zM0 12.017l3.426 3.426 8.591-8.59-3.426-3.427L0 12.017zm11.983 5.13 3.426 3.427L24 11.983l-3.426-3.426-8.591 8.59z","vb":"0 0 24 24"},"INTC":{"p":"M20.42 7.345v9.18h1.651v-9.18zM0 7.475v1.737h1.737V7.474zm9.78.352v6.053c0 .513.044.945.13 1.292.087.34.235.618.44.828.203.21.475.359.803.451.334.093.754.136 1.255.136h.216v-1.533c-.24 0-.445-.012-.593-.037a.672.672 0 0 1-.39-.173.693.693 0 0 1-.173-.377 4.002 4.002 0 0 1-.037-.606v-2.182h1.193v-1.416h-1.193V7.827zm-3.505 2.312c-.396 0-.76.08-1.082.241-.327.161-.6.384-.822.668l-.087.117v-.902H2.658v6.256h1.639v-3.214c.018-.588.16-1.02.433-1.299.29-.297.642-.445 1.044-.445.476 0 .841.149 1.082.433.235.284.359.686.359 1.2v3.324h1.663V12.97c.006-.89-.229-1.595-.686-2.09-.458-.495-1.1-.742-1.917-.742zm10.065.006a3.252 3.252 0 0 0-2.306.946c-.29.29-.525.637-.692 1.033a3.145 3.145 0 0 0-.254 1.273c0 .452.08.878.241 1.274.161.395.39.742.674 1.032.284.29.637.526 1.045.693.408.173.86.26 1.342.26 1.397 0 2.262-.637 2.782-1.23l-1.187-.904c-.248.297-.841.699-1.583.699-.464 0-.847-.105-1.138-.321a1.588 1.588 0 0 1-.593-.872l-.019-.056h4.915v-.587c0-.451-.08-.872-.235-1.267a3.393 3.393 0 0 0-.661-1.033 3.013 3.013 0 0 0-1.02-.692 3.345 3.345 0 0 0-1.311-.248zm-16.297.118v6.256h1.651v-6.256zm16.278 1.286c1.132 0 1.664.797 1.664 1.255l-3.32.006c0-.458.525-1.255 1.656-1.261zm7.073 3.814a.606.606 0 0 0-.606.606.606.606 0 0 0 .606.606.606.606 0 0 0 .606-.606.606.606 0 0 0-.606-.606zm-.008.105a.5.5 0 0 1 .002 0 .5.5 0 0 1 .5.501.5.5 0 0 1-.5.5.5.5 0 0 1-.5-.5.5.5 0 0 1 .498-.5zm-.233.155v.699h.13v-.285h.093l.173.285h.136l-.18-.297a.191.191 0 0 0 .118-.056c.03-.03.05-.074.05-.136 0-.068-.02-.117-.063-.154-.037-.038-.105-.056-.185-.056zm.13.099h.154c.019 0 .037.006.056.012a.064.064 0 0 1 .037.031c.013.013.012.031.012.056a.124.124 0 0 1-.012.055.164.164 0 0 1-.037.031c-.019.006-.037.013-.056.013h-.154Z","vb":"0 0 24 24"},"TSLA":{"p":"M12 5.362l2.475-3.026s4.245.09 8.471 2.054c-1.082 1.636-3.231 2.438-3.231 2.438-.146-1.439-1.154-1.79-4.354-1.79L12 24 8.619 5.034c-3.18 0-4.188.354-4.335 1.792 0 0-2.146-.795-3.229-2.43C5.28 2.431 9.525 2.34 9.525 2.34L12 5.362l-.004.002H12v-.002zm0-3.899c3.415-.03 7.326.528 11.328 2.28.535-.968.672-1.395.672-1.395C19.625.612 15.528.015 12 0 8.472.015 4.375.61 0 2.349c0 0 .195.525.672 1.396C4.674 1.989 8.585 1.435 12 1.46v.003z","vb":"0 0 24 24"},"QCOM":{"p":"M12 0C6.22933 0 1.5761 4.48645 1.5761 10.47394c0 6.00417 4.65323 10.47394 10.4239 10.47394.98402 0 1.93468-.13343 2.8353-.3836l1.13412 2.9187c.11675.31688.35025.51702.7672.51702h1.80125c.43364 0 .75052-.28353.55038-.83391l-1.46768-3.81932c2.88534-1.81793 4.80333-5.03683 4.80333-8.8895C22.4239 4.48644 17.77067 0 12 0m4.53648 16.5615l-1.31758-3.41904c-.11675-.28353-.35024-.55038-.85059-.55038h-1.71786c-.43363 0-.7672.28353-.56706.83391l1.73454 4.48645c-.56706.1501-1.18416.21682-1.81793.21682-4.2196 0-7.22168-3.31897-7.22168-7.65532C4.77832 6.1376 7.7804 2.81862 12 2.81862s7.22168 3.31898 7.22168 7.65532c0 2.5351-1.01737 4.70327-2.6852 6.08756","vb":"0 0 24 24"},"PLTR":{"p":"M20.147 18L12 21.178 3.853 18 2.5 20.343 12 24l9.5-3.657L20.147 18zM12 0a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19zm0 16.078a6.568 6.568 0 1 1 0-13.136 6.568 6.568 0 0 1 0 13.136z","vb":"0 0 24 24"},"AMZN":{"p":"M257.7 162.7c-48.7 1.8-169.5 15.5-169.5 117.5 0 109.5 138.3 114 183.5 43.2 6.5 10.2 35.4 37.5 45.3 46.8l56.8-56s-32.3-25.3-32.3-52.8l0-147.1C341.5 89 317 32 229.2 32 141.2 32 94.5 87 94.5 136.3l73.5 6.8c16.3-49.5 54.2-49.5 54.2-49.5 40.7-.1 35.5 29.8 35.5 69.1zm0 86.8c0 80-84.2 68-84.2 17.2 0-47.2 50.5-56.7 84.2-57.8l0 40.6zM393.7 413c-7.7 10-70 67-174.5 67S34.7 408.5 10.2 379c-6.8-7.7 1-11.3 5.5-8.3 73.3 44.5 187.8 117.8 372.5 30.3 7.5-3.7 13.3 2 5.5 12zm39.8 2.2c-6.5 15.8-16 26.8-21.2 31-5.5 4.5-9.5 2.7-6.5-3.8s19.3-46.5 12.7-55c-6.5-8.3-37-4.3-48-3.2-10.8 1-13 2-14-.3-2.3-5.7 21.7-15.5 37.5-17.5 15.7-1.8 41-.8 46 5.7 3.7 5.1 0 27.1-6.5 43.1z","vb":"0 0 448 512"},"MSFT":{"p":"M0 32l214.6 0 0 214.6-214.6 0 0-214.6zm233.4 0l214.6 0 0 214.6-214.6 0 0-214.6zM0 265.4l214.6 0 0 214.6-214.6 0 0-214.6zm233.4 0l214.6 0 0 214.6-214.6 0 0-214.6z","vb":"0 0 448 512"},"CRM":{"p":"M249.4 245.6l-26.4 0c.7-5.2 3.3-14.1 13.6-14.1 6.8 0 12 3.8 12.7 14.1zM386 231.8c-.5 0-14.1-1.8-14.1 20s13.6 20 14.1 20c13 0 14.1-13.5 14.1-20 0-21.8-13.7-20-14.1-20zM142.8 255.5c-1.1 .9-2 2-2.5 3.2s-.8 2.7-.7 4c0 4.8 2.1 6.1 3.3 7 4.7 3.7 15.1 2.1 20.9 1l0-16.9c-5.3-1.1-16.7-2-20.9 1.6zM640.5 232c0 87.6-80 154.4-165.4 136.4-18.4 33-70.7 70.8-132.2 41.6-41.2 96-177.9 92.2-213.8-5.2-119.7 23.9-178.8-138.4-75.3-199.3-34.8-79.4 22.6-173.6 114.3-173.6 19.1 0 37.9 4.4 55 12.9s32 20.7 43.6 35.8c20.7-21.4 49.4-34.8 81.1-34.8 42.3 0 79 23.5 98.8 58.6 92.8-40.7 193.8 28.2 193.8 127.5zM120.9 263.8c0-11.8-11.7-15.2-17.9-17.2-5.3-2.1-13.4-3.5-13.4-8.9 0-9.5 17-6.7 25.2-2.1 0 0 1.2 .7 1.6-.5 .2-.7 2.4-6.6 2.6-7.3 .1-.3 .1-.6-.1-.8s-.4-.5-.6-.6c-12.3-7.6-40.7-8.5-40.7 12.7 0 12.5 11.5 15.4 17.9 17.2 4.7 1.6 13.2 3 13.2 8.7 0 4-3.5 7.1-9.2 7.1-6.9 0-13.5-2.2-19-6.3-.5-.2-1.4-.7-1.6 .7l-2.4 7.5c-.5 .9 .2 1.2 .2 1.4 1.8 1.4 10.3 6.6 22.8 6.6 13.2 0 21.4-7.1 21.4-18.1l0 0zm32-42.6c-10.1 0-18.7 3.2-21.4 5.2-.1 .1-.2 .2-.3 .3s-.1 .2-.1 .4 0 .3 0 .4 .1 .3 .2 .4l2.6 7.1c.1 .2 .2 .5 .5 .6s.5 .2 .7 .1c.6 0 6.8-4 16.9-4 4 0 7.1 .7 9.2 2.4 3.6 2.8 3.1 8.3 3.1 10.6-4.8-.3-19.1-3.4-29.4 3.8-2.3 1.6-4.3 3.8-5.5 6.3s-1.9 5.4-1.8 8.2c0 5.9 1.5 10.4 6.6 14.4 12.2 8.2 36.3 2 38.1 1.4 1.6-.3 3.5-.7 3.5-1.9l0-33.9c0-4.6 .3-21.6-22.8-21.6l0 .1zm46.6-21c0-.2 0-.3-.1-.5s-.1-.3-.3-.4-.2-.2-.4-.3-.3-.1-.5-.1l-9.8 0c-.2 0-.3 0-.5 .1s-.3 .1-.4 .3-.2 .2-.3 .4-.1 .3-.1 .5l0 79c0 .2 0 .3 .1 .5s.1 .3 .3 .4 .2 .2 .4 .3 .3 .1 .5 .1l9.9 0c.2 0 .3 0 .5-.1s.3-.1 .4-.3 .2-.2 .3-.4 .1-.3 .1-.5l-.1-79zm55.7 28.9c-2.1-2.3-6.8-7.5-17.6-7.5-3.5 0-14.2 .2-20.7 8.9-6.4 7.6-6.6 18.1-6.6 21.4 0 3.1 .2 14.3 7.1 21.2 2.6 2.9 9.1 8.2 22.8 8.2 10.8 0 16.5-2.3 18.6-3.8 .5-.2 .7-.7 .2-1.9l-2.3-6.8c-.1-.3-.3-.5-.6-.6s-.5-.2-.8-.1c-2.6 .9-6.3 2.8-15.3 2.8-17.4 0-16.8-14.7-16.9-16.7l37.2 0c.3 0 .5-.1 .7-.3s.4-.4 .4-.7c-.3 0 2.1-14.7-6.1-24.2l0 0zm36.7 52.7c13.2 0 21.4-7.1 21.4-18.1 0-11.8-11.7-15.2-17.9-17.2-4.1-1.7-13.4-3.4-13.4-8.9 0-3.8 3.3-6.4 8.5-6.4 5.8 .1 11.5 1.6 16.7 4.2 0 0 1.2 .7 1.6-.5 .2-.7 2.4-6.6 2.6-7.3 .1-.3 .1-.6-.1-.8s-.4-.5-.6-.6c-7.9-4.9-16.7-4.9-20.2-4.9-12 0-20.5 7.3-20.5 17.6 0 12.5 11.5 15.4 17.9 17.2 6.1 2 13.2 3.3 13.2 8.7 0 4-3.5 7.1-9.2 7.1-6.9 0-13.5-2.2-19-6.4-.1-.1-.3-.2-.5-.2s-.4 0-.5 .1-.3 .2-.4 .3-.2 .3-.2 .5l-2.3 7.5c-.5 .9 .2 1.2 .2 1.4 1.7 1.4 10.3 6.6 22.8 6.6l0 0zM357.6 224c0-.7-.2-1.2-1.2-1.2l-11.8 0c0-.1 .9-8.9 4.5-12.5 4.2-4.2 11.8-1.6 12-1.6 1.2 .5 1.4 0 1.6-.5l2.8-7.8c.7-.9 0-1.2-.2-1.4-5.1-2-17.4-2.9-24.5 4.2-5.5 5.5-7 13.9-8 19.5l-8.5 0c-.3 0-.6 .2-.8 .4s-.3 .5-.4 .8l-1.4 7.8c0 .7 .2 1.2 1.2 1.2l8.2 0c-8.5 47.9-8.7 50.2-10.3 55.5-1.1 3.6-3.3 6.9-5.9 7.8-.1 0-3.9 1.7-9.6-.2 0 0-.9-.5-1.4 .7-.2 .7-2.6 6.8-2.8 7.5s0 1.4 .5 1.4c5.1 2 13 1.8 17.9 0 6.3-2.3 9.7-7.9 11.5-12.9 2.8-7.7 2.8-9.8 11.8-59.7l12.2 0c.3 0 .6-.2 .8-.4s.3-.5 .4-.8l1.4-7.8zM411 240c-.6-1.7-5.1-18.1-25.2-18.1-15.2 0-23 10-25.2 18.1-1 3-3.2 14 0 23.5 .1 .3 4.4 18.1 25.2 18.1 15 0 22.9-9.6 25.2-18.1 3.2-9.6 1-20.5 0-23.5zm45.4-16.7c-5-1.7-16.6-1.9-22.1 5.4l0-4.5c0-.2 0-.3-.1-.5s-.1-.3-.3-.4-.2-.2-.4-.3-.3-.1-.5-.1l-9.4 0c-.2 0-.3 0-.5 .1s-.3 .1-.4 .3-.2 .2-.3 .4-.1 .3-.1 .5l0 55.3c0 .2 0 .3 .1 .5s.1 .3 .3 .4 .2 .2 .4 .3 .3 .1 .5 .1l9.6 0c.2 0 .3 0 .5-.1s.3-.1 .4-.3 .2-.2 .3-.4 .1-.3 .1-.5l0-27.8c0-2.9 .1-11.4 4.5-15.1 4.9-4.9 12-3.4 13.4-3.1 .3 0 .6-.1 .8-.3s.4-.4 .6-.7c1.2-2.6 2.2-5.3 3.1-8 .1-.3 .1-.5 0-.8s-.3-.5-.5-.6l0 0zm46.8 54.1l-2.1-7.3c-.5-1.2-1.4-.7-1.4-.7-4.2 1.8-10.1 1.9-11.3 1.9-4.6 0-17.2-1.1-17.2-19.8 0-6.2 1.8-19.8 16.5-19.8 3.9-.1 7.8 .5 11.5 1.6 0 0 .9 .5 1.2-.7 .9-2.6 1.6-4.5 2.6-7.5 .2-.9-.5-1.2-.7-1.2-11.6-3.9-22.3-2.5-27.8 0-1.6 .7-16.2 6.5-16.2 27.5 0 2.9-.6 30.1 28.9 30.1 5.3 0 10.6-1 15.5-2.8 .2-.2 .4-.4 .5-.6s.1-.5 0-.8l0 0zm53.9-39.5c-.8-3-5.4-16.2-22.3-16.2-16 0-23.5 10.1-25.6 18.6-1.2 3.8-1.7 7.8-1.7 11.8 0 25.9 18.8 29.4 29.9 29.4 10.8 0 16.5-2.3 18.6-3.8 .5-.2 .7-.7 .2-1.9l-2.4-6.8c-.1-.3-.3-.5-.6-.6s-.6-.2-.8-.1c-2.6 .9-6.3 2.8-15.3 2.8-17.4 0-16.9-14.7-16.9-16.7l37.2 0c.3 0 .5-.1 .7-.3s.4-.4 .4-.7c-.2 0 .9-7.1-1.4-15.5l0 0zm-23.3-6.4c-10.3 0-13 9-13.6 14.1l26.4 0c-.9-11.9-7.6-14.1-12.7-14.1l0 0z","vb":"0 0 640 512"}};
+function renderWheel(){
+  const svg = document.getElementById("wheel"); if(!svg) return;
+  const CX=624, CY=528, R_OUT=462, R_IN=258, TOPN=20, RIMK=0.62, SMALL=1.9;
+  const held = STOCKS.filter(s=>POS[s.t].shares!=null && s.price!=null && POS[s.t].cost>0)
+    .map(s=>{ const sh=POS[s.t].shares, c=POS[s.t].cost, m=sh*s.price;
+              return {t:s.t, name:s.name, g:s.g, sh:sh, cost:c, px:s.price, mv:m, pl:m-c, plp:(m/c-1)*100}; })
+    .sort((a,b)=>b.mv-a.mv);
+  if(!held.length){ svg.innerHTML=""; return; }
+  const TMV=held.reduce((a,r)=>a+r.mv,0), TCOST=held.reduce((a,r)=>a+r.cost,0);
+  const TPL=TMV-TCOST, TPLP=(TMV/TCOST-1)*100;
+  const rest = held.slice(TOPN);
+  const W = held.slice(0,TOPN).map(r=>Object.assign({},r));
+  if(rest.length){
+    const rm=rest.reduce((a,r)=>a+r.mv,0), rc=rest.reduce((a,r)=>a+r.cost,0);
+    W.push({t:"OTHER "+rest.length, other:true, n:rest.length, mv:rm, cost:rc, pl:rm-rc, plp:(rm/rc-1)*100});
+  }
+  const STOPS=["#27A6A0","#2E86DE","#4F6FE0","#6B5BD6","#8E57C9","#B84A9E","#D8543F","#E08B33"];
+  const hx=h=>[1,3,5].map(i=>parseInt(h.substr(i,2),16));
+  const ramp=u=>{ u=Math.min(Math.max(u,0),0.999999);
+    const s=u*(STOPS.length-1), i=Math.floor(s), f=s-i, a=hx(STOPS[i]), b=hx(STOPS[i+1]);
+    return "#"+[0,1,2].map(k=>Math.round(a[k]+(b[k]-a[k])*f).toString(16).padStart(2,"0")).join("").toUpperCase(); };
+  const GOLD="#e9b949", RIMRED="#e4595e", SLATE="#3e5070";
+  const nCol=Math.max(W.length-2,1);
+  W.forEach((w,i)=>{ w.fill = w.other ? SLATE : ramp(i/nCol); });
+
+  const pt=(r,deg)=>{ const a=(deg-90)*Math.PI/180; return [CX+r*Math.cos(a), CY+r*Math.sin(a)]; };
+  const f2=v=>v.toFixed(2);
+  const ring=(r0,r1,a0,a1)=>{ const lg=(a1-a0)>180?1:0;
+    const p0=pt(r1,a0), p1=pt(r1,a1), p2=pt(r0,a1), p3=pt(r0,a0);
+    return `M${f2(p0[0])} ${f2(p0[1])}A${r1} ${r1} 0 ${lg} 1 ${f2(p1[0])} ${f2(p1[1])}`
+         + `L${f2(p2[0])} ${f2(p2[1])}A${r0} ${r0} 0 ${lg} 0 ${f2(p3[0])} ${f2(p3[1])}Z`; };
+  const lbl=(x,y,rot,anchor,tick,p,sz,kind)=>
+    `<g transform="translate(${f2(x)},${f2(y)}) rotate(${f2(rot)})"><text class="wlab ${kind}" x="0" y="0"`
+    + ` text-anchor="${anchor}" dominant-baseline="middle" font-size="${sz}">${tick}`
+    + `<tspan class="p" font-size="${sz-3}"> ${p.toFixed(2)}%</tspan></text></g>`;
+  const badge=(x,y,r,tick)=>{
+    const L=LOGOS[tick]; let inner;
+    if(L){ const vb=L.vb.split(" ").map(Number), span=Math.max(vb[2],vb[3]), s=(2*r*0.58)/span;
+      inner=`<g transform="translate(${f2(x-s*vb[2]/2)},${f2(y-s*vb[3]/2)}) scale(${s.toFixed(5)})"><path d="${L.p}" fill="#f2f6fc"/></g>`; }
+    else { const k=tick.length, fs=r*(k<=2?0.72:(k===3?0.60:0.47));
+      inner=`<text x="${f2(x)}" y="${f2(y)}" text-anchor="middle" dominant-baseline="central" font-size="${fs.toFixed(1)}"`
+          + ` font-weight="700" fill="#f2f6fc" letter-spacing=".3">${tick}</text>`; }
+    return `<g pointer-events="none"><circle cx="${f2(x)}" cy="${f2(y)}" r="${f2(r)}" fill="#0e1b2c"/>`
+         + `<circle cx="${f2(x)}" cy="${f2(y)}" r="${f2(r)}" fill="none" stroke="${GOLD}" stroke-width="1.5" opacity=".85"/>${inner}</g>`; };
+
+  let g="", badges="", ang=0;
+  W.forEach(w=>{
+    const sweep=w.mv/TMV*360, a0=ang, a1=ang+sweep; ang=a1;
+    const rim = R_OUT-(R_OUT-R_IN)*Math.min(Math.abs(w.pl)/Math.max(w.cost,w.mv)*RIMK, 0.92);
+    const dim = (TFOCUS && !w.other && w.t!==TFOCUS) ? ' opacity=".22"' : "";
+    g += `<g class="wseg" data-t="${w.other?"":w.t}"${dim}>`
+       + `<path d="${ring(R_IN,rim,a0,a1)}" fill="${w.fill}"/>`
+       + `<path d="${ring(rim,R_OUT,a0,a1)}" fill="${w.pl>=0?GOLD:RIMRED}" opacity=".96"/>`
+       + `<path d="${ring(R_IN,R_OUT,a0,a1)}" fill="none" stroke="var(--surface-1)" stroke-width="2.4"/></g>`;
+    const mid=(a0+a1)/2, p=w.mv/TMV*100, flip=(mid%360)>180&&(mid%360)<360;
+    if(p<SMALL){
+      const t0=pt(R_OUT+3,mid), t1=pt(R_OUT+12,mid);
+      g += `<line x1="${f2(t0[0])}" y1="${f2(t0[1])}" x2="${f2(t1[0])}" y2="${f2(t1[1])}" stroke="${GOLD}" stroke-width="1.3" opacity=".65"/>`;
+      const q=pt(R_OUT+52,mid);
+      g += lbl(q[0],q[1], flip?mid+90:mid-90, flip?"end":"start", w.t, p, 19, "out");
+    } else {
+      let sz = p>=5?25:(p>=3?22:20); if(w.other) sz=21;
+      /* keep the label inside the ring whatever the ticker length happens to be */
+      const avail=R_OUT-10-(R_IN+14), need=(w.t.length+7)*sz*0.55;
+      if(need>avail) sz=Math.max(13, Math.floor(sz*avail/need));
+      const q = pt(R_IN+14,mid);
+      g += lbl(q[0],q[1], flip?mid+90:mid-90, flip?"end":"start", w.t, p, sz, "in");
+    }
+    if(!w.other){
+      const br = p>=SMALL?25:16, b=pt(R_OUT+(p>=SMALL?32:26),mid);
+      badges += badge(b[0],b[1],br,w.t);
+    }
+  });
+
+  const cls=v=>v>=0?"pos":"neg", sgn=v=>(v>=0?"+":"−");
+  const m0=v=>"$"+Math.round(Math.abs(v)).toLocaleString("en-US");
+  g += `<circle cx="${CX}" cy="${CY}" r="${R_IN-6}" fill="var(--surface-1)"/>`
+     + `<circle cx="${CX}" cy="${CY}" r="${R_IN-6}" fill="none" stroke="var(--ring)" stroke-width="1.5"/>`
+     + `<text class="wc-k"  x="${CX}" y="${CY-96}" text-anchor="middle">MARKET VALUE</text>`
+     + `<text class="wc-v"  x="${CX}" y="${CY-46}" text-anchor="middle">${m0(TMV)}</text>`
+     + `<text class="wc-s"  x="${CX}" y="${CY+10}" text-anchor="middle">COST ${m0(TCOST)}</text>`
+     + `<text class="wc-g ${cls(TPL)}" x="${CX}" y="${CY+62}" text-anchor="middle">${sgn(TPL)}${m0(TPL)}</text>`
+     + `<text class="wc-gp ${cls(TPL)}" x="${CX}" y="${CY+100}" text-anchor="middle">${sgn(TPLP)}${Math.abs(TPLP).toFixed(2)}%</text>`
+     + `<text class="wc-n"  x="${CX}" y="${CY+152}" text-anchor="middle">${held.length} POSITIONS</text>`;
+  svg.innerHTML = g + badges;
+  /* Fit the viewBox to what was actually drawn. Label lengths change with the
+     data, so a fixed box would drift off-centre after a refresh. If the panel
+     is on a hidden tab getBBox() returns zeros — keep the fallback box then. */
+  try{ const bb=svg.getBBox();
+    if(bb.width>10 && bb.height>10)
+      svg.setAttribute("viewBox", `${(bb.x-14).toFixed(1)} ${(bb.y-14).toFixed(1)} ${(bb.width+28).toFixed(1)} ${(bb.height+28).toFixed(1)}`);
+  }catch(e){}
+
+  const lg=document.getElementById("wlegend");
+  if(lg) lg.innerHTML =
+     `<span><i style="background:linear-gradient(90deg,#27a6a0,#6b5bd6,#e08b33)"></i>wedge width = share of market value</span>`
+   + `<span><i style="background:${GOLD}"></i>gold band = profit &middot; deeper band, bigger gain</span>`
+   + `<span><i style="background:${RIMRED}"></i>red band = loss &middot; deeper band, bigger loss</span>`
+   + (rest.length?`<span><i style="background:${SLATE}"></i>OTHER ${rest.length} = the remaining ${rest.length} smaller holdings</span>`:"");
+
+  const tip=document.getElementById("wheeltip"), wrap=document.getElementById("wheelwrap");
+  svg.querySelectorAll(".wseg").forEach(seg=>{
+    const t=seg.dataset.t; if(!t) return;
+    const w=W.find(q=>q.t===t); const s=STOCKS.find(q=>q.t===t);
+    seg.addEventListener("mousemove",e=>{
+      const wr=wrap.getBoundingClientRect();
+      tip.style.display="block";
+      tip.style.left=Math.min(e.clientX-wr.left+14, wr.width-200)+"px";
+      tip.style.top=(e.clientY-wr.top+10)+"px";
+      tip.innerHTML=`<b>${t}</b> · ${w.name}<br><span style="color:var(--s${slot(s)})">${GROUPS[w.g]}</span><br>`
+        + `${fmt(w.sh,w.sh%1?2:0)} sh · last ${fmt(w.px)}<br>Cost <b>${money(w.cost)}</b><br>`
+        + `Value <b>${money(w.mv)}</b> · ${(w.mv/TMV*100).toFixed(2)}% of book<br>`
+        + `G/L <b class="${cls(w.pl)}">${sgn(w.pl)}${m0(w.pl)}</b> · ${pct(w.plp)}`;
+    });
+    seg.addEventListener("mouseleave",()=>{ tip.style.display="none"; });
+    seg.addEventListener("click",()=>{ tip.style.display="none"; setFocus(t); });
+  });
+}
+
 /* ============ metric matrix (metrics = rows, grouped columns) ============ */
 const ROWS = [
  {g:"Position"},
@@ -685,7 +837,7 @@ function renderCards(){
   },{rootMargin:"200px"});
   document.querySelectorAll(".mini").forEach(el=>observer.observe(el));
 }
-function setPos(t,k,v){ POS[t][k] = v===""?null:parseFloat(v); renderTiles(); renderBubble(); renderMatrix(); renderCards(); }
+function setPos(t,k,v){ POS[t][k] = v===""?null:parseFloat(v); renderTiles(); renderWheel(); renderBubble(); renderMatrix(); renderCards(); }
 
 /* ============ TradingView widgets ============ */
 function mountMini(el){
@@ -985,7 +1137,7 @@ function setFocus(t){
   if(TFOCUS){ FILTER="all"; GFILTER="all"; }
   closeSug();
   if(!TFOCUS){ const i=document.getElementById("tsearch"); if(i) i.value=""; }
-  renderChips(); renderGroupChips();
+  renderChips(); renderGroupChips(); renderWheel();
   renderLadder(); renderBubble(); renderMatrix(); renderCards();
   renderGroupSummary(); renderStockSummary(); renderTrades(); renderMonthly();
   renderFocus();
@@ -1106,7 +1258,7 @@ function renderAll(){
       + (unk?` · <b class="warnv">${unk}</b> unconfirmed`:"");
   })();
   document.getElementById("subline").textContent = `${STOCKS.length} positions · AI · Semis · Infrastructure — Salee's book`;
-  renderChips(); renderTiles(); renderGroupSummary(); renderLadder(); renderBubble(); renderMatrix(); renderCards(); renderTrades();
+  renderChips(); renderTiles(); renderWheel(); renderGroupSummary(); renderLadder(); renderBubble(); renderMatrix(); renderCards(); renderTrades();
   renderTotals(); renderGroupChips(); renderStockSummary(); renderPerformance(); renderMonthly(); renderVision(); renderFocus();
   document.getElementById("foot").innerHTML =
    `Definitions — <b>Conviction</b> = (avg analyst target − last close) ÷ last close. <b>Devastation</b> = (last close − 52-wk high) ÷ 52-wk high; “—” within 0.5% of the high. <b>Growth YTD</b> = vs Jan 2, 2026 open. <b>Rule of 40 (FCF)</b> = revenue growth % + FCF margin % (TTM) — the conservative primary. <b>Rule of 40 (NI)</b> = revenue growth % + net profit margin %; a wide gap between the two = accounting profits not converting to cash (see ORCL), and NI is distorted by non-operating gains for IONQ/ONDS. ROI shown as ROIC. “—” = not meaningful (negative earnings or not published). CRWD figures reflect its July 2026 4-for-1 split.<br>
