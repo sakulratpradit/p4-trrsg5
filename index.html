@@ -291,6 +291,7 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
 <div class="navbar">
   <div class="tabbar" id="tabbar">
     <button class="tab on" data-p="main">Overview</button>
+    <button class="tab" data-p="wheel">Wheel</button>
     <button class="tab" data-p="groups">Portfolio</button>
     <button class="tab" data-p="trading">Trading</button>
     <button class="tab" data-p="vision">Vision</button>
@@ -316,9 +317,6 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
 
 <div class="tiles" id="tiles"></div>
 
-<h2>Portfolio wheel <span class="n">the whole book at a glance &mdash; wedge width = share of market value &middot; the coloured band on the outer edge = profit (gold) or loss (red), and the deeper the band the bigger the move &middot; tap any wedge to pull that stock up everywhere</span></h2>
-<div class="wheel-card" id="wheelwrap"><svg id="wheel" viewBox="0 0 1248 1074" role="img" aria-label="Donut chart of the portfolio: wedge width is share of market value, the outer band shows profit or loss"></svg><div class="wlegend" id="wlegend"></div><div class="bub-tip" id="wheeltip"></div></div>
-
 <div class="chipbar" id="chipbar"></div>
 <div class="note" style="margin-top:0">Salee's grouping (notebook Jul 21 + corrections). <b>Neocloud Watch</b>: IREN <b style="color:var(--bad)">(45 sh held, tranche-2 sell plan still active)</b> + NBIS (exited Jul 21) + CRWV (exited earlier) — watched for an industry turnaround. Click a group to focus every panel.</div>
 
@@ -340,6 +338,11 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
 <h2>Position cards <span class="n">charts load as you scroll · edits recompute instantly (in-memory until I bake them in)</span></h2>
 <div class="cards" id="cards"></div>
 </div><!-- /page-main -->
+
+<div class="page" id="page-wheel">
+<h2>Portfolio wheel <span class="n">the whole book on one picture &mdash; each wedge is one holding and the wider the wedge the bigger that position &middot; the coloured band on the outer edge is profit (gold) or loss (red), and the deeper the band the bigger the move &middot; hover a wedge for its detail, or tap it to jump to that stock on the Overview tab</span></h2>
+<div class="wheel-card" id="wheelwrap"><svg id="wheel" viewBox="0 0 1248 1074" role="img" aria-label="Donut chart of the portfolio: wedge width is share of market value, the outer band shows profit or loss"></svg><div class="wlegend" id="wlegend"></div><div class="bub-tip" id="wheeltip"></div></div>
+</div>
 
 <div class="page" id="page-groups">
 <h2>Totals &amp; returns <span class="n">whole book, since inception · Jul 15 2025</span></h2>
@@ -720,7 +723,7 @@ function renderWheel(){
         + `G/L <b class="${cls(w.pl)}">${sgn(w.pl)}${m0(w.pl)}</b> · ${pct(w.plp)}`;
     });
     seg.addEventListener("mouseleave",()=>{ tip.style.display="none"; });
-    seg.addEventListener("click",()=>{ tip.style.display="none"; setFocus(t); });
+    seg.addEventListener("click",()=>{ tip.style.display="none"; setFocus(t); showTab("main"); });
   });
 }
 
@@ -1230,6 +1233,7 @@ function commitSearch(){
 })();
 
 /* ============ tab switching ============ */
+function showTab(p){ const b=document.querySelector('.tab[data-p="'+p+'"]'); if(b) b.click(); }
 document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{
   document.querySelectorAll(".tab").forEach(x=>x.classList.remove("on"));
   document.querySelectorAll(".page").forEach(x=>x.classList.remove("on"));
@@ -1237,6 +1241,9 @@ document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{
   document.getElementById("page-"+b.dataset.p).classList.add("on");
   window.scrollTo(0,0);
   if(b.dataset.p==="main") mountTape();
+  /* the wheel fits its own viewBox from getBBox(), which reports zeros while the
+     tab is hidden — so redraw it the moment the tab actually becomes visible */
+  if(b.dataset.p==="wheel") renderWheel();
 });
 
 /* ============ theme + boot ============ */
