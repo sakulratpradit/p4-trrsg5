@@ -25,7 +25,13 @@ ASOF = ('Aug 4, 2026 · close — daily refresh: 109 of 112 names at the verifie
  "162.24 per the quote page and WallStreetZen against 163.68 on the history table; POWL's return on invested capital "
  "is stored at the conservative 38.38 because the statistics page's 122.60 is an outlier contradicted by both the "
  'ratios page and GuruFocus; RBRK has negative shareholder equity so ROE, EV/EBITDA and debt/equity are blank, and '
- "POWL's debt/equity is blank at source (it is essentially debt-free).")
+ "POWL's debt/equity is blank at source (it is essentially debt-free). Cash provenance resolved Aug 5: the USD "
+ '12,969.58 increase in the POEMS balance (from an expected 5,958.42 after the Aug 4 buys to the reported 18,928.00) '
+ 'was a deposit by Salee of approximately THB 500,000 at a stated rate of about 33.38, i.e. roughly USD 14,979. Only '
+ 'USD 12,969.58 is visible in the USD balance, leaving USD 2,009.45 (13.42% of the transfer) unaccounted for — far too '
+ 'large to be wire or FX fees, so either part of the transfer was still unsettled at the Aug 4 snapshot, the dealt '
+ 'rate differed materially from 33.38, or a portion landed in a non-USD sub-account. Flagged to Salee to confirm with '
+ 'POEMS.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
