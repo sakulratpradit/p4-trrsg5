@@ -69,7 +69,40 @@ ASOF = ('Aug 5, 2026 · close — daily refresh: 117 of 121 names at the verifie
  '| Aug 6 budgets: ZETA, CDNS and CRM given a 5,000 budget each (all three were previously unbudgeted); ORCL raised '
  '5,000 -> 10,000. Headroom at current cost basis: ZETA 2,995.67, CDNS 2,992.72, CRM 1,258.65, ORCL 1,686.38. NOTE '
  'ORCL had already breached its old 5,000 budget at 8,313.62 of cost - the raise regularises that overrun rather than '
- 'authorising fresh buying room.')
+ 'authorising fresh buying room. | Aug 6 addition: AXTI (AXT Inc, NASDAQ) added to Photonic & Optic Fiber at the Aug '
+ '5, 2026 close 68.61 (+5.12%), header stamped "At close: Aug 5, 2026, 4:00 PM EDT" and triple-confirmed across the '
+ 'stockanalysis quote page, its history row and its statistics page (Aug 5 OHLC 63.52/76.96/62.60/68.61 on 13.51M '
+ 'shares; Aug 4 close 65.27). Watchlist only - no position, no budget. AXT makes compound-semiconductor SUBSTRATES '
+ '(indium phosphide, gallium arsenide, germanium), the raw wafer material underneath optical transceivers, which is '
+ 'why it sits beside LITE, COHR, AAOI and POET. NOT FOUND and left blank: jan2 (the stockanalysis history table is '
+ 'client-paginated and returns only May 26 - Aug 5 rows regardless of URL parameters, per the FLNC precedent), epsG, '
+ "peg, and next earnings date (AXT's IR events page lists no dated upcoming event and stockanalysis still shows the "
+ 'past Jul 30 date). pfcf blanked - free cash flow is NEGATIVE (-27.98M TTM; operating cash flow -21.12M, capex '
+ '6.86M). CONFLICT RESOLVED - TTM EPS: stockanalysis /statistics/ says 0.07 while stockanalysis /financials/ and '
+ 'MarketBeat both say 0.02; 0.07 was taken because it is the only value consistent with TTM net income 3.88M over '
+ '~55-63.8M shares AND with the stored trailing P/E (68.61 / 957.34 = 0.0717). CONFLICT RESOLVED - market cap: '
+ 'stockanalysis 4.38B vs MarketBeat 4.98B vs GuruFocus 5.03B; 4.38B taken because 63.82M shares x 68.61 = 4.379B, '
+ 'whereas the two higher figures are computed off an Aug 6 INTRADAY price (76.13 / 76.89). ath 143.16 is the May 26, '
+ '2026 INTRADAY all-time high (closing ATH 140.83 on May 22, 2026); pre-2000 dot-com-era history could NOT be verified '
+ 'from any permitted source, so a higher 1998-2001 print cannot be ruled out. lo52 1.96 per stockanalysis, but '
+ 'MarketBeat says 2.03; 52-week change is +3,151.66%, and the stock currently trades ~52% BELOW its May high. Analyst '
+ 'consensus is genuinely SPLIT and thin (5 analysts): stockanalysis + marketscreener give 55 / 91.60 / 125 with a Buy '
+ 'rating (3 Strong Buy, 2 Hold, updated Jul 31), while MarketBeat gives 28 / 77 / 125 with a Hold rating - the '
+ 'MarketBeat low carries a STALE B. Riley 52 target that marketscreener says was raised to 55 on Jul 31. Recent '
+ 'actions: UBS 90 (7/31), Needham UPGRADE Hold->Buy 90 (7/31), Northland 125 (6/3). 2026 estimates: revenue 217.98M '
+ '(+146.79%), EPS 0.87. Q2 2026 (reported Jul 30) was a large BEAT: revenue 47.6M, GAAP EPS 0.17, non-GAAP 0.19 vs '
+ '0.07 consensus, GAAP gross margin 44.9% vs the 32.18% TTM figure stored here - the business inflected hard mid-year, '
+ 'so TTM fundamentals understate current run-rate. No Q3 guidance was given. Two material July events: (1) Jul 29 - '
+ 'long-term indium phosphide supply agreement with LUMENTUM (LITE, already in this group) through Dec 31 2031, with an '
+ 'initial 43.5M deposit plus a second 43.5M in 2028 (87M total) applied as shipment credits against reserved minimum '
+ 'annual capacity; (2) WARNING - Jul 8 8-K: subsidiary Beijing Tongmei WITHDREW its Shanghai STAR Market IPO and will '
+ 'pursue a Hong Kong listing instead, which TRIGGERS redemption rights on RMB 324,404,508 (~US$49M) held by eleven PE '
+ 'funds; the company states it has sufficient funds. Other risks on the record: short interest 17.27% of float, ROIC '
+ '0.53%, ROE 1.01%, beta 1.97, FY2025 China revenue 55.08M of 88.33M total, and export permits for indium phosphide '
+ 'substrates remain a stated risk factor with no status update. FY2025 for context: revenue 88.33M, net income '
+ '-21.26M, EPS -0.49; FY2025 vs FY2024 revenue was -11.11% even though TTM revG is +45.80%. CHART-SCALE WARNING: pe '
+ '957.34 and EV/EBITDA 1,042.39 are real sourced figures but will distort the P/E and EV/EBITDA chart scales the same '
+ "way LWLG's P/S 5,040x already distorts the P/S chart.")
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -1267,6 +1300,37 @@ STOCKS = [{'t': 'GOOGL',
   'budget': None,
   'lo52': 1.99,
   'hi52': 18.71,
+  'pxd': '2026-08-05'},
+ {'t': 'AXTI',
+  'name': 'AXT Inc',
+  'ex': 'NASDAQ',
+  'g': 4,
+  'price': 68.61,
+  'jan2': None,
+  'mcapB': 4.38,
+  'ath': 143.16,
+  'fvMin': 55,
+  'fvAvg': 91.6,
+  'fvMax': 125,
+  'an': 5,
+  'peg': None,
+  'ps': 34.88,
+  'fpe': 43.26,
+  'pe': 957.34,
+  'gm': 32.18,
+  'pm': 3.23,
+  'revB': 0.12551,
+  'revG': 45.8,
+  'eps': 0.07,
+  'epsG': None,
+  'roi': 0.53,
+  'roe': 1.01,
+  'fcfB': -0.02798,
+  'capexB': 0.00686,
+  'r40': 23.51,
+  'budget': None,
+  'lo52': 1.96,
+  'hi52': 143.16,
   'pxd': '2026-08-05'},
  {'t': 'VST',
   'name': 'Vistra',
@@ -4090,7 +4154,8 @@ POS = {'GOOGL': {'budget': 60000, 'cost': 55324.68, 'shares': 205},
  'VEEV': {'budget': None, 'cost': None, 'shares': None},
  'CORZ': {'budget': None, 'cost': None, 'shares': None},
  'FLNC': {'budget': None, 'cost': None, 'shares': None},
- 'LWLG': {'budget': None, 'cost': None, 'shares': None}}
+ 'LWLG': {'budget': None, 'cost': None, 'shares': None},
+ 'AXTI': {'budget': None, 'cost': None, 'shares': None}}
 
 TRADES = [{'date': 'Jul 21, 2026',
   'action': 'BUY',
@@ -4923,7 +4988,8 @@ M3 = {'GOOGL': {'pfcf': 72.54, 'ev': 21.6, 'de': 0.18},
  'VEEV': {'pfcf': 21.15, 'ev': 27.6, 'de': 0.01},
  'CORZ': {'pfcf': None, 'ev': None, 'de': None},
  'FLNC': {'pfcf': None, 'ev': None, 'de': 0.91},
- 'LWLG': {'pfcf': None, 'ev': None, 'de': 0.03}}
+ 'LWLG': {'pfcf': None, 'ev': None, 'de': 0.03},
+ 'AXTI': {'pfcf': None, 'ev': 1042.39, 'de': 0.09}}
 
 METRICS3 = M3  # alias: per-ticker pfcf / ev (EV/EBITDA) / de (Debt/Equity)
 
