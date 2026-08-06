@@ -25,7 +25,15 @@ ASOF = ('Aug 5, 2026 · close — daily refresh: 117 of 121 names at the verifie
  "tomorrow's refresh will capture them. Market caps re-scaled with price. Stale/broken sources this run: Google "
  'Finance per-ticker caches (both forms) frequently a day old or intraday; fool.com quote pages mostly stale; '
  'marketscreener stale on several names; ycharts intermittently empty; stockanalysis history tables missing Aug 5 rows '
- 'on ~10 names at fetch time.')
+ 'on ~10 names at fetch time. | Aug 6 additions: VEEV (Veeva Systems) added to SaaS at the Aug 5 close 213.51 — ROIC '
+ "stored as the conservative 31.44 (GuruFocus, WACC 7.08%) rather than stockanalysis's 176.94, which is an artifact of "
+ 'a small invested-capital base; ath 341.00 and epsG 20 are single-sourced. ADBE was already in SaaS, so no action was '
+ 'needed there. CORZ (Core Scientific) added to Fintech / Digital Platform at 21.77 per the request, though Neocloud '
+ 'Watch is arguably the better home. CORZ carries NEGATIVE shareholder equity (-$2.42B), so roe / EV-EBITDA / '
+ 'debt-equity are blanked following the RBRK precedent; revG, r40, pm and epsG are also blanked because sources '
+ 'conflict irreconcilably post-Q2 (+26% / -41.72% / -13.67%, the latter two demonstrably pre-Q2). gm 28.35 taken where '
+ "two sources agree against stockanalysis's 32.14. Its CoreWeave merger was terminated. Reminder: these two are "
+ 'watchlist-only — no position, no budget.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -2526,6 +2534,37 @@ STOCKS = [{'t': 'GOOGL',
   'lo52': 359.0,
   'hi52': 745.61,
   'pxd': '2026-08-05'},
+ {'t': 'VEEV',
+  'name': 'Veeva Systems',
+  'ex': 'NYSE',
+  'g': 10,
+  'price': 213.51,
+  'jan2': None,
+  'mcapB': 34.68,
+  'ath': 341.0,
+  'fvMin': 165,
+  'fvAvg': 244.14,
+  'fvMax': 350,
+  'an': 30,
+  'peg': 1.08,
+  'ps': 10.45,
+  'fpe': 23.11,
+  'pe': 37.86,
+  'gm': 75.02,
+  'pm': 28.37,
+  'revB': 3.32,
+  'revG': 16.25,
+  'eps': 5.64,
+  'epsG': 20,
+  'roi': 31.44,
+  'roe': 13.93,
+  'fcfB': 1.64,
+  'capexB': 0.02497,
+  'r40': 65.65,
+  'budget': None,
+  'lo52': 148.05,
+  'hi52': 310.5,
+  'pxd': '2026-08-05'},
  {'t': 'SBUX',
   'name': 'Starbucks',
   'ex': 'NASDAQ',
@@ -3425,6 +3464,37 @@ STOCKS = [{'t': 'GOOGL',
   'lo52': 36.13,
   'hi52': 99.9,
   'pxd': '2026-08-05'},
+ {'t': 'CORZ',
+  'name': 'Core Scientific',
+  'ex': 'NASDAQ',
+  'g': 14,
+  'price': 21.77,
+  'jan2': None,
+  'mcapB': 7.0,
+  'ath': 30.46,
+  'fvMin': 25,
+  'fvAvg': 33.38,
+  'fvMax': 42,
+  'an': 14,
+  'peg': None,
+  'ps': 16.36,
+  'fpe': 711.44,
+  'pe': None,
+  'gm': 28.35,
+  'pm': None,
+  'revB': 0.44031,
+  'revG': None,
+  'eps': -5.07,
+  'epsG': None,
+  'roi': -9.62,
+  'roe': None,
+  'fcfB': -0.95775,
+  'capexB': -1.48,
+  'r40': None,
+  'budget': None,
+  'lo52': 13.14,
+  'hi52': 30.46,
+  'pxd': '2026-08-05'},
  {'t': 'CRWD',
   'name': 'CrowdStrike',
   'ex': 'NASDAQ',
@@ -3918,7 +3988,9 @@ POS = {'GOOGL': {'budget': 60000, 'cost': 55324.68, 'shares': 205},
  'PWR': {'budget': None, 'cost': None, 'shares': None},
  'POWL': {'budget': None, 'cost': None, 'shares': None},
  'NVT': {'budget': None, 'cost': None, 'shares': None},
- 'HUBB': {'budget': None, 'cost': None, 'shares': None}}
+ 'HUBB': {'budget': None, 'cost': None, 'shares': None},
+ 'VEEV': {'budget': None, 'cost': None, 'shares': None},
+ 'CORZ': {'budget': None, 'cost': None, 'shares': None}}
 
 TRADES = [{'date': 'Jul 21, 2026',
   'action': 'BUY',
@@ -4720,7 +4792,9 @@ M3 = {'GOOGL': {'pfcf': 72.54, 'ev': 21.6, 'de': 0.18},
  'PWR': {'pfcf': 45.54, 'ev': 35.97, 'de': 0.68},
  'POWL': {'pfcf': 40.0, 'ev': 29.92, 'de': None},
  'NVT': {'pfcf': 45.74, 'ev': 26.27, 'de': 0.41},
- 'HUBB': {'pfcf': 29.44, 'ev': 21.23, 'de': 1.42}}
+ 'HUBB': {'pfcf': 29.44, 'ev': 21.23, 'de': 1.42},
+ 'VEEV': {'pfcf': 21.15, 'ev': 27.6, 'de': 0.01},
+ 'CORZ': {'pfcf': None, 'ev': None, 'de': None}}
 
 METRICS3 = M3  # alias: per-ticker pfcf / ev (EV/EBITDA) / de (Debt/Equity)
 
