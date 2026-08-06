@@ -51,7 +51,12 @@ ASOF = ('Aug 5, 2026 · close — daily refresh: 117 of 121 names at the verifie
  '2026. DDOG price 283.14 -> 283.17 (three sources). NOTE: DDOG reported Q2 on the morning of Aug 6 - beat on revenue '
  '(1.12B vs ~1.08B) and EPS (0.65 vs ~0.58) and RAISED FY26 guidance to 4.45-4.47B / 2.50-2.54 from 4.30-4.34B / '
  '2.36-2.44, yet traded down ~22% pre-market to ~221. Its stored fundamentals here are all PRE-Q2 and its 47 analyst '
- 'targets are all pre-release.')
+ 'targets are all pre-release. | Aug 6 correction: TSM position updated for an Aug 5 US-session fill not captured in '
+ 'the Aug 5 morning POEMS positions snapshot - BUY 4.5 sh @ 416.273 limit-418 day order (order O9636080581412011), '
+ 'cost basis $1,881.79 incl $8.56 commission; TSM 103 -> 107.5 sh, cost $35,969.08 -> $37,850.87. CASH stepped '
+ '18,928.00 -> 17,046.21 and re-stamped Aug 5 - this is DERIVED arithmetic from the confirmed fill, not a fresh POEMS '
+ 'balance screenshot; the Aug 5 "Today\'s Orders / All Orders" screen showed this as the only order that session. '
+ 'Prices elsewhere still Aug 5 close.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -3954,7 +3959,7 @@ POS = {'GOOGL': {'budget': 60000, 'cost': 55324.68, 'shares': 205},
  'META': {'budget': 50000, 'cost': 39239.51, 'shares': 59.5},
  'AAPL': {'budget': 25000, 'cost': 11437.61, 'shares': 46},
  'NVDA': {'budget': 80000, 'cost': 75357.35, 'shares': 402},
- 'TSM': {'budget': 50000, 'cost': 35969.08, 'shares': 103},
+ 'TSM': {'budget': 50000, 'cost': 37850.87, 'shares': 107.5},
  'AVGO': {'budget': 40000, 'cost': 28571.53, 'shares': 84},
  'AMD': {'budget': 25000, 'cost': 13789.22, 'shares': 55},
  'MRVL': {'budget': 25000, 'cost': 7872.66, 'shares': 48.5},
@@ -4209,11 +4214,20 @@ TRADES = [{'date': 'Jul 21, 2026',
   'price': 133.0,
   'amount': 1338.56,
   'est': False,
-  'note': '10 sh @ $133.00 + $8.56 fee. New position, 10 sh, avg cost $133.856.'}]
+  'note': '10 sh @ $133.00 + $8.56 fee. New position, 10 sh, avg cost $133.856.'},
+ {'date': 'Aug 5, 2026',
+  'action': 'BUY',
+  't': 'TSM',
+  'shares': 4.5,
+  'price': 416.273,
+  'amount': 1873.23,
+  'est': False,
+  'note': 'Limit 418.00 day order filled at 416.273 (order O9636080581412011, 10:36 PM BKK / 11:36 AM ET). Cost basis '
+          'incl $8.56 commission = $1881.79. Avg TSM cost now $352.10 over 107.5 sh.'}]
 
 SELLPLAN = ['IREN']
 
-CASH = {'currency': 'USD', 'amount': 18928.0, 'asof': 'Aug 4, 2026', 'broker': 'POEMS (Phillip Securities)'}
+CASH = {'currency': 'USD', 'amount': 17046.21, 'asof': 'Aug 5, 2026', 'broker': 'POEMS (Phillip Securities)'}
 
 REALIZED = [{'t': 'NBIS', 'g': 13, 'amount': 1404.52},
  {'t': 'IREN', 'g': 13, 'amount': 98.52},
