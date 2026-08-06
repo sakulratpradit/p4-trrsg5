@@ -33,7 +33,25 @@ ASOF = ('Aug 5, 2026 · close — daily refresh: 117 of 121 names at the verifie
  'debt-equity are blanked following the RBRK precedent; revG, r40, pm and epsG are also blanked because sources '
  'conflict irreconcilably post-Q2 (+26% / -41.72% / -13.67%, the latter two demonstrably pre-Q2). gm 28.35 taken where '
  "two sources agree against stockanalysis's 32.14. Its CoreWeave merger was terminated. Reminder: these two are "
- 'watchlist-only — no position, no budget.')
+ 'watchlist-only — no position, no budget. | Aug 6 additions & fixes: FLNC (Fluence Energy) added to Energy at the Aug '
+ '5 close 14.23 (six independent confirmations). WARNING - FLNC reported Q3 FY26 on Aug 5 AFTER the close: revenue '
+ '649.8M vs 806.2M consensus (a 19.4% MISS), EPS -0.24 vs +0.02, FY26 guidance CUT to 2.9-3.1B from 3.2-3.6B, and the '
+ 'stock fell a further ~15% after hours to roughly 10.89. The 14.23 stored here is the pre-release close and is stale '
+ "by design; tomorrow's refresh will capture the gap. FLNC pfcf and EV/EBITDA blanked (FCF and EBITDA both negative); "
+ 'jan2 and epsG NOT FOUND. Sources disagree on FLNC market cap (2.62B / 1.89B / 1.43B - dual-class structure), TTM EPS '
+ '(-0.61 vs -0.36), ROE (-23.54 vs -10.55 vs -8.29) and net margin (-3.07 vs -1.62); the majority value was taken in '
+ 'each case. LWLG (Lightwave Logic) added to Photonic & Optic Fiber at 7.27 - note the stockanalysis history table '
+ 'said 7.73 but five independent sources confirm 7.27. LWLG has effectively NO sell-side coverage (0 analysts), so '
+ 'fvMin/fvAvg/fvMax are blank per the POET precedent. It is pre-revenue: TTM revenue is 243,105 dollars, which makes '
+ 'P/S 5,040x - a real figure but one that will distort the P/S chart scale. pm, r40, pe, fpe and epsG left blank as '
+ 'not meaningful. Cash 100M post-ATM, quarterly operating burn ~4.1M, company guides funding through Dec 2027; share '
+ 'count 112M (2022) to 154M (2026) on a Roth ATM programme raised to a 51.4M dollar limit in Apr 2026. LWLG reports Q2 '
+ 'on Aug 11 (company-confirmed). AIRJ was ALREADY in Energy - no action was required. DDOG corrected: stored ath '
+ '277.49 was below stored hi52 288.15, which is impossible; both now 292.72, the intraday all-time high set Aug 5, '
+ '2026. DDOG price 283.14 -> 283.17 (three sources). NOTE: DDOG reported Q2 on the morning of Aug 6 - beat on revenue '
+ '(1.12B vs ~1.08B) and EPS (0.65 vs ~0.58) and RAISED FY26 guidance to 4.45-4.47B / 2.50-2.54 from 4.30-4.34B / '
+ '2.36-2.44, yet traded down ~22% pre-market to ~221. Its stored fundamentals here are all PRE-Q2 and its 47 analyst '
+ 'targets are all pre-release.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -1201,6 +1219,37 @@ STOCKS = [{'t': 'GOOGL',
   'lo52': 84.35,
   'hi52': 440.0,
   'pxd': '2026-08-05'},
+ {'t': 'LWLG',
+  'name': 'Lightwave Logic',
+  'ex': 'NASDAQ',
+  'g': 4,
+  'price': 7.27,
+  'jan2': None,
+  'mcapB': 1.12,
+  'ath': 19.56,
+  'fvMin': None,
+  'fvAvg': None,
+  'fvMax': None,
+  'an': 0,
+  'peg': None,
+  'ps': 5040.18,
+  'fpe': None,
+  'pe': None,
+  'gm': 97.48,
+  'pm': None,
+  'revB': 0.000243,
+  'revG': 175.9,
+  'eps': -0.16,
+  'epsG': None,
+  'roi': -24.28,
+  'roe': -38.84,
+  'fcfB': -0.01525,
+  'capexB': 0.000929,
+  'r40': None,
+  'budget': None,
+  'lo52': 1.99,
+  'hi52': 18.71,
+  'pxd': '2026-08-05'},
  {'t': 'VST',
   'name': 'Vistra',
   'ex': 'NYSE',
@@ -1727,6 +1776,37 @@ STOCKS = [{'t': 'GOOGL',
   'budget': None,
   'lo52': 2.22,
   'hi52': 6.75,
+  'pxd': '2026-08-05'},
+ {'t': 'FLNC',
+  'name': 'Fluence Energy',
+  'ex': 'NASDAQ',
+  'g': 5,
+  'price': 14.23,
+  'jan2': None,
+  'mcapB': 2.62,
+  'ath': 37.61,
+  'fvMin': 9,
+  'fvAvg': 18.67,
+  'fvMax': 28,
+  'an': 21,
+  'peg': None,
+  'ps': 1.0,
+  'fpe': 62.69,
+  'pe': None,
+  'gm': 9.39,
+  'pm': -3.07,
+  'revB': 2.63,
+  'revG': 7.5,
+  'eps': -0.61,
+  'epsG': None,
+  'roi': -23.03,
+  'roe': -23.54,
+  'fcfB': -0.11533,
+  'capexB': -0.01454,
+  'r40': 3.11,
+  'budget': None,
+  'lo52': 6.6,
+  'hi52': 33.51,
   'pxd': '2026-08-05'},
  {'t': 'ISRG',
   'name': 'Intuitive Surgical',
@@ -2445,10 +2525,10 @@ STOCKS = [{'t': 'GOOGL',
   'name': 'Datadog',
   'ex': 'NASDAQ',
   'g': 10,
-  'price': 283.14,
+  'price': 283.17,
   'jan2': 133.77,
   'mcapB': 100.7755,
-  'ath': 277.49,
+  'ath': 292.72,
   'fvMin': 139,
   'fvAvg': 265.53,
   'fvMax': 330,
@@ -2470,7 +2550,7 @@ STOCKS = [{'t': 'GOOGL',
   'r40': 58.4,
   'budget': None,
   'lo52': 98.01,
-  'hi52': 288.15,
+  'hi52': 292.72,
   'pxd': '2026-08-05'},
  {'t': 'MDB',
   'name': 'MongoDB',
@@ -3990,7 +4070,9 @@ POS = {'GOOGL': {'budget': 60000, 'cost': 55324.68, 'shares': 205},
  'NVT': {'budget': None, 'cost': None, 'shares': None},
  'HUBB': {'budget': None, 'cost': None, 'shares': None},
  'VEEV': {'budget': None, 'cost': None, 'shares': None},
- 'CORZ': {'budget': None, 'cost': None, 'shares': None}}
+ 'CORZ': {'budget': None, 'cost': None, 'shares': None},
+ 'FLNC': {'budget': None, 'cost': None, 'shares': None},
+ 'LWLG': {'budget': None, 'cost': None, 'shares': None}}
 
 TRADES = [{'date': 'Jul 21, 2026',
   'action': 'BUY',
@@ -4794,7 +4876,9 @@ M3 = {'GOOGL': {'pfcf': 72.54, 'ev': 21.6, 'de': 0.18},
  'NVT': {'pfcf': 45.74, 'ev': 26.27, 'de': 0.41},
  'HUBB': {'pfcf': 29.44, 'ev': 21.23, 'de': 1.42},
  'VEEV': {'pfcf': 21.15, 'ev': 27.6, 'de': 0.01},
- 'CORZ': {'pfcf': None, 'ev': None, 'de': None}}
+ 'CORZ': {'pfcf': None, 'ev': None, 'de': None},
+ 'FLNC': {'pfcf': None, 'ev': None, 'de': 0.91},
+ 'LWLG': {'pfcf': None, 'ev': None, 'de': 0.03}}
 
 METRICS3 = M3  # alias: per-ticker pfcf / ev (EV/EBITDA) / de (Debt/Equity)
 
