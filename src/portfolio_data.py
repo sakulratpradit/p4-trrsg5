@@ -65,7 +65,11 @@ ASOF = ('Aug 5, 2026 · close — daily refresh: 117 of 121 names at the verifie
  'TSM row, where the 8.56 IS included) - presumably it posts at settlement, so each cost basis may rise by 8.56 in a '
  'later snapshot. CASH stepped 17,046.21 -> 13,200.76 and stamped Aug 6; this is DERIVED (gross 3,828.33 plus 2 x 8.56 '
  'assumed commission), NOT a POEMS balance screenshot. PRICES NOT TOUCHED - the screenshot\'s "Current Price" column '
- 'is live Aug 6 intraday, while this dashboard stores closes; the nightly refresh will move prices to the Aug 6 close.')
+ 'is live Aug 6 intraday, while this dashboard stores closes; the nightly refresh will move prices to the Aug 6 close. '
+ '| Aug 6 budgets: ZETA, CDNS and CRM given a 5,000 budget each (all three were previously unbudgeted); ORCL raised '
+ '5,000 -> 10,000. Headroom at current cost basis: ZETA 2,995.67, CDNS 2,992.72, CRM 1,258.65, ORCL 1,686.38. NOTE '
+ 'ORCL had already breached its old 5,000 budget at 8,313.62 of cost - the raise regularises that overrun rather than '
+ 'authorising fresh buying room.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -4028,10 +4032,10 @@ POS = {'GOOGL': {'budget': 60000, 'cost': 55324.68, 'shares': 205},
  'AVAV': {'budget': 5000, 'cost': 3758.3, 'shares': 18},
  'ONDS': {'budget': None, 'cost': 2030.54, 'shares': 200},
  'IONQ': {'budget': None, 'cost': None, 'shares': None},
- 'ORCL': {'budget': 5000, 'cost': 8313.62, 'shares': 50},
- 'ZETA': {'budget': None, 'cost': 2004.33, 'shares': 111},
- 'CDNS': {'budget': None, 'cost': 2007.28, 'shares': 6},
- 'CRM': {'budget': None, 'cost': 3741.35, 'shares': 21},
+ 'ORCL': {'budget': 10000, 'cost': 8313.62, 'shares': 50},
+ 'ZETA': {'budget': 5000, 'cost': 2004.33, 'shares': 111},
+ 'CDNS': {'budget': 5000, 'cost': 2007.28, 'shares': 6},
+ 'CRM': {'budget': 5000, 'cost': 3741.35, 'shares': 21},
  'IBM': {'budget': None, 'cost': 1713.07, 'shares': 6},
  'ADBE': {'budget': None, 'cost': None, 'shares': None},
  'NOW': {'budget': None, 'cost': None, 'shares': None},
