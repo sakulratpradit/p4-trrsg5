@@ -56,7 +56,16 @@ ASOF = ('Aug 5, 2026 · close — daily refresh: 117 of 121 names at the verifie
  'cost basis $1,881.79 incl $8.56 commission; TSM 103 -> 107.5 sh, cost $35,969.08 -> $37,850.87. CASH stepped '
  '18,928.00 -> 17,046.21 and re-stamped Aug 5 - this is DERIVED arithmetic from the confirmed fill, not a fresh POEMS '
  'balance screenshot; the Aug 5 "Today\'s Orders / All Orders" screen showed this as the only order that session. '
- 'Prices elsewhere still Aug 5 close.')
+ 'Prices elsewhere still Aug 5 close. | Aug 6 fills (POEMS Outstanding Positions screenshot, 10:51 PM BKK / 11:51 AM '
+ 'ET): BUY NVDA 9 sh @ 219.45 (order 290919) and BUY CRM 10 sh @ 185.328 (order 290805). Positions set to the POEMS '
+ '"Open Qty Cost" column verbatim: NVDA 402 -> 411 sh / 75,357.35 -> 77,332.40; CRM 11 -> 21 sh / 1,888.07 -> '
+ '3,741.35. TSM was already correct at 107.5 sh / 37,850.87. Full reconciliation: our held-cost 562,313.49 + 1,975.05 '
+ '+ 1,853.28 = 566,141.82 = POEMS Total exactly, and all 50 position rows match one-for-one with no new tickers. NOTE: '
+ 'for both of these same-day orders the POEMS cost column equals shares x price with NO commission added (unlike the '
+ 'TSM row, where the 8.56 IS included) - presumably it posts at settlement, so each cost basis may rise by 8.56 in a '
+ 'later snapshot. CASH stepped 17,046.21 -> 13,200.76 and stamped Aug 6; this is DERIVED (gross 3,828.33 plus 2 x 8.56 '
+ 'assumed commission), NOT a POEMS balance screenshot. PRICES NOT TOUCHED - the screenshot\'s "Current Price" column '
+ 'is live Aug 6 intraday, while this dashboard stores closes; the nightly refresh will move prices to the Aug 6 close.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -3958,7 +3967,7 @@ POS = {'GOOGL': {'budget': 60000, 'cost': 55324.68, 'shares': 205},
  'MSFT': {'budget': 60000, 'cost': 50818.44, 'shares': 113},
  'META': {'budget': 50000, 'cost': 39239.51, 'shares': 59.5},
  'AAPL': {'budget': 25000, 'cost': 11437.61, 'shares': 46},
- 'NVDA': {'budget': 80000, 'cost': 75357.35, 'shares': 402},
+ 'NVDA': {'budget': 80000, 'cost': 77332.4, 'shares': 411},
  'TSM': {'budget': 50000, 'cost': 37850.87, 'shares': 107.5},
  'AVGO': {'budget': 40000, 'cost': 28571.53, 'shares': 84},
  'AMD': {'budget': 25000, 'cost': 13789.22, 'shares': 55},
@@ -4022,7 +4031,7 @@ POS = {'GOOGL': {'budget': 60000, 'cost': 55324.68, 'shares': 205},
  'ORCL': {'budget': 5000, 'cost': 8313.62, 'shares': 50},
  'ZETA': {'budget': None, 'cost': 2004.33, 'shares': 111},
  'CDNS': {'budget': None, 'cost': 2007.28, 'shares': 6},
- 'CRM': {'budget': None, 'cost': 1888.07, 'shares': 11},
+ 'CRM': {'budget': None, 'cost': 3741.35, 'shares': 21},
  'IBM': {'budget': None, 'cost': 1713.07, 'shares': 6},
  'ADBE': {'budget': None, 'cost': None, 'shares': None},
  'NOW': {'budget': None, 'cost': None, 'shares': None},
@@ -4223,11 +4232,29 @@ TRADES = [{'date': 'Jul 21, 2026',
   'amount': 1873.23,
   'est': False,
   'note': 'Limit 418.00 day order filled at 416.273 (order O9636080581412011, 10:36 PM BKK / 11:36 AM ET). Cost basis '
-          'incl $8.56 commission = $1881.79. Avg TSM cost now $352.10 over 107.5 sh.'}]
+          'incl $8.56 commission = $1881.79. Avg TSM cost now $352.10 over 107.5 sh.'},
+ {'date': 'Aug 6, 2026',
+  'action': 'BUY',
+  't': 'NVDA',
+  'shares': 9,
+  'price': 219.45,
+  'amount': 1975.05,
+  'est': False,
+  'note': 'Limit 219.45 day order filled at limit (order 290919, 10:49 PM BKK / 11:49 AM ET). NVDA 402 -> 411 sh, avg '
+          'cost 187.46 -> 188.16. Budget 80,000 now 96.7% used; 2,667.60 headroom left.'},
+ {'date': 'Aug 6, 2026',
+  'action': 'BUY',
+  't': 'CRM',
+  'shares': 10,
+  'price': 185.328,
+  'amount': 1853.28,
+  'est': False,
+  'note': 'Limit 185.56 day order filled 185.328 (order 290805, 10:48 PM BKK / 11:48 AM ET). CRM 11 -> 21 sh, avg cost '
+          '171.64 -> 178.16. Bought after the post-Q2 -5.1% drop.'}]
 
 SELLPLAN = ['IREN']
 
-CASH = {'currency': 'USD', 'amount': 17046.21, 'asof': 'Aug 5, 2026', 'broker': 'POEMS (Phillip Securities)'}
+CASH = {'currency': 'USD', 'amount': 13200.76, 'asof': 'Aug 6, 2026', 'broker': 'POEMS (Phillip Securities)'}
 
 REALIZED = [{'t': 'NBIS', 'g': 13, 'amount': 1404.52},
  {'t': 'IREN', 'g': 13, 'amount': 98.52},
