@@ -143,7 +143,28 @@ ASOF = ('Aug 5, 2026 · close — daily refresh: 117 of 121 names at the verifie
  '3.22B revenue because spend is heavy), though forward P/E 58 on the 7.72 estimate. These multiples will stretch '
  'chart scales similarly to AXTI. ALSO: VST (Vistra, HELD - 42 sh / 6,078.05 cost / 10,000 budget) moved Energy -> '
  'Nuclear Energy per request; field values, position and budget untouched. Group P&L attribution for VST now reports '
- 'under Nuclear Energy. Energy 12 -> 11 names, Nuclear Energy 6 -> 7, Drone & Defense 3 -> 4.')
+ 'under Nuclear Energy. Energy 12 -> 11 names, Nuclear Energy 6 -> 7, Drone & Defense 3 -> 4. | Aug 7 addition: TEAM '
+ '(Atlassian, NASDAQ - Jira, Confluence, Trello and other team-collaboration / software-dev tools; FY2026 revenue mix '
+ 'Cloud 67% / Data Center 28% / Marketplace 5%) added to SaaS at the Aug 6, 2026 REGULAR close 110.17 (-2.78%), header '
+ '"At close: Aug 6, 2026, 4:00 PM EDT", second-sourced by GuruFocus. Watchlist only - no position, no budget. CRITICAL '
+ 'TIMING: this close is PRE-EARNINGS. Atlassian reported Q4 + full-year FY2026 (fiscal year ends June) AFTER the Aug 6 '
+ 'close and the stock SOARED ~35.7% after hours to ~149.51 (Benzinga, Forbes). The 110.17 stored here is stale by '
+ "design - tonight's refresh will capture the gap up. Q4 BEAT: revenue 1.766B vs 1.660B consensus (+28% YoY), Cloud "
+ '1.213B (+31%), non-GAAP EPS 1.87 vs 1.50; Q4 GAAP EPS 0.55 (net income 139M). FY2026: revenue 6.572B (+26%), FCF '
+ '1.319B (20% margin), non-GAAP EPS 5.85 (net income 1.526B) BUT GAAP a small net LOSS of -54M / EPS -0.21 - so '
+ 'trailing P/E is n/a (pe blank) and the stock is valued on cash flow, not GAAP earnings. FY2027 GUIDANCE: revenue '
+ '~7.42B (~13% growth, a deceleration from 26%), Cloud ~25.5%, Data Center ~-17%; Q1 FY27 revenue 1.705-1.715B vs '
+ 'Street 1.665B. eps stored is the GAAP TTM -0.21; epsG left blank (the +49.6% figure on stockanalysis is a non-GAAP '
+ 'estimate, not a reported GAAP number). pfcf 21.19 is the meaningful valuation gauge (mcap/FCF); revenue growth 26 + '
+ 'FCF margin 20 = Rule-of-40 score 46 (healthy). NOT FOUND and left blank: jan2 (history table only reaches back to '
+ 'May 27, 2026), all-time high (52-week high 189.69 stored as ath proxy - true ATH could not be verified, and note '
+ '52-wk LOW is 56.01, so this has been a wild year), and confirmed next earnings date (Q1 FY27 typically late Oct). '
+ 'CONFLICTS on record: analyst average target 140.33 (stockanalysis forecast page, 32 analysts, low 95 / high 480 - '
+ "the 480 is one outlier) vs 152.10 (same site's quote/statistics pages); forward P/E 18.03 (statistics) vs 20.30 "
+ '(quote page) - the statistics figures were taken. Consensus Buy (21 Strong Buy / 5 Buy / 6 Hold). Short interest '
+ '11.20% of float. Reported CEO plan for ~250M of open-market share purchases (StockTitan, a non-approved source - '
+ 'unverified). CHART-SCALE NOTE: EV/EBITDA 185.08 is a real figure but will stretch the EV/EBITDA chart like AXTI '
+ '(1,042) and AXON already do; the P/E chart is unaffected since trailing P/E is blank.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -2799,6 +2820,37 @@ STOCKS = [{'t': 'GOOGL',
   'lo52': 148.05,
   'hi52': 310.5,
   'pxd': '2026-08-05'},
+ {'t': 'TEAM',
+  'name': 'Atlassian',
+  'ex': 'NASDAQ',
+  'g': 10,
+  'price': 110.17,
+  'jan2': None,
+  'mcapB': 27.96,
+  'ath': 189.69,
+  'fvMin': 95,
+  'fvAvg': 140.33,
+  'fvMax': 480,
+  'an': 32,
+  'peg': 0.87,
+  'ps': 4.25,
+  'fpe': 18.03,
+  'pe': None,
+  'gm': 84.83,
+  'pm': -0.82,
+  'revB': 6.57,
+  'revG': 26.0,
+  'eps': -0.21,
+  'epsG': None,
+  'roi': -2.48,
+  'roe': -4.48,
+  'fcfB': 1.32,
+  'capexB': 0.0341,
+  'r40': 46.0,
+  'budget': None,
+  'lo52': 56.01,
+  'hi52': 189.69,
+  'pxd': '2026-08-06'},
  {'t': 'SBUX',
   'name': 'Starbucks',
   'ex': 'NASDAQ',
@@ -4228,7 +4280,8 @@ POS = {'GOOGL': {'budget': 60000, 'cost': 55324.68, 'shares': 205},
  'FLNC': {'budget': None, 'cost': None, 'shares': None},
  'LWLG': {'budget': None, 'cost': None, 'shares': None},
  'AXTI': {'budget': None, 'cost': None, 'shares': None},
- 'AXON': {'budget': None, 'cost': None, 'shares': None}}
+ 'AXON': {'budget': None, 'cost': None, 'shares': None},
+ 'TEAM': {'budget': None, 'cost': None, 'shares': None}}
 
 TRADES = [{'date': 'Jul 21, 2026',
   'action': 'BUY',
@@ -5063,7 +5116,8 @@ M3 = {'GOOGL': {'pfcf': 72.54, 'ev': 21.6, 'de': 0.18},
  'FLNC': {'pfcf': None, 'ev': None, 'de': 0.91},
  'LWLG': {'pfcf': None, 'ev': None, 'de': 0.03},
  'AXTI': {'pfcf': None, 'ev': 1042.39, 'de': 0.09},
- 'AXON': {'pfcf': 315.27, 'ev': 324.07, 'de': 0.5}}
+ 'AXON': {'pfcf': 315.27, 'ev': 324.07, 'de': 0.5},
+ 'TEAM': {'pfcf': 21.19, 'ev': 185.08, 'de': 1.16}}
 
 METRICS3 = M3  # alias: per-ticker pfcf / ev (EV/EBITDA) / de (Debt/Equity)
 

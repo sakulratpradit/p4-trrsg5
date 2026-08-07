@@ -3872,5 +3872,36 @@
     }
    ]
   }
+ ],
+ "TEAM": [
+  {
+   "week": "2026-08-03",
+   "points": [
+    {
+     "s": "0",
+     "text": "TEAM (Atlassian - maker of Jira, Confluence and Trello, the software teams use to plan and track work) added to SaaS at the Aug 6 close $110.17. Watchlist only, no position."
+    },
+    {
+     "s": "+",
+     "text": "Reported a strong quarter after the Aug 6 close and the stock JUMPED ~35% after hours to ~$150: revenue $1.77B (+28%), cloud +31%, earnings $1.87 vs $1.50 expected."
+    },
+    {
+     "s": "+",
+     "text": "Full year: revenue $6.57B (+26%), $1.3B of real cash generated (20% margin). A healthy 'Rule of 40' score of 46. 32 analysts rate it Buy, average target ~$140."
+    },
+    {
+     "s": "-",
+     "text": "Next-year growth guided to slow sharply to ~13% (from 26%), and its older Data Center product is shrinking ~17% - the market cheered anyway, but the deceleration is real."
+    },
+    {
+     "s": "-",
+     "text": "On paper it still runs a tiny accounting loss (GAAP -$0.21/share), so there's no normal P/E - you value it on cash flow (~21x). 52-week range has been wild: $56 to $190."
+    },
+    {
+     "s": "0",
+     "text": "The $110.17 stored is the pre-earnings close and looks stale - tonight's refresh will move it up toward the post-earnings level near $150."
+    }
+   ]
+  }
  ]
 }
