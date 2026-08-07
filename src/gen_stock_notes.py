@@ -13,7 +13,7 @@ exists its rows are read back and carried forward verbatim.
 
 Usage:  python3 src/gen_stock_notes.py [output.xlsx]
 """
-import json, os, re, subprocess, sys, datetime
+import csv, json, os, re, subprocess, sys, datetime
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
@@ -121,6 +121,26 @@ def attribute(segments, tickers):
     return out
 
 
+def read_our_notes_csv():
+    """Durable copy of Salee & Dad's own notes, committed in the repo.
+
+    A fresh scheduled run has no previous workbook on disk, so this CSV is what
+    makes the Our Notes sheet survive from one daily rebuild to the next.
+    Columns: Date, Who, Ticker, Note, Action, Done
+    """
+    path = os.path.join(HERE, 'our_notes.csv')
+    if not os.path.exists(path):
+        return []
+    rows = []
+    with open(path, newline='', encoding='utf-8') as f:
+        for i, r in enumerate(csv.reader(f)):
+            if i == 0 and r and r[0].strip().lower() == 'date':
+                continue
+            if any(c.strip() for c in r):
+                rows.append((r + [''] * 6)[:6])
+    return rows
+
+
 def read_existing_our_notes(path):
     if not os.path.exists(path):
         return []
@@ -171,7 +191,13 @@ def build(out_path):
             kept.append({'ts': n['ts'], 'text': c})
         chat_clean[t] = kept
 
-    carried = read_existing_our_notes(out_path)
+    carried = read_our_notes_csv()
+    seen_rows = {tuple(str(c).strip() for c in r) for r in carried}
+    for r in read_existing_our_notes(out_path):
+        k = tuple(str(c).strip() for c in r)
+        if k not in seen_rows:
+            seen_rows.add(k)
+            carried.append(r)
     today = datetime.date.today().isoformat()
 
     wb = Workbook()
