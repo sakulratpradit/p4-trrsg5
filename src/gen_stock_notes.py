@@ -150,8 +150,13 @@ def read_existing_our_notes(path):
             return []
         ws, rows = wb['Our Notes'], []
         for r in ws.iter_rows(min_row=2, values_only=True):
-            if any(c not in (None, '') for c in r):
-                rows.append([('' if c is None else c) for c in r][:6])
+            vals = [('' if c is None else c) for c in r][:6]
+            if not any(str(c).strip() for c in vals):
+                continue
+            # skip the italic footer line (long text in col A, rest blank)
+            if not any(str(c).strip() for c in vals[1:]) and len(str(vals[0])) > 80:
+                continue
+            rows.append(vals)
         return rows
     except Exception:
         return []
