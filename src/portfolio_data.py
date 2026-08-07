@@ -117,7 +117,33 @@ ASOF = ('Aug 5, 2026 · close — daily refresh: 117 of 121 names at the verifie
  "move made earlier in the same session. Chips Manufacturing 5 -> 6 names, Photonic & Optic Fiber 13 -> 12. CORZ's "
  'move to Neocloud Watch stands. No field values, positions, budgets or prices were touched - group membership only. '
  'AEHR now sits at the END of the Chips Manufacturing block rather than its original first position, which is cosmetic '
- 'only; group members need not be contiguous or ordered.')
+ 'only; group members need not be contiguous or ordered. | Aug 7 changes: AXON (Axon Enterprise, NASDAQ - Tasers, body '
+ 'cameras, drones/counter-drone and evidence software for public safety) added to Drone & Defense at the Aug 6, 2026 '
+ 'close 522.46, DOWN 14.28% on the day, header stamped "At close: Aug 6, 2026, 4:00 PM EDT" and confirmed by '
+ 'MarketBeat; note the rest of the board still carries Aug 5 closes until the nightly refresh, and the stockanalysis '
+ '/history/ Aug 6 row (565.00, -7.30%) is a bogus partial capture - the quote-page close was taken. Watchlist only - '
+ 'no position, no budget. THE STORY: Q2 2026 (reported Aug 5) BEAT on both lines - revenue 904.39M vs 876.42M '
+ 'consensus, +35% YoY, non-GAAP EPS 1.88 vs 1.84 - and FY26 revenue-growth guidance was RAISED to 32-34%, yet the '
+ 'stock fell 14% on gross-margin decline, higher memory costs, rising inventory and EPS below the 2.12 year-ago print. '
+ 'ARR 1.6B +39%, net revenue retention 126%, future contracted bookings 15.1B +41%; drones/Platform Solutions revenue '
+ '+123% with Dedrone counter-drone above 100M and deployed at the 2026 World Cup - the drone leg is the stated basis '
+ 'for the Drone & Defense grouping. ath 885.00 is the 52-WEEK high used as ATH - older history could not be verified '
+ "from permitted sources, though the stock's long uptrend makes a higher pre-2025 print unlikely. NOT FOUND and left "
+ 'blank: jan2 (history table starts May 27, 2026; YTD -8.0% per MarketBeat), TTM revenue growth as a single stated '
+ 'figure (hence revG and r40 blank - Q2 grew +35% YoY and FY26 guidance is 32-34%, but storing a quarterly figure as '
+ 'TTM would overstate), next Q3 earnings date (not announced), FY27 estimates. epsG -40.5 is real: TTM EPS 2.40 fell '
+ 'from a higher year-ago base as GAAP profitability compressed (SBC guided 590-620M). CONFLICTS on record: avg target '
+ '683.40 (stockanalysis, 21 analysts, low 409.68 / high 830, Buy) vs 715.54 (MarketBeat, 16 analysts, 440/825, '
+ 'Moderate Buy) - stockanalysis taken; PEG 2.31 (SA) vs 12.39 (MB); trailing P/E 217.29 (SA) vs 209.82 (MB); UBS '
+ 'action direction disputed (SA shows 440->600 raise, MarketBeat shows 570->440 cut to Neutral). Recent actions: '
+ 'Goldman 535->715, Piper Sandler 732 post-Q2, Barclays 688 Overweight (Aug 6), Needham 750 Buy (Jul 6). FY26 '
+ 'estimates: revenue 3.66B +31.5%, EPS 7.72. RISK on record: a Jun 29 report that a Feb 10, 2026 Trump family stock '
+ "purchase (1-5M) preceded a ~220M ICE Taser solicitation described as effectively written for Axon's product line - "
+ 'headline/regulatory risk both ways. Valuation is rich: trailing P/E 217, EV/EBITDA 324, P/FCF 315 (FCF only 133M on '
+ '3.22B revenue because spend is heavy), though forward P/E 58 on the 7.72 estimate. These multiples will stretch '
+ 'chart scales similarly to AXTI. ALSO: VST (Vistra, HELD - 42 sh / 6,078.05 cost / 10,000 budget) moved Energy -> '
+ 'Nuclear Energy per request; field values, position and budget untouched. Group P&L attribution for VST now reports '
+ 'under Nuclear Energy. Energy 12 -> 11 names, Nuclear Energy 6 -> 7, Drone & Defense 3 -> 4.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -1347,37 +1373,6 @@ STOCKS = [{'t': 'GOOGL',
   'lo52': 1.96,
   'hi52': 143.16,
   'pxd': '2026-08-05'},
- {'t': 'VST',
-  'name': 'Vistra',
-  'ex': 'NYSE',
-  'g': 5,
-  'price': 140.58,
-  'jan2': 163.89,
-  'mcapB': 47.4009,
-  'ath': 219.82,
-  'fvMin': 99,
-  'fvAvg': 222.89,
-  'fvMax': 320,
-  'an': 20,
-  'peg': 0.38,
-  'ps': 2.78,
-  'fpe': 15.79,
-  'pe': 26.3,
-  'gm': 38.64,
-  'pm': 11.52,
-  'revB': 19.45,
-  'revG': 7.4,
-  'eps': 5.92,
-  'epsG': -6.1,
-  'roi': 9.96,
-  'roe': 42.9,
-  'fcfB': 1.8,
-  'capexB': 2.87,
-  'r40': 16.7,
-  'budget': 10000,
-  'lo52': 132.66,
-  'hi52': 219.82,
-  'pxd': '2026-08-05'},
  {'t': 'CEG',
   'name': 'Constellation Energy',
   'ex': 'NASDAQ',
@@ -1625,6 +1620,37 @@ STOCKS = [{'t': 'GOOGL',
   'budget': None,
   'lo52': 68.96,
   'hi52': 135.24,
+  'pxd': '2026-08-05'},
+ {'t': 'VST',
+  'name': 'Vistra',
+  'ex': 'NYSE',
+  'g': 16,
+  'price': 140.58,
+  'jan2': 163.89,
+  'mcapB': 47.4009,
+  'ath': 219.82,
+  'fvMin': 99,
+  'fvAvg': 222.89,
+  'fvMax': 320,
+  'an': 20,
+  'peg': 0.38,
+  'ps': 2.78,
+  'fpe': 15.79,
+  'pe': 26.3,
+  'gm': 38.64,
+  'pm': 11.52,
+  'revB': 19.45,
+  'revG': 7.4,
+  'eps': 5.92,
+  'epsG': -6.1,
+  'roi': 9.96,
+  'roe': 42.9,
+  'fcfB': 1.8,
+  'capexB': 2.87,
+  'r40': 16.7,
+  'budget': 10000,
+  'lo52': 132.66,
+  'hi52': 219.82,
   'pxd': '2026-08-05'},
  {'t': 'TE',
   'name': 'T1 Energy',
@@ -2339,6 +2365,37 @@ STOCKS = [{'t': 'GOOGL',
   'lo52': 0.83,
   'hi52': 15.28,
   'pxd': '2026-08-05'},
+ {'t': 'AXON',
+  'name': 'Axon Enterprise',
+  'ex': 'NASDAQ',
+  'g': 8,
+  'price': 522.46,
+  'jan2': None,
+  'mcapB': 42.11,
+  'ath': 885.0,
+  'fvMin': 409.68,
+  'fvAvg': 683.4,
+  'fvMax': 830,
+  'an': 21,
+  'peg': 2.31,
+  'ps': 13.04,
+  'fpe': 58.25,
+  'pe': 217.29,
+  'gm': 59.53,
+  'pm': 6.19,
+  'revB': 3.22,
+  'revG': None,
+  'eps': 2.4,
+  'epsG': -40.5,
+  'roi': 1.18,
+  'roe': 6.22,
+  'fcfB': 0.133,
+  'capexB': 0.1326,
+  'r40': None,
+  'budget': None,
+  'lo52': 339.01,
+  'hi52': 885.0,
+  'pxd': '2026-08-06'},
  {'t': 'IONQ',
   'name': 'IonQ',
   'ex': 'NYSE',
@@ -4170,7 +4227,8 @@ POS = {'GOOGL': {'budget': 60000, 'cost': 55324.68, 'shares': 205},
  'CORZ': {'budget': None, 'cost': None, 'shares': None},
  'FLNC': {'budget': None, 'cost': None, 'shares': None},
  'LWLG': {'budget': None, 'cost': None, 'shares': None},
- 'AXTI': {'budget': None, 'cost': None, 'shares': None}}
+ 'AXTI': {'budget': None, 'cost': None, 'shares': None},
+ 'AXON': {'budget': None, 'cost': None, 'shares': None}}
 
 TRADES = [{'date': 'Jul 21, 2026',
   'action': 'BUY',
@@ -5004,7 +5062,8 @@ M3 = {'GOOGL': {'pfcf': 72.54, 'ev': 21.6, 'de': 0.18},
  'CORZ': {'pfcf': None, 'ev': None, 'de': None},
  'FLNC': {'pfcf': None, 'ev': None, 'de': 0.91},
  'LWLG': {'pfcf': None, 'ev': None, 'de': 0.03},
- 'AXTI': {'pfcf': None, 'ev': 1042.39, 'de': 0.09}}
+ 'AXTI': {'pfcf': None, 'ev': 1042.39, 'de': 0.09},
+ 'AXON': {'pfcf': 315.27, 'ev': 324.07, 'de': 0.5}}
 
 METRICS3 = M3  # alias: per-ticker pfcf / ev (EV/EBITDA) / de (Debt/Equity)
 

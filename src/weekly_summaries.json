@@ -3094,6 +3094,10 @@
     {
      "s": "0",
      "text": "VST reports Friday Aug 7 (CEG Aug 6); advice: keep ~$5,150 in reserve and wait for both prints before adding on the power/energy side."
+    },
+    {
+     "s": "0",
+     "text": "VST moved from Energy to Nuclear Energy group (we own 42 sh, cost $6,078, budget $10,000) - its P&L now reports under Nuclear Energy."
     }
    ]
   }
@@ -3834,6 +3838,37 @@
     {
      "s": "0",
      "text": "Weekly audit re-based 57 market caps to verified shares outstanding; WDC was among the largest fixes at +27%."
+    }
+   ]
+  }
+ ],
+ "AXON": [
+  {
+   "week": "2026-08-03",
+   "points": [
+    {
+     "s": "0",
+     "text": "AXON added to Drone & Defense at the Aug 6 close of $522.46 - watchlist only, no position, no budget. Sells Tasers, body cameras, drones and evidence software to police forces."
+    },
+    {
+     "s": "+",
+     "text": "Q2 (Aug 5) beat on both lines: revenue $904M vs $876M expected (+35% YoY), adjusted EPS $1.88 vs $1.84; full-year growth guidance RAISED to 32-34%."
+    },
+    {
+     "s": "+",
+     "text": "Recurring revenue engine is strong: ARR $1.6B +39%, customers spending 26% more each year, $15.1B of future contracted bookings; drone/counter-drone revenue +123%."
+    },
+    {
+     "s": "-",
+     "text": "Stock still FELL 14% on the results - gross margin slipping, memory costs rising, inventory building, and EPS below the $2.12 earned a year ago."
+    },
+    {
+     "s": "-",
+     "text": "Expensive even after the drop: 217x trailing earnings, 315x free cash flow (only $133M of FCF on $3.2B revenue); 21 analysts average a $683 target."
+    },
+    {
+     "s": "!",
+     "text": "Headline risk: a June report tied a Trump family stock purchase to a ~$220M ICE Taser solicitation 'effectively written for Axon' - political/regulatory risk cuts both ways."
     }
    ]
   }
