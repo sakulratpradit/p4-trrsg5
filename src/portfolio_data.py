@@ -198,7 +198,40 @@ ASOF = ('Aug 5, 2026 · close — daily refresh: 117 of 121 names at the verifie
  'Electrification per request. Field values, position and budget untouched; group P&L attribution now reports under '
  'Power and Electrification. Energy 11 -> 10 names, Power and Electrification 6 -> 7. MPWR not present in REALIZED or '
  'SOLD, so no historical group tags needed re-stamping. Note: MPWR makes power-management chips (voltage regulators '
- 'that feed AI GPUs and data-centre boards), so this group reflects its end-market better than Energy did.')
+ 'that feed AI GPUs and data-centre boards), so this group reflects its end-market better than Energy did. | Aug 7 '
+ 'additions (both watchlist only - no position, no budget): (1) NRG (NRG Energy, NYSE) added to Energy at the Aug 6, '
+ '2026 close 119.05. Both stockanalysis and MarketBeat quote pages were in a LIVE Aug 7 session at fetch, so 119.05 is '
+ "the stockanalysis 'Previous Close' field, not a verbatim 4:00 PM stamp; the Aug 5 close was 120.73 (cleanly sourced) "
+ "and Aug 7 opened ~119 and traded up ~2% - treat 119.05 as the Aug 6 close, tonight's refresh will confirm. NRG is a "
+ 'big Texas integrated power company: independent power generation + retail electricity + home services, now heavily '
+ 'positioned around DATA-CENTRE / AI power demand (Q2 earnings call flagged a landmark 1.2GW - expandable to 2.4GW - '
+ "'bring your own power' deal with a hyperscaler in ERCOT, ~500M annual EBITDA at full run, COD ~late 2029). "
+ 'GAAP-profitable and pays a dividend (~1.57% yield, 1.90/yr): revenue 33.13B TTM (+12.8%), EPS 3.87 (+76.2%), '
+ 'trailing P/E 31.31 but forward P/E only 11.78, PEG 0.50, ROE 23.77%. Q2 2026 (reported Aug 4) revenue 7.48B, adj '
+ 'EBITDA 1.22B (+34%), GAAP EPS 2.31 / adj EPS 1.49; FY26 guidance reaffirmed (adj EPS 7.90-9.90, mgmt expects below '
+ 'midpoint on soft ERCOT power prices); ~1B buyback in progress. RISK on record: DEBT/EQUITY 4.83 (very leveraged, '
+ 'normal-ish for a utility but real), free cash flow only 348M TTM so P/FCF is a rich 72x, and the post-Q2 reaction '
+ 'was disputed (some sources reported shares down ~9% to a 52-wk low 112.50, others up ~2%). ath 189.96 is the 52-wk '
+ 'high proxy (true ATH NOT FOUND). jan2 NOT FOUND. Analyst split: stockanalysis 17 analysts Buy avg 194.18 (104-267) '
+ 'vs MarketBeat 15 Moderate Buy avg 199.43 (165-232); stockanalysis taken. Recent: Evercore cut 215->195, Scotiabank '
+ '226->211 (both Aug 5). (2) SOUN (SoundHound AI, NASDAQ) added to Fintech / Digital Platform at the Aug 6, 2026 close '
+ '7.08 (+10.11% that day; quote page was live Aug 7 so 7.08 is the Previous Close, second-sourced by MarketBeat; Aug 5 '
+ 'close 6.43). SoundHound is a small conversational/VOICE-AI company - drive-thru AI ordering for restaurants, in-car '
+ 'voice assistants, and AI call-centre agents; agreed Apr 21 to acquire LivePerson to add digital messaging. It is NOT '
+ 'profitable: revenue only 203.2M TTM (but +54.6%), gross margin 42.29%, net margin -67.45%, EPS -0.38, free cash flow '
+ '-142M - so trailing P/E, forward P/E, PEG, EV/EBITDA and P/FCF are all n/a. Q2 2026 (reported Aug 5) was a RECORD: '
+ 'revenue 61.9M +45% YoY, gross margin up to 45.1%, and FY26 guidance RAISED to 230-260M; cash 203M with essentially '
+ 'no debt (years of runway). RISKS, and they are big: SHORT INTEREST 43.42% of float (one of the most heavily shorted '
+ 'names anywhere - extreme volatility both ways, beta 2.82), price-to-sales 15.19x on a company still losing money, '
+ 'and it trades at 7.08 vs a 52-wk range of 5.65-22.17 (down ~68% from its high). This is a speculative, binary, '
+ 'story-stage name - very different from the profitable payment/platform names it now sits beside in this group. ath '
+ '22.17 is the 52-wk high proxy (true ATH NOT FOUND); jan2 NOT FOUND. Analyst split: stockanalysis 7 analysts Strong '
+ 'Buy avg 12.86 (8-17) vs MarketBeat 10 Moderate Buy avg 14.64 (7-20); stockanalysis taken; Piper Sandler cut to 7 '
+ '(Neutral) on Aug 6. (3) NOT ADDED - SRTL: the ticker was requested for the Neocloud group but SRTL does NOT '
+ 'correspond to any US-listed (NASDAQ/NYSE) company. It resolves only to non-US textile/telecom names (Surana Telecom '
+ '& Power and Shree Ram Twistex in India, Sahrish Textile in Pakistan). No US Neocloud IPO/SPAC uses SRTL. Held '
+ 'pending the correct ticker from the user - likely candidates given the theme were CRWV/NBIS/IREN/APLD/CORZ, most '
+ 'already in the group.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -1955,6 +1988,37 @@ STOCKS = [{'t': 'GOOGL',
   'lo52': 6.6,
   'hi52': 33.51,
   'pxd': '2026-08-05'},
+ {'t': 'NRG',
+  'name': 'NRG Energy',
+  'ex': 'NYSE',
+  'g': 5,
+  'price': 119.05,
+  'jan2': None,
+  'mcapB': 25.41,
+  'ath': 189.96,
+  'fvMin': 104,
+  'fvAvg': 194.18,
+  'fvMax': 267,
+  'an': 17,
+  'peg': 0.5,
+  'ps': 0.76,
+  'fpe': 11.78,
+  'pe': 31.31,
+  'gm': 18.8,
+  'pm': 2.56,
+  'revB': 33.13,
+  'revG': 12.8,
+  'eps': 3.87,
+  'epsG': 76.2,
+  'roi': 6.23,
+  'roe': 23.77,
+  'fcfB': 0.348,
+  'capexB': 1.21,
+  'r40': 13.85,
+  'budget': None,
+  'lo52': 112.5,
+  'hi52': 189.96,
+  'pxd': '2026-08-06'},
  {'t': 'ISRG',
   'name': 'Intuitive Surgical',
   'ex': 'NASDAQ',
@@ -3846,6 +3910,37 @@ STOCKS = [{'t': 'GOOGL',
   'lo52': 36.13,
   'hi52': 99.9,
   'pxd': '2026-08-05'},
+ {'t': 'SOUN',
+  'name': 'SoundHound AI',
+  'ex': 'NASDAQ',
+  'g': 14,
+  'price': 7.08,
+  'jan2': None,
+  'mcapB': 3.3,
+  'ath': 22.17,
+  'fvMin': 8,
+  'fvAvg': 12.86,
+  'fvMax': 17,
+  'an': 7,
+  'peg': None,
+  'ps': 15.19,
+  'fpe': None,
+  'pe': None,
+  'gm': 42.29,
+  'pm': -67.45,
+  'revB': 0.2032,
+  'revG': 54.6,
+  'eps': -0.38,
+  'epsG': None,
+  'roi': -28.31,
+  'roe': -32.24,
+  'fcfB': -0.14238,
+  'capexB': 0.02787,
+  'r40': None,
+  'budget': None,
+  'lo52': 5.65,
+  'hi52': 22.17,
+  'pxd': '2026-08-06'},
  {'t': 'CRWD',
   'name': 'CrowdStrike',
   'ex': 'NASDAQ',
@@ -4379,7 +4474,9 @@ POS = {'GOOGL': {'budget': 60000, 'cost': 55324.68, 'shares': 205},
  'AXON': {'budget': None, 'cost': None, 'shares': None},
  'TEAM': {'budget': None, 'cost': None, 'shares': None},
  'TMDX': {'budget': None, 'cost': None, 'shares': None},
- 'CRSP': {'budget': None, 'cost': None, 'shares': None}}
+ 'CRSP': {'budget': None, 'cost': None, 'shares': None},
+ 'NRG': {'budget': None, 'cost': None, 'shares': None},
+ 'SOUN': {'budget': None, 'cost': None, 'shares': None}}
 
 TRADES = [{'date': 'Jul 21, 2026',
   'action': 'BUY',
@@ -5217,7 +5314,9 @@ M3 = {'GOOGL': {'pfcf': 72.54, 'ev': 21.6, 'de': 0.18},
  'AXON': {'pfcf': 315.27, 'ev': 324.07, 'de': 0.5},
  'TEAM': {'pfcf': 21.19, 'ev': 185.08, 'de': 1.16},
  'TMDX': {'pfcf': 34.32, 'ev': 26.33, 'de': 1.67},
- 'CRSP': {'pfcf': None, 'ev': None, 'de': 0.45}}
+ 'CRSP': {'pfcf': None, 'ev': None, 'de': 0.45},
+ 'NRG': {'pfcf': 72.09, 'ev': 12.68, 'de': 4.83},
+ 'SOUN': {'pfcf': None, 'ev': None, 'de': 0.01}}
 
 METRICS3 = M3  # alias: per-ticker pfcf / ev (EV/EBITDA) / de (Debt/Equity)
 

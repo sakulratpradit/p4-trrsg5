@@ -3961,5 +3961,55 @@
     }
    ]
   }
+ ],
+ "NRG": [
+  {
+   "week": "2026-08-03",
+   "points": [
+    {
+     "s": "0",
+     "text": "NRG (NRG Energy) added to Energy at the Aug 6 close $119.05. A big Texas power company - it generates electricity, sells it to homes, and is now a major play on data-centre/AI power demand. Watchlist only."
+    },
+    {
+     "s": "+",
+     "text": "Real, profitable business paying a ~1.6% dividend: $33B revenue, earnings up 76% to $3.87/share, 24% return on equity. Cheap on next year's earnings (~12x) with a bargain PEG of 0.5."
+    },
+    {
+     "s": "+",
+     "text": "Growth catalyst: on its Aug 4 call it announced a landmark 1.2-gigawatt deal (expandable to 2.4GW) to power a hyperscaler's data centre in Texas - ~$500M/yr of profit once running, ~2029."
+    },
+    {
+     "s": "-",
+     "text": "Heavily indebted (debt is ~5x equity - normal for a utility but real), and free cash flow is thin, so it looks expensive on a cash-flow basis (72x). Management sees this year's profit below the mid-point on soft Texas power prices."
+    },
+    {
+     "s": "-",
+     "text": "Analysts still like it (~$194 avg target vs $119 now) but two firms trimmed targets on Aug 5; the stock touched a 52-week low ($112.50) recently. The $119.05 stored is the Aug 6 close - tonight's refresh confirms it."
+    }
+   ]
+  }
+ ],
+ "SOUN": [
+  {
+   "week": "2026-08-03",
+   "points": [
+    {
+     "s": "0",
+     "text": "SOUN (SoundHound AI) added to the Digital Platform group at the Aug 6 close $7.08. A small voice-AI company - drive-thru ordering, in-car assistants, AI call-centre agents. Watchlist only."
+    },
+    {
+     "s": "+",
+     "text": "Record Q2 (Aug 5): revenue $61.9M +45%, margins improving, full-year outlook RAISED to $230-260M. It has $203M cash and almost no debt, so plenty of runway. Stock jumped 10% on the news."
+    },
+    {
+     "s": "-",
+     "text": "Still loses a lot of money: -67% net margin, burning ~$142M cash a year, no P/E. You're buying a growth story, not profits - and it's priced at 15x sales while unprofitable."
+    },
+    {
+     "s": "!",
+     "text": "Extreme-risk profile: 43% of its shares are sold short (one of the most-shorted stocks anywhere), beta 2.8, and it trades at $7 vs a 52-week range of $5.65-$22. Very volatile - a speculative bet, not a core holding."
+    }
+   ]
+  }
  ]
 }
