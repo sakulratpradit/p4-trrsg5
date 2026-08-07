@@ -164,7 +164,36 @@ ASOF = ('Aug 5, 2026 · close — daily refresh: 117 of 121 names at the verifie
  '(quote page) - the statistics figures were taken. Consensus Buy (21 Strong Buy / 5 Buy / 6 Hold). Short interest '
  '11.20% of float. Reported CEO plan for ~250M of open-market share purchases (StockTitan, a non-approved source - '
  'unverified). CHART-SCALE NOTE: EV/EBITDA 185.08 is a real figure but will stretch the EV/EBITDA chart like AXTI '
- '(1,042) and AXON already do; the P/E chart is unaffected since trailing P/E is blank.')
+ '(1,042) and AXON already do; the P/E chart is unaffected since trailing P/E is blank. | Aug 7 additions to '
+ 'Healthcare (both watchlist only - no position, no budget): (1) TMDX (TransMedics Group, NASDAQ) added at the Aug 6, '
+ '2026 close 80.21 (+4.86%), header "At close: Aug 6, 2026, 4:00 PM EDT", second-sourced by MarketBeat. TransMedics '
+ "makes the Organ Care System - a portable warm-perfusion 'organ-in-a-box' that keeps donor hearts, lungs and livers "
+ 'alive outside the body - plus its own aviation/logistics network to fly organs to transplant centres. UNLIKE most of '
+ 'the recent additions this one is genuinely PROFITABLE and cash-generative: revenue 668.47M TTM, gross margin 58.69%, '
+ 'net margin 22.69%, EPS 4.01, ROE 36.28%, ROIC 9.02%, free cash flow 79M, trailing P/E 19.63, forward P/E 39.55. Q2 '
+ '2026 (reported Aug 4) revenue 189.9M +21% YoY but GAAP EPS fell to 0.41 from 0.92 a year ago on heavy growth spend; '
+ 'FY2026 revenue guidance raised to 737-757M (~22-25% growth). The stock dropped ~5% on the Aug 5 session after the '
+ 'print, then bounced +4.86% Aug 6. revG and r40 left blank - a clean TTM growth % was NOT FOUND (Q2 was +21%, FY '
+ 'guide 22-25%, next-FY consensus +18.26%); storing a quarterly or guidance figure as TTM would misrepresent it. RISK '
+ 'on record: SHORT INTEREST 23.08% of float (very high), debt/equity 1.67, and a wide analyst split - stockanalysis '
+ '(12 analysts) Buy avg 98.80 (73-125) vs MarketBeat (13) HOLD avg 124.18 (77-175); the stockanalysis set was taken as '
+ 'it reflects the Aug 3-5 target CUTS (UBS 80->77, Piper 120->100, Needham 142->106). ath 156.00 is the 52-week high '
+ 'used as an ATH proxy (true ATH NOT FOUND); 52-wk low 60.11. jan2 NOT FOUND. (2) CRSP (CRISPR Therapeutics AG, '
+ 'NASDAQ) added at the Aug 6, 2026 close 51.64 (-1.54%), same stamp, second-sourced by marketscreener. CRSP is a '
+ 'CLINICAL-STAGE gene-editing biotech - it makes Casgevy, the first approved CRISPR medicine (sickle-cell and '
+ 'beta-thalassemia), partnered with Vertex, plus an early cardiovascular/CAR-T/diabetes pipeline. It is NOT yet a real '
+ 'business in accounting terms: TTM revenue only 13.39M (down 64.8% - a milestone-payment comparison, not a real '
+ 'decline), a net LOSS of 451M, EPS -4.76, operating cash burn ~370M a year, so trailing P/E, forward P/E, PEG, P/FCF '
+ 'and EV/EBITDA are all n/a and gross/net margins blank. What matters for a biotech is the BALANCE SHEET: cash and '
+ 'investments 2.36B as of Jun 30 (up from 1.98B at year-end), debt 784M, current ratio ~18 - years of runway. Q2 2026 '
+ '(reported Aug 3) beat (revenue 10.2M vs ~7.4M expected; Casgevy collaboration revenue 76M +151% YoY) and the stock '
+ 'popped +7% on Aug 4 before drifting back. RISK: short interest 20.20% of float; analyst split stockanalysis (22) Buy '
+ 'avg 87.22 with a 44-291 range (the 291 is a lone outlier) vs MarketBeat (19) Moderate Buy avg 68.11 (9-110); '
+ 'stockanalysis taken, outlier flagged. ath 78.48 is the 52-wk high proxy (CONFLICT: marketscreener shows 52-wk high '
+ '63.45; 78.48 taken from stockanalysis, both agree low 44.12). jan2 NOT FOUND. CHART-SCALE WARNING: CRSP P/S is '
+ "372.85 - a real figure (tiny revenue, 5B market cap) that will DISTORT the P/S chart like LWLG's 5,040x already "
+ 'does; its stored ROIC -325.94 is a text-only figure and an accounting artifact of a small capital base, not a normal '
+ 'return number. Both TMDX ath and CRSP ath are 52-week-high proxies; pre-2024 history could not be verified.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -3099,6 +3128,68 @@ STOCKS = [{'t': 'GOOGL',
   'lo52': 30.08,
   'hi52': 91.5,
   'pxd': '2026-08-05'},
+ {'t': 'TMDX',
+  'name': 'TransMedics Group',
+  'ex': 'NASDAQ',
+  'g': 12,
+  'price': 80.21,
+  'jan2': None,
+  'mcapB': 2.78,
+  'ath': 156.0,
+  'fvMin': 73,
+  'fvAvg': 98.8,
+  'fvMax': 125,
+  'an': 12,
+  'peg': None,
+  'ps': 4.06,
+  'fpe': 39.55,
+  'pe': 19.63,
+  'gm': 58.69,
+  'pm': 22.69,
+  'revB': 0.66847,
+  'revG': None,
+  'eps': 4.01,
+  'epsG': None,
+  'roi': 9.02,
+  'roe': 36.28,
+  'fcfB': 0.079,
+  'capexB': 0.06689,
+  'r40': None,
+  'budget': None,
+  'lo52': 60.11,
+  'hi52': 156.0,
+  'pxd': '2026-08-06'},
+ {'t': 'CRSP',
+  'name': 'CRISPR Therapeutics',
+  'ex': 'NASDAQ',
+  'g': 12,
+  'price': 51.64,
+  'jan2': None,
+  'mcapB': 4.99,
+  'ath': 78.48,
+  'fvMin': 44,
+  'fvAvg': 87.22,
+  'fvMax': 291,
+  'an': 22,
+  'peg': None,
+  'ps': 372.85,
+  'fpe': None,
+  'pe': None,
+  'gm': None,
+  'pm': None,
+  'revB': 0.01339,
+  'revG': -64.8,
+  'eps': -4.76,
+  'epsG': None,
+  'roi': -325.94,
+  'roe': -26.09,
+  'fcfB': -0.37133,
+  'capexB': 0.00174,
+  'r40': None,
+  'budget': None,
+  'lo52': 44.12,
+  'hi52': 78.48,
+  'pxd': '2026-08-06'},
  {'t': 'IREN',
   'name': 'IREN (Iris Energy)',
   'ex': 'NASDAQ',
@@ -4281,7 +4372,9 @@ POS = {'GOOGL': {'budget': 60000, 'cost': 55324.68, 'shares': 205},
  'LWLG': {'budget': None, 'cost': None, 'shares': None},
  'AXTI': {'budget': None, 'cost': None, 'shares': None},
  'AXON': {'budget': None, 'cost': None, 'shares': None},
- 'TEAM': {'budget': None, 'cost': None, 'shares': None}}
+ 'TEAM': {'budget': None, 'cost': None, 'shares': None},
+ 'TMDX': {'budget': None, 'cost': None, 'shares': None},
+ 'CRSP': {'budget': None, 'cost': None, 'shares': None}}
 
 TRADES = [{'date': 'Jul 21, 2026',
   'action': 'BUY',
@@ -5117,7 +5210,9 @@ M3 = {'GOOGL': {'pfcf': 72.54, 'ev': 21.6, 'de': 0.18},
  'LWLG': {'pfcf': None, 'ev': None, 'de': 0.03},
  'AXTI': {'pfcf': None, 'ev': 1042.39, 'de': 0.09},
  'AXON': {'pfcf': 315.27, 'ev': 324.07, 'de': 0.5},
- 'TEAM': {'pfcf': 21.19, 'ev': 185.08, 'de': 1.16}}
+ 'TEAM': {'pfcf': 21.19, 'ev': 185.08, 'de': 1.16},
+ 'TMDX': {'pfcf': 34.32, 'ev': 26.33, 'de': 1.67},
+ 'CRSP': {'pfcf': None, 'ev': None, 'de': 0.45}}
 
 METRICS3 = M3  # alias: per-ticker pfcf / ev (EV/EBITDA) / de (Debt/Equity)
 

@@ -3903,5 +3903,59 @@
     }
    ]
   }
+ ],
+ "TMDX": [
+  {
+   "week": "2026-08-03",
+   "points": [
+    {
+     "s": "0",
+     "text": "TMDX (TransMedics) added to Healthcare at the Aug 6 close $80.21. Makes an 'organ-in-a-box' that keeps donor hearts, lungs and livers alive during transport, plus its own flight network. Watchlist only."
+    },
+    {
+     "s": "+",
+     "text": "Unusual for a recent add: it's genuinely PROFITABLE - $668M revenue, 23% net margin, real earnings ($4.01/sh), 36% return on equity and positive cash flow. A real business, not a story stock."
+    },
+    {
+     "s": "+",
+     "text": "Q2 (Aug 4) revenue grew 21%; full-year guidance nudged up to ~22-25% growth."
+    },
+    {
+     "s": "-",
+     "text": "But profit per share fell vs a year ago on heavy growth spending, and 23% of the shares are sold short - one of the most-bet-against names we track. Debt is meaningful too."
+    },
+    {
+     "s": "-",
+     "text": "Analysts are split and just cut targets: one camp rates it Buy (~$99 avg), another Hold (~$124 avg); UBS, Piper and Needham all trimmed Aug 3-5. Stock has fallen from a $156 high to $80."
+    }
+   ]
+  }
+ ],
+ "CRSP": [
+  {
+   "week": "2026-08-03",
+   "points": [
+    {
+     "s": "0",
+     "text": "CRSP (CRISPR Therapeutics) added to Healthcare at the Aug 6 close $51.64. A gene-editing biotech - makes Casgevy, the first approved CRISPR medicine (sickle-cell), with partner Vertex. Watchlist only."
+    },
+    {
+     "s": "-",
+     "text": "Not yet a real business on paper: tiny revenue, a $451M annual loss, no P/E - normal for clinical biotech. You're buying the science and the pipeline, not current profits."
+    },
+    {
+     "s": "+",
+     "text": "The safety net is the balance sheet: $2.36B of cash (rising), very little debt - years of runway to fund research without raising money in a panic. Q2 (Aug 3) beat and the stock popped 7%."
+    },
+    {
+     "s": "+",
+     "text": "Broad early pipeline beyond Casgevy - cholesterol/blood-pressure gene edits, CAR-T cancer, type-1 diabetes; 22 analysts average ~$87 (one outlier at $291)."
+    },
+    {
+     "s": "!",
+     "text": "High-risk profile: 20% of shares sold short, huge cash burn, and its price-to-sales of 373x is an artifact of near-zero revenue - ignore that ratio, it will distort the chart. Binary on trial results."
+    }
+   ]
+  }
  ]
 }
