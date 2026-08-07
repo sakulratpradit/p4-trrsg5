@@ -3526,6 +3526,10 @@
     {
      "s": "0",
      "text": "Energy group cleaned up: MPWR now sits in a tighter 12-name electrification-and-power bucket with ETN, VRT, GEV, VST, NEE."
+    },
+    {
+     "s": "0",
+     "text": "MPWR moved from Energy to Power & Electrification group (we own 1 sh, cost $1,538.56, budget $5,000) - its P&L now reports under Power & Electrification. It makes power-management chips for AI/data-centre boards."
     }
    ]
   }
