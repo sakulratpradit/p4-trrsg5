@@ -295,6 +295,7 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
     <button class="tab" data-p="groups">Portfolio</button>
     <button class="tab" data-p="trading">Trading</button>
     <button class="tab" data-p="vision">Vision</button>
+    <a class="tab" href="notes.html" style="text-decoration:none;display:inline-block">Notes ↗</a>
   </div>
   <div class="searchwrap">
     <div class="sbox">
@@ -1234,7 +1235,7 @@ function commitSearch(){
 
 /* ============ tab switching ============ */
 function showTab(p){ const b=document.querySelector('.tab[data-p="'+p+'"]'); if(b) b.click(); }
-document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{
+document.querySelectorAll(".tab[data-p]").forEach(b=>b.onclick=()=>{
   document.querySelectorAll(".tab").forEach(x=>x.classList.remove("on"));
   document.querySelectorAll(".page").forEach(x=>x.classList.remove("on"));
   b.classList.add("on");

@@ -23,6 +23,8 @@ import portfolio_data as P
 from openpyxl import Workbook, load_workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
+from openpyxl.cell.rich_text import CellRichText, TextBlock
+from openpyxl.cell.text import InlineFont
 
 FONT = 'Arial'
 HDR_FILL = PatternFill('solid', fgColor='1F3864')
@@ -38,6 +40,22 @@ RISKY = {'BE','SE','TE','NU','PL','FI','MA','GM','PE','PM','EPS','AI','US','EV',
          'GAAP','TTM','ROE','ROIC','FY','Q1','Q2','Q3','Q4','OHLC','WACC','NOT','AND','THE','ALL',
          'FOR','BUY','NOTE','ON','IT','NOW','APP','NET','V'}
 
+
+# Weekly executive summaries (curated, sentiment-tagged). Comments dated after
+# SUMMARY_CUTOFF are not yet condensed; they appear as raw neutral bullets.
+SUMMARY_CUTOFF = '2026-08-07'
+GREEN, RED, BLACK, GRAY = '1E7B34', 'C00000', '000000', '595959'
+
+def week_of(datestr):
+    d = datetime.date.fromisoformat(datestr)
+    return (d - datetime.timedelta(days=d.weekday())).isoformat()
+
+def week_label(monday):
+    d = datetime.date.fromisoformat(monday)
+    e = d + datetime.timedelta(days=6)
+    if d.month == e.month:
+        return f"{d.strftime('%b %d')}-{e.strftime('%d')}, {d.year}"
+    return f"{d.strftime('%b %d')} - {e.strftime('%b %d')}, {d.year}"
 
 LINK = re.compile(r'\[([^\]]{1,120})\]\((https?://[^)]+)\)')
 
@@ -226,8 +244,12 @@ def build(out_path):
          'One row per ticker: group, whether you hold it, shares, cost, budget, last stored price, how '
          'many comments exist, and the most recent thing Claude said about it. Start here.'),
         ('Comment Log',
-         'The full archive. One row per comment, tagged with the ticker and the date. Use the filter '
-         'arrow on the Ticker column to pull up a single stock.'),
+         'Executive summaries, one row per stock per week (Monday-Sunday). GREEN text = something '
+         'positive, RED text = a risk or negative view, bold RED FLAG = urgent warning. The View '
+         'column gives the week\'s overall tilt at a glance.'),
+        ('Full Log',
+         'The complete unabridged archive - every individual comment with its exact date, for when '
+         'the summary is not enough.'),
         ('Dashboard Notes',
          'The dated technical notes stored inside the dashboard itself - data conflicts, earnings dates, '
          'warnings, what was verified and what was not. Longer and more detailed than the chat comments.'),
@@ -271,9 +293,65 @@ def build(out_path):
     for r in range(3, ws.max_row + 1):
         ws.row_dimensions[r].height = None
 
-    # ---------------- Comment Log ----------------
+    # ---------------- Comment Log (weekly executive summaries) ----------------
+    sumpath = os.path.join(HERE, 'weekly_summaries.json')
+    weekly = json.load(open(sumpath)) if os.path.exists(sumpath) else {}
+
+    # comments newer than the curated cutoff -> raw neutral bullets per week
+    fresh = {}
+    for t in tickers:
+        for n in asof_by.get(t, []):
+            if n['ts'] >= SUMMARY_CUTOFF:
+                w = week_of(n['ts'])
+                txt = clean(n['text'])
+                if len(txt) > 300:
+                    txt = txt[:300].rsplit(' ', 1)[0] + ' ...'
+                fresh.setdefault(t, {}).setdefault(w, []).append(
+                    {'s': '0', 'text': '(new, not yet condensed) ' + txt})
+
     log = wb.create_sheet('Comment Log')
-    style_header(log, ['Ticker', 'Date', 'Source', 'Comment'], [10, 12, 22, 150])
+    style_header(log, ['Ticker', 'Week', 'View', 'Executive summary '
+                       '(green = positive, red = negative / risk)'], [10, 20, 8, 130])
+    F = dict(rFont=FONT, sz=10)
+    STYLES = {'+': InlineFont(color=GREEN, **F), '-': InlineFont(color=RED, **F),
+              '!': InlineFont(color=RED, b=True, **F), '0': InlineFont(color=BLACK, **F)}
+    MARK = {'+': '+ ', '-': '- ', '!': 'RED FLAG: ', '0': '  '}
+    for t in tickers:
+        by_week = {w['week']: list(w['points']) for w in weekly.get(t, [])}
+        for w, pts in fresh.get(t, {}).items():
+            by_week.setdefault(w, []).extend(pts)
+        for w in sorted(by_week):
+            pts = by_week[w]
+            blocks = []
+            for i, pnt in enumerate(pts):
+                sfx = '' if i == len(pts) - 1 else '\n'
+                blocks.append(TextBlock(STYLES.get(pnt['s'], STYLES['0']),
+                                        MARK.get(pnt['s'], '') + pnt['text'] + sfx))
+            pos = sum(1 for pnt in pts if pnt['s'] == '+')
+            neg = sum(1 for pnt in pts if pnt['s'] in '-!')
+            view = 'MIXED'
+            if pos and not neg: view = 'POSITIVE'
+            elif neg and not pos: view = 'NEGATIVE'
+            elif not pos and not neg: view = 'NEUTRAL'
+            r = log.max_row + 1
+            log.append([t, f"{w}  ({week_label(w)})", view, ''])
+            log.cell(row=r, column=4).value = CellRichText(blocks)
+            vc = log.cell(row=r, column=3)
+            vc.font = Font(name=FONT, size=9, bold=True,
+                           color=GREEN if view == 'POSITIVE' else RED if view == 'NEGATIVE'
+                           else GRAY)
+    for row in log.iter_rows(min_row=2):
+        for c in row:
+            if c.column != 3:
+                c.font = Font(name=FONT, size=10)
+            c.alignment = TOPWRAP
+            c.border = BOX
+    if log.max_row > 1:
+        log.auto_filter.ref = f'A1:D{log.max_row}'
+
+    # ---------------- Full Log (every comment, line by line) ----------------
+    fl = wb.create_sheet('Full Log')
+    style_header(fl, ['Ticker', 'Date', 'Source', 'Comment'], [10, 12, 22, 150])
     entries = []
     for t in tickers:
         for n in chat_clean.get(t, []):
@@ -282,14 +360,14 @@ def build(out_path):
             entries.append((t, n['ts'], n['src'], clean(n['text'])))
     entries.sort(key=lambda e: (e[0], e[1]))
     for e in entries:
-        log.append(list(e))
-    for row in log.iter_rows(min_row=2):
+        fl.append(list(e))
+    for row in fl.iter_rows(min_row=2):
         for c in row:
             c.font = Font(name=FONT, size=10)
             c.alignment = TOPWRAP
             c.border = BOX
-    if log.max_row > 1:
-        log.auto_filter.ref = f'A1:D{log.max_row}'
+    if fl.max_row > 1:
+        fl.auto_filter.ref = f'A1:D{fl.max_row}'
 
     # ---------------- Stock Index ----------------
     idx = wb.create_sheet('Stock Index', 1)
@@ -314,7 +392,7 @@ def build(out_path):
             'YES' if pos.get('shares') else '',
             pos.get('shares'), pos.get('cost'), pos.get('budget'),
             s.get('price'), s.get('pxd'),
-            f"=COUNTIF('Comment Log'!$A:$A,$A{r})",
+            f"=COUNTIF('Full Log'!$A:$A,$A{r})",
             notes[0]['ts'] if notes else '', notes[-1]['ts'] if notes else '',
             latest,
         ])
