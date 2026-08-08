@@ -82,7 +82,25 @@ ASOF = ('Aug 7, 2026 · close — daily refresh: 126 of 132 names updated — 11
  '(Jul 29): revenue 1.08B beat ~995M, EPS 3.17 beat 2.64, record backlog 3.16B; acquired Valley Electric + Comet '
  'Electric (closed Jul 1). ath 503.57 = 52-wk high proxy (intraday Jun 30 2026; close that day 500.40); jan2 NOT '
  'FOUND. After these moves Energy (g5) retains TE, EOSE, ENPH, AMPX. Group counts: Nuclear Energy 7 -> 10, Energy 11 '
- '-> 4, Renewal Energy new = 7.')
+ '-> 4, Renewal Energy new = 7. | Aug 8 addition: STRL (Sterling Infrastructure, NASDAQ - formerly Sterling '
+ "Construction) added to Neocloud Watch at the Aug 7, 2026 close 547.06 (+2.05%), header 'At close: Aug 7, 2026, 4:00 "
+ "PM EDT', market cap second-sourced by GuruFocus (16.73B). Watchlist only - no position, no budget. Sterling is a "
+ "'picks-and-shovels' data-centre play: its E-Infrastructure segment does the site development / earthwork / utilities "
+ 'UNDER data centres and semiconductor plants, and that segment is now ~78% of revenue and grew +192% YoY in Q2 - '
+ 'which is why it sits in Neocloud Watch alongside the compute names. It is a genuinely high-quality, PROFITABLE '
+ 'compounder (very different from most speculative names): revenue 3.44B TTM, EPS 13.87, ROE 40%, ROIC 41.7%, net '
+ 'margin 12.55%, free cash flow 482M, LOW debt (D/E 0.24), and cheap on growth (PEG 0.69, forward P/E 24.7 vs trailing '
+ '39.4). Record Q2 (reported Aug 3): revenue ~1.17B +90% YoY, adjusted EPS 5.80 beat ~5.01, signed backlog 4.33B '
+ '+116%; FY2026 guidance RAISED (revenue 4.00-4.15B, adj EPS 19.70-20.30). NOTE: the Q2 line-item detail (segment '
+ 'split, +90%/+192% growth, the beat, backlog) comes from stocktitan and ts2.tech, which are NOT on the approved '
+ 'source list - treat those specific event figures as context; the stored fundamentals/valuation all come from '
+ 'stockanalysis + GuruFocus. NOT FOUND and left blank: jan2, TTM revG and epsG (Q2 grew +90% but a clean TTM figure '
+ 'was not sourced, so r40 is also blank), and a company-confirmed next earnings date. ath 1005.68 is the 52-week '
+ 'INTRADAY high used as an ATH proxy (highest daily CLOSE was 993.74 on Jun 4 2026; true all-time high NOT verified); '
+ '52-wk low 263.45 - a huge range, and short interest is a modest 4.28%. Analyst consensus Strong Buy, stockanalysis 7 '
+ 'analysts avg 918.67 (754-1000); ts2.tech cited 10 analysts / mean 956 - stockanalysis taken. Note the stock trades '
+ 'at 547 vs a 1,005 high, i.e. ~46% below its peak despite the record quarter - after-hours on Aug 3 it fell ~4.7% on '
+ 'margin-mix/outlook concerns before recovering to 547 by Aug 7.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -3204,6 +3222,37 @@ STOCKS = [{'t': 'GOOGL',
   'lo52': 13.14,
   'hi52': 30.46,
   'pxd': '2026-08-07'},
+ {'t': 'STRL',
+  'name': 'Sterling Infrastructure',
+  'ex': 'NASDAQ',
+  'g': 13,
+  'price': 547.06,
+  'jan2': None,
+  'mcapB': 16.73,
+  'ath': 1005.68,
+  'fvMin': 754,
+  'fvAvg': 918.67,
+  'fvMax': 1000,
+  'an': 7,
+  'peg': 0.69,
+  'ps': 4.87,
+  'fpe': 24.69,
+  'pe': 39.44,
+  'gm': 23.81,
+  'pm': 12.55,
+  'revB': 3.44,
+  'revG': None,
+  'eps': 13.87,
+  'epsG': None,
+  'roi': 41.69,
+  'roe': 40.0,
+  'fcfB': 0.482,
+  'capexB': 0.1157,
+  'r40': None,
+  'budget': None,
+  'lo52': 263.45,
+  'hi52': 1005.68,
+  'pxd': '2026-08-07'},
  {'t': 'V',
   'name': 'Visa',
   'ex': 'NYSE',
@@ -4424,7 +4473,8 @@ POS = {'GOOGL': {'budget': 60000, 'cost': 55324.68, 'shares': 205},
  'SOUN': {'budget': None, 'cost': None, 'shares': None},
  'UUUU': {'budget': None, 'cost': None, 'shares': None},
  'LEU': {'budget': None, 'cost': None, 'shares': None},
- 'MYRG': {'budget': None, 'cost': None, 'shares': None}}
+ 'MYRG': {'budget': None, 'cost': None, 'shares': None},
+ 'STRL': {'budget': None, 'cost': None, 'shares': None}}
 
 TRADES = [{'date': 'Jul 21, 2026',
   'action': 'BUY',
@@ -5277,7 +5327,8 @@ M3 = {'GOOGL': {'pfcf': 72.54, 'ev': 21.6, 'de': 0.18},
  'SOUN': {'pfcf': None, 'ev': None, 'de': 0.01},
  'UUUU': {'pfcf': None, 'ev': None, 'de': 0.85},
  'LEU': {'pfcf': None, 'ev': 179.64, 'de': 1.39},
- 'MYRG': {'pfcf': 27.17, 'ev': 17.56, 'de': 0.09}}
+ 'MYRG': {'pfcf': 27.17, 'ev': 17.56, 'de': 0.09},
+ 'STRL': {'pfcf': 34.71, 'ev': 23.96, 'de': 0.24}}
 
 METRICS3 = M3  # alias: per-ticker pfcf / ev (EV/EBITDA) / de (Debt/Equity)
 

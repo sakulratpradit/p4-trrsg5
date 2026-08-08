@@ -4116,5 +4116,28 @@
     }
    ]
   }
+ ],
+ "STRL": [
+  {
+   "week": "2026-08-03",
+   "points": [
+    {
+     "s": "0",
+     "text": "STRL (Sterling Infrastructure) added to Neocloud Watch at the Aug 7 close $547.06. A 'picks-and-shovels' data-centre play - it does the ground/site work UNDER data centres and chip plants. Watchlist only."
+    },
+    {
+     "s": "+",
+     "text": "High-quality and very profitable: revenue $3.4B, earnings $13.87/share, 40% return on equity, 42% return on capital, strong cash flow, low debt. Record Q2 (+90% revenue) and backlog up 116%."
+    },
+    {
+     "s": "+",
+     "text": "Its data-centre segment is now ~78% of revenue and grew ~192% - a direct AI-buildout beneficiary. Cheap for the growth (PEG 0.69, forward P/E 25); analysts Strong Buy, avg target ~$919."
+    },
+    {
+     "s": "-",
+     "text": "Volatile and well off its peak: trades at $547 vs a 52-week high of ~$1,006 (down ~46%), with a $263-$1,006 range. Dipped after Q2 on margin-mix worries before recovering."
+    }
+   ]
+  }
  ]
 }
