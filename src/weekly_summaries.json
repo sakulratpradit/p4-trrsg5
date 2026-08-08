@@ -4071,6 +4071,10 @@
     {
      "s": "!",
      "text": "Extreme-risk profile: 43% of its shares are sold short (one of the most-shorted stocks anywhere), beta 2.8, and it trades at $7 vs a 52-week range of $5.65-$22. Very volatile - a speculative bet, not a core holding."
+    },
+    {
+     "s": "0",
+     "text": "Moved into the Digital Applications group (from Fintech/Digital Platform). Group label only - no change to figures."
     }
    ]
   }
@@ -4360,6 +4364,139 @@
     {
      "s": "-",
      "text": "Growth is steady rather than exciting, and it's ~26% below its 52-week high ($774). A quality defensive holding."
+    }
+   ]
+  }
+ ],
+ "NFLX": [
+  {
+   "week": "2026-08-03",
+   "points": [
+    {
+     "s": "0",
+     "text": "NFLX (Netflix) added to Digital Applications at the Aug 7 close $74.14 (price is low because of a 10-for-1 stock split in Nov 2025 - not comparable to old ~$700 levels). Watchlist only."
+    },
+    {
+     "s": "+",
+     "text": "Elite business: 28% net margin, 49% return on equity, $11B free cash flow, trades at a reasonable 23x earnings. 51 analysts rate it Buy, avg target ~$94."
+    },
+    {
+     "s": "-",
+     "text": "Down ~37% over the past year; Q2 earnings beat but weak next-quarter guidance knocked it ~9%. Growth is steady (low-teens), not explosive."
+    }
+   ]
+  }
+ ],
+ "BKNG": [
+  {
+   "week": "2026-08-03",
+   "points": [
+    {
+     "s": "0",
+     "text": "BKNG (Booking Holdings) added to Digital Applications at the Aug 7 close $214.42 (split-adjusted). The world's largest online travel agency (Booking.com, Priceline, Agoda). Watchlist only."
+    },
+    {
+     "s": "+",
+     "text": "Exceptional economics: 87% gross margin, 92% return on invested capital, $9.5B cash flow; Q2 beat with profit up 131% and a record $3.7B buyback. 38 analysts Buy, avg ~$238."
+    },
+    {
+     "s": "-",
+     "text": "Carries negative book equity from years of buybacks (so some ratios don't compute - normal for BKNG), and growth is moderating to high-single-digits."
+    }
+   ]
+  }
+ ],
+ "WDAY": [
+  {
+   "week": "2026-08-03",
+   "points": [
+    {
+     "s": "0",
+     "text": "WDAY (Workday) added to Digital Applications at the Aug 7 close $179.64. Cloud software for HR and finance departments. Watchlist only."
+    },
+    {
+     "s": "+",
+     "text": "Cash-rich, not earnings-poor: the headline P/E (56) looks high on accounting profit, but on cash terms it's cheap (forward P/E 16, PEG 0.76, $3B free cash flow). Steady ~13% growth."
+    },
+    {
+     "s": "-",
+     "text": "11% of shares are shorted, the founder returned as CEO with layoffs in Feb, and analysts' avg target ($169) sits below today's price. Reports Aug 27."
+    }
+   ]
+  }
+ ],
+ "CAT": [
+  {
+   "week": "2026-08-03",
+   "points": [
+    {
+     "s": "0",
+     "text": "CAT (Caterpillar) added to the new Industrial STX group at the Aug 7 close $842.19. The world's biggest construction and mining equipment maker; also a data-centre-power beneficiary. Watchlist only."
+    },
+    {
+     "s": "+",
+     "text": "Firing on all cylinders: revenue +18%, 57% return on equity, record backlog; Q2 beat and jumped ~9%. Pays a small dividend. 28 analysts Buy, avg ~$973."
+    },
+    {
+     "s": "-",
+     "text": "Cyclical and richly valued (P/E 36); already pulled back ~21% from its June peak of ~$1,073, so it can be volatile."
+    }
+   ]
+  }
+ ],
+ "DE": [
+  {
+   "week": "2026-08-03",
+   "points": [
+    {
+     "s": "0",
+     "text": "DE (Deere) added to Industrial STX at the Aug 7 close $620.83. The world's largest maker of farm machinery, plus construction equipment. Watchlist only."
+    },
+    {
+     "s": "-",
+     "text": "In a farming downturn right now: earnings down ~15% and low returns on capital this year, though management expects agriculture to bottom in 2026."
+    },
+    {
+     "s": "+",
+     "text": "Still a dominant franchise with pricing power; 24 analysts rate it Buy, avg ~$648. Reports Aug 20. A recovery play if the ag cycle turns."
+    }
+   ]
+  }
+ ],
+ "GE": [
+  {
+   "week": "2026-08-03",
+   "points": [
+    {
+     "s": "0",
+     "text": "GE (GE Aerospace) added to Industrial STX at the Aug 7 close $370.08. This is the jet-engine company left after GE split into three in 2024 - NOT the old conglomerate. Watchlist only."
+    },
+    {
+     "s": "+",
+     "text": "Best-in-class: revenue +22%, 31% return on capital, strong cash flow; Q2 beat and raised full-year guidance. 22 analysts rate it STRONG BUY (avg ~$405) - the highest conviction of these four industrials."
+    },
+    {
+     "s": "-",
+     "text": "Priced for perfection at 44x earnings and sits near its all-time high, so limited margin for error."
+    }
+   ]
+  }
+ ],
+ "MMM": [
+  {
+   "week": "2026-08-03",
+   "points": [
+    {
+     "s": "0",
+     "text": "MMM (3M) added to Industrial STX at the Aug 7 close $182.90. A diversified industrial (tapes, abrasives, safety, electronics) recovering after big legal settlements. Watchlist only."
+    },
+    {
+     "s": "+",
+     "text": "Turnaround underway: Q2 beat, best organic growth in 5 years, raised full-year guidance; pays a 1.7% dividend. 37% return on capital."
+    },
+    {
+     "s": "-",
+     "text": "Near its 52-week high with the average analyst target (~$182) essentially at today's price - limited upside priced in - and heavy debt from PFAS/earplug settlements. Views are split (3 Sells)."
     }
    ]
   }
