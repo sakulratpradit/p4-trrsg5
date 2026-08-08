@@ -366,6 +366,10 @@
     {
      "s": "0",
      "text": "NEE now sits in the cleaner electrification-and-power-equipment bucket (with ETN, VRT, GEV, VST, MPWR) after the Energy group was trimmed from 18 names to 12."
+    },
+    {
+     "s": "0",
+     "text": "Moved from Energy into the new Renewal Energy group. (Group label only - no change to any figures.)"
     }
    ]
   }
@@ -530,6 +534,10 @@
     {
      "s": "0",
      "text": "VRT now sits in the cleaner electrification-and-power-equipment bucket after the Energy group regrouping (18 names down to 12)."
+    },
+    {
+     "s": "0",
+     "text": "Moved from Energy into the new Renewal Energy group. (Group label only - no change to any figures.)"
     }
    ]
   }
@@ -789,6 +797,10 @@
     {
      "s": "0",
      "text": "FLNC had just been added to the Energy group at the Aug 5 close of $14.23 before the report; the next refresh will capture the gap down."
+    },
+    {
+     "s": "0",
+     "text": "Moved from Energy into the new Renewal Energy group. (Group label only - no change to any figures.)"
     }
    ]
   }
@@ -1811,6 +1823,10 @@
     {
      "s": "0",
      "text": "Housekeeping: AIRJ was already in Energy, so the regrouping request needed no action."
+    },
+    {
+     "s": "0",
+     "text": "Moved from Energy into the new Renewal Energy group. (Group label only - no change to any figures.)"
     }
    ]
   }
@@ -2451,6 +2467,10 @@
     {
      "s": "0",
      "text": "XE (X-Energy) deliberately left at Monday's Aug 3 close - no trustworthy fresh close was available; the staleness is disclosed on the dashboard; watchlist only, no position."
+    },
+    {
+     "s": "0",
+     "text": "Moved from Energy to Nuclear Energy (X-energy is a nuclear/small-reactor developer, so it belongs there). Group label only."
     }
    ]
   }
@@ -3994,6 +4014,10 @@
     {
      "s": "-",
      "text": "Analysts still like it (~$194 avg target vs $119 now) but two firms trimmed targets on Aug 5; the stock touched a 52-week low ($112.50) recently. The $119.05 stored is the Aug 6 close - tonight's refresh confirms it."
+    },
+    {
+     "s": "0",
+     "text": "Moved from Energy into the new Renewal Energy group. (Group label only - no change to any figures.)"
     }
    ]
   }
@@ -4017,6 +4041,78 @@
     {
      "s": "!",
      "text": "Extreme-risk profile: 43% of its shares are sold short (one of the most-shorted stocks anywhere), beta 2.8, and it trades at $7 vs a 52-week range of $5.65-$22. Very volatile - a speculative bet, not a core holding."
+    }
+   ]
+  }
+ ],
+ "UUUU": [
+  {
+   "week": "2026-08-03",
+   "points": [
+    {
+     "s": "0",
+     "text": "UUUU (Energy Fuels) added to Nuclear Energy at the Aug 6 close $12.90 (rebounded ~10% Aug 7). A US uranium miner that also processes rare-earth elements at its Utah mill. Watchlist only."
+    },
+    {
+     "s": "+",
+     "text": "Strong balance sheet: ~$996M working capital (cash + marketable securities), producing real uranium (865k lbs last quarter, sold at $80/lb) and building a rare-earths plant."
+    },
+    {
+     "s": "-",
+     "text": "Loses money today: -77% net margin, EPS -$0.34, burning ~$120M cash a year. No P/E - you're buying the uranium/rare-earth theme, not profits. 20% of shares are sold short."
+    }
+   ]
+  }
+ ],
+ "LEU": [
+  {
+   "week": "2026-08-03",
+   "points": [
+    {
+     "s": "0",
+     "text": "LEU (Centrus Energy) added to Nuclear Energy at the Aug 7 close $191.37. The only US-owned uranium ENRICHER - makes HALEU fuel for next-gen/small reactors. Watchlist only."
+    },
+    {
+     "s": "+",
+     "text": "Profitable and strategically vital: revenue $474M, 10% net margin, a $4.5B order backlog through 2040, a $900M US government HALEU award, and $1.87B cash."
+    },
+    {
+     "s": "-",
+     "text": "Expensive and volatile: 88x earnings, negative free cash flow (heavy plant spending), 26% of shares sold short, and it swings hugely - 52-week range $142 to $464. Dropped 5% on earnings then bounced 7% next day."
+    }
+   ]
+  }
+ ],
+ "MYRG": [
+  {
+   "week": "2026-08-03",
+   "points": [
+    {
+     "s": "0",
+     "text": "MYRG (MYR Group - you wrote 'MYR') added to the new Renewal Energy group at the Aug 7 close $337.42. An electrical-infrastructure builder: power lines, substations and data-centre/grid electrical work. Watchlist only."
+    },
+    {
+     "s": "+",
+     "text": "High quality and profitable: revenue $4B (+16%), earnings more than doubled to $10.54/share, 25% return on capital, positive cash flow, almost no debt. Record Q2 and record $3.16B backlog."
+    },
+    {
+     "s": "+",
+     "text": "Direct beneficiary of the grid buildout and data-centre electrification wave. Analysts see meaningful upside (avg ~$423 vs ~$337). Trades at a reasonable ~26x forward earnings for the growth."
+    },
+    {
+     "s": "-",
+     "text": "A contractor, so margins are thin (~4% net) and results can be lumpy project to project; the stock has pulled back from a $503 high."
+    }
+   ]
+  }
+ ],
+ "BE": [
+  {
+   "week": "2026-08-03",
+   "points": [
+    {
+     "s": "0",
+     "text": "Moved from Energy into the new Renewal Energy group. (Group label only - no change to any figures.)"
     }
    ]
   }
