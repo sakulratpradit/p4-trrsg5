@@ -44,7 +44,18 @@ ASOF = ('Aug 7, 2026 · close — daily refresh: 126 of 132 names updated — 11
  '~20 names (job fired ~8:30 PM ET — rows backfill later in the evening); YUM history frozen at Jul 31; fool.com quote '
  'pages stale as usual. Notes: FI now lists on stockanalysis as NASDAQ: FISV (/stocks/fi/history/ still serves); SHOP '
  'is SHOP:NASDAQ on Google Finance (NYSE form 404s); OUST Aug 7 close 43.35 taken from its at-close quote over a 43.38 '
- 'history row.')
+ "history row. | Aug 7 fill: BUY ISRG 5 sh @ 377.595 (order 368452, Today's Orders screen, Aug 7 2026 11:04 PM BKK / "
+ '11:04 AM ET). Position set to 33 -> 38 sh; cost 14,485.14 -> 16,381.68 (added gross 1,887.98 plus 8.56 commission '
+ 'per the standard rule that POS cost includes commission while the TRADES amount excludes it - NOTE this could not be '
+ "cross-checked against a POEMS 'Open Qty Cost' column this time because only the Today's Orders screen was provided, "
+ 'not the Outstanding Positions screen; if a later positions snapshot omits the commission the cost may read 16,373.12 '
+ "instead). CASH: this update uses a REAL POEMS 'Cash Balance (Live) USD' screenshot of 13,223.60 - the first real "
+ "balance since Aug 5 (the intervening 13,200.76 was DERIVED). That live balance is stamped 'before the settlement of "
+ "the outstanding contract', i.e. it does NOT yet reflect the ISRG buy, so the ISRG net cost 1,896.54 was subtracted "
+ 'to give stored cash 11,327.06 as of Aug 7. The real pre-ISRG balance 13,223.60 was 22.84 ABOVE the prior derived '
+ '13,200.76 (likely a small dividend/interest credit or rounding drift) - anchoring to the real number corrects that '
+ 'drift. Available Cash / buying power shown as SGD-equivalent 13,907.76 is a separate FX figure and was not used. '
+ 'ISRG prices elsewhere untouched.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -4210,7 +4221,7 @@ POS = {'GOOGL': {'budget': 60000, 'cost': 55324.68, 'shares': 205},
  'NEE': {'budget': None, 'cost': None, 'shares': None},
  'BE': {'budget': None, 'cost': None, 'shares': None},
  'XE': {'budget': None, 'cost': None, 'shares': None},
- 'ISRG': {'budget': 20000, 'cost': 14485.14, 'shares': 33},
+ 'ISRG': {'budget': 20000, 'cost': 16381.68, 'shares': 38},
  'CGNX': {'budget': 10000, 'cost': 4067.62, 'shares': 62},
  'TER': {'budget': 10000, 'cost': 3567.37, 'shares': 10},
  'TSLA': {'budget': 10000, 'cost': 4304.62, 'shares': 10},
@@ -4453,11 +4464,21 @@ TRADES = [{'date': 'Jul 21, 2026',
   'amount': 1853.28,
   'est': False,
   'note': 'Limit 185.56 day order filled 185.328 (order 290805, 10:48 PM BKK / 11:48 AM ET). CRM 11 -> 21 sh, avg cost '
-          '171.64 -> 178.16. Bought after the post-Q2 -5.1% drop.'}]
+          '171.64 -> 178.16. Bought after the post-Q2 -5.1% drop.'},
+ {'date': 'Aug 7, 2026',
+  'action': 'BUY',
+  't': 'ISRG',
+  'shares': 5,
+  'price': 377.595,
+  'amount': 1887.98,
+  'est': False,
+  'note': 'Limit 378 day order filled 377.595 (order 368452, Aug 7 2026 11:04 PM BKK). ISRG 33 -> 38 sh, cost '
+          '14,485.14 -> 16,381.68 incl 8.56 commission, avg cost 438.94 -> 431.10. Budget 20,000 now 81.9% used '
+          '(3,618.32 headroom). Bought near the 52-week low ~379 vs a 603.88 high.'}]
 
 SELLPLAN = ['IREN']
 
-CASH = {'currency': 'USD', 'amount': 13200.76, 'asof': 'Aug 6, 2026', 'broker': 'POEMS (Phillip Securities)'}
+CASH = {'currency': 'USD', 'amount': 11327.06, 'asof': 'Aug 7, 2026', 'broker': 'POEMS (Phillip Securities)'}
 
 REALIZED = [{'t': 'NBIS', 'g': 13, 'amount': 1404.52},
  {'t': 'IREN', 'g': 13, 'amount': 98.52},

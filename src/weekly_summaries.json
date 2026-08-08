@@ -932,6 +932,15 @@
      "text": "Data integrity admission: 'live' prices quoted for ten names included five (MPWR, TSM, ISRG, ASML, MU) never actually looked up; four were wrong and have been corrected."
     }
    ]
+  },
+  {
+   "week": "2026-08-03",
+   "points": [
+    {
+     "s": "0",
+     "text": "BOUGHT 5 more ISRG @ $377.60 on Aug 7 (order 368452) near the 52-week low. Position now 38 shares, cost $16,382, avg $431; budget 82% used. Cash after ~$11,327 (real POEMS balance $13,224 less the buy)."
+    }
+   ]
   }
  ],
  "JNJ": [
