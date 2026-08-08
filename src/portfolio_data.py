@@ -100,7 +100,24 @@ ASOF = ('Aug 7, 2026 · close — daily refresh: 126 of 132 names updated — 11
  '52-wk low 263.45 - a huge range, and short interest is a modest 4.28%. Analyst consensus Strong Buy, stockanalysis 7 '
  'analysts avg 918.67 (754-1000); ts2.tech cited 10 analysts / mean 956 - stockanalysis taken. Note the stock trades '
  'at 547 vs a 1,005 high, i.e. ~46% below its peak despite the record quarter - after-hours on Aug 3 it fell ~4.7% on '
- 'margin-mix/outlook concerns before recovering to 547 by Aug 7.')
+ 'margin-mix/outlook concerns before recovering to 547 by Aug 7. | Aug 8 batch. Added FSLR (First Solar, NASDAQ) to '
+ "Energy at the Aug 7, 2026 close 250.05 (+2.42%), stamp 'At close: Aug 7, 2026, 4:00 PM EDT', second-sourced by "
+ 'MarketBeat. Watchlist only. First Solar is the largest US solar manufacturer (cadmium-telluride thin-film panels) '
+ 'and a policy winner from US solar tariffs. High quality and cheap: revenue 5.38B TTM (+23.8%), net margin 32.5%, EPS '
+ '16.22 (+38.6%), ROIC 20.6%, free cash flow 1.5B, almost NO debt (D/E 0.02), trailing P/E 15 / forward 11.7, PEG '
+ '0.56, Rule-of-40 ~52. Q2 (reported Jul 30) EPS 3.92 beat 3.01; 45.1 GW / 13.6B contracted backlog through 2030; '
+ 'passed 100 GW cumulative sales. WATCH: forward FY2026 consensus revenue (5.05B) is DOWN ~3% YoY even though TTM '
+ 'shows +23.8% - growth is decelerating near-term; ~30M/quarter underutilization cost from Section 232 polysilicon '
+ 'tariff uncertainty. 35 analysts Buy, avg target 255.26 (150-330). ath 320.95 = 52-wk high proxy (true ATH NOT FOUND; '
+ '52-wk low 176.47 on stockanalysis vs 171.99 GuruFocus); jan2 NOT FOUND. Also MOVED TSLA (Tesla) from Robotic / '
+ 'Automation / EV -> Energy per request (field values / position untouched; group P&L re-attributed). Note Tesla is '
+ 'really an EV + energy-storage + robotics company, so this is a reasonable but debatable home - its Energy Generation '
+ "& Storage segment is the part that fits 'Energy'. Robotic / Automation / EV group 6 -> 5 names; Energy 4 -> 6 (FSLR "
+ '+ TSLA). NOT ADDED - CATL: the user requested CATL for Energy, but CATL (Contemporary Amperex, the Chinese battery '
+ 'giant) has NO US exchange (NASDAQ/NYSE) listing - it lists in Shenzhen (300750.SZ) and Hong Kong (3750.HK). The only '
+ "US access is an OTC ADR, CYATY (~20.03 USD Aug 7), or foreign-ordinary CTATF (~86 USD); the ADR's fundamentals on "
+ 'stockanalysis carry a STALE Jun 17-19 2026 stamp (price then 22.41), and OTC ADRs may not be tradeable via POEMS. '
+ "Held pending the user's decision on whether to add the CYATY ADR as a proxy.")
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -1765,6 +1782,68 @@ STOCKS = [{'t': 'GOOGL',
   'lo52': 6.07,
   'hi52': 24.23,
   'pxd': '2026-08-07'},
+ {'t': 'FSLR',
+  'name': 'First Solar',
+  'ex': 'NASDAQ',
+  'g': 5,
+  'price': 250.05,
+  'jan2': None,
+  'mcapB': 26.92,
+  'ath': 320.95,
+  'fvMin': 150,
+  'fvAvg': 255.26,
+  'fvMax': 330,
+  'an': 35,
+  'peg': 0.56,
+  'ps': 5.33,
+  'fpe': 11.68,
+  'pe': 15.05,
+  'gm': 44.02,
+  'pm': 32.47,
+  'revB': 5.38,
+  'revG': 23.8,
+  'eps': 16.22,
+  'epsG': 38.6,
+  'roi': 20.58,
+  'roe': 18.51,
+  'fcfB': 1.5,
+  'capexB': 0.65562,
+  'r40': 51.7,
+  'budget': None,
+  'lo52': 176.47,
+  'hi52': 320.95,
+  'pxd': '2026-08-07'},
+ {'t': 'TSLA',
+  'name': 'Tesla',
+  'ex': 'NASDAQ',
+  'g': 5,
+  'price': 328.58,
+  'jan2': 457.8,
+  'mcapB': 1298.65,
+  'ath': 498.83,
+  'fvMin': 370,
+  'fvAvg': 431.36,
+  'fvMax': 508,
+  'an': 81,
+  'peg': 3.95,
+  'ps': 14.61,
+  'fpe': 168.32,
+  'pe': 370.36,
+  'gm': 19.07,
+  'pm': 3.95,
+  'revB': 97.88,
+  'revG': 2.3,
+  'eps': 1.09,
+  'epsG': -37.4,
+  'roi': 6.34,
+  'roe': 4.9,
+  'fcfB': 7.0,
+  'capexB': 9.53,
+  'r40': 9.4,
+  'budget': 10000,
+  'lo52': 297.82,
+  'hi52': 498.83,
+  'pxd': '2026-08-07'},
  {'t': 'ISRG',
   'name': 'Intuitive Surgical',
   'ex': 'NASDAQ',
@@ -1857,37 +1936,6 @@ STOCKS = [{'t': 'GOOGL',
   'budget': 10000,
   'lo52': 102.42,
   'hi52': 487.91,
-  'pxd': '2026-08-07'},
- {'t': 'TSLA',
-  'name': 'Tesla',
-  'ex': 'NASDAQ',
-  'g': 6,
-  'price': 328.58,
-  'jan2': 457.8,
-  'mcapB': 1298.65,
-  'ath': 498.83,
-  'fvMin': 370,
-  'fvAvg': 431.36,
-  'fvMax': 508,
-  'an': 81,
-  'peg': 3.95,
-  'ps': 14.61,
-  'fpe': 168.32,
-  'pe': 370.36,
-  'gm': 19.07,
-  'pm': 3.95,
-  'revB': 97.88,
-  'revG': 2.3,
-  'eps': 1.09,
-  'epsG': -37.4,
-  'roi': 6.34,
-  'roe': 4.9,
-  'fcfB': 7.0,
-  'capexB': 9.53,
-  'r40': 9.4,
-  'budget': 10000,
-  'lo52': 297.82,
-  'hi52': 498.83,
   'pxd': '2026-08-07'},
  {'t': 'OUST',
   'name': 'Ouster',
@@ -4474,7 +4522,8 @@ POS = {'GOOGL': {'budget': 60000, 'cost': 55324.68, 'shares': 205},
  'UUUU': {'budget': None, 'cost': None, 'shares': None},
  'LEU': {'budget': None, 'cost': None, 'shares': None},
  'MYRG': {'budget': None, 'cost': None, 'shares': None},
- 'STRL': {'budget': None, 'cost': None, 'shares': None}}
+ 'STRL': {'budget': None, 'cost': None, 'shares': None},
+ 'FSLR': {'budget': None, 'cost': None, 'shares': None}}
 
 TRADES = [{'date': 'Jul 21, 2026',
   'action': 'BUY',
@@ -5328,7 +5377,8 @@ M3 = {'GOOGL': {'pfcf': 72.54, 'ev': 21.6, 'de': 0.18},
  'UUUU': {'pfcf': None, 'ev': None, 'de': 0.85},
  'LEU': {'pfcf': None, 'ev': 179.64, 'de': 1.39},
  'MYRG': {'pfcf': 27.17, 'ev': 17.56, 'de': 0.09},
- 'STRL': {'pfcf': 34.71, 'ev': 23.96, 'de': 0.24}}
+ 'STRL': {'pfcf': 34.71, 'ev': 23.96, 'de': 0.24},
+ 'FSLR': {'pfcf': 19.1, 'ev': 11.37, 'de': 0.02}}
 
 METRICS3 = M3  # alias: per-ticker pfcf / ev (EV/EBITDA) / de (Debt/Equity)
 

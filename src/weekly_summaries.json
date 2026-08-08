@@ -1735,6 +1735,10 @@
     {
      "s": "0",
      "text": "The weekly audit re-based Tesla's market cap up 18% to verified share counts; on the portfolio wheel it still shows a red (loss) band."
+    },
+    {
+     "s": "0",
+     "text": "Moved from Robotic/Automation/EV to the Energy group (we own 10 shares, cost $4,305, budget $10,000). Its energy-storage business is the part that fits 'Energy'; position unchanged."
     }
    ]
   }
@@ -4136,6 +4140,29 @@
     {
      "s": "-",
      "text": "Volatile and well off its peak: trades at $547 vs a 52-week high of ~$1,006 (down ~46%), with a $263-$1,006 range. Dipped after Q2 on margin-mix worries before recovering."
+    }
+   ]
+  }
+ ],
+ "FSLR": [
+  {
+   "week": "2026-08-03",
+   "points": [
+    {
+     "s": "0",
+     "text": "FSLR (First Solar) added to Energy at the Aug 7 close $250.05. The largest US solar-panel maker (thin-film technology) and a winner from US tariffs on foreign solar. Watchlist only."
+    },
+    {
+     "s": "+",
+     "text": "High quality and cheap: revenue $5.4B (+24%), 32% net margin, EPS $16.22 (+39%), 21% return on capital, $1.5B cash flow, almost no debt. Only 15x earnings (12x forward), PEG 0.56."
+    },
+    {
+     "s": "+",
+     "text": "Q2 beat handily ($3.92 vs $3.01); 45 GW / $13.6B backlog booked through 2030; passed 100 GW of lifetime sales. 35 analysts rate it Buy, avg target ~$255."
+    },
+    {
+     "s": "-",
+     "text": "Near-term growth is slowing - next year's revenue is guided slightly DOWN despite the strong trailing year - and tariff uncertainty costs ~$30M a quarter. Stock is $250 vs a $321 high."
     }
    ]
   }
