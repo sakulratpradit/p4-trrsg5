@@ -2010,34 +2010,6 @@
    ]
   }
  ],
- "COIN": [
-  {
-   "week": "2026-07-20",
-   "points": [
-    {
-     "s": "-",
-     "text": "COIN sits with HOOD/AFRM/SHOP as a momentum-and-story name where valuation still has a long way to fall if growth blinks - do not bucket it with V/MA/PYPL quality names."
-    }
-   ]
-  },
-  {
-   "week": "2026-07-27",
-   "points": [
-    {
-     "s": "-",
-     "text": "Q2 brought a third straight quarterly loss; the stock dropped 13.4% and TTM earnings turned negative, nulling P/E, forward P/E, PEG, EV/EBITDA and Rule-of-40."
-    },
-    {
-     "s": "0",
-     "text": "Dad's item #8 was read as COIN with a $300 limit vs a $164 price - inconsistent with his other limits (7-39% below market); likely a typo or misread, needs confirming."
-    },
-    {
-     "s": "0",
-     "text": "Data caveat: the official Jul 31 close was $146.26 (-10.59%); several sources showed undated or wrong figures (one said -8.03%), so prices were verified via post-close articles."
-    }
-   ]
-  }
- ],
  "DELL": [
   {
    "week": "2026-07-20",
@@ -2075,30 +2047,6 @@
     {
      "s": "0",
      "text": "Regrouping settled: DELL, HPE and SMCI moved into Neocloud Watch (joined by NOK); the group now holds 11 names, all priced at the Jul 31 close."
-    }
-   ]
-  }
- ],
- "FI": [
-  {
-   "week": "2026-07-20",
-   "points": [
-    {
-     "s": "-",
-     "text": "Fiserv is the hardest flag in the fintech group: down 71% from its high at 6x forward - a potential value trap, not a bargain; growth decelerating with guidance cuts."
-    },
-    {
-     "s": "0",
-     "text": "Advisor recommends a deep-dive to settle the value-trap question before anyone acts on the low multiple."
-    }
-   ]
-  },
-  {
-   "week": "2026-07-27",
-   "points": [
-    {
-     "s": "-",
-     "text": "Housekeeping error: Fiserv moved to Nasdaq and changed ticker to FISV (announced Oct 29, 2025); the board still shows FI, so its quote may be mismatched - fix due on next push."
     }
    ]
   }
@@ -4516,6 +4464,17 @@
     {
      "s": "-",
      "text": "Ignore the scary trailing P/E of 125 - that's depressed trough earnings; the real gauge is ~21x forward. Risks: still weighing a fab closure, 7% shorted, and the price already reflects the big earnings pop."
+    }
+   ]
+  }
+ ],
+ "SE": [
+  {
+   "week": "2026-08-03",
+   "points": [
+    {
+     "s": "0",
+     "text": "Moved into the Digital Applications group (from Fintech/Digital Platform). Group label only."
     }
    ]
   }
