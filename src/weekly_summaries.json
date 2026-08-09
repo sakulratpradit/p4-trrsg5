@@ -4500,5 +4500,24 @@
     }
    ]
   }
+ ],
+ "MCHP": [
+  {
+   "week": "2026-08-03",
+   "points": [
+    {
+     "s": "0",
+     "text": "MCHP (Microchip Technology) added to Computing Chips at the Aug 7 close $84.69 (jumped ~14% that day on earnings). Makes microcontrollers and analog chips for cars, industry and data centres. Watchlist only."
+    },
+    {
+     "s": "+",
+     "text": "The downturn is turning up: Q1 (Aug 6) sales +38%, back to profit, strong guidance, inventories clearing. Analysts see FY2027 earnings nearly doubling; 25 rate it Buy (avg ~$109). Pays a 2.2% dividend."
+    },
+    {
+     "s": "-",
+     "text": "Ignore the scary trailing P/E of 125 - that's depressed trough earnings; the real gauge is ~21x forward. Risks: still weighing a fab closure, 7% shorted, and the price already reflects the big earnings pop."
+    }
+   ]
+  }
  ]
 }

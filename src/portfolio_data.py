@@ -177,7 +177,22 @@ ASOF = ('Aug 7, 2026 · close — daily refresh: 126 of 132 names updated — 11
  '(3M) 182.90 - diversified industrial post-PFAS/earplug settlements; rev 25.2B, ROE 82% / ROIC 37% (flattered by a '
  'reduced equity base - debt/equity 4.38), FCF 4.0B, dividend 1.7%; Q2 (Jul 21) beat, raised FY26 adj EPS to '
  '8.80-8.95, best organic growth in 5 years; trades near its 184.90 high so the avg target 181.85 implies ~no upside; '
- 'ttm revG and epsG NOT FOUND (so r40 blank); mixed analyst view (3 Sells). Total groups 20 -> 21; stocks 146 -> 153.')
+ 'ttm revG and epsG NOT FOUND (so r40 blank); mixed analyst view (3 Sells). Total groups 20 -> 21; stocks 146 -> 153. '
+ '| Aug 8 addition: MCHP (Microchip Technology, NASDAQ) added to Computing Chips at the Aug 7, 2026 close 84.69, UP '
+ "13.89% that day, stamp 'At close: Aug 7, 2026, 4:00 PM EDT', second-sourced by MarketBeat. Watchlist only - no "
+ 'position, no budget. Microchip makes microcontrollers, analog and connectivity chips for cars, industry, '
+ 'aerospace/defence and data centres, and is RECOVERING from a deep inventory-correction downcycle. Q1 FY2027 (ended '
+ 'Jun 30, reported Aug 6) was a clear beat and the trigger for the pop: net sales 1.485B (+38% YoY, +13% QoQ), GAAP '
+ 'EPS 0.37 (vs a loss a year ago), non-GAAP EPS 0.76; Q2 guidance strong (~1.6B, +41% YoY); inventory days improving '
+ '(185->175); PCIe Gen 6 / data-centre commentary cited. Pays a ~2.15% dividend (0.455/qtr). KEY VALUATION NOTE: '
+ 'trailing P/E 124.83 and payout ratio 268% look alarming but are DISTORTED by trough earnings during the downturn - '
+ 'the forward P/E is 21.46 and PEG 0.47, and analysts model FY2027 EPS +95% to 3.20; treat trailing metrics as low '
+ 'quality. Fundamentals stored: rev 5.122B TTM (+20.93%), gross margin 60%, net margin 9.3%, EPS 0.67, FCF 1.11B, ROIC '
+ '5.9%, debt/equity 0.84, EV/EBITDA 34.78. 25 analysts Buy (17 Strong Buy), avg target 109.21 (80-135). RISK: short '
+ 'interest ~6.7%, still evaluating a Fab 2 (Tempe AZ) shutdown/sale, and the current price already embeds the +14% '
+ 'earnings pop. NOT FOUND: jan2 (nearest was Jan 5 close 80.10), all-time high (52-wk high 105.91 stored as ath proxy; '
+ 'note MarketBeat shows a much narrower 52-wk range 71.24-88.65 vs stockanalysis 48.52-105.91 - stockanalysis taken), '
+ 'epsG, and a company-confirmed next earnings date.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -634,6 +649,37 @@ STOCKS = [{'t': 'GOOGL',
   'budget': None,
   'lo52': 44.56,
   'hi52': 134.92,
+  'pxd': '2026-08-07'},
+ {'t': 'MCHP',
+  'name': 'Microchip Technology',
+  'ex': 'NASDAQ',
+  'g': 1,
+  'price': 84.69,
+  'jan2': None,
+  'mcapB': 45.99,
+  'ath': 105.91,
+  'fvMin': 80,
+  'fvAvg': 109.21,
+  'fvMax': 135,
+  'an': 25,
+  'peg': 0.47,
+  'ps': 8.98,
+  'fpe': 21.46,
+  'pe': 124.83,
+  'gm': 60.19,
+  'pm': 9.34,
+  'revB': 5.122,
+  'revG': 20.93,
+  'eps': 0.67,
+  'epsG': None,
+  'roi': 5.87,
+  'roe': 7.19,
+  'fcfB': 1.111,
+  'capexB': 0.0871,
+  'r40': 42.6,
+  'budget': None,
+  'lo52': 48.52,
+  'hi52': 105.91,
   'pxd': '2026-08-07'},
  {'t': 'ASML',
   'name': 'ASML Holding',
@@ -5097,7 +5143,8 @@ POS = {'GOOGL': {'budget': 60000, 'cost': 55324.68, 'shares': 205},
  'CAT': {'budget': None, 'cost': None, 'shares': None},
  'DE': {'budget': None, 'cost': None, 'shares': None},
  'GE': {'budget': None, 'cost': None, 'shares': None},
- 'MMM': {'budget': None, 'cost': None, 'shares': None}}
+ 'MMM': {'budget': None, 'cost': None, 'shares': None},
+ 'MCHP': {'budget': None, 'cost': None, 'shares': None}}
 
 TRADES = [{'date': 'Jul 21, 2026',
   'action': 'BUY',
@@ -5968,7 +6015,8 @@ M3 = {'GOOGL': {'pfcf': 72.54, 'ev': 21.6, 'de': 0.18},
  'CAT': {'pfcf': 43.04, 'ev': 27.56, 'de': 2.33},
  'DE': {'pfcf': 44.48, 'ev': 19.72, 'de': 2.35},
  'GE': {'pfcf': 45.73, 'ev': 37.22, 'de': 1.13},
- 'MMM': {'pfcf': 23.67, 'ev': 16.99, 'de': 4.38}}
+ 'MMM': {'pfcf': 23.67, 'ev': 16.99, 'de': 4.38},
+ 'MCHP': {'pfcf': 41.4, 'ev': 34.78, 'de': 0.84}}
 
 METRICS3 = M3  # alias: per-ticker pfcf / ev (EV/EBITDA) / de (Debt/Equity)
 
