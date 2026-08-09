@@ -196,7 +196,9 @@ ASOF = ('Aug 7, 2026 · close — daily refresh: 126 of 132 names updated — 11
  'dashboard entirely per request - both were watchlist-only (no position, budget, or trade history), so removed '
  'cleanly from STOCKS, POS and M3 with nothing to unwind. MOVED SE (Sea Limited) from Fintech / Digital Platform -> '
  'Digital Applications (watchlist; field values untouched). Fintech / Digital Platform 10 -> 7 (V, MA, PYPL, HOOD, '
- 'SOFI, NU, LMND); Digital Applications 8 -> 9 (added SE). Total stocks 154 -> 152.')
+ "SOFI, NU, LMND); Digital Applications 8 -> 9 (added SE). Total stocks 154 -> 152. | Aug 8: renamed group 'Fintech / "
+ "Digital Platform' -> 'Digital Fintech' (group index 14 unchanged, so all 7 members - V, MA, PYPL, HOOD, SOFI, NU, "
+ 'LMND - carry over automatically with their data, positions and group P&L intact; label change only).')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -212,7 +214,7 @@ GROUPS = ['Hyperscalers',
  'Consumer / F&B',
  'Healthcare',
  'Neocloud Watch',
- 'Fintech / Digital Platform',
+ 'Digital Fintech',
  'Cybersecurity',
  'Nuclear Energy',
  'Power and Electrification',
