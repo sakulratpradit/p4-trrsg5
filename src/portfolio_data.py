@@ -3,202 +3,31 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Aug 7, 2026 · close — daily refresh: 126 of 132 names updated — 119 at the verified Aug 7 close; XE, LWLG, LMND, '
- 'HNGE, VEEV, RBRK and EOSE advanced only to their VERIFIED AUG 6 closes (pxd stamped 2026-08-06) because their Aug 7 '
- "prints could not be independently second-sourced before the session's WebSearch budget exhausted. Primary source was "
- 'the stockanalysis.com quote page under the standard resolution rule (4:00 PM EDT at-close stamp + prev close '
- "matching the history table's Aug 6 row); history tables were missing Aug 7 rows on ~20 names at fetch time and quote "
- 'pages were stale or intraday on GOOGL, CEG, VST, AMPX, MDB, HUT, CORZ, COIN, FLNC, ASTS (each resolved from an '
- 'internally-consistent history row, most cross-confirmed by Google Finance or marketscreener). UNH and JNJ history '
- "rows were internally IMPOSSIBLE again (close above the row's own high on tiny volume) and were discarded in favor of "
- 'the at-close quote pages. All 34 moves ≥6% vs the stored base were confirmed against an independent dated second '
- 'source (Google Finance closed-stamped pages, marketscreener Market-Closed pages, or post-close fool.com articles) '
- 'before writing: TEAM +35.3% (Aug 6 Q4 beat now captured), AXTI +29.1%, SPCX +22.9%, SHOP +22.9% (re-based from its '
- 'stale Aug 4 price), DDOG −17.4% and APP −17.0% vs stored (their Aug 6 earnings selloffs; both then REBOUNDED on Aug '
- '7 — DDOG +2.0%, APP +3.3%), WDC −16.3%, CIFR −15.7% and HUT −12.4% (both re-based from stale Aug 4 prices), COHR '
- '+15.5% (trade-policy news), NBIS −14.2%, SOUN +13.3%, OKLO +14.8% on the day (first-ever quarterly revenue), TEM '
- '+12.9% day, IONQ +11.9% day, PLTR +10.3% day (post-earnings/BofA), LUNR +9.9% day, RKLB +9.5% day, UBER +6.5% day, '
- 'NOW +6.4% day, LITE +6.2% day. Two candidates were REFUTED by second sources and corrected before writing: BE 219.34 '
- '(quote page said 219.38; Google + marketscreener agree 219.34) and HUT 88.59 (stockanalysis history row said 85.73; '
- 'both Google caches + marketscreener agree 88.59). V 362.50 kept from the at-close quote after Google confirmed it '
- "and exposed V's history row (close 364.20 vs stated low 363.62) as a partial capture; NEE 84.65 confirmed by "
- 'marketscreener against a bogus low-volume 83.84 history row; AVAV 186.73 confirmed by Google against a bogus 183.73 '
- "history row; GOOGL's history-row 354.30 confirmed by marketscreener (its quote page was frozen intraday). "
- 'UNRESOLVED, left at prior values with prior pxd: TE (the Aug 6 close itself is disputed — stockanalysis history says '
- '6.00 while Google-implied says 5.55, and the Aug 7 candidate 5.85 is single-source; stored 5.47 is the Aug 5 close '
- 'and STALE — likely materially higher), ZETA (quote frozen intraday 2:27 PM, history ends Aug 5; Aug 7 traded '
- '~25.0-26.6 intraday, unconfirmable), YUM (quote frozen intraday 3:43 PM ~150.7; history table frozen at Jul 31), '
- 'AXON (quote frozen intraday 3:07 PM at ~564.5, ~+8% above the stored MarketBeat-confirmed Aug 6 close 522.46; '
- "stockanalysis's Aug 6 history row of 565.00/−7.30% on 0.5M volume looks bogus — treat AXON as STALE and likely "
- 'materially higher), TMDX (still at its verified Aug 6 close 80.21; Aug 7 intraday 81.48 unconfirmable), AFRM (still '
- 'at the stored Aug 4 value 79.56, which stockanalysis history now CONTRADICTS with an Aug 4 close of 78.12 — the base '
- 'itself needs re-verification; that table shows Aug 5 78.47 / Aug 6 76.58, and Aug 7 traded ~75.2 intraday). VEEV '
- "note: stockanalysis's at-close quote showed Aug 7 = 230.47 (+5.8% day) and passed both internal checks, but a +7.9% "
- 'move vs our stored base requires an independent second source and none was reachable — written at the verified Aug 6 '
- 'close 217.80; likely materially higher. RBRK likewise printed 90.07 (+6.5%) at the close, unconfirmable — written at '
- "the verified Aug 6 close 84.60. EOSE written at 3.94, the Aug 6 close agreed by two dated Aug-7 pages' prev-close "
- 'fields (stockanalysis + Google-derived); its Aug 7 candidate 4.15 is Google-only, unconfirmable. Market caps '
- 're-scaled with price; hi52/lo52 extended where the close breached the stored range. Stale/broken this run: session '
- 'WebSearch budget exhausted (200/200) before the last stragglers could be second-sourced; Google Finance per-ticker '
- 'caches days old on RBRK (Aug 4) and LWLG (Aug 4); stockanalysis history tables missing same-evening Aug 7 rows on '
- '~20 names (job fired ~8:30 PM ET — rows backfill later in the evening); YUM history frozen at Jul 31; fool.com quote '
- 'pages stale as usual. Notes: FI now lists on stockanalysis as NASDAQ: FISV (/stocks/fi/history/ still serves); SHOP '
- 'is SHOP:NASDAQ on Google Finance (NYSE form 404s); OUST Aug 7 close 43.35 taken from its at-close quote over a 43.38 '
- "history row. | Aug 7 fill: BUY ISRG 5 sh @ 377.595 (order 368452, Today's Orders screen, Aug 7 2026 11:04 PM BKK / "
- '11:04 AM ET). Position set to 33 -> 38 sh; cost 14,485.14 -> 16,381.68 (added gross 1,887.98 plus 8.56 commission '
- 'per the standard rule that POS cost includes commission while the TRADES amount excludes it - NOTE this could not be '
- "cross-checked against a POEMS 'Open Qty Cost' column this time because only the Today's Orders screen was provided, "
- 'not the Outstanding Positions screen; if a later positions snapshot omits the commission the cost may read 16,373.12 '
- "instead). CASH: this update uses a REAL POEMS 'Cash Balance (Live) USD' screenshot of 13,223.60 - the first real "
- "balance since Aug 5 (the intervening 13,200.76 was DERIVED). That live balance is stamped 'before the settlement of "
- "the outstanding contract', i.e. it does NOT yet reflect the ISRG buy, so the ISRG net cost 1,896.54 was subtracted "
- 'to give stored cash 11,327.06 as of Aug 7. The real pre-ISRG balance 13,223.60 was 22.84 ABOVE the prior derived '
- '13,200.76 (likely a small dividend/interest credit or rounding drift) - anchoring to the real number corrects that '
- 'drift. Available Cash / buying power shown as SGD-equivalent 13,907.76 is a separate FX figure and was not used. '
- 'ISRG prices elsewhere untouched. | Aug 7-8 batch. NUCLEAR ENERGY (g16): XE (X-energy, an SMR/nuclear-reactor '
- 'developer) MOVED from Energy -> Nuclear Energy (watchlist, no position - it was always a nuclear name so this is its '
- 'proper home). Added UUUU (Energy Fuels, NYSE American) at the Aug 6 close 12.90 - a US URANIUM miner + rare-earth '
- 'processor (White Mesa Mill, Utah); Aug 7 rebounded +9.61% to 14.14. It is NOT profitable: revenue only 105.76M TTM, '
- 'net margin -77%, EPS -0.34, free cash flow -120M, so P/E, forward P/E, PEG, P/FCF, EV/EBITDA all n/a; but the '
- 'balance sheet is strong (working capital ~996M: cash 58.4M + marketable securities 878.3M). Q2 (Aug 5) revenue '
- '25.1M, net loss 33.4M; 865k lbs U3O8 produced, sold at 80.48/lb; building a Heavy Rare-Earth plant. SHORT INTEREST '
- '19.74%. ath 27.90 = 52-wk high proxy (true ATH NOT FOUND). Added LEU (Centrus Energy, NYSE American) at the Aug 7 '
- 'close 191.37 (Aug 6 close was 178.03, DOWN 5.12% on earnings, then Aug 7 REBOUNDED +7.49%; stored at the '
- 'Aug-7-consistent stats). Centrus is the only US-owned uranium ENRICHER, making HALEU fuel for advanced/SMR reactors. '
- 'Profitable on a GAAP basis: revenue 473.9M TTM, net margin 10.23%, EPS 2.17, but trailing P/E is a rich 88 and '
- 'EV/EBITDA 179.64 (a chart-scale outlier like AXTI/AXON), free cash flow NEGATIVE -164M on heavy enrichment-capacity '
- 'capex. Backlog 4.5B through 2040; signed a 900M DOE HALEU award and first commercial HALEU supply deal; cash 1.87B. '
- 'SHORT INTEREST 26.03% (very high). ath 464.25 = 52-wk high proxy; note 52-wk low 142.13 - this stock swings '
- 'violently. For BOTH UUUU and LEU: jan2, revG (TTM), epsG NOT FOUND; analyst sets conflict (UUUU stockanalysis 7 '
- 'analysts avg 26.13 vs MarketBeat 4 avg 23.25; LEU stockanalysis 17 avg 260.87 vs MarketBeat 13 avg 246.17) - '
- "stockanalysis taken. NEW GROUP 'Renewal Energy' (g18, colour slot --s19 added to both themes): MOVED VRT, NEE, BE, "
- 'AIRJ, FLNC and NRG out of Energy into it (all watchlist except none held here; field values/positions untouched, '
- "group P&L re-attributed), and ADDED MYRG. NOTE the user wrote the label 'Renewal Energy' and the ticker '$ MYR'; the "
- "label was kept verbatim (most likely intended 'Renewable Energy' - offered to rename) and MYR resolves to MYR Group "
- 'Inc which trades as MYRG, so it was added under MYRG. MYRG added at the Aug 7 close 337.42 - a high-quality '
- 'ELECTRICAL-INFRASTRUCTURE contractor (transmission & distribution for utilities + commercial/industrial electrical '
- 'incl. data centres and grid buildout). Genuinely profitable and compounding: revenue 4.01B TTM (+16.1%), EPS 10.54 '
- '(+121%), ROE 24.71%, ROIC 25.59%, positive free cash flow 193M, low debt (D/E 0.09), P/E 32 / forward 26. Record Q2 '
- '(Jul 29): revenue 1.08B beat ~995M, EPS 3.17 beat 2.64, record backlog 3.16B; acquired Valley Electric + Comet '
- 'Electric (closed Jul 1). ath 503.57 = 52-wk high proxy (intraday Jun 30 2026; close that day 500.40); jan2 NOT '
- 'FOUND. After these moves Energy (g5) retains TE, EOSE, ENPH, AMPX. Group counts: Nuclear Energy 7 -> 10, Energy 11 '
- '-> 4, Renewal Energy new = 7. | Aug 8 addition: STRL (Sterling Infrastructure, NASDAQ - formerly Sterling '
- "Construction) added to Neocloud Watch at the Aug 7, 2026 close 547.06 (+2.05%), header 'At close: Aug 7, 2026, 4:00 "
- "PM EDT', market cap second-sourced by GuruFocus (16.73B). Watchlist only - no position, no budget. Sterling is a "
- "'picks-and-shovels' data-centre play: its E-Infrastructure segment does the site development / earthwork / utilities "
- 'UNDER data centres and semiconductor plants, and that segment is now ~78% of revenue and grew +192% YoY in Q2 - '
- 'which is why it sits in Neocloud Watch alongside the compute names. It is a genuinely high-quality, PROFITABLE '
- 'compounder (very different from most speculative names): revenue 3.44B TTM, EPS 13.87, ROE 40%, ROIC 41.7%, net '
- 'margin 12.55%, free cash flow 482M, LOW debt (D/E 0.24), and cheap on growth (PEG 0.69, forward P/E 24.7 vs trailing '
- '39.4). Record Q2 (reported Aug 3): revenue ~1.17B +90% YoY, adjusted EPS 5.80 beat ~5.01, signed backlog 4.33B '
- '+116%; FY2026 guidance RAISED (revenue 4.00-4.15B, adj EPS 19.70-20.30). NOTE: the Q2 line-item detail (segment '
- 'split, +90%/+192% growth, the beat, backlog) comes from stocktitan and ts2.tech, which are NOT on the approved '
- 'source list - treat those specific event figures as context; the stored fundamentals/valuation all come from '
- 'stockanalysis + GuruFocus. NOT FOUND and left blank: jan2, TTM revG and epsG (Q2 grew +90% but a clean TTM figure '
- 'was not sourced, so r40 is also blank), and a company-confirmed next earnings date. ath 1005.68 is the 52-week '
- 'INTRADAY high used as an ATH proxy (highest daily CLOSE was 993.74 on Jun 4 2026; true all-time high NOT verified); '
- '52-wk low 263.45 - a huge range, and short interest is a modest 4.28%. Analyst consensus Strong Buy, stockanalysis 7 '
- 'analysts avg 918.67 (754-1000); ts2.tech cited 10 analysts / mean 956 - stockanalysis taken. Note the stock trades '
- 'at 547 vs a 1,005 high, i.e. ~46% below its peak despite the record quarter - after-hours on Aug 3 it fell ~4.7% on '
- 'margin-mix/outlook concerns before recovering to 547 by Aug 7. | Aug 8 batch. Added FSLR (First Solar, NASDAQ) to '
- "Energy at the Aug 7, 2026 close 250.05 (+2.42%), stamp 'At close: Aug 7, 2026, 4:00 PM EDT', second-sourced by "
- 'MarketBeat. Watchlist only. First Solar is the largest US solar manufacturer (cadmium-telluride thin-film panels) '
- 'and a policy winner from US solar tariffs. High quality and cheap: revenue 5.38B TTM (+23.8%), net margin 32.5%, EPS '
- '16.22 (+38.6%), ROIC 20.6%, free cash flow 1.5B, almost NO debt (D/E 0.02), trailing P/E 15 / forward 11.7, PEG '
- '0.56, Rule-of-40 ~52. Q2 (reported Jul 30) EPS 3.92 beat 3.01; 45.1 GW / 13.6B contracted backlog through 2030; '
- 'passed 100 GW cumulative sales. WATCH: forward FY2026 consensus revenue (5.05B) is DOWN ~3% YoY even though TTM '
- 'shows +23.8% - growth is decelerating near-term; ~30M/quarter underutilization cost from Section 232 polysilicon '
- 'tariff uncertainty. 35 analysts Buy, avg target 255.26 (150-330). ath 320.95 = 52-wk high proxy (true ATH NOT FOUND; '
- '52-wk low 176.47 on stockanalysis vs 171.99 GuruFocus); jan2 NOT FOUND. Also MOVED TSLA (Tesla) from Robotic / '
- 'Automation / EV -> Energy per request (field values / position untouched; group P&L re-attributed). Note Tesla is '
- 'really an EV + energy-storage + robotics company, so this is a reasonable but debatable home - its Energy Generation '
- "& Storage segment is the part that fits 'Energy'. Robotic / Automation / EV group 6 -> 5 names; Energy 4 -> 6 (FSLR "
- '+ TSLA). NOT ADDED - CATL: the user requested CATL for Energy, but CATL (Contemporary Amperex, the Chinese battery '
- 'giant) has NO US exchange (NASDAQ/NYSE) listing - it lists in Shenzhen (300750.SZ) and Hong Kong (3750.HK). The only '
- "US access is an OTC ADR, CYATY (~20.03 USD Aug 7), or foreign-ordinary CTATF (~86 USD); the ADR's fundamentals on "
- 'stockanalysis carry a STALE Jun 17-19 2026 stamp (price then 22.41), and OTC ADRs may not be tradeable via POEMS. '
- "Held pending the user's decision on whether to add the CYATY ADR as a proxy. | Aug 8 batch of 9 additions (all "
- "watchlist only, all at the Aug 7 2026 close, all stamped 'At close: Aug 7, 2026, 4:00 PM EDT'; jan2 and all-time "
- 'highs NOT FOUND for every name - 52-week highs stored as ath proxies; where two analyst sources conflicted, '
- 'stockanalysis was taken). COMPUTING CHIPS: ON (ON Semiconductor / onsemi) at 81.17 - power & sensing chips for '
- 'autos/industrial/AI data centres; profitable (rev 6.20B, EPS 1.56 +43.5%, ROIC 15.6%, FCF 1.5B) but trailing P/E 52 '
- '(forward 21, PEG 0.62); acquiring Synaptics ~7B announced Jun 25. NEOCLOUD WATCH: KEEL (Keel Infrastructure, NASDAQ) '
- 'at 3.88 - a former crypto-miner PIVOTED to AI/HPC data centres; deeply unprofitable (net margin -171%, FCF -413M, '
- 'EPS -0.65) with negative gross margin, beta 4.11, short interest ~17-18%; FY2026 revenue is estimated to FALL ~46% '
- 'during the transition even though TTM shows +67%; 11 analysts Strong Buy avg 6.55; next earnings Aug 10. SPACE: SIDU '
- '(Sidus Space) at 2.24 - micro-cap 3D-printed AI satellite maker; revenue only 3.5M (declining), P/S ~64x '
- '(chart-scale outlier), all profitability deeply negative, ~170M raised over prior 6 months so cash-heavy/near '
- 'debt-free but burning ~29M/yr; only 1 analyst (a Sell, no target - fvMin/fvAvg/fvMax left blank per the POET '
- "precedent); on the MDA SHIELD contract vehicle. POWER AND ELECTRIFICATION (user's 'Electricity Energy' -> mapped to "
- 'the existing Power and Electrification group): POWI (Power Integrations) at 64.59 - high-voltage power-conversion '
- 'chips for industrial/renewables/AI; profitable but barely (net margin 5.6%), NO debt, dividend ~1.3%, trailing P/E '
- '147 (forward 38.6) and EV/EBITDA 80 (mild chart-scale outlier); Q2 (Aug 5) beat, jumped ~9.5%. HYLN (Hyliion) at '
- '3.87 - KARNO fuel-agnostic linear generator; pre-scale (revenue 5.8M, P/S 121x = chart-scale OUTLIER, net margin '
- '-888%, FCF -64M, cash 72M), beta 3.56; won a 41.7M US Navy award (Aug) to scale multi-megawatt modules; Q2 call Aug '
- "12; 3 analysts Buy avg 7. DRONE & DEFENCE (user's 'Drone' and 'defense' -> both the existing Drone & Defense group): "
- 'RCAT (Red Cat) at 9.21 - military drone maker (Black Widow, won US Army SRR); pre-profit (net margin -136%, FCF '
- '~-158M (conflicts with -97M on financials page), EPS -0.81) but 326M cash cushion; Q2 (Aug 6) was a DOUBLE MISS (rev '
- '20.19M vs 22.79M, loss 0.26 vs 0.22 exp) yet stock closed +6.2% next day; short interest 23.6%; a short-seller '
- '(Fuzzy Panda) alleged overstated Army-contract size - flagged as risk. revG left blank (sources gave +459.8% vs '
- '+866.9%, irreconcilable; Q2 was +527% YoY). Plus the THREE big defence primes, all profitable dividend payers: LMT '
- "(Lockheed Martin) at 587.95 - F-35, THAAD/PAC-3 missiles; rev 77B, EPS 27.14 (+52.5% off 2025's program-loss base), "
- 'P/E 21.7, ROE 89%, 35B THAAD award Jun 24; 21 analysts HOLD avg 629.53 (Goldman at Sell 503). RTX (RTX Corp / '
- 'Raytheon) at 223.03 - Collins Aerospace + Pratt & Whitney + Raytheon missiles (Patriot, AIM-9X); rev 93.5B, richest '
- 'of the three at P/E 39 / EV-EBITDA 22, dividend 1.3%, backlog 289B; sits ~1% below its 52-wk high 225.65; 23 '
- 'analysts Buy avg 230.68. NOC (Northrop Grumman) at 571.58 - B-21 bomber, Sentinel ICBM, space; rev 42.9B, EPS 31.50, '
- 'P/E 18.2, ROE 27%, backlog 105B, Golden Dome tailwind; 23 analysts Buy avg 643.28 (biggest implied upside of the '
- 'three). Group counts after this batch: Computing Chips 8->9, Space 5->6, Drone & Defence 4->8, Neocloud Watch '
- "12->13, Power and Electrification 7->9. | Aug 8: created new group 'Digital Applications' (g19, colour slot --s20 "
- 'added to both themes) and MOVED MELI, SHOP, AFRM and UBER into it from Fintech / Digital Platform (all watchlist, no '
- 'positions; field values untouched, group P&L re-attributed). Rationale: these four are consumer app/marketplace '
- 'platforms (MercadoLibre e-commerce+fintech, Shopify merchant software, Affirm buy-now-pay-later, Uber '
- 'mobility/delivery) as distinct from the pure payment networks left in Fintech / Digital Platform. Fintech / Digital '
- 'Platform 15 -> 11 names (V, MA, PYPL, FI, COIN, HOOD, SOFI, NU, SE, LMND, SOUN); Digital Applications new = 4. Total '
- 'groups 19 -> 20. | Aug 8 batch. DIGITAL APPLICATIONS (g19) - added NFLX, BKNG, WDAY and MOVED SOUN in from Fintech / '
- 'Digital Platform (all watchlist, Aug 7 closes, jan2/ATH NOT FOUND -> 52wk highs as ath proxies). NFLX (Netflix) '
- '74.14 - post-10:1-split (Nov 2025), so price/history not comparable to old ~700 levels; high quality (rev 48.4B, net '
- 'margin 28%, ROE 49.5%, FCF 11.2B) at P/E 23; Q2 (Jul 16) EPS beat but light Q3 guide sent it down ~9%; down ~37% '
- 'over 52 weeks; 51 analysts Buy avg 94.04. BKNG (Booking Holdings) 214.42 - also split-adjusted (751M sh); very '
- 'profitable (87% gross margin, ROIC 92%, FCF 9.5B) but carries NEGATIVE book equity from buybacks, so ROE and '
- 'debt/equity are blanked (RBRK precedent); Q2 (Aug 4) beat, GAAP EPS +131%, record 3.7B buyback; 38 analysts Buy avg '
- '237.81. WDAY (Workday) 179.64 - HR/finance SaaS; GAAP P/E 55.9 looks steep but forward P/E 16.2 on non-GAAP and PEG '
- "0.76 - it's cash-rich not earnings-poor (FCF 3.0B vs GAAP net margin 8.6%); co-founder Bhusri returned as CEO Feb "
- '2026 with ~2% layoffs; SHORT INTEREST 11%; next earnings Aug 27 (company-confirmed); 41 analysts Buy avg 168.64 '
- "(below price). Fintech / Digital Platform 11 -> 10 (SOUN left); Digital Applications 4 -> 8. NEW GROUP 'Industrial "
- "STX' (g20, colour slot --s21 added to both themes) - added four blue-chip industrials (all watchlist, Aug 7 closes, "
- 'profitable dividend payers). CAT (Caterpillar) 842.19 - construction/mining equipment + engines/turbines, a '
- 'data-centre-power beneficiary; rev 74.7B (+18.4%), EPS 23.21, ROE 57%, P/E 36; Q2 (Aug 4) beat, shares jumped ~9%, '
- 'backlog record; but ~21% below its 1,073 June peak; 28 analysts Buy avg 972.95. DE (Deere) 620.83 - ag & '
- 'construction machinery; in an AG DOWNTURN (EPS -14.6%, ROIC only 5.9%) though mgmt sees a 2026 bottom; big finance '
- 'arm (debt 64.5B); next earnings Aug 20; 24 analysts Buy avg 648.03. GE (GE Aerospace - the jet-engine company after '
- 'the 2024 GE Vernova / GE HealthCare spin-offs; NOT the old conglomerate) 370.08 - rev 50.6B (+21.7%), net margin '
- '17.7%, ROIC 31%, but priced richly at P/E 44 / EV-EBITDA 37; Q2 (Jul 16) beat & raised FY guide (adj EPS 7.95-8.15, '
- 'FCF 12.0-12.5B); 22 analysts STRONG BUY avg 404.90 - the highest-conviction of the four; near its 388.84 high. MMM '
- '(3M) 182.90 - diversified industrial post-PFAS/earplug settlements; rev 25.2B, ROE 82% / ROIC 37% (flattered by a '
- 'reduced equity base - debt/equity 4.38), FCF 4.0B, dividend 1.7%; Q2 (Jul 21) beat, raised FY26 adj EPS to '
- '8.80-8.95, best organic growth in 5 years; trades near its 184.90 high so the avg target 181.85 implies ~no upside; '
- 'ttm revG and epsG NOT FOUND (so r40 blank); mixed analyst view (3 Sells). Total groups 20 -> 21; stocks 146 -> 153. '
- '| Aug 8 addition: MCHP (Microchip Technology, NASDAQ) added to Computing Chips at the Aug 7, 2026 close 84.69, UP '
- "13.89% that day, stamp 'At close: Aug 7, 2026, 4:00 PM EDT', second-sourced by MarketBeat. Watchlist only - no "
- 'position, no budget. Microchip makes microcontrollers, analog and connectivity chips for cars, industry, '
- 'aerospace/defence and data centres, and is RECOVERING from a deep inventory-correction downcycle. Q1 FY2027 (ended '
- 'Jun 30, reported Aug 6) was a clear beat and the trigger for the pop: net sales 1.485B (+38% YoY, +13% QoQ), GAAP '
- 'EPS 0.37 (vs a loss a year ago), non-GAAP EPS 0.76; Q2 guidance strong (~1.6B, +41% YoY); inventory days improving '
- '(185->175); PCIe Gen 6 / data-centre commentary cited. Pays a ~2.15% dividend (0.455/qtr). KEY VALUATION NOTE: '
- 'trailing P/E 124.83 and payout ratio 268% look alarming but are DISTORTED by trough earnings during the downturn - '
- 'the forward P/E is 21.46 and PEG 0.47, and analysts model FY2027 EPS +95% to 3.20; treat trailing metrics as low '
- 'quality. Fundamentals stored: rev 5.122B TTM (+20.93%), gross margin 60%, net margin 9.3%, EPS 0.67, FCF 1.11B, ROIC '
- '5.9%, debt/equity 0.84, EV/EBITDA 34.78. 25 analysts Buy (17 Strong Buy), avg target 109.21 (80-135). RISK: short '
- 'interest ~6.7%, still evaluating a Fab 2 (Tempe AZ) shutdown/sale, and the current price already embeds the +14% '
- 'earnings pop. NOT FOUND: jan2 (nearest was Jan 5 close 80.10), all-time high (52-wk high 105.91 stored as ath proxy; '
- 'note MarketBeat shows a much narrower 52-wk range 71.24-88.65 vs stockanalysis 48.52-105.91 - stockanalysis taken), '
- 'epsG, and a company-confirmed next earnings date. | Aug 8: DELETED FI (Fiserv) and COIN (Coinbase) from the '
- 'dashboard entirely per request - both were watchlist-only (no position, budget, or trade history), so removed '
- 'cleanly from STOCKS, POS and M3 with nothing to unwind. MOVED SE (Sea Limited) from Fintech / Digital Platform -> '
- 'Digital Applications (watchlist; field values untouched). Fintech / Digital Platform 10 -> 7 (V, MA, PYPL, HOOD, '
- "SOFI, NU, LMND); Digital Applications 8 -> 9 (added SE). Total stocks 154 -> 152. | Aug 8: renamed group 'Fintech / "
- "Digital Platform' -> 'Digital Fintech' (group index 14 unchanged, so all 7 members - V, MA, PYPL, HOOD, SOFI, NU, "
- 'LMND - carry over automatically with their data, positions and group P&L intact; label change only).')
+ASOF = ('Aug 7, 2026 · close — weekly refresh & integrity audit Aug 10: all 152 names now at the verified Aug 7 close. The 14 '
+ "stragglers left stale by Friday's daily job were advanced: AFRM 75.25 (its disputed Aug 4 base 79.56 abandoned; "
+ 'stockanalysis history Aug 4=78.12, Aug 7=75.25), TE 5.85 (+6.9% vs stored — the previously disputed Aug 6 close now '
+ 'reads 5.55 on stockanalysis, agreeing with Google; MarketBeat 2nd-sourced 5.88@3:59PM print), ZETA 26.64, YUM 150.76 '
+ '(quote page at-close; its history table is STILL frozen at Jul 31 — stuck feed, flagged), AXON 571.01 (+9.3%, '
+ 'marketscreener exact match; the bogus Aug 6 565.00 history row is gone, Aug 6 now reads 522.46 as MarketBeat '
+ 'confirmed), VEEV 230.47 (+5.8%, at-close quote with prev-close chain intact), RBRK 90.07 (+6.5%, macrotrends exact), '
+ 'LWLG 8.11 (+6.9%, marketscreener exact), XE 22.65 (+8.8%, marketscreener exact), UUUU 14.14 (+9.6%, MarketBeat '
+ 'exact), EOSE 4.15 (+5.3%, the formerly Google-only print now confirmed by stockanalysis history), HNGE 89.33 (+11.6% '
+ '— Aug 7 rebound after Aug 5 earnings; MarketBeat 89.04@3:59PM confirms magnitude), TMDX 83.89, LMND 52.94. All seven '
+ '≥6% moves were confirmed against an independent dated second source and allowed through the gate (TE, AXON, RBRK, '
+ 'LWLG, XE, UUUU, HNGE). Spot-checks NVDA 223.96 / MSFT 499.99 / GOOGL 354.30 match stored values. Market caps scaled '
+ 'with price; hi52 extended where breached. AUDIT FIXES: (1) MONTHLY 2026-08 was missing the four fills already '
+ 'recorded in TRADES on Aug 5-7 (TSM 1,873.23, NVDA 1,975.05, CRM 1,853.28, ISRG 1,887.98) — rolled up, buyUSD '
+ '10,045.56 -> 17,635.10, lots 6 -> 10, TOTALS.investedEverUSD 588,820.83 -> 596,410.37 (THB at stored fx 33.75). (2) '
+ 'Group attribution made consistent: REALIZED g set for TTD/APP (SaaS), SOFI/HOOD (Digital Fintech); SOLD g set for '
+ 'HOOD/SOFI (Digital Fintech), MELI (Digital Applications), APP (SaaS); MONTHLY[].byGroup re-attributed from byStock '
+ 'to the CURRENT group map (it still reflected pre-move groups for TSLA->Energy, MPWR->Power, IBM->Quantum, the '
+ 'Renewal Energy and Nuclear moves, and used -1 for re-added tickers). Deleted tickers keep their sold-time groups '
+ '(SNPS/TTD -> SaaS). POS and TRADES untouched. AUDIT NOTES (not fixed): TRADES amounts are inconsistent about '
+ 'commission — the nine fills Jul 28-Aug 4 include the 8.56 fee in amount (META 8.54) while Aug 5-7 fills exclude it '
+ 'per the stated convention; Salee to decide which convention TRADES should carry. Implied share counts vs the Aug 3 '
+ 'weekly baseline: no drift >2% — clean. invested-ever minus sold-cost (554,795 pre-fix) vs summed POS cost 568,038 '
+ 'differs by ~13.2k; ~7.6k was the missing Aug roll-up (now fixed), the rest is commissions embedded in POS costs plus '
+ 'the mixed TRADES convention — expected, not an error.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -1435,9 +1264,9 @@ STOCKS = [{'t': 'GOOGL',
   'name': 'Lightwave Logic',
   'ex': 'NASDAQ',
   'g': 4,
-  'price': 7.59,
+  'price': 8.11,
   'jan2': None,
-  'mcapB': 1.1693,
+  'mcapB': 1.2494,
   'ath': 19.56,
   'fvMin': None,
   'fvAvg': None,
@@ -1461,7 +1290,7 @@ STOCKS = [{'t': 'GOOGL',
   'budget': None,
   'lo52': 1.99,
   'hi52': 18.71,
-  'pxd': '2026-08-06'},
+  'pxd': '2026-08-07'},
  {'t': 'AXTI',
   'name': 'AXT Inc',
   'ex': 'NASDAQ',
@@ -1714,9 +1543,9 @@ STOCKS = [{'t': 'GOOGL',
   'name': "X-energy (IPO Apr 24 '26)",
   'ex': 'NASDAQ',
   'g': 16,
-  'price': 20.82,
+  'price': 22.65,
   'jan2': 23.0,
-  'mcapB': 8.4633,
+  'mcapB': 9.2072,
   'ath': 37.1,
   'fvMin': 22,
   'fvAvg': 37.86,
@@ -1740,14 +1569,14 @@ STOCKS = [{'t': 'GOOGL',
   'budget': None,
   'lo52': 13.29,
   'hi52': 37.1,
-  'pxd': '2026-08-06'},
+  'pxd': '2026-08-07'},
  {'t': 'UUUU',
   'name': 'Energy Fuels',
   'ex': 'NYSE American',
   'g': 16,
-  'price': 12.9,
+  'price': 14.14,
   'jan2': None,
-  'mcapB': 3.22,
+  'mcapB': 3.5295,
   'ath': 27.9,
   'fvMin': 16,
   'fvAvg': 26.13,
@@ -1771,7 +1600,7 @@ STOCKS = [{'t': 'GOOGL',
   'budget': None,
   'lo52': 8.16,
   'hi52': 27.9,
-  'pxd': '2026-08-06'},
+  'pxd': '2026-08-07'},
  {'t': 'LEU',
   'name': 'Centrus Energy',
   'ex': 'NYSE American',
@@ -1807,9 +1636,9 @@ STOCKS = [{'t': 'GOOGL',
   'name': 'T1 Energy',
   'ex': 'NYSE',
   'g': 5,
-  'price': 5.47,
+  'price': 5.85,
   'jan2': 6.94,
-  'mcapB': 1.5347,
+  'mcapB': 1.6413,
   'ath': 12.49,
   'fvMin': 8,
   'fvAvg': 10.07,
@@ -1833,14 +1662,14 @@ STOCKS = [{'t': 'GOOGL',
   'budget': None,
   'lo52': 1.15,
   'hi52': 12.49,
-  'pxd': '2026-08-05'},
+  'pxd': '2026-08-07'},
  {'t': 'EOSE',
   'name': 'Eos Energy Enterprises',
   'ex': 'NASDAQ',
   'g': 5,
-  'price': 3.94,
+  'price': 4.15,
   'jan2': 15.28,
-  'mcapB': 1.3985,
+  'mcapB': 1.473,
   'ath': 19.99,
   'fvMin': 5,
   'fvAvg': 8.78,
@@ -1864,7 +1693,7 @@ STOCKS = [{'t': 'GOOGL',
   'budget': None,
   'lo52': 3.36,
   'hi52': 19.86,
-  'pxd': '2026-08-06'},
+  'pxd': '2026-08-07'},
  {'t': 'ENPH',
   'name': 'Enphase Energy',
   'ex': 'NASDAQ',
@@ -2427,9 +2256,9 @@ STOCKS = [{'t': 'GOOGL',
   'name': 'Axon Enterprise',
   'ex': 'NASDAQ',
   'g': 8,
-  'price': 522.46,
+  'price': 571.01,
   'jan2': None,
-  'mcapB': 42.11,
+  'mcapB': 46.0231,
   'ath': 885.0,
   'fvMin': 409.68,
   'fvAvg': 683.4,
@@ -2453,7 +2282,7 @@ STOCKS = [{'t': 'GOOGL',
   'budget': None,
   'lo52': 339.01,
   'hi52': 885.0,
-  'pxd': '2026-08-06'},
+  'pxd': '2026-08-07'},
  {'t': 'RCAT',
   'name': 'Red Cat Holdings',
   'ex': 'NASDAQ',
@@ -2644,10 +2473,10 @@ STOCKS = [{'t': 'GOOGL',
   'name': 'Zeta Global',
   'ex': 'NYSE',
   'g': 10,
-  'price': 27.07,
+  'price': 26.64,
   'jan2': 20.54,
-  'mcapB': 6.7435,
-  'ath': 25.95,
+  'mcapB': 6.6364,
+  'ath': 26.64,
   'fvMin': 22,
   'fvAvg': 28.68,
   'fvMax': 44,
@@ -2670,7 +2499,7 @@ STOCKS = [{'t': 'GOOGL',
   'budget': None,
   'lo52': 12.1,
   'hi52': 27.07,
-  'pxd': '2026-08-05'},
+  'pxd': '2026-08-07'},
  {'t': 'CDNS',
   'name': 'Cadence Design Systems',
   'ex': 'NASDAQ',
@@ -2954,9 +2783,9 @@ STOCKS = [{'t': 'GOOGL',
   'name': 'Veeva Systems',
   'ex': 'NYSE',
   'g': 10,
-  'price': 217.8,
+  'price': 230.47,
   'jan2': None,
-  'mcapB': 35.3768,
+  'mcapB': 37.4348,
   'ath': 341.0,
   'fvMin': 165,
   'fvAvg': 244.14,
@@ -2980,7 +2809,7 @@ STOCKS = [{'t': 'GOOGL',
   'budget': None,
   'lo52': 148.05,
   'hi52': 310.5,
-  'pxd': '2026-08-06'},
+  'pxd': '2026-08-07'},
  {'t': 'TEAM',
   'name': 'Atlassian',
   'ex': 'NASDAQ',
@@ -3109,9 +2938,9 @@ STOCKS = [{'t': 'GOOGL',
   'name': 'Yum! Brands',
   'ex': 'NYSE',
   'g': 11,
-  'price': 152.37,
+  'price': 150.76,
   'jan2': 155.52,
-  'mcapB': 41.9939,
+  'mcapB': 41.5502,
   'ath': 170.14,
   'fvMin': 147,
   'fvAvg': 174.33,
@@ -3135,7 +2964,7 @@ STOCKS = [{'t': 'GOOGL',
   'budget': None,
   'lo52': 137.33,
   'hi52': 169.39,
-  'pxd': '2026-08-05'},
+  'pxd': '2026-08-07'},
  {'t': 'UNH',
   'name': 'UnitedHealth',
   'ex': 'NYSE',
@@ -3233,9 +3062,9 @@ STOCKS = [{'t': 'GOOGL',
   'name': 'Hinge Health',
   'ex': 'NYSE',
   'g': 12,
-  'price': 80.08,
+  'price': 89.33,
   'jan2': 45.56,
-  'mcapB': 6.2616,
+  'mcapB': 6.9849,
   'ath': 90.0,
   'fvMin': 65.0,
   'fvAvg': 92.67,
@@ -3259,14 +3088,14 @@ STOCKS = [{'t': 'GOOGL',
   'budget': None,
   'lo52': 30.08,
   'hi52': 91.5,
-  'pxd': '2026-08-06'},
+  'pxd': '2026-08-07'},
  {'t': 'TMDX',
   'name': 'TransMedics Group',
   'ex': 'NASDAQ',
   'g': 12,
-  'price': 80.21,
+  'price': 83.89,
   'jan2': None,
-  'mcapB': 2.78,
+  'mcapB': 2.9075,
   'ath': 156.0,
   'fvMin': 73,
   'fvAvg': 98.8,
@@ -3290,7 +3119,7 @@ STOCKS = [{'t': 'GOOGL',
   'budget': None,
   'lo52': 60.11,
   'hi52': 156.0,
-  'pxd': '2026-08-06'},
+  'pxd': '2026-08-07'},
  {'t': 'CRSP',
   'name': 'CRISPR Therapeutics',
   'ex': 'NASDAQ',
@@ -3822,9 +3651,9 @@ STOCKS = [{'t': 'GOOGL',
   'name': 'Lemonade',
   'ex': 'NYSE',
   'g': 14,
-  'price': 51.86,
+  'price': 52.94,
   'jan2': 75.96,
-  'mcapB': 4.0158,
+  'mcapB': 4.0994,
   'ath': 183.26,
   'fvMin': 37.0,
   'fvAvg': 61.22,
@@ -3848,7 +3677,7 @@ STOCKS = [{'t': 'GOOGL',
   'budget': None,
   'lo52': 36.13,
   'hi52': 99.9,
-  'pxd': '2026-08-06'},
+  'pxd': '2026-08-07'},
  {'t': 'CRWD',
   'name': 'CrowdStrike',
   'ex': 'NASDAQ',
@@ -4008,9 +3837,9 @@ STOCKS = [{'t': 'GOOGL',
   'name': 'Rubrik',
   'ex': 'NYSE',
   'g': 15,
-  'price': 84.6,
+  'price': 90.07,
   'jan2': 75.47,
-  'mcapB': 17.4131,
+  'mcapB': 18.539,
   'ath': 103.0,
   'fvMin': 85.0,
   'fvAvg': 95.23,
@@ -4034,7 +3863,7 @@ STOCKS = [{'t': 'GOOGL',
   'budget': None,
   'lo52': 42.25,
   'hi52': 99.75,
-  'pxd': '2026-08-06'},
+  'pxd': '2026-08-07'},
  {'t': 'PWR',
   'name': 'Quanta Services',
   'ex': 'NYSE',
@@ -4597,9 +4426,9 @@ STOCKS = [{'t': 'GOOGL',
   'name': 'Affirm Holdings',
   'ex': 'NASDAQ',
   'g': 19,
-  'price': 79.56,
+  'price': 75.25,
   'jan2': 81.8,
-  'mcapB': 26.6462,
+  'mcapB': 25.2027,
   'ath': 92.18,
   'fvMin': 55.1,
   'fvAvg': 90.5,
@@ -4623,7 +4452,7 @@ STOCKS = [{'t': 'GOOGL',
   'budget': None,
   'lo52': 42.1,
   'hi52': 100.0,
-  'pxd': '2026-08-04'},
+  'pxd': '2026-08-07'},
  {'t': 'UBER',
   'name': 'Uber Technologies',
   'ex': 'NYSE',
@@ -5273,14 +5102,14 @@ REALIZED = [{'t': 'NBIS', 'g': 13, 'amount': 1404.52},
  {'t': 'IONQ', 'g': 9, 'amount': -772.46},
  {'t': 'SNPS', 'g': 10, 'amount': -263.2},
  {'t': 'NOW', 'g': 10, 'amount': -401.51},
- {'t': 'TTD', 'g': None, 'amount': -421.11},
+ {'t': 'TTD', 'g': 10, 'amount': -421.11},
  {'t': 'MELI', 'g': 19, 'amount': 272.72},
- {'t': 'APP', 'g': None, 'amount': -393.16},
- {'t': 'SOFI', 'g': None, 'amount': -152.4},
- {'t': 'HOOD', 'g': None, 'amount': 897.82}]
+ {'t': 'APP', 'g': 10, 'amount': -393.16},
+ {'t': 'SOFI', 'g': 14, 'amount': -152.4},
+ {'t': 'HOOD', 'g': 14, 'amount': 897.82}]
 
-TOTALS = {'investedEverUSD': 588820.83,
- 'investedEverTHB': 18974168,
+TOTALS = {'investedEverUSD': 596410.37,
+ 'investedEverTHB': 19230315,
  'soldCostUSD': 34025.62,
  'soldCostTHB': 1143440,
  'realizedUSD': -2478.01,
@@ -5302,7 +5131,7 @@ SOLD = [{'t': 'NBIS',
   'costTHB': 64909.61,
   'glUSD': 897.82,
   'glTHB': 30139.82,
-  'g': -1,
+  'g': 14,
   'lastDate': '2026-07-16'},
  {'t': 'MELI',
   'qty': 1,
@@ -5310,7 +5139,7 @@ SOLD = [{'t': 'NBIS',
   'costTHB': 53119.83,
   'glUSD': 272.72,
   'glTHB': 9155.21,
-  'g': -1,
+  'g': 19,
   'lastDate': '2026-07-16'},
  {'t': 'IREN',
   'qty': 45,
@@ -5326,7 +5155,7 @@ SOLD = [{'t': 'NBIS',
   'costTHB': 67358.56,
   'glUSD': -152.4,
   'glTHB': -5116.08,
-  'g': -1,
+  'g': 14,
   'lastDate': '2026-07-16'},
  {'t': 'SNPS',
   'qty': 4,
@@ -5342,7 +5171,7 @@ SOLD = [{'t': 'NBIS',
   'costTHB': 69193.6,
   'glUSD': -393.16,
   'glTHB': -13202.31,
-  'g': -1,
+  'g': 10,
   'lastDate': '2026-07-17'},
  {'t': 'NOW',
   'qty': 37,
@@ -5496,7 +5325,7 @@ MONTHLY = [{'ym': '2025-07',
               {'g': 1, 'buy': 39577.73, 'sell': 0.0, 'real': 0.0},
               {'g': 2, 'buy': 4859.84, 'sell': 0.0, 'real': 0.0},
               {'g': 3, 'buy': 5875.68, 'sell': 0.0, 'real': 0.0},
-              {'g': 6, 'buy': 2246.06, 'sell': 0.0, 'real': 0.0},
+              {'g': 5, 'buy': 2246.06, 'sell': 0.0, 'real': 0.0},
               {'g': 10, 'buy': 2016.16, 'sell': 0.0, 'real': 0.0}]},
  {'ym': '2026-02',
   'buyUSD': 56458.99,
@@ -5525,12 +5354,13 @@ MONTHLY = [{'ym': '2025-07',
               {'t': 'VRT', 'buy': 1435.88, 'sell': 0.0, 'real': 0.0}],
   'byGroup': [{'g': 0, 'buy': 15779.31, 'sell': 0.0, 'real': 0.0},
               {'g': 1, 'buy': 21059.56, 'sell': 0.0, 'real': 0.0},
-              {'g': 2, 'buy': 7791.24, 'sell': 0.0, 'real': 0.0},
-              {'g': 5, 'buy': 1435.88, 'sell': 0.0, 'real': 0.0},
-              {'g': 6, 'buy': 2058.56, 'sell': 0.0, 'real': 0.0},
+              {'g': 2, 'buy': 5735.68, 'sell': 0.0, 'real': 0.0},
+              {'g': 5, 'buy': 2058.56, 'sell': 0.0, 'real': 0.0},
               {'g': 8, 'buy': 5273.92, 'sell': 0.0, 'real': 0.0},
               {'g': 9, 'buy': 1566.96, 'sell': 0.0, 'real': 0.0},
-              {'g': 13, 'buy': 1493.56, 'sell': 0.0, 'real': 0.0}]},
+              {'g': 13, 'buy': 1493.56, 'sell': 0.0, 'real': 0.0},
+              {'g': 15, 'buy': 2055.56, 'sell': 0.0, 'real': 0.0},
+              {'g': 18, 'buy': 1435.88, 'sell': 0.0, 'real': 0.0}]},
  {'ym': '2026-03',
   'buyUSD': 64002.08,
   'buyLots': 32,
@@ -5556,15 +5386,16 @@ MONTHLY = [{'ym': '2025-07',
               {'t': 'HOOD', 'buy': 1933.56, 'sell': 0.0, 'real': 0.0},
               {'t': 'CRWD', 'buy': 1863.56, 'sell': 0.0, 'real': 0.0},
               {'t': 'AMD', 'buy': 1804.06, 'sell': 0.0, 'real': 0.0}],
-  'byGroup': [{'g': -1, 'buy': 1933.56, 'sell': 0.0, 'real': 0.0},
-              {'g': 0, 'buy': 21162.75, 'sell': 0.0, 'real': 0.0},
+  'byGroup': [{'g': 0, 'buy': 21162.75, 'sell': 0.0, 'real': 0.0},
               {'g': 1, 'buy': 19245.81, 'sell': 0.0, 'real': 0.0},
-              {'g': 2, 'buy': 1863.56, 'sell': 0.0, 'real': 0.0},
               {'g': 3, 'buy': 2033.56, 'sell': 0.0, 'real': 0.0},
               {'g': 4, 'buy': 6004.93, 'sell': 0.0, 'real': 0.0},
-              {'g': 5, 'buy': 4082.62, 'sell': 0.0, 'real': 0.0},
               {'g': 6, 'buy': 3772.32, 'sell': 0.0, 'real': 0.0},
-              {'g': 10, 'buy': 3902.97, 'sell': 0.0, 'real': 0.0}]},
+              {'g': 10, 'buy': 3902.97, 'sell': 0.0, 'real': 0.0},
+              {'g': 14, 'buy': 1933.56, 'sell': 0.0, 'real': 0.0},
+              {'g': 15, 'buy': 1863.56, 'sell': 0.0, 'real': 0.0},
+              {'g': 16, 'buy': 1994.06, 'sell': 0.0, 'real': 0.0},
+              {'g': 18, 'buy': 2088.56, 'sell': 0.0, 'real': 0.0}]},
  {'ym': '2026-04',
   'buyUSD': 57480.27,
   'buyLots': 30,
@@ -5598,14 +5429,15 @@ MONTHLY = [{'ym': '2025-07',
               {'t': 'AVGO', 'buy': 1718.56, 'sell': 0.0, 'real': 0.0},
               {'t': 'MPWR', 'buy': 1538.56, 'sell': 0.0, 'real': 0.0},
               {'t': 'ASML', 'buy': 1465.56, 'sell': 0.0, 'real': 0.0}],
-  'byGroup': [{'g': -1, 'buy': 2006.51, 'sell': 0.0, 'real': 0.0},
-              {'g': 0, 'buy': 11188.07, 'sell': 0.0, 'real': 0.0},
+  'byGroup': [{'g': 0, 'buy': 11188.07, 'sell': 0.0, 'real': 0.0},
               {'g': 1, 'buy': 9917.79, 'sell': 0.0, 'real': 0.0},
-              {'g': 2, 'buy': 7172.24, 'sell': 0.0, 'real': 0.0},
+              {'g': 2, 'buy': 3411.62, 'sell': 0.0, 'real': 0.0},
               {'g': 4, 'buy': 3925.12, 'sell': 0.0, 'real': 0.0},
-              {'g': 5, 'buy': 5668.48, 'sell': 0.0, 'real': 0.0},
-              {'g': 10, 'buy': 11709.64, 'sell': 0.0, 'real': 0.0},
-              {'g': 13, 'buy': 5892.41, 'sell': 0.0, 'real': 0.0}]},
+              {'g': 10, 'buy': 11709.65, 'sell': 0.0, 'real': 0.0},
+              {'g': 13, 'buy': 5892.42, 'sell': 0.0, 'real': 0.0},
+              {'g': 14, 'buy': 2006.51, 'sell': 0.0, 'real': 0.0},
+              {'g': 15, 'buy': 3760.62, 'sell': 0.0, 'real': 0.0},
+              {'g': 17, 'buy': 5668.48, 'sell': 0.0, 'real': 0.0}]},
  {'ym': '2026-05',
   'buyUSD': 68940.1,
   'buyLots': 36,
@@ -5639,18 +5471,19 @@ MONTHLY = [{'ym': '2025-07',
               {'t': 'MU', 'buy': 1710.56, 'sell': 0.0, 'real': 0.0},
               {'t': 'MSFT', 'buy': 1708.24, 'sell': 0.0, 'real': 0.0},
               {'t': 'MELI', 'buy': 1582.36, 'sell': 0.0, 'real': 0.0}],
-  'byGroup': [{'g': -1, 'buy': 1582.36, 'sell': 0.0, 'real': 0.0},
-              {'g': 0, 'buy': 16965.47, 'sell': 0.0, 'real': 0.0},
+  'byGroup': [{'g': 0, 'buy': 16965.47, 'sell': 0.0, 'real': 0.0},
               {'g': 1, 'buy': 13540.25, 'sell': 0.0, 'real': 0.0},
               {'g': 2, 'buy': 2054.39, 'sell': 0.0, 'real': 0.0},
               {'g': 3, 'buy': 1710.56, 'sell': 0.0, 'real': 0.0},
               {'g': 4, 'buy': 9673.21, 'sell': 0.0, 'real': 0.0},
-              {'g': 5, 'buy': 9911.16, 'sell': 0.0, 'real': 0.0},
               {'g': 6, 'buy': 1724.56, 'sell': 0.0, 'real': 0.0},
               {'g': 8, 'buy': 3966.27, 'sell': 0.0, 'real': 0.0},
               {'g': 9, 'buy': 2002.3, 'sell': 0.0, 'real': 0.0},
               {'g': 10, 'buy': 3871.01, 'sell': 0.0, 'real': 0.0},
-              {'g': 13, 'buy': 1938.56, 'sell': 0.0, 'real': 0.0}]},
+              {'g': 13, 'buy': 1938.56, 'sell': 0.0, 'real': 0.0},
+              {'g': 16, 'buy': 4014.23, 'sell': 0.0, 'real': 0.0},
+              {'g': 17, 'buy': 5896.93, 'sell': 0.0, 'real': 0.0},
+              {'g': 19, 'buy': 1582.36, 'sell': 0.0, 'real': 0.0}]},
  {'ym': '2026-06',
   'buyUSD': 72759.17,
   'buyLots': 37,
@@ -5682,14 +5515,14 @@ MONTHLY = [{'ym': '2025-07',
               {'t': 'ALAB', 'buy': 1874.91, 'sell': 0.0, 'real': 0.0},
               {'t': 'META', 'buy': 1832.09, 'sell': 0.0, 'real': 0.0}],
   'byGroup': [{'g': 0, 'buy': 9862.82, 'sell': 0.0, 'real': 0.0},
-              {'g': 1, 'buy': 21388.51, 'sell': 0.0, 'real': 0.0},
-              {'g': 2, 'buy': 6054.64, 'sell': 0.0, 'real': 0.0},
+              {'g': 1, 'buy': 21388.5, 'sell': 0.0, 'real': 0.0},
+              {'g': 2, 'buy': 6054.65, 'sell': 0.0, 'real': 0.0},
               {'g': 3, 'buy': 5822.22, 'sell': 0.0, 'real': 0.0},
               {'g': 4, 'buy': 13511.7, 'sell': 0.0, 'real': 0.0},
-              {'g': 5, 'buy': 2089.06, 'sell': 0.0, 'real': 0.0},
               {'g': 6, 'buy': 6028.68, 'sell': 0.0, 'real': 0.0},
               {'g': 7, 'buy': 1942.58, 'sell': 0.0, 'real': 0.0},
-              {'g': 10, 'buy': 6058.96, 'sell': 0.0, 'real': 0.0}]},
+              {'g': 10, 'buy': 6058.96, 'sell': 0.0, 'real': 0.0},
+              {'g': 16, 'buy': 2089.06, 'sell': 0.0, 'real': 0.0}]},
  {'ym': '2026-07',
   'buyUSD': 34632.83,
   'buyLots': 18,
@@ -5721,20 +5554,21 @@ MONTHLY = [{'ym': '2025-07',
               {'t': 'SNPS', 'buy': 0.0, 'sell': 1671.36, 'real': -263.2},
               {'t': 'TTD', 'buy': 0.0, 'sell': 1530.59, 'real': -421.11},
               {'t': 'CRWV', 'buy': 0.0, 'sell': 1211.54, 'real': -786.02}],
-  'byGroup': [{'g': -1, 'buy': 2060.56, 'sell': 8207.97, 'real': 624.98},
-              {'g': 0, 'buy': 9966.25, 'sell': 0.0, 'real': 0.0},
+  'byGroup': [{'g': 0, 'buy': 9966.26, 'sell': 0.0, 'real': 0.0},
               {'g': 1, 'buy': 4025.07, 'sell': 0.0, 'real': 0.0},
               {'g': 2, 'buy': 3577.04, 'sell': 0.0, 'real': 0.0},
               {'g': 3, 'buy': 5429.65, 'sell': 0.0, 'real': 0.0},
-              {'g': 5, 'buy': 4015.74, 'sell': 0.0, 'real': 0.0},
               {'g': 6, 'buy': 1763.71, 'sell': 0.0, 'real': 0.0},
               {'g': 8, 'buy': 2081.74, 'sell': 0.0, 'real': 0.0},
-              {'g': 9, 'buy': 0.0, 'sell': 2796.8, 'real': -772.46},
-              {'g': 10, 'buy': 1713.07, 'sell': 12236.45, 'real': -3047.55},
-              {'g': 13, 'buy': 0.0, 'sell': 8306.39, 'real': 717.02}]},
+              {'g': 9, 'buy': 1713.07, 'sell': 2796.8, 'real': -772.46},
+              {'g': 10, 'buy': 2060.56, 'sell': 13903.85, 'real': -3440.71},
+              {'g': 13, 'buy': 0.0, 'sell': 8306.39, 'real': 717.01},
+              {'g': 14, 'buy': 0.0, 'sell': 4685.49, 'real': 745.42},
+              {'g': 16, 'buy': 4015.74, 'sell': 0.0, 'real': 0.0},
+              {'g': 19, 'buy': 0.0, 'sell': 1855.08, 'real': 272.72}]},
  {'ym': '2026-08',
-  'buyUSD': 10045.56,
-  'buyLots': 6,
+  'buyUSD': 17635.1,
+  'buyLots': 10,
   'sellUSD': 0.0,
   'sellLots': 0,
   'realizedUSD': 0.0,
@@ -5744,8 +5578,16 @@ MONTHLY = [{'ym': '2025-07',
               {'t': 'META', 'buy': 2049.88, 'sell': 0.0, 'real': 0.0},
               {'t': 'AAOI', 'buy': 1338.56, 'sell': 0.0, 'real': 0.0},
               {'t': 'COHR', 'buy': 1328.56, 'sell': 0.0, 'real': 0.0},
-              {'t': 'FN', 'buy': 1604.56, 'sell': 0.0, 'real': 0.0}],
-  'byGroup': [{'g': 0, 'buy': 4055.96, 'sell': 0.0, 'real': 0.0}, {'g': 4, 'buy': 5989.6, 'sell': 0.0, 'real': 0.0}]}]
+              {'t': 'FN', 'buy': 1604.56, 'sell': 0.0, 'real': 0.0},
+              {'t': 'TSM', 'buy': 1873.23, 'sell': 0.0, 'real': 0.0},
+              {'t': 'NVDA', 'buy': 1975.05, 'sell': 0.0, 'real': 0.0},
+              {'t': 'CRM', 'buy': 1853.28, 'sell': 0.0, 'real': 0.0},
+              {'t': 'ISRG', 'buy': 1887.98, 'sell': 0.0, 'real': 0.0}],
+  'byGroup': [{'g': 0, 'buy': 4055.96, 'sell': 0.0, 'real': 0.0},
+              {'g': 1, 'buy': 3848.28, 'sell': 0.0, 'real': 0.0},
+              {'g': 4, 'buy': 5989.6, 'sell': 0.0, 'real': 0.0},
+              {'g': 6, 'buy': 1887.98, 'sell': 0.0, 'real': 0.0},
+              {'g': 10, 'buy': 1853.28, 'sell': 0.0, 'real': 0.0}]}]
 
 THBFX = {'GOOGL': 32.2446,
  'NVDA': 32.084,
