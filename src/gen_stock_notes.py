@@ -139,6 +139,14 @@ def attribute(segments, tickers):
     return out
 
 
+def _ovf(overviews, t, field):
+    """One overview field; tolerates the older plain-string format."""
+    v = overviews.get(t)
+    if isinstance(v, str):
+        return v if field == 'short' else ''
+    return (v or {}).get(field, '')
+
+
 def read_our_notes_csv():
     """Durable copy of Salee & Dad's own notes, committed in the repo.
 
@@ -241,8 +249,9 @@ def build(out_path):
         ('', ''),
         ('SHEET', 'WHAT IS IN IT'),
         ('Stock Index',
-         'One row per ticker: a plain-English line on WHAT THE COMPANY DOES, then group, whether you '
-         'hold it, shares, cost, budget, last stored price, how many comments exist, and the most '
+         'One row per ticker: a plain-English line on WHAT THE COMPANY DOES, then when it was '
+         'founded, its headquarters, employee count, and a short note on its operations and mission '
+         '- followed by group, whether you hold it, shares, cost, budget, last price and the most '
          'recent thing Claude said about it. Start here.'),
         ('Comment Log',
          'Executive summaries, one row per stock per week (Monday-Sunday). GREEN text = something '
@@ -374,10 +383,11 @@ def build(out_path):
 
     # ---------------- Stock Index ----------------
     idx = wb.create_sheet('Stock Index', 1)
-    style_header(idx, ['Ticker', 'Company', 'What the company does', 'Group', 'Held', 'Shares',
+    style_header(idx, ['Ticker', 'Company', 'What the company does', 'Founded', 'Headquarters',
+                       'Employees', 'Operations & mission', 'Group', 'Held', 'Shares',
                        'Cost (USD)', 'Budget (USD)', 'Last close (USD)', 'Price date', 'Comments',
                        'First comment', 'Last comment', 'Most recent comment'],
-                 [10, 24, 62, 24, 7, 10, 13, 13, 14, 12, 11, 13, 13, 90])
+                 [10, 22, 52, 9, 26, 11, 78, 22, 7, 10, 13, 13, 14, 12, 11, 13, 13, 80])
     for s in stocks:
         t = s['t']
         pos = P.POS.get(t, {})
@@ -391,7 +401,11 @@ def build(out_path):
             latest = latest[:900].rsplit(' ', 1)[0] + ' ...'
         r = idx.max_row + 1
         idx.append([
-            t, s['name'], overviews.get(t, ''), P.GROUPS[s['g']],
+            t, s['name'], _ovf(overviews, t, 'short'), _ovf(overviews, t, 'founded'),
+            _ovf(overviews, t, 'hq'), _ovf(overviews, t, 'employees'),
+            ' '.join(x for x in (_ovf(overviews, t, 'operations'),
+                                 _ovf(overviews, t, 'mission')) if x),
+            P.GROUPS[s['g']],
             'YES' if pos.get('shares') else '',
             pos.get('shares'), pos.get('cost'), pos.get('budget'),
             s.get('price'), s.get('pxd'),
@@ -403,16 +417,16 @@ def build(out_path):
         for c in row:
             c.font = Font(name=FONT, size=10)
             c.border = BOX
-            c.alignment = TOPWRAP if c.column in (3, 14) else TOP
-        row[4].alignment = Alignment(horizontal='center', vertical='top')
-        if row[4].value == 'YES':
-            row[4].font = Font(name=FONT, size=10, bold=True, color='006100')
-        for i in (6,):
+            c.alignment = TOPWRAP if c.column in (3, 5, 7, 18) else TOP
+        row[8].alignment = Alignment(horizontal='center', vertical='top')
+        if row[8].value == 'YES':
+            row[8].font = Font(name=FONT, size=10, bold=True, color='006100')
+        for i in (10,):
             row[i].number_format = '#,##0.00'
-        for i in (7, 8):
+        for i in (11, 12):
             row[i].number_format = '$#,##0;($#,##0);-'
-        row[5].number_format = '#,##0.##'
-    idx.auto_filter.ref = f'A1:N{idx.max_row}'
+        row[9].number_format = '#,##0.##'
+    idx.auto_filter.ref = f'A1:R{idx.max_row}'
 
     # ---------------- Dashboard Notes ----------------
     dn = wb.create_sheet('Dashboard Notes')

@@ -16,6 +16,24 @@ sys.path.insert(0, HERE)
 import portfolio_data as P
 from gen_stock_notes import FOLLOW_UPS, week_label
 
+def _ov(v):
+    """Company overview record; tolerates the older plain-string format."""
+    if isinstance(v, str):
+        return {'short': v}
+    return v or {}
+
+
+def _facts(o):
+    bits = []
+    if o.get('founded'):
+        bits.append('Founded ' + o['founded'])
+    if o.get('hq'):
+        bits.append(o['hq'])
+    if o.get('employees'):
+        bits.append(o['employees'] + ' employees')
+    return ' \u00b7 '.join(bits)
+
+
 def build(out_path):
     weekly = json.load(open(os.path.join(HERE, 'weekly_summaries.json')))
     ovpath = os.path.join(HERE, 'company_overviews.json')
@@ -27,7 +45,10 @@ def build(out_path):
         weeks = sorted(weekly.get(t, []), key=lambda w: w['week'], reverse=True)
         stocks.append({
             't': t, 'name': s['name'], 'g': P.GROUPS[s['g']],
-            'desc': overviews.get(t, ''),
+            'desc': _ov(overviews.get(t)).get('short', ''),
+            'facts': _facts(_ov(overviews.get(t))),
+            'ops': _ov(overviews.get(t)).get('operations', ''),
+            'mis': _ov(overviews.get(t)).get('mission', ''),
             'held': bool(pos.get('shares')),
             'sh': pos.get('shares'), 'cost': pos.get('cost'), 'bud': pos.get('budget'),
             'px': s.get('price'), 'pxd': s.get('pxd'),
@@ -71,6 +92,8 @@ header a{color:#cfe0ff}
 .card .meta{color:var(--mut);font-size:14px;margin-bottom:8px}
 .desc{background:#eaf1fb;border-left:5px solid var(--blue);border-radius:0 12px 12px 0;padding:12px 14px;margin:4px 0 10px;font-size:17px;line-height:1.5;color:#1c2b45}
 .desc b{display:block;font-size:12px;letter-spacing:.5px;text-transform:uppercase;color:var(--blue);margin-bottom:3px;font-weight:700}
+.desc .facts{margin-top:8px;font-size:14px;font-weight:700;color:var(--blue)}
+.desc p{margin:8px 0 0;font-size:16px;line-height:1.5}
 .badge{display:inline-block;background:#e7f3ea;color:var(--green);font-size:13px;font-weight:700;border-radius:8px;padding:2px 8px;margin-left:6px}
 .wk{border-top:1px solid var(--line);padding:10px 0 2px;margin-top:8px}
 .wk h3{margin:0 0 6px;font-size:15px;color:var(--blue)}
@@ -123,7 +146,13 @@ function cardHtml(s, weeksToShow){
   if(s.px!=null) h += ' · last close $'+s.px.toLocaleString()+(s.pxd?' ('+s.pxd+')':'');
   if(s.held) h += ' · cost '+money(s.cost)+(s.bud?' · budget '+money(s.bud):'');
   h += '</div>';
-  if(s.desc) h += '<div class="desc"><b>What this company does</b>'+esc(s.desc)+'</div>';
+  if(s.desc || s.ops){
+    h += '<div class="desc"><b>What this company does</b>'+esc(s.desc);
+    if(s.facts) h += '<div class="facts">'+esc(s.facts)+'</div>';
+    if(s.ops) h += '<p>'+esc(s.ops)+'</p>';
+    if(s.mis) h += '<p>'+esc(s.mis)+'</p>';
+    h += '</div>';
+  }
   const wk = weeksToShow || s.weeks;
   if(!wk.length) h += '<div class="empty">No comments on record yet for this stock.</div>';
   for(const w of wk){
