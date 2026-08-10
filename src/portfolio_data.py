@@ -27,7 +27,26 @@ ASOF = ('Aug 7, 2026 · close — weekly refresh & integrity audit Aug 10: all 1
  'per the stated convention; Salee to decide which convention TRADES should carry. Implied share counts vs the Aug 3 '
  'weekly baseline: no drift >2% — clean. invested-ever minus sold-cost (554,795 pre-fix) vs summed POS cost 568,038 '
  'differs by ~13.2k; ~7.6k was the missing Aug roll-up (now fixed), the rest is commissions embedded in POS costs plus '
- 'the mixed TRADES convention — expected, not an error.')
+ 'the mixed TRADES convention — expected, not an error. | Aug 10 addition: NXPI (NXP Semiconductors N.V., NASDAQ) '
+ "added to Computing Chips at the Aug 7, 2026 close 239.71 (+3.42%), stamp 'At close: Aug 7, 2026, 4:00 PM EDT', "
+ 'second-sourced by MarketBeat. Watchlist only - no position, no budget. NXP makes the chips that run CARS (engine '
+ 'control, driver-assist radar, digital car keys), factory machines and connected devices, plus the secure chips '
+ 'behind contactless payment. THE KEY POINT: it is coming OUT of the automotive-chip downcycle. FY2025 was the trough '
+ '(revenue -2.73%, EPS -17.36%), but TTM revenue is now +8.77% and Q2 2026 (reported Jul 28) grew +19% YoY with '
+ 'Industrial & IoT +38% and Automotive +12%; Q3 guidance is +15-21% YoY. Profitable and shareholder-friendly: gross '
+ 'margin 56.04%, net margin 22.56%, EPS 11.72 (+39.69%), ROE 27.92%, ROIC 17.99%, free cash flow 2.81B, dividend yield '
+ '1.69% plus buybacks. Valuation is the cheapest in the Computing Chips group: trailing P/E 20.46, forward P/E 14.33, '
+ 'PEG 0.74, EV/EBITDA 13.66 - and it trades ~29.5% BELOW its 52-week high of 339.95 despite being up 16.41% over 52 '
+ 'weeks. 30 analysts, consensus Buy, avg target 311.10 (190-400) = ~30% implied upside. CAUTION: the Buy consensus is '
+ 'thinning at the margin - UBS DOWNGRADED to Hold on Aug 3 (target 305 -> 270) and Bernstein stayed Hold the same day '
+ '(270 -> 290). Debt/equity 0.93 with 10.98B total debt vs 3.22B cash is the highest leverage among the chip names '
+ "here, and beta 1.82 makes it volatile. Next earnings Oct 27, 2026 - COMPANY-CONFIRMED on NXP's IR events page "
+ "(MarketBeat's Oct 26 is only an estimate). NOT FOUND: jan2, all-time high (52-wk high 339.95 stored as ath proxy), "
+ 'the dates of the 52-week high/low, and any explicit China revenue-exposure percentage. CONFLICTS on record: forward '
+ 'P/E 14.33 (stockanalysis) vs 15.92 (GuruFocus) vs 17.46 (MarketBeat) - treat forward P/E as a 14-17.5 range; '
+ 'trailing EPS 11.72 (stockanalysis TTM to Jun 28) vs 9.00 (GuruFocus, lagged basis), which drives a trailing P/E gap '
+ 'of 20.46 vs 26.39; analyst panel 30 / avg 311.10 (stockanalysis) vs 26 / 305.43 (MarketBeat). stockanalysis taken '
+ 'throughout.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -515,6 +534,37 @@ STOCKS = [{'t': 'GOOGL',
   'budget': None,
   'lo52': 48.52,
   'hi52': 105.91,
+  'pxd': '2026-08-07'},
+ {'t': 'NXPI',
+  'name': 'NXP Semiconductors',
+  'ex': 'NASDAQ',
+  'g': 1,
+  'price': 239.71,
+  'jan2': None,
+  'mcapB': 60.45,
+  'ath': 339.95,
+  'fvMin': 190,
+  'fvAvg': 311.1,
+  'fvMax': 400,
+  'an': 30,
+  'peg': 0.74,
+  'ps': 4.58,
+  'fpe': 14.33,
+  'pe': 20.46,
+  'gm': 56.04,
+  'pm': 22.56,
+  'revB': 13.185,
+  'revG': 8.77,
+  'eps': 11.72,
+  'epsG': 39.69,
+  'roi': 17.99,
+  'roe': 27.92,
+  'fcfB': 2.81,
+  'capexB': 0.323,
+  'r40': 30.08,
+  'budget': None,
+  'lo52': 183.0,
+  'hi52': 339.95,
   'pxd': '2026-08-07'},
  {'t': 'ASML',
   'name': 'ASML Holding',
@@ -4915,7 +4965,8 @@ POS = {'GOOGL': {'budget': 60000, 'cost': 55324.68, 'shares': 205},
  'DE': {'budget': None, 'cost': None, 'shares': None},
  'GE': {'budget': None, 'cost': None, 'shares': None},
  'MMM': {'budget': None, 'cost': None, 'shares': None},
- 'MCHP': {'budget': None, 'cost': None, 'shares': None}}
+ 'MCHP': {'budget': None, 'cost': None, 'shares': None},
+ 'NXPI': {'budget': None, 'cost': None, 'shares': None}}
 
 TRADES = [{'date': 'Jul 21, 2026',
   'action': 'BUY',
@@ -5798,7 +5849,8 @@ M3 = {'GOOGL': {'pfcf': 72.54, 'ev': 21.6, 'de': 0.18},
  'DE': {'pfcf': 44.48, 'ev': 19.72, 'de': 2.35},
  'GE': {'pfcf': 45.73, 'ev': 37.22, 'de': 1.13},
  'MMM': {'pfcf': 23.67, 'ev': 16.99, 'de': 4.38},
- 'MCHP': {'pfcf': 41.4, 'ev': 34.78, 'de': 0.84}}
+ 'MCHP': {'pfcf': 41.4, 'ev': 34.78, 'de': 0.84},
+ 'NXPI': {'pfcf': 21.54, 'ev': 13.66, 'de': 0.93}}
 
 METRICS3 = M3  # alias: per-ticker pfcf / ev (EV/EBITDA) / de (Debt/Equity)
 

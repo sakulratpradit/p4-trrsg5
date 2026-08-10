@@ -1365,5 +1365,14 @@
   "operations": "Runs cloud-based security services worldwide that inspect the internet traffic between staff and the applications and files they use.",
   "mission": "To protect companies by checking every connection through the cloud rather than trusting anyone inside the network.",
   "src": "https://stockanalysis.com/stocks/zs/company/"
+ },
+ "NXPI": {
+  "short": "NXP — the chips that run cars, factory machines and connected devices.",
+  "founded": "2006",
+  "hq": "Netherlands",
+  "employees": "32,169",
+  "operations": "Runs sites in more than 30 countries across the Americas, Asia-Pacific and Europe, selling through its own sales offices and independent distributors.",
+  "mission": "Aims to build complete solutions rather than just products, expanding what people, organisations and society can do.",
+  "src": "https://stockanalysis.com/stocks/nxpi/company/"
  }
 }

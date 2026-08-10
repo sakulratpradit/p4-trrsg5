@@ -4478,5 +4478,28 @@
     }
    ]
   }
+ ],
+ "NXPI": [
+  {
+   "week": "2026-08-10",
+   "points": [
+    {
+     "s": "0",
+     "text": "NXPI (NXP Semiconductors) added to Computing Chips at the Aug 7 close $239.71. Makes the chips inside cars, factory machines and payment cards. Watchlist only."
+    },
+    {
+     "s": "+",
+     "text": "Coming out of the car-chip downturn: last year sales fell, but the latest quarter grew 19% and the industrial arm grew 38%. Next quarter guided up 15-21%."
+    },
+    {
+     "s": "+",
+     "text": "Cheapest chip name on our board: 20x trailing earnings, ~14x forward, PEG 0.74, and it sits ~30% below its 52-week high. Pays a 1.7% dividend. 30 analysts average $311 (~30% upside)."
+    },
+    {
+     "s": "-",
+     "text": "Sentiment is cooling at the edges - UBS downgraded it to Hold on Aug 3 and cut its target. It also carries the most debt of our chipmakers ($11.0B vs $3.2B cash) and is volatile (beta 1.8)."
+    }
+   ]
+  }
  ]
 }
