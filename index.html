@@ -270,6 +270,14 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
 .wheel-card .wc-gp{font-size:25px; font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
 .wheel-card .wc-n{font-size:15px; fill:var(--ink-3); letter-spacing:.2em; font-weight:600}
 .wheel-card .wc-g.pos,.wheel-card .wc-gp.pos{fill:var(--good)} .wheel-card .wc-g.neg,.wheel-card .wc-gp.neg{fill:var(--bad)}
+.glegend{display:grid; grid-template-columns:repeat(auto-fit,minmax(352px,1fr)); gap:2px 18px; padding:6px 2px 10px; font-size:12px}
+.glegend .gl{display:grid; grid-template-columns:11px 1fr auto auto; align-items:center; gap:9px; padding:3px 6px; border-radius:5px}
+.glegend .gl:nth-child(odd){background:var(--surface-2)}
+.glegend .gl i{width:11px; height:11px; border-radius:3px; display:inline-block}
+.glegend .gl .nm{color:var(--ink-1); font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.glegend .gl .nm em{font-style:normal; color:var(--ink-3); font-weight:500}
+.glegend .gl .vv{font-family:ui-monospace,SFMono-Regular,Menlo,monospace; color:var(--ink-2); text-align:right}
+.glegend .gl .gg{font-family:ui-monospace,SFMono-Regular,Menlo,monospace; text-align:right; min-width:74px}
 .wlegend{display:flex; flex-wrap:wrap; gap:8px 22px; justify-content:center; font-size:11.5px; color:var(--ink-3); padding:2px 0 8px}
 .wlegend span{display:flex; align-items:center; gap:6px}
 .wlegend i{width:22px; height:9px; border-radius:2px; display:inline-block}
@@ -347,6 +355,9 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
 <div class="page" id="page-wheel">
 <h2>Portfolio wheel <span class="n">the whole book on one picture &mdash; each wedge is one holding and the wider the wedge the bigger that position &middot; the coloured band on the outer edge is profit (gold) or loss (red), and the deeper the band the bigger the move &middot; hover a wedge for its detail, or tap it to jump to that stock on the Overview tab</span></h2>
 <div class="wheel-card" id="wheelwrap"><svg id="wheel" viewBox="0 0 1248 1074" role="img" aria-label="Donut chart of the portfolio: wedge width is share of market value, the outer band shows profit or loss"></svg><div class="wlegend" id="wlegend"></div><div class="bub-tip" id="wheeltip"></div></div>
+
+<h2>Investment by group <span class="n">the same money, grouped by theme instead of by company &mdash; each wedge is one group and the wider the wedge the more of the book sits there &middot; wedge colours are the same group colours used everywhere else on this dashboard &middot; the band on the outer edge is profit (gold) or loss (red) &middot; the table underneath lists every group, so nothing depends on hovering</span></h2>
+<div class="wheel-card" id="gwheelwrap"><svg id="gwheel" viewBox="0 0 1248 1074" role="img" aria-label="Donut chart of the portfolio broken down by group: wedge width is that group's share of market value, the outer band shows profit or loss"></svg><div class="glegend" id="gwlegend"></div><div class="bub-tip" id="gwheeltip"></div></div>
 </div>
 
 <div class="page" id="page-groups">
@@ -741,6 +752,130 @@ function renderWheel(){
   });
 }
 
+/* ============ portfolio wheel BY GROUP (whole book, always) ============
+   Same encoding as the per-stock wheel above, but every holding is first
+   rolled up into its group. Wedge fills reuse the --sN group colour
+   variables so the picture matches the group colours used on every other
+   tab, and it follows the light/dark theme for free. */
+function renderGroupWheel(){
+  const svg = document.getElementById("gwheel"); if(!svg) return;
+  const CX=624, CY=528, R_OUT=440, R_IN=252, RIMK=0.62, FAT=12.0;
+  const held = STOCKS.filter(s=>POS[s.t].shares!=null && s.price!=null && POS[s.t].cost>0);
+  if(!held.length){ svg.innerHTML=""; return; }
+  const W = GROUPS.map((g,i)=>{
+      const ss = held.filter(s=>s.g===i);
+      if(!ss.length) return null;
+      const m = ss.reduce((a,s)=>a+POS[s.t].shares*s.price,0);
+      const c = ss.reduce((a,s)=>a+POS[s.t].cost,0);
+      return {g:i, name:g, n:ss.length, mv:m, cost:c, pl:m-c, plp:(m/c-1)*100,
+              tick:ss.map(s=>s.t).sort()};
+    }).filter(Boolean).sort((a,b)=>b.mv-a.mv);
+  const TMV=W.reduce((a,r)=>a+r.mv,0), TCOST=W.reduce((a,r)=>a+r.cost,0);
+  const TPL=TMV-TCOST, TPLP=(TMV/TCOST-1)*100;
+  const GOLD="#e9b949", RIMRED="#e4595e";
+
+  const pt=(r,deg)=>{ const a=(deg-90)*Math.PI/180; return [CX+r*Math.cos(a), CY+r*Math.sin(a)]; };
+  const f2=v=>v.toFixed(2);
+  const ring=(r0,r1,a0,a1)=>{ const lg=(a1-a0)>180?1:0;
+    const p0=pt(r1,a0), p1=pt(r1,a1), p2=pt(r0,a1), p3=pt(r0,a0);
+    return `M${f2(p0[0])} ${f2(p0[1])}A${r1} ${r1} 0 ${lg} 1 ${f2(p1[0])} ${f2(p1[1])}`
+         + `L${f2(p2[0])} ${f2(p2[1])}A${r0} ${r0} 0 ${lg} 0 ${f2(p3[0])} ${f2(p3[1])}Z`; };
+  const esc=s=>String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+  const lbl=(x,y,rot,anchor,txt,p,sz,kind)=>
+    `<g transform="translate(${f2(x)},${f2(y)}) rotate(${f2(rot)})"><text class="wlab ${kind}" x="0" y="0"`
+    + ` text-anchor="${anchor}" dominant-baseline="middle" font-size="${sz}">${esc(txt)}`
+    + `<tspan class="p" font-size="${(sz-3).toFixed(1)}"> ${p.toFixed(2)}%</tspan></text></g>`;
+
+  let g="", ang=0; const small=[];
+  W.forEach(w=>{
+    const sweep=w.mv/TMV*360, a0=ang, a1=ang+sweep; ang=a1;
+    const rim = R_OUT-(R_OUT-R_IN)*Math.min(Math.abs(w.pl)/Math.max(w.cost,w.mv)*RIMK, 0.92);
+    g += `<g class="wseg" data-g="${w.g}">`
+       + `<path d="${ring(R_IN,rim,a0,a1)}" fill="var(--s${w.g+1})"/>`
+       + `<path d="${ring(rim,R_OUT,a0,a1)}" fill="${w.pl>=0?GOLD:RIMRED}" opacity=".96"/>`
+       + `<path d="${ring(R_IN,R_OUT,a0,a1)}" fill="none" stroke="var(--surface-1)" stroke-width="2.4"/></g>`;
+    const mid=(a0+a1)/2, p=w.mv/TMV*100;
+    if(p>=FAT){
+      /* a wedge this fat has room for a plain horizontal label sitting on its
+         own colour -- no rotation, so it reads straight off the screen */
+      const c=pt((R_IN+R_OUT)/2, mid);
+      g += `<text class="wlab in" x="${f2(c[0])}" y="${f2(c[1]-12)}" text-anchor="middle" font-size="25">${esc(w.name)}</text>`
+         + `<text class="wlab in" x="${f2(c[0])}" y="${f2(c[1]+20)}" text-anchor="middle" font-size="22"`
+         + ` font-family="ui-monospace,SFMono-Regular,Menlo,monospace">$${Math.round(w.mv).toLocaleString("en-US")}`
+         + `<tspan class="p"> ${p.toFixed(2)}%</tspan></text>`;
+    } else {
+      /* everything else goes to the callout ladder below. Mixing rotated rim
+         labels with the ladder makes the two collide, so nothing is rotated. */
+      const a=pt(R_OUT+5,mid);
+      small.push({w:w, p:p, mid:mid, x0:a[0], y0:a[1], side:(a[0]>=CX?1:-1)});
+    }
+  });
+
+  /* --- callout ladder for the thin wedges ---
+     Each side gets its own column. Labels start at their natural height and are
+     then pushed down just enough to clear the one above, which is the standard
+     way to keep pie-chart callouts legible without hand-tuning per dataset. */
+  const GAP=30, COLDX=R_OUT+70;
+  [1,-1].forEach(side=>{
+    const arr = small.filter(o=>o.side===side).sort((a,b)=>a.y0-b.y0);
+    if(!arr.length) return;
+    arr.forEach((o,i)=>{ o.y = i===0 ? o.y0 : Math.max(o.y0, arr[i-1].y+GAP); });
+    /* if the stack ran past the bottom of the wheel, slide the whole column up */
+    const over = arr[arr.length-1].y - (CY+R_OUT);
+    if(over>0) arr.forEach(o=>{ o.y -= over; });
+    const tx = CX + side*COLDX;
+    arr.forEach(o=>{
+      const e1=pt(R_OUT+26,o.mid), ex=tx - side*22;
+      g += `<polyline points="${f2(o.x0)},${f2(o.y0)} ${f2(e1[0])},${f2(e1[1])} ${f2(ex)},${f2(o.y)} ${f2(tx-side*8)},${f2(o.y)}"`
+         + ` fill="none" stroke="${GOLD}" stroke-width="1.3" opacity=".6"/>`;
+      g += `<text class="wlab out" x="${f2(tx)}" y="${f2(o.y)}" text-anchor="${side>0?"start":"end"}"`
+         + ` dominant-baseline="middle" font-size="19">${esc(o.w.name)}`
+         + `<tspan class="p" font-size="16"> ${o.p.toFixed(2)}%</tspan>`
+         + `<tspan class="p" font-size="16" fill="var(--ink-3)"> · $${Math.round(o.w.mv).toLocaleString("en-US")}</tspan></text>`;
+    });
+  });
+
+  const cls=v=>v>=0?"pos":"neg", sgn=v=>(v>=0?"+":"−");
+  const m0=v=>"$"+Math.round(Math.abs(v)).toLocaleString("en-US");
+  g += `<circle cx="${CX}" cy="${CY}" r="${R_IN-6}" fill="var(--surface-1)"/>`
+     + `<circle cx="${CX}" cy="${CY}" r="${R_IN-6}" fill="none" stroke="var(--ring)" stroke-width="1.5"/>`
+     + `<text class="wc-k"  x="${CX}" y="${CY-96}" text-anchor="middle">MARKET VALUE</text>`
+     + `<text class="wc-v"  x="${CX}" y="${CY-46}" text-anchor="middle">${m0(TMV)}</text>`
+     + `<text class="wc-s"  x="${CX}" y="${CY+10}" text-anchor="middle">COST ${m0(TCOST)}</text>`
+     + `<text class="wc-g ${cls(TPL)}" x="${CX}" y="${CY+62}" text-anchor="middle">${sgn(TPL)}${m0(TPL)}</text>`
+     + `<text class="wc-gp ${cls(TPL)}" x="${CX}" y="${CY+100}" text-anchor="middle">${sgn(TPLP)}${Math.abs(TPLP).toFixed(2)}%</text>`
+     + `<text class="wc-n"  x="${CX}" y="${CY+152}" text-anchor="middle">${W.length} GROUPS · ${held.length} POSITIONS</text>`;
+  svg.innerHTML = g;
+  try{ const bb=svg.getBBox();
+    if(bb.width>10 && bb.height>10)
+      svg.setAttribute("viewBox", `${(bb.x-14).toFixed(1)} ${(bb.y-14).toFixed(1)} ${(bb.width+28).toFixed(1)} ${(bb.height+28).toFixed(1)}`);
+  }catch(e){}
+
+  /* a plain table under the wheel: iPads have no hover, so nothing that
+     matters may live only in a tooltip */
+  const lg=document.getElementById("gwlegend");
+  if(lg) lg.innerHTML = W.map(w=>
+      `<div class="gl"><i style="background:var(--s${w.g+1})"></i>`
+    + `<span class="nm">${esc(w.name)} <em>&middot; ${w.n}</em></span>`
+    + `<span class="vv">${m0(w.mv)} &middot; ${(w.mv/TMV*100).toFixed(1)}%</span>`
+    + `<span class="gg ${cls(w.pl)}">${sgn(w.pl)}${m0(w.pl)}</span></div>`).join("");
+
+  const tip=document.getElementById("gwheeltip"), wrap=document.getElementById("gwheelwrap");
+  svg.querySelectorAll(".wseg").forEach(seg=>{
+    const w=W.find(q=>String(q.g)===seg.dataset.g); if(!w) return;
+    ["mousemove","click"].forEach(ev=>seg.addEventListener(ev,e=>{
+      const wr=wrap.getBoundingClientRect();
+      tip.style.display="block";
+      tip.style.left=Math.min(e.clientX-wr.left+14, wr.width-215)+"px";
+      tip.style.top=(e.clientY-wr.top+10)+"px";
+      tip.innerHTML=`<b style="color:var(--s${w.g+1})">${esc(w.name)}</b><br>${w.n} holding${w.n>1?"s":""} &middot; ${esc(w.tick.join(", "))}<br>`
+        + `Cost <b>${money(w.cost)}</b><br>Value <b>${money(w.mv)}</b> &middot; ${(w.mv/TMV*100).toFixed(2)}% of book<br>`
+        + `G/L <b class="${cls(w.pl)}">${sgn(w.pl)}${m0(w.pl)}</b> &middot; ${pct(w.plp)}`;
+    }));
+    seg.addEventListener("mouseleave",()=>{ tip.style.display="none"; });
+  });
+}
+
 /* ============ metric matrix (metrics = rows, grouped columns) ============ */
 const ROWS = [
  {g:"Position"},
@@ -855,7 +990,7 @@ function renderCards(){
   },{rootMargin:"200px"});
   document.querySelectorAll(".mini").forEach(el=>observer.observe(el));
 }
-function setPos(t,k,v){ POS[t][k] = v===""?null:parseFloat(v); renderTiles(); renderWheel(); renderBubble(); renderMatrix(); renderCards(); }
+function setPos(t,k,v){ POS[t][k] = v===""?null:parseFloat(v); renderTiles(); renderWheel(); renderGroupWheel(); renderBubble(); renderMatrix(); renderCards(); }
 
 /* ============ TradingView widgets ============ */
 function mountMini(el){
@@ -1155,7 +1290,7 @@ function setFocus(t){
   if(TFOCUS){ FILTER="all"; GFILTER="all"; }
   closeSug();
   if(!TFOCUS){ const i=document.getElementById("tsearch"); if(i) i.value=""; }
-  renderChips(); renderGroupChips(); renderWheel();
+  renderChips(); renderGroupChips(); renderWheel(); renderGroupWheel();
   renderLadder(); renderBubble(); renderMatrix(); renderCards();
   renderGroupSummary(); renderStockSummary(); renderTrades(); renderMonthly();
   renderFocus();
@@ -1258,7 +1393,7 @@ document.querySelectorAll(".tab[data-p]").forEach(b=>b.onclick=()=>{
   if(b.dataset.p==="main") mountTape();
   /* the wheel fits its own viewBox from getBBox(), which reports zeros while the
      tab is hidden — so redraw it the moment the tab actually becomes visible */
-  if(b.dataset.p==="wheel") renderWheel();
+  if(b.dataset.p==="wheel"){ renderWheel(); renderGroupWheel(); }
 });
 
 /* ============ theme + boot ============ */
@@ -1280,7 +1415,7 @@ function renderAll(){
       + (unk?` · <b class="warnv">${unk}</b> unconfirmed`:"");
   })();
   document.getElementById("subline").textContent = `${STOCKS.length} positions · AI · Semis · Infrastructure — Salee's book`;
-  renderChips(); renderTiles(); renderWheel(); renderGroupSummary(); renderLadder(); renderBubble(); renderMatrix(); renderCards(); renderTrades();
+  renderChips(); renderTiles(); renderWheel(); renderGroupWheel(); renderGroupSummary(); renderLadder(); renderBubble(); renderMatrix(); renderCards(); renderTrades();
   renderTotals(); renderGroupChips(); renderStockSummary(); renderPerformance(); renderMonthly(); renderVision(); renderFocus();
   document.getElementById("foot").innerHTML =
    `Definitions — <b>Conviction</b> = (avg analyst target − last close) ÷ last close. <b>Devastation</b> = (last close − 52-wk high) ÷ 52-wk high; “—” within 0.5% of the high. <b>Growth YTD</b> = vs Jan 2, 2026 open. <b>Rule of 40 (FCF)</b> = revenue growth % + FCF margin % (TTM) — the conservative primary. <b>Rule of 40 (NI)</b> = revenue growth % + net profit margin %; a wide gap between the two = accounting profits not converting to cash (see ORCL), and NI is distorted by non-operating gains for IONQ/ONDS. ROI shown as ROIC. “—” = not meaningful (negative earnings or not published). CRWD figures reflect its July 2026 4-for-1 split.<br>
