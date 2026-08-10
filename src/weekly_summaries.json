@@ -4501,5 +4501,89 @@
     }
    ]
   }
+ ],
+ "CIEN": [
+  {
+   "week": "2026-08-10",
+   "points": [
+    {
+     "s": "+",
+     "text": "Added to Photonic & Optic Fiber at the Aug 7 close 412.39. STRONGEST fit of the four: Optical Networking alone is 70.0% of revenue (1,099.8M of 1,570.7M in FQ2) - a genuine optical pure play built on coherent optics (WaveLogic 6 Extreme, 1.6 Tb/s per wavelength)."
+    },
+    {
+     "s": "+",
+     "text": "Inflecting hard: revenue +30.6% TTM, EPS 3.01 (+311.9%), ROIC 17.90%, free cash flow 833M, backlog 7.7B. Trailing P/E 137 is distorted by weak pre-inflection quarters - forward P/E 52.87 and PEG 0.81 are the real read."
+    },
+    {
+     "s": "-",
+     "text": "Customer concentration is the main risk: TWO customers = 34% of revenue, cloud customers ~1/3 of the total. Sits 35% below its Jun 3 high of 637.51."
+    },
+    {
+     "s": "!",
+     "text": "637.51 is the 52-WEEK high stored as ath, NOT the all-time high - the dot-com-era peak was far higher (near 1,046 on a second-tier source, split basis unverified). Next earnings Sep 3, 2026 - company-confirmed."
+    }
+   ]
+  }
+ ],
+ "MTSI": [
+  {
+   "week": "2026-08-10",
+   "points": [
+    {
+     "s": "0",
+     "text": "Added to Photonic & Optic Fiber at the Aug 7 close 310.82. HYBRID fit: Data Center 40.2% + Telecom 20.8% = 61.0% optical-facing (laser drivers, TIAs, PAM4 drivers for 800G/1.6T/3.2T transceivers), but 39.0% is Industrial & Defense RF/microwave/GaN. Roughly 60% optical, not a pure play."
+    },
+    {
+     "s": "+",
+     "text": "FQ3 on Aug 6 was a blowout: revenue 342.2M +35.8%, adjusted EPS 1.40 vs 1.35 expected, and Q4 guidance 415-425M against 364M consensus. The stock rose 14.49% that day."
+    },
+    {
+     "s": "!",
+     "text": "Trailing net margin 20.70% EXCEEDS operating margin 18.19% - flattered by interest income on a 663M cash pile and a ~3% non-GAAP tax rate. Do not read trailing P/E, ROE or net margin as operating quality. revG and r40 left blank: a clean TTM growth figure was NOT FOUND."
+    }
+   ]
+  }
+ ],
+ "CSCO": [
+  {
+   "week": "2026-08-10",
+   "points": [
+    {
+     "s": "-",
+     "text": "Added to Photonic & Optic Fiber at the Aug 7 close 121.43, but it is a WEAK fit as photonics: Cisco does not break out optical revenue at all. FQ3 mix was Networking 56%, Services 23%, Security 13%, Collaboration 6%, Observability 2% - optics is only a component inside its AI data-centre systems."
+    },
+    {
+     "s": "+",
+     "text": "Quality is high regardless: revenue 60.75B +9.2%, EPS 3.00 +22.5%, ROIC 18.98%, free cash flow 11.79B, 1.38% dividend. AI infrastructure ORDERS raised to ~9B for FY26 (associated revenue ~4B)."
+    },
+    {
+     "s": "!",
+     "text": "CSCO reports FQ4 FY2026 on AUG 12, 2026 - company-confirmed, two days after this snapshot. Every multiple stored on the dashboard is pre-print and may move."
+    }
+   ]
+  }
+ ],
+ "VIAV": [
+  {
+   "week": "2026-08-10",
+   "points": [
+    {
+     "s": "-",
+     "text": "Added to Photonic & Optic Fiber at the Aug 7 close 39.14 - the WEAKEST fit. Only the OSP segment (335.4M of 1,518.3M FY2026 revenue = 22.1%) is optical, and that is optical COATINGS (banknote anti-counterfeit pigments, 3D-sensing filters), not fibre or photonic components. The other 77.9% is network test instrumentation."
+    },
+    {
+     "s": "-",
+     "text": "GAAP LOSS-MAKING on a TTM basis: EPS -0.13, net margin -2.00%, ROE -2.73%, ROIC -16.13%, while non-GAAP FY26 EPS was 1.00. Trailing P/E and PEG are therefore blank and EV/EBITDA 91.17 / P-FCF 210.77 are near-meaningless - judge it on forward P/E 23.82."
+    },
+    {
+     "s": "+",
+     "text": "Growth is real: revenue +40.0% TTM and FQ4 revenue 443.1M was +52.5%. But it fell 3.57% on Aug 7 despite the beat and sits 35% below its 52-week high."
+    },
+    {
+     "s": "!",
+     "text": "Data conflicts on record: 52-week low reads 10.02 / 10.30 / 16.98 across three sources, and the analyst panel splits hard (8 analysts avg 61.43 Strong Buy vs 9 analysts avg 42.88 Moderate Buy). stockanalysis taken throughout."
+    }
+   ]
+  }
  ]
 }

@@ -1374,5 +1374,40 @@
   "operations": "Runs sites in more than 30 countries across the Americas, Asia-Pacific and Europe, selling through its own sales offices and independent distributors.",
   "mission": "Aims to build complete solutions rather than just products, expanding what people, organisations and society can do.",
   "src": "https://stockanalysis.com/stocks/nxpi/company/"
+ },
+ "CSCO": {
+  "short": "Cisco — the routers, switches and security kit that connect offices, carriers and AI data centres.",
+  "founded": "1984",
+  "hq": "California, United States",
+  "employees": "86,200",
+  "operations": "Sells worldwide to businesses, governments and telecom carriers through its own sales force plus resellers, integrators and distributors.",
+  "mission": "Its stated purpose is to power an inclusive future for all.",
+  "src": "https://stockanalysis.com/stocks/csco/company/"
+ },
+ "CIEN": {
+  "short": "Ciena — the laser equipment that pushes huge amounts of data down fibre-optic cables.",
+  "founded": "1992",
+  "hq": "Maryland, United States",
+  "employees": "9,080",
+  "operations": "Serves more than 1,700 customers across the Americas, Europe and Asia-Pacific, backed by 4,500+ research staff and 2,400+ patents.",
+  "mission": "Aims to build adaptive networks that keep pace with exploding bandwidth demand and help customers thrive in the AI era.",
+  "src": "https://stockanalysis.com/stocks/cien/company/"
+ },
+ "MTSI": {
+  "short": "MACOM — high-speed chips for military radar and satellites, plus the optical chips inside AI data centres.",
+  "founded": "1950s",
+  "hq": "Massachusetts, United States",
+  "employees": "2,000",
+  "operations": "Runs design centres, sales offices and manufacturing across North America, Europe and Asia, serving more than 6,000 end customers.",
+  "src": "https://stockanalysis.com/stocks/mtsi/statistics/"
+ },
+ "VIAV": {
+  "short": "VIAVI — test gear that checks networks actually work, plus the colour-shifting ink that stops banknote forgery.",
+  "founded": "1923",
+  "hq": "Arizona, United States",
+  "employees": "3,600",
+  "operations": "Sells across the Americas, Asia-Pacific and Europe to telecom, cloud, enterprise, emergency-services, military and aerospace customers.",
+  "mission": "Positions itself as a global leader in test, measurement and optical technologies for critical infrastructure.",
+  "src": "https://stockanalysis.com/stocks/viav/company/"
  }
 }

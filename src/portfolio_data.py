@@ -46,7 +46,50 @@ ASOF = ('Aug 7, 2026 · close — weekly refresh & integrity audit Aug 10: all 1
  'P/E 14.33 (stockanalysis) vs 15.92 (GuruFocus) vs 17.46 (MarketBeat) - treat forward P/E as a 14-17.5 range; '
  'trailing EPS 11.72 (stockanalysis TTM to Jun 28) vs 9.00 (GuruFocus, lagged basis), which drives a trailing P/E gap '
  'of 20.46 vs 26.39; analyst panel 30 / avg 311.10 (stockanalysis) vs 26 / 305.43 (MarketBeat). stockanalysis taken '
- 'throughout.')
+ 'throughout. | Aug 10: FOUR names added to Photonic & Optic Fiber at the Aug 7, 2026 close (all watchlist only, all '
+ "stamped 'At close: Aug 7, 2026, 4:00 PM EDT'; jan2 NOT FOUND on all four). GROUP-FIT GRADING WAS DONE ON DISCLOSED "
+ "SEGMENT REVENUE, not on the company's marketing. (1) CIEN (Ciena, NYSE) at 412.39 - STRONG FIT, a genuine optical "
+ 'pure play: Optical Networking alone was 1,099.8M of 1,570.7M revenue = 70.0% in FQ2 2026, with coherent optics '
+ '(WaveLogic 6 Extreme, 1.6 Tb/s per wavelength) the core technology. Revenue +30.6% TTM, EPS 3.01 (+311.9%), ROIC '
+ '17.90%, FCF 833M. Trailing P/E 137 is distorted by weak pre-inflection quarters - forward P/E 52.87 and PEG 0.81 '
+ 'tell the real story. Backlog 7.7B; cloud customers ~1/3 of revenue; TWO customers = 34% of revenue (concentration '
+ 'risk). Sits 35% below its Jun 3 2026 high of 637.51 (stored as ath). WARNING: 637.51 is the 52-WEEK high, NOT the '
+ 'all-time high - a second-tier source puts the dot-com-era closing peak near 1,046 (Oct 2000) but the split basis '
+ 'could not be verified, so the recent high was stored and the true drawdown is far larger. Next earnings Sep 3, 2026 '
+ '- COMPANY-CONFIRMED. (2) MTSI (MACOM, NASDAQ) at 310.82 - HYBRID FIT: Data Center 40.2% + Telecom 20.8% = 61.0% of '
+ 'FQ3 2026 revenue sits in optical-facing end markets (EML/Mach-Zehnder laser drivers, TIAs, PAM4 drivers for '
+ '800G/1.6T/3.2T transceivers), but 39.0% is Industrial & Defense RF/microwave/GaN - so treat it as ~60% optical, not '
+ 'a pure play, and note even Data Center includes non-photonic parts. FQ3 (Aug 6) was a blowout: revenue 342.2M '
+ '+35.8%, adj EPS 1.40 vs 1.35, and Q4 guidance 415-425M vs 364M consensus - the stock rose 14.49% that day. revG and '
+ 'r40 left BLANK: a clean TTM growth figure was NOT FOUND (Q3 was +35.8% YoY; nine-month +27.9%). CAUTION: trailing '
+ 'net margin 20.70% EXCEEDS operating margin 18.19% because interest income on a 663M cash pile and a ~3% non-GAAP tax '
+ 'rate flatter the bottom line - do not read trailing P/E, ROE or net margin as operating quality. Next earnings NOT '
+ 'ANNOUNCED. (3) CSCO (Cisco, NASDAQ) at 121.43 - WEAK FIT as photonics: Cisco does NOT break out optical revenue at '
+ 'all; FQ3 2026 was Networking 56%, Services 23%, Security 13%, Collaboration 6%, Observability 2%, with optics only a '
+ 'component inside its AI data-centre systems alongside Silicon One switching silicon. It belongs in a broader '
+ 'networking bucket - though note ANET, APH and GLW already sit in this group, so the group label is the real problem, '
+ 'not CSCO. Quality is high: revenue 60.75B +9.2%, EPS 3.00 +22.5%, ROIC 18.98%, FCF 11.79B, dividend 1.38%; AI '
+ 'infrastructure ORDERS raised to ~9B for FY26 (associated revenue ~4B). ath 130.37 is the Jun 4 2026 intraday high '
+ 'and is plausibly a true all-time high (a second-tier source shows the highest-ever close at 130.00 across '
+ '1990-2026). WARNING: CSCO reports FQ4 FY2026 on AUG 12, 2026 - COMPANY-CONFIRMED, two days after this snapshot - so '
+ 'every multiple stored here is pre-print. (4) VIAV (VIAVI Solutions, NASDAQ) at 39.14 - WEAKEST FIT: only the OSP '
+ 'segment (335.4M of 1,518.3M FY2026 revenue = 22.1%) is optical, and that is optical COATINGS - anti-counterfeiting '
+ 'banknote pigments and 3D-sensing filters - NOT fibre or photonic components. The other 77.9% (NSE) is network test '
+ 'and monitoring instrumentation, whose disclosed FY26 growth drivers were the data-centre ecosystem and '
+ 'aerospace/defence. It is GAAP LOSS-MAKING on a TTM basis (EPS -0.13, net margin -2.00%, ROE -2.73%, ROIC -16.13%) '
+ 'while non-GAAP FY26 EPS was 1.00 - so trailing P/E and PEG are blank and EV/EBITDA 91.17 / P-FCF 210.77 are '
+ 'near-meaningless; judge it on forward P/E 23.82. Revenue did grow 40.0% TTM and FQ4 revenue 443.1M was +52.5%. It '
+ 'fell 3.57% on Aug 7 despite the beat and sits 35% below its 52-wk high. NOTE the 52-week LOW conflicts three ways '
+ '(10.02 stockanalysis / 10.30 GuruFocus / 16.98 marketscreener) and the analyst panel conflicts hard (8 analysts avg '
+ '61.43 Strong Buy on stockanalysis vs 9 analysts avg 42.88 Moderate Buy on MarketBeat, whose 11.00 low target is '
+ 'stale); stockanalysis taken throughout. Next earnings NOT COMPANY-CONFIRMED (late Oct/early Nov implied). NOT ADDED '
+ '- SIVE: there is NO US-listed security with ticker SIVE. SIVE is Sivers Semiconductors AB on NASDAQ STOCKHOLM; its '
+ 'only US quotation is the OTC line SIVEF, whose price feed is delayed and was stamped Aug 6 rather than carrying a '
+ 'valid 4:00 PM EDT close - unusable for this dashboard. Sivers announced on Apr 16, 2026 that it is pursuing a Nasdaq '
+ 'New York dual listing but NO US ticker or timeline has been assigned. Held pending the correct ticker from the user. '
+ 'RECOMMENDATION ON RECORD: this group now holds ANET, APH, GLW, CSCO and VIAV alongside true photonics names, so '
+ "renaming it to something like 'Optical & Networking' would describe its contents far better than 'Photonic & Optic "
+ "Fiber'. Photonic & Optic Fiber 12 -> 16 names.")
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -1371,6 +1414,130 @@ STOCKS = [{'t': 'GOOGL',
   'budget': None,
   'lo52': 1.96,
   'hi52': 143.16,
+  'pxd': '2026-08-07'},
+ {'t': 'CSCO',
+  'name': 'Cisco Systems',
+  'ex': 'NASDAQ',
+  'g': 4,
+  'price': 121.43,
+  'jan2': None,
+  'mcapB': 478.61,
+  'ath': 130.37,
+  'fvMin': 112,
+  'fvAvg': 131.36,
+  'fvMax': 150,
+  'an': 26,
+  'peg': 1.84,
+  'ps': 7.88,
+  'fpe': 25.87,
+  'pe': 40.47,
+  'gm': 64.3,
+  'pm': 19.69,
+  'revB': 60.75,
+  'revG': 9.2,
+  'eps': 3.0,
+  'epsG': 22.5,
+  'roi': 18.98,
+  'roe': 25.23,
+  'fcfB': 11.79,
+  'capexB': 1.24,
+  'r40': 28.61,
+  'budget': None,
+  'lo52': 65.75,
+  'hi52': 130.37,
+  'pxd': '2026-08-07'},
+ {'t': 'CIEN',
+  'name': 'Ciena',
+  'ex': 'NYSE',
+  'g': 4,
+  'price': 412.39,
+  'jan2': None,
+  'mcapB': 58.38,
+  'ath': 637.51,
+  'fvMin': 270,
+  'fvAvg': 565.71,
+  'fvMax': 720,
+  'an': 20,
+  'peg': 0.81,
+  'ps': 10.48,
+  'fpe': 52.87,
+  'pe': 137.12,
+  'gm': 43.05,
+  'pm': 7.87,
+  'revB': 5.57,
+  'revG': 30.6,
+  'eps': 3.01,
+  'epsG': 311.9,
+  'roi': 17.9,
+  'roe': 15.46,
+  'fcfB': 0.83266,
+  'capexB': 0.20011,
+  'r40': 45.55,
+  'budget': None,
+  'lo52': 84.41,
+  'hi52': 637.51,
+  'pxd': '2026-08-07'},
+ {'t': 'MTSI',
+  'name': 'MACOM Technology',
+  'ex': 'NASDAQ',
+  'g': 4,
+  'price': 310.82,
+  'jan2': None,
+  'mcapB': 23.74,
+  'ath': 418.9,
+  'fvMin': 300,
+  'fvAvg': 401.54,
+  'fvMax': 475,
+  'an': 14,
+  'peg': 0.98,
+  'ps': 20.39,
+  'fpe': 37.71,
+  'pe': 98.99,
+  'gm': 56.54,
+  'pm': 20.7,
+  'revB': 1.16,
+  'revG': None,
+  'eps': 3.14,
+  'epsG': None,
+  'roi': 14.5,
+  'roe': 17.18,
+  'fcfB': 0.20408,
+  'capexB': 0.06711,
+  'r40': None,
+  'budget': None,
+  'lo52': 118.16,
+  'hi52': 418.9,
+  'pxd': '2026-08-07'},
+ {'t': 'VIAV',
+  'name': 'VIAVI Solutions',
+  'ex': 'NASDAQ',
+  'g': 4,
+  'price': 39.14,
+  'jan2': None,
+  'mcapB': 9.59,
+  'ath': 60.43,
+  'fvMin': 44,
+  'fvAvg': 61.43,
+  'fvMax': 70,
+  'an': 8,
+  'peg': None,
+  'ps': 6.32,
+  'fpe': 23.82,
+  'pe': None,
+  'gm': 61.73,
+  'pm': -2.0,
+  'revB': 1.52,
+  'revG': 40.0,
+  'eps': -0.13,
+  'epsG': None,
+  'roi': -16.13,
+  'roe': -2.73,
+  'fcfB': 0.0455,
+  'capexB': 0.0255,
+  'r40': 43.0,
+  'budget': None,
+  'lo52': 10.02,
+  'hi52': 60.43,
   'pxd': '2026-08-07'},
  {'t': 'CEG',
   'name': 'Constellation Energy',
@@ -4966,7 +5133,11 @@ POS = {'GOOGL': {'budget': 60000, 'cost': 55324.68, 'shares': 205},
  'GE': {'budget': None, 'cost': None, 'shares': None},
  'MMM': {'budget': None, 'cost': None, 'shares': None},
  'MCHP': {'budget': None, 'cost': None, 'shares': None},
- 'NXPI': {'budget': None, 'cost': None, 'shares': None}}
+ 'NXPI': {'budget': None, 'cost': None, 'shares': None},
+ 'CSCO': {'budget': None, 'cost': None, 'shares': None},
+ 'CIEN': {'budget': None, 'cost': None, 'shares': None},
+ 'MTSI': {'budget': None, 'cost': None, 'shares': None},
+ 'VIAV': {'budget': None, 'cost': None, 'shares': None}}
 
 TRADES = [{'date': 'Jul 21, 2026',
   'action': 'BUY',
@@ -5850,7 +6021,11 @@ M3 = {'GOOGL': {'pfcf': 72.54, 'ev': 21.6, 'de': 0.18},
  'GE': {'pfcf': 45.73, 'ev': 37.22, 'de': 1.13},
  'MMM': {'pfcf': 23.67, 'ev': 16.99, 'de': 4.38},
  'MCHP': {'pfcf': 41.4, 'ev': 34.78, 'de': 0.84},
- 'NXPI': {'pfcf': 21.54, 'ev': 13.66, 'de': 0.93}}
+ 'NXPI': {'pfcf': 21.54, 'ev': 13.66, 'de': 0.93},
+ 'CSCO': {'pfcf': 40.6, 'ev': 29.59, 'de': 0.68},
+ 'CIEN': {'pfcf': 70.11, 'ev': 86.96, 'de': 0.55},
+ 'MTSI': {'pfcf': 116.32, 'ev': 85.36, 'de': 0.27},
+ 'VIAV': {'pfcf': 210.77, 'ev': 91.17, 'de': 0.44}}
 
 METRICS3 = M3  # alias: per-ticker pfcf / ev (EV/EBITDA) / de (Debt/Equity)
 
