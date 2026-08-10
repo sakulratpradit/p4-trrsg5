@@ -250,7 +250,7 @@ def build(out_path):
         ('SHEET', 'WHAT IS IN IT'),
         ('Stock Index',
          'One row per ticker: a plain-English line on WHAT THE COMPANY DOES, then when it was '
-         'founded, its headquarters, employee count, and a short note on its operations and mission '
+         'founded, its headquarters, employee count, and separate OPERATIONS and VISION notes '
          '- followed by group, whether you hold it, shares, cost, budget, last price and the most '
          'recent thing Claude said about it. Start here.'),
         ('Comment Log',
@@ -384,10 +384,10 @@ def build(out_path):
     # ---------------- Stock Index ----------------
     idx = wb.create_sheet('Stock Index', 1)
     style_header(idx, ['Ticker', 'Company', 'What the company does', 'Founded', 'Headquarters',
-                       'Employees', 'Operations & mission', 'Group', 'Held', 'Shares',
+                       'Employees', 'Operations', 'Vision', 'Group', 'Held', 'Shares',
                        'Cost (USD)', 'Budget (USD)', 'Last close (USD)', 'Price date', 'Comments',
                        'First comment', 'Last comment', 'Most recent comment'],
-                 [10, 22, 52, 9, 26, 11, 78, 22, 7, 10, 13, 13, 14, 12, 11, 13, 13, 80])
+                 [10, 22, 50, 9, 22, 11, 60, 52, 22, 7, 10, 13, 13, 14, 12, 11, 13, 13, 78])
     for s in stocks:
         t = s['t']
         pos = P.POS.get(t, {})
@@ -403,8 +403,7 @@ def build(out_path):
         idx.append([
             t, s['name'], _ovf(overviews, t, 'short'), _ovf(overviews, t, 'founded'),
             _ovf(overviews, t, 'hq'), _ovf(overviews, t, 'employees'),
-            ' '.join(x for x in (_ovf(overviews, t, 'operations'),
-                                 _ovf(overviews, t, 'mission')) if x),
+            _ovf(overviews, t, 'operations'), _ovf(overviews, t, 'mission'),
             P.GROUPS[s['g']],
             'YES' if pos.get('shares') else '',
             pos.get('shares'), pos.get('cost'), pos.get('budget'),
@@ -417,16 +416,16 @@ def build(out_path):
         for c in row:
             c.font = Font(name=FONT, size=10)
             c.border = BOX
-            c.alignment = TOPWRAP if c.column in (3, 5, 7, 18) else TOP
-        row[8].alignment = Alignment(horizontal='center', vertical='top')
-        if row[8].value == 'YES':
-            row[8].font = Font(name=FONT, size=10, bold=True, color='006100')
-        for i in (10,):
+            c.alignment = TOPWRAP if c.column in (3, 5, 7, 8, 19) else TOP
+        row[9].alignment = Alignment(horizontal='center', vertical='top')
+        if row[9].value == 'YES':
+            row[9].font = Font(name=FONT, size=10, bold=True, color='006100')
+        for i in (11,):
             row[i].number_format = '#,##0.00'
-        for i in (11, 12):
+        for i in (12, 13):
             row[i].number_format = '$#,##0;($#,##0);-'
-        row[9].number_format = '#,##0.##'
-    idx.auto_filter.ref = f'A1:R{idx.max_row}'
+        row[10].number_format = '#,##0.##'
+    idx.auto_filter.ref = f'A1:S{idx.max_row}'
 
     # ---------------- Dashboard Notes ----------------
     dn = wb.create_sheet('Dashboard Notes')

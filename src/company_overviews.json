@@ -2,7 +2,7 @@
  "AAOI": {
   "short": "Optical transceivers that carry data as light inside data centres.",
   "founded": "1997",
-  "hq": "Sugar Land, Texas, United States",
+  "hq": "Texas, United States",
   "employees": "4,691",
   "operations": "Designs and makes fibre-optic networking parts, with operations in the United States, Taiwan and China.",
   "mission": "Aims to supply the light-based parts that move data inside data centres and across cable and phone networks.",
@@ -11,7 +11,7 @@
  "AAPL": {
   "short": "iPhone, Mac and services — the world's biggest consumer technology company.",
   "founded": "1977",
-  "hq": "Cupertino, California, USA",
+  "hq": "California, United States",
   "employees": "166,000",
   "operations": "Sells phones, computers, tablets, watches and headphones worldwide, and runs online stores and paid services such as music, television and payments.",
   "mission": "To design, make and market its own devices and services for shoppers, small businesses, schools, companies and governments around the world.",
@@ -20,7 +20,7 @@
  "ADBE": {
   "short": "Photoshop and the creative software suite, now adding AI design tools.",
   "founded": "1982",
-  "hq": "San Jose, California, United States",
+  "hq": "California, United States",
   "employees": "31,360",
   "operations": "Operates worldwide, selling content creation tools to individuals, teams and large companies, plus marketing, publishing and advertising services for brands.",
   "mission": "To give individuals, teams and businesses the tools to create, publish and promote content.",
@@ -29,7 +29,7 @@
  "AEHR": {
   "short": "Burn-in machines that stress-test chips, both on the wafer and after packaging.",
   "founded": "1977",
-  "hq": "Fremont, California, USA",
+  "hq": "California, United States",
   "employees": "138",
   "operations": "Supplies chip testing machines and related parts to chipmakers and testing firms in the United States, Asia, Europe and the Middle East.",
   "mission": "To provide systems that test and stress semiconductor devices before shipment, at wafer, single-chip and packaged stages.",
@@ -38,7 +38,7 @@
  "AFRM": {
   "short": "Affirm — buy-now-pay-later lending offered at online checkouts.",
   "founded": "2012",
-  "hq": "San Francisco, California, United States",
+  "hq": "California, United States",
   "employees": "2,206",
   "operations": "Runs a payment service that lets shoppers pay in instalments at small shops, large chains, online brands and travel sites, with funding from partner banks and investors.",
   "mission": "To let people spread the cost of a purchase over time through a payment network shared with the shops they buy from.",
@@ -47,7 +47,7 @@
  "AIRJ": {
   "short": "Early-stage technology that pulls water from air to cool and dehumidify data centres.",
   "founded": "2018",
-  "hq": "Ronan, Montana, United States",
+  "hq": "Montana, United States",
   "employees": "16",
   "operations": "Very small firm with technology that pulls water out of the air, plus dehumidifying, cooling, heat pump and water-recovery systems, including for data centres.",
   "mission": "To capture drinking-quality water and useful energy from the moisture in ordinary air.",
@@ -56,7 +56,7 @@
  "ALAB": {
   "short": "Connectivity chips that link AI processors together at very high speed.",
   "founded": "2017",
-  "hq": "San Jose, California, United States",
+  "hq": "California, United States",
   "employees": "756",
   "operations": "Small chip designer operating in the United States and Taiwan, selling to very large data-centre operators and equipment makers.",
   "mission": "Aims to move data quickly between the parts inside cloud and artificial-intelligence computers.",
@@ -65,7 +65,7 @@
  "AMAT": {
   "short": "Equipment that deposits and etches the microscopic layers inside every chip.",
   "founded": "1967",
-  "hq": "Santa Clara, California, USA",
+  "hq": "California, United States",
   "employees": "36,500",
   "operations": "Supplies chip factory equipment, services and software in the United States, China, Korea, Taiwan, Japan, Southeast Asia and Europe, through two business arms.",
   "mission": "To provide the equipment, services and know-how that chipmakers use to build semiconductors.",
@@ -74,7 +74,7 @@
  "AMD": {
   "short": "Designs computer processors and AI chips — Nvidia's main challenger.",
   "founded": "1969",
-  "hq": "Santa Clara, California, USA",
+  "hq": "California, United States",
   "employees": "31,000",
   "operations": "Designs chips sold internationally through three business lines: data centres, personal computers and gaming, and equipment with chips built in.",
   "mission": "To supply processors, graphics chips and artificial-intelligence hardware for business and consumer computing worldwide.",
@@ -83,7 +83,7 @@
  "AMKR": {
   "short": "Packages and tests finished chips on behalf of other chip companies.",
   "founded": "1968",
-  "hq": "Tempe, Arizona, USA",
+  "hq": "Arizona, United States",
   "employees": "30,800",
   "operations": "Packages and tests finished chips for other companies, with operations in the United States, Japan, Europe and the Asia-Pacific region.",
   "mission": "To handle the final packaging and testing steps for chipmakers, device makers and factories that do not do this work themselves.",
@@ -92,7 +92,7 @@
  "AMPX": {
   "short": "High-energy silicon-anode batteries for drones and aviation.",
   "founded": "2008",
-  "hq": "Fremont, California, United States",
+  "hq": "California, United States",
   "employees": "97",
   "operations": "Develops and makes lithium-ion batteries at its base in Fremont, California, sold mainly to makers of drones and other unmanned aircraft.",
   "mission": "To supply batteries built for aviation uses, especially drones and high-flying unmanned craft that stay aloft for long periods.",
@@ -101,7 +101,7 @@
  "AMZN": {
   "short": "Online shopping giant, and the world's largest cloud-computing provider (AWS).",
   "founded": "1994",
-  "hq": "Seattle, Washington, USA",
+  "hq": "Washington, United States",
   "employees": "1,576,000",
   "operations": "Runs online and physical shops in North America and other countries, plus a large computing-rental arm and its own devices such as Kindle and Echo.",
   "mission": "To sell consumer goods, advertising and subscriptions through online and physical stores in North America and internationally.",
@@ -110,7 +110,7 @@
  "ANET": {
   "short": "High-speed network switches that connect the servers in AI data centres.",
   "founded": "2004",
-  "hq": "Santa Clara, California, United States",
+  "hq": "California, United States",
   "employees": "5,115",
   "operations": "Sells computer-network equipment and software across the Americas, Europe, the Middle East, Africa and Asia-Pacific, direct and through resellers.",
   "mission": "Aims to supply the networking gear that connects data centres, offices and cloud services.",
@@ -119,7 +119,7 @@
  "APH": {
   "short": "Connectors and cables — the physical plumbing of all electronics.",
   "founded": "1932",
-  "hq": "Wallingford, Connecticut, United States",
+  "hq": "Connecticut, United States",
   "employees": "170,000",
   "operations": "Three segments making electrical, electronic and fibre-optic connectors, cables and sensors in the United States, China and other countries.",
   "mission": "Aims to supply the connectors and cables that join electronic equipment in cars, planes, phones and data centres.",
@@ -128,7 +128,7 @@
  "APLD": {
   "short": "Builds and rents out data centres designed for AI computing.",
   "founded": "2001",
-  "hq": "Dallas, Texas, United States",
+  "hq": "Texas, United States",
   "employees": "256",
   "operations": "Designs, builds and runs data centres in North America, hosting machines for crypto mining customers and renting computing power to artificial-intelligence developers.",
   "mission": "Aims to supply the buildings, electricity and computing capacity that artificial-intelligence and other heavy computing customers need.",
@@ -137,7 +137,7 @@
  "APP": {
   "short": "Advertising software that helps mobile apps and games find new users.",
   "founded": "2012",
-  "hq": "Palo Alto, California, United States",
+  "hq": "California, United States",
   "employees": "898",
   "operations": "Two segments, advertising and apps, serving advertisers, mobile app publishers, small businesses and streaming TV companies in the US and abroad.",
   "mission": "To provide advertising tools driven by artificial intelligence that help businesses find and reach customers.",
@@ -146,7 +146,7 @@
  "ARM": {
   "short": "Licenses the chip blueprints used inside nearly every smartphone in the world.",
   "founded": "1990",
-  "hq": "Cambridge, United Kingdom",
+  "hq": "United Kingdom",
   "employees": "9,584",
   "operations": "Licenses chip blueprints rather than making chips, serving chipmakers, device makers and computing-rental firms for phones, cars and data centres.",
   "mission": "To research, develop and license chip designs, software and tools that other companies use to build their own chips.",
@@ -155,7 +155,7 @@
  "ASML": {
   "short": "The only company that makes the EUV machines needed for the most advanced chips.",
   "founded": "1984",
-  "hq": "Veldhoven, Netherlands",
+  "hq": "Netherlands",
   "employees": "44,175",
   "operations": "Sells, upgrades and services the machines that print circuit patterns onto chips, supporting chipmakers across Asia, Europe and North America.",
   "mission": "To provide the advanced printing, measuring and inspection machines that chipmakers need to produce semiconductors.",
@@ -164,7 +164,7 @@
  "ASTS": {
   "short": "Building satellites that connect directly to ordinary mobile phones from space.",
   "founded": "2019",
-  "hq": "Midland, Texas, United States",
+  "hq": "Texas, United States",
   "employees": "1,126",
   "operations": "Designs and develops its BlueBird satellites from a base in Midland, Texas, to carry a mobile phone network in space.",
   "mission": "To run a mobile network from satellites so ordinary smartphones get service in places with no coverage on the ground.",
@@ -173,7 +173,7 @@
  "AVAV": {
   "short": "Military drones and loitering munitions for the US and allied forces.",
   "founded": "1971",
-  "hq": "Arlington, Virginia, United States",
+  "hq": "Virginia, United States",
   "employees": "4,091",
   "operations": "Makes small pilotless aircraft, one-way strike drones, and space and cyber equipment for government agencies and businesses in the US and abroad.",
   "mission": "To supply robotic aircraft and related defence technology that give military users useful information and precise firepower.",
@@ -182,7 +182,7 @@
  "AVGO": {
   "short": "Custom AI chips and networking parts, plus a large enterprise software business.",
   "founded": "1961",
-  "hq": "Palo Alto, California, USA",
+  "hq": "California, United States",
   "employees": "33,000",
   "operations": "Supplies chips and business software internationally through two arms: semiconductor products and infrastructure software.",
   "mission": "To design and supply the chips and software that run company networks, data centres, telephone systems and broadband.",
@@ -191,7 +191,7 @@
  "AXON": {
   "short": "Tasers, police body cameras, drones and the evidence software behind them.",
   "founded": "1993",
-  "hq": "Scottsdale, Arizona, United States",
+  "hq": "Arizona, United States",
   "employees": "5,100",
   "operations": "Sells public safety equipment and cloud software in the US and abroad, including TASER stun devices, body cameras and evidence-handling services.",
   "mission": "To equip police and other first responders with cameras, less-lethal devices and software for storing and sharing video evidence.",
@@ -200,7 +200,7 @@
  "AXTI": {
   "short": "Grows the crystal wafers (indium phosphide) that optical components are built on.",
   "founded": "1986",
-  "hq": "Fremont, California, United States",
+  "hq": "California, United States",
   "employees": "1,541",
   "operations": "Makes the wafer discs chips are built on, selling directly in the US, China and Europe and via agents in Japan, Taiwan and Korea.",
   "mission": "Aims to supply specialty base materials used in lasers, sensors, wireless devices and solar cells.",
@@ -209,7 +209,7 @@
  "BE": {
   "short": "Bloom Energy — fuel cells that generate on-site electricity for data centres.",
   "founded": "2001",
-  "hq": "San Jose, California, United States",
+  "hq": "California, United States",
   "employees": "2,214",
   "operations": "Designs and builds fuel-cell units that turn natural gas, biogas or hydrogen into on-site electricity for data centres, utilities, hospitals, schools, shops and factories.",
   "mission": "To supply clean, reliable electricity generated right where it is used, without burning the fuel.",
@@ -218,7 +218,7 @@
  "BKNG": {
   "short": "Booking.com, Priceline and Agoda — the world's biggest online travel agency.",
   "founded": "1997",
-  "hq": "Norwalk, Connecticut, United States",
+  "hq": "Connecticut, United States",
   "employees": "24,300",
   "operations": "Runs travel and restaurant booking websites including Booking.com, Priceline, Agoda, KAYAK and OpenTable, used by travellers and hotel owners worldwide.",
   "mission": "To help people book somewhere to stay, a way to get there and a table to eat at, all in one place online.",
@@ -227,7 +227,7 @@
  "BWXT": {
   "short": "Builds the nuclear reactors that power US Navy submarines and carriers.",
   "founded": "1867",
-  "hq": "Lynchburg, Virginia, United States",
+  "hq": "Virginia, United States",
   "employees": "10,400",
   "operations": "Makes nuclear components and fuel, including precision parts for naval reactors, plus medical radioisotopes, steam generators and engineering services.",
   "mission": "To supply nuclear parts, fuel and services to government and commercial customers and support power plants through their life.",
@@ -236,16 +236,16 @@
  "CAT": {
   "short": "Caterpillar — the world's biggest maker of construction and mining machinery.",
   "founded": "1925",
-  "hq": "Irving, Texas, United States",
+  "hq": "Texas, United States",
   "employees": "118,000",
-  "operations": "About 118,000 staff make diggers, loaders, mining trucks, engines, turbines and locomotives sold worldwide, and the company also lends customers the money to buy them.",
+  "operations": "Makes diggers, loaders, mining trucks, engines, turbines and locomotives sold worldwide, and also lends customers the money to buy them.",
   "mission": "To supply the machines and engines used to build, mine and move things around the world.",
   "src": "https://stockanalysis.com/stocks/cat/company/"
  },
  "CCJ": {
   "short": "Cameco — one of the world's largest uranium miners.",
   "founded": "1987",
-  "hq": "Saskatoon, Saskatchewan, Canada",
+  "hq": "Saskatchewan, Canada",
   "employees": "2,424",
   "operations": "Mines, mills and sells uranium and runs fuel refining and conversion, plus its Westinghouse arm which makes reactor equipment; sells in the Americas, Europe and Asia.",
   "mission": "To supply uranium and nuclear fuel services used to generate electricity around the world.",
@@ -254,7 +254,7 @@
  "CDNS": {
   "short": "The software that engineers use to design computer chips.",
   "founded": "1988",
-  "hq": "San Jose, California, United States",
+  "hq": "California, United States",
   "employees": "13,800",
   "operations": "Sells software, testing hardware and ready-made circuit designs to electronics and chip makers, and works in partnership with NVIDIA.",
   "mission": "To provide the software, hardware and design building blocks that engineers use to design computer chips and electronic systems.",
@@ -263,7 +263,7 @@
  "CEG": {
   "short": "America's largest nuclear power operator, selling electricity to data centres.",
   "founded": "1999",
-  "hq": "Baltimore, Maryland, United States",
+  "hq": "Maryland, United States",
   "employees": "15,339",
   "operations": "Runs about 31,676 megawatts of nuclear, wind, solar, natural gas and hydro power plants across the Mid-Atlantic, Midwest, New York and Texas.",
   "mission": "To produce and sell electricity, natural gas and cleaner energy services to homes, businesses and public bodies in the United States.",
@@ -272,7 +272,7 @@
  "CGNX": {
   "short": "Machine-vision systems that let factory robots and machines 'see'.",
   "founded": "1981",
-  "hq": "Natick, Massachusetts, United States",
+  "hq": "Massachusetts, United States",
   "employees": "2,745",
   "operations": "Sells camera-and-software systems that inspect goods on factory and warehouse lines, serving the United States, Europe and Greater China.",
   "mission": "To automate factory and shipping work by letting machines see, identify, inspect and measure items such as phone parts and parcels.",
@@ -281,7 +281,7 @@
  "CIFR": {
   "short": "Bitcoin miner converting its power sites into AI data-centre hosting.",
   "founded": "2021",
-  "hq": "New York, New York, United States",
+  "hq": "New York, United States",
   "employees": "66",
   "operations": "Builds and runs large data centres in the United States: one site currently powers bitcoin mining, with further sites being developed for big cloud-computing tenants.",
   "mission": "Aims to develop industrial-scale data centres for bitcoin mining and for renting heavy computing capacity to large technology customers.",
@@ -290,7 +290,7 @@
  "COHR": {
   "short": "Lasers and optical components for data centres and industrial use.",
   "founded": "1971",
-  "hq": "Saxonburg, Pennsylvania, United States",
+  "hq": "Pennsylvania, United States",
   "employees": "30,216",
   "operations": "Three segments - networking, materials and lasers - making optical parts and laser systems for industry, communications and electronics worldwide.",
   "mission": "Aims to supply the light-based parts and laser machines used in factories, data centres and research.",
@@ -299,7 +299,7 @@
  "CORZ": {
   "short": "Former bitcoin miner now hosting AI and high-performance computing.",
   "founded": "2017",
-  "hq": "Dover, Delaware, United States",
+  "hq": "Delaware, United States",
   "employees": "325",
   "operations": "Runs data centres across the United States providing space, power, cooling and security to customers, and also operates its own machines that mine bitcoin.",
   "mission": "Aims to supply the physical setting and power for heavy computing work, including artificial intelligence, alongside its digital-asset mining.",
@@ -308,7 +308,7 @@
  "CRDO": {
   "short": "High-speed cables and chips that move data inside AI server racks.",
   "founded": "2008",
-  "hq": "Grand Cayman, Cayman Islands",
+  "hq": "Cayman Islands",
   "employees": "807",
   "operations": "Sells high-speed cables, optical modules and chips in the United States, Taiwan, mainland China and Hong Kong, and licenses its designs.",
   "mission": "Aims to move data quickly and reliably between machines in data centres.",
@@ -317,7 +317,7 @@
  "CRM": {
   "short": "Salesforce — the customer-management software used by sales teams worldwide.",
   "founded": "1999",
-  "hq": "San Francisco, California, United States",
+  "hq": "California, United States",
   "employees": "83,334",
   "operations": "Sells customer-management software in the United States, Europe and Asia-Pacific to banks, hospitals, manufacturers, carmakers and government bodies.",
   "mission": "To connect companies with their customers through software, increasingly using automated assistants that work alongside staff.",
@@ -326,7 +326,7 @@
  "CRSP": {
   "short": "Gene-editing biotech; co-developed Casgevy, the first approved CRISPR medicine.",
   "founded": "2013",
-  "hq": "Zug, Switzerland",
+  "hq": "Switzerland",
   "employees": "393",
   "operations": "A Swiss-based gene-editing research company whose approved product Casgevy treats inherited blood disorders; it works closely with Vertex Pharmaceuticals.",
   "mission": "Aims to develop gene-based medicines for serious illnesses, including blood disorders, cancer and type 1 diabetes.",
@@ -335,7 +335,7 @@
  "CRWD": {
   "short": "CrowdStrike — cloud security that protects company laptops and servers.",
   "founded": "2011",
-  "hq": "Austin, Texas, United States",
+  "hq": "Texas, United States",
   "employees": "10,698",
   "operations": "Sells computer security by subscription over the internet in the United States and internationally, protecting company devices, cloud systems and data.",
   "mission": "To protect an organisation's devices, cloud systems, staff identities and data through one subscription platform.",
@@ -344,7 +344,7 @@
  "CRWV": {
   "short": "CoreWeave — rents Nvidia GPU computing power to AI companies.",
   "founded": "2017",
-  "hq": "Livingston, New Jersey, United States",
+  "hq": "New Jersey, United States",
   "employees": "2,189",
   "operations": "Rents computing power over the internet in the United States, supplying specialist chips, storage and networking used for artificial-intelligence work.",
   "mission": "Aims to run complex artificial-intelligence computing at large scale through its own cloud software and services.",
@@ -353,7 +353,7 @@
  "DDOG": {
   "short": "Monitoring software that tells companies the moment their systems break.",
   "founded": "2010",
-  "hq": "New York, New York, United States",
+  "hq": "New York, United States",
   "employees": "8,100",
   "operations": "Runs an internet-based service that watches over customers' software and computer systems, sold in the United States and internationally.",
   "mission": "To let organisations see how their software and computer systems are performing and keep them secure.",
@@ -362,16 +362,16 @@
  "DE": {
   "short": "Deere (John Deere) — the world's largest maker of farm machinery.",
   "founded": "1837",
-  "hq": "Moline, Illinois, United States",
+  "hq": "Illinois, United States",
   "employees": "73,100",
-  "operations": "About 73,100 staff make tractors, harvesters, lawn equipment and construction and forestry machines sold worldwide, with a finance arm that lends buyers the money.",
+  "operations": "Makes tractors, harvesters, lawn equipment and construction and forestry machines sold worldwide, with a finance arm that lends buyers the money.",
   "mission": "To make the machinery that farmers, builders and foresters rely on, with technology that makes their work more precise.",
   "src": "https://stockanalysis.com/stocks/de/company/"
  },
  "DELL": {
   "short": "Servers and PCs; one of the largest suppliers of AI server systems.",
   "founded": "1984",
-  "hq": "Round Rock, Texas, United States",
+  "hq": "Texas, United States",
   "employees": "97,000",
   "operations": "Designs, makes and sells computers and data-centre equipment across the Americas, Europe, the Middle East and Asia, split between business infrastructure and personal computers.",
   "mission": "Aims to supply computing products, services and financing to businesses, governments, schools, hospitals and consumers worldwide.",
@@ -380,7 +380,7 @@
  "ENPH": {
   "short": "Solar microinverters and home battery systems for rooftop solar.",
   "founded": "2006",
-  "hq": "Fremont, California, United States",
+  "hq": "California, United States",
   "employees": "2,872",
   "operations": "Designs and sells home solar equipment in the United States and abroad, including small power converters, home batteries, monitoring software and car chargers.",
   "mission": "To provide complete home energy systems built around rooftop solar, so households can make, store and manage their own electricity.",
@@ -389,7 +389,7 @@
  "EOSE": {
   "short": "Zinc-based batteries designed for long-duration electricity grid storage.",
   "founded": "2008",
-  "hq": "Edison, New Jersey, United States",
+  "hq": "New Jersey, United States",
   "employees": "787",
   "operations": "Makes large battery storage systems in the United States for power utilities, small local grids, and business and industrial customers.",
   "mission": "To supply electricity storage that helps power grids handle growing complexity and swings in the price of power.",
@@ -398,7 +398,7 @@
  "ETN": {
   "short": "Eaton — electrical equipment that manages power in buildings and data centres.",
   "founded": "1916",
-  "hq": "Dublin, Ireland",
+  "hq": "Ireland",
   "employees": "97,000",
   "operations": "Makes electrical, aerospace, vehicle and hydraulic equipment through five divisions, selling in the US, Canada, Latin America, Europe and the Asia Pacific.",
   "mission": "To manage electrical and mechanical power for industrial, commercial and transport customers worldwide.",
@@ -407,7 +407,7 @@
  "FLNC": {
   "short": "Fluence — large grid-scale battery storage systems.",
   "founded": "2018",
-  "hq": "Arlington, Virginia, United States",
+  "hq": "Virginia, United States",
   "employees": "1,670",
   "operations": "Builds large battery storage systems and the software that runs them, selling to power producers, utilities, developers and businesses in many countries.",
   "mission": "To help electricity grids store power from wind and sun so it can be used when it is actually needed.",
@@ -416,7 +416,7 @@
  "FN": {
   "short": "Contract manufacturer that builds optical modules for other companies.",
   "founded": "1999",
-  "hq": "George Town, Cayman Islands",
+  "hq": "Cayman Islands",
   "employees": "16,457",
   "operations": "Contract manufacturer serving North America, Asia-Pacific and Europe, assembling optical and precision electronic products for other brands.",
   "mission": "Aims to build complex optical and electronic products for the companies that design them.",
@@ -425,7 +425,7 @@
  "FSLR": {
   "short": "The largest US solar-panel maker, and a winner from tariffs on foreign solar.",
   "founded": "1999",
-  "hq": "Phoenix, Arizona, United States",
+  "hq": "Arizona, United States",
   "employees": "7,900",
   "operations": "Manufactures and sells solar panels and solar power solutions in the United States, France, India, Chile and other countries.",
   "mission": "To supply solar panels made with its own thin-film technology, rather than the usual silicon, to utilities and large power projects.",
@@ -434,7 +434,7 @@
  "FTNT": {
   "short": "Fortinet — firewalls and network security hardware and software.",
   "founded": "2000",
-  "hq": "Sunnyvale, California, United States",
+  "hq": "California, United States",
   "employees": "15,109",
   "operations": "Sells computer security and networking products worldwide, including firewalls, its own security chips, and cloud-based protection services.",
   "mission": "To bring computer networking and security together into one connected system for customers worldwide.",
@@ -443,16 +443,16 @@
  "GE": {
   "short": "GE Aerospace — builds and services jet engines for airlines and the military.",
   "founded": "1892",
-  "hq": "Evendale, Ohio, United States",
+  "hq": "Ohio, United States",
   "employees": "57,000",
-  "operations": "About 57,000 staff design, build and service jet engines, propellers and aircraft systems for airlines and armed forces in North America, Europe, Asia and the Middle East.",
+  "operations": "Designs, builds and services jet engines, propellers and aircraft systems for airlines and armed forces in North America, Europe, Asia and the Middle East.",
   "mission": "To keep aircraft flying by making and maintaining the engines that power passenger and military planes.",
   "src": "https://stockanalysis.com/stocks/ge/company/"
  },
  "GEV": {
   "short": "GE Vernova — gas and wind turbines plus electricity grid equipment.",
   "founded": "2023",
-  "hq": "Cambridge, Massachusetts, United States",
+  "hq": "Massachusetts, United States",
   "employees": "78,000",
   "operations": "Three divisions: Power (gas, nuclear, hydro, steam), Wind (onshore and offshore turbines) and Electrification (grid gear, solar, storage), selling in the US, Europe, Asia and Africa.",
   "mission": "To supply the equipment and services that generate, move, convert and store electricity.",
@@ -461,7 +461,7 @@
  "GLW": {
   "short": "Corning — optical fibre for networks and the tough glass on phone screens.",
   "founded": "1851",
-  "hq": "Corning, New York, United States",
+  "hq": "New York, United States",
   "employees": "67,200",
   "operations": "Five businesses - optical cable, display glass, specialty materials, car parts and lab products - operating across the US, Asia and Europe.",
   "mission": "Aims to use its glass and ceramics know-how to serve communications, screens, cars and laboratories.",
@@ -470,7 +470,7 @@
  "GOOGL": {
   "short": "Google search and YouTube advertising, plus Google Cloud and Waymo self-driving cars.",
   "founded": "1998",
-  "hq": "Mountain View, California, USA",
+  "hq": "California, United States",
   "employees": "190,820",
   "operations": "Runs search, advertising, phone software, video and email services across the Americas, Europe, Africa, the Middle East and Asia, plus a computing-rental arm.",
   "mission": "To offer a wide range of internet products and platforms, grouped into its main services, its computing-rental business and smaller ventures.",
@@ -479,7 +479,7 @@
  "HNGE": {
   "short": "Hinge Health — app-based physical therapy for back and joint pain.",
   "founded": "2012",
-  "hq": "San Francisco, California, United States",
+  "hq": "California, United States",
   "employees": "1,437",
   "operations": "Provides remote treatment for muscle, bone and joint problems, mainly to employers that pay their own staff health costs, using motion tracking and a wearable device.",
   "mission": "Aims to build a health system that automates and widens care for back, muscle and joint pain, from injury through to recovery after surgery.",
@@ -488,7 +488,7 @@
  "HOOD": {
   "short": "Robinhood — the commission-free app for trading shares and crypto.",
   "founded": "2013",
-  "hq": "Menlo Park, California, United States",
+  "hq": "California, United States",
   "employees": "2,900",
   "operations": "Runs an online investing service in the United States for shares and funds, and also offers credit cards, cash accounts and crypto wallets.",
   "mission": "To let ordinary people invest easily in shares and funds, with free learning material alongside.",
@@ -497,7 +497,7 @@
  "HPE": {
   "short": "Enterprise servers, storage and networking equipment for data centres.",
   "founded": "1939",
-  "hq": "Spring, Texas, United States",
+  "hq": "Texas, United States",
   "employees": "67,000",
   "operations": "Makes servers, storage and networking equipment and sells cloud and financing services worldwide, organised into five divisions.",
   "mission": "Aims to provide businesses around the world with the computing, storage and network equipment and services they rely on.",
@@ -506,7 +506,7 @@
  "HUBB": {
   "short": "Hubbell — electrical grid components and utility hardware.",
   "founded": "1888",
-  "hq": "Shelton, Connecticut, United States",
+  "hq": "Connecticut, United States",
   "employees": "18,000",
   "operations": "Two divisions make power grid transmission and distribution components and communications gear, plus wiring devices, connectors and industrial controls, sold in the US and abroad.",
   "mission": "To make and sell the electrical parts that power grids, buildings and industry depend on.",
@@ -515,7 +515,7 @@
  "HUT": {
   "short": "Owns power sites and data centres leased for AI; bitcoin mining held via a stake.",
   "founded": "2011",
-  "hq": "Miami, Florida, United States",
+  "hq": "Florida, United States",
   "employees": "248",
   "operations": "Operates power and data-centre sites across the United States and Canada, used for bitcoin mining, data-centre services and renting computing power.",
   "mission": "Aims to combine electricity supply, data centres and computing capacity to serve customers whose work uses very large amounts of power.",
@@ -524,7 +524,7 @@
  "HYLN": {
   "short": "Hyliion — KARNO fuel-flexible generators; barely any revenue yet.",
   "founded": "2018",
-  "hq": "Cedar Park, Texas, United States",
+  "hq": "Texas, United States",
   "employees": "113",
   "operations": "Small firm developing the KARNO power generator for fixed and mobile use, able to run on natural gas, propane, hydrogen or ammonia.",
   "mission": "To build an electricity generator that can run on many different fuels, for both stationary and mobile use.",
@@ -533,7 +533,7 @@
  "IBM": {
   "short": "Enterprise software and consulting, plus one of the leading quantum computing programmes.",
   "founded": "1911",
-  "hq": "Armonk, New York, United States",
+  "hq": "New York, United States",
   "employees": "264,300",
   "operations": "Four segments - software, consulting, computing equipment and customer financing - with customers across the Americas, Europe, Africa, the Middle East and Asia.",
   "mission": "To provide combined computing products and services, centred on cloud computing and artificial intelligence, to large organisations.",
@@ -542,7 +542,7 @@
  "INTC": {
   "short": "The historic US chipmaker, now rebuilding both its chip designs and its factories.",
   "founded": "1968",
-  "hq": "Santa Clara, California, USA",
+  "hq": "California, United States",
   "employees": "85,100",
   "operations": "Designs and manufactures chips, with operations in the United States, Ireland and Israel, run as three units including a factory arm making chips for others.",
   "mission": "To design, make and sell computing products, and to build a manufacturing business that produces chips for other companies.",
@@ -551,7 +551,7 @@
  "IONQ": {
   "short": "Builds quantum computers using trapped ions; still early-stage and loss-making.",
   "founded": "2015",
-  "hq": "College Park, Maryland, United States",
+  "hq": "Maryland, United States",
   "employees": "1,132",
   "operations": "Builds quantum computers in the United States and Switzerland and sells access to them directly and through the Amazon, Microsoft and Google cloud services.",
   "mission": "To develop quantum computers, plus quantum-based secure communications and detection systems, and sell access to and support for them.",
@@ -560,7 +560,7 @@
  "IREN": {
   "short": "Data-centre operator shifting from bitcoin mining to AI computing.",
   "founded": "2018",
-  "hq": "Sydney, New South Wales, Australia",
+  "hq": "New South Wales, Australia",
   "employees": "257",
   "operations": "Owns and runs data centres, electrical infrastructure and computing hardware in Australia and Canada, and mines bitcoin.",
   "mission": "Aims to own the whole chain behind its business, from electricity supply and buildings to the computers themselves.",
@@ -569,7 +569,7 @@
  "ISRG": {
   "short": "Maker of the da Vinci surgical robot used in hospitals worldwide.",
   "founded": "1995",
-  "hq": "Sunnyvale, California, United States",
+  "hq": "California, United States",
   "employees": "17,021",
   "operations": "Makes robotic surgery systems and instruments, sold with training and support to hospitals in the United States and internationally.",
   "mission": "To widen access to surgery done through very small cuts, which is gentler on patients than traditional open operations.",
@@ -578,7 +578,7 @@
  "JNJ": {
   "short": "Johnson & Johnson — prescription medicines and medical devices.",
   "founded": "1886",
-  "hq": "New Brunswick, New Jersey, United States",
+  "hq": "New Jersey, United States",
   "employees": "138,200",
   "operations": "Researches, makes and sells health products worldwide through two arms: prescription medicines, and medical devices for surgery, bones, the heart and eyes.",
   "mission": "Aims to research, develop and sell medicines and medical devices for conditions such as cancer, immune disease, and heart and eye problems.",
@@ -587,7 +587,7 @@
  "KEEL": {
   "short": "Former crypto miner pivoting to AI data centres; still deeply loss-making.",
   "founded": "2017",
-  "hq": "New York, New York, United States",
+  "hq": "New York, United States",
   "employees": "170",
   "operations": "Owns and runs data centres in the United States and Canada that house computers, and also provides electrical contracting work in Quebec.",
   "mission": "To operate digital and energy sites in North America for heavy computing and artificial intelligence work.",
@@ -596,7 +596,7 @@
  "KLAC": {
   "short": "Inspection machines that find microscopic defects on chips during manufacturing.",
   "founded": "1975",
-  "hq": "Milpitas, California, United States",
+  "hq": "California, United States",
   "employees": "15,200",
   "operations": "Runs three business lines making inspection and measuring machines for chip and circuit-board plants, sold worldwide.",
   "mission": "Aims to help chip makers find and fix flaws early so more of what they build works properly.",
@@ -605,7 +605,7 @@
  "KO": {
   "short": "Coca-Cola — the world's largest soft-drink company.",
   "founded": "1886",
-  "hq": "Atlanta, Georgia, United States",
+  "hq": "Georgia, United States",
   "employees": "65,900",
   "operations": "Makes drink concentrates and syrups sold worldwide through independent bottling partners, distributors and fountain retailers.",
   "mission": "Aims to make and sell a wide range of non-alcoholic drinks, from soft drinks to water, coffee, tea and juice, around the world.",
@@ -614,7 +614,7 @@
  "LEU": {
   "short": "Centrus — the only US-owned uranium enricher, making HALEU fuel for new reactors.",
   "founded": "1998",
-  "hq": "Bethesda, Maryland, United States",
+  "hq": "Maryland, United States",
   "employees": "467",
   "operations": "Supplies enriched uranium and other nuclear fuel components, and sells technical and manufacturing services, to customers in the US, Japan, the Netherlands and elsewhere.",
   "mission": "To supply the fuel that nuclear power plants run on, along with related technical and manufacturing work.",
@@ -623,7 +623,7 @@
  "LITE": {
   "short": "Lasers and optical modules; a key supplier for AI data-centre networking.",
   "founded": "2015",
-  "hq": "San Jose, California, United States",
+  "hq": "California, United States",
   "employees": "10,562",
   "operations": "Two segments, cloud and networking parts plus industrial lasers, selling across the Americas, Asia-Pacific, Europe, the Middle East and Africa.",
   "mission": "Aims to supply the light-based parts and lasers used in data centres, networks and factories.",
@@ -632,7 +632,7 @@
  "LMND": {
   "short": "Lemonade — app-based renters, home, car and pet insurance run largely by AI.",
   "founded": "2015",
-  "hq": "New York, New York, United States",
+  "hq": "New York, United States",
   "employees": "1,282",
   "operations": "Sells home, renters, landlord, car, pet and life insurance in the United States, Europe and the United Kingdom, and acts as agent for other insurers.",
   "mission": "To provide simple cover for stolen or damaged property and for accidents the customer is responsible for.",
@@ -641,7 +641,7 @@
  "LMT": {
   "short": "The world's largest defence contractor — F-35 fighter jets and missile defence.",
   "founded": "1912",
-  "hq": "Bethesda, Maryland, United States",
+  "hq": "Maryland, United States",
   "employees": "123,000",
   "operations": "Four divisions - combat and transport aircraft, missiles, helicopters and space systems - selling mainly to the US government and to allied governments abroad.",
   "mission": "To research, design and build advanced defence and space technology for the United States government and its allies.",
@@ -650,7 +650,7 @@
  "LRCX": {
   "short": "Etching and deposition equipment, especially important for advanced memory chips.",
   "founded": "1980",
-  "hq": "Fremont, California, United States",
+  "hq": "California, United States",
   "employees": "17,200",
   "operations": "Builds, services and refurbishes chip-making machines, selling into the United States, China, Korea, Taiwan, Japan, Southeast Asia and Europe.",
   "mission": "Aims to supply the machines that lay down, carve and clean the layers used to build computer chips.",
@@ -659,7 +659,7 @@
  "LUNR": {
   "short": "Builds Moon landers plus satellites and space services for NASA and defence customers.",
   "founded": "2013",
-  "hq": "Houston, Texas, United States",
+  "hq": "Texas, United States",
   "employees": "525",
   "operations": "Builds Moon landers and provides delivery, data and support services from Houston, Texas, for NASA, defence bodies and commercial customers.",
   "mission": "To carry cargo and equipment to the Moon and supply the communications and support services a working lunar economy would need.",
@@ -668,7 +668,7 @@
  "LWLG": {
   "short": "Pre-revenue developer of polymer materials that could speed up optical chips.",
   "founded": "1991",
-  "hq": "Englewood, Colorado, United States",
+  "hq": "Colorado, United States",
   "employees": "34",
   "operations": "Very small development-stage firm in Colorado selling special light-controlling materials to chip foundries and optical module makers.",
   "mission": "Aims to sell materials that let data move faster using light inside computer chips.",
@@ -677,7 +677,7 @@
  "MA": {
   "short": "Mastercard — operates one of the two big global card payment networks.",
   "founded": "1966",
-  "hq": "Purchase, New York, United States",
+  "hq": "New York, United States",
   "employees": "39,800",
   "operations": "Processes card and account payments for banks, shops, businesses and governments in the United States and internationally.",
   "mission": "To provide payment processing and related products and services worldwide as a technology company.",
@@ -686,7 +686,7 @@
  "MCD": {
   "short": "McDonald's — the world's largest fast-food restaurant chain.",
   "founded": "1940",
-  "hq": "Chicago, Illinois, United States",
+  "hq": "Illinois, United States",
   "employees": "150,000",
   "operations": "Owns, operates and franchises McDonald's restaurants in the United States and internationally, with most outlets run by franchisees.",
   "mission": "Aims to serve familiar fast food such as burgers, chicken, fries, breakfast and drinks through a largely franchised restaurant network.",
@@ -695,7 +695,7 @@
  "MCHP": {
   "short": "Microcontrollers and analog chips for cars, factory equipment and data centres.",
   "founded": "1989",
-  "hq": "Chandler, Arizona, USA",
+  "hq": "Arizona, United States",
   "employees": "17,900",
   "operations": "Makes and sells small control chips across the Americas, Europe and Asia through two arms: semiconductor products and technology licensing.",
   "mission": "To develop, make and sell smart, connected and secure control chips that sit inside other companies' equipment.",
@@ -704,7 +704,7 @@
  "MDB": {
   "short": "MongoDB — a widely used database for modern applications.",
   "founded": "2007",
-  "hq": "New York, New York, United States",
+  "hq": "New York, United States",
   "employees": "5,636",
   "operations": "Sells its database worldwide as a hosted online service, as software companies run themselves, and as a free version, plus consulting and training.",
   "mission": "To provide a general-purpose database that software developers use to store and organise information.",
@@ -713,16 +713,16 @@
  "MELI": {
   "short": "MercadoLibre — Latin America's Amazon, plus a large payments business.",
   "founded": "1999",
-  "hq": "Montevideo, Uruguay",
+  "hq": "Uruguay",
   "employees": "123,670",
-  "operations": "Runs online shopping sites in Brazil, Mexico, Argentina and beyond, with its own payments, lending, shipping and advertising arms and about 123,670 staff.",
+  "operations": "Runs online shopping sites in Brazil, Mexico, Argentina and beyond, with its own payments, lending, shipping and advertising arms.",
   "mission": "To make buying, selling, paying and borrowing online simple for people and small businesses across Latin America.",
   "src": "https://stockanalysis.com/stocks/meli/company/"
  },
  "META": {
   "short": "Facebook, Instagram and WhatsApp — sells advertising to their billions of users.",
   "founded": "2004",
-  "hq": "Menlo Park, California, USA",
+  "hq": "California, United States",
   "employees": "78,865",
   "operations": "Runs Facebook, Instagram, WhatsApp and Messenger, plus a division making virtual-reality headsets and smart glasses, serving users in most world regions.",
   "mission": "To build products that let people connect and share with friends and family through phones, computers, headsets and smart glasses.",
@@ -731,16 +731,16 @@
  "MMM": {
   "short": "3M — a diversified industrial: tapes, abrasives, safety gear and electronics.",
   "founded": "1902",
-  "hq": "Saint Paul, Minnesota, United States",
+  "hq": "Minnesota, United States",
   "employees": "60,500",
-  "operations": "About 60,500 staff make abrasives, glues, safety gear, car and electronics materials and household goods, sold through shops, wholesalers, websites and direct sales.",
+  "operations": "Makes abrasives, glues, safety gear, car and electronics materials and household goods, sold through shops, wholesalers, websites and direct sales.",
   "mission": "To apply its science to practical products for industry, transport, building, healthcare and the home.",
   "src": "https://stockanalysis.com/stocks/mmm/company/"
  },
  "MPWR": {
   "short": "Power-management chips that feed clean, steady voltage to AI processors.",
   "founded": "1997",
-  "hq": "West Palm Beach, Florida, United States",
+  "hq": "Florida, United States",
   "employees": "4,501",
   "operations": "Designs power-management chips used in data centre servers, cars, appliances and networks, sold through distributors in China, Taiwan, Korea, Europe, the US and Japan.",
   "mission": "To supply the semiconductor parts that convert and control electrical power inside electronic systems.",
@@ -749,7 +749,7 @@
  "MRVL": {
   "short": "Custom data-centre chips that move data between AI servers.",
   "founded": "1995",
-  "hq": "Wilmington, Delaware, USA",
+  "hq": "Delaware, United States",
   "employees": "7,480",
   "operations": "Designs data-centre and networking chips, with operations in the United States, Argentina, China, India, Israel, Japan, Singapore, South Korea, Taiwan and Vietnam.",
   "mission": "To supply the chips that move and store data from the heart of large data centres out to the edge of networks.",
@@ -758,7 +758,7 @@
  "MSFT": {
   "short": "Windows and Office software, Azure cloud computing, and a large stake in OpenAI.",
   "founded": "1975",
-  "hq": "Redmond, Washington, USA",
+  "hq": "Washington, United States",
   "employees": "223,000",
   "operations": "Sells office and business software, rented computing power, Windows, game consoles and search advertising to people and companies worldwide.",
   "mission": "To develop and support a broad set of technology products and services for individuals and businesses around the world.",
@@ -767,7 +767,7 @@
  "MU": {
   "short": "Memory chips, including the high-speed HBM memory that feeds AI processors.",
   "founded": "1978",
-  "hq": "Boise, Idaho, United States",
+  "hq": "Idaho, United States",
   "employees": "53,000",
   "operations": "Four business units making memory and storage chips, with sales in the US, Taiwan, Japan, mainland China, Hong Kong and Europe.",
   "mission": "Aims to make the memory and storage chips used in data centres, phones, cars and computers.",
@@ -776,16 +776,16 @@
  "MYRG": {
   "short": "MYR Group — builds power lines, substations and data-centre electrical systems.",
   "founded": "1891",
-  "hq": "Thornton, Colorado, United States",
+  "hq": "Colorado, United States",
   "employees": "9,000",
-  "operations": "About 9,000 workers build and repair power lines, substations and commercial wiring for utilities, contractors, building owners and governments in the US and Canada.",
+  "operations": "Builds and repairs power lines, substations and commercial wiring for utilities, contractors, building owners and governments in the US and Canada.",
   "mission": "To build and maintain the electrical systems that carry power to homes, businesses and vehicles.",
   "src": "https://stockanalysis.com/stocks/myrg/company/"
  },
  "NBIS": {
   "short": "Nebius — European AI cloud provider spun out of Yandex.",
   "founded": "2000",
-  "hq": "Schiphol, Netherlands",
+  "hq": "Netherlands",
   "employees": "1,543",
   "operations": "Builds and rents large banks of computers for artificial intelligence work in the US, UK and elsewhere; also owns a retraining school and a self-driving vehicle unit.",
   "mission": "To build the full stack of computing infrastructure that the world's artificial intelligence industry needs.",
@@ -794,7 +794,7 @@
  "NEE": {
   "short": "NextEra — the largest US utility and the world's biggest wind and solar operator.",
   "founded": "1925",
-  "hq": "Juno Beach, Florida, United States",
+  "hq": "Florida, United States",
   "employees": "17,300",
   "operations": "Runs power plants using wind, sun, nuclear and natural gas plus power lines, batteries and pipelines; its Florida utility serves about 12 million people.",
   "mission": "To generate, store and deliver electricity across North America, leaning heavily on wind, sun and nuclear power.",
@@ -803,7 +803,7 @@
  "NET": {
   "short": "Cloudflare — speeds up and protects a large share of the world's websites.",
   "founded": "2009",
-  "hq": "San Francisco, California, United States",
+  "hq": "California, United States",
   "employees": "5,156",
   "operations": "Runs a worldwide network that protects and speeds up business websites, plus tools for software builders and free services for the public.",
   "mission": "To give businesses everywhere cloud-based security, faster websites, and building blocks for their own software.",
@@ -812,7 +812,7 @@
  "NFLX": {
   "short": "Netflix — the world's largest video streaming service.",
   "founded": "1997",
-  "hq": "Los Gatos, California, United States",
+  "hq": "California, United States",
   "employees": "16,000",
   "operations": "Streams series, films, games and live programmes in many languages to paying subscribers who watch on televisions, phones and set-top boxes around the world.",
   "mission": "To be a worldwide entertainment service offering a wide range of programmes people can watch whenever they choose.",
@@ -821,7 +821,7 @@
  "NNE": {
   "short": "Early-stage developer of very small ('micro') nuclear reactors.",
   "founded": "2022",
-  "hq": "New York, New York, United States",
+  "hq": "New York, United States",
   "employees": "36",
   "operations": "Early-stage firm designing four small reactors (KRONOS, LOKI, ZEUS, ODIN) and planning a uranium fuel processing plant plus fuel transport and consulting work.",
   "mission": "To build very small nuclear reactors for remote and specialised sites and to supply the fuel for them.",
@@ -830,7 +830,7 @@
  "NOC": {
   "short": "Builds the B-21 stealth bomber, nuclear missiles and space systems.",
   "founded": "1939",
-  "hq": "Falls Church, Virginia, United States",
+  "hq": "Virginia, United States",
   "employees": "95,000",
   "operations": "Four segments - aircraft, defence, mission and space systems - with work in the United States, Asia-Pacific, Europe and other countries.",
   "mission": "To supply aircraft, nuclear deterrent systems, satellites and military command and communication systems to defence customers.",
@@ -839,7 +839,7 @@
  "NOK": {
   "short": "Nokia — telecom network equipment, now also selling data-centre networking.",
   "founded": "1865",
-  "hq": "Espoo, Finland",
+  "hq": "Finland",
   "employees": "78,005",
   "operations": "Supplies mobile, fixed-line and internet network equipment across the Americas, China, India, Asia Pacific, Europe, the Middle East and Africa through four business segments.",
   "mission": "To provide the mobile, fixed and cloud networks that carry communications, and to license its patents and brand.",
@@ -848,7 +848,7 @@
  "NOW": {
   "short": "ServiceNow — workflow software that automates company IT and HR tasks.",
   "founded": "2004",
-  "hq": "Santa Clara, California, United States",
+  "hq": "California, United States",
   "employees": "29,187",
   "operations": "Sells through resellers and partners in North America, Brazil, Europe, Africa, the Middle East and Asia-Pacific to government, banks, hospitals and manufacturers.",
   "mission": "To provide internet-based software that organises and automates the everyday work flowing between a company's departments.",
@@ -857,7 +857,7 @@
  "NRG": {
   "short": "Texas power producer and retail electricity seller, with a large data-centre deal.",
   "founded": "1989",
-  "hq": "Houston, Texas, United States",
+  "hq": "Texas, United States",
   "employees": "16,702",
   "operations": "Sells electricity and home services to households and businesses in the US and Canada under names such as NRG, Reliant and Vivint, and owns power plants.",
   "mission": "To supply homes and businesses with electricity while helping them manage their energy use and protect their property.",
@@ -866,7 +866,7 @@
  "NU": {
   "short": "Nu Holdings — Latin America's largest digital-only bank.",
   "founded": "2013",
-  "hq": "Sao Paulo, SP, Brazil",
+  "hq": "SP, Brazil",
   "employees": "10,027",
   "operations": "Runs a branchless digital bank serving customers in Brazil, Mexico, Colombia, the Cayman Islands and the United States.",
   "mission": "To offer everyday banking, cards, loans, savings and insurance entirely through a mobile phone app.",
@@ -875,7 +875,7 @@
  "NVDA": {
   "short": "Makes the GPU chips that almost all AI computing runs on.",
   "founded": "1993",
-  "hq": "Santa Clara, California, USA",
+  "hq": "California, United States",
   "employees": "42,000",
   "operations": "Sells computing and graphics chips through two arms, with operations in the United States, Taiwan, China, Hong Kong and Europe.",
   "mission": "To operate as a company that supplies the computing equipment whole data centres use for artificial intelligence.",
@@ -884,7 +884,7 @@
  "NVT": {
   "short": "nVent — electrical enclosures and liquid cooling systems for data centres.",
   "founded": "1903",
-  "hq": "London, United Kingdom",
+  "hq": "United Kingdom",
   "employees": "12,000",
   "operations": "Makes enclosures, cooling, cable management and electrical connection products under brands such as HOFFMAN and ERICO for data centres, industry and infrastructure worldwide.",
   "mission": "To connect and protect electrical systems in demanding settings such as data centres and industrial sites.",
@@ -893,7 +893,7 @@
  "OKLO": {
   "short": "Developing small fast reactors to power data centres; earned its first revenue in 2026.",
   "founded": "2013",
-  "hq": "Santa Clara, California, United States",
+  "hq": "California, United States",
   "employees": "215",
   "operations": "Developing small nuclear plants called Aurora Powerhouse, each making 15 to 75 megawatts, plus technology to turn used nuclear fuel back into usable fuel.",
   "mission": "To supply electricity at large scale to US customers from its own small nuclear power plants.",
@@ -902,7 +902,7 @@
  "ON": {
   "short": "Power and sensing chips for electric cars, industry and AI data centres.",
   "founded": "1992",
-  "hq": "Scottsdale, Arizona, USA",
+  "hq": "Arizona, United States",
   "employees": "22,600",
   "operations": "Runs three product groups covering power, analogue and sensing chips, with operations in Hong Kong, Singapore, the United Kingdom and the United States.",
   "mission": "To provide sensing and power-handling chips used in cars, factories and other industrial equipment.",
@@ -911,7 +911,7 @@
  "ONDS": {
   "short": "Defence and security drones and counter-drone systems, plus private wireless networks.",
   "founded": "2014",
-  "hq": "West Palm Beach, Florida, United States",
+  "hq": "Florida, United States",
   "employees": "495",
   "operations": "Two arms, private wireless networks and drones, sold in the US and abroad to railways, utilities, oil and gas firms, public safety bodies and government.",
   "mission": "To provide secure private wireless communications and self-flying drones that gather data and defend against hostile drones.",
@@ -920,7 +920,7 @@
  "ORCL": {
   "short": "Databases and business software, and now a large AI cloud provider.",
   "founded": "1977",
-  "hq": "Austin, Texas, United States",
+  "hq": "Texas, United States",
   "employees": "141,000",
   "operations": "Sells worldwide, directly and through partners, to businesses, government agencies and schools, supplying computing equipment alongside its software.",
   "mission": "To supply the databases, business software and rented computing power that organisations use to run their operations.",
@@ -929,7 +929,7 @@
  "OUST": {
   "short": "Lidar sensors — the 'eyes' for robots and self-driving vehicles.",
   "founded": "2015",
-  "hq": "San Francisco, California, United States",
+  "hq": "California, United States",
   "employees": "320",
   "operations": "Makes laser-based distance sensors sold to car, industrial, robotics and infrastructure customers across the Americas, Asia, Europe, the Middle East and Africa.",
   "mission": "To supply sensors that let vehicles, robots and public infrastructure see and understand what is around them.",
@@ -938,7 +938,7 @@
  "PANW": {
   "short": "Palo Alto Networks — the largest pure-play cybersecurity company.",
   "founded": "2005",
-  "hq": "Santa Clara, California, United States",
+  "hq": "California, United States",
   "employees": "16,068",
   "operations": "Sells computer security products to companies, telecoms firms and governments across the Americas, Europe, the Middle East, Africa, Asia Pacific and Japan.",
   "mission": "To protect customers' networks, cloud systems, security teams and their new artificial intelligence systems.",
@@ -947,7 +947,7 @@
  "PL": {
   "short": "Operates satellites that photograph the whole Earth daily and sells the imagery.",
   "founded": "2010",
-  "hq": "San Francisco, California, United States",
+  "hq": "California, United States",
   "employees": "1,000",
   "operations": "Designs, builds and launches its own fleets of satellites, then sells frequent pictures of the Earth through an online service worldwide.",
   "mission": "To photograph the Earth often and sell that imagery to farming, mapping, energy, forestry, finance and government customers.",
@@ -956,7 +956,7 @@
  "PLTR": {
   "short": "Software that helps governments and companies make sense of huge amounts of data.",
   "founded": "2003",
-  "hq": "Aventura, Florida, United States",
+  "hq": "Florida, United States",
   "employees": "4,429",
   "operations": "Sells software platforms in the United States, the United Kingdom and internationally, serving intelligence and defence agencies as well as businesses.",
   "mission": "To build software that helps governments and companies make sense of large amounts of data, including through artificial intelligence.",
@@ -965,7 +965,7 @@
  "POET": {
   "short": "Small developer of optical 'engines' that combine light and electronics on one chip.",
   "founded": "1972",
-  "hq": "Toronto, Ontario, Canada",
+  "hq": "Ontario, Canada",
   "employees": "80",
   "operations": "Small Toronto-based firm selling chip packaging and optical parts across the Americas, Europe and Asia, working with partner Lumilens.",
   "mission": "Aims to combine electronic and light-based parts on a single chip for data centres and networks.",
@@ -974,7 +974,7 @@
  "POWI": {
   "short": "Power Integrations — energy-efficient power-conversion chips.",
   "founded": "1988",
-  "hq": "San Jose, California, United States",
+  "hq": "California, United States",
   "employees": "877",
   "operations": "Designs and makes high-voltage power conversion chips used in phones, appliances, TVs, LED lighting, electric vehicles, solar and wind systems and electric trains.",
   "mission": "To supply the chips that convert high-voltage electricity into the lower voltages equipment needs.",
@@ -983,7 +983,7 @@
  "POWL": {
   "short": "Powell — electrical switchgear for utilities, industry and data centres.",
   "founded": "1947",
-  "hq": "Houston, Texas, United States",
+  "hq": "Texas, United States",
   "employees": "3,143",
   "operations": "Builds custom electrical switchgear and control-room modules for refineries, liquefied natural gas plants, utilities, data centres and mining, in the US, Canada, Middle East and Asia.",
   "mission": "To design, build and service the heavy electrical equipment industrial plants use to control power.",
@@ -992,7 +992,7 @@
  "PWR": {
   "short": "Quanta Services — builds and maintains electricity transmission lines.",
   "founded": "1997",
-  "hq": "Houston, Texas, United States",
+  "hq": "Texas, United States",
   "employees": "69,500",
   "operations": "Two divisions build and service electric power lines and substations, and underground gas, oil and industrial infrastructure, for utilities and energy companies.",
   "mission": "To build and maintain the infrastructure that delivers electricity, gas and communications.",
@@ -1001,7 +1001,7 @@
  "PYPL": {
   "short": "PayPal — online payments and the Venmo app.",
   "founded": "1998",
-  "hq": "San Jose, California, United States",
+  "hq": "California, United States",
   "employees": "23,800",
   "operations": "Runs an online payments network linking shops and shoppers worldwide, under names including PayPal, Venmo, Braintree, Xoom and Honey.",
   "mission": "To let people and businesses anywhere pay, send and receive money digitally.",
@@ -1010,7 +1010,7 @@
  "QCOM": {
   "short": "Smartphone processors and modems, expanding into cars and AI laptops.",
   "founded": "1985",
-  "hq": "San Diego, California, USA",
+  "hq": "California, United States",
   "employees": "52,000",
   "operations": "Runs three arms worldwide: chip products, patent licensing and start-up investing, plus government services and data-centre products.",
   "mission": "To develop and commercialise the basic technologies that the wireless telephone industry depends on.",
@@ -1019,7 +1019,7 @@
  "RBRK": {
   "short": "Rubrik — data backup and fast recovery after ransomware attacks.",
   "founded": "2013",
-  "hq": "Palo Alto, California, United States",
+  "hq": "California, United States",
   "employees": "3,797",
   "operations": "Sells data protection and backup services worldwide to customers in finance, retail, transport, energy, healthcare, education and the public sector.",
   "mission": "To keep customers' data safe and help them recover quickly after a cyber attack.",
@@ -1028,7 +1028,7 @@
  "RCAT": {
   "short": "Small military drones; its Black Widow won a US Army reconnaissance programme.",
   "founded": "2002",
-  "hq": "South Salt Lake, Utah, United States",
+  "hq": "Utah, United States",
   "employees": "244",
   "operations": "Designs and makes small drones and uncrewed boats in the United States for defence, national security and commercial users such as police and inspectors.",
   "mission": "To supply small unmanned aircraft and robotic systems used for reconnaissance, surveillance and defence missions.",
@@ -1037,7 +1037,7 @@
  "RKLB": {
   "short": "Small rockets and satellites — a leading commercial space launch company.",
   "founded": "2006",
-  "hq": "Long Beach, California, United States",
+  "hq": "California, United States",
   "employees": "2,600",
   "operations": "Provides rocket launches and builds spacecraft, serving customers in the United States, Canada, Japan and elsewhere through two business segments.",
   "mission": "To launch small and medium rockets and supply satellites and parts for commercial and government space missions.",
@@ -1046,7 +1046,7 @@
  "ROK": {
   "short": "Factory automation equipment and industrial control software.",
   "founded": "1903",
-  "hq": "Milwaukee, Wisconsin, United States",
+  "hq": "Wisconsin, United States",
   "employees": "26,000",
   "operations": "Supplies factory automation equipment, software and servicing across North America, Europe, the Middle East, Africa, Asia Pacific and Latin America.",
   "mission": "To help manufacturers in industries such as cars, food and energy run their plants automatically and with modern digital tools.",
@@ -1055,7 +1055,7 @@
  "RTX": {
   "short": "Patriot and AIM-9X missiles, jet engines, and aerospace components.",
   "founded": "1934",
-  "hq": "Arlington, Virginia, United States",
+  "hq": "Virginia, United States",
   "employees": "180,000",
   "operations": "Three segments - Collins Aerospace, Pratt & Whitney aircraft engines and Raytheon - serving commercial, military and government customers worldwide.",
   "mission": "To provide aerospace and defence systems and services to commercial, military and government customers around the world.",
@@ -1064,7 +1064,7 @@
  "SBUX": {
   "short": "Starbucks — the global coffee-shop chain.",
   "founded": "1971",
-  "hq": "Seattle, Washington, United States",
+  "hq": "Washington, United States",
   "employees": "381,000",
   "operations": "Roasts and sells coffee through its own and licensed stores internationally, and sells packaged coffee via grocery and food-service accounts.",
   "mission": "Aims to be a leading roaster, marketer and retailer of coffee worldwide, selling drinks, food and packaged coffee under brands such as Starbucks and Teavana.",
@@ -1075,14 +1075,14 @@
   "founded": "2009",
   "hq": "Singapore",
   "employees": "102,700",
-  "operations": "Runs the Shopee shopping marketplace, the Garena games business and Monee financial services across Southeast Asia and Latin America, with about 102,700 staff.",
+  "operations": "Runs the Shopee shopping marketplace, the Garena games business and Monee financial services across Southeast Asia and Latin America.",
   "mission": "To bring shopping, games and financial services to people across Southeast Asia and other regions through one technology company.",
   "src": "https://stockanalysis.com/stocks/se/company/"
  },
  "SHOP": {
   "short": "Shopify — the software that lets anyone set up and run an online store.",
   "founded": "2004",
-  "hq": "Ottawa, Ontario, Canada",
+  "hq": "Ontario, Canada",
   "employees": "7,600",
   "operations": "Provides software that lets shopkeepers of any size sell online, in physical stores and on marketplaces, and handles their payments, shipping and till equipment.",
   "mission": "To give merchants of any size the tools to run a business and sell wherever their customers are.",
@@ -1091,7 +1091,7 @@
  "SIDU": {
   "short": "Very small company that 3D-prints compact satellites; still early stage.",
   "founded": "2012",
-  "hq": "Merritt Island, Florida, United States",
+  "hq": "Florida, United States",
   "employees": "99",
   "operations": "Designs, builds and flies small satellites from its own plant in Merritt Island, Florida, which handles machining, 3D printing, assembly and testing.",
   "mission": "To build and operate its own satellites and sell the data they gather to commercial, aerospace, government and defence customers.",
@@ -1100,7 +1100,7 @@
  "SKHY": {
   "short": "Korean memory maker — the leading supplier of HBM memory used by AI chips.",
   "founded": "1983",
-  "hq": "Icheon-si, South Korea",
+  "hq": "South Korea",
   "employees": "47,639",
   "operations": "Korean maker of memory and storage chips selling across Korea, China, the rest of Asia, the United States and Europe; also makes chips to order.",
   "mission": "Aims to supply memory and storage chips for servers, phones, computers and cars.",
@@ -1109,7 +1109,7 @@
  "SMCI": {
   "short": "Builds the AI server racks that house Nvidia's chips.",
   "founded": "1993",
-  "hq": "San Jose, California, United States",
+  "hq": "California, United States",
   "employees": "6,238",
   "operations": "Designs and sells computer servers and storage systems in the United States, Asia and Europe, including complete racks installed in data centres.",
   "mission": "To supply servers built on modular, open designs for data centre, cloud and artificial intelligence customers.",
@@ -1118,7 +1118,7 @@
  "SMR": {
   "short": "NuScale — designer of small modular nuclear reactors.",
   "founded": "2007",
-  "hq": "Corvallis, Oregon, United States",
+  "hq": "Oregon, United States",
   "employees": "428",
   "operations": "Sells small modular reactor units of 77 megawatts each and the design, licensing, construction, training and maintenance support that plants using them need.",
   "mission": "To provide small modular nuclear reactor technology and the services required to license, build and run plants using it.",
@@ -1127,7 +1127,7 @@
  "SNDK": {
   "short": "Flash memory and SSD storage, spun out of Western Digital.",
   "founded": "2024",
-  "hq": "Milpitas, California, United States",
+  "hq": "California, United States",
   "employees": "11,000",
   "operations": "Makes flash-memory drives and cards, selling in the US, Europe, the Middle East, Africa and Asia to computer makers, data centres and retailers.",
   "mission": "Aims to supply fast flash storage for computers, phones, cars and data centres.",
@@ -1136,7 +1136,7 @@
  "SNOW": {
   "short": "Cloud data warehouse where companies store and analyse all their data.",
   "founded": "2012",
-  "hq": "Menlo Park, California, United States",
+  "hq": "California, United States",
   "employees": "9,060",
   "operations": "Sells its internet-based data platform to organisations of many kinds in the United States and internationally.",
   "mission": "To let organisations gather all their data in one place to gain business insight, share it, and apply artificial intelligence to it.",
@@ -1145,7 +1145,7 @@
  "SOFI": {
   "short": "SoFi — a digital bank combining loans, investing and banking in one app.",
   "founded": "2011",
-  "hq": "San Francisco, California, United States",
+  "hq": "California, United States",
   "employees": "6,100",
   "operations": "A lender and online bank serving the United States, Latin America, Canada and Hong Kong, split into lending, banking technology, and financial services.",
   "mission": "To let its members borrow, save, spend, invest and protect their money in one place.",
@@ -1154,16 +1154,16 @@
  "SOUN": {
   "short": "SoundHound — voice AI for restaurant drive-thrus, cars and call centres.",
   "founded": "2005",
-  "hq": "Santa Clara, California, United States",
+  "hq": "California, United States",
   "employees": "954",
-  "operations": "About 954 staff build voice-recognition software used in cars, televisions, restaurant ordering and customer service, sold in the US, Japan, Korea, France and Germany.",
+  "operations": "Builds voice-recognition software used in cars, televisions, restaurant ordering and customer service, sold in the US, Japan, Korea, France and Germany.",
   "mission": "To let people speak to machines in ordinary language and get useful answers back.",
   "src": "https://stockanalysis.com/stocks/soun/company/"
  },
  "SPCX": {
   "short": "SpaceX — rockets, Starship, and the Starlink satellite internet network.",
   "founded": "2002",
-  "hq": "Starbase, Texas, United States",
+  "hq": "Texas, United States",
   "employees": "22,000",
   "operations": "Launches reusable rockets, runs the Starlink satellite internet network, and operates an artificial intelligence arm; serves the US, Ireland, Canada and beyond.",
   "mission": "To provide low-cost access to space with reusable rockets, deliver internet from satellites, and build artificial intelligence services.",
@@ -1172,7 +1172,7 @@
  "STRL": {
   "short": "Does the site groundwork and utilities underneath data centres and chip plants.",
   "founded": "1955",
-  "hq": "The Woodlands, Texas, United States",
+  "hq": "Texas, United States",
   "employees": "6,200",
   "operations": "Prepares sites for data centres, warehouses and power plants, builds roads, bridges and airports, and pours house foundations across the southern and eastern United States.",
   "mission": "To provide site preparation, transport construction and building work in the United States through three business segments.",
@@ -1189,7 +1189,7 @@
  },
  "TE": {
   "short": "Solar manufacturing company (formerly Freyr) building US solar capacity.",
-  "hq": "Austin, Texas, United States",
+  "hq": "Texas, United States",
   "employees": "562",
   "operations": "Makes and sells solar panels and cells, with a head office in Austin, Texas, a factory south of Dallas, and activity in Norway.",
   "mission": "To build an American-based supply chain for solar panels and cells; it was the battery firm FREYR until renaming itself in February 2025.",
@@ -1198,7 +1198,7 @@
  "TEAM": {
   "short": "Atlassian — Jira, Confluence and Trello, the tools teams use to track work.",
   "founded": "2002",
-  "hq": "Sydney, Australia",
+  "hq": "Australia",
   "employees": "13,813",
   "operations": "Sells worldwide a family of teamwork tools, including Jira for tracking projects, Confluence for shared documents and Trello for to-do lists.",
   "mission": "To connect all the teams in an organisation through one shared system of work so they can get more done.",
@@ -1207,7 +1207,7 @@
  "TEM": {
   "short": "Tempus AI — applies AI to medical and genetic data to guide cancer treatment.",
   "founded": "2015",
-  "hq": "Chicago, Illinois, United States",
+  "hq": "Illinois, United States",
   "employees": "3,800",
   "operations": "Runs laboratories and a data service in the United States that test patients' genes for doctors, and works with drug makers such as AstraZeneca and Merck.",
   "mission": "Aims to link doctors directly to its own laboratory testing and large stores of patient data so treatment choices are better informed.",
@@ -1216,7 +1216,7 @@
  "TER": {
   "short": "Machines that test finished chips, plus industrial and collaborative robots.",
   "founded": "1960",
-  "hq": "North Reading, Massachusetts, United States",
+  "hq": "Massachusetts, United States",
   "employees": "6,600",
   "operations": "Designs and sells machines that test computer chips, and also makes robots, operating in the United States, Asia Pacific, Europe, the Middle East and Africa.",
   "mission": "To supply the testing equipment that checks chips work properly, plus robots that work alongside people in factories.",
@@ -1225,7 +1225,7 @@
  "TMDX": {
   "short": "'Organ-in-a-box' machines that keep donor organs alive during transport.",
   "founded": "1998",
-  "hq": "Andover, Massachusetts, United States",
+  "hq": "Massachusetts, United States",
   "employees": "898",
   "operations": "Sells its Organ Care System, a portable machine that keeps donor organs alive outside the body, to transplant centres in the United States and abroad.",
   "mission": "Aims to transform organ transplant treatment for patients whose organs have failed.",
@@ -1234,7 +1234,7 @@
  "TSLA": {
   "short": "Electric cars, plus a fast-growing battery-storage business and robotics ambitions.",
   "founded": "2003",
-  "hq": "Austin, Texas, United States",
+  "hq": "Texas, United States",
   "employees": "134,785",
   "operations": "Builds and sells electric cars plus energy generation and storage systems in the United States, China and other countries, across two business segments.",
   "mission": "To sell electric vehicles alongside solar and battery storage products, with related services such as financing, servicing and insurance.",
@@ -1243,7 +1243,7 @@
  "TSM": {
   "short": "The world's chip factory — actually manufactures the chips Nvidia, Apple and AMD design.",
   "founded": "1987",
-  "hq": "Hsinchu City, Taiwan",
+  "hq": "Taiwan",
   "employees": "90,557",
   "operations": "Makes, packages and tests chips for other companies, selling in Taiwan, China, Europe, the Middle East, Africa, Japan and the United States.",
   "mission": "To manufacture the chips its customers design, for computing, phones, cars, connected devices and home electronics.",
@@ -1252,7 +1252,7 @@
  "UBER": {
   "short": "Uber — ride-hailing and food delivery around the world.",
   "founded": "2009",
-  "hq": "San Francisco, California, United States",
+  "hq": "California, United States",
   "employees": "34,000",
   "operations": "Runs a phone app linking riders with drivers and hire cars, diners with restaurants and shops, and companies shipping goods with lorry drivers.",
   "mission": "To make getting a ride, a meal or a delivery as simple as pressing a button on a phone.",
@@ -1261,7 +1261,7 @@
  "UNH": {
   "short": "America's largest health insurer, plus a very large healthcare services arm.",
   "founded": "1977",
-  "hq": "Eden Prairie, Minnesota, United States",
+  "hq": "Minnesota, United States",
   "employees": "390,000",
   "operations": "Sells health insurance to employers, governments and individuals, and through its Optum arm provides medical care, pharmacy services and health software.",
   "mission": "Aims to run a health care company that both provides insurance cover and delivers the care, pharmacy and data services behind it.",
@@ -1270,7 +1270,7 @@
  "UUUU": {
   "short": "US uranium miner that also processes rare-earth elements at its Utah mill.",
   "founded": "1987",
-  "hq": "Lakewood, Colorado, United States",
+  "hq": "Colorado, United States",
   "employees": "1,069",
   "operations": "Explores for and recovers uranium from mineral properties in the United States, and also produces vanadium, rare earth materials and heavy mineral sands such as zircon and ilmenite.",
   "mission": "To find, recover and sell uranium and other critical minerals from its US mineral properties.",
@@ -1279,7 +1279,7 @@
  "V": {
   "short": "Visa — the world's largest payment network, earning a small fee on card transactions.",
   "founded": "1958",
-  "hq": "San Francisco, California, United States",
+  "hq": "California, United States",
   "employees": "34,100",
   "operations": "Runs VisaNet, a network that approves and settles card payments in the United States and internationally for banks, shops and governments.",
   "mission": "To move money for consumers, sellers, banks and governments through its payment network and card brands.",
@@ -1288,7 +1288,7 @@
  "VEEV": {
   "short": "Cloud software built specifically for pharmaceutical and life-science companies.",
   "founded": "2007",
-  "hq": "Pleasanton, California, United States",
+  "hq": "California, United States",
   "employees": "7,928",
   "operations": "Serves drug and medical companies in North America, Europe, Asia-Pacific, the Middle East, Africa and Latin America, adding consulting and support services.",
   "mission": "To provide the online software and data that drug and medical firms use to run sales, clinical trials, quality checks and regulatory paperwork.",
@@ -1297,16 +1297,16 @@
  "VRT": {
   "short": "Vertiv — the power and cooling systems that keep data centres running.",
   "founded": "2016",
-  "hq": "Westerville, Ohio, United States",
+  "hq": "Ohio, United States",
   "employees": "34,000",
-  "operations": "About 34,000 staff in more than 40 countries make the power and cooling equipment that keeps data centres and telephone networks running, under brands such as Liebert.",
+  "operations": "Makes the power and cooling equipment that keeps data centres and telephone networks running in more than 40 countries, under brands such as Liebert.",
   "mission": "To keep the equipment behind data centres and networks powered, cooled and running without interruption.",
   "src": "https://stockanalysis.com/stocks/vrt/company/"
  },
  "VST": {
   "short": "Vistra — Texas power producer with nuclear and gas plants serving AI demand.",
   "founded": "1882",
-  "hq": "Irving, Texas, United States",
+  "hq": "Texas, United States",
   "employees": "6,390",
   "operations": "Serves about 5 million electricity and gas customers and runs roughly 44,000 megawatts of gas, nuclear, coal, solar and battery generation across US states.",
   "mission": "To generate electricity and sell it, along with natural gas, directly to homes, businesses and industry across the United States.",
@@ -1315,7 +1315,7 @@
  "WDAY": {
   "short": "Workday — cloud software for company HR and finance departments.",
   "founded": "2005",
-  "hq": "Pleasanton, California, United States",
+  "hq": "California, United States",
   "employees": "21,000",
   "operations": "Sells internet-based software that large employers use to run pay, hiring and accounting, serving banks, hospitals, schools, governments, shops and manufacturers.",
   "mission": "To give organisations one online system for managing their people and their money.",
@@ -1324,7 +1324,7 @@
  "WDC": {
   "short": "Hard drives and storage systems for data centres and consumers.",
   "founded": "1970",
-  "hq": "San Jose, California, United States",
+  "hq": "California, United States",
   "employees": "51,000",
   "operations": "Makes hard-disk drives and storage systems sold across the US, Asia, Europe, the Middle East and Africa through computer makers, dealers and retailers.",
   "mission": "Aims to supply large-capacity hard drives for homes, offices and data centres.",
@@ -1333,7 +1333,7 @@
  "XE": {
   "short": "X-energy — small modular reactor developer; listed on the market in April 2026.",
   "founded": "2009",
-  "hq": "Rockville, Maryland, United States",
+  "hq": "Maryland, United States",
   "employees": "889",
   "operations": "Designs nuclear reactors and makes their fuel; its Xe-100 unit produces 80 megawatts of electricity or 200 megawatts of heat, and it manufactures TRISO-X reactor fuel.",
   "mission": "To design and supply nuclear reactors together with the special fuel they run on.",
@@ -1342,7 +1342,7 @@
  "YUM": {
   "short": "Owns KFC, Pizza Hut and Taco Bell.",
   "founded": "1997",
-  "hq": "Louisville, Kentucky, United States",
+  "hq": "Kentucky, United States",
   "employees": "49,000",
   "operations": "Runs and franchises fast-food restaurants in the United States, China and internationally through four divisions: KFC, Taco Bell, Pizza Hut and Habit Burger & Grill.",
   "mission": "Aims to develop, operate and franchise quick-service restaurant brands around the world.",
@@ -1351,7 +1351,7 @@
  "ZETA": {
   "short": "Marketing software that uses data and AI to target customers.",
   "founded": "2007",
-  "hq": "New York, New York, United States",
+  "hq": "New York, United States",
   "employees": "3,300",
   "operations": "Sells cloud-based marketing and customer-data software to large companies in the United States and other countries.",
   "mission": "Aims to help large companies find, grow and keep customers more cheaply and effectively than rival marketing tools.",
@@ -1360,7 +1360,7 @@
  "ZS": {
   "short": "Zscaler — cloud security that replaces traditional corporate firewalls.",
   "founded": "2007",
-  "hq": "San Jose, California, United States",
+  "hq": "California, United States",
   "employees": "7,923",
   "operations": "Runs cloud-based security services worldwide that inspect the internet traffic between staff and the applications and files they use.",
   "mission": "To protect companies by checking every connection through the cloud rather than trusting anyone inside the network.",
