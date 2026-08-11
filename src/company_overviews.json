@@ -1409,5 +1409,50 @@
   "operations": "Sells across the Americas, Asia-Pacific and Europe to telecom, cloud, enterprise, emergency-services, military and aerospace customers.",
   "mission": "Positions itself as a global leader in test, measurement and optical technologies for critical infrastructure.",
   "src": "https://stockanalysis.com/stocks/viav/company/"
+ },
+ "TSEM": {
+  "short": "Tower Semiconductor is a contract chip manufacturer - a foundry - but unlike the giants chasing the smallest, fastest digital chips, Tower specialises in analog and specialty chips: parts that handle radio signals, electrical power, light and sensing. Its customers are other chip companies and system makers who design the chips and pay Tower to build them, for use in mobile phones, data-centre optical networking gear, cars, industrial equipment and medical devices.",
+  "founded": "1993",
+  "hq": "Migdal Haemek, Israel",
+  "employees": "5,613",
+  "operations": "Runs wafer fabrication plants in Israel, the United States, Japan and Italy, and in July 2026 announced a roughly 3 billion dollar capacity expansion in Japan with Japanese government (METI) support. Q2 2026 revenue mix: RF Infrastructure 25 percent, RF Mobile 23 percent, Power 17 percent, Sensors and Displays 15 percent, Discrete 11 percent, mixed-signal/CMOS and other 9 percent. Listed on NASDAQ since October 1994 and dual-listed in Tel Aviv.",
+  "mission": "To be the analog specialty foundry of choice, and in particular to become a leading supplier of silicon photonics for AI data centres - management has taken that business from a 180 million dollar annualised run rate in Q2 2025 to 680 million in Q2 2026, targets 1 billion annualised by Q4 2026, has 1.3 billion of signed silicon photonics contracts for 2027, and has raised its 2028 model to 3.6 billion of revenue which it describes as fully spoken for by customers.",
+  "src": "https://www.globenewswire.com/news-release/2026/08/04/3338165/0/en/Tower-Semiconductor-Announces-Record-Results-for-Revenue-and-Profitability-for-the-Second-Quarter-2026-with-Third-Quarter-2026-Record-Revenue-Guidance.html"
+ },
+ "GFS": {
+  "short": "GlobalFoundries is a contract chip manufacturer that builds semiconductors designed by other companies. It deliberately does not compete at the bleeding edge of miniaturisation; instead it makes the more mature, feature-rich chips that go into phones, cars, home appliances, industrial equipment and networking gear - power management chips, radio-frequency modems, microcontrollers and, increasingly, silicon photonics and quantum-related parts.",
+  "founded": "2009",
+  "hq": "New York, United States",
+  "employees": "14,000",
+  "operations": "Operates fabs in the United States, Germany and Singapore. Q2 2026 end-market mix: Smart Mobile Devices 36 percent, Automotive 19 percent, Home and Industrial IoT 18 percent, Communications Infrastructure and Data Center 16 percent, Technology Services 11 percent. Roughly 73 percent owned by Mubadala of Abu Dhabi. Awarded up to 1.5 billion dollars of US CHIPS Act funding plus more than 550 million from New York State, and in July 2026 a further 300 million silicon photonics award under which the US government took an approximately 1 percent equity stake, plus a 375 million quantum computing letter of intent.",
+  "mission": "To be the essential partner for feature-rich, mature-node chips that the world actually runs on, expanding into silicon photonics and quantum while keeping manufacturing inside the United States, Europe and Singapore rather than concentrating it in Taiwan.",
+  "src": "https://www.globenewswire.com/news-release/2026/08/05/3339162/0/en/GlobalFoundries-Reports-Second-Quarter-2026-Financial-Results.html"
+ },
+ "FORM": {
+  "short": "FormFactor makes probe cards - precision electrical test fixtures that touch a silicon wafer so each chip can be tested for defects before the wafer is cut apart and the chips are packaged. That saves chipmakers from spending money packaging chips that were never going to work. It also sells a smaller line of laboratory instruments: probe stations, analytical probes, and thermal and cryogenic test systems.",
+  "founded": "1993",
+  "hq": "California, United States",
+  "employees": "2,153",
+  "operations": "Sells worldwide to memory makers, logic and foundry chipmakers and research laboratories. Q2 2026 revenue split: Probe Cards 209.7 million dollars (81 percent) and Systems 48.5 million (19 percent). Sold its Chinese operations in Suzhou and Shanghai in February 2024 for 25 million dollars, retaining a distribution partnership there.",
+  "mission": "To be the test and measurement partner that lets chipmakers find bad chips as early and as cheaply as possible - now aimed squarely at the two hardest new test problems in AI hardware: high-bandwidth memory, which was about two thirds of its record DRAM revenue in Q2 2026, and co-packaged optics, which management expects to pass 20 million dollars of revenue in 2026.",
+  "src": "https://investors.formfactor.com/news-releases/news-release-details/formfactor-inc-reports-2026-second-quarter-results"
+ },
+ "COHU": {
+  "short": "Cohu makes the machines and parts used to test computer chips after they have been manufactured and packaged - mainly test handlers that move chips into and out of a tester at controlled temperatures, plus the contactors and probe pins that physically touch each chip, inspection and measurement systems, and software that analyses the test data.",
+  "founded": "1947",
+  "hq": "California, United States",
+  "employees": "2,777",
+  "operations": "Operates across the Americas, Europe and Asia including the United States, Switzerland, Germany, Malaysia, the Philippines, Japan and Singapore. Sells to semiconductor makers and to the outsourced assembly and test houses that serve them, across automotive, computing, industrial, mobile, consumer and IoT applications. Recurring revenue - consumables and interface products rather than machines - was 53 percent of revenue in Q2 2026.",
+  "mission": "To shift the business away from lumpy machine sales toward steady recurring revenue, and to ride the move from its traditional automotive base into AI compute - computing was 46 percent of system orders in Q2 2026, up 150 percent year on year, and management raised its 2026 high-performance-compute revenue estimate to 100-110 million dollars against an opportunity pipeline of roughly 850 million.",
+  "src": "https://ir.cohu.com/news-releases/news-release-details/cohu-reports-second-quarter-2026-results"
+ },
+ "VECO": {
+  "short": "Veeco Instruments makes the large, expensive machines that chip factories use to build semiconductors: laser annealing systems that flash-heat wafers, ion beam deposition and etch tools, MOCVD reactors for compound-semiconductor and laser chips, advanced-packaging lithography, wet processing and atomic layer deposition. Its customers are the chipmakers themselves, plus hard-disk-drive and photonics manufacturers and research institutions.",
+  "founded": "1945",
+  "hq": "New York, United States",
+  "employees": "1,265",
+  "operations": "Sells across the United States, Europe, China and the rest of Asia-Pacific, with Asia dominant; China was 25 percent of revenue in Q2 2026, up from 13 percent in Q1. Q2 2026 revenue by market: Semiconductor 68 percent, Compound Semiconductor 11 percent, Data Storage 11 percent, Scientific and other 10 percent. Listed on NASDAQ since November 1994.",
+  "mission": "IMPORTANT - Veeco is not being run as a standalone business for much longer: it agreed to be acquired by Axcelis Technologies in an all-stock merger at 0.3575 Axcelis shares per Veeco share, a roughly 4.4 billion dollar combination in which Veeco holders end up with about 42 percent of the merged company. Closing is targeted for the second half of 2026, every regulator except China's SAMR has cleared it, and the outside date is September 30, 2026.",
+  "src": "https://www.globenewswire.com/news-release/2026/08/05/3339655/0/en/Veeco-Reports-Second-Quarter-2026-Financial-Results.html"
  }
 }
