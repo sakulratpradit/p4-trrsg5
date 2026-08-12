@@ -199,7 +199,16 @@ ASOF = ('Aug 7, 2026 · close — weekly refresh & integrity audit Aug 10: all 1
  'not be read and MarketScreener lists no Q3 date. TIMING NOTE: the Aug 11, 2026 session has now CLOSED, so the whole '
  'dashboard is one session behind - CHKP itself closed Aug 11 at 129.12 (-1.54%). CHKP was stored at the Aug 10 close '
  'for consistency with the 50 held names and the four names added earlier today; the next daily job should advance '
- 'everything to Aug 11 together. Total 162 -> 162 (one added, one deleted).')
+ 'everything to Aug 11 together. Total 162 -> 162 (one added, one deleted). | Aug 11, 2026: CHKP REMOVED from '
+ "Cybersecurity at Salee's request, hours after being added. It was watchlist only - no position, no budget, no trades "
+ 'and no realised history - so the removal is clean and leaves nothing orphaned; its overview and weekly-notes entries '
+ 'were deleted with it. sanity_check flags it as VANISHED by design and that single flag was verified as the ONLY '
+ 'failure, with zero warnings, before pushing. The research stands on record in this log should it ever be reinstated: '
+ 'Check Point closed Aug 10 at 131.14 and Aug 11 at 129.12, with 87.49%% gross margin, 29.02%% operating margin, '
+ '36.04%% ROIC, 1.10B FCF on 2.76B revenue, trailing P/E 13.36 and forward 12.16, no dividend but a 2B buyback '
+ 'expansion authorised May 11 2026 - against TTM revenue growth of only 4.6%% and Q2 revenue up 1%% YoY, an 8.19%% '
+ 'fall on the Jul 30 print, and downgrades from JPMorgan, Raymond James, Roth MKM and Goldman between Jul 15 and Aug '
+ '1. Cybersecurity 7 -> 6 names (CRWD, PANW, ZS, FTNT, NET, RBRK). Total 162 -> 161.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -4315,37 +4324,6 @@ STOCKS = [{'t': 'GOOGL',
   'lo52': 42.25,
   'hi52': 99.75,
   'pxd': '2026-08-07'},
- {'t': 'CHKP',
-  'name': 'Check Point Software',
-  'ex': 'NASDAQ',
-  'g': 15,
-  'price': 131.14,
-  'jan2': None,
-  'mcapB': 13.18,
-  'ath': 233.47,
-  'fvMin': 105,
-  'fvAvg': 146.32,
-  'fvMax': 201,
-  'an': 38,
-  'peg': 1.97,
-  'ps': 4.84,
-  'fpe': 12.16,
-  'pe': 13.36,
-  'gm': 87.49,
-  'pm': 37.93,
-  'revB': 2.76,
-  'revG': 4.6,
-  'eps': 9.82,
-  'epsG': 27.9,
-  'roi': 36.04,
-  'roe': 37.64,
-  'fcfB': 1.1,
-  'capexB': 0.0296,
-  'r40': 44.5,
-  'budget': None,
-  'lo52': 112.23,
-  'hi52': 210.66,
-  'pxd': '2026-08-10'},
  {'t': 'PWR',
   'name': 'Quanta Services',
   'ex': 'NYSE',
@@ -5406,8 +5384,7 @@ POS = {'GOOGL': {'budget': 60000, 'cost': 55324.68, 'shares': 205},
  'TSEM': {'budget': None, 'cost': None, 'shares': None},
  'GFS': {'budget': None, 'cost': None, 'shares': None},
  'FORM': {'budget': None, 'cost': None, 'shares': None},
- 'COHU': {'budget': None, 'cost': None, 'shares': None},
- 'CHKP': {'budget': None, 'cost': None, 'shares': None}}
+ 'COHU': {'budget': None, 'cost': None, 'shares': None}}
 
 TRADES = [{'date': 'Jul 21, 2026',
   'action': 'BUY',
@@ -6322,8 +6299,7 @@ M3 = {'GOOGL': {'pfcf': 72.54, 'ev': 21.6, 'de': 0.18},
  'TSEM': {'pfcf': 94.71, 'ev': 98.21, 'de': 0.05},
  'GFS': {'pfcf': 34.5, 'ev': 12.61, 'de': 0.14},
  'FORM': {'pfcf': 67.86, 'ev': 58.2, 'de': 0.03},
- 'COHU': {'pfcf': 69.66, 'ev': 254.16, 'de': 0.43},
- 'CHKP': {'pfcf': 12.14, 'ev': 12.62, 'de': 0.72}}
+ 'COHU': {'pfcf': 69.66, 'ev': 254.16, 'de': 0.43}}
 
 METRICS3 = M3  # alias: per-ticker pfcf / ev (EV/EBITDA) / de (Debt/Equity)
 
