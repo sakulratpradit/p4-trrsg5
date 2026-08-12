@@ -168,7 +168,38 @@ ASOF = ('Aug 7, 2026 · close — weekly refresh & integrity audit Aug 10: all 1
  'intentions rather than funded orders. All four fell on Aug 10 (COHR -14.24%, FN -6.28%) and COHR reports tomorrow. '
  'ath NOT FOUND on FORM, COHU and VECO - the 52-week highs 160.27, 74.60 and 86.63 were stored as proxies; Veeco dates '
  'to 1945 so its true record is certainly far higher. Chips Manufacturing 6 -> 10 names, Computing Chips 11 -> 12, '
- 'total 157 -> 162.')
+ 'total 157 -> 162. | Aug 11, 2026 (evening, after the Aug 11 close): THREE STRUCTURAL CHANGES, all user-directed. (1) '
+ 'GFS MOVED from Chips Manufacturing to Computing Chips, accepting the note filed with its addition - GlobalFoundries '
+ 'is a foundry that builds chips other companies design, the same business as TSM and TSEM, while Chips Manufacturing '
+ 'is otherwise equipment and test makers. Computing Chips 12 -> 13, Chips Manufacturing 10 -> 8 (after the VECO '
+ 'removal below). GFS carried no position, no budget, no trades and no realised history, so nothing needed '
+ 're-attributing. (2) VECO DELETED as advised. Veeco is not an independent equity: it agreed to be acquired by Axcelis '
+ "Technologies in an ALL-STOCK merger at a FIXED 0.3575 Axcelis shares per Veeco share, all regulators except China's "
+ 'SAMR have cleared it, and the outside date is Sep 30, 2026 - so its price tracks Axcelis rather than its own '
+ 'results, which is why its stored multiples were incoherent (134x trailing vs 20x forward; four analyst panels '
+ 'averaging 61.33, 60.33, 49.33 and 40.60). It was watchlist-only with no position, no budget and no trade history, so '
+ 'the deletion is clean; sanity_check flags it as VANISHED by design and that single flag was verified as the ONLY one '
+ 'before pushing. Its overview and weekly-notes entries were removed with it to avoid orphans. If Salee wants exposure '
+ 'to this combination the instrument is ACLS, not VECO. (3) CHKP (Check Point Software Technologies Ltd, NASDAQ) added '
+ 'to Cybersecurity at the Aug 10, 2026 close 131.14 (+2.60%), second-sourced; watchlist only, jan2 NOT FOUND. It is '
+ 'the deliberate opposite of the two cybersecurity names already held: CRWD and PANW are fast growers on rich '
+ 'multiples, CHKP is a cash machine that barely grows. Gross margin 87.49%, operating margin 29.02%, net margin '
+ '37.93%, ROIC 36.04%, FCF 1.10B on 2.76B revenue (39.91% FCF margin), trailing P/E 13.36 and forward 12.16 - the '
+ 'cheapest quality name anywhere on this dashboard. NO DIVIDEND; it returns cash through buybacks instead, with a 2B '
+ 'expansion authorised May 11, 2026, ~325M repurchased in Q2 and the share count down 4.38% YoY. THE PROBLEM IS '
+ 'GROWTH: TTM revenue +4.6% and Q2 2026 (Jul 30) revenue 673.6M only +1% YoY; non-GAAP EPS 2.55 beat but revenue '
+ 'missed and the stock fell 8.19% that day. The sell side is walking away - JPMorgan to Neutral Jul 27, Raymond James '
+ 'to Market Perform Jul 15, Roth MKM target to 105 Jul 31, Goldman 168 -> 150 Aug 1, Citi 125 -> 130 Aug 3. Israel '
+ 'risk is disclosed explicitly in the FY2025 20-F (war involving Israel, the US and Iran; hostilities with Hezbollah, '
+ 'Hamas and Yemen; reservist call-ups). CONFLICTS on record: analyst panel 38 / Buy / avg 146.32 / high 201 '
+ '(stockanalysis) vs 28 / Hold / avg 149.67 / high 220 (MarketBeat), low agrees at 105; 52-week high 210.66 '
+ '(stockanalysis) vs 222.22 (GuruFocus), low agrees at 112.23; ROIC 36.04% (stockanalysis) vs an unverified 17.99% '
+ '(GuruFocus, not fetched). ath 233.47 dated Jun 6, 2025 is a CLOSING-basis figure from a single non-preferred source '
+ "(companiesmarketcap) - no intraday record was found. Next earnings ESTIMATED Oct 27 - Check Point's IR page could "
+ 'not be read and MarketScreener lists no Q3 date. TIMING NOTE: the Aug 11, 2026 session has now CLOSED, so the whole '
+ 'dashboard is one session behind - CHKP itself closed Aug 11 at 129.12 (-1.54%). CHKP was stored at the Aug 10 close '
+ 'for consistency with the 50 held names and the four names added earlier today; the next daily job should advance '
+ 'everything to Aug 11 together. Total 162 -> 162 (one added, one deleted).')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -719,6 +750,37 @@ STOCKS = [{'t': 'GOOGL',
   'lo52': 45.51,
   'hi52': 319.94,
   'pxd': '2026-08-10'},
+ {'t': 'GFS',
+  'name': 'GlobalFoundries',
+  'ex': 'NASDAQ',
+  'g': 1,
+  'price': 50.05,
+  'jan2': None,
+  'mcapB': 27.46,
+  'ath': 92.55,
+  'fvMin': 55,
+  'fvAvg': 76.76,
+  'fvMax': 140,
+  'an': 21,
+  'peg': 0.81,
+  'ps': 3.96,
+  'fpe': 21.87,
+  'pe': 39.09,
+  'gm': 27.14,
+  'pm': 10.32,
+  'revB': 6.938,
+  'revG': 1.4,
+  'eps': 1.28,
+  'epsG': None,
+  'roi': 6.1,
+  'roe': 6.17,
+  'fcfB': 0.796,
+  'capexB': 1.12,
+  'r40': 12.9,
+  'budget': None,
+  'lo52': 31.51,
+  'hi52': 92.55,
+  'pxd': '2026-08-10'},
  {'t': 'ASML',
   'name': 'ASML Holding',
   'ex': 'NASDAQ',
@@ -905,37 +967,6 @@ STOCKS = [{'t': 'GOOGL',
   'lo52': 15.94,
   'hi52': 126.62,
   'pxd': '2026-08-07'},
- {'t': 'GFS',
-  'name': 'GlobalFoundries',
-  'ex': 'NASDAQ',
-  'g': 2,
-  'price': 50.05,
-  'jan2': None,
-  'mcapB': 27.46,
-  'ath': 92.55,
-  'fvMin': 55,
-  'fvAvg': 76.76,
-  'fvMax': 140,
-  'an': 21,
-  'peg': 0.81,
-  'ps': 3.96,
-  'fpe': 21.87,
-  'pe': 39.09,
-  'gm': 27.14,
-  'pm': 10.32,
-  'revB': 6.938,
-  'revG': 1.4,
-  'eps': 1.28,
-  'epsG': None,
-  'roi': 6.1,
-  'roe': 6.17,
-  'fcfB': 0.796,
-  'capexB': 1.12,
-  'r40': 12.9,
-  'budget': None,
-  'lo52': 31.51,
-  'hi52': 92.55,
-  'pxd': '2026-08-10'},
  {'t': 'FORM',
   'name': 'FormFactor',
   'ex': 'NASDAQ',
@@ -997,37 +1028,6 @@ STOCKS = [{'t': 'GOOGL',
   'budget': None,
   'lo52': 18.67,
   'hi52': 74.6,
-  'pxd': '2026-08-10'},
- {'t': 'VECO',
-  'name': 'Veeco Instruments',
-  'ex': 'NASDAQ',
-  'g': 2,
-  'price': 49.34,
-  'jan2': None,
-  'mcapB': 3.02,
-  'ath': 86.63,
-  'fvMin': 55,
-  'fvAvg': 61.33,
-  'fvMax': 66,
-  'an': 4,
-  'peg': None,
-  'ps': 4.73,
-  'fpe': 20.07,
-  'pe': 134.49,
-  'gm': 37.92,
-  'pm': 3.4,
-  'revB': 0.6827,
-  'revG': -2.5,
-  'eps': 0.37,
-  'epsG': -63.6,
-  'roi': 3.98,
-  'roe': 2.64,
-  'fcfB': 0.0852,
-  'capexB': 0.0147,
-  'r40': 10.0,
-  'budget': None,
-  'lo52': 23.31,
-  'hi52': 86.63,
   'pxd': '2026-08-10'},
  {'t': 'MU',
   'name': 'Micron Technology',
@@ -4315,6 +4315,37 @@ STOCKS = [{'t': 'GOOGL',
   'lo52': 42.25,
   'hi52': 99.75,
   'pxd': '2026-08-07'},
+ {'t': 'CHKP',
+  'name': 'Check Point Software',
+  'ex': 'NASDAQ',
+  'g': 15,
+  'price': 131.14,
+  'jan2': None,
+  'mcapB': 13.18,
+  'ath': 233.47,
+  'fvMin': 105,
+  'fvAvg': 146.32,
+  'fvMax': 201,
+  'an': 38,
+  'peg': 1.97,
+  'ps': 4.84,
+  'fpe': 12.16,
+  'pe': 13.36,
+  'gm': 87.49,
+  'pm': 37.93,
+  'revB': 2.76,
+  'revG': 4.6,
+  'eps': 9.82,
+  'epsG': 27.9,
+  'roi': 36.04,
+  'roe': 37.64,
+  'fcfB': 1.1,
+  'capexB': 0.0296,
+  'r40': 44.5,
+  'budget': None,
+  'lo52': 112.23,
+  'hi52': 210.66,
+  'pxd': '2026-08-10'},
  {'t': 'PWR',
   'name': 'Quanta Services',
   'ex': 'NYSE',
@@ -5376,7 +5407,7 @@ POS = {'GOOGL': {'budget': 60000, 'cost': 55324.68, 'shares': 205},
  'GFS': {'budget': None, 'cost': None, 'shares': None},
  'FORM': {'budget': None, 'cost': None, 'shares': None},
  'COHU': {'budget': None, 'cost': None, 'shares': None},
- 'VECO': {'budget': None, 'cost': None, 'shares': None}}
+ 'CHKP': {'budget': None, 'cost': None, 'shares': None}}
 
 TRADES = [{'date': 'Jul 21, 2026',
   'action': 'BUY',
@@ -6292,7 +6323,7 @@ M3 = {'GOOGL': {'pfcf': 72.54, 'ev': 21.6, 'de': 0.18},
  'GFS': {'pfcf': 34.5, 'ev': 12.61, 'de': 0.14},
  'FORM': {'pfcf': 67.86, 'ev': 58.2, 'de': 0.03},
  'COHU': {'pfcf': 69.66, 'ev': 254.16, 'de': 0.43},
- 'VECO': {'pfcf': 37.89, 'ev': 60.45, 'de': 0.29}}
+ 'CHKP': {'pfcf': 12.14, 'ev': 12.62, 'de': 0.72}}
 
 METRICS3 = M3  # alias: per-ticker pfcf / ev (EV/EBITDA) / de (Debt/Equity)
 

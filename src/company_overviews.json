@@ -1446,13 +1446,13 @@
   "mission": "To shift the business away from lumpy machine sales toward steady recurring revenue, and to ride the move from its traditional automotive base into AI compute - computing was 46 percent of system orders in Q2 2026, up 150 percent year on year, and management raised its 2026 high-performance-compute revenue estimate to 100-110 million dollars against an opportunity pipeline of roughly 850 million.",
   "src": "https://ir.cohu.com/news-releases/news-release-details/cohu-reports-second-quarter-2026-results"
  },
- "VECO": {
-  "short": "Veeco Instruments makes the large, expensive machines that chip factories use to build semiconductors: laser annealing systems that flash-heat wafers, ion beam deposition and etch tools, MOCVD reactors for compound-semiconductor and laser chips, advanced-packaging lithography, wet processing and atomic layer deposition. Its customers are the chipmakers themselves, plus hard-disk-drive and photonics manufacturers and research institutions.",
-  "founded": "1945",
-  "hq": "New York, United States",
-  "employees": "1,265",
-  "operations": "Sells across the United States, Europe, China and the rest of Asia-Pacific, with Asia dominant; China was 25 percent of revenue in Q2 2026, up from 13 percent in Q1. Q2 2026 revenue by market: Semiconductor 68 percent, Compound Semiconductor 11 percent, Data Storage 11 percent, Scientific and other 10 percent. Listed on NASDAQ since November 1994.",
-  "mission": "IMPORTANT - Veeco is not being run as a standalone business for much longer: it agreed to be acquired by Axcelis Technologies in an all-stock merger at 0.3575 Axcelis shares per Veeco share, a roughly 4.4 billion dollar combination in which Veeco holders end up with about 42 percent of the merged company. Closing is targeted for the second half of 2026, every regulator except China's SAMR has cleared it, and the outside date is September 30, 2026.",
-  "src": "https://www.globenewswire.com/news-release/2026/08/05/3339655/0/en/Veeco-Reports-Second-Quarter-2026-Financial-Results.html"
+ "CHKP": {
+  "short": "Check Point sells cybersecurity to businesses and governments, not to consumers: firewalls and network-security appliances plus the software subscriptions that keep them updated against new threats, extended to email, laptops, cloud systems and more recently AI systems. Think of it as the locks, alarm and monitoring contract for a company's computer network - customers buy the hardware once and then pay every year to keep the protection current.",
+  "founded": "1993",
+  "hq": "Tel Aviv, Israel",
+  "employees": "6,825",
+  "operations": "Sells worldwide through resellers and distributors. Q2 2026 revenue mix: security subscriptions 332.6M (49.4 percent), software updates and maintenance 227.6M (33.8 percent), products and licences 113.4M (16.8 percent) - so roughly 83 percent of revenue now recurs each year. Listed on NASDAQ since June 1996. Acquired Lakera, an AI-security specialist, in September 2025. Nadav Zafrir became chief executive in December 2024, with founder Gil Shwed moving to executive chairman.",
+  "mission": "To be the most profitable way to own cybersecurity rather than the fastest growing: it converts 87.49 percent gross margins into a 29.02 percent operating margin and 36.04 percent return on capital, pays NO dividend, and instead returns cash by buying back its own shares - the board expanded the buyback programme by 2 billion dollars in May 2026 and repurchased about 325 million dollars of stock in Q2 alone, shrinking the share count 4.38 percent in a year.",
+  "src": "https://www.checkpoint.com/press-releases/check-point-software-reports-2026-second-quarter-financial-results/"
  }
 }

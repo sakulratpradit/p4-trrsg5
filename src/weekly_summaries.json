@@ -4741,6 +4741,10 @@
     {
      "s": "-",
      "text": "Cheap for a reason: TTM revenue grew only 1.40% and ROIC is 6.10%. UBS cut its target to 55 and TD Cowen from 85 to 75 the day after the Q2 beat. Mubadala of Abu Dhabi still owns about 73%, which is a permanent supply of stock overhanging the market."
+    },
+    {
+     "s": "0",
+     "text": "MOVED from Chips Manufacturing to Computing Chips on Aug 11. GlobalFoundries builds chips other companies design - the same business as TSM and TSEM - whereas Chips Manufacturing is otherwise equipment and test makers (ASML, AMAT, LRCX, KLAC, FORM, COHU). Both groups now mean something cleaner."
     }
    ]
   }
@@ -4783,21 +4787,25 @@
    ]
   }
  ],
- "VECO": [
+ "CHKP": [
   {
    "week": "2026-08-10",
    "points": [
     {
-     "s": "!",
-     "text": "*** VECO IS A TAKEOVER TARGET, NOT AN INDEPENDENT INVESTMENT. *** It has agreed to be bought by AXCELIS TECHNOLOGIES in an all-stock deal at a FIXED 0.3575 Axcelis shares per Veeco share - about 4.4B, with Veeco holders ending up owning roughly 42% of the combined company. Every regulator except China's SAMR has cleared it; closing is targeted for the second half of 2026 and the outside date is September 30, 2026."
+     "s": "+",
+     "text": "Added to Cybersecurity at the Aug 10 close 131.14. Check Point is the OPPOSITE of the two cybersecurity names already held: where CrowdStrike and Palo Alto are fast growers on high multiples, Check Point grows slowly and prints cash. Trailing P/E 13.36 and forward 12.16 against CRWD and PANW at many times that."
     },
     {
-     "s": "!",
-     "text": "Because the exchange ratio is fixed, Veeco's share price now tracks Axcelis rather than its own results. That is why its numbers look incoherent: 134x trailing earnings against 20x forward, a 52-week range of 23.31 to 86.63, and four analyst panels that disagree completely (average targets of 61.33, 60.33, 49.33 and 40.60). Buying VECO is a bet on the deal closing and on Axcelis's share price."
+     "s": "+",
+     "text": "The quality numbers are genuinely rare: gross margin 87.49%, operating margin 29.02%, net margin 37.93%, return on capital 36.04%, free cash flow 1.10B on 2.76B of revenue (a 39.91% cash margin). No dividend - instead the board added 2B to the buyback in May 2026 and bought back ~325M of stock in Q2, shrinking the share count 4.38% in a year."
     },
     {
      "s": "-",
-     "text": "The underlying business is the weakest of the five anyway: TTM revenue -2.5%, EPS -63.6%, ROIC 3.98%, net margin 3.40%. China is 25% of revenue (up from 13% last quarter) and export controls have already hurt it. There is also a 230M convertible note struck at 29.22 that is deeply in the money - roughly 7.87M shares of future dilution. Fell 6.53% on Aug 10."
+     "text": "The catch is growth: TTM revenue +4.6% and Q2 2026 revenue only +1% YoY. The stock fell 8.19% on the Jul 30 print after revenue missed, and the sell side has been walking away - JPMorgan downgraded to Neutral Jul 27, Raymond James cut to Market Perform Jul 15, Roth MKM cut its target to 105 Jul 31, and Goldman cut 168 to 150 on Aug 1. Analyst consensus is Buy on one source (38 analysts, avg 146.32) and only Hold on another (28 analysts, avg 149.67)."
+    },
+    {
+     "s": "!",
+     "text": "It is an Israeli company and says so in its risk factors: the FY2025 20-F names the war involving Israel, the US and Iran and hostilities with Hezbollah, Hamas and Yemen as risks to results, plus disruption from staff being called up for military service. Note it closed Aug 11 at 129.12 (-1.54%), a day newer than the 131.14 stored here. Next earnings ESTIMATED Oct 27 - Check Point has not confirmed a date."
     }
    ]
   }
