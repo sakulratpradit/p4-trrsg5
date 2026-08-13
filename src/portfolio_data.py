@@ -21,7 +21,20 @@ ASOF = ('Aug 12, 2026 · close — daily price refresh (run Aug 13, 00:30 UTC): 
  'were recovered to the Aug 12 close (AEHR, MELI, SE, RBRK, CORZ, KEEL, AIRJ, SOUN, TMDX, MMM, NU). Market caps scaled '
  'with price; hi52/lo52 extended where breached. Notable: COHR 355.64 is the pre-earnings regular close (reported Aug '
  '12 after close, AH excluded); CSCO closed 123.88 then fell ~4% AH on earnings (AH excluded); AFRM prev-close chain '
- 'suggests the stored Aug 11 76.29 was itself a partial capture (true Aug 11 close 76.71 per stockanalysis+Google).')
+ 'suggests the stored Aug 11 76.29 was itself a partial capture (true Aug 11 close 76.71 per stockanalysis+Google). | '
+ 'Aug 12, 2026 fill (recorded Aug 13 BKK morning): BUY LITE 2 sh, limit 877 day order filled AT the limit (order '
+ '558410, 10:03 PM BKK = 11:03 AM ET, during the Aug 12 session). Cash debit 1,762.56 INCLUDES the 8.56 commission per '
+ 'the POEMS convention. LITE 9.5 -> 11.5 sh, cost 7,610.18 -> 9,372.74, avg 801.07 -> 815.02; budget 20,000 now 46.9% '
+ 'used, 10,627.26 headroom. Bought the morning AFTER the FQ4 FY2026 blowout (Aug 11 after close: revenue 1,006.3M '
+ '+109.3%, non-GAAP EPS 3.23 vs ~2.95-2.97 consensus, Q1 FY27 guided 1.225-1.275B vs ~1.16B consensus, EMLs '
+ "'effectively sold out' with the supply gap >30%) - so the entry paid up ~6.9% over the 820.59 Aug 11 close for the "
+ 'post-print information, consistent with the standing advice to buy after results, not before. CASH 7,330.98 -> '
+ '5,568.42 (the POEMS live screen still displayed 7,330.98 pre-settlement, as it always does). MONTHLY 2026-08 buyUSD '
+ '21,648.30 -> 23,410.86 (lots 13), LITE month-to-date 3,480.48; investedEverUSD 600,423.57 -> 602,186.13. PRICES NOT '
+ "TOUCHED - held names remain at the verified Aug 11 close from the overnight job; the Aug 12 close (the fill's own "
+ "session) lands with tonight's daily job. NOTE ON RECORD: cash is now 5,568.42 against a stated 20,000 minimum for "
+ 'the rest of August - the THB tranche recommended on Aug 12 (500-700k THB as slice one of the September injection) is '
+ 'now the binding item, and at ~1,762 per order the remaining cash funds only ~3 more orders of this size.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -5066,7 +5079,7 @@ POS = {'GOOGL': {'budget': 60000, 'cost': 55324.68, 'shares': 205},
  'SMCI': {'budget': None, 'cost': None, 'shares': None},
  'ANET': {'budget': 20000, 'cost': 15585.57, 'shares': 98},
  'CRDO': {'budget': 15000, 'cost': 7700.99, 'shares': 54},
- 'LITE': {'budget': 20000, 'cost': 7610.18, 'shares': 9.5},
+ 'LITE': {'budget': 20000, 'cost': 9372.74, 'shares': 11.5},
  'ALAB': {'budget': 15000, 'cost': 3805.47, 'shares': 15},
  'APH': {'budget': 10000, 'cost': 2004.4, 'shares': 16},
  'GLW': {'budget': None, 'cost': None, 'shares': None},
@@ -5392,11 +5405,22 @@ TRADES = [{'date': 'Jul 21, 2026',
   'est': False,
   'note': 'Filled during the Aug 10 US session. 10 sh; cash debit 1,935.56 INCLUDES the 8.56 commission, so 192.70/sh. '
           'Aug 10 range 187.03-195.70 close 191.52. ANET 88 -> 98 sh, cost 13,650.01 -> 15,585.57, avg 155.11 -> '
-          '159.04. Budget 20,000 now 77.9% used (4,414.43 headroom).'}]
+          '159.04. Budget 20,000 now 77.9% used (4,414.43 headroom).'},
+ {'date': 'Aug 12, 2026',
+  'action': 'BUY',
+  't': 'LITE',
+  'shares': 2,
+  'price': 877.0,
+  'amount': 1762.56,
+  'est': False,
+  'note': 'Limit 877 day order filled at limit (order 558410, Aug 12 2026 10:03 PM BKK / 11:03 AM ET). Bought the '
+          'morning after the FQ4 blowout (rev 1,006.3M +109%, EPS 3.23 vs 2.95, Q1 guide ~7.7% above consensus). LITE '
+          '9.5 -> 11.5 sh, cost 7,610.18 -> 9,372.74 incl 8.56 fee, avg 801.07 -> 815.02. Budget 20,000 now 46.9% used '
+          '(10,627.26 headroom).'}]
 
 SELLPLAN = ['IREN']
 
-CASH = {'currency': 'USD', 'amount': 7330.98, 'asof': 'Aug 11, 2026', 'broker': 'POEMS (Phillip Securities)'}
+CASH = {'currency': 'USD', 'amount': 5568.42, 'asof': 'Aug 12, 2026', 'broker': 'POEMS (Phillip Securities)'}
 
 REALIZED = [{'t': 'NBIS', 'g': 13, 'amount': 1404.52},
  {'t': 'IREN', 'g': 13, 'amount': 98.52},
@@ -5411,8 +5435,8 @@ REALIZED = [{'t': 'NBIS', 'g': 13, 'amount': 1404.52},
  {'t': 'SOFI', 'g': 14, 'amount': -152.4},
  {'t': 'HOOD', 'g': 14, 'amount': 897.82}]
 
-TOTALS = {'investedEverUSD': 600423.57,
- 'investedEverTHB': 19365760,
+TOTALS = {'investedEverUSD': 602186.13,
+ 'investedEverTHB': 19425246,
  'soldCostUSD': 34025.62,
  'soldCostTHB': 1143440,
  'realizedUSD': -2478.01,
@@ -5870,13 +5894,14 @@ MONTHLY = [{'ym': '2025-07',
               {'g': 16, 'buy': 4015.74, 'sell': 0.0, 'real': 0.0},
               {'g': 19, 'buy': 0.0, 'sell': 1855.08, 'real': 272.72}]},
  {'ym': '2026-08',
-  'buyUSD': 21648.3,
-  'buyLots': 12,
+  'buyUSD': 23410.86,
+  'buyLots': 13,
   'sellUSD': 0.0,
   'sellLots': 0,
   'realizedUSD': 0.0,
   'realizedTHB': 0,
-  'byStock': [{'t': 'MSFT', 'buy': 2060.52, 'sell': 0.0, 'real': 0.0},
+  'byStock': [{'t': 'LITE', 'buy': 3480.48, 'sell': 0.0, 'real': 0.0},
+              {'t': 'MSFT', 'buy': 2060.52, 'sell': 0.0, 'real': 0.0},
               {'t': 'META', 'buy': 2049.88, 'sell': 0.0, 'real': 0.0},
               {'t': 'AMZN', 'buy': 2006.08, 'sell': 0.0, 'real': 0.0},
               {'t': 'NVDA', 'buy': 1983.61, 'sell': 0.0, 'real': 0.0},
@@ -5884,13 +5909,12 @@ MONTHLY = [{'ym': '2025-07',
               {'t': 'ISRG', 'buy': 1887.98, 'sell': 0.0, 'real': 0.0},
               {'t': 'TSM', 'buy': 1873.23, 'sell': 0.0, 'real': 0.0},
               {'t': 'CRM', 'buy': 1861.84, 'sell': 0.0, 'real': 0.0},
-              {'t': 'LITE', 'buy': 1717.92, 'sell': 0.0, 'real': 0.0},
               {'t': 'FN', 'buy': 1604.56, 'sell': 0.0, 'real': 0.0},
               {'t': 'AAOI', 'buy': 1338.56, 'sell': 0.0, 'real': 0.0},
               {'t': 'COHR', 'buy': 1328.56, 'sell': 0.0, 'real': 0.0}],
   'byGroup': [{'g': 0, 'buy': 6116.48, 'sell': 0.0, 'real': 0.0},
               {'g': 1, 'buy': 3856.84, 'sell': 0.0, 'real': 0.0},
-              {'g': 4, 'buy': 7925.16, 'sell': 0.0, 'real': 0.0},
+              {'g': 4, 'buy': 9687.72, 'sell': 0.0, 'real': 0.0},
               {'g': 6, 'buy': 1887.98, 'sell': 0.0, 'real': 0.0},
               {'g': 10, 'buy': 1861.84, 'sell': 0.0, 'real': 0.0}]}]
 
