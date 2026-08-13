@@ -1445,5 +1445,23 @@
   "operations": "Operates across the Americas, Europe and Asia including the United States, Switzerland, Germany, Malaysia, the Philippines, Japan and Singapore. Sells to semiconductor makers and to the outsourced assembly and test houses that serve them, across automotive, computing, industrial, mobile, consumer and IoT applications. Recurring revenue - consumables and interface products rather than machines - was 53 percent of revenue in Q2 2026.",
   "mission": "To shift the business away from lumpy machine sales toward steady recurring revenue, and to ride the move from its traditional automotive base into AI compute - computing was 46 percent of system orders in Q2 2026, up 150 percent year on year, and management raised its 2026 high-performance-compute revenue estimate to 100-110 million dollars against an opportunity pipeline of roughly 850 million.",
   "src": "https://ir.cohu.com/news-releases/news-release-details/cohu-reports-second-quarter-2026-results"
+ },
+ "QNT": {
+  "short": "Quantinuum builds quantum computers - machines that use the physics of atoms to attack problems ordinary computers cannot, such as designing new drugs and materials or breaking and making codes. It sells access to its trapped-ion machines, developer software and application libraries to companies, researchers and governments. It was formed in 2021 by merging Honeywell's quantum division with Cambridge Quantum of the UK, and Honeywell remains a major shareholder.",
+  "founded": "2021",
+  "hq": "Colorado, United States",
+  "employees": "NOT FOUND",
+  "operations": "Listed on NASDAQ on June 4, 2026 in a 1.5 billion dollar IPO priced at 53-55 dollars a share - one of the largest quantum listings ever. Q2 2026 revenue was 8 million dollars, up 279 percent from a year earlier, and full-year 2026 guidance is 28-32 million dollars - tiny against its roughly 19 billion dollar market value, so the price is almost entirely a bet on the future. On Aug 12, 2026 it announced a deployment of its 98-qubit Helios machine on Oracle Cloud Infrastructure and the stock rose 27.97 percent in one day.",
+  "mission": "To reach fault-tolerant quantum computing - machines reliable enough for real commercial work - ahead of rivals, pairing its high-fidelity trapped-ion hardware with its own software stack so customers can use quantum through the cloud providers they already know.",
+  "src": "https://stockanalysis.com/stocks/qnt/"
+ },
+ "PENG": {
+  "short": "Penguin Solutions designs, builds and manages the computing infrastructure that companies use for AI and other heavy workloads - the servers, the specialty memory that goes inside them, and the software and services to keep large machine clusters running. It also makes memory modules sold under the SMART Modular name and a smaller line of LED components. Customers are large enterprises, equipment makers and government buyers.",
+  "founded": "1988",
+  "hq": "California, United States",
+  "employees": "2,900",
+  "operations": "Formerly SMART Global Holdings; renamed Penguin Solutions in October 2024 and moved its legal home from the Cayman Islands to Delaware in June 2025. Latest quarterly revenue split: Integrated Memory about 57 percent, Advanced Computing (AI/HPC systems and services) about 29 percent, Optimized LED about 14 percent. SK Telecom of Korea invested 200 million dollars in late 2024 and holds a board seat. FQ3 FY2026 (July 7): revenue 478.7M up 48 percent, with AI-driven revenue up 104 percent and about 74 percent of the total.",
+  "mission": "To be the partner that makes complicated AI infrastructure actually work for enterprises - management guided fiscal 2027 to about 2.19 billion dollars of revenue, roughly 30 percent growth, well ahead of what analysts were modelling.",
+  "src": "https://www.businesswire.com/news/home/20260707722795/en/Penguin-Solutions-Reports-Q3-Fiscal-2026-Financial-Results"
  }
 }

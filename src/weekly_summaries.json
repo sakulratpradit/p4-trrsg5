@@ -4790,5 +4790,35 @@
     }
    ]
   }
+ ],
+ "QNT": [
+  {
+   "week": "2026-08-10",
+   "points": [
+    {
+     "s": "0",
+     "text": "Added to Quantum at the Aug 12 close 71.74 after verifying the ticker is real: Quantinuum, the Honeywell/Cambridge Quantum merger, IPO'd on NASDAQ June 4, 2026 at 53-55 in a 1.5B raise. It rose 27.97% on Aug 12 alone after announcing its 98-qubit Helios machine will deploy on Oracle Cloud."
+    },
+    {
+     "s": "!",
+     "text": "Understand the scale: Q2 revenue was 8 MILLION dollars (up 279%) and full-year guidance is 28-32M - against a roughly 19 BILLION dollar market value. That is ~600x this year's sales. Most valuation fields are deliberately blank on the dashboard because they are meaningless or not yet published for a June IPO. This is a lottery-ticket class of investment, like IONQ but bigger."
+    }
+   ]
+  }
+ ],
+ "PENG": [
+  {
+   "week": "2026-08-10",
+   "points": [
+    {
+     "s": "+",
+     "text": "Added to Memory & Storage at the Aug 12 close 58.73. Penguin Solutions (formerly SMART Global) is ~57% specialty memory, ~29% AI/HPC infrastructure and ~14% LED, so the group fits its largest segment. FQ3 (Jul 7) was a blowout: revenue 478.7M +48%, EPS 0.84 vs 0.56 expected, AI revenue +104% and 74% of the total; FY27 guided to ~2.19B (+30%) vs ~1.85B consensus. Four brokers raised targets to 75-85 the next day."
+    },
+    {
+     "s": "-",
+     "text": "Cheap-ish at 18.5x forward with a 3.01B market cap, but know the risks: Barclays cut it to SELL with a 40 target on Jul 20; trailing free cash flow is negative (-69M) on working-capital build; it raised 650M of convertible notes in July; and it is up ~200% year-to-date, 35% below its 89.86 high. Analyst averages disagree hard: 74.29 on one source, 63.33 on another."
+    }
+   ]
+  }
  ]
 }

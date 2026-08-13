@@ -34,7 +34,44 @@ ASOF = ('Aug 12, 2026 · close — daily price refresh (run Aug 13, 00:30 UTC): 
  "TOUCHED - held names remain at the verified Aug 11 close from the overnight job; the Aug 12 close (the fill's own "
  "session) lands with tonight's daily job. NOTE ON RECORD: cash is now 5,568.42 against a stated 20,000 minimum for "
  'the rest of August - the THB tranche recommended on Aug 12 (500-700k THB as slice one of the September injection) is '
- 'now the binding item, and at ~1,762 per order the remaining cash funds only ~3 more orders of this size.')
+ 'now the binding item, and at ~1,762 per order the remaining cash funds only ~3 more orders of this size. | Aug 13, '
+ '2026 additions: TWO new watchlist names at the verified Aug 12, 2026 close; the other two request items were already '
+ 'present (TE has been in Energy since its addition, SNDK in Memory & Storage). (1) QNT (Quantinuum, NASDAQ) 71.74 '
+ 'into Quantum - TICKER VERIFIED REAL against two sources: it is the Honeywell Quantum Solutions / Cambridge Quantum '
+ "merger that IPO'd June 4, 2026 at 53-55 in a 1.5B raise, NOT the Quant crypto token that shares the symbol. It rose "
+ '27.97% ON Aug 12 after announcing a 98-qubit Helios deployment on Oracle Cloud Infrastructure, alongside Q2 revenue '
+ 'of 8M (+279% YoY) and raised FY2026 guidance of 28-32M. Nearly all valuation fields are DELIBERATELY BLANK: ~19B '
+ 'market cap against ~30M of annual revenue (~600x sales) makes the ratios meaningless, and a June-2026 IPO has no '
+ '52-week range, no published TTM margin set and no analyst aggregate on the permitted sources - mcap 18.86B '
+ "(stockanalysis) vs 18.72B (MarketBeat) on record. Treat it as the same lottery-ticket class as IONQ, at 13x IONQ's "
+ 'revenue multiple. (2) PENG (Penguin Solutions, NASDAQ) 58.73 into Memory & Storage - formerly SMART Global Holdings '
+ '(renamed Oct 2024, redomiciled Cayman->Delaware Jun 2025, 200M SK Telecom investment with a board seat). GROUP-FIT '
+ 'NOTE: FQ3 FY2026 revenue split is Integrated Memory ~57%, Advanced Computing ~29%, Optimized LED ~14% - so Memory & '
+ 'Storage captures the majority but the company sells itself as an AI-infrastructure play (AI revenue +104% YoY, 74% '
+ 'of total). FQ3 (Jul 7) beat hard - 478.7M +48%, non-GAAP EPS 0.84 vs 0.56 consensus - and FY27 was guided to ~2.19B '
+ '(+30%) vs ~1.85B consensus; Needham/Stifel/JMP/Rosenblatt raised targets to 75-85 on Jul 8, but Barclays DOWNGRADED '
+ 'TO SELL (target 40) on Jul 20. Trailing FCF is NEGATIVE (-69.43M, working-capital build; FY2025 was +100.1M) so '
+ 'P/FCF and PEG are blank; 650M convertible notes placed Jul 13 (due Aug 2031); D/E 0.77. ath NOT FOUND - hi52 89.86 '
+ 'left as the range top only, NOT copied into ath (blacklisted-source headlines suggest the 52-wk high IS the record, '
+ 'unconfirmed). an 7 / avg 74.29 / 40-85 (stockanalysis) vs Moderate Buy avg 63.33 (MarketBeat) on record. Next '
+ 'earnings ESTIMATED early-to-mid Oct (sources conflict Oct 6-8 vs Oct 13). jan2 NOT FOUND on both names. Quantum 2 -> '
+ '3 names (IONQ, IBM, QNT), Memory & Storage 5 -> 6 (MU, SKHY, SNDK, WDC, STX, PENG), total 161 -> 163. SNDK-vs-MU '
+ 'DECISION RESEARCH (both verified at the Aug 12 close, MU 911.29 +4.92% / SNDK 1,344.29 +5.76%): recommendation MU, '
+ 'recorded in the reply of Aug 13. The pivot points: MU is 76% DRAM / 24% NAND with HBM4 already past 1B of shipped '
+ 'revenue, sold-out supply into 2027 and 16 multi-year customer agreements, while SNDK is essentially pure NAND with '
+ 'NO HBM (its High Bandwidth Flash with SK hynix is a specification unveiled Aug 4, 2026, not shipping product). '
+ 'TrendForce Q3 2026 contract forecasts have DRAM (+13-18% QoQ) now rising faster than NAND (+10-15%). The China '
+ 'threat hits SNDK sooner: YMTC reached 14% NAND share in Q2 2026 with a third Wuhan fab starting late 2026 and two '
+ 'more planned, vs CXMT whose HBM share is projected ~1% 2025 -> 12% by 2028. Valuations are near-identical (fwd P/E '
+ "6.34 vs 6.30) but SNDK's P/FCF 17.43 beats MU's 39.32 and its ROIC 103.2% beats MU's 67.6% - the cash-flow case for "
+ 'SNDK is real, which is why this is a relative call, not a dismissal. Events: MU reports FQ4 ~Sep 22-23 (ESTIMATED, '
+ "the 50B +/-1B guide quarter at ~86% GM); SNDK's next report is ~late Oct/Nov, but its 2026 INVESTOR DAY IS AUG 13, "
+ '9:00 AM EDT - tonight Bangkok time - an event-risk reason to wait if choosing SNDK. Aug 1-13 analyst tape: MU - '
+ 'Mizuho raised to 1,375 (Aug 10, tight DRAM/HBM supply), Citi trimmed 1,400 -> 1,150 (Aug 7/10, sees pricing peaking '
+ '2Q27), BofA Buy (Aug 3); SNDK - Argus upgraded to Buy, New Street 3,000, Evercore 3,100 -> 2,800, Wells Fargo cut to '
+ "1,400, Citi cut to 2,100 (all Aug 6-10). STANDING CAUTION RESTATED: the Aug 3 house stance was 'Hold, don't add' on "
+ "MU at cycle-peak margins - this recommendation answers 'which of the two', sized small, not 'is memory a buy'. Cash "
+ 'context: 5,568.42 with the THB tranche still the binding item.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -1019,6 +1056,37 @@ STOCKS = [{'an': 83,
   'roe': 371.53,
   'roi': 89.43,
   't': 'STX'},
+ {'an': 7,
+  'ath': None,
+  'budget': None,
+  'capexB': None,
+  'eps': 1.39,
+  'epsG': None,
+  'ex': 'NASDAQ',
+  'fcfB': -0.069,
+  'fpe': 18.47,
+  'fvAvg': 74.29,
+  'fvMax': 85,
+  'fvMin': 40,
+  'g': 3,
+  'gm': 27.92,
+  'hi52': 89.86,
+  'jan2': None,
+  'lo52': 16.04,
+  'mcapB': 3.01,
+  'name': 'Penguin Solutions',
+  'pe': 42.24,
+  'peg': None,
+  'pm': 6.44,
+  'price': 58.73,
+  'ps': 1.95,
+  'pxd': '2026-08-12',
+  'r40': 7.4,
+  'revB': 1.5,
+  'revG': 12.0,
+  'roe': 16.2,
+  'roi': 14.82,
+  't': 'PENG'},
  {'an': 27,
   'ath': 469.47,
   'budget': None,
@@ -2879,6 +2947,37 @@ STOCKS = [{'an': 83,
   'roe': 35.77,
   'roi': 14.97,
   't': 'IBM'},
+ {'an': None,
+  'ath': None,
+  'budget': None,
+  'capexB': None,
+  'eps': None,
+  'epsG': None,
+  'ex': 'NASDAQ',
+  'fcfB': None,
+  'fpe': None,
+  'fvAvg': None,
+  'fvMax': None,
+  'fvMin': None,
+  'g': 9,
+  'gm': None,
+  'hi52': None,
+  'jan2': None,
+  'lo52': None,
+  'mcapB': 18.86,
+  'name': 'Quantinuum',
+  'pe': None,
+  'peg': None,
+  'pm': None,
+  'price': 71.74,
+  'ps': None,
+  'pxd': '2026-08-12',
+  'r40': None,
+  'revB': None,
+  'revG': None,
+  'roe': None,
+  'roi': None,
+  't': 'QNT'},
  {'an': 40,
   'ath': 688.37,
   'budget': None,
@@ -5210,7 +5309,9 @@ POS = {'GOOGL': {'budget': 60000, 'cost': 55324.68, 'shares': 205},
  'TSEM': {'budget': None, 'cost': None, 'shares': None},
  'GFS': {'budget': None, 'cost': None, 'shares': None},
  'FORM': {'budget': None, 'cost': None, 'shares': None},
- 'COHU': {'budget': None, 'cost': None, 'shares': None}}
+ 'COHU': {'budget': None, 'cost': None, 'shares': None},
+ 'QNT': {'budget': None, 'cost': None, 'shares': None},
+ 'PENG': {'budget': None, 'cost': None, 'shares': None}}
 
 TRADES = [{'date': 'Jul 21, 2026',
   'action': 'BUY',
@@ -6136,7 +6237,9 @@ M3 = {'GOOGL': {'pfcf': 72.54, 'ev': 21.6, 'de': 0.18},
  'TSEM': {'pfcf': 94.71, 'ev': 98.21, 'de': 0.05},
  'GFS': {'pfcf': 34.5, 'ev': 12.61, 'de': 0.14},
  'FORM': {'pfcf': 67.86, 'ev': 58.2, 'de': 0.03},
- 'COHU': {'pfcf': 69.66, 'ev': 254.16, 'de': 0.43}}
+ 'COHU': {'pfcf': 69.66, 'ev': 254.16, 'de': 0.43},
+ 'QNT': {'pfcf': None, 'ev': None, 'de': None},
+ 'PENG': {'pfcf': None, 'ev': 18.83, 'de': 0.77}}
 
 METRICS3 = M3  # alias: per-ticker pfcf / ev (EV/EBITDA) / de (Debt/Equity)
 
