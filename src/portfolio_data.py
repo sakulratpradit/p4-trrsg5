@@ -71,7 +71,18 @@ ASOF = ('Aug 12, 2026 · close — daily price refresh (run Aug 13, 00:30 UTC): 
  '2Q27), BofA Buy (Aug 3); SNDK - Argus upgraded to Buy, New Street 3,000, Evercore 3,100 -> 2,800, Wells Fargo cut to '
  "1,400, Citi cut to 2,100 (all Aug 6-10). STANDING CAUTION RESTATED: the Aug 3 house stance was 'Hold, don't add' on "
  "MU at cycle-peak margins - this recommendation answers 'which of the two', sized small, not 'is memory a buy'. Cash "
- 'context: 5,568.42 with the THB tranche still the binding item.')
+ 'context: 5,568.42 with the THB tranche still the binding item. | Aug 13, 2026 fill (recorded Aug 14 BKK morning): '
+ 'BUY MU 2 sh, limit 959 day order filled at 958.8651 (order 639709, 10:59 PM BKK = 11:59 AM ET, during the Aug 13 '
+ 'session) - executing the Aug 13 MU-over-SNDK recommendation, sized inside the small-add guidance. Cash debit '
+ '1,926.29 INCLUDES the 8.56 commission. MU 33.45 -> 35.45 sh, cost 20,655.29 -> 22,581.58, avg 617.50 -> 637.00; '
+ 'budget 30,000 now 75.3% used, 7,418.42 headroom. NOTE the fill price 958.8651 sits ~5.2% ABOVE the stored Aug 12 '
+ "close of 911.29 - MU rallied intraday on Aug 13; the Aug 13 close lands with tonight's daily job, prices "
+ 'deliberately not touched here. CASH 5,568.42 -> 3,642.13 (the POEMS live screen still displayed 5,568.42 '
+ 'pre-settlement, as it always does). MONTHLY 2026-08 buyUSD 23,410.86 -> 25,337.15 (lots 14; Memory & Storage joins '
+ "the month's byGroup at 1,926.29); investedEverUSD 602,186.13 -> 604,112.42. CASH WARNING ON RECORD: 3,642.13 "
+ 'remaining is under two orders of recent size against the stated 20,000 minimum for the rest of August - the THB '
+ 'tranche (500-700k as slice one of the September injection) is now urgent if the daily buying is to continue. MU '
+ 'reports FQ4 ~Sep 22-23 (ESTIMATED), the 50B +/-1B guide quarter.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -5168,7 +5179,7 @@ POS = {'GOOGL': {'budget': 60000, 'cost': 55324.68, 'shares': 205},
  'LRCX': {'budget': 15000, 'cost': 4100.12, 'shares': 22},
  'KLAC': {'budget': 10000, 'cost': 3510.69, 'shares': 18},
  'AMKR': {'budget': 5000, 'cost': 3454.62, 'shares': 55},
- 'MU': {'budget': 30000, 'cost': 20655.29, 'shares': 33.45},
+ 'MU': {'budget': 30000, 'cost': 22581.58, 'shares': 35.45},
  'SKHY': {'budget': 10000, 'cost': 1913.26, 'shares': 15},
  'SNDK': {'budget': None, 'cost': None, 'shares': None},
  'WDC': {'budget': None, 'cost': None, 'shares': None},
@@ -5517,11 +5528,21 @@ TRADES = [{'date': 'Jul 21, 2026',
   'note': 'Limit 877 day order filled at limit (order 558410, Aug 12 2026 10:03 PM BKK / 11:03 AM ET). Bought the '
           'morning after the FQ4 blowout (rev 1,006.3M +109%, EPS 3.23 vs 2.95, Q1 guide ~7.7% above consensus). LITE '
           '9.5 -> 11.5 sh, cost 7,610.18 -> 9,372.74 incl 8.56 fee, avg 801.07 -> 815.02. Budget 20,000 now 46.9% used '
-          '(10,627.26 headroom).'}]
+          '(10,627.26 headroom).'},
+ {'date': 'Aug 13, 2026',
+  'action': 'BUY',
+  't': 'MU',
+  'shares': 2,
+  'price': 958.8651,
+  'amount': 1926.29,
+  'est': False,
+  'note': 'Limit 959 day order filled at 958.8651 (order 639709, Aug 13 2026 10:59 PM BKK / 11:59 AM ET). Executes the '
+          'Aug 13 MU-over-SNDK recommendation. MU 33.45 -> 35.45 sh, cost 20,655.29 -> 22,581.58 incl 8.56 fee, avg '
+          '617.50 -> 637.00. Budget 30,000 now 75.3% used (7,418.42 headroom).'}]
 
 SELLPLAN = ['IREN']
 
-CASH = {'currency': 'USD', 'amount': 5568.42, 'asof': 'Aug 12, 2026', 'broker': 'POEMS (Phillip Securities)'}
+CASH = {'currency': 'USD', 'amount': 3642.13, 'asof': 'Aug 13, 2026', 'broker': 'POEMS (Phillip Securities)'}
 
 REALIZED = [{'t': 'NBIS', 'g': 13, 'amount': 1404.52},
  {'t': 'IREN', 'g': 13, 'amount': 98.52},
@@ -5536,8 +5557,8 @@ REALIZED = [{'t': 'NBIS', 'g': 13, 'amount': 1404.52},
  {'t': 'SOFI', 'g': 14, 'amount': -152.4},
  {'t': 'HOOD', 'g': 14, 'amount': 897.82}]
 
-TOTALS = {'investedEverUSD': 602186.13,
- 'investedEverTHB': 19425246,
+TOTALS = {'investedEverUSD': 604112.42,
+ 'investedEverTHB': 19490258,
  'soldCostUSD': 34025.62,
  'soldCostTHB': 1143440,
  'realizedUSD': -2478.01,
@@ -5995,8 +6016,8 @@ MONTHLY = [{'ym': '2025-07',
               {'g': 16, 'buy': 4015.74, 'sell': 0.0, 'real': 0.0},
               {'g': 19, 'buy': 0.0, 'sell': 1855.08, 'real': 272.72}]},
  {'ym': '2026-08',
-  'buyUSD': 23410.86,
-  'buyLots': 13,
+  'buyUSD': 25337.15,
+  'buyLots': 14,
   'sellUSD': 0.0,
   'sellLots': 0,
   'realizedUSD': 0.0,
@@ -6007,6 +6028,7 @@ MONTHLY = [{'ym': '2025-07',
               {'t': 'AMZN', 'buy': 2006.08, 'sell': 0.0, 'real': 0.0},
               {'t': 'NVDA', 'buy': 1983.61, 'sell': 0.0, 'real': 0.0},
               {'t': 'ANET', 'buy': 1935.56, 'sell': 0.0, 'real': 0.0},
+              {'t': 'MU', 'buy': 1926.29, 'sell': 0.0, 'real': 0.0},
               {'t': 'ISRG', 'buy': 1887.98, 'sell': 0.0, 'real': 0.0},
               {'t': 'TSM', 'buy': 1873.23, 'sell': 0.0, 'real': 0.0},
               {'t': 'CRM', 'buy': 1861.84, 'sell': 0.0, 'real': 0.0},
@@ -6015,6 +6037,7 @@ MONTHLY = [{'ym': '2025-07',
               {'t': 'COHR', 'buy': 1328.56, 'sell': 0.0, 'real': 0.0}],
   'byGroup': [{'g': 0, 'buy': 6116.48, 'sell': 0.0, 'real': 0.0},
               {'g': 1, 'buy': 3856.84, 'sell': 0.0, 'real': 0.0},
+              {'g': 3, 'buy': 1926.29, 'sell': 0.0, 'real': 0.0},
               {'g': 4, 'buy': 9687.72, 'sell': 0.0, 'real': 0.0},
               {'g': 6, 'buy': 1887.98, 'sell': 0.0, 'real': 0.0},
               {'g': 10, 'buy': 1861.84, 'sell': 0.0, 'real': 0.0}]}]
