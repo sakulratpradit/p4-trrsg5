@@ -96,36 +96,43 @@ ASOF = ('Aug 12, 2026 · close — daily price refresh (run Aug 13, 00:30 UTC): 
  "converts the USD gain at today's rate: 132,375.83 x 33.75 = 4,467,684 THB (4.47M). The dashboard instead values the "
  'COST at the rate actually paid on each purchase (the THBFX table, weighted average 32.2008 THB/USD across the book) '
  "and the MARKET VALUE at today's 33.75, so THB gain = 23,756,202 - 18,539,280 = 5,216,922 (5.22M). The 749,000-THB "
- 'difference is pure CURRENCY GAIN: the baht has weakened 4.81%% since the average purchase, so the same dollars are '
+ 'difference is pure CURRENCY GAIN: the baht has weakened 4.81% since the average purchase, so the same dollars are '
  "worth more baht than when they were bought, and that gain is real for a baht-based investor. In short - Salee's "
  "4.47M is the STOCK gain expressed in baht; the dashboard's 5.22M is the STOCK gain PLUS the FX gain, which is what a "
  'Thai investor actually experiences. Neither is an error. If Salee prefers the simpler stock-only view the dashboard '
- 'can show both columns side by side - offered, not yet actioned. *** AUG 13 MOVES >=6%% ALL SECOND-SOURCED before '
- 'publishing: COHR -7.99%% to 327.23 (stockanalysis + GuruFocus) - it BEAT on Aug 12 after the close (revenue 2,045.5M '
+ 'can show both columns side by side - offered, not yet actioned. *** AUG 13 MOVES >=6% ALL SECOND-SOURCED before '
+ 'publishing: COHR -7.99% to 327.23 (stockanalysis + GuruFocus) - it BEAT on Aug 12 after the close (revenue 2,045.5M '
  'vs ~1.99B est, GAAP EPS 1.19 vs 1.14, Q1 FY27 guided 2.2-2.4B and non-GAAP EPS 1.85-2.05) and STILL fell, simply '
- 'round-tripping its +8.24%% pre-print rally - the bar for AI-optics has risen and margin conversion, not demand, is '
- 'now the swing factor. SKHY +7.29%% to 165.67 (stockanalysis + TradingKey at 165.54) - and critically this was NOT an '
- "ADR-premium expansion: Seoul's KRX 000660 was up ~7.2%% intraday at the same time, so the whole SK hynix complex "
- 're-rated together. ONDS -8.80%% to 8.91 (stockanalysis + marketscreener) - it reported Q2 the same morning with '
+ 'round-tripping its +8.24% pre-print rally - the bar for AI-optics has risen and margin conversion, not demand, is '
+ 'now the swing factor. SKHY +7.29% to 165.67 (stockanalysis + TradingKey at 165.54) - and critically this was NOT an '
+ "ADR-premium expansion: Seoul's KRX 000660 was up ~7.2% intraday at the same time, so the whole SK hynix complex "
+ 're-rated together. ONDS -8.80% to 8.91 (stockanalysis + marketscreener) - it reported Q2 the same morning with '
  'revenue 83.77M vs 67.97M expected and raised FY26 guidance to 525-550M, but posted a wider-than-expected loss and '
  'trades at ~40x EV/revenue after six acquisitions this year, so it sold off on the setup, not the numbers. CIFR '
- '-6.99%% to 16.62 and HUT -8.62%% to 82.95 (both stockanalysis + marketscreener) - NO ATTRIBUTABLE DRIVER FOUND and '
- 'none is asserted: bitcoin fell only 0.82%% that day, the S&P 500 set a record above 7,800, and IREN ROSE 2.50%%, so '
+ '-6.99% to 16.62 and HUT -8.62% to 82.95 (both stockanalysis + marketscreener) - NO ATTRIBUTABLE DRIVER FOUND and '
+ 'none is asserted: bitcoin fell only 0.82% that day, the S&P 500 set a record above 7,800, and IREN ROSE 2.50%, so '
  'neither a bitcoin move nor a clean sector rotation explains it; the weakness clustered in the bitcoin-treasury-heavy '
  "names while the AI-lease-weighted name rose. DATA CONFLICT ON RECORD: stockanalysis's own history tables disagree "
- 'with its quote pages for ONDS (8.94/-8.50%%) and CIFR (16.52/-7.55%%), with a blank adjusted-close suggesting the '
+ 'with its quote pages for ONDS (8.94/-8.50%) and CIFR (16.52/-7.55%), with a blank adjusted-close suggesting the '
  'table had not settled; the independent second sources side with the quote pages, which were taken. | Aug 14, 2026 '
  "dashboard change (actioning Salee's request): the P&L-by-group table now shows BOTH baht views side by side instead "
  "of one. 'Unreal B stock' = the USD gain converted at today's 33.75 - stock performance only, the figure a calculator "
  "gives (TOTAL +4.47M). 'Unreal B +FX' = cost valued at the rate actually paid on each purchase from the THBFX table, "
- "market value at today's rate - stock performance PLUS the currency gain from the baht weakening 4.81%% since the "
+ "market value at today's rate - stock performance PLUS the currency gain from the baht weakening 4.81% since the "
  'weighted-average buy rate of 32.2008 (TOTAL +5.36M). The gap between the two columns IS the FX gain, ~890,000 THB at '
  'book level. The section heading now explains this in plain language, both new headers carry hover tooltips, the '
- 'stock-only column is rendered at 72%% opacity so the FX-inclusive column stays the primary read, and the empty-state '
+ 'stock-only column is rendered at 72% opacity so the FX-inclusive column stays the primary read, and the empty-state '
  'colspan was widened 13 -> 14. All three currency toggles were re-tested after the change: USD-only 8 visible '
  'columns, baht-only 8, both 14; every body row and the TOTAL row carry 14 cells; zero NaN/undefined and no page '
  'errors. WORTH NOTING at group level the two columns can DISAGREE IN SIGN - Robotic/Automation/EV shows -0.03M on the '
- 'stock view but +0.00M once FX is included, i.e. the currency move more than offset the stock loss.')
+ 'stock view but +0.00M once FX is included, i.e. the currency move more than offset the stock loss. | Aug 14, 2026 '
+ 'presentation fix: this change log had grown to ~14,000 characters and was being dumped into the page footer as one '
+ 'unbroken paragraph - unreadable, and the first thing Salee asked about. NOTHING WAS DELETED. The footer now shows '
+ "only the date stamp; a 'Show change log' button reveals the entries newest-first, each clipped to three lines with "
+ "its own 'Read all' expander, inside a scrollable 440px panel. The full text remains in the data, in git history, and "
+ "in the workbook's Dashboard Notes tab, which gen_stock_notes.py builds by splitting this same string on the pipe "
+ "delimiter. Also fixed in the same pass: 15 literal doubled percent signs ('4.81%' etc) that had been written into "
+ 'earlier entries by an escaping slip and were rendering verbatim on the page.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
