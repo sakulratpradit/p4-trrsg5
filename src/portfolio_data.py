@@ -114,7 +114,18 @@ ASOF = ('Aug 12, 2026 · close — daily price refresh (run Aug 13, 00:30 UTC): 
  'neither a bitcoin move nor a clean sector rotation explains it; the weakness clustered in the bitcoin-treasury-heavy '
  "names while the AI-lease-weighted name rose. DATA CONFLICT ON RECORD: stockanalysis's own history tables disagree "
  'with its quote pages for ONDS (8.94/-8.50%%) and CIFR (16.52/-7.55%%), with a blank adjusted-close suggesting the '
- 'table had not settled; the independent second sources side with the quote pages, which were taken.')
+ 'table had not settled; the independent second sources side with the quote pages, which were taken. | Aug 14, 2026 '
+ "dashboard change (actioning Salee's request): the P&L-by-group table now shows BOTH baht views side by side instead "
+ "of one. 'Unreal B stock' = the USD gain converted at today's 33.75 - stock performance only, the figure a calculator "
+ "gives (TOTAL +4.47M). 'Unreal B +FX' = cost valued at the rate actually paid on each purchase from the THBFX table, "
+ "market value at today's rate - stock performance PLUS the currency gain from the baht weakening 4.81%% since the "
+ 'weighted-average buy rate of 32.2008 (TOTAL +5.36M). The gap between the two columns IS the FX gain, ~890,000 THB at '
+ 'book level. The section heading now explains this in plain language, both new headers carry hover tooltips, the '
+ 'stock-only column is rendered at 72%% opacity so the FX-inclusive column stays the primary read, and the empty-state '
+ 'colspan was widened 13 -> 14. All three currency toggles were re-tested after the change: USD-only 8 visible '
+ 'columns, baht-only 8, both 14; every body row and the TOTAL row carry 14 cells; zero NaN/undefined and no page '
+ 'errors. WORTH NOTING at group level the two columns can DISAGREE IN SIGN - Robotic/Automation/EV shows -0.03M on the '
+ 'stock view but +0.00M once FX is included, i.e. the currency move more than offset the stock loss.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
