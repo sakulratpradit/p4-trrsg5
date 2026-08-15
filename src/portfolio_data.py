@@ -173,7 +173,64 @@ ASOF = ('Aug 12, 2026 · close — daily price refresh (run Aug 13, 00:30 UTC): 
  'were the largest single-day fallers that stayed inside the gate. Market caps were scaled by the price ratio rather '
  'than re-scraped, per README — share counts do not change day to day and scraped caps have been wrong before. 52-week '
  'highs and lows were extended where breached. NO NAME WAS LEFT STALE, and nothing was written from memory: every one '
- 'of the 163 prices came from a page fetched during this run.')
+ "of the 163 prices came from a page fetched during this run. | Aug 15, 2026 structure change (actioning Salee's three "
+ 'requests, all at the verified Aug 14, 2026 close). (1) HYLN — NO ACTION NEEDED, it was already in Power and '
+ 'Electrification. It was moved there on Aug 7 in the same pass that moved MPWR out of Energy, so the request was '
+ "already satisfied; nothing was duplicated and nothing was touched. HYLN stands at 4.06. (2) NEW GROUP 'Bitcoin' "
+ 'created as group 21, the 22nd group, with two new watchlist names. A new palette colour --s22 had to be added to the '
+ 'stylesheet in both the light (#c2410c) and dark (#fb923c) themes — the CSS only defined --s1 through --s21, so a '
+ '22nd group would have rendered its wheel wedge and its group pill with no fill at all. WULF (TeraWulf, NASDAQ) added '
+ 'at 17.38 (+6.56% on Aug 14, mcap 8.67B). GROUP-FIT WARNING ON RECORD: WULF is only nominally a bitcoin miner any '
+ 'more. In Q2 2026 (reported Aug 5) HPC lease revenue was 31.9M of 44.8M total — 71% — while bitcoin mining revenue '
+ 'was 12.8M and FELL 73% YoY, and the company holds essentially NO bitcoin on its balance sheet (10-Q digital assets '
+ 'line 133 thousand dollars at Jun 30). Its two anchor contracts are the Fluidstack lease at Lake Mariner backed by '
+ '~600M of Google credit support (102 MW live after CB3 in early July) and a 20-year ~401 MW lease with Anthropic at '
+ 'the Justified campus in Kentucky worth ~19B of contracted revenue, up to ~33B with extensions, first power H2 2027. '
+ 'On the numbers this is an AI data-centre landlord, not a miner; it sits in Bitcoin because that is where it was '
+ 'asked to go, and the mismatch is flagged rather than silently reclassified. Q2 MISSED badly — EPS -1.94 vs -0.24 '
+ 'consensus — but 755.7M of that was a NON-CASH warrant-liability charge. Balance sheet is stretched for the buildout: '
+ '2.62B cash against 5.24B total debt, D/E 35.5, TTM FCF -2.74B on capex 2.46B. RIOT (Riot Platforms, NASDAQ) added at '
+ '19.02 (-1.02%, mcap 7.14B) — the genuine miner of the two: 44.4 EH/s deployed self-mining hashrate (~4.6% of the '
+ 'global network) and 11,380 BTC still on the balance sheet at Jun 30, worth ~666M, after selling 4,300 BTC during Q2 '
+ 'to fund construction. Q2 revenue 174.2M +14% split mining 113.7M / engineering 37.3M / data-centre-AI 23.2M; revenue '
+ "BEAT but EPS missed at -0.68 vs -0.30. THE ECONOMICS INVERTED THIS QUARTER AND THAT IS THE HEADLINE RISK: RIOT's "
+ 'all-in cost to mine one bitcoin was 90,631 against an average production value of 71,667 — it is currently mining at '
+ 'a loss and funding the shortfall by selling treasury coins. Its own pivot is signed though: 50 MW leased to AMD (25 '
+ 'MW live since May at 84% gross margin) plus a 20-year 191 MW Rockdale lease with a frontier AI lab worth ~9.1B '
+ 'initial / ~16.1B with extensions, and a non-binding LOI over the whole 1 GW Corsicana campus. Leverage is far more '
+ "conservative than WULF's at D/E 0.40. (3) CRCL (Circle Internet Group, NYSE) added to Digital Fintech at 71.60 "
+ "(-5.01% on Aug 14, mcap 18.18B) — the USDC stablecoin issuer, IPO'd Jun 5, 2025 at 31.00, and now 76% BELOW its "
+ 'all-time high of 298.99 set Jun 23, 2025. THE ONE THING THAT MATTERS ABOUT THIS BUSINESS: ~95% of revenue is '
+ 'interest earned on the reserves backing USDC (668M of 701M in Q2 2026), so it is a float business whose earnings '
+ 'track the Fed, not a software business. The drag is already visible — Q2 reserve income rose only 5% YoY DESPITE 25% '
+ 'growth in average USDC outstanding, because the reserve return rate fell 66bp to 3.48% on lower SOFR. Published '
+ 'sensitivity, corroborated by two sources but NOT verified against the primary filing in this run (EDGAR truncated '
+ 'before Item 7A): ~618M of reserve income per 100bp of rates, roughly half of which is absorbed by Coinbase because '
+ 'distribution payments scale with reserve income, leaving ~303M net. Coin Metrics independently estimates 25-30% of '
+ 'annual revenue per 100bp cut. Morgan Stanley downgraded to Underweight on Aug 3 with the target cut 106 -> 38. '
+ 'Offsetting: the GENIUS Act (signed Jul 2025, effective no later than Jan 18, 2027) BARS stablecoin issuers from '
+ 'paying yield to holders, which protects the spread; Circle got final OCC approval Jul 10 and a NYDFS trust charter '
+ 'Jul 31; the Coinbase distribution deal was renewed through 2029 on Aug 5; and FY26 other-revenue guidance was '
+ 'roughly doubled to 310-330M. USDC in circulation 73.3B at Jun 30, +19%. FIELDS DELIBERATELY LEFT BLANK rather than '
+ 'guessed: jan2 on all three (stockanalysis history tables are JS-paginated and would not yield a Jan 2, 2026 close, '
+ 'and no permitted source carried one); peg and epsG on all three; pe/fpe on WULF and RIOT (both loss-making, so the '
+ 'ratio is meaningless, not missing); pm on WULF (source states n/a); r40 on WULF and RIOT (deeply negative FCF makes '
+ "it meaningless) — CRCL's r40 of 63.4 is computed as revG 37.19 + FCF margin 26.2 per the house convention. WULF's "
+ 'ath is NULL: the only source carrying an all-time high gave 29.84, which is EXACTLY its 52-week high, and the house '
+ "rule is that a 52-week high is never copied into ath — RIOT's 79.50 (Feb 17, 2021) and CRCL's 298.99 (Jun 23, 2025) "
+ 'were both explicitly stated and differ from their 52-week highs, so those were taken. capexB stored positive per the '
+ 'house sign convention. Universe 163 -> 166 names, 21 -> 22 groups, Digital Fintech gains a 9th name. No positions '
+ 'and no budgets were created — all three are watchlist only, and cash is unchanged at 3,642.13. SEPARATE OBSERVATION '
+ 'NOT ACTIONED: four names that are arguably bitcoin businesses already sit in Neocloud Watch — CIFR, HUT, CORZ and '
+ 'IREN. They were put there because their investment case is AI/HPC leasing, which is the same logic that makes WULF a '
+ 'poor fit for Bitcoin. Raised for a decision, deliberately not moved. | Aug 15, 2026 fix during the same session: the '
+ 'three new tickers (WULF, RIOT, CRCL) were added to STOCKS but not to POS, and the page threw two errors on load — '
+ '"Cannot read properties of undefined (reading \'cost\')" and "(reading \'shares\')". Cause: every renderer on the '
+ 'board dereferences POS[s.t] directly (mv, upl, bleft, all three wheels, the group P&L table, the vision page), so '
+ 'EVERY ticker needs a POS row even when it is watchlist-only — the convention is {budget:null, cost:null, '
+ 'shares:null}. Caught by the headless check BEFORE publishing, not after: the committed Aug 14 build was re-tested in '
+ 'the same run and came back clean, which is what isolated the fault to this change. POS 163 -> 166 rows, one per '
+ 'ticker. THBFX is correctly NOT extended - it holds purchase exchange rates and only the 50 held names belong in it.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -195,7 +252,8 @@ GROUPS = ['Hyperscalers',
  'Power and Electrification',
  'Renewal Energy',
  'Digital Applications',
- 'Industrial STX']
+ 'Industrial STX',
+ 'Bitcoin']
 
 STOCKS = [{'an': 83,
   'ath': 408.61,
@@ -5249,7 +5307,100 @@ STOCKS = [{'an': 83,
   'revG': None,
   'roe': 81.89,
   'roi': 36.58,
-  't': 'MMM'}]
+  't': 'MMM'},
+ {'an': 18,
+  'ath': None,
+  'budget': None,
+  'capexB': 2.46,
+  'eps': -4.51,
+  'epsG': None,
+  'ex': 'NASDAQ',
+  'fcfB': -2.74,
+  'fpe': None,
+  'fvAvg': 36.64,
+  'fvMax': 62.5,
+  'fvMin': 25.0,
+  'g': 21,
+  'gm': 69.26,
+  'hi52': 29.84,
+  'jan2': None,
+  'lo52': 6.74,
+  'mcapB': 8.67,
+  'name': 'TeraWulf',
+  'pe': None,
+  'peg': None,
+  'pm': None,
+  'price': 17.38,
+  'ps': 52.5,
+  'pxd': '2026-08-14',
+  'r40': None,
+  'revB': 0.16519,
+  'revG': 14.65,
+  'roe': -1211.81,
+  'roi': -7.06,
+  't': 'WULF'},
+ {'an': 21,
+  'ath': 79.5,
+  'budget': None,
+  'capexB': 0.45291,
+  'eps': -3.81,
+  'epsG': None,
+  'ex': 'NASDAQ',
+  'fcfB': -0.94524,
+  'fpe': None,
+  'fvAvg': 32.31,
+  'fvMax': 45.0,
+  'fvMin': 20.0,
+  'g': 21,
+  'gm': 28.26,
+  'hi52': 30.32,
+  'jan2': None,
+  'lo52': 11.16,
+  'mcapB': 7.14,
+  'name': 'Riot Platforms',
+  'pe': None,
+  'peg': None,
+  'pm': -196.28,
+  'price': 19.02,
+  'ps': 10.58,
+  'pxd': '2026-08-14',
+  'r40': None,
+  'revB': 0.67451,
+  'revG': 24.51,
+  'roe': -48.24,
+  'roi': -45.19,
+  't': 'RIOT'},
+ {'an': 27,
+  'ath': 298.99,
+  'budget': None,
+  'capexB': 0.0154,
+  'eps': 1.8,
+  'epsG': None,
+  'ex': 'NYSE',
+  'fcfB': 0.762,
+  'fpe': 52.79,
+  'fvAvg': 103.03,
+  'fvMax': 243.0,
+  'fvMin': 37.0,
+  'g': 14,
+  'gm': 22.0,
+  'hi52': 159.47,
+  'jan2': None,
+  'lo52': 49.9,
+  'mcapB': 18.18,
+  'name': 'Circle Internet Group',
+  'pe': 39.76,
+  'peg': None,
+  'pm': 15.53,
+  'price': 71.6,
+  'ps': 6.26,
+  'pxd': '2026-08-14',
+  'r40': 63.4,
+  'revB': 2.905,
+  'revG': 37.19,
+  'roe': 15.35,
+  'roi': 11.58,
+  't': 'CRCL'}]
 
 POS = {'GOOGL': {'budget': 60000, 'cost': 55324.68, 'shares': 205},
  'AMZN': {'budget': 50000, 'cost': 48600.75, 'shares': 209},
@@ -5413,7 +5564,10 @@ POS = {'GOOGL': {'budget': 60000, 'cost': 55324.68, 'shares': 205},
  'FORM': {'budget': None, 'cost': None, 'shares': None},
  'COHU': {'budget': None, 'cost': None, 'shares': None},
  'QNT': {'budget': None, 'cost': None, 'shares': None},
- 'PENG': {'budget': None, 'cost': None, 'shares': None}}
+ 'PENG': {'budget': None, 'cost': None, 'shares': None},
+ 'WULF': {'budget': None, 'cost': None, 'shares': None},
+ 'RIOT': {'budget': None, 'cost': None, 'shares': None},
+ 'CRCL': {'budget': None, 'cost': None, 'shares': None}}
 
 TRADES = [{'date': 'Jul 21, 2026',
   'action': 'BUY',
@@ -6353,7 +6507,10 @@ M3 = {'GOOGL': {'pfcf': 72.54, 'ev': 21.6, 'de': 0.18},
  'FORM': {'pfcf': 67.86, 'ev': 58.2, 'de': 0.03},
  'COHU': {'pfcf': 69.66, 'ev': 254.16, 'de': 0.43},
  'QNT': {'pfcf': None, 'ev': None, 'de': None},
- 'PENG': {'pfcf': None, 'ev': 18.83, 'de': 0.77}}
+ 'PENG': {'pfcf': None, 'ev': 18.83, 'de': 0.77},
+ 'WULF': {'pfcf': None, 'ev': None, 'de': 35.5},
+ 'RIOT': {'pfcf': None, 'ev': None, 'de': 0.4},
+ 'CRCL': {'pfcf': 23.87, 'ev': 71.94, 'de': 0.0}}
 
 METRICS3 = M3  # alias: per-ticker pfcf / ev (EV/EBITDA) / de (Debt/Equity)
 
