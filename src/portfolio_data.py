@@ -267,7 +267,40 @@ ASOF = ('Aug 12, 2026 · close — daily price refresh (run Aug 13, 00:30 UTC): 
  'Photonic & Optic Fiber byGroup 9,687.72 -> 11,754.28. investedEverUSD 604,112.42 -> 606,178.98. The THB leg of '
  'investedEver was incremented at the current 33.75 rather than the contract-note rate, which was not supplied - '
  'flagged as an approximation on a derived aggregate, and THBFX carries no COHR entry so the board already falls back '
- 'to 33.75 for this holding.')
+ 'to 33.75 for this holding. | Aug 17, 2026 addition: SNPS (Synopsys, NASDAQ) added to SaaS at the verified Aug 14, '
+ '2026 close of 421.50 (+2.37% that day), inserted at STOCKS index 90 - IMMEDIATELY AFTER CDNS at index 89 - so the '
+ 'two EDA names render side by side in the group, which is what was asked for. NOTE THIS IS A RE-ADD, NOT A NEW NAME: '
+ 'SNPS was HELD and was SOLD on Jul 16, 2026 - 4 shares, cost 1,934.56, realised -263.20 (-64,943 THB cost / -8,836 '
+ 'THB loss) - and it dropped out of the universe at that point; the SOLD and THBFX records for it were never removed '
+ 'and are untouched. It returns as WATCHLIST ONLY: no position, no budget, cash unchanged at 1,575.57. *** WHY THE '
+ 'PAIRING MATTERS: CDNS and SNPS are the EDA duopoly and the single most useful thing about seeing them adjacent is '
+ 'the valuation gap. CDNS 324.82 trades at forward P/E 37.84 and PEG 2.46; SNPS 421.50 trades at forward P/E 26.56 and '
+ 'PEG 1.31 - Cadence costs 42% more on forward earnings and 88% more on PEG. The reason is in the growth: in their '
+ "most recent quarters Cadence's Core EDA grew 18% and its IP business grew over 40%, while Synopsys's EDA grew "
+ "'slightly over 8%' and its Design IP FELL about 6% to 454.2M. Cadence is the better business; Synopsys is the "
+ 'cheaper stock. Backlog: SNPS ~11.0B (1.14x FY26 revenue guidance of 9.665B) vs CDNS 8.1B (1.29x its 6.30B) - '
+ "Cadence's book covers more of its forward year. *** FIELDS THAT NEED READING WITH CARE. revG of 39.5% is TTM and is "
+ 'ANSYS-INFLATED, not organic - Ansys closed Jul 17, 2025 for ~34.9B (199.91 cash + 0.3399 SNPS shares per Ansys '
+ 'share, ~30.0M shares issued) funded with 10.0B of senior notes priced Apr 2025, and it contributes ~2.96B of FY2026 '
+ 'revenue on a 9.665B guide. Organic EDA growth is the 8% figure, not 39.5%. r40 of 69.8 is computed on that same '
+ 'inflated revG per the house formula (revG + FCF margin 30.35) and is therefore flattered by the same amount. eps '
+ '4.22 and epsG -69.5% are GAAP TTM and are GUTTED BY PURCHASE ACCOUNTING, not by trading: Q2 FY26 GAAP EPS was 0.09 '
+ 'against 2.24 a year earlier while NON-GAAP EPS was 3.35, and FY2026 GAAP EPS is guided 2.49-2.91 versus 14.72-14.80 '
+ 'non-GAAP. The trailing P/E of 99.83 is arithmetically correct (421.50 / 4.22) but economically meaningless for the '
+ 'same reason - the forward 26.56 is the number to read. roe 3.82 and roi 2.08 are depressed by 26.9B of goodwill and '
+ '30.5B of equity created in the same deal. de 0.36 reflects 10.0B of acquisition debt against a company that carried '
+ 'almost none before. *** ath 651.73 (Jul 30, 2025) comes from a SINGLE NON-PREFERRED SOURCE (stockscan.io) and is '
+ "recorded on the same basis as RIOT's 79.50 was: it is stored because it is explicitly labelled an all-time high AND "
+ 'differs from the 52-week high of 626.24, so it is not the hi52-copied-into-ath error the house rule exists to '
+ 'prevent. jan2 is NULL - three history sources paginate client-side and none would serve a Jan 2026 row; not '
+ 'estimated. *** CONTEXT ON RECORD: the stock is 32.7% below its 52-week high and set a 52-week low of 366.00 on Jul '
+ '17, 2026 in the same Kimi K3 open-source-EDA selloff that took CDNS down 9.8% - SNPS fell ~8.2% that day. Elliott '
+ 'Investment Management took a multibillion-dollar activist stake in March 2026 and its partner Jesse Cohn joined the '
+ 'board on May 27. China is 10% of revenue and falling (16% FY2024 -> 12% FY2025 -> 9-10% in 1H FY2026). NEXT EARNINGS '
+ 'AUG 26, 2026 AFTER THE CLOSE - COMPANY-CONFIRMED by an IR release dated Jul 22, 2026, not estimated, and nine days '
+ "out. That print is a free read on whether Cadence's core-EDA growth premium is real, and it is the reason the house "
+ 'call on CDNS this morning was hold-do-not-add rather than buy. Investor Day Sep 30, 2026. Universe 166 -> 167 names; '
+ 'SaaS 12 -> 13.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -3082,6 +3115,37 @@ STOCKS = [{'an': 83,
   'roe': 20.66,
   'roi': 19.7,
   't': 'CDNS'},
+ {'an': 25,
+  'ath': 651.73,
+  'budget': None,
+  'capexB': 0.163,
+  'eps': 4.22,
+  'epsG': -69.5,
+  'ex': 'NASDAQ',
+  'fcfB': 2.63,
+  'fpe': 26.56,
+  'fvAvg': 564.43,
+  'fvMax': 650.0,
+  'fvMin': 414.77,
+  'g': 10,
+  'gm': 82.6,
+  'hi52': 626.24,
+  'jan2': None,
+  'lo52': 366.0,
+  'mcapB': 80.71,
+  'name': 'Synopsys',
+  'pe': 99.83,
+  'peg': 1.31,
+  'pm': 8.91,
+  'price': 421.5,
+  'ps': 9.27,
+  'pxd': '2026-08-14',
+  'r40': 69.8,
+  'revB': 8.68,
+  'revG': 39.5,
+  'roe': 3.82,
+  'roi': 2.08,
+  't': 'SNPS'},
  {'an': 52,
   'ath': 274.0,
   'budget': None,
@@ -5604,7 +5668,8 @@ POS = {'GOOGL': {'budget': 60000, 'cost': 55324.68, 'shares': 205},
  'PENG': {'budget': None, 'cost': None, 'shares': None},
  'WULF': {'budget': None, 'cost': None, 'shares': None},
  'RIOT': {'budget': None, 'cost': None, 'shares': None},
- 'CRCL': {'budget': None, 'cost': None, 'shares': None}}
+ 'CRCL': {'budget': None, 'cost': None, 'shares': None},
+ 'SNPS': {'budget': None, 'cost': None, 'shares': None}}
 
 TRADES = [{'date': 'Jul 21, 2026',
   'action': 'BUY',
@@ -6561,7 +6626,8 @@ M3 = {'GOOGL': {'pfcf': 72.54, 'ev': 21.6, 'de': 0.18},
  'PENG': {'pfcf': None, 'ev': 18.83, 'de': 0.77},
  'WULF': {'pfcf': None, 'ev': None, 'de': 35.5},
  'RIOT': {'pfcf': None, 'ev': None, 'de': 0.4},
- 'CRCL': {'pfcf': 23.87, 'ev': 71.94, 'de': 0.0}}
+ 'CRCL': {'pfcf': 23.87, 'ev': 71.94, 'de': 0.0},
+ 'SNPS': {'pfcf': 30.54, 'ev': 52.35, 'de': 0.36}}
 
 METRICS3 = M3  # alias: per-ticker pfcf / ev (EV/EBITDA) / de (Debt/Equity)
 
