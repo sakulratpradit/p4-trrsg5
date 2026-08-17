@@ -230,7 +230,44 @@ ASOF = ('Aug 12, 2026 · close — daily price refresh (run Aug 13, 00:30 UTC): 
  'EVERY ticker needs a POS row even when it is watchlist-only — the convention is {budget:null, cost:null, '
  'shares:null}. Caught by the headless check BEFORE publishing, not after: the committed Aug 14 build was re-tested in '
  'the same run and came back clean, which is what isolated the fault to this change. POS 163 -> 166 rows, one per '
- 'ticker. THBFX is correctly NOT extended - it holds purchase exchange rates and only the 50 held names belong in it.')
+ 'ticker. THBFX is correctly NOT extended - it holds purchase exchange rates and only the 50 held names belong in it. '
+ '| Aug 15, 2026 broker sync (POEMS Outstanding Positions screen at the Aug 14, 2026 closes). RECONCILIATION CLEAN AND '
+ 'UNUSUALLY STRONG THIS TIME. 50 tickers on the POEMS screen, 50 held on the dashboard, zero symbol differences either '
+ 'way. All 50 rows were cross-checked four ways against their own arithmetic (cost = qty x avg, MV = qty x price, P/L '
+ '= MV - cost, P/L% = P/L / cost) and both exchange subtotals plus the grand total reproduce POEMS to the cent: NYSE '
+ '97,844.85 cost / 112,009.20 MV, NASD 479,962.12 / 594,874.52, TOTAL 577,806.97 cost / 706,883.72 MV / +129,076.75 '
+ '(+22.34%). Two apparent 5-cent and 95-cent mismatches on ETN and NVDA were transcription artefacts of the displayed '
+ 'average price, which POEMS rounds to five decimals - the stated subtotals disambiguated both instantly (only ETN '
+ '7,879.55 and NVDA 77,340.96 make the subtotals foot), and no stored value needed changing. *** THE PRICE COLUMN IS '
+ "THE HEADLINE: all 50 of POEMS's own Current Price values matched the dashboard's stored Aug 14 closes EXACTLY, "
+ 'ticker for ticker, with zero exceptions - COHR 325.83, TSM 426.35, AMD 514.39, NVDA 225.16, MU 971.66, ETN 451.51, '
+ "AMAT 507.18, AAOI 150.28, LITE 926.14 and the other 41. That is a completely independent confirmation of Friday's "
+ 'full 163-name refresh, including the twelve names whose stockanalysis pages were stale and had to be re-sourced from '
+ 'Google Finance or marketscreener - ETN, the one the gate caught frozen at its Aug 13 close, ties to the broker at '
+ '451.51. No price on the board was touched in this sync because none needed to be. *** ONE POSITION CHANGED: BUY COHR '
+ '6 sh at exactly 343.00, cash debit 2,066.56 including the 8.56 commission ((2,066.56 - 8.56) / 6 = 343.00 to the '
+ 'cent). COHR 4 -> 10 sh, cost 1,328.56 -> 3,395.12, avg 332.14 -> 339.51; budget 5,000 now 67.9% used with 1,604.88 '
+ "headroom. Dashboard cost 575,740.41 + 2,066.56 = 577,806.97, which is POEMS's stated total to the cent. SESSION "
+ 'ATTRIBUTION, STATED HONESTLY: 343.00 falls inside BOTH the Aug 13 range (325.27-361.99) and the Aug 14 range '
+ '(317.21-346.17), so the daily bars cannot settle it. It is booked to Aug 14 because the previous POEMS screen - '
+ 'taken on the Aug 14 BKK morning, AFTER the Aug 13 close - still showed COHR at 4 shares. That is inference from the '
+ 'prior snapshot, not from the tape; only the contract note would prove it. ENTRY QUALITY FLAGGED RATHER THAN BURIED: '
+ '343.00 is within 0.9% of the Aug 14 intraday high of 346.17 on a session that opened 328.58 and closed 325.83, so '
+ 'these 6 shares were already down 5.0% by the bell, and the position as a whole now shows -136.82 (-4.03%). For the '
+ 'record the house recommendation issued after the Aug 14 close was 10-11 shares around 325.83-331, i.e. some 3.5-5% '
+ 'below where this filled - the trade preceded the note rather than following it. THE THESIS IS UNCHANGED and this is '
+ 'a timing observation, not a reversal: Coherent beat on Aug 12 (revenue 2,045.5M +33.8%, non-GAAP EPS 1.74 vs 1.62) '
+ 'and guided Q1 FY27 to 2.2-2.4B against ~2.13B consensus, with Data Center & Communications +59% YoY at 79% of sales. '
+ '*** CASH IS DERIVED, NOT OBSERVED: no cash-balance screen was supplied with this snapshot, so the figure carried '
+ 'here - 3,642.13 - 2,066.56 = 1,575.57 - is computed from the position delta and should be treated as provisional '
+ 'until a POEMS cash screen confirms it. AT 1,575.57 THERE IS LESS THAN ONE ORDER OF RECENT SIZE LEFT against the '
+ 'stated 20,000 minimum for the rest of August. The THB tranche (500-700k as slice one of the September injection) is '
+ 'no longer merely urgent - daily buying stops here without it. MONTHLY 2026-08 buyUSD 25,337.15 -> 27,403.71 (lots '
+ '15); COHR month-to-date 1,328.56 -> 3,395.12, which moves it to second-largest buy of the month behind LITE; '
+ 'Photonic & Optic Fiber byGroup 9,687.72 -> 11,754.28. investedEverUSD 604,112.42 -> 606,178.98. The THB leg of '
+ 'investedEver was incremented at the current 33.75 rather than the contract-note rate, which was not supplied - '
+ 'flagged as an approximation on a derived aggregate, and THBFX carries no COHR entry so the board already falls back '
+ 'to 33.75 for this holding.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -5511,7 +5548,7 @@ POS = {'GOOGL': {'budget': 60000, 'cost': 55324.68, 'shares': 205},
  'AMPX': {'budget': None, 'cost': None, 'shares': None},
  'NOK': {'budget': None, 'cost': None, 'shares': None},
  'APP': {'budget': None, 'cost': None, 'shares': None},
- 'COHR': {'budget': 5000, 'cost': 1328.56, 'shares': 4},
+ 'COHR': {'budget': 5000, 'cost': 3395.12, 'shares': 10},
  'LMND': {'budget': None, 'cost': None, 'shares': None},
  'HNGE': {'budget': None, 'cost': None, 'shares': None},
  'AIRJ': {'budget': None, 'cost': None, 'shares': None},
@@ -5783,11 +5820,25 @@ TRADES = [{'date': 'Jul 21, 2026',
   'est': False,
   'note': 'Limit 959 day order filled at 958.8651 (order 639709, Aug 13 2026 10:59 PM BKK / 11:59 AM ET). Executes the '
           'Aug 13 MU-over-SNDK recommendation. MU 33.45 -> 35.45 sh, cost 20,655.29 -> 22,581.58 incl 8.56 fee, avg '
-          '617.50 -> 637.00. Budget 30,000 now 75.3% used (7,418.42 headroom).'}]
+          '617.50 -> 637.00. Budget 30,000 now 75.3% used (7,418.42 headroom).'},
+ {'date': 'Aug 14, 2026',
+  'action': 'BUY',
+  't': 'COHR',
+  'shares': 6,
+  'price': 343.0,
+  'amount': 2066.56,
+  'est': False,
+  'note': 'Fill of 6 sh at exactly 343.00; cash debit 2,066.56 INCLUDES the 8.56 commission ((2,066.56 - 8.56) / 6 = '
+          '343.00 to the cent). Attributed to the Aug 14 session: the Aug 14-morning POEMS screen, taken after the Aug '
+          '13 close, still showed COHR at 4 sh, so the fill post-dates it. Daily bars alone cannot prove the session - '
+          '343.00 sits inside BOTH ranges (Aug 13 325.27-361.99, Aug 14 317.21-346.17) - so the prior screen is the '
+          'evidence, not the tape. NOTE THE ENTRY QUALITY: 343.00 is within 0.9% of the Aug 14 intraday HIGH of '
+          '346.17, on a day that opened 328.58 and closed 325.83; these 6 shares were down 5.0% by the bell. COHR 4 -> '
+          '10 sh, cost 1,328.56 -> 3,395.12, avg 332.14 -> 339.51. Budget 5,000 now 67.9% used (1,604.88 headroom).'}]
 
 SELLPLAN = ['IREN']
 
-CASH = {'currency': 'USD', 'amount': 3642.13, 'asof': 'Aug 13, 2026', 'broker': 'POEMS (Phillip Securities)'}
+CASH = {'currency': 'USD', 'amount': 1575.57, 'asof': 'Aug 14, 2026', 'broker': 'POEMS (Phillip Securities)'}
 
 REALIZED = [{'t': 'NBIS', 'g': 13, 'amount': 1404.52},
  {'t': 'IREN', 'g': 13, 'amount': 98.52},
@@ -5802,8 +5853,8 @@ REALIZED = [{'t': 'NBIS', 'g': 13, 'amount': 1404.52},
  {'t': 'SOFI', 'g': 14, 'amount': -152.4},
  {'t': 'HOOD', 'g': 14, 'amount': 897.82}]
 
-TOTALS = {'investedEverUSD': 604112.42,
- 'investedEverTHB': 19490258,
+TOTALS = {'investedEverUSD': 606178.98,
+ 'investedEverTHB': 19560004,
  'soldCostUSD': 34025.62,
  'soldCostTHB': 1143440,
  'realizedUSD': -2478.01,
@@ -6261,13 +6312,14 @@ MONTHLY = [{'ym': '2025-07',
               {'g': 16, 'buy': 4015.74, 'sell': 0.0, 'real': 0.0},
               {'g': 19, 'buy': 0.0, 'sell': 1855.08, 'real': 272.72}]},
  {'ym': '2026-08',
-  'buyUSD': 25337.15,
-  'buyLots': 14,
+  'buyUSD': 27403.71,
+  'buyLots': 15,
   'sellUSD': 0.0,
   'sellLots': 0,
   'realizedUSD': 0.0,
   'realizedTHB': 0,
   'byStock': [{'t': 'LITE', 'buy': 3480.48, 'sell': 0.0, 'real': 0.0},
+              {'t': 'COHR', 'buy': 3395.12, 'sell': 0.0, 'real': 0.0},
               {'t': 'MSFT', 'buy': 2060.52, 'sell': 0.0, 'real': 0.0},
               {'t': 'META', 'buy': 2049.88, 'sell': 0.0, 'real': 0.0},
               {'t': 'AMZN', 'buy': 2006.08, 'sell': 0.0, 'real': 0.0},
@@ -6278,12 +6330,11 @@ MONTHLY = [{'ym': '2025-07',
               {'t': 'TSM', 'buy': 1873.23, 'sell': 0.0, 'real': 0.0},
               {'t': 'CRM', 'buy': 1861.84, 'sell': 0.0, 'real': 0.0},
               {'t': 'FN', 'buy': 1604.56, 'sell': 0.0, 'real': 0.0},
-              {'t': 'AAOI', 'buy': 1338.56, 'sell': 0.0, 'real': 0.0},
-              {'t': 'COHR', 'buy': 1328.56, 'sell': 0.0, 'real': 0.0}],
+              {'t': 'AAOI', 'buy': 1338.56, 'sell': 0.0, 'real': 0.0}],
   'byGroup': [{'g': 0, 'buy': 6116.48, 'sell': 0.0, 'real': 0.0},
               {'g': 1, 'buy': 3856.84, 'sell': 0.0, 'real': 0.0},
               {'g': 3, 'buy': 1926.29, 'sell': 0.0, 'real': 0.0},
-              {'g': 4, 'buy': 9687.72, 'sell': 0.0, 'real': 0.0},
+              {'g': 4, 'buy': 11754.28, 'sell': 0.0, 'real': 0.0},
               {'g': 6, 'buy': 1887.98, 'sell': 0.0, 'real': 0.0},
               {'g': 10, 'buy': 1861.84, 'sell': 0.0, 'real': 0.0}]}]
 
