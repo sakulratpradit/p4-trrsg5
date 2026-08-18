@@ -316,7 +316,33 @@ ASOF = ('Aug 12, 2026 · close — daily price refresh (run Aug 13, 00:30 UTC): 
  'kept per rule), AMPX -7.4 (11.58), RCAT -6.2 (10.44), AVAV -6.1 (181.13, insider-selling news). QNT note: both '
  "Google and stockanalysis place the Aug 14 close at 63.58-63.59 vs 63.51 stored on this board; today's 66.01 is "
  'at-close-stamped. RBRK note: Google-derived prev 102.19 sits 4 cents under stored 102.23. KLAC prev-chain matched on '
- 'the dividend-adjusted close (203.49 adj vs 203.72 raw; Aug 17 ex-div). NO NAMES UNRESOLVED.')
+ 'the dividend-adjusted close (203.49 adj vs 203.72 raw; Aug 17 ex-div). NO NAMES UNRESOLVED. | Aug 18, 2026 cash '
+ "confirmation (POEMS 'Cash Balance (Live)' screen, read on the Aug 18 BKK morning). THE DERIVED FIGURE IS NOW "
+ 'REPLACED BY AN OBSERVED ONE: cash 1,575.57 -> 1,585.35, stamped Aug 17, 2026, the last session it reflects. Since '
+ 'the Aug 14 COHR fill the board had been carrying a CALCULATED cash number - 3,642.13 minus the 2,066.56 COHR debit = '
+ '1,575.57 - because no cash screen was supplied at the time, and that was flagged as provisional in the Aug 15 entry '
+ 'and again in three subsequent replies. The broker screen now confirms it to within 9.78, which VALIDATES the '
+ 'derivation method: the position-delta arithmetic was right to within 0.6%. *** THE 9.78 DIFFERENCE IS NOT ATTRIBUTED '
+ 'AND IS DELIBERATELY NOT GUESSED AT. The actual balance is HIGHER than the derived one, so nothing was overspent and '
+ 'no trade is missing - a missing purchase would show as cash being LOWER, not higher, and the 50 held tickers and '
+ 'their costs were already reconciled to the cent against POEMS on Aug 15 (total 577,806.97). Candidate explanations, '
+ 'none verified: a dividend credited between Aug 13 and Aug 17 (several holdings pay - TSM, AAPL, QCOM, IBM, KO, JNJ, '
+ "V, MA - and MSFT's next ex-date is Aug 20 so that one is NOT it); a cash-sweep interest credit (9.78 on ~3,642 over "
+ 'four days annualises to about 24%, which is implausible for interest, so a four-day interest credit is UNLIKELY to '
+ 'be the whole explanation); or the 3,642.13 starting figure having itself been a pre-settlement display that settled '
+ '9.78 higher. Settling this needs the POEMS transaction log or a statement, which was not supplied - it is 9.78 and '
+ 'is recorded as unexplained rather than rationalised. *** SCREEN CAVEAT ON RECORD: the screen states verbatim that it '
+ "is 'before the settlement of the outstanding contract and accrued interest/fee, if any', which is the standing POEMS "
+ 'convention already documented here - the live cash line is pre-settlement and can move again as contracts settle. '
+ '*** NOTHING ELSE CHANGED IN THIS UPDATE. No trades since the Aug 14 COHR buy; positions, costs, budgets and the '
+ 'SELLPLAN are untouched. Prices were NOT touched either because they did not need to be: the scheduled overnight job '
+ 'had already advanced all 167 names to the verified Aug 17, 2026 close (commit 70596a2) and an earnings refresh had '
+ 'already landed SIDU and FN (commit 7b7dec7), so the board was current before this screen arrived. This entry is a '
+ 'cash-only correction. *** CASH POSITION, STATED PLAINLY: 1,585.35 is still under one order of recent size. The last '
+ 'five buys averaged roughly 1,900-2,100 each, so at this balance NO further purchase of the usual size is fundable, '
+ 'and USD does not arrive until Sep 5. Against the stated 20,000 minimum for the rest of August the shortfall is '
+ '18,414.65. The THB tranche (500-700k as slice one of the September injection) remains the binding item and has now '
+ 'been raised in eight consecutive exchanges.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -5919,7 +5945,7 @@ TRADES = [{'date': 'Jul 21, 2026',
 
 SELLPLAN = ['IREN']
 
-CASH = {'currency': 'USD', 'amount': 1575.57, 'asof': 'Aug 14, 2026', 'broker': 'POEMS (Phillip Securities)'}
+CASH = {'currency': 'USD', 'amount': 1585.35, 'asof': 'Aug 17, 2026', 'broker': 'POEMS (Phillip Securities)'}
 
 REALIZED = [{'t': 'NBIS', 'g': 13, 'amount': 1404.52},
  {'t': 'IREN', 'g': 13, 'amount': 98.52},
