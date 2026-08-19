@@ -342,7 +342,42 @@ ASOF = ('Aug 12, 2026 · close — daily price refresh (run Aug 13, 00:30 UTC): 
  'five buys averaged roughly 1,900-2,100 each, so at this balance NO further purchase of the usual size is fundable, '
  'and USD does not arrive until Sep 5. Against the stated 20,000 minimum for the rest of August the shortfall is '
  '18,414.65. The THB tranche (500-700k as slice one of the September injection) remains the binding item and has now '
- 'been raised in eight consecutive exchanges.')
+ 'been raised in eight consecutive exchanges. | Aug 19, 2026 broker sync (POEMS Outstanding Positions + Order Status '
+ 'screens, both taken 11:20 PM BKK Aug 18 = 12:20 PM ET, mid-session). RECONCILIATION CLEAN: 50 tickers on the screen, '
+ '50 held on the board, zero symbol differences, all 50 rows cross-checked four ways against their own arithmetic, and '
+ 'the stated totals reproduce to the cent - cost 579,877.63, MV 688,322.58, unrealised +108,444.95 (+18.70%). The only '
+ 'apparent mismatch was ETN again, the same 5-cent artefact of the five-decimal displayed average price that the Aug '
+ '15 sync already resolved; the stated subtotal disambiguates it to 7,879.55 and no stored value changed. EXACTLY ONE '
+ 'POSITION MOVED. *** BUY TSM 5 sh, order 866417, LIMIT 412.50 day order filled at 412.4199 - inside the limit, all 5 '
+ 'of 5, submitted 11:20:29 PM and done 11:20:30 PM BKK. Debit 2,070.66 = 5 x 412.4199 + 8.56 commission. TSM 107.5 -> '
+ '112.5 sh, cost 37,850.87 -> 39,921.53, avg 352.10112 -> 354.85804; every one of those three ties to POEMS to the '
+ 'cent, as does the new book cost of 579,877.63. Budget 50,000 now 79.8% used, 10,078.47 headroom. EXECUTION WAS GOOD '
+ 'AND IS WORTH RECORDING AS SUCH: a limit order on a -4% tape did exactly what a limit order is for, and the fill came '
+ 'inside the limit. That is the direct opposite of the Aug 14 COHR market order, which filled at 343.00 within 0.9% of '
+ "that day's high and was down 5% by the bell. The standing advice to use limits rather than market orders has now "
+ 'paid for itself once. *** ⚠️ SIZE EXCEEDED AVAILABLE CASH AND THAT IS THE ONE THING ON THIS SYNC THAT NEEDS '
+ 'ATTENTION. The house recommendation was 3 SHARES, about 1,251.49, sized deliberately against the 1,585.35 of cash '
+ 'the POEMS cash screen had CONFIRMED that same morning. The order was 5 shares for 2,070.66 - 65% larger, and 485.31 '
+ 'MORE THAN THE CONFIRMED CASH BALANCE. Derived cash is therefore 1,585.35 - 2,070.66 = MINUS 485.31, and that is what '
+ 'is now carried, stamped Aug 18 and flagged DERIVED, not observed: no cash screen accompanied this sync. A negative '
+ 'figure on the board is deliberate - it makes the shortfall visible rather than rounding it to zero. THREE POSSIBLE '
+ 'EXPLANATIONS, NONE VERIFIED: (a) Phillip extended settlement credit or the account has a margin facility, in which '
+ 'case interest accrues; (b) funds settled in between the morning cash screen and the 11:20 PM order that the earlier '
+ "screen did not show - the screen states verbatim it is 'before the settlement of the outstanding contract and "
+ "accrued interest/fee, if any', so this is entirely possible; or (c) the trade is genuinely unfunded, which in a "
+ 'Singapore cash account is the scenario that matters, because unsettled positions can be force-sold with the loss and '
+ 'penalties borne by the account holder. US equities settle T+1, so the funding date is Aug 19. THIS NEEDS THE POEMS '
+ 'CASH SCREEN AND, IF POSSIBLE, THE CONTRACT NOTE - it is not something to leave unresolved for a week. *** PRICES '
+ 'DELIBERATELY NOT TOUCHED. The positions screen was taken mid-session at 12:20 PM ET, so its Current Price column '
+ 'carries INTRADAY Aug 18 quotes (TSM 413.41, NVDA 219.74, MU 940.76, META 543.67), not closes. House rule is verified '
+ 'closes only, so all 167 names stay at the Aug 17 close and the overnight job picks up the Aug 18 close. This means '
+ "the board's market value will read lower than the 688,322.58 on the screen until that job runs - the difference is "
+ 'one session of price movement, not an error. For the record the intraday screen showed the AI complex still selling '
+ 'off: META -17.56% on cost, TSLA -21.74%, ORCL -14.12%, IBM -18.51%, against AMAT +114.25%, CRWD +117.59% and PANW '
+ '+118.88% on the other side. *** MONTHLY 2026-08 buyUSD 27,403.71 -> 29,474.37 (lots 16); TSM month-to-date 1,873.23 '
+ '-> 3,943.89, which makes it the largest single buy of August; Computing Chips byGroup 3,856.84 -> 5,927.50. '
+ 'investedEverUSD 606,178.98 -> 608,249.64, THB leg incremented at the current 33.75 because no contract-note rate was '
+ 'supplied - flagged as an approximation on a derived aggregate, as before.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -5551,7 +5586,7 @@ POS = {'GOOGL': {'budget': 60000, 'cost': 55324.68, 'shares': 205},
  'META': {'budget': 50000, 'cost': 39239.51, 'shares': 59.5},
  'AAPL': {'budget': 25000, 'cost': 11437.61, 'shares': 46},
  'NVDA': {'budget': 80000, 'cost': 77340.96, 'shares': 411},
- 'TSM': {'budget': 50000, 'cost': 37850.87, 'shares': 107.5},
+ 'TSM': {'budget': 50000, 'cost': 39921.53, 'shares': 112.5},
  'AVGO': {'budget': 40000, 'cost': 28571.53, 'shares': 84},
  'AMD': {'budget': 25000, 'cost': 13789.22, 'shares': 55},
  'MRVL': {'budget': 25000, 'cost': 7872.66, 'shares': 48.5},
@@ -5941,11 +5976,26 @@ TRADES = [{'date': 'Jul 21, 2026',
           '343.00 sits inside BOTH ranges (Aug 13 325.27-361.99, Aug 14 317.21-346.17) - so the prior screen is the '
           'evidence, not the tape. NOTE THE ENTRY QUALITY: 343.00 is within 0.9% of the Aug 14 intraday HIGH of '
           '346.17, on a day that opened 328.58 and closed 325.83; these 6 shares were down 5.0% by the bell. COHR 4 -> '
-          '10 sh, cost 1,328.56 -> 3,395.12, avg 332.14 -> 339.51. Budget 5,000 now 67.9% used (1,604.88 headroom).'}]
+          '10 sh, cost 1,328.56 -> 3,395.12, avg 332.14 -> 339.51. Budget 5,000 now 67.9% used (1,604.88 headroom).'},
+ {'date': 'Aug 18, 2026',
+  'action': 'BUY',
+  't': 'TSM',
+  'shares': 5,
+  'price': 412.4199,
+  'amount': 2070.66,
+  'est': False,
+  'note': 'Order 866417, LIMIT 412.50 day order, filled at 412.4199 - INSIDE the limit, on 5 of 5 submitted, submitted '
+          '11:20:29 PM BKK and done 11:20:30 PM (one second). Cash debit 2,070.66 = 5 x 412.4199 + the 8.56 '
+          'commission. Executes the Aug 18 TSM recommendation. EXECUTION QUALITY WAS GOOD - the limit order did '
+          'exactly what it was meant to on a -4% tape, in contrast to the COHR market order of Aug 14 that filled '
+          'within 0.9% of the day high. SIZE WAS NOT: the recommendation was 3 shares (~1,251) against 1,585.35 of '
+          'confirmed cash; 5 shares at 2,070.66 is 485.31 MORE than the cash on hand. TSM 107.5 -> 112.5 sh, cost '
+          '37,850.87 -> 39,921.53, avg 352.10 -> 354.86 - all three tie to POEMS to the cent. Budget 50,000 now 79.8% '
+          'used (10,078.47 headroom).'}]
 
 SELLPLAN = ['IREN']
 
-CASH = {'currency': 'USD', 'amount': 1585.35, 'asof': 'Aug 17, 2026', 'broker': 'POEMS (Phillip Securities)'}
+CASH = {'currency': 'USD', 'amount': -485.31, 'asof': 'Aug 18, 2026', 'broker': 'POEMS (Phillip Securities)'}
 
 REALIZED = [{'t': 'NBIS', 'g': 13, 'amount': 1404.52},
  {'t': 'IREN', 'g': 13, 'amount': 98.52},
@@ -5960,8 +6010,8 @@ REALIZED = [{'t': 'NBIS', 'g': 13, 'amount': 1404.52},
  {'t': 'SOFI', 'g': 14, 'amount': -152.4},
  {'t': 'HOOD', 'g': 14, 'amount': 897.82}]
 
-TOTALS = {'investedEverUSD': 606178.98,
- 'investedEverTHB': 19560004,
+TOTALS = {'investedEverUSD': 608249.64,
+ 'investedEverTHB': 19629889,
  'soldCostUSD': 34025.62,
  'soldCostTHB': 1143440,
  'realizedUSD': -2478.01,
@@ -6419,13 +6469,14 @@ MONTHLY = [{'ym': '2025-07',
               {'g': 16, 'buy': 4015.74, 'sell': 0.0, 'real': 0.0},
               {'g': 19, 'buy': 0.0, 'sell': 1855.08, 'real': 272.72}]},
  {'ym': '2026-08',
-  'buyUSD': 27403.71,
-  'buyLots': 15,
+  'buyUSD': 29474.37,
+  'buyLots': 16,
   'sellUSD': 0.0,
   'sellLots': 0,
   'realizedUSD': 0.0,
   'realizedTHB': 0,
-  'byStock': [{'t': 'LITE', 'buy': 3480.48, 'sell': 0.0, 'real': 0.0},
+  'byStock': [{'t': 'TSM', 'buy': 3943.89, 'sell': 0.0, 'real': 0.0},
+              {'t': 'LITE', 'buy': 3480.48, 'sell': 0.0, 'real': 0.0},
               {'t': 'COHR', 'buy': 3395.12, 'sell': 0.0, 'real': 0.0},
               {'t': 'MSFT', 'buy': 2060.52, 'sell': 0.0, 'real': 0.0},
               {'t': 'META', 'buy': 2049.88, 'sell': 0.0, 'real': 0.0},
@@ -6434,12 +6485,11 @@ MONTHLY = [{'ym': '2025-07',
               {'t': 'ANET', 'buy': 1935.56, 'sell': 0.0, 'real': 0.0},
               {'t': 'MU', 'buy': 1926.29, 'sell': 0.0, 'real': 0.0},
               {'t': 'ISRG', 'buy': 1887.98, 'sell': 0.0, 'real': 0.0},
-              {'t': 'TSM', 'buy': 1873.23, 'sell': 0.0, 'real': 0.0},
               {'t': 'CRM', 'buy': 1861.84, 'sell': 0.0, 'real': 0.0},
               {'t': 'FN', 'buy': 1604.56, 'sell': 0.0, 'real': 0.0},
               {'t': 'AAOI', 'buy': 1338.56, 'sell': 0.0, 'real': 0.0}],
   'byGroup': [{'g': 0, 'buy': 6116.48, 'sell': 0.0, 'real': 0.0},
-              {'g': 1, 'buy': 3856.84, 'sell': 0.0, 'real': 0.0},
+              {'g': 1, 'buy': 5927.5, 'sell': 0.0, 'real': 0.0},
               {'g': 3, 'buy': 1926.29, 'sell': 0.0, 'real': 0.0},
               {'g': 4, 'buy': 11754.28, 'sell': 0.0, 'real': 0.0},
               {'g': 6, 'buy': 1887.98, 'sell': 0.0, 'real': 0.0},
