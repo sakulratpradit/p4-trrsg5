@@ -3,414 +3,10 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Aug 12, 2026 · close — daily price refresh (run Aug 13, 00:30 UTC): 160 of 161 names advanced to the verified Aug 12 '
- 'close. Method per README: at-close stockanalysis quote pages with prev-close chain validated against history tables; '
- '~45 partial-session or internally-impossible history rows discarded in favor of the at-close quote '
- '(HPE/OKLO/ONDS/HUBB/YUM history rows were arithmetically impossible and discarded). Where the stockanalysis quote '
- 'was CDN-frozen intraday or stale (CDNS, TEAM, YUM, HNGE, NVT, NRG, MYRG, LMND, HYLN, AIRJ, XE) the close came from '
- 'Google Finance with an explicit "Closed: Aug 12, 4:00 PM GMT-4" stamp or marketscreener "(Market Closed)" (XE '
- '20.35); ETN 459.96 and GEV 1039.90 came from full-session history rows because their quote pages were stale at Aug '
- '11. All 29 >=6% moves confirmed against an independent dated second source and allowed through the gate, largest: '
- 'NBIS +34.1 (259.20, Q2), AEHR +25.4 (129.23, 3-session catch-up from stale Aug 7 base), CRWV +19.3 (107.73, Q2), '
- 'SMCI +19.0 (37.61, FY26 earnings), LITE +13.6 (932.47, earnings), SE +12.9 (128.11, catch-up from Aug 7 base), BE '
- '+12.3 (237.16), VIAV +12.3 (43.11), CIEN +11.5 (432.05), TE -10.4 (4.90), DELL +9.9 (484.50), IREN +9.9, SPCX +9.7, '
- 'NOK +9.3, SKHY +9.0, KEEL -8.8, FN +8.7, CRDO +8.3, COHR +8.2, HPE +8.1, SOUN -7.7, RBRK +7.4, STX +7.0, AIRJ +6.8, '
- 'ANET +6.4, FORM +6.4, AXTI +6.4, COHU +6.3, TER +6.1. ONE NAME UNRESOLVED: LWLG left at its Aug 11 close 7.56 / pxd '
- '2026-08-11 — no source anywhere carried an Aug 12 print (stockanalysis quote stamped Aug 11, history ends Aug 10, '
- 'both Google caches stale, marketscreener stamped Aug 11, fool stale Aug 5). All eleven names left stale on Aug 7 '
- 'were recovered to the Aug 12 close (AEHR, MELI, SE, RBRK, CORZ, KEEL, AIRJ, SOUN, TMDX, MMM, NU). Market caps scaled '
- 'with price; hi52/lo52 extended where breached. Notable: COHR 355.64 is the pre-earnings regular close (reported Aug '
- '12 after close, AH excluded); CSCO closed 123.88 then fell ~4% AH on earnings (AH excluded); AFRM prev-close chain '
- 'suggests the stored Aug 11 76.29 was itself a partial capture (true Aug 11 close 76.71 per stockanalysis+Google). | '
- 'Aug 12, 2026 fill (recorded Aug 13 BKK morning): BUY LITE 2 sh, limit 877 day order filled AT the limit (order '
- '558410, 10:03 PM BKK = 11:03 AM ET, during the Aug 12 session). Cash debit 1,762.56 INCLUDES the 8.56 commission per '
- 'the POEMS convention. LITE 9.5 -> 11.5 sh, cost 7,610.18 -> 9,372.74, avg 801.07 -> 815.02; budget 20,000 now 46.9% '
- 'used, 10,627.26 headroom. Bought the morning AFTER the FQ4 FY2026 blowout (Aug 11 after close: revenue 1,006.3M '
- '+109.3%, non-GAAP EPS 3.23 vs ~2.95-2.97 consensus, Q1 FY27 guided 1.225-1.275B vs ~1.16B consensus, EMLs '
- "'effectively sold out' with the supply gap >30%) - so the entry paid up ~6.9% over the 820.59 Aug 11 close for the "
- 'post-print information, consistent with the standing advice to buy after results, not before. CASH 7,330.98 -> '
- '5,568.42 (the POEMS live screen still displayed 7,330.98 pre-settlement, as it always does). MONTHLY 2026-08 buyUSD '
- '21,648.30 -> 23,410.86 (lots 13), LITE month-to-date 3,480.48; investedEverUSD 600,423.57 -> 602,186.13. PRICES NOT '
- "TOUCHED - held names remain at the verified Aug 11 close from the overnight job; the Aug 12 close (the fill's own "
- "session) lands with tonight's daily job. NOTE ON RECORD: cash is now 5,568.42 against a stated 20,000 minimum for "
- 'the rest of August - the THB tranche recommended on Aug 12 (500-700k THB as slice one of the September injection) is '
- 'now the binding item, and at ~1,762 per order the remaining cash funds only ~3 more orders of this size. | Aug 13, '
- '2026 additions: TWO new watchlist names at the verified Aug 12, 2026 close; the other two request items were already '
- 'present (TE has been in Energy since its addition, SNDK in Memory & Storage). (1) QNT (Quantinuum, NASDAQ) 71.74 '
- 'into Quantum - TICKER VERIFIED REAL against two sources: it is the Honeywell Quantum Solutions / Cambridge Quantum '
- "merger that IPO'd June 4, 2026 at 53-55 in a 1.5B raise, NOT the Quant crypto token that shares the symbol. It rose "
- '27.97% ON Aug 12 after announcing a 98-qubit Helios deployment on Oracle Cloud Infrastructure, alongside Q2 revenue '
- 'of 8M (+279% YoY) and raised FY2026 guidance of 28-32M. Nearly all valuation fields are DELIBERATELY BLANK: ~19B '
- 'market cap against ~30M of annual revenue (~600x sales) makes the ratios meaningless, and a June-2026 IPO has no '
- '52-week range, no published TTM margin set and no analyst aggregate on the permitted sources - mcap 18.86B '
- "(stockanalysis) vs 18.72B (MarketBeat) on record. Treat it as the same lottery-ticket class as IONQ, at 13x IONQ's "
- 'revenue multiple. (2) PENG (Penguin Solutions, NASDAQ) 58.73 into Memory & Storage - formerly SMART Global Holdings '
- '(renamed Oct 2024, redomiciled Cayman->Delaware Jun 2025, 200M SK Telecom investment with a board seat). GROUP-FIT '
- 'NOTE: FQ3 FY2026 revenue split is Integrated Memory ~57%, Advanced Computing ~29%, Optimized LED ~14% - so Memory & '
- 'Storage captures the majority but the company sells itself as an AI-infrastructure play (AI revenue +104% YoY, 74% '
- 'of total). FQ3 (Jul 7) beat hard - 478.7M +48%, non-GAAP EPS 0.84 vs 0.56 consensus - and FY27 was guided to ~2.19B '
- '(+30%) vs ~1.85B consensus; Needham/Stifel/JMP/Rosenblatt raised targets to 75-85 on Jul 8, but Barclays DOWNGRADED '
- 'TO SELL (target 40) on Jul 20. Trailing FCF is NEGATIVE (-69.43M, working-capital build; FY2025 was +100.1M) so '
- 'P/FCF and PEG are blank; 650M convertible notes placed Jul 13 (due Aug 2031); D/E 0.77. ath NOT FOUND - hi52 89.86 '
- 'left as the range top only, NOT copied into ath (blacklisted-source headlines suggest the 52-wk high IS the record, '
- 'unconfirmed). an 7 / avg 74.29 / 40-85 (stockanalysis) vs Moderate Buy avg 63.33 (MarketBeat) on record. Next '
- 'earnings ESTIMATED early-to-mid Oct (sources conflict Oct 6-8 vs Oct 13). jan2 NOT FOUND on both names. Quantum 2 -> '
- '3 names (IONQ, IBM, QNT), Memory & Storage 5 -> 6 (MU, SKHY, SNDK, WDC, STX, PENG), total 161 -> 163. SNDK-vs-MU '
- 'DECISION RESEARCH (both verified at the Aug 12 close, MU 911.29 +4.92% / SNDK 1,344.29 +5.76%): recommendation MU, '
- 'recorded in the reply of Aug 13. The pivot points: MU is 76% DRAM / 24% NAND with HBM4 already past 1B of shipped '
- 'revenue, sold-out supply into 2027 and 16 multi-year customer agreements, while SNDK is essentially pure NAND with '
- 'NO HBM (its High Bandwidth Flash with SK hynix is a specification unveiled Aug 4, 2026, not shipping product). '
- 'TrendForce Q3 2026 contract forecasts have DRAM (+13-18% QoQ) now rising faster than NAND (+10-15%). The China '
- 'threat hits SNDK sooner: YMTC reached 14% NAND share in Q2 2026 with a third Wuhan fab starting late 2026 and two '
- 'more planned, vs CXMT whose HBM share is projected ~1% 2025 -> 12% by 2028. Valuations are near-identical (fwd P/E '
- "6.34 vs 6.30) but SNDK's P/FCF 17.43 beats MU's 39.32 and its ROIC 103.2% beats MU's 67.6% - the cash-flow case for "
- 'SNDK is real, which is why this is a relative call, not a dismissal. Events: MU reports FQ4 ~Sep 22-23 (ESTIMATED, '
- "the 50B +/-1B guide quarter at ~86% GM); SNDK's next report is ~late Oct/Nov, but its 2026 INVESTOR DAY IS AUG 13, "
- '9:00 AM EDT - tonight Bangkok time - an event-risk reason to wait if choosing SNDK. Aug 1-13 analyst tape: MU - '
- 'Mizuho raised to 1,375 (Aug 10, tight DRAM/HBM supply), Citi trimmed 1,400 -> 1,150 (Aug 7/10, sees pricing peaking '
- '2Q27), BofA Buy (Aug 3); SNDK - Argus upgraded to Buy, New Street 3,000, Evercore 3,100 -> 2,800, Wells Fargo cut to '
- "1,400, Citi cut to 2,100 (all Aug 6-10). STANDING CAUTION RESTATED: the Aug 3 house stance was 'Hold, don't add' on "
- "MU at cycle-peak margins - this recommendation answers 'which of the two', sized small, not 'is memory a buy'. Cash "
- 'context: 5,568.42 with the THB tranche still the binding item. | Aug 13, 2026 fill (recorded Aug 14 BKK morning): '
- 'BUY MU 2 sh, limit 959 day order filled at 958.8651 (order 639709, 10:59 PM BKK = 11:59 AM ET, during the Aug 13 '
- 'session) - executing the Aug 13 MU-over-SNDK recommendation, sized inside the small-add guidance. Cash debit '
- '1,926.29 INCLUDES the 8.56 commission. MU 33.45 -> 35.45 sh, cost 20,655.29 -> 22,581.58, avg 617.50 -> 637.00; '
- 'budget 30,000 now 75.3% used, 7,418.42 headroom. NOTE the fill price 958.8651 sits ~5.2% ABOVE the stored Aug 12 '
- "close of 911.29 - MU rallied intraday on Aug 13; the Aug 13 close lands with tonight's daily job, prices "
- 'deliberately not touched here. CASH 5,568.42 -> 3,642.13 (the POEMS live screen still displayed 5,568.42 '
- 'pre-settlement, as it always does). MONTHLY 2026-08 buyUSD 23,410.86 -> 25,337.15 (lots 14; Memory & Storage joins '
- "the month's byGroup at 1,926.29); investedEverUSD 602,186.13 -> 604,112.42. CASH WARNING ON RECORD: 3,642.13 "
- 'remaining is under two orders of recent size against the stated 20,000 minimum for the rest of August - the THB '
- 'tranche (500-700k as slice one of the September injection) is now urgent if the daily buying is to continue. MU '
- 'reports FQ4 ~Sep 22-23 (ESTIMATED), the 50B +/-1B guide quarter. | Aug 14, 2026 broker sync (POEMS screen, Aug 13 '
- 'closes): NO TRADING since the Aug 13 MU fill. RECONCILIATION CLEAN - 50 tickers on the POEMS screen, 50 held on the '
- 'dashboard, zero symbol differences either way, all 50 share counts match, and total cost ties EXACTLY at 575,740.41. '
- 'Every one of the 50 rows was cross-checked four ways against its own arithmetic (cost=qty*avg, MV=qty*price, '
- 'P/L=MV-cost, P/L%=P/L/cost) with ZERO mismatches, and both exchange subtotals plus the grand total reproduce POEMS '
- 'to the cent: MV 708,116.24, unrealized +132,375.83 (+22.99%). All 50 held names advanced to the Aug 13, 2026 close '
- 'from that screen; SNDK, CRWV, NBIS, APLD, CIFR, CORZ and HUT were also advanced to independently web-verified Aug 13 '
- 'closes because they are the subject of live questions. Market caps scaled with price; 52-week highs/lows extended '
- "where breached. The remaining watchlist names stay at the Aug 12 close until tonight's daily job. *** THB "
- 'UNREALISED-GAIN QUESTION ANSWERED (Salee asked why the dashboard shows ~5.2M THB when a manual calc gives '
- "~4.3-4.5M). BOTH NUMBERS ARE CORRECT - THEY MEASURE DIFFERENT THINGS AND THE DASHBOARD IS NOT WRONG. Salee's method "
- "converts the USD gain at today's rate: 132,375.83 x 33.75 = 4,467,684 THB (4.47M). The dashboard instead values the "
- 'COST at the rate actually paid on each purchase (the THBFX table, weighted average 32.2008 THB/USD across the book) '
- "and the MARKET VALUE at today's 33.75, so THB gain = 23,756,202 - 18,539,280 = 5,216,922 (5.22M). The 749,000-THB "
- 'difference is pure CURRENCY GAIN: the baht has weakened 4.81% since the average purchase, so the same dollars are '
- "worth more baht than when they were bought, and that gain is real for a baht-based investor. In short - Salee's "
- "4.47M is the STOCK gain expressed in baht; the dashboard's 5.22M is the STOCK gain PLUS the FX gain, which is what a "
- 'Thai investor actually experiences. Neither is an error. If Salee prefers the simpler stock-only view the dashboard '
- 'can show both columns side by side - offered, not yet actioned. *** AUG 13 MOVES >=6% ALL SECOND-SOURCED before '
- 'publishing: COHR -7.99% to 327.23 (stockanalysis + GuruFocus) - it BEAT on Aug 12 after the close (revenue 2,045.5M '
- 'vs ~1.99B est, GAAP EPS 1.19 vs 1.14, Q1 FY27 guided 2.2-2.4B and non-GAAP EPS 1.85-2.05) and STILL fell, simply '
- 'round-tripping its +8.24% pre-print rally - the bar for AI-optics has risen and margin conversion, not demand, is '
- 'now the swing factor. SKHY +7.29% to 165.67 (stockanalysis + TradingKey at 165.54) - and critically this was NOT an '
- "ADR-premium expansion: Seoul's KRX 000660 was up ~7.2% intraday at the same time, so the whole SK hynix complex "
- 're-rated together. ONDS -8.80% to 8.91 (stockanalysis + marketscreener) - it reported Q2 the same morning with '
- 'revenue 83.77M vs 67.97M expected and raised FY26 guidance to 525-550M, but posted a wider-than-expected loss and '
- 'trades at ~40x EV/revenue after six acquisitions this year, so it sold off on the setup, not the numbers. CIFR '
- '-6.99% to 16.62 and HUT -8.62% to 82.95 (both stockanalysis + marketscreener) - NO ATTRIBUTABLE DRIVER FOUND and '
- 'none is asserted: bitcoin fell only 0.82% that day, the S&P 500 set a record above 7,800, and IREN ROSE 2.50%, so '
- 'neither a bitcoin move nor a clean sector rotation explains it; the weakness clustered in the bitcoin-treasury-heavy '
- "names while the AI-lease-weighted name rose. DATA CONFLICT ON RECORD: stockanalysis's own history tables disagree "
- 'with its quote pages for ONDS (8.94/-8.50%) and CIFR (16.52/-7.55%), with a blank adjusted-close suggesting the '
- 'table had not settled; the independent second sources side with the quote pages, which were taken. | Aug 14, 2026 '
- "dashboard change (actioning Salee's request): the P&L-by-group table now shows BOTH baht views side by side instead "
- "of one. 'Unreal B stock' = the USD gain converted at today's 33.75 - stock performance only, the figure a calculator "
- "gives (TOTAL +4.47M). 'Unreal B +FX' = cost valued at the rate actually paid on each purchase from the THBFX table, "
- "market value at today's rate - stock performance PLUS the currency gain from the baht weakening 4.81% since the "
- 'weighted-average buy rate of 32.2008 (TOTAL +5.36M). The gap between the two columns IS the FX gain, ~890,000 THB at '
- 'book level. The section heading now explains this in plain language, both new headers carry hover tooltips, the '
- 'stock-only column is rendered at 72% opacity so the FX-inclusive column stays the primary read, and the empty-state '
- 'colspan was widened 13 -> 14. All three currency toggles were re-tested after the change: USD-only 8 visible '
- 'columns, baht-only 8, both 14; every body row and the TOTAL row carry 14 cells; zero NaN/undefined and no page '
- 'errors. WORTH NOTING at group level the two columns can DISAGREE IN SIGN - Robotic/Automation/EV shows -0.03M on the '
- 'stock view but +0.00M once FX is included, i.e. the currency move more than offset the stock loss. | Aug 14, 2026 '
- 'presentation fix: this change log had grown to ~14,000 characters and was being dumped into the page footer as one '
- 'unbroken paragraph - unreadable, and the first thing Salee asked about. NOTHING WAS DELETED. The footer now shows '
- "only the date stamp; a 'Show change log' button reveals the entries newest-first, each clipped to three lines with "
- "its own 'Read all' expander, inside a scrollable 440px panel. The full text remains in the data, in git history, and "
- "in the workbook's Dashboard Notes tab, which gen_stock_notes.py builds by splitting this same string on the pipe "
- "delimiter. Also fixed in the same pass: 15 literal doubled percent signs ('4.81%' etc) that had been written into "
- 'earlier entries by an escaping slip and were rendering verbatim on the page. | Aug 14, 2026 · close — FULL DAILY '
- 'PRICE REFRESH, all 163 names. Every active and watchlist ticker advanced to the verified Friday Aug 14, 2026 close '
- '(the market shut at 4:00 PM EDT and this run started at 9:53 PM EDT, so every name had a settled print). Method per '
- 'README: primary source the stockanalysis.com quote page, accepted ONLY when stamped "At close: Aug 14, 2026"; any '
- 'page stamped Aug 13, or showing "Market open", was discarded as stale and re-sourced. Nineteen names needed a '
- 'fallback — ETN 451.51, GOOGL 345.90, CEG 282.50, VST 148.13, LWLG 7.57, ASTS 70.98, AMPX 12.51, TE 5.11, TEM 52.10, '
- 'POWI 62.75, SOUN 7.43 and AIRJ 6.04 from Google Finance carrying an explicit "Closed: Aug 14, 4:00 PM GMT-4" stamp, '
- 'and GFS 54.58, AMKR 58.99, COHU 59.30, VIAV 43.54, YUM 148.11, HNGE 88.49 and LMND 52.64 from marketscreener "Market '
- 'Closed … 2026-08-14". ETN is the one the discipline caught: its stockanalysis page was frozen at the Aug 13 close of '
- '453.33, and the Google Finance Aug 14 print of 451.51 chains to it exactly (451.51 + 1.82 = 453.33). CHAIN '
- "VALIDATION CLEAN — for all 57 names already standing at the Aug 13 close from yesterday's broker sync, the Aug 14 "
- 'source\'s own stated "previous close" matched our stored price to within 0.5%: ZERO mismatches out of 57, which is '
- 'the strongest available evidence that no wrong ticker and no wrong session was picked up anywhere in the run. The '
- 'other 106 names were standing at the Aug 12 close, so their move printed here spans two sessions; LWLG, the last '
- 'unresolved name and stuck at Aug 11 since Wednesday, is current again, so nothing in the book is now more than one '
- 'session old. EIGHTEEN NAMES MOVED 6% OR MORE against their stored price and every one was second-sourced before '
- 'publishing: AAOI +15.5% (150.28), WDAY +13.3% (198.68), NU +12.3% (15.23), LUNR +12.2% (19.01), WDC +12.0% (508.80), '
- 'QNT -11.5% (63.51), STX +10.8% (973.44), CSCO -9.8% (111.68), NBIS +8.9% (277.68), PENG +8.6% (63.80), POET +8.0% '
- '(9.58), RCAT +7.8% (11.13), CIFR +7.5% (17.86), SNDK +7.4% (1641.11), AFRM +6.7% (78.35), CGNX +6.6% (65.63), AMD '
- '+6.5% (514.39), DDOG +6.0% (255.46). Three of those were two-session moves whose intermediate Aug 13 close was '
- 'separately verified against two independent sources rather than assumed: WDC (Aug 13 close 487.29, +7.31%), CSCO '
- '(Aug 13 close 113.47, -8.40%) and AFRM (Aug 13 close 78.32, +6.70%). DRIVERS ON RECORD. CSCO fell 8.40% on Aug 13 '
- 'and a further 1.58% on Aug 14 despite BEATING — Q4 FY26 revenue 17.25B +18%, EPS 0.97 +51%, AI orders 4B in the '
- 'quarter and 9.3B for the fiscal year, and Q1 FY27 guided 18.0-18.2B against roughly 16.8B consensus — the selloff '
- 'was gross-margin compression plus a 7.5B AI-data-centre sales projection read as conservative, on about double '
- 'normal volume. It is a clean worked example of guidance above consensus not being enough when the margin line '
- "disappoints. WDC +7.31% then +4.41%, and STX +5.65%, were read-across from SanDisk's Aug 13 Investor Day (FY28-30 "
- 'model: mid-to-high-teens revenue growth, ~80% non-GAAP gross margin, ~75% operating margin, ~50% adjusted FCF '
- 'margin); SNDK itself added 7.39% to 1,641.11 on Aug 14, so the whole memory/storage complex re-rated together. NO '
- 'WDC-specific release or analyst action was found on Aug 13 and none is asserted — it is a read-across, not a company '
- 'catalyst. AAOI +15.53% to 150.28 was the single largest move in the book and is a HELD position; AMD +6.50% to '
- '514.39 and CGNX +6.56% to 65.63 were the other two held names through the gate. AFRM +6.70% on Aug 13 has NO '
- 'ATTRIBUTABLE DRIVER: its Aug 13 low was exactly the Aug 12 close and volume was only modestly elevated, so it reads '
- "as a retracement of the prior day's -4.31% rather than a repricing — earnings are Aug 27 and no upgrade or "
- 'price-target action dated Aug 13 surfaced on any permitted source. Note also that WDAY now carries 198.68 having '
- 'been stale at 175.29: it leapt 17.78% on Aug 13 on a Reuters report that Silver Lake is in talks to take it private '
- '(neither party has commented) and gave back 3.76% on Aug 14, so the +13.34% shown here is a takeover rumour, not a '
- 'business event. QNT -7.28% to 63.51 gave back part of its Aug 12 Helios/Oracle spike. AVGO -5.94% and AMAT -5.12% '
- 'were the largest single-day fallers that stayed inside the gate. Market caps were scaled by the price ratio rather '
- 'than re-scraped, per README — share counts do not change day to day and scraped caps have been wrong before. 52-week '
- 'highs and lows were extended where breached. NO NAME WAS LEFT STALE, and nothing was written from memory: every one '
- "of the 163 prices came from a page fetched during this run. | Aug 15, 2026 structure change (actioning Salee's three "
- 'requests, all at the verified Aug 14, 2026 close). (1) HYLN — NO ACTION NEEDED, it was already in Power and '
- 'Electrification. It was moved there on Aug 7 in the same pass that moved MPWR out of Energy, so the request was '
- "already satisfied; nothing was duplicated and nothing was touched. HYLN stands at 4.06. (2) NEW GROUP 'Bitcoin' "
- 'created as group 21, the 22nd group, with two new watchlist names. A new palette colour --s22 had to be added to the '
- 'stylesheet in both the light (#c2410c) and dark (#fb923c) themes — the CSS only defined --s1 through --s21, so a '
- '22nd group would have rendered its wheel wedge and its group pill with no fill at all. WULF (TeraWulf, NASDAQ) added '
- 'at 17.38 (+6.56% on Aug 14, mcap 8.67B). GROUP-FIT WARNING ON RECORD: WULF is only nominally a bitcoin miner any '
- 'more. In Q2 2026 (reported Aug 5) HPC lease revenue was 31.9M of 44.8M total — 71% — while bitcoin mining revenue '
- 'was 12.8M and FELL 73% YoY, and the company holds essentially NO bitcoin on its balance sheet (10-Q digital assets '
- 'line 133 thousand dollars at Jun 30). Its two anchor contracts are the Fluidstack lease at Lake Mariner backed by '
- '~600M of Google credit support (102 MW live after CB3 in early July) and a 20-year ~401 MW lease with Anthropic at '
- 'the Justified campus in Kentucky worth ~19B of contracted revenue, up to ~33B with extensions, first power H2 2027. '
- 'On the numbers this is an AI data-centre landlord, not a miner; it sits in Bitcoin because that is where it was '
- 'asked to go, and the mismatch is flagged rather than silently reclassified. Q2 MISSED badly — EPS -1.94 vs -0.24 '
- 'consensus — but 755.7M of that was a NON-CASH warrant-liability charge. Balance sheet is stretched for the buildout: '
- '2.62B cash against 5.24B total debt, D/E 35.5, TTM FCF -2.74B on capex 2.46B. RIOT (Riot Platforms, NASDAQ) added at '
- '19.02 (-1.02%, mcap 7.14B) — the genuine miner of the two: 44.4 EH/s deployed self-mining hashrate (~4.6% of the '
- 'global network) and 11,380 BTC still on the balance sheet at Jun 30, worth ~666M, after selling 4,300 BTC during Q2 '
- 'to fund construction. Q2 revenue 174.2M +14% split mining 113.7M / engineering 37.3M / data-centre-AI 23.2M; revenue '
- "BEAT but EPS missed at -0.68 vs -0.30. THE ECONOMICS INVERTED THIS QUARTER AND THAT IS THE HEADLINE RISK: RIOT's "
- 'all-in cost to mine one bitcoin was 90,631 against an average production value of 71,667 — it is currently mining at '
- 'a loss and funding the shortfall by selling treasury coins. Its own pivot is signed though: 50 MW leased to AMD (25 '
- 'MW live since May at 84% gross margin) plus a 20-year 191 MW Rockdale lease with a frontier AI lab worth ~9.1B '
- 'initial / ~16.1B with extensions, and a non-binding LOI over the whole 1 GW Corsicana campus. Leverage is far more '
- "conservative than WULF's at D/E 0.40. (3) CRCL (Circle Internet Group, NYSE) added to Digital Fintech at 71.60 "
- "(-5.01% on Aug 14, mcap 18.18B) — the USDC stablecoin issuer, IPO'd Jun 5, 2025 at 31.00, and now 76% BELOW its "
- 'all-time high of 298.99 set Jun 23, 2025. THE ONE THING THAT MATTERS ABOUT THIS BUSINESS: ~95% of revenue is '
- 'interest earned on the reserves backing USDC (668M of 701M in Q2 2026), so it is a float business whose earnings '
- 'track the Fed, not a software business. The drag is already visible — Q2 reserve income rose only 5% YoY DESPITE 25% '
- 'growth in average USDC outstanding, because the reserve return rate fell 66bp to 3.48% on lower SOFR. Published '
- 'sensitivity, corroborated by two sources but NOT verified against the primary filing in this run (EDGAR truncated '
- 'before Item 7A): ~618M of reserve income per 100bp of rates, roughly half of which is absorbed by Coinbase because '
- 'distribution payments scale with reserve income, leaving ~303M net. Coin Metrics independently estimates 25-30% of '
- 'annual revenue per 100bp cut. Morgan Stanley downgraded to Underweight on Aug 3 with the target cut 106 -> 38. '
- 'Offsetting: the GENIUS Act (signed Jul 2025, effective no later than Jan 18, 2027) BARS stablecoin issuers from '
- 'paying yield to holders, which protects the spread; Circle got final OCC approval Jul 10 and a NYDFS trust charter '
- 'Jul 31; the Coinbase distribution deal was renewed through 2029 on Aug 5; and FY26 other-revenue guidance was '
- 'roughly doubled to 310-330M. USDC in circulation 73.3B at Jun 30, +19%. FIELDS DELIBERATELY LEFT BLANK rather than '
- 'guessed: jan2 on all three (stockanalysis history tables are JS-paginated and would not yield a Jan 2, 2026 close, '
- 'and no permitted source carried one); peg and epsG on all three; pe/fpe on WULF and RIOT (both loss-making, so the '
- 'ratio is meaningless, not missing); pm on WULF (source states n/a); r40 on WULF and RIOT (deeply negative FCF makes '
- "it meaningless) — CRCL's r40 of 63.4 is computed as revG 37.19 + FCF margin 26.2 per the house convention. WULF's "
- 'ath is NULL: the only source carrying an all-time high gave 29.84, which is EXACTLY its 52-week high, and the house '
- "rule is that a 52-week high is never copied into ath — RIOT's 79.50 (Feb 17, 2021) and CRCL's 298.99 (Jun 23, 2025) "
- 'were both explicitly stated and differ from their 52-week highs, so those were taken. capexB stored positive per the '
- 'house sign convention. Universe 163 -> 166 names, 21 -> 22 groups, Digital Fintech gains a 9th name. No positions '
- 'and no budgets were created — all three are watchlist only, and cash is unchanged at 3,642.13. SEPARATE OBSERVATION '
- 'NOT ACTIONED: four names that are arguably bitcoin businesses already sit in Neocloud Watch — CIFR, HUT, CORZ and '
- 'IREN. They were put there because their investment case is AI/HPC leasing, which is the same logic that makes WULF a '
- 'poor fit for Bitcoin. Raised for a decision, deliberately not moved. | Aug 15, 2026 fix during the same session: the '
- 'three new tickers (WULF, RIOT, CRCL) were added to STOCKS but not to POS, and the page threw two errors on load — '
- '"Cannot read properties of undefined (reading \'cost\')" and "(reading \'shares\')". Cause: every renderer on the '
- 'board dereferences POS[s.t] directly (mv, upl, bleft, all three wheels, the group P&L table, the vision page), so '
- 'EVERY ticker needs a POS row even when it is watchlist-only — the convention is {budget:null, cost:null, '
- 'shares:null}. Caught by the headless check BEFORE publishing, not after: the committed Aug 14 build was re-tested in '
- 'the same run and came back clean, which is what isolated the fault to this change. POS 163 -> 166 rows, one per '
- 'ticker. THBFX is correctly NOT extended - it holds purchase exchange rates and only the 50 held names belong in it. '
- '| Aug 15, 2026 broker sync (POEMS Outstanding Positions screen at the Aug 14, 2026 closes). RECONCILIATION CLEAN AND '
- 'UNUSUALLY STRONG THIS TIME. 50 tickers on the POEMS screen, 50 held on the dashboard, zero symbol differences either '
- 'way. All 50 rows were cross-checked four ways against their own arithmetic (cost = qty x avg, MV = qty x price, P/L '
- '= MV - cost, P/L% = P/L / cost) and both exchange subtotals plus the grand total reproduce POEMS to the cent: NYSE '
- '97,844.85 cost / 112,009.20 MV, NASD 479,962.12 / 594,874.52, TOTAL 577,806.97 cost / 706,883.72 MV / +129,076.75 '
- '(+22.34%). Two apparent 5-cent and 95-cent mismatches on ETN and NVDA were transcription artefacts of the displayed '
- 'average price, which POEMS rounds to five decimals - the stated subtotals disambiguated both instantly (only ETN '
- '7,879.55 and NVDA 77,340.96 make the subtotals foot), and no stored value needed changing. *** THE PRICE COLUMN IS '
- "THE HEADLINE: all 50 of POEMS's own Current Price values matched the dashboard's stored Aug 14 closes EXACTLY, "
- 'ticker for ticker, with zero exceptions - COHR 325.83, TSM 426.35, AMD 514.39, NVDA 225.16, MU 971.66, ETN 451.51, '
- "AMAT 507.18, AAOI 150.28, LITE 926.14 and the other 41. That is a completely independent confirmation of Friday's "
- 'full 163-name refresh, including the twelve names whose stockanalysis pages were stale and had to be re-sourced from '
- 'Google Finance or marketscreener - ETN, the one the gate caught frozen at its Aug 13 close, ties to the broker at '
- '451.51. No price on the board was touched in this sync because none needed to be. *** ONE POSITION CHANGED: BUY COHR '
- '6 sh at exactly 343.00, cash debit 2,066.56 including the 8.56 commission ((2,066.56 - 8.56) / 6 = 343.00 to the '
- 'cent). COHR 4 -> 10 sh, cost 1,328.56 -> 3,395.12, avg 332.14 -> 339.51; budget 5,000 now 67.9% used with 1,604.88 '
- "headroom. Dashboard cost 575,740.41 + 2,066.56 = 577,806.97, which is POEMS's stated total to the cent. SESSION "
- 'ATTRIBUTION, STATED HONESTLY: 343.00 falls inside BOTH the Aug 13 range (325.27-361.99) and the Aug 14 range '
- '(317.21-346.17), so the daily bars cannot settle it. It is booked to Aug 14 because the previous POEMS screen - '
- 'taken on the Aug 14 BKK morning, AFTER the Aug 13 close - still showed COHR at 4 shares. That is inference from the '
- 'prior snapshot, not from the tape; only the contract note would prove it. ENTRY QUALITY FLAGGED RATHER THAN BURIED: '
- '343.00 is within 0.9% of the Aug 14 intraday high of 346.17 on a session that opened 328.58 and closed 325.83, so '
- 'these 6 shares were already down 5.0% by the bell, and the position as a whole now shows -136.82 (-4.03%). For the '
- 'record the house recommendation issued after the Aug 14 close was 10-11 shares around 325.83-331, i.e. some 3.5-5% '
- 'below where this filled - the trade preceded the note rather than following it. THE THESIS IS UNCHANGED and this is '
- 'a timing observation, not a reversal: Coherent beat on Aug 12 (revenue 2,045.5M +33.8%, non-GAAP EPS 1.74 vs 1.62) '
- 'and guided Q1 FY27 to 2.2-2.4B against ~2.13B consensus, with Data Center & Communications +59% YoY at 79% of sales. '
- '*** CASH IS DERIVED, NOT OBSERVED: no cash-balance screen was supplied with this snapshot, so the figure carried '
- 'here - 3,642.13 - 2,066.56 = 1,575.57 - is computed from the position delta and should be treated as provisional '
- 'until a POEMS cash screen confirms it. AT 1,575.57 THERE IS LESS THAN ONE ORDER OF RECENT SIZE LEFT against the '
- 'stated 20,000 minimum for the rest of August. The THB tranche (500-700k as slice one of the September injection) is '
- 'no longer merely urgent - daily buying stops here without it. MONTHLY 2026-08 buyUSD 25,337.15 -> 27,403.71 (lots '
- '15); COHR month-to-date 1,328.56 -> 3,395.12, which moves it to second-largest buy of the month behind LITE; '
- 'Photonic & Optic Fiber byGroup 9,687.72 -> 11,754.28. investedEverUSD 604,112.42 -> 606,178.98. The THB leg of '
- 'investedEver was incremented at the current 33.75 rather than the contract-note rate, which was not supplied - '
- 'flagged as an approximation on a derived aggregate, and THBFX carries no COHR entry so the board already falls back '
- 'to 33.75 for this holding. | Aug 17, 2026 addition: SNPS (Synopsys, NASDAQ) added to SaaS at the verified Aug 14, '
- '2026 close of 421.50 (+2.37% that day), inserted at STOCKS index 90 - IMMEDIATELY AFTER CDNS at index 89 - so the '
- 'two EDA names render side by side in the group, which is what was asked for. NOTE THIS IS A RE-ADD, NOT A NEW NAME: '
- 'SNPS was HELD and was SOLD on Jul 16, 2026 - 4 shares, cost 1,934.56, realised -263.20 (-64,943 THB cost / -8,836 '
- 'THB loss) - and it dropped out of the universe at that point; the SOLD and THBFX records for it were never removed '
- 'and are untouched. It returns as WATCHLIST ONLY: no position, no budget, cash unchanged at 1,575.57. *** WHY THE '
- 'PAIRING MATTERS: CDNS and SNPS are the EDA duopoly and the single most useful thing about seeing them adjacent is '
- 'the valuation gap. CDNS 324.82 trades at forward P/E 37.84 and PEG 2.46; SNPS 421.50 trades at forward P/E 26.56 and '
- 'PEG 1.31 - Cadence costs 42% more on forward earnings and 88% more on PEG. The reason is in the growth: in their '
- "most recent quarters Cadence's Core EDA grew 18% and its IP business grew over 40%, while Synopsys's EDA grew "
- "'slightly over 8%' and its Design IP FELL about 6% to 454.2M. Cadence is the better business; Synopsys is the "
- 'cheaper stock. Backlog: SNPS ~11.0B (1.14x FY26 revenue guidance of 9.665B) vs CDNS 8.1B (1.29x its 6.30B) - '
- "Cadence's book covers more of its forward year. *** FIELDS THAT NEED READING WITH CARE. revG of 39.5% is TTM and is "
- 'ANSYS-INFLATED, not organic - Ansys closed Jul 17, 2025 for ~34.9B (199.91 cash + 0.3399 SNPS shares per Ansys '
- 'share, ~30.0M shares issued) funded with 10.0B of senior notes priced Apr 2025, and it contributes ~2.96B of FY2026 '
- 'revenue on a 9.665B guide. Organic EDA growth is the 8% figure, not 39.5%. r40 of 69.8 is computed on that same '
- 'inflated revG per the house formula (revG + FCF margin 30.35) and is therefore flattered by the same amount. eps '
- '4.22 and epsG -69.5% are GAAP TTM and are GUTTED BY PURCHASE ACCOUNTING, not by trading: Q2 FY26 GAAP EPS was 0.09 '
- 'against 2.24 a year earlier while NON-GAAP EPS was 3.35, and FY2026 GAAP EPS is guided 2.49-2.91 versus 14.72-14.80 '
- 'non-GAAP. The trailing P/E of 99.83 is arithmetically correct (421.50 / 4.22) but economically meaningless for the '
- 'same reason - the forward 26.56 is the number to read. roe 3.82 and roi 2.08 are depressed by 26.9B of goodwill and '
- '30.5B of equity created in the same deal. de 0.36 reflects 10.0B of acquisition debt against a company that carried '
- 'almost none before. *** ath 651.73 (Jul 30, 2025) comes from a SINGLE NON-PREFERRED SOURCE (stockscan.io) and is '
- "recorded on the same basis as RIOT's 79.50 was: it is stored because it is explicitly labelled an all-time high AND "
- 'differs from the 52-week high of 626.24, so it is not the hi52-copied-into-ath error the house rule exists to '
- 'prevent. jan2 is NULL - three history sources paginate client-side and none would serve a Jan 2026 row; not '
- 'estimated. *** CONTEXT ON RECORD: the stock is 32.7% below its 52-week high and set a 52-week low of 366.00 on Jul '
- '17, 2026 in the same Kimi K3 open-source-EDA selloff that took CDNS down 9.8% - SNPS fell ~8.2% that day. Elliott '
- 'Investment Management took a multibillion-dollar activist stake in March 2026 and its partner Jesse Cohn joined the '
- 'board on May 27. China is 10% of revenue and falling (16% FY2024 -> 12% FY2025 -> 9-10% in 1H FY2026). NEXT EARNINGS '
- 'AUG 26, 2026 AFTER THE CLOSE - COMPANY-CONFIRMED by an IR release dated Jul 22, 2026, not estimated, and nine days '
- "out. That print is a free read on whether Cadence's core-EDA growth premium is real, and it is the reason the house "
- 'call on CDNS this morning was hold-do-not-add rather than buy. Investor Day Sep 30, 2026. Universe 166 -> 167 names; '
- 'SaaS 12 -> 13. | Aug 17, 2026 · close — daily price refresh (run Aug 18, 00:30 UTC): all 167 names advanced to the '
- 'verified Aug 17, 2026 close (Monday session, market shut 4:00 PM EDT). Method per README: stockanalysis at-close '
- 'quote pages with prev-close chain validated against history tables; ~20 partial-session or unfinalized history rows '
- 'discarded in favor of the at-close quote (MTSI/WDAY/SOUN/OUST/UBER history rows were arithmetically impossible or '
- 'below their own stated lows; YUM history table corrupt again — Aug 12 row close above its high — and discarded). '
- 'Where the stockanalysis quote was CDN-frozen intraday or stale at Aug 14, the close came from a Google Finance cache '
- "with an explicit 'Closed: Aug 17, 4:00 PM GMT-4' stamp (MDB 438.70, RBRK 101.02, HNGE 87.87, AMPX 11.58, AIRJ 5.81, "
- 'TE 4.88, POET 9.40, CIFR 18.50, LMND 49.95, QNT 66.01, XE 20.46, HYLN 4.09) or from a full-session finalized history '
- 'row (RKLB 82.08, ASTS 71.14, ETN 455.40, VST 146.11, AFRM 74.52, CRCL 74.59). ROK: quote page printed 445.17 at a '
- '4:00 PM stamp but its own day-range proved a pre-close capture; finalized history row and Google at-close both said '
- '444.60, which was taken. All 11 >6% moves confirmed against an independent dated second source and allowed through '
- 'the gate: AXTI +17.6 (95.97, optical-stock surge), SNDK +8.9 (1786.85), CRDO +8.8 (282.82), AEHR +8.6 (145.61), COHR '
- '+7.8 (351.22, SiC-for-AI news), KEEL +7.4 (3.77), LUNR +7.2 (20.38), VIAV +6.3 (46.28; Google printed 46.26, primary '
- 'kept per rule), AMPX -7.4 (11.58), RCAT -6.2 (10.44), AVAV -6.1 (181.13, insider-selling news). QNT note: both '
- "Google and stockanalysis place the Aug 14 close at 63.58-63.59 vs 63.51 stored on this board; today's 66.01 is "
- 'at-close-stamped. RBRK note: Google-derived prev 102.19 sits 4 cents under stored 102.23. KLAC prev-chain matched on '
- 'the dividend-adjusted close (203.49 adj vs 203.72 raw; Aug 17 ex-div). NO NAMES UNRESOLVED. | Aug 18, 2026 cash '
- "confirmation (POEMS 'Cash Balance (Live)' screen, read on the Aug 18 BKK morning). THE DERIVED FIGURE IS NOW "
- 'REPLACED BY AN OBSERVED ONE: cash 1,575.57 -> 1,585.35, stamped Aug 17, 2026, the last session it reflects. Since '
- 'the Aug 14 COHR fill the board had been carrying a CALCULATED cash number - 3,642.13 minus the 2,066.56 COHR debit = '
- '1,575.57 - because no cash screen was supplied at the time, and that was flagged as provisional in the Aug 15 entry '
- 'and again in three subsequent replies. The broker screen now confirms it to within 9.78, which VALIDATES the '
- 'derivation method: the position-delta arithmetic was right to within 0.6%. *** THE 9.78 DIFFERENCE IS NOT ATTRIBUTED '
- 'AND IS DELIBERATELY NOT GUESSED AT. The actual balance is HIGHER than the derived one, so nothing was overspent and '
- 'no trade is missing - a missing purchase would show as cash being LOWER, not higher, and the 50 held tickers and '
- 'their costs were already reconciled to the cent against POEMS on Aug 15 (total 577,806.97). Candidate explanations, '
- 'none verified: a dividend credited between Aug 13 and Aug 17 (several holdings pay - TSM, AAPL, QCOM, IBM, KO, JNJ, '
- "V, MA - and MSFT's next ex-date is Aug 20 so that one is NOT it); a cash-sweep interest credit (9.78 on ~3,642 over "
- 'four days annualises to about 24%, which is implausible for interest, so a four-day interest credit is UNLIKELY to '
- 'be the whole explanation); or the 3,642.13 starting figure having itself been a pre-settlement display that settled '
- '9.78 higher. Settling this needs the POEMS transaction log or a statement, which was not supplied - it is 9.78 and '
- 'is recorded as unexplained rather than rationalised. *** SCREEN CAVEAT ON RECORD: the screen states verbatim that it '
- "is 'before the settlement of the outstanding contract and accrued interest/fee, if any', which is the standing POEMS "
- 'convention already documented here - the live cash line is pre-settlement and can move again as contracts settle. '
- '*** NOTHING ELSE CHANGED IN THIS UPDATE. No trades since the Aug 14 COHR buy; positions, costs, budgets and the '
- 'SELLPLAN are untouched. Prices were NOT touched either because they did not need to be: the scheduled overnight job '
- 'had already advanced all 167 names to the verified Aug 17, 2026 close (commit 70596a2) and an earnings refresh had '
- 'already landed SIDU and FN (commit 7b7dec7), so the board was current before this screen arrived. This entry is a '
- 'cash-only correction. *** CASH POSITION, STATED PLAINLY: 1,585.35 is still under one order of recent size. The last '
- 'five buys averaged roughly 1,900-2,100 each, so at this balance NO further purchase of the usual size is fundable, '
- 'and USD does not arrive until Sep 5. Against the stated 20,000 minimum for the rest of August the shortfall is '
- '18,414.65. The THB tranche (500-700k as slice one of the September injection) remains the binding item and has now '
- 'been raised in eight consecutive exchanges. | Aug 19, 2026 broker sync (POEMS Outstanding Positions + Order Status '
- 'screens, both taken 11:20 PM BKK Aug 18 = 12:20 PM ET, mid-session). RECONCILIATION CLEAN: 50 tickers on the screen, '
- '50 held on the board, zero symbol differences, all 50 rows cross-checked four ways against their own arithmetic, and '
- 'the stated totals reproduce to the cent - cost 579,877.63, MV 688,322.58, unrealised +108,444.95 (+18.70%). The only '
- 'apparent mismatch was ETN again, the same 5-cent artefact of the five-decimal displayed average price that the Aug '
- '15 sync already resolved; the stated subtotal disambiguates it to 7,879.55 and no stored value changed. EXACTLY ONE '
- 'POSITION MOVED. *** BUY TSM 5 sh, order 866417, LIMIT 412.50 day order filled at 412.4199 - inside the limit, all 5 '
- 'of 5, submitted 11:20:29 PM and done 11:20:30 PM BKK. Debit 2,070.66 = 5 x 412.4199 + 8.56 commission. TSM 107.5 -> '
- '112.5 sh, cost 37,850.87 -> 39,921.53, avg 352.10112 -> 354.85804; every one of those three ties to POEMS to the '
- 'cent, as does the new book cost of 579,877.63. Budget 50,000 now 79.8% used, 10,078.47 headroom. EXECUTION WAS GOOD '
- 'AND IS WORTH RECORDING AS SUCH: a limit order on a -4% tape did exactly what a limit order is for, and the fill came '
- 'inside the limit. That is the direct opposite of the Aug 14 COHR market order, which filled at 343.00 within 0.9% of '
- "that day's high and was down 5% by the bell. The standing advice to use limits rather than market orders has now "
- 'paid for itself once. *** ⚠️ SIZE EXCEEDED AVAILABLE CASH AND THAT IS THE ONE THING ON THIS SYNC THAT NEEDS '
- 'ATTENTION. The house recommendation was 3 SHARES, about 1,251.49, sized deliberately against the 1,585.35 of cash '
- 'the POEMS cash screen had CONFIRMED that same morning. The order was 5 shares for 2,070.66 - 65% larger, and 485.31 '
- 'MORE THAN THE CONFIRMED CASH BALANCE. Derived cash is therefore 1,585.35 - 2,070.66 = MINUS 485.31, and that is what '
- 'is now carried, stamped Aug 18 and flagged DERIVED, not observed: no cash screen accompanied this sync. A negative '
- 'figure on the board is deliberate - it makes the shortfall visible rather than rounding it to zero. THREE POSSIBLE '
- 'EXPLANATIONS, NONE VERIFIED: (a) Phillip extended settlement credit or the account has a margin facility, in which '
- 'case interest accrues; (b) funds settled in between the morning cash screen and the 11:20 PM order that the earlier '
- "screen did not show - the screen states verbatim it is 'before the settlement of the outstanding contract and "
- "accrued interest/fee, if any', so this is entirely possible; or (c) the trade is genuinely unfunded, which in a "
- 'Singapore cash account is the scenario that matters, because unsettled positions can be force-sold with the loss and '
- 'penalties borne by the account holder. US equities settle T+1, so the funding date is Aug 19. THIS NEEDS THE POEMS '
- 'CASH SCREEN AND, IF POSSIBLE, THE CONTRACT NOTE - it is not something to leave unresolved for a week. *** PRICES '
- 'DELIBERATELY NOT TOUCHED. The positions screen was taken mid-session at 12:20 PM ET, so its Current Price column '
- 'carries INTRADAY Aug 18 quotes (TSM 413.41, NVDA 219.74, MU 940.76, META 543.67), not closes. House rule is verified '
- 'closes only, so all 167 names stay at the Aug 17 close and the overnight job picks up the Aug 18 close. This means '
- "the board's market value will read lower than the 688,322.58 on the screen until that job runs - the difference is "
- 'one session of price movement, not an error. For the record the intraday screen showed the AI complex still selling '
- 'off: META -17.56% on cost, TSLA -21.74%, ORCL -14.12%, IBM -18.51%, against AMAT +114.25%, CRWD +117.59% and PANW '
- '+118.88% on the other side. *** MONTHLY 2026-08 buyUSD 27,403.71 -> 29,474.37 (lots 16); TSM month-to-date 1,873.23 '
- '-> 3,943.89, which makes it the largest single buy of August; Computing Chips byGroup 3,856.84 -> 5,927.50. '
- 'investedEverUSD 606,178.98 -> 608,249.64, THB leg incremented at the current 33.75 because no contract-note rate was '
- 'supplied - flagged as an approximation on a derived aggregate, as before. | Aug 19, 2026 price refresh - ALL 50 '
- 'INVESTED NAMES advanced to the verified Tuesday Aug 18, 2026 close, on request. Watchlist names deliberately left at '
- "the Aug 17 close for tonight's scheduled job, so the board now carries two price dates (50 at Aug 18, 117 at Aug 17) "
- 'and the per-row age badge shows which is which - the same split pattern used on Aug 14. *** CHAIN VALIDATION '
- "PERFECT: for ALL 50 names the Aug 18 source's own stated 'previous close' matched the stored Aug 17 price EXACTLY - "
- '50 out of 50, zero mismatches. That is the cleanest chain check this board has ever produced and it means no wrong '
- 'ticker and no wrong session entered anywhere in the run. *** AND IT SETTLES A QUESTION I GOT WRONG YESTERDAY. The '
- 'Aug 18 commit recorded that the POEMS positions screen was showing INTRADAY prices because the order timestamp read '
- '11:20 PM BKK, and prices were therefore not touched. THAT WAS INCORRECT. Repricing to the verified Aug 18 closes '
- "reproduces the POEMS screen almost exactly - market value 688,322.81 against the screen's 688,322.58, a 23-cent "
- 'difference attributable to fractional-share rounding, and unrealised +108,445.18 against +108,444.95. Every one of '
- "the 50 closes equals the screen's Current Price column to the cent. The positions screenshot was taken AFTER the Aug "
- '18 US close, not during the session; only the order-status screenshot was contemporaneous with the trade. The '
- 'correction is recorded rather than quietly fixed. *** THE DAY ITSELF WAS BRUTAL AND IT WAS CONCENTRATED IN EXACTLY '
- 'WHAT THIS PORTFOLIO OWNS. Market value fell 22,511.85 (-3.17%) in one session, from 710,834.65 to 688,322.81, with '
- 'FIFTEEN of the 50 holdings down 6% or more and every single one of those fifteen a decliner - not one 6%+ gainer in '
- 'the book: FN -19.4% (482.59), AAOI -15.2% (131.41), CRDO -13.0% (245.97), COHR -12.8% (306.43), AMKR -10.5% (54.84), '
- 'LITE -9.9% (873.31), SKHY -9.2% (155.62), TER -8.8% (404.29), MRVL -7.8% (216.00), MU -7.0% (940.76), GEV -6.9% '
- '(1004.53), VRT -6.8% (272.54), APH -6.6% (159.57), INTC -6.6% (96.69), IREN -6.5% (42.00). The AI hardware chain '
- 'took the worst of it: optics and connectivity (FN -19.4, AAOI -15.2, CRDO -13.0, COHR -12.8, LITE -9.9, APH -6.6), '
- 'memory (MU -7.0, SKHY -9.2), semicap and test (TER -8.8, AMKR -10.5, KLAC -5.3), and power (GEV -6.9, VRT -6.8, MPWR '
- '-5.9, ETN -5.3). By contrast the four hyperscalers barely moved - GOOGL +0.06, MSFT +0.27, AMZN -0.71 - and the only '
- 'green names in the entire book were CRM +2.7, IBM +1.7, AAPL +1.5, ONDS +0.7, MSFT +0.3, ISRG +0.2 and GOOGL +0.06. '
- 'THE LESSON IS THE ONE ALREADY ON RECORD: the portfolio is 85% a single AI theme, and on a day when that theme sells '
- 'off there is nothing else in the book to cushion it. The driver was macro, not fundamental - 10-year Treasury 4.72% '
- 'and the 30-year near its highest since 2007, plus Brent at 91.45 - which compresses exactly the long-duration, '
- 'high-multiple assets this book is made of. NO company-specific bad news was found on any of the 50. *** METHOD: '
- "stockanalysis.com quote pages accepted only when stamped 'At close: Aug 18, 2026'; GEV's page was still stamped "
- "'Market open' at 3:58 PM and was discarded in favour of a Google Finance close stamp corroborated by a settled "
- 'history row with a populated adjusted close. GOOGL also came from Google Finance. All 15 moves of 6% or more were '
- 'second-sourced before publishing. Market caps scaled by the price ratio per README. NO 52-week highs were breached - '
- 'unsurprising on a day like this; no lows were breached either, so hi52, lo52 and ath are all untouched. NOTHING ELSE '
- 'CHANGED: no trades since the Aug 18 TSM fill, positions and budgets untouched, and CASH REMAINS AT MINUS 485.31 - '
- 'still derived, still unconfirmed, and still the item that needs a POEMS cash screen today.')
+ASOF = ('Aug 18, 2026 · close — SYM (Symbotic) and AMBA (Ambarella) added to Robotic / Automation / EV as watchlist names, '
+ 'priced at the verified Aug 18 close. Fifty invested names remain at the Aug 18 close; watchlist names at Aug 17. SYM '
+ 'analyst range from stockanalysis.com (18 analysts); AMBA analyst range from MarketBeat (14 analysts) — stockanalysis '
+ 'published no AMBA high/low. Held-position prices unchanged by this edit.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -2667,6 +2263,68 @@ STOCKS = [{'an': 83,
   'roe': 27.18,
   'roi': 19.07,
   't': 'ROK'},
+ {'an': 18,
+  'ath': 87.88,
+  'budget': None,
+  'capexB': 0.099,
+  'eps': 0.06,
+  'epsG': None,
+  'ex': 'NASDAQ',
+  'fcfB': 0.79543,
+  'fpe': 61.07,
+  'fvAvg': 64.32,
+  'fvMax': 85.0,
+  'fvMin': 42.0,
+  'g': 6,
+  'gm': 21.27,
+  'hi52': 87.88,
+  'jan2': 59.5,
+  'lo52': 38.19,
+  'mcapB': 25.43,
+  'name': 'Symbotic',
+  'pe': 712.47,
+  'peg': 0.37,
+  'pm': 0.31,
+  'price': 40.46,
+  'ps': 9.25,
+  'pxd': '2026-08-18',
+  'r40': 50.6,
+  'revB': 2.65,
+  'revG': 20.6,
+  'roe': 4.39,
+  'roi': 1.05,
+  't': 'SYM'},
+ {'an': 14,
+  'ath': 96.69,
+  'budget': None,
+  'capexB': 0.01491,
+  'eps': -1.62,
+  'epsG': None,
+  'ex': 'NASDAQ',
+  'fcfB': 0.01819,
+  'fpe': 87.06,
+  'fvAvg': 101.13,
+  'fvMax': 120.0,
+  'fvMin': 80.0,
+  'g': 6,
+  'gm': 58.82,
+  'hi52': 96.69,
+  'jan2': 70.84,
+  'lo52': 48.3,
+  'mcapB': 3.15,
+  'name': 'Ambarella',
+  'pe': None,
+  'peg': None,
+  'pm': -17.18,
+  'price': 74.82,
+  'ps': 8.1,
+  'pxd': '2026-08-18',
+  'r40': 32.6,
+  'revB': 0.40519,
+  'revG': 28.1,
+  'roe': -11.82,
+  'roi': -23.89,
+  't': 'AMBA'},
  {'an': 16,
   'ath': 151.0,
   'budget': 10000,
@@ -5779,7 +5437,9 @@ POS = {'GOOGL': {'budget': 60000, 'cost': 55324.68, 'shares': 205},
  'WULF': {'budget': None, 'cost': None, 'shares': None},
  'RIOT': {'budget': None, 'cost': None, 'shares': None},
  'CRCL': {'budget': None, 'cost': None, 'shares': None},
- 'SNPS': {'budget': None, 'cost': None, 'shares': None}}
+ 'SNPS': {'budget': None, 'cost': None, 'shares': None},
+ 'SYM': {'budget': None, 'cost': None, 'shares': None},
+ 'AMBA': {'budget': None, 'cost': None, 'shares': None}}
 
 TRADES = [{'date': 'Jul 21, 2026',
   'action': 'BUY',
