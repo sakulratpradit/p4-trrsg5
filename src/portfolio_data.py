@@ -3,14 +3,19 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Aug 19, 2026 - close. CDNS and SNPS MOVED from SaaS to Computing Chips and placed side by side at the end of that '
- 'group; both keep their existing prices, positions and budgets (CDNS 6 sh / 2,007.28 cost / 5,000 budget at the Aug '
- '19 close of 314.98; SNPS watchlist-only at its Aug 17 price of 413.22). SaaS drops from 13 names to 11; Computing '
- 'Chips rises from 13 to 15. NOTHING ELSE CHANGED from the Aug 19 close build: all 50 invested names remain at the '
- 'verified Aug 19 close, watchlist names at Aug 17-18, GOOGL at 217 shares after the two limit fills of 6 @ 345.22 and '
- '6 @ 343.80, and CASH CONFIRMED AT 10,514.97 (POEMS live, stated pre-settlement; the 4,151.24 of GOOGL settling Aug '
- '20 implies about 6,363.73 after). Book ties to the broker: cost 584,028.87 exact, market value 686,813.04 vs '
- '686,812.87, a 17-cent gap from MU carrying 937.105 at the broker against a 937.11 published close.')
+ASOF = ('Aug 19, 2026 - close. AEHR REPRICED from a stale Aug 17 quote of 145.61 to its verified Aug 19 close of 107.96 '
+ "(-25.85% over two sessions: -15.36% Aug 18, -12.41% Aug 19). It closed 0.5% off the day's low on 2.9M shares - a "
+ 'full-day liquidation with no bounce - and 24/7 Wall St reported verbatim that NO COMPANY-SPECIFIC CATALYST was '
+ 'behind it for any of the four test-equipment names; AEHR simply fell twice as hard as TER, FORM and COHU after '
+ 'running +122.6% in 12 sessions. Chain-validated (107.96 / 123.25 - 1 = -12.406% vs a printed -12.41%) and '
+ "second-sourced to Google Finance, which prints the identical close, day range 107.41-124.74 and 'Closed: Aug 19, "
+ "4:00:01 PM GMT-4'. Fundamentals refreshed with it: mcap 4.73B -> 3.52B (32.62M sh x 107.96 ties exactly), P/S 49.58 "
+ '-> 70.43, forward P/E 101.76 -> 143.95 (struck on FY2027 GUIDANCE of 130-150M, not a result), gross margin 38.5 -> '
+ '35.30, ROIC -11.15 -> -12.58, FCF -0.01 -> -0.00538B, PEG 0.32 -> 0.66, and the analyst range widened from '
+ '110/115/125 on 4 analysts to 110/130/175 on 5 after the Aug 13 Jefferies initiation at 175 - which marked the top. '
+ 'hi52 corrected to 147.40, the Aug 14 INTRADAY high; the highest CLOSE was 145.61 on Aug 17. lo52 16.38. AEHR remains '
+ 'watchlist-only with no position. NOTHING ELSE CHANGED: the other 168 names keep their prices, all 50 invested names '
+ 'stay at the verified Aug 19 close, GOOGL stays at 217 shares, and cash stays confirmed at 10,514.97.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -810,36 +815,36 @@ STOCKS = [{'an': 83,
   'roe': 10.01,
   'roi': 10.71,
   't': 'AMKR'},
- {'an': 4,
-  'ath': 134.06,
+ {'an': 5,
+  'ath': 147.4,
   'budget': None,
   'capexB': 0.0,
   'eps': -0.23,
   'epsG': None,
   'ex': 'NASDAQ',
-  'fcfB': -0.01,
-  'fpe': 101.76,
-  'fvAvg': 115.0,
-  'fvMax': 125,
-  'fvMin': 110,
+  'fcfB': -0.00538,
+  'fpe': 143.95,
+  'fvAvg': 130.0,
+  'fvMax': 175.0,
+  'fvMin': 110.0,
   'g': 2,
-  'gm': 38.5,
-  'hi52': 145.61,
+  'gm': 35.3,
+  'hi52': 147.4,
   'jan2': 26.32,
-  'lo52': 15.94,
-  'mcapB': 4.7329,
+  'lo52': 16.38,
+  'mcapB': 3.52,
   'name': 'Aehr Test Systems',
   'pe': None,
-  'peg': 0.32,
+  'peg': 0.66,
   'pm': -14.25,
-  'price': 145.61,
-  'ps': 49.58,
-  'pxd': '2026-08-17',
+  'price': 107.96,
+  'ps': 70.43,
+  'pxd': '2026-08-19',
   'r40': -25.97,
   'revB': 0.05,
   'revG': -15.21,
   'roe': -4.16,
-  'roi': -11.15,
+  'roi': -12.58,
   't': 'AEHR'},
  {'an': 10,
   'ath': 160.27,
