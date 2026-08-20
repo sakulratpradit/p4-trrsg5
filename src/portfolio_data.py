@@ -3,16 +3,15 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Aug 19, 2026 - close. CDNS BUDGET RAISED 5,000 -> 10,000 as instructed; at a cost of 2,007.28 that takes utilisation '
- 'from 40.1% to 20.1% and headroom from 2,992.72 to 7,992.72. ALPHABET WAS NOT CHANGED: the instruction was to raise '
- 'it TO 60,000 and it was ALREADY exactly 60,000, so there was nothing to do - GOOGL sits at 59,475.92 of cost against '
- 'that 60,000, i.e. 99.1% used with 524.08 left, and it needs a NEW target number before any further GOOGL buying is '
- 'possible. Flagged rather than guessed. Note also a pre-existing inconsistency found while making this edit: four '
- 'rows carry a STOCKS.budget that disagrees with the authoritative POS budget the renderer actually reads - CDNS (None '
- 'vs 5,000, now both 10,000), ZETA (None vs 5,000), CRM (None vs 5,000) and ORCL (5,000 vs 10,000). Only CDNS was '
- 'reconciled here; the other three are left alone and recorded for a separate decision. NOTHING ELSE CHANGED: all 50 '
+ASOF = ('Aug 19, 2026 - close. ALPHABET BUDGET RAISED 60,000 -> 70,000. At 59,475.92 of cost that takes utilisation from '
+ '99.1% to 84.97% and headroom from 524.08 to 10,524.08 - about 30 shares of room at the Aug 19 close of 344.72. GOOGL '
+ 'is 217 shares and 10.9% of the 686,813.04 book by market value; filling the new budget in full would take it to '
+ 'roughly 12.4%, which would make it the single largest position ahead of NVDA. CDNS remains at the 10,000 set earlier '
+ 'today (2,007.28 cost, 20.1% used). Still outstanding and NOT changed: ORCL carries two conflicting budgets - 5,000 '
+ 'on the STOCKS row against 10,000 on the authoritative POS row the dashboard renders - plus ZETA and CRM carry a null '
+ 'STOCKS.budget against a 5,000 POS budget; all three are left alone pending a decision. NOTHING ELSE CHANGED: all 50 '
  'invested names remain at the verified Aug 19 close, AEHR stays at its corrected 107.96, GOOGL stays at 217 shares, '
- 'and cash stays confirmed at 10,514.97.')
+ 'and cash stays confirmed at 10,514.97 (about 6,363.73 after the 4,151.24 of GOOGL settles).')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -39,7 +38,7 @@ GROUPS = ['Hyperscalers',
 
 STOCKS = [{'an': 83,
   'ath': 408.61,
-  'budget': 60000,
+  'budget': 70000,
   'capexB': 109.92,
   'eps': 13.11,
   'epsG': 46.4,
@@ -5277,7 +5276,7 @@ STOCKS = [{'an': 83,
   'roi': 11.58,
   't': 'CRCL'}]
 
-POS = {'GOOGL': {'budget': 60000, 'cost': 59475.92, 'shares': 217},
+POS = {'GOOGL': {'budget': 70000, 'cost': 59475.92, 'shares': 217},
  'AMZN': {'budget': 50000, 'cost': 48600.75, 'shares': 209},
  'MSFT': {'budget': 60000, 'cost': 52878.96, 'shares': 117},
  'META': {'budget': 50000, 'cost': 39239.51, 'shares': 59.5},
