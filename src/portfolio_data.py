@@ -3,19 +3,16 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Aug 19, 2026 - close. AEHR REPRICED from a stale Aug 17 quote of 145.61 to its verified Aug 19 close of 107.96 '
- "(-25.85% over two sessions: -15.36% Aug 18, -12.41% Aug 19). It closed 0.5% off the day's low on 2.9M shares - a "
- 'full-day liquidation with no bounce - and 24/7 Wall St reported verbatim that NO COMPANY-SPECIFIC CATALYST was '
- 'behind it for any of the four test-equipment names; AEHR simply fell twice as hard as TER, FORM and COHU after '
- 'running +122.6% in 12 sessions. Chain-validated (107.96 / 123.25 - 1 = -12.406% vs a printed -12.41%) and '
- "second-sourced to Google Finance, which prints the identical close, day range 107.41-124.74 and 'Closed: Aug 19, "
- "4:00:01 PM GMT-4'. Fundamentals refreshed with it: mcap 4.73B -> 3.52B (32.62M sh x 107.96 ties exactly), P/S 49.58 "
- '-> 70.43, forward P/E 101.76 -> 143.95 (struck on FY2027 GUIDANCE of 130-150M, not a result), gross margin 38.5 -> '
- '35.30, ROIC -11.15 -> -12.58, FCF -0.01 -> -0.00538B, PEG 0.32 -> 0.66, and the analyst range widened from '
- '110/115/125 on 4 analysts to 110/130/175 on 5 after the Aug 13 Jefferies initiation at 175 - which marked the top. '
- 'hi52 corrected to 147.40, the Aug 14 INTRADAY high; the highest CLOSE was 145.61 on Aug 17. lo52 16.38. AEHR remains '
- 'watchlist-only with no position. NOTHING ELSE CHANGED: the other 168 names keep their prices, all 50 invested names '
- 'stay at the verified Aug 19 close, GOOGL stays at 217 shares, and cash stays confirmed at 10,514.97.')
+ASOF = ('Aug 19, 2026 - close. CDNS BUDGET RAISED 5,000 -> 10,000 as instructed; at a cost of 2,007.28 that takes utilisation '
+ 'from 40.1% to 20.1% and headroom from 2,992.72 to 7,992.72. ALPHABET WAS NOT CHANGED: the instruction was to raise '
+ 'it TO 60,000 and it was ALREADY exactly 60,000, so there was nothing to do - GOOGL sits at 59,475.92 of cost against '
+ 'that 60,000, i.e. 99.1% used with 524.08 left, and it needs a NEW target number before any further GOOGL buying is '
+ 'possible. Flagged rather than guessed. Note also a pre-existing inconsistency found while making this edit: four '
+ 'rows carry a STOCKS.budget that disagrees with the authoritative POS budget the renderer actually reads - CDNS (None '
+ 'vs 5,000, now both 10,000), ZETA (None vs 5,000), CRM (None vs 5,000) and ORCL (5,000 vs 10,000). Only CDNS was '
+ 'reconciled here; the other three are left alone and recorded for a separate decision. NOTHING ELSE CHANGED: all 50 '
+ 'invested names remain at the verified Aug 19 close, AEHR stays at its corrected 107.96, GOOGL stays at 217 shares, '
+ 'and cash stays confirmed at 10,514.97.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -600,7 +597,7 @@ STOCKS = [{'an': 83,
   't': 'GFS'},
  {'an': 26,
   'ath': 416.69,
-  'budget': None,
+  'budget': 10000,
   'capexB': 0.17,
   'eps': 4.29,
   'epsG': 8.9,
@@ -5348,7 +5345,7 @@ POS = {'GOOGL': {'budget': 60000, 'cost': 59475.92, 'shares': 217},
  'IONQ': {'budget': None, 'cost': None, 'shares': None},
  'ORCL': {'budget': 10000, 'cost': 8313.62, 'shares': 50},
  'ZETA': {'budget': 5000, 'cost': 2004.33, 'shares': 111},
- 'CDNS': {'budget': 5000, 'cost': 2007.28, 'shares': 6},
+ 'CDNS': {'budget': 10000, 'cost': 2007.28, 'shares': 6},
  'CRM': {'budget': 5000, 'cost': 3749.91, 'shares': 21},
  'IBM': {'budget': 5000, 'cost': 1713.07, 'shares': 6},
  'ADBE': {'budget': None, 'cost': None, 'shares': None},
