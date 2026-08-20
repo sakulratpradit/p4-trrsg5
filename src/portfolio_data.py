@@ -3,27 +3,14 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Aug 19, 2026 - close. All 50 invested names repriced to the verified Aug 19 close; the 117 watchlist names are '
- 'unchanged at Aug 17-18. GOOGL 205 -> 217 shares: two LIMIT day orders both filled INSIDE the limit on the Aug 19 '
- 'session (955510, 6 @ 345.22 vs a 345.50 limit; 963036, 6 @ 343.80 vs a 345.00 limit), 4,151.24 all-in including two '
- '8.56 commissions. GOOGL budget is now 99.1% used with 524.08 left. CASH IS CONFIRMED AT 10,514.97 from the live '
- 'POEMS balance - the -485.31 shortfall carried since Aug 18 is RESOLVED; that figure is stated by POEMS as '
- 'PRE-settlement, so the 4,151.24 of GOOGL settling Aug 20 implies about 6,363.73 after settlement. The implied cash '
- 'injection is 11,000.28 (1,585.35 confirmed Aug 17, less the 2,070.66 TSM debit that settled Aug 19, to reach '
- '10,514.97) - DERIVED, not confirmed. METHOD: Aug 19 closes taken from stockanalysis history tables with the '
- 'Aug18->Aug19 change chain-validated on every row; where a history table was stale or internally impossible the '
- 'at-close quote page was used instead and second-sourced (AMKR and AAOI via GuruFocus and Trading Economics; CGNX '
- 'history printed a close of 62.08 BELOW its own printed low of 62.58 on 174,502 shares and was discarded for the '
- '60.64 at-close quote; BWXT, FN and ZETA history tables had no Aug 19 row and came from at-close quote pages, each '
- 'reconciling to the cent against the Aug 18 close). ONDS WAS CORRECTED BEFORE PUBLISHING: the history table showed '
- '8.84 / -2.43%, but the at-close quote page, MarketBeat and the POEMS screen all show 8.90 / -1.77%, and 9.06 - 0.16 '
- '= 8.90 reconciles - the 8.84 row was partial. That single row was the entire reconciliation gap. RECONCILIATION '
- 'AGAINST THE BROKER: computed cost 584,028.87 vs POEMS 584,028.87 - exact; computed market value 686,813.04 vs POEMS '
- '686,812.87 - 17 cents, from MU carrying 937.105 at the broker against a 937.11 published close on 35.45 fractional '
- 'shares. No 52-week high or low was breached, so hi52, lo52 and ath are untouched. THB figures use the 33.75 '
- "reference rate in TOTALS, not a confirmed transaction rate, and GOOGL's per-ticker purchase FX of 32.2446 is left "
- 'unchanged because the actual conversion rate for these two fills is not known. Positions and budgets are otherwise '
- 'untouched.')
+ASOF = ('Aug 19, 2026 - close. CDNS and SNPS MOVED from SaaS to Computing Chips and placed side by side at the end of that '
+ 'group; both keep their existing prices, positions and budgets (CDNS 6 sh / 2,007.28 cost / 5,000 budget at the Aug '
+ '19 close of 314.98; SNPS watchlist-only at its Aug 17 price of 413.22). SaaS drops from 13 names to 11; Computing '
+ 'Chips rises from 13 to 15. NOTHING ELSE CHANGED from the Aug 19 close build: all 50 invested names remain at the '
+ 'verified Aug 19 close, watchlist names at Aug 17-18, GOOGL at 217 shares after the two limit fills of 6 @ 345.22 and '
+ '6 @ 343.80, and CASH CONFIRMED AT 10,514.97 (POEMS live, stated pre-settlement; the 4,151.24 of GOOGL settling Aug '
+ '20 implies about 6,363.73 after). Book ties to the broker: cost 584,028.87 exact, market value 686,813.04 vs '
+ '686,812.87, a 17-cent gap from MU carrying 937.105 at the broker against a 937.11 published close.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -606,6 +593,68 @@ STOCKS = [{'an': 83,
   'roe': 6.17,
   'roi': 6.1,
   't': 'GFS'},
+ {'an': 26,
+  'ath': 416.69,
+  'budget': None,
+  'capexB': 0.17,
+  'eps': 4.29,
+  'epsG': 8.9,
+  'ex': 'NASDAQ',
+  'fcfB': 1.43,
+  'fpe': 40.51,
+  'fvAvg': 394.79,
+  'fvMax': 470,
+  'fvMin': 275,
+  'g': 1,
+  'gm': 86.08,
+  'hi52': 416.69,
+  'jan2': 315.7,
+  'lo52': 262.75,
+  'mcapB': 86.8527,
+  'name': 'Cadence Design Systems',
+  'pe': 76.9,
+  'peg': 2.81,
+  'pm': 21.18,
+  'price': 314.98,
+  'ps': 17.22,
+  'pxd': '2026-08-19',
+  'r40': 39.3,
+  'revB': 5.53,
+  'revG': 13.4,
+  'roe': 20.66,
+  'roi': 19.7,
+  't': 'CDNS'},
+ {'an': 25,
+  'ath': 651.73,
+  'budget': None,
+  'capexB': 0.163,
+  'eps': 4.22,
+  'epsG': -69.5,
+  'ex': 'NASDAQ',
+  'fcfB': 2.63,
+  'fpe': 26.56,
+  'fvAvg': 564.43,
+  'fvMax': 650.0,
+  'fvMin': 414.77,
+  'g': 1,
+  'gm': 82.6,
+  'hi52': 626.24,
+  'jan2': None,
+  'lo52': 366.0,
+  'mcapB': 79.1245,
+  'name': 'Synopsys',
+  'pe': 99.83,
+  'peg': 1.31,
+  'pm': 8.91,
+  'price': 413.22,
+  'ps': 9.27,
+  'pxd': '2026-08-17',
+  'r40': 69.8,
+  'revB': 8.68,
+  'revG': 39.5,
+  'roe': 3.82,
+  'roi': 2.08,
+  't': 'SNPS'},
  {'an': 44,
   'ath': 1999.96,
   'budget': 30000,
@@ -2869,68 +2918,6 @@ STOCKS = [{'an': 83,
   'roe': -0.24,
   'roi': 1.98,
   't': 'ZETA'},
- {'an': 26,
-  'ath': 416.69,
-  'budget': None,
-  'capexB': 0.17,
-  'eps': 4.29,
-  'epsG': 8.9,
-  'ex': 'NASDAQ',
-  'fcfB': 1.43,
-  'fpe': 40.51,
-  'fvAvg': 394.79,
-  'fvMax': 470,
-  'fvMin': 275,
-  'g': 10,
-  'gm': 86.08,
-  'hi52': 416.69,
-  'jan2': 315.7,
-  'lo52': 262.75,
-  'mcapB': 86.8527,
-  'name': 'Cadence Design Systems',
-  'pe': 76.9,
-  'peg': 2.81,
-  'pm': 21.18,
-  'price': 314.98,
-  'ps': 17.22,
-  'pxd': '2026-08-19',
-  'r40': 39.3,
-  'revB': 5.53,
-  'revG': 13.4,
-  'roe': 20.66,
-  'roi': 19.7,
-  't': 'CDNS'},
- {'an': 25,
-  'ath': 651.73,
-  'budget': None,
-  'capexB': 0.163,
-  'eps': 4.22,
-  'epsG': -69.5,
-  'ex': 'NASDAQ',
-  'fcfB': 2.63,
-  'fpe': 26.56,
-  'fvAvg': 564.43,
-  'fvMax': 650.0,
-  'fvMin': 414.77,
-  'g': 10,
-  'gm': 82.6,
-  'hi52': 626.24,
-  'jan2': None,
-  'lo52': 366.0,
-  'mcapB': 79.1245,
-  'name': 'Synopsys',
-  'pe': 99.83,
-  'peg': 1.31,
-  'pm': 8.91,
-  'price': 413.22,
-  'ps': 9.27,
-  'pxd': '2026-08-17',
-  'r40': 69.8,
-  'revB': 8.68,
-  'revG': 39.5,
-  'roe': 3.82,
-  'roi': 2.08,
-  't': 'SNPS'},
  {'an': 52,
   'ath': 274.0,
   'budget': None,
