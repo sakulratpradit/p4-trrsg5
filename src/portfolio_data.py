@@ -3,28 +3,16 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Aug 20, 2026 - close. All 50 invested names repriced to the verified Aug 20 close; the 119 watchlist names are '
- 'unchanged. CDNS 6 -> 12 shares: order 1034425, LIMIT 317.50 day order filled at 317.0283 INSIDE the limit, 1,910.73 '
- 'all-in including the 8.56 commission. An earlier order at a 316.46 limit was WITHDRAWN and re-entered 1.04 higher 31 '
- 'seconds later; CDNS closed at 313.59, so those shares were 1.09% underwater by the bell. CASH CONFIRMED AT 8,604.24 '
- '- and this CORRECTS a projection I made twice: 8,604.24 = 10,514.97 - 1,910.73 EXACTLY, with no GOOGL deduction in '
- 'between, which means the Aug 19 balance of 10,514.97 was ALREADY net of the 4,151.24 of GOOGL. My earlier statement '
- 'that cash would fall to about 6,363.73 after settlement was WRONG; actual available cash is 8,604.24, roughly 2,240 '
- 'higher than I told the user. METHOD: Aug 20 closes from stockanalysis history tables with the Aug19->Aug20 change '
- 'chain-validated on every row. Eight rows were discarded and replaced from at-close quote pages, each second-sourced: '
- 'FN printed a close of 452.52 BELOW its own printed low of 453.21 on 93,526 shares (arithmetically impossible); MPWR '
- 'printed a 2.57-dollar O/H/L/C span on 10,610 shares against 710,532 the prior day; APH printed 348,616 shares '
- 'against 6,019,826; AMKR and CGNX rows failed self-reconciliation; IREN, LRCX and MRVL history closes disagreed with '
- 'the quote page by 2-14 cents and two independent sources favoured the quote page. SKHY had no Aug 20 row at all. '
- 'Conversely CEG, GEV and VST quote pages were STALE at Aug 19 and their clean history rows were used instead. '
- 'RECONCILIATION AGAINST THE BROKER: computed cost 585,939.60 vs POEMS 585,939.60 - EXACT; market value 685,952.05 vs '
- '685,954.30 - a 2.25 gap fully accounted for by three sub-cent prices (MU 974.33 at the broker vs a 974.29 published '
- 'close on 35.45 shares = 1.42; ZETA 27.85 vs 27.84 on 111 shares = 1.11; AMD 469.455 vs 469.46 on 55 shares = -0.28). '
- 'NO 52-WEEK HIGH OR LOW WAS BREACHED on the close, so hi52, lo52 and ath are untouched. Worth recording though: BWXT '
- 'printed a new 52-week INTRADAY low of 154.59 and closed at 156.44, above it - the dashboard tracks closes, not '
- 'intraday extremes, so the field is correctly unchanged. Only one name moved 6%+: AVAV -7.50% to 159.79, '
- 'second-sourced to MarketBeat, CAUSE NOT FOUND - no earnings, only routine shareholder-investigation notices. THB '
- 'figures use the 33.75 reference rate in TOTALS, not a confirmed transaction rate.')
+ASOF = ('Aug 20, 2026 - close. BUDGET FIELDS RECONCILED - the last open item from the Aug 20 budget work. ORCL is CONFIRMED '
+ 'BY THE USER at 10,000, which is what the authoritative POS row already carried, so the dashboard was rendering it '
+ 'correctly all along; only the stale STOCKS mirror said 5,000 and it is now 10,000. ZETA and CRM carried a null '
+ 'STOCKS mirror against a 5,000 POS budget and are now both 5,000. All 169 rows now agree between STOCKS.budget and '
+ 'POS.budget. NO BUDGET AMOUNT ACTUALLY CHANGED and nothing on the rendered dashboard moves: the renderer reads '
+ 'POS[t].budget, which was already correct for all three. ORCL stands at 8,313.62 of cost against 10,000 - 83.1% used, '
+ '1,686.38 left. Prior budget work this session stands: CDNS 10,000 (3,918.01 cost after the Aug 20 fill, 39.2% used) '
+ 'and Alphabet 70,000 (59,475.92 cost, 85.0% used). NOTHING ELSE CHANGED: all 50 invested names remain at the verified '
+ 'Aug 20 close, CDNS stays at 12 shares, and cash stays confirmed at 8,604.24 - which, per the Aug 20 build, was 2,240 '
+ 'HIGHER than the post-settlement figure I had projected, because the Aug 19 balance was already net of GOOGL.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -2872,7 +2860,7 @@ STOCKS = [{'an': 83,
   't': 'IONQ'},
  {'an': 43,
   'ath': 345.72,
-  'budget': 5000,
+  'budget': 10000,
   'capexB': 55.66,
   'eps': 5.83,
   'epsG': 34.3,
@@ -2903,7 +2891,7 @@ STOCKS = [{'an': 83,
   't': 'ORCL'},
  {'an': 14,
   'ath': 29.62,
-  'budget': None,
+  'budget': 5000,
   'capexB': 0.01,
   'eps': -0.01,
   'epsG': None,
@@ -2934,7 +2922,7 @@ STOCKS = [{'an': 83,
   't': 'ZETA'},
  {'an': 52,
   'ath': 274.0,
-  'budget': None,
+  'budget': 5000,
   'capexB': 0.56,
   'eps': 8.61,
   'epsG': 34.8,
