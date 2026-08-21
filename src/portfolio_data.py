@@ -3,16 +3,25 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Aug 20, 2026 - close. BUDGET FIELDS RECONCILED - the last open item from the Aug 20 budget work. ORCL is CONFIRMED '
- 'BY THE USER at 10,000, which is what the authoritative POS row already carried, so the dashboard was rendering it '
- 'correctly all along; only the stale STOCKS mirror said 5,000 and it is now 10,000. ZETA and CRM carried a null '
- 'STOCKS mirror against a 5,000 POS budget and are now both 5,000. All 169 rows now agree between STOCKS.budget and '
- 'POS.budget. NO BUDGET AMOUNT ACTUALLY CHANGED and nothing on the rendered dashboard moves: the renderer reads '
- 'POS[t].budget, which was already correct for all three. ORCL stands at 8,313.62 of cost against 10,000 - 83.1% used, '
- '1,686.38 left. Prior budget work this session stands: CDNS 10,000 (3,918.01 cost after the Aug 20 fill, 39.2% used) '
- 'and Alphabet 70,000 (59,475.92 cost, 85.0% used). NOTHING ELSE CHANGED: all 50 invested names remain at the verified '
- 'Aug 20 close, CDNS stays at 12 shares, and cash stays confirmed at 8,604.24 - which, per the Aug 20 build, was 2,240 '
- 'HIGHER than the post-settlement figure I had projected, because the Aug 19 balance was already net of GOOGL.')
+ASOF = ('Aug 20, 2026 - close. THREE CONVICTION BUDGETS RAISED to fund a staged 3-month programme: NVDA 80,000 -> 85,000 '
+ '(+5,000), Alphabet 70,000 -> 80,000 (+10,000), TSM 50,000 -> 65,000 (+15,000). Headroom goes NVDA 2,659.04 -> '
+ '7,659.04, GOOGL 10,524.08 -> 20,524.08, TSM 10,078.47 -> 25,078.47. THE SKEW IS DELIBERATE and inverts an '
+ 'equal-10,000-each split: modelling showed the three-name share of the book lands at 33.50% on ANY split of the same '
+ '30,000, so the split changes only WHICH name carries the concentration, not how much there is. TSM takes the most '
+ 'because at 6.82% it is the least concentrated, its budget was least used, and it is the only one that wins '
+ "regardless of which AI company wins - NVIDIA, Broadcom, AMD, Marvell, Apple and Google's TPUs are all fabricated "
+ 'there. NVDA takes the least because it is already the largest position at 12.99% and reports Wednesday Aug 26, '
+ 'company-confirmed - NO NVDA BUYING BEFORE THAT PRINT. Planned deployment is 10,000 a month on a fixed day regardless '
+ 'of price: Sep TSM 5,000 / GOOGL 3,000 / NVDA 2,000, then Oct and Nov TSM 5,000 / GOOGL 3,500 / NVDA 1,500. FUNDING '
+ 'GAP FLAGGED AND UNRESOLVED: cash is 8,604.24 against a 30,000 plan, so about 21,396 of new cash is needed over three '
+ 'months, roughly 7,132 a month; if it does not arrive, halve every cell to a 15,000 total. The book is 85.73% one '
+ 'theme and deploying the full 30,000 moves that to only 86.33% - the real concentration question is whether to SELL '
+ 'something, not whether to add. MERGE NOTE: this build was rebased onto the scheduled earnings refresh f5f1e5f (DE '
+ 'FQ3 reported Aug 20 BMO, and an APLD FY26 backfill), which landed on the remote while this edit was in progress. '
+ 'That refresh touched the same two files; rather than overwrite it, this change was rewound, fast-forwarded onto it '
+ 'and re-applied on top. DE and APLD are both watchlist-only with no position, so the book reconciliation against '
+ 'POEMS is unaffected. NO SHARES WERE BOUGHT and no price changed: all 50 invested names remain at the verified Aug 20 '
+ 'close, CDNS stays at 12 shares, cash stays at 8,604.24. Budgets are ceilings, not targets.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -39,7 +48,7 @@ GROUPS = ['Hyperscalers',
 
 STOCKS = [{'an': 83,
   'ath': 408.61,
-  'budget': 70000,
+  'budget': 80000,
   'capexB': 109.92,
   'eps': 13.11,
   'epsG': 46.4,
@@ -194,7 +203,7 @@ STOCKS = [{'an': 83,
   't': 'AAPL'},
  {'an': 79,
   'ath': 236.54,
-  'budget': 80000,
+  'budget': 85000,
   'capexB': 6.57,
   'eps': 6.53,
   'epsG': 110.6,
@@ -225,7 +234,7 @@ STOCKS = [{'an': 83,
   't': 'NVDA'},
  {'an': 25,
   'ath': 479.0,
-  'budget': 50000,
+  'budget': 65000,
   'capexB': 46.87,
   'eps': 13.44,
   'epsG': 53.4,
@@ -5277,13 +5286,13 @@ STOCKS = [{'an': 83,
   'roi': 11.58,
   't': 'CRCL'}]
 
-POS = {'GOOGL': {'budget': 70000, 'cost': 59475.92, 'shares': 217},
+POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'AMZN': {'budget': 50000, 'cost': 48600.75, 'shares': 209},
  'MSFT': {'budget': 60000, 'cost': 52878.96, 'shares': 117},
  'META': {'budget': 50000, 'cost': 39239.51, 'shares': 59.5},
  'AAPL': {'budget': 25000, 'cost': 11437.61, 'shares': 46},
- 'NVDA': {'budget': 80000, 'cost': 77340.96, 'shares': 411},
- 'TSM': {'budget': 50000, 'cost': 39921.53, 'shares': 112.5},
+ 'NVDA': {'budget': 85000, 'cost': 77340.96, 'shares': 411},
+ 'TSM': {'budget': 65000, 'cost': 39921.53, 'shares': 112.5},
  'AVGO': {'budget': 40000, 'cost': 28571.53, 'shares': 84},
  'AMD': {'budget': 25000, 'cost': 13789.22, 'shares': 55},
  'MRVL': {'budget': 25000, 'cost': 7872.66, 'shares': 48.5},
