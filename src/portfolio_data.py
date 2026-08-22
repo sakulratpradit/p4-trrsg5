@@ -3,51 +3,28 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Aug 21, 2026 · close — daily price refresh (run Aug 22, 00:30 UTC): 128 of 169 names advanced to the verified Aug 21 '
- 'close; 41 deliberately left at their prior date. Method per README: at-close stockanalysis quote pages with the '
- 'prev-close chain validated against history tables; ~25 partial-session history rows discarded in favor of the '
- 'at-close quote (FSLR, TEM, NU and AMBA history rows were arithmetically impossible and discarded); stale quote pages '
- 'fell back to full-session history rows (GOOGL, CEG, VST, ETN, GEV, APH, OKLO, ASTS, SE, WULF, LMND) or to Google '
- 'Finance / marketscreener closed-stamp prints (GFS, POET, VIAV, AMPX, CGNX). All 20 applied moves >=6% vs the prior '
- 'board were confirmed against an independent dated second source, largest: AXTI -26.3 (70.74), MTSI -18.6 (266.69), '
- 'FORM -17.4 (114.16), PENG -16.6 (52.62), VIAV -16.0 (38.90), TSEM -15.6 (222.59), STX -14.6 (850.00), WDC -14.3 '
- '(459.44), GLW -13.5 (149.84), COHU -13.2 (54.37), all mostly multi-day catch-up from the stale Aug 17 base, day '
- 'moves themselves small. HELD BACK — 37 names whose fetched Aug 21 close moved >=6% vs the board but could NOT be '
- 'second-sourced (the session-wide search budget ran out mid-run; per the gate rule an unverified >=6% move is '
- 'reverted, not shipped): TEM (fetched 72.69 vs board 51.64, +40.8%), OUST (fetched 38.42 vs board 48.13, -20.2%), '
- 'NBIS (fetched 219.13 vs board 268.85, -18.5%), CRCL (fetched 87.98 vs board 74.59, +17.9%), CRWV (fetched 87.85 vs '
- 'board 106, -17.1%), LWLG (fetched 6.19 vs board 7.42, -16.6%), CIFR (fetched 15.77 vs board 18.5, -14.8%), STRL '
- '(fetched 516.81 vs board 603.89, -14.4%), QNT (fetched 56.6 vs board 66.01, -14.3%), NVT (fetched 151.98 vs board '
- '177.21, -14.2%), AIRJ (fetched 5.02 vs board 5.81, -13.6%), BE (fetched 201.45 vs board 232.16, -13.2%), APLD '
- '(fetched 27.21 vs board 31.18, -12.7%), HOOD (fetched 108.13 vs board 96.25, +12.3%), KEEL (fetched 3.32 vs board '
- '3.77, -11.9%), WULF (fetched 15.53 vs board 17.6, -11.8%), CORZ (fetched 17.81 vs board 20.13, -11.5%), PWR (fetched '
- '639.34 vs board 722.31, -11.5%), CIEN (fetched 395.79 vs board 445.18, -11.1%), FLNC (fetched 11.34 vs board 12.63, '
- '-10.2%), LUNR (fetched 18.32 vs board 20.38, -10.1%), POWL (fetched 197.67 vs board 218.73, -9.6%), CRSP (fetched '
- '59.5 vs board 54.28, +9.6%), NOW (fetched 128.48 vs board 117.7, +9.2%), MYRG (fetched 310.87 vs board 340.78, '
- '-8.8%), PL (fetched 22.29 vs board 24.38, -8.6%), TEAM (fetched 171.81 vs board 158.34, +8.5%), ADBE (fetched 275.3 '
- 'vs board 254.04, +8.4%), HUT (fetched 80.86 vs board 88.04, -8.2%), RCAT (fetched 9.62 vs board 10.44, -7.8%), NRG '
- '(fetched 113.11 vs board 122.37, -7.6%), MELI (fetched 1922.73 vs board 1787.57, +7.6%), TMDX (fetched 94.77 vs '
- 'board 88.35, +7.3%), LMND (fetched 53.37 vs board 49.95, +6.8%), HUBB (fetched 470.03 vs board 504.3, -6.8%), SPCX '
- '(fetched 136.97 vs board 146.23, -6.3%), CAT (fetched 827.9 vs board 881.65, -6.1%). These stay at their prior '
- 'close/pxd and should catch up on the next run. FOUR UNRESOLVED (no trustworthy Aug 21 print at all): SIDU — quote '
- 'page stale (Aug 20 stamp), history table ends Aug 14 with an internally impossible row; HYLN — quote stamped Aug 19, '
- 'statistics intraday Aug 20, history ends Aug 14 — no Aug 21 print anywhere; POWI — only intraday prints found '
- '(3:25/3:33 PM EDT); history ends Aug 18 — no closing print; DE — every fetch provenance-blocked after the session '
- 'search budget ran out. Note: HOOD fetched 108.13 (+13.7% day, Bitcoin rally, corroborated by press on the quote '
- 'page) and TEM fetched 72.69 (Merck/Moderna cancer-vaccine news) were among the held-back — both looked real but had '
- 'no independent dated second source this session.  *** BROKER RECONCILIATION LAYER, applied on top of the scheduled '
- 'refresh: the 50 INVESTED names were independently re-verified against a POEMS positions screen for the Aug 21 close, '
- 'and 49 of the 50 matched the refresh exactly. The one exception was APH, where the stockanalysis history table '
- 'printed 156.98 and its own at-close quote page printed 157.01; the broker screen carries 157.01 on 16 shares for a '
- 'market value of 2,512.16, which settles it, so APH is corrected 156.98 -> 157.01. That single 3-cent field was the '
- 'ENTIRE reconciliation gap: with it applied, cost ties at 585,939.60 and market value at 687,458.90 against POEMS '
- 'with ZERO delta on both lines, P/L +101,519.30 / +17.33%. A GuruFocus cross-check on APH returned 169.18, matching '
- 'neither the level nor the direction of any other source, and was discarded as a bad read rather than treated as '
- 'evidence. NO TRADES on Aug 21 - cost is unchanged, so the MSFT purchase discussed for the Aug 21 open was NOT '
- "executed; cash stays 8,604.24 with the broker reporting 'No records found' for intraday transactions, and its asof "
- 'is advanced to Aug 21. FLAG FOR MONDAY: AAOI closed 124.82 but fell a further ~10% AFTER HOURS on a 600 million '
- 'dollar stock offering - not in the Aug 21 close, lands in the Aug 24 session. The three conviction budgets (NVDA '
- '85,000 / GOOGL 80,000 / TSM 65,000) and CDNS at 12 shares are untouched.')
+ASOF = ('Aug 21, 2026 - close. S (SentinelOne, NYSE) and OKTA (Okta, NASDAQ) ADDED to Cybersecurity, placed side by side at '
+ 'the end of that group, which goes from 6 names to 8: CRWD, PANW, ZS, FTNT, NET, RBRK, S, OKTA. Both are '
+ 'WATCHLIST-ONLY with no position, no budget and no shares. Priced at the verified Aug 21 close: S 21.19 (+1.19%), '
+ "OKTA 135.14 (+0.73%), each chain-validated against the Aug 20 close and second-sourced. SentinelOne's history table "
+ 'was STALE with no Aug 21 row at all, so its close came from the at-close quote page and was confirmed twice - a '
+ "cache-busted history render and companiesmarketcap - and sits inside the day's 20.43-21.28 range on normal volume. "
+ '*** BOTH REPORT NEXT WEEK, COMPANY-CONFIRMED: OKTA on WEDNESDAY AUG 26 and S on THURSDAY AUG 27. That is the same '
+ 'week as NVDA, SNPS and CRM on Aug 26 and MRVL on Aug 27 - five confirmed prints in two days. *** The two are NOT '
+ 'competitors and sit on different layers: SentinelOne is endpoint and XDR threat detection and response; Okta is '
+ 'identity and access management, the login control plane. Their financial profiles are near opposites - Okta is '
+ 'GAAP-PROFITABLE (TTM EPS +1.38, net margin 8.24%, 911M of free cash flow) growing 11.7%, while SentinelOne is GAAP '
+ 'LOSS-MAKING (EPS -0.96, net margin -30.38%, 61.8M of free cash flow) growing 21.4%. S therefore carries pe=None; any '
+ 'trailing P/E quoted for it anywhere is fictitious. ath is the TRUE all-time high on a closing basis - S 76.30 set '
+ '2021-11-12 and OKTA 291.78 set 2021-02-12, both from the 2021 software bubble - NOT the 52-week high proxy that most '
+ 'other rows carry. S is 72.2% below its all-time high and OKTA 53.7% below, and both fields are sourced rather than '
+ 'approximated. SOURCE CONFLICTS RESOLVED AND RECORDED: OKTA forward P/E is 34.40 on stockanalysis against 77.22 on '
+ "MarketBeat - 34.40 is used because it reconciles to Okta's own FY27 non-GAAP EPS guidance of 3.79-3.87, while "
+ "MarketBeat's is evidently GAAP-based; OKTA market cap 23.49B is used over the statistics page's 23.55B because "
+ '173.81M shares x 135.14 = 23.49B exactly; analyst ranges come from stockanalysis (S 35 analysts 15/21.52/28, OKTA 44 '
+ 'analysts 75/146.23/180) rather than MarketBeat, which disagreed on count and average. NOTHING ELSE CHANGED: all 50 '
+ 'invested names remain at the verified Aug 21 close, the book still ties to POEMS exactly at cost 585,939.60 and '
+ 'market value 687,458.90, and cash stays 8,604.24.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -4319,6 +4296,68 @@ STOCKS = [{'an': 83,
   'roe': None,
   'roi': -80.59,
   't': 'RBRK'},
+ {'an': 35,
+  'ath': 76.3,
+  'budget': None,
+  'capexB': 0.00099,
+  'eps': -0.96,
+  'epsG': None,
+  'ex': 'NYSE',
+  'fcfB': 0.0618,
+  'fpe': 52.4,
+  'fvAvg': 21.52,
+  'fvMax': 28.0,
+  'fvMin': 15.0,
+  'g': 15,
+  'gm': 73.25,
+  'hi52': 23.95,
+  'jan2': 15.0,
+  'lo52': 11.81,
+  'mcapB': 7.26,
+  'name': 'SentinelOne',
+  'pe': None,
+  'peg': 0.54,
+  'pm': -30.38,
+  'price': 21.19,
+  'ps': 6.93,
+  'pxd': '2026-08-21',
+  'r40': 27.3,
+  'revB': 1.05,
+  'revG': 21.4,
+  'roe': -21.36,
+  'roi': -12.56,
+  't': 'S'},
+ {'an': 44,
+  'ath': 291.78,
+  'budget': None,
+  'capexB': 0.009,
+  'eps': 1.38,
+  'epsG': 131.1,
+  'ex': 'NASDAQ',
+  'fcfB': 0.911,
+  'fpe': 34.4,
+  'fvAvg': 146.23,
+  'fvMax': 180.0,
+  'fvMin': 75.0,
+  'g': 15,
+  'gm': 77.44,
+  'hi52': 157.0,
+  'jan2': 86.47,
+  'lo52': 62.66,
+  'mcapB': 23.49,
+  'name': 'Okta',
+  'pe': 97.86,
+  'peg': 2.39,
+  'pm': 8.24,
+  'price': 135.14,
+  'ps': 7.68,
+  'pxd': '2026-08-21',
+  'r40': 42.1,
+  'revB': 3.0,
+  'revG': 11.7,
+  'roe': 3.67,
+  'roi': 3.3,
+  't': 'OKTA'},
  {'an': 30,
   'ath': 785.12,
   'budget': None,
@@ -5480,7 +5519,9 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'CRCL': {'budget': None, 'cost': None, 'shares': None},
  'SNPS': {'budget': None, 'cost': None, 'shares': None},
  'SYM': {'budget': None, 'cost': None, 'shares': None},
- 'AMBA': {'budget': None, 'cost': None, 'shares': None}}
+ 'AMBA': {'budget': None, 'cost': None, 'shares': None},
+ 'S': {'budget': None, 'cost': None, 'shares': None},
+ 'OKTA': {'budget': None, 'cost': None, 'shares': None}}
 
 TRADES = [{'date': 'Jul 21, 2026',
   'action': 'BUY',
