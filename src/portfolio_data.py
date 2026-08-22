@@ -35,7 +35,19 @@ ASOF = ('Aug 21, 2026 · close — daily price refresh (run Aug 22, 00:30 UTC): 
  '(3:25/3:33 PM EDT); history ends Aug 18 — no closing print; DE — every fetch provenance-blocked after the session '
  'search budget ran out. Note: HOOD fetched 108.13 (+13.7% day, Bitcoin rally, corroborated by press on the quote '
  'page) and TEM fetched 72.69 (Merck/Moderna cancer-vaccine news) were among the held-back — both looked real but had '
- 'no independent dated second source this session.')
+ 'no independent dated second source this session.  *** BROKER RECONCILIATION LAYER, applied on top of the scheduled '
+ 'refresh: the 50 INVESTED names were independently re-verified against a POEMS positions screen for the Aug 21 close, '
+ 'and 49 of the 50 matched the refresh exactly. The one exception was APH, where the stockanalysis history table '
+ 'printed 156.98 and its own at-close quote page printed 157.01; the broker screen carries 157.01 on 16 shares for a '
+ 'market value of 2,512.16, which settles it, so APH is corrected 156.98 -> 157.01. That single 3-cent field was the '
+ 'ENTIRE reconciliation gap: with it applied, cost ties at 585,939.60 and market value at 687,458.90 against POEMS '
+ 'with ZERO delta on both lines, P/L +101,519.30 / +17.33%. A GuruFocus cross-check on APH returned 169.18, matching '
+ 'neither the level nor the direction of any other source, and was discarded as a bad read rather than treated as '
+ 'evidence. NO TRADES on Aug 21 - cost is unchanged, so the MSFT purchase discussed for the Aug 21 open was NOT '
+ "executed; cash stays 8,604.24 with the broker reporting 'No records found' for intraday transactions, and its asof "
+ 'is advanced to Aug 21. FLAG FOR MONDAY: AAOI closed 124.82 but fell a further ~10% AFTER HOURS on a 600 million '
+ 'dollar stock offering - not in the Aug 21 close, lands in the Aug 24 session. The three conviction budgets (NVDA '
+ '85,000 / GOOGL 80,000 / TSM 65,000) and CDNS at 12 shares are untouched.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -1348,12 +1360,12 @@ STOCKS = [{'an': 83,
   'hi52': 178.52,
   'jan2': 137.12,
   'lo52': 102.76,
-  'mcapB': 193.5581,
+  'mcapB': 193.5951,
   'name': 'Amphenol',
   'pe': 43.5,
   'peg': 1.76,
   'pm': 17.24,
-  'price': 156.98,
+  'price': 157.01,
   'ps': 7.18,
   'pxd': '2026-08-21',
   'r40': 72.3,
@@ -5760,7 +5772,7 @@ TRADES = [{'date': 'Jul 21, 2026',
 
 SELLPLAN = ['IREN']
 
-CASH = {'currency': 'USD', 'amount': 8604.24, 'asof': 'Aug 20, 2026', 'broker': 'POEMS (Phillip Securities)'}
+CASH = {'currency': 'USD', 'amount': 8604.24, 'asof': 'Aug 21, 2026', 'broker': 'POEMS (Phillip Securities)'}
 
 REALIZED = [{'t': 'NBIS', 'g': 13, 'amount': 1404.52},
  {'t': 'IREN', 'g': 13, 'amount': 98.52},
