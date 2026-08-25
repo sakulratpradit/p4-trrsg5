@@ -3,157 +3,190 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Aug 24, 2026 - close. DAILY WATCHLIST REFRESH: 122 of the 130 non-invested rows repriced to the verified Monday Aug '
- '24 close (the 50 invested names were already at the Aug 24 POEMS-verified close and were NOT touched). Primary '
- 'source: the stockanalysis quote page stamped 4:00 PM EDT with previous close chain-checked against the prior-day '
- 'close; where that page served an intraday or stale snapshot, the close came from a Google Finance cache with an '
- "explicit 'Closed: Aug 24, 4:00 PM GMT-4' stamp or from marketscreener with exact prior-close chain arithmetic. EVERY "
- 'MOVE OVER 6% WAS SECOND-SOURCED before passing the sanity gate: 30 of the 42 allowed names were confirmed to the '
- 'cent by an independent site (Google Finance, marketscreener, Benzinga, or a dated fool.com quote - PWR fool 616.56 '
- 'vs 616.78 and PL fool 21.55 vs 21.57 agree within 0.1% with identical range/volume, stockanalysis stamped print '
- 'kept); the other 12 (NRG, NVT, POWL, MYRG, HUBB, DE, TEAM, AIRJ, LWLG, CIEN, SIDU, HUT) carry a two-source-confirmed '
- 'prior-day anchor plus a same-day independent cross-check, with only a final sub-6% (or intraday-corroborated) '
- 'increment resting on a single site - each noted per ticker. FIVE ROWS REVERTED TO THEIR PREVIOUS VALUE because a '
- 'move over 6% could NOT be confirmed by any second source: EOSE (SA-only 3.46, -9.2%), OUST (SA-only 35.75, -25.7%), '
- "RCAT (SA-only 8.93, -14.5%), MDB (SA-only 402.69, -6.5%) and POWI (no usable Aug 24 close anywhere; GF's Aug 19 "
- 'print carried an impossible 0.00% day change). THREE ROWS LEFT UNCHANGED AS UNRESOLVED - every source still served a '
- 'stale snapshot: AMBA (last verified Aug 21 73.73), YUM (Aug 21 152.99) and HNGE (Aug 21 88.42). CIFR SOURCE CONFLICT '
- "RESOLVED: SA history printed 15.42 against Google's stamped 4:00:01 PM close of 15.36 (both chain to Aug 21 15.77; "
- "SA's own 3:39 PM quote read 15.39) - the stamped Google close is used. PARTIAL-SESSION HISTORY ROWS DISCARDED on "
- 'NXPI, DDOG, KTOS, SOUN, INDI and FSLR (anomalously low volume), and two ARITHMETICALLY IMPOSSIBLE history rows '
- "discarded: ENPH (close 37.10 below the row's own low 37.28) and AFRM (close 78.68 above the row's own high 78.50) - "
- 'the 4:00 PM quote price was used for both. Market cap on every repriced row was rescaled by the exact price ratio '
- '(share counts unchanged); hi52/lo52 extended where the new close sat outside the stored range (new 52-week-high '
- 'closes: KO 91.99, JNJ 273.04, V 382.41). Market cap, P/E, forward P/E and P/S were rescaled by the exact price ratio '
- 'on all 50 repriced rows - share counts and TTM denominators are unchanged by a one-day move, so this is arithmetic, '
- 'not new data. Aug 24, 2026 - close. AMAT BUY EXECUTED and a LARGE CASH INJECTION LANDED. All 50 invested names '
- 'repriced to the verified Monday Aug 24 close from the POEMS screen (Aug 25 07:27 AM Singapore = Aug 24 07:27 PM ET, '
- 'so post-close). *** TRADE: 4 shares of AMAT at 479.00, order 1202652, limit day order, filled in one second at 11:45 '
- 'AM ET. Cash debit 1,924.56 = 4 x 479.00 + 8.56 commission. AMAT 34 -> 38 sh, cost 8,162.07 -> 10,086.63, average '
- '240.06088 -> 265.43763. It filled AT the limit and AMAT closed at 484.19, so the new shares ended the day 1.08% '
- 'ABOVE the fill. This is the fifth consecutive limit order to fill at or inside its limit. *** *** CASH: 8,604.24 - '
- '1,924.56 for AMAT = 6,679.68, but POEMS shows 23,852.79. That is an INJECTION OF 17,173.11 of new money. Cash is now '
- '2.8x what it was and the approved 30,000 three-month DCA plan is roughly 80% funded rather than 29% funded. *** BOOK '
- 'RECONCILIATION IS EXACT. All 50 rows pass the 4-way identity check (cost = qty x avg, MV = qty x price, P/L = MV - '
- 'cost, P/L% = P/L / cost) with zero failures. Cost moved 585,939.60 -> 587,864.16, a delta of exactly 1,924.56 - the '
- 'AMAT purchase and nothing else. Market value 687,458.90 -> 679,503.46 and unrealised gain 101,519.30 -> 91,639.30, '
- 'i.e. the book gave back 9,880.00 in one session despite adding 1,924.56 of new cost. Independent sum of the 50 rows '
- 'reproduces the POEMS totals to within one cent on market value and P/L. *** IT WAS A BROAD SEMICONDUCTOR SELLOFF, '
- 'NOT A PORTFOLIO PROBLEM. The Philadelphia Semiconductor Index fell 3.11% to 11,374.96 while the Dow ROSE 0.3%. S&P '
- '500 7,652.86 (-0.3%), Nasdaq Composite 25,980.19 (-0.8%), Russell 2000 2,995.08 (-0.8%). Stated drivers: positioning '
- "ahead of NVIDIA on Aug 26, new US sanctions on Iran's trading partners, collapsed US-Canada trade talks and "
- 'reciprocal tariff threats, and political opposition to data-centre expansion in several states. 10-year Treasury '
- '4.71%. NVDA itself closed 208.48, -2.91%. *** TWO NAMES MOVED MORE THAN 6% AND BOTH WERE SECOND-SOURCED. (1) AAOI '
- '-13.77% to 107.63 on volume of 14.99M, roughly double the prior session, low of 102.10. Cause confirmed from the '
- 'primary filing: an 8-K filed Aug 21 under Item 1.01 disclosing an at-the-market equity programme for UP TO '
- '600,000,000 USD of stock through Raymond James and Needham at 2% commission. This is the event flagged in this '
- 'dashboard on Aug 24 morning, when AAOI was trading 112.29 after hours. No analyst downgrade and NO AAOI PRESS '
- 'RELEASE exist - the 8-K is the only disclosure. Position is 10 shares, cost 1,338.56, now -19.59%. (2) AVAV -7.50% '
- 'to 148.20, closing ON ITS LOW, range 159.61-148.14. NO SINGLE NEGATIVE CATALYST WAS FOUND. The only company news '
- 'dated Aug 24 is a 100 million USD investment in a new unified campus in Moorpark, California, which the company says '
- 'sits inside previously issued FY2027 guidance - the market took a cash-outflow announcement badly on a risk-off '
- 'tape. Explicitly RULED OUT by checking dates: the RBC downgrade to Sector Perform with a 180 target is dated 9 JULY '
- "2026, not August, and the widely-circulated '89 million reason AVAV is down' piece is dated 24 JUNE 2026. Both are "
- 'stale and neither explains Monday. Two shareholder-investigation notices were issued Aug 20 and a director sold 250 '
- 'shares that day. AVAV position is 18 shares, cost 3,758.30, now -29.02% - the worst percentage loss in the book. '
- 'MOVES BETWEEN 4% AND 6%, all two-source verified and all inside their own printed high-low range: RKLB -5.91% to '
- '68.28, MU -5.83% to 910.43, ONDS -5.40% to 8.24, IREN -4.94% to 39.81, SKHY -4.92% to 155.37, COHR -4.85% to 275.49, '
- 'AMKR -4.70% to 47.90, BWXT -4.63% to 149.52, LITE -4.22% to 830.17. The memory complex was the epicentre - MU, SKHY '
- 'and AMKR are three of the nine. Only five of the fifty names rose: META +1.66%, AMZN +1.33%, GOOGL +0.94%, MSFT '
- '+0.84%, AAPL +0.32% and CEG +0.20% - i.e. the hyperscalers held while everything cyclical was sold. SOURCE CONFLICTS '
- 'RESOLVED BY POEMS: COHR printed 275.49 on stockanalysis against 275.40 on MarketBeat, and BWXT 149.52 against 149.40 '
- "- in both cases MarketBeat's figure carried an 03:59 PM stamp, one minute before the bell, and failed its own "
- 'prior-close arithmetic. POEMS agrees with stockanalysis on both, which settles it. A stockanalysis AVAV history row '
- "showing 150.19 on volume 799,028 was DISCARDED as a cached partial session - the same site's quote page, MarketBeat "
- "and POEMS all agree on 148.20 with volume 1,231,565. *** TWO FIELDS DELIBERATELY LEFT UNCHANGED PENDING SALEE'S "
- "INPUT: TOTALS.investedEverTHB stays at 19,834,480 and THBFX['AMAT'] stays at 32.1085. Updating either would require "
- 'the actual THB amount and conversion rate of both the AMAT purchase and the 17,173.11 injection, and neither is on '
- 'any screen provided. Guessing them at the 33.75 rate carried in TOTALS.fx would have been fabrication. '
- 'investedEverUSD IS updated, 614,311.61 -> 616,236.17. Note the pre-existing and still unresolved bookkeeping gap: '
- 'current cost 587,864.16 plus soldCostUSD 34,025.62 is 621,889.78, which exceeds investedEverUSD by 5,653.61. *** '
- 'NVIDIA IS STILL CONFIRMED FOR WEDNESDAY AUG 26 at 2 p.m. PT / 5 p.m. ET, guiding to 91.0B revenue plus or minus 2% '
- 'and 74.9% gross margin. MRVL follows Thursday Aug 27, with SentinelOne and Rubrik the same day, and Jackson Hole '
- 'runs Aug 27-29 with Fed Chair Kevin Warsh delivering the keynote on Friday. MONTHLY August 2026 now reads 37,460.90 '
- 'bought across 20 lots. Nothing was sold; realised P/L stays at -2,478.01. Aug 21, 2026 - close. NINE NEW WATCHLIST '
- 'NAMES ADDED and TMDX REFRESHED, taking the dashboard from 171 to 180 stocks. ROBOTIC / AUTOMATION / EV goes 7 -> 11 '
- 'names with OSS, VPG, AMBQ and INDI. DRONE & DEFENSE goes 8 -> 9 with KTOS. PHOTONIC & OPTIC FIBER goes 16 -> 18 with '
- 'SITM and CLFD. POWER AND ELECTRIFICATION goes 9 -> 10 with FPS. HEALTHCARE goes 6 -> 7 with CLPT. All nine are '
- 'WATCHLIST-ONLY: no shares, no cost, no budget. *** TMDX WAS ALREADY IN HEALTHCARE AND WAS STALE at 88.35 dated '
- '2026-08-17 - it is NOT duplicated; the existing row was repriced to the verified Aug 21 close of 94.77 (+4.31% on '
- 'the day, two-source agreed), market cap 3.0621 -> 3.28B, P/E 19.63 -> 23.10, forward P/E 39.55 -> 49.72, P/S 4.06 -> '
- '4.92, and revG (was blank) set to 25.8 with epsG 98.9, which lets r40 compute at 37.62 for the first time. *** '
- "TICKER IDENTIFICATION: 'FPS' is FORGENT POWER SOLUTIONS (NYSE), which IPO'd 5 Feb 2026 - it makes switchgear, "
- 'transformers and power distribution equipment for data centres and the grid, so it belongs in Power and '
- 'Electrification, but note it is classified Industrials / Electrical Equipment, NOT a utility. Because it listed in '
- 'February there is NO Jan 2 reference price and jan2 is null. ath IS A TRUE ALL-TIME-HIGH CLOSE on four of the ten '
- 'rows and a 52-week proxy on the rest, as follows. TRUE: INDI 15.85 set 2021-11-17; SITM 901.48 set 2026-05-11; CLFD '
- '131.62 set 2022-11-30; FPS 64.59 set 2026-06-04. PROXY (true ATH NOT FOUND, so ath = hi52): OSS 20.88, VPG 151.78, '
- 'AMBQ 91.61, KTOS 134.00, CLPT 30.10, TMDX 156.00. *** KTOS DELIBERATE EXCLUSION: companiesmarketcap prints a KTOS '
- "all-time-high close of 1,579 USD dated 2000-03-06. That is a split-adjusted artifact of the company's pre-2007 "
- 'identity as Wireless Facilities Inc and is meaningless for the present business - using it would destroy the chart '
- 'scale, so ath is set to the 52-week high of 134.00 instead. *** FIELDS LEFT NULL RATHER THAN GUESSED: OSS revG (TTM '
- 'growth NOT FOUND, so r40 is null too) - note OSS Q2 2026 revenue was +62.3% YoY and FY26 guidance was raised to '
- '25-30% growth, but no TTM figure could be sourced. FPS revG is null BECAUSE THE PRINTED FIGURE IS WRONG: '
- "stockanalysis shows +386.60%, which cannot be reconciled with the company's own FY2026 guide of 1,350-1,390M at "
- "'approximately 82% growth at midpoint' off a ~753M FY2025 base; publishing 386.60 would have been a fabricated "
- 'number, so revG and r40 are null and the Q3 FY26 reported figure of +103% YoY is recorded here instead. FPS roe is '
- "null (printed 'n/a'). jan2 is null for INDI, KTOS, CLPT and TMDX (no January 2026 daily row was retrievable) and for "
- 'FPS (not listed). LOSS-MAKING ROWS carry pe=None by convention: AMBQ (EPS -2.02), INDI (EPS -0.73), CLFD (EPS '
- '-0.53), CLPT (EPS -1.18). SOURCE ERRORS CAUGHT AND OVERRIDDEN: (1) stockanalysis printed a CLFD trailing P/E of '
- '94.98 and an ROE of +1.56% while the SAME page prints TTM diluted EPS of -0.53 and net income of -7.22M - a positive '
- "P/E and ROE cannot coexist with a loss, so pe is set to None and roe to GuruFocus's -2.87%. (2) stockanalysis prints "
- "INDI gross margin as -27.05% for every year since 2021, which contradicts indie's own income statement (Q2 2026 "
- 'revenue 64.0M, cost of goods 40.9M, gross profit 23.1M - clearly positive); gm is therefore taken from GuruFocus at '
- '37.77%. (3) OSS carries a trailing P/E of 220.99 on positive TTM EPS of 0.05, but that EPS is a ONE-OFF GAIN ON THE '
- 'BRESSNER DIVESTITURE, not operating profit - the same page shows operating margin -1.49%, ROE -18.59% and ROIC '
- '-5.48%, and the company reported a 7.3M GAAP net loss in Q2 2026. Treat OSS as operationally loss-making and do not '
- 'read 221x as an earnings multiple. LOW-CONFIDENCE ROW - FPS: four sources print four different trailing P/Es (595.09 '
- '/ 489.68 / 216.82 / 3,905.00) and three different TTM EPS figures (0.07 / 0.15 / 0.012), a spread far wider than '
- 'price differences explain, most likely because FPS has a dual-class structure (304.43M shares outstanding vs 244.12M '
- 'in the current class). The stockanalysis statistics page is used throughout the FPS row for internal consistency, '
- 'but every per-share FPS metric should be treated as provisional. ANALYST RANGES come from stockanalysis except CLFD, '
- "where the stockanalysis forecast page is stale (last updated 2026-05-07, quoting a price of 40.45) and MarketBeat's "
- 'fresher 7-analyst 38/41.75/45 is used instead. Analyst counts conflicted on every single new name (OSS 3 vs 6, VPG 3 '
- 'vs 4, AMBQ 6 vs 9, INDI 8 vs 4, KTOS 21 vs 22, SITM 9 vs 11, CLFD 4 vs 7, FPS 10 vs 14, CLPT 3 vs 3, TMDX 12 vs 13) '
- 'and were NOT averaged. EARNINGS DATES: none of the nine has a company-confirmed next date. Estimates only - OSS ~Nov '
- '4, VPG ~Nov 3, INDI ~Nov 5, KTOS ~Nov 3, SITM ~Nov 4, TMDX ~Nov 4; AMBQ, CLFD, FPS and CLPT had no date at all. '
- 'WORTH KNOWING ON THE NEW NAMES: SITM completed its acquisition of the Renesas Timing Business on 1 July 2026 (adds '
- '550+ clocking products and a projected 300M+ of revenue in the following 12 months) and guided Q3 to 285-295M '
- 'against 157.4M in Q2 - its largest end customer was 17% of 2025 revenue, down from 22%. CLFD cut FY2026 guidance to '
- '151-155M on BEAD-programme delays and its order backlog fell 34% in one quarter to 21.0M, but it booked a first 22M '
- 'hyperscale data-centre order. CLPT cut FY2026 revenue guidance from 52-56M to 48-52M on 3 Aug and fell 16.3% the '
- 'next day; it supports 60+ biologics partner programmes. KTOS raised roughly 1.2B of equity at 84.00/share in '
- "February 2026 and carries a 2.084B backlog with 68% of revenue from US Government customers. AMBQ's IPO lock-up from "
- 'its June follow-on expired on 23 August 2026, the day before this build. TMDX has two plaintiff-law-firm '
- 'fiduciary-duty investigations announced on 3 and 17 August 2026 - these are solicitations, and NO DOJ or SEC inquiry '
- "was found; the only short-seller report is Scorpion Capital's from January 2025, which the company publicly rejected "
- 'and against which it spent about 1.8M in legal costs in the first half of 2026. Aug 21, 2026 - close. Space group '
- 'corrected against two independent sources: SPCX (SpaceX) was stale at 146.23 / Aug 17 and is now the verified Aug 21 '
- 'close of 136.97 (52-wk low 104.83, 35 analysts, targets 75 / 213.50 / 450). ASTS repriced to 68.65 with post-Q2 '
- 'revenue 115.3M (52-wk range 36.08-133.86, 13 analysts, 42.50 / 78.48 / 108). RKLB revenue updated to 769.15M post-Q2 '
- '(P/S 56.47, 18 analysts, 64 / 112.94 / 150). No position changes; no cash movement. Aug 21, 2026 - close. S '
- '(SentinelOne, NYSE) and OKTA (Okta, NASDAQ) ADDED to Cybersecurity, placed side by side at the end of that group, '
- 'which goes from 6 names to 8: CRWD, PANW, ZS, FTNT, NET, RBRK, S, OKTA. Both are WATCHLIST-ONLY with no position, no '
- 'budget and no shares. Priced at the verified Aug 21 close: S 21.19 (+1.19%), OKTA 135.14 (+0.73%), each '
- "chain-validated against the Aug 20 close and second-sourced. SentinelOne's history table was STALE with no Aug 21 "
- 'row at all, so its close came from the at-close quote page and was confirmed twice - a cache-busted history render '
- "and companiesmarketcap - and sits inside the day's 20.43-21.28 range on normal volume. *** BOTH REPORT NEXT WEEK, "
- 'COMPANY-CONFIRMED: OKTA on WEDNESDAY AUG 26 and S on THURSDAY AUG 27. That is the same week as NVDA, SNPS and CRM on '
- 'Aug 26 and MRVL on Aug 27 - five confirmed prints in two days. *** The two are NOT competitors and sit on different '
- 'layers: SentinelOne is endpoint and XDR threat detection and response; Okta is identity and access management, the '
- 'login control plane. Their financial profiles are near opposites - Okta is GAAP-PROFITABLE (TTM EPS +1.38, net '
- 'margin 8.24%, 911M of free cash flow) growing 11.7%, while SentinelOne is GAAP LOSS-MAKING (EPS -0.96, net margin '
- '-30.38%, 61.8M of free cash flow) growing 21.4%. S therefore carries pe=None; any trailing P/E quoted for it '
- 'anywhere is fictitious. ath is the TRUE all-time high on a closing basis - S 76.30 set 2021-11-12 and OKTA 291.78 '
- 'set 2021-02-12, both from the 2021 software bubble - NOT the 52-week high proxy that most other rows carry. S is '
- '72.2% below its all-time high and OKTA 53.7% below, and both fields are sourced rather than approximated. SOURCE '
- 'CONFLICTS RESOLVED AND RECORDED: OKTA forward P/E is 34.40 on stockanalysis against 77.22 on MarketBeat - 34.40 is '
- "used because it reconciles to Okta's own FY27 non-GAAP EPS guidance of 3.79-3.87, while MarketBeat's is evidently "
- "GAAP-based; OKTA market cap 23.49B is used over the statistics page's 23.55B because 173.81M shares x 135.14 = "
- '23.49B exactly; analyst ranges come from stockanalysis (S 35 analysts 15/21.52/28, OKTA 44 analysts 75/146.23/180) '
- 'rather than MarketBeat, which disagreed on count and average. NOTHING ELSE CHANGED: all 50 invested names remain at '
- 'the verified Aug 21 close, the book still ties to POEMS exactly at cost 585,939.60 and market value 687,458.90, and '
- 'cash stays 8,604.24.')
+ASOF = ('Aug 24, 2026 - close. ROK RECLASSIFIED: Rockwell Automation moved from group 6 (Robotic / Automation / EV) to group '
+ "20 (Industrial STX) at Salee's instruction, placed at the end of that group which goes from 4 names to 5: CAT, DE, "
+ 'GE, MMM, ROK. Robotic / Automation / EV drops from 11 names to 10. REASON, ON THE RECORD: Rockwell is NOT a robotics '
+ 'company and the old classification was misleading. Its own reporting has exactly three segments - Intelligent '
+ 'Devices (1,080M, 46.7% of Q3 FY26 sales), Software & Control (751M, 32.5%) and Lifecycle Services (482M, 20.8%) - '
+ 'and NONE of them is a robotics segment. Software & Control and Lifecycle Services, 53.3% of the company between '
+ 'them, contain no robotics at all. The robotics asset is Clearpath Robotics / OTTO Motors, bought for about 600M USD '
+ 'against a ~48B market cap, and it reports as a line item inside Intelligent Devices; management said on the Q3 FY26 '
+ 'call that Clearpath was only expected to reach profitability in Q4 FY2026, nearly three years after the acquisition. '
+ "Rockwell has never disclosed a robotics revenue figure, and the nearest proxy it does give - 'Production Logistics' "
+ '- blends AMRs with iTRAK / MagneMotion linear-cart hardware, so it is not a robotics number either. Any robotics '
+ 'percentage quoted for ROK anywhere is an estimate, not a company disclosure. Rockwell sells the CONTROL LAYER of a '
+ 'factory: programmable controllers, drives, motion, safety, sensing, industrial software and the services around '
+ 'them. Industrial STX is the correct home. SIX FIELD CORRECTIONS APPLIED AT THE SAME TIME, each two-source verified '
+ "against the Aug 24 close: (1) pe 47.58 -> 40.27. The old figure implied TTM EPS of about 9.03; Rockwell's actual TTM "
+ 'diluted EPS after the Q3 FY2026 report on 4 Aug is 10.67, and 429.69 / 10.67 = 40.27 exactly. The dashboard was '
+ 'carrying a pre-Q3 earnings base. (2) hi52 480.98 -> 497.36, the true 52-week intraday high set 30 June 2026. (3) '
+ 'lo52 305.44 -> 332.71 as the trailing window rolled. (4) ath 497.36 -> 495.08. The old value was the 52-week '
+ 'INTRADAY high being used as an all-time high. 495.08 is the TRUE all-time-high CLOSE, set 30 June 2026, confirmed on '
+ 'companiesmarketcap and in the daily record. ROK is 13.2% below it. (5) jan2 392.00 -> 398.55. The old value was the '
+ '2 January OPEN, not the close - the 2026-01-02 record reads open 392.00, high 398.68, close 398.55. ROK is therefore '
+ '+7.8% year to date, not +9.6% as the old figure implied. (6) Fundamentals refreshed to the TTM period ending 30 June '
+ '2026: revenue 8.973B (+11.31%), gross margin 49.09%, net margin 13.38%, EPS 10.67 (+25.25%), free cash flow 1.50B, '
+ 'capex 0.228B, ROE 30.63%, ROIC 21.36%, forward P/E 29.70, P/S 5.32, market cap 47.72B. r40 recomputed 22.7 -> 28.03. '
+ 'Analyst targets 282 / 473.61 / 555 -> 282 / 477.79 / 550 on 28 analysts. SOURCE CONFLICT RECORDED, NOT AVERAGED: '
+ "stockanalysis has 28 analysts rating ROK 'Buy' with an average target of 477.79 and a low of 282; MarketBeat has 21 "
+ "analysts rating it 'HOLD' with an average of 468.67 and a low of 378. The ratings genuinely diverge and the "
+ 'MarketBeat page was five sessions stale (dated 19 Aug, quoting a 433.18 close), so stockanalysis is used. NOTE ON A '
+ 'STALE STORY: the Rockwell-NVIDIA partnership announcements are dated 18 MARCH 2024 and 3 JUNE 2024 (Omniverse Cloud '
+ 'APIs with Emulate3D, and NVIDIA Isaac for OTTO AMRs). There is NO 2026-dated NVIDIA announcement from Rockwell. '
+ 'Anything presenting that as current news is recycling two-year-old material. NOTHING ELSE TOUCHED: ROK remains '
+ "WATCHLIST-ONLY with no shares, no cost and no budget; price stays at the scheduled refresh's verified Aug 24 close "
+ 'of 429.69; all 50 invested names, all budgets and cash at 23,852.79 are unchanged. STILL OPEN: CAT has no budget '
+ 'set. A 10,000 budget was proposed and has not been actioned. Aug 24, 2026 - close. DAILY WATCHLIST REFRESH: 122 of '
+ 'the 130 non-invested rows repriced to the verified Monday Aug 24 close (the 50 invested names were already at the '
+ 'Aug 24 POEMS-verified close and were NOT touched). Primary source: the stockanalysis quote page stamped 4:00 PM EDT '
+ 'with previous close chain-checked against the prior-day close; where that page served an intraday or stale snapshot, '
+ "the close came from a Google Finance cache with an explicit 'Closed: Aug 24, 4:00 PM GMT-4' stamp or from "
+ 'marketscreener with exact prior-close chain arithmetic. EVERY MOVE OVER 6% WAS SECOND-SOURCED before passing the '
+ 'sanity gate: 30 of the 42 allowed names were confirmed to the cent by an independent site (Google Finance, '
+ 'marketscreener, Benzinga, or a dated fool.com quote - PWR fool 616.56 vs 616.78 and PL fool 21.55 vs 21.57 agree '
+ 'within 0.1% with identical range/volume, stockanalysis stamped print kept); the other 12 (NRG, NVT, POWL, MYRG, '
+ 'HUBB, DE, TEAM, AIRJ, LWLG, CIEN, SIDU, HUT) carry a two-source-confirmed prior-day anchor plus a same-day '
+ 'independent cross-check, with only a final sub-6% (or intraday-corroborated) increment resting on a single site - '
+ 'each noted per ticker. FIVE ROWS REVERTED TO THEIR PREVIOUS VALUE because a move over 6% could NOT be confirmed by '
+ 'any second source: EOSE (SA-only 3.46, -9.2%), OUST (SA-only 35.75, -25.7%), RCAT (SA-only 8.93, -14.5%), MDB '
+ "(SA-only 402.69, -6.5%) and POWI (no usable Aug 24 close anywhere; GF's Aug 19 print carried an impossible 0.00% day "
+ 'change). THREE ROWS LEFT UNCHANGED AS UNRESOLVED - every source still served a stale snapshot: AMBA (last verified '
+ 'Aug 21 73.73), YUM (Aug 21 152.99) and HNGE (Aug 21 88.42). CIFR SOURCE CONFLICT RESOLVED: SA history printed 15.42 '
+ "against Google's stamped 4:00:01 PM close of 15.36 (both chain to Aug 21 15.77; SA's own 3:39 PM quote read 15.39) - "
+ 'the stamped Google close is used. PARTIAL-SESSION HISTORY ROWS DISCARDED on NXPI, DDOG, KTOS, SOUN, INDI and FSLR '
+ '(anomalously low volume), and two ARITHMETICALLY IMPOSSIBLE history rows discarded: ENPH (close 37.10 below the '
+ "row's own low 37.28) and AFRM (close 78.68 above the row's own high 78.50) - the 4:00 PM quote price was used for "
+ 'both. Market cap on every repriced row was rescaled by the exact price ratio (share counts unchanged); hi52/lo52 '
+ 'extended where the new close sat outside the stored range (new 52-week-high closes: KO 91.99, JNJ 273.04, V 382.41). '
+ 'Market cap, P/E, forward P/E and P/S were rescaled by the exact price ratio on all 50 repriced rows - share counts '
+ 'and TTM denominators are unchanged by a one-day move, so this is arithmetic, not new data. Aug 24, 2026 - close. '
+ 'AMAT BUY EXECUTED and a LARGE CASH INJECTION LANDED. All 50 invested names repriced to the verified Monday Aug 24 '
+ 'close from the POEMS screen (Aug 25 07:27 AM Singapore = Aug 24 07:27 PM ET, so post-close). *** TRADE: 4 shares of '
+ 'AMAT at 479.00, order 1202652, limit day order, filled in one second at 11:45 AM ET. Cash debit 1,924.56 = 4 x '
+ '479.00 + 8.56 commission. AMAT 34 -> 38 sh, cost 8,162.07 -> 10,086.63, average 240.06088 -> 265.43763. It filled AT '
+ 'the limit and AMAT closed at 484.19, so the new shares ended the day 1.08% ABOVE the fill. This is the fifth '
+ 'consecutive limit order to fill at or inside its limit. *** *** CASH: 8,604.24 - 1,924.56 for AMAT = 6,679.68, but '
+ 'POEMS shows 23,852.79. That is an INJECTION OF 17,173.11 of new money. Cash is now 2.8x what it was and the approved '
+ '30,000 three-month DCA plan is roughly 80% funded rather than 29% funded. *** BOOK RECONCILIATION IS EXACT. All 50 '
+ 'rows pass the 4-way identity check (cost = qty x avg, MV = qty x price, P/L = MV - cost, P/L% = P/L / cost) with '
+ 'zero failures. Cost moved 585,939.60 -> 587,864.16, a delta of exactly 1,924.56 - the AMAT purchase and nothing '
+ 'else. Market value 687,458.90 -> 679,503.46 and unrealised gain 101,519.30 -> 91,639.30, i.e. the book gave back '
+ '9,880.00 in one session despite adding 1,924.56 of new cost. Independent sum of the 50 rows reproduces the POEMS '
+ 'totals to within one cent on market value and P/L. *** IT WAS A BROAD SEMICONDUCTOR SELLOFF, NOT A PORTFOLIO '
+ 'PROBLEM. The Philadelphia Semiconductor Index fell 3.11% to 11,374.96 while the Dow ROSE 0.3%. S&P 500 7,652.86 '
+ '(-0.3%), Nasdaq Composite 25,980.19 (-0.8%), Russell 2000 2,995.08 (-0.8%). Stated drivers: positioning ahead of '
+ "NVIDIA on Aug 26, new US sanctions on Iran's trading partners, collapsed US-Canada trade talks and reciprocal tariff "
+ 'threats, and political opposition to data-centre expansion in several states. 10-year Treasury 4.71%. NVDA itself '
+ 'closed 208.48, -2.91%. *** TWO NAMES MOVED MORE THAN 6% AND BOTH WERE SECOND-SOURCED. (1) AAOI -13.77% to 107.63 on '
+ 'volume of 14.99M, roughly double the prior session, low of 102.10. Cause confirmed from the primary filing: an 8-K '
+ 'filed Aug 21 under Item 1.01 disclosing an at-the-market equity programme for UP TO 600,000,000 USD of stock through '
+ 'Raymond James and Needham at 2% commission. This is the event flagged in this dashboard on Aug 24 morning, when AAOI '
+ 'was trading 112.29 after hours. No analyst downgrade and NO AAOI PRESS RELEASE exist - the 8-K is the only '
+ 'disclosure. Position is 10 shares, cost 1,338.56, now -19.59%. (2) AVAV -7.50% to 148.20, closing ON ITS LOW, range '
+ '159.61-148.14. NO SINGLE NEGATIVE CATALYST WAS FOUND. The only company news dated Aug 24 is a 100 million USD '
+ 'investment in a new unified campus in Moorpark, California, which the company says sits inside previously issued '
+ 'FY2027 guidance - the market took a cash-outflow announcement badly on a risk-off tape. Explicitly RULED OUT by '
+ 'checking dates: the RBC downgrade to Sector Perform with a 180 target is dated 9 JULY 2026, not August, and the '
+ "widely-circulated '89 million reason AVAV is down' piece is dated 24 JUNE 2026. Both are stale and neither explains "
+ 'Monday. Two shareholder-investigation notices were issued Aug 20 and a director sold 250 shares that day. AVAV '
+ 'position is 18 shares, cost 3,758.30, now -29.02% - the worst percentage loss in the book. MOVES BETWEEN 4% AND 6%, '
+ 'all two-source verified and all inside their own printed high-low range: RKLB -5.91% to 68.28, MU -5.83% to 910.43, '
+ 'ONDS -5.40% to 8.24, IREN -4.94% to 39.81, SKHY -4.92% to 155.37, COHR -4.85% to 275.49, AMKR -4.70% to 47.90, BWXT '
+ '-4.63% to 149.52, LITE -4.22% to 830.17. The memory complex was the epicentre - MU, SKHY and AMKR are three of the '
+ 'nine. Only five of the fifty names rose: META +1.66%, AMZN +1.33%, GOOGL +0.94%, MSFT +0.84%, AAPL +0.32% and CEG '
+ '+0.20% - i.e. the hyperscalers held while everything cyclical was sold. SOURCE CONFLICTS RESOLVED BY POEMS: COHR '
+ 'printed 275.49 on stockanalysis against 275.40 on MarketBeat, and BWXT 149.52 against 149.40 - in both cases '
+ "MarketBeat's figure carried an 03:59 PM stamp, one minute before the bell, and failed its own prior-close "
+ 'arithmetic. POEMS agrees with stockanalysis on both, which settles it. A stockanalysis AVAV history row showing '
+ "150.19 on volume 799,028 was DISCARDED as a cached partial session - the same site's quote page, MarketBeat and "
+ "POEMS all agree on 148.20 with volume 1,231,565. *** TWO FIELDS DELIBERATELY LEFT UNCHANGED PENDING SALEE'S INPUT: "
+ "TOTALS.investedEverTHB stays at 19,834,480 and THBFX['AMAT'] stays at 32.1085. Updating either would require the "
+ 'actual THB amount and conversion rate of both the AMAT purchase and the 17,173.11 injection, and neither is on any '
+ 'screen provided. Guessing them at the 33.75 rate carried in TOTALS.fx would have been fabrication. investedEverUSD '
+ 'IS updated, 614,311.61 -> 616,236.17. Note the pre-existing and still unresolved bookkeeping gap: current cost '
+ '587,864.16 plus soldCostUSD 34,025.62 is 621,889.78, which exceeds investedEverUSD by 5,653.61. *** NVIDIA IS STILL '
+ 'CONFIRMED FOR WEDNESDAY AUG 26 at 2 p.m. PT / 5 p.m. ET, guiding to 91.0B revenue plus or minus 2% and 74.9% gross '
+ 'margin. MRVL follows Thursday Aug 27, with SentinelOne and Rubrik the same day, and Jackson Hole runs Aug 27-29 with '
+ 'Fed Chair Kevin Warsh delivering the keynote on Friday. MONTHLY August 2026 now reads 37,460.90 bought across 20 '
+ 'lots. Nothing was sold; realised P/L stays at -2,478.01. Aug 21, 2026 - close. NINE NEW WATCHLIST NAMES ADDED and '
+ 'TMDX REFRESHED, taking the dashboard from 171 to 180 stocks. ROBOTIC / AUTOMATION / EV goes 7 -> 11 names with OSS, '
+ 'VPG, AMBQ and INDI. DRONE & DEFENSE goes 8 -> 9 with KTOS. PHOTONIC & OPTIC FIBER goes 16 -> 18 with SITM and CLFD. '
+ 'POWER AND ELECTRIFICATION goes 9 -> 10 with FPS. HEALTHCARE goes 6 -> 7 with CLPT. All nine are WATCHLIST-ONLY: no '
+ 'shares, no cost, no budget. *** TMDX WAS ALREADY IN HEALTHCARE AND WAS STALE at 88.35 dated 2026-08-17 - it is NOT '
+ 'duplicated; the existing row was repriced to the verified Aug 21 close of 94.77 (+4.31% on the day, two-source '
+ 'agreed), market cap 3.0621 -> 3.28B, P/E 19.63 -> 23.10, forward P/E 39.55 -> 49.72, P/S 4.06 -> 4.92, and revG (was '
+ 'blank) set to 25.8 with epsG 98.9, which lets r40 compute at 37.62 for the first time. *** TICKER IDENTIFICATION: '
+ "'FPS' is FORGENT POWER SOLUTIONS (NYSE), which IPO'd 5 Feb 2026 - it makes switchgear, transformers and power "
+ 'distribution equipment for data centres and the grid, so it belongs in Power and Electrification, but note it is '
+ 'classified Industrials / Electrical Equipment, NOT a utility. Because it listed in February there is NO Jan 2 '
+ 'reference price and jan2 is null. ath IS A TRUE ALL-TIME-HIGH CLOSE on four of the ten rows and a 52-week proxy on '
+ 'the rest, as follows. TRUE: INDI 15.85 set 2021-11-17; SITM 901.48 set 2026-05-11; CLFD 131.62 set 2022-11-30; FPS '
+ '64.59 set 2026-06-04. PROXY (true ATH NOT FOUND, so ath = hi52): OSS 20.88, VPG 151.78, AMBQ 91.61, KTOS 134.00, '
+ 'CLPT 30.10, TMDX 156.00. *** KTOS DELIBERATE EXCLUSION: companiesmarketcap prints a KTOS all-time-high close of '
+ "1,579 USD dated 2000-03-06. That is a split-adjusted artifact of the company's pre-2007 identity as Wireless "
+ 'Facilities Inc and is meaningless for the present business - using it would destroy the chart scale, so ath is set '
+ 'to the 52-week high of 134.00 instead. *** FIELDS LEFT NULL RATHER THAN GUESSED: OSS revG (TTM growth NOT FOUND, so '
+ 'r40 is null too) - note OSS Q2 2026 revenue was +62.3% YoY and FY26 guidance was raised to 25-30% growth, but no TTM '
+ 'figure could be sourced. FPS revG is null BECAUSE THE PRINTED FIGURE IS WRONG: stockanalysis shows +386.60%, which '
+ "cannot be reconciled with the company's own FY2026 guide of 1,350-1,390M at 'approximately 82% growth at midpoint' "
+ 'off a ~753M FY2025 base; publishing 386.60 would have been a fabricated number, so revG and r40 are null and the Q3 '
+ "FY26 reported figure of +103% YoY is recorded here instead. FPS roe is null (printed 'n/a'). jan2 is null for INDI, "
+ 'KTOS, CLPT and TMDX (no January 2026 daily row was retrievable) and for FPS (not listed). LOSS-MAKING ROWS carry '
+ 'pe=None by convention: AMBQ (EPS -2.02), INDI (EPS -0.73), CLFD (EPS -0.53), CLPT (EPS -1.18). SOURCE ERRORS CAUGHT '
+ 'AND OVERRIDDEN: (1) stockanalysis printed a CLFD trailing P/E of 94.98 and an ROE of +1.56% while the SAME page '
+ 'prints TTM diluted EPS of -0.53 and net income of -7.22M - a positive P/E and ROE cannot coexist with a loss, so pe '
+ "is set to None and roe to GuruFocus's -2.87%. (2) stockanalysis prints INDI gross margin as -27.05% for every year "
+ "since 2021, which contradicts indie's own income statement (Q2 2026 revenue 64.0M, cost of goods 40.9M, gross profit "
+ '23.1M - clearly positive); gm is therefore taken from GuruFocus at 37.77%. (3) OSS carries a trailing P/E of 220.99 '
+ 'on positive TTM EPS of 0.05, but that EPS is a ONE-OFF GAIN ON THE BRESSNER DIVESTITURE, not operating profit - the '
+ 'same page shows operating margin -1.49%, ROE -18.59% and ROIC -5.48%, and the company reported a 7.3M GAAP net loss '
+ 'in Q2 2026. Treat OSS as operationally loss-making and do not read 221x as an earnings multiple. LOW-CONFIDENCE ROW '
+ '- FPS: four sources print four different trailing P/Es (595.09 / 489.68 / 216.82 / 3,905.00) and three different TTM '
+ 'EPS figures (0.07 / 0.15 / 0.012), a spread far wider than price differences explain, most likely because FPS has a '
+ 'dual-class structure (304.43M shares outstanding vs 244.12M in the current class). The stockanalysis statistics page '
+ 'is used throughout the FPS row for internal consistency, but every per-share FPS metric should be treated as '
+ 'provisional. ANALYST RANGES come from stockanalysis except CLFD, where the stockanalysis forecast page is stale '
+ "(last updated 2026-05-07, quoting a price of 40.45) and MarketBeat's fresher 7-analyst 38/41.75/45 is used instead. "
+ 'Analyst counts conflicted on every single new name (OSS 3 vs 6, VPG 3 vs 4, AMBQ 6 vs 9, INDI 8 vs 4, KTOS 21 vs 22, '
+ 'SITM 9 vs 11, CLFD 4 vs 7, FPS 10 vs 14, CLPT 3 vs 3, TMDX 12 vs 13) and were NOT averaged. EARNINGS DATES: none of '
+ 'the nine has a company-confirmed next date. Estimates only - OSS ~Nov 4, VPG ~Nov 3, INDI ~Nov 5, KTOS ~Nov 3, SITM '
+ '~Nov 4, TMDX ~Nov 4; AMBQ, CLFD, FPS and CLPT had no date at all. WORTH KNOWING ON THE NEW NAMES: SITM completed its '
+ 'acquisition of the Renesas Timing Business on 1 July 2026 (adds 550+ clocking products and a projected 300M+ of '
+ 'revenue in the following 12 months) and guided Q3 to 285-295M against 157.4M in Q2 - its largest end customer was '
+ '17% of 2025 revenue, down from 22%. CLFD cut FY2026 guidance to 151-155M on BEAD-programme delays and its order '
+ 'backlog fell 34% in one quarter to 21.0M, but it booked a first 22M hyperscale data-centre order. CLPT cut FY2026 '
+ 'revenue guidance from 52-56M to 48-52M on 3 Aug and fell 16.3% the next day; it supports 60+ biologics partner '
+ 'programmes. KTOS raised roughly 1.2B of equity at 84.00/share in February 2026 and carries a 2.084B backlog with 68% '
+ "of revenue from US Government customers. AMBQ's IPO lock-up from its June follow-on expired on 23 August 2026, the "
+ 'day before this build. TMDX has two plaintiff-law-firm fiduciary-duty investigations announced on 3 and 17 August '
+ '2026 - these are solicitations, and NO DOJ or SEC inquiry was found; the only short-seller report is Scorpion '
+ "Capital's from January 2025, which the company publicly rejected and against which it spent about 1.8M in legal "
+ 'costs in the first half of 2026. Aug 21, 2026 - close. Space group corrected against two independent sources: SPCX '
+ '(SpaceX) was stale at 146.23 / Aug 17 and is now the verified Aug 21 close of 136.97 (52-wk low 104.83, 35 analysts, '
+ 'targets 75 / 213.50 / 450). ASTS repriced to 68.65 with post-Q2 revenue 115.3M (52-wk range 36.08-133.86, 13 '
+ 'analysts, 42.50 / 78.48 / 108). RKLB revenue updated to 769.15M post-Q2 (P/S 56.47, 18 analysts, 64 / 112.94 / 150). '
+ 'No position changes; no cash movement. Aug 21, 2026 - close. S (SentinelOne, NYSE) and OKTA (Okta, NASDAQ) ADDED to '
+ 'Cybersecurity, placed side by side at the end of that group, which goes from 6 names to 8: CRWD, PANW, ZS, FTNT, '
+ 'NET, RBRK, S, OKTA. Both are WATCHLIST-ONLY with no position, no budget and no shares. Priced at the verified Aug 21 '
+ 'close: S 21.19 (+1.19%), OKTA 135.14 (+0.73%), each chain-validated against the Aug 20 close and second-sourced. '
+ "SentinelOne's history table was STALE with no Aug 21 row at all, so its close came from the at-close quote page and "
+ "was confirmed twice - a cache-busted history render and companiesmarketcap - and sits inside the day's 20.43-21.28 "
+ 'range on normal volume. *** BOTH REPORT NEXT WEEK, COMPANY-CONFIRMED: OKTA on WEDNESDAY AUG 26 and S on THURSDAY AUG '
+ '27. That is the same week as NVDA, SNPS and CRM on Aug 26 and MRVL on Aug 27 - five confirmed prints in two days. '
+ '*** The two are NOT competitors and sit on different layers: SentinelOne is endpoint and XDR threat detection and '
+ 'response; Okta is identity and access management, the login control plane. Their financial profiles are near '
+ 'opposites - Okta is GAAP-PROFITABLE (TTM EPS +1.38, net margin 8.24%, 911M of free cash flow) growing 11.7%, while '
+ 'SentinelOne is GAAP LOSS-MAKING (EPS -0.96, net margin -30.38%, 61.8M of free cash flow) growing 21.4%. S therefore '
+ 'carries pe=None; any trailing P/E quoted for it anywhere is fictitious. ath is the TRUE all-time high on a closing '
+ 'basis - S 76.30 set 2021-11-12 and OKTA 291.78 set 2021-02-12, both from the 2021 software bubble - NOT the 52-week '
+ 'high proxy that most other rows carry. S is 72.2% below its all-time high and OKTA 53.7% below, and both fields are '
+ 'sourced rather than approximated. SOURCE CONFLICTS RESOLVED AND RECORDED: OKTA forward P/E is 34.40 on stockanalysis '
+ "against 77.22 on MarketBeat - 34.40 is used because it reconciles to Okta's own FY27 non-GAAP EPS guidance of "
+ "3.79-3.87, while MarketBeat's is evidently GAAP-based; OKTA market cap 23.49B is used over the statistics page's "
+ '23.55B because 173.81M shares x 135.14 = 23.49B exactly; analyst ranges come from stockanalysis (S 35 analysts '
+ '15/21.52/28, OKTA 44 analysts 75/146.23/180) rather than MarketBeat, which disagreed on count and average. NOTHING '
+ 'ELSE CHANGED: all 50 invested names remain at the verified Aug 21 close, the book still ties to POEMS exactly at '
+ 'cost 585,939.60 and market value 687,458.90, and cash stays 8,604.24.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -2503,37 +2536,6 @@ STOCKS = [{'an': 83,
   'roe': -18.01,
   'roi': -13.87,
   't': 'OUST'},
- {'an': 28,
-  'ath': 497.36,
-  'budget': None,
-  'capexB': 0.196,
-  'eps': 9.63,
-  'epsG': None,
-  'ex': 'NYSE',
-  'fcfB': 1.34,
-  'fpe': 33.21,
-  'fvAvg': 473.61,
-  'fvMax': 555,
-  'fvMin': 282,
-  'g': 6,
-  'gm': 48.92,
-  'hi52': 480.98,
-  'jan2': 392.0,
-  'lo52': 305.44,
-  'mcapB': 47.8127,
-  'name': 'Rockwell Automation',
-  'pe': 47.58,
-  'peg': 2.3,
-  'pm': 12.36,
-  'price': 429.69,
-  'ps': 5.79,
-  'pxd': '2026-08-24',
-  'r40': 22.7,
-  'revB': 8.8,
-  'revG': 7.5,
-  'roe': 27.18,
-  'roi': 19.07,
-  't': 'ROK'},
  {'an': 18,
   'ath': 87.88,
   'budget': None,
@@ -5665,6 +5667,37 @@ STOCKS = [{'an': 83,
   'roe': 81.89,
   'roi': 36.58,
   't': 'MMM'},
+ {'an': 28,
+  'ath': 495.08,
+  'budget': None,
+  'capexB': 0.228,
+  'eps': 10.67,
+  'epsG': 25.25,
+  'ex': 'NYSE',
+  'fcfB': 1.5,
+  'fpe': 29.7,
+  'fvAvg': 477.79,
+  'fvMax': 550,
+  'fvMin': 282,
+  'g': 20,
+  'gm': 49.09,
+  'hi52': 497.36,
+  'jan2': 398.55,
+  'lo52': 332.71,
+  'mcapB': 47.72,
+  'name': 'Rockwell Automation',
+  'pe': 40.27,
+  'peg': 2.3,
+  'pm': 13.38,
+  'price': 429.69,
+  'ps': 5.32,
+  'pxd': '2026-08-24',
+  'r40': 28.03,
+  'revB': 8.973,
+  'revG': 11.31,
+  'roe': 30.63,
+  'roi': 21.36,
+  't': 'ROK'},
  {'an': 18,
   'ath': None,
   'budget': None,
