@@ -3,7 +3,47 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Aug 24, 2026 - close. ROK RECLASSIFIED: Rockwell Automation moved from group 6 (Robotic / Automation / EV) to group '
+ASOF = ('Aug 24, 2026 - close. INTC ANALYST DATA CORRECTED. The row was carrying an=85 analysts; the actual current coverage '
+ 'is 48 (stockanalysis, consensus HOLD) or 50 (MarketBeat, also HOLD). 85 was badly stale and made the consensus look '
+ 'far broader than it is. Corrected to 48 with the matching stockanalysis targets: 60 / 110.04 / 200 -> 75 / 114.88 / '
+ "200. MarketBeat's parallel set is 50 analysts, 50.00 / 107.46 / 200 - RECORDED, NOT AVERAGED. Both houses rate INTC "
+ 'HOLD, and the low targets differ by 50% (75 vs 50), which is itself the story: the dispersion on this name is '
+ 'enormous. TWO MORE FIELDS FIXED AT THE SAME TIME: (1) lo52 18.97 -> 23.68 as the trailing 52-week window rolled - '
+ 'stockanalysis, MarketBeat and GuruFocus all agree on 23.68 (marketscreener printed 22.78 but its page was stale at '
+ '14 Aug, so it is not used). (2) mcapB 440.1453 -> 458.12. The old figure was computed on the PRE-OFFERING share '
+ 'count of about 5.04 billion. Intel priced a 20 BILLION DOLLAR common stock offering on 11 August 2026 - 210,526,315 '
+ 'shares at 95.00 - taking shares outstanding to 5.25 billion. 5.25B x 87.26 = 458.12B. P/S recomputed 8.60 -> 8.52 so '
+ 'market cap, revenue and P/S stay internally consistent. Note the offering priced at 95.00 and INTC closed 24 Aug at '
+ '87.26, so those buyers are 8.1% underwater; CEO Lip-Bu Tan bought 105,263 shares at 95.00 on 11 Aug for about 10M '
+ 'USD and is underwater by the same margin. THREE FIELDS DELIBERATELY LEFT ALONE, with the reason recorded rather than '
+ 'a guess written in: (a) fpe stays 84.76. Four sources disagree violently - stockanalysis 52.52, GuruFocus 57.87, '
+ 'MarketBeat 88.18, dashboard 84.76 - and all three external reads were captured INTRADAY on 25 Aug with the market '
+ 'open, so they are struck against a moving price rather than the 24 Aug close this row uses. The spread implies '
+ "forward EPS anywhere from 0.99 to 1.66. Intel's own Q3 guidance is non-GAAP EPS of 0.38, which annualises near 1.52, "
+ 'but whether consensus is on a 2026 or 2027 base could not be established. Writing any single number would have been '
+ "a guess. (b) revG stays 1.4%. That is a trailing-twelve-month figure and it LAGS BADLY: Intel's Q2 2026 revenue was "
+ '16.1B, UP 25% year on year, its fastest growth in about 15 years, with Data Center and AI up 59%. The TTM figure has '
+ 'not caught up and the full four-quarter series needed to recompute it was not retrievable. Read revG on this row as '
+ 'historic, not current. (c) pm stays -5.9% and pe stays null. Intel is GAAP LOSS-MAKING - trailing twelve-month net '
+ 'loss of about 11.29B USD and Q2 2026 GAAP EPS of -2.16 - so pe=None is correct. But the margin is distorted by a '
+ "NON-CASH mark-to-market on the US government's escrowed shares, recorded at -13,619M for the six months to 27 June "
+ '2026, a liability remeasurement that grows as INTC rises. GAAP net income on this name is not a stable series and '
+ 'any single pm figure will mislead. CONTEXT WORTH KEEPING ON THE ROW: the US Department of Commerce holds 433.3 '
+ 'million shares bought for 8.9B USD at a blended 20.47, funded from previously awarded CHIPS Act grants (5.7B) and '
+ 'Secure Enclave (3.2B), NOT new appropriation. It is PASSIVE - no board seat, no governance or information rights, '
+ 'and it votes with the board. But it also holds a FIVE-YEAR WARRANT for an additional 5% at 20.00 per share, '
+ 'exercisable ONLY IF INTEL CEASES TO OWN AT LEAST 51% OF THE FOUNDRY BUSINESS. That effectively bolts shut the '
+ "foundry spin-off, which was arguably the largest value-unlock available to shareholders, and Intel's own filing "
+ "warns the government interest 'may substantially limit the company's ability to pursue potential future strategic "
+ "transactions that may be beneficial to stockholders'. CFO David Zinsner: 'they didn't want to see us take the "
+ "business and spin it off or sell it to somebody'. THE FOUNDRY NUMBER THAT DECIDES THE THESIS: of Intel Foundry's "
+ '5.8B of Q2 2026 revenue, only about 293M - roughly 5% - came from customers other than Intel. NO external customer '
+ 'has been publicly confirmed on 18A or on 14A. The one named external foundry customer, Fortinet in July 2026, is on '
+ 'INTEL 4, a mature node, not the leading edge. DILUTION SINCE AUG 2025: government 433.3M + NVIDIA 217.4M at 23.28 + '
+ "SoftBank about 87M at 23.00 + the August 2026 offering 210.5M = roughly 948M new shares. Bank of America's Vivek "
+ 'Arya estimates the offering alone cuts 2026 EPS by 4-5%. Position unchanged: 45 shares at 45.10, cost 2,029.60, now '
+ '+93.5%, 0.58% of the book and ranked 28th of 50 holdings. No price, position, budget or cash change in this commit. '
+ 'Aug 24, 2026 - close. ROK RECLASSIFIED: Rockwell Automation moved from group 6 (Robotic / Automation / EV) to group '
  "20 (Industrial STX) at Salee's instruction, placed at the end of that group which goes from 4 names to 5: CAT, DE, "
  'GE, MMM, ROK. Robotic / Automation / EV drops from 11 names to 10. REASON, ON THE RECORD: Rockwell is NOT a robotics '
  'company and the old classification was misleading. Its own reporting has exactly three segments - Intelligent '
@@ -521,7 +561,7 @@ STOCKS = [{'an': 83,
   'roe': 16.03,
   'roi': 6.87,
   't': 'MRVL'},
- {'an': 85,
+ {'an': 48,
   'ath': 142.35,
   'budget': 5000,
   'capexB': 13.1,
@@ -530,21 +570,21 @@ STOCKS = [{'an': 83,
   'ex': 'NASDAQ',
   'fcfB': -3.12,
   'fpe': 84.76,
-  'fvAvg': 110.04,
+  'fvAvg': 114.88,
   'fvMax': 200,
-  'fvMin': 60,
+  'fvMin': 75,
   'g': 1,
   'gm': 37.2,
   'hi52': 142.35,
   'jan2': 37.77,
-  'lo52': 18.97,
-  'mcapB': 440.1453,
+  'lo52': 23.68,
+  'mcapB': 458.12,
   'name': 'Intel',
   'pe': None,
   'peg': 1.18,
   'pm': -5.9,
   'price': 87.26,
-  'ps': 8.6,
+  'ps': 8.52,
   'pxd': '2026-08-24',
   'r40': -4.4,
   'revB': 53.76,
