@@ -23,7 +23,12 @@ ASOF = ('Aug 25, 2026 - close. Daily price refresh: 154 of 180 prices updated to
  'SA pages bad): ASTS 62.01 (Google+marketscreener), INDI 3.96 (Google), OSS 11.11 (marketscreener), VPG 64.45 '
  '(marketscreener), SIDU 2.27 (marketscreener), QNT 53.91 (fool.com, 2c uncertainty vs Google 3:58PM 53.89), TMDX '
  '93.60 (fool.com), CLPT 16.96 (SA history + cerbatgem). JNJ quote prev-close field printed 271.70 vs true 273.04 - '
- 'price 273.14 cross-checked against history row.')
+ 'price 273.14 cross-checked against history row. | Aug 26, 2026 edit: GFS (GlobalFoundries) reclassified from group 1 '
+ 'Computing Chips to group 2 Chips Manufacturing - GFS is a pure-play wafer foundry, not a fabless chip designer; it '
+ 'exited leading-edge development in 2018 when it cancelled its 7nm programme and its portfolio now runs 12LP FinFET '
+ 'down to 180nm (source: GF Q2 2026 results 5 Aug 2026; TrendForce 1Q26 foundry share 12 Jun 2026 places GFS at 3.3% '
+ 'vs TSMC 72%). Budgets opened at user request: CAT $10,000 and ZS $10,000 (watchlist budgets only - no shares held, '
+ 'no cost basis). No prices, positions, cash or totals touched in this edit.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -587,7 +592,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 76.76,
   'fvMax': 140,
   'fvMin': 55,
-  'g': 1,
+  'g': 2,
   'gm': 27.14,
   'hi52': 92.55,
   'jan2': None,
@@ -5731,7 +5736,7 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'UBER': {'budget': None, 'cost': None, 'shares': None},
  'CRWD': {'budget': 10000, 'cost': 3914.12, 'shares': 40},
  'PANW': {'budget': 10000, 'cost': 3760.62, 'shares': 22},
- 'ZS': {'budget': None, 'cost': None, 'shares': None},
+ 'ZS': {'budget': 10000.0, 'cost': None, 'shares': None},
  'NET': {'budget': None, 'cost': None, 'shares': None},
  'FTNT': {'budget': None, 'cost': None, 'shares': None},
  'POET': {'budget': None, 'cost': None, 'shares': None},
@@ -5776,7 +5781,7 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'NFLX': {'budget': None, 'cost': None, 'shares': None},
  'BKNG': {'budget': None, 'cost': None, 'shares': None},
  'WDAY': {'budget': None, 'cost': None, 'shares': None},
- 'CAT': {'budget': None, 'cost': None, 'shares': None},
+ 'CAT': {'budget': 10000.0, 'cost': None, 'shares': None},
  'DE': {'budget': None, 'cost': None, 'shares': None},
  'GE': {'budget': None, 'cost': None, 'shares': None},
  'MMM': {'budget': None, 'cost': None, 'shares': None},
