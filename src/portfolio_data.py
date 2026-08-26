@@ -28,7 +28,13 @@ ASOF = ('Aug 25, 2026 - close. Daily price refresh: 154 of 180 prices updated to
  'exited leading-edge development in 2018 when it cancelled its 7nm programme and its portfolio now runs 12LP FinFET '
  'down to 180nm (source: GF Q2 2026 results 5 Aug 2026; TrendForce 1Q26 foundry share 12 Jun 2026 places GFS at 3.3% '
  'vs TSMC 72%). Budgets opened at user request: CAT $10,000 and ZS $10,000 (watchlist budgets only - no shares held, '
- 'no cost basis). No prices, positions, cash or totals touched in this edit.')
+ 'no cost basis). No prices, positions, cash or totals touched in this edit. | Aug 26, 2026 edit 2: TSEM (Tower '
+ 'Semiconductor) reclassified from group 1 Computing Chips to group 2 Chips Manufacturing, completing the foundry '
+ 'cleanup begun with GFS. Tower is a pure-play specialty foundry - it manufactures analog, RF, power and '
+ 'silicon-photonics wafers to customer designs and sells no chips of its own, so it belongs with the '
+ 'manufacturing/equipment names rather than beside fabless designers such as NVDA and AMD. TrendForce 1Q26 foundry '
+ 'share (12 Jun 2026) lists Tower at 0.8%. Group 1 now 13 names, group 2 now 10. No prices, positions, budgets, cash '
+ 'or totals touched in this edit.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -561,7 +567,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 321.32,
   'fvMax': 355,
   'fvMin': 278,
-  'g': 1,
+  'g': 2,
   'gm': 26.87,
   'hi52': 319.94,
   'jan2': None,
