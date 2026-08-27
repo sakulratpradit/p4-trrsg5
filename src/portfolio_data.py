@@ -34,7 +34,30 @@ ASOF = ('Aug 25, 2026 - close. Daily price refresh: 154 of 180 prices updated to
  'silicon-photonics wafers to customer designs and sells no chips of its own, so it belongs with the '
  'manufacturing/equipment names rather than beside fabless designers such as NVDA and AMD. TrendForce 1Q26 foundry '
  'share (12 Jun 2026) lists Tower at 0.8%. Group 1 now 13 names, group 2 now 10. No prices, positions, budgets, cash '
- 'or totals touched in this edit.')
+ 'or totals touched in this edit. | Aug 26, 2026 edit 3 - NUCLEAR GROUP (group 16) PRICE AUDIT, user-requested. All 11 '
+ 'group-16/adjacent tickers (CEG VST GEV BWXT OKLO SMR NNE CCJ UUUU LEU XE) had their Aug 25, 2026 closes re-verified '
+ 'against TWO independent non-blacklisted sources each (stockanalysis.com /history/ tables plus stockinvest.us, '
+ 'MarketBeat /price-history/ captured at or after 4:00 PM ET, Google Finance, companiesmarketcap). RESULT: ALL 11 '
+ 'CLOSES CONFIRMED CORRECT - NO PRICE CHANGED. Each row was validated so that close sits within its own high/low, open '
+ 'within range, volume non-trivial, and the row is explicitly dated Aug 25. The earlier suspicion that CEG (273.43), '
+ 'VST (136.21) and GEV (942.10) were mis-sourced by the fallback path was a FALSE ALARM - those three figures came '
+ 'from a looser secondary read and the stored 278.42 / 139.03 / 926.73 are right. Noted for the record: four '
+ 'MarketBeat /price-history/ pages snapshotted at 3:58 PM ET (pre-closing-auction) show VST 139.09, GEV 925.74, BWXT '
+ '149.51, OKLO 44.23 - these are pre-auction prints, NOT closes, and were rejected. FIELDS ACTUALLY CORRECTED IN THIS '
+ 'EDIT: (a) four stale 52-week lows that had rolled out of the trailing window - BWXT 136.18->147.74, NNE None->14.71, '
+ 'CCJ 68.96->73.20, UUUU 8.16->10.65; (b) two market caps carrying stale share counts after equity issuance - OKLO '
+ '7.7069->8.2351 (186.02M shares per the 10-Q cover dated 7 Aug 2026, up from ~174M implied; Oklo sold $1.85bn of '
+ 'stock in H1 2026 via a $1bn ATM launched 14 May 2026, share count +29.85% YoY) and SMR 3.6006->4.2155 (429.72M '
+ 'shares vs ~367M implied). Both recomputed as verified shares x the verified Aug 25 close, so price and market cap '
+ "scale together. CORRECTION TO THE Aug 25 REFRESH NOTE ABOVE: that note described OKLO's Aug 25 close as an 'ATH "
+ "after $440M raise'. BOTH HALVES ARE WRONG. Oklo's $400M offering (6,666,667 shares at $60.00, ~$441.6M net) priced "
+ '12 Jun 2025 - there is NO Oklo capital raise in Aug 2026; EDGAR shows only Form 4s and 144s (insider sales) between '
+ '7 and 26 Aug 2026. And $44.27 is NOT an all-time high: the ATH close was $174.14 on 14 Oct 2025, so the stock is '
+ '~75% below its peak and ~41% down YTD. The actual Aug 25 catalyst was a DOE startup/operational authorization for '
+ "the 100-watt Groves isotope test reactor in Lockhart, Texas. OPEN ITEM NOT FIXED: OKLO 'ath' field reads 163.39, "
+ 'which is below its own hi52 of 193.84 - internally impossible. Verified ATH close is 174.14 (single source, '
+ 'companiesmarketcap) while hi52 193.84 is intraday-basis, so the two fields are on different bases. Left unchanged '
+ 'pending a two-sourced intraday all-time high. No price, position, budget, cash, realized P/L or total was touched.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -1811,7 +1834,7 @@ STOCKS = [{'an': 83,
   'gm': 22.08,
   'hi52': 241.82,
   'jan2': 174.53,
-  'lo52': 136.18,
+  'lo52': 147.74,
   'mcapB': 13.8539,
   'name': 'BWX Technologies',
   'pe': 41.19,
@@ -1843,7 +1866,7 @@ STOCKS = [{'an': 83,
   'hi52': 193.84,
   'jan2': 105.31,
   'lo52': 36.61,
-  'mcapB': 7.7069,
+  'mcapB': 8.2351,
   'name': 'Oklo',
   'pe': None,
   'peg': None,
@@ -1874,7 +1897,7 @@ STOCKS = [{'an': 83,
   'hi52': 57.42,
   'jan2': 20.51,
   'lo52': 7.21,
-  'mcapB': 3.6006,
+  'mcapB': 4.2156,
   'name': 'NuScale Power',
   'pe': None,
   'peg': None,
@@ -1904,7 +1927,7 @@ STOCKS = [{'an': 83,
   'gm': None,
   'hi52': 60.87,
   'jan2': 32.01,
-  'lo52': None,
+  'lo52': 14.71,
   'mcapB': 1.0331,
   'name': 'Nano Nuclear Energy',
   'pe': None,
@@ -1935,7 +1958,7 @@ STOCKS = [{'an': 83,
   'gm': 35.11,
   'hi52': 135.24,
   'jan2': 107.56,
-  'lo52': 68.96,
+  'lo52': 73.2,
   'mcapB': 46.6489,
   'name': 'Cameco',
   'pe': 151.07,
@@ -2028,7 +2051,7 @@ STOCKS = [{'an': 83,
   'gm': 40.85,
   'hi52': 27.9,
   'jan2': None,
-  'lo52': 8.16,
+  'lo52': 10.65,
   'mcapB': 3.9864,
   'name': 'Energy Fuels',
   'pe': None,
