@@ -20,7 +20,24 @@ ASOF = ('Aug 26, 2026 - close. Daily price refresh: 178 of 180 prices updated to
  'playbook (quote page won): CCJ MA ON AEHR WDAY MCHP ZETA MTSI NU TE QNT DE AXON HUT FN MELI MMM RCAT TEM MPWR PENG '
  'FSLR AFRM RIOT KLAC HPE KTOS NNE. SOUN history row internally impossible (close 7.25 > high 7.24) - discarded, quote '
  '7.01 used. Post-close after-hours moves NOT included per regular-session rule: OKTA +20.9%, CRWD +10.5%, VEEV +9.4%, '
- 'CRM, PANW +4.6%, AXTI +7.7%.')
+ "CRM, PANW +4.6%, AXTI +7.7%. | Aug 27, 2026 edit: NVDA budget raised 85,000 -> 100,000 USD at user's instruction, "
+ 'framed by him as 10% of a 1,000,000 USD target size for the whole Pillar-4 US portfolio; that 1.0M target is now '
+ "recorded as TOTALS['targetUSD'] so the 10% rule is auditable rather than a number in a chat. Position unchanged at "
+ '411 shares, cost 77,340.96, so unused NVDA room goes 7,659.04 -> 22,659.04. Context at the Aug 26 close (NVDA '
+ '209.66): NVDA market value 86,170.26 = 12.51% of the 688,606.76 equity book and 8.62% of the 1.0M target - i.e. the '
+ "budget is a CEILING that only equals 10% once the book actually reaches 1.0M; at today's book size a fully-used 100k "
+ 'budget would be ~14.5%. Rationale: Q2 FY2027 (quarter ended 26 Jul 2026, reported 26 Aug 2026 AMC) revenue 96.221bn '
+ "(+106% YoY) vs consensus ~92.07bn and vs NVIDIA's own 91bn +/-2% guide; non-GAAP EPS 2.22 vs 2.09 consensus; Q3 FY27 "
+ "guide 108.0bn +/-2% vs ~104bn consensus, with ZERO China data-center compute revenue assumed; and NVIDIA's "
+ 'first-ever year-ahead guide of approximately 70% FY2028 revenue growth (Kress), roughly 100bn above street, which '
+ "Huang framed as supply-limited not demand-limited ('We have supply for 70%. Our demand is much higher than that'). "
+ 'RISKS ON THE RECORD AGAINST THIS BUDGET INCREASE: gross margin guided DOWN 75.0% -> 74.0% (Q3) -> 71-72% trough (Q4) '
+ "-> 72-73% (FY28) on memory cost inflation Kress called 'extreme' and 'headed even higher'; supply commitments more "
+ 'than doubled 119bn -> 279bn, primarily memory; DSO 45 -> 60 days; and 108.5bn of maximum gross guarantee exposure to '
+ "customers ('circular financing'), which is a RISK not a strength. CONCENTRATION FLAG: groups 0-4 (the AI complex) "
+ 'are 591,139.17 = 85.85% of the equity book; largest non-AI holding is under 2.1%. Standing condition attached to '
+ 'this increase: the next 10,000 USD of genuinely new money goes to NON-AI names. No position, price, cash, realized '
+ 'P/L or other budget was touched in this edit.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -5631,7 +5648,7 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'MSFT': {'budget': 60000, 'cost': 52878.96, 'shares': 117},
  'META': {'budget': 50000, 'cost': 39239.51, 'shares': 59.5},
  'AAPL': {'budget': 25000, 'cost': 11437.61, 'shares': 46},
- 'NVDA': {'budget': 85000, 'cost': 77340.96, 'shares': 411},
+ 'NVDA': {'budget': 100000.0, 'cost': 77340.96, 'shares': 411},
  'TSM': {'budget': 65000, 'cost': 39921.53, 'shares': 112.5},
  'AVGO': {'budget': 40000, 'cost': 28571.53, 'shares': 84},
  'AMD': {'budget': 25000, 'cost': 13789.22, 'shares': 55},
@@ -6144,7 +6161,8 @@ TOTALS = {'investedEverUSD': 616236.17,
  'realizedUSD': -2478.01,
  'realizedTHB': -83170,
  'fx': 33.75,
- 'inceptionDate': 'Jul 15, 2025'}
+ 'inceptionDate': 'Jul 15, 2025',
+ 'targetUSD': 1000000}
 
 SOLD = [{'t': 'NBIS',
   'qty': 27,
