@@ -62,7 +62,40 @@ ASOF = ('Aug 28, 2026 - close. Full manual price refresh: ALL 180 of 180 prices 
  'tranche $1,500 each, not the full budget. PORTFOLIO CONTEXT: these are the two names funding the standing condition '
  'attached to the Aug 27 NVDA budget increase - that the next $10,000 of new money goes to NON-AI names. Groups 0-4 '
  '(the AI complex) stood at $594,953.38 = 85.60% of the $695,053.75 equity book at the Aug 28 close. No position, '
- 'price, cash, realized P/L or other budget was touched in this edit.')
+ 'price, cash, realized P/L or other budget was touched in this edit. | Aug 29, 2026 edit 2 - DASHBOARD HYGIENE, user '
+ "approved. (1) NEW ROW: AEP (American Electric Power Company, Inc., NASDAQ - confirmed on the issuer's own IR page, "
+ 'not NYSE) added to group 18 with a $5,000 watchlist budget, shares None, cost None. All fields sourced to the Aug '
+ '28, 2026 close: price 122.31 (three-source confirmed - stockanalysis.com, MarketBeat and aep.com/investors/stock all '
+ 'stamped 4:00 PM ET; row validated O 123.38 / H 123.85 / L 121.88 / C 122.31 / vol 2,607,424, close inside its own '
+ 'range). hi52 140.58 (intraday, 7 Jul 2026), lo52 105.70, ath 138.69 CLOSE-basis on 26 Jun 2026 per '
+ 'companiesmarketcap (intraday ATH not separately documented - do NOT treat 140.58 as a confirmed intraday ATH), jan2 '
+ '115.81 (genuine 2 Jan 2026 close, not a 31 Dec substitute), mcapB 66.59, pe 21.19, fpe 18.46, ps 2.92, peg 2.09, '
+ 'revB 22.79, revG +10.28, eps 5.77, epsG -15.33 (TTM-vs-prior-TTM; on a fiscal-year basis FY2025 EPS GREW 19.36% to '
+ '6.66 - the TTM decline is a base effect, NOT a guidance cut, guidance was in fact raised), gm 46.35, pm 13.78, roe '
+ '10.13, roi 4.16, fcfB -5.89 (NEGATIVE - heavy build cycle), capexB 13.58 (stored positive per convention), an 23, '
+ 'fvAvg 144.00, fvMax 173, fvMin 129, r40 -15.56, M3 pfcf None (not meaningful on negative FCF), ev 13.24, de 1.61. Q2 '
+ '2026 reported 30 Jul 2026: revenue $5,445M, operating EPS $1.36, full-year guidance RAISED to $6.25-6.55 from '
+ '$6.15-6.45. Long-term target 7-9% operating earnings growth through 2030 on a $78bn 2026-2030 capital plan; 69 GW of '
+ 'contracted load growth through 2030, 6 GW of signed load agreements added in Q2 alone. Dividend $3.80 annualised, '
+ '3.11% yield, 65.82% payout. Beta 0.51. Net debt $52.92bn. Next earnings ~29 Oct 2026 (ESTIMATED). Conflicts '
+ 'recorded, never averaged: TradingEconomics printed 122.08 for the same session against three at-close sources at '
+ '122.31 - 122.31 adopted; gross margin 46.35 (stockanalysis) vs 60.5 (GuruFocus, different cost-of-revenue definition '
+ 'for a regulated utility); peg 2.09 vs 3.55; beta 0.51 / 0.52 / 0.35; analyst panels differ and were NOT blended - '
+ 'stockanalysis 23 analysts avg 144.00 range 129-173, MarketBeat 22 analysts avg 140.19 range 122-154. (2) GROUP 18 '
+ "RENAMED 'Renewal Energy' -> 'Utilities & Power Generation'. The old name never described the group's contents and "
+ "became plainly wrong once AEP joined NEE and NRG. For the record: an earlier suggestion to 'move NEE and NRG into "
+ "the utilities group' was REDUNDANT - both were already in group 18. (3) TWO MISLEADING FIELDS NULLED rather than "
+ "carried forward. NU 'ps' 8.45 -> None: price/sales is meaningless for a BANK, and the figure rested on a net-revenue "
+ "definition that does not match Nu's own reported revenue ($8,442m TTM net vs $5,875.7m reported for Q2 alone) - a "
+ "blank is more honest than a number that invites the wrong comparison. FPS 'pe' 561.65 -> None: the trailing P/E "
+ 'could not be reproduced from any source (215.00 / 484.40 / 486.96 / 2,684.17 - a 12x spread) and is not a usable '
+ 'metric for a February-2026 IPO whose GAAP earnings are suppressed by LBO interest at 1.11x coverage plus '
+ 'purchase-accounting amortisation. FPS forward P/E (33.10) is retained and is the defensible multiple. OPEN AND '
+ 'FLAGGED, NOT ACTED ON: VRT and MYRG sit in group 18 but are neither utilities nor power generators - Vertiv makes '
+ 'data-centre power and cooling equipment and MYR Group is an electrical contractor, so both arguably belong in group '
+ '17 Power and Electrification alongside ETN, HUBB, NVT, POWL and PWR. VRT is a HELD position (14 shares) so moving it '
+ 'shifts group totals; left in place pending explicit approval. No price, position, cash, realized P/L or existing '
+ 'budget was touched in this edit.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -82,7 +115,7 @@ GROUPS = ['Hyperscalers',
  'Cybersecurity',
  'Nuclear Energy',
  'Power and Electrification',
- 'Renewal Energy',
+ 'Utilities & Power Generation',
  'Digital Applications',
  'Industrial STX',
  'Bitcoin']
@@ -4326,7 +4359,7 @@ STOCKS = [{'an': 83,
   'peg': 0.46,
   'pm': 41.92,
   'price': 14.3,
-  'ps': 8.45,
+  'ps': None,
   'pxd': '2026-08-28',
   'r40': None,
   'revB': 7.59,
@@ -4911,7 +4944,7 @@ STOCKS = [{'an': 83,
   'lo52': 25.95,
   'mcapB': 9.2537,
   'name': 'Forgent Power Solutions',
-  'pe': 561.65,
+  'pe': None,
   'peg': 0.47,
   'pm': 2.17,
   'price': 30.4,
@@ -4985,6 +5018,37 @@ STOCKS = [{'an': 83,
   'roe': 11.68,
   'roi': 3.14,
   't': 'NEE'},
+ {'t': 'AEP',
+  'name': 'American Electric Power',
+  'ex': 'NASDAQ',
+  'g': 18,
+  'price': 122.31,
+  'pxd': '2026-08-28',
+  'hi52': 140.58,
+  'lo52': 105.7,
+  'ath': 138.69,
+  'jan2': 115.81,
+  'mcapB': 66.59,
+  'pe': 21.19,
+  'fpe': 18.46,
+  'ps': 2.92,
+  'peg': 2.09,
+  'revB': 22.79,
+  'revG': 10.28,
+  'eps': 5.77,
+  'epsG': -15.33,
+  'gm': 46.35,
+  'pm': 13.78,
+  'roe': 10.13,
+  'roi': 4.16,
+  'fcfB': -5.89,
+  'capexB': 13.58,
+  'an': 23,
+  'fvAvg': 144.0,
+  'fvMax': 173,
+  'fvMin': 129,
+  'r40': -15.56,
+  'budget': None},
  {'an': 29,
   'ath': 351.28,
   'budget': None,
@@ -5847,7 +5911,8 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'SITM': {'budget': None, 'cost': None, 'shares': None},
  'CLFD': {'budget': None, 'cost': None, 'shares': None},
  'FPS': {'budget': None, 'cost': None, 'shares': None},
- 'CLPT': {'budget': None, 'cost': None, 'shares': None}}
+ 'CLPT': {'budget': None, 'cost': None, 'shares': None},
+ 'AEP': {'budget': 5000.0, 'cost': None, 'shares': None}}
 
 TRADES = [{'date': 'Jul 21, 2026',
   'action': 'BUY',
@@ -6895,7 +6960,8 @@ M3 = {'GOOGL': {'pfcf': 72.54, 'ev': 21.6, 'de': 0.18},
  'RIOT': {'pfcf': None, 'ev': None, 'de': 0.4},
  'CRCL': {'pfcf': 23.87, 'ev': 71.94, 'de': 0.0},
  'SNPS': {'pfcf': 28.65, 'ev': 32.94, 'de': 0.32},
- 'OKTA': {'pfcf': 23.86, 'ev': 65.79, 'de': 0.01}}
+ 'OKTA': {'pfcf': 23.86, 'ev': 65.79, 'de': 0.01},
+ 'AEP': {'pfcf': None, 'ev': 13.24, 'de': 1.61}}
 
 METRICS3 = M3  # alias: per-ticker pfcf / ev (EV/EBITDA) / de (Debt/Equity)
 
