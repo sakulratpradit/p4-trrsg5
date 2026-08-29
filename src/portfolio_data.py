@@ -40,7 +40,29 @@ ASOF = ('Aug 28, 2026 - close. Full manual price refresh: ALL 180 of 180 prices 
  "is NOT booked - POS['NVDA'] still reads 411 shares at cost 77,340.96 - because the exact share count and the exact "
  'cost including the 8.56 commission have not been supplied; (2) CASH is still 23,852.79 as of Aug 24 and is now stale '
  "by at least that purchase; (3) TOTALS['investedEverTHB'] 19,834,480 and THBFX['AMAT'] 32.1085 still await the actual "
- 'THB amounts and rates for the AMAT purchase and the 17,173.11 cash injection.')
+ 'THB amounts and rates for the AMAT purchase and the 17,173.11 cash injection. | Aug 29, 2026 edit: watchlist budgets '
+ 'opened at user request - HUBB (Hubbell, group 17 Power and Electrification) $5,000 and SE (Sea Limited, group 19 '
+ 'Digital Applications) $5,000. Both budget-only: shares None, cost None, no shares held. Prices unchanged at the '
+ 'verified Aug 28 close (HUBB 459.66, SE 119.36). RATIONALE ON RECORD. HUBB: chosen over VRT for the next non-AI '
+ 'dollar because Vertiv is 85% data-centre revenue (disclosed in its FY2025 10-K) while Hubbell is 64% '
+ 'electric-utility transmission and distribution, so HUBB adds genuine diversification where VRT would deepen the '
+ 'existing concentration; HUBB trades at 22.59x forward earnings vs VRT 40.20x, carries a 1.21% dividend vs 0.09%, and '
+ 'has a 5-year beta of 0.90 vs 2.08. Behaviour on Fri Aug 28 supported the thesis: HUBB fell 2.26% while the '
+ 'AI-hardware complex fell far harder (MRVL -10.28%, IREN -10.43%, AEHR -11.31%, CCJ -6.85%, AAOI -6.62%). Known '
+ 'negatives recorded: adjusted operating margin fell 50bp YoY to 23.9%, net debt is $5.16bn after the ~$3.0bn NSI '
+ 'Industries acquisition, Grid Automation declined 7% organically in Q1 2026, and Hubbell does NOT disclose its '
+ 'data-centre revenue as a percentage of sales (only growth rates: +65% in Q2 2026, ~+50% guided for FY2026). SE: 48% '
+ 'revenue growth in Q2 2026 (Shopee +48%, Monee +59%, Garena +34%), #1 e-commerce position across all six SEA markets '
+ 'at ~53% share and over 40% of Thai e-commerce, net cash of $4.97bn, and it is neither an AI stock nor a US stock - '
+ 'the diversification argument is the point. Known negatives recorded: EPS missed ($0.70 vs $0.86), adjusted EBITDA '
+ 'grew only 10.6% on 48% revenue growth and fell sequentially from about $1.0bn to $917m, sales and marketing spend '
+ 'grew 65% - faster than revenue, loan-loss provisions grew 71.5% against a loan book up 62.5% (the provision line is '
+ 'the tell, not the headline 1.0% NPL on a fast-growing denominator), TikTok Shop grew SEA volume 100% in 2025 to '
+ "roughly two-thirds of Shopee's size, and Garena is 9.6% of revenue but 47% of segment profit. Suggested first "
+ 'tranche $1,500 each, not the full budget. PORTFOLIO CONTEXT: these are the two names funding the standing condition '
+ 'attached to the Aug 27 NVDA budget increase - that the next $10,000 of new money goes to NON-AI names. Groups 0-4 '
+ '(the AI complex) stood at $594,953.38 = 85.60% of the $695,053.75 equity book at the Aug 28 close. No position, '
+ 'price, cash, realized P/L or other budget was touched in this edit.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -5744,7 +5766,7 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'NU': {'budget': None, 'cost': None, 'shares': None},
  'SHOP': {'budget': None, 'cost': None, 'shares': None},
  'MELI': {'budget': None, 'cost': None, 'shares': None},
- 'SE': {'budget': None, 'cost': None, 'shares': None},
+ 'SE': {'budget': 5000.0, 'cost': None, 'shares': None},
  'UBER': {'budget': None, 'cost': None, 'shares': None},
  'CRWD': {'budget': 10000, 'cost': 3914.12, 'shares': 40},
  'PANW': {'budget': 10000, 'cost': 3760.62, 'shares': 22},
@@ -5764,7 +5786,7 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'PWR': {'budget': None, 'cost': None, 'shares': None},
  'POWL': {'budget': None, 'cost': None, 'shares': None},
  'NVT': {'budget': None, 'cost': None, 'shares': None},
- 'HUBB': {'budget': None, 'cost': None, 'shares': None},
+ 'HUBB': {'budget': 5000.0, 'cost': None, 'shares': None},
  'VEEV': {'budget': None, 'cost': None, 'shares': None},
  'CORZ': {'budget': None, 'cost': None, 'shares': None},
  'FLNC': {'budget': None, 'cost': None, 'shares': None},
