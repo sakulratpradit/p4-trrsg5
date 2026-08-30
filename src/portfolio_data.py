@@ -109,7 +109,30 @@ ASOF = ('Aug 28, 2026 - close. Full manual price refresh: ALL 180 of 180 prices 
  "uranium/enrichment fuel cycle. Not one of the eight operates a commercial power reactor: OKLO's only running unit is "
  "the 100-watt Groves isotope test reactor, NuScale's sole US customer project was cancelled in Nov 2023, NNE targets "
  "first deployment in 2030, and XE only listed in Apr 2026. Calling that group 'Nuclear Energy' implied generation "
- 'that does not exist. No price, position, budget, cash, realized P/L or total was touched.')
+ 'that does not exist. No price, position, budget, cash, realized P/L or total was touched. | Aug 29, 2026 edit 4 - '
+ "FULL POEMS RECONCILIATION against the user's Settled+Outstanding Positions screen (Aug 28, 2026 close basis; NASD "
+ 'subtotal cost 489,987.97 / MV 586,267.60, NYSE subtotal cost 99,915.51 / MV 110,761.22, TOTAL cost 589,903.48 / MV '
+ '697,028.82 / unrealized +107,125.34 = +18.16%). All 50 positions matched one-for-one - no position only in POEMS, '
+ 'none only on the board - and only FOUR rows differed. (1) NVDA BOOKED AT LAST: 411 -> 420 shares, cost 77,340.96 -> '
+ '79,380.28, i.e. +9 shares for +2,039.32. Implied fill (2,039.32 - 8.56 commission) / 9 = $225.6400 per share - the '
+ "user had described it as 'about $226', so the actual fill was 36 cents better. New average cost 189.00067, which "
+ "ties to the POEMS 'Average Price' column to five decimals. NVDA market value 420 x 217.55 = 91,371.00, matching "
+ 'POEMS exactly. Unused NVDA room against the $100,000 budget falls 22,659.04 -> 20,619.72. This purchase had been '
+ "deliberately left unbooked since Aug 27 rather than estimated. (2-4) THREE PRICES CORRECTED TO THE BROKER'S MARK: "
+ 'APH 157.76 -> 157.74, ISRG 372.55 -> 372.60, ZETA 30.40 -> 30.54. NOTEWORTHY: all three were already on record in '
+ 'the Aug 28 refresh as UNRESOLVED two-source conflicts (APH 157.76 vs 157.74; ISRG 372.55 vs 372.60; ZETA 30.40 vs '
+ '30.56), and in every one of the three POEMS confirms the value that was NOT adopted. Lesson recorded for future '
+ "refreshes: where two sources disagree on a close by a few cents, the broker's own mark is the tie-breaker and should "
+ "be sought before adopting either. mcapB, pe, fpe and ps were rescaled by each ticker's exact price ratio so market "
+ 'cap and price continue to scale together. (5) LEDGER UPDATED FOR THE NVDA LOT: MONTHLY 2026-08 buyLots 20 -> 21, '
+ 'buyUSD 37,460.90 -> 39,500.22, byGroup g1 7,838.23 -> 9,877.55, byStock NVDA 1,983.61 -> 4,022.93 (byStock re-sorted '
+ 'descending). TOTALS investedEverUSD 616,236.17 -> 618,275.49. AFTER THIS EDIT THE BOARD TIES TO POEMS WITH ZERO '
+ 'DELTA ON BOTH COST AND MARKET VALUE. STILL OUTSTANDING - the positions screen does not show them: (a) CASH remains '
+ "23,852.79 as of Aug 24 and is now stale by at least the 2,039.32 NVDA debit; the POEMS 'Cash Balance' screen is "
+ "needed. (b) TOTALS ['investedEverTHB'] 19,834,480 and THBFX['AMAT'] 32.1085 still await the actual THB amounts and "
+ "rates for the AMAT purchase and the 17,173.11 injection. (c) TOTALS['soldCostUSD'] 34,025.62 plus held cost "
+ '589,903.48 = 623,929.10, which exceeds investedEverUSD 618,275.49 by 5,653.61 - a pre-existing reconciliation gap '
+ 'that predates this edit and is unchanged by it.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -1422,12 +1445,12 @@ STOCKS = [{'an': 83,
   'hi52': 178.52,
   'jan2': 137.12,
   'lo52': 102.76,
-  'mcapB': 194.5198,
+  'mcapB': 194.4951,
   'name': 'Amphenol',
-  'pe': 42.14,
+  'pe': 42.13,
   'peg': 1.76,
   'pm': 17.24,
-  'price': 157.76,
+  'price': 157.74,
   'ps': 6.95,
   'pxd': '2026-08-28',
   'r40': 72.3,
@@ -2352,12 +2375,12 @@ STOCKS = [{'an': 83,
   'hi52': 603.88,
   'jan2': 566.78,
   'lo52': 328.57,
-  'mcapB': 131.6096,
+  'mcapB': 131.6273,
   'name': 'Intuitive Surgical',
-  'pe': 39.28,
+  'pe': 39.29,
   'peg': 1.93,
   'pm': 28.45,
-  'price': 372.55,
+  'price': 372.6,
   'ps': 11.0,
   'pxd': '2026-08-28',
   'r40': 47.4,
@@ -3180,7 +3203,7 @@ STOCKS = [{'an': 83,
   'epsG': None,
   'ex': 'NYSE',
   'fcfB': 0.22,
-  'fpe': 27.51,
+  'fpe': 27.64,
   'fvAvg': 28.68,
   'fvMax': 44,
   'fvMin': 22,
@@ -3189,13 +3212,13 @@ STOCKS = [{'an': 83,
   'hi52': 29.62,
   'jan2': 20.54,
   'lo52': 14.37,
-  'mcapB': 7.573,
+  'mcapB': 7.6079,
   'name': 'Zeta Global',
   'pe': None,
   'peg': 0.73,
   'pm': -0.14,
-  'price': 30.4,
-  'ps': 4.06,
+  'price': 30.54,
+  'ps': 4.08,
   'pxd': '2026-08-28',
   'r40': 50.0,
   'revB': 1.57,
@@ -5751,7 +5774,7 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'MSFT': {'budget': 60000, 'cost': 52878.96, 'shares': 117},
  'META': {'budget': 50000, 'cost': 39239.51, 'shares': 59.5},
  'AAPL': {'budget': 25000, 'cost': 11437.61, 'shares': 46},
- 'NVDA': {'budget': 100000.0, 'cost': 77340.96, 'shares': 411},
+ 'NVDA': {'budget': 100000.0, 'cost': 79380.28, 'shares': 420},
  'TSM': {'budget': 65000, 'cost': 39921.53, 'shares': 112.5},
  'AVGO': {'budget': 40000, 'cost': 28571.53, 'shares': 84},
  'AMD': {'budget': 25000, 'cost': 13789.22, 'shares': 55},
@@ -6258,7 +6281,7 @@ REALIZED = [{'t': 'NBIS', 'g': 13, 'amount': 1404.52},
  {'t': 'SOFI', 'g': 14, 'amount': -152.4},
  {'t': 'HOOD', 'g': 14, 'amount': 897.82}]
 
-TOTALS = {'investedEverUSD': 616236.17,
+TOTALS = {'investedEverUSD': 618275.49,
  'investedEverTHB': 19834480,
  'soldCostUSD': 34025.62,
  'soldCostTHB': 1143440,
@@ -6718,20 +6741,20 @@ MONTHLY = [{'ym': '2025-07',
               {'g': 16, 'buy': 4015.74, 'sell': 0.0, 'real': 0.0},
               {'g': 19, 'buy': 0.0, 'sell': 1855.08, 'real': 272.72}]},
  {'ym': '2026-08',
-  'buyUSD': 37460.9,
-  'buyLots': 20,
+  'buyUSD': 39500.22,
+  'buyLots': 21,
   'sellUSD': 0.0,
   'sellLots': 0,
   'realizedUSD': 0.0,
   'realizedTHB': 0,
   'byStock': [{'t': 'GOOGL', 'buy': 4151.24, 'sell': 0.0, 'real': 0.0},
+              {'t': 'NVDA', 'buy': 4022.93, 'sell': 0.0, 'real': 0.0},
               {'t': 'TSM', 'buy': 3943.89, 'sell': 0.0, 'real': 0.0},
               {'t': 'LITE', 'buy': 3480.48, 'sell': 0.0, 'real': 0.0},
               {'t': 'COHR', 'buy': 3395.12, 'sell': 0.0, 'real': 0.0},
               {'t': 'MSFT', 'buy': 2060.52, 'sell': 0.0, 'real': 0.0},
               {'t': 'META', 'buy': 2049.88, 'sell': 0.0, 'real': 0.0},
               {'t': 'AMZN', 'buy': 2006.08, 'sell': 0.0, 'real': 0.0},
-              {'t': 'NVDA', 'buy': 1983.61, 'sell': 0.0, 'real': 0.0},
               {'t': 'ANET', 'buy': 1935.56, 'sell': 0.0, 'real': 0.0},
               {'t': 'MU', 'buy': 1926.29, 'sell': 0.0, 'real': 0.0},
               {'t': 'AMAT', 'buy': 1924.56, 'sell': 0.0, 'real': 0.0},
@@ -6741,7 +6764,7 @@ MONTHLY = [{'ym': '2025-07',
               {'t': 'FN', 'buy': 1604.56, 'sell': 0.0, 'real': 0.0},
               {'t': 'AAOI', 'buy': 1338.56, 'sell': 0.0, 'real': 0.0}],
   'byGroup': [{'g': 0, 'buy': 10267.72, 'sell': 0.0, 'real': 0.0},
-              {'g': 1, 'buy': 7838.23, 'sell': 0.0, 'real': 0.0},
+              {'g': 1, 'buy': 9877.55, 'sell': 0.0, 'real': 0.0},
               {'g': 2, 'buy': 1924.56, 'sell': 0.0, 'real': 0.0},
               {'g': 3, 'buy': 1926.29, 'sell': 0.0, 'real': 0.0},
               {'g': 4, 'buy': 11754.28, 'sell': 0.0, 'real': 0.0},
