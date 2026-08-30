@@ -95,7 +95,21 @@ ASOF = ('Aug 28, 2026 - close. Full manual price refresh: ALL 180 of 180 prices 
  'data-centre power and cooling equipment and MYR Group is an electrical contractor, so both arguably belong in group '
  '17 Power and Electrification alongside ETN, HUBB, NVT, POWL and PWR. VRT is a HELD position (14 shares) so moving it '
  'shifts group totals; left in place pending explicit approval. No price, position, cash, realized P/L or existing '
- 'budget was touched in this edit.')
+ 'budget was touched in this edit. | Aug 29, 2026 edit 3 - ENERGY/POWER GROUP RECLASSIFICATION, part 1. CEG moved '
+ 'group 16 -> 18 at explicit user instruction. VST moved group 16 -> 18 in the same commit because it is the IDENTICAL '
+ 'misclassification and moving one without the other would leave the board in a worse state than before. Rationale: '
+ 'neither is a nuclear pure-play. Constellation completed the Calpine acquisition on 7 Jan 2026 and now runs ~55 GW '
+ 'across nuclear, gas, geothermal, hydro, solar and oil - it is the largest US electricity producer and substantially '
+ "a GAS generator. Vistra's own generation disclosure is ~43,641 MW of which natural gas is 26,989 MW (62%), coal "
+ '8,743 MW (20%) and nuclear only 6,448 MW (15%). Both are merchant power producers that happen to own nuclear plants, '
+ 'not nuclear companies. Both are HELD positions (CEG 15 shares, VST 42 shares), so group market-value totals shift: '
+ 'group 16 held MV falls from ~11,437.53 to ~1,528.53 (BWXT alone) and group 18 held MV rises from ~3,599.12 to '
+ "~13,508.15 at the Aug 28 close. GROUP 16 RENAMED 'Nuclear Energy' -> 'Nuclear Technology & Fuel' because what "
+ 'remains - BWXT, OKLO, SMR, NNE, CCJ, XE, UUUU, LEU - is reactor technology, SMR developers and the '
+ "uranium/enrichment fuel cycle. Not one of the eight operates a commercial power reactor: OKLO's only running unit is "
+ "the 100-watt Groves isotope test reactor, NuScale's sole US customer project was cancelled in Nov 2023, NNE targets "
+ "first deployment in 2030, and XE only listed in Apr 2026. Calling that group 'Nuclear Energy' implied generation "
+ 'that does not exist. No price, position, budget, cash, realized P/L or total was touched.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -113,7 +127,7 @@ GROUPS = ['Hyperscalers',
  'Neocloud Watch',
  'Digital Fintech',
  'Cybersecurity',
- 'Nuclear Energy',
+ 'Nuclear Technology & Fuel',
  'Power and Electrification',
  'Utilities & Power Generation',
  'Digital Applications',
@@ -1837,7 +1851,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 357.81,
   'fvMax': 441,
   'fvMin': 296,
-  'g': 16,
+  'g': 18,
   'gm': 23.26,
   'hi52': 412.7,
   'jan2': 358.0,
@@ -2023,7 +2037,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 222.89,
   'fvMax': 320,
   'fvMin': 99,
-  'g': 16,
+  'g': 18,
   'gm': 38.64,
   'hi52': 219.82,
   'jan2': 163.89,
