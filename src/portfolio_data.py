@@ -132,7 +132,22 @@ ASOF = ('Aug 28, 2026 - close. Full manual price refresh: ALL 180 of 180 prices 
  "needed. (b) TOTALS ['investedEverTHB'] 19,834,480 and THBFX['AMAT'] 32.1085 still await the actual THB amounts and "
  "rates for the AMAT purchase and the 17,173.11 injection. (c) TOTALS['soldCostUSD'] 34,025.62 plus held cost "
  '589,903.48 = 623,929.10, which exceeds investedEverUSD 618,275.49 by 5,653.61 - a pre-existing reconciliation gap '
- 'that predates this edit and is unchanged by it.')
+ "that predates this edit and is unchanged by it. | Aug 29, 2026 edit 5 - CASH UPDATED from the POEMS 'Live Cash "
+ "Balance' screen: USD 23,852.79 (Aug 24) -> 21,928.23. asof restyled to 'Aug 29, 2026 (Live, NVDA trade unsettled)' "
+ 'because the figure is NOT fully settled. ⚠️ IMPORTANT FINDING THAT CORRECTS A PRIOR PLAYBOOK ASSUMPTION. The change '
+ 'is exactly -1,924.56, which is the AMAT purchase to the cent (23,852.79 - 1,924.56 = 21,928.23). The NVDA purchase '
+ 'of 2,039.32 executed Thu 27 Aug is NOT reflected: 23,852.79 - 2,039.32 = 21,813.47 and 23,852.79 - 1,924.56 - '
+ "2,039.32 = 19,888.91, neither of which matches the screen. The screen's own caption is explicit - 'before the "
+ "settlement of the outstanding contract and accrued interest/fee, if any' - and US equities settle T+2, so a Thu 27 "
+ "Aug trade settles Mon 31 Aug / Tue 1 Sep. A PREVIOUS NOTE IN THIS FILE CLAIMED THAT 'Cash Balance (Live) is labelled "
+ "pre-settlement but empirically IS net of the trade'. That assumption is now CONTRADICTED by direct evidence and must "
+ 'not be relied on again: the Live figure is net of SETTLED trades only, and an unsettled purchase is still sitting in '
+ 'it. THEREFORE: recorded cash 21,928.23 is the observed POEMS figure, but TRUE DEPLOYABLE CASH IS 21,928.23 - '
+ '2,039.32 = 19,888.91 until the NVDA contract settles. Any sizing decision before ~1 Sep 2026 must use 19,888.91, not '
+ '21,928.23. The dashboard stores the observed number rather than a derived one, so this note is the bridge. The same '
+ "screen also shows 'Available Cash (SGD equivalent) 24,299.90' - that is a SGD buying-power figure for a different "
+ "currency and is deliberately NOT stored; the account's USD line is the only one relevant to this portfolio. "
+ 'Positions, prices, budgets and totals were not touched.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -6266,7 +6281,10 @@ TRADES = [{'date': 'Jul 21, 2026',
 
 SELLPLAN = ['IREN']
 
-CASH = {'currency': 'USD', 'amount': 23852.79, 'asof': 'Aug 24, 2026', 'broker': 'POEMS (Phillip Securities)'}
+CASH = {'currency': 'USD',
+ 'amount': 21928.23,
+ 'asof': 'Aug 29, 2026 (Live, NVDA trade unsettled)',
+ 'broker': 'POEMS (Phillip Securities)'}
 
 REALIZED = [{'t': 'NBIS', 'g': 13, 'amount': 1404.52},
  {'t': 'IREN', 'g': 13, 'amount': 98.52},
