@@ -380,7 +380,51 @@ ASOF = ('Aug 28, 2026 - close. Full manual price refresh: ALL 180 of 180 prices 
  'UNCHANGED at 587,010.77 = 84.22% of the 697,028.82 equity book - verified, not assumed. Every held name that moved '
  'in this edit (ISRG, IBM, IREN) was already OUTSIDE groups 0-4 both before and after, and the three watchlist moves '
  'carry no market value. THE FLAG LIST IS NOW EMPTY. Every one of the 181 stocks has been reviewed and every open '
- 'classification question on this board is resolved.')
+ 'classification question on this board is resolved. | Aug 31, 2026 edit 5 - VST PURCHASE BOOKED from the POEMS '
+ 'order-status and Live Cash screens. TRADE: order 1555615, NYSE, EQ, LIMIT 137.00 day order, BUY 15 Vistra, TOTAL '
+ 'EXECUTED 15 at 136.4455, 0 remaining, status Done. Submitted Aug 31 2026 10:05:50 PM Bangkok, last updated 10:05:51 '
+ 'PM - a one-second fill - which is 11:05 AM ET on Monday Aug 31. FILLED INSIDE THE LIMIT by 0.5545, the SIXTH '
+ 'CONSECUTIVE limit order to fill at or inside its limit after TSM Aug 18, the two GOOGL fills Aug 19, CDNS Aug 20 and '
+ 'AMAT Aug 24. The 136.4455 average carries four decimals, so the order was filled across multiple prints and POEMS is '
+ 'reporting the volume-weighted average rather than a single print. ⚠️ COST IS DERIVED, NOT READ FROM A CONTRACT NOTE, '
+ 'AND IS FLAGGED AS SUCH: 15 x 136.4455 = 2,046.6825, plus the flat 8.56 commission = 2,055.24. The 8.56 is not an '
+ 'assumption - it has held to the cent on every fill since Jul 28 - and the share count and executed price are both '
+ 'read directly off the order screen, so this is arithmetic rather than estimation. It should still be checked against '
+ 'the next POEMS positions screen, and this note is the marker to do that. POSITION: VST 42 -> 57 shares, cost '
+ '6,078.05 -> 8,133.29, average 144.71548 -> 142.68930. Budget 10,000 is now 81.3% used with 1,866.71 of headroom. '
+ 'This executes the standing VST line in the approved-but-unexecuted queue (2,000 against 3,922 of room); the actual '
+ 'spend came in 55 dollars above that 2,000 sketch. ENTRY CONTEXT: the board carries VST at the verified Friday Aug 28 '
+ "close of 137.09, so the fill is 0.47% BELOW Friday's close, and Salee had been 5.27% underwater on the prior 42 "
+ 'shares - this add lowers the average cost by 2.03 dollars a share. VST is one of exactly five names on the board '
+ 'that actually sell electricity to a customer (group 18 Utilities & Power Generation, alongside CEG, NEE, AEP and '
+ "NRG) after this week's classification sweep. ⚠️ CASH - AND A CLEAN CONFIRMATION OF THE SETTLEMENT RULE. POEMS Live "
+ "Cash Balance USD 21,928.23 -> 19,903.80; asof restyled 'Aug 31, 2026 (Live, VST trade unsettled)'. THE ARITHMETIC, "
+ 'STATED IN FULL: the NVDA purchase of 2,039.32 executed Thu Aug 27 settled today (T+2 lands on Mon Aug 31), and '
+ '21,928.23 - 2,039.32 = 19,888.91. The screen reads 19,903.80, which is 14.89 HIGHER. THAT 14.89 IS NOT EXPLAINED BY '
+ 'ANY TRADE AND IS NOT GUESSED AT HERE. Its size is consistent with a month-end interest credit on a ~21,900 cash '
+ 'balance, but it could equally be a dividend on a held position, and NO source has been checked - it is recorded as '
+ 'an unexplained credit and should be identified from the POEMS statement rather than assumed. THIS RUN CONFIRMS THE '
+ 'RULE ESTABLISHED ON AUG 29 AND OVERTURNS THE OLDER, WRONG ONE. On Aug 29 the Live figure was shown to be net of '
+ 'SETTLED trades only, because the 23,852.79 -> 21,928.23 move was exactly the AMAT trade while the then-unsettled '
+ 'NVDA debit was still sitting in the balance. Today the NVDA debit dropped out on its settlement date, exactly as '
+ 'that rule predicts. The rule is now confirmed twice and should be treated as established. THEREFORE, TRUE DEPLOYABLE '
+ 'CASH IS 19,903.80 - 2,055.24 = 17,848.56 until the VST contract settles (T+2 from Mon Aug 31 = Wed Sep 2). Any '
+ 'sizing decision before Sep 2 must use 17,848.56, not 19,903.80. The dashboard stores the observed POEMS number '
+ "rather than a derived one, so this note is the bridge - as it was for NVDA. The same screen also shows 'Available "
+ "Cash (SGD equivalent) 21,824.17', which is a buying-power figure in a different currency and is deliberately NOT "
+ 'stored. LEDGER: MONTHLY 2026-08 buyLots 21 -> 22, buyUSD 39,500.22 -> 41,555.46, byGroup gains a g18 row at '
+ '2,055.24, byStock gains VST at 2,055.24 and was re-sorted descending. Both byStock and byGroup were re-verified to '
+ 'sum to buyUSD. TOTALS investedEverUSD 618,275.49 -> 620,330.73. Group attribution follows the AT-TIME-OF-TRADE '
+ "convention, so the g18 row reflects VST's group as of today and no historical row was rewritten. TRADES: two entries "
+ 'appended. The VST lot, and a BACKFILL of the Aug 27 NVDA lot (9 sh, implied fill 225.6400, 2,039.32) which had been '
+ 'booked into POS, MONTHLY and TOTALS during the Aug 29 reconciliation but was never written into TRADES - an omission '
+ 'found and closed by this run. NOT TOUCHED: no price was changed. The board stands at the verified Friday Aug 28 '
+ 'close with pxd 2026-08-28 on all 181 rows; Monday Aug 31 closing prices have not been sourced and were not guessed. '
+ 'No other position, budget, group, realized P/L or total was altered. STILL OPEN, unchanged: (a) the 5,653.61 '
+ 'reconciliation gap - held cost is now 591,958.72 and soldCost 34,025.62, summing to 625,984.34 against '
+ 'investedEverUSD 620,330.73, so the gap is EXACTLY unchanged at 5,653.61, which confirms it is a historical artefact '
+ "and not something this or any recent trade is creating; (b) investedEverTHB 19,834,480 and THBFX['AMAT'] 32.1085 "
+ 'still await actual THB amounts and rates; (c) the 14.89 credit above.')
 
 GROUPS = ['Hyperscalers',
  'Chip Designers, EDA & IP',
@@ -6053,7 +6097,7 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'FN': {'budget': 5000, 'cost': 1604.56, 'shares': 3},
  'AAOI': {'budget': 5000, 'cost': 1338.56, 'shares': 10},
  'ETN': {'budget': 10000, 'cost': 7879.55, 'shares': 19},
- 'VST': {'budget': 10000, 'cost': 6078.05, 'shares': 42},
+ 'VST': {'budget': 10000, 'cost': 8133.29, 'shares': 57},
  'CEG': {'budget': 10000, 'cost': 4040.98, 'shares': 15},
  'VRT': {'budget': 10000, 'cost': 3524.44, 'shares': 14},
  'GEV': {'budget': 10000, 'cost': 2147.3, 'shares': 2},
@@ -6510,13 +6554,48 @@ TRADES = [{'date': 'Jul 21, 2026',
           'Thursday Aug 27, after NVIDIA reports, because AMAT is a derivative of NVIDIA shipment volumes. Salee '
           'bought on Monday instead. On the day that was the better call - AMAT fell only 1.65% while the SOX fell '
           '3.11% - but the NVDA print on Aug 26 is still ahead and the reason for waiting has not passed. AMAT budget '
-          '20,000, now 10,086.63 spent, 9,913.37 of headroom left.'}]
+          '20,000, now 10,086.63 spent, 9,913.37 of headroom left.'},
+ {'date': 'Aug 27, 2026',
+  'action': 'BUY',
+  't': 'NVDA',
+  'shares': 9,
+  'price': 225.64,
+  'amount': 2039.32,
+  'est': False,
+  'note': 'BACKFILL - this lot was booked into POS, MONTHLY and TOTALS in the Aug 29 POEMS reconciliation but was '
+          'never written into TRADES. Recorded now for completeness. 9 shares for a 2,039.32 cash debit; implied fill '
+          '(2,039.32 - 8.56) / 9 = 225.6400 per share, 36 cents better than the "about 226" Salee reported. NVDA 411 '
+          '-> 420 sh, cost 77,340.96 -> 79,380.28, avg 189.00067 - ties to the POEMS Average Price column to five '
+          'decimals. Executes the Aug 27 recommendation made after the Q2 FY2027 print. Budget had been raised 85,000 '
+          '-> 100,000 on Aug 27 (10% of the 1.0m portfolio target); 20,619.72 of headroom left. I refused three times '
+          'to estimate this lot before the screenshot arrived, because the plausible share-count range spanned 192 '
+          'dollars of cost basis.'},
+ {'date': 'Aug 31, 2026',
+  'action': 'BUY',
+  't': 'VST',
+  'shares': 15,
+  'price': 136.4455,
+  'amount': 2055.24,
+  'est': False,
+  'note': 'Order 1555615, LIMIT 137.00 day order, filled at 136.4455 - INSIDE the limit, 15 of 15, 0 remaining, '
+          'submitted 10:05:50 PM BKK Aug 31 and done 10:05:51 PM (one second) = 11:05 AM ET Aug 31. SIXTH CONSECUTIVE '
+          'limit order to fill at or inside its limit, after TSM Aug 18, two GOOGL fills Aug 19, CDNS Aug 20 and AMAT '
+          'Aug 24. The 136.4455 average carries four decimals, so this was filled across multiple prints and POEMS is '
+          'reporting the volume-weighted average. COST IS DERIVED, NOT READ FROM A CONTRACT NOTE: 15 x 136.4455 = '
+          '2,046.6825 plus the flat 8.56 commission = 2,055.24. The 8.56 is not an assumption - it has held exactly on '
+          'every fill since Jul 28 - but the figure should still be checked against the next POEMS positions screen. '
+          'VST 42 -> 57 sh, cost 6,078.05 -> 8,133.29, avg 144.71548 -> 142.68930. Budget 10,000 now 81.3% used, '
+          '1,866.71 of headroom left. EXECUTES the standing VST recommendation from the approved-but-unexecuted queue '
+          '(2,000 against 3,922 of room). ENTRY CONTEXT: the board carries VST at the Friday Aug 28 close of 137.09, '
+          'so this fill is 0.47% BELOW Friday and Salee was 5.27% underwater on the prior 42 shares - the add lowers '
+          'the average by 2.03 dollars a share. VST sits in group 18 Utilities & Power Generation, one of exactly five '
+          'names on the board that actually sell electricity to a customer.'}]
 
 SELLPLAN = ['IREN']
 
 CASH = {'currency': 'USD',
- 'amount': 21928.23,
- 'asof': 'Aug 29, 2026 (Live, NVDA trade unsettled)',
+ 'amount': 19903.8,
+ 'asof': 'Aug 31, 2026 (Live, VST trade unsettled)',
  'broker': 'POEMS (Phillip Securities)'}
 
 REALIZED = [{'t': 'NBIS', 'g': 13, 'amount': 1404.52},
@@ -6532,7 +6611,7 @@ REALIZED = [{'t': 'NBIS', 'g': 13, 'amount': 1404.52},
  {'t': 'SOFI', 'g': 14, 'amount': -152.4},
  {'t': 'HOOD', 'g': 14, 'amount': 897.82}]
 
-TOTALS = {'investedEverUSD': 618275.49,
+TOTALS = {'investedEverUSD': 620330.73,
  'investedEverTHB': 19834480,
  'soldCostUSD': 34025.62,
  'soldCostTHB': 1143440,
@@ -6992,8 +7071,8 @@ MONTHLY = [{'ym': '2025-07',
               {'g': 16, 'buy': 4015.74, 'sell': 0.0, 'real': 0.0},
               {'g': 19, 'buy': 0.0, 'sell': 1855.08, 'real': 272.72}]},
  {'ym': '2026-08',
-  'buyUSD': 39500.22,
-  'buyLots': 21,
+  'buyUSD': 41555.46,
+  'buyLots': 22,
   'sellUSD': 0.0,
   'sellLots': 0,
   'realizedUSD': 0.0,
@@ -7004,6 +7083,7 @@ MONTHLY = [{'ym': '2025-07',
               {'t': 'LITE', 'buy': 3480.48, 'sell': 0.0, 'real': 0.0},
               {'t': 'COHR', 'buy': 3395.12, 'sell': 0.0, 'real': 0.0},
               {'t': 'MSFT', 'buy': 2060.52, 'sell': 0.0, 'real': 0.0},
+              {'buy': 2055.24, 'real': 0.0, 'sell': 0.0, 't': 'VST'},
               {'t': 'META', 'buy': 2049.88, 'sell': 0.0, 'real': 0.0},
               {'t': 'AMZN', 'buy': 2006.08, 'sell': 0.0, 'real': 0.0},
               {'t': 'ANET', 'buy': 1935.56, 'sell': 0.0, 'real': 0.0},
@@ -7020,7 +7100,8 @@ MONTHLY = [{'ym': '2025-07',
               {'g': 3, 'buy': 1926.29, 'sell': 0.0, 'real': 0.0},
               {'g': 4, 'buy': 11754.28, 'sell': 0.0, 'real': 0.0},
               {'g': 6, 'buy': 1887.98, 'sell': 0.0, 'real': 0.0},
-              {'g': 10, 'buy': 1861.84, 'sell': 0.0, 'real': 0.0}]}]
+              {'g': 10, 'buy': 1861.84, 'sell': 0.0, 'real': 0.0},
+              {'buy': 2055.24, 'g': 18, 'real': 0.0, 'sell': 0.0}]}]
 
 THBFX = {'GOOGL': 32.2446,
  'NVDA': 32.084,
