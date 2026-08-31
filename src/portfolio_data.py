@@ -322,17 +322,75 @@ ASOF = ('Aug 28, 2026 - close. Full manual price refresh: ALL 180 of 180 prices 
  'voice-AI software sold by subscription and usage, arguably SaaS. NOTHING ELSE ON THE BOARD WAS FOUND MISCLASSIFIED. '
  'Groups 5 Solar & Storage, 7 Space, 11 Consumer/F&B, 12 Healthcare, 16 Nuclear Technology & Fuel, 17 Power and '
  'Electrification, 18 Utilities & Power Generation, 20 Industrial STX and 21 Bitcoin & AI Datacenters were each '
- 'reviewed member by member and every member fits.')
+ 'reviewed member by member and every member fits. | Aug 31, 2026 edit 4 - THE ELEVEN FLAGGED JUDGEMENT CALLS PLUS '
+ "IREN, ALL RESOLVED. User delegated every one of them ('I decide to leave to your calls for these categorization so "
+ "do it for all your comments'). SIX tickers moved, TWO groups renamed, SIX items closed deliberately WITHOUT a move "
+ 'and the reason recorded so they are not reopened. No price, position, budget, cash, realized P/L or total was '
+ "touched; only the 'g' field and two GROUPS labels changed. Still 181 stocks in 22 groups; no group added or removed. "
+ 'MOVED. (1) ISRG (Intuitive Surgical) 6 Robotic/Automation/EV -> 12 Healthcare. It is genuinely both a robotics and a '
+ 'healthcare company, and the tie-breaker used was WHAT MOVES THE SHARE PRICE: procedure volumes, hospital capital '
+ 'budgets and FDA clearances - every one a healthcare driver, none an automation-cycle driver. It trades with medtech, '
+ 'not with factory automation. HELD, 38 shares, so 14,158.80 of market value moves, and Healthcare gains its first '
+ 'HELD anchor - group 12 was previously all watchlist (UNH, JNJ, TEM, HNGE, TMDX, CRSP, CLPT). Group 6 remains a '
+ 'coherent robotics set: TSLA, CGNX, OUST, SYM. (2) IBM 9 Quantum -> 13 AI Infrastructure & Neoclouds. ⚠️ READ THIS '
+ 'ONE CAREFULLY: the REASON IBM IS HELD is quantum exposure, and that thesis is unchanged and still on record - but '
+ "quantum is a rounding error of a ~220bn IT services, software and mainframe company's revenue and IBM's share price "
+ 'does not trade on it. Its true peer set is DELL, HPE and ORCL - legacy enterprise IT vendors pivoting to AI - and '
+ 'all three are already in group 13. CONSEQUENCE THE USER MUST KNOW: group 9 Quantum is now IONQ and QNT only, two '
+ 'genuine pure-plays, so its aggregates are finally meaningful - but the group now has NO HELD POSITION. Owning IBM is '
+ 'not owning quantum, and the board now says so honestly. HELD, 6 shares, 1,413.54 of market value moves. (3) VPG '
+ '(Vishay Precision Group) 6 -> 20 Industrial STX. VPG makes precision sensors, strain gauges, load cells and '
+ 'precision resistors sold into industrial, test-and-measurement, avionics and medical customers - it is an industrial '
+ 'components maker, and its nearest neighbours MMM and ROK are already in group 20. Watchlist only. (4) OSS (One Stop '
+ 'Systems) 6 -> 13. OSS builds rugged edge-AI COMPUTE HARDWARE; its end market is defence and autonomous vehicles but '
+ 'its product is AI compute systems, which is the SMCI and DELL peer set. Watchlist only. (5) PENG (Penguin Solutions) '
+ '3 Memory & Storage -> 13. Penguin runs an integrated-memory business alongside an Advanced Computing business that '
+ 'builds and integrates AI/HPC clusters; it is the latter that defines it today and puts it with SMCI and DELL rather '
+ 'than with MU, SKHY, SNDK, WDC and STX. Group 3 is now five pure memory and storage names. Watchlist only. (6) IREN '
+ '13 -> 21 Bitcoin & AI Datacenters. THE USER HAD RESERVED THIS CALL AND HAS NOW DELEGATED IT. Decided on CONSISTENCY: '
+ 'CIFR, HUT and CORZ were moved to group 21 in an earlier commit for being bitcoin miners converting to AI hosting, '
+ "and IREN is the same species. The group was deliberately renamed 'Bitcoin & AI Datacenters' precisely so the AI "
+ "pivot is not misrepresented, so the move does not understate IREN's AI cloud business. The decisive evidence that "
+ "the bitcoin legacy is still material to its P&L is IREN's own FY26 result - a 638.8m impairment on older mining rigs "
+ 'and a 702.6m net loss. The counter-argument on record and rejected: IREN has moved further toward being a genuine '
+ 'AI-cloud operator than the other three. HELD, 45 shares, 1,595.25 of market value moves. RENAMED, resolving three '
+ 'flagged names without moving any of them - the same technique that resolved ANET, CSCO, NOK and APH in the previous '
+ "commit. (A) Group 1 'Chip Designers (Fabless & IDM)' -> 'Chip Designers, EDA & IP'. The previous rename created an "
+ 'inconsistency of my own making: CDNS and SNPS design no chips either - they sell design SOFTWARE by licence - and '
+ 'ARM licenses architecture IP rather than selling silicon. Moving all three to group 10 SaaS would have divorced them '
+ 'from the semiconductor design cycle that actually drives them, and every sell-side semiconductor analyst covers them '
+ 'inside semis. Broadening the group name is the honest fix and closes CDNS, SNPS and ARM permanently. (B) Group 8 '
+ "'Drone & Defense' -> 'Defense, Drones & Public Safety'. This closes TWO flagged names at once. PLTR is a software "
+ 'company by business model but a defence-technology company by what drives it, and moving it to group 10 SaaS would '
+ 'have repeated exactly the APP mistake - dropping a ~90x-forward name into a group whose averages had only just been '
+ 'cleaned. AXON sells Tasers, body cameras and evidence cloud software to LAW ENFORCEMENT, which is public safety '
+ 'rather than military defence, and its 2024 Dedrone acquisition makes the drone half real. The widened name houses '
+ 'both correctly. CLOSED WITHOUT A MOVE, reason recorded so these are not reopened. (i) AXTI stays in group 4 '
+ 'Networking & Optical Interconnect. It makes compound-semiconductor SUBSTRATES (InP, GaAs), which is a materials '
+ "business - but group 2 is now named 'Foundry, Equipment & Test' and substrates are none of those three, so a move "
+ "would have been wrong under the new name as well. AXTI's InP wafers are specifically the optical-laser supply chain "
+ 'and its cycle is the optical transceiver cycle, which is exactly where group 4 sits. (ii) NET (Cloudflare) stays in '
+ 'group 15 Cybersecurity. It is a CDN and edge-network platform with security attached and an increasingly real '
+ 'edge-compute business, but its SASE and zero-trust products compete DIRECTLY with Zscaler, which is in the same '
+ 'group, and that is the comp set every analyst uses. (iii) SOUN (SoundHound AI) stays in group 19 Digital Platforms & '
+ "Applications. The group name literally covers an AI application company, and SOUN's revenue is a mix of software "
+ 'subscriptions AND per-unit automotive royalties rather than clean SaaS ARR, so group 10 would have been a worse fit, '
+ 'not a better one. (iv-vi) CDNS, SNPS, ARM and PLTR, AXON - closed by the two renames above. GROUP SIZES AFTER: g1 18 '
+ '(renamed), g3 6->5, g6 7->4, g8 9 (renamed), g9 3->2, g12 7->8, g13 9->11, g20 6->7, g21 5->6. AI CONCENTRATION '
+ 'UNCHANGED at 587,010.77 = 84.22% of the 697,028.82 equity book - verified, not assumed. Every held name that moved '
+ 'in this edit (ISRG, IBM, IREN) was already OUTSIDE groups 0-4 both before and after, and the three watchlist moves '
+ 'carry no market value. THE FLAG LIST IS NOW EMPTY. Every one of the 181 stocks has been reviewed and every open '
+ 'classification question on this board is resolved.')
 
 GROUPS = ['Hyperscalers',
- 'Chip Designers (Fabless & IDM)',
+ 'Chip Designers, EDA & IP',
  'Foundry, Equipment & Test',
  'Memory & Storage',
  'Networking & Optical Interconnect',
  'Solar & Storage',
  'Robotic / Automation / EV',
  'Space',
- 'Drone & Defense',
+ 'Defense, Drones & Public Safety',
  'Quantum',
  'SaaS',
  'Consumer / F&B',
@@ -1382,7 +1440,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 74.29,
   'fvMax': 85,
   'fvMin': 40,
-  'g': 3,
+  'g': 13,
   'gm': 27.92,
   'hi52': 89.86,
   'jan2': None,
@@ -2560,7 +2618,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 504.15,
   'fvMax': 685,
   'fvMin': 324,
-  'g': 6,
+  'g': 12,
   'gm': 66.77,
   'hi52': 603.88,
   'jan2': 566.78,
@@ -2746,7 +2804,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 19.0,
   'fvMax': 21,
   'fvMin': 18,
-  'g': 6,
+  'g': 13,
   'gm': 49.27,
   'hi52': 20.88,
   'jan2': 6.8,
@@ -2777,7 +2835,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 93.33,
   'fvMax': 105,
   'fvMin': 77,
-  'g': 6,
+  'g': 20,
   'gm': 38.75,
   'hi52': 151.78,
   'jan2': 39.28,
@@ -3459,7 +3517,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 273.75,
   'fvMax': 350,
   'fvMin': 175,
-  'g': 9,
+  'g': 13,
   'gm': 58.36,
   'hi52': 332.46,
   'jan2': 297.56,
@@ -4110,7 +4168,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 80.93,
   'fvMax': 126,
   'fvMin': 41,
-  'g': 13,
+  'g': 21,
   'gm': 68.9,
   'hi52': 76.87,
   'jan2': 39.01,
