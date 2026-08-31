@@ -173,14 +173,58 @@ ASOF = ('Aug 28, 2026 - close. Full manual price refresh: ALL 180 of 180 prices 
  "different but internally consistent convention, left as-is since TRADES is not this job's to touch. STILL OPEN, "
  'unchanged: (a) the 5,653.61 gap (held cost 589,903.48 + soldCost 34,025.62 = 623,929.10 vs investedEverUSD '
  '618,275.49); (b) investedEverTHB and THBFX pending actual THB amounts; (c) true deployable cash 19,888.91 until the '
- 'NVDA contract settles ~Sep 1. No position, budget, cash, price or total was touched by this run.')
+ 'NVDA contract settles ~Sep 1. No position, budget, cash, price or total was touched by this run. | Aug 31, 2026 edit '
+ "- THREE-TIER GROUP RECLASSIFICATION AUDIT, user approved in full ('ok for 3 tier group reclassification'). THIRTEEN "
+ 'tickers moved and TWO groups renamed. No price, position, budget, cash, realized P/L or total was touched by this '
+ "edit; only the 'g' field and two GROUPS labels changed. TIER 1 - clear misclassifications. (1) MPWR (Monolithic "
+ 'Power Systems) 17 Power and Electrification -> 1 Computing Chips: MPWR is a fabless analog/mixed-signal '
+ 'SEMICONDUCTOR company; its power-management ICs sit ON the AI server board (it is a Nvidia board-level supplier), it '
+ 'does not make grid or electrical equipment. (2) POWI (Power Integrations) 17 -> 1 Computing Chips: likewise a '
+ "fabless semiconductor maker of high-voltage power-conversion ICs - the word 'Power' in both names describes what the "
+ 'CHIP does, not an electricity business. (3) NOK (Nokia) 13 Neocloud Watch -> 4 Photonic & Optic Fiber: Nokia is a '
+ 'telecom EQUIPMENT vendor (mobile networks, network infrastructure, optical transport, and Nokia Bell Labs); it rents '
+ 'no GPUs and sells no cloud compute, so it never belonged in a neocloud group, and its optical-transport franchise '
+ 'makes group 4 the honest home. (4) STRL (Sterling Infrastructure) 13 -> 20 Industrial STX: Sterling is a '
+ 'CONSTRUCTION CONTRACTOR - e-infrastructure site development, transportation and building solutions. It builds '
+ 'data-centre PADS; it does not operate them. Its correct peers are CAT, DE, GE, MMM and ROK. (5) TSLA (Tesla) 5 '
+ 'Energy -> 6 Robotic / Automation / EV: roughly 97% of Tesla revenue is automotive; energy generation and storage is '
+ 'the minority segment. Group 6 already holds the EV/robotics complex and Optimus is the humanoid-robot exposure the '
+ 'user actively tracks. TIER 2 - equipment vendors separated from electricity SELLERS. VRT, BE, FLNC, MYRG and AIRJ '
+ 'all moved 18 Utilities & Power Generation -> 17 Power and Electrification. Rationale: none of the five sells '
+ 'electricity to a customer. Vertiv (VRT) makes data-centre power and cooling equipment (~85% data-centre revenue per '
+ 'its FY2025 10-K); Bloom Energy (BE) manufactures and SELLS solid-oxide fuel-cell systems - the customer generates '
+ 'the power, not Bloom; Fluence (FLNC) supplies battery-storage systems and services; MYR Group (MYRG) is an '
+ 'electrical CONTRACTOR; AIRO Group (AIRJ) is an aerospace/drone and avionics company that was arguably never a power '
+ 'name at all. THIS IS THE DECISIVE STRUCTURAL POINT OF THE WHOLE AUDIT: group 18 now contains EXACTLY FIVE companies '
+ 'whose product is electricity delivered to a customer - CEG, VST, NEE, AEP and NRG - which makes group 18 finally a '
+ 'like-for-like comparison set. Note VRT is a HELD position (14 shares) so group market-value totals shift: group 18 '
+ 'held MV falls and group 17 held MV rises by 14 x 257.08 = 3,599.12 at the Aug 28 close. This move was FLAGGED AND '
+ 'EXPLICITLY DEFERRED in the Aug 29 edit 2 note pending approval; that approval has now been given. TIER 3 - judgement '
+ 'calls, approved. CIFR (Cipher Mining), HUT (Hut 8) and CORZ (Core Scientific) moved 13 Neocloud Watch -> 21, and '
+ "GROUP 21 RENAMED 'Bitcoin' -> 'Bitcoin & AI Datacenters'. All three began as bitcoin miners and have converted "
+ 'mining sites to AI/HPC hosting; grouping them with WULF and RIOT under a name that acknowledges BOTH business lines '
+ "is more honest than either the old 'Bitcoin' label (which ignored the AI pivot) or 'Neocloud Watch' (which implied a "
+ "pure GPU-cloud business they do not have). GROUP 5 RENAMED 'Energy' -> 'Solar & Storage' to describe what actually "
+ 'remains after Tesla left: TE (T1 Energy), EOSE (Eos Energy), ENPH (Enphase), AMPX (Amprius) and FSLR (First Solar) - '
+ 'every one of them a solar or battery-storage manufacturer, none of them an oil, gas or utility company. IREN was '
+ 'DELIBERATELY LEFT IN GROUP 13 Neocloud Watch and is the one placement the user reserved to himself: IREN is a HELD '
+ 'position (45 shares) and, unlike CIFR/HUT/CORZ, has moved furthest toward being a genuine AI-cloud operator, so the '
+ 'case for 13 is real. Its FY26 result carried a 638.8m impairment on older mining rigs and a 702.6m net loss, which '
+ 'is the bitcoin-legacy argument for moving it to 21 - flagged, not acted on. RESULTING GROUP SIZES: g1 13->15, g4 '
+ '18->19, g5 6->5, g6 10->11, g13 13->8, g17 10->13, g18 10->5, g20 5->6, g21 2->5. Total remains 181 stocks in 22 '
+ 'groups. SEPARATELY FLAGGED, NOT ACTED ON, AWAITING A DECISION - a possible TIER 4. Three names in group 10 SaaS are '
+ 'not software-as-a-service businesses: APP (AppLovin) and ZETA (Zeta Global) are ADVERTISING companies with no seats '
+ 'and no subscriptions, and ORCL (Oracle) reported cloud INFRASTRUCTURE up 93% against SaaS applications up only 10%, '
+ 'making it substantially a data-centre landlord. Leaving all three in group 10 distorts every SaaS-group aggregate '
+ 'the board computes. ZETA and ORCL are HELD positions (111 and 50 shares) so any move shifts group totals. No '
+ 'destination has been chosen and nothing was moved.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
  'Chips Manufacturing',
  'Memory & Storage',
  'Photonic & Optic Fiber',
- 'Energy',
+ 'Solar & Storage',
  'Robotic / Automation / EV',
  'Space',
  'Drone & Defense',
@@ -196,7 +240,7 @@ GROUPS = ['Hyperscalers',
  'Utilities & Power Generation',
  'Digital Applications',
  'Industrial STX',
- 'Bitcoin']
+ 'Bitcoin & AI Datacenters']
 
 STOCKS = [{'an': 83,
   'ath': 408.61,
@@ -2380,7 +2424,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 431.36,
   'fvMax': 508,
   'fvMin': 370,
-  'g': 5,
+  'g': 6,
   'gm': 19.07,
   'hi52': 498.83,
   'jan2': 457.8,
@@ -4085,7 +4129,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 32.53,
   'fvMax': 69,
   'fvMin': 23,
-  'g': 13,
+  'g': 21,
   'gm': 12.37,
   'hi52': 30.14,
   'jan2': 16.63,
@@ -4116,7 +4160,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 140.19,
   'fvMax': 226,
   'fvMin': 70,
-  'g': 13,
+  'g': 21,
   'gm': 59.67,
   'hi52': 140.8,
   'jan2': 60.04,
@@ -4147,7 +4191,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 15.02,
   'fvMax': 21,
   'fvMin': 8.5,
-  'g': 13,
+  'g': 4,
   'gm': 45.5,
   'hi52': 17.45,
   'jan2': None,
@@ -4178,7 +4222,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 33.38,
   'fvMax': 42,
   'fvMin': 25,
-  'g': 13,
+  'g': 21,
   'gm': 28.35,
   'hi52': 30.46,
   'jan2': None,
@@ -4209,7 +4253,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 918.67,
   'fvMax': 1000,
   'fvMin': 754,
-  'g': 13,
+  'g': 20,
   'gm': 23.81,
   'hi52': 1005.68,
   'jan2': None,
@@ -4922,7 +4966,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 1789.23,
   'fvMax': 2000,
   'fvMin': 1500,
-  'g': 17,
+  'g': 1,
   'gm': 55.2,
   'hi52': 1714.09,
   'jan2': 927.61,
@@ -4984,7 +5028,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 77.5,
   'fvMax': 85,
   'fvMin': 65,
-  'g': 17,
+  'g': 1,
   'gm': 53.64,
   'hi52': 91.18,
   'jan2': None,
@@ -5046,7 +5090,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 380.0,
   'fvMax': 500,
   'fvMin': 236,
-  'g': 18,
+  'g': 17,
   'gm': 37.15,
   'hi52': 379.93,
   'jan2': 169.47,
@@ -5139,7 +5183,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 286.2,
   'fvMax': 390,
   'fvMin': 70,
-  'g': 18,
+  'g': 17,
   'gm': 31.65,
   'hi52': 322.83,
   'jan2': 98.69,
@@ -5170,7 +5214,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 8.15,
   'fvMax': 12.0,
   'fvMin': 6.0,
-  'g': 18,
+  'g': 17,
   'gm': None,
   'hi52': 6.75,
   'jan2': 4.19,
@@ -5201,7 +5245,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 18.67,
   'fvMax': 28,
   'fvMin': 9,
-  'g': 18,
+  'g': 17,
   'gm': 9.36,
   'hi52': 33.51,
   'jan2': None,
@@ -5263,7 +5307,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 423.33,
   'fvMax': 564,
   'fvMin': 295,
-  'g': 18,
+  'g': 17,
   'gm': 12.49,
   'hi52': 503.57,
   'jan2': None,
