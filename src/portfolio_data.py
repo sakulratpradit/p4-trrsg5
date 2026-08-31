@@ -147,7 +147,33 @@ ASOF = ('Aug 28, 2026 - close. Full manual price refresh: ALL 180 of 180 prices 
  '21,928.23. The dashboard stores the observed number rather than a derived one, so this note is the bridge. The same '
  "screen also shows 'Available Cash (SGD equivalent) 24,299.90' - that is a SGD buying-power figure for a different "
  "currency and is deliberately NOT stored; the account's USD line is the only one relevant to this portfolio. "
- 'Positions, prices, budgets and totals were not touched.')
+ 'Positions, prices, budgets and totals were not touched. | Aug 31, 2026 (scheduled weekly refresh + integrity audit): '
+ 'prices stand at the verified Aug 28 Friday close - no session has traded since, so no price was changed. ONE '
+ 'FUNDAMENTALS GAP CLOSED: RBRK reported Q2 FY2027 on Aug 27 AMC (revenue 427.3M +38% YoY, sub ARR 1.66B +33%, GAAP '
+ 'EPS -0.30, non-GAAP EPS 0.20, FCF 65.7M, FY27 guidance raised across the board to rev 1.685-1.693B / EPS 0.47-0.53) '
+ 'but was MISSED by the Aug 28 earnings job, which caught MRVL/WDAY/AFRM/S only. RBRK row updated from stockanalysis '
+ 'statistics + forecast pages cross-checked against the company print: revB 1.425 -> 1.54, revG 45.73 -> 42.4, eps '
+ '-1.45 -> -1.26, fpe 264.67 -> 193.33, ps 11.13 -> 12.42 (the old 11.13 and pfcf 55.76 were computed off a stale '
+ '~16.4B market cap and were internally inconsistent with the stored mcapB 19.1523; pfcf now 63.02), pm -20.25 -> '
+ '-16.5, gm 80.58 -> 80.21, fcfB 0.29388 -> 0.30391, capexB -0.03106 -> -0.03316, roi -80.59 -> -28.54, an 27 -> 28, '
+ 'targets 85/95.23/115 -> 90/118.48/135, r40 66.36 -> 62.13. DELL (Sep 1), SNOW (Sep 2) and AMBA (Sep 3) report NEXT '
+ 'week per company announcements - their rows are correctly at pre-print values. INTEGRITY AUDIT RESULTS: implied '
+ 'share counts (mcapB/price) show ZERO drift >1% vs the Aug 26 and Aug 24 builds - the rescale-together discipline '
+ 'held. No stuck feeds: every pxd is 2026-08-28; NOK closing Aug 28 at its Aug 21 price 10.21 is a genuine round trip '
+ '(9.96 / 10.35 / 10.41 / 10.21 across the week), not a frozen quote. Null conventions clean: no null in any core '
+ 'field, every loss-maker carries pe=None, deliberate nulls (NU ps, FPS pe) intact. Broker subtotals recomputed from '
+ 'POS x board prices tie POEMS to the cent: NASD 489,987.97 / 586,267.60, NYSE 99,915.51 / 110,761.22, TOTAL '
+ '589,903.48 / 697,028.82 = +18.16%. Group attribution across REALIZED / SOLD / MONTHLY.byGroup is internally '
+ 'consistent under the AT-TIME-OF-TRADE convention (SNPS sale carries g=10 SaaS pre-move, TTD g=10, CEG/VST 2026 buys '
+ 'under old g16) - NOTE the group-history convention is at-trade, so group moves do not rewrite MONTHLY history; a '
+ 'structure named NEWG does not exist anywhere in the repo. MONTHLY byStock/byGroup sums tie headline '
+ 'buyUSD/sellUSD/realizedUSD every month (one 1-cent rounding in 2026-04) and sum of MONTHLY buyUSD = investedEverUSD '
+ '618,275.49 exactly. Commissions: every fill since Jul 28 is exactly +8.56 over shares x price (META +8.54 / SKHY '
+ '+8.57 are cent-rounding on fractional shares); the Jul 21-27 fills embed the fee in the average price instead - a '
+ "different but internally consistent convention, left as-is since TRADES is not this job's to touch. STILL OPEN, "
+ 'unchanged: (a) the 5,653.61 gap (held cost 589,903.48 + soldCost 34,025.62 = 623,929.10 vs investedEverUSD '
+ '618,275.49); (b) investedEverTHB and THBFX pending actual THB amounts; (c) true deployable cash 19,888.91 until the '
+ 'NVDA contract settles ~Sep 1. No position, budget, cash, price or total was touched by this run.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -4605,20 +4631,20 @@ STOCKS = [{'an': 83,
   'roe': -14.43,
   'roi': -2.51,
   't': 'NET'},
- {'an': 27,
+ {'an': 28,
   'ath': 103.0,
   'budget': None,
-  'capexB': -0.03106,
-  'eps': -1.45,
+  'capexB': -0.03316,
+  'eps': -1.26,
   'epsG': None,
   'ex': 'NYSE',
-  'fcfB': 0.29388,
-  'fpe': 264.67,
-  'fvAvg': 95.23,
-  'fvMax': 115.0,
-  'fvMin': 85.0,
+  'fcfB': 0.30391,
+  'fpe': 193.33,
+  'fvAvg': 118.48,
+  'fvMax': 135.0,
+  'fvMin': 90.0,
   'g': 15,
-  'gm': 80.58,
+  'gm': 80.21,
   'hi52': 102.23,
   'jan2': 75.47,
   'lo52': 42.25,
@@ -4626,15 +4652,15 @@ STOCKS = [{'an': 83,
   'name': 'Rubrik',
   'pe': None,
   'peg': None,
-  'pm': -20.25,
+  'pm': -16.5,
   'price': 93.05,
-  'ps': 11.13,
+  'ps': 12.42,
   'pxd': '2026-08-28',
-  'r40': 66.36,
-  'revB': 1.425,
-  'revG': 45.73,
+  'r40': 62.13,
+  'revB': 1.54,
+  'revG': 42.4,
   'roe': None,
-  'roi': -80.59,
+  'roi': -28.54,
   't': 'RBRK'},
  {'an': 35,
   'ath': 76.3,
@@ -6961,7 +6987,7 @@ M3 = {'GOOGL': {'pfcf': 72.54, 'ev': 21.6, 'de': 0.18},
  'LMND': {'pfcf': 506.44, 'ev': None, 'de': 0.41},
  'HNGE': {'pfcf': 21.44, 'ev': 222.24, 'de': 0.02},
  'AIRJ': {'pfcf': None, 'ev': None, 'de': 0.0},
- 'RBRK': {'pfcf': 55.76, 'ev': None, 'de': None},
+ 'RBRK': {'pfcf': 63.02, 'ev': None, 'de': None},
  'PL': {'pfcf': 174.79, 'ev': None, 'de': 1.1},
  'PWR': {'pfcf': 45.54, 'ev': 35.97, 'de': 0.68},
  'POWL': {'pfcf': 40.0, 'ev': 29.92, 'de': None},
