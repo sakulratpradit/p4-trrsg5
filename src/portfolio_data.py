@@ -217,7 +217,33 @@ ASOF = ('Aug 28, 2026 - close. Full manual price refresh: ALL 180 of 180 prices 
  'and no subscriptions, and ORCL (Oracle) reported cloud INFRASTRUCTURE up 93% against SaaS applications up only 10%, '
  'making it substantially a data-centre landlord. Leaving all three in group 10 distorts every SaaS-group aggregate '
  'the board computes. ZETA and ORCL are HELD positions (111 and 50 shares) so any move shifts group totals. No '
- 'destination has been chosen and nothing was moved.')
+ 'destination has been chosen and nothing was moved. | Aug 31, 2026 edit 2 - TIER 4: THE THREE NON-SaaS NAMES REMOVED '
+ "FROM GROUP 10, user approved ('move APP ZETA ORCL to the right group as you recommended'). Three tickers moved. No "
+ "price, position, budget, cash, realized P/L or total was touched; only the 'g' field changed and no group was "
+ 'renamed. (1) APP (AppLovin) 10 SaaS -> 19 Digital Applications. AppLovin is a mobile ADVERTISING platform - AXON is '
+ 'an ad-bidding engine monetising in-app inventory. There are no seats, no subscriptions and no recurring software '
+ 'licence; revenue is a take of advertiser spend, which behaves like an ad cycle, not like contracted ARR. Its 66.4% '
+ 'revenue growth and 138.5 Rule-of-40 score were single-handedly distorting every group-10 average on the board. '
+ 'Watchlist only - no shares held - so no market value moved. (2) ZETA (Zeta Global) 10 SaaS -> 19 Digital '
+ 'Applications. Same reasoning: Zeta is a marketing/adtech data platform selling campaign outcomes, not per-seat '
+ 'software. HELD position, 111 shares, so 111 x 30.54 = 3,389.94 of market value moves from group 10 to group 19 at '
+ 'the Aug 28 close. (3) ORCL (Oracle) 10 SaaS -> 13 Neocloud Watch. THIS IS THE ONE JUDGEMENT CALL AND THE ALTERNATIVE '
+ "IS RECORDED. Oracle's growth is cloud INFRASTRUCTURE (+93%) against SaaS applications (+10%), so it is substantially "
+ 'a data-centre landlord renting compute rather than a subscription-software vendor. The competing destination was '
+ 'group 0 Hyperscalers, which is defensible on scale - OCI is routinely counted as the fifth hyperscaler and Oracle is '
+ 'far larger than any neocloud. It was REJECTED on a risk-profile argument that is the sharper distinction: MSFT, '
+ 'GOOGL, AMZN and META fund their AI capex out of enormous free cash flow, whereas Oracle is FINANCING its buildout '
+ 'with debt, which is precisely the neocloud risk shape (a levered capex bet on contracted AI demand) and is why '
+ "Oracle's stored Rule of 40 is -17.8, the worst on the board's software list. Grouping ORCL with CRWV, NBIS, IREN and "
+ 'APLD puts it beside the companies whose risk it actually shares. HELD position, 50 shares, so 50 x 150.85 = 7,542.50 '
+ 'of market value moves from group 10 to group 13 at the Aug 28 close. RESULT: group 10 SaaS falls 11 -> 8 and is now '
+ 'a clean per-seat/consumption software set - CRM, ADBE, NOW, SNOW, DDOG, MDB, VEEV, TEAM - so its aggregates are '
+ 'finally comparable like-for-like. Group 19 rises 9 -> 11, group 13 rises 8 -> 9. Total unchanged at 181 stocks in 22 '
+ 'groups; no group was added or renamed. NEW INCONSISTENCY FOUND WHILE DOING THIS EDIT, FLAGGED AND NOT ACTED ON: WDAY '
+ '(Workday) sits in group 19 Digital Applications but is a textbook per-seat enterprise SaaS vendor - HR and finance '
+ 'software sold by subscription seat - and belongs in group 10 alongside CRM and NOW. It is the exact mirror image of '
+ 'the error just corrected: three non-SaaS names were in the SaaS group while a genuine SaaS name sits outside it. '
+ 'WDAY is watchlist only (no shares held) so a move would shift no market value. Awaiting approval.')
 
 GROUPS = ['Hyperscalers',
  'Computing Chips',
@@ -3261,7 +3287,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 251.85,
   'fvMax': 400,
   'fvMin': 155,
-  'g': 10,
+  'g': 13,
   'gm': 65.82,
   'hi52': 345.72,
   'jan2': 193.84,
@@ -3292,7 +3318,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 28.68,
   'fvMax': 44,
   'fvMin': 22,
-  'g': 10,
+  'g': 19,
   'gm': 60.14,
   'hi52': 29.62,
   'jan2': 20.54,
@@ -3571,7 +3597,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 656.2,
   'fvMax': 860,
   'fvMin': 406,
-  'g': 10,
+  'g': 19,
   'gm': 88.37,
   'hi52': 745.61,
   'jan2': 618.32,
