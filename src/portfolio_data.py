@@ -243,13 +243,92 @@ ASOF = ('Aug 28, 2026 - close. Full manual price refresh: ALL 180 of 180 prices 
  '(Workday) sits in group 19 Digital Applications but is a textbook per-seat enterprise SaaS vendor - HR and finance '
  'software sold by subscription seat - and belongs in group 10 alongside CRM and NOW. It is the exact mirror image of '
  'the error just corrected: three non-SaaS names were in the SaaS group while a genuine SaaS name sits outside it. '
- 'WDAY is watchlist only (no shares held) so a move would shift no market value. Awaiting approval.')
+ 'WDAY is watchlist only (no shares held) so a move would shift no market value. Awaiting approval. | Aug 31, 2026 '
+ 'edit 3 - FULL BOARD-WIDE CLASSIFICATION SWEEP, all 181 stocks across all 22 groups reviewed one by one, held and '
+ "watchlist alike, at user request ('do the changes of any stocks that do not fit the group for all the groups and all "
+ "stocks'). NINE tickers moved and FIVE groups renamed. No price, position, budget, cash, realized P/L or total was "
+ "touched; only the 'g' field and five GROUPS labels changed. No group was added or removed - still 181 stocks in 22 "
+ 'groups. THE ROOT CAUSE NAMED FOR THE RECORD: this board mixes TWO incompatible organising principles - SUPPLY-CHAIN '
+ 'POSITION (Chip Designers, Foundry/Equipment, Memory, Networking, Utilities) and INVESTMENT THEME (Space, Drone & '
+ "Defense, Quantum, Robotics, Bitcoin). Most 'misfits' on this board are not errors at all; they are names that are "
+ 'correct under one principle and wrong under the other. This sweep resolved every case that is wrong under BOTH '
+ 'principles and left every genuine 50/50 flagged rather than moved. MOVE 1 - AAPL (Apple) 0 Hyperscalers -> 19. THE '
+ 'USER ASKED ABOUT THIS ONE SPECIFICALLY. Apple is not a hyperscaler under any definition: it operates NO public cloud '
+ 'selling compute to third parties, its Private Cloud Compute is internal-only, and it is a BUYER of AI capacity, not '
+ 'a builder - it pays Google and other clouds for capacity and pays Google for search default placement. The decisive '
+ 'number is capex: Apple runs roughly 12bn a year against Meta, Microsoft, Amazon and Alphabet each spending multiples '
+ 'of that, which is the entire reason group 0 exists on this board - it is the AI-capex cohort that drives the '
+ 'semiconductor, optical and power groups beneath it. Apple does not belong on that axis. Its growth engine is '
+ 'Services (App Store, subscriptions, advertising), the same economics as the platforms already in group 19. HELD, 46 '
+ 'shares, so 46 x 319.70 = 14,706.20 of market value moves out of group 0. GROUP 0 NOW HOLDS EXACTLY THE FOUR '
+ 'CANONICAL AI-CAPEX SPENDERS: GOOGL, AMZN, MSFT, META. Note that Meta also sells no public cloud, but Meta IS in the '
+ "capex cohort by spend, which is the group's actual organising axis - Apple is not. MOVE 2 - TSM (Taiwan "
+ "Semiconductor) 1 -> 2. TSMC is a PURE-PLAY FOUNDRY. It designs no chips of its own; it manufactures other companies' "
+ 'designs. Sitting it next to NVDA, AMD, AVGO and QCOM - all of whom are its CUSTOMERS - made group 1 a mix of '
+ 'designers and their own supplier. Its true peers are GFS and TSEM, already in group 2. This is the single largest '
+ 'reclassification on the board by value: HELD, 112.5 shares, 46,971.00 of market value moves from group 1 to group 2, '
+ "which roughly doubles group 2's held market value. MOVE 3 - TER (Teradyne) 6 Robotic/Automation/EV -> 2. The large "
+ "majority of Teradyne's revenue is SEMICONDUCTOR TEST EQUIPMENT; Universal Robots is the minority segment that put it "
+ 'in group 6. Its true peers are AEHR, FORM and COHU - all semiconductor test, all already in group 2. HELD, 10 '
+ 'shares, 3,549.70 of market value moves. MOVES 4-7 - FOUR FABLESS SEMICONDUCTOR COMPANIES CONSOLIDATED INTO GROUP 1. '
+ 'SITM (SiTime) 4 -> 1: a fabless MEMS precision-timing semiconductor company, not an optical or fibre product - it '
+ 'sat in the optics group only because its oscillators go into data-centre networking gear, which is an end-market '
+ 'argument, not a business-model one. AMBA (Ambarella) 6 -> 1: fabless edge-AI vision processors. AMBQ (Ambiq Micro) 6 '
+ '-> 1: fabless ultra-low-power processors. INDI (indie Semiconductor) 6 -> 1: fabless automotive semiconductors, '
+ 'whose nearest peer NXPI is already in group 1. All four are watchlist only, so no market value moved. MOVE 8 - AFRM '
+ '(Affirm) 19 -> 14 Digital Fintech. Affirm is a buy-now-pay-later LENDER - it underwrites consumer credit and carries '
+ 'the loss. Its peers are SOFI, NU and PYPL, all already in group 14. Watchlist only. MOVE 9 - WDAY (Workday) 19 -> 10 '
+ 'SaaS. Flagged in the previous commit and now executed: Workday is textbook per-seat enterprise SaaS (HR and finance '
+ 'software sold by subscriber seat) and belongs beside CRM, NOW and VEEV. Watchlist only. FIVE GROUPS RENAMED, no '
+ "member moved by the rename. (1) Group 1 'Computing Chips' -> 'Chip Designers (Fabless & IDM)': the group already "
+ "held analog, microcontroller and automotive parts (ON, MCHP, NXPI, MPWR, POWI) that are not 'computing' chips at "
+ 'all; the honest common factor is that every member DESIGNS silicon, whether fabless or as an integrated device '
+ "manufacturer like Intel. (2) Group 2 'Chips Manufacturing' -> 'Foundry, Equipment & Test': the group spans foundries "
+ '(TSM, GFS, TSEM), wafer-fab equipment (ASML, AMAT, LRCX, KLAC), packaging (AMKR) and test (TER, AEHR, FORM, COHU) - '
+ "'Manufacturing' described only the first of those four. (3) Group 4 'Photonic & Optic Fiber' -> 'Networking & "
+ "Optical Interconnect': THIS RENAME WAS ON THE STANDING BACKLOG AND IS NOW DONE. It also resolves four apparent "
+ 'misfits without moving anything - ANET and CSCO make Ethernet switches, NOK makes telecom network equipment, and APH '
+ 'makes electrical connectors; none is photonics, but all four are networking and interconnect, which is what the '
+ "group has actually been about all along. (4) Group 13 'Neocloud Watch' -> 'AI Infrastructure & Neoclouds': DELL, "
+ 'HPE, SMCI, ORCL and KEEL are not neoclouds - they are server OEMs, a data-centre landlord and a data-centre '
+ "developer - so the old name was wrong for five of the group's nine members. (5) Group 19 'Digital Applications' -> "
+ "'Digital Platforms & Applications': deliberately the board's catch-all for digital businesses that are not "
+ 'infrastructure - consumer internet, e-commerce, streaming, travel, adtech and now Apple. EFFECT ON THE AI '
+ 'CONCENTRATION MEASURE - IMPORTANT, THE NUMBER MOVED AND THE DEFINITION DID NOT. Groups 0-4 fall from 598,167.27 '
+ '(85.82% of the 697,028.82 equity book) to 587,010.77 (84.22%). The 1.60-point fall is NOT a sale and NOT a price '
+ 'move: it is 14,706.20 of Apple leaving the AI complex, partly offset by 3,549.70 of Teradyne entering it. The new '
+ 'figure is the more honest one - Apple was never AI infrastructure and was inflating the reading. TSM moving from '
+ 'group 1 to group 2 is inside the 0-4 band and changes nothing. GROUP SIZES AFTER: g0 5->4, g1 15->18, g2 10->12, g4 '
+ '19->18, g6 11->7, g10 8->9, g14 8->9, g19 11->10. All other groups unchanged. ELEVEN GENUINE JUDGEMENT CALLS '
+ "DELIBERATELY FLAGGED AND NOT MOVED - each is defensible where it sits and the user's call. (a) ISRG (Intuitive "
+ 'Surgical, HELD 38 sh, g6): a robotics company AND a healthcare company; its earnings drivers are procedure volumes, '
+ 'hospital capex and FDA, which are healthcare drivers, so group 12 is arguable - but robotics is a stated pillar '
+ 'theme and ISRG is its anchor. (b) PLTR (Palantir, HELD 40 sh, g8 Drone & Defense): a SOFTWARE company; roughly '
+ 'government-majority revenue with commercial growing faster. Correct under the theme reading, wrong under the '
+ 'industry reading. (c) IBM (HELD 6 sh, g9 Quantum): a ~220bn IT services, software and mainframe company where '
+ "quantum is a rounding error of revenue - IBM's share price does not trade on quantum. It was bought deliberately for "
+ "quantum exposure so the placement documents the thesis, but BE AWARE group 9's aggregates are meaningless because "
+ 'IBM dwarfs IONQ and QNT combined. (d) CDNS and SNPS (g1): EDA vendors sell SOFTWARE by licence, not silicon - but '
+ 'every semiconductor analyst covers them inside semis and they are inseparable from the design cycle. Left in group '
+ '1. (e) ARM (g1): licenses architecture IP rather than selling chips; same reasoning. (f) AXTI (g4): makes '
+ 'compound-semiconductor SUBSTRATES, which is a materials business belonging in group 2 on business model, but its InP '
+ 'wafers are specifically the optical-laser supply chain. (g) VPG (Vishay Precision Group, g6): precision sensors, '
+ 'strain gauges and resistors - an electronic-components maker serving industrial and robotics customers. (h) OSS (One '
+ 'Stop Systems, g6): rugged edge-AI computing SYSTEMS, arguably group 13 with DELL and SMCI. (i) PENG (Penguin '
+ 'Solutions, g3 Memory): runs both an integrated-memory business and an Advanced Computing (AI cluster) business, so '
+ 'group 13 is arguable. (j) NET (Cloudflare, g15 Cybersecurity): a CDN and edge-network platform with security '
+ 'attached, increasingly an edge-compute business. (k) AXON (g8): law-enforcement hardware and cloud software rather '
+ 'than military defence, though its 2024 Dedrone acquisition makes the drone half real. (l) SOUN (SoundHound AI, g19): '
+ 'voice-AI software sold by subscription and usage, arguably SaaS. NOTHING ELSE ON THE BOARD WAS FOUND MISCLASSIFIED. '
+ 'Groups 5 Solar & Storage, 7 Space, 11 Consumer/F&B, 12 Healthcare, 16 Nuclear Technology & Fuel, 17 Power and '
+ 'Electrification, 18 Utilities & Power Generation, 20 Industrial STX and 21 Bitcoin & AI Datacenters were each '
+ 'reviewed member by member and every member fits.')
 
 GROUPS = ['Hyperscalers',
- 'Computing Chips',
- 'Chips Manufacturing',
+ 'Chip Designers (Fabless & IDM)',
+ 'Foundry, Equipment & Test',
  'Memory & Storage',
- 'Photonic & Optic Fiber',
+ 'Networking & Optical Interconnect',
  'Solar & Storage',
  'Robotic / Automation / EV',
  'Space',
@@ -258,13 +337,13 @@ GROUPS = ['Hyperscalers',
  'SaaS',
  'Consumer / F&B',
  'Healthcare',
- 'Neocloud Watch',
+ 'AI Infrastructure & Neoclouds',
  'Digital Fintech',
  'Cybersecurity',
  'Nuclear Technology & Fuel',
  'Power and Electrification',
  'Utilities & Power Generation',
- 'Digital Applications',
+ 'Digital Platforms & Applications',
  'Industrial STX',
  'Bitcoin & AI Datacenters']
 
@@ -404,7 +483,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 342.11,
   'fvMax': 400,
   'fvMin': 253,
-  'g': 0,
+  'g': 19,
   'gm': 48.65,
   'hi52': 343.67,
   'jan2': 270.51,
@@ -466,7 +545,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 596,
   'fvMax': 700,
   'fvMin': 500,
-  'g': 1,
+  'g': 2,
   'gm': 64.23,
   'hi52': 479.0,
   'jan2': 311.98,
@@ -1923,7 +2002,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 862.78,
   'fvMax': 900,
   'fvMin': 800,
-  'g': 4,
+  'g': 1,
   'gm': 58.71,
   'hi52': 901.81,
   'jan2': 369.96,
@@ -2543,7 +2622,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 423.41,
   'fvMax': 550,
   'fvMin': 270,
-  'g': 6,
+  'g': 2,
   'gm': 58.7,
   'hi52': 487.91,
   'jan2': 199.29,
@@ -2636,7 +2715,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 101.13,
   'fvMax': 120.0,
   'fvMin': 80.0,
-  'g': 6,
+  'g': 1,
   'gm': 58.82,
   'hi52': 96.69,
   'jan2': 70.84,
@@ -2729,7 +2808,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 85.67,
   'fvMax': 125,
   'fvMin': 73,
-  'g': 6,
+  'g': 1,
   'gm': 43.62,
   'hi52': 91.61,
   'jan2': 30.35,
@@ -2760,7 +2839,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 5.72,
   'fvMax': 8.0,
   'fvMin': 4.25,
-  'g': 6,
+  'g': 1,
   'gm': 37.77,
   'hi52': 6.05,
   'jan2': None,
@@ -5426,7 +5505,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 90.5,
   'fvMax': 117,
   'fvMin': 55.1,
-  'g': 19,
+  'g': 14,
   'gm': 50.5,
   'hi52': 100.0,
   'jan2': 81.8,
@@ -5550,7 +5629,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 168.64,
   'fvMax': 275,
   'fvMin': 92,
-  'g': 19,
+  'g': 10,
   'gm': 75.4,
   'hi52': 249.85,
   'jan2': None,
