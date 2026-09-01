@@ -275,7 +275,38 @@ ASOF = ('Aug 31, 2026 - close. Daily price refresh: 178 of 181 tickers brought t
  'target on 20 July 2026 and JPMorgan carries Neutral at 20. ⚠️ The stockanalysis analyst panel average of 74.29 is '
  "dated 20 JULY 2026 and PREDATES the entire August decline - the board's stored fvAvg of 74.29 should be treated as "
  'stale, not as live upside. NO BUDGET IS OPENED for PENG and none is recommended. NOT CHANGED by this edit: no price, '
- "position, share count, cost, budget, cash, realized P/L or group label. Only the 'g' field on one watchlist ticker.")
+ "position, share count, cost, budget, cash, realized P/L or group label. Only the 'g' field on one watchlist ticker. "
+ '| Sep 1, 2026 edit 8 - HUBB PURCHASE BOOKED; POSITION OPENED. Order 1635734, NYSE, EQ, LIMIT 445.30 day order, BUY 4 '
+ 'Hubbell Incorporated-B, TOTAL EXECUTED 4 at 445.30, 0 remaining, status Done. Submitted Sep 1 2026 11:28:13 PM '
+ 'Bangkok, last updated 11:28:17 PM - a four-second fill - which is 12:28 PM ET on Tuesday Sep 1. FILLED AT the limit, '
+ 'the SEVENTH CONSECUTIVE limit order to fill at or inside its limit after TSM Aug 18, the two GOOGL fills Aug 19, '
+ 'CDNS Aug 20, AMAT Aug 24 and VST Aug 31. COST derived the same way as every fill since Jul 28: 4 x 445.30 = 1,781.20 '
+ 'plus the flat 8.56 commission = 1,789.76. Both inputs are read directly off the order screen, so this is arithmetic '
+ 'rather than estimation; it should still be checked against the next POEMS positions screen. POSITION: HUBB was '
+ 'WATCHLIST-ONLY with a 5,000 budget and no shares since Aug 29 - this OPENS the position. 0 -> 4 shares, cost 0 -> '
+ '1,789.76, average 447.44000. Budget 35.8% used, 3,210.24 of headroom. EXECUTION QUALITY, WORTH RECORDING: the fill '
+ 'at 445.30 is 1.70% BELOW the verified Aug 31 close of 453.00, achieved on a session in which the broad market fell - '
+ 'S&P around -0.7%, Nasdaq around -1.4% - on the Strait of Hormuz escalation and the repricing toward a Sep 15-16 Fed '
+ 'hike (66% implied). Buying a low-beta electric-utility-equipment name INTO a rates-and-war selloff is exactly what '
+ 'this budget line exists for. Group 17 Power and Electrification. ⚠️ CASH - AND A THIRD CONFIRMATION OF THE '
+ "SETTLEMENT RULE, PREDICTED TO THE CENT. POEMS Live Cash Balance USD 19,903.80 -> 17,848.56; asof restyled 'Sep 1, "
+ "2026 (Live, HUBB trade unsettled)'. THE DELTA IS EXACTLY 2,055.24, WHICH IS THE VST PURCHASE TO THE CENT - that "
+ 'trade executed Mon Aug 31 and settled today on T+2, dropping out of the balance precisely as the rule predicts. On '
+ "Aug 31 this file recorded 'TRUE DEPLOYABLE CASH IS 17,848.56 until the VST contract settles'; the broker's own "
+ 'screen now reads 17,848.56. The rule that the Live figure is net of SETTLED trades only is now confirmed THREE times '
+ '(NVDA Aug 31, VST Sep 1, and the AMAT proof on Aug 29) and should be treated as established beyond doubt. THEREFORE '
+ 'TRUE DEPLOYABLE CASH IS 17,848.56 - 1,789.76 = 16,058.80 until the HUBB contract settles (T+2 from Tue Sep 1 = Thu '
+ "Sep 3). Any sizing decision before Sep 3 must use 16,058.80, not 17,848.56. The same screen shows 'Available Cash "
+ "(SGD equivalent) 19,591.36', a buying-power figure in a different currency, deliberately NOT stored. LEDGER - A NEW "
+ 'MONTH WAS OPENED. MONTHLY had no 2026-09 entry; one was created with buyLots 1, buyUSD 1,789.76, byStock HUBB '
+ '1,789.76, byGroup g17 1,789.76, and zero sells or realizations. Both byStock and byGroup were verified to sum to '
+ 'buyUSD. TOTALS investedEverUSD 620,330.73 -> 622,120.49. Group attribution follows the AT-TIME-OF-TRADE convention. '
+ 'TRADES: one entry appended. ⚠️ NO PRICE WAS CHANGED AND THAT IS DELIBERATE. The board stands at the verified Monday '
+ 'Aug 31 close with pxd 2026-08-31 on all 181 rows. The Sep 1 US session was still OPEN when this order screen was '
+ 'captured (12:28 PM ET), so no Sep 1 close exists yet for any ticker, including HUBB itself - the board therefore '
+ 'carries HUBB at 453.00 while the position was bought at 445.30, and the row will show a small paper loss until the '
+ 'Sep 1 closes are sourced. That is a timing artefact of an unfinished session, not an error. Nothing else was '
+ 'touched: no other position, no budget, no realized P/L, no group.')
 
 GROUPS = ['Hyperscalers',
  'Chip Designers, EDA & IP',
@@ -6030,7 +6061,7 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'PWR': {'budget': None, 'cost': None, 'shares': None},
  'POWL': {'budget': None, 'cost': None, 'shares': None},
  'NVT': {'budget': None, 'cost': None, 'shares': None},
- 'HUBB': {'budget': 5000.0, 'cost': None, 'shares': None},
+ 'HUBB': {'budget': 5000.0, 'cost': 1789.76, 'shares': 4},
  'VEEV': {'budget': None, 'cost': None, 'shares': None},
  'CORZ': {'budget': None, 'cost': None, 'shares': None},
  'FLNC': {'budget': None, 'cost': None, 'shares': None},
@@ -6440,13 +6471,39 @@ TRADES = [{'date': 'Jul 21, 2026',
           '(2,000 against 3,922 of room). ENTRY CONTEXT: the board carries VST at the Friday Aug 28 close of 137.09, '
           'so this fill is 0.47% BELOW Friday and Salee was 5.27% underwater on the prior 42 shares - the add lowers '
           'the average by 2.03 dollars a share. VST sits in group 18 Utilities & Power Generation, one of exactly five '
-          'names on the board that actually sell electricity to a customer.'}]
+          'names on the board that actually sell electricity to a customer.'},
+ {'date': 'Sep 1, 2026',
+  'action': 'BUY',
+  't': 'HUBB',
+  'shares': 4,
+  'price': 445.3,
+  'amount': 1789.76,
+  'est': False,
+  'note': 'Order 1635734, NYSE, LIMIT 445.30 day order, filled AT the limit at 445.30 for the full 4 of 4, 0 '
+          'remaining, submitted 11:28:13 PM BKK Sep 1 and done 11:28:17 PM - four seconds - which is 12:28 PM ET Sep '
+          '1. Cash debit 1,789.76 = 4 x 445.30 + the flat 8.56 commission. SEVENTH CONSECUTIVE limit order to fill at '
+          'or inside its limit, after TSM Aug 18, two GOOGL fills Aug 19, CDNS Aug 20, AMAT Aug 24 and VST Aug 31. '
+          'OPENS THE POSITION - HUBB was watchlist-only with a 5,000 budget and no shares since Aug 29. 4 sh, average '
+          'cost 447.44000, budget 35.8% used with 3,210.24 of headroom. EXECUTION QUALITY: the fill at 445.30 is 1.70% '
+          'BELOW the verified Aug 31 close of 453.00, on a session in which the broad market fell (S&P about -0.7%, '
+          'Nasdaq about -1.4%) on the Strait of Hormuz escalation and the repricing toward a September Fed hike. '
+          'Buying a low-beta utility-equipment name into a rates-and-war selloff is the intended behaviour of this '
+          'line, not an accident of timing. RATIONALE ON RECORD from Aug 29 and re-confirmed Sep 1: HUBB was chosen '
+          'over VRT for the next non-AI dollar because Vertiv is 85% data-centre revenue while Hubbell is 64% '
+          'electric-utility transmission and distribution, so HUBB adds genuine diversification where VRT would deepen '
+          'the existing AI concentration; forward P/E 20.91 vs VRT 40.20, dividend 1.25% vs 0.09%, five-year beta 0.90 '
+          'vs 2.08. Q2 beat 5.52 vs 5.39 and management RAISED full-year adjusted EPS guidance to 20.25-20.55 from '
+          '19.30-19.85, with data-centre sales +65% in the quarter. KNOWN NEGATIVES ALSO ON RECORD: adjusted operating '
+          'margin fell 50bp to 23.9%, Electrical Solutions adjusted margin fell 130bp, net debt to total capital rose '
+          '28% -> 52% after the ~3.0bn NSI acquisition (~2.9x pro forma, CFO guiding 24-30 months to delever), and the '
+          'GAAP earnings guide was CUT even as the adjusted guide was raised. Analyst averages 553.89 (11) and 564.82 '
+          '(13).'}]
 
 SELLPLAN = ['IREN']
 
 CASH = {'currency': 'USD',
- 'amount': 19903.8,
- 'asof': 'Aug 31, 2026 (Live, VST trade unsettled)',
+ 'amount': 17848.56,
+ 'asof': 'Sep 1, 2026 (Live, HUBB trade unsettled)',
  'broker': 'POEMS (Phillip Securities)'}
 
 REALIZED = [{'t': 'NBIS', 'g': 13, 'amount': 1404.52},
@@ -6462,7 +6519,7 @@ REALIZED = [{'t': 'NBIS', 'g': 13, 'amount': 1404.52},
  {'t': 'SOFI', 'g': 14, 'amount': -152.4},
  {'t': 'HOOD', 'g': 14, 'amount': 897.82}]
 
-TOTALS = {'investedEverUSD': 620330.73,
+TOTALS = {'investedEverUSD': 622120.49,
  'investedEverTHB': 19834480,
  'soldCostUSD': 34025.62,
  'soldCostTHB': 1143440,
@@ -6952,7 +7009,16 @@ MONTHLY = [{'ym': '2025-07',
               {'g': 4, 'buy': 11754.28, 'sell': 0.0, 'real': 0.0},
               {'g': 6, 'buy': 1887.98, 'sell': 0.0, 'real': 0.0},
               {'g': 10, 'buy': 1861.84, 'sell': 0.0, 'real': 0.0},
-              {'buy': 2055.24, 'g': 18, 'real': 0.0, 'sell': 0.0}]}]
+              {'buy': 2055.24, 'g': 18, 'real': 0.0, 'sell': 0.0}]},
+ {'ym': '2026-09',
+  'buyUSD': 1789.76,
+  'buyLots': 1,
+  'sellUSD': 0.0,
+  'sellLots': 0,
+  'realizedUSD': 0.0,
+  'realizedTHB': 0,
+  'byStock': [{'buy': 1789.76, 'real': 0.0, 'sell': 0.0, 't': 'HUBB'}],
+  'byGroup': [{'buy': 1789.76, 'g': 17, 'real': 0.0, 'sell': 0.0}]}]
 
 THBFX = {'GOOGL': 32.2446,
  'NVDA': 32.084,
