@@ -238,7 +238,44 @@ ASOF = ('Aug 31, 2026 - close. Daily price refresh: 178 of 181 tickers brought t
  'BUDGET FOR THE FIRST TIME, since group 11 Consumer / F&B was the last one at zero. Group 11 rises 0 -> 5,000; group '
  '20 Industrial STX falls 10,000 -> 5,000. Cost of budgeted names is unchanged at 591,958.72 because neither MCD nor '
  'CAT is held; budget utilisation is therefore unchanged at 59.2%. NOT CHANGED: no price, position, share count, cost, '
- "cash, realized P/L or group. This edit sets two 'budget' fields and nothing else.")
+ "cash, realized P/L or group. This edit sets two 'budget' fields and nothing else. | Sep 1, 2026 edit 7 - ⚠️ PENG "
+ 'MOVED BACK 13 AI Infrastructure & Neoclouds -> 3 Memory & Storage. THIS REVERSES A CLASSIFICATION I MADE ON AUG 31 '
+ 'AND THE ERROR WAS MINE. WHAT I GOT WRONG: on Aug 31 PENG was moved OUT of Memory & Storage into AI Infrastructure & '
+ "Neoclouds with the stated reasoning that 'Penguin runs an integrated-memory business alongside an Advanced Computing "
+ 'business that builds and integrates AI/HPC clusters; it is the latter that defines it today and puts it with SMCI '
+ "and DELL rather than with MU, SKHY, SNDK, WDC and STX.' That reasoning was an IMPRESSION, not a reading of the "
+ "segment accounts. The segment accounts say the opposite. THE SEGMENT NUMBERS, from the company's own SEC 8-K exhibit "
+ 'for Q3 FY2026 (quarter ended 29 May 2026): Integrated Memory net sales 275.067M, +111.4% YoY, = 57.5% OF TOTAL. '
+ 'Advanced Computing - the segment that actually IS the AI/HPC systems business - 137.583M, +3.8% YoY, = 28.7% of '
+ 'total. Optimized LED 66.063M, +7.2%, = 13.8%. TOTAL 478.713M. Over NINE MONTHS the divergence is starker still: '
+ 'Advanced Computing 404.8M against 510.1M a year earlier, DOWN 20.6%, while Integrated Memory went 332.1M -> 583.2M, '
+ 'UP 75.6%. In FY2025 Advanced Computing WAS the largest segment at 648.4M; it is not now. THEREFORE: memory is the '
+ 'largest segment, memory supplied essentially all the growth, and the AI systems segment is SHRINKING. Penguin is a '
+ 'memory company with an AI systems attachment, not the reverse. The Aug 31 move placed it beside DELL, HPE and SMCI '
+ 'on the strength of a business line that is down a fifth. It belongs with MU, SKHY, SNDK, WDC and STX. Group 3 Memory '
+ '& Storage returns 5 -> 6; group 13 falls 11 -> 10. Total unchanged at 181 stocks in 22 groups. PENG is '
+ 'watchlist-only (shares None, budget None) so NO market value moved. THE LESSON, RECORDED SO IT IS NOT REPEATED: the '
+ 'Aug 31 board-wide audit correctly insisted that classification follow the BUSINESS MODEL rather than the end market '
+ "or the narrative. On this one ticker I followed the company's own narrative - management frames everything through "
+ "an 'AI Factory Platform strategy' and the Q3 release attributes the guidance raise to 'very strong agentic AI-driven "
+ "customer demand' - instead of opening the segment table. Management narrative is not a segment disclosure. Where a "
+ 'company reports segments, the segment revenue decides the classification. ⚠️ THIS ALSO CHANGES WHAT PENG IS AS AN '
+ 'INVESTMENT, and the numbers are recorded here because they now sit in a different comparison set. Its own 10-K warns '
+ "that 'the markets for our Integrated Memory products have historically been characterized by declines in average "
+ "selling prices' - so 57.5% of revenue now sits in the one segment the company itself calls structurally "
+ 'price-deflationary, and that segment supplied the growth. Cash conversion has collapsed: nine-month cash from '
+ 'continuing operations 11.222M against 183.616M in the prior-year nine months, a 94% fall, with capex 7.297M leaving '
+ 'roughly 3.9M of nine-month free cash flow against a 2.54bn market capitalisation. Consolidated GAAP gross margin is '
+ '27.8% and FY2026 guidance implies about 26.5% GAAP - NO margin expansion guided despite the AI Factory narrative and '
+ '22% revenue growth. Customer concentration is severe and worsening: the ten largest end customers were 66%, 58% and '
+ '60% of net sales in FY2025, FY2024 and FY2023, with TWO individual customers above 10% in FY2025. In July 2026 the '
+ 'company closed a 750M zero-coupon convertible and, in concurrent exchanges of its 2029 and 2030 notes, issued '
+ 'roughly 8.7 MILLION NEW SHARES against about 51.24M outstanding - some 17% real, immediate dilution, separate from '
+ 'the capped call which only protects above about 175.05 per share. Barclays downgraded to Underweight with a 40 '
+ 'target on 20 July 2026 and JPMorgan carries Neutral at 20. ⚠️ The stockanalysis analyst panel average of 74.29 is '
+ "dated 20 JULY 2026 and PREDATES the entire August decline - the board's stored fvAvg of 74.29 should be treated as "
+ 'stale, not as live upside. NO BUDGET IS OPENED for PENG and none is recommended. NOT CHANGED by this edit: no price, '
+ "position, share count, cost, budget, cash, realized P/L or group label. Only the 'g' field on one watchlist ticker.")
 
 GROUPS = ['Hyperscalers',
  'Chip Designers, EDA & IP',
@@ -1298,7 +1335,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 74.29,
   'fvMax': 85,
   'fvMin': 40,
-  'g': 13,
+  'g': 3,
   'gm': 27.92,
   'hi52': 89.86,
   'jan2': None,
