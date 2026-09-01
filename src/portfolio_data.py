@@ -50,7 +50,70 @@ ASOF = ('Aug 31, 2026 - close. Daily price refresh: 178 of 181 tickers brought t
  'the Aug 31 intraday extreme, the lowest defensible correction; the true extreme may have been set on another recent '
  'session not separately checked. AFTER THIS MERGE: pxd is 2026-08-31 on all 181 rows, nothing is left at an Aug 28 '
  'price, and no row is internally impossible on either the high/low test or the 52-week test. NOTHING ELSE WAS '
- 'TOUCHED: no position, share count, cost, budget, cash, realized P/L or group.')
+ 'TOUCHED: no position, share count, cost, budget, cash, realized P/L or group. | Sep 1, 2026 edit 2 - THREE NEW '
+ "BUDGETS OPENED TO FILL TWO BLANK GROUPS, at user request ('do it for those 3 stocks on budget for $5,000 each'). "
+ 'FSLR, V and NU each set to 5,000; all three are watchlist-only, shares None, cost None, no position taken. ⚠️ NOTE '
+ "THE USER'S OWN SIZING DECISION, RECORDED BECAUSE IT DIFFERS FROM THE ADVICE: the recommendation was FSLR 5,000, V "
+ '10,000 and NU 5,000 for 20,000 total, which would have consumed the entire remaining unallocated budget. Salee chose '
+ '5,000 each for 15,000, HALVING the Visa line and leaving 5,000 unallocated. That is a more conservative allocation '
+ 'than proposed and is his call, not a transcription error. WHY THESE THREE. (1) FSLR (First Solar, group 5 Solar & '
+ "Storage) - the ONLY investable name in that group at this portfolio's size. It is one of just two profitable members "
+ '(net income 1.75bn, 32.5% margin, 44.0% gross margin) against three pre-profit ones, holds 1.53bn NET CASH, and '
+ 'trades at 12.45x trailing / 9.64x forward with a PEG of 0.45 and EV/EBITDA 8.45. Both analyst panels see it 32-36% '
+ 'higher (266.27 and 275.30 against the Aug 31 close of 201.90). ⚠️ It is cheap for a reason that must be '
+ 'underwritten: contracted backlog FELL from 50.1 GW to 45.1 GW in a single quarter, 41 of the remaining 45.1 GW '
+ 'REQUIRES DOMESTIC CONTENT, Q2 gross bookings of 3.0 GW ran below its ~4.25 GW quarterly shipping pace, and Section '
+ '45X is a direct monetised P&L line - First Solar sold 857m of credits for 819m gross cash in one year. Its own '
+ "guidance states it 'assumes the current US policy environment remains unchanged.' (2) V (Visa, group 14 Digital "
+ 'Fintech) - chosen as the cleanest available diversifier against a book that is 83.81% AI infrastructure. Visa takes '
+ 'NO credit risk and has NO direct interest-rate exposure; it collects a fee on 4 trillion dollars of quarterly '
+ 'payment volume and 71.7bn processed transactions and lends nothing. Forty analysts rate it Strong Buy at an average '
+ '419.36, and a second independent panel agrees at 416.62. ⚠️ The risk is specific and already quantified, which is '
+ 'why it was preferred: the preliminarily-approved merchant swipe-fee settlement cuts interchange 10bps for five '
+ 'years, caps standard consumer-card rates at 1.25% for eight years and lets merchants refuse premium and commercial '
+ 'cards; the settlement is NOT final and will be appealed to the 2nd Circuit, and a separate DOJ debit-monopolisation '
+ 'case remains live. Visa also announced 2,600 job cuts, about 7% of staff, on earnings day. (3) NU (Nu Holdings, '
+ 'group 14 Digital Fintech) - budgeted but explicitly NOT to be bought yet. Best metrics on the fintech list: PEG '
+ '0.44, forward P/E 15.02, ROE 33%, risk-adjusted NIM 12.4%, efficiency ratio 19.5%, consensus +30.7%, and it is '
+ 'Brazilian/Mexican/Colombian so genuinely uncorrelated with the rest of the book. ⚠️ THE HOLD CONDITION AND ITS '
+ 'REASONING ARE ON RECORD: 90-day-plus NPL rose 35bp to 6.9%, a FOUR-QUARTER HIGH, while management pushed the '
+ "loan-to-deposit ratio from 49.1% to 58.3% and conceded 'intentional expansion into higher-risk segments'. "
+ "Early-stage 15-90 NPL improved 16bp to 4.8%, which means Q1's spike is now ROLLING INTO the 90+ bucket. Nu also "
+ 'provides zero forward guidance. This is the same structural risk flagged against MELI two weeks ago - a large Latin '
+ 'American credit-card book being levered into as the lagging loss indicator turns - and passing it here would have '
+ 'been inconsistent. TRIGGER: buy nothing until the Q3 print, expected mid-November, and only if 90+ NPL turns back '
+ 'down below about 6.6%. If it rises again, do not buy at all. MACRO CONTEXT THAT DROVE THE FINTECH SELECTION, '
+ 'recorded because it inverts the usual playbook: the US rate path is currently priced toward a HIKE, not a cut. The '
+ "July 2026 FOMC held 9-3 with ALL THREE dissenters preferring to RAISE, and the minutes record that 'investors "
+ "expected no policy change in July but anticipated a 25 basis point increase by September and another by early 2027.' "
+ 'That is a tailwind for reserve-income and net-interest names and a headwind for lender funding costs and consumer '
+ 'credit quality - which is why the two rate-levered names the user asked about (HOOD, and CRCL by extension) and the '
+ 'two lenders (AFRM, SOFI) were all declined. NAMES EXPLICITLY DECLINED, with the deciding number: EOSE gross margin '
+ '-71%, i.e. it loses about 1.71 dollars for every 1.00 billed, with shares +40% YoY, 31.5% short interest and 80% of '
+ 'Q2 revenue from a single project whose customer is a JV Eos itself capitalised. ENPH revenue -20% YoY with consensus '
+ '-19.3% for the year and 29% of the quarter being safe-harbour pull-forward. TE 1.71 quarters of unrestricted cash '
+ 'and 510m of unfunded capex. HOOD price/FCF of 430 with platform assets -4% month-on-month. SOFI credit-card '
+ 'charge-offs re-accelerating 6.68% -> 7.65% and loans carried at fair value so credit shows up as mark-downs rather '
+ 'than provisions. LMND guiding to a FY26 adjusted EBITDA LOSS of 47-51m. AFRM a 13.46x trailing P/E that is a tax '
+ 'mirage (GAAP net income 1,616.6m on operating income of just 147.3m) with provisions +43% YoY against charge-offs '
+ '+8%. CRCL a forward P/E (72.27) ABOVE its trailing P/E (53.07), meaning the market forecasts earnings to FALL, with '
+ '95% of revenue being interest on reserves, 62% of that paid to Coinbase, and USDC circulation down 4.8% QoQ against '
+ 'guidance of a 40% CAGR. ⚠️ SEPARATE CLASSIFICATION FINDING, FLAGGED AND NOT ACTED ON: AMPX (Amprius) sits in group 5 '
+ "Solar & Storage but is NOT a solar or storage company. Its own filings describe the end market as 'unmanned aerial "
+ "systems, such as drones and high-altitude pseudo satellites' plus 'drone, e-mobility, aerospace, and defense'. It "
+ 'belongs in group 8 Defense, Drones & Public Safety. It is also the only one of the five solar names with a consensus '
+ 'crossover to profit (FY2027 EPS +0.10), positive gross margin, net cash 68.14m, no debt and no going-concern '
+ 'language - so it is a plausible small speculative candidate, but in the RIGHT group. Awaiting approval to move it. '
+ 'EFFECT ON THE AGGREGATES, recomputed not assumed: total allocated budget 980,000 -> 995,000 = 99.5% of the 1,000,000 '
+ 'target, leaving 5,000 unallocated. Budgeted names 55 -> 58. Groups carrying a budget 18 -> 20 of 22 - TWO new '
+ 'groups, because BOTH were previously at zero: group 5 Solar & Storage goes to 5,000 (FSLR) and group 14 Digital '
+ 'Fintech goes to 10,000 (V and NU together, both already inside that one group). ⚠️ CORRECTION MADE BEFORE SHIPPING: '
+ "this note first read '18 -> 19, only ONE new group', which was wrong - it overlooked that Digital Fintech had no "
+ 'budget at all before this edit. Verified against a recomputed count, not assumed. GROUPS STILL CARRYING NO BUDGET '
+ 'FALL FROM FOUR TO TWO: Quantum and Consumer / F&B. Cost of budgeted names is unchanged at 591,958.72 because all '
+ 'three are watchlist-only; budget utilisation therefore falls 60.4% -> 59.5% purely on the larger denominator. NOT '
+ 'CHANGED: no price, position, share count, cost, cash, realized P/L, group or other budget. This edit sets three '
+ "'budget' fields and nothing else.")
 
 GROUPS = ['Hyperscalers',
  'Chip Designers, EDA & IP',
@@ -5776,13 +5839,13 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'APLD': {'budget': None, 'cost': None, 'shares': None},
  'CIFR': {'budget': None, 'cost': None, 'shares': None},
  'HUT': {'budget': None, 'cost': None, 'shares': None},
- 'V': {'budget': None, 'cost': None, 'shares': None},
+ 'V': {'budget': 5000, 'cost': None, 'shares': None},
  'MA': {'budget': None, 'cost': None, 'shares': None},
  'PYPL': {'budget': None, 'cost': None, 'shares': None},
  'HOOD': {'budget': None, 'cost': None, 'shares': None},
  'SOFI': {'budget': None, 'cost': None, 'shares': None},
  'AFRM': {'budget': None, 'cost': None, 'shares': None},
- 'NU': {'budget': None, 'cost': None, 'shares': None},
+ 'NU': {'budget': 5000, 'cost': None, 'shares': None},
  'SHOP': {'budget': None, 'cost': None, 'shares': None},
  'MELI': {'budget': None, 'cost': None, 'shares': None},
  'SE': {'budget': 5000.0, 'cost': None, 'shares': None},
@@ -5821,7 +5884,7 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'LEU': {'budget': None, 'cost': None, 'shares': None},
  'MYRG': {'budget': None, 'cost': None, 'shares': None},
  'STRL': {'budget': None, 'cost': None, 'shares': None},
- 'FSLR': {'budget': None, 'cost': None, 'shares': None},
+ 'FSLR': {'budget': 5000, 'cost': None, 'shares': None},
  'ON': {'budget': None, 'cost': None, 'shares': None},
  'KEEL': {'budget': None, 'cost': None, 'shares': None},
  'SIDU': {'budget': None, 'cost': None, 'shares': None},
