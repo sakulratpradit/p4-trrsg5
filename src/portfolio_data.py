@@ -113,7 +113,33 @@ ASOF = ('Aug 31, 2026 - close. Daily price refresh: 178 of 181 tickers brought t
  'FALL FROM FOUR TO TWO: Quantum and Consumer / F&B. Cost of budgeted names is unchanged at 591,958.72 because all '
  'three are watchlist-only; budget utilisation therefore falls 60.4% -> 59.5% purely on the larger denominator. NOT '
  'CHANGED: no price, position, share count, cost, cash, realized P/L, group or other budget. This edit sets three '
- "'budget' fields and nothing else.")
+ "'budget' fields and nothing else. | Sep 1, 2026 edit 3 - AMPX MOVED 5 Solar & Storage -> 8 Defense, Drones & Public "
+ "Safety, user approved ('yes let move AMPX to Defense and Drone group'). ONE ticker moved. No price, position, share "
+ "count, cost, budget, cash, realized P/L or group label changed; only the 'g' field. AMPX is watchlist-only (shares "
+ 'None, budget None), so NO market value moved and no group total shifted. WHY: Amprius was never a solar or storage '
+ "company. Its own SEC filing describes the end market as 'unmanned aerial systems, such as drones and high-altitude "
+ "pseudo satellites', and the company adds 'drone, e-mobility, aerospace, and defense'. It makes silicon-anode "
+ 'lithium-ion batteries under the SiCore and SiMaxx platforms. Nothing in that is solar generation or grid storage. It '
+ "sat in group 5 purely because 'batteries' reads as energy storage - the classic end-market-versus-business-model "
+ "confusion this board's audit has been correcting all week. Its named commercial wins confirm the placement: a 24m "
+ 'order from a major European DRONE developer and a multi-year contract with Stark Future expected to exceed 100m. '
+ 'RESULTING GROUP SIZES: group 5 Solar & Storage 5 -> 4 (TE, EOSE, ENPH, FSLR), group 8 Defense, Drones & Public '
+ 'Safety 9 -> 10. Total unchanged at 181 stocks in 22 groups. ⚠️ IMPORTANT CONSEQUENCE FOR THE SOLAR GROUP, STATED SO '
+ 'IT IS NOT MISREAD LATER: group 5 now contains FOUR names of which only ONE - FSLR - is profitable, and FSLR is also '
+ 'the only one carrying a budget (5,000, set earlier today). The other three are TE (1.71 quarters of unrestricted '
+ 'cash, 699m net debt, 510m of unfunded capex), EOSE (gross margin -71%, i.e. it loses about 1.71 dollars for every '
+ '1.00 billed, 31.5% short interest) and ENPH (revenue -20% YoY after the Section 25D residential credit died on 31 '
+ "Dec 2025). Removing AMPX removed the group's only member with a consensus crossover to profit, so group 5's "
+ "aggregates are now dominated by one good company and three loss-makers. Do not read a group average from it. AMPX'S "
+ 'OWN NUMBERS, carried across unchanged and recorded here because they now belong to a different comparison set: '
+ 'revenue 109.23M TTM, Q2 2026 revenue 34.0M +126% YoY, gross margin 27% in the quarter (22.25% TTM), operating loss '
+ '4.3M narrowing from 6.8M, net cash 68.14M with NO debt and NO going-concern language, FY2026 guidance RAISED to '
+ 'revenue at least 140M, gross margin at least 28%, net loss under 10M and adjusted EBITDA at least +4.0M, capex under '
+ '10M. Consensus has it crossing to profit in FY2027 (EPS +0.10) - the only one of the five former group-5 members to '
+ 'do so. Analyst panels: 11 analysts Moderate Buy avg 23.00, and 10 analysts Strong Buy avg 23.00, against the Aug 31 '
+ 'close of 9.88. ⚠️ Counterweights on record: P/S 13.12 on a 1.42bn market cap against 109M of revenue, shares '
+ 'outstanding +17.21% YoY, and no formal backlog is disclosed. NO BUDGET WAS OPENED for AMPX by this edit - it remains '
+ 'watchlist-only in its new group.')
 
 GROUPS = ['Hyperscalers',
  'Chip Designers, EDA & IP',
@@ -2258,7 +2284,7 @@ STOCKS = [{'an': 83,
   'fvAvg': 23.0,
   'fvMax': 30,
   'fvMin': 18,
-  'g': 5,
+  'g': 8,
   'gm': 18.13,
   'hi52': 24.23,
   'jan2': None,
