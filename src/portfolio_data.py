@@ -167,7 +167,41 @@ ASOF = ('Aug 31, 2026 - close. Daily price refresh: 178 of 181 tickers brought t
  'reclassified to group 13 on Aug 31, leaving IONQ and QNT as two genuine pure-plays with no funded way to own them. '
  'Cost of budgeted names is unchanged at 591,958.72 because AMPX is watchlist-only; budget utilisation therefore falls '
  '59.5% -> 59.2% purely on the larger denominator. NOT CHANGED: no price, position, share count, cost, cash, realized '
- "P/L, group or other budget. This edit sets one 'budget' field and nothing else.")
+ "P/L, group or other budget. This edit sets one 'budget' field and nothing else. | Sep 1, 2026 edit 5 - IONQ BUDGETED "
+ "AT 5,000, FUNDED BY TRIMMING ZS FROM 10,000 TO 5,000. User chose this option explicitly ('Trim ZS to $5,000 thanks') "
+ 'when told the board was already 100% allocated. Both are watchlist-only; ZS has never been bought and IONQ is not '
+ 'bought by this edit. ⚠️ WHY A CHOICE WAS REQUIRED AT ALL - THE NEW STANDING RULE IN ACTION. Total allocated budget '
+ 'hit EXACTLY 1,000,000 = 100.0% of target with the AMPX edit earlier today, so there was no free pool left. Adding '
+ 'IONQ at 5,000 would have taken the board to 1,005,000, i.e. 100.5% of target. Rather than silently overshoot, four '
+ 'funded options were put to the user: trim ZS, trim CAT, raise the target to 1,005,000, or accept the 0.5% overshoot. '
+ 'HE CHOSE THE ZS TRIM, so total allocated budget REMAINS EXACTLY 1,000,000 and unallocated remains ZERO. This is the '
+ 'first budget request on this board that had to be funded from an existing allowance rather than a free pool. WHY ZS '
+ 'WAS THE RECOMMENDED SOURCE: Zscaler had sat at a 10,000 budget with 0.00 SPENT - 0% used - since the budget was '
+ 'opened, and group 15 Cybersecurity already holds two funded, working positions at 10,000 each: CRWD (cost 3,914.12, '
+ '+123% at the Aug 31 close) and PANW (cost 3,760.62, +117%). Cutting ZS to 5,000 keeps the idea alive at a size '
+ 'proportionate to a name that has never been acted on, without touching a single held position. CAT was the '
+ 'alternative and was NOT recommended, because CAT is the ONLY budgeted name in group 20 Industrial STX and halving it '
+ 'would have thinned a group that is genuine non-AI diversification - the exact thing this book is short of at 83.81% '
+ "AI. ⚠️ IONQ'S OWN NUMBERS CARRY A TRAP THAT MUST NOT BE MISREAD. The board stores pe 36.97 for IONQ. THAT IS NOT AN "
+ 'OPERATING MULTIPLE. The same row stores a PROFIT MARGIN OF 174.88% on revenue of just 0.19bn - a net income larger '
+ 'than total revenue, which can only come from non-operating items such as mark-to-market or warrant gains, not from '
+ 'selling quantum computers. The honest valuation figure on this row is PRICE/SALES OF 67.94. Revenue growth of '
+ '+334.6% is on a 0.19bn base. Forward P/E is None because there is no positive forward earnings estimate to strike '
+ "one on. Anyone reading the 36.97 as 'IONQ trades at 37 times earnings' will be badly wrong. Analyst coverage: 13 "
+ 'analysts, average fair value 68.79, range 44.78 to 100.00, against the Aug 31 close of 39.31. 52-week range 25.89 to '
+ '84.64, so the close sits 53.6% below the 52-week high. WHY THE QUANTUM GROUP WAS EMPTY IN THE FIRST PLACE, for the '
+ 'record: group 9 went to a zero budget on Aug 31 when IBM was reclassified out of it into group 13 AI Infrastructure '
+ '& Neoclouds. That move was correct - quantum is a rounding error of a ~220bn IT services and mainframe company and '
+ "IBM's share price does not trade on it - but it left IONQ and QNT as two genuine pure-plays with NO funded way to "
+ 'own them. This edit closes that hole. IONQ was chosen over QNT by the user; QNT remains unbudgeted and note that the '
+ 'board holds essentially NO fundamentals for QNT at all (pe, ps, revB, revG, eps, gm, pm and analyst count are all '
+ 'None), so it could not have been assessed on the same basis. AGGREGATES, recomputed not assumed: total allocated '
+ 'budget UNCHANGED at 1,000,000 (100.0% of target), unallocated UNCHANGED at zero. Budgeted names 59 -> 60. Groups '
+ 'carrying a budget 20 -> 21 of 22. GROUPS STILL CARRYING NO BUDGET FALL FROM TWO TO ONE: only Consumer / F&B remains. '
+ 'Group 15 Cybersecurity falls 30,000 -> 25,000; group 9 Quantum rises 0 -> 5,000. Cost of budgeted names is unchanged '
+ 'at 591,958.72 because neither ZS nor IONQ is held; budget utilisation is therefore unchanged at 59.2%. NOT CHANGED: '
+ "no price, position, share count, cost, cash, realized P/L or group. This edit sets two 'budget' fields and nothing "
+ 'else.')
 
 GROUPS = ['Hyperscalers',
  'Chip Designers, EDA & IP',
@@ -5869,7 +5903,7 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'PLTR': {'budget': 10000, 'cost': 5533.09, 'shares': 40},
  'AVAV': {'budget': 5000, 'cost': 3758.3, 'shares': 18},
  'ONDS': {'budget': 5000, 'cost': 2030.54, 'shares': 200},
- 'IONQ': {'budget': None, 'cost': None, 'shares': None},
+ 'IONQ': {'budget': 5000, 'cost': None, 'shares': None},
  'ORCL': {'budget': 10000, 'cost': 8313.62, 'shares': 50},
  'ZETA': {'budget': 5000, 'cost': 2004.33, 'shares': 111},
  'CDNS': {'budget': 10000, 'cost': 3918.01, 'shares': 12},
@@ -5906,7 +5940,7 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'UBER': {'budget': None, 'cost': None, 'shares': None},
  'CRWD': {'budget': 10000, 'cost': 3914.12, 'shares': 40},
  'PANW': {'budget': 10000, 'cost': 3760.62, 'shares': 22},
- 'ZS': {'budget': 10000.0, 'cost': None, 'shares': None},
+ 'ZS': {'budget': 5000, 'cost': None, 'shares': None},
  'NET': {'budget': None, 'cost': None, 'shares': None},
  'FTNT': {'budget': None, 'cost': None, 'shares': None},
  'POET': {'budget': None, 'cost': None, 'shares': None},
