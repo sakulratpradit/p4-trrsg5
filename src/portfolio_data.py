@@ -424,7 +424,26 @@ ASOF = ('Aug 28, 2026 - close. Full manual price refresh: ALL 180 of 180 prices 
  'reconciliation gap - held cost is now 591,958.72 and soldCost 34,025.62, summing to 625,984.34 against '
  'investedEverUSD 620,330.73, so the gap is EXACTLY unchanged at 5,653.61, which confirms it is a historical artefact '
  "and not something this or any recent trade is creating; (b) investedEverTHB 19,834,480 and THBFX['AMAT'] 32.1085 "
- 'still await actual THB amounts and rates; (c) the 14.89 credit above.')
+ 'still await actual THB amounts and rates; (c) the 14.89 credit above. | Aug 31, 2026 edit 6 - BUDGETS OPENED FOR THE '
+ "TWO UNBUDGETED HOLDINGS, at user request ('allocate $5,000 each for both ONDS and IREN'). ONDS (Ondas Holdings, "
+ 'group 8 Defense, Drones & Public Safety) budget None -> 5,000; 200 shares held at cost 2,030.54, so the budget is '
+ '40.6% used with 2,969.46 of headroom. IREN (group 21 Bitcoin & AI Datacenters) budget None -> 5,000; 45 shares held '
+ 'at cost 1,735.16, so 34.7% used with 3,264.84 of headroom. WHY THIS MATTERS: these were the only two positions on '
+ 'the board carrying real money with NO budget line, and the new allocation wheel is what surfaced them - they '
+ 'appeared in the Actual view because money is in them and vanished from the Plan view because nothing authorised '
+ "them, meaning two live positions sat outside the board's own control system. Both are now inside it. EFFECTS ON THE "
+ 'BUDGET AGGREGATES, all recomputed rather than assumed: total allocated budget 970,000 -> 980,000 = 98.0% of the '
+ '1,000,000 target, leaving 20,000 unallocated at target level (was 30,000). Budgeted names 53 -> 55. Groups carrying '
+ 'a budget 17 -> 18 of 22 - only ONE new group, because group 8 already had a budget (PLTR 10,000 + AVAV 5,000) and '
+ 'merely rises to 20,000, while group 21 Bitcoin & AI Datacenters goes from a zero-budget watchlist to a funded theme '
+ 'at 5,000. Groups still carrying NO budget fall from five to FOUR: Solar & Storage, Quantum, Consumer / F&B and '
+ 'Digital Fintech. ONE RECONCILIATION SIDE-EFFECT WORTH RECORDING: the cost of budgeted names rises 588,193.02 -> '
+ '591,958.72 and now equals TOTAL held cost exactly. Those two figures had differed by 3,765.70, which is precisely '
+ 'ONDS 2,030.54 + IREN 1,735.16; that split existed only because two holdings were unbudgeted and it no longer exists. '
+ 'Budget utilisation therefore reads 60.4% (591,958.72 of 980,000) against 60.6% before, a fall caused by the larger '
+ 'denominator, not by any change in what is invested. NOT CHANGED: no price, no position, no share count, no cost, no '
+ "cash, no realized P/L, no group and no other budget. This edit sets two 'budget' fields and nothing else. STILL "
+ "OPEN, unchanged: the 5,653.61 reconciliation gap, and investedEverTHB / THBFX['AMAT'] pending actual THB amounts.")
 
 GROUPS = ['Hyperscalers',
  'Chip Designers, EDA & IP',
@@ -6125,7 +6144,7 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'SPCX': {'budget': None, 'cost': None, 'shares': None},
  'PLTR': {'budget': 10000, 'cost': 5533.09, 'shares': 40},
  'AVAV': {'budget': 5000, 'cost': 3758.3, 'shares': 18},
- 'ONDS': {'budget': None, 'cost': 2030.54, 'shares': 200},
+ 'ONDS': {'budget': 5000, 'cost': 2030.54, 'shares': 200},
  'IONQ': {'budget': None, 'cost': None, 'shares': None},
  'ORCL': {'budget': 10000, 'cost': 8313.62, 'shares': 50},
  'ZETA': {'budget': 5000, 'cost': 2004.33, 'shares': 111},
@@ -6144,7 +6163,7 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'UNH': {'budget': None, 'cost': None, 'shares': None},
  'JNJ': {'budget': None, 'cost': None, 'shares': None},
  'TEM': {'budget': None, 'cost': None, 'shares': None},
- 'IREN': {'budget': None, 'cost': 1735.16, 'shares': 45},
+ 'IREN': {'budget': 5000, 'cost': 1735.16, 'shares': 45},
  'NBIS': {'budget': None, 'cost': None, 'shares': None},
  'CRWV': {'budget': None, 'cost': None, 'shares': None},
  'APLD': {'budget': None, 'cost': None, 'shares': None},
