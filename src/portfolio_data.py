@@ -201,7 +201,44 @@ ASOF = ('Aug 31, 2026 - close. Daily price refresh: 178 of 181 tickers brought t
  'Group 15 Cybersecurity falls 30,000 -> 25,000; group 9 Quantum rises 0 -> 5,000. Cost of budgeted names is unchanged '
  'at 591,958.72 because neither ZS nor IONQ is held; budget utilisation is therefore unchanged at 59.2%. NOT CHANGED: '
  "no price, position, share count, cost, cash, realized P/L or group. This edit sets two 'budget' fields and nothing "
- 'else.')
+ 'else. | Sep 1, 2026 edit 6 - MCD BUDGETED AT 5,000, FUNDED BY TRIMMING CAT FROM 10,000 TO 5,000. User instruction, '
+ "explicit and unambiguous: 'set budget $5,000 for MCD and trim CAT by $5,000 to leave it only $5,000'. Both "
+ 'watchlist-only; neither is held and neither is bought by this edit. Total allocated budget therefore REMAINS EXACTLY '
+ '1,000,000 = 100.0% of target, unallocated remains ZERO. Second consecutive request funded from an existing allowance '
+ 'rather than a free pool. ⚠️ THIS OVERRIDES A RECOMMENDATION AND THE REASONING IS PRESERVED SO IT IS NOT LOST. Advice '
+ 'given minutes earlier was to CANCEL group 11 Consumer / F&B outright and fund nothing in it, on TWO arguments that '
+ "still stand. (1) CONCENTRATION INTO THE OWNER'S OWN BUSINESS: Salee OPERATES TWO SUBWAY FRANCHISES (Sukhumvit 23 and "
+ 'Times Square). His largest real exposure to quick-service-restaurant demand is not on this dashboard at all - it is '
+ "his own operating business, with leases, staff and personal time in it. Buying McDonald's means that weak QSR "
+ 'traffic hits his Subway revenue AND the stock together; food-cost inflation raises his food cost AND compresses '
+ 'their margin; wage inflation hits both. Every other group on this board diversifies AWAY from his day job; group 11 '
+ 'concentrates INTO it. (2) THE ARITHMETIC DOES NOT REACH THE STATED OBJECTIVE of 100% capital gain 2026-2030, roughly '
+ '15% a year compounded: MCD grows revenue 6.3% and EPS 5.5%, and a mid-single-digit grower bought near 20x forward '
+ 'earnings returns perhaps 8-10% a year including its dividend. That is a fine result for a different mandate and '
+ 'structurally short of this one. ALSO ON RECORD: the defensive, non-AI job that group 11 was meant to do is already '
+ 'being done better by names funded the same day - V (Visa) is a toll on global consumer spending with NO credit risk '
+ 'and NO rate risk, capturing consumer demand without owning restaurant leases, food inflation or wage bills. ⚠️ THE '
+ 'CASE FOR MCD, ALSO ON RECORD, BECAUSE IT IS GENUINELY THE RIGHT PICK IF THE GROUP IS TO BE FUNDED AT ALL. Of the '
+ 'four names in group 11 it is best on every measure that matters here: highest consensus upside at +24.2% (fvAvg '
+ '327.29 against the Aug 31 close of 263.54, 34 analysts, range 250-407); cheapest on forward earnings relative to '
+ 'quality at 20.16x forward with a 57.35% gross margin and a 31.73% profit margin; the lowest EV/EBITDA of the four at '
+ '16.21; and the most de-rated - DOWN 22.9% from its 52-week high of 341.75 and -13.7% year to date, while KO and SBUX '
+ 'have both risen about 26% this year. It is also the one whose franchise economics the owner understands '
+ 'professionally - royalties, store-level margin, delivery commission - which is a real, if unquantifiable, edge. ITS '
+ 'OWN FLAW, STATED PLAINLY: a PEG of 3.05, the highest of the four, meaning roughly three times the growth rate is '
+ 'being paid for. WHY CAT WAS THE FUNDING SOURCE, AND THE COST OF THAT CHOICE: Caterpillar sat at a 10,000 budget with '
+ '0.00 SPENT since it was opened - 0% used - so no held position was disturbed. ⚠️ BUT NOTE WHAT THIS DOES: CAT is the '
+ "ONLY budgeted name in group 20 Industrial STX, so that group's entire allowance halves from 10,000 to 5,000. "
+ 'Industrial is genuine non-AI diversification, which this book is short of at 83.81% AI concentration, and an hour '
+ 'earlier CAT was explicitly NOT recommended as the source for the IONQ trim for exactly this reason - ZS was used '
+ 'instead. The user has now chosen CAT anyway. This is his call and is recorded as a decision, not an error, but the '
+ "board should note that group 20's ballast has been halved to fund a consumer name that the advice recommended "
+ 'against. AGGREGATES, recomputed not assumed: total allocated budget unchanged at 1,000,000; unallocated unchanged at '
+ 'zero. Budgeted names 60 -> 61. Groups carrying a budget 21 -> 22 OF 22 - EVERY GROUP ON THE BOARD NOW CARRIES A '
+ 'BUDGET FOR THE FIRST TIME, since group 11 Consumer / F&B was the last one at zero. Group 11 rises 0 -> 5,000; group '
+ '20 Industrial STX falls 10,000 -> 5,000. Cost of budgeted names is unchanged at 591,958.72 because neither MCD nor '
+ 'CAT is held; budget utilisation is therefore unchanged at 59.2%. NOT CHANGED: no price, position, share count, cost, '
+ "cash, realized P/L or group. This edit sets two 'budget' fields and nothing else.")
 
 GROUPS = ['Hyperscalers',
  'Chip Designers, EDA & IP',
@@ -5915,7 +5952,7 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'DDOG': {'budget': None, 'cost': None, 'shares': None},
  'MDB': {'budget': None, 'cost': None, 'shares': None},
  'SBUX': {'budget': None, 'cost': None, 'shares': None},
- 'MCD': {'budget': None, 'cost': None, 'shares': None},
+ 'MCD': {'budget': 5000, 'cost': None, 'shares': None},
  'KO': {'budget': None, 'cost': None, 'shares': None},
  'YUM': {'budget': None, 'cost': None, 'shares': None},
  'UNH': {'budget': None, 'cost': None, 'shares': None},
@@ -5985,7 +6022,7 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'NFLX': {'budget': None, 'cost': None, 'shares': None},
  'BKNG': {'budget': None, 'cost': None, 'shares': None},
  'WDAY': {'budget': None, 'cost': None, 'shares': None},
- 'CAT': {'budget': 10000.0, 'cost': None, 'shares': None},
+ 'CAT': {'budget': 5000, 'cost': None, 'shares': None},
  'DE': {'budget': None, 'cost': None, 'shares': None},
  'GE': {'budget': None, 'cost': None, 'shares': None},
  'MMM': {'budget': None, 'cost': None, 'shares': None},
