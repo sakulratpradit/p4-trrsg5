@@ -139,7 +139,35 @@ ASOF = ('Aug 31, 2026 - close. Daily price refresh: 178 of 181 tickers brought t
  'do so. Analyst panels: 11 analysts Moderate Buy avg 23.00, and 10 analysts Strong Buy avg 23.00, against the Aug 31 '
  'close of 9.88. ⚠️ Counterweights on record: P/S 13.12 on a 1.42bn market cap against 109M of revenue, shares '
  'outstanding +17.21% YoY, and no formal backlog is disclosed. NO BUDGET WAS OPENED for AMPX by this edit - it remains '
- 'watchlist-only in its new group.')
+ "watchlist-only in its new group. | Sep 1, 2026 edit 4 - AMPX BUDGET OPENED AT 5,000, user request ('set budget "
+ "$5,000 for AMPX that moved to new group'). Watchlist-only: shares None, cost None, no position taken. AMPX now sits "
+ 'in group 8 Defense, Drones & Public Safety, moved there earlier today. ⚠️ THE USER SIZED THIS ABOVE THE ADVICE AND '
+ "THAT IS RECORDED DELIBERATELY. The suggestion attached to the AMPX move was 'no more than 2,500 given the "
+ "price-to-sales'. Salee set 5,000 - DOUBLE the suggested cap. It is his call and it is not a transcription error, but "
+ 'the reason for the smaller suggestion stands on the record: AMPX trades at a PRICE/SALES OF 13.12 on a 1.42bn market '
+ 'capitalisation against 109.23M of TTM revenue, it is not yet profitable (TTM profit margin -33.40%), shares '
+ 'outstanding grew 17.21% year-on-year, and it discloses NO formal backlog. At 5,000 this is the largest budget on the '
+ 'board attached to a company with no trailing profit. THE CASE FOR IT, also on record: AMPX is the only former '
+ 'group-5 member with a consensus crossover to profit (FY2027 EPS +0.10); Q2 2026 revenue was 34.0M, +126% YoY, at a '
+ '27% gross margin; the operating loss NARROWED from 6.8M to 4.3M; it holds 68.14M NET CASH with NO debt and NO '
+ 'going-concern language in its 10-Q; and it RAISED FY2026 guidance to revenue at least 140M, gross margin at least '
+ '28%, net loss under 10M, adjusted EBITDA at least positive 4.0M and capex under 10M. Two analyst panels both average '
+ '23.00 against the Aug 31 close of 9.88. Named commercial wins: a 24M order from a major European drone developer and '
+ 'a multi-year Stark Future contract expected to exceed 100M. ⚠️ MILESTONE AND NEW CONSTRAINT - THE BUDGET IS NOW '
+ "FULL. Total allocated budget 995,000 -> 1,000,000, which is EXACTLY 100.0% of the TOTALS['targetUSD'] of 1,000,000. "
+ 'UNALLOCATED BUDGET IS NOW ZERO. Every future budget increase, and every new budgeted name, must now come OUT OF an '
+ "existing group's allowance or be accompanied by a deliberate decision to raise the portfolio target above 1,000,000. "
+ 'This is the first time the board has been fully allocated and it changes how the next allocation request has to be '
+ 'handled - there is no longer a free pool to draw on. AGGREGATES, recomputed not assumed: budgeted names 58 -> 59. '
+ 'Groups carrying a budget stays at 20 of 22, because group 8 Defense, Drones & Public Safety already had one and '
+ 'simply rises to 25,000 - PLTR 10,000 + AVAV 5,000 + ONDS 5,000 + AMPX 5,000. ⚠️ CORRECTION MADE BEFORE COMMIT: this '
+ "note first read 'PLTR 10,000 + AVAV 5,000 ... rises to 20,000', which omitted the ONDS 5,000 budget opened EARLIER "
+ 'THE SAME DAY. Caught against a recomputed group total, not assumed. GROUPS STILL CARRYING NO BUDGET REMAIN TWO: '
+ 'Quantum and Consumer / F&B. ⚠️ Quantum is the one worth a decision - it went to zero budget when IBM was '
+ 'reclassified to group 13 on Aug 31, leaving IONQ and QNT as two genuine pure-plays with no funded way to own them. '
+ 'Cost of budgeted names is unchanged at 591,958.72 because AMPX is watchlist-only; budget utilisation therefore falls '
+ '59.5% -> 59.2% purely on the larger denominator. NOT CHANGED: no price, position, share count, cost, cash, realized '
+ "P/L, group or other budget. This edit sets one 'budget' field and nothing else.")
 
 GROUPS = ['Hyperscalers',
  'Chip Designers, EDA & IP',
@@ -5882,7 +5910,7 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'NET': {'budget': None, 'cost': None, 'shares': None},
  'FTNT': {'budget': None, 'cost': None, 'shares': None},
  'POET': {'budget': None, 'cost': None, 'shares': None},
- 'AMPX': {'budget': None, 'cost': None, 'shares': None},
+ 'AMPX': {'budget': 5000, 'cost': None, 'shares': None},
  'NOK': {'budget': None, 'cost': None, 'shares': None},
  'APP': {'budget': None, 'cost': None, 'shares': None},
  'COHR': {'budget': 5000, 'cost': 3395.12, 'shares': 10},
