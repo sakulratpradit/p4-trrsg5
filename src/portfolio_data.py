@@ -3,7 +3,16 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Sep 1, 2026 - close. Daily price refresh: 181 of 181 tickers brought to the Tuesday Sep 1, 2026 close (price, mcapB, '
+ASOF = ('Sep 2, 2026 - FSLR position opened. Bought 10 shares of First Solar (FSLR, Solar & Storage) at a 199.50 limit, '
+ 'filled Sep 2; cost 2,003.56 including the flat 8.56 POEMS commission, average 200.356. This is the first buy in '
+ 'group 5 and takes the group from budgeted-but-empty to funded: 2,003.56 of the 5,000 budget deployed, 2,996.44 of '
+ 'room left. Held positions 51 -> 52; held cost 593,748.48 -> 595,752.04. Cash: the POEMS live balance reads '
+ "16,061.53, down 1,787.03 from Sep 1's 17,848.56 - the HUBB purchase (1,789.76) has now come out of the live balance, "
+ "and the 2.73 difference is most likely accrued USD interest, which the broker's own footnote allows for. The FSLR "
+ 'trade is NOT yet deducted (settles T+2), so true deployable cash is 16,061.53 - 2,003.56 = 14,057.97. This is the '
+ 'fifth consecutive confirmation of the settled-trades-only rule (AMAT, NVDA, VST, HUBB, now FSLR). September ledger: '
+ '2 lots, 3,793.32 deployed. Entry note: the fill at 199.50 sits fractionally below the Sep 1 close of 199.65. || Sep '
+ '1, 2026 - close. Daily price refresh: 181 of 181 tickers brought to the Tuesday Sep 1, 2026 close (price, mcapB, '
  "pxd; mcapB scaled by each ticker's exact price ratio). METHOD per playbook: stockanalysis.com quote page taken only "
  'when stamped "Sep 1, 2026, 4:00 PM EDT" AND its stated previous close tied to the Aug 31 close; partial-session '
  '/history/ rows discarded throughout (worst: NET history 304.82 vs true 285.51, MTSI 255.71 vs 262.01, AVAV 147.75 vs '
@@ -5790,7 +5799,7 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'LEU': {'budget': None, 'cost': None, 'shares': None},
  'MYRG': {'budget': None, 'cost': None, 'shares': None},
  'STRL': {'budget': None, 'cost': None, 'shares': None},
- 'FSLR': {'budget': 5000, 'cost': None, 'shares': None},
+ 'FSLR': {'budget': 5000, 'cost': 2003.56, 'shares': 10},
  'ON': {'budget': None, 'cost': None, 'shares': None},
  'KEEL': {'budget': None, 'cost': None, 'shares': None},
  'SIDU': {'budget': None, 'cost': None, 'shares': None},
@@ -6215,8 +6224,8 @@ TRADES = [{'date': 'Jul 21, 2026',
 SELLPLAN = ['IREN']
 
 CASH = {'currency': 'USD',
- 'amount': 17848.56,
- 'asof': 'Sep 1, 2026 (Live, HUBB trade unsettled)',
+ 'amount': 16061.53,
+ 'asof': 'Sep 2, 2026 (Live, FSLR trade unsettled; HUBB now deducted)',
  'broker': 'POEMS (Phillip Securities)'}
 
 REALIZED = [{'t': 'NBIS', 'g': 13, 'amount': 1404.52},
@@ -6724,14 +6733,15 @@ MONTHLY = [{'ym': '2025-07',
               {'g': 10, 'buy': 1861.84, 'sell': 0.0, 'real': 0.0},
               {'buy': 2055.24, 'g': 18, 'real': 0.0, 'sell': 0.0}]},
  {'ym': '2026-09',
-  'buyUSD': 1789.76,
-  'buyLots': 1,
+  'buyUSD': 3793.32,
+  'buyLots': 2,
   'sellUSD': 0.0,
   'sellLots': 0,
   'realizedUSD': 0.0,
   'realizedTHB': 0,
-  'byStock': [{'buy': 1789.76, 'real': 0.0, 'sell': 0.0, 't': 'HUBB'}],
-  'byGroup': [{'buy': 1789.76, 'g': 17, 'real': 0.0, 'sell': 0.0}]}]
+  'byStock': [{'buy': 2003.56, 'real': 0.0, 'sell': 0.0, 't': 'FSLR'},
+              {'buy': 1789.76, 'real': 0.0, 'sell': 0.0, 't': 'HUBB'}],
+  'byGroup': [{'buy': 2003.56, 'g': 5, 'real': 0.0, 'sell': 0.0}, {'buy': 1789.76, 'g': 17, 'real': 0.0, 'sell': 0.0}]}]
 
 THBFX = {'GOOGL': 32.2446,
  'NVDA': 32.084,
