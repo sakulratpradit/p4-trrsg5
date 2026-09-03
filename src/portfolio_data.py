@@ -3,32 +3,62 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Sep 2, 2026 - FSLR position opened. Bought 10 shares of First Solar (FSLR, Solar & Storage) at a 199.50 limit, '
- 'filled Sep 2; cost 2,003.56 including the flat 8.56 POEMS commission, average 200.356. This is the first buy in '
- 'group 5 and takes the group from budgeted-but-empty to funded: 2,003.56 of the 5,000 budget deployed, 2,996.44 of '
- 'room left. Held positions 51 -> 52; held cost 593,748.48 -> 595,752.04. Cash: the POEMS live balance reads '
- "16,061.53, down 1,787.03 from Sep 1's 17,848.56 - the HUBB purchase (1,789.76) has now come out of the live balance, "
- "and the 2.73 difference is most likely accrued USD interest, which the broker's own footnote allows for. The FSLR "
- 'trade is NOT yet deducted (settles T+2), so true deployable cash is 16,061.53 - 2,003.56 = 14,057.97. This is the '
- 'fifth consecutive confirmation of the settled-trades-only rule (AMAT, NVDA, VST, HUBB, now FSLR). September ledger: '
- '2 lots, 3,793.32 deployed. Entry note: the fill at 199.50 sits fractionally below the Sep 1 close of 199.65. || Sep '
- '1, 2026 - close. Daily price refresh: 181 of 181 tickers brought to the Tuesday Sep 1, 2026 close (price, mcapB, '
- "pxd; mcapB scaled by each ticker's exact price ratio). METHOD per playbook: stockanalysis.com quote page taken only "
- 'when stamped "Sep 1, 2026, 4:00 PM EDT" AND its stated previous close tied to the Aug 31 close; partial-session '
- '/history/ rows discarded throughout (worst: NET history 304.82 vs true 285.51, MTSI 255.71 vs 262.01, AVAV 147.75 vs '
- '144.17, CRSP 55.80 vs 56.82; internally-impossible rows discarded for ADBE, DDOG, MDB, NRG). Google Finance '
- '(explicit "Closed: Sep 1, 4:00 PM GMT-4" stamps) resolved ON 72.65, NXPI 222.40, GFS 43.93, AEHR 76.59, COHU 44.16 '
- 'where stockanalysis froze intraday; refreshed stockanalysis caches resolved CLFD 28.25, CGNX 60.08, AMBA 67.83, OSS '
- '9.97, SIDU 2.12, HUT 77.57, KEEL 3.07, LMND 51.34, POWI 49.78, AIRJ 4.36, MYRG 286.46, ROK 417.55 on a second pass. '
- 'ALL TWELVE moves >=6% independently confirmed on Google Finance with dated Sep 1 closing stamps: AXON -8.52%, CRDO '
- '-8.65%, ONDS -8.09%, AXTI -7.42%, CRWD -6.90%, S -6.65%, NET -6.42%, CRCL -6.35%, RIOT -6.34%, AFRM -6.06%, BWXT '
- '+6.07%, and CDNS -7.60% / DELL -6.80% (DELL rebounded ~+6.8% after hours on post-close news - the board shows the '
- 'regular-session close per policy). KTOS quote/history conflict (49.34 vs 49.76) arbitrated externally to 49.34. NOTE '
- 'ROK: both stockanalysis caches state the Aug 31 close was 424.43, not the 424.68 this board carried (one of the '
- 'seven recorded cent-level Aug 31 disagreements); Sep 1 close 417.55 is agreed by its quote and history pages within '
- '2 cents. GEV genuinely closed flat at 898.53 (distinct session, normal volume, three concurring pages). LMT went '
- 'ex-dividend ~Sep 1; raw (unadjusted) close 544.50 used. hi52/lo52 extended from sourced Sep 1 session extremes where '
- 'breached. Fundamentals, M3, POS, TRADES untouched (owned by other jobs).')
+ASOF = ('Sep 2, 2026 - CRDO repriced to the Sep 2 close. Credo Technology 206.63 -> 165.22, -20.04%, the single largest '
+ "one-day fall on the board this cycle. Two-source CLOSE: stockanalysis.com stamped 'Sep 2, 2026, 4:00 PM EDT' and "
+ "GuruFocus '04:00 PM EST (September 2, 2026), down $41.41 (-20.04%)'; both state the same -41.41 / -20.04%. Intraday "
+ 'low 161.95, open 188.64, volume ~29.6m (+303% vs average). mcapB/pe/fpe/ps/peg rescaled by the exact price ratio '
+ '0.79959... per convention; the rescale is independently corroborated - mcapB lands at 30.81B against a sourced '
+ '30.81B, and ps at 19.37 against a sourced 19.36. pe 58.18 also ties to price/eps (165.22/2.84). CAVEAT on fpe: '
+ 'rescale gives 23.31 while stockanalysis publishes 22.64 and GuruFocus 26.87 - the two external sources conflict with '
+ 'each other, so the convention value is kept rather than picking one. lo52 86.49 not breached (Sep 2 low 161.95); '
+ 'hi52/ath 308.67 unchanged; fundamentals, eps, revB and analyst fields left as the Sep 1 AMC earnings job set them. '
+ '|| WHY IT FELL - not a miss. Q1 FY2027 (quarter ended Aug 1, reported Sep 1 AMC) BEAT on both lines: revenue 479.0m '
+ 'vs 473.3m consensus, +114.7% YoY and +9.6% sequential; non-GAAP EPS 1.20 vs 1.17. The sourced causes are margin and '
+ 'cost, not demand: GAAP gross margin 64.5% (from 68.2% sequential, 67.4% year-ago); GAAP operating margin collapsed '
+ '35.7% -> 25.2%; GAAP operating expenses MORE THAN DOUBLED to 188.4m from 89.6m, with FY27 non-GAAP opex guided +55% '
+ 'YoY. Q2 guide 525-535m revenue. || RISK DISCLOSED THE SAME MORNING - the 10-Q filed Sep 2 shows Customer A at 43% '
+ 'and Customer B at 28% of quarterly revenue: 71% from two customers (prior-year comparatives 50% and 35%). The FY26 '
+ '10-K states the top ten customers were ~90% of revenue. This is the structural risk on the name. Note the call '
+ "transcript quotes the CFO giving 33/28/13/10 for a period labelled Q4 - unreconciled against the 10-Q's 43/28 for Q1 "
+ 'FY27; the SEC filing is taken as primary. || EARNINGS QUALITY - stock-based compensation was 87.979m on 479.0m of '
+ 'revenue, 18.4%. GAAP diluted EPS 0.67 vs non-GAAP 1.20, so 44% of the headline profit is add-back. Weighted-average '
+ 'basic shares +8.19% YoY. Balance sheet is strong: cash 466.9m plus 297.4m short-term investments, third-party total '
+ 'debt ~20.7m. || ANALYSTS - NO rating downgrades despite headlines using that word. Sep 2 actions were price-target '
+ 'changes only: JPMorgan (Joseph Cardoso) 335 -> 310 Overweight maintained; BofA (Vivek Arya) 340 -> 275 Buy '
+ 'maintained; Rosenblatt (Mike Genovese) 215 -> 235 Neutral, raised. Consensus 19 analysts, mean 277.81 '
+ '(stockanalysis) vs 267.39 (MarketBeat) - board keeps fvAvg 271.92 from the earnings job; fvMin 184 / fvMax 350 match '
+ 'the sourced low/high exactly. || HONEST LIMIT - a beat on both lines with this much margin compression normally '
+ 'prices at -8% to -12%. Research returned NO SOURCED CAUSE FOUND for the residual magnitude of the -20.04%. Recorded '
+ 'as unexplained rather than back-filled with a plausible story. || POSITION - 54 sh at 142.6109, cost 7,700.99, now '
+ '8,921.88, still +1,220.89 (+15.85%); 2,236.14 of paper gain given back in one session. Room 7,299.01 of the 15,000 '
+ 'budget. Now -46.5% from the 308.67 high. No trade taken: cash is committed to AVGO, and the trigger to add is next '
+ "quarter's concentration disclosure, not the drawdown. || Sep 2, 2026 - FSLR position opened. Bought 10 shares of "
+ 'First Solar (FSLR, Solar & Storage) at a 199.50 limit, filled Sep 2; cost 2,003.56 including the flat 8.56 POEMS '
+ 'commission, average 200.356. This is the first buy in group 5 and takes the group from budgeted-but-empty to funded: '
+ '2,003.56 of the 5,000 budget deployed, 2,996.44 of room left. Held positions 51 -> 52; held cost 593,748.48 -> '
+ "595,752.04. Cash: the POEMS live balance reads 16,061.53, down 1,787.03 from Sep 1's 17,848.56 - the HUBB purchase "
+ '(1,789.76) has now come out of the live balance, and the 2.73 difference is most likely accrued USD interest, which '
+ "the broker's own footnote allows for. The FSLR trade is NOT yet deducted (settles T+2), so true deployable cash is "
+ '16,061.53 - 2,003.56 = 14,057.97. This is the fifth consecutive confirmation of the settled-trades-only rule (AMAT, '
+ 'NVDA, VST, HUBB, now FSLR). September ledger: 2 lots, 3,793.32 deployed. Entry note: the fill at 199.50 sits '
+ 'fractionally below the Sep 1 close of 199.65. || Sep 1, 2026 - close. Daily price refresh: 181 of 181 tickers '
+ "brought to the Tuesday Sep 1, 2026 close (price, mcapB, pxd; mcapB scaled by each ticker's exact price ratio). "
+ 'METHOD per playbook: stockanalysis.com quote page taken only when stamped "Sep 1, 2026, 4:00 PM EDT" AND its stated '
+ 'previous close tied to the Aug 31 close; partial-session /history/ rows discarded throughout (worst: NET history '
+ '304.82 vs true 285.51, MTSI 255.71 vs 262.01, AVAV 147.75 vs 144.17, CRSP 55.80 vs 56.82; internally-impossible rows '
+ 'discarded for ADBE, DDOG, MDB, NRG). Google Finance (explicit "Closed: Sep 1, 4:00 PM GMT-4" stamps) resolved ON '
+ '72.65, NXPI 222.40, GFS 43.93, AEHR 76.59, COHU 44.16 where stockanalysis froze intraday; refreshed stockanalysis '
+ 'caches resolved CLFD 28.25, CGNX 60.08, AMBA 67.83, OSS 9.97, SIDU 2.12, HUT 77.57, KEEL 3.07, LMND 51.34, POWI '
+ '49.78, AIRJ 4.36, MYRG 286.46, ROK 417.55 on a second pass. ALL TWELVE moves >=6% independently confirmed on Google '
+ 'Finance with dated Sep 1 closing stamps: AXON -8.52%, CRDO -8.65%, ONDS -8.09%, AXTI -7.42%, CRWD -6.90%, S -6.65%, '
+ 'NET -6.42%, CRCL -6.35%, RIOT -6.34%, AFRM -6.06%, BWXT +6.07%, and CDNS -7.60% / DELL -6.80% (DELL rebounded ~+6.8% '
+ 'after hours on post-close news - the board shows the regular-session close per policy). KTOS quote/history conflict '
+ '(49.34 vs 49.76) arbitrated externally to 49.34. NOTE ROK: both stockanalysis caches state the Aug 31 close was '
+ '424.43, not the 424.68 this board carried (one of the seven recorded cent-level Aug 31 disagreements); Sep 1 close '
+ '417.55 is agreed by its quote and history pages within 2 cents. GEV genuinely closed flat at 898.53 (distinct '
+ 'session, normal volume, three concurring pages). LMT went ex-dividend ~Sep 1; raw (unadjusted) close 544.50 used. '
+ 'hi52/lo52 extended from sourced Sep 1 session extremes where breached. Fundamentals, M3, POS, TRADES untouched '
+ '(owned by other jobs).')
 
 GROUPS = ['Hyperscalers',
  'Chip Designers, EDA & IP',
@@ -1239,7 +1269,7 @@ STOCKS = [{'an': 83,
   'epsG': 311.6,
   'ex': 'NASDAQ',
   'fcfB': 0.41,
-  'fpe': 29.16,
+  'fpe': 23.32,
   'fvAvg': 271.92,
   'fvMax': 350,
   'fvMin': 184,
@@ -1248,14 +1278,14 @@ STOCKS = [{'an': 83,
   'hi52': 308.67,
   'jan2': 148.4,
   'lo52': 86.49,
-  'mcapB': 38.5342,
+  'mcapB': 30.8117,
   'name': 'Credo Technology',
-  'pe': 72.76,
-  'peg': 0.73,
+  'pe': 58.18,
+  'peg': 0.58,
   'pm': 33.84,
-  'price': 206.63,
-  'ps': 24.22,
-  'pxd': '2026-09-01',
+  'price': 165.22,
+  'ps': 19.37,
+  'pxd': '2026-09-02',
   'r40': 190.7,
   'revB': 1.59,
   'revG': 165.1,
