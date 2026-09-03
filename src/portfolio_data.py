@@ -3,48 +3,60 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ("Sep 3, 2026 - LHX added to the board at Salee's instruction (typed 'LHK'; L3Harris Technologies, NYSE: LHX, is the "
- 'intended name - there is no US-listed LHK). Group 8, Defense, Drones & Public Safety, joining AMPX, PLTR, AVAV, '
- 'ONDS, AXON, RCAT, LMT, RTX, NOC, KTOS. Budget 5,000; no position opened. Board goes 181 -> 182 tickers. || WHY IT '
- 'EARNS A SLOT - the cleanest quality-business / non-fundamental-drawdown setup found this week. Price 261.31 (Sep 2 '
- 'close, two-sourced) sits just 1.07% above the 52-week low of 258.54 and 31.09% below the 379.23 high, yet Q2 2026 '
- '(Jul 29) was strong on every line: revenue 5.9bn +8%, operating margin 11.1% (+60bp), segment operating margin '
- '16.0%, diluted EPS 3.13 +28%, free cash flow 771m +37%, orders 7.3bn, book-to-bill 1.2x, and a RECORD 42bn backlog. '
- 'Guidance was RAISED - revenue to 23.2-23.7bn from 23.0-23.5bn and EPS to 11.80-12.00 from 11.40-11.60. || THE '
- 'DRAWDOWN IS GOVERNANCE, NOT OPERATIONS - CEO Chris Kubasik was ousted Aug 17 2026 over an unspecified conduct '
- 'violation; Sam Mehta appointed the same day. Shares fell ~4.6% DESPITE reaffirmed guidance. Defence revenue is '
- 'budget-driven and largely rate-insensitive, so unlike HD/LOW/AMT this is not a 5.27% long-bond casualty. || FIELDS - '
- 'TTM revenue 22.932bn (+7.29%), TTM diluted EPS 9.90 (+10.57%), FCF 2.808bn, capex 0.484bn, gross margin 25.48%, net '
- 'margin 8.11%, ROE 9.34%, r40 19.5 (derived: revG + fcfB/revB*100). Balance sheet sound - equity +20.85bn positive, '
- 'debt 11.00bn, cash 1.52bn. Analyst block taken as ONE internally consistent set from MarketBeat (16 analysts, mean '
- '360.45, high 418, low 298) rather than blending vendors. || CAVEATS RECORDED RATHER THAN PAPERED OVER - (1) ath and '
- 'jan2 are None: NOT FOUND from any permitted source. No source labels 379.23 an all-time high, and stockanalysis '
- 'history did not expose a Jan 2 2026 row; 57 tickers already carry jan2=None so this is within convention. (2) peg '
- '1.02 is stockanalysis; GuruFocus publishes 2.63 - a 2.6x divergence on the growth denominator. Treat LHX PEG as '
- 'unusable until pinned. (3) fpe 21.07 stockanalysis vs 22.00 MarketBeat. (4) roi None - not sourced. || BUDGET '
- 'CONSEQUENCE - total budget now 1,005,000, i.e. 100.5% of the 1,000,000 target; the board is no longer exactly fully '
- 'allocated. Salee to decide whether to raise the target to 1,005,000 or trim 5,000 elsewhere. Flagged, not silently '
- 'absorbed. || Sep 2, 2026 - CRDO repriced to the Sep 2 close. Credo Technology 206.63 -> 165.22, -20.04%, the single '
- "largest one-day fall on the board this cycle. Two-source CLOSE: stockanalysis.com stamped 'Sep 2, 2026, 4:00 PM EDT' "
- "and GuruFocus '04:00 PM EST (September 2, 2026), down $41.41 (-20.04%)'; both state the same -41.41 / -20.04%. "
- 'Intraday low 161.95, open 188.64, volume ~29.6m (+303% vs average). mcapB/pe/fpe/ps/peg rescaled by the exact price '
- 'ratio 0.79959... per convention; the rescale is independently corroborated - mcapB lands at 30.81B against a sourced '
- '30.81B, and ps at 19.37 against a sourced 19.36. pe 58.18 also ties to price/eps (165.22/2.84). CAVEAT on fpe: '
- 'rescale gives 23.31 while stockanalysis publishes 22.64 and GuruFocus 26.87 - the two external sources conflict with '
- 'each other, so the convention value is kept rather than picking one. lo52 86.49 not breached (Sep 2 low 161.95); '
- 'hi52/ath 308.67 unchanged; fundamentals, eps, revB and analyst fields left as the Sep 1 AMC earnings job set them. '
- '|| WHY IT FELL - not a miss. Q1 FY2027 (quarter ended Aug 1, reported Sep 1 AMC) BEAT on both lines: revenue 479.0m '
- 'vs 473.3m consensus, +114.7% YoY and +9.6% sequential; non-GAAP EPS 1.20 vs 1.17. The sourced causes are margin and '
- 'cost, not demand: GAAP gross margin 64.5% (from 68.2% sequential, 67.4% year-ago); GAAP operating margin collapsed '
- '35.7% -> 25.2%; GAAP operating expenses MORE THAN DOUBLED to 188.4m from 89.6m, with FY27 non-GAAP opex guided +55% '
- 'YoY. Q2 guide 525-535m revenue. || RISK DISCLOSED THE SAME MORNING - the 10-Q filed Sep 2 shows Customer A at 43% '
- 'and Customer B at 28% of quarterly revenue: 71% from two customers (prior-year comparatives 50% and 35%). The FY26 '
- '10-K states the top ten customers were ~90% of revenue. This is the structural risk on the name. Note the call '
- "transcript quotes the CFO giving 33/28/13/10 for a period labelled Q4 - unreconciled against the 10-Q's 43/28 for Q1 "
- 'FY27; the SEC filing is taken as primary. || EARNINGS QUALITY - stock-based compensation was 87.979m on 479.0m of '
- 'revenue, 18.4%. GAAP diluted EPS 0.67 vs non-GAAP 1.20, so 44% of the headline profit is add-back. Weighted-average '
- 'basic shares +8.19% YoY. Balance sheet is strong: cash 466.9m plus 297.4m short-term investments, third-party total '
- 'debt ~20.7m. || ANALYSTS - NO rating downgrades despite headlines using that word. Sep 2 actions were price-target '
+ASOF = ("Sep 3, 2026 - FPS funded at Salee's instruction. Forgent Power Solutions (NYSE: FPS) was already carried as an "
+ 'unfunded watchlist row in group 17, Power and Electrification; it now receives a 5,000 budget in both the STOCKS row '
+ 'and the POS ledger. No position opened - the trigger is the Sept 15 print. || WHY IT IS FUNDED BUT NOT BOUGHT - FPS '
+ "IPO'd Feb 5 2026 and reports for the first time as a public company on Sept 15. Bookings +308% and a 1.98bn backlog "
+ 'are the attraction; against that, TTM free cash flow is NEGATIVE at -97.66m against 125.63m of capex, net margin is '
+ 'only 2.17%, and the board carries revG, roe, pe and epsG as None - too little history to compute them. fpe 31.24 on '
+ '0.07 of TTM EPS. Price 29.27 sits 55.7% below the 66.00 high and 12.8% above the 25.95 low. This is a '
+ 'pre-first-print name: the budget reserves the slot, the print decides whether it is used. || BUDGET CONSEQUENCE - '
+ 'total assigned budget 1,005,000 -> 1,010,000, i.e. 101.0% of the 1,000,000 target. Salee has explicitly instructed '
+ 'that the overage STAND for now rather than be trimmed, pending his own review of which stock budget to cut. Unfilled '
+ 'room 409,247.96 -> 414,247.96. Recorded as a deliberate decision, not drift. || Held positions and cost UNCHANGED at '
+ '52 and 595,752.04. TRADES, POS costs, CASH and all fundamentals untouched. || Sep 3, 2026 - LHX added to the board '
+ "at Salee's instruction (typed 'LHK'; L3Harris Technologies, NYSE: LHX, is the intended name - there is no US-listed "
+ 'LHK). Group 8, Defense, Drones & Public Safety, joining AMPX, PLTR, AVAV, ONDS, AXON, RCAT, LMT, RTX, NOC, KTOS. '
+ 'Budget 5,000; no position opened. Board goes 181 -> 182 tickers. || WHY IT EARNS A SLOT - the cleanest '
+ 'quality-business / non-fundamental-drawdown setup found this week. Price 261.31 (Sep 2 close, two-sourced) sits just '
+ '1.07% above the 52-week low of 258.54 and 31.09% below the 379.23 high, yet Q2 2026 (Jul 29) was strong on every '
+ 'line: revenue 5.9bn +8%, operating margin 11.1% (+60bp), segment operating margin 16.0%, diluted EPS 3.13 +28%, free '
+ 'cash flow 771m +37%, orders 7.3bn, book-to-bill 1.2x, and a RECORD 42bn backlog. Guidance was RAISED - revenue to '
+ '23.2-23.7bn from 23.0-23.5bn and EPS to 11.80-12.00 from 11.40-11.60. || THE DRAWDOWN IS GOVERNANCE, NOT OPERATIONS '
+ '- CEO Chris Kubasik was ousted Aug 17 2026 over an unspecified conduct violation; Sam Mehta appointed the same day. '
+ 'Shares fell ~4.6% DESPITE reaffirmed guidance. Defence revenue is budget-driven and largely rate-insensitive, so '
+ 'unlike HD/LOW/AMT this is not a 5.27% long-bond casualty. || FIELDS - TTM revenue 22.932bn (+7.29%), TTM diluted EPS '
+ '9.90 (+10.57%), FCF 2.808bn, capex 0.484bn, gross margin 25.48%, net margin 8.11%, ROE 9.34%, r40 19.5 (derived: '
+ 'revG + fcfB/revB*100). Balance sheet sound - equity +20.85bn positive, debt 11.00bn, cash 1.52bn. Analyst block '
+ 'taken as ONE internally consistent set from MarketBeat (16 analysts, mean 360.45, high 418, low 298) rather than '
+ 'blending vendors. || CAVEATS RECORDED RATHER THAN PAPERED OVER - (1) ath and jan2 are None: NOT FOUND from any '
+ 'permitted source. No source labels 379.23 an all-time high, and stockanalysis history did not expose a Jan 2 2026 '
+ 'row; 57 tickers already carry jan2=None so this is within convention. (2) peg 1.02 is stockanalysis; GuruFocus '
+ 'publishes 2.63 - a 2.6x divergence on the growth denominator. Treat LHX PEG as unusable until pinned. (3) fpe 21.07 '
+ 'stockanalysis vs 22.00 MarketBeat. (4) roi None - not sourced. || BUDGET CONSEQUENCE - total budget now 1,005,000, '
+ 'i.e. 100.5% of the 1,000,000 target; the board is no longer exactly fully allocated. Salee to decide whether to '
+ 'raise the target to 1,005,000 or trim 5,000 elsewhere. Flagged, not silently absorbed. || Sep 2, 2026 - CRDO '
+ 'repriced to the Sep 2 close. Credo Technology 206.63 -> 165.22, -20.04%, the single largest one-day fall on the '
+ "board this cycle. Two-source CLOSE: stockanalysis.com stamped 'Sep 2, 2026, 4:00 PM EDT' and GuruFocus '04:00 PM EST "
+ "(September 2, 2026), down $41.41 (-20.04%)'; both state the same -41.41 / -20.04%. Intraday low 161.95, open 188.64, "
+ 'volume ~29.6m (+303% vs average). mcapB/pe/fpe/ps/peg rescaled by the exact price ratio 0.79959... per convention; '
+ 'the rescale is independently corroborated - mcapB lands at 30.81B against a sourced 30.81B, and ps at 19.37 against '
+ 'a sourced 19.36. pe 58.18 also ties to price/eps (165.22/2.84). CAVEAT on fpe: rescale gives 23.31 while '
+ 'stockanalysis publishes 22.64 and GuruFocus 26.87 - the two external sources conflict with each other, so the '
+ 'convention value is kept rather than picking one. lo52 86.49 not breached (Sep 2 low 161.95); hi52/ath 308.67 '
+ 'unchanged; fundamentals, eps, revB and analyst fields left as the Sep 1 AMC earnings job set them. || WHY IT FELL - '
+ 'not a miss. Q1 FY2027 (quarter ended Aug 1, reported Sep 1 AMC) BEAT on both lines: revenue 479.0m vs 473.3m '
+ 'consensus, +114.7% YoY and +9.6% sequential; non-GAAP EPS 1.20 vs 1.17. The sourced causes are margin and cost, not '
+ 'demand: GAAP gross margin 64.5% (from 68.2% sequential, 67.4% year-ago); GAAP operating margin collapsed 35.7% -> '
+ '25.2%; GAAP operating expenses MORE THAN DOUBLED to 188.4m from 89.6m, with FY27 non-GAAP opex guided +55% YoY. Q2 '
+ 'guide 525-535m revenue. || RISK DISCLOSED THE SAME MORNING - the 10-Q filed Sep 2 shows Customer A at 43% and '
+ 'Customer B at 28% of quarterly revenue: 71% from two customers (prior-year comparatives 50% and 35%). The FY26 10-K '
+ 'states the top ten customers were ~90% of revenue. This is the structural risk on the name. Note the call transcript '
+ "quotes the CFO giving 33/28/13/10 for a period labelled Q4 - unreconciled against the 10-Q's 43/28 for Q1 FY27; the "
+ 'SEC filing is taken as primary. || EARNINGS QUALITY - stock-based compensation was 87.979m on 479.0m of revenue, '
+ '18.4%. GAAP diluted EPS 0.67 vs non-GAAP 1.20, so 44% of the headline profit is add-back. Weighted-average basic '
+ 'shares +8.19% YoY. Balance sheet is strong: cash 466.9m plus 297.4m short-term investments, third-party total debt '
+ '~20.7m. || ANALYSTS - NO rating downgrades despite headlines using that word. Sep 2 actions were price-target '
  'changes only: JPMorgan (Joseph Cardoso) 335 -> 310 Overweight maintained; BofA (Vivek Arya) 340 -> 275 Buy '
  'maintained; Rosenblatt (Mike Genovese) 215 -> 235 Neutral, raised. Consensus 19 analysts, mean 277.81 '
  '(stockanalysis) vs 267.39 (MarketBeat) - board keeps fvAvg 271.92 from the earnings job; fvMin 184 / fvMax 350 match '
@@ -4694,7 +4706,7 @@ STOCKS = [{'an': 83,
   't': 'HUBB'},
  {'an': 10,
   'ath': 64.59,
-  'budget': None,
+  'budget': 5000,
   'capexB': 0.12563,
   'eps': 0.07,
   'epsG': None,
@@ -5925,7 +5937,7 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'KTOS': {'budget': None, 'cost': None, 'shares': None},
  'SITM': {'budget': None, 'cost': None, 'shares': None},
  'CLFD': {'budget': None, 'cost': None, 'shares': None},
- 'FPS': {'budget': None, 'cost': None, 'shares': None},
+ 'FPS': {'budget': 5000, 'cost': None, 'shares': None},
  'CLPT': {'budget': None, 'cost': None, 'shares': None},
  'AEP': {'budget': 5000.0, 'cost': None, 'shares': None},
  'LHX': {'budget': 5000, 'cost': None, 'shares': None}}
