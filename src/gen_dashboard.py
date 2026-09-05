@@ -12,7 +12,7 @@ import json, re, sys
 import portfolio_data as P
 
 CONSTS = ["ASOF", "GROUPS", "STOCKS", "POS", "TRADES", "SELLPLAN", "CASH",
-          "REALIZED", "TOTALS", "SOLD", "MONTHLY", "THBFX", "M3"]
+          "REALIZED", "TOTALS", "SOLD", "MONTHLY", "THBFX", "M3", "SCHEDULE"]
 
 def main():
     template = sys.argv[1] if len(sys.argv) > 1 else "deploy/index.html"

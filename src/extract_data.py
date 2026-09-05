@@ -11,7 +11,7 @@ Usage:  python3 extract_data.py [path/to/index.html]
 import json, re, sys, pprint
 
 CONSTS = ["ASOF", "GROUPS", "STOCKS", "POS", "TRADES", "SELLPLAN", "CASH",
-          "REALIZED", "TOTALS", "SOLD", "MONTHLY", "THBFX", "M3"]
+          "REALIZED", "TOTALS", "SOLD", "MONTHLY", "THBFX", "M3", "SCHEDULE"]
 
 def extract(html_path):
     html = open(html_path, encoding="utf-8").read()
