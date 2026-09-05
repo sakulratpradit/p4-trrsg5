@@ -3,7 +3,35 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ("Sep 5, 2026 - BOARD FOCUSED AT SALEE'S INSTRUCTION. He asked to cut the watchlist back to names that fit a 5-10 year "
+ASOF = ('Sep 5, 2026 - GPT-6 ASTRA ASSESSED (OpenAI, announced Sep 3). Salee asked whether it opens a new chapter for AI and '
+ 'who benefits. Five watch/decide rows added to this Schedule. || WHAT IT IS: a frontier model, not a new product '
+ 'category - 1,050,000 token context, 10 dollars in / 50 dollars out per million tokens (a 2.5x price rise), served on '
+ "OpenAI's API, Azure and AWS Bedrock. The real advance is computer use: 72.6% on OSWorld in about 40 minutes per task "
+ "versus 65.7% in about 75 minutes for the prior model. || ⚠️ THE 'STEP CHANGE' CLAIM IS CONTESTED AND SHOULD NOT BE "
+ 'TRADED AS FACT. Epoch AI ranked Astra first across 50+ tests; Artificial Analysis scored it flat versus its '
+ "predecessor and BEHIND Anthropic's Claude Fable 5.1. OpenAI's headline 99.9% on ARC-AGI-3 was 62.7% when ARC Prize "
+ 'ran the same model on their own standard harness - a 37-point gap that is scaffolding, not model. OpenAI also edited '
+ 'published figures after release (hallucination rate 4.2% to 2% and back to 4.2%), and Stanford researchers raised '
+ "'benchmaxxing' concerns. Against that, Francois Chollet - who built the benchmark and has no stake in OpenAI - said "
+ 'progress came about twice as fast as he expected and moved his AGI forecast earlier. Genuine disagreement, not a '
+ 'settled result. || ⚠️ THE ANNOUNCEMENT SAYS NOTHING ABOUT CHIPS. Not one word about GPUs, silicon, data centres or '
+ 'Stargate. Every compute deal being quoted alongside this news predates Astra: NVDA 10GW (Sep 2025), AMD 6GW plus a '
+ '160m-share warrant (Oct 2025), the Broadcom-built Jalapeno chip (Jun 2026), AWS 38bn (Nov 2025), ORCL over 300bn '
+ "(Sep 2025), Azure 250bn with a 27% stake (Oct 2025). 'Buy a chip stock because of Astra' is a narrative, not a fact "
+ '- the contracts were signed long before. || ⚠️ AND THE MARKET-REACTION STORY IS CONFOUNDED. No sourced attribution '
+ 'of any share-price move to Astra was found. NVDA announced the acquisition of Hugging Face for 12.93bn on the SAME '
+ 'DAY. Any Sep 3-4 move cannot be cleanly assigned to Astra, and for NVDA the acquisition is plausibly the larger '
+ 'news. || WHERE THE REAL LINK IS: token consumption. Agents running 40-minute autonomous tasks burn far more tokens '
+ 'than chat, at 2.5x the price. That feeds inference silicon, memory, interconnect and power over 12-24 months - it '
+ 'does not show up in a two-day price move. Most direct listed beneficiaries in this book are MSFT (27% owner of '
+ 'OpenAI, Azure serves Astra), AMZN (Bedrock serves Astra, 38bn deal) and ORCL (largest contract, weakest balance '
+ 'sheet). || THE UNDER-OWNED ANGLE IS CYBERSECURITY, and it is the only causal chain Astra actually created rather '
+ 'than inherited. First model ever rated Critical for cyber capability. CRWD and PANW carry only 0.66% and 0.63% of '
+ 'the book with 12,325 of combined room. Rungs added to this Schedule, both conditional on results, not on the theme. '
+ "|| ON THE 'AI KILLS SAAS' STORY: not substantiated for Astra. The piece being circulated is dated Feb 10, 2026, "
+ 'seven months before Astra existed. Our own Aug 29 review found all eleven SaaS names raised or maintained guidance '
+ 'and none blamed AI. || NO POSITIONS, BUDGETS OR PRICES CHANGED. No trade is recommended on this news alone. || Sep '
+ "5, 2026 - BOARD FOCUSED AT SALEE'S INSTRUCTION. He asked to cut the watchlist back to names that fit a 5-10 year "
  'growth mandate and to free up attention. 46 further names removed, taking the board 178 -> 132: 26 loss-making or '
  'shrinking small caps with no path to profit, the 5 remaining bitcoin miners as off-thesis, 14 mature low-growth '
  'names that cannot compound at the required rate, and Nu Holdings for consistency with the Sep 5 decision to take '
@@ -5667,6 +5695,67 @@ SCHEDULE = {'horizon': 'Sep - Dec 2026',
          "each BUY line still needs Salee's instruction on the day. Rebuilt whenever a plan changes; see the change "
          'log for the reason behind each edit.',
  'items': [{'d': '',
+            'dl': 'Standing - no announced date',
+            't': 'GOOGL',
+            'k': 'competitive',
+            'a': 'WATCH',
+            'w': 'Next Gemini frontier release / Gemini Pro delivery',
+            'amt': None,
+            'cond': 'Astra (Sep 3) leads on agentic computer use and coding, and Google is reported to have slipped on '
+                    'Gemini Pro delivery. GOOGL is the clearest listed name under pressure from this release. If the '
+                    'next Gemini regains parity, the pressure lifts and the 80,000 budget stands. If it slips a second '
+                    'time, reassess the budget - not the holding.',
+            'c': 'standing'},
+           {'d': '',
+            'dl': 'Standing - deployable now',
+            't': 'CRWD',
+            'k': 'thesis',
+            'a': 'DECIDE',
+            'w': "Deploy room into cyber on the Astra 'Critical' cyber rating",
+            'amt': 6086.0,
+            'cond': 'Astra is the first model OpenAI has ever rated Critical for cyber capability: 100% on '
+                    'ExploitBench, and OpenAI states it discovered and chained two zero-days. Cheaper attack tooling '
+                    'drives defence budgets. Deploy only if Q3 results show net new ARR accelerating; the name already '
+                    'trades at 178x forward with a 0.7% net margin, so the entry price matters more than the theme.',
+            'c': 'planned'},
+           {'d': '',
+            'dl': 'Standing - deployable now',
+            't': 'PANW',
+            'k': 'thesis',
+            'a': 'DECIDE',
+            'w': "Deploy room into cyber on the Astra 'Critical' cyber rating",
+            'amt': 6239.0,
+            'cond': 'Same thesis as the CrowdStrike rung. Cheaper on 87x forward but EPS fell 75%. Prefer this rung '
+                    'only if platform consolidation shows in billings; otherwise favour the CRWD rung. Do not fund '
+                    'both at full size in the same month.',
+            'c': 'planned'},
+           {'d': '',
+            'dl': "Standing - OpenAI said 'in the coming months'",
+            't': 'AVGO',
+            'k': 'product',
+            'a': 'WATCH',
+            'w': 'Jalapeno technical report with actual performance numbers',
+            'amt': None,
+            'cond': 'OpenAI has published NO numerical performance figure for its own Broadcom-built chip - only that '
+                    "performance per watt will be 'substantially better than current state-of-the-art', with a report "
+                    'promised later. Until real numbers land, the case that OpenAI shifts inference to its own silicon '
+                    'is unquantified. Watch for the report; it cuts both ways for Broadcom (it builds the chip) and '
+                    'for merchant GPU demand.',
+            'c': 'standing'},
+           {'d': '',
+            'dl': 'Standing - next scoring cycle',
+            't': 'NVDA',
+            'k': 'thesis',
+            'a': 'WATCH',
+            'w': 'Whether independent benchmarks converge on Astra being a genuine leap',
+            'amt': None,
+            'cond': 'Epoch AI ranked Astra first; Artificial Analysis scored it FLAT versus its predecessor and behind '
+                    "Claude Fable 5.1. OpenAI's own 99.9% ARC-AGI-3 figure was 62.7% on ARC Prize's standard harness, "
+                    'and OpenAI edited several published numbers after release. Treat the token-demand thesis as '
+                    'unconfirmed until the independent scorers agree. Convergence upward would upgrade this from '
+                    'narrative to fact.',
+            'c': 'standing'},
+           {'d': '',
             'dl': "On Salee's instruction",
             't': 'QCOM',
             'k': 'liquidation',
