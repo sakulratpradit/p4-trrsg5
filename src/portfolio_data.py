@@ -3,26 +3,64 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Sep 4, 2026 - close. Daily price refresh: 160 of 182 tickers brought to the Friday Sep 4, 2026 close (price, mcapB, '
- "pxd; mcapB scaled by each ticker's exact price ratio). METHOD per playbook: stockanalysis.com quote page taken only "
- 'when stamped "Sep 4, 2026, 4:00 PM EDT" AND its stated previous close tied to the Sep 3 close; partial-session '
- '/history/ rows discarded throughout (worst: SITM history close 611.07 above its own high 608.58 - internally '
- 'impossible; MCD history close below its own low; KTOS/ONDS/RCAT/RBRK/SOUN/WULF/PENG/YUM/BKNG/S rows were low-volume '
- 'partial captures, quote page used); history-table fallbacks for MMM and FSLR (quote pages intraday-stamped, Sep 4 '
- 'rows internally consistent); GOOGL prev-close tie via the Sep 3 adjusted close (0.22 dividend adjustment). '
- "CONSTRAINT THIS RUN, RECORDED RATHER THAN PAPERED OVER: the session's 200-call WebSearch budget was exhausted "
- 'mid-run by the 182-ticker fan-out, which also blocks provenance for new second-source URLs, so most late-batch names '
- 'could not reach Google Finance/marketscreener/ycharts/fool. All 23 moves >=6% were treated per the gate. ELEVEN '
- 'confirmed against dated independent Sep 4 sources and passed with --allow: AEHR +13.1% (marketscreener), EOSE +10.9% '
- "(Google Finance beta 'Closed: Sep 4, 4:00:01 PM GMT-4'), ALAB +9.8%, AXTI +9.7%, POET +8.1%, TSEM +7.9%, NBIS +7.5%, "
- 'FORM +7.4%, MRVL +7.1%, COHR +6.6% (all Google Finance dated closes), MU +6.1% (GF beta, prev close derived per the '
- 'after-hours quirk). TWELVE >=6% moves could NOT be second-sourced and were REVERTED to their Sep 3 board values per '
- 'the stale-beats-wrong rule - each had an internally consistent single-source Sep 4 print (4:00 PM EDT stamp + '
- 'prev-close tie, most with an exactly agreeing history row) that the next run should confirm and apply: SNDK 1740.00 '
- '(+11.9%), COHU 50.72 (+10.3%), SKHY 177.00 (+8.1%), KLAC 185.60 (+7.3%), IREN 44.68 (+7.3%), BE 252.87 (+7.3%), SITM '
- '612.09 (+6.5%), PENG 51.76 (+6.4%), NRG 119.02 (+6.4%), ADBE 266.51 (-6.7%; two Sep-4-dated headlines corroborate a '
- '~7% fall on CEO-succession disappointment but no fetchable second quote), STX 849.28 (+6.3%), HUT 93.55 (+6.2%). '
- 'Their pxd stays 2026-09-03 so the staleness badges show honestly. UNRESOLVED, left at prior values: '
+ASOF = ("Sep 5, 2026 - THREE APPROVED BOARD ACTIONS EXECUTED TOGETHER at Salee's instruction. || (1) SPACE FUNDED BY TRIMMING "
+ 'TWO ON-HOLD AI-CORE NAMES. ALAB 15,000 -> 7,000 (-8,000) and LITE 20,000 -> 13,000 (-7,000); both budgets remain '
+ 'ABOVE their deployed cost (ALAB 3,805.47, LITE 9,372.74) so no position is stranded. The 15,000 goes to group 7 '
+ 'Space, which rises 10,000 -> 25,000: RKLB unchanged at 10,000 (1,942.58 deployed), PL Planet Labs NEW 10,000, LUNR '
+ 'Intuitive Machines NEW 5,000. RATIONALE - ALAB (fwd P/E 86.95) and LITE (ROE -149.3%) have both been on explicit '
+ 'hold for weeks, so their budgets were dead money; Space carried 1.00% of a 1,005,000 target across six names, too '
+ 'little to express any view. This single move funds the theme AND reduces AI-core budget, addressing the standing '
+ 'concentration problem from both ends. PL is the only name in the group approaching profitability - Q2 FY27 revenue '
+ '116.1m +58%, adjusted EBITDA POSITIVE 13.9m, GAAP loss narrowed from -22.6m to -9.4m, cash 865.4m against 448.3m of '
+ 'converts, backlog 814.9m. CAVEAT: PL guided next quarter to 101-105m against 114.3m consensus, a sequential DECLINE '
+ '- hence the trigger is the ~December print, not now. LUNR revenue tripled to 206.2m with an 1.8bn backlog but debt '
+ 'went 37m -> 481m and shares +44.1% YoY; trigger is IM-3 actually flying. SPCX and ASTS deliberately left unfunded '
+ '(82x sales; a 231m quarterly loss with debt +492%). || (2) APP BUDGET SET AT 5,000. This corrects a documented '
+ 'discrepancy: the 200k deployment plan has stated since Sep 3 that APP had a 5,000 budget, but the board carried None '
+ '- the intent was written and never executed. Recorded as an error, not a change of view. NOTHING DEPLOYED - the '
+ 'trigger remains the ~Nov 4 print. WHY APP IS CHEAP, NOW ESTABLISHED: the fall from 745.61 to ~320 is DECELERATION, '
+ 'not fraud. Revenue growth ran 68% -> 66% -> 59% -> 53% -> guided 47%, culminating in a -19.66% day on Aug 6 2026 '
+ "after the first-ever guidance miss (Q2 revenue 1,924m vs ~1,935m consensus). CEO Foroughi: 'Our pace of meaningful "
+ 'model improvement was lighter than normal during the quarter, and the next step up in model performance landed just '
+ "after quarter end.' TWO OVERHANGS HAVE RESOLVED IN APP'S FAVOUR - CFO Matt Stumpf stated Aug 5 2026 that 'The SEC "
+ "has recently advised us that it concluded its inquiry with no recommended action', and CapitalWatch RETRACTED its "
+ "money-laundering report on Feb 9 2026 citing a 'flawed verification process'. The 2025 Fuzzy Panda/Culper class "
+ 'action remains at motion-to-dismiss, undecided. Short interest only 3.9% of float. Business quality intact: Q2 gross '
+ 'margin 88.3%, net income 1,267m +55%, free cash flow 863m in the quarter. || (3) SIDU REMOVED FROM THE BOARD. Sidus '
+ 'Space had no budget and no position, so nothing is lost. Q2 2026 revenue FELL 54% to 583k while every peer in the '
+ 'group grew; gross margin is NEGATIVE 108%; share count went roughly 18.30m -> 101.21m in twelve months; the company '
+ 'executed a 1-for-100 reverse split in Dec 2023 to regain Nasdaq minimum-bid compliance. It was a row producing '
+ 'noise, not signal. Board 182 -> 181 tickers. || ⚠️ FOUR APP FIELDS ARE WRONG ON THIS BOARD and are flagged for the '
+ 'next fundamentals pass, NOT silently patched here: fpe carried as 24.17 but the true FORWARD P/E is 17.72 (24.65 is '
+ 'the TRAILING multiple); roe carried as 266.44 vs 203.69 sourced; de carried as 1.63 vs 1.11 (3.52bn debt / 3.16bn '
+ 'equity at Jun 30 2026); revG carried as 66.4 which was the Q4 2025 rate - the Q2 2026 YoY is 53%. Recorded rather '
+ 'than corrected because fundamentals belong to the earnings-refresh job. || ⚠️ BUDGET CONSEQUENCE - assigned budget '
+ '1,005,000 -> 1,010,000, i.e. 101.0% of the 1,000,000 target. The Space reallocation was budget-NEUTRAL by '
+ 'construction (-15,000 AI core, +15,000 Space); the whole +5,000 is the APP line. ZS remains the standing trim '
+ 'candidate (5,000 budgeted, 0 deployed, weakest of the three cybersecurity names) which would return the board to '
+ '1,005,000; a further 5,000 trim is still needed for exactly 1,000,000. Salee has not yet chosen either, so the '
+ 'overage stands and is flagged, not absorbed. || Held positions 52 and held cost 597,305.69 both UNCHANGED - these '
+ 'are budget and roster changes, no money moved. Unfilled room 412,694.31. || Sep 4, 2026 - close. Daily price '
+ 'refresh: 160 of 182 tickers brought to the Friday Sep 4, 2026 close (price, mcapB, pxd; mcapB scaled by each '
+ 'ticker\'s exact price ratio). METHOD per playbook: stockanalysis.com quote page taken only when stamped "Sep 4, '
+ '2026, 4:00 PM EDT" AND its stated previous close tied to the Sep 3 close; partial-session /history/ rows discarded '
+ 'throughout (worst: SITM history close 611.07 above its own high 608.58 - internally impossible; MCD history close '
+ 'below its own low; KTOS/ONDS/RCAT/RBRK/SOUN/WULF/PENG/YUM/BKNG/S rows were low-volume partial captures, quote page '
+ 'used); history-table fallbacks for MMM and FSLR (quote pages intraday-stamped, Sep 4 rows internally consistent); '
+ 'GOOGL prev-close tie via the Sep 3 adjusted close (0.22 dividend adjustment). CONSTRAINT THIS RUN, RECORDED RATHER '
+ "THAN PAPERED OVER: the session's 200-call WebSearch budget was exhausted mid-run by the 182-ticker fan-out, which "
+ 'also blocks provenance for new second-source URLs, so most late-batch names could not reach Google '
+ 'Finance/marketscreener/ycharts/fool. All 23 moves >=6% were treated per the gate. ELEVEN confirmed against dated '
+ 'independent Sep 4 sources and passed with --allow: AEHR +13.1% (marketscreener), EOSE +10.9% (Google Finance beta '
+ "'Closed: Sep 4, 4:00:01 PM GMT-4'), ALAB +9.8%, AXTI +9.7%, POET +8.1%, TSEM +7.9%, NBIS +7.5%, FORM +7.4%, MRVL "
+ '+7.1%, COHR +6.6% (all Google Finance dated closes), MU +6.1% (GF beta, prev close derived per the after-hours '
+ 'quirk). TWELVE >=6% moves could NOT be second-sourced and were REVERTED to their Sep 3 board values per the '
+ 'stale-beats-wrong rule - each had an internally consistent single-source Sep 4 print (4:00 PM EDT stamp + prev-close '
+ 'tie, most with an exactly agreeing history row) that the next run should confirm and apply: SNDK 1740.00 (+11.9%), '
+ 'COHU 50.72 (+10.3%), SKHY 177.00 (+8.1%), KLAC 185.60 (+7.3%), IREN 44.68 (+7.3%), BE 252.87 (+7.3%), SITM 612.09 '
+ '(+6.5%), PENG 51.76 (+6.4%), NRG 119.02 (+6.4%), ADBE 266.51 (-6.7%; two Sep-4-dated headlines corroborate a ~7% '
+ 'fall on CEO-succession disappointment but no fetchable second quote), STX 849.28 (+6.3%), HUT 93.55 (+6.2%). Their '
+ 'pxd stays 2026-09-03 so the staleness badges show honestly. UNRESOLVED, left at prior values: '
  'POWI/AMBQ/INDI/KEEL/OSS - quote pages pinned to intraday snapshots across repeated cache-busted fetches, no valid '
  'Sep 4 history rows; CLPT - no Sep 4 print anywhere reachable (Sep 3 after-hours was +4.6%, so the stale value was '
  'deliberately not nudged); FPS/HYLN/AIRJ - stockanalysis never posted their Sep 4 session; VPG - quote page cleanly '
@@ -1597,7 +1635,7 @@ STOCKS = [{'an': 83,
   't': 'GLW'},
  {'an': 25,
   'ath': 1085.68,
-  'budget': 20000,
+  'budget': 13000,
   'capexB': 0.34,
   'eps': -92.96,
   'epsG': None,
@@ -1721,7 +1759,7 @@ STOCKS = [{'an': 83,
   't': 'CIEN'},
  {'an': 26,
   'ath': 499.48,
-  'budget': 15000,
+  'budget': 7000,
   'capexB': 0.06,
   'eps': 1.76,
   'epsG': 197.1,
@@ -2372,7 +2410,7 @@ STOCKS = [{'an': 83,
   't': 'ASTS'},
  {'an': 11,
   'ath': 51.78,
-  'budget': None,
+  'budget': 10000,
   'capexB': -0.08591,
   'eps': -1.17,
   'epsG': None,
@@ -2403,7 +2441,7 @@ STOCKS = [{'an': 83,
   't': 'PL'},
  {'an': 9,
   'ath': 46.75,
-  'budget': None,
+  'budget': 5000,
   'capexB': 0.06,
   'eps': -0.29,
   'epsG': None,
@@ -2432,37 +2470,6 @@ STOCKS = [{'an': 83,
   'roe': None,
   'roi': None,
   't': 'LUNR'},
- {'an': 1,
-  'ath': 6.79,
-  'budget': None,
-  'capexB': 0.00888,
-  'eps': -0.06,
-  'epsG': None,
-  'ex': 'NASDAQ',
-  'fcfB': -0.02947,
-  'fpe': None,
-  'fvAvg': None,
-  'fvMax': None,
-  'fvMin': None,
-  'g': 7,
-  'gm': -108.0,
-  'hi52': 6.79,
-  'jan2': None,
-  'lo52': 0.628,
-  'mcapB': 0.2126,
-  'name': 'Sidus Space',
-  'pe': None,
-  'peg': None,
-  'pm': None,
-  'price': 2.07,
-  'ps': 89.8,
-  'pxd': '2026-09-04',
-  'r40': None,
-  'revB': 0.00282,
-  'revG': -53.8,
-  'roe': -14.52,
-  'roi': -36.39,
-  't': 'SIDU'},
  {'an': 26,
   'ath': 207.52,
   'budget': 10000,
@@ -5317,7 +5324,7 @@ STOCKS = [{'an': 83,
   't': 'BKNG'},
  {'an': 32,
   'ath': 745.61,
-  'budget': None,
+  'budget': 5000,
   'capexB': None,
   'eps': 11.64,
   'epsG': 110.4,
@@ -5903,8 +5910,8 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'SMCI': {'budget': None, 'cost': None, 'shares': None},
  'ANET': {'budget': 20000, 'cost': 15585.57, 'shares': 98},
  'CRDO': {'budget': 15000, 'cost': 7700.99, 'shares': 54},
- 'LITE': {'budget': 20000, 'cost': 9372.74, 'shares': 11.5},
- 'ALAB': {'budget': 15000, 'cost': 3805.47, 'shares': 15},
+ 'LITE': {'budget': 13000, 'cost': 9372.74, 'shares': 11.5},
+ 'ALAB': {'budget': 7000, 'cost': 3805.47, 'shares': 15},
  'APH': {'budget': 10000, 'cost': 2004.4, 'shares': 32},
  'GLW': {'budget': None, 'cost': None, 'shares': None},
  'FN': {'budget': 5000, 'cost': 1604.56, 'shares': 3},
@@ -5934,7 +5941,7 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'ROK': {'budget': None, 'cost': None, 'shares': None},
  'RKLB': {'budget': 10000, 'cost': 1942.58, 'shares': 23},
  'ASTS': {'budget': None, 'cost': None, 'shares': None},
- 'LUNR': {'budget': None, 'cost': None, 'shares': None},
+ 'LUNR': {'budget': 5000, 'cost': None, 'shares': None},
  'SPCX': {'budget': None, 'cost': None, 'shares': None},
  'PLTR': {'budget': 10000, 'cost': 5533.09, 'shares': 40},
  'AVAV': {'budget': 5000, 'cost': 3758.3, 'shares': 18},
@@ -5982,13 +5989,13 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'POET': {'budget': None, 'cost': None, 'shares': None},
  'AMPX': {'budget': 5000, 'cost': None, 'shares': None},
  'NOK': {'budget': None, 'cost': None, 'shares': None},
- 'APP': {'budget': None, 'cost': None, 'shares': None},
+ 'APP': {'budget': 5000, 'cost': None, 'shares': None},
  'COHR': {'budget': 5000, 'cost': 3395.12, 'shares': 10},
  'LMND': {'budget': None, 'cost': None, 'shares': None},
  'HNGE': {'budget': None, 'cost': None, 'shares': None},
  'AIRJ': {'budget': None, 'cost': None, 'shares': None},
  'RBRK': {'budget': None, 'cost': None, 'shares': None},
- 'PL': {'budget': None, 'cost': None, 'shares': None},
+ 'PL': {'budget': 10000, 'cost': None, 'shares': None},
  'PWR': {'budget': None, 'cost': None, 'shares': None},
  'POWL': {'budget': None, 'cost': None, 'shares': None},
  'NVT': {'budget': None, 'cost': None, 'shares': None},
@@ -6011,7 +6018,6 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'FSLR': {'budget': 5000, 'cost': 2003.56, 'shares': 10},
  'ON': {'budget': None, 'cost': None, 'shares': None},
  'KEEL': {'budget': None, 'cost': None, 'shares': None},
- 'SIDU': {'budget': None, 'cost': None, 'shares': None},
  'HYLN': {'budget': None, 'cost': None, 'shares': None},
  'POWI': {'budget': None, 'cost': None, 'shares': None},
  'RCAT': {'budget': None, 'cost': None, 'shares': None},
@@ -7149,7 +7155,6 @@ M3 = {'GOOGL': {'pfcf': 72.54, 'ev': 21.6, 'de': 0.18},
  'FSLR': {'pfcf': 19.1, 'ev': 11.37, 'de': 0.02},
  'ON': {'pfcf': 21.06, 'ev': 22.24, 'de': 0.65},
  'KEEL': {'pfcf': None, 'ev': None, 'de': 3.12},
- 'SIDU': {'pfcf': None, 'ev': None, 'de': 0.0},
  'HYLN': {'pfcf': None, 'ev': None, 'de': 0.02},
  'POWI': {'pfcf': 45.53, 'ev': 80.37, 'de': 0.0},
  'RCAT': {'pfcf': None, 'ev': None, 'de': 0.03},

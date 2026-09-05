@@ -35,6 +35,8 @@ Rules
 A move larger than the threshold is not assumed wrong. It is assumed
 UNVERIFIED. Confirm it against a second independent source, then re-run with
 --allow TICKER to record that you checked it.
+A ticker deliberately REMOVED from the board also needs --allow TICKER;
+without it, a vanishing ticker is always a hard failure.
 """
 import argparse
 import json
@@ -102,7 +104,10 @@ def main():
     fails, warns, moves, fresh = [], [], [], []
 
     for t in sorted(set(b) - set(n)):
-        fails.append("%-6s VANISHED -- was in %s build, absent from new build" % (t, a.base))
+        if t in allow:
+            warns.append("%-6s REMOVED from the board deliberately (--allow %s)" % (t, t))
+        else:
+            fails.append("%-6s VANISHED -- was in %s build, absent from new build" % (t, a.base))
 
     for t in sorted(set(n) - set(b)):
         fresh.append("%-6s NEW  price %s" % (t, n[t].get("price")))
