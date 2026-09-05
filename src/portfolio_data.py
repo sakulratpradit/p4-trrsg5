@@ -3,102 +3,125 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ("Sep 5, 2026 - THREE APPROVED BOARD ACTIONS EXECUTED TOGETHER at Salee's instruction. || (1) SPACE FUNDED BY TRIMMING "
- 'TWO ON-HOLD AI-CORE NAMES. ALAB 15,000 -> 7,000 (-8,000) and LITE 20,000 -> 13,000 (-7,000); both budgets remain '
- 'ABOVE their deployed cost (ALAB 3,805.47, LITE 9,372.74) so no position is stranded. The 15,000 goes to group 7 '
- 'Space, which rises 10,000 -> 25,000: RKLB unchanged at 10,000 (1,942.58 deployed), PL Planet Labs NEW 10,000, LUNR '
- 'Intuitive Machines NEW 5,000. RATIONALE - ALAB (fwd P/E 86.95) and LITE (ROE -149.3%) have both been on explicit '
- 'hold for weeks, so their budgets were dead money; Space carried 1.00% of a 1,005,000 target across six names, too '
- 'little to express any view. This single move funds the theme AND reduces AI-core budget, addressing the standing '
- 'concentration problem from both ends. PL is the only name in the group approaching profitability - Q2 FY27 revenue '
- '116.1m +58%, adjusted EBITDA POSITIVE 13.9m, GAAP loss narrowed from -22.6m to -9.4m, cash 865.4m against 448.3m of '
- 'converts, backlog 814.9m. CAVEAT: PL guided next quarter to 101-105m against 114.3m consensus, a sequential DECLINE '
- '- hence the trigger is the ~December print, not now. LUNR revenue tripled to 206.2m with an 1.8bn backlog but debt '
- 'went 37m -> 481m and shares +44.1% YoY; trigger is IM-3 actually flying. SPCX and ASTS deliberately left unfunded '
- '(82x sales; a 231m quarterly loss with debt +492%). || (2) APP BUDGET SET AT 5,000. This corrects a documented '
- 'discrepancy: the 200k deployment plan has stated since Sep 3 that APP had a 5,000 budget, but the board carried None '
- '- the intent was written and never executed. Recorded as an error, not a change of view. NOTHING DEPLOYED - the '
- 'trigger remains the ~Nov 4 print. WHY APP IS CHEAP, NOW ESTABLISHED: the fall from 745.61 to ~320 is DECELERATION, '
- 'not fraud. Revenue growth ran 68% -> 66% -> 59% -> 53% -> guided 47%, culminating in a -19.66% day on Aug 6 2026 '
- "after the first-ever guidance miss (Q2 revenue 1,924m vs ~1,935m consensus). CEO Foroughi: 'Our pace of meaningful "
- 'model improvement was lighter than normal during the quarter, and the next step up in model performance landed just '
- "after quarter end.' TWO OVERHANGS HAVE RESOLVED IN APP'S FAVOUR - CFO Matt Stumpf stated Aug 5 2026 that 'The SEC "
- "has recently advised us that it concluded its inquiry with no recommended action', and CapitalWatch RETRACTED its "
- "money-laundering report on Feb 9 2026 citing a 'flawed verification process'. The 2025 Fuzzy Panda/Culper class "
- 'action remains at motion-to-dismiss, undecided. Short interest only 3.9% of float. Business quality intact: Q2 gross '
- 'margin 88.3%, net income 1,267m +55%, free cash flow 863m in the quarter. || (3) SIDU REMOVED FROM THE BOARD. Sidus '
- 'Space had no budget and no position, so nothing is lost. Q2 2026 revenue FELL 54% to 583k while every peer in the '
- 'group grew; gross margin is NEGATIVE 108%; share count went roughly 18.30m -> 101.21m in twelve months; the company '
- 'executed a 1-for-100 reverse split in Dec 2023 to regain Nasdaq minimum-bid compliance. It was a row producing '
- 'noise, not signal. Board 182 -> 181 tickers. || ⚠️ FOUR APP FIELDS ARE WRONG ON THIS BOARD and are flagged for the '
- 'next fundamentals pass, NOT silently patched here: fpe carried as 24.17 but the true FORWARD P/E is 17.72 (24.65 is '
- 'the TRAILING multiple); roe carried as 266.44 vs 203.69 sourced; de carried as 1.63 vs 1.11 (3.52bn debt / 3.16bn '
- 'equity at Jun 30 2026); revG carried as 66.4 which was the Q4 2025 rate - the Q2 2026 YoY is 53%. Recorded rather '
- 'than corrected because fundamentals belong to the earnings-refresh job. || ⚠️ BUDGET CONSEQUENCE - assigned budget '
- '1,005,000 -> 1,010,000, i.e. 101.0% of the 1,000,000 target. The Space reallocation was budget-NEUTRAL by '
- 'construction (-15,000 AI core, +15,000 Space); the whole +5,000 is the APP line. ZS remains the standing trim '
- 'candidate (5,000 budgeted, 0 deployed, weakest of the three cybersecurity names) which would return the board to '
- '1,005,000; a further 5,000 trim is still needed for exactly 1,000,000. Salee has not yet chosen either, so the '
- 'overage stands and is flagged, not absorbed. || Held positions 52 and held cost 597,305.69 both UNCHANGED - these '
- 'are budget and roster changes, no money moved. Unfilled room 412,694.31. || Sep 4, 2026 - close. Daily price '
- 'refresh: 160 of 182 tickers brought to the Friday Sep 4, 2026 close (price, mcapB, pxd; mcapB scaled by each '
- 'ticker\'s exact price ratio). METHOD per playbook: stockanalysis.com quote page taken only when stamped "Sep 4, '
- '2026, 4:00 PM EDT" AND its stated previous close tied to the Sep 3 close; partial-session /history/ rows discarded '
- 'throughout (worst: SITM history close 611.07 above its own high 608.58 - internally impossible; MCD history close '
- 'below its own low; KTOS/ONDS/RCAT/RBRK/SOUN/WULF/PENG/YUM/BKNG/S rows were low-volume partial captures, quote page '
- 'used); history-table fallbacks for MMM and FSLR (quote pages intraday-stamped, Sep 4 rows internally consistent); '
- 'GOOGL prev-close tie via the Sep 3 adjusted close (0.22 dividend adjustment). CONSTRAINT THIS RUN, RECORDED RATHER '
- "THAN PAPERED OVER: the session's 200-call WebSearch budget was exhausted mid-run by the 182-ticker fan-out, which "
- 'also blocks provenance for new second-source URLs, so most late-batch names could not reach Google '
- 'Finance/marketscreener/ycharts/fool. All 23 moves >=6% were treated per the gate. ELEVEN confirmed against dated '
- 'independent Sep 4 sources and passed with --allow: AEHR +13.1% (marketscreener), EOSE +10.9% (Google Finance beta '
- "'Closed: Sep 4, 4:00:01 PM GMT-4'), ALAB +9.8%, AXTI +9.7%, POET +8.1%, TSEM +7.9%, NBIS +7.5%, FORM +7.4%, MRVL "
- '+7.1%, COHR +6.6% (all Google Finance dated closes), MU +6.1% (GF beta, prev close derived per the after-hours '
- 'quirk). TWELVE >=6% moves could NOT be second-sourced and were REVERTED to their Sep 3 board values per the '
- 'stale-beats-wrong rule - each had an internally consistent single-source Sep 4 print (4:00 PM EDT stamp + prev-close '
- 'tie, most with an exactly agreeing history row) that the next run should confirm and apply: SNDK 1740.00 (+11.9%), '
- 'COHU 50.72 (+10.3%), SKHY 177.00 (+8.1%), KLAC 185.60 (+7.3%), IREN 44.68 (+7.3%), BE 252.87 (+7.3%), SITM 612.09 '
- '(+6.5%), PENG 51.76 (+6.4%), NRG 119.02 (+6.4%), ADBE 266.51 (-6.7%; two Sep-4-dated headlines corroborate a ~7% '
- 'fall on CEO-succession disappointment but no fetchable second quote), STX 849.28 (+6.3%), HUT 93.55 (+6.2%). Their '
- 'pxd stays 2026-09-03 so the staleness badges show honestly. UNRESOLVED, left at prior values: '
- 'POWI/AMBQ/INDI/KEEL/OSS - quote pages pinned to intraday snapshots across repeated cache-busted fetches, no valid '
- 'Sep 4 history rows; CLPT - no Sep 4 print anywhere reachable (Sep 3 after-hours was +4.6%, so the stale value was '
- 'deliberately not nudged); FPS/HYLN/AIRJ - stockanalysis never posted their Sep 4 session; VPG - quote page cleanly '
- 'stamped Sep 4 (63.01) but its previous-close linkage (implied Sep 3 close 62.76) unverifiable against any source - '
- "same precedent as HNGE on Sep 3, not used. VIAV UNSTUCK at 34.86 (marketscreener 'Market Closed 2026-09-04' concurs "
- 'exactly). HNGE UNSTUCK at 92.37 (linkage rebuilt: Sep 1 90.02 confirmed, quote prev close 90.76 for Sep 3; a '
- 'fool.com quote box concurs on price and the 89.41-93.14 day range, though its date label read Sep 3 and its derived '
- 'prev close 90.60 differs 0.18% - accepted on the strength of the at-close stamp + range agreement, caveat recorded). '
- 'Movers 5.5-6% (under gate, single-source, recorded): TSLA -5.9%, WDC +5.9%, STRL +5.8%. hi52/lo52 extended from '
- 'sourced Sep 4 session extremes where breached. NOTE: first push attempt was rejected - another writer (the Sep 5 '
- 'Brazil-removal commit) landed first; this build was redone on top of it per the README recovery protocol. '
- "Fundamentals, M3, POS, TRADES, budgets untouched (owned by other jobs). Also recorded: this session's git proxy "
- "would not inject a credential for this repo ('not in this session's authorized repository set'); the push used the "
- "job's own PAT explicitly. || Sep 5, 2026 - BRAZIL REMOVED FROM THE ALLOCATION at Salee's explicit instruction. NU "
- '(Nu Holdings) keeps its board row and all research, but its 5,000 budget is withdrawn, so it cannot be bought. Group '
- '14 Digital Fintech goes 10,000 -> 5,000 (V only). Total assigned budget 1,010,000 -> 1,005,000. Tranche 1 of the '
- 'deployment plan falls 80,697 -> 75,697; the whole plan 202,311 -> 197,311; buffer ~11,747 -> ~16,747. || THE FACTS '
- 'DO NOT SUPPORT THE STATED REASON, AND THIS IS RECORDED HONESTLY. Salee cited Brazilian economy, inflation and '
- 'currency. All three currently point the other way: IPCA 4.44% (Jul 2026) sits INSIDE the 3.0% +/-1.5pp tolerance '
- 'band, and the Aug IPCA-15 preview showed outright monthly DEFLATION of -0.40% with the 12-month rate easing to '
- '4.24%; the Selic is being CUT not raised - four consecutive 25bp cuts in 2026 taking it 15.00% -> 14.00%, the last '
- 'unanimous 7-0 on Aug 5; GDP grew +0.5% QoQ and +2.0% YoY in Q2 2026, above expectations; and the real APPRECIATED '
- "against the dollar, +6.1% over 12 months on BCB PTAX and +3.4% on the Fed's H.10, leaving it 1.4% STRONGER than five "
- 'years ago. On identical Fed H.10 dates the Brazilian real (+3.4%) outperformed BOTH the Taiwan dollar (-3.5%) and '
- "the Thai baht (-3.4%) - Salee's own currency weakened more than the one he is avoiding. || TWO REAL CONCERNS EXIST, "
- 'NEITHER ON HIS LIST - (1) general government gross debt has climbed without interruption from 75.49% of GDP in Jan '
- '2025 to 82.51% in Jul 2026, nearly 4pp of that in 2026 alone; (2) Brazil is BELOW investment grade at all three '
- "agencies (Fitch BB, Moody's Ba1, S&P BB/B, all Stable), and a general election falls on Oct 4 2026 with a runoff Oct "
- "25 - Nu's own FY2025 20-F names that election as a risk factor. || NUBANK ITSELF - Brazil is 117.8m of 138.9m "
- 'customers (84.8%) and 36.4bn of 45.3bn deposits (80.4%); revenue by geography is NOT disclosed. Two disclosed '
- "offsets cut against the currency fear: Nu's functional AND presentation currency is the US DOLLAR, and real "
- 'appreciation FLATTERED its reported results (revenue +55.8% in USD vs +39% FX-neutral); and its cost of deposits '
- 'runs at 88% of the Brazilian interbank rate, so a FALLING Selic mechanically lowers funding cost. The one genuinely '
- 'deteriorating metric is 90+ NPL at 6.9%, up 35bp QoQ and 40bp YoY, while the leading 15-90 day indicator IMPROVED '
- '16bp to 4.8%. || WHY THE DECISION STILL STANDS - not because Brazil is unstable, but because 5,000 is 0.5% of a '
- '1,000,000 target. Tripling it would add 1% to the portfolio, which cannot justify holding something Salee has no '
- 'information flow on and cannot monitor. A position too small to matter and too uncomfortable to hold is sold at the '
- 'wrong moment. Recorded so that the reasoning is not later mistaken for a macro call on Brazil. || MELI '
+ASOF = ("Sep 5, 2026 - BOARD BROUGHT TO EXACTLY 1,000,000 at Salee's instruction to follow the standing budget "
+ 'recommendations. Two budgets withdrawn, 5,000 each, both ZERO deployed so no position is stranded and no money '
+ 'moves. Assigned budget 1,010,000 -> 1,000,000, i.e. 100.00% of target for the first time since LHX and FPS were '
+ 'added. Unfilled room 412,694.31 -> 402,694.31. || (1) ZS ZSCALER - budget 5,000 -> None. Flagged as the standing '
+ 'trim candidate on four separate occasions and the reason is now explicit in the data: it is the ONLY LOSS-MAKING '
+ 'name of the three cybersecurity holdings, net margin -1.88% and ROE -2.43%, against PANW and CRWD which are both '
+ 'already deployed and both showing large gains (+94% and +120% respectively). Forward P/E 36.55 with a PEG of 1.39. '
+ 'Group 15 Cybersecurity 25,000 -> 20,000, which is still 2x its deployed 7,675. CONSEQUENCE: ZS was a 5,000 line in '
+ 'TRANCHE 1 of the deployment plan, so Tranche 1 falls 75,697 -> 70,697 and the whole plan 197,311 -> 192,311. The '
+ 'buffer rises correspondingly. || (2) AMPX AMPRIUS TECHNOLOGIES - budget 5,000 -> None. Net margin -43.98% and ROE '
+ '-44.16% on a 9.89 share price; revenue growth of 172.6% is off a very small base. It was the fifth name in group 8 '
+ 'Defence, Drones & Public Safety, behind PLTR (5,533 deployed), AVAV (3,758), ONDS (2,031) and LHX (5,000 budgeted at '
+ "Salee's own instruction). Group 8 budget 30,000 -> 25,000. Nothing was deployed and no thesis was ever written for "
+ 'it. || WHY THESE TWO AND NOT OTHERS - every other zero-deployed budget was protected for a stated reason: V and MCD '
+ 'are dated Tranche 1 lines; APP, PL, LUNR, FPS and LHX all carry explicit triggers set within the last three days; '
+ "IONQ is the board's ONLY quantum name, so cutting it would delete a whole theme rather than trim a duplicate; CAT "
+ 'and AEP are profitable industrials (ROE 56.97% and 10.13%). ZS and AMPX were the only zero-deployed budgets that '
+ 'were BOTH loss-making AND redundant inside an already-funded group. || CONSIDERED AND REJECTED - ONDS was the other '
+ "candidate on thesis grounds (previously recorded as carrying 'substantial doubt' language and +156% dilution), but "
+ 'it has 2,030.54 deployed, so trimming it would have been a partial cut rather than a clean withdrawal, and its board '
+ 'fields look internally suspect (pm 251.92%, roe 42.95% sit oddly against that thesis). Flagged for the fundamentals '
+ 'job to re-verify rather than acted on with data I do not trust. It remains the next candidate if the target is ever '
+ 'cut below 1,000,000. || Held positions 52 and held cost 597,305.69 UNCHANGED. AI concentration unchanged at the held '
+ 'level - this removes future headroom, not money. Board 181 tickers. || Sep 5, 2026 - THREE APPROVED BOARD ACTIONS '
+ "EXECUTED TOGETHER at Salee's instruction. || (1) SPACE FUNDED BY TRIMMING TWO ON-HOLD AI-CORE NAMES. ALAB 15,000 -> "
+ '7,000 (-8,000) and LITE 20,000 -> 13,000 (-7,000); both budgets remain ABOVE their deployed cost (ALAB 3,805.47, '
+ 'LITE 9,372.74) so no position is stranded. The 15,000 goes to group 7 Space, which rises 10,000 -> 25,000: RKLB '
+ 'unchanged at 10,000 (1,942.58 deployed), PL Planet Labs NEW 10,000, LUNR Intuitive Machines NEW 5,000. RATIONALE - '
+ 'ALAB (fwd P/E 86.95) and LITE (ROE -149.3%) have both been on explicit hold for weeks, so their budgets were dead '
+ 'money; Space carried 1.00% of a 1,005,000 target across six names, too little to express any view. This single move '
+ 'funds the theme AND reduces AI-core budget, addressing the standing concentration problem from both ends. PL is the '
+ 'only name in the group approaching profitability - Q2 FY27 revenue 116.1m +58%, adjusted EBITDA POSITIVE 13.9m, GAAP '
+ 'loss narrowed from -22.6m to -9.4m, cash 865.4m against 448.3m of converts, backlog 814.9m. CAVEAT: PL guided next '
+ 'quarter to 101-105m against 114.3m consensus, a sequential DECLINE - hence the trigger is the ~December print, not '
+ 'now. LUNR revenue tripled to 206.2m with an 1.8bn backlog but debt went 37m -> 481m and shares +44.1% YoY; trigger '
+ 'is IM-3 actually flying. SPCX and ASTS deliberately left unfunded (82x sales; a 231m quarterly loss with debt '
+ '+492%). || (2) APP BUDGET SET AT 5,000. This corrects a documented discrepancy: the 200k deployment plan has stated '
+ 'since Sep 3 that APP had a 5,000 budget, but the board carried None - the intent was written and never executed. '
+ 'Recorded as an error, not a change of view. NOTHING DEPLOYED - the trigger remains the ~Nov 4 print. WHY APP IS '
+ 'CHEAP, NOW ESTABLISHED: the fall from 745.61 to ~320 is DECELERATION, not fraud. Revenue growth ran 68% -> 66% -> '
+ '59% -> 53% -> guided 47%, culminating in a -19.66% day on Aug 6 2026 after the first-ever guidance miss (Q2 revenue '
+ "1,924m vs ~1,935m consensus). CEO Foroughi: 'Our pace of meaningful model improvement was lighter than normal during "
+ "the quarter, and the next step up in model performance landed just after quarter end.' TWO OVERHANGS HAVE RESOLVED "
+ "IN APP'S FAVOUR - CFO Matt Stumpf stated Aug 5 2026 that 'The SEC has recently advised us that it concluded its "
+ "inquiry with no recommended action', and CapitalWatch RETRACTED its money-laundering report on Feb 9 2026 citing a "
+ "'flawed verification process'. The 2025 Fuzzy Panda/Culper class action remains at motion-to-dismiss, undecided. "
+ 'Short interest only 3.9% of float. Business quality intact: Q2 gross margin 88.3%, net income 1,267m +55%, free cash '
+ 'flow 863m in the quarter. || (3) SIDU REMOVED FROM THE BOARD. Sidus Space had no budget and no position, so nothing '
+ 'is lost. Q2 2026 revenue FELL 54% to 583k while every peer in the group grew; gross margin is NEGATIVE 108%; share '
+ 'count went roughly 18.30m -> 101.21m in twelve months; the company executed a 1-for-100 reverse split in Dec 2023 to '
+ 'regain Nasdaq minimum-bid compliance. It was a row producing noise, not signal. Board 182 -> 181 tickers. || ⚠️ FOUR '
+ 'APP FIELDS ARE WRONG ON THIS BOARD and are flagged for the next fundamentals pass, NOT silently patched here: fpe '
+ 'carried as 24.17 but the true FORWARD P/E is 17.72 (24.65 is the TRAILING multiple); roe carried as 266.44 vs 203.69 '
+ 'sourced; de carried as 1.63 vs 1.11 (3.52bn debt / 3.16bn equity at Jun 30 2026); revG carried as 66.4 which was the '
+ 'Q4 2025 rate - the Q2 2026 YoY is 53%. Recorded rather than corrected because fundamentals belong to the '
+ 'earnings-refresh job. || ⚠️ BUDGET CONSEQUENCE - assigned budget 1,005,000 -> 1,010,000, i.e. 101.0% of the '
+ '1,000,000 target. The Space reallocation was budget-NEUTRAL by construction (-15,000 AI core, +15,000 Space); the '
+ 'whole +5,000 is the APP line. ZS remains the standing trim candidate (5,000 budgeted, 0 deployed, weakest of the '
+ 'three cybersecurity names) which would return the board to 1,005,000; a further 5,000 trim is still needed for '
+ 'exactly 1,000,000. Salee has not yet chosen either, so the overage stands and is flagged, not absorbed. || Held '
+ 'positions 52 and held cost 597,305.69 both UNCHANGED - these are budget and roster changes, no money moved. Unfilled '
+ 'room 412,694.31. || Sep 4, 2026 - close. Daily price refresh: 160 of 182 tickers brought to the Friday Sep 4, 2026 '
+ "close (price, mcapB, pxd; mcapB scaled by each ticker's exact price ratio). METHOD per playbook: stockanalysis.com "
+ 'quote page taken only when stamped "Sep 4, 2026, 4:00 PM EDT" AND its stated previous close tied to the Sep 3 close; '
+ 'partial-session /history/ rows discarded throughout (worst: SITM history close 611.07 above its own high 608.58 - '
+ 'internally impossible; MCD history close below its own low; KTOS/ONDS/RCAT/RBRK/SOUN/WULF/PENG/YUM/BKNG/S rows were '
+ 'low-volume partial captures, quote page used); history-table fallbacks for MMM and FSLR (quote pages '
+ 'intraday-stamped, Sep 4 rows internally consistent); GOOGL prev-close tie via the Sep 3 adjusted close (0.22 '
+ "dividend adjustment). CONSTRAINT THIS RUN, RECORDED RATHER THAN PAPERED OVER: the session's 200-call WebSearch "
+ 'budget was exhausted mid-run by the 182-ticker fan-out, which also blocks provenance for new second-source URLs, so '
+ 'most late-batch names could not reach Google Finance/marketscreener/ycharts/fool. All 23 moves >=6% were treated per '
+ 'the gate. ELEVEN confirmed against dated independent Sep 4 sources and passed with --allow: AEHR +13.1% '
+ "(marketscreener), EOSE +10.9% (Google Finance beta 'Closed: Sep 4, 4:00:01 PM GMT-4'), ALAB +9.8%, AXTI +9.7%, POET "
+ '+8.1%, TSEM +7.9%, NBIS +7.5%, FORM +7.4%, MRVL +7.1%, COHR +6.6% (all Google Finance dated closes), MU +6.1% (GF '
+ 'beta, prev close derived per the after-hours quirk). TWELVE >=6% moves could NOT be second-sourced and were REVERTED '
+ 'to their Sep 3 board values per the stale-beats-wrong rule - each had an internally consistent single-source Sep 4 '
+ 'print (4:00 PM EDT stamp + prev-close tie, most with an exactly agreeing history row) that the next run should '
+ 'confirm and apply: SNDK 1740.00 (+11.9%), COHU 50.72 (+10.3%), SKHY 177.00 (+8.1%), KLAC 185.60 (+7.3%), IREN 44.68 '
+ '(+7.3%), BE 252.87 (+7.3%), SITM 612.09 (+6.5%), PENG 51.76 (+6.4%), NRG 119.02 (+6.4%), ADBE 266.51 (-6.7%; two '
+ 'Sep-4-dated headlines corroborate a ~7% fall on CEO-succession disappointment but no fetchable second quote), STX '
+ '849.28 (+6.3%), HUT 93.55 (+6.2%). Their pxd stays 2026-09-03 so the staleness badges show honestly. UNRESOLVED, '
+ 'left at prior values: POWI/AMBQ/INDI/KEEL/OSS - quote pages pinned to intraday snapshots across repeated '
+ 'cache-busted fetches, no valid Sep 4 history rows; CLPT - no Sep 4 print anywhere reachable (Sep 3 after-hours was '
+ '+4.6%, so the stale value was deliberately not nudged); FPS/HYLN/AIRJ - stockanalysis never posted their Sep 4 '
+ 'session; VPG - quote page cleanly stamped Sep 4 (63.01) but its previous-close linkage (implied Sep 3 close 62.76) '
+ 'unverifiable against any source - same precedent as HNGE on Sep 3, not used. VIAV UNSTUCK at 34.86 (marketscreener '
+ "'Market Closed 2026-09-04' concurs exactly). HNGE UNSTUCK at 92.37 (linkage rebuilt: Sep 1 90.02 confirmed, quote "
+ 'prev close 90.76 for Sep 3; a fool.com quote box concurs on price and the 89.41-93.14 day range, though its date '
+ 'label read Sep 3 and its derived prev close 90.60 differs 0.18% - accepted on the strength of the at-close stamp + '
+ 'range agreement, caveat recorded). Movers 5.5-6% (under gate, single-source, recorded): TSLA -5.9%, WDC +5.9%, STRL '
+ '+5.8%. hi52/lo52 extended from sourced Sep 4 session extremes where breached. NOTE: first push attempt was rejected '
+ '- another writer (the Sep 5 Brazil-removal commit) landed first; this build was redone on top of it per the README '
+ 'recovery protocol. Fundamentals, M3, POS, TRADES, budgets untouched (owned by other jobs). Also recorded: this '
+ "session's git proxy would not inject a credential for this repo ('not in this session's authorized repository set'); "
+ "the push used the job's own PAT explicitly. || Sep 5, 2026 - BRAZIL REMOVED FROM THE ALLOCATION at Salee's explicit "
+ 'instruction. NU (Nu Holdings) keeps its board row and all research, but its 5,000 budget is withdrawn, so it cannot '
+ 'be bought. Group 14 Digital Fintech goes 10,000 -> 5,000 (V only). Total assigned budget 1,010,000 -> 1,005,000. '
+ 'Tranche 1 of the deployment plan falls 80,697 -> 75,697; the whole plan 202,311 -> 197,311; buffer ~11,747 -> '
+ '~16,747. || THE FACTS DO NOT SUPPORT THE STATED REASON, AND THIS IS RECORDED HONESTLY. Salee cited Brazilian '
+ 'economy, inflation and currency. All three currently point the other way: IPCA 4.44% (Jul 2026) sits INSIDE the 3.0% '
+ '+/-1.5pp tolerance band, and the Aug IPCA-15 preview showed outright monthly DEFLATION of -0.40% with the 12-month '
+ 'rate easing to 4.24%; the Selic is being CUT not raised - four consecutive 25bp cuts in 2026 taking it 15.00% -> '
+ '14.00%, the last unanimous 7-0 on Aug 5; GDP grew +0.5% QoQ and +2.0% YoY in Q2 2026, above expectations; and the '
+ "real APPRECIATED against the dollar, +6.1% over 12 months on BCB PTAX and +3.4% on the Fed's H.10, leaving it 1.4% "
+ 'STRONGER than five years ago. On identical Fed H.10 dates the Brazilian real (+3.4%) outperformed BOTH the Taiwan '
+ "dollar (-3.5%) and the Thai baht (-3.4%) - Salee's own currency weakened more than the one he is avoiding. || TWO "
+ 'REAL CONCERNS EXIST, NEITHER ON HIS LIST - (1) general government gross debt has climbed without interruption from '
+ '75.49% of GDP in Jan 2025 to 82.51% in Jul 2026, nearly 4pp of that in 2026 alone; (2) Brazil is BELOW investment '
+ "grade at all three agencies (Fitch BB, Moody's Ba1, S&P BB/B, all Stable), and a general election falls on Oct 4 "
+ "2026 with a runoff Oct 25 - Nu's own FY2025 20-F names that election as a risk factor. || NUBANK ITSELF - Brazil is "
+ '117.8m of 138.9m customers (84.8%) and 36.4bn of 45.3bn deposits (80.4%); revenue by geography is NOT disclosed. Two '
+ "disclosed offsets cut against the currency fear: Nu's functional AND presentation currency is the US DOLLAR, and "
+ 'real appreciation FLATTERED its reported results (revenue +55.8% in USD vs +39% FX-neutral); and its cost of '
+ 'deposits runs at 88% of the Brazilian interbank rate, so a FALLING Selic mechanically lowers funding cost. The one '
+ 'genuinely deteriorating metric is 90+ NPL at 6.9%, up 35bp QoQ and 40bp YoY, while the leading 15-90 day indicator '
+ 'IMPROVED 16bp to 4.8%. || WHY THE DECISION STILL STANDS - not because Brazil is unstable, but because 5,000 is 0.5% '
+ 'of a 1,000,000 target. Tripling it would add 1% to the portfolio, which cannot justify holding something Salee has '
+ 'no information flow on and cannot monitor. A position too small to matter and too uncomfortable to hold is sold at '
+ 'the wrong moment. Recorded so that the reasoning is not later mistaken for a macro call on Brazil. || MELI '
  '(MercadoLibre) is the only other LatAm row on the board and already carries NO budget, so it is already outside the '
  'allocation; Salee sold his position earlier. No further action taken. Held positions 52 and held cost 597,305.69 '
  'both UNCHANGED - this removes budget, not money. || Sep 3, 2026 - close. Daily price refresh: 180 of 182 tickers '
@@ -5983,11 +6006,11 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'UBER': {'budget': None, 'cost': None, 'shares': None},
  'CRWD': {'budget': 10000, 'cost': 3914.12, 'shares': 40},
  'PANW': {'budget': 10000, 'cost': 3760.62, 'shares': 22},
- 'ZS': {'budget': 5000, 'cost': None, 'shares': None},
+ 'ZS': {'budget': None, 'cost': None, 'shares': None},
  'NET': {'budget': None, 'cost': None, 'shares': None},
  'FTNT': {'budget': None, 'cost': None, 'shares': None},
  'POET': {'budget': None, 'cost': None, 'shares': None},
- 'AMPX': {'budget': 5000, 'cost': None, 'shares': None},
+ 'AMPX': {'budget': None, 'cost': None, 'shares': None},
  'NOK': {'budget': None, 'cost': None, 'shares': None},
  'APP': {'budget': 5000, 'cost': None, 'shares': None},
  'COHR': {'budget': 5000, 'cost': 3395.12, 'shares': 10},
