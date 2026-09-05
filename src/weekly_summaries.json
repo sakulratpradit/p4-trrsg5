@@ -46,6 +46,15 @@
      "text": "Apple's platform power noted as a risk to META: its 2021 privacy change cost META roughly $10B a year and could happen again."
     }
    ]
+  },
+  {
+   "week": "2026-08-31",
+   "points": [
+    {
+     "s": "0",
+     "text": "R&D spending FY2025, ended Sep 27 2025: $34,550M, up 10.1% from $31,370M - the slowest growth of the seven mega-caps alongside Microsoft, and on the corrected Microsoft figure Apple ranks 5th rather than 4th. Apple's FY2026 ends late Sep 2026 and is not yet reported. Verified against Apple's own consolidated statements and the SEC XBRL record."
+    }
+   ]
   }
  ],
  "AMD": [
@@ -1137,6 +1146,15 @@
      "text": "Exit tests: guidance below ~$91B or gross margin under 73%, hyperscaler 2027 capex cuts, price above ~$260 pre-earnings, or a marquee customer dual-sourcing chips."
     }
    ]
+  },
+  {
+   "week": "2026-08-31",
+   "points": [
+    {
+     "s": "0",
+     "text": "R&D spending, fiscal 2026 ended Jan 25 2026: $18,497M, up 43.2% from $12,914M - the fastest research growth of the seven mega-caps, though from a base roughly a third of Alphabet's. Verified against the Q4 fiscal 2026 press release and the SEC XBRL record."
+    }
+   ]
   }
  ],
  "OUST": [
@@ -1585,6 +1603,15 @@
      "text": "Executed: 3.5 Meta shares bought at $583.24 on Aug 5 as part of a six-name, $8,039.48 batch of fills."
     }
    ]
+  },
+  {
+   "week": "2026-08-31",
+   "points": [
+    {
+     "s": "0",
+     "text": "R&D spending FY2025, ended Dec 31 2025: $57,372M, up 30.8% from $43,873M - the largest absolute increase in real research spend of any of the seven mega-caps (+$13.5B), and the fastest growth of the four giants. Verified against the FY2025 earnings release and the SEC XBRL record."
+    }
+   ]
   }
  ],
  "MRVL": [
@@ -1817,6 +1844,15 @@
     {
      "s": "0",
      "text": "Moved from Robotic/Automation/EV to the Energy group (we own 10 shares, cost $4,305, budget $10,000). Its energy-storage business is the part that fits 'Energy'; position unchanged."
+    }
+   ]
+  },
+  {
+   "week": "2026-08-31",
+   "points": [
+    {
+     "s": "0",
+     "text": "R&D spending FY2025, ended Dec 31 2025: $6,411M, up 41.2% from $4,540M - the second-fastest growth of the seven mega-caps but much the smallest absolute spend, under 11% of Alphabet's research line. Verified against the FY2025 10-K."
     }
    ]
   }
@@ -2214,6 +2250,15 @@
     {
      "s": "0",
      "text": "Broker screen validated as a price source: POEMS 'Current Price' for GOOGL ($373.51, Aug 3) matched the official close to the cent."
+    }
+   ]
+  },
+  {
+   "week": "2026-08-31",
+   "points": [
+    {
+     "s": "0",
+     "text": "R&D spending FY2025, ended Dec 31 2025: $61,087M, up 23.8% from $49,326M - the largest genuine research line of the Magnificent 7. Amazon's $108.5B is reported higher but is a 'technology and infrastructure' bucket, not R&D, so Alphabet is in fact the biggest true spender. Verified against the FY2025 earnings release and the SEC XBRL record."
     }
    ]
   }
@@ -3295,6 +3340,31 @@
      "text": "Watch item: if operating margin stalls below 14% next quarter despite the robot rollout, the savings are one-off, not structural."
     }
    ]
+  },
+  {
+   "week": "2026-08-31",
+   "points": [
+    {
+     "s": "0",
+     "text": "R&D SPENDING ACROSS THE MEGA-CAPS, saved to notes at Salee's request from an Oxford Club graphic (Sep 5, 2026). Amazon's line: technology and infrastructure of $108,521M for FY2025, ended Dec 31 2025, up 22.6% from $88,544M in FY2024. Verified independently against Amazon's FY2025 10-K and its Q4 2025 earnings release on SEC EDGAR - both print the same figure."
+    },
+    {
+     "s": "!",
+     "text": "⚠️ AMAZON'S $108.5B IS NOT A RESEARCH NUMBER and must not be set beside the other six. Amazon reports no 'research and development' line at all - the tag does not even exist in its SEC XBRL data. 'Technology and infrastructure' is a wider bucket that also carries the running costs of AWS infrastructure. Amazon topping this chart is an artifact of how the line is drawn, not evidence that it out-researches Alphabet by 78%. Anyone quoting this as an R&D league table has the wrong end of it."
+    },
+    {
+     "s": "0",
+     "text": "Corrected ranking, latest reported fiscal year, US$ millions: AMZN 108,521 (+22.6%, technology & infrastructure, NOT R&D) - GOOGL 61,087 (+23.8%) - META 57,372 (+30.8%) - MSFT 35,562 (+9.5%) - AAPL 34,550 (+10.1%) - NVDA 18,497 (+43.2%) - TSLA 6,411 (+41.2%). The six genuine R&D lines total $213.5B. Fiscal calendars are not aligned: NVIDIA's year ended Jan 25 2026, Microsoft's Jun 30 2026, Apple's Sep 27 2025, and Amazon/Alphabet/Meta/Tesla Dec 31 2025 - so this is not a like-for-like comparison of the same twelve months."
+    },
+    {
+     "s": "!",
+     "text": "⚠️ THE SOURCE GRAPHIC IS A FULL YEAR STALE ON MICROSOFT. It printed $32.5B, +10.1% - that is Microsoft's fiscal 2025, ended Jun 30 2025. Fiscal 2026 ended Jun 30 2026 and the 10-K was filed Jul 29 2026, before the graphic's own stated 'as of Aug 2026' cutoff, so the current number was available and was not used. The true figure is $35,562M, +9.5%. That also flips the ranking: Microsoft is 4th, ahead of Apple's $34,550M, not 5th behind it. Six of the seven figures matched the SEC filings to the dollar; only Microsoft did not."
+    },
+    {
+     "s": "0",
+     "text": "Reading the growth rather than the level: Nvidia +43.2% and Tesla +41.2% are the fastest, but from small bases. In absolute dollars Meta added the most real research spend (+$13.5B) and Alphabet next (+$11.8B). Amazon's +$20.0B is the largest increase of all seven, but it is mostly infrastructure build - the same capex story already sitting in the AWS thesis, not incremental research. No board fields were changed by this entry; it is reference information only."
+    }
+   ]
   }
  ],
  "APH": [
@@ -3731,6 +3801,15 @@
     {
      "s": "!",
      "text": "The dashboard's stored P/E of 21.8 is STALE - the verified figures are 27.85 trailing and 25.41 forward. Still the cheapest quality name in the book, but not as cheap as the screen suggests. Next earnings Oct 28-30 (estimated, not company-confirmed)."
+    }
+   ]
+  },
+  {
+   "week": "2026-08-31",
+   "points": [
+    {
+     "s": "0",
+     "text": "⚠️ R&D spending, and a correction to a widely circulated chart: Microsoft's fiscal 2026, ended Jun 30 2026, was $35,562M, up 9.5% from $32,488M. An Oxford Club graphic dated August 2026 printed the stale fiscal 2025 figure of $32.5B, +10.1%, even though the fiscal 2026 10-K had been filed on Jul 29 2026. On the corrected number Microsoft ranks 4th of the seven, ahead of Apple, not behind it. Verified against the FY26 Q4 press release and the SEC XBRL record."
     }
    ]
   }

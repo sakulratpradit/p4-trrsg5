@@ -107,7 +107,10 @@ def git_asof_segments():
             s = json.loads(raw) if raw.startswith('"') else raw[1:-1]
         except Exception:
             s = raw[1:-1]
-        for seg in [x.strip() for x in s.split(' | ') if x.strip()]:
+        # Notes were originally joined by ' | '; the convention later changed to
+        # ' || '. Split on either, or every note written since the change collapses
+        # into one mega-segment that names >8 tickers and is dropped from all logs.
+        for seg in [x.strip() for x in re.split(r' \|\|? ', s) if x.strip()]:
             key = seg[:80]
             if key not in seen:
                 seen[key] = {'date': dt[:10], 'commit': h, 'text': seg}
