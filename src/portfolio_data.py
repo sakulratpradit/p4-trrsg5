@@ -3,68 +3,74 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ("Sep 5, 2026 - R&D SPENDING RECORDED FOR THE SEVEN MEGA-CAPS at Salee's request, saved to the per-stock notes page. "
- 'Latest reported fiscal year, US$ millions, every figure independently verified against SEC filings: AMZN 108,521 '
- '(+22.6%) - GOOGL 61,087 (+23.8%) - META 57,372 (+30.8%) - MSFT 35,562 (+9.5%) - AAPL 34,550 (+10.1%) - NVDA 18,497 '
- "(+43.2%) - TSLA 6,411 (+41.2%). The six genuine research lines total 213,479. || ⚠️ AMZN's 108,521 is its "
- "'technology and infrastructure' line, not research and development. Amazon reports no R&D line at all - the tag does "
- 'not exist in its SEC XBRL data - and that bucket also carries the running costs of AWS infrastructure. Amazon '
- 'leading this chart is an artifact of how the line is drawn, not research intensity, and it must not be set beside '
- 'the other six. || ⚠️ THE SOURCE GRAPHIC WAS WRONG ON MSFT. It printed 32,488 (+10.1%), which is fiscal 2025 ended '
- "Jun 30 2025. Fiscal 2026 ended Jun 30 2026 and the 10-K was filed Jul 29 2026, before the graphic's own stated "
- 'August 2026 cutoff, so the current figure was available and was not used. The true number is 35,562 (+9.5%), which '
- 'also lifts MSFT above AAPL to 4th place. Six of the seven figures matched the filings to the dollar; only MSFT did '
- "not. || Fiscal calendars are not aligned - NVDA's year ended Jan 25 2026, MSFT's Jun 30 2026, AAPL's Sep 27 2025, "
- 'and the rest Dec 31 2025 - so this is not a like-for-like comparison of the same twelve months. No board fields, '
- 'budgets or positions were changed; this is reference information only. || Sep 6, 2026 - MU STRATEGY REVISED. Micron '
- 'closed at 1,016.59 on Sep 4, through the 1,000 level, +244.5% year-to-date from a Jan 2 base of 295.13 and 19.0% '
- "below its 1,255 high. Salee's position - 35.45 shares at an average of 636.998 - is now worth ~36,038 for a gain of "
- '~13,457, up 59.6%. Room unchanged at 7,418.42 on a 30,000 budget; 3.78% of the book. || ⚠️ A FLAW IN MY OWN PLAN, '
- 'CORRECTED. The standing MU limit order at 750 now sits 26.2% BELOW the market. It would almost certainly never fill, '
- 'and if it did, a 26% collapse would be a reason to RE-UNDERWRITE the position, not to buy automatically. A rule that '
- 'cannot fire is not a rule. It has been DELETED and replaced with an evidence-based second rung: 3,418.42 at the Q1 '
- 'FY2027 print (~mid-December), deployable ONLY if DRAM bit shipments grow double-digit for a SECOND consecutive '
- 'quarter. Two in a row means the story has genuinely turned from price to volume; one is noise. The 30 Sep rung is '
- 'unchanged at 4,000 on the same bit-growth test plus gross margin >=80%. Total scheduled 7,418.42 = exactly the room. '
- "|| ON THE 'SOLD OUT' HEADLINE, WHICH IS THE REASON THE STOCK IS RUNNING - it is weaker evidence than it looks. The "
- 'claim that all 2027 DRAM and HBM capacity at Samsung, SK hynix and Micron is booked traces to DigiTimes citing '
- "'industry insiders' (Aug 4, 2026), NOT to a Micron disclosure; the same report mentions long-term agreements of up "
- 'to five years but states nothing about whether these are firm volume commitments, prepayments, or non-binding. '
- "Micron's own language in its prepared remarks is narrower: 'We expect tight conditions to persist beyond calendar "
- "2027' - a statement about DURATION, not about being sold out. || ⚠️ THE DISTINCTION THAT MATTERS: being sold out is "
- 'about ALLOCATION, not PRICE. Fully committed capacity does not stop contracts repricing lower at renewal, and '
- 'TrendForce has DRAM contract price growth decelerating from +90-95% (1Q26) to +58-63% (2Q26) to +13-18% (3Q26). '
- "Micron's own CFO disclosed DRAM bits up 'low-single-digit percentage range' while prices rose in the 'low-60s' - "
- 'roughly 95% of revenue growth is price. FY2023 remains the precedent: revenue halved from 30,758m to 15,540m and '
- 'gross margin went NEGATIVE 9.1% on a 5.83bn loss. || CREDIT WHERE DUE - the source post was responsibly balanced, '
- 'naming cyclicality, a possible supply glut, competition from SK hynix and Samsung, and valuation risk after the '
- "rally. Its '+200% from ~315' is an understatement: Jan 2 295.13 to the 1,255 high is +325.2%. || A TRIM IS NOW A "
- 'LIVE OPTION, RECORDED NOT RECOMMENDED. Analyst fair value spans 361 to 2,200 across 45 analysts - a 6x spread, which '
- 'IS the cycle uncertainty made visible. Taking something off the table before Sep 30 is a legitimate choice and '
- "Salee's to make. Added as a standing HOLD line on the Schedule tab so it is visible rather than forgotten. || Sep 5, "
- "2026 - BOARD BROUGHT TO EXACTLY 1,000,000 at Salee's instruction to follow the standing budget recommendations. Two "
- 'budgets withdrawn, 5,000 each, both ZERO deployed so no position is stranded and no money moves. Assigned budget '
- '1,010,000 -> 1,000,000, i.e. 100.00% of target for the first time since LHX and FPS were added. Unfilled room '
- '412,694.31 -> 402,694.31. || (1) ZS ZSCALER - budget 5,000 -> None. Flagged as the standing trim candidate on four '
- 'separate occasions and the reason is now explicit in the data: it is the ONLY LOSS-MAKING name of the three '
- 'cybersecurity holdings, net margin -1.88% and ROE -2.43%, against PANW and CRWD which are both already deployed and '
- 'both showing large gains (+94% and +120% respectively). Forward P/E 36.55 with a PEG of 1.39. Group 15 Cybersecurity '
- '25,000 -> 20,000, which is still 2x its deployed 7,675. CONSEQUENCE: ZS was a 5,000 line in TRANCHE 1 of the '
- 'deployment plan, so Tranche 1 falls 75,697 -> 70,697 and the whole plan 197,311 -> 192,311. The buffer rises '
- 'correspondingly. || (2) AMPX AMPRIUS TECHNOLOGIES - budget 5,000 -> None. Net margin -43.98% and ROE -44.16% on a '
- '9.89 share price; revenue growth of 172.6% is off a very small base. It was the fifth name in group 8 Defence, '
- "Drones & Public Safety, behind PLTR (5,533 deployed), AVAV (3,758), ONDS (2,031) and LHX (5,000 budgeted at Salee's "
- 'own instruction). Group 8 budget 30,000 -> 25,000. Nothing was deployed and no thesis was ever written for it. || '
- 'WHY THESE TWO AND NOT OTHERS - every other zero-deployed budget was protected for a stated reason: V and MCD are '
- 'dated Tranche 1 lines; APP, PL, LUNR, FPS and LHX all carry explicit triggers set within the last three days; IONQ '
- "is the board's ONLY quantum name, so cutting it would delete a whole theme rather than trim a duplicate; CAT and AEP "
- 'are profitable industrials (ROE 56.97% and 10.13%). ZS and AMPX were the only zero-deployed budgets that were BOTH '
- 'loss-making AND redundant inside an already-funded group. || CONSIDERED AND REJECTED - ONDS was the other candidate '
- "on thesis grounds (previously recorded as carrying 'substantial doubt' language and +156% dilution), but it has "
- '2,030.54 deployed, so trimming it would have been a partial cut rather than a clean withdrawal, and its board fields '
- 'look internally suspect (pm 251.92%, roe 42.95% sit oddly against that thesis). Flagged for the fundamentals job to '
- 're-verify rather than acted on with data I do not trust. It remains the next candidate if the target is ever cut '
- 'below 1,000,000. || Held positions 52 and held cost 597,305.69 UNCHANGED. AI concentration unchanged at the held '
+ASOF = ("Sep 5, 2026 - WATCHLIST CLEAN-UP BEGINS at Salee's instruction. He asked to cut the board back to names that fit a "
+ '5-10 year growth mandate, saying 129 watchlist names were too many to digest. Three removed on his explicit list: '
+ 'MELI (consistent with the Sep 5 decision to take Brazil out of the allocation entirely), SOUN (no path to profit - '
+ 'net margin -67.5%, return on equity -32.2%) and UBER (a sound business but revenue growth 16.7% with earnings per '
+ 'share falling 22.5%, and off-thesis for this book). Board 181 -> 178 names, 52 held, 126 watchlist. No positions, '
+ 'budgets or prices touched. A tiered proposal for the remaining cut, plus liquidation candidates among the held '
+ 'names, has been put to Salee and awaits his decision. || Sep 5, 2026 - R&D SPENDING RECORDED FOR THE SEVEN MEGA-CAPS '
+ "at Salee's request, saved to the per-stock notes page. Latest reported fiscal year, US$ millions, every figure "
+ 'independently verified against SEC filings: AMZN 108,521 (+22.6%) - GOOGL 61,087 (+23.8%) - META 57,372 (+30.8%) - '
+ 'MSFT 35,562 (+9.5%) - AAPL 34,550 (+10.1%) - NVDA 18,497 (+43.2%) - TSLA 6,411 (+41.2%). The six genuine research '
+ "lines total 213,479. || ⚠️ AMZN's 108,521 is its 'technology and infrastructure' line, not research and development. "
+ 'Amazon reports no R&D line at all - the tag does not exist in its SEC XBRL data - and that bucket also carries the '
+ 'running costs of AWS infrastructure. Amazon leading this chart is an artifact of how the line is drawn, not research '
+ 'intensity, and it must not be set beside the other six. || ⚠️ THE SOURCE GRAPHIC WAS WRONG ON MSFT. It printed '
+ '32,488 (+10.1%), which is fiscal 2025 ended Jun 30 2025. Fiscal 2026 ended Jun 30 2026 and the 10-K was filed Jul 29 '
+ "2026, before the graphic's own stated August 2026 cutoff, so the current figure was available and was not used. The "
+ 'true number is 35,562 (+9.5%), which also lifts MSFT above AAPL to 4th place. Six of the seven figures matched the '
+ "filings to the dollar; only MSFT did not. || Fiscal calendars are not aligned - NVDA's year ended Jan 25 2026, "
+ "MSFT's Jun 30 2026, AAPL's Sep 27 2025, and the rest Dec 31 2025 - so this is not a like-for-like comparison of the "
+ 'same twelve months. No board fields, budgets or positions were changed; this is reference information only. || Sep '
+ '6, 2026 - MU STRATEGY REVISED. Micron closed at 1,016.59 on Sep 4, through the 1,000 level, +244.5% year-to-date '
+ "from a Jan 2 base of 295.13 and 19.0% below its 1,255 high. Salee's position - 35.45 shares at an average of 636.998 "
+ '- is now worth ~36,038 for a gain of ~13,457, up 59.6%. Room unchanged at 7,418.42 on a 30,000 budget; 3.78% of the '
+ 'book. || ⚠️ A FLAW IN MY OWN PLAN, CORRECTED. The standing MU limit order at 750 now sits 26.2% BELOW the market. It '
+ 'would almost certainly never fill, and if it did, a 26% collapse would be a reason to RE-UNDERWRITE the position, '
+ 'not to buy automatically. A rule that cannot fire is not a rule. It has been DELETED and replaced with an '
+ 'evidence-based second rung: 3,418.42 at the Q1 FY2027 print (~mid-December), deployable ONLY if DRAM bit shipments '
+ 'grow double-digit for a SECOND consecutive quarter. Two in a row means the story has genuinely turned from price to '
+ 'volume; one is noise. The 30 Sep rung is unchanged at 4,000 on the same bit-growth test plus gross margin >=80%. '
+ "Total scheduled 7,418.42 = exactly the room. || ON THE 'SOLD OUT' HEADLINE, WHICH IS THE REASON THE STOCK IS RUNNING "
+ '- it is weaker evidence than it looks. The claim that all 2027 DRAM and HBM capacity at Samsung, SK hynix and Micron '
+ "is booked traces to DigiTimes citing 'industry insiders' (Aug 4, 2026), NOT to a Micron disclosure; the same report "
+ 'mentions long-term agreements of up to five years but states nothing about whether these are firm volume '
+ "commitments, prepayments, or non-binding. Micron's own language in its prepared remarks is narrower: 'We expect "
+ "tight conditions to persist beyond calendar 2027' - a statement about DURATION, not about being sold out. || ⚠️ THE "
+ 'DISTINCTION THAT MATTERS: being sold out is about ALLOCATION, not PRICE. Fully committed capacity does not stop '
+ 'contracts repricing lower at renewal, and TrendForce has DRAM contract price growth decelerating from +90-95% (1Q26) '
+ "to +58-63% (2Q26) to +13-18% (3Q26). Micron's own CFO disclosed DRAM bits up 'low-single-digit percentage range' "
+ "while prices rose in the 'low-60s' - roughly 95% of revenue growth is price. FY2023 remains the precedent: revenue "
+ 'halved from 30,758m to 15,540m and gross margin went NEGATIVE 9.1% on a 5.83bn loss. || CREDIT WHERE DUE - the '
+ 'source post was responsibly balanced, naming cyclicality, a possible supply glut, competition from SK hynix and '
+ "Samsung, and valuation risk after the rally. Its '+200% from ~315' is an understatement: Jan 2 295.13 to the 1,255 "
+ 'high is +325.2%. || A TRIM IS NOW A LIVE OPTION, RECORDED NOT RECOMMENDED. Analyst fair value spans 361 to 2,200 '
+ 'across 45 analysts - a 6x spread, which IS the cycle uncertainty made visible. Taking something off the table before '
+ "Sep 30 is a legitimate choice and Salee's to make. Added as a standing HOLD line on the Schedule tab so it is "
+ "visible rather than forgotten. || Sep 5, 2026 - BOARD BROUGHT TO EXACTLY 1,000,000 at Salee's instruction to follow "
+ 'the standing budget recommendations. Two budgets withdrawn, 5,000 each, both ZERO deployed so no position is '
+ 'stranded and no money moves. Assigned budget 1,010,000 -> 1,000,000, i.e. 100.00% of target for the first time since '
+ 'LHX and FPS were added. Unfilled room 412,694.31 -> 402,694.31. || (1) ZS ZSCALER - budget 5,000 -> None. Flagged as '
+ 'the standing trim candidate on four separate occasions and the reason is now explicit in the data: it is the ONLY '
+ 'LOSS-MAKING name of the three cybersecurity holdings, net margin -1.88% and ROE -2.43%, against PANW and CRWD which '
+ 'are both already deployed and both showing large gains (+94% and +120% respectively). Forward P/E 36.55 with a PEG '
+ 'of 1.39. Group 15 Cybersecurity 25,000 -> 20,000, which is still 2x its deployed 7,675. CONSEQUENCE: ZS was a 5,000 '
+ 'line in TRANCHE 1 of the deployment plan, so Tranche 1 falls 75,697 -> 70,697 and the whole plan 197,311 -> 192,311. '
+ 'The buffer rises correspondingly. || (2) AMPX AMPRIUS TECHNOLOGIES - budget 5,000 -> None. Net margin -43.98% and '
+ 'ROE -44.16% on a 9.89 share price; revenue growth of 172.6% is off a very small base. It was the fifth name in group '
+ '8 Defence, Drones & Public Safety, behind PLTR (5,533 deployed), AVAV (3,758), ONDS (2,031) and LHX (5,000 budgeted '
+ "at Salee's own instruction). Group 8 budget 30,000 -> 25,000. Nothing was deployed and no thesis was ever written "
+ 'for it. || WHY THESE TWO AND NOT OTHERS - every other zero-deployed budget was protected for a stated reason: V and '
+ 'MCD are dated Tranche 1 lines; APP, PL, LUNR, FPS and LHX all carry explicit triggers set within the last three '
+ "days; IONQ is the board's ONLY quantum name, so cutting it would delete a whole theme rather than trim a duplicate; "
+ 'CAT and AEP are profitable industrials (ROE 56.97% and 10.13%). ZS and AMPX were the only zero-deployed budgets that '
+ 'were BOTH loss-making AND redundant inside an already-funded group. || CONSIDERED AND REJECTED - ONDS was the other '
+ "candidate on thesis grounds (previously recorded as carrying 'substantial doubt' language and +156% dilution), but "
+ 'it has 2,030.54 deployed, so trimming it would have been a partial cut rather than a clean withdrawal, and its board '
+ 'fields look internally suspect (pm 251.92%, roe 42.95% sit oddly against that thesis). Flagged for the fundamentals '
+ 'job to re-verify rather than acted on with data I do not trust. It remains the next candidate if the target is ever '
+ 'cut below 1,000,000. || Held positions 52 and held cost 597,305.69 UNCHANGED. AI concentration unchanged at the held '
  'level - this removes future headroom, not money. Board 181 tickers. || Sep 5, 2026 - THREE APPROVED BOARD ACTIONS '
  "EXECUTED TOGETHER at Salee's instruction. || (1) SPACE FUNDED BY TRIMMING TWO ON-HOLD AI-CORE NAMES. ALAB 15,000 -> "
  '7,000 (-8,000) and LITE 20,000 -> 13,000 (-7,000); both budgets remain ABOVE their deployed cost (ALAB 3,805.47, '
@@ -5322,37 +5328,6 @@ STOCKS = [{'an': 83,
   'roe': 11.31,
   'roi': 23.25,
   't': 'SHOP'},
- {'an': 61,
-  'ath': 98.51,
-  'budget': None,
-  'capexB': 0.308,
-  'eps': 4.58,
-  'epsG': -22.49,
-  'ex': 'NYSE',
-  'fcfB': 10.12,
-  'fpe': 16.29,
-  'fvAvg': 102.25,
-  'fvMax': 125,
-  'fvMin': 72,
-  'g': 19,
-  'gm': 40.75,
-  'hi52': 101.99,
-  'jan2': 85.44,
-  'lo52': 65.41,
-  'mcapB': 154.2177,
-  'name': 'Uber Technologies',
-  'pe': 14.93,
-  'peg': 0.51,
-  'pm': 17.34,
-  'price': 75.76,
-  'ps': 2.6,
-  'pxd': '2026-09-04',
-  'r40': 35.0,
-  'revB': 55.23,
-  'revG': 16.68,
-  'roe': 37.16,
-  'roi': 19.18,
-  't': 'UBER'},
  {'an': 38,
   'ath': 231.8,
   'budget': None,
@@ -5415,37 +5390,6 @@ STOCKS = [{'an': 83,
   'roe': 266.44,
   'roi': 119.64,
   't': 'APP'},
- {'an': 24,
-  'ath': 2560.05,
-  'budget': None,
-  'capexB': 1.34,
-  'eps': 37.87,
-  'epsG': -6.81,
-  'ex': 'NASDAQ',
-  'fcfB': 11.82,
-  'fpe': 45.15,
-  'fvAvg': 2215.0,
-  'fvMax': 2800,
-  'fvMin': 1750,
-  'g': 19,
-  'gm': 49.47,
-  'hi52': 2548.5,
-  'jan2': 2178.41,
-  'lo52': 1495.0,
-  'mcapB': 100.3042,
-  'name': 'MercadoLibre',
-  'pe': 47.96,
-  'peg': 1.54,
-  'pm': 6.04,
-  'price': 1978.36,
-  'ps': 2.89,
-  'pxd': '2026-09-04',
-  'r40': 79.28,
-  'revB': 31.8,
-  'revG': 42.11,
-  'roe': 31.26,
-  'roi': 16.68,
-  't': 'MELI'},
  {'an': 29,
   'ath': 196.05,
   'budget': None,
@@ -5508,37 +5452,6 @@ STOCKS = [{'an': 83,
   'roe': -0.24,
   'roi': 1.98,
   't': 'ZETA'},
- {'an': 7,
-  'ath': 22.17,
-  'budget': None,
-  'capexB': 0.02787,
-  'eps': -0.38,
-  'epsG': None,
-  'ex': 'NASDAQ',
-  'fcfB': -0.14238,
-  'fpe': None,
-  'fvAvg': 12.86,
-  'fvMax': 17,
-  'fvMin': 8,
-  'g': 19,
-  'gm': 42.29,
-  'hi52': 22.17,
-  'jan2': None,
-  'lo52': 5.65,
-  'mcapB': 3.1415,
-  'name': 'SoundHound AI',
-  'pe': None,
-  'peg': None,
-  'pm': -67.45,
-  'price': 6.74,
-  'ps': 15.41,
-  'pxd': '2026-09-04',
-  'r40': None,
-  'revB': 0.2032,
-  'revG': 54.6,
-  'roe': -32.24,
-  'roi': -28.31,
-  't': 'SOUN'},
  {'an': 28,
   'ath': 1073.46,
   'budget': None,
@@ -6040,9 +5953,7 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'AFRM': {'budget': None, 'cost': None, 'shares': None},
  'NU': {'budget': None, 'cost': None, 'shares': None},
  'SHOP': {'budget': None, 'cost': None, 'shares': None},
- 'MELI': {'budget': None, 'cost': None, 'shares': None},
  'SE': {'budget': 5000.0, 'cost': None, 'shares': None},
- 'UBER': {'budget': None, 'cost': None, 'shares': None},
  'CRWD': {'budget': 10000, 'cost': 3914.12, 'shares': 40},
  'PANW': {'budget': 10000, 'cost': 3760.62, 'shares': 22},
  'ZS': {'budget': None, 'cost': None, 'shares': None},
@@ -6072,7 +5983,6 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'TMDX': {'budget': None, 'cost': None, 'shares': None},
  'CRSP': {'budget': None, 'cost': None, 'shares': None},
  'NRG': {'budget': None, 'cost': None, 'shares': None},
- 'SOUN': {'budget': None, 'cost': None, 'shares': None},
  'UUUU': {'budget': None, 'cost': None, 'shares': None},
  'LEU': {'budget': None, 'cost': None, 'shares': None},
  'MYRG': {'budget': None, 'cost': None, 'shares': None},
@@ -7066,7 +6976,6 @@ THBFX = {'GOOGL': 32.2446,
  'ALAB': 32.4697,
  'QCOM': 32.53,
  'TTD': 32.12,
- 'MELI': 32.25,
  'APH': 32.34,
  'VST': 32.9329,
  'GEV': 32.66,
@@ -7171,9 +7080,7 @@ M3 = {'GOOGL': {'pfcf': 72.54, 'ev': 21.6, 'de': 0.18},
  'AFRM': {'pfcf': 32.41, 'ev': 49.35, 'de': 2.4},
  'NU': {'pfcf': None, 'ev': None, 'de': None},
  'SHOP': {'pfcf': 69.76, 'ev': 84.45, 'de': 0.01},
- 'MELI': {'pfcf': 7.73, 'ev': 24.88, 'de': 1.7},
  'SE': {'pfcf': 17.13, 'ev': 33.08, 'de': 0.32},
- 'UBER': {'pfcf': 14.14, 'ev': 20.39, 'de': 0.52},
  'APLD': {'pfcf': None, 'ev': None, 'de': 2.9},
  'CIFR': {'pfcf': None, 'ev': None, 'de': 9.7},
  'HUT': {'pfcf': None, 'ev': None, 'de': 0.25},
@@ -7209,7 +7116,6 @@ M3 = {'GOOGL': {'pfcf': 72.54, 'ev': 21.6, 'de': 0.18},
  'TMDX': {'pfcf': 34.32, 'ev': 26.33, 'de': 1.67},
  'CRSP': {'pfcf': None, 'ev': None, 'de': 0.45},
  'NRG': {'pfcf': 72.09, 'ev': 12.68, 'de': 4.83},
- 'SOUN': {'pfcf': None, 'ev': None, 'de': 0.01},
  'UUUU': {'pfcf': None, 'ev': None, 'de': 0.85},
  'LEU': {'pfcf': None, 'ev': 179.64, 'de': 1.39},
  'MYRG': {'pfcf': 27.17, 'ev': 17.56, 'de': 0.09},
