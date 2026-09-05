@@ -3,10 +3,37 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Sep 3, 2026 - close. Daily price refresh: 180 of 182 tickers brought to the Thursday Sep 3, 2026 close (price, '
- "mcapB, pxd; mcapB scaled by each ticker's exact price ratio; FPS and VPG only to their verified Sep 2 close - their "
- 'Sep 3 pages never posted). METHOD per playbook: stockanalysis.com quote page taken only when stamped "Sep 3, 2026, '
- '4:00 PM EDT" AND its stated previous close tied to the Sep 2 close; partial-session /history/ rows discarded '
+ASOF = ("Sep 5, 2026 - BRAZIL REMOVED FROM THE ALLOCATION at Salee's explicit instruction. NU (Nu Holdings) keeps its board "
+ 'row and all research, but its 5,000 budget is withdrawn, so it cannot be bought. Group 14 Digital Fintech goes '
+ '10,000 -> 5,000 (V only). Total assigned budget 1,010,000 -> 1,005,000. Tranche 1 of the deployment plan falls '
+ '80,697 -> 75,697; the whole plan 202,311 -> 197,311; buffer ~11,747 -> ~16,747. || THE FACTS DO NOT SUPPORT THE '
+ 'STATED REASON, AND THIS IS RECORDED HONESTLY. Salee cited Brazilian economy, inflation and currency. All three '
+ 'currently point the other way: IPCA 4.44% (Jul 2026) sits INSIDE the 3.0% +/-1.5pp tolerance band, and the Aug '
+ 'IPCA-15 preview showed outright monthly DEFLATION of -0.40% with the 12-month rate easing to 4.24%; the Selic is '
+ 'being CUT not raised - four consecutive 25bp cuts in 2026 taking it 15.00% -> 14.00%, the last unanimous 7-0 on Aug '
+ '5; GDP grew +0.5% QoQ and +2.0% YoY in Q2 2026, above expectations; and the real APPRECIATED against the dollar, '
+ "+6.1% over 12 months on BCB PTAX and +3.4% on the Fed's H.10, leaving it 1.4% STRONGER than five years ago. On "
+ 'identical Fed H.10 dates the Brazilian real (+3.4%) outperformed BOTH the Taiwan dollar (-3.5%) and the Thai baht '
+ "(-3.4%) - Salee's own currency weakened more than the one he is avoiding. || TWO REAL CONCERNS EXIST, NEITHER ON HIS "
+ 'LIST - (1) general government gross debt has climbed without interruption from 75.49% of GDP in Jan 2025 to 82.51% '
+ 'in Jul 2026, nearly 4pp of that in 2026 alone; (2) Brazil is BELOW investment grade at all three agencies (Fitch BB, '
+ "Moody's Ba1, S&P BB/B, all Stable), and a general election falls on Oct 4 2026 with a runoff Oct 25 - Nu's own "
+ 'FY2025 20-F names that election as a risk factor. || NUBANK ITSELF - Brazil is 117.8m of 138.9m customers (84.8%) '
+ 'and 36.4bn of 45.3bn deposits (80.4%); revenue by geography is NOT disclosed. Two disclosed offsets cut against the '
+ "currency fear: Nu's functional AND presentation currency is the US DOLLAR, and real appreciation FLATTERED its "
+ 'reported results (revenue +55.8% in USD vs +39% FX-neutral); and its cost of deposits runs at 88% of the Brazilian '
+ 'interbank rate, so a FALLING Selic mechanically lowers funding cost. The one genuinely deteriorating metric is 90+ '
+ 'NPL at 6.9%, up 35bp QoQ and 40bp YoY, while the leading 15-90 day indicator IMPROVED 16bp to 4.8%. || WHY THE '
+ 'DECISION STILL STANDS - not because Brazil is unstable, but because 5,000 is 0.5% of a 1,000,000 target. Tripling it '
+ 'would add 1% to the portfolio, which cannot justify holding something Salee has no information flow on and cannot '
+ 'monitor. A position too small to matter and too uncomfortable to hold is sold at the wrong moment. Recorded so that '
+ 'the reasoning is not later mistaken for a macro call on Brazil. || MELI (MercadoLibre) is the only other LatAm row '
+ 'on the board and already carries NO budget, so it is already outside the allocation; Salee sold his position '
+ 'earlier. No further action taken. Held positions 52 and held cost 597,305.69 both UNCHANGED - this removes budget, '
+ 'not money. || Sep 3, 2026 - close. Daily price refresh: 180 of 182 tickers brought to the Thursday Sep 3, 2026 close '
+ "(price, mcapB, pxd; mcapB scaled by each ticker's exact price ratio; FPS and VPG only to their verified Sep 2 close "
+ '- their Sep 3 pages never posted). METHOD per playbook: stockanalysis.com quote page taken only when stamped "Sep 3, '
+ '2026, 4:00 PM EDT" AND its stated previous close tied to the Sep 2 close; partial-session /history/ rows discarded '
  'throughout (MCHP history close 72.74 above its own high 72.65 - internally impossible; CGNX history close 58.90 '
  'below its own low 59.21 - impossible; YUM/MMM/ROK/SOUN/IBM/FN/PENG/OKTA/S/CCJ/UUUU/NU/CRCL history rows were '
  'low-volume partial captures, quote page used). Intraday-stamped quote pages for ON (3:09 PM), SITM (2:13 PM), MTSI '
@@ -5908,7 +5935,7 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'HOOD': {'budget': None, 'cost': None, 'shares': None},
  'SOFI': {'budget': None, 'cost': None, 'shares': None},
  'AFRM': {'budget': None, 'cost': None, 'shares': None},
- 'NU': {'budget': 5000, 'cost': None, 'shares': None},
+ 'NU': {'budget': None, 'cost': None, 'shares': None},
  'SHOP': {'budget': None, 'cost': None, 'shares': None},
  'MELI': {'budget': None, 'cost': None, 'shares': None},
  'SE': {'budget': 5000.0, 'cost': None, 'shares': None},
