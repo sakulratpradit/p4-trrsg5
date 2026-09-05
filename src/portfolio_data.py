@@ -3,23 +3,48 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ("Sep 5, 2026 - BOARD BROUGHT TO EXACTLY 1,000,000 at Salee's instruction to follow the standing budget "
- 'recommendations. Two budgets withdrawn, 5,000 each, both ZERO deployed so no position is stranded and no money '
- 'moves. Assigned budget 1,010,000 -> 1,000,000, i.e. 100.00% of target for the first time since LHX and FPS were '
- 'added. Unfilled room 412,694.31 -> 402,694.31. || (1) ZS ZSCALER - budget 5,000 -> None. Flagged as the standing '
- 'trim candidate on four separate occasions and the reason is now explicit in the data: it is the ONLY LOSS-MAKING '
- 'name of the three cybersecurity holdings, net margin -1.88% and ROE -2.43%, against PANW and CRWD which are both '
- 'already deployed and both showing large gains (+94% and +120% respectively). Forward P/E 36.55 with a PEG of 1.39. '
- 'Group 15 Cybersecurity 25,000 -> 20,000, which is still 2x its deployed 7,675. CONSEQUENCE: ZS was a 5,000 line in '
- 'TRANCHE 1 of the deployment plan, so Tranche 1 falls 75,697 -> 70,697 and the whole plan 197,311 -> 192,311. The '
- 'buffer rises correspondingly. || (2) AMPX AMPRIUS TECHNOLOGIES - budget 5,000 -> None. Net margin -43.98% and ROE '
- '-44.16% on a 9.89 share price; revenue growth of 172.6% is off a very small base. It was the fifth name in group 8 '
- 'Defence, Drones & Public Safety, behind PLTR (5,533 deployed), AVAV (3,758), ONDS (2,031) and LHX (5,000 budgeted at '
- "Salee's own instruction). Group 8 budget 30,000 -> 25,000. Nothing was deployed and no thesis was ever written for "
- 'it. || WHY THESE TWO AND NOT OTHERS - every other zero-deployed budget was protected for a stated reason: V and MCD '
- 'are dated Tranche 1 lines; APP, PL, LUNR, FPS and LHX all carry explicit triggers set within the last three days; '
- "IONQ is the board's ONLY quantum name, so cutting it would delete a whole theme rather than trim a duplicate; CAT "
- 'and AEP are profitable industrials (ROE 56.97% and 10.13%). ZS and AMPX were the only zero-deployed budgets that '
+ASOF = ('Sep 6, 2026 - MU STRATEGY REVISED. Micron closed at 1,016.59 on Sep 4, through the 1,000 level, +244.5% year-to-date '
+ "from a Jan 2 base of 295.13 and 19.0% below its 1,255 high. Salee's position - 35.45 shares at an average of 636.998 "
+ '- is now worth ~36,038 for a gain of ~13,457, up 59.6%. Room unchanged at 7,418.42 on a 30,000 budget; 3.78% of the '
+ 'book. || ⚠️ A FLAW IN MY OWN PLAN, CORRECTED. The standing MU limit order at 750 now sits 26.2% BELOW the market. It '
+ 'would almost certainly never fill, and if it did, a 26% collapse would be a reason to RE-UNDERWRITE the position, '
+ 'not to buy automatically. A rule that cannot fire is not a rule. It has been DELETED and replaced with an '
+ 'evidence-based second rung: 3,418.42 at the Q1 FY2027 print (~mid-December), deployable ONLY if DRAM bit shipments '
+ 'grow double-digit for a SECOND consecutive quarter. Two in a row means the story has genuinely turned from price to '
+ 'volume; one is noise. The 30 Sep rung is unchanged at 4,000 on the same bit-growth test plus gross margin >=80%. '
+ "Total scheduled 7,418.42 = exactly the room. || ON THE 'SOLD OUT' HEADLINE, WHICH IS THE REASON THE STOCK IS RUNNING "
+ '- it is weaker evidence than it looks. The claim that all 2027 DRAM and HBM capacity at Samsung, SK hynix and Micron '
+ "is booked traces to DigiTimes citing 'industry insiders' (Aug 4, 2026), NOT to a Micron disclosure; the same report "
+ 'mentions long-term agreements of up to five years but states nothing about whether these are firm volume '
+ "commitments, prepayments, or non-binding. Micron's own language in its prepared remarks is narrower: 'We expect "
+ "tight conditions to persist beyond calendar 2027' - a statement about DURATION, not about being sold out. || ⚠️ THE "
+ 'DISTINCTION THAT MATTERS: being sold out is about ALLOCATION, not PRICE. Fully committed capacity does not stop '
+ 'contracts repricing lower at renewal, and TrendForce has DRAM contract price growth decelerating from +90-95% (1Q26) '
+ "to +58-63% (2Q26) to +13-18% (3Q26). Micron's own CFO disclosed DRAM bits up 'low-single-digit percentage range' "
+ "while prices rose in the 'low-60s' - roughly 95% of revenue growth is price. FY2023 remains the precedent: revenue "
+ 'halved from 30,758m to 15,540m and gross margin went NEGATIVE 9.1% on a 5.83bn loss. || CREDIT WHERE DUE - the '
+ 'source post was responsibly balanced, naming cyclicality, a possible supply glut, competition from SK hynix and '
+ "Samsung, and valuation risk after the rally. Its '+200% from ~315' is an understatement: Jan 2 295.13 to the 1,255 "
+ 'high is +325.2%. || A TRIM IS NOW A LIVE OPTION, RECORDED NOT RECOMMENDED. Analyst fair value spans 361 to 2,200 '
+ 'across 45 analysts - a 6x spread, which IS the cycle uncertainty made visible. Taking something off the table before '
+ "Sep 30 is a legitimate choice and Salee's to make. Added as a standing HOLD line on the Schedule tab so it is "
+ "visible rather than forgotten. || Sep 5, 2026 - BOARD BROUGHT TO EXACTLY 1,000,000 at Salee's instruction to follow "
+ 'the standing budget recommendations. Two budgets withdrawn, 5,000 each, both ZERO deployed so no position is '
+ 'stranded and no money moves. Assigned budget 1,010,000 -> 1,000,000, i.e. 100.00% of target for the first time since '
+ 'LHX and FPS were added. Unfilled room 412,694.31 -> 402,694.31. || (1) ZS ZSCALER - budget 5,000 -> None. Flagged as '
+ 'the standing trim candidate on four separate occasions and the reason is now explicit in the data: it is the ONLY '
+ 'LOSS-MAKING name of the three cybersecurity holdings, net margin -1.88% and ROE -2.43%, against PANW and CRWD which '
+ 'are both already deployed and both showing large gains (+94% and +120% respectively). Forward P/E 36.55 with a PEG '
+ 'of 1.39. Group 15 Cybersecurity 25,000 -> 20,000, which is still 2x its deployed 7,675. CONSEQUENCE: ZS was a 5,000 '
+ 'line in TRANCHE 1 of the deployment plan, so Tranche 1 falls 75,697 -> 70,697 and the whole plan 197,311 -> 192,311. '
+ 'The buffer rises correspondingly. || (2) AMPX AMPRIUS TECHNOLOGIES - budget 5,000 -> None. Net margin -43.98% and '
+ 'ROE -44.16% on a 9.89 share price; revenue growth of 172.6% is off a very small base. It was the fifth name in group '
+ '8 Defence, Drones & Public Safety, behind PLTR (5,533 deployed), AVAV (3,758), ONDS (2,031) and LHX (5,000 budgeted '
+ "at Salee's own instruction). Group 8 budget 30,000 -> 25,000. Nothing was deployed and no thesis was ever written "
+ 'for it. || WHY THESE TWO AND NOT OTHERS - every other zero-deployed budget was protected for a stated reason: V and '
+ 'MCD are dated Tranche 1 lines; APP, PL, LUNR, FPS and LHX all carry explicit triggers set within the last three '
+ "days; IONQ is the board's ONLY quantum name, so cutting it would delete a whole theme rather than trim a duplicate; "
+ 'CAT and AEP are profitable industrials (ROE 56.97% and 10.13%). ZS and AMPX were the only zero-deployed budgets that '
  'were BOTH loss-making AND redundant inside an already-funded group. || CONSIDERED AND REJECTED - ONDS was the other '
  "candidate on thesis grounds (previously recorded as carrying 'substantial doubt' language and +156% dilution), but "
  'it has 2,030.54 deployed, so trimming it would have been a partial cut rather than a clean withdrawal, and its board '
@@ -7211,7 +7236,7 @@ M3 = {'GOOGL': {'pfcf': 72.54, 'ev': 21.6, 'de': 0.18},
  'AEP': {'pfcf': None, 'ev': 13.24, 'de': 1.61}}
 
 SCHEDULE = {'horizon': 'Sep - Dec 2026',
- 'updated': '2026-09-05',
+ 'updated': '2026-09-06',
  'note': 'Every dated commitment agreed with Salee. Amounts are budget room, not orders. Nothing executes '
          "automatically - each BUY line still needs Salee's instruction on the day. Rebuilt whenever a plan changes; "
          'see the change log for the reason behind each edit.',
@@ -7346,12 +7371,14 @@ SCHEDULE = {'horizon': 'Sep - Dec 2026',
            {'d': '2026-09-30',
             't': 'MU',
             'k': 'earnings',
-            'w': 'Q4 FY2026 + full-year results',
+            'w': 'Q4 FY2026 + full-year results - THE decision point',
             'a': 'DECIDE',
             'amt': 4000,
-            'cond': 'THE NUMBER IS DRAM BIT SHIPMENTS, not revenue. Buy only if bits grow double-digit AND gross '
-                    'margin holds >=80%. Last quarter bits grew low-single-digit while prices rose ~60% - almost all '
-                    'growth is price. FY2023 precedent: revenue halved, gross margin went NEGATIVE.',
+            'cond': "THE NUMBER IS DRAM BIT SHIPMENTS, not revenue and not the 'sold out' headline. Buy only if bits "
+                    'grow double-digit AND gross margin holds >=80%. Last quarter bits grew LOW-SINGLE-DIGIT while '
+                    'prices rose ~60% - almost all growth is price. Being sold out is about ALLOCATION, not price: '
+                    'committed capacity does not stop contracts repricing lower. FY2023 precedent: revenue halved and '
+                    'gross margin went NEGATIVE 9.1%.',
             'c': 'confirmed'},
            {'d': '2026-10-02',
             't': 'GOOGL',
@@ -7564,15 +7591,6 @@ SCHEDULE = {'horizon': 'Sep - Dec 2026',
             'c': 'standing'},
            {'d': '',
             'dl': 'Standing',
-            't': 'MU',
-            'k': 'limit',
-            'w': 'Any close at or below $750',
-            'a': 'LIMIT',
-            'amt': 3418.42,
-            'cond': '-21.7% from the 3 Sep close of $958.16.',
-            'c': 'standing'},
-           {'d': '',
-            'dl': 'Standing',
             't': 'AVGO',
             'k': 'limit',
             'w': 'Any close at or below $310',
@@ -7609,6 +7627,29 @@ SCHEDULE = {'horizon': 'Sep - Dec 2026',
             'amt': 0,
             'cond': 'Forward P/E 35.21, PEG ~3.0, only 5.2% below consensus fair value. A price judgement, not a view '
                     'on the company. $13,562 of room stays unfunded.',
+            'c': 'standing'},
+           {'d': '2026-12-17',
+            't': 'MU',
+            'k': 'earnings',
+            'w': 'Q1 FY2027 results - rung 2',
+            'a': 'DECIDE',
+            'amt': 3418.42,
+            'cond': 'Deploy ONLY if DRAM bits grow double-digit for a SECOND consecutive quarter. Two in a row means '
+                    'the story has genuinely turned from price to volume; one is noise. Replaces the old $750 standing '
+                    'limit, which sat 26% below the 4 Sep close of $1,016.59 and would almost certainly never have '
+                    'filled - a rule that cannot fire is not a rule.',
+            'c': 'estimated'},
+           {'d': '',
+            'dl': 'Standing',
+            't': 'MU',
+            'k': 'watch',
+            'w': 'Position review - up 59.6%, above $1,000',
+            'a': 'HOLD',
+            'amt': 0,
+            'cond': '35.45 shares at $636.998 now worth ~$36,038, a gain of ~$13,457. Up 244.5% YTD as a stock; 19.0% '
+                    'below its $1,255 high. Analyst fair value spans $361 to $2,200 - a 6x spread, which IS the cycle '
+                    'uncertainty made visible. Taking something off the table before 30 Sep is a legitimate option and '
+                    "Salee's call, not a recommendation.",
             'c': 'standing'}]}
 
 METRICS3 = M3  # alias: per-ticker pfcf / ev (EV/EBITDA) / de (Debt/Equity)
