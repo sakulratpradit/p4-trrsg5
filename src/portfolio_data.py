@@ -3,17 +3,26 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Sep 6, 2026 - WEEKLY REFRESH AND INTEGRITY AUDIT. The Sep 4 daily job reverted twelve >=6% movers it could not '
- 'second-source before its search budget ran out; this weekly run re-verified them. TEN CONFIRMED against a second '
- 'independent dated source and applied at the Friday Sep 4 close with --allow, mcapB/pe/fpe/ps/peg rescaled by the '
- "exact price ratio per convention: SNDK 1,740.00 +11.90% (Google Finance 'Closed Sep 4, 4:00 PM GMT-4' agrees with "
- 'stockanalysis to the cent), SKHY 177.00 +8.14% (GF + stockanalysis agree; the 24/7 Wall St intraday 174.38 was '
- 'pre-close), BE 252.87 +7.35% (Motley Fool article of Sep 5 quotes 252.87 +17.32 exactly), KLAC 185.60 +7.32% (GF '
- 'concurs, prev close ties to 172.94), IREN 44.68 +7.27% (GF dated close, +3.03 ties to the 41.65 board value), ADBE '
- '266.51 -6.73% (24/7 Wall St Sep 4 CEO-succession piece quotes 266.51 -6.73% verbatim; GuruFocus concurs on a ~6-7% '
- 'Friday fall), FPS 31.35 +6.56% off the Sep 2 close (Motley Fool at-close quote; GF intraday 31.44 at 11:29 AM '
- 'concurs on level - accepted on the HNGE precedent, caveat recorded), SITM 612.09 +6.55% (Fool quote page shows '
- '612.09 dated Sep 4 exactly, CAVEAT: its own day-change figure +1.07% implies a different Sep 3 close than the '
+ASOF = ("Sep 6, 2026 - RKLB BUY PLAN RESTRUCTURED ON THE SCHEDULE TAB at Salee's instruction, replacing the single Tranche-2 "
+ 'line (8,057.42 dated Oct 9) with three rungs totalling exactly the room: (1) LIMIT 2,000 at any close <=55; (2) '
+ 'TRIGGER 2,000 on the Iridium financing pricing day, deployable only if total equity dilution <=15% - the $8.0bn '
+ "deal's $3.6bn bridge loan is the live overhang (S-4 filed Aug 13, 'capital strategy underway'); (3) TRIGGER 4,057.42 "
+ "after de-risking - a successful Neutron first flight (the 'Q4 2026' date is pad delivery, not launch) or deal close "
+ "on sane terms. Rationale recorded: Berenberg's Sep 3 initiation (Buy, PT 83, 'most compelling and differentiated "
+ "long-term asset in the space sector') is a real note but sits BELOW the 18-analyst mean of 112.94 - a conservative "
+ 'Buy, and no reason to chase a +12% day. Position 23 sh at 84.46 avg (-24%); the plan forbids averaging down beyond '
+ 'rung 1 merely to repair the lot. The Nov 9 RKLB earnings WATCH row is unchanged. No prices, budgets, positions or '
+ 'other tabs touched. || Sep 6, 2026 - WEEKLY REFRESH AND INTEGRITY AUDIT. The Sep 4 daily job reverted twelve >=6% '
+ 'movers it could not second-source before its search budget ran out; this weekly run re-verified them. TEN CONFIRMED '
+ 'against a second independent dated source and applied at the Friday Sep 4 close with --allow, mcapB/pe/fpe/ps/peg '
+ "rescaled by the exact price ratio per convention: SNDK 1,740.00 +11.90% (Google Finance 'Closed Sep 4, 4:00 PM "
+ "GMT-4' agrees with stockanalysis to the cent), SKHY 177.00 +8.14% (GF + stockanalysis agree; the 24/7 Wall St "
+ 'intraday 174.38 was pre-close), BE 252.87 +7.35% (Motley Fool article of Sep 5 quotes 252.87 +17.32 exactly), KLAC '
+ '185.60 +7.32% (GF concurs, prev close ties to 172.94), IREN 44.68 +7.27% (GF dated close, +3.03 ties to the 41.65 '
+ 'board value), ADBE 266.51 -6.73% (24/7 Wall St Sep 4 CEO-succession piece quotes 266.51 -6.73% verbatim; GuruFocus '
+ 'concurs on a ~6-7% Friday fall), FPS 31.35 +6.56% off the Sep 2 close (Motley Fool at-close quote; GF intraday 31.44 '
+ 'at 11:29 AM concurs on level - accepted on the HNGE precedent, caveat recorded), SITM 612.09 +6.55% (Fool quote page '
+ 'shows 612.09 dated Sep 4 exactly, CAVEAT: its own day-change figure +1.07% implies a different Sep 3 close than the '
  "board's 574.47 - price corroborated, prior-day linkage not), NRG 119.02 +6.42% (GF dated close + Fool concur, open "
  "111.29 ties to the board's 111.84 Sep 3 value), STX 849.28 +6.34% (GF dated close +50.67 ties exactly). ONE NOT "
  'CONFIRMED: PENG - GF still shows the Sep 3 close 48.63, Yahoo is stuck at Sep 1, CNN unusable; the pending 51.76 '
@@ -5736,12 +5745,14 @@ M3 = {'GOOGL': {'pfcf': 72.54, 'ev': 21.6, 'de': 0.18},
  'AEP': {'pfcf': None, 'ev': 13.24, 'de': 1.61}}
 
 SCHEDULE = {'horizon': 'Sep - Dec 2026',
- 'updated': '2026-09-05',
- 'note': "Sep 5, 2026: board focused at Salee's instruction - 49 watchlist names removed (181 -> 132) and six holdings "
-         'marked for liquidation. Claude does not place trades; the SELL rows are for Salee to execute at POEMS. Every '
-         'dated commitment agreed with Salee. Amounts are budget room, not orders. Nothing executes automatically - '
-         "each BUY line still needs Salee's instruction on the day. Rebuilt whenever a plan changes; see the change "
-         'log for the reason behind each edit.',
+ 'updated': '2026-09-06',
+ 'note': "Sep 6, 2026: RKLB Tranche-2 single line (8,057.42 dated Oct 9) replaced with a three-rung plan at Salee's "
+         'instruction - a 55 limit, an Iridium-financing trigger, and a post-de-risking trigger; total unchanged at '
+         "exactly the room. || Sep 5, 2026: board focused at Salee's instruction - 49 watchlist names removed (181 -> "
+         '132) and six holdings marked for liquidation. Claude does not place trades; the SELL rows are for Salee to '
+         'execute at POEMS. Every dated commitment agreed with Salee. Amounts are budget room, not orders. Nothing '
+         "executes automatically - each BUY line still needs Salee's instruction on the day. Rebuilt whenever a plan "
+         'changes; see the change log for the reason behind each edit.',
  'items': [{'d': '',
             'dl': 'Standing - no announced date',
             't': 'GOOGL',
@@ -6015,15 +6026,42 @@ SCHEDULE = {'horizon': 'Sep - Dec 2026',
             'amt': 0,
             'cond': 'Monthly signal.',
             'c': 'confirmed'},
-           {'d': '2026-10-09',
+           {'d': '',
+            'dl': 'Standing',
             't': 'RKLB',
-            'k': 'tranche',
-            'w': 'Tranche 2 - Space',
-            'a': 'BUY',
-            'amt': 8057.42,
-            'cond': "Record $2.36bn backlog, 90+ launches. WARNING: Neutron 'Q4 2026' is a PAD DELIVERY target, not a "
-                    'launch date; and the $8.0bn Iridium acquisition uses a $3.6bn bridge loan.',
-            'c': 'planned'},
+            'k': 'limit',
+            'w': 'Rung 1 - any close at or below $55',
+            'a': 'LIMIT',
+            'amt': 2000.0,
+            'cond': '-14.4% from the Sep 4 close of 64.26; the zone a dilution announcement plausibly hands over '
+                    '(52-week range 37.57-151.00). Position is 23 sh at 84.46 avg, -24% - no averaging down beyond '
+                    'this rung just to repair the lot; the market does not know the cost basis.',
+            'c': 'standing'},
+           {'d': '',
+            'dl': 'Standing - S-4 filed Aug 13; financing terms pending',
+            't': 'RKLB',
+            'k': 'trigger',
+            'w': 'Rung 2 - Iridium financing pricing day',
+            'a': 'TRIGGER',
+            'amt': 2000.0,
+            'cond': 'The $8.0bn Iridium deal leans on a $3.6bn bridge loan; the refinancing (equity/converts/term '
+                    'debt) is the live overhang. Deploy on the day terms price ONLY if total equity dilution is <=15% '
+                    'and the thesis is intact. Punitive terms or heavier dilution CUTS this plan instead of funding '
+                    'it.',
+            'c': 'standing'},
+           {'d': '',
+            'dl': 'Standing',
+            't': 'RKLB',
+            'k': 'trigger',
+            'w': 'Rung 3 - pay up AFTER de-risking',
+            'a': 'TRIGGER',
+            'amt': 4057.42,
+            'cond': "Deploy after EITHER a successful Neutron first flight (the stated 'Q4 2026' is a PAD-DELIVERY "
+                    'target, not a launch date) OR the Iridium deal closing on sane terms. Paying 70+ for a de-risked '
+                    "RKLB beats paying 64 for a diluted question mark. Context: Berenberg's Sep 3 initiation (Buy, PT "
+                    '83) sits BELOW the 18-analyst mean of 112.94 - a conservative Buy, not a new bull high. Rungs 1-3 '
+                    'total 8,057.42 = exactly the room on the 10,000 budget.',
+            'c': 'standing'},
            {'d': '2026-10-09',
             't': 'MRVL',
             'k': 'tranche',
