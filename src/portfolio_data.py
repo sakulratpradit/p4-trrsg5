@@ -3,12 +3,35 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ("Sep 6, 2026 - RKLB BUY PLAN RESTRUCTURED ON THE SCHEDULE TAB at Salee's instruction, replacing the single Tranche-2 "
- 'line (8,057.42 dated Oct 9) with three rungs totalling exactly the room: (1) LIMIT 2,000 at any close <=55; (2) '
- 'TRIGGER 2,000 on the Iridium financing pricing day, deployable only if total equity dilution <=15% - the $8.0bn '
- "deal's $3.6bn bridge loan is the live overhang (S-4 filed Aug 13, 'capital strategy underway'); (3) TRIGGER 4,057.42 "
- "after de-risking - a successful Neutron first flight (the 'Q4 2026' date is pad delivery, not launch) or deal close "
- "on sane terms. Rationale recorded: Berenberg's Sep 3 initiation (Buy, PT 83, 'most compelling and differentiated "
+ASOF = ('Sep 6, 2026 - ⚠️ CLAUDE WAS WRONG ABOUT SPCX AND HAS CORRECTED IT. On Sep 5 I told Salee that SPCX was probably a '
+ "bad board entry because 'SpaceX is a private company', and I called the 2,007.68 market cap absurd. BOTH STATEMENTS "
+ 'WERE FALSE AND THE BOARD WAS RIGHT. SpaceX completed its IPO on Jun 12 2026 at 135 dollars a share, trades on Nasdaq '
+ 'under SPCX, and SEC EDGAR confirms CIK 0001181412 with ticker SPCX and exchange Nasdaq. Market cap at the Sep 4 '
+ "close was 2.01 trillion - the board's figure was accurate to three decimal places. My knowledge cutoff is May 2026 "
+ 'and the IPO happened in June; I asserted a post-cutoff fact from memory instead of checking it, which is precisely '
+ "the error I keep flagging in other people's graphics. || ⚠️ CONSEQUENCE FOR QNT: the same Sep 5 flag claimed "
+ 'Quantinuum was private too. That reasoning is now untrustworthy. A cloud session prepared a QNT removal patch on Sep '
+ "6 which has NOT been pushed. DO NOT APPLY IT until QNT's listing status is independently verified. QNT stays on the "
+ "board for now. || ON THE VIRAL GRAPHIC Salee sent ('SpaceX stock eyes 48% rally as Starship Flight 14 and 280 target "
+ "fuel bullish outlook'): the ticker is real and every number traces to a real source, but they are spliced into a "
+ 'claim no analyst makes. The 48% is upside to the CONSENSUS AVERAGE target of 222.32 across 35 analysts. The 280 is '
+ 'Oppenheimer alone (Tim Horan, Sep 2-3, raised from 250), which implies about 87-89% from the 147.95 close - not 48%. '
+ "Putting the two side by side welds a consensus percentage onto an outlier bank's target. The 'BUY' badge is the "
+ "consensus rating; Oppenheimer's own rating is reported as Outperform or Overweight, not Buy. || ⚠️ AND FLIGHT 14 HAS "
+ 'NOT FLOWN. It is no-earlier-than Sep 15 2026 per an FCC filing dated Aug 31. The graphic presents an unflown, '
+ 'un-de-risked test as an accomplished catalyst. The most recent flight is Flight 13 on Jul 24: the ship deployed 20 '
+ 'Starlink V3 satellites and survived splashdown intact for the first time, but the booster relit only 10 of its '
+ 'engines and was destroyed on water impact. That is a partial success, not a clean one. || WHAT THE GRAPHIC OMITS: '
+ 'SPCX at 147.95 trades BELOW its 161 first-day close. Q2 showed a 541m net loss on 15.83bn of AI capex against 2.56bn '
+ 'of AI revenue. Net margin is -35.66%. Analyst targets span 117 to 450 with one house at 800. || NO POSITION, BUDGET '
+ 'OR PRICE CHANGED. No budget assigned to SPCX. Two Schedule rows added: Flight 14 as a WATCH that explicitly is NOT a '
+ 'buy trigger, and a standing row saying wait for a second public quarter before assigning any budget. || Sep 6, 2026 '
+ "- RKLB BUY PLAN RESTRUCTURED ON THE SCHEDULE TAB at Salee's instruction, replacing the single Tranche-2 line "
+ '(8,057.42 dated Oct 9) with three rungs totalling exactly the room: (1) LIMIT 2,000 at any close <=55; (2) TRIGGER '
+ "2,000 on the Iridium financing pricing day, deployable only if total equity dilution <=15% - the $8.0bn deal's "
+ "$3.6bn bridge loan is the live overhang (S-4 filed Aug 13, 'capital strategy underway'); (3) TRIGGER 4,057.42 after "
+ "de-risking - a successful Neutron first flight (the 'Q4 2026' date is pad delivery, not launch) or deal close on "
+ "sane terms. Rationale recorded: Berenberg's Sep 3 initiation (Buy, PT 83, 'most compelling and differentiated "
  "long-term asset in the space sector') is a real note but sits BELOW the 18-analyst mean of 112.94 - a conservative "
  'Buy, and no reason to chase a +12% day. Position 23 sh at 84.46 avg (-24%); the plan forbids averaging down beyond '
  'rung 1 merely to repair the lot. The Nov 9 RKLB earnings WATCH row is unchanged. No prices, budgets, positions or '
@@ -5753,7 +5776,34 @@ SCHEDULE = {'horizon': 'Sep - Dec 2026',
          'execute at POEMS. Every dated commitment agreed with Salee. Amounts are budget room, not orders. Nothing '
          "executes automatically - each BUY line still needs Salee's instruction on the day. Rebuilt whenever a plan "
          'changes; see the change log for the reason behind each edit.',
- 'items': [{'d': '',
+ 'items': [{'d': '2026-09-15',
+            't': 'SPCX',
+            'k': 'event',
+            'a': 'WATCH',
+            'w': 'Starship Flight 14 - first orbital flight attempt (NET, per FCC filing of Aug 31)',
+            'amt': None,
+            'cond': 'NOT a buy trigger. A price target is a 12-month view of the business; it is not a bet on one '
+                    'launch outcome. Flight 13 (Jul 24) already succeeded on the ship - 20 Starlink V3 satellites '
+                    'deployed, first intact splashdown - while Super Heavy relit only 10 engines and was destroyed on '
+                    'water impact. A clean Flight 14 removes a known risk; it does not revalue a 2-trillion-dollar '
+                    'company by 48%. Watch it for the booster, not for the stock.',
+            'c': 'estimated'},
+           {'d': '',
+            'dl': 'Standing - needs a second public quarter',
+            't': 'SPCX',
+            'k': 'thesis',
+            'a': 'WATCH',
+            'w': 'Whether to open a position at all - no budget assigned',
+            'amt': None,
+            'cond': 'IPO was Jun 12 2026 at 135; only ONE public quarter exists (10-Q filed Aug 4). Q2 showed a 541m '
+                    'net loss on 15.83bn of AI capex against 2.56bn of AI revenue. Net margin -35.66%, forward P/E '
+                    '48.4. Analyst targets run 117 to 450 with Raymond James at 800 - a spread that wide IS the '
+                    'uncertainty made visible, the same pattern flagged on MU. Morningstar published that the company '
+                    'is worth less than half its IPO valuation. Also note SPCX absorbed xAI in the Feb 2026 merger, so '
+                    'buying it ADDS to an AI book already at ~82% concentration. Wait for a second public quarter '
+                    'before assigning any budget.',
+            'c': 'standing'},
+           {'d': '',
             'dl': 'Standing - no announced date',
             't': 'GOOGL',
             'k': 'competitive',
