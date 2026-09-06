@@ -3,44 +3,78 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ("Sep 5, 2026 - SELLING TAB ADDED at Salee's request as a control sheet for the liquidation programme. It carries, per "
- "name: shares, average cost, last close, target price or 'at market', estimated net proceeds, profit or loss, "
- 'conviction, timing, the full reasoning, what happens to the budget after the sale, and a status of planned / placed '
- '/ filled / cancelled. Estimated proceeds are net of the 8.56 flat POEMS commission - six sales cost 51.36 in total, '
- 'which is why net proceeds are 14,110.13 against 14,161.49 gross, and net profit across the six is 711.69 rather than '
- '763.05. || The sheet reads shares and cost live from the position book, so it cannot drift from the board, and falls '
- 'back to stored values once a position is sold. A SELL DISCIPLINE panel records five standing rules, the first being: '
- 'sell the thesis, not the price - three of the six are at a loss and one is up 112%, and that spread is deliberate. '
- '|| ⚠️ THE TAB STATES PROMINENTLY THAT CLAUDE DOES NOT PLACE TRADES. Every row is an instruction for Salee to execute '
- 'at POEMS; no position, cost or cash figure moves until he reports a fill. || Rows: TSLA and INTC at market (High '
- 'conviction), ONDS at market with a limit if the spread is wide because the stock is thin (High), then IREN at 41.65, '
- 'AAOI at 105.53 and QCOM at 168.74, all Medium and none urgent. || Build note: SELLBOOK was added to the CONSTS list '
- 'in BOTH gen_dashboard.py and extract_data.py. A data block missing from either list is silently wiped on the next '
- 'refresh. Verified by round-trip plus a headless Chromium render - no page errors, no horizontal overflow, all six '
- 'reasoning blocks wrap without clipping. || Sep 5, 2026 - GPT-6 ASTRA ASSESSED (OpenAI, announced Sep 3). Salee asked '
- 'whether it opens a new chapter for AI and who benefits. Five watch/decide rows added to this Schedule. || WHAT IT '
- 'IS: a frontier model, not a new product category - 1,050,000 token context, 10 dollars in / 50 dollars out per '
- "million tokens (a 2.5x price rise), served on OpenAI's API, Azure and AWS Bedrock. The real advance is computer use: "
- "72.6% on OSWorld in about 40 minutes per task versus 65.7% in about 75 minutes for the prior model. || ⚠️ THE 'STEP "
- "CHANGE' CLAIM IS CONTESTED AND SHOULD NOT BE TRADED AS FACT. Epoch AI ranked Astra first across 50+ tests; "
- "Artificial Analysis scored it flat versus its predecessor and BEHIND Anthropic's Claude Fable 5.1. OpenAI's headline "
- '99.9% on ARC-AGI-3 was 62.7% when ARC Prize ran the same model on their own standard harness - a 37-point gap that '
- 'is scaffolding, not model. OpenAI also edited published figures after release (hallucination rate 4.2% to 2% and '
- "back to 4.2%), and Stanford researchers raised 'benchmaxxing' concerns. Against that, Francois Chollet - who built "
- 'the benchmark and has no stake in OpenAI - said progress came about twice as fast as he expected and moved his AGI '
- 'forecast earlier. Genuine disagreement, not a settled result. || ⚠️ THE ANNOUNCEMENT SAYS NOTHING ABOUT CHIPS. Not '
- 'one word about GPUs, silicon, data centres or Stargate. Every compute deal being quoted alongside this news predates '
- 'Astra: NVDA 10GW (Sep 2025), AMD 6GW plus a 160m-share warrant (Oct 2025), the Broadcom-built Jalapeno chip (Jun '
- "2026), AWS 38bn (Nov 2025), ORCL over 300bn (Sep 2025), Azure 250bn with a 27% stake (Oct 2025). 'Buy a chip stock "
- "because of Astra' is a narrative, not a fact - the contracts were signed long before. || ⚠️ AND THE MARKET-REACTION "
- 'STORY IS CONFOUNDED. No sourced attribution of any share-price move to Astra was found. NVDA announced the '
- 'acquisition of Hugging Face for 12.93bn on the SAME DAY. Any Sep 3-4 move cannot be cleanly assigned to Astra, and '
- 'for NVDA the acquisition is plausibly the larger news. || WHERE THE REAL LINK IS: token consumption. Agents running '
- '40-minute autonomous tasks burn far more tokens than chat, at 2.5x the price. That feeds inference silicon, memory, '
- 'interconnect and power over 12-24 months - it does not show up in a two-day price move. Most direct listed '
- 'beneficiaries in this book are MSFT (27% owner of OpenAI, Azure serves Astra), AMZN (Bedrock serves Astra, 38bn '
- 'deal) and ORCL (largest contract, weakest balance sheet). || THE UNDER-OWNED ANGLE IS CYBERSECURITY, and it is the '
- 'only causal chain Astra actually created rather than inherited. First model ever rated Critical for cyber '
+ASOF = ('Sep 6, 2026 - WEEKLY REFRESH AND INTEGRITY AUDIT. The Sep 4 daily job reverted twelve >=6% movers it could not '
+ 'second-source before its search budget ran out; this weekly run re-verified them. TEN CONFIRMED against a second '
+ 'independent dated source and applied at the Friday Sep 4 close with --allow, mcapB/pe/fpe/ps/peg rescaled by the '
+ "exact price ratio per convention: SNDK 1,740.00 +11.90% (Google Finance 'Closed Sep 4, 4:00 PM GMT-4' agrees with "
+ 'stockanalysis to the cent), SKHY 177.00 +8.14% (GF + stockanalysis agree; the 24/7 Wall St intraday 174.38 was '
+ 'pre-close), BE 252.87 +7.35% (Motley Fool article of Sep 5 quotes 252.87 +17.32 exactly), KLAC 185.60 +7.32% (GF '
+ 'concurs, prev close ties to 172.94), IREN 44.68 +7.27% (GF dated close, +3.03 ties to the 41.65 board value), ADBE '
+ '266.51 -6.73% (24/7 Wall St Sep 4 CEO-succession piece quotes 266.51 -6.73% verbatim; GuruFocus concurs on a ~6-7% '
+ 'Friday fall), FPS 31.35 +6.56% off the Sep 2 close (Motley Fool at-close quote; GF intraday 31.44 at 11:29 AM '
+ 'concurs on level - accepted on the HNGE precedent, caveat recorded), SITM 612.09 +6.55% (Fool quote page shows '
+ '612.09 dated Sep 4 exactly, CAVEAT: its own day-change figure +1.07% implies a different Sep 3 close than the '
+ "board's 574.47 - price corroborated, prior-day linkage not), NRG 119.02 +6.42% (GF dated close + Fool concur, open "
+ "111.29 ties to the board's 111.84 Sep 3 value), STX 849.28 +6.34% (GF dated close +50.67 ties exactly). ONE NOT "
+ 'CONFIRMED: PENG - GF still shows the Sep 3 close 48.63, Yahoo is stuck at Sep 1, CNN unusable; the pending 51.76 '
+ 'single-source print stays UNAPPLIED per the stale-beats-wrong rule and PENG remains at 48.63 with pxd 2026-09-03 '
+ 'showing honestly. Next daily run should confirm it. || AUDIT RESULTS, the checks the daily jobs cannot do. CLEAN: '
+ 'implied share counts (mcapB/price) moved <1% on every name against the Aug 31 weekly build except APH, which doubled '
+ "- the known 2-for-1 split applied in the Sep 4 POEMS reconciliation, correct; no ticker's price is stuck 7+ days "
+ '(worst is PENG at 2 sessions); broker subtotals tie the Sep 4 POEMS screen to the cent - NASDAQ held cost 493,545.18 '
+ '+ NYSE 103,760.51 = 597,305.69; every fill since Jul 28 implies exactly the flat 8.56 POEMS commission (SKHY 8.57 / '
+ "META 8.54 are fractional-share rounding); REALIZED, SOLD and MONTHLY byGroup are mutually consistent - July's "
+ 'byGroup ties byStock exactly under sale-time groups. FLAGGED, NOT FIXED: (1) NBIS realized gain is 1,404.52 in '
+ 'REALIZED but 1,404.51 in SOLD and MONTHLY - one cent, TOTALS ties to REALIZED; needs the POEMS figure to settle '
+ 'which. (2) Realized P&L attributes to SALE-TIME groups: IREN g13, ORCL g10, SNPS g10, APP g10 predate the Aug 31 '
+ "reclassification sweep (now g21/g13/g1/g19), so per-group realized figures reflect history, not today's grouping - "
+ 'semantics to be aware of, not corruption. (3) SNDK carries ath 1,804.00 BELOW hi52 2,354.39 and SITM ath 901.48 '
+ 'fractionally below hi52 901.81 - an all-time high cannot sit under a 52-week high unless ath means highest CLOSE and '
+ 'hi52 intraday; convention should be pinned and the two values re-sourced. (4) SNDK lo52 40.10 against a 1,740 price '
+ 'is a 43x 52-week range - plausible for the Feb-2025 spin-off in a memory supercycle but worth one look at POEMS. '
+ 'FIXED THIS RUN: the vestigial STOCKS.budget field had drifted from the authoritative POS budgets on 10 names (NVDA '
+ 'still showed 85,000 vs the 100,000 set Aug 27; FSLR, ONDS, IONQ, V, HUBB, AEP, SE, CAT, IREN showed None vs their '
+ '5,000 POS budgets) - synced to POS, which is what every page component actually reads, so nothing rendered changes. '
+ 'POS, TRADES, CASH, fundamentals untouched. IREN NOTE FOR THE SELLING TAB: the confirmed 44.68 close is 7.3% ABOVE '
+ 'the 41.65 carried on the IREN sell row; estimated proceeds there are now understated - no action taken, Salee '
+ "executes. || Sep 5, 2026 - SELLING TAB ADDED at Salee's request as a control sheet for the liquidation programme. It "
+ "carries, per name: shares, average cost, last close, target price or 'at market', estimated net proceeds, profit or "
+ 'loss, conviction, timing, the full reasoning, what happens to the budget after the sale, and a status of planned / '
+ 'placed / filled / cancelled. Estimated proceeds are net of the 8.56 flat POEMS commission - six sales cost 51.36 in '
+ 'total, which is why net proceeds are 14,110.13 against 14,161.49 gross, and net profit across the six is 711.69 '
+ 'rather than 763.05. || The sheet reads shares and cost live from the position book, so it cannot drift from the '
+ 'board, and falls back to stored values once a position is sold. A SELL DISCIPLINE panel records five standing rules, '
+ 'the first being: sell the thesis, not the price - three of the six are at a loss and one is up 112%, and that spread '
+ 'is deliberate. || ⚠️ THE TAB STATES PROMINENTLY THAT CLAUDE DOES NOT PLACE TRADES. Every row is an instruction for '
+ 'Salee to execute at POEMS; no position, cost or cash figure moves until he reports a fill. || Rows: TSLA and INTC at '
+ 'market (High conviction), ONDS at market with a limit if the spread is wide because the stock is thin (High), then '
+ 'IREN at 41.65, AAOI at 105.53 and QCOM at 168.74, all Medium and none urgent. || Build note: SELLBOOK was added to '
+ 'the CONSTS list in BOTH gen_dashboard.py and extract_data.py. A data block missing from either list is silently '
+ 'wiped on the next refresh. Verified by round-trip plus a headless Chromium render - no page errors, no horizontal '
+ 'overflow, all six reasoning blocks wrap without clipping. || Sep 5, 2026 - GPT-6 ASTRA ASSESSED (OpenAI, announced '
+ 'Sep 3). Salee asked whether it opens a new chapter for AI and who benefits. Five watch/decide rows added to this '
+ 'Schedule. || WHAT IT IS: a frontier model, not a new product category - 1,050,000 token context, 10 dollars in / 50 '
+ "dollars out per million tokens (a 2.5x price rise), served on OpenAI's API, Azure and AWS Bedrock. The real advance "
+ 'is computer use: 72.6% on OSWorld in about 40 minutes per task versus 65.7% in about 75 minutes for the prior model. '
+ "|| ⚠️ THE 'STEP CHANGE' CLAIM IS CONTESTED AND SHOULD NOT BE TRADED AS FACT. Epoch AI ranked Astra first across 50+ "
+ "tests; Artificial Analysis scored it flat versus its predecessor and BEHIND Anthropic's Claude Fable 5.1. OpenAI's "
+ 'headline 99.9% on ARC-AGI-3 was 62.7% when ARC Prize ran the same model on their own standard harness - a 37-point '
+ 'gap that is scaffolding, not model. OpenAI also edited published figures after release (hallucination rate 4.2% to '
+ "2% and back to 4.2%), and Stanford researchers raised 'benchmaxxing' concerns. Against that, Francois Chollet - who "
+ 'built the benchmark and has no stake in OpenAI - said progress came about twice as fast as he expected and moved his '
+ 'AGI forecast earlier. Genuine disagreement, not a settled result. || ⚠️ THE ANNOUNCEMENT SAYS NOTHING ABOUT CHIPS. '
+ 'Not one word about GPUs, silicon, data centres or Stargate. Every compute deal being quoted alongside this news '
+ 'predates Astra: NVDA 10GW (Sep 2025), AMD 6GW plus a 160m-share warrant (Oct 2025), the Broadcom-built Jalapeno chip '
+ "(Jun 2026), AWS 38bn (Nov 2025), ORCL over 300bn (Sep 2025), Azure 250bn with a 27% stake (Oct 2025). 'Buy a chip "
+ "stock because of Astra' is a narrative, not a fact - the contracts were signed long before. || ⚠️ AND THE "
+ 'MARKET-REACTION STORY IS CONFOUNDED. No sourced attribution of any share-price move to Astra was found. NVDA '
+ 'announced the acquisition of Hugging Face for 12.93bn on the SAME DAY. Any Sep 3-4 move cannot be cleanly assigned '
+ 'to Astra, and for NVDA the acquisition is plausibly the larger news. || WHERE THE REAL LINK IS: token consumption. '
+ 'Agents running 40-minute autonomous tasks burn far more tokens than chat, at 2.5x the price. That feeds inference '
+ 'silicon, memory, interconnect and power over 12-24 months - it does not show up in a two-day price move. Most direct '
+ 'listed beneficiaries in this book are MSFT (27% owner of OpenAI, Azure serves Astra), AMZN (Bedrock serves Astra, '
+ '38bn deal) and ORCL (largest contract, weakest balance sheet). || THE UNDER-OWNED ANGLE IS CYBERSECURITY, and it is '
+ 'the only causal chain Astra actually created rather than inherited. First model ever rated Critical for cyber '
  'capability. CRWD and PANW carry only 0.66% and 0.63% of the book with 12,325 of combined room. Rungs added to this '
  "Schedule, both conditional on results, not on the theme. || ON THE 'AI KILLS SAAS' STORY: not substantiated for "
  'Astra. The piece being circulated is dated Feb 10, 2026, seven months before Astra existed. Our own Aug 29 review '
@@ -520,7 +554,7 @@ STOCKS = [{'an': 83,
   't': 'META'},
  {'an': 79,
   'ath': 236.54,
-  'budget': 85000,
+  'budget': 100000,
   'capexB': 7.35,
   'eps': 7.91,
   'epsG': 125.4,
@@ -929,7 +963,7 @@ STOCKS = [{'an': 83,
   'epsG': None,
   'ex': 'NASDAQ',
   'fcfB': 0.08449,
-  'fpe': 40.95,
+  'fpe': 43.63,
   'fvAvg': 862.78,
   'fvMax': 900,
   'fvMin': 800,
@@ -938,14 +972,14 @@ STOCKS = [{'an': 83,
   'hi52': 901.81,
   'jan2': 369.96,
   'lo52': 222.12,
-  'mcapB': 17.2763,
+  'mcapB': 18.4077,
   'name': 'SiTime',
-  'pe': 1226.04,
-  'peg': 0.39,
+  'pe': 1306.33,
+  'peg': 0.42,
   'pm': 3.01,
-  'price': 574.47,
-  'ps': 36.93,
-  'pxd': '2026-09-03',
+  'price': 612.09,
+  'ps': 39.35,
+  'pxd': '2026-09-04',
   'r40': 101.09,
   'revB': 0.46785,
   'revG': 83.03,
@@ -1084,7 +1118,7 @@ STOCKS = [{'an': 83,
   'epsG': 14.29,
   'ex': 'NASDAQ',
   'fcfB': 3.77,
-  'fpe': 41.74,
+  'fpe': 44.8,
   'fvAvg': 234.57,
   'fvMax': 325,
   'fvMin': 150,
@@ -1093,14 +1127,14 @@ STOCKS = [{'an': 83,
   'hi52': 307.37,
   'jan2': 125.97,
   'lo52': 83.22,
-  'mcapB': 225.9056,
+  'mcapB': 242.4429,
   'name': 'KLA Corporation',
-  'pe': 46.43,
-  'peg': 1.75,
+  'pe': 49.83,
+  'peg': 1.88,
   'pm': 35.57,
-  'price': 172.94,
-  'ps': 18.23,
-  'pxd': '2026-09-03',
+  'price': 185.6,
+  'ps': 19.56,
+  'pxd': '2026-09-04',
   'r40': 42.97,
   'revB': 13.58,
   'revG': 15.21,
@@ -1270,7 +1304,7 @@ STOCKS = [{'an': 83,
   'epsG': 185.7,
   'ex': 'NASDAQ',
   'fcfB': 28.3,
-  'fpe': 4.73,
+  'fpe': 5.11,
   'fvAvg': 281.67,
   'fvMax': 281.67,
   'fvMin': 281.67,
@@ -1279,14 +1313,14 @@ STOCKS = [{'an': 83,
   'hi52': 194.8,
   'jan2': None,
   'lo52': 124.8,
-  'mcapB': 992.1037,
+  'mcapB': 1072.8394,
   'name': "SK hynix (NASDAQ ADR, listed Jul 10 '26)",
-  'pe': 17.74,
+  'pe': 19.18,
   'peg': None,
   'pm': 56.89,
-  'price': 163.68,
-  'ps': 10.08,
-  'pxd': '2026-09-03',
+  'price': 177.0,
+  'ps': 10.9,
+  'pxd': '2026-09-04',
   'r40': 116.6,
   'revB': 86.77,
   'revG': 85.0,
@@ -1301,7 +1335,7 @@ STOCKS = [{'an': 83,
   'epsG': None,
   'ex': 'NASDAQ',
   'fcfB': 4.46,
-  'fpe': 8.54,
+  'fpe': 9.56,
   'fvAvg': 2144,
   'fvMax': 3250,
   'fvMin': 1000,
@@ -1310,14 +1344,14 @@ STOCKS = [{'an': 83,
   'hi52': 2354.39,
   'jan2': 244.35,
   'lo52': 40.1,
-  'mcapB': 230.2731,
+  'mcapB': 257.6706,
   'name': 'SanDisk',
-  'pe': 52.99,
-  'peg': 0.05,
+  'pe': 59.29,
+  'peg': 0.06,
   'pm': 34.19,
-  'price': 1554.99,
-  'ps': 17.68,
-  'pxd': '2026-09-03',
+  'price': 1740.0,
+  'ps': 19.78,
+  'pxd': '2026-09-04',
   'r40': 202.8,
   'revB': 13.18,
   'revG': 169.0,
@@ -1332,7 +1366,7 @@ STOCKS = [{'an': 83,
   'epsG': 105.3,
   'ex': 'NASDAQ',
   'fcfB': 3.11,
-  'fpe': 24.98,
+  'fpe': 26.56,
   'fvAvg': 1016,
   'fvMax': 1600,
   'fvMin': 680,
@@ -1341,14 +1375,14 @@ STOCKS = [{'an': 83,
   'hi52': 1145.0,
   'jan2': 286.835,
   'lo52': 138.3,
-  'mcapB': 180.6975,
+  'mcapB': 192.1623,
   'name': 'Seagate Technology',
-  'pe': 52.7,
-  'peg': 0.38,
+  'pe': 56.04,
+  'peg': 0.4,
   'pm': 26.11,
-  'price': 798.61,
-  'ps': 13.59,
-  'pxd': '2026-09-03',
+  'price': 849.28,
+  'ps': 14.45,
+  'pxd': '2026-09-04',
   'r40': 60.2,
   'revB': 12.2,
   'revG': 34.1,
@@ -1853,7 +1887,7 @@ STOCKS = [{'an': 83,
   't': 'AXTI'},
  {'an': 35,
   'ath': 320.95,
-  'budget': None,
+  'budget': 5000,
   'capexB': 0.65562,
   'eps': 16.22,
   'epsG': 38.6,
@@ -2380,7 +2414,7 @@ STOCKS = [{'an': 83,
   't': 'AVAV'},
  {'an': 8,
   'ath': 15.28,
-  'budget': None,
+  'budget': 5000,
   'capexB': 0.003,
   'eps': 0.44,
   'epsG': None,
@@ -2411,7 +2445,7 @@ STOCKS = [{'an': 83,
   't': 'ONDS'},
  {'an': 13,
   'ath': 84.64,
-  'budget': None,
+  'budget': 5000,
   'capexB': 0.02,
   'eps': 0.92,
   'epsG': None,
@@ -2541,7 +2575,7 @@ STOCKS = [{'an': 83,
   'epsG': 11.84,
   'ex': 'NASDAQ',
   'fcfB': 10.28,
-  'fpe': 9.78,
+  'fpe': 9.12,
   'fvAvg': 269.61,
   'fvMax': 380,
   'fvMin': 190,
@@ -2550,14 +2584,14 @@ STOCKS = [{'an': 83,
   'hi52': 376.16,
   'jan2': 333.3,
   'lo52': 190.12,
-  'mcapB': 113.5998,
+  'mcapB': 105.9509,
   'name': 'Adobe',
-  'pe': 14.5,
-  'peg': 0.66,
+  'pe': 13.52,
+  'peg': 0.62,
   'pm': 28.69,
-  'price': 285.75,
-  'ps': 4.0,
-  'pxd': '2026-09-03',
+  'price': 266.51,
+  'ps': 3.73,
+  'pxd': '2026-09-04',
   'r40': 52.3,
   'revB': 25.2,
   'revG': 11.5,
@@ -3124,7 +3158,7 @@ STOCKS = [{'an': 83,
   't': 'APLD'},
  {'an': 62,
   'ath': 364.15,
-  'budget': None,
+  'budget': 5000,
   'capexB': 1.57,
   'eps': 11.47,
   'epsG': 15.38,
@@ -3812,7 +3846,7 @@ STOCKS = [{'an': 83,
   'epsG': None,
   'ex': 'NYSE',
   'fcfB': 0.625,
-  'fpe': 50.45,
+  'fpe': 54.16,
   'fvAvg': 286.2,
   'fvMax': 390,
   'fvMin': 70,
@@ -3821,14 +3855,14 @@ STOCKS = [{'an': 83,
   'hi52': 322.83,
   'jan2': 98.69,
   'lo52': 18.12,
-  'mcapB': 69.3746,
+  'mcapB': 74.4757,
   'name': 'Bloom Energy',
-  'pe': 182.18,
+  'pe': 195.58,
   'peg': None,
   'pm': 7.87,
-  'price': 235.55,
-  'ps': 14.72,
-  'pxd': '2026-09-03',
+  'price': 252.87,
+  'ps': 15.8,
+  'pxd': '2026-09-04',
   'r40': 98.9,
   'revB': 3.113,
   'revG': 91.0,
@@ -3868,7 +3902,7 @@ STOCKS = [{'an': 83,
   't': 'NVT'},
  {'an': 12,
   'ath': 556.18,
-  'budget': None,
+  'budget': 5000,
   'capexB': -0.1668,
   'eps': 16.9,
   'epsG': 9.46,
@@ -3905,7 +3939,7 @@ STOCKS = [{'an': 83,
   'epsG': None,
   'ex': 'NYSE',
   'fcfB': -0.09766,
-  'fpe': 31.24,
+  'fpe': 33.29,
   'fvAvg': 59.9,
   'fvMax': 73,
   'fvMin': 51,
@@ -3914,14 +3948,14 @@ STOCKS = [{'an': 83,
   'hi52': 66.0,
   'jan2': None,
   'lo52': 25.95,
-  'mcapB': 8.9554,
+  'mcapB': 9.5429,
   'name': 'Forgent Power Solutions',
   'pe': None,
-  'peg': 0.47,
+  'peg': 0.5,
   'pm': 2.17,
-  'price': 29.42,
-  'ps': 8.01,
-  'pxd': '2026-09-02',
+  'price': 31.35,
+  'ps': 8.54,
+  'pxd': '2026-09-04',
   'r40': None,
   'revB': 1.196,
   'revG': None,
@@ -4051,7 +4085,7 @@ STOCKS = [{'an': 83,
   'fvMax': 173,
   'fvMin': 129,
   'r40': -15.56,
-  'budget': None},
+  'budget': 5000},
  {'an': 20,
   'ath': 219.82,
   'budget': 10000,
@@ -4091,7 +4125,7 @@ STOCKS = [{'an': 83,
   'epsG': 76.2,
   'ex': 'NYSE',
   'fcfB': 0.348,
-  'fpe': 11.27,
+  'fpe': 11.99,
   'fvAvg': 194.18,
   'fvMax': 267,
   'fvMin': 104,
@@ -4100,14 +4134,14 @@ STOCKS = [{'an': 83,
   'hi52': 189.96,
   'jan2': None,
   'lo52': 108.34,
-  'mcapB': 23.8711,
+  'mcapB': 25.4036,
   'name': 'NRG Energy',
-  'pe': 29.96,
-  'peg': 0.5,
+  'pe': 31.88,
+  'peg': 0.53,
   'pm': 2.56,
-  'price': 111.84,
-  'ps': 0.73,
-  'pxd': '2026-09-03',
+  'price': 119.02,
+  'ps': 0.78,
+  'pxd': '2026-09-04',
   'r40': 13.85,
   'revB': 33.13,
   'revG': 12.8,
@@ -4271,7 +4305,7 @@ STOCKS = [{'an': 83,
   't': 'APP'},
  {'an': 29,
   'ath': 196.05,
-  'budget': None,
+  'budget': 5000,
   'capexB': 0.51,
   'eps': 2.59,
   'epsG': 34.2,
@@ -4333,7 +4367,7 @@ STOCKS = [{'an': 83,
   't': 'ZETA'},
  {'an': 28,
   'ath': 1073.46,
-  'budget': None,
+  'budget': 5000,
   'capexB': 4.58,
   'eps': 23.21,
   'epsG': 18.0,
@@ -4457,13 +4491,13 @@ STOCKS = [{'an': 83,
   't': 'STRL'},
  {'an': 16,
   'ath': 76.87,
-  'budget': None,
+  'budget': 5000,
   'capexB': 4.33,
   'eps': -0.41,
   'epsG': None,
   'ex': 'NASDAQ',
   'fcfB': -2.23,
-  'fpe': 101.29,
+  'fpe': 108.66,
   'fvAvg': 80.93,
   'fvMax': 126,
   'fvMin': 41,
@@ -4472,14 +4506,14 @@ STOCKS = [{'an': 83,
   'hi52': 76.87,
   'jan2': 39.01,
   'lo52': 14.72,
-  'mcapB': 14.7319,
+  'mcapB': 15.8036,
   'name': 'IREN (Iris Energy)',
   'pe': None,
   'peg': None,
   'pm': -99.4,
-  'price': 41.65,
-  'ps': 17.73,
-  'pxd': '2026-09-03',
+  'price': 44.68,
+  'ps': 19.02,
+  'pxd': '2026-09-04',
   'r40': -274.7,
   'revB': 0.707,
   'revG': 41.1,
