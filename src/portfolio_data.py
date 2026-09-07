@@ -3,48 +3,66 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Sep 7, 2026 - SPCX: LOCK-UP CALENDAR IS THE STORY, NOT THE PRICE TARGET. Salee sent two more graphics - one on why '
- "SpaceX chose Boca Chica, one headlined 'Oppenheimer upgraded SPCX to Buy, 280 target'. || ⚠️ THE 280 CALL IS NOT NEW "
- "AND NOT AN UPGRADE. It is the same Timothy Horan note of Sep 2-3 that underpinned the '48% rally' graphic Salee sent "
- 'on Sep 6 - the third presentation of ONE analyst action in three days, each framed as breaking. Oppenheimer '
- "MAINTAINED Outperform; the rating did not change, only the target, from 250 to 280. 'Upgraded to Buy' is wrong on "
- 'both counts. Two other houses were also unchanged in the same window: Morgan Stanley held 300, JP Morgan held 240. '
- '|| ⚠️ THE REASON TO WAIT IS SUPPLY. Per the Jun 11 prospectus, roughly 3.04 BILLION shares come off lock-up between '
- 'Sep and Dec 2026: 319m Sep 9, ~328m Sep 24, ~319m Oct 9, ~319m Oct 24, about 1.3 BILLION on the Q3 earnings trigger '
- "in November, and 455.8m on Dec 8-9. Musk's 6.42bn (48.4%) unlocks separately in Jun 2027. The stock already sits "
- 'BELOW its 161 first-day close at 147.95, and that is with only the early tranches out. Two Schedule rows added: an '
- 'AVOID on the lock-up calendar and a DECIDE on the Q3 print, which is both the second public quarter and the largest '
- 'unlock trigger. Still no budget assigned. || ON THE BOCA CHICA GRAPHIC - the physics is RIGHT and the conclusion is '
- "WRONG. Earth's rotational boost at the pad's 25.9875 N latitude computes to 418.1 m/s against the 418 claimed, and "
- '28,000 km/h is the correct orbital velocity. But Cape Canaveral at 28.608 N gives 408.3 m/s - a difference of just '
- '9.8 m/s, or 0.125% of the 7,778 m/s needed. Latitude was one of thirteen criteria in the 2014 FAA Record of '
- "Decision, alongside safety, accessibility, political stability and privately owned site; SpaceX's own 2014 release "
- "stressed 'the facilitation of doing business in Texas' and local support. || ⚠️ AND THE GRAPHIC IS BEHIND THE FACTS. "
- 'SpaceX is shifting its centre of gravity to Florida: three Starship towers are under construction there (one at '
- 'LC-39A, two at SLC-37), approved cadence is 44 a year at LC-39A plus 76 at SLC-37 against just 25 at Starbase - '
- 'Florida at 120 is 4.8x Texas. Starbase Pad 1 has been offline since Oct 2025 and is not back until late 2026, '
- "leaving Pad 2 the only operational Starship pad on Earth. SpaceX VP Kiko Dontchev on Sep 5: 'From here on, Starlink "
- "missions out of Florida will fly on Starship.' A company abandoning a latitude it supposedly chose for latitude is "
- 'the clearest evidence that latitude was never the deciding factor. || Sep 7, 2026 - WEEKLY REFRESH & INTEGRITY '
- 'AUDIT. Prices verified at the Fri Sep 4 close (US markets closed Mon Sep 7, Labor Day). PENG applied at 51.76 '
- '(+6.44%), the one name the Sep 4 daily job left unconfirmed - second-sourced via stockanalysis.com and Google '
- 'Finance, mcapB scaled to 2.6528 by the same ratio. QNT hi52/lo52 filled (86.79/46.54, stockanalysis.com) - they were '
- 'null on a listed stock. SPCX and QNT listings independently re-verified (SpaceX IPO Jun 12 2026 Nasdaq, Quantinuum '
- 'IPO Jun 2026 Nasdaq; prices/mcaps match the board): the Sep 6 correction stands, the QNT removal patch stays '
- 'unapplied. AUDIT: implied share counts clean (only APH moved, 2-for-1 split Sep 4, expected); no ticker flat 7+ '
- 'days; NASD 493,545.18 + NYSE 103,760.51 = 597,305.69 ties exactly; REALIZED/SOLD/MONTHLY byGroup mutually consistent '
- '(known NBIS 1-cent and sale-time-group semantics unchanged). FLAGGED, NOT FIXED: (1) four Aug 5-7 fills (TSM 4.5sh, '
- 'NVDA 9sh, CRM 10sh, ISRG 5sh) imply ZERO commission - amount equals shares x price exactly, and the per-share prices '
- 'look back-computed from the amount; every other fill since Jul 28 implies the flat 8.56. Either those four amounts '
- 'omit the 8.56 (book cost understated ~34.24 total) or the price field folds commission in - needs the POEMS contract '
- 'notes to settle; TRADES untouched, only Salee changes fills. (2) TOTALS identity drift: investedEver - soldCost - '
- 'heldCost = -9,210.82, was -5,653.61 at the Aug 31 weekly; the -3,557.21 widening this week is roughly the Sep 4 AVGO '
- '+4.5sh reconciliation - investedEverUSD semantics vs booked cost should be pinned. (3) ath<hi52 on 29 names - '
- 'consistent with ath=highest CLOSE vs hi52=intraday, but the convention is still not pinned in the README. pe '
- 'deliberately null on CRWD/FPS (near-zero eps). || Sep 6, 2026 - MSFT RUNG ADDED, closing a genuine gap in the plan. '
- 'Salee asked whether the four largest companies in a viral graphic had any place in the next three months of the '
- 'schedule. Checking it exposed an oversight of mine: GOOGL had a dated tranche (20,524.08 on Nov 19, unlocked by the '
- 'Oct 2 ad-tech judgment), NVDA had a rung plus two standing limits (8,000 on Nov 18, then 7,000 at or below 200 and '
+ASOF = ("Sep 7, 2026 - BUDGET RE-ALLOCATION AT SALEE'S INSTRUCTION. The six names marked for divestment have had their "
+ 'budgets withdrawn and the freed capital redeployed. Allocated budget stays at exactly 1,000,000. || WITHDRAWN '
+ '(-35,000): TSLA 10,000 and INTC, QCOM, AAOI, ONDS and IREN at 5,000 each, all set to no budget. ⚠️ THE POSITIONS ARE '
+ 'STILL HELD until Salee reports the fills, so these six now show cost against a zero budget - that is correct, not an '
+ 'error: it reads as capital committed to names the plan no longer funds. The Selling tab keeps its own snapshot of '
+ 'the old budgets so nothing there is affected. || TIER 3 CONVICTION (+30,000, 10,000 each): AVGO 40,000 to 50,000, '
+ 'ASML 30,000 to 40,000, MU 30,000 to 40,000. ⚠️ AVGO now sits at 50,000 and therefore MOVES FROM TIER 3 TO TIER 2, '
+ 'joining GOOGL, TSM, MSFT, AMZN and META. ⚠️ AND THE HONEST CAVEAT: these three already had 30,899.18 of budget they '
+ 'have NOT spent - AVGO 9,874.82, ASML 13,605.94, MU 7,418.42. Raising the ceilings does not buy a single share. It '
+ 'roughly doubles their unfunded room to 60,899.18, and the existing MU rungs (4,000 on Sep 30, 3,418.42 on Dec 17) '
+ 'now under-commit the room and need resizing at the next schedule rebuild. || PROMOTED TIER 5 TO TIER 4 (+20,000, '
+ '5,000 each): APP, FSLR, SE and CAT, each 5,000 to 10,000. Chosen from the twenty names sitting at exactly 5,000. ⚠️ '
+ 'ALAB was the obvious candidate on growth - revenue +98.5%, EPS +197% - but it carries 7,000, not 5,000, so promoting '
+ 'it would have cost only 3,000 and left 2,000 stranded, breaking the arithmetic. It stays at 7,000. IONQ topped the '
+ 'raw screen and was REJECTED: its 174.9% net margin is a non-operating-gain artifact already flagged on this board, '
+ 'not a real margin. || CONCENTRATION BARELY MOVES: budget-weighted AI exposure goes 76.14% to 76.45%, up just 0.31 '
+ 'points, because five of the six names losing budget were themselves AI or semiconductor. Four DECIDE rows added so '
+ 'no promoted name sits on the board without a plan - the gap that was found on MSFT two days ago. || Sep 7, 2026 - '
+ 'SPCX: LOCK-UP CALENDAR IS THE STORY, NOT THE PRICE TARGET. Salee sent two more graphics - one on why SpaceX chose '
+ "Boca Chica, one headlined 'Oppenheimer upgraded SPCX to Buy, 280 target'. || ⚠️ THE 280 CALL IS NOT NEW AND NOT AN "
+ "UPGRADE. It is the same Timothy Horan note of Sep 2-3 that underpinned the '48% rally' graphic Salee sent on Sep 6 - "
+ 'the third presentation of ONE analyst action in three days, each framed as breaking. Oppenheimer MAINTAINED '
+ "Outperform; the rating did not change, only the target, from 250 to 280. 'Upgraded to Buy' is wrong on both counts. "
+ 'Two other houses were also unchanged in the same window: Morgan Stanley held 300, JP Morgan held 240. || ⚠️ THE '
+ 'REASON TO WAIT IS SUPPLY. Per the Jun 11 prospectus, roughly 3.04 BILLION shares come off lock-up between Sep and '
+ 'Dec 2026: 319m Sep 9, ~328m Sep 24, ~319m Oct 9, ~319m Oct 24, about 1.3 BILLION on the Q3 earnings trigger in '
+ "November, and 455.8m on Dec 8-9. Musk's 6.42bn (48.4%) unlocks separately in Jun 2027. The stock already sits BELOW "
+ 'its 161 first-day close at 147.95, and that is with only the early tranches out. Two Schedule rows added: an AVOID '
+ 'on the lock-up calendar and a DECIDE on the Q3 print, which is both the second public quarter and the largest unlock '
+ 'trigger. Still no budget assigned. || ON THE BOCA CHICA GRAPHIC - the physics is RIGHT and the conclusion is WRONG. '
+ "Earth's rotational boost at the pad's 25.9875 N latitude computes to 418.1 m/s against the 418 claimed, and 28,000 "
+ 'km/h is the correct orbital velocity. But Cape Canaveral at 28.608 N gives 408.3 m/s - a difference of just 9.8 m/s, '
+ 'or 0.125% of the 7,778 m/s needed. Latitude was one of thirteen criteria in the 2014 FAA Record of Decision, '
+ "alongside safety, accessibility, political stability and privately owned site; SpaceX's own 2014 release stressed "
+ "'the facilitation of doing business in Texas' and local support. || ⚠️ AND THE GRAPHIC IS BEHIND THE FACTS. SpaceX "
+ 'is shifting its centre of gravity to Florida: three Starship towers are under construction there (one at LC-39A, two '
+ 'at SLC-37), approved cadence is 44 a year at LC-39A plus 76 at SLC-37 against just 25 at Starbase - Florida at 120 '
+ 'is 4.8x Texas. Starbase Pad 1 has been offline since Oct 2025 and is not back until late 2026, leaving Pad 2 the '
+ "only operational Starship pad on Earth. SpaceX VP Kiko Dontchev on Sep 5: 'From here on, Starlink missions out of "
+ "Florida will fly on Starship.' A company abandoning a latitude it supposedly chose for latitude is the clearest "
+ 'evidence that latitude was never the deciding factor. || Sep 7, 2026 - WEEKLY REFRESH & INTEGRITY AUDIT. Prices '
+ 'verified at the Fri Sep 4 close (US markets closed Mon Sep 7, Labor Day). PENG applied at 51.76 (+6.44%), the one '
+ 'name the Sep 4 daily job left unconfirmed - second-sourced via stockanalysis.com and Google Finance, mcapB scaled to '
+ '2.6528 by the same ratio. QNT hi52/lo52 filled (86.79/46.54, stockanalysis.com) - they were null on a listed stock. '
+ 'SPCX and QNT listings independently re-verified (SpaceX IPO Jun 12 2026 Nasdaq, Quantinuum IPO Jun 2026 Nasdaq; '
+ 'prices/mcaps match the board): the Sep 6 correction stands, the QNT removal patch stays unapplied. AUDIT: implied '
+ 'share counts clean (only APH moved, 2-for-1 split Sep 4, expected); no ticker flat 7+ days; NASD 493,545.18 + NYSE '
+ '103,760.51 = 597,305.69 ties exactly; REALIZED/SOLD/MONTHLY byGroup mutually consistent (known NBIS 1-cent and '
+ 'sale-time-group semantics unchanged). FLAGGED, NOT FIXED: (1) four Aug 5-7 fills (TSM 4.5sh, NVDA 9sh, CRM 10sh, '
+ 'ISRG 5sh) imply ZERO commission - amount equals shares x price exactly, and the per-share prices look back-computed '
+ 'from the amount; every other fill since Jul 28 implies the flat 8.56. Either those four amounts omit the 8.56 (book '
+ 'cost understated ~34.24 total) or the price field folds commission in - needs the POEMS contract notes to settle; '
+ 'TRADES untouched, only Salee changes fills. (2) TOTALS identity drift: investedEver - soldCost - heldCost = '
+ '-9,210.82, was -5,653.61 at the Aug 31 weekly; the -3,557.21 widening this week is roughly the Sep 4 AVGO +4.5sh '
+ 'reconciliation - investedEverUSD semantics vs booked cost should be pinned. (3) ath<hi52 on 29 names - consistent '
+ 'with ath=highest CLOSE vs hi52=intraday, but the convention is still not pinned in the README. pe deliberately null '
+ 'on CRWD/FPS (near-zero eps). || Sep 6, 2026 - MSFT RUNG ADDED, closing a genuine gap in the plan. Salee asked '
+ 'whether the four largest companies in a viral graphic had any place in the next three months of the schedule. '
+ 'Checking it exposed an oversight of mine: GOOGL had a dated tranche (20,524.08 on Nov 19, unlocked by the Oct 2 '
+ 'ad-tech judgment), NVDA had a rung plus two standing limits (8,000 on Nov 18, then 7,000 at or below 200 and '
  '5,619.72 at or below 180), AAPL was deliberately parked on price - but MSFT, the third-largest holding at 52,878.96 '
  'with 7,121.04 of room, had NO row of any kind. It simply fell through when the tranches were built. A rung now sits '
  "on the Q1 FY2027 print. || ⚠️ THE DATE IS ESTIMATED, NOT CONFIRMED. Microsoft's investor site says only that the "
@@ -675,7 +693,7 @@ STOCKS = [{'an': 83,
   't': 'NVDA'},
  {'an': 48,
   'ath': 495.0,
-  'budget': 40000,
+  'budget': 50000,
   'capexB': 1.25,
   'eps': 7.84,
   'epsG': 100.0,
@@ -737,7 +755,7 @@ STOCKS = [{'an': 83,
   't': 'AMD'},
  {'an': 48,
   'ath': 142.35,
-  'budget': 5000,
+  'budget': None,
   'capexB': 13.1,
   'eps': -0.67,
   'epsG': None,
@@ -830,7 +848,7 @@ STOCKS = [{'an': 83,
   't': 'MRVL'},
  {'an': 36,
   'ath': 259.92,
-  'budget': 5000,
+  'budget': None,
   'capexB': 1.78,
   'eps': 9.15,
   'epsG': -6.3,
@@ -1109,7 +1127,7 @@ STOCKS = [{'an': 83,
   't': 'TSM'},
  {'an': 44,
   'ath': 1999.96,
-  'budget': 30000,
+  'budget': 40000,
   'capexB': 1.65,
   'eps': 31.41,
   'epsG': 14.5,
@@ -1357,7 +1375,7 @@ STOCKS = [{'an': 83,
   't': 'FORM'},
  {'an': 45,
   'ath': 1255.0,
-  'budget': 30000,
+  'budget': 40000,
   'capexB': 25.26,
   'eps': 44.31,
   'epsG': 695.9,
@@ -1915,7 +1933,7 @@ STOCKS = [{'an': 83,
   't': 'VIAV'},
  {'an': 6,
   'ath': 233.67,
-  'budget': 5000,
+  'budget': None,
   'capexB': 0.46,
   'eps': -0.78,
   'epsG': None,
@@ -1977,7 +1995,7 @@ STOCKS = [{'an': 83,
   't': 'AXTI'},
  {'an': 35,
   'ath': 320.95,
-  'budget': 5000,
+  'budget': 10000,
   'capexB': 0.65562,
   'eps': 16.22,
   'epsG': 38.6,
@@ -2039,7 +2057,7 @@ STOCKS = [{'an': 83,
   't': 'ENPH'},
  {'an': 81,
   'ath': 498.83,
-  'budget': 10000,
+  'budget': None,
   'capexB': 9.53,
   'eps': 1.09,
   'epsG': -37.4,
@@ -2504,7 +2522,7 @@ STOCKS = [{'an': 83,
   't': 'AVAV'},
  {'an': 8,
   'ath': 15.28,
-  'budget': 5000,
+  'budget': None,
   'capexB': 0.003,
   'eps': 0.44,
   'epsG': None,
@@ -4364,7 +4382,7 @@ STOCKS = [{'an': 83,
   't': 'BKNG'},
  {'an': 32,
   'ath': 745.61,
-  'budget': 5000,
+  'budget': 10000,
   'capexB': None,
   'eps': 11.64,
   'epsG': 110.4,
@@ -4395,7 +4413,7 @@ STOCKS = [{'an': 83,
   't': 'APP'},
  {'an': 29,
   'ath': 196.05,
-  'budget': 5000,
+  'budget': 10000,
   'capexB': 0.51,
   'eps': 2.59,
   'epsG': 34.2,
@@ -4457,7 +4475,7 @@ STOCKS = [{'an': 83,
   't': 'ZETA'},
  {'an': 28,
   'ath': 1073.46,
-  'budget': 5000,
+  'budget': 10000,
   'capexB': 4.58,
   'eps': 23.21,
   'epsG': 18.0,
@@ -4581,7 +4599,7 @@ STOCKS = [{'an': 83,
   't': 'STRL'},
  {'an': 16,
   'ath': 76.87,
-  'budget': 5000,
+  'budget': None,
   'capexB': 4.33,
   'eps': -0.41,
   'epsG': None,
@@ -4618,18 +4636,18 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'AAPL': {'budget': 25000, 'cost': 11437.61, 'shares': 46},
  'NVDA': {'budget': 100000.0, 'cost': 79380.28, 'shares': 420},
  'TSM': {'budget': 65000, 'cost': 39921.53, 'shares': 112.5},
- 'AVGO': {'budget': 40000, 'cost': 30125.18, 'shares': 88.5},
+ 'AVGO': {'budget': 50000, 'cost': 30125.18, 'shares': 88.5},
  'AMD': {'budget': 25000, 'cost': 13789.22, 'shares': 55},
  'MRVL': {'budget': 25000, 'cost': 7872.66, 'shares': 48.5},
- 'INTC': {'budget': 5000, 'cost': 2029.6, 'shares': 45},
- 'QCOM': {'budget': 5000, 'cost': 1959.96, 'shares': 11},
+ 'INTC': {'budget': None, 'cost': 2029.6, 'shares': 45},
+ 'QCOM': {'budget': None, 'cost': 1959.96, 'shares': 11},
  'ARM': {'budget': None, 'cost': None, 'shares': None},
- 'ASML': {'budget': 30000, 'cost': 16394.06, 'shares': 13},
+ 'ASML': {'budget': 40000, 'cost': 16394.06, 'shares': 13},
  'AMAT': {'budget': 20000, 'cost': 10086.63, 'shares': 38},
  'LRCX': {'budget': 15000, 'cost': 4100.12, 'shares': 22},
  'KLAC': {'budget': 10000, 'cost': 3510.69, 'shares': 18},
  'AMKR': {'budget': 5000, 'cost': 3454.62, 'shares': 55},
- 'MU': {'budget': 30000, 'cost': 22581.58, 'shares': 35.45},
+ 'MU': {'budget': 40000, 'cost': 22581.58, 'shares': 35.45},
  'SKHY': {'budget': 10000, 'cost': 1913.26, 'shares': 15},
  'SNDK': {'budget': None, 'cost': None, 'shares': None},
  'WDC': {'budget': None, 'cost': None, 'shares': None},
@@ -4644,7 +4662,7 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'APH': {'budget': 10000, 'cost': 2004.4, 'shares': 32},
  'GLW': {'budget': None, 'cost': None, 'shares': None},
  'FN': {'budget': 5000, 'cost': 1604.56, 'shares': 3},
- 'AAOI': {'budget': 5000, 'cost': 1338.56, 'shares': 10},
+ 'AAOI': {'budget': None, 'cost': 1338.56, 'shares': 10},
  'ETN': {'budget': 10000, 'cost': 7879.55, 'shares': 19},
  'VST': {'budget': 10000, 'cost': 8133.29, 'shares': 57},
  'CEG': {'budget': 10000, 'cost': 4040.98, 'shares': 15},
@@ -4660,7 +4678,7 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'ISRG': {'budget': 20000, 'cost': 16381.68, 'shares': 38},
  'CGNX': {'budget': 10000, 'cost': 4067.62, 'shares': 62},
  'TER': {'budget': 10000, 'cost': 3567.37, 'shares': 10},
- 'TSLA': {'budget': 10000, 'cost': 4304.62, 'shares': 10},
+ 'TSLA': {'budget': None, 'cost': 4304.62, 'shares': 10},
  'ROK': {'budget': None, 'cost': None, 'shares': None},
  'RKLB': {'budget': 10000, 'cost': 1942.58, 'shares': 23},
  'ASTS': {'budget': None, 'cost': None, 'shares': None},
@@ -4668,7 +4686,7 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'SPCX': {'budget': None, 'cost': None, 'shares': None},
  'PLTR': {'budget': 10000, 'cost': 5533.09, 'shares': 40},
  'AVAV': {'budget': 5000, 'cost': 3758.3, 'shares': 18},
- 'ONDS': {'budget': 5000, 'cost': 2030.54, 'shares': 200},
+ 'ONDS': {'budget': None, 'cost': 2030.54, 'shares': 200},
  'IONQ': {'budget': 5000, 'cost': None, 'shares': None},
  'ORCL': {'budget': 10000, 'cost': 8313.62, 'shares': 50},
  'ZETA': {'budget': 5000, 'cost': 2004.33, 'shares': 111},
@@ -4681,7 +4699,7 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'DDOG': {'budget': None, 'cost': None, 'shares': None},
  'MDB': {'budget': None, 'cost': None, 'shares': None},
  'TEM': {'budget': None, 'cost': None, 'shares': None},
- 'IREN': {'budget': 5000, 'cost': 1735.16, 'shares': 45},
+ 'IREN': {'budget': None, 'cost': 1735.16, 'shares': 45},
  'NBIS': {'budget': None, 'cost': None, 'shares': None},
  'CRWV': {'budget': None, 'cost': None, 'shares': None},
  'APLD': {'budget': None, 'cost': None, 'shares': None},
@@ -4691,13 +4709,13 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'SOFI': {'budget': None, 'cost': None, 'shares': None},
  'AFRM': {'budget': None, 'cost': None, 'shares': None},
  'SHOP': {'budget': None, 'cost': None, 'shares': None},
- 'SE': {'budget': 5000.0, 'cost': None, 'shares': None},
+ 'SE': {'budget': 10000, 'cost': None, 'shares': None},
  'CRWD': {'budget': 10000, 'cost': 3914.12, 'shares': 40},
  'PANW': {'budget': 10000, 'cost': 3760.62, 'shares': 22},
  'ZS': {'budget': None, 'cost': None, 'shares': None},
  'NET': {'budget': None, 'cost': None, 'shares': None},
  'FTNT': {'budget': None, 'cost': None, 'shares': None},
- 'APP': {'budget': 5000, 'cost': None, 'shares': None},
+ 'APP': {'budget': 10000, 'cost': None, 'shares': None},
  'COHR': {'budget': 5000, 'cost': 3395.12, 'shares': 10},
  'HNGE': {'budget': None, 'cost': None, 'shares': None},
  'RBRK': {'budget': None, 'cost': None, 'shares': None},
@@ -4713,7 +4731,7 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'LEU': {'budget': None, 'cost': None, 'shares': None},
  'MYRG': {'budget': None, 'cost': None, 'shares': None},
  'STRL': {'budget': None, 'cost': None, 'shares': None},
- 'FSLR': {'budget': 5000, 'cost': 2003.56, 'shares': 10},
+ 'FSLR': {'budget': 10000, 'cost': 2003.56, 'shares': 10},
  'ON': {'budget': None, 'cost': None, 'shares': None},
  'LMT': {'budget': None, 'cost': None, 'shares': None},
  'RTX': {'budget': None, 'cost': None, 'shares': None},
@@ -4721,7 +4739,7 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'NFLX': {'budget': None, 'cost': None, 'shares': None},
  'BKNG': {'budget': None, 'cost': None, 'shares': None},
  'WDAY': {'budget': None, 'cost': None, 'shares': None},
- 'CAT': {'budget': 5000, 'cost': None, 'shares': None},
+ 'CAT': {'budget': 10000, 'cost': None, 'shares': None},
  'GE': {'budget': None, 'cost': None, 'shares': None},
  'MCHP': {'budget': None, 'cost': None, 'shares': None},
  'NXPI': {'budget': None, 'cost': None, 'shares': None},
@@ -5834,7 +5852,55 @@ SCHEDULE = {'horizon': 'Sep - Dec 2026',
          'execute at POEMS. Every dated commitment agreed with Salee. Amounts are budget room, not orders. Nothing '
          "executes automatically - each BUY line still needs Salee's instruction on the day. Rebuilt whenever a plan "
          'changes; see the change log for the reason behind each edit.',
- 'items': [{'d': '2026-11-05',
+ 'items': [{'d': '',
+            'dl': 'Standing - promoted to Tier 4 on Sep 7',
+            't': 'APP',
+            'k': 'tranche',
+            'a': 'DECIDE',
+            'amt': 10000.0,
+            'w': 'Tier 4 budget of 10,000 - deploy the second 5,000 on evidence, not on the promotion',
+            'cond': 'Best growth-to-price on the board outside the mega-caps: revenue +66.4%, net margin 64.3%, return '
+                    'on equity 266.4%, Rule of 40 at 138.5. Deploy the added 5,000 ONLY on the Nov 4 print, and only '
+                    'if e-commerce pixel additions re-accelerate - they slowed to ~750 in June from ~950 in May and '
+                    'guidance has stepped down 68>66>59>53>47%. ⚠️ Four board fields are still flagged wrong for this '
+                    'name (forward P/E should be 17.72 not 24.17, ROE 203.69 not 266.44, debt/equity 1.11 not 1.63, '
+                    'revenue growth 53% not 66.4%); on the corrected figures it is CHEAPER, not dearer.',
+            'c': 'planned'},
+           {'d': '',
+            'dl': 'Standing - promoted to Tier 4 on Sep 7',
+            't': 'FSLR',
+            'k': 'tranche',
+            'a': 'DECIDE',
+            'amt': 10000.0,
+            'w': 'Tier 4 budget of 10,000 - deploy the second 5,000 on evidence, not on the promotion',
+            'cond': 'The cheapest quality name in the tier: forward P/E 11.6 with revenue +23.8%, EPS +38.6% and a '
+                    '32.5% net margin. Held and roughly flat, so the added room buys at close to the existing cost. '
+                    'Solar & Storage holds only this one name.',
+            'c': 'planned'},
+           {'d': '',
+            'dl': 'Standing - promoted to Tier 4 on Sep 7',
+            't': 'SE',
+            'k': 'tranche',
+            'a': 'DECIDE',
+            'amt': 10000.0,
+            'w': 'Tier 4 budget of 10,000 - deploy the second 5,000 on evidence, not on the promotion',
+            'cond': 'Revenue +43.1% with EPS +34.2% and a Rule of 40 of 60.0 - the fastest grower in the tier that is '
+                    'also profitable. ⚠️ Net margin is thin at 5.9%, so the case rests on growth, not on quality. Not '
+                    'yet held; needs an entry decision.',
+            'c': 'planned'},
+           {'d': '',
+            'dl': 'Standing - promoted to Tier 4 on Sep 7',
+            't': 'CAT',
+            'k': 'tranche',
+            'a': 'DECIDE',
+            'amt': 10000.0,
+            'w': 'Tier 4 budget of 10,000 - deploy the second 5,000 on evidence, not on the promotion',
+            'cond': 'Return on equity 57.0% with revenue +18.4% and a 14.5% net margin - profitable growth, not '
+                    'ballast. Chosen for the fourth slot over Visa and Fabrinet because Industrial holds ZERO '
+                    'positions today, so this is real diversification rather than more of a group already eight names '
+                    'deep. Not yet held.',
+            'c': 'planned'},
+           {'d': '2026-11-05',
             't': 'SPCX',
             'k': 'earnings',
             'a': 'DECIDE',
