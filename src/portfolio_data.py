@@ -3,84 +3,107 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Sep 7, 2026 - WEEKLY REFRESH & INTEGRITY AUDIT. Prices verified at the Fri Sep 4 close (US markets closed Mon Sep 7, '
- 'Labor Day). PENG applied at 51.76 (+6.44%), the one name the Sep 4 daily job left unconfirmed - second-sourced via '
- 'stockanalysis.com and Google Finance, mcapB scaled to 2.6528 by the same ratio. QNT hi52/lo52 filled (86.79/46.54, '
- 'stockanalysis.com) - they were null on a listed stock. SPCX and QNT listings independently re-verified (SpaceX IPO '
- 'Jun 12 2026 Nasdaq, Quantinuum IPO Jun 2026 Nasdaq; prices/mcaps match the board): the Sep 6 correction stands, the '
- 'QNT removal patch stays unapplied. AUDIT: implied share counts clean (only APH moved, 2-for-1 split Sep 4, '
- 'expected); no ticker flat 7+ days; NASD 493,545.18 + NYSE 103,760.51 = 597,305.69 ties exactly; '
- 'REALIZED/SOLD/MONTHLY byGroup mutually consistent (known NBIS 1-cent and sale-time-group semantics unchanged). '
- 'FLAGGED, NOT FIXED: (1) four Aug 5-7 fills (TSM 4.5sh, NVDA 9sh, CRM 10sh, ISRG 5sh) imply ZERO commission - amount '
- 'equals shares x price exactly, and the per-share prices look back-computed from the amount; every other fill since '
- 'Jul 28 implies the flat 8.56. Either those four amounts omit the 8.56 (book cost understated ~34.24 total) or the '
- 'price field folds commission in - needs the POEMS contract notes to settle; TRADES untouched, only Salee changes '
- 'fills. (2) TOTALS identity drift: investedEver - soldCost - heldCost = -9,210.82, was -5,653.61 at the Aug 31 '
- 'weekly; the -3,557.21 widening this week is roughly the Sep 4 AVGO +4.5sh reconciliation - investedEverUSD semantics '
- 'vs booked cost should be pinned. (3) ath<hi52 on 29 names - consistent with ath=highest CLOSE vs hi52=intraday, but '
- 'the convention is still not pinned in the README. pe deliberately null on CRWD/FPS (near-zero eps). || Sep 6, 2026 - '
- 'MSFT RUNG ADDED, closing a genuine gap in the plan. Salee asked whether the four largest companies in a viral '
- 'graphic had any place in the next three months of the schedule. Checking it exposed an oversight of mine: GOOGL had '
- 'a dated tranche (20,524.08 on Nov 19, unlocked by the Oct 2 ad-tech judgment), NVDA had a rung plus two standing '
- 'limits (8,000 on Nov 18, then 7,000 at or below 200 and 5,619.72 at or below 180), AAPL was deliberately parked on '
- 'price - but MSFT, the third-largest holding at 52,878.96 with 7,121.04 of room, had NO row of any kind. It simply '
- 'fell through when the tranches were built. A rung now sits on the Q1 FY2027 print. || ⚠️ THE DATE IS ESTIMATED, NOT '
- "CONFIRMED. Microsoft's investor site says only that the next release 'will be announced soon'. Oct 28 is inferred "
- 'from the pattern - the last four reports were all Wednesdays (Oct 29 2025, Jan 28, Apr 29 and Jul 29 2026) - and one '
- 'source says Oct 29 instead. Confirm before acting. || THE CONDITION IS NOT AZURE. Azure is guided to ACCELERATE to '
- 'about 45% constant currency from 43%, and passed 100bn of annual revenue for the first time; Microsoft 365 Copilot '
- 'passed 30 million paid seats. That part works. The risk is the spend: capex was 115.9bn in FY2026 against guidance '
- 'of approximately 175bn for FY2027, up about 51%, while total revenue is guided at 16-17%. Deploy only if Azure holds '
- 'the guided ~45% AND the 175bn capex number is not raised again. || ⚠️ AND THE GRAPHIC SALEE SENT WAS WRONG ON SEVEN '
- 'OF EIGHT FIGURES. Verified against two independent sources: it showed MSFT at 2.92T against a true 3.71T (-21%), '
- 'AAPL 4.05T against 4.67T (-13%), GOOGL 3.77T against 4.14T (-9%) and NVDA 4.44T against 5.56T (-20%). Its 2015 bases '
- 'were wrong too - MSFT was 443B not 391B, AAPL 587B not 531B. Worse, none of its four multipliers reconciles with the '
- 'two numbers printed directly above it: 2920 divided by 391 is 7.47, not the 6.69 shown. The true multipliers are '
- 'MSFT 8.4x, AAPL 8.0x, GOOGL 7.7x and NVDA 313.6x - the bad arithmetic had ranked AAPL the weakest compounder when it '
- "actually beat GOOGL. The board's own market caps matched the verified figures on all four. || Sep 6, 2026 - ⚠️ "
- 'CLAUDE WAS WRONG ABOUT SPCX AND HAS CORRECTED IT. On Sep 5 I told Salee that SPCX was probably a bad board entry '
- "because 'SpaceX is a private company', and I called the 2,007.68 market cap absurd. BOTH STATEMENTS WERE FALSE AND "
- 'THE BOARD WAS RIGHT. SpaceX completed its IPO on Jun 12 2026 at 135 dollars a share, trades on Nasdaq under SPCX, '
- 'and SEC EDGAR confirms CIK 0001181412 with ticker SPCX and exchange Nasdaq. Market cap at the Sep 4 close was 2.01 '
- "trillion - the board's figure was accurate to three decimal places. My knowledge cutoff is May 2026 and the IPO "
- 'happened in June; I asserted a post-cutoff fact from memory instead of checking it, which is precisely the error I '
- "keep flagging in other people's graphics. || ⚠️ CONSEQUENCE FOR QNT: the same Sep 5 flag claimed Quantinuum was "
- 'private too. That reasoning is now untrustworthy. A cloud session prepared a QNT removal patch on Sep 6 which has '
- "NOT been pushed. DO NOT APPLY IT until QNT's listing status is independently verified. QNT stays on the board for "
- "now. || ON THE VIRAL GRAPHIC Salee sent ('SpaceX stock eyes 48% rally as Starship Flight 14 and 280 target fuel "
- "bullish outlook'): the ticker is real and every number traces to a real source, but they are spliced into a claim no "
- 'analyst makes. The 48% is upside to the CONSENSUS AVERAGE target of 222.32 across 35 analysts. The 280 is '
- 'Oppenheimer alone (Tim Horan, Sep 2-3, raised from 250), which implies about 87-89% from the 147.95 close - not 48%. '
- "Putting the two side by side welds a consensus percentage onto an outlier bank's target. The 'BUY' badge is the "
- "consensus rating; Oppenheimer's own rating is reported as Outperform or Overweight, not Buy. || ⚠️ AND FLIGHT 14 HAS "
- 'NOT FLOWN. It is no-earlier-than Sep 15 2026 per an FCC filing dated Aug 31. The graphic presents an unflown, '
- 'un-de-risked test as an accomplished catalyst. The most recent flight is Flight 13 on Jul 24: the ship deployed 20 '
- 'Starlink V3 satellites and survived splashdown intact for the first time, but the booster relit only 10 of its '
- 'engines and was destroyed on water impact. That is a partial success, not a clean one. || WHAT THE GRAPHIC OMITS: '
- 'SPCX at 147.95 trades BELOW its 161 first-day close. Q2 showed a 541m net loss on 15.83bn of AI capex against 2.56bn '
- 'of AI revenue. Net margin is -35.66%. Analyst targets span 117 to 450 with one house at 800. || NO POSITION, BUDGET '
- 'OR PRICE CHANGED. No budget assigned to SPCX. Two Schedule rows added: Flight 14 as a WATCH that explicitly is NOT a '
- 'buy trigger, and a standing row saying wait for a second public quarter before assigning any budget. || Sep 6, 2026 '
- "- RKLB BUY PLAN RESTRUCTURED ON THE SCHEDULE TAB at Salee's instruction, replacing the single Tranche-2 line "
- '(8,057.42 dated Oct 9) with three rungs totalling exactly the room: (1) LIMIT 2,000 at any close <=55; (2) TRIGGER '
- "2,000 on the Iridium financing pricing day, deployable only if total equity dilution <=15% - the $8.0bn deal's "
- "$3.6bn bridge loan is the live overhang (S-4 filed Aug 13, 'capital strategy underway'); (3) TRIGGER 4,057.42 after "
- "de-risking - a successful Neutron first flight (the 'Q4 2026' date is pad delivery, not launch) or deal close on "
- "sane terms. Rationale recorded: Berenberg's Sep 3 initiation (Buy, PT 83, 'most compelling and differentiated "
- "long-term asset in the space sector') is a real note but sits BELOW the 18-analyst mean of 112.94 - a conservative "
- 'Buy, and no reason to chase a +12% day. Position 23 sh at 84.46 avg (-24%); the plan forbids averaging down beyond '
- 'rung 1 merely to repair the lot. The Nov 9 RKLB earnings WATCH row is unchanged. No prices, budgets, positions or '
- 'other tabs touched. || Sep 6, 2026 - WEEKLY REFRESH AND INTEGRITY AUDIT. The Sep 4 daily job reverted twelve >=6% '
- 'movers it could not second-source before its search budget ran out; this weekly run re-verified them. TEN CONFIRMED '
- 'against a second independent dated source and applied at the Friday Sep 4 close with --allow, mcapB/pe/fpe/ps/peg '
- "rescaled by the exact price ratio per convention: SNDK 1,740.00 +11.90% (Google Finance 'Closed Sep 4, 4:00 PM "
- "GMT-4' agrees with stockanalysis to the cent), SKHY 177.00 +8.14% (GF + stockanalysis agree; the 24/7 Wall St "
- 'intraday 174.38 was pre-close), BE 252.87 +7.35% (Motley Fool article of Sep 5 quotes 252.87 +17.32 exactly), KLAC '
- '185.60 +7.32% (GF concurs, prev close ties to 172.94), IREN 44.68 +7.27% (GF dated close, +3.03 ties to the 41.65 '
- 'board value), ADBE 266.51 -6.73% (24/7 Wall St Sep 4 CEO-succession piece quotes 266.51 -6.73% verbatim; GuruFocus '
- 'concurs on a ~6-7% Friday fall), FPS 31.35 +6.56% off the Sep 2 close (Motley Fool at-close quote; GF intraday 31.44 '
- 'at 11:29 AM concurs on level - accepted on the HNGE precedent, caveat recorded), SITM 612.09 +6.55% (Fool quote page '
- 'shows 612.09 dated Sep 4 exactly, CAVEAT: its own day-change figure +1.07% implies a different Sep 3 close than the '
+ASOF = ('Sep 7, 2026 - SPCX: LOCK-UP CALENDAR IS THE STORY, NOT THE PRICE TARGET. Salee sent two more graphics - one on why '
+ "SpaceX chose Boca Chica, one headlined 'Oppenheimer upgraded SPCX to Buy, 280 target'. || ⚠️ THE 280 CALL IS NOT NEW "
+ "AND NOT AN UPGRADE. It is the same Timothy Horan note of Sep 2-3 that underpinned the '48% rally' graphic Salee sent "
+ 'on Sep 6 - the third presentation of ONE analyst action in three days, each framed as breaking. Oppenheimer '
+ "MAINTAINED Outperform; the rating did not change, only the target, from 250 to 280. 'Upgraded to Buy' is wrong on "
+ 'both counts. Two other houses were also unchanged in the same window: Morgan Stanley held 300, JP Morgan held 240. '
+ '|| ⚠️ THE REASON TO WAIT IS SUPPLY. Per the Jun 11 prospectus, roughly 3.04 BILLION shares come off lock-up between '
+ 'Sep and Dec 2026: 319m Sep 9, ~328m Sep 24, ~319m Oct 9, ~319m Oct 24, about 1.3 BILLION on the Q3 earnings trigger '
+ "in November, and 455.8m on Dec 8-9. Musk's 6.42bn (48.4%) unlocks separately in Jun 2027. The stock already sits "
+ 'BELOW its 161 first-day close at 147.95, and that is with only the early tranches out. Two Schedule rows added: an '
+ 'AVOID on the lock-up calendar and a DECIDE on the Q3 print, which is both the second public quarter and the largest '
+ 'unlock trigger. Still no budget assigned. || ON THE BOCA CHICA GRAPHIC - the physics is RIGHT and the conclusion is '
+ "WRONG. Earth's rotational boost at the pad's 25.9875 N latitude computes to 418.1 m/s against the 418 claimed, and "
+ '28,000 km/h is the correct orbital velocity. But Cape Canaveral at 28.608 N gives 408.3 m/s - a difference of just '
+ '9.8 m/s, or 0.125% of the 7,778 m/s needed. Latitude was one of thirteen criteria in the 2014 FAA Record of '
+ "Decision, alongside safety, accessibility, political stability and privately owned site; SpaceX's own 2014 release "
+ "stressed 'the facilitation of doing business in Texas' and local support. || ⚠️ AND THE GRAPHIC IS BEHIND THE FACTS. "
+ 'SpaceX is shifting its centre of gravity to Florida: three Starship towers are under construction there (one at '
+ 'LC-39A, two at SLC-37), approved cadence is 44 a year at LC-39A plus 76 at SLC-37 against just 25 at Starbase - '
+ 'Florida at 120 is 4.8x Texas. Starbase Pad 1 has been offline since Oct 2025 and is not back until late 2026, '
+ "leaving Pad 2 the only operational Starship pad on Earth. SpaceX VP Kiko Dontchev on Sep 5: 'From here on, Starlink "
+ "missions out of Florida will fly on Starship.' A company abandoning a latitude it supposedly chose for latitude is "
+ 'the clearest evidence that latitude was never the deciding factor. || Sep 7, 2026 - WEEKLY REFRESH & INTEGRITY '
+ 'AUDIT. Prices verified at the Fri Sep 4 close (US markets closed Mon Sep 7, Labor Day). PENG applied at 51.76 '
+ '(+6.44%), the one name the Sep 4 daily job left unconfirmed - second-sourced via stockanalysis.com and Google '
+ 'Finance, mcapB scaled to 2.6528 by the same ratio. QNT hi52/lo52 filled (86.79/46.54, stockanalysis.com) - they were '
+ 'null on a listed stock. SPCX and QNT listings independently re-verified (SpaceX IPO Jun 12 2026 Nasdaq, Quantinuum '
+ 'IPO Jun 2026 Nasdaq; prices/mcaps match the board): the Sep 6 correction stands, the QNT removal patch stays '
+ 'unapplied. AUDIT: implied share counts clean (only APH moved, 2-for-1 split Sep 4, expected); no ticker flat 7+ '
+ 'days; NASD 493,545.18 + NYSE 103,760.51 = 597,305.69 ties exactly; REALIZED/SOLD/MONTHLY byGroup mutually consistent '
+ '(known NBIS 1-cent and sale-time-group semantics unchanged). FLAGGED, NOT FIXED: (1) four Aug 5-7 fills (TSM 4.5sh, '
+ 'NVDA 9sh, CRM 10sh, ISRG 5sh) imply ZERO commission - amount equals shares x price exactly, and the per-share prices '
+ 'look back-computed from the amount; every other fill since Jul 28 implies the flat 8.56. Either those four amounts '
+ 'omit the 8.56 (book cost understated ~34.24 total) or the price field folds commission in - needs the POEMS contract '
+ 'notes to settle; TRADES untouched, only Salee changes fills. (2) TOTALS identity drift: investedEver - soldCost - '
+ 'heldCost = -9,210.82, was -5,653.61 at the Aug 31 weekly; the -3,557.21 widening this week is roughly the Sep 4 AVGO '
+ '+4.5sh reconciliation - investedEverUSD semantics vs booked cost should be pinned. (3) ath<hi52 on 29 names - '
+ 'consistent with ath=highest CLOSE vs hi52=intraday, but the convention is still not pinned in the README. pe '
+ 'deliberately null on CRWD/FPS (near-zero eps). || Sep 6, 2026 - MSFT RUNG ADDED, closing a genuine gap in the plan. '
+ 'Salee asked whether the four largest companies in a viral graphic had any place in the next three months of the '
+ 'schedule. Checking it exposed an oversight of mine: GOOGL had a dated tranche (20,524.08 on Nov 19, unlocked by the '
+ 'Oct 2 ad-tech judgment), NVDA had a rung plus two standing limits (8,000 on Nov 18, then 7,000 at or below 200 and '
+ '5,619.72 at or below 180), AAPL was deliberately parked on price - but MSFT, the third-largest holding at 52,878.96 '
+ 'with 7,121.04 of room, had NO row of any kind. It simply fell through when the tranches were built. A rung now sits '
+ "on the Q1 FY2027 print. || ⚠️ THE DATE IS ESTIMATED, NOT CONFIRMED. Microsoft's investor site says only that the "
+ "next release 'will be announced soon'. Oct 28 is inferred from the pattern - the last four reports were all "
+ 'Wednesdays (Oct 29 2025, Jan 28, Apr 29 and Jul 29 2026) - and one source says Oct 29 instead. Confirm before '
+ 'acting. || THE CONDITION IS NOT AZURE. Azure is guided to ACCELERATE to about 45% constant currency from 43%, and '
+ 'passed 100bn of annual revenue for the first time; Microsoft 365 Copilot passed 30 million paid seats. That part '
+ 'works. The risk is the spend: capex was 115.9bn in FY2026 against guidance of approximately 175bn for FY2027, up '
+ 'about 51%, while total revenue is guided at 16-17%. Deploy only if Azure holds the guided ~45% AND the 175bn capex '
+ 'number is not raised again. || ⚠️ AND THE GRAPHIC SALEE SENT WAS WRONG ON SEVEN OF EIGHT FIGURES. Verified against '
+ 'two independent sources: it showed MSFT at 2.92T against a true 3.71T (-21%), AAPL 4.05T against 4.67T (-13%), GOOGL '
+ '3.77T against 4.14T (-9%) and NVDA 4.44T against 5.56T (-20%). Its 2015 bases were wrong too - MSFT was 443B not '
+ '391B, AAPL 587B not 531B. Worse, none of its four multipliers reconciles with the two numbers printed directly above '
+ 'it: 2920 divided by 391 is 7.47, not the 6.69 shown. The true multipliers are MSFT 8.4x, AAPL 8.0x, GOOGL 7.7x and '
+ "NVDA 313.6x - the bad arithmetic had ranked AAPL the weakest compounder when it actually beat GOOGL. The board's own "
+ 'market caps matched the verified figures on all four. || Sep 6, 2026 - ⚠️ CLAUDE WAS WRONG ABOUT SPCX AND HAS '
+ "CORRECTED IT. On Sep 5 I told Salee that SPCX was probably a bad board entry because 'SpaceX is a private company', "
+ 'and I called the 2,007.68 market cap absurd. BOTH STATEMENTS WERE FALSE AND THE BOARD WAS RIGHT. SpaceX completed '
+ 'its IPO on Jun 12 2026 at 135 dollars a share, trades on Nasdaq under SPCX, and SEC EDGAR confirms CIK 0001181412 '
+ "with ticker SPCX and exchange Nasdaq. Market cap at the Sep 4 close was 2.01 trillion - the board's figure was "
+ 'accurate to three decimal places. My knowledge cutoff is May 2026 and the IPO happened in June; I asserted a '
+ "post-cutoff fact from memory instead of checking it, which is precisely the error I keep flagging in other people's "
+ 'graphics. || ⚠️ CONSEQUENCE FOR QNT: the same Sep 5 flag claimed Quantinuum was private too. That reasoning is now '
+ 'untrustworthy. A cloud session prepared a QNT removal patch on Sep 6 which has NOT been pushed. DO NOT APPLY IT '
+ "until QNT's listing status is independently verified. QNT stays on the board for now. || ON THE VIRAL GRAPHIC Salee "
+ "sent ('SpaceX stock eyes 48% rally as Starship Flight 14 and 280 target fuel bullish outlook'): the ticker is real "
+ 'and every number traces to a real source, but they are spliced into a claim no analyst makes. The 48% is upside to '
+ 'the CONSENSUS AVERAGE target of 222.32 across 35 analysts. The 280 is Oppenheimer alone (Tim Horan, Sep 2-3, raised '
+ 'from 250), which implies about 87-89% from the 147.95 close - not 48%. Putting the two side by side welds a '
+ "consensus percentage onto an outlier bank's target. The 'BUY' badge is the consensus rating; Oppenheimer's own "
+ 'rating is reported as Outperform or Overweight, not Buy. || ⚠️ AND FLIGHT 14 HAS NOT FLOWN. It is no-earlier-than '
+ 'Sep 15 2026 per an FCC filing dated Aug 31. The graphic presents an unflown, un-de-risked test as an accomplished '
+ 'catalyst. The most recent flight is Flight 13 on Jul 24: the ship deployed 20 Starlink V3 satellites and survived '
+ 'splashdown intact for the first time, but the booster relit only 10 of its engines and was destroyed on water '
+ 'impact. That is a partial success, not a clean one. || WHAT THE GRAPHIC OMITS: SPCX at 147.95 trades BELOW its 161 '
+ 'first-day close. Q2 showed a 541m net loss on 15.83bn of AI capex against 2.56bn of AI revenue. Net margin is '
+ '-35.66%. Analyst targets span 117 to 450 with one house at 800. || NO POSITION, BUDGET OR PRICE CHANGED. No budget '
+ 'assigned to SPCX. Two Schedule rows added: Flight 14 as a WATCH that explicitly is NOT a buy trigger, and a standing '
+ 'row saying wait for a second public quarter before assigning any budget. || Sep 6, 2026 - RKLB BUY PLAN RESTRUCTURED '
+ "ON THE SCHEDULE TAB at Salee's instruction, replacing the single Tranche-2 line (8,057.42 dated Oct 9) with three "
+ 'rungs totalling exactly the room: (1) LIMIT 2,000 at any close <=55; (2) TRIGGER 2,000 on the Iridium financing '
+ "pricing day, deployable only if total equity dilution <=15% - the $8.0bn deal's $3.6bn bridge loan is the live "
+ "overhang (S-4 filed Aug 13, 'capital strategy underway'); (3) TRIGGER 4,057.42 after de-risking - a successful "
+ "Neutron first flight (the 'Q4 2026' date is pad delivery, not launch) or deal close on sane terms. Rationale "
+ "recorded: Berenberg's Sep 3 initiation (Buy, PT 83, 'most compelling and differentiated long-term asset in the space "
+ "sector') is a real note but sits BELOW the 18-analyst mean of 112.94 - a conservative Buy, and no reason to chase a "
+ '+12% day. Position 23 sh at 84.46 avg (-24%); the plan forbids averaging down beyond rung 1 merely to repair the '
+ 'lot. The Nov 9 RKLB earnings WATCH row is unchanged. No prices, budgets, positions or other tabs touched. || Sep 6, '
+ '2026 - WEEKLY REFRESH AND INTEGRITY AUDIT. The Sep 4 daily job reverted twelve >=6% movers it could not '
+ 'second-source before its search budget ran out; this weekly run re-verified them. TEN CONFIRMED against a second '
+ 'independent dated source and applied at the Friday Sep 4 close with --allow, mcapB/pe/fpe/ps/peg rescaled by the '
+ "exact price ratio per convention: SNDK 1,740.00 +11.90% (Google Finance 'Closed Sep 4, 4:00 PM GMT-4' agrees with "
+ 'stockanalysis to the cent), SKHY 177.00 +8.14% (GF + stockanalysis agree; the 24/7 Wall St intraday 174.38 was '
+ 'pre-close), BE 252.87 +7.35% (Motley Fool article of Sep 5 quotes 252.87 +17.32 exactly), KLAC 185.60 +7.32% (GF '
+ 'concurs, prev close ties to 172.94), IREN 44.68 +7.27% (GF dated close, +3.03 ties to the 41.65 board value), ADBE '
+ '266.51 -6.73% (24/7 Wall St Sep 4 CEO-succession piece quotes 266.51 -6.73% verbatim; GuruFocus concurs on a ~6-7% '
+ 'Friday fall), FPS 31.35 +6.56% off the Sep 2 close (Motley Fool at-close quote; GF intraday 31.44 at 11:29 AM '
+ 'concurs on level - accepted on the HNGE precedent, caveat recorded), SITM 612.09 +6.55% (Fool quote page shows '
+ '612.09 dated Sep 4 exactly, CAVEAT: its own day-change figure +1.07% implies a different Sep 3 close than the '
  "board's 574.47 - price corroborated, prior-day linkage not), NRG 119.02 +6.42% (GF dated close + Fool concur, open "
  "111.29 ties to the board's 111.84 Sep 3 value), STX 849.28 +6.34% (GF dated close +50.67 ties exactly). ONE NOT "
  'CONFIRMED: PENG - GF still shows the Sep 3 close 48.63, Yahoo is stuck at Sep 1, CNN unusable; the pending 51.76 '
@@ -5803,7 +5826,7 @@ M3 = {'GOOGL': {'pfcf': 72.54, 'ev': 21.6, 'de': 0.18},
  'AEP': {'pfcf': None, 'ev': 13.24, 'de': 1.61}}
 
 SCHEDULE = {'horizon': 'Sep - Dec 2026',
- 'updated': '2026-09-06',
+ 'updated': '2026-09-07',
  'note': "Sep 6, 2026: RKLB Tranche-2 single line (8,057.42 dated Oct 9) replaced with a three-rung plan at Salee's "
          'instruction - a 55 limit, an Iridium-financing trigger, and a post-de-risking trigger; total unchanged at '
          "exactly the room. || Sep 5, 2026: board focused at Salee's instruction - 49 watchlist names removed (181 -> "
@@ -5811,7 +5834,38 @@ SCHEDULE = {'horizon': 'Sep - Dec 2026',
          'execute at POEMS. Every dated commitment agreed with Salee. Amounts are budget room, not orders. Nothing '
          "executes automatically - each BUY line still needs Salee's instruction on the day. Rebuilt whenever a plan "
          'changes; see the change log for the reason behind each edit.',
- 'items': [{'d': '2026-10-28',
+ 'items': [{'d': '2026-11-05',
+            't': 'SPCX',
+            'k': 'earnings',
+            'a': 'DECIDE',
+            'amt': None,
+            'w': 'Q3 2026 results - the second public quarter AND the trigger for the largest lock-up release',
+            'cond': 'DATE ESTIMATED - SpaceX has not confirmed it; consensus expectation is early November. This '
+                    'single date is BOTH things at once: the second public quarter (the data the standing row has been '
+                    'waiting for) and the event that releases roughly 1.3 BILLION shares from lock-up. That is why it '
+                    'is the right moment to look and the wrong moment to pre-empt. || THE NUMBERS TO READ: whether the '
+                    'AI capex line is converting to revenue (Q2 was a 541m net loss on 15.83bn of AI capex against '
+                    '2.56bn of AI revenue), and whether revenue growth holds near the 91.9% posted in Q2. Consensus '
+                    'has 2026 revenue at 44.63bn and 2027 at 105.89bn - both about +138%. On consensus 2027 EPS of '
+                    '1.60 the stock trades at 92x; on 2026 EPS of 0.09 it is not meaningfully valued at all. || STILL '
+                    'NO BUDGET ASSIGNED. Do not assign one before this print.',
+            'c': 'estimated'},
+           {'d': '',
+            'dl': 'Rolling - Sep 9, Sep 24, Oct 9, Oct 24, Nov, Dec 8-9',
+            't': 'SPCX',
+            'k': 'supply',
+            'a': 'AVOID',
+            'amt': None,
+            'w': 'Lock-up expiry calendar - about 3.04 billion shares released between Sep and Dec 2026',
+            'cond': 'DO NOT BUY INTO THIS. Staggered releases per the Jun 11 2026 prospectus: 319m on Sep 9, ~328m on '
+                    'Sep 24, ~319m on Oct 9, ~319m on Oct 24, then roughly 1.3 BILLION on the Q3 earnings trigger in '
+                    "November, then 455.8m on Dec 8-9. Musk's own 6.42bn shares (48.4%) sit under a separate 366-day "
+                    'lock-up expiring Jun 2027. || The stock is already BELOW its 161 first-day close at 147.95 '
+                    'despite being up ~18% over the past month, and that is with only the earlier tranches released. '
+                    'Adding a further 3 billion shares of potential supply into a name with one public quarter of '
+                    'history is a reason to wait, not to hurry. Revisit only after the November release is absorbed.',
+            'c': 'standing'},
+           {'d': '2026-10-28',
             't': 'MSFT',
             'k': 'earnings',
             'a': 'DECIDE',
