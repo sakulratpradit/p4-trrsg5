@@ -3,299 +3,322 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ("Sep 7, 2026 - BUDGET RE-ALLOCATION AT SALEE'S INSTRUCTION. The six names marked for divestment have had their "
- 'budgets withdrawn and the freed capital redeployed. Allocated budget stays at exactly 1,000,000. || WITHDRAWN '
- '(-35,000): TSLA 10,000 and INTC, QCOM, AAOI, ONDS and IREN at 5,000 each, all set to no budget. ⚠️ THE POSITIONS ARE '
- 'STILL HELD until Salee reports the fills, so these six now show cost against a zero budget - that is correct, not an '
- 'error: it reads as capital committed to names the plan no longer funds. The Selling tab keeps its own snapshot of '
- 'the old budgets so nothing there is affected. || TIER 3 CONVICTION (+30,000, 10,000 each): AVGO 40,000 to 50,000, '
- 'ASML 30,000 to 40,000, MU 30,000 to 40,000. ⚠️ AVGO now sits at 50,000 and therefore MOVES FROM TIER 3 TO TIER 2, '
- 'joining GOOGL, TSM, MSFT, AMZN and META. ⚠️ AND THE HONEST CAVEAT: these three already had 30,899.18 of budget they '
- 'have NOT spent - AVGO 9,874.82, ASML 13,605.94, MU 7,418.42. Raising the ceilings does not buy a single share. It '
- 'roughly doubles their unfunded room to 60,899.18, and the existing MU rungs (4,000 on Sep 30, 3,418.42 on Dec 17) '
- 'now under-commit the room and need resizing at the next schedule rebuild. || PROMOTED TIER 5 TO TIER 4 (+20,000, '
- '5,000 each): APP, FSLR, SE and CAT, each 5,000 to 10,000. Chosen from the twenty names sitting at exactly 5,000. ⚠️ '
- 'ALAB was the obvious candidate on growth - revenue +98.5%, EPS +197% - but it carries 7,000, not 5,000, so promoting '
- 'it would have cost only 3,000 and left 2,000 stranded, breaking the arithmetic. It stays at 7,000. IONQ topped the '
- 'raw screen and was REJECTED: its 174.9% net margin is a non-operating-gain artifact already flagged on this board, '
- 'not a real margin. || CONCENTRATION BARELY MOVES: budget-weighted AI exposure goes 76.14% to 76.45%, up just 0.31 '
- 'points, because five of the six names losing budget were themselves AI or semiconductor. Four DECIDE rows added so '
- 'no promoted name sits on the board without a plan - the gap that was found on MSFT two days ago. || Sep 7, 2026 - '
- 'SPCX: LOCK-UP CALENDAR IS THE STORY, NOT THE PRICE TARGET. Salee sent two more graphics - one on why SpaceX chose '
- "Boca Chica, one headlined 'Oppenheimer upgraded SPCX to Buy, 280 target'. || ⚠️ THE 280 CALL IS NOT NEW AND NOT AN "
- "UPGRADE. It is the same Timothy Horan note of Sep 2-3 that underpinned the '48% rally' graphic Salee sent on Sep 6 - "
- 'the third presentation of ONE analyst action in three days, each framed as breaking. Oppenheimer MAINTAINED '
- "Outperform; the rating did not change, only the target, from 250 to 280. 'Upgraded to Buy' is wrong on both counts. "
- 'Two other houses were also unchanged in the same window: Morgan Stanley held 300, JP Morgan held 240. || ⚠️ THE '
- 'REASON TO WAIT IS SUPPLY. Per the Jun 11 prospectus, roughly 3.04 BILLION shares come off lock-up between Sep and '
- 'Dec 2026: 319m Sep 9, ~328m Sep 24, ~319m Oct 9, ~319m Oct 24, about 1.3 BILLION on the Q3 earnings trigger in '
- "November, and 455.8m on Dec 8-9. Musk's 6.42bn (48.4%) unlocks separately in Jun 2027. The stock already sits BELOW "
- 'its 161 first-day close at 147.95, and that is with only the early tranches out. Two Schedule rows added: an AVOID '
- 'on the lock-up calendar and a DECIDE on the Q3 print, which is both the second public quarter and the largest unlock '
- 'trigger. Still no budget assigned. || ON THE BOCA CHICA GRAPHIC - the physics is RIGHT and the conclusion is WRONG. '
- "Earth's rotational boost at the pad's 25.9875 N latitude computes to 418.1 m/s against the 418 claimed, and 28,000 "
- 'km/h is the correct orbital velocity. But Cape Canaveral at 28.608 N gives 408.3 m/s - a difference of just 9.8 m/s, '
- 'or 0.125% of the 7,778 m/s needed. Latitude was one of thirteen criteria in the 2014 FAA Record of Decision, '
- "alongside safety, accessibility, political stability and privately owned site; SpaceX's own 2014 release stressed "
- "'the facilitation of doing business in Texas' and local support. || ⚠️ AND THE GRAPHIC IS BEHIND THE FACTS. SpaceX "
- 'is shifting its centre of gravity to Florida: three Starship towers are under construction there (one at LC-39A, two '
- 'at SLC-37), approved cadence is 44 a year at LC-39A plus 76 at SLC-37 against just 25 at Starbase - Florida at 120 '
- 'is 4.8x Texas. Starbase Pad 1 has been offline since Oct 2025 and is not back until late 2026, leaving Pad 2 the '
- "only operational Starship pad on Earth. SpaceX VP Kiko Dontchev on Sep 5: 'From here on, Starlink missions out of "
- "Florida will fly on Starship.' A company abandoning a latitude it supposedly chose for latitude is the clearest "
- 'evidence that latitude was never the deciding factor. || Sep 7, 2026 - WEEKLY REFRESH & INTEGRITY AUDIT. Prices '
- 'verified at the Fri Sep 4 close (US markets closed Mon Sep 7, Labor Day). PENG applied at 51.76 (+6.44%), the one '
- 'name the Sep 4 daily job left unconfirmed - second-sourced via stockanalysis.com and Google Finance, mcapB scaled to '
- '2.6528 by the same ratio. QNT hi52/lo52 filled (86.79/46.54, stockanalysis.com) - they were null on a listed stock. '
- 'SPCX and QNT listings independently re-verified (SpaceX IPO Jun 12 2026 Nasdaq, Quantinuum IPO Jun 2026 Nasdaq; '
- 'prices/mcaps match the board): the Sep 6 correction stands, the QNT removal patch stays unapplied. AUDIT: implied '
- 'share counts clean (only APH moved, 2-for-1 split Sep 4, expected); no ticker flat 7+ days; NASD 493,545.18 + NYSE '
- '103,760.51 = 597,305.69 ties exactly; REALIZED/SOLD/MONTHLY byGroup mutually consistent (known NBIS 1-cent and '
- 'sale-time-group semantics unchanged). FLAGGED, NOT FIXED: (1) four Aug 5-7 fills (TSM 4.5sh, NVDA 9sh, CRM 10sh, '
- 'ISRG 5sh) imply ZERO commission - amount equals shares x price exactly, and the per-share prices look back-computed '
- 'from the amount; every other fill since Jul 28 implies the flat 8.56. Either those four amounts omit the 8.56 (book '
- 'cost understated ~34.24 total) or the price field folds commission in - needs the POEMS contract notes to settle; '
- 'TRADES untouched, only Salee changes fills. (2) TOTALS identity drift: investedEver - soldCost - heldCost = '
- '-9,210.82, was -5,653.61 at the Aug 31 weekly; the -3,557.21 widening this week is roughly the Sep 4 AVGO +4.5sh '
- 'reconciliation - investedEverUSD semantics vs booked cost should be pinned. (3) ath<hi52 on 29 names - consistent '
- 'with ath=highest CLOSE vs hi52=intraday, but the convention is still not pinned in the README. pe deliberately null '
- 'on CRWD/FPS (near-zero eps). || Sep 6, 2026 - MSFT RUNG ADDED, closing a genuine gap in the plan. Salee asked '
- 'whether the four largest companies in a viral graphic had any place in the next three months of the schedule. '
- 'Checking it exposed an oversight of mine: GOOGL had a dated tranche (20,524.08 on Nov 19, unlocked by the Oct 2 '
- 'ad-tech judgment), NVDA had a rung plus two standing limits (8,000 on Nov 18, then 7,000 at or below 200 and '
- '5,619.72 at or below 180), AAPL was deliberately parked on price - but MSFT, the third-largest holding at 52,878.96 '
- 'with 7,121.04 of room, had NO row of any kind. It simply fell through when the tranches were built. A rung now sits '
- "on the Q1 FY2027 print. || ⚠️ THE DATE IS ESTIMATED, NOT CONFIRMED. Microsoft's investor site says only that the "
- "next release 'will be announced soon'. Oct 28 is inferred from the pattern - the last four reports were all "
- 'Wednesdays (Oct 29 2025, Jan 28, Apr 29 and Jul 29 2026) - and one source says Oct 29 instead. Confirm before '
- 'acting. || THE CONDITION IS NOT AZURE. Azure is guided to ACCELERATE to about 45% constant currency from 43%, and '
- 'passed 100bn of annual revenue for the first time; Microsoft 365 Copilot passed 30 million paid seats. That part '
- 'works. The risk is the spend: capex was 115.9bn in FY2026 against guidance of approximately 175bn for FY2027, up '
- 'about 51%, while total revenue is guided at 16-17%. Deploy only if Azure holds the guided ~45% AND the 175bn capex '
- 'number is not raised again. || ⚠️ AND THE GRAPHIC SALEE SENT WAS WRONG ON SEVEN OF EIGHT FIGURES. Verified against '
- 'two independent sources: it showed MSFT at 2.92T against a true 3.71T (-21%), AAPL 4.05T against 4.67T (-13%), GOOGL '
- '3.77T against 4.14T (-9%) and NVDA 4.44T against 5.56T (-20%). Its 2015 bases were wrong too - MSFT was 443B not '
- '391B, AAPL 587B not 531B. Worse, none of its four multipliers reconciles with the two numbers printed directly above '
- 'it: 2920 divided by 391 is 7.47, not the 6.69 shown. The true multipliers are MSFT 8.4x, AAPL 8.0x, GOOGL 7.7x and '
- "NVDA 313.6x - the bad arithmetic had ranked AAPL the weakest compounder when it actually beat GOOGL. The board's own "
- 'market caps matched the verified figures on all four. || Sep 6, 2026 - ⚠️ CLAUDE WAS WRONG ABOUT SPCX AND HAS '
- "CORRECTED IT. On Sep 5 I told Salee that SPCX was probably a bad board entry because 'SpaceX is a private company', "
- 'and I called the 2,007.68 market cap absurd. BOTH STATEMENTS WERE FALSE AND THE BOARD WAS RIGHT. SpaceX completed '
- 'its IPO on Jun 12 2026 at 135 dollars a share, trades on Nasdaq under SPCX, and SEC EDGAR confirms CIK 0001181412 '
- "with ticker SPCX and exchange Nasdaq. Market cap at the Sep 4 close was 2.01 trillion - the board's figure was "
- 'accurate to three decimal places. My knowledge cutoff is May 2026 and the IPO happened in June; I asserted a '
- "post-cutoff fact from memory instead of checking it, which is precisely the error I keep flagging in other people's "
- 'graphics. || ⚠️ CONSEQUENCE FOR QNT: the same Sep 5 flag claimed Quantinuum was private too. That reasoning is now '
- 'untrustworthy. A cloud session prepared a QNT removal patch on Sep 6 which has NOT been pushed. DO NOT APPLY IT '
- "until QNT's listing status is independently verified. QNT stays on the board for now. || ON THE VIRAL GRAPHIC Salee "
- "sent ('SpaceX stock eyes 48% rally as Starship Flight 14 and 280 target fuel bullish outlook'): the ticker is real "
- 'and every number traces to a real source, but they are spliced into a claim no analyst makes. The 48% is upside to '
- 'the CONSENSUS AVERAGE target of 222.32 across 35 analysts. The 280 is Oppenheimer alone (Tim Horan, Sep 2-3, raised '
- 'from 250), which implies about 87-89% from the 147.95 close - not 48%. Putting the two side by side welds a '
- "consensus percentage onto an outlier bank's target. The 'BUY' badge is the consensus rating; Oppenheimer's own "
- 'rating is reported as Outperform or Overweight, not Buy. || ⚠️ AND FLIGHT 14 HAS NOT FLOWN. It is no-earlier-than '
- 'Sep 15 2026 per an FCC filing dated Aug 31. The graphic presents an unflown, un-de-risked test as an accomplished '
- 'catalyst. The most recent flight is Flight 13 on Jul 24: the ship deployed 20 Starlink V3 satellites and survived '
- 'splashdown intact for the first time, but the booster relit only 10 of its engines and was destroyed on water '
- 'impact. That is a partial success, not a clean one. || WHAT THE GRAPHIC OMITS: SPCX at 147.95 trades BELOW its 161 '
- 'first-day close. Q2 showed a 541m net loss on 15.83bn of AI capex against 2.56bn of AI revenue. Net margin is '
- '-35.66%. Analyst targets span 117 to 450 with one house at 800. || NO POSITION, BUDGET OR PRICE CHANGED. No budget '
- 'assigned to SPCX. Two Schedule rows added: Flight 14 as a WATCH that explicitly is NOT a buy trigger, and a standing '
- 'row saying wait for a second public quarter before assigning any budget. || Sep 6, 2026 - RKLB BUY PLAN RESTRUCTURED '
- "ON THE SCHEDULE TAB at Salee's instruction, replacing the single Tranche-2 line (8,057.42 dated Oct 9) with three "
- 'rungs totalling exactly the room: (1) LIMIT 2,000 at any close <=55; (2) TRIGGER 2,000 on the Iridium financing '
- "pricing day, deployable only if total equity dilution <=15% - the $8.0bn deal's $3.6bn bridge loan is the live "
- "overhang (S-4 filed Aug 13, 'capital strategy underway'); (3) TRIGGER 4,057.42 after de-risking - a successful "
- "Neutron first flight (the 'Q4 2026' date is pad delivery, not launch) or deal close on sane terms. Rationale "
- "recorded: Berenberg's Sep 3 initiation (Buy, PT 83, 'most compelling and differentiated long-term asset in the space "
- "sector') is a real note but sits BELOW the 18-analyst mean of 112.94 - a conservative Buy, and no reason to chase a "
- '+12% day. Position 23 sh at 84.46 avg (-24%); the plan forbids averaging down beyond rung 1 merely to repair the '
- 'lot. The Nov 9 RKLB earnings WATCH row is unchanged. No prices, budgets, positions or other tabs touched. || Sep 6, '
- '2026 - WEEKLY REFRESH AND INTEGRITY AUDIT. The Sep 4 daily job reverted twelve >=6% movers it could not '
- 'second-source before its search budget ran out; this weekly run re-verified them. TEN CONFIRMED against a second '
- 'independent dated source and applied at the Friday Sep 4 close with --allow, mcapB/pe/fpe/ps/peg rescaled by the '
- "exact price ratio per convention: SNDK 1,740.00 +11.90% (Google Finance 'Closed Sep 4, 4:00 PM GMT-4' agrees with "
- 'stockanalysis to the cent), SKHY 177.00 +8.14% (GF + stockanalysis agree; the 24/7 Wall St intraday 174.38 was '
- 'pre-close), BE 252.87 +7.35% (Motley Fool article of Sep 5 quotes 252.87 +17.32 exactly), KLAC 185.60 +7.32% (GF '
- 'concurs, prev close ties to 172.94), IREN 44.68 +7.27% (GF dated close, +3.03 ties to the 41.65 board value), ADBE '
- '266.51 -6.73% (24/7 Wall St Sep 4 CEO-succession piece quotes 266.51 -6.73% verbatim; GuruFocus concurs on a ~6-7% '
- 'Friday fall), FPS 31.35 +6.56% off the Sep 2 close (Motley Fool at-close quote; GF intraday 31.44 at 11:29 AM '
- 'concurs on level - accepted on the HNGE precedent, caveat recorded), SITM 612.09 +6.55% (Fool quote page shows '
- '612.09 dated Sep 4 exactly, CAVEAT: its own day-change figure +1.07% implies a different Sep 3 close than the '
- "board's 574.47 - price corroborated, prior-day linkage not), NRG 119.02 +6.42% (GF dated close + Fool concur, open "
- "111.29 ties to the board's 111.84 Sep 3 value), STX 849.28 +6.34% (GF dated close +50.67 ties exactly). ONE NOT "
- 'CONFIRMED: PENG - GF still shows the Sep 3 close 48.63, Yahoo is stuck at Sep 1, CNN unusable; the pending 51.76 '
- 'single-source print stays UNAPPLIED per the stale-beats-wrong rule and PENG remains at 48.63 with pxd 2026-09-03 '
- 'showing honestly. Next daily run should confirm it. || AUDIT RESULTS, the checks the daily jobs cannot do. CLEAN: '
- 'implied share counts (mcapB/price) moved <1% on every name against the Aug 31 weekly build except APH, which doubled '
- "- the known 2-for-1 split applied in the Sep 4 POEMS reconciliation, correct; no ticker's price is stuck 7+ days "
- '(worst is PENG at 2 sessions); broker subtotals tie the Sep 4 POEMS screen to the cent - NASDAQ held cost 493,545.18 '
- '+ NYSE 103,760.51 = 597,305.69; every fill since Jul 28 implies exactly the flat 8.56 POEMS commission (SKHY 8.57 / '
- "META 8.54 are fractional-share rounding); REALIZED, SOLD and MONTHLY byGroup are mutually consistent - July's "
- 'byGroup ties byStock exactly under sale-time groups. FLAGGED, NOT FIXED: (1) NBIS realized gain is 1,404.52 in '
- 'REALIZED but 1,404.51 in SOLD and MONTHLY - one cent, TOTALS ties to REALIZED; needs the POEMS figure to settle '
- 'which. (2) Realized P&L attributes to SALE-TIME groups: IREN g13, ORCL g10, SNPS g10, APP g10 predate the Aug 31 '
- "reclassification sweep (now g21/g13/g1/g19), so per-group realized figures reflect history, not today's grouping - "
- 'semantics to be aware of, not corruption. (3) SNDK carries ath 1,804.00 BELOW hi52 2,354.39 and SITM ath 901.48 '
- 'fractionally below hi52 901.81 - an all-time high cannot sit under a 52-week high unless ath means highest CLOSE and '
- 'hi52 intraday; convention should be pinned and the two values re-sourced. (4) SNDK lo52 40.10 against a 1,740 price '
- 'is a 43x 52-week range - plausible for the Feb-2025 spin-off in a memory supercycle but worth one look at POEMS. '
- 'FIXED THIS RUN: the vestigial STOCKS.budget field had drifted from the authoritative POS budgets on 10 names (NVDA '
- 'still showed 85,000 vs the 100,000 set Aug 27; FSLR, ONDS, IONQ, V, HUBB, AEP, SE, CAT, IREN showed None vs their '
- '5,000 POS budgets) - synced to POS, which is what every page component actually reads, so nothing rendered changes. '
- 'POS, TRADES, CASH, fundamentals untouched. IREN NOTE FOR THE SELLING TAB: the confirmed 44.68 close is 7.3% ABOVE '
- 'the 41.65 carried on the IREN sell row; estimated proceeds there are now understated - no action taken, Salee '
- "executes. || Sep 5, 2026 - SELLING TAB ADDED at Salee's request as a control sheet for the liquidation programme. It "
- "carries, per name: shares, average cost, last close, target price or 'at market', estimated net proceeds, profit or "
- 'loss, conviction, timing, the full reasoning, what happens to the budget after the sale, and a status of planned / '
- 'placed / filled / cancelled. Estimated proceeds are net of the 8.56 flat POEMS commission - six sales cost 51.36 in '
- 'total, which is why net proceeds are 14,110.13 against 14,161.49 gross, and net profit across the six is 711.69 '
- 'rather than 763.05. || The sheet reads shares and cost live from the position book, so it cannot drift from the '
- 'board, and falls back to stored values once a position is sold. A SELL DISCIPLINE panel records five standing rules, '
- 'the first being: sell the thesis, not the price - three of the six are at a loss and one is up 112%, and that spread '
- 'is deliberate. || ⚠️ THE TAB STATES PROMINENTLY THAT CLAUDE DOES NOT PLACE TRADES. Every row is an instruction for '
- 'Salee to execute at POEMS; no position, cost or cash figure moves until he reports a fill. || Rows: TSLA and INTC at '
- 'market (High conviction), ONDS at market with a limit if the spread is wide because the stock is thin (High), then '
- 'IREN at 41.65, AAOI at 105.53 and QCOM at 168.74, all Medium and none urgent. || Build note: SELLBOOK was added to '
- 'the CONSTS list in BOTH gen_dashboard.py and extract_data.py. A data block missing from either list is silently '
- 'wiped on the next refresh. Verified by round-trip plus a headless Chromium render - no page errors, no horizontal '
- 'overflow, all six reasoning blocks wrap without clipping. || Sep 5, 2026 - GPT-6 ASTRA ASSESSED (OpenAI, announced '
- 'Sep 3). Salee asked whether it opens a new chapter for AI and who benefits. Five watch/decide rows added to this '
- 'Schedule. || WHAT IT IS: a frontier model, not a new product category - 1,050,000 token context, 10 dollars in / 50 '
- "dollars out per million tokens (a 2.5x price rise), served on OpenAI's API, Azure and AWS Bedrock. The real advance "
- 'is computer use: 72.6% on OSWorld in about 40 minutes per task versus 65.7% in about 75 minutes for the prior model. '
- "|| ⚠️ THE 'STEP CHANGE' CLAIM IS CONTESTED AND SHOULD NOT BE TRADED AS FACT. Epoch AI ranked Astra first across 50+ "
- "tests; Artificial Analysis scored it flat versus its predecessor and BEHIND Anthropic's Claude Fable 5.1. OpenAI's "
- 'headline 99.9% on ARC-AGI-3 was 62.7% when ARC Prize ran the same model on their own standard harness - a 37-point '
- 'gap that is scaffolding, not model. OpenAI also edited published figures after release (hallucination rate 4.2% to '
- "2% and back to 4.2%), and Stanford researchers raised 'benchmaxxing' concerns. Against that, Francois Chollet - who "
- 'built the benchmark and has no stake in OpenAI - said progress came about twice as fast as he expected and moved his '
- 'AGI forecast earlier. Genuine disagreement, not a settled result. || ⚠️ THE ANNOUNCEMENT SAYS NOTHING ABOUT CHIPS. '
- 'Not one word about GPUs, silicon, data centres or Stargate. Every compute deal being quoted alongside this news '
- 'predates Astra: NVDA 10GW (Sep 2025), AMD 6GW plus a 160m-share warrant (Oct 2025), the Broadcom-built Jalapeno chip '
- "(Jun 2026), AWS 38bn (Nov 2025), ORCL over 300bn (Sep 2025), Azure 250bn with a 27% stake (Oct 2025). 'Buy a chip "
- "stock because of Astra' is a narrative, not a fact - the contracts were signed long before. || ⚠️ AND THE "
- 'MARKET-REACTION STORY IS CONFOUNDED. No sourced attribution of any share-price move to Astra was found. NVDA '
- 'announced the acquisition of Hugging Face for 12.93bn on the SAME DAY. Any Sep 3-4 move cannot be cleanly assigned '
- 'to Astra, and for NVDA the acquisition is plausibly the larger news. || WHERE THE REAL LINK IS: token consumption. '
- 'Agents running 40-minute autonomous tasks burn far more tokens than chat, at 2.5x the price. That feeds inference '
- 'silicon, memory, interconnect and power over 12-24 months - it does not show up in a two-day price move. Most direct '
- 'listed beneficiaries in this book are MSFT (27% owner of OpenAI, Azure serves Astra), AMZN (Bedrock serves Astra, '
- '38bn deal) and ORCL (largest contract, weakest balance sheet). || THE UNDER-OWNED ANGLE IS CYBERSECURITY, and it is '
- 'the only causal chain Astra actually created rather than inherited. First model ever rated Critical for cyber '
- 'capability. CRWD and PANW carry only 0.66% and 0.63% of the book with 12,325 of combined room. Rungs added to this '
- "Schedule, both conditional on results, not on the theme. || ON THE 'AI KILLS SAAS' STORY: not substantiated for "
- 'Astra. The piece being circulated is dated Feb 10, 2026, seven months before Astra existed. Our own Aug 29 review '
- 'found all eleven SaaS names raised or maintained guidance and none blamed AI. || NO POSITIONS, BUDGETS OR PRICES '
- "CHANGED. No trade is recommended on this news alone. || Sep 5, 2026 - BOARD FOCUSED AT SALEE'S INSTRUCTION. He asked "
- 'to cut the watchlist back to names that fit a 5-10 year growth mandate and to free up attention. 46 further names '
- 'removed, taking the board 178 -> 132: 26 loss-making or shrinking small caps with no path to profit, the 5 remaining '
- 'bitcoin miners as off-thesis, 14 mature low-growth names that cannot compound at the required rate, and Nu Holdings '
- 'for consistency with the Sep 5 decision to take Brazil out of the allocation. Watchlist 126 -> 80; 52 held positions '
- "untouched. || BUDGETS WITHDRAWN: Planet Labs 10,000 and McDonald's 5,000. Allocated budget therefore falls 1,000,000 "
- '-> 985,000, leaving 15,000 to be re-assigned to names that meet the mandate. || SIX HOLDINGS MARKED FOR LIQUIDATION '
- "at Salee's instruction, recorded on the Schedule tab as SELL rows. Claude does not and will not place trades - Salee "
- 'executes these at POEMS. Tesla (revenue +2.3%, EPS -37.4%, 163x forward), Intel (revenue +1.4%, loss-making, 86x '
- 'forward, sold into a +112% gain), Ondas (going-concern doubt), Applied Optoelectronics (loss-making at 55x forward), '
- 'IREN (bitcoin miner, -99.4% net margin) and Qualcomm (revenue +5.2%, EPS -6.3%). Combined proceeds ~14,161 at the '
- 'Sep 4 close for a net gain of ~763 across the six. || ⚠️ THE STATED REASON WAS WRONG AND SALEE SHOULD KNOW IT. He '
- 'asked to sell in order to free liquidity. He does not need liquidity: 402,694 of the 1,000,000 budget is still '
- 'unspent and another 200,000 arrives on Sep 14. The valid reason to sell these six is quality and attention, not '
- 'funding. Positions and costs are unchanged until he reports the fills. || Sep 5, 2026 - WATCHLIST CLEAN-UP BEGINS at '
- "Salee's instruction. He asked to cut the board back to names that fit a 5-10 year growth mandate, saying 129 "
- 'watchlist names were too many to digest. Three removed on his explicit list: MELI (consistent with the Sep 5 '
- 'decision to take Brazil out of the allocation entirely), SOUN (no path to profit - net margin -67.5%, return on '
- 'equity -32.2%) and UBER (a sound business but revenue growth 16.7% with earnings per share falling 22.5%, and '
- 'off-thesis for this book). Board 181 -> 178 names, 52 held, 126 watchlist. No positions, budgets or prices touched. '
- 'A tiered proposal for the remaining cut, plus liquidation candidates among the held names, has been put to Salee and '
- "awaits his decision. || Sep 5, 2026 - R&D SPENDING RECORDED FOR THE SEVEN MEGA-CAPS at Salee's request, saved to the "
- 'per-stock notes page. Latest reported fiscal year, US$ millions, every figure independently verified against SEC '
- 'filings: AMZN 108,521 (+22.6%) - GOOGL 61,087 (+23.8%) - META 57,372 (+30.8%) - MSFT 35,562 (+9.5%) - AAPL 34,550 '
- "(+10.1%) - NVDA 18,497 (+43.2%) - TSLA 6,411 (+41.2%). The six genuine research lines total 213,479. || ⚠️ AMZN's "
- "108,521 is its 'technology and infrastructure' line, not research and development. Amazon reports no R&D line at all "
- '- the tag does not exist in its SEC XBRL data - and that bucket also carries the running costs of AWS '
- 'infrastructure. Amazon leading this chart is an artifact of how the line is drawn, not research intensity, and it '
- 'must not be set beside the other six. || ⚠️ THE SOURCE GRAPHIC WAS WRONG ON MSFT. It printed 32,488 (+10.1%), which '
- 'is fiscal 2025 ended Jun 30 2025. Fiscal 2026 ended Jun 30 2026 and the 10-K was filed Jul 29 2026, before the '
- "graphic's own stated August 2026 cutoff, so the current figure was available and was not used. The true number is "
- '35,562 (+9.5%), which also lifts MSFT above AAPL to 4th place. Six of the seven figures matched the filings to the '
- "dollar; only MSFT did not. || Fiscal calendars are not aligned - NVDA's year ended Jan 25 2026, MSFT's Jun 30 2026, "
- "AAPL's Sep 27 2025, and the rest Dec 31 2025 - so this is not a like-for-like comparison of the same twelve months. "
- 'No board fields, budgets or positions were changed; this is reference information only. || Sep 6, 2026 - MU STRATEGY '
- 'REVISED. Micron closed at 1,016.59 on Sep 4, through the 1,000 level, +244.5% year-to-date from a Jan 2 base of '
- "295.13 and 19.0% below its 1,255 high. Salee's position - 35.45 shares at an average of 636.998 - is now worth "
- '~36,038 for a gain of ~13,457, up 59.6%. Room unchanged at 7,418.42 on a 30,000 budget; 3.78% of the book. || ⚠️ A '
- 'FLAW IN MY OWN PLAN, CORRECTED. The standing MU limit order at 750 now sits 26.2% BELOW the market. It would almost '
- 'certainly never fill, and if it did, a 26% collapse would be a reason to RE-UNDERWRITE the position, not to buy '
- 'automatically. A rule that cannot fire is not a rule. It has been DELETED and replaced with an evidence-based second '
- 'rung: 3,418.42 at the Q1 FY2027 print (~mid-December), deployable ONLY if DRAM bit shipments grow double-digit for a '
- 'SECOND consecutive quarter. Two in a row means the story has genuinely turned from price to volume; one is noise. '
- 'The 30 Sep rung is unchanged at 4,000 on the same bit-growth test plus gross margin >=80%. Total scheduled 7,418.42 '
- "= exactly the room. || ON THE 'SOLD OUT' HEADLINE, WHICH IS THE REASON THE STOCK IS RUNNING - it is weaker evidence "
- 'than it looks. The claim that all 2027 DRAM and HBM capacity at Samsung, SK hynix and Micron is booked traces to '
- "DigiTimes citing 'industry insiders' (Aug 4, 2026), NOT to a Micron disclosure; the same report mentions long-term "
- 'agreements of up to five years but states nothing about whether these are firm volume commitments, prepayments, or '
- "non-binding. Micron's own language in its prepared remarks is narrower: 'We expect tight conditions to persist "
- "beyond calendar 2027' - a statement about DURATION, not about being sold out. || ⚠️ THE DISTINCTION THAT MATTERS: "
- 'being sold out is about ALLOCATION, not PRICE. Fully committed capacity does not stop contracts repricing lower at '
- 'renewal, and TrendForce has DRAM contract price growth decelerating from +90-95% (1Q26) to +58-63% (2Q26) to +13-18% '
- "(3Q26). Micron's own CFO disclosed DRAM bits up 'low-single-digit percentage range' while prices rose in the "
- "'low-60s' - roughly 95% of revenue growth is price. FY2023 remains the precedent: revenue halved from 30,758m to "
- '15,540m and gross margin went NEGATIVE 9.1% on a 5.83bn loss. || CREDIT WHERE DUE - the source post was responsibly '
- 'balanced, naming cyclicality, a possible supply glut, competition from SK hynix and Samsung, and valuation risk '
- "after the rally. Its '+200% from ~315' is an understatement: Jan 2 295.13 to the 1,255 high is +325.2%. || A TRIM IS "
- 'NOW A LIVE OPTION, RECORDED NOT RECOMMENDED. Analyst fair value spans 361 to 2,200 across 45 analysts - a 6x spread, '
- 'which IS the cycle uncertainty made visible. Taking something off the table before Sep 30 is a legitimate choice and '
- "Salee's to make. Added as a standing HOLD line on the Schedule tab so it is visible rather than forgotten. || Sep 5, "
- "2026 - BOARD BROUGHT TO EXACTLY 1,000,000 at Salee's instruction to follow the standing budget recommendations. Two "
- 'budgets withdrawn, 5,000 each, both ZERO deployed so no position is stranded and no money moves. Assigned budget '
- '1,010,000 -> 1,000,000, i.e. 100.00% of target for the first time since LHX and FPS were added. Unfilled room '
- '412,694.31 -> 402,694.31. || (1) ZS ZSCALER - budget 5,000 -> None. Flagged as the standing trim candidate on four '
- 'separate occasions and the reason is now explicit in the data: it is the ONLY LOSS-MAKING name of the three '
- 'cybersecurity holdings, net margin -1.88% and ROE -2.43%, against PANW and CRWD which are both already deployed and '
- 'both showing large gains (+94% and +120% respectively). Forward P/E 36.55 with a PEG of 1.39. Group 15 Cybersecurity '
- '25,000 -> 20,000, which is still 2x its deployed 7,675. CONSEQUENCE: ZS was a 5,000 line in TRANCHE 1 of the '
- 'deployment plan, so Tranche 1 falls 75,697 -> 70,697 and the whole plan 197,311 -> 192,311. The buffer rises '
- 'correspondingly. || (2) AMPX AMPRIUS TECHNOLOGIES - budget 5,000 -> None. Net margin -43.98% and ROE -44.16% on a '
- '9.89 share price; revenue growth of 172.6% is off a very small base. It was the fifth name in group 8 Defence, '
- "Drones & Public Safety, behind PLTR (5,533 deployed), AVAV (3,758), ONDS (2,031) and LHX (5,000 budgeted at Salee's "
- 'own instruction). Group 8 budget 30,000 -> 25,000. Nothing was deployed and no thesis was ever written for it. || '
- 'WHY THESE TWO AND NOT OTHERS - every other zero-deployed budget was protected for a stated reason: V and MCD are '
- 'dated Tranche 1 lines; APP, PL, LUNR, FPS and LHX all carry explicit triggers set within the last three days; IONQ '
- "is the board's ONLY quantum name, so cutting it would delete a whole theme rather than trim a duplicate; CAT and AEP "
- 'are profitable industrials (ROE 56.97% and 10.13%). ZS and AMPX were the only zero-deployed budgets that were BOTH '
- 'loss-making AND redundant inside an already-funded group. || CONSIDERED AND REJECTED - ONDS was the other candidate '
- "on thesis grounds (previously recorded as carrying 'substantial doubt' language and +156% dilution), but it has "
- '2,030.54 deployed, so trimming it would have been a partial cut rather than a clean withdrawal, and its board fields '
- 'look internally suspect (pm 251.92%, roe 42.95% sit oddly against that thesis). Flagged for the fundamentals job to '
- 're-verify rather than acted on with data I do not trust. It remains the next candidate if the target is ever cut '
- 'below 1,000,000. || Held positions 52 and held cost 597,305.69 UNCHANGED. AI concentration unchanged at the held '
- 'level - this removes future headroom, not money. Board 181 tickers. || Sep 5, 2026 - THREE APPROVED BOARD ACTIONS '
- "EXECUTED TOGETHER at Salee's instruction. || (1) SPACE FUNDED BY TRIMMING TWO ON-HOLD AI-CORE NAMES. ALAB 15,000 -> "
- '7,000 (-8,000) and LITE 20,000 -> 13,000 (-7,000); both budgets remain ABOVE their deployed cost (ALAB 3,805.47, '
- 'LITE 9,372.74) so no position is stranded. The 15,000 goes to group 7 Space, which rises 10,000 -> 25,000: RKLB '
- 'unchanged at 10,000 (1,942.58 deployed), PL Planet Labs NEW 10,000, LUNR Intuitive Machines NEW 5,000. RATIONALE - '
- 'ALAB (fwd P/E 86.95) and LITE (ROE -149.3%) have both been on explicit hold for weeks, so their budgets were dead '
- 'money; Space carried 1.00% of a 1,005,000 target across six names, too little to express any view. This single move '
- 'funds the theme AND reduces AI-core budget, addressing the standing concentration problem from both ends. PL is the '
- 'only name in the group approaching profitability - Q2 FY27 revenue 116.1m +58%, adjusted EBITDA POSITIVE 13.9m, GAAP '
- 'loss narrowed from -22.6m to -9.4m, cash 865.4m against 448.3m of converts, backlog 814.9m. CAVEAT: PL guided next '
- 'quarter to 101-105m against 114.3m consensus, a sequential DECLINE - hence the trigger is the ~December print, not '
- 'now. LUNR revenue tripled to 206.2m with an 1.8bn backlog but debt went 37m -> 481m and shares +44.1% YoY; trigger '
- 'is IM-3 actually flying. SPCX and ASTS deliberately left unfunded (82x sales; a 231m quarterly loss with debt '
- '+492%). || (2) APP BUDGET SET AT 5,000. This corrects a documented discrepancy: the 200k deployment plan has stated '
- 'since Sep 3 that APP had a 5,000 budget, but the board carried None - the intent was written and never executed. '
- 'Recorded as an error, not a change of view. NOTHING DEPLOYED - the trigger remains the ~Nov 4 print. WHY APP IS '
- 'CHEAP, NOW ESTABLISHED: the fall from 745.61 to ~320 is DECELERATION, not fraud. Revenue growth ran 68% -> 66% -> '
- '59% -> 53% -> guided 47%, culminating in a -19.66% day on Aug 6 2026 after the first-ever guidance miss (Q2 revenue '
- "1,924m vs ~1,935m consensus). CEO Foroughi: 'Our pace of meaningful model improvement was lighter than normal during "
- "the quarter, and the next step up in model performance landed just after quarter end.' TWO OVERHANGS HAVE RESOLVED "
- "IN APP'S FAVOUR - CFO Matt Stumpf stated Aug 5 2026 that 'The SEC has recently advised us that it concluded its "
- "inquiry with no recommended action', and CapitalWatch RETRACTED its money-laundering report on Feb 9 2026 citing a "
- "'flawed verification process'. The 2025 Fuzzy Panda/Culper class action remains at motion-to-dismiss, undecided. "
- 'Short interest only 3.9% of float. Business quality intact: Q2 gross margin 88.3%, net income 1,267m +55%, free cash '
- 'flow 863m in the quarter. || (3) SIDU REMOVED FROM THE BOARD. Sidus Space had no budget and no position, so nothing '
- 'is lost. Q2 2026 revenue FELL 54% to 583k while every peer in the group grew; gross margin is NEGATIVE 108%; share '
+ASOF = ('Sep 7, 2026 - TSLA: SELL AT MARKET CONFIRMED, AND A CORRECTION TO MY OWN REASONING. Salee asked whether to divest '
+ 'now or wait for fund flows after the Sep 15-16 FOMC. || ⚠️ I HAD THE REVENUE ARGUMENT WRONG AND HAVE FIXED THE '
+ 'SELLING TAB. I repeatedly told Salee that TSLA revenue grows 2.3%. That is the trailing-twelve-month figure off a '
+ 'weak base. The MOST RECENT QUARTER, Q2 2026 reported Jul 22, grew revenue 25.5% to 28,236m. Quoting the TTM number '
+ 'as though it described current trading was misleading and I should have checked it before repeating it. || THE SELL '
+ 'CASE IS STRONGER ON THE CORRECT NUMBERS, NOT WEAKER. In that same quarter operating income FELL 57% to 398m, '
+ 'operating margin went from 4.1% to 1.4%, free cash flow turned NEGATIVE 1,090m against positive 150m a year earlier, '
+ 'and regulatory-credit revenue collapsed 67% to 146m. Revenue up 26% while operating profit falls 57% and cash goes '
+ 'negative is a worse fact pattern than slow growth, not a better one. || ⚠️ BOARD DATA ERRORS TO FIX ON THE NEXT '
+ 'FUNDAMENTALS PASS: this board carries fpe 163.24 for TSLA; the verified forward P/E at the same Sep 4 close of '
+ "354.08 is 186.01, and trailing is 367.43. The board's revG of 2.3 is TTM and should be labelled as such or replaced "
+ '- it reads as though the company is not growing, which is not what the latest quarter says. || ⚠️ THE FOMC PREMISE '
+ 'IS BACKWARDS. Salee asked about waiting for post-decision fund flows, which assumes a cut. The market is pricing a '
+ 'HIKE: reported odds of a 25bp increase run roughly 50-66% across sources on Sep 4, the target range has sat at '
+ '3.50-3.75% since Dec 2025, and at the Jul 29 meeting THREE members - Hammack, Kashkari and Logan - dissented in '
+ 'favour of raising. At 186x forward with a 1.84 beta, TSLA is the most rate-exposed position in this book; a hike is '
+ 'precisely what compresses it. Waiting is not waiting for a tailwind. || AND A NEW COMPANY RISK: NHTSA opened Audit '
+ 'Query AQ26002 on Sep 3 into whether the Cybercab certification is valid at all - a legal question under the robotaxi '
+ 'thesis, not a defect probe. The stock fell 5.92% on Sep 4. China retail deliveries were -32.9% YoY in July, with '
+ 'quarter-end discounting launched Sep 2. A row was added to the Schedule. || PROPORTION CHECK, WHICH IS THE REAL '
+ 'ANSWER: the position is 3,540.80, or 0.593% of deployed capital. A 5% move either way is 177. Spending a week of '
+ 'attention timing that, on a name already judged to fail the mandate, is the opposite of the focus discipline agreed '
+ 'on Sep 5. Claude does not place trades; the SELL row stands for Salee to execute at POEMS. || Sep 7, 2026 - BUDGET '
+ "RE-ALLOCATION AT SALEE'S INSTRUCTION. The six names marked for divestment have had their budgets withdrawn and the "
+ 'freed capital redeployed. Allocated budget stays at exactly 1,000,000. || WITHDRAWN (-35,000): TSLA 10,000 and INTC, '
+ 'QCOM, AAOI, ONDS and IREN at 5,000 each, all set to no budget. ⚠️ THE POSITIONS ARE STILL HELD until Salee reports '
+ 'the fills, so these six now show cost against a zero budget - that is correct, not an error: it reads as capital '
+ 'committed to names the plan no longer funds. The Selling tab keeps its own snapshot of the old budgets so nothing '
+ 'there is affected. || TIER 3 CONVICTION (+30,000, 10,000 each): AVGO 40,000 to 50,000, ASML 30,000 to 40,000, MU '
+ '30,000 to 40,000. ⚠️ AVGO now sits at 50,000 and therefore MOVES FROM TIER 3 TO TIER 2, joining GOOGL, TSM, MSFT, '
+ 'AMZN and META. ⚠️ AND THE HONEST CAVEAT: these three already had 30,899.18 of budget they have NOT spent - AVGO '
+ '9,874.82, ASML 13,605.94, MU 7,418.42. Raising the ceilings does not buy a single share. It roughly doubles their '
+ 'unfunded room to 60,899.18, and the existing MU rungs (4,000 on Sep 30, 3,418.42 on Dec 17) now under-commit the '
+ 'room and need resizing at the next schedule rebuild. || PROMOTED TIER 5 TO TIER 4 (+20,000, 5,000 each): APP, FSLR, '
+ 'SE and CAT, each 5,000 to 10,000. Chosen from the twenty names sitting at exactly 5,000. ⚠️ ALAB was the obvious '
+ 'candidate on growth - revenue +98.5%, EPS +197% - but it carries 7,000, not 5,000, so promoting it would have cost '
+ 'only 3,000 and left 2,000 stranded, breaking the arithmetic. It stays at 7,000. IONQ topped the raw screen and was '
+ 'REJECTED: its 174.9% net margin is a non-operating-gain artifact already flagged on this board, not a real margin. '
+ '|| CONCENTRATION BARELY MOVES: budget-weighted AI exposure goes 76.14% to 76.45%, up just 0.31 points, because five '
+ 'of the six names losing budget were themselves AI or semiconductor. Four DECIDE rows added so no promoted name sits '
+ 'on the board without a plan - the gap that was found on MSFT two days ago. || Sep 7, 2026 - SPCX: LOCK-UP CALENDAR '
+ 'IS THE STORY, NOT THE PRICE TARGET. Salee sent two more graphics - one on why SpaceX chose Boca Chica, one headlined '
+ "'Oppenheimer upgraded SPCX to Buy, 280 target'. || ⚠️ THE 280 CALL IS NOT NEW AND NOT AN UPGRADE. It is the same "
+ "Timothy Horan note of Sep 2-3 that underpinned the '48% rally' graphic Salee sent on Sep 6 - the third presentation "
+ 'of ONE analyst action in three days, each framed as breaking. Oppenheimer MAINTAINED Outperform; the rating did not '
+ "change, only the target, from 250 to 280. 'Upgraded to Buy' is wrong on both counts. Two other houses were also "
+ 'unchanged in the same window: Morgan Stanley held 300, JP Morgan held 240. || ⚠️ THE REASON TO WAIT IS SUPPLY. Per '
+ 'the Jun 11 prospectus, roughly 3.04 BILLION shares come off lock-up between Sep and Dec 2026: 319m Sep 9, ~328m Sep '
+ '24, ~319m Oct 9, ~319m Oct 24, about 1.3 BILLION on the Q3 earnings trigger in November, and 455.8m on Dec 8-9. '
+ "Musk's 6.42bn (48.4%) unlocks separately in Jun 2027. The stock already sits BELOW its 161 first-day close at "
+ '147.95, and that is with only the early tranches out. Two Schedule rows added: an AVOID on the lock-up calendar and '
+ 'a DECIDE on the Q3 print, which is both the second public quarter and the largest unlock trigger. Still no budget '
+ "assigned. || ON THE BOCA CHICA GRAPHIC - the physics is RIGHT and the conclusion is WRONG. Earth's rotational boost "
+ "at the pad's 25.9875 N latitude computes to 418.1 m/s against the 418 claimed, and 28,000 km/h is the correct "
+ 'orbital velocity. But Cape Canaveral at 28.608 N gives 408.3 m/s - a difference of just 9.8 m/s, or 0.125% of the '
+ '7,778 m/s needed. Latitude was one of thirteen criteria in the 2014 FAA Record of Decision, alongside safety, '
+ "accessibility, political stability and privately owned site; SpaceX's own 2014 release stressed 'the facilitation of "
+ "doing business in Texas' and local support. || ⚠️ AND THE GRAPHIC IS BEHIND THE FACTS. SpaceX is shifting its centre "
+ 'of gravity to Florida: three Starship towers are under construction there (one at LC-39A, two at SLC-37), approved '
+ 'cadence is 44 a year at LC-39A plus 76 at SLC-37 against just 25 at Starbase - Florida at 120 is 4.8x Texas. '
+ 'Starbase Pad 1 has been offline since Oct 2025 and is not back until late 2026, leaving Pad 2 the only operational '
+ "Starship pad on Earth. SpaceX VP Kiko Dontchev on Sep 5: 'From here on, Starlink missions out of Florida will fly on "
+ "Starship.' A company abandoning a latitude it supposedly chose for latitude is the clearest evidence that latitude "
+ 'was never the deciding factor. || Sep 7, 2026 - WEEKLY REFRESH & INTEGRITY AUDIT. Prices verified at the Fri Sep 4 '
+ 'close (US markets closed Mon Sep 7, Labor Day). PENG applied at 51.76 (+6.44%), the one name the Sep 4 daily job '
+ 'left unconfirmed - second-sourced via stockanalysis.com and Google Finance, mcapB scaled to 2.6528 by the same '
+ 'ratio. QNT hi52/lo52 filled (86.79/46.54, stockanalysis.com) - they were null on a listed stock. SPCX and QNT '
+ 'listings independently re-verified (SpaceX IPO Jun 12 2026 Nasdaq, Quantinuum IPO Jun 2026 Nasdaq; prices/mcaps '
+ 'match the board): the Sep 6 correction stands, the QNT removal patch stays unapplied. AUDIT: implied share counts '
+ 'clean (only APH moved, 2-for-1 split Sep 4, expected); no ticker flat 7+ days; NASD 493,545.18 + NYSE 103,760.51 = '
+ '597,305.69 ties exactly; REALIZED/SOLD/MONTHLY byGroup mutually consistent (known NBIS 1-cent and sale-time-group '
+ 'semantics unchanged). FLAGGED, NOT FIXED: (1) four Aug 5-7 fills (TSM 4.5sh, NVDA 9sh, CRM 10sh, ISRG 5sh) imply '
+ 'ZERO commission - amount equals shares x price exactly, and the per-share prices look back-computed from the amount; '
+ 'every other fill since Jul 28 implies the flat 8.56. Either those four amounts omit the 8.56 (book cost understated '
+ '~34.24 total) or the price field folds commission in - needs the POEMS contract notes to settle; TRADES untouched, '
+ 'only Salee changes fills. (2) TOTALS identity drift: investedEver - soldCost - heldCost = -9,210.82, was -5,653.61 '
+ 'at the Aug 31 weekly; the -3,557.21 widening this week is roughly the Sep 4 AVGO +4.5sh reconciliation - '
+ 'investedEverUSD semantics vs booked cost should be pinned. (3) ath<hi52 on 29 names - consistent with ath=highest '
+ 'CLOSE vs hi52=intraday, but the convention is still not pinned in the README. pe deliberately null on CRWD/FPS '
+ '(near-zero eps). || Sep 6, 2026 - MSFT RUNG ADDED, closing a genuine gap in the plan. Salee asked whether the four '
+ 'largest companies in a viral graphic had any place in the next three months of the schedule. Checking it exposed an '
+ 'oversight of mine: GOOGL had a dated tranche (20,524.08 on Nov 19, unlocked by the Oct 2 ad-tech judgment), NVDA had '
+ 'a rung plus two standing limits (8,000 on Nov 18, then 7,000 at or below 200 and 5,619.72 at or below 180), AAPL was '
+ 'deliberately parked on price - but MSFT, the third-largest holding at 52,878.96 with 7,121.04 of room, had NO row of '
+ 'any kind. It simply fell through when the tranches were built. A rung now sits on the Q1 FY2027 print. || ⚠️ THE '
+ "DATE IS ESTIMATED, NOT CONFIRMED. Microsoft's investor site says only that the next release 'will be announced "
+ "soon'. Oct 28 is inferred from the pattern - the last four reports were all Wednesdays (Oct 29 2025, Jan 28, Apr 29 "
+ 'and Jul 29 2026) - and one source says Oct 29 instead. Confirm before acting. || THE CONDITION IS NOT AZURE. Azure '
+ 'is guided to ACCELERATE to about 45% constant currency from 43%, and passed 100bn of annual revenue for the first '
+ 'time; Microsoft 365 Copilot passed 30 million paid seats. That part works. The risk is the spend: capex was 115.9bn '
+ 'in FY2026 against guidance of approximately 175bn for FY2027, up about 51%, while total revenue is guided at 16-17%. '
+ 'Deploy only if Azure holds the guided ~45% AND the 175bn capex number is not raised again. || ⚠️ AND THE GRAPHIC '
+ 'SALEE SENT WAS WRONG ON SEVEN OF EIGHT FIGURES. Verified against two independent sources: it showed MSFT at 2.92T '
+ 'against a true 3.71T (-21%), AAPL 4.05T against 4.67T (-13%), GOOGL 3.77T against 4.14T (-9%) and NVDA 4.44T against '
+ '5.56T (-20%). Its 2015 bases were wrong too - MSFT was 443B not 391B, AAPL 587B not 531B. Worse, none of its four '
+ 'multipliers reconciles with the two numbers printed directly above it: 2920 divided by 391 is 7.47, not the 6.69 '
+ 'shown. The true multipliers are MSFT 8.4x, AAPL 8.0x, GOOGL 7.7x and NVDA 313.6x - the bad arithmetic had ranked '
+ "AAPL the weakest compounder when it actually beat GOOGL. The board's own market caps matched the verified figures on "
+ 'all four. || Sep 6, 2026 - ⚠️ CLAUDE WAS WRONG ABOUT SPCX AND HAS CORRECTED IT. On Sep 5 I told Salee that SPCX was '
+ "probably a bad board entry because 'SpaceX is a private company', and I called the 2,007.68 market cap absurd. BOTH "
+ 'STATEMENTS WERE FALSE AND THE BOARD WAS RIGHT. SpaceX completed its IPO on Jun 12 2026 at 135 dollars a share, '
+ 'trades on Nasdaq under SPCX, and SEC EDGAR confirms CIK 0001181412 with ticker SPCX and exchange Nasdaq. Market cap '
+ "at the Sep 4 close was 2.01 trillion - the board's figure was accurate to three decimal places. My knowledge cutoff "
+ 'is May 2026 and the IPO happened in June; I asserted a post-cutoff fact from memory instead of checking it, which is '
+ "precisely the error I keep flagging in other people's graphics. || ⚠️ CONSEQUENCE FOR QNT: the same Sep 5 flag "
+ 'claimed Quantinuum was private too. That reasoning is now untrustworthy. A cloud session prepared a QNT removal '
+ "patch on Sep 6 which has NOT been pushed. DO NOT APPLY IT until QNT's listing status is independently verified. QNT "
+ "stays on the board for now. || ON THE VIRAL GRAPHIC Salee sent ('SpaceX stock eyes 48% rally as Starship Flight 14 "
+ "and 280 target fuel bullish outlook'): the ticker is real and every number traces to a real source, but they are "
+ 'spliced into a claim no analyst makes. The 48% is upside to the CONSENSUS AVERAGE target of 222.32 across 35 '
+ 'analysts. The 280 is Oppenheimer alone (Tim Horan, Sep 2-3, raised from 250), which implies about 87-89% from the '
+ "147.95 close - not 48%. Putting the two side by side welds a consensus percentage onto an outlier bank's target. The "
+ "'BUY' badge is the consensus rating; Oppenheimer's own rating is reported as Outperform or Overweight, not Buy. || "
+ '⚠️ AND FLIGHT 14 HAS NOT FLOWN. It is no-earlier-than Sep 15 2026 per an FCC filing dated Aug 31. The graphic '
+ 'presents an unflown, un-de-risked test as an accomplished catalyst. The most recent flight is Flight 13 on Jul 24: '
+ 'the ship deployed 20 Starlink V3 satellites and survived splashdown intact for the first time, but the booster relit '
+ 'only 10 of its engines and was destroyed on water impact. That is a partial success, not a clean one. || WHAT THE '
+ 'GRAPHIC OMITS: SPCX at 147.95 trades BELOW its 161 first-day close. Q2 showed a 541m net loss on 15.83bn of AI capex '
+ 'against 2.56bn of AI revenue. Net margin is -35.66%. Analyst targets span 117 to 450 with one house at 800. || NO '
+ 'POSITION, BUDGET OR PRICE CHANGED. No budget assigned to SPCX. Two Schedule rows added: Flight 14 as a WATCH that '
+ 'explicitly is NOT a buy trigger, and a standing row saying wait for a second public quarter before assigning any '
+ "budget. || Sep 6, 2026 - RKLB BUY PLAN RESTRUCTURED ON THE SCHEDULE TAB at Salee's instruction, replacing the single "
+ 'Tranche-2 line (8,057.42 dated Oct 9) with three rungs totalling exactly the room: (1) LIMIT 2,000 at any close '
+ '<=55; (2) TRIGGER 2,000 on the Iridium financing pricing day, deployable only if total equity dilution <=15% - the '
+ "$8.0bn deal's $3.6bn bridge loan is the live overhang (S-4 filed Aug 13, 'capital strategy underway'); (3) TRIGGER "
+ "4,057.42 after de-risking - a successful Neutron first flight (the 'Q4 2026' date is pad delivery, not launch) or "
+ "deal close on sane terms. Rationale recorded: Berenberg's Sep 3 initiation (Buy, PT 83, 'most compelling and "
+ "differentiated long-term asset in the space sector') is a real note but sits BELOW the 18-analyst mean of 112.94 - a "
+ 'conservative Buy, and no reason to chase a +12% day. Position 23 sh at 84.46 avg (-24%); the plan forbids averaging '
+ 'down beyond rung 1 merely to repair the lot. The Nov 9 RKLB earnings WATCH row is unchanged. No prices, budgets, '
+ 'positions or other tabs touched. || Sep 6, 2026 - WEEKLY REFRESH AND INTEGRITY AUDIT. The Sep 4 daily job reverted '
+ 'twelve >=6% movers it could not second-source before its search budget ran out; this weekly run re-verified them. '
+ 'TEN CONFIRMED against a second independent dated source and applied at the Friday Sep 4 close with --allow, '
+ "mcapB/pe/fpe/ps/peg rescaled by the exact price ratio per convention: SNDK 1,740.00 +11.90% (Google Finance 'Closed "
+ "Sep 4, 4:00 PM GMT-4' agrees with stockanalysis to the cent), SKHY 177.00 +8.14% (GF + stockanalysis agree; the 24/7 "
+ 'Wall St intraday 174.38 was pre-close), BE 252.87 +7.35% (Motley Fool article of Sep 5 quotes 252.87 +17.32 '
+ 'exactly), KLAC 185.60 +7.32% (GF concurs, prev close ties to 172.94), IREN 44.68 +7.27% (GF dated close, +3.03 ties '
+ 'to the 41.65 board value), ADBE 266.51 -6.73% (24/7 Wall St Sep 4 CEO-succession piece quotes 266.51 -6.73% '
+ 'verbatim; GuruFocus concurs on a ~6-7% Friday fall), FPS 31.35 +6.56% off the Sep 2 close (Motley Fool at-close '
+ 'quote; GF intraday 31.44 at 11:29 AM concurs on level - accepted on the HNGE precedent, caveat recorded), SITM '
+ '612.09 +6.55% (Fool quote page shows 612.09 dated Sep 4 exactly, CAVEAT: its own day-change figure +1.07% implies a '
+ "different Sep 3 close than the board's 574.47 - price corroborated, prior-day linkage not), NRG 119.02 +6.42% (GF "
+ "dated close + Fool concur, open 111.29 ties to the board's 111.84 Sep 3 value), STX 849.28 +6.34% (GF dated close "
+ '+50.67 ties exactly). ONE NOT CONFIRMED: PENG - GF still shows the Sep 3 close 48.63, Yahoo is stuck at Sep 1, CNN '
+ 'unusable; the pending 51.76 single-source print stays UNAPPLIED per the stale-beats-wrong rule and PENG remains at '
+ '48.63 with pxd 2026-09-03 showing honestly. Next daily run should confirm it. || AUDIT RESULTS, the checks the daily '
+ 'jobs cannot do. CLEAN: implied share counts (mcapB/price) moved <1% on every name against the Aug 31 weekly build '
+ "except APH, which doubled - the known 2-for-1 split applied in the Sep 4 POEMS reconciliation, correct; no ticker's "
+ 'price is stuck 7+ days (worst is PENG at 2 sessions); broker subtotals tie the Sep 4 POEMS screen to the cent - '
+ 'NASDAQ held cost 493,545.18 + NYSE 103,760.51 = 597,305.69; every fill since Jul 28 implies exactly the flat 8.56 '
+ 'POEMS commission (SKHY 8.57 / META 8.54 are fractional-share rounding); REALIZED, SOLD and MONTHLY byGroup are '
+ "mutually consistent - July's byGroup ties byStock exactly under sale-time groups. FLAGGED, NOT FIXED: (1) NBIS "
+ 'realized gain is 1,404.52 in REALIZED but 1,404.51 in SOLD and MONTHLY - one cent, TOTALS ties to REALIZED; needs '
+ 'the POEMS figure to settle which. (2) Realized P&L attributes to SALE-TIME groups: IREN g13, ORCL g10, SNPS g10, APP '
+ 'g10 predate the Aug 31 reclassification sweep (now g21/g13/g1/g19), so per-group realized figures reflect history, '
+ "not today's grouping - semantics to be aware of, not corruption. (3) SNDK carries ath 1,804.00 BELOW hi52 2,354.39 "
+ 'and SITM ath 901.48 fractionally below hi52 901.81 - an all-time high cannot sit under a 52-week high unless ath '
+ 'means highest CLOSE and hi52 intraday; convention should be pinned and the two values re-sourced. (4) SNDK lo52 '
+ '40.10 against a 1,740 price is a 43x 52-week range - plausible for the Feb-2025 spin-off in a memory supercycle but '
+ 'worth one look at POEMS. FIXED THIS RUN: the vestigial STOCKS.budget field had drifted from the authoritative POS '
+ 'budgets on 10 names (NVDA still showed 85,000 vs the 100,000 set Aug 27; FSLR, ONDS, IONQ, V, HUBB, AEP, SE, CAT, '
+ 'IREN showed None vs their 5,000 POS budgets) - synced to POS, which is what every page component actually reads, so '
+ 'nothing rendered changes. POS, TRADES, CASH, fundamentals untouched. IREN NOTE FOR THE SELLING TAB: the confirmed '
+ '44.68 close is 7.3% ABOVE the 41.65 carried on the IREN sell row; estimated proceeds there are now understated - no '
+ "action taken, Salee executes. || Sep 5, 2026 - SELLING TAB ADDED at Salee's request as a control sheet for the "
+ "liquidation programme. It carries, per name: shares, average cost, last close, target price or 'at market', "
+ 'estimated net proceeds, profit or loss, conviction, timing, the full reasoning, what happens to the budget after the '
+ 'sale, and a status of planned / placed / filled / cancelled. Estimated proceeds are net of the 8.56 flat POEMS '
+ 'commission - six sales cost 51.36 in total, which is why net proceeds are 14,110.13 against 14,161.49 gross, and net '
+ 'profit across the six is 711.69 rather than 763.05. || The sheet reads shares and cost live from the position book, '
+ 'so it cannot drift from the board, and falls back to stored values once a position is sold. A SELL DISCIPLINE panel '
+ 'records five standing rules, the first being: sell the thesis, not the price - three of the six are at a loss and '
+ 'one is up 112%, and that spread is deliberate. || ⚠️ THE TAB STATES PROMINENTLY THAT CLAUDE DOES NOT PLACE TRADES. '
+ 'Every row is an instruction for Salee to execute at POEMS; no position, cost or cash figure moves until he reports a '
+ 'fill. || Rows: TSLA and INTC at market (High conviction), ONDS at market with a limit if the spread is wide because '
+ 'the stock is thin (High), then IREN at 41.65, AAOI at 105.53 and QCOM at 168.74, all Medium and none urgent. || '
+ 'Build note: SELLBOOK was added to the CONSTS list in BOTH gen_dashboard.py and extract_data.py. A data block missing '
+ 'from either list is silently wiped on the next refresh. Verified by round-trip plus a headless Chromium render - no '
+ 'page errors, no horizontal overflow, all six reasoning blocks wrap without clipping. || Sep 5, 2026 - GPT-6 ASTRA '
+ 'ASSESSED (OpenAI, announced Sep 3). Salee asked whether it opens a new chapter for AI and who benefits. Five '
+ 'watch/decide rows added to this Schedule. || WHAT IT IS: a frontier model, not a new product category - 1,050,000 '
+ "token context, 10 dollars in / 50 dollars out per million tokens (a 2.5x price rise), served on OpenAI's API, Azure "
+ 'and AWS Bedrock. The real advance is computer use: 72.6% on OSWorld in about 40 minutes per task versus 65.7% in '
+ "about 75 minutes for the prior model. || ⚠️ THE 'STEP CHANGE' CLAIM IS CONTESTED AND SHOULD NOT BE TRADED AS FACT. "
+ 'Epoch AI ranked Astra first across 50+ tests; Artificial Analysis scored it flat versus its predecessor and BEHIND '
+ "Anthropic's Claude Fable 5.1. OpenAI's headline 99.9% on ARC-AGI-3 was 62.7% when ARC Prize ran the same model on "
+ 'their own standard harness - a 37-point gap that is scaffolding, not model. OpenAI also edited published figures '
+ "after release (hallucination rate 4.2% to 2% and back to 4.2%), and Stanford researchers raised 'benchmaxxing' "
+ 'concerns. Against that, Francois Chollet - who built the benchmark and has no stake in OpenAI - said progress came '
+ 'about twice as fast as he expected and moved his AGI forecast earlier. Genuine disagreement, not a settled result. '
+ '|| ⚠️ THE ANNOUNCEMENT SAYS NOTHING ABOUT CHIPS. Not one word about GPUs, silicon, data centres or Stargate. Every '
+ 'compute deal being quoted alongside this news predates Astra: NVDA 10GW (Sep 2025), AMD 6GW plus a 160m-share '
+ 'warrant (Oct 2025), the Broadcom-built Jalapeno chip (Jun 2026), AWS 38bn (Nov 2025), ORCL over 300bn (Sep 2025), '
+ "Azure 250bn with a 27% stake (Oct 2025). 'Buy a chip stock because of Astra' is a narrative, not a fact - the "
+ 'contracts were signed long before. || ⚠️ AND THE MARKET-REACTION STORY IS CONFOUNDED. No sourced attribution of any '
+ 'share-price move to Astra was found. NVDA announced the acquisition of Hugging Face for 12.93bn on the SAME DAY. Any '
+ 'Sep 3-4 move cannot be cleanly assigned to Astra, and for NVDA the acquisition is plausibly the larger news. || '
+ 'WHERE THE REAL LINK IS: token consumption. Agents running 40-minute autonomous tasks burn far more tokens than chat, '
+ 'at 2.5x the price. That feeds inference silicon, memory, interconnect and power over 12-24 months - it does not show '
+ 'up in a two-day price move. Most direct listed beneficiaries in this book are MSFT (27% owner of OpenAI, Azure '
+ 'serves Astra), AMZN (Bedrock serves Astra, 38bn deal) and ORCL (largest contract, weakest balance sheet). || THE '
+ 'UNDER-OWNED ANGLE IS CYBERSECURITY, and it is the only causal chain Astra actually created rather than inherited. '
+ 'First model ever rated Critical for cyber capability. CRWD and PANW carry only 0.66% and 0.63% of the book with '
+ "12,325 of combined room. Rungs added to this Schedule, both conditional on results, not on the theme. || ON THE 'AI "
+ "KILLS SAAS' STORY: not substantiated for Astra. The piece being circulated is dated Feb 10, 2026, seven months "
+ 'before Astra existed. Our own Aug 29 review found all eleven SaaS names raised or maintained guidance and none '
+ 'blamed AI. || NO POSITIONS, BUDGETS OR PRICES CHANGED. No trade is recommended on this news alone. || Sep 5, 2026 - '
+ "BOARD FOCUSED AT SALEE'S INSTRUCTION. He asked to cut the watchlist back to names that fit a 5-10 year growth "
+ 'mandate and to free up attention. 46 further names removed, taking the board 178 -> 132: 26 loss-making or shrinking '
+ 'small caps with no path to profit, the 5 remaining bitcoin miners as off-thesis, 14 mature low-growth names that '
+ 'cannot compound at the required rate, and Nu Holdings for consistency with the Sep 5 decision to take Brazil out of '
+ 'the allocation. Watchlist 126 -> 80; 52 held positions untouched. || BUDGETS WITHDRAWN: Planet Labs 10,000 and '
+ "McDonald's 5,000. Allocated budget therefore falls 1,000,000 -> 985,000, leaving 15,000 to be re-assigned to names "
+ "that meet the mandate. || SIX HOLDINGS MARKED FOR LIQUIDATION at Salee's instruction, recorded on the Schedule tab "
+ 'as SELL rows. Claude does not and will not place trades - Salee executes these at POEMS. Tesla (revenue +2.3%, EPS '
+ '-37.4%, 163x forward), Intel (revenue +1.4%, loss-making, 86x forward, sold into a +112% gain), Ondas (going-concern '
+ 'doubt), Applied Optoelectronics (loss-making at 55x forward), IREN (bitcoin miner, -99.4% net margin) and Qualcomm '
+ '(revenue +5.2%, EPS -6.3%). Combined proceeds ~14,161 at the Sep 4 close for a net gain of ~763 across the six. || '
+ '⚠️ THE STATED REASON WAS WRONG AND SALEE SHOULD KNOW IT. He asked to sell in order to free liquidity. He does not '
+ 'need liquidity: 402,694 of the 1,000,000 budget is still unspent and another 200,000 arrives on Sep 14. The valid '
+ 'reason to sell these six is quality and attention, not funding. Positions and costs are unchanged until he reports '
+ "the fills. || Sep 5, 2026 - WATCHLIST CLEAN-UP BEGINS at Salee's instruction. He asked to cut the board back to "
+ 'names that fit a 5-10 year growth mandate, saying 129 watchlist names were too many to digest. Three removed on his '
+ 'explicit list: MELI (consistent with the Sep 5 decision to take Brazil out of the allocation entirely), SOUN (no '
+ 'path to profit - net margin -67.5%, return on equity -32.2%) and UBER (a sound business but revenue growth 16.7% '
+ 'with earnings per share falling 22.5%, and off-thesis for this book). Board 181 -> 178 names, 52 held, 126 '
+ 'watchlist. No positions, budgets or prices touched. A tiered proposal for the remaining cut, plus liquidation '
+ 'candidates among the held names, has been put to Salee and awaits his decision. || Sep 5, 2026 - R&D SPENDING '
+ "RECORDED FOR THE SEVEN MEGA-CAPS at Salee's request, saved to the per-stock notes page. Latest reported fiscal year, "
+ 'US$ millions, every figure independently verified against SEC filings: AMZN 108,521 (+22.6%) - GOOGL 61,087 (+23.8%) '
+ '- META 57,372 (+30.8%) - MSFT 35,562 (+9.5%) - AAPL 34,550 (+10.1%) - NVDA 18,497 (+43.2%) - TSLA 6,411 (+41.2%). '
+ "The six genuine research lines total 213,479. || ⚠️ AMZN's 108,521 is its 'technology and infrastructure' line, not "
+ 'research and development. Amazon reports no R&D line at all - the tag does not exist in its SEC XBRL data - and that '
+ 'bucket also carries the running costs of AWS infrastructure. Amazon leading this chart is an artifact of how the '
+ 'line is drawn, not research intensity, and it must not be set beside the other six. || ⚠️ THE SOURCE GRAPHIC WAS '
+ 'WRONG ON MSFT. It printed 32,488 (+10.1%), which is fiscal 2025 ended Jun 30 2025. Fiscal 2026 ended Jun 30 2026 and '
+ "the 10-K was filed Jul 29 2026, before the graphic's own stated August 2026 cutoff, so the current figure was "
+ 'available and was not used. The true number is 35,562 (+9.5%), which also lifts MSFT above AAPL to 4th place. Six of '
+ "the seven figures matched the filings to the dollar; only MSFT did not. || Fiscal calendars are not aligned - NVDA's "
+ "year ended Jan 25 2026, MSFT's Jun 30 2026, AAPL's Sep 27 2025, and the rest Dec 31 2025 - so this is not a "
+ 'like-for-like comparison of the same twelve months. No board fields, budgets or positions were changed; this is '
+ 'reference information only. || Sep 6, 2026 - MU STRATEGY REVISED. Micron closed at 1,016.59 on Sep 4, through the '
+ "1,000 level, +244.5% year-to-date from a Jan 2 base of 295.13 and 19.0% below its 1,255 high. Salee's position - "
+ '35.45 shares at an average of 636.998 - is now worth ~36,038 for a gain of ~13,457, up 59.6%. Room unchanged at '
+ '7,418.42 on a 30,000 budget; 3.78% of the book. || ⚠️ A FLAW IN MY OWN PLAN, CORRECTED. The standing MU limit order '
+ 'at 750 now sits 26.2% BELOW the market. It would almost certainly never fill, and if it did, a 26% collapse would be '
+ 'a reason to RE-UNDERWRITE the position, not to buy automatically. A rule that cannot fire is not a rule. It has been '
+ 'DELETED and replaced with an evidence-based second rung: 3,418.42 at the Q1 FY2027 print (~mid-December), deployable '
+ 'ONLY if DRAM bit shipments grow double-digit for a SECOND consecutive quarter. Two in a row means the story has '
+ 'genuinely turned from price to volume; one is noise. The 30 Sep rung is unchanged at 4,000 on the same bit-growth '
+ "test plus gross margin >=80%. Total scheduled 7,418.42 = exactly the room. || ON THE 'SOLD OUT' HEADLINE, WHICH IS "
+ 'THE REASON THE STOCK IS RUNNING - it is weaker evidence than it looks. The claim that all 2027 DRAM and HBM capacity '
+ "at Samsung, SK hynix and Micron is booked traces to DigiTimes citing 'industry insiders' (Aug 4, 2026), NOT to a "
+ 'Micron disclosure; the same report mentions long-term agreements of up to five years but states nothing about '
+ "whether these are firm volume commitments, prepayments, or non-binding. Micron's own language in its prepared "
+ "remarks is narrower: 'We expect tight conditions to persist beyond calendar 2027' - a statement about DURATION, not "
+ 'about being sold out. || ⚠️ THE DISTINCTION THAT MATTERS: being sold out is about ALLOCATION, not PRICE. Fully '
+ 'committed capacity does not stop contracts repricing lower at renewal, and TrendForce has DRAM contract price growth '
+ "decelerating from +90-95% (1Q26) to +58-63% (2Q26) to +13-18% (3Q26). Micron's own CFO disclosed DRAM bits up "
+ "'low-single-digit percentage range' while prices rose in the 'low-60s' - roughly 95% of revenue growth is price. "
+ 'FY2023 remains the precedent: revenue halved from 30,758m to 15,540m and gross margin went NEGATIVE 9.1% on a 5.83bn '
+ 'loss. || CREDIT WHERE DUE - the source post was responsibly balanced, naming cyclicality, a possible supply glut, '
+ "competition from SK hynix and Samsung, and valuation risk after the rally. Its '+200% from ~315' is an "
+ 'understatement: Jan 2 295.13 to the 1,255 high is +325.2%. || A TRIM IS NOW A LIVE OPTION, RECORDED NOT RECOMMENDED. '
+ 'Analyst fair value spans 361 to 2,200 across 45 analysts - a 6x spread, which IS the cycle uncertainty made visible. '
+ "Taking something off the table before Sep 30 is a legitimate choice and Salee's to make. Added as a standing HOLD "
+ 'line on the Schedule tab so it is visible rather than forgotten. || Sep 5, 2026 - BOARD BROUGHT TO EXACTLY 1,000,000 '
+ "at Salee's instruction to follow the standing budget recommendations. Two budgets withdrawn, 5,000 each, both ZERO "
+ 'deployed so no position is stranded and no money moves. Assigned budget 1,010,000 -> 1,000,000, i.e. 100.00% of '
+ 'target for the first time since LHX and FPS were added. Unfilled room 412,694.31 -> 402,694.31. || (1) ZS ZSCALER - '
+ 'budget 5,000 -> None. Flagged as the standing trim candidate on four separate occasions and the reason is now '
+ 'explicit in the data: it is the ONLY LOSS-MAKING name of the three cybersecurity holdings, net margin -1.88% and ROE '
+ '-2.43%, against PANW and CRWD which are both already deployed and both showing large gains (+94% and +120% '
+ 'respectively). Forward P/E 36.55 with a PEG of 1.39. Group 15 Cybersecurity 25,000 -> 20,000, which is still 2x its '
+ 'deployed 7,675. CONSEQUENCE: ZS was a 5,000 line in TRANCHE 1 of the deployment plan, so Tranche 1 falls 75,697 -> '
+ '70,697 and the whole plan 197,311 -> 192,311. The buffer rises correspondingly. || (2) AMPX AMPRIUS TECHNOLOGIES - '
+ 'budget 5,000 -> None. Net margin -43.98% and ROE -44.16% on a 9.89 share price; revenue growth of 172.6% is off a '
+ 'very small base. It was the fifth name in group 8 Defence, Drones & Public Safety, behind PLTR (5,533 deployed), '
+ "AVAV (3,758), ONDS (2,031) and LHX (5,000 budgeted at Salee's own instruction). Group 8 budget 30,000 -> 25,000. "
+ 'Nothing was deployed and no thesis was ever written for it. || WHY THESE TWO AND NOT OTHERS - every other '
+ 'zero-deployed budget was protected for a stated reason: V and MCD are dated Tranche 1 lines; APP, PL, LUNR, FPS and '
+ "LHX all carry explicit triggers set within the last three days; IONQ is the board's ONLY quantum name, so cutting it "
+ 'would delete a whole theme rather than trim a duplicate; CAT and AEP are profitable industrials (ROE 56.97% and '
+ '10.13%). ZS and AMPX were the only zero-deployed budgets that were BOTH loss-making AND redundant inside an '
+ 'already-funded group. || CONSIDERED AND REJECTED - ONDS was the other candidate on thesis grounds (previously '
+ "recorded as carrying 'substantial doubt' language and +156% dilution), but it has 2,030.54 deployed, so trimming it "
+ 'would have been a partial cut rather than a clean withdrawal, and its board fields look internally suspect (pm '
+ '251.92%, roe 42.95% sit oddly against that thesis). Flagged for the fundamentals job to re-verify rather than acted '
+ 'on with data I do not trust. It remains the next candidate if the target is ever cut below 1,000,000. || Held '
+ 'positions 52 and held cost 597,305.69 UNCHANGED. AI concentration unchanged at the held level - this removes future '
+ "headroom, not money. Board 181 tickers. || Sep 5, 2026 - THREE APPROVED BOARD ACTIONS EXECUTED TOGETHER at Salee's "
+ 'instruction. || (1) SPACE FUNDED BY TRIMMING TWO ON-HOLD AI-CORE NAMES. ALAB 15,000 -> 7,000 (-8,000) and LITE '
+ '20,000 -> 13,000 (-7,000); both budgets remain ABOVE their deployed cost (ALAB 3,805.47, LITE 9,372.74) so no '
+ 'position is stranded. The 15,000 goes to group 7 Space, which rises 10,000 -> 25,000: RKLB unchanged at 10,000 '
+ '(1,942.58 deployed), PL Planet Labs NEW 10,000, LUNR Intuitive Machines NEW 5,000. RATIONALE - ALAB (fwd P/E 86.95) '
+ 'and LITE (ROE -149.3%) have both been on explicit hold for weeks, so their budgets were dead money; Space carried '
+ '1.00% of a 1,005,000 target across six names, too little to express any view. This single move funds the theme AND '
+ 'reduces AI-core budget, addressing the standing concentration problem from both ends. PL is the only name in the '
+ 'group approaching profitability - Q2 FY27 revenue 116.1m +58%, adjusted EBITDA POSITIVE 13.9m, GAAP loss narrowed '
+ 'from -22.6m to -9.4m, cash 865.4m against 448.3m of converts, backlog 814.9m. CAVEAT: PL guided next quarter to '
+ '101-105m against 114.3m consensus, a sequential DECLINE - hence the trigger is the ~December print, not now. LUNR '
+ 'revenue tripled to 206.2m with an 1.8bn backlog but debt went 37m -> 481m and shares +44.1% YoY; trigger is IM-3 '
+ 'actually flying. SPCX and ASTS deliberately left unfunded (82x sales; a 231m quarterly loss with debt +492%). || (2) '
+ 'APP BUDGET SET AT 5,000. This corrects a documented discrepancy: the 200k deployment plan has stated since Sep 3 '
+ 'that APP had a 5,000 budget, but the board carried None - the intent was written and never executed. Recorded as an '
+ 'error, not a change of view. NOTHING DEPLOYED - the trigger remains the ~Nov 4 print. WHY APP IS CHEAP, NOW '
+ 'ESTABLISHED: the fall from 745.61 to ~320 is DECELERATION, not fraud. Revenue growth ran 68% -> 66% -> 59% -> 53% -> '
+ 'guided 47%, culminating in a -19.66% day on Aug 6 2026 after the first-ever guidance miss (Q2 revenue 1,924m vs '
+ "~1,935m consensus). CEO Foroughi: 'Our pace of meaningful model improvement was lighter than normal during the "
+ "quarter, and the next step up in model performance landed just after quarter end.' TWO OVERHANGS HAVE RESOLVED IN "
+ "APP'S FAVOUR - CFO Matt Stumpf stated Aug 5 2026 that 'The SEC has recently advised us that it concluded its inquiry "
+ "with no recommended action', and CapitalWatch RETRACTED its money-laundering report on Feb 9 2026 citing a 'flawed "
+ "verification process'. The 2025 Fuzzy Panda/Culper class action remains at motion-to-dismiss, undecided. Short "
+ 'interest only 3.9% of float. Business quality intact: Q2 gross margin 88.3%, net income 1,267m +55%, free cash flow '
+ '863m in the quarter. || (3) SIDU REMOVED FROM THE BOARD. Sidus Space had no budget and no position, so nothing is '
+ 'lost. Q2 2026 revenue FELL 54% to 583k while every peer in the group grew; gross margin is NEGATIVE 108%; share '
  'count went roughly 18.30m -> 101.21m in twelve months; the company executed a 1-for-100 reverse split in Dec 2023 to '
  'regain Nasdaq minimum-bid compliance. It was a row producing noise, not signal. Board 182 -> 181 tickers. || ⚠️ FOUR '
  'APP FIELDS ARE WRONG ON THIS BOARD and are flagged for the next fundamentals pass, NOT silently patched here: fpe '
@@ -5853,6 +5876,22 @@ SCHEDULE = {'horizon': 'Sep - Dec 2026',
          "executes automatically - each BUY line still needs Salee's instruction on the day. Rebuilt whenever a plan "
          'changes; see the change log for the reason behind each edit.',
  'items': [{'d': '',
+            'dl': 'Open-ended - no NHTSA deadline published',
+            't': 'TSLA',
+            'k': 'regulatory',
+            'a': 'AVOID',
+            'amt': None,
+            'w': 'NHTSA Audit Query AQ26002 into Cybercab certification (opened Sep 3, 2026)',
+            'cond': "NOT a defect investigation. NHTSA is examining 'the process and technical data on which Tesla "
+                    "relied when certifying the Cybercab', and specifically 'the extent to which Tesla's certification "
+                    "depended on determinations that certain FMVSS are inapplicable'. The Cybercab has no steering "
+                    'wheel, pedals or mirrors; about 1,000 are deployed in Austin. This puts a legal question under '
+                    "the robotaxi thesis that justifies the multiple. Administrator Jonathan Morrison: 'as the federal "
+                    "regulator, we need to ensure that all of our laws are followed.' Precedent is mixed - NHTSA ran a "
+                    'similar review of Zoox in 2022, closed it, and granted an exemption in 2025. Reinforces the SELL; '
+                    'do not treat a favourable outcome as a reason to re-enter.',
+            'c': 'confirmed'},
+           {'d': '',
             'dl': 'Standing - promoted to Tier 4 on Sep 7',
             't': 'APP',
             'k': 'tranche',
@@ -6532,7 +6571,7 @@ SCHEDULE = {'horizon': 'Sep - Dec 2026',
                     "Salee's call, not a recommendation.",
             'c': 'standing'}]}
 
-SELLBOOK = {'updated': '2026-09-05',
+SELLBOOK = {'updated': '2026-09-07',
  'comm': 8.56,
  'note': 'Control sheet for the liquidation programme agreed on 5 Sep 2026. Claude does NOT place trades - every row '
          'here is for Salee to execute at POEMS, and nothing on this board changes until he reports the fill. '
@@ -6556,12 +6595,18 @@ SELLBOOK = {'updated': '2026-09-05',
            'refPx': 354.08,
            'refDate': '2026-09-04',
            'limit': None,
-           'when': 'At market, any session - do not wait for a bounce',
+           'when': 'At market, any session - and NOT after the Sep 15-16 FOMC',
            'conv': 'High',
-           'why': 'Revenue grew 2.3% last year while earnings per share FELL 37.4%, and the stock trades at 163x '
-                  'forward earnings. You are paying a growth price for a company that is not growing. Whatever Optimus '
-                  'becomes, at this price the robot is fully paid for and the car business is shrinking underneath it. '
-                  'Compare: NVDA is 20x forward growing revenue 83%.',
+           'why': 'Revenue is NOT the problem I originally wrote - Q2 2026 revenue grew 25.5% to 28,236m. The problem '
+                  'is what happened underneath it: operating income FELL 57% to 398m, operating margin went 4.1% to '
+                  '1.4%, free cash flow turned NEGATIVE 1,090m, and regulatory-credit revenue collapsed 67% to 146m. '
+                  'Growth that consumes cash is worse than slow growth, not better. Trailing P/E 367, forward 186. || '
+                  "NEW RISK since this row was written: NHTSA opened Audit Query AQ26002 on Sep 3 into whether Tesla's "
+                  'Cybercab certification is valid at all - a challenge to whether the vehicle may legally operate, '
+                  'not a defect probe. The stock fell 5.92% on Sep 4. China retail deliveries were -32.9% YoY in July '
+                  'with quarter-end discounting launched Sep 2. || SELL AT MARKET. Do not wait for the FOMC: the '
+                  'market is pricing a rate HIKE (roughly 50-66% across sources), not a cut, and at 186x forward with '
+                  'a 1.84 beta this is the most rate-exposed name in the book.',
            'after': 'Budget 10,000 returns to the Robotic/Automation group. CGNX remains the only holding there.',
            'budget': 10000,
            'status': 'planned',
