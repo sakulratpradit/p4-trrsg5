@@ -422,6 +422,47 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
 #page-selling .s-filled{background:#0f7a4a;color:#fff}
 #page-selling .s-cancelled{background:var(--chip);color:var(--ink-2)}
 #page-selling .warnbox{background:var(--surface-1);border:1px solid var(--bad);border-left:3px solid var(--bad);border-radius:8px;padding:10px 14px;margin:14px 0;font-size:11.5px;color:var(--ink-2);line-height:1.5;max-width:88ch}
+/* ===== Budget Tiers tab ===== */
+#page-tiers .schead{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 6px}
+#page-tiers .kpi{background:var(--surface-1);border:1px solid var(--ring);border-radius:12px;padding:10px 14px;min-width:140px}
+#page-tiers .kpi .k{font-size:9.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+#page-tiers .kpi .v{font-size:19px;font-weight:700;font-variant-numeric:tabular-nums;margin-top:2px}
+#page-tiers .kpi .m{font-size:11px;color:var(--ink-2);margin-top:1px}
+#page-tiers h3{margin:22px 0 6px;font-size:15px}
+#page-tiers .sub{font-size:11.5px;color:var(--ink-2);margin:0 0 10px;line-height:1.5;max-width:82ch}
+#page-tiers .comp{display:flex;width:100%;height:46px;border:1px solid var(--ring);border-radius:8px;overflow:hidden;margin:4px 0 8px}
+#page-tiers .comp>i{display:flex;align-items:center;justify-content:center;font-style:normal;font-size:11px;font-weight:700;
+  font-variant-numeric:tabular-nums;box-shadow:inset -2px 0 0 var(--surface-1);min-width:0;white-space:nowrap}
+#page-tiers .comp>i:last-child{box-shadow:none}
+#page-tiers .clg{display:flex;flex-wrap:wrap;gap:5px 18px;font-size:11.5px;color:var(--ink-2);margin-bottom:4px}
+#page-tiers .clg span{display:flex;align-items:center;gap:6px}
+#page-tiers .sw{width:11px;height:11px;flex:none;border-radius:2px;border:1px solid var(--ring)}
+#page-tiers .tblk{border:1px solid var(--ring);border-radius:12px;background:var(--surface-1);overflow:hidden;margin-bottom:14px}
+#page-tiers .th2{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 14px;padding:11px 15px;border-bottom:1px solid var(--grid);background:var(--chip)}
+#page-tiers .bdg{font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:3px 9px;border-radius:20px}
+#page-tiers .rng{font-weight:700;font-size:14px}
+#page-tiers .agg{margin-left:auto;font-size:12px;color:var(--ink-2);font-variant-numeric:tabular-nums;white-space:nowrap}
+#page-tiers .rw{display:grid;grid-template-columns:62px minmax(0,1fr) 88px 84px 56px;align-items:center;gap:11px;padding:5px 15px}
+#page-tiers .rw:hover{background:var(--chip)}
+#page-tiers .rw .tk{font-weight:700;font-size:12.5px}
+#page-tiers .rw .tk.nb{color:var(--bad)}
+#page-tiers .trk{display:block;height:14px;background:var(--chip);border-radius:3px;position:relative;min-width:0;overflow:hidden}
+#page-tiers .trk>b{display:block;height:100%;border-radius:3px}
+#page-tiers .trk>u{display:block;height:100%;position:absolute;left:0;top:0;background:rgba(255,255,255,.42);
+  border-right:1px solid var(--surface-1);text-decoration:none}
+#page-tiers .num2{text-align:right;font-variant-numeric:tabular-nums;font-size:12px;white-space:nowrap}
+#page-tiers .num2.mut{color:var(--ink-3)}
+#page-tiers .warnb{border:1px solid var(--bad);border-left-width:3px;border-radius:8px;padding:10px 14px;margin:12px 0;
+  font-size:11.5px;color:var(--ink-2);line-height:1.5;max-width:88ch;background:var(--surface-1)}
+#page-tiers table{width:100%;border-collapse:collapse;font-size:12px}
+#page-tiers th{position:sticky;top:0;background:var(--surface-1);text-align:left;font-size:9.5px;letter-spacing:.07em;
+  text-transform:uppercase;color:var(--ink-3);padding:7px 8px;border-bottom:1px solid var(--grid);z-index:2}
+#page-tiers td{padding:7px 8px;border-bottom:1px solid var(--grid);vertical-align:top}
+#page-tiers td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+#page-tiers .tkl{font-size:11.5px;color:var(--ink-2);line-height:1.7;word-break:break-word}
+@media (max-width:700px){#page-tiers .rw{grid-template-columns:56px minmax(0,1fr) 78px;gap:8px}
+  #page-tiers .rw .roomc,#page-tiers .rw .pctc{display:none}
+  #page-tiers .agg{margin-left:0;width:100%}}
 </style>
 </head>
 <body>
@@ -446,6 +487,7 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
     <button class="tab" data-p="vision">Vision</button>
     <button class="tab" data-p="schedule">Schedule</button>
     <button class="tab" data-p="selling">Selling</button>
+    <button class="tab" data-p="tiers">Budget Tiers</button>
     <a class="tab" href="notes.html" style="text-decoration:none;display:inline-block">Notes ↗</a>
   </div>
   <div class="searchwrap">
@@ -551,6 +593,10 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
 <div class="page" id="page-selling">
 <div id="sellwrap"></div>
 </div><!-- /page-selling -->
+
+<div class="page" id="page-tiers">
+<div id="tierwrap" class="pr-blues"></div>
+</div><!-- /page-tiers -->
 
 <footer id="foot"></footer>
 </div>
@@ -1856,6 +1902,122 @@ function commitSearch(){
 /* ============ tab switching ============ */
 /* ============ Schedule tab ============ */
 var SCHED_FILTER = "all";
+function renderTiers(){
+  var el=document.getElementById("tierwrap"); if(!el) return;
+  var esc=function(x){ return String(x==null?"":x).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); };
+  var m0=function(v){ return "$"+Math.round(v||0).toLocaleString("en-US"); };
+  var TARGET=(typeof TOTALS!=="undefined"&&TOTALS.targetUSD)?TOTALS.targetUSD:1000000;
+  var SCALE=100000;
+  var SELL={}; (typeof SELLPLAN!=="undefined"?SELLPLAN:[]).forEach(function(t){ SELL[t]=1; });
+  var SM={}; STOCKS.forEach(function(s){ SM[s.t]=s; });
+  var GN=(typeof GROUPS!=="undefined")?GROUPS:[];
+
+  /* every figure derives from POS, so this tab can never drift from the board */
+  var rows=[];
+  Object.keys(POS).forEach(function(t){
+    var p=POS[t]; if(!p.budget) return;
+    var s=SM[t]||{};
+    rows.push({t:t,name:s.name||t,g:GN[s.g]||"",b:p.budget,c:p.cost||0,
+               room:p.budget-(p.cost||0),held:!!p.shares,sell:!!SELL[t]});
+  });
+  rows.sort(function(a,b){ return b.b-a.b || (a.t<b.t?-1:1); });
+
+  var TIERS=[
+    {lab:"Tier 1",rng:"$100,000 and above",lo:100000,hi:Infinity,v:"--pb8",ink:"--pinv"},
+    {lab:"Tier 2",rng:"$50,000 – $99,999",lo:50000,hi:100000,v:"--pb7",ink:"--pinv"},
+    {lab:"Tier 3",rng:"$25,000 – $49,999",lo:25000,hi:50000,v:"--pb6",ink:"--pinv"},
+    {lab:"Tier 4",rng:"$10,000 – $24,999",lo:10000,hi:25000,v:"--pb4",ink:"--pinv"},
+    {lab:"Tier 5",rng:"under $10,000",lo:0.01,hi:10000,v:"--pb3",ink:"--pinv"}
+  ];
+  var pick=function(T){ return rows.filter(function(r){ return r.b>=T.lo && r.b<T.hi; }); };
+  var sum=function(a){ return a.reduce(function(x,r){ return x+r.b; },0); };
+  var alloc=sum(rows), unal=TARGET-alloc;
+  var dep=rows.reduce(function(x,r){ return x+r.c; },0);
+  var heldAll=0, depAll=0;
+  Object.keys(POS).forEach(function(t){ if(POS[t].shares){ heldAll++; depAll+=POS[t].cost||0; } });
+  var sellB=rows.filter(function(r){return r.sell;}).reduce(function(x,r){return x+r.b;},0);
+
+  var H=[];
+  H.push('<h3>Budget tiers &mdash; where the '+m0(TARGET)+' is committed</h3>');
+  H.push('<p class="sub">Every name carrying a budget, sorted by the size of its limit. '+
+    'Read live from the position book, so this can never drift from the rest of the board. '+
+    'Budgets are ceilings, not orders — the pale overlay on each bar is the part already spent.</p>');
+
+  H.push('<div class="schead">');
+  H.push('<div class="kpi"><div class="k">Target</div><div class="v">'+m0(TARGET)+'</div><div class="m">the Pillar 4 mandate</div></div>');
+  H.push('<div class="kpi"><div class="k">Allocated</div><div class="v">'+m0(alloc)+'</div><div class="m">'+
+    (alloc/TARGET*100).toFixed(2)+'% across '+rows.length+' names</div></div>');
+  H.push('<div class="kpi"><div class="k">Unassigned</div><div class="v">'+m0(unal)+'</div><div class="m">'+
+    (unal>0?(unal/TARGET*100).toFixed(2)+'% with no name':'every dollar assigned')+'</div></div>');
+  H.push('<div class="kpi"><div class="k">Spent of these</div><div class="v">'+m0(dep)+'</div><div class="m">'+
+    (dep/TARGET*100).toFixed(2)+'% of target</div></div>');
+  H.push('<div class="kpi"><div class="k">Held positions</div><div class="v">'+heldAll+' / '+STOCKS.length+'</div><div class="m">'+
+    m0(depAll)+' total cost</div></div>');
+  H.push('</div>');
+
+  /* one stacked bar = the whole target */
+  var segs=TIERS.map(function(T){ var b=pick(T); return {lab:T.lab,n:b.length,s:sum(b),v:T.v,ink:T.ink}; })
+                .filter(function(x){ return x.s>0; });
+  if(unal>0) segs.push({lab:"Unassigned",n:0,s:unal,v:"--pidle",ink:null});
+  H.push('<h3>The whole mandate, in one bar</h3>');
+  H.push('<p class="sub">Each segment is one tier’s share of the target. Darker means a larger per-name limit.</p>');
+  H.push('<div class="comp">'+segs.map(function(x){
+    var w=x.s/TARGET*100;
+    return '<i style="width:'+w.toFixed(3)+'%;background:var('+x.v+');color:'+(x.ink?'var('+x.ink+')':'var(--ink-2)')+'">'+
+      (w>6?w.toFixed(1)+'%':'')+'</i>';
+  }).join("")+'</div>');
+  H.push('<div class="clg">'+segs.map(function(x){
+    return '<span><i class="sw" style="background:var('+x.v+')"></i>'+esc(x.lab)+' &middot; '+m0(x.s)+
+      (x.n?' &middot; '+x.n+(x.n===1?" name":" names"):'')+'</span>';
+  }).join("")+'</div>');
+
+  if(sellB>0){
+    H.push('<div class="warnb"><b>&#9888; '+m0(sellB)+' of this is scheduled to be released.</b> '+
+      'Names marked in red below sit on the Selling tab awaiting execution. Their budget returns to the pool once the sales settle.</div>');
+  }
+
+  /* tier blocks */
+  H.push('<h3>Tier by tier</h3>');
+  H.push('<p class="sub">Bars share one scale — full width is the '+m0(SCALE)+' top limit — so any name is directly '+
+    'comparable to any other. The lighter overlay inside each bar is cost already paid.</p>');
+  TIERS.forEach(function(T){
+    var b=pick(T); if(!b.length) return;
+    H.push('<div class="tblk"><div class="th2">'+
+      '<span class="bdg" style="background:var('+T.v+');color:var('+T.ink+')">'+T.lab+'</span>'+
+      '<span class="rng">'+T.rng+'</span>'+
+      '<span class="agg">'+b.length+(b.length===1?" name":" names")+' &nbsp;&middot;&nbsp; '+m0(sum(b))+
+        ' &nbsp;&middot;&nbsp; '+(sum(b)/TARGET*100).toFixed(2)+'% of target</span></div>');
+    H.push(b.map(function(r){
+      var w=Math.max(r.b/SCALE*100,1.2), sp=r.b?Math.min(r.c/r.b*100,100):0;
+      return '<div class="rw" title="'+esc(r.name)+' — '+esc(r.g)+'\n'+
+        (r.held?'spent '+m0(r.c)+' of '+m0(r.b)+', room '+m0(r.room):'watchlist — nothing spent yet')+
+        (r.sell?'\n⚠ scheduled to be sold':'')+'">'+
+        '<span class="tk'+(r.sell?' nb':'')+'">'+esc(r.t)+(r.sell?' ×':'')+'</span>'+
+        '<span class="trk"><b style="width:'+w.toFixed(2)+'%;background:var('+T.v+')"></b>'+
+          (sp>0?'<u style="width:'+(w*sp/100).toFixed(2)+'%"></u>':'')+'</span>'+
+        '<span class="num2">'+m0(r.b)+'</span>'+
+        '<span class="num2 mut roomc">'+(r.held?m0(r.room)+' left':'not started')+'</span>'+
+        '<span class="num2 mut pctc">'+(r.b/TARGET*100).toFixed(2)+'%</span></div>';
+    }).join(""));
+    H.push('</div>');
+  });
+
+  /* summary */
+  H.push('<h3>Summary</h3>');
+  H.push('<div style="overflow-x:auto"><table><tr><th>Tier</th><th>Limit</th><th class="n">Names</th>'+
+    '<th class="n">Budget</th><th class="n">% of target</th><th>Tickers</th></tr>');
+  TIERS.forEach(function(T){
+    var b=pick(T); if(!b.length) return;
+    H.push('<tr><td><b>'+T.lab+'</b></td><td>'+T.rng+'</td><td class="n">'+b.length+'</td><td class="n">'+m0(sum(b))+
+      '</td><td class="n">'+(sum(b)/TARGET*100).toFixed(2)+'%</td><td class="tkl">'+
+      b.map(function(r){return esc(r.t)+(r.sell?" ×":"");}).join(" &middot; ")+'</td></tr>');
+  });
+  if(unal>0) H.push('<tr><td><b>Unassigned</b></td><td>no name attached</td><td class="n">&mdash;</td><td class="n">'+
+    m0(unal)+'</td><td class="n">'+(unal/TARGET*100).toFixed(2)+'%</td><td class="tkl">&mdash;</td></tr>');
+  H.push('</table></div>');
+  el.innerHTML=H.join("");
+}
+
 function renderSelling(){
   var el=document.getElementById("sellwrap"); if(!el) return;
   var SB = (typeof SELLBOOK!=="undefined" && SELLBOOK) ? SELLBOOK : {rows:[],rules:[],note:"",comm:0};
@@ -2071,6 +2233,7 @@ document.querySelectorAll(".tab[data-p]").forEach(b=>b.onclick=()=>{
   if(b.dataset.p==="main") mountTape();
   if(b.dataset.p==="schedule") renderSchedule();
   if(b.dataset.p==="selling") renderSelling();
+  if(b.dataset.p==="tiers") renderTiers();
   /* the wheel fits its own viewBox from getBBox(), which reports zeros while the
      tab is hidden — so redraw it the moment the tab actually becomes visible */
   if(b.dataset.p==="wheel"){ renderWheel(); renderGroupWheel(); renderBudgetWheel(); renderPlanReality(); }
