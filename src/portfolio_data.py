@@ -602,7 +602,11 @@ ASOF = ("Sep 7, 2026 - THE '5X IN 5 YEARS' LIST CHECKED. Salee sent a Thai post 
  'for expense or thin quality, not losses - AFRM 45.3%, VEEV 29.3%, TMDX 22.7%, HNGE 15.2% net margin, plus SOFI, '
  "AXON, SITM, MDB, SYM. Salee's instruction described all 14 as losing money; that is true of five of them. Flagged to "
  'him, and any name can be restored on request. || Board now 92 (52 held + 40 watch); the six pending sells take it to '
- '86, below the 100 target he set on Sep 7. Budget untouched at $1,000,000 across 55 funded names.')
+ '86, below the 100 target he set on Sep 7. Budget untouched at $1,000,000 across 55 funded names. || Sep 8, 2026: '
+ 'stale MCD schedule line deleted - a 5,000 BUY dated Sep 17 for a ticker cut from the board on Sep 5. ⚠️ IT CARRIED '
+ "NO BUDGET. Git history shows MCD's budget field was null on every build, so Salee's instruction to 'delete MCD "
+ "budget and redirect 5,000 to ISRG' cannot be executed as stated - there is no MCD budget to move, and the plan "
+ 'already totals exactly 1,000,000 without it. Funding ISRG from 20,000 to 25,000 needs a donor; put to Salee.')
 
 GROUPS = ['Hyperscalers',
  'Chip Designers, EDA & IP',
@@ -4609,14 +4613,18 @@ M3 = {'GOOGL': {'pfcf': 72.54, 'ev': 21.6, 'de': 0.18},
  'AEP': {'pfcf': None, 'ev': 13.24, 'de': 1.61}}
 
 SCHEDULE = {'horizon': 'Sep - Dec 2026',
- 'updated': '2026-09-07',
- 'note': "Sep 6, 2026: RKLB Tranche-2 single line (8,057.42 dated Oct 9) replaced with a three-rung plan at Salee's "
-         'instruction - a 55 limit, an Iridium-financing trigger, and a post-de-risking trigger; total unchanged at '
-         "exactly the room. || Sep 5, 2026: board focused at Salee's instruction - 49 watchlist names removed (181 -> "
-         '132) and six holdings marked for liquidation. Claude does not place trades; the SELL rows are for Salee to '
-         'execute at POEMS. Every dated commitment agreed with Salee. Amounts are budget room, not orders. Nothing '
-         "executes automatically - each BUY line still needs Salee's instruction on the day. Rebuilt whenever a plan "
-         'changes; see the change log for the reason behind each edit.',
+ 'updated': '2026-09-08',
+ 'note': "Sep 8, 2026: the MCD Tranche-1 line (5,000 dated Sep 17) DELETED at Salee's instruction. McDonald's left the "
+         'board on Sep 5 and the line was an instruction to spend 5,000 on a ticker the dashboard no longer carries. '
+         "Its own condition text claimed MCD was 'the only consumer name funded' - it never was: MCD's budget field "
+         'was null on every build in git history. So no budget is released by this deletion and the plan stays at '
+         'exactly 1,000,000. || Sep 6, 2026: RKLB Tranche-2 single line (8,057.42 dated Oct 9) replaced with a '
+         "three-rung plan at Salee's instruction - a 55 limit, an Iridium-financing trigger, and a post-de-risking "
+         "trigger; total unchanged at exactly the room. || Sep 5, 2026: board focused at Salee's instruction - 49 "
+         'watchlist names removed (181 -> 132) and six holdings marked for liquidation. Claude does not place trades; '
+         'the SELL rows are for Salee to execute at POEMS. Every dated commitment agreed with Salee. Amounts are '
+         "budget room, not orders. Nothing executes automatically - each BUY line still needs Salee's instruction on "
+         'the day. Rebuilt whenever a plan changes; see the change log for the reason behind each edit.',
  'items': [{'d': '',
             'dl': 'Open-ended - no NHTSA deadline published',
             't': 'TSLA',
@@ -4976,14 +4984,6 @@ SCHEDULE = {'horizon': 'Sep - Dec 2026',
             'amt': 5000,
             'cond': 'Digital Fintech was $0 deployed. NOT bought for valuation - PEG 2.11, only 10.3% upside. Bought '
                     'because Visa never lends, so it carries no credit risk. Ballast, not engine.',
-            'c': 'planned'},
-           {'d': '2026-09-17',
-            't': 'MCD',
-            'k': 'tranche',
-            'w': 'Tranche 1',
-            'a': 'BUY',
-            'amt': 5000,
-            'cond': 'Only consumer name funded; adds non-AI ballast.',
             'c': 'planned'},
            {'d': '2026-09-17',
             't': 'BWXT',
