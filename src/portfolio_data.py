@@ -612,7 +612,17 @@ ASOF = ("Sep 7, 2026 - THE '5X IN 5 YEARS' LIST CHECKED. Salee sent a Thai post 
  'test that cut 15 watchlist names on Sep 7: revenue growth 10.3%, Rule of 40 score -15.6. || The MCD 5,000 Salee '
  "wanted redirected did not exist - MCD's budget field was null on every build in git history, so the plan needed a "
  'real donor. ISRG Oct 9 tranche resized 3,618.32 -> 8,618.32, the full new room. Plan stays at exactly 1,000,000 '
- 'across 54 funded names.')
+ 'across 54 funded names. || Sep 8, 2026: AAPL budget cut 25,000 -> 15,000 and META raised 50,000 -> 60,000, at '
+ "Salee's instruction after an SMC 'Top 7 US companies by net income' graphic was checked. ⚠️ EVERY FIGURE ON THAT "
+ 'GRAPHIC WAS A LAST-FISCAL-YEAR NUMBER AND THE FISCAL YEARS ARE 6-9 MONTHS APART - MSFT June 2026, AAPL September '
+ '2025, NVDA January 2026, the rest December 2025. On one consistent twelve-month window MSFT is 4th, not 1st. || '
+ 'Corrected trailing net income: GOOGL 244.1bn, NVDA 192.9bn, AMZN 135.3bn, MSFT 133.7bn, AAPL 128.9bn, BRK 85.8bn, '
+ "META 68.1bn. NVDA's graphic figure of 120.07bn was 61% too low and seven months stale - one recent quarter alone "
+ "(59.7bn) is half that whole 'year'. || But the corrected ranking has its own trap: GOOGL's lead rests on a disclosed "
+ "77.1bn after-tax unrealised equity gain and AMZN's on 53.4bn of pre-tax other income from Anthropic. On operating "
+ 'earnings NVDA is the most profitable business in America. || THE ACTION: AAPL was the most expensive of the seven on '
+ 'every basis and the only one with idle unscheduled room. Nothing sold. 46 AAPL shares still held. Plan stays at '
+ 'exactly 1,000,000.')
 
 GROUPS = ['Hyperscalers',
  'Chip Designers, EDA & IP',
@@ -725,7 +735,7 @@ STOCKS = [{'an': 83,
   't': 'AMZN'},
  {'an': 65,
   'ath': 796.25,
-  'budget': 50000,
+  'budget': 60000,
   'capexB': 89.33,
   'eps': 26.55,
   'epsG': -13.4,
@@ -3174,7 +3184,7 @@ STOCKS = [{'an': 83,
   't': 'VST'},
  {'an': 111,
   'ath': 334.99,
-  'budget': 25000,
+  'budget': 15000,
   'capexB': 10.04,
   'eps': 8.76,
   'epsG': 28.66,
@@ -3486,8 +3496,8 @@ STOCKS = [{'an': 83,
 POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'AMZN': {'budget': 50000, 'cost': 48600.75, 'shares': 209},
  'MSFT': {'budget': 60000, 'cost': 52878.96, 'shares': 117},
- 'META': {'budget': 50000, 'cost': 39239.51, 'shares': 59.5},
- 'AAPL': {'budget': 25000, 'cost': 11437.61, 'shares': 46},
+ 'META': {'budget': 60000, 'cost': 39239.51, 'shares': 59.5},
+ 'AAPL': {'budget': 15000, 'cost': 11437.61, 'shares': 46},
  'NVDA': {'budget': 100000.0, 'cost': 79380.28, 'shares': 420},
  'TSM': {'budget': 65000, 'cost': 39921.53, 'shares': 112.5},
  'AVGO': {'budget': 50000, 'cost': 30125.18, 'shares': 88.5},
@@ -5094,11 +5104,14 @@ SCHEDULE = {'horizon': 'Sep - Dec 2026',
            {'d': '2026-10-09',
             't': 'META',
             'k': 'tranche',
-            'w': 'Tranche 2 - the AAPL swap',
+            'w': 'Tranche 2 - the AAPL swap, rung 1 of 2',
             'a': 'BUY',
             'amt': 10760.49,
-            'cond': "Forward P/E 18.29 vs AAPL's 35.21; 81.75% gross margin; 27.3% below its high. WARNING: expected "
-                    'EPS growth is NEGATIVE 13.4% - it is cheap partly because a down year is expected.',
+            'cond': 'Unchanged at 10,760.49 - HALF the new room, deliberately. Forward P/E 18.29, the cheapest of the '
+                    'seven mega-caps; 22.5% below its 796.25 high; revenue growth 28.0%. Position is 6.5% underwater '
+                    'at a 659.49 average. ⚠️ Expected EPS growth is NEGATIVE 13.4% and trailing earnings carry one '
+                    'unexplained weak quarter (Q3 2025 net income 2.709bn) - which is why rung 2 waits for the Oct 28 '
+                    'print instead of buying the lot now.',
             'c': 'planned'},
            {'d': '2026-10-09',
             't': 'AMAT',
@@ -5130,11 +5143,13 @@ SCHEDULE = {'horizon': 'Sep - Dec 2026',
            {'d': '2026-10-28',
             't': 'META',
             'k': 'earnings',
-            'w': 'Q3 2026 results',
-            'a': 'WATCH',
-            'amt': 0,
-            'cond': 'The swap thesis lives or dies here: capex rising again WITHOUT revenue acceleration would mean '
-                    'the discount is deserved.',
+            'w': 'Q3 2026 results - rung 2 of the AAPL swap',
+            'a': 'DECIDE',
+            'amt': 10000.0,
+            'cond': 'DEPLOY THE 10,000 ONLY IF: revenue growth holds at or above 25% AND net income recovers clear of '
+                    'the Q3 2025 weakness. LEAVE IT if capex rises again without revenue acceleration, or if margins '
+                    'compress further - that would mean the 18.29 forward multiple is a deserved discount, not a '
+                    'bargain. This is the rung that tests the swap thesis with evidence rather than assumption.',
             'c': 'estimated'},
            {'d': '2026-11-04',
             't': 'APP',
@@ -5290,11 +5305,13 @@ SCHEDULE = {'horizon': 'Sep - Dec 2026',
             'dl': 'Standing',
             't': 'AAPL',
             'k': 'watch',
-            'w': 'Dropped from Tranche 2 - room stays open',
+            'w': 'Budget cut 25,000 -> 15,000; 10,000 moved to META',
             'a': 'HOLD',
             'amt': 0,
-            'cond': 'Forward P/E 35.21, PEG ~3.0, only 5.2% below consensus fair value. A price judgement, not a view '
-                    'on the company. $13,562 of room stays unfunded.',
+            'cond': 'Sep 8, 2026: the most expensive of the seven mega-caps on every basis - forward P/E 35.21 vs META '
+                    "18.29, and 36.2x trailing earnings against META's 23.1x. Closest of the group to its own high at "
+                    'just 4.5% below 334.99. Its 13,562.39 of room had no scheduled use, so 10,000 was reallocated to '
+                    'META and 3,562.39 of room remains. 46 shares held; NOTHING SOLD, only the reservation shrinks.',
             'c': 'standing'},
            {'d': '2026-12-17',
             't': 'MU',
