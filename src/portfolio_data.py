@@ -606,7 +606,13 @@ ASOF = ("Sep 7, 2026 - THE '5X IN 5 YEARS' LIST CHECKED. Salee sent a Thai post 
  'stale MCD schedule line deleted - a 5,000 BUY dated Sep 17 for a ticker cut from the board on Sep 5. ⚠️ IT CARRIED '
  "NO BUDGET. Git history shows MCD's budget field was null on every build, so Salee's instruction to 'delete MCD "
  "budget and redirect 5,000 to ISRG' cannot be executed as stated - there is no MCD budget to move, and the plan "
- 'already totals exactly 1,000,000 without it. Funding ISRG from 20,000 to 25,000 needs a donor; put to Salee.')
+ 'already totals exactly 1,000,000 without it. Funding ISRG from 20,000 to 25,000 needs a donor; put to Salee. || Sep '
+ "8, 2026: ISRG budget raised 20,000 -> 25,000 at Salee's instruction, funded by withdrawing AEP's 5,000 - AEP had "
+ 'zero shares and zero cost, so nothing was unwound. AEP was the one funded name failing the same under-15% growth '
+ 'test that cut 15 watchlist names on Sep 7: revenue growth 10.3%, Rule of 40 score -15.6. || The MCD 5,000 Salee '
+ "wanted redirected did not exist - MCD's budget field was null on every build in git history, so the plan needed a "
+ 'real donor. ISRG Oct 9 tranche resized 3,618.32 -> 8,618.32, the full new room. Plan stays at exactly 1,000,000 '
+ 'across 54 funded names.')
 
 GROUPS = ['Hyperscalers',
  'Chip Designers, EDA & IP',
@@ -2269,7 +2275,7 @@ STOCKS = [{'an': 83,
   't': 'DDOG'},
  {'an': 33,
   'ath': 603.88,
-  'budget': 20000,
+  'budget': 25000,
   'capexB': 0.53,
   'eps': 8.72,
   'epsG': 21.8,
@@ -3134,7 +3140,7 @@ STOCKS = [{'an': 83,
   'fvMax': 173,
   'fvMin': 129,
   'r40': -15.56,
-  'budget': 5000},
+  'budget': None},
  {'an': 20,
   'ath': 219.82,
   'budget': 10000,
@@ -3519,7 +3525,7 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'NEE': {'budget': None, 'cost': None, 'shares': None},
  'BE': {'budget': None, 'cost': None, 'shares': None},
  'XE': {'budget': None, 'cost': None, 'shares': None},
- 'ISRG': {'budget': 20000, 'cost': 16381.68, 'shares': 38},
+ 'ISRG': {'budget': 25000, 'cost': 16381.68, 'shares': 38},
  'CGNX': {'budget': 10000, 'cost': 4067.62, 'shares': 62},
  'TER': {'budget': 10000, 'cost': 3567.37, 'shares': 10},
  'TSLA': {'budget': None, 'cost': 4304.62, 'shares': 10},
@@ -3567,7 +3573,7 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'SNPS': {'budget': None, 'cost': None, 'shares': None},
  'KTOS': {'budget': None, 'cost': None, 'shares': None},
  'FPS': {'budget': 5000, 'cost': None, 'shares': None},
- 'AEP': {'budget': 5000.0, 'cost': None, 'shares': None},
+ 'AEP': {'budget': None, 'cost': None, 'shares': None},
  'LHX': {'budget': 5000, 'cost': None, 'shares': None}}
 
 TRADES = [{'date': 'Jul 21, 2026',
@@ -5107,9 +5113,10 @@ SCHEDULE = {'horizon': 'Sep - Dec 2026',
             'k': 'tranche',
             'w': 'Tranche 2 - healthcare',
             'a': 'BUY',
-            'amt': 3618.32,
-            'cond': '66.8% gross margin, 20.7% revenue growth, 38.9% below its high. The only position in group 6/12 '
-                    'currently at a loss.',
+            'amt': 8618.32,
+            'cond': 'Budget raised 20,000 -> 25,000 on Sep 8 with the 5,000 taken from AEP (unspent). 66.8% gross '
+                    'margin, 20.7% revenue growth, 28.5% net margin, 39.3% below its 603.88 high, 33 analysts average '
+                    'fair value 504.15. The only healthcare holding and currently 14.9% underwater.',
             'c': 'planned'},
            {'d': '2026-10-15',
             't': 'TSM',
