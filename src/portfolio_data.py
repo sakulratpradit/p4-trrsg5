@@ -698,7 +698,20 @@ ASOF = ('Sep 8, 2026 - close. Daily price refresh: all 92 tickers brought to the
  'forward P/E of 71.49. It fails both screens Salee approved this week - the under-15% growth cut of Sep 7 and the '
  'loss-making cut of Sep 8. || The thing that makes it interesting is an unconfirmed FT report of Jul 31 that NXP is '
  'in talks to buy it, which lifted the stock 16% for a day; two brokers cut targets to 70 in the week after Q2. '
- 'Re-underwrite only on two consecutive quarters of growth back above 20% with SBC under 15% of revenue.')
+ 'Re-underwrite only on two consecutive quarters of growth back above 20% with SBC under 15% of revenue. || Sep 9, '
+ '2026 - GOOGL PLAN REVIEWED, UNCHANGED, AND THE BIGGEST RISK TO IT HAS RESOLVED FAVOURABLY. On Sep 2 Judge Brinkema '
+ "REJECTED the DOJ's AdX divestiture and accepted modified behavioural remedies instead: no breakup. The Final "
+ 'Judgment itself is due ~Oct 2 and the opinion is still under seal, so the actual terms remain unknown. Tranche 3 '
+ 'stays at 20,524.08 on Nov 19 - after both the Final Judgment and Q3 results (~Oct 28, estimated). || FINLAND SLIDE '
+ "CHECKED AND ACCURATE: Google announced 'at least 13 billion euro' on Sep 9 for Finland, and calls it its largest "
+ 'SINGLE investment in Europe (Germany was 5.5bn, the UK 5bn). Three things the slide omits: the figure is a FLOOR, '
+ 'the money is scheduled for 2027-2028 rather than now, and a large share funds energy contracts - a 22-year Fortum '
+ "nuclear PPA, 629MW of wind, a 94MW battery - plus 31m euro of community spending, not only an 'AI base'. || ⚠️ AND "
+ 'IT IS SMALL IN CONTEXT: roughly 15bn dollars against FY2026 capex guidance RAISED to 195-205bn from 180-190bn, with '
+ "2027 to rise 'significantly'. The material facts are that Q2 FREE CASH FLOW WAS NEGATIVE 5,855m and BUYBACKS HAVE "
+ 'STOPPED - zero repurchased in Q2 and zero year-to-date. Recorded on the Nov 19 rung as the three things to check at '
+ "Q3. || Also recorded: the EU's 890m euro DMA fine of Jul 23, 2026 (460m Search self-preferencing + 430m Play "
+ 'anti-steering), which was not previously on the board.')
 
 GROUPS = ['Hyperscalers',
  'Chip Designers, EDA & IP',
@@ -5109,11 +5122,17 @@ SCHEDULE = {'horizon': 'Sep - Dec 2026',
            {'d': '2026-10-02',
             't': 'GOOGL',
             'k': 'legal',
-            'w': 'Ad-tech Final Judgment filed',
+            'w': 'Ad-tech Final Judgment due - the terms, not the verdict',
             'a': 'WATCH',
             'amt': 0,
-            'cond': 'Unlocks the GOOGL tranche. Judge Brinkema rejected all three DOJ structural remedies but ACCEPTED '
-                    'most behavioural ones; the terms do not exist until this date.',
+            'cond': '⚠️ THE VERDICT IS ALREADY IN AND GOOGLE WON THE PART THAT MATTERED. On Sep 2, 2026 Judge Brinkema '
+                    "REJECTED the DOJ's AdX divestiture - the order reads that the divestiture proposals 'be and are "
+                    "REJECTED' - and ACCEPTED the behavioural remedies as modified by the court. NO BREAKUP. || What "
+                    'does NOT yet exist is the Final Judgment: the parties have 30 days from Sep 2 to propose it '
+                    'jointly, so on or about Oct 2. The Memorandum Opinion is UNDER SEAL, so which behavioural terms '
+                    'survived, what modifications were imposed, the remedy duration and the trustee arrangements are '
+                    'all still unknown. Anyone modelling this today is modelling something not public. || Read the '
+                    'terms when filed; the structural risk that justified holding the tranche back is gone.',
             'c': 'confirmed'},
            {'d': '2026-10-08',
             't': 'TSM',
@@ -5272,11 +5291,26 @@ SCHEDULE = {'horizon': 'Sep - Dec 2026',
            {'d': '2026-11-19',
             't': 'GOOGL',
             'k': 'tranche',
-            'w': 'Tranche 3 - post Final Judgment',
+            'w': 'Tranche 3 - after both the Final Judgment and Q3 results',
             'a': 'BUY',
             'amt': 20524.08,
-            'cond': "Eligible from 2 Oct once the remedy terms exist. WARNING: the EU's EUR2.95bn decision, where the "
-                    'Commission wants a STRUCTURAL remedy, remains live.',
+            'cond': '20,524.08 = the entire remaining room on the 80,000 budget. Deliberately dated AFTER two '
+                    'information events, not before: the Final Judgment due ~Oct 2 and Q3 2026 results ~Oct 28 '
+                    '(estimated, not confirmed by Alphabet). || THE CASE: Q2 2026 revenue 119.8bn +24%, GOOGLE CLOUD '
+                    '24.8bn +82%, operating margin 34%. Position is 217 shares at 59,475.92, up 23.5%, and the stock '
+                    'sits about 19% below its 408.61 high. 63 analysts average 428.07. || ⚠️ THREE THINGS TO CHECK AT '
+                    'Q3, NONE OF WHICH ARE IN THE PRICE STORY: (1) FY2026 capex guidance was RAISED to 195-205bn from '
+                    "180-190bn, with management saying capex will 'increase significantly in 2027'; (2) Q2 FREE CASH "
+                    'FLOW WAS NEGATIVE 5,855m; (3) SHARE BUYBACKS HAVE STOPPED - 0 repurchased in Q2 and 0 '
+                    'year-to-date, while the 0.22 dividend continues. A company spending 200bn a year with negative '
+                    'free cash flow has stopped returning capital. That is the trade-off being made, and it is worth '
+                    'watching rather than assuming. || ⚠️ THE TRAILING P/E OF ~17 IS AN ARTEFACT, NOT CHEAPNESS: Q2 '
+                    "'other income' carried a 98.0bn net gain, mostly unrealised equity marks, which added 77.1bn to "
+                    'net income after tax. Forward P/E of about 25 is the real figure. || ⚠️ EUROPE IS STILL LIVE: the '
+                    'European Commission fined Google 890m euro on Jul 23, 2026 under the Digital Markets Act - 460m '
+                    'for self-preferencing in Search and 430m on Play anti-steering - and ordered the non-compliance '
+                    'ended. Separate from the older EUR2.95bn ad-tech decision where the Commission still wants a '
+                    'STRUCTURAL remedy.',
             'c': 'planned'},
            {'d': '2026-12-10',
             't': 'AVGO',
