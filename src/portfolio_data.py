@@ -689,7 +689,16 @@ ASOF = ('Sep 8, 2026 - close. Daily price refresh: all 92 tickers brought to the
  'EXITING: IREN and AAOI are on the Selling tab for this week, TSLA closed Sep 8. ⚠️ TWO LOGO/TICKER MISMATCHES: the '
  'memory row pairs the Skyworks logo (SWKS, an RF chipmaker, not a memory company) with the ticker SKHY (SK hynix '
  'ADR); the photonics row pairs the II-VI logo with the ticker AAOI, though II-VI renamed itself Coherent in 2022 and '
- 'COHR already appears in the same row. No new position taken from the slide.')
+ 'COHR already appears in the same row. No new position taken from the slide. || Sep 9, 2026: AMBARELLA (AMBA) ADDED '
+ "TO THE BOARD AS AN UNFUNDED WATCH ROW WITH A REJECT VERDICT, at Salee's instruction to record the research rather "
+ 'than repeat it. Group 1, budget 0, nothing bought. Edge-AI vision SoCs, 50m+ AI units installed, price 63.48 and '
+ '34.4% below its 96.69 high. ⚠️ REJECTED ON THREE COUNTS: revenue growth decelerating four quarters running to 13.2%; '
+ 'GAAP loss-making in each of the last five quarters with trailing net income -56.32m; and stock compensation running '
+ 'at 21% of revenue, larger than the entire non-GAAP profit. Add a single distributor at 60.2% of revenue and a '
+ 'forward P/E of 71.49. It fails both screens Salee approved this week - the under-15% growth cut of Sep 7 and the '
+ 'loss-making cut of Sep 8. || The thing that makes it interesting is an unconfirmed FT report of Jul 31 that NXP is '
+ 'in talks to buy it, which lifted the stock 16% for a day; two brokers cut targets to 70 in the week after Q2. '
+ 'Re-underwrite only on two consecutive quarters of growth back above 20% with SBC under 15% of revenue.')
 
 GROUPS = ['Hyperscalers',
  'Chip Designers, EDA & IP',
@@ -3527,7 +3536,38 @@ STOCKS = [{'an': 83,
   'revG': 41.1,
   'roe': -16.79,
   'roi': -5.92,
-  't': 'IREN'}]
+  't': 'IREN'},
+ {'an': 14,
+  'ath': 96.69,
+  'budget': None,
+  'capexB': None,
+  'eps': -1.3,
+  'epsG': None,
+  'ex': 'NASDAQ',
+  'fcfB': None,
+  'fpe': 71.49,
+  'fvAvg': 89.36,
+  'fvMax': 120.0,
+  'fvMin': 65.0,
+  'g': 1,
+  'gm': 58.52,
+  'hi52': 96.69,
+  'jan2': None,
+  'lo52': 48.3,
+  'mcapB': 2.8,
+  'name': 'Ambarella',
+  'pe': None,
+  'peg': None,
+  'pm': -13.48,
+  'price': 63.48,
+  'ps': 6.71,
+  'pxd': '2026-09-08',
+  'r40': 5.1,
+  'revB': 0.4178,
+  'revG': 20.0,
+  'roe': None,
+  'roi': None,
+  't': 'AMBA'}]
 
 POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'AMZN': {'budget': 50000, 'cost': 48600.75, 'shares': 209},
@@ -3619,7 +3659,8 @@ POS = {'GOOGL': {'budget': 80000, 'cost': 59475.92, 'shares': 217},
  'KTOS': {'budget': None, 'cost': None, 'shares': None},
  'FPS': {'budget': 5000, 'cost': None, 'shares': None},
  'AEP': {'budget': None, 'cost': None, 'shares': None},
- 'LHX': {'budget': 5000, 'cost': None, 'shares': None}}
+ 'LHX': {'budget': 5000, 'cost': None, 'shares': None},
+ 'AMBA': {'budget': None, 'cost': None, 'shares': None}}
 
 TRADES = [{'date': 'Jul 21, 2026',
   'action': 'BUY',
@@ -4696,7 +4737,8 @@ M3 = {'GOOGL': {'pfcf': 72.54, 'ev': 21.6, 'de': 0.18},
  'MCHP': {'pfcf': 41.4, 'ev': 34.78, 'de': 0.84},
  'CRCL': {'pfcf': 23.87, 'ev': 71.94, 'de': 0.0},
  'SNPS': {'pfcf': 28.65, 'ev': 32.94, 'de': 0.32},
- 'AEP': {'pfcf': None, 'ev': 13.24, 'de': 1.61}}
+ 'AEP': {'pfcf': None, 'ev': 13.24, 'de': 1.61},
+ 'AMBA': {'pfcf': None, 'ev': None, 'de': 0.02}}
 
 SCHEDULE = {'horizon': 'Sep - Dec 2026',
  'updated': '2026-09-09',
@@ -5435,6 +5477,37 @@ SCHEDULE = {'horizon': 'Sep - Dec 2026',
                     'calendar 2027. A sold-out 2027 would mean the cycle extends past the peak the margin implies. || '
                     'Until both are true the money stays unallocated. Position: 35.45 shares at 636.998, worth about '
                     '35,459, up 12,878.',
+            'c': 'standing'},
+           {'d': '',
+            'dl': 'Standing',
+            't': 'AMBA',
+            'k': 'watch',
+            'w': 'Researched Sep 9 and REJECTED - do not buy',
+            'a': 'AVOID',
+            'amt': 0,
+            'cond': 'Salee asked for deep research after AMBA appeared on a Thai AI-sector slide. Verdict: NO. || ⚠️ '
+                    'GROWTH IS DECELERATING EVERY QUARTER: +31.2% -> +20.1% -> +16.9% -> +13.2% (Q3 FY26 through Q2 '
+                    'FY27). Non-GAAP gross margin fell in three of the four: 60.9 -> 59.8 -> 59.9 -> 59.3. Q2 FY27, '
+                    'reported Sep 3: revenue 108.1m, GAAP net loss 6.7m. || ⚠️ GAAP LOSS-MAKING IN ALL FIVE OF THE '
+                    'LAST FIVE QUARTERS. Trailing net income -56.32m, net margin -13.48%. || ⚠️ STOCK COMPENSATION IS '
+                    "21% OF REVENUE - 22.7m on 108.1m. The whole non-GAAP 'profit' of 8.2m is less than half the SBC "
+                    'added back to create it. FY2026 SBC was 98.0m against 390.7m of revenue. || ⚠️ ONE DISTRIBUTOR IS '
+                    "60.2% OF REVENUE (WT Microelectronics; ~70% in FY2026). Company's own risk factor: 'A substantial "
+                    'portion of our revenue is processed through a single distributor and the loss of this distributor '
+                    "may cause disruptions.' || FORWARD P/E 71.49 on a business growing 13%. || THIS FAILS THE SAME "
+                    'TWO TESTS SALEE APPROVED THIS WEEK: the under-15% growth screen that cut 15 names on Sep 7, and '
+                    'the loss-making screen that cut 14 more on Sep 8. It fails BOTH. || ⚠️ THE REAL REASON IT LOOKS '
+                    'INTERESTING IS A TAKEOVER RUMOUR, NOT THE BUSINESS. The Financial Times reported on Jul 31, 2026 '
+                    'that NXP is in talks to acquire it; the stock rose 16% that day. Six weeks on there is no deal, '
+                    'no confirmation and no denial, and the Sep 3 earnings call did not mention it. Craig-Hallum cut '
+                    'to Hold with the target 95 -> 70 on Sep 4; Bank of America cut 96 -> 70 on Sep 6. Buying on a bid '
+                    'rumour is an event bet with a deadline on the upside and none on the downside - a different '
+                    'activity from owning a business for five years. || WHAT WOULD CHANGE THIS: two consecutive '
+                    'quarters of revenue growth RE-ACCELERATING above 20% with SBC falling below 15% of revenue. That '
+                    'would mean the edge-infrastructure pivot (the new X7 accelerator, the Capgemini and Macnica '
+                    'agreements of Sep 3) is working and the dilution is contained. Re-underwrite then, not before. || '
+                    'Kept on the board as an UNFUNDED WATCH row so the verdict is visible and dated rather than '
+                    're-litigated.',
             'c': 'standing'}]}
 
 SELLBOOK = {'updated': '2026-09-09',
