@@ -680,7 +680,16 @@ ASOF = ('Sep 8, 2026 - close. Daily price refresh: all 92 tickers brought to the
  'formally parked with a two-part release condition (double-digit DRAM bit growth for two consecutive quarters AND '
  'Micron stating HBM sold out for calendar 2027, which it has never said - only 2026). || NEW RISK RECORDED: Micron '
  "Taiwan union strike vote possible in September. || Also removed a stale standing QCOM 'sell all 11' line that "
- 'contradicted the Sep 16 pause.')
+ 'contradicted the Sep 16 pause. || Sep 9, 2026: schedule swept for orphans - three lines removed for tickers no '
+ "longer on the board. Two TSLA rows (the NHTSA AQ26002 AVOID and the 'sell all 10 shares' instruction) were obsolete "
+ 'the moment the position closed on Sep 8; the PL row was a 10,000 DECIDE dated Dec 10 for a ticker the board does not '
+ 'carry, the twin of the MCD line deleted yesterday. The schedule now contains no line for any ticker outside the '
+ '91-name board. || AI-SECTOR SLIDE CHECKED (28 tickers across 8 themes): 20 are already on this board - 13 held, 6 on '
+ 'watch, 1 sold - and the 8 absent are absent by decision, not oversight. ⚠️ IT RECOMMENDS THREE NAMES THIS BOARD IS '
+ 'EXITING: IREN and AAOI are on the Selling tab for this week, TSLA closed Sep 8. ⚠️ TWO LOGO/TICKER MISMATCHES: the '
+ 'memory row pairs the Skyworks logo (SWKS, an RF chipmaker, not a memory company) with the ticker SKHY (SK hynix '
+ 'ADR); the photonics row pairs the II-VI logo with the ticker AAOI, though II-VI renamed itself Coherent in 2022 and '
+ 'COHR already appears in the same row. No new position taken from the slide.')
 
 GROUPS = ['Hyperscalers',
  'Chip Designers, EDA & IP',
@@ -4703,22 +4712,6 @@ SCHEDULE = {'horizon': 'Sep - Dec 2026',
          "budget room, not orders. Nothing executes automatically - each BUY line still needs Salee's instruction on "
          'the day. Rebuilt whenever a plan changes; see the change log for the reason behind each edit.',
  'items': [{'d': '',
-            'dl': 'Open-ended - no NHTSA deadline published',
-            't': 'TSLA',
-            'k': 'regulatory',
-            'a': 'AVOID',
-            'amt': None,
-            'w': 'NHTSA Audit Query AQ26002 into Cybercab certification (opened Sep 3, 2026)',
-            'cond': "NOT a defect investigation. NHTSA is examining 'the process and technical data on which Tesla "
-                    "relied when certifying the Cybercab', and specifically 'the extent to which Tesla's certification "
-                    "depended on determinations that certain FMVSS are inapplicable'. The Cybercab has no steering "
-                    'wheel, pedals or mirrors; about 1,000 are deployed in Austin. This puts a legal question under '
-                    "the robotaxi thesis that justifies the multiple. Administrator Jonathan Morrison: 'as the federal "
-                    "regulator, we need to ensure that all of our laws are followed.' Precedent is mixed - NHTSA ran a "
-                    'similar review of Zoox in 2022, closed it, and granted an exemption in 2025. Reinforces the SELL; '
-                    'do not treat a favourable outcome as a reason to re-enter.',
-            'c': 'confirmed'},
-           {'d': '',
             'dl': 'Standing - promoted to Tier 4 on Sep 7',
             't': 'APP',
             'k': 'tranche',
@@ -4931,15 +4924,6 @@ SCHEDULE = {'horizon': 'Sep - Dec 2026',
             'amt': 1524.0,
             'cond': 'Recorded going-concern doubt; board margin and return figures do not reconcile and are '
                     'unverified.',
-            'c': 'planned'},
-           {'d': '',
-            'dl': "On Salee's instruction",
-            't': 'TSLA',
-            'k': 'liquidation',
-            'w': 'SELL all 10 shares (~$3540.8 at the Sep 4 close)',
-            'a': 'SELL',
-            'amt': 3540.8,
-            'cond': 'Revenue +2.3% with EPS -37.4%, at 163x forward earnings - the worst growth-to-price in the book.',
             'c': 'planned'},
            {'d': '2026-09-10',
             't': 'ORCL',
@@ -5260,15 +5244,6 @@ SCHEDULE = {'horizon': 'Sep - Dec 2026',
             'amt': 5000,
             'cond': 'Buy only if AI revenue hits the guided $21.7bn. WARNING: AVGO is more expensive than NVDA on '
                     'EVERY valuation measure while growing slower with a third of the ROE.',
-            'c': 'estimated'},
-           {'d': '2026-12-10',
-            't': 'PL',
-            'k': 'earnings',
-            'w': 'Q3 FY2027 results',
-            'a': 'DECIDE',
-            'amt': 10000,
-            'cond': 'Already guided DOWN to $101-105m vs $114.3m consensus, so the decline is announced. Buy only if '
-                    'adjusted EBITDA stays positive - it was +$13.9m last quarter, the first in the group.',
             'c': 'estimated'},
            {'d': '2026-12-09',
             't': '',
