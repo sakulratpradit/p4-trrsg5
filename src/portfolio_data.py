@@ -651,7 +651,15 @@ ASOF = ('Sep 8, 2026 - close. Daily price refresh: all 92 tickers brought to the
  'in as a buy. Recorded as such in TRADES and the Selling tab. Cost of the slip 21.28 (8.56 extra commission + 9.10 '
  'slippage + 3.61 extra regulatory fee); realised loss 687.17 instead of the 665.89 a clean sale would have booked. '
  'Nothing else changes - the position was closed either way. SAFEGUARD AGREED FOR FUTURE ORDERS: read the Action field '
- 'back before submitting, and check the cash preview sign - a sale credits cash, a purchase debits it.')
+ 'back before submitting, and check the cash preview sign - a sale credits cash, a purchase debits it. || Sep 9, 2026: '
+ 'SELLING PLAN REVISED AND APPROVED BY SALEE. INTC cut from a full liquidation to a PARTIAL - sell 20 of 45 at a limit '
+ 'of 103.00, keep 25. My original Intel sell case rested on board data that was wrong (revenue growth 1.40% vs a true '
+ '7.5%, and Q2 revenue actually grew 25% year-on-year with positive GAAP operating income); the 20 sold return more '
+ 'than the entire original cost, so the remaining 25 are held at zero net cost. || QCOM PAUSED to Sep 16 pending '
+ 'primary confirmation of the reported Amazon agreement to buy up to 60bn of chips - unverified from Qualcomm itself. '
+ "|| IREN, AAOI and ONDS PROCEED IN FULL. IREN's case strengthened, not weakened: FY27 capex guidance of 25-30bn "
+ 'against 707m of revenue. || All four live rows carry limit prices 1-2% below the Sep 8 close and should be executed '
+ 'THIS WEEK, before the Sep 11 CPI and the Sep 15-16 FOMC where the market prices roughly a 55% chance of a rate RISE.')
 
 GROUPS = ['Hyperscalers',
  'Chip Designers, EDA & IP',
@@ -4661,7 +4669,7 @@ M3 = {'GOOGL': {'pfcf': 72.54, 'ev': 21.6, 'de': 0.18},
  'AEP': {'pfcf': None, 'ev': 13.24, 'de': 1.61}}
 
 SCHEDULE = {'horizon': 'Sep - Dec 2026',
- 'updated': '2026-09-08',
+ 'updated': '2026-09-09',
  'note': "Sep 8, 2026: the MCD Tranche-1 line (5,000 dated Sep 17) DELETED at Salee's instruction. McDonald's left the "
          'board on Sep 5 and the line was an instruction to spend 5,000 on a ticker the dashboard no longer carries. '
          "Its own condition text claimed MCD was 'the only consumer name funded' - it never was: MCD's budget field "
@@ -4911,15 +4919,6 @@ SCHEDULE = {'horizon': 'Sep - Dec 2026',
             'amt': 1524.0,
             'cond': 'Recorded going-concern doubt; board margin and return figures do not reconcile and are '
                     'unverified.',
-            'c': 'planned'},
-           {'d': '',
-            'dl': "On Salee's instruction",
-            't': 'INTC',
-            'k': 'liquidation',
-            'w': 'SELL all 45 shares (~$4311.0 at the Sep 4 close)',
-            'a': 'SELL',
-            'amt': 4311.0,
-            'cond': 'Revenue +1.4% and still loss-making at the net line, 86x forward. Sell into a +112% gain.',
             'c': 'planned'},
            {'d': '',
             'dl': "On Salee's instruction",
@@ -5367,7 +5366,29 @@ SCHEDULE = {'horizon': 'Sep - Dec 2026',
                     'below its $1,255 high. Analyst fair value spans $361 to $2,200 - a 6x spread, which IS the cycle '
                     'uncertainty made visible. Taking something off the table before 30 Sep is a legitimate option and '
                     "Salee's call, not a recommendation.",
-            'c': 'standing'}]}
+            'c': 'standing'},
+           {'d': '',
+            'dl': 'This week',
+            't': 'INTC',
+            'k': 'tranche',
+            'w': 'PARTIAL sale - 20 of 45 shares',
+            'a': 'SELL',
+            'amt': 2089.4,
+            'cond': 'Limit 103.00. Returns about 2,079 - more than the whole original cost of 2,029.60 - leaving 25 '
+                    "shares held at zero net cost. Revised from a full liquidation on Sep 9 after the board's Intel "
+                    'fundamentals were found wrong.',
+            'c': 'planned'},
+           {'d': '2026-09-16',
+            't': 'QCOM',
+            'k': 'event',
+            'w': 'Qualcomm - Amazon agreement: confirm or sell',
+            'a': 'DECIDE',
+            'amt': 1914.99,
+            'cond': 'CONFIRMED BY QUALCOMM (SEC filing or company release) that Amazon will buy up to 60bn of chips -> '
+                    'CANCEL the sale, the thesis changed. NOT CONFIRMED by Sep 16 -> SELL all 11 shares as originally '
+                    "planned. Reported Sep 8 by two independent outlets; absent from Qualcomm's own newsroom as of Sep "
+                    '9.',
+            'c': 'planned'}]}
 
 SELLBOOK = {'updated': '2026-09-09',
  'comm': 8.56,
@@ -5375,15 +5396,21 @@ SELLBOOK = {'updated': '2026-09-09',
          'here is for Salee to execute at POEMS, and nothing on this board changes until he reports the fill. '
          'Estimated proceeds use the last close and are gross of the 8.56 flat POEMS commission, which is shown '
          'separately. Prices move; treat every figure as an estimate until filled.',
- 'rules': ['Sell the thesis, not the price. Every row below is here because the BUSINESS fails the 5-10 year growth '
-           'mandate - not because the position is down. Three of the six are at a loss and one is up 112%; that spread '
-           'is deliberate.',
-           'Do not sell to raise cash. 402,694 of the 1,000,000 budget is unspent and 200,000 arrives 14 Sep. These '
-           'sales fund nothing that was not already funded.',
-           'No deadline. Nothing here is urgent. A bad fill on a small position costs more than a week of waiting.',
-           'One at a time is fine. Six market orders in one session is how you get poor fills on the thinner names.',
-           'If a thesis changes, cancel the row. These are decisions, not commitments - if a company reports a genuine '
-           'inflection, tell me and we re-underwrite it.'],
+ 'rules': ['Sell the thesis, not the price. Every row is here because the BUSINESS fails the 5-10 year growth mandate. '
+           'TSLA closed on Sep 8 at a realised loss of 687.17.',
+           '⚠️ WHEN A THESIS IS WRONG, THE ROW CHANGES. Intel was cut from a full sale to a partial one because my own '
+           'board data was wrong; Qualcomm is paused pending confirmation of the Amazon agreement. Neither changed '
+           'because the price rose.',
+           'TIMING, FOR ONCE, MATTERS. Execute the four live rows THIS WEEK. August CPI lands Fri Sep 11 and the FOMC '
+           'decides Sep 15-16 with a dot plot; the market prices roughly a 55% chance of a RATE RISE. IREN, ONDS and '
+           'AAOI are exactly the high-beta, loss-making names that fall hardest on a hawkish surprise.',
+           'Use the limit prices, not market orders. Each is set about 1-2% below the Sep 8 close: high probability of '
+           'filling, protection against a gap down. A limit ABOVE the market may not fill - that is what happened on '
+           'the TSLA order at 366 on Sep 8.',
+           'Read the Action field back before submitting, and check the sign on the cash preview. A sale CREDITS cash; '
+           'a purchase DEBITS it. The Sep 8 TSLA slip cost 21.28.',
+           'Do not sell to raise cash. Roughly 400,000 of the 1,000,000 budget is unspent and 200,000 arrives 14 Sep. '
+           'These sales fund nothing that was not already funded.'],
  'rows': [{'t': 'TSLA',
            'name': 'Tesla',
            'g': 'Robotic / Automation / EV',
@@ -5418,20 +5445,30 @@ SELLBOOK = {'updated': '2026-09-09',
           {'t': 'INTC',
            'name': 'Intel',
            'g': 'Chip Designers, EDA & IP',
-           'sh': 45,
+           'sh': 20,
            'avg': 45.1022,
-           'cost': 2029.6,
+           'cost': 902.04,
            'refPx': 104.47,
            'refDate': '2026-09-08',
-           'limit': None,
-           'when': 'At market, any session - sell into the strength',
+           'limit': 103.0,
+           'when': 'This week, BEFORE the Sep 11 CPI and the Sep 15-16 FOMC',
            'conv': 'High',
-           'why': 'Up 112.4% for you, a gain of 2,281. But revenue grew 1.4% and the company still loses money at the '
-                  'net line (-5.9% margin) at 86x forward earnings. The gain came from a turnaround narrative, not '
-                  'from results improving. Taking a double on a business that has not fixed itself is discipline, not '
-                  'timidity.',
-           'after': 'Budget 5,000 returns to Chip Designers. The group still holds NVDA, AVGO, AMD, MRVL, CDNS, MPWR.',
-           'budget': 5000,
+           'why': 'REVISED SEP 9 - I HAD THIS WRONG AND THE ORIGINAL SELL CASE RESTED ON MY ERROR. The board carried '
+                  'revenue growth 1.40%, net margin -5.90% and forward P/E 85.94. The true figures are 7.5%, -19.79% '
+                  'and 62.77 - and Q2 2026 revenue grew 25% year-on-year to 16.1bn with GAAP operating income of '
+                  "POSITIVE 1,796m. The 11.0bn 'loss' is a 12,529m NON-CASH mark-to-market on the escrowed "
+                  "US-government shares that grows as Intel's own share price rises. Non-GAAP net income was +2.2bn. "
+                  '|| Since then: US government took 9.9% at 20.47, SoftBank 2bn at 23, NVIDIA 5bn at 23.28, a 20bn '
+                  'raise at 95 on Aug 11, Fortinet named as the first foundry customer, and on Sep 8 ASML and Intel '
+                  'jointly confirmed High-NA EUV is in HIGH-VOLUME MANUFACTURING with over one million wafers '
+                  'processed for Panther Lake on Intel 18A - roughly four years ahead of TSMC. || SO WHY SELL ANY? '
+                  'Because it is still loss-making on a trailing basis at 63x forward earnings and 4x its 52-week low. '
+                  'Selling 20 shares returns about 2,079 - MORE THAN THE ENTIRE ORIGINAL COST OF 2,029.60. The '
+                  'remaining 25 shares then cost nothing. Bank the correction, keep the turnaround.',
+           'after': '25 shares stay, at an average of 45.1022 and a cost of 1,127.56 - fully paid for by the 20 sold. '
+                    'INTC remains UNFUNDED (budget 0): held, but no further capital allocated. Revisit only if a '
+                    'second named foundry customer appears by year-end.',
+           'budget': 0,
            'status': 'planned',
            'fillPx': None,
            'fillDate': None,
@@ -5445,16 +5482,15 @@ SELLBOOK = {'updated': '2026-09-09',
            'cost': 2030.54,
            'refPx': 7.62,
            'refDate': '2026-09-08',
-           'limit': 7.62,
-           'when': 'At market, but use a limit if the spread is wide - thin stock',
+           'limit': 7.5,
+           'when': 'This week - work the order patiently, it is the thinnest name here',
            'conv': 'High',
-           'why': 'Recorded going-concern doubt - the auditor questioned whether the company can continue operating. '
-                  'That is disqualifying on its own, before any valuation argument. Separately the board carries a net '
-                  'margin of 251.92% and return on equity of 42.95% for this name, figures that cannot both be true '
-                  'and have never been reconciled. Exit rather than spend more time verifying a company with '
-                  'going-concern doubt.',
-           'after': 'Budget 5,000 returns to Defense/Drones. AVAV and PLTR remain.',
-           'budget': 5000,
+           'why': 'UNCHANGED. The board shows net margin 251.92% and return on equity 42.95% - both ARTEFACTS of a '
+                  'non-operating gain, not of trading profit, and flagged as such since August. A 4.34bn company with '
+                  'a going-concern history. Down 24.9%. ⚠️ 200 shares of the smallest name on the board: use the '
+                  'limit, do not send it at market, and be willing to let it work across two or three sessions.',
+           'after': 'Defense keeps PLTR and AVAV held, LHX funded at 5,000, KTOS on watch.',
+           'budget': 0,
            'status': 'planned',
            'fillPx': None,
            'fillDate': None,
@@ -5468,15 +5504,19 @@ SELLBOOK = {'updated': '2026-09-09',
            'cost': 1735.16,
            'refPx': 46.93,
            'refDate': '2026-09-08',
-           'limit': 41.65,
-           'when': 'Limit at 41.65 or better - no urgency',
-           'conv': 'Medium',
-           'why': 'Bitcoin miner with a -99.4% net margin at 101x forward earnings. We removed the entire bitcoin '
-                  'mining group from the watchlist as off-thesis for a 5-10 year AI growth mandate; holding one of '
-                  'them contradicts that. The AI-datacenter pivot is real but unproven in the numbers.',
-           'after': 'Budget 5,000 returns to Bitcoin/AI Datacenters - a group that will then be empty and should '
-                    'probably be retired.',
-           'budget': 5000,
+           'limit': 46.0,
+           'when': 'This week, BEFORE the Sep 11 CPI and the Sep 15-16 FOMC',
+           'conv': 'High',
+           'why': 'CONFIRMED SEP 9, and the case is STRONGER than in September. Yes it is up 21.7% and yes the '
+                  'business genuinely transformed - Q4 FY26 AI cloud revenue of 70.5m overtook bitcoin mining at 66.7m '
+                  'for the first time, behind a 9.7bn five-year Microsoft contract. ⚠️ BUT IREN GUIDED FY27 CAPITAL '
+                  'SPENDING OF 25-30 BILLION DOLLARS against 707m of revenue and an 18.5bn market value. Every dollar '
+                  'must come from debt, share issuance or customer prepayments; the recent private-credit facility '
+                  'priced around 9%. FY26 net loss 702.6m, net margin -99.4%, price-to-sales 26x. A company promising '
+                  'to spend forty times its annual revenue is asking you to bet that capital markets stay open for two '
+                  'more years. That is a financing story, not an earnings story. Take the 21.7%.',
+           'after': 'Group 9 keeps ORCL, IBM, DELL, NBIS, CRWV, IONQ. Budget was already 0.',
+           'budget': 0,
            'status': 'planned',
            'fillPx': None,
            'fillDate': None,
@@ -5490,14 +5530,15 @@ SELLBOOK = {'updated': '2026-09-09',
            'cost': 1338.56,
            'refPx': 111.55,
            'refDate': '2026-09-08',
-           'limit': 105.53,
-           'when': 'Limit at 105.53 or better - no urgency',
-           'conv': 'Medium',
-           'why': 'Loss-making at -9.6% net margin, trading at 55x forward earnings, and the weakest of the eight '
-                  'optical/networking names you hold. ANET, CRDO, LITE, ALAB and APH all cover this theme with better '
-                  'economics. This is redundancy, not diversification.',
-           'after': 'Budget 5,000 returns to Networking/Optical, which still holds seven names.',
-           'budget': 5000,
+           'limit': 110.0,
+           'when': 'This week, BEFORE the Sep 11 CPI and the Sep 15-16 FOMC',
+           'conv': 'High',
+           'why': 'UNCHANGED. Net margin -9.57% and return on equity -5.45% on a 8.95bn company, at 55x forward '
+                  'earnings. Revenue growth of 61.9% has not produced a profit. You already own seven better names '
+                  'doing the same job - ANET, LITE, COHR, CRDO, ALAB, FN, APH. Down 16.7%; the loss is 233 dollars and '
+                  'the clarity is worth more.',
+           'after': 'Networking keeps ANET, LITE, APH, CRDO, ALAB, COHR, FN plus GLW and AXTI on watch.',
+           'budget': 0,
            'status': 'planned',
            'fillPx': None,
            'fillDate': None,
@@ -5511,15 +5552,22 @@ SELLBOOK = {'updated': '2026-09-09',
            'cost': 1959.96,
            'refPx': 174.09,
            'refDate': '2026-09-08',
-           'limit': 168.74,
-           'when': 'Limit at 168.74 or better - the least urgent of the six',
+           'limit': None,
+           'when': 'HOLD - decide 16 Sep 2026, not before',
            'conv': 'Medium',
-           'why': 'Revenue +5.2% with earnings per share -6.3%. Cheap at 17.2x forward and not a broken business - '
-                  'this fails the mandate rather than failing as a company. If you want to keep one of the six, this '
-                  'is the defensible one.',
-           'after': 'Budget 5,000 returns to Chip Designers.',
-           'budget': 5000,
-           'status': 'planned',
+           'why': 'PAUSED SEP 9. On Sep 8 it was reported that Amazon agreed to buy UP TO 60 BILLION DOLLARS of '
+                  'Qualcomm chips, with about 4bn of warrants struck at 161.26 and a stated target of 15bn of '
+                  'data-centre revenue by 2029. If true, that is a thesis change - it gives Qualcomm the hyperscaler '
+                  'anchor its data-centre ambition was missing. ⚠️ I COULD NOT VERIFY IT FROM A PRIMARY SOURCE: it is '
+                  "not yet on Qualcomm's own newsroom and I could not reach Reuters directly. Two independent outlets "
+                  'agree on every figure, which is reassuring but is not proof. || Against that, the core business is '
+                  'still shrinking: Q3 FY2026 revenue -4% year-on-year, handsets -20%. Automotive at +61% is the '
+                  'bright spot. Position is 11 shares worth 1,915, essentially flat at -2.3%. Nothing is lost by '
+                  'waiting one week.',
+           'after': 'DECISION RULE: an agreement of that size requires an SEC filing. If Qualcomm confirms it by 16 '
+                    'Sep, CANCEL this row - the thesis changed. If nothing appears, sell all 11 as originally planned.',
+           'budget': 0,
+           'status': 'paused',
            'fillPx': None,
            'fillDate': None,
            'proceeds': None,
