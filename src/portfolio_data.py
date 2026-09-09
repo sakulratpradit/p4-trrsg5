@@ -646,7 +646,12 @@ ASOF = ('Sep 8, 2026 - close. Daily price refresh: all 92 tickers brought to the
  "interest, to be pinned at the next statement. || ⚠️ I HAD INTEL'S FUNDAMENTALS WRONG AND THE SELL CASE RESTED ON "
  'THEM. Board carried revenue growth 1.40%, net margin -5.90% and forward P/E 85.94; the true figures are 7.5%, '
  '-19.79% and 62.77, and Q2 2026 revenue grew 25% year-on-year with GAAP operating income of 1,796m. Corrected. || '
- 'Stale group indices left behind by the Sep 7 remap have been repaired in REALIZED and in MONTHLY byGroup.')
+ 'Stale group indices left behind by the Sep 7 remap have been repaired in REALIZED and in MONTHLY byGroup. || Sep 9, '
+ '2026: Salee confirms the Sep 8 TSLA BUY of 10 at 366.00 was a KEYING ERROR - he intended to sell and the order went '
+ 'in as a buy. Recorded as such in TRADES and the Selling tab. Cost of the slip 21.28 (8.56 extra commission + 9.10 '
+ 'slippage + 3.61 extra regulatory fee); realised loss 687.17 instead of the 665.89 a clean sale would have booked. '
+ 'Nothing else changes - the position was closed either way. SAFEGUARD AGREED FOR FUTURE ORDERS: read the Action field '
+ 'back before submitting, and check the cash preview sign - a sale credits cash, a purchase debits it.')
 
 GROUPS = ['Hyperscalers',
  'Chip Designers, EDA & IP',
@@ -3959,9 +3964,10 @@ TRADES = [{'date': 'Jul 21, 2026',
   'amount': 3668.56,
   'est': False,
   'note': 'Limit 366 x 10, order 5084101, filled 11:05:59. Cash debit 3,668.56 = 3,660.00 + the flat 8.56 POEMS '
-          'commission. This lot was bought and sold the same morning: 11 minutes later the whole 20-share position was '
-          'sold at 365.09. Whatever the intent, the round trip on these 10 shares cost about 21 dollars against simply '
-          'selling the 10 already held.'},
+          'commission. CONFIRMED BY SALEE ON SEP 9 AS A KEYING ERROR - the BUY was not intended; he meant to sell. '
+          'Cost of the slip: 8.56 extra buy commission + 9.10 price slippage (bought 366.00, sold 365.09 on 10 shares) '
+          '+ 3.61 extra regulatory fee on the extra 10 sold = 21.28. The realised loss would have been 665.89 on a '
+          'clean sale of the 10 held, against the 687.17 actually booked.'},
  {'date': 'Sep 8, 2026',
   'action': 'SELL',
   't': 'TSLA',
@@ -3973,7 +3979,8 @@ TRADES = [{'date': 'Jul 21, 2026',
           'was withdrawn unfilled at 11:12. Gross 7,301.80, cash credit 7,286.01, so 15.79 of commission and '
           'regulatory fees. POSITION CLOSED. Cost of the 20 was 7,973.18 (4,304.62 original + 3,668.56 same-day buy), '
           'average 398.659, so REALISED LOSS 687.17. Executes the Sep 5 liquidation decision - the first of the six '
-          'planned sales to be filled.'}]
+          'planned sales to be filled. The 10 bought minutes earlier were a keying error confirmed by Salee - see the '
+          'BUY row.'}]
 
 SELLPLAN = ['INTC', 'ONDS', 'AAOI', 'IREN', 'QCOM']
 
@@ -5398,9 +5405,10 @@ SELLBOOK = {'updated': '2026-09-09',
                   'with quarter-end discounting launched Sep 2. || SELL AT MARKET. Do not wait for the FOMC: the '
                   'market is pricing a rate HIKE (roughly 50-66% across sources), not a cut, and at 186x forward with '
                   'a 1.84 beta this is the most rate-exposed name in the book.',
-           'after': 'CLOSED Sep 8, 2026. 10 further shares were bought at 366.00 the same morning before the whole 20 '
-                    'was sold at 365.09, so the cost base is 7,973.18 not 4,304.62 and the realised loss is 687.17. '
-                    'Group 6 keeps CGNX as its only holding.',
+           'after': 'CLOSED Sep 8, 2026. 10 further shares were bought at 366.00 the same morning IN ERROR - Salee '
+                    'confirmed on Sep 9 that he meant to sell, not buy - so the cost base is 7,973.18 not 4,304.62 and '
+                    'the realised loss is 687.17 rather than 665.89. The slip cost 21.28. Group 6 keeps CGNX as its '
+                    'only holding.',
            'budget': 10000,
            'status': 'done',
            'fillPx': 365.09,
