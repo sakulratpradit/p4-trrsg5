@@ -669,7 +669,18 @@ ASOF = ('Sep 8, 2026 - close. Daily price refresh: all 92 tickers brought to the
  'five days before the Q3 print. Replaced by 7,000 on Oct 15 (the day after results, date third-party sourced and to '
  'be confirmed), 6,605.94 at the Q4/full-year print in late January (date estimated from a three-year last-Wednesday '
  'pattern), and 10,000 held back with no date until High-NA bookings are pulled forward into 2027. Room unchanged at '
- '23,605.94; budget unchanged at 40,000.')
+ "23,605.94; budget unchanged at 40,000. || Sep 9, 2026 - MICRON REVIEWED against a viral post. ⚠️ THE POST'S HEADLINE "
+ "IS WRONG: it claims a '700%+ gain over the past year'; the sourced figures are +661.41% (stockanalysis) and +673.84% "
+ '(marketscreener). || BUT ITS FINANCIAL FIGURES ARE ALL CORRECT AND CORRECTLY LABELLED - I expected them to be '
+ 'mislabelled full-year numbers and they were not. FQ3 2026, ended May 28 and reported Jun 24: revenue 41,456m, GAAP '
+ 'gross margin 84.6%, net income 28,243m, operating cash flow 25,388m, diluted EPS 24.67. Year-ago quarter: revenue '
+ '9,301m at 37.7%. || WHAT THE POST OMITS IS THE BIGGER NEWS: FQ4 guidance of 50.0bn +/- 1.0bn revenue, about 86% '
+ 'gross margin and 30.73 +/- 1.00 diluted EPS, with the print CONFIRMED for Sep 30. Forward P/E 6.96 against a '
+ 'trailing 22.57. || SCHEDULE RESOLVED: the 10,000 of unscheduled MU room - an open item since Aug 27 - is now '
+ 'formally parked with a two-part release condition (double-digit DRAM bit growth for two consecutive quarters AND '
+ 'Micron stating HBM sold out for calendar 2027, which it has never said - only 2026). || NEW RISK RECORDED: Micron '
+ "Taiwan union strike vote possible in September. || Also removed a stale standing QCOM 'sell all 11' line that "
+ 'contradicted the Sep 16 pause.')
 
 GROUPS = ['Hyperscalers',
  'Chip Designers, EDA & IP',
@@ -4895,15 +4906,6 @@ SCHEDULE = {'horizon': 'Sep - Dec 2026',
             'c': 'standing'},
            {'d': '',
             'dl': "On Salee's instruction",
-            't': 'QCOM',
-            'k': 'liquidation',
-            'w': 'SELL all 11 shares (~$1856.14 at the Sep 4 close)',
-            'a': 'SELL',
-            'amt': 1856.14,
-            'cond': 'Revenue +5.2%, EPS -6.3%. Cheap, but not a 5-10 year compounder - fails the mandate.',
-            'c': 'planned'},
-           {'d': '',
-            'dl': "On Salee's instruction",
             't': 'IREN',
             'k': 'liquidation',
             'w': 'SELL all 45 shares (~$1874.25 at the Sep 4 close)',
@@ -5065,11 +5067,18 @@ SCHEDULE = {'horizon': 'Sep - Dec 2026',
             'w': 'Q4 FY2026 + full-year results - THE decision point',
             'a': 'DECIDE',
             'amt': 4000,
-            'cond': "THE NUMBER IS DRAM BIT SHIPMENTS, not revenue and not the 'sold out' headline. Buy only if bits "
-                    'grow double-digit AND gross margin holds >=80%. Last quarter bits grew LOW-SINGLE-DIGIT while '
-                    'prices rose ~60% - almost all growth is price. Being sold out is about ALLOCATION, not price: '
-                    'committed capacity does not stop contracts repricing lower. FY2023 precedent: revenue halved and '
-                    'gross margin went NEGATIVE 9.1%.',
+            'cond': 'DATE CONFIRMED BY MICRON: Wed Sep 30, 2026, 2:30pm Mountain (release of Aug 26). || MANAGEMENT '
+                    'HAS GUIDED FQ4 TO REVENUE OF 50.0bn +/- 1.0bn, GROSS MARGIN ABOUT 86% AND DILUTED EPS OF 30.73 '
+                    '+/- 1.00. FQ3 (ended May 28, reported Jun 24) was already a record: revenue 41,456m, GAAP gross '
+                    'margin 84.6%, net income 28,243m, operating cash flow 25,388m. The year-ago quarter was revenue '
+                    '9,301m at a 37.7% margin - revenue up 4.5x and the margin more than doubled in twelve months. || '
+                    "⚠️ THAT IS EXACTLY WHY THE TEST IS NOT 'DID THEY BEAT'. A memory company at an 84.6% gross margin "
+                    'against 37.7% a year earlier is at a cyclical PEAK, and peak margins are where memory investors '
+                    'lose money. THE NUMBER IS DRAM BIT SHIPMENTS. Buy only if bits grow double-digit AND gross margin '
+                    'holds at or above 80%. Beating on price alone is the cycle topping, not the story working. || ⚠️ '
+                    "NEW RISK: Micron's Taiwan unions are threatening strike action over a bonus gap with Samsung and "
+                    'SK hynix, with about 80% union backing and a vote possible in September (TrendForce Aug 28, '
+                    'Taipei Times Sep 2). Taiwan is core DRAM output. Check this before the print.',
             'c': 'confirmed'},
            {'d': '2026-10-02',
             't': 'GOOGL',
@@ -5352,9 +5361,8 @@ SCHEDULE = {'horizon': 'Sep - Dec 2026',
             'a': 'DECIDE',
             'amt': 3418.42,
             'cond': 'Deploy ONLY if DRAM bits grow double-digit for a SECOND consecutive quarter. Two in a row means '
-                    'the story has genuinely turned from price to volume; one is noise. Replaces the old $750 standing '
-                    'limit, which sat 26% below the 4 Sep close of $1,016.59 and would almost certainly never have '
-                    'filled - a rule that cannot fire is not a rule.',
+                    'the story has genuinely turned from price to volume; one is noise. If Sep 30 failed its test, '
+                    'this rung does not fire either - do not average into a rolling cycle.',
             'c': 'estimated'},
            {'d': '',
             'dl': 'Standing',
@@ -5432,6 +5440,26 @@ SCHEDULE = {'horizon': 'Sep - Dec 2026',
                     'forward earnings. || RELEASE THIS 10,000 ONLY IF High-NA bookings are pulled FORWARD from 2028 '
                     'into 2027 in a reported order book. Until then the money stays unallocated. Capital Markets Day '
                     'is June 10, 2027 - ASML said it will update its longer-term view there.',
+            'c': 'standing'},
+           {'d': '',
+            'dl': 'Standing',
+            't': 'MU',
+            'k': 'watch',
+            'w': '10,000 of room parked - NOT under-committed by accident',
+            'a': 'HOLD',
+            'amt': 0,
+            'cond': 'RESOLVES THE OPEN ITEM CARRIED SINCE AUG 27. The budget was raised to 40,000 but the two rungs '
+                    'commit only 7,418.42 of the 17,418.42 room. That gap is now DELIBERATE and conditional, not an '
+                    'oversight. || WHY PARK IT: forward P/E is 6.96 and the position is already up 57% - it looks '
+                    'cheap precisely because earnings are at a cyclical peak. Gross margin went 37.7% -> 84.6% in a '
+                    'year. Memory has always given those margins back. Paying up at the top of a memory cycle is the '
+                    'single most reliable way to lose money in this sector. || RELEASE THE 10,000 ONLY IF BOTH: (1) '
+                    'DRAM bit shipments grow double-digit for two consecutive quarters, AND (2) MICRON ITSELF STATES '
+                    'HBM IS SOLD OUT FOR CALENDAR 2027. As of today it has only ever said that for calendar 2026 (on '
+                    'the Dec 2025 call); the FQ3 2026 release says only that HBM4E volume production is expected in '
+                    'calendar 2027. A sold-out 2027 would mean the cycle extends past the peak the margin implies. || '
+                    'Until both are true the money stays unallocated. Position: 35.45 shares at 636.998, worth about '
+                    '35,459, up 12,878.',
             'c': 'standing'}]}
 
 SELLBOOK = {'updated': '2026-09-09',
