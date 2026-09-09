@@ -659,7 +659,17 @@ ASOF = ('Sep 8, 2026 - close. Daily price refresh: all 92 tickers brought to the
  'primary confirmation of the reported Amazon agreement to buy up to 60bn of chips - unverified from Qualcomm itself. '
  "|| IREN, AAOI and ONDS PROCEED IN FULL. IREN's case strengthened, not weakened: FY27 capex guidance of 25-30bn "
  'against 707m of revenue. || All four live rows carry limit prices 1-2% below the Sep 8 close and should be executed '
- 'THIS WEEK, before the Sep 11 CPI and the Sep 15-16 FOMC where the market prices roughly a 55% chance of a rate RISE.')
+ 'THIS WEEK, before the Sep 11 CPI and the Sep 15-16 FOMC where the market prices roughly a 55% chance of a rate RISE. '
+ "|| Sep 9, 2026: EXCHANGE RATE CORRECTED, 33.75 -> 32.875 baht per dollar, on Salee's approval. Source is the Bank of "
+ 'Thailand average interbank rate published for 8 September 2026 (buying 32.6038, selling 33.0410). The board had been '
+ 'overstating the baht value of the US book by 2.59% - roughly 622,000 baht on the held positions. Historical baht '
+ 'figures (investedEverTHB, soldCostTHB, per-ticker THBFX) are unchanged: those record the rates actually paid. || '
+ 'Other readings on the day for the record: XE 32.923, Wise 32.86-32.90, exchange-rates.org 32.871, Trading Economics '
+ '32.892. BoT chosen as the official source. || ASML RE-STAGED. The Oct 9 tranche of 13,605.94 is DELETED - it sat '
+ 'five days before the Q3 print. Replaced by 7,000 on Oct 15 (the day after results, date third-party sourced and to '
+ 'be confirmed), 6,605.94 at the Q4/full-year print in late January (date estimated from a three-year last-Wednesday '
+ 'pattern), and 10,000 held back with no date until High-NA bookings are pulled forward into 2027. Room unchanged at '
+ '23,605.94; budget unchanged at 40,000.')
 
 GROUPS = ['Hyperscalers',
  'Chip Designers, EDA & IP',
@@ -4017,7 +4027,7 @@ TOTALS = {'investedEverUSD': 625789.05,
  'soldCostTHB': 1395202,
  'realizedUSD': -3165.18,
  'realizedTHB': -104868,
- 'fx': 33.75,
+ 'fx': 32.875,
  'inceptionDate': 'Jul 15, 2025',
  'targetUSD': 1000000}
 
@@ -5124,15 +5134,6 @@ SCHEDULE = {'horizon': 'Sep - Dec 2026',
                     'EV/EBITDA 69, price/FCF 124.',
             'c': 'planned'},
            {'d': '2026-10-09',
-            't': 'ASML',
-            'k': 'tranche',
-            'w': 'Tranche 2 - semicap',
-            'a': 'BUY',
-            'amt': 13605.94,
-            'cond': "Read MU's 30 Sep print first. Semicap demand follows memory capex; the most rate-sensitive block "
-                    'on the board.',
-            'c': 'planned'},
-           {'d': '2026-10-09',
             't': 'META',
             'k': 'tranche',
             'w': 'Tranche 2 - the AAPL swap, rung 1 of 2',
@@ -5388,7 +5389,50 @@ SCHEDULE = {'horizon': 'Sep - Dec 2026',
                     'CANCEL the sale, the thesis changed. NOT CONFIRMED by Sep 16 -> SELL all 11 shares as originally '
                     "planned. Reported Sep 8 by two independent outlets; absent from Qualcomm's own newsroom as of Sep "
                     '9.',
-            'c': 'planned'}]}
+            'c': 'planned'},
+           {'d': '2026-10-15',
+            't': 'ASML',
+            'k': 'earnings',
+            'w': 'Q3 2026 results - rung 1 of 2',
+            'a': 'DECIDE',
+            'amt': 7000.0,
+            'cond': '⚠️ DATE IS THIRD-PARTY SOURCED, NOT CONFIRMED BY ASML. MarketScreener and stockanalysis.com both '
+                    "give Oct 14 for the Q3 print; ASML's own calendar is a JavaScript widget that would not yield a "
+                    'date. Q3 2025 was Oct 15, 2025, so the pattern fits. CONFIRM BEFORE ACTING. || This rung replaces '
+                    'the Oct 9 tranche of 13,605.94, which sat FIVE DAYS BEFORE the results - an avoidable coin-flip. '
+                    'Buy on the information, not just before it. || DEPLOY IF: Q3 net sales land inside the guided '
+                    '11.0-12.0bn euro range AND gross margin inside 55-57%, AND net bookings do not fall against Q2. '
+                    'LEAVE IT if sales miss the low end or bookings drop - ASML grows revenue 9.8% while trading at '
+                    '30x forward earnings, so the multiple depends entirely on the order book.',
+            'c': 'estimated'},
+           {'d': '2027-01-27',
+            't': 'ASML',
+            'k': 'earnings',
+            'w': 'Q4 and full-year 2026 results - rung 2 of 2',
+            'a': 'DECIDE',
+            'amt': 6605.94,
+            'cond': "⚠️ DATE ESTIMATED FROM PATTERN, NOT ANNOUNCED. ASML's last three Q4 releases were Jan 28 2026, "
+                    'Jan 29 2025 and Jan 24 2024 - all the last Wednesday of January. MarketScreener lists Jan 26 '
+                    '2027, a TUESDAY, which suggests an algorithmic guess. Confirm when ASML publishes its 2027 '
+                    'calendar. || THE FULL-YEAR BOOKINGS NUMBER IS THE ONE THAT MATTERS: Q4 2025 booked 13.2bn euro of '
+                    'which 7.4bn was EUV. Deploy if FY2026 lands inside the guided 43-45bn euro with 2027 guidance '
+                    'intact.',
+            'c': 'estimated'},
+           {'d': '',
+            'dl': 'Standing',
+            't': 'ASML',
+            'k': 'watch',
+            'w': '10,000 of room held back deliberately',
+            'a': 'HOLD',
+            'amt': 0,
+            'cond': 'HIGH-NA IS A 2028-2033 REVENUE STORY AND YOU ARE BEING ASKED TO PAY FOR IT IN 2026. The Sep 8 '
+                    'ASML-Intel release confirms High-NA is in high-volume manufacturing with over a million wafers '
+                    'processed for Panther Lake on Intel 18A. Real - but the reported roadmap has Samsung using it for '
+                    'DRAM in 2028 and TSMC only reaching volume in 2030. Meanwhile ASML grows revenue 9.8% at 30x '
+                    'forward earnings. || RELEASE THIS 10,000 ONLY IF High-NA bookings are pulled FORWARD from 2028 '
+                    'into 2027 in a reported order book. Until then the money stays unallocated. Capital Markets Day '
+                    'is June 10, 2027 - ASML said it will update its longer-term view there.',
+            'c': 'standing'}]}
 
 SELLBOOK = {'updated': '2026-09-09',
  'comm': 8.56,
