@@ -3,87 +3,105 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Sep 10, 2026 - THE RESTRUCTURE. The board moves from 15 groups and 54 funded names to 10 GROUPS, 38 ACTIVE NAMES, 5 '
- "BACK-UP NAMES and 13 SELLS, on Salee's instruction. Budget stays at exactly 1,000,000. || THE TEN GROUPS: "
- 'Hyperscalers & Model Owners 236,000 - AI Chips & Chip Design 203,000 - Foundry, Equipment & Test 161,000 - Memory & '
- 'Storage 57,000 - Networking & Optical 83,000 - AI Software, Security & Infrastructure 40,000 - Power & '
- 'Electrification 77,000 - Healthcare & Robotics 44,000 - Digital Platforms & Fintech 64,000 - Space & Defence 35,000. '
- "AI (groups 1-6) is 780,000 = 78.0%, other future economies 220,000 = 22.0%, inside Salee's 70-80% / 20-25% bands. "
- 'Largest single position NVDA at 95,000 = 9.5%, under the 10% ceiling. || FIVE NAMES ENTER THE BOARD WITH A BUDGET '
- 'FOR THE FIRST TIME: SNPS 13,000, APP 18,000, SE 13,000, V 9,000, LHX 9,000 - 62,000 in total. SNPS replaces CDNS as '
- 'the EDA holding on Rule of 40 75.4 against 39.3 and a forward P/E of 26.9 against 40.8. LHX is the profitable anchor '
- 'Space & Defence lacked: without it the group was 32,000 spread across two loss-makers. || ⚠️ THE BACK-UP BUCKET IS '
- "SALEE'S IDEA AND IT SAVED REAL MONEY. CRWD, INTC, TER, CDNS and FSLR are held with ZERO budget, a written promotion "
- 'trigger each, and a review every three months. Because those five are not sold, the remaining 13 disposals net to '
- 'PLUS 139 of gain on 28,308 of cost - ZETA +1,413, CRM +1,481 and IREN +376 almost exactly cancelled by ten losing '
- 'positions. Selling all 18 would have crystallised 7,070. The back-up bucket kept 6,931 of unrealised gain out of the '
- 'tax net. ⚠️ Tax adviser sign-off is still required before any of the 13 are executed. || AMZN IS FULL AND STOPS '
- 'HERE: 48,600 invested against a 48,000 target. The business is not the problem - Q2 2026 net sales +20% to 200.6bn, '
- 'AWS +37% to 42.2bn at a 39.4% operating margin, consolidated operating income 27.5bn. The CASH is the problem: '
- "Amazon's own reconciliation reads 'Free cash flow decreased to an outflow of 7.6 billion for the trailing twelve "
- "months, compared with 18.2 billion for the trailing twelve months ended June 30, 2025', on trailing capex of "
- '173.0bn. And Q3 2026 is guided to grow only 9-12% against the 20% just delivered. Three triggers re-open it, '
- 'recorded on the Schedule page: TTM free cash flow turns positive, revenue guidance returns above 15%, or 2027 capex '
- "guides below 2026's roughly 220bn. || ⚠️ EVERY SCHEDULE ROW DATED BEFORE TODAY QUOTES A PRE-RESTRUCTURE BUDGET. The "
- 'amounts in those rows are stale; check each against the new budget before acting. || Room to deploy now across the '
- '38: 435,308, after reserving 15,432 of cost held in the five back-ups. || Claude does NOT place trades. Every buy '
- "and every sell on this board is Salee's to execute at POEMS. || PREVIOUS ENTRY: Sep 8, 2026 - close. Daily price "
- "refresh: all 92 tickers brought to the Tuesday Sep 8, 2026 close (price, mcapB, pxd; mcapB scaled by each ticker's "
- 'exact price ratio; Monday Sep 7 was Labor Day, no session). METHOD per playbook: stockanalysis.com quote page taken '
- "only when stamped 'At close: Sep 8, 2026, 4:00 PM EDT' AND its previous close tied to the history table's Sep 4 row. "
- '15 moves >=6%, each confirmed against a second independent source (Google Finance Sep 8 close stamp; fool.com Sep 8 '
- "17:26 ET article for STX; marketscreener Sep 8 'Market Closed' stamp for LEU and SHOP): INTC +9.05, AMKR +6.96, STX "
- '+6.49, GLW +7.56, LITE +11.04, COHR +7.10, ALAB -6.94, AXTI +12.85, ASTS +6.11, NBIS +7.73, CRWV +11.72, LEU +6.69, '
- 'BE +9.63, SHOP -7.57, XE +8.13. || CGNX and XE served only INTRADAY stamps on stockanalysis (3:23 PM and 10:21 AM); '
- "both closes taken instead from Google Finance beta pages carrying explicit 'Closed: Sep 8, 4:00 PM GMT-4' stamps "
- "(CGNX 62.23, XE 19.15; XE's stamp arithmetic ties exactly to the verified Sep 4 close 17.71, corroborated by "
- "X-Energy's own IR page). || THIRTEEN quote-vs-history disagreements caught (CDNS, KLAC, TER, AMKR, AMAT, APH, FN, "
- "TSLA, LHX, KTOS, IBM, PWR, SE - CDNS's history row even printed a close below its own low): quote page taken per "
- 'playbook and every disputed close independently confirmed by Google Finance. || LHX lo52 extended to 255.74 (new '
- "52-week low). || DATA NOTE: the board carried 47.42 as AMKR's Sep 4 close, but stockanalysis quote, history AND "
- "Google all say Sep 4 closed 47.77 - today's 50.72 is +6.96% vs the board, +6.18% vs the true Sep 4 close. || Sep 7, "
- "2026 - THE '5X IN 5 YEARS' LIST CHECKED. Salee sent a Thai post naming SPCX, RDW, MP, FLNC and SNOW as candidates to "
- 'grow fivefold, and asked how possible that is over TEN years. || ⚠️ FIRST, THE HEADLINE BAR IS NOT THE ONE HE ASKED '
- 'ABOUT. The post promises 5x in FIVE years, which is 37.97% a year compounded. Salee asked about TEN years, which is '
- '17.46% a year. His own stated objective - double by 2030 - needs 14.87% a year. So 5x-in-ten sits only 2.59 points a '
- 'year above the goal he already has, while 5x-in-five sits 23.10 points above it. Those are not the same proposition '
- 'and the post is selling the harder one. || ⚠️ ALL FIVE ARE LOSS-MAKING ON A GAAP BASIS. Trailing-twelve-month net '
- 'income: SPCX -8.89bn, SNOW -1.09bn, RDW -258.7m, FLNC -80.9m, MP -60.6m. Not one is profitable. The post never says '
- "this. || ⚠️ THE SPCX ENTRY IS ARITHMETICALLY ABSURD AND SHOULD DISQUALIFY THE LIST'S METHOD. At 2.01 trillion, a "
- 'fivefold gain means 10.05 TRILLION - about 1.80x the largest company that currently exists anywhere. Putting a '
- "2-trillion-dollar company in the same 'could go 5x' bucket as a 1.9-billion-dollar one ignores the arithmetic of "
- "size entirely. || ⚠️ A UNIT ERROR THAT SHOULD END THE READER'S TRUST: the post gives FLNC a pipeline of '33.1 "
- "billion dollars'. Fluence's own Q3 release quantifies pipeline only in gigawatts, and states a 33.3 GW services "
- 'pipeline. Gigawatts were converted into dollars. || VINDICATION OF THE SEP 5 CUT: FLNC is on this fivefold list and '
- 'this board DELETED it two days ago for revenue growth of 7.5%, net margin -3.07% and return on equity -23.5%. The '
- 'verified figures confirm the call - revenue TTM +7.5%, guidance CUT from 3.2-3.6bn to 2.9-3.1bn with roughly 400m of '
- 'deliveries pushed into FY2027 on factory delays, and consensus at Hold with 13 of 21 analysts there. A company '
- 'growing revenue 7.5% would need revenue to roughly quintuple to justify the stock quintupling. || SNOW WAS '
- 'DELIBERATELY KEPT in the same sweep when a mechanical screen wanted it deleted, and that also holds up: revenue '
- '1.546bn in Q2 FY2027, +35%, product revenue +37%, remaining performance obligations 9.0bn, +30%, and full-year '
- 'PRODUCT revenue guidance RAISED to 6.07bn. It stays on the watchlist with no budget - GAAP loss 191.7m in the '
- 'quarter and a 138x forward multiple are why. || OTHER ERRORS: the MP claims are all lifted from a DoD announcement '
- 'dated 10 July 2025, fourteen months old, presented as current; and that announcement says DoD will ENSURE 10X output '
- 'is bought by defence AND COMMERCIAL customers, not that the government buys everything. The SNOW 6.07bn figure is '
- "PRODUCT revenue, not total. The SPCX 2027 revenue estimate of 73.2bn could not be verified - though to the post's "
- 'credit it labels that one an estimate rather than guidance. || IN FAIRNESS THE POST IS MORE HONEST THAN MOST: it '
- "carries its own caveat section noting SpaceX's 541m quarterly loss and 18.37bn of capex, that a fivefold gain is not "
- "automatic, and that backlog must convert to revenue and cash. Redwire's six figures verified EXACTLY. || NO ACTION "
- 'TAKEN. SPCX and SNOW are already on the watchlist with no budget and deliberate reasons recorded; FLNC stays '
- 'deleted; RDW and MP are not added - RDW carries a net margin near -61% on 426m of revenue, which is the exact '
- "profile of the 26 loss-making small caps cut on Sep 5. || Sep 7, 2026 - 'NUMBER 1 OF EACH SECTOR' LIST SWEPT AGAINST "
- "THE BOARD at Salee's request. A viral Thai post listed 46 US mega-caps as the number-one name in their sector. "
- 'Result: 27 are already on this board - 17 held or budgeted, 8 on the watchlist with no budget, and 2 flagged for '
- 'sale. 19 are absent, and four of those (MCD, JNJ, UNH, KO) we DELETED DELIBERATELY on Sep 5 for revenue growth of '
- "6.3%, 4.5%, 2.8% and 5.0%. || ⚠️ THE LIST'S PREMISE DOES NOT SURVIVE CONTACT WITH A GROWTH MANDATE. 'Number one in "
- "the sector' is a claim about category rank, not about price or growth. Four of its own entries are names this board "
- 'rejected precisely for failing to grow. Note also the list is titled number-one but contains three explicit '
- "number-TWOs (AMD, MA and CVX) plus one it calls a 'rising star' (NBIS), and it splits categories until everyone "
- 'wins: GOOGL is number one in Search while META is number one in Social; NFLX is number one in Streaming while DIS is '
- 'number one in Media. Subdivide finely enough and every company is number one of something. || ON QCOM, WHICH SALEE '
- 'ASKED ABOUT SPECIFICALLY - the sale stands. Qualcomm probably IS the leader in mobile processors. That is the '
- 'problem, not the defence: smartphones are a mature replacement market, and being champion of a category that grows '
- 'about 5% gives you a company growing 5.2% with earnings per share FALLING 6.3%. Its budget has already been '
+ASOF = ('Sep 10, 2026 - FOUR FILLS AND THE 200,000. Salee executed four limit orders on the evening of Sep 9 (Bangkok time) '
+ 'and the 200,000 transfer landed early. Every position on the board has been reconciled line by line against the '
+ 'POEMS statement. || THE FILLS, all Done, all limit orders: ONDS 200 @ 7.60 (order 5146806), AAOI 10 @ 112.40 '
+ '(5146476), IREN 45 @ 46.70 (5145787), INTC 20 of 45 @ 103.70 (5145116). REALISED +778.74 - INTC +1,163.35, IREN '
+ '+357.72, AAOI -223.15, ONDS -519.18. Three positions closed. INTEL KEEPS A 25-SHARE BACK-UP CORE at a cost of '
+ '1,127.56, still showing +135.55% on the POEMS screen - the trim was never an exit, and Intel remains one of the five '
+ 'back-up names. || RECONCILIATION: all 51 open positions on the board match POEMS on both share count and cost to the '
+ "cent. Invested falls from 593,001.07 to 586,994.77, which is exactly the POEMS 'Open Qty Cost' total. Lifetime "
+ 'realised improves from -3,165.18 to -2,386.44. || ⚠️ CASH 216,131.61. The 200,000 transfer ARRIVED EARLY - the '
+ 'Schedule row had it dated 14 Sep after a one-week delay from 7 Sep. 16,131.61 + 200,000 = 216,131.61 exactly, so the '
+ "four sales are NOT in that figure: POEMS states the balance is 'before the settlement of the outstanding contract', "
+ 'and roughly 6,785 of net proceeds should settle over the next two business days, taking cash to about 222,917. || ⚠️ '
+ 'PRICES ON THIS BOARD ARE STILL THE SEP 8 CLOSE. POEMS shows Sep 9 prices for the 51 held names but not for the 41 '
+ 'watch names, and mixing two dates across one board is worse than being one day behind. The next daily refresh brings '
+ 'all 92 tickers to the same close under the usual two-source rule. Market value on the board therefore reads lower '
+ 'than the 700,876.70 POEMS shows. || ⚠️ THB FIGURES FOR THESE FOUR SALES USE THE BOARD REFERENCE RATE OF 32.875, NOT '
+ 'the actual settlement rate, which POEMS did not show. The USD figures are exact; the THB ones are indicative until '
+ 'Salee supplies the settlement rate. || SELLING PROGRAMME: ten rows left of the original thirteen - ZETA, CRM, HUBB, '
+ 'QCOM, COHR, IBM, AMKR, BWXT, MPWR, FN. || PREVIOUS ENTRY: Sep 10, 2026 - THE RESTRUCTURE. The board moves from 15 '
+ "groups and 54 funded names to 10 GROUPS, 38 ACTIVE NAMES, 5 BACK-UP NAMES and 13 SELLS, on Salee's instruction. "
+ 'Budget stays at exactly 1,000,000. || THE TEN GROUPS: Hyperscalers & Model Owners 236,000 - AI Chips & Chip Design '
+ '203,000 - Foundry, Equipment & Test 161,000 - Memory & Storage 57,000 - Networking & Optical 83,000 - AI Software, '
+ 'Security & Infrastructure 40,000 - Power & Electrification 77,000 - Healthcare & Robotics 44,000 - Digital Platforms '
+ '& Fintech 64,000 - Space & Defence 35,000. AI (groups 1-6) is 780,000 = 78.0%, other future economies 220,000 = '
+ "22.0%, inside Salee's 70-80% / 20-25% bands. Largest single position NVDA at 95,000 = 9.5%, under the 10% ceiling. "
+ '|| FIVE NAMES ENTER THE BOARD WITH A BUDGET FOR THE FIRST TIME: SNPS 13,000, APP 18,000, SE 13,000, V 9,000, LHX '
+ '9,000 - 62,000 in total. SNPS replaces CDNS as the EDA holding on Rule of 40 75.4 against 39.3 and a forward P/E of '
+ '26.9 against 40.8. LHX is the profitable anchor Space & Defence lacked: without it the group was 32,000 spread '
+ "across two loss-makers. || ⚠️ THE BACK-UP BUCKET IS SALEE'S IDEA AND IT SAVED REAL MONEY. CRWD, INTC, TER, CDNS and "
+ 'FSLR are held with ZERO budget, a written promotion trigger each, and a review every three months. Because those '
+ 'five are not sold, the remaining 13 disposals net to PLUS 139 of gain on 28,308 of cost - ZETA +1,413, CRM +1,481 '
+ 'and IREN +376 almost exactly cancelled by ten losing positions. Selling all 18 would have crystallised 7,070. The '
+ 'back-up bucket kept 6,931 of unrealised gain out of the tax net. ⚠️ Tax adviser sign-off is still required before '
+ 'any of the 13 are executed. || AMZN IS FULL AND STOPS HERE: 48,600 invested against a 48,000 target. The business is '
+ 'not the problem - Q2 2026 net sales +20% to 200.6bn, AWS +37% to 42.2bn at a 39.4% operating margin, consolidated '
+ "operating income 27.5bn. The CASH is the problem: Amazon's own reconciliation reads 'Free cash flow decreased to an "
+ 'outflow of 7.6 billion for the trailing twelve months, compared with 18.2 billion for the trailing twelve months '
+ "ended June 30, 2025', on trailing capex of 173.0bn. And Q3 2026 is guided to grow only 9-12% against the 20% just "
+ 'delivered. Three triggers re-open it, recorded on the Schedule page: TTM free cash flow turns positive, revenue '
+ "guidance returns above 15%, or 2027 capex guides below 2026's roughly 220bn. || ⚠️ EVERY SCHEDULE ROW DATED BEFORE "
+ 'TODAY QUOTES A PRE-RESTRUCTURE BUDGET. The amounts in those rows are stale; check each against the new budget before '
+ 'acting. || Room to deploy now across the 38: 435,308, after reserving 15,432 of cost held in the five back-ups. || '
+ "Claude does NOT place trades. Every buy and every sell on this board is Salee's to execute at POEMS. || PREVIOUS "
+ 'ENTRY: Sep 8, 2026 - close. Daily price refresh: all 92 tickers brought to the Tuesday Sep 8, 2026 close (price, '
+ "mcapB, pxd; mcapB scaled by each ticker's exact price ratio; Monday Sep 7 was Labor Day, no session). METHOD per "
+ "playbook: stockanalysis.com quote page taken only when stamped 'At close: Sep 8, 2026, 4:00 PM EDT' AND its previous "
+ "close tied to the history table's Sep 4 row. 15 moves >=6%, each confirmed against a second independent source "
+ "(Google Finance Sep 8 close stamp; fool.com Sep 8 17:26 ET article for STX; marketscreener Sep 8 'Market Closed' "
+ 'stamp for LEU and SHOP): INTC +9.05, AMKR +6.96, STX +6.49, GLW +7.56, LITE +11.04, COHR +7.10, ALAB -6.94, AXTI '
+ '+12.85, ASTS +6.11, NBIS +7.73, CRWV +11.72, LEU +6.69, BE +9.63, SHOP -7.57, XE +8.13. || CGNX and XE served only '
+ 'INTRADAY stamps on stockanalysis (3:23 PM and 10:21 AM); both closes taken instead from Google Finance beta pages '
+ "carrying explicit 'Closed: Sep 8, 4:00 PM GMT-4' stamps (CGNX 62.23, XE 19.15; XE's stamp arithmetic ties exactly to "
+ "the verified Sep 4 close 17.71, corroborated by X-Energy's own IR page). || THIRTEEN quote-vs-history disagreements "
+ "caught (CDNS, KLAC, TER, AMKR, AMAT, APH, FN, TSLA, LHX, KTOS, IBM, PWR, SE - CDNS's history row even printed a "
+ 'close below its own low): quote page taken per playbook and every disputed close independently confirmed by Google '
+ "Finance. || LHX lo52 extended to 255.74 (new 52-week low). || DATA NOTE: the board carried 47.42 as AMKR's Sep 4 "
+ "close, but stockanalysis quote, history AND Google all say Sep 4 closed 47.77 - today's 50.72 is +6.96% vs the "
+ "board, +6.18% vs the true Sep 4 close. || Sep 7, 2026 - THE '5X IN 5 YEARS' LIST CHECKED. Salee sent a Thai post "
+ 'naming SPCX, RDW, MP, FLNC and SNOW as candidates to grow fivefold, and asked how possible that is over TEN years. '
+ '|| ⚠️ FIRST, THE HEADLINE BAR IS NOT THE ONE HE ASKED ABOUT. The post promises 5x in FIVE years, which is 37.97% a '
+ 'year compounded. Salee asked about TEN years, which is 17.46% a year. His own stated objective - double by 2030 - '
+ 'needs 14.87% a year. So 5x-in-ten sits only 2.59 points a year above the goal he already has, while 5x-in-five sits '
+ '23.10 points above it. Those are not the same proposition and the post is selling the harder one. || ⚠️ ALL FIVE ARE '
+ 'LOSS-MAKING ON A GAAP BASIS. Trailing-twelve-month net income: SPCX -8.89bn, SNOW -1.09bn, RDW -258.7m, FLNC -80.9m, '
+ 'MP -60.6m. Not one is profitable. The post never says this. || ⚠️ THE SPCX ENTRY IS ARITHMETICALLY ABSURD AND SHOULD '
+ "DISQUALIFY THE LIST'S METHOD. At 2.01 trillion, a fivefold gain means 10.05 TRILLION - about 1.80x the largest "
+ "company that currently exists anywhere. Putting a 2-trillion-dollar company in the same 'could go 5x' bucket as a "
+ "1.9-billion-dollar one ignores the arithmetic of size entirely. || ⚠️ A UNIT ERROR THAT SHOULD END THE READER'S "
+ "TRUST: the post gives FLNC a pipeline of '33.1 billion dollars'. Fluence's own Q3 release quantifies pipeline only "
+ 'in gigawatts, and states a 33.3 GW services pipeline. Gigawatts were converted into dollars. || VINDICATION OF THE '
+ 'SEP 5 CUT: FLNC is on this fivefold list and this board DELETED it two days ago for revenue growth of 7.5%, net '
+ 'margin -3.07% and return on equity -23.5%. The verified figures confirm the call - revenue TTM +7.5%, guidance CUT '
+ 'from 3.2-3.6bn to 2.9-3.1bn with roughly 400m of deliveries pushed into FY2027 on factory delays, and consensus at '
+ 'Hold with 13 of 21 analysts there. A company growing revenue 7.5% would need revenue to roughly quintuple to justify '
+ 'the stock quintupling. || SNOW WAS DELIBERATELY KEPT in the same sweep when a mechanical screen wanted it deleted, '
+ 'and that also holds up: revenue 1.546bn in Q2 FY2027, +35%, product revenue +37%, remaining performance obligations '
+ '9.0bn, +30%, and full-year PRODUCT revenue guidance RAISED to 6.07bn. It stays on the watchlist with no budget - '
+ 'GAAP loss 191.7m in the quarter and a 138x forward multiple are why. || OTHER ERRORS: the MP claims are all lifted '
+ 'from a DoD announcement dated 10 July 2025, fourteen months old, presented as current; and that announcement says '
+ 'DoD will ENSURE 10X output is bought by defence AND COMMERCIAL customers, not that the government buys everything. '
+ 'The SNOW 6.07bn figure is PRODUCT revenue, not total. The SPCX 2027 revenue estimate of 73.2bn could not be verified '
+ "- though to the post's credit it labels that one an estimate rather than guidance. || IN FAIRNESS THE POST IS MORE "
+ "HONEST THAN MOST: it carries its own caveat section noting SpaceX's 541m quarterly loss and 18.37bn of capex, that a "
+ "fivefold gain is not automatic, and that backlog must convert to revenue and cash. Redwire's six figures verified "
+ 'EXACTLY. || NO ACTION TAKEN. SPCX and SNOW are already on the watchlist with no budget and deliberate reasons '
+ 'recorded; FLNC stays deleted; RDW and MP are not added - RDW carries a net margin near -61% on 426m of revenue, '
+ "which is the exact profile of the 26 loss-making small caps cut on Sep 5. || Sep 7, 2026 - 'NUMBER 1 OF EACH SECTOR' "
+ "LIST SWEPT AGAINST THE BOARD at Salee's request. A viral Thai post listed 46 US mega-caps as the number-one name in "
+ 'their sector. Result: 27 are already on this board - 17 held or budgeted, 8 on the watchlist with no budget, and 2 '
+ 'flagged for sale. 19 are absent, and four of those (MCD, JNJ, UNH, KO) we DELETED DELIBERATELY on Sep 5 for revenue '
+ "growth of 6.3%, 4.5%, 2.8% and 5.0%. || ⚠️ THE LIST'S PREMISE DOES NOT SURVIVE CONTACT WITH A GROWTH MANDATE. "
+ "'Number one in the sector' is a claim about category rank, not about price or growth. Four of its own entries are "
+ 'names this board rejected precisely for failing to grow. Note also the list is titled number-one but contains three '
+ "explicit number-TWOs (AMD, MA and CVX) plus one it calls a 'rising star' (NBIS), and it splits categories until "
+ 'everyone wins: GOOGL is number one in Search while META is number one in Social; NFLX is number one in Streaming '
+ 'while DIS is number one in Media. Subdivide finely enough and every company is number one of something. || ON QCOM, '
+ 'WHICH SALEE ASKED ABOUT SPECIFICALLY - the sale stands. Qualcomm probably IS the leader in mobile processors. That '
+ 'is the problem, not the defence: smartphones are a mature replacement market, and being champion of a category that '
+ 'grows about 5% gives you a company growing 5.2% with earnings per share FALLING 6.3%. Its budget has already been '
  'withdrawn and reassigned, so keeping it would require breaking the exactly-1,000,000 allocation set on Sep 7. ⚠️ IN '
  'FAIRNESS: at 17.2x forward with a 22.3% net margin QCOM is genuinely cheap and profitable, it was already rated the '
  'LOWEST conviction of the six sales, and the Selling tab already records that if Salee keeps one of the six this is '
@@ -3617,7 +3635,7 @@ POS = {'GOOGL': {'budget': 78000, 'cost': 59475.92, 'shares': 217},
  'AVGO': {'budget': 50000, 'cost': 30125.18, 'shares': 88.5},
  'AMD': {'budget': 24000, 'cost': 13789.22, 'shares': 55},
  'MRVL': {'budget': 21000, 'cost': 7872.66, 'shares': 48.5},
- 'INTC': {'budget': None, 'cost': 2029.6, 'shares': 45},
+ 'INTC': {'budget': None, 'cost': 1127.56, 'shares': 25},
  'QCOM': {'budget': None, 'cost': 1959.96, 'shares': 11},
  'ARM': {'budget': None, 'cost': None, 'shares': None},
  'ASML': {'budget': 41000, 'cost': 16394.06, 'shares': 13},
@@ -3637,7 +3655,7 @@ POS = {'GOOGL': {'budget': 78000, 'cost': 59475.92, 'shares': 217},
  'APH': {'budget': 15000, 'cost': 2004.4, 'shares': 32},
  'GLW': {'budget': None, 'cost': None, 'shares': None},
  'FN': {'budget': None, 'cost': 1604.56, 'shares': 3},
- 'AAOI': {'budget': None, 'cost': 1338.56, 'shares': 10},
+ 'AAOI': {'budget': None, 'cost': None, 'shares': None},
  'ETN': {'budget': 11000, 'cost': 7879.55, 'shares': 19},
  'VST': {'budget': 15000, 'cost': 8133.29, 'shares': 57},
  'CEG': {'budget': 17000, 'cost': 4040.98, 'shares': 15},
@@ -3658,7 +3676,7 @@ POS = {'GOOGL': {'budget': 78000, 'cost': 59475.92, 'shares': 217},
  'SPCX': {'budget': None, 'cost': None, 'shares': None},
  'PLTR': {'budget': 16000, 'cost': 5533.09, 'shares': 40},
  'AVAV': {'budget': 11000, 'cost': 3758.3, 'shares': 18},
- 'ONDS': {'budget': None, 'cost': 2030.54, 'shares': 200},
+ 'ONDS': {'budget': None, 'cost': None, 'shares': None},
  'IONQ': {'budget': None, 'cost': None, 'shares': None},
  'ORCL': {'budget': 13000, 'cost': 8313.62, 'shares': 50},
  'ZETA': {'budget': None, 'cost': 2004.33, 'shares': 111},
@@ -3669,7 +3687,7 @@ POS = {'GOOGL': {'budget': 78000, 'cost': 59475.92, 'shares': 217},
  'SNOW': {'budget': None, 'cost': None, 'shares': None},
  'DDOG': {'budget': None, 'cost': None, 'shares': None},
  'TEM': {'budget': None, 'cost': None, 'shares': None},
- 'IREN': {'budget': None, 'cost': 1735.16, 'shares': 45},
+ 'IREN': {'budget': None, 'cost': None, 'shares': None},
  'NBIS': {'budget': None, 'cost': None, 'shares': None},
  'CRWV': {'budget': None, 'cost': None, 'shares': None},
  'V': {'budget': 9000, 'cost': None, 'shares': None},
@@ -4099,15 +4117,18 @@ TRADES = [{'date': 'Jul 21, 2026',
           'planned sales to be filled. The 10 bought minutes earlier were a keying error confirmed by Salee - see the '
           'BUY row.'}]
 
-SELLPLAN = ['ZETA', 'CRM', 'IREN', 'HUBB', 'QCOM', 'COHR', 'AAOI', 'IBM', 'AMKR', 'BWXT', 'MPWR', 'FN', 'ONDS']
+SELLPLAN = ['ZETA', 'CRM', 'HUBB', 'QCOM', 'COHR', 'IBM', 'AMKR', 'BWXT', 'MPWR', 'FN']
 
 CASH = {'currency': 'USD',
- 'amount': 16131.61,
- 'asof': 'Sep 8, 2026 (POEMS Live Cash Balance, after the TSLA round trip)',
+ 'amount': 216131.61,
+ 'asof': 'Sep 9, 2026 - POEMS Live Cash Balance, USD. Includes the 200,000 transfer, which landed EARLY (the Schedule '
+         'row had it dated 14 Sep). Does NOT yet include roughly 6,785 of net proceeds from the four Sep 9 sales - '
+         "POEMS states the balance is 'before the settlement of the outstanding contract', so those settle over the "
+         'next two business days and cash should reach about 222,917.',
  'broker': 'POEMS (Phillip Securities)'}
 
 REALIZED = [{'t': 'NBIS', 'g': 5, 'amount': 1404.52},
- {'t': 'IREN', 'g': 5, 'amount': 98.52},
+ {'t': 'IREN', 'g': 5, 'amount': 456.24},
  {'t': 'CRWV', 'g': 5, 'amount': -786.02},
  {'t': 'ORCL', 'g': 5, 'amount': -1961.73},
  {'t': 'IONQ', 'g': 5, 'amount': -772.46},
@@ -4118,14 +4139,17 @@ REALIZED = [{'t': 'NBIS', 'g': 5, 'amount': 1404.52},
  {'t': 'APP', 'g': 8, 'amount': -393.16},
  {'t': 'SOFI', 'g': 8, 'amount': -152.4},
  {'t': 'HOOD', 'g': 8, 'amount': 897.82},
- {'t': 'TSLA', 'g': 7, 'amount': -687.17}]
+ {'t': 'TSLA', 'g': 7, 'amount': -687.17},
+ {'t': 'INTC', 'g': 2, 'amount': 1163.35},
+ {'t': 'AAOI', 'g': 4, 'amount': -223.15},
+ {'t': 'ONDS', 'g': 9, 'amount': -519.18}]
 
 TOTALS = {'investedEverUSD': 625789.05,
  'investedEverTHB': 19834480,
- 'soldCostUSD': 41998.8,
- 'soldCostTHB': 1395202,
- 'realizedUSD': -3165.18,
- 'realizedTHB': -104868,
+ 'soldCostUSD': 48005.1,
+ 'soldCostTHB': 1592659,
+ 'realizedUSD': -2386.44,
+ 'realizedTHB': -78454,
  'fx': 32.875,
  'inceptionDate': 'Jul 15, 2025',
  'targetUSD': 1000000}
@@ -4155,13 +4179,13 @@ SOLD = [{'t': 'NBIS',
   'g': 8,
   'lastDate': '2026-07-16'},
  {'t': 'IREN',
-  'qty': 45,
-  'costUSD': 1735.17,
-  'costTHB': 58440.36,
-  'glUSD': 98.52,
-  'glTHB': 3318.32,
+  'qty': 90,
+  'costUSD': 3470.33,
+  'costTHB': 115484,
+  'glUSD': 456.24,
+  'glTHB': 15078,
   'g': 5,
-  'lastDate': '2026-07-21'},
+  'lastDate': '2026-09-09'},
  {'t': 'SOFI',
   'qty': 105,
   'costUSD': 2006.51,
@@ -4233,7 +4257,31 @@ SOLD = [{'t': 'NBIS',
   'glUSD': -687.17,
   'glTHB': -21698.15,
   'g': 7,
-  'lastDate': '2026-09-08'}]
+  'lastDate': '2026-09-08'},
+ {'t': 'INTC',
+  'qty': 20,
+  'costUSD': 902.04,
+  'costTHB': 29655,
+  'glUSD': 1163.35,
+  'glTHB': 38245,
+  'g': 2,
+  'lastDate': '2026-09-09'},
+ {'t': 'AAOI',
+  'qty': 10,
+  'costUSD': 1338.56,
+  'costTHB': 44005,
+  'glUSD': -223.15,
+  'glTHB': -7336,
+  'g': 4,
+  'lastDate': '2026-09-09'},
+ {'t': 'ONDS',
+  'qty': 200,
+  'costUSD': 2030.54,
+  'costTHB': 66754,
+  'glUSD': -519.18,
+  'glTHB': -17068,
+  'g': 9,
+  'lastDate': '2026-09-09'}]
 
 MONTHLY = [{'ym': '2025-07',
   'buyUSD': 19750.54,
@@ -4609,15 +4657,23 @@ MONTHLY = [{'ym': '2025-07',
  {'ym': '2026-09',
   'buyUSD': 7461.88,
   'buyLots': 3,
-  'sellUSD': 7286.01,
-  'sellLots': 1,
-  'realizedUSD': -687.17,
-  'realizedTHB': -21698,
-  'byStock': [{'buy': 2003.56, 'real': 0.0, 'sell': 0.0, 't': 'FSLR'},
+  'sellUSD': 14071.05,
+  'sellLots': 5,
+  'realizedUSD': 91.57,
+  'realizedTHB': 3010,
+  'byStock': [{'t': 'TSLA', 'buy': 3668.56, 'sell': 7286.01, 'real': -687.17},
+              {'t': 'IREN', 'buy': 0.0, 'sell': 2092.88, 'real': 357.72},
+              {'t': 'INTC', 'buy': 0.0, 'sell': 2065.39, 'real': 1163.35},
+              {'buy': 2003.56, 'real': 0.0, 'sell': 0.0, 't': 'FSLR'},
               {'buy': 1789.76, 'real': 0.0, 'sell': 0.0, 't': 'HUBB'},
-              {'t': 'TSLA', 'buy': 3668.56, 'sell': 7286.01, 'real': -687.17}],
-  'byGroup': [{'g': 6, 'buy': 3793.32, 'sell': 0.0, 'real': 0.0},
-              {'g': 7, 'buy': 3668.56, 'sell': 7286.01, 'real': -687.17}]}]
+              {'t': 'ONDS', 'buy': 0.0, 'sell': 1511.36, 'real': -519.18},
+              {'t': 'AAOI', 'buy': 0.0, 'sell': 1115.41, 'real': -223.15}],
+  'byGroup': [{'g': 2, 'buy': 0.0, 'sell': 2065.39, 'real': 1163.35},
+              {'g': 4, 'buy': 0.0, 'sell': 1115.41, 'real': -223.15},
+              {'g': 5, 'buy': 0.0, 'sell': 2092.88, 'real': 357.72},
+              {'g': 6, 'buy': 3793.32, 'sell': 0.0, 'real': 0.0},
+              {'g': 7, 'buy': 3668.56, 'sell': 7286.01, 'real': -687.17},
+              {'g': 9, 'buy': 0.0, 'sell': 1511.36, 'real': -519.18}]}]
 
 THBFX = {'GOOGL': 32.2446,
  'NVDA': 32.084,
@@ -4981,14 +5037,15 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'amt': 0,
             'cond': 'Free monthly signal - most companies report quarterly. July was +44.7% YoY.',
             'c': 'confirmed'},
-           {'d': '2026-09-14',
+           {'d': '2026-09-09',
             't': '',
             'k': 'admin',
-            'w': '$200,000 arrives at POEMS',
+            'w': '200,000 ARRIVED at POEMS - confirmed on the Sep 9 statement (cash 216,131.61).',
             'a': 'ADMIN',
             'amt': 200000,
-            'cond': 'Delayed one week from 7 Sep for currency and banking reasons.',
-            'c': 'confirmed'},
+            'cond': 'Landed early: the row was dated 14 Sep after a one-week delay from 7 Sep for currency and banking '
+                    'reasons.',
+            'c': 'done'},
            {'d': '2026-09-16',
             't': '',
             'k': 'macro',
@@ -5558,15 +5615,20 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
 
 SELLBOOK = {'updated': '2026-09-10',
  'comm': 8.56,
- 'note': 'Selling programme under the 10-group / 38-active / 5-back-up structure agreed 10 Sep 2026. THIRTEEN full '
-         'exits, plus the INTC partial trim which lives on the Schedule page because Intel is now a BACK-UP name, not '
-         'a sale. Claude does NOT place trades - every row here is for Salee to execute at POEMS, and nothing on this '
-         'board changes until he reports the fill. Estimated proceeds use the Sep 8 close and are gross of the 8.56 '
-         'flat POEMS commission, shown separately; sells also carry roughly 0.099% in regulatory fees. THE WHOLE '
-         'PROGRAMME NETS +139 OF GAIN on 28,308 of cost: ZETA +1,413, CRM +1,481 and IREN +376 are almost exactly '
-         'cancelled by the ten losing positions. That is the direct result of moving the five best legacy names (CRWD, '
-         'INTC, TER, CDNS, FSLR) to BACK-UP status instead of selling them - it kept 6,931 of unrealised gain out of '
-         'the tax net. ⚠️ Tax adviser sign-off is still required before execution, even at +139.',
+ 'note': 'SEP 9, 2026 - FOUR FILLS. ONDS 200 @ 7.60, AAOI 10 @ 112.40, IREN 45 @ 46.70 and INTC 20 @ 103.70, all limit '
+         'orders, all Done. Realised +778.74 in total: INTC +1,163.35, IREN +357.72, AAOI -223.15, ONDS -519.18. Three '
+         'positions closed; Intel keeps a 25-share BACK-UP core. TEN ROWS REMAIN, market value about 21,600 at the Sep '
+         '8 close, and they still net close to nothing: the three winners left (ZETA +1,413, CRM +1,481, QCOM -44) '
+         'against seven losers. || Selling programme under the 10-group / 38-active / 5-back-up structure agreed 10 '
+         'Sep 2026. THIRTEEN full exits, plus the INTC partial trim which lives on the Schedule page because Intel is '
+         'now a BACK-UP name, not a sale. Claude does NOT place trades - every row here is for Salee to execute at '
+         'POEMS, and nothing on this board changes until he reports the fill. Estimated proceeds use the Sep 8 close '
+         'and are gross of the 8.56 flat POEMS commission, shown separately; sells also carry roughly 0.099% in '
+         'regulatory fees. THE WHOLE PROGRAMME NETS +139 OF GAIN on 28,308 of cost: ZETA +1,413, CRM +1,481 and IREN '
+         '+376 are almost exactly cancelled by the ten losing positions. That is the direct result of moving the five '
+         'best legacy names (CRWD, INTC, TER, CDNS, FSLR) to BACK-UP status instead of selling them - it kept 6,931 of '
+         'unrealised gain out of the tax net. ⚠️ Tax adviser sign-off is still required before execution, even at '
+         '+139.',
  'rules': ['Sell the thesis, not the price. Every row is here because the BUSINESS fails the 5-10 year growth mandate.',
            'TIER A (8 names: HUBB, QCOM, AAOI, IBM, BWXT, MPWR, FN, ONDS) - too small to wait. Sell at market '
            'regardless of price. Commission runs 0.4-0.8% each way at these sizes; MPWR is a single share. Waiting has '
@@ -5668,13 +5730,13 @@ SELLBOOK = {'updated': '2026-09-10',
            'conv': 'High',
            'why': 'Tier B. Bitcoin miner turned neocloud. Net margin -99.4%, Rule of 40 -274.7. Held at +21.7%. Order '
                   'already live at 46.00.',
-           'after': 'Group 9 keeps ORCL, IBM, DELL, NBIS, CRWV, IONQ. Budget was already 0.',
+           'after': 'Position closed.',
            'budget': 0,
-           'status': 'planned',
-           'fillPx': None,
-           'fillDate': None,
-           'proceeds': None,
-           'realized': None},
+           'status': 'done',
+           'fillPx': 46.7,
+           'fillDate': '2026-09-09',
+           'proceeds': 2092.88,
+           'realized': 357.72},
           {'t': 'HUBB',
            'name': 'Hubbell',
            'g': 'Power & Electrification',
@@ -5752,13 +5814,13 @@ SELLBOOK = {'updated': '2026-09-10',
            'conv': 'High',
            'why': 'Tier A. Net margin -9.57%, Rule of 40 -37.5. Position is 10 shares / 1,115. Order already live at '
                   '110.00.',
-           'after': 'Networking keeps ANET, LITE, APH, CRDO, ALAB, COHR, FN plus GLW and AXTI on watch.',
+           'after': 'Position closed.',
            'budget': 0,
-           'status': 'planned',
-           'fillPx': None,
-           'fillDate': None,
-           'proceeds': None,
-           'realized': None},
+           'status': 'done',
+           'fillPx': 112.4,
+           'fillDate': '2026-09-09',
+           'proceeds': 1115.41,
+           'realized': -223.15},
           {'t': 'IBM',
            'name': 'IBM',
            'g': 'AI Software, Security & Infrastructure',
@@ -5872,13 +5934,13 @@ SELLBOOK = {'updated': '2026-09-10',
            'conv': 'High',
            'why': 'Tier A. Drones and private wireless. Board fields still unverified (revenue growth 793.2%, net '
                   'margin 251.92% - both implausible and flagged). Held at -24.9%. Order already live at 7.50.',
-           'after': 'Defense keeps PLTR and AVAV held, LHX funded at 5,000, KTOS on watch.',
+           'after': 'Position closed.',
            'budget': 0,
-           'status': 'planned',
-           'fillPx': None,
-           'fillDate': None,
-           'proceeds': None,
-           'realized': None}]}
+           'status': 'done',
+           'fillPx': 7.6,
+           'fillDate': '2026-09-09',
+           'proceeds': 1511.36,
+           'realized': -519.18}]}
 
 METRICS3 = M3  # alias: per-ticker pfcf / ev (EV/EBITDA) / de (Debt/Equity)
 
