@@ -3,8 +3,28 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ("Sep 10, 2026 - THE CLOUDFLARE 'BILLION-DOLLAR AI SECURITY' POST, CHECKED. Salee sent a 'SHARE NEWS' graphic "
- "headlined 'Could AI cybersecurity be Cloudflare's next billion-dollar opportunity?' and asked whether the "
+ASOF = ('Sep 10, 2026 - THREE MORE FILLS, AND THE CASH PREDICTION LANDED TO THE CENT. Salee executed three more Tier A limit '
+ 'orders on the evening of 10 Sep Bangkok time, all Done: BWXT 10 @ 157.30 (order 5239053), IBM 6 @ 238.49 (5239310), '
+ 'MPWR 1 @ 1,196.24 (5239534). || REALISED -1,071.30: BWXT -429.66, MPWR -350.91, IBM -290.73, on 5,245.69 of cost, '
+ 'releasing about 4,174 of cash. Lifetime realised moves from -2,386.44 to -3,457.74. ⚠️ THESE THREE REALISED FIGURES '
+ 'ARE COMPUTED, NOT READ FROM POEMS - the order screen showed the fill prices but its realised column was cut off, so '
+ 'each is fill price times quantity less the 8.56 commission and the 0.00278% SEC fee rate implied by the four 9 Sep '
+ 'fills, less the POEMS cost basis. Salee should confirm them against his contract notes. || RECONCILIATION: all 44 '
+ 'remaining open positions match POEMS on share count AND cost to the cent, and invested falls from 586,994.77 to '
+ "581,749.08 - EXACTLY the POEMS 'Open Qty Cost' total. Market value 685,746.64, unrealised +103,997.56, +17.88%. || "
+ "⚠️ THE CASH FORECAST WAS EXACT. On 9 Sep this board predicted 'roughly 6,785 of net proceeds should settle over the "
+ "next two business days, taking cash to about 222,917'. POEMS now shows 222,916.65 - the 216,131.61 balance plus "
+ "6,785.04 to the cent. The three 10 Sep sales are NOT in that figure ('before the settlement of the outstanding "
+ "contract'), so roughly 4,174 more arrives over the next two business days, taking cash to about 227,091 before any "
+ 'buying. || SELLING PROGRAMME: SEVEN ROWS LEFT of the original thirteen - ZETA, CRM, HUBB, QCOM, COHR, AMKR, FN. Tier '
+ 'A is finished except QCOM, HUBB and FN. ⚠️ THE REMAINING SEVEN STILL NET CLOSE TO NOTHING, which was the whole point '
+ "of the back-up bucket: ZETA and CRM carry the gains and the other five carry losses. || ⚠️ OUTSTANDING: ORCL's "
+ '4,686.38 of released room is NOT yet bought - POEMS still shows 50 shares at 8,313.62, now marked -8.02% with the '
+ "stock at 152.94 before the earnings reaction. The Oracle order from the 10 Sep verdict is still Salee's to place. || "
+ 'Prices on this board remain the Sep 8 close; POEMS shows Sep 10 prices for held names only, and mixing dates across '
+ 'one board is worse than being two days behind. The next daily refresh brings all 92 tickers to one close. || '
+ "PREVIOUS ENTRY: Sep 10, 2026 - THE CLOUDFLARE 'BILLION-DOLLAR AI SECURITY' POST, CHECKED. Salee sent a 'SHARE NEWS' "
+ "graphic headlined 'Could AI cybersecurity be Cloudflare's next billion-dollar opportunity?' and asked whether the "
  'cybersecurity plan is in good shape. || ⚠️ THERE IS A REAL TRIGGER BEHIND IT. On 3 Sep 2026 Cloudflare announced a '
  'partnership with OpenAI Daybreak models for AI-powered vulnerability discovery and remediation at the network edge, '
  'in early access through Cloudflare Managed Defense. The product cadence is genuine and heavy - Precursor behavioural '
@@ -3861,8 +3881,8 @@ POS = {'GOOGL': {'budget': 78000, 'cost': 59475.92, 'shares': 217},
  'CEG': {'budget': 17000, 'cost': 4040.98, 'shares': 15},
  'VRT': {'budget': 21000, 'cost': 3524.44, 'shares': 14},
  'GEV': {'budget': 13000, 'cost': 2147.3, 'shares': 2},
- 'BWXT': {'budget': None, 'cost': 1994.06, 'shares': 10},
- 'MPWR': {'budget': None, 'cost': 1538.56, 'shares': 1},
+ 'BWXT': {'budget': None, 'cost': None, 'shares': None},
+ 'MPWR': {'budget': None, 'cost': None, 'shares': None},
  'OKLO': {'budget': None, 'cost': None, 'shares': None},
  'NEE': {'budget': None, 'cost': None, 'shares': None},
  'BE': {'budget': None, 'cost': None, 'shares': None},
@@ -3882,7 +3902,7 @@ POS = {'GOOGL': {'budget': 78000, 'cost': 59475.92, 'shares': 217},
  'ZETA': {'budget': None, 'cost': 2004.33, 'shares': 111},
  'CDNS': {'budget': None, 'cost': 3918.01, 'shares': 12},
  'CRM': {'budget': None, 'cost': 3749.91, 'shares': 21},
- 'IBM': {'budget': None, 'cost': 1713.07, 'shares': 6},
+ 'IBM': {'budget': None, 'cost': None, 'shares': None},
  'NOW': {'budget': None, 'cost': None, 'shares': None},
  'SNOW': {'budget': None, 'cost': None, 'shares': None},
  'DDOG': {'budget': None, 'cost': None, 'shares': None},
@@ -4317,14 +4337,14 @@ TRADES = [{'date': 'Jul 21, 2026',
           'planned sales to be filled. The 10 bought minutes earlier were a keying error confirmed by Salee - see the '
           'BUY row.'}]
 
-SELLPLAN = ['ZETA', 'CRM', 'HUBB', 'QCOM', 'COHR', 'IBM', 'AMKR', 'BWXT', 'MPWR', 'FN']
+SELLPLAN = ['ZETA', 'CRM', 'HUBB', 'QCOM', 'COHR', 'AMKR', 'FN']
 
 CASH = {'currency': 'USD',
- 'amount': 216131.61,
- 'asof': 'Sep 9, 2026 - POEMS Live Cash Balance, USD. Includes the 200,000 transfer, which landed EARLY (the Schedule '
-         'row had it dated 14 Sep). Does NOT yet include roughly 6,785 of net proceeds from the four Sep 9 sales - '
-         "POEMS states the balance is 'before the settlement of the outstanding contract', so those settle over the "
-         'next two business days and cash should reach about 222,917.',
+ 'amount': 222916.65,
+ 'asof': 'Sep 10, 2026 - POEMS Live Cash Balance, USD. This is EXACTLY the 216,131.61 of 9 Sep plus 6,785.04, the net '
+         'proceeds of the four 9 Sep sales settling as predicted. It does NOT yet include the three 10 Sep sales - '
+         "POEMS states the balance is 'before the settlement of the outstanding contract' - so about 4,174 more "
+         'settles over the next two business days, taking cash to roughly 227,091 before any buying.',
  'broker': 'POEMS (Phillip Securities)'}
 
 REALIZED = [{'t': 'NBIS', 'g': 5, 'amount': 1404.52},
@@ -4342,14 +4362,17 @@ REALIZED = [{'t': 'NBIS', 'g': 5, 'amount': 1404.52},
  {'t': 'TSLA', 'g': 7, 'amount': -687.17},
  {'t': 'INTC', 'g': 2, 'amount': 1163.35},
  {'t': 'AAOI', 'g': 4, 'amount': -223.15},
- {'t': 'ONDS', 'g': 9, 'amount': -519.18}]
+ {'t': 'ONDS', 'g': 9, 'amount': -519.18},
+ {'t': 'BWXT', 'g': 6, 'amount': -429.66},
+ {'t': 'IBM', 'g': 5, 'amount': -290.73},
+ {'t': 'MPWR', 'g': 1, 'amount': -350.91}]
 
 TOTALS = {'investedEverUSD': 625789.05,
  'investedEverTHB': 19834480,
- 'soldCostUSD': 48005.1,
- 'soldCostTHB': 1592659,
- 'realizedUSD': -2386.44,
- 'realizedTHB': -78454,
+ 'soldCostUSD': 53250.79,
+ 'soldCostTHB': 1765111,
+ 'realizedUSD': -3457.74,
+ 'realizedTHB': -113673,
  'fx': 32.875,
  'inceptionDate': 'Jul 15, 2025',
  'targetUSD': 1000000}
@@ -4481,7 +4504,31 @@ SOLD = [{'t': 'NBIS',
   'glUSD': -519.18,
   'glTHB': -17068,
   'g': 9,
-  'lastDate': '2026-09-09'}]
+  'lastDate': '2026-09-09'},
+ {'t': 'BWXT',
+  'qty': 10,
+  'costUSD': 1994.06,
+  'costTHB': 65555,
+  'glUSD': -429.66,
+  'glTHB': -14125,
+  'g': 6,
+  'lastDate': '2026-09-10'},
+ {'t': 'IBM',
+  'qty': 6,
+  'costUSD': 1713.07,
+  'costTHB': 56317,
+  'glUSD': -290.73,
+  'glTHB': -9558,
+  'g': 5,
+  'lastDate': '2026-09-10'},
+ {'t': 'MPWR',
+  'qty': 1,
+  'costUSD': 1538.56,
+  'costTHB': 50580,
+  'glUSD': -350.91,
+  'glTHB': -11536,
+  'g': 1,
+  'lastDate': '2026-09-10'}]
 
 MONTHLY = [{'ym': '2025-07',
   'buyUSD': 19750.54,
@@ -4857,21 +4904,25 @@ MONTHLY = [{'ym': '2025-07',
  {'ym': '2026-09',
   'buyUSD': 7461.88,
   'buyLots': 3,
-  'sellUSD': 14071.05,
-  'sellLots': 5,
-  'realizedUSD': 91.57,
-  'realizedTHB': 3010,
+  'sellUSD': 18245.44,
+  'sellLots': 8,
+  'realizedUSD': -979.73,
+  'realizedTHB': -32209,
   'byStock': [{'t': 'TSLA', 'buy': 3668.56, 'sell': 7286.01, 'real': -687.17},
               {'t': 'IREN', 'buy': 0.0, 'sell': 2092.88, 'real': 357.72},
               {'t': 'INTC', 'buy': 0.0, 'sell': 2065.39, 'real': 1163.35},
               {'buy': 2003.56, 'real': 0.0, 'sell': 0.0, 't': 'FSLR'},
               {'buy': 1789.76, 'real': 0.0, 'sell': 0.0, 't': 'HUBB'},
+              {'t': 'BWXT', 'buy': 0.0, 'sell': 1564.4, 'real': -429.66},
               {'t': 'ONDS', 'buy': 0.0, 'sell': 1511.36, 'real': -519.18},
+              {'t': 'IBM', 'buy': 0.0, 'sell': 1422.34, 'real': -290.73},
+              {'t': 'MPWR', 'buy': 0.0, 'sell': 1187.65, 'real': -350.91},
               {'t': 'AAOI', 'buy': 0.0, 'sell': 1115.41, 'real': -223.15}],
-  'byGroup': [{'g': 2, 'buy': 0.0, 'sell': 2065.39, 'real': 1163.35},
+  'byGroup': [{'g': 1, 'buy': 0.0, 'sell': 1187.65, 'real': -350.91},
+              {'g': 2, 'buy': 0.0, 'sell': 2065.39, 'real': 1163.35},
               {'g': 4, 'buy': 0.0, 'sell': 1115.41, 'real': -223.15},
-              {'g': 5, 'buy': 0.0, 'sell': 2092.88, 'real': 357.72},
-              {'g': 6, 'buy': 3793.32, 'sell': 0.0, 'real': 0.0},
+              {'g': 5, 'buy': 0.0, 'sell': 3515.22, 'real': 66.99},
+              {'g': 6, 'buy': 3793.32, 'sell': 1564.4, 'real': -429.66},
               {'g': 7, 'buy': 3668.56, 'sell': 7286.01, 'real': -687.17},
               {'g': 9, 'buy': 0.0, 'sell': 1511.36, 'real': -519.18}]}]
 
@@ -5892,20 +5943,28 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
 
 SELLBOOK = {'updated': '2026-09-10',
  'comm': 8.56,
- 'note': 'SEP 9, 2026 - FOUR FILLS. ONDS 200 @ 7.60, AAOI 10 @ 112.40, IREN 45 @ 46.70 and INTC 20 @ 103.70, all limit '
-         'orders, all Done. Realised +778.74 in total: INTC +1,163.35, IREN +357.72, AAOI -223.15, ONDS -519.18. Three '
-         'positions closed; Intel keeps a 25-share BACK-UP core. TEN ROWS REMAIN, market value about 21,600 at the Sep '
-         '8 close, and they still net close to nothing: the three winners left (ZETA +1,413, CRM +1,481, QCOM -44) '
-         'against seven losers. || Selling programme under the 10-group / 38-active / 5-back-up structure agreed 10 '
-         'Sep 2026. THIRTEEN full exits, plus the INTC partial trim which lives on the Schedule page because Intel is '
-         'now a BACK-UP name, not a sale. Claude does NOT place trades - every row here is for Salee to execute at '
-         'POEMS, and nothing on this board changes until he reports the fill. Estimated proceeds use the Sep 8 close '
-         'and are gross of the 8.56 flat POEMS commission, shown separately; sells also carry roughly 0.099% in '
-         'regulatory fees. THE WHOLE PROGRAMME NETS +139 OF GAIN on 28,308 of cost: ZETA +1,413, CRM +1,481 and IREN '
-         '+376 are almost exactly cancelled by the ten losing positions. That is the direct result of moving the five '
-         'best legacy names (CRWD, INTC, TER, CDNS, FSLR) to BACK-UP status instead of selling them - it kept 6,931 of '
-         'unrealised gain out of the tax net. ⚠️ Tax adviser sign-off is still required before execution, even at '
-         '+139.',
+ 'note': 'SEP 10, 2026 - THREE MORE TIER A FILLS, ALL AT LIMIT AND ALL DONE: BWXT 10 @ 157.30, IBM 6 @ 238.49, MPWR 1 '
+         '@ 1,196.24. Realised -1,071.30 between them - BWXT -429.66, MPWR -350.91, IBM -290.73 - on 5,245.69 of cost, '
+         'releasing about 4,174 of cash. ⚠️ THOSE THREE REALISED FIGURES ARE COMPUTED, NOT READ OFF POEMS: the order '
+         'screen showed fill prices but the realised column was cut off, so each is fill price times quantity, less '
+         'the 8.56 flat commission and the SEC fee rate of 0.00278% implied by the four 9 Sep fills, less the POEMS '
+         'cost basis. The cost bases and the resulting invested total of 581,749.08 tie to the POEMS position table '
+         'exactly, so any error is confined to a few cents of fee. SALEE SHOULD CONFIRM THE THREE REALISED FIGURES '
+         'FROM HIS CONTRACT NOTES. || TIER A IS NOW DONE except QCOM, HUBB and FN. SEVEN ROWS REMAIN of the original '
+         'thirteen. || SEP 9, 2026 - FOUR FILLS. ONDS 200 @ 7.60, AAOI 10 @ 112.40, IREN 45 @ 46.70 and INTC 20 @ '
+         '103.70, all limit orders, all Done. Realised +778.74 in total: INTC +1,163.35, IREN +357.72, AAOI -223.15, '
+         'ONDS -519.18. Three positions closed; Intel keeps a 25-share BACK-UP core. TEN ROWS REMAIN, market value '
+         'about 21,600 at the Sep 8 close, and they still net close to nothing: the three winners left (ZETA +1,413, '
+         'CRM +1,481, QCOM -44) against seven losers. || Selling programme under the 10-group / 38-active / 5-back-up '
+         'structure agreed 10 Sep 2026. THIRTEEN full exits, plus the INTC partial trim which lives on the Schedule '
+         'page because Intel is now a BACK-UP name, not a sale. Claude does NOT place trades - every row here is for '
+         'Salee to execute at POEMS, and nothing on this board changes until he reports the fill. Estimated proceeds '
+         'use the Sep 8 close and are gross of the 8.56 flat POEMS commission, shown separately; sells also carry '
+         'roughly 0.099% in regulatory fees. THE WHOLE PROGRAMME NETS +139 OF GAIN on 28,308 of cost: ZETA +1,413, CRM '
+         '+1,481 and IREN +376 are almost exactly cancelled by the ten losing positions. That is the direct result of '
+         'moving the five best legacy names (CRWD, INTC, TER, CDNS, FSLR) to BACK-UP status instead of selling them - '
+         'it kept 6,931 of unrealised gain out of the tax net. ⚠️ Tax adviser sign-off is still required before '
+         'execution, even at +139.',
  'rules': ['Sell the thesis, not the price. Every row is here because the BUSINESS fails the 5-10 year growth mandate.',
            'TIER A (8 names: HUBB, QCOM, AAOI, IBM, BWXT, MPWR, FN, ONDS) - too small to wait. Sell at market '
            'regardless of price. Commission runs 0.4-0.8% each way at these sizes; MPWR is a single share. Waiting has '
@@ -6109,13 +6168,13 @@ SELLBOOK = {'updated': '2026-09-10',
            'limit': None,
            'when': 'Tier A - at market, no limit, any session',
            'conv': 'High',
-           'after': None,
+           'after': 'Position closed.',
            'budget': None,
-           'status': 'planned',
-           'fillDate': None,
-           'fillPx': None,
-           'proceeds': None,
-           'realized': None,
+           'status': 'done',
+           'fillDate': '2026-09-10',
+           'fillPx': 238.49,
+           'proceeds': 1422.34,
+           'realized': -290.73,
            'why': 'Tier A. Revenue growth 9.7%. Position is 6 shares / 1,392, held at -18.7%. Not a 5-year doubling '
                   'candidate.'},
           {'t': 'AMKR',
@@ -6149,13 +6208,13 @@ SELLBOOK = {'updated': '2026-09-10',
            'limit': None,
            'when': 'Tier A - at market, no limit, any session',
            'conv': 'High',
-           'after': None,
+           'after': 'Position closed.',
            'budget': None,
-           'status': 'planned',
-           'fillDate': None,
-           'fillPx': None,
-           'proceeds': None,
-           'realized': None,
+           'status': 'done',
+           'fillDate': '2026-09-10',
+           'fillPx': 157.3,
+           'proceeds': 1564.4,
+           'realized': -429.66,
            'why': 'Tier A. Naval nuclear and SMR fuel. Real business, but the position is 10 shares / 1,604 and '
                   'Nuclear no longer exists as a group. Held at -19.6%.'},
           {'t': 'MPWR',
@@ -6169,13 +6228,13 @@ SELLBOOK = {'updated': '2026-09-10',
            'limit': None,
            'when': 'Tier A - at market, no limit, any session',
            'conv': 'High',
-           'after': None,
+           'after': 'Position closed.',
            'budget': None,
-           'status': 'planned',
-           'fillDate': None,
-           'fillPx': None,
-           'proceeds': None,
-           'realized': None,
+           'status': 'done',
+           'fillDate': '2026-09-10',
+           'fillPx': 1196.24,
+           'proceeds': 1187.65,
+           'realized': -350.91,
            'why': 'Tier A. ONE share, 1,218, 0.17% of the book. Tripling it would move the portfolio 0.34%. Sell for '
                   'tidiness, not for the price.'},
           {'t': 'FN',
