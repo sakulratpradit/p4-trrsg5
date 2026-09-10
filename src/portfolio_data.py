@@ -3,53 +3,87 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Sep 10, 2026 - TSMC AUGUST REVENUE, AND IT IS A RECORD. Released 13:30 Taipei today. AUGUST NET REVENUE NT$514,806 '
- 'MILLION - UP 53.3% YEAR ON YEAR and up 10.1% on July, the highest month TSMC has ever reported. The August 2025 base '
- 'was NT$335,772m. January-August cumulative NT$3,386,870m, +39.3% year on year. || THE 2026 MONTHLY SERIES (NT$m, '
- 'YoY): Jan 401,255 +36.8% - Feb 317,657 +22.2% - Mar 415,191 +45.2% - Apr 410,726 +17.5% - May 416,975 +30.1% - Jun '
- '442,680 +67.9% - Jul 467,580 +44.7% - Aug 514,806 +53.3%. Four consecutive months of sequential growth. || ⚠️ THE '
- 'REAL FINDING IS NOT THE HEADLINE, IT IS WHAT IT IMPLIES FOR SEPTEMBER. TSMC guided Q3 2026 revenue to US$44.6-45.8bn '
- 'at its own stated assumption of NT$32.0 per US dollar, with gross margin 65-67% and operating margin 56-58%. The '
- 'midpoint of US$45.2bn is NT$1,446.4bn. July and August together are already NT$982.4bn. SO SEPTEMBER WOULD HAVE TO '
- 'FALL TO NT$464.0bn - MINUS 9.9% ON THE MONTH - merely to land on the midpoint. September is normally a strong month. '
- "If September simply holds flat at August's level, Q3 comes to NT$1,497.2bn, which at 32.0 is US$46.79bn - 2.2% ABOVE "
- "THE TOP OF TSMC'S OWN GUIDANCE RANGE. At +5% on the month it is US$47.59bn, 3.9% above the top. Even a 5% September "
- 'DECLINE still clears the top end. TSMC is tracking to beat its own quarter. || ⚠️ THE ONE THING THAT COULD SPOIL '
- "THAT ARITHMETIC IS FX, NOT DEMAND. The guidance is set in US dollars and translated at TSMC's assumed 32.0; the "
- 'actual quarter converts at realised rates. A spot NT$/US$ rate for today could NOT be sourced, so every US dollar '
- "figure above uses TSMC's own 32.0 assumption and should be read as an indicative back-solve, not a forecast. A "
- 'weaker Taiwan dollar shrinks the beat; a stronger one enlarges it. || CONTEXT FROM THE Q2 CALL (16 Jul 2026): 2026 '
- "capex RAISED to US$60-64bn from US$52-56bn, and the full-year revenue outlook raised to 'over 40%' growth in US "
- "dollar terms from the previous 30%. CFO Wendell Huang: 'Moving into third quarter 2026, we expect our business to be "
- 'supported by continued strong demand for our leading-edge process technologies, including the steep ramp-up of our '
- "2-nanometer technology.' TrendForce notes the 2nm ramp carries 3-4% margin dilution, which is why gross margin is "
- 'guided down even as revenue runs hot. || ⚠️ NO CAUSE FOR THE AUGUST JUMP HAS BEEN STATED BY TSMC ITSELF - the '
- "monthly releases carry no commentary, and the company's own English August release was not yet posted when this was "
- 'checked. Secondary coverage attributes it to AI chip orders. Recorded as attribution, not as fact. || WHAT IT MEANS '
- 'FOR THIS BOARD: TSM is funded at 74,000 with 39,921.53 invested, so 34,078.47 of room - THE LARGEST SINGLE '
- 'DEPLOYMENT GAP ON THE BOARD, against 216,131.61 of cash sitting at POEMS. The August print is evidence FOR deploying '
- "into that gap. ⚠️ But the board's TSM price is still the Sep 8 close of 439.00 and the stock closed 435.36 on Sep 9 "
- 'with a 433.00 pre-market on Sep 10; no preferred source reporting a price move attributed to the release could be '
- 'found, so no conclusion is drawn about how the market took it. || PREVIOUS ENTRY: Sep 10, 2026 - THE CYBERSECURITY '
- 'GROWTH SLIDE, CHECKED. Salee sent a Thai infographic ranking 16 cybersecurity names by next-twelve-month consensus '
- "revenue growth and asked about NET, PANW and CRWD. || THE SLIDE'S THREE NUMBERS ARE RIGHT, which is worth saying "
- 'because most slides sent to this board have not been. Consensus by fiscal year: NET FY2026 +32.46% and FY2027 '
- '+28.71% (straddling the claimed 30%); PANW FY2027 +23.45%, and the company itself guides FY2027 revenue to '
- "14.10-14.20bn, 'representing year-over-year growth of 23% to 24%'; CRWD FY2027 +24.82% and FY2028 +22.5% (straddling "
- 'the claimed 23%). || ⚠️ BUT THE SLIDE HAS FOUR REAL DEFECTS. (1) VARONIS IS IN TAKEOVER TALKS - Thoma Bravo-owned '
- 'Proofpoint is reported in advanced discussions; no signed agreement, no price and no company 8-K could be sourced, '
- 'but a forward-growth ranking of a company in play is meaningless because the equity may not be independently listed '
- 'for the window being forecast. (2) MSFT at 18% and CSCO at 15% are WHOLE-COMPANY growth rates, not security-segment '
- "growth - Microsoft's 18% is Azure, Office and everything else. (3) RBRK is Rubrik, a data-protection and backup "
- 'vendor, not a security-tooling company. (4) NTSK is Netskope, which listed on 18 Sep 2025 and has about one year of '
- 'trading history, so its consensus is thin. || ⚠️ THE RANKING IS ALMOST THE INVERSE OF THE CASH TEST. Ranking by '
- 'growth alone hides what each dollar of growth costs. Taking TTM free cash flow and subtracting TTM stock-based '
- 'compensation, because shares issued to staff are a real cost to an owner: NET has free cash flow of 341.9m against '
- 'stock compensation of 507.7m - MINUS 165.7m, its cash flow does not cover its own payroll in shares. CRWD has 1,610m '
- 'against 1,244m, leaving 366m, which on a 212.77bn market cap is 581 TIMES. PANW has 4,110m against 1,774m, leaving '
- '2,336m, which on 273.11bn is 117 times - expensive, but an order of magnitude better than the other two. || PANW HAD '
- 'A STRONG QUARTER and it deserves recording: fiscal Q4 2026 revenue grew 34% year over year to 3.41bn, '
- 'Next-Generation Security ARR grew 63% to 9.10bn, remaining performance obligations grew 34% to 21.2bn, and '
+ASOF = ('Sep 10, 2026 - MICRON CHECKED BEFORE DEPLOYING, AND THE BOARD WAS WRONG AGAIN. Salee asked whether we are in good '
+ "shape to invest in MU, alongside a slide claiming Micron's revenue grew 346% year on year against NVIDIA's 106%. || "
+ "⚠️ THE SLIDE IS CORRECT - one of the very few that has survived checking. Micron's fiscal Q3 2026, ended 28 May "
+ '2026, reported revenue of 41.46bn against 9.30bn in the same quarter a year earlier, which is +345.72%. GAAP gross '
+ 'margin 84.6%, operating margin 80.4%, net income 28,243m, diluted EPS 24.67, adjusted free cash flow 18.3bn. The SK '
+ "hynix figure on the same slide, 257%, also matches the company's own 2Q26 wording exactly. || ⚠️ BUT THIS BOARD'S "
+ 'MICRON VALUATION WAS WRONG. Forward P/E read 5.54 against a sourced 7.15, and trailing P/E 17.93 against 23.19 - the '
+ 'gap is far larger than the two-day price move can explain, so it was the earnings estimate, not the price. The old '
+ '5.54 implied forward earnings of about 180 dollars a share; the corrected figure implies about 137. Price/sales '
+ "corrected 9.94 to 12.86. Micron is CHEAP, but it is not as cheap as this board was saying, and 'MU trades at 5.5x "
+ "forward' has been quoted in three separate recommendations this month. Corrected today. || ⚠️ EARNINGS LAND ON 30 "
+ 'SEPTEMBER 2026, announced by Micron on 26 Aug - twenty days away, and the single most important fact for anyone '
+ 'deciding whether to deploy now. Fiscal Q4 guidance issued 24 Jun: revenue 50.0bn plus or minus 1.0bn, gross margin '
+ 'approximately 86%, diluted EPS 30.73 plus or minus 1.00. || ON THE PEAK-CYCLE WORRY THIS BOARD HAS CARRIED TWICE: '
+ "the evidence now cuts BOTH ways and that should be recorded honestly. AGAINST the peak call - Micron's own prepared "
+ "remarks say 'We now expect supply-demand conditions for both DRAM and NAND to remain tight beyond calendar 2027', "
+ "and TrendForce on 7 Sep reports supplier inventories 'remain at historic lows'. FOR the peak call - Micron also says "
+ "'Our fiscal Q4 gross margin outlook reflects a meaningful moderation in the rate of price increases', and TrendForce "
+ 'has conventional DRAM contract price growth moderating to 13-18% quarter on quarter. Prices are still RISING, but '
+ 'the second derivative has turned. That is mid-cycle deceleration, not a peak - a materially better picture than this '
+ "board assumed when it split SKHY's 16,000 between MU and TSM rather than sending all of it to Micron. || ⚠️ THE SIZE "
+ "OF THE MOVE IS THE REAL RISK, NOT THE MULTIPLE. MU's 52-week range is 138.34 to 1,255.00 and it traded 982.30 "
+ 'intraday on 10 Sep, DOWN 4.42% on the day from a 1,027.77 previous close. Market cap 1.11 trillion. Consensus is 49 '
+ 'analysts at an average target of 1,513, but the range runs from 2,200 down to 361 - a low that is 63% below today. '
+ 'When the bull and bear cases are that far apart, position size matters more than entry price. || MU on this board: '
+ 'budget 51,000, invested 22,581.58, room 28,418.42 against 216,131.61 of cash. || ⚠️ SEPARATELY - THE GOLD AND SILVER '
+ "SLIDE SALEE SENT IS MIS-ATTRIBUTED. It credits 'Henley & Partners', who describe themselves as 'the global leader in "
+ "residence and citizenship planning' and publish no metals research. All four of its labelled figures match a Visual "
+ 'Capitalist graphic SPONSORED BY GLOBAL X CANADA, an ETF issuer, published 14 Jul 2026 on Macrotrends data. Its '
+ "numbers match no primary series: silver 2025 was +144.82% on LBMA, +150.1% on LSEG, against the slide's 148.14%; "
+ "gold +62.90% LBMA, +65.2% LSEG, 67% World Gold Council, against the slide's 64.69%. AND ITS OWN LAST DATA POINT "
+ 'CONTRADICTS ITS TITLE: silver is DOWN 5.7% to 7.3% year to date in 2026 after peaking at 121.58 on 29 Jan and '
+ 'trading near 66 now; gold is up only 1.8% to 4.5% after peaking at 5,597.23 on the same day and trading near 4,383. '
+ 'Recorded here because the same reasoning applies to every metals pitch that arrives at this board. || PREVIOUS '
+ 'ENTRY: Sep 10, 2026 - TSMC AUGUST REVENUE, AND IT IS A RECORD. Released 13:30 Taipei today. AUGUST NET REVENUE '
+ 'NT$514,806 MILLION - UP 53.3% YEAR ON YEAR and up 10.1% on July, the highest month TSMC has ever reported. The '
+ 'August 2025 base was NT$335,772m. January-August cumulative NT$3,386,870m, +39.3% year on year. || THE 2026 MONTHLY '
+ 'SERIES (NT$m, YoY): Jan 401,255 +36.8% - Feb 317,657 +22.2% - Mar 415,191 +45.2% - Apr 410,726 +17.5% - May 416,975 '
+ '+30.1% - Jun 442,680 +67.9% - Jul 467,580 +44.7% - Aug 514,806 +53.3%. Four consecutive months of sequential growth. '
+ '|| ⚠️ THE REAL FINDING IS NOT THE HEADLINE, IT IS WHAT IT IMPLIES FOR SEPTEMBER. TSMC guided Q3 2026 revenue to '
+ 'US$44.6-45.8bn at its own stated assumption of NT$32.0 per US dollar, with gross margin 65-67% and operating margin '
+ '56-58%. The midpoint of US$45.2bn is NT$1,446.4bn. July and August together are already NT$982.4bn. SO SEPTEMBER '
+ 'WOULD HAVE TO FALL TO NT$464.0bn - MINUS 9.9% ON THE MONTH - merely to land on the midpoint. September is normally a '
+ "strong month. If September simply holds flat at August's level, Q3 comes to NT$1,497.2bn, which at 32.0 is "
+ "US$46.79bn - 2.2% ABOVE THE TOP OF TSMC'S OWN GUIDANCE RANGE. At +5% on the month it is US$47.59bn, 3.9% above the "
+ 'top. Even a 5% September DECLINE still clears the top end. TSMC is tracking to beat its own quarter. || ⚠️ THE ONE '
+ "THING THAT COULD SPOIL THAT ARITHMETIC IS FX, NOT DEMAND. The guidance is set in US dollars and translated at TSMC's "
+ 'assumed 32.0; the actual quarter converts at realised rates. A spot NT$/US$ rate for today could NOT be sourced, so '
+ "every US dollar figure above uses TSMC's own 32.0 assumption and should be read as an indicative back-solve, not a "
+ 'forecast. A weaker Taiwan dollar shrinks the beat; a stronger one enlarges it. || CONTEXT FROM THE Q2 CALL (16 Jul '
+ "2026): 2026 capex RAISED to US$60-64bn from US$52-56bn, and the full-year revenue outlook raised to 'over 40%' "
+ "growth in US dollar terms from the previous 30%. CFO Wendell Huang: 'Moving into third quarter 2026, we expect our "
+ 'business to be supported by continued strong demand for our leading-edge process technologies, including the steep '
+ "ramp-up of our 2-nanometer technology.' TrendForce notes the 2nm ramp carries 3-4% margin dilution, which is why "
+ 'gross margin is guided down even as revenue runs hot. || ⚠️ NO CAUSE FOR THE AUGUST JUMP HAS BEEN STATED BY TSMC '
+ "ITSELF - the monthly releases carry no commentary, and the company's own English August release was not yet posted "
+ 'when this was checked. Secondary coverage attributes it to AI chip orders. Recorded as attribution, not as fact. || '
+ 'WHAT IT MEANS FOR THIS BOARD: TSM is funded at 74,000 with 39,921.53 invested, so 34,078.47 of room - THE LARGEST '
+ 'SINGLE DEPLOYMENT GAP ON THE BOARD, against 216,131.61 of cash sitting at POEMS. The August print is evidence FOR '
+ "deploying into that gap. ⚠️ But the board's TSM price is still the Sep 8 close of 439.00 and the stock closed 435.36 "
+ 'on Sep 9 with a 433.00 pre-market on Sep 10; no preferred source reporting a price move attributed to the release '
+ 'could be found, so no conclusion is drawn about how the market took it. || PREVIOUS ENTRY: Sep 10, 2026 - THE '
+ 'CYBERSECURITY GROWTH SLIDE, CHECKED. Salee sent a Thai infographic ranking 16 cybersecurity names by '
+ "next-twelve-month consensus revenue growth and asked about NET, PANW and CRWD. || THE SLIDE'S THREE NUMBERS ARE "
+ 'RIGHT, which is worth saying because most slides sent to this board have not been. Consensus by fiscal year: NET '
+ 'FY2026 +32.46% and FY2027 +28.71% (straddling the claimed 30%); PANW FY2027 +23.45%, and the company itself guides '
+ "FY2027 revenue to 14.10-14.20bn, 'representing year-over-year growth of 23% to 24%'; CRWD FY2027 +24.82% and FY2028 "
+ '+22.5% (straddling the claimed 23%). || ⚠️ BUT THE SLIDE HAS FOUR REAL DEFECTS. (1) VARONIS IS IN TAKEOVER TALKS - '
+ 'Thoma Bravo-owned Proofpoint is reported in advanced discussions; no signed agreement, no price and no company 8-K '
+ 'could be sourced, but a forward-growth ranking of a company in play is meaningless because the equity may not be '
+ 'independently listed for the window being forecast. (2) MSFT at 18% and CSCO at 15% are WHOLE-COMPANY growth rates, '
+ "not security-segment growth - Microsoft's 18% is Azure, Office and everything else. (3) RBRK is Rubrik, a "
+ 'data-protection and backup vendor, not a security-tooling company. (4) NTSK is Netskope, which listed on 18 Sep 2025 '
+ 'and has about one year of trading history, so its consensus is thin. || ⚠️ THE RANKING IS ALMOST THE INVERSE OF THE '
+ 'CASH TEST. Ranking by growth alone hides what each dollar of growth costs. Taking TTM free cash flow and subtracting '
+ 'TTM stock-based compensation, because shares issued to staff are a real cost to an owner: NET has free cash flow of '
+ '341.9m against stock compensation of 507.7m - MINUS 165.7m, its cash flow does not cover its own payroll in shares. '
+ 'CRWD has 1,610m against 1,244m, leaving 366m, which on a 212.77bn market cap is 581 TIMES. PANW has 4,110m against '
+ '1,774m, leaving 2,336m, which on 273.11bn is 117 times - expensive, but an order of magnitude better than the other '
+ 'two. || PANW HAD A STRONG QUARTER and it deserves recording: fiscal Q4 2026 revenue grew 34% year over year to '
+ '3.41bn, Next-Generation Security ARR grew 63% to 9.10bn, remaining performance obligations grew 34% to 21.2bn, and '
  'fiscal-2026 adjusted free cash flow margin was 38.4%. ⚠️ The guidance decelerates from there - Q1 FY2027 is guided '
  "to +33-34% but the full year to +23-24%, and consensus has FY2028 at 14.46%. PANW's 2.67% net margin badly "
  'understates it: the gap to a 36% free-cash-flow margin is stock compensation and amortisation. VERDICT: hold the '
@@ -1561,7 +1595,7 @@ STOCKS = [{'an': 83,
   'epsG': 695.9,
   'ex': 'NASDAQ',
   'fcfB': 26.17,
-  'fpe': 5.54,
+  'fpe': 7.15,
   'fvAvg': 1486,
   'fvMax': 2200,
   'fvMin': 361,
@@ -1572,11 +1606,11 @@ STOCKS = [{'an': 83,
   'lo52': 103.38,
   'mcapB': 1129.6849,
   'name': 'Micron Technology',
-  'pe': 17.93,
+  'pe': 23.19,
   'peg': 0.03,
   'pm': 55.91,
   'price': 1000.26,
-  'ps': 9.94,
+  'ps': 12.86,
   'pxd': '2026-09-08',
   'r40': 196.0,
   'revB': 90.27,
