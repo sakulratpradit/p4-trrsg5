@@ -3,25 +3,53 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Sep 10, 2026 - THE CYBERSECURITY GROWTH SLIDE, CHECKED. Salee sent a Thai infographic ranking 16 cybersecurity names '
- "by next-twelve-month consensus revenue growth and asked about NET, PANW and CRWD. || THE SLIDE'S THREE NUMBERS ARE "
- 'RIGHT, which is worth saying because most slides sent to this board have not been. Consensus by fiscal year: NET '
- 'FY2026 +32.46% and FY2027 +28.71% (straddling the claimed 30%); PANW FY2027 +23.45%, and the company itself guides '
- "FY2027 revenue to 14.10-14.20bn, 'representing year-over-year growth of 23% to 24%'; CRWD FY2027 +24.82% and FY2028 "
- '+22.5% (straddling the claimed 23%). || ⚠️ BUT THE SLIDE HAS FOUR REAL DEFECTS. (1) VARONIS IS IN TAKEOVER TALKS - '
- 'Thoma Bravo-owned Proofpoint is reported in advanced discussions; no signed agreement, no price and no company 8-K '
- 'could be sourced, but a forward-growth ranking of a company in play is meaningless because the equity may not be '
- 'independently listed for the window being forecast. (2) MSFT at 18% and CSCO at 15% are WHOLE-COMPANY growth rates, '
- "not security-segment growth - Microsoft's 18% is Azure, Office and everything else. (3) RBRK is Rubrik, a "
- 'data-protection and backup vendor, not a security-tooling company. (4) NTSK is Netskope, which listed on 18 Sep 2025 '
- 'and has about one year of trading history, so its consensus is thin. || ⚠️ THE RANKING IS ALMOST THE INVERSE OF THE '
- 'CASH TEST. Ranking by growth alone hides what each dollar of growth costs. Taking TTM free cash flow and subtracting '
- 'TTM stock-based compensation, because shares issued to staff are a real cost to an owner: NET has free cash flow of '
- '341.9m against stock compensation of 507.7m - MINUS 165.7m, its cash flow does not cover its own payroll in shares. '
- 'CRWD has 1,610m against 1,244m, leaving 366m, which on a 212.77bn market cap is 581 TIMES. PANW has 4,110m against '
- '1,774m, leaving 2,336m, which on 273.11bn is 117 times - expensive, but an order of magnitude better than the other '
- 'two. || PANW HAD A STRONG QUARTER and it deserves recording: fiscal Q4 2026 revenue grew 34% year over year to '
- '3.41bn, Next-Generation Security ARR grew 63% to 9.10bn, remaining performance obligations grew 34% to 21.2bn, and '
+ASOF = ('Sep 10, 2026 - TSMC AUGUST REVENUE, AND IT IS A RECORD. Released 13:30 Taipei today. AUGUST NET REVENUE NT$514,806 '
+ 'MILLION - UP 53.3% YEAR ON YEAR and up 10.1% on July, the highest month TSMC has ever reported. The August 2025 base '
+ 'was NT$335,772m. January-August cumulative NT$3,386,870m, +39.3% year on year. || THE 2026 MONTHLY SERIES (NT$m, '
+ 'YoY): Jan 401,255 +36.8% - Feb 317,657 +22.2% - Mar 415,191 +45.2% - Apr 410,726 +17.5% - May 416,975 +30.1% - Jun '
+ '442,680 +67.9% - Jul 467,580 +44.7% - Aug 514,806 +53.3%. Four consecutive months of sequential growth. || ⚠️ THE '
+ 'REAL FINDING IS NOT THE HEADLINE, IT IS WHAT IT IMPLIES FOR SEPTEMBER. TSMC guided Q3 2026 revenue to US$44.6-45.8bn '
+ 'at its own stated assumption of NT$32.0 per US dollar, with gross margin 65-67% and operating margin 56-58%. The '
+ 'midpoint of US$45.2bn is NT$1,446.4bn. July and August together are already NT$982.4bn. SO SEPTEMBER WOULD HAVE TO '
+ 'FALL TO NT$464.0bn - MINUS 9.9% ON THE MONTH - merely to land on the midpoint. September is normally a strong month. '
+ "If September simply holds flat at August's level, Q3 comes to NT$1,497.2bn, which at 32.0 is US$46.79bn - 2.2% ABOVE "
+ "THE TOP OF TSMC'S OWN GUIDANCE RANGE. At +5% on the month it is US$47.59bn, 3.9% above the top. Even a 5% September "
+ 'DECLINE still clears the top end. TSMC is tracking to beat its own quarter. || ⚠️ THE ONE THING THAT COULD SPOIL '
+ "THAT ARITHMETIC IS FX, NOT DEMAND. The guidance is set in US dollars and translated at TSMC's assumed 32.0; the "
+ 'actual quarter converts at realised rates. A spot NT$/US$ rate for today could NOT be sourced, so every US dollar '
+ "figure above uses TSMC's own 32.0 assumption and should be read as an indicative back-solve, not a forecast. A "
+ 'weaker Taiwan dollar shrinks the beat; a stronger one enlarges it. || CONTEXT FROM THE Q2 CALL (16 Jul 2026): 2026 '
+ "capex RAISED to US$60-64bn from US$52-56bn, and the full-year revenue outlook raised to 'over 40%' growth in US "
+ "dollar terms from the previous 30%. CFO Wendell Huang: 'Moving into third quarter 2026, we expect our business to be "
+ 'supported by continued strong demand for our leading-edge process technologies, including the steep ramp-up of our '
+ "2-nanometer technology.' TrendForce notes the 2nm ramp carries 3-4% margin dilution, which is why gross margin is "
+ 'guided down even as revenue runs hot. || ⚠️ NO CAUSE FOR THE AUGUST JUMP HAS BEEN STATED BY TSMC ITSELF - the '
+ "monthly releases carry no commentary, and the company's own English August release was not yet posted when this was "
+ 'checked. Secondary coverage attributes it to AI chip orders. Recorded as attribution, not as fact. || WHAT IT MEANS '
+ 'FOR THIS BOARD: TSM is funded at 74,000 with 39,921.53 invested, so 34,078.47 of room - THE LARGEST SINGLE '
+ 'DEPLOYMENT GAP ON THE BOARD, against 216,131.61 of cash sitting at POEMS. The August print is evidence FOR deploying '
+ "into that gap. ⚠️ But the board's TSM price is still the Sep 8 close of 439.00 and the stock closed 435.36 on Sep 9 "
+ 'with a 433.00 pre-market on Sep 10; no preferred source reporting a price move attributed to the release could be '
+ 'found, so no conclusion is drawn about how the market took it. || PREVIOUS ENTRY: Sep 10, 2026 - THE CYBERSECURITY '
+ 'GROWTH SLIDE, CHECKED. Salee sent a Thai infographic ranking 16 cybersecurity names by next-twelve-month consensus '
+ "revenue growth and asked about NET, PANW and CRWD. || THE SLIDE'S THREE NUMBERS ARE RIGHT, which is worth saying "
+ 'because most slides sent to this board have not been. Consensus by fiscal year: NET FY2026 +32.46% and FY2027 '
+ '+28.71% (straddling the claimed 30%); PANW FY2027 +23.45%, and the company itself guides FY2027 revenue to '
+ "14.10-14.20bn, 'representing year-over-year growth of 23% to 24%'; CRWD FY2027 +24.82% and FY2028 +22.5% (straddling "
+ 'the claimed 23%). || ⚠️ BUT THE SLIDE HAS FOUR REAL DEFECTS. (1) VARONIS IS IN TAKEOVER TALKS - Thoma Bravo-owned '
+ 'Proofpoint is reported in advanced discussions; no signed agreement, no price and no company 8-K could be sourced, '
+ 'but a forward-growth ranking of a company in play is meaningless because the equity may not be independently listed '
+ 'for the window being forecast. (2) MSFT at 18% and CSCO at 15% are WHOLE-COMPANY growth rates, not security-segment '
+ "growth - Microsoft's 18% is Azure, Office and everything else. (3) RBRK is Rubrik, a data-protection and backup "
+ 'vendor, not a security-tooling company. (4) NTSK is Netskope, which listed on 18 Sep 2025 and has about one year of '
+ 'trading history, so its consensus is thin. || ⚠️ THE RANKING IS ALMOST THE INVERSE OF THE CASH TEST. Ranking by '
+ 'growth alone hides what each dollar of growth costs. Taking TTM free cash flow and subtracting TTM stock-based '
+ 'compensation, because shares issued to staff are a real cost to an owner: NET has free cash flow of 341.9m against '
+ 'stock compensation of 507.7m - MINUS 165.7m, its cash flow does not cover its own payroll in shares. CRWD has 1,610m '
+ 'against 1,244m, leaving 366m, which on a 212.77bn market cap is 581 TIMES. PANW has 4,110m against 1,774m, leaving '
+ '2,336m, which on 273.11bn is 117 times - expensive, but an order of magnitude better than the other two. || PANW HAD '
+ 'A STRONG QUARTER and it deserves recording: fiscal Q4 2026 revenue grew 34% year over year to 3.41bn, '
+ 'Next-Generation Security ARR grew 63% to 9.10bn, remaining performance obligations grew 34% to 21.2bn, and '
  'fiscal-2026 adjusted free cash flow margin was 38.4%. ⚠️ The guidance decelerates from there - Q1 FY2027 is guided '
  "to +33-34% but the full year to +23-24%, and consensus has FY2028 at 14.46%. PANW's 2.67% net margin badly "
  'understates it: the gap to a 36% free-cash-flow margin is stock compensation and amortisation. VERDICT: hold the '
