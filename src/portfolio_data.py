@@ -3,69 +3,105 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Sep 10, 2026 - MICRON CHECKED BEFORE DEPLOYING, AND THE BOARD WAS WRONG AGAIN. Salee asked whether we are in good '
- "shape to invest in MU, alongside a slide claiming Micron's revenue grew 346% year on year against NVIDIA's 106%. || "
- "⚠️ THE SLIDE IS CORRECT - one of the very few that has survived checking. Micron's fiscal Q3 2026, ended 28 May "
- '2026, reported revenue of 41.46bn against 9.30bn in the same quarter a year earlier, which is +345.72%. GAAP gross '
- 'margin 84.6%, operating margin 80.4%, net income 28,243m, diluted EPS 24.67, adjusted free cash flow 18.3bn. The SK '
- "hynix figure on the same slide, 257%, also matches the company's own 2Q26 wording exactly. || ⚠️ BUT THIS BOARD'S "
- 'MICRON VALUATION WAS WRONG. Forward P/E read 5.54 against a sourced 7.15, and trailing P/E 17.93 against 23.19 - the '
- 'gap is far larger than the two-day price move can explain, so it was the earnings estimate, not the price. The old '
- '5.54 implied forward earnings of about 180 dollars a share; the corrected figure implies about 137. Price/sales '
- "corrected 9.94 to 12.86. Micron is CHEAP, but it is not as cheap as this board was saying, and 'MU trades at 5.5x "
- "forward' has been quoted in three separate recommendations this month. Corrected today. || ⚠️ EARNINGS LAND ON 30 "
- 'SEPTEMBER 2026, announced by Micron on 26 Aug - twenty days away, and the single most important fact for anyone '
- 'deciding whether to deploy now. Fiscal Q4 guidance issued 24 Jun: revenue 50.0bn plus or minus 1.0bn, gross margin '
- 'approximately 86%, diluted EPS 30.73 plus or minus 1.00. || ON THE PEAK-CYCLE WORRY THIS BOARD HAS CARRIED TWICE: '
- "the evidence now cuts BOTH ways and that should be recorded honestly. AGAINST the peak call - Micron's own prepared "
- "remarks say 'We now expect supply-demand conditions for both DRAM and NAND to remain tight beyond calendar 2027', "
- "and TrendForce on 7 Sep reports supplier inventories 'remain at historic lows'. FOR the peak call - Micron also says "
- "'Our fiscal Q4 gross margin outlook reflects a meaningful moderation in the rate of price increases', and TrendForce "
- 'has conventional DRAM contract price growth moderating to 13-18% quarter on quarter. Prices are still RISING, but '
- 'the second derivative has turned. That is mid-cycle deceleration, not a peak - a materially better picture than this '
- "board assumed when it split SKHY's 16,000 between MU and TSM rather than sending all of it to Micron. || ⚠️ THE SIZE "
- "OF THE MOVE IS THE REAL RISK, NOT THE MULTIPLE. MU's 52-week range is 138.34 to 1,255.00 and it traded 982.30 "
- 'intraday on 10 Sep, DOWN 4.42% on the day from a 1,027.77 previous close. Market cap 1.11 trillion. Consensus is 49 '
- 'analysts at an average target of 1,513, but the range runs from 2,200 down to 361 - a low that is 63% below today. '
- 'When the bull and bear cases are that far apart, position size matters more than entry price. || MU on this board: '
- 'budget 51,000, invested 22,581.58, room 28,418.42 against 216,131.61 of cash. || ⚠️ SEPARATELY - THE GOLD AND SILVER '
- "SLIDE SALEE SENT IS MIS-ATTRIBUTED. It credits 'Henley & Partners', who describe themselves as 'the global leader in "
- "residence and citizenship planning' and publish no metals research. All four of its labelled figures match a Visual "
- 'Capitalist graphic SPONSORED BY GLOBAL X CANADA, an ETF issuer, published 14 Jul 2026 on Macrotrends data. Its '
- "numbers match no primary series: silver 2025 was +144.82% on LBMA, +150.1% on LSEG, against the slide's 148.14%; "
- "gold +62.90% LBMA, +65.2% LSEG, 67% World Gold Council, against the slide's 64.69%. AND ITS OWN LAST DATA POINT "
- 'CONTRADICTS ITS TITLE: silver is DOWN 5.7% to 7.3% year to date in 2026 after peaking at 121.58 on 29 Jan and '
- 'trading near 66 now; gold is up only 1.8% to 4.5% after peaking at 5,597.23 on the same day and trading near 4,383. '
- 'Recorded here because the same reasoning applies to every metals pitch that arrives at this board. || PREVIOUS '
- 'ENTRY: Sep 10, 2026 - TSMC AUGUST REVENUE, AND IT IS A RECORD. Released 13:30 Taipei today. AUGUST NET REVENUE '
- 'NT$514,806 MILLION - UP 53.3% YEAR ON YEAR and up 10.1% on July, the highest month TSMC has ever reported. The '
- 'August 2025 base was NT$335,772m. January-August cumulative NT$3,386,870m, +39.3% year on year. || THE 2026 MONTHLY '
- 'SERIES (NT$m, YoY): Jan 401,255 +36.8% - Feb 317,657 +22.2% - Mar 415,191 +45.2% - Apr 410,726 +17.5% - May 416,975 '
- '+30.1% - Jun 442,680 +67.9% - Jul 467,580 +44.7% - Aug 514,806 +53.3%. Four consecutive months of sequential growth. '
- '|| ⚠️ THE REAL FINDING IS NOT THE HEADLINE, IT IS WHAT IT IMPLIES FOR SEPTEMBER. TSMC guided Q3 2026 revenue to '
- 'US$44.6-45.8bn at its own stated assumption of NT$32.0 per US dollar, with gross margin 65-67% and operating margin '
- '56-58%. The midpoint of US$45.2bn is NT$1,446.4bn. July and August together are already NT$982.4bn. SO SEPTEMBER '
- 'WOULD HAVE TO FALL TO NT$464.0bn - MINUS 9.9% ON THE MONTH - merely to land on the midpoint. September is normally a '
- "strong month. If September simply holds flat at August's level, Q3 comes to NT$1,497.2bn, which at 32.0 is "
- "US$46.79bn - 2.2% ABOVE THE TOP OF TSMC'S OWN GUIDANCE RANGE. At +5% on the month it is US$47.59bn, 3.9% above the "
- 'top. Even a 5% September DECLINE still clears the top end. TSMC is tracking to beat its own quarter. || ⚠️ THE ONE '
- "THING THAT COULD SPOIL THAT ARITHMETIC IS FX, NOT DEMAND. The guidance is set in US dollars and translated at TSMC's "
- 'assumed 32.0; the actual quarter converts at realised rates. A spot NT$/US$ rate for today could NOT be sourced, so '
- "every US dollar figure above uses TSMC's own 32.0 assumption and should be read as an indicative back-solve, not a "
- 'forecast. A weaker Taiwan dollar shrinks the beat; a stronger one enlarges it. || CONTEXT FROM THE Q2 CALL (16 Jul '
- "2026): 2026 capex RAISED to US$60-64bn from US$52-56bn, and the full-year revenue outlook raised to 'over 40%' "
- "growth in US dollar terms from the previous 30%. CFO Wendell Huang: 'Moving into third quarter 2026, we expect our "
- 'business to be supported by continued strong demand for our leading-edge process technologies, including the steep '
- "ramp-up of our 2-nanometer technology.' TrendForce notes the 2nm ramp carries 3-4% margin dilution, which is why "
- 'gross margin is guided down even as revenue runs hot. || ⚠️ NO CAUSE FOR THE AUGUST JUMP HAS BEEN STATED BY TSMC '
- "ITSELF - the monthly releases carry no commentary, and the company's own English August release was not yet posted "
- 'when this was checked. Secondary coverage attributes it to AI chip orders. Recorded as attribution, not as fact. || '
- 'WHAT IT MEANS FOR THIS BOARD: TSM is funded at 74,000 with 39,921.53 invested, so 34,078.47 of room - THE LARGEST '
- 'SINGLE DEPLOYMENT GAP ON THE BOARD, against 216,131.61 of cash sitting at POEMS. The August print is evidence FOR '
- "deploying into that gap. ⚠️ But the board's TSM price is still the Sep 8 close of 439.00 and the stock closed 435.36 "
- 'on Sep 9 with a 433.00 pre-market on Sep 10; no preferred source reporting a price move attributed to the release '
- 'could be found, so no conclusion is drawn about how the market took it. || PREVIOUS ENTRY: Sep 10, 2026 - THE '
- 'CYBERSECURITY GROWTH SLIDE, CHECKED. Salee sent a Thai infographic ranking 16 cybersecurity names by '
+ASOF = ('Sep 10, 2026 - ORACLE REPORTED, AND THE CASH FLOW QUESTION IS ANSWERED. Salee had not decided on ORCL because he had '
+ 'not seen the cash flow. Fiscal Q1 2027, quarter ended 31 Aug 2026, was released after the close today. || THE '
+ 'BUSINESS: total revenue 19,345m, UP 30%. Total cloud 11,607m, up 62%. ⚠️ CLOUD INFRASTRUCTURE 7,388m, UP 121% - it '
+ 'more than doubled. GAAP EPS 1.56 up 55%, GAAP operating income 6,728m at a 35% margin, up 57%. RPO 664bn, up 209bn '
+ "year on year, with 'more than 30 billion of additional AI cloud contracts' booked in the quarter. Guidance: Q2 total "
+ "revenue +30-34%, total cloud +64-70%; FY2027 'total revenue to be at least 90 billion, and non-GAAP EPS to be at "
+ "8.10'. || ⚠️ THE CASH FLOW, WHICH IS THE WHOLE QUESTION. Oracle's own sentence: 'Free cash flow was negative 5 "
+ 'billion for Q1 as Oracle continued to execute on investments to support the growth of its Cloud Infrastructure '
+ "business.' The exact figure is NEGATIVE 5,396m, against negative 362m in the same quarter last year. || BUT READ THE "
+ "THREE LINES UNDERNEATH IT BEFORE CONCLUDING ANYTHING. OPERATING CASH FLOW WAS A RECORD 23,103m, UP 184% - Oracle's "
+ "own wording, 'a record Q1 operating cash flow of 23 billion, up 184%'. Capital expenditure was 28,499m. The deficit "
+ 'is not a business that fails to generate cash; it is a business generating 23bn a quarter and choosing to spend '
+ "28bn. || AND ORACLE PUBLISHES A SECOND MEASURE THAT MATTERS HERE: 'NET CASH OUTLAY FOR CAPITAL EXPENDITURES' of "
+ "17,966m - the 28,499m of capex LESS 11,363m of 'customer prepayments with significant financing component'. "
+ 'Customers are prepaying for the hardware. On that basis cash in exceeded cash out by roughly 5.1bn. ⚠️ Both readings '
+ "are legitimate and Salee should hold both: the GAAP number says minus 5.4bn, Oracle's preferred number says plus "
+ '5.1bn, and the difference is customer money that is real cash today but a delivery obligation tomorrow. || CONTEXT: '
+ 'FY2026 free cash flow was negative 23,686m, about 5.9bn a quarter, so this quarter is slightly better than that run '
+ 'rate, not worse. FY2025 was negative 394m and FY2024 was POSITIVE 11,807m - the swing is entirely the AI build. || '
+ '⚠️ THE RISKS THAT ARE NEW SINCE THE ORCL SCHEDULE ROW WAS WRITTEN. S&P DOWNGRADED ORACLE TO BBB-/A-3 FROM BBB/A-2 on '
+ "9 Jul 2026, headline 'On Rising Business Risk And Weaker Cash Flow; Outlook Stable'. BBB- is ONE NOTCH ABOVE "
+ "SUB-INVESTMENT GRADE. Trade press reporting S&P's rationale also says roughly HALF of the 638bn RPO relates to "
+ "OpenAI - ⚠️ that is press characterisation and could NOT be verified against any Oracle filing or against S&P's own "
+ "text, so it is recorded as a claim, not a fact. Oracle's 10-K says only that 'In certain OCI offerings, we are more "
+ "concentrated among a number of large customers'. || FUNDING: Oracle sold 20 billion of common stock through an "
+ 'at-the-market programme during the quarter (19,909m of proceeds), on top of a 25 billion bond issue in Feb 2026, and '
+ 'told the market in June it expects to raise about 40 billion in FY2027. Notes payable at 31 Aug were 7,625m current '
+ 'plus 117,712m non-current. ⚠️ NO SOURCE - Oracle or press - GIVES A DATE FOR FREE CASH FLOW TURNING POSITIVE. || ⚠️ '
+ 'BOARD CORRECTIONS: forward P/E read 15.53 against a sourced 20.05, trailing 21.36 against 27.72, price/sales 5.33 '
+ 'against 6.54, 52-week low 114.75 against 114.50. Note the board price of 162.52 is the Sep 8 close; ORCL actually '
+ 'CLOSED 152.94 on 10 Sep, before the release, and its 52-week range is 114.50 to 345.72 - THE STOCK IS ABOUT 56% '
+ 'BELOW ITS HIGH. On FY2027 guidance of 8.10 non-GAAP EPS the 152.94 close is about 18.9 times forward earnings for a '
+ 'company guiding cloud revenue up 64-70%. Consensus is 44 analysts at 241.43. || VERDICT: the test written on the '
+ "Schedule page passes on both positive clauses and is not tripped by the third. ORCL's remaining room of 4,686.38 is "
+ 'released for a SINGLE order - two orders would cost 17.12 in commission, 0.37% of the trade, to reduce a risk that '
+ 'is already 0.47% of the book. Whether Oracle deserves more than 13,000 is a question for the 10 Dec review. || '
+ 'PREVIOUS ENTRY: Sep 10, 2026 - MICRON CHECKED BEFORE DEPLOYING, AND THE BOARD WAS WRONG AGAIN. Salee asked whether '
+ "we are in good shape to invest in MU, alongside a slide claiming Micron's revenue grew 346% year on year against "
+ "NVIDIA's 106%. || ⚠️ THE SLIDE IS CORRECT - one of the very few that has survived checking. Micron's fiscal Q3 2026, "
+ 'ended 28 May 2026, reported revenue of 41.46bn against 9.30bn in the same quarter a year earlier, which is +345.72%. '
+ 'GAAP gross margin 84.6%, operating margin 80.4%, net income 28,243m, diluted EPS 24.67, adjusted free cash flow '
+ "18.3bn. The SK hynix figure on the same slide, 257%, also matches the company's own 2Q26 wording exactly. || ⚠️ BUT "
+ "THIS BOARD'S MICRON VALUATION WAS WRONG. Forward P/E read 5.54 against a sourced 7.15, and trailing P/E 17.93 "
+ 'against 23.19 - the gap is far larger than the two-day price move can explain, so it was the earnings estimate, not '
+ 'the price. The old 5.54 implied forward earnings of about 180 dollars a share; the corrected figure implies about '
+ "137. Price/sales corrected 9.94 to 12.86. Micron is CHEAP, but it is not as cheap as this board was saying, and 'MU "
+ "trades at 5.5x forward' has been quoted in three separate recommendations this month. Corrected today. || ⚠️ "
+ 'EARNINGS LAND ON 30 SEPTEMBER 2026, announced by Micron on 26 Aug - twenty days away, and the single most important '
+ 'fact for anyone deciding whether to deploy now. Fiscal Q4 guidance issued 24 Jun: revenue 50.0bn plus or minus '
+ '1.0bn, gross margin approximately 86%, diluted EPS 30.73 plus or minus 1.00. || ON THE PEAK-CYCLE WORRY THIS BOARD '
+ 'HAS CARRIED TWICE: the evidence now cuts BOTH ways and that should be recorded honestly. AGAINST the peak call - '
+ "Micron's own prepared remarks say 'We now expect supply-demand conditions for both DRAM and NAND to remain tight "
+ "beyond calendar 2027', and TrendForce on 7 Sep reports supplier inventories 'remain at historic lows'. FOR the peak "
+ "call - Micron also says 'Our fiscal Q4 gross margin outlook reflects a meaningful moderation in the rate of price "
+ "increases', and TrendForce has conventional DRAM contract price growth moderating to 13-18% quarter on quarter. "
+ 'Prices are still RISING, but the second derivative has turned. That is mid-cycle deceleration, not a peak - a '
+ "materially better picture than this board assumed when it split SKHY's 16,000 between MU and TSM rather than sending "
+ "all of it to Micron. || ⚠️ THE SIZE OF THE MOVE IS THE REAL RISK, NOT THE MULTIPLE. MU's 52-week range is 138.34 to "
+ '1,255.00 and it traded 982.30 intraday on 10 Sep, DOWN 4.42% on the day from a 1,027.77 previous close. Market cap '
+ '1.11 trillion. Consensus is 49 analysts at an average target of 1,513, but the range runs from 2,200 down to 361 - a '
+ 'low that is 63% below today. When the bull and bear cases are that far apart, position size matters more than entry '
+ 'price. || MU on this board: budget 51,000, invested 22,581.58, room 28,418.42 against 216,131.61 of cash. || ⚠️ '
+ "SEPARATELY - THE GOLD AND SILVER SLIDE SALEE SENT IS MIS-ATTRIBUTED. It credits 'Henley & Partners', who describe "
+ "themselves as 'the global leader in residence and citizenship planning' and publish no metals research. All four of "
+ 'its labelled figures match a Visual Capitalist graphic SPONSORED BY GLOBAL X CANADA, an ETF issuer, published 14 Jul '
+ '2026 on Macrotrends data. Its numbers match no primary series: silver 2025 was +144.82% on LBMA, +150.1% on LSEG, '
+ "against the slide's 148.14%; gold +62.90% LBMA, +65.2% LSEG, 67% World Gold Council, against the slide's 64.69%. AND "
+ 'ITS OWN LAST DATA POINT CONTRADICTS ITS TITLE: silver is DOWN 5.7% to 7.3% year to date in 2026 after peaking at '
+ '121.58 on 29 Jan and trading near 66 now; gold is up only 1.8% to 4.5% after peaking at 5,597.23 on the same day and '
+ 'trading near 4,383. Recorded here because the same reasoning applies to every metals pitch that arrives at this '
+ 'board. || PREVIOUS ENTRY: Sep 10, 2026 - TSMC AUGUST REVENUE, AND IT IS A RECORD. Released 13:30 Taipei today. '
+ 'AUGUST NET REVENUE NT$514,806 MILLION - UP 53.3% YEAR ON YEAR and up 10.1% on July, the highest month TSMC has ever '
+ 'reported. The August 2025 base was NT$335,772m. January-August cumulative NT$3,386,870m, +39.3% year on year. || THE '
+ '2026 MONTHLY SERIES (NT$m, YoY): Jan 401,255 +36.8% - Feb 317,657 +22.2% - Mar 415,191 +45.2% - Apr 410,726 +17.5% - '
+ 'May 416,975 +30.1% - Jun 442,680 +67.9% - Jul 467,580 +44.7% - Aug 514,806 +53.3%. Four consecutive months of '
+ 'sequential growth. || ⚠️ THE REAL FINDING IS NOT THE HEADLINE, IT IS WHAT IT IMPLIES FOR SEPTEMBER. TSMC guided Q3 '
+ '2026 revenue to US$44.6-45.8bn at its own stated assumption of NT$32.0 per US dollar, with gross margin 65-67% and '
+ 'operating margin 56-58%. The midpoint of US$45.2bn is NT$1,446.4bn. July and August together are already NT$982.4bn. '
+ 'SO SEPTEMBER WOULD HAVE TO FALL TO NT$464.0bn - MINUS 9.9% ON THE MONTH - merely to land on the midpoint. September '
+ "is normally a strong month. If September simply holds flat at August's level, Q3 comes to NT$1,497.2bn, which at "
+ "32.0 is US$46.79bn - 2.2% ABOVE THE TOP OF TSMC'S OWN GUIDANCE RANGE. At +5% on the month it is US$47.59bn, 3.9% "
+ 'above the top. Even a 5% September DECLINE still clears the top end. TSMC is tracking to beat its own quarter. || ⚠️ '
+ 'THE ONE THING THAT COULD SPOIL THAT ARITHMETIC IS FX, NOT DEMAND. The guidance is set in US dollars and translated '
+ "at TSMC's assumed 32.0; the actual quarter converts at realised rates. A spot NT$/US$ rate for today could NOT be "
+ "sourced, so every US dollar figure above uses TSMC's own 32.0 assumption and should be read as an indicative "
+ 'back-solve, not a forecast. A weaker Taiwan dollar shrinks the beat; a stronger one enlarges it. || CONTEXT FROM THE '
+ 'Q2 CALL (16 Jul 2026): 2026 capex RAISED to US$60-64bn from US$52-56bn, and the full-year revenue outlook raised to '
+ "'over 40%' growth in US dollar terms from the previous 30%. CFO Wendell Huang: 'Moving into third quarter 2026, we "
+ 'expect our business to be supported by continued strong demand for our leading-edge process technologies, including '
+ "the steep ramp-up of our 2-nanometer technology.' TrendForce notes the 2nm ramp carries 3-4% margin dilution, which "
+ 'is why gross margin is guided down even as revenue runs hot. || ⚠️ NO CAUSE FOR THE AUGUST JUMP HAS BEEN STATED BY '
+ "TSMC ITSELF - the monthly releases carry no commentary, and the company's own English August release was not yet "
+ 'posted when this was checked. Secondary coverage attributes it to AI chip orders. Recorded as attribution, not as '
+ 'fact. || WHAT IT MEANS FOR THIS BOARD: TSM is funded at 74,000 with 39,921.53 invested, so 34,078.47 of room - THE '
+ 'LARGEST SINGLE DEPLOYMENT GAP ON THE BOARD, against 216,131.61 of cash sitting at POEMS. The August print is '
+ "evidence FOR deploying into that gap. ⚠️ But the board's TSM price is still the Sep 8 close of 439.00 and the stock "
+ 'closed 435.36 on Sep 9 with a 433.00 pre-market on Sep 10; no preferred source reporting a price move attributed to '
+ 'the release could be found, so no conclusion is drawn about how the market took it. || PREVIOUS ENTRY: Sep 10, 2026 '
+ '- THE CYBERSECURITY GROWTH SLIDE, CHECKED. Salee sent a Thai infographic ranking 16 cybersecurity names by '
  "next-twelve-month consensus revenue growth and asked about NET, PANW and CRWD. || THE SLIDE'S THREE NUMBERS ARE "
  'RIGHT, which is worth saying because most slides sent to this board have not been. Consensus by fiscal year: NET '
  'FY2026 +32.46% and FY2027 +28.71% (straddling the claimed 30%); PANW FY2027 +23.45%, and the company itself guides '
@@ -2589,7 +2625,7 @@ STOCKS = [{'an': 83,
   'epsG': 34.3,
   'ex': 'NYSE',
   'fcfB': -23.69,
-  'fpe': 15.53,
+  'fpe': 20.05,
   'fvAvg': 251.85,
   'fvMax': 400,
   'fvMin': 155,
@@ -2597,14 +2633,14 @@ STOCKS = [{'an': 83,
   'gm': 65.82,
   'hi52': 345.72,
   'jan2': 193.84,
-  'lo52': 114.75,
+  'lo52': 114.5,
   'mcapB': 468.1399,
   'name': 'Oracle',
-  'pe': 21.36,
+  'pe': 27.72,
   'peg': 0.55,
   'pm': 25.37,
   'price': 162.52,
-  'ps': 5.33,
+  'ps': 6.54,
   'pxd': '2026-09-08',
   'r40': -17.8,
   'revB': 67.36,
@@ -5156,14 +5192,33 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'cond': 'Recorded going-concern doubt; board margin and return figures do not reconcile and are '
                     'unverified.',
             'c': 'planned'},
-           {'d': '2026-09-10',
+           {'d': '2026-09-11',
             't': 'ORCL',
             'k': 'earnings',
-            'w': 'Q1 FY2027 results, after the close',
-            'a': 'DECIDE',
-            'amt': 1686.38,
-            'cond': 'Deploy the full room only if OCI growth accelerates AND new RPO arrives with prepaid hardware. '
-                    'Leave it if free cash flow deteriorates further.',
+            'w': 'Q1 FY2027 REPORTED 10 Sep. Condition met - deploy the full remaining room of 4,686.38 in ONE order.',
+            'a': 'BUY',
+            'amt': 4686.38,
+            'cond': "THE TEST AS WRITTEN WAS: 'Deploy the full room only if OCI growth accelerates AND new RPO arrives "
+                    "with prepaid hardware. Leave it if free cash flow deteriorates further.' SCORED AGAINST THE "
+                    'ACTUAL PRINT: (1) OCI - Cloud Infrastructure revenue 7,388m, UP 121%, and Q2 guidance has total '
+                    'cloud growth at 64-70% against the 62% just delivered, so the guide itself accelerates. PASS. (2) '
+                    "RPO AND PREPAYMENTS - RPO 664bn, up 209bn year on year, with 'more than 30 billion of additional "
+                    "AI cloud contracts' booked in the quarter, and the capex schedule shows 11,363m of 'customer "
+                    "prepayments with significant financing component'. The prepaid hardware is there and it is "
+                    'quantified. PASS. (3) FREE CASH FLOW - GAAP free cash flow was NEGATIVE 5,396m against negative '
+                    '362m a year earlier, so worse year on year. BUT FY2026 ran at negative 23,686m, about 5.9bn a '
+                    'quarter, so this quarter is slightly BETTER than that run rate. And operating cash flow was a '
+                    "RECORD 23,103m, UP 184%. On Oracle's own 'net cash outlay for capital expenditures' of 17,966m - "
+                    'capex of 28,499m less the 11,363m customers prepaid - cash in exceeded cash out by about 5.1bn. '
+                    'NOT A FURTHER DETERIORATION. ⚠️ NEW RISK NOT IN THE ORIGINAL TEST: S&P downgraded Oracle to '
+                    "BBB-/A-3 from BBB/A-2 on 9 Jul 2026, 'On Rising Business Risk And Weaker Cash Flow'. BBB- is one "
+                    'notch above sub-investment grade. Trade press reporting S&P also puts roughly half of the 638bn '
+                    'RPO with OpenAI - press characterisation, NOT verified against any Oracle filing or the S&P text. '
+                    'WHY ONE ORDER AND NOT TWO: the room is 4,686 on a 1,000,000 book, 0.47%. Two POEMS orders cost '
+                    '17.12 in commission, 0.37% of the trade, to reduce a risk that is already a rounding error. '
+                    'Splitting a position this small is uneconomic - the same logic that put the sub-2,100 legacy '
+                    'names into Tier A. THE NEXT DECISION IS WHETHER ORCL DESERVES MORE THAN 13,000, and that belongs '
+                    'to the 10 Dec review.',
             'c': 'confirmed'},
            {'d': '2026-09-10',
             't': 'TSM',
