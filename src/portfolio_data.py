@@ -3,59 +3,96 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Sep 10, 2026 - FOUR FILLS AND THE 200,000. Salee executed four limit orders on the evening of Sep 9 (Bangkok time) '
- 'and the 200,000 transfer landed early. Every position on the board has been reconciled line by line against the '
- 'POEMS statement. || THE FILLS, all Done, all limit orders: ONDS 200 @ 7.60 (order 5146806), AAOI 10 @ 112.40 '
- '(5146476), IREN 45 @ 46.70 (5145787), INTC 20 of 45 @ 103.70 (5145116). REALISED +778.74 - INTC +1,163.35, IREN '
- '+357.72, AAOI -223.15, ONDS -519.18. Three positions closed. INTEL KEEPS A 25-SHARE BACK-UP CORE at a cost of '
- '1,127.56, still showing +135.55% on the POEMS screen - the trim was never an exit, and Intel remains one of the five '
- 'back-up names. || RECONCILIATION: all 51 open positions on the board match POEMS on both share count and cost to the '
- "cent. Invested falls from 593,001.07 to 586,994.77, which is exactly the POEMS 'Open Qty Cost' total. Lifetime "
- 'realised improves from -3,165.18 to -2,386.44. || ⚠️ CASH 216,131.61. The 200,000 transfer ARRIVED EARLY - the '
- 'Schedule row had it dated 14 Sep after a one-week delay from 7 Sep. 16,131.61 + 200,000 = 216,131.61 exactly, so the '
- "four sales are NOT in that figure: POEMS states the balance is 'before the settlement of the outstanding contract', "
- 'and roughly 6,785 of net proceeds should settle over the next two business days, taking cash to about 222,917. || ⚠️ '
- 'PRICES ON THIS BOARD ARE STILL THE SEP 8 CLOSE. POEMS shows Sep 9 prices for the 51 held names but not for the 41 '
- 'watch names, and mixing two dates across one board is worse than being one day behind. The next daily refresh brings '
- 'all 92 tickers to the same close under the usual two-source rule. Market value on the board therefore reads lower '
- 'than the 700,876.70 POEMS shows. || ⚠️ THB FIGURES FOR THESE FOUR SALES USE THE BOARD REFERENCE RATE OF 32.875, NOT '
- 'the actual settlement rate, which POEMS did not show. The USD figures are exact; the THB ones are indicative until '
- 'Salee supplies the settlement rate. || SELLING PROGRAMME: ten rows left of the original thirteen - ZETA, CRM, HUBB, '
- 'QCOM, COHR, IBM, AMKR, BWXT, MPWR, FN. || PREVIOUS ENTRY: Sep 10, 2026 - THE RESTRUCTURE. The board moves from 15 '
- "groups and 54 funded names to 10 GROUPS, 38 ACTIVE NAMES, 5 BACK-UP NAMES and 13 SELLS, on Salee's instruction. "
- 'Budget stays at exactly 1,000,000. || THE TEN GROUPS: Hyperscalers & Model Owners 236,000 - AI Chips & Chip Design '
- '203,000 - Foundry, Equipment & Test 161,000 - Memory & Storage 57,000 - Networking & Optical 83,000 - AI Software, '
- 'Security & Infrastructure 40,000 - Power & Electrification 77,000 - Healthcare & Robotics 44,000 - Digital Platforms '
- '& Fintech 64,000 - Space & Defence 35,000. AI (groups 1-6) is 780,000 = 78.0%, other future economies 220,000 = '
- "22.0%, inside Salee's 70-80% / 20-25% bands. Largest single position NVDA at 95,000 = 9.5%, under the 10% ceiling. "
- '|| FIVE NAMES ENTER THE BOARD WITH A BUDGET FOR THE FIRST TIME: SNPS 13,000, APP 18,000, SE 13,000, V 9,000, LHX '
- '9,000 - 62,000 in total. SNPS replaces CDNS as the EDA holding on Rule of 40 75.4 against 39.3 and a forward P/E of '
- '26.9 against 40.8. LHX is the profitable anchor Space & Defence lacked: without it the group was 32,000 spread '
- "across two loss-makers. || ⚠️ THE BACK-UP BUCKET IS SALEE'S IDEA AND IT SAVED REAL MONEY. CRWD, INTC, TER, CDNS and "
- 'FSLR are held with ZERO budget, a written promotion trigger each, and a review every three months. Because those '
- 'five are not sold, the remaining 13 disposals net to PLUS 139 of gain on 28,308 of cost - ZETA +1,413, CRM +1,481 '
- 'and IREN +376 almost exactly cancelled by ten losing positions. Selling all 18 would have crystallised 7,070. The '
- 'back-up bucket kept 6,931 of unrealised gain out of the tax net. ⚠️ Tax adviser sign-off is still required before '
- 'any of the 13 are executed. || AMZN IS FULL AND STOPS HERE: 48,600 invested against a 48,000 target. The business is '
- 'not the problem - Q2 2026 net sales +20% to 200.6bn, AWS +37% to 42.2bn at a 39.4% operating margin, consolidated '
- "operating income 27.5bn. The CASH is the problem: Amazon's own reconciliation reads 'Free cash flow decreased to an "
- 'outflow of 7.6 billion for the trailing twelve months, compared with 18.2 billion for the trailing twelve months '
- "ended June 30, 2025', on trailing capex of 173.0bn. And Q3 2026 is guided to grow only 9-12% against the 20% just "
- 'delivered. Three triggers re-open it, recorded on the Schedule page: TTM free cash flow turns positive, revenue '
- "guidance returns above 15%, or 2027 capex guides below 2026's roughly 220bn. || ⚠️ EVERY SCHEDULE ROW DATED BEFORE "
- 'TODAY QUOTES A PRE-RESTRUCTURE BUDGET. The amounts in those rows are stale; check each against the new budget before '
- 'acting. || Room to deploy now across the 38: 435,308, after reserving 15,432 of cost held in the five back-ups. || '
- "Claude does NOT place trades. Every buy and every sell on this board is Salee's to execute at POEMS. || PREVIOUS "
- 'ENTRY: Sep 8, 2026 - close. Daily price refresh: all 92 tickers brought to the Tuesday Sep 8, 2026 close (price, '
- "mcapB, pxd; mcapB scaled by each ticker's exact price ratio; Monday Sep 7 was Labor Day, no session). METHOD per "
- "playbook: stockanalysis.com quote page taken only when stamped 'At close: Sep 8, 2026, 4:00 PM EDT' AND its previous "
- "close tied to the history table's Sep 4 row. 15 moves >=6%, each confirmed against a second independent source "
- "(Google Finance Sep 8 close stamp; fool.com Sep 8 17:26 ET article for STX; marketscreener Sep 8 'Market Closed' "
- 'stamp for LEU and SHOP): INTC +9.05, AMKR +6.96, STX +6.49, GLW +7.56, LITE +11.04, COHR +7.10, ALAB -6.94, AXTI '
- '+12.85, ASTS +6.11, NBIS +7.73, CRWV +11.72, LEU +6.69, BE +9.63, SHOP -7.57, XE +8.13. || CGNX and XE served only '
- 'INTRADAY stamps on stockanalysis (3:23 PM and 10:21 AM); both closes taken instead from Google Finance beta pages '
- "carrying explicit 'Closed: Sep 8, 4:00 PM GMT-4' stamps (CGNX 62.23, XE 19.15; XE's stamp arithmetic ties exactly to "
- "the verified Sep 4 close 17.71, corroborated by X-Energy's own IR page). || THIRTEEN quote-vs-history disagreements "
+ASOF = ('Sep 10, 2026 - SKHY QUARANTINED, SPCX ANSWERED. Two names Salee asked about, both checked against primary sources, '
+ 'and both carried WRONG DATA on this board. || ⚠️ SKHY: THE ADR TRADES AT A 43% PREMIUM TO KOREA. One ADS is '
+ "ONE-TENTH of an SK hynix common share (SEC 424(b)(4), verbatim: 'Each ADS represents one-tenth of a share of our "
+ "common stock'). On 9 Sep the ADS closed 198.63; KRX:000660 closed KRW 1,856,000; at the ECB rate of 1,336.2 that is "
+ 'USD 1,389.01 per common share, so ADS parity is 138.90. 198.63 / 138.90 = a 43.0% PREMIUM - 1.43 dollars for a '
+ 'dollar of SK hynix. An independent tracker put it at 43.96% the same day. On 15 shares that is roughly 890 dollars '
+ 'of pure premium, and most of the +55.7% showing on the POEMS screen is the premium widening, not the business. The '
+ "prospectus also warns the exit is one-way: a holder may surrender ADSs for ordinary shares but 'may not be allowed "
+ "to deposit the common shares again to obtain ADSs'. || ⚠️ AND SK HYNIX'S EARNINGS CANNOT BE USED AS A RUN-RATE. The "
+ '6-K filed 29 Jul 2026 shows 2Q26 revenue KRW 79,318,746m, operating profit KRW 60,542,608m, PROFIT BEFORE TAX KRW '
+ '122,708,355m and net profit KRW 93,922,593m - net profit LARGER THAN REVENUE. The gap is KRW 62.17 TRILLION of '
+ 'NON-OPERATING income, taxed at a normal 23.46%, and SK hynix has NOT itemised it in any of its twelve 6-K filings. '
+ 'Press attributes it to the Kioxia stake but the figures conflict (KRW 40tn, USD 43bn, USD 27.4bn) and none traces to '
+ "a filing, so this board records NO SOURCED CAUSE FOUND. The 6-K itself says the figures are 'provisional... the "
+ "audit by the Company's external auditor has not yet been completed'. CONSEQUENCE: net margin, P/E, PEG, ROE, ROIC, "
+ 'EPS, EPS growth and Rule of 40 are now NULL on this board for SKHY - they were 56.89, 19.18, 61.17, 51.79, 9.39, '
+ '185.7 and 116.6, every one of them wrong. THE OPERATING LINE IS CLEAN and is kept: TTM revenue KRW 189.17tn (USD '
+ '141.57bn at 1,336.2), +145.0% year on year, gross margin 76.27%, operating margin 68.04%, free cash flow KRW 27.82tn '
+ '(USD 20.82bn), capex KRW 35.23tn (USD 26.37bn), company-stated net cash KRW 69.4tn. || SKHY MARKET CAP CORRECTED '
+ 'from 1,124.66bn to 1,352.41bn: the old figure used a stale PRE-IPO share count. The prospectus states 728,865,500 '
+ 'common shares after the offering, and the 7 Aug dividend independently confirms it - KRW 273,324,801,750 at 375 won '
+ 'a share is 728,866,138 shares. Price/sales falls from 10.9 to 9.55; analysts covering rises from 3 to 13; average '
+ 'target 244.17 per ADS. || ACTION: SKHY BECOMES THE SIXTH BACK-UP NAME. Budget withdrawn; the 15 shares are kept, '
+ 'because selling would crystallise a premium already captured. Its 16,000 goes to MU (+10,000, to 51,000) and TSM '
+ "(+6,000, to 74,000) - NOT all to Micron, because this board's own warning stands that Micron's 5.5x forward earnings "
+ 'is a peak-cycle multiple, and doubling down on the top of a memory cycle would contradict it. PROMOTE SKHY when the '
+ 'premium falls below 10% AND the audited report itemises the KRW 62.17tn. ⚠️ MEMORY IS NOW A ONE-NAME GROUP at 51,000 '
+ '(5.1%) - it needs a second name, and SKHY is the natural candidate once those two tests pass. || SPCX - WHY THERE '
+ 'WAS NO PLAN. The honest answer is that SpaceX never survived the cut to 38 names and that was never explained. The '
+ 'ticker is genuinely Space Exploration Technologies Corp (CIK 1181412, IPO 12 Jun 2026 at 135.00) - worth confirming, '
+ 'because SPCX belonged to a SPAC ETF until 7 Apr 2026, when that fund moved to SPCK. FOR: Q2 2026 revenue 7,814m '
+ 'against 4,071m, +91.9%. AGAINST: TTM operating cash flow 9,900m against capex of 42,415m, so FREE CASH FLOW IS MINUS '
+ '32,515m - a 32bn annual burn - on a 2.0 trillion market cap and 23bn of revenue, 87 times sales, with only 1.53bn of '
+ '13.57bn shares in the float. TWO SPCX FIELDS CORRECTED: revenue growth 33.2 to 121.85 (the old figure was FY2025, '
+ 'not the trailing year) and net margin -35.66 to -38.57. DECISION DEFERRED TO THE 10 DEC REVIEW, when lock-up supply '
+ 'is visible. The lock-up expiry could not be sourced and none is asserted. || Board now 37 FUNDED names, 6 BACK-UPS, '
+ '10 groups, still exactly 1,000,000. AI 78.0% / other 22.0%. NVDA still the cap at 9.5%. || PREVIOUS ENTRY: Sep 10, '
+ '2026 - FOUR FILLS AND THE 200,000. Salee executed four limit orders on the evening of Sep 9 (Bangkok time) and the '
+ '200,000 transfer landed early. Every position on the board has been reconciled line by line against the POEMS '
+ 'statement. || THE FILLS, all Done, all limit orders: ONDS 200 @ 7.60 (order 5146806), AAOI 10 @ 112.40 (5146476), '
+ 'IREN 45 @ 46.70 (5145787), INTC 20 of 45 @ 103.70 (5145116). REALISED +778.74 - INTC +1,163.35, IREN +357.72, AAOI '
+ '-223.15, ONDS -519.18. Three positions closed. INTEL KEEPS A 25-SHARE BACK-UP CORE at a cost of 1,127.56, still '
+ 'showing +135.55% on the POEMS screen - the trim was never an exit, and Intel remains one of the five back-up names. '
+ '|| RECONCILIATION: all 51 open positions on the board match POEMS on both share count and cost to the cent. Invested '
+ "falls from 593,001.07 to 586,994.77, which is exactly the POEMS 'Open Qty Cost' total. Lifetime realised improves "
+ 'from -3,165.18 to -2,386.44. || ⚠️ CASH 216,131.61. The 200,000 transfer ARRIVED EARLY - the Schedule row had it '
+ 'dated 14 Sep after a one-week delay from 7 Sep. 16,131.61 + 200,000 = 216,131.61 exactly, so the four sales are NOT '
+ "in that figure: POEMS states the balance is 'before the settlement of the outstanding contract', and roughly 6,785 "
+ 'of net proceeds should settle over the next two business days, taking cash to about 222,917. || ⚠️ PRICES ON THIS '
+ 'BOARD ARE STILL THE SEP 8 CLOSE. POEMS shows Sep 9 prices for the 51 held names but not for the 41 watch names, and '
+ 'mixing two dates across one board is worse than being one day behind. The next daily refresh brings all 92 tickers '
+ 'to the same close under the usual two-source rule. Market value on the board therefore reads lower than the '
+ '700,876.70 POEMS shows. || ⚠️ THB FIGURES FOR THESE FOUR SALES USE THE BOARD REFERENCE RATE OF 32.875, NOT the '
+ 'actual settlement rate, which POEMS did not show. The USD figures are exact; the THB ones are indicative until Salee '
+ 'supplies the settlement rate. || SELLING PROGRAMME: ten rows left of the original thirteen - ZETA, CRM, HUBB, QCOM, '
+ 'COHR, IBM, AMKR, BWXT, MPWR, FN. || PREVIOUS ENTRY: Sep 10, 2026 - THE RESTRUCTURE. The board moves from 15 groups '
+ "and 54 funded names to 10 GROUPS, 38 ACTIVE NAMES, 5 BACK-UP NAMES and 13 SELLS, on Salee's instruction. Budget "
+ 'stays at exactly 1,000,000. || THE TEN GROUPS: Hyperscalers & Model Owners 236,000 - AI Chips & Chip Design 203,000 '
+ '- Foundry, Equipment & Test 161,000 - Memory & Storage 57,000 - Networking & Optical 83,000 - AI Software, Security '
+ '& Infrastructure 40,000 - Power & Electrification 77,000 - Healthcare & Robotics 44,000 - Digital Platforms & '
+ 'Fintech 64,000 - Space & Defence 35,000. AI (groups 1-6) is 780,000 = 78.0%, other future economies 220,000 = 22.0%, '
+ "inside Salee's 70-80% / 20-25% bands. Largest single position NVDA at 95,000 = 9.5%, under the 10% ceiling. || FIVE "
+ 'NAMES ENTER THE BOARD WITH A BUDGET FOR THE FIRST TIME: SNPS 13,000, APP 18,000, SE 13,000, V 9,000, LHX 9,000 - '
+ '62,000 in total. SNPS replaces CDNS as the EDA holding on Rule of 40 75.4 against 39.3 and a forward P/E of 26.9 '
+ 'against 40.8. LHX is the profitable anchor Space & Defence lacked: without it the group was 32,000 spread across two '
+ "loss-makers. || ⚠️ THE BACK-UP BUCKET IS SALEE'S IDEA AND IT SAVED REAL MONEY. CRWD, INTC, TER, CDNS and FSLR are "
+ 'held with ZERO budget, a written promotion trigger each, and a review every three months. Because those five are not '
+ 'sold, the remaining 13 disposals net to PLUS 139 of gain on 28,308 of cost - ZETA +1,413, CRM +1,481 and IREN +376 '
+ 'almost exactly cancelled by ten losing positions. Selling all 18 would have crystallised 7,070. The back-up bucket '
+ 'kept 6,931 of unrealised gain out of the tax net. ⚠️ Tax adviser sign-off is still required before any of the 13 are '
+ 'executed. || AMZN IS FULL AND STOPS HERE: 48,600 invested against a 48,000 target. The business is not the problem - '
+ 'Q2 2026 net sales +20% to 200.6bn, AWS +37% to 42.2bn at a 39.4% operating margin, consolidated operating income '
+ "27.5bn. The CASH is the problem: Amazon's own reconciliation reads 'Free cash flow decreased to an outflow of 7.6 "
+ 'billion for the trailing twelve months, compared with 18.2 billion for the trailing twelve months ended June 30, '
+ "2025', on trailing capex of 173.0bn. And Q3 2026 is guided to grow only 9-12% against the 20% just delivered. Three "
+ 'triggers re-open it, recorded on the Schedule page: TTM free cash flow turns positive, revenue guidance returns '
+ "above 15%, or 2027 capex guides below 2026's roughly 220bn. || ⚠️ EVERY SCHEDULE ROW DATED BEFORE TODAY QUOTES A "
+ 'PRE-RESTRUCTURE BUDGET. The amounts in those rows are stale; check each against the new budget before acting. || '
+ 'Room to deploy now across the 38: 435,308, after reserving 15,432 of cost held in the five back-ups. || Claude does '
+ "NOT place trades. Every buy and every sell on this board is Salee's to execute at POEMS. || PREVIOUS ENTRY: Sep 8, "
+ '2026 - close. Daily price refresh: all 92 tickers brought to the Tuesday Sep 8, 2026 close (price, mcapB, pxd; mcapB '
+ "scaled by each ticker's exact price ratio; Monday Sep 7 was Labor Day, no session). METHOD per playbook: "
+ "stockanalysis.com quote page taken only when stamped 'At close: Sep 8, 2026, 4:00 PM EDT' AND its previous close "
+ "tied to the history table's Sep 4 row. 15 moves >=6%, each confirmed against a second independent source (Google "
+ "Finance Sep 8 close stamp; fool.com Sep 8 17:26 ET article for STX; marketscreener Sep 8 'Market Closed' stamp for "
+ 'LEU and SHOP): INTC +9.05, AMKR +6.96, STX +6.49, GLW +7.56, LITE +11.04, COHR +7.10, ALAB -6.94, AXTI +12.85, ASTS '
+ '+6.11, NBIS +7.73, CRWV +11.72, LEU +6.69, BE +9.63, SHOP -7.57, XE +8.13. || CGNX and XE served only INTRADAY '
+ 'stamps on stockanalysis (3:23 PM and 10:21 AM); both closes taken instead from Google Finance beta pages carrying '
+ "explicit 'Closed: Sep 8, 4:00 PM GMT-4' stamps (CGNX 62.23, XE 19.15; XE's stamp arithmetic ties exactly to the "
+ "verified Sep 4 close 17.71, corroborated by X-Energy's own IR page). || THIRTEEN quote-vs-history disagreements "
  "caught (CDNS, KLAC, TER, AMKR, AMAT, APH, FN, TSLA, LHX, KTOS, IBM, PWR, SE - CDNS's history row even printed a "
  'close below its own low): quote page taken per playbook and every disputed close independently confirmed by Google '
  "Finance. || LHX lo52 extended to 255.74 (new 52-week low). || DATA NOTE: the board carried 47.42 as AMKR's Sep 4 "
@@ -1236,7 +1273,7 @@ STOCKS = [{'an': 83,
   't': 'MCHP'},
  {'an': 25,
   'ath': 479.0,
-  'budget': 68000,
+  'budget': 74000,
   'capexB': 46.87,
   'eps': 13.44,
   'epsG': 53.4,
@@ -1454,7 +1491,7 @@ STOCKS = [{'an': 83,
   't': 'AMKR'},
  {'an': 45,
   'ath': 1255.0,
-  'budget': 41000,
+  'budget': 51000,
   'capexB': 25.26,
   'eps': 44.31,
   'epsG': 695.9,
@@ -1483,37 +1520,38 @@ STOCKS = [{'an': 83,
   'roe': 66.64,
   'roi': 67.64,
   't': 'MU'},
- {'an': 3,
+ {'an': 13,
   'ath': 194.8,
-  'budget': 16000,
-  'capexB': 19.6,
-  'eps': 9.39,
-  'epsG': 185.7,
+  'budget': None,
+  'capexB': 26.37,
+  'eps': None,
+  'epsG': None,
   'ex': 'NASDAQ',
-  'fcfB': 28.3,
-  'fpe': 5.11,
-  'fvAvg': 281.67,
-  'fvMax': 281.67,
-  'fvMin': 281.67,
+  'fcfB': 20.82,
+  'fpe': 3.61,
+  'fvAvg': 244.17,
+  'fvMax': None,
+  'fvMin': None,
   'g': 3,
-  'gm': 68.34,
+  'gm': 76.27,
   'hi52': 194.8,
   'jan2': None,
   'lo52': 124.8,
-  'mcapB': 1124.663,
+  'mcapB': 1352.4099,
   'name': "SK hynix (NASDAQ ADR, listed Jul 10 '26)",
-  'pe': 19.18,
+  'pe': None,
   'peg': None,
-  'pm': 56.89,
+  'pm': None,
   'price': 185.55,
-  'ps': 10.9,
+  'ps': 9.55,
   'pxd': '2026-09-08',
-  'r40': 116.6,
-  'revB': 86.77,
-  'revG': 85.0,
-  'roe': 61.17,
-  'roi': 51.79,
-  't': 'SKHY'},
+  'r40': None,
+  'revB': 141.57,
+  'revG': 145.0,
+  'roe': None,
+  'roi': None,
+  't': 'SKHY',
+  'bk': 1},
  {'an': 23,
   'ath': 1804.0,
   'budget': None,
@@ -1970,13 +2008,13 @@ STOCKS = [{'an': 83,
   'name': 'SpaceX',
   'pe': None,
   'peg': 0.29,
-  'pm': -35.66,
+  'pm': -38.57,
   'price': 153.47,
   'ps': 81.77,
   'pxd': '2026-09-08',
   'r40': None,
   'revB': 23.04,
-  'revG': 33.2,
+  'revG': 121.85,
   'roe': None,
   'roi': None,
   't': 'SPCX'},
@@ -3631,7 +3669,7 @@ POS = {'GOOGL': {'budget': 78000, 'cost': 59475.92, 'shares': 217},
  'META': {'budget': 52000, 'cost': 39239.51, 'shares': 59.5},
  'AAPL': {'budget': 24000, 'cost': 11437.61, 'shares': 46},
  'NVDA': {'budget': 95000, 'cost': 79380.28, 'shares': 420},
- 'TSM': {'budget': 68000, 'cost': 39921.53, 'shares': 112.5},
+ 'TSM': {'budget': 74000, 'cost': 39921.53, 'shares': 112.5},
  'AVGO': {'budget': 50000, 'cost': 30125.18, 'shares': 88.5},
  'AMD': {'budget': 24000, 'cost': 13789.22, 'shares': 55},
  'MRVL': {'budget': 21000, 'cost': 7872.66, 'shares': 48.5},
@@ -3643,8 +3681,8 @@ POS = {'GOOGL': {'budget': 78000, 'cost': 59475.92, 'shares': 217},
  'LRCX': {'budget': 16000, 'cost': 4100.12, 'shares': 22},
  'KLAC': {'budget': 14000, 'cost': 3510.69, 'shares': 18},
  'AMKR': {'budget': None, 'cost': 3454.62, 'shares': 55},
- 'MU': {'budget': 41000, 'cost': 22581.58, 'shares': 35.45},
- 'SKHY': {'budget': 16000, 'cost': 1913.26, 'shares': 15},
+ 'MU': {'budget': 51000, 'cost': 22581.58, 'shares': 35.45},
+ 'SKHY': {'budget': None, 'cost': 1913.26, 'shares': 15},
  'SNDK': {'budget': None, 'cost': None, 'shares': None},
  'STX': {'budget': None, 'cost': None, 'shares': None},
  'DELL': {'budget': None, 'cost': None, 'shares': None},
@@ -4752,7 +4790,7 @@ M3 = {'GOOGL': {'pfcf': 72.54, 'ev': 21.6, 'de': 0.18},
  'KLAC': {'pfcf': 69.72, 'ev': 48.14, 'de': 0.93},
  'AMKR': {'pfcf': 99.27, 'ev': 13.7, 'de': 0.35},
  'MU': {'pfcf': 41.4, 'ev': 15.54, 'de': 0.06},
- 'SKHY': {'pfcf': 33.37, 'ev': 15.36, 'de': 0.13},
+ 'SKHY': {'pfcf': 64.96, 'ev': None, 'de': 0.15},
  'STX': {'pfcf': 54.45, 'ev': 39.12, 'de': 1.65},
  'SNDK': {'pfcf': 53.1, 'ev': 41.43, 'de': 0.02},
  'ANET': {'pfcf': 46.22, 'ev': 50.19, 'de': None},
@@ -5611,7 +5649,42 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'share of the 1,000,000? AMZN specifically: re-open its budget when trailing-twelve-month free '
                     'cash flow turns positive again (it was MINUS 7.6bn at Q2 2026, against PLUS 18.2bn a year '
                     'earlier), or when revenue guidance returns above 15% (Q3 2026 was guided to 9-12%), or when 2027 '
-                    "capex guidance comes in below 2026's roughly 220bn."}]}
+                    "capex guidance comes in below 2026's roughly 220bn."},
+           {'d': '2026-12-10',
+            'dl': 'Quarterly review - back-up name',
+            't': 'SKHY',
+            'k': 'trigger',
+            'a': 'WATCH',
+            'amt': 0,
+            'w': 'BACK-UP: 15 shares held, zero budget. Do not sell (that crystallises a premium already captured); do '
+                 'not buy at this price.',
+            'cond': 'TWO separate reasons, either of which is enough. (1) THE ADR PREMIUM IS 43%. On 9 Sep the ADS '
+                    'closed at 198.63 while KRX:000660 closed at KRW 1,856,000; at the ECB rate of 1,336.2 that is USD '
+                    '1,389.01 per common share, and one ADS is ONE-TENTH of a common share, so parity is 138.90. '
+                    'Paying 198.63 for 138.90 of SK hynix is 1.43 dollars for a dollar. Worse, the prospectus says a '
+                    "holder may surrender ADSs for the underlying shares but 'may not be allowed to deposit the common "
+                    "shares again to obtain ADSs' - a one-way valve, which is exactly what lets a premium persist. (2) "
+                    'THE ACCOUNTS CANNOT BE USED YET: see the data note. PROMOTE when the ADR premium falls below 10% '
+                    'AND the audited report itemises the non-operating gain.'},
+           {'d': '2026-12-10',
+            'dl': 'Decision deferred from 10 Sep 2026',
+            't': 'SPCX',
+            'k': 'thesis',
+            'a': 'DECIDE',
+            'amt': 0,
+            'w': 'SpaceX: decide a budget at the December review, when the IPO lock-up supply is visible. No position '
+                 'before then.',
+            'cond': 'Salee asked why there was no plan for SpaceX. The honest answer is that it never survived the cut '
+                    'to 38 names and that was not explained - so here is the judgement. FOR: Q2 2026 revenue 7,814m '
+                    'against 4,071m a year earlier, +91.9%; TTM revenue 23.0bn; a Space group without SpaceX is an AI '
+                    'Chips group without NVDA. AGAINST, and it is the cash: TTM operating cash flow 9,900m against '
+                    'capex of 42,415m, so FREE CASH FLOW IS MINUS 32,515m - SpaceX burns 32bn a year. TTM net loss '
+                    '8,889m, margin -38.6%, on a 2.0 trillion market cap and 23bn of revenue - 87 times sales. AND THE '
+                    'FLOAT IS 11%: 1.53bn shares trade out of 13.57bn outstanding with insiders at 45.11%. A price set '
+                    'by an 11% float is a queue, not a price. Listed 12 Jun 2026 at 135.00; the lock-up expiry could '
+                    'NOT be sourced, so no date is asserted here - but a standard 180-day lock-up from that listing '
+                    'would fall in this review window. DECIDE IN DECEMBER on: burn narrowing as Starship reaches '
+                    'cadence, and where the price sits once lock-up supply is known.'}]}
 
 SELLBOOK = {'updated': '2026-09-10',
  'comm': 8.56,
