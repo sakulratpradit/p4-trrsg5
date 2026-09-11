@@ -3,324 +3,348 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Sep 10, 2026 - THREE MORE FILLS, AND THE CASH PREDICTION LANDED TO THE CENT. Salee executed three more Tier A limit '
- 'orders on the evening of 10 Sep Bangkok time, all Done: BWXT 10 @ 157.30 (order 5239053), IBM 6 @ 238.49 (5239310), '
- 'MPWR 1 @ 1,196.24 (5239534). || REALISED -1,071.30: BWXT -429.66, MPWR -350.91, IBM -290.73, on 5,245.69 of cost, '
- 'releasing about 4,174 of cash. Lifetime realised moves from -2,386.44 to -3,457.74. ⚠️ THESE THREE REALISED FIGURES '
- 'ARE COMPUTED, NOT READ FROM POEMS - the order screen showed the fill prices but its realised column was cut off, so '
- 'each is fill price times quantity less the 8.56 commission and the 0.00278% SEC fee rate implied by the four 9 Sep '
- 'fills, less the POEMS cost basis. Salee should confirm them against his contract notes. || RECONCILIATION: all 44 '
- 'remaining open positions match POEMS on share count AND cost to the cent, and invested falls from 586,994.77 to '
- "581,749.08 - EXACTLY the POEMS 'Open Qty Cost' total. Market value 685,746.64, unrealised +103,997.56, +17.88%. || "
- "⚠️ THE CASH FORECAST WAS EXACT. On 9 Sep this board predicted 'roughly 6,785 of net proceeds should settle over the "
- "next two business days, taking cash to about 222,917'. POEMS now shows 222,916.65 - the 216,131.61 balance plus "
- "6,785.04 to the cent. The three 10 Sep sales are NOT in that figure ('before the settlement of the outstanding "
- "contract'), so roughly 4,174 more arrives over the next two business days, taking cash to about 227,091 before any "
- 'buying. || SELLING PROGRAMME: SEVEN ROWS LEFT of the original thirteen - ZETA, CRM, HUBB, QCOM, COHR, AMKR, FN. Tier '
- 'A is finished except QCOM, HUBB and FN. ⚠️ THE REMAINING SEVEN STILL NET CLOSE TO NOTHING, which was the whole point '
- "of the back-up bucket: ZETA and CRM carry the gains and the other five carry losses. || ⚠️ OUTSTANDING: ORCL's "
- '4,686.38 of released room is NOT yet bought - POEMS still shows 50 shares at 8,313.62, now marked -8.02% with the '
- "stock at 152.94 before the earnings reaction. The Oracle order from the 10 Sep verdict is still Salee's to place. || "
- 'Prices on this board remain the Sep 8 close; POEMS shows Sep 10 prices for held names only, and mixing dates across '
- 'one board is worse than being two days behind. The next daily refresh brings all 92 tickers to one close. || '
- "PREVIOUS ENTRY: Sep 10, 2026 - THE CLOUDFLARE 'BILLION-DOLLAR AI SECURITY' POST, CHECKED. Salee sent a 'SHARE NEWS' "
- "graphic headlined 'Could AI cybersecurity be Cloudflare's next billion-dollar opportunity?' and asked whether the "
- 'cybersecurity plan is in good shape. || ⚠️ THERE IS A REAL TRIGGER BEHIND IT. On 3 Sep 2026 Cloudflare announced a '
- 'partnership with OpenAI Daybreak models for AI-powered vulnerability discovery and remediation at the network edge, '
- 'in early access through Cloudflare Managed Defense. The product cadence is genuine and heavy - Precursor behavioural '
- 'bot defence on 13 Jul, Adaptive Intelligence on 31 Aug, FedRAMP High on 11 Aug, the Wiz shadow-AI partnership and '
- 'Cloudflare Mesh in April. NET rose about 9% on 9 Sep to 308.52 and closed 311.17 on 10 Sep, up roughly 56% year to '
- "date against a 52-week range of 158.83 to 332.22. || ⚠️ BUT THE NUMBER IN THE HEADLINE IS NOT CLOUDFLARE'S. There is "
- 'no revenue, ARR, bookings or addressable-market figure for AI security, bot management, Zero Trust or pay-per-crawl '
- 'in the Q2 2026 10-Q, in the earnings release, or in the investor deck, and NO Cloudflare executive could be sourced '
- "using 'billion dollar' about any of it. The strongest sourced statement from Matthew Prince carries no number at "
- "all: 'the number one thing that's causing our phone to ring from big companies is them saying, listen, we have to do "
- "AI, but we need to do it more securely' - and even that reaches this board through a journalist, not a transcript. "
- '|| ⚠️ AND THE DEEPER PROBLEM IS PERMANENT, NOT A GAP IN THIS PARTICULAR SLIDE: CLOUDFLARE DISCLOSES NO PRODUCT-LEVEL '
- 'REVENUE AT ALL. The 10-Q disaggregates revenue only by geography and by sales channel. There is no line for '
- 'security, none for AI, none for anything. So no AI-security thesis about Cloudflare can be verified from what the '
- 'company publishes - a buyer is underwriting a ramp with zero line-item visibility, at 210 times forward earnings and '
- "44.5 times sales. || ⚠️ THE PUBLISHER COULD NOT BE IDENTIFIED. 'SHARE NEWS' matches no recognised financial news "
- "organisation on any evidence obtainable. || NET's Q2 2026: revenue 696.1m, +36%, dollar-based net retention 120%, "
- 'RPO 2.732bn +38% - a fine business. GAAP NET LOSS 169.98m against 50.4m a year earlier, so THE LOSS TRIPLED WHILE '
- 'THE STOCK ROSE 56%. TTM stock compensation 507.66m against TTM free cash flow of 341.92m - 1.48 times. The shares '
- 'issued to staff exceed the cash the business produces. NET STAYS ON THE WATCH LIST WITH NO BUDGET; funding it would '
- 'contradict the discipline that demoted CrowdStrike on 10 Sep. || ANSWER TO THE PORTFOLIO QUESTION: pure-play '
- 'cybersecurity is 11,000 of 1,000,000, all of it PANW - 1.1%. CRWD is a back-up, NET and FTNT are watch, and ZS, S, '
- 'OKTA, TENB, CYBR and RBRK are not on the board. ⚠️ THAT UNDERSTATES THE REAL EXPOSURE: MSFT at 58,000 runs Defender '
- 'and Entra and GOOGL at 78,000 owns Mandiant and Google Security Operations, so this board owns a great deal of '
- 'cybersecurity - it is simply bought inside profitable mega-caps rather than at 200 times earnings. A row is added to '
- 'the 10 Dec review to decide whether the pure-play weight should rise, with FTNT as the candidate and NET explicitly '
- 'not. || PREVIOUS ENTRY: Sep 10, 2026 - ORACLE REPORTED, AND THE CASH FLOW QUESTION IS ANSWERED. Salee had not '
- 'decided on ORCL because he had not seen the cash flow. Fiscal Q1 2027, quarter ended 31 Aug 2026, was released after '
- 'the close today. || THE BUSINESS: total revenue 19,345m, UP 30%. Total cloud 11,607m, up 62%. ⚠️ CLOUD '
- 'INFRASTRUCTURE 7,388m, UP 121% - it more than doubled. GAAP EPS 1.56 up 55%, GAAP operating income 6,728m at a 35% '
- "margin, up 57%. RPO 664bn, up 209bn year on year, with 'more than 30 billion of additional AI cloud contracts' "
- "booked in the quarter. Guidance: Q2 total revenue +30-34%, total cloud +64-70%; FY2027 'total revenue to be at least "
- "90 billion, and non-GAAP EPS to be at 8.10'. || ⚠️ THE CASH FLOW, WHICH IS THE WHOLE QUESTION. Oracle's own "
- "sentence: 'Free cash flow was negative 5 billion for Q1 as Oracle continued to execute on investments to support the "
- "growth of its Cloud Infrastructure business.' The exact figure is NEGATIVE 5,396m, against negative 362m in the same "
- 'quarter last year. || BUT READ THE THREE LINES UNDERNEATH IT BEFORE CONCLUDING ANYTHING. OPERATING CASH FLOW WAS A '
- "RECORD 23,103m, UP 184% - Oracle's own wording, 'a record Q1 operating cash flow of 23 billion, up 184%'. Capital "
- 'expenditure was 28,499m. The deficit is not a business that fails to generate cash; it is a business generating 23bn '
- "a quarter and choosing to spend 28bn. || AND ORACLE PUBLISHES A SECOND MEASURE THAT MATTERS HERE: 'NET CASH OUTLAY "
- "FOR CAPITAL EXPENDITURES' of 17,966m - the 28,499m of capex LESS 11,363m of 'customer prepayments with significant "
- "financing component'. Customers are prepaying for the hardware. On that basis cash in exceeded cash out by roughly "
- "5.1bn. ⚠️ Both readings are legitimate and Salee should hold both: the GAAP number says minus 5.4bn, Oracle's "
- 'preferred number says plus 5.1bn, and the difference is customer money that is real cash today but a delivery '
- 'obligation tomorrow. || CONTEXT: FY2026 free cash flow was negative 23,686m, about 5.9bn a quarter, so this quarter '
- 'is slightly better than that run rate, not worse. FY2025 was negative 394m and FY2024 was POSITIVE 11,807m - the '
- 'swing is entirely the AI build. || ⚠️ THE RISKS THAT ARE NEW SINCE THE ORCL SCHEDULE ROW WAS WRITTEN. S&P DOWNGRADED '
- "ORACLE TO BBB-/A-3 FROM BBB/A-2 on 9 Jul 2026, headline 'On Rising Business Risk And Weaker Cash Flow; Outlook "
- "Stable'. BBB- is ONE NOTCH ABOVE SUB-INVESTMENT GRADE. Trade press reporting S&P's rationale also says roughly HALF "
- 'of the 638bn RPO relates to OpenAI - ⚠️ that is press characterisation and could NOT be verified against any Oracle '
- "filing or against S&P's own text, so it is recorded as a claim, not a fact. Oracle's 10-K says only that 'In certain "
- "OCI offerings, we are more concentrated among a number of large customers'. || FUNDING: Oracle sold 20 billion of "
- 'common stock through an at-the-market programme during the quarter (19,909m of proceeds), on top of a 25 billion '
- 'bond issue in Feb 2026, and told the market in June it expects to raise about 40 billion in FY2027. Notes payable at '
- '31 Aug were 7,625m current plus 117,712m non-current. ⚠️ NO SOURCE - Oracle or press - GIVES A DATE FOR FREE CASH '
- 'FLOW TURNING POSITIVE. || ⚠️ BOARD CORRECTIONS: forward P/E read 15.53 against a sourced 20.05, trailing 21.36 '
- 'against 27.72, price/sales 5.33 against 6.54, 52-week low 114.75 against 114.50. Note the board price of 162.52 is '
- 'the Sep 8 close; ORCL actually CLOSED 152.94 on 10 Sep, before the release, and its 52-week range is 114.50 to '
- '345.72 - THE STOCK IS ABOUT 56% BELOW ITS HIGH. On FY2027 guidance of 8.10 non-GAAP EPS the 152.94 close is about '
- '18.9 times forward earnings for a company guiding cloud revenue up 64-70%. Consensus is 44 analysts at 241.43. || '
- 'VERDICT: the test written on the Schedule page passes on both positive clauses and is not tripped by the third. '
- "ORCL's remaining room of 4,686.38 is released for a SINGLE order - two orders would cost 17.12 in commission, 0.37% "
- 'of the trade, to reduce a risk that is already 0.47% of the book. Whether Oracle deserves more than 13,000 is a '
- 'question for the 10 Dec review. || PREVIOUS ENTRY: Sep 10, 2026 - MICRON CHECKED BEFORE DEPLOYING, AND THE BOARD WAS '
- "WRONG AGAIN. Salee asked whether we are in good shape to invest in MU, alongside a slide claiming Micron's revenue "
- "grew 346% year on year against NVIDIA's 106%. || ⚠️ THE SLIDE IS CORRECT - one of the very few that has survived "
- "checking. Micron's fiscal Q3 2026, ended 28 May 2026, reported revenue of 41.46bn against 9.30bn in the same quarter "
- 'a year earlier, which is +345.72%. GAAP gross margin 84.6%, operating margin 80.4%, net income 28,243m, diluted EPS '
- "24.67, adjusted free cash flow 18.3bn. The SK hynix figure on the same slide, 257%, also matches the company's own "
- "2Q26 wording exactly. || ⚠️ BUT THIS BOARD'S MICRON VALUATION WAS WRONG. Forward P/E read 5.54 against a sourced "
- '7.15, and trailing P/E 17.93 against 23.19 - the gap is far larger than the two-day price move can explain, so it '
- 'was the earnings estimate, not the price. The old 5.54 implied forward earnings of about 180 dollars a share; the '
- 'corrected figure implies about 137. Price/sales corrected 9.94 to 12.86. Micron is CHEAP, but it is not as cheap as '
- "this board was saying, and 'MU trades at 5.5x forward' has been quoted in three separate recommendations this month. "
- 'Corrected today. || ⚠️ EARNINGS LAND ON 30 SEPTEMBER 2026, announced by Micron on 26 Aug - twenty days away, and the '
- 'single most important fact for anyone deciding whether to deploy now. Fiscal Q4 guidance issued 24 Jun: revenue '
- '50.0bn plus or minus 1.0bn, gross margin approximately 86%, diluted EPS 30.73 plus or minus 1.00. || ON THE '
- 'PEAK-CYCLE WORRY THIS BOARD HAS CARRIED TWICE: the evidence now cuts BOTH ways and that should be recorded honestly. '
- "AGAINST the peak call - Micron's own prepared remarks say 'We now expect supply-demand conditions for both DRAM and "
- "NAND to remain tight beyond calendar 2027', and TrendForce on 7 Sep reports supplier inventories 'remain at historic "
- "lows'. FOR the peak call - Micron also says 'Our fiscal Q4 gross margin outlook reflects a meaningful moderation in "
- "the rate of price increases', and TrendForce has conventional DRAM contract price growth moderating to 13-18% "
- 'quarter on quarter. Prices are still RISING, but the second derivative has turned. That is mid-cycle deceleration, '
- "not a peak - a materially better picture than this board assumed when it split SKHY's 16,000 between MU and TSM "
- "rather than sending all of it to Micron. || ⚠️ THE SIZE OF THE MOVE IS THE REAL RISK, NOT THE MULTIPLE. MU's 52-week "
- 'range is 138.34 to 1,255.00 and it traded 982.30 intraday on 10 Sep, DOWN 4.42% on the day from a 1,027.77 previous '
- 'close. Market cap 1.11 trillion. Consensus is 49 analysts at an average target of 1,513, but the range runs from '
- '2,200 down to 361 - a low that is 63% below today. When the bull and bear cases are that far apart, position size '
- 'matters more than entry price. || MU on this board: budget 51,000, invested 22,581.58, room 28,418.42 against '
- "216,131.61 of cash. || ⚠️ SEPARATELY - THE GOLD AND SILVER SLIDE SALEE SENT IS MIS-ATTRIBUTED. It credits 'Henley & "
- "Partners', who describe themselves as 'the global leader in residence and citizenship planning' and publish no "
- 'metals research. All four of its labelled figures match a Visual Capitalist graphic SPONSORED BY GLOBAL X CANADA, an '
- 'ETF issuer, published 14 Jul 2026 on Macrotrends data. Its numbers match no primary series: silver 2025 was +144.82% '
- "on LBMA, +150.1% on LSEG, against the slide's 148.14%; gold +62.90% LBMA, +65.2% LSEG, 67% World Gold Council, "
- "against the slide's 64.69%. AND ITS OWN LAST DATA POINT CONTRADICTS ITS TITLE: silver is DOWN 5.7% to 7.3% year to "
- 'date in 2026 after peaking at 121.58 on 29 Jan and trading near 66 now; gold is up only 1.8% to 4.5% after peaking '
- 'at 5,597.23 on the same day and trading near 4,383. Recorded here because the same reasoning applies to every metals '
- 'pitch that arrives at this board. || PREVIOUS ENTRY: Sep 10, 2026 - TSMC AUGUST REVENUE, AND IT IS A RECORD. '
- 'Released 13:30 Taipei today. AUGUST NET REVENUE NT$514,806 MILLION - UP 53.3% YEAR ON YEAR and up 10.1% on July, the '
- 'highest month TSMC has ever reported. The August 2025 base was NT$335,772m. January-August cumulative NT$3,386,870m, '
- '+39.3% year on year. || THE 2026 MONTHLY SERIES (NT$m, YoY): Jan 401,255 +36.8% - Feb 317,657 +22.2% - Mar 415,191 '
- '+45.2% - Apr 410,726 +17.5% - May 416,975 +30.1% - Jun 442,680 +67.9% - Jul 467,580 +44.7% - Aug 514,806 +53.3%. '
- 'Four consecutive months of sequential growth. || ⚠️ THE REAL FINDING IS NOT THE HEADLINE, IT IS WHAT IT IMPLIES FOR '
- 'SEPTEMBER. TSMC guided Q3 2026 revenue to US$44.6-45.8bn at its own stated assumption of NT$32.0 per US dollar, with '
- 'gross margin 65-67% and operating margin 56-58%. The midpoint of US$45.2bn is NT$1,446.4bn. July and August together '
- 'are already NT$982.4bn. SO SEPTEMBER WOULD HAVE TO FALL TO NT$464.0bn - MINUS 9.9% ON THE MONTH - merely to land on '
- "the midpoint. September is normally a strong month. If September simply holds flat at August's level, Q3 comes to "
- "NT$1,497.2bn, which at 32.0 is US$46.79bn - 2.2% ABOVE THE TOP OF TSMC'S OWN GUIDANCE RANGE. At +5% on the month it "
- 'is US$47.59bn, 3.9% above the top. Even a 5% September DECLINE still clears the top end. TSMC is tracking to beat '
- 'its own quarter. || ⚠️ THE ONE THING THAT COULD SPOIL THAT ARITHMETIC IS FX, NOT DEMAND. The guidance is set in US '
- "dollars and translated at TSMC's assumed 32.0; the actual quarter converts at realised rates. A spot NT$/US$ rate "
- "for today could NOT be sourced, so every US dollar figure above uses TSMC's own 32.0 assumption and should be read "
- 'as an indicative back-solve, not a forecast. A weaker Taiwan dollar shrinks the beat; a stronger one enlarges it. || '
- 'CONTEXT FROM THE Q2 CALL (16 Jul 2026): 2026 capex RAISED to US$60-64bn from US$52-56bn, and the full-year revenue '
- "outlook raised to 'over 40%' growth in US dollar terms from the previous 30%. CFO Wendell Huang: 'Moving into third "
- 'quarter 2026, we expect our business to be supported by continued strong demand for our leading-edge process '
- "technologies, including the steep ramp-up of our 2-nanometer technology.' TrendForce notes the 2nm ramp carries 3-4% "
- 'margin dilution, which is why gross margin is guided down even as revenue runs hot. || ⚠️ NO CAUSE FOR THE AUGUST '
- "JUMP HAS BEEN STATED BY TSMC ITSELF - the monthly releases carry no commentary, and the company's own English August "
- 'release was not yet posted when this was checked. Secondary coverage attributes it to AI chip orders. Recorded as '
- 'attribution, not as fact. || WHAT IT MEANS FOR THIS BOARD: TSM is funded at 74,000 with 39,921.53 invested, so '
- '34,078.47 of room - THE LARGEST SINGLE DEPLOYMENT GAP ON THE BOARD, against 216,131.61 of cash sitting at POEMS. The '
- "August print is evidence FOR deploying into that gap. ⚠️ But the board's TSM price is still the Sep 8 close of "
- '439.00 and the stock closed 435.36 on Sep 9 with a 433.00 pre-market on Sep 10; no preferred source reporting a '
- 'price move attributed to the release could be found, so no conclusion is drawn about how the market took it. || '
- 'PREVIOUS ENTRY: Sep 10, 2026 - THE CYBERSECURITY GROWTH SLIDE, CHECKED. Salee sent a Thai infographic ranking 16 '
- "cybersecurity names by next-twelve-month consensus revenue growth and asked about NET, PANW and CRWD. || THE SLIDE'S "
- 'THREE NUMBERS ARE RIGHT, which is worth saying because most slides sent to this board have not been. Consensus by '
- 'fiscal year: NET FY2026 +32.46% and FY2027 +28.71% (straddling the claimed 30%); PANW FY2027 +23.45%, and the '
- "company itself guides FY2027 revenue to 14.10-14.20bn, 'representing year-over-year growth of 23% to 24%'; CRWD "
- 'FY2027 +24.82% and FY2028 +22.5% (straddling the claimed 23%). || ⚠️ BUT THE SLIDE HAS FOUR REAL DEFECTS. (1) '
- 'VARONIS IS IN TAKEOVER TALKS - Thoma Bravo-owned Proofpoint is reported in advanced discussions; no signed '
- 'agreement, no price and no company 8-K could be sourced, but a forward-growth ranking of a company in play is '
- 'meaningless because the equity may not be independently listed for the window being forecast. (2) MSFT at 18% and '
- "CSCO at 15% are WHOLE-COMPANY growth rates, not security-segment growth - Microsoft's 18% is Azure, Office and "
- 'everything else. (3) RBRK is Rubrik, a data-protection and backup vendor, not a security-tooling company. (4) NTSK '
- 'is Netskope, which listed on 18 Sep 2025 and has about one year of trading history, so its consensus is thin. || ⚠️ '
- 'THE RANKING IS ALMOST THE INVERSE OF THE CASH TEST. Ranking by growth alone hides what each dollar of growth costs. '
- 'Taking TTM free cash flow and subtracting TTM stock-based compensation, because shares issued to staff are a real '
- 'cost to an owner: NET has free cash flow of 341.9m against stock compensation of 507.7m - MINUS 165.7m, its cash '
- 'flow does not cover its own payroll in shares. CRWD has 1,610m against 1,244m, leaving 366m, which on a 212.77bn '
- 'market cap is 581 TIMES. PANW has 4,110m against 1,774m, leaving 2,336m, which on 273.11bn is 117 times - expensive, '
- 'but an order of magnitude better than the other two. || PANW HAD A STRONG QUARTER and it deserves recording: fiscal '
- 'Q4 2026 revenue grew 34% year over year to 3.41bn, Next-Generation Security ARR grew 63% to 9.10bn, remaining '
- 'performance obligations grew 34% to 21.2bn, and fiscal-2026 adjusted free cash flow margin was 38.4%. ⚠️ The '
- 'guidance decelerates from there - Q1 FY2027 is guided to +33-34% but the full year to +23-24%, and consensus has '
- "FY2028 at 14.46%. PANW's 2.67% net margin badly understates it: the gap to a 36% free-cash-flow margin is stock "
- 'compensation and amortisation. VERDICT: hold the 11,000, do not add. || CRWD STAYS A BACK-UP and the case is '
- 'stronger, not weaker. ⚠️ ITS FORWARD P/E ON THIS BOARD WAS WRONG - 177.75 against a sourced 147.47, corrected today. '
- 'The multiple has compressed but is still nearly twice the promotion trigger of 80, and the 581-times cash test is '
- 'the real objection. Net margin corrected 0.7 to 0.83, price/sales 41.26 to 39.43. || NET IS NOT ADDED. Cloudflare is '
- 'the fastest grower of the three - Q2 2026 revenue 696.1m, +36%, dollar-based net retention 120%, current RPO +35% - '
- 'and it is the only one of the three whose free cash flow does not cover its stock compensation, on a forward P/E of '
- '212.59 and 44.53 times sales. Funding it would contradict the discipline that demoted CrowdStrike yesterday. Board '
- 'fields refreshed: forward P/E 214.81 to 212.59, price/sales 42.29 to 44.53. It stays on the watch list in group 6. '
- '|| Prices on this board remain the Sep 8 close; only these fundamentals were refreshed. || PREVIOUS ENTRY: Sep 10, '
- '2026 - SKHY QUARANTINED, SPCX ANSWERED. Two names Salee asked about, both checked against primary sources, and both '
- 'carried WRONG DATA on this board. || ⚠️ SKHY: THE ADR TRADES AT A 43% PREMIUM TO KOREA. One ADS is ONE-TENTH of an '
- "SK hynix common share (SEC 424(b)(4), verbatim: 'Each ADS represents one-tenth of a share of our common stock'). On "
- '9 Sep the ADS closed 198.63; KRX:000660 closed KRW 1,856,000; at the ECB rate of 1,336.2 that is USD 1,389.01 per '
- 'common share, so ADS parity is 138.90. 198.63 / 138.90 = a 43.0% PREMIUM - 1.43 dollars for a dollar of SK hynix. An '
- 'independent tracker put it at 43.96% the same day. On 15 shares that is roughly 890 dollars of pure premium, and '
- 'most of the +55.7% showing on the POEMS screen is the premium widening, not the business. The prospectus also warns '
- "the exit is one-way: a holder may surrender ADSs for ordinary shares but 'may not be allowed to deposit the common "
- "shares again to obtain ADSs'. || ⚠️ AND SK HYNIX'S EARNINGS CANNOT BE USED AS A RUN-RATE. The 6-K filed 29 Jul 2026 "
- 'shows 2Q26 revenue KRW 79,318,746m, operating profit KRW 60,542,608m, PROFIT BEFORE TAX KRW 122,708,355m and net '
- 'profit KRW 93,922,593m - net profit LARGER THAN REVENUE. The gap is KRW 62.17 TRILLION of NON-OPERATING income, '
- 'taxed at a normal 23.46%, and SK hynix has NOT itemised it in any of its twelve 6-K filings. Press attributes it to '
- 'the Kioxia stake but the figures conflict (KRW 40tn, USD 43bn, USD 27.4bn) and none traces to a filing, so this '
- "board records NO SOURCED CAUSE FOUND. The 6-K itself says the figures are 'provisional... the audit by the Company's "
- "external auditor has not yet been completed'. CONSEQUENCE: net margin, P/E, PEG, ROE, ROIC, EPS, EPS growth and Rule "
- 'of 40 are now NULL on this board for SKHY - they were 56.89, 19.18, 61.17, 51.79, 9.39, 185.7 and 116.6, every one '
- 'of them wrong. THE OPERATING LINE IS CLEAN and is kept: TTM revenue KRW 189.17tn (USD 141.57bn at 1,336.2), +145.0% '
- 'year on year, gross margin 76.27%, operating margin 68.04%, free cash flow KRW 27.82tn (USD 20.82bn), capex KRW '
- '35.23tn (USD 26.37bn), company-stated net cash KRW 69.4tn. || SKHY MARKET CAP CORRECTED from 1,124.66bn to '
- '1,352.41bn: the old figure used a stale PRE-IPO share count. The prospectus states 728,865,500 common shares after '
- 'the offering, and the 7 Aug dividend independently confirms it - KRW 273,324,801,750 at 375 won a share is '
- '728,866,138 shares. Price/sales falls from 10.9 to 9.55; analysts covering rises from 3 to 13; average target 244.17 '
- 'per ADS. || ACTION: SKHY BECOMES THE SIXTH BACK-UP NAME. Budget withdrawn; the 15 shares are kept, because selling '
- 'would crystallise a premium already captured. Its 16,000 goes to MU (+10,000, to 51,000) and TSM (+6,000, to 74,000) '
- "- NOT all to Micron, because this board's own warning stands that Micron's 5.5x forward earnings is a peak-cycle "
- 'multiple, and doubling down on the top of a memory cycle would contradict it. PROMOTE SKHY when the premium falls '
- 'below 10% AND the audited report itemises the KRW 62.17tn. ⚠️ MEMORY IS NOW A ONE-NAME GROUP at 51,000 (5.1%) - it '
- 'needs a second name, and SKHY is the natural candidate once those two tests pass. || SPCX - WHY THERE WAS NO PLAN. '
- 'The honest answer is that SpaceX never survived the cut to 38 names and that was never explained. The ticker is '
- 'genuinely Space Exploration Technologies Corp (CIK 1181412, IPO 12 Jun 2026 at 135.00) - worth confirming, because '
- 'SPCX belonged to a SPAC ETF until 7 Apr 2026, when that fund moved to SPCK. FOR: Q2 2026 revenue 7,814m against '
- '4,071m, +91.9%. AGAINST: TTM operating cash flow 9,900m against capex of 42,415m, so FREE CASH FLOW IS MINUS 32,515m '
- '- a 32bn annual burn - on a 2.0 trillion market cap and 23bn of revenue, 87 times sales, with only 1.53bn of 13.57bn '
- 'shares in the float. TWO SPCX FIELDS CORRECTED: revenue growth 33.2 to 121.85 (the old figure was FY2025, not the '
- 'trailing year) and net margin -35.66 to -38.57. DECISION DEFERRED TO THE 10 DEC REVIEW, when lock-up supply is '
- 'visible. The lock-up expiry could not be sourced and none is asserted. || Board now 37 FUNDED names, 6 BACK-UPS, 10 '
- 'groups, still exactly 1,000,000. AI 78.0% / other 22.0%. NVDA still the cap at 9.5%. || ALSO MERGED IN THIS BUILD: '
- 'the scheduled earnings refresh for AVAV (Q1 FY27, reported Sep 9 after the close). Revenue growth falls 140.9 to '
- '84.4, net margin improves -13.41 to -10.13, gross margin 25.33 to 26.47, forward P/E 40.94 to 37.51, Rule of 40 '
- '133.8 to 83.2, EV/EBITDA 39.99 to 33.68. AeroVironment is a funded name at 11,000 in Space & Defence and the '
- 'restructure of 10 Sep cited its -13.4% margin as a reason the group needed a profitable anchor; on the new print the '
- 'margin is better and the growth is lower, and the conclusion is unchanged - LHX remains the anchor. || PREVIOUS '
- 'ENTRY: Sep 10, 2026 - FOUR FILLS AND THE 200,000. Salee executed four limit orders on the evening of Sep 9 (Bangkok '
- 'time) and the 200,000 transfer landed early. Every position on the board has been reconciled line by line against '
- 'the POEMS statement. || THE FILLS, all Done, all limit orders: ONDS 200 @ 7.60 (order 5146806), AAOI 10 @ 112.40 '
- '(5146476), IREN 45 @ 46.70 (5145787), INTC 20 of 45 @ 103.70 (5145116). REALISED +778.74 - INTC +1,163.35, IREN '
- '+357.72, AAOI -223.15, ONDS -519.18. Three positions closed. INTEL KEEPS A 25-SHARE BACK-UP CORE at a cost of '
- '1,127.56, still showing +135.55% on the POEMS screen - the trim was never an exit, and Intel remains one of the five '
- 'back-up names. || RECONCILIATION: all 51 open positions on the board match POEMS on both share count and cost to the '
- "cent. Invested falls from 593,001.07 to 586,994.77, which is exactly the POEMS 'Open Qty Cost' total. Lifetime "
- 'realised improves from -3,165.18 to -2,386.44. || ⚠️ CASH 216,131.61. The 200,000 transfer ARRIVED EARLY - the '
- 'Schedule row had it dated 14 Sep after a one-week delay from 7 Sep. 16,131.61 + 200,000 = 216,131.61 exactly, so the '
- "four sales are NOT in that figure: POEMS states the balance is 'before the settlement of the outstanding contract', "
- 'and roughly 6,785 of net proceeds should settle over the next two business days, taking cash to about 222,917. || ⚠️ '
- 'PRICES ON THIS BOARD ARE STILL THE SEP 8 CLOSE. POEMS shows Sep 9 prices for the 51 held names but not for the 41 '
- 'watch names, and mixing two dates across one board is worse than being one day behind. The next daily refresh brings '
- 'all 92 tickers to the same close under the usual two-source rule. Market value on the board therefore reads lower '
- 'than the 700,876.70 POEMS shows. || ⚠️ THB FIGURES FOR THESE FOUR SALES USE THE BOARD REFERENCE RATE OF 32.875, NOT '
- 'the actual settlement rate, which POEMS did not show. The USD figures are exact; the THB ones are indicative until '
- 'Salee supplies the settlement rate. || SELLING PROGRAMME: ten rows left of the original thirteen - ZETA, CRM, HUBB, '
- 'QCOM, COHR, IBM, AMKR, BWXT, MPWR, FN. || PREVIOUS ENTRY: Sep 10, 2026 - THE RESTRUCTURE. The board moves from 15 '
- "groups and 54 funded names to 10 GROUPS, 38 ACTIVE NAMES, 5 BACK-UP NAMES and 13 SELLS, on Salee's instruction. "
- 'Budget stays at exactly 1,000,000. || THE TEN GROUPS: Hyperscalers & Model Owners 236,000 - AI Chips & Chip Design '
- '203,000 - Foundry, Equipment & Test 161,000 - Memory & Storage 57,000 - Networking & Optical 83,000 - AI Software, '
- 'Security & Infrastructure 40,000 - Power & Electrification 77,000 - Healthcare & Robotics 44,000 - Digital Platforms '
- '& Fintech 64,000 - Space & Defence 35,000. AI (groups 1-6) is 780,000 = 78.0%, other future economies 220,000 = '
- "22.0%, inside Salee's 70-80% / 20-25% bands. Largest single position NVDA at 95,000 = 9.5%, under the 10% ceiling. "
- '|| FIVE NAMES ENTER THE BOARD WITH A BUDGET FOR THE FIRST TIME: SNPS 13,000, APP 18,000, SE 13,000, V 9,000, LHX '
- '9,000 - 62,000 in total. SNPS replaces CDNS as the EDA holding on Rule of 40 75.4 against 39.3 and a forward P/E of '
- '26.9 against 40.8. LHX is the profitable anchor Space & Defence lacked: without it the group was 32,000 spread '
- "across two loss-makers. || ⚠️ THE BACK-UP BUCKET IS SALEE'S IDEA AND IT SAVED REAL MONEY. CRWD, INTC, TER, CDNS and "
- 'FSLR are held with ZERO budget, a written promotion trigger each, and a review every three months. Because those '
- 'five are not sold, the remaining 13 disposals net to PLUS 139 of gain on 28,308 of cost - ZETA +1,413, CRM +1,481 '
- 'and IREN +376 almost exactly cancelled by ten losing positions. Selling all 18 would have crystallised 7,070. The '
- 'back-up bucket kept 6,931 of unrealised gain out of the tax net. ⚠️ Tax adviser sign-off is still required before '
- 'any of the 13 are executed. || AMZN IS FULL AND STOPS HERE: 48,600 invested against a 48,000 target. The business is '
- 'not the problem - Q2 2026 net sales +20% to 200.6bn, AWS +37% to 42.2bn at a 39.4% operating margin, consolidated '
- "operating income 27.5bn. The CASH is the problem: Amazon's own reconciliation reads 'Free cash flow decreased to an "
- 'outflow of 7.6 billion for the trailing twelve months, compared with 18.2 billion for the trailing twelve months '
- "ended June 30, 2025', on trailing capex of 173.0bn. And Q3 2026 is guided to grow only 9-12% against the 20% just "
- 'delivered. Three triggers re-open it, recorded on the Schedule page: TTM free cash flow turns positive, revenue '
- "guidance returns above 15%, or 2027 capex guides below 2026's roughly 220bn. || ⚠️ EVERY SCHEDULE ROW DATED BEFORE "
- 'TODAY QUOTES A PRE-RESTRUCTURE BUDGET. The amounts in those rows are stale; check each against the new budget before '
- 'acting. || Room to deploy now across the 38: 435,308, after reserving 15,432 of cost held in the five back-ups. || '
- "Claude does NOT place trades. Every buy and every sell on this board is Salee's to execute at POEMS. || PREVIOUS "
- 'ENTRY: Sep 8, 2026 - close. Daily price refresh: all 92 tickers brought to the Tuesday Sep 8, 2026 close (price, '
- "mcapB, pxd; mcapB scaled by each ticker's exact price ratio; Monday Sep 7 was Labor Day, no session). METHOD per "
- "playbook: stockanalysis.com quote page taken only when stamped 'At close: Sep 8, 2026, 4:00 PM EDT' AND its previous "
- "close tied to the history table's Sep 4 row. 15 moves >=6%, each confirmed against a second independent source "
- "(Google Finance Sep 8 close stamp; fool.com Sep 8 17:26 ET article for STX; marketscreener Sep 8 'Market Closed' "
- 'stamp for LEU and SHOP): INTC +9.05, AMKR +6.96, STX +6.49, GLW +7.56, LITE +11.04, COHR +7.10, ALAB -6.94, AXTI '
- '+12.85, ASTS +6.11, NBIS +7.73, CRWV +11.72, LEU +6.69, BE +9.63, SHOP -7.57, XE +8.13. || CGNX and XE served only '
- 'INTRADAY stamps on stockanalysis (3:23 PM and 10:21 AM); both closes taken instead from Google Finance beta pages '
- "carrying explicit 'Closed: Sep 8, 4:00 PM GMT-4' stamps (CGNX 62.23, XE 19.15; XE's stamp arithmetic ties exactly to "
- "the verified Sep 4 close 17.71, corroborated by X-Energy's own IR page). || THIRTEEN quote-vs-history disagreements "
- "caught (CDNS, KLAC, TER, AMKR, AMAT, APH, FN, TSLA, LHX, KTOS, IBM, PWR, SE - CDNS's history row even printed a "
- 'close below its own low): quote page taken per playbook and every disputed close independently confirmed by Google '
- "Finance. || LHX lo52 extended to 255.74 (new 52-week low). || DATA NOTE: the board carried 47.42 as AMKR's Sep 4 "
- "close, but stockanalysis quote, history AND Google all say Sep 4 closed 47.77 - today's 50.72 is +6.96% vs the "
- "board, +6.18% vs the true Sep 4 close. || Sep 7, 2026 - THE '5X IN 5 YEARS' LIST CHECKED. Salee sent a Thai post "
- 'naming SPCX, RDW, MP, FLNC and SNOW as candidates to grow fivefold, and asked how possible that is over TEN years. '
- '|| ⚠️ FIRST, THE HEADLINE BAR IS NOT THE ONE HE ASKED ABOUT. The post promises 5x in FIVE years, which is 37.97% a '
- 'year compounded. Salee asked about TEN years, which is 17.46% a year. His own stated objective - double by 2030 - '
- 'needs 14.87% a year. So 5x-in-ten sits only 2.59 points a year above the goal he already has, while 5x-in-five sits '
- '23.10 points above it. Those are not the same proposition and the post is selling the harder one. || ⚠️ ALL FIVE ARE '
- 'LOSS-MAKING ON A GAAP BASIS. Trailing-twelve-month net income: SPCX -8.89bn, SNOW -1.09bn, RDW -258.7m, FLNC -80.9m, '
- 'MP -60.6m. Not one is profitable. The post never says this. || ⚠️ THE SPCX ENTRY IS ARITHMETICALLY ABSURD AND SHOULD '
- "DISQUALIFY THE LIST'S METHOD. At 2.01 trillion, a fivefold gain means 10.05 TRILLION - about 1.80x the largest "
- "company that currently exists anywhere. Putting a 2-trillion-dollar company in the same 'could go 5x' bucket as a "
- "1.9-billion-dollar one ignores the arithmetic of size entirely. || ⚠️ A UNIT ERROR THAT SHOULD END THE READER'S "
- "TRUST: the post gives FLNC a pipeline of '33.1 billion dollars'. Fluence's own Q3 release quantifies pipeline only "
- 'in gigawatts, and states a 33.3 GW services pipeline. Gigawatts were converted into dollars. || VINDICATION OF THE '
- 'SEP 5 CUT: FLNC is on this fivefold list and this board DELETED it two days ago for revenue growth of 7.5%, net '
- 'margin -3.07% and return on equity -23.5%. The verified figures confirm the call - revenue TTM +7.5%, guidance CUT '
- 'from 3.2-3.6bn to 2.9-3.1bn with roughly 400m of deliveries pushed into FY2027 on factory delays, and consensus at '
- 'Hold with 13 of 21 analysts there. A company growing revenue 7.5% would need revenue to roughly quintuple to justify '
- 'the stock quintupling. || SNOW WAS DELIBERATELY KEPT in the same sweep when a mechanical screen wanted it deleted, '
- 'and that also holds up: revenue 1.546bn in Q2 FY2027, +35%, product revenue +37%, remaining performance obligations '
- '9.0bn, +30%, and full-year PRODUCT revenue guidance RAISED to 6.07bn. It stays on the watchlist with no budget - '
- 'GAAP loss 191.7m in the quarter and a 138x forward multiple are why. || OTHER ERRORS: the MP claims are all lifted '
- 'from a DoD announcement dated 10 July 2025, fourteen months old, presented as current; and that announcement says '
- 'DoD will ENSURE 10X output is bought by defence AND COMMERCIAL customers, not that the government buys everything. '
- 'The SNOW 6.07bn figure is PRODUCT revenue, not total. The SPCX 2027 revenue estimate of 73.2bn could not be verified '
- "- though to the post's credit it labels that one an estimate rather than guidance. || IN FAIRNESS THE POST IS MORE "
- "HONEST THAN MOST: it carries its own caveat section noting SpaceX's 541m quarterly loss and 18.37bn of capex, that a "
- "fivefold gain is not automatic, and that backlog must convert to revenue and cash. Redwire's six figures verified "
- 'EXACTLY. || NO ACTION TAKEN. SPCX and SNOW are already on the watchlist with no budget and deliberate reasons '
- 'recorded; FLNC stays deleted; RDW and MP are not added - RDW carries a net margin near -61% on 426m of revenue, '
- "which is the exact profile of the 26 loss-making small caps cut on Sep 5. || Sep 7, 2026 - 'NUMBER 1 OF EACH SECTOR' "
- "LIST SWEPT AGAINST THE BOARD at Salee's request. A viral Thai post listed 46 US mega-caps as the number-one name in "
- 'their sector. Result: 27 are already on this board - 17 held or budgeted, 8 on the watchlist with no budget, and 2 '
- 'flagged for sale. 19 are absent, and four of those (MCD, JNJ, UNH, KO) we DELETED DELIBERATELY on Sep 5 for revenue '
- "growth of 6.3%, 4.5%, 2.8% and 5.0%. || ⚠️ THE LIST'S PREMISE DOES NOT SURVIVE CONTACT WITH A GROWTH MANDATE. "
- "'Number one in the sector' is a claim about category rank, not about price or growth. Four of its own entries are "
- 'names this board rejected precisely for failing to grow. Note also the list is titled number-one but contains three '
- "explicit number-TWOs (AMD, MA and CVX) plus one it calls a 'rising star' (NBIS), and it splits categories until "
- 'everyone wins: GOOGL is number one in Search while META is number one in Social; NFLX is number one in Streaming '
- 'while DIS is number one in Media. Subdivide finely enough and every company is number one of something. || ON QCOM, '
- 'WHICH SALEE ASKED ABOUT SPECIFICALLY - the sale stands. Qualcomm probably IS the leader in mobile processors. That '
- 'is the problem, not the defence: smartphones are a mature replacement market, and being champion of a category that '
- 'grows about 5% gives you a company growing 5.2% with earnings per share FALLING 6.3%. Its budget has already been '
+ASOF = ("Sep 11, 2026 - ORACLE'S TRAILING NUMBERS REBUILT, AND CAPEX NOW EXCEEDS REVENUE. The scheduled earnings job swept "
+ 'the Wed Sep 10 US session and rolled Q1 FY2027 into every trailing figure for ORCL. It could not push either - the '
+ 'same gateway block - so its edits are folded in here so the local board stays one consistent state. || ⚠️ THE '
+ 'FINDING: TTM CAPITAL SPENDING IS NOW 75.66bn AGAINST TTM REVENUE OF 71.78bn. Oracle is spending more on buildings '
+ 'and machines than it collects in sales - the most extreme capex-to-revenue ratio anywhere on this board. TTM free '
+ "cash flow deepens from -23.69bn to -28.72bn. Both reconcile to the decimal against Oracle's own release: -23.69 less "
+ '-0.36 plus -5.40 equals -28.72, and 55.66 less 8.5 plus 28.5 equals 75.66. || THE TRAILING FIGURES IMPROVE '
+ 'EVERYWHERE ELSE because the new quarter was a strong one: revenue 67.36 to 71.78bn, revenue growth 17.4% to 21.6%, '
+ 'EPS 5.83 to 6.38, EPS growth 34.3% to 47.7%, net margin 25.37% to 26.36%. Valuation therefore falls on the same '
+ 'price: trailing P/E 27.72 to 23.97, FORWARD P/E 20.05 TO 17.85, price/sales 6.54 to 6.14. || ⚠️ AND READ THE '
+ 'BALANCE-SHEET IMPROVEMENT CORRECTLY. Return on equity falls 53.38% to 41.19% and debt/equity falls 3.89 to 2.32 - '
+ 'but that is the 20bn at-the-market EQUITY RAISE landing, not debt being repaid. Equity went from about 37.6bn to '
+ '67.2bn while the debt pile itself grew. It is DILUTION, NOT DELEVERAGING. Your slice got smaller; the borrowings did '
+ 'not. || ONE-OFF CHECK CLEAN: TTM net income 18.74bn sits well below TTM operating income 24.52bn, and Q1 net below '
+ 'Q1 operating - no disposal or tax item inflating the headline, unlike the SK hynix problem. || DOES THIS CHANGE THE '
+ '10 SEP ORACLE VERDICT? NO. The capex-above-revenue fact is the same information already recorded, annualised - Q1 '
+ 'alone spent 28.5bn against 19.3bn of revenue. The test written on the Schedule page passed on both positive clauses, '
+ 'the forward multiple is now CHEAPER at 17.85 than the 20.05 quoted when the room was released, and the position at '
+ 'stake is 4,686.38, 0.47% of the book. The order stands. ⚠️ What would change it: free cash flow worse than -8bn in '
+ 'Q2 with no rise in customer prepayments, or a second credit downgrade from BBB-. || ⚠️ PRICES ACROSS ALL 92 TICKERS '
+ "ARE STILL THE SEP 8 CLOSE. The scheduled price job appears stalled - pxd has not moved for three sessions. ORCL's "
+ 'board price of 162.52 is therefore stale against a market that had it at 152.94 on Sep 10. Market values on this '
+ 'board read high for that reason, and the valuation ratios above are computed on the true market price, not the stale '
+ 'board price. || PREVIOUS ENTRY: Sep 10, 2026 - THREE MORE FILLS, AND THE CASH PREDICTION LANDED TO THE CENT. Salee '
+ 'executed three more Tier A limit orders on the evening of 10 Sep Bangkok time, all Done: BWXT 10 @ 157.30 (order '
+ '5239053), IBM 6 @ 238.49 (5239310), MPWR 1 @ 1,196.24 (5239534). || REALISED -1,071.30: BWXT -429.66, MPWR -350.91, '
+ 'IBM -290.73, on 5,245.69 of cost, releasing about 4,174 of cash. Lifetime realised moves from -2,386.44 to '
+ '-3,457.74. ⚠️ THESE THREE REALISED FIGURES ARE COMPUTED, NOT READ FROM POEMS - the order screen showed the fill '
+ 'prices but its realised column was cut off, so each is fill price times quantity less the 8.56 commission and the '
+ '0.00278% SEC fee rate implied by the four 9 Sep fills, less the POEMS cost basis. Salee should confirm them against '
+ 'his contract notes. || RECONCILIATION: all 44 remaining open positions match POEMS on share count AND cost to the '
+ "cent, and invested falls from 586,994.77 to 581,749.08 - EXACTLY the POEMS 'Open Qty Cost' total. Market value "
+ '685,746.64, unrealised +103,997.56, +17.88%. || ⚠️ THE CASH FORECAST WAS EXACT. On 9 Sep this board predicted '
+ "'roughly 6,785 of net proceeds should settle over the next two business days, taking cash to about 222,917'. POEMS "
+ 'now shows 222,916.65 - the 216,131.61 balance plus 6,785.04 to the cent. The three 10 Sep sales are NOT in that '
+ "figure ('before the settlement of the outstanding contract'), so roughly 4,174 more arrives over the next two "
+ 'business days, taking cash to about 227,091 before any buying. || SELLING PROGRAMME: SEVEN ROWS LEFT of the original '
+ 'thirteen - ZETA, CRM, HUBB, QCOM, COHR, AMKR, FN. Tier A is finished except QCOM, HUBB and FN. ⚠️ THE REMAINING '
+ 'SEVEN STILL NET CLOSE TO NOTHING, which was the whole point of the back-up bucket: ZETA and CRM carry the gains and '
+ "the other five carry losses. || ⚠️ OUTSTANDING: ORCL's 4,686.38 of released room is NOT yet bought - POEMS still "
+ 'shows 50 shares at 8,313.62, now marked -8.02% with the stock at 152.94 before the earnings reaction. The Oracle '
+ "order from the 10 Sep verdict is still Salee's to place. || Prices on this board remain the Sep 8 close; POEMS shows "
+ 'Sep 10 prices for held names only, and mixing dates across one board is worse than being two days behind. The next '
+ "daily refresh brings all 92 tickers to one close. || PREVIOUS ENTRY: Sep 10, 2026 - THE CLOUDFLARE 'BILLION-DOLLAR "
+ "AI SECURITY' POST, CHECKED. Salee sent a 'SHARE NEWS' graphic headlined 'Could AI cybersecurity be Cloudflare's next "
+ "billion-dollar opportunity?' and asked whether the cybersecurity plan is in good shape. || ⚠️ THERE IS A REAL "
+ 'TRIGGER BEHIND IT. On 3 Sep 2026 Cloudflare announced a partnership with OpenAI Daybreak models for AI-powered '
+ 'vulnerability discovery and remediation at the network edge, in early access through Cloudflare Managed Defense. The '
+ 'product cadence is genuine and heavy - Precursor behavioural bot defence on 13 Jul, Adaptive Intelligence on 31 Aug, '
+ 'FedRAMP High on 11 Aug, the Wiz shadow-AI partnership and Cloudflare Mesh in April. NET rose about 9% on 9 Sep to '
+ '308.52 and closed 311.17 on 10 Sep, up roughly 56% year to date against a 52-week range of 158.83 to 332.22. || ⚠️ '
+ "BUT THE NUMBER IN THE HEADLINE IS NOT CLOUDFLARE'S. There is no revenue, ARR, bookings or addressable-market figure "
+ 'for AI security, bot management, Zero Trust or pay-per-crawl in the Q2 2026 10-Q, in the earnings release, or in the '
+ "investor deck, and NO Cloudflare executive could be sourced using 'billion dollar' about any of it. The strongest "
+ "sourced statement from Matthew Prince carries no number at all: 'the number one thing that's causing our phone to "
+ "ring from big companies is them saying, listen, we have to do AI, but we need to do it more securely' - and even "
+ 'that reaches this board through a journalist, not a transcript. || ⚠️ AND THE DEEPER PROBLEM IS PERMANENT, NOT A GAP '
+ 'IN THIS PARTICULAR SLIDE: CLOUDFLARE DISCLOSES NO PRODUCT-LEVEL REVENUE AT ALL. The 10-Q disaggregates revenue only '
+ 'by geography and by sales channel. There is no line for security, none for AI, none for anything. So no AI-security '
+ 'thesis about Cloudflare can be verified from what the company publishes - a buyer is underwriting a ramp with zero '
+ 'line-item visibility, at 210 times forward earnings and 44.5 times sales. || ⚠️ THE PUBLISHER COULD NOT BE '
+ "IDENTIFIED. 'SHARE NEWS' matches no recognised financial news organisation on any evidence obtainable. || NET's Q2 "
+ '2026: revenue 696.1m, +36%, dollar-based net retention 120%, RPO 2.732bn +38% - a fine business. GAAP NET LOSS '
+ '169.98m against 50.4m a year earlier, so THE LOSS TRIPLED WHILE THE STOCK ROSE 56%. TTM stock compensation 507.66m '
+ 'against TTM free cash flow of 341.92m - 1.48 times. The shares issued to staff exceed the cash the business '
+ 'produces. NET STAYS ON THE WATCH LIST WITH NO BUDGET; funding it would contradict the discipline that demoted '
+ 'CrowdStrike on 10 Sep. || ANSWER TO THE PORTFOLIO QUESTION: pure-play cybersecurity is 11,000 of 1,000,000, all of '
+ 'it PANW - 1.1%. CRWD is a back-up, NET and FTNT are watch, and ZS, S, OKTA, TENB, CYBR and RBRK are not on the '
+ 'board. ⚠️ THAT UNDERSTATES THE REAL EXPOSURE: MSFT at 58,000 runs Defender and Entra and GOOGL at 78,000 owns '
+ 'Mandiant and Google Security Operations, so this board owns a great deal of cybersecurity - it is simply bought '
+ 'inside profitable mega-caps rather than at 200 times earnings. A row is added to the 10 Dec review to decide whether '
+ 'the pure-play weight should rise, with FTNT as the candidate and NET explicitly not. || PREVIOUS ENTRY: Sep 10, 2026 '
+ '- ORACLE REPORTED, AND THE CASH FLOW QUESTION IS ANSWERED. Salee had not decided on ORCL because he had not seen the '
+ 'cash flow. Fiscal Q1 2027, quarter ended 31 Aug 2026, was released after the close today. || THE BUSINESS: total '
+ 'revenue 19,345m, UP 30%. Total cloud 11,607m, up 62%. ⚠️ CLOUD INFRASTRUCTURE 7,388m, UP 121% - it more than '
+ 'doubled. GAAP EPS 1.56 up 55%, GAAP operating income 6,728m at a 35% margin, up 57%. RPO 664bn, up 209bn year on '
+ "year, with 'more than 30 billion of additional AI cloud contracts' booked in the quarter. Guidance: Q2 total revenue "
+ "+30-34%, total cloud +64-70%; FY2027 'total revenue to be at least 90 billion, and non-GAAP EPS to be at 8.10'. || "
+ "⚠️ THE CASH FLOW, WHICH IS THE WHOLE QUESTION. Oracle's own sentence: 'Free cash flow was negative 5 billion for Q1 "
+ "as Oracle continued to execute on investments to support the growth of its Cloud Infrastructure business.' The exact "
+ 'figure is NEGATIVE 5,396m, against negative 362m in the same quarter last year. || BUT READ THE THREE LINES '
+ "UNDERNEATH IT BEFORE CONCLUDING ANYTHING. OPERATING CASH FLOW WAS A RECORD 23,103m, UP 184% - Oracle's own wording, "
+ "'a record Q1 operating cash flow of 23 billion, up 184%'. Capital expenditure was 28,499m. The deficit is not a "
+ 'business that fails to generate cash; it is a business generating 23bn a quarter and choosing to spend 28bn. || AND '
+ "ORACLE PUBLISHES A SECOND MEASURE THAT MATTERS HERE: 'NET CASH OUTLAY FOR CAPITAL EXPENDITURES' of 17,966m - the "
+ "28,499m of capex LESS 11,363m of 'customer prepayments with significant financing component'. Customers are "
+ 'prepaying for the hardware. On that basis cash in exceeded cash out by roughly 5.1bn. ⚠️ Both readings are '
+ "legitimate and Salee should hold both: the GAAP number says minus 5.4bn, Oracle's preferred number says plus 5.1bn, "
+ 'and the difference is customer money that is real cash today but a delivery obligation tomorrow. || CONTEXT: FY2026 '
+ 'free cash flow was negative 23,686m, about 5.9bn a quarter, so this quarter is slightly better than that run rate, '
+ 'not worse. FY2025 was negative 394m and FY2024 was POSITIVE 11,807m - the swing is entirely the AI build. || ⚠️ THE '
+ 'RISKS THAT ARE NEW SINCE THE ORCL SCHEDULE ROW WAS WRITTEN. S&P DOWNGRADED ORACLE TO BBB-/A-3 FROM BBB/A-2 on 9 Jul '
+ "2026, headline 'On Rising Business Risk And Weaker Cash Flow; Outlook Stable'. BBB- is ONE NOTCH ABOVE "
+ "SUB-INVESTMENT GRADE. Trade press reporting S&P's rationale also says roughly HALF of the 638bn RPO relates to "
+ "OpenAI - ⚠️ that is press characterisation and could NOT be verified against any Oracle filing or against S&P's own "
+ "text, so it is recorded as a claim, not a fact. Oracle's 10-K says only that 'In certain OCI offerings, we are more "
+ "concentrated among a number of large customers'. || FUNDING: Oracle sold 20 billion of common stock through an "
+ 'at-the-market programme during the quarter (19,909m of proceeds), on top of a 25 billion bond issue in Feb 2026, and '
+ 'told the market in June it expects to raise about 40 billion in FY2027. Notes payable at 31 Aug were 7,625m current '
+ 'plus 117,712m non-current. ⚠️ NO SOURCE - Oracle or press - GIVES A DATE FOR FREE CASH FLOW TURNING POSITIVE. || ⚠️ '
+ 'BOARD CORRECTIONS: forward P/E read 15.53 against a sourced 20.05, trailing 21.36 against 27.72, price/sales 5.33 '
+ 'against 6.54, 52-week low 114.75 against 114.50. Note the board price of 162.52 is the Sep 8 close; ORCL actually '
+ 'CLOSED 152.94 on 10 Sep, before the release, and its 52-week range is 114.50 to 345.72 - THE STOCK IS ABOUT 56% '
+ 'BELOW ITS HIGH. On FY2027 guidance of 8.10 non-GAAP EPS the 152.94 close is about 18.9 times forward earnings for a '
+ 'company guiding cloud revenue up 64-70%. Consensus is 44 analysts at 241.43. || VERDICT: the test written on the '
+ "Schedule page passes on both positive clauses and is not tripped by the third. ORCL's remaining room of 4,686.38 is "
+ 'released for a SINGLE order - two orders would cost 17.12 in commission, 0.37% of the trade, to reduce a risk that '
+ 'is already 0.47% of the book. Whether Oracle deserves more than 13,000 is a question for the 10 Dec review. || '
+ 'PREVIOUS ENTRY: Sep 10, 2026 - MICRON CHECKED BEFORE DEPLOYING, AND THE BOARD WAS WRONG AGAIN. Salee asked whether '
+ "we are in good shape to invest in MU, alongside a slide claiming Micron's revenue grew 346% year on year against "
+ "NVIDIA's 106%. || ⚠️ THE SLIDE IS CORRECT - one of the very few that has survived checking. Micron's fiscal Q3 2026, "
+ 'ended 28 May 2026, reported revenue of 41.46bn against 9.30bn in the same quarter a year earlier, which is +345.72%. '
+ 'GAAP gross margin 84.6%, operating margin 80.4%, net income 28,243m, diluted EPS 24.67, adjusted free cash flow '
+ "18.3bn. The SK hynix figure on the same slide, 257%, also matches the company's own 2Q26 wording exactly. || ⚠️ BUT "
+ "THIS BOARD'S MICRON VALUATION WAS WRONG. Forward P/E read 5.54 against a sourced 7.15, and trailing P/E 17.93 "
+ 'against 23.19 - the gap is far larger than the two-day price move can explain, so it was the earnings estimate, not '
+ 'the price. The old 5.54 implied forward earnings of about 180 dollars a share; the corrected figure implies about '
+ "137. Price/sales corrected 9.94 to 12.86. Micron is CHEAP, but it is not as cheap as this board was saying, and 'MU "
+ "trades at 5.5x forward' has been quoted in three separate recommendations this month. Corrected today. || ⚠️ "
+ 'EARNINGS LAND ON 30 SEPTEMBER 2026, announced by Micron on 26 Aug - twenty days away, and the single most important '
+ 'fact for anyone deciding whether to deploy now. Fiscal Q4 guidance issued 24 Jun: revenue 50.0bn plus or minus '
+ '1.0bn, gross margin approximately 86%, diluted EPS 30.73 plus or minus 1.00. || ON THE PEAK-CYCLE WORRY THIS BOARD '
+ 'HAS CARRIED TWICE: the evidence now cuts BOTH ways and that should be recorded honestly. AGAINST the peak call - '
+ "Micron's own prepared remarks say 'We now expect supply-demand conditions for both DRAM and NAND to remain tight "
+ "beyond calendar 2027', and TrendForce on 7 Sep reports supplier inventories 'remain at historic lows'. FOR the peak "
+ "call - Micron also says 'Our fiscal Q4 gross margin outlook reflects a meaningful moderation in the rate of price "
+ "increases', and TrendForce has conventional DRAM contract price growth moderating to 13-18% quarter on quarter. "
+ 'Prices are still RISING, but the second derivative has turned. That is mid-cycle deceleration, not a peak - a '
+ "materially better picture than this board assumed when it split SKHY's 16,000 between MU and TSM rather than sending "
+ "all of it to Micron. || ⚠️ THE SIZE OF THE MOVE IS THE REAL RISK, NOT THE MULTIPLE. MU's 52-week range is 138.34 to "
+ '1,255.00 and it traded 982.30 intraday on 10 Sep, DOWN 4.42% on the day from a 1,027.77 previous close. Market cap '
+ '1.11 trillion. Consensus is 49 analysts at an average target of 1,513, but the range runs from 2,200 down to 361 - a '
+ 'low that is 63% below today. When the bull and bear cases are that far apart, position size matters more than entry '
+ 'price. || MU on this board: budget 51,000, invested 22,581.58, room 28,418.42 against 216,131.61 of cash. || ⚠️ '
+ "SEPARATELY - THE GOLD AND SILVER SLIDE SALEE SENT IS MIS-ATTRIBUTED. It credits 'Henley & Partners', who describe "
+ "themselves as 'the global leader in residence and citizenship planning' and publish no metals research. All four of "
+ 'its labelled figures match a Visual Capitalist graphic SPONSORED BY GLOBAL X CANADA, an ETF issuer, published 14 Jul '
+ '2026 on Macrotrends data. Its numbers match no primary series: silver 2025 was +144.82% on LBMA, +150.1% on LSEG, '
+ "against the slide's 148.14%; gold +62.90% LBMA, +65.2% LSEG, 67% World Gold Council, against the slide's 64.69%. AND "
+ 'ITS OWN LAST DATA POINT CONTRADICTS ITS TITLE: silver is DOWN 5.7% to 7.3% year to date in 2026 after peaking at '
+ '121.58 on 29 Jan and trading near 66 now; gold is up only 1.8% to 4.5% after peaking at 5,597.23 on the same day and '
+ 'trading near 4,383. Recorded here because the same reasoning applies to every metals pitch that arrives at this '
+ 'board. || PREVIOUS ENTRY: Sep 10, 2026 - TSMC AUGUST REVENUE, AND IT IS A RECORD. Released 13:30 Taipei today. '
+ 'AUGUST NET REVENUE NT$514,806 MILLION - UP 53.3% YEAR ON YEAR and up 10.1% on July, the highest month TSMC has ever '
+ 'reported. The August 2025 base was NT$335,772m. January-August cumulative NT$3,386,870m, +39.3% year on year. || THE '
+ '2026 MONTHLY SERIES (NT$m, YoY): Jan 401,255 +36.8% - Feb 317,657 +22.2% - Mar 415,191 +45.2% - Apr 410,726 +17.5% - '
+ 'May 416,975 +30.1% - Jun 442,680 +67.9% - Jul 467,580 +44.7% - Aug 514,806 +53.3%. Four consecutive months of '
+ 'sequential growth. || ⚠️ THE REAL FINDING IS NOT THE HEADLINE, IT IS WHAT IT IMPLIES FOR SEPTEMBER. TSMC guided Q3 '
+ '2026 revenue to US$44.6-45.8bn at its own stated assumption of NT$32.0 per US dollar, with gross margin 65-67% and '
+ 'operating margin 56-58%. The midpoint of US$45.2bn is NT$1,446.4bn. July and August together are already NT$982.4bn. '
+ 'SO SEPTEMBER WOULD HAVE TO FALL TO NT$464.0bn - MINUS 9.9% ON THE MONTH - merely to land on the midpoint. September '
+ "is normally a strong month. If September simply holds flat at August's level, Q3 comes to NT$1,497.2bn, which at "
+ "32.0 is US$46.79bn - 2.2% ABOVE THE TOP OF TSMC'S OWN GUIDANCE RANGE. At +5% on the month it is US$47.59bn, 3.9% "
+ 'above the top. Even a 5% September DECLINE still clears the top end. TSMC is tracking to beat its own quarter. || ⚠️ '
+ 'THE ONE THING THAT COULD SPOIL THAT ARITHMETIC IS FX, NOT DEMAND. The guidance is set in US dollars and translated '
+ "at TSMC's assumed 32.0; the actual quarter converts at realised rates. A spot NT$/US$ rate for today could NOT be "
+ "sourced, so every US dollar figure above uses TSMC's own 32.0 assumption and should be read as an indicative "
+ 'back-solve, not a forecast. A weaker Taiwan dollar shrinks the beat; a stronger one enlarges it. || CONTEXT FROM THE '
+ 'Q2 CALL (16 Jul 2026): 2026 capex RAISED to US$60-64bn from US$52-56bn, and the full-year revenue outlook raised to '
+ "'over 40%' growth in US dollar terms from the previous 30%. CFO Wendell Huang: 'Moving into third quarter 2026, we "
+ 'expect our business to be supported by continued strong demand for our leading-edge process technologies, including '
+ "the steep ramp-up of our 2-nanometer technology.' TrendForce notes the 2nm ramp carries 3-4% margin dilution, which "
+ 'is why gross margin is guided down even as revenue runs hot. || ⚠️ NO CAUSE FOR THE AUGUST JUMP HAS BEEN STATED BY '
+ "TSMC ITSELF - the monthly releases carry no commentary, and the company's own English August release was not yet "
+ 'posted when this was checked. Secondary coverage attributes it to AI chip orders. Recorded as attribution, not as '
+ 'fact. || WHAT IT MEANS FOR THIS BOARD: TSM is funded at 74,000 with 39,921.53 invested, so 34,078.47 of room - THE '
+ 'LARGEST SINGLE DEPLOYMENT GAP ON THE BOARD, against 216,131.61 of cash sitting at POEMS. The August print is '
+ "evidence FOR deploying into that gap. ⚠️ But the board's TSM price is still the Sep 8 close of 439.00 and the stock "
+ 'closed 435.36 on Sep 9 with a 433.00 pre-market on Sep 10; no preferred source reporting a price move attributed to '
+ 'the release could be found, so no conclusion is drawn about how the market took it. || PREVIOUS ENTRY: Sep 10, 2026 '
+ '- THE CYBERSECURITY GROWTH SLIDE, CHECKED. Salee sent a Thai infographic ranking 16 cybersecurity names by '
+ "next-twelve-month consensus revenue growth and asked about NET, PANW and CRWD. || THE SLIDE'S THREE NUMBERS ARE "
+ 'RIGHT, which is worth saying because most slides sent to this board have not been. Consensus by fiscal year: NET '
+ 'FY2026 +32.46% and FY2027 +28.71% (straddling the claimed 30%); PANW FY2027 +23.45%, and the company itself guides '
+ "FY2027 revenue to 14.10-14.20bn, 'representing year-over-year growth of 23% to 24%'; CRWD FY2027 +24.82% and FY2028 "
+ '+22.5% (straddling the claimed 23%). || ⚠️ BUT THE SLIDE HAS FOUR REAL DEFECTS. (1) VARONIS IS IN TAKEOVER TALKS - '
+ 'Thoma Bravo-owned Proofpoint is reported in advanced discussions; no signed agreement, no price and no company 8-K '
+ 'could be sourced, but a forward-growth ranking of a company in play is meaningless because the equity may not be '
+ 'independently listed for the window being forecast. (2) MSFT at 18% and CSCO at 15% are WHOLE-COMPANY growth rates, '
+ "not security-segment growth - Microsoft's 18% is Azure, Office and everything else. (3) RBRK is Rubrik, a "
+ 'data-protection and backup vendor, not a security-tooling company. (4) NTSK is Netskope, which listed on 18 Sep 2025 '
+ 'and has about one year of trading history, so its consensus is thin. || ⚠️ THE RANKING IS ALMOST THE INVERSE OF THE '
+ 'CASH TEST. Ranking by growth alone hides what each dollar of growth costs. Taking TTM free cash flow and subtracting '
+ 'TTM stock-based compensation, because shares issued to staff are a real cost to an owner: NET has free cash flow of '
+ '341.9m against stock compensation of 507.7m - MINUS 165.7m, its cash flow does not cover its own payroll in shares. '
+ 'CRWD has 1,610m against 1,244m, leaving 366m, which on a 212.77bn market cap is 581 TIMES. PANW has 4,110m against '
+ '1,774m, leaving 2,336m, which on 273.11bn is 117 times - expensive, but an order of magnitude better than the other '
+ 'two. || PANW HAD A STRONG QUARTER and it deserves recording: fiscal Q4 2026 revenue grew 34% year over year to '
+ '3.41bn, Next-Generation Security ARR grew 63% to 9.10bn, remaining performance obligations grew 34% to 21.2bn, and '
+ 'fiscal-2026 adjusted free cash flow margin was 38.4%. ⚠️ The guidance decelerates from there - Q1 FY2027 is guided '
+ "to +33-34% but the full year to +23-24%, and consensus has FY2028 at 14.46%. PANW's 2.67% net margin badly "
+ 'understates it: the gap to a 36% free-cash-flow margin is stock compensation and amortisation. VERDICT: hold the '
+ '11,000, do not add. || CRWD STAYS A BACK-UP and the case is stronger, not weaker. ⚠️ ITS FORWARD P/E ON THIS BOARD '
+ 'WAS WRONG - 177.75 against a sourced 147.47, corrected today. The multiple has compressed but is still nearly twice '
+ 'the promotion trigger of 80, and the 581-times cash test is the real objection. Net margin corrected 0.7 to 0.83, '
+ 'price/sales 41.26 to 39.43. || NET IS NOT ADDED. Cloudflare is the fastest grower of the three - Q2 2026 revenue '
+ '696.1m, +36%, dollar-based net retention 120%, current RPO +35% - and it is the only one of the three whose free '
+ 'cash flow does not cover its stock compensation, on a forward P/E of 212.59 and 44.53 times sales. Funding it would '
+ 'contradict the discipline that demoted CrowdStrike yesterday. Board fields refreshed: forward P/E 214.81 to 212.59, '
+ 'price/sales 42.29 to 44.53. It stays on the watch list in group 6. || Prices on this board remain the Sep 8 close; '
+ 'only these fundamentals were refreshed. || PREVIOUS ENTRY: Sep 10, 2026 - SKHY QUARANTINED, SPCX ANSWERED. Two names '
+ 'Salee asked about, both checked against primary sources, and both carried WRONG DATA on this board. || ⚠️ SKHY: THE '
+ 'ADR TRADES AT A 43% PREMIUM TO KOREA. One ADS is ONE-TENTH of an SK hynix common share (SEC 424(b)(4), verbatim: '
+ "'Each ADS represents one-tenth of a share of our common stock'). On 9 Sep the ADS closed 198.63; KRX:000660 closed "
+ 'KRW 1,856,000; at the ECB rate of 1,336.2 that is USD 1,389.01 per common share, so ADS parity is 138.90. 198.63 / '
+ '138.90 = a 43.0% PREMIUM - 1.43 dollars for a dollar of SK hynix. An independent tracker put it at 43.96% the same '
+ 'day. On 15 shares that is roughly 890 dollars of pure premium, and most of the +55.7% showing on the POEMS screen is '
+ 'the premium widening, not the business. The prospectus also warns the exit is one-way: a holder may surrender ADSs '
+ "for ordinary shares but 'may not be allowed to deposit the common shares again to obtain ADSs'. || ⚠️ AND SK HYNIX'S "
+ 'EARNINGS CANNOT BE USED AS A RUN-RATE. The 6-K filed 29 Jul 2026 shows 2Q26 revenue KRW 79,318,746m, operating '
+ 'profit KRW 60,542,608m, PROFIT BEFORE TAX KRW 122,708,355m and net profit KRW 93,922,593m - net profit LARGER THAN '
+ 'REVENUE. The gap is KRW 62.17 TRILLION of NON-OPERATING income, taxed at a normal 23.46%, and SK hynix has NOT '
+ 'itemised it in any of its twelve 6-K filings. Press attributes it to the Kioxia stake but the figures conflict (KRW '
+ '40tn, USD 43bn, USD 27.4bn) and none traces to a filing, so this board records NO SOURCED CAUSE FOUND. The 6-K '
+ "itself says the figures are 'provisional... the audit by the Company's external auditor has not yet been completed'. "
+ 'CONSEQUENCE: net margin, P/E, PEG, ROE, ROIC, EPS, EPS growth and Rule of 40 are now NULL on this board for SKHY - '
+ 'they were 56.89, 19.18, 61.17, 51.79, 9.39, 185.7 and 116.6, every one of them wrong. THE OPERATING LINE IS CLEAN '
+ 'and is kept: TTM revenue KRW 189.17tn (USD 141.57bn at 1,336.2), +145.0% year on year, gross margin 76.27%, '
+ 'operating margin 68.04%, free cash flow KRW 27.82tn (USD 20.82bn), capex KRW 35.23tn (USD 26.37bn), company-stated '
+ 'net cash KRW 69.4tn. || SKHY MARKET CAP CORRECTED from 1,124.66bn to 1,352.41bn: the old figure used a stale PRE-IPO '
+ 'share count. The prospectus states 728,865,500 common shares after the offering, and the 7 Aug dividend '
+ 'independently confirms it - KRW 273,324,801,750 at 375 won a share is 728,866,138 shares. Price/sales falls from '
+ '10.9 to 9.55; analysts covering rises from 3 to 13; average target 244.17 per ADS. || ACTION: SKHY BECOMES THE SIXTH '
+ 'BACK-UP NAME. Budget withdrawn; the 15 shares are kept, because selling would crystallise a premium already '
+ 'captured. Its 16,000 goes to MU (+10,000, to 51,000) and TSM (+6,000, to 74,000) - NOT all to Micron, because this '
+ "board's own warning stands that Micron's 5.5x forward earnings is a peak-cycle multiple, and doubling down on the "
+ 'top of a memory cycle would contradict it. PROMOTE SKHY when the premium falls below 10% AND the audited report '
+ 'itemises the KRW 62.17tn. ⚠️ MEMORY IS NOW A ONE-NAME GROUP at 51,000 (5.1%) - it needs a second name, and SKHY is '
+ 'the natural candidate once those two tests pass. || SPCX - WHY THERE WAS NO PLAN. The honest answer is that SpaceX '
+ 'never survived the cut to 38 names and that was never explained. The ticker is genuinely Space Exploration '
+ 'Technologies Corp (CIK 1181412, IPO 12 Jun 2026 at 135.00) - worth confirming, because SPCX belonged to a SPAC ETF '
+ 'until 7 Apr 2026, when that fund moved to SPCK. FOR: Q2 2026 revenue 7,814m against 4,071m, +91.9%. AGAINST: TTM '
+ 'operating cash flow 9,900m against capex of 42,415m, so FREE CASH FLOW IS MINUS 32,515m - a 32bn annual burn - on a '
+ '2.0 trillion market cap and 23bn of revenue, 87 times sales, with only 1.53bn of 13.57bn shares in the float. TWO '
+ 'SPCX FIELDS CORRECTED: revenue growth 33.2 to 121.85 (the old figure was FY2025, not the trailing year) and net '
+ 'margin -35.66 to -38.57. DECISION DEFERRED TO THE 10 DEC REVIEW, when lock-up supply is visible. The lock-up expiry '
+ 'could not be sourced and none is asserted. || Board now 37 FUNDED names, 6 BACK-UPS, 10 groups, still exactly '
+ '1,000,000. AI 78.0% / other 22.0%. NVDA still the cap at 9.5%. || ALSO MERGED IN THIS BUILD: the scheduled earnings '
+ 'refresh for AVAV (Q1 FY27, reported Sep 9 after the close). Revenue growth falls 140.9 to 84.4, net margin improves '
+ '-13.41 to -10.13, gross margin 25.33 to 26.47, forward P/E 40.94 to 37.51, Rule of 40 133.8 to 83.2, EV/EBITDA 39.99 '
+ 'to 33.68. AeroVironment is a funded name at 11,000 in Space & Defence and the restructure of 10 Sep cited its -13.4% '
+ 'margin as a reason the group needed a profitable anchor; on the new print the margin is better and the growth is '
+ 'lower, and the conclusion is unchanged - LHX remains the anchor. || PREVIOUS ENTRY: Sep 10, 2026 - FOUR FILLS AND '
+ 'THE 200,000. Salee executed four limit orders on the evening of Sep 9 (Bangkok time) and the 200,000 transfer landed '
+ 'early. Every position on the board has been reconciled line by line against the POEMS statement. || THE FILLS, all '
+ 'Done, all limit orders: ONDS 200 @ 7.60 (order 5146806), AAOI 10 @ 112.40 (5146476), IREN 45 @ 46.70 (5145787), INTC '
+ '20 of 45 @ 103.70 (5145116). REALISED +778.74 - INTC +1,163.35, IREN +357.72, AAOI -223.15, ONDS -519.18. Three '
+ 'positions closed. INTEL KEEPS A 25-SHARE BACK-UP CORE at a cost of 1,127.56, still showing +135.55% on the POEMS '
+ 'screen - the trim was never an exit, and Intel remains one of the five back-up names. || RECONCILIATION: all 51 open '
+ 'positions on the board match POEMS on both share count and cost to the cent. Invested falls from 593,001.07 to '
+ "586,994.77, which is exactly the POEMS 'Open Qty Cost' total. Lifetime realised improves from -3,165.18 to "
+ '-2,386.44. || ⚠️ CASH 216,131.61. The 200,000 transfer ARRIVED EARLY - the Schedule row had it dated 14 Sep after a '
+ 'one-week delay from 7 Sep. 16,131.61 + 200,000 = 216,131.61 exactly, so the four sales are NOT in that figure: POEMS '
+ "states the balance is 'before the settlement of the outstanding contract', and roughly 6,785 of net proceeds should "
+ 'settle over the next two business days, taking cash to about 222,917. || ⚠️ PRICES ON THIS BOARD ARE STILL THE SEP 8 '
+ 'CLOSE. POEMS shows Sep 9 prices for the 51 held names but not for the 41 watch names, and mixing two dates across '
+ 'one board is worse than being one day behind. The next daily refresh brings all 92 tickers to the same close under '
+ 'the usual two-source rule. Market value on the board therefore reads lower than the 700,876.70 POEMS shows. || ⚠️ '
+ 'THB FIGURES FOR THESE FOUR SALES USE THE BOARD REFERENCE RATE OF 32.875, NOT the actual settlement rate, which POEMS '
+ 'did not show. The USD figures are exact; the THB ones are indicative until Salee supplies the settlement rate. || '
+ 'SELLING PROGRAMME: ten rows left of the original thirteen - ZETA, CRM, HUBB, QCOM, COHR, IBM, AMKR, BWXT, MPWR, FN. '
+ '|| PREVIOUS ENTRY: Sep 10, 2026 - THE RESTRUCTURE. The board moves from 15 groups and 54 funded names to 10 GROUPS, '
+ "38 ACTIVE NAMES, 5 BACK-UP NAMES and 13 SELLS, on Salee's instruction. Budget stays at exactly 1,000,000. || THE TEN "
+ 'GROUPS: Hyperscalers & Model Owners 236,000 - AI Chips & Chip Design 203,000 - Foundry, Equipment & Test 161,000 - '
+ 'Memory & Storage 57,000 - Networking & Optical 83,000 - AI Software, Security & Infrastructure 40,000 - Power & '
+ 'Electrification 77,000 - Healthcare & Robotics 44,000 - Digital Platforms & Fintech 64,000 - Space & Defence 35,000. '
+ "AI (groups 1-6) is 780,000 = 78.0%, other future economies 220,000 = 22.0%, inside Salee's 70-80% / 20-25% bands. "
+ 'Largest single position NVDA at 95,000 = 9.5%, under the 10% ceiling. || FIVE NAMES ENTER THE BOARD WITH A BUDGET '
+ 'FOR THE FIRST TIME: SNPS 13,000, APP 18,000, SE 13,000, V 9,000, LHX 9,000 - 62,000 in total. SNPS replaces CDNS as '
+ 'the EDA holding on Rule of 40 75.4 against 39.3 and a forward P/E of 26.9 against 40.8. LHX is the profitable anchor '
+ 'Space & Defence lacked: without it the group was 32,000 spread across two loss-makers. || ⚠️ THE BACK-UP BUCKET IS '
+ "SALEE'S IDEA AND IT SAVED REAL MONEY. CRWD, INTC, TER, CDNS and FSLR are held with ZERO budget, a written promotion "
+ 'trigger each, and a review every three months. Because those five are not sold, the remaining 13 disposals net to '
+ 'PLUS 139 of gain on 28,308 of cost - ZETA +1,413, CRM +1,481 and IREN +376 almost exactly cancelled by ten losing '
+ 'positions. Selling all 18 would have crystallised 7,070. The back-up bucket kept 6,931 of unrealised gain out of the '
+ 'tax net. ⚠️ Tax adviser sign-off is still required before any of the 13 are executed. || AMZN IS FULL AND STOPS '
+ 'HERE: 48,600 invested against a 48,000 target. The business is not the problem - Q2 2026 net sales +20% to 200.6bn, '
+ 'AWS +37% to 42.2bn at a 39.4% operating margin, consolidated operating income 27.5bn. The CASH is the problem: '
+ "Amazon's own reconciliation reads 'Free cash flow decreased to an outflow of 7.6 billion for the trailing twelve "
+ "months, compared with 18.2 billion for the trailing twelve months ended June 30, 2025', on trailing capex of "
+ '173.0bn. And Q3 2026 is guided to grow only 9-12% against the 20% just delivered. Three triggers re-open it, '
+ 'recorded on the Schedule page: TTM free cash flow turns positive, revenue guidance returns above 15%, or 2027 capex '
+ "guides below 2026's roughly 220bn. || ⚠️ EVERY SCHEDULE ROW DATED BEFORE TODAY QUOTES A PRE-RESTRUCTURE BUDGET. The "
+ 'amounts in those rows are stale; check each against the new budget before acting. || Room to deploy now across the '
+ '38: 435,308, after reserving 15,432 of cost held in the five back-ups. || Claude does NOT place trades. Every buy '
+ "and every sell on this board is Salee's to execute at POEMS. || PREVIOUS ENTRY: Sep 8, 2026 - close. Daily price "
+ "refresh: all 92 tickers brought to the Tuesday Sep 8, 2026 close (price, mcapB, pxd; mcapB scaled by each ticker's "
+ 'exact price ratio; Monday Sep 7 was Labor Day, no session). METHOD per playbook: stockanalysis.com quote page taken '
+ "only when stamped 'At close: Sep 8, 2026, 4:00 PM EDT' AND its previous close tied to the history table's Sep 4 row. "
+ '15 moves >=6%, each confirmed against a second independent source (Google Finance Sep 8 close stamp; fool.com Sep 8 '
+ "17:26 ET article for STX; marketscreener Sep 8 'Market Closed' stamp for LEU and SHOP): INTC +9.05, AMKR +6.96, STX "
+ '+6.49, GLW +7.56, LITE +11.04, COHR +7.10, ALAB -6.94, AXTI +12.85, ASTS +6.11, NBIS +7.73, CRWV +11.72, LEU +6.69, '
+ 'BE +9.63, SHOP -7.57, XE +8.13. || CGNX and XE served only INTRADAY stamps on stockanalysis (3:23 PM and 10:21 AM); '
+ "both closes taken instead from Google Finance beta pages carrying explicit 'Closed: Sep 8, 4:00 PM GMT-4' stamps "
+ "(CGNX 62.23, XE 19.15; XE's stamp arithmetic ties exactly to the verified Sep 4 close 17.71, corroborated by "
+ "X-Energy's own IR page). || THIRTEEN quote-vs-history disagreements caught (CDNS, KLAC, TER, AMKR, AMAT, APH, FN, "
+ "TSLA, LHX, KTOS, IBM, PWR, SE - CDNS's history row even printed a close below its own low): quote page taken per "
+ 'playbook and every disputed close independently confirmed by Google Finance. || LHX lo52 extended to 255.74 (new '
+ "52-week low). || DATA NOTE: the board carried 47.42 as AMKR's Sep 4 close, but stockanalysis quote, history AND "
+ "Google all say Sep 4 closed 47.77 - today's 50.72 is +6.96% vs the board, +6.18% vs the true Sep 4 close. || Sep 7, "
+ "2026 - THE '5X IN 5 YEARS' LIST CHECKED. Salee sent a Thai post naming SPCX, RDW, MP, FLNC and SNOW as candidates to "
+ 'grow fivefold, and asked how possible that is over TEN years. || ⚠️ FIRST, THE HEADLINE BAR IS NOT THE ONE HE ASKED '
+ 'ABOUT. The post promises 5x in FIVE years, which is 37.97% a year compounded. Salee asked about TEN years, which is '
+ '17.46% a year. His own stated objective - double by 2030 - needs 14.87% a year. So 5x-in-ten sits only 2.59 points a '
+ 'year above the goal he already has, while 5x-in-five sits 23.10 points above it. Those are not the same proposition '
+ 'and the post is selling the harder one. || ⚠️ ALL FIVE ARE LOSS-MAKING ON A GAAP BASIS. Trailing-twelve-month net '
+ 'income: SPCX -8.89bn, SNOW -1.09bn, RDW -258.7m, FLNC -80.9m, MP -60.6m. Not one is profitable. The post never says '
+ "this. || ⚠️ THE SPCX ENTRY IS ARITHMETICALLY ABSURD AND SHOULD DISQUALIFY THE LIST'S METHOD. At 2.01 trillion, a "
+ 'fivefold gain means 10.05 TRILLION - about 1.80x the largest company that currently exists anywhere. Putting a '
+ "2-trillion-dollar company in the same 'could go 5x' bucket as a 1.9-billion-dollar one ignores the arithmetic of "
+ "size entirely. || ⚠️ A UNIT ERROR THAT SHOULD END THE READER'S TRUST: the post gives FLNC a pipeline of '33.1 "
+ "billion dollars'. Fluence's own Q3 release quantifies pipeline only in gigawatts, and states a 33.3 GW services "
+ 'pipeline. Gigawatts were converted into dollars. || VINDICATION OF THE SEP 5 CUT: FLNC is on this fivefold list and '
+ 'this board DELETED it two days ago for revenue growth of 7.5%, net margin -3.07% and return on equity -23.5%. The '
+ 'verified figures confirm the call - revenue TTM +7.5%, guidance CUT from 3.2-3.6bn to 2.9-3.1bn with roughly 400m of '
+ 'deliveries pushed into FY2027 on factory delays, and consensus at Hold with 13 of 21 analysts there. A company '
+ 'growing revenue 7.5% would need revenue to roughly quintuple to justify the stock quintupling. || SNOW WAS '
+ 'DELIBERATELY KEPT in the same sweep when a mechanical screen wanted it deleted, and that also holds up: revenue '
+ '1.546bn in Q2 FY2027, +35%, product revenue +37%, remaining performance obligations 9.0bn, +30%, and full-year '
+ 'PRODUCT revenue guidance RAISED to 6.07bn. It stays on the watchlist with no budget - GAAP loss 191.7m in the '
+ 'quarter and a 138x forward multiple are why. || OTHER ERRORS: the MP claims are all lifted from a DoD announcement '
+ 'dated 10 July 2025, fourteen months old, presented as current; and that announcement says DoD will ENSURE 10X output '
+ 'is bought by defence AND COMMERCIAL customers, not that the government buys everything. The SNOW 6.07bn figure is '
+ "PRODUCT revenue, not total. The SPCX 2027 revenue estimate of 73.2bn could not be verified - though to the post's "
+ 'credit it labels that one an estimate rather than guidance. || IN FAIRNESS THE POST IS MORE HONEST THAN MOST: it '
+ "carries its own caveat section noting SpaceX's 541m quarterly loss and 18.37bn of capex, that a fivefold gain is not "
+ "automatic, and that backlog must convert to revenue and cash. Redwire's six figures verified EXACTLY. || NO ACTION "
+ 'TAKEN. SPCX and SNOW are already on the watchlist with no budget and deliberate reasons recorded; FLNC stays '
+ 'deleted; RDW and MP are not added - RDW carries a net margin near -61% on 426m of revenue, which is the exact '
+ "profile of the 26 loss-making small caps cut on Sep 5. || Sep 7, 2026 - 'NUMBER 1 OF EACH SECTOR' LIST SWEPT AGAINST "
+ "THE BOARD at Salee's request. A viral Thai post listed 46 US mega-caps as the number-one name in their sector. "
+ 'Result: 27 are already on this board - 17 held or budgeted, 8 on the watchlist with no budget, and 2 flagged for '
+ 'sale. 19 are absent, and four of those (MCD, JNJ, UNH, KO) we DELETED DELIBERATELY on Sep 5 for revenue growth of '
+ "6.3%, 4.5%, 2.8% and 5.0%. || ⚠️ THE LIST'S PREMISE DOES NOT SURVIVE CONTACT WITH A GROWTH MANDATE. 'Number one in "
+ "the sector' is a claim about category rank, not about price or growth. Four of its own entries are names this board "
+ 'rejected precisely for failing to grow. Note also the list is titled number-one but contains three explicit '
+ "number-TWOs (AMD, MA and CVX) plus one it calls a 'rising star' (NBIS), and it splits categories until everyone "
+ 'wins: GOOGL is number one in Search while META is number one in Social; NFLX is number one in Streaming while DIS is '
+ 'number one in Media. Subdivide finely enough and every company is number one of something. || ON QCOM, WHICH SALEE '
+ 'ASKED ABOUT SPECIFICALLY - the sale stands. Qualcomm probably IS the leader in mobile processors. That is the '
+ 'problem, not the defence: smartphones are a mature replacement market, and being champion of a category that grows '
+ 'about 5% gives you a company growing 5.2% with earnings per share FALLING 6.3%. Its budget has already been '
  'withdrawn and reassigned, so keeping it would require breaking the exactly-1,000,000 allocation set on Sep 7. ⚠️ IN '
  'FAIRNESS: at 17.2x forward with a 22.3% net margin QCOM is genuinely cheap and profitable, it was already rated the '
  'LOWEST conviction of the six sales, and the Selling tab already records that if Salee keeps one of the six this is '
@@ -2668,33 +2692,33 @@ STOCKS = [{'an': 83,
  {'an': 43,
   'ath': 345.72,
   'budget': 13000,
-  'capexB': 55.66,
-  'eps': 5.83,
-  'epsG': 34.3,
+  'capexB': 75.66,
+  'eps': 6.38,
+  'epsG': 47.7,
   'ex': 'NYSE',
-  'fcfB': -23.69,
-  'fpe': 20.05,
+  'fcfB': -28.72,
+  'fpe': 17.85,
   'fvAvg': 251.85,
   'fvMax': 400,
   'fvMin': 155,
   'g': 5,
-  'gm': 65.82,
+  'gm': 63.96,
   'hi52': 345.72,
   'jan2': 193.84,
   'lo52': 114.5,
   'mcapB': 468.1399,
   'name': 'Oracle',
-  'pe': 27.72,
-  'peg': 0.55,
-  'pm': 25.37,
+  'pe': 23.97,
+  'peg': 0.61,
+  'pm': 26.36,
   'price': 162.52,
-  'ps': 6.54,
+  'ps': 6.14,
   'pxd': '2026-09-08',
-  'r40': -17.8,
-  'revB': 67.36,
-  'revG': 17.4,
-  'roe': 53.38,
-  'roi': 11.48,
+  'r40': -18.4,
+  'revB': 71.78,
+  'revG': 21.6,
+  'roe': 41.19,
+  'roi': 11.71,
   't': 'ORCL'},
  {'an': 27,
   'ath': 490.81,
@@ -4986,7 +5010,7 @@ M3 = {'GOOGL': {'pfcf': 72.54, 'ev': 21.6, 'de': 0.18},
  'MSFT': {'pfcf': 43.88, 'ev': 14.98, 'de': 0.3},
  'META': {'pfcf': 39.9, 'ev': 14.85, 'de': 0.43},
  'AAPL': {'pfcf': 35.15, 'ev': 28.23, 'de': 0.78},
- 'ORCL': {'pfcf': None, 'ev': 16.33, 'de': 3.89},
+ 'ORCL': {'pfcf': None, 'ev': 16.35, 'de': 2.32},
  'NVDA': {'pfcf': 39.96, 'ev': 24.93, 'de': 0.15},
  'TSM': {'pfcf': 54.38, 'ev': 18.5, 'de': 0.15},
  'AVGO': {'pfcf': 44.59, 'ev': 34.3, 'de': 0.6},
