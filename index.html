@@ -428,6 +428,30 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
 #page-tiers .schead{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 6px}
 #page-tiers .kpi{background:var(--surface-1);border:1px solid var(--ring);border-radius:12px;padding:10px 14px;min-width:140px}
 #page-tiers .kpi .k{font-size:9.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+/* ---- Dictionary ---- */
+#page-terms .tm-head{margin:14px 0 10px}
+#page-terms h2{margin:0 0 6px;font-size:18px}
+#page-terms h2 .n{font-weight:400;font-size:12px;color:var(--ink-3)}
+#page-terms .tm-lede{margin:0 0 12px;font-size:12.5px;color:var(--ink-2);line-height:1.55;max-width:760px}
+#page-terms .tm-bar{display:flex;gap:8px;align-items:center;max-width:520px}
+#page-terms .tm-bar input{flex:1;padding:9px 12px;font-size:14px;border-radius:9px;
+  border:1px solid var(--line);background:var(--card);color:var(--ink)}
+#page-terms .tm-x{border:1px solid var(--line);background:var(--card);color:var(--ink-3);
+  border-radius:9px;padding:9px 11px;cursor:pointer;font-size:12px}
+#page-terms .tm-cats{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+#page-terms .tm-cat{border:1px solid var(--line);background:var(--card);color:var(--ink-2);
+  border-radius:999px;padding:5px 11px;font-size:11.5px;cursor:pointer;white-space:nowrap}
+#page-terms .tm-cat.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+#page-terms .tm-grp{margin:18px 0 6px;font-size:12px;font-weight:700;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--ink-3)}
+#page-terms .tm-card{border:1px solid var(--line);background:var(--card);border-radius:11px;
+  padding:11px 13px;margin-bottom:8px}
+#page-terms .tm-t{font-weight:700;font-size:14px;margin-bottom:3px}
+#page-terms .tm-ours{display:inline-block;background:#8a6d00;color:#fff;border-radius:6px;
+  padding:1px 7px;font-size:10px;font-weight:700;vertical-align:middle;margin-left:7px}
+#page-terms .tm-d{font-size:13px;line-height:1.6;color:var(--ink-2)}
+#page-terms .tm-none{padding:24px 4px;font-size:13px;color:var(--ink-3)}
+#page-terms mark{background:#ffe27a;color:#000;border-radius:3px;padding:0 2px}
 #page-tiers .kpi .v{font-size:19px;font-weight:700;font-variant-numeric:tabular-nums;margin-top:2px}
 #page-tiers .kpi .m{font-size:11px;color:var(--ink-2);margin-top:1px}
 #page-tiers h3{margin:22px 0 6px;font-size:15px}
@@ -490,6 +514,7 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
     <button class="tab" data-p="schedule">Schedule</button>
     <button class="tab" data-p="selling">Selling</button>
     <button class="tab" data-p="tiers">Budget Tiers</button>
+    <button class="tab" data-p="terms">Dictionary</button>
     <a class="tab" href="notes.html" style="text-decoration:none;display:inline-block">Notes ↗</a>
   </div>
   <div class="searchwrap">
@@ -599,6 +624,21 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
 <div class="page" id="page-tiers">
 <div id="tierwrap" class="pr-blues"></div>
 </div><!-- /page-tiers -->
+
+<div class="page" id="page-terms">
+<div class="tm-head">
+  <h2>Dictionary <span class="n">every term we use, in plain words</span></h2>
+  <p class="tm-lede">Terms marked <span class="tm-ours">OURS</span> are shorthand invented for this board &mdash; you will not find them in a textbook.
+     Everything else is standard market language. If a word you need is missing, tell Claude and it gets added.</p>
+  <div class="tm-bar">
+    <input id="tmq" type="text" placeholder="Type a word &mdash; e.g. RPO, tranche, Tier A, free cash flow" aria-label="Search the dictionary" autocomplete="off" spellcheck="false">
+    <button class="tm-x" id="tmx" title="Clear">&#10005;</button>
+  </div>
+  <div class="tm-cats" id="tmcats"></div>
+</div>
+<div id="tmlist"></div>
+<div class="tm-none" id="tmnone" hidden>No term matches that. Try a shorter word &mdash; or ask Claude to add it.</div>
+</div><!-- /page-terms -->
 
 <footer id="foot"></footer>
 </div>
@@ -2234,6 +2274,136 @@ function renderSchedule(){
   };
 }
 
+/* ============ DICTIONARY — plain-language glossary. Lives in the template, NOT in CONSTS. ============ */
+const GLOSSARY = [
+/* --- OUR OWN SHORTHAND --- */
+{c:"Our shorthand",o:1,t:"Active name",d:"A company with a budget on this board. There are 37. Only these get new money."},
+{c:"Our shorthand",o:1,t:"Back-up name",d:"A company we HOLD but give NO budget, with a written trigger that would promote it back to active. Reviewed every three months. Salee's own idea, and it saved about 7,000 of tax by keeping winners out of the sell list. Currently: CRWD, INTC, TER, CDNS, FSLR, SKHY."},
+{c:"Our shorthand",o:1,t:"Watch name",d:"On the board for study only — no position, no budget. A shortlist, not a plan."},
+{c:"Our shorthand",o:1,t:"Budget",d:"The most we are willing to put into one company. It is a ceiling, not a target."},
+{c:"Our shorthand",o:1,t:"Invested",d:"What has actually been spent on that company so far, including commission."},
+{c:"Our shorthand",o:1,t:"Room",d:"Budget minus invested — how much more we may still buy. TSM's room is the largest on the board."},
+{c:"Our shorthand",o:1,t:"Group",d:"One of the ten themes the million is divided into, from Hyperscalers to Space & Defence."},
+{c:"Our shorthand",o:1,t:"Tranche",d:"French for 'slice'. Buying a position in parts on separate dates instead of all at once, so a later slice can be cancelled if the story changes. Tranche 2 is a decision, not a promise."},
+{c:"Our shorthand",o:1,t:"Tier A",d:"SELL AT MARKET, do not wait. Positions so small the 8.56 commission swamps the price — MPWR was one share. Haggling is pointless."},
+{c:"Our shorthand",o:1,t:"Tier B",d:"SELL INTO STRENGTH. Winners we are exiting for thesis reasons. Put a limit above the market and let the buyer come to you."},
+{c:"Our shorthand",o:1,t:"Tier C",d:"SELL ON A RALLY. Losers outside the map. No deadline, no attachment — move them when someone offers something sensible."},
+{c:"Our shorthand",o:1,t:"Legacy sleeve",d:"Money still tied up in names we intend to sell but have not sold yet. It is reserved inside the million so the budget is not accidentally overspent."},
+{c:"Our shorthand",o:1,t:"Conviction",d:"How strongly I hold a recommendation — High, Medium or Low. Stated on every recommendation so you can weight it."},
+{c:"Our shorthand",o:1,t:"What would change my mind",d:"The specific fact that would make me reverse a recommendation. Written in advance so I cannot quietly move the goalposts later."},
+{c:"Our shorthand",o:1,t:"Orphan row",d:"An instruction on the Schedule page telling us to spend money on a company that no longer has a budget. Seven were deleted on 10 September."},
+{c:"Our shorthand",o:1,t:"The 2x mandate",d:"The objective for this pillar: double the US portfolio between 2026 and 2030. It applies to this million only, not to net worth."},
+
+/* --- BUYING AND SELLING --- */
+{c:"Buying & selling",t:"Limit order",d:"An instruction to trade only at your price or better. A buy limit fills at or below it; a sell limit at or above it. It may never fill."},
+{c:"Buying & selling",t:"Market order",d:"Trade now at whatever the price is. Certain to fill, uncertain on price."},
+{c:"Buying & selling",t:"Day order",d:"The order expires at the end of that trading day if it has not filled."},
+{c:"Buying & selling",t:"Fill",d:"The order actually executing. 'Done' on the POEMS screen."},
+{c:"Buying & selling",t:"Commission",d:"POEMS charges a flat 8.56 per trade, plus a small regulatory fee of about 0.00278% on sells. On a 1,200 position that is 0.7% — which is why tiny positions are Tier A."},
+{c:"Buying & selling",t:"Settlement (T+2)",d:"Cash from a sale reaches the account two business days later. POEMS shows the balance BEFORE settlement, which is why cash often looks lower than you expect."},
+{c:"Buying & selling",t:"Cost basis",d:"What you actually paid for the shares you still hold, commission included. Profit is measured against this, not against the current price."},
+{c:"Buying & selling",t:"Average price",d:"Cost basis divided by shares held."},
+{c:"Buying & selling",t:"Unrealised P/L",d:"Profit on paper — the position is still open. It moves every day and is not yours until you sell."},
+{c:"Buying & selling",t:"Realised P/L",d:"Profit actually banked by selling. This is the number that can be taxed."},
+{c:"Buying & selling",t:"Partial sale",d:"Selling some shares and keeping the rest. The INTC trim sold 20 of 45 and left a 25-share back-up core."},
+{c:"Buying & selling",t:"Ticker",d:"The short code a company trades under — NVDA for Nvidia. Watch for collisions: SPCX belonged to an ETF until April 2026, then became SpaceX."},
+{c:"Buying & selling",t:"ADR",d:"American Depositary Receipt — a US-listed stand-in for a foreign share. TSM and SKHY are ADRs. One SKHY ADR equals one-TENTH of an SK hynix share."},
+{c:"Buying & selling",t:"ADR premium",d:"When the ADR costs more than the home-market share, adjusted for the ratio and exchange rate. SKHY traded at a 43% premium — 1.43 dollars for a dollar of the company."},
+
+/* --- READING A COMPANY --- */
+{c:"Reading a company",t:"Revenue",d:"Total sales before any costs. The top line."},
+{c:"Reading a company",t:"Revenue growth (YoY)",d:"Sales this period against the same period a year earlier. 'Year on year' avoids seasonal distortion — comparing December with December, not with November."},
+{c:"Reading a company",t:"TTM",d:"Trailing twelve months — the last four quarters added together, so the figure is always a full year and never seasonal."},
+{c:"Reading a company",t:"Gross margin",d:"What is left of each sales dollar after the direct cost of making the product. High gross margin means pricing power."},
+{c:"Reading a company",t:"Operating margin",d:"Profit from running the business, before interest and tax. The cleanest measure of whether the business itself works."},
+{c:"Reading a company",t:"Net margin",d:"Profit after everything. Can be distorted by one-off items — SK hynix reported net profit LARGER than revenue because of an unexplained 62 trillion won gain."},
+{c:"Reading a company",t:"EPS",d:"Earnings per share — profit divided by shares outstanding. Your slice of the profit."},
+{c:"Reading a company",t:"Operating cash flow",d:"Actual cash the business generated. Harder to dress up than profit."},
+{c:"Reading a company",t:"Capex",d:"Capital expenditure — cash spent on buildings and equipment. For AI companies this is the datacentre bill."},
+{c:"Reading a company",t:"Free cash flow (FCF)",d:"Operating cash flow minus capex — cash left over for the owners. Oracle's is NEGATIVE 5.4bn because it generates 23bn and spends 28bn."},
+{c:"Reading a company",t:"Stock-based compensation (SBC)",d:"Shares handed to staff instead of cash. It does not reduce reported cash flow, but it is a real cost to you: your slice gets smaller every year. Cloudflare's SBC exceeds its entire free cash flow."},
+{c:"Reading a company",t:"ARR",d:"Annual Recurring Revenue — subscription revenue running at an annual rate. Palo Alto's next-generation security ARR is 9.10bn."},
+{c:"Reading a company",t:"RPO",d:"Remaining Performance Obligations — signed contracts not yet delivered. The order book. Like a hospital signing you for three years of lunches: the whole contract is RPO, but revenue appears only as lunches are served. NOT cash and NOT guaranteed. Oracle's is 664bn."},
+{c:"Reading a company",t:"Backlog",d:"Everyday word for the same idea as RPO — work sold but not yet done."},
+{c:"Reading a company",t:"Guidance",d:"The company's own forecast for the coming quarter or year. Beating or missing guidance usually moves the price more than the actual result."},
+{c:"Reading a company",t:"Net dollar retention",d:"What last year's customers spend this year. Above 100% means existing customers are buying more. Cloudflare's is 120%."},
+
+/* --- VALUATION --- */
+{c:"Valuation",t:"Market capitalisation",d:"Share price times all shares — what the whole company costs at today's price."},
+{c:"Valuation",t:"P/E (trailing)",d:"Price divided by the last twelve months of earnings. Roughly, how many years of current profit you are paying for."},
+{c:"Valuation",t:"Forward P/E",d:"Price divided by NEXT year's expected earnings. The number we use most, because you buy the future, not the past. It is an estimate and estimates are often wrong."},
+{c:"Valuation",t:"Price/Sales (P/S)",d:"Price divided by revenue. Used when a company has no profit to divide by. SpaceX trades at 87 times sales."},
+{c:"Valuation",t:"EV/EBITDA",d:"Enterprise Value over earnings before interest, tax, depreciation and amortisation. Includes debt, so it compares companies with different borrowings more fairly."},
+{c:"Valuation",t:"PEG",d:"Forward P/E divided by the growth rate. Below 1 has traditionally been called cheap. A blunt tool, but a fast one."},
+{c:"Valuation",t:"Rule of 40",d:"Revenue growth plus profit margin. Above 40 means a company is balancing growth and profitability well. Micron scores 196; IREN scores MINUS 274."},
+{c:"Valuation",t:"Analyst price target",d:"Where analysts think the share will trade in twelve months. Useful as a sense of the crowd, not as a forecast. The range matters more than the average."},
+{c:"Valuation",t:"Peak-cycle earnings",d:"Profits at the top of a boom. A LOW P/E on peak earnings is a warning, not a bargain — the E is about to fall. This is the caution on Micron."},
+
+/* --- AI AND DATACENTRES --- */
+{c:"AI & datacentres",t:"Hyperscaler",d:"The giants who own the clouds and buy the chips: Microsoft, Google, Amazon, Meta, Oracle. You own all five."},
+{c:"AI & datacentres",t:"Neocloud",d:"A newer company renting out GPUs by the hour — CoreWeave, Nebius, IREN. Fast growing and, so far, all loss-making. We deliberately own none."},
+{c:"AI & datacentres",t:"OCI",d:"Oracle Cloud Infrastructure — Oracle's cloud business, competing with AWS and Azure. It grew 121% last quarter."},
+{c:"AI & datacentres",t:"GPU",d:"Graphics Processing Unit — the chip that does AI work. Nvidia's main product."},
+{c:"AI & datacentres",t:"Foundry",d:"A factory that manufactures chips designed by others. TSMC is the world's most important one."},
+{c:"AI & datacentres",t:"Semicap",d:"Semiconductor capital equipment — the machines that make chips. ASML, Applied Materials, Lam Research, KLA. You cannot make chips without them."},
+{c:"AI & datacentres",t:"EDA",d:"Electronic Design Automation — the software every chip is designed on. A duopoly: Synopsys and Cadence."},
+{c:"AI & datacentres",t:"DRAM",d:"The fast working memory in every computer. Micron and SK hynix are two of the three makers."},
+{c:"AI & datacentres",t:"NAND",d:"Flash storage memory — keeps data when the power is off."},
+{c:"AI & datacentres",t:"HBM",d:"High-Bandwidth Memory — stacked DRAM that feeds AI chips fast enough to keep them busy. The most profitable memory there is. SK hynix holds about 50% share, Micron about 18%."},
+{c:"AI & datacentres",t:"CXL",d:"Compute Express Link — a standard that lets many processors share one pool of memory instead of each having its own. Astera Labs and Marvell make the controllers."},
+{c:"AI & datacentres",t:"Optical interconnect",d:"Moving data between machines with light instead of electricity — faster and cooler over distance. Lumentum, Credo, Coherent, Fabrinet."},
+{c:"AI & datacentres",t:"AI factory",d:"Nvidia's marketing term for a datacentre built specifically to produce AI output. 'Turning energy into intelligence.'"},
+{c:"AI & datacentres",t:"Gigawatt (GW)",d:"A measure of electrical capacity, used as shorthand for datacentre size. One gigawatt is roughly a large nuclear reactor's output. Watch for 'up to' — it means planned, not built."},
+
+/* --- RISK --- */
+{c:"Risk words",t:"Cyclical",d:"A business whose profits swing with a boom-and-bust cycle rather than growing steadily. Memory is the classic example."},
+{c:"Risk words",t:"Dilution",d:"The company issuing new shares, making your existing slice smaller. Oracle sold 20 billion of stock in one quarter."},
+{c:"Risk words",t:"Customer concentration",d:"Too much revenue from one buyer. Reports suggest roughly half of Oracle's 664bn order book sits with a single customer."},
+{c:"Risk words",t:"Float",d:"The share of a company actually available to trade. SpaceX's float is 11% — a price set by an 11% float is a queue, not a price."},
+{c:"Risk words",t:"Lock-up",d:"The period after a flotation when insiders may not sell. When it expires, a flood of shares can arrive."},
+{c:"Risk words",t:"Investment grade",d:"A credit rating agencies consider safe. BBB- is the lowest rung — Oracle was cut to BBB- in July, one notch above junk."},
+{c:"Risk words",t:"Drawdown",d:"How far a price has fallen from its high. Silver is roughly 46% below its January peak."},
+{c:"Risk words",t:"Supply deficit",d:"The market using more of something than is produced that year. Silver has run a deficit for five years — and still fell 46%. A deficit alone does not set a price."},
+];
+
+var TM_CAT="All";
+function tmEsc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function tmHi(s,q){ if(!q) return tmEsc(s);
+  var i=s.toLowerCase().indexOf(q); if(i<0) return tmEsc(s);
+  return tmEsc(s.slice(0,i))+"<mark>"+tmEsc(s.slice(i,i+q.length))+"</mark>"+tmEsc(s.slice(i+q.length)); }
+function renderTerms(){
+  var cats=["All"]; GLOSSARY.forEach(function(g){ if(cats.indexOf(g.c)<0) cats.push(g.c); });
+  var cb=document.getElementById("tmcats");
+  if(cb && !cb.dataset.built){
+    cb.innerHTML=cats.map(function(c){ return '<button class="tm-cat'+(c===TM_CAT?" on":"")+'" data-c="'+tmEsc(c)+'">'+tmEsc(c)+'</button>'; }).join("");
+    cb.dataset.built="1";
+    cb.onclick=function(e){ var b=e.target.closest?e.target.closest("[data-c]"):null; if(!b) return;
+      TM_CAT=b.dataset.c;
+      cb.querySelectorAll(".tm-cat").forEach(function(x){ x.classList.toggle("on", x.dataset.c===TM_CAT); });
+      renderTerms(); };
+  }
+  var q=(document.getElementById("tmq")||{}).value||""; q=q.trim().toLowerCase();
+  var rows=GLOSSARY.filter(function(g){
+    if(TM_CAT!=="All" && g.c!==TM_CAT) return false;
+    if(!q) return true;
+    return (g.t+" "+g.d).toLowerCase().indexOf(q)>=0;
+  });
+  rows=rows.slice().sort(function(a,b){ return a.c===b.c ? a.t.localeCompare(b.t) : 0; });
+  var out="", last=null;
+  rows.forEach(function(g){
+    if(g.c!==last){ out+='<div class="tm-grp">'+tmEsc(g.c)+'</div>'; last=g.c; }
+    out+='<div class="tm-card"><div class="tm-t">'+tmHi(g.t,q)
+       +(g.o?'<span class="tm-ours">OURS</span>':'')+'</div>'
+       +'<div class="tm-d">'+tmHi(g.d,q)+'</div></div>';
+  });
+  document.getElementById("tmlist").innerHTML=out;
+  var none=document.getElementById("tmnone"); if(none) none.hidden = rows.length>0;
+}
+(function(){
+  var i=document.getElementById("tmq"); if(i) i.oninput=renderTerms;
+  var x=document.getElementById("tmx"); if(x) x.onclick=function(){ var e=document.getElementById("tmq"); if(e){e.value="";e.focus();} renderTerms(); };
+})();
+
 function showTab(p){ const b=document.querySelector('.tab[data-p="'+p+'"]'); if(b) b.click(); }
 document.querySelectorAll(".tab[data-p]").forEach(b=>b.onclick=()=>{
   document.querySelectorAll(".tab").forEach(x=>x.classList.remove("on"));
@@ -2245,6 +2415,7 @@ document.querySelectorAll(".tab[data-p]").forEach(b=>b.onclick=()=>{
   if(b.dataset.p==="schedule") renderSchedule();
   if(b.dataset.p==="selling") renderSelling();
   if(b.dataset.p==="tiers") renderTiers();
+  if(b.dataset.p==="terms") renderTerms();
   /* the wheel fits its own viewBox from getBBox(), which reports zeros while the
      tab is hidden — so redraw it the moment the tab actually becomes visible */
   if(b.dataset.p==="wheel"){ renderWheel(); renderGroupWheel(); renderBudgetWheel(); renderPlanReality(); }
