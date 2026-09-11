@@ -3,7 +3,100 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Sep 11, 2026 - ORACLE Q1 LINE BY LINE, AND THE THAI INFOGRAPHIC IS WRONG IN FOUR PLACES. Salee sent a Sankey '
+ASOF = ('Sep 11, 2026 - FIVE GRAPHICS CHECKED IN ONE SWEEP: THE GARTNER CHIP RANKING, THE ORACLE DECK, THE TSMC 1.4nm POST, '
+ 'THE iPHONE 18 PRICING, AND THE NVIDIA SUPPLY-CHAIN MAP. Salee sent five in a row. Four hold up; one is a '
+ 'local-government projection dressed as company guidance. || 1) THE GARTNER TOP-10 IS ACCURATE - AND THAT IS EXACTLY '
+ "WHY IT MISLEADS. All ten figures reproduce Gartner's 12 Jan 2026 preliminary CY2025 table to the decimal: NVIDIA "
+ '125,703m (+63.9%), Samsung 72,544m, SK hynix 60,640m (+37.2%), Intel 47,883m (MINUS 3.9%, the only decliner), Micron '
+ '41,487m (+50.2%), Qualcomm 37,046m, Broadcom 34,279m, AMD 32,484m, Apple 24,596m, MediaTek 18,472m. Total market '
+ '793.4bn, +21.0%. ⚠️ BUT IT RANKS CHIP VENDORS, NOT THE CHIP INDUSTRY. TSMC IS ABSENT - Gartner tracks foundries in a '
+ "separate report line - and TSMC's own CY2025 revenue of about US$120.8bn (NT$3,809.05bn of monthly filings) would "
+ 'place it SECOND, ahead of Samsung and pushing MediaTek out of the ten. Also absent: ASML (EUR32.7bn), Applied '
+ 'Materials (28.37bn), Lam (18.44bn), KLA (12.16bn), Synopsys (7.05bn), Cadence (5.30bn). Together that is 167,000 of '
+ 'budget in Group 2 plus 13,000 of SNPS in Group 1 - a fifth of the funded board - invisible on this chart. THE '
+ "LESSON: the chart measures one layer of the stack, and this board deliberately owns four. ⚠️ AND GARTNER'S NUMBERS "
+ "ARE NOT THE COMPANIES' NUMBERS: Broadcom's own FY2025 was 63,887m total / 36,858m semiconductor segment, not 34.3bn; "
+ "Intel's own total was 52.9bn, not 47.9bn; Qualcomm's own was 44.3bn total / 38,367m QCT, not 37bn; AMD's own was "
+ "34,639m, not 32.5bn. Gartner calendarises and re-scopes. Apple's 24.6bn is entirely modelled - Apple discloses NO "
+ 'semiconductor revenue line at all. NO ACTION. || 2) THE ORACLE 4-PANEL DECK IS MOSTLY RIGHT - AND ONE PANEL IS BADLY '
+ "WRONG. Verified against the 8-K Exhibit 99.1 filed 10 Sep: RPO 664bn - Oracle states only 'up 209 billion "
+ "year-over-year' and never a percentage, so the deck's +46% is a correct DERIVATION (209/455 = 45.93%), not an Oracle "
+ "quote. Capex 28,499m, operating cash flow 23,103m, free cash flow MINUS 5,396m are Oracle's own THREE-MONTH Q1 "
+ "figures, correctly labelled. 'AI cloud contracts >30bn' is CEO Clay Magouyrk verbatim: 'We closed more than 30 "
+ "billion dollars of additional AI contracts in Q1 without requiring additional capital from Oracle.' Q2 cloud growth "
+ "65-71% is CFO Hilary Maxson's USD guidance. The '>90bn' is FY27 REVENUE guidance ('at least 90 billion', +34%), not "
+ "an RPO figure. ⚠️ THE ERROR: the fourth panel prints 'RPO 664B +914%'. Actual year-over-year RPO growth is 46%. The "
+ "914% is roughly three years of cumulative growth from the 'over 65bn' of Nov 2023 - a three-year number pasted into "
+ "a one-year field. A reader would think the backlog multiplied tenfold this quarter. ⚠️ AND THE DECK'S OWN PRICE "
+ 'TARGET OF 130-150 SITS BELOW THE MARKET - it is attributable to no named analyst; the nearest real one is Stifel at '
+ "150, cut from 175. ⚠️ THE ATM IS NOT CAPACITY, IT IS DONE: Oracle's release states it 'successfully COMPLETED the "
+ "sale of 20 billion of common stock' under the at-the-market programme authorised 1 Feb 2026. The full 20bn is "
+ 'already sold - that is the 3.1% dilution. ⚠️ NEW: S&P CUT ORACLE TO BBB- ON 9 JULY 2026, the lowest investment-grade '
+ 'notch, modelling an FY27 free-operating-cash-flow deficit near MINUS 42bn and leverage in the mid-4x area. Fitch '
+ 'affirmed BBB stable on 2 Feb 2026. Total debt at 31 Aug 2026: 125.3bn (7,625m current + 117,712m non-current) '
+ "against 36,369m of cash. FY27 capex guidance is 90-95bn gross, 'not more than 70bn net cash capex' (Maxson). ORCL "
+ 'price corrected on the board from the stale 162.52 to the 11 Sep close of 151.16. STRATEGY UNCHANGED - the 4,686.38 '
+ 'still stands as one order - but the second of the three change-my-mind triggers has now HALF fired: one downgrade '
+ "has happened, and a SECOND below BBB- would end the position. || 3) ⚠️ THE TSMC '1.4nm PULLED INTO 2H 2027' POST IS "
+ 'NOT TSMC. It is the Central Taiwan Science Park Management Bureau and unnamed market sources, via UDN 10 Sep and '
+ "TechNews 11 Sep 2026. UDN's own verb is 可望 - 'hoped for' - not a commitment. TSMC'S OWN POSITION, stated at the "
+ 'North America Technology Symposium on 23 Apr 2025 and reaffirmed on the Q2 2026 call, IS A14 VOLUME PRODUCTION IN '
+ '2028. What IS supported is the April 2027 equipment move-in and trial run at the Central Taiwan Science Park cluster '
+ "(TSMC's Fab 25, Taichung). ⚠️ AND MOVE-IN IS NOT REVENUE: on N2, equipment went in April 2024, volume production "
+ 'started Q4 2025, and the first disclosed revenue was Q2 2026 at 3% of wafer revenue - TWENTY-SEVEN MONTHS from '
+ "move-in to a revenue line. An April 2027 move-in points at 2029 revenue, which is precisely TSMC's published 2028 "
+ 'production plan plus the usual ramp. ⚠️ THE ONE THING THAT MATTERS FOR THE ASML BUDGET: A14 DOES NOT NEED HIGH-NA '
+ "EUV. Kevin Zhang, TSMC, Amsterdam, 28 May 2025, verbatim: 'With A14, the enhancement I talked about earlier is very "
+ "substantial without using High-NA.' The 41,000 in ASML is a low-NA volume and service story, not a High-NA story. "
+ 'WHAT IS REAL AND GOOD: TSMC Q2 2026 revenue NT$1,270.38bn / US$40.20bn, gross margin 67.7%, node mix N2 3% / N3 30% '
+ '/ N5 33% / N7 11%, advanced 77%. August 2026 monthly revenue NT$514.806bn, PLUS 53.3% YEAR ON YEAR. Q3 guidance '
+ 'US$44.6-45.8bn, GM 65-67%. 2026 capex guidance RAISED from 52-56bn in January to 60-64bn in July, against 40.9bn '
+ 'actually spent in 2025. STRATEGY UNCHANGED on TSM, ASML, AMAT, LRCX, KLAC. || 4) THE iPHONE 18 PRICING GRAPHIC IS '
+ 'EXACT - ALL TWELVE TIERS. Checked against apple.com/th: 18 Pro 48,900 / 56,900 / 72,900 / 96,900 baht; 18 Pro Max '
+ '52,900 / 60,900 / 76,900 / 100,900; iPhone Duo 79,900 / 87,900 / 103,900 / 127,900. Dates right too - Pro pre-order '
+ "12 Sep, on sale 18 Sep; Duo pre-order 16 Oct, on sale 23 Oct. Thailand is in Apple's FIRST wave. 'iPhone Duo' is "
+ "Apple's own name, announced 9 Sep 2026, US$1,999 starting, A20 Pro chip, C2 modem, N1 wireless, 5.4-inch outer and "
+ '7.6-inch inner display. NOTE: there is no base iPhone 18 this cycle - only Pro, Pro Max and Duo; the base 18, 18e '
+ "and Air 2 are held to early 2027. The comparison graphic's rival is misnamed: there is no 'Xiaomi 8 fold', it is the "
+ "XIAOMI 18 FOLD, announced 7 Sep 2026, China-only, CNY10,999, and the ฿54,000 is a blogger's currency conversion, not "
+ 'a real Thai price. ⚠️ BUT THE FOLD IS NOT THE INVESTMENT CASE. Counterpoint (8 Sep 2026): UP TO 6 MILLION foldable '
+ 'iPhones in 2026; Ming-Chi Kuo says 7-8 million in H2. Against roughly 230 million iPhones a year that is about 3% of '
+ 'units. Foldables were 1.6% OF THE ENTIRE SMARTPHONE MARKET IN 2025. ⚠️ THE REAL AAPL STORY IS COST, NOT FOLDING: '
+ "Counterpoint (10 Jul 2026) estimates the iPhone 18 Pro Max's components cost nearly 300 dollars more on the 1TB "
+ 'model, driven by DRAM up 39-145 dollars and NAND up 13-51 dollars a unit. Apple guided September-quarter GROSS '
+ "MARGIN DOWN to 47-48% from 50.1%, and CFO Kevan Parekh cited 'significantly increased supply constraints'. THE "
+ 'MEMORY SUPER-CYCLE THAT IS MAKING MICRON RICH IS TAKING MONEY OUT OF APPLE. Q3 FY26 was strong - revenue 109.4bn '
+ '+16%, iPhone 54.25bn, EPS 2.02 +29% - and guidance is +9-11%. AAPL stays at 24,000, no increase: it is the most '
+ 'expensive thing in Group 8 at 35.2x forward and the fold changes about 3% of units. STRATEGY UNCHANGED. || 5) THE '
+ 'NVIDIA SUPPLY-CHAIN MAP IS A GOOD MAP OF A BOARD WE ALREADY OWN. Its six buckets - foundry and packaging, HBM and '
+ 'memory, server and rack, optical and networking, power and cooling, AI cloud buyers - line up against Groups 2, 3, '
+ '4, 6 and 0. Ten of its fourteen example companies are already on this board: TSM, INTC, MU, SKHY, APH, LITE, COHR, '
+ 'VRT, ETN, GEV, GOOGL, MSFT, AMZN. The four that are not - Dell, HPE, Supermicro, Nokia - are the box assemblers, and '
+ "they are excluded ON PURPOSE: Supermicro earns a 17.5% gross margin and Dell 20.9%, against Arista's 62.9%, Astera's "
+ "73.3% and Credo's 68.0%. Same demand, a third of the margin. ⚠️ THE SLIDE'S ONE BAD CALL IS INTEL as a foundry "
+ 'beneficiary - Intel is the ONLY company in the Gartner top ten whose 2025 semiconductor revenue FELL (minus 3.9%), '
+ 'and on this board it is a back-up with zero budget. NVIDIA Q2 FY27 (quarter ended 26 Jul, reported 26 Aug): revenue '
+ '96,221m PLUS 106%, Data Center 89.0bn +117%, gross margin 75.0%, GAAP EPS 2.46; Q3 guided to 108.0bn plus or minus '
+ '2% at a 74.0% margin. ⚠️ TWO BALANCE-SHEET ITEMS TO WATCH, NOT YET TO ACT ON: INVENTORY 31,575m AGAINST 21,403m AT '
+ 'YEAR-END, UP 47.5%, with raw materials nearly tripling from 3,807m to 11,341m; and RECEIVABLES 38,466m TO 63,059m, '
+ 'about 60 days of sales. Building parts and lending customers time is what a boom looks like from the inside - and '
+ "also what the top of one looks like. ⚠️ AND THE SQUEEZE IS MEMORY: CFO Colette Kress, verbatim, 'we are experiencing "
+ 'extreme pricing conditions in memory. The magnitude of the price increase has exceeded our prior expectations and '
+ "are headed even higher into next year.' China contributes NOTHING to the outlook - Oracle-style caution, stated "
+ "plainly. Kress's framing of the market - top-five hyperscaler capex 'nearly 800 billion in 2026 and 1.3 trillion in "
+ "2027', cloud backlog above 2 trillion - is EXECUTIVE COMMENTARY, not a filed number, and is recorded as such. NVDA "
+ 'price corrected to the 11 Sep close of 218.95. STRATEGY UNCHANGED across all six buckets. || ⚠️ THE ONE NUMBER FROM '
+ 'THIS SWEEP THAT CHANGES A CONVERSATION: MICRON NOW EARNS IN ONE QUARTER WHAT IT EARNED IN ALL OF 2025. Gartner puts '
+ "Micron's CALENDAR 2025 revenue at 41,487m. Micron's Q3 FY2026, the three months to 28 May 2026, was 41,456m - "
+ 'THIRTY-ONE MILLION DOLLARS APART, one quarter against one year, up 346% from 9,301m. SK hynix Q2 2026: revenue '
+ "KRW79.32tn against KRW22.23tn, plus 257%, at a 76% OPERATING MARGIN. Samsung's DS division: KRW127.5tn revenue, "
+ "KRW89.2tn operating profit. SK hynix's DRAM marketing head told the Financial Times on 29 Oct 2025 that 'our DRAM, "
+ "NAND, as well as HBM capacity for next year has been sold out'. ⚠️ AND THIS CUTS BOTH WAYS. MU trades at 7.15x "
+ 'forward earnings, the cheapest multiple on this board - but memory stocks ALWAYS look cheapest at the top of the '
+ 'cycle, because the E in the P/E is a peak number. The 51,000 MU budget is NOT increased on this news. The first '
+ 'tranche before the 30 September print stands at 9,000-10,000, no more - buying a third of the budget into a 346% '
+ 'quarter is prudence, not timidity. SKHY stays a zero-budget back-up until the 10 December review. || PREVIOUS ENTRY: '
+ 'Sep 11, 2026 - ORACLE Q1 LINE BY LINE, AND THE THAI INFOGRAPHIC IS WRONG IN FOUR PLACES. Salee sent a Sankey '
  'breakdown of the quarter and asked whether strategy changes. The totals on it are right; the revenue boxes are not. '
  "|| THE ACTUAL FOUR REVENUE CAPTIONS - Oracle has only four, and the old 'cloud services and license support' "
  'structure is gone: CLOUD 11,607m (60% of revenue, +62%); SOFTWARE 5,550m (29%, MINUS 3%); HARDWARE 774m (4%, +15%); '
@@ -1177,7 +1270,7 @@ STOCKS = [{'an': 83,
   'epsG': 125.4,
   'ex': 'NASDAQ',
   'fcfB': 127.01,
-  'fpe': 19.8,
+  'fpe': 19.21,
   'fvAvg': 319.48,
   'fvMax': 500,
   'fvMin': 218,
@@ -1186,14 +1279,14 @@ STOCKS = [{'an': 83,
   'hi52': 236.54,
   'jan2': 189.6,
   'lo52': 164.07,
-  'mcapB': 5464.7437,
+  'mcapB': 5300.6053,
   'name': 'NVIDIA',
-  'pe': 27.51,
-  'peg': 0.43,
+  'pe': 26.68,
+  'peg': 0.42,
   'pm': 63.66,
-  'price': 225.73,
-  'ps': 17.38,
-  'pxd': '2026-09-08',
+  'price': 218.95,
+  'ps': 16.86,
+  'pxd': '2026-09-11',
   'r40': 125.3,
   'revB': 302.98,
   'revG': 83.4,
@@ -2732,7 +2825,7 @@ STOCKS = [{'an': 83,
   'epsG': 47.7,
   'ex': 'NYSE',
   'fcfB': -28.72,
-  'fpe': 17.85,
+  'fpe': 16.6,
   'fvAvg': 251.85,
   'fvMax': 400,
   'fvMin': 155,
@@ -2741,14 +2834,14 @@ STOCKS = [{'an': 83,
   'hi52': 345.72,
   'jan2': 193.84,
   'lo52': 114.5,
-  'mcapB': 468.1399,
+  'mcapB': 435.4173,
   'name': 'Oracle',
-  'pe': 23.97,
-  'peg': 0.61,
+  'pe': 22.29,
+  'peg': 0.57,
   'pm': 26.36,
-  'price': 162.52,
-  'ps': 6.14,
-  'pxd': '2026-09-08',
+  'price': 151.16,
+  'ps': 5.71,
+  'pxd': '2026-09-11',
   'r40': -18.4,
   'revB': 71.78,
   'revG': 21.6,
@@ -5046,7 +5139,7 @@ M3 = {'GOOGL': {'pfcf': 72.54, 'ev': 21.6, 'de': 0.18},
  'META': {'pfcf': 39.9, 'ev': 14.85, 'de': 0.43},
  'AAPL': {'pfcf': 35.15, 'ev': 28.23, 'de': 0.78},
  'ORCL': {'pfcf': None, 'ev': 16.35, 'de': 2.32},
- 'NVDA': {'pfcf': 39.96, 'ev': 24.93, 'de': 0.15},
+ 'NVDA': {'pfcf': 38.76, 'ev': 24.93, 'de': 0.15},
  'TSM': {'pfcf': 54.38, 'ev': 18.5, 'de': 0.15},
  'AVGO': {'pfcf': 44.59, 'ev': 34.3, 'de': 0.6},
  'AMD': {'pfcf': 94.5, 'ev': 120.07, 'de': 0.05},
