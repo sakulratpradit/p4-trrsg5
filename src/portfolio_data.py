@@ -3,9 +3,44 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ("Sep 11, 2026 - ORACLE'S TRAILING NUMBERS REBUILT, AND CAPEX NOW EXCEEDS REVENUE. The scheduled earnings job swept "
- 'the Wed Sep 10 US session and rolled Q1 FY2027 into every trailing figure for ORCL. It could not push either - the '
- 'same gateway block - so its edits are folded in here so the local board stays one consistent state. || ⚠️ THE '
+ASOF = ('Sep 11, 2026 - ORACLE Q1 LINE BY LINE, AND THE THAI INFOGRAPHIC IS WRONG IN FOUR PLACES. Salee sent a Sankey '
+ 'breakdown of the quarter and asked whether strategy changes. The totals on it are right; the revenue boxes are not. '
+ "|| THE ACTUAL FOUR REVENUE CAPTIONS - Oracle has only four, and the old 'cloud services and license support' "
+ 'structure is gone: CLOUD 11,607m (60% of revenue, +62%); SOFTWARE 5,550m (29%, MINUS 3%); HARDWARE 774m (4%, +15%); '
+ 'SERVICES 1,414m (7%, +5%). They sum to 19,345m exactly. Two of them have sub-lines that are SUBSETS, not peers: '
+ 'inside Cloud sit Cloud Infrastructure 7,388m (+121%) and Cloud Applications 4,219m (+10%), which add to 11,607m; '
+ 'inside Software sit Software Support 4,895m (-1%) and Software License 655m (-15%), which add to 5,550m. || ⚠️ WHERE '
+ 'THE SLIDE GOES WRONG. (1) Its five boxes sum to 22,790m against a real 19,345m - overstated by 3,445m. That '
+ 'reconciles exactly: Cloud Applications 4,219m is counted twice because it is a CHILD of the Cloud box, and real '
+ "Hardware of 774m is missing altogether. 4,219 minus 774 equals 3,445. (2) Its 'Hardware 1.4bn, +5%' IS THE SERVICES "
+ "LINE. Real hardware is 774m growing 15%. (3) Its 'Software 4.9bn, 3% share, +1%' is Software SUPPORT, which is 25% "
+ "of revenue and is FALLING 1%, not rising - the sign was dropped and the '3%' is the total Software DECLINE of minus "
+ "3% misread as a share. (4) Its 'Cloud, 62% share' copies the growth rate into the share field; the share is 60%. "
+ 'Total operating expenses are printed by Oracle at 65% of revenue, not 66%. || ⚠️ AND IT OMITS THE ONE NUMBER THAT '
+ 'MATTERS: CLOUD INFRASTRUCTURE UP 121%. A reader of that graphic learns cloud grew 62% and would never discover that '
+ 'the AI half more than doubled while the SaaS half grew 10%. || ⚠️ A STRUCTURAL IMPOSSIBILITY WORTH KNOWING: the '
+ 'slide shows BOTH a 11.6bn gross profit AND 12.6bn of total operating expenses against 19.3bn of revenue - that would '
+ 'be a 1.0bn operating LOSS. Oracle publishes NO gross profit line at all. Its statement runs revenues straight to '
+ "operating expenses, and that 12,617m of 'total operating expenses' ALREADY CONTAINS the cost of delivery (Cloud and "
+ 'software 6,400m, Hardware 281m, Services 1,052m = 7,733m). Revenue 19,345 less opex 12,617 equals operating income '
+ '6,728. There is no gross-profit step in between. The graphic has stacked two incompatible layouts. || WHAT THE SLIDE '
+ 'GETS RIGHT: total revenue 19.3bn +30%; operating profit 6,728m at a 35% margin, up 6 points; net income 4,760m at '
+ '25%, up 5 points; R&D 2,401m; sales and marketing 1,811m; general and administrative 376m; amortisation 202m; tax '
+ '847m. || ⚠️ THREE NEW CLAIMS AHEAD OF THE COMMON SHAREHOLDER, none of them on the graphic. INTEREST EXPENSE 1,428m, '
+ 'UP 55% from 923m - about 5.7bn a year and climbing as the bond pile grows. DILUTED SHARES 2,909m to 3,000m, PLUS '
+ '3.1% IN ONE YEAR - the at-the-market equity programme. And a NEW PREFERRED STOCK DIVIDEND of 81m in the quarter, '
+ 'roughly 324m a year, which is why net income AVAILABLE TO COMMON is 4,679m rather than 4,760m. Profit is growing '
+ 'fast, but the queue in front of Salee is getting longer. || ⚠️ AND THE OTHER HALF OF ORACLE IS SHRINKING. Software '
+ 'is 29% of revenue and FALLING 3%, with licence sales down 15%. This is two companies in one: a cloud business '
+ 'compounding at 62% and a legacy software business in slow decline. The cloud has to keep winning just to carry the '
+ 'other end. || STRATEGY: UNCHANGED. The 4,686.38 room released on 10 Sep still stands as ONE order. Operating '
+ 'leverage is real - total operating expenses fell from 71% of revenue to 65% - and the forward multiple is now 17.85, '
+ 'cheaper than the 20.05 quoted when the room was released. The position at stake is 0.47% of the book. ⚠️ WHAT WOULD '
+ 'CHANGE IT, now sharpened by this quarter: free cash flow worse than -8bn in Q2 with no rise in customer prepayments; '
+ 'a second downgrade below BBB-; or dilution continuing above 3% a year while Software keeps shrinking. || PREVIOUS '
+ "ENTRY: Sep 11, 2026 - ORACLE'S TRAILING NUMBERS REBUILT, AND CAPEX NOW EXCEEDS REVENUE. The scheduled earnings job "
+ 'swept the Wed Sep 10 US session and rolled Q1 FY2027 into every trailing figure for ORCL. It could not push either - '
+ 'the same gateway block - so its edits are folded in here so the local board stays one consistent state. || ⚠️ THE '
  'FINDING: TTM CAPITAL SPENDING IS NOW 75.66bn AGAINST TTM REVENUE OF 71.78bn. Oracle is spending more on buildings '
  'and machines than it collects in sales - the most extreme capex-to-revenue ratio anywhere on this board. TTM free '
  "cash flow deepens from -23.69bn to -28.72bn. Both reconcile to the decimal against Oracle's own release: -23.69 less "
