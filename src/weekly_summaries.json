@@ -1125,6 +1125,23 @@
     }
    ],
    "week": "2026-08-03"
+  },
+  {
+   "points": [
+    {
+     "s": "+",
+     "text": "Q2 2026 revenue 7,504m against 6,101m, +23%. Signed 920 MW of NEW long-term nuclear power purchase agreements with investment-grade customers on 15-to-20-year terms - but note they BEGIN 2029-2032, so there is no near-term earnings kick from them. Plus a 176 MW agreement with Walmart enabling a 30 MW expansion at Dresden, Illinois."
+    },
+    {
+     "s": "+",
+     "text": "Full-year adjusted operating EPS guidance RAISED to 11.50-12.50."
+    },
+    {
+     "s": "0",
+     "text": "Price updated to the 11 Sep close of 284.75, down 4.8% over three sessions. The 17,000 budget is unchanged. ⚠️ Data caution: stockanalysis.com's history table and overview page disagree on this same close by 1.9% (284.75 against 290.10)."
+    }
+   ],
+   "week": "2026-09-07"
   }
  ],
  "CGNX": [
@@ -1689,7 +1706,11 @@
    "points": [
     {
      "s": "+",
-     "text": "Q2 2026 revenue 8,531m, +21%. Named in the power and cooling bucket, already funded at 11,000."
+     "text": "Q2 2026 revenue 8,531m, +21% total and +14% organic, segment margin 23.1%, with data centres named a key growth driver."
+    },
+    {
+     "s": "0",
+     "text": "The only name in Group 6 that ROSE over the 8-11 Sep window, up 0.8% while VRT fell 11.6%. Price updated to the 11 Sep close of 425.37. The 11,000 budget is unchanged."
     }
    ],
    "week": "2026-09-07"
@@ -1897,7 +1918,15 @@
    "points": [
     {
      "s": "+",
-     "text": "Q2 2026 revenue 11,104m, +22% reported and +12% organic, with 2026 guidance raised. Named in the power and cooling bucket, already funded at 13,000."
+     "text": "Q2 2026 revenue 11.1bn +22% reported and +12% organic, with ORDERS UP 88% to 24.2bn. Company's own words: 'Data center orders reaching over 5 billion dollars year-to-date, more than double our 2025 total.'"
+    },
+    {
+     "s": "0",
+     "text": "Gas-turbine backlog reported at 116 GW, though GE Vernova executives say turbines are 'not gating' datacentre build-outs. For scale: Siemens Energy's backlog is 69 GW with lead times 'three years or more'."
+    },
+    {
+     "s": "0",
+     "text": "Price updated to the 11 Sep close of 957.27. ⚠️ Forward multiple disagreement worth resolving: the board carries 53.97, stockanalysis.com shows 45.50. On either figure it is the most expensive name in Group 6. The 13,000 budget is unchanged."
     }
    ],
    "week": "2026-09-07"
@@ -3092,6 +3121,35 @@
     }
    ],
    "week": "2026-08-31"
+  },
+  {
+   "points": [
+    {
+     "s": "!",
+     "text": "The viral '12 GW to 38 GW by 2032' post is NOT Microsoft. Every one of those four numbers comes from a single Bloomberg article of 10 Sep 2026 citing unnamed sources; Reuters re-wired it and noted Microsoft declined to comment. Microsoft has never published an absolute capacity figure in gigawatts anywhere."
+    },
+    {
+     "s": "0",
+     "text": "What Microsoft itself says is relative. Satya Nadella, 29 Jul 2026: 'We added another gigawatt of capacity this quarter and remain on track to roughly double our overall capacity in just two years.' A doubling from an undisclosed base over two years - not a 38 GW target for 2032."
+    },
+    {
+     "s": "!",
+     "text": "'Turning down deals' is not a Microsoft quote. The nearest real ones are CFO Amy Hood - 'we have been short in Azure' (Oct 2025) and 'Customer demand continues to exceed available capacity' (Jul 2026). The sentence the post echoes belongs to ALPHABET: Sundar Pichai, 29 Apr 2026, 'we are compute constrained in the near-term... our cloud revenue would have been higher if we were able to meet that demand.'"
+    },
+    {
+     "s": "+",
+     "text": "FY26 Q4 to 30 Jun 2026: revenue 90.0bn +18%, Microsoft Cloud 59.3bn +27%, AZURE +43%, operating margin 45.1%, GAAP EPS 4.81 +32%."
+    },
+    {
+     "s": "0",
+     "text": "Capex 35.802bn in the quarter, 115.9bn for the fiscal year (+~80%). Calendar-2026 guidance about 175bn, cut from about 190bn ONLY by an accounting change extending datacentre useful life from 15 to 25 years - Hood: 'Outside of this useful life impact, our calendar year 2026 CapEx investment expectations remain unchanged.' Read that as a bookkeeping change, not a spending cut."
+    },
+    {
+     "s": "0",
+     "text": "Price updated to the 11 Sep close of 495.59. The 58,000 budget is unchanged."
+    }
+   ],
+   "week": "2026-09-07"
   }
  ],
  "MTSI": [
@@ -4958,8 +5016,28 @@
   {
    "points": [
     {
-     "s": "+",
-     "text": "Q2 2026 revenue 3,274.3m, +24%, with full-year 2026 guidance raised across all key metrics. Named in the power and cooling bucket, already funded at 21,000."
+     "s": "!",
+     "text": "VERTIV FELL 11.6% IN THREE SESSIONS AND IT IS COMPANY-SPECIFIC. Dated closes: 8 Sep 290.83, 9 Sep 262.89 (minus 9.61% in one day), 10 Sep 248.13, 11 Sep 257.06. Over the same window CEG fell 4.8%, VST 2.2%, GEV 1.4%, NVDA 3.3%, while ETN rose 0.8% and MSFT rose 0.3%. Two to eight times any peer - not a sector selloff."
+    },
+    {
+     "s": "!",
+     "text": "Best-available sourced cause (a secondary aggregator, not Reuters and not Vertiv - treat as indicative): on 2 Sep 2026 Vertiv agreed to buy UtilityInnovation Group for 1.45bn cash plus up to 1.15bn of earnout, about 2.6bn all-in at roughly 13x expected 2027 EBITDA. Alongside it, a director's pre-arranged 10b5-1 sale of 15,287 shares on 1 Sep and a Zacks downgrade to Hold on 2 Sep."
+    },
+    {
+     "s": "0",
+     "text": "Nothing in Vertiv's own numbers explains the fall. Q2 2026 revenue 3,274.3m +24% (18% organic), and full-year 2026 guidance was RAISED in July to 13.8-14.2bn of sales, 30-32% organic growth, 23.3-24.3% adjusted operating margin and 6.65-6.75 adjusted EPS. It has not been touched since. The market is repricing the DEAL, not the business."
+    },
+    {
+     "s": "!",
+     "text": "DECISION: the 21,000 budget is unchanged and NOT A BAHT is added on the dip. A 40x-forward company paying 13x for 2027 earnings that do not exist yet, with an earnout - and an earnout is what you agree to when buyer and seller disagree about the future. Buying a fall I cannot yet explain is catching a knife, not value investing."
+    },
+    {
+     "s": "0",
+     "text": "For the 10 Dec review: what does UtilityInnovation Group actually do, what will the earnout cost, and has Vertiv's own guidance survived one full quarter of owning it. Neither a book-to-bill ratio nor a backlog dollar figure is disclosed by Vertiv - worth asking for."
+    },
+    {
+     "s": "0",
+     "text": "Price updated to the 11 Sep close of 257.06."
     }
    ],
    "week": "2026-09-07"
@@ -4991,6 +5069,27 @@
     }
    ],
    "week": "2026-08-03"
+  },
+  {
+   "points": [
+    {
+     "s": "+",
+     "text": "Q2 2026 revenue 4,017m, MINUS 5.5% - but revenue is the wrong line for a power generator: adjusted EBITDA rose 30.8% to 1,767m. Full-year guidance REAFFIRMED at 6.8-7.6bn adjusted EBITDA."
+    },
+    {
+     "s": "+",
+     "text": "On 9 Jan 2026 Vistra signed META for 2,609 MW across three PJM nuclear plants - Perry and Davis-Besse in Ohio and Beaver Valley in Pennsylvania - on a TWENTY-YEAR term, 2,176 MW from existing generation plus 433 MW from uprates, with Meta's purchases beginning late 2026 and full capacity by 2034."
+    },
+    {
+     "s": "+",
+     "text": "Also formed Helix Digital Infrastructure with NVIDIA, KKR and the Kuwait Investment Authority, committing up to 1.0bn and positioned as Helix's preferred power provider."
+    },
+    {
+     "s": "0",
+     "text": "Price updated to the 11 Sep close of 148.38. The 15,000 budget is unchanged."
+    }
+   ],
+   "week": "2026-09-07"
   }
  ],
  "WDAY": [

@@ -3,8 +3,79 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Sep 11, 2026 - FIVE GRAPHICS CHECKED IN ONE SWEEP: THE GARTNER CHIP RANKING, THE ORACLE DECK, THE TSMC 1.4nm POST, '
- 'THE iPHONE 18 PRICING, AND THE NVIDIA SUPPLY-CHAIN MAP. Salee sent five in a row. Four hold up; one is a '
+ASOF = ("Sep 11, 2026 - THE MICROSOFT '38 GIGAWATT' POST IS BLOOMBERG, NOT MICROSOFT - AND WHILE CHECKING IT I FOUND THAT "
+ 'VERTIV HAS FALLEN 11.6% IN THREE SESSIONS. Salee asked whether the power and energy names need changing. The answer '
+ 'on budgets is no. The answer on what we KNOW is a great deal. || ⚠️ PROVENANCE FIRST. The 12 GW to 38 GW figures, '
+ 'the 2 GW to 13 GW of AI-specific capacity, and the 2032 date all come from ONE Bloomberg article of 10 Sep 2026 '
+ "citing UNNAMED 'people familiar with the matter'. Reuters re-wired it the same day and noted that Microsoft declined "
+ 'to comment. MICROSOFT HAS NEVER PUBLISHED ANY OF THOSE FOUR NUMBERS - not in a filing, not on a call, not on its '
+ "blog. What Microsoft itself says is RELATIVE, not absolute: Satya Nadella, 29 Jul 2026, verbatim, 'We added another "
+ "gigawatt of capacity this quarter and remain on track to roughly double our overall capacity in just two years' - a "
+ "doubling from an UNDISCLOSED base over TWO years, not a 38 GW target for 2032. ⚠️ AND 'TURNING DOWN DEALS' IS NOT A "
+ 'MICROSOFT QUOTE AT ALL. No Microsoft executive has said it. The nearest real statements are CFO Amy Hood, Oct 2025, '
+ "'we have been short in Azure', and 29 Jul 2026, 'Customer demand continues to exceed available capacity'. ⚠️ THE "
+ 'SENTENCE THE POST IS PROBABLY ECHOING BELONGS TO A DIFFERENT COMPANY: Sundar Pichai of ALPHABET, 29 Apr 2026, '
+ "'Obviously, we are compute constrained in the near-term... our cloud revenue would have been higher if we were able "
+ "to meet that demand.' || WHAT MICROSOFT DID DISCLOSE, FY26 Q4 to 30 Jun 2026: revenue 90.0bn +18%; Microsoft Cloud "
+ '59.3bn +27%; AZURE +43%; operating margin 45.1%; GAAP EPS 4.81 +32%. Capex 35.802bn in the quarter and 115.9bn for '
+ 'the fiscal year, up about 80%. Amy Hood guided calendar-2026 capex to about 175bn - reduced from about 190bn ONLY by '
+ "an accounting change extending datacentre useful life from 15 to 25 years; her words, 'Outside of this useful life "
+ "impact, our calendar year 2026 CapEx investment expectations remain unchanged.' Q1 FY27 capex 'over 50 billion'. || "
+ '⚠️ NOW THE SCALE, BECAUSE THIS IS THE PART THAT MATTERS AND THE POST DOES NOT GIVE IT. Total US generating capacity '
+ 'is 1,281 GW (EIA, end-2025). The US added 53 GW of NEW capacity in the whole of 2025. So 26 GW from ONE COMPANY over '
+ 'six years is about 2% of everything America has, or half a normal year of national build-out - by Microsoft alone. '
+ 'Data centres were 176 TWh, 4.4% of US electricity, in 2023; Lawrence Berkeley National Laboratory forecasts 325-580 '
+ "TWh, 6.7% to 12.0%, by 2028. NERC's January 2026 assessment lifts the ten-year summer peak forecast by 224 GW "
+ "(+24%), SIXTY-NINE PERCENT HIGHER than its own 2024 forecast; John Moura of NERC: 'The system is changing faster "
+ "than the infrastructure needed to support it.' ⚠️ THAT FORECAST IS DISPUTED - Grid Strategies, March 2026, calls "
+ 'NERC too pessimistic and alleges double-counting of datacentre load. Both views recorded; neither is treated as '
+ "settled. || ⚠️ THE BOTTLENECK IS NOT CHIPS, AND NADELLA SAID SO HIMSELF: 'It's not a supply issue of chips. It's the "
+ "fact that I don't have warm shells to plug into.' The physical queue proves it - 1,312 GW of generation plus 749 GW "
+ 'of storage sitting in US interconnection queues, with a MEDIAN OF MORE THAN FIVE YEARS from request to commercial '
+ "operation for projects built in 2025 (LBNL, May 2026). Siemens Energy's gas-turbine backlog is 69 GW with lead times "
+ "'three years or more'; GE Vernova's is reported at 116 GW. THIS IS THE WHOLE CASE FOR GROUP 6 AND IT IS UNCHANGED "
+ 'AND STRENGTHENED. || WHAT OUR FIVE POWER NAMES ACTUALLY REPORTED. CEG: Q2 2026 revenue 7,504m, +23%; signed 920 MW '
+ 'of NEW 15-to-20-year nuclear power purchase agreements with investment-grade customers beginning 2029-2032, plus 176 '
+ 'MW with Walmart; FULL-YEAR GUIDANCE RAISED to 11.50-12.50 adjusted EPS. VST: Q2 revenue 4,017m, MINUS 5.5%, but '
+ 'adjusted EBITDA PLUS 30.8% to 1,767m - the revenue line is not the story for a generator; formed Helix Digital '
+ 'Infrastructure with NVIDIA, KKR and the Kuwait Investment Authority, committing up to 1.0bn as preferred power '
+ 'provider; and on 9 Jan 2026 signed META for 2,609 MW across three PJM nuclear plants for TWENTY YEARS; guidance '
+ "REAFFIRMED at 6.8-7.6bn. GEV: Q2 revenue 11.1bn +22%, ORDERS PLUS 88% to 24.2bn, with 'data center orders reaching "
+ "over 5 billion dollars year-to-date, more than double our 2025 total'. ETN: Q2 revenue 8,531m +21%, segment margin "
+ '23.1%. VRT: Q2 revenue 3,274.3m +24%, full-year guidance RAISED to 13.8-14.2bn with organic growth 30-32% and '
+ 'adjusted EPS 6.65-6.75. || ⚠️⚠️ THE FINDING OF THIS CHECK, WHICH SALEE HAS NOT SEEN: VERTIV FELL 11.6% IN THREE '
+ 'SESSIONS AND IT IS COMPANY-SPECIFIC. Dated closes: 8 Sep 290.83, 9 Sep 262.89 (MINUS 9.61% IN ONE DAY), 10 Sep '
+ '248.13 (minus 5.61%), 11 Sep 257.06. Over the same three sessions CEG fell 4.8%, VST 2.2%, GEV 1.4%, NVDA 3.3%, '
+ "while ETN ROSE 0.8% and MSFT rose 0.3%. VRT's fall is two to eight times any peer - this is NOT a sector selloff. "
+ 'BEST-AVAILABLE SOURCED CAUSE (a secondary aggregator, not Reuters and not Vertiv, so treat as indicative): on 2 SEP '
+ '2026 VERTIV AGREED TO BUY UTILITYINNOVATION GROUP FOR 1.45bn CASH PLUS UP TO 1.15bn OF EARNOUT - 2.6bn all-in at '
+ "about 13x expected 2027 EBITDA - confirmed by Vertiv's own release; alongside a director's pre-arranged 10b5-1 sale "
+ "of 15,287 shares on 1 Sep and a Zacks downgrade to Hold on 2 Sep. ⚠️ NOTHING IN VERTIV'S OWN OPERATING NUMBERS "
+ 'EXPLAINS IT - guidance was RAISED in July and has not been touched since. The market is repricing the DEAL, not the '
+ 'business: a 40x-forward company paying 13x for 2027 earnings that do not exist yet, with an earnout - and an earnout '
+ 'is what you agree to when buyer and seller disagree about the future. || DECISION ON VRT: THE 21,000 BUDGET IS '
+ "UNCHANGED AND NOT A BAHT IS ADDED ON THE DIP. I do not yet know UtilityInnovation Group's business well enough to "
+ 'underwrite a 2.6bn purchase, and buying a fall I cannot explain is not value investing, it is catching a knife. A 10 '
+ "DECEMBER REVIEW ROW IS WARRANTED: what does UIG actually do, what did the earnout cost, and has Vertiv's own "
+ 'guidance survived one full quarter of owning it. || ⚠️ AND THE BEAR CASE ON POWER IS POLITICAL, NOT TECHNICAL. New '
+ "York's legislature passed a ONE-YEAR DATACENTRE SITING MORATORIUM on 4 Jun 2026; Maine's governor vetoed a similar "
+ "bill on 24 Apr; Lysander and Perth, New York, enacted local moratoria in May and June. PJM's OWN market monitor "
+ 'names data centres a primary reason for 23 BILLION DOLLARS OF CUSTOMER PRICE INCREASES across fourteen states '
+ "through 2028, and a PJM watchdog called it a 'massive wealth transfer' to technology companies. Kimmeridge, via "
+ 'Bloomberg on 26 Aug 2026, says up to HALF of planned US datacentres may face delays - though SemiAnalysis publicly '
+ "disputes that framing. THE RISK TO THIS GROUP IS NOT THAT DEMAND FAILS. IT IS THAT VOTERS' ELECTRICITY BILLS RISE "
+ 'AND LEGISLATURES ACT. That risk is in no earnings model on this board. || STRATEGY: UNCHANGED. Group 6 stays at '
+ '77,000 - VRT 21,000, CEG 17,000, VST 15,000, GEV 13,000, ETN 11,000. ⚠️ WHAT WOULD CHANGE IT: three or more US '
+ 'states passing datacentre moratoria or special tariffs; PJM or ERCOT capacity prices falling for two consecutive '
+ 'auctions; or a named hyperscaler cancelling a SIGNED, BINDING power agreement (the 2025 Microsoft cancellations were '
+ 'non-binding letters of intent and pacing, which is not the same thing). || PRICES: VRT, CEG, VST, GEV, ETN and MSFT '
+ 'updated to 11 Sep dated closes with mcap and multiples scaled; NVDA left at 218.95. ⚠️ TWO DATA CAUTIONS RECORDED: '
+ "stockanalysis.com's history table and its overview page disagree on the same 11 Sep closes by up to 1.9% (CEG 284.75 "
+ "against 290.10), and the board's forward multiples disagree with that vendor's on every name in this group - GEV "
+ '53.97 against 45.50, VRT 40.2 against 32.72, MSFT 22.09 against 24.93. The other 86 tickers are STILL the 8 Sep '
+ 'close; the scheduled price job remains stalled and is now the oldest open item on this board. || PREVIOUS ENTRY: Sep '
+ '11, 2026 - FIVE GRAPHICS CHECKED IN ONE SWEEP: THE GARTNER CHIP RANKING, THE ORACLE DECK, THE TSMC 1.4nm POST, THE '
+ 'iPHONE 18 PRICING, AND THE NVIDIA SUPPLY-CHAIN MAP. Salee sent five in a row. Four hold up; one is a '
  'local-government projection dressed as company guidance. || 1) THE GARTNER TOP-10 IS ACCURATE - AND THAT IS EXACTLY '
  "WHY IT MISLEADS. All ten figures reproduce Gartner's 12 Jan 2026 preliminary CY2025 table to the decimal: NVIDIA "
  '125,703m (+63.9%), Samsung 72,544m, SK hynix 60,640m (+37.2%), Intel 47,883m (MINUS 3.9%, the only decliner), Micron '
@@ -1177,7 +1248,7 @@ STOCKS = [{'an': 83,
   'epsG': 23.0,
   'ex': 'NASDAQ',
   'fcfB': 71.61,
-  'fpe': 22.09,
+  'fpe': 22.16,
   'fvAvg': 549.08,
   'fvMax': 680,
   'fvMin': 400,
@@ -1186,14 +1257,14 @@ STOCKS = [{'an': 83,
   'hi52': 555.45,
   'jan2': 482.24,
   'lo52': 349.2,
-  'mcapB': 3679.3476,
+  'mcapB': 3691.5637,
   'name': 'Microsoft',
-  'pe': 22.7,
+  'pe': 22.78,
   'peg': 1.16,
   'pm': 40.3,
-  'price': 493.95,
-  'ps': 9.15,
-  'pxd': '2026-09-08',
+  'price': 495.59,
+  'ps': 9.18,
+  'pxd': '2026-09-11',
   'r40': 39.6,
   'revB': 331.84,
   'revG': 18.0,
@@ -3322,7 +3393,7 @@ STOCKS = [{'an': 83,
   'epsG': 393.5,
   'ex': 'NYSE',
   'fcfB': 7.53,
-  'fpe': 53.97,
+  'fpe': 53.19,
   'fvAvg': 1221.48,
   'fvMax': 1424,
   'fvMin': 836,
@@ -3331,14 +3402,14 @@ STOCKS = [{'an': 83,
   'hi52': 1195.94,
   'jan2': 661.19,
   'lo52': 530.16,
-  'mcapB': 258.6885,
+  'mcapB': 254.9492,
   'name': 'GE Vernova',
-  'pe': 29.15,
-  'peg': 1.81,
+  'pe': 28.73,
+  'peg': 1.78,
   'pm': 23.81,
-  'price': 971.31,
-  'ps': 6.8,
-  'pxd': '2026-09-08',
+  'price': 957.27,
+  'ps': 6.7,
+  'pxd': '2026-09-11',
   'r40': 29.4,
   'revB': 39.38,
   'revG': 10.3,
@@ -3353,7 +3424,7 @@ STOCKS = [{'an': 83,
   'epsG': -1.21,
   'ex': 'NYSE',
   'fcfB': 3.94,
-  'fpe': 28.8,
+  'fpe': 29.02,
   'fvAvg': 455.79,
   'fvMax': 534,
   'fvMin': 321,
@@ -3362,14 +3433,14 @@ STOCKS = [{'an': 83,
   'hi52': 459.96,
   'jan2': 323.21,
   'lo52': 311.92,
-  'mcapB': 163.9084,
+  'mcapB': 165.1665,
   'name': 'Eaton',
-  'pe': 39.58,
-  'peg': 2.96,
+  'pe': 39.88,
+  'peg': 2.98,
   'pm': 12.75,
-  'price': 422.13,
-  'ps': 5.2,
-  'pxd': '2026-09-08',
+  'price': 425.37,
+  'ps': 5.24,
+  'pxd': '2026-09-11',
   'r40': 28.7,
   'revB': 30.03,
   'revG': 15.53,
@@ -3384,7 +3455,7 @@ STOCKS = [{'an': 83,
   'epsG': 131.4,
   'ex': 'NYSE',
   'fcfB': 2.28,
-  'fpe': 40.2,
+  'fpe': 35.53,
   'fvAvg': 380.0,
   'fvMax': 500,
   'fvMin': 236,
@@ -3393,14 +3464,14 @@ STOCKS = [{'an': 83,
   'hi52': 379.93,
   'jan2': 169.47,
   'lo52': 118.7,
-  'mcapB': 111.9649,
+  'mcapB': 98.964,
   'name': 'Vertiv Holdings',
-  'pe': 69.02,
-  'peg': 1.28,
+  'pe': 61.01,
+  'peg': 1.13,
   'pm': 14.37,
-  'price': 290.83,
-  'ps': 9.74,
-  'pxd': '2026-09-08',
+  'price': 257.06,
+  'ps': 8.61,
+  'pxd': '2026-09-11',
   'r40': 50.0,
   'revB': 10.84,
   'revG': 29.0,
@@ -3570,7 +3641,7 @@ STOCKS = [{'an': 83,
   'epsG': 21.3,
   'ex': 'NASDAQ',
   'fcfB': 1.12,
-  'fpe': 21.33,
+  'fpe': 20.31,
   'fvAvg': 357.81,
   'fvMax': 441,
   'fvMin': 296,
@@ -3579,14 +3650,14 @@ STOCKS = [{'an': 83,
   'hi52': 412.7,
   'jan2': 358.0,
   'lo52': 228.63,
-  'mcapB': 106.7888,
+  'mcapB': 101.6824,
   'name': 'Constellation Energy',
-  'pe': 21.43,
-  'peg': 1.31,
+  'pe': 20.41,
+  'peg': 1.25,
   'pm': 12.69,
-  'price': 299.05,
-  'ps': 3.03,
-  'pxd': '2026-09-08',
+  'price': 284.75,
+  'ps': 2.89,
+  'pxd': '2026-09-11',
   'r40': 27.2,
   'revB': 29.87,
   'revG': 23.4,
@@ -3632,7 +3703,7 @@ STOCKS = [{'an': 83,
   'epsG': -6.1,
   'ex': 'NYSE',
   'fcfB': 1.8,
-  'fpe': 15.4,
+  'fpe': 15.06,
   'fvAvg': 222.89,
   'fvMax': 320,
   'fvMin': 99,
@@ -3641,14 +3712,14 @@ STOCKS = [{'an': 83,
   'hi52': 219.82,
   'jan2': 163.89,
   'lo52': 132.66,
-  'mcapB': 51.1572,
+  'mcapB': 50.031,
   'name': 'Vistra',
-  'pe': 25.64,
-  'peg': 0.38,
+  'pe': 25.08,
+  'peg': 0.37,
   'pm': 11.52,
-  'price': 151.72,
-  'ps': 2.71,
-  'pxd': '2026-09-08',
+  'price': 148.38,
+  'ps': 2.65,
+  'pxd': '2026-09-11',
   'r40': 16.7,
   'revB': 19.45,
   'revG': 7.4,
@@ -5135,7 +5206,7 @@ THBFX = {'GOOGL': 32.2446,
 
 M3 = {'GOOGL': {'pfcf': 72.54, 'ev': 21.6, 'de': 0.18},
  'AMZN': {'pfcf': None, 'ev': 16.66, 'de': 0.4},
- 'MSFT': {'pfcf': 43.88, 'ev': 14.98, 'de': 0.3},
+ 'MSFT': {'pfcf': 44.03, 'ev': 14.98, 'de': 0.3},
  'META': {'pfcf': 39.9, 'ev': 14.85, 'de': 0.43},
  'AAPL': {'pfcf': 35.15, 'ev': 28.23, 'de': 0.78},
  'ORCL': {'pfcf': None, 'ev': 16.35, 'de': 2.32},
@@ -5166,11 +5237,11 @@ M3 = {'GOOGL': {'pfcf': 72.54, 'ev': 21.6, 'de': 0.18},
  'GLW': {'pfcf': 89.93, 'ev': 37.08, 'de': 0.8},
  'FN': {'pfcf': None, 'ev': 38.7, 'de': 0.0},
  'AAOI': {'pfcf': None, 'ev': None, 'de': 0.18},
- 'ETN': {'pfcf': 42.37, 'ev': 29.24, 'de': 1.02},
- 'VST': {'pfcf': 31.18, 'ev': 11.21, 'de': 3.29},
- 'VRT': {'pfcf': 50.71, 'ev': 48.86, 'de': 0.77},
- 'CEG': {'pfcf': 87.42, 'ev': 15.05, 'de': 0.65},
- 'GEV': {'pfcf': 35.65, 'ev': 87.4, 'de': 0.21},
+ 'ETN': {'pfcf': 42.7, 'ev': 29.24, 'de': 1.02},
+ 'VST': {'pfcf': 30.49, 'ev': 11.21, 'de': 3.29},
+ 'VRT': {'pfcf': 44.82, 'ev': 48.86, 'de': 0.77},
+ 'CEG': {'pfcf': 83.24, 'ev': 15.05, 'de': 0.65},
+ 'GEV': {'pfcf': 35.13, 'ev': 87.4, 'de': 0.21},
  'BWXT': {'pfcf': 48.56, 'ev': 36.6, 'de': 1.51},
  'MPWR': {'pfcf': 113.97, 'ev': 75.6, 'de': 0.01},
  'ISRG': {'pfcf': None, 'ev': 26.22, 'de': None},
