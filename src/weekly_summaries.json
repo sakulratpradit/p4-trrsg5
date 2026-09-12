@@ -919,6 +919,10 @@
   {
    "points": [
     {
+     "s": "+",
+     "text": "Third on the 12 Sep gross-margin ranking at 65.66% - and unlike Micron above it, that is a STRUCTURAL margin, built on custom silicon plus infrastructure software rather than on a commodity price. It does not collapse when a cycle turns. Funded at 50,000, unchanged."
+    },
+    {
      "s": "0",
      "text": "Gartner's CY2025 table puts Broadcom at 34,279m, rank 7. Broadcom's OWN FY2025 was 63,887m total with a 36,858m Semiconductor Solutions segment - Gartner's figure matches neither, because it calendarises and re-scopes. Use Broadcom's own numbers for this board, not the chart's."
     }
@@ -3327,6 +3331,14 @@
    "points": [
     {
      "s": "!",
+     "text": "⚠️ A 12 Sep ranking graphic puts Micron FIRST among chip companies on gross margin at 74.67%, which makes it look like the best business in semiconductors. IT IS NOT - IT IS THE MOST CYCLICAL ONE, AT THE TOP OF ITS CYCLE. Memory gross margins swing from roughly 20% to 75% and back. Broadcom's 65.66% is structural and does not collapse; Micron's does."
+    },
+    {
+     "s": "0",
+     "text": "⚠️ And the slide's Micron number matches nothing: it says 74.67%, this board says 72.57% trailing, and Micron's OWN Q3 FY2026 release reported GAAP gross margin of 84.6%. Three numbers for one company, and the slide never states the period. Peak margins produce peak earnings, which produce the cheap-looking 7.15x forward multiple already flagged. Same coin, both sides."
+    },
+    {
+     "s": "!",
      "text": "THE NUMBER OF THE WEEK: Micron now earns in one QUARTER what it earned in all of 2025. Gartner puts calendar-2025 revenue at 41,487m; Q3 FY2026 - the three months to 28 May 2026 - was 41,456m. Thirty-one million dollars apart, one quarter against one year, up 346% from 9,301m."
     },
     {
@@ -3676,6 +3688,10 @@
   },
   {
    "points": [
+    {
+     "s": "!",
+     "text": "⚠️ NVIDIA WAS ABSENT FROM A 12 Sep 'chip companies ranked by gross margin' graphic - and it belongs at NUMBER ONE. NVDA's gross margin is 75.0% (SEC-filed, Q2 FY2027) against the Micron figure the slide put first at 74.67%. A ranking of chip companies that omits the largest one in the world, which would top the list, is not a ranking. Four of its nine logos were wrong too, including Micron's row carrying the NVIDIA eye."
+    },
     {
      "s": "+",
      "text": "Q2 FY2027, quarter ended 26 Jul 2026, reported 26 Aug: revenue 96,221m, PLUS 106%; Data Center 89.0bn, +117% and +18% on the quarter; gross margin 75.0%; GAAP diluted EPS 2.46. Q3 guided to 108.0bn plus or minus 2% at a 74.0% margin."
@@ -4198,6 +4214,17 @@
    "week": "2026-07-27"
   }
  ],
+ "QCOM": [
+  {
+   "points": [
+    {
+     "s": "0",
+     "text": "Eighth on the 12 Sep gross-margin ranking at 54.23% - this board carries 54.8%, close enough. ⚠️ But margin was never why it is on the sell list: revenue growth of 5.2% cannot serve a mandate to double in five years, whatever the gross margin. Still one of the four sells remaining."
+    }
+   ],
+   "week": "2026-09-07"
+  }
+ ],
  "QNT": [
   {
    "points": [
@@ -4609,6 +4636,27 @@
     }
    ],
    "week": "2026-08-03"
+  },
+  {
+   "points": [
+    {
+     "s": "+",
+     "text": "RAISED 12 Sep as the candidate SECOND MEMORY NAME. Memory is a one-name group at 51,000 (5.1% of the board) and the SKHY quarantine already recorded that it needs a second. SNDK is US-listed NAND - no ADR premium of the kind that disqualified SK hynix - with revenue growth 169.0%, forward earnings 9.56, and a RULE OF 40 OF 202.8, the highest on this entire board, ahead of MU's 196.0."
+    },
+    {
+     "s": "!",
+     "text": "⚠️ RESOLVE THE GROSS MARGIN FIRST. A Thai ranking graphic of 12 Sep puts SanDisk second at 71.47%; this board carries 56.04%. A FIFTEEN-POINT GAP on the one number the slide is about - and 'SNDK gross margin' was ALREADY on the carried backlog as unverified before the graphic appeared. Two independent flags on the same field. Verify from SanDisk's own 10-Q before any budget is discussed."
+    },
+    {
+     "s": "!",
+     "text": "⚠️ AND THE OBJECTION IS MICRON'S, WITH DOUBLE FORCE: 9.56x forward earnings on PEAK NAND pricing is the identical trap as MU at 7.15x on peak DRAM. Memory gross margins swing from roughly 20% to 75% across a cycle. A second memory name at the top of the SAME cycle does not diversify the group - it doubles the same bet. Diversification needs a different cycle, and NAND and DRAM are not different cycles."
+    },
+    {
+     "s": "0",
+     "text": "10 Dec row written with three tests: gross margin verified from the filing; NAND contract prices not falling two months running; and a funding source - the board is fixed at 1,000,000 and the only weak unspent budget, LHX, is already promised to the Oracle test. Both cannot have it."
+    }
+   ],
+   "week": "2026-09-07"
   }
  ],
  "SNOW": [
