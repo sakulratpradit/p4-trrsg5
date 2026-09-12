@@ -3,126 +3,167 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ("Sep 12, 2026 - 'SAMSUNG IS MORE PROFITABLE THAN NVIDIA' IS BUILT BY COMPARING TWO DIFFERENT QUARTERS - AND CHECKING "
- 'IT TURNED UP A FORECAST THAT CUTS AGAINST THE SANDISK IDEA RAISED YESTERDAY. || ⚠️ HOW THE CHART IS MADE. Six of its '
- 'seven bars are Q1 2026 OPERATING PROFIT and they are exact: NVIDIA 53,536m (fiscal Q1 FY27 to 26 Apr), Alphabet '
- '39,696m, Microsoft 38.4bn, Apple 35,885m, Amazon 23.9bn, SK hynix 37.61tn won. ⚠️ SAMSUNG ALONE IS FROM Q2 2026 - '
- "89.49tn won, the April-to-June quarter. ITS OWN Q1 2026 WAS 57.2tn WON. The chart takes Samsung's LATER, BIGGER "
- "quarter and stands it next to NVIDIA's EARLIER, SMALLER one. ⚠️ AND THE CURRENCY IS INVENTED TOO: the 58.6bn figure "
- "implies about 1,527 won to the dollar. The spot rate on 12 Sep was 1,341.11. At the real rate Samsung's Q2 operating "
- "profit is about 66.7bn, not 58.6bn - the chart is wrong in Samsung's FAVOUR on the period and AGAINST it on the "
- "currency, which is how you can tell nobody checked. || THE HONEST COMPARISON, SAME QUARTER, SAME BASIS: NVIDIA's Q2 "
- "FY27 operating income was 63,734m against Samsung's Q2 2026 of 89.49tn won. Converted at spot that is 66.7bn to "
- '63.7bn - SAMSUNG NARROWLY AHEAD. Converted at the 1,444 rate the Korea Herald used, 62.0bn to 63.7bn - NVIDIA AHEAD. '
- '⚠️ THE ANSWER DEPENDS ENTIRELY ON WHICH EXCHANGE RATE YOU PICK, which means the headline is not a fact about the '
- 'companies at all. || ⚠️ BUT THE REAL LESSON IS WHAT THE CHART LEAVES OUT, AND IT IS THE SAME LESSON AS THE '
- 'GROSS-MARGIN SLIDE: ABSOLUTE PROFIT IS THE LEAST USEFUL MEASURE AN INVESTOR HAS. Samsung earns roughly what NVIDIA '
- "earns AND THE MARKET VALUES IT AT A QUARTER OF THE PRICE - about 1.28 TRILLION against NVIDIA's 5.27 TRILLION, 12.0 "
- 'times trailing earnings against 27.6. That gap is the whole story and the chart never mentions it. || WHY THE MARKET '
- "PAYS SO LITTLE FOR SAMSUNG'S PROFIT - THE CYCLICALITY, WHICH IS BRUTAL. Samsung's semiconductor division operating "
- 'profit by quarter: Q1 2023 a LOSS OF 4.58tn WON; Q3 2023 a LOSS of 3.75tn; ⚠️ Q2 2025, ONLY TWELVE MONTHS AGO, JUST '
- '0.4tn WON - ESSENTIALLY BREAKEVEN; Q1 2026 53.7tn; Q2 2026 89.2tn. FROM A LOSS TO 89.2 TRILLION WON IN THREE YEARS, '
- 'ROUGHLY A TWENTYFOLD SWING. SK hynix is the same shape: a 3.402tn LOSS in Q1 2023 to 60.543tn in Q2 2026, and it was '
- 'at 9.2tn as recently as Q2 2025 - up more than six times in one year. THE MARKET IS NOT MISPRICING THESE COMPANIES. '
- 'IT IS REFUSING TO CAPITALISE A PEAK. || ⚠️⚠️ AND HERE IS THE FINDING THAT ACTUALLY CHANGES SOMETHING ON THIS BOARD. '
- "TRENDFORCE, 30 JUL 2026, FORECASTS A DIVERGING 2027: DRAM PRICES TRENDING UP through 2027 because 'the supply-demand "
- "gap is expected to widen further', with new capacity 'not expected to materialize until 2028' - BUT NAND FACING A "
- "'LOOSER SUPPLY ENVIRONMENT IN 2H27 AS NEW PRODUCTION CAPACITY COMES ONLINE', PRESSURING PRICES DOWN. ⚠️ MICRON IS "
- 'MOSTLY DRAM. SANDISK IS NAND. The forecast that supports holding MU is the same forecast that argues AGAINST adding '
- 'SNDK. A second memory name on the WORSE HALF of the same cycle is not diversification - it is concentration with '
- "extra steps. The SanDisk row written yesterday already carried 'NAND contract prices not falling for two consecutive "
- "months' as its second test; TrendForce now says that is the test most likely to FAIL. Recorded on the row. || ⚠️ THE "
- "SKHY QUARANTINE IS CONFIRMED, NOT WEAKENED. SK hynix's KRX market capitalisation is about 1,320.70tn won, roughly "
- '0.98 TRILLION dollars at spot, against the 1.352 TRILLION this board carries for the ADR - STILL ABOUT A 38% '
- "PREMIUM, barely moved from the 43% measured on 9 Sep. ⚠️ AND THE UNEXPLAINED FIGURE IS STILL UNEXPLAINED: SK hynix's "
- 'Q2 2026 NET INCOME OF 93.9tn WON EXCEEDS BOTH ITS OPERATING PROFIT OF 60.5tn AND ITS REVENUE OF 79.3tn - a net '
- 'margin above 100%, which no source retrieved can explain. That is exactly the anomaly that caused seven board fields '
- 'to be nulled on 10 Sep. The quarantine stands on both original grounds. || ⚠️ ONE PIECE OF GENUINELY NEW '
- 'INFORMATION: SK hynix now has a REAL NASDAQ GLOBAL SELECT LISTING under SKHY - an F-1-registered primary offering, 1 '
- 'ADR = 0.1 common share, underwritten by BofA, Citi, Goldman and JPMorgan. That is a better instrument than the board '
- 'assumed, and it does not change the decision: a 38% premium is a 38% premium whatever exchange it trades on. || NO '
- 'ACTION ON ANYTHING. Samsung is not on this board and cannot easily be - its only US quote is SSNLF, traded over the '
- 'counter, not on a major exchange. MU stays at 51,000 with the tranche unchanged, SKHY stays a zero-budget back-up, '
- 'SNDK stays a December question with one of its three tests now looking harder to pass. || PREVIOUS ENTRY: Sep 12, '
- "2026 - THE 'RICH BEFORE 2030' LIST ACCIDENTALLY GRADES OUR OWN WORK - AND ZETA'S SELL LIMIT COMES DOWN TO 31.00. "
- "Salee sent a graphic promising ten stocks that 'will set you up to be rich before 2030' and asked whether the plan "
- 'changes, especially on ZETA. ⚠️ THE SOURCE IS UNTRACEABLE: no publisher, no named author, no methodology, nothing '
- "indexed anywhere. And it cannot count - THERE ARE TWO NUMBER FIVES, so the 'ten stocks' are eleven. || ⚠️ BUT LOOK "
- 'WHAT IT ACTUALLY LISTS. Of its eleven names this board has ALREADY EXAMINED TEN AND ACTIVELY REJECTED FIVE: NBIS '
- 'SOLD, NOW SOLD, ONDS SOLD on 9 Sep for a realised -519.18, ZETA ON THE SELL LIST, SKHY QUARANTINED as a zero-budget '
- 'back-up on a 43% ADR premium. Three are funded and agree with us - PLTR 16,000, RKLB 15,000, ORCL 13,000. Two are '
- 'watch-only and deliberately unfunded - SPCX and ASTS. Only REDWIRE has never been looked at. A list built to sell '
- "excitement and a board built on evidence overlap on three names out of eleven. || ⚠️ AND THE LIST'S OWN ARITHMETIC "
- 'CONDEMNS IT: of NBIS, NOW, RDW, ASTS and ONDS, ONLY SERVICENOW MAKES A GAAP PROFIT. Nebius lost 190.4m last quarter, '
- 'Redwire 41.0m, AST SpaceMobile 230.9m and Ondas 89.7m. Triple-digit revenue growth on top of heavy cash burn is not '
- 'a plan to be rich by 2030; it is four lottery tickets and one real company sold in the same envelope. || NOW ZETA, '
- 'PROPERLY. ⚠️ THE HONEST ANSWER IS THAT THE SELL THESIS IS WEAKER THAN WHEN IT WAS WRITTEN, AND IT STILL HOLDS. What '
- 'genuinely improved: Q2 2026 revenue 442.8m PLUS 43.5%, THE FIRST GAAP-PROFITABLE QUARTER at +8.173m against a '
- '12.814m loss a year earlier, operating income +16.9m, free cash flow 58.0m, and FY2026 guidance RAISED to '
- '1,811-1,824m with GAAP EPS of 0.09-0.11 against 0.02-0.04 before. Seven brokers raised targets after the print; none '
- 'downgraded. That is real and it should be said first. || ⚠️ WHAT HAS NOT CHANGED: THE TRAILING YEAR IS STILL NOT '
- 'PROFITABLE. TTM GAAP net income is MINUS 2.169m on 1,570.877m of revenue - a MINUS 0.14% net margin, to the decimal '
- 'the number this sell note was written on. H1 2026 is still a 5.074m LOSS. One quarter has not moved the year. ⚠️ AND '
- 'THE PROFIT IS PAID IN SHARES: STOCK COMPENSATION WAS 52.115m IN Q2 - 11.8% OF REVENUE - AND 194.510m OVER THE '
- 'TRAILING YEAR, 12.4% OF REVENUE. Q2 operating income of 16.9m against 91.7m of adjusted EBITDA is a 74.8m gap, most '
- 'of it that compensation. Zeta is profitable if you do not count what it pays its own staff. || ⚠️⚠️ AND HERE IS THE '
- 'FACT I DID NOT HAVE WHEN I WROTE THE SELL NOTE, WHICH MATTERS MORE THAN ANY OF THE ABOVE: ON 8 JULY 2026 A FEDERAL '
- "JUDGE DENIED ZETA'S MOTION TO DISMISS THE SECURITIES CLASS ACTION (SDNY, 1:24-cv-08961), finding 'Plaintiffs have "
- "adequately alleged materially misleading statements regarding Zeta's opted-in data set.' IT GOES TO DISCOVERY. The "
- 'case traces to a Culper Research short report of 13 Nov 2024 alleging consent farms and revenue round-tripping, '
- "which Zeta called 'riddled with inaccuracies and falsehoods'. ⚠️ NOTHING IS SUBSTANTIATED - no court finding, no "
- 'regulator, no restatement - but a denied dismissal means a judge found the allegations plausible enough to continue, '
- 'and discovery means documents, depositions and headline risk for a year or more. || ⚠️ AND ON 13 AUG THE CEO TOOK '
- '22.7 MILLION DOLLARS OFF THE TABLE, monetising 1,000,000 Class B shares through a variable prepaid forward settling '
- 'in 2029 inside a 26.11-47.29 collar, plus gifting 523,470 more. Legal, disclosed, and not proof of anything - but it '
- 'is cash banked by the man telling the market the story is accelerating. || THE DECISION: LIMIT LOWERED 32.50 TO '
- '31.00. Consensus is 31.36 across 15 brokers against a 30.18 close, so THE OLD LIMIT ASKED 3.6% MORE THAN THE '
- "STREET'S OWN TARGET and sat 1% below the 32.81 fifty-two-week high, while the stock drifted 30.79 to 30.18 in four "
- 'sessions. ⚠️ THE WHOLE PRIZE FOR HOLDING OUT IS 166.50 - 111 shares times the 1.50 difference - WHICH IS 0.017% OF '
- 'THIS BOARD. We would be carrying a live securities case through discovery for one hundred and sixty-six dollars. The '
- 'lesson from AMKR and COHR was that a limit nobody will pay is a wish rather than a plan; this applies it BEFORE the '
- 'mistake instead of after. || SO THE ANSWER TO THE SLIDE IS NO, AND THE ANSWER ON ZETA IS SELL SOONER, NOT LATER - '
- 'the opposite of what the graphic urges, reached from the filings rather than from the headline. Price updated to the '
- "11 Sep close of 30.18. || PREVIOUS ENTRY: Sep 12, 2026 - THE 'THREE AI KINGS WANT TO SLOW DOWN' POST: A REAL EVENT, "
- 'BADLY DISTORTED - AND THE MONEY SAYS THE OPPOSITE. ⚠️ DISCLOSURE FIRST, BECAUSE IT MATTERS: I AM CLAUDE, MADE BY '
- "ANTHROPIC, AND DARIO AMODEI IS ANTHROPIC'S CEO. Salee should weigh my reading of this one knowing that. Everything "
- 'below is sourced to primary documents so he can check it without me. || WHAT IS REAL: Amodei published an essay '
- "TODAY, 12 Sep 2026, titled 'We Must Pace the Frontier'. His words: 'We must slow the pace at which we improve the "
- "capabilities of AI models.' Elon Musk posted three words on X the same day - 'Dario is right.' Sam Altman said on 18 "
- "Aug, after the OpenAI-Hugging Face security incident, 'I think it is a good time to slow down', and Bloomberg "
- 'reported on 11 Sep that he told staff OpenAI is open to slowing - hoping other labs join. So the people and the '
- "direction are real. || ⚠️ WHAT THE POST GETS WRONG. It says Amodei concluded AI 'has begun building the next "
- "generation of AI by itself and is starting to escape control'. THAT PHRASE IS NOT HIS. He wrote that recursive "
- "self-improvement 'is starting to happen across the industry, including at Anthropic' and that 'left unchecked, it "
- "COULD outrun our ability to understand and control these systems'. COULD, not HAS. And he explicitly states pacing "
- "'does not mean halting model training or technical progress'. A hedged risk discussion has been rewritten as an "
- 'emergency. || ⚠️ AND THERE IS NO DEAL. No pact, no joint statement, no treaty, no government mandate. Three separate '
- 'men reacted to the same news on the same day. Anthropic committed unilaterally to ONE narrow thing - giving outside '
- "evaluators employee-level access - and OpenAI said it would match that single step. The 'Pacing the Frontier' letter "
- "of 28 Jul, signed by over 1,000 industry employees, states IN ITS OWN TEXT that it is 'not calling for a pause or "
- "slowdown right now'. The 2026 regulation that does exist - the EU AI Act GPAI rules from 2 Aug and California SB 53 "
- "- is TRANSPARENCY AND DISCLOSURE, not pacing. ⚠️ NOTE ALSO: Musk signed a 'pause AI' letter in MARCH 2023. That is a "
- 'different event three years earlier and must not be blended into this one. || ⚠️ THE BEHAVIOURAL TEST, WHICH IS THE '
- 'ONLY ONE THAT MATTERS FOR THIS BOARD: WORDS ARE FREE, CAPITAL EXPENDITURE IS NOT. Anthropic closed a 65bn round at a '
- '965bn valuation on 28 May 2026 and filed confidentially for an IPO on 1 Jun, with revenue run-rate going 9bn at '
- "end-2025 to 47bn in May to 65bn in July. OpenAI's run-rate topped 40bn in August and it is still adding Stargate "
- "sites. xAI raised 20bn in January explicitly to 'accelerate our world-leading infrastructure buildout'. ⚠️ NO CAPEX "
- 'CUT, NO CANCELLED DATACENTRE AND NO REDUCED COMPUTE SPEND WAS FOUND AT ANY OF THE THREE IN 2026. The single '
- "documented pause was OpenAI halting its 'Astra' training run for about two weeks in August after a security incident "
- '- narrow, temporary, and followed by continued spending. THE PEOPLE ASKING FOR A SLOWDOWN ARE SPENDING MORE, NOT '
- 'LESS. || ⚠️ AND NO MARKET REACTION WAS FOUND. No dated report attributes any NVDA, MSFT, GOOGL or META move on 10-11 '
- 'Sep to this story - recorded as NOT FOUND rather than assumed. || IMPACT ON THIS BOARD: NONE TODAY, AND THE RIGHT '
- "THING TO WATCH IS NOT THE RHETORIC. This board's AI exposure is 78% and every dollar of it depends on hyperscaler "
- 'and lab CAPITAL SPENDING, not on what founders say about safety. ⚠️ THE REAL TRIGGER TO WATCH IS THE ONE ALREADY '
- "WRITTEN ON THIS BOARD: a named hyperscaler CUTTING capex guidance. Kress's framing of top-five capex at 'nearly 800 "
- "billion in 2026 and 1.3 trillion in 2027' is the number that would have to break. IF REGULATION EVER DOES BITE, IT "
- 'BITES THE MODEL LABS FIRST AND THE PICKS-AND-SHOVELS LAYER LAST - and this board deliberately owns the shovels: TSM, '
- 'ASML, AMAT, LRCX, KLAC, VRT, CEG, VST. A slower frontier still needs the same electricity and the same fabs. NO '
- 'ACTION. || PREVIOUS ENTRY: Sep 12, 2026 - THE JPMORGAN META UPGRADE IS REAL, AND THE STOCK HAS ALREADY MOVED. Salee '
- 'sent a cartoon-duck graphic claiming JPMorgan raised META to Overweight with an 820 target. ⚠️ DESPITE THE '
- 'PRESENTATION, THE CORE CLAIM CHECKS OUT COMPLETELY. Doug Anmuth of JPMorgan upgraded Meta from NEUTRAL to OVERWEIGHT '
- 'on 10 SEP 2026, target 640 to 820 - and 820 is framed in his note as a DECEMBER 2027 target, not a twelve-month one. '
- "The rating history matters: Anmuth had DOWNGRADED Meta from Overweight to Neutral on 30 Apr 2026 over 'heavy "
+ASOF = ("Sep 12, 2026 - THE POWER 'BUY UNDER' LIST: ONE NAME IS IN THE WRONG CATEGORY, TWO FAIL THIS BOARD'S OWN MARGIN TEST, "
+ 'AND THE REAL FINDING IS THAT WE ARE TWO-THIRDS UNINVESTED IN A SECTOR THAT HAS FALLEN 20 TO 50 PERCENT. Salee sent '
+ 'an @LeifInvests graphic listing seven power names with a price to buy each under. NO BUDGET HAS CHANGED. || ⚠️ THE '
+ 'AUTHOR IS UNIDENTIFIABLE. No name, no firm, no registration, no credentials, no methodology and no disclosed '
+ 'positions could be established. The account posts daily personal portfolio profit and loss. THIS IS A PERSONAL '
+ "WATCHLIST, NOT RESEARCH - which is not a crime, but it means the 'under 900' and 'under 240' levels have no stated "
+ 'basis. They are round numbers six to sixteen percent below the market. || ⚠️ FPS IS IN THE WRONG BOX. The graphic '
+ 'groups FORGENT POWER SOLUTIONS with Quanta, Sterling and MasTec as though it were a construction contractor. IT IS '
+ 'AN EQUIPMENT MANUFACTURER - transfer switches, switchgear, transformers - SIC code 3620, the SAME CATEGORY AS EATON '
+ 'AND VERTIV, which this board already funds at 11,000 and 21,000. || THE THREE CONTRACTORS, AND WHY TWO OF THEM FAIL '
+ 'A TEST THIS BOARD HAS ALREADY APPLIED. Operating margins, most recent quarter: MASTEC 5.2%. QUANTA 7.3%. STERLING '
+ '18.8%. Against the equipment layer we already own: VERTIV 19.5% and EATON 23.1%. ⚠️ THIS IS EXACTLY THE SUPERMICRO '
+ 'AND DELL TEST FROM THE NVIDIA SUPPLY-CHAIN SLIDE - same demand, a third of the margin. Quanta and MasTec are the box '
+ "assemblers of the power world: they install other people's equipment on a low-bid basis. They were excluded from "
+ 'this board by the same rule that excluded SMCI at 17.5% and DELL at 20.9%, and nothing here changes that. STERLING '
+ 'AT 18.8% IS THE GENUINE EXCEPTION and earns equipment-like margins - but IT IS DOWN 49% FROM ITS HIGH and I do not '
+ 'yet know why, which is not a reason to buy, it is a reason to find out. || ⚠️ AND THE BACKLOGS ARE ENORMOUS, WHICH '
+ "MAKES THE NEXT FACT THE IMPORTANT ONE. Quanta's total backlog is 53.4bn with the ELECTRIC SEGMENT ALONE AT 43.79bn - "
+ "82% of the whole book. Sterling's signed backlog is up 116% against revenue up 90%, and 92% OF ITS E-INFRASTRUCTURE "
+ "BACKLOG IS MISSION-CRITICAL WORK - data centres, semiconductor and manufacturing plants. MasTec's 18-month backlog "
+ "is 21.4bn, up 30%, and it paid 1.6bn in July for Electrical Specialists, 'a recognized leader in building data "
+ "center infrastructure'. || ⚠️⚠️ BUT DEMAND IS NOT THEIR CONSTRAINT - LABOUR IS, AND NAMED EXECUTIVES SAY SO. "
+ "Sterling's CEO Joseph Cutillo says contractors are 'stealing' skilled crews from smaller rivals and that on "
+ "training, 'We can't run thousands of people through that a year, which we'd like to have.' Comfort Systems' CFO "
+ "William George: 'There is plenty more work we could take if we could possibly do it.' The Associated Builders and "
+ "Contractors' CEO puts ELECTRICAL WORK AT ROUGHLY HALF OF ALL LABOUR ON A DATA-CENTRE PROJECT. Commercial electrician "
+ 'wages are up 9.9%. THAT IS WHY A RECORD BACKLOG DOES NOT AUTOMATICALLY BECOME PROFIT: if you cannot hire the '
+ 'electricians, a bigger backlog is just a longer queue, and rising wages eat a 5% margin before they dent a 23% one. '
+ 'IT IS ANOTHER ARGUMENT FOR OWNING THE EQUIPMENT, NOT THE INSTALLATION. || ⚠️ THE FINDING THAT MATTERS MOST IS ABOUT '
+ "OUR OWN BOARD, NOT THE SLIDE'S NAMES. EVERY NAME ON THAT LIST IS WELL BELOW ITS 52-WEEK HIGH: STERLING MINUS 49%, "
+ 'MASTEC MINUS 46%, FORGENT MINUS 52%, VISTRA MINUS 33%, CONSTELLATION MINUS 31%, GE VERNOVA MINUS 20%, QUANTA MINUS '
+ '18%. THE WHOLE POWER COMPLEX HAS SOLD OFF. And Group 6 holds 77,000 of budget with only 25,725 SPENT - 51,274 OF '
+ 'APPROVED ROOM UNTOUCHED: VRT 17,476, CEG 12,959, GEV 10,853, VST 6,867, ETN 3,120. WE ARE ONE THIRD INVESTED IN A '
+ "SECTOR WE ALREADY DECIDED WE WANTED, WHILE IT IS ON SALE. ⚠️ THAT IS NOT A BUY INSTRUCTION TODAY - VRT's own 11.6% "
+ "fall on the UtilityInnovation acquisition is still unexplained and yesterday's rule was not to chase it - but it is "
+ "the question worth putting on the December review, and it is a better question than any of the slide's seven names. "
+ '|| ACTIONS: NONE. No new name is added. FPS gets a WATCH row for its FIRST FULL-YEAR REPORT ON 15 SEPTEMBER, three '
+ "days away - it IPO'd on 5 Feb at 27.00, did a follow-on at 49.00 on 27 Mar which is now 35% underwater, its "
+ '56-million-share lock-up expired on 4 Aug, and this board carries it with revenue growth and Rule of 40 BLANK. That '
+ 'is the SKHY and SPCX pattern exactly: vendor data on recently-listed securities is unreliable. Waiting three days '
+ "costs nothing. || PREVIOUS ENTRY: Sep 12, 2026 - 'SAMSUNG IS MORE PROFITABLE THAN NVIDIA' IS BUILT BY COMPARING TWO "
+ 'DIFFERENT QUARTERS - AND CHECKING IT TURNED UP A FORECAST THAT CUTS AGAINST THE SANDISK IDEA RAISED YESTERDAY. || ⚠️ '
+ 'HOW THE CHART IS MADE. Six of its seven bars are Q1 2026 OPERATING PROFIT and they are exact: NVIDIA 53,536m (fiscal '
+ 'Q1 FY27 to 26 Apr), Alphabet 39,696m, Microsoft 38.4bn, Apple 35,885m, Amazon 23.9bn, SK hynix 37.61tn won. ⚠️ '
+ 'SAMSUNG ALONE IS FROM Q2 2026 - 89.49tn won, the April-to-June quarter. ITS OWN Q1 2026 WAS 57.2tn WON. The chart '
+ "takes Samsung's LATER, BIGGER quarter and stands it next to NVIDIA's EARLIER, SMALLER one. ⚠️ AND THE CURRENCY IS "
+ 'INVENTED TOO: the 58.6bn figure implies about 1,527 won to the dollar. The spot rate on 12 Sep was 1,341.11. At the '
+ "real rate Samsung's Q2 operating profit is about 66.7bn, not 58.6bn - the chart is wrong in Samsung's FAVOUR on the "
+ 'period and AGAINST it on the currency, which is how you can tell nobody checked. || THE HONEST COMPARISON, SAME '
+ "QUARTER, SAME BASIS: NVIDIA's Q2 FY27 operating income was 63,734m against Samsung's Q2 2026 of 89.49tn won. "
+ 'Converted at spot that is 66.7bn to 63.7bn - SAMSUNG NARROWLY AHEAD. Converted at the 1,444 rate the Korea Herald '
+ 'used, 62.0bn to 63.7bn - NVIDIA AHEAD. ⚠️ THE ANSWER DEPENDS ENTIRELY ON WHICH EXCHANGE RATE YOU PICK, which means '
+ 'the headline is not a fact about the companies at all. || ⚠️ BUT THE REAL LESSON IS WHAT THE CHART LEAVES OUT, AND '
+ 'IT IS THE SAME LESSON AS THE GROSS-MARGIN SLIDE: ABSOLUTE PROFIT IS THE LEAST USEFUL MEASURE AN INVESTOR HAS. '
+ 'Samsung earns roughly what NVIDIA earns AND THE MARKET VALUES IT AT A QUARTER OF THE PRICE - about 1.28 TRILLION '
+ "against NVIDIA's 5.27 TRILLION, 12.0 times trailing earnings against 27.6. That gap is the whole story and the chart "
+ "never mentions it. || WHY THE MARKET PAYS SO LITTLE FOR SAMSUNG'S PROFIT - THE CYCLICALITY, WHICH IS BRUTAL. "
+ "Samsung's semiconductor division operating profit by quarter: Q1 2023 a LOSS OF 4.58tn WON; Q3 2023 a LOSS of "
+ '3.75tn; ⚠️ Q2 2025, ONLY TWELVE MONTHS AGO, JUST 0.4tn WON - ESSENTIALLY BREAKEVEN; Q1 2026 53.7tn; Q2 2026 89.2tn. '
+ 'FROM A LOSS TO 89.2 TRILLION WON IN THREE YEARS, ROUGHLY A TWENTYFOLD SWING. SK hynix is the same shape: a 3.402tn '
+ 'LOSS in Q1 2023 to 60.543tn in Q2 2026, and it was at 9.2tn as recently as Q2 2025 - up more than six times in one '
+ 'year. THE MARKET IS NOT MISPRICING THESE COMPANIES. IT IS REFUSING TO CAPITALISE A PEAK. || ⚠️⚠️ AND HERE IS THE '
+ 'FINDING THAT ACTUALLY CHANGES SOMETHING ON THIS BOARD. TRENDFORCE, 30 JUL 2026, FORECASTS A DIVERGING 2027: DRAM '
+ "PRICES TRENDING UP through 2027 because 'the supply-demand gap is expected to widen further', with new capacity 'not "
+ "expected to materialize until 2028' - BUT NAND FACING A 'LOOSER SUPPLY ENVIRONMENT IN 2H27 AS NEW PRODUCTION "
+ "CAPACITY COMES ONLINE', PRESSURING PRICES DOWN. ⚠️ MICRON IS MOSTLY DRAM. SANDISK IS NAND. The forecast that "
+ 'supports holding MU is the same forecast that argues AGAINST adding SNDK. A second memory name on the WORSE HALF of '
+ 'the same cycle is not diversification - it is concentration with extra steps. The SanDisk row written yesterday '
+ "already carried 'NAND contract prices not falling for two consecutive months' as its second test; TrendForce now "
+ 'says that is the test most likely to FAIL. Recorded on the row. || ⚠️ THE SKHY QUARANTINE IS CONFIRMED, NOT '
+ "WEAKENED. SK hynix's KRX market capitalisation is about 1,320.70tn won, roughly 0.98 TRILLION dollars at spot, "
+ 'against the 1.352 TRILLION this board carries for the ADR - STILL ABOUT A 38% PREMIUM, barely moved from the 43% '
+ "measured on 9 Sep. ⚠️ AND THE UNEXPLAINED FIGURE IS STILL UNEXPLAINED: SK hynix's Q2 2026 NET INCOME OF 93.9tn WON "
+ 'EXCEEDS BOTH ITS OPERATING PROFIT OF 60.5tn AND ITS REVENUE OF 79.3tn - a net margin above 100%, which no source '
+ 'retrieved can explain. That is exactly the anomaly that caused seven board fields to be nulled on 10 Sep. The '
+ 'quarantine stands on both original grounds. || ⚠️ ONE PIECE OF GENUINELY NEW INFORMATION: SK hynix now has a REAL '
+ 'NASDAQ GLOBAL SELECT LISTING under SKHY - an F-1-registered primary offering, 1 ADR = 0.1 common share, underwritten '
+ 'by BofA, Citi, Goldman and JPMorgan. That is a better instrument than the board assumed, and it does not change the '
+ 'decision: a 38% premium is a 38% premium whatever exchange it trades on. || NO ACTION ON ANYTHING. Samsung is not on '
+ 'this board and cannot easily be - its only US quote is SSNLF, traded over the counter, not on a major exchange. MU '
+ 'stays at 51,000 with the tranche unchanged, SKHY stays a zero-budget back-up, SNDK stays a December question with '
+ "one of its three tests now looking harder to pass. || PREVIOUS ENTRY: Sep 12, 2026 - THE 'RICH BEFORE 2030' LIST "
+ "ACCIDENTALLY GRADES OUR OWN WORK - AND ZETA'S SELL LIMIT COMES DOWN TO 31.00. Salee sent a graphic promising ten "
+ "stocks that 'will set you up to be rich before 2030' and asked whether the plan changes, especially on ZETA. ⚠️ THE "
+ 'SOURCE IS UNTRACEABLE: no publisher, no named author, no methodology, nothing indexed anywhere. And it cannot count '
+ "- THERE ARE TWO NUMBER FIVES, so the 'ten stocks' are eleven. || ⚠️ BUT LOOK WHAT IT ACTUALLY LISTS. Of its eleven "
+ 'names this board has ALREADY EXAMINED TEN AND ACTIVELY REJECTED FIVE: NBIS SOLD, NOW SOLD, ONDS SOLD on 9 Sep for a '
+ 'realised -519.18, ZETA ON THE SELL LIST, SKHY QUARANTINED as a zero-budget back-up on a 43% ADR premium. Three are '
+ 'funded and agree with us - PLTR 16,000, RKLB 15,000, ORCL 13,000. Two are watch-only and deliberately unfunded - '
+ 'SPCX and ASTS. Only REDWIRE has never been looked at. A list built to sell excitement and a board built on evidence '
+ "overlap on three names out of eleven. || ⚠️ AND THE LIST'S OWN ARITHMETIC CONDEMNS IT: of NBIS, NOW, RDW, ASTS and "
+ 'ONDS, ONLY SERVICENOW MAKES A GAAP PROFIT. Nebius lost 190.4m last quarter, Redwire 41.0m, AST SpaceMobile 230.9m '
+ 'and Ondas 89.7m. Triple-digit revenue growth on top of heavy cash burn is not a plan to be rich by 2030; it is four '
+ 'lottery tickets and one real company sold in the same envelope. || NOW ZETA, PROPERLY. ⚠️ THE HONEST ANSWER IS THAT '
+ 'THE SELL THESIS IS WEAKER THAN WHEN IT WAS WRITTEN, AND IT STILL HOLDS. What genuinely improved: Q2 2026 revenue '
+ '442.8m PLUS 43.5%, THE FIRST GAAP-PROFITABLE QUARTER at +8.173m against a 12.814m loss a year earlier, operating '
+ 'income +16.9m, free cash flow 58.0m, and FY2026 guidance RAISED to 1,811-1,824m with GAAP EPS of 0.09-0.11 against '
+ '0.02-0.04 before. Seven brokers raised targets after the print; none downgraded. That is real and it should be said '
+ 'first. || ⚠️ WHAT HAS NOT CHANGED: THE TRAILING YEAR IS STILL NOT PROFITABLE. TTM GAAP net income is MINUS 2.169m on '
+ '1,570.877m of revenue - a MINUS 0.14% net margin, to the decimal the number this sell note was written on. H1 2026 '
+ 'is still a 5.074m LOSS. One quarter has not moved the year. ⚠️ AND THE PROFIT IS PAID IN SHARES: STOCK COMPENSATION '
+ 'WAS 52.115m IN Q2 - 11.8% OF REVENUE - AND 194.510m OVER THE TRAILING YEAR, 12.4% OF REVENUE. Q2 operating income of '
+ '16.9m against 91.7m of adjusted EBITDA is a 74.8m gap, most of it that compensation. Zeta is profitable if you do '
+ 'not count what it pays its own staff. || ⚠️⚠️ AND HERE IS THE FACT I DID NOT HAVE WHEN I WROTE THE SELL NOTE, WHICH '
+ "MATTERS MORE THAN ANY OF THE ABOVE: ON 8 JULY 2026 A FEDERAL JUDGE DENIED ZETA'S MOTION TO DISMISS THE SECURITIES "
+ "CLASS ACTION (SDNY, 1:24-cv-08961), finding 'Plaintiffs have adequately alleged materially misleading statements "
+ "regarding Zeta's opted-in data set.' IT GOES TO DISCOVERY. The case traces to a Culper Research short report of 13 "
+ "Nov 2024 alleging consent farms and revenue round-tripping, which Zeta called 'riddled with inaccuracies and "
+ "falsehoods'. ⚠️ NOTHING IS SUBSTANTIATED - no court finding, no regulator, no restatement - but a denied dismissal "
+ 'means a judge found the allegations plausible enough to continue, and discovery means documents, depositions and '
+ 'headline risk for a year or more. || ⚠️ AND ON 13 AUG THE CEO TOOK 22.7 MILLION DOLLARS OFF THE TABLE, monetising '
+ '1,000,000 Class B shares through a variable prepaid forward settling in 2029 inside a 26.11-47.29 collar, plus '
+ 'gifting 523,470 more. Legal, disclosed, and not proof of anything - but it is cash banked by the man telling the '
+ 'market the story is accelerating. || THE DECISION: LIMIT LOWERED 32.50 TO 31.00. Consensus is 31.36 across 15 '
+ "brokers against a 30.18 close, so THE OLD LIMIT ASKED 3.6% MORE THAN THE STREET'S OWN TARGET and sat 1% below the "
+ '32.81 fifty-two-week high, while the stock drifted 30.79 to 30.18 in four sessions. ⚠️ THE WHOLE PRIZE FOR HOLDING '
+ 'OUT IS 166.50 - 111 shares times the 1.50 difference - WHICH IS 0.017% OF THIS BOARD. We would be carrying a live '
+ 'securities case through discovery for one hundred and sixty-six dollars. The lesson from AMKR and COHR was that a '
+ 'limit nobody will pay is a wish rather than a plan; this applies it BEFORE the mistake instead of after. || SO THE '
+ 'ANSWER TO THE SLIDE IS NO, AND THE ANSWER ON ZETA IS SELL SOONER, NOT LATER - the opposite of what the graphic '
+ 'urges, reached from the filings rather than from the headline. Price updated to the 11 Sep close of 30.18. || '
+ "PREVIOUS ENTRY: Sep 12, 2026 - THE 'THREE AI KINGS WANT TO SLOW DOWN' POST: A REAL EVENT, BADLY DISTORTED - AND THE "
+ 'MONEY SAYS THE OPPOSITE. ⚠️ DISCLOSURE FIRST, BECAUSE IT MATTERS: I AM CLAUDE, MADE BY ANTHROPIC, AND DARIO AMODEI '
+ "IS ANTHROPIC'S CEO. Salee should weigh my reading of this one knowing that. Everything below is sourced to primary "
+ "documents so he can check it without me. || WHAT IS REAL: Amodei published an essay TODAY, 12 Sep 2026, titled 'We "
+ "Must Pace the Frontier'. His words: 'We must slow the pace at which we improve the capabilities of AI models.' Elon "
+ "Musk posted three words on X the same day - 'Dario is right.' Sam Altman said on 18 Aug, after the OpenAI-Hugging "
+ "Face security incident, 'I think it is a good time to slow down', and Bloomberg reported on 11 Sep that he told "
+ 'staff OpenAI is open to slowing - hoping other labs join. So the people and the direction are real. || ⚠️ WHAT THE '
+ "POST GETS WRONG. It says Amodei concluded AI 'has begun building the next generation of AI by itself and is starting "
+ "to escape control'. THAT PHRASE IS NOT HIS. He wrote that recursive self-improvement 'is starting to happen across "
+ "the industry, including at Anthropic' and that 'left unchecked, it COULD outrun our ability to understand and "
+ "control these systems'. COULD, not HAS. And he explicitly states pacing 'does not mean halting model training or "
+ "technical progress'. A hedged risk discussion has been rewritten as an emergency. || ⚠️ AND THERE IS NO DEAL. No "
+ 'pact, no joint statement, no treaty, no government mandate. Three separate men reacted to the same news on the same '
+ 'day. Anthropic committed unilaterally to ONE narrow thing - giving outside evaluators employee-level access - and '
+ "OpenAI said it would match that single step. The 'Pacing the Frontier' letter of 28 Jul, signed by over 1,000 "
+ "industry employees, states IN ITS OWN TEXT that it is 'not calling for a pause or slowdown right now'. The 2026 "
+ 'regulation that does exist - the EU AI Act GPAI rules from 2 Aug and California SB 53 - is TRANSPARENCY AND '
+ "DISCLOSURE, not pacing. ⚠️ NOTE ALSO: Musk signed a 'pause AI' letter in MARCH 2023. That is a different event three "
+ 'years earlier and must not be blended into this one. || ⚠️ THE BEHAVIOURAL TEST, WHICH IS THE ONLY ONE THAT MATTERS '
+ 'FOR THIS BOARD: WORDS ARE FREE, CAPITAL EXPENDITURE IS NOT. Anthropic closed a 65bn round at a 965bn valuation on 28 '
+ 'May 2026 and filed confidentially for an IPO on 1 Jun, with revenue run-rate going 9bn at end-2025 to 47bn in May to '
+ "65bn in July. OpenAI's run-rate topped 40bn in August and it is still adding Stargate sites. xAI raised 20bn in "
+ "January explicitly to 'accelerate our world-leading infrastructure buildout'. ⚠️ NO CAPEX CUT, NO CANCELLED "
+ 'DATACENTRE AND NO REDUCED COMPUTE SPEND WAS FOUND AT ANY OF THE THREE IN 2026. The single documented pause was '
+ "OpenAI halting its 'Astra' training run for about two weeks in August after a security incident - narrow, temporary, "
+ 'and followed by continued spending. THE PEOPLE ASKING FOR A SLOWDOWN ARE SPENDING MORE, NOT LESS. || ⚠️ AND NO '
+ 'MARKET REACTION WAS FOUND. No dated report attributes any NVDA, MSFT, GOOGL or META move on 10-11 Sep to this story '
+ '- recorded as NOT FOUND rather than assumed. || IMPACT ON THIS BOARD: NONE TODAY, AND THE RIGHT THING TO WATCH IS '
+ "NOT THE RHETORIC. This board's AI exposure is 78% and every dollar of it depends on hyperscaler and lab CAPITAL "
+ 'SPENDING, not on what founders say about safety. ⚠️ THE REAL TRIGGER TO WATCH IS THE ONE ALREADY WRITTEN ON THIS '
+ "BOARD: a named hyperscaler CUTTING capex guidance. Kress's framing of top-five capex at 'nearly 800 billion in 2026 "
+ "and 1.3 trillion in 2027' is the number that would have to break. IF REGULATION EVER DOES BITE, IT BITES THE MODEL "
+ 'LABS FIRST AND THE PICKS-AND-SHOVELS LAYER LAST - and this board deliberately owns the shovels: TSM, ASML, AMAT, '
+ 'LRCX, KLAC, VRT, CEG, VST. A slower frontier still needs the same electricity and the same fabs. NO ACTION. || '
+ 'PREVIOUS ENTRY: Sep 12, 2026 - THE JPMORGAN META UPGRADE IS REAL, AND THE STOCK HAS ALREADY MOVED. Salee sent a '
+ 'cartoon-duck graphic claiming JPMorgan raised META to Overweight with an 820 target. ⚠️ DESPITE THE PRESENTATION, '
+ 'THE CORE CLAIM CHECKS OUT COMPLETELY. Doug Anmuth of JPMorgan upgraded Meta from NEUTRAL to OVERWEIGHT on 10 SEP '
+ '2026, target 640 to 820 - and 820 is framed in his note as a DECEMBER 2027 target, not a twelve-month one. The '
+ "rating history matters: Anmuth had DOWNGRADED Meta from Overweight to Neutral on 30 Apr 2026 over 'heavy "
  "infrastructure spending and limited visibility into the AI product pipeline', then cut the target again to 640. So "
  'this is a genuine reversal by the same analyst who turned bearish five months ago, not a routine reiteration. His '
  "stated reason: 'Meta is well-positioned to deliver consumer-driven AI products to its base of ~4B users, and that "
@@ -6742,7 +6783,39 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'forecast that argues against adding SNDK. That is not a second memory name on a different cycle - '
                     'it is the WORSE HALF of the same cycle. Test (2) on this row - NAND contract prices not falling '
                     'for two consecutive months - was already the right test; TrendForce now says it is the one most '
-                    'likely to fail. Weight it accordingly in December.'}]}
+                    'likely to fail. Weight it accordingly in December.'},
+           {'d': '2026-09-15',
+            'dl': 'Forgent Power Solutions fiscal Q4 and full-year results - three days away',
+            't': 'FPS',
+            'k': 'earnings',
+            'a': 'WATCH',
+            'amt': 0,
+            'c': 'confirmed',
+            'w': 'FIRST FULL YEAR SINCE THE FEB 2026 IPO. Do nothing before it. FPS is down 52% from its high, its IPO '
+                 'lock-up expired 4 Aug, and this board carries it with revG and Rule of 40 BLANK - the signature of a '
+                 'recently-listed name with unreliable vendor data.',
+            'cond': 'FPS-Q4-REPORT-SEP15 || ⚠️ FIRST, A CATEGORY CORRECTION: A SOCIAL-MEDIA GRAPHIC GROUPS FPS WITH '
+                    'QUANTA, STERLING AND MASTEC AS IF IT WERE A CONSTRUCTION CONTRACTOR. IT IS NOT. Forgent Power '
+                    "Solutions (NYSE, CIK 2080126, SIC 3620 'Electrical Industrial Apparatus') MANUFACTURES electrical "
+                    'distribution equipment - transfer switches, switchgear, transformers, power distribution units. '
+                    'It is in the SAME category as Eaton and Vertiv, which this board already funds at 11,000 and '
+                    '21,000. Anyone buying it as a contractor is buying something else. || WHAT IS GENUINELY STRONG: '
+                    'fiscal Q3 2026, the three months to 31 Mar, revenue 378.7m PLUS 103%, gross margin 34.6%, '
+                    'operating income 39.3m, net income 24.5m. ⚠️ BACKLOG 1.98bn, PLUS 157% YEAR ON YEAR, WITH A '
+                    'BOOK-TO-BILL OF 2.3 TIMES - it is booking more than twice what it ships. Ten analysts, average '
+                    'target 59.90 against a 31.82 close. || ⚠️ WHAT ARGUES FOR WAITING, AND THERE IS A LOT OF IT. IPO '
+                    '5 FEB 2026 AT 27.00. A FOLLOW-ON OFFERING PRICED 27 MAR AT 49.00 - anyone who bought that deal is '
+                    'down about 35%. THE IPO LOCK-UP ON 56 MILLION SHARES EXPIRED 4 AUG 2026, five weeks ago. The '
+                    'stock is 31.82 against a 66.00 high - DOWN 52%. Trailing earnings of 567 times are meaningless on '
+                    'a near-zero prior-year base; forward earnings of 31.6 times assume guidance of 73 to 82% revenue '
+                    'growth is delivered. ⚠️ AND THERE IS LITIGATION ONCE REMOVED: a plaintiff alleges he was squeezed '
+                    'out of a 50% stake in MGM Transformers, the business Neos Partners rolled into what became '
+                    'Forgent, and seeks up to 200m; the motion to dismiss was DENIED on 31 Oct 2025. The defendants '
+                    'are Neos Partners LP and MGM Transformers, NOT Forgent Power Solutions Inc - real but once '
+                    "removed. || THE RULE THAT APPLIES IS THIS BOARD'S OWN, WRITTEN ON SKHY, SPCX AND CRWD: VENDOR "
+                    'DATA ON RECENTLY-LISTED SECURITIES IS UNRELIABLE, and FPS proves it here - revG and Rule of 40 '
+                    'are both BLANK on this board. A first full-year report with audited numbers fixes that. WAIT FOR '
+                    '15 SEPTEMBER. It is three days away and it costs nothing.'}]}
 
 SELLBOOK = {'updated': '2026-09-12',
  'comm': 8.56,
