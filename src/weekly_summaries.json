@@ -430,6 +430,19 @@
     }
    ],
    "week": "2026-08-03"
+  },
+  {
+   "points": [
+    {
+     "s": "-",
+     "text": "SOLD 11 Sep: 55 shares at 50.70. Gross 2,788.50 less 8.56 commission and 0.08 SEC fee = 2,779.86 against a cost of 3,454.62. REALISED -674.76, or -19.5%. Position closed."
+    },
+    {
+     "s": "!",
+     "text": "⚠️ The plan was a Tier C limit at 55.50; this filled at about the market, roughly 264 below the plan price. Defensible - the limit sat 9.4% above market with no deadline - but it is why the programme is behind its estimate."
+    }
+   ],
+   "week": "2026-09-07"
   }
  ],
  "AMPX": [
@@ -1252,6 +1265,19 @@
     }
    ],
    "week": "2026-08-10"
+  },
+  {
+   "points": [
+    {
+     "s": "-",
+     "text": "SOLD 11 Sep: 10 shares at 297.00. Proceeds 2,961.36 against a cost of 3,395.12. REALISED -433.76, or -12.8%. Position closed. Group 4 now holds the five names that earn their slot: ANET, CRDO, APH, LITE and ALAB."
+    },
+    {
+     "s": "!",
+     "text": "⚠️ The plan was a limit at 330.00 - about 330 below the plan price on 10 shares. COHR had already fallen from the 301.88 reference of 8 Sep, so the limit was moving away rather than closer."
+    }
+   ],
+   "week": "2026-09-07"
   }
  ],
  "COHU": [
@@ -2171,6 +2197,19 @@
     }
    ],
    "week": "2026-08-03"
+  },
+  {
+   "points": [
+    {
+     "s": "+",
+     "text": "SOLD 11 Sep: 4 shares at 464.97, above the 464.75 reference. Proceeds 1,851.27 against a cost of 1,789.76. REALISED +61.51, the only gain in the batch. Position closed."
+    },
+    {
+     "s": "!",
+     "text": "⚠️ The one to learn from: HUBB was BOUGHT in early September for 1,789.76 and sold eleven days later when the restructure changed the answer. No harm done at +61.51 - but two commissions plus the regulatory fee on a four-share position consumed most of what the move earned."
+    }
+   ],
+   "week": "2026-09-07"
   }
  ],
  "HUT": [
@@ -3837,6 +3876,18 @@
   },
   {
    "points": [
+    {
+     "s": "+",
+     "text": "FILLED 11 Sep: 25 shares at 156.25, a cash debit of 3,914.81 including commission. This executes the 4,686.38 released on 10 Sep. Position 50 to 75 shares, cost 8,313.62 to 12,228.43, average 163.0457."
+    },
+    {
+     "s": "!",
+     "text": "⚠️ It filled 3.4% ABOVE the close - ORCL ended 11 Sep at 151.16 - so the position shows an immediate mark-down. A limit fills where it fills and the thesis is unchanged, but it is worth knowing why the line looks red."
+    },
+    {
+     "s": "!",
+     "text": "Only 771.57 of room remains against the 13,000 budget. At 8.56 a trade that is 1.1% in commission alone. RECOMMENDATION: treat ORCL as COMPLETE and close the remaining room rather than place a fourth order."
+    },
     {
      "s": "+",
      "text": "RPO 664bn, up 209bn year-over-year - Oracle states only the dollar figure, never a percentage; the +46% doing the rounds is a correct derivation (209/455 = 45.93%), not an Oracle quote."
