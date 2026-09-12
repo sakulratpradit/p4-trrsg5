@@ -2548,6 +2548,15 @@
     }
    ],
    "week": "2026-07-27"
+  },
+  {
+   "points": [
+    {
+     "s": "0",
+     "text": "Named as the fallback destination for 4,000 if Oracle FAILS its December cash test: 14,000 to 18,000. Rule of 40 of 43.0, only 25% of its budget spent, and the most direct beneficiary of TSMC raising 2026 capex guidance from 52-56bn to 60-64bn."
+    }
+   ],
+   "week": "2026-09-07"
   }
  ],
  "KO": [
@@ -2603,6 +2612,21 @@
     }
    ],
    "week": "2026-08-03"
+  }
+ ],
+ "LHX": [
+  {
+   "points": [
+    {
+     "s": "!",
+     "text": "Named as the funding source for the conditional ORCL raise: 9,000 trimmed to 5,000, but only if Oracle passes all five cash tests. Revenue growth 7.3% is the SLOWEST of all 37 funded names and the Rule of 40 of 19.5 is second-lowest after Oracle's. Doubling in five years needs about 14.9% a year."
+    },
+    {
+     "s": "0",
+     "text": "⚠️ It has NEVER BEEN BOUGHT - budget 9,000, cost 0.00 - so the trim sells nothing, pays no commission, realises no loss and creates no tax event. A 5,000 stub is kept on purpose: it leaves Space & Defence with one profitable anchor against RKLB (Rule of 40 -0.7) and AVAV (net margin -10.1%), both loss-making."
+    }
+   ],
+   "week": "2026-09-07"
   }
  ],
  "LITE": [
@@ -3876,6 +3900,18 @@
   },
   {
    "points": [
+    {
+     "s": "!",
+     "text": "CONDITIONAL RULE ARMED 12 Sep, nothing changed yet: ORCL rises 13,000 to 17,000 ONLY if all five cash tests pass at the Q2 FY2027 print (mid-December). (1) quarterly free cash flow better than -5,396m; (2) FY27 capex guidance held at 90-95bn; (3) no further downgrade below BBB-; (4) diluted shares growing under 0.75% in the quarter; (5) Cloud Infrastructure growth above 80%. FOUR OUT OF FIVE IS A FAIL."
+    },
+    {
+     "s": "!",
+     "text": "⚠️ Said plainly because it should be: on this board's own quality screen Oracle is today the WEAKEST funded name. Rule of 40 = revenue growth + free-cash-flow margin = 21.6 + (-28.72bn/71.78bn = -40.0) = MINUS 18.4. The only deeply negative score among 37 funded names; PLTR in the same group is +133.1."
+    },
+    {
+     "s": "0",
+     "text": "But all of that minus 18.4 is capex, not the business. If free cash flow merely reached BREAKEVEN the Rule of 40 would be +21.6. Operating expenses fell from 71% of revenue to 65% and operating margin is 35% and rising. That is precisely why the test is about cash and not about backlog - 664bn of RPO is a promise, not money."
+    },
     {
      "s": "+",
      "text": "FILLED 11 Sep: 25 shares at 156.25, a cash debit of 3,914.81 including commission. This executes the 4,686.38 released on 10 Sep. Position 50 to 75 shares, cost 8,313.62 to 12,228.43, average 163.0457."
