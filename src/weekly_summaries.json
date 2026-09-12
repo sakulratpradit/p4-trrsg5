@@ -3359,6 +3359,10 @@
   {
    "points": [
     {
+     "s": "+",
+     "text": "⚠️ A NAMED FORECAST THAT SUPPORTS MICRON AND UNDERCUTS SANDISK. TrendForce, 30 Jul 2026: DRAM prices trending UP through 2027 because 'the supply-demand gap is expected to widen further', with meaningful new capacity 'not expected to materialize until 2028' - while NAND faces a 'looser supply environment in 2H27 as new production capacity comes online', pressuring prices DOWN. MICRON IS MOSTLY DRAM. That is the better half of the split."
+    },
+    {
      "s": "!",
      "text": "⚠️ A 12 Sep ranking graphic puts Micron FIRST among chip companies on gross margin at 74.67%, which makes it look like the best business in semiconductors. IT IS NOT - IT IS THE MOST CYCLICAL ONE, AT THE TOP OF ITS CYCLE. Memory gross margins swing from roughly 20% to 75% and back. Broadcom's 65.66% is structural and does not collapse; Micron's does."
     },
@@ -3717,6 +3721,18 @@
   },
   {
    "points": [
+    {
+     "s": "0",
+     "text": "⚠️ A viral chart headlined 'Samsung is more profitable than NVIDIA' compares two DIFFERENT quarters. Six of its seven bars are Q1 2026 operating profit and are exact (NVIDIA 53,536m); Samsung ALONE is taken from Q2 2026 (89.49tn won) when its own Q1 was 57.2tn. The currency is invented too - the chart implies 1,527 won to the dollar against a 1,341.11 spot rate."
+    },
+    {
+     "s": "+",
+     "text": "Same quarter, same basis: NVIDIA's Q2 FY27 operating income was 63,734m against Samsung's Q2 2026 of 89.49tn won - which is 66.7bn at spot (Samsung ahead) or 62.0bn at the rate the Korea Herald used (NVIDIA ahead). ⚠️ THE ANSWER DEPENDS ENTIRELY ON THE EXCHANGE RATE, so the headline is not a fact about the companies."
+    },
+    {
+     "s": "0",
+     "text": "⚠️ What the chart omits is the point: Samsung earns roughly what NVIDIA earns and THE MARKET VALUES IT AT A QUARTER OF THE PRICE - about 1.28tn against NVIDIA's 5.27tn, 12.0x trailing earnings against 27.6x. Samsung's semiconductor division was at a 4.58tn won LOSS in Q1 2023 and just 0.4tn - essentially breakeven - as recently as Q2 2025. The market is not mispricing it; it is refusing to capitalise a peak."
+    },
     {
      "s": "!",
      "text": "⚠️ NVIDIA WAS ABSENT FROM A 12 Sep 'chip companies ranked by gross margin' graphic - and it belongs at NUMBER ONE. NVDA's gross margin is 75.0% (SEC-filed, Q2 FY2027) against the Micron figure the slide put first at 74.67%. A ranking of chip companies that omits the largest one in the world, which would top the list, is not a ranking. Four of its nine logos were wrong too, including Micron's row carrying the NVIDIA eye."
@@ -4547,6 +4563,22 @@
   {
    "points": [
     {
+     "s": "!",
+     "text": "⚠️ THE QUARANTINE IS CONFIRMED, NOT WEAKENED. SK hynix's KRX market capitalisation is about 1,320.70tn won - roughly 0.98 TRILLION dollars at the 1,341.11 spot rate - against the 1.352 TRILLION this board carries for the ADR. STILL ABOUT A 38% PREMIUM, barely moved from the 43% measured on 9 Sep."
+    },
+    {
+     "s": "!",
+     "text": "⚠️ And the unexplained figure is STILL unexplained: Q2 2026 NET INCOME of 93.9tn won EXCEEDS both operating profit (60.5tn) AND revenue (79.3tn) - a net margin above 100%, which no source retrieved can explain. That is the exact anomaly that caused seven board fields to be nulled on 10 Sep. Both original grounds for the quarantine hold."
+    },
+    {
+     "s": "0",
+     "text": "⚠️ Genuinely new: SK hynix now has a REAL Nasdaq Global Select listing - an F-1-registered primary offering, 1 ADR = 0.1 common share, underwritten by BofA, Citi, Goldman and JPMorgan. A better instrument than this board assumed. It does not change the decision - a 38% premium is a 38% premium whatever exchange it trades on."
+    },
+    {
+     "s": "0",
+     "text": "Cyclicality, for scale: SK hynix operating profit went from a 3.402tn won LOSS in Q1 2023 to 60.543tn in Q2 2026 - about an eighteenfold swing - and was only 9.2tn as recently as Q2 2025, so it is up more than six times in twelve months."
+    },
+    {
      "s": "+",
      "text": "Q2 2026: revenue KRW79.3187tn against KRW22.232tn a year earlier, PLUS 257%; operating profit KRW60.5426tn - a 76% operating margin. Gartner CY2025 rank 3 at 60,640m, +37.2%."
     },
@@ -4668,6 +4700,10 @@
   },
   {
    "points": [
+    {
+     "s": "!",
+     "text": "⚠️ ONE DAY AFTER SANDISK WAS RAISED AS THE SECOND MEMORY NAME, A NAMED FORECAST ARGUES AGAINST IT. TrendForce (30 Jul 2026) sees NAND under a 'looser supply environment in 2H27 as new production capacity comes online', pressuring prices DOWN - while DRAM rises through 2027. SanDisk is NAND; Micron is mostly DRAM. A second memory name on the WORSE HALF of the same cycle is not diversification, it is concentration with extra steps. Test (2) on the December row - NAND contract prices not falling two months running - was already the right test; TrendForce now says it is the one most likely to fail."
+    },
     {
      "s": "+",
      "text": "RAISED 12 Sep as the candidate SECOND MEMORY NAME. Memory is a one-name group at 51,000 (5.1% of the board) and the SKHY quarantine already recorded that it needs a second. SNDK is US-listed NAND - no ADR premium of the kind that disqualified SK hynix - with revenue growth 169.0%, forward earnings 9.56, and a RULE OF 40 OF 202.8, the highest on this entire board, ahead of MU's 196.0."
