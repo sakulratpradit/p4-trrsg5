@@ -606,6 +606,10 @@
   {
    "points": [
     {
+     "s": "0",
+     "text": "Margin context recorded 13 Sep while rejecting HPE: ARISTA runs 62.9% gross and 45.4% GAAP operating margin, against HPE's 40.1% and 11.4% and Dell's 20.9% and 11.5%. Cisco, the closest large-cap comparable, runs 64.1% and 24.7%. This is why Group 4 owns the high-margin networking layer and not the server vendors, whatever their AI backlog."
+    },
+    {
      "s": "+",
      "text": "Q2 2026 revenue 3.036bn, +37.7%, GAAP gross margin 62.9% / non-GAAP 63.4%. The margin is the point: the Thai supply-chain slide lists Dell (20.9%) and Supermicro (17.5%) in the same AI build-out; this board owns the high-margin layer on purpose."
     }
@@ -1650,6 +1654,19 @@
     }
    ],
    "week": "2026-08-03"
+  },
+  {
+   "points": [
+    {
+     "s": "!",
+     "text": "⚠️ A CORRECTION OWED, recorded 13 Sep. On 10 Sep I grouped HPE with Dell and Supermicro as 'box assemblers' and justified excluding all four by citing SMCI's 17.5% and DELL's 20.9% GROSS margins. That was sloppy about HPE: ITS GROSS MARGIN IS 40.1%, roughly double either. The conclusion survives - HPE's OPERATING margin of 11.4% is essentially identical to Dell's 11.5%, so the better gross margin is entirely spent before it reaches operating profit - but the right answer was reached for the wrong reason, and the reasoning should not be reused carelessly."
+    },
+    {
+     "s": "0",
+     "text": "Full comparison, most recent quarters: SMCI 17.5% gross / 13.4% operating (press flags that gross figure as a one-off mix benefit); DELL 20.9% / 11.5%; HPE 40.1% / 11.4%; CISCO 64.1% / 24.7%; ARISTA 62.9% / 45.4%. Dell rose 11.98% on 11 Sep alongside HPE - both on ORACLE's earnings, not their own news."
+    }
+   ],
+   "week": "2026-09-07"
   }
  ],
  "ENPH": [
@@ -4000,6 +4017,10 @@
   },
   {
    "points": [
+    {
+     "s": "+",
+     "text": "⚠️ WORTH KNOWING: the AI-infrastructure rally Salee saw on 11 Sep - HPE +12.44%, DELL +11.98%, NETAPP +8.54%, CoreWeave and Nebius +4% - was caused by ORACLE'S OWN EARNINGS the previous evening (664bn RPO, OCI +121%). Oracle itself rose 7%. He bought 25 more ORCL shares that same day, so he was already on the right side of the move other people were being sold as a new idea."
+    },
     {
      "s": "!",
      "text": "THE ORACLE BUDGET TEST - FIVE CONDITIONS, ALL FIVE MUST PASS before ORCL rises from 13,000 to 17,000. Checked at Oracle's Q2 FY2027 results, expected mid-December 2026, and decided at the 10 December quarterly review. ⚠️ FOUR OUT OF FIVE IS A FAIL."
