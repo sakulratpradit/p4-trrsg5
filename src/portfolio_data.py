@@ -3,26 +3,159 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Sep 13, 2026 - THE THREE THINGS SALEE APPROVED, ALL DONE. NO BUDGET HAS CHANGED, NOTHING BOUGHT OR SOLD. || (1) THE '
- 'STALLED PRICE JOB IS CLEARED. All 71 remaining tickers moved from the 8 SEP close to VERIFIED 11 SEP CLOSES, so the '
- 'WHOLE BOARD - 93 tickers - now stands on one date for the first time since 8 September. Market value at fresh prices '
- 'is 689,978.31 on 577,024.39 invested, PLUS 112,953.92 or PLUS 19.58%, across 42 open positions; lifetime realised '
- 'MINUS 4,504.75; net since inception PLUS 108,449.17. || ⚠️ AND THE REFRESH REVEALED SOMETHING THE STALE BOARD WAS '
- 'HIDING: 18 OF 71 NAMES MOVED MORE THAN 6% IN THREE SESSIONS, AND THEY ARE NOT RANDOM. The falls cluster almost '
- 'entirely in the speculative nuclear, space, quantum and neocloud complex: XE MINUS 22.04% (19.15 to 14.93), LEU '
- 'MINUS 17.91%, OKLO MINUS 16.37%, CRWV MINUS 10.86%, ASTS MINUS 9.47%, IONQ MINUS 9.19%, LUNR MINUS 8.48%, TEM MINUS '
- '8.21%, STX MINUS 8.21%, NBIS MINUS 7.93%, LRCX MINUS 6.93%, AXTI MINUS 6.89%, IREN MINUS 6.61%, BWXT MINUS 6.41%, SE '
- 'MINUS 6.26%, SNDK MINUS 6.02%. ONLY TWO NAMES ROSE MORE THAN 6%: NET PLUS 7.82% and DELL PLUS 6.26%. ⚠️ THIS IS THE '
- 'SAME PATTERN AS THE PHOTONIC DRAWDOWN LOOKED AT EARLIER TODAY - the high-multiple, low-or-no-profit end of the '
- 'market came off together while the profitable names held. ⚠️ I HAVE NO SOURCED CAUSE FOR IT: NO FILING, NO NAMED '
- 'EXECUTIVE AND NO WIRE REPORT EXPLAINS A SECTOR-WIDE MOVE OF THIS SHAPE. NO SOURCED CAUSE FOUND. It is recorded as an '
- 'observation, not a thesis, and NOTHING HAS BEEN TRADED ON IT. || ⚠️ WHY THIS MATTERS FOR THURSDAY. SIX TRANCHE-1 '
- 'BUYS WORTH 46,526.13 FALL ON 17 SEPTEMBER - TSM 15,000, GEV 7,852.70, VRT 6,475.56, PANW 6,238.85, CEG 5,959.02, V '
- '5,000 - the day after the FOMC decision. Those six were sized against 8 September prices. Three of them have moved '
- 'since: TSM is now 433.24 (was 439.00), PANW 330.65, V 370.45. THE DOLLAR AMOUNTS STILL STAND - they are budget '
- 'allocations, not share counts - but the share counts they buy have changed, and TSM is now CHEAPER than when the '
- 'tranche was written, which is the right direction. NO CHANGE IS MADE TO ANY OF THE SIX. || (2) TSEM IS NOW ON THE '
- 'BOARD AS AN UNFUNDED 93RD TICKER IN GROUP 2, FOUNDRY EQUIPMENT AND TEST. It has NO BUDGET and nothing has been '
+ASOF = ("Sep 14, 2026 - THE 'DOT-COM 2000 vs AI 2026' SLIDE, AND IT FAILS ITS OWN TEST. NO BUDGET HAS CHANGED, NOTHING BOUGHT "
+ 'OR SOLD. ⚠️⚠️ BOTH MEN PICTURED ON IT ARE ON THE RECORD SAYING THE OPPOSITE OF WHAT IT CLAIMS. || (1) RAY DALIO, 30 '
+ 'JULY 2026, ON THE DIARY OF A CEO PODCAST. Asked about Jeremy Grantham calling this the biggest investment bubble in '
+ "American history, DALIO ANSWERED 'HE'S RIGHT' AND 'CLASSIC SIGNS THAT WE'RE IN [ONE]'. Verbatim, as reported by "
+ "Fortune on 4 August 2026: 'Wealth is not the same as money. You see a lot of people getting wealthy but you can't "
+ "spend the wealth.' And: 'There's almost nothing that's easier to produce than stock.' And, on the mechanism: 'People "
+ "get into a new technology, they say that's miraculous, I can bet on that. Sometimes they borrow money to bet on it, "
+ "AND THEY LOSE SIGHT OF THE PRICE.' He explicitly compares the present to 1929 and 2000. THE SLIDE USES HIM TO "
+ "ENDORSE 'THIS TIME IS DIFFERENT'. HE HAS SAID THE OPPOSITE, IN PUBLIC, SIX WEEKS AGO. || (2) ⚠️ AND BUFFETT'S 1999 "
+ "ARGUMENT WAS NOT 'DOT-COMS HAD NO PROFIT'. THAT IS THE SLIDE'S INVENTION AND IT MATTERS ENORMOUSLY, BECAUSE HIS REAL "
+ "ARGUMENT APPLIES TO A PROFITABLE AI SECTOR TOO. In 'Mr. Buffett on the Stock Market', Fortune, 22 November 1999, "
+ "drawn from his July 1999 Sun Valley speech, he argued two things. FIRST, interest rates: 'These act on financial "
+ "valuations the way gravity acts on matter: THE HIGHER THE RATE, THE GREATER THE DOWNWARD PULL.' SECOND, that "
+ "corporate profits as a share of GDP had run in a 4% to 6.5% band since 1951 and 'you have to be wildly optimistic to "
+ "believe that corporate profits as a percent of GDP can, for any sustained period, hold much above 6%.' ⚠️ AND THIRD, "
+ 'THE PART THE SLIDE ERASES ENTIRELY - THAT A TRANSFORMATIVE INDUSTRY RELIABLY FAILS TO REWARD ITS INVESTORS. '
+ "Verbatim: 'There appear to have been at least 2,000 car makes... we came down to three U.S. car companies - "
+ "THEMSELVES NO LOLLAPALOOZAS FOR INVESTORS.' And on aviation: 'I like to think that if I'd been at Kitty Hawk in 1903 "
+ "when Orville Wright took off, I would have been farsighted enough... to shoot him down.' His conclusion, verbatim: "
+ "'The key to investing is NOT assessing how much an industry is going to affect society... but rather determining the "
+ "COMPETITIVE ADVANTAGE OF ANY GIVEN COMPANY.' THE CARS WERE REAL. THE AEROPLANES WERE REAL. THE PROFITS WERE REAL. "
+ "THE INVESTORS STILL LOST. 'AI IS REAL' IS THEREFORE NOT AN ARGUMENT - IT IS THE PREMISE BUFFETT WAS WARNING ABOUT. "
+ "|| ⚠️ NOTE ALSO WHAT IT COST HIM TO BE RIGHT EARLY: BERKSHIRE'S BOOK VALUE ROSE 0.5% IN 1999 AGAINST THE S&P 500's "
+ "PLUS 21.0% - UNDERPERFORMANCE OF 20.5 POINTS, which he called 'the worst absolute performance of my tenure and, "
+ "compared to the S&P, the worst relative performance as well.' In 2000 Berkshire made PLUS 6.5% against the S&P's "
+ 'MINUS 9.1%. Being right about a bubble looks exactly like being wrong, for about a year. || (3) ⚠️⚠️ THE CASE THAT '
+ 'SETTLES THE WHOLE ARGUMENT IS CISCO, AND IT IS THE ONE THE SLIDE CANNOT SURVIVE. Cisco in 2000 was NOT a dot-com. It '
+ 'was the profitable, cash-generative, real-revenue INFRASTRUCTURE company that sold the plumbing to everyone else - '
+ "exactly what the slide says makes 2026 safe. On 2 APRIL 2000 it PASSED MICROSOFT AS THE WORLD'S MOST VALUABLE "
+ "COMPANY at 555.5 BILLION DOLLARS against Microsoft's 541.6bn, at a share price of 80.06 and A PRICE/EARNINGS RATIO "
+ 'OF 234 AND PRICE/SALES OF 38.9. IT THEN FELL 88%, from about 79 to a low of 9.50 within two years. ⚠️ IT DID NOT '
+ 'REGAIN THAT SHARE PRICE UNTIL 11 DECEMBER 2025 - TWENTY-FIVE YEARS AND NINE MONTHS LATER. AND ITS MARKET '
+ 'CAPITALISATION STILL HAS NOT RECOVERED: 442.08bn at the 11 Sep 2026 close against 555.5bn in April 2000, and that is '
+ 'in NOMINAL dollars, before inflation. CISCO HAD REAL PROFITS AND REAL CASH FLOW AND WAS FUNDAMENTAL TO THE '
+ 'TECHNOLOGY. IT DID NOT MATTER. THE PRICE MATTERED. || (4) THE RIGHT HISTORICAL ANALOGY IS NOT THE DOT-COM RETAILERS '
+ '- IT IS THE 1998-2001 TELECOM AND FIBRE BUILDOUT, WHICH IS STRUCTURALLY WHAT AI DATACENTRES ARE. The National Bureau '
+ "of Economic Research, working paper 14290: 'From 1997 to 2002, investors added 880 BILLION DOLLARS to this industry. "
+ 'Subsequently OVER ONE-HALF OF THIS INVESTMENT HAS BEEN LOST... with AT LEAST 63 TELECOMMUNICATIONS FIRMS GOING '
+ "BANKRUPT.' Communications equipment investment went from about 62bn a year in Q1 1996 to over 135bn by Q4 2000, then "
+ 'fell to under 93bn by Q4 2001 - 69% of a year earlier (Federal Reserve Bank of Richmond, Fall 2003). GLOBAL CROSSING '
+ 'SPENT 13.7bn BUILDING ITS NETWORK AND FILED CHAPTER 11 ON 28 JANUARY 2002 WITH 12.39bn OF DEBT AGAINST 22.44bn OF '
+ 'ASSETS - essentially the entire network was debt-financed. WorldCom followed on 21 July 2002 with 103.8bn of assets '
+ 'and 41bn of debt, the largest bankruptcy in US history at the time. Lucent lost about 250 BILLION of market value, '
+ 'equal to 2% of US GDP, having committed 8bn to VENDOR FINANCING - lending customers the money to buy its own '
+ "products. ⚠️ AND THE DEMAND WAS REAL: Andrew Odlyzko's research found US backbone traffic genuinely DOUBLING ABOUT "
+ 'ONCE A YEAR. It just was not doubling every 90 days as the industry claimed. REAL DEMAND GROWING FAST IS NOT '
+ 'PROTECTION AGAINST OVERBUILDING - IT IS THE THING THAT JUSTIFIES THE OVERBUILDING. || (5) SO WHAT IMMUNITY DOES AI '
+ 'ACTUALLY HAVE? THE HONEST ANSWER IS THAT IT IS REAL AT THE TOP OF THE STACK AND DISSOLVES AS YOU GO DOWN. THE REAL '
+ 'IMMUNITY - AND IT IS GENUINE: the buyers can pay cash. Microsoft generated 182.9bn of operating cash flow in FY2026. '
+ "In 2000, Cisco's customers were debt-financed telecoms and Lucent was LENDING them the purchase price. NVIDIA's Q2 "
+ 'FY2027, quarter to 26 July 2026: revenue 96.2bn, GAAP GROSS MARGIN 75.0%, GAAP operating income 63.734bn, GAAP net '
+ 'income 59.688bn, with Q3 guided to 108.0bn. That is not a 2000-style receivable from an insolvent counterparty; that '
+ "is cash. Jensen Huang, verbatim: 'Now, compute is revenue.' || ⚠️⚠️ BUT THE IMMUNITY IS WEAKENING AND THE FILINGS "
+ "SHOW IT. THE CASH-FUNDED ERA IS ENDING. Stefan Hepp of Chicago Booth, published 7 August 2026: 'The hyperscalers "
+ 'issued approximately 120 BILLION DOLLARS OF CORPORATE BONDS LAST YEAR, compared to an average of about 28 BILLION '
+ "ANNUALLY BETWEEN 2020 AND 2024.' FOUR TIMES THE RUN RATE. And in the filings themselves: AMAZON'S "
+ 'TRAILING-TWELVE-MONTH FREE CASH FLOW IS NEGATIVE 7.6 BILLION, against POSITIVE 18.2bn a year earlier, with 67.0bn OF '
+ 'LONG-TERM DEBT ISSUED IN THE FIRST HALF OF 2026 ALONE. Meta issued 24.9bn net in H1. Alphabet sold 20bn of dollar '
+ 'notes AND 5.5bn of sterling notes on 13 February 2026 INCLUDING A ONE-BILLION-POUND HUNDRED-YEAR TRANCHE MATURING IN '
+ '2126 AT 6.125%. ⚠️ ONLY MICROSOFT IS STILL NET REPAYING - 3.0bn of repayments and no new issuance in the nine months '
+ 'to 31 March 2026. || ⚠️ AND THE OFF-BALANCE-SHEET STRUCTURES HAVE ARRIVED, WHICH IS THE SINGLE CLOSEST ECHO OF 2000. '
+ "The META-BLUE OWL 'HYPERION' JOINT VENTURE, announced 21 October 2025: about 27 BILLION of development cost, BLUE "
+ 'OWL FUNDS OWN 80% AND META ONLY 20%, with Meta taking a one-time distribution of about 3bn. ⚠️ AND META GAVE THE '
+ 'JOINT VENTURE A RESIDUAL VALUE GUARANTEE FOR THE FIRST 16 YEARS OF OPERATIONS - a capped cash payment if certain '
+ 'conditions are met after a non-renewal or termination. THAT IS RISK THAT SITS OFF THE BALANCE SHEET UNTIL IT DOES '
+ 'NOT. Hepp also documents about 250bn of project and data-centre finance, about 200bn of private credit, about 60bn '
+ 'of asset-backed securities, AND ABOUT 35 BILLION BORROWED SECURED DIRECTLY AGAINST GPUs. In June 2026 APOLLO AND '
+ "BLACKSTONE CREATED AN SPV TO RAISE 35 BILLION OF DEBT FOR ANTHROPIC'S COMPUTING CAPACITY. ⚠️ I HAVE A DISCLOSED "
+ 'CONFLICT REGARDING ANTHROPIC AND IT IS ON FILE IN THIS PROJECT; I report that item as fact and take no view on it. '
+ '|| ⚠️ THE 3 TRILLION DOLLAR NUMBER IS CORROBORATED TWICE, INDEPENDENTLY. The Wall Street Journal, 17 August 2026, '
+ 'reporters Peter Rudegeair and Peter Santilli, puts about 3 TRILLION of AI-related OFF-BALANCE-SHEET commitments '
+ 'across NINE firms - Alphabet, Amazon, Meta, Microsoft, Oracle, Nvidia, Broadcom, SpaceX and AMD - against roughly '
+ '600bn of reported twelve-month capex. Morgan Stanley Research, reported by Axios on 27 August 2026, reaches about '
+ 'the same 3 TRILLION across SEVEN firms, split as 1.1 TRILLION OF DATA-CENTRE LEASES THAT HAVE NOT YET BEGUN plus 1.7 '
+ 'TRILLION of purchase commitments, against 770bn of debt and leases that ARE on the balance sheets. ⚠️ SAME HEADLINE '
+ 'NUMBER, DIFFERENT CONSTRUCTION, AND I COULD NOT REACH THE ORIGINAL WSJ TEXT - both readings are second-hand. || (6) '
+ '⚠️ THE DEPRECIATION QUESTION, WHICH IS WHERE I WOULD LOOK FIRST FOR TROUBLE. THE COMPANIES DISAGREE WITH EACH OTHER '
+ 'ABOUT THE SAME HARDWARE. AMAZON SHORTENED server life FROM SIX YEARS TO FIVE effective 1 January 2025, stating the '
+ "reason in its own 10-K: 'THE SHORTER USEFUL LIVES ARE DUE TO THE INCREASED PACE OF TECHNOLOGY DEVELOPMENT, "
+ "PARTICULARLY IN THE AREA OF ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING.' META WENT THE OTHER WAY, EXTENDING most "
+ 'servers to 5.5 YEARS from the same date, which REDUCED depreciation by 2.29bn and RAISED net income by 1.96bn over '
+ 'nine months of 2025. AND MICROSOFT, effective FY2027, EXTENDED ITS DATACENTRES AND OFFICE BUILDINGS FROM 15 YEARS TO '
+ "25 - CFO Amy Hood, verbatim, 29 July 2026 - though she also said the FY27 operating-income benefit is 'minimal'. ⚠️ "
+ "MICHAEL BURRY'S OBJECTION IS THE SHARPEST SENTENCE IN THIS WHOLE FILE, VERBATIM FROM HIS 8 JULY 2026 POST: "
+ "'DEPRECIATION CANNOT MOVE TWO DIRECTIONS AT ONCE IF IT WERE A MEASUREMENT OF SOMETHING. IT IS AN ECONOMIC LEVER, NOT "
+ "A PHYSICAL MEASUREMENT.' He estimates 176bn of understated depreciation and overstated profit across 2026-2028 on a "
+ "two-to-three-year real economic life. ⚠️ THE COUNTER-ARGUMENT IS ALSO NAMED AND ALSO REAL: CoreWeave's CEO Michael "
+ 'Intrator points to A100s still fully booked and H100s re-leased at 95% OF THEIR ORIGINAL PRICE when a contract '
+ 'expired. I do not know who is right. I DO know that if Burry is right, reported hyperscaler earnings are overstated '
+ 'and every P/E on this board built on them is understated. || (7) THE MEASURABLE COMPARISONS, WHICH ARE NOT ALL '
+ 'REASSURING. SHILLER CAPE TODAY IS 41.09 AT THE 11 SEP CLOSE AGAINST AN ALL-TIME HIGH OF 44.19 IN DECEMBER 1999, on a '
+ 'mean of 17.42 - SO WE ARE AT 93% OF THE DOT-COM PEAK ON THAT MEASURE. ⚠️ CONCENTRATION IS WORSE THAN 2000, NOT '
+ "BETTER: the top ten companies are NEARLY 41% OF THE S&P 500's WEIGHT against ROUGHLY 23% IN 2000, per RBC Wealth "
+ "Management and FactSet as of 31 Dec 2025. The IMF notes the Herfindahl-Hirschman concentration index 'for two out of "
+ "six major equity markets currently exceeds its 95th historical percentile'. ⚠️ THE FEDERAL RESERVE'S OWN RESEARCH, "
+ 'Geng Li, FEDS Notes, 6 July 2026: IP and equipment investment as a share of GDP peaked near 11.5% IN 2000 AND AS OF '
+ "Q1 2026 SITS 'ONLY A TOUCH LOWER THAN THE YEAR 2000 PEAK', and 'by the early 2000s, the boom ended with a large "
+ "scale of unproductive capital, such as the DARK FIBER'. ⚠️ THE IMF, Global Financial Stability Report, April 2026: "
+ "to justify current prices, S&P 500 and Nasdaq earnings per share 'WOULD HAVE TO GROW AT COMPOUND ANNUAL RATES OF "
+ "CLOSE TO 30 PERCENT AND 35 PERCENT, RESPECTIVELY, SUBSTANTIALLY EXCEEDING CURRENT ANALYST EXPECTATIONS.' ⚠️ GOLDMAN "
+ 'SACHS, Dominic Wilson and Vickie Chang, 10 July 2026: AI-related companies have gained ABOUT 27 TRILLION OF MARKET '
+ "VALUE SINCE NOVEMBER 2022 against Goldman's own baseline estimate of ABOUT 9 TRILLION of present-discounted "
+ "AI-related capital revenues, and 'the market is overestimating the persistence of those earnings streams beyond the "
+ "next 2-3 years, PARTICULARLY FOR THOSE WHO ARE BENEFITING DIRECTLY FROM SUPPLYING THE CAPEX BOOM.' THAT LAST CLAUSE "
+ 'DESCRIBES GROUPS 1, 2, 4 AND 6 OF THIS BOARD. || ONE MEASURE IS GENUINELY BETTER THAN 2000: THE S&P 500 FORWARD '
+ 'PRICE/EARNINGS RATIO IS 19.1 AS OF 11 SEPTEMBER 2026 per FactSet, against a five-year average of 19.8 and a ten-year '
+ "average of 19.0 - i.e. ORDINARY. ⚠️ BUT THAT IS ONLY MEANINGFUL IF THE 'E' IS HONEST, WHICH IS EXACTLY WHAT THE "
+ 'DEPRECIATION ARGUMENT DISPUTES. AND I COULD NOT SOURCE A MARCH 2000 FORWARD P/E TO COMPARE IT AGAINST: NOT FOUND. || '
+ "(8) THE SLIDE'S 10:10:30:50 FORMULA - 10% DEPOSITS, 10% GOLD, 30% MUTUAL FUNDS, 50% STOCKS - IS UNTRACEABLE TO ANY "
+ "NAMED INSTITUTION, ADVISER, PAPER OR PUBLISHED FRAMEWORK. NOT FOUND. ⚠️ AND IT IS INTERNALLY INCOHERENT: 'MUTUAL "
+ "FUNDS' IS A WRAPPER, NOT AN ASSET CLASS, AND CAN HOLD THE VERY SAME STOCKS AS THE 50% BUCKET - so the 30 and the 50 "
+ "DOUBLE-COUNT equity rather than diversifying it. ⚠️ IT IS NOT BUFFETT'S: his actual documented instruction, in the "
+ "2013 Berkshire letter, for the trustee of his wife's bequest, is verbatim 'PUT 10% OF THE CASH IN SHORT-TERM "
+ "GOVERNMENT BONDS AND 90% IN A VERY LOW-COST S&P 500 INDEX FUND' - 90/10, no gold, and the passage is an argument "
+ "AGAINST high-fee active funds. ⚠️ AND IT IS NOT DALIO'S: Bridgewater's own All Weather document publishes NO dollar "
+ 'allocation at all - it allocates 25% OF RISK, not of money, to each of four economic environments. The familiar '
+ "30/40/15/7.5/7.5 'All Weather' numbers come from TONY ROBBINS' 2014 BOOK, not from Bridgewater. || AND IT IS "
+ 'IRRELEVANT TO SALEE IN ANY CASE, BECAUSE HIS ACTUAL PILLAR WEIGHTS ARE REAL ESTATE 75%, THAI EQUITY 10%, US EQUITY '
+ '10%, SUBWAY 5%. A formula that ignores that the largest asset is property is not a plan, it is a picture. || (9) ⚠️ '
+ 'THE AUTHOR OF THE SLIDE COULD NOT BE IDENTIFIED - NO WATERMARK, NO HANDLE, NO TRACEABLE SOURCE. NOT FOUND. A graphic '
+ 'that puts words in the mouths of two named living people, gets both of them backwards, and carries no author, is not '
+ 'research. || (10) WHAT THIS ACTUALLY CHANGES FOR US: NOTHING TODAY, AND THAT IS THE POINT - THE PROTECTIONS ARE '
+ "ALREADY BUILT. The board buys in DOLLAR TRANCHES not share counts, every funded name carries a written 'what would "
+ "change my mind', the mandate is deliberately concentrated in the CASH-GENERATIVE layer rather than the DEBT-FINANCED "
+ 'layer, and the 10 December review exists precisely to re-underwrite. ⚠️ AND THE MARKET IS ALREADY SORTING ON EXACTLY '
+ 'THIS AXIS - between 8 and 11 September the speculative, low-or-no-profit end of this board fell 6% to 22% while the '
+ 'profitable mega-caps were flat. THAT IS THE 2000 LESSON BEING APPLIED IN REAL TIME, AND WE WERE ON THE RIGHT SIDE OF '
+ 'IT BY STRUCTURE, NOT BY LUCK. Conviction HIGH. ⚠️ WHAT WOULD CHANGE MY MIND AND MAKE ME CUT EXPOSURE RATHER THAN '
+ 'HOLD: any TWO of the five watch items now on the 10 December review - a funded name extending depreciation life '
+ 'while its capex accelerates; hyperscaler free cash flow turning negative across TWO of the four; off-balance-sheet '
+ "commitments growing faster than on-balance-sheet capex for two consecutive quarters; NVIDIA's largest customer "
+ 'passing 20% of revenue; or a GPU-secured or datacentre-SPV lender failing publicly. NONE of those is a price signal, '
+ 'WHICH IS WHY THEY ARE WORTH WATCHING - by the time the price tells you, Cisco is already down 88%. || PREVIOUS '
+ 'ENTRY: Sep 13, 2026 - THE THREE THINGS SALEE APPROVED, ALL DONE. NO BUDGET HAS CHANGED, NOTHING BOUGHT OR SOLD. || '
+ '(1) THE STALLED PRICE JOB IS CLEARED. All 71 remaining tickers moved from the 8 SEP close to VERIFIED 11 SEP CLOSES, '
+ 'so the WHOLE BOARD - 93 tickers - now stands on one date for the first time since 8 September. Market value at fresh '
+ 'prices is 689,978.31 on 577,024.39 invested, PLUS 112,953.92 or PLUS 19.58%, across 42 open positions; lifetime '
+ 'realised MINUS 4,504.75; net since inception PLUS 108,449.17. || ⚠️ AND THE REFRESH REVEALED SOMETHING THE STALE '
+ 'BOARD WAS HIDING: 18 OF 71 NAMES MOVED MORE THAN 6% IN THREE SESSIONS, AND THEY ARE NOT RANDOM. The falls cluster '
+ 'almost entirely in the speculative nuclear, space, quantum and neocloud complex: XE MINUS 22.04% (19.15 to 14.93), '
+ 'LEU MINUS 17.91%, OKLO MINUS 16.37%, CRWV MINUS 10.86%, ASTS MINUS 9.47%, IONQ MINUS 9.19%, LUNR MINUS 8.48%, TEM '
+ 'MINUS 8.21%, STX MINUS 8.21%, NBIS MINUS 7.93%, LRCX MINUS 6.93%, AXTI MINUS 6.89%, IREN MINUS 6.61%, BWXT MINUS '
+ '6.41%, SE MINUS 6.26%, SNDK MINUS 6.02%. ONLY TWO NAMES ROSE MORE THAN 6%: NET PLUS 7.82% and DELL PLUS 6.26%. ⚠️ '
+ 'THIS IS THE SAME PATTERN AS THE PHOTONIC DRAWDOWN LOOKED AT EARLIER TODAY - the high-multiple, low-or-no-profit end '
+ 'of the market came off together while the profitable names held. ⚠️ I HAVE NO SOURCED CAUSE FOR IT: NO FILING, NO '
+ 'NAMED EXECUTIVE AND NO WIRE REPORT EXPLAINS A SECTOR-WIDE MOVE OF THIS SHAPE. NO SOURCED CAUSE FOUND. It is recorded '
+ 'as an observation, not a thesis, and NOTHING HAS BEEN TRADED ON IT. || ⚠️ WHY THIS MATTERS FOR THURSDAY. SIX '
+ 'TRANCHE-1 BUYS WORTH 46,526.13 FALL ON 17 SEPTEMBER - TSM 15,000, GEV 7,852.70, VRT 6,475.56, PANW 6,238.85, CEG '
+ '5,959.02, V 5,000 - the day after the FOMC decision. Those six were sized against 8 September prices. Three of them '
+ 'have moved since: TSM is now 433.24 (was 439.00), PANW 330.65, V 370.45. THE DOLLAR AMOUNTS STILL STAND - they are '
+ 'budget allocations, not share counts - but the share counts they buy have changed, and TSM is now CHEAPER than when '
+ 'the tranche was written, which is the right direction. NO CHANGE IS MADE TO ANY OF THE SIX. || (2) TSEM IS NOW ON '
+ 'THE BOARD AS AN UNFUNDED 93RD TICKER IN GROUP 2, FOUNDRY EQUIPMENT AND TEST. It has NO BUDGET and nothing has been '
  'bought - it sits alongside SNDK, TER, ARM and INTC as a name we track but do not own, so that between now and the 10 '
  'DECEMBER review it accumulates real weekly notes instead of one calendar row. Fields as at the 11 Sep close: price '
  '211.52, market cap 23.91bn, trailing P/E 83.64, FORWARD P/E 41.49, price/sales 13.98, PEG 0.96, trailing revenue '
@@ -6055,7 +6188,7 @@ M3 = {'GOOGL': {'pfcf': 72.57, 'ev': 21.6, 'de': 0.18},
  'TSEM': {'pfcf': 79.53, 'ev': 37.8, 'de': 0.05}}
 
 SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
- 'updated': 'Sep 13, 2026',
+ 'updated': 'Sep 14, 2026',
  'note': '⚠️ READ THIS FIRST. On 10 Sep 2026 the board was restructured to 10 groups, 38 funded names, 5 back-up names '
          'and 13 sells, and ALL 38 budgets were reset. EVERY AMOUNT WRITTEN IN A ROW DATED BEFORE 10 SEP 2026 REFERS '
          'TO THE OLD BUDGET and must be checked against the new one before it is acted on - the tranche sizes in those '
@@ -6550,6 +6683,28 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'cash flow turns positive again (it was MINUS 7.6bn at Q2 2026, against PLUS 18.2bn a year '
                     'earlier), or when revenue guidance returns above 15% (Q3 2026 was guided to 9-12%), or when 2027 '
                     "capex guidance comes in below 2026's roughly 220bn."},
+           {'d': '2026-12-10',
+            'dl': 'Quarterly review',
+            't': '',
+            'k': 'thesis',
+            'a': 'DECIDE',
+            'amt': None,
+            'w': 'THE BUBBLE WATCH - five non-price warning signs. Any TWO firing means cut exposure, not hold.',
+            'cond': '⚠️ NONE OF THESE IS A PRICE SIGNAL, WHICH IS THE POINT - by the time the price tells you, Cisco '
+                    'is already down 88%. Cisco fell 88% from a 555.5bn market cap in April 2000 and took 25 YEARS AND '
+                    '9 MONTHS to regain the share price, with the market cap STILL not recovered. It was profitable, '
+                    'cash-generative and fundamental to the technology - all the things a 2026 slide says make AI '
+                    'safe. THE FIVE TESTS: (1) A FUNDED NAME EXTENDING DEPRECIATION LIFE WHILE ITS CAPEX ACCELERATES - '
+                    'Meta went to 5.5 years while Amazon cut to 5 on comparable hardware, and Microsoft took '
+                    'datacentres from 15 to 25 years effective FY27. (2) HYPERSCALER FREE CASH FLOW NEGATIVE ACROSS '
+                    'TWO OF THE FOUR - Amazon is already there at MINUS 7.6bn trailing, Alphabet was negative 5.855bn '
+                    'in Q2 though still positive on a trailing basis. (3) OFF-BALANCE-SHEET COMMITMENTS GROWING FASTER '
+                    'THAN ON-BALANCE-SHEET CAPEX FOR TWO CONSECUTIVE QUARTERS - the WSJ and Morgan Stanley both put '
+                    "the current figure near 3 TRILLION. (4) NVIDIA'S LARGEST CUSTOMER PASSING 20% OF REVENUE - five "
+                    'customers were 22/14/13/11/10% of RECEIVABLES at 26 July 2026. (5) A GPU-SECURED OR '
+                    'DATACENTRE-SPV LENDER FAILING PUBLICLY - about 35bn is borrowed secured directly against GPUs. ⚠️ '
+                    'ANY TWO FIRING = REDUCE, NOT HOLD. Recorded 14 Sep 2026.',
+            'c': 'planned'},
            {'d': '2026-12-10',
             'dl': 'Quarterly review',
             't': 'AGLT',
