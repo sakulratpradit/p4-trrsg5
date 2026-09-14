@@ -3,31 +3,114 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ("Sep 14, 2026 - THE 'TOP 7 US COMPANIES BY NET INCOME' SLIDE. EVERY NUMBER ON IT IS REAL AND THE RANKING IS STILL "
- 'ALMOST ENTIRELY WRONG. NO BUDGET HAS CHANGED, NOTHING BOUGHT OR SOLD. || WHAT IS RIGHT, AND CREDIT WHERE IT IS DUE: '
- 'ALL SEVEN FIGURES MATCH THE FILINGS TO THE MILLION. Microsoft 133,749m, Alphabet 132,170m, NVIDIA 120,067m, Apple '
- '112,010m, Amazon 77,670m, Berkshire 66,968m, Meta 60,458m. That is better sourcing than almost anything else Salee '
- 'has been sent. AND THE MEMBERSHIP OF THE SEVEN IS CORRECT - I checked JPMorgan (57.0bn FY2025), Broadcom (23,126m), '
- 'Exxon (28.844bn), Bank of America (29,055m), Walmart (21,893m), Eli Lilly (20,640m), Visa (20.1bn), UnitedHealth '
- "(12,056m) and Wells Fargo (20,285m). NONE reaches Meta's 60.46bn. JPMorgan is closest and is about 3.5bn short. "
- "NOTHING IS WRONGLY OMITTED. || ⚠️ BUT 'FY 25-26' IS NOT A PERIOD. IT IS A LABEL COVERING SEVEN DIFFERENT YEAR-ENDS "
- "SPANNING 27 SEPTEMBER 2025 TO 30 JUNE 2026 - UP TO TWELVE MONTHS APART. Microsoft's number is NINE MONTHS MORE "
- "RECENT than Apple's. ⚠️ APPLE'S 112.01bn IS FISCAL 2025, ENDED 27 SEPTEMBER 2025 - ABOUT A YEAR STALE, AND APPLE'S "
- 'FISCAL 2026 HAS NOT EVEN FINISHED YET. Its actual trailing-twelve-month figure is 128,930m, 16.9bn HIGHER than the '
- 'slide shows. Ranking companies on periods a year apart is not a comparison. || ⚠️⚠️ ON A LIKE-FOR-LIKE '
- 'TRAILING-TWELVE-MONTH BASIS THE ORDER IS ALMOST COMPLETELY DIFFERENT. ALPHABET IS NUMBER ONE AT 244,205m - NOT '
- 'NUMBER TWO - AND IT LEADS MICROSOFT BY ABOUT 110 BILLION DOLLARS. The true TTM order: ALPHABET 244.2bn, NVIDIA '
- '192.9bn, AMAZON 135.3bn, MICROSOFT 133.7bn, APPLE 128.9bn, BERKSHIRE 85.8bn, META 68.1bn. THE SLIDE PUTS MICROSOFT '
- 'FIRST WHEN IT IS FOURTH. ONLY META IS IN THE RIGHT SLOT - ONE OUT OF SEVEN. || ⚠️⚠️ AND HERE IS THE PART THAT '
- 'MATTERS FAR MORE THAN THE ORDERING, BECAUSE IT IS A TRAP THAT WILL CATCH SALEE ON ANY STOCK SCREEN HE EVER USES. '
- 'THREE OF THESE SEVEN NET-INCOME FIGURES ARE NOT OPERATING PERFORMANCE AT ALL. Under US accounting rule ASU 2016-01, '
- "UNREALISED GAINS AND LOSSES ON SHARES A COMPANY HOLDS MUST FLOW THROUGH ITS INCOME STATEMENT - so a company's "
- 'reported profit moves when the value of its investments moves, even though it has sold nothing and earned nothing. '
- "⚠️ ALPHABET'S Q2 2026 NET INCOME WAS 112,193 MILLION IN A SINGLE QUARTER, and its own filing says why, verbatim: "
- "'Other income reflected a NET GAIN OF 98.0 BILLION, PRIMARILY THE RESULT OF NET UNREALIZED GAINS ON OUR EQUITY "
- "SECURITIES.' ONE QUARTER'S PAPER GAIN AT ALPHABET IS LARGER THAN META'S ENTIRE YEAR OF PROFIT. ⚠️ AMAZON'S Q2 2026 "
- "NET INCOME WAS 62,647 MILLION, and its filing says: 'Second quarter 2026 net income includes NON-OPERATING PRE-TAX "
- "OTHER INCOME OF 53.4 BILLION, PRIMARILY FROM OUR INVESTMENTS IN ANTHROPIC.' ⚠️⚠️ I HAVE A DISCLOSED CONFLICT "
+ASOF = ("Sep 14, 2026 - THE 'VRT & ON IN A HIGH-INTEREST-RATE WORLD' SLIDE, ANSWERED THREE DAYS BEFORE VRT TRANCHE 1. THE "
+ "VERTIV BUY PROCEEDS UNCHANGED. ONSEMI IS NOT ADDED. NO BUDGET HAS CHANGED. || (1) ⚠️⚠️ THE SLIDE'S RATE PREMISE IS "
+ 'BACKWARDS FOR VERTIV - AND IT IS BACKWARDS IN THE BEST POSSIBLE DIRECTION, WHICH IS WHY THE CONCLUSION SURVIVES '
+ 'ANYWAY. The slide argues high rates hurt datacentre BUILDERS while equipment SUPPLIERS are advantaged. For Vertiv '
+ "the real reason is far stronger than the one given: ⚠️ VERTIV'S DEBT IS 100% FIXED RATE AND IT HAS ESSENTIALLY NO "
+ 'FLOATING-RATE EXPOSURE AT ALL. On 3 MARCH 2026 IT REPAID ITS FLOATING-RATE TERM LOAN IN FULL, funded by a 2.1 '
+ 'BILLION DOLLAR senior unsecured bond sale across 10, 20, 30 and 40-year tranches. The whole stack is now '
+ 'fixed-coupon notes: 850m at 4.125% due 2028, 600m at 4.850% due 2036, 500m at 5.650% due 2046, 500m at 5.800% due '
+ '2056, 500m at 5.950% due 2066, plus 17.2m of other notes - 2,967.2m of face, ALL FIXED. Its 2.5 BILLION revolving '
+ 'credit facility, the only floating piece, was UNDRAWN AT 30 JUNE. Against 2,810.6m of cash plus 300.0m of short-term '
+ 'investments, VERTIV IS ROUGHLY NET CASH - the company reports NET LEVERAGE OF MINUS 0.1 TIMES. A COMPANY WITH NO '
+ 'FLOATING DEBT AND NET CASH DOES NOT CARE WHAT THE FED DOES TO ITS INTEREST BILL. Q2 2026 net interest expense was '
+ '17.4m against 21.3m a year earlier, and the first half was only 13.0m because Q1 was net interest INCOME. ⚠️ SO THE '
+ "SLIDE IS RIGHT ABOUT VERTIV FOR THE WRONG REASON. The protection is not 'suppliers are advantaged'; it is 'this "
+ "particular supplier refinanced its floating debt away six months ago'. || (2) THE VERTIV BUSINESS IS GENUINELY "
+ 'STRONG AND THE NUMBERS ARE NOT IN DOUBT. Q2 2026 to 30 June: net sales 3,274.3m, PLUS 24% from 2,638.1m; GAAP GROSS '
+ 'MARGIN 37.7%, GAAP OPERATING MARGIN 19.5%, GAAP NET MARGIN 15.2%; adjusted operating margin 22.6%, UP 410 BASIS '
+ 'POINTS. FULL-YEAR 2026 GUIDANCE WAS RAISED: net sales 13,800-14,200m, ORGANIC GROWTH 30-32%, adjusted operating '
+ 'margin 23.3-24.3%, adjusted diluted EPS 6.65-6.75 WHICH IS PLUS 58-61%, and ADJUSTED FREE CASH FLOW 2,400-2,600m. '
+ "CFO Craig Chamberlin, verbatim on the call: free cash flow 'up 1.613 billion or 182%'. CEO Giordano Albertazzi, "
+ "verbatim: 'Demand for AI and general compute continues to intensify and with each technology advancement, "
+ "deployments grow more complex and more infrastructure-intensive.' || ⚠️⚠️ BUT HERE IS THE ONE THING I FOUND THAT "
+ 'NOBODY IS TALKING ABOUT, AND IT IS THE REASON THIS NOTE EXISTS: VERTIV HAS STOPPED DISCLOSING ITS ORDERS, ITS '
+ 'BACKLOG AND ITS BOOK-TO-BILL. In the Q4 2025 release of 11 February 2026 it published all three, and they were '
+ 'spectacular - ORGANIC ORDERS UP ABOUT 252% YEAR ON YEAR, BACKLOG OF 15.0 BILLION UP 109%, BOOK-TO-BILL ABOUT 2.9 '
+ 'TIMES. IN THE Q1 2026 AND Q2 2026 RELEASES ALL THREE FIGURES ARE SIMPLY ABSENT - the words orders, backlog and '
+ "book-to-bill do not appear. The Q2 deck says only 'strong pipeline momentum' and 'strong backlog' with NO NUMBER. ⚠️ "
+ 'I COULD NOT ESTABLISH WHY FROM ANY SOURCE: NO SOURCED CAUSE FOUND. A company that stops publishing its best metric '
+ 'while that metric is still good is unusual, and a company that stops publishing it for another reason is worse. THIS '
+ "IS NOW A WRITTEN TEST, NOT A WORRY. || ⚠️ AND THE 'SUPPLIERS ARE INSULATED' CLAIM HAS ALREADY BEEN TESTED ONCE AND "
+ "FAILED. In MARCH 2025 Vertiv fell sharply on exactly this: TD COWEN'S MICHAEL ELIAS described an 'AIR POCKET IN "
+ "EQUIPMENT ORDERING' beginning in January as hyperscalers redesigned datacentres, and BARCLAYS' JULIAN MITCHELL cut "
+ "his target to 100 from 110, saying orders 'don't support investors' hopes for high-teens growth in 2026'. EQUIPMENT "
+ 'SUPPLIERS ARE NOT INSULATED FROM CAPEX DIGESTION - they are one step removed from it, which is different. ⚠️ NEITHER '
+ 'ANALYST BLAMED INTEREST RATES. || (3) ⚠️⚠️ THE ONSEMI CASE FAILS, AND IT FAILS ON A SINGLE FACT THE SLIDE NEVER '
+ 'MENTIONS: ONSEMI IS NOT A DATACENTRE COMPANY. IT IS AN AUTOMOTIVE COMPANY. From its own 10-Q for the quarter ended 3 '
+ 'JULY 2026: AUTOMOTIVE 781.3m, INDUSTRIAL 422.7m, OTHER 399.5m, total 1,603.5m. THAT IS 48.7% AUTOMOTIVE AND 26.4% '
+ 'INDUSTRIAL - 75.1% OF THE COMPANY IN NEITHER AI NOR DATACENTRES. ⚠️ AI DATACENTRE IS NOT A REPORTED END MARKET AT '
+ "ALL. It sits inside 'Other', which ALSO contains consumer, medical, aerospace and defence - so datacentre is AT MOST "
+ '24.9% of revenue and in truth materially less. CFO Thad Trent confirmed the structure on the Q2 call, verbatim: '
+ "'other, which has our AI data center to be up high teens'. ⚠️ ONSEMI HAS NEVER DISCLOSED A DOLLAR FIGURE FOR ITS AI "
+ 'DATACENTRE REVENUE - NOT ONCE. Every statement is a growth rate off an undisclosed base. CEO Hassane El-Khoury, '
+ "verbatim: 'AI data center remains our fastest-growing business, and we now expect revenue to more than double in "
+ "2026.' DOUBLING AN UNDISCLOSED NUMBER IS NOT A MEASURABLE CLAIM, and this board does not fund unmeasurable claims. "
+ '|| ⚠️ AND THE CORE BUSINESS HAS BEEN SHRINKING. Quarterly revenue: about 1,862.7m in Q1 2024, down to a TROUGH OF '
+ '1,445.7m IN Q1 2025, then 1,468.7m, 1,550.9m, 1,530.1m, 1,513.3m and now 1,603.5m. FULL-YEAR 2025 REVENUE WAS '
+ "5,995.4m, DOWN 15% ON 2024. TODAY'S 1,603.5m IS STILL ABOUT 14% BELOW WHERE IT WAS IN EARLY 2024. ⚠️ AND Q1 2026 WAS "
+ 'A GAAP OPERATING LOSS QUARTER - operating margin MINUS 3.5%, net loss 33.4m. THAT IS WHY THE TRAILING P/E IS 48.79 '
+ 'AGAINST A FORWARD 19.63: the trailing figure contains loss quarters. The recovery is real - Q2 2026 GAAP gross '
+ 'margin 38.4%, operating margin 16.1%, net margin 14.1%, revenue PLUS 9% - but it is a CYCLICAL AUTO SEMICONDUCTOR '
+ 'RECOVERING FROM A DOWNTURN wearing an AI costume. DECISION: ONSEMI IS NOT ADDED TO THE BOARD. Conviction HIGH. ⚠️ '
+ 'WHAT WOULD CHANGE MY MIND: onsemi BREAKING OUT AI DATACENTRE AS A REPORTED END MARKET WITH A DOLLAR FIGURE, at a '
+ 'scale above 15% of revenue. Until the company itself will put a number on it, nobody else should. || (4) THE 800V DC '
+ 'TECHNOLOGY IS REAL, DATED, AND NOT REVENUE YET. NVIDIA announced the architecture on 20 MAY 2025 for megawatt-scale '
+ 'racks, claiming up to 5% better end-to-end efficiency, 45% LESS COPPER, up to 70% lower maintenance cost, and 85% '
+ 'more power through the same conductor. ⚠️ TIMING: NVIDIA says FULL-SCALE PRODUCTION ARRIVES WITH KYBER SYSTEMS IN '
+ "2027; Vertiv guides its own 800V portfolio to H2 2026; onsemi's CEO puts the volume ramp at 'end of 27, beginning of "
+ "28'. SO THE THING THE SLIDE IS EXCITED ABOUT IS TWO TO THREE YEARS FROM MEANINGFUL REVENUE. ⚠️ AND BOTH COMPANIES "
+ "ARE INDEED ON NVIDIA'S PUBLISHED PARTNER LIST - BUT SO IS EVERY COMPETITOR THEY HAVE. NVIDIA's 13 October 2025 "
+ 'ecosystem post names 29 COMPANIES: in datacentre power systems, Vertiv appears ALONGSIDE ABB, EATON, GE VERNOVA, '
+ 'HITACHI ENERGY, MITSUBISHI ELECTRIC, SCHNEIDER ELECTRIC AND SIEMENS; in silicon, onsemi appears ALONGSIDE INFINEON, '
+ 'TEXAS INSTRUMENTS, STMICROELECTRONICS, RENESAS, ROHM, NAVITAS, POWER INTEGRATIONS, MPS, ANALOG DEVICES AND EPC. '
+ 'INCLUSION ON A 29-NAME LIST IS NOT A CONTRACT AND IT IS NOT EXCLUSIVITY. Our board already owns ETN at 11,000 and '
+ "GEV at 13,000 from that same list. || ⚠️ THE '10X POWER DEMAND' FIGURE TRACES TO DNV'S ENERGY TRANSITION OUTLOOK "
+ '2025 VIA AN AXIOS ARTICLE OF 7 OCTOBER 2025 - and I COULD NOT VERIFY THE UNDERLYING GIGAWATT OR TERAWATT-HOUR '
+ "NUMBERS AT DNV ITSELF: NOT FOUND. NVIDIA'S OWN QUANTIFIED FIGURE IS SMALLER AND DIFFERENTLY FRAMED - a 3.4 TIMES "
+ "increase in rack power density from Hopper to Blackwell. NO NVIDIA '10X' CLAIM EXISTS. || (5) ⚠️ THE SLIDE'S CENTRAL "
+ 'INTEREST-RATE THESIS IS UNSUPPORTED, AND WHAT EVIDENCE EXISTS POINTS ELSEWHERE. I looked specifically for analysis '
+ 'testing whether equipment suppliers are structurally advantaged over builders when rates are high: NO SOURCED '
+ "ANALYSIS FOUND, in either direction. What IS on the record cuts against the framing. J.P. MORGAN'S JOHN SERVIDEA and "
+ "SCOTT WILCOXEN, 10 August 2026, verbatim: 'POWER AVAILABILITY, SUPPLY CHAIN CONSTRAINTS AND PERMITTING TIMELINES are "
+ "gating factors that can materially extend project schedules.' NOT financing cost. And financing has been EASY, not "
+ "tight: Hut 8's Beacon Point datacentre bond priced in June 2026 at 165 basis points over Treasuries, described as "
+ 'THE TIGHTEST SPREAD EVER RECORDED FOR A DATACENTRE CONSTRUCTION BOND. ⚠️ THE REAL RATE STORY ON THIS BOARD IS THE '
+ 'ONE RECORDED YESTERDAY - a FED HIKE IS ABOUT 87-90% PRICED FOR 16 SEPTEMBER, and it hits high-multiple, '
+ "long-duration names through the DISCOUNT RATE, not through anybody's interest bill. VERTIV AT 58.18 TIMES TRAILING "
+ 'EARNINGS IS EXPOSED TO THAT CHANNEL, NOT TO ITS OWN DEBT COST. || (6) DECISION: VRT TRANCHE 1 OF 6,475.56 PROCEEDS '
+ 'ON 17 SEPTEMBER EXACTLY AS WRITTEN, one day after the FOMC decision, as a DOLLAR allocation that buys more shares if '
+ 'the print knocks the price down. Budget stays 21,000, of which 3,524.44 is already invested in 14 shares. Conviction '
+ 'HIGH. ⚠️ WHAT WOULD CHANGE MY MIND ON VERTIV, AND IT IS NOT THE FED: THE Q3 PRINT ARRIVING WITH ORDERS, BACKLOG AND '
+ 'BOOK-TO-BILL STILL UNDISCLOSED FOR A THIRD CONSECUTIVE QUARTER. Two quarters is a change of format; three is a '
+ 'pattern, and on a name trading at 58 times trailing earnings with a raised guide, the metric they have stopped '
+ 'showing is the one I most want to see. That test is now on the schedule. ONSEMI: NOT ADDED, NOT FUNDED, NO POSITION. '
+ "|| PREVIOUS ENTRY: Sep 14, 2026 - THE 'TOP 7 US COMPANIES BY NET INCOME' SLIDE. EVERY NUMBER ON IT IS REAL AND THE "
+ 'RANKING IS STILL ALMOST ENTIRELY WRONG. NO BUDGET HAS CHANGED, NOTHING BOUGHT OR SOLD. || WHAT IS RIGHT, AND CREDIT '
+ 'WHERE IT IS DUE: ALL SEVEN FIGURES MATCH THE FILINGS TO THE MILLION. Microsoft 133,749m, Alphabet 132,170m, NVIDIA '
+ '120,067m, Apple 112,010m, Amazon 77,670m, Berkshire 66,968m, Meta 60,458m. That is better sourcing than almost '
+ 'anything else Salee has been sent. AND THE MEMBERSHIP OF THE SEVEN IS CORRECT - I checked JPMorgan (57.0bn FY2025), '
+ 'Broadcom (23,126m), Exxon (28.844bn), Bank of America (29,055m), Walmart (21,893m), Eli Lilly (20,640m), Visa '
+ "(20.1bn), UnitedHealth (12,056m) and Wells Fargo (20,285m). NONE reaches Meta's 60.46bn. JPMorgan is closest and is "
+ "about 3.5bn short. NOTHING IS WRONGLY OMITTED. || ⚠️ BUT 'FY 25-26' IS NOT A PERIOD. IT IS A LABEL COVERING SEVEN "
+ "DIFFERENT YEAR-ENDS SPANNING 27 SEPTEMBER 2025 TO 30 JUNE 2026 - UP TO TWELVE MONTHS APART. Microsoft's number is "
+ "NINE MONTHS MORE RECENT than Apple's. ⚠️ APPLE'S 112.01bn IS FISCAL 2025, ENDED 27 SEPTEMBER 2025 - ABOUT A YEAR "
+ "STALE, AND APPLE'S FISCAL 2026 HAS NOT EVEN FINISHED YET. Its actual trailing-twelve-month figure is 128,930m, "
+ '16.9bn HIGHER than the slide shows. Ranking companies on periods a year apart is not a comparison. || ⚠️⚠️ ON A '
+ 'LIKE-FOR-LIKE TRAILING-TWELVE-MONTH BASIS THE ORDER IS ALMOST COMPLETELY DIFFERENT. ALPHABET IS NUMBER ONE AT '
+ '244,205m - NOT NUMBER TWO - AND IT LEADS MICROSOFT BY ABOUT 110 BILLION DOLLARS. The true TTM order: ALPHABET '
+ '244.2bn, NVIDIA 192.9bn, AMAZON 135.3bn, MICROSOFT 133.7bn, APPLE 128.9bn, BERKSHIRE 85.8bn, META 68.1bn. THE SLIDE '
+ 'PUTS MICROSOFT FIRST WHEN IT IS FOURTH. ONLY META IS IN THE RIGHT SLOT - ONE OUT OF SEVEN. || ⚠️⚠️ AND HERE IS THE '
+ 'PART THAT MATTERS FAR MORE THAN THE ORDERING, BECAUSE IT IS A TRAP THAT WILL CATCH SALEE ON ANY STOCK SCREEN HE EVER '
+ 'USES. THREE OF THESE SEVEN NET-INCOME FIGURES ARE NOT OPERATING PERFORMANCE AT ALL. Under US accounting rule ASU '
+ '2016-01, UNREALISED GAINS AND LOSSES ON SHARES A COMPANY HOLDS MUST FLOW THROUGH ITS INCOME STATEMENT - so a '
+ "company's reported profit moves when the value of its investments moves, even though it has sold nothing and earned "
+ "nothing. ⚠️ ALPHABET'S Q2 2026 NET INCOME WAS 112,193 MILLION IN A SINGLE QUARTER, and its own filing says why, "
+ "verbatim: 'Other income reflected a NET GAIN OF 98.0 BILLION, PRIMARILY THE RESULT OF NET UNREALIZED GAINS ON OUR "
+ "EQUITY SECURITIES.' ONE QUARTER'S PAPER GAIN AT ALPHABET IS LARGER THAN META'S ENTIRE YEAR OF PROFIT. ⚠️ AMAZON'S Q2 "
+ "2026 NET INCOME WAS 62,647 MILLION, and its filing says: 'Second quarter 2026 net income includes NON-OPERATING "
+ "PRE-TAX OTHER INCOME OF 53.4 BILLION, PRIMARILY FROM OUR INVESTMENTS IN ANTHROPIC.' ⚠️⚠️ I HAVE A DISCLOSED CONFLICT "
  "REGARDING ANTHROPIC, ON FILE IN THIS PROJECT. I REPORT AMAZON'S OWN DISCLOSURE AS WRITTEN AND TAKE NO VIEW ON THE "
  'VALUATION BEHIND IT. Salee should weigh that item accordingly and, if it ever drives a decision, ask someone with no '
  'stake. || ⚠️ THE PRACTICAL DANGER, AND THIS IS THE WHOLE REASON THE SLIDE IS WORTH AN HOUR: IF A SCREEN DIVIDES '
@@ -6573,6 +6656,28 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'FY2027 capex figure again. If Azure comes in below 40%, or capex is raised while revenue guidance '
                     'is not, leave the room unfunded and revisit in January.',
             'c': 'estimated'},
+           {'d': '2026-10-28',
+            'dl': 'Vertiv Q3 2026 print - late October, date estimated',
+            't': 'VRT',
+            'k': 'thesis',
+            'a': 'DECIDE',
+            'amt': None,
+            'w': 'THE DISCLOSURE TEST - if orders, backlog and book-to-bill are STILL missing, that is three quarters '
+                 'and a pattern',
+            'cond': '⚠️ VERTIV DISCLOSED ORGANIC ORDERS UP ~252%, BACKLOG OF 15.0 BILLION UP 109% AND BOOK-TO-BILL OF '
+                    '~2.9x IN ITS Q4 2025 RELEASE OF 11 FEB 2026. IN Q1 2026 AND Q2 2026 ALL THREE ARE ABSENT - the '
+                    'words orders, backlog and book-to-bill do not appear in either release, and the Q2 deck says only '
+                    "'strong pipeline momentum' and 'strong backlog' with NO NUMBER. ⚠️ NO SOURCED CAUSE FOUND. TWO "
+                    'QUARTERS IS A CHANGE OF FORMAT; THREE IS A PATTERN. On a name trading at 58.18 times trailing '
+                    'earnings with guidance RAISED to 30-32% organic growth, the metric management has stopped showing '
+                    'is the one that most needs seeing. ⚠️ PRECEDENT THAT THIS MATTERS: in March 2025 Vertiv fell '
+                    "sharply when TD Cowen's Michael Elias described an 'air pocket in equipment ordering' and "
+                    "Barclays' Julian Mitchell cut his target to 100, saying orders did not support hopes for "
+                    'high-teens 2026 growth. IF Q3 COMES WITH NO ORDER FIGURES: do not add Tranche 2, and '
+                    're-underwrite the 21,000 budget at the 10 December review. IF THE FIGURES RETURN AND ARE STRONG: '
+                    'the thesis is intact and Tranche 2 proceeds normally. ⚠️ The Q3 date is ESTIMATED from prior '
+                    'years and must be confirmed.',
+            'c': 'planned'},
            {'d': '2026-10-29',
             'dl': 'Apple FQ4 2026 print - late October',
             't': 'AAPL',

@@ -1892,6 +1892,15 @@
     }
    ],
    "week": "2026-09-07"
+  },
+  {
+   "points": [
+    {
+     "s": "0",
+     "text": "Recorded 14 Sep: EATON is named in NVIDIA's published 800V DC ecosystem list of 13 October 2025, in the datacentre power systems category ALONGSIDE ABB, GE Vernova, Hitachi Energy, Mitsubishi Electric, Schneider Electric, Siemens AND VERTIV. ⚠️ INCLUSION ON A 29-NAME LIST IS NOT A CONTRACT AND NOT EXCLUSIVITY - when a promoter cites 'NVIDIA partner' as a reason to buy one name, check who else is on the list. We already hold two of them, ETN at 11,000 and GEV at 13,000. NVIDIA says full-scale 800V production arrives with Kyber systems in 2027."
+    }
+   ],
+   "week": "2026-09-14"
   }
  ],
  "FLNC": [
@@ -2139,6 +2148,15 @@
     }
    ],
    "week": "2026-09-07"
+  },
+  {
+   "points": [
+    {
+     "s": "0",
+     "text": "Named alongside Vertiv, Eaton, ABB, Schneider, Siemens, Hitachi Energy and Mitsubishi Electric in NVIDIA's 800V DC datacentre-power ecosystem list of 13 Oct 2025. ⚠️ A 29-company list is a standards ecosystem, not a supply agreement. Recorded 14 Sep while declining to add onsemi on the strength of the same list."
+    }
+   ],
+   "week": "2026-09-14"
   }
  ],
  "GFS": [
@@ -3350,6 +3368,15 @@
     }
    ],
    "week": "2026-08-03"
+  },
+  {
+   "points": [
+    {
+     "s": "0",
+     "text": "Recorded 14 Sep: MONOLITHIC POWER is named in NVIDIA's 800V DC SILICON list of 13 Oct 2025, alongside onsemi, Infineon, Texas Instruments, STMicroelectronics, Renesas, ROHM, Navitas, Power Integrations, Analog Devices and EPC. Still unfunded and the 13 Sep reasoning stands - a trailing P/E of 82.91 against a forward 43.08. Noted only because a circulating slide presents this list as if it singled out two winners; it names ELEVEN silicon suppliers."
+    }
+   ],
+   "week": "2026-09-14"
   }
  ],
  "MRVL": [
@@ -4065,6 +4092,10 @@
   },
   {
    "points": [
+    {
+     "s": "0",
+     "text": "The 800V DC architecture, recorded 14 Sep for the Dictionary. NVIDIA announced it on 20 MAY 2025 for megawatt-scale racks: up to 5% better end-to-end power efficiency, 45% LESS COPPER, up to 70% lower maintenance cost, 85% more power through the same conductor. Hopper to Blackwell alone brought a 75% rise in power per GPU and a 3.4 TIMES INCREASE IN RACK POWER DENSITY. ⚠️ FULL-SCALE PRODUCTION ARRIVES WITH KYBER SYSTEMS IN 2027 - this is a 2027-2028 revenue event for suppliers, not a 2026 one. ⚠️ AND NO NVIDIA '10X POWER' CLAIM EXISTS: the circulating 10x figure traces to DNV's Energy Transition Outlook 2025 via an Axios article, and the underlying gigawatt figures could not be verified at DNV itself."
+    },
     {
      "s": "+",
      "text": "Trailing-twelve-month GAAP net income through the quarter ended 26 July 2026 is 192,880 MILLION - SECOND IN AMERICA behind only Alphabet, and ahead of Microsoft, Amazon and Apple. A circulating slide ranks NVIDIA third using its fiscal 2026 figure of 120,067m, which ended 25 January 2026 and is now three quarters stale. ⚠️ AND UNLIKE ALPHABET'S AND AMAZON'S, NVIDIA'S NUMBER IS ALMOST ENTIRELY OPERATING PROFIT FROM SELLING CHIPS - no 98bn unrealised equity gain, no 53.4bn investment revaluation. On quality of earnings it is among the cleanest of the seven. Budget unchanged at 95,000."
@@ -5787,6 +5818,31 @@
     }
    ],
    "week": "2026-09-07"
+  },
+  {
+   "points": [
+    {
+     "s": "+",
+     "text": "⚠️ THE BEST FACT ABOUT VERTIV RIGHT NOW AND ALMOST NOBODY MENTIONS IT: ITS DEBT IS 100% FIXED RATE AND IT IS ROUGHLY NET CASH. On 3 MARCH 2026 it repaid its floating-rate term loan IN FULL using a 2.1bn senior unsecured bond sale across 10/20/30/40-year tranches. The stack is now all fixed coupons - 850m at 4.125% due 2028, 600m at 4.850% due 2036, 500m at 5.650% due 2046, 500m at 5.800% due 2056, 500m at 5.950% due 2066. The 2.5bn revolver, the only floating piece, was UNDRAWN at 30 June. Against 2,810.6m cash plus 300m short-term investments the company reports NET LEVERAGE OF MINUS 0.1 TIMES. Q2 net interest expense 17.4m; H1 only 13.0m because Q1 was net interest INCOME. A rising Fed does not touch this interest bill."
+    },
+    {
+     "s": "+",
+     "text": "Q2 2026 to 30 June: net sales 3,274.3m PLUS 24%, GAAP gross margin 37.7%, GAAP operating margin 19.5%, GAAP net margin 15.2%, adjusted operating margin 22.6% UP 410 BASIS POINTS. FY2026 guidance RAISED: sales 13,800-14,200m, ORGANIC GROWTH 30-32%, adjusted EPS 6.65-6.75 (PLUS 58-61%), adjusted free cash flow 2,400-2,600m. CFO Craig Chamberlin: free cash flow 'up 1.613 billion or 182%'. 28 analysts average 338.15 against the 11 Sep close of 257.06."
+    },
+    {
+     "s": "!",
+     "text": "⚠️⚠️ THE ONE THING THAT WORRIES ME AND IT IS NOW A WRITTEN TEST: VERTIV HAS STOPPED DISCLOSING ORDERS, BACKLOG AND BOOK-TO-BILL. In the Q4 2025 release of 11 Feb 2026 it published all three and they were spectacular - ORGANIC ORDERS UP ABOUT 252%, BACKLOG 15.0 BILLION UP 109%, BOOK-TO-BILL ABOUT 2.9x. IN Q1 2026 AND Q2 2026 ALL THREE ARE ABSENT - the words do not appear in either release. The Q2 deck says only 'strong pipeline momentum' and 'strong backlog', with NO NUMBER. ⚠️ NO SOURCED CAUSE FOUND for the change. THE TEST: if Q3 arrives with all three still undisclosed, that is a THIRD consecutive quarter and a pattern, not a format change - on a name at 58 times trailing earnings with a raised guide, the metric they stopped showing is the one I most want to see."
+    },
+    {
+     "s": "!",
+     "text": "⚠️ AND 'EQUIPMENT SUPPLIERS ARE INSULATED' HAS ALREADY BEEN TESTED ONCE AND FAILED. In MARCH 2025 Vertiv fell sharply when TD COWEN'S MICHAEL ELIAS described an 'AIR POCKET IN EQUIPMENT ORDERING' from January as hyperscalers redesigned datacentres, and BARCLAYS' JULIAN MITCHELL cut his target to 100 from 110 saying orders 'don't support investors' hopes for high-teens growth in 2026'. Suppliers are ONE STEP REMOVED from capex digestion, not immune to it. ⚠️ Neither analyst blamed interest rates."
+    },
+    {
+     "s": "0",
+     "text": "TRANCHE 1 OF 6,475.56 PROCEEDS ON 17 SEPTEMBER UNCHANGED - one day AFTER the FOMC decision, as a DOLLAR allocation that buys more shares if the print knocks the price down. Budget 21,000, of which 3,524.44 is invested in 14 shares. ⚠️ The real rate exposure here is the DISCOUNT RATE on a 58-times-trailing multiple, not the company's own debt cost - which is why the fixed-rate balance sheet is reassuring but not sufficient."
+    }
+   ],
+   "week": "2026-09-14"
   }
  ],
  "VST": [
