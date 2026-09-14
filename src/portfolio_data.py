@@ -3,75 +3,158 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Sep 14, 2026 - THE NIKKEI QUESTION, THE OIL SPIKE, AND WHY THE SELL PLAN NEEDS NO CHANGE. ⚠️⚠️ I MUST DISCLOSE A '
- "CONFLICT BEFORE ANYTHING ELSE, BECAUSE IT GOES TO THE HEART OF TODAY'S MOVE: THE SOURCED CAUSE OF THIS SELLOFF IS AN "
- "ESSAY BY ANTHROPIC'S CHIEF EXECUTIVE, AND I AM MADE BY ANTHROPIC. On SATURDAY 12 SEPTEMBER 2026 DARIO AMODEI "
- "PUBLISHED 'WE MUST PACE THE FRONTIER', writing verbatim: 'We must slow the pace at which we improve the capabilities "
- "of AI models. Progress will still seem fast, and we must make wise use of the time we gain.' OpenAI's SAM ALTMAN "
- "BACKED IT, saying safety standards are 'not at a place' to push capabilities further. ⚠️ I HAVE NO SPECIAL KNOWLEDGE "
- "OF ANTHROPIC'S REASONING AND NO ABILITY TO JUDGE IT NEUTRALLY. Salee should weigh every word of my analysis of this "
- 'particular event accordingly, and if it ever drives a decision, ask someone with no stake. There is already a '
- 'conflict note on file in this project from 12 September. || (1) ⚠️ FIRST, THE CHART IS NOT SAYING WHAT IT LOOKS LIKE '
- 'IT IS SAYING - AND THIS IS A LESSON WORTH MORE THAN THE NEWS. THE NIKKEI DID NOT FALL 2%. IT CLOSED AT 63,492.99, '
- "DOWN 0.8%. The 62,800 level at the bottom of Salee's chart is the INTRADAY LOW OF 62,726.18, SET AT 09:28 JAPAN TIME "
- '- twenty-eight minutes after the open - and the index recovered most of it through the day. MEASURING FROM '
- "YESTERDAY'S CLOSE TO TODAY'S LOW IS NOT A DAILY MOVE; it is the worst moment of the day, which every day has. ⚠️ THE "
- 'LARGER FALL WAS ACTUALLY LAST FRIDAY, 11 SEPTEMBER, WHEN THE NIKKEI DROPPED 1,259.61 POINTS OR 1.93% - and we did '
- 'not notice because no candle chart was in front of us. || AND JAPAN WAS NOT EVEN THE EPICENTRE: KOREA WAS. KOSPI '
- 'MINUS 3.3% TO 6,684.37, SK HYNIX MINUS 6.4%, SAMSUNG ELECTRONICS MINUS 4.1%. In Japan the damage was concentrated in '
- 'one name - SOFTBANK GROUP MINUS 10.7%, an OpenAI investor - with Kioxia minus 6.4%, Tokyo Electron minus 1% and '
- "TSMC's Tokyo line minus 1.2%. THIS WAS AN AI-SENTIMENT EVENT CONCENTRATED IN MEMORY AND IN ONE JAPANESE HOLDING "
- 'COMPANY, NOT A BROAD JAPANESE SELLOFF. ⚠️ NOTE ALSO THAT THE CAUSATION IN THE PRESS RUNS FROM US FUTURES TO ASIA, '
- "NOT ASIA TO US - Japan fell 'tracking declines in US stock futures'. NO SOURCED ANALYSIS EXISTS ARGUING JAPANESE "
- 'TRADING WILL MOVE US EQUITIES TONIGHT. || (2) THE OIL SPIKE IS REAL, IT IS LARGE, AND IT HAS A HARD OFFICIAL CAUSE - '
- 'THIS IS THE MOST IMPORTANT NEW FACT ON THE BOARD TODAY. BRENT IS ABOUT 107.55 DOLLARS, UP 2.8%, AND WTI ABOUT '
- '102.90, UP 2.9%. BRENT IS UP ABOUT 18% IN A MONTH AND ABOUT 59% IN A YEAR, against roughly 72 dollars as recently as '
- '28 February 2026. ⚠️ THE CAUSE IS NOT SPECULATION: THE SAUDI MINISTRY OF ENERGY SHUT THE EAST-WEST CRUDE OIL '
- 'PIPELINE AFTER DRONE STRIKES ON FRIDAY 11 SEPTEMBER in the Riyadh and Medina areas, and the Saudi Ministry of '
- "Foreign Affairs said it reserves the right to take 'all measures necessary'. THE PIPELINE IS 1,200km FROM ABQAIQ TO "
- "YANBU ON THE RED SEA AND MOVES FOUR TO FIVE MILLION BARRELS A DAY - ABOUT 4 TO 5 PERCENT OF GLOBAL SUPPLY. Iraq's "
- "Prime Minister Ali al-Zaidi's office said the drones were launched from Iraq's Maysan province; he ordered an "
- 'investigation and dismissed the Maysan operations commander. NO GROUP HAS CLAIMED RESPONSIBILITY. ⚠️ Capacity is '
- 'reported variously as 4-5, 6-7 and 7 million barrels a day - UNRESOLVED - and I could not reach the EIA to check '
- 'inventories: NOT FOUND. || (3) THE FED HAS NOT GOT WORSE - IT IS UNCHANGED. The hike probability for 16 SEPTEMBER '
- 'sits at ABOUT 86-87%, against the 87-90% recorded on 11 September. ⚠️ IT HAS NOT RISEN ON THE OIL NEWS; IF ANYTHING '
- 'IT IS A POINT OR TWO LOWER, well inside the noise between data providers. ⚠️ AND I COULD NOT READ CME FEDWATCH '
- 'DIRECTLY - cmegroup.com was blocked - so every probability here is second-hand. The Fed is inside its blackout '
- 'period so no official may speak; the last on-record statement is CHAIR KEVIN WARSH at Jackson Hole on 28 AUGUST, '
- "verbatim: 'The responsibility for 65 months of sustained, elevated inflation sits squarely with the central bank' "
- "and 'I stand here today committed to a discipline, not to a decision', with PCE inflation at 3.7%. ⚠️⚠️ AND A SECOND "
- 'CENTRAL BANK JUST APPEARED ON OUR CALENDAR THAT WAS NOT THERE BEFORE: THE BANK OF JAPAN MEETS 17-18 SEPTEMBER AND IS '
- 'EXPECTED TO RAISE FROM 1.0% TO 1.25%. GOVERNOR KAZUO UEDA SIGNALLED ON 2 SEPTEMBER THAT EVERY MEETING IS LIVE. THAT '
- 'DECISION LANDS ON FRIDAY 18 SEPTEMBER - THE DAY AFTER OUR SIX BUYS. It is now on the schedule. ⚠️ I could not '
- "retrieve Ueda's verbatim words: NOT FOUND. || (4) ⚠️⚠️ SHOULD WE HOLD BACK THE FOUR SELLS BECAUSE OF OIL AND THE "
- 'FOMC? NO - AND THE REASON IS THAT TWO OF THE FOUR ALREADY PROTECT THEMSELVES BY DESIGN, WHICH IS THE BEST ARGUMENT '
- 'FOR WRITING PLANS DOWN. ZETA AND CRM ARE **LIMIT** ORDERS - ZETA AT 31.00 WITH THE STOCK AT 30.18, CRM AT 262.00 '
- 'WITH THE STOCK AT 247.72. A LIMIT SELL ONLY EXECUTES IF THE PRICE **RISES** TO THE LIMIT. IN A FALLING MARKET THEY '
- 'SIMPLY DO NOT FIRE. There is nothing to hold back, nothing to cancel and no decision to make - the instruction Salee '
- 'already placed does the waiting for him. THAT IS THE WHOLE POINT OF A LIMIT. || SO THE QUESTION REDUCES TO QCOM AND '
- 'FN, THE ONLY TWO AT MARKET - AND HERE IS THE FACT THAT SETTLES IT: **NEITHER HAS FALLEN**. QCOM IS 181.97 AGAINST A '
- 'REFERENCE OF 174.09 WHEN THE SELL WAS WRITTEN - IT IS **4.5% HIGHER**, so selling now sells BETTER than planned, not '
- 'worse. FN IS 414.58 AGAINST 416.31, DOWN 0.4%, WHICH IS NOISE. THE PREMISE OF THE QUESTION - that weakness has hurt '
- 'these two - IS NOT TRUE YET. || ⚠️ AND THE SIZE SHOULD SETTLE ANY REMAINING NERVES: QCOM IS 11 SHARES WORTH ABOUT '
- '2,002 AND FN IS 3 SHARES WORTH ABOUT 1,244 - TOGETHER 3,246 DOLLARS, WHICH IS 0.47% OF A 690,000 PORTFOLIO. All four '
- 'together are about 11,798, or 1.7%. DELAYING A DECISION WORTH LESS THAN HALF A PERCENT IN ORDER TO GUESS THE '
- 'DIRECTION OF AN OIL PRICE AND A CENTRAL BANK IS EXACTLY THE BEHAVIOUR THE WRITTEN PLAN EXISTS TO PREVENT. Both were '
- "sold for COMPANY reasons that oil does not touch: QCOM's revenue growth of 5.2% cannot serve a mandate to double in "
- 'five years, and FN is an optical contract manufacturer on a 10.19% net margin held at MINUS 22.2%. NEITHER REASON IS '
- 'AFFECTED BY A PIPELINE IN SAUDI ARABIA. || ⚠️ THERE **IS** A GOOD REASON TO WAIT, AND IT IS NOT THE ONE IN THE '
- 'QUESTION: THE TAX ADVISER SIGN-OFF ON THESE FOUR IS STILL OUTSTANDING. THAT IS A REAL, SPECIFIC, UNRESOLVED '
- 'CONDITION AND IT HAS BEEN OPEN FOR DAYS. If Salee wants a reason not to sell this week, that is the legitimate one - '
- 'not the oil price. DECISION: THE SELL PLAN IS UNCHANGED. ZETA and CRM sit as limits and will not fire in weakness. '
- 'QCOM and FN remain at market and may be placed whenever the tax question is closed. Conviction HIGH. ⚠️ WHAT WOULD '
- 'CHANGE MY MIND: if QCOM fell BELOW its 174.09 reference, the calculus genuinely changes - not because of the market, '
- 'but because we would then be selling into a company-specific loss rather than a gain, and that is worth one '
- 'conversation before placing. || (5) THE SIX BUYS ON 17 SEPTEMBER PROCEED. All 46,526.13 of them, unchanged, one day '
- 'after the Fed and one day BEFORE the Bank of Japan. ⚠️ THE ADDED WRINKLE IS THE BoJ, NOT THE FED: buying on Thursday '
- 'now means buying between two central-bank decisions rather than after one. THAT STILL DOES NOT CHANGE ANYTHING, for '
- 'the reason already written - a tranche is a DOLLAR allocation, not a share count, and lower prices buy more shares. '
- '⚠️ WHAT WOULD CHANGE MY MIND ON THE BUYS AS A GROUP: a Fed dot plot on Wednesday pointing to a SECOND hike, which is '
- "not priced. Even then the answer is to let rung 1 go in and hold rung 2. || (6) AT SALEE'S REQUEST, EVERY ONE OF THE "
- "SIX BUYS NOW CARRIES A WRITTEN 'WHAT WOULD CHANGE MY MIND' TEST ON ITS SCHEDULE ROW, THE SAME DISCIPLINE THE SELLS "
+ASOF = ('Sep 14, 2026 - THE 7-LAYER PHOTONICS STACK SLIDE. IT NAMES 28 TICKER SLOTS AND WE ALREADY OWN OR TRACK 17 OF THEM. '
+ 'NO BUDGET HAS CHANGED, NOTHING BOUGHT OR SOLD; ONE TRACKING NAME ADDED. || THIS IS THE BEST-CONSTRUCTED SLIDE SALEE '
+ 'HAS SENT ME, AND THE MOST USEFUL THING ABOUT IT IS THAT IT IS LARGELY A PICTURE OF OUR OWN BOARD. Layer 7 end '
+ 'markets: WE OWN NVDA AND GOOGL. Layer 6 systems: WE OWN LITE and SOLD COHR. Layer 5 components: LITE again, AAOI '
+ 'SOLD. LAYER 4 INTEGRATION IS OUR STRONGEST - WE FUND MRVL 21,000, CRDO 18,000 AND ALAB 11,000, AND TRACK FN. Layer 3 '
+ 'wafers: we track AXTI and TSEM. Layer 2 materials: we track GLW. Layer 1: we fund AMD 24,000 and AVGO 50,000, and '
+ 'track INTC and QCOM. ⚠️ THE HONEST READ IS THAT THE SLIDE VALIDATES THE STRUCTURE WE ALREADY HAVE RATHER THAN '
+ 'REVEALING A GAP - which is a good outcome, not a boring one. || (1) ⚠️⚠️ FOUR PLACEMENTS ARE WRONG, AND ONE OF THEM '
+ "IS DIRECTLY RELEVANT TO A TRADE SALEE IS ABOUT TO MAKE. ⚠️ QCOM IS ON THIS SLIDE AS A PHOTONICS 'FOUNDATION' NAME "
+ "AND QCOM IS ON OUR SELL LIST. I searched Qualcomm's FY2025 10-K for the period ended 28 SEPTEMBER 2025 for "
+ 'photonics, silicon photonics, optical transceiver, optical interconnect, laser, lidar and optical networking as '
+ 'product lines. NO MENTIONS FOUND. QCT is described as integrated circuits for mobile devices, automotive and IoT. '
+ "QUALCOMM'S PRESENCE ON THIS SLIDE IS UNSUPPORTED BY ITS OWN FILING, AND IF Salee HAD TAKEN THE SLIDE AT FACE VALUE "
+ 'HE MIGHT HAVE HELD A STOCK WE DECIDED TO SELL FOR A BUSINESS THAT DOES NOT EXIST. THE SELL STANDS. || ⚠️ TSLA IN '
+ 'LAYER 7 IS NOT JUST WRONG, IT IS BACKWARDS. Tesla is the one major autonomy company that has publicly REJECTED the '
+ 'photonic sensing technology that would make it a photonics customer. ASHOK ELLUSWAMY, VP OF AI, ON THE Q2 2026 '
+ "EARNINGS CALL OF 22 JULY 2026, VERBATIM: 'Historically, the so-called experts have always claimed that you need "
+ 'LiDARs, radars, HD maps, and the entire kitchen sink to drive safely. Here we show that such is not true. YOU CAN '
+ "HAVE SAFE, COMFORTABLE, AND AFFORDABLE AUTONOMY WITH JUST CAMERAS.' Musk in 2019: 'Lidar is a fool's errand... "
+ "anyone relying on lidar is doomed.' The only sourced Tesla lidar purchase is from Luminar's own disclosure - Tesla "
+ 'was its largest lidar customer in Q1 2024 at ABOUT 2 MILLION DOLLARS, which is a ground-truth test rig, not a '
+ 'supply-chain position. TESLA IS AN ANTI-PHOTONICS DATAPOINT. || ⚠️ ALB, ALBEMARLE, IN LAYER 2 MATERIALS IS WRONG. '
+ "Albemarle's own industries page lists every market it serves and NEVER MENTIONS OPTICS, PHOTONICS, OPTICAL FIBRE, "
+ 'LASERS OR OPTICAL GLASS. It is a LITHIUM AND BROMINE specialty chemicals company - Energy Storage, Specialties and '
+ "Ketjen catalysts. It looks like a battery-materials name swept in on the word 'materials'. || ⚠️ MP MATERIALS IN "
+ 'LAYER 2 IS WRONG FOR A SUBTLE AND INSTRUCTIVE REASON: IT MINES THE WRONG RARE EARTHS. The rare earth that matters in '
+ "photonics is ERBIUM, used in erbium-doped fibre amplifiers to boost optical signals. MP's OWN PRODUCT LIST HAS NINE "
+ 'ITEMS - bastnaesite concentrate, cerium chloride, lanthanum carbonate, magnetics products, NdFeB alloy flake, NdFeB '
+ "magnets, NdPr metal, NdPr oxide, and heavy rare earth concentrate. ERBIUM DOES NOT APPEAR. MP's own description of "
+ 'its flagship NdPr oxide names three applications: EV motors, robotics actuators and electronics. IT IS A MAGNETS '
+ 'COMPANY, NOT A PHOTONICS COMPANY. ⚠️ Whether its unspecified heavy rare earth concentrate contains commercially '
+ "relevant erbium is NOT FOUND. || (2) ⚠️ LAYER 1 IS A CATCH-ALL AND IT INVERTS THE WHOLE STACK. 'Foundation: R&D, IP "
+ "and development' is not a supply-chain layer - it is an attribute of every layer. And three of its four names sit "
+ 'ABOVE the photonics they touch, not beneath it. ⚠️ AVGO IS THE CLEAREST CASE: BROADCOM HAS A NAMED OPTICAL SYSTEMS '
+ "DIVISION WITH A VP AND GENERAL MANAGER, AND IT SHIPPED WHAT IT CALLS THE INDUSTRY'S FIRST VOLUME-PRODUCTION "
+ 'CO-PACKAGED OPTICS SOLUTION, Tomahawk 5-Bailly, followed by third-generation 200G-per-lane CPO on 15 May 2025 and '
+ 'the Tomahawk 6-Davisson 102.4-terabit switch. AVGO BELONGS AT LAYER 6 OR 4, NOT UNDERNEATH THE MATERIALS LAYER. We '
+ 'fund it at 50,000 and that is unaffected. AMD has a real if small position - it ACQUIRED SILICON PHOTONICS STARTUP '
+ "ENOSEMI, announced 28 May 2025, to 'support and develop a variety of photonics and co-packaged optics solutions'. ⚠️ "
+ 'AND THE INTEL STORY IS HALF-TRUE IN BOTH DIRECTIONS, WHICH IS WORTH GETTING RIGHT: INTEL SOLD ITS PLUGGABLE OPTICAL '
+ 'TRANSCEIVER MODULE LINES TO JABIL IN 2023, BUT KEPT THE COMPONENTS AND OPTICAL I/O BUSINESS. Its silicon photonics '
+ 'page, last modified 3 FEBRUARY 2026, advertises 400G, 800G and 1.6T solutions, Optical Compute Interconnect at 4 '
+ 'terabits bidirectional, and claims MORE THAN 8 MILLION PHOTONIC INTEGRATED CIRCUITS WITH OVER 32 MILLION ON-CHIP '
+ 'LASERS SHIPPED SINCE 2016. Not sold, not wound down - narrowed. || (3) ⚠️ NO CREDIBLE SOURCE FOR THE SEVEN-LAYER '
+ 'FRAMEWORK COULD BE FOUND - not OIDA, not SPIE, not Photonics21, not the IPSR-I roadmap. NOT FOUND. Treat it as one '
+ "retail author's organising device. ⚠️ AND THERE IS REAL THAI RESEARCH THAT CONTRADICTS IT: KASIKORN SECURITIES "
+ 'PUBLISHED A PHOTONICS PIECE ON 25 JUNE 2026 USING A THREE-TIER FRAMEWORK - laser components upstream (LITE, COHR), '
+ 'transceiver modules and fibre (FN, AAOI), and system and network chip designers (AVGO, MRVL). KASIKORN PUTS AVGO AT '
+ 'THE **TOP** AS A SYSTEM DESIGNER; THIS SLIDE PUTS IT AT THE **BOTTOM** AS A FOUNDATION LAYER. THAT INVERSION IS '
+ 'ITSELF THE EVIDENCE THAT THE SLIDE IS NOT FROM A PROFESSIONAL SOURCE. ⚠️ ALSO NOTE LITE APPEARS TWICE, IN BOTH LAYER '
+ '5 AND LAYER 6 - a duplication in the framework itself. || (4) OF THE ELEVEN NAMES NOT ON OUR BOARD, EXACTLY ONE IS A '
+ 'GENUINE GAP, AND I HAVE ADDED IT AS A TRACKING NAME. ⚠️ CIEN, CIENA, IS NOW THE 94TH TICKER IN GROUP 4 WITH NO '
+ 'BUDGET AND NOTHING BOUGHT. It is the purest optical-systems company of the lot and the numbers are real: FISCAL Q3 '
+ '2026 TO 1 AUGUST, REVENUE 1,671.1 MILLION, PLUS 37.0% YEAR ON YEAR, GAAP GROSS MARGIN 45.4%, GAAP OPERATING MARGIN '
+ '18.0%, GAAP NET MARGIN 15.9%, GAAP DILUTED EPS 1.83, AND GAAP PROFITABLE ON A TRAILING BASIS AT 654.41 MILLION. 20 '
+ 'analysts average 504.13 against the 11 Sep close of 349.54, a 49.57bn market cap. Products are the 6500 '
+ 'Packet-Optical Platform and Waveserver. ⚠️ ITS FIELDS ARE DELIBERATELY INCOMPLETE ON THE BOARD - trailing revenue, '
+ 'trailing P/E, price/sales, free cash flow, 52-week range and Rule of 40 are all BLANK because I have not verified '
+ 'them, AND THEY MUST BE FILLED BEFORE ANY BUDGET DECISION. ⚠️ AND ITS FORWARD P/E CONFLICTS WITHIN ONE SOURCE ON THE '
+ 'SAME DAY: 33.78 on the quote page against 48.72 on the forecast page. The board carries 33.78 and the conflict is '
+ 'recorded. The margins above are LAST QUARTER, not trailing - do not mix them. || THE OTHER TEN ARE DECLINED, AND '
+ 'HERE IS WHY IN ONE LINE EACH. ⚠️ IPGP LOOKS LIKE A PHOTONICS NAME AND IS NOT THE ONE THE SLIDE IMPLIES - IT DIVESTED '
+ 'ITS TELECOM BUSINESS IN 2022, its growth driver per CEO Dr Mark Gitin is INDUSTRIAL AND BATTERY MANUFACTURING, and '
+ 'its GAAP OPERATING MARGIN IS 1.6%. It makes fibre lasers for cutting metal, not optics for datacentres. ⚠️ GFS, '
+ 'GLOBALFOUNDRIES, has a genuine silicon photonics platform but a 28.3% GAAP GROSS MARGIN and revenue growth of only '
+ '5.8% - the same objection that keeps TSEM unfunded, and TSEM at least is growing 24%. ⚠️ POET IS THE ONE TO AVOID: A '
+ '1.38 BILLION DOLLAR MARKET CAP ON 569,925 DOLLARS OF QUARTERLY REVENUE - not millions, DOLLARS - with an 11.3m '
+ 'quarterly net loss and ZERO ACTIVE ANALYST COVERAGE since December 2024. ⚠️ IQE IS NOT US-LISTED - it trades on LSE '
+ 'AIM in pence and its quote was 18 days stale when checked; outside the mandate. ALB and MP fail the photonics test '
+ 'above. STM and LMT are real companies but neither is a photonics pure play - LMT is a genuine BUYER of high-energy '
+ 'lasers and adaptive optics, with a 500kW laser weapon award on 9 July 2026, but its photonics spend as a share of '
+ 'revenue is NOT FOUND. TSLA fails for the reason above. AEHR is the interesting near-miss: ⚠️ THE SLIDE PUTS IT IN '
+ 'COMPONENTS AND IT IS TEST EQUIPMENT, NOT A COMPONENT - but its silicon photonics exposure is REAL AND ACCELERATING, '
+ 'with four separate silicon-photonics orders announced in MARCH, JUNE, JULY AND AUGUST 2026. CEO GAYN ERICKSON, '
+ "VERBATIM: 'silicon photonics is moving from technology adoption into manufacturing scale-up, and we believe that "
+ "transition represents a significant long-term growth opportunity.' ⚠️ AGAINST IT: a 3.09bn market cap, GAAP "
+ 'UNPROFITABLE with a fiscal 2026 net loss of 7.1m, and a forward P/E of 126.25. RIGHT THEME, WRONG NUMBERS - and it '
+ 'goes on the December list to watch, not to buy. || (5) DECISION: NO BUDGET CHANGES, NOTHING BOUGHT OR SOLD, GROUP 4 '
+ 'STAYS AT 83,000. CIEN IS TRACKED, NOT FUNDED. Conviction HIGH. ⚠️ WHAT WOULD CHANGE MY MIND ON CIEN: two consecutive '
+ 'quarters of revenue growth above 25% WITH GAAP operating margin holding above 15% - that would make it the only '
+ 'profitable pure optical-systems company on the board and worth displacing something for. ⚠️ AND THE HONEST '
+ 'CONSTRAINT REMAINS: THE BOARD IS FULL AT 1,000,000 ACROSS 37 FUNDED NAMES. Funding CIEN means trimming something, '
+ 'and that decision belongs at the 10 DECEMBER REVIEW with TSEM and AGLT, not today. || PREVIOUS ENTRY: Sep 14, 2026 - '
+ 'THE NIKKEI QUESTION, THE OIL SPIKE, AND WHY THE SELL PLAN NEEDS NO CHANGE. ⚠️⚠️ I MUST DISCLOSE A CONFLICT BEFORE '
+ "ANYTHING ELSE, BECAUSE IT GOES TO THE HEART OF TODAY'S MOVE: THE SOURCED CAUSE OF THIS SELLOFF IS AN ESSAY BY "
+ "ANTHROPIC'S CHIEF EXECUTIVE, AND I AM MADE BY ANTHROPIC. On SATURDAY 12 SEPTEMBER 2026 DARIO AMODEI PUBLISHED 'WE "
+ "MUST PACE THE FRONTIER', writing verbatim: 'We must slow the pace at which we improve the capabilities of AI models. "
+ "Progress will still seem fast, and we must make wise use of the time we gain.' OpenAI's SAM ALTMAN BACKED IT, saying "
+ "safety standards are 'not at a place' to push capabilities further. ⚠️ I HAVE NO SPECIAL KNOWLEDGE OF ANTHROPIC'S "
+ 'REASONING AND NO ABILITY TO JUDGE IT NEUTRALLY. Salee should weigh every word of my analysis of this particular '
+ 'event accordingly, and if it ever drives a decision, ask someone with no stake. There is already a conflict note on '
+ 'file in this project from 12 September. || (1) ⚠️ FIRST, THE CHART IS NOT SAYING WHAT IT LOOKS LIKE IT IS SAYING - '
+ 'AND THIS IS A LESSON WORTH MORE THAN THE NEWS. THE NIKKEI DID NOT FALL 2%. IT CLOSED AT 63,492.99, DOWN 0.8%. The '
+ "62,800 level at the bottom of Salee's chart is the INTRADAY LOW OF 62,726.18, SET AT 09:28 JAPAN TIME - twenty-eight "
+ "minutes after the open - and the index recovered most of it through the day. MEASURING FROM YESTERDAY'S CLOSE TO "
+ "TODAY'S LOW IS NOT A DAILY MOVE; it is the worst moment of the day, which every day has. ⚠️ THE LARGER FALL WAS "
+ 'ACTUALLY LAST FRIDAY, 11 SEPTEMBER, WHEN THE NIKKEI DROPPED 1,259.61 POINTS OR 1.93% - and we did not notice because '
+ 'no candle chart was in front of us. || AND JAPAN WAS NOT EVEN THE EPICENTRE: KOREA WAS. KOSPI MINUS 3.3% TO '
+ '6,684.37, SK HYNIX MINUS 6.4%, SAMSUNG ELECTRONICS MINUS 4.1%. In Japan the damage was concentrated in one name - '
+ "SOFTBANK GROUP MINUS 10.7%, an OpenAI investor - with Kioxia minus 6.4%, Tokyo Electron minus 1% and TSMC's Tokyo "
+ 'line minus 1.2%. THIS WAS AN AI-SENTIMENT EVENT CONCENTRATED IN MEMORY AND IN ONE JAPANESE HOLDING COMPANY, NOT A '
+ 'BROAD JAPANESE SELLOFF. ⚠️ NOTE ALSO THAT THE CAUSATION IN THE PRESS RUNS FROM US FUTURES TO ASIA, NOT ASIA TO US - '
+ "Japan fell 'tracking declines in US stock futures'. NO SOURCED ANALYSIS EXISTS ARGUING JAPANESE TRADING WILL MOVE US "
+ 'EQUITIES TONIGHT. || (2) THE OIL SPIKE IS REAL, IT IS LARGE, AND IT HAS A HARD OFFICIAL CAUSE - THIS IS THE MOST '
+ 'IMPORTANT NEW FACT ON THE BOARD TODAY. BRENT IS ABOUT 107.55 DOLLARS, UP 2.8%, AND WTI ABOUT 102.90, UP 2.9%. BRENT '
+ 'IS UP ABOUT 18% IN A MONTH AND ABOUT 59% IN A YEAR, against roughly 72 dollars as recently as 28 February 2026. ⚠️ '
+ 'THE CAUSE IS NOT SPECULATION: THE SAUDI MINISTRY OF ENERGY SHUT THE EAST-WEST CRUDE OIL PIPELINE AFTER DRONE STRIKES '
+ 'ON FRIDAY 11 SEPTEMBER in the Riyadh and Medina areas, and the Saudi Ministry of Foreign Affairs said it reserves '
+ "the right to take 'all measures necessary'. THE PIPELINE IS 1,200km FROM ABQAIQ TO YANBU ON THE RED SEA AND MOVES "
+ "FOUR TO FIVE MILLION BARRELS A DAY - ABOUT 4 TO 5 PERCENT OF GLOBAL SUPPLY. Iraq's Prime Minister Ali al-Zaidi's "
+ "office said the drones were launched from Iraq's Maysan province; he ordered an investigation and dismissed the "
+ 'Maysan operations commander. NO GROUP HAS CLAIMED RESPONSIBILITY. ⚠️ Capacity is reported variously as 4-5, 6-7 and '
+ '7 million barrels a day - UNRESOLVED - and I could not reach the EIA to check inventories: NOT FOUND. || (3) THE FED '
+ 'HAS NOT GOT WORSE - IT IS UNCHANGED. The hike probability for 16 SEPTEMBER sits at ABOUT 86-87%, against the 87-90% '
+ 'recorded on 11 September. ⚠️ IT HAS NOT RISEN ON THE OIL NEWS; IF ANYTHING IT IS A POINT OR TWO LOWER, well inside '
+ 'the noise between data providers. ⚠️ AND I COULD NOT READ CME FEDWATCH DIRECTLY - cmegroup.com was blocked - so '
+ 'every probability here is second-hand. The Fed is inside its blackout period so no official may speak; the last '
+ "on-record statement is CHAIR KEVIN WARSH at Jackson Hole on 28 AUGUST, verbatim: 'The responsibility for 65 months "
+ "of sustained, elevated inflation sits squarely with the central bank' and 'I stand here today committed to a "
+ "discipline, not to a decision', with PCE inflation at 3.7%. ⚠️⚠️ AND A SECOND CENTRAL BANK JUST APPEARED ON OUR "
+ 'CALENDAR THAT WAS NOT THERE BEFORE: THE BANK OF JAPAN MEETS 17-18 SEPTEMBER AND IS EXPECTED TO RAISE FROM 1.0% TO '
+ '1.25%. GOVERNOR KAZUO UEDA SIGNALLED ON 2 SEPTEMBER THAT EVERY MEETING IS LIVE. THAT DECISION LANDS ON FRIDAY 18 '
+ "SEPTEMBER - THE DAY AFTER OUR SIX BUYS. It is now on the schedule. ⚠️ I could not retrieve Ueda's verbatim words: "
+ 'NOT FOUND. || (4) ⚠️⚠️ SHOULD WE HOLD BACK THE FOUR SELLS BECAUSE OF OIL AND THE FOMC? NO - AND THE REASON IS THAT '
+ 'TWO OF THE FOUR ALREADY PROTECT THEMSELVES BY DESIGN, WHICH IS THE BEST ARGUMENT FOR WRITING PLANS DOWN. ZETA AND '
+ 'CRM ARE **LIMIT** ORDERS - ZETA AT 31.00 WITH THE STOCK AT 30.18, CRM AT 262.00 WITH THE STOCK AT 247.72. A LIMIT '
+ 'SELL ONLY EXECUTES IF THE PRICE **RISES** TO THE LIMIT. IN A FALLING MARKET THEY SIMPLY DO NOT FIRE. There is '
+ 'nothing to hold back, nothing to cancel and no decision to make - the instruction Salee already placed does the '
+ 'waiting for him. THAT IS THE WHOLE POINT OF A LIMIT. || SO THE QUESTION REDUCES TO QCOM AND FN, THE ONLY TWO AT '
+ 'MARKET - AND HERE IS THE FACT THAT SETTLES IT: **NEITHER HAS FALLEN**. QCOM IS 181.97 AGAINST A REFERENCE OF 174.09 '
+ 'WHEN THE SELL WAS WRITTEN - IT IS **4.5% HIGHER**, so selling now sells BETTER than planned, not worse. FN IS 414.58 '
+ 'AGAINST 416.31, DOWN 0.4%, WHICH IS NOISE. THE PREMISE OF THE QUESTION - that weakness has hurt these two - IS NOT '
+ 'TRUE YET. || ⚠️ AND THE SIZE SHOULD SETTLE ANY REMAINING NERVES: QCOM IS 11 SHARES WORTH ABOUT 2,002 AND FN IS 3 '
+ 'SHARES WORTH ABOUT 1,244 - TOGETHER 3,246 DOLLARS, WHICH IS 0.47% OF A 690,000 PORTFOLIO. All four together are '
+ 'about 11,798, or 1.7%. DELAYING A DECISION WORTH LESS THAN HALF A PERCENT IN ORDER TO GUESS THE DIRECTION OF AN OIL '
+ 'PRICE AND A CENTRAL BANK IS EXACTLY THE BEHAVIOUR THE WRITTEN PLAN EXISTS TO PREVENT. Both were sold for COMPANY '
+ "reasons that oil does not touch: QCOM's revenue growth of 5.2% cannot serve a mandate to double in five years, and "
+ 'FN is an optical contract manufacturer on a 10.19% net margin held at MINUS 22.2%. NEITHER REASON IS AFFECTED BY A '
+ 'PIPELINE IN SAUDI ARABIA. || ⚠️ THERE **IS** A GOOD REASON TO WAIT, AND IT IS NOT THE ONE IN THE QUESTION: THE TAX '
+ 'ADVISER SIGN-OFF ON THESE FOUR IS STILL OUTSTANDING. THAT IS A REAL, SPECIFIC, UNRESOLVED CONDITION AND IT HAS BEEN '
+ 'OPEN FOR DAYS. If Salee wants a reason not to sell this week, that is the legitimate one - not the oil price. '
+ 'DECISION: THE SELL PLAN IS UNCHANGED. ZETA and CRM sit as limits and will not fire in weakness. QCOM and FN remain '
+ 'at market and may be placed whenever the tax question is closed. Conviction HIGH. ⚠️ WHAT WOULD CHANGE MY MIND: if '
+ 'QCOM fell BELOW its 174.09 reference, the calculus genuinely changes - not because of the market, but because we '
+ 'would then be selling into a company-specific loss rather than a gain, and that is worth one conversation before '
+ 'placing. || (5) THE SIX BUYS ON 17 SEPTEMBER PROCEED. All 46,526.13 of them, unchanged, one day after the Fed and '
+ 'one day BEFORE the Bank of Japan. ⚠️ THE ADDED WRINKLE IS THE BoJ, NOT THE FED: buying on Thursday now means buying '
+ 'between two central-bank decisions rather than after one. THAT STILL DOES NOT CHANGE ANYTHING, for the reason '
+ 'already written - a tranche is a DOLLAR allocation, not a share count, and lower prices buy more shares. ⚠️ WHAT '
+ 'WOULD CHANGE MY MIND ON THE BUYS AS A GROUP: a Fed dot plot on Wednesday pointing to a SECOND hike, which is not '
+ "priced. Even then the answer is to let rung 1 go in and hold rung 2. || (6) AT SALEE'S REQUEST, EVERY ONE OF THE SIX "
+ "BUYS NOW CARRIES A WRITTEN 'WHAT WOULD CHANGE MY MIND' TEST ON ITS SCHEDULE ROW, THE SAME DISCIPLINE THE SELLS "
  'ALREADY HAD. The buys had conditions; they did not have FALSIFICATION tests, and that was an inconsistency worth '
  'fixing. Each one names the specific number that would stop the next tranche. || PREVIOUS ENTRY: Sep 14, 2026 - THE '
  "'VRT & ON IN A HIGH-INTEREST-RATE WORLD' SLIDE, ANSWERED THREE DAYS BEFORE VRT TRANCHE 1. THE VERTIV BUY PROCEEDS "
@@ -5090,7 +5173,38 @@ STOCKS = [{'an': 83,
   'revG': 14.9,
   'roe': 9.98,
   'roi': 14.84,
-  't': 'TSEM'}]
+  't': 'TSEM'},
+ {'an': 20,
+  'ath': None,
+  'budget': None,
+  'capexB': None,
+  'eps': None,
+  'epsG': None,
+  'ex': 'NYSE',
+  'fcfB': None,
+  'fpe': 33.78,
+  'fvAvg': 504.13,
+  'fvMax': None,
+  'fvMin': None,
+  'g': 4,
+  'gm': 45.4,
+  'hi52': None,
+  'jan2': None,
+  'lo52': None,
+  'mcapB': 49.57,
+  'name': 'Ciena',
+  'pe': None,
+  'peg': None,
+  'pm': 15.9,
+  'price': 349.54,
+  'ps': None,
+  'pxd': '2026-09-11',
+  'r40': None,
+  'revB': None,
+  'revG': 37.0,
+  'roe': None,
+  'roi': None,
+  't': 'CIEN'}]
 
 POS = {'GOOGL': {'budget': 78000, 'cost': 59475.92, 'shares': 217},
  'AMZN': {'budget': 48000, 'cost': 48600.75, 'shares': 209},
@@ -5184,7 +5298,8 @@ POS = {'GOOGL': {'budget': 78000, 'cost': 59475.92, 'shares': 217},
  'AEP': {'budget': None, 'cost': None, 'shares': None},
  'LHX': {'budget': 9000, 'cost': None, 'shares': None},
  'AMBA': {'budget': None, 'cost': None, 'shares': None},
- 'TSEM': {'budget': None, 'cost': None, 'shares': None}}
+ 'TSEM': {'budget': None, 'cost': None, 'shares': None},
+ 'CIEN': {'budget': None, 'cost': None, 'shares': None}}
 
 TRADES = [{'date': 'Jul 21, 2026',
   'action': 'BUY',
@@ -6399,7 +6514,8 @@ M3 = {'GOOGL': {'pfcf': 72.57, 'ev': 21.6, 'de': 0.18},
  'SNPS': {'pfcf': 29.04, 'ev': 32.94, 'de': 0.32},
  'AEP': {'pfcf': None, 'ev': 13.24, 'de': 1.61},
  'AMBA': {'pfcf': None, 'ev': None, 'de': 0.02},
- 'TSEM': {'pfcf': 79.53, 'ev': 37.8, 'de': 0.05}}
+ 'TSEM': {'pfcf': 79.53, 'ev': 37.8, 'de': 0.05},
+ 'CIEN': {'pfcf': None, 'ev': None, 'de': None}}
 
 SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
  'updated': 'Sep 14, 2026',
@@ -7004,6 +7120,26 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'c': 'planned'},
            {'d': '2026-12-10',
             'dl': 'Quarterly review',
+            't': 'AEHR',
+            'k': 'watch',
+            'a': 'WATCH',
+            'amt': None,
+            'w': 'Aehr Test Systems - right theme, wrong numbers. Watch the silicon-photonics order cadence only.',
+            'cond': "⚠️ A CIRCULATING SLIDE PLACES AEHR IN 'COMPONENTS - LASERS, LENSES, DETECTORS'. THAT IS WRONG: IT "
+                    "IS WAFER-LEVEL TEST AND BURN-IN CAPITAL EQUIPMENT, in its own words 'test solutions for testing, "
+                    "burning-in, and stabilizing semiconductor devices'. It makes no lasers, lenses, detectors or "
+                    'multiplexers. ⚠️ BUT THE THEME IS REAL AND ACCELERATING: four separate silicon-photonics orders '
+                    'announced in MARCH, JUNE, JULY AND AUGUST 2026, the August one a follow-on production order for a '
+                    'FOX-XP with nine WaferPak blades at up to 3,500W each, shipping H1 2027. CEO GAYN ERICKSON, '
+                    "VERBATIM: 'This production order is another indication that SILICON PHOTONICS IS MOVING FROM "
+                    'TECHNOLOGY ADOPTION INTO MANUFACTURING SCALE-UP, and we believe that transition represents a '
+                    "significant long-term growth opportunity.' ⚠️ AGAINST IT: 3.09bn market cap, GAAP UNPROFITABLE "
+                    'with a fiscal 2026 net loss of 7.1m on 18.8m of quarterly revenue, forward P/E 126.25, only 6 '
+                    'analysts. WATCH THE ORDER CADENCE AS A LEADING INDICATOR FOR LITE, ALAB AND CRDO - THAT IS ITS '
+                    'VALUE TO US. DO NOT BUY.',
+            'c': 'planned'},
+           {'d': '2026-12-10',
+            'dl': 'Quarterly review',
             't': 'AGLT',
             'k': 'candidate',
             'a': 'DECIDE',
@@ -7038,6 +7174,26 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'w': 'BACK-UP: held with zero budget. Do not sell by habit; do not buy without the trigger.',
             'cond': 'Promote to funded when revenue growth reaccelerates above 18% (today 13.4%), or if the SNPS '
                     'thesis breaks. The other half of the EDA duopoly. Held at -13.0%.'},
+           {'d': '2026-12-10',
+            'dl': 'Quarterly review',
+            't': 'CIEN',
+            'k': 'candidate',
+            'a': 'DECIDE',
+            'amt': None,
+            'w': 'Ciena - the one genuine gap from the photonics stack slide. Complete the fields FIRST.',
+            'cond': '⚠️ FIELDS MUST BE COMPLETED BEFORE ANY BUDGET DECISION - trailing revenue, trailing P/E, '
+                    'price/sales, free cash flow, capex, ROE, ROIC, 52-week range and Rule of 40 are all BLANK on the '
+                    'card, and the forward P/E conflicts within one source on the same day (33.78 quote page vs 48.72 '
+                    'forecast page). THE CASE FOR: the purest optical-systems company available, fiscal Q3 2026 to 1 '
+                    'Aug showing revenue 1,671.1m PLUS 37.0% YoY, GAAP gross margin 45.4%, GAAP OPERATING MARGIN '
+                    '18.0%, GAAP net margin 15.9%, and GAAP PROFITABLE on a trailing basis at 654.41m - which would '
+                    'make it the only profitable pure optical-systems name on the board. 20 analysts average 504.13 '
+                    'against 349.54. ⚠️ AGAINST IT: THE BOARD IS FULL AT 1,000,000 ACROSS 37 FUNDED NAMES, so funding '
+                    'CIEN means TRIMMING SOMETHING - and Group 4 already runs 83,000 across ANET, CRDO, APH, LITE and '
+                    'ALAB, all of which have higher gross margins. ⚠️ THE TEST: two consecutive quarters of revenue '
+                    'growth ABOVE 25% with GAAP operating margin HOLDING ABOVE 15%. Examine alongside TSEM and AGLT; '
+                    'do not pre-commit.',
+            'c': 'planned'},
            {'d': '2026-12-10',
             'dl': 'Quarterly review - back-up name',
             't': 'CRWD',

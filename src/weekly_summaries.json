@@ -452,6 +452,15 @@
     }
    ],
    "week": "2026-09-07"
+  },
+  {
+   "points": [
+    {
+     "s": "0",
+     "text": "Recorded 14 Sep: AMD has a small but real photonics position that was not previously on this board - IT ACQUIRED SILICON PHOTONICS STARTUP ENOSEMI, announced 28 MAY 2025 by SVP Brian Amick, to 'support and develop a variety of photonics and co-packaged optics solutions across next-gen AI systems'. ⚠️ Deal value and any photonics revenue: NOT FOUND. Budget unchanged at 24,000; this does not change the thesis, it is context for the EPYC supply-chain note of 13 Sep."
+    }
+   ],
+   "week": "2026-09-14"
   }
  ],
  "AMKR": [
@@ -1008,6 +1017,15 @@
     }
    ],
    "week": "2026-09-07"
+  },
+  {
+   "points": [
+    {
+     "s": "+",
+     "text": "⚠️ THE SLIDE PUTS AVGO AT THE BOTTOM OF THE PHOTONICS STACK AS A 'FOUNDATION' NAME AND THAT IS EXACTLY BACKWARDS - IT BELONGS NEAR THE TOP. Broadcom has a NAMED OPTICAL SYSTEMS DIVISION with its own VP and General Manager, and shipped what it calls THE INDUSTRY'S FIRST VOLUME-PRODUCTION CO-PACKAGED OPTICS SOLUTION (Tomahawk 5-Bailly), followed by third-generation 200G-per-lane CPO on 15 May 2025 and the Tomahawk 6-Davisson, a 102.4-terabit switch. ⚠️ Quantified optical revenue is NOT DISCLOSED. Corroboration that the slide has it upside down: Kasikorn Securities' 25 June 2026 photonics research places AVGO at the TOP as a system and network chip designer. Budget unchanged at 50,000."
+    }
+   ],
+   "week": "2026-09-14"
   }
  ],
  "AXON": [
@@ -1070,6 +1088,15 @@
     }
    ],
    "week": "2026-08-03"
+  },
+  {
+   "points": [
+    {
+     "s": "0",
+     "text": "Appears at Layer 3 (wafers and substrates, InP) of a circulating 7-layer photonics slide alongside TSEM, GFS and IQE. ⚠️ OF THOSE FOUR WE NOW TRACK TWO - AXTI AND TSEM - AND DECLINED THE OTHER TWO: GFS on a 28.3% GAAP gross margin and 5.8% revenue growth, IQE because it is LSE AIM-listed in pence and outside a US-stock mandate. Unfunded; nothing held; no change."
+    }
+   ],
+   "week": "2026-09-14"
   }
  ],
  "BE": [
@@ -1295,6 +1322,23 @@
     }
    ],
    "week": "2026-08-10"
+  },
+  {
+   "points": [
+    {
+     "s": "0",
+     "text": "ADDED TO THE BOARD 14 SEP AS AN UNFUNDED TRACKING NAME in Group 4, the 94th ticker. NO BUDGET, NOTHING BOUGHT. Ciena is the purest optical-systems company available - the 6500 Packet-Optical Platform and Waveserver - and it is the ONE genuine gap out of eleven names on a circulating 7-layer photonics slide that we did not already own or track."
+    },
+    {
+     "s": "+",
+     "text": "FISCAL Q3 2026 TO 1 AUGUST: revenue 1,671.1 MILLION, PLUS 37.0% YEAR ON YEAR, GAAP GROSS MARGIN 45.4%, GAAP OPERATING MARGIN 18.0%, GAAP NET MARGIN 15.9%, GAAP diluted EPS 1.83. GAAP PROFITABLE ON A TRAILING BASIS AT 654.41 MILLION. 20 analysts average 504.13 against the 11 Sep close of 349.54; market cap 49.57bn. A record quarter driven by AI demand."
+    },
+    {
+     "s": "!",
+     "text": "⚠️ THE FIELDS ON THIS CARD ARE DELIBERATELY INCOMPLETE AND MUST BE FILLED BEFORE ANY BUDGET DECISION: trailing revenue, trailing P/E, price/sales, free cash flow, capex, ROE, ROIC, 52-week range and Rule of 40 are all BLANK because I have not verified them. ⚠️ AND THE FORWARD P/E CONFLICTS WITHIN ONE SOURCE ON THE SAME DAY - 33.78 on the quote page against 48.72 on the forecast page. The board carries 33.78. ⚠️ THE MARGINS ABOVE ARE LAST QUARTER, NOT TRAILING - do not mix the two periods. ⚠️ WHAT WOULD CHANGE MY MIND: two consecutive quarters of revenue growth above 25% with GAAP operating margin holding above 15%. The board is FULL at 1,000,000, so funding it means trimming something - a 10 December decision, not a today decision."
+    }
+   ],
+   "week": "2026-09-14"
   }
  ],
  "CIFR": [
@@ -2235,6 +2279,15 @@
     }
    ],
    "week": "2026-07-27"
+  },
+  {
+   "points": [
+    {
+     "s": "0",
+     "text": "The only Layer 2 'materials' name on a circulating photonics slide that actually belongs there. ⚠️ THE OTHER THREE DO NOT: ALBEMARLE is a lithium and bromine company whose own industries page never mentions optics, photonics, fibre, lasers or optical glass; MP MATERIALS mines NEODYMIUM AND PRASEODYMIUM FOR MAGNETS, and ERBIUM - the rare earth that actually matters in photonics, for erbium-doped fibre amplifiers - DOES NOT APPEAR ANYWHERE IN MP'S NINE-ITEM PRODUCT LIST; STM is a broad analog and power semiconductor company. Corning genuinely makes optical fibre and specialty glass. Unfunded; recorded for the December review."
+    }
+   ],
+   "week": "2026-09-14"
   }
  ],
  "GOOGL": [
@@ -2584,6 +2637,15 @@
     }
    ],
    "week": "2026-09-07"
+  },
+  {
+   "points": [
+    {
+     "s": "0",
+     "text": "⚠️ THE INTEL PHOTONICS STORY IS HALF-TRUE IN BOTH DIRECTIONS AND WORTH GETTING RIGHT, recorded 14 Sep. INTEL SOLD ITS PLUGGABLE OPTICAL TRANSCEIVER MODULE LINES TO JABIL IN 2023 - then-CEO Pat Gelsinger said the divestiture allowed Intel 'to focus on the higher-value component business and optical I/O solutions'. BUT IT KEPT THE COMPONENTS AND OPTICAL I/O BUSINESS: Intel's silicon photonics page, LAST MODIFIED 3 FEBRUARY 2026, advertises 400G, 800G and 1.6T solutions, Optical Compute Interconnect at 4 terabits bidirectional, and claims MORE THAN 8 MILLION PHOTONIC INTEGRATED CIRCUITS WITH OVER 32 MILLION ON-CHIP LASERS SHIPPED SINCE 2016. NOT SOLD, NOT WOUND DOWN - NARROWED. Still a back-up name with no budget; this does not change that."
+    }
+   ],
+   "week": "2026-09-14"
   }
  ],
  "IONQ": [
@@ -4710,6 +4772,10 @@
   },
   {
    "points": [
+    {
+     "s": "!",
+     "text": "⚠️⚠️ DIRECTLY RELEVANT TO THE PENDING SELL, RECORDED 14 SEP. A circulating photonics slide lists QCOM as a 'foundation' layer of the photonics value chain. I SEARCHED QUALCOMM'S FY2025 10-K FOR THE PERIOD ENDED 28 SEPTEMBER 2025 for photonics, silicon photonics, optical transceiver, optical interconnect, laser, lidar and optical networking as product lines. NO MENTIONS FOUND. QCT is integrated circuits for mobile devices, automotive and IoT. QUALCOMM'S PRESENCE ON THAT SLIDE IS UNSUPPORTED BY ITS OWN FILING. Had the slide been taken at face value it would have argued for holding a stock we have already decided to sell, on the strength of a business that does not appear in the accounts. THE SELL STANDS - Tier A, at market, 11 shares, once the tax sign-off closes."
+    },
     {
      "s": "!",
      "text": "⚠️ ANSWERED 14 SEP - SHOULD THIS SELL BE HELD BACK BECAUSE OF OIL AND THE FOMC? NO, AND THE PREMISE IS NOT TRUE YET. QCOM IS 181.97 AGAINST THE 174.09 REFERENCE WHEN THE SELL WAS WRITTEN - IT IS 4.5% HIGHER, so selling now sells BETTER than planned, not worse. The position is 11 SHARES WORTH ABOUT 2,002 DOLLARS, which is 0.29% of the portfolio. ⚠️ AND THE REASON FOR SELLING IS UNTOUCHED BY OIL: revenue growth of 5.2% cannot serve a mandate to double in five years. A Saudi pipeline does not change that. ⚠️ THERE IS ONE LEGITIMATE REASON TO WAIT AND IT IS NOT THE MARKET - THE TAX ADVISER SIGN-OFF IS STILL OUTSTANDING. ⚠️ WHAT WOULD CHANGE MY MIND: QCOM falling BELOW 174.09, because we would then be selling into a company-specific loss rather than a gain - worth one conversation before placing."
