@@ -3,62 +3,122 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ("Sep 14, 2026 - THE 'DOT-COM 2000 vs AI 2026' SLIDE, AND IT FAILS ITS OWN TEST. NO BUDGET HAS CHANGED, NOTHING BOUGHT "
- 'OR SOLD. ⚠️⚠️ BOTH MEN PICTURED ON IT ARE ON THE RECORD SAYING THE OPPOSITE OF WHAT IT CLAIMS. || (1) RAY DALIO, 30 '
- 'JULY 2026, ON THE DIARY OF A CEO PODCAST. Asked about Jeremy Grantham calling this the biggest investment bubble in '
- "American history, DALIO ANSWERED 'HE'S RIGHT' AND 'CLASSIC SIGNS THAT WE'RE IN [ONE]'. Verbatim, as reported by "
- "Fortune on 4 August 2026: 'Wealth is not the same as money. You see a lot of people getting wealthy but you can't "
- "spend the wealth.' And: 'There's almost nothing that's easier to produce than stock.' And, on the mechanism: 'People "
- "get into a new technology, they say that's miraculous, I can bet on that. Sometimes they borrow money to bet on it, "
- "AND THEY LOSE SIGHT OF THE PRICE.' He explicitly compares the present to 1929 and 2000. THE SLIDE USES HIM TO "
- "ENDORSE 'THIS TIME IS DIFFERENT'. HE HAS SAID THE OPPOSITE, IN PUBLIC, SIX WEEKS AGO. || (2) ⚠️ AND BUFFETT'S 1999 "
- "ARGUMENT WAS NOT 'DOT-COMS HAD NO PROFIT'. THAT IS THE SLIDE'S INVENTION AND IT MATTERS ENORMOUSLY, BECAUSE HIS REAL "
- "ARGUMENT APPLIES TO A PROFITABLE AI SECTOR TOO. In 'Mr. Buffett on the Stock Market', Fortune, 22 November 1999, "
- "drawn from his July 1999 Sun Valley speech, he argued two things. FIRST, interest rates: 'These act on financial "
- "valuations the way gravity acts on matter: THE HIGHER THE RATE, THE GREATER THE DOWNWARD PULL.' SECOND, that "
- "corporate profits as a share of GDP had run in a 4% to 6.5% band since 1951 and 'you have to be wildly optimistic to "
- "believe that corporate profits as a percent of GDP can, for any sustained period, hold much above 6%.' ⚠️ AND THIRD, "
- 'THE PART THE SLIDE ERASES ENTIRELY - THAT A TRANSFORMATIVE INDUSTRY RELIABLY FAILS TO REWARD ITS INVESTORS. '
- "Verbatim: 'There appear to have been at least 2,000 car makes... we came down to three U.S. car companies - "
- "THEMSELVES NO LOLLAPALOOZAS FOR INVESTORS.' And on aviation: 'I like to think that if I'd been at Kitty Hawk in 1903 "
- "when Orville Wright took off, I would have been farsighted enough... to shoot him down.' His conclusion, verbatim: "
- "'The key to investing is NOT assessing how much an industry is going to affect society... but rather determining the "
- "COMPETITIVE ADVANTAGE OF ANY GIVEN COMPANY.' THE CARS WERE REAL. THE AEROPLANES WERE REAL. THE PROFITS WERE REAL. "
- "THE INVESTORS STILL LOST. 'AI IS REAL' IS THEREFORE NOT AN ARGUMENT - IT IS THE PREMISE BUFFETT WAS WARNING ABOUT. "
- "|| ⚠️ NOTE ALSO WHAT IT COST HIM TO BE RIGHT EARLY: BERKSHIRE'S BOOK VALUE ROSE 0.5% IN 1999 AGAINST THE S&P 500's "
- "PLUS 21.0% - UNDERPERFORMANCE OF 20.5 POINTS, which he called 'the worst absolute performance of my tenure and, "
- "compared to the S&P, the worst relative performance as well.' In 2000 Berkshire made PLUS 6.5% against the S&P's "
- 'MINUS 9.1%. Being right about a bubble looks exactly like being wrong, for about a year. || (3) ⚠️⚠️ THE CASE THAT '
- 'SETTLES THE WHOLE ARGUMENT IS CISCO, AND IT IS THE ONE THE SLIDE CANNOT SURVIVE. Cisco in 2000 was NOT a dot-com. It '
- 'was the profitable, cash-generative, real-revenue INFRASTRUCTURE company that sold the plumbing to everyone else - '
- "exactly what the slide says makes 2026 safe. On 2 APRIL 2000 it PASSED MICROSOFT AS THE WORLD'S MOST VALUABLE "
- "COMPANY at 555.5 BILLION DOLLARS against Microsoft's 541.6bn, at a share price of 80.06 and A PRICE/EARNINGS RATIO "
- 'OF 234 AND PRICE/SALES OF 38.9. IT THEN FELL 88%, from about 79 to a low of 9.50 within two years. ⚠️ IT DID NOT '
- 'REGAIN THAT SHARE PRICE UNTIL 11 DECEMBER 2025 - TWENTY-FIVE YEARS AND NINE MONTHS LATER. AND ITS MARKET '
- 'CAPITALISATION STILL HAS NOT RECOVERED: 442.08bn at the 11 Sep 2026 close against 555.5bn in April 2000, and that is '
- 'in NOMINAL dollars, before inflation. CISCO HAD REAL PROFITS AND REAL CASH FLOW AND WAS FUNDAMENTAL TO THE '
- 'TECHNOLOGY. IT DID NOT MATTER. THE PRICE MATTERED. || (4) THE RIGHT HISTORICAL ANALOGY IS NOT THE DOT-COM RETAILERS '
- '- IT IS THE 1998-2001 TELECOM AND FIBRE BUILDOUT, WHICH IS STRUCTURALLY WHAT AI DATACENTRES ARE. The National Bureau '
- "of Economic Research, working paper 14290: 'From 1997 to 2002, investors added 880 BILLION DOLLARS to this industry. "
- 'Subsequently OVER ONE-HALF OF THIS INVESTMENT HAS BEEN LOST... with AT LEAST 63 TELECOMMUNICATIONS FIRMS GOING '
- "BANKRUPT.' Communications equipment investment went from about 62bn a year in Q1 1996 to over 135bn by Q4 2000, then "
- 'fell to under 93bn by Q4 2001 - 69% of a year earlier (Federal Reserve Bank of Richmond, Fall 2003). GLOBAL CROSSING '
- 'SPENT 13.7bn BUILDING ITS NETWORK AND FILED CHAPTER 11 ON 28 JANUARY 2002 WITH 12.39bn OF DEBT AGAINST 22.44bn OF '
- 'ASSETS - essentially the entire network was debt-financed. WorldCom followed on 21 July 2002 with 103.8bn of assets '
- 'and 41bn of debt, the largest bankruptcy in US history at the time. Lucent lost about 250 BILLION of market value, '
- 'equal to 2% of US GDP, having committed 8bn to VENDOR FINANCING - lending customers the money to buy its own '
- "products. ⚠️ AND THE DEMAND WAS REAL: Andrew Odlyzko's research found US backbone traffic genuinely DOUBLING ABOUT "
- 'ONCE A YEAR. It just was not doubling every 90 days as the industry claimed. REAL DEMAND GROWING FAST IS NOT '
- 'PROTECTION AGAINST OVERBUILDING - IT IS THE THING THAT JUSTIFIES THE OVERBUILDING. || (5) SO WHAT IMMUNITY DOES AI '
- 'ACTUALLY HAVE? THE HONEST ANSWER IS THAT IT IS REAL AT THE TOP OF THE STACK AND DISSOLVES AS YOU GO DOWN. THE REAL '
- 'IMMUNITY - AND IT IS GENUINE: the buyers can pay cash. Microsoft generated 182.9bn of operating cash flow in FY2026. '
- "In 2000, Cisco's customers were debt-financed telecoms and Lucent was LENDING them the purchase price. NVIDIA's Q2 "
- 'FY2027, quarter to 26 July 2026: revenue 96.2bn, GAAP GROSS MARGIN 75.0%, GAAP operating income 63.734bn, GAAP net '
- 'income 59.688bn, with Q3 guided to 108.0bn. That is not a 2000-style receivable from an insolvent counterparty; that '
- "is cash. Jensen Huang, verbatim: 'Now, compute is revenue.' || ⚠️⚠️ BUT THE IMMUNITY IS WEAKENING AND THE FILINGS "
- "SHOW IT. THE CASH-FUNDED ERA IS ENDING. Stefan Hepp of Chicago Booth, published 7 August 2026: 'The hyperscalers "
- 'issued approximately 120 BILLION DOLLARS OF CORPORATE BONDS LAST YEAR, compared to an average of about 28 BILLION '
- "ANNUALLY BETWEEN 2020 AND 2024.' FOUR TIMES THE RUN RATE. And in the filings themselves: AMAZON'S "
+ASOF = ("Sep 14, 2026 - THE 'TOP 7 US COMPANIES BY NET INCOME' SLIDE. EVERY NUMBER ON IT IS REAL AND THE RANKING IS STILL "
+ 'ALMOST ENTIRELY WRONG. NO BUDGET HAS CHANGED, NOTHING BOUGHT OR SOLD. || WHAT IS RIGHT, AND CREDIT WHERE IT IS DUE: '
+ 'ALL SEVEN FIGURES MATCH THE FILINGS TO THE MILLION. Microsoft 133,749m, Alphabet 132,170m, NVIDIA 120,067m, Apple '
+ '112,010m, Amazon 77,670m, Berkshire 66,968m, Meta 60,458m. That is better sourcing than almost anything else Salee '
+ 'has been sent. AND THE MEMBERSHIP OF THE SEVEN IS CORRECT - I checked JPMorgan (57.0bn FY2025), Broadcom (23,126m), '
+ 'Exxon (28.844bn), Bank of America (29,055m), Walmart (21,893m), Eli Lilly (20,640m), Visa (20.1bn), UnitedHealth '
+ "(12,056m) and Wells Fargo (20,285m). NONE reaches Meta's 60.46bn. JPMorgan is closest and is about 3.5bn short. "
+ "NOTHING IS WRONGLY OMITTED. || ⚠️ BUT 'FY 25-26' IS NOT A PERIOD. IT IS A LABEL COVERING SEVEN DIFFERENT YEAR-ENDS "
+ "SPANNING 27 SEPTEMBER 2025 TO 30 JUNE 2026 - UP TO TWELVE MONTHS APART. Microsoft's number is NINE MONTHS MORE "
+ "RECENT than Apple's. ⚠️ APPLE'S 112.01bn IS FISCAL 2025, ENDED 27 SEPTEMBER 2025 - ABOUT A YEAR STALE, AND APPLE'S "
+ 'FISCAL 2026 HAS NOT EVEN FINISHED YET. Its actual trailing-twelve-month figure is 128,930m, 16.9bn HIGHER than the '
+ 'slide shows. Ranking companies on periods a year apart is not a comparison. || ⚠️⚠️ ON A LIKE-FOR-LIKE '
+ 'TRAILING-TWELVE-MONTH BASIS THE ORDER IS ALMOST COMPLETELY DIFFERENT. ALPHABET IS NUMBER ONE AT 244,205m - NOT '
+ 'NUMBER TWO - AND IT LEADS MICROSOFT BY ABOUT 110 BILLION DOLLARS. The true TTM order: ALPHABET 244.2bn, NVIDIA '
+ '192.9bn, AMAZON 135.3bn, MICROSOFT 133.7bn, APPLE 128.9bn, BERKSHIRE 85.8bn, META 68.1bn. THE SLIDE PUTS MICROSOFT '
+ 'FIRST WHEN IT IS FOURTH. ONLY META IS IN THE RIGHT SLOT - ONE OUT OF SEVEN. || ⚠️⚠️ AND HERE IS THE PART THAT '
+ 'MATTERS FAR MORE THAN THE ORDERING, BECAUSE IT IS A TRAP THAT WILL CATCH SALEE ON ANY STOCK SCREEN HE EVER USES. '
+ 'THREE OF THESE SEVEN NET-INCOME FIGURES ARE NOT OPERATING PERFORMANCE AT ALL. Under US accounting rule ASU 2016-01, '
+ "UNREALISED GAINS AND LOSSES ON SHARES A COMPANY HOLDS MUST FLOW THROUGH ITS INCOME STATEMENT - so a company's "
+ 'reported profit moves when the value of its investments moves, even though it has sold nothing and earned nothing. '
+ "⚠️ ALPHABET'S Q2 2026 NET INCOME WAS 112,193 MILLION IN A SINGLE QUARTER, and its own filing says why, verbatim: "
+ "'Other income reflected a NET GAIN OF 98.0 BILLION, PRIMARILY THE RESULT OF NET UNREALIZED GAINS ON OUR EQUITY "
+ "SECURITIES.' ONE QUARTER'S PAPER GAIN AT ALPHABET IS LARGER THAN META'S ENTIRE YEAR OF PROFIT. ⚠️ AMAZON'S Q2 2026 "
+ "NET INCOME WAS 62,647 MILLION, and its filing says: 'Second quarter 2026 net income includes NON-OPERATING PRE-TAX "
+ "OTHER INCOME OF 53.4 BILLION, PRIMARILY FROM OUR INVESTMENTS IN ANTHROPIC.' ⚠️⚠️ I HAVE A DISCLOSED CONFLICT "
+ "REGARDING ANTHROPIC, ON FILE IN THIS PROJECT. I REPORT AMAZON'S OWN DISCLOSURE AS WRITTEN AND TAKE NO VIEW ON THE "
+ 'VALUATION BEHIND IT. Salee should weigh that item accordingly and, if it ever drives a decision, ask someone with no '
+ 'stake. || ⚠️ THE PRACTICAL DANGER, AND THIS IS THE WHOLE REASON THE SLIDE IS WORTH AN HOUR: IF A SCREEN DIVIDES '
+ "ALPHABET'S MARKET CAP BY ITS HEADLINE GAAP EARNINGS, ALPHABET APPEARS TO TRADE AT ABOUT 17 TIMES EARNINGS - 4,144bn "
+ 'OF MARKET CAP OVER 244.2bn - AND LOOKS CHEAPER THAN NVIDIA. THIS BOARD CARRIES ALPHABET AT 27.67 TIMES, WHICH '
+ 'IMPLIES ABOUT 149.8bn OF EARNINGS RATHER THAN 244.2bn - i.e. OUR VENDOR IS EVIDENTLY USING A CLEANER FIGURE, AND THE '
+ "BOARD IS NOT CAUGHT BY THIS. ⚠️ I DO NOT KNOW THE VENDOR'S EXACT METHODOLOGY AND AM NOT CLAIMING TO - the point is "
+ "that the same company can honestly be quoted at 17 times or 28 times depending on which 'earnings' is used, AND THE "
+ 'CHEAPER-LOOKING ONE IS THE FALSE ONE. NEVER TRUST A P/E WITHOUT KNOWING WHAT IS IN THE E. || (2) ⚠️ BERKSHIRE SHOULD '
+ 'NOT BE ON THIS LIST AT ALL ON THE MEASURE ITS OWN FOUNDER DEMANDED. Buffett wrote two annual letters warning about '
+ "exactly this rule. From the 2017 annual report, verbatim: 'The new rule says that the net change in unrealized "
+ 'investment gains and losses in stocks we hold must be included in all net income figures we report to you. That '
+ "requirement will produce some truly WILD AND CAPRICIOUS SWINGS in our GAAP bottom-line.' And: 'Including gyrations "
+ 'of that magnitude in reported net income will swamp the truly important numbers that describe our operating '
+ "performance. FOR ANALYTICAL PURPOSES, BERKSHIRE'S BOTTOM-LINE WILL BE USELESS.' From the 2018 letter: 'OUR ADVICE? "
+ "FOCUS ON OPERATING EARNINGS, PAYING LITTLE ATTENTION TO GAINS OR LOSSES OF ANY VARIETY.' ⚠️ BERKSHIRE'S FY2025 "
+ 'OPERATING EARNINGS WERE 44,486 MILLION AGAINST GAAP NET EARNINGS OF 66,968 MILLION - GAAP IS 50.5% HIGHER. ON '
+ "BUFFETT'S OWN PREFERRED MEASURE BERKSHIRE EARNED 44.5bn AND WOULD FALL BELOW META'S 60.46bn, OFF THE LIST ENTIRELY. "
+ '⚠️ NOTE ALSO THAT BUFFETT NO LONGER RUNS IT: the FY2025 letter of 28 February 2026 is signed by GREGORY E. ABEL AS '
+ "CHIEF EXECUTIVE OFFICER, and repeats the warning - 'our GAAP net earnings... must be assessed with caution... "
+ "operating earnings remains the best measure.' || (3) ⚠️ AND META'S 60.46bn IS DISTORTED IN THE OTHER DIRECTION - IT "
+ "IS TOO LOW. Meta's FY2025 tax line carries a one-off charge from the implementation of the One Big Beautiful Bill "
+ "Act in Q3 2025; without the valuation-allowance charge the full-year effective tax rate 'would have DECREASED BY 17 "
+ "PERCENTAGE POINTS TO 13%'. So the company ranked last on this slide is the one whose figure most UNDERSTATES the "
+ "business. Its TTM is 68,098m. || (4) THE PUBLISHER: 'CERV KNOWLEDGE' IS AN INDIVIDUAL'S SOCIAL-MEDIA BRAND, NOT A "
+ "RESEARCH HOUSE - Instagram, X and Threads accounts under the display name 'Cerv Harris', monetised through a Gumroad "
+ 'storefront. NO NAMED ANALYST, NO CREDENTIALS, NO FIRM, NO METHODOLOGY PAGE, NO CORRECTIONS POLICY, NO DISCLOSURE. ⚠️ '
+ "AND ITS STATED SOURCE IS TRADINGVIEW, WHICH IS ON THIS BOARD'S BLACKLIST - not because the numbers are wrong here "
+ '(they are right) but because an aggregator cannot tell you WHICH PERIOD it is showing you, which is precisely the '
+ 'fault that ruins this slide. || (5) WHAT CHANGES FOR US: NOTHING. NO BUDGET MOVES, NOTHING IS BOUGHT OR SOLD. Five '
+ 'of the seven are already core funded holdings - MSFT 58,000, GOOGL 78,000, NVDA 95,000, AAPL 24,000, AMZN 48,000, '
+ 'META 52,000, which is 355,000 of the 1,000,000 board in six of these seven names. Berkshire is not on the board and '
+ 'this is not a reason to add it. Conviction HIGH. ⚠️ WHAT I AM TAKING FROM IT IS A RULE, NOT A TRADE, AND IT BELONGS '
+ "BESIDE YESTERDAY'S: NEVER READ PRICE/SALES WITHOUT GROSS MARGIN, AND NEVER READ NET INCOME WITHOUT ASKING WHAT IS "
+ 'INSIDE IT. Three of the seven biggest profit figures in America are substantially not profit from operating a '
+ "business. || PREVIOUS ENTRY: Sep 14, 2026 - THE 'DOT-COM 2000 vs AI 2026' SLIDE, AND IT FAILS ITS OWN TEST. NO "
+ 'BUDGET HAS CHANGED, NOTHING BOUGHT OR SOLD. ⚠️⚠️ BOTH MEN PICTURED ON IT ARE ON THE RECORD SAYING THE OPPOSITE OF '
+ 'WHAT IT CLAIMS. || (1) RAY DALIO, 30 JULY 2026, ON THE DIARY OF A CEO PODCAST. Asked about Jeremy Grantham calling '
+ "this the biggest investment bubble in American history, DALIO ANSWERED 'HE'S RIGHT' AND 'CLASSIC SIGNS THAT WE'RE IN "
+ "[ONE]'. Verbatim, as reported by Fortune on 4 August 2026: 'Wealth is not the same as money. You see a lot of people "
+ "getting wealthy but you can't spend the wealth.' And: 'There's almost nothing that's easier to produce than stock.' "
+ "And, on the mechanism: 'People get into a new technology, they say that's miraculous, I can bet on that. Sometimes "
+ "they borrow money to bet on it, AND THEY LOSE SIGHT OF THE PRICE.' He explicitly compares the present to 1929 and "
+ "2000. THE SLIDE USES HIM TO ENDORSE 'THIS TIME IS DIFFERENT'. HE HAS SAID THE OPPOSITE, IN PUBLIC, SIX WEEKS AGO. || "
+ "(2) ⚠️ AND BUFFETT'S 1999 ARGUMENT WAS NOT 'DOT-COMS HAD NO PROFIT'. THAT IS THE SLIDE'S INVENTION AND IT MATTERS "
+ "ENORMOUSLY, BECAUSE HIS REAL ARGUMENT APPLIES TO A PROFITABLE AI SECTOR TOO. In 'Mr. Buffett on the Stock Market', "
+ 'Fortune, 22 November 1999, drawn from his July 1999 Sun Valley speech, he argued two things. FIRST, interest rates: '
+ "'These act on financial valuations the way gravity acts on matter: THE HIGHER THE RATE, THE GREATER THE DOWNWARD "
+ "PULL.' SECOND, that corporate profits as a share of GDP had run in a 4% to 6.5% band since 1951 and 'you have to be "
+ 'wildly optimistic to believe that corporate profits as a percent of GDP can, for any sustained period, hold much '
+ "above 6%.' ⚠️ AND THIRD, THE PART THE SLIDE ERASES ENTIRELY - THAT A TRANSFORMATIVE INDUSTRY RELIABLY FAILS TO "
+ "REWARD ITS INVESTORS. Verbatim: 'There appear to have been at least 2,000 car makes... we came down to three U.S. "
+ "car companies - THEMSELVES NO LOLLAPALOOZAS FOR INVESTORS.' And on aviation: 'I like to think that if I'd been at "
+ "Kitty Hawk in 1903 when Orville Wright took off, I would have been farsighted enough... to shoot him down.' His "
+ "conclusion, verbatim: 'The key to investing is NOT assessing how much an industry is going to affect society... but "
+ "rather determining the COMPETITIVE ADVANTAGE OF ANY GIVEN COMPANY.' THE CARS WERE REAL. THE AEROPLANES WERE REAL. "
+ "THE PROFITS WERE REAL. THE INVESTORS STILL LOST. 'AI IS REAL' IS THEREFORE NOT AN ARGUMENT - IT IS THE PREMISE "
+ "BUFFETT WAS WARNING ABOUT. || ⚠️ NOTE ALSO WHAT IT COST HIM TO BE RIGHT EARLY: BERKSHIRE'S BOOK VALUE ROSE 0.5% IN "
+ "1999 AGAINST THE S&P 500's PLUS 21.0% - UNDERPERFORMANCE OF 20.5 POINTS, which he called 'the worst absolute "
+ "performance of my tenure and, compared to the S&P, the worst relative performance as well.' In 2000 Berkshire made "
+ "PLUS 6.5% against the S&P's MINUS 9.1%. Being right about a bubble looks exactly like being wrong, for about a year. "
+ '|| (3) ⚠️⚠️ THE CASE THAT SETTLES THE WHOLE ARGUMENT IS CISCO, AND IT IS THE ONE THE SLIDE CANNOT SURVIVE. Cisco in '
+ '2000 was NOT a dot-com. It was the profitable, cash-generative, real-revenue INFRASTRUCTURE company that sold the '
+ 'plumbing to everyone else - exactly what the slide says makes 2026 safe. On 2 APRIL 2000 it PASSED MICROSOFT AS THE '
+ "WORLD'S MOST VALUABLE COMPANY at 555.5 BILLION DOLLARS against Microsoft's 541.6bn, at a share price of 80.06 and A "
+ 'PRICE/EARNINGS RATIO OF 234 AND PRICE/SALES OF 38.9. IT THEN FELL 88%, from about 79 to a low of 9.50 within two '
+ 'years. ⚠️ IT DID NOT REGAIN THAT SHARE PRICE UNTIL 11 DECEMBER 2025 - TWENTY-FIVE YEARS AND NINE MONTHS LATER. AND '
+ 'ITS MARKET CAPITALISATION STILL HAS NOT RECOVERED: 442.08bn at the 11 Sep 2026 close against 555.5bn in April 2000, '
+ 'and that is in NOMINAL dollars, before inflation. CISCO HAD REAL PROFITS AND REAL CASH FLOW AND WAS FUNDAMENTAL TO '
+ 'THE TECHNOLOGY. IT DID NOT MATTER. THE PRICE MATTERED. || (4) THE RIGHT HISTORICAL ANALOGY IS NOT THE DOT-COM '
+ 'RETAILERS - IT IS THE 1998-2001 TELECOM AND FIBRE BUILDOUT, WHICH IS STRUCTURALLY WHAT AI DATACENTRES ARE. The '
+ "National Bureau of Economic Research, working paper 14290: 'From 1997 to 2002, investors added 880 BILLION DOLLARS "
+ 'to this industry. Subsequently OVER ONE-HALF OF THIS INVESTMENT HAS BEEN LOST... with AT LEAST 63 TELECOMMUNICATIONS '
+ "FIRMS GOING BANKRUPT.' Communications equipment investment went from about 62bn a year in Q1 1996 to over 135bn by "
+ 'Q4 2000, then fell to under 93bn by Q4 2001 - 69% of a year earlier (Federal Reserve Bank of Richmond, Fall 2003). '
+ 'GLOBAL CROSSING SPENT 13.7bn BUILDING ITS NETWORK AND FILED CHAPTER 11 ON 28 JANUARY 2002 WITH 12.39bn OF DEBT '
+ 'AGAINST 22.44bn OF ASSETS - essentially the entire network was debt-financed. WorldCom followed on 21 July 2002 with '
+ '103.8bn of assets and 41bn of debt, the largest bankruptcy in US history at the time. Lucent lost about 250 BILLION '
+ 'of market value, equal to 2% of US GDP, having committed 8bn to VENDOR FINANCING - lending customers the money to '
+ "buy its own products. ⚠️ AND THE DEMAND WAS REAL: Andrew Odlyzko's research found US backbone traffic genuinely "
+ 'DOUBLING ABOUT ONCE A YEAR. It just was not doubling every 90 days as the industry claimed. REAL DEMAND GROWING FAST '
+ 'IS NOT PROTECTION AGAINST OVERBUILDING - IT IS THE THING THAT JUSTIFIES THE OVERBUILDING. || (5) SO WHAT IMMUNITY '
+ 'DOES AI ACTUALLY HAVE? THE HONEST ANSWER IS THAT IT IS REAL AT THE TOP OF THE STACK AND DISSOLVES AS YOU GO DOWN. '
+ 'THE REAL IMMUNITY - AND IT IS GENUINE: the buyers can pay cash. Microsoft generated 182.9bn of operating cash flow '
+ "in FY2026. In 2000, Cisco's customers were debt-financed telecoms and Lucent was LENDING them the purchase price. "
+ "NVIDIA's Q2 FY2027, quarter to 26 July 2026: revenue 96.2bn, GAAP GROSS MARGIN 75.0%, GAAP operating income "
+ '63.734bn, GAAP net income 59.688bn, with Q3 guided to 108.0bn. That is not a 2000-style receivable from an insolvent '
+ "counterparty; that is cash. Jensen Huang, verbatim: 'Now, compute is revenue.' || ⚠️⚠️ BUT THE IMMUNITY IS WEAKENING "
+ "AND THE FILINGS SHOW IT. THE CASH-FUNDED ERA IS ENDING. Stefan Hepp of Chicago Booth, published 7 August 2026: 'The "
+ 'hyperscalers issued approximately 120 BILLION DOLLARS OF CORPORATE BONDS LAST YEAR, compared to an average of about '
+ "28 BILLION ANNUALLY BETWEEN 2020 AND 2024.' FOUR TIMES THE RUN RATE. And in the filings themselves: AMAZON'S "
  'TRAILING-TWELVE-MONTH FREE CASH FLOW IS NEGATIVE 7.6 BILLION, against POSITIVE 18.2bn a year earlier, with 67.0bn OF '
  'LONG-TERM DEBT ISSUED IN THE FIRST HALF OF 2026 ALONE. Meta issued 24.9bn net in H1. Alphabet sold 20bn of dollar '
  'notes AND 5.5bn of sterling notes on 13 February 2026 INCLUDING A ONE-BILLION-POUND HUNDRED-YEAR TRANCHE MATURING IN '
