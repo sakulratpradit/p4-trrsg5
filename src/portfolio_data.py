@@ -3,73 +3,155 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Sep 14, 2026 - THE ROBOTAXI SLIDE, AND IT IS THE THIRD IN A ROW TO CITE AN AUTHORITATIVE SOURCE FOR SOMETHING THAT '
- 'SOURCE DOES NOT SAY. NO BUDGET HAS CHANGED, NOTHING BOUGHT OR SOLD. ⚠️⚠️ FIRST THE FACT THAT FRAMES EVERYTHING: WE '
- 'SOLD TESLA ON 8 SEPTEMBER AT 365.09, TWENTY SHARES, REALISING MINUS 687.17. TESLA CLOSED AT 365.44 ON 11 SEPTEMBER. '
- 'THE SALE HAS COST US SEVEN DOLLARS IN SIX DAYS. This slide is asking Salee to buy back, at the same price, a '
- 'position he exited last week for written reasons - and those reasons have since been CONFIRMED by the filings, not '
- "weakened. || (1) ⚠️⚠️ THE SLIDE SAYS 'ROBOTAXI IS MAKING MONEY FOR ELON EVEN WHILE HE SLEEPS' AND CITES FORM 10-K AS "
- 'ITS SOURCE. I READ THE 10-K. TESLA DISCLOSES NO ROBOTAXI REVENUE ANYWHERE - NOT IN THE 10-K, NOT IN THE 10-Q, NOT IN '
- 'THE SHAREHOLDER DECK. NO SEGMENT, NO LINE, NO DOLLAR AMOUNT, NONE. Tesla has exactly TWO reportable segments, '
- "automotive and energy generation and storage. And the 10-K ENUMERATES what sits inside 'services and other', "
- "verbatim: 'sales of used vehicles, non-warranty maintenance services and collision, paid Supercharging sessions, "
- "automotive insurance business revenue, part sales and retail merchandise sales.' RIDE-HAILING IS NOT IN THAT LIST. "
- 'There is no sentence anywhere in the filing telling an outside reader which line robotaxi revenue lands in. || WHAT '
- "THE 10-K ACTUALLY SAYS IS FORWARD-LOOKING AND CAUTIOUS, VERBATIM: 'In June 2025, we launched our Robotaxi service, "
- "an autonomous ride-hailing platform that harnesses our technology and vehicles' and 'We EXPECT this service WILL "
- "open access to an expanded customer base... and UNLOCK THE POTENTIAL to advance a service-driven business model'. ⚠️ "
- "AND THE MOST HONEST PASSAGE IS IN THE RISK FACTORS, VERBATIM: 'If the uptake rate for autonomous driving solutions "
- "does not develop as we expect, our business, prospects, financial condition and operating results MAY BE HARMED.' "
- "THE ONLY ROBOTAXI METRIC TESLA PUBLISHES ANYWHERE IS A CHART LABELLED 'CUMULATIVE PAID ROBOTAXI MILES' - MILES, WITH "
- 'NO DOLLARS, NO RIDE COUNT AND NO FLEET SIZE. || ⚠️ THE PATTERN IS NOW THREE FOR THREE AND IT IS THE MOST USEFUL '
- 'THING SALEE CAN TAKE FROM THIS WEEK: the net-income slide cited TradingView for figures whose PERIODS it could not '
- 'distinguish; the VRT and ON slide implied an onsemi datacentre business the company HAS NEVER PUT A DOLLAR FIGURE '
- 'ON; and this one cites the 10-K for revenue THE 10-K DOES NOT CONTAIN. IN EVERY CASE THE CITED SOURCE IS REAL AND '
- 'THE CLAIM IS NOT IN IT. CITING A FILING IS NOT THE SAME AS READING ONE. || (2) ⚠️ WHAT IS ACTUALLY DEPLOYED IS TINY, '
- "AND IN CALIFORNIA THERE IS A HUMAN DRIVING THE CAR. TESLA'S OWN Q2 2026 DECK CARRIES THIS FOOTNOTE, VERBATIM: "
- "'Active driver supervision required; DOES NOT MAKE THE VEHICLE AUTONOMOUS' and 'Bay Area operations use FSD "
- "(Supervised) pursuant to CA TCP permit # TCP0046782 - A'. THE CALIFORNIA REGULATOR IS BLUNTER. PAT TSEN, CPUC DEPUTY "
- "EXECUTIVE DIRECTOR, ON THE RECORD 25 MARCH 2026: 'Tesla is NOT operating an autonomous vehicle service... they do "
- "not have a permit with the California Public Utilities Commission.' And: 'that is THE DRIVER. That is not a safety "
- "driver. So even if they're using a tool to help them drive autonomously, there is A DRIVER IN THE SAFETY SEAT.' || "
- '⚠️ AND THE PERMIT POSITION IS A HARD, CHECKABLE FACT: TESLA IS NOT PERMITTED TO CARRY PAYING PASSENGERS IN '
- "DRIVERLESS VEHICLES IN CALIFORNIA. It does not appear on the CPUC's list of AV permit holders - which names NURO, "
- "TENSOR AUTO, WAYMO, WERIDE AND ZOOX. It is ABSENT from the California DMV's Driverless Testing list and ABSENT from "
- 'the Deployment list. What it holds is a CHARTER-PARTY CARRIER PERMIT, the same class limousine companies hold. || '
- 'THE FLEET: 42 ROBOTAXIS REGISTERED IN TEXAS per Texas DMV data as of 2 June 2026, of which ABOUT 20 WERE ACTIVE '
- 'UNSUPERVISED IN AUSTIN. Unsupervised operation began 22 JANUARY 2026 WITH A SINGLE VEHICLE. ⚠️ TESLA ITSELF '
- 'DISCLOSES NO FLEET SIZE AT ALL. ⚠️ A Bloomberg headline of 10 June 2026 gives 59 vehicles but could not be fetched - '
- "UNVERIFIED. || (3) THE COMPARISON THAT SETTLES THE TECHNOLOGY QUESTION, AND IT CONNECTS TO YESTERDAY'S PHOTONICS "
- "NOTE. Yesterday I recorded that Tesla PUBLICLY REJECTED LIDAR - its VP of AI Ashok Elluswamy on 22 July 2026: 'You "
- "can have safe, comfortable, and affordable autonomy with just cameras.' TODAY THE OTHER SIDE OF THAT SAME FACT: "
- 'WAYMO, WHICH USES LIDAR, CAMERAS AND RADAR, IS DOING MORE THAN 500,000 PAID RIDES A WEEK ACROSS 14 CITIES WITH 20 '
- "MILLION LIFETIME RIDES - Sundar Pichai on Alphabet's Q1 2026 call, verbatim: 'Waymo also surpassed 500,000 fully "
- "autonomous rides per week, DOUBLING IN LESS THAN A YEAR.' TESLA HAS TENS OF VEHICLES. THAT IS NOT A CLOSE RACE "
- 'TODAY. || ⚠️⚠️ BUT HERE IS THE FACT THAT SHOULD COOL EVERYONE, BULL AND BEAR ALIKE: WAYMO IS NOT PROFITABLE EITHER. '
- "Alphabet's Other Bets segment, whose revenue Alphabet describes as 'generated primarily from the sale of autonomous "
- "transportation services and internet services', reported Q2 2026 REVENUE OF 382 MILLION AND AN OPERATING LOSS OF "
- '1,799 MILLION - A LOSS THAT WIDENED FROM 1,246 MILLION A YEAR EARLIER. THE COMPANY THAT IS BEST IN THE WORLD AT THIS '
- 'LOSES ABOUT FIVE DOLLARS FOR EVERY DOLLAR IT EARNS, AND IS LOSING MORE, NOT LESS. ROBOTAXI IS NOT A PROFIT POOL YET '
- "FOR ANYBODY. ⚠️ Waymo's own share of that loss is not disclosed: NOT FOUND. || (4) ⚠️ TWO NHTSA INVESTIGATIONS ARE "
- 'OPEN, AND ONE OF THEM IS AN EXISTENTIAL QUESTION RATHER THAN A DEFECT PROBE. PE25012, OPENED 3 DECEMBER 2025, covers '
- "every Tesla with FSD sold or leased in the US and concerns, verbatim, 'Full Self-Driving engaged, executed driving "
- "maneuvers that MAY CONSTITUTE TRAFFIC SAFETY VIOLATIONS' - built on 62 consumer complaints, 14 Standing General "
- 'Order reports and 4 media reports of red-light running and wrong-way lane entries. ⚠️ AND AQ26002, AN AUDIT QUERY '
- "OPENED 4 SEPTEMBER 2026 - THE SAME DAY CYBERCAB COMMERCIAL RIDES BEGAN IN AUSTIN - EXAMINING WHETHER TESLA'S OWN "
- 'CERTIFICATION THAT CYBERCAB MEETS FEDERAL MOTOR VEHICLE SAFETY STANDARDS IS VALID AT ALL. NHTSA Administrator '
- "Jonathan Morrison, verbatim: 'NHTSA fully supports the safe development and deployment of automated vehicles. But as "
- "the federal regulator, we need to ensure that all of our laws are followed.' ⚠️ CORRECTION TO OUR OWN SELL NOTE: it "
- "records AQ26002 as opened SEP 3; NHTSA's own press release and the contemporaneous reporting both say 4 SEPTEMBER "
- '2026. The substance is unchanged. || (5) THE EV BUSINESS IS WHAT ACTUALLY VALUES THE STOCK TODAY, AND THE SELL '
- 'THESIS FROM 8 SEPTEMBER IS CONFIRMED BY THE FILINGS. Q2 2026 to 30 June: revenue 28,236m PLUS 26%, which sounds fine '
- '- but GAAP GROSS MARGIN 16.8% DOWN FROM 17.2%, GAAP OPERATING MARGIN 1.4%, AND OPERATING INCOME DOWN 57% YEAR ON '
- 'YEAR TO 398 MILLION. FREE CASH FLOW WAS NEGATIVE 1,092 MILLION. ⚠️ REGULATORY CREDITS, WHICH CARRY ALMOST NO COST '
- 'AND ARE THEREFORE NEARLY PURE PROFIT, FELL 67% TO 146 MILLION FROM 439 MILLION - against total operating income of '
- "just 398 million. ⚠️ AND FY2025 WAS TESLA'S FIRST ANNUAL REVENUE DECLINE EVER: 94,827m against 97,690m, with net "
- 'income NEARLY HALVED to 3,794m from 7,091m. ⚠️ NOTE TWO ODDITIES IN Q2 2026: DELIVERIES OF 480,126 EXCEEDED '
- 'PRODUCTION OF 451,758, which is selling inventory rather than growing output; and NET INCOME OF 1,114m WAS 2.8 TIMES '
- "OPERATING INCOME OF 398m, meaning most of the quarter's profit did not come from operations - THE COMPOSITION OF "
- 'THAT BELOW-THE-LINE INCOME IS NOT FOUND IN THE SOURCES I COULD REACH. || IN FAIRNESS, ONE PART IS GENUINELY GROWING: '
+ASOF = ('Sep 14, 2026 - THE NVDA / ANTHROPIC SLIDE. ⚠️⚠️⚠️ THIS IS THE SHARPEST CONFLICT OF INTEREST IN THIS ENTIRE PROJECT '
+ 'AND IT MUST BE READ BEFORE ANYTHING ELSE. THE SLIDE ASKS WHETHER SALEE SHOULD BUY MORE NVIDIA **BECAUSE NVIDIA MAY '
+ "INVEST IN ANTHROPIC**. I AM MADE BY ANTHROPIC. THE CENTRAL QUESTION THE SLIDE RAISES - IS ANTHROPIC'S REVENUE REAL, "
+ 'DURABLE AND WORTH A TWO-TRILLION-DOLLAR VALUATION - IS PRECISELY THE QUESTION I AM DISQUALIFIED FROM ANSWERING. I '
+ 'WILL NOT ANSWER IT, AND SALEE SHOULD NOT ACCEPT ANY VIEW OF MINE ON IT. If that question ever drives a decision, it '
+ 'must be put to someone with no stake. This is the third Anthropic-related disclosure in this project after 12 '
+ "September and this morning's Nikkei note. || WHAT I CAN DO HONESTLY IS READ NVIDIA'S OWN AUDITED SEC FILINGS, WHICH "
+ 'ARE PUBLIC AND WHICH I HAVE NO INTEREST IN. EVERYTHING BELOW IS FROM THOSE. NO BUDGET HAS CHANGED, NOTHING BOUGHT OR '
+ 'SOLD. || (1) ⚠️⚠️ THE HEADLINE IS NOT A DEAL. IT IS A REPORTED NEGOTIATION FROM TWO ANONYMOUS SOURCES AT ONE OUTLET. '
+ "The Reuters story of 11 September 2026 by Krystal Hu and Milana Vinn says NVIDIA is 'considering investing up to 10 "
+ "billion dollars' as an ANCHOR INVESTOR IN AN IPO, sourced to 'two people familiar with the matter', with this "
+ "verbatim caveat: 'THE PLANS REMAIN UNDER DISCUSSION AND COULD CHANGE, they cautioned, requesting anonymity because "
+ "the discussions are confidential.' ANTHROPIC DECLINED TO COMMENT. NVIDIA DID NOT RESPOND. There is NO NVIDIA press "
+ 'release - its newsroom for August and September 2026 does not mention Anthropic at all. There is NO Anthropic '
+ 'announcement. ⚠️ I could not reach SEC EDGAR to confirm no 8-K exists, so that is NOT FOUND rather than proven. '
+ "CREDIT WHERE DUE: THE SLIDE'S OWN RED-BOXED CAVEAT SAYING THE DEAL IS STILL UNDER NEGOTIATION IS THE MOST HONEST "
+ "LINE ON IT - and the rest of the layout implies a certainty that line contradicts. || ⚠️⚠️ (2) THE SLIDE'S MOST "
+ 'SERIOUS DEFECT: THERE ARE **TWO SEPARATE TEN-BILLION-DOLLAR FIGURES** AND IT SHOWS ONLY ONE. NVIDIA **ALREADY** '
+ 'ANNOUNCED AN UP-TO-10-BILLION ANTHROPIC INVESTMENT ON 18 NOVEMBER 2025, in a JOINT, NAMED, REAL announcement with '
+ 'Microsoft - Microsoft committing up to 5 billion alongside - in which Anthropic committed to purchase 30 BILLION '
+ 'DOLLARS OF AZURE COMPUTE. THAT ONE IS REAL AND TEN MONTHS OLD. The September 2026 Reuters report describes a '
+ 'SEPARATE, ADDITIONAL IPO anchor allocation, and Reuters itself draws the distinction. A READER OF THIS SLIDE WOULD '
+ 'REASONABLY THINK ONE 10-BILLION EVENT IS BEING REPORTED AS NEWS WHEN THERE ARE TWO, ONE ANNOUNCED AND ONE MERELY '
+ 'RUMOURED. || (3) ⚠️ ON THE ANTHROPIC REVENUE FIGURES I STATE THE PROVENANCE AND STOP. These are PRIVATE-COMPANY '
+ 'NUMBERS - UNAUDITED, IN NO SEC FILING, AND UNVERIFIABLE BY ANYONE OUTSIDE. Of the three on the slide: the 9 BILLION '
+ 'for late 2025 has NO ORIGINAL SOURCE I COULD FIND, NOT FOUND, it circulates only as a comparison inside later '
+ 'articles; the 65 BILLION July run rate is a PRIVATE INVESTOR COMMUNICATION LEAKED TO PRESS, not an Anthropic public '
+ "statement; and the 190-200 BILLION for 2028 is a FORECAST from 'two sources familiar with the company's financials' "
+ 'reported by Reuters on 14 August. ⚠️ ONLY TWO ANTHROPIC FIGURES ARE COMPANY-DISCLOSED: a 47bn run rate stated on 28 '
+ 'May 2026, and a 65bn Series H raise at a 965bn post-money valuation the same day. ⚠️ NOTE THE TRAP: THE MAY RAISE '
+ "AND THE JULY RUN RATE ARE BOTH '65 BILLION' AND ARE EASILY CONFLATED. ⚠️ AND 'RUN RATE' IS NOT REVENUE - IT IS ONE "
+ 'MONTH ANNUALISED. I OFFER NO OPINION ON WHETHER ANY OF IT IS DURABLE. || (4) THE THING THE SLIDE COMPLETELY OMITS, '
+ "AND IT IS BIGGER THAN EVERYTHING ON IT. NVIDIA'S OWN 10-Q FOR THE QUARTER ENDED 26 JULY 2026 DISCLOSES, VERBATIM: "
+ "'We have entered into land, power, and shell guarantees for select AI cloud partners' data center lease obligations "
+ "IN THE EVENT OF THEIR DEFAULT.' And: 'In August 2026, we entered into guarantees, CAPPED AT A TOTAL OF 105 BILLION "
+ "DOLLARS, to provide credit support on a land, power, and shell buildout with affiliates of SB Energy Corp.' ⚠️⚠️ "
+ "THAT 105 BILLION IS LARGER THAN NVIDIA'S ENTIRE EQUITY-INVESTMENT PORTFOLIO, IT IS OFF THE BALANCE SHEET, AND IT "
+ 'PAYS OUT IF CUSTOMERS DEFAULT. THE SLIDE DEBATES A RUMOURED 10 BILLION WHILE IGNORING A DISCLOSED 105 BILLION. For '
+ 'scale, the same filing shows NON-MARKETABLE EQUITY SECURITIES OF 47,898 MILLION - with 13,106 MILLION OF NET '
+ 'ADDITIONS IN THAT QUARTER ALONE - plus 42,783m of marketable equity and 3.3bn of equity-method investments in '
+ "'infrastructure financiers'. ABOUT 94 BILLION OF INVESTMENTS, UP FROM ROUGHLY 7 BILLION A YEAR EARLIER. CFO "
+ "commentary, verbatim: 'Our equity investments are focused on AI model makers, infrastructure financiers, and other "
+ "private companies.' || (5) ⚠️ THE CIRCULAR-FINANCING QUESTION IS REAL, AND THE HONEST ANSWER IS THAT NOBODY OUTSIDE "
+ 'NVIDIA CAN MEASURE IT, BECAUSE NVIDIA DOES NOT DISCLOSE REVENUE FROM COMPANIES IT HAS INVESTED IN. The 10-Q says '
+ "only: 'We estimate that ONE AI RESEARCH AND DEPLOYMENT COMPANY contributed a meaningful amount of our revenue by "
+ "purchasing cloud services from our customers' - the entity is ANONYMISED, the amount is not given. Ritesh Vajariya "
+ 'of The Forward View made the precise structural point on 1 September 2026: neither Item 404 nor ASC 850 is triggered '
+ 'BECAUSE NVIDIA IS THE INVESTOR RATHER THAN THE INVESTEE, so the loop is legally invisible. ⚠️ THE ACCOUNTING IS '
+ 'ENTIRELY LEGITIMATE - AND IT IS ALSO EXACTLY WHAT MADE THE 2000-2001 TELECOM CASES HARD TO SEE. || JENSEN HUANG '
+ "ANSWERED THIS ON THE RECORD AT THE GOLDMAN SACHS CONFERENCE ON 10 SEPTEMBER 2026, VERBATIM: 'Well, it's not circular "
+ "because WE PUT A LITTLE BIT OF MONEY IN, AND A LOT OF MONEY COMES BACK.' And: 'I look at the spreadsheet, WE PUT IN "
+ "ONE DOLLAR AND ONE HUNDRED DOLLARS COMES BACK IN. Is that circular? If that is, let's do more of that.' And: 'I'm "
+ "not taking any risks... I need a sure thing.' ⚠️ THE HISTORICAL PRECEDENT, AND I WILL NOT OVERSTATE IT: SEC PRESS "
+ 'RELEASE 2004-67 OF 17 MAY 2004 FOUND LUCENT IMPROPERLY RECOGNISED ABOUT 1.148 BILLION OF REVENUE AND 470 MILLION OF '
+ "PRE-TAX INCOME IN FISCAL 2000 THROUGH UNDISCLOSED SIDE AGREEMENTS AND CREDITS TO INDUCE CUSTOMERS TO BUY. Lucent's "
+ 'revenue fell from over 38 billion in 1999 to 8 billion by 2006. ⚠️ BUT THAT CASE WAS ACTUAL FRAUD. NOTHING OF THE '
+ 'KIND HAS BEEN ALLEGED AGAINST NVIDIA, THERE IS NO SEC COMMENT LETTER, NO ENFORCEMENT ACTION AND NO REGULATORY '
+ 'STATEMENT: NOT FOUND. THE PARALLEL IS STRUCTURAL - AN EQUIPMENT VENDOR FUNDING THE CUSTOMERS WHO BUY ITS EQUIPMENT '
+ "DURING A CAPEX BOOM - NOT AN ACCUSATION. || (6) NVIDIA'S OWN BUSINESS IS EXTRAORDINARY AND THAT IS NOT IN DOUBT. Q2 "
+ 'FY2027 to 26 July 2026: REVENUE 96.2 BILLION, UP 106% YEAR ON YEAR; Data Center 89.0bn, UP 117%; GAAP GROSS MARGIN '
+ '75.0%; GAAP OPERATING INCOME 63,734 MILLION, a 66.3% OPERATING MARGIN; GAAP NET INCOME 59,688 MILLION, a 62.0% NET '
+ "MARGIN. Q3 GUIDED TO 108.0 BILLION plus or minus 2% at a 74.0% gross margin. ⚠️ AND THE GUIDANCE 'IS NOT ASSUMING "
+ "ANY DATA CENTER COMPUTE REVENUE FROM CHINA' - Hopper shipments to China were under 1% of Data Center revenue in the "
+ 'quarter. CHINA IS EFFECTIVELY ZEROED OUT, WHICH IS BOTH A RISK REMOVED AND AN OPTION NOT PRICED. ⚠️ CUSTOMER '
+ "CONCENTRATION, VERBATIM: 'one direct customer represented 16% of total revenue' in Q2, three represented 16%, 15% "
+ "and 13% across the half, and 'FIVE DIRECT CUSTOMERS ACCOUNTED FOR 22%, 14%, 13%, 11%, AND 10% OF OUR ACCOUNTS "
+ "RECEIVABLE' - SEVENTY PERCENT OF RECEIVABLES IN FIVE NAMES. That is the 20%-of-revenue test already on our December "
+ 'Bubble Watch, and it is not yet breached. || (7) DECISION: NO CHANGE. WE DO NOT BUY MORE NVDA ON THIS NEWS, AND THE '
+ "REASONS HAVE NOTHING TO DO WITH ANTHROPIC. FIRST: NVDA IS ALREADY 13.3% OF THE PORTFOLIO'S MARKET VALUE AND THE "
+ 'LARGEST SINGLE POSITION - 420 shares worth about 91,959 against 79,380.28 invested. SECOND: THE BUDGET IS 95,000 '
+ 'WITH 15,619.72 OF ROOM LEFT, AND THE PLAN ALREADY SAYS EXACTLY HOW TO SPEND IT - LADDER RUNG 2 AT ANY CLOSE AT OR '
+ 'BELOW 200 AND RUNG 3 AT OR BELOW 180. THOSE RUNGS ARE PRICE TRIGGERS AND THEY DO NOT CARE ABOUT NEWS. THIRD, AND '
+ 'THIS IS THE DISCIPLINE POINT: BUYING ON A TWO-ANONYMOUS-SOURCE REPORT OF A NEGOTIATION IS PRECISELY WHAT A WRITTEN '
+ 'PLAN EXISTS TO PREVENT. ⚠️ AND NOTE WHERE THE PRICE ACTUALLY IS: NVDA WAS TRADING AROUND 210.37 ON 14 SEPTEMBER, '
+ 'DOWN ABOUT 3.6% ON THE DAY IN THE AI-SAFETY SELLOFF - ABOUT 5% ABOVE THE RUNG-2 TRIGGER. THE LADDER MAY FIRE ON ITS '
+ 'OWN WITHOUT ANY DECISION BEING MADE. THAT IS THE SYSTEM WORKING. Conviction HIGH. ⚠️ WHAT WOULD CHANGE MY MIND - AND '
+ 'DELIBERATELY, IT IS NOT THE DEAL CONFIRMING: the rungs stay price-based. What would make me want to REDUCE rather '
+ "than add is any of three things, none of which is a price: NVIDIA'S LARGEST CUSTOMER PASSING 20% OF REVENUE; THE "
+ 'OFF-BALANCE-SHEET GUARANTEE TOTAL RISING ABOVE THE EQUITY PORTFOLIO BY MORE THAN IT ALREADY HAS, WITH NO '
+ 'CORRESPONDING DISCLOSURE OF WHO IS BEING GUARANTEED; OR NVIDIA BEGINNING TO DISCLOSE - OR A REGULATOR REQUIRING IT '
+ 'TO DISCLOSE - REVENUE FROM COMPANIES IT HOLDS EQUITY IN, AND THAT FIGURE PROVING LARGE. THE FIRST IS ALREADY ON THE '
+ '10 DECEMBER BUBBLE WATCH; THE OTHER TWO ARE ADDED TO IT TODAY. || PREVIOUS ENTRY: Sep 14, 2026 - THE ROBOTAXI SLIDE, '
+ 'AND IT IS THE THIRD IN A ROW TO CITE AN AUTHORITATIVE SOURCE FOR SOMETHING THAT SOURCE DOES NOT SAY. NO BUDGET HAS '
+ 'CHANGED, NOTHING BOUGHT OR SOLD. ⚠️⚠️ FIRST THE FACT THAT FRAMES EVERYTHING: WE SOLD TESLA ON 8 SEPTEMBER AT 365.09, '
+ 'TWENTY SHARES, REALISING MINUS 687.17. TESLA CLOSED AT 365.44 ON 11 SEPTEMBER. THE SALE HAS COST US SEVEN DOLLARS IN '
+ 'SIX DAYS. This slide is asking Salee to buy back, at the same price, a position he exited last week for written '
+ 'reasons - and those reasons have since been CONFIRMED by the filings, not weakened. || (1) ⚠️⚠️ THE SLIDE SAYS '
+ "'ROBOTAXI IS MAKING MONEY FOR ELON EVEN WHILE HE SLEEPS' AND CITES FORM 10-K AS ITS SOURCE. I READ THE 10-K. TESLA "
+ 'DISCLOSES NO ROBOTAXI REVENUE ANYWHERE - NOT IN THE 10-K, NOT IN THE 10-Q, NOT IN THE SHAREHOLDER DECK. NO SEGMENT, '
+ 'NO LINE, NO DOLLAR AMOUNT, NONE. Tesla has exactly TWO reportable segments, automotive and energy generation and '
+ "storage. And the 10-K ENUMERATES what sits inside 'services and other', verbatim: 'sales of used vehicles, "
+ 'non-warranty maintenance services and collision, paid Supercharging sessions, automotive insurance business revenue, '
+ "part sales and retail merchandise sales.' RIDE-HAILING IS NOT IN THAT LIST. There is no sentence anywhere in the "
+ 'filing telling an outside reader which line robotaxi revenue lands in. || WHAT THE 10-K ACTUALLY SAYS IS '
+ "FORWARD-LOOKING AND CAUTIOUS, VERBATIM: 'In June 2025, we launched our Robotaxi service, an autonomous ride-hailing "
+ "platform that harnesses our technology and vehicles' and 'We EXPECT this service WILL open access to an expanded "
+ "customer base... and UNLOCK THE POTENTIAL to advance a service-driven business model'. ⚠️ AND THE MOST HONEST "
+ "PASSAGE IS IN THE RISK FACTORS, VERBATIM: 'If the uptake rate for autonomous driving solutions does not develop as "
+ "we expect, our business, prospects, financial condition and operating results MAY BE HARMED.' THE ONLY ROBOTAXI "
+ "METRIC TESLA PUBLISHES ANYWHERE IS A CHART LABELLED 'CUMULATIVE PAID ROBOTAXI MILES' - MILES, WITH NO DOLLARS, NO "
+ 'RIDE COUNT AND NO FLEET SIZE. || ⚠️ THE PATTERN IS NOW THREE FOR THREE AND IT IS THE MOST USEFUL THING SALEE CAN '
+ 'TAKE FROM THIS WEEK: the net-income slide cited TradingView for figures whose PERIODS it could not distinguish; the '
+ 'VRT and ON slide implied an onsemi datacentre business the company HAS NEVER PUT A DOLLAR FIGURE ON; and this one '
+ 'cites the 10-K for revenue THE 10-K DOES NOT CONTAIN. IN EVERY CASE THE CITED SOURCE IS REAL AND THE CLAIM IS NOT IN '
+ 'IT. CITING A FILING IS NOT THE SAME AS READING ONE. || (2) ⚠️ WHAT IS ACTUALLY DEPLOYED IS TINY, AND IN CALIFORNIA '
+ "THERE IS A HUMAN DRIVING THE CAR. TESLA'S OWN Q2 2026 DECK CARRIES THIS FOOTNOTE, VERBATIM: 'Active driver "
+ "supervision required; DOES NOT MAKE THE VEHICLE AUTONOMOUS' and 'Bay Area operations use FSD (Supervised) pursuant "
+ "to CA TCP permit # TCP0046782 - A'. THE CALIFORNIA REGULATOR IS BLUNTER. PAT TSEN, CPUC DEPUTY EXECUTIVE DIRECTOR, "
+ "ON THE RECORD 25 MARCH 2026: 'Tesla is NOT operating an autonomous vehicle service... they do not have a permit with "
+ "the California Public Utilities Commission.' And: 'that is THE DRIVER. That is not a safety driver. So even if "
+ "they're using a tool to help them drive autonomously, there is A DRIVER IN THE SAFETY SEAT.' || ⚠️ AND THE PERMIT "
+ 'POSITION IS A HARD, CHECKABLE FACT: TESLA IS NOT PERMITTED TO CARRY PAYING PASSENGERS IN DRIVERLESS VEHICLES IN '
+ "CALIFORNIA. It does not appear on the CPUC's list of AV permit holders - which names NURO, TENSOR AUTO, WAYMO, "
+ "WERIDE AND ZOOX. It is ABSENT from the California DMV's Driverless Testing list and ABSENT from the Deployment list. "
+ 'What it holds is a CHARTER-PARTY CARRIER PERMIT, the same class limousine companies hold. || THE FLEET: 42 ROBOTAXIS '
+ 'REGISTERED IN TEXAS per Texas DMV data as of 2 June 2026, of which ABOUT 20 WERE ACTIVE UNSUPERVISED IN AUSTIN. '
+ 'Unsupervised operation began 22 JANUARY 2026 WITH A SINGLE VEHICLE. ⚠️ TESLA ITSELF DISCLOSES NO FLEET SIZE AT ALL. '
+ '⚠️ A Bloomberg headline of 10 June 2026 gives 59 vehicles but could not be fetched - UNVERIFIED. || (3) THE '
+ "COMPARISON THAT SETTLES THE TECHNOLOGY QUESTION, AND IT CONNECTS TO YESTERDAY'S PHOTONICS NOTE. Yesterday I recorded "
+ "that Tesla PUBLICLY REJECTED LIDAR - its VP of AI Ashok Elluswamy on 22 July 2026: 'You can have safe, comfortable, "
+ "and affordable autonomy with just cameras.' TODAY THE OTHER SIDE OF THAT SAME FACT: WAYMO, WHICH USES LIDAR, CAMERAS "
+ 'AND RADAR, IS DOING MORE THAN 500,000 PAID RIDES A WEEK ACROSS 14 CITIES WITH 20 MILLION LIFETIME RIDES - Sundar '
+ "Pichai on Alphabet's Q1 2026 call, verbatim: 'Waymo also surpassed 500,000 fully autonomous rides per week, DOUBLING "
+ "IN LESS THAN A YEAR.' TESLA HAS TENS OF VEHICLES. THAT IS NOT A CLOSE RACE TODAY. || ⚠️⚠️ BUT HERE IS THE FACT THAT "
+ "SHOULD COOL EVERYONE, BULL AND BEAR ALIKE: WAYMO IS NOT PROFITABLE EITHER. Alphabet's Other Bets segment, whose "
+ "revenue Alphabet describes as 'generated primarily from the sale of autonomous transportation services and internet "
+ "services', reported Q2 2026 REVENUE OF 382 MILLION AND AN OPERATING LOSS OF 1,799 MILLION - A LOSS THAT WIDENED FROM "
+ '1,246 MILLION A YEAR EARLIER. THE COMPANY THAT IS BEST IN THE WORLD AT THIS LOSES ABOUT FIVE DOLLARS FOR EVERY '
+ "DOLLAR IT EARNS, AND IS LOSING MORE, NOT LESS. ROBOTAXI IS NOT A PROFIT POOL YET FOR ANYBODY. ⚠️ Waymo's own share "
+ 'of that loss is not disclosed: NOT FOUND. || (4) ⚠️ TWO NHTSA INVESTIGATIONS ARE OPEN, AND ONE OF THEM IS AN '
+ 'EXISTENTIAL QUESTION RATHER THAN A DEFECT PROBE. PE25012, OPENED 3 DECEMBER 2025, covers every Tesla with FSD sold '
+ "or leased in the US and concerns, verbatim, 'Full Self-Driving engaged, executed driving maneuvers that MAY "
+ "CONSTITUTE TRAFFIC SAFETY VIOLATIONS' - built on 62 consumer complaints, 14 Standing General Order reports and 4 "
+ 'media reports of red-light running and wrong-way lane entries. ⚠️ AND AQ26002, AN AUDIT QUERY OPENED 4 SEPTEMBER '
+ "2026 - THE SAME DAY CYBERCAB COMMERCIAL RIDES BEGAN IN AUSTIN - EXAMINING WHETHER TESLA'S OWN CERTIFICATION THAT "
+ 'CYBERCAB MEETS FEDERAL MOTOR VEHICLE SAFETY STANDARDS IS VALID AT ALL. NHTSA Administrator Jonathan Morrison, '
+ "verbatim: 'NHTSA fully supports the safe development and deployment of automated vehicles. But as the federal "
+ "regulator, we need to ensure that all of our laws are followed.' ⚠️ CORRECTION TO OUR OWN SELL NOTE: it records "
+ "AQ26002 as opened SEP 3; NHTSA's own press release and the contemporaneous reporting both say 4 SEPTEMBER 2026. The "
+ 'substance is unchanged. || (5) THE EV BUSINESS IS WHAT ACTUALLY VALUES THE STOCK TODAY, AND THE SELL THESIS FROM 8 '
+ 'SEPTEMBER IS CONFIRMED BY THE FILINGS. Q2 2026 to 30 June: revenue 28,236m PLUS 26%, which sounds fine - but GAAP '
+ 'GROSS MARGIN 16.8% DOWN FROM 17.2%, GAAP OPERATING MARGIN 1.4%, AND OPERATING INCOME DOWN 57% YEAR ON YEAR TO 398 '
+ 'MILLION. FREE CASH FLOW WAS NEGATIVE 1,092 MILLION. ⚠️ REGULATORY CREDITS, WHICH CARRY ALMOST NO COST AND ARE '
+ 'THEREFORE NEARLY PURE PROFIT, FELL 67% TO 146 MILLION FROM 439 MILLION - against total operating income of just 398 '
+ "million. ⚠️ AND FY2025 WAS TESLA'S FIRST ANNUAL REVENUE DECLINE EVER: 94,827m against 97,690m, with net income "
+ 'NEARLY HALVED to 3,794m from 7,091m. ⚠️ NOTE TWO ODDITIES IN Q2 2026: DELIVERIES OF 480,126 EXCEEDED PRODUCTION OF '
+ '451,758, which is selling inventory rather than growing output; and NET INCOME OF 1,114m WAS 2.8 TIMES OPERATING '
+ "INCOME OF 398m, meaning most of the quarter's profit did not come from operations - THE COMPOSITION OF THAT "
+ 'BELOW-THE-LINE INCOME IS NOT FOUND IN THE SOURCES I COULD REACH. || IN FAIRNESS, ONE PART IS GENUINELY GROWING: '
  'ENERGY STORAGE DEPLOYED 13.5 GIGAWATT-HOURS IN Q2, UP ABOUT 41%, AND 46.7 GWh IN FY2025 AGAINST 31.4 IN FY2024. ⚠️ '
  'BUT ITS GROSS MARGIN COMPRESSED FROM 30.3% TO 20.4% - VOLUME UP, PROFITABILITY DOWN, THE SAME STORY AS THE CARS. || '
  '(6) VALUATION: TRAILING P/E 379.22 AND FORWARD P/E 191.97 AT THE 11 SEP CLOSE OF 365.44, ON A 1.44 TRILLION MARKET '
@@ -7203,7 +7285,20 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     "the current figure near 3 TRILLION. (4) NVIDIA'S LARGEST CUSTOMER PASSING 20% OF REVENUE - five "
                     'customers were 22/14/13/11/10% of RECEIVABLES at 26 July 2026. (5) A GPU-SECURED OR '
                     'DATACENTRE-SPV LENDER FAILING PUBLICLY - about 35bn is borrowed secured directly against GPUs. ⚠️ '
-                    'ANY TWO FIRING = REDUCE, NOT HOLD. Recorded 14 Sep 2026.',
+                    'ANY TWO FIRING = REDUCE, NOT HOLD. Recorded 14 Sep 2026. || ⚠️ TWO TESTS ADDED 14 SEP 2026 FROM '
+                    "NVIDIA'S OWN 10-Q, BOTH NON-PRICE: (6) THE OFF-BALANCE-SHEET GUARANTEE TOTAL GROWING FURTHER "
+                    'RELATIVE TO THE EQUITY PORTFOLIO WITH NO DISCLOSURE OF WHO IS BEING GUARANTEED. NVIDIA disclosed '
+                    "guarantees 'CAPPED AT A TOTAL OF 105 BILLION DOLLARS' for 'land, power, and shell' buildout with "
+                    "affiliates of SB Energy Corp, entered in August 2026, payable 'IN THE EVENT OF THEIR DEFAULT' - "
+                    'ALREADY LARGER THAN ITS ENTIRE ~94bn EQUITY PORTFOLIO. (7) NVIDIA BEGINNING TO DISCLOSE, OR BEING '
+                    'REQUIRED BY A REGULATOR TO DISCLOSE, REVENUE FROM COMPANIES IT HOLDS EQUITY IN - AND THAT FIGURE '
+                    "PROVING LARGE. Today it discloses none: the 10-Q says only that 'one AI research and deployment "
+                    'company contributed a meaningful amount of our revenue by purchasing cloud services from our '
+                    "customers', anonymised and unquantified. Neither Item 404 nor ASC 850 is triggered because NVIDIA "
+                    'is the INVESTOR rather than the investee, so the loop is legally invisible. ⚠️ NO REGULATORY '
+                    'ACTION OR SEC COMMENT LETTER EXISTS TODAY: NOT FOUND. ⚠️ AND THE CONFLICT NOTE STANDS - the '
+                    "counterparty most discussed in this debate is Anthropic, which made Claude; no view of Claude's "
+                    "on Anthropic's prospects should carry any weight in applying these tests.",
             'c': 'planned'},
            {'d': '2026-12-10',
             'dl': 'Quarterly review',
