@@ -3,7 +3,73 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ("Sep 14, 2026 - THE @LeifInvests 'BUY UNDER' LIST, SECOND TIME FROM THIS AUTHOR. NO BUDGET HAS CHANGED, NOTHING "
+ASOF = ('Sep 14, 2026 - TWO QUESTIONS ANSWERED: THE SEPTEMBER EVENTS CALENDAR AND THE CHINA RE-SHORING SLIDE. NOTHING BOUGHT, '
+ 'NOTHING SOLD, NO BUDGET CHANGED. FIVE SCHEDULE ROWS ADDED AND ONE DATA FAULT FOUND. || (A) THE INNOVESTX/SCBX '
+ 'SEPTEMBER CALENDAR. I checked all twenty-one entries against primary sources. THE CALENDAR IS MOSTLY ACCURATE - '
+ 'FOMC, BoJ, PCE, Retail Sales, Snapdragon Summit, Meta Connect, OpenAI DevDay and the AI Infra Summit all verify. ⚠️ '
+ 'BUT ITS SINGLE BIGGEST PROBLEM IS AN OMISSION, NOT AN ERROR: MICRON REPORTS ON 30 SEPTEMBER AND THE CALENDAR DOES '
+ 'NOT MENTION IT. That is our largest single scheduled decision - a 51,000 budget with 22,581.58 already committed - '
+ 'and it is absent from a calendar a Thai investor would use to plan the month. ⚠️ ONE OUTRIGHT ERROR: THE CALENDAR '
+ 'PUTS ORACLE ON 15 SEPTEMBER. ORACLE REPORTED ON 10 SEPTEMBER. We acted on the real date and the row is closed; '
+ 'anyone waiting for the 15th missed it by five days. ⚠️ ONE APPARENT ERROR THAT IS NOT AN ERROR AND SALEE SHOULD NOT '
+ 'BE CONFUSED BY IT: the calendar says FOMC on 17 SEPTEMBER while the Federal Reserve says 15-16 SEPTEMBER. BOTH ARE '
+ 'RIGHT. The Fed decides at 2pm New York on Wednesday the 16th, which is 1am BANGKOK on Thursday the 17th. The broker '
+ 'is printing Bangkok dates. THE SAME CONVENTION EXPLAINS COSTCO (24 Sep after the US close = 25 Sep Bangkok). ⚠️ IT '
+ 'DOES NOT RESCUE ORACLE - 10 Sep after the close is 11 Sep Bangkok, nowhere near the 15th. LESSON: on any after-close '
+ 'earnings row, assume the Thai date is one day LATER than the US date. || FIVE THINGS AN AI AND POWER INVESTOR NEEDS '
+ 'THAT THE CALENDAR OMITS, NOW ADDED TO OUR SCHEDULE: (1) ⚠️ TRIPLE WITCHING ON FRIDAY 18 SEPTEMBER - the quarterly '
+ 'expiry of index futures and options. IT LANDS ONE DAY AFTER OUR SIX BUYS TOTALLING 46,526.13 AND ON THE SAME DAY AS '
+ 'THE BANK OF JAPAN. A violent Friday is mechanical, not a verdict on the six tranches. (2) US RETAIL SALES 16 Sep, '
+ "hours before the Fed decides. (3) PCE AND CORE PCE 30 Sep - the Fed's own target measure, not CPI. (4) JABIL 30 Sep "
+ '8:30am - not ours, but it guides a FULL FISCAL YEAR for AI datacentre hardware and reports 6.5 hours before Micron; '
+ 'a free read-across for VRT, CEG and GEV. (5) ⚠️ BLOOM ENERGY JOINS THE S&P 500 BEFORE THE OPEN ON 21 SEPTEMBER, '
+ 'confirmed by S&P Dow Jones Indices on 4 Sep. WE ARE STILL NOT BUYING IT - the class-action deadline is 28 Sep and '
+ "EV/EBITDA is 118. Index inclusion is a market-cap decision, not an endorsement of the accounts. || ⚠️ THE MONTH'S "
+ 'REAL SHAPE, WHICH NO CALENDAR SHOWS: Wed 16 FOMC (hike ~87-90% priced) -> Thu 17 SIX BUYS -> Fri 18 BoJ HIKE '
+ 'EXPECTED AND TRIPLE WITCHING -> Mon 21 index rebalance -> Wed 30 PCE, JABIL AND MICRON ON ONE DAY. The buys are '
+ 'sandwiched between the two most mechanical days of the quarter. THEY STILL PROCEED. || ⚠️ DATA FAULT FOUND WHILE '
+ 'DOING THIS: THE WRITTEN MICRON PLAN IS BUILT ON A 40,000 BUDGET BUT THE BOARD SAYS 51,000. Remaining room is '
+ '28,418.42; the written rungs and the parked reserve account for only 17,418.42. ABOUT 11,000 HAS NO WRITTEN RULE '
+ 'ATTACHED. Recommendation: park it on the same two HBM conditions as the existing 10,000 - no new spending. Same '
+ 'class of fault as the MRVL row. Both must be closed before their dates. || (B) THE CHINA RE-SHORING SLIDE - '
+ "'COMPANIES ARE RETURNING TO CHINA'. MY ANSWER IS NO, I DO NOT AGREE, AND THE DATA IS NOT CLOSE. The slide is a fair "
+ 'summary of a REAL Reuters story (Ellen Zhang and Marius Zaharia, 14 Sep 2026) - it is not fabricated. ⚠️ BUT THE '
+ 'STORY IS SIX SMALL CHINESE EXPORTERS ON THE RECORD PLUS TARGET AND SHEIN SOURCED ANONYMOUSLY, AND REUTERS ITSELF '
+ "NOTES VIETNAM, INDONESIA AND THAILAND 'CONTINUE ATTRACTING INVESTMENT'. The slide's graphic - arrows from Southeast "
+ 'Asia into China - is not what the article says. || EVERY HARD NUMBER RUNS THE OTHER WAY. US imports in JULY 2026 '
+ 'versus July 2025: FROM THAILAND +73.03%, FROM VIETNAM +46.85%, FROM CHINA +2.60% (Joint Economic Committee on Census '
+ 'and BEA data). THE US NOW RUNS A BIGGER GOODS DEFICIT WITH VIETNAM (23.3bn) THAN WITH CHINA (15.2bn) - BEA, July '
+ "2026. Vietnam's DISBURSED foreign investment - money actually spent, the hardest measure there is - hit a five-year "
+ "high of 17.25bn in the first eight months of 2026, up 12%. China's own inbound investment was STILL SHRINKING at "
+ "minus 5% year-on-year in H1 2026 (MOFCOM). AND AMCHAM CHINA'S OWN MEMBERS MOVED FURTHER AWAY FROM CHINA, NOT BACK: "
+ '71% have no intention of relocating out, UP 4 POINTS - and the survey does not even contain a question about '
+ "returning. || ⚠️ THE REASON THE SLIDE'S LOGIC INVERTS IS A FEBRUARY EVENT MOST THAI COVERAGE HAS NOT ABSORBED. On 20 "
+ "FEBRUARY 2026 THE US SUPREME COURT HELD IN LEARNING RESOURCES v TRUMP THAT THE EMERGENCY-POWERS TARIFF LAW 'DOES NOT "
+ "AUTHORIZE THE PRESIDENT TO IMPOSE TARIFFS IN ANY INSTANCE'. The reciprocal tariffs died on 24 February. China's "
+ 'pre-existing Section 301 tariffs SURVIVED because they rest on different law. So the effective US tariff rate is now '
+ 'roughly 4.5% on Thailand and 6.1% on Vietnam against 20-22.8% on China (Economist Intelligence Unit and Penn '
+ 'Wharton, both July 2026). THE REASON TO MANUFACTURE OUTSIDE CHINA DID NOT NARROW IN 2026 - IT WIDENED. || THE ONE '
+ 'REAL DATA POINT UNDERNEATH THE SLIDE, AND IT IS A DIFFERENT STORY FROM THE ONE THE SLIDE TELLS: CHINESE INVESTMENT '
+ 'APPLICATIONS INTO THAILAND FELL 55% BY VALUE AND 45% BY COUNT IN H1 2026 VERSUS H1 2025 (Thai BOI: 102.26bn baht and '
+ '587 projects, down to 45.77bn baht and 321 projects) while total Thai foreign investment applications ROSE about 80% '
+ 'by value. That is Chinese capital pausing its push INTO Thailand - plausibly because once the US struck down the '
+ 'reciprocal tariffs, building in Thailand to dodge them stopped paying. IT IS NOT FACTORIES LEAVING THAILAND FOR '
+ 'CHINA. ⚠️ AND NOTE WHAT FLATTERS THE THAI HEADLINE: Singapore alone is 33.2bn of the 40.5bn US-dollar total and data '
+ 'centres are 1.115tn of the 1.473tn baht - a handful of giant projects. PROJECT COUNT ACTUALLY FELL 31%. || ⚠️ WHAT '
+ 'THIS MEANS FOR PILLAR 4: ALMOST NOTHING, AND THAT IS THE HONEST ANSWER. Every one of our 94 names is US-listed and '
+ 'sells into a global or American end market. NO CHANGE TO ANY BUDGET, TRANCHE DATE, LIMIT OR THESIS. ⚠️ THE ONE PLACE '
+ 'IT COULD REACH US IS NARROW AND WORTH NAMING: China restricting scandium and rare earths - the same allegation at '
+ 'the centre of the Bloom Energy class action, and the reason MP Materials sits where it does. That is a CHINESE '
+ 'EXPORT CONTROL question, not a factory-location question, and the slide does not address it. || ⚠️ WHERE THIS '
+ 'QUESTION GENUINELY MATTERS IS PILLARS 1 AND 2, NOT PILLAR 4. Thai GDP grew just 1.9% in Q2 2026, down from 2.8% in '
+ 'Q1 (NESDC, 17 Aug). Real wages FELL 2.88% year-on-year. Household debt is 86.7% of GDP. Japanese carmakers are '
+ 'shrinking in Thailand while Chinese EV brands take over 70% of the electric market, and the auto sector is about a '
+ 'tenth of Thai GDP with roughly 700,000 workers. IF THAT INDUSTRIAL BASE KEEPS THINNING, IT SHOWS UP IN SUBWAY '
+ 'FOOTFALL AND IN TENANT DEMAND AT THE CONDOS LONG BEFORE IT SHOWS UP IN ANYTHING WE OWN IN NEW YORK. Conviction HIGH '
+ 'on all of the above. ⚠️ WHAT WOULD CHANGE MY MIND ON THE CHINA CALL: three consecutive months of US imports from '
+ 'Thailand and Vietnam falling year-on-year while imports from China rise, OR a named large manufacturer disclosing a '
+ 'China relocation in an actual filing rather than through anonymous sources. Neither has happened. || PREVIOUS ENTRY: '
+ "Sep 14, 2026 - THE @LeifInvests 'BUY UNDER' LIST, SECOND TIME FROM THIS AUTHOR. NO BUDGET HAS CHANGED, NOTHING "
  'BOUGHT OR SOLD. ⚠️ SAME SOURCE AS THE POWER-STOCK BUY-UNDER LIST OF 12-13 SEPTEMBER, WHERE I FOUND FPS '
  'MISCATEGORISED AS A CONTRACTOR WHEN IT IS AN EQUIPMENT MAKER, AND WHERE THE AUTHOR COULD NOT BE IDENTIFIED. Same '
  'caveat applies. || SIX OF THE TEN NAMES ARE FUNDED POSITIONS OF OURS - META, MRVL, MU, NVDA, ORCL AND VRT - AND ⚠️ '
@@ -6843,6 +6909,17 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'timestamped 11 Sep note, Quartz of the same date, and two independent weekly recaps; CME Group '
                     'named for the probabilities. ⚠️ No Reuters/AP/Bloomberg report was read - CNBC returned 403.',
             'c': 'confirmed'},
+           {'d': '2026-09-16',
+            't': '',
+            'k': 'macro',
+            'a': 'WATCH',
+            'amt': 0,
+            'c': 'confirmed',
+            'w': 'US RETAIL SALES (August) - 8:30am ET, Census Bureau. Same morning as the FOMC decision.',
+            'cond': 'ADDED 14 SEP after the InnovestX calendar flagged it and our board did not carry it. This is the '
+                    'consumer read that lands hours before the Fed decides. It matters to V (tranche 1 lands the next '
+                    'day) and to the whole "is the hike justified" question. Census release schedule confirmed at '
+                    'census.gov.'},
            {'d': '2026-09-17',
             't': 'CEG',
             'k': 'tranche',
@@ -6956,6 +7033,45 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'hawkish BoJ strengthens the yen further, which pressures Japanese exporters and can unwind '
                     'yen-funded carry positions globally. WATCH, PLACE NOTHING.',
             'c': 'planned'},
+           {'d': '2026-09-18',
+            't': '',
+            'k': 'macro',
+            'a': 'WATCH',
+            'amt': 0,
+            'c': 'confirmed',
+            'w': '⚠️ TRIPLE WITCHING - quarterly expiry of index futures, index options and single-stock options, US '
+                 'cash open.',
+            'cond': '⚠️ ADDED 14 SEP - THIS WAS MISSING FROM OUR BOARD AND IT SITS ONE DAY AFTER SIX BUYS TOTALLING '
+                    '46,526.13. Verified against the Cboe 2026 expiration calendar and the CME E-mini S&P contract '
+                    'specification (third Friday of the quarter-end month). || WHAT IT IS, PLAINLY: four times a year, '
+                    'three different kinds of derivative contract all expire on the same morning. Dealers who have '
+                    'been hedging those contracts must unwind, and the unwinding is mechanical - it has nothing to do '
+                    'with whether a company is good or bad. Volume on the open and the close is several times normal '
+                    'and prices can move sharply in both directions within minutes. || WHY IT MATTERS TO US THIS '
+                    'QUARTER: BoJ decides the same day, and our six tranches were placed the evening before. A red '
+                    'Friday 18 September on any of CEG, GEV, PANW, TSM, V or VRT is NOT evidence the tranche was '
+                    'wrong. Do not judge a buy by the first session after a triple witching. || ACTION: none. We do '
+                    'not trade the expiry. This row exists so a violent Friday is not misread as a thesis failure.'},
+           {'d': '2026-09-21',
+            't': 'BE',
+            'k': 'event',
+            'a': 'AVOID',
+            'amt': 0,
+            'c': 'confirmed',
+            'w': '⚠️ BLOOM ENERGY JOINS THE S&P 500 before the open - and we are still not buying it.',
+            'cond': 'S&P Dow Jones Indices press release of 4 Sep 2026: Bloom Energy (BE), Illumina (ILMN) and '
+                    'Everpure (P) join the S&P 500 "prior to the open of trading on Monday, September 21, 2026"; '
+                    'Molson Coors (TAP), The Trade Desk (TTD) and Builders FirstSource (BLDR) come out. Stated reason: '
+                    '"The changes ensure that each index is more representative of its market capitalization range." '
+                    '|| ⚠️ INDEX INCLUSION IS NOT A VERDICT ON THE BUSINESS. Every S&P 500 tracker fund must now own '
+                    'BE, which creates forced buying into the 21st - and forced buying is not the same as informed '
+                    'buying. The index committee is matching a market-cap range, not endorsing the accounts. || OUR '
+                    'POSITION IS UNCHANGED AND THE REASONS ARE UNCHANGED: the class-action lead-plaintiff deadline is '
+                    '28 September, the class period runs 27 Feb 2025 to 8 Jul 2026, the allegation is that Bloom '
+                    'understated its reliance on Chinese scandium, and EV/EBITDA is 118. A stock can join the index '
+                    'and still be a bad purchase. ⚠️ IF ANYTHING, INCLUSION MAKES THE ENTRY WORSE, because the index '
+                    'bid is a known, dated, mechanical buyer we would be paying up alongside. || NOT ON THE BOARD, '
+                    'STAYING OFF. Conviction HIGH.'},
            {'d': '2026-09-28',
             't': 'BE',
             'k': 'legal',
@@ -6965,6 +7081,34 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'cond': 'DO NOT BUY. Class period 27 Feb 2025 - 8 Jul 2026; alleges Bloom understated reliance on scandium '
                     'from China. EV/EBITDA 118. Not on the board and staying off.',
             'c': 'confirmed'},
+           {'d': '2026-09-30',
+            't': '',
+            'k': 'macro',
+            'a': 'WATCH',
+            'amt': 0,
+            'c': 'confirmed',
+            'w': "US PCE and CORE PCE (August) - 8:30am ET, Bureau of Economic Analysis. The Fed's own preferred "
+                 'inflation measure.',
+            'cond': 'ADDED 14 SEP - missing from our board. CPI is the number the newspapers print; PCE is the number '
+                    'the Fed actually targets at 2%. They differ because PCE allows for people substituting cheaper '
+                    'goods and weights healthcare differently. When the two disagree, the Fed follows PCE. || This '
+                    'lands the same morning as Jabil and the same day as MICRON - 30 September is the single densest '
+                    'day of the month for us. Confirmed on bea.gov release schedule.'},
+           {'d': '2026-09-30',
+            't': '',
+            'k': 'data',
+            'a': 'WATCH',
+            'amt': 0,
+            'c': 'confirmed',
+            'w': 'JABIL (JBL) Q4 + FY2026, 8:30am ET - NOT OURS, but the cleanest outside read on AI datacentre '
+                 'hardware demand.',
+            'cond': 'ADDED 14 SEP. Jabil builds the physical hardware - racks, power, liquid-cooling assemblies - for '
+                    'the hyperscalers, and it guides a FULL NEW FISCAL YEAR on this call rather than one quarter. That '
+                    'forward number is a demand signal for VRT, CEG, GEV and the whole Group 6 power book, from a '
+                    "company with no incentive to talk our book. || Date confirmed from Jabil's own announcement: "
+                    '"Wednesday, September 30, 2026 - 8:30 a.m. ET", results released before the open. || ⚠️ WE DO NOT '
+                    'OWN JBL AND THIS IS NOT A PROPOSAL TO. It is a free read-across that reports 6.5 hours before '
+                    "Micron. Read Jabil's FY27 guidance in the morning, then decide Micron in the evening."},
            {'d': '2026-09-30',
             't': 'MU',
             'k': 'earnings',
@@ -7903,6 +8047,27 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'Until both are true the money stays unallocated. Position: 35.45 shares at 636.998, worth about '
                     '35,459, up 12,878.',
             'c': 'standing'},
+           {'d': '',
+            'dl': 'Standing',
+            't': 'MU',
+            'k': 'watch',
+            'a': 'HOLD',
+            'amt': 0,
+            'c': 'standing',
+            'w': '⚠️ DATA FAULT - the written MU plan describes a 40,000 budget. The board says 51,000. About 11,000 '
+                 'is unaccounted for.',
+            'cond': '⚠️ FOUND 14 SEP while checking the calendar against the board, and it must be resolved BEFORE 30 '
+                    'September. || THE ARITHMETIC: board budget 51,000, invested 22,581.58, so remaining room is '
+                    '28,418.42. The written plan commits 4,000 on 30 Sep, 3,418.42 on 17 Dec and parks 10,000 behind '
+                    'the two HBM conditions - that is 17,418.42. 28,418.42 minus 17,418.42 leaves 11,000 WITH NO '
+                    'WRITTEN RULE ATTACHED TO IT. || WHY: the standing notes were written when the budget was 40,000 '
+                    'and were not rewritten when it went to 51,000. This is the same class of fault as the MRVL row '
+                    'quoting 17,127.34 against real room of 13,127. || ⚠️ THE 11,000 IS NOT A GREEN LIGHT. It is an '
+                    'unwritten gap, and unwritten money is how discipline leaks. Either a rule gets written for it '
+                    'before the 30 Sep print or it stays parked on the same two HBM conditions as the other 10,000. '
+                    'RECOMMENDATION: park it on the identical conditions - no new rule, no new spending. Conviction '
+                    'HIGH. ⚠️ WHAT WOULD CHANGE MY MIND: nothing about the price. Only Micron itself stating HBM is '
+                    'sold out for calendar 2027, which it has never said.'},
            {'d': '',
             'dl': 'Standing - next scoring cycle',
             't': 'NVDA',
