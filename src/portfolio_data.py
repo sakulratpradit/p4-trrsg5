@@ -3,61 +3,123 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Sep 14, 2026 - THE DEEPSTOCK NEOCLOUD SLIDE. NOTHING BOUGHT, NOTHING SOLD, NO BUDGET CHANGED, POLICY UNCHANGED. '
- 'THREE DICTIONARY TERMS ADDED. || FIRST, THE HONEST PART, BECAUSE IT GOES AGAINST US. WE SOLD ALL THREE NAMES ON THIS '
- 'SLIDE AND TWO OF THE THREE HAVE RISEN SINCE. CRWV sold 17 Jul at about 71.27 a share, now 82.98 - up 16.4%, about '
- '199 of gain forgone on 17 shares. NBIS sold 21 Jul at about 194.86, now 212.19 - up 8.9%, about 468 forgone on 27 '
- 'shares. IREN sold 9 Sep at about 43.63, now 43.17 - down 1.1%, about 41 to the good on 90 shares. NET FORGONE SINCE '
- 'THE EXITS: ROUGHLY 626 DOLLARS. Realised on the three when we sold: CRWV minus 786.02, NBIS plus 1,404.51, IREN plus '
- '456.24 - a net plus 1,074.73. ⚠️ SO THE POLICY HAS COST US SOMETHING AND SALEE SHOULD SEE THE NUMBER, NOT A SPEECH. '
- '626 dollars on a 690,000 dollar book is six basis points. I would pay it again. || NOW THE SLIDE. IT HAS FOUR '
- "NUMBERS AND THREE OF THEM ARE MISLABELLED. ALL FOUR TRACE TO ONE DOCUMENT - IREN'S FY26 RESULTS RELEASE OF 27 AUGUST "
- "2026. The slide did not invent them; it renamed them. || ⚠️ NUMBER ONE, THE BIG CHART: '10-12 DOLLARS PER WATT "
- "RISING TO 15-20 PLUS'. THIS IS NOT THE PRICE OF RENTING A GPU. It is IREN's contracted AI-cloud REVENUE PER MEGAWATT "
- "OF DATACENTRE CAPACITY PER YEAR. IREN's own words: 'Recent 3-year contracts >$20m revenue per MW (IT)' and 'Active "
- "discussions at ~$25m per MW (IT)'. The starting point is not 10-12 either - the Microsoft contract of 3 Nov 2025 was "
- '9.7 BILLION over five years for 200MW, which is 9.70 per watt per year. SO THE REAL DISCLOSED MOVE IS 9.70 TO OVER '
- '20, NOT 10-12 TO 15-20. ⚠️ AND REVENUE PER MEGAWATT RISES WHEN YOU PACK MORE EXPENSIVE CHIPS INTO THE SAME POWER. '
- 'GB300s cost far more than the previous generation. The number can climb while the hourly rent on any individual GPU '
- 'falls. NO SOURCE SEPARATES THE TWO EFFECTS. ⚠️⚠️ AND THE TRAP THAT MAKES THIS CHART GENUINELY DANGEROUS: BUILDING A '
- 'DATACENTRE COSTS ABOUT 9.50 TO 15.20 DOLLARS PER WATT (Turner & Townsend 2025: Silicon Valley 13.30, Paris 10.80, '
- "Atlanta 9.90, Tokyo 15.20). AN ARROW FROM '10-12/W' TO '15-20/W+' IS EQUALLY CONSISTENT WITH BUILD COSTS RISING, "
- 'WHICH IS BAD. The slide shows one reading and not the other. For reference, actual datacentre RENTAL is about 2.36 '
- 'per watt per year (CBRE: 196.25 per kW per month, H2 2025) - one eighth of these numbers. Colocation is ruled out '
- "entirely. || ⚠️ NUMBER TWO, THE HEADLINE 'GPU RENTAL PRICES ARE RISING'. NOT ESTABLISHED FOR GPU-HOURS. The single "
- 'most quoted piece of evidence is CoreWeave CEO Mike Intrator on the Q2 2026 call saying H100s coming off an expired '
- "contract were immediately rebooked at '95% OF THE ORIGINAL PRICE'. ⚠️ NINETY-FIVE PERCENT OF THE ORIGINAL PRICE IS A "
- 'FIVE PERCENT DECLINE. It is quoted across the trade press as proof of pricing strength. It is arithmetic proof of '
- 'mild erosion, from the one man whose balance sheet depends on the answer. The independent data conflicts: '
- "AIMultiple's index across 69 providers and 26 months finds H100 'roughly flat' with neocloud rates trending DOWN, "
- 'and says the B200 rise is driven by hyperscaler price sheets entering the dataset at 2-3x neocloud rates rather than '
- 'real increases. Thunder Compute reports AWS cutting H100, H200 and A100 instance pricing by UP TO 45%. The '
- 'defensible statement is that newest-generation and per-megawatt pricing is rising while H100 per-hour pricing is '
- "flat to falling. THAT IS NOT WHAT THE HEADLINE SAYS. || ⚠️ NUMBER THREE, 'A100 UNTIL 2029'. THIS IS A CONTRACT END "
- 'DATE, NOT A USEFUL LIFE, AND THE SLIDE CONFLATES THEM. Intrator said on the same Q2 call that CoreWeave signed an '
- "A100 contract running into 2029. Fine. But COREWEAVE'S OWN STATED USEFUL LIFE FOR TECHNOLOGY EQUIPMENT IS SIX YEARS, "
- 'AND THE A100 LAUNCHED IN 2020. SIX PLUS 2020 IS 2026, NOT 2029. An A100 earning revenue in 2029 is an asset with '
- 'ZERO BOOK VALUE - which flatters reported margins and tells you nothing about what it rents for. ⚠️ AND THE SLIDE '
- 'OMITS THE LARGEST SINGLE COUNTER-EXAMPLE IN THE INDUSTRY: AMAZON SHORTENED SERVER USEFUL LIFE FROM SIX YEARS TO FIVE '
- "EFFECTIVE 1 JANUARY 2025, AND SAID WHY IN ITS OWN FILING - 'The shorter useful lives are due to the increased pace "
- "of technology development, particularly in the area of artificial intelligence.' That cost Amazon 1.4bn of extra "
- "depreciation and 1.0bn of net income, and it reversed Amazon's OWN earlier extension which had added 2.5bn to "
- "profit. The operator of the largest fleet on earth moved the OPPOSITE way to the slide's thesis, explicitly because "
- "of AI. || ⚠️ NUMBER FOUR, 'PREPAYMENT 45-55%'. REAL, BUT THE DENOMINATOR IS WRONG. IREN's footnote says 45-55% OF "
- "GPU CAPEX - 'the estimated capital expenditure for GPUs and ancillaries'. The slide shows it on a contract document, "
- "where any reader takes it as 45-55% of contract value. PREPAYMENT AS A SHARE OF CONTRACT VALUE IS ABOUT 20% - IREN's "
- "own Microsoft release says 'including a 20% prepayment', and Compute Exchange puts the market at roughly 20% of "
- 'total contract value. THE SLIDE ROUGHLY DOUBLES THE COMFORT THE NUMBER ACTUALLY PROVIDES. || ⚠️⚠️ AND THE THING THE '
- 'SLIDE CANNOT SURVIVE, WHICH IS A FACT ABOUT ONE OF ITS OWN THREE BIDDERS: IREN TOOK A 638.8 MILLION DOLLAR '
- 'IMPAIRMENT IN THE JUNE 2026 QUARTER ON DECOMMISSIONED BITCOIN MINING HARDWARE, AND POSTED A FY26 NET LOSS OF 702.6 '
- 'MILLION AGAINST A PRIOR-YEAR PROFIT OF 86.9 MILLION. A slide arguing that computing hardware dies more slowly is '
- 'illustrated with a company that has just written off two thirds of a billion dollars of computing hardware. ⚠️ AND '
- 'IREN IS STILL 82% A BITCOIN MINER: FY26 revenue 707.0m, of which AI cloud is 128.8m and mining 578.2m. || THE OTHER '
- 'TWO, FROM THE FILINGS: COREWEAVE H1 2026 revenue 4,653m, NET LOSS 1,366m, of which INTEREST EXPENSE ALONE WAS 1,176m '
- '- a quarter of revenue going to lenders. Total debt about 35.1bn against 5.5bn of cash. TWO UNNAMED CUSTOMERS ARE '
- '62% OF Q2 REVENUE (36% and 26%). RPO is 103.7bn but 80% of it lands inside 48 months against a 72-month asset life - '
- 'THE REVENUE TAIL IS SHORTER THAN THE DEPRECIATION TAIL. NEBIUS Q2 2026 revenue 582.3m against 105.1m, a genuine 454% '
- "- but a LOSS of 190.4m, and ⚠️ THE PRIOR YEAR'S 'PROFIT' OF 502.5m WAS A 597.4 MILLION ONE-OFF REVALUATION OF ITS "
+ASOF = ("Sep 14, 2026 - THE 'MARKET.TECH' SLIDE: 'BANK OF AMERICA SAYS THESE 8 STOCKS WILL LEAD THE SEMICONDUCTOR RALLY'. "
+ '⚠️⚠️ THE SHORTEST ANSWER IS THE BEST ONE: WE ALREADY OWN SEVEN OF THE EIGHT. NVDA 79,380.28 in 420 shares; AVGO '
+ '30,125.18 in 88.5; AMD 13,789.22 in 55; MRVL 7,872.66 in 48.5; LRCX 4,100.12 in 22; KLAC 3,510.69 in 18; CDNS '
+ '3,918.01 in 12. THAT IS 142,696.16 OF REAL MONEY ALREADY IN SEVEN OF THESE EIGHT NAMES. The only one we do not hold '
+ 'is ANALOG DEVICES. A slide telling Salee to buy what he bought months ago is not a recommendation, it is a mirror. '
+ 'NOTHING BOUGHT, NOTHING SOLD, NO BUDGET CHANGED. || ⚠️ ONE REAL DATA FAULT CLOSED TODAY, AND IT WAS WORTH 4,000 '
+ 'DOLLARS. THE MRVL TRANCHE 2 ROW SAID 17,127.34. THE CORRECT FIGURE IS 13,127.34 - budget 21,000 less 7,872.66 '
+ 'already invested. The row is now corrected in place. This had been flagged on 9, 11 and 14 September and is finally '
+ 'fixed; placing the stale number on 9 OCTOBER WOULD HAVE OVERSPENT THE LINE BY 4,000 AND BROKEN THE MILLION-DOLLAR '
+ 'BUDGET. || NOW THE SLIDE ITSELF, AND IT FAILS ON FOUR COUNTS. || ⚠️ ONE: NO BANK OF AMERICA NOTE NAMES THESE EIGHT. '
+ "BofA's semiconductor analyst is VIVEK ARYA and he is real, and there are THREE separate real notes - a December 2025 "
+ 'note naming six (NVDA, AVGO, LRCX, KLAC, ADI, CDNS), an April 2026 note naming twelve, and a 14 SEPTEMBER 2026 note '
+ "naming eight. THE SLIDE'S LIST IS THE DECEMBER SIX PLUS AMD AND MRVL BORROWED FROM APRIL. It is a union of two notes "
+ "four months apart. ⚠️ AND BOFA'S ACTUAL LIST FROM THE SAME WEEK AS THIS SLIDE IS DIFFERENT IN SIX OF EIGHT "
+ 'POSITIONS: MU, MRVL, ON, NVDA, INTC, LRCX, ADI, AMD - with price objectives. MU 1,550, MRVL 365, ON 120, NVDA 350, '
+ 'INTC 145, LRCX 385, ADI 500, AMD 620. AVGO, KLAC AND CDNS ARE NOT ON IT. || ⚠️ TWO: THE TWO-TRILLION HEADLINE IS A '
+ "2030 FORECAST, AND IT IS ALREADY BEHIND REALITY. BofA's figure is TOTAL GLOBAL SEMICONDUCTOR REVENUE BY 2030 - not a "
+ 'rally size, not a market cap. For scale, THESE EIGHT COMPANIES ARE ALREADY WORTH ABOUT 8.55 TRILLION between them, '
+ "and NVIDIA ALONE IS 5.09 TRILLION - two and a half times the headline. ⚠️⚠️ AND THE INDUSTRY'S OWN STATISTICAL BODY "
+ 'HAS ALREADY OVERTAKEN IT: WSTS FORECASTS 1.51 TRILLION FOR 2026 AND ABOUT 1.9 TRILLION FOR 2027 - three years '
+ "earlier than BofA's 2 trillion. The SIA reports Q2 2026 global sales of 403.3bn, up 35.1% on the quarter, with June "
+ "alone at 134.5bn up 123.6% year on year. THE SLIDE'S BIG NUMBER IS NOT A BULLISH TARGET. IT IS A LAGGING ONE DRESSED "
+ 'AS A FORECAST. || ⚠️⚠️ THREE, AND THIS IS THE ONE THAT SETTLES IT: EVERY SINGLE NAME ON THE SLIDE IS ALREADY AN '
+ 'INDEX HEAVYWEIGHT. ALL EIGHT ARE TOP-SIXTEEN HOLDINGS OF THE VANECK SEMICONDUCTOR ETF (SMH); SIX OF EIGHT ARE SOXX '
+ 'TOP-TEN. THERE IS NOT ONE OFF-INDEX NAME ON THE LIST. Together they are about 52.4% of SMH. This is not stock '
+ "picking, it is reading the top of an index aloud - and it reads it BADLY. ⚠️ IT OMITS TSMC, WHICH IS SMH'S NUMBER "
+ 'TWO HOLDING AT 9.75% AND FABRICATES THE SILICON FOR FOUR OF THE EIGHT. A semiconductor list containing four TSMC '
+ 'customers but not TSMC is not a thesis. ⚠️⚠️ AND IT OMITS MEMORY ENTIRELY. WSTS CREDITS MEMORY WITH 800-PLUS BILLION '
+ 'AND 250% GROWTH IN 2026 - THE SINGLE LARGEST DRIVER OF THE VERY NUMBER THE SLIDE IS HEADLINING - AND MICRON IS '
+ "BOFA'S OWN TOP PICK THIS WEEK AT A 1,550 PRICE OBJECTIVE, THE HIGHEST UPSIDE ON ITS LIST. MU IS SOXX'S NUMBER TWO "
+ 'HOLDING. IT IS NOT ON THE SLIDE. WE OWN IT, 22,581.58 IN 35.45 SHARES, AND WE DECIDE IT ON 30 SEPTEMBER. Also '
+ 'missing: INTC (SOXX #5), AMAT, ASML, TXN, QCOM, SNPS. || ⚠️ FOUR: THE CADENCE PICK IS THE WEAKEST ON THE SLIDE AND '
+ "THE SLIDE DOES NOT SAY WHY. CDNS is on it and SYNOPSYS IS NOT, though BofA's own April list contained BOTH. ⚠️ AND "
+ 'THE ONE DOCUMENTED CRIMINAL EXPORT LIABILITY IN THAT PAIR BELONGS TO CADENCE: ON 28 JULY 2025 THE US DEPARTMENT OF '
+ 'JUSTICE ANNOUNCED THAT CADENCE AGREED TO PLEAD GUILTY AND PAY OVER 140 MILLION DOLLARS FOR UNLAWFULLY EXPORTING '
+ 'SEMICONDUCTOR DESIGN TOOLS TO A RESTRICTED CHINESE MILITARY UNIVERSITY - conduct from February 2015 to April 2021, a '
+ '95 million dollar BIS penalty inside the total. China is 13% of Cadence revenue and RISING from 11%. On the numbers '
+ "Synopsys grew 42.3% to 2.477bn against Cadence's 24.2% to 1.584bn, though ⚠️ SYNOPSYS'S GROWTH IS NOT ORGANIC - IT "
+ "INCLUDES THE ANSYS ACQUISITION, while Cadence's 24.2% is organic and ACCELERATING from 18.7%. Cadence wins on GAAP "
+ 'operating margin 28.4% against 14.4%. CDNS SITS ON OUR BOARD AS A ZERO-BUDGET BACK-UP AND THAT IS EXACTLY RIGHT. || '
+ '💡 THE ONE GENUINELY USEFUL THING ON THE SLIDE, AND IT IS A FACT THE SLIDE ITSELF NEVER STATES: NVIDIA IS THE '
+ 'FASTEST-GROWING NAME ON IT AT PLUS 106% AND HAS THE LOWEST FORWARD P/E OF ALL EIGHT AT 17.51. The two SLOWEST '
+ 'growers - KLAC at plus 15.2% and CDNS at plus 24.2% - trade at 33.12 and 33.71. AMD IS THE MOST EXPENSIVE AT 46.69 '
+ 'FORWARD AND 131.74 TRAILING, AND ⚠️ AMD IS THE ONLY ONE OF THE EIGHT GUIDING A SLOWDOWN: Q2 grew 50% and the Q3 '
+ 'guide of about 13bn against 9.2bn a year earlier implies about 41%, a nine-point deceleration the company guided '
+ 'itself. OUR AMD BUDGET IS 24,000 WITH 13,789.22 SPENT AND I AM NOT ADDING TO IT ON A SLIDE. || ⚠️ AND WHAT THE SLIDE '
+ 'SUPPRESSES: CHIP STOCKS SHED MORE THAN A TRILLION DOLLARS IN A LATE-JULY 2026 SELLOFF, AND BANK OF AMERICA ITSELF '
+ "CALLED LONG SEMICONDUCTORS 'THE MOST CROWDED TRADE EVER' IN JULY 2026. Arya's own 14 September note warns of "
+ "'near-term volatility from rates, Mideast tensions, the Nov. 2 U.S. midterms, and growing resistance to data center "
+ "expansion'. THE SLIDE KEPT THE BANK'S NAME AND DELETED THE BANK'S WARNINGS. || DECISION: NO CHANGE TO ANY BUDGET, "
+ 'TRANCHE DATE OR LIMIT. Conviction HIGH. The six buys of 17 September, the MU decision of 30 September, the MRVL and '
+ 'META tranches of 9 October and the semicap tranches of 19 November all proceed exactly as written. 💡 ONE THING '
+ 'RAISED FOR 10 DECEMBER: ANALOG DEVICES, THE ONE NAME ON THIS SLIDE WE DO NOT OWN - and the case is better than the '
+ "slide knows. Q3 FY26 was ADI's first 4-billion quarter, up 40%, with COMMUNICATIONS UP 84% and the CFO on the record "
+ "that 'Data Center, which now accounts for 80% of our communications revenue' grew 'MORE THAN 100% YEAR-OVER-YEAR IN "
+ "BOTH OPTICAL AND POWER', while the CEO quantifies 100 gigawatts of datacentre build to 2031 at 'a 1 billion to 1.5 "
+ "billion dollar analog SAM' each. AND THE INDUSTRIAL CYCLE HAS NOT TURNED YET - the CFO says customers are 'shipping "
+ "well below historical consumption levels' with 'no restocking'. Growing 40% before the restock. NOT BUYING TODAY: "
+ "Group 6 has 51,274 of unspent room and that is a 10 December allocation question, and the board's field discipline "
+ 'needs a complete data set first. ⚠️ WHAT WOULD CHANGE MY MIND ON ANY OF THIS: a BofA note I can actually read rather '
+ 'than a slide quoting one; or MU failing its 30 September DRAM-bit test, which would tell me the memory cycle the '
+ 'slide ignores is turning down rather than up. || PREVIOUS ENTRY: Sep 14, 2026 - THE DEEPSTOCK NEOCLOUD SLIDE. '
+ 'NOTHING BOUGHT, NOTHING SOLD, NO BUDGET CHANGED, POLICY UNCHANGED. THREE DICTIONARY TERMS ADDED. || FIRST, THE '
+ 'HONEST PART, BECAUSE IT GOES AGAINST US. WE SOLD ALL THREE NAMES ON THIS SLIDE AND TWO OF THE THREE HAVE RISEN '
+ 'SINCE. CRWV sold 17 Jul at about 71.27 a share, now 82.98 - up 16.4%, about 199 of gain forgone on 17 shares. NBIS '
+ 'sold 21 Jul at about 194.86, now 212.19 - up 8.9%, about 468 forgone on 27 shares. IREN sold 9 Sep at about 43.63, '
+ 'now 43.17 - down 1.1%, about 41 to the good on 90 shares. NET FORGONE SINCE THE EXITS: ROUGHLY 626 DOLLARS. Realised '
+ 'on the three when we sold: CRWV minus 786.02, NBIS plus 1,404.51, IREN plus 456.24 - a net plus 1,074.73. ⚠️ SO THE '
+ 'POLICY HAS COST US SOMETHING AND SALEE SHOULD SEE THE NUMBER, NOT A SPEECH. 626 dollars on a 690,000 dollar book is '
+ 'six basis points. I would pay it again. || NOW THE SLIDE. IT HAS FOUR NUMBERS AND THREE OF THEM ARE MISLABELLED. ALL '
+ "FOUR TRACE TO ONE DOCUMENT - IREN'S FY26 RESULTS RELEASE OF 27 AUGUST 2026. The slide did not invent them; it "
+ "renamed them. || ⚠️ NUMBER ONE, THE BIG CHART: '10-12 DOLLARS PER WATT RISING TO 15-20 PLUS'. THIS IS NOT THE PRICE "
+ "OF RENTING A GPU. It is IREN's contracted AI-cloud REVENUE PER MEGAWATT OF DATACENTRE CAPACITY PER YEAR. IREN's own "
+ "words: 'Recent 3-year contracts >$20m revenue per MW (IT)' and 'Active discussions at ~$25m per MW (IT)'. The "
+ 'starting point is not 10-12 either - the Microsoft contract of 3 Nov 2025 was 9.7 BILLION over five years for 200MW, '
+ 'which is 9.70 per watt per year. SO THE REAL DISCLOSED MOVE IS 9.70 TO OVER 20, NOT 10-12 TO 15-20. ⚠️ AND REVENUE '
+ 'PER MEGAWATT RISES WHEN YOU PACK MORE EXPENSIVE CHIPS INTO THE SAME POWER. GB300s cost far more than the previous '
+ 'generation. The number can climb while the hourly rent on any individual GPU falls. NO SOURCE SEPARATES THE TWO '
+ 'EFFECTS. ⚠️⚠️ AND THE TRAP THAT MAKES THIS CHART GENUINELY DANGEROUS: BUILDING A DATACENTRE COSTS ABOUT 9.50 TO '
+ '15.20 DOLLARS PER WATT (Turner & Townsend 2025: Silicon Valley 13.30, Paris 10.80, Atlanta 9.90, Tokyo 15.20). AN '
+ "ARROW FROM '10-12/W' TO '15-20/W+' IS EQUALLY CONSISTENT WITH BUILD COSTS RISING, WHICH IS BAD. The slide shows one "
+ 'reading and not the other. For reference, actual datacentre RENTAL is about 2.36 per watt per year (CBRE: 196.25 per '
+ 'kW per month, H2 2025) - one eighth of these numbers. Colocation is ruled out entirely. || ⚠️ NUMBER TWO, THE '
+ "HEADLINE 'GPU RENTAL PRICES ARE RISING'. NOT ESTABLISHED FOR GPU-HOURS. The single most quoted piece of evidence is "
+ 'CoreWeave CEO Mike Intrator on the Q2 2026 call saying H100s coming off an expired contract were immediately '
+ "rebooked at '95% OF THE ORIGINAL PRICE'. ⚠️ NINETY-FIVE PERCENT OF THE ORIGINAL PRICE IS A FIVE PERCENT DECLINE. It "
+ 'is quoted across the trade press as proof of pricing strength. It is arithmetic proof of mild erosion, from the one '
+ "man whose balance sheet depends on the answer. The independent data conflicts: AIMultiple's index across 69 "
+ "providers and 26 months finds H100 'roughly flat' with neocloud rates trending DOWN, and says the B200 rise is "
+ 'driven by hyperscaler price sheets entering the dataset at 2-3x neocloud rates rather than real increases. Thunder '
+ 'Compute reports AWS cutting H100, H200 and A100 instance pricing by UP TO 45%. The defensible statement is that '
+ 'newest-generation and per-megawatt pricing is rising while H100 per-hour pricing is flat to falling. THAT IS NOT '
+ "WHAT THE HEADLINE SAYS. || ⚠️ NUMBER THREE, 'A100 UNTIL 2029'. THIS IS A CONTRACT END DATE, NOT A USEFUL LIFE, AND "
+ 'THE SLIDE CONFLATES THEM. Intrator said on the same Q2 call that CoreWeave signed an A100 contract running into '
+ "2029. Fine. But COREWEAVE'S OWN STATED USEFUL LIFE FOR TECHNOLOGY EQUIPMENT IS SIX YEARS, AND THE A100 LAUNCHED IN "
+ '2020. SIX PLUS 2020 IS 2026, NOT 2029. An A100 earning revenue in 2029 is an asset with ZERO BOOK VALUE - which '
+ 'flatters reported margins and tells you nothing about what it rents for. ⚠️ AND THE SLIDE OMITS THE LARGEST SINGLE '
+ 'COUNTER-EXAMPLE IN THE INDUSTRY: AMAZON SHORTENED SERVER USEFUL LIFE FROM SIX YEARS TO FIVE EFFECTIVE 1 JANUARY '
+ "2025, AND SAID WHY IN ITS OWN FILING - 'The shorter useful lives are due to the increased pace of technology "
+ "development, particularly in the area of artificial intelligence.' That cost Amazon 1.4bn of extra depreciation and "
+ "1.0bn of net income, and it reversed Amazon's OWN earlier extension which had added 2.5bn to profit. The operator of "
+ "the largest fleet on earth moved the OPPOSITE way to the slide's thesis, explicitly because of AI. || ⚠️ NUMBER "
+ "FOUR, 'PREPAYMENT 45-55%'. REAL, BUT THE DENOMINATOR IS WRONG. IREN's footnote says 45-55% OF GPU CAPEX - 'the "
+ "estimated capital expenditure for GPUs and ancillaries'. The slide shows it on a contract document, where any reader "
+ "takes it as 45-55% of contract value. PREPAYMENT AS A SHARE OF CONTRACT VALUE IS ABOUT 20% - IREN's own Microsoft "
+ "release says 'including a 20% prepayment', and Compute Exchange puts the market at roughly 20% of total contract "
+ 'value. THE SLIDE ROUGHLY DOUBLES THE COMFORT THE NUMBER ACTUALLY PROVIDES. || ⚠️⚠️ AND THE THING THE SLIDE CANNOT '
+ 'SURVIVE, WHICH IS A FACT ABOUT ONE OF ITS OWN THREE BIDDERS: IREN TOOK A 638.8 MILLION DOLLAR IMPAIRMENT IN THE JUNE '
+ '2026 QUARTER ON DECOMMISSIONED BITCOIN MINING HARDWARE, AND POSTED A FY26 NET LOSS OF 702.6 MILLION AGAINST A '
+ 'PRIOR-YEAR PROFIT OF 86.9 MILLION. A slide arguing that computing hardware dies more slowly is illustrated with a '
+ 'company that has just written off two thirds of a billion dollars of computing hardware. ⚠️ AND IREN IS STILL 82% A '
+ 'BITCOIN MINER: FY26 revenue 707.0m, of which AI cloud is 128.8m and mining 578.2m. || THE OTHER TWO, FROM THE '
+ 'FILINGS: COREWEAVE H1 2026 revenue 4,653m, NET LOSS 1,366m, of which INTEREST EXPENSE ALONE WAS 1,176m - a quarter '
+ 'of revenue going to lenders. Total debt about 35.1bn against 5.5bn of cash. TWO UNNAMED CUSTOMERS ARE 62% OF Q2 '
+ 'REVENUE (36% and 26%). RPO is 103.7bn but 80% of it lands inside 48 months against a 72-month asset life - THE '
+ 'REVENUE TAIL IS SHORTER THAN THE DEPRECIATION TAIL. NEBIUS Q2 2026 revenue 582.3m against 105.1m, a genuine 454% - '
+ "but a LOSS of 190.4m, and ⚠️ THE PRIOR YEAR'S 'PROFIT' OF 502.5m WAS A 597.4 MILLION ONE-OFF REVALUATION OF ITS "
  'CLICKHOUSE STAKE, NOT OPERATIONS. Nebius also extended server life from four years to five in Q1 2026, which its own '
  "filing says 'partially offset the increase in depreciation expense'. P/E 1,292. || DECISION: NO CHANGE. WE OWN NONE "
  'OF THE THREE AND WE ARE BUYING NONE OF THE THREE. Conviction HIGH. Horizon medium, 6-24 months. THE REASON IS NOT '
@@ -7257,9 +7319,23 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'k': 'tranche',
             'w': 'Tranche 2 - largest line',
             'a': 'BUY',
-            'amt': 17127.34,
-            'cond': 'WARNING: rose 7.1% on 4 Sep, cutting upside to consensus from 20.9% to 13.0%. Forward P/E 35.5, '
-                    'EV/EBITDA 69, price/FCF 124.',
+            'amt': 13127.34,
+            'cond': '⚠️ DATA FAULT CLOSED 14 SEP 2026. THIS ROW SAID 17,127.34 AND THAT WAS WRONG BY EXACTLY 4,000. '
+                    'The budget is 21,000 and 7,872.66 is already invested in 48.5 shares, so the real remaining room '
+                    'is 13,127.34. The stale figure had been carried since before the 10 September restructure and was '
+                    'flagged on 9, 11 and 14 September. IT IS NOW CORRECTED IN THE ROW ITSELF. Anyone who had placed '
+                    '17,127.34 would have overspent the line by 4,000 and broken the 1,000,000 budget. || WARNING: '
+                    'rose 7.1% on 4 Sep, cutting upside to consensus from 20.9% to 13.0%. Forward P/E 35.5, EV/EBITDA '
+                    '69, price/FCF 124. || 14 SEP CONTEXT: MRVL appears on BOTH circulating slides this week - the '
+                    "@LeifInvests buy-under list at 190, and the 'BofA 8 stocks' slide. BofA's real 14 Sep note does "
+                    'carry MRVL with a 365 price objective, the second-highest implied upside on its list, against '
+                    '218.82 on 14 Sep. ⚠️ THAT DOES NOT CHANGE THE SIZE OR THE DATE. Q2 FY27 was a record - revenue '
+                    '2.739bn up 37%, data centre 2,171.5m up 46% and accelerating, 79% OF ALL REVENUE. Marvell won the '
+                    'Google TPU custom-silicon agreement on 19 Aug (Google took a warrant over about 58.97m shares). '
+                    '⚠️ BUT THE 10-K DISCLOSES DISTRIBUTOR A AT 37% OF REVENUE AND DIRECT CUSTOMER A AT 14%, AND GAAP '
+                    'NET MARGIN IS ONLY 11.2% (308.0m on 2.739bn) AGAINST A NON-GAAP GROSS MARGIN 5.8 POINTS ABOVE '
+                    'GAAP. Forward P/E 40.1, trailing 73.5. Highest concentration of the eight. Tranche 2 proceeds at '
+                    '13,127.34 on 9 October as planned.',
             'c': 'planned'},
            {'d': '2026-10-15',
             't': 'ASML',
@@ -7941,6 +8017,37 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'datacentre and every industrial name we own. IT IS AN INPUT COST AND AN INFLATION SIGNAL FOR US, '
                     'NOT AN OPPORTUNITY. NOTHING IS TO BE TRADED ON IT.',
             'c': 'planned'},
+           {'d': '',
+            'dl': 'Standing',
+            't': '',
+            'k': 'watch',
+            'a': 'WATCH',
+            'amt': 0,
+            'c': 'standing',
+            'w': '⚠️ 10 DECEMBER AGENDA - ANALOG DEVICES (ADI) is the ONE name on the 14 Sep BofA slide we do NOT own, '
+                 'and the case for it is better than the slide knows.',
+            'cond': "RAISED 14 SEP, NOT A PROPOSAL TO BUY TODAY. ADI is the only one of the slide's eight absent from "
+                    'our 94 tickers, and the reflex answer - "industrial analog, not AI" - is WRONG on the numbers. || '
+                    "Q3 FY26 (ended 1 Aug 2026) was ADI's FIRST FOUR-BILLION-DOLLAR QUARTER: revenue 4.02bn, UP 40%; "
+                    'industrial 1.97bn UP 53%; COMMUNICATIONS 655m UP 84%; GAAP gross margin 67.3%; net income 1.34bn. '
+                    '|| ⚠️ THE PART THAT MATTERS, FROM NAMED EXECUTIVES ON THE RECORD. CFO Richard Puccio: "Data '
+                    'Center, which now accounts for 80% of our communications revenue continued to accelerate with '
+                    'MORE THAN 100% YEAR-OVER-YEAR GROWTH IN BOTH OPTICAL AND POWER." CEO Vincent Roche: "data center '
+                    'capacity is now measured in gigawatts rather than flops and tops" and "100 gigawatts equivalent '
+                    'infrastructure built for data centers between now and 2031. EACH GIGAWATT GENERATES A 1 BILLION '
+                    'TO 1.5 BILLION DOLLAR ANALOG SAM" - a 100 to 150 billion dollar addressable market, quantified by '
+                    'the chief executive on the record. || AND THE CYCLE HAS NOT EVEN TURNED YET. Puccio: "most of our '
+                    'business is still shipping well below historical consumption levels" and "we still think that we '
+                    'have not seen really any restocking activity from inventory from our customers." Growing 40% '
+                    "BEFORE the restocking. || ⚠️ WHY NOT TODAY: (1) the board's field discipline requires complete "
+                    'data on every ticker and CIEN is already carried as an incomplete-fields fault - I will not '
+                    "repeat it mid-week; (2) GROUP 6 POWER & ELECTRIFICATION HAS 51,274 OF UNSPENT ROOM and ADI's "
+                    'optical-and-power datacentre thesis is a Group 6 argument, which is exactly the allocation '
+                    'question the 10 December review exists to settle; (3) forward P/E 23.81 is the second-cheapest of '
+                    'the eight after NVDA and is not going anywhere in twelve weeks. || BRING TO 10 DECEMBER WITH: '
+                    'full field set, Q4 FY26 actual against the 4.3bn +/- 100m guide, and whether the '
+                    'optical-and-power line is disclosed separately by then. Conviction MEDIUM on the thesis, HIGH on '
+                    'deferring the decision.'},
            {'d': '',
             'dl': "On Salee's instruction",
             't': 'AAOI',

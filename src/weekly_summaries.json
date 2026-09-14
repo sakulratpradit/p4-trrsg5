@@ -465,6 +465,10 @@
   {
    "points": [
     {
+     "s": "-",
+     "text": "⚠️ THE ONLY ONE OF THE EIGHT SLIDE NAMES GUIDING A SLOWDOWN, AND THE MOST EXPENSIVE. Q2 2026 (ended 27 Jun) revenue 11.5bn UP 50%, data centre 6.7bn up 107%, GAAP gross margin 54%, net income 2.297bn - all good. ⚠️ BUT THE Q3 GUIDE OF ABOUT 13bn AGAINST 9.2bn A YEAR EARLIER IMPLIES ABOUT PLUS 41% - A NINE-POINT DECELERATION THE COMPANY GUIDED ITSELF. And AMD carries the highest multiples of the eight: FORWARD P/E 46.69 AND TRAILING 131.74, against NVIDIA's 17.51 forward while NVIDIA grows twice as fast. Budget 24,000 with 13,789.22 invested in 55 shares. NOT ADDING ON A SLIDE."
+    },
+    {
      "s": "0",
      "text": "Recorded 14 Sep: AMD has a small but real photonics position that was not previously on this board - IT ACQUIRED SILICON PHOTONICS STARTUP ENOSEMI, announced 28 MAY 2025 by SVP Brian Amick, to 'support and develop a variety of photonics and co-packaged optics solutions across next-gen AI systems'. ⚠️ Deal value and any photonics revenue: NOT FOUND. Budget unchanged at 24,000; this does not change the thesis, it is context for the EPYC supply-chain note of 13 Sep."
     }
@@ -1252,6 +1256,19 @@
     }
    ],
    "week": "2026-08-03"
+  },
+  {
+   "points": [
+    {
+     "s": "!",
+     "text": "⚠️ THE 14 SEP 'BofA 8 STOCKS' SLIDE RANKS CDNS SEVENTH AND NEVER MENTIONS THE GUILTY PLEA. US DEPARTMENT OF JUSTICE, 28 JULY 2025: 'Cadence Design Systems Agrees to Plead Guilty and Pay Over $140 Million for Unlawfully Exporting Semiconductor Design Tools to a Restricted PRC Military University.' The plea was to conspiracy to commit export control violations; the counterparty was the National University of Defense Technology, under the PRC Central Military Commission; the conduct ran February 2015 to April 2021; a 95m BIS penalty sits inside the total. ⚠️ AND CHINA EXPOSURE IS RISING - 13% of revenue in Q1 2026 against 11% a year earlier. Cadence's own filing still carries forward-looking risk language on 'the impact of the settlements on Cadence's operations and business dealings in China.' HELD AS A ZERO-BUDGET BACK-UP AND THAT REMAINS EXACTLY RIGHT."
+    },
+    {
+     "s": "0",
+     "text": "THE EDA PAIR, HONESTLY. CDNS is on the slide and SYNOPSYS IS NOT - though BofA's own April 2026 list contained BOTH, so the omission is the slide author's choice, not the bank's. On growth Synopsys wins: Q3 FY26 revenue 2.477bn UP 42.3% against Cadence's Q2 1.584bn up 24.2%. ⚠️ BUT SYNOPSYS'S GROWTH IS NOT ORGANIC - IT INCLUDES THE ANSYS ACQUISITION, while Cadence's 24.2% is organic and ACCELERATING from 18.7% in Q1. On GAAP operating margin Cadence wins decisively, 28.4% against 14.4%, because Ansys purchase accounting depresses the Synopsys figure. Cadence backlog is a record 8.1bn; FY26 guide 6.26-6.34bn. Forward P/E 33.71 - one of the two most expensive on the slide while being one of the two slowest growers."
+    }
+   ],
+   "week": "2026-09-14"
   }
  ],
  "CEG": [
@@ -3549,6 +3566,18 @@
   {
    "points": [
     {
+     "s": "!",
+     "text": "⚠️⚠️ DATA FAULT CLOSED - THE TRANCHE 2 ROW SAID 17,127.34 AND THE CORRECT FIGURE IS 13,127.34. Budget 21,000 less 7,872.66 already invested in 48.5 shares. Off by EXACTLY 4,000. Flagged 9, 11 and 14 September; now corrected in the schedule row itself. PLACING THE STALE NUMBER ON 9 OCTOBER WOULD HAVE OVERSPENT THE LINE BY 4,000 AND BROKEN THE MILLION-DOLLAR BUDGET. || MRVL now appears on BOTH circulating slides this week. BofA's real 14 Sep note does carry it at a 365 price objective against 218.82 - the second-highest implied upside on that list. ⚠️ THE SIZE AND THE DATE DO NOT MOVE ON A PRICE TARGET."
+    },
+    {
+     "s": "+",
+     "text": "Q2 FY27 (ended 1 Aug 2026) WAS A RECORD: revenue 2.739bn UP 37%, and data centre 2,171.5m UP 46% - growth ACCELERATING relative to the total, now 79% OF ALL REVENUE. CEO Matt Murphy: 'AI-related bookings remain exceptionally robust.' And on 19 August Marvell won a custom-silicon agreement across Google's TPU ecosystem, with Google taking a warrant over about 58.97m Marvell shares. Q3 guide 3.150bn +/- 5%."
+    },
+    {
+     "s": "-",
+     "text": "⚠️ THE OTHER SIDE, FROM THE FILINGS. GAAP NET MARGIN IS 11.2% - net income 308.0m on 2.739bn - and the non-GAAP gross margin of 58.9% sits 5.8 POINTS ABOVE the GAAP 53.1%. GAAP EPS 0.33 against a guided non-GAAP 1.10 for Q3, a more than threefold divergence. ⚠️ AND THE FY2026 10-K DISCLOSES DISTRIBUTOR A AT 37% OF REVENUE AND DIRECT CUSTOMER A AT 14%, with the company's own risk language citing 'dependence on a few customers' and 'the gain or loss of design wins with our key customers'. HIGHEST CONCENTRATION OF THE EIGHT NAMES ON THE SLIDE. Forward P/E 40.1, trailing 73.5. Tranche 2 proceeds at 13,127.34 on 9 October."
+    },
+    {
      "s": "0",
      "text": "A circulating buy-under list puts MRVL at 190 against the 11 Sep close of 236.10 - MINUS 19.5%, the widest gap of the six funded names on it. Our own plan is Tranche 2 on 9 OCTOBER as a dollar amount, not a price wait. ⚠️ AND THE STANDING DATA FAULT ON THAT ROW IS STILL OPEN: the schedule quotes 17,127.34 but the real remaining room after the 10 Sep restructure is 13,127. That must be corrected before the tranche is placed."
     }
@@ -3848,6 +3877,10 @@
   },
   {
    "points": [
+    {
+     "s": "!",
+     "text": "⚠️⚠️ THE 'BofA 8 STOCKS' SLIDE OMITS MICRON ENTIRELY - AND MICRON IS BOFA'S OWN TOP PICK THIS WEEK. The bank's real 14 September note carries MU at a 1,550 PRICE OBJECTIVE, THE HIGHEST IMPLIED UPSIDE ON ITS LIST at about +69.6%. MU is also the NUMBER TWO HOLDING of the SOXX semiconductor ETF at 8.97%. ⚠️ AND MEMORY IS THE SINGLE LARGEST DRIVER OF THE VERY NUMBER THE SLIDE IS HEADLINING: WSTS credits the memory segment with 800-PLUS BILLION AND 250% GROWTH IN 2026. A slide about a semiconductor rally that contains ZERO memory exposure has omitted the loudest part of the rally. || ⚠️ THIS CHANGES NOTHING ABOUT THE 30 SEPTEMBER TEST. A 1,550 price objective is not a DRAM bit shipment. The rule stands: buy only if DRAM bits grow double-digit AND gross margin holds at or above 80%. Beating on price alone is the cycle topping."
+    },
     {
      "s": "!",
      "text": "⚠️ MICRON IS MISSING FROM THE INNOVESTX SEPTEMBER CALENDAR ENTIRELY - the single biggest omission on it. MU reports 30 SEPTEMBER and it is our largest scheduled decision of the month. ⚠️ AND A DATA FAULT SURFACED WHILE CHECKING: the written plan is built on a 40,000 budget but the board carries 51,000. Room is 28,418.42; the rungs plus the parked reserve account for only 17,418.42, leaving ABOUT 11,000 WITH NO WRITTEN RULE. Recommendation: park it on the same two HBM conditions as the existing 10,000 - no new spending, no new rule. Must be closed before the print. Same class of fault as the MRVL row quoting 17,127.34 against real room of 13,127."
@@ -4271,6 +4304,10 @@
   },
   {
    "points": [
+    {
+     "s": "+",
+     "text": "💡 THE ONE GENUINELY USEFUL FACT ON THE 14 SEP SEMICONDUCTOR SLIDE, WHICH THE SLIDE ITSELF NEVER STATES: NVIDIA IS THE FASTEST-GROWING OF THE EIGHT NAMES AT PLUS 106% AND HAS THE LOWEST FORWARD P/E OF ALL EIGHT AT 17.51. The two SLOWEST growers on the list - KLAC at +15.2% and CDNS at +24.2% - trade at 33.12 and 33.71, roughly DOUBLE. Q2 FY27 (ended 26 Jul 2026): revenue 96.221bn up 106%, data centre 89.0bn up 117%, GAAP gross margin 75.0%, net income 59.688bn. Q3 guide 108.0bn +/- 2%. BofA's real 14 Sep note carries a 350 price objective. ⚠️ NO CHANGE TO THE LADDER: rung 2 at 200, rung 3 at 180, 15,619.72 of remaining budget, 8,000 decided at the 18 November print. The cheapest fast grower is still not a reason to abandon a written ladder."
+    },
     {
      "s": "!",
      "text": "⚠️ WHERE THE NEOCLOUD QUESTION ACTUALLY TOUCHES OUR MONEY - AND IT IS HERE, NOT IN CRWV, NBIS OR IREN. We own 420 shares at a cost of 79,380.28 and WE OWN NO NEOCLOUD. But the neoclouds are NVIDIA'S CUSTOMERS, and they are buying with borrowed money: CoreWeave carries about 35.1bn of debt with H1 interest expense of 1,176m, IREN 7,593.0m, Nebius funding 8,130.3m of half-year capex partly through convertible notes. ⚠️ IF NEOCLOUD FINANCING TIGHTENS - converts failing to clear, a lender repossessing GPUs, a name unable to roll debt - THAT IS AN NVDA REVENUE-QUALITY QUESTION, NOT A CRWV QUESTION. It belongs on the Bubble Watch, not on a buy list. No change to the NVDA ladder: rung 2 at 200, rung 3 at 180, 15,619.72 of remaining budget, 8,000 decided at the 18 November print."
@@ -5889,6 +5926,10 @@
   },
   {
    "points": [
+    {
+     "s": "!",
+     "text": "⚠️ THE 'BofA 8 STOCKS' SLIDE OMITS TSMC - AND TSMC IS THE NUMBER TWO HOLDING OF THE SMH SEMICONDUCTOR ETF AT 9.75%, NEARLY DOUBLE BROADCOM'S WEIGHT. It also fabricates the silicon for FOUR of the eight names on the slide: NVDA, AVGO, AMD and MRVL. A semiconductor list that contains four TSMC customers but not TSMC is not a coherent thesis - it is a list of American-listed tickers with the Taiwanese one left out. WE OWN IT: 39,921.53 in 112.5 shares of a 74,000 budget, with TRANCHE 1 OF 15,000 DUE THURSDAY 17 SEPTEMBER. That tranche proceeds. The August monthly revenue row of 10 Sep is closed; September monthly revenue lands 8 October."
+    },
     {
      "s": "!",
      "text": "⚠️ WHAT WOULD CHANGE MY MIND (written 14 Sep): MONTHLY REVENUE IS THE TELL AND IT COMES EVERY MONTH - TSMC reports it around the 10th. TWO CONSECUTIVE MONTHS OF YEAR-ON-YEAR REVENUE GROWTH BELOW 20% would stop Tranche 2, against 30.6% today. A SECOND test: gross margin falling below 55% on any quarterly report, against 64.23% today - that would mean either pricing power or the N2 ramp is going wrong. This is the largest single allocation on the board at 74,000 and the cheapest quality on it at 18.15 times forward earnings, so the bar to stop buying is deliberately high and deliberately numeric."
