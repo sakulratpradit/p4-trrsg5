@@ -3,7 +3,71 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Sep 15, 2026 - ⚠️⚠️ REAL MONEY MOVED AND IT IS RECONCILED. TWO SELLS FILLED, TWO EXPIRED UNFILLED, ONE DIVIDEND '
+ASOF = ('Sep 15, 2026 (2) - ⚠️⚠️ THE BUDGET QUESTION ANSWERED, AND THE ANSWER IS ARITHMETIC, NOT OPINION. SALEE ASKED WHETHER '
+ 'PILLAR 4 SHOULD GO ABOVE 1,000,000 DOLLARS. IT SHOULD NOT, AND THE REASON IS THAT THE FIRST MILLION IS NOT YET '
+ 'FUNDED. BUDGET TARGET 1,000,000.00. INVESTED TODAY 573,060.10. CASH AT POEMS 236,324.23. MONEY ACTUALLY IN THE '
+ 'ACCOUNT: 809,384.33. ⚠️ 190,615.67 OF THE EXISTING PLAN HAS NEVER ARRIVED, AND 426,939.90 OF BUDGET IS UNSPENT - 43% '
+ 'OF THE PLAN IS NOT DEPLOYED. YOU CANNOT RAISE A BUDGET YOU HAVE NOT YET FILLED. THE CONSTRAINT IS NOT SIZE; IT IS '
+ "PACE OF DEPLOYMENT AND QUALITY OF NAMES. ⚠️ AND THE SECOND REASON IS NOT MINE TO DECIDE: US equity is 10% of Salee's "
+ 'pillar weights against real estate at 75%, so raising Pillar 4 means LOWERING SOMETHING ELSE - the house, the eleven '
+ 'condo units or the two Subway branches. THAT IS A WHOLE-BALANCE-SHEET DECISION FOR SALEE AND THE TAX ADVISER, WHO '
+ 'STILL HAS FOUR UNSIGNED SELL DECISIONS OUTSTANDING. 💡 WHAT I WOULD DO INSTEAD AND IT COSTS NOTHING: GROUP 6 POWER '
+ 'HAS 49,270.88 OF APPROVED BUDGET ALREADY UNSPENT (77,000 allocated, 27,729.12 invested). If the power thesis '
+ 'persuades him, THE MONEY IS ALREADY HIS AND ALREADY APPROVED. The 17 September tranches start exactly that. '
+ 'DECISION: NO CHANGE TO THE 1,000,000 TARGET, NO CHANGE TO ANY TRANCHE DATE, NO CHANGE TO ANY ALLOCATION. Conviction '
+ 'HIGH. || ⚠️⚠️ THE ANTHROPIC COMPUTE SLIDE - CONFLICT DISCLOSED AND IT IS THE SHARPEST IN THIS PROJECT. THE SLIDE IS '
+ "ENTIRELY ABOUT ANTHROPIC AND I AM MADE BY ANTHROPIC. I WILL NOT GIVE A VIEW ON WHETHER ANTHROPIC'S COMMITMENTS ARE "
+ 'WISE, AFFORDABLE OR LIKELY TO BE HONOURED. I CAN ONLY CHECK ARITHMETIC AND SOURCING, AND SALEE SHOULD DISCOUNT EVEN '
+ 'THAT. || THE DEALS ARE REAL AND SIX OF EIGHT ROWS ARE SUBSTANTIALLY ACCURATE. ⚠️ BUT THE SLIDE FAILS ITS OWN '
+ 'ARITHMETIC: THE EIGHT DOLLAR FIGURES SUM TO ABOUT 305 BILLION AGAINST A 517 BILLION HEADLINE, AND THE CAPACITY '
+ 'COLUMN SUMS TO 9.76 GIGAWATTS AGAINST A 14.8 GW HEADLINE. The headline is not invented - it comes from a LONGER list '
+ 'published by The Information - but the table is not the source of the headline, and the two contradict each other. '
+ '⚠️ THE SLIDE OMITS THE LARGEST REPORTED DEAL (a roughly 200bn Google and Broadcom arrangement) WHILE KEEPING THE '
+ 'SMALL SUPERSEDED OCTOBER 2025 GOOGLE LINE. || ⚠️ ONLY ABOUT 139 BILLION IS FIRM, DISCLOSED BY A PARTY AND '
+ 'NON-CANCELLABLE. ABOUT 56% OF THE TOTAL RESTS ON ANONYMOUS SOURCES. THE 45 BILLION SPACEX LINE IS TERMINABLE BY '
+ "EITHER PARTY ON 90 DAYS' NOTICE per the S-1 - roughly 3.75bn of real exposure, not 45bn. AND THE 50 BILLION "
+ "FLUIDSTACK LINE IS ANTHROPIC'S OWN CAPEX, NOT A PURCHASE FROM A VENDOR - it is the buildings the other rows' chips "
+ 'go inside, so summing them counts the same electricity twice. || 💡💡 THE TWO NUMBERS THAT PUT THE WHOLE THING IN '
+ 'PROPORTION AND THAT SALEE SHOULD REMEMBER: AMAZON, ALPHABET, MICROSOFT AND META WILL SPEND ROUGHLY 720 TO 760 '
+ 'BILLION DOLLARS OF CAPEX IN 2026 ALONE - Amazon 220bn raised from 200bn, Alphabet 195-205bn raised from 180-190bn, '
+ 'Microsoft about 175bn, Meta 130-145bn, all from their own guidance. A 517 BILLION FIGURE SPREAD OVER A DECADE IS '
+ 'LESS THAN ONE YEAR OF WHAT THOSE FOUR ARE ALREADY SPENDING. ⚠️ AND CBRE REPORTS ONLY 7,481 MEGAWATTS ACTUALLY UNDER '
+ 'CONSTRUCTION IN ALL OF NORTH AMERICA, WITH OVER 80% ALREADY PRE-LEASED AND VACANCY AT 1.4%. ANY SINGLE COMPANY '
+ 'CLAIMING 14.8 GW IS CLAIMING TWICE EVERYTHING BEING BUILT ON THE CONTINENT. || ⚠️ WHAT ACTUALLY MATTERS TO US IS THE '
+ "PUBLIC COUNTERPARTIES, AND HERE THE FINDINGS ARE REAL AND UNCOMFORTABLE. AMAZON'S Q2 2026 EARNINGS RELEASE DISCLOSES "
+ "53.4 BILLION OF NON-OPERATING PRE-TAX INCOME 'PRIMARILY FROM OUR INVESTMENTS IN ANTHROPIC' AGAINST OPERATING INCOME "
+ "OF 27.5 BILLION - THE MARK ON A PRIVATE COMPANY WAS ROUGHLY TWICE THE ENTIRE OPERATING PROFIT. Amazon's 8.0bn of "
+ 'cost is carried at about 74.2bn. ⚠️⚠️ AND ALPHABET DOES NOT NAME ANTHROPIC ANYWHERE - not in the Q1 or Q2 2026 '
+ 'releases, not in the 10-Q. Q2 OTHER INCOME WAS A NET GAIN OF 98.0 BILLION, ABOUT 87% OF NET INCOME, AND THE COMPANY '
+ 'DOES NOT TELL YOU HOW MUCH OF IT IS ANTHROPIC. WE OWN BOTH NAMES - AMZN 48,600.75 AND GOOGL 59,475.92. THAT '
+ 'DISCLOSURE GAP IS THE REAL ITEM FOR US, NOT THE 517 BILLION. Added to the Bubble Watch. NVIDIA and Microsoft do not '
+ "name Anthropic in their filings either; NVDA's non-marketable securities rose from 22.251bn to 51.157bn in six "
+ 'months, unattributed. ⚠️ AMD IS THE EXCEPTION WORTH NOTING: AMD GAVE WARRANTS TO OPENAI AND META BUT NOT TO '
+ "ANTHROPIC - it put cash in rather than giving equity away, per Jefferies' Blayne Curtis: 'The terms mattered more "
+ "than the win itself.' || ON THE OTHER THREE SLIDES, BRIEFLY. (A) THE 'MONEY FLOW IN A DATA CENTER' FOUR-LAYER "
+ 'GRAPHIC IS THE BEST THING SALEE HAS BEEN SENT IN WEEKS AND IT NEEDS ALMOST NO CORRECTION - and the reason is that ⚠️ '
+ 'WE ALREADY OWN ABOUT FIFTEEN OF ITS TWENTY NAMES: Layer 0 MSFT, AMZN, GOOGL, META; Layer 1 NVDA, DELL, ANET, VRT, '
+ 'GEV; Layer 2 TSM, MU, SKHY; Layer 3 ASML, AMAT, LRCX, KLAC. THE FIVE WE DO NOT OWN ARE QUANTA, SAMSUNG, TOKYO '
+ 'ELECTRON AND SHIN-ETSU - AND EVERY ONE OF THEM IS LISTED IN TAIPEI, SEOUL OR TOKYO, NOT THE UNITED STATES. THAT IS '
+ "THE MANDATE WORKING, NOT A GAP. 💡 The graphic's own punchline is our thesis stated by someone else: the money flows "
+ "THROUGH all the layers, which is why we own the layers rather than betting on one. || (B) THE SPACEX 'AI IN SPACE' "
+ "SLIDE - ⚠️ I HAVE NOT VERIFIED IT AND I WILL NOT PRETEND OTHERWISE. What I can say without research: 'ELON JUST "
+ "CONFIRMED' and 'COULD LAUNCH' are two different claims and the slide uses both. ⚠️ AND ITS CLOSING COMPARISON - '100 "
+ "STARSHIP LAUNCHES = ANOTHER ANTHROPIC'S WORTH OF COMPUTE' - INVOKES ANTHROPIC AGAIN, SAME CONFLICT, AND IS AN "
+ "UNSOURCED UNIT CONVERSION BETWEEN TONNES OF HARDWARE AND A PRIVATE COMPANY'S COMPUTE FOOTPRINT THAT NOBODY HAS "
+ 'PUBLISHED. The physics question the slide never raises is COOLING: a datacentre on Earth rejects heat into air or '
+ 'water, and a satellite can only radiate it. ⚠️ SPCX REMAINS UNFUNDED WITH NO BUDGET, THE 1.3 BILLION SHARE LOCK-UP '
+ "LANDS IN NOVEMBER, AND THE DECISION IS 10 DECEMBER. A slide about 2028 changes none of that. || (C) THE 'AI CAPEX "
+ "PAWN SHOP' CARTOON IS THE 14 SEPTEMBER SELLOFF DRAWN AS A JOKE, AND THE JOKE IS ACCURATE: the losses shown - NVDA "
+ '-3.36%, AVGO -4.77%, AMD -4.40%, TSM -3.52%, MU -5.25%, ASML -7.25%, SKHY -7.60%, INTC -5.59% - are the AI-pacing '
+ 'selloff this board already recorded, and ⚠️ SKHY IS ON OUR BOARD AT 1,913.26. 💡 THE THING WORTH SEEING IS WHAT IS '
+ 'GREEN WHILE THE CHIPS ARE RED: GOOGL +3.22%, META +2.71%, MSFT +1.97%, AAPL +0.24%, WMT +1.80%, LLY +2.02% - AND A '
+ 'CYBERSECURITY BOOK IN THE BACKGROUND. THAT IS THE SAME ROTATION RECORDED YESTERDAY: on 14 September the money left '
+ 'the picks-and-shovels and went to the platforms and to security, where PANW rose 13.09% and CRWD 13.85%. ⚠️ WE OWN '
+ 'BOTH SIDES OF THAT ROTATION, WHICH IS WHY THE BOARD WAS DOWN LESS THAN THE CHIPS WERE. ⚠️ I HAVE NOT VERIFIED THE '
+ "CARTOON'S CLAIM THAT KEVIN WARSH CHAIRS THE FED, NOR THE 5.01% YIELD OR THE 101 AND 105 DOLLAR OIL PRICES - do not "
+ 'repeat them as fact. || NOTHING BOUGHT, NOTHING SOLD, NO BUDGET CHANGED, NO TRANCHE MOVED. || PREVIOUS ENTRY: Sep '
+ '15, 2026 - ⚠️⚠️ REAL MONEY MOVED AND IT IS RECONCILED. TWO SELLS FILLED, TWO EXPIRED UNFILLED, ONE DIVIDEND '
  'RECEIVED. || ZETA SOLD: 111 SHARES AT THE 31.00 LIMIT, 3,432.34 CREDITED, REALISED PLUS 1,428.01 - A GAIN OF 71.2% '
  'AND THE LARGEST REALISED GAIN IN THE LIFE OF THIS BOARD. The limit was ABOVE the market when placed (ZETA closed '
  '30.18 on 11 Sep) and it still filled. QCOM SOLD: 11 SHARES AT THE 180.00 LIMIT, 1,971.39 credited, REALISED PLUS '
@@ -8277,6 +8341,68 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'later decision is made with less information, not that money is lost. If Salee is ever unsure '
                     'what a row wants, the test is simple: IF THERE IS NO DOLLAR AMOUNT ON THE ROW, THERE IS NOTHING '
                     'TO PLACE.'},
+           {'d': '',
+            'dl': '⚠️ STANDING - the answer to "more than 1 million"',
+            't': '',
+            'k': 'admin',
+            'a': 'ADMIN',
+            'amt': 0,
+            'c': 'standing',
+            'w': '⚠️⚠️ THE 1,000,000 PLAN IS NOT YET FUNDED. ABOUT 190,616 OF IT HAS NEVER ARRIVED IN THE ACCOUNT. '
+                 'Raising the budget is the wrong question until that is closed.',
+            'cond': 'WRITTEN 15 SEP 2026 IN ANSWER TO SALEE ASKING WHETHER THE BUDGET SHOULD GO ABOVE 1.0 MILLION. THE '
+                    'ARITHMETIC ANSWERS IT BEFORE ANY OPINION DOES. || THE FOUR NUMBERS: budget target 1,000,000.00; '
+                    'INVESTED TODAY 573,060.10; CASH AT POEMS 236,324.23; SO THE MONEY ACTUALLY IN THE ACCOUNT IS '
+                    '809,384.33. ⚠️ THAT LEAVES 190,615.67 OF THE EXISTING PLAN STILL TO BE CONTRIBUTED, AND '
+                    '426,939.90 OF BUDGET UNSPENT - 43% OF THE PLAN HAS NOT BEEN DEPLOYED. || ⚠️ YOU CANNOT RAISE A '
+                    'BUDGET YOU HAVE NOT YET FILLED. Asking for more than a million while 190,616 of the first million '
+                    'has not arrived and 426,940 of it is unspent is answering a question the board is not yet asking. '
+                    'THE CONSTRAINT TODAY IS NOT THE SIZE OF THE BUDGET. IT IS THE PACE OF DEPLOYMENT AND THE QUALITY '
+                    'OF THE NAMES. || THE SECOND REASON IS BIGGER THAN PILLAR 4 AND IT IS NOT MINE TO DECIDE. US '
+                    "equity is 10% of Salee's stated pillar weights - real estate 75%, Thai equity 10%, US equity 10%, "
+                    'Subway 5%. RAISING PILLAR 4 ABOVE 1.0 MILLION MEANS LOWERING ONE OF THE OTHER THREE, and that is '
+                    'a decision about the whole household balance sheet - the Ratchadapisek house, the eleven condo '
+                    'units, the two Subway branches - not a decision about US stocks. ⚠️ IT ALSO BELONGS WITH THE TAX '
+                    'ADVISER, WHO STILL HAS FOUR UNSIGNED SELL DECISIONS OUTSTANDING. || 💡 WHAT I WOULD DO INSTEAD, '
+                    'AND IT IS FREE: GROUP 6 POWER AND ELECTRIFICATION HAS 49,270.88 OF BUDGET ALREADY APPROVED AND '
+                    'UNSPENT (77,000 allocated, 27,729.12 invested across CEG, GEV, VRT, ETN and VST). If Salee is '
+                    'persuaded by the power thesis - and the sourced evidence for it is the strongest thing in this '
+                    "week's reading - THE MONEY IS ALREADY THERE AND ALREADY HIS. Deploying approved room needs no new "
+                    'capital, no new pillar decision and no adviser sign-off. THE 17 SEPTEMBER TRANCHES ALREADY START '
+                    'THAT. || DECISION: NO CHANGE TO THE 1,000,000 TARGET. Conviction HIGH. ⚠️ WHAT WOULD CHANGE MY '
+                    'MIND: the 1,000,000 being fully funded AND fully deployed AND the pillar weights being re-argued '
+                    'with the adviser. All three, not one. Revisit at the 10 DECEMBER review, not before.'},
+           {'d': '',
+            'dl': '⚠️ STANDING - re-read before believing any compute-deal total',
+            't': '',
+            'k': 'watch',
+            'a': 'WATCH',
+            'amt': 0,
+            'c': 'standing',
+            'w': '⚠️ HOW TO READ AN AI COMPUTE-DEAL HEADLINE - written 15 Sep after the "517 billion dollars" slide.',
+            'cond': '⚠️⚠️ CONFLICT DISCLOSED: THAT SLIDE IS ABOUT ANTHROPIC AND I AM MADE BY ANTHROPIC. I WILL NOT '
+                    "GIVE A VIEW ON ANTHROPIC'S PROSPECTS. What follows is arithmetic and sourcing only, and it "
+                    'applies to ANY AI compute headline Salee is sent. || FOUR TESTS, IN ORDER. (1) DOES THE TABLE ADD '
+                    'UP TO THE HEADLINE? On that slide the eight dollar figures sum to about 305 BILLION against a 517 '
+                    'BILLION headline, and the capacity column sums to 9.76 GIGAWATTS against a 14.8 GW headline. IT '
+                    "DOES NOT ADD UP BECAUSE THE HEADLINE CAME FROM A LONGER LIST (The Information's) THAT THE TABLE "
+                    'ONLY PARTLY REPRODUCES - including omitting the largest reported deal, a roughly 200bn Google and '
+                    'Broadcom arrangement, while keeping a small superseded Google line. (2) IS IT A COMMITMENT OR A '
+                    'CEILING? Most of these figures are "UP TO" numbers. Of the 517bn, only about 139 BILLION is firm, '
+                    'disclosed by a party and non-cancellable. ⚠️ THE 45 BILLION SpaceX LINE IS TERMINABLE BY EITHER '
+                    "PARTY ON 90 DAYS' NOTICE per the S-1 - that is about 3.75bn of real exposure, not 45bn. (3) IS IT "
+                    'DOUBLE-COUNTED? Chips and buildings are counted separately though the chips go INSIDE the '
+                    "buildings; a 50bn line on that slide is the buyer's OWN capex, not a purchase from a vendor; and "
+                    'one vendor appears twice. (4) WHO SAID IT? About 56% of that total rests on ANONYMOUS SOURCES. || '
+                    '💡 AND THE TWO NUMBERS THAT PUT EVERY SUCH HEADLINE IN PROPORTION, WHICH SALEE SHOULD MEMORISE: '
+                    'AMAZON, ALPHABET, MICROSOFT AND META WILL SPEND ROUGHLY 720 TO 760 BILLION DOLLARS OF CAPEX IN '
+                    '2026 ALONE (Amazon 220bn, Alphabet 195-205bn, Microsoft about 175bn, Meta 130-145bn - all from '
+                    'their own guidance). A 517 BILLION FIGURE SPREAD OVER TEN YEARS IS LESS THAN ONE YEAR OF WHAT '
+                    'THOSE FOUR ARE ALREADY SPENDING. ⚠️ AND ONLY 7,481 MEGAWATTS IS ACTUALLY UNDER CONSTRUCTION IN '
+                    'ALL OF NORTH AMERICA, WITH OVER 80% ALREADY PRE-LEASED (CBRE H1 2026). A single company claiming '
+                    '14.8 GW is claiming twice everything being built on the continent. || THE LESSON FOR US: THESE '
+                    'HEADLINES DESCRIBE DEMAND FOR WHAT WE ALREADY OWN. They are not a reason to buy more, and they '
+                    'are not a reason to raise a budget.'},
            {'d': '',
             'dl': "On Salee's instruction",
             't': 'AAOI',
