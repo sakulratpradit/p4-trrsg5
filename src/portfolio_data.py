@@ -3,19 +3,58 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Sep 15, 2026 (3) - THE THREE-STATEMENT FRAMEWORK, RUN ON OUR OWN BOARD RATHER THAN ADMIRED. ⚠️⚠️ ZERO OF 37 FUNDED '
- "NAMES PASS ALL THREE OF THE SLIDE'S TESTS. THAT IS THE HEADLINE AND IT IS NOT A CRITICISM OF THE BOARD - IT IS A "
- 'DIAGNOSIS OF WHAT KIND OF BOARD IT IS. || 💡 FIRST THE GOOD NEWS SALEE ASKED ABOUT: WE ALREADY CARRY SIX OF THE NINE '
- "METRICS. D/E is in M3 as 'de'. P/E is 'pe'. NET MARGIN is 'pm'. EPS GROWTH is 'epsG'. P/FCF is in M3 as 'pfcf'. FCF "
- "YIELD is derivable from 'fcfB' divided by 'mcapB'. ⚠️ THREE ARE GENUINELY MISSING AND SHOULD BE ADDED: CURRENT "
- 'RATIO, PRICE-TO-BOOK, AND OPERATING MARGIN. Of those, OPERATING MARGIN is the one I would add first - it is the '
- 'cleanest test of whether a business makes money from operating rather than from one-off items, and it is exactly the '
- "gap that let the 'net income' slides of the last month mislead. || THE SCORECARD, 37 FUNDED NAMES. ✅ SAFETY IS A "
- 'STRENGTH: 29 OF 34 PASS D/E UNDER 1, MEDIAN 0.31. The five that fail are VST at 3.29, ORCL 2.32, APP 1.63, APH 1.33 '
- 'and ETN 1.02 - and all five are utilities, acquisition-funded or capital-intensive by nature, which is a reason to '
- 'know rather than a reason to sell. ✅ GROWTH IS A STRENGTH: 31 OF 37 PASS NET MARGIN OVER 10% WITH A MEDIAN OF 27.6%; '
- '28 of 33 pass EPS growth over 10%; median revenue growth 28%. ⚠️⚠️ CASH IS WHERE WE FAIL AND IT IS NOT CLOSE: ONLY 3 '
- 'OF 37 PASS FCF YIELD ABOVE 4%, MEDIAN 1.94%. ONLY 1 OF 31 PASSES P/FCF UNDER 20, MEDIAN 47.3. ONLY 5 OF 34 PASS P/E '
+ASOF = ("Sep 15, 2026 (4) - NVDA VERSUS ORCL: THE WEIGHTS ARE RIGHT, AND THE REAL FINDING IS UNDERNEATH THEM. || ⚠️ SALEE'S "
+ "QUESTION IS ALREADY ANSWERED BY THE BOARD AND HE SHOULD SEE THE NUMBERS: NVDA CARRIES A 95,000 BUDGET AGAINST ORCL'S "
+ '13,000 - SEVEN POINT THREE TO ONE. By money actually spent it is 79,380.28 against 12,228.43 - 6.5 TO 1. NVDA IS '
+ '9.5% OF THE MILLION-DOLLAR PLAN; ORCL IS 1.3%. ⚠️ AND ORCL HAS ONLY 771.57 OF ROOM LEFT, with the position recorded '
+ 'as COMPLETE on 11 September. THERE IS NOTHING LEFT TO ALLOCATE - THE DISCIPLINE ALREADY DID THE WORK MONTHS AGO. '
+ 'YES, KEEP BOTH. YES, THE WEIGHT IS RIGHT. || PRICES UPDATED TO THE 14 SEPTEMBER CLOSES: NVDA 218.95 to 210.96, ORCL '
+ "151.16 to 144.79. NVDA's 420 shares are worth about 88,603 against 79,380.28 - UP ABOUT 11.6%. ⚠️ ORCL's 75 SHARES "
+ 'ARE WORTH ABOUT 10,859 AGAINST 12,228.43 - DOWN ABOUT 11.2%, AND WE ALREADY REALISED MINUS 1,961.73 ON AN EARLIER '
+ "ORCL SALE. ORACLE IS DOWN ABOUT 47% FROM ITS 329.50 HIGH. || THE SLIDE'S NUMBERS ARE TRUE BUT EACH IS TRUE UNDER ONE "
+ "DEFINITION ONLY, AND THAT IS THE LESSON. (1) '175.2% DEBT TO EQUITY' RECONCILES EXACTLY - BUT ONLY AS LONG-TERM DEBT "
+ 'DIVIDED BY EQUITY. On TOTAL debt it is 186.5%; INCLUDING THE 44 BILLION OF OPERATING LEASES IT IS 251.7%. Our own '
+ 'board carries 2.32, which sits between the two and is the more honest figure. ⚠️⚠️ AND THE THING THE SLIDE HIDES BY '
+ "QUOTING AUGUST: ORACLE'S D/E WAS 284% IN MAY AND 175% IN AUGUST BECAUSE THE COMPANY ISSUED 141 MILLION SHARES FOR "
+ '19.9 BILLION DOLLARS IN THE QUARTER. THE RATIO IMPROVED THROUGH DILUTION, NOT THROUGH PAYING DOWN DEBT. Equity rose '
+ "56% in three months on a share sale, not on earnings. (2) '5 BILLION NEGATIVE FREE CASH FLOW' IS THE QUARTER, AND "
+ 'THE SLIDE DOES NOT SAY SO. THE TRAILING TWELVE MONTHS IS MINUS 28.72 BILLION - 5.3 TIMES LARGER. OUR BOARD ALREADY '
+ "CARRIES THE TTM FIGURE CORRECTLY AT MINUS 28.72. (3) 'NVIDIA 14.1%' IS ALSO LONG-TERM-DEBT-ONLY, AND ⚠️ THE SLIDE "
+ "OMITS THAT NVIDIA'S OWN LONG-TERM DEBT QUADRUPLED FROM 7.5 BILLION TO 32.4 BILLION IN SIX MONTHS VIA A 24.9 BILLION "
+ 'ISSUE. NVIDIA IS NOW A LARGE AI-ERA BORROWER TOO. Its D/E was 5.4% in January. || ⚠️⚠️ AND THE SLIDE OMITS THE ONE '
+ 'FACT THAT ACTUALLY MATTERS: S&P DOWNGRADED ORACLE TO BBB- ON 9 JULY 2026 - ONE NOTCH ABOVE JUNK - citing mounting '
+ "debt, sharply negative cash flow and OpenAI concentration risk. MOODY'S HAS IT AT Baa2 WITH A NEGATIVE OUTLOOK. A "
+ 'rating agency saying that is worth more than any ratio on a graphic. Oracle raised 25 BILLION of bonds in February '
+ 'across eight tranches out to 2066, with the long end at 6.85%, and the ten-year priced about 145 basis points over '
+ 'Treasuries against roughly 95 for BBB peers - a 50 BASIS POINT CONCESSION THE MARKET DEMANDED. || 💡 THE MOST '
+ 'STRIKING NUMBER IN THE WHOLE COMPARISON, WHICH THE SLIDE NEVER REACHES: ON FORWARD EARNINGS THE TWO ARE PRICED '
+ 'ALMOST IDENTICALLY - ORACLE 16.99 TIMES AGAINST NVIDIA 17.51 - WHILE NVIDIA GROWS 105.9% AGAINST 29.6%, EARNS A '
+ '62.0% NET MARGIN AGAINST 24.6%, A 75.0% GROSS MARGIN AGAINST ABOUT 60%, AND GENERATES 127.0 BILLION OF FREE CASH '
+ "AGAINST MINUS 28.7 BILLION - A SWING OF 156 BILLION DOLLARS. You are paying the same multiple for both. The slide's "
+ 'conclusion is not too strong; IT IS TOO WEAK. || ⚠️ AND OUR OWN BOARD SAYS IT MORE SHARPLY THAN THE SLIDE DOES: '
+ "ORCL'S RULE OF 40 IS MINUS 18.4, THE WORST OF ANY FUNDED NAME, because the cash burn overwhelms the growth. IT FAILS "
+ "OUR OWN WRITTEN TEST, NOT MERELY THE SLIDE'S. Oracle's gross margin is compressing from about 67% to about 60% year "
+ 'on year - the specific trigger for the post-earnings fade and for price-target cuts at BMO, RBC and Stifel. The 664 '
+ 'BILLION BACKLOG IS REAL AND CONTRACTED, BUT ONLY ABOUT 13% CONVERTS TO REVENUE WITHIN TWELVE MONTHS, and it grew '
+ "just 26bn quarter-on-quarter against 209bn year-on-year. || DECISION: NO CHANGE TO EITHER WEIGHT. KEEP BOTH. NVDA's "
+ 'ladder is unchanged - rung 2 at 200, rung 3 at 180, 15,619.72 of remaining budget, 8,000 decided at the 18 November '
+ 'print. ORCL stays at 771.57 of unspent room and is NOT added to. ⚠️ BUT THE 10 DECEMBER QUESTION IS NOW WRITTEN DOWN '
+ "AND IT IS NOT 'HOW MUCH MORE ORACLE' - IT IS 'WHY DO WE STILL OWN IT'. I am not recommending a sale today; the tax "
+ 'adviser already has four unsigned sells and this board does not add a fifth on a slide. Conviction MEDIUM on keeping '
+ 'ORCL, Conviction HIGH that it must be argued on 10 December rather than drifted into. || PREVIOUS ENTRY: Sep 15, '
+ '2026 (3) - THE THREE-STATEMENT FRAMEWORK, RUN ON OUR OWN BOARD RATHER THAN ADMIRED. ⚠️⚠️ ZERO OF 37 FUNDED NAMES '
+ "PASS ALL THREE OF THE SLIDE'S TESTS. THAT IS THE HEADLINE AND IT IS NOT A CRITICISM OF THE BOARD - IT IS A DIAGNOSIS "
+ 'OF WHAT KIND OF BOARD IT IS. || 💡 FIRST THE GOOD NEWS SALEE ASKED ABOUT: WE ALREADY CARRY SIX OF THE NINE METRICS. '
+ "D/E is in M3 as 'de'. P/E is 'pe'. NET MARGIN is 'pm'. EPS GROWTH is 'epsG'. P/FCF is in M3 as 'pfcf'. FCF YIELD is "
+ "derivable from 'fcfB' divided by 'mcapB'. ⚠️ THREE ARE GENUINELY MISSING AND SHOULD BE ADDED: CURRENT RATIO, "
+ 'PRICE-TO-BOOK, AND OPERATING MARGIN. Of those, OPERATING MARGIN is the one I would add first - it is the cleanest '
+ 'test of whether a business makes money from operating rather than from one-off items, and it is exactly the gap that '
+ "let the 'net income' slides of the last month mislead. || THE SCORECARD, 37 FUNDED NAMES. ✅ SAFETY IS A STRENGTH: 29 "
+ 'OF 34 PASS D/E UNDER 1, MEDIAN 0.31. The five that fail are VST at 3.29, ORCL 2.32, APP 1.63, APH 1.33 and ETN 1.02 '
+ '- and all five are utilities, acquisition-funded or capital-intensive by nature, which is a reason to know rather '
+ 'than a reason to sell. ✅ GROWTH IS A STRENGTH: 31 OF 37 PASS NET MARGIN OVER 10% WITH A MEDIAN OF 27.6%; 28 of 33 '
+ 'pass EPS growth over 10%; median revenue growth 28%. ⚠️⚠️ CASH IS WHERE WE FAIL AND IT IS NOT CLOSE: ONLY 3 OF 37 '
+ 'PASS FCF YIELD ABOVE 4%, MEDIAN 1.94%. ONLY 1 OF 31 PASSES P/FCF UNDER 20, MEDIAN 47.3. ONLY 5 OF 34 PASS P/E '
  'BETWEEN 10 AND 25, MEDIAN 42.3. || 💡💡 AND HERE IS THE SENTENCE THAT MATTERS: WE OWN HIGH-MARGIN, LOW-DEBT COMPANIES '
  'THAT ARE PUTTING EVERY DOLLAR OF CASH BACK INTO THE GROUND. That is precisely what AI infrastructure looks like '
  'during a capex boom, and it is what we chose. ⚠️ IT IS ALSO THE BUBBLE RISK EXPRESSED AS ONE NUMBER: A MEDIAN FREE '
@@ -3046,7 +3085,7 @@ STOCKS = [{'an': 83,
   'epsG': 125.4,
   'ex': 'NASDAQ',
   'fcfB': 127.01,
-  'fpe': 19.21,
+  'fpe': 17.51,
   'fvAvg': 319.48,
   'fvMax': 500,
   'fvMin': 218,
@@ -3055,14 +3094,14 @@ STOCKS = [{'an': 83,
   'hi52': 236.54,
   'jan2': 189.6,
   'lo52': 164.07,
-  'mcapB': 5300.6053,
+  'mcapB': 5107.24,
   'name': 'NVIDIA',
-  'pe': 26.68,
-  'peg': 0.42,
+  'pe': 25.71,
+  'peg': 0.4,
   'pm': 63.66,
-  'price': 218.95,
-  'ps': 16.86,
-  'pxd': '2026-09-11',
+  'price': 210.96,
+  'ps': 16.25,
+  'pxd': '2026-09-14',
   'r40': 125.3,
   'revB': 302.98,
   'revG': 83.4,
@@ -4601,7 +4640,7 @@ STOCKS = [{'an': 83,
   'epsG': 47.7,
   'ex': 'NYSE',
   'fcfB': -28.72,
-  'fpe': 16.6,
+  'fpe': 16.99,
   'fvAvg': 251.85,
   'fvMax': 400,
   'fvMin': 155,
@@ -4610,14 +4649,14 @@ STOCKS = [{'an': 83,
   'hi52': 345.72,
   'jan2': 193.84,
   'lo52': 114.5,
-  'mcapB': 435.4173,
+  'mcapB': 437.81,
   'name': 'Oracle',
-  'pe': 22.29,
-  'peg': 0.57,
+  'pe': 22.7,
+  'peg': 0.55,
   'pm': 26.36,
-  'price': 151.16,
-  'ps': 5.71,
-  'pxd': '2026-09-11',
+  'price': 144.79,
+  'ps': 5.47,
+  'pxd': '2026-09-14',
   'r40': -18.4,
   'revB': 71.78,
   'revG': 21.6,
@@ -7107,8 +7146,8 @@ M3 = {'GOOGL': {'pfcf': 72.57, 'ev': 21.6, 'de': 0.18},
  'MSFT': {'pfcf': 44.03, 'ev': 14.98, 'de': 0.3},
  'META': {'pfcf': 42.15, 'ev': 14.85, 'de': 0.43},
  'AAPL': {'pfcf': 36.93, 'ev': 28.23, 'de': 0.78},
- 'ORCL': {'pfcf': None, 'ev': 16.35, 'de': 2.32},
- 'NVDA': {'pfcf': 38.76, 'ev': 24.93, 'de': 0.15},
+ 'ORCL': {'pfcf': None, 'ev': 15.66, 'de': 2.32},
+ 'NVDA': {'pfcf': 37.35, 'ev': 24.02, 'de': 0.15},
  'TSM': {'pfcf': 53.67, 'ev': 18.5, 'de': 0.15},
  'AVGO': {'pfcf': 43.8, 'ev': 34.3, 'de': 0.6},
  'AMD': {'pfcf': 96.44, 'ev': 120.07, 'de': 0.05},
@@ -8784,6 +8823,43 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'cond': 'Recorded going-concern doubt; board margin and return figures do not reconcile and are '
                     'unverified.',
             'c': 'planned'},
+           {'d': '',
+            'dl': '⚠️ 10 DECEMBER - ORCL is now a sell candidate, not a buy one',
+            't': 'ORCL',
+            'k': 'watch',
+            'a': 'DECIDE',
+            'amt': 0,
+            'c': 'standing',
+            'w': '⚠️⚠️ ORACLE IS THE WORST-SCORING FUNDED NAME ON THIS BOARD AND S&P HAS IT ONE NOTCH ABOVE JUNK. The '
+                 'allocation question Salee asked is already settled - the real question is whether we still want it '
+                 'at all.',
+            'cond': 'RAISED 15 SEP 2026 in answer to Salee asking whether the NVDA/ORCL weights are right. THEY ARE - '
+                    'AND THE MORE IMPORTANT FINDING IS UNDERNEATH. || THE WEIGHTS: NVDA 95,000 of budget against ORCL '
+                    '13,000 - 7.3 TO 1. By money actually spent, 79,380.28 against 12,228.43 - 6.5 TO 1. NVDA is 9.5% '
+                    'of the million-dollar plan; ORCL is 1.3%. ⚠️ AND ORCL HAS ONLY 771.57 OF ROOM LEFT, with the '
+                    'position already recorded as COMPLETE on 11 September. THERE IS NOTHING LEFT TO ALLOCATE. The '
+                    'discipline already did the work. || ⚠️ BUT THE POSITION IS LOSING ON BOTH COUNTS. 75 shares cost '
+                    '12,228.43 and are worth about 10,859 at the 14 Sep close of 144.79 - AN UNREALISED LOSS OF ABOUT '
+                    '1,369, MINUS 11.2%. AND WE ALREADY REALISED MINUS 1,961.73 ON AN EARLIER ORCL SALE. ORACLE IS '
+                    'DOWN ABOUT 47% FROM ITS 329.50 HIGH. || ⚠️⚠️ THE FACTS THAT MATTER, NONE OF WHICH ARE ON THE '
+                    'SLIDE. (1) S&P DOWNGRADED ORACLE TO BBB- ON 9 JULY 2026 - ONE NOTCH ABOVE JUNK - citing mounting '
+                    "debt, negative cash flow and OpenAI concentration. Moody's has it Baa2 NEGATIVE. THAT is the "
+                    'balance-sheet risk, not a ratio. (2) TTM FREE CASH FLOW IS MINUS 28.72 BILLION, not the "5 '
+                    'billion" the slide quotes - the slide used the QUARTER (minus 5.396bn) and did not say so. (3) '
+                    'GROSS MARGIN IS COMPRESSING FROM ABOUT 67% TO ABOUT 60% YEAR ON YEAR - that, not the debt, is '
+                    'what triggered the post-earnings fade and the price-target cuts from BMO, RBC and Stifel. (4) THE '
+                    '664 BILLION BACKLOG IS REAL BUT ONLY ~13% CONVERTS TO REVENUE WITHIN TWELVE MONTHS, and it grew '
+                    'just 26bn quarter-on-quarter against 209bn year-on-year - DECELERATING SHARPLY. || ⚠️ AND OUR OWN '
+                    "BOARD ALREADY SAYS IT: ORCL'S RULE OF 40 IS MINUS 18.4, THE WORST OF ANY FUNDED NAME, because the "
+                    "cash burn overwhelms the growth. It fails our own written test, not just the slide's. || THE 10 "
+                    'DECEMBER QUESTION IS THEREFORE NOT "HOW MUCH MORE ORACLE" BUT "WHY DO WE STILL OWN IT". THE '
+                    'HONEST CASE TO KEEP: 29.6% revenue growth, 24.6% net margin, forward P/E 16.99, a contracted '
+                    '664bn backlog, and a consensus target of about 239. THE CASE TO SELL: Rule of 40 of minus 18.4, '
+                    'one notch above junk, cash burn of 28.7bn a year, margin compression, and a position already '
+                    '11.2% underwater on top of a realised loss. ⚠️ I AM NOT RECOMMENDING A SALE TODAY - the tax '
+                    'adviser already has four unsigned sells and this board does not add a fifth on a slide. DECIDE IT '
+                    'PROPERLY ON 10 DECEMBER. Conviction MEDIUM on keeping; Conviction HIGH that it must be argued '
+                    'rather than drifted.'},
            {'d': '',
             'dl': 'Standing - deployable now',
             't': 'PANW',
