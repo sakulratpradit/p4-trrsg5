@@ -478,6 +478,18 @@
   {
    "points": [
     {
+     "s": "!",
+     "text": "⚠️⚠️ THE 'AMD vs META' SLIDE MISLABELS AMD'S OWN NUMBER. '$6.718B ANNUAL REVENUE, +107%' IS AMD'S DATA CENTER SEGMENT FOR ONE QUARTER - Q2 2026, which AMD's release states as 'up 107% year-over-year'. AMD'S TOTAL Q2 REVENUE WAS 11.536 BILLION UP 50%, AND ACTUAL FY2025 REVENUE WAS 34.6 BILLION UP 34%. THE SLIDE UNDERSTATES AMD'S ANNUAL REVENUE BY ABOUT FIVE TIMES. ⚠️ 'GROSS MARGIN 56%' is the NON-GAAP figure and is unlabelled - GAAP was 54%. ⚠️ 'TOTAL DATA CENTER SALES 14 BILLION' MATCHES NO AMD PERIOD: FY2025 was 16.6bn, first-half 2026 was 12.49bn. ⚠️ AND 'LAUNCHING HELIOS IN THE NEXT 12 MONTHS' IS STALE - AMD LAUNCHED HELIOS ON 23 JULY 2026, calling it 'the world's most powerful AI server rack', with 72 Instinct MI455X GPUs and 18 EPYC 'Venice' CPUs; OpenAI expects it online from Q4 2026."
+    },
+    {
+     "s": "+",
+     "text": "💡 POSITION UPDATE AND IT IS A GOOD ONE: 55 SHARES NOW WORTH 27,137.55 AGAINST A COST OF 13,789.22 - UP 96.8%, the second-best percentage gain on the funded book. Price updated to the 14 Sep close of 493.41 (down 4.40% on the AI-pacing selloff), which reconciles our board to POEMS exactly. || ⚠️ NOT ADDING. 10,210.78 of the 24,000 budget remains and it stays there: AMD carries a FORWARD P/E OF 44.60 AND A TRAILING 125.94 - the most expensive of the eight names on the BofA semiconductor list - AND IT IS THE ONLY ONE OF THOSE EIGHT GUIDING A SLOWDOWN, with Q3 guided to about 13bn against 9.2bn a year earlier, roughly +41% against the +50% just delivered. A 96.8% gain is a reason to hold, not a reason to buy more."
+    },
+    {
+     "s": "0",
+     "text": "⚠️⚠️ THE FACT THAT DESTROYS THE SLIDE'S 'VERSUS' FRAMING, AND IT IS IN AMD'S OWN 8-K OF 23 FEBRUARY 2026: AMD ISSUED META PLATFORMS A WARRANT OVER 160,000,000 AMD SHARES AT AN EXERCISE PRICE OF ONE CENT. Vesting is tied to Meta's GPU purchases - the first tranche on shipment of 1 GIGAWATT of AMD Instinct GPUs, full vesting at 6 GIGAWATTS - with stock-price thresholds 'that escalate to $600 per share for the final tranche'. META GAVE A BINDING COMMITMENT TO PURCHASE THE FIRST GIGAWATT, and is a named Helios adopter. || 💡 SO META IS ONE OF AMD'S LARGEST DISCLOSED CUSTOMERS AND HOLDS A PENNY OPTION ON 160 MILLION OF ITS SHARES. Note the contrast already recorded on this board: AMD gave warrants to OPENAI and META but NOT to Anthropic, where it put cash in instead. ⚠️ THE DILUTION IS REAL AND SHOULD BE WATCHED - 160m shares against a share count that supports an 805bn market cap is material if the 6GW milestones are ever reached."
+    },
+    {
      "s": "-",
      "text": "⚠️ THE ONLY ONE OF THE EIGHT SLIDE NAMES GUIDING A SLOWDOWN, AND THE MOST EXPENSIVE. Q2 2026 (ended 27 Jun) revenue 11.5bn UP 50%, data centre 6.7bn up 107%, GAAP gross margin 54%, net income 2.297bn - all good. ⚠️ BUT THE Q3 GUIDE OF ABOUT 13bn AGAINST 9.2bn A YEAR EARLIER IMPLIES ABOUT PLUS 41% - A NINE-POINT DECELERATION THE COMPANY GUIDED ITSELF. And AMD carries the highest multiples of the eight: FORWARD P/E 46.69 AND TRAILING 131.74, against NVIDIA's 17.51 forward while NVIDIA grows twice as fast. Budget 24,000 with 13,789.22 invested in 55 shares. NOT ADDING ON A SLIDE."
     },
@@ -3545,6 +3557,14 @@
   },
   {
    "points": [
+    {
+     "s": "!",
+     "text": "⚠️⚠️ THE SLIDE'S META FIGURES ARE WRONG IN THREE PLACES. (1) '$59.36B ANNUAL REVENUE, +27%' IS META'S ADVERTISING REVENUE FOR ONE QUARTER - Q2 2026, 59,363m against 46,563m. META'S TOTAL Q2 REVENUE WAS 60.80 BILLION UP 28%, AND ACTUAL FY2025 REVENUE WAS 200.97 BILLION UP 22%. THE SLIDE UNDERSTATES META BY ABOUT 3.4 TIMES. (2) ⚠️ 'PROJECTED CAPEX 2027 ~197 BILLION' HAS NO SOURCE AND META EXPLICITLY REFUSED TO GIVE ONE - CFO SUSAN LI, VERBATIM ON THE Q2 CALL: 'we aren't providing a specific outlook for 2027 CapEx at this time.' META'S ACTUAL FY2026 GUIDANCE IS 130 TO 145 BILLION, narrowed from 125-145. Note ~197bn sits inside ALPHABET'S FY2026 range of 195-205bn - somebody else's number on the wrong company. (3) 'DAILY ACTIVE USERS' IS THE WRONG TERM: Meta reports 'FAMILY DAILY ACTIVE PEOPLE (DAP)', 3.60 billion on average FOR JUNE 2026, up 3% - the figure is right, the label is not."
+    },
+    {
+     "s": "-",
+     "text": "⚠️ THE NUMBER THAT MATTERS MORE THAN ANY OF THE SLIDE'S: META'S Q2 2026 FREE CASH FLOW WAS ONLY 784 MILLION DOLLARS, because 31.08 BILLION OF CAPEX NEARLY CONSUMED 31.86 BILLION OF OPERATING CASH FLOW. Trailing free cash flow is still 40.98bn, but the quarterly run-rate has collapsed toward zero as the build-out accelerates. ⚠️ AND ON THE SLIDE'S OWN QUESTION - 'WHICH HAS MORE MONEY' - META HAS ABOUT SEVEN TIMES AMD'S CASH (90.26bn against 13.11bn) BUT IS NET DEBT BY ABOUT 22 BILLION, WHILE AMD IS NET CASH BY ABOUT 8.8 BILLION. The company with the stronger balance sheet is the chipmaker. || POSITION: 59.5 shares worth 39,603.20 against 39,239.51 - UP 0.9%, essentially flat. Price updated to the 14 Sep close of 665.60, up 2.71% on the day the chips fell. ⚠️ TRANCHE 2 OF 10,760.49 PROCEEDS 9 OCTOBER; rung 2 decided at the Q3 print on 28 OCTOBER. WHAT WOULD CHANGE MY MIND: the 2027 capex number when it finally comes. If Meta guides anywhere near the 197bn this slide invented, free cash flow goes to roughly nothing and the tranche gets re-argued."
+    },
     {
      "s": "0",
      "text": "A circulating buy-under list puts META at 545 against 648.03 - minus 15.9%. Our own plan is Tranche 2 of 10,760.49 on 9 OCTOBER and rung 2 decided at the Q3 print on 28 OCTOBER - dollar amounts on dates, not a price wait. Budget unchanged at 52,000, with 39,239.51 already invested."
