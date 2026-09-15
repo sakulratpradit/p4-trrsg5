@@ -3,154 +3,203 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Sep 15, 2026 (7) - ASML AND HIGH-NA EUV: YES, THE PLAN IS FINE, AND NO CHANGE IS NEEDED. ⚠️ THE THAI ARTICLE IS THE '
- 'BEST-SOURCED THING SALEE HAS SENT ALL WEEK - it cites Reuters of 14 SEPTEMBER and ASML and Intel statements of 8 '
- 'SEPTEMBER, AND I FOUND NOTHING FALSE IN IT. || CONFIRMED: INTEL HAS RUN OVER A MILLION WAFERS THROUGH HIGH-NA AND '
- 'USES IT IN VOLUME MANUFACTURING ON SOME INTEL 18A LAYERS - the first chipmaker to do so. TSMC ADOPTS IT FROM 2030 '
- 'for its highest-end nodes; SAMSUNG AND SK HYNIX TARGET 2028 FOR DRAM. Aperture rises from 0.33 to 0.55; the '
- 'EXE:5200B resolves about 8 nanometres with imaging contrast about 40% above NXE. || ⚠️⚠️ BUT THE ECONOMICS CUT BOTH '
- 'WAYS AND MOST READERS MISS IT: A HIGH-NA MACHINE COSTS ABOUT 400 MILLION DOLLARS AGAINST ABOUT 200 MILLION FOR '
- 'CURRENT EUV. MORE REVENUE PER MACHINE, FEWER MACHINES - a customer buying one High-NA tool may be deferring two NXE '
- 'tools, and ASML has not said which effect wins. ONLY ABOUT TEN HIGH-NA SYSTEMS ARE PLANNED FOR 2027 DELIVERY, to '
- 'Intel, Samsung and SK hynix. This is not yet a volume product. || ⚠️⚠️ AND THE SHARPEST POINT ON THE PAGE, WHICH THE '
- 'ARTICLE GETS RIGHT: HIGH-NA PRINTS A SMALLER AREA PER SHOT THAN NXE. THAT MAKES IT AWKWARD FOR EXACTLY THE CHIPS THE '
- 'AI BOOM NEEDS, because datacentre processors and AI accelerators are BIG dies. It arrives first for smaller dense '
- 'logic and for DRAM, NOT for the largest AI accelerators - which is why ASML and TSMC are developing 12-INCH '
- "PHOTOMASKS with a pilot line in 2031 and production in 2033. ANYONE READING 'HIGH-NA IS HERE' AS 'ASML NOW SELLS THE "
- "AI BOOM A NEW MACHINE' HAS MISSED THE FIELD-SIZE CONSTRAINT. || 💡 THE CAPACITY NUMBER IS WHAT MATTERS TO US: ASML "
- 'CAN BUILD ABOUT 80 EUV MACHINES IN 2027 AND IS STUDYING WHETHER TO EXCEED 110 IN 2028 - about 38% more - after '
- 'saying 2027 capacity is nearly fully booked. ⚠️ REUTERS FRAMES THE 110 AS UNDER EVALUATION, NOT COMMITTED, AND ASML '
- 'HAS NOT CONFIRMED IT. The company-sourced fact is stronger and simpler: CFO ROGER DASSEN SAID ON 15 JULY THAT 2027 '
- 'EUV CAPACITY WAS CLOSE TO FULLY BOOKED WITH SUBSTANTIAL 2028 ORDERS ALREADY SECURED. || ⚠️ WHAT THE ARTICLE DOES NOT '
- 'SAY AND OUR BOARD DOES: ASML IS THE WEAKEST GROWER OF THE FOUR SEMICAP NAMES WE OWN - our revenue growth field reads '
- '9.8% and Rule of 40 reads 38.4, BELOW THE 40 BAR, against LRCX +30%, AMAT +25% and KLAC +15.2%. ⚠️ AND THAT FIELD '
- 'MUST BE CHECKED BEFORE 15 OCTOBER: ASML reported Q2 2026 NET SALES OF 9.3 BILLION EUROS UP 20.8%, which does not sit '
- 'easily with 9.8 - probably trailing-twelve-month versus quarterly or euro versus dollar, but it must be resolved '
- 'before a 7,000 tranche is placed. || PRICE UPDATED: 1,698.30 TO 1,575.15, the 14 September close, MINUS 7.25%. The '
- '13 shares are worth about 20,477 against a cost of 16,394.06 - UP ABOUT 24.9%. Room remaining 24,605.94. || '
- 'DECISION: NO CHANGE. The 15 OCTOBER Q3 print decides rung 1 of 7,000 and the 10,000 held back deliberately stays '
- 'held back. Conviction HIGH. ⚠️ WHAT I WILL READ ON 15 OCTOBER: whether the 2028 capacity expansion is confirmed; '
- 'whether High-NA units shipped are disclosed; whether the Q3 guide of 11.0 to 12.0 billion euros at 55-57% gross '
- 'margin is met; and ⚠️ WHETHER BOOKINGS ARE DISCLOSED AT ALL - there is an unverified report that ASML has STOPPED '
- 'reporting quarterly bookings, and if true that removes the single best forward indicator this name has, which would '
- 'itself be a reason to slow down rather than speed up. || PREVIOUS ENTRY: Sep 15, 2026 (6) - THE WORLD SEMICONDUCTOR '
- 'MAP RUN AGAINST OUR OWN BOARD. ⚠️ WE OWN TEN OF THE FOURTEEN LARGEST SEMICONDUCTOR COMPANIES ON EARTH: NVDA, TSM, '
- 'AVGO, MU, SKHY, AMD, ASML, INTC, ARM AND KLAC. THE FOUR WE DO NOT HOLD ARE SAMSUNG, CXMT, MEDIATEK AND TEXAS '
- 'INSTRUMENTS - AND THREE OF THOSE FOUR ARE NOT US-LISTED, SO THE MANDATE EXCLUDES THEM. TEXAS INSTRUMENTS IS THE ONLY '
- 'US-LISTED NAME ON THE SLIDE WE OWN NOTHING OF. || ⚠️ AND THE SLIDE OMITS TWO COMPANIES WE DO OWN THAT BELONG ON IT: '
- 'LAM RESEARCH AT ABOUT 373 BILLION AND APPLIED MATERIALS AT ABOUT 362 BILLION ARE BOTH LARGER THAN KLA AT 243, ARM AT '
- '269, TEXAS INSTRUMENTS AT 236 AND MEDIATEK AT 222. They should rank roughly eleventh and twelfth. A semiconductor '
- 'ranking that includes KLA but not Lam or Applied has left out two of the three big etch-and-deposition names while '
- 'keeping the metrology one. SanDisk at about 242 is missing on the same basis. || 💡 OUR ACTUAL SEMICONDUCTOR WEIGHT, '
- 'WHICH SALEE SHOULD SEE AS A SINGLE NUMBER: GROUPS 1, 2 AND 3 TOGETHER CARRY 421,000 OF BUDGET AND 238,288.15 OF '
- 'MONEY ACTUALLY INVESTED - 42.1% OF THE PLAN AND 41.6% OF THE MONEY. AI Chips and Chip Design is 203,000 with '
- '135,085.35 invested; Foundry, Equipment and Test is 167,000 with 78,707.96; Memory and Storage is 51,000 with '
- '24,494.84. ⚠️ FOUR DOLLARS IN EVERY TEN ON THIS BOARD IS A SEMICONDUCTOR COMPANY. That is a deliberate bet and it is '
- 'the single largest concentration we carry. || ⚠️⚠️ THE SLIDE WAS RIGHT AND WE WERE WRONG ON SK HYNIX, AND IT IS THE '
- 'FOURTH DATA FAULT ON THAT TICKER. OUR BOARD READ A MARKET CAP OF 1,385 BILLION DOLLARS. THE REAL FIGURE IS ABOUT 880 '
- 'TO 896 BILLION. SK hynix was KRW 1,198.075 TRILLION on 4 September; our 1,385 lands in the KRW-TRILLION series, not '
- 'the dollar one - almost certainly a trillion-won figure stamped with a dollar sign. ⚠️ AND I COULD NOT RESOLVE IT '
- 'CLEANLY: the implied share count reconciles at 7.29bn ADR-equivalents but the price does not, because a Seoul share '
- 'at 1,640,500 won is about 1,205 dollars and a tenth of that is 120, while the ADR trades near 175. SO THE FIELD IS '
- 'BLANKED, NOT REPLACED - the same discipline applied to LITE this morning. Price set to 175.63 from the POEMS '
- 'statement, a primary source. THE SKHY QUARANTINE FROM 10 SEPTEMBER IS NOW FULLY VINDICATED. || ⚠️⚠️ AND THE MOST '
- 'IMPORTANT THING ON THE WHOLE SLIDE IS THE NAME SALEE HAS NEVER HEARD OF: CXMT AT 545 BILLION IS REAL, AND IT MATTERS '
- 'TO OUR MICRON DECISION IN FIFTEEN DAYS. ChangXin Memory Technologies LISTED ON THE SHANGHAI STAR MARKET ON 27 JULY '
- '2026 under ticker 688825, rose 531% on debut to a market capitalisation of RMB 3.66 TRILLION - about 541 BILLION '
- "DOLLARS - AND THE SHANGHAI STOCK EXCHANGE'S OWN RELEASE STATES THAT THIS 'exceeded Intel's market capitalization of "
- "$465.6 billion'. THE SLIDE DID NOT INVENT IT. ⚠️ THE CAVEAT IS THE FLOAT: ONLY ABOUT 10% OF THE SHARES ARE TRADABLE, "
- 'so 545bn is a real quote on a poor-quality price - the same objection this board already applies to SPCX at an 11% '
- 'float. || ⚠️ BUT THE OPERATING FACTS ARE NOT A FLOAT ARTEFACT AND THEY ARE A DIRECT THREAT TO THE MICRON THESIS: '
- 'CXMT REACHED 10% OF GLOBAL DRAM REVENUE SHARE IN Q2 2026, UP FROM UNDER 1% IN 2023 AND 8% IN Q1 2026 - ITS FIRST '
- 'DOUBLE-DIGIT QUARTER. Wafer output went from 100k per month in early 2024 to 200k in Q1 2025 with 300k forecast for '
- '2026. ⚠️ MEMORY EQUITIES SOLD OFF ON THE IPO FILING - SK HYNIX AND SANDISK FELL 7% AND MICRON 5% ON 16 JULY 2026. '
- 'And Morgan Stanley is reported to have written that ChangXin capacity could SURPASS MICRON by 2028 - ⚠️ secondary '
- 'reporting only, the note itself could not be obtained. || 💡 THE PRECISE READ, AND IT IS GOOD NEWS FOR THE 30 '
- "SEPTEMBER TEST: CXMT'S TEN PERCENT IS CONVENTIONAL AND LEGACY DRAM SOLD LARGELY INTO DOMESTIC CHINESE DEMAND, AND IT "
- "DOES NOT YET SHIP HBM. Counterpoint attributes its gain to 'strong domestic conventional DRAM demand', and "
- "conventional DRAM prices ROSE quarter on quarter in Q2 2026 DESPITE that new supply. Micron's own DRAM revenue rose "
- 'FIVEFOLD since Q2 2025 and it now sits within one point of SK hynix for second place. ⚠️ SO CXMT THREATENS THE '
- 'BIT-SHIPMENT AND PRICING LEG OF OUR TEST ON A 2027-2028 HORIZON, NOT THE GROSS-MARGIN LEG ON 30 SEPTEMBER. THE '
- 'WRITTEN TEST STANDS UNCHANGED - buy only if DRAM bits grow double-digit AND gross margin holds at or above 80%. BUT '
- 'A THIRD CONDITION IS NOW WORTH WATCHING AT THE PRINT: WHETHER MICRON MANAGEMENT IS ASKED ABOUT CXMT AND WHAT THEY '
- 'SAY. || 💡 TEXAS INSTRUMENTS, THE ONLY US-LISTED GAP: Q2 2026 revenue 5.46bn UP 23%, gross margin 61.3%, operating '
- 'margin 42.2%, trailing free cash flow 6.53bn, dividend yield 2.15%, forward P/E 27.22. ⚠️ DATA CENTRE ROUGHLY '
- "DOUBLED YEAR ON YEAR and CEO Haviv Ilan named 'industrial, data center and automotive' as the growth drivers, with "
- "management saying TI would 'outgrow the market in 2026 and 2027' in data centre. BUT TI DOES NOT DISCLOSE A "
- 'DATA-CENTRE REVENUE FIGURE, so the doubling is off an undisclosed and probably small base. AT 27 TIMES FORWARD WITH '
- 'A 2.15% YIELD, TXN IS A CYCLICAL-RECOVERY GROWTH STORY WEARING AN INCOME-STOCK REPUTATION - and the yield alone does '
- 'not justify it in a 2x-in-five-years mandate. NOT ADDING IT. Revisit only if it appears on a written screen rather '
- 'than a slide. || ⚠️ ALSO NOTE THE SLIDE IS STALE: it is marked 4 SEPTEMBER and NVIDIA has fallen from the 5.55 '
- 'TRILLION shown to about 5.11 TRILLION - down roughly 8% IN TEN DAYS. Use it for shape, not for numbers. || NOTHING '
- "BOUGHT, NOTHING SOLD, NO BUDGET CHANGED. || PREVIOUS ENTRY: Sep 15, 2026 (5) - THE 'AMD vs META - WHICH TECH GIANT "
- "HAS MORE MONEY' SLIDE. ⚠️⚠️ BOTH OF ITS 'ANNUAL REVENUE' FIGURES ARE QUARTERLY SEGMENT NUMBERS. NEITHER COMPANY'S "
- "ACTUAL ANNUAL REVENUE APPEARS ANYWHERE ON THE SLIDE. || AMD '$6.718B ANNUAL REVENUE, +107%' IS AMD'S DATA CENTER "
- "SEGMENT FOR ONE QUARTER - Q2 2026, which AMD's own release states as 'up 107% year-over-year'. AMD'S TOTAL Q2 "
- 'REVENUE WAS 11.536 BILLION, UP 50%, AND ITS ACTUAL FY2025 REVENUE WAS 34.6 BILLION, UP 34%. THE SLIDE UNDERSTATES '
- "AMD'S ANNUAL REVENUE BY ABOUT FIVE TIMES. || META '$59.36B ANNUAL REVENUE, +27%' IS META'S ADVERTISING REVENUE FOR "
- "ONE QUARTER - Q2 2026, 59,363m against 46,563m, plus 27.5%. META'S TOTAL Q2 REVENUE WAS 60.80 BILLION, UP 28%, AND "
- 'ITS ACTUAL FY2025 REVENUE WAS 200.97 BILLION. THE SLIDE UNDERSTATES META BY ABOUT 3.4 TIMES. ⚠️ SO THE SLIDE '
- "COMPARES AMD'S QUARTERLY CHIP SEGMENT TO META'S QUARTERLY AD SEGMENT AND CALLS BOTH 'ANNUAL REVENUE'. || ⚠️⚠️ AND "
- "THE TAGLINE IS SIMPLY FALSE. 'AMD EARNS MORE TODAY' - META OUT-EARNS AMD ON EVERY MEASURE THERE IS: TRAILING REVENUE "
- '228.25 BILLION AGAINST 41.31 BILLION, AND TRAILING FREE CASH FLOW 40.98 BILLION AGAINST 8.40 BILLION. Meta earns '
- "roughly five times AMD's cash. The slide's own conclusion is inverted. || THE OTHER ERRORS. ⚠️ 'PROJECTED CAPEX 2027 "
- "~197 BILLION' HAS NO SOURCE - META EXPLICITLY DECLINED TO GUIDE 2027. CFO SUSAN LI ON THE Q2 CALL, VERBATIM: 'we "
- "aren't providing a specific outlook for 2027 CapEx at this time.' META'S ACTUAL FY2026 GUIDANCE IS 130 TO 145 "
- "BILLION. ⚠️ NOTE THAT ~197bn SITS INSIDE ALPHABET'S FY2026 RANGE OF 195-205 BILLION - it looks like somebody else's "
- "number on the wrong company, though it is not Alphabet's stated figure either. ⚠️ 'DAILY ACTIVE USERS 3.60B' HAS THE "
- "RIGHT FIGURE AND THE WRONG TERM: Meta reports 'FAMILY DAILY ACTIVE PEOPLE (DAP)', 3.60 billion on average FOR THE "
- "MONTH OF JUNE 2026, up 3%. ⚠️ 'TOTAL DATA CENTER SALES 14 BILLION' MATCHES NO AMD PERIOD - FY2025 was 16.6bn and the "
- "first half of 2026 was 12.49bn. ⚠️ 'LAUNCHING HELIOS IN THE NEXT 12 MONTHS' IS STALE - AMD LAUNCHED HELIOS ON 23 "
- "JULY 2026 and describes it as 'the world's most powerful AI server rack'; OpenAI expects to bring it online from Q4 "
- '2026. || ⚠️⚠️ THE DEEPEST ERROR IS THE FRAMING ITSELF, AND IT IS THE ONLY PART THAT MATTERS TO OUR MONEY: META IS '
- "AMD'S CUSTOMER, NOT ITS RIVAL - AND META HOLDS A WARRANT OVER 160 MILLION AMD SHARES AT ONE CENT EACH. AMD's 8-K of "
- '23 FEBRUARY 2026 discloses a warrant to Meta Platforms for 160,000,000 shares at an exercise price of 0.01 dollars, '
- "vesting against shipment of 1 GIGAWATT and then 6 GIGAWATTS of AMD Instinct GPUs, with stock-price thresholds 'that "
- "escalate to 600 dollars per share for the final tranche'. META GAVE A BINDING COMMITMENT TO BUY THE FIRST GIGAWATT. "
- "Meta is also a named Helios adopter. ⚠️ PUTTING THESE TWO IN A 'VERSUS' GRAPHIC IS LIKE ASKING WHETHER SALEE'S "
- 'SUBWAY BRANCH OR ITS BREAD SUPPLIER IS DOING BETTER - EXCEPT THE SUPPLIER HAS ALSO HANDED THE BRANCH AN OPTION OVER '
- "ITS OWN SHARES. || 💡 AND THE HEADLINE QUESTION - 'WHICH HAS MORE MONEY' - IS ANSWERED BY NONE OF THE FOUR METRICS "
- "SHOWN. ON ACTUAL MONEY THE ANSWER IS THE OPPOSITE OF WHAT THE SLIDE IMPLIES: META HAS ABOUT SEVEN TIMES AMD'S CASH "
- '(90.26bn against 13.11bn) BUT IS NET DEBT BY ABOUT 22 BILLION, WHILE AMD IS NET CASH BY ABOUT 8.8 BILLION. ⚠️ AND '
- "META'S Q2 FREE CASH FLOW WAS ONLY 784 MILLION DOLLARS, because 31.08 BILLION OF CAPEX NEARLY CONSUMED 31.86 BILLION "
- 'OF OPERATING CASH FLOW. THE COMPANY WITH THE STRONGER BALANCE SHEET IS THE CHIPMAKER. || PRICES UPDATED TO THE 14 '
- 'SEPTEMBER CLOSES AND THE BOARD NOW RECONCILES TO POEMS EXACTLY: AMD 516.13 to 493.41 (minus 4.40%), META 648.03 to '
- "665.60 (plus 2.71%) - the same two moves the 'AI capex pawn shop' cartoon showed, which cross-validates both. 💡 "
- "AMD'S 55 SHARES ARE NOW WORTH 27,137.55 AGAINST A COST OF 13,789.22 - UP 96.8%, THE SECOND-BEST PERCENTAGE GAIN ON "
- "THE FUNDED BOOK. META'S 59.5 SHARES ARE WORTH 39,603.20 AGAINST 39,239.51 - UP 0.9%, ESSENTIALLY FLAT. || DECISION: "
- 'NO CHANGE. AMD keeps its 24,000 budget with 10,210.78 of room and is NOT added to on a slide - it remains the most '
- "expensive name of the eight on the BofA list at a 44.6 forward multiple and the only one guiding a slowdown. META'S "
- 'TRANCHE 2 OF 10,760.49 PROCEEDS ON 9 OCTOBER as written, with rung 2 decided at the Q3 print on 28 OCTOBER. '
- 'Conviction HIGH. ⚠️ WHAT WOULD CHANGE MY MIND ON META: the 2027 capex number when it finally comes. If Meta guides '
- '2027 anywhere near the 197 billion this slide invented, free cash flow goes to roughly nothing and the 9 October '
- 'tranche gets re-argued. THAT is the real question the slide stumbled into without meaning to. || PREVIOUS ENTRY: Sep '
- "15, 2026 (4) - NVDA VERSUS ORCL: THE WEIGHTS ARE RIGHT, AND THE REAL FINDING IS UNDERNEATH THEM. || ⚠️ SALEE'S "
- "QUESTION IS ALREADY ANSWERED BY THE BOARD AND HE SHOULD SEE THE NUMBERS: NVDA CARRIES A 95,000 BUDGET AGAINST ORCL'S "
- '13,000 - SEVEN POINT THREE TO ONE. By money actually spent it is 79,380.28 against 12,228.43 - 6.5 TO 1. NVDA IS '
- '9.5% OF THE MILLION-DOLLAR PLAN; ORCL IS 1.3%. ⚠️ AND ORCL HAS ONLY 771.57 OF ROOM LEFT, with the position recorded '
- 'as COMPLETE on 11 September. THERE IS NOTHING LEFT TO ALLOCATE - THE DISCIPLINE ALREADY DID THE WORK MONTHS AGO. '
- 'YES, KEEP BOTH. YES, THE WEIGHT IS RIGHT. || PRICES UPDATED TO THE 14 SEPTEMBER CLOSES: NVDA 218.95 to 210.96, ORCL '
- "151.16 to 144.79. NVDA's 420 shares are worth about 88,603 against 79,380.28 - UP ABOUT 11.6%. ⚠️ ORCL's 75 SHARES "
- 'ARE WORTH ABOUT 10,859 AGAINST 12,228.43 - DOWN ABOUT 11.2%, AND WE ALREADY REALISED MINUS 1,961.73 ON AN EARLIER '
- "ORCL SALE. ORACLE IS DOWN ABOUT 47% FROM ITS 329.50 HIGH. || THE SLIDE'S NUMBERS ARE TRUE BUT EACH IS TRUE UNDER ONE "
- "DEFINITION ONLY, AND THAT IS THE LESSON. (1) '175.2% DEBT TO EQUITY' RECONCILES EXACTLY - BUT ONLY AS LONG-TERM DEBT "
- 'DIVIDED BY EQUITY. On TOTAL debt it is 186.5%; INCLUDING THE 44 BILLION OF OPERATING LEASES IT IS 251.7%. Our own '
- 'board carries 2.32, which sits between the two and is the more honest figure. ⚠️⚠️ AND THE THING THE SLIDE HIDES BY '
- "QUOTING AUGUST: ORACLE'S D/E WAS 284% IN MAY AND 175% IN AUGUST BECAUSE THE COMPANY ISSUED 141 MILLION SHARES FOR "
- '19.9 BILLION DOLLARS IN THE QUARTER. THE RATIO IMPROVED THROUGH DILUTION, NOT THROUGH PAYING DOWN DEBT. Equity rose '
- "56% in three months on a share sale, not on earnings. (2) '5 BILLION NEGATIVE FREE CASH FLOW' IS THE QUARTER, AND "
- 'THE SLIDE DOES NOT SAY SO. THE TRAILING TWELVE MONTHS IS MINUS 28.72 BILLION - 5.3 TIMES LARGER. OUR BOARD ALREADY '
- "CARRIES THE TTM FIGURE CORRECTLY AT MINUS 28.72. (3) 'NVIDIA 14.1%' IS ALSO LONG-TERM-DEBT-ONLY, AND ⚠️ THE SLIDE "
- "OMITS THAT NVIDIA'S OWN LONG-TERM DEBT QUADRUPLED FROM 7.5 BILLION TO 32.4 BILLION IN SIX MONTHS VIA A 24.9 BILLION "
- 'ISSUE. NVIDIA IS NOW A LARGE AI-ERA BORROWER TOO. Its D/E was 5.4% in January. || ⚠️⚠️ AND THE SLIDE OMITS THE ONE '
- 'FACT THAT ACTUALLY MATTERS: S&P DOWNGRADED ORACLE TO BBB- ON 9 JULY 2026 - ONE NOTCH ABOVE JUNK - citing mounting '
- "debt, sharply negative cash flow and OpenAI concentration risk. MOODY'S HAS IT AT Baa2 WITH A NEGATIVE OUTLOOK. A "
- 'rating agency saying that is worth more than any ratio on a graphic. Oracle raised 25 BILLION of bonds in February '
- 'across eight tranches out to 2066, with the long end at 6.85%, and the ten-year priced about 145 basis points over '
- 'Treasuries against roughly 95 for BBB peers - a 50 BASIS POINT CONCESSION THE MARKET DEMANDED. || 💡 THE MOST '
- 'STRIKING NUMBER IN THE WHOLE COMPARISON, WHICH THE SLIDE NEVER REACHES: ON FORWARD EARNINGS THE TWO ARE PRICED '
- 'ALMOST IDENTICALLY - ORACLE 16.99 TIMES AGAINST NVIDIA 17.51 - WHILE NVIDIA GROWS 105.9% AGAINST 29.6%, EARNS A '
- '62.0% NET MARGIN AGAINST 24.6%, A 75.0% GROSS MARGIN AGAINST ABOUT 60%, AND GENERATES 127.0 BILLION OF FREE CASH '
+ASOF = ('Sep 15, 2026 (8) - THE MICRON TAIWAN UNION, FIFTEEN DAYS BEFORE THE DECISION. ⚠️⚠️ FIRST I MUST CORRECT MY OWN '
+ 'BOARD. ON THE 30 SEPTEMBER ROW I WROTE THAT ABOUT 80% OF THE UNION BACKED A STRIKE WITH A VOTE POSSIBLE IN '
+ 'SEPTEMBER. THAT WAS WRONG IN AN IMPORTANT WAY: THE 80% WAS AN INTERNAL ONLINE SURVEY OF PARTICIPATING MEMBERS IN '
+ 'AUGUST, NOT A STRIKE VOTE. NO STRIKE VOTE HAS BEEN HELD, NO STRIKE HAS BEEN CALLED, AND NO PRODUCTION HAS STOPPED. '
+ 'The row is corrected in place. || THE DEMAND IS REAL AND THE THAI HEADLINE IS RIGHT IN SUBSTANCE WITH ONE '
+ "CORRECTION: IT IS 15% OF OPERATING PROFIT - 營業利益 - NOT NET PROFIT. The Taiwan Micron Workers' Union under chair Lin "
+ 'Zhe-rui wants that as a PERMANENT QUARTERLY profit-share replacing the current Incentive Pay Plan, plus a one-off of '
+ "about 83 months' salary for FY2026. ⚠️ THE 'EMPLOYEES WORLDWIDE' PART RESTS ONLY ON THE REUTERS ENGLISH WIRE - every "
+ 'Chinese-language primary source describes TAIWAN employees, and nobody resolves whether the 15% is against Micron '
+ 'GLOBAL or Micron TAIWAN operating profit. That ambiguity is worth billions. || MICRON HAS ALREADY MOVED HARD: on 11 '
+ 'SEPTEMBER it announced NT$1,000,000 per employee - about 31,650 dollars - plus a performance bonus up to 500% of '
+ 'target plus stock, which it called the largest rewards package in company history, worth 35 to 68 months of pay for '
+ "direct labour. ⚠️ THE UNION REJECTED IT AS 公關話術 - PR SPIN - saying 'a one-off bonus cannot replace institutional "
+ "reform'. Micron's reply: 'We will continue listening to our team members' perspectives and remain committed to "
+ "engaging in the mediation process in good faith.' || 💡💡 THE GATES ARE BEFORE THE PRINT AND THAT IS THE MOST USEFUL "
+ "FACT HERE: MEDIATION ON 18 SEPTEMBER AT TAICHUNG AND 21 SEPTEMBER AT TAOYUAN. Chair Lin, verbatim: 'If there is no "
+ 'concrete proposal on September 18 and 21 we will declare the negotiations have broken down and move towards a strike '
+ "vote.' WE WILL KNOW NINE DAYS BEFORE WE HAVE TO DECIDE. || ⚠️ AND TAIWAN LAW SETS A HIGH BAR THAT NOBODY REPORTS. "
+ 'Article 53 of the Act for Settlement of Labor-Management Disputes requires mediation to FAIL before any industrial '
+ 'action; Article 54 requires approval by NO LESS THAN ONE HALF OF ALL MEMBERS by direct secret ballot - MORE THAN '
+ '5,000 OF ABOUT 10,000, not a majority of those who happen to vote. NO TAIWAN SEMICONDUCTOR COMPANY HAS EVER '
+ 'COMPLETED A STRIKE. || ⚠️ TAIWAN MATTERS ENORMOUSLY TO MICRON - about 15,000 of 60,000+ employees, Taichung is its '
+ "LARGEST DRAM FAB AND MAKES HBM, and Premier Cho Jung-tai calls Taiwan 'the largest memory manufacturing hub for "
+ "Micron in the world'. ⚠️ BUT MICRON DOES NOT DISCLOSE TAIWAN'S SHARE OF BIT OUTPUT and I could not source it. THE "
+ "BEST PROXY IS MICRON'S OWN GUIDANCE AFTER THE APRIL 2024 EARTHQUAKE: A 4-6% QUARTERLY DRAM SUPPLY IMPACT FROM A "
+ 'PARTIAL DISRUPTION. || 💡💡 THE CONCLUSION, AND IT REFRAMES THE WHOLE QUESTION: THIS IS A MARGIN STORY, NOT A SUPPLY '
+ 'STORY. 15% of operating profit is ABOUT 5.0 BILLION DOLLARS A QUARTER at the FQ3 run-rate of 33.318bn - MY '
+ 'ARITHMETIC, NOT A COMPANY FIGURE. Even settling at the Korean level is 3.3 TO 3.5 BILLION A QUARTER, PERMANENTLY, '
+ 'AND IT IS NOT IN CONSENSUS MODELS. Samsung settled at 10.5% of divisional operating profit on 27 MAY; SK HYNIX AT '
+ '10% ON 20 AUGUST. ⚠️ IN ALL THREE RECENT KOREAN EPISODES THE CREDIBLE THREAT PRODUCED A SETTLEMENT, NOT LOST OUTPUT '
+ '- AND SAMSUNG SHARES ROSE 6% THE DAY ITS STRIKE WAS AVERTED. Even the worst-case pre-strike estimate for Samsung was '
+ 'only 3-4% of DRAM output. || DECISION: NO CHANGE TO THE 30 SEPTEMBER PLAN. THE 4,000 TRANCHE AND THE WRITTEN TEST '
+ 'STAND - buy only if DRAM bits grow double-digit AND gross margin holds at or above 80%. ⚠️ BUT THE TEST GAINS A '
+ 'FOURTH ITEM: WHAT DOES MICRON SAY THE TAIWAN SETTLEMENT WILL COST, AND IS IT IN THE FY2027 MARGIN GUIDE? An 86% '
+ 'gross margin that quietly becomes 80% because of a permanent profit-share is a different company from the one in the '
+ 'consensus model. Conviction HIGH on proceeding as written. || PRICE UPDATED 975.26 TO 927.31, the 15 September quote '
+ '- DOWN 4.9%. The 35.45 shares are worth about 32,873 against 22,581.58 - UP ABOUT 45.6%. ⚠️ NOTE A SOURCE CONFLICT: '
+ 'stockanalysis showed 927.31 timestamped 15 Sep 11:49 EDT while Morningstar showed 864.01 undated. I took the '
+ "timestamped one and record the conflict. || ⚠️ ON THE 'HIDDEN STOCKS' SLIDE - AEIS, AAON, DY AND HPS.A - NONE IS ON "
+ 'OUR BOARD AND HAMMOND POWER IS TORONTO-LISTED SO IT CANNOT BE. I have verified none of its figures and will not add '
+ 'a name on a slide. 💡 BUT IT POINTS AT A REAL GAP: WE OWN THE TRANSFORM AND RACK-POWER LINKS THROUGH ETN AND VRT AND '
+ 'GENERATION THROUGH CEG, GEV AND VST - BUT NOTHING IN COOLING AND NOTHING IN FIBRE. And Group 6 has 49,270.88 UNSPENT '
+ 'while five of its six names fail our own Rule of 40 - only VRT at 50.0 passes, against PWR 33.25, GEV 29.4, ETN '
+ '28.7, CEG 27.2 and VST 16.7. THAT IS EXACTLY WHERE A NEW IDEA SHOULD BE TESTED. Added to 10 DECEMBER with verified '
+ 'filings required. || ⚠️ ON THE CHINA EXIT-BAN SLIDE: I HAVE NOT RESEARCHED IT AND I WILL NOT GUESS. What I can say '
+ 'structurally is that it is a PILLAR 2 QUESTION FIRST - Chinese buyers have been a visible part of Bangkok condo '
+ "demand, and anything restricting wealthy Chinese from leaving reaches Salee's eleven units before it reaches "
+ 'anything in New York. FOR PILLAR 4 THE LINK IS INDIRECT AND MOSTLY RUNS THE OTHER WAY: restricting technical talent '
+ 'from leaving China HELPS Chinese firms like CXMT and hurts nobody we own directly. Ask me to research it properly '
+ 'and I will. || PREVIOUS ENTRY: Sep 15, 2026 (7) - ASML AND HIGH-NA EUV: YES, THE PLAN IS FINE, AND NO CHANGE IS '
+ 'NEEDED. ⚠️ THE THAI ARTICLE IS THE BEST-SOURCED THING SALEE HAS SENT ALL WEEK - it cites Reuters of 14 SEPTEMBER and '
+ 'ASML and Intel statements of 8 SEPTEMBER, AND I FOUND NOTHING FALSE IN IT. || CONFIRMED: INTEL HAS RUN OVER A '
+ 'MILLION WAFERS THROUGH HIGH-NA AND USES IT IN VOLUME MANUFACTURING ON SOME INTEL 18A LAYERS - the first chipmaker to '
+ 'do so. TSMC ADOPTS IT FROM 2030 for its highest-end nodes; SAMSUNG AND SK HYNIX TARGET 2028 FOR DRAM. Aperture rises '
+ 'from 0.33 to 0.55; the EXE:5200B resolves about 8 nanometres with imaging contrast about 40% above NXE. || ⚠️⚠️ BUT '
+ 'THE ECONOMICS CUT BOTH WAYS AND MOST READERS MISS IT: A HIGH-NA MACHINE COSTS ABOUT 400 MILLION DOLLARS AGAINST '
+ 'ABOUT 200 MILLION FOR CURRENT EUV. MORE REVENUE PER MACHINE, FEWER MACHINES - a customer buying one High-NA tool may '
+ 'be deferring two NXE tools, and ASML has not said which effect wins. ONLY ABOUT TEN HIGH-NA SYSTEMS ARE PLANNED FOR '
+ '2027 DELIVERY, to Intel, Samsung and SK hynix. This is not yet a volume product. || ⚠️⚠️ AND THE SHARPEST POINT ON '
+ 'THE PAGE, WHICH THE ARTICLE GETS RIGHT: HIGH-NA PRINTS A SMALLER AREA PER SHOT THAN NXE. THAT MAKES IT AWKWARD FOR '
+ 'EXACTLY THE CHIPS THE AI BOOM NEEDS, because datacentre processors and AI accelerators are BIG dies. It arrives '
+ 'first for smaller dense logic and for DRAM, NOT for the largest AI accelerators - which is why ASML and TSMC are '
+ "developing 12-INCH PHOTOMASKS with a pilot line in 2031 and production in 2033. ANYONE READING 'HIGH-NA IS HERE' AS "
+ "'ASML NOW SELLS THE AI BOOM A NEW MACHINE' HAS MISSED THE FIELD-SIZE CONSTRAINT. || 💡 THE CAPACITY NUMBER IS WHAT "
+ 'MATTERS TO US: ASML CAN BUILD ABOUT 80 EUV MACHINES IN 2027 AND IS STUDYING WHETHER TO EXCEED 110 IN 2028 - about '
+ '38% more - after saying 2027 capacity is nearly fully booked. ⚠️ REUTERS FRAMES THE 110 AS UNDER EVALUATION, NOT '
+ 'COMMITTED, AND ASML HAS NOT CONFIRMED IT. The company-sourced fact is stronger and simpler: CFO ROGER DASSEN SAID ON '
+ '15 JULY THAT 2027 EUV CAPACITY WAS CLOSE TO FULLY BOOKED WITH SUBSTANTIAL 2028 ORDERS ALREADY SECURED. || ⚠️ WHAT '
+ 'THE ARTICLE DOES NOT SAY AND OUR BOARD DOES: ASML IS THE WEAKEST GROWER OF THE FOUR SEMICAP NAMES WE OWN - our '
+ 'revenue growth field reads 9.8% and Rule of 40 reads 38.4, BELOW THE 40 BAR, against LRCX +30%, AMAT +25% and KLAC '
+ '+15.2%. ⚠️ AND THAT FIELD MUST BE CHECKED BEFORE 15 OCTOBER: ASML reported Q2 2026 NET SALES OF 9.3 BILLION EUROS UP '
+ '20.8%, which does not sit easily with 9.8 - probably trailing-twelve-month versus quarterly or euro versus dollar, '
+ 'but it must be resolved before a 7,000 tranche is placed. || PRICE UPDATED: 1,698.30 TO 1,575.15, the 14 September '
+ 'close, MINUS 7.25%. The 13 shares are worth about 20,477 against a cost of 16,394.06 - UP ABOUT 24.9%. Room '
+ 'remaining 24,605.94. || DECISION: NO CHANGE. The 15 OCTOBER Q3 print decides rung 1 of 7,000 and the 10,000 held '
+ 'back deliberately stays held back. Conviction HIGH. ⚠️ WHAT I WILL READ ON 15 OCTOBER: whether the 2028 capacity '
+ 'expansion is confirmed; whether High-NA units shipped are disclosed; whether the Q3 guide of 11.0 to 12.0 billion '
+ 'euros at 55-57% gross margin is met; and ⚠️ WHETHER BOOKINGS ARE DISCLOSED AT ALL - there is an unverified report '
+ 'that ASML has STOPPED reporting quarterly bookings, and if true that removes the single best forward indicator this '
+ 'name has, which would itself be a reason to slow down rather than speed up. || PREVIOUS ENTRY: Sep 15, 2026 (6) - '
+ 'THE WORLD SEMICONDUCTOR MAP RUN AGAINST OUR OWN BOARD. ⚠️ WE OWN TEN OF THE FOURTEEN LARGEST SEMICONDUCTOR COMPANIES '
+ 'ON EARTH: NVDA, TSM, AVGO, MU, SKHY, AMD, ASML, INTC, ARM AND KLAC. THE FOUR WE DO NOT HOLD ARE SAMSUNG, CXMT, '
+ 'MEDIATEK AND TEXAS INSTRUMENTS - AND THREE OF THOSE FOUR ARE NOT US-LISTED, SO THE MANDATE EXCLUDES THEM. TEXAS '
+ 'INSTRUMENTS IS THE ONLY US-LISTED NAME ON THE SLIDE WE OWN NOTHING OF. || ⚠️ AND THE SLIDE OMITS TWO COMPANIES WE DO '
+ 'OWN THAT BELONG ON IT: LAM RESEARCH AT ABOUT 373 BILLION AND APPLIED MATERIALS AT ABOUT 362 BILLION ARE BOTH LARGER '
+ 'THAN KLA AT 243, ARM AT 269, TEXAS INSTRUMENTS AT 236 AND MEDIATEK AT 222. They should rank roughly eleventh and '
+ 'twelfth. A semiconductor ranking that includes KLA but not Lam or Applied has left out two of the three big '
+ 'etch-and-deposition names while keeping the metrology one. SanDisk at about 242 is missing on the same basis. || 💡 '
+ 'OUR ACTUAL SEMICONDUCTOR WEIGHT, WHICH SALEE SHOULD SEE AS A SINGLE NUMBER: GROUPS 1, 2 AND 3 TOGETHER CARRY 421,000 '
+ 'OF BUDGET AND 238,288.15 OF MONEY ACTUALLY INVESTED - 42.1% OF THE PLAN AND 41.6% OF THE MONEY. AI Chips and Chip '
+ 'Design is 203,000 with 135,085.35 invested; Foundry, Equipment and Test is 167,000 with 78,707.96; Memory and '
+ 'Storage is 51,000 with 24,494.84. ⚠️ FOUR DOLLARS IN EVERY TEN ON THIS BOARD IS A SEMICONDUCTOR COMPANY. That is a '
+ 'deliberate bet and it is the single largest concentration we carry. || ⚠️⚠️ THE SLIDE WAS RIGHT AND WE WERE WRONG ON '
+ 'SK HYNIX, AND IT IS THE FOURTH DATA FAULT ON THAT TICKER. OUR BOARD READ A MARKET CAP OF 1,385 BILLION DOLLARS. THE '
+ 'REAL FIGURE IS ABOUT 880 TO 896 BILLION. SK hynix was KRW 1,198.075 TRILLION on 4 September; our 1,385 lands in the '
+ 'KRW-TRILLION series, not the dollar one - almost certainly a trillion-won figure stamped with a dollar sign. ⚠️ AND '
+ 'I COULD NOT RESOLVE IT CLEANLY: the implied share count reconciles at 7.29bn ADR-equivalents but the price does not, '
+ 'because a Seoul share at 1,640,500 won is about 1,205 dollars and a tenth of that is 120, while the ADR trades near '
+ '175. SO THE FIELD IS BLANKED, NOT REPLACED - the same discipline applied to LITE this morning. Price set to 175.63 '
+ 'from the POEMS statement, a primary source. THE SKHY QUARANTINE FROM 10 SEPTEMBER IS NOW FULLY VINDICATED. || ⚠️⚠️ '
+ 'AND THE MOST IMPORTANT THING ON THE WHOLE SLIDE IS THE NAME SALEE HAS NEVER HEARD OF: CXMT AT 545 BILLION IS REAL, '
+ 'AND IT MATTERS TO OUR MICRON DECISION IN FIFTEEN DAYS. ChangXin Memory Technologies LISTED ON THE SHANGHAI STAR '
+ 'MARKET ON 27 JULY 2026 under ticker 688825, rose 531% on debut to a market capitalisation of RMB 3.66 TRILLION - '
+ "about 541 BILLION DOLLARS - AND THE SHANGHAI STOCK EXCHANGE'S OWN RELEASE STATES THAT THIS 'exceeded Intel's market "
+ "capitalization of $465.6 billion'. THE SLIDE DID NOT INVENT IT. ⚠️ THE CAVEAT IS THE FLOAT: ONLY ABOUT 10% OF THE "
+ 'SHARES ARE TRADABLE, so 545bn is a real quote on a poor-quality price - the same objection this board already '
+ 'applies to SPCX at an 11% float. || ⚠️ BUT THE OPERATING FACTS ARE NOT A FLOAT ARTEFACT AND THEY ARE A DIRECT THREAT '
+ 'TO THE MICRON THESIS: CXMT REACHED 10% OF GLOBAL DRAM REVENUE SHARE IN Q2 2026, UP FROM UNDER 1% IN 2023 AND 8% IN '
+ 'Q1 2026 - ITS FIRST DOUBLE-DIGIT QUARTER. Wafer output went from 100k per month in early 2024 to 200k in Q1 2025 '
+ 'with 300k forecast for 2026. ⚠️ MEMORY EQUITIES SOLD OFF ON THE IPO FILING - SK HYNIX AND SANDISK FELL 7% AND MICRON '
+ '5% ON 16 JULY 2026. And Morgan Stanley is reported to have written that ChangXin capacity could SURPASS MICRON by '
+ '2028 - ⚠️ secondary reporting only, the note itself could not be obtained. || 💡 THE PRECISE READ, AND IT IS GOOD '
+ "NEWS FOR THE 30 SEPTEMBER TEST: CXMT'S TEN PERCENT IS CONVENTIONAL AND LEGACY DRAM SOLD LARGELY INTO DOMESTIC "
+ "CHINESE DEMAND, AND IT DOES NOT YET SHIP HBM. Counterpoint attributes its gain to 'strong domestic conventional DRAM "
+ "demand', and conventional DRAM prices ROSE quarter on quarter in Q2 2026 DESPITE that new supply. Micron's own DRAM "
+ 'revenue rose FIVEFOLD since Q2 2025 and it now sits within one point of SK hynix for second place. ⚠️ SO CXMT '
+ 'THREATENS THE BIT-SHIPMENT AND PRICING LEG OF OUR TEST ON A 2027-2028 HORIZON, NOT THE GROSS-MARGIN LEG ON 30 '
+ 'SEPTEMBER. THE WRITTEN TEST STANDS UNCHANGED - buy only if DRAM bits grow double-digit AND gross margin holds at or '
+ 'above 80%. BUT A THIRD CONDITION IS NOW WORTH WATCHING AT THE PRINT: WHETHER MICRON MANAGEMENT IS ASKED ABOUT CXMT '
+ 'AND WHAT THEY SAY. || 💡 TEXAS INSTRUMENTS, THE ONLY US-LISTED GAP: Q2 2026 revenue 5.46bn UP 23%, gross margin '
+ '61.3%, operating margin 42.2%, trailing free cash flow 6.53bn, dividend yield 2.15%, forward P/E 27.22. ⚠️ DATA '
+ "CENTRE ROUGHLY DOUBLED YEAR ON YEAR and CEO Haviv Ilan named 'industrial, data center and automotive' as the growth "
+ "drivers, with management saying TI would 'outgrow the market in 2026 and 2027' in data centre. BUT TI DOES NOT "
+ 'DISCLOSE A DATA-CENTRE REVENUE FIGURE, so the doubling is off an undisclosed and probably small base. AT 27 TIMES '
+ 'FORWARD WITH A 2.15% YIELD, TXN IS A CYCLICAL-RECOVERY GROWTH STORY WEARING AN INCOME-STOCK REPUTATION - and the '
+ 'yield alone does not justify it in a 2x-in-five-years mandate. NOT ADDING IT. Revisit only if it appears on a '
+ 'written screen rather than a slide. || ⚠️ ALSO NOTE THE SLIDE IS STALE: it is marked 4 SEPTEMBER and NVIDIA has '
+ 'fallen from the 5.55 TRILLION shown to about 5.11 TRILLION - down roughly 8% IN TEN DAYS. Use it for shape, not for '
+ "numbers. || NOTHING BOUGHT, NOTHING SOLD, NO BUDGET CHANGED. || PREVIOUS ENTRY: Sep 15, 2026 (5) - THE 'AMD vs META "
+ "- WHICH TECH GIANT HAS MORE MONEY' SLIDE. ⚠️⚠️ BOTH OF ITS 'ANNUAL REVENUE' FIGURES ARE QUARTERLY SEGMENT NUMBERS. "
+ "NEITHER COMPANY'S ACTUAL ANNUAL REVENUE APPEARS ANYWHERE ON THE SLIDE. || AMD '$6.718B ANNUAL REVENUE, +107%' IS "
+ "AMD'S DATA CENTER SEGMENT FOR ONE QUARTER - Q2 2026, which AMD's own release states as 'up 107% year-over-year'. "
+ "AMD'S TOTAL Q2 REVENUE WAS 11.536 BILLION, UP 50%, AND ITS ACTUAL FY2025 REVENUE WAS 34.6 BILLION, UP 34%. THE SLIDE "
+ "UNDERSTATES AMD'S ANNUAL REVENUE BY ABOUT FIVE TIMES. || META '$59.36B ANNUAL REVENUE, +27%' IS META'S ADVERTISING "
+ "REVENUE FOR ONE QUARTER - Q2 2026, 59,363m against 46,563m, plus 27.5%. META'S TOTAL Q2 REVENUE WAS 60.80 BILLION, "
+ 'UP 28%, AND ITS ACTUAL FY2025 REVENUE WAS 200.97 BILLION. THE SLIDE UNDERSTATES META BY ABOUT 3.4 TIMES. ⚠️ SO THE '
+ "SLIDE COMPARES AMD'S QUARTERLY CHIP SEGMENT TO META'S QUARTERLY AD SEGMENT AND CALLS BOTH 'ANNUAL REVENUE'. || ⚠️⚠️ "
+ "AND THE TAGLINE IS SIMPLY FALSE. 'AMD EARNS MORE TODAY' - META OUT-EARNS AMD ON EVERY MEASURE THERE IS: TRAILING "
+ 'REVENUE 228.25 BILLION AGAINST 41.31 BILLION, AND TRAILING FREE CASH FLOW 40.98 BILLION AGAINST 8.40 BILLION. Meta '
+ "earns roughly five times AMD's cash. The slide's own conclusion is inverted. || THE OTHER ERRORS. ⚠️ 'PROJECTED "
+ "CAPEX 2027 ~197 BILLION' HAS NO SOURCE - META EXPLICITLY DECLINED TO GUIDE 2027. CFO SUSAN LI ON THE Q2 CALL, "
+ "VERBATIM: 'we aren't providing a specific outlook for 2027 CapEx at this time.' META'S ACTUAL FY2026 GUIDANCE IS 130 "
+ "TO 145 BILLION. ⚠️ NOTE THAT ~197bn SITS INSIDE ALPHABET'S FY2026 RANGE OF 195-205 BILLION - it looks like somebody "
+ "else's number on the wrong company, though it is not Alphabet's stated figure either. ⚠️ 'DAILY ACTIVE USERS 3.60B' "
+ "HAS THE RIGHT FIGURE AND THE WRONG TERM: Meta reports 'FAMILY DAILY ACTIVE PEOPLE (DAP)', 3.60 billion on average "
+ "FOR THE MONTH OF JUNE 2026, up 3%. ⚠️ 'TOTAL DATA CENTER SALES 14 BILLION' MATCHES NO AMD PERIOD - FY2025 was 16.6bn "
+ "and the first half of 2026 was 12.49bn. ⚠️ 'LAUNCHING HELIOS IN THE NEXT 12 MONTHS' IS STALE - AMD LAUNCHED HELIOS "
+ "ON 23 JULY 2026 and describes it as 'the world's most powerful AI server rack'; OpenAI expects to bring it online "
+ 'from Q4 2026. || ⚠️⚠️ THE DEEPEST ERROR IS THE FRAMING ITSELF, AND IT IS THE ONLY PART THAT MATTERS TO OUR MONEY: '
+ "META IS AMD'S CUSTOMER, NOT ITS RIVAL - AND META HOLDS A WARRANT OVER 160 MILLION AMD SHARES AT ONE CENT EACH. AMD's "
+ '8-K of 23 FEBRUARY 2026 discloses a warrant to Meta Platforms for 160,000,000 shares at an exercise price of 0.01 '
+ 'dollars, vesting against shipment of 1 GIGAWATT and then 6 GIGAWATTS of AMD Instinct GPUs, with stock-price '
+ "thresholds 'that escalate to 600 dollars per share for the final tranche'. META GAVE A BINDING COMMITMENT TO BUY THE "
+ "FIRST GIGAWATT. Meta is also a named Helios adopter. ⚠️ PUTTING THESE TWO IN A 'VERSUS' GRAPHIC IS LIKE ASKING "
+ "WHETHER SALEE'S SUBWAY BRANCH OR ITS BREAD SUPPLIER IS DOING BETTER - EXCEPT THE SUPPLIER HAS ALSO HANDED THE BRANCH "
+ "AN OPTION OVER ITS OWN SHARES. || 💡 AND THE HEADLINE QUESTION - 'WHICH HAS MORE MONEY' - IS ANSWERED BY NONE OF THE "
+ 'FOUR METRICS SHOWN. ON ACTUAL MONEY THE ANSWER IS THE OPPOSITE OF WHAT THE SLIDE IMPLIES: META HAS ABOUT SEVEN TIMES '
+ "AMD'S CASH (90.26bn against 13.11bn) BUT IS NET DEBT BY ABOUT 22 BILLION, WHILE AMD IS NET CASH BY ABOUT 8.8 "
+ "BILLION. ⚠️ AND META'S Q2 FREE CASH FLOW WAS ONLY 784 MILLION DOLLARS, because 31.08 BILLION OF CAPEX NEARLY "
+ 'CONSUMED 31.86 BILLION OF OPERATING CASH FLOW. THE COMPANY WITH THE STRONGER BALANCE SHEET IS THE CHIPMAKER. || '
+ 'PRICES UPDATED TO THE 14 SEPTEMBER CLOSES AND THE BOARD NOW RECONCILES TO POEMS EXACTLY: AMD 516.13 to 493.41 (minus '
+ "4.40%), META 648.03 to 665.60 (plus 2.71%) - the same two moves the 'AI capex pawn shop' cartoon showed, which "
+ "cross-validates both. 💡 AMD'S 55 SHARES ARE NOW WORTH 27,137.55 AGAINST A COST OF 13,789.22 - UP 96.8%, THE "
+ "SECOND-BEST PERCENTAGE GAIN ON THE FUNDED BOOK. META'S 59.5 SHARES ARE WORTH 39,603.20 AGAINST 39,239.51 - UP 0.9%, "
+ 'ESSENTIALLY FLAT. || DECISION: NO CHANGE. AMD keeps its 24,000 budget with 10,210.78 of room and is NOT added to on '
+ 'a slide - it remains the most expensive name of the eight on the BofA list at a 44.6 forward multiple and the only '
+ "one guiding a slowdown. META'S TRANCHE 2 OF 10,760.49 PROCEEDS ON 9 OCTOBER as written, with rung 2 decided at the "
+ 'Q3 print on 28 OCTOBER. Conviction HIGH. ⚠️ WHAT WOULD CHANGE MY MIND ON META: the 2027 capex number when it finally '
+ 'comes. If Meta guides 2027 anywhere near the 197 billion this slide invented, free cash flow goes to roughly nothing '
+ 'and the 9 October tranche gets re-argued. THAT is the real question the slide stumbled into without meaning to. || '
+ 'PREVIOUS ENTRY: Sep 15, 2026 (4) - NVDA VERSUS ORCL: THE WEIGHTS ARE RIGHT, AND THE REAL FINDING IS UNDERNEATH THEM. '
+ "|| ⚠️ SALEE'S QUESTION IS ALREADY ANSWERED BY THE BOARD AND HE SHOULD SEE THE NUMBERS: NVDA CARRIES A 95,000 BUDGET "
+ "AGAINST ORCL'S 13,000 - SEVEN POINT THREE TO ONE. By money actually spent it is 79,380.28 against 12,228.43 - 6.5 TO "
+ '1. NVDA IS 9.5% OF THE MILLION-DOLLAR PLAN; ORCL IS 1.3%. ⚠️ AND ORCL HAS ONLY 771.57 OF ROOM LEFT, with the '
+ 'position recorded as COMPLETE on 11 September. THERE IS NOTHING LEFT TO ALLOCATE - THE DISCIPLINE ALREADY DID THE '
+ 'WORK MONTHS AGO. YES, KEEP BOTH. YES, THE WEIGHT IS RIGHT. || PRICES UPDATED TO THE 14 SEPTEMBER CLOSES: NVDA 218.95 '
+ "to 210.96, ORCL 151.16 to 144.79. NVDA's 420 shares are worth about 88,603 against 79,380.28 - UP ABOUT 11.6%. ⚠️ "
+ "ORCL's 75 SHARES ARE WORTH ABOUT 10,859 AGAINST 12,228.43 - DOWN ABOUT 11.2%, AND WE ALREADY REALISED MINUS 1,961.73 "
+ "ON AN EARLIER ORCL SALE. ORACLE IS DOWN ABOUT 47% FROM ITS 329.50 HIGH. || THE SLIDE'S NUMBERS ARE TRUE BUT EACH IS "
+ "TRUE UNDER ONE DEFINITION ONLY, AND THAT IS THE LESSON. (1) '175.2% DEBT TO EQUITY' RECONCILES EXACTLY - BUT ONLY AS "
+ 'LONG-TERM DEBT DIVIDED BY EQUITY. On TOTAL debt it is 186.5%; INCLUDING THE 44 BILLION OF OPERATING LEASES IT IS '
+ '251.7%. Our own board carries 2.32, which sits between the two and is the more honest figure. ⚠️⚠️ AND THE THING THE '
+ "SLIDE HIDES BY QUOTING AUGUST: ORACLE'S D/E WAS 284% IN MAY AND 175% IN AUGUST BECAUSE THE COMPANY ISSUED 141 "
+ 'MILLION SHARES FOR 19.9 BILLION DOLLARS IN THE QUARTER. THE RATIO IMPROVED THROUGH DILUTION, NOT THROUGH PAYING DOWN '
+ "DEBT. Equity rose 56% in three months on a share sale, not on earnings. (2) '5 BILLION NEGATIVE FREE CASH FLOW' IS "
+ 'THE QUARTER, AND THE SLIDE DOES NOT SAY SO. THE TRAILING TWELVE MONTHS IS MINUS 28.72 BILLION - 5.3 TIMES LARGER. '
+ "OUR BOARD ALREADY CARRIES THE TTM FIGURE CORRECTLY AT MINUS 28.72. (3) 'NVIDIA 14.1%' IS ALSO LONG-TERM-DEBT-ONLY, "
+ "AND ⚠️ THE SLIDE OMITS THAT NVIDIA'S OWN LONG-TERM DEBT QUADRUPLED FROM 7.5 BILLION TO 32.4 BILLION IN SIX MONTHS "
+ 'VIA A 24.9 BILLION ISSUE. NVIDIA IS NOW A LARGE AI-ERA BORROWER TOO. Its D/E was 5.4% in January. || ⚠️⚠️ AND THE '
+ 'SLIDE OMITS THE ONE FACT THAT ACTUALLY MATTERS: S&P DOWNGRADED ORACLE TO BBB- ON 9 JULY 2026 - ONE NOTCH ABOVE JUNK '
+ "- citing mounting debt, sharply negative cash flow and OpenAI concentration risk. MOODY'S HAS IT AT Baa2 WITH A "
+ 'NEGATIVE OUTLOOK. A rating agency saying that is worth more than any ratio on a graphic. Oracle raised 25 BILLION of '
+ 'bonds in February across eight tranches out to 2066, with the long end at 6.85%, and the ten-year priced about 145 '
+ 'basis points over Treasuries against roughly 95 for BBB peers - a 50 BASIS POINT CONCESSION THE MARKET DEMANDED. || '
+ '💡 THE MOST STRIKING NUMBER IN THE WHOLE COMPARISON, WHICH THE SLIDE NEVER REACHES: ON FORWARD EARNINGS THE TWO ARE '
+ 'PRICED ALMOST IDENTICALLY - ORACLE 16.99 TIMES AGAINST NVIDIA 17.51 - WHILE NVIDIA GROWS 105.9% AGAINST 29.6%, EARNS '
+ 'A 62.0% NET MARGIN AGAINST 24.6%, A 75.0% GROSS MARGIN AGAINST ABOUT 60%, AND GENERATES 127.0 BILLION OF FREE CASH '
  "AGAINST MINUS 28.7 BILLION - A SWING OF 156 BILLION DOLLARS. You are paying the same multiple for both. The slide's "
  'conclusion is not too strong; IT IS TOO WEAK. || ⚠️ AND OUR OWN BOARD SAYS IT MORE SHARPLY THAN THE SLIDE DOES: '
  "ORCL'S RULE OF 40 IS MINUS 18.4, THE WORST OF ANY FUNDED NAME, because the cash burn overwhelms the growth. IT FAILS "
@@ -3767,7 +3816,7 @@ STOCKS = [{'an': 83,
   'epsG': 695.9,
   'ex': 'NASDAQ',
   'fcfB': 26.17,
-  'fpe': 6.97,
+  'fpe': 6.63,
   'fvAvg': 1486,
   'fvMax': 2200,
   'fvMin': 361,
@@ -3776,14 +3825,14 @@ STOCKS = [{'an': 83,
   'hi52': 1255.0,
   'jan2': 295.13,
   'lo52': 103.38,
-  'mcapB': 1101.4501,
+  'mcapB': 1047.2958,
   'name': 'Micron Technology',
-  'pe': 22.61,
+  'pe': 21.5,
   'peg': 0.03,
   'pm': 55.91,
-  'price': 975.26,
-  'ps': 12.54,
-  'pxd': '2026-09-11',
+  'price': 927.31,
+  'ps': 11.92,
+  'pxd': '2026-09-15',
   'r40': 196.0,
   'revB': 90.27,
   'revG': 167.0,
@@ -7283,7 +7332,7 @@ M3 = {'GOOGL': {'pfcf': 72.57, 'ev': 21.6, 'de': 0.18},
  'LRCX': {'pfcf': 61.89, 'ev': 50.75, 'de': 0.35},
  'KLAC': {'pfcf': 66.64, 'ev': 48.14, 'de': 0.93},
  'AMKR': {'pfcf': 101.25, 'ev': 13.7, 'de': 0.35},
- 'MU': {'pfcf': 40.37, 'ev': 15.54, 'de': 0.06},
+ 'MU': {'pfcf': 38.39, 'ev': 15.54, 'de': 0.06},
  'SKHY': {'pfcf': None, 'ev': None, 'de': 0.15},
  'STX': {'pfcf': 49.98, 'ev': 39.12, 'de': 1.65},
  'SNDK': {'pfcf': 49.9, 'ev': 41.43, 'de': 0.02},
@@ -7726,10 +7775,35 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     "⚠️ THAT IS EXACTLY WHY THE TEST IS NOT 'DID THEY BEAT'. A memory company at an 84.6% gross margin "
                     'against 37.7% a year earlier is at a cyclical PEAK, and peak margins are where memory investors '
                     'lose money. THE NUMBER IS DRAM BIT SHIPMENTS. Buy only if bits grow double-digit AND gross margin '
-                    'holds at or above 80%. Beating on price alone is the cycle topping, not the story working. || ⚠️ '
-                    "NEW RISK: Micron's Taiwan unions are threatening strike action over a bonus gap with Samsung and "
-                    'SK hynix, with about 80% union backing and a vote possible in September (TrendForce Aug 28, '
-                    'Taipei Times Sep 2). Taiwan is core DRAM output. Check this before the print.',
+                    'holds at or above 80%. Beating on price alone is the cycle topping, not the story working. || '
+                    '⚠️⚠️ TAIWAN UNION - UPDATED 15 SEP AND I AM CORRECTING MY OWN EARLIER NOTE. I WROTE THAT ABOUT '
+                    '80% BACKED A STRIKE WITH A VOTE POSSIBLE IN SEPTEMBER. THAT WAS WRONG IN AN IMPORTANT WAY: THE '
+                    '80% WAS AN INTERNAL ONLINE SURVEY OF PARTICIPATING MEMBERS IN AUGUST, NOT A STRIKE VOTE. NO '
+                    'STRIKE VOTE HAS BEEN HELD, NO STRIKE HAS BEEN CALLED, AND NO PRODUCTION HAS STOPPED. || WHAT IS '
+                    "REAL: the Taiwan Micron Workers' Union (chair Lin Zhe-rui), with the Taoyuan City Confederation, "
+                    'demands 15% OF OPERATING PROFIT - 營業利益, NOT net profit - as a permanent quarterly profit-share '
+                    "replacing the current Incentive Pay Plan, plus a one-off of about 83 months' salary for FY2026. "
+                    "⚠️ THE 'WORLDWIDE EMPLOYEES' FRAMING RESTS ONLY ON THE REUTERS ENGLISH WIRE; every "
+                    "Chinese-language primary source describes TAIWAN employees. Micron's 11 Sep package - "
+                    'NT$1,000,000 plus up to 500% of target bonus plus stock, 35 to 68 months for direct labour - was '
+                    'REJECTED by the union as 公關話術, PR spin. || ⚠️ THE GATES ARE BEFORE THE PRINT AND THAT IS THE '
+                    "USEFUL FACT: MEDIATION ON 18 SEPTEMBER (TAICHUNG) AND 21 SEPTEMBER (TAOYUAN). Chair Lin: 'If "
+                    'there is no concrete proposal on September 18 and 21 we will declare the negotiations have broken '
+                    "down and move towards a strike vote.' WE WILL KNOW BEFORE WE DECIDE. || ⚠️ AND TAIWAN LAW SETS A "
+                    'HIGH BAR. Article 53 requires mediation to FAIL first; Article 54 requires approval by NO LESS '
+                    'THAN ONE HALF OF ALL MEMBERS by direct secret ballot - more than 5,000 of about 10,000, not a '
+                    'majority of those voting. NO TAIWAN SEMICONDUCTOR COMPANY HAS EVER COMPLETED A STRIKE. || ⚠️ '
+                    "TAIWAN IS MICRON'S LARGEST DRAM HUB - about 15,000 of 60,000+ employees, Taichung is the largest "
+                    "DRAM fab AND makes HBM - BUT MICRON DOES NOT DISCLOSE TAIWAN'S SHARE OF BIT OUTPUT. The best "
+                    "proxy is Micron's own guidance after the April 2024 earthquake: a 4-6% quarterly DRAM supply "
+                    'impact from a PARTIAL disruption. || 💡 THE CONCLUSION THAT MATTERS: THIS IS A MARGIN STORY, NOT A '
+                    'SUPPLY STORY. 15% of operating profit is ABOUT 5.0 BILLION DOLLARS PER QUARTER at the FQ3 '
+                    'run-rate of 33.318bn - my arithmetic. Even settling at the Korean level of 10 to 10.5% is 3.3 to '
+                    '3.5 BILLION A QUARTER, PERMANENTLY, AND IT IS NOT IN CONSENSUS MODELS. Samsung settled at 10.5% '
+                    'of divisional operating profit on 27 May; SK hynix at 10% on 20 Aug. In all three recent Korean '
+                    'episodes the credible threat produced a SETTLEMENT, NOT LOST OUTPUT - and Samsung shares ROSE 6% '
+                    'the day its strike was averted. ⚠️ SO THE TEST GAINS A FOURTH ITEM: WHAT DOES MICRON SAY ABOUT '
+                    'THE COST OF A TAIWAN SETTLEMENT, AND IS IT IN THE FY2027 MARGIN GUIDE?',
             'c': 'confirmed'},
            {'d': '2026-10-02',
             't': 'GOOGL',
@@ -8634,6 +8708,35 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'revenue growth ABOVE 15% (the Sep 7 cut), GAAP PROFITABLE (the Sep 8 cut), RULE OF 40 ABOVE 40, '
                     "and stock compensation UNDER 20% OF REVENUE. Those are growth-mandate tests. The slide's are "
                     'value-mandate tests. Conviction HIGH.'},
+           {'d': '',
+            'dl': '⚠️ 10 DECEMBER - four AI-infrastructure names we do not own',
+            't': '',
+            'k': 'watch',
+            'a': 'WATCH',
+            'amt': 0,
+            'c': 'standing',
+            'w': '⚠️ THE "HIDDEN STOCKS BEHIND THE AI BOOM" FOUR - AEIS, AAON, DY AND HPS.A - NONE IS ON OUR BOARD, '
+                 'AND ONE OF THEM CANNOT BE.',
+            'cond': 'RAISED 15 SEP 2026, NOT A PROPOSAL TO BUY. ⚠️ FIRST THE MANDATE POINT: HAMMOND POWER SOLUTIONS '
+                    '(HPS.A) IS LISTED IN TORONTO, NOT THE UNITED STATES. It is outside Pillar 4 whatever its merits, '
+                    'exactly like Samsung, MediaTek and Quanta Computer. THAT LEAVES THREE: Advanced Energy (AEIS), '
+                    "AAON and Dycom (DY). || ⚠️ I HAVE NOT VERIFIED ANY OF THE SLIDE'S FIGURES AND I WILL NOT ADD A "
+                    'NAME ON A SLIDE. What the slide claims: AAON Q2 revenue +101% with backlog +98% to 2.0bn; DY Q2 '
+                    'revenue 2.0bn +45.6% with backlog 12.2bn +53.2%; AEIS data-centre revenue 192m +35% with 800VDC '
+                    'full production targeted 2028. If those hold up they are strong numbers. || 💡 WHY IT IS WORTH THE '
+                    '10 DECEMBER ARGUMENT ANYWAY, AND THE REASON IS OUR OWN DATA: GROUP 6 HAS 49,270.88 OF APPROVED '
+                    'BUDGET UNSPENT, AND OUR EXISTING POWER NAMES SCORE POORLY ON OUR OWN RULE OF 40 - VRT 50.0 is the '
+                    'ONLY one that passes, against PWR 33.25, GEV 29.4, ETN 28.7, CEG 27.2 and VST 16.7. ⚠️ A GROUP '
+                    'WITH 49,000 OF UNSPENT ROOM AND FIVE OF SIX NAMES BELOW THE 40 BAR IS EXACTLY WHERE A NEW IDEA '
+                    "SHOULD BE TESTED. || THE SLIDE'S OWN FRAME IS ALSO CORRECT AND WORTH KEEPING: grid, then "
+                    'transform the power, then power the rack, then remove the heat, then connect the compute. ⚠️ WE '
+                    'OWN THE TRANSFORM AND RACK-POWER LINKS THROUGH ETN AND VRT AND THE GENERATION LINK THROUGH CEG, '
+                    'GEV AND VST - BUT WE OWN NOTHING IN COOLING AND NOTHING IN FIBRE. That is a real gap in a thesis '
+                    'we already fund at 77,000. || BRING TO 10 DECEMBER WITH: verified filings for AEIS, AAON and DY; '
+                    'revenue growth, GAAP profitability, Rule of 40 and stock compensation against our written '
+                    'screens; and an explicit answer to whether they displace an existing Group 6 name or use the '
+                    'unspent room. Conviction MEDIUM that at least one deserves funding; Conviction HIGH on not '
+                    'deciding today.'},
            {'d': '',
             'dl': "On Salee's instruction",
             't': 'AAOI',
