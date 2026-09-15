@@ -970,6 +970,23 @@
     }
    ],
    "week": "2026-09-07"
+  },
+  {
+   "points": [
+    {
+     "s": "+",
+     "text": "⚠️ HIGH-NA EUV IS REAL AND CONFIRMED, AND THE ARTICLE SALEE SENT IS THE BEST-SOURCED THING THIS WEEK - Reuters of 14 Sep plus ASML and Intel statements of 8 Sep, and I found NOTHING FALSE IN IT. INTEL HAS RUN OVER A MILLION WAFERS THROUGH HIGH-NA and uses it in volume manufacturing on some Intel 18A layers - the first chipmaker to do so. TSMC adopts it from 2030; SAMSUNG AND SK HYNIX TARGET 2028 FOR DRAM. Aperture rises 0.33 to 0.55; the EXE:5200B resolves about 8nm with imaging contrast ~40% above NXE."
+    },
+    {
+     "s": "-",
+     "text": "⚠️⚠️ BUT THE ECONOMICS CUT BOTH WAYS AND MOST READERS MISS IT. A HIGH-NA MACHINE COSTS ABOUT 400 MILLION DOLLARS AGAINST ABOUT 200 MILLION FOR CURRENT EUV - more revenue per machine, FEWER MACHINES, since one High-NA tool may defer two NXE tools. ASML has not said which effect wins. ONLY ABOUT TEN HIGH-NA SYSTEMS ARE PLANNED FOR 2027 DELIVERY (Intel, Samsung, SK hynix) - not yet a volume product. ⚠️⚠️ AND THE SHARPEST POINT: HIGH-NA PRINTS A SMALLER AREA PER SHOT THAN NXE, WHICH MAKES IT AWKWARD FOR EXACTLY THE CHIPS THE AI BOOM NEEDS - datacentre processors and AI accelerators are BIG dies. It arrives first for smaller dense logic and DRAM, not for the largest accelerators, which is why ASML and TSMC are developing 12-INCH PHOTOMASKS with a 2031 pilot and 2033 production. 'High-NA is here' does NOT mean 'ASML now sells the AI boom a new machine'."
+    },
+    {
+     "s": "!",
+     "text": "⚠️ OUR OWN BOARD SAYS SOMETHING THE ARTICLE DOES NOT: ASML IS THE WEAKEST GROWER OF THE FOUR SEMICAP NAMES WE OWN. Revenue growth reads 9.8% and Rule of 40 reads 38.4 - BELOW THE 40 BAR - against LRCX +30%, AMAT +25%, KLAC +15.2%. ⚠️ AND THE FIELD MUST BE CHECKED BEFORE 15 OCTOBER: ASML reported Q2 2026 net sales of 9.3 BILLION EUROS UP 20.8% y/y, which does not sit easily with 9.8. Probably TTM versus quarterly, or euro versus dollar - but resolve it before placing a 7,000 tranche. || PRICE UPDATED to the 14 Sep close of 1,575.15, down 7.25% from our 11 Sep mark. 13 shares worth about 20,477 against 16,394.06 - UP ABOUT 24.9%. Room 24,605.94. NO CHANGE TO THE PLAN: 15 OCTOBER decides rung 1 of 7,000, the 10,000 held back stays held back. ⚠️ WHAT I WILL READ: whether the 2028 capacity expansion beyond 110 machines is confirmed (Reuters says under evaluation, ASML has NOT confirmed); whether High-NA units shipped are disclosed; whether the Q3 guide of 11.0-12.0bn euros at 55-57% GM is met; and WHETHER BOOKINGS ARE DISCLOSED AT ALL - an unverified report says ASML has stopped reporting quarterly bookings, which would remove the best forward indicator this name has."
+    }
+   ],
+   "week": "2026-09-14"
   }
  ],
  "ASTS": [
@@ -3284,6 +3301,10 @@
    "points": [
     {
      "s": "+",
+     "text": "💡 LAM RESEARCH IS ABSENT FROM THE 'WORLD'S LARGEST SEMICONDUCTOR COMPANIES' GRAPHIC AND SHOULD NOT BE. At about 373 BILLION it is LARGER than KLA at 243, Arm at 269, Texas Instruments at 236 and MediaTek at 222 - all four of which the slide includes. It belongs around eleventh. APPLIED MATERIALS AT ABOUT 362 BILLION IS MISSING ON THE SAME BASIS, and SanDisk at about 242. ⚠️ A SEMICONDUCTOR RANKING THAT KEEPS KLA BUT DROPS LAM AND APPLIED HAS INCLUDED THE METROLOGY NAME AND LEFT OUT TWO OF THE THREE BIG ETCH-AND-DEPOSITION NAMES - which is the same 'assembled from headline recognition' pattern found in the Terafab supplier list this morning. || Nothing changes: Tranche 3 of 10,899.88 stands on 19 November, and the September-quarter guide of 8.10bn plus or minus 400m against 6.72bn delivered remains the most aggressive guidance datapoint among the four semicap names we own."
+    },
+    {
+     "s": "+",
      "text": "STRONGEST GUIDANCE OF THE FOUR SEMICAP NAMES WE OWN, AND IT HAS NOTHING TO DO WITH ANY MUSK FAB. June-quarter revenue 6.72bn UP 30.0% year on year, GAAP gross margin 51.7% (up from 50.1%), net income 2.28bn, full fiscal year 23,233m up 26.0%. ⚠️ AND THE SEPTEMBER-QUARTER GUIDE IS 8.10bn PLUS OR MINUS 400m - A 20% SEQUENTIAL STEP-UP, the single most aggressive guidance datapoint in the group. CEO Tim Archer: 'Lam delivered record revenue, operating margin and earnings per share in the June quarter as AI-driven demand continues to reshape the semiconductor industry.' || 💡 CHINA FELL FROM 35% TO 26% OF REVENUE year on year - a 9-point reduction in the most politically exposed part of the business, achieved while growing 30%. That is a quality improvement nobody is talking about. ⚠️ THE TERAFAB ORDER CLAIM IS UNSOURCED (see AMAT note); the real driver is SEMI's forecast of 300mm fab equipment spending at 133bn in 2026, up 18%, and 151bn in 2027, up 14%. Tranche 3 of 10,899.88 unchanged on 19 November."
     }
    ],
@@ -3991,6 +4012,14 @@
   },
   {
    "points": [
+    {
+     "s": "!",
+     "text": "⚠️⚠️ A NEW AND REAL COMPETITOR HAS APPEARED FIFTEEN DAYS BEFORE THE 30 SEPTEMBER DECISION, AND SALEE SHOULD KNOW THE NAME: CXMT. ChangXin Memory Technologies LISTED ON THE SHANGHAI STAR MARKET ON 27 JULY 2026 (ticker 688825), ROSE 531% ON DEBUT to a market capitalisation of RMB 3.66 TRILLION - ABOUT 541 BILLION DOLLARS - and the Shanghai Stock Exchange's own release states this 'exceeded Intel's market capitalization of $465.6 billion'. ⚠️ CXMT REACHED 10% OF GLOBAL DRAM REVENUE SHARE IN Q2 2026, UP FROM UNDER 1% IN 2023 AND 8% IN Q1 2026 - its first double-digit quarter. Wafer output: 100k/month early 2024, 200k Q1 2025, 300k forecast 2026. ⚠️ MEMORY EQUITIES SOLD OFF ON THE IPO FILING - SK HYNIX AND SANDISK MINUS 7%, MICRON MINUS 5% ON 16 JULY 2026. Morgan Stanley is reported to have written that ChangXin capacity could SURPASS MICRON BY 2028 - secondary reporting only, note not obtained."
+    },
+    {
+     "s": "+",
+     "text": "💡 THE PRECISE READ ON CXMT, AND IT DOES NOT CHANGE THE 30 SEPTEMBER TEST. CXMT'S TEN PERCENT IS CONVENTIONAL AND LEGACY DRAM SOLD LARGELY INTO DOMESTIC CHINESE DEMAND, AND IT DOES NOT YET SHIP HBM. Counterpoint attributes the gain to 'strong domestic conventional DRAM demand' - and CONVENTIONAL DRAM PRICES ROSE QUARTER ON QUARTER IN Q2 2026 DESPITE that new supply arriving. Micron's own DRAM revenue rose FIVEFOLD since Q2 2025 and it now sits within ONE POINT of SK hynix for second place globally (Samsung 38-39%, SK hynix 25-26%, Micron 24-25%, CXMT 10%). || ⚠️ SO CXMT THREATENS THE BIT-SHIPMENT AND PRICING LEG OF OUR TEST ON A 2027-2028 HORIZON, NOT THE GROSS-MARGIN LEG ON 30 SEPTEMBER. THE WRITTEN TEST STANDS UNCHANGED: buy only if DRAM bits grow double-digit AND gross margin holds at or above 80%. 💡 BUT ADD A THIRD THING TO WATCH AT THE PRINT - WHETHER MANAGEMENT IS ASKED ABOUT CXMT AND WHAT THEY SAY. An evasive answer on Chinese conventional-DRAM supply would be the first real crack in the cycle story."
+    },
     {
      "s": "!",
      "text": "⚠️⚠️ THE 'BofA 8 STOCKS' SLIDE OMITS MICRON ENTIRELY - AND MICRON IS BOFA'S OWN TOP PICK THIS WEEK. The bank's real 14 September note carries MU at a 1,550 PRICE OBJECTIVE, THE HIGHEST IMPLIED UPSIDE ON ITS LIST at about +69.6%. MU is also the NUMBER TWO HOLDING of the SOXX semiconductor ETF at 8.97%. ⚠️ AND MEMORY IS THE SINGLE LARGEST DRIVER OF THE VERY NUMBER THE SLIDE IS HEADLINING: WSTS credits the memory segment with 800-PLUS BILLION AND 250% GROWTH IN 2026. A slide about a semiconductor rally that contains ZERO memory exposure has omitted the loudest part of the rally. || ⚠️ THIS CHANGES NOTHING ABOUT THE 30 SEPTEMBER TEST. A 1,550 price objective is not a DRAM bit shipment. The rule stands: buy only if DRAM bits grow double-digit AND gross margin holds at or above 80%. Beating on price alone is the cycle topping."
@@ -5427,6 +5456,10 @@
   },
   {
    "points": [
+    {
+     "s": "!",
+     "text": "⚠️⚠️ FOURTH DATA FAULT ON THIS TICKER, AND THIS TIME THE VIRAL SLIDE WAS RIGHT AND WE WERE WRONG. OUR BOARD READ A MARKET CAP OF 1,385 BILLION DOLLARS. THE REAL FIGURE IS ABOUT 880 TO 896 BILLION. SK hynix was KRW 1,198.075 TRILLION on 4 September 2026 (share price 1,640,500 won); companiesmarketcap independently shows about 895.78bn dollars for September 2026. ⚠️ OUR 1,385 LANDS IN THE KRW-TRILLION SERIES, NOT THE DOLLAR ONE - almost certainly a trillion-won figure stamped with a dollar sign. || ⚠️ I COULD NOT RESOLVE IT CLEANLY SO I BLANKED IT RATHER THAN REPLACED IT. The implied share count reconciles at 7.29bn ADR-equivalents, but the price does not: a Seoul share at 1,640,500 won is about 1,205 dollars, a tenth is about 120, and the ADR trades near 175. Ratio, share count or price is wrong and I cannot tell which from here. mcapB, ps and pfcf are now BLANK; price set to 175.63 from the POEMS statement, a primary source. SAME DISCIPLINE AS LITE THIS MORNING. || 💡 THE QUARANTINE FROM 10 SEPTEMBER IS NOW FULLY VINDICATED. Position 15 shares at 1,913.26, worth about 2,634 - UP ABOUT 37.7% - and it stays exactly as it is with no budget. Resolve the ADR ratio from the F-1 or the depositary before 10 December."
+    },
     {
      "s": "-",
      "text": "⚠️ FELL 7.60% ON 14 SEPTEMBER - THE WORST OF ANY NAME ON THE 'AI CAPEX PAWN SHOP' CARTOON SALEE SENT, AND IT IS OURS AT A COST OF 1,913.26 IN 15 SHARES. The cartoon is the AI-pacing selloff drawn as a joke and the losses in it are real: NVDA -3.36%, AVGO -4.77%, AMD -4.40%, TSM -3.52%, MU -5.25%, ASML -7.25%, INTC -5.59%. 💡 WHAT IS WORTH SEEING IS WHAT WAS GREEN WHILE THE CHIPS WERE RED - GOOGL +3.22%, META +2.71%, MSFT +1.97%, plus WMT and LLY - AND CYBERSECURITY, WHERE PANW ROSE 13.09% AND CRWD 13.85% THE SAME DAY. THAT IS A ROTATION OUT OF PICKS-AND-SHOVELS INTO PLATFORMS AND SECURITY, AND WE OWN BOTH SIDES OF IT, WHICH IS WHY THE BOARD FELL LESS THAN THE CHIPS DID. ⚠️ SKHY REMAINS QUARANTINED WITH NO BUDGET - vendor data on this ADR was found unreliable on 10 September and that finding stands."
