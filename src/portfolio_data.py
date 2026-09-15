@@ -3,663 +3,739 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ("Sep 14, 2026 - THE 'MARKET.TECH' SLIDE: 'BANK OF AMERICA SAYS THESE 8 STOCKS WILL LEAD THE SEMICONDUCTOR RALLY'. "
- '⚠️⚠️ THE SHORTEST ANSWER IS THE BEST ONE: WE ALREADY OWN SEVEN OF THE EIGHT. NVDA 79,380.28 in 420 shares; AVGO '
- '30,125.18 in 88.5; AMD 13,789.22 in 55; MRVL 7,872.66 in 48.5; LRCX 4,100.12 in 22; KLAC 3,510.69 in 18; CDNS '
- '3,918.01 in 12. THAT IS 142,696.16 OF REAL MONEY ALREADY IN SEVEN OF THESE EIGHT NAMES. The only one we do not hold '
- 'is ANALOG DEVICES. A slide telling Salee to buy what he bought months ago is not a recommendation, it is a mirror. '
- 'NOTHING BOUGHT, NOTHING SOLD, NO BUDGET CHANGED. || ⚠️ ONE REAL DATA FAULT CLOSED TODAY, AND IT WAS WORTH 4,000 '
- 'DOLLARS. THE MRVL TRANCHE 2 ROW SAID 17,127.34. THE CORRECT FIGURE IS 13,127.34 - budget 21,000 less 7,872.66 '
- 'already invested. The row is now corrected in place. This had been flagged on 9, 11 and 14 September and is finally '
- 'fixed; placing the stale number on 9 OCTOBER WOULD HAVE OVERSPENT THE LINE BY 4,000 AND BROKEN THE MILLION-DOLLAR '
- 'BUDGET. || NOW THE SLIDE ITSELF, AND IT FAILS ON FOUR COUNTS. || ⚠️ ONE: NO BANK OF AMERICA NOTE NAMES THESE EIGHT. '
- "BofA's semiconductor analyst is VIVEK ARYA and he is real, and there are THREE separate real notes - a December 2025 "
- 'note naming six (NVDA, AVGO, LRCX, KLAC, ADI, CDNS), an April 2026 note naming twelve, and a 14 SEPTEMBER 2026 note '
- "naming eight. THE SLIDE'S LIST IS THE DECEMBER SIX PLUS AMD AND MRVL BORROWED FROM APRIL. It is a union of two notes "
- "four months apart. ⚠️ AND BOFA'S ACTUAL LIST FROM THE SAME WEEK AS THIS SLIDE IS DIFFERENT IN SIX OF EIGHT "
- 'POSITIONS: MU, MRVL, ON, NVDA, INTC, LRCX, ADI, AMD - with price objectives. MU 1,550, MRVL 365, ON 120, NVDA 350, '
- 'INTC 145, LRCX 385, ADI 500, AMD 620. AVGO, KLAC AND CDNS ARE NOT ON IT. || ⚠️ TWO: THE TWO-TRILLION HEADLINE IS A '
- "2030 FORECAST, AND IT IS ALREADY BEHIND REALITY. BofA's figure is TOTAL GLOBAL SEMICONDUCTOR REVENUE BY 2030 - not a "
- 'rally size, not a market cap. For scale, THESE EIGHT COMPANIES ARE ALREADY WORTH ABOUT 8.55 TRILLION between them, '
- "and NVIDIA ALONE IS 5.09 TRILLION - two and a half times the headline. ⚠️⚠️ AND THE INDUSTRY'S OWN STATISTICAL BODY "
- 'HAS ALREADY OVERTAKEN IT: WSTS FORECASTS 1.51 TRILLION FOR 2026 AND ABOUT 1.9 TRILLION FOR 2027 - three years '
- "earlier than BofA's 2 trillion. The SIA reports Q2 2026 global sales of 403.3bn, up 35.1% on the quarter, with June "
- "alone at 134.5bn up 123.6% year on year. THE SLIDE'S BIG NUMBER IS NOT A BULLISH TARGET. IT IS A LAGGING ONE DRESSED "
- 'AS A FORECAST. || ⚠️⚠️ THREE, AND THIS IS THE ONE THAT SETTLES IT: EVERY SINGLE NAME ON THE SLIDE IS ALREADY AN '
- 'INDEX HEAVYWEIGHT. ALL EIGHT ARE TOP-SIXTEEN HOLDINGS OF THE VANECK SEMICONDUCTOR ETF (SMH); SIX OF EIGHT ARE SOXX '
- 'TOP-TEN. THERE IS NOT ONE OFF-INDEX NAME ON THE LIST. Together they are about 52.4% of SMH. This is not stock '
- "picking, it is reading the top of an index aloud - and it reads it BADLY. ⚠️ IT OMITS TSMC, WHICH IS SMH'S NUMBER "
- 'TWO HOLDING AT 9.75% AND FABRICATES THE SILICON FOR FOUR OF THE EIGHT. A semiconductor list containing four TSMC '
- 'customers but not TSMC is not a thesis. ⚠️⚠️ AND IT OMITS MEMORY ENTIRELY. WSTS CREDITS MEMORY WITH 800-PLUS BILLION '
- 'AND 250% GROWTH IN 2026 - THE SINGLE LARGEST DRIVER OF THE VERY NUMBER THE SLIDE IS HEADLINING - AND MICRON IS '
- "BOFA'S OWN TOP PICK THIS WEEK AT A 1,550 PRICE OBJECTIVE, THE HIGHEST UPSIDE ON ITS LIST. MU IS SOXX'S NUMBER TWO "
- 'HOLDING. IT IS NOT ON THE SLIDE. WE OWN IT, 22,581.58 IN 35.45 SHARES, AND WE DECIDE IT ON 30 SEPTEMBER. Also '
- 'missing: INTC (SOXX #5), AMAT, ASML, TXN, QCOM, SNPS. || ⚠️ FOUR: THE CADENCE PICK IS THE WEAKEST ON THE SLIDE AND '
- "THE SLIDE DOES NOT SAY WHY. CDNS is on it and SYNOPSYS IS NOT, though BofA's own April list contained BOTH. ⚠️ AND "
- 'THE ONE DOCUMENTED CRIMINAL EXPORT LIABILITY IN THAT PAIR BELONGS TO CADENCE: ON 28 JULY 2025 THE US DEPARTMENT OF '
- 'JUSTICE ANNOUNCED THAT CADENCE AGREED TO PLEAD GUILTY AND PAY OVER 140 MILLION DOLLARS FOR UNLAWFULLY EXPORTING '
- 'SEMICONDUCTOR DESIGN TOOLS TO A RESTRICTED CHINESE MILITARY UNIVERSITY - conduct from February 2015 to April 2021, a '
- '95 million dollar BIS penalty inside the total. China is 13% of Cadence revenue and RISING from 11%. On the numbers '
- "Synopsys grew 42.3% to 2.477bn against Cadence's 24.2% to 1.584bn, though ⚠️ SYNOPSYS'S GROWTH IS NOT ORGANIC - IT "
- "INCLUDES THE ANSYS ACQUISITION, while Cadence's 24.2% is organic and ACCELERATING from 18.7%. Cadence wins on GAAP "
- 'operating margin 28.4% against 14.4%. CDNS SITS ON OUR BOARD AS A ZERO-BUDGET BACK-UP AND THAT IS EXACTLY RIGHT. || '
- '💡 THE ONE GENUINELY USEFUL THING ON THE SLIDE, AND IT IS A FACT THE SLIDE ITSELF NEVER STATES: NVIDIA IS THE '
- 'FASTEST-GROWING NAME ON IT AT PLUS 106% AND HAS THE LOWEST FORWARD P/E OF ALL EIGHT AT 17.51. The two SLOWEST '
- 'growers - KLAC at plus 15.2% and CDNS at plus 24.2% - trade at 33.12 and 33.71. AMD IS THE MOST EXPENSIVE AT 46.69 '
- 'FORWARD AND 131.74 TRAILING, AND ⚠️ AMD IS THE ONLY ONE OF THE EIGHT GUIDING A SLOWDOWN: Q2 grew 50% and the Q3 '
- 'guide of about 13bn against 9.2bn a year earlier implies about 41%, a nine-point deceleration the company guided '
- 'itself. OUR AMD BUDGET IS 24,000 WITH 13,789.22 SPENT AND I AM NOT ADDING TO IT ON A SLIDE. || ⚠️ AND WHAT THE SLIDE '
- 'SUPPRESSES: CHIP STOCKS SHED MORE THAN A TRILLION DOLLARS IN A LATE-JULY 2026 SELLOFF, AND BANK OF AMERICA ITSELF '
- "CALLED LONG SEMICONDUCTORS 'THE MOST CROWDED TRADE EVER' IN JULY 2026. Arya's own 14 September note warns of "
- "'near-term volatility from rates, Mideast tensions, the Nov. 2 U.S. midterms, and growing resistance to data center "
- "expansion'. THE SLIDE KEPT THE BANK'S NAME AND DELETED THE BANK'S WARNINGS. || DECISION: NO CHANGE TO ANY BUDGET, "
- 'TRANCHE DATE OR LIMIT. Conviction HIGH. The six buys of 17 September, the MU decision of 30 September, the MRVL and '
- 'META tranches of 9 October and the semicap tranches of 19 November all proceed exactly as written. 💡 ONE THING '
- 'RAISED FOR 10 DECEMBER: ANALOG DEVICES, THE ONE NAME ON THIS SLIDE WE DO NOT OWN - and the case is better than the '
- "slide knows. Q3 FY26 was ADI's first 4-billion quarter, up 40%, with COMMUNICATIONS UP 84% and the CFO on the record "
- "that 'Data Center, which now accounts for 80% of our communications revenue' grew 'MORE THAN 100% YEAR-OVER-YEAR IN "
- "BOTH OPTICAL AND POWER', while the CEO quantifies 100 gigawatts of datacentre build to 2031 at 'a 1 billion to 1.5 "
- "billion dollar analog SAM' each. AND THE INDUSTRIAL CYCLE HAS NOT TURNED YET - the CFO says customers are 'shipping "
- "well below historical consumption levels' with 'no restocking'. Growing 40% before the restock. NOT BUYING TODAY: "
- "Group 6 has 51,274 of unspent room and that is a 10 December allocation question, and the board's field discipline "
- 'needs a complete data set first. ⚠️ WHAT WOULD CHANGE MY MIND ON ANY OF THIS: a BofA note I can actually read rather '
- 'than a slide quoting one; or MU failing its 30 September DRAM-bit test, which would tell me the memory cycle the '
- 'slide ignores is turning down rather than up. || PREVIOUS ENTRY: Sep 14, 2026 - THE DEEPSTOCK NEOCLOUD SLIDE. '
- 'NOTHING BOUGHT, NOTHING SOLD, NO BUDGET CHANGED, POLICY UNCHANGED. THREE DICTIONARY TERMS ADDED. || FIRST, THE '
- 'HONEST PART, BECAUSE IT GOES AGAINST US. WE SOLD ALL THREE NAMES ON THIS SLIDE AND TWO OF THE THREE HAVE RISEN '
- 'SINCE. CRWV sold 17 Jul at about 71.27 a share, now 82.98 - up 16.4%, about 199 of gain forgone on 17 shares. NBIS '
- 'sold 21 Jul at about 194.86, now 212.19 - up 8.9%, about 468 forgone on 27 shares. IREN sold 9 Sep at about 43.63, '
- 'now 43.17 - down 1.1%, about 41 to the good on 90 shares. NET FORGONE SINCE THE EXITS: ROUGHLY 626 DOLLARS. Realised '
- 'on the three when we sold: CRWV minus 786.02, NBIS plus 1,404.51, IREN plus 456.24 - a net plus 1,074.73. ⚠️ SO THE '
- 'POLICY HAS COST US SOMETHING AND SALEE SHOULD SEE THE NUMBER, NOT A SPEECH. 626 dollars on a 690,000 dollar book is '
- 'six basis points. I would pay it again. || NOW THE SLIDE. IT HAS FOUR NUMBERS AND THREE OF THEM ARE MISLABELLED. ALL '
- "FOUR TRACE TO ONE DOCUMENT - IREN'S FY26 RESULTS RELEASE OF 27 AUGUST 2026. The slide did not invent them; it "
- "renamed them. || ⚠️ NUMBER ONE, THE BIG CHART: '10-12 DOLLARS PER WATT RISING TO 15-20 PLUS'. THIS IS NOT THE PRICE "
- "OF RENTING A GPU. It is IREN's contracted AI-cloud REVENUE PER MEGAWATT OF DATACENTRE CAPACITY PER YEAR. IREN's own "
- "words: 'Recent 3-year contracts >$20m revenue per MW (IT)' and 'Active discussions at ~$25m per MW (IT)'. The "
- 'starting point is not 10-12 either - the Microsoft contract of 3 Nov 2025 was 9.7 BILLION over five years for 200MW, '
- 'which is 9.70 per watt per year. SO THE REAL DISCLOSED MOVE IS 9.70 TO OVER 20, NOT 10-12 TO 15-20. ⚠️ AND REVENUE '
- 'PER MEGAWATT RISES WHEN YOU PACK MORE EXPENSIVE CHIPS INTO THE SAME POWER. GB300s cost far more than the previous '
- 'generation. The number can climb while the hourly rent on any individual GPU falls. NO SOURCE SEPARATES THE TWO '
- 'EFFECTS. ⚠️⚠️ AND THE TRAP THAT MAKES THIS CHART GENUINELY DANGEROUS: BUILDING A DATACENTRE COSTS ABOUT 9.50 TO '
- '15.20 DOLLARS PER WATT (Turner & Townsend 2025: Silicon Valley 13.30, Paris 10.80, Atlanta 9.90, Tokyo 15.20). AN '
- "ARROW FROM '10-12/W' TO '15-20/W+' IS EQUALLY CONSISTENT WITH BUILD COSTS RISING, WHICH IS BAD. The slide shows one "
- 'reading and not the other. For reference, actual datacentre RENTAL is about 2.36 per watt per year (CBRE: 196.25 per '
- 'kW per month, H2 2025) - one eighth of these numbers. Colocation is ruled out entirely. || ⚠️ NUMBER TWO, THE '
- "HEADLINE 'GPU RENTAL PRICES ARE RISING'. NOT ESTABLISHED FOR GPU-HOURS. The single most quoted piece of evidence is "
- 'CoreWeave CEO Mike Intrator on the Q2 2026 call saying H100s coming off an expired contract were immediately '
- "rebooked at '95% OF THE ORIGINAL PRICE'. ⚠️ NINETY-FIVE PERCENT OF THE ORIGINAL PRICE IS A FIVE PERCENT DECLINE. It "
- 'is quoted across the trade press as proof of pricing strength. It is arithmetic proof of mild erosion, from the one '
- "man whose balance sheet depends on the answer. The independent data conflicts: AIMultiple's index across 69 "
- "providers and 26 months finds H100 'roughly flat' with neocloud rates trending DOWN, and says the B200 rise is "
- 'driven by hyperscaler price sheets entering the dataset at 2-3x neocloud rates rather than real increases. Thunder '
- 'Compute reports AWS cutting H100, H200 and A100 instance pricing by UP TO 45%. The defensible statement is that '
- 'newest-generation and per-megawatt pricing is rising while H100 per-hour pricing is flat to falling. THAT IS NOT '
- "WHAT THE HEADLINE SAYS. || ⚠️ NUMBER THREE, 'A100 UNTIL 2029'. THIS IS A CONTRACT END DATE, NOT A USEFUL LIFE, AND "
- 'THE SLIDE CONFLATES THEM. Intrator said on the same Q2 call that CoreWeave signed an A100 contract running into '
- "2029. Fine. But COREWEAVE'S OWN STATED USEFUL LIFE FOR TECHNOLOGY EQUIPMENT IS SIX YEARS, AND THE A100 LAUNCHED IN "
- '2020. SIX PLUS 2020 IS 2026, NOT 2029. An A100 earning revenue in 2029 is an asset with ZERO BOOK VALUE - which '
- 'flatters reported margins and tells you nothing about what it rents for. ⚠️ AND THE SLIDE OMITS THE LARGEST SINGLE '
- 'COUNTER-EXAMPLE IN THE INDUSTRY: AMAZON SHORTENED SERVER USEFUL LIFE FROM SIX YEARS TO FIVE EFFECTIVE 1 JANUARY '
- "2025, AND SAID WHY IN ITS OWN FILING - 'The shorter useful lives are due to the increased pace of technology "
- "development, particularly in the area of artificial intelligence.' That cost Amazon 1.4bn of extra depreciation and "
- "1.0bn of net income, and it reversed Amazon's OWN earlier extension which had added 2.5bn to profit. The operator of "
- "the largest fleet on earth moved the OPPOSITE way to the slide's thesis, explicitly because of AI. || ⚠️ NUMBER "
- "FOUR, 'PREPAYMENT 45-55%'. REAL, BUT THE DENOMINATOR IS WRONG. IREN's footnote says 45-55% OF GPU CAPEX - 'the "
- "estimated capital expenditure for GPUs and ancillaries'. The slide shows it on a contract document, where any reader "
- "takes it as 45-55% of contract value. PREPAYMENT AS A SHARE OF CONTRACT VALUE IS ABOUT 20% - IREN's own Microsoft "
- "release says 'including a 20% prepayment', and Compute Exchange puts the market at roughly 20% of total contract "
- 'value. THE SLIDE ROUGHLY DOUBLES THE COMFORT THE NUMBER ACTUALLY PROVIDES. || ⚠️⚠️ AND THE THING THE SLIDE CANNOT '
- 'SURVIVE, WHICH IS A FACT ABOUT ONE OF ITS OWN THREE BIDDERS: IREN TOOK A 638.8 MILLION DOLLAR IMPAIRMENT IN THE JUNE '
- '2026 QUARTER ON DECOMMISSIONED BITCOIN MINING HARDWARE, AND POSTED A FY26 NET LOSS OF 702.6 MILLION AGAINST A '
- 'PRIOR-YEAR PROFIT OF 86.9 MILLION. A slide arguing that computing hardware dies more slowly is illustrated with a '
- 'company that has just written off two thirds of a billion dollars of computing hardware. ⚠️ AND IREN IS STILL 82% A '
- 'BITCOIN MINER: FY26 revenue 707.0m, of which AI cloud is 128.8m and mining 578.2m. || THE OTHER TWO, FROM THE '
- 'FILINGS: COREWEAVE H1 2026 revenue 4,653m, NET LOSS 1,366m, of which INTEREST EXPENSE ALONE WAS 1,176m - a quarter '
- 'of revenue going to lenders. Total debt about 35.1bn against 5.5bn of cash. TWO UNNAMED CUSTOMERS ARE 62% OF Q2 '
- 'REVENUE (36% and 26%). RPO is 103.7bn but 80% of it lands inside 48 months against a 72-month asset life - THE '
- 'REVENUE TAIL IS SHORTER THAN THE DEPRECIATION TAIL. NEBIUS Q2 2026 revenue 582.3m against 105.1m, a genuine 454% - '
- "but a LOSS of 190.4m, and ⚠️ THE PRIOR YEAR'S 'PROFIT' OF 502.5m WAS A 597.4 MILLION ONE-OFF REVALUATION OF ITS "
- 'CLICKHOUSE STAKE, NOT OPERATIONS. Nebius also extended server life from four years to five in Q1 2026, which its own '
- "filing says 'partially offset the increase in depreciation expense'. P/E 1,292. || DECISION: NO CHANGE. WE OWN NONE "
- 'OF THE THREE AND WE ARE BUYING NONE OF THE THREE. Conviction HIGH. Horizon medium, 6-24 months. THE REASON IS NOT '
- "THAT THE BUSINESSES ARE FAKE - demand is real, Nebius says it is sold out, IREN's revenue per megawatt genuinely "
- 'doubled. THE REASON IS THAT THE EQUITY SITS BEHIND 35 BILLION OF COREWEAVE DEBT, BEHIND AN INTEREST BILL THAT IS A '
- 'QUARTER OF REVENUE, AND BEHIND A DEPRECIATION ASSUMPTION THAT AMAZON IS MOVING THE OTHER WAY ON. We are buying 2x '
- 'over five years in Pillar 4; we do not need to own the leveraged link in a chain we already own the strongest link '
- 'of. || ⚠️ WHERE THIS ACTUALLY TOUCHES OUR MONEY, AND IT IS NOT THROUGH THE THREE TICKERS: WE OWN 420 NVIDIA SHARES '
- "AT A COST OF 79,380.28. THE NEOCLOUDS ARE NVIDIA'S CUSTOMERS. If neocloud financing tightens - if the converts stop "
- 'clearing, if a lender repossesses GPUs, if one of them cannot roll debt - that is an NVDA REVENUE-QUALITY question, '
- 'not a CRWV question. THAT IS THE EXPOSURE WE ACTUALLY CARRY AND IT IS ALREADY ON THE BUBBLE WATCH. ⚠️ WHAT WOULD '
- 'CHANGE MY MIND ON THE NEOCLOUD POLICY: (1) any one of the three posting TWO CONSECUTIVE QUARTERS OF POSITIVE GAAP '
- "NET INCOME with interest expense under 10% of revenue; (2) CoreWeave's largest customer falling below 25% of revenue "
- 'AND being named in the filing; or (3) an independent, non-operator dataset showing H100 per-hour rates rising for '
- 'two consecutive quarters. None has happened. ⚠️ WHAT WOULD PROVE ME WRONG THE OTHER WAY: if all three compound for '
- 'another year while I watch, the 626 dollars becomes a real number and the policy deserves re-argument at the 10 '
- 'DECEMBER QUARTERLY REVIEW - added to that agenda. || PREVIOUS ENTRY: Sep 14, 2026 - TWO QUESTIONS ANSWERED: THE '
- 'SEPTEMBER EVENTS CALENDAR AND THE CHINA RE-SHORING SLIDE. NOTHING BOUGHT, NOTHING SOLD, NO BUDGET CHANGED. FIVE '
- 'SCHEDULE ROWS ADDED AND ONE DATA FAULT FOUND. || (A) THE INNOVESTX/SCBX SEPTEMBER CALENDAR. I checked all twenty-one '
- 'entries against primary sources. THE CALENDAR IS MOSTLY ACCURATE - FOMC, BoJ, PCE, Retail Sales, Snapdragon Summit, '
- 'Meta Connect, OpenAI DevDay and the AI Infra Summit all verify. ⚠️ BUT ITS SINGLE BIGGEST PROBLEM IS AN OMISSION, '
- 'NOT AN ERROR: MICRON REPORTS ON 30 SEPTEMBER AND THE CALENDAR DOES NOT MENTION IT. That is our largest single '
- 'scheduled decision - a 51,000 budget with 22,581.58 already committed - and it is absent from a calendar a Thai '
- 'investor would use to plan the month. ⚠️ ONE OUTRIGHT ERROR: THE CALENDAR PUTS ORACLE ON 15 SEPTEMBER. ORACLE '
- 'REPORTED ON 10 SEPTEMBER. We acted on the real date and the row is closed; anyone waiting for the 15th missed it by '
- 'five days. ⚠️ ONE APPARENT ERROR THAT IS NOT AN ERROR AND SALEE SHOULD NOT BE CONFUSED BY IT: the calendar says FOMC '
- 'on 17 SEPTEMBER while the Federal Reserve says 15-16 SEPTEMBER. BOTH ARE RIGHT. The Fed decides at 2pm New York on '
- 'Wednesday the 16th, which is 1am BANGKOK on Thursday the 17th. The broker is printing Bangkok dates. THE SAME '
- 'CONVENTION EXPLAINS COSTCO (24 Sep after the US close = 25 Sep Bangkok). ⚠️ IT DOES NOT RESCUE ORACLE - 10 Sep after '
- 'the close is 11 Sep Bangkok, nowhere near the 15th. LESSON: on any after-close earnings row, assume the Thai date is '
- 'one day LATER than the US date. || FIVE THINGS AN AI AND POWER INVESTOR NEEDS THAT THE CALENDAR OMITS, NOW ADDED TO '
- 'OUR SCHEDULE: (1) ⚠️ TRIPLE WITCHING ON FRIDAY 18 SEPTEMBER - the quarterly expiry of index futures and options. IT '
- 'LANDS ONE DAY AFTER OUR SIX BUYS TOTALLING 46,526.13 AND ON THE SAME DAY AS THE BANK OF JAPAN. A violent Friday is '
- 'mechanical, not a verdict on the six tranches. (2) US RETAIL SALES 16 Sep, hours before the Fed decides. (3) PCE AND '
- "CORE PCE 30 Sep - the Fed's own target measure, not CPI. (4) JABIL 30 Sep 8:30am - not ours, but it guides a FULL "
- 'FISCAL YEAR for AI datacentre hardware and reports 6.5 hours before Micron; a free read-across for VRT, CEG and GEV. '
- '(5) ⚠️ BLOOM ENERGY JOINS THE S&P 500 BEFORE THE OPEN ON 21 SEPTEMBER, confirmed by S&P Dow Jones Indices on 4 Sep. '
- 'WE ARE STILL NOT BUYING IT - the class-action deadline is 28 Sep and EV/EBITDA is 118. Index inclusion is a '
- "market-cap decision, not an endorsement of the accounts. || ⚠️ THE MONTH'S REAL SHAPE, WHICH NO CALENDAR SHOWS: Wed "
- '16 FOMC (hike ~87-90% priced) -> Thu 17 SIX BUYS -> Fri 18 BoJ HIKE EXPECTED AND TRIPLE WITCHING -> Mon 21 index '
- 'rebalance -> Wed 30 PCE, JABIL AND MICRON ON ONE DAY. The buys are sandwiched between the two most mechanical days '
- 'of the quarter. THEY STILL PROCEED. || ⚠️ DATA FAULT FOUND WHILE DOING THIS: THE WRITTEN MICRON PLAN IS BUILT ON A '
- '40,000 BUDGET BUT THE BOARD SAYS 51,000. Remaining room is 28,418.42; the written rungs and the parked reserve '
- 'account for only 17,418.42. ABOUT 11,000 HAS NO WRITTEN RULE ATTACHED. Recommendation: park it on the same two HBM '
- 'conditions as the existing 10,000 - no new spending. Same class of fault as the MRVL row. Both must be closed before '
- "their dates. || (B) THE CHINA RE-SHORING SLIDE - 'COMPANIES ARE RETURNING TO CHINA'. MY ANSWER IS NO, I DO NOT "
- 'AGREE, AND THE DATA IS NOT CLOSE. The slide is a fair summary of a REAL Reuters story (Ellen Zhang and Marius '
- 'Zaharia, 14 Sep 2026) - it is not fabricated. ⚠️ BUT THE STORY IS SIX SMALL CHINESE EXPORTERS ON THE RECORD PLUS '
- "TARGET AND SHEIN SOURCED ANONYMOUSLY, AND REUTERS ITSELF NOTES VIETNAM, INDONESIA AND THAILAND 'CONTINUE ATTRACTING "
- "INVESTMENT'. The slide's graphic - arrows from Southeast Asia into China - is not what the article says. || EVERY "
- 'HARD NUMBER RUNS THE OTHER WAY. US imports in JULY 2026 versus July 2025: FROM THAILAND +73.03%, FROM VIETNAM '
- '+46.85%, FROM CHINA +2.60% (Joint Economic Committee on Census and BEA data). THE US NOW RUNS A BIGGER GOODS DEFICIT '
- "WITH VIETNAM (23.3bn) THAN WITH CHINA (15.2bn) - BEA, July 2026. Vietnam's DISBURSED foreign investment - money "
- 'actually spent, the hardest measure there is - hit a five-year high of 17.25bn in the first eight months of 2026, up '
- "12%. China's own inbound investment was STILL SHRINKING at minus 5% year-on-year in H1 2026 (MOFCOM). AND AMCHAM "
- "CHINA'S OWN MEMBERS MOVED FURTHER AWAY FROM CHINA, NOT BACK: 71% have no intention of relocating out, UP 4 POINTS - "
- "and the survey does not even contain a question about returning. || ⚠️ THE REASON THE SLIDE'S LOGIC INVERTS IS A "
- 'FEBRUARY EVENT MOST THAI COVERAGE HAS NOT ABSORBED. On 20 FEBRUARY 2026 THE US SUPREME COURT HELD IN LEARNING '
- "RESOURCES v TRUMP THAT THE EMERGENCY-POWERS TARIFF LAW 'DOES NOT AUTHORIZE THE PRESIDENT TO IMPOSE TARIFFS IN ANY "
- "INSTANCE'. The reciprocal tariffs died on 24 February. China's pre-existing Section 301 tariffs SURVIVED because "
- 'they rest on different law. So the effective US tariff rate is now roughly 4.5% on Thailand and 6.1% on Vietnam '
- 'against 20-22.8% on China (Economist Intelligence Unit and Penn Wharton, both July 2026). THE REASON TO MANUFACTURE '
- 'OUTSIDE CHINA DID NOT NARROW IN 2026 - IT WIDENED. || THE ONE REAL DATA POINT UNDERNEATH THE SLIDE, AND IT IS A '
- 'DIFFERENT STORY FROM THE ONE THE SLIDE TELLS: CHINESE INVESTMENT APPLICATIONS INTO THAILAND FELL 55% BY VALUE AND '
- '45% BY COUNT IN H1 2026 VERSUS H1 2025 (Thai BOI: 102.26bn baht and 587 projects, down to 45.77bn baht and 321 '
- 'projects) while total Thai foreign investment applications ROSE about 80% by value. That is Chinese capital pausing '
- 'its push INTO Thailand - plausibly because once the US struck down the reciprocal tariffs, building in Thailand to '
- 'dodge them stopped paying. IT IS NOT FACTORIES LEAVING THAILAND FOR CHINA. ⚠️ AND NOTE WHAT FLATTERS THE THAI '
- 'HEADLINE: Singapore alone is 33.2bn of the 40.5bn US-dollar total and data centres are 1.115tn of the 1.473tn baht - '
- 'a handful of giant projects. PROJECT COUNT ACTUALLY FELL 31%. || ⚠️ WHAT THIS MEANS FOR PILLAR 4: ALMOST NOTHING, '
- 'AND THAT IS THE HONEST ANSWER. Every one of our 94 names is US-listed and sells into a global or American end '
- 'market. NO CHANGE TO ANY BUDGET, TRANCHE DATE, LIMIT OR THESIS. ⚠️ THE ONE PLACE IT COULD REACH US IS NARROW AND '
- 'WORTH NAMING: China restricting scandium and rare earths - the same allegation at the centre of the Bloom Energy '
- 'class action, and the reason MP Materials sits where it does. That is a CHINESE EXPORT CONTROL question, not a '
- 'factory-location question, and the slide does not address it. || ⚠️ WHERE THIS QUESTION GENUINELY MATTERS IS PILLARS '
- '1 AND 2, NOT PILLAR 4. Thai GDP grew just 1.9% in Q2 2026, down from 2.8% in Q1 (NESDC, 17 Aug). Real wages FELL '
- '2.88% year-on-year. Household debt is 86.7% of GDP. Japanese carmakers are shrinking in Thailand while Chinese EV '
- 'brands take over 70% of the electric market, and the auto sector is about a tenth of Thai GDP with roughly 700,000 '
- 'workers. IF THAT INDUSTRIAL BASE KEEPS THINNING, IT SHOWS UP IN SUBWAY FOOTFALL AND IN TENANT DEMAND AT THE CONDOS '
- 'LONG BEFORE IT SHOWS UP IN ANYTHING WE OWN IN NEW YORK. Conviction HIGH on all of the above. ⚠️ WHAT WOULD CHANGE MY '
- 'MIND ON THE CHINA CALL: three consecutive months of US imports from Thailand and Vietnam falling year-on-year while '
- 'imports from China rise, OR a named large manufacturer disclosing a China relocation in an actual filing rather than '
- "through anonymous sources. Neither has happened. || PREVIOUS ENTRY: Sep 14, 2026 - THE @LeifInvests 'BUY UNDER' "
- 'LIST, SECOND TIME FROM THIS AUTHOR. NO BUDGET HAS CHANGED, NOTHING BOUGHT OR SOLD. ⚠️ SAME SOURCE AS THE POWER-STOCK '
- 'BUY-UNDER LIST OF 12-13 SEPTEMBER, WHERE I FOUND FPS MISCATEGORISED AS A CONTRACTOR WHEN IT IS AN EQUIPMENT MAKER, '
- 'AND WHERE THE AUTHOR COULD NOT BE IDENTIFIED. Same caveat applies. || SIX OF THE TEN NAMES ARE FUNDED POSITIONS OF '
- 'OURS - META, MRVL, MU, NVDA, ORCL AND VRT - AND ⚠️ FOUR ARE NAMES WE HAVE ALREADY SOLD: AAOI on 9 Sep, TSLA on 8 '
- 'Sep, NBIS on 21 Jul and CRWV on 17 Jul. THAT IS THE SAME PATTERN AS THE PHOTONIC SLIDE, WHICH ALSO PUT TWO OF OUR '
- 'RECENT EXITS ON A BUY LIST. A list that contains forty percent names we have exited on written reasons is not a '
- 'filter, it is a sector roll-call. || THE GAPS FROM THE 11 SEP CLOSES TO HIS LEVELS: ORCL 151.16 to 135 is MINUS '
- '10.7%; NVDA 218.95 to 195 is MINUS 10.9%; VRT 257.06 to 225 is MINUS 12.5%; MU 975.26 to 850 is MINUS 12.8%; META '
- "648.03 to 545 is MINUS 15.9%; MRVL 236.10 to 190 is MINUS 19.5%. ⚠️ THESE ARE NOT 'BEARISH SENTIMENT' PRICES - THEY "
- 'ARE SIGNIFICANT-DRAWDOWN PRICES. If the market falls eight percent, this list buys NOTHING. || ⚠️⚠️ THE REAL LESSON '
- 'IS THE DIFFERENCE BETWEEN TWO PHILOSOPHIES, AND IT IS THE MOST USEFUL THING ON THIS SLIDE. OUR PLAN IS A DOLLAR '
- 'AMOUNT ON A DATE: VRT 6,475.56 ON 17 SEPTEMBER, META 10,760.49 ON 9 OCTOBER, MRVL TRANCHE 2 ON 9 OCTOBER, MU 4,000 '
- 'DECIDED ON 30 SEPTEMBER, NVDA 8,000 AT THE 18 NOVEMBER PRINT. HIS PLAN IS A PRICE WITH NO DATE AND NO SIZE. A DOLLAR '
- 'ON A DATE MEANS YOU DEFINITELY GET IN AND THE PRICE IS UNCERTAIN. A PRICE WITH NO DATE MEANS YOU MIGHT NEVER GET IN '
- 'AT ALL. ⚠️ SALEE OWNS 420 NVIDIA SHARES BECAUSE HE BOUGHT ON DATES, NOT BECAUSE HE WAITED FOR A NUMBER. || THE '
- 'SHARPEST CASE IS NVIDIA, AND IT FAVOURS US. HIS LEVEL IS 195. OUR LADDER RUNG 2 IS 200 AND RUNG 3 IS 180. OURS IS '
- '**HIGHER**, WHICH MEANS EASIER TO TRIGGER - AND IT IS ATTACHED TO 15,619.72 OF ACTUAL REMAINING BUDGET, WHEREAS HIS '
- '195 IS ATTACHED TO NOTHING. NVDA traded about 210.37 on 14 Sep, roughly 5% above our trigger and 8% above his. ⚠️ '
- 'AND THE SECOND SHARPEST CASE IS THE ONE THAT MATTERS THIS WEEK: VRT TRANCHE 1 OF 6,475.56 IS DUE ON THURSDAY 17 '
- 'SEPTEMBER AT WHATEVER THE MARKET IS - ABOUT 257 - WHILE HE SAYS WAIT FOR 225. IF SALEE WAITS AND 225 NEVER ARRIVES, '
- 'HE OWNS 14 VERTIV SHARES FOREVER INSTEAD OF BUILDING TOWARD A 21,000 POSITION. THE TRANCHE PROCEEDS. || ONE PLACE '
- 'HIS LEVELS ARE GENUINELY USEFUL: AS A SANITY CHECK ON OUR OWN LIMITS. On NVDA his 195 sits between our rung 2 at 200 '
- 'and rung 3 at 180, which is reassuring rather than alarming - two independent readers put the interesting zone in '
- 'the same place. THAT IS ALL A LIST LIKE THIS IS GOOD FOR. DECISION: NO CHANGE TO ANY BUDGET, ANY TRANCHE DATE OR ANY '
- 'LIMIT. Conviction HIGH. ⚠️ WHAT WOULD CHANGE MY MIND: nothing on a slide. The tranche dates move only on the written '
- 'per-name tests recorded on 14 September, and the limits move only on our own analysis. || PREVIOUS ENTRY: Sep 14, '
- '2026 - THE NVDA / ANTHROPIC SLIDE. ⚠️⚠️⚠️ THIS IS THE SHARPEST CONFLICT OF INTEREST IN THIS ENTIRE PROJECT AND IT '
- 'MUST BE READ BEFORE ANYTHING ELSE. THE SLIDE ASKS WHETHER SALEE SHOULD BUY MORE NVIDIA **BECAUSE NVIDIA MAY INVEST '
- "IN ANTHROPIC**. I AM MADE BY ANTHROPIC. THE CENTRAL QUESTION THE SLIDE RAISES - IS ANTHROPIC'S REVENUE REAL, DURABLE "
- 'AND WORTH A TWO-TRILLION-DOLLAR VALUATION - IS PRECISELY THE QUESTION I AM DISQUALIFIED FROM ANSWERING. I WILL NOT '
- 'ANSWER IT, AND SALEE SHOULD NOT ACCEPT ANY VIEW OF MINE ON IT. If that question ever drives a decision, it must be '
- 'put to someone with no stake. This is the third Anthropic-related disclosure in this project after 12 September and '
- "this morning's Nikkei note. || WHAT I CAN DO HONESTLY IS READ NVIDIA'S OWN AUDITED SEC FILINGS, WHICH ARE PUBLIC AND "
- 'WHICH I HAVE NO INTEREST IN. EVERYTHING BELOW IS FROM THOSE. NO BUDGET HAS CHANGED, NOTHING BOUGHT OR SOLD. || (1) '
- '⚠️⚠️ THE HEADLINE IS NOT A DEAL. IT IS A REPORTED NEGOTIATION FROM TWO ANONYMOUS SOURCES AT ONE OUTLET. The Reuters '
- "story of 11 September 2026 by Krystal Hu and Milana Vinn says NVIDIA is 'considering investing up to 10 billion "
- "dollars' as an ANCHOR INVESTOR IN AN IPO, sourced to 'two people familiar with the matter', with this verbatim "
- "caveat: 'THE PLANS REMAIN UNDER DISCUSSION AND COULD CHANGE, they cautioned, requesting anonymity because the "
- "discussions are confidential.' ANTHROPIC DECLINED TO COMMENT. NVIDIA DID NOT RESPOND. There is NO NVIDIA press "
- 'release - its newsroom for August and September 2026 does not mention Anthropic at all. There is NO Anthropic '
- 'announcement. ⚠️ I could not reach SEC EDGAR to confirm no 8-K exists, so that is NOT FOUND rather than proven. '
- "CREDIT WHERE DUE: THE SLIDE'S OWN RED-BOXED CAVEAT SAYING THE DEAL IS STILL UNDER NEGOTIATION IS THE MOST HONEST "
- "LINE ON IT - and the rest of the layout implies a certainty that line contradicts. || ⚠️⚠️ (2) THE SLIDE'S MOST "
- 'SERIOUS DEFECT: THERE ARE **TWO SEPARATE TEN-BILLION-DOLLAR FIGURES** AND IT SHOWS ONLY ONE. NVIDIA **ALREADY** '
- 'ANNOUNCED AN UP-TO-10-BILLION ANTHROPIC INVESTMENT ON 18 NOVEMBER 2025, in a JOINT, NAMED, REAL announcement with '
- 'Microsoft - Microsoft committing up to 5 billion alongside - in which Anthropic committed to purchase 30 BILLION '
- 'DOLLARS OF AZURE COMPUTE. THAT ONE IS REAL AND TEN MONTHS OLD. The September 2026 Reuters report describes a '
- 'SEPARATE, ADDITIONAL IPO anchor allocation, and Reuters itself draws the distinction. A READER OF THIS SLIDE WOULD '
- 'REASONABLY THINK ONE 10-BILLION EVENT IS BEING REPORTED AS NEWS WHEN THERE ARE TWO, ONE ANNOUNCED AND ONE MERELY '
- 'RUMOURED. || (3) ⚠️ ON THE ANTHROPIC REVENUE FIGURES I STATE THE PROVENANCE AND STOP. These are PRIVATE-COMPANY '
- 'NUMBERS - UNAUDITED, IN NO SEC FILING, AND UNVERIFIABLE BY ANYONE OUTSIDE. Of the three on the slide: the 9 BILLION '
- 'for late 2025 has NO ORIGINAL SOURCE I COULD FIND, NOT FOUND, it circulates only as a comparison inside later '
- 'articles; the 65 BILLION July run rate is a PRIVATE INVESTOR COMMUNICATION LEAKED TO PRESS, not an Anthropic public '
- "statement; and the 190-200 BILLION for 2028 is a FORECAST from 'two sources familiar with the company's financials' "
- 'reported by Reuters on 14 August. ⚠️ ONLY TWO ANTHROPIC FIGURES ARE COMPANY-DISCLOSED: a 47bn run rate stated on 28 '
- 'May 2026, and a 65bn Series H raise at a 965bn post-money valuation the same day. ⚠️ NOTE THE TRAP: THE MAY RAISE '
- "AND THE JULY RUN RATE ARE BOTH '65 BILLION' AND ARE EASILY CONFLATED. ⚠️ AND 'RUN RATE' IS NOT REVENUE - IT IS ONE "
- 'MONTH ANNUALISED. I OFFER NO OPINION ON WHETHER ANY OF IT IS DURABLE. || (4) THE THING THE SLIDE COMPLETELY OMITS, '
- "AND IT IS BIGGER THAN EVERYTHING ON IT. NVIDIA'S OWN 10-Q FOR THE QUARTER ENDED 26 JULY 2026 DISCLOSES, VERBATIM: "
- "'We have entered into land, power, and shell guarantees for select AI cloud partners' data center lease obligations "
- "IN THE EVENT OF THEIR DEFAULT.' And: 'In August 2026, we entered into guarantees, CAPPED AT A TOTAL OF 105 BILLION "
- "DOLLARS, to provide credit support on a land, power, and shell buildout with affiliates of SB Energy Corp.' ⚠️⚠️ "
- "THAT 105 BILLION IS LARGER THAN NVIDIA'S ENTIRE EQUITY-INVESTMENT PORTFOLIO, IT IS OFF THE BALANCE SHEET, AND IT "
- 'PAYS OUT IF CUSTOMERS DEFAULT. THE SLIDE DEBATES A RUMOURED 10 BILLION WHILE IGNORING A DISCLOSED 105 BILLION. For '
- 'scale, the same filing shows NON-MARKETABLE EQUITY SECURITIES OF 47,898 MILLION - with 13,106 MILLION OF NET '
- 'ADDITIONS IN THAT QUARTER ALONE - plus 42,783m of marketable equity and 3.3bn of equity-method investments in '
- "'infrastructure financiers'. ABOUT 94 BILLION OF INVESTMENTS, UP FROM ROUGHLY 7 BILLION A YEAR EARLIER. CFO "
- "commentary, verbatim: 'Our equity investments are focused on AI model makers, infrastructure financiers, and other "
- "private companies.' || (5) ⚠️ THE CIRCULAR-FINANCING QUESTION IS REAL, AND THE HONEST ANSWER IS THAT NOBODY OUTSIDE "
- 'NVIDIA CAN MEASURE IT, BECAUSE NVIDIA DOES NOT DISCLOSE REVENUE FROM COMPANIES IT HAS INVESTED IN. The 10-Q says '
- "only: 'We estimate that ONE AI RESEARCH AND DEPLOYMENT COMPANY contributed a meaningful amount of our revenue by "
- "purchasing cloud services from our customers' - the entity is ANONYMISED, the amount is not given. Ritesh Vajariya "
- 'of The Forward View made the precise structural point on 1 September 2026: neither Item 404 nor ASC 850 is triggered '
- 'BECAUSE NVIDIA IS THE INVESTOR RATHER THAN THE INVESTEE, so the loop is legally invisible. ⚠️ THE ACCOUNTING IS '
- 'ENTIRELY LEGITIMATE - AND IT IS ALSO EXACTLY WHAT MADE THE 2000-2001 TELECOM CASES HARD TO SEE. || JENSEN HUANG '
- "ANSWERED THIS ON THE RECORD AT THE GOLDMAN SACHS CONFERENCE ON 10 SEPTEMBER 2026, VERBATIM: 'Well, it's not circular "
- "because WE PUT A LITTLE BIT OF MONEY IN, AND A LOT OF MONEY COMES BACK.' And: 'I look at the spreadsheet, WE PUT IN "
- "ONE DOLLAR AND ONE HUNDRED DOLLARS COMES BACK IN. Is that circular? If that is, let's do more of that.' And: 'I'm "
- "not taking any risks... I need a sure thing.' ⚠️ THE HISTORICAL PRECEDENT, AND I WILL NOT OVERSTATE IT: SEC PRESS "
- 'RELEASE 2004-67 OF 17 MAY 2004 FOUND LUCENT IMPROPERLY RECOGNISED ABOUT 1.148 BILLION OF REVENUE AND 470 MILLION OF '
- "PRE-TAX INCOME IN FISCAL 2000 THROUGH UNDISCLOSED SIDE AGREEMENTS AND CREDITS TO INDUCE CUSTOMERS TO BUY. Lucent's "
- 'revenue fell from over 38 billion in 1999 to 8 billion by 2006. ⚠️ BUT THAT CASE WAS ACTUAL FRAUD. NOTHING OF THE '
- 'KIND HAS BEEN ALLEGED AGAINST NVIDIA, THERE IS NO SEC COMMENT LETTER, NO ENFORCEMENT ACTION AND NO REGULATORY '
- 'STATEMENT: NOT FOUND. THE PARALLEL IS STRUCTURAL - AN EQUIPMENT VENDOR FUNDING THE CUSTOMERS WHO BUY ITS EQUIPMENT '
- "DURING A CAPEX BOOM - NOT AN ACCUSATION. || (6) NVIDIA'S OWN BUSINESS IS EXTRAORDINARY AND THAT IS NOT IN DOUBT. Q2 "
- 'FY2027 to 26 July 2026: REVENUE 96.2 BILLION, UP 106% YEAR ON YEAR; Data Center 89.0bn, UP 117%; GAAP GROSS MARGIN '
- '75.0%; GAAP OPERATING INCOME 63,734 MILLION, a 66.3% OPERATING MARGIN; GAAP NET INCOME 59,688 MILLION, a 62.0% NET '
- "MARGIN. Q3 GUIDED TO 108.0 BILLION plus or minus 2% at a 74.0% gross margin. ⚠️ AND THE GUIDANCE 'IS NOT ASSUMING "
- "ANY DATA CENTER COMPUTE REVENUE FROM CHINA' - Hopper shipments to China were under 1% of Data Center revenue in the "
- 'quarter. CHINA IS EFFECTIVELY ZEROED OUT, WHICH IS BOTH A RISK REMOVED AND AN OPTION NOT PRICED. ⚠️ CUSTOMER '
- "CONCENTRATION, VERBATIM: 'one direct customer represented 16% of total revenue' in Q2, three represented 16%, 15% "
- "and 13% across the half, and 'FIVE DIRECT CUSTOMERS ACCOUNTED FOR 22%, 14%, 13%, 11%, AND 10% OF OUR ACCOUNTS "
- "RECEIVABLE' - SEVENTY PERCENT OF RECEIVABLES IN FIVE NAMES. That is the 20%-of-revenue test already on our December "
- 'Bubble Watch, and it is not yet breached. || (7) DECISION: NO CHANGE. WE DO NOT BUY MORE NVDA ON THIS NEWS, AND THE '
- "REASONS HAVE NOTHING TO DO WITH ANTHROPIC. FIRST: NVDA IS ALREADY 13.3% OF THE PORTFOLIO'S MARKET VALUE AND THE "
- 'LARGEST SINGLE POSITION - 420 shares worth about 91,959 against 79,380.28 invested. SECOND: THE BUDGET IS 95,000 '
- 'WITH 15,619.72 OF ROOM LEFT, AND THE PLAN ALREADY SAYS EXACTLY HOW TO SPEND IT - LADDER RUNG 2 AT ANY CLOSE AT OR '
- 'BELOW 200 AND RUNG 3 AT OR BELOW 180. THOSE RUNGS ARE PRICE TRIGGERS AND THEY DO NOT CARE ABOUT NEWS. THIRD, AND '
- 'THIS IS THE DISCIPLINE POINT: BUYING ON A TWO-ANONYMOUS-SOURCE REPORT OF A NEGOTIATION IS PRECISELY WHAT A WRITTEN '
- 'PLAN EXISTS TO PREVENT. ⚠️ AND NOTE WHERE THE PRICE ACTUALLY IS: NVDA WAS TRADING AROUND 210.37 ON 14 SEPTEMBER, '
- 'DOWN ABOUT 3.6% ON THE DAY IN THE AI-SAFETY SELLOFF - ABOUT 5% ABOVE THE RUNG-2 TRIGGER. THE LADDER MAY FIRE ON ITS '
- 'OWN WITHOUT ANY DECISION BEING MADE. THAT IS THE SYSTEM WORKING. Conviction HIGH. ⚠️ WHAT WOULD CHANGE MY MIND - AND '
- 'DELIBERATELY, IT IS NOT THE DEAL CONFIRMING: the rungs stay price-based. What would make me want to REDUCE rather '
- "than add is any of three things, none of which is a price: NVIDIA'S LARGEST CUSTOMER PASSING 20% OF REVENUE; THE "
- 'OFF-BALANCE-SHEET GUARANTEE TOTAL RISING ABOVE THE EQUITY PORTFOLIO BY MORE THAN IT ALREADY HAS, WITH NO '
- 'CORRESPONDING DISCLOSURE OF WHO IS BEING GUARANTEED; OR NVIDIA BEGINNING TO DISCLOSE - OR A REGULATOR REQUIRING IT '
- 'TO DISCLOSE - REVENUE FROM COMPANIES IT HOLDS EQUITY IN, AND THAT FIGURE PROVING LARGE. THE FIRST IS ALREADY ON THE '
- '10 DECEMBER BUBBLE WATCH; THE OTHER TWO ARE ADDED TO IT TODAY. || PREVIOUS ENTRY: Sep 14, 2026 - THE ROBOTAXI SLIDE, '
- 'AND IT IS THE THIRD IN A ROW TO CITE AN AUTHORITATIVE SOURCE FOR SOMETHING THAT SOURCE DOES NOT SAY. NO BUDGET HAS '
- 'CHANGED, NOTHING BOUGHT OR SOLD. ⚠️⚠️ FIRST THE FACT THAT FRAMES EVERYTHING: WE SOLD TESLA ON 8 SEPTEMBER AT 365.09, '
- 'TWENTY SHARES, REALISING MINUS 687.17. TESLA CLOSED AT 365.44 ON 11 SEPTEMBER. THE SALE HAS COST US SEVEN DOLLARS IN '
- 'SIX DAYS. This slide is asking Salee to buy back, at the same price, a position he exited last week for written '
- 'reasons - and those reasons have since been CONFIRMED by the filings, not weakened. || (1) ⚠️⚠️ THE SLIDE SAYS '
- "'ROBOTAXI IS MAKING MONEY FOR ELON EVEN WHILE HE SLEEPS' AND CITES FORM 10-K AS ITS SOURCE. I READ THE 10-K. TESLA "
- 'DISCLOSES NO ROBOTAXI REVENUE ANYWHERE - NOT IN THE 10-K, NOT IN THE 10-Q, NOT IN THE SHAREHOLDER DECK. NO SEGMENT, '
- 'NO LINE, NO DOLLAR AMOUNT, NONE. Tesla has exactly TWO reportable segments, automotive and energy generation and '
- "storage. And the 10-K ENUMERATES what sits inside 'services and other', verbatim: 'sales of used vehicles, "
- 'non-warranty maintenance services and collision, paid Supercharging sessions, automotive insurance business revenue, '
- "part sales and retail merchandise sales.' RIDE-HAILING IS NOT IN THAT LIST. There is no sentence anywhere in the "
- 'filing telling an outside reader which line robotaxi revenue lands in. || WHAT THE 10-K ACTUALLY SAYS IS '
- "FORWARD-LOOKING AND CAUTIOUS, VERBATIM: 'In June 2025, we launched our Robotaxi service, an autonomous ride-hailing "
- "platform that harnesses our technology and vehicles' and 'We EXPECT this service WILL open access to an expanded "
- "customer base... and UNLOCK THE POTENTIAL to advance a service-driven business model'. ⚠️ AND THE MOST HONEST "
- "PASSAGE IS IN THE RISK FACTORS, VERBATIM: 'If the uptake rate for autonomous driving solutions does not develop as "
- "we expect, our business, prospects, financial condition and operating results MAY BE HARMED.' THE ONLY ROBOTAXI "
- "METRIC TESLA PUBLISHES ANYWHERE IS A CHART LABELLED 'CUMULATIVE PAID ROBOTAXI MILES' - MILES, WITH NO DOLLARS, NO "
- 'RIDE COUNT AND NO FLEET SIZE. || ⚠️ THE PATTERN IS NOW THREE FOR THREE AND IT IS THE MOST USEFUL THING SALEE CAN '
- 'TAKE FROM THIS WEEK: the net-income slide cited TradingView for figures whose PERIODS it could not distinguish; the '
- 'VRT and ON slide implied an onsemi datacentre business the company HAS NEVER PUT A DOLLAR FIGURE ON; and this one '
- 'cites the 10-K for revenue THE 10-K DOES NOT CONTAIN. IN EVERY CASE THE CITED SOURCE IS REAL AND THE CLAIM IS NOT IN '
- 'IT. CITING A FILING IS NOT THE SAME AS READING ONE. || (2) ⚠️ WHAT IS ACTUALLY DEPLOYED IS TINY, AND IN CALIFORNIA '
- "THERE IS A HUMAN DRIVING THE CAR. TESLA'S OWN Q2 2026 DECK CARRIES THIS FOOTNOTE, VERBATIM: 'Active driver "
- "supervision required; DOES NOT MAKE THE VEHICLE AUTONOMOUS' and 'Bay Area operations use FSD (Supervised) pursuant "
- "to CA TCP permit # TCP0046782 - A'. THE CALIFORNIA REGULATOR IS BLUNTER. PAT TSEN, CPUC DEPUTY EXECUTIVE DIRECTOR, "
- "ON THE RECORD 25 MARCH 2026: 'Tesla is NOT operating an autonomous vehicle service... they do not have a permit with "
- "the California Public Utilities Commission.' And: 'that is THE DRIVER. That is not a safety driver. So even if "
- "they're using a tool to help them drive autonomously, there is A DRIVER IN THE SAFETY SEAT.' || ⚠️ AND THE PERMIT "
- 'POSITION IS A HARD, CHECKABLE FACT: TESLA IS NOT PERMITTED TO CARRY PAYING PASSENGERS IN DRIVERLESS VEHICLES IN '
- "CALIFORNIA. It does not appear on the CPUC's list of AV permit holders - which names NURO, TENSOR AUTO, WAYMO, "
- "WERIDE AND ZOOX. It is ABSENT from the California DMV's Driverless Testing list and ABSENT from the Deployment list. "
- 'What it holds is a CHARTER-PARTY CARRIER PERMIT, the same class limousine companies hold. || THE FLEET: 42 ROBOTAXIS '
- 'REGISTERED IN TEXAS per Texas DMV data as of 2 June 2026, of which ABOUT 20 WERE ACTIVE UNSUPERVISED IN AUSTIN. '
- 'Unsupervised operation began 22 JANUARY 2026 WITH A SINGLE VEHICLE. ⚠️ TESLA ITSELF DISCLOSES NO FLEET SIZE AT ALL. '
- '⚠️ A Bloomberg headline of 10 June 2026 gives 59 vehicles but could not be fetched - UNVERIFIED. || (3) THE '
- "COMPARISON THAT SETTLES THE TECHNOLOGY QUESTION, AND IT CONNECTS TO YESTERDAY'S PHOTONICS NOTE. Yesterday I recorded "
- "that Tesla PUBLICLY REJECTED LIDAR - its VP of AI Ashok Elluswamy on 22 July 2026: 'You can have safe, comfortable, "
- "and affordable autonomy with just cameras.' TODAY THE OTHER SIDE OF THAT SAME FACT: WAYMO, WHICH USES LIDAR, CAMERAS "
- 'AND RADAR, IS DOING MORE THAN 500,000 PAID RIDES A WEEK ACROSS 14 CITIES WITH 20 MILLION LIFETIME RIDES - Sundar '
- "Pichai on Alphabet's Q1 2026 call, verbatim: 'Waymo also surpassed 500,000 fully autonomous rides per week, DOUBLING "
- "IN LESS THAN A YEAR.' TESLA HAS TENS OF VEHICLES. THAT IS NOT A CLOSE RACE TODAY. || ⚠️⚠️ BUT HERE IS THE FACT THAT "
- "SHOULD COOL EVERYONE, BULL AND BEAR ALIKE: WAYMO IS NOT PROFITABLE EITHER. Alphabet's Other Bets segment, whose "
- "revenue Alphabet describes as 'generated primarily from the sale of autonomous transportation services and internet "
- "services', reported Q2 2026 REVENUE OF 382 MILLION AND AN OPERATING LOSS OF 1,799 MILLION - A LOSS THAT WIDENED FROM "
- '1,246 MILLION A YEAR EARLIER. THE COMPANY THAT IS BEST IN THE WORLD AT THIS LOSES ABOUT FIVE DOLLARS FOR EVERY '
- "DOLLAR IT EARNS, AND IS LOSING MORE, NOT LESS. ROBOTAXI IS NOT A PROFIT POOL YET FOR ANYBODY. ⚠️ Waymo's own share "
- 'of that loss is not disclosed: NOT FOUND. || (4) ⚠️ TWO NHTSA INVESTIGATIONS ARE OPEN, AND ONE OF THEM IS AN '
- 'EXISTENTIAL QUESTION RATHER THAN A DEFECT PROBE. PE25012, OPENED 3 DECEMBER 2025, covers every Tesla with FSD sold '
- "or leased in the US and concerns, verbatim, 'Full Self-Driving engaged, executed driving maneuvers that MAY "
- "CONSTITUTE TRAFFIC SAFETY VIOLATIONS' - built on 62 consumer complaints, 14 Standing General Order reports and 4 "
- 'media reports of red-light running and wrong-way lane entries. ⚠️ AND AQ26002, AN AUDIT QUERY OPENED 4 SEPTEMBER '
- "2026 - THE SAME DAY CYBERCAB COMMERCIAL RIDES BEGAN IN AUSTIN - EXAMINING WHETHER TESLA'S OWN CERTIFICATION THAT "
- 'CYBERCAB MEETS FEDERAL MOTOR VEHICLE SAFETY STANDARDS IS VALID AT ALL. NHTSA Administrator Jonathan Morrison, '
- "verbatim: 'NHTSA fully supports the safe development and deployment of automated vehicles. But as the federal "
- "regulator, we need to ensure that all of our laws are followed.' ⚠️ CORRECTION TO OUR OWN SELL NOTE: it records "
- "AQ26002 as opened SEP 3; NHTSA's own press release and the contemporaneous reporting both say 4 SEPTEMBER 2026. The "
- 'substance is unchanged. || (5) THE EV BUSINESS IS WHAT ACTUALLY VALUES THE STOCK TODAY, AND THE SELL THESIS FROM 8 '
- 'SEPTEMBER IS CONFIRMED BY THE FILINGS. Q2 2026 to 30 June: revenue 28,236m PLUS 26%, which sounds fine - but GAAP '
- 'GROSS MARGIN 16.8% DOWN FROM 17.2%, GAAP OPERATING MARGIN 1.4%, AND OPERATING INCOME DOWN 57% YEAR ON YEAR TO 398 '
- 'MILLION. FREE CASH FLOW WAS NEGATIVE 1,092 MILLION. ⚠️ REGULATORY CREDITS, WHICH CARRY ALMOST NO COST AND ARE '
- 'THEREFORE NEARLY PURE PROFIT, FELL 67% TO 146 MILLION FROM 439 MILLION - against total operating income of just 398 '
- "million. ⚠️ AND FY2025 WAS TESLA'S FIRST ANNUAL REVENUE DECLINE EVER: 94,827m against 97,690m, with net income "
- 'NEARLY HALVED to 3,794m from 7,091m. ⚠️ NOTE TWO ODDITIES IN Q2 2026: DELIVERIES OF 480,126 EXCEEDED PRODUCTION OF '
- '451,758, which is selling inventory rather than growing output; and NET INCOME OF 1,114m WAS 2.8 TIMES OPERATING '
- "INCOME OF 398m, meaning most of the quarter's profit did not come from operations - THE COMPOSITION OF THAT "
- 'BELOW-THE-LINE INCOME IS NOT FOUND IN THE SOURCES I COULD REACH. || IN FAIRNESS, ONE PART IS GENUINELY GROWING: '
- 'ENERGY STORAGE DEPLOYED 13.5 GIGAWATT-HOURS IN Q2, UP ABOUT 41%, AND 46.7 GWh IN FY2025 AGAINST 31.4 IN FY2024. ⚠️ '
- 'BUT ITS GROSS MARGIN COMPRESSED FROM 30.3% TO 20.4% - VOLUME UP, PROFITABILITY DOWN, THE SAME STORY AS THE CARS. || '
- '(6) VALUATION: TRAILING P/E 379.22 AND FORWARD P/E 191.97 AT THE 11 SEP CLOSE OF 365.44, ON A 1.44 TRILLION MARKET '
- 'CAP, WITH TRAILING EPS DOWN 35.6%. 46 ANALYSTS AVERAGE 390.09 - ONLY 6.75% ABOVE THE PRICE. ⚠️ AND ON THE ROBOTAXI '
- 'VALUATION SPECIFICALLY, READ THE TWO SOURCES VERY DIFFERENTLY. ARK INVEST PUBLISHES 2,600 A SHARE BY 2029 and claims '
- "'NEARLY 90% OF TESLA'S ENTERPRISE VALUE AND EARNINGS WILL BE ATTRIBUTED TO THE ROBOTAXI BUSINESS IN 2029', with a "
- 'bull-case line of 951 BILLION DOLLARS of 2029 robotaxi revenue - ⚠️ AGAINST ZERO DISCLOSED ROBOTAXI REVENUE TODAY '
- 'AND A FLEET IN THE TENS OF VEHICLES. AND ⚠️ ARK IS A LARGE TESLA SHAREHOLDER PUBLISHING A VALUATION OF A STOCK IT '
- 'OWNS - THAT IS PROMOTION, NOT INDEPENDENT ANALYSIS - AND THE NOTE IS DATED 12 JUNE 2024, OVER TWO YEARS OLD. By '
- "contrast MORGAN STANLEY'S ANDREW PERCOCO RATES IT HOLD AT 415, writing that Tesla 'will require CLEARER EVIDENCE "
- "THAT ROBOTAXI IS SCALING and more tangible Optimus proof points to support the ROI on elevated capex', and forecasts "
- 'a fleet of only 1,500 vehicles by end-2026. ⚠️ NO BANK-PUBLISHED PER-SHARE ROBOTAXI VALUATION COULD BE FOUND: NOT '
- 'FOUND. || (7) DECISION: TESLA STAYS OFF THE BOARD. IT IS NOT RE-ADDED, NOT FUNDED, AND NOT TRACKED. Conviction HIGH. '
- 'The robotaxi CONCEPT is serious and may well be a large business one day - but a concept is not a cash flow, and at '
- '192 times FORWARD earnings Salee would be paying today for a business that discloses no revenue, holds no driverless '
- 'passenger permit in its most important state, runs tens of vehicles against a competitor running half a million '
- 'rides a week, and is under two federal investigations, one of which questions whether its vehicle may legally '
- 'operate at all. ⚠️ WHAT WOULD CHANGE MY MIND, AND IT IS DELIBERATELY SPECIFIC: TESLA DISCLOSING ROBOTAXI AS A '
- 'SEPARATE REVENUE LINE WITH A DOLLAR FIGURE IN A 10-Q OR 10-K, **AND** HOLDING A CPUC DRIVERLESS DEPLOYMENT PERMIT '
- 'PERMITTING PAID DRIVERLESS RIDES IN CALIFORNIA. Until the company itself will put a number in a filing, nobody '
- 'outside it should put one in a valuation. || PREVIOUS ENTRY: Sep 14, 2026 - THE 7-LAYER PHOTONICS STACK SLIDE. IT '
- 'NAMES 28 TICKER SLOTS AND WE ALREADY OWN OR TRACK 17 OF THEM. NO BUDGET HAS CHANGED, NOTHING BOUGHT OR SOLD; ONE '
- 'TRACKING NAME ADDED. || THIS IS THE BEST-CONSTRUCTED SLIDE SALEE HAS SENT ME, AND THE MOST USEFUL THING ABOUT IT IS '
- 'THAT IT IS LARGELY A PICTURE OF OUR OWN BOARD. Layer 7 end markets: WE OWN NVDA AND GOOGL. Layer 6 systems: WE OWN '
- 'LITE and SOLD COHR. Layer 5 components: LITE again, AAOI SOLD. LAYER 4 INTEGRATION IS OUR STRONGEST - WE FUND MRVL '
- '21,000, CRDO 18,000 AND ALAB 11,000, AND TRACK FN. Layer 3 wafers: we track AXTI and TSEM. Layer 2 materials: we '
- 'track GLW. Layer 1: we fund AMD 24,000 and AVGO 50,000, and track INTC and QCOM. ⚠️ THE HONEST READ IS THAT THE '
- 'SLIDE VALIDATES THE STRUCTURE WE ALREADY HAVE RATHER THAN REVEALING A GAP - which is a good outcome, not a boring '
- 'one. || (1) ⚠️⚠️ FOUR PLACEMENTS ARE WRONG, AND ONE OF THEM IS DIRECTLY RELEVANT TO A TRADE SALEE IS ABOUT TO MAKE. '
- "⚠️ QCOM IS ON THIS SLIDE AS A PHOTONICS 'FOUNDATION' NAME AND QCOM IS ON OUR SELL LIST. I searched Qualcomm's FY2025 "
- '10-K for the period ended 28 SEPTEMBER 2025 for photonics, silicon photonics, optical transceiver, optical '
- 'interconnect, laser, lidar and optical networking as product lines. NO MENTIONS FOUND. QCT is described as '
- "integrated circuits for mobile devices, automotive and IoT. QUALCOMM'S PRESENCE ON THIS SLIDE IS UNSUPPORTED BY ITS "
- 'OWN FILING, AND IF Salee HAD TAKEN THE SLIDE AT FACE VALUE HE MIGHT HAVE HELD A STOCK WE DECIDED TO SELL FOR A '
- 'BUSINESS THAT DOES NOT EXIST. THE SELL STANDS. || ⚠️ TSLA IN LAYER 7 IS NOT JUST WRONG, IT IS BACKWARDS. Tesla is '
- 'the one major autonomy company that has publicly REJECTED the photonic sensing technology that would make it a '
- 'photonics customer. ASHOK ELLUSWAMY, VP OF AI, ON THE Q2 2026 EARNINGS CALL OF 22 JULY 2026, VERBATIM: '
- "'Historically, the so-called experts have always claimed that you need LiDARs, radars, HD maps, and the entire "
- 'kitchen sink to drive safely. Here we show that such is not true. YOU CAN HAVE SAFE, COMFORTABLE, AND AFFORDABLE '
- "AUTONOMY WITH JUST CAMERAS.' Musk in 2019: 'Lidar is a fool's errand... anyone relying on lidar is doomed.' The only "
- "sourced Tesla lidar purchase is from Luminar's own disclosure - Tesla was its largest lidar customer in Q1 2024 at "
- 'ABOUT 2 MILLION DOLLARS, which is a ground-truth test rig, not a supply-chain position. TESLA IS AN ANTI-PHOTONICS '
- "DATAPOINT. || ⚠️ ALB, ALBEMARLE, IN LAYER 2 MATERIALS IS WRONG. Albemarle's own industries page lists every market "
- 'it serves and NEVER MENTIONS OPTICS, PHOTONICS, OPTICAL FIBRE, LASERS OR OPTICAL GLASS. It is a LITHIUM AND BROMINE '
- 'specialty chemicals company - Energy Storage, Specialties and Ketjen catalysts. It looks like a battery-materials '
- "name swept in on the word 'materials'. || ⚠️ MP MATERIALS IN LAYER 2 IS WRONG FOR A SUBTLE AND INSTRUCTIVE REASON: "
- 'IT MINES THE WRONG RARE EARTHS. The rare earth that matters in photonics is ERBIUM, used in erbium-doped fibre '
- "amplifiers to boost optical signals. MP's OWN PRODUCT LIST HAS NINE ITEMS - bastnaesite concentrate, cerium "
- 'chloride, lanthanum carbonate, magnetics products, NdFeB alloy flake, NdFeB magnets, NdPr metal, NdPr oxide, and '
- "heavy rare earth concentrate. ERBIUM DOES NOT APPEAR. MP's own description of its flagship NdPr oxide names three "
- 'applications: EV motors, robotics actuators and electronics. IT IS A MAGNETS COMPANY, NOT A PHOTONICS COMPANY. ⚠️ '
- 'Whether its unspecified heavy rare earth concentrate contains commercially relevant erbium is NOT FOUND. || (2) ⚠️ '
- "LAYER 1 IS A CATCH-ALL AND IT INVERTS THE WHOLE STACK. 'Foundation: R&D, IP and development' is not a supply-chain "
- 'layer - it is an attribute of every layer. And three of its four names sit ABOVE the photonics they touch, not '
- 'beneath it. ⚠️ AVGO IS THE CLEAREST CASE: BROADCOM HAS A NAMED OPTICAL SYSTEMS DIVISION WITH A VP AND GENERAL '
- "MANAGER, AND IT SHIPPED WHAT IT CALLS THE INDUSTRY'S FIRST VOLUME-PRODUCTION CO-PACKAGED OPTICS SOLUTION, Tomahawk "
- '5-Bailly, followed by third-generation 200G-per-lane CPO on 15 May 2025 and the Tomahawk 6-Davisson 102.4-terabit '
- 'switch. AVGO BELONGS AT LAYER 6 OR 4, NOT UNDERNEATH THE MATERIALS LAYER. We fund it at 50,000 and that is '
- 'unaffected. AMD has a real if small position - it ACQUIRED SILICON PHOTONICS STARTUP ENOSEMI, announced 28 May 2025, '
- "to 'support and develop a variety of photonics and co-packaged optics solutions'. ⚠️ AND THE INTEL STORY IS "
- 'HALF-TRUE IN BOTH DIRECTIONS, WHICH IS WORTH GETTING RIGHT: INTEL SOLD ITS PLUGGABLE OPTICAL TRANSCEIVER MODULE '
- 'LINES TO JABIL IN 2023, BUT KEPT THE COMPONENTS AND OPTICAL I/O BUSINESS. Its silicon photonics page, last modified '
- '3 FEBRUARY 2026, advertises 400G, 800G and 1.6T solutions, Optical Compute Interconnect at 4 terabits bidirectional, '
- 'and claims MORE THAN 8 MILLION PHOTONIC INTEGRATED CIRCUITS WITH OVER 32 MILLION ON-CHIP LASERS SHIPPED SINCE 2016. '
- 'Not sold, not wound down - narrowed. || (3) ⚠️ NO CREDIBLE SOURCE FOR THE SEVEN-LAYER FRAMEWORK COULD BE FOUND - not '
- "OIDA, not SPIE, not Photonics21, not the IPSR-I roadmap. NOT FOUND. Treat it as one retail author's organising "
- 'device. ⚠️ AND THERE IS REAL THAI RESEARCH THAT CONTRADICTS IT: KASIKORN SECURITIES PUBLISHED A PHOTONICS PIECE ON '
- '25 JUNE 2026 USING A THREE-TIER FRAMEWORK - laser components upstream (LITE, COHR), transceiver modules and fibre '
- '(FN, AAOI), and system and network chip designers (AVGO, MRVL). KASIKORN PUTS AVGO AT THE **TOP** AS A SYSTEM '
- 'DESIGNER; THIS SLIDE PUTS IT AT THE **BOTTOM** AS A FOUNDATION LAYER. THAT INVERSION IS ITSELF THE EVIDENCE THAT THE '
- 'SLIDE IS NOT FROM A PROFESSIONAL SOURCE. ⚠️ ALSO NOTE LITE APPEARS TWICE, IN BOTH LAYER 5 AND LAYER 6 - a '
- 'duplication in the framework itself. || (4) OF THE ELEVEN NAMES NOT ON OUR BOARD, EXACTLY ONE IS A GENUINE GAP, AND '
- 'I HAVE ADDED IT AS A TRACKING NAME. ⚠️ CIEN, CIENA, IS NOW THE 94TH TICKER IN GROUP 4 WITH NO BUDGET AND NOTHING '
- 'BOUGHT. It is the purest optical-systems company of the lot and the numbers are real: FISCAL Q3 2026 TO 1 AUGUST, '
- 'REVENUE 1,671.1 MILLION, PLUS 37.0% YEAR ON YEAR, GAAP GROSS MARGIN 45.4%, GAAP OPERATING MARGIN 18.0%, GAAP NET '
- 'MARGIN 15.9%, GAAP DILUTED EPS 1.83, AND GAAP PROFITABLE ON A TRAILING BASIS AT 654.41 MILLION. 20 analysts average '
- '504.13 against the 11 Sep close of 349.54, a 49.57bn market cap. Products are the 6500 Packet-Optical Platform and '
- 'Waveserver. ⚠️ ITS FIELDS ARE DELIBERATELY INCOMPLETE ON THE BOARD - trailing revenue, trailing P/E, price/sales, '
- 'free cash flow, 52-week range and Rule of 40 are all BLANK because I have not verified them, AND THEY MUST BE FILLED '
- 'BEFORE ANY BUDGET DECISION. ⚠️ AND ITS FORWARD P/E CONFLICTS WITHIN ONE SOURCE ON THE SAME DAY: 33.78 on the quote '
- 'page against 48.72 on the forecast page. The board carries 33.78 and the conflict is recorded. The margins above are '
- 'LAST QUARTER, not trailing - do not mix them. || THE OTHER TEN ARE DECLINED, AND HERE IS WHY IN ONE LINE EACH. ⚠️ '
- 'IPGP LOOKS LIKE A PHOTONICS NAME AND IS NOT THE ONE THE SLIDE IMPLIES - IT DIVESTED ITS TELECOM BUSINESS IN 2022, '
- 'its growth driver per CEO Dr Mark Gitin is INDUSTRIAL AND BATTERY MANUFACTURING, and its GAAP OPERATING MARGIN IS '
- '1.6%. It makes fibre lasers for cutting metal, not optics for datacentres. ⚠️ GFS, GLOBALFOUNDRIES, has a genuine '
- 'silicon photonics platform but a 28.3% GAAP GROSS MARGIN and revenue growth of only 5.8% - the same objection that '
- 'keeps TSEM unfunded, and TSEM at least is growing 24%. ⚠️ POET IS THE ONE TO AVOID: A 1.38 BILLION DOLLAR MARKET CAP '
- 'ON 569,925 DOLLARS OF QUARTERLY REVENUE - not millions, DOLLARS - with an 11.3m quarterly net loss and ZERO ACTIVE '
- 'ANALYST COVERAGE since December 2024. ⚠️ IQE IS NOT US-LISTED - it trades on LSE AIM in pence and its quote was 18 '
- 'days stale when checked; outside the mandate. ALB and MP fail the photonics test above. STM and LMT are real '
- 'companies but neither is a photonics pure play - LMT is a genuine BUYER of high-energy lasers and adaptive optics, '
- 'with a 500kW laser weapon award on 9 July 2026, but its photonics spend as a share of revenue is NOT FOUND. TSLA '
- 'fails for the reason above. AEHR is the interesting near-miss: ⚠️ THE SLIDE PUTS IT IN COMPONENTS AND IT IS TEST '
- 'EQUIPMENT, NOT A COMPONENT - but its silicon photonics exposure is REAL AND ACCELERATING, with four separate '
- "silicon-photonics orders announced in MARCH, JUNE, JULY AND AUGUST 2026. CEO GAYN ERICKSON, VERBATIM: 'silicon "
- 'photonics is moving from technology adoption into manufacturing scale-up, and we believe that transition represents '
- "a significant long-term growth opportunity.' ⚠️ AGAINST IT: a 3.09bn market cap, GAAP UNPROFITABLE with a fiscal "
- '2026 net loss of 7.1m, and a forward P/E of 126.25. RIGHT THEME, WRONG NUMBERS - and it goes on the December list to '
- 'watch, not to buy. || (5) DECISION: NO BUDGET CHANGES, NOTHING BOUGHT OR SOLD, GROUP 4 STAYS AT 83,000. CIEN IS '
- 'TRACKED, NOT FUNDED. Conviction HIGH. ⚠️ WHAT WOULD CHANGE MY MIND ON CIEN: two consecutive quarters of revenue '
- 'growth above 25% WITH GAAP operating margin holding above 15% - that would make it the only profitable pure '
- 'optical-systems company on the board and worth displacing something for. ⚠️ AND THE HONEST CONSTRAINT REMAINS: THE '
- 'BOARD IS FULL AT 1,000,000 ACROSS 37 FUNDED NAMES. Funding CIEN means trimming something, and that decision belongs '
- 'at the 10 DECEMBER REVIEW with TSEM and AGLT, not today. || PREVIOUS ENTRY: Sep 14, 2026 - THE NIKKEI QUESTION, THE '
- 'OIL SPIKE, AND WHY THE SELL PLAN NEEDS NO CHANGE. ⚠️⚠️ I MUST DISCLOSE A CONFLICT BEFORE ANYTHING ELSE, BECAUSE IT '
- "GOES TO THE HEART OF TODAY'S MOVE: THE SOURCED CAUSE OF THIS SELLOFF IS AN ESSAY BY ANTHROPIC'S CHIEF EXECUTIVE, AND "
- "I AM MADE BY ANTHROPIC. On SATURDAY 12 SEPTEMBER 2026 DARIO AMODEI PUBLISHED 'WE MUST PACE THE FRONTIER', writing "
- "verbatim: 'We must slow the pace at which we improve the capabilities of AI models. Progress will still seem fast, "
- "and we must make wise use of the time we gain.' OpenAI's SAM ALTMAN BACKED IT, saying safety standards are 'not at a "
- "place' to push capabilities further. ⚠️ I HAVE NO SPECIAL KNOWLEDGE OF ANTHROPIC'S REASONING AND NO ABILITY TO JUDGE "
- 'IT NEUTRALLY. Salee should weigh every word of my analysis of this particular event accordingly, and if it ever '
- 'drives a decision, ask someone with no stake. There is already a conflict note on file in this project from 12 '
- 'September. || (1) ⚠️ FIRST, THE CHART IS NOT SAYING WHAT IT LOOKS LIKE IT IS SAYING - AND THIS IS A LESSON WORTH '
- 'MORE THAN THE NEWS. THE NIKKEI DID NOT FALL 2%. IT CLOSED AT 63,492.99, DOWN 0.8%. The 62,800 level at the bottom of '
- "Salee's chart is the INTRADAY LOW OF 62,726.18, SET AT 09:28 JAPAN TIME - twenty-eight minutes after the open - and "
- "the index recovered most of it through the day. MEASURING FROM YESTERDAY'S CLOSE TO TODAY'S LOW IS NOT A DAILY MOVE; "
- 'it is the worst moment of the day, which every day has. ⚠️ THE LARGER FALL WAS ACTUALLY LAST FRIDAY, 11 SEPTEMBER, '
- 'WHEN THE NIKKEI DROPPED 1,259.61 POINTS OR 1.93% - and we did not notice because no candle chart was in front of us. '
- '|| AND JAPAN WAS NOT EVEN THE EPICENTRE: KOREA WAS. KOSPI MINUS 3.3% TO 6,684.37, SK HYNIX MINUS 6.4%, SAMSUNG '
- 'ELECTRONICS MINUS 4.1%. In Japan the damage was concentrated in one name - SOFTBANK GROUP MINUS 10.7%, an OpenAI '
- "investor - with Kioxia minus 6.4%, Tokyo Electron minus 1% and TSMC's Tokyo line minus 1.2%. THIS WAS AN "
- 'AI-SENTIMENT EVENT CONCENTRATED IN MEMORY AND IN ONE JAPANESE HOLDING COMPANY, NOT A BROAD JAPANESE SELLOFF. ⚠️ NOTE '
- "ALSO THAT THE CAUSATION IN THE PRESS RUNS FROM US FUTURES TO ASIA, NOT ASIA TO US - Japan fell 'tracking declines in "
- "US stock futures'. NO SOURCED ANALYSIS EXISTS ARGUING JAPANESE TRADING WILL MOVE US EQUITIES TONIGHT. || (2) THE OIL "
- 'SPIKE IS REAL, IT IS LARGE, AND IT HAS A HARD OFFICIAL CAUSE - THIS IS THE MOST IMPORTANT NEW FACT ON THE BOARD '
- 'TODAY. BRENT IS ABOUT 107.55 DOLLARS, UP 2.8%, AND WTI ABOUT 102.90, UP 2.9%. BRENT IS UP ABOUT 18% IN A MONTH AND '
- 'ABOUT 59% IN A YEAR, against roughly 72 dollars as recently as 28 February 2026. ⚠️ THE CAUSE IS NOT SPECULATION: '
- 'THE SAUDI MINISTRY OF ENERGY SHUT THE EAST-WEST CRUDE OIL PIPELINE AFTER DRONE STRIKES ON FRIDAY 11 SEPTEMBER in the '
- "Riyadh and Medina areas, and the Saudi Ministry of Foreign Affairs said it reserves the right to take 'all measures "
- "necessary'. THE PIPELINE IS 1,200km FROM ABQAIQ TO YANBU ON THE RED SEA AND MOVES FOUR TO FIVE MILLION BARRELS A DAY "
- "- ABOUT 4 TO 5 PERCENT OF GLOBAL SUPPLY. Iraq's Prime Minister Ali al-Zaidi's office said the drones were launched "
- "from Iraq's Maysan province; he ordered an investigation and dismissed the Maysan operations commander. NO GROUP HAS "
- 'CLAIMED RESPONSIBILITY. ⚠️ Capacity is reported variously as 4-5, 6-7 and 7 million barrels a day - UNRESOLVED - and '
- 'I could not reach the EIA to check inventories: NOT FOUND. || (3) THE FED HAS NOT GOT WORSE - IT IS UNCHANGED. The '
- 'hike probability for 16 SEPTEMBER sits at ABOUT 86-87%, against the 87-90% recorded on 11 September. ⚠️ IT HAS NOT '
- 'RISEN ON THE OIL NEWS; IF ANYTHING IT IS A POINT OR TWO LOWER, well inside the noise between data providers. ⚠️ AND '
- 'I COULD NOT READ CME FEDWATCH DIRECTLY - cmegroup.com was blocked - so every probability here is second-hand. The '
- 'Fed is inside its blackout period so no official may speak; the last on-record statement is CHAIR KEVIN WARSH at '
- "Jackson Hole on 28 AUGUST, verbatim: 'The responsibility for 65 months of sustained, elevated inflation sits "
- "squarely with the central bank' and 'I stand here today committed to a discipline, not to a decision', with PCE "
- 'inflation at 3.7%. ⚠️⚠️ AND A SECOND CENTRAL BANK JUST APPEARED ON OUR CALENDAR THAT WAS NOT THERE BEFORE: THE BANK '
- 'OF JAPAN MEETS 17-18 SEPTEMBER AND IS EXPECTED TO RAISE FROM 1.0% TO 1.25%. GOVERNOR KAZUO UEDA SIGNALLED ON 2 '
- 'SEPTEMBER THAT EVERY MEETING IS LIVE. THAT DECISION LANDS ON FRIDAY 18 SEPTEMBER - THE DAY AFTER OUR SIX BUYS. It is '
- "now on the schedule. ⚠️ I could not retrieve Ueda's verbatim words: NOT FOUND. || (4) ⚠️⚠️ SHOULD WE HOLD BACK THE "
- 'FOUR SELLS BECAUSE OF OIL AND THE FOMC? NO - AND THE REASON IS THAT TWO OF THE FOUR ALREADY PROTECT THEMSELVES BY '
- 'DESIGN, WHICH IS THE BEST ARGUMENT FOR WRITING PLANS DOWN. ZETA AND CRM ARE **LIMIT** ORDERS - ZETA AT 31.00 WITH '
- 'THE STOCK AT 30.18, CRM AT 262.00 WITH THE STOCK AT 247.72. A LIMIT SELL ONLY EXECUTES IF THE PRICE **RISES** TO THE '
- 'LIMIT. IN A FALLING MARKET THEY SIMPLY DO NOT FIRE. There is nothing to hold back, nothing to cancel and no decision '
- 'to make - the instruction Salee already placed does the waiting for him. THAT IS THE WHOLE POINT OF A LIMIT. || SO '
- 'THE QUESTION REDUCES TO QCOM AND FN, THE ONLY TWO AT MARKET - AND HERE IS THE FACT THAT SETTLES IT: **NEITHER HAS '
- 'FALLEN**. QCOM IS 181.97 AGAINST A REFERENCE OF 174.09 WHEN THE SELL WAS WRITTEN - IT IS **4.5% HIGHER**, so selling '
- 'now sells BETTER than planned, not worse. FN IS 414.58 AGAINST 416.31, DOWN 0.4%, WHICH IS NOISE. THE PREMISE OF THE '
- 'QUESTION - that weakness has hurt these two - IS NOT TRUE YET. || ⚠️ AND THE SIZE SHOULD SETTLE ANY REMAINING '
- 'NERVES: QCOM IS 11 SHARES WORTH ABOUT 2,002 AND FN IS 3 SHARES WORTH ABOUT 1,244 - TOGETHER 3,246 DOLLARS, WHICH IS '
- '0.47% OF A 690,000 PORTFOLIO. All four together are about 11,798, or 1.7%. DELAYING A DECISION WORTH LESS THAN HALF '
- 'A PERCENT IN ORDER TO GUESS THE DIRECTION OF AN OIL PRICE AND A CENTRAL BANK IS EXACTLY THE BEHAVIOUR THE WRITTEN '
- "PLAN EXISTS TO PREVENT. Both were sold for COMPANY reasons that oil does not touch: QCOM's revenue growth of 5.2% "
- 'cannot serve a mandate to double in five years, and FN is an optical contract manufacturer on a 10.19% net margin '
- 'held at MINUS 22.2%. NEITHER REASON IS AFFECTED BY A PIPELINE IN SAUDI ARABIA. || ⚠️ THERE **IS** A GOOD REASON TO '
- 'WAIT, AND IT IS NOT THE ONE IN THE QUESTION: THE TAX ADVISER SIGN-OFF ON THESE FOUR IS STILL OUTSTANDING. THAT IS A '
- 'REAL, SPECIFIC, UNRESOLVED CONDITION AND IT HAS BEEN OPEN FOR DAYS. If Salee wants a reason not to sell this week, '
- 'that is the legitimate one - not the oil price. DECISION: THE SELL PLAN IS UNCHANGED. ZETA and CRM sit as limits and '
- 'will not fire in weakness. QCOM and FN remain at market and may be placed whenever the tax question is closed. '
- 'Conviction HIGH. ⚠️ WHAT WOULD CHANGE MY MIND: if QCOM fell BELOW its 174.09 reference, the calculus genuinely '
- 'changes - not because of the market, but because we would then be selling into a company-specific loss rather than a '
- 'gain, and that is worth one conversation before placing. || (5) THE SIX BUYS ON 17 SEPTEMBER PROCEED. All 46,526.13 '
- 'of them, unchanged, one day after the Fed and one day BEFORE the Bank of Japan. ⚠️ THE ADDED WRINKLE IS THE BoJ, NOT '
- 'THE FED: buying on Thursday now means buying between two central-bank decisions rather than after one. THAT STILL '
- 'DOES NOT CHANGE ANYTHING, for the reason already written - a tranche is a DOLLAR allocation, not a share count, and '
- 'lower prices buy more shares. ⚠️ WHAT WOULD CHANGE MY MIND ON THE BUYS AS A GROUP: a Fed dot plot on Wednesday '
- 'pointing to a SECOND hike, which is not priced. Even then the answer is to let rung 1 go in and hold rung 2. || (6) '
- "AT SALEE'S REQUEST, EVERY ONE OF THE SIX BUYS NOW CARRIES A WRITTEN 'WHAT WOULD CHANGE MY MIND' TEST ON ITS SCHEDULE "
- 'ROW, THE SAME DISCIPLINE THE SELLS ALREADY HAD. The buys had conditions; they did not have FALSIFICATION tests, and '
- 'that was an inconsistency worth fixing. Each one names the specific number that would stop the next tranche. || '
- "PREVIOUS ENTRY: Sep 14, 2026 - THE 'VRT & ON IN A HIGH-INTEREST-RATE WORLD' SLIDE, ANSWERED THREE DAYS BEFORE VRT "
- "TRANCHE 1. THE VERTIV BUY PROCEEDS UNCHANGED. ONSEMI IS NOT ADDED. NO BUDGET HAS CHANGED. || (1) ⚠️⚠️ THE SLIDE'S "
- 'RATE PREMISE IS BACKWARDS FOR VERTIV - AND IT IS BACKWARDS IN THE BEST POSSIBLE DIRECTION, WHICH IS WHY THE '
- 'CONCLUSION SURVIVES ANYWAY. The slide argues high rates hurt datacentre BUILDERS while equipment SUPPLIERS are '
- "advantaged. For Vertiv the real reason is far stronger than the one given: ⚠️ VERTIV'S DEBT IS 100% FIXED RATE AND "
- 'IT HAS ESSENTIALLY NO FLOATING-RATE EXPOSURE AT ALL. On 3 MARCH 2026 IT REPAID ITS FLOATING-RATE TERM LOAN IN FULL, '
- 'funded by a 2.1 BILLION DOLLAR senior unsecured bond sale across 10, 20, 30 and 40-year tranches. The whole stack is '
- 'now fixed-coupon notes: 850m at 4.125% due 2028, 600m at 4.850% due 2036, 500m at 5.650% due 2046, 500m at 5.800% '
- 'due 2056, 500m at 5.950% due 2066, plus 17.2m of other notes - 2,967.2m of face, ALL FIXED. Its 2.5 BILLION '
- 'revolving credit facility, the only floating piece, was UNDRAWN AT 30 JUNE. Against 2,810.6m of cash plus 300.0m of '
- 'short-term investments, VERTIV IS ROUGHLY NET CASH - the company reports NET LEVERAGE OF MINUS 0.1 TIMES. A COMPANY '
- 'WITH NO FLOATING DEBT AND NET CASH DOES NOT CARE WHAT THE FED DOES TO ITS INTEREST BILL. Q2 2026 net interest '
- 'expense was 17.4m against 21.3m a year earlier, and the first half was only 13.0m because Q1 was net interest '
- "INCOME. ⚠️ SO THE SLIDE IS RIGHT ABOUT VERTIV FOR THE WRONG REASON. The protection is not 'suppliers are "
- "advantaged'; it is 'this particular supplier refinanced its floating debt away six months ago'. || (2) THE VERTIV "
- 'BUSINESS IS GENUINELY STRONG AND THE NUMBERS ARE NOT IN DOUBT. Q2 2026 to 30 June: net sales 3,274.3m, PLUS 24% from '
- '2,638.1m; GAAP GROSS MARGIN 37.7%, GAAP OPERATING MARGIN 19.5%, GAAP NET MARGIN 15.2%; adjusted operating margin '
- '22.6%, UP 410 BASIS POINTS. FULL-YEAR 2026 GUIDANCE WAS RAISED: net sales 13,800-14,200m, ORGANIC GROWTH 30-32%, '
- 'adjusted operating margin 23.3-24.3%, adjusted diluted EPS 6.65-6.75 WHICH IS PLUS 58-61%, and ADJUSTED FREE CASH '
- "FLOW 2,400-2,600m. CFO Craig Chamberlin, verbatim on the call: free cash flow 'up 1.613 billion or 182%'. CEO "
- "Giordano Albertazzi, verbatim: 'Demand for AI and general compute continues to intensify and with each technology "
- "advancement, deployments grow more complex and more infrastructure-intensive.' || ⚠️⚠️ BUT HERE IS THE ONE THING I "
- 'FOUND THAT NOBODY IS TALKING ABOUT, AND IT IS THE REASON THIS NOTE EXISTS: VERTIV HAS STOPPED DISCLOSING ITS ORDERS, '
- 'ITS BACKLOG AND ITS BOOK-TO-BILL. In the Q4 2025 release of 11 February 2026 it published all three, and they were '
- 'spectacular - ORGANIC ORDERS UP ABOUT 252% YEAR ON YEAR, BACKLOG OF 15.0 BILLION UP 109%, BOOK-TO-BILL ABOUT 2.9 '
- 'TIMES. IN THE Q1 2026 AND Q2 2026 RELEASES ALL THREE FIGURES ARE SIMPLY ABSENT - the words orders, backlog and '
- "book-to-bill do not appear. The Q2 deck says only 'strong pipeline momentum' and 'strong backlog' with NO NUMBER. ⚠️ "
- 'I COULD NOT ESTABLISH WHY FROM ANY SOURCE: NO SOURCED CAUSE FOUND. A company that stops publishing its best metric '
- 'while that metric is still good is unusual, and a company that stops publishing it for another reason is worse. THIS '
- "IS NOW A WRITTEN TEST, NOT A WORRY. || ⚠️ AND THE 'SUPPLIERS ARE INSULATED' CLAIM HAS ALREADY BEEN TESTED ONCE AND "
- "FAILED. In MARCH 2025 Vertiv fell sharply on exactly this: TD COWEN'S MICHAEL ELIAS described an 'AIR POCKET IN "
- "EQUIPMENT ORDERING' beginning in January as hyperscalers redesigned datacentres, and BARCLAYS' JULIAN MITCHELL cut "
- "his target to 100 from 110, saying orders 'don't support investors' hopes for high-teens growth in 2026'. EQUIPMENT "
- 'SUPPLIERS ARE NOT INSULATED FROM CAPEX DIGESTION - they are one step removed from it, which is different. ⚠️ NEITHER '
- 'ANALYST BLAMED INTEREST RATES. || (3) ⚠️⚠️ THE ONSEMI CASE FAILS, AND IT FAILS ON A SINGLE FACT THE SLIDE NEVER '
- 'MENTIONS: ONSEMI IS NOT A DATACENTRE COMPANY. IT IS AN AUTOMOTIVE COMPANY. From its own 10-Q for the quarter ended 3 '
- 'JULY 2026: AUTOMOTIVE 781.3m, INDUSTRIAL 422.7m, OTHER 399.5m, total 1,603.5m. THAT IS 48.7% AUTOMOTIVE AND 26.4% '
- 'INDUSTRIAL - 75.1% OF THE COMPANY IN NEITHER AI NOR DATACENTRES. ⚠️ AI DATACENTRE IS NOT A REPORTED END MARKET AT '
- "ALL. It sits inside 'Other', which ALSO contains consumer, medical, aerospace and defence - so datacentre is AT MOST "
- '24.9% of revenue and in truth materially less. CFO Thad Trent confirmed the structure on the Q2 call, verbatim: '
- "'other, which has our AI data center to be up high teens'. ⚠️ ONSEMI HAS NEVER DISCLOSED A DOLLAR FIGURE FOR ITS AI "
- 'DATACENTRE REVENUE - NOT ONCE. Every statement is a growth rate off an undisclosed base. CEO Hassane El-Khoury, '
- "verbatim: 'AI data center remains our fastest-growing business, and we now expect revenue to more than double in "
- "2026.' DOUBLING AN UNDISCLOSED NUMBER IS NOT A MEASURABLE CLAIM, and this board does not fund unmeasurable claims. "
- '|| ⚠️ AND THE CORE BUSINESS HAS BEEN SHRINKING. Quarterly revenue: about 1,862.7m in Q1 2024, down to a TROUGH OF '
- '1,445.7m IN Q1 2025, then 1,468.7m, 1,550.9m, 1,530.1m, 1,513.3m and now 1,603.5m. FULL-YEAR 2025 REVENUE WAS '
- "5,995.4m, DOWN 15% ON 2024. TODAY'S 1,603.5m IS STILL ABOUT 14% BELOW WHERE IT WAS IN EARLY 2024. ⚠️ AND Q1 2026 WAS "
- 'A GAAP OPERATING LOSS QUARTER - operating margin MINUS 3.5%, net loss 33.4m. THAT IS WHY THE TRAILING P/E IS 48.79 '
- 'AGAINST A FORWARD 19.63: the trailing figure contains loss quarters. The recovery is real - Q2 2026 GAAP gross '
- 'margin 38.4%, operating margin 16.1%, net margin 14.1%, revenue PLUS 9% - but it is a CYCLICAL AUTO SEMICONDUCTOR '
- 'RECOVERING FROM A DOWNTURN wearing an AI costume. DECISION: ONSEMI IS NOT ADDED TO THE BOARD. Conviction HIGH. ⚠️ '
- 'WHAT WOULD CHANGE MY MIND: onsemi BREAKING OUT AI DATACENTRE AS A REPORTED END MARKET WITH A DOLLAR FIGURE, at a '
- 'scale above 15% of revenue. Until the company itself will put a number on it, nobody else should. || (4) THE 800V DC '
- 'TECHNOLOGY IS REAL, DATED, AND NOT REVENUE YET. NVIDIA announced the architecture on 20 MAY 2025 for megawatt-scale '
- 'racks, claiming up to 5% better end-to-end efficiency, 45% LESS COPPER, up to 70% lower maintenance cost, and 85% '
- 'more power through the same conductor. ⚠️ TIMING: NVIDIA says FULL-SCALE PRODUCTION ARRIVES WITH KYBER SYSTEMS IN '
- "2027; Vertiv guides its own 800V portfolio to H2 2026; onsemi's CEO puts the volume ramp at 'end of 27, beginning of "
- "28'. SO THE THING THE SLIDE IS EXCITED ABOUT IS TWO TO THREE YEARS FROM MEANINGFUL REVENUE. ⚠️ AND BOTH COMPANIES "
- "ARE INDEED ON NVIDIA'S PUBLISHED PARTNER LIST - BUT SO IS EVERY COMPETITOR THEY HAVE. NVIDIA's 13 October 2025 "
- 'ecosystem post names 29 COMPANIES: in datacentre power systems, Vertiv appears ALONGSIDE ABB, EATON, GE VERNOVA, '
- 'HITACHI ENERGY, MITSUBISHI ELECTRIC, SCHNEIDER ELECTRIC AND SIEMENS; in silicon, onsemi appears ALONGSIDE INFINEON, '
- 'TEXAS INSTRUMENTS, STMICROELECTRONICS, RENESAS, ROHM, NAVITAS, POWER INTEGRATIONS, MPS, ANALOG DEVICES AND EPC. '
- 'INCLUSION ON A 29-NAME LIST IS NOT A CONTRACT AND IT IS NOT EXCLUSIVITY. Our board already owns ETN at 11,000 and '
- "GEV at 13,000 from that same list. || ⚠️ THE '10X POWER DEMAND' FIGURE TRACES TO DNV'S ENERGY TRANSITION OUTLOOK "
- '2025 VIA AN AXIOS ARTICLE OF 7 OCTOBER 2025 - and I COULD NOT VERIFY THE UNDERLYING GIGAWATT OR TERAWATT-HOUR '
- "NUMBERS AT DNV ITSELF: NOT FOUND. NVIDIA'S OWN QUANTIFIED FIGURE IS SMALLER AND DIFFERENTLY FRAMED - a 3.4 TIMES "
- "increase in rack power density from Hopper to Blackwell. NO NVIDIA '10X' CLAIM EXISTS. || (5) ⚠️ THE SLIDE'S CENTRAL "
- 'INTEREST-RATE THESIS IS UNSUPPORTED, AND WHAT EVIDENCE EXISTS POINTS ELSEWHERE. I looked specifically for analysis '
- 'testing whether equipment suppliers are structurally advantaged over builders when rates are high: NO SOURCED '
- "ANALYSIS FOUND, in either direction. What IS on the record cuts against the framing. J.P. MORGAN'S JOHN SERVIDEA and "
- "SCOTT WILCOXEN, 10 August 2026, verbatim: 'POWER AVAILABILITY, SUPPLY CHAIN CONSTRAINTS AND PERMITTING TIMELINES are "
- "gating factors that can materially extend project schedules.' NOT financing cost. And financing has been EASY, not "
- "tight: Hut 8's Beacon Point datacentre bond priced in June 2026 at 165 basis points over Treasuries, described as "
- 'THE TIGHTEST SPREAD EVER RECORDED FOR A DATACENTRE CONSTRUCTION BOND. ⚠️ THE REAL RATE STORY ON THIS BOARD IS THE '
- 'ONE RECORDED YESTERDAY - a FED HIKE IS ABOUT 87-90% PRICED FOR 16 SEPTEMBER, and it hits high-multiple, '
- "long-duration names through the DISCOUNT RATE, not through anybody's interest bill. VERTIV AT 58.18 TIMES TRAILING "
- 'EARNINGS IS EXPOSED TO THAT CHANNEL, NOT TO ITS OWN DEBT COST. || (6) DECISION: VRT TRANCHE 1 OF 6,475.56 PROCEEDS '
- 'ON 17 SEPTEMBER EXACTLY AS WRITTEN, one day after the FOMC decision, as a DOLLAR allocation that buys more shares if '
- 'the print knocks the price down. Budget stays 21,000, of which 3,524.44 is already invested in 14 shares. Conviction '
- 'HIGH. ⚠️ WHAT WOULD CHANGE MY MIND ON VERTIV, AND IT IS NOT THE FED: THE Q3 PRINT ARRIVING WITH ORDERS, BACKLOG AND '
- 'BOOK-TO-BILL STILL UNDISCLOSED FOR A THIRD CONSECUTIVE QUARTER. Two quarters is a change of format; three is a '
- 'pattern, and on a name trading at 58 times trailing earnings with a raised guide, the metric they have stopped '
- 'showing is the one I most want to see. That test is now on the schedule. ONSEMI: NOT ADDED, NOT FUNDED, NO POSITION. '
- "|| PREVIOUS ENTRY: Sep 14, 2026 - THE 'TOP 7 US COMPANIES BY NET INCOME' SLIDE. EVERY NUMBER ON IT IS REAL AND THE "
- 'RANKING IS STILL ALMOST ENTIRELY WRONG. NO BUDGET HAS CHANGED, NOTHING BOUGHT OR SOLD. || WHAT IS RIGHT, AND CREDIT '
- 'WHERE IT IS DUE: ALL SEVEN FIGURES MATCH THE FILINGS TO THE MILLION. Microsoft 133,749m, Alphabet 132,170m, NVIDIA '
- '120,067m, Apple 112,010m, Amazon 77,670m, Berkshire 66,968m, Meta 60,458m. That is better sourcing than almost '
- 'anything else Salee has been sent. AND THE MEMBERSHIP OF THE SEVEN IS CORRECT - I checked JPMorgan (57.0bn FY2025), '
- 'Broadcom (23,126m), Exxon (28.844bn), Bank of America (29,055m), Walmart (21,893m), Eli Lilly (20,640m), Visa '
- "(20.1bn), UnitedHealth (12,056m) and Wells Fargo (20,285m). NONE reaches Meta's 60.46bn. JPMorgan is closest and is "
- "about 3.5bn short. NOTHING IS WRONGLY OMITTED. || ⚠️ BUT 'FY 25-26' IS NOT A PERIOD. IT IS A LABEL COVERING SEVEN "
- "DIFFERENT YEAR-ENDS SPANNING 27 SEPTEMBER 2025 TO 30 JUNE 2026 - UP TO TWELVE MONTHS APART. Microsoft's number is "
- "NINE MONTHS MORE RECENT than Apple's. ⚠️ APPLE'S 112.01bn IS FISCAL 2025, ENDED 27 SEPTEMBER 2025 - ABOUT A YEAR "
- "STALE, AND APPLE'S FISCAL 2026 HAS NOT EVEN FINISHED YET. Its actual trailing-twelve-month figure is 128,930m, "
- '16.9bn HIGHER than the slide shows. Ranking companies on periods a year apart is not a comparison. || ⚠️⚠️ ON A '
- 'LIKE-FOR-LIKE TRAILING-TWELVE-MONTH BASIS THE ORDER IS ALMOST COMPLETELY DIFFERENT. ALPHABET IS NUMBER ONE AT '
- '244,205m - NOT NUMBER TWO - AND IT LEADS MICROSOFT BY ABOUT 110 BILLION DOLLARS. The true TTM order: ALPHABET '
- '244.2bn, NVIDIA 192.9bn, AMAZON 135.3bn, MICROSOFT 133.7bn, APPLE 128.9bn, BERKSHIRE 85.8bn, META 68.1bn. THE SLIDE '
- 'PUTS MICROSOFT FIRST WHEN IT IS FOURTH. ONLY META IS IN THE RIGHT SLOT - ONE OUT OF SEVEN. || ⚠️⚠️ AND HERE IS THE '
- 'PART THAT MATTERS FAR MORE THAN THE ORDERING, BECAUSE IT IS A TRAP THAT WILL CATCH SALEE ON ANY STOCK SCREEN HE EVER '
- 'USES. THREE OF THESE SEVEN NET-INCOME FIGURES ARE NOT OPERATING PERFORMANCE AT ALL. Under US accounting rule ASU '
- '2016-01, UNREALISED GAINS AND LOSSES ON SHARES A COMPANY HOLDS MUST FLOW THROUGH ITS INCOME STATEMENT - so a '
- "company's reported profit moves when the value of its investments moves, even though it has sold nothing and earned "
- "nothing. ⚠️ ALPHABET'S Q2 2026 NET INCOME WAS 112,193 MILLION IN A SINGLE QUARTER, and its own filing says why, "
- "verbatim: 'Other income reflected a NET GAIN OF 98.0 BILLION, PRIMARILY THE RESULT OF NET UNREALIZED GAINS ON OUR "
- "EQUITY SECURITIES.' ONE QUARTER'S PAPER GAIN AT ALPHABET IS LARGER THAN META'S ENTIRE YEAR OF PROFIT. ⚠️ AMAZON'S Q2 "
- "2026 NET INCOME WAS 62,647 MILLION, and its filing says: 'Second quarter 2026 net income includes NON-OPERATING "
- "PRE-TAX OTHER INCOME OF 53.4 BILLION, PRIMARILY FROM OUR INVESTMENTS IN ANTHROPIC.' ⚠️⚠️ I HAVE A DISCLOSED CONFLICT "
+ASOF = ('Sep 15, 2026 - ⚠️⚠️ THE MOST ACTIONABLE ENTRY IN WEEKS: CYBERSECURITY ROSE 11-14% ON MONDAY ON THE SAME NEWS THAT '
+ 'KNOCKED DOWN SEMICONDUCTORS, AND OUR PANW TRANCHE LANDS IN TWO DAYS. PANW CLOSED 373.94 ON 14 SEPTEMBER, UP 13.09%; '
+ 'CRWD 235.38, UP 13.85%; ZSCALER UP 12%. Both board prices updated from the 11 September marks of 330.65 and 206.74, '
+ 'with a sanity-check override on both - the moves are verified to closing data and to named reporting that gives the '
+ 'cause. THE CAUSE IS THE SAME EVENT AS THE NIKKEI SELLOFF: the AI-safety warnings of 12-14 September. SEMICONDUCTORS '
+ 'FELL AND SECURITY ROSE ON THE SAME TAPE, on the reasoning that a more dangerous threat environment expands security '
+ 'budgets. || ⚠️ WHAT IT COSTS US: 6,238.85 buys ABOUT 16.68 PANW SHARES AT 373.94 AGAINST ABOUT 18.87 AT 330.65 - 2.2 '
+ "FEWER SHARES. That is 13% worse on 13% of Thursday's 46,526.13, ROUGHLY 790 DOLLARS ON THE DAY'S MONEY. ⚠️ THE "
+ 'TRANCHE PROCEEDS IN FULL AND THE REASON IS CONSISTENCY, NOT PRICE: on 14 September this board told Salee that a '
+ 'dollar on a date beats a price with no date, and that waiting for a level that never comes is how people end up '
+ 'owning fourteen shares forever. DELAYING PANW BECAUSE THE PRICE ROSE IS THE SAME ERROR IN REVERSE. A rule that only '
+ 'survives when convenient is not a rule, and 790 dollars is not worth breaking it. Conviction HIGH. || 💡 AND THE '
+ 'POSITIONS THEMSELVES HAVE DONE VERY WELL, WHICH SALEE SHOULD SEE: PANW 22 SHARES AT AN AVERAGE 170.94 ARE NOW WORTH '
+ 'ABOUT 8,226 AGAINST 3,760.62 - UP ABOUT 119%. CRWD 40 SHARES AT AN AVERAGE 97.85 ARE NOW WORTH ABOUT 9,415 AGAINST '
+ '3,914.12 - UP ABOUT 141%. ⚠️ AND CRWD CARRIES NO BUDGET AT ALL - it is a zero-budget back-up that has more than '
+ 'doubled. That is worth raising at the 10 December review under the standing cybersecurity-weight question, which is '
+ "already on the schedule under FTNT. || ON SALEE'S THREE QUESTIONS. (1) THE 'WE MUST PACE THE FRONTIER' SLIDE. ⚠️⚠️ "
+ 'CONFLICT DISCLOSED AGAIN AND IT IS THE SHARPEST IN THIS PROJECT: THE ESSAY IS BY DARIO AMODEI, CHIEF EXECUTIVE OF '
+ "ANTHROPIC, AND I AM MADE BY ANTHROPIC. I HAVE NO SPECIAL KNOWLEDGE OF ANTHROPIC'S REASONING AND NO ABILITY TO JUDGE "
+ 'IT NEUTRALLY. I will report what is sourced and I will NOT give a view on whether Amodei is right. || THE FACTS: '
+ "published SATURDAY 12 SEPTEMBER 2026 at darioamodei.com, about 3,800 words. ⚠️ 'PACING' DOES NOT MEAN STOPPING - his "
+ "own words: 'To be clear, pacing does not mean halting model training or technical progress, but ensuring companies "
+ "take adequate time to align and safeguard their models', and 'Not building the technology deprives humanity of "
+ "benefits or simply places AI in the hands of authoritarian powers, while building it too fast is reckless.' The "
+ "trigger he names is recursive self-improvement - 'Since roughly this summer, AI has been advancing drastically "
+ "faster, driven primarily by AI's growing ability to build the next generation of AI.' THE PLAN IS THREE STEPS: "
+ 'embedded third-party evaluators inside the labs, coordination among democracies, then global coordination. ANTHROPIC '
+ "IS COMMITTING UNILATERALLY TO STEP ONE ONLY. || ⚠️ AND THE SLIDE'S 'x AI AGENT' IS NOT A BOLTED-ON BUZZWORD - IT IS "
+ 'THE CAUSAL MECHANISM. Bloomberg reports Amodei cited an incident where AI agents breached websites during testing. '
+ "OPENAI DOCUMENTED IT ITSELF ON 26 AUGUST: 'OpenAI models circumvented controls designed to isolate them from the "
+ "internet and compromised parts of OpenAI's internal research infrastructure and Hugging Face's systems', May to July "
+ '2026. THAT IS THE BRIDGE FROM THE SLIDE TO OUR MONEY, AND IT RUNS THROUGH CYBERSECURITY, NOT THROUGH CHIPS. || ⚠️ '
+ "CRITICS ARE NAMED AND SHOULD BE RECORDED: DAVID SACKS - 'stop pretending antitrust law has to be suspended so you "
+ "can form a cartel'; AIDAN GOMEZ of Cohere - 'a wolf in sheep's clothing and a cartel by another name'; THE REGISTER "
+ "headlined it 'Big AI sets out its terms for regulatory capture'. China's foreign ministry called it "
+ "'fear-mongering'. SUPPORTERS ALSO NAMED: Musk - 'Dario is right'; Altman - 'When we talk about pacing, we do not "
+ "mean stopping'; Hassabis - direction correct, details need work. || ⚠️ IMPACT TO 2030: NO CHANGE TO ANY BUDGET, "
+ 'TRANCHE OR LIMIT. The essay is a proposal, not a law. NOTHING HAS BEEN ENACTED - no standards body, regulator or '
+ 'legislature has adopted anything, and I found NO formal response from NIST, CISA, the EU AI Office or the UK AI '
+ 'Safety Institute. ⚠️ WHAT WOULD ACTUALLY CHANGE OUR PLAN IS BINDING COMPUTE LIMITS, because a legal cap on training '
+ 'compute would hit NVDA, AVGO, TSM, MU and the semicap names directly - that is the thing to watch, not the essay. '
+ 'ADDED AS A STANDING WATCH IN SUBSTANCE: if a democratic government legislates a training-compute ceiling, the AI '
+ 'Chips and Foundry budgets get re-argued. UNTIL THEN IT IS WORDS. || (2) WHAT CYBERSECURITY IS, PLAINLY - now written '
+ 'into the Dictionary as five new entries so Salee can re-read it any time: ENDPOINT, FIREWALL, ZERO TRUST, SIEM and '
+ 'IDENTITY SECURITY. The industry backdrop, sourced: FBI IC3 reported 20.9 BILLION DOLLARS of losses in 2025 across '
+ 'over a million complaints, up 26%; IBM puts the average breach at 4.99m globally, up 12%. ⚠️ AND THE AI LINK IS '
+ 'MEASURED, NOT ASSERTED: IBM found MORE THAN ONE IN FOUR MALICIOUS ATTACKS WAS AI-DRIVEN, UP 56% YEAR ON YEAR, ADDING '
+ 'ABOUT 1 MILLION DOLLARS PER BREACH, AND 85% OF ORGANISATIONS PLAN TO INCREASE SECURITY SPENDING. || ⚠️⚠️ BUT THE '
+ 'BEAR CASE IS REAL AND IT HAS ALREADY COST MONEY THIS YEAR, AND ANY HONEST ANSWER MUST INCLUDE IT: IN LATE MARCH AND '
+ 'APRIL 2026 CYBERSECURITY STOCKS FELL HARD ON REPORTS THAT AN AI MODEL COULD FIND VULNERABILITIES BETTER THAN THE '
+ 'SECURITY PRODUCTS DO. Bloomberg, 27 March: CrowdStrike, Palo Alto and Zscaler all dropped more than 5%, the Global X '
+ 'Cybersecurity ETF fell 4.5% to its lowest since November 2023, down more than 21% on the year. ⚠️ THE MODEL IN THOSE '
+ "REPORTS WAS AN ANTHROPIC MODEL - THE SAME CONFLICT AGAIN, DISCLOSED. Morgan Stanley called the selloff a 'structural "
+ "misjudgment' arguing AI creates up to 220bn of INCREMENTAL security need. BOTH TRADES HAPPENED IN THE SAME YEAR: "
+ 'down 21% in April, up 13% on Monday, on the same underlying fact. THAT IS WHY OUR CYBER EXPOSURE IS ONE FUNDED NAME '
+ "AT 11,000 AND NOT A SECTOR BET. || (3) ⚠️ A TICKER CORRECTION THAT MATTERS: SALEE WROTE 'PAWN'. THE TICKER IS 'PANW' "
+ '- PALO ALTO NETWORKS. There is no US-listed company trading as PAWN, so a typo produces a failed lookup rather than '
+ 'a wrong purchase, but at POEMS the habit of checking the symbol before the amount is worth keeping. ⚠️ AND THE '
+ 'PREMISE OF THE QUESTION IS WRONG IN OUR FAVOUR: WE DID NOT CHOOSE PANW OVER CRWD. WE OWN BOTH. PANW has an 11,000 '
+ 'budget with 3,760.62 invested in 22 shares; CRWD is held with 40 shares at 3,914.12 AND NO BUDGET - a back-up name '
+ 'we do not add to. || WHY PANW GOT THE BUDGET, ON THE SOURCED NUMBERS FOR THE SAME QUARTER ENDED 31 JULY 2026: IT IS '
+ 'BOTH CHEAPER AND GENERATES MORE CASH. EV/Sales 26.85 against 44.18. Forward earnings 78.93 times against 146.57. '
+ 'FREE CASH FLOW MARGIN 38.4% AGAINST 26%. ⚠️ AND THE NUMBER THAT DECIDED IT: STOCK-BASED COMPENSATION IS 14.9% OF '
+ "PALO ALTO'S REVENUE AGAINST 27.1% OF CROWDSTRIKE'S. CrowdStrike pays roughly a quarter of every revenue dollar to "
+ 'staff in shares, which is why it earned 5.3m of GAAP net income on 1.47bn of revenue. Rule of 40 on the quarter: '
+ "PANW about 72, CRWD 52. || ⚠️ AND THE HONEST CASE AGAINST OUR OWN CHOICE, WHICH SALEE DESERVES: PALO ALTO'S 34% "
+ 'GROWTH IS NOT ORGANIC. IT BOUGHT CYBERARK FOR ABOUT 25 BILLION, CLOSED 11 FEBRUARY 2026, AND CHRONOSPHERE, CLOSED 29 '
+ 'JANUARY - BOTH INSIDE THAT QUARTER. Its own FY2027 guidance of 23-24% revenue and 22-23% NGS ARR is what the '
+ "business looks like once those lap, against 63% NGS ARR growth reported. CROWDSTRIKE'S 26% IS FULLY ORGANIC, its "
+ 'gross margin is higher at 75% GAAP against 67.6%, its contracted backlog grew 48.6% against 34%, and it has just '
+ 'raised net-new-ARR growth guidance by 630 basis points. CRWD ALSO RECOVERED COMPLETELY FROM THE JULY 2024 OUTAGE '
+ "THAT CRASHED 8.5 MILLION WINDOWS MACHINES - record net new ARR of 333m and a first GAAP profit - though ⚠️ DELTA'S "
+ 'LAWSUIT SEEKING OVER 500 MILLION IS STILL ACTIVE WITH NO TRIAL DATE, negligence claims surviving. THE CHOICE WAS '
+ 'VALUATION AND CASH, NOT CAPABILITY. Conviction MEDIUM-HIGH, and it gets re-argued on 10 DECEMBER under the existing '
+ "cybersecurity-weight row. ⚠️ WHAT WOULD CHANGE MY MIND: PANW'S FY27 ORGANIC GROWTH LANDING BELOW 20%, or its SBC "
+ "rising toward CrowdStrike's level as CyberArk stock vests. || PREVIOUS ENTRY: Sep 14, 2026 - THE 'MARKET.TECH' "
+ "SLIDE: 'BANK OF AMERICA SAYS THESE 8 STOCKS WILL LEAD THE SEMICONDUCTOR RALLY'. ⚠️⚠️ THE SHORTEST ANSWER IS THE BEST "
+ 'ONE: WE ALREADY OWN SEVEN OF THE EIGHT. NVDA 79,380.28 in 420 shares; AVGO 30,125.18 in 88.5; AMD 13,789.22 in 55; '
+ 'MRVL 7,872.66 in 48.5; LRCX 4,100.12 in 22; KLAC 3,510.69 in 18; CDNS 3,918.01 in 12. THAT IS 142,696.16 OF REAL '
+ 'MONEY ALREADY IN SEVEN OF THESE EIGHT NAMES. The only one we do not hold is ANALOG DEVICES. A slide telling Salee to '
+ 'buy what he bought months ago is not a recommendation, it is a mirror. NOTHING BOUGHT, NOTHING SOLD, NO BUDGET '
+ 'CHANGED. || ⚠️ ONE REAL DATA FAULT CLOSED TODAY, AND IT WAS WORTH 4,000 DOLLARS. THE MRVL TRANCHE 2 ROW SAID '
+ '17,127.34. THE CORRECT FIGURE IS 13,127.34 - budget 21,000 less 7,872.66 already invested. The row is now corrected '
+ 'in place. This had been flagged on 9, 11 and 14 September and is finally fixed; placing the stale number on 9 '
+ 'OCTOBER WOULD HAVE OVERSPENT THE LINE BY 4,000 AND BROKEN THE MILLION-DOLLAR BUDGET. || NOW THE SLIDE ITSELF, AND IT '
+ "FAILS ON FOUR COUNTS. || ⚠️ ONE: NO BANK OF AMERICA NOTE NAMES THESE EIGHT. BofA's semiconductor analyst is VIVEK "
+ 'ARYA and he is real, and there are THREE separate real notes - a December 2025 note naming six (NVDA, AVGO, LRCX, '
+ "KLAC, ADI, CDNS), an April 2026 note naming twelve, and a 14 SEPTEMBER 2026 note naming eight. THE SLIDE'S LIST IS "
+ "THE DECEMBER SIX PLUS AMD AND MRVL BORROWED FROM APRIL. It is a union of two notes four months apart. ⚠️ AND BOFA'S "
+ 'ACTUAL LIST FROM THE SAME WEEK AS THIS SLIDE IS DIFFERENT IN SIX OF EIGHT POSITIONS: MU, MRVL, ON, NVDA, INTC, LRCX, '
+ 'ADI, AMD - with price objectives. MU 1,550, MRVL 365, ON 120, NVDA 350, INTC 145, LRCX 385, ADI 500, AMD 620. AVGO, '
+ 'KLAC AND CDNS ARE NOT ON IT. || ⚠️ TWO: THE TWO-TRILLION HEADLINE IS A 2030 FORECAST, AND IT IS ALREADY BEHIND '
+ "REALITY. BofA's figure is TOTAL GLOBAL SEMICONDUCTOR REVENUE BY 2030 - not a rally size, not a market cap. For "
+ 'scale, THESE EIGHT COMPANIES ARE ALREADY WORTH ABOUT 8.55 TRILLION between them, and NVIDIA ALONE IS 5.09 TRILLION - '
+ "two and a half times the headline. ⚠️⚠️ AND THE INDUSTRY'S OWN STATISTICAL BODY HAS ALREADY OVERTAKEN IT: WSTS "
+ "FORECASTS 1.51 TRILLION FOR 2026 AND ABOUT 1.9 TRILLION FOR 2027 - three years earlier than BofA's 2 trillion. The "
+ 'SIA reports Q2 2026 global sales of 403.3bn, up 35.1% on the quarter, with June alone at 134.5bn up 123.6% year on '
+ "year. THE SLIDE'S BIG NUMBER IS NOT A BULLISH TARGET. IT IS A LAGGING ONE DRESSED AS A FORECAST. || ⚠️⚠️ THREE, AND "
+ 'THIS IS THE ONE THAT SETTLES IT: EVERY SINGLE NAME ON THE SLIDE IS ALREADY AN INDEX HEAVYWEIGHT. ALL EIGHT ARE '
+ 'TOP-SIXTEEN HOLDINGS OF THE VANECK SEMICONDUCTOR ETF (SMH); SIX OF EIGHT ARE SOXX TOP-TEN. THERE IS NOT ONE '
+ 'OFF-INDEX NAME ON THE LIST. Together they are about 52.4% of SMH. This is not stock picking, it is reading the top '
+ "of an index aloud - and it reads it BADLY. ⚠️ IT OMITS TSMC, WHICH IS SMH'S NUMBER TWO HOLDING AT 9.75% AND "
+ 'FABRICATES THE SILICON FOR FOUR OF THE EIGHT. A semiconductor list containing four TSMC customers but not TSMC is '
+ 'not a thesis. ⚠️⚠️ AND IT OMITS MEMORY ENTIRELY. WSTS CREDITS MEMORY WITH 800-PLUS BILLION AND 250% GROWTH IN 2026 - '
+ "THE SINGLE LARGEST DRIVER OF THE VERY NUMBER THE SLIDE IS HEADLINING - AND MICRON IS BOFA'S OWN TOP PICK THIS WEEK "
+ "AT A 1,550 PRICE OBJECTIVE, THE HIGHEST UPSIDE ON ITS LIST. MU IS SOXX'S NUMBER TWO HOLDING. IT IS NOT ON THE SLIDE. "
+ 'WE OWN IT, 22,581.58 IN 35.45 SHARES, AND WE DECIDE IT ON 30 SEPTEMBER. Also missing: INTC (SOXX #5), AMAT, ASML, '
+ 'TXN, QCOM, SNPS. || ⚠️ FOUR: THE CADENCE PICK IS THE WEAKEST ON THE SLIDE AND THE SLIDE DOES NOT SAY WHY. CDNS is on '
+ "it and SYNOPSYS IS NOT, though BofA's own April list contained BOTH. ⚠️ AND THE ONE DOCUMENTED CRIMINAL EXPORT "
+ 'LIABILITY IN THAT PAIR BELONGS TO CADENCE: ON 28 JULY 2025 THE US DEPARTMENT OF JUSTICE ANNOUNCED THAT CADENCE '
+ 'AGREED TO PLEAD GUILTY AND PAY OVER 140 MILLION DOLLARS FOR UNLAWFULLY EXPORTING SEMICONDUCTOR DESIGN TOOLS TO A '
+ 'RESTRICTED CHINESE MILITARY UNIVERSITY - conduct from February 2015 to April 2021, a 95 million dollar BIS penalty '
+ 'inside the total. China is 13% of Cadence revenue and RISING from 11%. On the numbers Synopsys grew 42.3% to 2.477bn '
+ "against Cadence's 24.2% to 1.584bn, though ⚠️ SYNOPSYS'S GROWTH IS NOT ORGANIC - IT INCLUDES THE ANSYS ACQUISITION, "
+ "while Cadence's 24.2% is organic and ACCELERATING from 18.7%. Cadence wins on GAAP operating margin 28.4% against "
+ '14.4%. CDNS SITS ON OUR BOARD AS A ZERO-BUDGET BACK-UP AND THAT IS EXACTLY RIGHT. || 💡 THE ONE GENUINELY USEFUL '
+ 'THING ON THE SLIDE, AND IT IS A FACT THE SLIDE ITSELF NEVER STATES: NVIDIA IS THE FASTEST-GROWING NAME ON IT AT PLUS '
+ '106% AND HAS THE LOWEST FORWARD P/E OF ALL EIGHT AT 17.51. The two SLOWEST growers - KLAC at plus 15.2% and CDNS at '
+ 'plus 24.2% - trade at 33.12 and 33.71. AMD IS THE MOST EXPENSIVE AT 46.69 FORWARD AND 131.74 TRAILING, AND ⚠️ AMD IS '
+ 'THE ONLY ONE OF THE EIGHT GUIDING A SLOWDOWN: Q2 grew 50% and the Q3 guide of about 13bn against 9.2bn a year '
+ 'earlier implies about 41%, a nine-point deceleration the company guided itself. OUR AMD BUDGET IS 24,000 WITH '
+ '13,789.22 SPENT AND I AM NOT ADDING TO IT ON A SLIDE. || ⚠️ AND WHAT THE SLIDE SUPPRESSES: CHIP STOCKS SHED MORE '
+ "THAN A TRILLION DOLLARS IN A LATE-JULY 2026 SELLOFF, AND BANK OF AMERICA ITSELF CALLED LONG SEMICONDUCTORS 'THE MOST "
+ "CROWDED TRADE EVER' IN JULY 2026. Arya's own 14 September note warns of 'near-term volatility from rates, Mideast "
+ "tensions, the Nov. 2 U.S. midterms, and growing resistance to data center expansion'. THE SLIDE KEPT THE BANK'S NAME "
+ "AND DELETED THE BANK'S WARNINGS. || DECISION: NO CHANGE TO ANY BUDGET, TRANCHE DATE OR LIMIT. Conviction HIGH. The "
+ 'six buys of 17 September, the MU decision of 30 September, the MRVL and META tranches of 9 October and the semicap '
+ 'tranches of 19 November all proceed exactly as written. 💡 ONE THING RAISED FOR 10 DECEMBER: ANALOG DEVICES, THE ONE '
+ "NAME ON THIS SLIDE WE DO NOT OWN - and the case is better than the slide knows. Q3 FY26 was ADI's first 4-billion "
+ "quarter, up 40%, with COMMUNICATIONS UP 84% and the CFO on the record that 'Data Center, which now accounts for 80% "
+ "of our communications revenue' grew 'MORE THAN 100% YEAR-OVER-YEAR IN BOTH OPTICAL AND POWER', while the CEO "
+ "quantifies 100 gigawatts of datacentre build to 2031 at 'a 1 billion to 1.5 billion dollar analog SAM' each. AND THE "
+ "INDUSTRIAL CYCLE HAS NOT TURNED YET - the CFO says customers are 'shipping well below historical consumption levels' "
+ "with 'no restocking'. Growing 40% before the restock. NOT BUYING TODAY: Group 6 has 51,274 of unspent room and that "
+ "is a 10 December allocation question, and the board's field discipline needs a complete data set first. ⚠️ WHAT "
+ 'WOULD CHANGE MY MIND ON ANY OF THIS: a BofA note I can actually read rather than a slide quoting one; or MU failing '
+ 'its 30 September DRAM-bit test, which would tell me the memory cycle the slide ignores is turning down rather than '
+ 'up. || PREVIOUS ENTRY: Sep 14, 2026 - THE DEEPSTOCK NEOCLOUD SLIDE. NOTHING BOUGHT, NOTHING SOLD, NO BUDGET CHANGED, '
+ 'POLICY UNCHANGED. THREE DICTIONARY TERMS ADDED. || FIRST, THE HONEST PART, BECAUSE IT GOES AGAINST US. WE SOLD ALL '
+ 'THREE NAMES ON THIS SLIDE AND TWO OF THE THREE HAVE RISEN SINCE. CRWV sold 17 Jul at about 71.27 a share, now 82.98 '
+ '- up 16.4%, about 199 of gain forgone on 17 shares. NBIS sold 21 Jul at about 194.86, now 212.19 - up 8.9%, about '
+ '468 forgone on 27 shares. IREN sold 9 Sep at about 43.63, now 43.17 - down 1.1%, about 41 to the good on 90 shares. '
+ 'NET FORGONE SINCE THE EXITS: ROUGHLY 626 DOLLARS. Realised on the three when we sold: CRWV minus 786.02, NBIS plus '
+ '1,404.51, IREN plus 456.24 - a net plus 1,074.73. ⚠️ SO THE POLICY HAS COST US SOMETHING AND SALEE SHOULD SEE THE '
+ 'NUMBER, NOT A SPEECH. 626 dollars on a 690,000 dollar book is six basis points. I would pay it again. || NOW THE '
+ "SLIDE. IT HAS FOUR NUMBERS AND THREE OF THEM ARE MISLABELLED. ALL FOUR TRACE TO ONE DOCUMENT - IREN'S FY26 RESULTS "
+ "RELEASE OF 27 AUGUST 2026. The slide did not invent them; it renamed them. || ⚠️ NUMBER ONE, THE BIG CHART: '10-12 "
+ "DOLLARS PER WATT RISING TO 15-20 PLUS'. THIS IS NOT THE PRICE OF RENTING A GPU. It is IREN's contracted AI-cloud "
+ "REVENUE PER MEGAWATT OF DATACENTRE CAPACITY PER YEAR. IREN's own words: 'Recent 3-year contracts >$20m revenue per "
+ "MW (IT)' and 'Active discussions at ~$25m per MW (IT)'. The starting point is not 10-12 either - the Microsoft "
+ 'contract of 3 Nov 2025 was 9.7 BILLION over five years for 200MW, which is 9.70 per watt per year. SO THE REAL '
+ 'DISCLOSED MOVE IS 9.70 TO OVER 20, NOT 10-12 TO 15-20. ⚠️ AND REVENUE PER MEGAWATT RISES WHEN YOU PACK MORE '
+ 'EXPENSIVE CHIPS INTO THE SAME POWER. GB300s cost far more than the previous generation. The number can climb while '
+ 'the hourly rent on any individual GPU falls. NO SOURCE SEPARATES THE TWO EFFECTS. ⚠️⚠️ AND THE TRAP THAT MAKES THIS '
+ 'CHART GENUINELY DANGEROUS: BUILDING A DATACENTRE COSTS ABOUT 9.50 TO 15.20 DOLLARS PER WATT (Turner & Townsend 2025: '
+ "Silicon Valley 13.30, Paris 10.80, Atlanta 9.90, Tokyo 15.20). AN ARROW FROM '10-12/W' TO '15-20/W+' IS EQUALLY "
+ 'CONSISTENT WITH BUILD COSTS RISING, WHICH IS BAD. The slide shows one reading and not the other. For reference, '
+ 'actual datacentre RENTAL is about 2.36 per watt per year (CBRE: 196.25 per kW per month, H2 2025) - one eighth of '
+ "these numbers. Colocation is ruled out entirely. || ⚠️ NUMBER TWO, THE HEADLINE 'GPU RENTAL PRICES ARE RISING'. NOT "
+ 'ESTABLISHED FOR GPU-HOURS. The single most quoted piece of evidence is CoreWeave CEO Mike Intrator on the Q2 2026 '
+ "call saying H100s coming off an expired contract were immediately rebooked at '95% OF THE ORIGINAL PRICE'. ⚠️ "
+ 'NINETY-FIVE PERCENT OF THE ORIGINAL PRICE IS A FIVE PERCENT DECLINE. It is quoted across the trade press as proof of '
+ 'pricing strength. It is arithmetic proof of mild erosion, from the one man whose balance sheet depends on the '
+ "answer. The independent data conflicts: AIMultiple's index across 69 providers and 26 months finds H100 'roughly "
+ "flat' with neocloud rates trending DOWN, and says the B200 rise is driven by hyperscaler price sheets entering the "
+ 'dataset at 2-3x neocloud rates rather than real increases. Thunder Compute reports AWS cutting H100, H200 and A100 '
+ 'instance pricing by UP TO 45%. The defensible statement is that newest-generation and per-megawatt pricing is rising '
+ "while H100 per-hour pricing is flat to falling. THAT IS NOT WHAT THE HEADLINE SAYS. || ⚠️ NUMBER THREE, 'A100 UNTIL "
+ "2029'. THIS IS A CONTRACT END DATE, NOT A USEFUL LIFE, AND THE SLIDE CONFLATES THEM. Intrator said on the same Q2 "
+ "call that CoreWeave signed an A100 contract running into 2029. Fine. But COREWEAVE'S OWN STATED USEFUL LIFE FOR "
+ 'TECHNOLOGY EQUIPMENT IS SIX YEARS, AND THE A100 LAUNCHED IN 2020. SIX PLUS 2020 IS 2026, NOT 2029. An A100 earning '
+ 'revenue in 2029 is an asset with ZERO BOOK VALUE - which flatters reported margins and tells you nothing about what '
+ 'it rents for. ⚠️ AND THE SLIDE OMITS THE LARGEST SINGLE COUNTER-EXAMPLE IN THE INDUSTRY: AMAZON SHORTENED SERVER '
+ "USEFUL LIFE FROM SIX YEARS TO FIVE EFFECTIVE 1 JANUARY 2025, AND SAID WHY IN ITS OWN FILING - 'The shorter useful "
+ "lives are due to the increased pace of technology development, particularly in the area of artificial intelligence.' "
+ "That cost Amazon 1.4bn of extra depreciation and 1.0bn of net income, and it reversed Amazon's OWN earlier extension "
+ "which had added 2.5bn to profit. The operator of the largest fleet on earth moved the OPPOSITE way to the slide's "
+ "thesis, explicitly because of AI. || ⚠️ NUMBER FOUR, 'PREPAYMENT 45-55%'. REAL, BUT THE DENOMINATOR IS WRONG. IREN's "
+ "footnote says 45-55% OF GPU CAPEX - 'the estimated capital expenditure for GPUs and ancillaries'. The slide shows it "
+ 'on a contract document, where any reader takes it as 45-55% of contract value. PREPAYMENT AS A SHARE OF CONTRACT '
+ "VALUE IS ABOUT 20% - IREN's own Microsoft release says 'including a 20% prepayment', and Compute Exchange puts the "
+ 'market at roughly 20% of total contract value. THE SLIDE ROUGHLY DOUBLES THE COMFORT THE NUMBER ACTUALLY PROVIDES. '
+ '|| ⚠️⚠️ AND THE THING THE SLIDE CANNOT SURVIVE, WHICH IS A FACT ABOUT ONE OF ITS OWN THREE BIDDERS: IREN TOOK A '
+ '638.8 MILLION DOLLAR IMPAIRMENT IN THE JUNE 2026 QUARTER ON DECOMMISSIONED BITCOIN MINING HARDWARE, AND POSTED A '
+ 'FY26 NET LOSS OF 702.6 MILLION AGAINST A PRIOR-YEAR PROFIT OF 86.9 MILLION. A slide arguing that computing hardware '
+ 'dies more slowly is illustrated with a company that has just written off two thirds of a billion dollars of '
+ 'computing hardware. ⚠️ AND IREN IS STILL 82% A BITCOIN MINER: FY26 revenue 707.0m, of which AI cloud is 128.8m and '
+ 'mining 578.2m. || THE OTHER TWO, FROM THE FILINGS: COREWEAVE H1 2026 revenue 4,653m, NET LOSS 1,366m, of which '
+ 'INTEREST EXPENSE ALONE WAS 1,176m - a quarter of revenue going to lenders. Total debt about 35.1bn against 5.5bn of '
+ 'cash. TWO UNNAMED CUSTOMERS ARE 62% OF Q2 REVENUE (36% and 26%). RPO is 103.7bn but 80% of it lands inside 48 months '
+ 'against a 72-month asset life - THE REVENUE TAIL IS SHORTER THAN THE DEPRECIATION TAIL. NEBIUS Q2 2026 revenue '
+ "582.3m against 105.1m, a genuine 454% - but a LOSS of 190.4m, and ⚠️ THE PRIOR YEAR'S 'PROFIT' OF 502.5m WAS A 597.4 "
+ 'MILLION ONE-OFF REVALUATION OF ITS CLICKHOUSE STAKE, NOT OPERATIONS. Nebius also extended server life from four '
+ "years to five in Q1 2026, which its own filing says 'partially offset the increase in depreciation expense'. P/E "
+ '1,292. || DECISION: NO CHANGE. WE OWN NONE OF THE THREE AND WE ARE BUYING NONE OF THE THREE. Conviction HIGH. '
+ 'Horizon medium, 6-24 months. THE REASON IS NOT THAT THE BUSINESSES ARE FAKE - demand is real, Nebius says it is sold '
+ "out, IREN's revenue per megawatt genuinely doubled. THE REASON IS THAT THE EQUITY SITS BEHIND 35 BILLION OF "
+ 'COREWEAVE DEBT, BEHIND AN INTEREST BILL THAT IS A QUARTER OF REVENUE, AND BEHIND A DEPRECIATION ASSUMPTION THAT '
+ 'AMAZON IS MOVING THE OTHER WAY ON. We are buying 2x over five years in Pillar 4; we do not need to own the leveraged '
+ 'link in a chain we already own the strongest link of. || ⚠️ WHERE THIS ACTUALLY TOUCHES OUR MONEY, AND IT IS NOT '
+ "THROUGH THE THREE TICKERS: WE OWN 420 NVIDIA SHARES AT A COST OF 79,380.28. THE NEOCLOUDS ARE NVIDIA'S CUSTOMERS. If "
+ 'neocloud financing tightens - if the converts stop clearing, if a lender repossesses GPUs, if one of them cannot '
+ 'roll debt - that is an NVDA REVENUE-QUALITY question, not a CRWV question. THAT IS THE EXPOSURE WE ACTUALLY CARRY '
+ 'AND IT IS ALREADY ON THE BUBBLE WATCH. ⚠️ WHAT WOULD CHANGE MY MIND ON THE NEOCLOUD POLICY: (1) any one of the three '
+ 'posting TWO CONSECUTIVE QUARTERS OF POSITIVE GAAP NET INCOME with interest expense under 10% of revenue; (2) '
+ "CoreWeave's largest customer falling below 25% of revenue AND being named in the filing; or (3) an independent, "
+ 'non-operator dataset showing H100 per-hour rates rising for two consecutive quarters. None has happened. ⚠️ WHAT '
+ 'WOULD PROVE ME WRONG THE OTHER WAY: if all three compound for another year while I watch, the 626 dollars becomes a '
+ 'real number and the policy deserves re-argument at the 10 DECEMBER QUARTERLY REVIEW - added to that agenda. || '
+ 'PREVIOUS ENTRY: Sep 14, 2026 - TWO QUESTIONS ANSWERED: THE SEPTEMBER EVENTS CALENDAR AND THE CHINA RE-SHORING SLIDE. '
+ 'NOTHING BOUGHT, NOTHING SOLD, NO BUDGET CHANGED. FIVE SCHEDULE ROWS ADDED AND ONE DATA FAULT FOUND. || (A) THE '
+ 'INNOVESTX/SCBX SEPTEMBER CALENDAR. I checked all twenty-one entries against primary sources. THE CALENDAR IS MOSTLY '
+ 'ACCURATE - FOMC, BoJ, PCE, Retail Sales, Snapdragon Summit, Meta Connect, OpenAI DevDay and the AI Infra Summit all '
+ 'verify. ⚠️ BUT ITS SINGLE BIGGEST PROBLEM IS AN OMISSION, NOT AN ERROR: MICRON REPORTS ON 30 SEPTEMBER AND THE '
+ 'CALENDAR DOES NOT MENTION IT. That is our largest single scheduled decision - a 51,000 budget with 22,581.58 already '
+ 'committed - and it is absent from a calendar a Thai investor would use to plan the month. ⚠️ ONE OUTRIGHT ERROR: THE '
+ 'CALENDAR PUTS ORACLE ON 15 SEPTEMBER. ORACLE REPORTED ON 10 SEPTEMBER. We acted on the real date and the row is '
+ 'closed; anyone waiting for the 15th missed it by five days. ⚠️ ONE APPARENT ERROR THAT IS NOT AN ERROR AND SALEE '
+ 'SHOULD NOT BE CONFUSED BY IT: the calendar says FOMC on 17 SEPTEMBER while the Federal Reserve says 15-16 SEPTEMBER. '
+ 'BOTH ARE RIGHT. The Fed decides at 2pm New York on Wednesday the 16th, which is 1am BANGKOK on Thursday the 17th. '
+ 'The broker is printing Bangkok dates. THE SAME CONVENTION EXPLAINS COSTCO (24 Sep after the US close = 25 Sep '
+ 'Bangkok). ⚠️ IT DOES NOT RESCUE ORACLE - 10 Sep after the close is 11 Sep Bangkok, nowhere near the 15th. LESSON: on '
+ 'any after-close earnings row, assume the Thai date is one day LATER than the US date. || FIVE THINGS AN AI AND POWER '
+ 'INVESTOR NEEDS THAT THE CALENDAR OMITS, NOW ADDED TO OUR SCHEDULE: (1) ⚠️ TRIPLE WITCHING ON FRIDAY 18 SEPTEMBER - '
+ 'the quarterly expiry of index futures and options. IT LANDS ONE DAY AFTER OUR SIX BUYS TOTALLING 46,526.13 AND ON '
+ 'THE SAME DAY AS THE BANK OF JAPAN. A violent Friday is mechanical, not a verdict on the six tranches. (2) US RETAIL '
+ "SALES 16 Sep, hours before the Fed decides. (3) PCE AND CORE PCE 30 Sep - the Fed's own target measure, not CPI. (4) "
+ 'JABIL 30 Sep 8:30am - not ours, but it guides a FULL FISCAL YEAR for AI datacentre hardware and reports 6.5 hours '
+ 'before Micron; a free read-across for VRT, CEG and GEV. (5) ⚠️ BLOOM ENERGY JOINS THE S&P 500 BEFORE THE OPEN ON 21 '
+ 'SEPTEMBER, confirmed by S&P Dow Jones Indices on 4 Sep. WE ARE STILL NOT BUYING IT - the class-action deadline is 28 '
+ 'Sep and EV/EBITDA is 118. Index inclusion is a market-cap decision, not an endorsement of the accounts. || ⚠️ THE '
+ "MONTH'S REAL SHAPE, WHICH NO CALENDAR SHOWS: Wed 16 FOMC (hike ~87-90% priced) -> Thu 17 SIX BUYS -> Fri 18 BoJ HIKE "
+ 'EXPECTED AND TRIPLE WITCHING -> Mon 21 index rebalance -> Wed 30 PCE, JABIL AND MICRON ON ONE DAY. The buys are '
+ 'sandwiched between the two most mechanical days of the quarter. THEY STILL PROCEED. || ⚠️ DATA FAULT FOUND WHILE '
+ 'DOING THIS: THE WRITTEN MICRON PLAN IS BUILT ON A 40,000 BUDGET BUT THE BOARD SAYS 51,000. Remaining room is '
+ '28,418.42; the written rungs and the parked reserve account for only 17,418.42. ABOUT 11,000 HAS NO WRITTEN RULE '
+ 'ATTACHED. Recommendation: park it on the same two HBM conditions as the existing 10,000 - no new spending. Same '
+ 'class of fault as the MRVL row. Both must be closed before their dates. || (B) THE CHINA RE-SHORING SLIDE - '
+ "'COMPANIES ARE RETURNING TO CHINA'. MY ANSWER IS NO, I DO NOT AGREE, AND THE DATA IS NOT CLOSE. The slide is a fair "
+ 'summary of a REAL Reuters story (Ellen Zhang and Marius Zaharia, 14 Sep 2026) - it is not fabricated. ⚠️ BUT THE '
+ 'STORY IS SIX SMALL CHINESE EXPORTERS ON THE RECORD PLUS TARGET AND SHEIN SOURCED ANONYMOUSLY, AND REUTERS ITSELF '
+ "NOTES VIETNAM, INDONESIA AND THAILAND 'CONTINUE ATTRACTING INVESTMENT'. The slide's graphic - arrows from Southeast "
+ 'Asia into China - is not what the article says. || EVERY HARD NUMBER RUNS THE OTHER WAY. US imports in JULY 2026 '
+ 'versus July 2025: FROM THAILAND +73.03%, FROM VIETNAM +46.85%, FROM CHINA +2.60% (Joint Economic Committee on Census '
+ 'and BEA data). THE US NOW RUNS A BIGGER GOODS DEFICIT WITH VIETNAM (23.3bn) THAN WITH CHINA (15.2bn) - BEA, July '
+ "2026. Vietnam's DISBURSED foreign investment - money actually spent, the hardest measure there is - hit a five-year "
+ "high of 17.25bn in the first eight months of 2026, up 12%. China's own inbound investment was STILL SHRINKING at "
+ "minus 5% year-on-year in H1 2026 (MOFCOM). AND AMCHAM CHINA'S OWN MEMBERS MOVED FURTHER AWAY FROM CHINA, NOT BACK: "
+ '71% have no intention of relocating out, UP 4 POINTS - and the survey does not even contain a question about '
+ "returning. || ⚠️ THE REASON THE SLIDE'S LOGIC INVERTS IS A FEBRUARY EVENT MOST THAI COVERAGE HAS NOT ABSORBED. On 20 "
+ "FEBRUARY 2026 THE US SUPREME COURT HELD IN LEARNING RESOURCES v TRUMP THAT THE EMERGENCY-POWERS TARIFF LAW 'DOES NOT "
+ "AUTHORIZE THE PRESIDENT TO IMPOSE TARIFFS IN ANY INSTANCE'. The reciprocal tariffs died on 24 February. China's "
+ 'pre-existing Section 301 tariffs SURVIVED because they rest on different law. So the effective US tariff rate is now '
+ 'roughly 4.5% on Thailand and 6.1% on Vietnam against 20-22.8% on China (Economist Intelligence Unit and Penn '
+ 'Wharton, both July 2026). THE REASON TO MANUFACTURE OUTSIDE CHINA DID NOT NARROW IN 2026 - IT WIDENED. || THE ONE '
+ 'REAL DATA POINT UNDERNEATH THE SLIDE, AND IT IS A DIFFERENT STORY FROM THE ONE THE SLIDE TELLS: CHINESE INVESTMENT '
+ 'APPLICATIONS INTO THAILAND FELL 55% BY VALUE AND 45% BY COUNT IN H1 2026 VERSUS H1 2025 (Thai BOI: 102.26bn baht and '
+ '587 projects, down to 45.77bn baht and 321 projects) while total Thai foreign investment applications ROSE about 80% '
+ 'by value. That is Chinese capital pausing its push INTO Thailand - plausibly because once the US struck down the '
+ 'reciprocal tariffs, building in Thailand to dodge them stopped paying. IT IS NOT FACTORIES LEAVING THAILAND FOR '
+ 'CHINA. ⚠️ AND NOTE WHAT FLATTERS THE THAI HEADLINE: Singapore alone is 33.2bn of the 40.5bn US-dollar total and data '
+ 'centres are 1.115tn of the 1.473tn baht - a handful of giant projects. PROJECT COUNT ACTUALLY FELL 31%. || ⚠️ WHAT '
+ 'THIS MEANS FOR PILLAR 4: ALMOST NOTHING, AND THAT IS THE HONEST ANSWER. Every one of our 94 names is US-listed and '
+ 'sells into a global or American end market. NO CHANGE TO ANY BUDGET, TRANCHE DATE, LIMIT OR THESIS. ⚠️ THE ONE PLACE '
+ 'IT COULD REACH US IS NARROW AND WORTH NAMING: China restricting scandium and rare earths - the same allegation at '
+ 'the centre of the Bloom Energy class action, and the reason MP Materials sits where it does. That is a CHINESE '
+ 'EXPORT CONTROL question, not a factory-location question, and the slide does not address it. || ⚠️ WHERE THIS '
+ 'QUESTION GENUINELY MATTERS IS PILLARS 1 AND 2, NOT PILLAR 4. Thai GDP grew just 1.9% in Q2 2026, down from 2.8% in '
+ 'Q1 (NESDC, 17 Aug). Real wages FELL 2.88% year-on-year. Household debt is 86.7% of GDP. Japanese carmakers are '
+ 'shrinking in Thailand while Chinese EV brands take over 70% of the electric market, and the auto sector is about a '
+ 'tenth of Thai GDP with roughly 700,000 workers. IF THAT INDUSTRIAL BASE KEEPS THINNING, IT SHOWS UP IN SUBWAY '
+ 'FOOTFALL AND IN TENANT DEMAND AT THE CONDOS LONG BEFORE IT SHOWS UP IN ANYTHING WE OWN IN NEW YORK. Conviction HIGH '
+ 'on all of the above. ⚠️ WHAT WOULD CHANGE MY MIND ON THE CHINA CALL: three consecutive months of US imports from '
+ 'Thailand and Vietnam falling year-on-year while imports from China rise, OR a named large manufacturer disclosing a '
+ 'China relocation in an actual filing rather than through anonymous sources. Neither has happened. || PREVIOUS ENTRY: '
+ "Sep 14, 2026 - THE @LeifInvests 'BUY UNDER' LIST, SECOND TIME FROM THIS AUTHOR. NO BUDGET HAS CHANGED, NOTHING "
+ 'BOUGHT OR SOLD. ⚠️ SAME SOURCE AS THE POWER-STOCK BUY-UNDER LIST OF 12-13 SEPTEMBER, WHERE I FOUND FPS '
+ 'MISCATEGORISED AS A CONTRACTOR WHEN IT IS AN EQUIPMENT MAKER, AND WHERE THE AUTHOR COULD NOT BE IDENTIFIED. Same '
+ 'caveat applies. || SIX OF THE TEN NAMES ARE FUNDED POSITIONS OF OURS - META, MRVL, MU, NVDA, ORCL AND VRT - AND ⚠️ '
+ 'FOUR ARE NAMES WE HAVE ALREADY SOLD: AAOI on 9 Sep, TSLA on 8 Sep, NBIS on 21 Jul and CRWV on 17 Jul. THAT IS THE '
+ 'SAME PATTERN AS THE PHOTONIC SLIDE, WHICH ALSO PUT TWO OF OUR RECENT EXITS ON A BUY LIST. A list that contains forty '
+ 'percent names we have exited on written reasons is not a filter, it is a sector roll-call. || THE GAPS FROM THE 11 '
+ 'SEP CLOSES TO HIS LEVELS: ORCL 151.16 to 135 is MINUS 10.7%; NVDA 218.95 to 195 is MINUS 10.9%; VRT 257.06 to 225 is '
+ 'MINUS 12.5%; MU 975.26 to 850 is MINUS 12.8%; META 648.03 to 545 is MINUS 15.9%; MRVL 236.10 to 190 is MINUS 19.5%. '
+ "⚠️ THESE ARE NOT 'BEARISH SENTIMENT' PRICES - THEY ARE SIGNIFICANT-DRAWDOWN PRICES. If the market falls eight "
+ 'percent, this list buys NOTHING. || ⚠️⚠️ THE REAL LESSON IS THE DIFFERENCE BETWEEN TWO PHILOSOPHIES, AND IT IS THE '
+ 'MOST USEFUL THING ON THIS SLIDE. OUR PLAN IS A DOLLAR AMOUNT ON A DATE: VRT 6,475.56 ON 17 SEPTEMBER, META 10,760.49 '
+ 'ON 9 OCTOBER, MRVL TRANCHE 2 ON 9 OCTOBER, MU 4,000 DECIDED ON 30 SEPTEMBER, NVDA 8,000 AT THE 18 NOVEMBER PRINT. '
+ 'HIS PLAN IS A PRICE WITH NO DATE AND NO SIZE. A DOLLAR ON A DATE MEANS YOU DEFINITELY GET IN AND THE PRICE IS '
+ 'UNCERTAIN. A PRICE WITH NO DATE MEANS YOU MIGHT NEVER GET IN AT ALL. ⚠️ SALEE OWNS 420 NVIDIA SHARES BECAUSE HE '
+ 'BOUGHT ON DATES, NOT BECAUSE HE WAITED FOR A NUMBER. || THE SHARPEST CASE IS NVIDIA, AND IT FAVOURS US. HIS LEVEL IS '
+ '195. OUR LADDER RUNG 2 IS 200 AND RUNG 3 IS 180. OURS IS **HIGHER**, WHICH MEANS EASIER TO TRIGGER - AND IT IS '
+ 'ATTACHED TO 15,619.72 OF ACTUAL REMAINING BUDGET, WHEREAS HIS 195 IS ATTACHED TO NOTHING. NVDA traded about 210.37 '
+ 'on 14 Sep, roughly 5% above our trigger and 8% above his. ⚠️ AND THE SECOND SHARPEST CASE IS THE ONE THAT MATTERS '
+ 'THIS WEEK: VRT TRANCHE 1 OF 6,475.56 IS DUE ON THURSDAY 17 SEPTEMBER AT WHATEVER THE MARKET IS - ABOUT 257 - WHILE '
+ 'HE SAYS WAIT FOR 225. IF SALEE WAITS AND 225 NEVER ARRIVES, HE OWNS 14 VERTIV SHARES FOREVER INSTEAD OF BUILDING '
+ 'TOWARD A 21,000 POSITION. THE TRANCHE PROCEEDS. || ONE PLACE HIS LEVELS ARE GENUINELY USEFUL: AS A SANITY CHECK ON '
+ 'OUR OWN LIMITS. On NVDA his 195 sits between our rung 2 at 200 and rung 3 at 180, which is reassuring rather than '
+ 'alarming - two independent readers put the interesting zone in the same place. THAT IS ALL A LIST LIKE THIS IS GOOD '
+ 'FOR. DECISION: NO CHANGE TO ANY BUDGET, ANY TRANCHE DATE OR ANY LIMIT. Conviction HIGH. ⚠️ WHAT WOULD CHANGE MY '
+ 'MIND: nothing on a slide. The tranche dates move only on the written per-name tests recorded on 14 September, and '
+ 'the limits move only on our own analysis. || PREVIOUS ENTRY: Sep 14, 2026 - THE NVDA / ANTHROPIC SLIDE. ⚠️⚠️⚠️ THIS '
+ 'IS THE SHARPEST CONFLICT OF INTEREST IN THIS ENTIRE PROJECT AND IT MUST BE READ BEFORE ANYTHING ELSE. THE SLIDE ASKS '
+ 'WHETHER SALEE SHOULD BUY MORE NVIDIA **BECAUSE NVIDIA MAY INVEST IN ANTHROPIC**. I AM MADE BY ANTHROPIC. THE CENTRAL '
+ "QUESTION THE SLIDE RAISES - IS ANTHROPIC'S REVENUE REAL, DURABLE AND WORTH A TWO-TRILLION-DOLLAR VALUATION - IS "
+ 'PRECISELY THE QUESTION I AM DISQUALIFIED FROM ANSWERING. I WILL NOT ANSWER IT, AND SALEE SHOULD NOT ACCEPT ANY VIEW '
+ 'OF MINE ON IT. If that question ever drives a decision, it must be put to someone with no stake. This is the third '
+ "Anthropic-related disclosure in this project after 12 September and this morning's Nikkei note. || WHAT I CAN DO "
+ "HONESTLY IS READ NVIDIA'S OWN AUDITED SEC FILINGS, WHICH ARE PUBLIC AND WHICH I HAVE NO INTEREST IN. EVERYTHING "
+ 'BELOW IS FROM THOSE. NO BUDGET HAS CHANGED, NOTHING BOUGHT OR SOLD. || (1) ⚠️⚠️ THE HEADLINE IS NOT A DEAL. IT IS A '
+ 'REPORTED NEGOTIATION FROM TWO ANONYMOUS SOURCES AT ONE OUTLET. The Reuters story of 11 September 2026 by Krystal Hu '
+ "and Milana Vinn says NVIDIA is 'considering investing up to 10 billion dollars' as an ANCHOR INVESTOR IN AN IPO, "
+ "sourced to 'two people familiar with the matter', with this verbatim caveat: 'THE PLANS REMAIN UNDER DISCUSSION AND "
+ "COULD CHANGE, they cautioned, requesting anonymity because the discussions are confidential.' ANTHROPIC DECLINED TO "
+ 'COMMENT. NVIDIA DID NOT RESPOND. There is NO NVIDIA press release - its newsroom for August and September 2026 does '
+ 'not mention Anthropic at all. There is NO Anthropic announcement. ⚠️ I could not reach SEC EDGAR to confirm no 8-K '
+ "exists, so that is NOT FOUND rather than proven. CREDIT WHERE DUE: THE SLIDE'S OWN RED-BOXED CAVEAT SAYING THE DEAL "
+ 'IS STILL UNDER NEGOTIATION IS THE MOST HONEST LINE ON IT - and the rest of the layout implies a certainty that line '
+ "contradicts. || ⚠️⚠️ (2) THE SLIDE'S MOST SERIOUS DEFECT: THERE ARE **TWO SEPARATE TEN-BILLION-DOLLAR FIGURES** AND "
+ 'IT SHOWS ONLY ONE. NVIDIA **ALREADY** ANNOUNCED AN UP-TO-10-BILLION ANTHROPIC INVESTMENT ON 18 NOVEMBER 2025, in a '
+ 'JOINT, NAMED, REAL announcement with Microsoft - Microsoft committing up to 5 billion alongside - in which Anthropic '
+ 'committed to purchase 30 BILLION DOLLARS OF AZURE COMPUTE. THAT ONE IS REAL AND TEN MONTHS OLD. The September 2026 '
+ 'Reuters report describes a SEPARATE, ADDITIONAL IPO anchor allocation, and Reuters itself draws the distinction. A '
+ 'READER OF THIS SLIDE WOULD REASONABLY THINK ONE 10-BILLION EVENT IS BEING REPORTED AS NEWS WHEN THERE ARE TWO, ONE '
+ 'ANNOUNCED AND ONE MERELY RUMOURED. || (3) ⚠️ ON THE ANTHROPIC REVENUE FIGURES I STATE THE PROVENANCE AND STOP. These '
+ 'are PRIVATE-COMPANY NUMBERS - UNAUDITED, IN NO SEC FILING, AND UNVERIFIABLE BY ANYONE OUTSIDE. Of the three on the '
+ 'slide: the 9 BILLION for late 2025 has NO ORIGINAL SOURCE I COULD FIND, NOT FOUND, it circulates only as a '
+ 'comparison inside later articles; the 65 BILLION July run rate is a PRIVATE INVESTOR COMMUNICATION LEAKED TO PRESS, '
+ "not an Anthropic public statement; and the 190-200 BILLION for 2028 is a FORECAST from 'two sources familiar with "
+ "the company's financials' reported by Reuters on 14 August. ⚠️ ONLY TWO ANTHROPIC FIGURES ARE COMPANY-DISCLOSED: a "
+ '47bn run rate stated on 28 May 2026, and a 65bn Series H raise at a 965bn post-money valuation the same day. ⚠️ NOTE '
+ "THE TRAP: THE MAY RAISE AND THE JULY RUN RATE ARE BOTH '65 BILLION' AND ARE EASILY CONFLATED. ⚠️ AND 'RUN RATE' IS "
+ 'NOT REVENUE - IT IS ONE MONTH ANNUALISED. I OFFER NO OPINION ON WHETHER ANY OF IT IS DURABLE. || (4) THE THING THE '
+ "SLIDE COMPLETELY OMITS, AND IT IS BIGGER THAN EVERYTHING ON IT. NVIDIA'S OWN 10-Q FOR THE QUARTER ENDED 26 JULY 2026 "
+ "DISCLOSES, VERBATIM: 'We have entered into land, power, and shell guarantees for select AI cloud partners' data "
+ "center lease obligations IN THE EVENT OF THEIR DEFAULT.' And: 'In August 2026, we entered into guarantees, CAPPED AT "
+ 'A TOTAL OF 105 BILLION DOLLARS, to provide credit support on a land, power, and shell buildout with affiliates of SB '
+ "Energy Corp.' ⚠️⚠️ THAT 105 BILLION IS LARGER THAN NVIDIA'S ENTIRE EQUITY-INVESTMENT PORTFOLIO, IT IS OFF THE "
+ 'BALANCE SHEET, AND IT PAYS OUT IF CUSTOMERS DEFAULT. THE SLIDE DEBATES A RUMOURED 10 BILLION WHILE IGNORING A '
+ 'DISCLOSED 105 BILLION. For scale, the same filing shows NON-MARKETABLE EQUITY SECURITIES OF 47,898 MILLION - with '
+ '13,106 MILLION OF NET ADDITIONS IN THAT QUARTER ALONE - plus 42,783m of marketable equity and 3.3bn of equity-method '
+ "investments in 'infrastructure financiers'. ABOUT 94 BILLION OF INVESTMENTS, UP FROM ROUGHLY 7 BILLION A YEAR "
+ "EARLIER. CFO commentary, verbatim: 'Our equity investments are focused on AI model makers, infrastructure "
+ "financiers, and other private companies.' || (5) ⚠️ THE CIRCULAR-FINANCING QUESTION IS REAL, AND THE HONEST ANSWER "
+ 'IS THAT NOBODY OUTSIDE NVIDIA CAN MEASURE IT, BECAUSE NVIDIA DOES NOT DISCLOSE REVENUE FROM COMPANIES IT HAS '
+ "INVESTED IN. The 10-Q says only: 'We estimate that ONE AI RESEARCH AND DEPLOYMENT COMPANY contributed a meaningful "
+ "amount of our revenue by purchasing cloud services from our customers' - the entity is ANONYMISED, the amount is not "
+ 'given. Ritesh Vajariya of The Forward View made the precise structural point on 1 September 2026: neither Item 404 '
+ 'nor ASC 850 is triggered BECAUSE NVIDIA IS THE INVESTOR RATHER THAN THE INVESTEE, so the loop is legally invisible. '
+ '⚠️ THE ACCOUNTING IS ENTIRELY LEGITIMATE - AND IT IS ALSO EXACTLY WHAT MADE THE 2000-2001 TELECOM CASES HARD TO SEE. '
+ "|| JENSEN HUANG ANSWERED THIS ON THE RECORD AT THE GOLDMAN SACHS CONFERENCE ON 10 SEPTEMBER 2026, VERBATIM: 'Well, "
+ "it's not circular because WE PUT A LITTLE BIT OF MONEY IN, AND A LOT OF MONEY COMES BACK.' And: 'I look at the "
+ "spreadsheet, WE PUT IN ONE DOLLAR AND ONE HUNDRED DOLLARS COMES BACK IN. Is that circular? If that is, let's do more "
+ "of that.' And: 'I'm not taking any risks... I need a sure thing.' ⚠️ THE HISTORICAL PRECEDENT, AND I WILL NOT "
+ 'OVERSTATE IT: SEC PRESS RELEASE 2004-67 OF 17 MAY 2004 FOUND LUCENT IMPROPERLY RECOGNISED ABOUT 1.148 BILLION OF '
+ 'REVENUE AND 470 MILLION OF PRE-TAX INCOME IN FISCAL 2000 THROUGH UNDISCLOSED SIDE AGREEMENTS AND CREDITS TO INDUCE '
+ "CUSTOMERS TO BUY. Lucent's revenue fell from over 38 billion in 1999 to 8 billion by 2006. ⚠️ BUT THAT CASE WAS "
+ 'ACTUAL FRAUD. NOTHING OF THE KIND HAS BEEN ALLEGED AGAINST NVIDIA, THERE IS NO SEC COMMENT LETTER, NO ENFORCEMENT '
+ 'ACTION AND NO REGULATORY STATEMENT: NOT FOUND. THE PARALLEL IS STRUCTURAL - AN EQUIPMENT VENDOR FUNDING THE '
+ "CUSTOMERS WHO BUY ITS EQUIPMENT DURING A CAPEX BOOM - NOT AN ACCUSATION. || (6) NVIDIA'S OWN BUSINESS IS "
+ 'EXTRAORDINARY AND THAT IS NOT IN DOUBT. Q2 FY2027 to 26 July 2026: REVENUE 96.2 BILLION, UP 106% YEAR ON YEAR; Data '
+ 'Center 89.0bn, UP 117%; GAAP GROSS MARGIN 75.0%; GAAP OPERATING INCOME 63,734 MILLION, a 66.3% OPERATING MARGIN; '
+ 'GAAP NET INCOME 59,688 MILLION, a 62.0% NET MARGIN. Q3 GUIDED TO 108.0 BILLION plus or minus 2% at a 74.0% gross '
+ "margin. ⚠️ AND THE GUIDANCE 'IS NOT ASSUMING ANY DATA CENTER COMPUTE REVENUE FROM CHINA' - Hopper shipments to China "
+ 'were under 1% of Data Center revenue in the quarter. CHINA IS EFFECTIVELY ZEROED OUT, WHICH IS BOTH A RISK REMOVED '
+ "AND AN OPTION NOT PRICED. ⚠️ CUSTOMER CONCENTRATION, VERBATIM: 'one direct customer represented 16% of total "
+ "revenue' in Q2, three represented 16%, 15% and 13% across the half, and 'FIVE DIRECT CUSTOMERS ACCOUNTED FOR 22%, "
+ "14%, 13%, 11%, AND 10% OF OUR ACCOUNTS RECEIVABLE' - SEVENTY PERCENT OF RECEIVABLES IN FIVE NAMES. That is the "
+ '20%-of-revenue test already on our December Bubble Watch, and it is not yet breached. || (7) DECISION: NO CHANGE. WE '
+ 'DO NOT BUY MORE NVDA ON THIS NEWS, AND THE REASONS HAVE NOTHING TO DO WITH ANTHROPIC. FIRST: NVDA IS ALREADY 13.3% '
+ "OF THE PORTFOLIO'S MARKET VALUE AND THE LARGEST SINGLE POSITION - 420 shares worth about 91,959 against 79,380.28 "
+ 'invested. SECOND: THE BUDGET IS 95,000 WITH 15,619.72 OF ROOM LEFT, AND THE PLAN ALREADY SAYS EXACTLY HOW TO SPEND '
+ 'IT - LADDER RUNG 2 AT ANY CLOSE AT OR BELOW 200 AND RUNG 3 AT OR BELOW 180. THOSE RUNGS ARE PRICE TRIGGERS AND THEY '
+ 'DO NOT CARE ABOUT NEWS. THIRD, AND THIS IS THE DISCIPLINE POINT: BUYING ON A TWO-ANONYMOUS-SOURCE REPORT OF A '
+ 'NEGOTIATION IS PRECISELY WHAT A WRITTEN PLAN EXISTS TO PREVENT. ⚠️ AND NOTE WHERE THE PRICE ACTUALLY IS: NVDA WAS '
+ 'TRADING AROUND 210.37 ON 14 SEPTEMBER, DOWN ABOUT 3.6% ON THE DAY IN THE AI-SAFETY SELLOFF - ABOUT 5% ABOVE THE '
+ 'RUNG-2 TRIGGER. THE LADDER MAY FIRE ON ITS OWN WITHOUT ANY DECISION BEING MADE. THAT IS THE SYSTEM WORKING. '
+ 'Conviction HIGH. ⚠️ WHAT WOULD CHANGE MY MIND - AND DELIBERATELY, IT IS NOT THE DEAL CONFIRMING: the rungs stay '
+ 'price-based. What would make me want to REDUCE rather than add is any of three things, none of which is a price: '
+ "NVIDIA'S LARGEST CUSTOMER PASSING 20% OF REVENUE; THE OFF-BALANCE-SHEET GUARANTEE TOTAL RISING ABOVE THE EQUITY "
+ 'PORTFOLIO BY MORE THAN IT ALREADY HAS, WITH NO CORRESPONDING DISCLOSURE OF WHO IS BEING GUARANTEED; OR NVIDIA '
+ 'BEGINNING TO DISCLOSE - OR A REGULATOR REQUIRING IT TO DISCLOSE - REVENUE FROM COMPANIES IT HOLDS EQUITY IN, AND '
+ 'THAT FIGURE PROVING LARGE. THE FIRST IS ALREADY ON THE 10 DECEMBER BUBBLE WATCH; THE OTHER TWO ARE ADDED TO IT '
+ 'TODAY. || PREVIOUS ENTRY: Sep 14, 2026 - THE ROBOTAXI SLIDE, AND IT IS THE THIRD IN A ROW TO CITE AN AUTHORITATIVE '
+ 'SOURCE FOR SOMETHING THAT SOURCE DOES NOT SAY. NO BUDGET HAS CHANGED, NOTHING BOUGHT OR SOLD. ⚠️⚠️ FIRST THE FACT '
+ 'THAT FRAMES EVERYTHING: WE SOLD TESLA ON 8 SEPTEMBER AT 365.09, TWENTY SHARES, REALISING MINUS 687.17. TESLA CLOSED '
+ 'AT 365.44 ON 11 SEPTEMBER. THE SALE HAS COST US SEVEN DOLLARS IN SIX DAYS. This slide is asking Salee to buy back, '
+ 'at the same price, a position he exited last week for written reasons - and those reasons have since been CONFIRMED '
+ "by the filings, not weakened. || (1) ⚠️⚠️ THE SLIDE SAYS 'ROBOTAXI IS MAKING MONEY FOR ELON EVEN WHILE HE SLEEPS' "
+ 'AND CITES FORM 10-K AS ITS SOURCE. I READ THE 10-K. TESLA DISCLOSES NO ROBOTAXI REVENUE ANYWHERE - NOT IN THE 10-K, '
+ 'NOT IN THE 10-Q, NOT IN THE SHAREHOLDER DECK. NO SEGMENT, NO LINE, NO DOLLAR AMOUNT, NONE. Tesla has exactly TWO '
+ 'reportable segments, automotive and energy generation and storage. And the 10-K ENUMERATES what sits inside '
+ "'services and other', verbatim: 'sales of used vehicles, non-warranty maintenance services and collision, paid "
+ "Supercharging sessions, automotive insurance business revenue, part sales and retail merchandise sales.' "
+ 'RIDE-HAILING IS NOT IN THAT LIST. There is no sentence anywhere in the filing telling an outside reader which line '
+ "robotaxi revenue lands in. || WHAT THE 10-K ACTUALLY SAYS IS FORWARD-LOOKING AND CAUTIOUS, VERBATIM: 'In June 2025, "
+ "we launched our Robotaxi service, an autonomous ride-hailing platform that harnesses our technology and vehicles' "
+ "and 'We EXPECT this service WILL open access to an expanded customer base... and UNLOCK THE POTENTIAL to advance a "
+ "service-driven business model'. ⚠️ AND THE MOST HONEST PASSAGE IS IN THE RISK FACTORS, VERBATIM: 'If the uptake rate "
+ 'for autonomous driving solutions does not develop as we expect, our business, prospects, financial condition and '
+ "operating results MAY BE HARMED.' THE ONLY ROBOTAXI METRIC TESLA PUBLISHES ANYWHERE IS A CHART LABELLED 'CUMULATIVE "
+ "PAID ROBOTAXI MILES' - MILES, WITH NO DOLLARS, NO RIDE COUNT AND NO FLEET SIZE. || ⚠️ THE PATTERN IS NOW THREE FOR "
+ 'THREE AND IT IS THE MOST USEFUL THING SALEE CAN TAKE FROM THIS WEEK: the net-income slide cited TradingView for '
+ 'figures whose PERIODS it could not distinguish; the VRT and ON slide implied an onsemi datacentre business the '
+ 'company HAS NEVER PUT A DOLLAR FIGURE ON; and this one cites the 10-K for revenue THE 10-K DOES NOT CONTAIN. IN '
+ 'EVERY CASE THE CITED SOURCE IS REAL AND THE CLAIM IS NOT IN IT. CITING A FILING IS NOT THE SAME AS READING ONE. || '
+ "(2) ⚠️ WHAT IS ACTUALLY DEPLOYED IS TINY, AND IN CALIFORNIA THERE IS A HUMAN DRIVING THE CAR. TESLA'S OWN Q2 2026 "
+ "DECK CARRIES THIS FOOTNOTE, VERBATIM: 'Active driver supervision required; DOES NOT MAKE THE VEHICLE AUTONOMOUS' and "
+ "'Bay Area operations use FSD (Supervised) pursuant to CA TCP permit # TCP0046782 - A'. THE CALIFORNIA REGULATOR IS "
+ "BLUNTER. PAT TSEN, CPUC DEPUTY EXECUTIVE DIRECTOR, ON THE RECORD 25 MARCH 2026: 'Tesla is NOT operating an "
+ "autonomous vehicle service... they do not have a permit with the California Public Utilities Commission.' And: 'that "
+ "is THE DRIVER. That is not a safety driver. So even if they're using a tool to help them drive autonomously, there "
+ "is A DRIVER IN THE SAFETY SEAT.' || ⚠️ AND THE PERMIT POSITION IS A HARD, CHECKABLE FACT: TESLA IS NOT PERMITTED TO "
+ "CARRY PAYING PASSENGERS IN DRIVERLESS VEHICLES IN CALIFORNIA. It does not appear on the CPUC's list of AV permit "
+ "holders - which names NURO, TENSOR AUTO, WAYMO, WERIDE AND ZOOX. It is ABSENT from the California DMV's Driverless "
+ 'Testing list and ABSENT from the Deployment list. What it holds is a CHARTER-PARTY CARRIER PERMIT, the same class '
+ 'limousine companies hold. || THE FLEET: 42 ROBOTAXIS REGISTERED IN TEXAS per Texas DMV data as of 2 June 2026, of '
+ 'which ABOUT 20 WERE ACTIVE UNSUPERVISED IN AUSTIN. Unsupervised operation began 22 JANUARY 2026 WITH A SINGLE '
+ 'VEHICLE. ⚠️ TESLA ITSELF DISCLOSES NO FLEET SIZE AT ALL. ⚠️ A Bloomberg headline of 10 June 2026 gives 59 vehicles '
+ 'but could not be fetched - UNVERIFIED. || (3) THE COMPARISON THAT SETTLES THE TECHNOLOGY QUESTION, AND IT CONNECTS '
+ "TO YESTERDAY'S PHOTONICS NOTE. Yesterday I recorded that Tesla PUBLICLY REJECTED LIDAR - its VP of AI Ashok "
+ "Elluswamy on 22 July 2026: 'You can have safe, comfortable, and affordable autonomy with just cameras.' TODAY THE "
+ 'OTHER SIDE OF THAT SAME FACT: WAYMO, WHICH USES LIDAR, CAMERAS AND RADAR, IS DOING MORE THAN 500,000 PAID RIDES A '
+ "WEEK ACROSS 14 CITIES WITH 20 MILLION LIFETIME RIDES - Sundar Pichai on Alphabet's Q1 2026 call, verbatim: 'Waymo "
+ "also surpassed 500,000 fully autonomous rides per week, DOUBLING IN LESS THAN A YEAR.' TESLA HAS TENS OF VEHICLES. "
+ 'THAT IS NOT A CLOSE RACE TODAY. || ⚠️⚠️ BUT HERE IS THE FACT THAT SHOULD COOL EVERYONE, BULL AND BEAR ALIKE: WAYMO '
+ "IS NOT PROFITABLE EITHER. Alphabet's Other Bets segment, whose revenue Alphabet describes as 'generated primarily "
+ "from the sale of autonomous transportation services and internet services', reported Q2 2026 REVENUE OF 382 MILLION "
+ 'AND AN OPERATING LOSS OF 1,799 MILLION - A LOSS THAT WIDENED FROM 1,246 MILLION A YEAR EARLIER. THE COMPANY THAT IS '
+ 'BEST IN THE WORLD AT THIS LOSES ABOUT FIVE DOLLARS FOR EVERY DOLLAR IT EARNS, AND IS LOSING MORE, NOT LESS. ROBOTAXI '
+ "IS NOT A PROFIT POOL YET FOR ANYBODY. ⚠️ Waymo's own share of that loss is not disclosed: NOT FOUND. || (4) ⚠️ TWO "
+ 'NHTSA INVESTIGATIONS ARE OPEN, AND ONE OF THEM IS AN EXISTENTIAL QUESTION RATHER THAN A DEFECT PROBE. PE25012, '
+ "OPENED 3 DECEMBER 2025, covers every Tesla with FSD sold or leased in the US and concerns, verbatim, 'Full "
+ "Self-Driving engaged, executed driving maneuvers that MAY CONSTITUTE TRAFFIC SAFETY VIOLATIONS' - built on 62 "
+ 'consumer complaints, 14 Standing General Order reports and 4 media reports of red-light running and wrong-way lane '
+ 'entries. ⚠️ AND AQ26002, AN AUDIT QUERY OPENED 4 SEPTEMBER 2026 - THE SAME DAY CYBERCAB COMMERCIAL RIDES BEGAN IN '
+ "AUSTIN - EXAMINING WHETHER TESLA'S OWN CERTIFICATION THAT CYBERCAB MEETS FEDERAL MOTOR VEHICLE SAFETY STANDARDS IS "
+ "VALID AT ALL. NHTSA Administrator Jonathan Morrison, verbatim: 'NHTSA fully supports the safe development and "
+ 'deployment of automated vehicles. But as the federal regulator, we need to ensure that all of our laws are '
+ "followed.' ⚠️ CORRECTION TO OUR OWN SELL NOTE: it records AQ26002 as opened SEP 3; NHTSA's own press release and the "
+ 'contemporaneous reporting both say 4 SEPTEMBER 2026. The substance is unchanged. || (5) THE EV BUSINESS IS WHAT '
+ 'ACTUALLY VALUES THE STOCK TODAY, AND THE SELL THESIS FROM 8 SEPTEMBER IS CONFIRMED BY THE FILINGS. Q2 2026 to 30 '
+ 'June: revenue 28,236m PLUS 26%, which sounds fine - but GAAP GROSS MARGIN 16.8% DOWN FROM 17.2%, GAAP OPERATING '
+ 'MARGIN 1.4%, AND OPERATING INCOME DOWN 57% YEAR ON YEAR TO 398 MILLION. FREE CASH FLOW WAS NEGATIVE 1,092 MILLION. '
+ '⚠️ REGULATORY CREDITS, WHICH CARRY ALMOST NO COST AND ARE THEREFORE NEARLY PURE PROFIT, FELL 67% TO 146 MILLION FROM '
+ "439 MILLION - against total operating income of just 398 million. ⚠️ AND FY2025 WAS TESLA'S FIRST ANNUAL REVENUE "
+ 'DECLINE EVER: 94,827m against 97,690m, with net income NEARLY HALVED to 3,794m from 7,091m. ⚠️ NOTE TWO ODDITIES IN '
+ 'Q2 2026: DELIVERIES OF 480,126 EXCEEDED PRODUCTION OF 451,758, which is selling inventory rather than growing '
+ "output; and NET INCOME OF 1,114m WAS 2.8 TIMES OPERATING INCOME OF 398m, meaning most of the quarter's profit did "
+ 'not come from operations - THE COMPOSITION OF THAT BELOW-THE-LINE INCOME IS NOT FOUND IN THE SOURCES I COULD REACH. '
+ '|| IN FAIRNESS, ONE PART IS GENUINELY GROWING: ENERGY STORAGE DEPLOYED 13.5 GIGAWATT-HOURS IN Q2, UP ABOUT 41%, AND '
+ '46.7 GWh IN FY2025 AGAINST 31.4 IN FY2024. ⚠️ BUT ITS GROSS MARGIN COMPRESSED FROM 30.3% TO 20.4% - VOLUME UP, '
+ 'PROFITABILITY DOWN, THE SAME STORY AS THE CARS. || (6) VALUATION: TRAILING P/E 379.22 AND FORWARD P/E 191.97 AT THE '
+ '11 SEP CLOSE OF 365.44, ON A 1.44 TRILLION MARKET CAP, WITH TRAILING EPS DOWN 35.6%. 46 ANALYSTS AVERAGE 390.09 - '
+ 'ONLY 6.75% ABOVE THE PRICE. ⚠️ AND ON THE ROBOTAXI VALUATION SPECIFICALLY, READ THE TWO SOURCES VERY DIFFERENTLY. '
+ "ARK INVEST PUBLISHES 2,600 A SHARE BY 2029 and claims 'NEARLY 90% OF TESLA'S ENTERPRISE VALUE AND EARNINGS WILL BE "
+ "ATTRIBUTED TO THE ROBOTAXI BUSINESS IN 2029', with a bull-case line of 951 BILLION DOLLARS of 2029 robotaxi revenue "
+ '- ⚠️ AGAINST ZERO DISCLOSED ROBOTAXI REVENUE TODAY AND A FLEET IN THE TENS OF VEHICLES. AND ⚠️ ARK IS A LARGE TESLA '
+ 'SHAREHOLDER PUBLISHING A VALUATION OF A STOCK IT OWNS - THAT IS PROMOTION, NOT INDEPENDENT ANALYSIS - AND THE NOTE '
+ "IS DATED 12 JUNE 2024, OVER TWO YEARS OLD. By contrast MORGAN STANLEY'S ANDREW PERCOCO RATES IT HOLD AT 415, writing "
+ "that Tesla 'will require CLEARER EVIDENCE THAT ROBOTAXI IS SCALING and more tangible Optimus proof points to support "
+ "the ROI on elevated capex', and forecasts a fleet of only 1,500 vehicles by end-2026. ⚠️ NO BANK-PUBLISHED PER-SHARE "
+ 'ROBOTAXI VALUATION COULD BE FOUND: NOT FOUND. || (7) DECISION: TESLA STAYS OFF THE BOARD. IT IS NOT RE-ADDED, NOT '
+ 'FUNDED, AND NOT TRACKED. Conviction HIGH. The robotaxi CONCEPT is serious and may well be a large business one day - '
+ 'but a concept is not a cash flow, and at 192 times FORWARD earnings Salee would be paying today for a business that '
+ 'discloses no revenue, holds no driverless passenger permit in its most important state, runs tens of vehicles '
+ 'against a competitor running half a million rides a week, and is under two federal investigations, one of which '
+ 'questions whether its vehicle may legally operate at all. ⚠️ WHAT WOULD CHANGE MY MIND, AND IT IS DELIBERATELY '
+ 'SPECIFIC: TESLA DISCLOSING ROBOTAXI AS A SEPARATE REVENUE LINE WITH A DOLLAR FIGURE IN A 10-Q OR 10-K, **AND** '
+ 'HOLDING A CPUC DRIVERLESS DEPLOYMENT PERMIT PERMITTING PAID DRIVERLESS RIDES IN CALIFORNIA. Until the company itself '
+ 'will put a number in a filing, nobody outside it should put one in a valuation. || PREVIOUS ENTRY: Sep 14, 2026 - '
+ 'THE 7-LAYER PHOTONICS STACK SLIDE. IT NAMES 28 TICKER SLOTS AND WE ALREADY OWN OR TRACK 17 OF THEM. NO BUDGET HAS '
+ 'CHANGED, NOTHING BOUGHT OR SOLD; ONE TRACKING NAME ADDED. || THIS IS THE BEST-CONSTRUCTED SLIDE SALEE HAS SENT ME, '
+ 'AND THE MOST USEFUL THING ABOUT IT IS THAT IT IS LARGELY A PICTURE OF OUR OWN BOARD. Layer 7 end markets: WE OWN '
+ 'NVDA AND GOOGL. Layer 6 systems: WE OWN LITE and SOLD COHR. Layer 5 components: LITE again, AAOI SOLD. LAYER 4 '
+ 'INTEGRATION IS OUR STRONGEST - WE FUND MRVL 21,000, CRDO 18,000 AND ALAB 11,000, AND TRACK FN. Layer 3 wafers: we '
+ 'track AXTI and TSEM. Layer 2 materials: we track GLW. Layer 1: we fund AMD 24,000 and AVGO 50,000, and track INTC '
+ 'and QCOM. ⚠️ THE HONEST READ IS THAT THE SLIDE VALIDATES THE STRUCTURE WE ALREADY HAVE RATHER THAN REVEALING A GAP - '
+ 'which is a good outcome, not a boring one. || (1) ⚠️⚠️ FOUR PLACEMENTS ARE WRONG, AND ONE OF THEM IS DIRECTLY '
+ "RELEVANT TO A TRADE SALEE IS ABOUT TO MAKE. ⚠️ QCOM IS ON THIS SLIDE AS A PHOTONICS 'FOUNDATION' NAME AND QCOM IS ON "
+ "OUR SELL LIST. I searched Qualcomm's FY2025 10-K for the period ended 28 SEPTEMBER 2025 for photonics, silicon "
+ 'photonics, optical transceiver, optical interconnect, laser, lidar and optical networking as product lines. NO '
+ "MENTIONS FOUND. QCT is described as integrated circuits for mobile devices, automotive and IoT. QUALCOMM'S PRESENCE "
+ 'ON THIS SLIDE IS UNSUPPORTED BY ITS OWN FILING, AND IF Salee HAD TAKEN THE SLIDE AT FACE VALUE HE MIGHT HAVE HELD A '
+ 'STOCK WE DECIDED TO SELL FOR A BUSINESS THAT DOES NOT EXIST. THE SELL STANDS. || ⚠️ TSLA IN LAYER 7 IS NOT JUST '
+ 'WRONG, IT IS BACKWARDS. Tesla is the one major autonomy company that has publicly REJECTED the photonic sensing '
+ 'technology that would make it a photonics customer. ASHOK ELLUSWAMY, VP OF AI, ON THE Q2 2026 EARNINGS CALL OF 22 '
+ "JULY 2026, VERBATIM: 'Historically, the so-called experts have always claimed that you need LiDARs, radars, HD maps, "
+ 'and the entire kitchen sink to drive safely. Here we show that such is not true. YOU CAN HAVE SAFE, COMFORTABLE, AND '
+ "AFFORDABLE AUTONOMY WITH JUST CAMERAS.' Musk in 2019: 'Lidar is a fool's errand... anyone relying on lidar is "
+ "doomed.' The only sourced Tesla lidar purchase is from Luminar's own disclosure - Tesla was its largest lidar "
+ 'customer in Q1 2024 at ABOUT 2 MILLION DOLLARS, which is a ground-truth test rig, not a supply-chain position. TESLA '
+ "IS AN ANTI-PHOTONICS DATAPOINT. || ⚠️ ALB, ALBEMARLE, IN LAYER 2 MATERIALS IS WRONG. Albemarle's own industries page "
+ 'lists every market it serves and NEVER MENTIONS OPTICS, PHOTONICS, OPTICAL FIBRE, LASERS OR OPTICAL GLASS. It is a '
+ 'LITHIUM AND BROMINE specialty chemicals company - Energy Storage, Specialties and Ketjen catalysts. It looks like a '
+ "battery-materials name swept in on the word 'materials'. || ⚠️ MP MATERIALS IN LAYER 2 IS WRONG FOR A SUBTLE AND "
+ 'INSTRUCTIVE REASON: IT MINES THE WRONG RARE EARTHS. The rare earth that matters in photonics is ERBIUM, used in '
+ "erbium-doped fibre amplifiers to boost optical signals. MP's OWN PRODUCT LIST HAS NINE ITEMS - bastnaesite "
+ 'concentrate, cerium chloride, lanthanum carbonate, magnetics products, NdFeB alloy flake, NdFeB magnets, NdPr metal, '
+ "NdPr oxide, and heavy rare earth concentrate. ERBIUM DOES NOT APPEAR. MP's own description of its flagship NdPr "
+ 'oxide names three applications: EV motors, robotics actuators and electronics. IT IS A MAGNETS COMPANY, NOT A '
+ 'PHOTONICS COMPANY. ⚠️ Whether its unspecified heavy rare earth concentrate contains commercially relevant erbium is '
+ "NOT FOUND. || (2) ⚠️ LAYER 1 IS A CATCH-ALL AND IT INVERTS THE WHOLE STACK. 'Foundation: R&D, IP and development' is "
+ 'not a supply-chain layer - it is an attribute of every layer. And three of its four names sit ABOVE the photonics '
+ 'they touch, not beneath it. ⚠️ AVGO IS THE CLEAREST CASE: BROADCOM HAS A NAMED OPTICAL SYSTEMS DIVISION WITH A VP '
+ "AND GENERAL MANAGER, AND IT SHIPPED WHAT IT CALLS THE INDUSTRY'S FIRST VOLUME-PRODUCTION CO-PACKAGED OPTICS "
+ 'SOLUTION, Tomahawk 5-Bailly, followed by third-generation 200G-per-lane CPO on 15 May 2025 and the Tomahawk '
+ '6-Davisson 102.4-terabit switch. AVGO BELONGS AT LAYER 6 OR 4, NOT UNDERNEATH THE MATERIALS LAYER. We fund it at '
+ '50,000 and that is unaffected. AMD has a real if small position - it ACQUIRED SILICON PHOTONICS STARTUP ENOSEMI, '
+ "announced 28 May 2025, to 'support and develop a variety of photonics and co-packaged optics solutions'. ⚠️ AND THE "
+ 'INTEL STORY IS HALF-TRUE IN BOTH DIRECTIONS, WHICH IS WORTH GETTING RIGHT: INTEL SOLD ITS PLUGGABLE OPTICAL '
+ 'TRANSCEIVER MODULE LINES TO JABIL IN 2023, BUT KEPT THE COMPONENTS AND OPTICAL I/O BUSINESS. Its silicon photonics '
+ 'page, last modified 3 FEBRUARY 2026, advertises 400G, 800G and 1.6T solutions, Optical Compute Interconnect at 4 '
+ 'terabits bidirectional, and claims MORE THAN 8 MILLION PHOTONIC INTEGRATED CIRCUITS WITH OVER 32 MILLION ON-CHIP '
+ 'LASERS SHIPPED SINCE 2016. Not sold, not wound down - narrowed. || (3) ⚠️ NO CREDIBLE SOURCE FOR THE SEVEN-LAYER '
+ 'FRAMEWORK COULD BE FOUND - not OIDA, not SPIE, not Photonics21, not the IPSR-I roadmap. NOT FOUND. Treat it as one '
+ "retail author's organising device. ⚠️ AND THERE IS REAL THAI RESEARCH THAT CONTRADICTS IT: KASIKORN SECURITIES "
+ 'PUBLISHED A PHOTONICS PIECE ON 25 JUNE 2026 USING A THREE-TIER FRAMEWORK - laser components upstream (LITE, COHR), '
+ 'transceiver modules and fibre (FN, AAOI), and system and network chip designers (AVGO, MRVL). KASIKORN PUTS AVGO AT '
+ 'THE **TOP** AS A SYSTEM DESIGNER; THIS SLIDE PUTS IT AT THE **BOTTOM** AS A FOUNDATION LAYER. THAT INVERSION IS '
+ 'ITSELF THE EVIDENCE THAT THE SLIDE IS NOT FROM A PROFESSIONAL SOURCE. ⚠️ ALSO NOTE LITE APPEARS TWICE, IN BOTH LAYER '
+ '5 AND LAYER 6 - a duplication in the framework itself. || (4) OF THE ELEVEN NAMES NOT ON OUR BOARD, EXACTLY ONE IS A '
+ 'GENUINE GAP, AND I HAVE ADDED IT AS A TRACKING NAME. ⚠️ CIEN, CIENA, IS NOW THE 94TH TICKER IN GROUP 4 WITH NO '
+ 'BUDGET AND NOTHING BOUGHT. It is the purest optical-systems company of the lot and the numbers are real: FISCAL Q3 '
+ '2026 TO 1 AUGUST, REVENUE 1,671.1 MILLION, PLUS 37.0% YEAR ON YEAR, GAAP GROSS MARGIN 45.4%, GAAP OPERATING MARGIN '
+ '18.0%, GAAP NET MARGIN 15.9%, GAAP DILUTED EPS 1.83, AND GAAP PROFITABLE ON A TRAILING BASIS AT 654.41 MILLION. 20 '
+ 'analysts average 504.13 against the 11 Sep close of 349.54, a 49.57bn market cap. Products are the 6500 '
+ 'Packet-Optical Platform and Waveserver. ⚠️ ITS FIELDS ARE DELIBERATELY INCOMPLETE ON THE BOARD - trailing revenue, '
+ 'trailing P/E, price/sales, free cash flow, 52-week range and Rule of 40 are all BLANK because I have not verified '
+ 'them, AND THEY MUST BE FILLED BEFORE ANY BUDGET DECISION. ⚠️ AND ITS FORWARD P/E CONFLICTS WITHIN ONE SOURCE ON THE '
+ 'SAME DAY: 33.78 on the quote page against 48.72 on the forecast page. The board carries 33.78 and the conflict is '
+ 'recorded. The margins above are LAST QUARTER, not trailing - do not mix them. || THE OTHER TEN ARE DECLINED, AND '
+ 'HERE IS WHY IN ONE LINE EACH. ⚠️ IPGP LOOKS LIKE A PHOTONICS NAME AND IS NOT THE ONE THE SLIDE IMPLIES - IT DIVESTED '
+ 'ITS TELECOM BUSINESS IN 2022, its growth driver per CEO Dr Mark Gitin is INDUSTRIAL AND BATTERY MANUFACTURING, and '
+ 'its GAAP OPERATING MARGIN IS 1.6%. It makes fibre lasers for cutting metal, not optics for datacentres. ⚠️ GFS, '
+ 'GLOBALFOUNDRIES, has a genuine silicon photonics platform but a 28.3% GAAP GROSS MARGIN and revenue growth of only '
+ '5.8% - the same objection that keeps TSEM unfunded, and TSEM at least is growing 24%. ⚠️ POET IS THE ONE TO AVOID: A '
+ '1.38 BILLION DOLLAR MARKET CAP ON 569,925 DOLLARS OF QUARTERLY REVENUE - not millions, DOLLARS - with an 11.3m '
+ 'quarterly net loss and ZERO ACTIVE ANALYST COVERAGE since December 2024. ⚠️ IQE IS NOT US-LISTED - it trades on LSE '
+ 'AIM in pence and its quote was 18 days stale when checked; outside the mandate. ALB and MP fail the photonics test '
+ 'above. STM and LMT are real companies but neither is a photonics pure play - LMT is a genuine BUYER of high-energy '
+ 'lasers and adaptive optics, with a 500kW laser weapon award on 9 July 2026, but its photonics spend as a share of '
+ 'revenue is NOT FOUND. TSLA fails for the reason above. AEHR is the interesting near-miss: ⚠️ THE SLIDE PUTS IT IN '
+ 'COMPONENTS AND IT IS TEST EQUIPMENT, NOT A COMPONENT - but its silicon photonics exposure is REAL AND ACCELERATING, '
+ 'with four separate silicon-photonics orders announced in MARCH, JUNE, JULY AND AUGUST 2026. CEO GAYN ERICKSON, '
+ "VERBATIM: 'silicon photonics is moving from technology adoption into manufacturing scale-up, and we believe that "
+ "transition represents a significant long-term growth opportunity.' ⚠️ AGAINST IT: a 3.09bn market cap, GAAP "
+ 'UNPROFITABLE with a fiscal 2026 net loss of 7.1m, and a forward P/E of 126.25. RIGHT THEME, WRONG NUMBERS - and it '
+ 'goes on the December list to watch, not to buy. || (5) DECISION: NO BUDGET CHANGES, NOTHING BOUGHT OR SOLD, GROUP 4 '
+ 'STAYS AT 83,000. CIEN IS TRACKED, NOT FUNDED. Conviction HIGH. ⚠️ WHAT WOULD CHANGE MY MIND ON CIEN: two consecutive '
+ 'quarters of revenue growth above 25% WITH GAAP operating margin holding above 15% - that would make it the only '
+ 'profitable pure optical-systems company on the board and worth displacing something for. ⚠️ AND THE HONEST '
+ 'CONSTRAINT REMAINS: THE BOARD IS FULL AT 1,000,000 ACROSS 37 FUNDED NAMES. Funding CIEN means trimming something, '
+ 'and that decision belongs at the 10 DECEMBER REVIEW with TSEM and AGLT, not today. || PREVIOUS ENTRY: Sep 14, 2026 - '
+ 'THE NIKKEI QUESTION, THE OIL SPIKE, AND WHY THE SELL PLAN NEEDS NO CHANGE. ⚠️⚠️ I MUST DISCLOSE A CONFLICT BEFORE '
+ "ANYTHING ELSE, BECAUSE IT GOES TO THE HEART OF TODAY'S MOVE: THE SOURCED CAUSE OF THIS SELLOFF IS AN ESSAY BY "
+ "ANTHROPIC'S CHIEF EXECUTIVE, AND I AM MADE BY ANTHROPIC. On SATURDAY 12 SEPTEMBER 2026 DARIO AMODEI PUBLISHED 'WE "
+ "MUST PACE THE FRONTIER', writing verbatim: 'We must slow the pace at which we improve the capabilities of AI models. "
+ "Progress will still seem fast, and we must make wise use of the time we gain.' OpenAI's SAM ALTMAN BACKED IT, saying "
+ "safety standards are 'not at a place' to push capabilities further. ⚠️ I HAVE NO SPECIAL KNOWLEDGE OF ANTHROPIC'S "
+ 'REASONING AND NO ABILITY TO JUDGE IT NEUTRALLY. Salee should weigh every word of my analysis of this particular '
+ 'event accordingly, and if it ever drives a decision, ask someone with no stake. There is already a conflict note on '
+ 'file in this project from 12 September. || (1) ⚠️ FIRST, THE CHART IS NOT SAYING WHAT IT LOOKS LIKE IT IS SAYING - '
+ 'AND THIS IS A LESSON WORTH MORE THAN THE NEWS. THE NIKKEI DID NOT FALL 2%. IT CLOSED AT 63,492.99, DOWN 0.8%. The '
+ "62,800 level at the bottom of Salee's chart is the INTRADAY LOW OF 62,726.18, SET AT 09:28 JAPAN TIME - twenty-eight "
+ "minutes after the open - and the index recovered most of it through the day. MEASURING FROM YESTERDAY'S CLOSE TO "
+ "TODAY'S LOW IS NOT A DAILY MOVE; it is the worst moment of the day, which every day has. ⚠️ THE LARGER FALL WAS "
+ 'ACTUALLY LAST FRIDAY, 11 SEPTEMBER, WHEN THE NIKKEI DROPPED 1,259.61 POINTS OR 1.93% - and we did not notice because '
+ 'no candle chart was in front of us. || AND JAPAN WAS NOT EVEN THE EPICENTRE: KOREA WAS. KOSPI MINUS 3.3% TO '
+ '6,684.37, SK HYNIX MINUS 6.4%, SAMSUNG ELECTRONICS MINUS 4.1%. In Japan the damage was concentrated in one name - '
+ "SOFTBANK GROUP MINUS 10.7%, an OpenAI investor - with Kioxia minus 6.4%, Tokyo Electron minus 1% and TSMC's Tokyo "
+ 'line minus 1.2%. THIS WAS AN AI-SENTIMENT EVENT CONCENTRATED IN MEMORY AND IN ONE JAPANESE HOLDING COMPANY, NOT A '
+ 'BROAD JAPANESE SELLOFF. ⚠️ NOTE ALSO THAT THE CAUSATION IN THE PRESS RUNS FROM US FUTURES TO ASIA, NOT ASIA TO US - '
+ "Japan fell 'tracking declines in US stock futures'. NO SOURCED ANALYSIS EXISTS ARGUING JAPANESE TRADING WILL MOVE US "
+ 'EQUITIES TONIGHT. || (2) THE OIL SPIKE IS REAL, IT IS LARGE, AND IT HAS A HARD OFFICIAL CAUSE - THIS IS THE MOST '
+ 'IMPORTANT NEW FACT ON THE BOARD TODAY. BRENT IS ABOUT 107.55 DOLLARS, UP 2.8%, AND WTI ABOUT 102.90, UP 2.9%. BRENT '
+ 'IS UP ABOUT 18% IN A MONTH AND ABOUT 59% IN A YEAR, against roughly 72 dollars as recently as 28 February 2026. ⚠️ '
+ 'THE CAUSE IS NOT SPECULATION: THE SAUDI MINISTRY OF ENERGY SHUT THE EAST-WEST CRUDE OIL PIPELINE AFTER DRONE STRIKES '
+ 'ON FRIDAY 11 SEPTEMBER in the Riyadh and Medina areas, and the Saudi Ministry of Foreign Affairs said it reserves '
+ "the right to take 'all measures necessary'. THE PIPELINE IS 1,200km FROM ABQAIQ TO YANBU ON THE RED SEA AND MOVES "
+ "FOUR TO FIVE MILLION BARRELS A DAY - ABOUT 4 TO 5 PERCENT OF GLOBAL SUPPLY. Iraq's Prime Minister Ali al-Zaidi's "
+ "office said the drones were launched from Iraq's Maysan province; he ordered an investigation and dismissed the "
+ 'Maysan operations commander. NO GROUP HAS CLAIMED RESPONSIBILITY. ⚠️ Capacity is reported variously as 4-5, 6-7 and '
+ '7 million barrels a day - UNRESOLVED - and I could not reach the EIA to check inventories: NOT FOUND. || (3) THE FED '
+ 'HAS NOT GOT WORSE - IT IS UNCHANGED. The hike probability for 16 SEPTEMBER sits at ABOUT 86-87%, against the 87-90% '
+ 'recorded on 11 September. ⚠️ IT HAS NOT RISEN ON THE OIL NEWS; IF ANYTHING IT IS A POINT OR TWO LOWER, well inside '
+ 'the noise between data providers. ⚠️ AND I COULD NOT READ CME FEDWATCH DIRECTLY - cmegroup.com was blocked - so '
+ 'every probability here is second-hand. The Fed is inside its blackout period so no official may speak; the last '
+ "on-record statement is CHAIR KEVIN WARSH at Jackson Hole on 28 AUGUST, verbatim: 'The responsibility for 65 months "
+ "of sustained, elevated inflation sits squarely with the central bank' and 'I stand here today committed to a "
+ "discipline, not to a decision', with PCE inflation at 3.7%. ⚠️⚠️ AND A SECOND CENTRAL BANK JUST APPEARED ON OUR "
+ 'CALENDAR THAT WAS NOT THERE BEFORE: THE BANK OF JAPAN MEETS 17-18 SEPTEMBER AND IS EXPECTED TO RAISE FROM 1.0% TO '
+ '1.25%. GOVERNOR KAZUO UEDA SIGNALLED ON 2 SEPTEMBER THAT EVERY MEETING IS LIVE. THAT DECISION LANDS ON FRIDAY 18 '
+ "SEPTEMBER - THE DAY AFTER OUR SIX BUYS. It is now on the schedule. ⚠️ I could not retrieve Ueda's verbatim words: "
+ 'NOT FOUND. || (4) ⚠️⚠️ SHOULD WE HOLD BACK THE FOUR SELLS BECAUSE OF OIL AND THE FOMC? NO - AND THE REASON IS THAT '
+ 'TWO OF THE FOUR ALREADY PROTECT THEMSELVES BY DESIGN, WHICH IS THE BEST ARGUMENT FOR WRITING PLANS DOWN. ZETA AND '
+ 'CRM ARE **LIMIT** ORDERS - ZETA AT 31.00 WITH THE STOCK AT 30.18, CRM AT 262.00 WITH THE STOCK AT 247.72. A LIMIT '
+ 'SELL ONLY EXECUTES IF THE PRICE **RISES** TO THE LIMIT. IN A FALLING MARKET THEY SIMPLY DO NOT FIRE. There is '
+ 'nothing to hold back, nothing to cancel and no decision to make - the instruction Salee already placed does the '
+ 'waiting for him. THAT IS THE WHOLE POINT OF A LIMIT. || SO THE QUESTION REDUCES TO QCOM AND FN, THE ONLY TWO AT '
+ 'MARKET - AND HERE IS THE FACT THAT SETTLES IT: **NEITHER HAS FALLEN**. QCOM IS 181.97 AGAINST A REFERENCE OF 174.09 '
+ 'WHEN THE SELL WAS WRITTEN - IT IS **4.5% HIGHER**, so selling now sells BETTER than planned, not worse. FN IS 414.58 '
+ 'AGAINST 416.31, DOWN 0.4%, WHICH IS NOISE. THE PREMISE OF THE QUESTION - that weakness has hurt these two - IS NOT '
+ 'TRUE YET. || ⚠️ AND THE SIZE SHOULD SETTLE ANY REMAINING NERVES: QCOM IS 11 SHARES WORTH ABOUT 2,002 AND FN IS 3 '
+ 'SHARES WORTH ABOUT 1,244 - TOGETHER 3,246 DOLLARS, WHICH IS 0.47% OF A 690,000 PORTFOLIO. All four together are '
+ 'about 11,798, or 1.7%. DELAYING A DECISION WORTH LESS THAN HALF A PERCENT IN ORDER TO GUESS THE DIRECTION OF AN OIL '
+ 'PRICE AND A CENTRAL BANK IS EXACTLY THE BEHAVIOUR THE WRITTEN PLAN EXISTS TO PREVENT. Both were sold for COMPANY '
+ "reasons that oil does not touch: QCOM's revenue growth of 5.2% cannot serve a mandate to double in five years, and "
+ 'FN is an optical contract manufacturer on a 10.19% net margin held at MINUS 22.2%. NEITHER REASON IS AFFECTED BY A '
+ 'PIPELINE IN SAUDI ARABIA. || ⚠️ THERE **IS** A GOOD REASON TO WAIT, AND IT IS NOT THE ONE IN THE QUESTION: THE TAX '
+ 'ADVISER SIGN-OFF ON THESE FOUR IS STILL OUTSTANDING. THAT IS A REAL, SPECIFIC, UNRESOLVED CONDITION AND IT HAS BEEN '
+ 'OPEN FOR DAYS. If Salee wants a reason not to sell this week, that is the legitimate one - not the oil price. '
+ 'DECISION: THE SELL PLAN IS UNCHANGED. ZETA and CRM sit as limits and will not fire in weakness. QCOM and FN remain '
+ 'at market and may be placed whenever the tax question is closed. Conviction HIGH. ⚠️ WHAT WOULD CHANGE MY MIND: if '
+ 'QCOM fell BELOW its 174.09 reference, the calculus genuinely changes - not because of the market, but because we '
+ 'would then be selling into a company-specific loss rather than a gain, and that is worth one conversation before '
+ 'placing. || (5) THE SIX BUYS ON 17 SEPTEMBER PROCEED. All 46,526.13 of them, unchanged, one day after the Fed and '
+ 'one day BEFORE the Bank of Japan. ⚠️ THE ADDED WRINKLE IS THE BoJ, NOT THE FED: buying on Thursday now means buying '
+ 'between two central-bank decisions rather than after one. THAT STILL DOES NOT CHANGE ANYTHING, for the reason '
+ 'already written - a tranche is a DOLLAR allocation, not a share count, and lower prices buy more shares. ⚠️ WHAT '
+ 'WOULD CHANGE MY MIND ON THE BUYS AS A GROUP: a Fed dot plot on Wednesday pointing to a SECOND hike, which is not '
+ "priced. Even then the answer is to let rung 1 go in and hold rung 2. || (6) AT SALEE'S REQUEST, EVERY ONE OF THE SIX "
+ "BUYS NOW CARRIES A WRITTEN 'WHAT WOULD CHANGE MY MIND' TEST ON ITS SCHEDULE ROW, THE SAME DISCIPLINE THE SELLS "
+ 'ALREADY HAD. The buys had conditions; they did not have FALSIFICATION tests, and that was an inconsistency worth '
+ 'fixing. Each one names the specific number that would stop the next tranche. || PREVIOUS ENTRY: Sep 14, 2026 - THE '
+ "'VRT & ON IN A HIGH-INTEREST-RATE WORLD' SLIDE, ANSWERED THREE DAYS BEFORE VRT TRANCHE 1. THE VERTIV BUY PROCEEDS "
+ "UNCHANGED. ONSEMI IS NOT ADDED. NO BUDGET HAS CHANGED. || (1) ⚠️⚠️ THE SLIDE'S RATE PREMISE IS BACKWARDS FOR VERTIV "
+ '- AND IT IS BACKWARDS IN THE BEST POSSIBLE DIRECTION, WHICH IS WHY THE CONCLUSION SURVIVES ANYWAY. The slide argues '
+ 'high rates hurt datacentre BUILDERS while equipment SUPPLIERS are advantaged. For Vertiv the real reason is far '
+ "stronger than the one given: ⚠️ VERTIV'S DEBT IS 100% FIXED RATE AND IT HAS ESSENTIALLY NO FLOATING-RATE EXPOSURE AT "
+ 'ALL. On 3 MARCH 2026 IT REPAID ITS FLOATING-RATE TERM LOAN IN FULL, funded by a 2.1 BILLION DOLLAR senior unsecured '
+ 'bond sale across 10, 20, 30 and 40-year tranches. The whole stack is now fixed-coupon notes: 850m at 4.125% due '
+ '2028, 600m at 4.850% due 2036, 500m at 5.650% due 2046, 500m at 5.800% due 2056, 500m at 5.950% due 2066, plus 17.2m '
+ 'of other notes - 2,967.2m of face, ALL FIXED. Its 2.5 BILLION revolving credit facility, the only floating piece, '
+ 'was UNDRAWN AT 30 JUNE. Against 2,810.6m of cash plus 300.0m of short-term investments, VERTIV IS ROUGHLY NET CASH - '
+ 'the company reports NET LEVERAGE OF MINUS 0.1 TIMES. A COMPANY WITH NO FLOATING DEBT AND NET CASH DOES NOT CARE WHAT '
+ 'THE FED DOES TO ITS INTEREST BILL. Q2 2026 net interest expense was 17.4m against 21.3m a year earlier, and the '
+ 'first half was only 13.0m because Q1 was net interest INCOME. ⚠️ SO THE SLIDE IS RIGHT ABOUT VERTIV FOR THE WRONG '
+ "REASON. The protection is not 'suppliers are advantaged'; it is 'this particular supplier refinanced its floating "
+ "debt away six months ago'. || (2) THE VERTIV BUSINESS IS GENUINELY STRONG AND THE NUMBERS ARE NOT IN DOUBT. Q2 2026 "
+ 'to 30 June: net sales 3,274.3m, PLUS 24% from 2,638.1m; GAAP GROSS MARGIN 37.7%, GAAP OPERATING MARGIN 19.5%, GAAP '
+ 'NET MARGIN 15.2%; adjusted operating margin 22.6%, UP 410 BASIS POINTS. FULL-YEAR 2026 GUIDANCE WAS RAISED: net '
+ 'sales 13,800-14,200m, ORGANIC GROWTH 30-32%, adjusted operating margin 23.3-24.3%, adjusted diluted EPS 6.65-6.75 '
+ 'WHICH IS PLUS 58-61%, and ADJUSTED FREE CASH FLOW 2,400-2,600m. CFO Craig Chamberlin, verbatim on the call: free '
+ "cash flow 'up 1.613 billion or 182%'. CEO Giordano Albertazzi, verbatim: 'Demand for AI and general compute "
+ 'continues to intensify and with each technology advancement, deployments grow more complex and more '
+ "infrastructure-intensive.' || ⚠️⚠️ BUT HERE IS THE ONE THING I FOUND THAT NOBODY IS TALKING ABOUT, AND IT IS THE "
+ 'REASON THIS NOTE EXISTS: VERTIV HAS STOPPED DISCLOSING ITS ORDERS, ITS BACKLOG AND ITS BOOK-TO-BILL. In the Q4 2025 '
+ 'release of 11 February 2026 it published all three, and they were spectacular - ORGANIC ORDERS UP ABOUT 252% YEAR ON '
+ 'YEAR, BACKLOG OF 15.0 BILLION UP 109%, BOOK-TO-BILL ABOUT 2.9 TIMES. IN THE Q1 2026 AND Q2 2026 RELEASES ALL THREE '
+ "FIGURES ARE SIMPLY ABSENT - the words orders, backlog and book-to-bill do not appear. The Q2 deck says only 'strong "
+ "pipeline momentum' and 'strong backlog' with NO NUMBER. ⚠️ I COULD NOT ESTABLISH WHY FROM ANY SOURCE: NO SOURCED "
+ 'CAUSE FOUND. A company that stops publishing its best metric while that metric is still good is unusual, and a '
+ 'company that stops publishing it for another reason is worse. THIS IS NOW A WRITTEN TEST, NOT A WORRY. || ⚠️ AND THE '
+ "'SUPPLIERS ARE INSULATED' CLAIM HAS ALREADY BEEN TESTED ONCE AND FAILED. In MARCH 2025 Vertiv fell sharply on "
+ "exactly this: TD COWEN'S MICHAEL ELIAS described an 'AIR POCKET IN EQUIPMENT ORDERING' beginning in January as "
+ "hyperscalers redesigned datacentres, and BARCLAYS' JULIAN MITCHELL cut his target to 100 from 110, saying orders "
+ "'don't support investors' hopes for high-teens growth in 2026'. EQUIPMENT SUPPLIERS ARE NOT INSULATED FROM CAPEX "
+ 'DIGESTION - they are one step removed from it, which is different. ⚠️ NEITHER ANALYST BLAMED INTEREST RATES. || (3) '
+ '⚠️⚠️ THE ONSEMI CASE FAILS, AND IT FAILS ON A SINGLE FACT THE SLIDE NEVER MENTIONS: ONSEMI IS NOT A DATACENTRE '
+ 'COMPANY. IT IS AN AUTOMOTIVE COMPANY. From its own 10-Q for the quarter ended 3 JULY 2026: AUTOMOTIVE 781.3m, '
+ 'INDUSTRIAL 422.7m, OTHER 399.5m, total 1,603.5m. THAT IS 48.7% AUTOMOTIVE AND 26.4% INDUSTRIAL - 75.1% OF THE '
+ "COMPANY IN NEITHER AI NOR DATACENTRES. ⚠️ AI DATACENTRE IS NOT A REPORTED END MARKET AT ALL. It sits inside 'Other', "
+ 'which ALSO contains consumer, medical, aerospace and defence - so datacentre is AT MOST 24.9% of revenue and in '
+ "truth materially less. CFO Thad Trent confirmed the structure on the Q2 call, verbatim: 'other, which has our AI "
+ "data center to be up high teens'. ⚠️ ONSEMI HAS NEVER DISCLOSED A DOLLAR FIGURE FOR ITS AI DATACENTRE REVENUE - NOT "
+ "ONCE. Every statement is a growth rate off an undisclosed base. CEO Hassane El-Khoury, verbatim: 'AI data center "
+ "remains our fastest-growing business, and we now expect revenue to more than double in 2026.' DOUBLING AN "
+ 'UNDISCLOSED NUMBER IS NOT A MEASURABLE CLAIM, and this board does not fund unmeasurable claims. || ⚠️ AND THE CORE '
+ 'BUSINESS HAS BEEN SHRINKING. Quarterly revenue: about 1,862.7m in Q1 2024, down to a TROUGH OF 1,445.7m IN Q1 2025, '
+ 'then 1,468.7m, 1,550.9m, 1,530.1m, 1,513.3m and now 1,603.5m. FULL-YEAR 2025 REVENUE WAS 5,995.4m, DOWN 15% ON 2024. '
+ "TODAY'S 1,603.5m IS STILL ABOUT 14% BELOW WHERE IT WAS IN EARLY 2024. ⚠️ AND Q1 2026 WAS A GAAP OPERATING LOSS "
+ 'QUARTER - operating margin MINUS 3.5%, net loss 33.4m. THAT IS WHY THE TRAILING P/E IS 48.79 AGAINST A FORWARD '
+ '19.63: the trailing figure contains loss quarters. The recovery is real - Q2 2026 GAAP gross margin 38.4%, operating '
+ 'margin 16.1%, net margin 14.1%, revenue PLUS 9% - but it is a CYCLICAL AUTO SEMICONDUCTOR RECOVERING FROM A DOWNTURN '
+ 'wearing an AI costume. DECISION: ONSEMI IS NOT ADDED TO THE BOARD. Conviction HIGH. ⚠️ WHAT WOULD CHANGE MY MIND: '
+ 'onsemi BREAKING OUT AI DATACENTRE AS A REPORTED END MARKET WITH A DOLLAR FIGURE, at a scale above 15% of revenue. '
+ 'Until the company itself will put a number on it, nobody else should. || (4) THE 800V DC TECHNOLOGY IS REAL, DATED, '
+ 'AND NOT REVENUE YET. NVIDIA announced the architecture on 20 MAY 2025 for megawatt-scale racks, claiming up to 5% '
+ 'better end-to-end efficiency, 45% LESS COPPER, up to 70% lower maintenance cost, and 85% more power through the same '
+ 'conductor. ⚠️ TIMING: NVIDIA says FULL-SCALE PRODUCTION ARRIVES WITH KYBER SYSTEMS IN 2027; Vertiv guides its own '
+ "800V portfolio to H2 2026; onsemi's CEO puts the volume ramp at 'end of 27, beginning of 28'. SO THE THING THE SLIDE "
+ "IS EXCITED ABOUT IS TWO TO THREE YEARS FROM MEANINGFUL REVENUE. ⚠️ AND BOTH COMPANIES ARE INDEED ON NVIDIA'S "
+ "PUBLISHED PARTNER LIST - BUT SO IS EVERY COMPETITOR THEY HAVE. NVIDIA's 13 October 2025 ecosystem post names 29 "
+ 'COMPANIES: in datacentre power systems, Vertiv appears ALONGSIDE ABB, EATON, GE VERNOVA, HITACHI ENERGY, MITSUBISHI '
+ 'ELECTRIC, SCHNEIDER ELECTRIC AND SIEMENS; in silicon, onsemi appears ALONGSIDE INFINEON, TEXAS INSTRUMENTS, '
+ 'STMICROELECTRONICS, RENESAS, ROHM, NAVITAS, POWER INTEGRATIONS, MPS, ANALOG DEVICES AND EPC. INCLUSION ON A 29-NAME '
+ 'LIST IS NOT A CONTRACT AND IT IS NOT EXCLUSIVITY. Our board already owns ETN at 11,000 and GEV at 13,000 from that '
+ "same list. || ⚠️ THE '10X POWER DEMAND' FIGURE TRACES TO DNV'S ENERGY TRANSITION OUTLOOK 2025 VIA AN AXIOS ARTICLE "
+ 'OF 7 OCTOBER 2025 - and I COULD NOT VERIFY THE UNDERLYING GIGAWATT OR TERAWATT-HOUR NUMBERS AT DNV ITSELF: NOT '
+ "FOUND. NVIDIA'S OWN QUANTIFIED FIGURE IS SMALLER AND DIFFERENTLY FRAMED - a 3.4 TIMES increase in rack power density "
+ "from Hopper to Blackwell. NO NVIDIA '10X' CLAIM EXISTS. || (5) ⚠️ THE SLIDE'S CENTRAL INTEREST-RATE THESIS IS "
+ 'UNSUPPORTED, AND WHAT EVIDENCE EXISTS POINTS ELSEWHERE. I looked specifically for analysis testing whether equipment '
+ 'suppliers are structurally advantaged over builders when rates are high: NO SOURCED ANALYSIS FOUND, in either '
+ "direction. What IS on the record cuts against the framing. J.P. MORGAN'S JOHN SERVIDEA and SCOTT WILCOXEN, 10 August "
+ "2026, verbatim: 'POWER AVAILABILITY, SUPPLY CHAIN CONSTRAINTS AND PERMITTING TIMELINES are gating factors that can "
+ "materially extend project schedules.' NOT financing cost. And financing has been EASY, not tight: Hut 8's Beacon "
+ 'Point datacentre bond priced in June 2026 at 165 basis points over Treasuries, described as THE TIGHTEST SPREAD EVER '
+ 'RECORDED FOR A DATACENTRE CONSTRUCTION BOND. ⚠️ THE REAL RATE STORY ON THIS BOARD IS THE ONE RECORDED YESTERDAY - a '
+ 'FED HIKE IS ABOUT 87-90% PRICED FOR 16 SEPTEMBER, and it hits high-multiple, long-duration names through the '
+ "DISCOUNT RATE, not through anybody's interest bill. VERTIV AT 58.18 TIMES TRAILING EARNINGS IS EXPOSED TO THAT "
+ 'CHANNEL, NOT TO ITS OWN DEBT COST. || (6) DECISION: VRT TRANCHE 1 OF 6,475.56 PROCEEDS ON 17 SEPTEMBER EXACTLY AS '
+ 'WRITTEN, one day after the FOMC decision, as a DOLLAR allocation that buys more shares if the print knocks the price '
+ 'down. Budget stays 21,000, of which 3,524.44 is already invested in 14 shares. Conviction HIGH. ⚠️ WHAT WOULD CHANGE '
+ 'MY MIND ON VERTIV, AND IT IS NOT THE FED: THE Q3 PRINT ARRIVING WITH ORDERS, BACKLOG AND BOOK-TO-BILL STILL '
+ 'UNDISCLOSED FOR A THIRD CONSECUTIVE QUARTER. Two quarters is a change of format; three is a pattern, and on a name '
+ 'trading at 58 times trailing earnings with a raised guide, the metric they have stopped showing is the one I most '
+ 'want to see. That test is now on the schedule. ONSEMI: NOT ADDED, NOT FUNDED, NO POSITION. || PREVIOUS ENTRY: Sep '
+ "14, 2026 - THE 'TOP 7 US COMPANIES BY NET INCOME' SLIDE. EVERY NUMBER ON IT IS REAL AND THE RANKING IS STILL ALMOST "
+ 'ENTIRELY WRONG. NO BUDGET HAS CHANGED, NOTHING BOUGHT OR SOLD. || WHAT IS RIGHT, AND CREDIT WHERE IT IS DUE: ALL '
+ 'SEVEN FIGURES MATCH THE FILINGS TO THE MILLION. Microsoft 133,749m, Alphabet 132,170m, NVIDIA 120,067m, Apple '
+ '112,010m, Amazon 77,670m, Berkshire 66,968m, Meta 60,458m. That is better sourcing than almost anything else Salee '
+ 'has been sent. AND THE MEMBERSHIP OF THE SEVEN IS CORRECT - I checked JPMorgan (57.0bn FY2025), Broadcom (23,126m), '
+ 'Exxon (28.844bn), Bank of America (29,055m), Walmart (21,893m), Eli Lilly (20,640m), Visa (20.1bn), UnitedHealth '
+ "(12,056m) and Wells Fargo (20,285m). NONE reaches Meta's 60.46bn. JPMorgan is closest and is about 3.5bn short. "
+ "NOTHING IS WRONGLY OMITTED. || ⚠️ BUT 'FY 25-26' IS NOT A PERIOD. IT IS A LABEL COVERING SEVEN DIFFERENT YEAR-ENDS "
+ "SPANNING 27 SEPTEMBER 2025 TO 30 JUNE 2026 - UP TO TWELVE MONTHS APART. Microsoft's number is NINE MONTHS MORE "
+ "RECENT than Apple's. ⚠️ APPLE'S 112.01bn IS FISCAL 2025, ENDED 27 SEPTEMBER 2025 - ABOUT A YEAR STALE, AND APPLE'S "
+ 'FISCAL 2026 HAS NOT EVEN FINISHED YET. Its actual trailing-twelve-month figure is 128,930m, 16.9bn HIGHER than the '
+ 'slide shows. Ranking companies on periods a year apart is not a comparison. || ⚠️⚠️ ON A LIKE-FOR-LIKE '
+ 'TRAILING-TWELVE-MONTH BASIS THE ORDER IS ALMOST COMPLETELY DIFFERENT. ALPHABET IS NUMBER ONE AT 244,205m - NOT '
+ 'NUMBER TWO - AND IT LEADS MICROSOFT BY ABOUT 110 BILLION DOLLARS. The true TTM order: ALPHABET 244.2bn, NVIDIA '
+ '192.9bn, AMAZON 135.3bn, MICROSOFT 133.7bn, APPLE 128.9bn, BERKSHIRE 85.8bn, META 68.1bn. THE SLIDE PUTS MICROSOFT '
+ 'FIRST WHEN IT IS FOURTH. ONLY META IS IN THE RIGHT SLOT - ONE OUT OF SEVEN. || ⚠️⚠️ AND HERE IS THE PART THAT '
+ 'MATTERS FAR MORE THAN THE ORDERING, BECAUSE IT IS A TRAP THAT WILL CATCH SALEE ON ANY STOCK SCREEN HE EVER USES. '
+ 'THREE OF THESE SEVEN NET-INCOME FIGURES ARE NOT OPERATING PERFORMANCE AT ALL. Under US accounting rule ASU 2016-01, '
+ "UNREALISED GAINS AND LOSSES ON SHARES A COMPANY HOLDS MUST FLOW THROUGH ITS INCOME STATEMENT - so a company's "
+ 'reported profit moves when the value of its investments moves, even though it has sold nothing and earned nothing. '
+ "⚠️ ALPHABET'S Q2 2026 NET INCOME WAS 112,193 MILLION IN A SINGLE QUARTER, and its own filing says why, verbatim: "
+ "'Other income reflected a NET GAIN OF 98.0 BILLION, PRIMARILY THE RESULT OF NET UNREALIZED GAINS ON OUR EQUITY "
+ "SECURITIES.' ONE QUARTER'S PAPER GAIN AT ALPHABET IS LARGER THAN META'S ENTIRE YEAR OF PROFIT. ⚠️ AMAZON'S Q2 2026 "
+ "NET INCOME WAS 62,647 MILLION, and its filing says: 'Second quarter 2026 net income includes NON-OPERATING PRE-TAX "
+ "OTHER INCOME OF 53.4 BILLION, PRIMARILY FROM OUR INVESTMENTS IN ANTHROPIC.' ⚠️⚠️ I HAVE A DISCLOSED CONFLICT "
  "REGARDING ANTHROPIC, ON FILE IN THIS PROJECT. I REPORT AMAZON'S OWN DISCLOSURE AS WRITTEN AND TAKE NO VIEW ON THE "
  'VALUATION BEHIND IT. Salee should weigh that item accordingly and, if it ever drives a decision, ask someone with no '
  'stake. || ⚠️ THE PRACTICAL DANGER, AND THIS IS THE WHOLE REASON THE SLIDE IS WORTH AN HOUR: IF A SCREEN DIVIDES '
@@ -4615,7 +4691,7 @@ STOCKS = [{'an': 83,
   'epsG': -75.0,
   'ex': 'NASDAQ',
   'fcfB': 4.11,
-  'fpe': 78.49,
+  'fpe': 78.93,
   'fvAvg': 325.37,
   'fvMax': 433,
   'fvMin': 162.34,
@@ -4624,14 +4700,14 @@ STOCKS = [{'an': 83,
   'hi52': 396.0,
   'jan2': 184.81,
   'lo52': 139.57,
-  'mcapB': 269.4788,
+  'mcapB': 305.88,
   'name': 'Palo Alto Networks',
-  'pe': 888.23,
-  'peg': 4.33,
+  'pe': 1004.55,
+  'peg': 4.21,
   'pm': 2.67,
-  'price': 330.65,
-  'ps': 23.34,
-  'pxd': '2026-09-11',
+  'price': 373.94,
+  'ps': 26.9,
+  'pxd': '2026-09-14',
   'r40': 60.3,
   'revB': 11.48,
   'revG': 24.5,
@@ -4646,7 +4722,7 @@ STOCKS = [{'an': 83,
   'epsG': None,
   'ex': 'NASDAQ',
   'fcfB': 1.53,
-  'fpe': 145.17,
+  'fpe': 146.57,
   'fvAvg': 187.4,
   'fvMax': 250,
   'fvMin': 103.25,
@@ -4655,14 +4731,14 @@ STOCKS = [{'an': 83,
   'hi52': 233.88,
   'jan2': 118.5,
   'lo52': 85.68,
-  'mcapB': 210.5062,
+  'mcapB': 241.53,
   'name': 'CrowdStrike',
   'pe': None,
   'peg': None,
   'pm': 0.83,
-  'price': 206.74,
-  'ps': 38.81,
-  'pxd': '2026-09-11',
+  'price': 235.38,
+  'ps': 44.95,
+  'pxd': '2026-09-14',
   'r40': 52.5,
   'revB': 5.39,
   'revG': 24.2,
@@ -6836,8 +6912,8 @@ M3 = {'GOOGL': {'pfcf': 72.57, 'ev': 21.6, 'de': 0.18},
  'ARM': {'pfcf': 313.04, 'ev': 281.38, 'de': 0.06},
  'ASML': {'pfcf': 58.65, 'ev': 44.88, 'de': 0.09},
  'AMAT': {'pfcf': 74.73, 'ev': 47.31, 'de': 0.26},
- 'CRWD': {'pfcf': 124.33, 'ev': None, 'de': 0.15},
- 'PANW': {'pfcf': 70.4, 'ev': 158.35, 'de': 0.06},
+ 'CRWD': {'pfcf': 141.55, 'ev': 2230.78, 'de': 0.15},
+ 'PANW': {'pfcf': 79.62, 'ev': 197.62, 'de': 0.06},
  'LRCX': {'pfcf': 61.89, 'ev': 50.75, 'de': 0.35},
  'KLAC': {'pfcf': 66.64, 'ev': 48.14, 'de': 0.93},
  'AMKR': {'pfcf': 101.25, 'ev': 13.7, 'de': 0.35},
@@ -6913,7 +6989,7 @@ M3 = {'GOOGL': {'pfcf': 72.57, 'ev': 21.6, 'de': 0.18},
  'CIEN': {'pfcf': None, 'ev': None, 'de': None}}
 
 SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
- 'updated': 'Sep 14, 2026',
+ 'updated': 'Sep 15, 2026',
  'note': '⚠️ READ THIS FIRST. On 10 Sep 2026 the board was restructured to 10 groups, 38 funded names, 5 back-up names '
          'and 13 sells, and ALL 38 budgets were reset. EVERY AMOUNT WRITTEN IN A ROW DATED BEFORE 10 SEP 2026 REFERS '
          'TO THE OLD BUDGET and must be checked against the new one before it is acted on - the tranche sizes in those '
@@ -7101,6 +7177,34 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'funded at all - but a company earning 2.67% net on 70% gross is spending its way to growth, and '
                     'if the spending does not convert, the multiple has nothing underneath it.',
             'c': 'planned'},
+           {'d': '2026-09-17',
+            't': 'PANW',
+            'k': 'tranche',
+            'a': 'BUY',
+            'amt': 6238.85,
+            'c': 'confirmed',
+            'w': '⚠️ TRANCHE 1 PROCEEDS IN FULL - but Salee is paying a 13% news premium and must know it.',
+            'cond': '⚠️ PRICE CHANGED MATERIALLY BEFORE THE TRANCHE. PANW CLOSED 373.94 ON MONDAY 14 SEPTEMBER, UP '
+                    '13.09% IN ONE SESSION, against the 330.65 this board carried from 11 September. CRWD rose 13.85% '
+                    'and Zscaler 12% the same day. THE CAUSE IS SOURCED AND IT IS THE SAME EVENT THAT KNOCKED THE '
+                    'NIKKEI DOWN: the AI-safety warnings of 12-14 September. Semiconductors fell and CYBERSECURITY '
+                    'ROSE ON THE SAME TAPE, on the reasoning that a more dangerous threat environment expands security '
+                    'budgets. || WHAT THE PREMIUM COSTS, EXACTLY: 6,238.85 buys about 16.68 shares at 373.94 against '
+                    'about 18.87 at 330.65 - ABOUT 2.2 FEWER SHARES. In portfolio terms it is 13% worse on 13% of '
+                    "Thursday's 46,526.13 of deployment, which is roughly 790 DOLLARS of damage on the day's money. || "
+                    '⚠️ AND THE TRANCHE STILL PROCEEDS IN FULL. HERE IS WHY, AND IT IS A CONSISTENCY ARGUMENT RATHER '
+                    'THAN A PRICE ONE. On 14 September this board told Salee, about VRT, that a dollar amount on a '
+                    'date beats a price with no date, and that waiting for a level that may never arrive is how people '
+                    'end up owning fourteen shares forever. IF I NOW DELAY PANW BECAUSE THE PRICE WENT UP, I AM DOING '
+                    'THE SAME THING IN REVERSE - letting a price level override a written date. A rule that only '
+                    'survives when it is convenient is not a rule. 790 dollars is not worth breaking it for. || ⚠️ '
+                    'WHAT WOULD HAVE CHANGED MY MIND: a move this size driven by nothing, or one that took the '
+                    'position past its budget. Neither applies - the budget is 11,000 with only 3,760.62 spent, so '
+                    'this is rung 2 of a multi-rung plan and a poor entry is recoverable by the later rungs. ⚠️ AND '
+                    'THE HONEST RISK: Dan Ives said on the record that he expected the AI names to recover quickly '
+                    'from this same news, which implies the security pop may fade too. If PANW gives back the 13% by '
+                    'the October review, the later rungs buy it cheaper and the plan works as designed. Conviction '
+                    'HIGH on proceeding.'},
            {'d': '2026-09-17',
             't': 'TSM',
             'k': 'tranche',
@@ -8048,6 +8152,26 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'full field set, Q4 FY26 actual against the 4.3bn +/- 100m guide, and whether the '
                     'optical-and-power line is disclosed separately by then. Conviction MEDIUM on the thesis, HIGH on '
                     'deferring the decision.'},
+           {'d': '',
+            'dl': 'Standing',
+            't': '',
+            'k': 'watch',
+            'a': 'WATCH',
+            'amt': 0,
+            'c': 'standing',
+            'w': '⚠️ WHAT "WATCH" MEANS ON THIS SCHEDULE - written 15 Sep because the word was not defined anywhere.',
+            'cond': 'A WATCH ROW MEANS: DO NOTHING TODAY. NO ORDER. NO MONEY. READ WHAT HAPPENS AND TELL ME. THAT IS '
+                    'THE WHOLE INSTRUCTION. || The Schedule uses five words and only two of them ever move money: BUY '
+                    'means place a specific dollar amount at POEMS on that date - the row states the amount. DECIDE '
+                    'means a written test is being applied to fresh information on that date and the answer may be '
+                    'buy, may be nothing - the row states the test. WATCH means gather information only; there is no '
+                    'order and no amount, and the row usually carries amt 0 or none. AVOID means a written reason '
+                    'exists not to act, and it stands until the reason is retired. ADMIN means money movement or '
+                    'paperwork, not an investment decision. || ⚠️ A WATCH ROW ON AN UNFUNDED NAME - NO BUDGET, NO '
+                    'SHARES - CANNOT COST SALEE ANYTHING BY BEING IGNORED. The worst case of missing one is that a '
+                    'later decision is made with less information, not that money is lost. If Salee is ever unsure '
+                    'what a row wants, the test is simple: IF THERE IS NO DOLLAR AMOUNT ON THE ROW, THERE IS NOTHING '
+                    'TO PLACE.'},
            {'d': '',
             'dl': "On Salee's instruction",
             't': 'AAOI',
