@@ -3,110 +3,153 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Sep 16, 2026 - THE TWO SELL ORDERS WERE PLACED, ⚠️ NOTHING EXECUTED, AND ⚠️⚠️ ON THE REFRESHED PRICES BOTH LIMITS '
- 'SIT ABOVE THE MARKET RATHER THAN AT IT - WHICH IS WHY NEITHER FILLED, AND THE MISTAKE IN HOW I DESCRIBED THEM THIS '
- 'MORNING IS MINE. NO POSITION, CASH OR REALISED FIGURE HAS CHANGED AND THE BOARD REFLECTS THAT EXACTLY. || WHAT WAS '
- 'PLACED: CRM ORDER 5476543, LIMIT 262.00, 21 SHARES, DAY, stamped 23:52:15 on 15 September - re-placed exactly as '
- 'recommended. FN ORDER 5476514, THE 550.00 LIMIT, WAS WITHDRAWN at 23:53:35 - the right call, and that order was MY '
- "ERROR. FN ORDER 5476610 then went in at 23:54:18 - LIMIT 382.00, 3 SHARES, DAY. Both show 'Order Received' with "
- 'nothing executed. || ⚠️⚠️ THE CORRECTION, AND IT IS MINE TWICE OVER. The Tuesday 15 September closes are CRM 255.65 '
- 'and FN 374.91. SO THE CRM LIMIT OF 262.00 IS 2.48% ABOVE THE MARKET, NOT THE 1% I SAID, AND THE FN LIMIT OF 382.00 '
- "IS 1.89% ABOVE THE MARKET - IT IS NOT 'AT THE MARKET', WHICH IS WHAT I CALLED IT THIS MORNING. I was reading stale "
- '11 September prices (CRM 247.72, FN 414.58). A SELL LIMIT SET ABOVE THE LAST TRADE IS NOT AN EXIT, IT IS A WISH WITH '
- "A DEADLINE. || 💡 THE PRINCIPLE SALEE APPLIED IS STILL RIGHT AND I SHOULD HAVE GIVEN IT TO HIM FIRST. I said 'sell FN "
- "at the market'; he used a limit instead. A MARKET ORDER ACCEPTS WHATEVER PRICE THE BOOK OFFERS AND ON A THREE-SHARE "
- 'LOT CAN FILL SEVERAL PERCENT WORSE THAN THE SCREEN; A SELL LIMIT FILLS AT THE LIMIT OR BETTER AND CANNOT FILL WORSE. '
- 'THE RULE: NEVER USE A MARKET ORDER WHEN A LIMIT CAN DO THE SAME JOB WITH A FLOOR UNDER IT - BUT THE LIMIT MUST BE AT '
- 'OR JUST BELOW THE LAST TRADE, OR IT DOES NOT DO THE JOB AT ALL. || ⚠️⚠️ THREE SESSIONS RUNNING OF THE SAME FAILURE - '
- 'a sell limit above the market on a DAY order, which then dies at the close and has to be retyped: 12 Sep, 14 Sep, '
- "and now 15 Sep twice. THE FIX IS TWO CHANGES AT ONCE AND BOTH ARE SALEE'S TO MAKE AT POEMS: SET THE LIMIT AT OR JUST "
- 'BELOW THE LAST TRADE, AND USE GTC (GOOD-TILL-CANCELLED) INSTEAD OF DAY SO THE ORDER SURVIVES THE CLOSE. || ⚠️ AND '
- 'CHECK WHETHER THESE TWO ARE EVEN STILL ALIVE. Bangkok runs ELEVEN HOURS AHEAD OF NEW YORK, so a 23:52 Bangkok stamp '
- 'on 15 September is about 12:52 IN THE AFTERNOON NEW YORK TIME ON TUESDAY - mid-session. A DAY ORDER PLACED '
- "MID-SESSION DIES AT THAT SESSION'S CLOSE, and Tuesday closed at 03:00 Bangkok this morning with both limits "
- 'unreached. ON THAT READING BOTH HAVE ALREADY EXPIRED. If instead POEMS stamped New York time, they are queued for '
- 'today. I CANNOT TELL FROM THE SCREENSHOT AND WILL NOT PRETEND TO - THE POEMS ORDER BOOK SETTLES IT IN THIRTY '
- "SECONDS: 'Expired' means re-place them, 'Order Received' means they run today. || 💡 AND THE EMOTIONAL FRAME IS WRONG "
- 'ON CRM: IT IS A WINNER. 21 shares cost 3,749.91 (178.57 each) and are worth 5,368.65 at 255.65 - AN UNREALISED GAIN '
- 'OF 1,618.74, PLUS 43.2%. There is nothing to rescue. FN is the opposite: cost 1,604.56, worth 1,124.73, MINUS 479.83 '
- 'or MINUS 29.9% - and the reason to sell it was never the price, it is that three shares cannot pay their own 8.56 '
- 'commission. || ⚠️ SEPARATE DATA FAULT FOUND AND FIXED TODAY: THE 17 SEPTEMBER PANW TRANCHE WAS ON THE SCHEDULE '
- "TWICE, once 'planned' and once 'confirmed', BOTH AT 6,238.85. It was the only duplicated tranche row on the board. "
- 'The rows are now merged. NO MONEY WAS DOUBLE-COMMITTED - the day total was always 46,526.13 counting PANW once - but '
- 'the schedule read 52,764.98 to anyone looking, and that was wrong. || POSITIONS UNCHANGED: CRM 21 shares at '
- '3,749.91, FN 3 shares at 1,604.56. CASH UNCHANGED AT 236,324.23. LIFETIME REALISED UNCHANGED AT MINUS 3,065.31. ⚠️ '
- 'TAX ADVISER SIGN-OFF ON ALL FOUR SELLS REMAINS OUTSTANDING. || ⚠️ AND THE BIGGER EVENT IS TOMORROW, NOT TODAY: '
- 'THURSDAY 17 SEPTEMBER COMMITS 46,526.13 ACROSS SIX TRANCHES - CEG 5,959.02, GEV 7,852.70, PANW 6,238.85, TSM 15,000, '
- 'V 5,000 AND VRT 6,475.56 - the day after the FOMC decision and the day before triple witching and the Bank of Japan. '
- 'ALL SIX PROCEED AS WRITTEN. || PREVIOUS ENTRY: Sep 15, 2026 (12) - DAILY PRICE REFRESH: ALL 94 TICKERS BROUGHT TO '
- 'THE TUESDAY SEP 15, 2026 CLOSE (price, mcapB scaled by exact price ratio, pxd). THE BOARD WAS PRICED AT SEP 11 FOR '
- '85 NAMES AND THE SEP 14 SEMI/HARDWARE SELLOFF SITS INSIDE THIS ONE REFRESH, SO 36 CUMULATIVE MOVES >=6% WERE EACH '
- 'SECOND-SOURCED AGAINST GOOGLE FINANCE (ALL CONFIRMED TO THE PENNY). HUBB: stockanalysis served an intraday 1:04 PM '
- "stamp and a partial history row, so its close 438.53 was taken from Google Finance's dated Sep 15 4:00 PM print, "
- 'whose day-change arithmetic reconciles to the verified Sep 14 close 442.38. 14 partial-session stockanalysis history '
- 'rows rejected in favor of quote pages. No ticker unresolved. || PREVIOUS ENTRY: Sep 15, 2026 (11) - THE OPTICAL '
- 'COMMUNICATIONS SLIDE, AND IT IS THE FOURTH IN ONE WEEK TO LIST NAMES WE HAVE JUST SOLD. COHR IS ON IT - SOLD 11 '
- 'SEPTEMBER, REALISED MINUS 433.76. AAOI IS ON IT - SOLD 9 SEPTEMBER, REALISED MINUS 223.15. ⚠️ AND FN IS ON IT, WHICH '
- 'SALEE STILL HOLDS AND WHICH I RECOMMENDED CLOSING AT THE MARKET THIS MORNING. || 💡💡 BUT THIS SLIDE DOES SOMETHING '
- 'THE OTHERS DID NOT: IT CONTAINS THE EVIDENCE FOR OUR OWN EXITS, AND SALEE CAN SEE IT WITHOUT LEAVING THE PAGE. PUT '
- "THE SLIDE'S OWN NAMES IN ORDER OF RULE OF 40 FROM OUR BOARD: CRDO 190.7, AVGO 92.9, LITE 87.0, TSM 55.8, MRVL 49.1, "
- 'FN 35.8, GLW 30.6, COHR 8.1, AAOI MINUS 37.5. ⚠️ THE SLIDE TREATS ALL NINE AS EQUAL MEMBERS OF ONE CATEGORY. THE '
- 'SPREAD BETWEEN THE BEST AND THE WORST IS MORE THAN TWO HUNDRED POINTS. THAT GAP IS THE ENTIRE DIFFERENCE BETWEEN A '
- 'SECTOR AND A PORTFOLIO - A SLIDE IS A CATEGORY, A BOARD IS A RANKING. We sold COHR at a Rule of 40 of 8.1 and AAOI '
- "at minus 37.5 for exactly the reason the slide's own line-up demonstrates. || THE MAP: WE HOLD SIX OF THE FIFTEEN - "
- 'LITE 9,372.74, AVGO 30,125.18, CRDO 7,700.99, MRVL 7,872.66, TSM 39,921.53 FUNDED, AND FN 1,604.56 HELD WITH NO '
- 'BUDGET. INTC WAS PARTLY SOLD ON 9 SEPTEMBER FOR A REALISED PLUS 1,163.35 - THE THIRD-LARGEST GAIN THIS BOARD HAS '
- 'BOOKED - with a 1,127.56 residual still held. GLW, CIEN AND TSEM SIT ON THE BOARD UNFUNDED AND ALL THREE ARE ALREADY '
- 'ON THE 10 DECEMBER AGENDA. MTSI, CSCO AND GFS ARE NOT ON THE BOARD AND I HAVE NOT RESEARCHED THEM. || 💡 THE STANDOUT '
- 'IS CREDO: REVENUE GROWTH OF 165.1% AND A RULE OF 40 OF 190.7 - THE BEST IN GROUP 4 AND AMONG THE BEST ON THE WHOLE '
- 'BOARD - with 7,700.99 invested of an 18,000 budget, so 10,299.01 OF APPROVED ROOM REMAINS. ALAB is the other one: '
- '98.5% growth, Rule of 40 121.5, 3,805.47 of 11,000. ⚠️ IF THE OPTICAL THESIS DESERVES MORE MONEY, IT SHOULD GO TO '
- 'THE TWO NAMES ALREADY SCORING 120 AND 190 - NOT TO A NEW NAME OFF A SLIDE. || ⚠️⚠️ AND THAT LEADS TO THE NUMBER THAT '
- 'MATTERS MOST TODAY, NOW WRITTEN AS A STANDING ROW: GROUP 4 HAS 42,926.27 OF APPROVED BUDGET UNSPENT AND GROUP 6 HAS '
- '49,270.88 - TOGETHER 92,197.15, MORE THAN NINE PERCENT OF THE ENTIRE PLAN, SITTING IDLE INSIDE TWO GROUPS WHOSE '
- 'THESIS WE BELIEVE. 💡 IT IS NOT IDLE BY ACCIDENT: THE NAMES THAT WOULD ABSORB IT MOSTLY FAIL OUR OWN SCREENS - GLW '
- '30.6, AXTI 23.51, COHR 8.1, AAOI minus 37.5 in Group 4; in Group 6 only VRT passes. THE MONEY IS IDLE BECAUSE THE '
- 'SCREEN IS WORKING. || THE 10 DECEMBER QUESTION IS NOW SINGLE AND SHARP: (A) fund the best sub-40 names anyway, '
- 'accepting the screen is too blunt for capital-intensive businesses; (B) bring in new names that pass - FIX, AAON, '
- 'MODINE, AEIS, DY are on the agenda for exactly this; or (C) MOVE THE ROOM TO CRDO AND ALAB, WHICH ALREADY SCORE '
- '190.7 AND 121.5 AND ARE ONLY PARTLY FUNDED. ⚠️ MY PRIOR IS (C), THEN (B), AND ALMOST NEVER (A). || ⚠️ TWO OPEN '
- "FAULTS ON THIS SLIDE'S NAMES REMAIN AND BOTH ARE OURS: LUMENTUM'S NET MARGIN STILL READS MINUS 230.1% with EPS of "
- "minus 92.96 - unresolved, and 4,627.26 of LITE room would be sized against it. CIENA'S FIELDS ARE STILL INCOMPLETE - "
- 'it has NO Rule of 40 at all. Both must be closed before 10 December. || DECISION: NOTHING BOUGHT, NOTHING SOLD, NO '
- 'BUDGET CHANGED, NO EXIT REOPENED. ⚠️ AND THE FN RECOMMENDATION FROM THIS MORNING STANDS UNCHANGED DESPITE ITS '
- 'APPEARANCE HERE: CLOSE THE THREE SHARES AT THE MARKET. The reason was never the price or the sector - it is that '
- "three shares worth about 1,148 cannot pay their own 8.56 commission. A slide listing Fabrinet under 'Assembly "
- "Services' does not change the arithmetic of a three-share position. || ⚠️⚠️ DATA LOSS FOUND AND REPAIRED ON 16 "
- 'SEPTEMBER. The daily price refresh of 15 September kept only ONE previous entry and DISCARDED THE OTHER 48 - about '
- '362,000 characters, nearly a year of written reasoning, including every buy and sell argument, every slide that was '
- 'checked, and every data fault that was found and closed. Nothing was lost permanently because it was all recoverable '
- 'from the repository, and the full chain below is restored from commit dbc8f34. ⚠️ THE REFRESH ROUTINE ITSELF STILL '
- 'HAS THE FAULT: IT CHAINS ONE ENTRY, NOT ALL OF THEM, SO IT WILL TRUNCATE AGAIN ON THE NEXT RUN UNLESS IT IS FIXED. '
- 'THAT IS NOW ON THE 10 DECEMBER AGENDA AND IT IS THE MOST IMPORTANT ITEM ON IT, because a board that forgets why it '
- 'bought something is just a list of tickers. RESTORED CHAIN FOLLOWS:  || PREVIOUS ENTRY: Sep 15, 2026 (10) - THE '
- 'APPLE SUPPLY-CHAIN SLIDE. ⚠️⚠️ IT RECOMMENDS TWO NAMES WE SOLD FOUR DAYS AGO, AND THAT IS NOW THE THIRD TIME IN ONE '
- 'WEEK. AMKR AND COHR ARE BOTH ON IT. WE SOLD AMKR ON 11 SEPTEMBER FOR A REALISED MINUS 674.76 AND COHR THE SAME DAY '
- 'FOR MINUS 433.76 - A COMBINED 1,108.52 OF REALISED LOSS ON DECISIONS TAKEN NINETY-SIX HOURS BEFORE THIS SLIDE WAS '
- 'PUBLISHED. || THE PATTERN, NOW WRITTEN INTO THE BOARD AS A STANDING ROW: the PHOTONIC slide put AAOI and TSLA on a '
- 'buy list days after we sold both; the @LeifInvests list contained TEN names of which FOUR were ours already exited; '
- 'and now this. 💡 THE EXPLANATION IS NOT A CONSPIRACY - THESE SLIDES ARE SECTOR ROLL-CALLS, NOT FILTERS. They list '
- 'everyone in a theme because a complete-looking list is what gets shared. A PORTFOLIO IS THE OPPOSITE: IT IS WHAT '
- 'REMAINS AFTER YOU REMOVE THINGS FOR WRITTEN REASONS. So an exited name will keep reappearing on category lists and '
- 'its reappearance carries NO INFORMATION. ⚠️ THE TEN-SECOND TEST SALEE CAN APPLY HIMSELF: DOES THE SLIDE SAY WHY EACH '
- 'NAME IS THERE, OR ONLY THAT IT IS THERE? This one gives no reason for any of its twenty-four names. It is a '
- 'DIRECTORY - genuinely useful for understanding the industry, and not a buy list. Its own publisher does not claim it '
- 'is. || THE MAP. OF THE TWELVE US-LISTED NAMES ON IT WE HOLD SIX AND CARRY A SEVENTH UNFUNDED: AAPL 11,437.61, TSM '
- '39,921.53, AVGO 30,125.18, MU 22,581.58 and APH 2,004.40 are FUNDED; SKHY 1,913.26 is held with no budget and '
- 'quarantined; GLW (Corning) sits on the board UNFUNDED with revenue growth of 21.4% and a Rule of 40 of 30.6 - BELOW '
- 'OUR 40 BAR, which is why it has no money. ⚠️ AMKR AND COHR ARE SOLD. TXN, SONY AND MP ARE NOT ON THE BOARD AT ALL. '
- '|| ⚠️ ON TXN, WHICH I CHECKED PROPERLY EARLIER TODAY: Q2 2026 revenue 5.46bn UP 23%, gross margin 61.3%, operating '
- 'margin 42.2%, trailing free cash flow 6.53bn, dividend yield 2.15%, FORWARD P/E 27.22, AND DATA CENTRE ROUGHLY '
- 'DOUBLED YEAR ON YEAR - but TI DOES NOT DISCLOSE A DATA-CENTRE FIGURE, so the doubling is off an undisclosed and '
- 'probably small base. AT 27 TIMES FORWARD WITH A 2.15% YIELD IT IS A CYCLICAL-RECOVERY STORY WEARING AN INCOME-STOCK '
- "REPUTATION, AND THE YIELD DOES NOT JUSTIFY IT IN A 2x-IN-FIVE-YEARS MANDATE. NOT ADDING. || ⚠️ ELEVEN OF THE SLIDE'S "
- 'NAMES CANNOT BE BOUGHT HERE AT ALL - Samsung in Seoul, Foxconn, Largan and Shin Zu Shing in Taipei, Lens Technology, '
- 'Eontec and Lingyi in Shenzhen, and the four Thai distributors. THAT IS THE MANDATE WORKING, NOT A GAP. || 💡💡 AND THE '
- 'GENUINELY USEFUL THING ON THIS SLIDE IS THE PANEL PILLAR 4 CANNOT TOUCH: COM7, SPVI, SYNEX AND CPW, THE THAI APPLE '
+ASOF = ('Sep 16, 2026 (2) - TWO SLIDES CHECKED, AND THEY LAND IN OPPOSITE PLACES: THE PROBE CARD SLIDE IS PART-INVENTED, THE '
+ 'WAYMO SLIDE IS ALMOST ENTIRELY TRUE AND STILL DOES NOT MATTER YET. ⚠️ AND A THIRD GOOGL DATA FAULT WAS FOUND WHILE '
+ "CHECKING - THE 19 NOVEMBER TRANCHE PROMISED 2,000 MORE THAN THE BUDGET HOLDS. || ⚠️⚠️ SLIDE 1 - 'TSMC AND NVIDIA PAY "
+ "A PREMIUM FOR PROBE CARDS; BUY FORMFACTOR'. THE CUSTOMER CLAIM IS EXACTLY RIGHT: FormFactor's 10-Q for the quarter "
+ 'ended 27 June 2026 names SK HYNIX AT 24.3% AND TSMC AT 11.0% OF REVENUE. THE TIGHTNESS IS REAL TOO: MPI probe card '
+ 'lead times ran to SIX MONTHS with two-year visibility, MPI weighed prepayments for priority, and Technoprobe is '
+ 'spending about 200m euro to double capacity. BUT THE PREMIUM CLAIM RESTS ON ONE ANONYMOUS PAYWALLED PARAGRAPH - '
+ "DigiTimes, 10 September 2026, 'supply-chain sources say Nvidia has raised prices' - WITH NO FILING, NO NAMED "
+ 'EXECUTIVE AND NO SECOND OUTLET. ⚠️⚠️ AND TSMC IS NOT IN THAT REPORT AT ALL. IT NAMES NVIDIA ONLY. TSMC WAS ADDED BY '
+ "WHOEVER MADE THE SLIDE. TSMC'S OWN CEO POINTED SOMEWHERE ELSE ENTIRELY ON 16 JULY: 'Our packaging capacity is so "
+ "tight that now it limits my customers' growth' - PACKAGING, NOT TESTING. || ⚠️ AND THE TRADE FAILS EVEN IF THE "
+ 'PREMIUM IS REAL: NVIDIA IS NOT A DISCLOSED 10% CUSTOMER OF FORMFACTOR. The vendors actually named in the reporting '
+ 'are TAIWANESE - MPI, Chunghwa Precision Test, WinWay - none on this board. DECISION: FORMFACTOR NOT BOUGHT. The '
+ 'company is genuinely good - Q2 revenue 258.2m UP 31.9%, 21.8% net margin, 136.1m of trailing free cash flow, NET '
+ 'CASH OF 334m, stock compensation only 4.0% of revenue, and a Rule of 40 of 47.0 that passes - BUT AT 68.8 TIMES '
+ 'EARNINGS AND A 1.71% FREE-CASH-FLOW YIELD IT SITS BELOW THE 1.94% MEDIAN THIS BOARD ALREADY CALLED A FAILURE, AFTER '
+ 'RISING 237% IN A YEAR. ⚠️⚠️ AND THE REAL REASON IS CLOSER TO HOME: WE ALREADY OWN THE TEST THEME THREE WAYS - '
+ 'TERADYNE, KLA AND TSMC ITSELF - AND GROUP 2 IS SITTING ON 88,292.04 OF APPROVED BUDGET IT HAS NOT SPENT. THIS IS THE '
+ 'FIFTH SLIDE IN TWO WEEKS POINTING AT A NAME WE DO NOT OWN WHILE APPROVED MONEY GOES UNDEPLOYED IN THE VERY GROUP IT '
+ 'WOULD JOIN. WRITTEN RE-UNDERWRITE TEST: A 3% FREE-CASH-FLOW YIELD (about 58 dollars a share, or trailing free cash '
+ 'flow above 238m) AND EITHER NVIDIA NAMED AS A 10% CUSTOMER IN A 10-Q OR A FILING CONFIRMING PRICE INCREASES. || 💡 '
+ "SLIDE 2 - WAYMO IN TOKYO. THIS ONE IS REAL AND TWO DAYS OLD: Waymo's blog 14 September, Nihon Kotsu and GO 15 "
+ 'September. Tokyo, Level 4, NO SAFETY DRIVER, targeted 2027, hailed through the GO app, testing since 2025 - ALL '
+ 'CONFIRMED. Two corrections only: the ~100 vehicles is WHERE THE FLEET EXPANDS TO IN PHASES, not where it starts; and '
+ "'Alphabet proves it can scale outside the USA' IS NOT TRUE YET - ALL FOURTEEN OF WAYMO'S COMMERCIAL CITIES ARE "
+ 'AMERICAN, and the first driverless commercial permit outside the US went to WERIDE IN ABU DHABI, not Waymo. || ⚠️⚠️ '
+ "AND THE INVESTOR ANSWER, WHICH THE SLIDE DOES NOT GIVE: ALPHABET DOES NOT DISCLOSE WAYMO'S REVENUE AT ALL. Waymo "
+ "sits inside 'Other Bets', WHICH IS BIGGER THAN WAYMO, AND OTHER BETS EARNED 382 MILLION IN Q2 2026 AGAINST "
+ "ALPHABET'S 119,796 MILLION - 0.32%, ONE THIRD OF ONE PERCENT - WHILE LOSING 1,799m, A 4.41% DRAG ON OPERATING "
+ "INCOME. 📊 AND THE SIZE TEST: Waymo's February round valued it at 126bn. ALPHABET IS WORTH 4,223bn. EVEN AT 100% "
+ 'OWNERSHIP WAYMO WOULD BE 2.98% OF ALPHABET. IT IS A REAL OPTION, NOT A SECOND ENGINE, AND IT IS NOT WHY WE OWN THE '
+ 'SHARES. The operating progress is impressive anyway - OVER 500,000 PAID TRIPS A WEEK, DOUBLED IN A YEAR, 14 CITIES, '
+ "4,000+ VEHICLES, 220.6M RIDER-ONLY MILES - and so are the risks: THE NTSB'S FIRST-EVER WAYMO INVESTIGATION after a "
+ 'driverless car STRUCK A NINE-YEAR-OLD IN A SANTA MONICA SCHOOL ZONE ON 23 JANUARY 2026, a 3,000-vehicle software '
+ "recall in December 2025, the 4 July San Francisco gridlock, and San Diego's council voting unanimously against "
+ "Waymo's autonomy on 14 September. DECISION: NOTHING CHANGES ON GOOGL. || ⚠️⚠️ THE GOOGL FAULT, AND IT IS THE SECOND "
+ 'OF ITS EXACT KIND IN SIX DAYS: THE 19 NOVEMBER TRANCHE 3 ROW SAID 20,524.08. THE BUDGET IS 78,000 WITH 59,475.92 '
+ 'INVESTED, SO ONLY 18,524.08 REMAINS - THE ROW WAS PROMISING 2,000 THAT DOES NOT EXIST. CORRECTED TO 18,524.08, WHICH '
+ 'NOW CLOSES THE BUDGET EXACTLY. The MRVL row had the same disease on 11 September (17,127.34 against a true '
+ '13,127.34). TWO OF ONE KIND IS A PROCESS PROBLEM, NOT BAD LUCK: A SCHEDULE AMOUNT MUST BE DERIVED FROM BUDGET MINUS '
+ 'INVESTED, NEVER TYPED. A FULL BUDGET-VERSUS-SCHEDULE RECONCILIATION IS NOW ON THE 10 DECEMBER AGENDA. || POSITIONS, '
+ 'CASH AND REALISED ALL UNCHANGED. ⚠️ AND TOMORROW IS STILL THE DAY THAT MATTERS: THURSDAY 17 SEPTEMBER COMMITS '
+ '46,526.13 ACROSS SIX TRANCHES, ALL PROCEEDING AS WRITTEN. || PREVIOUS ENTRY: Sep 16, 2026 - THE TWO SELL ORDERS WERE '
+ 'PLACED, ⚠️ NOTHING EXECUTED, AND ⚠️⚠️ ON THE REFRESHED PRICES BOTH LIMITS SIT ABOVE THE MARKET RATHER THAN AT IT - '
+ 'WHICH IS WHY NEITHER FILLED, AND THE MISTAKE IN HOW I DESCRIBED THEM THIS MORNING IS MINE. NO POSITION, CASH OR '
+ 'REALISED FIGURE HAS CHANGED AND THE BOARD REFLECTS THAT EXACTLY. || WHAT WAS PLACED: CRM ORDER 5476543, LIMIT '
+ '262.00, 21 SHARES, DAY, stamped 23:52:15 on 15 September - re-placed exactly as recommended. FN ORDER 5476514, THE '
+ '550.00 LIMIT, WAS WITHDRAWN at 23:53:35 - the right call, and that order was MY ERROR. FN ORDER 5476610 then went in '
+ "at 23:54:18 - LIMIT 382.00, 3 SHARES, DAY. Both show 'Order Received' with nothing executed. || ⚠️⚠️ THE CORRECTION, "
+ 'AND IT IS MINE TWICE OVER. The Tuesday 15 September closes are CRM 255.65 and FN 374.91. SO THE CRM LIMIT OF 262.00 '
+ "IS 2.48% ABOVE THE MARKET, NOT THE 1% I SAID, AND THE FN LIMIT OF 382.00 IS 1.89% ABOVE THE MARKET - IT IS NOT 'AT "
+ "THE MARKET', WHICH IS WHAT I CALLED IT THIS MORNING. I was reading stale 11 September prices (CRM 247.72, FN "
+ '414.58). A SELL LIMIT SET ABOVE THE LAST TRADE IS NOT AN EXIT, IT IS A WISH WITH A DEADLINE. || 💡 THE PRINCIPLE '
+ "SALEE APPLIED IS STILL RIGHT AND I SHOULD HAVE GIVEN IT TO HIM FIRST. I said 'sell FN at the market'; he used a "
+ 'limit instead. A MARKET ORDER ACCEPTS WHATEVER PRICE THE BOOK OFFERS AND ON A THREE-SHARE LOT CAN FILL SEVERAL '
+ 'PERCENT WORSE THAN THE SCREEN; A SELL LIMIT FILLS AT THE LIMIT OR BETTER AND CANNOT FILL WORSE. THE RULE: NEVER USE '
+ 'A MARKET ORDER WHEN A LIMIT CAN DO THE SAME JOB WITH A FLOOR UNDER IT - BUT THE LIMIT MUST BE AT OR JUST BELOW THE '
+ 'LAST TRADE, OR IT DOES NOT DO THE JOB AT ALL. || ⚠️⚠️ THREE SESSIONS RUNNING OF THE SAME FAILURE - a sell limit '
+ 'above the market on a DAY order, which then dies at the close and has to be retyped: 12 Sep, 14 Sep, and now 15 Sep '
+ "twice. THE FIX IS TWO CHANGES AT ONCE AND BOTH ARE SALEE'S TO MAKE AT POEMS: SET THE LIMIT AT OR JUST BELOW THE LAST "
+ 'TRADE, AND USE GTC (GOOD-TILL-CANCELLED) INSTEAD OF DAY SO THE ORDER SURVIVES THE CLOSE. || ⚠️ AND CHECK WHETHER '
+ 'THESE TWO ARE EVEN STILL ALIVE. Bangkok runs ELEVEN HOURS AHEAD OF NEW YORK, so a 23:52 Bangkok stamp on 15 '
+ 'September is about 12:52 IN THE AFTERNOON NEW YORK TIME ON TUESDAY - mid-session. A DAY ORDER PLACED MID-SESSION '
+ "DIES AT THAT SESSION'S CLOSE, and Tuesday closed at 03:00 Bangkok this morning with both limits unreached. ON THAT "
+ 'READING BOTH HAVE ALREADY EXPIRED. If instead POEMS stamped New York time, they are queued for today. I CANNOT TELL '
+ "FROM THE SCREENSHOT AND WILL NOT PRETEND TO - THE POEMS ORDER BOOK SETTLES IT IN THIRTY SECONDS: 'Expired' means "
+ "re-place them, 'Order Received' means they run today. || 💡 AND THE EMOTIONAL FRAME IS WRONG ON CRM: IT IS A WINNER. "
+ '21 shares cost 3,749.91 (178.57 each) and are worth 5,368.65 at 255.65 - AN UNREALISED GAIN OF 1,618.74, PLUS 43.2%. '
+ 'There is nothing to rescue. FN is the opposite: cost 1,604.56, worth 1,124.73, MINUS 479.83 or MINUS 29.9% - and the '
+ 'reason to sell it was never the price, it is that three shares cannot pay their own 8.56 commission. || ⚠️ SEPARATE '
+ "DATA FAULT FOUND AND FIXED TODAY: THE 17 SEPTEMBER PANW TRANCHE WAS ON THE SCHEDULE TWICE, once 'planned' and once "
+ "'confirmed', BOTH AT 6,238.85. It was the only duplicated tranche row on the board. The rows are now merged. NO "
+ 'MONEY WAS DOUBLE-COMMITTED - the day total was always 46,526.13 counting PANW once - but the schedule read 52,764.98 '
+ 'to anyone looking, and that was wrong. || POSITIONS UNCHANGED: CRM 21 shares at 3,749.91, FN 3 shares at 1,604.56. '
+ 'CASH UNCHANGED AT 236,324.23. LIFETIME REALISED UNCHANGED AT MINUS 3,065.31. ⚠️ TAX ADVISER SIGN-OFF ON ALL FOUR '
+ 'SELLS REMAINS OUTSTANDING. || ⚠️ AND THE BIGGER EVENT IS TOMORROW, NOT TODAY: THURSDAY 17 SEPTEMBER COMMITS '
+ '46,526.13 ACROSS SIX TRANCHES - CEG 5,959.02, GEV 7,852.70, PANW 6,238.85, TSM 15,000, V 5,000 AND VRT 6,475.56 - '
+ 'the day after the FOMC decision and the day before triple witching and the Bank of Japan. ALL SIX PROCEED AS '
+ 'WRITTEN. || PREVIOUS ENTRY: Sep 15, 2026 (12) - DAILY PRICE REFRESH: ALL 94 TICKERS BROUGHT TO THE TUESDAY SEP 15, '
+ '2026 CLOSE (price, mcapB scaled by exact price ratio, pxd). THE BOARD WAS PRICED AT SEP 11 FOR 85 NAMES AND THE SEP '
+ '14 SEMI/HARDWARE SELLOFF SITS INSIDE THIS ONE REFRESH, SO 36 CUMULATIVE MOVES >=6% WERE EACH SECOND-SOURCED AGAINST '
+ 'GOOGLE FINANCE (ALL CONFIRMED TO THE PENNY). HUBB: stockanalysis served an intraday 1:04 PM stamp and a partial '
+ "history row, so its close 438.53 was taken from Google Finance's dated Sep 15 4:00 PM print, whose day-change "
+ 'arithmetic reconciles to the verified Sep 14 close 442.38. 14 partial-session stockanalysis history rows rejected in '
+ 'favor of quote pages. No ticker unresolved. || PREVIOUS ENTRY: Sep 15, 2026 (11) - THE OPTICAL COMMUNICATIONS SLIDE, '
+ 'AND IT IS THE FOURTH IN ONE WEEK TO LIST NAMES WE HAVE JUST SOLD. COHR IS ON IT - SOLD 11 SEPTEMBER, REALISED MINUS '
+ '433.76. AAOI IS ON IT - SOLD 9 SEPTEMBER, REALISED MINUS 223.15. ⚠️ AND FN IS ON IT, WHICH SALEE STILL HOLDS AND '
+ 'WHICH I RECOMMENDED CLOSING AT THE MARKET THIS MORNING. || 💡💡 BUT THIS SLIDE DOES SOMETHING THE OTHERS DID NOT: IT '
+ "CONTAINS THE EVIDENCE FOR OUR OWN EXITS, AND SALEE CAN SEE IT WITHOUT LEAVING THE PAGE. PUT THE SLIDE'S OWN NAMES IN "
+ 'ORDER OF RULE OF 40 FROM OUR BOARD: CRDO 190.7, AVGO 92.9, LITE 87.0, TSM 55.8, MRVL 49.1, FN 35.8, GLW 30.6, COHR '
+ '8.1, AAOI MINUS 37.5. ⚠️ THE SLIDE TREATS ALL NINE AS EQUAL MEMBERS OF ONE CATEGORY. THE SPREAD BETWEEN THE BEST AND '
+ 'THE WORST IS MORE THAN TWO HUNDRED POINTS. THAT GAP IS THE ENTIRE DIFFERENCE BETWEEN A SECTOR AND A PORTFOLIO - A '
+ 'SLIDE IS A CATEGORY, A BOARD IS A RANKING. We sold COHR at a Rule of 40 of 8.1 and AAOI at minus 37.5 for exactly '
+ "the reason the slide's own line-up demonstrates. || THE MAP: WE HOLD SIX OF THE FIFTEEN - LITE 9,372.74, AVGO "
+ '30,125.18, CRDO 7,700.99, MRVL 7,872.66, TSM 39,921.53 FUNDED, AND FN 1,604.56 HELD WITH NO BUDGET. INTC WAS PARTLY '
+ 'SOLD ON 9 SEPTEMBER FOR A REALISED PLUS 1,163.35 - THE THIRD-LARGEST GAIN THIS BOARD HAS BOOKED - with a 1,127.56 '
+ 'residual still held. GLW, CIEN AND TSEM SIT ON THE BOARD UNFUNDED AND ALL THREE ARE ALREADY ON THE 10 DECEMBER '
+ 'AGENDA. MTSI, CSCO AND GFS ARE NOT ON THE BOARD AND I HAVE NOT RESEARCHED THEM. || 💡 THE STANDOUT IS CREDO: REVENUE '
+ 'GROWTH OF 165.1% AND A RULE OF 40 OF 190.7 - THE BEST IN GROUP 4 AND AMONG THE BEST ON THE WHOLE BOARD - with '
+ '7,700.99 invested of an 18,000 budget, so 10,299.01 OF APPROVED ROOM REMAINS. ALAB is the other one: 98.5% growth, '
+ 'Rule of 40 121.5, 3,805.47 of 11,000. ⚠️ IF THE OPTICAL THESIS DESERVES MORE MONEY, IT SHOULD GO TO THE TWO NAMES '
+ 'ALREADY SCORING 120 AND 190 - NOT TO A NEW NAME OFF A SLIDE. || ⚠️⚠️ AND THAT LEADS TO THE NUMBER THAT MATTERS MOST '
+ 'TODAY, NOW WRITTEN AS A STANDING ROW: GROUP 4 HAS 42,926.27 OF APPROVED BUDGET UNSPENT AND GROUP 6 HAS 49,270.88 - '
+ 'TOGETHER 92,197.15, MORE THAN NINE PERCENT OF THE ENTIRE PLAN, SITTING IDLE INSIDE TWO GROUPS WHOSE THESIS WE '
+ 'BELIEVE. 💡 IT IS NOT IDLE BY ACCIDENT: THE NAMES THAT WOULD ABSORB IT MOSTLY FAIL OUR OWN SCREENS - GLW 30.6, AXTI '
+ '23.51, COHR 8.1, AAOI minus 37.5 in Group 4; in Group 6 only VRT passes. THE MONEY IS IDLE BECAUSE THE SCREEN IS '
+ 'WORKING. || THE 10 DECEMBER QUESTION IS NOW SINGLE AND SHARP: (A) fund the best sub-40 names anyway, accepting the '
+ 'screen is too blunt for capital-intensive businesses; (B) bring in new names that pass - FIX, AAON, MODINE, AEIS, DY '
+ 'are on the agenda for exactly this; or (C) MOVE THE ROOM TO CRDO AND ALAB, WHICH ALREADY SCORE 190.7 AND 121.5 AND '
+ "ARE ONLY PARTLY FUNDED. ⚠️ MY PRIOR IS (C), THEN (B), AND ALMOST NEVER (A). || ⚠️ TWO OPEN FAULTS ON THIS SLIDE'S "
+ "NAMES REMAIN AND BOTH ARE OURS: LUMENTUM'S NET MARGIN STILL READS MINUS 230.1% with EPS of minus 92.96 - unresolved, "
+ "and 4,627.26 of LITE room would be sized against it. CIENA'S FIELDS ARE STILL INCOMPLETE - it has NO Rule of 40 at "
+ 'all. Both must be closed before 10 December. || DECISION: NOTHING BOUGHT, NOTHING SOLD, NO BUDGET CHANGED, NO EXIT '
+ 'REOPENED. ⚠️ AND THE FN RECOMMENDATION FROM THIS MORNING STANDS UNCHANGED DESPITE ITS APPEARANCE HERE: CLOSE THE '
+ 'THREE SHARES AT THE MARKET. The reason was never the price or the sector - it is that three shares worth about 1,148 '
+ "cannot pay their own 8.56 commission. A slide listing Fabrinet under 'Assembly Services' does not change the "
+ 'arithmetic of a three-share position. || ⚠️⚠️ DATA LOSS FOUND AND REPAIRED ON 16 SEPTEMBER. The daily price refresh '
+ 'of 15 September kept only ONE previous entry and DISCARDED THE OTHER 48 - about 362,000 characters, nearly a year of '
+ 'written reasoning, including every buy and sell argument, every slide that was checked, and every data fault that '
+ 'was found and closed. Nothing was lost permanently because it was all recoverable from the repository, and the full '
+ 'chain below is restored from commit dbc8f34. ⚠️ THE REFRESH ROUTINE ITSELF STILL HAS THE FAULT: IT CHAINS ONE ENTRY, '
+ 'NOT ALL OF THEM, SO IT WILL TRUNCATE AGAIN ON THE NEXT RUN UNLESS IT IS FIXED. THAT IS NOW ON THE 10 DECEMBER AGENDA '
+ 'AND IT IS THE MOST IMPORTANT ITEM ON IT, because a board that forgets why it bought something is just a list of '
+ 'tickers. RESTORED CHAIN FOLLOWS:  || PREVIOUS ENTRY: Sep 15, 2026 (10) - THE APPLE SUPPLY-CHAIN SLIDE. ⚠️⚠️ IT '
+ 'RECOMMENDS TWO NAMES WE SOLD FOUR DAYS AGO, AND THAT IS NOW THE THIRD TIME IN ONE WEEK. AMKR AND COHR ARE BOTH ON '
+ 'IT. WE SOLD AMKR ON 11 SEPTEMBER FOR A REALISED MINUS 674.76 AND COHR THE SAME DAY FOR MINUS 433.76 - A COMBINED '
+ '1,108.52 OF REALISED LOSS ON DECISIONS TAKEN NINETY-SIX HOURS BEFORE THIS SLIDE WAS PUBLISHED. || THE PATTERN, NOW '
+ 'WRITTEN INTO THE BOARD AS A STANDING ROW: the PHOTONIC slide put AAOI and TSLA on a buy list days after we sold '
+ 'both; the @LeifInvests list contained TEN names of which FOUR were ours already exited; and now this. 💡 THE '
+ 'EXPLANATION IS NOT A CONSPIRACY - THESE SLIDES ARE SECTOR ROLL-CALLS, NOT FILTERS. They list everyone in a theme '
+ 'because a complete-looking list is what gets shared. A PORTFOLIO IS THE OPPOSITE: IT IS WHAT REMAINS AFTER YOU '
+ 'REMOVE THINGS FOR WRITTEN REASONS. So an exited name will keep reappearing on category lists and its reappearance '
+ 'carries NO INFORMATION. ⚠️ THE TEN-SECOND TEST SALEE CAN APPLY HIMSELF: DOES THE SLIDE SAY WHY EACH NAME IS THERE, '
+ 'OR ONLY THAT IT IS THERE? This one gives no reason for any of its twenty-four names. It is a DIRECTORY - genuinely '
+ 'useful for understanding the industry, and not a buy list. Its own publisher does not claim it is. || THE MAP. OF '
+ 'THE TWELVE US-LISTED NAMES ON IT WE HOLD SIX AND CARRY A SEVENTH UNFUNDED: AAPL 11,437.61, TSM 39,921.53, AVGO '
+ '30,125.18, MU 22,581.58 and APH 2,004.40 are FUNDED; SKHY 1,913.26 is held with no budget and quarantined; GLW '
+ '(Corning) sits on the board UNFUNDED with revenue growth of 21.4% and a Rule of 40 of 30.6 - BELOW OUR 40 BAR, which '
+ 'is why it has no money. ⚠️ AMKR AND COHR ARE SOLD. TXN, SONY AND MP ARE NOT ON THE BOARD AT ALL. || ⚠️ ON TXN, WHICH '
+ 'I CHECKED PROPERLY EARLIER TODAY: Q2 2026 revenue 5.46bn UP 23%, gross margin 61.3%, operating margin 42.2%, '
+ 'trailing free cash flow 6.53bn, dividend yield 2.15%, FORWARD P/E 27.22, AND DATA CENTRE ROUGHLY DOUBLED YEAR ON '
+ 'YEAR - but TI DOES NOT DISCLOSE A DATA-CENTRE FIGURE, so the doubling is off an undisclosed and probably small base. '
+ 'AT 27 TIMES FORWARD WITH A 2.15% YIELD IT IS A CYCLICAL-RECOVERY STORY WEARING AN INCOME-STOCK REPUTATION, AND THE '
+ "YIELD DOES NOT JUSTIFY IT IN A 2x-IN-FIVE-YEARS MANDATE. NOT ADDING. || ⚠️ ELEVEN OF THE SLIDE'S NAMES CANNOT BE "
+ 'BOUGHT HERE AT ALL - Samsung in Seoul, Foxconn, Largan and Shin Zu Shing in Taipei, Lens Technology, Eontec and '
+ 'Lingyi in Shenzhen, and the four Thai distributors. THAT IS THE MANDATE WORKING, NOT A GAP. || 💡💡 AND THE GENUINELY '
+ 'USEFUL THING ON THIS SLIDE IS THE PANEL PILLAR 4 CANNOT TOUCH: COM7, SPVI, SYNEX AND CPW, THE THAI APPLE '
  "DISTRIBUTORS, ALL LISTED ON THE SET. ⚠️ THEY ARE PILLAR 3 - AND PILLAR 3 IS THE HOLE IN SALEE'S WHOLE STRUCTURE. His "
  'stated weights put THAI EQUITY AT 10%, THE SAME SIZE AS THIS ENTIRE BOARD, AND NO PILLAR 3 PORTFOLIO EXISTS: no '
  'board, no budget, no positions, no written objective. I have offered twice to build one. 💡 THESE FOUR ARE AN '
@@ -8201,10 +8244,18 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
            {'d': '2026-11-19',
             't': 'GOOGL',
             'k': 'tranche',
-            'w': 'Tranche 3 - after both the Final Judgment and Q3 results',
+            'w': 'Tranche 3 - after both the Final Judgment and Q3 results. ⚠️ AMOUNT CORRECTED 16 SEP FROM 20,524.08 '
+                 'TO 18,524.08 - THE OLD FIGURE WAS 2,000 MORE THAN THE BUDGET ALLOWS.',
             'a': 'BUY',
-            'amt': 20524.08,
-            'cond': '20,524.08 = the entire remaining room on the 80,000 budget. Deliberately dated AFTER two '
+            'amt': 18524.08,
+            'cond': '⚠️⚠️ DATA FAULT FOUND AND FIXED ON 16 SEPTEMBER, AND IT IS THE SECOND OF ITS CLASS ON THIS BOARD '
+                    '(the first was the MRVL 4,000 error of 11 September). THIS ROW COMMITTED 20,524.08. THE GOOGL '
+                    'BUDGET IS 78,000 AND 59,475.92 IS ALREADY INVESTED, SO ONLY 18,524.08 REMAINS. The row was '
+                    'promising 2,000 THAT DOES NOT EXIST. It is now 18,524.08 and the rung closes the budget exactly. '
+                    '⚠️ THE LESSON IS THE SAME BOTH TIMES: A SCHEDULE AMOUNT MUST BE DERIVED FROM BUDGET MINUS '
+                    'INVESTED, NEVER TYPED FROM MEMORY. Two faults of one kind in six days is a process problem, not '
+                    'bad luck, and a budget-versus-schedule reconciliation now belongs on the 10 December agenda. || '
+                    '20,524.08 = the entire remaining room on the 80,000 budget. Deliberately dated AFTER two '
                     'information events, not before: the Final Judgment due ~Oct 2 and Q3 2026 results ~Oct 28 '
                     '(estimated, not confirmed by Alphabet). || THE CASE: Q2 2026 revenue 119.8bn +24%, GOOGLE CLOUD '
                     '24.8bn +82%, operating margin 34%. Position is 217 shares at 59,475.92, up 23.5%, and the stock '
@@ -8222,6 +8273,80 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'ended. Separate from the older EUR2.95bn ad-tech decision where the Commission still wants a '
                     'STRUCTURAL remedy.',
             'c': 'planned'},
+           {'d': '2026-11-19',
+            'dl': 'Waymo - check at Q3, do not re-rate on it',
+            't': 'GOOGL',
+            'k': 'research',
+            'a': 'WATCH',
+            'amt': 0,
+            'c': 'planned',
+            'w': '⚠️ WAYMO TOKYO IS REAL AND TWO DAYS OLD - AND IT IS NOT YET BIG ENOUGH TO MOVE ALPHABET. The '
+                 'arithmetic is below.',
+            'cond': 'RECORDED 16 SEPTEMBER FROM A THAI INFOGRAPHIC ON WAYMO ENTERING JAPAN. THE ANNOUNCEMENT IS '
+                    "GENUINE AND VERY RECENT: Waymo's own blog is dated 14 SEPTEMBER 2026 and the Nihon Kotsu and GO "
+                    'releases 15 SEPTEMBER 2026. Almost every claim on the slide checks out. || ✅ CONFIRMED: Tokyo, '
+                    'partnership with GO and Nihon Kotsu, commercial service TARGETED in 2027, Level 4 with NO SAFETY '
+                    'DRIVER ("完全無人走行" - fully unmanned - in both Japanese releases), testing began in 2025 (Reuters, '
+                    '10 Apr 2025: 25 Jaguar I-PACE vehicles with human drivers across seven Tokyo wards), hailing '
+                    'through the GO app, and the ageing-society and driver-shortage rationale (Japanese taxi drivers '
+                    'down about 20%). Nihon Kotsu calls it "国内初" - JAPAN\'S FIRST Level 4 fully driverless commercial '
+                    'taxi operation. || ⚠️ ONE DISTORTION: "starts with about 100 vehicles" IS BACKWARDS. The releases '
+                    'say the service STARTS WITH A SMALL FLEET AND EXPANDS TO ABOUT 100 VEHICLES IN PHASES. A hundred '
+                    'is the destination, not the starting line. || ⚠️ AND ONE CLAIM THAT IS NOT TRUE TODAY: "Alphabet '
+                    'proves it can scale outside the USA." ALL FOURTEEN OF WAYMO\'S COMMERCIAL CITIES ARE IN THE '
+                    'UNITED STATES as of 1 September 2026. London is still only testing. The first city-level fully '
+                    'driverless commercial robotaxi permit OUTSIDE THE US went to WERIDE IN ABU DHABI in October 2025, '
+                    'not to Waymo. Tokyo would be the proof - IN 2027, IF THE PERMITS COME. || ⚠️⚠️ NOW THE ONLY '
+                    "NUMBER THAT MATTERS TO US, AND IT IS SOBERING. ALPHABET DOES NOT DISCLOSE WAYMO'S REVENUE AT ALL. "
+                    'Waymo sits inside "Other Bets" alongside Wing, Calico and X. OTHER BETS - WHICH IS BIGGER THAN '
+                    "WAYMO - PRODUCED 382 MILLION DOLLARS OF REVENUE IN Q2 2026 AGAINST ALPHABET'S 119,796 MILLION. "
+                    'THAT IS 0.32% - ABOUT ONE THIRD OF ONE PERCENT. It LOST 1,799m against 40,770m of operating '
+                    'income, a 4.41% DRAG. CFO Anat Ashkenazi, 22 July 2026, verbatim: "In other bets, revenues were '
+                    "$382 million, and operating loss was $1.8 billion, as we continue to expand Waymo's business and "
+                    'invest in key other bets." Full year 2025 was the same shape: Other Bets 1,537m of revenue '
+                    '(0.38%) and a 7,515m loss (5.8% of operating income) - though 2,100m of that was a ONE-OFF '
+                    "NON-CASH STOCK COMPENSATION CHARGE from marking Waymo's valuation up, not a cash burn. || 📊 THE "
+                    "SIZE TEST, DONE PROPERLY: Waymo's 16bn-dollar round of 2 FEBRUARY 2026 valued it at 126 BILLION "
+                    'post-money (Dragoneer, DST Global and Sequoia leading; Alphabet funded "a significant portion"). '
+                    "ALPHABET'S OWN MARKET VALUE IS 4,223bn. SO EVEN IF ALPHABET OWNED 100% OF WAYMO - IT DOES NOT, "
+                    'AND ITS PERCENTAGE IS NOT DISCLOSED - WAYMO WOULD BE 2.98% OF ALPHABET. That is the answer to "is '
+                    'Waymo a big deal for Alphabet": IT IS A REAL OPTION, NOT A SECOND ENGINE, AND IT IS NOT WHY WE '
+                    'OWN THE SHARES. || THE OPERATING PROGRESS IS GENUINELY IMPRESSIVE AND SHOULD BE SAID PLAINLY: '
+                    'OVER 500,000 PAID TRIPS A WEEK (Co-CEO Tekedra Mawakana, 14 Sep 2026), DOUBLED IN UNDER A YEAR '
+                    '(Sundar Pichai, 29 Apr 2026), 14 US CITIES, MORE THAN 4,000 VEHICLES, AND 220.6 MILLION '
+                    "RIDER-ONLY MILES THROUGH MARCH 2026. Waymo's own safety page claims 94% fewer serious-injury "
+                    'crashes than the human benchmark. || ⚠️ AND THE RISKS ARE REAL AND DATED, NOT HYPOTHETICAL. NHTSA '
+                    'opened a probe in October 2025 over a school-bus incident and EXPANDED it on 3 December 2025; '
+                    'Waymo issued a VOLUNTARY SOFTWARE RECALL ON OVER 3,000 VEHICLES in December 2025. ON 23 JANUARY '
+                    '2026 A DRIVERLESS WAYMO STRUCK A NINE-YEAR-OLD PEDESTRIAN IN A SANTA MONICA SCHOOL ZONE (minor '
+                    'injuries, no transport) - the NTSB opened investigation HWY26FH008 and NHTSA opened PE26001 on 28 '
+                    "January 2026. THAT IS THE NTSB'S FIRST-EVER WAYMO INVESTIGATION and its final report is 12 to 24 "
+                    'months out. On 4 JULY 2026 dozens of Waymos ran out of power and gridlocked San Francisco during '
+                    'the Golden Gate fireworks; Mayor Daniel Lurie proposed new operating rules on 16 July. On 14 '
+                    "SEPTEMBER 2026 SAN DIEGO'S CITY COUNCIL VOTED UNANIMOUSLY to demand city-level authority over "
+                    "robotaxis. The Teamsters asked the CPUC to suspend Waymo's licence in February 2026. "
+                    'COUNTERWEIGHT: the CPUC approved expansion across 18 California counties on 14 August 2026. || ⚠️ '
+                    "COMPETITION IS AHEAD OF WAYMO IN ASIA, NOT BEHIND IT. Baidu's Apollo Go peaked above 300,000 "
+                    'trips a week in Q4 2025 across 26 cities and has expanded to SEOUL. WeRide holds the Abu Dhabi '
+                    'driverless permit and operates in 11 countries. Pony.ai grew robotaxi revenue 691% year on year '
+                    'in Q2 2026 to 12.1m dollars with 1,975 robotaxis. One third-party index ranked Apollo Go FIRST '
+                    'and Waymo second in June 2026. TESLA, by contrast, had roughly 42 vehicles in Austin as of '
+                    'February 2026 with most rides still supervised. || 💡 THE STRUCTURAL POINT ABOUT TOKYO: Waymo is '
+                    "renting the incumbent's position rather than building one. GO has 35 million downloads, 85,000 "
+                    'partner vehicles and about 70% of Japanese taxi-app monthly users, and listed in June 2026 in '
+                    "Japan's biggest IPO of the year. Nihon Kotsu is Tokyo's largest taxi company with about 100 years "
+                    'of history. THAT DE-RISKS DEMAND BUT MEANS WAYMO WILL NOT OWN THE TOKYO CUSTOMER THE WAY IT OWNS '
+                    'PHOENIX. Approval sits with the PREFECTURAL PUBLIC SAFETY COMMISSION under Road Traffic Act '
+                    'Article 75-12, plus a taxi licence under the Road Transport Act. NO ONE IN JAPAN HAS EVER '
+                    'RECEIVED A LEVEL 4 DRIVERLESS COMMERCIAL TAXI APPROVAL. || ⚠️ ON A SPIN-OUT, PICHAI DECLINED TO '
+                    'ANSWER. Asked on 22 July 2026 under what conditions Waymo would live outside Alphabet, he said '
+                    'only: "We are really focused on executing and scaling up Waymo... that\'s what we are focused '
+                    'on." HE NEITHER RULED IT OUT NOR SET CONDITIONS. The 16bn outside round is the capital-market '
+                    'answer in the meantime. || DECISION: NOTHING CHANGES. THE GOOGL PLAN, THE BUDGET AND THE 19 '
+                    'NOVEMBER RUNG ALL STAND. WE DO NOT OWN ALPHABET FOR WAYMO AND WE WILL NOT RE-RATE IT ON A '
+                    'ROBOTAXI HEADLINE. ⚠️ WHAT WOULD CHANGE THAT: ALPHABET BEGINNING TO DISCLOSE WAYMO REVENUE '
+                    'SEPARATELY, OR OTHER BETS REVENUE PASSING ABOUT 2% OF GROUP REVENUE - roughly six times today. '
+                    'Check both at Q3, expected around 28 October.'},
            {'d': '2026-11-19',
             't': 'KLAC',
             'k': 'tranche',
@@ -8408,6 +8533,82 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'loss a year earlier; free cash flow 377.4m. ⚠️ THE CASH TEST IS THE ONE THAT FAILS: TTM free cash '
                     'flow 1.61bn against TTM stock compensation of 1.244bn, so only 366m of the cash flow is left once '
                     'the staff are paid - a 212.77bn market cap on that is 581 times. Held at +112%.'},
+           {'d': '2026-12-10',
+            'dl': 'REJECTED FOR NOW - re-underwrite test written',
+            't': 'FORM',
+            'k': 'research',
+            'a': 'WATCH',
+            'amt': 0,
+            'c': 'planned',
+            'w': '⚠️ FormFactor - THE THESIS IS HALF TRUE, THE TRANSMISSION TO THE STOCK IS NOT. NOT BOUGHT. '
+                 'Re-underwrite only on the two written triggers.',
+            'cond': 'RECORDED 16 SEPTEMBER FROM A FACEBOOK SLIDE CLAIMING "TSMC AND NVIDIA ARE PAYING A PREMIUM TO '
+                    'RUSH-BUY PROBE CARDS AND TEST SOCKETS; TESTING STOCKS ARE INTERESTING, ESPECIALLY FORMFACTOR '
+                    '(FORM), WHOSE MAJOR CUSTOMERS ARE SK HYNIX AND TSMC." Researched to primary sources. VERDICT: ONE '
+                    'PART VERIFIED, ONE PART THINLY SOURCED, ONE PART INVENTED. || ✅ VERIFIED - THE CUSTOMER CLAIM IS '
+                    'EXACTLY RIGHT. FormFactor Form 10-Q for the quarter ended 27 June 2026 names them: SK HYNIX 24.3% '
+                    'AND TSMC 11.0% OF REVENUE, 35.3% COMBINED. Six months: SK hynix 26.8%, TSMC 10.3%. The filing '
+                    'names customers rather than using "Customer A". || ✅ VERIFIED - TEST CAPACITY GENUINELY IS TIGHT. '
+                    'MPI probe card lead times stretched to SIX MONTHS with visibility out two years (DigiTimes, Flora '
+                    'Wang, 31 Mar 2026); MPI weighed a PREPAYMENT scheme to guarantee priority (18 Jun 2026); '
+                    'Taiwanese MEMS probe card makers to DOUBLE capacity in 2026 (25 Nov 2025); Technoprobe is '
+                    'spending about 200m euro of its own money to double capacity across 2026-27; Micronics Japan Q1 '
+                    'FY2026 net sales +48.3% with operating profit +97.6%; Chunghwa Precision HPC probe cards reached '
+                    'nearly 30% of sales. This part of the slide is real and well evidenced. || ⚠️⚠️ NOT VERIFIED - '
+                    'THE PREMIUM CLAIM RESTS ON ONE ANONYMOUS PAYWALLED PARAGRAPH. The only report of anyone paying up '
+                    'is DigiTimes, Monica Chen, 10 September 2026: "supply-chain sources say Nvidia has raised prices '
+                    'to secure most of the probe card and test socket output from major testing interface vendors." '
+                    'ANONYMOUS SOURCING, NO COMPANY CONFIRMATION, NO SECOND OUTLET. Not one filing and not one named '
+                    'executive confirms a price increase. || ⚠️⚠️ INVENTED - TSMC IS NOT IN THAT REPORT AT ALL. The '
+                    'DigiTimes story names NVIDIA ONLY. No source was found, anywhere, for TSMC paying a premium or '
+                    "rush-buying test hardware. WORSE, TSMC'S OWN CEO POINTED AT A DIFFERENT BOTTLENECK: C.C. Wei on "
+                    'the Q2 2026 call, 16 July 2026 - "Our packaging capacity is so tight that now it limits my '
+                    'customers\' growth." PACKAGING, NOT TESTING. TSMC\'s Q4 2025 and Q2 2026 transcripts do not '
+                    'mention probe cards or test bottlenecks at all. || ⚠️⚠️ AND THE INVESTMENT LEAP FAILS EVEN IF THE '
+                    'PREMIUM IS REAL: NVIDIA IS NOT A DISCLOSED 10% CUSTOMER OF FORMFACTOR. The premium, if it exists, '
+                    'is being paid to TAIWANESE vendors named in the reporting - MPI, Chunghwa Precision Test, WinWay '
+                    '- none of which is on this board and none of which is a simple US-listed buy. WinWay, at a 12.1bn '
+                    "dollar market value and described as one of Nvidia's most trusted test partners, IS NOT EVEN A "
+                    'TOP-TEN PROBE CARD SUPPLIER. || THE COMPANY ITSELF IS BETTER THAN THE ARGUMENT FOR IT, AND THAT '
+                    'IS WHY THIS IS A WATCH AND NOT A DISMISSAL. Q2 FY2026 (quarter ended 27 Jun 2026, reported 29 Jul '
+                    '2026): REVENUE 258.2m, UP 31.9% YEAR ON YEAR AND 14.2% ON THE QUARTER; GAAP GROSS MARGIN 50.7%; '
+                    'GAAP NET INCOME 56.2m, A 21.8% NET MARGIN; GAAP DILUTED EPS 0.71. Trailing twelve months: revenue '
+                    '902.2m, GAAP net income 115.5m, FREE CASH FLOW 136.1m. BALANCE SHEET IS NET CASH BY 334.0m (cash '
+                    '109.8m plus securities 235.9m against 11.6m of debt). STOCK COMPENSATION IS ONLY 4.00% OF REVENUE '
+                    '- far better than most of this board. ON OUR OWN RULE OF 40 (revenue growth plus free-cash-flow '
+                    'margin) IT SCORES 47.0, WHICH PASSES. CEO Mike Slessor, 29 July 2026: "Over the past four '
+                    'quarters, FormFactor has grown revenue more than 30%, expanded Non-GAAP gross margin 1,500 basis '
+                    'points, and tripled earnings per share." || ⚠️ SO WHY NOT BUY IT. FOUR REASONS AND THE LAST IS '
+                    "THE REAL ONE. (1) VALUATION FAILS THE BOARD'S OWN CASH TEST: at 101.69 on 15 September the market "
+                    'value is 7.94bn, which is 68.8 TIMES trailing earnings and 58.3 TIMES free cash flow - A '
+                    'FREE-CASH-FLOW YIELD OF 1.71%, BELOW THE 1.94% MEDIAN THAT THIS BOARD ALREADY JUDGED A FAILURE ON '
+                    '13 SEPTEMBER. (2) THE STOCK HAS ALREADY RUN 237% IN FIFTY-TWO WEEKS - the tightness is in the '
+                    'price, not ahead of it. (3) CONCENTRATION CUTS BOTH WAYS: INTEL WAS 12.4% OF REVENUE IN Q2 2025 '
+                    'AND IS NOW BELOW 10%, and total 10%-plus concentration fell from 47.8% to 35.3% in a year - one '
+                    'customer leaving took nearly a quarter of the disclosed base with it. (4) ⚠️⚠️ WE ALREADY OWN '
+                    'THIS THEME THREE WAYS AND CANNOT SPEND THE MONEY WE HAVE. TERADYNE is held (10 shares, 3,567.37, '
+                    'revenue growth 30.3, Rule of 40 44.9) and is the largest automated-test-equipment name in the '
+                    'world. KLA is funded at 14,000 with only 3,510.69 spent. AND GROUP 2 AS A WHOLE HAS 88,292.04 OF '
+                    'APPROVED BUDGET SITTING UNSPENT. ADDING A TENTH NAME TO A GROUP THAT CANNOT DEPLOY ITS EXISTING '
+                    'NINE IS THE EXACT MISTAKE THIS BOARD KEEPS WRITING DOWN. || 💡 THE HONEST COUNTER, BECAUSE IT '
+                    'DESERVES ONE: FormFactor is a better business than the board average on growth, on balance sheet '
+                    'and on stock compensation, and the HBM testing story is the single most credible part of the '
+                    "slide. IF WE EVER OWN IT, THE MONEY SHOULD COME OUT OF GROUP 2'S UNSPENT 88,292.04, NOT FROM NEW "
+                    'MONEY. || ⚠️ WHAT WOULD CHANGE MY MIND - TWO TRIGGERS, BOTH MUST HOLD: (1) THE FREE-CASH-FLOW '
+                    "YIELD REACHES 3% OR BETTER, which from today's 136.1m of trailing free cash flow means a market "
+                    'value AT OR BELOW ABOUT 4.5bn - roughly 58 dollars a share, a 43% fall - OR free cash flow grows '
+                    'into the price, which needs trailing free cash flow above about 238m. (2) EITHER NVIDIA APPEARS '
+                    'AS A NAMED 10%-PLUS CUSTOMER IN A FORMFACTOR 10-Q, OR A COMPANY FILING OR NAMED EXECUTIVE - NOT '
+                    'AN ANONYMOUS WIRE - CONFIRMS PROBE CARD PRICE INCREASES. || ⚠️ AND WHAT WOULD KILL IT ENTIRELY: '
+                    'the funded capacity doubling now under way at Technoprobe, MPI, CHPT and the Taiwanese MEMS '
+                    'makers arriving into softer demand. Micronics Japan already said, in the same sentence as record '
+                    'sales, "Although orders decreased compared to the previous quarter". Tightness that everybody is '
+                    'spending to remove is temporary by construction. || ⚠️ ALSO NOTE THE MARKET IS SMALLER AND SLOWER '
+                    'THAN THE SLIDE IMPLIES: the 2024 logic probe card market was 1.6bn dollars growing at a 6.2% '
+                    "forecast rate to 2028 (Yole, via Technoprobe's own deck). This is a niche, not a second "
+                    'semiconductor cycle. || 📌 THIS IS THE FIFTH SLIDE IN TWO WEEKS TO POINT AT A NAME WE DO NOT OWN '
+                    'WHILE WE HOLD 88,292.04 OF UNSPENT APPROVED BUDGET IN THE VERY GROUP IT BELONGS TO. A SLIDE IS A '
+                    'CATEGORY. A BOARD IS A RANKING.'},
            {'d': '2026-12-10',
             'dl': 'Quarterly review - back-up name',
             't': 'FSLR',
