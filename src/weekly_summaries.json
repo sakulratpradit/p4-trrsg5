@@ -1802,6 +1802,10 @@
   {
    "points": [
     {
+     "s": "0",
+     "text": "⚠️ NAMED AS THE CYBERSECURITY PICK ON THE 15-THEME LIST OF 16 SEPTEMBER - AND IT IS THE ODD ONE OUT AMONG EVERYTHING WE HOLD. 40 shares at a cost of 3,914.12 AND NO BUDGET BEHIND THEM, the same orphan condition as Teradyne. ⚠️⚠️ IT CARRIES A FORWARD P/E OF 146.57, WHICH IS BY A WIDE MARGIN THE MOST EXPENSIVE NUMBER ON THE WHOLE LIST, on a NET MARGIN OF 0.83% and a price-to-free-cash-flow of 141.55. Rule of 40 is a genuinely good 52.5 and revenue growth 24.2% - the business is fine; the PRICE is the question, and the slide does not mention price at all. It also rose 13.85% in one session on 14 September on the AI-safety news. THE WRITTEN RULE STANDS: BACK-UP, ZERO BUDGET, DO NOT SELL BY HABIT AND DO NOT BUY WITHOUT THE TRIGGER. || ⚠️ SEPARATE DATA FAULT FOUND AND FIXED HERE TODAY: CRWD'S RECORDED ALL-TIME HIGH READ 225.53 WHILE THE STOCK CLOSED AT 242.49 - 7.52% ABOVE ITS OWN RECORDED PEAK, WHICH IS IMPOSSIBLE. Raised to 242.49. It was one of SIX names with the same fault, and the cause is that the daily refresh extends hi52 and lo52 but NEVER extends ath."
+    },
+    {
      "s": "+",
      "text": "💡 UP 13.85% TO 235.38 ON MONDAY 14 SEPTEMBER on the AI-safety security bid - the same event that knocked the Nikkei down. ⚠️ AND THIS ZERO-BUDGET BACK-UP HAS MORE THAN DOUBLED: 40 shares at an average 97.85 are now worth about 9,415 against a cost of 3,914.12, UP ABOUT 141%. That is the best percentage gain of any unfunded name on the board and it deserves to be raised at the 10 December cybersecurity-weight review rather than left unexamined. || THE BUSINESS RECOVERED COMPLETELY FROM THE JULY 2024 OUTAGE. Q2 FY27 (quarter ended 31 Jul 2026): revenue 1.47bn +26% and FULLY ORGANIC, ARR 5.84bn +25%, NET NEW ARR 333m - A RECORD, RPO 10.7bn UP 48.6% against Palo Alto's +34%, and a FIRST GAAP NET PROFIT of 5.3m against a 70.2m loss a year earlier. FY27 net-new-ARR growth guidance RAISED BY 630 BASIS POINTS to 34%. CEO George Kurtz: 'Q2 was the best quarter in CrowdStrike's history.'"
     },
@@ -2018,6 +2022,15 @@
     }
    ],
    "week": "2026-09-07"
+  },
+  {
+   "points": [
+    {
+     "s": "0",
+     "text": "⚠️ DATA FAULT FOUND AND FIXED 16 SEPTEMBER, AND DELL WAS THE WORST OF SIX. THE RECORDED ALL-TIME HIGH READ 490.81 WHILE THE STOCK CLOSED AT 543.51 ON 15 SEPTEMBER - 10.74% ABOVE ITS OWN RECORDED PEAK, WHICH IS ARITHMETICALLY IMPOSSIBLE. Raised to 543.51, which is the LOWEST DEFENSIBLE VALUE; the true high may be an intraday print above it, so treat it as a floor. || ⚠️ THE CAUSE IS SYSTEMATIC, NOT SPECIFIC TO DELL: THE DAILY PRICE REFRESH EXTENDS hi52 AND lo52 AND NEVER TOUCHES ath. The check proves it - ZERO tickers had a price above hi52, SIX had a price above ath (DELL, CRWD, ZETA, NET, V, FTNT). Every time a name makes a new all-time high, the 'percent below the high' column silently understates how far it has run. ⚠️ IT WILL RECUR TOMORROW unless the routine is changed to set ath = max(ath, close) on every run - now on the 10 December agenda alongside the ASOF truncation bug found in the same routine this morning."
+    }
+   ],
+   "week": "2026-09-14"
   }
  ],
  "ENPH": [
@@ -2897,6 +2910,15 @@
     }
    ],
    "week": "2026-08-03"
+  },
+  {
+   "points": [
+    {
+     "s": "-",
+     "text": "⚠️ NAMED AS THE QUANTUM COMPUTING PICK ON THE 15-THEME LIST OF 16 SEPTEMBER. UNFUNDED, ZERO INVESTED, AND IT CANNOT BE FUNDED WHILE ITS OWN NUMBERS CONTRADICT EACH OTHER. || ⚠️⚠️ TWO FIELDS THAT MUST AGREE, DO NOT: PRICE 37.05 DIVIDED BY EPS 0.92 IS 40.27, BUT THE BOARD RECORDS A P/E OF 33.57. AND THE NET MARGIN READS 174.88% - on 0.19bn of revenue that implies 0.33bn of net income, MORE THAN THE COMPANY SELLS. The likely cause is a warrant or fair-value mark running through net income, the same disease as LITE - but that is a hypothesis, NOT A SOURCED CAUSE, and I will not fund a position on a hypothesis. || ⚠️ IT ALSO TRADES AT 73 TIMES SALES and is 56.2% below its all-time high of 84.64. Revenue growth of 334.6% is real and striking, but 0.19bn of revenue at a 13.8bn market value means the growth is being paid for many times over. || TREATMENT IS THE SAME AS SK HYNIX AND LITE: GO TO THE FILING, FIND WHETHER THE PROFIT IS OPERATING OR A ONE-OFF, AND IF IT CANNOT BE RESOLVED CLEANLY, BLANK THE FIELD RATHER THAN GUESS. A BLANK FIELD IS HONEST; A WRONG FIELD IS NOT."
+    }
+   ],
+   "week": "2026-09-14"
   }
  ],
  "IREN": [
@@ -4701,6 +4723,15 @@
     }
    ],
    "week": "2026-09-07"
+  },
+  {
+   "points": [
+    {
+     "s": "-",
+     "text": "⚠️⚠️ NAMED AS THE NUCLEAR ENERGY PICK ON THE 15-THEME LIST OF 16 SEPTEMBER. IT SITS ON THIS BOARD DELIBERATELY UNFUNDED, WITH ZERO INVESTED, AND NOTHING IN THE SLIDE CHANGES THAT. || THE NUMBERS THE SLIDE OMITS: OKLO IS A 6.693 BILLION DOLLAR COMPANY ON 1.21 MILLION DOLLARS OF REVENUE - 5,531 TIMES SALES - WITH NEGATIVE FREE CASH FLOW, EPS OF MINUS 0.93, AND NO RULE OF 40 AT ALL BECAUSE THERE IS NOT ENOUGH BUSINESS TO COMPUTE ONE. ⚠️⚠️ AND IT CLOSED ON 15 SEPTEMBER AT 35.98, WHICH IS EXACTLY ITS FIFTY-TWO WEEK LOW AND 78.0% BELOW ITS ALL-TIME HIGH OF 163.39. A list that recommends a stock without mentioning it has lost more than three quarters of its value is not a list, it is a wish. || OUR NUCLEAR AND POWER ANSWER IS CEG AND VST - both on the same slide, both already funded, and both of which EARN MONEY TODAY: CEG 17,000 budget with 4,040.98 invested at a P/E of 20.41, VST 15,000 with 8,133.29 at 25.08. ⚠️ AND CEG IS ONE OF TOMORROW'S SIX TRANCHES AT 5,959.02. No action on OKLO; re-underwrite only on disclosed revenue, not on a reactor announcement."
+    }
+   ],
+   "week": "2026-09-14"
   }
  ],
  "ON": [
