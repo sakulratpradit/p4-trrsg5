@@ -3,68 +3,109 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Sep 16, 2026 (2) - TWO SLIDES CHECKED, AND THEY LAND IN OPPOSITE PLACES: THE PROBE CARD SLIDE IS PART-INVENTED, THE '
- 'WAYMO SLIDE IS ALMOST ENTIRELY TRUE AND STILL DOES NOT MATTER YET. ⚠️ AND A THIRD GOOGL DATA FAULT WAS FOUND WHILE '
- "CHECKING - THE 19 NOVEMBER TRANCHE PROMISED 2,000 MORE THAN THE BUDGET HOLDS. || ⚠️⚠️ SLIDE 1 - 'TSMC AND NVIDIA PAY "
- "A PREMIUM FOR PROBE CARDS; BUY FORMFACTOR'. THE CUSTOMER CLAIM IS EXACTLY RIGHT: FormFactor's 10-Q for the quarter "
- 'ended 27 June 2026 names SK HYNIX AT 24.3% AND TSMC AT 11.0% OF REVENUE. THE TIGHTNESS IS REAL TOO: MPI probe card '
- 'lead times ran to SIX MONTHS with two-year visibility, MPI weighed prepayments for priority, and Technoprobe is '
- 'spending about 200m euro to double capacity. BUT THE PREMIUM CLAIM RESTS ON ONE ANONYMOUS PAYWALLED PARAGRAPH - '
- "DigiTimes, 10 September 2026, 'supply-chain sources say Nvidia has raised prices' - WITH NO FILING, NO NAMED "
- 'EXECUTIVE AND NO SECOND OUTLET. ⚠️⚠️ AND TSMC IS NOT IN THAT REPORT AT ALL. IT NAMES NVIDIA ONLY. TSMC WAS ADDED BY '
- "WHOEVER MADE THE SLIDE. TSMC'S OWN CEO POINTED SOMEWHERE ELSE ENTIRELY ON 16 JULY: 'Our packaging capacity is so "
- "tight that now it limits my customers' growth' - PACKAGING, NOT TESTING. || ⚠️ AND THE TRADE FAILS EVEN IF THE "
- 'PREMIUM IS REAL: NVIDIA IS NOT A DISCLOSED 10% CUSTOMER OF FORMFACTOR. The vendors actually named in the reporting '
- 'are TAIWANESE - MPI, Chunghwa Precision Test, WinWay - none on this board. DECISION: FORMFACTOR NOT BOUGHT. The '
- 'company is genuinely good - Q2 revenue 258.2m UP 31.9%, 21.8% net margin, 136.1m of trailing free cash flow, NET '
- 'CASH OF 334m, stock compensation only 4.0% of revenue, and a Rule of 40 of 47.0 that passes - BUT AT 68.8 TIMES '
- 'EARNINGS AND A 1.71% FREE-CASH-FLOW YIELD IT SITS BELOW THE 1.94% MEDIAN THIS BOARD ALREADY CALLED A FAILURE, AFTER '
- 'RISING 237% IN A YEAR. ⚠️⚠️ AND THE REAL REASON IS CLOSER TO HOME: WE ALREADY OWN THE TEST THEME THREE WAYS - '
- 'TERADYNE, KLA AND TSMC ITSELF - AND GROUP 2 IS SITTING ON 88,292.04 OF APPROVED BUDGET IT HAS NOT SPENT. THIS IS THE '
- 'FIFTH SLIDE IN TWO WEEKS POINTING AT A NAME WE DO NOT OWN WHILE APPROVED MONEY GOES UNDEPLOYED IN THE VERY GROUP IT '
- 'WOULD JOIN. WRITTEN RE-UNDERWRITE TEST: A 3% FREE-CASH-FLOW YIELD (about 58 dollars a share, or trailing free cash '
- 'flow above 238m) AND EITHER NVIDIA NAMED AS A 10% CUSTOMER IN A 10-Q OR A FILING CONFIRMING PRICE INCREASES. || 💡 '
- "SLIDE 2 - WAYMO IN TOKYO. THIS ONE IS REAL AND TWO DAYS OLD: Waymo's blog 14 September, Nihon Kotsu and GO 15 "
- 'September. Tokyo, Level 4, NO SAFETY DRIVER, targeted 2027, hailed through the GO app, testing since 2025 - ALL '
- 'CONFIRMED. Two corrections only: the ~100 vehicles is WHERE THE FLEET EXPANDS TO IN PHASES, not where it starts; and '
- "'Alphabet proves it can scale outside the USA' IS NOT TRUE YET - ALL FOURTEEN OF WAYMO'S COMMERCIAL CITIES ARE "
- 'AMERICAN, and the first driverless commercial permit outside the US went to WERIDE IN ABU DHABI, not Waymo. || ⚠️⚠️ '
- "AND THE INVESTOR ANSWER, WHICH THE SLIDE DOES NOT GIVE: ALPHABET DOES NOT DISCLOSE WAYMO'S REVENUE AT ALL. Waymo "
- "sits inside 'Other Bets', WHICH IS BIGGER THAN WAYMO, AND OTHER BETS EARNED 382 MILLION IN Q2 2026 AGAINST "
- "ALPHABET'S 119,796 MILLION - 0.32%, ONE THIRD OF ONE PERCENT - WHILE LOSING 1,799m, A 4.41% DRAG ON OPERATING "
- "INCOME. 📊 AND THE SIZE TEST: Waymo's February round valued it at 126bn. ALPHABET IS WORTH 4,223bn. EVEN AT 100% "
- 'OWNERSHIP WAYMO WOULD BE 2.98% OF ALPHABET. IT IS A REAL OPTION, NOT A SECOND ENGINE, AND IT IS NOT WHY WE OWN THE '
- 'SHARES. The operating progress is impressive anyway - OVER 500,000 PAID TRIPS A WEEK, DOUBLED IN A YEAR, 14 CITIES, '
- "4,000+ VEHICLES, 220.6M RIDER-ONLY MILES - and so are the risks: THE NTSB'S FIRST-EVER WAYMO INVESTIGATION after a "
- 'driverless car STRUCK A NINE-YEAR-OLD IN A SANTA MONICA SCHOOL ZONE ON 23 JANUARY 2026, a 3,000-vehicle software '
- "recall in December 2025, the 4 July San Francisco gridlock, and San Diego's council voting unanimously against "
- "Waymo's autonomy on 14 September. DECISION: NOTHING CHANGES ON GOOGL. || ⚠️⚠️ THE GOOGL FAULT, AND IT IS THE SECOND "
- 'OF ITS EXACT KIND IN SIX DAYS: THE 19 NOVEMBER TRANCHE 3 ROW SAID 20,524.08. THE BUDGET IS 78,000 WITH 59,475.92 '
- 'INVESTED, SO ONLY 18,524.08 REMAINS - THE ROW WAS PROMISING 2,000 THAT DOES NOT EXIST. CORRECTED TO 18,524.08, WHICH '
- 'NOW CLOSES THE BUDGET EXACTLY. The MRVL row had the same disease on 11 September (17,127.34 against a true '
- '13,127.34). TWO OF ONE KIND IS A PROCESS PROBLEM, NOT BAD LUCK: A SCHEDULE AMOUNT MUST BE DERIVED FROM BUDGET MINUS '
- 'INVESTED, NEVER TYPED. A FULL BUDGET-VERSUS-SCHEDULE RECONCILIATION IS NOW ON THE 10 DECEMBER AGENDA. || POSITIONS, '
- 'CASH AND REALISED ALL UNCHANGED. ⚠️ AND TOMORROW IS STILL THE DAY THAT MATTERS: THURSDAY 17 SEPTEMBER COMMITS '
- '46,526.13 ACROSS SIX TRANCHES, ALL PROCEEDING AS WRITTEN. || PREVIOUS ENTRY: Sep 16, 2026 - THE TWO SELL ORDERS WERE '
- 'PLACED, ⚠️ NOTHING EXECUTED, AND ⚠️⚠️ ON THE REFRESHED PRICES BOTH LIMITS SIT ABOVE THE MARKET RATHER THAN AT IT - '
- 'WHICH IS WHY NEITHER FILLED, AND THE MISTAKE IN HOW I DESCRIBED THEM THIS MORNING IS MINE. NO POSITION, CASH OR '
- 'REALISED FIGURE HAS CHANGED AND THE BOARD REFLECTS THAT EXACTLY. || WHAT WAS PLACED: CRM ORDER 5476543, LIMIT '
- '262.00, 21 SHARES, DAY, stamped 23:52:15 on 15 September - re-placed exactly as recommended. FN ORDER 5476514, THE '
- '550.00 LIMIT, WAS WITHDRAWN at 23:53:35 - the right call, and that order was MY ERROR. FN ORDER 5476610 then went in '
- "at 23:54:18 - LIMIT 382.00, 3 SHARES, DAY. Both show 'Order Received' with nothing executed. || ⚠️⚠️ THE CORRECTION, "
- 'AND IT IS MINE TWICE OVER. The Tuesday 15 September closes are CRM 255.65 and FN 374.91. SO THE CRM LIMIT OF 262.00 '
- "IS 2.48% ABOVE THE MARKET, NOT THE 1% I SAID, AND THE FN LIMIT OF 382.00 IS 1.89% ABOVE THE MARKET - IT IS NOT 'AT "
- "THE MARKET', WHICH IS WHAT I CALLED IT THIS MORNING. I was reading stale 11 September prices (CRM 247.72, FN "
- '414.58). A SELL LIMIT SET ABOVE THE LAST TRADE IS NOT AN EXIT, IT IS A WISH WITH A DEADLINE. || 💡 THE PRINCIPLE '
- "SALEE APPLIED IS STILL RIGHT AND I SHOULD HAVE GIVEN IT TO HIM FIRST. I said 'sell FN at the market'; he used a "
- 'limit instead. A MARKET ORDER ACCEPTS WHATEVER PRICE THE BOOK OFFERS AND ON A THREE-SHARE LOT CAN FILL SEVERAL '
- 'PERCENT WORSE THAN THE SCREEN; A SELL LIMIT FILLS AT THE LIMIT OR BETTER AND CANNOT FILL WORSE. THE RULE: NEVER USE '
- 'A MARKET ORDER WHEN A LIMIT CAN DO THE SAME JOB WITH A FLOOR UNDER IT - BUT THE LIMIT MUST BE AT OR JUST BELOW THE '
- 'LAST TRADE, OR IT DOES NOT DO THE JOB AT ALL. || ⚠️⚠️ THREE SESSIONS RUNNING OF THE SAME FAILURE - a sell limit '
- 'above the market on a DAY order, which then dies at the close and has to be retyped: 12 Sep, 14 Sep, and now 15 Sep '
- "twice. THE FIX IS TWO CHANGES AT ONCE AND BOTH ARE SALEE'S TO MAKE AT POEMS: SET THE LIMIT AT OR JUST BELOW THE LAST "
- 'TRADE, AND USE GTC (GOOD-TILL-CANCELLED) INSTEAD OF DAY SO THE ORDER SURVIVES THE CLOSE. || ⚠️ AND CHECK WHETHER '
- 'THESE TWO ARE EVEN STILL ALIVE. Bangkok runs ELEVEN HOURS AHEAD OF NEW YORK, so a 23:52 Bangkok stamp on 15 '
+ASOF = ('Sep 16, 2026 (3) - THE SUPERCYCLE SLIDE, AND FOR ONCE THE HEADLINE NUMBER IS RIGHT. ⚠️ BUT IT IS AN ESTIMATE REVISED '
+ 'UPWARD FOUR TIMES IN NINE MONTHS, THE PRICE MOMENTUM BEHIND IT HAS ALREADY DECELERATED BY FIVE SIXTHS, AND EVERY NEW '
+ 'FAB IN THE WORLD LANDS IN 2027. THE RESEARCH DID CLOSE AN OPEN FAULT ON OUR OWN BOARD, WHICH IS THE BEST THING A '
+ "SLIDE HAS DONE IN A FORTNIGHT. || ✅ VERIFIED: WSTS's Q2 2026 release says the 2026 market reaches 1,655 BILLION "
+ 'DOLLARS, up about 108%, and DigiTimes Intelligence independently lands on 1.6 TRILLION on 15 September. 2025 ACTUAL '
+ 'was 791.7bn. ⚠️ BUT THE SAME BODY FORECAST 975 BILLION FOR 2026 ON 2 DECEMBER 2025, THEN 1.51 TRILLION ON 2 JUNE, '
+ 'THEN 1,655 BILLION. A NUMBER THAT HAS MOVED 70% IN NINE MONTHS IS NOT A FOUNDATION. AND SEVEN MONTHS OF 2026 ARE '
+ "ACTUAL WHILE FIVE ARE STILL PROJECTED. ⚠️ NOTE ALSO THAT NEITHER WSTS NOR SIA USES THE WORD 'SUPERCYCLE' - IT COMES "
+ "FROM A BANK OF AMERICA NOTE, QUOTED BACK BY SK HYNIX'S OWN NEWSROOM, WHOSE JANUARY FORECASTS OF DRAM PLUS 51% WERE "
+ 'THEMSELVES BLOWN THROUGH. THE FORECASTING ERROR RUNS BOTH WAYS. || ✅ THE BOOM ITSELF IS REAL AND IT IS IN AUDITED '
+ 'FILINGS, NOT FORECASTS: Micron fiscal Q3 revenue 41,456m with an 84.6% GAAP GROSS MARGIN and 28,243m of net income; '
+ "SK hynix Q2 revenue up 257% at a 76% OPERATING MARGIN; AND SAMSUNG'S CHIP DIVISION EARNED 89.2 OF THE GROUP'S 89.5 "
+ "TRILLION WON OF OPERATING PROFIT - 99.7% OF SAMSUNG'S PROFIT NOW COMES FROM CHIPS. || 📊 THE NUMBER THE SLIDE OMITS, "
+ 'AND IT IS THE ONLY ONE THIS BOARD WILL TRACK FROM NOW ON - CONVENTIONAL DRAM CONTRACT PRICES QUARTER ON QUARTER: '
+ '1Q26 UP TO PLUS 98%, 2Q26 PLUS 58 TO 63%, 3Q26 PLUS 13 TO 18%. PRICES ARE STILL RISING BUT THE RATE HAS FALLEN BY '
+ "ROUGHLY FIVE SIXTHS IN TWO QUARTERS, AND TRENDFORCE SAYS RECORD PRICES HAVE REACHED CUSTOMERS' 'AFFORDABILITY "
+ "LIMIT'. THE MARKET SIZE IS A LAGGING NUMBER. THE CONTRACT PRICE IS A LEADING ONE. || ⚠️⚠️ AND THE SUPPLY ANSWER IS "
+ "ALREADY FUNDED AND DATED: SAMSUNG'S PYEONGTAEK P5, PULLED FORWARD SIX MONTHS, ADDS ABOUT 600,000 WAFERS A MONTH "
+ "AGAINST SAMSUNG'S CURRENT ENTIRE DRAM CAPACITY OF 650,000 - ROUGHLY A DOUBLING, IN 2027. SK HYNIX PULLED ITS FIRST "
+ "YONGIN CLEANROOM FORWARD TO FEBRUARY 2027. MICRON'S IDAHO ARRIVES MID-2027. TRENDFORCE ALREADY FORECASTS NAND SUPPLY "
+ 'OUTPACING DEMAND FROM THE SECOND HALF OF 2027. AND THE OLIGOPOLY IS LOOSENING: CXMT REACHED 10% OF DRAM IN Q2, '
+ 'FOURTH PLACE, AND YMTC BROKE THE NAND TOP THREE ON BITS. || ⚠️ THE HISTORY, FROM SIA AND WSTS: MEMORY REVENUE FELL '
+ '32.6% IN 2019 AND ABOUT 29% IN 2023, EACH IN ONE YEAR, WITH DRAM ALONE DOWN 37.1% IN 2019. THE FORTY-YEAR RULE IS '
+ 'THAT MEMORY GROWTH ABOVE 50% IS FOLLOWED BY DECELERATION OR DECLINE - TRUE FOUR TIMES IN SIX. 2026 IS FORECAST AT '
+ 'PLUS 302%, SIX TIMES THE THRESHOLD. || 💡💡 SO THE REAL QUESTION IS NOT THE 1.6 TRILLION, IT IS THAT THE TWO '
+ "BEST-SOURCED VOICES DISAGREE FLATLY ABOUT 2027. SK HYNIX'S CEO KWAK NOH-JUNG, 11 JULY 2026: 'We forecast that next "
+ "year will be the worst year in the industry's history from the supply perspective' and demand exceeds supply 'even "
+ "beyond 2030'. AGAINST THAT, TRENDFORCE SAYS NAND FLIPS TO SURPLUS IN 2H27, AND MORGAN STANLEY WROTE ON 10 AUGUST "
+ "THAT 'room for further upward earnings revisions could narrow starting in the fourth quarter'. || ⚠️⚠️ AND THE TRAP "
+ 'ON OUR OWN BOARD, WRITTEN PLAINLY BECAUSE IT IS THE MOST IMPORTANT THING HERE: MICRON TRADES AT 21.5 TIMES TRAILING '
+ 'EARNINGS AND 6.63 TIMES FORWARD EARNINGS. A FORWARD MULTIPLE OF 6.6 IS THE CHEAPEST NUMBER ON A BOARD OF 94 NAMES. '
+ 'IT IS ALSO THE MOST DANGEROUS. A MEMORY COMPANY LOOKS CHEAPEST AT THE TOP OF ITS CYCLE, BECAUSE THE EARNINGS IN THE '
+ "DENOMINATOR ARE PEAK EARNINGS AND EVERYONE IS EXTRAPOLATING THEM. MICRON'S EARNINGS PER SHARE GREW 695.9%. THAT IS A "
+ 'PEAK UNTIL PROVEN OTHERWISE. || ✅✅ THE ONE CONCRETE GAIN: THE OPEN MICRON 11,000 FAULT IS CLOSED. The written plan '
+ 'described a 40,000 budget while the board carried 51,000, leaving 11,000 with no rule. IT NOW HAS ONE, AND IT IS A '
+ "CONDITION RATHER THAN A DATE: RELEASED ONLY IF MICRON'S 30 SEPTEMBER PRINT DELIVERS A GROSS MARGIN AT OR ABOVE THE "
+ 'GUIDED 86% AND FOURTH-QUARTER DRAM CONTRACT PRICES ARE STILL RISING - AND CANCELLED, NOT DEFERRED, IF CONTRACT '
+ 'PRICES GO FLAT OR NEGATIVE IN ANY QUARTER. A parked amount with no cancellation condition is not a plan, it is a '
+ 'drawer. || DECISION: NOTHING BOUGHT, NOTHING SOLD, NO BUDGET RAISED. Memory is already 24,494.84 invested across MU '
+ 'and SKHY with 26,505.16 of Group 3 budget unspent. WE DO NOT NEED MORE MEMORY ON A HEADLINE. ⚠️ AND THE 30 SEPTEMBER '
+ 'MICRON PRINT IS NOW THE SINGLE MOST IMPORTANT DATE ON THIS BOARD: READ THE GROSS MARGIN AND THE NEXT-QUARTER GUIDE '
+ 'FIRST, NOT THE REVENUE LINE. || PREVIOUS ENTRY: Sep 16, 2026 (2) - TWO SLIDES CHECKED, AND THEY LAND IN OPPOSITE '
+ 'PLACES: THE PROBE CARD SLIDE IS PART-INVENTED, THE WAYMO SLIDE IS ALMOST ENTIRELY TRUE AND STILL DOES NOT MATTER '
+ 'YET. ⚠️ AND A THIRD GOOGL DATA FAULT WAS FOUND WHILE CHECKING - THE 19 NOVEMBER TRANCHE PROMISED 2,000 MORE THAN THE '
+ "BUDGET HOLDS. || ⚠️⚠️ SLIDE 1 - 'TSMC AND NVIDIA PAY A PREMIUM FOR PROBE CARDS; BUY FORMFACTOR'. THE CUSTOMER CLAIM "
+ "IS EXACTLY RIGHT: FormFactor's 10-Q for the quarter ended 27 June 2026 names SK HYNIX AT 24.3% AND TSMC AT 11.0% OF "
+ 'REVENUE. THE TIGHTNESS IS REAL TOO: MPI probe card lead times ran to SIX MONTHS with two-year visibility, MPI '
+ 'weighed prepayments for priority, and Technoprobe is spending about 200m euro to double capacity. BUT THE PREMIUM '
+ "CLAIM RESTS ON ONE ANONYMOUS PAYWALLED PARAGRAPH - DigiTimes, 10 September 2026, 'supply-chain sources say Nvidia "
+ "has raised prices' - WITH NO FILING, NO NAMED EXECUTIVE AND NO SECOND OUTLET. ⚠️⚠️ AND TSMC IS NOT IN THAT REPORT AT "
+ "ALL. IT NAMES NVIDIA ONLY. TSMC WAS ADDED BY WHOEVER MADE THE SLIDE. TSMC'S OWN CEO POINTED SOMEWHERE ELSE ENTIRELY "
+ "ON 16 JULY: 'Our packaging capacity is so tight that now it limits my customers' growth' - PACKAGING, NOT TESTING. "
+ '|| ⚠️ AND THE TRADE FAILS EVEN IF THE PREMIUM IS REAL: NVIDIA IS NOT A DISCLOSED 10% CUSTOMER OF FORMFACTOR. The '
+ 'vendors actually named in the reporting are TAIWANESE - MPI, Chunghwa Precision Test, WinWay - none on this board. '
+ 'DECISION: FORMFACTOR NOT BOUGHT. The company is genuinely good - Q2 revenue 258.2m UP 31.9%, 21.8% net margin, '
+ '136.1m of trailing free cash flow, NET CASH OF 334m, stock compensation only 4.0% of revenue, and a Rule of 40 of '
+ '47.0 that passes - BUT AT 68.8 TIMES EARNINGS AND A 1.71% FREE-CASH-FLOW YIELD IT SITS BELOW THE 1.94% MEDIAN THIS '
+ 'BOARD ALREADY CALLED A FAILURE, AFTER RISING 237% IN A YEAR. ⚠️⚠️ AND THE REAL REASON IS CLOSER TO HOME: WE ALREADY '
+ 'OWN THE TEST THEME THREE WAYS - TERADYNE, KLA AND TSMC ITSELF - AND GROUP 2 IS SITTING ON 88,292.04 OF APPROVED '
+ 'BUDGET IT HAS NOT SPENT. THIS IS THE FIFTH SLIDE IN TWO WEEKS POINTING AT A NAME WE DO NOT OWN WHILE APPROVED MONEY '
+ 'GOES UNDEPLOYED IN THE VERY GROUP IT WOULD JOIN. WRITTEN RE-UNDERWRITE TEST: A 3% FREE-CASH-FLOW YIELD (about 58 '
+ 'dollars a share, or trailing free cash flow above 238m) AND EITHER NVIDIA NAMED AS A 10% CUSTOMER IN A 10-Q OR A '
+ "FILING CONFIRMING PRICE INCREASES. || 💡 SLIDE 2 - WAYMO IN TOKYO. THIS ONE IS REAL AND TWO DAYS OLD: Waymo's blog 14 "
+ 'September, Nihon Kotsu and GO 15 September. Tokyo, Level 4, NO SAFETY DRIVER, targeted 2027, hailed through the GO '
+ 'app, testing since 2025 - ALL CONFIRMED. Two corrections only: the ~100 vehicles is WHERE THE FLEET EXPANDS TO IN '
+ "PHASES, not where it starts; and 'Alphabet proves it can scale outside the USA' IS NOT TRUE YET - ALL FOURTEEN OF "
+ "WAYMO'S COMMERCIAL CITIES ARE AMERICAN, and the first driverless commercial permit outside the US went to WERIDE IN "
+ 'ABU DHABI, not Waymo. || ⚠️⚠️ AND THE INVESTOR ANSWER, WHICH THE SLIDE DOES NOT GIVE: ALPHABET DOES NOT DISCLOSE '
+ "WAYMO'S REVENUE AT ALL. Waymo sits inside 'Other Bets', WHICH IS BIGGER THAN WAYMO, AND OTHER BETS EARNED 382 "
+ "MILLION IN Q2 2026 AGAINST ALPHABET'S 119,796 MILLION - 0.32%, ONE THIRD OF ONE PERCENT - WHILE LOSING 1,799m, A "
+ "4.41% DRAG ON OPERATING INCOME. 📊 AND THE SIZE TEST: Waymo's February round valued it at 126bn. ALPHABET IS WORTH "
+ '4,223bn. EVEN AT 100% OWNERSHIP WAYMO WOULD BE 2.98% OF ALPHABET. IT IS A REAL OPTION, NOT A SECOND ENGINE, AND IT '
+ 'IS NOT WHY WE OWN THE SHARES. The operating progress is impressive anyway - OVER 500,000 PAID TRIPS A WEEK, DOUBLED '
+ "IN A YEAR, 14 CITIES, 4,000+ VEHICLES, 220.6M RIDER-ONLY MILES - and so are the risks: THE NTSB'S FIRST-EVER WAYMO "
+ 'INVESTIGATION after a driverless car STRUCK A NINE-YEAR-OLD IN A SANTA MONICA SCHOOL ZONE ON 23 JANUARY 2026, a '
+ "3,000-vehicle software recall in December 2025, the 4 July San Francisco gridlock, and San Diego's council voting "
+ "unanimously against Waymo's autonomy on 14 September. DECISION: NOTHING CHANGES ON GOOGL. || ⚠️⚠️ THE GOOGL FAULT, "
+ 'AND IT IS THE SECOND OF ITS EXACT KIND IN SIX DAYS: THE 19 NOVEMBER TRANCHE 3 ROW SAID 20,524.08. THE BUDGET IS '
+ '78,000 WITH 59,475.92 INVESTED, SO ONLY 18,524.08 REMAINS - THE ROW WAS PROMISING 2,000 THAT DOES NOT EXIST. '
+ 'CORRECTED TO 18,524.08, WHICH NOW CLOSES THE BUDGET EXACTLY. The MRVL row had the same disease on 11 September '
+ '(17,127.34 against a true 13,127.34). TWO OF ONE KIND IS A PROCESS PROBLEM, NOT BAD LUCK: A SCHEDULE AMOUNT MUST BE '
+ 'DERIVED FROM BUDGET MINUS INVESTED, NEVER TYPED. A FULL BUDGET-VERSUS-SCHEDULE RECONCILIATION IS NOW ON THE 10 '
+ 'DECEMBER AGENDA. || POSITIONS, CASH AND REALISED ALL UNCHANGED. ⚠️ AND TOMORROW IS STILL THE DAY THAT MATTERS: '
+ 'THURSDAY 17 SEPTEMBER COMMITS 46,526.13 ACROSS SIX TRANCHES, ALL PROCEEDING AS WRITTEN. || PREVIOUS ENTRY: Sep 16, '
+ '2026 - THE TWO SELL ORDERS WERE PLACED, ⚠️ NOTHING EXECUTED, AND ⚠️⚠️ ON THE REFRESHED PRICES BOTH LIMITS SIT ABOVE '
+ 'THE MARKET RATHER THAN AT IT - WHICH IS WHY NEITHER FILLED, AND THE MISTAKE IN HOW I DESCRIBED THEM THIS MORNING IS '
+ 'MINE. NO POSITION, CASH OR REALISED FIGURE HAS CHANGED AND THE BOARD REFLECTS THAT EXACTLY. || WHAT WAS PLACED: CRM '
+ 'ORDER 5476543, LIMIT 262.00, 21 SHARES, DAY, stamped 23:52:15 on 15 September - re-placed exactly as recommended. FN '
+ 'ORDER 5476514, THE 550.00 LIMIT, WAS WITHDRAWN at 23:53:35 - the right call, and that order was MY ERROR. FN ORDER '
+ "5476610 then went in at 23:54:18 - LIMIT 382.00, 3 SHARES, DAY. Both show 'Order Received' with nothing executed. || "
+ '⚠️⚠️ THE CORRECTION, AND IT IS MINE TWICE OVER. The Tuesday 15 September closes are CRM 255.65 and FN 374.91. SO THE '
+ 'CRM LIMIT OF 262.00 IS 2.48% ABOVE THE MARKET, NOT THE 1% I SAID, AND THE FN LIMIT OF 382.00 IS 1.89% ABOVE THE '
+ "MARKET - IT IS NOT 'AT THE MARKET', WHICH IS WHAT I CALLED IT THIS MORNING. I was reading stale 11 September prices "
+ '(CRM 247.72, FN 414.58). A SELL LIMIT SET ABOVE THE LAST TRADE IS NOT AN EXIT, IT IS A WISH WITH A DEADLINE. || 💡 '
+ "THE PRINCIPLE SALEE APPLIED IS STILL RIGHT AND I SHOULD HAVE GIVEN IT TO HIM FIRST. I said 'sell FN at the market'; "
+ 'he used a limit instead. A MARKET ORDER ACCEPTS WHATEVER PRICE THE BOOK OFFERS AND ON A THREE-SHARE LOT CAN FILL '
+ 'SEVERAL PERCENT WORSE THAN THE SCREEN; A SELL LIMIT FILLS AT THE LIMIT OR BETTER AND CANNOT FILL WORSE. THE RULE: '
+ 'NEVER USE A MARKET ORDER WHEN A LIMIT CAN DO THE SAME JOB WITH A FLOOR UNDER IT - BUT THE LIMIT MUST BE AT OR JUST '
+ 'BELOW THE LAST TRADE, OR IT DOES NOT DO THE JOB AT ALL. || ⚠️⚠️ THREE SESSIONS RUNNING OF THE SAME FAILURE - a sell '
+ 'limit above the market on a DAY order, which then dies at the close and has to be retyped: 12 Sep, 14 Sep, and now '
+ "15 Sep twice. THE FIX IS TWO CHANGES AT ONCE AND BOTH ARE SALEE'S TO MAKE AT POEMS: SET THE LIMIT AT OR JUST BELOW "
+ 'THE LAST TRADE, AND USE GTC (GOOD-TILL-CANCELLED) INSTEAD OF DAY SO THE ORDER SURVIVES THE CLOSE. || ⚠️ AND CHECK '
+ 'WHETHER THESE TWO ARE EVEN STILL ALIVE. Bangkok runs ELEVEN HOURS AHEAD OF NEW YORK, so a 23:52 Bangkok stamp on 15 '
  'September is about 12:52 IN THE AFTERNOON NEW YORK TIME ON TUESDAY - mid-session. A DAY ORDER PLACED MID-SESSION '
  "DIES AT THAT SESSION'S CLOSE, and Tuesday closed at 03:00 Bangkok this morning with both limits unreached. ON THAT "
  'READING BOTH HAVE ALREADY EXPIRED. If instead POEMS stamped New York time, they are queued for today. I CANNOT TELL '
@@ -7966,43 +8007,76 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'w': 'Q4 FY2026 + full-year results - THE decision point',
             'a': 'DECIDE',
             'amt': 4000,
-            'cond': 'DATE CONFIRMED BY MICRON: Wed Sep 30, 2026, 2:30pm Mountain (release of Aug 26). || MANAGEMENT '
-                    'HAS GUIDED FQ4 TO REVENUE OF 50.0bn +/- 1.0bn, GROSS MARGIN ABOUT 86% AND DILUTED EPS OF 30.73 '
-                    '+/- 1.00. FQ3 (ended May 28, reported Jun 24) was already a record: revenue 41,456m, GAAP gross '
-                    'margin 84.6%, net income 28,243m, operating cash flow 25,388m. The year-ago quarter was revenue '
-                    '9,301m at a 37.7% margin - revenue up 4.5x and the margin more than doubled in twelve months. || '
-                    "⚠️ THAT IS EXACTLY WHY THE TEST IS NOT 'DID THEY BEAT'. A memory company at an 84.6% gross margin "
-                    'against 37.7% a year earlier is at a cyclical PEAK, and peak margins are where memory investors '
-                    'lose money. THE NUMBER IS DRAM BIT SHIPMENTS. Buy only if bits grow double-digit AND gross margin '
-                    'holds at or above 80%. Beating on price alone is the cycle topping, not the story working. || '
-                    '⚠️⚠️ TAIWAN UNION - UPDATED 15 SEP AND I AM CORRECTING MY OWN EARLIER NOTE. I WROTE THAT ABOUT '
-                    '80% BACKED A STRIKE WITH A VOTE POSSIBLE IN SEPTEMBER. THAT WAS WRONG IN AN IMPORTANT WAY: THE '
-                    '80% WAS AN INTERNAL ONLINE SURVEY OF PARTICIPATING MEMBERS IN AUGUST, NOT A STRIKE VOTE. NO '
-                    'STRIKE VOTE HAS BEEN HELD, NO STRIKE HAS BEEN CALLED, AND NO PRODUCTION HAS STOPPED. || WHAT IS '
-                    "REAL: the Taiwan Micron Workers' Union (chair Lin Zhe-rui), with the Taoyuan City Confederation, "
-                    'demands 15% OF OPERATING PROFIT - 營業利益, NOT net profit - as a permanent quarterly profit-share '
-                    "replacing the current Incentive Pay Plan, plus a one-off of about 83 months' salary for FY2026. "
-                    "⚠️ THE 'WORLDWIDE EMPLOYEES' FRAMING RESTS ONLY ON THE REUTERS ENGLISH WIRE; every "
-                    "Chinese-language primary source describes TAIWAN employees. Micron's 11 Sep package - "
-                    'NT$1,000,000 plus up to 500% of target bonus plus stock, 35 to 68 months for direct labour - was '
-                    'REJECTED by the union as 公關話術, PR spin. || ⚠️ THE GATES ARE BEFORE THE PRINT AND THAT IS THE '
-                    "USEFUL FACT: MEDIATION ON 18 SEPTEMBER (TAICHUNG) AND 21 SEPTEMBER (TAOYUAN). Chair Lin: 'If "
-                    'there is no concrete proposal on September 18 and 21 we will declare the negotiations have broken '
-                    "down and move towards a strike vote.' WE WILL KNOW BEFORE WE DECIDE. || ⚠️ AND TAIWAN LAW SETS A "
-                    'HIGH BAR. Article 53 requires mediation to FAIL first; Article 54 requires approval by NO LESS '
-                    'THAN ONE HALF OF ALL MEMBERS by direct secret ballot - more than 5,000 of about 10,000, not a '
-                    'majority of those voting. NO TAIWAN SEMICONDUCTOR COMPANY HAS EVER COMPLETED A STRIKE. || ⚠️ '
-                    "TAIWAN IS MICRON'S LARGEST DRAM HUB - about 15,000 of 60,000+ employees, Taichung is the largest "
-                    "DRAM fab AND makes HBM - BUT MICRON DOES NOT DISCLOSE TAIWAN'S SHARE OF BIT OUTPUT. The best "
-                    "proxy is Micron's own guidance after the April 2024 earthquake: a 4-6% quarterly DRAM supply "
-                    'impact from a PARTIAL disruption. || 💡 THE CONCLUSION THAT MATTERS: THIS IS A MARGIN STORY, NOT A '
-                    'SUPPLY STORY. 15% of operating profit is ABOUT 5.0 BILLION DOLLARS PER QUARTER at the FQ3 '
-                    'run-rate of 33.318bn - my arithmetic. Even settling at the Korean level of 10 to 10.5% is 3.3 to '
-                    '3.5 BILLION A QUARTER, PERMANENTLY, AND IT IS NOT IN CONSENSUS MODELS. Samsung settled at 10.5% '
-                    'of divisional operating profit on 27 May; SK hynix at 10% on 20 Aug. In all three recent Korean '
-                    'episodes the credible threat produced a SETTLEMENT, NOT LOST OUTPUT - and Samsung shares ROSE 6% '
-                    'the day its strike was averted. ⚠️ SO THE TEST GAINS A FOURTH ITEM: WHAT DOES MICRON SAY ABOUT '
-                    'THE COST OF A TAIWAN SETTLEMENT, AND IS IT IN THE FY2027 MARGIN GUIDE?',
+            'cond': '⚠️⚠️ TWO WEEKS OUT, AND THE 16 SEPTEMBER SUPERCYCLE RESEARCH CHANGES WHAT TO LOOK FOR ON THE '
+                    'PRINT. DO NOT READ THE REVENUE LINE FIRST. READ THE GROSS MARGIN AND THE GUIDANCE FOR THE QUARTER '
+                    'AFTER. || WHERE MICRON ACTUALLY STANDS, FROM THE FILING: FISCAL Q3 2026, QUARTER ENDED 28 MAY '
+                    '2026, REPORTED 24 JUNE. REVENUE 41,456 MILLION AGAINST 9,301 MILLION A YEAR EARLIER - UP ABOUT '
+                    '346%. GAAP GROSS MARGIN 84.6%. GAAP NET INCOME 28,243 MILLION, GAAP DILUTED EPS 24.67. Guidance '
+                    'for fiscal Q4: REVENUE 50.0bn PLUS OR MINUS 1.0bn, GROSS MARGIN ABOUT 86%, GAAP DILUTED EPS 30.73 '
+                    'PLUS OR MINUS 1.00. Sanjay Mehrotra, Chairman and CEO, 24 June: "Micron\'s record fiscal Q3 '
+                    'financial results and even stronger outlook for Q4 reflect the strategic value of memory in the '
+                    'AI era." || ⚠️⚠️ AND HERE IS THE TRAP THIS BOARD MUST NOT WALK INTO, WRITTEN PLAINLY. MICRON '
+                    'TRADES AT 21.5 TIMES TRAILING EARNINGS AND 6.63 TIMES FORWARD EARNINGS. A FORWARD MULTIPLE OF 6.6 '
+                    'IS THE CHEAPEST NUMBER ON THIS ENTIRE BOARD OF 94 NAMES. IT IS ALSO THE MOST DANGEROUS ONE. A '
+                    'MEMORY COMPANY LOOKS CHEAPEST AT THE TOP OF ITS CYCLE, BECAUSE THE E IN THE P/E IS PEAK EARNINGS '
+                    'AND EVERYONE IS EXTRAPOLATING IT. Earnings per share grew 695.9% to reach 44.31. Those earnings '
+                    'are not a base, they are a peak until proven otherwise. || 📊 THE HISTORY, SOURCED FROM SIA AND '
+                    'WSTS AND NOT FROM OPINION: IN THE LAST TWO MEMORY-LED DOWNTURNS, MEMORY REVENUE FELL 32.6% IN '
+                    '2019 AND ABOUT 29% IN 2023, IN A SINGLE YEAR EACH. DRAM SPECIFICALLY FELL 37.1% IN 2019 AND NAND '
+                    '25.9%. In the 2008 crash DRAM prices fell at a 40.1% QUARTERLY rate through December. AND THE '
+                    'FORTY-YEAR RULE OF THUMB, FROM A WSTS-BASED STUDY: "whenever the memory market has grown over '
+                    '50%, it has seen a significant deceleration or a decline in the following year" - true in four of '
+                    'the six times it happened in forty years. ⚠️ THE 2026 MEMORY FORECAST IS PLUS 302%. THAT IS SIX '
+                    'TIMES THE THRESHOLD. || 📊 THE ONE SERIES THAT MATTERS MORE THAN THE 1.6 TRILLION HEADLINE - '
+                    'CONVENTIONAL DRAM CONTRACT PRICES, QUARTER ON QUARTER (TrendForce): 1Q26 UP TO PLUS 98%. 2Q26 '
+                    'PLUS 58 TO 63%. 3Q26 PLUS 13 TO 18%. ⚠️ PRICES ARE STILL RISING, BUT THE RATE OF INCREASE HAS '
+                    'FALLEN BY ROUGHLY FIVE SIXTHS IN TWO QUARTERS. TrendForce, 3 July 2026, verbatim: "Weaker demand '
+                    'from consumer applications and the impact of a higher comparison base are expected to moderate '
+                    'contract price increases" - and the same release says record prices have reached customers\' '
+                    '"affordability limit". 3Q26 NAND is plus 10 to 15%. THIS IS THE BOARD\'S MEMORY CYCLE GAUGE FROM '
+                    'NOW ON. THE HEADLINE MARKET SIZE IS A LAGGING NUMBER; THE CONTRACT PRICE IS A LEADING ONE. || '
+                    'WHAT TO DO ON THE DAY: THE 4,000 RUNG PROCEEDS AS WRITTEN UNLESS GROSS MARGIN COMES IN BELOW 80% '
+                    'OR THE COMPANY GUIDES THE FOLLOWING QUARTER DOWN SEQUENTIALLY ON REVENUE. Either of those is the '
+                    'cycle turning and the rung waits. ⚠️ AND SEPARATELY, THE 11,000 THAT HAD NO RULE NOW HAS ONE - '
+                    'see the resolved fault row: it needs gross margin at or above 86% AND Q4 DRAM contract prices '
+                    'still rising, and it is CANCELLED, not deferred, if contract prices go flat. || DATE CONFIRMED BY '
+                    'MICRON: Wed Sep 30, 2026, 2:30pm Mountain (release of Aug 26). || MANAGEMENT HAS GUIDED FQ4 TO '
+                    'REVENUE OF 50.0bn +/- 1.0bn, GROSS MARGIN ABOUT 86% AND DILUTED EPS OF 30.73 +/- 1.00. FQ3 (ended '
+                    'May 28, reported Jun 24) was already a record: revenue 41,456m, GAAP gross margin 84.6%, net '
+                    'income 28,243m, operating cash flow 25,388m. The year-ago quarter was revenue 9,301m at a 37.7% '
+                    'margin - revenue up 4.5x and the margin more than doubled in twelve months. || ⚠️ THAT IS EXACTLY '
+                    "WHY THE TEST IS NOT 'DID THEY BEAT'. A memory company at an 84.6% gross margin against 37.7% a "
+                    'year earlier is at a cyclical PEAK, and peak margins are where memory investors lose money. THE '
+                    'NUMBER IS DRAM BIT SHIPMENTS. Buy only if bits grow double-digit AND gross margin holds at or '
+                    'above 80%. Beating on price alone is the cycle topping, not the story working. || ⚠️⚠️ TAIWAN '
+                    'UNION - UPDATED 15 SEP AND I AM CORRECTING MY OWN EARLIER NOTE. I WROTE THAT ABOUT 80% BACKED A '
+                    'STRIKE WITH A VOTE POSSIBLE IN SEPTEMBER. THAT WAS WRONG IN AN IMPORTANT WAY: THE 80% WAS AN '
+                    'INTERNAL ONLINE SURVEY OF PARTICIPATING MEMBERS IN AUGUST, NOT A STRIKE VOTE. NO STRIKE VOTE HAS '
+                    'BEEN HELD, NO STRIKE HAS BEEN CALLED, AND NO PRODUCTION HAS STOPPED. || WHAT IS REAL: the Taiwan '
+                    "Micron Workers' Union (chair Lin Zhe-rui), with the Taoyuan City Confederation, demands 15% OF "
+                    'OPERATING PROFIT - 營業利益, NOT net profit - as a permanent quarterly profit-share replacing the '
+                    "current Incentive Pay Plan, plus a one-off of about 83 months' salary for FY2026. ⚠️ THE "
+                    "'WORLDWIDE EMPLOYEES' FRAMING RESTS ONLY ON THE REUTERS ENGLISH WIRE; every Chinese-language "
+                    "primary source describes TAIWAN employees. Micron's 11 Sep package - NT$1,000,000 plus up to 500% "
+                    'of target bonus plus stock, 35 to 68 months for direct labour - was REJECTED by the union as '
+                    '公關話術, PR spin. || ⚠️ THE GATES ARE BEFORE THE PRINT AND THAT IS THE USEFUL FACT: MEDIATION ON 18 '
+                    "SEPTEMBER (TAICHUNG) AND 21 SEPTEMBER (TAOYUAN). Chair Lin: 'If there is no concrete proposal on "
+                    'September 18 and 21 we will declare the negotiations have broken down and move towards a strike '
+                    "vote.' WE WILL KNOW BEFORE WE DECIDE. || ⚠️ AND TAIWAN LAW SETS A HIGH BAR. Article 53 requires "
+                    'mediation to FAIL first; Article 54 requires approval by NO LESS THAN ONE HALF OF ALL MEMBERS by '
+                    'direct secret ballot - more than 5,000 of about 10,000, not a majority of those voting. NO TAIWAN '
+                    "SEMICONDUCTOR COMPANY HAS EVER COMPLETED A STRIKE. || ⚠️ TAIWAN IS MICRON'S LARGEST DRAM HUB - "
+                    'about 15,000 of 60,000+ employees, Taichung is the largest DRAM fab AND makes HBM - BUT MICRON '
+                    "DOES NOT DISCLOSE TAIWAN'S SHARE OF BIT OUTPUT. The best proxy is Micron's own guidance after the "
+                    'April 2024 earthquake: a 4-6% quarterly DRAM supply impact from a PARTIAL disruption. || 💡 THE '
+                    'CONCLUSION THAT MATTERS: THIS IS A MARGIN STORY, NOT A SUPPLY STORY. 15% of operating profit is '
+                    'ABOUT 5.0 BILLION DOLLARS PER QUARTER at the FQ3 run-rate of 33.318bn - my arithmetic. Even '
+                    'settling at the Korean level of 10 to 10.5% is 3.3 to 3.5 BILLION A QUARTER, PERMANENTLY, AND IT '
+                    'IS NOT IN CONSENSUS MODELS. Samsung settled at 10.5% of divisional operating profit on 27 May; SK '
+                    'hynix at 10% on 20 Aug. In all three recent Korean episodes the credible threat produced a '
+                    'SETTLEMENT, NOT LOST OUTPUT - and Samsung shares ROSE 6% the day its strike was averted. ⚠️ SO '
+                    'THE TEST GAINS A FOURTH ITEM: WHAT DOES MICRON SAY ABOUT THE COST OF A TAIWAN SETTLEMENT, AND IS '
+                    'IT IN THE FY2027 MARGIN GUIDE?',
             'c': 'confirmed'},
            {'d': '2026-10-02',
             't': 'GOOGL',
@@ -8667,6 +8741,77 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'would leave the group with two unprofitable names and nothing solid underneath them. || IF ORCL '
                     'FAILS ITS TEST, THIS ROW DOES NOT FIRE EITHER - LHX stays at 9,000 and the 4,000 is taken from '
                     'here only when there is somewhere better to put it.'},
+           {'d': '2026-12-10',
+            'dl': 'Memory cycle - the evidence, not the headline',
+            't': 'MU',
+            'k': 'research',
+            'a': 'WATCH',
+            'amt': 0,
+            'c': 'planned',
+            'w': '⚠️ THE 1.6 TRILLION SUPERCYCLE HEADLINE IS TRUE - AND IT IS A MID-YEAR ESTIMATE REVISED UPWARD FOUR '
+                 'TIMES, WITH THE PRICE MOMENTUM ALREADY DECELERATING AND EVERY NEW FAB LANDING IN 2027.',
+            'cond': 'RECORDED 16 SEPTEMBER FROM A FACEBOOK SLIDE: "BREAKING 1.6 TRILLION DOLLARS! THE SEMICONDUCTOR '
+                    'INDUSTRY IN 2026 ENTERS A SUPERCYCLE, MEMORY SURGING, DRIVEN BY AI INFRASTRUCTURE." Researched to '
+                    'WSTS, SIA, TrendForce, Counterpoint and company filings. || ✅ THE HEADLINE NUMBER IS RIGHT, WHICH '
+                    'IS RARE FOR AN UNATTRIBUTED GRAPHIC. WSTS\'s Q2 2026 release: "The calculation for the full-year '
+                    '2026 market reaches 1,655 billion US dollars, corresponding to annual growth of approximately 108 '
+                    'percent." DigiTimes Intelligence, 15 September 2026, independently lands on 1.6 trillion. 2025 '
+                    'ACTUAL was 791.7bn (SIA, 6 February 2026), up 25.6%. || ⚠️ BUT IT IS AN ESTIMATE, NOT AN ACTUAL, '
+                    'AND IT HAS BEEN REVISED FOUR TIMES: 975.460 BILLION on 2 DECEMBER 2025 (WSTS Autumn) → "roughly 1 '
+                    'trillion" on 6 FEBRUARY 2026 (SIA) → 1.51 TRILLION on 2 JUNE 2026 (WSTS Spring) → 1,655 BILLION '
+                    'in the Q2 2026 release. ⚠️ ANYONE ACTING ON THE OFFICIAL FORECAST NINE MONTHS AGO WAS WORKING '
+                    "WITH A NUMBER 41% BELOW TODAY'S. Seven months of 2026 are actual (H1 702bn, July 146.8bn); FIVE "
+                    'MONTHS ARE STILL PROJECTED. It is reachable but not banked. || ⚠️ AND NOTE WHO DOES NOT USE THE '
+                    'WORD. "SUPERCYCLE" APPEARS IN NO WSTS OR SIA RELEASE CHECKED. It appears in SK hynix\'s own '
+                    'newsroom of 5 January 2026 - WHICH ATTRIBUTES THE DEFINITION TO BANK OF AMERICA. The term came '
+                    'from a sell-side bank, not an industry body. AND THAT SAME SK HYNIX PAGE CARRIED FORECASTS OF '
+                    'DRAM PLUS 51% AND NAND PLUS 45% FOR 2026 - EVERY ONE OF WHICH WAS BLOWN THROUGH. The forecasting '
+                    'error runs in both directions, which is the whole point. || ✅ THE UNDERLYING BOOM IS REAL AND IT '
+                    'IS IN AUDITED FILINGS, NOT IN FORECASTS. 2Q26 DRAM industry revenue 154.73bn, UP 59.5% ON THE '
+                    'QUARTER (TrendForce). Micron fiscal Q3 revenue 41,456m with an 84.6% GAAP GROSS MARGIN. SK hynix '
+                    'Q2 2026 revenue KRW 79.3187 trillion with a 76% OPERATING MARGIN, revenue up 257% year on year. '
+                    "Samsung's semiconductor division earned KRW 89.2 TRILLION OF OPERATING PROFIT OUT OF A GROUP "
+                    "TOTAL OF KRW 89.5 TRILLION - 99.7% OF SAMSUNG'S PROFIT NOW COMES FROM CHIPS. || 📊 THE ONE SERIES "
+                    'THAT MATTERS MORE THAN THE 1.6 TRILLION HEADLINE - CONVENTIONAL DRAM CONTRACT PRICES, QUARTER ON '
+                    'QUARTER (TrendForce): 1Q26 UP TO PLUS 98%. 2Q26 PLUS 58 TO 63%. 3Q26 PLUS 13 TO 18%. ⚠️ PRICES '
+                    'ARE STILL RISING, BUT THE RATE OF INCREASE HAS FALLEN BY ROUGHLY FIVE SIXTHS IN TWO QUARTERS. '
+                    'TrendForce, 3 July 2026, verbatim: "Weaker demand from consumer applications and the impact of a '
+                    'higher comparison base are expected to moderate contract price increases" - and the same release '
+                    'says record prices have reached customers\' "affordability limit". 3Q26 NAND is plus 10 to 15%. '
+                    "THIS IS THE BOARD'S MEMORY CYCLE GAUGE FROM NOW ON. THE HEADLINE MARKET SIZE IS A LAGGING NUMBER; "
+                    'THE CONTRACT PRICE IS A LEADING ONE. || ⚠️⚠️ AND THE SUPPLY ANSWER IS ALREADY FUNDED, DATED AND '
+                    "PUBLIC - IT ALL ARRIVES IN 2027. SAMSUNG'S PYEONGTAEK P5 WAS PULLED FORWARD SIX MONTHS AND ITS "
+                    'COMBINED CAPACITY OF ABOUT 600,000 TWELVE-INCH WAFERS A MONTH IS DESCRIBED AS "SIMILAR TO '
+                    'SAMSUNG\'S CURRENT ENTIRE DRAM PRODUCTION CAPACITY OF 650,000 UNITS" - ROUGHLY A DOUBLING, '
+                    'LANDING 2027. SK HYNIX ADDED KRW 21.6 TRILLION AT YONGIN AND PULLED ITS FIRST CLEANROOM FORWARD '
+                    'FROM MAY 2027 TO FEBRUARY 2027, TARGETING 1 MILLION DRAM WAFERS A MONTH BY 2030. MICRON RAISED '
+                    'ITS US COMMITMENT TO 250 BILLION THROUGH 2035 WITH IDAHO ARRIVING MID-2027. ⚠️ AND TRENDFORCE, 21 '
+                    'JULY 2026, VERBATIM: "NAND Flash supply growth is projected to outpace demand in 2027, with the '
+                    'current supply tightness expected to diminish in the latter half of 2027." A 4-5% NAND supply '
+                    'DEFICIT in 2026 turning POSITIVE in 2H27. || ⚠️ THE OLIGOPOLY IS ALSO LOOSENING, WHICH IS THE '
+                    'CLASSIC CYCLE-KILLER. CXMT REACHED 10% OF THE DRAM MARKET IN Q2 2026, FOURTH PLACE '
+                    '(Counterpoint), with conventional DRAM revenue up 99.3% on the quarter and about 300,000 wafers a '
+                    "month against SK hynix's 590,000 - targeting 550-600,000 by 2028 and 30% share by 2030. YMTC "
+                    'BROKE INTO THE TOP THREE IN NAND BY BIT SHIPMENTS FOR THE FIRST TIME, AT 14%. || ⚠️ AND THE '
+                    'HISTORY IS BRUTAL AND SOURCED: MEMORY REVENUE FELL 32.6% IN 2019 AND ABOUT 29% IN 2023, EACH IN A '
+                    'SINGLE YEAR; DRAM ALONE FELL 37.1% IN 2019. The forty-year WSTS-based rule: memory growth above '
+                    '50% is followed by deceleration or decline, true four times in six. ⚠️ 2026 IS FORECAST AT PLUS '
+                    '302%. || 💡💡 THE REAL STORY IS NOT THE 1.6 TRILLION. IT IS THAT THE TWO BEST-SOURCED VOICES FLATLY '
+                    'DISAGREE ABOUT 2027. KWAK NOH-JUNG, CEO OF SK HYNIX, TO REUTERS ON 11 JULY 2026, THE DAY IT '
+                    'LISTED ON NASDAQ: "We forecast that next year will be the worst year in the industry\'s history '
+                    'from the supply perspective" and "We still forecast that customer demand will remain higher than '
+                    'our supply capacity even beyond 2030." AGAINST THAT, TRENDFORCE SAYS NAND FLIPS TO SURPLUS IN THE '
+                    'SECOND HALF OF 2027. AND MORGAN STANLEY, 10 AUGUST 2026, IN A NOTE TITLED "MEMORY - A SMALL '
+                    'BUMP": "room for further upward earnings revisions could narrow starting in the fourth quarter." '
+                    'THAT DISAGREEMENT IS THE INVESTABLE QUESTION. THE MARKET SIZE IS NOT. || ⚠️ ONE GAP WORTH NAMING '
+                    'HONESTLY: NO SOURCED EVIDENCE OF CUSTOMER INVENTORY BUILD OR DOUBLE-ORDERING WAS FOUND - supplier '
+                    'inventory is described as "extremely low". THAT IS THE CLASSIC PRE-CORRECTION TELL AND IT IS '
+                    'ABSENT. Absence of evidence here is a genuine gap in what could be checked, not proof of safety. '
+                    '|| DECISION: NOTHING BOUGHT, NOTHING SOLD, NO BUDGET RAISED. The slide did one useful thing - IT '
+                    'CLOSED THE OPEN 11,000 MICRON FAULT by supplying the right test. ⚠️ AND THE PILLAR-4 EXPOSURE IS '
+                    'ALREADY SIZED: MEMORY IS 24,494.84 INVESTED ACROSS MU AND SKHY, WITH 26,505.16 OF GROUP 3 BUDGET '
+                    'UNSPENT. WE DO NOT NEED MORE MEMORY ON A HEADLINE. SANDISK AND SEAGATE REMAIN UNFUNDED AND THE '
+                    'SANDISK DECISION STAYS ON 10 DECEMBER.'},
            {'d': '2026-12-10',
             'dl': 'Q2 FY2027 results, expected mid-December - decided at the quarterly review',
             't': 'ORCL',
@@ -9600,20 +9745,32 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'a': 'HOLD',
             'amt': 0,
             'c': 'standing',
-            'w': '⚠️ DATA FAULT - the written MU plan describes a 40,000 budget. The board says 51,000. About 11,000 '
-                 'is unaccounted for.',
-            'cond': '⚠️ FOUND 14 SEP while checking the calendar against the board, and it must be resolved BEFORE 30 '
-                    'September. || THE ARITHMETIC: board budget 51,000, invested 22,581.58, so remaining room is '
-                    '28,418.42. The written plan commits 4,000 on 30 Sep, 3,418.42 on 17 Dec and parks 10,000 behind '
-                    'the two HBM conditions - that is 17,418.42. 28,418.42 minus 17,418.42 leaves 11,000 WITH NO '
-                    'WRITTEN RULE ATTACHED TO IT. || WHY: the standing notes were written when the budget was 40,000 '
-                    'and were not rewritten when it went to 51,000. This is the same class of fault as the MRVL row '
-                    'quoting 17,127.34 against real room of 13,127. || ⚠️ THE 11,000 IS NOT A GREEN LIGHT. It is an '
-                    'unwritten gap, and unwritten money is how discipline leaks. Either a rule gets written for it '
-                    'before the 30 Sep print or it stays parked on the same two HBM conditions as the other 10,000. '
-                    'RECOMMENDATION: park it on the identical conditions - no new rule, no new spending. Conviction '
-                    'HIGH. ⚠️ WHAT WOULD CHANGE MY MIND: nothing about the price. Only Micron itself stating HBM is '
-                    'sold out for calendar 2027, which it has never said.'},
+            'w': '✅ RESOLVED 16 SEPTEMBER - THE 11,000 NOW HAS A WRITTEN RULE, AND IT IS A CONDITION, NOT A DATE.',
+            'cond': 'THE FAULT AS FOUND: the written MU plan described a 40,000 budget while the board carried 51,000, '
+                    'leaving ABOUT 11,000 WITH NO RULE ATTACHED TO IT. The arithmetic ties exactly - 28,418.42 remains '
+                    'of the 51,000 budget, of which 4,000 is the 30 September rung, 3,418.42 the 17 December rung and '
+                    '10,000 was explicitly parked, TOTAL 17,418.42, LEAVING 11,000.00 UNGOVERNED. || ⚠️ THE SUPERCYCLE '
+                    'SLIDE OF 16 SEPTEMBER IS WHAT CLOSED IT, BECAUSE THE RESEARCH BEHIND IT PRODUCED THE RIGHT TEST. '
+                    'THE RULE IS NOW WRITTEN AND IT IS DELIBERATELY HARSH: THE 11,000 IS RELEASED ONLY IF BOTH OF '
+                    "THESE HOLD TOGETHER. (1) MICRON'S FISCAL Q4, REPORTING 30 SEPTEMBER 2026, DELIVERS A GROSS MARGIN "
+                    'AT OR ABOVE THE GUIDED 86% - the company guided revenue of 50.0bn plus or minus 1.0bn and gross '
+                    'margin of about 86% on 24 June. (2) FOURTH-QUARTER 2026 CONVENTIONAL DRAM CONTRACT PRICES ARE '
+                    'STILL RISING QUARTER ON QUARTER when TrendForce publishes them. || ⚠️⚠️ AND THE OTHER HALF OF THE '
+                    'RULE MATTERS MORE: IF DRAM CONTRACT PRICES GO FLAT OR NEGATIVE IN ANY QUARTER, THE 11,000 IS '
+                    "CANCELLED, NOT DEFERRED. It returns to unallocated cash and Micron's budget falls to 40,000, "
+                    'which is what the written plan always said. A parked amount with no cancellation condition is not '
+                    'a plan, it is a drawer. || 📊 THE ONE SERIES THAT MATTERS MORE THAN THE 1.6 TRILLION HEADLINE - '
+                    'CONVENTIONAL DRAM CONTRACT PRICES, QUARTER ON QUARTER (TrendForce): 1Q26 UP TO PLUS 98%. 2Q26 '
+                    'PLUS 58 TO 63%. 3Q26 PLUS 13 TO 18%. ⚠️ PRICES ARE STILL RISING, BUT THE RATE OF INCREASE HAS '
+                    'FALLEN BY ROUGHLY FIVE SIXTHS IN TWO QUARTERS. TrendForce, 3 July 2026, verbatim: "Weaker demand '
+                    'from consumer applications and the impact of a higher comparison base are expected to moderate '
+                    'contract price increases" - and the same release says record prices have reached customers\' '
+                    '"affordability limit". 3Q26 NAND is plus 10 to 15%. THIS IS THE BOARD\'S MEMORY CYCLE GAUGE FROM '
+                    'NOW ON. THE HEADLINE MARKET SIZE IS A LAGGING NUMBER; THE CONTRACT PRICE IS A LEADING ONE. || ⚠️ '
+                    'WHY THE TEST IS BUILT THIS WAY AND NOT ON THE HEADLINE: the 1.6 trillion number is SEVEN TWELFTHS '
+                    'ACTUAL AND FIVE TWELFTHS PROJECTED, and the same body forecast 975 BILLION for 2026 as recently '
+                    'as 2 DECEMBER 2025. A number that has moved 70% in nine months is not a foundation for committing '
+                    '11,000 dollars. A contract price that TrendForce publishes every quarter is.'},
            {'d': '',
             'dl': 'Standing - next scoring cycle',
             't': 'NVDA',
