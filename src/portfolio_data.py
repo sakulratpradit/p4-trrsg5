@@ -3,16 +3,54 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Sep 16, 2026 (6) - THE 12-MONOPOLY SLIDE. WE OWN SIX OF THE TWELVE, NOTHING IN IT CHANGES A SINGLE LINE OF THE PLAN, '
- 'AND IT STILL PRODUCED THE BEST NEW IDEA OF THE DAY - WHICH CAME OUT OF OUR OWN DATA, NOT OUT OF THE SLIDE. || ✅ '
- 'OURS: ASML, TSM, NVDA, GOOGL, V AND ISRG - 329,000 OF BUDGET AGAINST 211,553.47 INVESTED, LEAVING 117,446.53 '
- 'APPROVED AND UNSPENT. ⚠️ AND ONE OF THEM OPENS TOMORROW: THE 5,000 VISA TRANCHE ON 17 SEPTEMBER IS THE FIRST MONEY '
- 'THIS BOARD HAS EVER PUT INTO VISA - budget 9,000, invested 0.00 today. || ⚠️ THE HEADLINE IS WRONG ON ITS FACE: IT '
- "SAYS '12 AMERICAN STOCKS' BUT ASML IS DUTCH AND TSMC IS TAIWANESE. Both trade here as depositary receipts, and a "
- "foreign company's dividends can carry that country's withholding tax before any US or Thai treatment. ⚠️ EXACT RATES "
- 'AND TREATY RELIEF ARE A QUESTION FOR THE TAX ADVISER, ADDED TO THE SAME LIST AS THE FOUR OUTSTANDING SELLS. || 💡💡 '
- 'AND HERE IS THE NEW IDEA, ENTIRELY FROM FIELDS THIS BOARD ALREADY CARRIES. RANK THE SIX BY GROSS MARGIN: VISA '
- '80.18%, NVIDIA 75.00%, INTUITIVE 66.77%, TSMC 64.23%, ALPHABET 60.37% AND ⚠️ ASML LAST AT 52.73%. ASML IS THE PUREST '
+ASOF = ('Sep 16, 2026 (7) - THE CUSTOM-ASIC VALUE CHAIN SLIDE. WE OWN SIXTEEN OF THE NINETEEN NAMES ON IT, IT CONTAINS NO '
+ 'ERRORS I COULD FIND, AND IT EXPOSED TWO REAL FAULTS ON OUR OWN BOARD - ONE OF THEM THE FIRST TRUE BUDGET BREACH THIS '
+ 'BOARD HAS EVER HAD. || ⚠️⚠️ FAULT ONE: AMAZON HAS 48,600.75 INVESTED AGAINST A 48,000 BUDGET. OVER BY 600.75, OR '
+ '1.25%. IT IS THE ONLY NAME IN NINETY-FOUR WHERE MONEY SPENT EXCEEDS MONEY APPROVED, AND IT IS A WORSE CLASS OF FAULT '
+ 'THAN THE THREE FOUND EARLIER TODAY - THE MRVL 4,000, THE GOOGL 2,000 AND THE MICRON 11,000 WERE PROMISES, FIXABLE '
+ 'WITH A KEYSTROKE. THIS ONE IS ALREADY SPENT. The size looks like commission plus fill drift on the last tranche, but '
+ 'NO SOURCED CAUSE FOUND and I will not write a guess down as a cause. Amazon has no remaining schedule rows so the '
+ "breach cannot widen. ⚠️ I HAVE DELIBERATELY NOT FIXED IT: raising Amazon's budget would break the hard constraint "
+ 'that all budgets sum to exactly 1,000,000 unless 600.75 is taken from another name, and quietly moving approved '
+ 'money to tidy a rounding error is how budgets stop meaning anything. SALEE DECIDES ON 10 DECEMBER - either raise '
+ 'Amazon and take it from an unspent budget, or write a TOLERANCE RULE of 2% or 1,000 whichever is smaller. I favour '
+ 'the tolerance rule. || ⚠️⚠️ FAULT TWO, AND IT IS THE FOURTH OF ITS KIND TODAY: SYNOPSYS HAS A 13,000 BUDGET, ZERO '
+ 'INVESTED, AND ZERO SCHEDULE ROWS - NOT ONE DATE, CONDITION OR TRIGGER. Five names carry a budget with nothing yet '
+ 'invested; four of them have rules. SYNOPSYS HAS NONE. APPROVED MONEY WITHOUT A WRITTEN CONDITION IS NOT A PLAN, IT '
+ 'IS A DRAWER. 💡 AND THE IRONY IS SHARP BECAUSE THE SLIDE PUTS SYNOPSYS IN THE LAYER EVERYTHING ELSE DEPENDS ON - ITS '
+ "OWN CAPTION IS 'IDEAS INTO SILICON'. NOBODY DESIGNS A CUSTOM CHIP WITHOUT THE SOFTWARE SYNOPSYS AND CADENCE SELL, "
+ 'AND IT IS THE LAYER WE HAVE FUNDED LEAST: OF 513,000 OF BUDGET ACROSS THE SIXTEEN NAMES, THE WHOLE IP AND EDA LAYER '
+ 'HOLDS 3,918.01 OF ACTUAL INVESTMENT, ALL OF IT IN CADENCE, WHICH ITSELF HAS NO BUDGET. Decide on 10 December: write '
+ 'a plan, or cancel the budget. || ✅ THE MAP: 513,000 OF APPROVED BUDGET ACROSS THE SIXTEEN NAMES AGAINST 342,992.13 '
+ 'INVESTED - 170,007.87 STILL UNSPENT IN THIS ONE VALUE CHAIN. || 💡💡 AND HERE IS WHAT THE SLIDE DOES NOT SAY. READ ITS '
+ 'OWN FIRST BOX: THE REASONS GOOGLE, AMAZON, MICROSOFT AND META BUILD CUSTOM CHIPS ARE LISTED AS LOWER COSTS, BETTER '
+ "EFFICIENCY, AND - PLAINLY - 'LESS RELIANCE ON THIRD-PARTY CHIPS'. THERE IS ONLY ONE THIRD PARTY THAT SENTENCE MEANS. "
+ 'THE ENTIRE CUSTOM-ASIC MOVEMENT IS AN ATTEMPT TO BUY LESS FROM NVIDIA - AND NVIDIA IS OUR LARGEST POSITION AT '
+ '79,380.28, 13.9% OF EVERYTHING INVESTED. || 💡 SO WHAT DO WE OWN? THE INCUMBENT BEING ATTACKED (NVDA). THE WEAPON '
+ 'BEING USED AGAINST IT (AVGO 30,125.18 AND MRVL 7,872.66). ALL FOUR ATTACKERS (GOOGL, AMZN, MSFT, META - 200,195.14 '
+ 'BETWEEN THEM). AND THE GROUND THEY FIGHT ON (TSMC MAKES EVERY ONE OF THESE CHIPS WHOEVER DESIGNS THEM; MICRON SELLS '
+ 'THE MEMORY BESIDE ALL OF THEM). ✅ THAT IS NOT A MUDDLE - IT IS THE CORRECT POSITION FOR SOMEONE WHO CANNOT PREDICT '
+ 'WHICH LAYER CAPTURES THE MARGIN, AND NOBODY CAN. || ⚠️⚠️ BUT THE ONE THING THIS SHAPE DOES NOT PROTECT AGAINST IS '
+ 'THE WHOLE CHAIN SPENDING LESS. IF AI CAPITAL EXPENDITURE FALLS, ALL SIXTEEN FALL TOGETHER - AND 342,992.13 OF OUR '
+ '573,060.10 SITS IN THIS SINGLE CHAIN. THAT IS SIXTY PERCENT OF EVERYTHING INVESTED, SHARING ONE DRIVER. THAT IS THE '
+ 'REAL CONCENTRATION RISK ON THIS BOARD, IT IS NOT NVIDIA-SPECIFIC, AND IT IS NOW A SINGLE LINE ON THE 10 DECEMBER '
+ 'AGENDA. || ⚠️ THE THREE WE DO NOT OWN - ALCHIP, MEDIATEK AND SAMSUNG - ARE ALL LISTED IN TAIPEI OR SEOUL, SO THEY '
+ "ARE OUTSIDE THE MANDATE RATHER THAN REJECTED ON MERIT. ⚠️ AND THE SLIDE'S FOOTER ABOUT CHINESE COMPETITORS FOLLOWS "
+ 'FROM NOTHING IN THE SIX BOXES AND CARRIES NO SOURCE - IGNORE IT. || ⚠️ HONEST NOTE ON MY OWN WORK: MY SWEEP ALSO '
+ 'FLAGGED INTEL AS OVER-SCHEDULED BY 3,216.96. THAT WAS MY ERROR - the 2,089.40 Intel row is a SELL, the partial sale '
+ 'executed 9 September for a realised gain of 1,163.35, and my check counted a sale as a commitment. CORRECTED TO '
+ 'COUNT BUY TRANCHES ONLY. A test that cries wolf is worse than no test. || DECISION: NOTHING BOUGHT, NOTHING SOLD, NO '
+ 'BUDGET CHANGED. ⚠️ TOMORROW COMMITS 46,526.13 ACROSS SIX TRANCHES, ALL PROCEEDING AS WRITTEN. || PREVIOUS ENTRY: Sep '
+ '16, 2026 (6) - THE 12-MONOPOLY SLIDE. WE OWN SIX OF THE TWELVE, NOTHING IN IT CHANGES A SINGLE LINE OF THE PLAN, AND '
+ 'IT STILL PRODUCED THE BEST NEW IDEA OF THE DAY - WHICH CAME OUT OF OUR OWN DATA, NOT OUT OF THE SLIDE. || ✅ OURS: '
+ 'ASML, TSM, NVDA, GOOGL, V AND ISRG - 329,000 OF BUDGET AGAINST 211,553.47 INVESTED, LEAVING 117,446.53 APPROVED AND '
+ 'UNSPENT. ⚠️ AND ONE OF THEM OPENS TOMORROW: THE 5,000 VISA TRANCHE ON 17 SEPTEMBER IS THE FIRST MONEY THIS BOARD HAS '
+ "EVER PUT INTO VISA - budget 9,000, invested 0.00 today. || ⚠️ THE HEADLINE IS WRONG ON ITS FACE: IT SAYS '12 "
+ "AMERICAN STOCKS' BUT ASML IS DUTCH AND TSMC IS TAIWANESE. Both trade here as depositary receipts, and a foreign "
+ "company's dividends can carry that country's withholding tax before any US or Thai treatment. ⚠️ EXACT RATES AND "
+ 'TREATY RELIEF ARE A QUESTION FOR THE TAX ADVISER, ADDED TO THE SAME LIST AS THE FOUR OUTSTANDING SELLS. || 💡💡 AND '
+ 'HERE IS THE NEW IDEA, ENTIRELY FROM FIELDS THIS BOARD ALREADY CARRIES. RANK THE SIX BY GROSS MARGIN: VISA 80.18%, '
+ 'NVIDIA 75.00%, INTUITIVE 66.77%, TSMC 64.23%, ALPHABET 60.37% AND ⚠️ ASML LAST AT 52.73%. ASML IS THE PUREST '
  'MONOPOLY ON THE ENTIRE SLIDE - THE ONLY COMPANY ON EARTH THAT CAN BUILD AN EUV MACHINE, NO SECOND SUPPLIER AT ANY '
  'PRICE - AND IT EARNS THE LOWEST MARGIN OF THE SIX. VISA, WHOSE MOAT IS THAT EVERYONE ALREADY CARRIES THE CARD, EARNS '
  'THE HIGHEST. || 💡 THE MOAT DOES NOT SET THE MARGIN. THE BUSINESS MODEL DOES. ASML SELLS MACHINES - real steel, real '
@@ -8670,6 +8708,42 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'revenue is a story, and this board does not fund stories.',
             'c': 'planned'},
            {'d': '2026-12-10',
+            'dl': '⚠️ THE ONLY BUDGET BREACH ON THE BOARD - recorded, not papered over',
+            't': 'AMZN',
+            'k': 'data',
+            'a': 'DECIDE',
+            'amt': 0,
+            'c': 'confirmed',
+            'w': '⚠️⚠️ AMAZON HAS 48,600.75 INVESTED AGAINST A 48,000 BUDGET. IT IS OVER BY 600.75, OR 1.25%. THE ONLY '
+                 'NAME ON 94 WHERE MONEY SPENT EXCEEDS MONEY APPROVED.',
+            'cond': "FOUND 16 SEPTEMBER BY A BOARD-WIDE SWEEP: IS ANY POSITION'S INVESTED COST GREATER THAN ITS OWN "
+                    'APPROVED BUDGET? ONE NAME CAME BACK. AMAZON: 209 SHARES AT A COST OF 48,600.75 AGAINST AN '
+                    'APPROVED BUDGET OF 48,000.00 - OVER BY 600.75, OR 1.25%. || ⚠️ THIS IS A DIFFERENT AND WORSE '
+                    'CLASS OF FAULT THAN THE THREE FOUND EARLIER TODAY. The MRVL 4,000, the GOOGL 2,000 and the MU '
+                    '11,000 were all PROMISES that exceeded or lacked a budget - money not yet spent, fixable with a '
+                    'keystroke. THIS ONE IS ALREADY SPENT. The shares are bought and the money is gone. || THE LIKELY '
+                    'CAUSE IS MECHANICAL RATHER THAN A DECISION - 1.25% is the size of commission plus the gap between '
+                    'a planned amount and an actual fill price on the last tranche. ⚠️ BUT THAT IS A HYPOTHESIS AND I '
+                    'WILL NOT WRITE IT DOWN AS A CAUSE. NO SOURCED CAUSE FOUND. Amazon has NO remaining schedule rows, '
+                    'so nothing further will be spent here and the breach cannot widen. || ⚠️⚠️ AND I AM DELIBERATELY '
+                    "NOT FIXING IT TONIGHT. Raising Amazon's budget to 48,600.75 would break the board's hardest "
+                    'constraint - THAT ALL BUDGETS SUM TO EXACTLY 1,000,000 - unless 600.75 is taken from another '
+                    "name, and moving another name's approved money at eleven at night to tidy a rounding error is "
+                    'exactly the kind of quiet adjustment that destroys the meaning of a budget. THE CHOICE BELONGS TO '
+                    'SALEE ON 10 DECEMBER, AND IT IS A SIMPLE ONE: EITHER (A) RAISE AMAZON TO 48,600.75 AND TAKE '
+                    '600.75 FROM AN UNSPENT BUDGET ELSEWHERE, OR (B) WRITE A TOLERANCE RULE - SAY 2% OR 1,000, '
+                    'WHICHEVER IS SMALLER - THAT PERMITS COMMISSION AND FILL DRIFT WITHOUT COUNTING AS A BREACH. I '
+                    'FAVOUR (B), BECAUSE THE ALTERNATIVE IS RE-CUTTING BUDGETS EVERY TIME A FILL COMES IN A FEW CENTS '
+                    'HIGH. || 📌 AND THE SWEEP THAT FOUND IT IS NOW PERMANENT: INVESTED MUST NEVER EXCEED BUDGET. That '
+                    'is the third of the four consistency checks this board now runs on every refresh, alongside PRICE '
+                    'CANNOT EXCEED THE ALL-TIME HIGH (six faults found this evening), SCHEDULE AMOUNTS MUST NOT EXCEED '
+                    'REMAINING BUDGET (the MRVL and GOOGL faults) and A NET MARGIN CANNOT PLAUSIBLY EXCEED 100% (IONQ, '
+                    'ONDS and LITE). || ⚠️ HONEST NOTE ON MY OWN SWEEP: IT ALSO FLAGGED INTEL AS OVER-SCHEDULED BY '
+                    "3,216.96. THAT WAS MY ERROR, NOT THE BOARD'S - the 2,089.40 Intel row is a SELL, the partial sale "
+                    'of 20 of 45 shares executed on 9 September for a realised gain of 1,163.35, and my check counted '
+                    'a sale as if it were a commitment. THE CHECK HAS BEEN CORRECTED TO COUNT BUY TRANCHES ONLY. A '
+                    'test that cries wolf is worse than no test, because the next real warning gets ignored.'},
+           {'d': '2026-12-10',
             'dl': 'MOATS - the slide is right, and it teaches the wrong lesson',
             't': 'ASML',
             'k': 'thesis',
@@ -8758,6 +8832,54 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'cond': 'Buy only if AI revenue hits the guided $21.7bn. WARNING: AVGO is more expensive than NVDA on '
                     'EVERY valuation measure while growing slower with a third of the ROE.',
             'c': 'estimated'},
+           {'d': '2026-12-10',
+            'dl': 'The ASIC value chain - we own 16 of 19, and both sides of the fight',
+            't': 'AVGO',
+            'k': 'research',
+            'a': 'WATCH',
+            'amt': 0,
+            'c': 'planned',
+            'w': '💡💡 THIS SLIDE IS, LAYER BY LAYER, A MAP OF HOW OUR LARGEST POSITION GETS DISINTERMEDIATED - AND WE '
+                 'OWN EVERY LAYER OF THE THING DOING IT. THAT IS NOT AN ACCIDENT WORTH FIXING; IT IS A HEDGE WORTH '
+                 'NAMING.',
+            'cond': 'A SLIDE OF 16 SEPTEMBER, "CUSTOM ASICs - WHO MAKES THEM AND WHO PAYS", breaking the custom-chip '
+                    'value chain into six layers. IT IS THE MOST STRUCTURALLY USEFUL SLIDE SENT IN THREE WEEKS AND IT '
+                    'CONTAINS NO ERRORS I COULD FIND. || ✅ WE OWN SIXTEEN OF THE NINETEEN NAMES ON IT. LAYER BY LAYER, '
+                    'BUDGET AGAINST INVESTED: BUYERS - GOOGL 78,000/59,475.92, AMZN 48,000/48,600.75, MSFT '
+                    '58,000/52,878.96, META 52,000/39,239.51. DESIGNERS - AVGO 50,000/30,125.18, MRVL 21,000/7,872.66 '
+                    '(Alchip and MediaTek not on the board). FABRICATION - TSM 74,000/39,921.53. IP AND EDA - SNPS '
+                    '13,000/0.00, CDNS no budget/3,918.01, ARM nothing at all. MEMORY - MU 51,000/22,581.58, SKHY no '
+                    'budget/1,913.26 (Samsung not on the board). INTERCONNECT - ANET 25,000/15,585.57, CRDO '
+                    '18,000/7,700.99, LITE 14,000/9,372.74, ALAB 11,000/3,805.47. || ⚠️ TOTAL: 513,000 OF APPROVED '
+                    'BUDGET AGAINST 342,992.13 INVESTED - 170,007.87 STILL UNSPENT IN THE SIXTEEN NAMES. THAT IS 40% '
+                    'OF EVERYTHING THIS BOARD HAS EVER APPROVED, SITTING IN ONE VALUE CHAIN, WAITING. || 💡💡 NOW THE '
+                    'THING THE SLIDE DOES NOT SAY, AND IT IS THE WHOLE POINT. READ ITS OWN FIRST BOX AGAIN: THE '
+                    'REASONS GOOGLE, AMAZON, MICROSOFT AND META BUILD CUSTOM ASICS ARE LISTED AS "LOWER LONG-TERM '
+                    'COSTS", "BETTER PERFORMANCE AND EFFICIENCY" AND - PLAINLY - "LESS RELIANCE ON THIRD-PARTY CHIPS". '
+                    '⚠️ THERE IS ONLY ONE THIRD PARTY THAT SENTENCE MEANS. THE ENTIRE CUSTOM-ASIC MOVEMENT IS, IN ITS '
+                    'ORIGIN AND ITS PURPOSE, AN ATTEMPT TO BUY LESS FROM NVIDIA. AND NVIDIA IS THE LARGEST POSITION ON '
+                    'THIS BOARD AT 79,380.28 - 13.9% OF EVERYTHING INVESTED. || 💡 SO WHAT DO WE ACTUALLY OWN? WE OWN '
+                    'THE INCUMBENT BEING ATTACKED (NVDA 79,380.28). WE OWN THE WEAPON BEING USED AGAINST IT (AVGO '
+                    '30,125.18 AND MRVL 7,872.66, THE TWO DESIGNERS WHO BUILD THOSE CUSTOM CHIPS). AND WE OWN ALL FOUR '
+                    'OF THE ATTACKERS (GOOGL, AMZN, MSFT AND META, 200,195.14 BETWEEN THEM). WE ALSO OWN THE GROUND '
+                    'THEY ALL FIGHT ON - TSMC MAKES EVERY ONE OF THESE CHIPS WHOEVER DESIGNS THEM, AND MICRON SELLS '
+                    'THE MEMORY THAT SITS BESIDE ALL OF THEM. || ✅ THAT IS NOT A MUDDLE. IT IS THE CORRECT POSITION '
+                    'FOR SOMEONE WHO CANNOT PREDICT WHICH LAYER CAPTURES THE MARGIN - AND NOBODY CAN. IF CUSTOM '
+                    'SILICON WINS, BROADCOM AND MARVELL AND THE HYPERSCALERS CAPTURE IT AND WE HOLD ALL SIX. IF NVIDIA '
+                    'HOLDS ITS GROUND BECAUSE CUDA IS TOO HARD TO LEAVE, WE HOLD THAT TOO. IN EITHER CASE TSMC MAKES '
+                    'THE WAFER AND MICRON SELLS THE MEMORY. ⚠️ THE ONE THING THIS SHAPE DOES NOT PROTECT AGAINST IS '
+                    'THE WHOLE CHAIN SPENDING LESS - if AI capital expenditure falls, every one of these sixteen names '
+                    'falls together, and 342,992.13 of our 573,060.10 is in this single chain. ⚠️⚠️ THAT IS THE REAL '
+                    'CONCENTRATION RISK ON THIS BOARD AND IT IS NOT NVIDIA-SPECIFIC. IT BELONGS ON THE 10 DECEMBER '
+                    'AGENDA AS A SINGLE LINE: SIXTY PERCENT OF EVERYTHING WE HAVE INVESTED SITS IN ONE VALUE CHAIN '
+                    'THAT SHARES ONE DRIVER. || ⚠️ THE THREE WE DO NOT OWN ARE ALCHIP, MEDIATEK AND SAMSUNG - ALL '
+                    "THREE LISTED IN TAIPEI OR SEOUL RATHER THAN THE UNITED STATES, SO THEY ARE OUTSIDE THIS BOARD'S "
+                    'MANDATE RATHER THAN REJECTED ON MERIT. Alchip in particular is a genuine gap: it is a real '
+                    "custom-ASIC design house and it is simply not buyable here. || ⚠️ AND THE SLIDE'S FOOTER IS THE "
+                    'ONE WEAK PART: "STRONGER CHIPS DOES NOT EQUAL LOWER REVENUE - companies must capture enough '
+                    'market share to grow alongside their Chinese competitors." That sentence does not follow from '
+                    'anything in the six boxes above it and no source is given. IGNORE IT. The six boxes are the '
+                    'value. || DECISION: NOTHING BOUGHT, NOTHING SOLD, NO BUDGET CHANGED.'},
            {'d': '2026-12-10',
             'dl': 'Quarterly review - back-up name',
             't': 'CDNS',
@@ -9349,6 +9471,41 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'it is the WORSE HALF of the same cycle. Test (2) on this row - NAND contract prices not falling '
                     'for two consecutive months - was already the right test; TrendForce now says it is the one most '
                     'likely to fail. Weight it accordingly in December.'},
+           {'d': '2026-12-10',
+            'dl': '⚠️ 13,000 APPROVED WITH NO PLAN ATTACHED - the fourth of its kind today',
+            't': 'SNPS',
+            'k': 'thesis',
+            'a': 'DECIDE',
+            'amt': 0,
+            'c': 'planned',
+            'w': '⚠️⚠️ SYNOPSYS HAS A 13,000 BUDGET, ZERO INVESTED, AND ZERO SCHEDULE ROWS. NOT ONE DATE, NOT ONE '
+                 'CONDITION, NOT ONE TRIGGER. IT IS THE ONLY FUNDED NAME ON THE BOARD WITH NO PLAN OF ANY KIND.',
+            'cond': 'FOUND 16 SEPTEMBER WHILE MAPPING THE CUSTOM-ASIC VALUE CHAIN. FIVE NAMES CARRY A BUDGET WITH '
+                    'NOTHING YET INVESTED - APP 18,000, SNPS 13,000, SE 13,000, LHX 9,000 AND V 9,000. FOUR OF THE '
+                    "FIVE HAVE SCHEDULE ROWS GOVERNING THEM (V's opens tomorrow). ⚠️ SYNOPSYS HAS NONE. || THIS IS THE "
+                    'FOURTH INSTANCE TODAY OF THE SAME DISEASE AND IT IS NOW UNARGUABLY A PROCESS PROBLEM: THE MRVL '
+                    'ROW PROMISED 4,000 MORE THAN EXISTED, THE GOOGL ROW PROMISED 2,000 MORE THAN EXISTED, THE MICRON '
+                    '11,000 HAD NO RULE UNTIL THIS MORNING, AND NOW 13,000 OF SYNOPSYS SITS APPROVED WITH NOTHING '
+                    'ATTACHED. ⚠️ APPROVED MONEY WITHOUT A WRITTEN CONDITION IS NOT AN INVESTMENT PLAN. IT IS A '
+                    'DRAWER. || 💡 AND THE IRONY IS SHARP, BECAUSE THE SLIDE THAT EXPOSED IT PUTS SYNOPSYS IN THE LAYER '
+                    'EVERYTHING ELSE DEPENDS ON. ITS OWN CAPTION FOR THE IP AND EDA BOX IS "IDEAS INTO SILICON". '
+                    'Nobody designs a custom chip - not Broadcom, not Marvell, not Google, not Amazon - WITHOUT THE '
+                    'SOFTWARE THAT SYNOPSYS AND CADENCE SELL. THE WHOLE VALUE CHAIN RUNS THROUGH TWO COMPANIES, AND IT '
+                    'IS THE LAYER THIS BOARD HAS FUNDED LEAST: OF 513,000 OF BUDGET ACROSS THE SIXTEEN NAMES WE OWN ON '
+                    'THAT SLIDE, THE ENTIRE IP AND EDA LAYER HOLDS 3,918.01 OF ACTUAL INVESTMENT - AND ALL OF IT IS IN '
+                    'CADENCE, WHICH ITSELF HAS NO BUDGET. || THE NUMBERS ON SYNOPSYS AS THE BOARD HOLDS THEM: PRICE '
+                    '367.70, REVENUE GROWTH 46.3%, RULE OF 40 75.4 - THE HIGHEST RULE OF 40 IN GROUP 1 AFTER NVIDIA '
+                    'AND BROADCOM. ⚠️ AND THE CAUTION: A NET MARGIN OF 11.43%, WHICH IS LOW FOR A SOFTWARE COMPANY '
+                    'WITH AN 86%-CLASS GROSS MARGIN AND IS THE SAME SHAPE OF PROBLEM WE FLAGGED ON CROWDSTRIKE AND '
+                    'PALO ALTO TODAY - real moat, most of it spent before it reaches the owner. Cadence, for '
+                    "comparison, runs an 86.08% gross margin at a 21.18% net margin. || ✅ THE DECISION IS SALEE'S ON "
+                    '10 DECEMBER AND THERE ARE ONLY TWO HONEST OPTIONS. (A) WRITE A PLAN: a first tranche on a date, '
+                    'with a condition and a cancellation trigger, exactly like every other funded name. (B) CANCEL THE '
+                    'BUDGET and return 13,000 to unallocated. ⚠️ WHAT MUST NOT HAPPEN IS A THIRD YEAR OF 13,000 '
+                    'SITTING APPROVED AND UNTOUCHED, BECAUSE THAT IS NOT CAUTION - IT IS AN UNMADE DECISION WEARING '
+                    'THE COSTUME OF ONE. || ⚠️ AND ARM, ALSO NAMED IN THAT LAYER, HAS NO BUDGET, NO POSITION AND NO '
+                    'ROWS AT ALL - it sits on the board as a name only. That is a cleaner state than Synopsys: nothing '
+                    'is promised, so nothing is owed.'},
            {'d': '2026-12-10',
             'dl': 'Decision deferred from 10 Sep 2026',
             't': 'SPCX',

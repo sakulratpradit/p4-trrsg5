@@ -667,6 +667,10 @@
   {
    "points": [
     {
+     "s": "-",
+     "text": "⚠️⚠️ THE FIRST TRUE BUDGET BREACH THIS BOARD HAS EVER HAD, FOUND 16 SEPTEMBER. AMAZON HAS 48,600.75 INVESTED ACROSS 209 SHARES AGAINST AN APPROVED BUDGET OF 48,000.00 - OVER BY 600.75, OR 1.25%. It is the ONLY name in ninety-four where money SPENT exceeds money APPROVED. || ⚠️ THIS IS A WORSE CLASS OF FAULT THAN THE THREE FOUND EARLIER TODAY. The MRVL 4,000, the GOOGL 2,000 and the Micron 11,000 were PROMISES that exceeded or lacked a budget - not yet spent, fixable with a keystroke. THIS ONE IS ALREADY SPENT; the shares are bought. || The size looks like commission plus the gap between a planned amount and an actual fill price on the last tranche, but NO SOURCED CAUSE FOUND and I will not record a guess as a cause. Amazon has NO remaining schedule rows, so the breach cannot widen. || ⚠️ I HAVE DELIBERATELY NOT FIXED IT. Raising the budget to 48,600.75 breaks the board's hardest constraint - that all budgets sum to exactly 1,000,000 - unless 600.75 is taken from another name, and quietly moving approved money to tidy a rounding error is how a budget stops meaning anything. TWO HONEST OPTIONS ON 10 DECEMBER: (A) raise Amazon and take 600.75 from an unspent budget elsewhere, or (B) WRITE A TOLERANCE RULE - 2% or 1,000, whichever is smaller - permitting commission and fill drift. I FAVOUR (B): the alternative is re-cutting budgets every time a fill comes in a few cents high."
+    },
+    {
      "s": "!",
      "text": "⚠️⚠️ THE DISCLOSURE ITEM THAT MATTERS MORE THAN ANY COMPUTE HEADLINE, AND IT IS IN AMAZON'S OWN FILING. THE Q2 2026 EARNINGS RELEASE STATES VERBATIM: 'Second quarter 2026 net income includes non-operating pre-tax other income of $53.4 billion, primarily from our investments in Anthropic.' AGAINST OPERATING INCOME OF 27.5 BILLION. ⚠️ THE MARK ON A PRIVATE COMPANY WAS ROUGHLY TWICE THE ENTIRE OPERATING PROFIT OF AMAZON. The 10-Q shows 8.0bn invested from Q3 2023 to Q4 2025, carried at about 74.2bn at 31 March 2026, with 39.5bn of unrealised gain sitting in AOCI. ⚠️⚠️ CONFLICT DISCLOSED: ANTHROPIC MAKES ME, AND I WILL NOT OFFER A VIEW ON WHETHER THAT VALUATION IS RIGHT. || WHAT I CAN SAY IS WHAT IT MEANS FOR READING THE ACCOUNTS: WHEN A MARK ON ONE PRIVATE HOLDING IS TWICE OPERATING PROFIT, THE HEADLINE EPS IS NOT TELLING YOU ABOUT THE RETAIL AND CLOUD BUSINESS. AWS segment sales grew 37% to 42.2bn - THAT is the number to judge Amazon on. Amazon also guides CY2026 capex to 220bn, raised from 200bn."
     },
@@ -4576,6 +4580,10 @@
    "points": [
     {
      "s": "0",
+     "text": "💡💡 THE CUSTOM-ASIC SLIDE OF 16 SEPTEMBER IS, LAYER BY LAYER, A MAP OF HOW THIS POSITION GETS DISINTERMEDIATED - AND IT IS WORTH READING CAREFULLY RATHER THAN DEFENSIVELY. Its own first box lists why Google, Amazon, Microsoft and Meta build custom chips: 'lower long-term costs', 'better performance and efficiency', and plainly 'LESS RELIANCE ON THIRD-PARTY CHIPS'. ⚠️ THERE IS ONLY ONE THIRD PARTY THAT SENTENCE MEANS. The entire custom-ASIC movement is an attempt to buy less from Nvidia, and Nvidia is our largest position at 79,380.28 - 13.9% of everything invested. || ✅ BUT LOOK AT WHAT WE ACTUALLY HOLD. THE INCUMBENT BEING ATTACKED: NVDA. THE WEAPON BEING USED AGAINST IT: AVGO 30,125.18 and MRVL 7,872.66, the two designers who build those custom chips. ALL FOUR ATTACKERS: GOOGL, AMZN, MSFT and META, 200,195.14 between them. AND THE GROUND THEY FIGHT ON: TSMC makes every one of these chips whoever designs them, and Micron sells the memory beside all of them. THAT IS NOT A MUDDLE - IT IS THE CORRECT POSITION FOR SOMEONE WHO CANNOT PREDICT WHICH LAYER CAPTURES THE MARGIN, AND NOBODY CAN. || ⚠️⚠️ THE ONE THING THIS SHAPE DOES NOT PROTECT AGAINST IS THE WHOLE CHAIN SPENDING LESS. If AI capital expenditure falls, all sixteen names fall together - and 342,992.13 of our 573,060.10 sits in this single value chain. THAT IS SIXTY PERCENT OF EVERYTHING INVESTED, SHARING ONE DRIVER. That is the real concentration risk on this board, it is NOT Nvidia-specific, and it is now a single line on the 10 December agenda. No action today."
+    },
+    {
+     "s": "0",
      "text": "💡 THE 16 SEPTEMBER HUMANOID REVIEW REINFORCES WHY THE LARGEST POSITION ON THIS BOARD IS THE RIGHT ROBOTICS EXPOSURE. Asked whether to buy humanoid names after Musk's G20 claim of 'well over a billion humanoid robots' within ten years, the answer was no - but NVIDIA GETS PAID EITHER WAY, because it sells the compute inside essentially every one of them. It is also an investor in Figure AI. 79,380.28 invested of a 95,000 budget. || 📊 THE SIZING THAT SETTLED IT: one billion over ten years is ONE HUNDRED MILLION UNITS A YEAR against global motor vehicle production of 96.4 MILLION in 2025 - more humanoids each year than the world builds cars, from a standing start. The entire global installed base of INDUSTRIAL robots after sixty years is 4,664,000 units. Morgan Stanley, the most bullish mainstream house, reaches one billion cumulative in 2050 - FOURTEEN YEARS LATER than Musk. ⚠️ And the track record decides it: 'over a million robotaxis' promised for 2020 against FORTY-TWO registered in Texas as of 2 June 2026. || No action. Recorded so the next robotics slide is answered from evidence rather than from scratch."
     },
     {
@@ -5786,6 +5794,17 @@
     }
    ],
    "week": "2026-08-03"
+  }
+ ],
+ "SNPS": [
+  {
+   "points": [
+    {
+     "s": "-",
+     "text": "⚠️⚠️ SYNOPSYS HAS A 13,000 BUDGET, ZERO INVESTED, AND ZERO SCHEDULE ROWS - NOT ONE DATE, NOT ONE CONDITION, NOT ONE TRIGGER. It is the only funded name on the board with no plan of any kind. Five names carry a budget with nothing yet invested (APP 18,000, SNPS 13,000, SE 13,000, LHX 9,000, V 9,000); four of the five are governed by written rows. SYNOPSYS IS NOT. || This is the FOURTH instance today of the same disease, which makes it a process problem and not bad luck: MRVL promised 4,000 more than existed, GOOGL promised 2,000 more than existed, Micron's 11,000 had no rule until this morning, and now 13,000 sits here with nothing attached. ⚠️ APPROVED MONEY WITHOUT A WRITTEN CONDITION IS NOT AN INVESTMENT PLAN - IT IS A DRAWER. || 💡 AND THE IRONY IS SHARP: the 16 September ASIC slide puts Synopsys in the layer everything else depends on, captioned 'IDEAS INTO SILICON'. Nobody designs a custom chip - not Broadcom, not Marvell, not Google, not Amazon - without the software Synopsys and Cadence sell. IT IS THE LAYER THIS BOARD HAS FUNDED LEAST: of 513,000 of budget across the sixteen names we own on that slide, the entire IP and EDA layer holds 3,918.01 of actual investment, all of it in Cadence, which itself has no budget. || THE NUMBERS: price 367.70, revenue growth 46.3%, RULE OF 40 75.4 - the highest in Group 1 after Nvidia and Broadcom. ⚠️ THE CAUTION: a net margin of 11.43%, low for a software company, the same shape of problem flagged on CrowdStrike and Palo Alto today. || TWO HONEST OPTIONS ON 10 DECEMBER: WRITE A PLAN (a first tranche on a date, with a condition and a cancellation trigger) or CANCEL THE BUDGET and return 13,000 to unallocated. What must not happen is a third year of 13,000 sitting untouched - that is not caution, it is an unmade decision wearing the costume of one."
+    }
+   ],
+   "week": "2026-09-14"
   }
  ],
  "SOFI": [
