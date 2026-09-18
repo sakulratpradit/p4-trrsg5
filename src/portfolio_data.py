@@ -3,31 +3,58 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Sep 18, 2026 (10) - 🎯 THE NASDAQ 23-HOUR POST IS **TRUE**, AND IT IS THE FIRST ANONYMOUS "[BREAKING]" POST THIS '
- 'MONTH THAT HAS CHECKED OUT. SEC RELEASE 34-105199 OF 10 APRIL 2026 APPROVED NASDAQ TO TRADE "NMS stocks and exchange '
- 'traded products 23 hours per day, five days per week", AND NASDAQ\'S OWN FAQ SAYS IT IS "currently expected to occur '
- 'on Sunday, December 6, 2026". Night session "9:00PM ET" to "4:00AM ET", a one-hour industry pause 8-9pm ET daily, '
- "ALL NMS STOCKS - and NYSE Arca, Cboe EDGX, MEMX and 24X are all approved for the same date. The post's only "
- 'understatement is that this is INDUSTRY-WIDE, not Nasdaq alone. || 🎯 WHAT IT MEANS HERE: THE NIGHT SESSION IS '
- '**09:00 TO 16:00 BANGKOK**. 💡 FOR THE FIRST TIME SALEE COULD PLACE US ORDERS OVER BREAKFAST INSTEAD OF AT MIDNIGHT. '
- '⚠️⚠️ AND THAT IS ALSO THE TRAP: **THE HOURS COMFORTABLE FOR BANGKOK ARE THE WORST HOURS IN THE MARKET.** FINRA Rule '
- '2265 makes brokers warn, verbatim, of "lower liquidity", "greater volatility" and "wider than normal spreads", and '
- 'that extended-hours prices "may not reflect the prices either at the end of regular trading hours". MARKET ORDERS '
- 'ARE BARRED FROM THE OVERNIGHT SESSION BY THE EXCHANGES THEMSELVES - LIMIT ONLY - and the corollary is that a limit '
- 'may simply NOT FILL with no fallback. || ⚠️ THE QUESTION SALEE MUST ASK POEMS, BECAUSE IT IS NOT SOURCEABLE: **DOES '
- 'POEMS SUPPORT THE NEW OVERNIGHT SESSION?** An exchange extending its hours obliges no broker. POEMS today offers '
- '"4:00 am to 9:30 am ET" and "4:00 pm to 8:00 pm ET" - **THAT STOPS AT 8PM NEW YORK AND DOES NOT COVER THE NEW '
- '9PM-4AM WINDOW.** And do not confuse it with POEMS\' "US Asian Hours", which is NOT exchange trading - Phillip "acts '
- 'as principal", 100 stocks and 4 ETFs, its own bid-offer. || ⚠️⚠️ AND A CORRECTION TO MY OWN STANDING NOTE, RECORDED '
- 'BEFORE IT CATCHES US. THIS BOARD SAYS "BANGKOK = NEW YORK + 11". THAT IS TRUE ONLY IN THE AMERICAN SUMMER. **ON '
- 'SUNDAY 1 NOVEMBER 2026 US CLOCKS GO BACK AND IT BECOMES PLUS TWELVE.** THE US REGULAR SESSION MOVES FROM 20:30-03:00 '
- 'BANGKOK TO **21:30-04:00 BANGKOK**, AND MY STANDING ADVICE TO PLACE ORDERS BETWEEN 20:30 AND 22:00 BECOMES **21:30 '
- 'TO 23:00**. A DAY ORDER PLACED AT 20:45 ON 2 NOVEMBER WOULD BE FORTY-FIVE MINUTES BEFORE THE OPEN, NOT FIFTEEN '
- 'AFTER. THIS BOARD HAS LOST MONEY TO A MISREAD PRICE ONCE THIS MONTH; LOSING IT TO A MISREAD CLOCK WOULD BE WORSE '
- 'BECAUSE IT IS ENTIRELY AVOIDABLE. || NOTHING ELSE CHANGES. WE PLACE LIMIT ORDERS AGAINST WRITTEN SCHEDULE ROWS - THE '
- 'CLOCK DOES NOT ALTER THE METHOD. || PREVIOUS ENTRY: Sep 18, 2026 (9) - 🎯 THE MICROREACTOR SLIDE IS HONEST '
- 'ENGINEERING, AND THE ANSWER IS ALREADY ON OUR BOARD. It carries NO ticker, NO price and NO target, labels itself '
- '"conceptual", and says outright that "\'LITTLE PUPPY\' IS OUR NICKNAME - NOT A TECHNICAL CLASSIFICATION" and '
+ASOF = ('Sep 18, 2026 (11) - ⚠️⚠️ "JP MORGAN GAVE UP PREDICTING OIL PRICES" IS **GARBLED** - AND CHECKING IT FOUND A HOLE IN '
+ 'THIS BOARD. || WHAT JPM ACTUALLY DID: on 17 September **NATASHA KANEVA**, head of global commodities strategy, wrote '
+ 'verbatim "For the first time since the start of the Iran conflict, we don\'t have a baseline view. We simply don\'t '
+ 'know how to model the endgame." THAT IS ABOUT A **WAR SCENARIO**, NOT THE OIL FORECAST. In the SAME note JPM put '
+ 'fair value at **$90 a barrel**, and its published forecast page of 16 July is still live: Brent to average "$86 per '
+ 'barrel in the third quarter of 2026, $80 in the fourth quarter and $78 at year end". 💡 TRACE THE DRIFT: CNBC said '
+ '"gives up forecasting **Iran war endgame**"; an aggregator turned it into "oil impossible to forecast"; the line '
+ 'that reached us was "gave up predicting oil prices". SAME DISEASE AS THE NVIDIA AND MEMORY POSTS. 🎯 AND CREDIT TO '
+ 'KANEVA: SHE NAMED THE THRESHOLDS SHE ASSUMED WOULD END THE WAR - OIL ABOVE $100, PETROL NEAR $5, THE TEN-YEAR ABOVE '
+ '5% - WATCHED THEM ALL BE CROSSED, AND SAID SO. THAT IS EXACTLY WHAT THIS BOARD DEMANDS OF ITSELF. || ⚠️⚠️ THE REAL '
+ "FINDING IS OURS, NOT JPM'S. **BRENT IS $104.63, UP 52.64% IN TWELVE MONTHS FROM $68.12.** The EIA reports **6.7 "
+ 'MILLION BARRELS A DAY OF PRODUCTION SHUT IN** in August on Strait of Hormuz and Bab el-Mandeb disruption; the IEA '
+ 'cut world oil demand by 2.5 million barrels a day for 2026. **AND THIS 94-NAME BOARD OWNS ZERO OIL AND GAS - I '
+ 'CHECKED NINETEEN MAJOR TICKERS AND FOUND NONE.** Group 6 is ELECTRICITY, not oil. That is a consequence of an AI '
+ 'mandate, but IT HAS NEVER BEEN WRITTEN DOWN AS A DECISION. || 🎯 AND A HYPOTHESIS I OWE SALEE, LABELLED AS ONE. He '
+ 'asked two days ago why the Fed hiked on 16 September and I could give only mechanisms. **HERE IS A CANDIDATE I COULD '
+ "NOT SEE THEN: OIL UP 52.6% YEAR ON YEAR FEEDS STRAIGHT INTO INFLATION**, and JPM's own crossed-threshold list "
+ 'includes petrol near $5 a gallon. A central bank facing energy-driven inflation raises rates even into a soft '
+ 'economy. ⚠️ **NO SOURCED CAUSE FOUND** - I have no Fed statement saying this and I am not asserting it. It goes on '
+ '10 December as a question. || ACTION: **WRITE THE ZERO-OIL DECISION DOWN** - either a deliberate exclusion or an '
+ 'unintended gap. Either answer is fine; having no answer is the same absence-of-a-decision fault as ARM, SNPS, LHX, '
+ 'APP and SE. || 💡 AND A THAI POST ON EATON REACHES THE SAME CONCLUSION WE REACHED YESTERDAY: "if you\'re going to '
+ 'build a data centre, Eaton is definitely part of it." CORRECT - our own count put **EATON IN FOUR OF EIGHT '
+ 'SYSTEMS**, behind only Vertiv at five. We already own it: $11,000 approved, $7,879.55 invested, 12.75% net margin. '
+ '⚠️ But breadth is not dominance - it sits beside Schneider, ABB and Siemens in every box, and it did not make the '
+ 'top twenty of our 81-name moat ranking. SECOND TIME IN TWO DAYS AN OUTSIDE SOURCE HAS LANDED ON A POSITION WE '
+ 'ALREADY HOLD. TWENTY-TWO SLIDES IN: WE ARE NOT SHORT OF IDEAS, WE ARE SHORT OF ORDERS. || NOTHING BOUGHT, NOTHING '
+ 'SOLD. || PREVIOUS ENTRY: Sep 18, 2026 (10) - 🎯 THE NASDAQ 23-HOUR POST IS **TRUE**, AND IT IS THE FIRST ANONYMOUS '
+ '"[BREAKING]" POST THIS MONTH THAT HAS CHECKED OUT. SEC RELEASE 34-105199 OF 10 APRIL 2026 APPROVED NASDAQ TO TRADE '
+ '"NMS stocks and exchange traded products 23 hours per day, five days per week", AND NASDAQ\'S OWN FAQ SAYS IT IS '
+ '"currently expected to occur on Sunday, December 6, 2026". Night session "9:00PM ET" to "4:00AM ET", a one-hour '
+ 'industry pause 8-9pm ET daily, ALL NMS STOCKS - and NYSE Arca, Cboe EDGX, MEMX and 24X are all approved for the same '
+ "date. The post's only understatement is that this is INDUSTRY-WIDE, not Nasdaq alone. || 🎯 WHAT IT MEANS HERE: THE "
+ 'NIGHT SESSION IS **09:00 TO 16:00 BANGKOK**. 💡 FOR THE FIRST TIME SALEE COULD PLACE US ORDERS OVER BREAKFAST INSTEAD '
+ 'OF AT MIDNIGHT. ⚠️⚠️ AND THAT IS ALSO THE TRAP: **THE HOURS COMFORTABLE FOR BANGKOK ARE THE WORST HOURS IN THE '
+ 'MARKET.** FINRA Rule 2265 makes brokers warn, verbatim, of "lower liquidity", "greater volatility" and "wider than '
+ 'normal spreads", and that extended-hours prices "may not reflect the prices either at the end of regular trading '
+ 'hours". MARKET ORDERS ARE BARRED FROM THE OVERNIGHT SESSION BY THE EXCHANGES THEMSELVES - LIMIT ONLY - and the '
+ 'corollary is that a limit may simply NOT FILL with no fallback. || ⚠️ THE QUESTION SALEE MUST ASK POEMS, BECAUSE IT '
+ 'IS NOT SOURCEABLE: **DOES POEMS SUPPORT THE NEW OVERNIGHT SESSION?** An exchange extending its hours obliges no '
+ 'broker. POEMS today offers "4:00 am to 9:30 am ET" and "4:00 pm to 8:00 pm ET" - **THAT STOPS AT 8PM NEW YORK AND '
+ 'DOES NOT COVER THE NEW 9PM-4AM WINDOW.** And do not confuse it with POEMS\' "US Asian Hours", which is NOT exchange '
+ 'trading - Phillip "acts as principal", 100 stocks and 4 ETFs, its own bid-offer. || ⚠️⚠️ AND A CORRECTION TO MY OWN '
+ 'STANDING NOTE, RECORDED BEFORE IT CATCHES US. THIS BOARD SAYS "BANGKOK = NEW YORK + 11". THAT IS TRUE ONLY IN THE '
+ 'AMERICAN SUMMER. **ON SUNDAY 1 NOVEMBER 2026 US CLOCKS GO BACK AND IT BECOMES PLUS TWELVE.** THE US REGULAR SESSION '
+ 'MOVES FROM 20:30-03:00 BANGKOK TO **21:30-04:00 BANGKOK**, AND MY STANDING ADVICE TO PLACE ORDERS BETWEEN 20:30 AND '
+ '22:00 BECOMES **21:30 TO 23:00**. A DAY ORDER PLACED AT 20:45 ON 2 NOVEMBER WOULD BE FORTY-FIVE MINUTES BEFORE THE '
+ 'OPEN, NOT FIFTEEN AFTER. THIS BOARD HAS LOST MONEY TO A MISREAD PRICE ONCE THIS MONTH; LOSING IT TO A MISREAD CLOCK '
+ 'WOULD BE WORSE BECAUSE IT IS ENTIRELY AVOIDABLE. || NOTHING ELSE CHANGES. WE PLACE LIMIT ORDERS AGAINST WRITTEN '
+ 'SCHEDULE ROWS - THE CLOCK DOES NOT ALTER THE METHOD. || PREVIOUS ENTRY: Sep 18, 2026 (9) - 🎯 THE MICROREACTOR SLIDE '
+ 'IS HONEST ENGINEERING, AND THE ANSWER IS ALREADY ON OUR BOARD. It carries NO ticker, NO price and NO target, labels '
+ 'itself "conceptual", and says outright that "\'LITTLE PUPPY\' IS OUR NICKNAME - NOT A TECHNICAL CLASSIFICATION" and '
  '"SMALLER DOES NOT MEAN \'NO SAFETY REQUIREMENTS\'". SECOND SLIDE IN TWO DAYS THAT TEACHES RATHER THAN SELLS. || ITS '
  'LEFT PANEL - VARIABLE GENERATION VERSUS FIRM GENERATION - IS THE BEST SINGLE EXPLANATION THIS BOARD HAS SEEN OF WHY '
  'GROUP 6 EXISTS. A DATA CENTRE CANNOT PAUSE WHEN A CLOUD PASSES, SO IT PAYS A PREMIUM FOR THE FLAT LINE. THE PREMIUM '
@@ -10609,6 +10636,59 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'SAVED MOST OF THIS. CONVICTION HIGH. WHAT WOULD CHANGE MY MIND: A MARKET-WIDE FALL THAT MAKES '
                     'HOLDING CASH LOOK LIKE JUDGEMENT RATHER THAN DELAY - AND THAT HAS NOT HAPPENED.'},
            {'d': '2026-12-10',
+            'dl': '⚠️⚠️ JP MORGAN DID NOT GIVE UP ON OIL PRICES - and checking it found a HOLE IN THIS BOARD',
+            't': 'CASH',
+            'k': 'thesis',
+            'a': 'DECIDE',
+            'amt': 0,
+            'c': 'open',
+            'w': 'THE CLAIM IS GARBLED. JPM ABANDONED ITS BASELINE FOR THE **IRAN WAR ENDGAME**, NOT ITS OIL FORECAST '
+                 '- AND IN THE SAME NOTE STILL PUT FAIR VALUE AT $90. ⚠️⚠️ THE REAL FINDING: BRENT IS AT ~$104, **UP '
+                 '52.64% IN TWELVE MONTHS**, AND THIS 94-NAME BOARD HAS **ZERO OIL AND GAS EXPOSURE**.',
+            'cond': 'WHAT ACTUALLY HAPPENED, AND IT IS A TEXTBOOK CASE OF A HEADLINE WIDENING AT EVERY RETELLING. On '
+                    "Thursday 17 September 2026, **NATASHA KANEVA**, J.P. Morgan's head of global commodities "
+                    'strategy, wrote in the Oil Markets Weekly, verbatim: "For the first time since the start of the '
+                    'Iran conflict, we don\'t have a baseline view. We simply don\'t know how to model the endgame." '
+                    'AND: "Six months later, many of those lines have been crossed, yet the exit strategy is less '
+                    'clear, not more." || ⚠️ THAT IS A STATEMENT ABOUT A **WAR SCENARIO**, NOT ABOUT THE OIL PRICE '
+                    'FORECAST PRODUCT. IN THE SAME NOTE JPM PUT SEPTEMBER FAIR VALUE AT **$90 A BARREL** AGAINST BRENT '
+                    'TRADING AT $106. AND ITS PUBLISHED FORECAST PAGE IS STILL LIVE, DATED 16 JULY 2026: "J.P. Morgan '
+                    'Global Research now forecasts Brent crude to average $86 per barrel in the third quarter of 2026, '
+                    '$80 in the fourth quarter and $78 at year end", REVERTING TOWARD "a $60/bbl price regime... in '
+                    'the second half of 2027". THE FORECAST EXISTS. IT HAS NOT BEEN WITHDRAWN. || 💡 TRACE THE DRIFT, '
+                    'BECAUSE IT IS THE SAME DISEASE AS THE NVIDIA AND MEMORY POSTS. CNBC: "gives up forecasting **Iran '
+                    'war endgame**". Then an aggregator: "Iran War Has Made **Oil Impossible to Forecast**". Then the '
+                    'one-liner that reached this board: "**JP Morgan give up prediction on oil price**". EACH STEP '
+                    'WIDENED THE SCOPE AND DROPPED A QUALIFIER. THE ORIGINAL WAS NARROW AND HONEST; THE VERSION THAT '
+                    'ARRIVED WAS NEITHER. || 🎯 AND CREDIT WHERE IT IS DUE - **ADMITTING YOU CANNOT MODEL SOMETHING IS '
+                    'GOOD RESEARCH, NOT BAD.** Kaneva named the thresholds she had assumed would end the war (oil '
+                    'above $100, petrol near $5 a gallon, the ten-year yield above 5%), watched them all be crossed '
+                    'with no resolution, and said so publicly. THAT IS EXACTLY WHAT THIS BOARD DEMANDS OF ITSELF - '
+                    'state what would prove you wrong, and say so when it happens. NO OTHER BANK OR AGENCY WAS FOUND '
+                    'DOING ANYTHING SIMILAR. || ⚠️⚠️ NOW THE PART THAT MATTERS TO US, AND IT IS NOT ABOUT JP MORGAN. '
+                    '**BRENT IS $104.63 AND WTI $103.33 AS OF 18 SEPTEMBER. BRENT IS UP 52.64% IN TWELVE MONTHS, FROM '
+                    '$68.12.** The EIA reports crude production shut-ins averaging **6.7 million barrels a day in '
+                    'August** on Strait of Hormuz and Bab el-Mandeb disruption, and warns of "more volatility in '
+                    'short-term price movements than our forecast indicates". The IEA cut world oil demand by **2.5 '
+                    'million barrels a day for 2026**. || **AND THIS BOARD OWNS NONE OF IT. I CHECKED NINETEEN MAJOR '
+                    'OIL AND GAS TICKERS - EXXON, CHEVRON, CONOCO, SCHLUMBERGER, OCCIDENTAL, THE REFINERS, THE '
+                    'PIPELINES - AND FOUND ZERO ON A 94-NAME BOARD.** Group 6 is ELECTRICITY, not oil. THAT IS A '
+                    'DELIBERATE CONSEQUENCE OF A PILLAR-4 MANDATE BUILT AROUND AI, BUT IT HAS NEVER BEEN WRITTEN DOWN '
+                    "AS A DECISION, AND A 52% MOVE IN THE WORLD'S MOST IMPORTANT COMMODITY IS THE MOMENT TO WRITE IT. "
+                    '|| 🎯 AND A HYPOTHESIS I OWE SALEE, CLEARLY LABELLED AS A HYPOTHESIS AND NOT A SOURCED CAUSE. TWO '
+                    'DAYS AGO HE ASKED WHY THE FED RAISED RATES ON 16 SEPTEMBER AND I GAVE HIM MECHANISMS BECAUSE NO '
+                    'TIER-ONE SOURCE WAS RETRIEVABLE. **HERE IS A CANDIDATE I COULD NOT SEE THEN: OIL UP 52.6% YEAR ON '
+                    "YEAR FEEDS STRAIGHT INTO INFLATION**, and JPM's own list of crossed thresholds includes petrol "
+                    'near $5 a gallon. A CENTRAL BANK FACING ENERGY-DRIVEN INFLATION RAISES RATES EVEN INTO A SOFT '
+                    'ECONOMY. ⚠️ I HAVE NOT SOURCED ANY FED STATEMENT SAYING THIS AND I AM NOT ASSERTING IT. **NO '
+                    'SOURCED CAUSE FOUND.** But it is the most plausible single explanation available and it belongs '
+                    'on the record as a question for 10 December. || ACTION FOR 10 DECEMBER: **WRITE THE ZERO-OIL '
+                    'DECISION DOWN.** Either (a) confirm that Pillar 4 deliberately excludes energy because the '
+                    "mandate is the AI value chain and oil is covered elsewhere in Salee's life, or (b) decide it is "
+                    'an unintended gap. EITHER ANSWER IS FINE. HAVING NO ANSWER IS NOT - it is the same '
+                    'absence-of-a-decision fault as ARM, SNPS, LHX, APP and SE. CONVICTION HIGH ON WRITING IT DOWN, '
+                    'NEUTRAL ON WHICH WAY IT GOES.'},
+           {'d': '2026-12-10',
             'dl': 'Quarterly review - back-up name',
             't': 'CDNS',
             'k': 'trigger',
@@ -11047,6 +11127,35 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'EITHER TEST TODAY, AND THE CLOSEST - COREWEAVE AT 3.4 TIMES - IS STILL 70% ABOVE THE LIMIT. UNTIL '
                     'BOTH ARE TRUE, OUR AI-INFRASTRUCTURE EXPOSURE IS THE SIX HYPERSCALERS AND CHIPMAKERS AT THE TOP '
                     'OF THE SLIDE, WHICH FUND THIS BUILD-OUT FROM PROFITS RATHER THAN FROM BORROWING.'},
+           {'d': '2026-12-10',
+            'dl': '💡 A THAI POST REACHES THE SAME EATON CONCLUSION WE REACHED YESTERDAY - and it is right',
+            't': 'ETN',
+            'k': 'thesis',
+            'a': 'WATCH',
+            'amt': 0,
+            'c': 'confirmed',
+            'w': '"IF YOU\'RE GOING TO BUILD A DATA CENTRE, EATON IS DEFINITELY PART OF IT." THAT IS CORRECT, AND IT '
+                 "IS EXACTLY WHAT YESTERDAY'S DATA-CENTRE MAP SHOWED: **EATON APPEARS IN FOUR OF THE EIGHT SYSTEMS**. "
+                 'WE ALREADY OWN IT - $11,000 APPROVED, $7,879.55 INVESTED, $3,120.45 UNSPENT.',
+            'cond': 'A SHORT ROW, BECAUSE THE WORK IS ALREADY DONE AND THE POST SIMPLY AGREES WITH IT. || YESTERDAY '
+                    'THIS BOARD COUNTED THE BOXES ON A DATA-CENTRE SUPPLY MAP AND FOUND **VERTIV IN FIVE OF EIGHT '
+                    'SYSTEMS AND EATON IN FOUR** - medium-voltage power distribution, low-voltage power distribution, '
+                    'building automation and server cabinets - with no other US-listed company appearing more than '
+                    'twice. THE POST ARRIVES AT THE SAME CONCLUSION FROM INTUITION RATHER THAN COUNTING, AND ARRIVES '
+                    "CORRECTLY. || EATON'S NUMBERS ON THIS BOARD AT THE 17 SEPTEMBER CLOSE OF $409.46: REVENUE "
+                    '$30.03bn, GROSS MARGIN 36.1%, NET MARGIN 12.75%. A REAL, PROFITABLE, CASH-GENERATIVE INDUSTRIAL '
+                    'COMPANY - NOT A STORY. || ⚠️ TWO HONEST QUALIFICATIONS THE POST DOES NOT MAKE. FIRST, **EATON IS '
+                    'NOT A MONOPOLY AND THE MAP SHOWS WHY** - in every box it appears in, it sits alongside Schneider '
+                    'Electric, ABB and Siemens, all of them large and serious. BREADTH IS NOT DOMINANCE. SECOND, A '
+                    '12.75% NET MARGIN IS SOLID FOR AN INDUSTRIAL BUSINESS BUT IT IS NOT A SOFTWARE MARGIN - EATON DID '
+                    "NOT MAKE THE TOP TWENTY OF THIS BOARD'S 81-NAME MOAT RANKING. IT IS A GOOD BUSINESS AT A FAIR "
+                    'PRICE, WHICH IS A DIFFERENT AND MORE DURABLE THING THAN A GREAT STORY. || 💡 AND THE POINT WORTH '
+                    'KEEPING: THIS IS THE **SECOND TIME IN TWO DAYS** THAT AN OUTSIDE SOURCE HAS ARRIVED AT A POSITION '
+                    'WE ALREADY HOLD - after the microreactor slide pointed at firm power and we already held CEG and '
+                    'VST. TWENTY-TWO SLIDES IN, THE PATTERN HAS NOT CHANGED: **THE GOOD IDEAS ON THESE SLIDES ARE '
+                    'MOSTLY IDEAS WE HAVE ALREADY HAD.** What we are short of is not ideas. It is orders. NOTHING TO '
+                    'BUY - ETN HAS $3,120.45 LEFT AND NO ROW SCHEDULED, WHICH ITSELF GOES ON THE DEPLOYMENT-DEADLINE '
+                    'LIST.'},
            {'d': '2026-12-10',
             'dl': 'REJECTED FOR NOW - re-underwrite test written',
             't': 'FORM',
