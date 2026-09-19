@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>P4 Slide Library</title>
+<style>
+:root{--green:#1e7b34;--red:#c00000;--amber:#b06a00;--ink:#1a1a2e;--mut:#667;--bg:#f4f6fa;--card:#fff;--line:#dde3ee;--blue:#1f3864}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 -apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+header{background:var(--blue);color:#fff;padding:14px 16px;position:sticky;top:0;z-index:5}
+header h1{margin:0;font-size:22px}
+header .sub{font-size:13px;opacity:.85;margin-top:3px}
+header a{color:#cfe0ff}
+.wrap{max-width:900px;margin:0 auto;padding:14px}
+#search{width:100%;font-size:20px;padding:13px 16px;border:2px solid var(--line);border-radius:14px;background:var(--card);margin:4px 0 12px}
+#search:focus{outline:none;border-color:var(--blue)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.chip{border:1.5px solid var(--line);background:var(--card);border-radius:20px;padding:8px 14px;font-size:15px;cursor:pointer;user-select:none}
+.chip.on{background:var(--blue);color:#fff;border-color:var(--blue)}
+.note{background:#fff8e6;border:1.5px solid #f0d089;border-radius:12px;padding:12px 14px;margin-bottom:16px;font-size:15px}
+h2{font-size:19px;margin:24px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--line)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:12px}
+.card .top{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px;margin-bottom:6px}
+.card .dt{font-size:13px;color:var(--mut);font-variant-numeric:tabular-nums}
+.card .ttl{font-weight:700;font-size:17px}
+.badge{font-size:12px;font-weight:700;padding:3px 9px;border-radius:20px;white-space:nowrap}
+.b-act{background:#e3f5e8;color:var(--green)}
+.b-rule{background:#fdf0dc;color:var(--amber)}
+.b-none{background:#eef1f6;color:var(--mut)}
+.b-wrong{background:#fbe6e6;color:var(--red)}
+.claim{font-size:15px;color:var(--mut);font-style:italic;margin:4px 0 8px}
+.verdict{font-size:16px}
+.verdict b{color:var(--blue)}
+.img{margin-top:10px}
+.img a{font-size:14px;color:var(--blue);text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:5px 10px;display:inline-block;background:#fafbfd}
+.foot{color:var(--mut);font-size:14px;margin:26px 0 40px;text-align:center}
+.hide{display:none}
+@media(max-width:560px){body{font-size:16px}.wrap{padding:10px}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Slide Library</h1>
+  <div class="sub">Every infographic, filed by industry — with the verdict, not just the picture &nbsp;·&nbsp; <a href="index.html">← Dashboard</a></div>
+</header>
+<div class="wrap">
+
+<input id="search" placeholder="Search a slide, a company, a verdict…" autocomplete="off">
+<div class="chips" id="chips"></div>
+
+<div class="note">
+<b>⚠️ Why the verdict matters more than the picture.</b> Images sent to a chat are cleared after a few days — when this library was built, only 8 of ~33 pictures survived. Every <i>verdict</i> survived, because it was written down the same day.
+<b>So: send a slide and ask Claude to file it that day.</b> After that, only the analysis can be recovered.
+</div>
+
+<div id="list"></div>
+
+<div class="foot">
+Filed by Claude · Not licensed financial advice · Every buy and sell is Salee's to execute at POEMS
+</div>
+</div>
+
+<script>
+const V={act:['🟢','Acted on','b-act'],rule:['🟡','Changed a rule','b-rule'],none:['🔴','No action','b-none'],wrong:['⚫','Factually wrong','b-wrong']};
+const CATS=['Semiconductor','AI infrastructure','Power & energy','Biotech','Defence & space','Market structure','Valuation & method'];
+const D=[
+{c:0,d:'19 Sep',t:'Semiconductors by market cap',v:'rule',img:'slides/01-semiconductor-industry/2026-09-19-semiconductors-by-market-cap.png',
+ claim:'NVDA $5.2T dominates; "AI is lifting the entire stack"',
+ x:'Figures check out against our board within ~10%, mostly slightly stale — NVDA $5.2T vs our $5.31T, LRCX and AMAT exact. <b>But Arista makes network switches and SanDisk makes memory — neither is a chip designer</b>, and <b>CXMT ($565B) is Chinese and cannot be bought through POEMS</b>. And a size chart is not a ranking: <b>NVIDIA is 24× ASML\'s market value, and ASML is the one company nobody can replace.</b>'},
+{c:0,d:'18 Sep',t:'Global semiconductor equipment supply chain (23 names, 5 layers)',v:'rule',
+ claim:'5 key segments powering the chip industry',
+ x:'The answer I owed from days earlier. We own <b>6 of 23</b> — $93,000 approved, <b>$55,341 unspent</b>. Very good plan for layers 1–3 (ASML, LRCX, AMAT, KLAC); <b>zero budget in Layer 4, zero exposure to Layer 5</b>. 💡 Found <b>the margin cascade</b>: KLAC 35.6% → ASML 30.1% → TER 22.6% → AMKR 6.2% → UCTT 1.4% → <b>ICHR 0.3%</b>. Margins fall as you move away from the scarce thing.'},
+{c:0,d:'18 Sep',t:'"Intel CEO confirms memory crisis — prices up 5–7×"',v:'wrong',
+ claim:'Memory prices up 5–7×, worst in 2027',
+ x:'<b>True backwards, false forwards.</b> ~5× is right for conventional DRAM <i>contract</i> prices over four quarters; <b>7× is unsupported</b>. The quarterly rises go <b>+93–98% → +58–63% → +13–18%</b> — the acceleration is gone. NAND goes the <i>other</i> way in 2027; HBM never inflated at all. <b>Intel sold its NAND business — it buys memory, it doesn\'t make it.</b> Traces to one AI-translated Korean page. 🟡 Found an ambiguity in our own Micron condition with 12 days to run.'},
+{c:0,d:'17 Sep',t:'Applied Materials $5bn India',v:'rule',
+ claim:'AMAT investing $5bn over 10 years; $21bn government support',
+ x:'AMAT is core ($22,000 budget). But $500m/year ≈ 22% of one year\'s capex — immaterial. <b>"$21bn government subsidy" is false</b> — that was $21bn of <i>company proposals</i> in Feb 2024. Real finding was ours: <b>revG reads 7.8% trailing while AMAT guides Q4 to +51%</b>.'},
+{c:0,d:'17 Sep',t:'Arm — "AI CPU demand exceeds $2bn"',v:'rule',
+ claim:'Demand above $2bn; supply cannot keep up',
+ x:'True but stripped of three qualifiers: <b>two fiscal years combined, one product, demand not revenue</b>. The real news is the business-model change — Arm now sells finished silicon against its own licensees. <b>307× earnings, 7.1% GAAP operating margin, 87% SoftBank-owned, 57% of revenue from five customers.</b> Zero budget — now a decision rather than neglect.'},
+{c:1,d:'19 Sep',t:'AI Cloud middle layer "eats the margin"',v:'wrong',img:'slides/02-ai-infrastructure-datacentre/2026-09-19-ai-cloud-middle-layer-margin.png',
+ claim:'The AI-cloud middleman collects the compute margin',
+ x:'<b>Exactly backwards, and our own board proves it.</b> Bottom (suppliers) NVDA <b>+63.66%</b>, MU +55.91%. Top (customers) MSFT +40.3%, GOOGL +37.9%. <b>Middle: CRWV −25.4%, NBIS −32.7%, IREN −99.4% — every one loses money.</b> 💡 Why it fools people: their <i>gross</i> margins are superb (67–77%). The money dies below the gross line — <b>GPU depreciation and interest on the debt that bought them.</b> We own none of the middle layer and banked <b>+$1,074.73</b> exiting it.'},
+{c:1,d:'18 Sep',t:'Data Center Power, Security & Cooling map',v:'act',
+ claim:'Eight systems in a data centre and who supplies each',
+ x:'<b>The best slide of the series</b> — a map of a building, not a list of stocks. I counted the boxes: <b>Vertiv appears in 5 of 8 systems, Eaton in 4</b>, nobody else more than twice. We own both. And the uncomfortable finding: Schneider, ABB, Siemens, Hitachi, Mitsubishi, Legrand are all foreign — <b>the physical data centre is largely a European and Japanese business, and this board is US-only by design.</b>'},
+{c:1,d:'18 Sep',t:'Companies Building the Next Decade (16 names)',v:'rule',
+ claim:'Chips → energy → infrastructure → platforms',
+ x:'13 of 16 already ours; the 8 we own are <b>47% of all invested capital</b>. Structure is right, but it puts <b>Bloom Energy at 194.5× earnings next to NVIDIA at 25.7×</b> and calls them the same thing. 🟡 <b>Found orphan check No.6</b> while verifying it — eight positions held with no approved budget.'},
+{c:2,d:'19 Sep',t:'Oracle invests in 1.7 GW of wind',v:'wrong',img:'slides/03-power-and-energy/2026-09-19-oracle-1.7gw-wind.png',
+ claim:'Not enough power for AI — Oracle invests 1.7 GW of wind',
+ x:'<b>The number is right, the noun is wrong.</b> These are <b>power purchase agreements, not ownership</b> — RWE\'s own release says "virtual power purchase agreement… for 433 megawatts" on wind farms <b>commissioned in 2008 and 2009. Zero Oracle capex.</b> Immaterial beside <b>$28,499m of capex in one quarter</b> and <b>−$28.7bn trailing free cash flow</b>. 🎯 <b>Oracle is becoming the middle layer</b> — the CoreWeave model at mega-cap scale. 💡 <i>When a company says "invest", ask whether anything appears on its balance sheet.</i>'},
+{c:2,d:'18 Sep',t:'The "Little Puppy" microreactor',v:'act',
+ claim:'Microreactors + battery storage + VPP for data centres',
+ x:'<b>Honest engineering</b> — no ticker, no price, labels itself conceptual. Its firm-vs-variable panel is the best explanation of why we own CEG and VST. But <b>Oklo: $1.21m revenue, 5,520.9× sales, −$276m free cash flow, down 81.4%. Constellation: $29.87bn revenue, 2.93× sales, +$1.12bn free cash flow.</b> One runs reactors today; the other owns a design. 💡 The reactor is <i>one box</i> — the rest is Vertiv / Eaton / GE Vernova territory.'},
+{c:2,d:'18 Sep',t:'OKLO "double bottom alert"',v:'wrong',
+ claim:'Call setup / put setup off 4-hour, 1-hour and 15-minute charts',
+ x:'<b>Not an investment slide — an options day-trading sheet.</b> Its chart tops out at $52 while OKLO\'s all-time high is <b>$193.84</b> — a window that excludes an 81% collapse, then prints "DOUBLE BOTTOM" in green. <b>This board does not trade options.</b>'},
+{c:2,d:'17 Sep',t:'Amazon–Generac deal',v:'wrong',
+ claim:'An "$8 billion deal" between Amazon and Generac',
+ x:'<b>The headline is wrong.</b> The 8-K promises <b>$2.4bn of expected deliveries</b>; the $8bn is the level at which Amazon\'s <i>warrant</i> fully vests. That is 1.1% of Amazon\'s capex guide. 🎯 <b>Third time in a month a supplier paid its customer in equity</b> — after Google at TeraWulf and Cipher. <i>Read the exhibit, not the headline.</i>'},
+{c:3,d:'19 Sep',t:'18 biotech names by theme',v:'none',img:'slides/04-biotech-industry/2026-09-19-18-biotech-names-part1.png',
+ claim:'"Money is flowing into biotech" — 18 names to watch',
+ x:'<b>Interesting as a field, wrong for this board as built.</b> Only 1 of 18 is ours (TEM, no budget). <b>A clinical trial either works or it doesn\'t</b> — a coin flip with a scientific prior, not volatility. The metric that decides survival is <b>cash runway</b>, and the slide gives it for <b>zero of the eighteen</b>. An AI-designed drug passes the same trials — <b>AI can make you fail faster and cheaper; it cannot make biology work.</b> 💡 The list is secretly two: <b>tools (Illumina, Bruker, 10x, Twist, Natera) vs clinical-stage coin flips</b>. 🟡 And it exposed that <b>Group 7 is misnamed</b>.'},
+{c:4,d:'18 Sep',t:'7 defense & aerospace stocks',v:'none',img:'slides/05-defence-and-space/2026-09-18-7-defense-aerospace-stocks.png',
+ claim:'LMT, NOC, GD, RTX, BA, PLTR, AXON benefit from a changing world',
+ x:'<b>Yes defence is interesting — we already decided that, approved $35,000, and spent $5,700.88.</b> <b>Group 9 is the worst-deployed group on the board at 16.3%.</b> And the allocation is backwards: <b>LHX (+8.11% net margin) has $9,000 approved and ZERO invested; RKLB (−21.52%, ranked 80th of 81) holds the largest budget at $15,000.</b> Only Palantir of the seven is ours. <b>Fix the budget we have before adding a name.</b>'},
+{c:4,d:'~Sep',t:'10 stocks for wealth by 2030',v:'rule',
+ claim:'NBIS, NOW, SPCX, RDW, RKLB, ORCL, ASTS, ONDS, ZETA, CRWV',
+ x:'<b>Salee spotted it first</b>: 9 of 10 already ours, we had traded 6. Four of six rose after we sold — NOW <b>+42.7%</b>. But the dates show <i>one July restructure</i>, not six stock calls — and <b>the cash was never redeployed</b>. That finding drove the deployment-deadline rule.'},
+{c:5,d:'18 Sep',t:'Nasdaq 23-hour trading from 6 December',v:'act',
+ claim:'Nasdaq will trade 23 hours a day starting 6 December',
+ x:'<b>TRUE — the first anonymous "[BREAKING]" post that checked out.</b> SEC Release 34-105199, approved 10 April 2026. Night session 9pm–4am ET = <b>09:00–16:00 Bangkok</b>. But those are the <i>thinnest</i> hours — FINRA requires warnings on liquidity, volatility and spreads, and <b>market orders are barred, limit only</b>. 🟡 Also caught my own error: <b>"Bangkok = NY + 11" is only true in the American summer. From 1 November it becomes +12</b> and the session moves to 21:30–04:00.'},
+{c:5,d:'18 Sep',t:'POEMS — Day 2 fills',v:'act',img:'slides/06-market-structure-and-trading/2026-09-18-poems-day2-fills.jpg',
+ claim:'PANW, VRT, GEV order status',
+ x:'All three filled. 🎯 <b>Salee used lower limits than I recommended on all three and still got filled — $407.24 better than my plan.</b> 🟡 Rule restated: <b>+1% is the maximum, not the recommendation</b> — start at or near the last close and only widen if a fill matters more than the price.'},
+{c:5,d:'17 Sep',t:'POEMS — Day 1 fills',v:'act',
+ claim:'TSM, CEG, V order status and positions',
+ x:'TSM, CEG and Visa all filled at or inside their limits — Visa <i>below</i> its own limit. <b>And the reconciliation proved Salesforce was not in the account</b> — two independent arithmetic gaps ($3,749.91 in positions, $5,490.11 in cash) resolved to one unrecorded sale.'},
+{c:6,d:'18 Sep',t:'"3 AI giants — profits soar but P/E collapses"',v:'act',
+ claim:'NVDA >40×→22×, GOOGL 30×→16×, MU 16×→6×',
+ x:'<b>A good slide, and its own conclusion is right</b>: a low P/E alone is not enough. 🎯 <b>MU at 6.99× forward implies the market expects sustainable earnings of just 47% of the run-rate</b> — not a discount, a forecast. Third independent route to the same peak-cycle conclusion in 24 hours. But <b>its GOOGL figure (~16×) is nearly half our board\'s 28.86</b> — and <i>our</i> field is suspect too. 💡 <b>A forward P/E above the trailing P/E is a prediction that earnings will fall.</b>'},
+{c:6,d:'17 Sep',t:'12 monopolies / wide moats (arrived twice)',v:'act',
+ claim:'Twelve companies with unassailable moats',
+ x:'<b>The second arrival finally produced the moat ranking</b> that had sat unrun since August. V ranks <b>2nd of 81</b>, NVDA 3rd, TSM 11th, ASML 13th — the slide is substantially vindicated. But <b>Alphabet is only 24th</b> (a moat costing $132bn a year to defend) and <b>Micron at 6th is a warning, not a recommendation</b>. 💡 Found <b>AppLovin ranked 1st of 81 with an $18,000 budget never spent</b>.'},
+{c:6,d:'17 Sep',t:'Magnificent 7 cash',v:'wrong',
+ claim:'Apple looks cash-poor next to its peers',
+ x:'<b>Measured the wrong line.</b> Apple holds <b>$146,517m</b> — second of the seven — because <b>$84,118m sits in long-term marketable securities that cash charts drop</b>. 💡 On <i>net</i> cash the ranking inverts and <b>Amazon, the chart\'s №2, is $5.9bn in debt</b>. The big piles are working capital for a construction programme, not trophies.'},
+{c:6,d:'18 Sep',t:'"11 stocks you haven\'t missed yet"',v:'wrong',
+ claim:'Eleven stocks still early enough to buy',
+ x:'<b>The worst-made slide yet.</b> SEZL appears <b>twice</b>; <b>Nebius is given Pat Gelsinger as CEO</b>; IREN is labelled "$REN"; <b>AppLovin carries an Apple logo</b>; <b>Micron carries an AMD logo</b>. And every price on it is below the market — a list titled "stocks you haven\'t missed" has already missed them.'},
+{c:6,d:'~Sep',t:'PEG ratio / Lumentum',v:'wrong',
+ claim:'A PEG of 0.32 makes it cheap',
+ x:'<b>PEG is the weakest number on any slide.</b> Separately, LITE\'s −230% net margin proved <b>real</b> — a $7,756.6m non-cash loss on settling convertible notes, while free cash flow was +$300.1m. 💡 <i>An implausible number is not necessarily a wrong number.</i>'},
+{c:6,d:'~Sep',t:'Eight biggest pullbacks from all-time high',v:'none',claim:'Stocks far below their highs = opportunity',x:'Reviewed name by name; no position changes. A large fall is a fact about the price, not a fact about the business.'},
+{c:6,d:'~Sep',t:'Humanoid robots (Musk 1bn / XPeng 10 min)',v:'none',claim:'One billion humanoids within ten years',x:'Vocabulary added to the dictionary — takt time, nameplate capacity, pre-orders vs shipments, disclosed vs asserted. No position changes.'}
+];
+const list=document.getElementById('list'),chips=document.getElementById('chips'),search=document.getElementById('search');
+let cat=-1;
+CATS.forEach((n,i)=>{const b=document.createElement('div');b.className='chip';b.textContent=n;b.onclick=()=>{cat=(cat===i?-1:i);draw()};b.dataset.i=i;chips.appendChild(b)});
+const all=document.createElement('div');all.className='chip on';all.textContent='All';all.onclick=()=>{cat=-1;draw()};chips.insertBefore(all,chips.firstChild);
+function draw(){
+  [...chips.children].forEach((c,n)=>c.classList.toggle('on', n===0?cat===-1:cat===n-1));
+  const q=search.value.trim().toLowerCase();
+  let html='',last=-1;
+  D.forEach(s=>{
+    if(cat>=0&&s.c!==cat)return;
+    if(q&&!(s.t+' '+s.claim+' '+s.x).toLowerCase().includes(q))return;
+    if(s.c!==last){html+='<h2>'+CATS[s.c]+'</h2>';last=s.c}
+    const v=V[s.v];
+    html+='<div class="card"><div class="top"><span class="dt">'+s.d+'</span><span class="ttl">'+s.t+'</span>'
+      +'<span class="badge '+v[2]+'">'+v[0]+' '+v[1]+'</span></div>'
+      +'<div class="claim">“'+s.claim+'”</div><div class="verdict">'+s.x+'</div>'
+      +(s.img?'<div class="img"><a href="'+s.img+'" target="_blank">🖼 Open the slide</a></div>':'')
+      +'</div>';
+  });
+  list.innerHTML=html||'<div class="card">Nothing matches that search.</div>';
+}
+search.oninput=draw;draw();
+</script>
+</body>
+</html>
