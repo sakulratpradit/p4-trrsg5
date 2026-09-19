@@ -3,11 +3,32 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Sep 18, 2026 (12) - 🎯 "IS DEFENCE INTERESTING?" **YES - AND THIS BOARD ALREADY DECIDED THAT, APPROVED $35,000 FOR '
- 'IT, AND THEN SPENT $5,700.88.** GROUP 9 IS THE WORST-DEPLOYED GROUP ON THE ENTIRE BOARD AT **16.3% DEPLOYED, '
- '$29,299.12 UNSPENT**. The next worst is Group 8 at 25.4%; the best is Group 0 at 84.8%. || 🎯 WHY DEFENCE IS '
- "GENUINELY INTERESTING FOR **US** SPECIFICALLY: ROUGHLY 60% OF THIS BOARD'S INVESTED CAPITAL IS THE AI VALUE CHAIN, "
- 'SO IF HYPERSCALER CAPEX SLOWS ALMOST EVERYTHING WE OWN FALLS TOGETHER. DEFENCE IS FUNDED BY GOVERNMENT '
+ASOF = ('Sep 19, 2026 - ✅✅ **ALL THREE DAY-2 ORDERS FILLED, AND SALEE BEAT MY LIMITS BY $407.24.** PANW 16 at $357.6224, VRT '
+ '26 at $242.50, GEV 8 at $931.00 - total $19,500.64 including $25.68 of commission. || 🎯 THE THING WORTH RECORDING IS '
+ '**HOW** THEY FILLED. I gave three limits at the 17 September close plus 1%: PANW $379.21, VRT $243.90, GEV $934.18. '
+ '**SALEE USED $358.30, $242.50 AND $931.00 - LOWER ON EVERY ONE - AND EVERY ONE FILLED.** PANW alone came in $345.40 '
+ 'better than my ceiling; VRT $36.40; GEV $25.44. **$407.24 BETTER THAN THE PLAN I WROTE**, just over 2% on the order. '
+ "💡 AND PANW FILLED AT $357.6224, BELOW SALEE'S OWN LIMIT - the second time in two sessions after Visa at $369.5165 "
+ 'against a $369.80 limit. || 🎯 THE LESSON CUTS AGAINST ME: **MY PLUS-1% RULE IS A SAFETY MARGIN, NOT A TARGET.** I '
+ 'had been treating last close plus 1% as the right limit; it is the WIDEST limit that is still safe. Salee set '
+ 'tighter ceilings, accepted the non-fill risk, and was paid $407.24 for it. RESTATED FOR THE METHOD: **PLUS 1% IS THE '
+ 'MAXIMUM, NOT THE RECOMMENDATION - START AT OR NEAR THE LAST CLOSE AND ONLY WIDEN IF A FILL MATTERS MORE THAN THE '
+ 'PRICE.** || POSITIONS NOW: PANW 38 shares at $9,491.14 of a $11,000 budget - **effectively fully deployed, $1,508.86 '
+ 'left, four shares**. VRT 40 shares at $9,838.00 of $21,000, leaving $11,162.00. GEV 10 shares at $9,603.86 of '
+ '$13,000, leaving $3,396.14. || 🎯 **THE SIX-NAME PLAN IS COMPLETE.** Across 17 and 18 September, **$44,867.67 MOVED '
+ 'FROM CASH INTO SIX COMPANIES, EVERY ONE AT OR INSIDE ITS LIMIT** - TSM, CEG, V on Thursday; PANW, VRT, GEV on '
+ 'Friday. INVESTED CAPITAL RISES TO **$612,783.30, 61.3% OF THE BOARD AND THE HIGHEST IT HAS EVER BEEN**; CASH FALLS '
+ "TO $197,946.74, UNDER $200,000 FOR THE FIRST TIME. After a month of me writing that this board's real fault was the "
+ 'distance between a decision and an order, SALEE CLOSED THAT DISTANCE TWICE IN TWO DAYS. || ⚠️ CASH IS COMPUTED FROM '
+ "THE POEMS ORDER SCREEN, NOT READ FROM A BALANCE SCREEN. The executed prices and quantities are POEMS' own and $8.56 "
+ 'is the known flat commission, so the arithmetic is sound - but the last time I assumed a cash figure this board was '
+ 'carrying a phantom Salesforce position. **SEND THE POEMS CASH AND POSITIONS SCREEN AND I WILL RECONCILE TO THE '
+ 'PENNY.** ⚠️ AND THE SALESFORCE LOOKUP IS STILL OUTSTANDING - lifetime realised remains understated by roughly '
+ '$1,740. || PREVIOUS ENTRY: Sep 18, 2026 (12) - 🎯 "IS DEFENCE INTERESTING?" **YES - AND THIS BOARD ALREADY DECIDED '
+ 'THAT, APPROVED $35,000 FOR IT, AND THEN SPENT $5,700.88.** GROUP 9 IS THE WORST-DEPLOYED GROUP ON THE ENTIRE BOARD '
+ 'AT **16.3% DEPLOYED, $29,299.12 UNSPENT**. The next worst is Group 8 at 25.4%; the best is Group 0 at 84.8%. || 🎯 '
+ "WHY DEFENCE IS GENUINELY INTERESTING FOR **US** SPECIFICALLY: ROUGHLY 60% OF THIS BOARD'S INVESTED CAPITAL IS THE AI "
+ 'VALUE CHAIN, SO IF HYPERSCALER CAPEX SLOWS ALMOST EVERYTHING WE OWN FALLS TOGETHER. DEFENCE IS FUNDED BY GOVERNMENT '
  "APPROPRIATIONS, NOT BY FOUR COMPANIES' CAPEX DECISIONS - **THE ONE THING ON THIS BOARD THAT DOES NOT DEPEND ON THAT "
  "BET.** Together with this morning's zero-oil finding, the two start to look like one fault: EVERYTHING WE OWN IS THE "
  'SAME BET. || ⚠️⚠️ AND THE ALLOCATION INSIDE GROUP 9 IS BACKWARDS. **L3HARRIS - NET MARGIN PLUS 8.11%, P/E 25.35 - '
@@ -7139,8 +7160,8 @@ POS = {'GOOGL': {'budget': 78000, 'cost': 59475.92, 'shares': 217},
  'ETN': {'budget': 11000, 'cost': 7879.55, 'shares': 19},
  'VST': {'budget': 15000, 'cost': 8133.29, 'shares': 57},
  'CEG': {'budget': 17000, 'cost': 9869.13, 'shares': 37},
- 'VRT': {'budget': 21000, 'cost': 3524.44, 'shares': 14},
- 'GEV': {'budget': 13000, 'cost': 2147.3, 'shares': 2},
+ 'VRT': {'budget': 21000, 'cost': 9838.0, 'shares': 40},
+ 'GEV': {'budget': 13000, 'cost': 9603.86, 'shares': 10},
  'BWXT': {'budget': None, 'cost': None, 'shares': None},
  'MPWR': {'budget': None, 'cost': None, 'shares': None},
  'OKLO': {'budget': None, 'cost': None, 'shares': None},
@@ -7175,7 +7196,7 @@ POS = {'GOOGL': {'budget': 78000, 'cost': 59475.92, 'shares': 217},
  'SHOP': {'budget': None, 'cost': None, 'shares': None},
  'SE': {'budget': 13000, 'cost': None, 'shares': None},
  'CRWD': {'budget': None, 'cost': 3914.12, 'shares': 40},
- 'PANW': {'budget': 11000, 'cost': 3760.62, 'shares': 22},
+ 'PANW': {'budget': 11000, 'cost': 9491.14, 'shares': 38},
  'NET': {'budget': None, 'cost': None, 'shares': None},
  'FTNT': {'budget': None, 'cost': None, 'shares': None},
  'APP': {'budget': 18000, 'cost': None, 'shares': None},
@@ -7678,9 +7699,9 @@ TRADES = [{'date': 'Jul 21, 2026',
 SELLPLAN = ['ZETA', 'CRM', 'QCOM', 'FN']
 
 CASH = {'currency': 'USD',
- 'amount': 217447.38,
+ 'amount': 197946.74,
  'broker': 'POEMS (Phillip Securities)',
- 'asof': 'Sep 17, 2026 close (POEMS live balance)'}
+ 'asof': 'Sep 18, 2026 close (computed from POEMS executed prices)'}
 
 REALIZED = [{'t': 'NBIS', 'g': 5, 'amount': 1404.52},
  {'t': 'IREN', 'g': 5, 'amount': 456.24},
@@ -8465,7 +8486,7 @@ M3 = {'GOOGL': {'pfcf': 73.06, 'ev': 21.6, 'de': 0.18},
  'CIEN': {'pfcf': None, 'ev': None, 'de': None}}
 
 SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
- 'updated': 'Sep 18, 2026',
+ 'updated': 'Sep 19, 2026',
  'note': '⚠️ READ THIS FIRST. On 10 Sep 2026 the board was restructured to 10 groups, 38 funded names, 5 back-up names '
          'and 13 sells, and ALL 38 budgets were reset. EVERY AMOUNT WRITTEN IN A ROW DATED BEFORE 10 SEP 2026 REFERS '
          'TO THE OLD BUDGET and must be checked against the new one before it is acted on - the tranche sizes in those '
@@ -9075,6 +9096,52 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'ARE STILL TWO DIFFERENT SESSIONS AT TWO DIFFERENT PRICES. Splitting across consecutive days '
                     'rather than across a weekend gives up very little - the purpose was never to wait, it was to '
                     'avoid putting $45,000 into a single print.'},
+           {'d': '2026-09-19',
+            'dl': '✅✅ ALL THREE DAY-2 ORDERS FILLED - AND SALEE BEAT MY LIMITS BY $407.24',
+            't': 'CASH',
+            'k': 'trade',
+            'a': 'BUY',
+            'amt': 19500.640000000003,
+            'c': 'confirmed',
+            'w': 'PANW 16 AT $357.6224, VRT 26 AT $242.50, GEV 8 AT $931.00. TOTAL $19,500.64 INCLUDING $25.68 '
+                 'COMMISSION. 🎯 SALEE SET **LOWER LIMITS THAN I RECOMMENDED ON ALL THREE** AND ALL THREE STILL FILLED. '
+                 'THAT IS BETTER EXECUTION THAN MY PLAN, BY $407.24.',
+            'cond': '🎯 THE THING WORTH RECORDING IS NOT THAT THE ORDERS FILLED. IT IS **HOW** THEY FILLED. I GAVE '
+                    'THREE LIMITS CALCULATED AS THE 17 SEPTEMBER CLOSE PLUS 1%: PANW $379.21, VRT $243.90, GEV '
+                    '$934.18. **SALEE USED $358.30, $242.50 AND $931.00 - LOWER ON EVERY ONE - AND EVERY ONE FILLED.** '
+                    '|| THE ARITHMETIC OF THAT DECISION: PANW 16 SHARES AT $357.6224 AGAINST MY $379.21 IS **$345.40 '
+                    'BETTER**. VRT 26 AT $242.50 AGAINST $243.90 IS $36.40 BETTER. GEV 8 AT $931.00 AGAINST $934.18 IS '
+                    '$25.44 BETTER. **TOTAL $407.24 BETTER THAN THE PLAN I WROTE**, on a $19,500 order - just over 2%. '
+                    "|| 💡 AND PANW FILLED AT **$357.6224**, WHICH IS BELOW SALEE'S OWN $358.30 LIMIT AND IS NOT A "
+                    'ROUND NUMBER - it is the weighted average of several partial fills. THAT IS THE SECOND TIME IN '
+                    'TWO SESSIONS A LIMIT ORDER HAS FILLED BELOW ITS OWN CEILING, AFTER VISA ON 17 SEPTEMBER AT '
+                    '$369.5165 AGAINST A $369.80 LIMIT. || 🎯 THE LESSON, AND IT CUTS AGAINST ME: **MY PLUS-1% RULE IS '
+                    'A SAFETY MARGIN, NOT A TARGET.** I have been treating the last close plus 1% as the right limit. '
+                    'It is actually the WIDEST limit that is still safe. Salee set tighter ceilings, accepted the risk '
+                    'of a non-fill, and was paid $407.24 for it. ⚠️ THE RULE SHOULD BE RESTATED: **PLUS 1% IS THE '
+                    'MAXIMUM, NOT THE RECOMMENDATION. START AT OR NEAR THE LAST CLOSE AND ONLY WIDEN TOWARD PLUS 1% IF '
+                    'A FILL MATTERS MORE THAN THE PRICE.** That goes into the method for 10 December. || THE POSITIONS '
+                    'AFTER THESE FILLS: PANW: 16 shares at 357.6224 for $5,730.52 all-in, taking it from 22 shares and '
+                    '$3,760.62 to 38 shares and $9,491.14 against a $11,000 budget, leaving $1,508.86 || VRT: 26 '
+                    'shares at 242.5000 for $6,313.56 all-in, taking it from 14 shares and $3,524.44 to 40 shares and '
+                    '$9,838.00 against a $21,000 budget, leaving $11,162.00 || GEV: 8 shares at 931.0000 for $7,456.56 '
+                    'all-in, taking it from 2 shares and $2,147.30 to 10 shares and $9,603.86 against a $13,000 '
+                    'budget, leaving $3,396.14. || ⚠️ PALO ALTO IS NOW EFFECTIVELY FULLY DEPLOYED - $1,508.86 REMAINS, '
+                    'WHICH IS FOUR SHARES. AND NOTE THE GOOD NEWS HIDDEN IN THE CHEAPER FILL: BECAUSE PANW CAME IN '
+                    '$345 BELOW MY LIMIT, IT LEAVES **MORE** BUDGET HEADROOM THAN PLANNED, NOT LESS. || ⚠️ CASH IS '
+                    '**COMPUTED, NOT READ FROM POEMS**: $217,447.38 LESS $19,500.64 IS $197,946.74. The three executed '
+                    'prices and quantities come from the POEMS order screen and the $8.56 commission is the known flat '
+                    'rate, so the arithmetic is sound - BUT THE LAST TIME I ASSUMED A CASH FIGURE THE BOARD WAS '
+                    'CARRYING A PHANTOM SALESFORCE POSITION. **SALEE: SEND THE POEMS LIVE CASH BALANCE AND POSITIONS '
+                    'SCREEN WHEN CONVENIENT AND I WILL RECONCILE TO THE PENNY.** || ⚠️ AND THE SALESFORCE QUESTION IS '
+                    'STILL OPEN FROM 18 SEPTEMBER: 21 shares at $3,749.91 vanished from the account, the proceeds are '
+                    'in the cash, and lifetime realised is understated by roughly $1,740. THE TRADE HISTORY LOOKUP HAS '
+                    'NOT YET BEEN DONE. || 🎯 AND THE BIGGER PICTURE, WHICH IS THE REAL HEADLINE: **THE SIX-NAME PLAN '
+                    'IS COMPLETE.** Across 17 and 18 September, $44,867.67 MOVED FROM CASH INTO SIX COMPANIES, EVERY '
+                    'ONE AT OR INSIDE ITS LIMIT. Invested capital rises to $612,783.30 - **61.3% OF THE BOARD, THE '
+                    'HIGHEST IT HAS EVER BEEN** - and cash falls to $197,946.74, under $200,000 for the first time. '
+                    'AFTER A MONTH OF ME WRITING THAT THE FAULT WAS THE DISTANCE BETWEEN A DECISION AND AN ORDER, '
+                    'SALEE CLOSED THAT DISTANCE TWICE IN TWO DAYS.'},
            {'d': '2026-09-21',
             't': 'BE',
             'k': 'event',
