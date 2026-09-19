@@ -3,103 +3,133 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Sep 19, 2026 - ✅✅ **ALL THREE DAY-2 ORDERS FILLED, AND SALEE BEAT MY LIMITS BY $407.24.** PANW 16 at $357.6224, VRT '
- '26 at $242.50, GEV 8 at $931.00 - total $19,500.64 including $25.68 of commission. || 🎯 THE THING WORTH RECORDING IS '
- '**HOW** THEY FILLED. I gave three limits at the 17 September close plus 1%: PANW $379.21, VRT $243.90, GEV $934.18. '
- '**SALEE USED $358.30, $242.50 AND $931.00 - LOWER ON EVERY ONE - AND EVERY ONE FILLED.** PANW alone came in $345.40 '
- 'better than my ceiling; VRT $36.40; GEV $25.44. **$407.24 BETTER THAN THE PLAN I WROTE**, just over 2% on the order. '
- "💡 AND PANW FILLED AT $357.6224, BELOW SALEE'S OWN LIMIT - the second time in two sessions after Visa at $369.5165 "
- 'against a $369.80 limit. || 🎯 THE LESSON CUTS AGAINST ME: **MY PLUS-1% RULE IS A SAFETY MARGIN, NOT A TARGET.** I '
- 'had been treating last close plus 1% as the right limit; it is the WIDEST limit that is still safe. Salee set '
- 'tighter ceilings, accepted the non-fill risk, and was paid $407.24 for it. RESTATED FOR THE METHOD: **PLUS 1% IS THE '
- 'MAXIMUM, NOT THE RECOMMENDATION - START AT OR NEAR THE LAST CLOSE AND ONLY WIDEN IF A FILL MATTERS MORE THAN THE '
- 'PRICE.** || POSITIONS NOW: PANW 38 shares at $9,491.14 of a $11,000 budget - **effectively fully deployed, $1,508.86 '
- 'left, four shares**. VRT 40 shares at $9,838.00 of $21,000, leaving $11,162.00. GEV 10 shares at $9,603.86 of '
- '$13,000, leaving $3,396.14. || 🎯 **THE SIX-NAME PLAN IS COMPLETE.** Across 17 and 18 September, **$44,867.67 MOVED '
- 'FROM CASH INTO SIX COMPANIES, EVERY ONE AT OR INSIDE ITS LIMIT** - TSM, CEG, V on Thursday; PANW, VRT, GEV on '
- 'Friday. INVESTED CAPITAL RISES TO **$612,783.30, 61.3% OF THE BOARD AND THE HIGHEST IT HAS EVER BEEN**; CASH FALLS '
- "TO $197,946.74, UNDER $200,000 FOR THE FIRST TIME. After a month of me writing that this board's real fault was the "
- 'distance between a decision and an order, SALEE CLOSED THAT DISTANCE TWICE IN TWO DAYS. || ⚠️ CASH IS COMPUTED FROM '
- "THE POEMS ORDER SCREEN, NOT READ FROM A BALANCE SCREEN. The executed prices and quantities are POEMS' own and $8.56 "
- 'is the known flat commission, so the arithmetic is sound - but the last time I assumed a cash figure this board was '
- 'carrying a phantom Salesforce position. **SEND THE POEMS CASH AND POSITIONS SCREEN AND I WILL RECONCILE TO THE '
- 'PENNY.** ⚠️ AND THE SALESFORCE LOOKUP IS STILL OUTSTANDING - lifetime realised remains understated by roughly '
- '$1,740. || PREVIOUS ENTRY: Sep 18, 2026 (12) - 🎯 "IS DEFENCE INTERESTING?" **YES - AND THIS BOARD ALREADY DECIDED '
- 'THAT, APPROVED $35,000 FOR IT, AND THEN SPENT $5,700.88.** GROUP 9 IS THE WORST-DEPLOYED GROUP ON THE ENTIRE BOARD '
- 'AT **16.3% DEPLOYED, $29,299.12 UNSPENT**. The next worst is Group 8 at 25.4%; the best is Group 0 at 84.8%. || 🎯 '
- "WHY DEFENCE IS GENUINELY INTERESTING FOR **US** SPECIFICALLY: ROUGHLY 60% OF THIS BOARD'S INVESTED CAPITAL IS THE AI "
- 'VALUE CHAIN, SO IF HYPERSCALER CAPEX SLOWS ALMOST EVERYTHING WE OWN FALLS TOGETHER. DEFENCE IS FUNDED BY GOVERNMENT '
- "APPROPRIATIONS, NOT BY FOUR COMPANIES' CAPEX DECISIONS - **THE ONE THING ON THIS BOARD THAT DOES NOT DEPEND ON THAT "
- "BET.** Together with this morning's zero-oil finding, the two start to look like one fault: EVERYTHING WE OWN IS THE "
- 'SAME BET. || ⚠️⚠️ AND THE ALLOCATION INSIDE GROUP 9 IS BACKWARDS. **L3HARRIS - NET MARGIN PLUS 8.11%, P/E 25.35 - '
- 'HAS $9,000 APPROVED AND ZERO INVESTED, ZERO BUY ROWS. GE AEROSPACE - PLUS 17.72%, THE BEST MARGIN IN THE GROUP - HAS '
- 'NO BUDGET AT ALL. MEANWHILE AVAV AT MINUS 10.13% HOLDS $11,000, AND RKLB AT MINUS 21.52%, RANKED 80th OF 81 ON OUR '
- "OWN MOAT MEASURES, HOLDS THE GROUP'S LARGEST BUDGET AT $15,000.** 💡 IN PLAIN WORDS: WE APPROVED $15,000 FOR A "
- "COMPANY THAT LOSES 21 CENTS ON EVERY DOLLAR OF SALES AND NOTHING FOR ONE THAT EARNS 8. || ON THE SLIDE'S SEVEN: "
- '**ONLY PALANTIR IS ON OUR BOARD**, and it sits in Group 5 as software. LOCKHEED, NORTHROP, GENERAL DYNAMICS, RTX, '
- 'BOEING AND AXON ARE ALL ABSENT. The four big primes are the real omission - large, profitable, dividend-paying and '
- 'genuinely uncorrelated with AI capex. Boeing is a commercial-aircraft business with execution problems; Axon is '
- 'public-safety technology filed under the wrong heading. ⚠️ AND PALANTIR HAS NOW APPEARED ON **THREE SEPARATE '
- 'SLIDES** AND RANKS 4th OF 81 ON OUR MOAT RANKING - THE MOST RECURRING NAME OF ALL TWENTY-THREE - BUT AT A P/E OF '
- '110.49 IT IS THE MOST EXPENSIVE FUNDED NAME WE OWN. || 🎯 RECOMMENDATION - ONE THING, NOT FOUR: **DO NOT ADD A '
- 'DEFENCE NAME. FIX THE DEFENCE BUDGET WE ALREADY HAVE.** For 10 December: (1) L3Harris gets a dated buy row or the '
- '$9,000 is withdrawn - FOURTH time raised. (2) Revisit the RKLB $15,000 versus LHX $9,000 split, backwards on every '
- 'quality measure; if RKLB is a bet on a moat not yet built, its money needs a MILESTONE not a date. (3) Screen GE '
- 'Aerospace, the best business in the group and never funded. (4) Only then consider a big prime. || ⚠️ ADDING '
- 'LOCKHEED MARTIN TO A GROUP THAT HAS SPENT ONE DOLLAR IN SIX OF WHAT IT WAS GIVEN WOULD BE THE PUREST FORM OF THE '
- 'MISTAKE THIS BOARD KEEPS DOCUMENTING. NOTHING BOUGHT, NOTHING SOLD. || PREVIOUS ENTRY: Sep 18, 2026 (11) - ⚠️⚠️ "JP '
- 'MORGAN GAVE UP PREDICTING OIL PRICES" IS **GARBLED** - AND CHECKING IT FOUND A HOLE IN THIS BOARD. || WHAT JPM '
- 'ACTUALLY DID: on 17 September **NATASHA KANEVA**, head of global commodities strategy, wrote verbatim "For the first '
- "time since the start of the Iran conflict, we don't have a baseline view. We simply don't know how to model the "
- 'endgame." THAT IS ABOUT A **WAR SCENARIO**, NOT THE OIL FORECAST. In the SAME note JPM put fair value at **$90 a '
- 'barrel**, and its published forecast page of 16 July is still live: Brent to average "$86 per barrel in the third '
- 'quarter of 2026, $80 in the fourth quarter and $78 at year end". 💡 TRACE THE DRIFT: CNBC said "gives up forecasting '
- '**Iran war endgame**"; an aggregator turned it into "oil impossible to forecast"; the line that reached us was "gave '
- 'up predicting oil prices". SAME DISEASE AS THE NVIDIA AND MEMORY POSTS. 🎯 AND CREDIT TO KANEVA: SHE NAMED THE '
- 'THRESHOLDS SHE ASSUMED WOULD END THE WAR - OIL ABOVE $100, PETROL NEAR $5, THE TEN-YEAR ABOVE 5% - WATCHED THEM ALL '
- 'BE CROSSED, AND SAID SO. THAT IS EXACTLY WHAT THIS BOARD DEMANDS OF ITSELF. || ⚠️⚠️ THE REAL FINDING IS OURS, NOT '
- "JPM'S. **BRENT IS $104.63, UP 52.64% IN TWELVE MONTHS FROM $68.12.** The EIA reports **6.7 MILLION BARRELS A DAY OF "
- 'PRODUCTION SHUT IN** in August on Strait of Hormuz and Bab el-Mandeb disruption; the IEA cut world oil demand by 2.5 '
- 'million barrels a day for 2026. **AND THIS 94-NAME BOARD OWNS ZERO OIL AND GAS - I CHECKED NINETEEN MAJOR TICKERS '
- 'AND FOUND NONE.** Group 6 is ELECTRICITY, not oil. That is a consequence of an AI mandate, but IT HAS NEVER BEEN '
- 'WRITTEN DOWN AS A DECISION. || 🎯 AND A HYPOTHESIS I OWE SALEE, LABELLED AS ONE. He asked two days ago why the Fed '
- 'hiked on 16 September and I could give only mechanisms. **HERE IS A CANDIDATE I COULD NOT SEE THEN: OIL UP 52.6% '
- "YEAR ON YEAR FEEDS STRAIGHT INTO INFLATION**, and JPM's own crossed-threshold list includes petrol near $5 a gallon. "
- 'A central bank facing energy-driven inflation raises rates even into a soft economy. ⚠️ **NO SOURCED CAUSE FOUND** - '
- 'I have no Fed statement saying this and I am not asserting it. It goes on 10 December as a question. || ACTION: '
- '**WRITE THE ZERO-OIL DECISION DOWN** - either a deliberate exclusion or an unintended gap. Either answer is fine; '
- 'having no answer is the same absence-of-a-decision fault as ARM, SNPS, LHX, APP and SE. || 💡 AND A THAI POST ON '
- 'EATON REACHES THE SAME CONCLUSION WE REACHED YESTERDAY: "if you\'re going to build a data centre, Eaton is '
- 'definitely part of it." CORRECT - our own count put **EATON IN FOUR OF EIGHT SYSTEMS**, behind only Vertiv at five. '
- 'We already own it: $11,000 approved, $7,879.55 invested, 12.75% net margin. ⚠️ But breadth is not dominance - it '
- 'sits beside Schneider, ABB and Siemens in every box, and it did not make the top twenty of our 81-name moat ranking. '
- 'SECOND TIME IN TWO DAYS AN OUTSIDE SOURCE HAS LANDED ON A POSITION WE ALREADY HOLD. TWENTY-TWO SLIDES IN: WE ARE NOT '
- 'SHORT OF IDEAS, WE ARE SHORT OF ORDERS. || NOTHING BOUGHT, NOTHING SOLD. || PREVIOUS ENTRY: Sep 18, 2026 (10) - 🎯 '
- 'THE NASDAQ 23-HOUR POST IS **TRUE**, AND IT IS THE FIRST ANONYMOUS "[BREAKING]" POST THIS MONTH THAT HAS CHECKED '
- 'OUT. SEC RELEASE 34-105199 OF 10 APRIL 2026 APPROVED NASDAQ TO TRADE "NMS stocks and exchange traded products 23 '
- 'hours per day, five days per week", AND NASDAQ\'S OWN FAQ SAYS IT IS "currently expected to occur on Sunday, '
- 'December 6, 2026". Night session "9:00PM ET" to "4:00AM ET", a one-hour industry pause 8-9pm ET daily, ALL NMS '
- "STOCKS - and NYSE Arca, Cboe EDGX, MEMX and 24X are all approved for the same date. The post's only understatement "
- 'is that this is INDUSTRY-WIDE, not Nasdaq alone. || 🎯 WHAT IT MEANS HERE: THE NIGHT SESSION IS **09:00 TO 16:00 '
- 'BANGKOK**. 💡 FOR THE FIRST TIME SALEE COULD PLACE US ORDERS OVER BREAKFAST INSTEAD OF AT MIDNIGHT. ⚠️⚠️ AND THAT IS '
- 'ALSO THE TRAP: **THE HOURS COMFORTABLE FOR BANGKOK ARE THE WORST HOURS IN THE MARKET.** FINRA Rule 2265 makes '
- 'brokers warn, verbatim, of "lower liquidity", "greater volatility" and "wider than normal spreads", and that '
- 'extended-hours prices "may not reflect the prices either at the end of regular trading hours". MARKET ORDERS ARE '
- 'BARRED FROM THE OVERNIGHT SESSION BY THE EXCHANGES THEMSELVES - LIMIT ONLY - and the corollary is that a limit may '
- 'simply NOT FILL with no fallback. || ⚠️ THE QUESTION SALEE MUST ASK POEMS, BECAUSE IT IS NOT SOURCEABLE: **DOES '
- 'POEMS SUPPORT THE NEW OVERNIGHT SESSION?** An exchange extending its hours obliges no broker. POEMS today offers '
- '"4:00 am to 9:30 am ET" and "4:00 pm to 8:00 pm ET" - **THAT STOPS AT 8PM NEW YORK AND DOES NOT COVER THE NEW '
- '9PM-4AM WINDOW.** And do not confuse it with POEMS\' "US Asian Hours", which is NOT exchange trading - Phillip "acts '
- 'as principal", 100 stocks and 4 ETFs, its own bid-offer. || ⚠️⚠️ AND A CORRECTION TO MY OWN STANDING NOTE, RECORDED '
- 'BEFORE IT CATCHES US. THIS BOARD SAYS "BANGKOK = NEW YORK + 11". THAT IS TRUE ONLY IN THE AMERICAN SUMMER. **ON '
- 'SUNDAY 1 NOVEMBER 2026 US CLOCKS GO BACK AND IT BECOMES PLUS TWELVE.** THE US REGULAR SESSION MOVES FROM 20:30-03:00 '
- 'BANGKOK TO **21:30-04:00 BANGKOK**, AND MY STANDING ADVICE TO PLACE ORDERS BETWEEN 20:30 AND 22:00 BECOMES **21:30 '
- 'TO 23:00**. A DAY ORDER PLACED AT 20:45 ON 2 NOVEMBER WOULD BE FORTY-FIVE MINUTES BEFORE THE OPEN, NOT FIFTEEN '
- 'AFTER. THIS BOARD HAS LOST MONEY TO A MISREAD PRICE ONCE THIS MONTH; LOSING IT TO A MISREAD CLOCK WOULD BE WORSE '
- 'BECAUSE IT IS ENTIRELY AVOIDABLE. || NOTHING ELSE CHANGES. WE PLACE LIMIT ORDERS AGAINST WRITTEN SCHEDULE ROWS - THE '
- 'CLOCK DOES NOT ALTER THE METHOD. || PREVIOUS ENTRY: Sep 18, 2026 (9) - 🎯 THE MICROREACTOR SLIDE IS HONEST '
- 'ENGINEERING, AND THE ANSWER IS ALREADY ON OUR BOARD. It carries NO ticker, NO price and NO target, labels itself '
- '"conceptual", and says outright that "\'LITTLE PUPPY\' IS OUR NICKNAME - NOT A TECHNICAL CLASSIFICATION" and '
+ASOF = ('Sep 19, 2026 (2) - 🎯 TWO SLIDES, ONE ANSWER. **THE MIDDLE LAYER DOES NOT EAT THE MARGIN - IT IS THE ONLY LAYER WITH '
+ 'NO MARGIN AT ALL** - AND **ORACLE IS BECOMING THAT MIDDLE LAYER.** || SALEE ASKED WHICH AI-CLOUD MIDDLE-LAYER STOCKS '
+ 'ENJOY THE BEST MARGIN. **NONE OF THEM DO**, and our own board proves it without any outside research. NET MARGINS BY '
+ 'LAYER: **BOTTOM (suppliers) NVDA PLUS 63.66%, MU PLUS 55.91%. TOP (customers) MSFT PLUS 40.30%, GOOGL PLUS 37.92%, '
+ 'META PLUS 29.84%, AMZN PLUS 12.10%. MIDDLE (the AI clouds) CRWV MINUS 25.40%, NBIS MINUS 32.70%, IREN MINUS '
+ '99.40%.** EVERY ONE OF THE MIDDLE LAYER LOSES MONEY. || 💡 AND WHY THE SLIDE IS FOOLED IS THE USEFUL PART: THE '
+ '**GROSS** MARGINS OF THOSE SAME THREE ARE SUPERB - CRWV 67.42%, NBIS 77.10%, IREN 68.90%. AT THE GROSS LINE THE '
+ 'MIDDLEMAN REALLY DOES LOOK RICH. **THE MONEY DISAPPEARS BELOW IT, IN TWO PLACES A DIAGRAM CANNOT SHOW: DEPRECIATION '
+ 'ON THE GPUs, AND INTEREST ON THE DEBT RAISED TO BUY THEM.** 🎯 THE RULE: **THE MARGIN GOES TO WHOEVER OWNS THE SCARCE '
+ 'THING.** The middle layer owns a depreciating asset bought with borrowed money, rented into a market where its '
+ 'suppliers set the price and its customers are also its competitors - the slide prints ลูกค้าและคู่แข่ง without '
+ 'noticing it refutes its own headline. WE OWN NONE OF THE MIDDLE LAYER: CRWV sold minus $786.02, NBIS PLUS $1,404.51, '
+ 'IREN PLUS $456.24 - net PLUS $1,074.73. || ⚠️⚠️ AND ORACLE. THE 1.7 GW IS **POWER PURCHASE AGREEMENTS, NOT '
+ 'OWNERSHIP** - RWE\'s own release says "virtual power purchase agreement (VPPA) with Oracle for 433 megawatts" on '
+ 'wind farms **COMMISSIONED IN 2008 AND 2009**. ZERO ORACLE CAPEX. Oracle\'s headline used the word "Invests"; the '
+ 'infographic inherited it. AND IT IS IMMATERIAL: ORACLE SPENT **$28,499 MILLION OF CAPEX IN ONE QUARTER** WITH FREE '
+ 'CASH FLOW OF **MINUS $5,396 MILLION**; TRAILING FREE CASH FLOW IS **MINUS $28.7 BILLION**; NOTES PAYABLE **$125,337 '
+ 'MILLION** AGAINST $36,369 MILLION OF CASH. FY27 GUIDE: ~$70bn NET CAPEX AND ~$40bn OF CAPITAL-MARKETS FUNDING, AFTER '
+ 'A $20bn EQUITY OFFERING IN Q1. 🎯 **ORACLE BUYS GPUs WITH BORROWED MONEY AND RENTS OUT COMPUTE - THE COREWEAVE MODEL '
+ "AT MEGA-CAP SCALE, WITH THE COREWEAVE CASH FLOW. IT IS NOT A COUNTER-EXAMPLE TO TONIGHT'S FINDING; IT IS THE PROOF "
+ 'OF IT.** Its Rule of 40 reads minus 18.4 for exactly this reason. || ⚠️ THREE CORRECTIONS TO MY OWN EARLIER NOTES, '
+ 'ALL FOUND BY CHECKING: the backlog is **$664bn at 31 August**, not the $638bn I recorded (that was 31 May), and '
+ '**only ~13% converts within twelve months**; **ORACLE DISCLOSES NO CUSTOMER CONCENTRATION** - my "roughly half is '
+ 'OpenAI" was PRESS CHARACTERISATION, NOT A FILING, and I should have labelled it so; and **S&P\'s outlook is STABLE, '
+ "not negative - it is MOODY'S that is negative.** RATINGS NOW: S&P BBB− (cut 9 July) stable, ONE NOTCH ABOVE "
+ "NON-INVESTMENT GRADE; Moody's Baa2 NEGATIVE; Fitch BBB stable. THE THREE AGENCIES DISAGREE, WHICH IS ITSELF THE "
+ 'FINDING. || ORCL REPRICED TO ITS VERIFIED 18 SEPTEMBER CLOSE OF **$147.61**, ABOUT 55% BELOW ITS 52-WEEK HIGH OF '
+ '$329.50. Our 75 shares cost $12,228.43 and are worth $11,070.75 - DOWN $1,157.68. The existing row reading "ORCL is '
+ 'now a sell candidate, not a buy one" STANDS, and the 10 December trigger should be read as a SELL decision. 💡 THE '
+ 'LESSON WORTH MORE THAN THE STOCK: **WHEN A COMPANY SAYS "INVEST", ASK WHETHER ANYTHING APPEARS ON ITS BALANCE '
+ 'SHEET.** || PREVIOUS ENTRY: Sep 19, 2026 - ✅✅ **ALL THREE DAY-2 ORDERS FILLED, AND SALEE BEAT MY LIMITS BY '
+ '$407.24.** PANW 16 at $357.6224, VRT 26 at $242.50, GEV 8 at $931.00 - total $19,500.64 including $25.68 of '
+ 'commission. || 🎯 THE THING WORTH RECORDING IS **HOW** THEY FILLED. I gave three limits at the 17 September close '
+ 'plus 1%: PANW $379.21, VRT $243.90, GEV $934.18. **SALEE USED $358.30, $242.50 AND $931.00 - LOWER ON EVERY ONE - '
+ 'AND EVERY ONE FILLED.** PANW alone came in $345.40 better than my ceiling; VRT $36.40; GEV $25.44. **$407.24 BETTER '
+ "THAN THE PLAN I WROTE**, just over 2% on the order. 💡 AND PANW FILLED AT $357.6224, BELOW SALEE'S OWN LIMIT - the "
+ 'second time in two sessions after Visa at $369.5165 against a $369.80 limit. || 🎯 THE LESSON CUTS AGAINST ME: **MY '
+ 'PLUS-1% RULE IS A SAFETY MARGIN, NOT A TARGET.** I had been treating last close plus 1% as the right limit; it is '
+ 'the WIDEST limit that is still safe. Salee set tighter ceilings, accepted the non-fill risk, and was paid $407.24 '
+ 'for it. RESTATED FOR THE METHOD: **PLUS 1% IS THE MAXIMUM, NOT THE RECOMMENDATION - START AT OR NEAR THE LAST CLOSE '
+ 'AND ONLY WIDEN IF A FILL MATTERS MORE THAN THE PRICE.** || POSITIONS NOW: PANW 38 shares at $9,491.14 of a $11,000 '
+ 'budget - **effectively fully deployed, $1,508.86 left, four shares**. VRT 40 shares at $9,838.00 of $21,000, leaving '
+ '$11,162.00. GEV 10 shares at $9,603.86 of $13,000, leaving $3,396.14. || 🎯 **THE SIX-NAME PLAN IS COMPLETE.** Across '
+ '17 and 18 September, **$44,867.67 MOVED FROM CASH INTO SIX COMPANIES, EVERY ONE AT OR INSIDE ITS LIMIT** - TSM, CEG, '
+ 'V on Thursday; PANW, VRT, GEV on Friday. INVESTED CAPITAL RISES TO **$612,783.30, 61.3% OF THE BOARD AND THE HIGHEST '
+ 'IT HAS EVER BEEN**; CASH FALLS TO $197,946.74, UNDER $200,000 FOR THE FIRST TIME. After a month of me writing that '
+ "this board's real fault was the distance between a decision and an order, SALEE CLOSED THAT DISTANCE TWICE IN TWO "
+ 'DAYS. || ⚠️ CASH IS COMPUTED FROM THE POEMS ORDER SCREEN, NOT READ FROM A BALANCE SCREEN. The executed prices and '
+ "quantities are POEMS' own and $8.56 is the known flat commission, so the arithmetic is sound - but the last time I "
+ 'assumed a cash figure this board was carrying a phantom Salesforce position. **SEND THE POEMS CASH AND POSITIONS '
+ 'SCREEN AND I WILL RECONCILE TO THE PENNY.** ⚠️ AND THE SALESFORCE LOOKUP IS STILL OUTSTANDING - lifetime realised '
+ 'remains understated by roughly $1,740. || PREVIOUS ENTRY: Sep 18, 2026 (12) - 🎯 "IS DEFENCE INTERESTING?" **YES - '
+ 'AND THIS BOARD ALREADY DECIDED THAT, APPROVED $35,000 FOR IT, AND THEN SPENT $5,700.88.** GROUP 9 IS THE '
+ 'WORST-DEPLOYED GROUP ON THE ENTIRE BOARD AT **16.3% DEPLOYED, $29,299.12 UNSPENT**. The next worst is Group 8 at '
+ '25.4%; the best is Group 0 at 84.8%. || 🎯 WHY DEFENCE IS GENUINELY INTERESTING FOR **US** SPECIFICALLY: ROUGHLY 60% '
+ "OF THIS BOARD'S INVESTED CAPITAL IS THE AI VALUE CHAIN, SO IF HYPERSCALER CAPEX SLOWS ALMOST EVERYTHING WE OWN FALLS "
+ "TOGETHER. DEFENCE IS FUNDED BY GOVERNMENT APPROPRIATIONS, NOT BY FOUR COMPANIES' CAPEX DECISIONS - **THE ONE THING "
+ "ON THIS BOARD THAT DOES NOT DEPEND ON THAT BET.** Together with this morning's zero-oil finding, the two start to "
+ 'look like one fault: EVERYTHING WE OWN IS THE SAME BET. || ⚠️⚠️ AND THE ALLOCATION INSIDE GROUP 9 IS BACKWARDS. '
+ '**L3HARRIS - NET MARGIN PLUS 8.11%, P/E 25.35 - HAS $9,000 APPROVED AND ZERO INVESTED, ZERO BUY ROWS. GE AEROSPACE - '
+ 'PLUS 17.72%, THE BEST MARGIN IN THE GROUP - HAS NO BUDGET AT ALL. MEANWHILE AVAV AT MINUS 10.13% HOLDS $11,000, AND '
+ "RKLB AT MINUS 21.52%, RANKED 80th OF 81 ON OUR OWN MOAT MEASURES, HOLDS THE GROUP'S LARGEST BUDGET AT $15,000.** 💡 "
+ 'IN PLAIN WORDS: WE APPROVED $15,000 FOR A COMPANY THAT LOSES 21 CENTS ON EVERY DOLLAR OF SALES AND NOTHING FOR ONE '
+ "THAT EARNS 8. || ON THE SLIDE'S SEVEN: **ONLY PALANTIR IS ON OUR BOARD**, and it sits in Group 5 as software. "
+ 'LOCKHEED, NORTHROP, GENERAL DYNAMICS, RTX, BOEING AND AXON ARE ALL ABSENT. The four big primes are the real omission '
+ '- large, profitable, dividend-paying and genuinely uncorrelated with AI capex. Boeing is a commercial-aircraft '
+ 'business with execution problems; Axon is public-safety technology filed under the wrong heading. ⚠️ AND PALANTIR '
+ 'HAS NOW APPEARED ON **THREE SEPARATE SLIDES** AND RANKS 4th OF 81 ON OUR MOAT RANKING - THE MOST RECURRING NAME OF '
+ 'ALL TWENTY-THREE - BUT AT A P/E OF 110.49 IT IS THE MOST EXPENSIVE FUNDED NAME WE OWN. || 🎯 RECOMMENDATION - ONE '
+ 'THING, NOT FOUR: **DO NOT ADD A DEFENCE NAME. FIX THE DEFENCE BUDGET WE ALREADY HAVE.** For 10 December: (1) '
+ 'L3Harris gets a dated buy row or the $9,000 is withdrawn - FOURTH time raised. (2) Revisit the RKLB $15,000 versus '
+ 'LHX $9,000 split, backwards on every quality measure; if RKLB is a bet on a moat not yet built, its money needs a '
+ 'MILESTONE not a date. (3) Screen GE Aerospace, the best business in the group and never funded. (4) Only then '
+ 'consider a big prime. || ⚠️ ADDING LOCKHEED MARTIN TO A GROUP THAT HAS SPENT ONE DOLLAR IN SIX OF WHAT IT WAS GIVEN '
+ 'WOULD BE THE PUREST FORM OF THE MISTAKE THIS BOARD KEEPS DOCUMENTING. NOTHING BOUGHT, NOTHING SOLD. || PREVIOUS '
+ 'ENTRY: Sep 18, 2026 (11) - ⚠️⚠️ "JP MORGAN GAVE UP PREDICTING OIL PRICES" IS **GARBLED** - AND CHECKING IT FOUND A '
+ 'HOLE IN THIS BOARD. || WHAT JPM ACTUALLY DID: on 17 September **NATASHA KANEVA**, head of global commodities '
+ 'strategy, wrote verbatim "For the first time since the start of the Iran conflict, we don\'t have a baseline view. '
+ 'We simply don\'t know how to model the endgame." THAT IS ABOUT A **WAR SCENARIO**, NOT THE OIL FORECAST. In the SAME '
+ 'note JPM put fair value at **$90 a barrel**, and its published forecast page of 16 July is still live: Brent to '
+ 'average "$86 per barrel in the third quarter of 2026, $80 in the fourth quarter and $78 at year end". 💡 TRACE THE '
+ 'DRIFT: CNBC said "gives up forecasting **Iran war endgame**"; an aggregator turned it into "oil impossible to '
+ 'forecast"; the line that reached us was "gave up predicting oil prices". SAME DISEASE AS THE NVIDIA AND MEMORY '
+ 'POSTS. 🎯 AND CREDIT TO KANEVA: SHE NAMED THE THRESHOLDS SHE ASSUMED WOULD END THE WAR - OIL ABOVE $100, PETROL NEAR '
+ '$5, THE TEN-YEAR ABOVE 5% - WATCHED THEM ALL BE CROSSED, AND SAID SO. THAT IS EXACTLY WHAT THIS BOARD DEMANDS OF '
+ "ITSELF. || ⚠️⚠️ THE REAL FINDING IS OURS, NOT JPM'S. **BRENT IS $104.63, UP 52.64% IN TWELVE MONTHS FROM $68.12.** "
+ 'The EIA reports **6.7 MILLION BARRELS A DAY OF PRODUCTION SHUT IN** in August on Strait of Hormuz and Bab el-Mandeb '
+ 'disruption; the IEA cut world oil demand by 2.5 million barrels a day for 2026. **AND THIS 94-NAME BOARD OWNS ZERO '
+ 'OIL AND GAS - I CHECKED NINETEEN MAJOR TICKERS AND FOUND NONE.** Group 6 is ELECTRICITY, not oil. That is a '
+ 'consequence of an AI mandate, but IT HAS NEVER BEEN WRITTEN DOWN AS A DECISION. || 🎯 AND A HYPOTHESIS I OWE SALEE, '
+ 'LABELLED AS ONE. He asked two days ago why the Fed hiked on 16 September and I could give only mechanisms. **HERE IS '
+ "A CANDIDATE I COULD NOT SEE THEN: OIL UP 52.6% YEAR ON YEAR FEEDS STRAIGHT INTO INFLATION**, and JPM's own "
+ 'crossed-threshold list includes petrol near $5 a gallon. A central bank facing energy-driven inflation raises rates '
+ 'even into a soft economy. ⚠️ **NO SOURCED CAUSE FOUND** - I have no Fed statement saying this and I am not asserting '
+ 'it. It goes on 10 December as a question. || ACTION: **WRITE THE ZERO-OIL DECISION DOWN** - either a deliberate '
+ 'exclusion or an unintended gap. Either answer is fine; having no answer is the same absence-of-a-decision fault as '
+ 'ARM, SNPS, LHX, APP and SE. || 💡 AND A THAI POST ON EATON REACHES THE SAME CONCLUSION WE REACHED YESTERDAY: "if '
+ 'you\'re going to build a data centre, Eaton is definitely part of it." CORRECT - our own count put **EATON IN FOUR '
+ 'OF EIGHT SYSTEMS**, behind only Vertiv at five. We already own it: $11,000 approved, $7,879.55 invested, 12.75% net '
+ 'margin. ⚠️ But breadth is not dominance - it sits beside Schneider, ABB and Siemens in every box, and it did not '
+ 'make the top twenty of our 81-name moat ranking. SECOND TIME IN TWO DAYS AN OUTSIDE SOURCE HAS LANDED ON A POSITION '
+ 'WE ALREADY HOLD. TWENTY-TWO SLIDES IN: WE ARE NOT SHORT OF IDEAS, WE ARE SHORT OF ORDERS. || NOTHING BOUGHT, NOTHING '
+ 'SOLD. || PREVIOUS ENTRY: Sep 18, 2026 (10) - 🎯 THE NASDAQ 23-HOUR POST IS **TRUE**, AND IT IS THE FIRST ANONYMOUS '
+ '"[BREAKING]" POST THIS MONTH THAT HAS CHECKED OUT. SEC RELEASE 34-105199 OF 10 APRIL 2026 APPROVED NASDAQ TO TRADE '
+ '"NMS stocks and exchange traded products 23 hours per day, five days per week", AND NASDAQ\'S OWN FAQ SAYS IT IS '
+ '"currently expected to occur on Sunday, December 6, 2026". Night session "9:00PM ET" to "4:00AM ET", a one-hour '
+ 'industry pause 8-9pm ET daily, ALL NMS STOCKS - and NYSE Arca, Cboe EDGX, MEMX and 24X are all approved for the same '
+ "date. The post's only understatement is that this is INDUSTRY-WIDE, not Nasdaq alone. || 🎯 WHAT IT MEANS HERE: THE "
+ 'NIGHT SESSION IS **09:00 TO 16:00 BANGKOK**. 💡 FOR THE FIRST TIME SALEE COULD PLACE US ORDERS OVER BREAKFAST INSTEAD '
+ 'OF AT MIDNIGHT. ⚠️⚠️ AND THAT IS ALSO THE TRAP: **THE HOURS COMFORTABLE FOR BANGKOK ARE THE WORST HOURS IN THE '
+ 'MARKET.** FINRA Rule 2265 makes brokers warn, verbatim, of "lower liquidity", "greater volatility" and "wider than '
+ 'normal spreads", and that extended-hours prices "may not reflect the prices either at the end of regular trading '
+ 'hours". MARKET ORDERS ARE BARRED FROM THE OVERNIGHT SESSION BY THE EXCHANGES THEMSELVES - LIMIT ONLY - and the '
+ 'corollary is that a limit may simply NOT FILL with no fallback. || ⚠️ THE QUESTION SALEE MUST ASK POEMS, BECAUSE IT '
+ 'IS NOT SOURCEABLE: **DOES POEMS SUPPORT THE NEW OVERNIGHT SESSION?** An exchange extending its hours obliges no '
+ 'broker. POEMS today offers "4:00 am to 9:30 am ET" and "4:00 pm to 8:00 pm ET" - **THAT STOPS AT 8PM NEW YORK AND '
+ 'DOES NOT COVER THE NEW 9PM-4AM WINDOW.** And do not confuse it with POEMS\' "US Asian Hours", which is NOT exchange '
+ 'trading - Phillip "acts as principal", 100 stocks and 4 ETFs, its own bid-offer. || ⚠️⚠️ AND A CORRECTION TO MY OWN '
+ 'STANDING NOTE, RECORDED BEFORE IT CATCHES US. THIS BOARD SAYS "BANGKOK = NEW YORK + 11". THAT IS TRUE ONLY IN THE '
+ 'AMERICAN SUMMER. **ON SUNDAY 1 NOVEMBER 2026 US CLOCKS GO BACK AND IT BECOMES PLUS TWELVE.** THE US REGULAR SESSION '
+ 'MOVES FROM 20:30-03:00 BANGKOK TO **21:30-04:00 BANGKOK**, AND MY STANDING ADVICE TO PLACE ORDERS BETWEEN 20:30 AND '
+ '22:00 BECOMES **21:30 TO 23:00**. A DAY ORDER PLACED AT 20:45 ON 2 NOVEMBER WOULD BE FORTY-FIVE MINUTES BEFORE THE '
+ 'OPEN, NOT FIFTEEN AFTER. THIS BOARD HAS LOST MONEY TO A MISREAD PRICE ONCE THIS MONTH; LOSING IT TO A MISREAD CLOCK '
+ 'WOULD BE WORSE BECAUSE IT IS ENTIRELY AVOIDABLE. || NOTHING ELSE CHANGES. WE PLACE LIMIT ORDERS AGAINST WRITTEN '
+ 'SCHEDULE ROWS - THE CLOCK DOES NOT ALTER THE METHOD. || PREVIOUS ENTRY: Sep 18, 2026 (9) - 🎯 THE MICROREACTOR SLIDE '
+ 'IS HONEST ENGINEERING, AND THE ANSWER IS ALREADY ON OUR BOARD. It carries NO ticker, NO price and NO target, labels '
+ 'itself "conceptual", and says outright that "\'LITTLE PUPPY\' IS OUR NICKNAME - NOT A TECHNICAL CLASSIFICATION" and '
  '"SMALLER DOES NOT MEAN \'NO SAFETY REQUIREMENTS\'". SECOND SLIDE IN TWO DAYS THAT TEACHES RATHER THAN SELLS. || ITS '
  'LEFT PANEL - VARIABLE GENERATION VERSUS FIRM GENERATION - IS THE BEST SINGLE EXPLANATION THIS BOARD HAS SEEN OF WHY '
  'GROUP 6 EXISTS. A DATA CENTRE CANNOT PAUSE WHEN A CLOUD PASSES, SO IT PAYS A PREMIUM FOR THE FLAT LINE. THE PREMIUM '
@@ -5891,8 +5921,8 @@ STOCKS = [{'an': 83,
   'eps': 6.38,
   'epsG': 47.7,
   'ex': 'NYSE',
-  'fcfB': -28.72,
-  'fpe': 18.23,
+  'fcfB': -28.73,
+  'fpe': 17.87,
   'fvAvg': 251.85,
   'fvMax': 400,
   'fvMin': 155,
@@ -5901,14 +5931,14 @@ STOCKS = [{'an': 83,
   'hi52': 345.72,
   'jan2': 193.84,
   'lo52': 114.5,
-  'mcapB': 455.3478,
+  'mcapB': 446.337,
   'name': 'Oracle',
-  'pe': 24.36,
-  'peg': 0.59,
+  'pe': 23.88,
+  'peg': 0.58,
   'pm': 26.36,
-  'price': 150.59,
-  'ps': 5.87,
-  'pxd': '2026-09-17',
+  'price': 147.61,
+  'ps': 5.75,
+  'pxd': '2026-09-18',
   'r40': -18.4,
   'revB': 71.78,
   'revG': 21.6,
@@ -11866,6 +11896,53 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'AND CONCRETE TAKES THREE YEARS. ⚠️ NO SOURCED CAUSE FOUND FOR ANY CLAIM THAT THIS IS ENGINEERED '
                     'OR ARTIFICIAL.'},
            {'d': '2026-12-10',
+            'dl': '⚠️⚠️ THE MIDDLE LAYER DOES NOT EAT THE MARGIN - IT IS THE ONLY LAYER WITH NO MARGIN AT ALL',
+            't': 'NVDA',
+            'k': 'thesis',
+            'a': 'WATCH',
+            'amt': 0,
+            'c': 'open',
+            'w': 'THE SLIDE SAYS THE AI CLOUD MIDDLEMAN COLLECTS THE MARGIN. OUR OWN BOARD SAYS THE OPPOSITE IN ONE '
+                 'TABLE: **CRWV MINUS 25.4%, NBIS MINUS 32.7%, IREN MINUS 99.4% NET MARGIN - ALL THREE LOSE MONEY** - '
+                 'WHILE NVDA AT THE BOTTOM EARNS **PLUS 63.66%** AND MICRON **PLUS 55.91%**.',
+            'cond': 'SALEE ASKED WHICH MIDDLE-LAYER STOCKS ENJOY THE BEST MARGIN. THE HONEST ANSWER IS THAT **NONE OF '
+                    'THEM DO**, AND OUR OWN BOARD PROVES IT WITHOUT ANY OUTSIDE RESEARCH. || **THE THREE LAYERS, NET '
+                    "MARGIN, FROM THIS BOARD'S OWN FIELDS.** BOTTOM, THE SUPPLIERS: NVDA **PLUS 63.66%**, MU **PLUS "
+                    '55.91%**. TOP, THE CUSTOMERS WHO PAY: MSFT PLUS 40.30%, GOOGL PLUS 37.92%, META PLUS 29.84%, AMZN '
+                    'PLUS 12.10%. **MIDDLE, THE AI CLOUDS THE SLIDE SAYS EAT THE MARGIN: CRWV MINUS 25.40%, NBIS MINUS '
+                    '32.70%, IREN MINUS 99.40%.** EVERY SINGLE ONE LOSES MONEY. THE LAYER THE SLIDE CALLS THE WINNER '
+                    'IS THE ONLY LAYER ON THE WHOLE DIAGRAM THAT DOES NOT EARN A PROFIT. || 💡 AND HERE IS **WHY THE '
+                    'SLIDE IS FOOLED**, WHICH IS THE MOST USEFUL THING IN THIS WHOLE ANSWER. LOOK AT THE **GROSS** '
+                    'MARGINS OF THE SAME THREE: CRWV **67.42%**, NBIS **77.10%**, IREN **68.90%**. THOSE ARE SUPERB. '
+                    'AT THE GROSS LINE THE MIDDLEMAN REALLY DOES LOOK LIKE HE IS COLLECTING A FORTUNE - HE RENTS A GPU '
+                    'FOR FAR MORE THAN THE ELECTRICITY COSTS. **THE MONEY DISAPPEARS BELOW THE GROSS LINE, IN TWO '
+                    'PLACES THE SLIDE CANNOT SHOW: DEPRECIATION ON THE GPUs, AND INTEREST ON THE DEBT RAISED TO BUY '
+                    'THEM.** A GRAPHICS CHIP IS WRITTEN OFF OVER A FEW YEARS AND MUST THEN BE REPLACED; THE BORROWING '
+                    'THAT PAID FOR IT DEMANDS A COUPON EVERY QUARTER WHETHER THE MACHINE IS BUSY OR IDLE. 💡 THE SUBWAY '
+                    'VERSION, AND IT IS EXACT: A SHOP CAN SELL A SANDWICH FOR 150 BAHT THAT COSTS 50 BAHT OF '
+                    'INGREDIENTS - A 67% GROSS MARGIN, JUST LIKE COREWEAVE. THEN THE RENT, THE FIT-OUT LOAN AND THE '
+                    'OVEN THAT MUST BE REPLACED EVERY THREE YEARS TAKE ALL OF IT AND MORE. **THE INGREDIENTS WERE '
+                    'NEVER THE PROBLEM.** || 🎯 THE GENERAL RULE, AND IT IS THE SAME ONE THE EQUIPMENT-CHAIN WORK FOUND '
+                    'FROM THE OTHER DIRECTION: **THE MARGIN GOES TO WHOEVER OWNS THE SCARCE THING.** Right now the '
+                    'scarce thing is the chip, so NVIDIA takes 63.66 cents of every dollar. The middle layer owns '
+                    'nothing scarce - it owns a depreciating asset bought with borrowed money, and it RENTS it into a '
+                    'market where its own suppliers set the price and its own customers are also its competitors. '
+                    'Microsoft, Meta and Google appear on the slide as ลูกค้าและคู่แข่ง - CUSTOMER AND COMPETITOR - '
+                    'AND THE SLIDE PRINTS THAT PHRASE WITHOUT NOTICING IT IS THE REFUTATION OF ITS OWN HEADLINE. || 🎯 '
+                    'AND WE ALREADY ACTED ON THIS, WHICH IS THE PART WORTH REMEMBERING. THIS BOARD **OWNS NONE OF THE '
+                    'MIDDLE LAYER.** We sold CRWV on 17 July for minus $786.02, NBIS on 21 July for **plus '
+                    '$1,404.51**, and IREN on 9 September for **plus $456.24**. Net across the three: **PLUS '
+                    '$1,074.73**. Meanwhile NVDA is the largest position on the board at $79,380.28 and MU holds '
+                    '$22,581.58. WE ARE POSITIONED AT THE BOTTOM AND THE TOP AND ABSENT FROM THE MIDDLE - WHICH, ON '
+                    'THESE NUMBERS, IS EXACTLY WHERE A PROFITABLE INVESTOR SHOULD BE. || ⚠️ TWO HONEST QUALIFICATIONS. '
+                    'FIRST, A LOSS-MAKING MIDDLE LAYER IS NOT AUTOMATICALLY A BAD INVESTMENT - Amazon lost money for '
+                    'years while building a moat, and a neocloud with long contracted revenue and cheap power could '
+                    "grow into its costs. THE POINT IS THAT **THE SLIDE'S STATED REASON FOR OWNING THEM - THAT THEY "
+                    'COLLECT THE MARGIN - IS FACTUALLY FALSE TODAY.** If you want to own them, own them for a '
+                    'different reason and say what it is. SECOND, MOST OF THE MIDDLE LAYER ON THIS SLIDE IS **PRIVATE '
+                    'AND CANNOT BE BOUGHT AT ALL** - Nscale, Crusoe and Lambda are not listed, and OpenAI and '
+                    'Anthropic in the top row are not either. A DIAGRAM IS NOT A MENU.'},
+           {'d': '2026-12-10',
             'dl': '⚠️⚠️ OKLO - this is not an investment slide, it is an options day-trading slide',
             't': 'OKLO',
             'k': 'thesis',
@@ -11958,6 +12035,64 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'reference, are V 9,000, SNPS 13,000, SE 13,000 and APP 18,000 - 62,000 of allocation with nothing '
                     'bought. All four screen far better than LHX: APP Rule of 40 138.5, SNPS 75.4, V 63.6, SE 60.0. '
                     'LHX at 19.5 is the one that does not earn its slot.'},
+           {'d': '2026-12-10',
+            'dl': '⚠️⚠️ ORACLE: THE 1.7 GW IS NOT AN INVESTMENT - AND ORACLE IS BECOMING THE MIDDLE LAYER',
+            't': 'ORCL',
+            'k': 'thesis',
+            'a': 'DECIDE',
+            'amt': 0,
+            'c': 'open',
+            'w': 'THE NUMBER IS RIGHT AND THE NOUN IS WRONG. THE 1.7 GW IS **POWER PURCHASE AGREEMENTS, NOT '
+                 'OWNERSHIP** - AND 433 MW OF IT IS ON WIND FARMS COMMISSIONED IN **2008 AND 2009**. ZERO ORACLE '
+                 'CAPEX. ⚠️ IT IS IMMATERIAL BESIDE THE REAL NUMBER: **$28,499 MILLION OF CAPEX IN ONE QUARTER** AND '
+                 '**MINUS $28.7 BILLION OF TRAILING FREE CASH FLOW**.',
+            'cond': 'SALEE SUGGESTED THIS ADDS VALUE. I HAVE CHECKED IT AND THE ANSWER IS NO - ON BOTH HALVES OF THE '
+                    'SENTENCE. || **IT IS NOT AN INVESTMENT.** RWE\'S OWN RELEASE OF 17 SEPTEMBER SAYS VERBATIM: "RWE '
+                    'today announced a virtual power purchase agreement (VPPA) with Oracle for 433 megawatts" - on '
+                    '"RWE\'s existing Panther Creek I, II and III wind farms in West Texas", **COMMISSIONED IN 2008 '
+                    'AND 2009**. ENGIE\'S RELEASE IS HEADLINED "ENGIE to Supply More Than 500 MW" - SUPPLY, NOT SELL. '
+                    'A VIRTUAL POWER PURCHASE AGREEMENT IS A CONTRACT TO BUY ELECTRICITY AND CERTIFICATES. **NO STEEL '
+                    "GOES IN THE GROUND AND NO ORACLE CAPITAL IS SPENT.** Oracle's own word in its headline was "
+                    '"Invests", and the infographic simply inherited it - the error is Oracle\'s marketing, not the '
+                    "designer's. || ⚠️ IT IS ALSO **MATCHING, NOT SUPPLY**: Oracle's own executive says the goal is to "
+                    '"match 100 percent of AI data center electricity use with carbon-free electricity by 2035". The '
+                    'power goes to the ERCOT grid on an annual volumetric basis, not by wire to the Abilene data '
+                    'centre. AND 1.7 GW IS **NAMEPLATE** CAPACITY - Texas wind runs at a fraction of it. || ⚠️⚠️ NOW '
+                    "THE REAL NUMBERS, WHICH THE SLIDE NEVER MENTIONS. ORACLE'S FISCAL Q1 2027, THE QUARTER ENDED 31 "
+                    'AUGUST 2026: REVENUE $19.3bn UP 30%, GAAP OPERATING INCOME $6.7bn UP 57%, GAAP NET INCOME $4.7bn '
+                    'UP 60%, EPS $1.56 UP 55% - **A SUPERB OPERATING QUARTER**. AND IN THE SAME THREE MONTHS: '
+                    '**CAPITAL EXPENDITURE OF $28,499 MILLION AND FREE CASH FLOW OF MINUS $5,396 MILLION.** FULL YEAR '
+                    'FY2026 FREE CASH FLOW WAS **MINUS $23.7 BILLION**; TRAILING TWELVE MONTHS IS **MINUS $28.7 '
+                    'BILLION**. NOTES PAYABLE **$125,337 MILLION** AGAINST $36,369 MILLION OF CASH - **NET DEBT '
+                    '$88,260 MILLION**, AND $34,621 MILLION OF LEASES ON TOP. FY2027 GUIDANCE IS **"~$70B" OF NET '
+                    'CAPEX AND "~$40B" OF CAPITAL-MARKETS FUNDING**, AND ORACLE ALREADY "completed a $20 billion '
+                    'equity offering" IN Q1. || 🎯 AND HERE IS THE CONNECTION THAT MATTERS, BECAUSE IT TIES TO THE '
+                    'OTHER SLIDE ANSWERED TONIGHT: **ORACLE IS BECOMING THE MIDDLE LAYER.** IT BUYS GPUs WITH BORROWED '
+                    'MONEY AND RENTS OUT COMPUTE. THAT IS PRECISELY THE COREWEAVE BUSINESS MODEL AT MEGA-CAP SCALE - '
+                    "AND IT PRODUCES PRECISELY THE COREWEAVE CASH FLOW: DEEPLY NEGATIVE. THE BOARD'S RULE-OF-40 FIELD "
+                    'FOR ORCL READS **MINUS 18.4** FOR EXACTLY THIS REASON. ORACLE IS NOT A COUNTER-EXAMPLE TO '
+                    "TONIGHT'S MARGIN FINDING. **IT IS THE PROOF OF IT.** || ⚠️ THREE CORRECTIONS TO THIS BOARD'S OWN "
+                    'EARLIER NOTES, ALL FOUND BY CHECKING. (1) THE BACKLOG IS NOW **$664 BILLION AT 31 AUGUST**, NOT '
+                    'THE $638bn I RECORDED - that was the 31 May figure and is superseded. ⚠️ AND ONLY **ABOUT 13% '
+                    'CONVERTS TO REVENUE WITHIN TWELVE MONTHS**. (2) **ORACLE DISCLOSES NO CUSTOMER CONCENTRATION AT '
+                    'ALL.** My note that "roughly half is owed by OpenAI" is **PRESS CHARACTERISATION, NOT AN ORACLE '
+                    'DISCLOSURE** - it appears in no filing. I should have labelled it that way and did not. (3) '
+                    "**S&P'S OUTLOOK IS STABLE, NOT NEGATIVE** - it is MOODY'S that is negative. || THE RATINGS AS "
+                    'THEY NOW STAND, AND THE THREE AGENCIES DISAGREE, WHICH IS ITSELF THE FINDING: **S&P BBB− (CUT '
+                    "FROM BBB ON 9 JULY 2026) STABLE - ONE NOTCH ABOVE NON-INVESTMENT GRADE. MOODY'S Baa2 NEGATIVE**, "
+                    'expecting leverage near 4x and that "free cash flow will likely remain negative for an extended '
+                    'period". **FITCH BBB STABLE**, the dissenter, expecting capex "repaid within the multi-year '
+                    'contract period". || OUR POSITION: 75 SHARES AT A COST OF $12,228.43. AT THE 18 SEPTEMBER CLOSE '
+                    'OF **$147.61** THAT IS WORTH $11,070.75 - **DOWN $1,157.68**. The stock is **about 55% below its '
+                    '52-week high of $329.50**. We already part-sold 44 shares on 20 July for a loss of $1,961.73, and '
+                    'the board already carries a row reading "ORCL is now a sell candidate, not a buy one". **NOTHING '
+                    'IN THIS WIND ANNOUNCEMENT CHANGES THAT, AND THE $4,000 TRIGGER ROW DATED 10 DECEMBER SHOULD BE '
+                    'READ AS A SELL DECISION, NOT A BUY ONE.** || 💡 THE GENERAL LESSON, WHICH IS WORTH MORE THAN THE '
+                    'STOCK: **WHEN A COMPANY USES THE WORD "INVEST", ASK WHETHER ANYTHING APPEARS ON ITS BALANCE '
+                    'SHEET.** Oracle signed supply contracts on eighteen-year-old wind farms and called it investing. '
+                    'The genuine counter-example exists and is worth noting in fairness: on 8 September Oracle issued '
+                    'a request for proposals for **2 GW of BRAND NEW renewable generation in New Mexico**. THAT WOULD '
+                    'BE ADDITIONAL CAPACITY. THE TEXAS 1.7 GW LARGELY IS NOT.'},
            {'d': '2026-12-10',
             'dl': '⚠️ MY OWN FALSE ALARM - the PANW margin field was never stale',
             't': 'PANW',
