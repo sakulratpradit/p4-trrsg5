@@ -67,8 +67,6 @@ Every infographic Salee has sent, filed by industry, with **the verdict** — no
 | Date | Slide | Claim | Verdict |
 |---|---|---|---|
 | 18 Sep | **Nasdaq 23-hour trading from 6 December** | — | 🟢 **TRUE — the first anonymous "[BREAKING]" post that checked out.** SEC Release 34-105199, approved 10 April 2026. Night session 9pm–4am ET = **09:00–16:00 Bangkok.** ⚠️ But those are the *thinnest* hours — FINRA requires warnings on liquidity, volatility and spreads; **market orders are barred, limit only.** 🟡 **Also caught my own error: "Bangkok = NY + 11" is only true in the American summer.** From **1 November** it becomes +12 and the session moves to 21:30–04:00. |
-| 18 Sep | **POEMS Day-2 fills** | — | 🟢 All three filled. 🎯 **Salee used lower limits than I recommended on all three and still got filled — $407.24 better than my plan.** 🟡 Rule restated: **+1% is the maximum, not the recommendation.** |
-| 17 Sep | **POEMS Day-1 fills** | — | 🟢 TSM, CEG, V filled. ⚠️ **Reconciliation proved Salesforce is not in the account** — two independent arithmetic gaps resolved to one unrecorded sale. |
 
 ---
 
