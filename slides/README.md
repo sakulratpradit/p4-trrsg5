@@ -93,6 +93,14 @@ Every infographic Salee has sent, filed by industry, with **the verdict** — no
 
 ---
 
+## 09 · Robotics & humanoids
+
+| Date | Slide | Claim | Verdict |
+|---|---|---|---|
+| 19 Sep | **Humanoid robot anatomy — 12 components** | The 12 key parts that bring robots closer to humans | 🔴 **Filed, not acted on.** A clear teaching diagram with no companies, no prices and no numbers. 💡 Kept for one reason: the parts it names are where the value sits — **actuators, sensors, vision and the chest compute unit** are the high-margin content, while frame, feet and battery casing are commodity metalwork. ⚠️ Our only exposure is **ISRG and CGNX**, and Group 7 is still misnamed "Healthcare & Robotics" while holding no actuator or sensor maker. |
+
+---
+
 ## What this library is for
 
 **Thirty-plus slides in one month. Count the 🟢 column.**
