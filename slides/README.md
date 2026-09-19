@@ -87,9 +87,17 @@ Every infographic Salee has sent, filed by industry, with **the verdict** — no
 
 ---
 
+## 08 · Index & diversification
+
+| Date | Slide | Claim | Verdict |
+|---|---|---|---|
+| 19 Sep | **What $10,000 of the S&P 500 actually buys** | $741 NVDA, $676 AAPL, $629 MSFT; 49 largest names | 🟡 **The most useful mirror held up to the board all week — and it is accurate.** Index top-7 = **34.5%**. Our top-7 = **59.5%** ($364,557 of $612,783). We own **19 of the 49**; **25 are absent entirely** — every bank, every drug company, every staple, both oil majors, Berkshire, Tesla, Mastercard: **the whole defensive half of the American economy**. 🎯 **TSM ($54,856) and ASML ($16,394) are not in the S&P 500 at all** — Taiwanese and Dutch — so $71,250 is differentiation an index cannot give. 💡 Matching our NVIDIA exposure through the index alone would need **over $1,000,000**. **Third independent arrival this week at "everything we own is one bet."** |
+
+---
+
 ## What this library is for
 
-**Twenty-five-plus slides in one month. Count the 🟢 column.**
+**Thirty-plus slides in one month. Count the 🟢 column.**
 
 The good ideas on these slides have overwhelmingly been ideas we already had — and the slides' most valuable contribution has been **forcing checks that found faults in our own board**: the orphan positions, the unruled budgets, the phantom Salesforce holding, the ambiguous Micron condition, the misnamed Group 7, the missing clock change.
 

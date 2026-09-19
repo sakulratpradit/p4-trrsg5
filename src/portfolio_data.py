@@ -3,8 +3,32 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Sep 19, 2026 (4) - 🎯 **SLIDE LIBRARY CREATED.** Salee asked for the slides to be saved by category. Done: **slides/ '
- 'in the repository, seven industry folders** - semiconductor, AI infrastructure and data centre, power and energy, '
+ASOF = ('Sep 19, 2026 (5) - 🎯🎯 A SLIDE WITH NO QUESTION ATTACHED, AND IT IS THE MOST USEFUL OF THE MONTH - BECAUSE IT ANSWERS '
+ 'SOMETHING SALEE HAS NEVER ASKED ME: **WHY NOT JUST BUY THE INDEX?** || **THE COMPARISON: A $10,000 PURCHASE OF THE '
+ 'S&P 500 PUTS 34.5% INTO ITS TOP SEVEN. OUR BOARD PUTS 59.5% - $364,557.02 OF $612,783.30 - INTO ITS TOP SEVEN.** WE '
+ 'ARE NEARLY TWICE AS CONCENTRATED AS THE MARKET ITSELF. 💡 PUT ANOTHER WAY: **$10,000 OF THE INDEX BUYS $741 OF '
+ 'NVIDIA. WE HOLD $79,380. TO MATCH OUR NVIDIA EXPOSURE THROUGH THE INDEX YOU WOULD HAVE TO INVEST OVER A MILLION '
+ "DOLLARS.** || WE OWN **19 OF THE SLIDE'S 49 NAMES**, and those 19 are **42.7% of the index**. Five more sit on our "
+ 'board unfunded - CAT, DELL, GE, IBM, NFLX. ⚠️⚠️ **AND THE 25 WE DO NOT HOLD AT ALL ARE THE FINDING: BANKS (JPM, BAC, '
+ 'GS, MS, WFC), HEALTHCARE (JNJ, LLY, MRK, UNH, ABBV, TMO), STAPLES (PG, KO, COST, WMT, PM), ENERGY (XOM, CVX), '
+ 'PAYMENTS (MA), INSURANCE (BRK). THAT IS THE ENTIRE DEFENSIVE HALF OF THE AMERICAN ECONOMY.** 🎯 **THIRD INDEPENDENT '
+ 'ARRIVAL AT THE SAME CONCLUSION IN ONE WEEK** - after the zero-oil finding and the defence group at 16.3% deployed. '
+ 'EVERYTHING WE OWN IS ONE BET, and this slide is the first thing to put a number on it. || 🎯 BUT THE CONCENTRATION IS '
+ 'NOT A MISTAKE, AND THIS MUST BE SAID: **YOU CANNOT DOUBLE BY OWNING THE AVERAGE.** The mandate is 100% gain by 2030 '
+ '- about 14.87% a year. A concentrated bet on the AI value chain is the only structure that plausibly gets there, AND '
+ 'IT IS ALSO THE STRUCTURE THAT LOSES MOST IF THE BET IS WRONG. That trade-off is the design of this board and it '
+ 'should be said out loud rather than discovered later. || 💡 AND WHAT THE INDEX CANNOT GIVE HIM AT ALL: **TSM AT '
+ '$54,856.42 AND ASML AT $16,394.06 ARE NOT IN THE S&P 500** - Taiwanese and Dutch. **$71,250.48 OF GENUINE '
+ 'DIFFERENTIATION**, and not accidental: the moat ranking put TSM 11th of 81 and ASML 13th, and ASML is the one '
+ 'company nobody can replace. AN INDEX BUYER CANNOT OWN THEM. || ⚠️ ONE PRACTICAL WARNING THAT COSTS NOTHING: **IF '
+ 'SALEE HOLDS AN S&P 500 FUND ANYWHERE ELSE - a retirement account, a Thai-domiciled fund - HE IS DOUBLING UP ON '
+ 'EXACTLY THESE NAMES WITHOUT MEANING TO.** Worth checking before 10 December. || DECISION FOR 10 DECEMBER, THE SAME '
+ 'ONE THE OIL AND DEFENCE FINDINGS POINTED AT: **WRITE DOWN EXPLICITLY THAT PILLAR 4 IS A CONCENTRATED AI BET AND THE '
+ "DEFENSIVE HALF IS DELIBERATELY EXCLUDED BECAUSE IT IS COVERED BY THE OTHER 90% OF SALEE'S WEALTH - PROPERTY 75%, "
+ 'THAI EQUITY 10%, SUBWAY 5%.** IF TRUE, THE CONCENTRATION IS CORRECT AND THIS SLIDE IS REASSURANCE. IF NOT TRUE, IT '
+ 'IS A WARNING. **EITHER WAY IT HAS NEVER BEEN WRITTEN DOWN.** NOTHING BOUGHT, NOTHING SOLD. || PREVIOUS ENTRY: Sep '
+ '19, 2026 (4) - 🎯 **SLIDE LIBRARY CREATED.** Salee asked for the slides to be saved by category. Done: **slides/ in '
+ 'the repository, seven industry folders** - semiconductor, AI infrastructure and data centre, power and energy, '
  'biotech, defence and space, market structure and trading, valuation and method - **plus slides/README.md, an index '
  'of every slide with its date, its claim and MY VERDICT**, colour-coded green for acted on, yellow for changed a '
  'rule, red for no action with the reason, black for factually wrong. || ⚠️⚠️ AND A WARNING FOUND WHILE DOING IT: '
@@ -10896,6 +10920,54 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'an unintended gap. EITHER ANSWER IS FINE. HAVING NO ANSWER IS NOT - it is the same '
                     'absence-of-a-decision fault as ARM, SNPS, LHX, APP and SE. CONVICTION HIGH ON WRITING IT DOWN, '
                     'NEUTRAL ON WHICH WAY IT GOES.'},
+           {'d': '2026-12-10',
+            'dl': '🎯🎯 THE INDEX SLIDE ANSWERS A QUESTION SALEE HAS NEVER ASKED - "should I just buy the index?"',
+            't': 'CASH',
+            'k': 'thesis',
+            'a': 'DECIDE',
+            'amt': 0,
+            'c': 'open',
+            'w': '**THE S&P 500 PUTS 34.5% IN ITS TOP SEVEN. WE PUT 59.5%.** WE ARE NEARLY TWICE AS CONCENTRATED AS '
+                 'THE INDEX. ⚠️ AND THE 25 NAMES ON THAT SLIDE WE DO NOT OWN ARE THE ENTIRE DEFENSIVE HALF OF THE '
+                 'AMERICAN ECONOMY - BANKS, HEALTHCARE, STAPLES, ENERGY, INSURANCE.',
+            'cond': 'A SLIDE WITH NO QUESTION ATTACHED, AND IT TURNS OUT TO BE THE MOST USEFUL ONE THIS MONTH - '
+                    'BECAUSE IT LETS ME ANSWER SOMETHING SALEE HAS NEVER ASKED ME: **WHY NOT JUST BUY THE INDEX?** || '
+                    '**THE CONCENTRATION COMPARISON, WHICH IS THE WHOLE POINT.** A $10,000 PURCHASE OF THE S&P 500 '
+                    'PUTS **$3,453 - 34.5% - INTO ITS TOP SEVEN COMPANIES.** OUR BOARD PUTS **$364,557.02 OF '
+                    '$612,783.30 - 59.5% - INTO ITS TOP SEVEN**: NVDA $79,380, GOOGL $59,476, TSM $54,856, MSFT '
+                    '$52,879, AMZN $48,601, META $39,240, AVGO $30,125. 💡 PUT ANOTHER WAY: **$10,000 OF THE INDEX BUYS '
+                    'YOU $741 OF NVIDIA. WE HOLD $79,380. TO GET OUR NVIDIA EXPOSURE THROUGH THE INDEX YOU WOULD NEED '
+                    'TO INVEST OVER A MILLION DOLLARS.** WE ARE RUNNING A DELIBERATELY UNDIVERSIFIED PORTFOLIO, AND '
+                    'THAT SHOULD BE A CONSCIOUS CHOICE RATHER THAN AN ACCIDENT. || THE OVERLAP: **WE OWN 19 OF THE '
+                    "SLIDE'S 49 NAMES, AND THOSE 19 ARE $4,270 OF THE $10,000 - 42.7% OF THE INDEX.** Five more are on "
+                    'our board unfunded (CAT, DELL, GE, IBM, NFLX). || ⚠️⚠️ AND THE 25 WE DO NOT HOLD AT ALL ARE THE '
+                    'FINDING. LOOK AT WHAT THEY ARE: **BANKS - JPM, BAC, GS, MS, WFC. HEALTHCARE - JNJ, LLY, MRK, UNH, '
+                    'ABBV, TMO. STAPLES - PG, KO, COST, WMT, PM. ENERGY - XOM, CVX. PAYMENTS - MA. INSURANCE - BRK. '
+                    'AND TSLA.** THAT IS THE ENTIRE DEFENSIVE HALF OF THE AMERICAN ECONOMY, AND WE OWN NONE OF IT. 🎯 '
+                    '**THIS IS THE THIRD INDEPENDENT ARRIVAL AT THE SAME CONCLUSION IN ONE WEEK.** The zero-oil '
+                    'finding. The defence group at 16.3% deployed. And now this. **EVERYTHING WE OWN IS ONE BET** - '
+                    'and the index slide is the first thing to put a number on how much more concentrated that bet is '
+                    "than the market's own. || 🎯 NOW THE OTHER SIDE, BECAUSE THE CONCENTRATION IS NOT A MISTAKE. **YOU "
+                    'CANNOT DOUBLE BY OWNING THE AVERAGE.** The Pillar 4 mandate is 100% capital gain by 2030, which '
+                    'needs about 14.87% a year. The S&P 500 has not historically delivered that. A concentrated bet on '
+                    'the AI value chain is the ONLY structure that plausibly gets there - AND IT IS ALSO THE STRUCTURE '
+                    'THAT LOSES MOST IF THE BET IS WRONG. THAT TRADE-OFF IS THE WHOLE DESIGN OF THIS BOARD AND IT '
+                    'SHOULD BE SAID OUT LOUD RATHER THAN DISCOVERED LATER. || 💡 AND THE ONE THING WE HAVE THAT THE '
+                    'INDEX CANNOT GIVE HIM AT ALL: **TSM AT $54,856.42 AND ASML AT $16,394.06 ARE NOT IN THE S&P '
+                    '500.** Taiwan Semiconductor is Taiwanese and ASML is Dutch - the index holds neither. **THAT IS '
+                    '$71,250.48 OF GENUINE DIFFERENTIATION**, and it is not an accident: the moat ranking placed TSM '
+                    '11th of 81 and ASML 13th, and ASML is the one company on any semiconductor slide that nobody can '
+                    'replace. AN INDEX BUYER SIMPLY CANNOT OWN THEM. || ⚠️ AND ONE PRACTICAL WARNING THAT COSTS '
+                    'NOTHING TO ACT ON: **IF SALEE HOLDS AN S&P 500 FUND ANYWHERE ELSE - IN A RETIREMENT ACCOUNT, A '
+                    'THAI-DOMICILED FUND, ANYTHING - HE IS DOUBLING UP ON EXACTLY THESE NAMES WITHOUT MEANING TO.** '
+                    '$10,000 of index already contains $741 of NVIDIA, $700 of Apple and $605 of Alphabet. **THAT IS '
+                    'WORTH CHECKING BEFORE 10 DECEMBER.** || DECISION FOR 10 DECEMBER, AND IT IS THE SAME ONE THE OIL '
+                    'AND DEFENCE FINDINGS POINTED AT: **WRITE DOWN, AS AN EXPLICIT DECISION, THAT PILLAR 4 IS A '
+                    'CONCENTRATED AI BET AND THAT THE DEFENSIVE HALF OF THE MARKET IS DELIBERATELY EXCLUDED BECAUSE IT '
+                    "IS COVERED BY THE OTHER 90% OF SALEE'S WEALTH - PROPERTY AT 75%, THAI EQUITY AT 10%, SUBWAY AT "
+                    '5%.** IF THAT IS TRUE, THE CONCENTRATION IS CORRECT AND THIS SLIDE IS REASSURANCE, NOT A WARNING. '
+                    'IF IT IS NOT TRUE, IT IS A WARNING. **EITHER WAY IT HAS NEVER BEEN WRITTEN DOWN.** CONVICTION '
+                    'HIGH ON WRITING IT DOWN. NO POSITION CHANGE PROPOSED.'},
            {'d': '2026-12-10',
             'dl': 'Quarterly review - back-up name',
             't': 'CDNS',
