@@ -1,25 +1,10 @@
-# P4 daily price refresh — status
+# P4 price refresh - status
 
-- Run time (UTC): 2026-09-23 00:41 – 01:05 (the 00:30 UTC Wednesday firing; prior same-night run had not landed — board was still at 2026-09-21)
-- Trading date recorded: **2026-09-22** (Tue)
-- Result: **PUSHED**
-- Commit: `f95c08aa8bd0bc418fb5f0a09590d50cf03473fc` ("Daily price refresh 2026-09-22: 94 prices"), confirmed on origin/main
-- Prices changed: **94 of 94** (no unresolved tickers)
-- Sanity gate: first run BLOCKED on the five >6% movers, as designed; each was verified against a second independent source, then PASS with `--allow ALAB --allow FPS --allow MPWR --allow SHOP --allow SNDK`:
-  - MPWR +8.06% → 1380.62 (confirmed: MarketScreener, same price and %)
-  - SHOP +7.12% → 147.74 (confirmed: Google Finance, closed Sep 22 4:00 PM)
-  - SNDK +6.82% → 1887.04 (confirmed: Google Finance)
-  - ALAB +6.67% → 363.46 (confirmed: Google Finance)
-  - FPS +22.83% → 38.52 — large only because the board's FPS base was stale at its 2026-09-15 value (31.36); vs its own Sep 21 close (37.75) the day move was +2.04%. Confirmed: ycharts "Sep 22, 16:00" print 38.51 (ycharts runs 2–3¢ low). FPS is now back on a current date.
-- Largest genuine one-day move: MPWR +8.06%; largest table change: FPS +22.83% (stale-base catch-up)
-- Quote page vs history table disagreements (quote page used per the resolution rule; both stamp and prev-close tests passed):
-  - GOOGL 351.16 (history said 351.23), SE 103.67 (103.76), ZETA 30.13 (30.49), FPS 38.52 (38.09, history row volume anomalously low)
-  - XE: history's Sep 22 row was internally impossible (close 16.24 below its own low 16.25, volume ~267K vs typical millions) — discarded; quote page 16.36 used
-  - TSEM: history's *Sep 21* row (238.54, volume 427K) contradicted the board's verified Sep 21 close 233.82 — history discarded; quote 236.61 confirmed via Google Finance (same close, range, volume)
-  - CGNX: history table stale (latest row Sep 18); quote 58.97 confirmed via a GuruFocus article published Sep 22 17:20 ("shares fell 4.9% to $58.97")
-  - APH: quote's stated prev close (80.60) differed from the board's 80.72, but both sources agreed on the Sep 22 close 82.84 — used
-- Stale/broken sources this run: Google Finance beta was per-ticker stale for FPS (served Sep 17) and CGNX (served Sep 18); MarketScreener stale for SNDK (Sep 21), badly stale for CGNX (Aug 14) and scrambled for SHOP (printed 134.10 −7.57%, matching no recent session — do not trust MarketScreener for SHOP); fool.com /quote/ page for CGNX undated and internally inconsistent (price above its own day range) — ignored
-- 52-week ranges extended: AMD hi52 623.77, SKHY hi52 195.37, CRWD hi52 250.06, NET hi52 353.00; LHX lo52 239.89, BWXT lo52 144.51
-- Notes: SKHY `mcapB` left null (no stored base to scale; price/pxd updated). mcapB scaled in lockstep with price for the other 93.
-- Live page: push to origin/main confirmed and the built page renders locally via Playwright with ZERO PAGE ERRORS (472 table rows); the sandbox could not HTTP-fetch https://sakulratpradit.github.io/p4-trrsg5/ directly (fetch-provenance restriction), so the Pages rebuild itself was not observed — expected to serve f95c08a within minutes.
-- Blockers: none.
+- Run time (UTC): 2026-09-23 03:41 (second scheduled slot, 03:30 UTC)
+- Trading date recorded: 2026-09-22 (Tue)
+- Result: NO-OP BY DESIGN - first-check rule triggered. All 94/94 tickers already had pxd = 2026-09-22 from the earlier 00:30 UTC run.
+- PUSHED or NOT PUSHED: NOT PUSHED (no price edits this run; only this status file committed)
+- Refresh commit from earlier run: f95c08a "Daily price refresh 2026-09-22: 94 prices" (status commit 8a3d153)
+- Number of prices changed this run: 0
+- Unresolved tickers: none
+- Blockers: none
