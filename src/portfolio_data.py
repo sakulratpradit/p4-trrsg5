@@ -3,78 +3,86 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Sep 23, 2026 - DAILY PRICE REFRESH: 94 of 94 closes updated to the Wed 2026-09-23 close. Two moves over the 6% gate, '
- 'both confirmed against Google Finance closed-market stamps: AXTI -6.18% (72.98), LUNR -6.16% (15.24). '
- 'Partial-capture or stale /history/ rows rejected in favor of the 4:00 PM-stamped quote page (second-source confirmed '
- 'where material): CDNS, SNPS, TER, MCHP, FN, FSLR, ONDS, DDOG, TEM, TSEM; AXTI history row internally impossible '
- '(close below its own low). XE quote page was intraday-stamped (10:32 AM) with a corrupt history table - resolved via '
- 'Google Finance beta (16.38, Closed Sep 23 4:00 PM). AMBA history frozen at Jul 21 - quote page 67.62 used (YCharts '
- 'ballpark 67.69). LRCX quote page carried a stale prev close - history row 307.28 used (matched quote price). AEP and '
- 'HUBB history tables had no Sep 23 row yet - quote pages used, second-source confirmed. || PREVIOUS ENTRY: Sep 22, '
- '2026 - DAILY PRICE REFRESH: 94 of 94 closes updated to the Tue 2026-09-22 close. FPS back current (38.52, was stuck '
- 'at its 2026-09-15 value; confirmed via ycharts 16:00 stamp). Five moves over the 6% gate, each confirmed against a '
- 'second source: MPWR +8.06% (MarketScreener), SHOP +7.12% (Google Finance), SNDK +6.82% (Google Finance), ALAB +6.67% '
- '(Google Finance), FPS +22.8% vs stale base. TSEM 236.61 and CGNX 58.97 resolved via Google Finance / post-close '
- 'article because the stockanalysis history table was stale or corrupt for them; XE history row internally impossible '
- '(close below its own low), quote page used. || PREVIOUS ENTRY: Sep 21, 2026 - DAILY PRICE REFRESH: 93 of 94 closes '
- 'updated to the Mon 2026-09-21 close (FPS left at its 2026-09-15 value - +20% move, no current second source to '
- 'confirm; Google Finance/MarketScreener/fool all stale for it). || PREVIOUS ENTRY: Sep 21, 2026 - BUDGET RESET '
- 'APPROVED BY SALEE. The $1,000,000 budget was $189,269.96 more than the money in the account ($810,730.04). Every '
- 'name with money left now carries a label: Tier A buy-on-date $77,760.65 (SNPS, APH, CRDO, VRT, VST, CEG, LHX, V, ETN '
- '- half 13 Oct, half 10 Nov); Tier B conditional/dated $253,019.13; withdrawn $73,481.55. Sell four orphans (INTC, '
- 'SKHY, FSLR, CRWD). New money: +$150,000 January 2027, top-up to $1,000,000 by February 2027. Target 90% invested. '
- 'Board promise 2x by 2035; internal stretch 2x by 2030. Total budget now $934,604.58. || PREVIOUS ENTRY: Sep 21, 2026 '
- '- META PLAN CORRECTED AND APPROVED. The two October rungs ($10,760.49 on 9 Oct + $10,000 on 28 Oct) exceeded the '
- '$12,760.49 left in the META budget by $8,000. Salee approved an equal split: $6,380.24 on 9 Oct, and $6,380.24 on 28 '
- 'Oct if the Q3 test passes. Nothing bought, nothing sold. || PREVIOUS ENTRY: Sep 19, 2026 (6) - 🎯🎯 SALEE ASKED FOR '
- '"S&P STOCKS FOR INVESTMENT" AND THE AUDIT ANSWERS IT BEFORE ANY NEW NAME IS NEEDED: **31 OF OUR 39 FUNDED POSITIONS '
- 'ARE ALREADY S&P 500 MEMBERS, HOLDING $518,344.60 OF $612,783.30 - 84.6% OF THE INVESTED BOOK.** ONLY EIGHT FUNDED '
- 'NAMES SIT OUTSIDE THE INDEX: TSM $54,856, ASML $16,394, CRDO $7,701, CGNX $4,068, ALAB $3,805, AVAV $3,758, RKLB '
- '$1,943, SKHY $1,913 = $94,438.70. || 🎯 **AND THE UNSPENT S&P 500 MONEY ALREADY APPROVED, EXCLUDING THE TOP SEVEN, IS '
- '$229,886.62 - MORE THAN THE $197,946.74 OF CASH.** THE LARGEST ROOMS: MU $28,418, APP $18,000, ISRG $15,618, MRVL '
- '$13,127, SNPS $13,000, APH $12,996, AAPL $12,562, AMAT $11,913, LRCX $11,900, VRT $11,162, KLAC $10,489, PLTR '
- '$10,467, AMD $10,211, ANET $9,414, LHX $9,000. **THERE IS NO S&P 500 NAME THIS BOARD NEEDS TO ADD. THERE ARE S&P 500 '
- 'ORDERS IT HAS NEVER PLACED.** || ⚠️⚠️ **INDEX MEMBERSHIP FACTS ESTABLISHED TODAY AND NOT PREVIOUSLY ON THE BOARD, '
- 'ALL FROM S&P DOW JONES INDICES ANNOUNCEMENTS:** **LUMENTUM (LITE) JOINED THE S&P 500 ON 23 MARCH 2026**, in the same '
- 'rebalance as **VERTIV (VRT)**, **COHERENT (COHR)** and EchoStar. **MARVELL (MRVL) JOINED ON 22 JUNE 2026** with '
- 'Flex. **APPLOVIN (APP) JOINED ON 22 SEPTEMBER 2025** with Robinhood and EMCOR. **CIENA (CIEN) JOINED ON 9 FEBRUARY '
- '2026.** Three of those four - LITE, VRT, MRVL - we already own, and did not know they were index members. COHR and '
- 'CIEN sit on the board with NO BUDGET. || ⚠️⚠️ **AND THE ONE THAT MATTERS THIS WEEK: BLOOM ENERGY (BE) JOINS THE S&P '
- '500 ON MONDAY 21 SEPTEMBER 2026.** THIS BOARD WROTE A FORMAL NO ON BLOOM ON 5 SEPTEMBER AND RECONFIRMED IT: a live '
- 'securities class action with a **lead-plaintiff deadline of 28 SEPTEMBER**, class period 27 Feb 2025 to 8 Jul 2026, '
- 'triggered by a Hunterbrook report alleging Bloom understated its reliance on Chinese scandium; EV/EBITDA **118**; '
- 'price-to-free-cash-flow 76; debt-to-equity **1.71**. **INDEX INCLUSION FORCES EVERY S&P 500 TRACKER FUND TO BUY THE '
- 'SHARES, WHICH USUALLY LIFTS THE PRICE IN THE DAYS AROUND IT.** ⚠️ **THAT LIFT IS NOT EVIDENCE.** An index '
- "committee's decision is about size, liquidity and domicile - it is not a verdict on a lawsuit or a balance sheet. IF "
- 'BLOOM RISES NEXT WEEK, NOTHING WE WROTE ON 5 SEPTEMBER HAS BEEN DISPROVED. || 💡 **ILLUMINA (ILMN) ALSO JOINS ON 21 '
- 'SEPTEMBER** - and Illumina was the FIRST NAME on the "tools, not clinical coin flips" list this board drew up two '
- 'days ago from the 18-name biotech slide. It is now simultaneously the best-argued biotech candidate we have and a '
- 'name about to be bought mechanically by every index fund. **THAT IS THE WORST WEEK OF THE YEAR TO BUY IT**, and the '
- 'reason to write the row now and date it late. **THE TRADE DESK (TTD) IS REMOVED** in the same rebalance, alongside '
- 'Molson Coors and Builders FirstSource. || ⚠️ **AXT (AXTI) JOINS THE S&P SMALLCAP 600 ON 21 SEPTEMBER** - this board '
- 'took an AXTI entry decision on 22 August and it still carries no budget. **PALO ALTO NETWORKS AND ARISTA BOTH MOVE '
- 'INTO THE S&P 100** in the same announcement. || 🎯🎯 **THE CONCLUSION, AND IT IS THE SAME ONE FOR THE FOURTH TIME THIS '
- 'WEEK.** Buying the S&P 500 is not an alternative this board has failed to consider - IT IS 84.6% OF WHAT THE BOARD '
- 'ALREADY IS. The genuine choices left are the $94,438.70 that is deliberately outside the index and the $229,886.62 '
- 'of index money approved and never spent. **WE ARE NOT SHORT OF S&P 500 IDEAS. WE ARE SHORT OF S&P 500 ORDERS.** || '
- 'PREVIOUS ENTRY: Sep 19, 2026 (5) - 🎯🎯 A SLIDE WITH NO QUESTION ATTACHED, AND IT IS THE MOST USEFUL OF THE MONTH - '
- 'BECAUSE IT ANSWERS SOMETHING SALEE HAS NEVER ASKED ME: **WHY NOT JUST BUY THE INDEX?** || **THE COMPARISON: A '
- '$10,000 PURCHASE OF THE S&P 500 PUTS 34.5% INTO ITS TOP SEVEN. OUR BOARD PUTS 59.5% - $364,557.02 OF $612,783.30 - '
- 'INTO ITS TOP SEVEN.** WE ARE NEARLY TWICE AS CONCENTRATED AS THE MARKET ITSELF. 💡 PUT ANOTHER WAY: **$10,000 OF THE '
- 'INDEX BUYS $741 OF NVIDIA. WE HOLD $79,380. TO MATCH OUR NVIDIA EXPOSURE THROUGH THE INDEX YOU WOULD HAVE TO INVEST '
- "OVER A MILLION DOLLARS.** || WE OWN **19 OF THE SLIDE'S 49 NAMES**, and those 19 are **42.7% of the index**. Five "
- 'more sit on our board unfunded - CAT, DELL, GE, IBM, NFLX. ⚠️⚠️ **AND THE 25 WE DO NOT HOLD AT ALL ARE THE FINDING: '
- 'BANKS (JPM, BAC, GS, MS, WFC), HEALTHCARE (JNJ, LLY, MRK, UNH, ABBV, TMO), STAPLES (PG, KO, COST, WMT, PM), ENERGY '
- '(XOM, CVX), PAYMENTS (MA), INSURANCE (BRK). THAT IS THE ENTIRE DEFENSIVE HALF OF THE AMERICAN ECONOMY.** 🎯 **THIRD '
- 'INDEPENDENT ARRIVAL AT THE SAME CONCLUSION IN ONE WEEK** - after the zero-oil finding and the defence group at 16.3% '
- 'deployed. EVERYTHING WE OWN IS ONE BET, and this slide is the first thing to put a number on it. || 🎯 BUT THE '
- 'CONCENTRATION IS NOT A MISTAKE, AND THIS MUST BE SAID: **YOU CANNOT DOUBLE BY OWNING THE AVERAGE.** The mandate is '
- '100% gain by 2030 - about 14.87% a year. A concentrated bet on the AI value chain is the only structure that '
- 'plausibly gets there, AND IT IS ALSO THE STRUCTURE THAT LOSES MOST IF THE BET IS WRONG. That trade-off is the design '
- 'of this board and it should be said out loud rather than discovered later. || 💡 AND WHAT THE INDEX CANNOT GIVE HIM '
- 'AT ALL: **TSM AT $54,856.42 AND ASML AT $16,394.06 ARE NOT IN THE S&P 500** - Taiwanese and Dutch. **$71,250.48 OF '
- 'GENUINE DIFFERENTIATION**, and not accidental: the moat ranking put TSM 11th of 81 and ASML 13th, and ASML is the '
- 'one company nobody can replace. AN INDEX BUYER CANNOT OWN THEM. || ⚠️ ONE PRACTICAL WARNING THAT COSTS NOTHING: **IF '
+ASOF = ('Sep 24, 2026 - TWO SELLS EXECUTED AT POEMS, BOTH MARKET-ON-OPEN, BOTH FILLED IN FULL. SKHY: 15 shares at 191.51, net '
+ '2,864.01, realised PLUS 950.75 (+49.7%), sold within 2% of the 52-week high - the reason was the ~43% ADR premium '
+ 'over the Korean listing and no budget, never the business. INTC: 25 shares at 124.19, net 3,096.10, realised PLUS '
+ '1,968.54 (2.7x cost) - POSITION CLOSED, on top of the 1,163.35 banked in the 10 Sep partial. Combined cash credit '
+ '5,960.11, so CASH 197,946.74 -> 203,906.85. LIFETIME REALISED IMPROVES FROM -3,459.80 TO -540.51 - the book is now '
+ 'within 541 dollars of break-even on closed trades. Holdings 39 -> 37 names. Two orphans remain on the sell list: '
+ 'CRWD and FSLR on 13 October. POS, SOLD, REALIZED, TRADES, MONTHLY, CASH, TOTALS and the two schedule rows updated; '
+ 'prices untouched. || PREVIOUS ENTRY: Sep 23, 2026 - DAILY PRICE REFRESH: 94 of 94 closes updated to the Wed '
+ '2026-09-23 close. Two moves over the 6% gate, both confirmed against Google Finance closed-market stamps: AXTI '
+ '-6.18% (72.98), LUNR -6.16% (15.24). Partial-capture or stale /history/ rows rejected in favor of the 4:00 '
+ 'PM-stamped quote page (second-source confirmed where material): CDNS, SNPS, TER, MCHP, FN, FSLR, ONDS, DDOG, TEM, '
+ 'TSEM; AXTI history row internally impossible (close below its own low). XE quote page was intraday-stamped (10:32 '
+ 'AM) with a corrupt history table - resolved via Google Finance beta (16.38, Closed Sep 23 4:00 PM). AMBA history '
+ 'frozen at Jul 21 - quote page 67.62 used (YCharts ballpark 67.69). LRCX quote page carried a stale prev close - '
+ 'history row 307.28 used (matched quote price). AEP and HUBB history tables had no Sep 23 row yet - quote pages used, '
+ 'second-source confirmed. || PREVIOUS ENTRY: Sep 22, 2026 - DAILY PRICE REFRESH: 94 of 94 closes updated to the Tue '
+ '2026-09-22 close. FPS back current (38.52, was stuck at its 2026-09-15 value; confirmed via ycharts 16:00 stamp). '
+ 'Five moves over the 6% gate, each confirmed against a second source: MPWR +8.06% (MarketScreener), SHOP +7.12% '
+ '(Google Finance), SNDK +6.82% (Google Finance), ALAB +6.67% (Google Finance), FPS +22.8% vs stale base. TSEM 236.61 '
+ 'and CGNX 58.97 resolved via Google Finance / post-close article because the stockanalysis history table was stale or '
+ 'corrupt for them; XE history row internally impossible (close below its own low), quote page used. || PREVIOUS '
+ 'ENTRY: Sep 21, 2026 - DAILY PRICE REFRESH: 93 of 94 closes updated to the Mon 2026-09-21 close (FPS left at its '
+ '2026-09-15 value - +20% move, no current second source to confirm; Google Finance/MarketScreener/fool all stale for '
+ 'it). || PREVIOUS ENTRY: Sep 21, 2026 - BUDGET RESET APPROVED BY SALEE. The $1,000,000 budget was $189,269.96 more '
+ 'than the money in the account ($810,730.04). Every name with money left now carries a label: Tier A buy-on-date '
+ '$77,760.65 (SNPS, APH, CRDO, VRT, VST, CEG, LHX, V, ETN - half 13 Oct, half 10 Nov); Tier B conditional/dated '
+ '$253,019.13; withdrawn $73,481.55. Sell four orphans (INTC, SKHY, FSLR, CRWD). New money: +$150,000 January 2027, '
+ 'top-up to $1,000,000 by February 2027. Target 90% invested. Board promise 2x by 2035; internal stretch 2x by 2030. '
+ 'Total budget now $934,604.58. || PREVIOUS ENTRY: Sep 21, 2026 - META PLAN CORRECTED AND APPROVED. The two October '
+ 'rungs ($10,760.49 on 9 Oct + $10,000 on 28 Oct) exceeded the $12,760.49 left in the META budget by $8,000. Salee '
+ 'approved an equal split: $6,380.24 on 9 Oct, and $6,380.24 on 28 Oct if the Q3 test passes. Nothing bought, nothing '
+ 'sold. || PREVIOUS ENTRY: Sep 19, 2026 (6) - 🎯🎯 SALEE ASKED FOR "S&P STOCKS FOR INVESTMENT" AND THE AUDIT ANSWERS IT '
+ 'BEFORE ANY NEW NAME IS NEEDED: **31 OF OUR 39 FUNDED POSITIONS ARE ALREADY S&P 500 MEMBERS, HOLDING $518,344.60 OF '
+ '$612,783.30 - 84.6% OF THE INVESTED BOOK.** ONLY EIGHT FUNDED NAMES SIT OUTSIDE THE INDEX: TSM $54,856, ASML '
+ '$16,394, CRDO $7,701, CGNX $4,068, ALAB $3,805, AVAV $3,758, RKLB $1,943, SKHY $1,913 = $94,438.70. || 🎯 **AND THE '
+ 'UNSPENT S&P 500 MONEY ALREADY APPROVED, EXCLUDING THE TOP SEVEN, IS $229,886.62 - MORE THAN THE $197,946.74 OF '
+ 'CASH.** THE LARGEST ROOMS: MU $28,418, APP $18,000, ISRG $15,618, MRVL $13,127, SNPS $13,000, APH $12,996, AAPL '
+ '$12,562, AMAT $11,913, LRCX $11,900, VRT $11,162, KLAC $10,489, PLTR $10,467, AMD $10,211, ANET $9,414, LHX $9,000. '
+ '**THERE IS NO S&P 500 NAME THIS BOARD NEEDS TO ADD. THERE ARE S&P 500 ORDERS IT HAS NEVER PLACED.** || ⚠️⚠️ **INDEX '
+ 'MEMBERSHIP FACTS ESTABLISHED TODAY AND NOT PREVIOUSLY ON THE BOARD, ALL FROM S&P DOW JONES INDICES ANNOUNCEMENTS:** '
+ '**LUMENTUM (LITE) JOINED THE S&P 500 ON 23 MARCH 2026**, in the same rebalance as **VERTIV (VRT)**, **COHERENT '
+ '(COHR)** and EchoStar. **MARVELL (MRVL) JOINED ON 22 JUNE 2026** with Flex. **APPLOVIN (APP) JOINED ON 22 SEPTEMBER '
+ '2025** with Robinhood and EMCOR. **CIENA (CIEN) JOINED ON 9 FEBRUARY 2026.** Three of those four - LITE, VRT, MRVL - '
+ 'we already own, and did not know they were index members. COHR and CIEN sit on the board with NO BUDGET. || ⚠️⚠️ '
+ '**AND THE ONE THAT MATTERS THIS WEEK: BLOOM ENERGY (BE) JOINS THE S&P 500 ON MONDAY 21 SEPTEMBER 2026.** THIS BOARD '
+ 'WROTE A FORMAL NO ON BLOOM ON 5 SEPTEMBER AND RECONFIRMED IT: a live securities class action with a **lead-plaintiff '
+ 'deadline of 28 SEPTEMBER**, class period 27 Feb 2025 to 8 Jul 2026, triggered by a Hunterbrook report alleging Bloom '
+ 'understated its reliance on Chinese scandium; EV/EBITDA **118**; price-to-free-cash-flow 76; debt-to-equity '
+ '**1.71**. **INDEX INCLUSION FORCES EVERY S&P 500 TRACKER FUND TO BUY THE SHARES, WHICH USUALLY LIFTS THE PRICE IN '
+ "THE DAYS AROUND IT.** ⚠️ **THAT LIFT IS NOT EVIDENCE.** An index committee's decision is about size, liquidity and "
+ 'domicile - it is not a verdict on a lawsuit or a balance sheet. IF BLOOM RISES NEXT WEEK, NOTHING WE WROTE ON 5 '
+ 'SEPTEMBER HAS BEEN DISPROVED. || 💡 **ILLUMINA (ILMN) ALSO JOINS ON 21 SEPTEMBER** - and Illumina was the FIRST NAME '
+ 'on the "tools, not clinical coin flips" list this board drew up two days ago from the 18-name biotech slide. It is '
+ 'now simultaneously the best-argued biotech candidate we have and a name about to be bought mechanically by every '
+ 'index fund. **THAT IS THE WORST WEEK OF THE YEAR TO BUY IT**, and the reason to write the row now and date it late. '
+ '**THE TRADE DESK (TTD) IS REMOVED** in the same rebalance, alongside Molson Coors and Builders FirstSource. || ⚠️ '
+ '**AXT (AXTI) JOINS THE S&P SMALLCAP 600 ON 21 SEPTEMBER** - this board took an AXTI entry decision on 22 August and '
+ 'it still carries no budget. **PALO ALTO NETWORKS AND ARISTA BOTH MOVE INTO THE S&P 100** in the same announcement. '
+ '|| 🎯🎯 **THE CONCLUSION, AND IT IS THE SAME ONE FOR THE FOURTH TIME THIS WEEK.** Buying the S&P 500 is not an '
+ 'alternative this board has failed to consider - IT IS 84.6% OF WHAT THE BOARD ALREADY IS. The genuine choices left '
+ 'are the $94,438.70 that is deliberately outside the index and the $229,886.62 of index money approved and never '
+ 'spent. **WE ARE NOT SHORT OF S&P 500 IDEAS. WE ARE SHORT OF S&P 500 ORDERS.** || PREVIOUS ENTRY: Sep 19, 2026 (5) - '
+ '🎯🎯 A SLIDE WITH NO QUESTION ATTACHED, AND IT IS THE MOST USEFUL OF THE MONTH - BECAUSE IT ANSWERS SOMETHING SALEE '
+ 'HAS NEVER ASKED ME: **WHY NOT JUST BUY THE INDEX?** || **THE COMPARISON: A $10,000 PURCHASE OF THE S&P 500 PUTS '
+ '34.5% INTO ITS TOP SEVEN. OUR BOARD PUTS 59.5% - $364,557.02 OF $612,783.30 - INTO ITS TOP SEVEN.** WE ARE NEARLY '
+ 'TWICE AS CONCENTRATED AS THE MARKET ITSELF. 💡 PUT ANOTHER WAY: **$10,000 OF THE INDEX BUYS $741 OF NVIDIA. WE HOLD '
+ '$79,380. TO MATCH OUR NVIDIA EXPOSURE THROUGH THE INDEX YOU WOULD HAVE TO INVEST OVER A MILLION DOLLARS.** || WE OWN '
+ "**19 OF THE SLIDE'S 49 NAMES**, and those 19 are **42.7% of the index**. Five more sit on our board unfunded - CAT, "
+ 'DELL, GE, IBM, NFLX. ⚠️⚠️ **AND THE 25 WE DO NOT HOLD AT ALL ARE THE FINDING: BANKS (JPM, BAC, GS, MS, WFC), '
+ 'HEALTHCARE (JNJ, LLY, MRK, UNH, ABBV, TMO), STAPLES (PG, KO, COST, WMT, PM), ENERGY (XOM, CVX), PAYMENTS (MA), '
+ 'INSURANCE (BRK). THAT IS THE ENTIRE DEFENSIVE HALF OF THE AMERICAN ECONOMY.** 🎯 **THIRD INDEPENDENT ARRIVAL AT THE '
+ 'SAME CONCLUSION IN ONE WEEK** - after the zero-oil finding and the defence group at 16.3% deployed. EVERYTHING WE '
+ 'OWN IS ONE BET, and this slide is the first thing to put a number on it. || 🎯 BUT THE CONCENTRATION IS NOT A '
+ 'MISTAKE, AND THIS MUST BE SAID: **YOU CANNOT DOUBLE BY OWNING THE AVERAGE.** The mandate is 100% gain by 2030 - '
+ 'about 14.87% a year. A concentrated bet on the AI value chain is the only structure that plausibly gets there, AND '
+ 'IT IS ALSO THE STRUCTURE THAT LOSES MOST IF THE BET IS WRONG. That trade-off is the design of this board and it '
+ 'should be said out loud rather than discovered later. || 💡 AND WHAT THE INDEX CANNOT GIVE HIM AT ALL: **TSM AT '
+ '$54,856.42 AND ASML AT $16,394.06 ARE NOT IN THE S&P 500** - Taiwanese and Dutch. **$71,250.48 OF GENUINE '
+ 'DIFFERENTIATION**, and not accidental: the moat ranking put TSM 11th of 81 and ASML 13th, and ASML is the one '
+ 'company nobody can replace. AN INDEX BUYER CANNOT OWN THEM. || ⚠️ ONE PRACTICAL WARNING THAT COSTS NOTHING: **IF '
  'SALEE HOLDS AN S&P 500 FUND ANYWHERE ELSE - a retirement account, a Thai-domiciled fund - HE IS DOUBLING UP ON '
  'EXACTLY THESE NAMES WITHOUT MEANING TO.** Worth checking before 10 December. || DECISION FOR 10 DECEMBER, THE SAME '
  'ONE THE OIL AND DEFENCE FINDINGS POINTED AT: **WRITE DOWN EXPLICITLY THAT PILLAR 4 IS A CONCENTRATED AI BET AND THE '
@@ -7293,7 +7301,7 @@ POS = {'GOOGL': {'budget': 78000, 'cost': 59475.92, 'shares': 217},
  'AVGO': {'budget': 50000, 'cost': 30125.18, 'shares': 88.5},
  'AMD': {'budget': 24000, 'cost': 13789.22, 'shares': 55},
  'MRVL': {'budget': 21000, 'cost': 7872.66, 'shares': 48.5},
- 'INTC': {'budget': None, 'cost': 1127.56, 'shares': 25},
+ 'INTC': {'budget': None, 'cost': None, 'shares': None},
  'QCOM': {'budget': None, 'cost': None, 'shares': None},
  'ARM': {'budget': None, 'cost': None, 'shares': None},
  'ASML': {'budget': 41000, 'cost': 16394.06, 'shares': 13},
@@ -7302,7 +7310,7 @@ POS = {'GOOGL': {'budget': 78000, 'cost': 59475.92, 'shares': 217},
  'KLAC': {'budget': 14000, 'cost': 3510.69, 'shares': 18},
  'AMKR': {'budget': None, 'cost': None, 'shares': None},
  'MU': {'budget': 51000, 'cost': 22581.58, 'shares': 35.45},
- 'SKHY': {'budget': None, 'cost': 1913.26, 'shares': 15},
+ 'SKHY': {'budget': None, 'cost': None, 'shares': None},
  'SNDK': {'budget': None, 'cost': None, 'shares': None},
  'STX': {'budget': None, 'cost': None, 'shares': None},
  'DELL': {'budget': None, 'cost': None, 'shares': None},
@@ -7851,14 +7859,43 @@ TRADES = [{'date': 'Jul 21, 2026',
           'POSITION CLOSED.',
   'price': 180.0,
   'shares': 11,
-  't': 'QCOM'}]
+  't': 'QCOM'},
+ {'action': 'SELL',
+  'amount': 2864.01,
+  'date': 'Sep 24, 2026',
+  'est': False,
+  'note': 'SOLD ALL 15 SK HYNIX ADR at 191.51, market-on-open, filled in full. Gross 2,872.65 less the flat 8.56 POEMS '
+          'commission and 0.08 SEC fee = 2,864.01 credited. Cost 1,913.26, so REALISED PLUS 950.75, a gain of 49.7%. '
+          'Sold within 2% of the 52-week high. THE REASON WAS NEVER THE BUSINESS: SK hynix leads HBM and is arguably '
+          'the best-placed memory maker. It went because the US listing traded about 43% above the Korean shares, it '
+          'carried NO BUDGET after the 21 Sep reset, and Micron already gives us the memory cycle with 28,418 of '
+          'approved money still unspent. PROMOTE RULE STANDS: if the ADR premium falls below 10% and the audited '
+          'report itemises the KRW 62.17tn, SKHY comes back as a funded position, not an orphan.',
+  'price': 191.51,
+  'shares': 15,
+  't': 'SKHY'},
+ {'action': 'SELL',
+  'amount': 3096.1,
+  'date': 'Sep 24, 2026',
+  'est': False,
+  'note': 'SOLD ALL 25 INTEL at 124.19, market-on-open, filled in full. Gross 3,104.75 less the flat 8.56 POEMS '
+          'commission and 0.09 SEC fee = 3,096.10 credited. Cost 1,127.56, so REALISED PLUS 1,968.54 - 2.7 times the '
+          'money. THE INTEL POSITION IS NOW CLOSED (the 10 Sep partial sale of 20 shares had already banked 1,163.35). '
+          'Sold into the Intel 14A story: eight tech giants are EVALUATING the 2028 process because TSMC leading-edge '
+          'capacity is booked to 2028, per a Piper Sandler note - no named customer, no capacity reservation, and '
+          'Intel foundry external revenue still about 293m. Intel loses about 20 cents on every dollar of sales at '
+          'roughly 69x forward earnings, grows 7.5%, and had no budget in the plan. WE OWN THE WINNING SIDE ALREADY: '
+          'TSMC, 147.5 shares, and a sold-out TSMC is exactly why Intel is getting attention.',
+  'price': 124.19,
+  'shares': 25,
+  't': 'INTC'}]
 
-SELLPLAN = ['ZETA', 'CRM', 'QCOM', 'FN']
+SELLPLAN = ['ZETA', 'CRM', 'QCOM', 'FN', 'SKHY', 'INTC']
 
 CASH = {'currency': 'USD',
- 'amount': 197946.74,
+ 'amount': 203906.85,
  'broker': 'POEMS (Phillip Securities)',
- 'asof': 'Sep 18, 2026 close (computed from POEMS executed prices)'}
+ 'asof': 'Sep 24, 2026 (POEMS executed prices; SKHY and INTC sales credited)'}
 
 REALIZED = [{'t': 'NBIS', 'g': 5, 'amount': 1404.52},
  {'t': 'IREN', 'g': 5, 'amount': 456.24},
@@ -7883,14 +7920,16 @@ REALIZED = [{'t': 'NBIS', 'g': 5, 'amount': 1404.52},
  {'amount': -433.76, 'g': 4, 't': 'COHR'},
  {'amount': 61.51, 'g': 6, 't': 'HUBB'},
  {'t': 'ZETA', 'g': 5, 'amount': 1428.01},
- {'t': 'QCOM', 'g': 1, 'amount': 11.43}]
+ {'t': 'QCOM', 'g': 1, 'amount': 11.43},
+ {'t': 'SKHY', 'g': 3, 'amount': 950.75},
+ {'t': 'INTC', 'g': 2, 'amount': 1968.54}]
 
 TOTALS = {'investedEverUSD': 629703.86,
  'investedEverTHB': 19963179,
- 'soldCostUSD': 65854.58,
- 'soldCostTHB': 2179461,
- 'realizedUSD': -3459.8,
- 'realizedTHB': -100772,
+ 'soldCostUSD': 68895.4,
+ 'soldCostTHB': 2279428,
+ 'realizedUSD': -540.51,
+ 'realizedTHB': -4801,
  'fx': 32.875,
  'inceptionDate': 'Jul 15, 2025',
  'targetUSD': 1000000}
@@ -8094,7 +8133,23 @@ SOLD = [{'t': 'NBIS',
   'glUSD': -394.49,
   'glTHB': 0,
   'g': 4,
-  'lastDate': '2026-09-17'}]
+  'lastDate': '2026-09-17'},
+ {'t': 'SKHY',
+  'qty': 15,
+  'costUSD': 1913.26,
+  'costTHB': 62898,
+  'glUSD': 950.75,
+  'glTHB': 31256,
+  'g': 3,
+  'lastDate': '2026-09-24'},
+ {'t': 'INTC',
+  'qty': 25,
+  'costUSD': 1127.56,
+  'costTHB': 37070,
+  'glUSD': 1968.54,
+  'glTHB': 64716,
+  'g': 2,
+  'lastDate': '2026-09-24'}]
 
 MONTHLY = [{'ym': '2025-07',
   'buyUSD': 19750.54,
@@ -8470,17 +8525,18 @@ MONTHLY = [{'ym': '2025-07',
  {'ym': '2026-09',
   'buyUSD': 11376.69,
   'buyLots': 4,
-  'sellUSD': 25837.93,
-  'sellLots': 11,
-  'realizedUSD': -2026.74,
-  'realizedTHB': -66629,
+  'sellUSD': 31798.04,
+  'sellLots': 13,
+  'realizedUSD': 892.55,
+  'realizedTHB': 29342,
   'byStock': [{'t': 'TSLA', 'buy': 3668.56, 'sell': 7286.01, 'real': -687.17},
               {'t': 'ORCL', 'buy': 3914.81, 'real': 0.0, 'sell': 0.0},
               {'buy': 1789.76, 'real': 61.51, 'sell': 1851.27, 't': 'HUBB'},
               {'t': 'COHR', 'buy': 0.0, 'real': -433.76, 'sell': 2961.36},
               {'t': 'AMKR', 'buy': 0.0, 'real': -674.76, 'sell': 2779.86},
               {'t': 'IREN', 'buy': 0.0, 'sell': 2092.88, 'real': 357.72},
-              {'t': 'INTC', 'buy': 0.0, 'sell': 2065.39, 'real': 1163.35},
+              {'t': 'INTC', 'buy': 0.0, 'sell': 5161.49, 'real': 3131.89},
+              {'t': 'SKHY', 'buy': 0.0, 'sell': 2864.01, 'real': 950.75},
               {'buy': 2003.56, 'real': 0.0, 'sell': 0.0, 't': 'FSLR'},
               {'t': 'BWXT', 'buy': 0.0, 'sell': 1564.4, 'real': -429.66},
               {'t': 'ONDS', 'buy': 0.0, 'sell': 1511.36, 'real': -519.18},
@@ -8488,7 +8544,8 @@ MONTHLY = [{'ym': '2025-07',
               {'t': 'MPWR', 'buy': 0.0, 'sell': 1187.65, 'real': -350.91},
               {'t': 'AAOI', 'buy': 0.0, 'sell': 1115.41, 'real': -223.15}],
   'byGroup': [{'g': 1, 'buy': 0.0, 'sell': 1187.65, 'real': -350.91},
-              {'g': 2, 'buy': 0.0, 'sell': 4845.25, 'real': 488.59},
+              {'g': 2, 'buy': 0.0, 'sell': 7941.35, 'real': 2457.13},
+              {'g': 3, 'buy': 0.0, 'sell': 2864.01, 'real': 950.75},
               {'g': 4, 'buy': 0.0, 'sell': 4076.77, 'real': -656.91},
               {'g': 5, 'buy': 3914.81, 'sell': 3515.22, 'real': 66.99},
               {'g': 6, 'buy': 3793.32, 'sell': 3415.67, 'real': -368.15},
@@ -9733,9 +9790,10 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'k': 'thesis',
             'a': 'SELL',
             'amt': 0,
-            'w': 'SELL ALL SKHY (orphan - no budget). Approved in the 21 Sep budget reset.',
-            'cond': 'Whole position, limit at or near last close. Small position with no place in the plan.',
-            'c': 'planned'},
+            'w': 'SELL ALL SKHY - DONE 24 Sep: 15 shares at 191.51, market-on-open, realised +950.75 (+49.7%).',
+            'cond': 'Executed. Reason was the 43% ADR premium and no budget, not the business. Promote rule stands: '
+                    'premium below 10% plus an audited KRW 62.17tn itemisation brings SKHY back as a funded name.',
+            'c': 'done'},
            {'d': '2026-10-13',
             't': 'SNPS',
             'k': 'tranche',
@@ -13779,12 +13837,12 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'dl': 'This week',
             't': 'INTC',
             'k': 'tranche',
-            'w': 'SELL ALL INTEL (orphan - no budget). Approved in the 21 Sep budget reset.',
+            'w': 'SELL ALL INTEL - DONE 24 Sep: 25 shares at 124.19, market-on-open, realised +1,968.54 (2.7x cost).',
             'a': 'SELL',
-            'amt': 2089.4,
-            'cond': 'Whole position, limit at or near last close. Loss-making company at ~69x forward earnings; no '
-                    'place in the plan.',
-            'c': 'planned'},
+            'amt': 3096.1,
+            'cond': 'Executed. Position closed. Sold into the 14A evaluation story - no named customer, no capacity '
+                    'reservation, foundry external revenue about 293m. We hold the sold-out side through TSMC.',
+            'c': 'done'},
            {'d': '',
             'dl': "On Salee's instruction",
             't': 'IREN',
