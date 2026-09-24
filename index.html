@@ -107,6 +107,13 @@ h2 .n{font-size:11px; color:var(--ink-3); font-weight:400}
 .fchip .dot{width:9px;height:9px;border-radius:3px}
 .fchip.on{border-color:var(--ink-2); color:var(--ink-1); font-weight:650; box-shadow:inset 0 0 0 1px var(--ink-2)}
 .fchip .ct{color:var(--ink-3); font-size:10.5px}
+/* status tags + status filter bar */
+.tag{display:inline-block;font-size:9.5px;font-weight:800;letter-spacing:.03em;border-radius:3px;padding:1px 4px;margin-left:6px;vertical-align:1px;color:#fff}
+.tag.own{background:#1f7a4d}.tag.fund{background:#2563eb}.tag.sell{background:#b4232a}.tag.watch{background:#7b818c}
+.sbar{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 10px}
+.sbar button{font:inherit;font-size:12px;font-weight:700;cursor:pointer;border:1px solid var(--line,#ccc);background:transparent;color:inherit;border-radius:999px;padding:4px 11px}
+.sbar button[aria-pressed="true"]{background:var(--ink-1,#222);color:var(--bg,#fff);border-color:transparent}
+.sbar .sk{font-size:11px;font-weight:600;opacity:.7;margin-left:4px}
 /* fv ladder */
 .fv-card{background:var(--surface-1); border:1px solid var(--ring); border-radius:12px; padding:18px}
 .fv-ghead{font-size:11px; text-transform:uppercase; letter-spacing:.07em; color:var(--ink-2); font-weight:650; padding:12px 0 4px; display:flex; align-items:center; gap:7px}
@@ -543,6 +550,7 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
 <div class="note" style="margin-top:0">Salee's grouping (notebook Jul 21 + corrections). <b>Neocloud Watch</b>: IREN <b style="color:var(--bad)">(45 sh held, tranche-2 sell plan still active)</b> + NBIS (exited Jul 21) + CRWV (exited earlier) — watched for an industry turnaround. Click a group to focus every panel.</div>
 
 <h2>Fair-value ladder <span class="n">coloured bar = analyst min→max target · | = avg target · ● = last close · dark line with end caps = the 52-wk traded range · <b>% of range</b> under each ticker = where the close sits in that range, 0% = at the low (<b style="color:var(--warn)">amber ≤10%</b>) · right column, shared zero center: <b>FV</b> = conviction to avg target · <b>HI</b> = drawdown from the 52-wk high · <b>YTD</b> = growth since Jan 2 '26 open</span></h2>
+<div class="sbar" id="sbar"></div>
 <div class="fv-card" id="fvladder"></div>
 
 <h2>Valuation map <span class="n">x = gross margin % · y = P/E (log scale; hollow ring = forward P/E where unprofitable) · bubble area = position value</span></h2>
@@ -673,8 +681,26 @@ let FILTER = "all";
 let TFOCUS = null;
 const inFocus = t => !TFOCUS || t===TFOCUS;
 const vis = () => TFOCUS ? STOCKS.filter(s=>s.t===TFOCUS)
-                         : (FILTER==="all" ? STOCKS : STOCKS.filter(s=>s.g===FILTER));
+                         : (FILTER==="all" ? STOCKS : STOCKS.filter(s=>s.g===FILTER)).filter(s=>statOk(s.t));
 const slot = s => s.g+1;
+/* STATUS: one label per ticker, derived from POS - OWNED (shares + budget),
+   FUNDED (budget approved, not bought yet), SELL (shares but no budget = orphan
+   on the sell list), WATCH (tracked only). SFILTER narrows every panel. */
+const pstat = t => { const p=(typeof POS!=="undefined"&&POS[t])||{}; const sh=p.shares||0, bu=p.budget||0;
+  return sh&&bu ? ["own","OWNED"] : (!sh&&bu ? ["fund","FUNDED"] : (sh&&!bu ? ["sell","SELL"] : ["watch","WATCH"])); };
+let SFILTER = "all";
+const statOk = t => SFILTER==="all" ? true
+                  : (SFILTER==="plan" ? pstat(t)[0]!=="watch" : pstat(t)[0]===SFILTER);
+function setStatus(f){ SFILTER=f; renderStatusBar(); renderLadder(); renderBubble(); renderMatrix(); renderCards(); }
+function renderStatusBar(){
+  const el=document.getElementById("sbar"); if(!el) return;
+  const c=k=>STOCKS.filter(s=>pstat(s.t)[0]===k).length;
+  const defs=[["all","All",STOCKS.length],["plan","In plan",c("own")+c("fund")+c("sell")],
+              ["own","Owned",c("own")],["fund","Approved, not bought",c("fund")],
+              ["sell","To sell",c("sell")],["watch","Watch only",c("watch")]];
+  el.innerHTML = defs.map(([k,lab,n])=>`<button type="button" onclick="setStatus('${k}')" aria-pressed="${SFILTER===k}">${lab} <span class="sk">${n}</span></button>`).join("")
+    + `<span class="sk">key: <span class="tag own">OWNED</span> <span class="tag fund">FUNDED</span> <span class="tag sell">SELL</span> <span class="tag watch">WATCH</span></span>`;
+}
 function ovHtml(t){var o=OVERVIEW[t]; if(!o) return "";
   if(typeof o==="string") o={short:o};
   var f=[o.founded?"Founded "+o.founded:"", o.hq||"", o.employees?o.employees+" employees":""].filter(Boolean).join(" \u00b7 ");
@@ -802,7 +828,7 @@ function renderLadder(){
         ? `<span class="rngpos na">range n/a</span>`
         : `<span class="rngpos${rp<=10?' low':(rp>=90?' hi':'')}" title="last close sits ${rp.toFixed(0)}% of the way up its 52-week range, ${fmt(s.lo52)} to ${fmt(hi)}">${rp.toFixed(0)}% of range</span>`;
       return `<div class="fv-row">
-        <div class="fv-tick"><span>${s.t}</span>${rpline}</div>
+        <div class="fv-tick"><span>${s.t}</span><span class="tag ${pstat(s.t)[0]}">${pstat(s.t)[1]}</span>${rpline}</div>
         <div class="fv-track" title="${s.t} 52-week range ${s.lo52==null?'low n/a':fmt(s.lo52)} → ${hi==null?'high n/a':fmt(hi)}${rp==null?'':' · last close sits at '+rp.toFixed(0)+'% of that range'} · analyst targets ${fmt0(s.fvMin)} / ${fmt0(s.fvAvg)} / ${fmt0(s.fvMax)}">
           <div class="fv-nowlab" style="left:${X(s.price)}">${fmt(s.price)}</div>
           <div class="fv-base"></div>
@@ -2601,7 +2627,7 @@ function renderAll(){
       + (unk?` · <b class="warnv">${unk}</b> unconfirmed`:"");
   })();
   document.getElementById("subline").textContent = `${STOCKS.length} positions · AI · Semis · Infrastructure — Salee's book`;
-  renderChips(); renderTiles(); renderWheel(); renderGroupWheel(); renderBudgetWheel(); renderPlanReality(); renderGroupSummary(); renderLadder(); renderBubble(); renderMatrix(); renderCards(); renderTrades();
+  renderStatusBar(); renderChips(); renderTiles(); renderWheel(); renderGroupWheel(); renderBudgetWheel(); renderPlanReality(); renderGroupSummary(); renderLadder(); renderBubble(); renderMatrix(); renderCards(); renderTrades();
   renderTotals(); renderGroupChips(); renderStockSummary(); renderPerformance(); renderMonthly(); renderHistory(); renderVision(); renderFocus();
   document.getElementById("foot").innerHTML =
    `Definitions — <b>Conviction</b> = (avg analyst target − last close) ÷ last close. <b>Devastation</b> = (last close − 52-wk high) ÷ 52-wk high; “—” within 0.5% of the high. <b>Growth YTD</b> = vs Jan 2, 2026 open. <b>Rule of 40 (FCF)</b> = revenue growth % + FCF margin % (TTM) — the conservative primary. <b>Rule of 40 (NI)</b> = revenue growth % + net profit margin %; a wide gap between the two = accounting profits not converting to cash (see ORCL), and NI is distorted by non-operating gains for IONQ/ONDS. ROI shown as ROIC. “—” = not meaningful (negative earnings or not published). CRWD figures reflect its July 2026 4-for-1 split.<br>
