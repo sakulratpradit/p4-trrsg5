@@ -140,6 +140,17 @@ THE JOB
    independent source from the list above. If confirmed real, re-run with
    --allow TICKER. If you cannot confirm it, revert that ticker to its previous
    value and note it. NEVER raise --threshold to silence a failure.
+5b. APPEND ONE ROW TO `HISTORY` in deploy/src/portfolio_data.py - this is the portfolio
+   value-history chart, and it went stale between 13 and 23 Sep because no job owned it.
+   The new row goes at the END of the list, using the trading date you just recorded:
+     {'d': '<YYYY-MM-DD>', 'sha': 'live', 'n': <count of POS entries with shares>,
+      'mv': <sum shares*price over those>, 'cost': <sum of their cost>,
+      'unreal': mv-cost, 'unrealPct': round((mv-cost)/cost*100, 2),
+      'real': TOTALS['realizedUSD'], 'net': unreal+real, 'cash': CASH['amount']}
+   Change the PREVIOUS last row's 'sha' from 'live' to your push commit only if you know it;
+   otherwise leave earlier rows untouched. One row per trading day, never a duplicate date.
+   Re-run gen_dashboard + sanity_check after this edit (i.e. do step 5b BEFORE step 4).
+
 6. cp ../us-portfolio-dashboard.html index.html
    python3 src/extract_data.py index.html src/portfolio_data.py
    git add index.html src/portfolio_data.py
