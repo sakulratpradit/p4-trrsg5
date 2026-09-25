@@ -1,10 +1,23 @@
-# P4 price refresh status
+# P4 price refresh — status
 
-- Run time (UTC): 2026-09-24 03:40 (03:30 scheduled run)
-- Trading date recorded: none this run — no-op
-- Result: NOT PUSHED (no price edits; status commit only)
-- First check: 94 of 94 tickers already carry pxd 2026-09-23, the most recent completed US trading day. The 00:30 run (commit 3e8941e) succeeded, so this run stopped per the job's first-check rule.
-- HISTORY: last row is 2026-09-23 (sha 3e8941e) — already current, no row appended.
-- Prices changed: 0
-- Unresolved tickers: none (nothing attempted)
+- Run time (UTC): 2026-09-25 00:30 run, finished ~01:05
+- Trading date recorded: 2026-09-24 (Thu)
+- Result: PUSHED
+- Commit: fe0bfc1 ("Daily price refresh 2026-09-24: 94 prices"), remote main confirmed at fe0bfc1
+- Prices changed: 94 of 94 (all pxd set to 2026-09-24; mcapB scaled with price; HISTORY row for 2026-09-24 appended: n=37, mv=749,958.38, cost=609,758.47, unreal=+140,199.91 / +22.99%, real=-540.47, cash=203,906.85)
+- Sanity gate: PASS with --allow ARM --allow FSLR --allow TEM --allow NBIS
+  - ARM -7.88% → confirmed vs Google Finance AND MarketScreener (306.34)
+  - FSLR -10.32% → confirmed vs GuruFocus article same day (172.16)
+  - TEM +7.38% → confirmed vs Google Finance (82.24)
+  - NBIS +7.44% → confirmed vs Google Finance (243.48)
+- Largest moves: FSLR -10.32%, ARM -7.88%, NBIS +7.44%, TEM +7.38%, TSEM -5.74% (217.28, Google-Finance-confirmed), IONQ +5.74%
+- Unresolved tickers: none (94/94 resolved)
+- Quote-vs-history disagreements (quote page taken in every case, per the resolution rule):
+  - AXTI: quote 75.90 vs history-row 77.61 → Google Finance independently confirmed 75.90; history row looks erroneous
+  - DDOG: history 09-24 row internally impossible (close 251.93 outside its own 247.27–250.58 range, volume 189K vs ~2.7M normal) → discarded, quote 256.92 used
+  - SE: quote 100.73 vs history 101.39 → Google Finance confirmed 100.73
+  - STRL: quote 513.72 vs history 516.63 → quote used (internally consistent); NOT externally verified — Google Finance and MarketScreener both served stale caches (Sep 11/23). Watch this one.
+  - Minor cent-level gaps, quote used: SNPS (424.91 vs 425.00), KTOS (47.02 vs 47.04), FPS (38.92 vs 38.95), NFLX (71.72 vs 71.70), CIEN (358.43 vs 358.48)
+- Source staleness noted: stockanalysis history tables had no 09-24 row yet for MCHP, FN, AAOI, CGNX, XE, TSEM; AMBA's history table was missing 09-23 AND 09-24 (AMBA and TSEM cross-confirmed via Google Finance instead). ASTS and NET stamps checked for their known staleness quirks — both clean today.
+- Live page check: could not complete the render check of https://sakulratpradit.github.io/p4-trrsg5/ from this sandbox — the fetch needed an interactive permission approval that an unattended run cannot give. Push to main is confirmed (fe0bfc1), so Pages should deploy it automatically; please eyeball the page.
 - Blockers: none.
