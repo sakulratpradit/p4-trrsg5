@@ -3,12 +3,15 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Sep 25, 2026 - DAILY PRICE REFRESH: 94 of 94 closes updated to the Fri 2026-09-25 close (stockanalysis.com quote '
- 'pages, validated against history tables). Three moves over the 6% gate, all confirmed against Google Finance: CRDO '
- '+7.65%, BE +8.27%, TSEM +6.07%. ONDS: history table printed 7.82 but quote page and Google Finance both print 7.64 '
- 'at the Sep 25 close - 7.64 written. HISTORY row appended for 2026-09-25. Prices only; fundamentals, POS, TRADES '
- 'untouched. || PREVIOUS ENTRY: Sep 24, 2026 (3) - DAILY PRICE REFRESH: 94 of 94 closes updated to the Thu 2026-09-24 '
- 'close (stockanalysis.com quote pages, validated against history tables). Four moves over the 6% gate, all confirmed '
+ASOF = ('Sep 26, 2026 - POWER GROUP EXPANSION APPROVED by Salee: new budget lines CAT $15,000 and BE $6,000 opened (+$21,000 '
+ 'of new authority). Existing power room $31,663.86 unchanged. Seven schedule rows added covering the $52,663.86 '
+ 'deployment in rungs from 28 Sep. No trades placed - every order is placed by Salee at POEMS. || PREVIOUS ENTRY: Sep '
+ '25, 2026 - DAILY PRICE REFRESH: 94 of 94 closes updated to the Fri 2026-09-25 close (stockanalysis.com quote pages, '
+ 'validated against history tables). Three moves over the 6% gate, all confirmed against Google Finance: CRDO +7.65%, '
+ 'BE +8.27%, TSEM +6.07%. ONDS: history table printed 7.82 but quote page and Google Finance both print 7.64 at the '
+ 'Sep 25 close - 7.64 written. HISTORY row appended for 2026-09-25. Prices only; fundamentals, POS, TRADES untouched. '
+ '|| PREVIOUS ENTRY: Sep 24, 2026 (3) - DAILY PRICE REFRESH: 94 of 94 closes updated to the Thu 2026-09-24 close '
+ '(stockanalysis.com quote pages, validated against history tables). Four moves over the 6% gate, all confirmed '
  'against second sources: ARM -7.88% (Google Finance + MarketScreener), FSLR -10.32% (GuruFocus), TEM +7.38% and NBIS '
  '+7.44% (Google Finance). HISTORY row appended for 2026-09-24. Prices only; fundamentals, POS, TRADES untouched. || '
  'PREVIOUS ENTRY: Sep 24, 2026 (2) - POEMS PORTAL RECONCILED, AND THE BOARD NOW MATCHES IT TO THE CENT. Salee sent the '
@@ -7347,7 +7350,7 @@ POS = {'GOOGL': {'budget': 78000, 'cost': 59475.92, 'shares': 217},
  'MPWR': {'budget': None, 'cost': None, 'shares': None},
  'OKLO': {'budget': None, 'cost': None, 'shares': None},
  'NEE': {'budget': None, 'cost': None, 'shares': None},
- 'BE': {'budget': None, 'cost': None, 'shares': None},
+ 'BE': {'budget': 6000, 'cost': None, 'shares': None},
  'XE': {'budget': None, 'cost': None, 'shares': None},
  'ISRG': {'budget': 32000, 'cost': 16381.68, 'shares': 38},
  'CGNX': {'budget': 4067.62, 'cost': 4067.62, 'shares': 62},
@@ -7389,7 +7392,7 @@ POS = {'GOOGL': {'budget': 78000, 'cost': 59475.92, 'shares': 217},
  'STRL': {'budget': None, 'cost': None, 'shares': None},
  'FSLR': {'budget': None, 'cost': 2003.56, 'shares': 10},
  'NFLX': {'budget': None, 'cost': None, 'shares': None},
- 'CAT': {'budget': None, 'cost': None, 'shares': None},
+ 'CAT': {'budget': 15000, 'cost': None, 'shares': None},
  'GE': {'budget': None, 'cost': None, 'shares': None},
  'MCHP': {'budget': None, 'cost': None, 'shares': None},
  'CRCL': {'budget': None, 'cost': None, 'shares': None},
@@ -8716,7 +8719,7 @@ M3 = {'GOOGL': {'pfcf': 73.06, 'ev': 21.6, 'de': 0.18},
  'CIEN': {'pfcf': None, 'ev': None, 'de': None}}
 
 SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
- 'updated': 'Sep 19, 2026',
+ 'updated': 'Sep 26, 2026',
  'note': '⚠️ READ THIS FIRST. On 10 Sep 2026 the board was restructured to 10 groups, 38 funded names, 5 back-up names '
          'and 13 sells, and ALL 38 budgets were reset. EVERY AMOUNT WRITTEN IN A ROW DATED BEFORE 10 SEP 2026 REFERS '
          'TO THE OLD BUDGET and must be checked against the new one before it is acted on - the tranche sizes in those '
@@ -9458,6 +9461,18 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'and still be a bad purchase. ⚠️ IF ANYTHING, INCLUSION MAKES THE ENTRY WORSE, because the index '
                     'bid is a known, dated, mechanical buyer we would be paying up alongside. || NOT ON THE BOARD, '
                     'STAYING OFF. Conviction HIGH.'},
+           {'d': '2026-09-26',
+            't': '',
+            'k': 'admin',
+            'a': 'ADMIN',
+            'amt': 21000,
+            'w': 'POWER GROUP EXPANSION APPROVED. New budget lines opened: CAT 15,000 and BE 6,000. Existing power '
+                 'room 31,663.86 unchanged. Total plan 52,663.86.',
+            'cond': 'Approved by Salee 26 Sep 2026 (proposal-2026-09-26-power-group-expansion-cat-bloom). Power & '
+                    "Electrification was 6.3% of holdings ($47,477) while Oracle's force majeure on Project Jupiter "
+                    'proved the binding constraint is getting power to the site. Rungs, not lumps. Priority 1 '
+                    '(existing approved room) is spent before the two new budget lines.',
+            'c': 'done'},
            {'d': '2026-09-28',
             't': 'BE',
             'k': 'legal',
@@ -9467,6 +9482,26 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'cond': 'DO NOT BUY. Class period 27 Feb 2025 - 8 Jul 2026; alleges Bloom understated reliance on scandium '
                     'from China. EV/EBITDA 118. Not on the board and staying off.',
             'c': 'confirmed'},
+           {'d': '2026-09-28',
+            't': '',
+            'k': 'buy',
+            'a': 'BUY',
+            'amt': 31663.86,
+            'w': 'PRIORITY 1 - spend the EXISTING approved power room: VRT 11,157.07, CEG 7,130.87, VST 6,866.71, GEV '
+                 '3,388.76, ETN 3,120.45.',
+            'cond': 'Already-approved budgets. No new authority needed. Place as five separate POEMS orders. This '
+                    'comes BEFORE any CAT or BE order.',
+            'c': 'open'},
+           {'d': '2026-09-28',
+            't': 'CAT',
+            'k': 'buy',
+            'a': 'BUY',
+            'amt': 5000,
+            'w': 'CATERPILLAR rung 1 of 3 (5,000 of 15,000).',
+            'cond': 'Conviction High. 28.4x forward earnings and 14.5% margin against GE Vernova 55.7x and Vertiv '
+                    '36.6x - the market still prices CAT as a construction-equipment company. Also the only name in '
+                    'the group whose demand does not depend on AI capex alone. No single order above 5,000.',
+            'c': 'open'},
            {'d': '2026-09-30',
             't': '',
             'k': 'macro',
@@ -9846,6 +9881,24 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'cond': 'Profitable, priced below the analyst average, and had no rule until now. Limit at or near last '
                     'close; never more than +1%. US session opens 20:30 Bangkok.',
             'c': 'planned'},
+           {'d': '2026-10-14',
+            't': 'CAT',
+            'k': 'buy',
+            'a': 'BUY',
+            'amt': 5000,
+            'w': 'CATERPILLAR rung 2 of 3 (5,000 of 15,000).',
+            'cond': 'Hold this rung if Q3 results show the power-generation business is immaterial to group earnings - '
+                    'in that case cap CAT at 7,500 total.',
+            'c': 'open'},
+           {'d': '2026-10-14',
+            't': 'BE',
+            'k': 'buy',
+            'a': 'BUY',
+            'amt': 3000,
+            'w': 'BLOOM ENERGY rung 1 of 2 (3,000 of 6,000).',
+            'cond': 'Conviction Medium - an option, not a holding. 53.9x forward earnings on a 7.9% margin; revenue '
+                    '+91% is the whole case. Deliberately one fifth the size of CAT.',
+            'c': 'open'},
            {'d': '2026-10-15',
             't': 'ASML',
             'k': 'earnings',
@@ -10107,6 +10160,24 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'cond': 'Second half, after the Micron (30 Sep) and Meta (28 Oct) decisions. ⚠️ Clocks change 1 Nov: US '
                     'session now opens 21:30 Bangkok.',
             'c': 'planned'},
+           {'d': '2026-11-11',
+            't': 'CAT',
+            'k': 'buy',
+            'a': 'BUY',
+            'amt': 5000,
+            'w': 'CATERPILLAR rung 3 of 3 (5,000 of 15,000).',
+            'cond': 'Final rung. Completes the 15,000 budget.',
+            'c': 'open'},
+           {'d': '2026-11-11',
+            't': 'BE',
+            'k': 'buy',
+            'a': 'BUY',
+            'amt': 3000,
+            'w': 'BLOOM ENERGY rung 2 of 2 (3,000 of 6,000).',
+            'cond': 'STOP CONDITION for the whole power expansion: if two further large AI campuses are CANCELLED (not '
+                    'merely delayed) before this date, the shortage has become a demand problem - skip this rung and '
+                    're-underwrite the group.',
+            'c': 'open'},
            {'d': '2026-11-18',
             't': 'NVDA',
             'k': 'earnings',
