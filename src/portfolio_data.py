@@ -3,45 +3,55 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Sep 26, 2026 - POWER GROUP EXPANSION APPROVED by Salee: new budget lines CAT $15,000 and BE $6,000 opened (+$21,000 '
- 'of new authority). Existing power room $31,663.86 unchanged. Seven schedule rows added covering the $52,663.86 '
- 'deployment in rungs from 28 Sep. No trades placed - every order is placed by Salee at POEMS. || PREVIOUS ENTRY: Sep '
- '25, 2026 - DAILY PRICE REFRESH: 94 of 94 closes updated to the Fri 2026-09-25 close (stockanalysis.com quote pages, '
- 'validated against history tables). Three moves over the 6% gate, all confirmed against Google Finance: CRDO +7.65%, '
- 'BE +8.27%, TSEM +6.07%. ONDS: history table printed 7.82 but quote page and Google Finance both print 7.64 at the '
- 'Sep 25 close - 7.64 written. HISTORY row appended for 2026-09-25. Prices only; fundamentals, POS, TRADES untouched. '
- '|| PREVIOUS ENTRY: Sep 24, 2026 (3) - DAILY PRICE REFRESH: 94 of 94 closes updated to the Thu 2026-09-24 close '
- '(stockanalysis.com quote pages, validated against history tables). Four moves over the 6% gate, all confirmed '
- 'against second sources: ARM -7.88% (Google Finance + MarketScreener), FSLR -10.32% (GuruFocus), TEM +7.38% and NBIS '
- '+7.44% (Google Finance). HISTORY row appended for 2026-09-24. Prices only; fundamentals, POS, TRADES untouched. || '
- 'PREVIOUS ENTRY: Sep 24, 2026 (2) - POEMS PORTAL RECONCILED, AND THE BOARD NOW MATCHES IT TO THE CENT. Salee sent the '
- 'live POEMS positions screen: 37 open positions, cost 609,758.47, market value 747,056.67, unrealised +137,298.20 '
- '(+22.52%), realised today +2,919.33. THREE COST FIGURES WERE SHORT ON THIS BOARD, all by the commission on a single '
- 'buy: GEV 9,603.86 -> 9,611.24 (+7.38), VRT 9,838.00 -> 9,842.93 (+4.93), PANW 9,491.14 -> 9,494.82 (+3.68); PANW '
- 'budget moved with its cost since it is a withdrawn name held at cost. Total cost was understating by 15.99. REALISED '
- 'ON THE TWO SALES TRIMMED TO THE BROKER CENTS: SKHY 950.75 -> 950.77, INTC 1,968.54 -> 1,968.56, so lifetime realised '
- 'is -540.47. Share counts, tickers and prices all agreed with POEMS - no position discrepancy, and Intel and SK Hynix '
- 'show zero quantity as expected. THE BROKER IS THE SOURCE OF TRUTH FOR COST AND QUANTITY; this board is the source of '
- 'truth for plan, budget and analysis. || PREVIOUS ENTRY: Sep 24, 2026 - TWO SELLS EXECUTED AT POEMS, BOTH '
- 'MARKET-ON-OPEN, BOTH FILLED IN FULL. SKHY: 15 shares at 191.51, net 2,864.01, realised PLUS 950.75 (+49.7%), sold '
- 'within 2% of the 52-week high - the reason was the ~43% ADR premium over the Korean listing and no budget, never the '
- 'business. INTC: 25 shares at 124.19, net 3,096.10, realised PLUS 1,968.54 (2.7x cost) - POSITION CLOSED, on top of '
- 'the 1,163.35 banked in the 10 Sep partial. Combined cash credit 5,960.11, so CASH 197,946.74 -> 203,906.85. LIFETIME '
- 'REALISED IMPROVES FROM -3,459.80 TO -540.51 - the book is now within 541 dollars of break-even on closed trades. '
- 'Holdings 39 -> 37 names. Two orphans remain on the sell list: CRWD and FSLR on 13 October. POS, SOLD, REALIZED, '
- 'TRADES, MONTHLY, CASH, TOTALS and the two schedule rows updated; prices untouched. || PREVIOUS ENTRY: Sep 23, 2026 - '
- 'DAILY PRICE REFRESH: 94 of 94 closes updated to the Wed 2026-09-23 close. Two moves over the 6% gate, both confirmed '
- 'against Google Finance closed-market stamps: AXTI -6.18% (72.98), LUNR -6.16% (15.24). Partial-capture or stale '
- '/history/ rows rejected in favor of the 4:00 PM-stamped quote page (second-source confirmed where material): CDNS, '
- 'SNPS, TER, MCHP, FN, FSLR, ONDS, DDOG, TEM, TSEM; AXTI history row internally impossible (close below its own low). '
- 'XE quote page was intraday-stamped (10:32 AM) with a corrupt history table - resolved via Google Finance beta '
- '(16.38, Closed Sep 23 4:00 PM). AMBA history frozen at Jul 21 - quote page 67.62 used (YCharts ballpark 67.69). LRCX '
- 'quote page carried a stale prev close - history row 307.28 used (matched quote price). AEP and HUBB history tables '
- 'had no Sep 23 row yet - quote pages used, second-source confirmed. || PREVIOUS ENTRY: Sep 22, 2026 - DAILY PRICE '
- 'REFRESH: 94 of 94 closes updated to the Tue 2026-09-22 close. FPS back current (38.52, was stuck at its 2026-09-15 '
- 'value; confirmed via ycharts 16:00 stamp). Five moves over the 6% gate, each confirmed against a second source: MPWR '
- '+8.06% (MarketScreener), SHOP +7.12% (Google Finance), SNDK +6.82% (Google Finance), ALAB +6.67% (Google Finance), '
- 'FPS +22.8% vs stale base. TSEM 236.61 and CGNX 58.97 resolved via Google Finance / post-close article because the '
+ASOF = ('Sep 27, 2026 (2) - ⚠️ BLOOM ENERGY BUDGET REVOKED. The 6,000 BE line opened on 26 Sep contradicted a standing '
+ 'HIGH-conviction AVOID dated 21 Sep on this same board: securities class action, lead-plaintiff deadline 28 Sep 2026, '
+ 'alleging understated reliance on Chinese scandium, EV/EBITDA 118. The 26 Sep proposal failed to disclose it. Salee '
+ 'caught it before any order was placed. BE budget set back to None and both BE BUY rungs deleted. CAT 15,000 '
+ 'unaffected - rung 1 proceeds 28 Sep, rung 2 moved to 30 Oct (after the ~28 Oct Q3 report). Power expansion is now '
+ '31,663.86 existing room + 15,000 CAT = 46,663.86. || PREVIOUS ENTRY: Sep 27, 2026 - SCHEDULE DATE CORRECTION at '
+ "Salee's instruction: CAT rung 2 (5,000) MOVED from 14 Oct to 30 Oct. The original date fell BEFORE Caterpillar's Q3 "
+ 'report (on or about 28 Oct), so the condition attached to the rung - hold if the power-generation business is '
+ 'immaterial to group earnings - could not be tested on the day it was due. No other row changed. BE rung 1 stays 14 '
+ 'Oct; CAT rung 3 and BE rung 2 stay 11 Nov. || PREVIOUS ENTRY: Sep 26, 2026 - POWER GROUP EXPANSION APPROVED by '
+ 'Salee: new budget lines CAT $15,000 and BE $6,000 opened (+$21,000 of new authority). Existing power room $31,663.86 '
+ 'unchanged. Seven schedule rows added covering the $52,663.86 deployment in rungs from 28 Sep. No trades placed - '
+ 'every order is placed by Salee at POEMS. || PREVIOUS ENTRY: Sep 25, 2026 - DAILY PRICE REFRESH: 94 of 94 closes '
+ 'updated to the Fri 2026-09-25 close (stockanalysis.com quote pages, validated against history tables). Three moves '
+ 'over the 6% gate, all confirmed against Google Finance: CRDO +7.65%, BE +8.27%, TSEM +6.07%. ONDS: history table '
+ 'printed 7.82 but quote page and Google Finance both print 7.64 at the Sep 25 close - 7.64 written. HISTORY row '
+ 'appended for 2026-09-25. Prices only; fundamentals, POS, TRADES untouched. || PREVIOUS ENTRY: Sep 24, 2026 (3) - '
+ 'DAILY PRICE REFRESH: 94 of 94 closes updated to the Thu 2026-09-24 close (stockanalysis.com quote pages, validated '
+ 'against history tables). Four moves over the 6% gate, all confirmed against second sources: ARM -7.88% (Google '
+ 'Finance + MarketScreener), FSLR -10.32% (GuruFocus), TEM +7.38% and NBIS +7.44% (Google Finance). HISTORY row '
+ 'appended for 2026-09-24. Prices only; fundamentals, POS, TRADES untouched. || PREVIOUS ENTRY: Sep 24, 2026 (2) - '
+ 'POEMS PORTAL RECONCILED, AND THE BOARD NOW MATCHES IT TO THE CENT. Salee sent the live POEMS positions screen: 37 '
+ 'open positions, cost 609,758.47, market value 747,056.67, unrealised +137,298.20 (+22.52%), realised today '
+ '+2,919.33. THREE COST FIGURES WERE SHORT ON THIS BOARD, all by the commission on a single buy: GEV 9,603.86 -> '
+ '9,611.24 (+7.38), VRT 9,838.00 -> 9,842.93 (+4.93), PANW 9,491.14 -> 9,494.82 (+3.68); PANW budget moved with its '
+ 'cost since it is a withdrawn name held at cost. Total cost was understating by 15.99. REALISED ON THE TWO SALES '
+ 'TRIMMED TO THE BROKER CENTS: SKHY 950.75 -> 950.77, INTC 1,968.54 -> 1,968.56, so lifetime realised is -540.47. '
+ 'Share counts, tickers and prices all agreed with POEMS - no position discrepancy, and Intel and SK Hynix show zero '
+ 'quantity as expected. THE BROKER IS THE SOURCE OF TRUTH FOR COST AND QUANTITY; this board is the source of truth for '
+ 'plan, budget and analysis. || PREVIOUS ENTRY: Sep 24, 2026 - TWO SELLS EXECUTED AT POEMS, BOTH MARKET-ON-OPEN, BOTH '
+ 'FILLED IN FULL. SKHY: 15 shares at 191.51, net 2,864.01, realised PLUS 950.75 (+49.7%), sold within 2% of the '
+ '52-week high - the reason was the ~43% ADR premium over the Korean listing and no budget, never the business. INTC: '
+ '25 shares at 124.19, net 3,096.10, realised PLUS 1,968.54 (2.7x cost) - POSITION CLOSED, on top of the 1,163.35 '
+ 'banked in the 10 Sep partial. Combined cash credit 5,960.11, so CASH 197,946.74 -> 203,906.85. LIFETIME REALISED '
+ 'IMPROVES FROM -3,459.80 TO -540.51 - the book is now within 541 dollars of break-even on closed trades. Holdings 39 '
+ '-> 37 names. Two orphans remain on the sell list: CRWD and FSLR on 13 October. POS, SOLD, REALIZED, TRADES, MONTHLY, '
+ 'CASH, TOTALS and the two schedule rows updated; prices untouched. || PREVIOUS ENTRY: Sep 23, 2026 - DAILY PRICE '
+ 'REFRESH: 94 of 94 closes updated to the Wed 2026-09-23 close. Two moves over the 6% gate, both confirmed against '
+ 'Google Finance closed-market stamps: AXTI -6.18% (72.98), LUNR -6.16% (15.24). Partial-capture or stale /history/ '
+ 'rows rejected in favor of the 4:00 PM-stamped quote page (second-source confirmed where material): CDNS, SNPS, TER, '
+ 'MCHP, FN, FSLR, ONDS, DDOG, TEM, TSEM; AXTI history row internally impossible (close below its own low). XE quote '
+ 'page was intraday-stamped (10:32 AM) with a corrupt history table - resolved via Google Finance beta (16.38, Closed '
+ 'Sep 23 4:00 PM). AMBA history frozen at Jul 21 - quote page 67.62 used (YCharts ballpark 67.69). LRCX quote page '
+ 'carried a stale prev close - history row 307.28 used (matched quote price). AEP and HUBB history tables had no Sep '
+ '23 row yet - quote pages used, second-source confirmed. || PREVIOUS ENTRY: Sep 22, 2026 - DAILY PRICE REFRESH: 94 of '
+ '94 closes updated to the Tue 2026-09-22 close. FPS back current (38.52, was stuck at its 2026-09-15 value; confirmed '
+ 'via ycharts 16:00 stamp). Five moves over the 6% gate, each confirmed against a second source: MPWR +8.06% '
+ '(MarketScreener), SHOP +7.12% (Google Finance), SNDK +6.82% (Google Finance), ALAB +6.67% (Google Finance), FPS '
+ '+22.8% vs stale base. TSEM 236.61 and CGNX 58.97 resolved via Google Finance / post-close article because the '
  'stockanalysis history table was stale or corrupt for them; XE history row internally impossible (close below its own '
  'low), quote page used. || PREVIOUS ENTRY: Sep 21, 2026 - DAILY PRICE REFRESH: 93 of 94 closes updated to the Mon '
  '2026-09-21 close (FPS left at its 2026-09-15 value - +20% move, no current second source to confirm; Google '
@@ -7350,7 +7360,7 @@ POS = {'GOOGL': {'budget': 78000, 'cost': 59475.92, 'shares': 217},
  'MPWR': {'budget': None, 'cost': None, 'shares': None},
  'OKLO': {'budget': None, 'cost': None, 'shares': None},
  'NEE': {'budget': None, 'cost': None, 'shares': None},
- 'BE': {'budget': 6000, 'cost': None, 'shares': None},
+ 'BE': {'budget': None, 'cost': None, 'shares': None},
  'XE': {'budget': None, 'cost': None, 'shares': None},
  'ISRG': {'budget': 32000, 'cost': 16381.68, 'shares': 38},
  'CGNX': {'budget': 4067.62, 'cost': 4067.62, 'shares': 62},
@@ -8719,7 +8729,7 @@ M3 = {'GOOGL': {'pfcf': 73.06, 'ev': 21.6, 'de': 0.18},
  'CIEN': {'pfcf': None, 'ev': None, 'de': None}}
 
 SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
- 'updated': 'Sep 26, 2026',
+ 'updated': 'Sep 27, 2026',
  'note': '⚠️ READ THIS FIRST. On 10 Sep 2026 the board was restructured to 10 groups, 38 funded names, 5 back-up names '
          'and 13 sells, and ALL 38 budgets were reset. EVERY AMOUNT WRITTEN IN A ROW DATED BEFORE 10 SEP 2026 REFERS '
          'TO THE OLD BUDGET and must be checked against the new one before it is acted on - the tranche sizes in those '
@@ -9473,6 +9483,24 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'proved the binding constraint is getting power to the site. Rungs, not lumps. Priority 1 '
                     '(existing approved room) is spent before the two new budget lines.',
             'c': 'done'},
+           {'d': '2026-09-27',
+            't': 'BE',
+            'k': 'admin',
+            'a': 'AVOID',
+            'amt': 0,
+            'w': '⚠️ BLOOM ENERGY BUDGET REVOKED - the 6,000 line opened on 26 Sep is cancelled and both BUY rungs are '
+                 'deleted.',
+            'cond': 'ERROR AND CORRECTION. On 26 Sep a 6,000 budget was opened for BE as part of the power-group '
+                    'expansion. That proposal did NOT disclose the standing AVOID already on this board, dated 21 Sep, '
+                    'conviction HIGH: a securities class action with a lead-plaintiff deadline of 28 Sep 2026, class '
+                    'period 27 Feb 2025 to 8 Jul 2026, alleging Bloom understated its reliance on scandium from China, '
+                    'and EV/EBITDA of 118. Confirmed 27 Sep against Levi & Korsinsky and Pomerantz filings. Salee '
+                    'spotted the contradiction on the board before any order was placed. The earlier AVOID stands and '
+                    'was never overturned by evidence - only overlooked. NOT ON THE BOARD, STAYING OFF. The 6,000 is '
+                    'released back to the power group. CAT 15,000 is unaffected and rung 1 proceeds on 28 Sep. '
+                    'REOPENING TEST: the litigation resolved or dismissed, AND the scandium supply dependence '
+                    'disclosed and quantified in a filing, AND EV/EBITDA back under 40.',
+            'c': 'done'},
            {'d': '2026-09-28',
             't': 'BE',
             'k': 'legal',
@@ -9881,24 +9909,6 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'cond': 'Profitable, priced below the analyst average, and had no rule until now. Limit at or near last '
                     'close; never more than +1%. US session opens 20:30 Bangkok.',
             'c': 'planned'},
-           {'d': '2026-10-14',
-            't': 'CAT',
-            'k': 'buy',
-            'a': 'BUY',
-            'amt': 5000,
-            'w': 'CATERPILLAR rung 2 of 3 (5,000 of 15,000).',
-            'cond': 'Hold this rung if Q3 results show the power-generation business is immaterial to group earnings - '
-                    'in that case cap CAT at 7,500 total.',
-            'c': 'open'},
-           {'d': '2026-10-14',
-            't': 'BE',
-            'k': 'buy',
-            'a': 'BUY',
-            'amt': 3000,
-            'w': 'BLOOM ENERGY rung 1 of 2 (3,000 of 6,000).',
-            'cond': 'Conviction Medium - an option, not a holding. 53.9x forward earnings on a 7.9% margin; revenue '
-                    '+91% is the whole case. Deliberately one fifth the size of CAT.',
-            'c': 'open'},
            {'d': '2026-10-15',
             't': 'ASML',
             'k': 'earnings',
@@ -9990,6 +10000,18 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'iPhone AND gross margin holding above 47% WITHOUT a tariff-refund benefit. Budget stays 24,000, '
                     '46 shares held.',
             'c': 'planned'},
+           {'d': '2026-10-30',
+            't': 'CAT',
+            'k': 'buy',
+            'a': 'BUY',
+            'amt': 5000,
+            'w': 'CATERPILLAR rung 2 of 3 (5,000 of 15,000). MOVED from 14 Oct to 30 Oct on 27 Sep.',
+            'cond': 'DATE CORRECTED 27 Sep 2026: the original 14 Oct date sat BEFORE Caterpillar reports Q3 (scheduled '
+                    'on or about 28 Oct), so the condition attached to this rung could not be tested. Now placed two '
+                    'days after the report. THE TEST: hold this rung if Q3 shows the power-generation / energy & '
+                    'transportation business is immaterial to group earnings or is not growing with data-centre demand '
+                    '- in that case cap CAT at 7,500 total and release the remaining 7,500 to the power group.',
+            'c': 'open'},
            {'d': '2026-11-01',
             'dl': "⚠️⚠️ CLOCK CHANGE 1 NOVEMBER - Salee's trading window moves one hour LATER. Correct my own standing "
                   'note.',
@@ -10167,16 +10189,6 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'amt': 5000,
             'w': 'CATERPILLAR rung 3 of 3 (5,000 of 15,000).',
             'cond': 'Final rung. Completes the 15,000 budget.',
-            'c': 'open'},
-           {'d': '2026-11-11',
-            't': 'BE',
-            'k': 'buy',
-            'a': 'BUY',
-            'amt': 3000,
-            'w': 'BLOOM ENERGY rung 2 of 2 (3,000 of 6,000).',
-            'cond': 'STOP CONDITION for the whole power expansion: if two further large AI campuses are CANCELLED (not '
-                    'merely delayed) before this date, the shortage has become a demand problem - skip this rung and '
-                    're-underwrite the group.',
             'c': 'open'},
            {'d': '2026-11-18',
             't': 'NVDA',
