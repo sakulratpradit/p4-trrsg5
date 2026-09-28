@@ -3,30 +3,37 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Sep 27, 2026 (2) - ⚠️ BLOOM ENERGY BUDGET REVOKED. The 6,000 BE line opened on 26 Sep contradicted a standing '
- 'HIGH-conviction AVOID dated 21 Sep on this same board: securities class action, lead-plaintiff deadline 28 Sep 2026, '
- 'alleging understated reliance on Chinese scandium, EV/EBITDA 118. The 26 Sep proposal failed to disclose it. Salee '
- 'caught it before any order was placed. BE budget set back to None and both BE BUY rungs deleted. CAT 15,000 '
- 'unaffected - rung 1 proceeds 28 Sep, rung 2 moved to 30 Oct (after the ~28 Oct Q3 report). Power expansion is now '
- '31,663.86 existing room + 15,000 CAT = 46,663.86. || PREVIOUS ENTRY: Sep 27, 2026 - SCHEDULE DATE CORRECTION at '
- "Salee's instruction: CAT rung 2 (5,000) MOVED from 14 Oct to 30 Oct. The original date fell BEFORE Caterpillar's Q3 "
- 'report (on or about 28 Oct), so the condition attached to the rung - hold if the power-generation business is '
- 'immaterial to group earnings - could not be tested on the day it was due. No other row changed. BE rung 1 stays 14 '
- 'Oct; CAT rung 3 and BE rung 2 stay 11 Nov. || PREVIOUS ENTRY: Sep 26, 2026 - POWER GROUP EXPANSION APPROVED by '
- 'Salee: new budget lines CAT $15,000 and BE $6,000 opened (+$21,000 of new authority). Existing power room $31,663.86 '
- 'unchanged. Seven schedule rows added covering the $52,663.86 deployment in rungs from 28 Sep. No trades placed - '
- 'every order is placed by Salee at POEMS. || PREVIOUS ENTRY: Sep 25, 2026 - DAILY PRICE REFRESH: 94 of 94 closes '
- 'updated to the Fri 2026-09-25 close (stockanalysis.com quote pages, validated against history tables). Three moves '
- 'over the 6% gate, all confirmed against Google Finance: CRDO +7.65%, BE +8.27%, TSEM +6.07%. ONDS: history table '
- 'printed 7.82 but quote page and Google Finance both print 7.64 at the Sep 25 close - 7.64 written. HISTORY row '
- 'appended for 2026-09-25. Prices only; fundamentals, POS, TRADES untouched. || PREVIOUS ENTRY: Sep 24, 2026 (3) - '
- 'DAILY PRICE REFRESH: 94 of 94 closes updated to the Thu 2026-09-24 close (stockanalysis.com quote pages, validated '
- 'against history tables). Four moves over the 6% gate, all confirmed against second sources: ARM -7.88% (Google '
- 'Finance + MarketScreener), FSLR -10.32% (GuruFocus), TEM +7.38% and NBIS +7.44% (Google Finance). HISTORY row '
- 'appended for 2026-09-24. Prices only; fundamentals, POS, TRADES untouched. || PREVIOUS ENTRY: Sep 24, 2026 (2) - '
- 'POEMS PORTAL RECONCILED, AND THE BOARD NOW MATCHES IT TO THE CENT. Salee sent the live POEMS positions screen: 37 '
- 'open positions, cost 609,758.47, market value 747,056.67, unrealised +137,298.20 (+22.52%), realised today '
- '+2,919.33. THREE COST FIGURES WERE SHORT ON THIS BOARD, all by the commission on a single buy: GEV 9,603.86 -> '
+ASOF = ('Sep 28, 2026 - SIX POWER-GROUP BUYS EXECUTED AT POEMS, all limit orders, all filled the same evening (21:30-23:10 '
+ 'Bangkok) into a Nasdaq -1.3% session, every fill below the Fri 25 Sep close: VRT 44 at 246.40, CEG 27 at 259.43, VST '
+ '49 at 137.3325, ETN 7 at 427.60, CAT 6 at 813.0178 (RUNG 1 of the new 15,000 line), GEV 3 at 953.66 (first 950 order '
+ 'withdrawn, re-entered 954.10). Total 35,359.15 including six flat 8.56 commissions. Cash: POEMS live 203,901.86 '
+ 'before settlement less 35,359.15 = 168,542.71. POS, TRADES, CASH, TOTALS, MONTHLY and two SCHEDULE rows updated; '
+ 'prices untouched (daily job). Power & Electrification now holds VRT 84, CEG 64, VST 106, ETN 26, GEV 13, CAT 6. '
+ 'Commissions assumed flat 8.56 per order per the 24 Sep INTC contract note - reconcile against the next POEMS '
+ 'positions screen. || PREVIOUS ENTRY: Sep 27, 2026 (2) - ⚠️ BLOOM ENERGY BUDGET REVOKED. The 6,000 BE line opened on '
+ '26 Sep contradicted a standing HIGH-conviction AVOID dated 21 Sep on this same board: securities class action, '
+ 'lead-plaintiff deadline 28 Sep 2026, alleging understated reliance on Chinese scandium, EV/EBITDA 118. The 26 Sep '
+ 'proposal failed to disclose it. Salee caught it before any order was placed. BE budget set back to None and both BE '
+ 'BUY rungs deleted. CAT 15,000 unaffected - rung 1 proceeds 28 Sep, rung 2 moved to 30 Oct (after the ~28 Oct Q3 '
+ 'report). Power expansion is now 31,663.86 existing room + 15,000 CAT = 46,663.86. || PREVIOUS ENTRY: Sep 27, 2026 - '
+ "SCHEDULE DATE CORRECTION at Salee's instruction: CAT rung 2 (5,000) MOVED from 14 Oct to 30 Oct. The original date "
+ "fell BEFORE Caterpillar's Q3 report (on or about 28 Oct), so the condition attached to the rung - hold if the "
+ 'power-generation business is immaterial to group earnings - could not be tested on the day it was due. No other row '
+ 'changed. BE rung 1 stays 14 Oct; CAT rung 3 and BE rung 2 stay 11 Nov. || PREVIOUS ENTRY: Sep 26, 2026 - POWER GROUP '
+ 'EXPANSION APPROVED by Salee: new budget lines CAT $15,000 and BE $6,000 opened (+$21,000 of new authority). Existing '
+ 'power room $31,663.86 unchanged. Seven schedule rows added covering the $52,663.86 deployment in rungs from 28 Sep. '
+ 'No trades placed - every order is placed by Salee at POEMS. || PREVIOUS ENTRY: Sep 25, 2026 - DAILY PRICE REFRESH: '
+ '94 of 94 closes updated to the Fri 2026-09-25 close (stockanalysis.com quote pages, validated against history '
+ 'tables). Three moves over the 6% gate, all confirmed against Google Finance: CRDO +7.65%, BE +8.27%, TSEM +6.07%. '
+ 'ONDS: history table printed 7.82 but quote page and Google Finance both print 7.64 at the Sep 25 close - 7.64 '
+ 'written. HISTORY row appended for 2026-09-25. Prices only; fundamentals, POS, TRADES untouched. || PREVIOUS ENTRY: '
+ 'Sep 24, 2026 (3) - DAILY PRICE REFRESH: 94 of 94 closes updated to the Thu 2026-09-24 close (stockanalysis.com quote '
+ 'pages, validated against history tables). Four moves over the 6% gate, all confirmed against second sources: ARM '
+ '-7.88% (Google Finance + MarketScreener), FSLR -10.32% (GuruFocus), TEM +7.38% and NBIS +7.44% (Google Finance). '
+ 'HISTORY row appended for 2026-09-24. Prices only; fundamentals, POS, TRADES untouched. || PREVIOUS ENTRY: Sep 24, '
+ '2026 (2) - POEMS PORTAL RECONCILED, AND THE BOARD NOW MATCHES IT TO THE CENT. Salee sent the live POEMS positions '
+ 'screen: 37 open positions, cost 609,758.47, market value 747,056.67, unrealised +137,298.20 (+22.52%), realised '
+ 'today +2,919.33. THREE COST FIGURES WERE SHORT ON THIS BOARD, all by the commission on a single buy: GEV 9,603.86 -> '
  '9,611.24 (+7.38), VRT 9,838.00 -> 9,842.93 (+4.93), PANW 9,491.14 -> 9,494.82 (+3.68); PANW budget moved with its '
  'cost since it is a withdrawn name held at cost. Total cost was understating by 15.99. REALISED ON THE TWO SALES '
  'TRIMMED TO THE BROKER CENTS: SKHY 950.75 -> 950.77, INTC 1,968.54 -> 1,968.56, so lifetime realised is -540.47. '
@@ -7351,11 +7358,11 @@ POS = {'GOOGL': {'budget': 78000, 'cost': 59475.92, 'shares': 217},
  'GLW': {'budget': None, 'cost': None, 'shares': None},
  'FN': {'budget': None, 'cost': None, 'shares': None},
  'AAOI': {'budget': None, 'cost': None, 'shares': None},
- 'ETN': {'budget': 11000, 'cost': 7879.55, 'shares': 19},
- 'VST': {'budget': 15000, 'cost': 8133.29, 'shares': 57},
- 'CEG': {'budget': 17000, 'cost': 9869.13, 'shares': 37},
- 'VRT': {'budget': 21000, 'cost': 9842.93, 'shares': 40},
- 'GEV': {'budget': 13000, 'cost': 9611.24, 'shares': 10},
+ 'ETN': {'budget': 11000, 'cost': 10881.31, 'shares': 26},
+ 'VST': {'budget': 15000, 'cost': 14871.14, 'shares': 106},
+ 'CEG': {'budget': 17000, 'cost': 16882.3, 'shares': 64},
+ 'VRT': {'budget': 21000, 'cost': 20693.09, 'shares': 84},
+ 'GEV': {'budget': 13000, 'cost': 12480.78, 'shares': 13},
  'BWXT': {'budget': None, 'cost': None, 'shares': None},
  'MPWR': {'budget': None, 'cost': None, 'shares': None},
  'OKLO': {'budget': None, 'cost': None, 'shares': None},
@@ -7402,7 +7409,7 @@ POS = {'GOOGL': {'budget': 78000, 'cost': 59475.92, 'shares': 217},
  'STRL': {'budget': None, 'cost': None, 'shares': None},
  'FSLR': {'budget': None, 'cost': 2003.56, 'shares': 10},
  'NFLX': {'budget': None, 'cost': None, 'shares': None},
- 'CAT': {'budget': 15000, 'cost': None, 'shares': None},
+ 'CAT': {'budget': 15000, 'cost': 4886.67, 'shares': 6},
  'GE': {'budget': None, 'cost': None, 'shares': None},
  'MCHP': {'budget': None, 'cost': None, 'shares': None},
  'CRCL': {'budget': None, 'cost': None, 'shares': None},
@@ -7917,14 +7924,84 @@ TRADES = [{'date': 'Jul 21, 2026',
           'TSMC, 147.5 shares, and a sold-out TSMC is exactly why Intel is getting attention.',
   'price': 124.19,
   'shares': 25,
-  't': 'INTC'}]
+  't': 'INTC'},
+ {'action': 'BUY',
+  'amount': 10850.16,
+  'date': 'Sep 28, 2026',
+  'est': False,
+  'price': 246.4,
+  'shares': 44,
+  't': 'VRT',
+  'note': 'Vertiv 44 at 246.40 limit, filled in full - the largest of the six power orders. Priority 1 of the 26 Sep '
+          'power-group expansion: spend the already-approved room first. Gross 10,841.60 plus the flat 8.56 POEMS '
+          'commission = 10,850.16. POEMS order 6150389. Every fill was BELOW the Fri 25 Sep close - bought into a '
+          'Nasdaq -1.3% session. Six limit orders in the 21:30-23:10 Bangkok window, all filled the same evening.'},
+ {'action': 'BUY',
+  'amount': 7013.17,
+  'date': 'Sep 28, 2026',
+  'est': False,
+  'price': 259.43,
+  'shares': 27,
+  't': 'CEG',
+  'note': 'Constellation 27 at 259.43 (limit 259.47). Existing nuclear generation - the asset that gets scarcer every '
+          'time a new plant is refused a permit. Gross 7,004.61 plus the flat 8.56 POEMS commission = 7,013.17. POEMS '
+          'order 6150657. Every fill was BELOW the Fri 25 Sep close - bought into a Nasdaq -1.3% session. Six limit '
+          'orders in the 21:30-23:10 Bangkok window, all filled the same evening.'},
+ {'action': 'BUY',
+  'amount': 6737.85,
+  'date': 'Sep 28, 2026',
+  'est': False,
+  'price': 137.3325,
+  'shares': 49,
+  't': 'VST',
+  'note': 'Vistra 49 at 137.3325 (limit 137.40). Same thesis as Constellation: running plants cannot be built in time. '
+          'Gross 6,729.29 plus the flat 8.56 POEMS commission = 6,737.85. POEMS order 6150887. Every fill was BELOW '
+          'the Fri 25 Sep close - bought into a Nasdaq -1.3% session. Six limit orders in the 21:30-23:10 Bangkok '
+          'window, all filled the same evening.'},
+ {'action': 'BUY',
+  'amount': 3001.76,
+  'date': 'Sep 28, 2026',
+  'est': False,
+  'price': 427.6,
+  'shares': 7,
+  't': 'ETN',
+  'note': 'Eaton 7 at 427.60, filled at the limit. Completes the Eaton room to within 119 of budget. Gross 2,993.20 '
+          'plus the flat 8.56 POEMS commission = 3,001.76. POEMS order 6151233. Every fill was BELOW the Fri 25 Sep '
+          'close - bought into a Nasdaq -1.3% session. Six limit orders in the 21:30-23:10 Bangkok window, all filled '
+          'the same evening.'},
+ {'action': 'BUY',
+  'amount': 4886.67,
+  'date': 'Sep 28, 2026',
+  'est': False,
+  'price': 813.0178,
+  'shares': 6,
+  't': 'CAT',
+  'note': 'CATERPILLAR RUNG 1 OF 3 - first purchase of a NEW budget line opened 26 Sep. 6 shares at 813.0178 (limit '
+          '813.80). On-site generation: the bulldozer company that both xAI and OpenAI buy turbines from. Rung 2 moved '
+          'to 30 Oct, after the ~28 Oct Q3 report. Gross 4,878.11 plus the flat 8.56 POEMS commission = 4,886.67. '
+          'POEMS order 6151869. Every fill was BELOW the Fri 25 Sep close - bought into a Nasdaq -1.3% session. Six '
+          'limit orders in the 21:30-23:10 Bangkok window, all filled the same evening.'},
+ {'action': 'BUY',
+  'amount': 2869.54,
+  'date': 'Sep 28, 2026',
+  'est': False,
+  'price': 953.66,
+  'shares': 3,
+  't': 'GEV',
+  'note': 'GE Vernova 3 at 953.66. First order at 950 did not fill and was WITHDRAWN; re-entered at 954.10 and filled '
+          '- raised the limit once rather than chasing. Completes the GEV room to within 519 of budget. Gross 2,860.98 '
+          'plus the flat 8.56 POEMS commission = 2,869.54. POEMS order 6152163. Every fill was BELOW the Fri 25 Sep '
+          'close - bought into a Nasdaq -1.3% session. Six limit orders in the 21:30-23:10 Bangkok window, all filled '
+          'the same evening.'}]
 
 SELLPLAN = ['ZETA', 'CRM', 'QCOM', 'FN', 'SKHY', 'INTC']
 
 CASH = {'currency': 'USD',
- 'amount': 203906.85,
+ 'amount': 168542.71,
  'broker': 'POEMS (Phillip Securities)',
- 'asof': 'Sep 24, 2026 (POEMS executed prices; SKHY and INTC sales credited)'}
+ 'asof': 'Sep 28, 2026 (POEMS live USD balance 203,901.86 before settlement, less six executed buys 35,359.15 incl. '
+         'six flat 8.56 commissions; TER dividend 0.32 credited; commissions to be reconciled against the next '
+         'positions screen)'}
 
 REALIZED = [{'t': 'NBIS', 'g': 5, 'amount': 1404.52},
  {'t': 'IREN', 'g': 5, 'amount': 456.24},
@@ -7953,8 +8030,8 @@ REALIZED = [{'t': 'NBIS', 'g': 5, 'amount': 1404.52},
  {'t': 'SKHY', 'g': 3, 'amount': 950.77},
  {'t': 'INTC', 'g': 2, 'amount': 1968.56}]
 
-TOTALS = {'investedEverUSD': 629703.86,
- 'investedEverTHB': 19963179,
+TOTALS = {'investedEverUSD': 665063.01,
+ 'investedEverTHB': 21125611,
  'soldCostUSD': 68895.4,
  'soldCostTHB': 2279428,
  'realizedUSD': -540.47,
@@ -8552,20 +8629,26 @@ MONTHLY = [{'ym': '2025-07',
               {'g': 6, 'buy': 2055.24, 'sell': 0.0, 'real': 0.0},
               {'g': 7, 'buy': 1887.98, 'sell': 0.0, 'real': 0.0}]},
  {'ym': '2026-09',
-  'buyUSD': 11376.69,
-  'buyLots': 4,
+  'buyUSD': 46735.84,
+  'buyLots': 10,
   'sellUSD': 31798.04,
   'sellLots': 13,
   'realizedUSD': 892.59,
   'realizedTHB': 29342,
   'byStock': [{'t': 'TSLA', 'buy': 3668.56, 'sell': 7286.01, 'real': -687.17},
+              {'t': 'VRT', 'buy': 10850.16, 'sell': 0.0, 'real': 0.0},
+              {'t': 'CEG', 'buy': 7013.17, 'sell': 0.0, 'real': 0.0},
+              {'t': 'VST', 'buy': 6737.85, 'sell': 0.0, 'real': 0.0},
+              {'t': 'INTC', 'buy': 0.0, 'sell': 5161.49, 'real': 3131.91},
+              {'t': 'CAT', 'buy': 4886.67, 'sell': 0.0, 'real': 0.0},
               {'t': 'ORCL', 'buy': 3914.81, 'real': 0.0, 'sell': 0.0},
               {'buy': 1789.76, 'real': 61.51, 'sell': 1851.27, 't': 'HUBB'},
+              {'t': 'ETN', 'buy': 3001.76, 'sell': 0.0, 'real': 0.0},
               {'t': 'COHR', 'buy': 0.0, 'real': -433.76, 'sell': 2961.36},
+              {'t': 'GEV', 'buy': 2869.54, 'sell': 0.0, 'real': 0.0},
+              {'t': 'SKHY', 'buy': 0.0, 'sell': 2864.01, 'real': 950.77},
               {'t': 'AMKR', 'buy': 0.0, 'real': -674.76, 'sell': 2779.86},
               {'t': 'IREN', 'buy': 0.0, 'sell': 2092.88, 'real': 357.72},
-              {'t': 'INTC', 'buy': 0.0, 'sell': 5161.49, 'real': 3131.91},
-              {'t': 'SKHY', 'buy': 0.0, 'sell': 2864.01, 'real': 950.77},
               {'buy': 2003.56, 'real': 0.0, 'sell': 0.0, 't': 'FSLR'},
               {'t': 'BWXT', 'buy': 0.0, 'sell': 1564.4, 'real': -429.66},
               {'t': 'ONDS', 'buy': 0.0, 'sell': 1511.36, 'real': -519.18},
@@ -8577,7 +8660,7 @@ MONTHLY = [{'ym': '2025-07',
               {'g': 3, 'buy': 0.0, 'sell': 2864.01, 'real': 950.77},
               {'g': 4, 'buy': 0.0, 'sell': 4076.77, 'real': -656.91},
               {'g': 5, 'buy': 3914.81, 'sell': 3515.22, 'real': 66.99},
-              {'g': 6, 'buy': 3793.32, 'sell': 3415.67, 'real': -368.15},
+              {'g': 6, 'buy': 39152.47, 'sell': 3415.67, 'real': -368.15},
               {'g': 7, 'buy': 3668.56, 'sell': 7286.01, 'real': -687.17},
               {'g': 9, 'buy': 0.0, 'sell': 1511.36, 'real': -519.18}]}]
 
@@ -8729,7 +8812,7 @@ M3 = {'GOOGL': {'pfcf': 73.06, 'ev': 21.6, 'de': 0.18},
  'CIEN': {'pfcf': None, 'ev': None, 'de': None}}
 
 SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
- 'updated': 'Sep 27, 2026',
+ 'updated': 'Sep 28, 2026',
  'note': '⚠️ READ THIS FIRST. On 10 Sep 2026 the board was restructured to 10 groups, 38 funded names, 5 back-up names '
          'and 13 sells, and ALL 38 budgets were reset. EVERY AMOUNT WRITTEN IN A ROW DATED BEFORE 10 SEP 2026 REFERS '
          'TO THE OLD BUDGET and must be checked against the new one before it is acted on - the tranche sizes in those '
@@ -9515,21 +9598,22 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'k': 'buy',
             'a': 'BUY',
             'amt': 31663.86,
-            'w': 'PRIORITY 1 - spend the EXISTING approved power room: VRT 11,157.07, CEG 7,130.87, VST 6,866.71, GEV '
-                 '3,388.76, ETN 3,120.45.',
+            'w': 'PRIORITY 1 - DONE. All five existing-room orders filled 28 Sep: VRT 44 at 246.40, CEG 27 at 259.43, '
+                 'VST 49 at 137.3325, GEV 3 at 953.66, ETN 7 at 427.60. Total 30,472.48 incl. commissions.',
             'cond': 'Already-approved budgets. No new authority needed. Place as five separate POEMS orders. This '
                     'comes BEFORE any CAT or BE order.',
-            'c': 'open'},
+            'c': 'done'},
            {'d': '2026-09-28',
             't': 'CAT',
             'k': 'buy',
             'a': 'BUY',
             'amt': 5000,
-            'w': 'CATERPILLAR rung 1 of 3 (5,000 of 15,000).',
+            'w': 'CATERPILLAR rung 1 of 3 - DONE. 6 shares at 813.0178, cost 4,886.67 incl. commission (order '
+                 '6151869).',
             'cond': 'Conviction High. 28.4x forward earnings and 14.5% margin against GE Vernova 55.7x and Vertiv '
                     '36.6x - the market still prices CAT as a construction-equipment company. Also the only name in '
                     'the group whose demand does not depend on AI capex alone. No single order above 5,000.',
-            'c': 'open'},
+            'c': 'done'},
            {'d': '2026-09-30',
             't': '',
             'k': 'macro',
