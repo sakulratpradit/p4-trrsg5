@@ -1,5 +1,17 @@
 # P4 price refresh — status
 
+- **Run time:** 2026-10-01 ~03:40 UTC (03:30 backup run)
+- **Trading date recorded:** 2026-09-30 (Wed) — already current before this run started
+- **Result:** NOT PUSHED (no-op by design). FIRST CHECK passed: all 94 of 94 tickers carried `pxd = 2026-09-30`, the most recent completed US trading day, so the 00:30 run succeeded and this backup run stopped per the job rules. No prices fetched, no files changed; the regenerated mirror was discarded to leave the tree clean.
+- **Commit:** none from this run. Prices live in **a8f009a** "Daily price refresh 2026-09-30: 94 prices" (pushed by the 00:30 run); repo HEAD at run time was 90b0470 (MU Q4 scoring, interactive session) — untouched.
+- **Prices changed:** 0 this run (94 by the 00:30 run).
+- **Unresolved tickers:** none.
+- **Blockers:** none.
+
+---
+
+## Detail from the successful 00:30 run (2026-10-01, kept for reference)
+
 - **Run time:** 2026-10-01 ~00:40–01:10 UTC (00:30 scheduled run)
 - **Trading date recorded:** 2026-09-30 (Wed)
 - **Result:** PUSHED
