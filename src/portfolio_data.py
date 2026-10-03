@@ -9887,6 +9887,44 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'difference is the $10,000 that waits for volume evidence. || WHAT WOULD CANCEL IT: TrendForce '
                     'reporting flat or falling DRAM contract prices in any quarter, or FQ1 2027 gross margin printing '
                     'below 85%.'},
+           {'d': '2026-10-01',
+            'dl': 'Standing',
+            't': 'MU',
+            'k': 'watch',
+            'a': 'BUY',
+            'amt': '11000',
+            'c': 'done',
+            'w': '✅ 16 SEPTEMBER RULE MET ON THE 1 OCT SCORING - THE $11,000 IS RELEASED. Both legs hold: (1) FQ4 '
+                 'gross margin 87.0% non-GAAP, at or above the guided 86%; (2) TrendForce Q4 2026 outlook published 30 '
+                 'Sep: conventional DRAM contract prices +10-15% QoQ, NAND +15-20%, HBM blended ASP 2027 +121% YoY - '
+                 'still rising. The cancellation clause stays live: if any later quarter prints flat or negative DRAM '
+                 'contract pricing, the money not yet spent returns to cash. Order Thursday night 1 Oct Bangkok, limit '
+                 'at or below $1,070, together with the $4,000 rung: $15,000 total, about 14 shares.',
+            'cond': 'THE FAULT AS FOUND: the written MU plan described a 40,000 budget while the board carried 51,000, '
+                    'leaving ABOUT 11,000 WITH NO RULE ATTACHED TO IT. The arithmetic ties exactly - 28,418.42 remains '
+                    'of the 51,000 budget, of which 4,000 is the 30 September rung, 3,418.42 the 17 December rung and '
+                    '10,000 was explicitly parked, TOTAL 17,418.42, LEAVING 11,000.00 UNGOVERNED. || ⚠️ THE SUPERCYCLE '
+                    'SLIDE OF 16 SEPTEMBER IS WHAT CLOSED IT, BECAUSE THE RESEARCH BEHIND IT PRODUCED THE RIGHT TEST. '
+                    'THE RULE IS NOW WRITTEN AND IT IS DELIBERATELY HARSH: THE 11,000 IS RELEASED ONLY IF BOTH OF '
+                    "THESE HOLD TOGETHER. (1) MICRON'S FISCAL Q4, REPORTING 30 SEPTEMBER 2026, DELIVERS A GROSS MARGIN "
+                    'AT OR ABOVE THE GUIDED 86% - the company guided revenue of 50.0bn plus or minus 1.0bn and gross '
+                    'margin of about 86% on 24 June. (2) FOURTH-QUARTER 2026 CONVENTIONAL DRAM CONTRACT PRICES ARE '
+                    'STILL RISING QUARTER ON QUARTER when TrendForce publishes them. || ⚠️⚠️ AND THE OTHER HALF OF THE '
+                    'RULE MATTERS MORE: IF DRAM CONTRACT PRICES GO FLAT OR NEGATIVE IN ANY QUARTER, THE 11,000 IS '
+                    "CANCELLED, NOT DEFERRED. It returns to unallocated cash and Micron's budget falls to 40,000, "
+                    'which is what the written plan always said. A parked amount with no cancellation condition is not '
+                    'a plan, it is a drawer. || 📊 THE ONE SERIES THAT MATTERS MORE THAN THE 1.6 TRILLION HEADLINE - '
+                    'CONVENTIONAL DRAM CONTRACT PRICES, QUARTER ON QUARTER (TrendForce): 1Q26 UP TO PLUS 98%. 2Q26 '
+                    'PLUS 58 TO 63%. 3Q26 PLUS 13 TO 18%. ⚠️ PRICES ARE STILL RISING, BUT THE RATE OF INCREASE HAS '
+                    'FALLEN BY ROUGHLY FIVE SIXTHS IN TWO QUARTERS. TrendForce, 3 July 2026, verbatim: "Weaker demand '
+                    'from consumer applications and the impact of a higher comparison base are expected to moderate '
+                    'contract price increases" - and the same release says record prices have reached customers\' '
+                    '"affordability limit". 3Q26 NAND is plus 10 to 15%. THIS IS THE BOARD\'S MEMORY CYCLE GAUGE FROM '
+                    'NOW ON. THE HEADLINE MARKET SIZE IS A LAGGING NUMBER; THE CONTRACT PRICE IS A LEADING ONE. || ⚠️ '
+                    'WHY THE TEST IS BUILT THIS WAY AND NOT ON THE HEADLINE: the 1.6 trillion number is SEVEN TWELFTHS '
+                    'ACTUAL AND FIVE TWELFTHS PROJECTED, and the same body forecast 975 BILLION for 2026 as recently '
+                    'as 2 DECEMBER 2025. A number that has moved 70% in nine months is not a foundation for committing '
+                    '11,000 dollars. A contract price that TrendForce publishes every quarter is.'},
            {'d': '2026-10-02',
             't': 'GOOGL',
             'k': 'legal',
@@ -14222,44 +14260,6 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'it has only ever said that for calendar 2026 (on the Dec 2025 call); the FQ3 2026 release says '
                     'only that HBM4E volume production is expected in calendar 2027. A sold-out 2027 would mean th',
             'c': 'standing'},
-           {'d': '2026-10-01',
-            'dl': 'Standing',
-            't': 'MU',
-            'k': 'watch',
-            'a': 'BUY',
-            'amt': '11000',
-            'c': 'done',
-            'w': '✅ 16 SEPTEMBER RULE MET ON THE 1 OCT SCORING - THE $11,000 IS RELEASED. Both legs hold: (1) FQ4 '
-                 'gross margin 87.0% non-GAAP, at or above the guided 86%; (2) TrendForce Q4 2026 outlook published 30 '
-                 'Sep: conventional DRAM contract prices +10-15% QoQ, NAND +15-20%, HBM blended ASP 2027 +121% YoY - '
-                 'still rising. The cancellation clause stays live: if any later quarter prints flat or negative DRAM '
-                 'contract pricing, the money not yet spent returns to cash. Order Thursday night 1 Oct Bangkok, limit '
-                 'at or below $1,070, together with the $4,000 rung: $15,000 total, about 14 shares.',
-            'cond': 'THE FAULT AS FOUND: the written MU plan described a 40,000 budget while the board carried 51,000, '
-                    'leaving ABOUT 11,000 WITH NO RULE ATTACHED TO IT. The arithmetic ties exactly - 28,418.42 remains '
-                    'of the 51,000 budget, of which 4,000 is the 30 September rung, 3,418.42 the 17 December rung and '
-                    '10,000 was explicitly parked, TOTAL 17,418.42, LEAVING 11,000.00 UNGOVERNED. || ⚠️ THE SUPERCYCLE '
-                    'SLIDE OF 16 SEPTEMBER IS WHAT CLOSED IT, BECAUSE THE RESEARCH BEHIND IT PRODUCED THE RIGHT TEST. '
-                    'THE RULE IS NOW WRITTEN AND IT IS DELIBERATELY HARSH: THE 11,000 IS RELEASED ONLY IF BOTH OF '
-                    "THESE HOLD TOGETHER. (1) MICRON'S FISCAL Q4, REPORTING 30 SEPTEMBER 2026, DELIVERS A GROSS MARGIN "
-                    'AT OR ABOVE THE GUIDED 86% - the company guided revenue of 50.0bn plus or minus 1.0bn and gross '
-                    'margin of about 86% on 24 June. (2) FOURTH-QUARTER 2026 CONVENTIONAL DRAM CONTRACT PRICES ARE '
-                    'STILL RISING QUARTER ON QUARTER when TrendForce publishes them. || ⚠️⚠️ AND THE OTHER HALF OF THE '
-                    'RULE MATTERS MORE: IF DRAM CONTRACT PRICES GO FLAT OR NEGATIVE IN ANY QUARTER, THE 11,000 IS '
-                    "CANCELLED, NOT DEFERRED. It returns to unallocated cash and Micron's budget falls to 40,000, "
-                    'which is what the written plan always said. A parked amount with no cancellation condition is not '
-                    'a plan, it is a drawer. || 📊 THE ONE SERIES THAT MATTERS MORE THAN THE 1.6 TRILLION HEADLINE - '
-                    'CONVENTIONAL DRAM CONTRACT PRICES, QUARTER ON QUARTER (TrendForce): 1Q26 UP TO PLUS 98%. 2Q26 '
-                    'PLUS 58 TO 63%. 3Q26 PLUS 13 TO 18%. ⚠️ PRICES ARE STILL RISING, BUT THE RATE OF INCREASE HAS '
-                    'FALLEN BY ROUGHLY FIVE SIXTHS IN TWO QUARTERS. TrendForce, 3 July 2026, verbatim: "Weaker demand '
-                    'from consumer applications and the impact of a higher comparison base are expected to moderate '
-                    'contract price increases" - and the same release says record prices have reached customers\' '
-                    '"affordability limit". 3Q26 NAND is plus 10 to 15%. THIS IS THE BOARD\'S MEMORY CYCLE GAUGE FROM '
-                    'NOW ON. THE HEADLINE MARKET SIZE IS A LAGGING NUMBER; THE CONTRACT PRICE IS A LEADING ONE. || ⚠️ '
-                    'WHY THE TEST IS BUILT THIS WAY AND NOT ON THE HEADLINE: the 1.6 trillion number is SEVEN TWELFTHS '
-                    'ACTUAL AND FIVE TWELFTHS PROJECTED, and the same body forecast 975 BILLION for 2026 as recently '
-                    'as 2 DECEMBER 2025. A number that has moved 70% in nine months is not a foundation for committing '
-                    '11,000 dollars. A contract price that TrendForce publishes every quarter is.'},
            {'d': '',
             'dl': 'Standing - next scoring cycle',
             't': 'NVDA',
