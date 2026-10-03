@@ -3,31 +3,34 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ("Oct 3, 2026 (3) - RATE REVIEW + WATCH-LIST CUT EXECUTED on Salee's approval: Oracle marked SELL (75 sh, order from 5 "
- 'Oct); Vistra and Rocket Lab budgets capped at cost; L3Harris budget cancelled; Synopsys paused to 10 Dec; 31 '
- 'watch-only names removed - board 94 -> 63 (38 held, 25 watch, cap 30 watch) || PREVIOUS ENTRY: Oct 3, 2026 (2) - '
- 'APPROVED BY SALEE: (1) RATE RULE - no new money into unprofitable companies while the US 10-year is above 5% (now '
- '5.28%); (2) Meta rung 1 on 9 Oct is a LIMIT at $705, rolls into rung 2 if unfilled; (3) Meta rung 2 moved 28 Oct -> '
- '30 Oct, after Q3 results on 29 Oct || PREVIOUS ENTRY: Oct 3, 2026 - ALPHABET HOLD LIFTED: the 2 Oct date was the '
- 'filing deadline for proposed final judgments; the 16 Sep unsealed remedies opinion (6-year worldwide behavioural '
- 'remedies, monitor, no divestiture, no springing breakup) bounds the final judgment, so tranche 3 (18,524.08) on 19 '
- 'Nov stands || PREVIOUS ENTRY: Oct 2, 2026 (3) - DAILY PRICE REFRESH: 93 of 94 closes updated to the Fri 2026-10-02 '
- 'close (stockanalysis.com quote pages stamped "Oct 2, 2026, 4:00 PM EDT", each validated: quote previous-close equals '
- 'the history-table Oct 1 close). Six moves at/over the 6% gate, all confirmed against second sources: STX -10.21% '
- '(247wallst 2 Oct 8:52am: 849.79 -10% on Toshiba HDD expansion), TER +8.00% (stockstotrade 2 Oct 4:48 PM ET: +7.75%, '
- 'session band 440-452, Magnum E2 launch), FPS +8.09% (gurufocus 2 Oct 07:32 prev close 37.33 + Bernstein Outperform '
- '$48 initiation; MSN: pre-market +13%), AAOI +7.71% (yahoo article 2 Oct 12:03 PM: 115.49 +8%), SPCX +7.35% (fool.com '
- '2 Oct 15:31: 157.08 +6.08% intraday, ISS + Google satellite launches), CGNX +7.11% vs stored 30 Sep (history table '
- 'stale at Sep 30; quote prev close 62.22 corroborated by stocktitan 1 Oct 16:16 62.15; two-day move). Quote page and '
- 'history table disagreed on six closes, quote page taken per rule: LHX 236.60 (hist 236.63), KTOS 43.07 (hist 42.64), '
- 'BWXT 134.86 (hist 134.32), AEP 119.57 (hist 120.31), SHOP 151.39 (hist 151.27), SE 95.19 (hist 95.18). XE UNRESOLVED '
- 'and left at its 30 Sep value 14.18: the quote page (14.38, stamped Oct 2) shows numbers identical to a fool.com '
- 'article published 1 Oct 14:20 ET intraday (14.38 +3.08%, range 13.80-14.78), so the quote page is a stale snapshot, '
- 'and the history table ends at Sep 30; Google Finance was serving Sep 25 caches on every name checked today. SKHY '
- 'mcapB set to 996.35 (was None; stockanalysis quote page). HISTORY row appended for 2026-10-02. || PREVIOUS ENTRY: '
- 'Oct 2, 2026 (2) - POEMS POSITIONS RECONCILED: all 38 holdings match POEMS on shares; total open cost 659,849.81 USD, '
- 'market value 809,014.30, unrealised +149,164.49 (+22.61%). Five cost lines corrected up to the broker - CAT +1.88, '
- 'CEG +6.43, VRT +14.64, VST +5.84, MU +22.84, total +51.63. Cause: POEMS commission is 0.20% of the order plus 7% VAT '
+ASOF = ('Oct 3, 2026 (4) - VISTRA CORRECTION (Salee approved): the 3 Oct cut relied on hedge-distorted GAAP figures; Q2 '
+ 'adjusted EBITDA +31%. The 10 Nov rung ($3,433.35) is reinstated as a Q3 test - buy only if adjusted EBITDA growth '
+ 'stays 20%+ and guidance holds. Budget 18,310.33. The 13 Oct rung stays cancelled || PREVIOUS ENTRY: Oct 3, 2026 (3) '
+ "- RATE REVIEW + WATCH-LIST CUT EXECUTED on Salee's approval: Oracle marked SELL (75 sh, order from 5 Oct); Vistra "
+ 'and Rocket Lab budgets capped at cost; L3Harris budget cancelled; Synopsys paused to 10 Dec; 31 watch-only names '
+ 'removed - board 94 -> 63 (38 held, 25 watch, cap 30 watch) || PREVIOUS ENTRY: Oct 3, 2026 (2) - APPROVED BY SALEE: '
+ '(1) RATE RULE - no new money into unprofitable companies while the US 10-year is above 5% (now 5.28%); (2) Meta rung '
+ '1 on 9 Oct is a LIMIT at $705, rolls into rung 2 if unfilled; (3) Meta rung 2 moved 28 Oct -> 30 Oct, after Q3 '
+ 'results on 29 Oct || PREVIOUS ENTRY: Oct 3, 2026 - ALPHABET HOLD LIFTED: the 2 Oct date was the filing deadline for '
+ 'proposed final judgments; the 16 Sep unsealed remedies opinion (6-year worldwide behavioural remedies, monitor, no '
+ 'divestiture, no springing breakup) bounds the final judgment, so tranche 3 (18,524.08) on 19 Nov stands || PREVIOUS '
+ 'ENTRY: Oct 2, 2026 (3) - DAILY PRICE REFRESH: 93 of 94 closes updated to the Fri 2026-10-02 close (stockanalysis.com '
+ 'quote pages stamped "Oct 2, 2026, 4:00 PM EDT", each validated: quote previous-close equals the history-table Oct 1 '
+ 'close). Six moves at/over the 6% gate, all confirmed against second sources: STX -10.21% (247wallst 2 Oct 8:52am: '
+ '849.79 -10% on Toshiba HDD expansion), TER +8.00% (stockstotrade 2 Oct 4:48 PM ET: +7.75%, session band 440-452, '
+ 'Magnum E2 launch), FPS +8.09% (gurufocus 2 Oct 07:32 prev close 37.33 + Bernstein Outperform $48 initiation; MSN: '
+ 'pre-market +13%), AAOI +7.71% (yahoo article 2 Oct 12:03 PM: 115.49 +8%), SPCX +7.35% (fool.com 2 Oct 15:31: 157.08 '
+ '+6.08% intraday, ISS + Google satellite launches), CGNX +7.11% vs stored 30 Sep (history table stale at Sep 30; '
+ 'quote prev close 62.22 corroborated by stocktitan 1 Oct 16:16 62.15; two-day move). Quote page and history table '
+ 'disagreed on six closes, quote page taken per rule: LHX 236.60 (hist 236.63), KTOS 43.07 (hist 42.64), BWXT 134.86 '
+ '(hist 134.32), AEP 119.57 (hist 120.31), SHOP 151.39 (hist 151.27), SE 95.19 (hist 95.18). XE UNRESOLVED and left at '
+ 'its 30 Sep value 14.18: the quote page (14.38, stamped Oct 2) shows numbers identical to a fool.com article '
+ 'published 1 Oct 14:20 ET intraday (14.38 +3.08%, range 13.80-14.78), so the quote page is a stale snapshot, and the '
+ 'history table ends at Sep 30; Google Finance was serving Sep 25 caches on every name checked today. SKHY mcapB set '
+ 'to 996.35 (was None; stockanalysis quote page). HISTORY row appended for 2026-10-02. || PREVIOUS ENTRY: Oct 2, 2026 '
+ '(2) - POEMS POSITIONS RECONCILED: all 38 holdings match POEMS on shares; total open cost 659,849.81 USD, market '
+ 'value 809,014.30, unrealised +149,164.49 (+22.61%). Five cost lines corrected up to the broker - CAT +1.88, CEG '
+ '+6.43, VRT +14.64, VST +5.84, MU +22.84, total +51.63. Cause: POEMS commission is 0.20% of the order plus 7% VAT '
  '(0.214%), minimum 8.56 - not a flat 8.56. Every order above about 4,000 USD carries more than 8.56 (e.g. the 9 Oct '
  'Broadcom 19,875 order will cost about 42.50). Cash reduced by the same 51.63. AAOI sale row closed: the 10 shares '
  'were sold by 9 Sep and are in the SOLD book || PREVIOUS ENTRY: Oct 2, 2026 - EXCHANGE RATE UPDATED 32.875 -> 33.65 '
@@ -6144,7 +6147,7 @@ STOCKS = [{'an': 83,
   't': 'CEG'},
  {'an': 20,
   'ath': 219.82,
-  'budget': 14876.98,
+  'budget': 18310.33,
   'capexB': 2.87,
   'eps': 5.92,
   'epsG': -6.1,
@@ -6479,7 +6482,7 @@ POS = {'GOOGL': {'budget': 78000, 'cost': 59475.92, 'shares': 217},
  'GLW': {'budget': None, 'cost': None, 'shares': None},
  'FN': {'budget': None, 'cost': None, 'shares': None},
  'ETN': {'budget': 11000, 'cost': 10881.31, 'shares': 26},
- 'VST': {'budget': 14876.98, 'cost': 14876.98, 'shares': 106},
+ 'VST': {'budget': 18310.33, 'cost': 14876.98, 'shares': 106},
  'CEG': {'budget': 17000, 'cost': 16888.73, 'shares': 64},
  'VRT': {'budget': 21000, 'cost': 20707.73, 'shares': 84},
  'GEV': {'budget': 13000, 'cost': 12480.78, 'shares': 13},
@@ -9404,14 +9407,16 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
            {'d': '2026-11-10',
             't': 'VST',
             'k': 'tranche',
-            'a': 'BUY',
-            'amt': 0,
-            'w': 'CANCELLED 3 Oct 2026 (Salee approved the rate review and watch-list cut): slow growth (VST sales '
-                 '+7.4%, EPS -6.1%; LHX sales +7.3%, EPS +10.6%) while the 10-year is above 5%. No money moves. | Tier '
-                 'A rung 2 of 2 - BUY $3,433.35',
+            'a': 'DECIDE',
+            'amt': 3433.35,
+            'w': 'REINSTATED AS A Q3 TEST (Salee approved 3 Oct): DECIDE $3,433.35 after Vistra Q3 results (early '
+                 'Nov). The 3 Oct cut used GAAP figures (sales +7.4%, EPS -6.1%) that are distorted by hedge '
+                 'mark-to-market; adjusted EBITDA rose 31% to $1.77bn in Q2 with full-year guidance reaffirmed. BUY '
+                 'only if Q3 adjusted EBITDA growth is still 20% or more AND full-year guidance holds. Otherwise leave '
+                 'it. The 13 Oct rung stays cancelled.',
             'cond': 'Second half, after the Micron (30 Sep) and Meta (28 Oct) decisions. ⚠️ Clocks change 1 Nov: US '
                     'session now opens 21:30 Bangkok.',
-            'c': 'done'},
+            'c': 'planned'},
            {'d': '2026-11-11',
             't': 'CAT',
             'k': 'buy',
