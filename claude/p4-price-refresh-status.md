@@ -1,14 +1,11 @@
-# P4 price refresh status
+# P4 price refresh — status
 
-- Run time: 2026-10-03 00:41–01:55 UTC (00:30 scheduled run)
-- Trading date recorded: 2026-10-02 (Friday close)
-- Status: **PUSHED** — commit `3b87f15` (`Daily price refresh 2026-10-02: 93 prices`), pushed to main without force on first attempt; this status commit was then rebuilt once on top of the interactive session's `0d67df9` (Alphabet hold lifted) after a rejected push — the system working as designed, no data redone.
-- Prices changed: **93 of 94** (every ticker except XE). HISTORY row appended for 2026-10-02: mv 820,204.01, cost 659,849.81, unreal +160,354.20 (+24.30%), cash 153,810.52.
-- Sanity gate: **PASS** with `--allow TER --allow STX --allow AAOI --allow SPCX --allow FPS --allow CGNX` (each confirmed against a second source, see below). No warnings surfaced. `check_dashboard.js`: 494 rows, ZERO PAGE ERRORS.
-- Largest move: **STX -10.21%** (945.57 → 848.99, Toshiba HDD-expansion selloff; confirmed by 247wallst 2 Oct 8:52am, "849.79, down 10%").
-- Other >6% moves, all confirmed real: FPS +8.09% (gurufocus 2 Oct 07:32 prev-close 37.33 + Bernstein Outperform $48 initiation; MSN headline: pre-market +13%), TER +8.00% (stockstotrade 2 Oct 4:48 PM ET, +7.75%, Magnum E2), AAOI +7.71% (yahoo 2 Oct 12:03 PM, 115.49 +8%), SPCX +7.35% (fool.com 2 Oct 15:31, 157.08 +6.08% intraday, ISS + Google satellite launches), CGNX +7.11% two-day vs its stale 30 Sep board value (quote prev-close 62.22 corroborated by stocktitan 1 Oct 16:16, 62.15).
-- Quote page vs history table disagreed on six closes; quote page taken per rule: LHX 236.60 (hist 236.63), KTOS 43.07 (hist 42.64), BWXT 134.86 (hist 134.32), AEP 119.57 (hist 120.31), SHOP 151.39 (hist 151.27), SE 95.19 (hist 95.18).
-- Unresolved: **XE** — left at 14.18 / pxd 2026-09-30. Its quote page (14.38, stamped Oct 2 4:00 PM EDT) shows numbers identical to a fool.com article published 1 Oct ~14:20 ET intraday (14.38, +3.08%, range 13.80–14.78), so the quote page is a stale snapshot; its history table ends at Sep 30; no trustworthy second source found. A stale price is recoverable; a wrong one is not.
-- Source health: Google Finance (both /quote/ and /beta/quote/ forms) served **Sep 25 caches on every name checked** (TER, STX, CGNX, XE, FPS, AAOI) — useless today. fool.com /quote/ page for FPS was stale (Sep 22). stockanalysis history tables were stale on AMKR, APH, FSLR, HUBB, STRL, TSEM (Oct 1 latest; quote prev-close matched, quote used) and CGNX/XE (Sep 30 latest). Dated news articles (fool, gurufocus, 247wallst, stocktitan, stockstotrade, yahoo) were the workable second sources.
-- Other notes: SKHY mcapB set to 996.35 (was None; stockanalysis quote page 2 Oct). hi52 extended: AMD 633.91, PANW 403.24, CRWD 270.04, FTNT 180.95. lo52 extended: OKLO 35.87, APP 268.22. Live page https://sakulratpradit.github.io/p4-trrsg5/ could not be fetched from this sandbox (WebFetch provenance restriction), so rendering was verified locally on the exact pushed index.html via Playwright instead.
+- Run time (UTC): 2026-10-03 03:41
+- Trading date recorded: 2026-10-02 (already current — no new prices written this run)
+- Result: NOT PUSHED (no price changes; status-only commit)
+- Commit hash: n/a (no price commit this run; earlier run's price commit was 3b87f15)
+- Prices changed this run: 0
+- Unresolved tickers: none this run (earlier 2026-10-02 run reported XE unresolved; XE no longer on the board after the 94→63 watch-list cut in 83edd4b)
+- First-check outcome: all 63/63 tickers have pxd = 2026-10-02, the most recent completed US trading day (Fri). The literal first-check threshold of "80 or more tickers" is unreachable since the board was cut to 63 names; applied the check proportionally (100% current) and stopped per instructions. Suggest updating the threshold in price_refresh.md.
+- HISTORY row for 2026-10-02 present (mv 820,204.01, n=38).
 - Blockers: none.
