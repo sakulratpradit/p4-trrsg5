@@ -3,30 +3,31 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Oct 3, 2026 (5) - CRWD and FSLR sales MOVED from 13 Oct to Monday 5 Oct, with the Oracle sale (Salee approved). '
- 'Three sells that night: ORCL 75, CRWD 40, FSLR 10 || PREVIOUS ENTRY: Oct 3, 2026 (4) - VISTRA CORRECTION (Salee '
- 'approved): the 3 Oct cut relied on hedge-distorted GAAP figures; Q2 adjusted EBITDA +31%. The 10 Nov rung '
- '($3,433.35) is reinstated as a Q3 test - buy only if adjusted EBITDA growth stays 20%+ and guidance holds. Budget '
- '18,310.33. The 13 Oct rung stays cancelled || PREVIOUS ENTRY: Oct 3, 2026 (3) - RATE REVIEW + WATCH-LIST CUT '
- "EXECUTED on Salee's approval: Oracle marked SELL (75 sh, order from 5 Oct); Vistra and Rocket Lab budgets capped at "
- 'cost; L3Harris budget cancelled; Synopsys paused to 10 Dec; 31 watch-only names removed - board 94 -> 63 (38 held, '
- '25 watch, cap 30 watch) || PREVIOUS ENTRY: Oct 3, 2026 (2) - APPROVED BY SALEE: (1) RATE RULE - no new money into '
- 'unprofitable companies while the US 10-year is above 5% (now 5.28%); (2) Meta rung 1 on 9 Oct is a LIMIT at $705, '
- 'rolls into rung 2 if unfilled; (3) Meta rung 2 moved 28 Oct -> 30 Oct, after Q3 results on 29 Oct || PREVIOUS ENTRY: '
- 'Oct 3, 2026 - ALPHABET HOLD LIFTED: the 2 Oct date was the filing deadline for proposed final judgments; the 16 Sep '
- 'unsealed remedies opinion (6-year worldwide behavioural remedies, monitor, no divestiture, no springing breakup) '
- 'bounds the final judgment, so tranche 3 (18,524.08) on 19 Nov stands || PREVIOUS ENTRY: Oct 2, 2026 (3) - DAILY '
- 'PRICE REFRESH: 93 of 94 closes updated to the Fri 2026-10-02 close (stockanalysis.com quote pages stamped "Oct 2, '
- '2026, 4:00 PM EDT", each validated: quote previous-close equals the history-table Oct 1 close). Six moves at/over '
- 'the 6% gate, all confirmed against second sources: STX -10.21% (247wallst 2 Oct 8:52am: 849.79 -10% on Toshiba HDD '
- 'expansion), TER +8.00% (stockstotrade 2 Oct 4:48 PM ET: +7.75%, session band 440-452, Magnum E2 launch), FPS +8.09% '
- '(gurufocus 2 Oct 07:32 prev close 37.33 + Bernstein Outperform $48 initiation; MSN: pre-market +13%), AAOI +7.71% '
- '(yahoo article 2 Oct 12:03 PM: 115.49 +8%), SPCX +7.35% (fool.com 2 Oct 15:31: 157.08 +6.08% intraday, ISS + Google '
- 'satellite launches), CGNX +7.11% vs stored 30 Sep (history table stale at Sep 30; quote prev close 62.22 '
- 'corroborated by stocktitan 1 Oct 16:16 62.15; two-day move). Quote page and history table disagreed on six closes, '
- 'quote page taken per rule: LHX 236.60 (hist 236.63), KTOS 43.07 (hist 42.64), BWXT 134.86 (hist 134.32), AEP 119.57 '
- '(hist 120.31), SHOP 151.39 (hist 151.27), SE 95.19 (hist 95.18). XE UNRESOLVED and left at its 30 Sep value 14.18: '
- 'the quote page (14.38, stamped Oct 2) shows numbers identical to a fool.com article published 1 Oct 14:20 ET '
+ASOF = ('Oct 4, 2026 - RKLB limit (any close at or below $55) cancelled: it contradicted the 3 Oct rate rule and the RKLB '
+ 'budget cap || PREVIOUS ENTRY: Oct 3, 2026 (5) - CRWD and FSLR sales MOVED from 13 Oct to Monday 5 Oct, with the '
+ 'Oracle sale (Salee approved). Three sells that night: ORCL 75, CRWD 40, FSLR 10 || PREVIOUS ENTRY: Oct 3, 2026 (4) - '
+ 'VISTRA CORRECTION (Salee approved): the 3 Oct cut relied on hedge-distorted GAAP figures; Q2 adjusted EBITDA +31%. '
+ 'The 10 Nov rung ($3,433.35) is reinstated as a Q3 test - buy only if adjusted EBITDA growth stays 20%+ and guidance '
+ 'holds. Budget 18,310.33. The 13 Oct rung stays cancelled || PREVIOUS ENTRY: Oct 3, 2026 (3) - RATE REVIEW + '
+ "WATCH-LIST CUT EXECUTED on Salee's approval: Oracle marked SELL (75 sh, order from 5 Oct); Vistra and Rocket Lab "
+ 'budgets capped at cost; L3Harris budget cancelled; Synopsys paused to 10 Dec; 31 watch-only names removed - board 94 '
+ '-> 63 (38 held, 25 watch, cap 30 watch) || PREVIOUS ENTRY: Oct 3, 2026 (2) - APPROVED BY SALEE: (1) RATE RULE - no '
+ 'new money into unprofitable companies while the US 10-year is above 5% (now 5.28%); (2) Meta rung 1 on 9 Oct is a '
+ 'LIMIT at $705, rolls into rung 2 if unfilled; (3) Meta rung 2 moved 28 Oct -> 30 Oct, after Q3 results on 29 Oct || '
+ 'PREVIOUS ENTRY: Oct 3, 2026 - ALPHABET HOLD LIFTED: the 2 Oct date was the filing deadline for proposed final '
+ 'judgments; the 16 Sep unsealed remedies opinion (6-year worldwide behavioural remedies, monitor, no divestiture, no '
+ 'springing breakup) bounds the final judgment, so tranche 3 (18,524.08) on 19 Nov stands || PREVIOUS ENTRY: Oct 2, '
+ '2026 (3) - DAILY PRICE REFRESH: 93 of 94 closes updated to the Fri 2026-10-02 close (stockanalysis.com quote pages '
+ 'stamped "Oct 2, 2026, 4:00 PM EDT", each validated: quote previous-close equals the history-table Oct 1 close). Six '
+ 'moves at/over the 6% gate, all confirmed against second sources: STX -10.21% (247wallst 2 Oct 8:52am: 849.79 -10% on '
+ 'Toshiba HDD expansion), TER +8.00% (stockstotrade 2 Oct 4:48 PM ET: +7.75%, session band 440-452, Magnum E2 launch), '
+ 'FPS +8.09% (gurufocus 2 Oct 07:32 prev close 37.33 + Bernstein Outperform $48 initiation; MSN: pre-market +13%), '
+ 'AAOI +7.71% (yahoo article 2 Oct 12:03 PM: 115.49 +8%), SPCX +7.35% (fool.com 2 Oct 15:31: 157.08 +6.08% intraday, '
+ 'ISS + Google satellite launches), CGNX +7.11% vs stored 30 Sep (history table stale at Sep 30; quote prev close '
+ '62.22 corroborated by stocktitan 1 Oct 16:16 62.15; two-day move). Quote page and history table disagreed on six '
+ 'closes, quote page taken per rule: LHX 236.60 (hist 236.63), KTOS 43.07 (hist 42.64), BWXT 134.86 (hist 134.32), AEP '
+ '119.57 (hist 120.31), SHOP 151.39 (hist 151.27), SE 95.19 (hist 95.18). XE UNRESOLVED and left at its 30 Sep value '
+ '14.18: the quote page (14.38, stamped Oct 2) shows numbers identical to a fool.com article published 1 Oct 14:20 ET '
  'intraday (14.38 +3.08%, range 13.80-14.78), so the quote page is a stale snapshot, and the history table ends at Sep '
  '30; Google Finance was serving Sep 25 caches on every name checked today. SKHY mcapB set to 996.35 (was None; '
  'stockanalysis quote page). HISTORY row appended for 2026-10-02. || PREVIOUS ENTRY: Oct 2, 2026 (2) - POEMS POSITIONS '
@@ -13414,13 +13415,15 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'dl': 'Standing',
             't': 'RKLB',
             'k': 'limit',
-            'w': 'Rung 1 - any close at or below $55',
+            'w': 'CANCELLED 4 Oct: the rate rule of 3 Oct (no new money into unprofitable companies while the 10-year '
+                 'is above 5%) and the RKLB budget cap at cost make this limit void. Re-open only if the rule is '
+                 'lifted. | Rung 1 - any close at or below $55',
             'a': 'LIMIT',
-            'amt': 2000.0,
+            'amt': 0,
             'cond': '-14.4% from the Sep 4 close of 64.26; the zone a dilution announcement plausibly hands over '
                     '(52-week range 37.57-151.00). Position is 23 sh at 84.46 avg, -24% - no averaging down beyond '
                     'this rung just to repair the lot; the market does not know the cost basis.',
-            'c': 'standing'},
+            'c': 'done'},
            {'d': '',
             'dl': 'Standing - S-4 filed Aug 13; financing terms pending',
             't': 'RKLB',
