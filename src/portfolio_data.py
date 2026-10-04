@@ -3,136 +3,137 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Oct 4, 2026 (3) - Two stale triggers cancelled (LHX buffer $5,000; RKLB rung 3 $3,057.42) - both contradicted the 3 '
- 'Oct approvals || PREVIOUS ENTRY: Oct 4, 2026 (2) - NVIDIA LADDER RESET (Salee approved): $7,000 at any close <= $215 '
- '(was $200); $5,619.72 at <= $180; $3,000 after Q3 on 18 Nov only if gross margin >= 72% (was $8,000). Total '
- '15,619.72 = remaining budget; the ladder had been overcommitted by $5,000 || PREVIOUS ENTRY: Oct 4, 2026 - RKLB '
- 'limit (any close at or below $55) cancelled: it contradicted the 3 Oct rate rule and the RKLB budget cap || PREVIOUS '
- 'ENTRY: Oct 3, 2026 (5) - CRWD and FSLR sales MOVED from 13 Oct to Monday 5 Oct, with the Oracle sale (Salee '
- 'approved). Three sells that night: ORCL 75, CRWD 40, FSLR 10 || PREVIOUS ENTRY: Oct 3, 2026 (4) - VISTRA CORRECTION '
- '(Salee approved): the 3 Oct cut relied on hedge-distorted GAAP figures; Q2 adjusted EBITDA +31%. The 10 Nov rung '
- '($3,433.35) is reinstated as a Q3 test - buy only if adjusted EBITDA growth stays 20%+ and guidance holds. Budget '
- '18,310.33. The 13 Oct rung stays cancelled || PREVIOUS ENTRY: Oct 3, 2026 (3) - RATE REVIEW + WATCH-LIST CUT '
- "EXECUTED on Salee's approval: Oracle marked SELL (75 sh, order from 5 Oct); Vistra and Rocket Lab budgets capped at "
- 'cost; L3Harris budget cancelled; Synopsys paused to 10 Dec; 31 watch-only names removed - board 94 -> 63 (38 held, '
- '25 watch, cap 30 watch) || PREVIOUS ENTRY: Oct 3, 2026 (2) - APPROVED BY SALEE: (1) RATE RULE - no new money into '
- 'unprofitable companies while the US 10-year is above 5% (now 5.28%); (2) Meta rung 1 on 9 Oct is a LIMIT at $705, '
- 'rolls into rung 2 if unfilled; (3) Meta rung 2 moved 28 Oct -> 30 Oct, after Q3 results on 29 Oct || PREVIOUS ENTRY: '
- 'Oct 3, 2026 - ALPHABET HOLD LIFTED: the 2 Oct date was the filing deadline for proposed final judgments; the 16 Sep '
- 'unsealed remedies opinion (6-year worldwide behavioural remedies, monitor, no divestiture, no springing breakup) '
- 'bounds the final judgment, so tranche 3 (18,524.08) on 19 Nov stands || PREVIOUS ENTRY: Oct 2, 2026 (3) - DAILY '
- 'PRICE REFRESH: 93 of 94 closes updated to the Fri 2026-10-02 close (stockanalysis.com quote pages stamped "Oct 2, '
- '2026, 4:00 PM EDT", each validated: quote previous-close equals the history-table Oct 1 close). Six moves at/over '
- 'the 6% gate, all confirmed against second sources: STX -10.21% (247wallst 2 Oct 8:52am: 849.79 -10% on Toshiba HDD '
- 'expansion), TER +8.00% (stockstotrade 2 Oct 4:48 PM ET: +7.75%, session band 440-452, Magnum E2 launch), FPS +8.09% '
- '(gurufocus 2 Oct 07:32 prev close 37.33 + Bernstein Outperform $48 initiation; MSN: pre-market +13%), AAOI +7.71% '
- '(yahoo article 2 Oct 12:03 PM: 115.49 +8%), SPCX +7.35% (fool.com 2 Oct 15:31: 157.08 +6.08% intraday, ISS + Google '
- 'satellite launches), CGNX +7.11% vs stored 30 Sep (history table stale at Sep 30; quote prev close 62.22 '
- 'corroborated by stocktitan 1 Oct 16:16 62.15; two-day move). Quote page and history table disagreed on six closes, '
- 'quote page taken per rule: LHX 236.60 (hist 236.63), KTOS 43.07 (hist 42.64), BWXT 134.86 (hist 134.32), AEP 119.57 '
- '(hist 120.31), SHOP 151.39 (hist 151.27), SE 95.19 (hist 95.18). XE UNRESOLVED and left at its 30 Sep value 14.18: '
- 'the quote page (14.38, stamped Oct 2) shows numbers identical to a fool.com article published 1 Oct 14:20 ET '
- 'intraday (14.38 +3.08%, range 13.80-14.78), so the quote page is a stale snapshot, and the history table ends at Sep '
- '30; Google Finance was serving Sep 25 caches on every name checked today. SKHY mcapB set to 996.35 (was None; '
- 'stockanalysis quote page). HISTORY row appended for 2026-10-02. || PREVIOUS ENTRY: Oct 2, 2026 (2) - POEMS POSITIONS '
- 'RECONCILED: all 38 holdings match POEMS on shares; total open cost 659,849.81 USD, market value 809,014.30, '
- 'unrealised +149,164.49 (+22.61%). Five cost lines corrected up to the broker - CAT +1.88, CEG +6.43, VRT +14.64, VST '
- '+5.84, MU +22.84, total +51.63. Cause: POEMS commission is 0.20% of the order plus 7% VAT (0.214%), minimum 8.56 - '
- 'not a flat 8.56. Every order above about 4,000 USD carries more than 8.56 (e.g. the 9 Oct Broadcom 19,875 order will '
- 'cost about 42.50). Cash reduced by the same 51.63. AAOI sale row closed: the 10 shares were sold by 9 Sep and are in '
- "the SOLD book || PREVIOUS ENTRY: Oct 2, 2026 - EXCHANGE RATE UPDATED 32.875 -> 33.65 baht per dollar, at Salee's "
- 'request (the baht has weakened since the 9 Sep setting). Source: mid-market rate at the 1 Oct 2026 New York close, '
- 'cross-checked on two feeds (Wise 33.65, XE 33.667 at 21:41 UTC); 30-day range 32.86-33.65. Effect: the baht value of '
- 'the held US book rises 2.36% - about 622,000 baht on 802,853 USD of held positions and about 119,000 baht on the '
- '153,862 USD cash. Historical baht figures (investedEverTHB, soldCostTHB, per-ticker THBFX) are unchanged: those '
- 'record the rates actually paid. Rule going forward: the reference rate is refreshed whenever it drifts more than 1% '
- 'from the board, and always on the first trading day of each month || PREVIOUS ENTRY: Oct 1, 2026 (3) - DAILY PRICE '
- 'REFRESH: 90 of 94 closes updated to the Thu 2026-10-01 close (stockanalysis.com quote pages, validated against '
- 'history tables; every quote previous-close matched the stored Sep 30 close). Ten moves at/over the 6% gate, all '
- "confirmed against second sources: SNPS +12.78% (gurufocus 1 Oct 4:58 PM article: 'closing at $490.54', investor "
- 'day), COHR +10.90% (stockstory via yahoo, published 1 Oct 5:57 PM EDT, day change +10.90%), AAOI +8.12% (ycharts '
- "'October 1, 16:00' 107.29), CRDO +7.90% (gurufocus 210.17 +7.9% post-close, implied prev 194.79 = stored), CIEN "
- "+7.77% (gurufocus 'Key Metrics (October 1, 2026)' 379.14), LITE +7.67% (ycharts 'Oct 01, 16:00' 1045.72), TEM -6.59% "
- "(gurufocus 76.50 -6.59% post-close, implied prev 81.90 = stored), FN +6.40% (ycharts 'Oct 01, 16:00' 451.47), CDNS "
- "+6.22% (ycharts 'Oct 01, 16:00' 350.72), TSEM +6.10% (ycharts 'Oct 01, 16:00' 241.34; history-table 242.43 REJECTED "
- '- quote 241.30 written). PWR quote prev close 642.40 mismatched stored 642.51 - Oct 1 history row used (both read '
- '662.60). ZETA history Oct 1 row corrupt (close 32.54 > high 32.30, vol 488K) - discarded, quote 32.40 used. History '
- 'tables had no Oct 1 row for MPWR, AAOI, FSLR, LHX, AMBA - their quotes passed both freshness tests and were used. '
- 'UNRESOLVED, left at prior closes (pxd unchanged): CGNX (quote prev 60.65 != history Sep 30 close 60.72, no Oct 1 '
- 'history row, all second sources stale), XE (quote stamped intraday 2:29 PM, history ends Sep 30), FPS (quote stamped '
- 'intraday 10:08 AM, history ends Sep 30), AEP (history ends Sep 29 so prev-close test impossible; marketscreener '
- 'latest dated close still Sep 30 118.64). hi52 extended: CRWD 266.09. lo52 extended: FSLR 172.11, APP 281.31. HISTORY '
- 'row appended for 2026-10-01 (mv 808917.58); the 2026-09-30 row sha set to a8f009a. Prices only; fundamentals, POS, '
- 'TRADES untouched. || PREVIOUS ENTRY: Oct 1, 2026 (2) - MU FILL BOOKED: 14 sh at 1,048 (POEMS 6386278, 11:26 PM '
- 'Bangkok), 14,680.56 incl. 8.56 commission; MU now 49.45 sh, cost 37,262.14 of 51,000; cash 153,862.15; 10,000 parked '
- 'and 3,418.42 (17 Dec) remain || PREVIOUS ENTRY: Oct 1, 2026 - MICRON Q4 FY2026 SCORED: $15,000 of the $28,418 '
- 'released ($4,000 rung + $11,000 rule), $10,000 stays parked on the volume test, $3,418 waits for 17 Dec; order to be '
- 'placed by Salee Thursday night; no fill booked yet || PREVIOUS ENTRY: Sep 30, 2026 - DAILY PRICE REFRESH: 94 of 94 '
- 'closes updated to the Wed 2026-09-30 close (stockanalysis.com quote pages, validated against history tables; every '
- 'quote previous-close matched the validated prior close except MPWR, whose stated prev close 1353.99 equals the Sep '
- '29 close 1355.99 minus its $2.00 quarterly dividend going ex - quote close 1347.22 taken). One move over the 6% '
- 'gate, confirmed real: ZETA +9.01% (marketbeat 30 Sep alert prev close 28.96, intraday +6%; cryptonomist 30 Sep '
- 'intraday +9.43%). Partial-session history rows detected and overridden by the quote close on PWR (row vol 30.6K) and '
- 'HUBB (row vol 33.6K); small quote-vs-history cent disagreements on '
- 'SNDK/LITE/CRDO/ISRG/DDOG/CGNX/FTNT/SHOP/AMBA/TSEM/HOOD - quote taken per rule. History tables had no Sep 30 row for '
- 'FN, FSLR, AEP, STRL, CIEN, FPS, XE - their quote pages passed both freshness tests and were used. XE recovered from '
- 'its Sep 28 staleness: quote prev close 14.29 matched the history Sep 29 row, close 14.18 written (pxd jumps Sep 28 '
- '-> Sep 30). TER, STX, BWXT history pages could not be surfaced through the search provenance gate; their quotes '
- 'passed the stamp test and prev-close-vs-stored test. HISTORY row appended for 2026-09-30; the 2026-09-29 row sha set '
- 'to 7880328. Prices only; fundamentals, POS, TRADES untouched. hi52 extended: PANW 397.31, CRWD 264.75, FTNT 178.76. '
- 'lo52 extended: KTOS 42.69, APP 290.43. || PREVIOUS ENTRY: Sep 29, 2026 - DAILY PRICE REFRESH: 93 of 94 closes '
- 'updated to the Tue 2026-09-29 close (stockanalysis.com quote pages, validated against history tables; every quote '
- 'previous-close matched the stored Mon close). Two moves over the 6% gate, both confirmed against second sources: BE '
- '+10.80% (marketbeat 29 Sep alert: prev close 262.87, high 302.35), AXTI +6.12% (marketbeat 29 Sep gap-up alert: prev '
- 'close 73.67). MCHP quote page stale (stamped Sep 28) - history row 78.78 used. AMKR quote stamped intraday 1:53 PM - '
- 'history row 54.14 used. FSLR, LHX, BWXT, NVDA, QCOM history rows looked like partial-session captures or disagreed '
- 'by cents - quote closes used. HUBB history table stuck at Sep 25 - quote 459.09 taken, confirmed via ycharts "Sep '
- '29, 16:00" stamp (459.16). TSEM history table had no Sep 29 row - quote 234.43 taken, confirmed via gurufocus 29 Sep '
- 'article (234.43, +3.7%). XE UNRESOLVED, left at the Sep 28 close 14.43: history table had no Sep 29 row and failed '
- 'the prev-close cross-check (14.46 vs the validated 14.43), and every second source was stale (Google Finance both '
- 'caches Sep 25, fool.com dated Sep 28, marketscreener Aug 5). hi52 extended: CRWD 262.74. lo52 extended: LHX 236.47, '
- 'KTOS 43.05, LEU 138.18. HISTORY row appended for 2026-09-29; the 2026-09-28 row sha set to e2a1c8f. Prices only; '
- 'fundamentals, POS, TRADES untouched. || PREVIOUS ENTRY: Sep 28, 2026 (2) - DAILY PRICE REFRESH: 94 of 94 closes '
- 'updated to the Mon 2026-09-28 close (stockanalysis.com quote pages, validated against history tables; all 94 '
- 'previous-close checks matched the stored Fri close). Six moves over the 6% gate, all confirmed against second '
- 'sources: BE -8.95% (fool.com; Oracle Project Jupiter force-majeure news), ARM -8.70% (fool.com), CRDO -8.67% '
- '(gurufocus+marketbeat), QCOM -7.17% (fool.com), AXTI -6.68% (gurufocus+marketbeat), FPS -6.11% (quote and history '
- 'tables agree exactly, Robinhood day-range match; marketscreener printed an internally inconsistent 37.75/-4.28% and '
- 'was discarded). AEP quote page was stamped intraday 1:56 PM - took the history row close 118.20 instead. CRCL '
- 'history row internally impossible (close 85.58 below its own low 86.00) - quote 85.80 used. MCHP, ZETA, TSEM history '
- 'rows looked like partial-session captures (anomalously low volume) - quote closes used. lo52 extended: BWXT 134.35, '
- 'LEU 140.37. HISTORY row appended for 2026-09-28. || PREVIOUS ENTRY: Sep 28, 2026 - SIX POWER-GROUP BUYS EXECUTED AT '
- 'POEMS, all limit orders, all filled the same evening (21:30-23:10 Bangkok) into a Nasdaq -1.3% session, every fill '
- 'below the Fri 25 Sep close: VRT 44 at 246.40, CEG 27 at 259.43, VST 49 at 137.3325, ETN 7 at 427.60, CAT 6 at '
- '813.0178 (RUNG 1 of the new 15,000 line), GEV 3 at 953.66 (first 950 order withdrawn, re-entered 954.10). Total '
- '35,359.15 including six flat 8.56 commissions. Cash: POEMS live 203,901.86 before settlement less 35,359.15 = '
- '168,542.71. POS, TRADES, CASH, TOTALS, MONTHLY and two SCHEDULE rows updated; prices untouched (daily job). Power & '
- 'Electrification now holds VRT 84, CEG 64, VST 106, ETN 26, GEV 13, CAT 6. Commissions assumed flat 8.56 per order '
- 'per the 24 Sep INTC contract note - reconcile against the next POEMS positions screen. || PREVIOUS ENTRY: Sep 27, '
- '2026 (2) - ⚠️ BLOOM ENERGY BUDGET REVOKED. The 6,000 BE line opened on 26 Sep contradicted a standing '
- 'HIGH-conviction AVOID dated 21 Sep on this same board: securities class action, lead-plaintiff deadline 28 Sep 2026, '
- 'alleging understated reliance on Chinese scandium, EV/EBITDA 118. The 26 Sep proposal failed to disclose it. Salee '
- 'caught it before any order was placed. BE budget set back to None and both BE BUY rungs deleted. CAT 15,000 '
- 'unaffected - rung 1 proceeds 28 Sep, rung 2 moved to 30 Oct (after the ~28 Oct Q3 report). Power expansion is now '
- '31,663.86 existing room + 15,000 CAT = 46,663.86. || PREVIOUS ENTRY: Sep 27, 2026 - SCHEDULE DATE CORRECTION at '
- "Salee's instruction: CAT rung 2 (5,000) MOVED from 14 Oct to 30 Oct. The original date fell BEFORE Caterpillar's Q3 "
- 'report (on or about 28 Oct), so the condition attached to the rung - hold if the power-generation business is '
- 'immaterial to group earnings - could not be tested on the day it was due. No other row changed. BE rung 1 stays 14 '
- 'Oct; CAT rung 3 and BE rung 2 stay 11 Nov. || PREVIOUS ENTRY: Sep 26, 2026 - POWER GROUP EXPANSION APPROVED by '
- 'Salee: new budget lines CAT $15,000 and BE $6,000 opened (+$21,000 of new authority). Existing power room $31,663.86 '
- 'unchanged. Seven schedule rows added covering the $52,663.86 deployment in rungs from 28 Sep. No trades placed - '
- 'every order is placed by Salee at POEMS. || PREVIOUS ENTRY: Sep 25, 2026 - DAILY PRICE REFRESH: 94 of 94 closes '
- 'updated to the Fri 2026-09-25 close (stockanalysis.com quote pages, validated against history tables). Three moves '
- 'over the 6% gate, all confirmed against Google Finance: CRDO +7.65%, BE +8.27%, TSEM +6.07%. ONDS: history table '
- 'printed 7.82 but quote page and Google Finance both print 7.64 at the Sep 25 close - 7.64 written. HISTORY row '
- 'appended for 2026-09-25. Prices only; fundamentals, POS, TRADES untouched. || PREVIOUS ENTRY: Sep 24, 2026 (3) - '
- 'DAILY PRICE REFRESH: 94 of 94 closes updated to the Thu 2026-09-24 close (stockanalysis.com quote pages, validated '
- 'against history tables). Four moves over the 6% gate, all confirmed against second sources: ARM -7.88% (Google '
- 'Finance + MarketScreener), FSLR -10.32% (GuruFocus), TEM +7.38% and NBIS +7.44% (Google Finance). HISTORY row '
- 'appended for 2026-09-24. Prices only; fundamentals, POS, TRADES untouched. || PREVIOUS ENTRY: Sep 24, 2026 (2) - '
- 'POEMS PORTAL RECONCILED, AND THE BOARD NOW MATCHES IT TO THE CENT. Salee sent the live POEMS positions screen: 37 '
- 'open positions, cost 609,758.47, market value 747,056.67, unrealised +137,298.20 (+22.52%), realised today '
- '+2,919.33. THREE COST FIGURES WERE SHORT ON THIS BOARD, all by the commission on a single buy: GEV 9,603.86 -> '
+ASOF = ('4 Oct 2026: First Solar sale cancelled (Salee: keep FSLR) - 10 shares held as a zero-budget back-up to the 10 Dec '
+ 'review; Monday 5 Oct sells are Oracle 75 and CrowdStrike 40 only || PREVIOUS ENTRY: Oct 4, 2026 (3) - Two stale '
+ 'triggers cancelled (LHX buffer $5,000; RKLB rung 3 $3,057.42) - both contradicted the 3 Oct approvals || PREVIOUS '
+ 'ENTRY: Oct 4, 2026 (2) - NVIDIA LADDER RESET (Salee approved): $7,000 at any close <= $215 (was $200); $5,619.72 at '
+ '<= $180; $3,000 after Q3 on 18 Nov only if gross margin >= 72% (was $8,000). Total 15,619.72 = remaining budget; the '
+ 'ladder had been overcommitted by $5,000 || PREVIOUS ENTRY: Oct 4, 2026 - RKLB limit (any close at or below $55) '
+ 'cancelled: it contradicted the 3 Oct rate rule and the RKLB budget cap || PREVIOUS ENTRY: Oct 3, 2026 (5) - CRWD and '
+ 'FSLR sales MOVED from 13 Oct to Monday 5 Oct, with the Oracle sale (Salee approved). Three sells that night: ORCL '
+ '75, CRWD 40, FSLR 10 || PREVIOUS ENTRY: Oct 3, 2026 (4) - VISTRA CORRECTION (Salee approved): the 3 Oct cut relied '
+ 'on hedge-distorted GAAP figures; Q2 adjusted EBITDA +31%. The 10 Nov rung ($3,433.35) is reinstated as a Q3 test - '
+ 'buy only if adjusted EBITDA growth stays 20%+ and guidance holds. Budget 18,310.33. The 13 Oct rung stays cancelled '
+ "|| PREVIOUS ENTRY: Oct 3, 2026 (3) - RATE REVIEW + WATCH-LIST CUT EXECUTED on Salee's approval: Oracle marked SELL "
+ '(75 sh, order from 5 Oct); Vistra and Rocket Lab budgets capped at cost; L3Harris budget cancelled; Synopsys paused '
+ 'to 10 Dec; 31 watch-only names removed - board 94 -> 63 (38 held, 25 watch, cap 30 watch) || PREVIOUS ENTRY: Oct 3, '
+ '2026 (2) - APPROVED BY SALEE: (1) RATE RULE - no new money into unprofitable companies while the US 10-year is above '
+ '5% (now 5.28%); (2) Meta rung 1 on 9 Oct is a LIMIT at $705, rolls into rung 2 if unfilled; (3) Meta rung 2 moved 28 '
+ 'Oct -> 30 Oct, after Q3 results on 29 Oct || PREVIOUS ENTRY: Oct 3, 2026 - ALPHABET HOLD LIFTED: the 2 Oct date was '
+ 'the filing deadline for proposed final judgments; the 16 Sep unsealed remedies opinion (6-year worldwide behavioural '
+ 'remedies, monitor, no divestiture, no springing breakup) bounds the final judgment, so tranche 3 (18,524.08) on 19 '
+ 'Nov stands || PREVIOUS ENTRY: Oct 2, 2026 (3) - DAILY PRICE REFRESH: 93 of 94 closes updated to the Fri 2026-10-02 '
+ 'close (stockanalysis.com quote pages stamped "Oct 2, 2026, 4:00 PM EDT", each validated: quote previous-close equals '
+ 'the history-table Oct 1 close). Six moves at/over the 6% gate, all confirmed against second sources: STX -10.21% '
+ '(247wallst 2 Oct 8:52am: 849.79 -10% on Toshiba HDD expansion), TER +8.00% (stockstotrade 2 Oct 4:48 PM ET: +7.75%, '
+ 'session band 440-452, Magnum E2 launch), FPS +8.09% (gurufocus 2 Oct 07:32 prev close 37.33 + Bernstein Outperform '
+ '$48 initiation; MSN: pre-market +13%), AAOI +7.71% (yahoo article 2 Oct 12:03 PM: 115.49 +8%), SPCX +7.35% (fool.com '
+ '2 Oct 15:31: 157.08 +6.08% intraday, ISS + Google satellite launches), CGNX +7.11% vs stored 30 Sep (history table '
+ 'stale at Sep 30; quote prev close 62.22 corroborated by stocktitan 1 Oct 16:16 62.15; two-day move). Quote page and '
+ 'history table disagreed on six closes, quote page taken per rule: LHX 236.60 (hist 236.63), KTOS 43.07 (hist 42.64), '
+ 'BWXT 134.86 (hist 134.32), AEP 119.57 (hist 120.31), SHOP 151.39 (hist 151.27), SE 95.19 (hist 95.18). XE UNRESOLVED '
+ 'and left at its 30 Sep value 14.18: the quote page (14.38, stamped Oct 2) shows numbers identical to a fool.com '
+ 'article published 1 Oct 14:20 ET intraday (14.38 +3.08%, range 13.80-14.78), so the quote page is a stale snapshot, '
+ 'and the history table ends at Sep 30; Google Finance was serving Sep 25 caches on every name checked today. SKHY '
+ 'mcapB set to 996.35 (was None; stockanalysis quote page). HISTORY row appended for 2026-10-02. || PREVIOUS ENTRY: '
+ 'Oct 2, 2026 (2) - POEMS POSITIONS RECONCILED: all 38 holdings match POEMS on shares; total open cost 659,849.81 USD, '
+ 'market value 809,014.30, unrealised +149,164.49 (+22.61%). Five cost lines corrected up to the broker - CAT +1.88, '
+ 'CEG +6.43, VRT +14.64, VST +5.84, MU +22.84, total +51.63. Cause: POEMS commission is 0.20% of the order plus 7% VAT '
+ '(0.214%), minimum 8.56 - not a flat 8.56. Every order above about 4,000 USD carries more than 8.56 (e.g. the 9 Oct '
+ 'Broadcom 19,875 order will cost about 42.50). Cash reduced by the same 51.63. AAOI sale row closed: the 10 shares '
+ 'were sold by 9 Sep and are in the SOLD book || PREVIOUS ENTRY: Oct 2, 2026 - EXCHANGE RATE UPDATED 32.875 -> 33.65 '
+ "baht per dollar, at Salee's request (the baht has weakened since the 9 Sep setting). Source: mid-market rate at the "
+ '1 Oct 2026 New York close, cross-checked on two feeds (Wise 33.65, XE 33.667 at 21:41 UTC); 30-day range '
+ '32.86-33.65. Effect: the baht value of the held US book rises 2.36% - about 622,000 baht on 802,853 USD of held '
+ 'positions and about 119,000 baht on the 153,862 USD cash. Historical baht figures (investedEverTHB, soldCostTHB, '
+ 'per-ticker THBFX) are unchanged: those record the rates actually paid. Rule going forward: the reference rate is '
+ 'refreshed whenever it drifts more than 1% from the board, and always on the first trading day of each month || '
+ 'PREVIOUS ENTRY: Oct 1, 2026 (3) - DAILY PRICE REFRESH: 90 of 94 closes updated to the Thu 2026-10-01 close '
+ '(stockanalysis.com quote pages, validated against history tables; every quote previous-close matched the stored Sep '
+ '30 close). Ten moves at/over the 6% gate, all confirmed against second sources: SNPS +12.78% (gurufocus 1 Oct 4:58 '
+ "PM article: 'closing at $490.54', investor day), COHR +10.90% (stockstory via yahoo, published 1 Oct 5:57 PM EDT, "
+ "day change +10.90%), AAOI +8.12% (ycharts 'October 1, 16:00' 107.29), CRDO +7.90% (gurufocus 210.17 +7.9% "
+ "post-close, implied prev 194.79 = stored), CIEN +7.77% (gurufocus 'Key Metrics (October 1, 2026)' 379.14), LITE "
+ "+7.67% (ycharts 'Oct 01, 16:00' 1045.72), TEM -6.59% (gurufocus 76.50 -6.59% post-close, implied prev 81.90 = "
+ "stored), FN +6.40% (ycharts 'Oct 01, 16:00' 451.47), CDNS +6.22% (ycharts 'Oct 01, 16:00' 350.72), TSEM +6.10% "
+ "(ycharts 'Oct 01, 16:00' 241.34; history-table 242.43 REJECTED - quote 241.30 written). PWR quote prev close 642.40 "
+ 'mismatched stored 642.51 - Oct 1 history row used (both read 662.60). ZETA history Oct 1 row corrupt (close 32.54 > '
+ 'high 32.30, vol 488K) - discarded, quote 32.40 used. History tables had no Oct 1 row for MPWR, AAOI, FSLR, LHX, AMBA '
+ '- their quotes passed both freshness tests and were used. UNRESOLVED, left at prior closes (pxd unchanged): CGNX '
+ '(quote prev 60.65 != history Sep 30 close 60.72, no Oct 1 history row, all second sources stale), XE (quote stamped '
+ 'intraday 2:29 PM, history ends Sep 30), FPS (quote stamped intraday 10:08 AM, history ends Sep 30), AEP (history '
+ 'ends Sep 29 so prev-close test impossible; marketscreener latest dated close still Sep 30 118.64). hi52 extended: '
+ 'CRWD 266.09. lo52 extended: FSLR 172.11, APP 281.31. HISTORY row appended for 2026-10-01 (mv 808917.58); the '
+ '2026-09-30 row sha set to a8f009a. Prices only; fundamentals, POS, TRADES untouched. || PREVIOUS ENTRY: Oct 1, 2026 '
+ '(2) - MU FILL BOOKED: 14 sh at 1,048 (POEMS 6386278, 11:26 PM Bangkok), 14,680.56 incl. 8.56 commission; MU now '
+ '49.45 sh, cost 37,262.14 of 51,000; cash 153,862.15; 10,000 parked and 3,418.42 (17 Dec) remain || PREVIOUS ENTRY: '
+ 'Oct 1, 2026 - MICRON Q4 FY2026 SCORED: $15,000 of the $28,418 released ($4,000 rung + $11,000 rule), $10,000 stays '
+ 'parked on the volume test, $3,418 waits for 17 Dec; order to be placed by Salee Thursday night; no fill booked yet '
+ '|| PREVIOUS ENTRY: Sep 30, 2026 - DAILY PRICE REFRESH: 94 of 94 closes updated to the Wed 2026-09-30 close '
+ '(stockanalysis.com quote pages, validated against history tables; every quote previous-close matched the validated '
+ 'prior close except MPWR, whose stated prev close 1353.99 equals the Sep 29 close 1355.99 minus its $2.00 quarterly '
+ 'dividend going ex - quote close 1347.22 taken). One move over the 6% gate, confirmed real: ZETA +9.01% (marketbeat '
+ '30 Sep alert prev close 28.96, intraday +6%; cryptonomist 30 Sep intraday +9.43%). Partial-session history rows '
+ 'detected and overridden by the quote close on PWR (row vol 30.6K) and HUBB (row vol 33.6K); small quote-vs-history '
+ 'cent disagreements on SNDK/LITE/CRDO/ISRG/DDOG/CGNX/FTNT/SHOP/AMBA/TSEM/HOOD - quote taken per rule. History tables '
+ 'had no Sep 30 row for FN, FSLR, AEP, STRL, CIEN, FPS, XE - their quote pages passed both freshness tests and were '
+ 'used. XE recovered from its Sep 28 staleness: quote prev close 14.29 matched the history Sep 29 row, close 14.18 '
+ 'written (pxd jumps Sep 28 -> Sep 30). TER, STX, BWXT history pages could not be surfaced through the search '
+ 'provenance gate; their quotes passed the stamp test and prev-close-vs-stored test. HISTORY row appended for '
+ '2026-09-30; the 2026-09-29 row sha set to 7880328. Prices only; fundamentals, POS, TRADES untouched. hi52 extended: '
+ 'PANW 397.31, CRWD 264.75, FTNT 178.76. lo52 extended: KTOS 42.69, APP 290.43. || PREVIOUS ENTRY: Sep 29, 2026 - '
+ 'DAILY PRICE REFRESH: 93 of 94 closes updated to the Tue 2026-09-29 close (stockanalysis.com quote pages, validated '
+ 'against history tables; every quote previous-close matched the stored Mon close). Two moves over the 6% gate, both '
+ 'confirmed against second sources: BE +10.80% (marketbeat 29 Sep alert: prev close 262.87, high 302.35), AXTI +6.12% '
+ '(marketbeat 29 Sep gap-up alert: prev close 73.67). MCHP quote page stale (stamped Sep 28) - history row 78.78 used. '
+ 'AMKR quote stamped intraday 1:53 PM - history row 54.14 used. FSLR, LHX, BWXT, NVDA, QCOM history rows looked like '
+ 'partial-session captures or disagreed by cents - quote closes used. HUBB history table stuck at Sep 25 - quote '
+ '459.09 taken, confirmed via ycharts "Sep 29, 16:00" stamp (459.16). TSEM history table had no Sep 29 row - quote '
+ '234.43 taken, confirmed via gurufocus 29 Sep article (234.43, +3.7%). XE UNRESOLVED, left at the Sep 28 close 14.43: '
+ 'history table had no Sep 29 row and failed the prev-close cross-check (14.46 vs the validated 14.43), and every '
+ 'second source was stale (Google Finance both caches Sep 25, fool.com dated Sep 28, marketscreener Aug 5). hi52 '
+ 'extended: CRWD 262.74. lo52 extended: LHX 236.47, KTOS 43.05, LEU 138.18. HISTORY row appended for 2026-09-29; the '
+ '2026-09-28 row sha set to e2a1c8f. Prices only; fundamentals, POS, TRADES untouched. || PREVIOUS ENTRY: Sep 28, 2026 '
+ '(2) - DAILY PRICE REFRESH: 94 of 94 closes updated to the Mon 2026-09-28 close (stockanalysis.com quote pages, '
+ 'validated against history tables; all 94 previous-close checks matched the stored Fri close). Six moves over the 6% '
+ 'gate, all confirmed against second sources: BE -8.95% (fool.com; Oracle Project Jupiter force-majeure news), ARM '
+ '-8.70% (fool.com), CRDO -8.67% (gurufocus+marketbeat), QCOM -7.17% (fool.com), AXTI -6.68% (gurufocus+marketbeat), '
+ 'FPS -6.11% (quote and history tables agree exactly, Robinhood day-range match; marketscreener printed an internally '
+ 'inconsistent 37.75/-4.28% and was discarded). AEP quote page was stamped intraday 1:56 PM - took the history row '
+ 'close 118.20 instead. CRCL history row internally impossible (close 85.58 below its own low 86.00) - quote 85.80 '
+ 'used. MCHP, ZETA, TSEM history rows looked like partial-session captures (anomalously low volume) - quote closes '
+ 'used. lo52 extended: BWXT 134.35, LEU 140.37. HISTORY row appended for 2026-09-28. || PREVIOUS ENTRY: Sep 28, 2026 - '
+ 'SIX POWER-GROUP BUYS EXECUTED AT POEMS, all limit orders, all filled the same evening (21:30-23:10 Bangkok) into a '
+ 'Nasdaq -1.3% session, every fill below the Fri 25 Sep close: VRT 44 at 246.40, CEG 27 at 259.43, VST 49 at 137.3325, '
+ 'ETN 7 at 427.60, CAT 6 at 813.0178 (RUNG 1 of the new 15,000 line), GEV 3 at 953.66 (first 950 order withdrawn, '
+ 're-entered 954.10). Total 35,359.15 including six flat 8.56 commissions. Cash: POEMS live 203,901.86 before '
+ 'settlement less 35,359.15 = 168,542.71. POS, TRADES, CASH, TOTALS, MONTHLY and two SCHEDULE rows updated; prices '
+ 'untouched (daily job). Power & Electrification now holds VRT 84, CEG 64, VST 106, ETN 26, GEV 13, CAT 6. Commissions '
+ 'assumed flat 8.56 per order per the 24 Sep INTC contract note - reconcile against the next POEMS positions screen. '
+ '|| PREVIOUS ENTRY: Sep 27, 2026 (2) - ⚠️ BLOOM ENERGY BUDGET REVOKED. The 6,000 BE line opened on 26 Sep '
+ 'contradicted a standing HIGH-conviction AVOID dated 21 Sep on this same board: securities class action, '
+ 'lead-plaintiff deadline 28 Sep 2026, alleging understated reliance on Chinese scandium, EV/EBITDA 118. The 26 Sep '
+ 'proposal failed to disclose it. Salee caught it before any order was placed. BE budget set back to None and both BE '
+ 'BUY rungs deleted. CAT 15,000 unaffected - rung 1 proceeds 28 Sep, rung 2 moved to 30 Oct (after the ~28 Oct Q3 '
+ 'report). Power expansion is now 31,663.86 existing room + 15,000 CAT = 46,663.86. || PREVIOUS ENTRY: Sep 27, 2026 - '
+ "SCHEDULE DATE CORRECTION at Salee's instruction: CAT rung 2 (5,000) MOVED from 14 Oct to 30 Oct. The original date "
+ "fell BEFORE Caterpillar's Q3 report (on or about 28 Oct), so the condition attached to the rung - hold if the "
+ 'power-generation business is immaterial to group earnings - could not be tested on the day it was due. No other row '
+ 'changed. BE rung 1 stays 14 Oct; CAT rung 3 and BE rung 2 stay 11 Nov. || PREVIOUS ENTRY: Sep 26, 2026 - POWER GROUP '
+ 'EXPANSION APPROVED by Salee: new budget lines CAT $15,000 and BE $6,000 opened (+$21,000 of new authority). Existing '
+ 'power room $31,663.86 unchanged. Seven schedule rows added covering the $52,663.86 deployment in rungs from 28 Sep. '
+ 'No trades placed - every order is placed by Salee at POEMS. || PREVIOUS ENTRY: Sep 25, 2026 - DAILY PRICE REFRESH: '
+ '94 of 94 closes updated to the Fri 2026-09-25 close (stockanalysis.com quote pages, validated against history '
+ 'tables). Three moves over the 6% gate, all confirmed against Google Finance: CRDO +7.65%, BE +8.27%, TSEM +6.07%. '
+ 'ONDS: history table printed 7.82 but quote page and Google Finance both print 7.64 at the Sep 25 close - 7.64 '
+ 'written. HISTORY row appended for 2026-09-25. Prices only; fundamentals, POS, TRADES untouched. || PREVIOUS ENTRY: '
+ 'Sep 24, 2026 (3) - DAILY PRICE REFRESH: 94 of 94 closes updated to the Thu 2026-09-24 close (stockanalysis.com quote '
+ 'pages, validated against history tables). Four moves over the 6% gate, all confirmed against second sources: ARM '
+ '-7.88% (Google Finance + MarketScreener), FSLR -10.32% (GuruFocus), TEM +7.38% and NBIS +7.44% (Google Finance). '
+ 'HISTORY row appended for 2026-09-24. Prices only; fundamentals, POS, TRADES untouched. || PREVIOUS ENTRY: Sep 24, '
+ '2026 (2) - POEMS PORTAL RECONCILED, AND THE BOARD NOW MATCHES IT TO THE CENT. Salee sent the live POEMS positions '
+ 'screen: 37 open positions, cost 609,758.47, market value 747,056.67, unrealised +137,298.20 (+22.52%), realised '
+ 'today +2,919.33. THREE COST FIGURES WERE SHORT ON THIS BOARD, all by the commission on a single buy: GEV 9,603.86 -> '
  '9,611.24 (+7.38), VRT 9,838.00 -> 9,842.93 (+4.93), PANW 9,491.14 -> 9,494.82 (+3.68); PANW budget moved with its '
  'cost since it is a withdrawn name held at cost. Total cost was understating by 15.99. REALISED ON THE TWO SALES '
  'TRIMMED TO THE BROKER CENTS: SKHY 950.75 -> 950.77, INTC 1,968.54 -> 1,968.56, so lifetime realised is -540.47. '
@@ -5408,7 +5409,7 @@ STOCKS = [{'an': 83,
   't': 'FN'},
  {'an': 35,
   'ath': 320.95,
-  'budget': None,
+  'budget': 2003.56,
   'capexB': 0.65562,
   'eps': 16.22,
   'epsG': 38.6,
@@ -6517,7 +6518,7 @@ POS = {'GOOGL': {'budget': 78000, 'cost': 59475.92, 'shares': 217},
  'COHR': {'budget': None, 'cost': None, 'shares': None},
  'PWR': {'budget': None, 'cost': None, 'shares': None},
  'STRL': {'budget': None, 'cost': None, 'shares': None},
- 'FSLR': {'budget': None, 'cost': 2003.56, 'shares': 10},
+ 'FSLR': {'budget': 2003.56, 'cost': 2003.56, 'shares': 10},
  'NFLX': {'budget': None, 'cost': None, 'shares': None},
  'CAT': {'budget': 15000, 'cost': 4888.55, 'shares': 6},
  'GE': {'budget': None, 'cost': None, 'shares': None},
@@ -7119,7 +7120,7 @@ TRADES = [{'date': 'Jul 21, 2026',
           '17 Dec. Position now 49.45 sh, cost 37,262.14 of 51,000 budget. | FEE CORRECTED 2 Oct from POEMS positions '
           'screen: actual commission 31.4 (0.20% + 7% VAT, min 8.56), not the flat 8.56 first booked; +22.84.'}]
 
-SELLPLAN = ['ORCL', 'CRWD', 'FSLR']
+SELLPLAN = ['ORCL', 'CRWD']
 
 CASH = {'currency': 'USD',
  'amount': 153810.52,
@@ -8980,13 +8981,14 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
            {'d': '2026-10-05',
             't': 'FSLR',
             'k': 'thesis',
-            'a': 'SELL',
+            'a': 'HOLD',
             'amt': 0,
-            'w': 'SELL ALL 10 FSLR - MOVED 13 Oct -> 5 Oct (Salee approved 3 Oct) to go with the Oracle sale; '
-                 'CrowdStrike is at an all-time high. Ref close 174.61, about 1,746 vs cost 2,003.56. | SELL ALL FSLR '
-                 '(orphan - no budget). Approved in the 21 Sep budget reset.',
-            'cond': 'Whole position, limit at or near last close. Small position with no place in the plan.',
-            'c': 'planned'},
+            'w': 'CANCELLED 4 Oct (Salee: "keep FSLR"). Was: sell all 10 FSLR on 5 Oct as an orphan. Kept because it '
+                 'passes every screen - forward P/E 11.3, net margin 32.5%, EPS +38.6% - and selling would only '
+                 'realise about -257 to tidy the board.',
+            'cond': 'Hold 10 shares as a zero-budget back-up. Decide at the 10 Dec review. What would change this: a '
+                    'US policy change that cuts the manufacturing tax credits for US-made solar panels.',
+            'c': 'cancelled'},
            {'d': '2026-10-08',
             't': 'TSM',
             'k': 'data',
@@ -11251,7 +11253,8 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'k': 'trigger',
             'a': 'WATCH',
             'amt': 0,
-            'w': 'BACK-UP: held with zero budget. Do not sell by habit; do not buy without the trigger.',
+            'w': 'BACK-UP: held with zero budget (sale cancelled 4 Oct by Salee). Do not sell by habit; do not buy '
+                 'without the trigger.',
             'cond': 'Promote to funded when US solar policy clarifies and bookings hold. Already the cheapest legacy '
                     'name at 11.6x forward with a 32.47% net margin and Rule of 40 51.7. Held at +6.4%.'},
            {'d': '2026-12-10',
