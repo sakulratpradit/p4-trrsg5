@@ -75,6 +75,21 @@ def main():
             out.append(f"BUY TRIGGER: {t} closed {px:,.2f} <= {level:,.2f} ({S[t].get('pxd')}). "
                        f"Rule: {i['w'][:80]}. Money: ${amt:,.2f} = about {sh} shares.")
 
+    # 1b) standing SELL STOP rows (e.g. CrowdStrike: sell the rest below $243)
+    for i in p.SCHEDULE["items"]:
+        if i.get("c") != "standing" or i.get("a") != "STOP":
+            continue
+        m = LEVEL_RE.search(i.get("w", ""))
+        t = i["t"]
+        sh = (p.POS.get(t) or {}).get("shares") or 0
+        if not m or not sh or t not in S or not S[t].get("price"):
+            continue
+        level = float(m.group(1).replace(",", ""))
+        px = S[t]["price"]
+        if px <= level:
+            out.append(f"SELL STOP: {t} closed {px:,.2f} <= {level:,.2f} ({S[t].get('pxd')}). "
+                       f"Rule: {i['w'][:80]}. Sell all {sh:g} shares, about ${sh * px:,.0f}.")
+
     # 2) dated limit buys still open (e.g. Meta $705 until its date)
     for i in p.SCHEDULE["items"]:
         if i.get("a") != "BUY" or i.get("c") == "done" or not i.get("d") or i["d"] < today:

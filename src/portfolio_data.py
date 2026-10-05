@@ -3,20 +3,22 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('4 Oct 2026: First Solar sale cancelled (Salee: keep FSLR) - 10 shares held as a zero-budget back-up to the 10 Dec '
- 'review; Monday 5 Oct sells are Oracle 75 and CrowdStrike 40 only || PREVIOUS ENTRY: Oct 4, 2026 (3) - Two stale '
- 'triggers cancelled (LHX buffer $5,000; RKLB rung 3 $3,057.42) - both contradicted the 3 Oct approvals || PREVIOUS '
- 'ENTRY: Oct 4, 2026 (2) - NVIDIA LADDER RESET (Salee approved): $7,000 at any close <= $215 (was $200); $5,619.72 at '
- '<= $180; $3,000 after Q3 on 18 Nov only if gross margin >= 72% (was $8,000). Total 15,619.72 = remaining budget; the '
- 'ladder had been overcommitted by $5,000 || PREVIOUS ENTRY: Oct 4, 2026 - RKLB limit (any close at or below $55) '
- 'cancelled: it contradicted the 3 Oct rate rule and the RKLB budget cap || PREVIOUS ENTRY: Oct 3, 2026 (5) - CRWD and '
- 'FSLR sales MOVED from 13 Oct to Monday 5 Oct, with the Oracle sale (Salee approved). Three sells that night: ORCL '
- '75, CRWD 40, FSLR 10 || PREVIOUS ENTRY: Oct 3, 2026 (4) - VISTRA CORRECTION (Salee approved): the 3 Oct cut relied '
- 'on hedge-distorted GAAP figures; Q2 adjusted EBITDA +31%. The 10 Nov rung ($3,433.35) is reinstated as a Q3 test - '
- 'buy only if adjusted EBITDA growth stays 20%+ and guidance holds. Budget 18,310.33. The 13 Oct rung stays cancelled '
- "|| PREVIOUS ENTRY: Oct 3, 2026 (3) - RATE REVIEW + WATCH-LIST CUT EXECUTED on Salee's approval: Oracle marked SELL "
- '(75 sh, order from 5 Oct); Vistra and Rocket Lab budgets capped at cost; L3Harris budget cancelled; Synopsys paused '
- 'to 10 Dec; 31 watch-only names removed - board 94 -> 63 (38 held, 25 watch, cap 30 watch) || PREVIOUS ENTRY: Oct 3, '
+ASOF = ('5 Oct 2026: CrowdStrike sale halved (Salee: "yes half CRWD") - sell 20 of 40 tonight with Oracle 75; keep 20 with a '
+ 'SELL STOP at $243 (daily alert) and decide at the 10 Dec review after 1 Dec results || PREVIOUS ENTRY: 4 Oct 2026: '
+ 'First Solar sale cancelled (Salee: keep FSLR) - 10 shares held as a zero-budget back-up to the 10 Dec review; Monday '
+ '5 Oct sells are Oracle 75 and CrowdStrike 40 only || PREVIOUS ENTRY: Oct 4, 2026 (3) - Two stale triggers cancelled '
+ '(LHX buffer $5,000; RKLB rung 3 $3,057.42) - both contradicted the 3 Oct approvals || PREVIOUS ENTRY: Oct 4, 2026 '
+ '(2) - NVIDIA LADDER RESET (Salee approved): $7,000 at any close <= $215 (was $200); $5,619.72 at <= $180; $3,000 '
+ 'after Q3 on 18 Nov only if gross margin >= 72% (was $8,000). Total 15,619.72 = remaining budget; the ladder had been '
+ 'overcommitted by $5,000 || PREVIOUS ENTRY: Oct 4, 2026 - RKLB limit (any close at or below $55) cancelled: it '
+ 'contradicted the 3 Oct rate rule and the RKLB budget cap || PREVIOUS ENTRY: Oct 3, 2026 (5) - CRWD and FSLR sales '
+ 'MOVED from 13 Oct to Monday 5 Oct, with the Oracle sale (Salee approved). Three sells that night: ORCL 75, CRWD 40, '
+ 'FSLR 10 || PREVIOUS ENTRY: Oct 3, 2026 (4) - VISTRA CORRECTION (Salee approved): the 3 Oct cut relied on '
+ 'hedge-distorted GAAP figures; Q2 adjusted EBITDA +31%. The 10 Nov rung ($3,433.35) is reinstated as a Q3 test - buy '
+ 'only if adjusted EBITDA growth stays 20%+ and guidance holds. Budget 18,310.33. The 13 Oct rung stays cancelled || '
+ "PREVIOUS ENTRY: Oct 3, 2026 (3) - RATE REVIEW + WATCH-LIST CUT EXECUTED on Salee's approval: Oracle marked SELL (75 "
+ 'sh, order from 5 Oct); Vistra and Rocket Lab budgets capped at cost; L3Harris budget cancelled; Synopsys paused to '
+ '10 Dec; 31 watch-only names removed - board 94 -> 63 (38 held, 25 watch, cap 30 watch) || PREVIOUS ENTRY: Oct 3, '
  '2026 (2) - APPROVED BY SALEE: (1) RATE RULE - no new money into unprofitable companies while the US 10-year is above '
  '5% (now 5.28%); (2) Meta rung 1 on 9 Oct is a LIMIT at $705, rolls into rung 2 if unfilled; (3) Meta rung 2 moved 28 '
  'Oct -> 30 Oct, after Q3 results on 29 Oct || PREVIOUS ENTRY: Oct 3, 2026 - ALPHABET HOLD LIFTED: the 2 Oct date was '
@@ -8973,10 +8975,10 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'k': 'thesis',
             'a': 'SELL',
             'amt': 0,
-            'w': 'SELL ALL 40 CRWD - MOVED 13 Oct -> 5 Oct (Salee approved 3 Oct) to go with the Oracle sale; '
-                 'CrowdStrike is at an all-time high. Ref close 270.04, about 10,802 vs cost 3,914.12. | SELL ALL CRWD '
-                 '(orphan - no budget). Approved in the 21 Sep budget reset.',
-            'cond': 'Whole position, limit at or near last close. Small position with no place in the plan.',
+            'w': 'SELL HALF - 20 of 40 CRWD on 5 Oct (Salee approved 5 Oct: "yes half CRWD"; was all 40). Ref close '
+                 '270.04, about 5,401 vs cost of 20 sh 1,957.06 - banks about +3,430. Keep 20 with a stop at $243.',
+            'cond': 'LIMIT at live price -0.3%, after 9:00 pm Bangkok. Reason: 148x forward earnings and 0.8% net '
+                    'margin as Fed hike odds rise (72% by 9 Dec); half kept to respect the momentum (all-time high).',
             'c': 'planned'},
            {'d': '2026-10-05',
             't': 'FSLR',
@@ -10972,16 +10974,18 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'dl': 'Quarterly review - back-up name',
             't': 'CRWD',
             'k': 'trigger',
-            'a': 'WATCH',
+            'a': 'DECIDE',
             'amt': 0,
-            'w': 'BACK-UP: held with zero budget. Do not sell by habit; do not buy without the trigger.',
+            'w': 'DECIDE the last 20 CRWD after Q3 results (1 Dec). Back-up held with zero budget; stop at $243 '
+                 'meanwhile.',
             'cond': 'Promote to funded when forward P/E falls below ~80 OR net margin rises above 8%. REFRESHED 10 Sep '
                     '2026: forward P/E is 147.47, not the 177.75 this board carried - the multiple has compressed, but '
                     'it is still nearly twice the trigger. Net margin 0.83%. Q2 FY2027 (ended 31 Jul 2026): revenue '
                     '1.47bn, +26%; ARR +25% to 5.84bn with 332.8m of net new ARR; GAAP net income 5.3m against a 70.2m '
                     'loss a year earlier; free cash flow 377.4m. ⚠️ THE CASH TEST IS THE ONE THAT FAILS: TTM free cash '
                     'flow 1.61bn against TTM stock compensation of 1.244bn, so only 366m of the cash flow is left once '
-                    'the staff are paid - a 212.77bn market cap on that is 581 times. Held at +112%.'},
+                    'the staff are paid - a 212.77bn market cap on that is 581 times. Held at +112%.',
+            'c': 'open'},
            {'d': '2026-12-10',
             'dl': '⚠️ SYSTEMATIC FAULT FIXED - and the refresh will re-create it',
             't': 'CRWD',
@@ -13539,6 +13543,17 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'a': 'LIMIT',
             'amt': 10078.47,
             'cond': 'Overrides the October date trigger - deploy immediately.',
+            'c': 'standing'},
+           {'d': '',
+            'dl': 'Standing - checked daily by the price alert',
+            't': 'CRWD',
+            'k': 'stop',
+            'a': 'STOP',
+            'w': 'SELL STOP (Salee approved 5 Oct): sell the remaining 20 CRWD if any close is at or below $243 (10% '
+                 'under the 2 Oct close of $270.04).',
+            'amt': 0,
+            'cond': 'Protects the half kept for momentum. Otherwise decide at the 10 Dec review after Q3 results on 1 '
+                    'Dec. Keep the remaining 20 if margin is rising toward 8%.',
             'c': 'standing'}]}
 
 SELLBOOK = {'updated': '2026-10-03',
