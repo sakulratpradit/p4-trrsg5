@@ -549,6 +549,10 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
 <div class="chipbar" id="chipbar"></div>
 <div class="note" style="margin-top:0">Salee's grouping (notebook Jul 21 + corrections). <b>Neocloud Watch</b>: IREN <b style="color:var(--bad)">(45 sh held, tranche-2 sell plan still active)</b> + NBIS (exited Jul 21) + CRWV (exited earlier) — watched for an industry turnaround. Click a group to focus every panel.</div>
 
+<h2 id="ladders">Price ladders &amp; stops <span class="n">every standing buy level and sell stop on the board, plus the dated rungs that go with them &middot; <b>these are the exact rules your 11:15 am phone alert checks every Tue&ndash;Sat</b> &middot; distance = how far the last close must move to reach the level</span></h2>
+<div class="note">A <b>ladder</b> = one stock's money split into steps (rungs) at lower and lower prices, so we buy more only if it gets cheaper. A <b>sell stop</b> = a price that, if a close falls to it, means sell. Nothing here is an order at POEMS - when the phone alert fires, reply to Claude for the order sheet.</div>
+<div class="fv-card" id="ruleladder"></div>
+
 <h2>Fair-value ladder <span class="n">coloured bar = analyst min→max target · | = avg target · ● = last close · dark line with end caps = the 52-wk traded range · <b>% of range</b> under each ticker = where the close sits in that range, 0% = at the low (<b style="color:var(--warn)">amber ≤10%</b>) · right column, shared zero center: <b>FV</b> = conviction to avg target · <b>HI</b> = drawdown from the 52-wk high · <b>YTD</b> = growth since Jan 2 '26 open</span></h2>
 <div class="sbar" id="sbar"></div>
 <div class="fv-card" id="fvladder"></div>
@@ -2637,6 +2641,40 @@ function renderAll(){
 }
 renderAll();
 if(matchMedia && matchMedia("(prefers-color-scheme: dark)").matches) applyTheme(true);
+</script>
+<script>
+/* Price ladders & stops: built from SCHEDULE rows (standing LIMIT/TRIGGER/STOP + dated rungs of the same tickers). Same source the phone alert reads. */
+(function(){
+  try{
+  var el=document.getElementById('ruleladder'); if(!el||typeof SCHEDULE==='undefined') return;
+  var px={}; STOCKS.forEach(function(s){px[s.t]=s.price;});
+  var LV=/(?:below|LIMIT (?:ORDER )?AT)\s*\$(\d{1,3}(?:,\d{3})*(?:\.\d+)?)/i;
+  var today=new Date().toISOString().slice(0,10);
+  var items=SCHEDULE.items||[];
+  var std=items.filter(function(i){return i.c==='standing' && ['LIMIT','TRIGGER','STOP'].indexOf(i.a)>=0 && LV.test(i.w||'');});
+  var tick={}; std.forEach(function(i){tick[i.t]=1;}); items.forEach(function(i){if(i.a==='BUY'&&i.d&&i.d>=today&&i.c!=='done'&&i.c!=='cancelled'&&/LIMIT (?:ORDER )?AT\s*\$/i.test((i.cond||'')+' '+(i.w||'')))tick[i.t]=1;});
+  var dated=items.filter(function(i){return tick[i.t] && i.d && i.d>=today && i.c!=='done' && i.c!=='cancelled' && ['BUY','SELL','DECIDE'].indexOf(i.a)>=0 && (i.amt||0)>0 || (tick[i.t] && i.d && i.d>=today && i.a==='SELL' && i.c==='planned');});
+  var f=function(n){return '$'+Number(n).toLocaleString('en-US',{maximumFractionDigits:2});};
+  var rows={};
+  std.forEach(function(i){var lv=parseFloat(LV.exec(i.w)[1].replace(/,/g,'')); (rows[i.t]=rows[i.t]||[]).push({lv:lv,i:i});});
+  dated.forEach(function(i){var m=LV.exec((i.cond||'')+' '+(i.w||'')); (rows[i.t]=rows[i.t]||[]).push({lv:m?parseFloat(m[1].replace(/,/g,'')):null,i:i,dated:1});});
+  var html='<table style="width:100%;border-collapse:collapse;font-size:13px"><tr style="text-align:left;color:var(--ink-3)"><th>Stock</th><th>Rule</th><th style="text-align:right">Level</th><th style="text-align:right">Distance</th><th style="text-align:right">Money / shares</th><th>Status</th></tr>';
+  Object.keys(rows).sort().forEach(function(t){
+    var p=px[t], sh=(POS[t]||{}).shares||0, r=rows[t];
+    r.sort(function(a,b){return (b.lv||0)-(a.lv||0);});
+    r.forEach(function(x,k){
+      var i=x.i, stop=i.a==='STOP'||i.a==='SELL';
+      var kind=x.dated?(i.a==='SELL'?'Dated sell '+i.d:(i.a==='DECIDE'?'Decide '+i.d:'Dated buy '+i.d)):(stop?'SELL STOP':'Buy rung');
+      var dist=(x.lv&&p)?((x.lv/p-1)*100):null;
+      var hit=x.lv&&p&&p<=x.lv&&!x.dated;
+      var money=stop?(i.a==='SELL'?(i.w.match(/\d+ (?:of \d+ )?CRWD|ALL \d+ \w+/)||[''])[0]:('all '+sh+' sh')):(i.amt?f(i.amt)+(p&&x.lv?' &asymp; '+Math.floor(i.amt/Math.min(p,x.lv))+' sh':''):'');
+      var st=hit?'<b style="color:'+(stop?'var(--bad)':'var(--good)')+'">HIT - reply to Claude</b>':(x.dated?'<span style="color:var(--ink-3)">'+(i.cond||'').slice(0,60)+'</span>':'waiting');
+      html+='<tr style="border-top:1px solid var(--ring)"><td>'+(k===0?'<b>'+t+'</b><br><span style="color:var(--ink-3);font-size:11px">close '+(p?f(p):'-')+(sh?' &middot; '+sh+' sh':'')+'</span>':'')+'</td><td'+(stop?' style="color:var(--bad)"':'')+'>'+kind+'</td><td style="text-align:right">'+(x.lv?f(x.lv):'-')+'</td><td style="text-align:right">'+(dist===null?'-':(dist>0?'+':'')+dist.toFixed(1)+'%')+'</td><td style="text-align:right">'+money+'</td><td>'+st+'</td></tr>';
+    });
+  });
+  el.innerHTML=html+'</table>';
+  }catch(e){ console.error('ruleladder',e); }
+})();
 </script>
 </body>
 </html>
