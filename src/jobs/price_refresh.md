@@ -174,3 +174,12 @@ than quietly shipping around them.
 
 FINAL STEP - ALWAYS, success or failure:
 Write the project doc `claude/p4-price-refresh-status.md` (overwrite it) with: run time (UTC), trading date recorded, PUSHED or NOT PUSHED, commit hash, number of prices changed, unresolved tickers, and any blocker verbatim. This is how the main session sees what happened.
+
+=========================================================================
+S&P 500 BENCHMARK (added 7 Oct 2026, quality scorecard tile 2)
+=========================================================================
+After the stock closes are written, also read SPY's official close from
+https://stockanalysis.com/etf/spy/ (quote page, same rules as stocks) and set
+BENCH['spyLast'] (float) and BENCH['spyLastD'] ('YYYY-MM-DD') in portfolio_data.py
+with the safe constant-edit helper. Touch nothing else in BENCH. If SPY cannot
+be read, leave BENCH unchanged - the tile still works with the older value.
