@@ -3,10 +3,12 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('7 Oct 2026 (2): POEMS RECONCILIATION Mar-Sep (Salee sent 7 monthly statements + realized P/L report). Positions and '
- 'cost match POEMS to the cent at 30 Sep. FIXED: Salesforce (CRM) sale of 16 Sep (21 sh, +1,740.20) was missing - '
- 'realized P/L now 3,279.04 (was 1,538.81), sold-out list 30; trade log rebuilt from POEMS (237 trades Mar-Oct, was 52 '
- 'from Jul); monthly buy/sell totals Mar-Sep rebuilt (Sep buys were understated by 48,702.55); 4 one-cent realized '
+ASOF = ('7 Oct 2026 (3): MARVELL 9 OCT BUY CHANGED TO A LIMIT ORDER AT $275 (Salee approved) - price 287.01 is 13.6% above '
+ 'our average fair value 252.56; amount unchanged at 13,127.34; carries to 13 Oct if unfilled || PREVIOUS ENTRY: 7 Oct '
+ '2026 (2): POEMS RECONCILIATION Mar-Sep (Salee sent 7 monthly statements + realized P/L report). Positions and cost '
+ 'match POEMS to the cent at 30 Sep. FIXED: Salesforce (CRM) sale of 16 Sep (21 sh, +1,740.20) was missing - realized '
+ 'P/L now 3,279.04 (was 1,538.81), sold-out list 30; trade log rebuilt from POEMS (237 trades Mar-Oct, was 52 from '
+ 'Jul); monthly buy/sell totals Mar-Sep rebuilt (Sep buys were understated by 48,702.55); 4 one-cent realized '
  'differences; FN baht figure; REALIZED list now includes FN and CRM; dividends 861.35 (Mar-Sep) added to totals. '
  'OPEN: Jul 2025-Feb 2026 months differ from POEMS by 3,515.52 - need those statements || PREVIOUS ENTRY: 7 Oct 2026: '
  'QUALITY SCORECARD ADDED (Salee asked) - payoff ratio, beat-the-S&P-500 (SPY same-money comparison, new BENCH data) '
@@ -10684,12 +10686,16 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
            {'d': '2026-10-09',
             't': 'MRVL',
             'k': 'tranche',
-            'w': 'Tranche 2 - largest line',
+            'w': 'Tranche 2 - largest line - LIMIT ORDER AT $275 (Salee approved 7 Oct)',
             'a': 'BUY',
             'amt': 13127.34,
-            'cond': '⚠️ DATA FAULT CLOSED 14 SEP 2026. THIS ROW SAID 17,127.34 AND THAT WAS WRONG BY EXACTLY 4,000. '
-                    'The budget is 21,000 and 7,872.66 is already invested in 48.5 shares, so the real remaining room '
-                    'is 13,127.34. The stale figure had been carried since before the 10 September restructure and was '
+            'cond': 'LIMIT ORDER AT $275, not at market (Salee approved 7 Oct): Marvell closed 287.01 on 6 Oct, 13.6% '
+                    'above our average fair value of 252.56 (range 110-385). Up to $13,127.34 = about 47 shares at 275 '
+                    'incl. fees. If not filled on 9 Oct, carry the same limit to the 13 Oct batch and decide there; '
+                    'pay up to $290 only on strong new Marvell news (e.g. a new custom-chip customer). || ⚠️ DATA '
+                    'FAULT CLOSED 14 SEP 2026. THIS ROW SAID 17,127.34 AND THAT WAS WRONG BY EXACTLY 4,000. The budget '
+                    'is 21,000 and 7,872.66 is already invested in 48.5 shares, so the real remaining room is '
+                    '13,127.34. The stale figure had been carried since before the 10 September restructure and was '
                     'flagged on 9, 11 and 14 September. IT IS NOW CORRECTED IN THE ROW ITSELF. Anyone who had placed '
                     '17,127.34 would have overspent the line by 4,000 and broken the 1,000,000 budget. || WARNING: '
                     'rose 7.1% on 4 Sep, cutting upside to consensus from 20.9% to 13.0%. Forward P/E 35.5, EV/EBITDA '
