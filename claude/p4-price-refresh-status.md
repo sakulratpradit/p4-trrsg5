@@ -1,9 +1,27 @@
 # P4 price refresh — status
 
-- Run time (UTC): 2026-10-06 03:40–03:45 (the 03:30 backup run)
-- Trading date recorded: none this run — board already current
-- Result: NOT PUSHED (nothing to push; stopped at the first check by design)
-- Commit hash: n/a. HEAD at start: 725acc2.
-- First-check outcome: 63/63 tickers have pxd = 2026-10-05, the most recent completed US trading day, and HISTORY already has the 2026-10-05 row. The 00:30 run (commit 078c5a6, status dcf081d) succeeded, so this run stopped per the first-check rule. Note the literal "80 or more tickers" threshold is still unreachable on a 63-name board — read it as "all current"; price_refresh.md should be updated by the interactive session.
-- Prices changed this run: 0. Unresolved tickers: none (nothing attempted).
+- Run time (UTC): 2026-10-07 00:40–01:05 (the 00:30 run)
+- Trading date recorded: 2026-10-06 (Tue)
+- Result: PUSHED
+- Commit hash: b881415 (on top of bdb38b8)
+- Prices changed: 63 of 63. pxd set to 2026-10-06 on all 63; ASOF updated; HISTORY row appended (n=37, mv 822,000.78, cost 645,664.32, unreal +176,336.46 / +27.31%, real 1,538.81, net 177,875.27, cash 170,247.90).
+- Largest move: CIEN +13.85% (389.69 → 443.65).
+- Sanity gate: BLOCKED on first pass with exactly the nine >6% movers; all nine verified against second sources, re-run with --allow for each → PASS. --threshold untouched.
+  - CEG +12.25% (Google 20-yr nuclear PPA, 890 MW uprate) — fool.com quote page: day range 291.00–309.80 matches stockanalysis exactly
+  - VST +10.77% (DOE $4.2B loan) — fool.com 6 Oct article quote box: 160.50, +10.77%, range 151.44–162.69 — exact match
+  - CIEN +13.85% (investor-day targets, analyst upgrades) — marketscreener 6 Oct: +12.00% capture at 436.44 (pre-close snapshot; move confirmed, close from quote+history agreement at 443.65)
+  - STX −9.18% — fool.com quote page: 805.63, −9.09% — exact price match
+  - FN +7.78% — marketscreener: 489.16, +7.78% — exact match
+  - STRL +7.71% — stocktitan 6 Oct 19:38: 569.69, +8.86% (extended-hours print; move confirmed, close 563.69 from quote+history agreement)
+  - BWXT +7.65% — fool.com quote page: ~145.81, +10.46% (close level corroborated)
+  - ALAB +7.58% — marketscreener 6 Oct: 389.80, +7.58% — exact match
+  - GLW +6.02% (AT&T $3B+ fiber deal) — marketscreener: 168.97, +6.02%, "Market Closed" 06/10/2026 — exact match
+- Quote page vs history table disagreements:
+  - LHX: quote 237.90 vs history Oct-6 close 237.69. Quote passed both tests (4:00 PM EDT stamp; prev close 236.88 = history Oct-5) and sits inside the day's range — took the quote per the resolution rule.
+  - CGNX: history table was a day stale (latest row Oct 5). Quote passed both tests — took the quote (66.35).
+- Unresolved tickers: none. 63/63 resolved from stockanalysis.com quote pages, each validated against its history table; every quote prev-close matched the stored Oct-5 board price.
+- hi52 extended: NVDA 239.24, AMD 649.42, ANET 215.36, LITE 1133.40, PANW 419.91, CRWD 278.86, FTNT 191.27. lo52: none. CIEN hi52/lo52 are null on the board — left null (nothing to extend from).
+- Live page verification: could NOT fetch https://sakulratpradit.github.io/p4-trrsg5/ from this sandbox (WebFetch provenance block, no one present to approve; the GitHub Pages-build API is blocked by the proxy). Instead rendered the pushed index.html in headless Chromium via src/check_dashboard.js: 512 table rows, ZERO PAGE ERRORS. Please eyeball the live page when convenient.
+- Source notes: Google Finance was stale on every name tried (STX Sep 25, GLW Sep 28, STRL Sep 25, VST Oct 2 — both /quote/ and /beta/quote/ forms); marketscreener and fool.com article quote boxes were the workhorses. WebFetch PROVENANCE_REQUIRED errors forced a search-before-fetch pattern for most URLs (~1 extra WebSearch per 3 tickers).
+- Standing nit (repeat): the first-check threshold "80 or more tickers" is unreachable on a 63-name board — interactive session should reword price_refresh.md to "all tickers current".
 - Blockers: none.
