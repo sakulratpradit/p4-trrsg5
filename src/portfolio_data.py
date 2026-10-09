@@ -3,12 +3,17 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Oct 9, 2026 - APPROVALS (Salee, "Yes proceed actions"): January $150,000 deployment paused until the 10 Dec review, '
- 'with $50,000 ring-fenced as a crash reserve (spend only if the S&P 500 closes 15%+ below its high); 10 Dec agenda '
- 'adds MP Materials and a Teradyne/Viavi optical-testing budget review; Rocket Lab gets no new money unless the '
- '10-year is below 5% on 10 Dec. || PREVIOUS ENTRY: Oct 9, 2026 - DAILY PRICE REFRESH: 63 of 63 closes updated to the '
- 'Thu 2026-10-08 close (stockanalysis.com quote pages, each validated against its history table). Seven moves >6%, '
- 'each confirmed via a second source: COHR -9.63% (Google Finance exact match, Closed Oct 8 4:00 PM), ALAB -9.21% '
+ASOF = ('Oct 10, 2026 - TRADES BOOKED from POEMS order status (9 Oct, Bangkok night): MRVL 47 at 269.90 (limit 275) = '
+ '12,712.45 and AMAT 19 at 505.00 = 9,615.53 FILLED; ISRG 20 at 413 and META 9 at 705 EXPIRED unfilled (ISRG carried '
+ 'to 13 Oct at the same limit; META rolled into the 30 Oct rung-2 decision). Positions reconciled to the POEMS '
+ 'positions screen: 37 lines, cost 667,992.30, match to the cent. Cash 148,016.38 after settlement (POEMS live '
+ '170,344.36 before settlement; +96.46 new credit since 6 Oct, likely dividends). || PREVIOUS ENTRY: Oct 9, 2026 - '
+ 'APPROVALS (Salee, "Yes proceed actions"): January $150,000 deployment paused until the 10 Dec review, with $50,000 '
+ 'ring-fenced as a crash reserve (spend only if the S&P 500 closes 15%+ below its high); 10 Dec agenda adds MP '
+ 'Materials and a Teradyne/Viavi optical-testing budget review; Rocket Lab gets no new money unless the 10-year is '
+ 'below 5% on 10 Dec. || PREVIOUS ENTRY: Oct 9, 2026 - DAILY PRICE REFRESH: 63 of 63 closes updated to the Thu '
+ '2026-10-08 close (stockanalysis.com quote pages, each validated against its history table). Seven moves >6%, each '
+ 'confirmed via a second source: COHR -9.63% (Google Finance exact match, Closed Oct 8 4:00 PM), ALAB -9.21% '
  '(marketscreener Market Closed 08/10/2026, 347.05 exact), TSEM -7.85% (Google Finance exact), ARM -6.48% (ycharts '
  '275.37 stamped Oct 08 16:00), GLW -6.38% (Google Finance exact), VST -6.35% (marketscreener Munich EUR cross-listing '
  '-6.40% on 2026-10-08; every USD second source checked was stale - flagged, see status doc), BE -6.34% (Google '
@@ -6522,10 +6527,10 @@ POS = {'GOOGL': {'budget': 78000, 'cost': 59475.92, 'shares': 217},
  'TSM': {'budget': 74000, 'cost': 54856.42, 'shares': 147.5},
  'AVGO': {'budget': 50000, 'cost': 30125.18, 'shares': 88.5},
  'AMD': {'budget': 24000, 'cost': 13789.22, 'shares': 55},
- 'MRVL': {'budget': 21000, 'cost': 7872.66, 'shares': 48.5},
+ 'MRVL': {'budget': 21000, 'cost': 20585.11, 'shares': 95.5},
  'ARM': {'budget': None, 'cost': None, 'shares': None},
  'ASML': {'budget': 41000, 'cost': 16394.06, 'shares': 13},
- 'AMAT': {'budget': 22000, 'cost': 10086.63, 'shares': 38},
+ 'AMAT': {'budget': 22000, 'cost': 19702.16, 'shares': 57},
  'LRCX': {'budget': 16000, 'cost': 4100.12, 'shares': 22},
  'KLAC': {'budget': 14000, 'cost': 3510.69, 'shares': 18},
  'MU': {'budget': 51000, 'cost': 37284.98, 'shares': 49.45},
@@ -8735,23 +8740,49 @@ TRADES = [{'date': 'Mar 2, 2026',
           '44860). Gross 5,425.00 less fees 11.73 = 5,413.27 credited. Cost of the 20 sold 1,957.06, so REALISED PLUS '
           '3,456.21 (+176.6%). Half kept for momentum (all-time high) with a SELL STOP at $243 on the remaining 20; '
           'decide at the 10 Dec review after Q3 results on 1 Dec.',
-  'cost_released': 1957.06}]
+  'cost_released': 1957.06},
+ {'date': 'Oct 9, 2026',
+  'action': 'BUY',
+  't': 'MRVL',
+  'shares': 47,
+  'price': 269.9,
+  'amount': 12712.45,
+  'est': False,
+  'note': 'Marvell 47 at 269.90 - limit was 275.00, filled 5.10 BELOW it (POEMS order 320096, Day limit, filled '
+          '10:09:49 pm Bangkok). Gross 12,685.30 + commission 27.15 = 12,712.45. Bought three days after Investor Day '
+          'raised FY28 to ~$20bn and FY29 custom silicon to >$12bn. Position now 95.5 sh, cost 20,585.11 of 21,000 '
+          'budget (room 414.89 - effectively fully deployed). Matches POEMS to the cent.'},
+ {'date': 'Oct 9, 2026',
+  'action': 'BUY',
+  't': 'AMAT',
+  'shares': 19,
+  'price': 505.0,
+  'amount': 9615.53,
+  'est': False,
+  'note': 'Applied Materials 19 at 505.00 - filled at the limit (POEMS order 320367, Day limit, filled 10:11:32 pm '
+          'Bangkok). Gross 9,595.00 + commission 20.53 = 9,615.53. Position now 57 sh, cost 19,702.16 of 22,000 budget '
+          '(room 2,297.84). Matches POEMS to the cent.'}]
 
 SELLPLAN = []
 
 CASH = {'currency': 'USD',
- 'amount': 170247.9,
+ 'amount': 148016.38,
  'broker': 'POEMS (Phillip Securities)',
- 'asof': 'Oct 6, 2026 - POEMS Live Cash Balance 170,247.90. RECONCILED 7 Oct: POEMS statement cash at 30 Sep = '
-         '168,539.69; less MU buy 1 Oct 14,703.40, plus ORCL 10,851.50 and CRWD 5,413.27 sale proceeds = 170,101.06; '
-         'the remaining +146.84 is early-October credits (most likely dividends) to itemise from the October '
-         'statement. (The earlier +172.61 figure came from a board-derived cash that was 25.77 too low.) || PREVIOUS: '
-         'Oct 6, 2026 - read off the POEMS Live Cash Balance screen (09:23 am, before settlement of the 5 Oct sales): '
-         'USD 170,247.90. Derived from the board: 153,810.52 + 10,851.50 (ORCL) + 5,413.27 (CRWD) = 170,075.29; POEMS '
-         'is +172.61 higher - most likely dividends/interest credited since 2 Oct, to be itemised. || PREVIOUS: Oct 2, '
-         '2026 (153862.15 less 51.63 of commission under-booked on the five orders of 28 Sep and 1 Oct, found when the '
-         'POEMS positions screen of 2 Oct was reconciled. Positions now match POEMS to the cent on all 38 lines. Cash '
-         'itself is derived, not yet read off a POEMS cash screen)'}
+ 'asof': 'Oct 10, 2026 - POEMS Live Cash Balance 07:53 am Bangkok: USD 170,344.36, shown BEFORE settlement of the 9 '
+         'Oct buys. Board cash = 170,344.36 less MRVL 12,712.45 and AMAT 9,615.53 = 148,016.38 after settlement. '
+         'Versus the 6 Oct balance of 170,247.90, POEMS is +96.46 higher with no trades in between - a further '
+         'early-October credit (most likely dividends), to itemise from the October statement together with the '
+         'earlier +146.84. Positions reconciled the same morning: 37 lines, cost 667,992.30, match POEMS to the cent. '
+         '|| PREVIOUS: Oct 6, 2026 - POEMS Live Cash Balance 170,247.90. RECONCILED 7 Oct: POEMS statement cash at 30 '
+         'Sep = 168,539.69; less MU buy 1 Oct 14,703.40, plus ORCL 10,851.50 and CRWD 5,413.27 sale proceeds = '
+         '170,101.06; the remaining +146.84 is early-October credits (most likely dividends) to itemise from the '
+         'October statement. (The earlier +172.61 figure came from a board-derived cash that was 25.77 too low.) || '
+         'PREVIOUS: Oct 6, 2026 - read off the POEMS Live Cash Balance screen (09:23 am, before settlement of the 5 '
+         'Oct sales): USD 170,247.90. Derived from the board: 153,810.52 + 10,851.50 (ORCL) + 5,413.27 (CRWD) = '
+         '170,075.29; POEMS is +172.61 higher - most likely dividends/interest credited since 2 Oct, to be itemised. '
+         '|| PREVIOUS: Oct 2, 2026 (153862.15 less 51.63 of commission under-booked on the five orders of 28 Sep and 1 '
+         'Oct, found when the POEMS positions screen of 2 Oct was reconciled. Positions now match POEMS to the cent on '
+         'all 38 lines. Cash itself is derived, not yet read off a POEMS cash screen)'}
 
 REALIZED = [{'t': 'HOOD', 'g': 8, 'amount': 897.82},
  {'t': 'MELI', 'g': 8, 'amount': 272.72},
@@ -8784,8 +8815,8 @@ REALIZED = [{'t': 'HOOD', 'g': 8, 'amount': 897.82},
  {'t': 'ORCL', 'g': 5, 'amount': -1376.93},
  {'t': 'CRWD', 'g': 5, 'amount': 3456.21}]
 
-TOTALS = {'investedEverUSD': 737795.28,
- 'investedEverTHB': 23429840,
+TOTALS = {'investedEverUSD': 760123.26,
+ 'investedEverTHB': 24181177,
  'soldCostUSD': 88435.33,
  'soldCostTHB': 2880069,
  'realizedUSD': 3279.04,
@@ -9460,16 +9491,20 @@ MONTHLY = [{'ym': '2025-07',
               {'g': 8, 'buy': 4813.99, 'sell': 0.0, 'real': 0.0},
               {'g': 9, 'buy': 0.0, 'sell': 1511.36, 'real': -519.18}]},
  {'ym': '2026-10',
-  'buyUSD': 14703.4,
-  'buyLots': 1,
+  'buyUSD': 37031.38,
+  'buyLots': 3,
   'sellUSD': 16264.77,
   'sellLots': 2,
   'realizedUSD': 2079.28,
   'realizedTHB': 69968,
   'byStock': [{'t': 'MU', 'buy': 14703.4, 'sell': 0.0, 'real': 0.0},
               {'t': 'ORCL', 'buy': 0.0, 'sell': 10851.5, 'real': -1376.93},
-              {'t': 'CRWD', 'buy': 0.0, 'sell': 5413.27, 'real': 3456.21}],
-  'byGroup': [{'g': 3, 'buy': 14703.4, 'sell': 0.0, 'real': 0.0},
+              {'t': 'CRWD', 'buy': 0.0, 'sell': 5413.27, 'real': 3456.21},
+              {'t': 'MRVL', 'buy': 12712.45, 'sell': 0.0, 'real': 0.0},
+              {'t': 'AMAT', 'buy': 9615.53, 'sell': 0.0, 'real': 0.0}],
+  'byGroup': [{'g': 1, 'buy': 12712.45, 'sell': 0.0, 'real': 0.0},
+              {'g': 2, 'buy': 9615.53, 'sell': 0.0, 'real': 0.0},
+              {'g': 3, 'buy': 14703.4, 'sell': 0.0, 'real': 0.0},
               {'g': 5, 'buy': 0.0, 'sell': 16264.77, 'real': 2079.28}]}]
 
 THBFX = {'GOOGL': 32.2446,
@@ -10679,26 +10714,29 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
            {'d': '2026-10-09',
             't': 'AMAT',
             'k': 'tranche',
-            'w': 'Tranche 2 - semicap',
+            'w': 'DONE 9 Oct: 19 at 505.00 (limit 505), 9,615.53 incl. commission. AMAT room left 2,297.84. | Tranche '
+                 '2 - semicap',
             'a': 'BUY',
             'amt': 9913.37,
             'cond': 'Same MU read-across as ASML.',
-            'c': 'planned'},
+            'c': 'done'},
            {'d': '2026-10-09',
             't': 'ISRG',
             'k': 'tranche',
-            'w': 'Tranche 2 - healthcare',
+            'w': 'NOT FILLED 9 Oct - the 20 at $413 Day limit EXPIRED (ISRG low stayed above 413; POEMS 9 Oct price '
+                 '423.96). CARRIED TO 13 OCT (see that row). | Tranche 2 - healthcare',
             'a': 'BUY',
             'amt': 8618.32,
             'cond': 'Budget raised 20,000 -> 25,000 on Sep 8 with the 5,000 taken from AEP (unspent). 66.8% gross '
                     'margin, 20.7% revenue growth, 28.5% net margin, 39.3% below its 603.88 high, 33 analysts average '
                     'fair value 504.15. The only healthcare holding and currently 14.9% underwater.',
-            'c': 'planned'},
+            'c': 'done'},
            {'d': '2026-10-09',
             't': 'META',
             'k': 'tranche',
-            'w': 'Tranche 2 - META rung 1 of 2: BUY $6,380.24 as a LIMIT AT $705 (about 9 shares) - Salee approved 3 '
-                 'Oct',
+            'w': 'NOT FILLED 9 Oct - the 9 at $705 Day limit EXPIRED (POEMS 9 Oct price 718.67). As written: do NOT '
+                 'chase - the $6,380.24 rolls into rung 2 on 30 Oct after Q3 results. | Tranche 2 - META rung 1 of 2: '
+                 'BUY $6,380.24 as a LIMIT AT $705 (about 9 shares) - Salee approved 3 Oct',
             'a': 'BUY',
             'amt': 6380.24,
             'cond': 'LIMIT ORDER AT $705, NOT MARKET (approved 3 Oct; Meta closed 725.93 on 1 Oct). If it has not '
@@ -10708,11 +10746,12 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     "equal rungs at Salee's approval on 21 Sep. Position at approval: 59.5 shares, cost $39,239.51 "
                     '(avg $659.49), worth $40,597.44 at $682.31, up $1,357.93 (+3.5%). Forward P/E 20.94; revenue '
                     'growth 28.0%. Limit: last close +1% MAXIMUM, not the recommendation.',
-            'c': 'planned'},
+            'c': 'done'},
            {'d': '2026-10-09',
             't': 'MRVL',
             'k': 'tranche',
-            'w': 'Tranche 2 - largest line - LIMIT ORDER AT $275 (Salee approved 7 Oct)',
+            'w': 'DONE 9 Oct: 47 at 269.90 (limit 275), 12,712.45 incl. commission. | Tranche 2 - largest line - LIMIT '
+                 'ORDER AT $275 (Salee approved 7 Oct)',
             'a': 'BUY',
             'amt': 13127.34,
             'cond': 'LIMIT ORDER AT $275, not at market (Salee approved 7 Oct): Marvell closed 287.01 on 6 Oct, 13.6% '
@@ -10735,7 +10774,7 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'NET MARGIN IS ONLY 11.2% (308.0m on 2.739bn) AGAINST A NON-GAAP GROSS MARGIN 5.8 POINTS ABOVE '
                     'GAAP. Forward P/E 40.1, trailing 73.5. Highest concentration of the eight. Tranche 2 proceeds at '
                     '13,127.34 on 9 October as planned.',
-            'c': 'planned'},
+            'c': 'done'},
            {'d': '2026-10-13',
             't': '',
             'k': 'admin',
@@ -10841,6 +10880,18 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'cond': 'Profitable, priced below the analyst average, and had no rule until now. Limit at or near last '
                     'close; never more than +1%. US session opens 20:30 Bangkok.',
             'c': 'done'},
+           {'d': '2026-10-13',
+            't': 'ISRG',
+            'k': 'tranche',
+            'a': 'BUY',
+            'amt': 8618.32,
+            'c': 'planned',
+            'w': 'Tranche 2 - healthcare, CARRIED from 9 Oct: LIMIT ORDER AT $413, about 20 shares, Day order',
+            'cond': 'The 9 Oct limit at 413 expired unfilled (closed 423.96). Same limit, same size: about 20 shares '
+                    'at 413 = ~8,277.68 incl. commission, within the 8,618.32 room (budget 25,000, cost 16,381.68). Do '
+                    'not raise the limit to chase. If unfilled on 13 Oct, carry once more to the 21 Oct results check '
+                    '(Q3 earnings, about 20 Oct). If POEMS does not take orders on the 13 Oct Thai holiday, place on '
+                    '12 Oct.'},
            {'d': '2026-10-15',
             't': 'ASML',
             'k': 'earnings',
@@ -10937,10 +10988,12 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
            {'d': '2026-10-30',
             't': 'META',
             'k': 'earnings',
-            'w': 'Q3 2026 results (29 Oct, after the close) - META rung 2 of 2: DECIDE $6,380.24 (plus rung 1 if its '
-                 '$705 limit did not fill). MOVED 28 Oct -> 30 Oct on 3 Oct so the decision follows the results',
+            'w': 'ROLLED IN 10 Oct: rung 1 ($705 limit, 9 Oct) expired unfilled, so this decision now covers '
+                 '$12,760.48 (both rungs). | Q3 2026 results (29 Oct, after the close) - META rung 2 of 2: DECIDE '
+                 '$6,380.24 (plus rung 1 if its $705 limit did not fill). MOVED 28 Oct -> 30 Oct on 3 Oct so the '
+                 'decision follows the results',
             'a': 'DECIDE',
-            'amt': 6380.24,
+            'amt': 12760.48,
             'cond': 'DEPLOY $6,380.24 ONLY IF revenue growth holds at or above 25% AND net income recovers clear of '
                     'the Q3 2025 weakness. LEAVE IT if capex rises again without revenue acceleration, or margins '
                     'compress further. Rungs 1 + 2 = $12,760.48, exactly the budget left.',
