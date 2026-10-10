@@ -183,3 +183,7 @@ https://stockanalysis.com/etf/spy/ (quote page, same rules as stocks) and set
 BENCH['spyLast'] (float) and BENCH['spyLastD'] ('YYYY-MM-DD') in portfolio_data.py
 with the safe constant-edit helper. Touch nothing else in BENCH. If SPY cannot
 be read, leave BENCH unchanged - the tile still works with the older value.
+
+
+## S&P 500 running high (added 10 Oct 2026, crash-reserve rule)
+After refreshing BENCH["spyLast"], set BENCH["spyHigh"] = max(BENCH["spyHigh"], BENCH["spyLast"]) and BENCH["spyHighD"] to that date when it changes. Never lower spyHigh. It is the reference for the $50,000 crash reserve approved 9 Oct 2026 (trigger: SPY close 15% or more below spyHigh).

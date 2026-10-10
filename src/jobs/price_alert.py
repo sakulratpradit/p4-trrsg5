@@ -118,6 +118,24 @@ def main():
         out.append(f"SIZE: Micron is {mv['MU'] / total * 100:.1f}% of holdings (cap {MU_CAP:.0f}%). "
                    f"Per the 1 Oct rule, trim back toward 6%.")
 
+    # 5) standing approvals written on the board (APPROVALS): crash reserve and due dates
+    B = getattr(p, "BENCH", None) or {}
+    for a in getattr(p, "APPROVALS", []) or []:
+        due = {}
+        for i in a.get("items", []):
+            if i.get("check") == "spx15" and B.get("spyLast") and B.get("spy"):
+                hi = max([B["spyLast"], B.get("spyHigh") or 0] + list(B["spy"].values()))
+                dd = (B["spyLast"] / hi - 1) * 100
+                if dd <= -15:
+                    out.append(f"CRASH RESERVE: S&P 500 (SPY {B['spyLast']:,.2f}, {B.get('spyLastD','')}) is {dd:.1f}% below its high - "
+                               f"the $50,000 reserve from the {a['title']} may now be used (board names at or below fair value, two halves a week apart).")
+            if i.get("due"):
+                n = (dt.date.fromisoformat(i["due"]) - dt.date.today()).days
+                if 0 <= n <= 2:
+                    due.setdefault((i["due"], n), []).append(i["k"])
+        for (d, n), ks in due.items():
+            out.append(f"APPROVAL DUE {'TODAY' if n == 0 else f'in {n} day(s)'} ({d}): {a['title']} - {len(ks)} item(s): {', '.join(ks)}. See the Approvals panel on the Overview tab.")
+
     print("\n".join(out) if out else f"NO TRIGGERS HIT (prices dated {pxd}).")
 
 
