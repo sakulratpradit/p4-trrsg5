@@ -3,45 +3,47 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Oct 10, 2026 - APPROVAL (Salee): Trane Technologies (TT) added to the 10 Dec review as a data-centre cooling '
- 'candidate - examine only, no money before then; shown in the Approvals panel. || PREVIOUS ENTRY: Oct 10, 2026 - '
- 'DAILY PRICE REFRESH: 62 of 63 closes updated to the Fri 2026-10-09 close (stockanalysis.com quote pages, each '
- 'validated against its history table). One move >6%: DDOG +7.11% to 293.26, confirmed via Google Finance beta (exact '
- 'match, Closed Oct 9 4:00:01 PM GMT-4; the non-beta Google page was stale at Nov 1/123.26 and was discarded). SPCX '
- '(SpaceX, private - no public quote) left unchanged at its 2026-10-08 mark. MRVL and ORCL quote pages carried a '
- 'prev-close mismatch vs their history tables (274.60 vs 274.66; 135.19 vs 135.69), so per the resolution rule their '
- "history-row closes were taken (275.28, 141.40) - in both cases equal to the quote pages' own last price. SPY 778.57 "
- '(2026-10-09) written to BENCH. HISTORY row appended for 2026-10-09. || PREVIOUS ENTRY: Oct 10, 2026 - TRADES BOOKED '
- 'from POEMS order status (9 Oct, Bangkok night): MRVL 47 at 269.90 (limit 275) = 12,712.45 and AMAT 19 at 505.00 = '
- '9,615.53 FILLED; ISRG 20 at 413 and META 9 at 705 EXPIRED unfilled (ISRG carried to 13 Oct at the same limit; META '
- 'rolled into the 30 Oct rung-2 decision). Positions reconciled to the POEMS positions screen: 37 lines, cost '
- '667,992.30, match to the cent. Cash 148,016.38 after settlement (POEMS live 170,344.36 before settlement; +96.46 new '
- 'credit since 6 Oct, likely dividends). || PREVIOUS ENTRY: Oct 9, 2026 - APPROVALS (Salee, "Yes proceed actions"): '
- 'January $150,000 deployment paused until the 10 Dec review, with $50,000 ring-fenced as a crash reserve (spend only '
- 'if the S&P 500 closes 15%+ below its high); 10 Dec agenda adds MP Materials and a Teradyne/Viavi optical-testing '
- 'budget review; Rocket Lab gets no new money unless the 10-year is below 5% on 10 Dec. || PREVIOUS ENTRY: Oct 9, 2026 '
- '- DAILY PRICE REFRESH: 63 of 63 closes updated to the Thu 2026-10-08 close (stockanalysis.com quote pages, each '
- 'validated against its history table). Seven moves >6%, each confirmed via a second source: COHR -9.63% (Google '
- 'Finance exact match, Closed Oct 8 4:00 PM), ALAB -9.21% (marketscreener Market Closed 08/10/2026, 347.05 exact), '
- 'TSEM -7.85% (Google Finance exact), ARM -6.48% (ycharts 275.37 stamped Oct 08 16:00), GLW -6.38% (Google Finance '
- 'exact), VST -6.35% (marketscreener Munich EUR cross-listing -6.40% on 2026-10-08; every USD second source checked '
- 'was stale - flagged, see status doc), BE -6.34% (Google Finance exact, Closed Oct 8 16:00:08). CGNX quote page '
- 'stamped intraday 12:26 PM EDT - took the history row 60.91 per the resolution rule. DDOG history row was a '
- 'partial-session capture (754K volume); quote page passed both tests - took the quote 273.80. SPY 773.93 (2026-10-08) '
- 'written to BENCH || PREVIOUS ENTRY: 8 Oct 2026 (2): TSMC SEPTEMBER REVENUE SCORED GREEN - NT$511,857m, +54.6% YoY; '
- 'Q3 +51.0%. TSMC plan unchanged; 15 Oct gross-margin test next || PREVIOUS ENTRY: 8 Oct 2026: (1) STALE 13 OCT RUNGS '
- 'REMOVED (Salee approved) - Constellation 3,565.43, Eaton 1,560.22 and Vertiv 5,581.00 had no budget left after the '
- '28 Sep buys; 13 Oct list is now Amphenol 6,497.80, Credo 5,149.51, Visa 2,093.01. (2) NETFLIX ADDED TO THE 10 DEC '
- 'AGENDA as a non-AI candidate (at the bottom of our fair-value range) || PREVIOUS ENTRY: Oct 8, 2026 - DAILY PRICE '
- 'REFRESH: 63 of 63 closes updated to the Wed 2026-10-07 close (stockanalysis.com quote pages, each validated against '
- 'its history table). One move >6%: CGNX -7.75% to 61.21 (sector-wide machinery selling per a 7 Oct StockStory article '
- 'at 12:50 PM EDT showing -7.5%; ycharts 61.24 stamped Oct 07 16:00; CGNX history table stale at Oct 5, quote page '
- 'prev close matched our validated 6 Oct close). NET quote 342.97 (At close Oct 7, prev close matched) vs history row '
- '345.66 captured intraday at 10:10 AM - took the quote page per the resolution rule. SPY 777.22 (2026-10-07) written '
- 'to BENCH || PREVIOUS ENTRY: 7 Oct 2026 (3): MARVELL 9 OCT BUY CHANGED TO A LIMIT ORDER AT $275 (Salee approved) - '
- 'price 287.01 is 13.6% above our average fair value 252.56; amount unchanged at 13,127.34; carries to 13 Oct if '
- 'unfilled || PREVIOUS ENTRY: 7 Oct 2026 (2): POEMS RECONCILIATION Mar-Sep (Salee sent 7 monthly statements + realized '
- 'P/L report). Positions and cost match POEMS to the cent at 30 Sep. FIXED: Salesforce (CRM) sale of 16 Sep (21 sh, '
+ASOF = ('Oct 10, 2026 - APPROVAL (Salee): Eli Lilly (LLY) added to the 10 Dec review as a healthcare / non-AI candidate - '
+ 'examine only, no money before then; shown in the Approvals panel. || PREVIOUS ENTRY: Oct 10, 2026 - APPROVAL '
+ '(Salee): Trane Technologies (TT) added to the 10 Dec review as a data-centre cooling candidate - examine only, no '
+ 'money before then; shown in the Approvals panel. || PREVIOUS ENTRY: Oct 10, 2026 - DAILY PRICE REFRESH: 62 of 63 '
+ 'closes updated to the Fri 2026-10-09 close (stockanalysis.com quote pages, each validated against its history '
+ 'table). One move >6%: DDOG +7.11% to 293.26, confirmed via Google Finance beta (exact match, Closed Oct 9 4:00:01 PM '
+ 'GMT-4; the non-beta Google page was stale at Nov 1/123.26 and was discarded). SPCX (SpaceX, private - no public '
+ 'quote) left unchanged at its 2026-10-08 mark. MRVL and ORCL quote pages carried a prev-close mismatch vs their '
+ 'history tables (274.60 vs 274.66; 135.19 vs 135.69), so per the resolution rule their history-row closes were taken '
+ "(275.28, 141.40) - in both cases equal to the quote pages' own last price. SPY 778.57 (2026-10-09) written to BENCH. "
+ 'HISTORY row appended for 2026-10-09. || PREVIOUS ENTRY: Oct 10, 2026 - TRADES BOOKED from POEMS order status (9 Oct, '
+ 'Bangkok night): MRVL 47 at 269.90 (limit 275) = 12,712.45 and AMAT 19 at 505.00 = 9,615.53 FILLED; ISRG 20 at 413 '
+ 'and META 9 at 705 EXPIRED unfilled (ISRG carried to 13 Oct at the same limit; META rolled into the 30 Oct rung-2 '
+ 'decision). Positions reconciled to the POEMS positions screen: 37 lines, cost 667,992.30, match to the cent. Cash '
+ '148,016.38 after settlement (POEMS live 170,344.36 before settlement; +96.46 new credit since 6 Oct, likely '
+ 'dividends). || PREVIOUS ENTRY: Oct 9, 2026 - APPROVALS (Salee, "Yes proceed actions"): January $150,000 deployment '
+ 'paused until the 10 Dec review, with $50,000 ring-fenced as a crash reserve (spend only if the S&P 500 closes 15%+ '
+ 'below its high); 10 Dec agenda adds MP Materials and a Teradyne/Viavi optical-testing budget review; Rocket Lab gets '
+ 'no new money unless the 10-year is below 5% on 10 Dec. || PREVIOUS ENTRY: Oct 9, 2026 - DAILY PRICE REFRESH: 63 of '
+ '63 closes updated to the Thu 2026-10-08 close (stockanalysis.com quote pages, each validated against its history '
+ 'table). Seven moves >6%, each confirmed via a second source: COHR -9.63% (Google Finance exact match, Closed Oct 8 '
+ '4:00 PM), ALAB -9.21% (marketscreener Market Closed 08/10/2026, 347.05 exact), TSEM -7.85% (Google Finance exact), '
+ 'ARM -6.48% (ycharts 275.37 stamped Oct 08 16:00), GLW -6.38% (Google Finance exact), VST -6.35% (marketscreener '
+ 'Munich EUR cross-listing -6.40% on 2026-10-08; every USD second source checked was stale - flagged, see status doc), '
+ 'BE -6.34% (Google Finance exact, Closed Oct 8 16:00:08). CGNX quote page stamped intraday 12:26 PM EDT - took the '
+ 'history row 60.91 per the resolution rule. DDOG history row was a partial-session capture (754K volume); quote page '
+ 'passed both tests - took the quote 273.80. SPY 773.93 (2026-10-08) written to BENCH || PREVIOUS ENTRY: 8 Oct 2026 '
+ '(2): TSMC SEPTEMBER REVENUE SCORED GREEN - NT$511,857m, +54.6% YoY; Q3 +51.0%. TSMC plan unchanged; 15 Oct '
+ 'gross-margin test next || PREVIOUS ENTRY: 8 Oct 2026: (1) STALE 13 OCT RUNGS REMOVED (Salee approved) - '
+ 'Constellation 3,565.43, Eaton 1,560.22 and Vertiv 5,581.00 had no budget left after the 28 Sep buys; 13 Oct list is '
+ 'now Amphenol 6,497.80, Credo 5,149.51, Visa 2,093.01. (2) NETFLIX ADDED TO THE 10 DEC AGENDA as a non-AI candidate '
+ '(at the bottom of our fair-value range) || PREVIOUS ENTRY: Oct 8, 2026 - DAILY PRICE REFRESH: 63 of 63 closes '
+ 'updated to the Wed 2026-10-07 close (stockanalysis.com quote pages, each validated against its history table). One '
+ 'move >6%: CGNX -7.75% to 61.21 (sector-wide machinery selling per a 7 Oct StockStory article at 12:50 PM EDT showing '
+ '-7.5%; ycharts 61.24 stamped Oct 07 16:00; CGNX history table stale at Oct 5, quote page prev close matched our '
+ 'validated 6 Oct close). NET quote 342.97 (At close Oct 7, prev close matched) vs history row 345.66 captured '
+ 'intraday at 10:10 AM - took the quote page per the resolution rule. SPY 777.22 (2026-10-07) written to BENCH || '
+ 'PREVIOUS ENTRY: 7 Oct 2026 (3): MARVELL 9 OCT BUY CHANGED TO A LIMIT ORDER AT $275 (Salee approved) - price 287.01 '
+ 'is 13.6% above our average fair value 252.56; amount unchanged at 13,127.34; carries to 13 Oct if unfilled || '
+ 'PREVIOUS ENTRY: 7 Oct 2026 (2): POEMS RECONCILIATION Mar-Sep (Salee sent 7 monthly statements + realized P/L '
+ 'report). Positions and cost match POEMS to the cent at 30 Sep. FIXED: Salesforce (CRM) sale of 16 Sep (21 sh, '
  '+1,740.20) was missing - realized P/L now 3,279.04 (was 1,538.81), sold-out list 30; trade log rebuilt from POEMS '
  '(237 trades Mar-Oct, was 52 from Jul); monthly buy/sell totals Mar-Sep rebuilt (Sep buys were understated by '
  '48,702.55); 4 one-cent realized differences; FN baht figure; REALIZED list now includes FN and CRM; dividends 861.35 '
@@ -14208,6 +14210,21 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'data-centre / thermal orders; does it beat Modine, Johnson Controls, Carrier and nVent on margins '
                     'and cash flow? Funding would come from the paused $100,000 of January money, never the $50,000 '
                     'crash reserve.'},
+           {'d': '2026-12-10',
+            't': 'LLY',
+            'k': 'candidate',
+            'a': 'DECIDE',
+            'amt': 0,
+            'c': 'open',
+            'w': 'ELI LILLY - healthcare / non-AI candidate (Salee approved 10 Oct 2026). Examine only - no money '
+                 'before 10 Dec.',
+            'cond': 'Why: healthcare is 1.9% of our stocks against 80% in Technology + Communication (sector check 10 '
+                    'Oct); Lilly is the only non-AI name on the "8th trillion-dollar company" slide (market value '
+                    'about $1.1 trillion, revenue growth about 48% from weight-loss drugs). Its sales do not depend on '
+                    'cloud AI budgets. Questions for 10 Dec: price vs our fair-value method; Q3 results (late Oct) - '
+                    'weight-loss drug growth and guidance; competition and US drug-price pressure. Funding would come '
+                    'from the paused $100,000 of January money, never the $50,000 crash reserve. Compare with Netflix '
+                    'and Trane, the other non-AI candidates.'},
            {'d': '2026-12-15',
             'dl': '✅ LITE FAULT CLOSED - the -230% margin was REAL and NON-CASH. 2026 Notes mature today',
             't': 'LITE',
@@ -16500,12 +16517,17 @@ APPROVALS = [{'d': '2026-10-09',
            'rolled into the 30 Oct decision after its results.'},
  {'d': '2026-10-10',
   'title': 'Approval 10 Oct 2026',
-  'by': 'Salee - "Yes add Trane to the 10 Dec agenda"',
-  'why': 'Cooling is the one data-centre layer where we own a single name (Vertiv), and our portfolio is 80% '
-         'Technology + Communication.',
+  'by': 'Salee - "Yes add Trane" and "yes add Lilly"',
+  'why': 'Our portfolio is 80% Technology + Communication and only 1.9% healthcare; cooling is the one data-centre '
+         'layer where we own a single name (Vertiv). These candidates add exposure that does not depend on the same AI '
+         'budgets.',
   'items': [{'k': '10 DEC',
              'text': 'Add Trane Technologies (TT) as a data-centre cooling candidate. Examine only - no money before '
                      'the review. Any money would come from the paused $100,000 of January money.',
+             'due': '2026-12-10'},
+            {'k': '10 DEC',
+             'text': 'Add Eli Lilly (LLY) as a healthcare, non-AI candidate. Examine only - no money before the '
+                     'review. Any money would come from the paused $100,000 of January money.',
              'due': '2026-12-10'}]}]
 
 METRICS3 = M3  # alias: per-ticker pfcf / ev (EV/EBITDA) / de (Debt/Equity)
