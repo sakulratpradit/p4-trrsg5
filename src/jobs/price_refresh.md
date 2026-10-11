@@ -187,3 +187,10 @@ be read, leave BENCH unchanged - the tile still works with the older value.
 
 ## S&P 500 running high (added 10 Oct 2026, crash-reserve rule)
 After refreshing BENCH["spyLast"], set BENCH["spyHigh"] = max(BENCH["spyHigh"], BENCH["spyLast"]) and BENCH["spyHighD"] to that date when it changes. Never lower spyHigh. It is the reference for the $50,000 crash reserve approved 9 Oct 2026 (trigger: SPY close 15% or more below spyHigh).
+
+
+## Daily series for the risk-sensitivity table (added 11 Oct 2026, Salee approved)
+After SPY is refreshed, append one row to each series in src/risk_series.json (JSON, keys are 'YYYY-MM-DD'):
+  - spy[<trading date>] = SPY official close (same value as BENCH['spyLast']).
+  - ust10[<trading date>] = 10-year Treasury yield close in % (2 decimals). Source: https://www.mortgagenewsdaily.com/treasury/10yr (10-day table, "Close" column) or https://ycharts.com/indicators/10year_treasury_constant_maturity_rate; find either via WebSearch first (provenance rule).
+Never overwrite an existing date except to correct a value confirmed by a second source. If either value cannot be read, skip that series for the day - the monthly risk run copes with gaps.
