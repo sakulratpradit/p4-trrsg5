@@ -55,6 +55,29 @@ def build(out_path):
             'weeks': [{'w': w['week'], 'label': week_label(w['week']),
                        'pts': w['points']} for w in weeks],
         })
+    # Sold names that are no longer on the board keep their notes visible.
+    onb = {s['t'] for s in P.STOCKS}
+    last = {}
+    for r in getattr(P, 'SOLD', []):
+        if r['t'] not in onb:
+            last[r['t']] = r
+    for t in sorted(last):
+        if not weekly.get(t):
+            continue
+        r = last[t]
+        weeks = sorted(weekly.get(t, []), key=lambda w: w['week'], reverse=True)
+        gl = r.get('glUSD')
+        stocks.append({
+            't': t, 'name': 'Sold ' + str(r.get('lastDate', '')) + ((' - realised -$%s' if gl < 0 else ' - realised +$%s') % format(abs(round(gl)), ',') if gl is not None else ''),
+            'g': 'Sold - no longer on the board',
+            'desc': _ov(overviews.get(t)).get('short', ''),
+            'facts': _facts(_ov(overviews.get(t))),
+            'ops': _ov(overviews.get(t)).get('operations', ''),
+            'mis': _ov(overviews.get(t)).get('mission', ''),
+            'held': False, 'sh': None, 'cost': None, 'bud': None, 'px': None, 'pxd': None,
+            'weeks': [{'w': w['week'], 'label': week_label(w['week']),
+                       'pts': w['points']} for w in weeks],
+        })
     fups = [{'t': f[0], 'type': f[1], 'text': f[2], 'raised': f[3]} for f in FOLLOW_UPS]
     today = datetime.date.today().strftime('%b %d, %Y')
     data = json.dumps({'stocks': stocks, 'fups': fups, 'gen': today},
