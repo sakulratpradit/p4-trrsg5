@@ -644,6 +644,7 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
 
 <div class="page" id="page-trading">
 <div class="bt" id="tradecash" style="max-width:360px;margin:14px 0"></div>
+<div id="cashhist" style="margin:0 0 14px"></div>
 <h2>Daily trading activity <span class="n">booked from Salee's fills, day by day · Jul 2026 onward</span></h2>
 <div id="tradedays"></div>
 <h2>Monthly summary <span class="n">all history since Jul 2025 · tap a month for by-stock detail</span></h2>
@@ -825,7 +826,7 @@ function renderTiles(){
   document.getElementById("tiles").innerHTML = `
    <div class="tile"><div class="k">Positions</div><div class="v">${STOCKS.filter(s=>POS[s.t].shares!=null).length}</div><div class="d">+${STOCKS.filter(s=>POS[s.t].shares==null).length} watchlist · ${GROUPS.length} groups</div></div>
    <div class="tile"><div class="k">Port. market value</div><div class="v">${money(totMV)}</div><div class="d">vs cost ${money(totCost)} · <span class="${totMV>=totCost?'pos':'neg'}">${totMV>=totCost?"+":"\u2212"}$${Math.abs(totMV-totCost).toLocaleString("en-US",{maximumFractionDigits:0})}</span> · ${pct((totMV-totCost)/totCost*100)}</div></div>
-   <div class="tile"><div class="k">Cash left · POEMS (live)</div><div class="v">$${CASH.amount.toLocaleString("en-US",{minimumFractionDigits:2})}</div><div class="d">${CASH.currency} · as of ${CASH.asof} · pre-settlement</div></div>
+   <div class="tile"><div class="k">Cash left · POEMS (live)</div><div class="v">$${CASH.amount.toLocaleString("en-US",{minimumFractionDigits:2})}</div><div class="d">${CASH.currency} · as of ${cashDate()} · pre-settlement · detail on the Trading tab</div></div>
    <div class="tile"><div class="k">Largest group</div><div class="v" style="font-size:17px">${byG[0].g}</div><div class="d">${money(byG[0].mv)} · ${(byG[0].mv/totMV*100).toFixed(0)}% of book</div></div>
    <div class="tile"><div class="k">Best YTD</div><div class="v">${best.t}</div><div class="d">${pct(ytd(best))} since Jan 2 open</div></div>
    <div class="tile"><div class="k">Worst YTD</div><div class="v">${worst.t}</div><div class="d">${pct(ytd(worst))} since Jan 2 open</div></div>`;
@@ -1723,9 +1724,20 @@ function renderGroupSummary(){
 /* ============ trading activity ============ */
 const pmoney = v => v==null ? "\u2014" : `<span class="${v>=0?'pos':'neg'}">${v>=0?'+':'\u2212'}$${Math.abs(v).toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2})}</span>`;
 const dmoney = v => "$"+v.toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
+function cashEntries(){ return String(CASH.asof||"").split(/\s*\|\|\s*PREVIOUS:\s*/).map(x=>x.trim()).filter(Boolean); }
+function cashDate(){ const h=cashEntries()[0]||""; const i=h.indexOf(" - "); return i>0?h.slice(0,i):h.slice(0,24); }
+function renderCashHistory(){
+  const el=document.getElementById("cashhist"); if(!el) return;
+  const esc=x=>String(x).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+  const E=cashEntries();
+  el.innerHTML=`<div class="k" style="margin-top:8px">Cash reconciliation · latest entry</div><p style="margin:4px 0 8px;max-width:90ch;line-height:1.5">${esc(E[0]||"")}</p>`
+   + (E.length>1 ? `<button class="more" onclick="var h=document.getElementById('cashold');h.hidden=!h.hidden;this.textContent=h.hidden?'Show earlier cash entries (${E.length-1}) \u25be':'Hide earlier entries \u25b4'">Show earlier cash entries (${E.length-1}) \u25be</button><div id="cashold" hidden>`
+   + E.slice(1).map(x=>`<p style="margin:6px 0;max-width:90ch;line-height:1.5;color:var(--ink-2)">${esc(x)}</p>`).join("") + `</div>` : "");
+}
 function renderTrades(){
   const tc=document.getElementById("tradecash");
-  if(tc) tc.innerHTML=`<div class="k">Cash balance · ${CASH.broker}</div><div class="v">$${CASH.amount.toLocaleString("en-US",{minimumFractionDigits:2})} <span style="font-size:13px;color:var(--ink-2)">${CASH.currency}</span></div><div class="v2">as of ${CASH.asof} · before settlement of outstanding contracts &amp; fees</div>`;
+  if(tc) tc.innerHTML=`<div class="k">Cash balance · ${CASH.broker}</div><div class="v">$${CASH.amount.toLocaleString("en-US",{minimumFractionDigits:2})} <span style="font-size:13px;color:var(--ink-2)">${CASH.currency}</span></div><div class="v2">as of ${cashDate()} · before settlement of outstanding contracts &amp; fees</div>`;
+  renderCashHistory();
   const days = {};
   TRADES.forEach(t=>{ if(!inFocus(t.t)) return; (days[t.date]=days[t.date]||[]).push(t); });
   const el = document.getElementById("tradedays");
@@ -1788,7 +1800,7 @@ function renderTotals(){
    <div class="bt"><div class="k">Realized P/L (lifetime)</div><div class="v ${TOTALS.realizedUSD>=0?'pos':'neg'}">${sm(TOTALS.realizedUSD)}</div><div class="v2"><b>${smB(TOTALS.realizedTHB)}</b> · since ${TOTALS.inceptionDate}${TOTALS.dividendsUSD?` · <span class="pos">+$${TOTALS.dividendsUSD.toLocaleString("en-US",{minimumFractionDigits:2})}</span> dividends after tax (Mar–Sep, not in this figure)`:""}</div></div>
    <div class="bt"><div class="k">Total return · lifetime</div><div class="v ${lifetime>=0?'pos':'neg'}">${lifetime>=0?'▲':'▼'} ${lifetime.toFixed(1)}%</div><div class="v2">(realized ${sm(TOTALS.realizedUSD)} + unrealized ${sm(unreal)}) ÷ invested capital ${gm(investedExCash)} (cash excluded)</div></div>
    <div class="bt"><div class="k">Total return · current holdings</div><div class="v ${current>=0?'pos':'neg'}">${current>=0?'▲':'▼'} ${current.toFixed(1)}%</div><div class="v2">unrealized ÷ held cost (money in stocks now)</div></div>
-   <div class="bt"><div class="k">Cash left · POEMS (live)</div><div class="v">$${CASH.amount.toLocaleString("en-US",{minimumFractionDigits:2})}</div><div class="v2">${CASH.currency} · as of ${CASH.asof} · pre-settlement</div></div>`;
+   <div class="bt"><div class="k">Cash left · POEMS (live)</div><div class="v">$${CASH.amount.toLocaleString("en-US",{minimumFractionDigits:2})}</div><div class="v2">${CASH.currency} · as of ${cashDate()} · pre-settlement · detail on the Trading tab</div></div>`;
 }
 function renderStockSummary(){
   const gm=v=>v==null?"—":"$"+Math.round(v).toLocaleString("en-US");
