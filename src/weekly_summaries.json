@@ -4249,6 +4249,43 @@
     }
    ],
    "week": "2026-09-14"
+  },
+  {
+   "week": "2026-10-12",
+   "points": [
+    {
+     "s": "!",
+     "text": "13 Oct - CXMT server-DRAM threat (graded USEFUL): Micron slipped under $1,000 (12 Oct close $989.04) on reports that China's CXMT, listed in Shanghai since July, is preparing a server-memory product. Product and timing unverified."
+    },
+    {
+     "s": "0",
+     "text": "Position facts at 12 Oct close: price $989.04, board fair value $1,486, upside +50.2%, quality 10/10, priority 50.2 (rank #2 of 63), budget still open $13,715."
+    },
+    {
+     "s": "+",
+     "text": "Segment view - HBM (stacked memory on AI GPUs): Micron's growth engine, sold out into 2027; CXMT not there yet (needs advanced packaging and Nvidia qualification). Threat: LOW."
+    },
+    {
+     "s": "-",
+     "text": "Segment view - Server DDR5: large and profitable for Micron; this is CXMT's new push, so the real risk is to pricing from 2027. Threat: MEDIUM."
+    },
+    {
+     "s": "0",
+     "text": "Segment view - Phone/PC memory: mature, lower margin; CXMT already competes and takes share in China. Threat: already in the price."
+    },
+    {
+     "s": "0",
+     "text": "Gates before any new buy stay unchanged: price within 1% of the reference close; rate rule; no-China rule (Micron is US, CXMT not investable for us); fair value unchanged until a number proves CXMT ships server DRAM in volume. A China-scare dip is the kind of entry the open budget is for."
+    },
+    {
+     "s": "!",
+     "text": "What would change my mind: CXMT winning a server/HBM-class qualification at a US hyperscaler or Apple, or Micron's next results showing DRAM price declines outside China - either cuts the fair value, not just the price."
+    },
+    {
+     "s": "0",
+     "text": "Spreadsheet version (upside and priority as live formulas) sent to Salee 13 Oct: micron-vs-cxmt-2026-10-13.xlsx; copy kept in the dashboard repo under files/."
+    }
+   ]
   }
  ],
  "MYRG": [
