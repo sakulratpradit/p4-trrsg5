@@ -1,26 +1,11 @@
 # P4 price refresh status
 
-- Run time (UTC): 2026-10-13 00:40–01:05 (Tuesday 00:30 slot; scheduled-cloud run)
-- Trading date recorded: 2026-10-12 (Monday — US equities traded Columbus Day; bond market closed)
-- Result: **PUSHED** — commit `4fdab14` "Daily price refresh 2026-10-12: 62 prices" (clean fast-forward from 7dc0765, no writer conflict)
-- Prices changed: 62 of 63. SPCX (SpaceX, private — no public quote) left unchanged at its 2026-10-08 mark, by design.
-- Largest move: CIEN −9.95% to 405.01. Broad red day centred on optics/networking.
-- Moves >6% — gate tripped 6 names, each confirmed against a second independent source before re-running with --allow:
-  - CIEN −9.95% → 405.01 (gurufocus article published 12 Oct 16:17, price exact; marketbeat alert corroborates prev close 449.77 and low 400.20)
-  - LITE −9.78% → 995.41 (Benzinga, "Last update: Oct 12, 7:24 PM" EDT, close and change exact)
-  - COHR −7.87% → 288.02 (fool.com last-close table dated 2026-10-12, exact; day range matches)
-  - CRDO −7.25% → 200.84 (Google Finance, "Closed: Oct 12, 4:00:01 PM GMT-4", exact)
-  - BE −6.50% → 262.28 (fool.com prev-close + exact Oct 12 open/range/volume)
-  - FN −6.14% → 456.40 (fool.com, same basis)
-  - GLW −6.00% → 147.28 did NOT trip the gate (exactly at threshold) but was verified anyway (fool.com, exact).
-- Quote page vs history table disagreements:
-  - CGNX: quote page stale (stamped "At close: Oct 9"). Took the history-table Oct 12 row 61.82 (internally consistent, normal volume) per the resolution rule.
-  - TSEM: quote page served a stale intraday snapshot ("Market open, 2:16 PM EDT"). Took the history-table Oct 12 row 216.50; confirmed exact on Google Finance ("Closed: Oct 12, 4:00:00 PM GMT-4", −5.34%).
-  - APH: quote 86.19 vs history-row close 86.23 (0.04 apart). Quote passed both resolution checks (4:00 PM stamp; prev close = Fri history close), so 86.19 was taken.
-  - ⚠️ Data note for the next fundamentals/interactive session: TSEM's Friday (2026-10-09) close reads 228.71 on both stockanalysis history and Google Finance, but 229.21 was written to the board on 10 Oct. Today's 216.50 is verified; the stale-by-one-tick Friday value only affected the quoted day-change, not today's close.
-- Unresolved tickers: none (62/62 public names resolved).
-- BENCH: spyLast 778.10 / spyLastD 2026-10-12 (stockanalysis ETF quote, prev close matched Friday 778.57). spyHigh stays 779.09 (2026-10-06); SPY is 0.13% below its high — crash-reserve trigger (−15%) nowhere near tripped.
-- risk_series.json: spy[2026-10-12] = 778.10 appended. ust10 skipped for 2026-10-12 — bond market closed (Columbus Day); ycharts 10-Year Treasury Rate latest print is Oct 09 = 5.24%, already on file. Not an error.
-- HISTORY: row appended for 2026-10-12 (n 37, mv 817,211.34, cost 667,992.30, unreal +149,219.04 / +22.34%, net +152,498.08, cash 148,016.38). Previous 2026-10-09 row's sha set from 'live' to its push commit 8664868. Portfolio mv −11,196.50 d/d (−1.35%) vs SPY −0.06%.
-- Sanity gate: PASS on second run with --allow BE CIEN COHR CRDO FN LITE (all verified above). Playwright check on the built page: 843 table rows, ZERO PAGE ERRORS.
-- Blockers / source health: Google Finance per-ticker staleness again (COHR non-beta cached Oct 8, beta Oct 6; FN Sep 25; BE labs and CIEN beta intraday Oct 9; GLW language-variant pages garbage) — fool.com quote pages carried correct dated Oct 12 data and did the confirming. marketscreener CIEN stale (Sep 25). moomoo rate-limited. Live-page render verification could NOT be completed from this sandbox: the github.io URL never appears in search results so WebFetch's provenance rule blocks it, and the GitHub Pages build-status API path is blocked by the proxy (HTTP 403). Push to origin/main is confirmed and the identical HTML renders clean locally, so risk is limited to Pages serving lag.
+- Run time (UTC): 2026-10-13 03:40–03:45 (Tuesday 03:30 slot; scheduled-cloud run — second of the day's two slots)
+- Trading date recorded: 2026-10-12 (no new data written this run)
+- Result: **NOT PUSHED (no price work needed)** — early-exit per the first-check rule. The 00:30 run already refreshed the board: all 62 public names have pxd = 2026-10-12 (SPCX is private and unchanged by design), BENCH spyLast 778.10 / 2026-10-12, HISTORY row for 2026-10-12 present, risk_series spy[2026-10-12] present, ust10 correctly skipped (bond market closed, Columbus Day). Repo HEAD at clone: aebbda6; earlier refresh commit: 4fdab14.
+  - Note: the first-check threshold in price_refresh.md says "80 or more tickers", but the portfolio holds only 63 names, so the literal condition can never be met. Applied its intent (62/62 resolvable names already at the target date = earlier run succeeded). Suggest updating the threshold in price_refresh.md to the current portfolio size.
+- This commit touches ONLY this status file.
+- Commit hash: (this commit — see git log)
+- Number of prices changed: 0
+- Unresolved tickers: none new (see the 00:30 run's report in commit history, dbb3462, for the full 62-price detail)
+- Blockers: none. Live-page render check on https://sakulratpradit.github.io/p4-trrsg5/ remains unverifiable from the sandbox (WebFetch provenance rule; Pages status API 403) — same limitation as the 00:30 run; push state is confirmed via git.
