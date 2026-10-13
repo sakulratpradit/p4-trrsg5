@@ -1547,7 +1547,24 @@ const ROWS = [
  {n:"24b",l:"Rule of 40 (NI)",            f:s=>(s.revG==null||s.pm==null)?"—":pct(s.revG+s.pm)},
  {n:"25", l:"Free cash flow ($B)",        f:s=>`<span class="${s.fcfB<0?'neg':''}">${fmt(s.fcfB,1)}</span>`},
  {n:"26", l:"CAPEX ($B)",                 f:s=>fmt(s.capexB,1)},
+ {g:"Quality & priority (allocation method, 12 Oct 2026)"},
+ {n:"27", l:"Quality score (0-10)",         f:s=>{const q=qualityScore(s,M3[s.t]||{}); return `<span class="${q>=8?'pos':(q<=4?'neg':'')}"><b>${q}</b></span>`;}},
+ {n:"27a",l:"&nbsp;&nbsp;Net margin (2 / 1 / 0)",   f:s=>{const v=s.pm||0; return v>=15?"2":(v>=5?"1":"0");}},
+ {n:"27b",l:"&nbsp;&nbsp;Gross margin ≥50% (1 / 0)",f:s=>((s.gm||0)>=50?"1":"0")},
+ {n:"27c",l:"&nbsp;&nbsp;ROE (2 / 1 / 0)",          f:s=>{const v=s.roe||0; return v>=20?"2":(v>=10?"1":"0");}},
+ {n:"27d",l:"&nbsp;&nbsp;Free cash flow > 0 (2 / 0)",f:s=>((s.fcfB||0)>0?"2":"0")},
+ {n:"27e",l:"&nbsp;&nbsp;Rule of 40 (2 / 1 / 0)",   f:s=>{const v=s.r40||0; return v>=40?"2":(v>=25?"1":"0");}},
+ {n:"27f",l:"&nbsp;&nbsp;Debt/Equity < 1 (1 / 0)",  f:s=>{const v=(M3[s.t]||{}).de; return (v!=null&&v<1)?"1":"0";}},
+ {n:"28", l:"Priority (upside × quality ÷ 10)", f:s=>{const u=conv(s); if(u==null) return "—"; const v=u*qualityScore(s,M3[s.t]||{})/10; return `<span class="${v>=30?'pos':(v<0?'neg':'')}"><b>${v.toFixed(1)}</b></span>`;}},
+ {n:"29", l:"Priority rank (of board)",     f:s=>{const r=prioRank()[s.t]; return r==null?"—":`#${r}`;}},
 ];
+/* rank every board name with a fair value by priority (highest first); cached per render */
+let _PRANK=null;
+function prioRank(){
+  if(_PRANK) return _PRANK;
+  const arr=STOCKS.filter(s=>conv(s)!=null).map(s=>({t:s.t,v:conv(s)*qualityScore(s,M3[s.t]||{})/10}));
+  arr.sort((a,b)=>b.v-a.v); _PRANK={}; arr.forEach((x,i)=>{_PRANK[x.t]=i+1;}); return _PRANK;
+}
 function renderMatrix(){
   const V = vis();
   document.getElementById("mcount").textContent = V.length;
