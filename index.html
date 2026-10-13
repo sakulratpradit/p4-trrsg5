@@ -537,7 +537,7 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
     <button class="tab" data-p="schedule">Schedule</button>
     <button class="tab" data-p="buyplan">Buy Plan 12–30 Oct</button>
     <button class="tab" data-p="selling">Selling</button>
-    <button class="tab" data-p="tiers">Budget Tiers</button>
+    <button class="tab" data-p="tiers">Method &amp; Budget Tiers</button>
     <button class="tab" data-p="terms">Dictionary</button>
     <a class="tab" href="notes.html" style="text-decoration:none;display:inline-block">Notes ↗</a>
     <a class="tab" href="slides.html?v=20261012g" style="text-decoration:none;display:inline-block">Slides ↗</a>
@@ -2152,6 +2152,45 @@ function commitSearch(){
 /* ============ tab switching ============ */
 /* ============ Schedule tab ============ */
 var SCHED_FILTER = "all";
+
+/* Allocation method (approved 12 Oct 2026) - rendered at the top of the Budget Tiers tab */
+function qualityScore(s,m){
+  var sc=0, pm=s.pm||0, gm=s.gm||0, roe=s.roe||0, fcf=s.fcfB||0, r40=s.r40||0, de=(m&&m.de!=null)?m.de:null;
+  sc+= pm>=15?2:(pm>=5?1:0); sc+= gm>=50?1:0; sc+= roe>=20?2:(roe>=10?1:0); sc+= fcf>0?2:0; sc+= r40>=40?2:(r40>=25?1:0); sc+= (de!=null&&de<1)?1:0;
+  return sc;
+}
+function renderMethod(){
+  var esc=function(x){ return String(x==null?"":x).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); };
+  var m0=function(v){ return "$"+Math.round(v||0).toLocaleString("en-US"); };
+  var SM={}; STOCKS.forEach(function(s){ SM[s.t]=s; });
+  var M3=(typeof METRICS3!=="undefined")?METRICS3:{};
+  var mv={}, tot=0; Object.keys(POS).forEach(function(t){ var s=SM[t], p=POS[t]; if(s&&p.shares&&s.price){ mv[t]=p.shares*s.price; tot+=mv[t]; } });
+  var rows=[];
+  Object.keys(POS).forEach(function(t){
+    var s=SM[t], p=POS[t]; if(!s||!s.fvAvg||!s.price) return;
+    var room=(p.budget||0)-(p.cost||0); if(room<500) return;
+    var up=(s.fvAvg/s.price-1)*100, q=qualityScore(s,M3[t]), pr=up*q/10;
+    rows.push({t:t,room:room,up:up,q:q,pr:pr,w:tot?(mv[t]||0)/tot*100:0});
+  });
+  rows.sort(function(a,b){ return b.pr-a.pr; });
+  var H=[];
+  H.push('<div class="fv-card" style="margin:0 0 18px"><h3 style="margin:0 0 6px">How we allocate money (method approved 12 Oct 2026)</h3>');
+  H.push('<p class="sub" style="max-width:90ch;line-height:1.55">The old way set a budget per name so the board was spread across many kinds of stock. The new way asks one question for every dollar: <b>where is it most likely to earn the ~15% a year the $2.0M goal needs?</b> Diversification still matters, but it is a limit (no sector or name too big), not the reason to buy.</p>');
+  H.push('<ol style="line-height:1.6;max-width:90ch;margin:6px 0 10px 18px">'
+   +'<li><b>Rank by Priority = upside to fair value &times; Quality &divide; 10.</b> Upside = how far the price sits below our fair value. Quality = a 0-10 score from the board data: net margin (2), gross margin &ge;50% (1), return on equity (2), positive free cash flow (2), growth + margin &ge;40 (2), debt below equity (1).</li>'
+   +'<li><b>Fund from the top of the list down.</b> When the money runs out, the bottom waits. Budgets on low-priority names are cut and returned to the ranked pool.</li>'
+   +'<li><b>Gates still apply before any buy:</b> the price trigger (never more than +1% over the reference close), the results test where one is set, the rate rule (no loss-making names while the 10-year is above 5%), the no-China rule, and the sector cap.</li>'
+   +'<li><b>Position size:</b> every holding is either built to at least 1.5% of the portfolio or exited - no tail of tiny positions. Target about 28 names.</li>'
+   +'<li><b>No idle cash:</b> cash not needed within 30 days sits in SGOV (T-bills) and is sold the session before each buy. The $50k crash reserve lives there too.</li>'
+   +'<li><b>Review:</b> the ranking is re-run at every quarterly review (next 10 Dec) and whenever a budget is added or cut.</li></ol>');
+  H.push('<div style="overflow-x:auto"><table><tr><th>#</th><th>Stock</th><th class="n">Unspent budget</th><th class="n">Upside to fair value</th><th class="n">Quality (0-10)</th><th class="n">Priority</th><th class="n">Weight now</th></tr>');
+  rows.forEach(function(r,i){
+    H.push('<tr'+(r.pr<0?' class="done"':'')+'><td class="n">'+(i+1)+'</td><td class="tk">'+esc(r.t)+'</td><td class="n">'+m0(r.room)+'</td><td class="n">'+(r.up>=0?'+':'')+r.up.toFixed(0)+'%</td><td class="n">'+r.q+'</td><td class="n"><b>'+r.pr.toFixed(1)+'</b></td><td class="n">'+r.w.toFixed(1)+'%</td></tr>');
+  });
+  H.push('</table></div><p class="sub">Live from the board: open budgets of $500 or more, ranked. Negative priority = price already above our fair value (buy only at the trigger price).</p></div>');
+  return H.join("");
+}
+
 function renderTiers(){
   var el=document.getElementById("tierwrap"); if(!el) return;
   var esc=function(x){ return String(x==null?"":x).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); };
@@ -2265,7 +2304,7 @@ function renderTiers(){
   if(unal>0) H.push('<tr><td><b>Unassigned</b></td><td>no name attached</td><td class="n">&mdash;</td><td class="n">'+
     m0(unal)+'</td><td class="n">'+(unal/TARGET*100).toFixed(2)+'%</td><td class="tkl">&mdash;</td></tr>');
   H.push('</table></div>');
-  el.innerHTML=H.join("");
+  el.innerHTML=renderMethod()+H.join("");
 }
 
 function renderSelling(){
