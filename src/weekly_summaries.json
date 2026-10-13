@@ -4258,6 +4258,10 @@
      "text": "13 Oct - CXMT server-DRAM threat (graded USEFUL): Micron slipped under $1,000 (12 Oct close $989.04) on reports that China's CXMT, listed in Shanghai since July, is preparing a server-memory product. Product and timing unverified."
     },
     {
+     "s": "!",
+     "text": "13 Oct detail (Intelligent Investor slide #81): CXMT targets DDR5 RDIMM server memory on a 4F2 cell (smaller than the industry's 6F2, so potentially cheaper bits) by end-2026; CXMT DRAM share ~10% in Q2 2026. Reaction: SK Hynix -10.1%, Samsung -7.4%, Micron -3.9%, SOX -2.7%. Korea fell more because it carries more commodity DRAM; Micron is the most HBM-weighted of the three."
+    },
+    {
      "s": "0",
      "text": "Position facts at 12 Oct close: price $989.04, board fair value $1,486, upside +50.2%, quality 10/10, priority 50.2 (rank #2 of 63), budget still open $13,715."
     },
