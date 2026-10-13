@@ -15,6 +15,7 @@ REPO = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 import portfolio_data as P
 from gen_stock_notes import FOLLOW_UPS, week_label
+import method_note
 
 def _ov(v):
     """Company overview record; tolerates the older plain-string format."""
@@ -80,7 +81,7 @@ def build(out_path):
         })
     fups = [{'t': f[0], 'type': f[1], 'text': f[2], 'raised': f[3]} for f in FOLLOW_UPS]
     today = datetime.date.today().strftime('%b %d, %Y')
-    data = json.dumps({'stocks': stocks, 'fups': fups, 'gen': today},
+    data = json.dumps({'stocks': stocks, 'fups': fups, 'gen': today, 'method': method_note.build(P)},
                       ensure_ascii=False).replace('</', '<\\/')
 
     page = """<!doctype html>
@@ -98,6 +99,13 @@ header{background:var(--blue);color:#fff;padding:14px 16px;position:sticky;top:0
 header h1{margin:0;font-size:22px}
 header .sub{font-size:13px;opacity:.85;margin-top:2px}
 header a{color:#cfe0ff}
+.card.method table{border-collapse:collapse;width:100%;font-size:15px;margin:6px 0 12px}
+.card.method th,.card.method td{border:1px solid var(--line);padding:5px 7px;text-align:left;vertical-align:top}
+.card.method th{background:#eef2f9}
+.card.method h3{margin:16px 0 6px;font-size:17px;color:var(--blue)}
+.card.method .pos{color:var(--green);font-weight:600}
+.card.method .neg{color:var(--red);font-weight:600}
+.card.method ol{padding-left:20px}
 .wrap{max-width:860px;margin:0 auto;padding:14px}
 #search{width:100%;font-size:22px;padding:14px 16px;border:2px solid var(--line);border-radius:14px;background:var(--card);margin:4px 0 12px}
 #search:focus{outline:none;border-color:var(--blue)}
@@ -147,6 +155,7 @@ footer{color:var(--mut);font-size:12px;text-align:center;padding:20px}
     <div class="chip" data-f="held">Only stocks we own</div>
     <div class="chip warn" data-f="warn">⚠ Red flags</div>
     <div class="chip" data-f="fup">Open follow-ups</div>
+    <div class="chip" data-f="method">How we rank stocks</div>
   </div>
   <button id="back">‹ Back to all stocks</button>
   <div id="out"></div>
@@ -200,6 +209,7 @@ function groupsView(list){
 function render(){
   const term = q.value.trim().toUpperCase();
   back.style.display='none';
+  if(filter==='method'){ out.innerHTML = DATA.method; return; }
   if(filter==='fup'){
     out.innerHTML = DATA.fups.map(f => '<div class="fup"><b>'+esc(f.t)+'</b> · '+esc(f.type)+' · raised '+esc(f.raised)+'<br>'+esc(f.text)+'</div>').join('');
     return;
