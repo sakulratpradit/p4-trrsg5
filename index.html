@@ -378,6 +378,16 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
 #page-buyplan td{padding:7px 8px;border-bottom:1px solid var(--grid);vertical-align:top}
 #page-buyplan td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 #page-buyplan .tag{display:inline-block;font-size:10px;font-weight:700;border-radius:6px;padding:1px 6px;color:#fff}
+#page-map .room{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:10px 0;background:var(--card)}
+#page-map .room h3{margin:0 0 4px;font-size:16px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+#page-map .room h3 .go{font-size:12px;padding:3px 10px;border-radius:999px;border:1px solid var(--line);background:transparent;color:inherit;cursor:pointer}
+#page-map .room .why{color:var(--ink-2);margin:0 0 6px;font-size:13px}
+#page-map .room ul{margin:0;padding-left:18px;font-size:13px;line-height:1.5}
+#page-map .room ul a{cursor:pointer;text-decoration:underline dotted}
+#page-map .qi{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px;margin:8px 0 18px}
+#page-map .qi div{border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:13px;background:var(--card)}
+#page-map .qi b{display:block;font-size:12px;color:var(--ink-2);font-weight:600;margin-bottom:2px}
+#page-map .qi a{cursor:pointer;text-decoration:underline dotted}
 #page-buyplan .BUY,#page-buyplan .LIMIT{background:#1e7b34}#page-buyplan .PARK{background:#1f6fb2}#page-buyplan .DECIDE{background:#b26a00}#page-buyplan .WATCH{background:#667}
 #page-buyplan tr.watch td{opacity:.6}
 #page-buyplan ul{margin:6px 0 0 18px;font-size:12px;line-height:1.6}
@@ -529,6 +539,7 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
 
 <div class="navbar">
   <div class="tabbar" id="tabbar">
+    <button class="tab" data-p="map">🗺 Map</button>
     <button class="tab on" data-p="main">Overview</button>
     <button class="tab" data-p="wheel">Wheel</button>
     <button class="tab" data-p="groups">Portfolio</button>
@@ -556,6 +567,7 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
 
 <div class="fbar" id="fbar"></div>
 
+<div class="page" id="page-map"><div id="mapwrap"></div></div>
 <div class="page on" id="page-main">
 <div class="tape-wrap" id="tape">
   <div class="tape-fallback">Live ticker loading… (TradingView) — if it doesn't appear, your viewer blocks external embeds; figures below are from the last refresh close.</div>
@@ -2786,6 +2798,66 @@ function renderBuyPlan(){
   el.innerHTML=h+'</ul>';
 }
 
+function renderMap(){
+  var el=document.getElementById("mapwrap"); if(!el) return;
+  var go=function(p,anchor,label){ return '<a onclick="showTab(\''+p+'\')'+(anchor?';setTimeout(function(){var a=document.getElementById(\''+anchor+'\');if(a)a.scrollIntoView({behavior:\'smooth\'});},150)':'')+'">'+label+'</a>'; };
+  var nHeld=STOCKS.filter(function(x){return POS[x.t]&&POS[x.t].shares!=null;}).length;
+  var rooms=[
+   {p:"main",n:"Overview",why:"The front hall. Open this first: how the book is doing today and what has been approved.",
+    s:["Live ticker tape and the headline tiles (positions, market value, cash + SGOV park, largest group, best YTD)",
+       go("main","approvals","Approvals &amp; standing decisions")+" - every decision you signed off, with its due date",
+       go("main","ladders","Price ladders &amp; stops")+" - the exact price at which each name may be bought or must be sold",
+       "Fair-value ladder and Valuation map - how far each stock sits from our fair value",
+       "Metric matrix - 29 rows of data per stock, incl. rows 27-29 <b>Quality score, Priority, Rank</b>",
+       "Position cards - one card per holding"]},
+   {p:"wheel",n:"Wheel",why:"The allocation picture: where the money sits versus where the plan said it should.",
+    s:["Plan against reality","Portfolio wheel","Investment by group","Allocated budget by stock"]},
+   {p:"groups",n:"Portfolio",why:"The accounts room: returns, realised and unrealised P&amp;L, history, risk.",
+    s:["Totals &amp; returns (lifetime, current holdings, cash)","Win / loss record","Quality scorecard",go("groups","risk","Risk sensitivity")+" - 10-year yield, S&amp;P drawdown, crash reserve","Value history","P&amp;L by group and by stock"]},
+   {p:"trading",n:"Trading",why:"The ledger. Every fill, by day and by month, and the cash reconciliation.",
+    s:["Cash balance - free cash, SGOV park, total liquid; latest reconciliation entry; earlier entries behind a button","Daily trading activity","Monthly summary"]},
+   {p:"vision",n:"Vision",why:"The reason for all of it: Dad's 2030 goal and the expected return path.",
+    s:["Dad's vision","Expected return"]},
+   {p:"schedule",n:"Schedule",why:"The calendar of orders, Sep 2026 - Mar 2027. Planned, done, cancelled - all of it.",
+    s:["Investing schedule - every rung with date, amount, condition and status","Standing items: crash reserve, ranked pool"]},
+   {p:"buyplan",n:"Buy Plan 12-30 Oct",why:"Tonight's orders only. Same rows as the Schedule, filtered to the next three weeks, with limit tactics and share counts.",
+    s:["Firm orders / decide-after-results / total if all pass","Per-stock: last close, our cost, limit tactic, shares, cap","POEMS hours in Bangkok time and Thai holidays"]},
+   {p:"selling",n:"Selling",why:"The exit room: what is being sold, what was sold, and the rules for selling.",
+    s:["Open - awaiting your execution","Sold - closed, with realised P&amp;L","Liquidation control sheet - all names"]},
+   {p:"tiers",n:"Method &amp; Budget Tiers",why:"The rulebook. How money is ranked (upside x quality), the gates, and the budget tiers.",
+    s:["How we allocate money - method approved 12 Oct 2026, with the live priority table","The whole mandate in one bar; tier by tier","Control sheet - all "+STOCKS.length+" names with budgets"]},
+   {p:"terms",n:"Dictionary",why:"Plain-English meaning of every term used on the board, grouped by topic.",
+    s:["Reading a company, Valuation, Buying &amp; selling, Placing an order, Risk words, Our shorthand, Our written tests, AI &amp; datacentres, Chip testing, Cycles, Deals and filings, Competition"]}
+  ];
+  var ext=[
+   {h:'<a href="notes.html">Notes &#8599;</a>',why:"Claude's comments on every stock, week by week - the page built for Dad's iPad.",
+    s:["Chips at the top: All stocks / Only stocks we own / Red flags / Open follow-ups / <b>How we rank stocks</b> (Quality scoring, worked examples, live ranking)","Type a symbol to jump to one stock; sold names keep their notes under 'Sold - no longer on the board'"]},
+   {h:'<a href="slides.html?v=20261013c">Slides &#8599;</a>',why:"The slide library - every slide you sent and asked to file, with the verdict written on the card.",
+    s:["Nine shelves: semiconductors, AI infrastructure &amp; data centres, power &amp; energy, biotech, defence &amp; space, market structure, valuation &amp; method, index &amp; diversification, robotics"]}
+  ];
+  var qi=[
+   ["How much cash do I have?",go("main",null,"Overview tiles")+" or "+go("trading",null,"Trading")+" for the reconciliation"],
+   ["What do I buy tonight?",go("buyplan",null,"Buy Plan")],
+   ["What did I approve, and when is it due?",go("main","approvals","Overview &rarr; Approvals")],
+   ["At what price may I buy / must I sell?",go("main","ladders","Overview &rarr; Price ladders")],
+   ["Which stock ranks highest for new money?",go("tiers",null,"Method tab")+" (table) or matrix rows 27-29 on "+go("main",null,"Overview")],
+   ["How is the whole book doing?",go("groups",null,"Portfolio &rarr; Totals")],
+   ["Is the crash reserve triggered? 10-year above 5%?",go("groups","risk","Portfolio &rarr; Risk sensitivity")],
+   ["What was said about stock X last month?",'<a href="notes.html">Notes</a> - type the symbol'],
+   ["What does this word mean?",go("terms",null,"Dictionary")],
+   ["What is still on the calendar after October?",go("schedule",null,"Schedule")],
+   ["What has been sold and what did we make?",go("selling",null,"Selling")+" or "+go("groups",null,"Portfolio &rarr; Win / loss")],
+   ["Where is a slide I sent?",'<a href="slides.html?v=20261013c">Slides</a> - pick the shelf']
+  ];
+  var H=['<h2 style="margin:6px 0 2px">Map of the house</h2><p class="sub">'+STOCKS.length+' names on the board, '+nHeld+' held. Twelve rooms. Click a room name to go there; dotted links jump to a section.</p>'];
+  H.push('<h3 style="margin:14px 0 4px">Where do I find&hellip;</h3><div class="qi">'+qi.map(function(q){return '<div><b>'+q[0]+'</b>'+q[1]+'</div>';}).join('')+'</div>');
+  H.push('<h3 style="margin:14px 0 4px">The rooms, in the order of the tab bar</h3>');
+  rooms.forEach(function(r){ H.push('<div class="room"><h3>'+r.n+' <button class="go" onclick="showTab(\''+r.p+'\')">open &rarr;</button></h3><p class="why">'+r.why+'</p><ul>'+r.s.map(function(x){return '<li>'+x+'</li>';}).join('')+'</ul></div>'); });
+  H.push('<h3 style="margin:14px 0 4px">Two more rooms, on their own pages</h3>');
+  ext.forEach(function(r){ H.push('<div class="room"><h3>'+r.h+'</h3><p class="why">'+r.why+'</p><ul>'+r.s.map(function(x){return '<li>'+x+'</li>';}).join('')+'</ul></div>'); });
+  H.push('<p class="sub" style="margin-top:12px">Housekeeping: the Overview, Wheel and Portfolio tabs are <i>views</i> of the same numbers; Schedule and Buy Plan are the same orders at two zoom levels; the Method tab and matrix rows 27-29 are the same ranking in two places. Nothing is stored twice.</p>');
+  el.innerHTML=H.join('');
+}
 function showTab(p){ const b=document.querySelector('.tab[data-p="'+p+'"]'); if(b) b.click(); }
 document.querySelectorAll(".tab[data-p]").forEach(b=>b.onclick=()=>{
   document.querySelectorAll(".tab").forEach(x=>x.classList.remove("on"));
@@ -2799,6 +2871,7 @@ document.querySelectorAll(".tab[data-p]").forEach(b=>b.onclick=()=>{
   if(b.dataset.p==="selling") renderSelling();
   if(b.dataset.p==="tiers") renderTiers();
   if(b.dataset.p==="terms") renderTerms();
+  if(b.dataset.p==="map") renderMap();
   /* the wheel fits its own viewBox from getBBox(), which reports zeros while the
      tab is hidden — so redraw it the moment the tab actually becomes visible */
   if(b.dataset.p==="wheel"){ renderWheel(); renderGroupWheel(); renderBudgetWheel(); renderPlanReality(); }
