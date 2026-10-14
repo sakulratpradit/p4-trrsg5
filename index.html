@@ -378,14 +378,29 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
 #page-buyplan td{padding:7px 8px;border-bottom:1px solid var(--grid);vertical-align:top}
 #page-buyplan td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 #page-buyplan .tag{display:inline-block;font-size:10px;font-weight:700;border-radius:6px;padding:1px 6px;color:#fff}
-#page-map .room{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:10px 0;background:var(--card)}
+#page-map .plan{max-width:980px;margin:6px auto 10px}
+#page-map .plan svg{width:100%;height:auto;display:block;font-family:inherit}
+#page-map .plan .roof{fill:#1f3864;opacity:.9}
+#page-map .plan .ttl{fill:#fff;font-size:17px;font-weight:700}
+#page-map .plan .wall{fill:var(--surface-1);stroke:var(--ring);stroke-width:2}
+#page-map .plan .fl{fill:var(--ink-2);font-size:11px;font-weight:700;letter-spacing:.08em}
+#page-map .plan line{stroke:var(--ring);stroke-width:1}
+#page-map .plan .rm rect{fill:var(--page);stroke:var(--ring);stroke-width:1.5;transition:fill .15s,stroke .15s}
+#page-map .plan .rm{cursor:pointer}
+#page-map .plan .rm:hover rect{fill:var(--surface-1);stroke:#1f3864;stroke-width:2.5}
+#page-map .plan .ic{font-size:28px}
+#page-map .plan .nm{fill:var(--ink-1);font-size:16px;font-weight:700}
+#page-map .plan .hn{fill:var(--ink-2);font-size:11.5px}
+#page-map .qi2{display:flex;flex-wrap:wrap;gap:6px 14px;margin:4px 0 12px;font-size:13px}
+#page-map .qi2 span{white-space:nowrap}#page-map .qi2 b{color:var(--ink-2);font-weight:600}#page-map .qi2 a{cursor:pointer;text-decoration:underline dotted}
+#page-map .room{border:1px solid var(--ring);border-radius:10px;padding:12px 14px;margin:10px 0;background:var(--surface-1)}
 #page-map .room h3{margin:0 0 4px;font-size:16px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-#page-map .room h3 .go{font-size:12px;padding:3px 10px;border-radius:999px;border:1px solid var(--line);background:transparent;color:inherit;cursor:pointer}
+#page-map .room h3 .go{font-size:12px;padding:3px 10px;border-radius:999px;border:1px solid var(--ring);background:transparent;color:inherit;cursor:pointer}
 #page-map .room .why{color:var(--ink-2);margin:0 0 6px;font-size:13px}
 #page-map .room ul{margin:0;padding-left:18px;font-size:13px;line-height:1.5}
 #page-map .room ul a{cursor:pointer;text-decoration:underline dotted}
 #page-map .qi{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px;margin:8px 0 18px}
-#page-map .qi div{border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:13px;background:var(--card)}
+#page-map .qi div{border:1px solid var(--ring);border-radius:8px;padding:8px 10px;font-size:13px;background:var(--surface-1)}
 #page-map .qi b{display:block;font-size:12px;color:var(--ink-2);font-weight:600;margin-bottom:2px}
 #page-map .qi a{cursor:pointer;text-decoration:underline dotted}
 #page-buyplan .BUY,#page-buyplan .LIMIT{background:#1e7b34}#page-buyplan .PARK{background:#1f6fb2}#page-buyplan .DECIDE{background:#b26a00}#page-buyplan .WATCH{background:#667}
@@ -2802,60 +2817,66 @@ function renderMap(){
   var el=document.getElementById("mapwrap"); if(!el) return;
   var go=function(p,anchor,label){ return '<a onclick="showTab(\''+p+'\')'+(anchor?';setTimeout(function(){var a=document.getElementById(\''+anchor+'\');if(a)a.scrollIntoView({behavior:\'smooth\'});},150)':'')+'">'+label+'</a>'; };
   var nHeld=STOCKS.filter(function(x){return POS[x.t]&&POS[x.t].shares!=null;}).length;
-  var rooms=[
-   {p:"main",n:"Overview",why:"The front hall. Open this first: how the book is doing today and what has been approved.",
-    s:["Live ticker tape and the headline tiles (positions, market value, cash + SGOV park, largest group, best YTD)",
-       go("main","approvals","Approvals &amp; standing decisions")+" - every decision you signed off, with its due date",
-       go("main","ladders","Price ladders &amp; stops")+" - the exact price at which each name may be bought or must be sold",
-       "Fair-value ladder and Valuation map - how far each stock sits from our fair value",
-       "Metric matrix - 29 rows of data per stock, incl. rows 27-29 <b>Quality score, Priority, Rank</b>",
-       "Position cards - one card per holding"]},
-   {p:"wheel",n:"Wheel",why:"The allocation picture: where the money sits versus where the plan said it should.",
-    s:["Plan against reality","Portfolio wheel","Investment by group","Allocated budget by stock"]},
-   {p:"groups",n:"Portfolio",why:"The accounts room: returns, realised and unrealised P&amp;L, history, risk.",
-    s:["Totals &amp; returns (lifetime, current holdings, cash)","Win / loss record","Quality scorecard",go("groups","risk","Risk sensitivity")+" - 10-year yield, S&amp;P drawdown, crash reserve","Value history","P&amp;L by group and by stock"]},
-   {p:"trading",n:"Trading",why:"The ledger. Every fill, by day and by month, and the cash reconciliation.",
-    s:["Cash balance - free cash, SGOV park, total liquid; latest reconciliation entry; earlier entries behind a button","Daily trading activity","Monthly summary"]},
-   {p:"vision",n:"Vision",why:"The reason for all of it: Dad's 2030 goal and the expected return path.",
-    s:["Dad's vision","Expected return"]},
-   {p:"schedule",n:"Schedule",why:"The calendar of orders, Sep 2026 - Mar 2027. Planned, done, cancelled - all of it.",
-    s:["Investing schedule - every rung with date, amount, condition and status","Standing items: crash reserve, ranked pool"]},
-   {p:"buyplan",n:"Buy Plan 12-30 Oct",why:"Tonight's orders only. Same rows as the Schedule, filtered to the next three weeks, with limit tactics and share counts.",
-    s:["Firm orders / decide-after-results / total if all pass","Per-stock: last close, our cost, limit tactic, shares, cap","POEMS hours in Bangkok time and Thai holidays"]},
-   {p:"selling",n:"Selling",why:"The exit room: what is being sold, what was sold, and the rules for selling.",
-    s:["Open - awaiting your execution","Sold - closed, with realised P&amp;L","Liquidation control sheet - all names"]},
-   {p:"tiers",n:"Method &amp; Budget Tiers",why:"The rulebook. How money is ranked (upside x quality), the gates, and the budget tiers.",
-    s:["How we allocate money - method approved 12 Oct 2026, with the live priority table","The whole mandate in one bar; tier by tier","Control sheet - all "+STOCKS.length+" names with budgets"]},
-   {p:"terms",n:"Dictionary",why:"Plain-English meaning of every term used on the board, grouped by topic.",
-    s:["Reading a company, Valuation, Buying &amp; selling, Placing an order, Risk words, Our shorthand, Our written tests, AI &amp; datacentres, Chip testing, Cycles, Deals and filings, Competition"]}
-  ];
-  var ext=[
-   {h:'<a href="notes.html">Notes &#8599;</a>',why:"Claude's comments on every stock, week by week - the page built for Dad's iPad.",
-    s:["Chips at the top: All stocks / Only stocks we own / Red flags / Open follow-ups / <b>How we rank stocks</b> (Quality scoring, worked examples, live ranking)","Type a symbol to jump to one stock; sold names keep their notes under 'Sold - no longer on the board'"]},
-   {h:'<a href="slides.html?v=20261014a">Slides &#8599;</a>',why:"The slide library - every slide you sent and asked to file, with the verdict written on the card.",
-    s:["Nine shelves: semiconductors, AI infrastructure &amp; data centres, power &amp; energy, biotech, defence &amp; space, market structure, valuation &amp; method, index &amp; diversification, robotics"]}
-  ];
+  /* ---- the floor plan: one SVG, three floors + garden, each room a click target ---- */
+  var R=function(x,y,w,h,p,icon,name,hint,ext){
+    var act=ext?'window.location.href=\''+p+'\'':'showTab(\''+p+'\')';
+    return '<g class="rm" onclick="'+act+'"><title>'+hint+'</title>'
+      +'<rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" rx="10"/>'
+      +'<text class="ic" x="'+(x+w/2)+'" y="'+(y+h/2-6)+'" text-anchor="middle">'+icon+'</text>'
+      +'<text class="nm" x="'+(x+w/2)+'" y="'+(y+h/2+22)+'" text-anchor="middle">'+name+'</text>'
+      +'<text class="hn" x="'+(x+w/2)+'" y="'+(y+h/2+40)+'" text-anchor="middle">'+hint+'</text></g>';
+  };
+  var F=function(y,label){ return '<text class="fl" x="22" y="'+(y-10)+'">'+label+'</text><line x1="22" y1="'+(y-4)+'" x2="958" y2="'+(y-4)+'"/>'; };
+  var svg=['<svg viewBox="0 0 980 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Map of the dashboard">',
+   '<polygon class="roof" points="490,8 22,118 958,118"/>',
+   '<text class="ttl" x="490" y="92" text-anchor="middle">Pillar 4 \u00b7 the house \u00b7 '+STOCKS.length+' names, '+nHeld+' held</text>',
+   '<rect class="wall" x="22" y="118" width="936" height="440" rx="6"/>',
+   F(146,'ATTIC \u00b7 the rules and the words'),
+   R(40,150,290,110,'tiers','\ud83d\udcd0','Method &amp; Budget Tiers','how money is ranked \u00b7 the gates \u00b7 budgets'),
+   R(345,150,290,110,'terms','\ud83d\udcd6','Dictionary','what every word on the board means'),
+   R(650,150,290,110,'map','\ud83d\uddfa','Map','you are here'),
+   F(290,'FIRST FLOOR \u00b7 the accounts and the plan'),
+   R(40,294,215,110,'groups','\ud83d\udcca','Portfolio','returns \u00b7 P&amp;L \u00b7 risk \u00b7 history'),
+   R(268,294,215,110,'wheel','\ud83c\udf6a','Wheel','plan vs reality by group'),
+   R(496,294,215,110,'selling','\ud83d\udeaa','Selling','exits open and closed'),
+   R(724,294,216,110,'vision','\ud83c\udfaf','Vision','the 2030 goal'),
+   F(434,'GROUND FLOOR \u00b7 what you use every day'),
+   R(40,438,215,110,'main','\ud83c\udfe0','Overview','front hall: tiles, approvals, ladders'),
+   R(268,438,215,110,'buyplan','\ud83d\uded2','Buy Plan','tonight\u2019s orders with limits'),
+   R(496,438,215,110,'schedule','\ud83d\udcc5','Schedule','every order Sep\u2013Mar'),
+   R(724,438,216,110,'trading','\ud83e\uddfe','Trading','the ledger and the cash'),
+   '<text class="fl" x="22" y="590">GARDEN \u00b7 two pages of their own</text>',
+   R(40,598,440,36,'notes.html','\ud83d\udcdd','Notes \u2197','',true).replace('<text class="hn"','<text class="hn" display="none"'),
+   R(500,598,440,36,'slides.html?v=20261014a','\ud83d\uddbc','Slides \u2197','',true).replace('<text class="hn"','<text class="hn" display="none"'),
+   '</svg>'];
+  /* fix the two garden rooms: icon + name on one line */
+  var g=svg.join('').replace(/<text class="ic" x="([\d.]+)" y="([\d.]+)" text-anchor="middle">([^<]*)<\/text><text class="nm" x="([\d.]+)" y="([\d.]+)" text-anchor="middle">(Notes|Slides)/g,
+     function(m,x1,y1,ic,x2,y2,nm){ return '<text class="nm" x="'+x2+'" y="'+(parseFloat(y2)-16)+'" text-anchor="middle">'+ic+'  '+nm; });
   var qi=[
-   ["How much cash do I have?",go("main",null,"Overview tiles")+" or "+go("trading",null,"Trading")+" for the reconciliation"],
-   ["What do I buy tonight?",go("buyplan",null,"Buy Plan")],
-   ["What did I approve, and when is it due?",go("main","approvals","Overview &rarr; Approvals")],
-   ["At what price may I buy / must I sell?",go("main","ladders","Overview &rarr; Price ladders")],
-   ["Which stock ranks highest for new money?",go("tiers",null,"Method tab")+" (table) or matrix rows 27-29 on "+go("main",null,"Overview")],
-   ["How is the whole book doing?",go("groups",null,"Portfolio &rarr; Totals")],
-   ["Is the crash reserve triggered? 10-year above 5%?",go("groups","risk","Portfolio &rarr; Risk sensitivity")],
-   ["What was said about stock X last month?",'<a href="notes.html">Notes</a> - type the symbol'],
-   ["What does this word mean?",go("terms",null,"Dictionary")],
-   ["What is still on the calendar after October?",go("schedule",null,"Schedule")],
-   ["What has been sold and what did we make?",go("selling",null,"Selling")+" or "+go("groups",null,"Portfolio &rarr; Win / loss")],
-   ["Where is a slide I sent?",'<a href="slides.html?v=20261014a">Slides</a> - pick the shelf']
+   ["Cash?",go("main",null,"Overview")],["Buy tonight?",go("buyplan",null,"Buy Plan")],["Approved, due when?",go("main","approvals","Approvals")],
+   ["Buy / sell price?",go("main","ladders","Price ladders")],["Best for new money?",go("tiers",null,"Method")],["How is the book?",go("groups",null,"Portfolio")],
+   ["Crash reserve? 10-yr?",go("groups","risk","Risk")],["Said about a stock?",'<a href="notes.html">Notes</a>'],["A word?",go("terms",null,"Dictionary")],
+   ["After October?",go("schedule",null,"Schedule")],["Sold, and P&amp;L?",go("selling",null,"Selling")],["A slide I sent?",'<a href="slides.html?v=20261014a">Slides</a>']
   ];
-  var H=['<h2 style="margin:6px 0 2px">Map of the house</h2><p class="sub">'+STOCKS.length+' names on the board, '+nHeld+' held. Twelve rooms. Click a room name to go there; dotted links jump to a section.</p>'];
-  H.push('<h3 style="margin:14px 0 4px">Where do I find&hellip;</h3><div class="qi">'+qi.map(function(q){return '<div><b>'+q[0]+'</b>'+q[1]+'</div>';}).join('')+'</div>');
-  H.push('<h3 style="margin:14px 0 4px">The rooms, in the order of the tab bar</h3>');
-  rooms.forEach(function(r){ H.push('<div class="room"><h3>'+r.n+' <button class="go" onclick="showTab(\''+r.p+'\')">open &rarr;</button></h3><p class="why">'+r.why+'</p><ul>'+r.s.map(function(x){return '<li>'+x+'</li>';}).join('')+'</ul></div>'); });
-  H.push('<h3 style="margin:14px 0 4px">Two more rooms, on their own pages</h3>');
-  ext.forEach(function(r){ H.push('<div class="room"><h3>'+r.h+'</h3><p class="why">'+r.why+'</p><ul>'+r.s.map(function(x){return '<li>'+x+'</li>';}).join('')+'</ul></div>'); });
-  H.push('<p class="sub" style="margin-top:12px">Housekeeping: the Overview, Wheel and Portfolio tabs are <i>views</i> of the same numbers; Schedule and Buy Plan are the same orders at two zoom levels; the Method tab and matrix rows 27-29 are the same ranking in two places. Nothing is stored twice.</p>');
+  var rooms=[
+   {p:"main",n:"Overview",s:["Ticker tape and headline tiles (positions, value, cash + SGOV park)",go("main","approvals","Approvals &amp; standing decisions"),go("main","ladders","Price ladders &amp; stops"),"Fair-value ladder, Valuation map","Metric matrix (rows 27-29 = Quality, Priority, Rank)","Position cards"]},
+   {p:"wheel",n:"Wheel",s:["Plan against reality","Portfolio wheel","Investment by group","Allocated budget by stock"]},
+   {p:"groups",n:"Portfolio",s:["Totals &amp; returns","Win / loss record","Quality scorecard",go("groups","risk","Risk sensitivity"),"Value history","P&amp;L by group and by stock"]},
+   {p:"trading",n:"Trading",s:["Cash balance - free, parked in SGOV, total; reconciliation entries","Daily trading activity","Monthly summary"]},
+   {p:"vision",n:"Vision",s:["Dad's vision","Expected return"]},
+   {p:"schedule",n:"Schedule",s:["Every rung Sep 2026 - Mar 2027 with date, amount, condition, status","Standing items: crash reserve, ranked pool"]},
+   {p:"buyplan",n:"Buy Plan 12-30 Oct",s:["Firm orders / decide-after-results","Per stock: last close, cost, limit tactic, shares, cap","POEMS hours in Bangkok time, Thai holidays"]},
+   {p:"selling",n:"Selling",s:["Open - awaiting execution","Sold - closed, realised P&amp;L","Liquidation control sheet"]},
+   {p:"tiers",n:"Method &amp; Budget Tiers",s:["How we allocate money (12 Oct 2026) with the live priority table","Mandate in one bar; tier by tier","Control sheet - all "+STOCKS.length+" names"]},
+   {p:"terms",n:"Dictionary",s:["Twelve topics, from Reading a company to Competition"]},
+   {h:'<a href="notes.html">Notes &#8599;</a>',s:["Chips: All / Only owned / Red flags / Follow-ups / How we rank stocks","Type a symbol to jump to one stock"]},
+   {h:'<a href="slides.html?v=20261014a">Slides &#8599;</a>',s:["Nine shelves, every filed slide with its verdict"]}
+  ];
+  var H=['<div class="plan">'+g+'</div>'];
+  H.push('<div class="qi2">'+qi.map(function(q){return '<span><b>'+q[0]+'</b> '+q[1]+'</span>';}).join('')+'</div>');
+  H.push('<button class="more" onclick="var d=document.getElementById(\'mapdet\');d.hidden=!d.hidden;this.textContent=d.hidden?\'Room by room, in detail \\u25be\':\'Hide details \\u25b4\'">Room by room, in detail \u25be</button>');
+  H.push('<div id="mapdet" hidden>'+rooms.map(function(r){ return '<div class="room"><h3>'+(r.h||(r.n+' <button class="go" onclick="showTab(\''+r.p+'\')">open &rarr;</button>'))+'</h3><ul>'+r.s.map(function(x){return '<li>'+x+'</li>';}).join('')+'</ul></div>'; }).join('')
+    +'<p class="sub">Overview, Wheel and Portfolio are three views of the same numbers; Schedule and Buy Plan are the same orders at two zoom levels; the Method tab and matrix rows 27-29 are the same ranking in two places.</p></div>');
   el.innerHTML=H.join('');
 }
 function showTab(p){ const b=document.querySelector('.tab[data-p="'+p+'"]'); if(b) b.click(); }
