@@ -551,7 +551,7 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
     <button class="tab" data-p="tiers">Method &amp; Budget Tiers</button>
     <button class="tab" data-p="terms">Dictionary</button>
     <a class="tab" href="notes.html" style="text-decoration:none;display:inline-block">Notes ↗</a>
-    <a class="tab" href="slides.html?v=20261013c" style="text-decoration:none;display:inline-block">Slides ↗</a>
+    <a class="tab" href="slides.html?v=20261014a" style="text-decoration:none;display:inline-block">Slides ↗</a>
   </div>
   <div class="searchwrap">
     <div class="sbox">
@@ -2832,7 +2832,7 @@ function renderMap(){
   var ext=[
    {h:'<a href="notes.html">Notes &#8599;</a>',why:"Claude's comments on every stock, week by week - the page built for Dad's iPad.",
     s:["Chips at the top: All stocks / Only stocks we own / Red flags / Open follow-ups / <b>How we rank stocks</b> (Quality scoring, worked examples, live ranking)","Type a symbol to jump to one stock; sold names keep their notes under 'Sold - no longer on the board'"]},
-   {h:'<a href="slides.html?v=20261013c">Slides &#8599;</a>',why:"The slide library - every slide you sent and asked to file, with the verdict written on the card.",
+   {h:'<a href="slides.html?v=20261014a">Slides &#8599;</a>',why:"The slide library - every slide you sent and asked to file, with the verdict written on the card.",
     s:["Nine shelves: semiconductors, AI infrastructure &amp; data centres, power &amp; energy, biotech, defence &amp; space, market structure, valuation &amp; method, index &amp; diversification, robotics"]}
   ];
   var qi=[
@@ -2847,7 +2847,7 @@ function renderMap(){
    ["What does this word mean?",go("terms",null,"Dictionary")],
    ["What is still on the calendar after October?",go("schedule",null,"Schedule")],
    ["What has been sold and what did we make?",go("selling",null,"Selling")+" or "+go("groups",null,"Portfolio &rarr; Win / loss")],
-   ["Where is a slide I sent?",'<a href="slides.html?v=20261013c">Slides</a> - pick the shelf']
+   ["Where is a slide I sent?",'<a href="slides.html?v=20261014a">Slides</a> - pick the shelf']
   ];
   var H=['<h2 style="margin:6px 0 2px">Map of the house</h2><p class="sub">'+STOCKS.length+' names on the board, '+nHeld+' held. Twelve rooms. Click a room name to go there; dotted links jump to a section.</p>'];
   H.push('<h3 style="margin:14px 0 4px">Where do I find&hellip;</h3><div class="qi">'+qi.map(function(q){return '<div><b>'+q[0]+'</b>'+q[1]+'</div>';}).join('')+'</div>');
