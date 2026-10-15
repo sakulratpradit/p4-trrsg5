@@ -3,62 +3,66 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Oct 15, 2026 - META RESULTS DATE CONFIRMED by Meta IR: Wed 21 Oct after the close (not 29 Oct). The $12,760.48 META '
- 'decision moves from 30 Oct to Thu 22 Oct night Bangkok (23 Oct Thai holiday). AAPL watch moved to 2 Nov (Firstrade '
- 'calendar, estimated). Source: Firstrade Q3 earnings calendar slide checked against Meta press release. || PREVIOUS '
- 'ENTRY: Oct 15, 2026 - TWO FILLS BOOKED from the POEMS order screen (22:08 Bangkok): TSM 23 sh at 417.4235 = 9,621.29 '
- 'and ASML 4 sh at 1,614.9799 = 6,473.74, both incl. estimated commission (true up from the contract notes). TSM now '
- '170.5 sh / cost 64,477.71 / room 9,522.29; ASML 17 sh / cost 22,867.80 / room 18,132.20. Free cash 38,955.80 (+ SGOV '
- "79,991.56 parked). ISRG: no order on tonight's screen - outcome of the 13/14 Oct Day limits to confirm. || PREVIOUS "
- 'ENTRY: Oct 15, 2026 - TSMC RUNG RELEASED on the Schedule and Buy Plan: row 2026-10-15 TSM set to BUY 10,010 (23 sh, '
- 'cap 434.30 off the 14 Oct close of 430.00) after the earnings refresh scored GM 66.4% as a PASS. Two orders tonight: '
- 'ASML 4 sh cap 1,666.50 and TSM 23 sh cap 434.30, about 16,690 from free cash 55,050. || PREVIOUS ENTRY: Oct 15, 2026 '
- '- EARNINGS REFRESH: TSMC Q3 2026 scored (reported 15 Oct ~14:00 Taipei, before the US open): record revenue '
- 'NT$1,494.24B / US$46.72B, +50.9% YoY, GM 66.4% (65-67% guide; the 15 Oct DECIDE test asked 65%+ - PASSED), OM 58.7% '
- 'ABOVE the 56-58% guide, net income NT$763.06B +68.7% YoY, net margin 51.1%, EPS NT$29.43 / US$4.60 per ADR (LSEG '
- 'consensus NI NT$746.3B - beat). Board TTM updated: revB 153.19, revG 36.2 (TWD basis), eps 15.12, epsG 60.8, gm '
- '65.83, pm 51.12, pe 28.44, fpe 19.61, ps 13.54, r40 59.2; M3 pfcf 56.65, ev 19.39, de 0.17 and roi 53.96 '
- '(stockanalysis 15 Oct stats at the 430.00 close). Held pending Q3 statements: fcfB, capexB, roe (cash flow still '
- 'Jun-26 TTM). Q4 guidance not in the initial release - comes on the call. No one-off: NI sits well below operating '
- 'profit; the margin jump is operational. || PREVIOUS ENTRY: Oct 15, 2026 - ASML RUNG 1 RELEASED: Q3 test passed (6-K: '
- 'sales 11,662m euro, GM 57.5%, 2026 guide 44-45bn, 2027-28 supply short of demand). Schedule row 2026-10-15 ASML set '
- 'to BUY 6,680 (4 sh, cap 1,666.50 off the 14 Oct close of 1,650); Buy Plan tactic row updated. CPI 3.7%/core 2.6%, '
- '10Y ~5.3%: halving rule not tripped. MU note: Citi rebuttal of the CXMT 4F2 scare added. || PREVIOUS ENTRY: Oct 15, '
- '2026 (run 00:30 UTC) - DAILY PRICE REFRESH: 63 of 63 closes updated to the Wed 2026-10-14 close (stockanalysis.com '
- 'quote pages, each validated against its history table; every number from a tool call this session). Broad risk-off '
- 'day - 17 moves >=6%, EACH confirmed via a second independent source: MRVL -8.73% to 245.28 and ALAB -7.72% to 300.28 '
- '(Google Finance, Closed Oct 14 4:00 PM GMT-4, exact); ARM -6.81% to 238.01, CRDO -9.62% to 179.23 (BZ 179.22), RKLB '
- '-7.85% to 59.18, COHR -9.19% to 263.32 (BZ 263.23 -9.22%), GEV -6.20% to 941.78 (BZ 941.60), NET -6.72% to 324.33, '
- 'HOOD -8.54% to 101.08, LITE -9.28% to 896.33, FN -8.15% to 392.95 (BZ 392.93), VRT -6.09% to 222.83 (BZ 222.85), VST '
- '-6.51% to 151.79, BE -9.15% to 239.34 (BZ 239.54 -9.08%), STRL -9.13% to 453.07 (exact), CIEN -10.19% to 359.60 (BZ '
- "359.46 -10.22%) - all on Benzinga quote pages stamped 'Last update Oct 14, 7:56-7:59 PM EDT'; ORCL -8.83% to 130.55 "
- "corroborated by Benzinga's Oct 14 2:15 PM intraday print 130.26 -9.03% (no second CLOSING print found; the "
- 'stockanalysis quote page passed both validation tests). Quote/history disagreements, quote page taken per the '
- 'resolution rule: LHX history Oct 14 row 239.26 flagged intraday by the page itself, took 237.50 +1.18% (one of only '
- '3 gainers, with AAPL +0.50 and NFLX +0.16); KTOS history 39.39 vs quote 39.33, took 39.33; STRL history Oct 14 row a '
- 'partial capture (close 488.00 on volume 24,346), discarded, took 453.07 (Benzinga exact). MPWR and FN history pages '
- 'lagged (no Oct 14 row yet) - their quote pages passed both tests. MU quote prev-close read 953.04 vs history 953.19 '
- '(15c); quote price and history Oct 14 close agree at 914.13, taken. BWXT 134.44 -3.18%: history page URL not '
- "reachable this run; quote stamped 4:00 PM with prev close equal to the board's validated Oct 13 close. New 52-week "
- 'lows marked: KTOS 39.33, AVAV 120.60, APP 262.19. CIEN hi52/lo52 are None on the board - left untouched. SPY 769.60 '
- '(2026-10-14, -1.08%) written to BENCH; spyHigh stays 779.09 of 2026-10-06 (SPY 1.22% below the high - the -15% '
- 'crash-reserve trigger NOT tripped). UST10 5.19 (ycharts, Oct 14) and SPY 769.60 appended to the daily risk series. '
- "HISTORY row appended for 2026-10-14 (mv 797,341.88, unreal +17.09%); prior row's sha set to 6170d8f (its push "
- 'commit, per the status log). Source health: Google Finance stale for most names tonight (per-ticker caches Sep '
- '25-Oct 13), ycharts stale (LITE Sep 21, ORCL Oct 12), marketscreener very stale (FN Aug 18); Benzinga quote pages '
- 'were the reliable dated second source. price/mcapB scaled together by share count; fundamentals untouched (owned by '
- 'the earnings job). || PREVIOUS ENTRY: Oct 14, 2026 - EARNINGS REFRESH: ASML Q3 2026 scored (reported 14 Oct 07:00 '
- 'CEST, globenewswire): record net sales EUR 11,662M (vs EUR 11.58B exp), GM 57.5% above guide, net income EUR 4,960M, '
- 'basic EPS EUR 12.95 vs 10.68 expected. Q4 guide EUR 14.2-15.2B / ~57% GM; FY26 guide EUR 44-45B / ~56% GM. Board TTM '
- 'updated at EUR/USD 1.1199 (13 Oct close): revB 44.21, revG 22.5, eps 39.24, epsG 44.6, gm 54.34, pm 34.14, pe 43.78, '
- 'ps 15.17, r40 48.5, pfcf 58.38. fpe re-confirmed 29.1 (FY27 consensus EUR 52.67, pre-print). HELD pending US-GAAP '
- 'statements (not yet published this morning): roe, roi, fcfB, capexB, EV/EBITDA, de. ONE-OFF WATCH: implied Q3 op '
- 'income ~EUR 5.1-5.2B (GP 6,700 less ~1.5-1.6B opex guide) vs NI 4,960 implies tax+other near zero against a normal '
- '~16% rate - a non-operating gain of roughly EUR 0.5-0.7B likely sits in net income; verify against the US-GAAP '
- 'statements next run before treating epsG 44.6 / pm 34.14 as clean operating power. price/mcapB untouched (owned by '
- 'the price job). || PREVIOUS ENTRY: Oct 14, 2026 - DAILY PRICE REFRESH: 63 of 63 closes updated to the Tue 2026-10-13 '
- 'close (stockanalysis.com quote pages, each validated against its history table). Two moves >=6%, each confirmed via '
- 'a second source: AMAT -6.69% to 464.24 (fool.com quote box: exact Oct 13 range 452.81-485.63, prev close 497.53), FN '
+ASOF = ('Oct 16, 2026 - MORNING RECONCILIATION against POEMS (06:45 am): all 37 stock lines and SGOV match to the cent '
+ '(777,052.88); the TSM and ASML commissions are confirmed exact (order nos. 602354 / 600536). Cash read off the Live '
+ 'Cash Balance: 55,058.84 before settlement = 38,963.81 after the two contracts; +8.01 small credit to itemise. ISRG '
+ 'still open: no order on the 15 Oct screen. || PREVIOUS ENTRY: Oct 15, 2026 - META RESULTS DATE CONFIRMED by Meta IR: '
+ 'Wed 21 Oct after the close (not 29 Oct). The $12,760.48 META decision moves from 30 Oct to Thu 22 Oct night Bangkok '
+ '(23 Oct Thai holiday). AAPL watch moved to 2 Nov (Firstrade calendar, estimated). Source: Firstrade Q3 earnings '
+ 'calendar slide checked against Meta press release. || PREVIOUS ENTRY: Oct 15, 2026 - TWO FILLS BOOKED from the POEMS '
+ 'order screen (22:08 Bangkok): TSM 23 sh at 417.4235 = 9,621.29 and ASML 4 sh at 1,614.9799 = 6,473.74, both incl. '
+ 'estimated commission (true up from the contract notes). TSM now 170.5 sh / cost 64,477.71 / room 9,522.29; ASML 17 '
+ "sh / cost 22,867.80 / room 18,132.20. Free cash 38,955.80 (+ SGOV 79,991.56 parked). ISRG: no order on tonight's "
+ 'screen - outcome of the 13/14 Oct Day limits to confirm. || PREVIOUS ENTRY: Oct 15, 2026 - TSMC RUNG RELEASED on the '
+ 'Schedule and Buy Plan: row 2026-10-15 TSM set to BUY 10,010 (23 sh, cap 434.30 off the 14 Oct close of 430.00) after '
+ 'the earnings refresh scored GM 66.4% as a PASS. Two orders tonight: ASML 4 sh cap 1,666.50 and TSM 23 sh cap 434.30, '
+ 'about 16,690 from free cash 55,050. || PREVIOUS ENTRY: Oct 15, 2026 - EARNINGS REFRESH: TSMC Q3 2026 scored '
+ '(reported 15 Oct ~14:00 Taipei, before the US open): record revenue NT$1,494.24B / US$46.72B, +50.9% YoY, GM 66.4% '
+ '(65-67% guide; the 15 Oct DECIDE test asked 65%+ - PASSED), OM 58.7% ABOVE the 56-58% guide, net income NT$763.06B '
+ '+68.7% YoY, net margin 51.1%, EPS NT$29.43 / US$4.60 per ADR (LSEG consensus NI NT$746.3B - beat). Board TTM '
+ 'updated: revB 153.19, revG 36.2 (TWD basis), eps 15.12, epsG 60.8, gm 65.83, pm 51.12, pe 28.44, fpe 19.61, ps '
+ '13.54, r40 59.2; M3 pfcf 56.65, ev 19.39, de 0.17 and roi 53.96 (stockanalysis 15 Oct stats at the 430.00 close). '
+ 'Held pending Q3 statements: fcfB, capexB, roe (cash flow still Jun-26 TTM). Q4 guidance not in the initial release - '
+ 'comes on the call. No one-off: NI sits well below operating profit; the margin jump is operational. || PREVIOUS '
+ 'ENTRY: Oct 15, 2026 - ASML RUNG 1 RELEASED: Q3 test passed (6-K: sales 11,662m euro, GM 57.5%, 2026 guide 44-45bn, '
+ '2027-28 supply short of demand). Schedule row 2026-10-15 ASML set to BUY 6,680 (4 sh, cap 1,666.50 off the 14 Oct '
+ 'close of 1,650); Buy Plan tactic row updated. CPI 3.7%/core 2.6%, 10Y ~5.3%: halving rule not tripped. MU note: Citi '
+ 'rebuttal of the CXMT 4F2 scare added. || PREVIOUS ENTRY: Oct 15, 2026 (run 00:30 UTC) - DAILY PRICE REFRESH: 63 of '
+ '63 closes updated to the Wed 2026-10-14 close (stockanalysis.com quote pages, each validated against its history '
+ 'table; every number from a tool call this session). Broad risk-off day - 17 moves >=6%, EACH confirmed via a second '
+ 'independent source: MRVL -8.73% to 245.28 and ALAB -7.72% to 300.28 (Google Finance, Closed Oct 14 4:00 PM GMT-4, '
+ 'exact); ARM -6.81% to 238.01, CRDO -9.62% to 179.23 (BZ 179.22), RKLB -7.85% to 59.18, COHR -9.19% to 263.32 (BZ '
+ '263.23 -9.22%), GEV -6.20% to 941.78 (BZ 941.60), NET -6.72% to 324.33, HOOD -8.54% to 101.08, LITE -9.28% to '
+ '896.33, FN -8.15% to 392.95 (BZ 392.93), VRT -6.09% to 222.83 (BZ 222.85), VST -6.51% to 151.79, BE -9.15% to 239.34 '
+ '(BZ 239.54 -9.08%), STRL -9.13% to 453.07 (exact), CIEN -10.19% to 359.60 (BZ 359.46 -10.22%) - all on Benzinga '
+ "quote pages stamped 'Last update Oct 14, 7:56-7:59 PM EDT'; ORCL -8.83% to 130.55 corroborated by Benzinga's Oct 14 "
+ '2:15 PM intraday print 130.26 -9.03% (no second CLOSING print found; the stockanalysis quote page passed both '
+ 'validation tests). Quote/history disagreements, quote page taken per the resolution rule: LHX history Oct 14 row '
+ '239.26 flagged intraday by the page itself, took 237.50 +1.18% (one of only 3 gainers, with AAPL +0.50 and NFLX '
+ '+0.16); KTOS history 39.39 vs quote 39.33, took 39.33; STRL history Oct 14 row a partial capture (close 488.00 on '
+ 'volume 24,346), discarded, took 453.07 (Benzinga exact). MPWR and FN history pages lagged (no Oct 14 row yet) - '
+ 'their quote pages passed both tests. MU quote prev-close read 953.04 vs history 953.19 (15c); quote price and '
+ 'history Oct 14 close agree at 914.13, taken. BWXT 134.44 -3.18%: history page URL not reachable this run; quote '
+ "stamped 4:00 PM with prev close equal to the board's validated Oct 13 close. New 52-week lows marked: KTOS 39.33, "
+ 'AVAV 120.60, APP 262.19. CIEN hi52/lo52 are None on the board - left untouched. SPY 769.60 (2026-10-14, -1.08%) '
+ 'written to BENCH; spyHigh stays 779.09 of 2026-10-06 (SPY 1.22% below the high - the -15% crash-reserve trigger NOT '
+ 'tripped). UST10 5.19 (ycharts, Oct 14) and SPY 769.60 appended to the daily risk series. HISTORY row appended for '
+ "2026-10-14 (mv 797,341.88, unreal +17.09%); prior row's sha set to 6170d8f (its push commit, per the status log). "
+ 'Source health: Google Finance stale for most names tonight (per-ticker caches Sep 25-Oct 13), ycharts stale (LITE '
+ 'Sep 21, ORCL Oct 12), marketscreener very stale (FN Aug 18); Benzinga quote pages were the reliable dated second '
+ 'source. price/mcapB scaled together by share count; fundamentals untouched (owned by the earnings job). || PREVIOUS '
+ 'ENTRY: Oct 14, 2026 - EARNINGS REFRESH: ASML Q3 2026 scored (reported 14 Oct 07:00 CEST, globenewswire): record net '
+ 'sales EUR 11,662M (vs EUR 11.58B exp), GM 57.5% above guide, net income EUR 4,960M, basic EPS EUR 12.95 vs 10.68 '
+ 'expected. Q4 guide EUR 14.2-15.2B / ~57% GM; FY26 guide EUR 44-45B / ~56% GM. Board TTM updated at EUR/USD 1.1199 '
+ '(13 Oct close): revB 44.21, revG 22.5, eps 39.24, epsG 44.6, gm 54.34, pm 34.14, pe 43.78, ps 15.17, r40 48.5, pfcf '
+ '58.38. fpe re-confirmed 29.1 (FY27 consensus EUR 52.67, pre-print). HELD pending US-GAAP statements (not yet '
+ 'published this morning): roe, roi, fcfB, capexB, EV/EBITDA, de. ONE-OFF WATCH: implied Q3 op income ~EUR 5.1-5.2B '
+ '(GP 6,700 less ~1.5-1.6B opex guide) vs NI 4,960 implies tax+other near zero against a normal ~16% rate - a '
+ 'non-operating gain of roughly EUR 0.5-0.7B likely sits in net income; verify against the US-GAAP statements next run '
+ 'before treating epsG 44.6 / pm 34.14 as clean operating power. price/mcapB untouched (owned by the price job). || '
+ 'PREVIOUS ENTRY: Oct 14, 2026 - DAILY PRICE REFRESH: 63 of 63 closes updated to the Tue 2026-10-13 close '
+ '(stockanalysis.com quote pages, each validated against its history table). Two moves >=6%, each confirmed via a '
+ 'second source: AMAT -6.69% to 464.24 (fool.com quote box: exact Oct 13 range 452.81-485.63, prev close 497.53), FN '
  '-6.26% to 427.82 (ycharts stamped Oct 13 16:00 at 427.62, its usual few cents under the official print; fool and '
  "Google Finance were a day or more stale for FN). BWXT's history-table Oct 13 row was internally impossible (close "
  '137.39 below its own low 137.87, volume 27,245) - discarded per the sanity rule; the quote page passed both tests '
@@ -8901,38 +8905,45 @@ TRADES = [{'date': 'Mar 2, 2026',
   'shares': 23,
   'price': 417.4235,
   'amount': 9621.29,
-  'est': True,
-  'note': 'TSMC ADR 23 at 417.4235 (POEMS Day limit at the ask, Done before 10:08 pm Bangkok; cap was 434.30, filled '
-          '3.9% under it because the PPI print sold the market off). Gross 9,600.74 + commission 20.55 (0.214%, min '
-          '8.56 - ESTIMATED, true up from the contract note) = 9,621.29. Position now 170.5 sh, cost 64,477.71 of '
-          '74,000 budget (room 9,522.29). Gross-margin test passed the same day (Q3 66.4% vs 65% required).'},
+  'est': False,
+  'note': 'TSMC ADR 23 at 417.4235 (POEMS Day limit at the ask, POEMS order 602354, Done 10:46:10 pm Bangkok; cap was '
+          '434.30, filled 3.9% under it because the PPI print sold the market off). Gross 9,600.74 + commission 20.55 '
+          '(0.214%, min 8.56 - CONFIRMED 16 Oct: POEMS position cost matches to the cent) = 9,621.29. Position now '
+          '170.5 sh, cost 64,477.71 of 74,000 budget (room 9,522.29). Gross-margin test passed the same day (Q3 66.4% '
+          'vs 65% required).'},
  {'date': 'Oct 15, 2026',
   'action': 'BUY',
   't': 'ASML',
   'shares': 4,
   'price': 1614.9799,
   'amount': 6473.74,
-  'est': True,
-  'note': 'ASML 4 at 1,614.9799 (POEMS Day limit at the ask, Done before 10:08 pm Bangkok; cap was 1,666.50). Gross '
-          '6,459.92 + commission 13.82 (0.214%, min 8.56 - ESTIMATED, true up from the contract note) = 6,473.74. Rung '
-          '1 of the post-results ladder. Position now 17 sh, cost 22,867.80 of 41,000 budget (room 18,132.20: rung 2 '
-          'of 6,606 on the January results, 10,000 deliberately held back).'}]
+  'est': False,
+  'note': 'ASML 4 at 1,614.9799 (POEMS Day limit at the ask, POEMS order 600536, Done 10:36:51 pm Bangkok; cap was '
+          '1,666.50). Gross 6,459.92 + commission 13.82 (0.214%, min 8.56 - CONFIRMED 16 Oct: POEMS position cost '
+          'matches to the cent) = 6,473.74. Rung 1 of the post-results ladder. Position now 17 sh, cost 22,867.80 of '
+          '41,000 budget (room 18,132.20: rung 2 of 6,606 on the January results, 10,000 deliberately held back).'}]
 
 SELLPLAN = []
 
 CASH = {'currency': 'USD',
- 'amount': 38955.8,
+ 'amount': 38963.81,
  'broker': 'POEMS (Phillip Securities)',
- 'asof': "Oct 15, 2026 - after tonight's two fills (TSM 23 sh 9,621.29, ASML 4 sh 6,473.74, both incl. estimated "
-         'commission) totalling 16,095.03: 55,050.83 - 16,095.03 = 38,955.80. SGOV 79,991.56 still parked, so total '
-         'liquid = 118,947.36. To be read against the POEMS Live Cash Balance after T+1 settlement. || PREVIOUS: Oct '
-         '13, 2026 - SGOV PARK FILLED: 794 sh at 100.5299 (POEMS, Done 11:04:13 pm Bangkok) = gross 79,820.74 + est. '
-         'commission 170.82 = 79,991.56. Free cash 135,042.39 - 79,991.56 = 55,050.83. SGOV held as a cash-equivalent '
-         '(see parked), so total liquid = 135,042.39. To be read against the POEMS Live Cash Balance after T+1 '
-         'settlement. || PREVIOUS: Oct 13, 2026 - after the 12 Oct fills (APH, CRDO, V) totalling 12,973.99 incl. '
-         'estimated commission: 148,016.38 - 12,973.99 = 135,042.39. To be read against the POEMS Live Cash Balance '
-         'after settlement. || PREVIOUS: Oct 10, 2026 - POEMS Live Cash Balance 07:53 am Bangkok: USD 170,344.36, '
-         'shown BEFORE settlement of the 9 Oct buys. Board cash = 170,344.36 less MRVL 12,712.45 and AMAT 9,615.53 = '
+ 'asof': 'Oct 16, 2026 - POEMS Live Cash Balance 06:45 am Bangkok: USD 55,058.84, shown BEFORE settlement of the 15 '
+         'Oct buys. Board cash = 55,058.84 less TSM 9,621.29 and ASML 6,473.74 = 38,963.81 after settlement. Versus '
+         'the derived 55,050.83, POEMS is +8.01 higher with no trades in between - a small credit (interest or '
+         'dividend) to itemise from the October statement with the earlier +146.84 and +96.46. Positions reconciled '
+         'the same morning: 37 stock lines + SGOV, cost 777,052.88, match POEMS to the cent, and the POEMS cost on TSM '
+         '(64,477.71) and ASML (22,867.80) confirms the two commission estimates exactly. || PREVIOUS: Oct 15, 2026 - '
+         "after tonight's two fills (TSM 23 sh 9,621.29, ASML 4 sh 6,473.74, both incl. estimated commission) "
+         'totalling 16,095.03: 55,050.83 - 16,095.03 = 38,955.80. SGOV 79,991.56 still parked, so total liquid = '
+         '118,947.36. To be read against the POEMS Live Cash Balance after T+1 settlement. || PREVIOUS: Oct 13, 2026 - '
+         'SGOV PARK FILLED: 794 sh at 100.5299 (POEMS, Done 11:04:13 pm Bangkok) = gross 79,820.74 + est. commission '
+         '170.82 = 79,991.56. Free cash 135,042.39 - 79,991.56 = 55,050.83. SGOV held as a cash-equivalent (see '
+         'parked), so total liquid = 135,042.39. To be read against the POEMS Live Cash Balance after T+1 settlement. '
+         '|| PREVIOUS: Oct 13, 2026 - after the 12 Oct fills (APH, CRDO, V) totalling 12,973.99 incl. estimated '
+         'commission: 148,016.38 - 12,973.99 = 135,042.39. To be read against the POEMS Live Cash Balance after '
+         'settlement. || PREVIOUS: Oct 10, 2026 - POEMS Live Cash Balance 07:53 am Bangkok: USD 170,344.36, shown '
+         'BEFORE settlement of the 9 Oct buys. Board cash = 170,344.36 less MRVL 12,712.45 and AMAT 9,615.53 = '
          '148,016.38 after settlement. Versus the 6 Oct balance of 170,247.90, POEMS is +96.46 higher with no trades '
          'in between - a further early-October credit (most likely dividends), to itemise from the October statement '
          'together with the earlier +146.84. Positions reconciled the same morning: 37 lines, cost 667,992.30, match '
