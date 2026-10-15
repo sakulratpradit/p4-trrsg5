@@ -3,8 +3,12 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Oct 15, 2026 - TSMC RUNG RELEASED on the Schedule and Buy Plan: row 2026-10-15 TSM set to BUY 10,010 (23 sh, cap '
- '434.30 off the 14 Oct close of 430.00) after the earnings refresh scored GM 66.4% as a PASS. Two orders tonight: '
+ASOF = ('Oct 15, 2026 - TWO FILLS BOOKED from the POEMS order screen (22:08 Bangkok): TSM 23 sh at 417.4235 = 9,621.29 and '
+ 'ASML 4 sh at 1,614.9799 = 6,473.74, both incl. estimated commission (true up from the contract notes). TSM now 170.5 '
+ 'sh / cost 64,477.71 / room 9,522.29; ASML 17 sh / cost 22,867.80 / room 18,132.20. Free cash 38,955.80 (+ SGOV '
+ "79,991.56 parked). ISRG: no order on tonight's screen - outcome of the 13/14 Oct Day limits to confirm. || PREVIOUS "
+ 'ENTRY: Oct 15, 2026 - TSMC RUNG RELEASED on the Schedule and Buy Plan: row 2026-10-15 TSM set to BUY 10,010 (23 sh, '
+ 'cap 434.30 off the 14 Oct close of 430.00) after the earnings refresh scored GM 66.4% as a PASS. Two orders tonight: '
  'ASML 4 sh cap 1,666.50 and TSM 23 sh cap 434.30, about 16,690 from free cash 55,050. || PREVIOUS ENTRY: Oct 15, 2026 '
  '- EARNINGS REFRESH: TSMC Q3 2026 scored (reported 15 Oct ~14:00 Taipei, before the US open): record revenue '
  'NT$1,494.24B / US$46.72B, +50.9% YoY, GM 66.4% (65-67% guide; the 15 Oct DECIDE test asked 65%+ - PASSED), OM 58.7% '
@@ -6620,12 +6624,12 @@ POS = {'GOOGL': {'budget': 78000, 'cost': 59475.92, 'shares': 217},
  'META': {'budget': 52000, 'cost': 39239.51, 'shares': 59.5},
  'AAPL': {'budget': 11437.61, 'cost': 11437.61, 'shares': 46},
  'NVDA': {'budget': 95000, 'cost': 79380.28, 'shares': 420},
- 'TSM': {'budget': 74000, 'cost': 54856.42, 'shares': 147.5},
+ 'TSM': {'budget': 74000, 'cost': 64477.71, 'shares': 170.5},
  'AVGO': {'budget': 50000, 'cost': 30125.18, 'shares': 88.5},
  'AMD': {'budget': 24000, 'cost': 13789.22, 'shares': 55},
  'MRVL': {'budget': 21000, 'cost': 20585.11, 'shares': 95.5},
  'ARM': {'budget': None, 'cost': None, 'shares': None},
- 'ASML': {'budget': 41000, 'cost': 16394.06, 'shares': 13},
+ 'ASML': {'budget': 41000, 'cost': 22867.8, 'shares': 17},
  'AMAT': {'budget': 22000, 'cost': 19702.16, 'shares': 57},
  'LRCX': {'budget': 9500, 'cost': 4100.12, 'shares': 22},
  'KLAC': {'budget': 14000, 'cost': 3510.69, 'shares': 18},
@@ -8887,34 +8891,58 @@ TRADES = [{'date': 'Mar 2, 2026',
   'est': True,
   'note': 'Visa 5 at 389.30 (POEMS order 391281, Day limit, filled 3:17:37 am 13 Oct Bangkok). Gross 1,946.5 + '
           'commission 8.56 (0.214%, min 8.56 - ESTIMATED, true up from the contract note) = 1,955.06. Position now 18 '
-          'sh, cost 6,769.05 of 9,000 budget (room 2,230.95).'}]
+          'sh, cost 6,769.05 of 9,000 budget (room 2,230.95).'},
+ {'date': 'Oct 15, 2026',
+  'action': 'BUY',
+  't': 'TSM',
+  'shares': 23,
+  'price': 417.4235,
+  'amount': 9621.29,
+  'est': True,
+  'note': 'TSMC ADR 23 at 417.4235 (POEMS Day limit at the ask, Done before 10:08 pm Bangkok; cap was 434.30, filled '
+          '3.9% under it because the PPI print sold the market off). Gross 9,600.74 + commission 20.55 (0.214%, min '
+          '8.56 - ESTIMATED, true up from the contract note) = 9,621.29. Position now 170.5 sh, cost 64,477.71 of '
+          '74,000 budget (room 9,522.29). Gross-margin test passed the same day (Q3 66.4% vs 65% required).'},
+ {'date': 'Oct 15, 2026',
+  'action': 'BUY',
+  't': 'ASML',
+  'shares': 4,
+  'price': 1614.9799,
+  'amount': 6473.74,
+  'est': True,
+  'note': 'ASML 4 at 1,614.9799 (POEMS Day limit at the ask, Done before 10:08 pm Bangkok; cap was 1,666.50). Gross '
+          '6,459.92 + commission 13.82 (0.214%, min 8.56 - ESTIMATED, true up from the contract note) = 6,473.74. Rung '
+          '1 of the post-results ladder. Position now 17 sh, cost 22,867.80 of 41,000 budget (room 18,132.20: rung 2 '
+          'of 6,606 on the January results, 10,000 deliberately held back).'}]
 
 SELLPLAN = []
 
 CASH = {'currency': 'USD',
- 'amount': 55050.83,
+ 'amount': 38955.8,
  'broker': 'POEMS (Phillip Securities)',
- 'asof': 'Oct 13, 2026 - SGOV PARK FILLED: 794 sh at 100.5299 (POEMS, Done 11:04:13 pm Bangkok) = gross 79,820.74 + '
-         'est. commission 170.82 = 79,991.56. Free cash 135,042.39 - 79,991.56 = 55,050.83. SGOV held as a '
-         'cash-equivalent (see parked), so total liquid = 135,042.39. To be read against the POEMS Live Cash Balance '
-         'after T+1 settlement. || PREVIOUS: Oct 13, 2026 - after the 12 Oct fills (APH, CRDO, V) totalling 12,973.99 '
-         'incl. estimated commission: 148,016.38 - 12,973.99 = 135,042.39. To be read against the POEMS Live Cash '
-         'Balance after settlement. || PREVIOUS: Oct 10, 2026 - POEMS Live Cash Balance 07:53 am Bangkok: USD '
-         '170,344.36, shown BEFORE settlement of the 9 Oct buys. Board cash = 170,344.36 less MRVL 12,712.45 and AMAT '
-         '9,615.53 = 148,016.38 after settlement. Versus the 6 Oct balance of 170,247.90, POEMS is +96.46 higher with '
-         'no trades in between - a further early-October credit (most likely dividends), to itemise from the October '
-         'statement together with the earlier +146.84. Positions reconciled the same morning: 37 lines, cost '
-         '667,992.30, match POEMS to the cent. || PREVIOUS: Oct 6, 2026 - POEMS Live Cash Balance 170,247.90. '
-         'RECONCILED 7 Oct: POEMS statement cash at 30 Sep = 168,539.69; less MU buy 1 Oct 14,703.40, plus ORCL '
-         '10,851.50 and CRWD 5,413.27 sale proceeds = 170,101.06; the remaining +146.84 is early-October credits (most '
-         'likely dividends) to itemise from the October statement. (The earlier +172.61 figure came from a '
-         'board-derived cash that was 25.77 too low.) || PREVIOUS: Oct 6, 2026 - read off the POEMS Live Cash Balance '
-         'screen (09:23 am, before settlement of the 5 Oct sales): USD 170,247.90. Derived from the board: 153,810.52 '
-         '+ 10,851.50 (ORCL) + 5,413.27 (CRWD) = 170,075.29; POEMS is +172.61 higher - most likely dividends/interest '
-         'credited since 2 Oct, to be itemised. || PREVIOUS: Oct 2, 2026 (153862.15 less 51.63 of commission '
-         'under-booked on the five orders of 28 Sep and 1 Oct, found when the POEMS positions screen of 2 Oct was '
-         'reconciled. Positions now match POEMS to the cent on all 38 lines. Cash itself is derived, not yet read off '
-         'a POEMS cash screen)',
+ 'asof': "Oct 15, 2026 - after tonight's two fills (TSM 23 sh 9,621.29, ASML 4 sh 6,473.74, both incl. estimated "
+         'commission) totalling 16,095.03: 55,050.83 - 16,095.03 = 38,955.80. SGOV 79,991.56 still parked, so total '
+         'liquid = 118,947.36. To be read against the POEMS Live Cash Balance after T+1 settlement. || PREVIOUS: Oct '
+         '13, 2026 - SGOV PARK FILLED: 794 sh at 100.5299 (POEMS, Done 11:04:13 pm Bangkok) = gross 79,820.74 + est. '
+         'commission 170.82 = 79,991.56. Free cash 135,042.39 - 79,991.56 = 55,050.83. SGOV held as a cash-equivalent '
+         '(see parked), so total liquid = 135,042.39. To be read against the POEMS Live Cash Balance after T+1 '
+         'settlement. || PREVIOUS: Oct 13, 2026 - after the 12 Oct fills (APH, CRDO, V) totalling 12,973.99 incl. '
+         'estimated commission: 148,016.38 - 12,973.99 = 135,042.39. To be read against the POEMS Live Cash Balance '
+         'after settlement. || PREVIOUS: Oct 10, 2026 - POEMS Live Cash Balance 07:53 am Bangkok: USD 170,344.36, '
+         'shown BEFORE settlement of the 9 Oct buys. Board cash = 170,344.36 less MRVL 12,712.45 and AMAT 9,615.53 = '
+         '148,016.38 after settlement. Versus the 6 Oct balance of 170,247.90, POEMS is +96.46 higher with no trades '
+         'in between - a further early-October credit (most likely dividends), to itemise from the October statement '
+         'together with the earlier +146.84. Positions reconciled the same morning: 37 lines, cost 667,992.30, match '
+         'POEMS to the cent. || PREVIOUS: Oct 6, 2026 - POEMS Live Cash Balance 170,247.90. RECONCILED 7 Oct: POEMS '
+         'statement cash at 30 Sep = 168,539.69; less MU buy 1 Oct 14,703.40, plus ORCL 10,851.50 and CRWD 5,413.27 '
+         'sale proceeds = 170,101.06; the remaining +146.84 is early-October credits (most likely dividends) to '
+         'itemise from the October statement. (The earlier +172.61 figure came from a board-derived cash that was '
+         '25.77 too low.) || PREVIOUS: Oct 6, 2026 - read off the POEMS Live Cash Balance screen (09:23 am, before '
+         'settlement of the 5 Oct sales): USD 170,247.90. Derived from the board: 153,810.52 + 10,851.50 (ORCL) + '
+         '5,413.27 (CRWD) = 170,075.29; POEMS is +172.61 higher - most likely dividends/interest credited since 2 Oct, '
+         'to be itemised. || PREVIOUS: Oct 2, 2026 (153862.15 less 51.63 of commission under-booked on the five orders '
+         'of 28 Sep and 1 Oct, found when the POEMS positions screen of 2 Oct was reconciled. Positions now match '
+         'POEMS to the cent on all 38 lines. Cash itself is derived, not yet read off a POEMS cash screen)',
  'parked': {'t': 'SGOV',
             'name': 'iShares 0-3 Month Treasury Bond ETF',
             'shares': 794,
@@ -11049,7 +11077,9 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
            {'d': '2026-10-15',
             't': 'ASML',
             'k': 'earnings',
-            'w': 'TEST PASSED 15 Oct (ASML 6-K, 14 Oct): Q3 sales 11,662m euro (inside 11.0-12.0bn), gross margin '
+            'w': 'FILLED 15 Oct: 4 sh at 1,614.9799 = 6,473.74 incl. est. commission (cap was 1,666.50). Position 17 '
+                 'sh, cost 22,867.80, room 18,132.20 - rung 2 (6,606) waits for the January results; 10,000 held back. '
+                 '| TEST PASSED 15 Oct (ASML 6-K, 14 Oct): Q3 sales 11,662m euro (inside 11.0-12.0bn), gross margin '
                  '57.5% (above the 55-57% band), 2026 raised to 44-45bn, and no cut to 2027 - ASML says planned '
                  '2027-28 supply will not fully meet demand and is looking to lift 2028 capacity beyond +30%. Net '
                  'bookings are not in the release, so that leg could not be checked; sales, margin and outlook carry '
@@ -11058,7 +11088,7 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                  'CPI risk-off day); about 6,680 incl. commission; Day order, do not chase - if unfilled, reset to the '
                  'next close and re-place within +1%. || Q3 2026 results - rung 1 of 2',
             'a': 'BUY',
-            'amt': 6680.0,
+            'amt': 6473.74,
             'cond': '⚠️ DATE IS THIRD-PARTY SOURCED, NOT CONFIRMED BY ASML. MarketScreener and stockanalysis.com both '
                     "give Oct 14 for the Q3 print; ASML's own calendar is a JavaScript widget that would not yield a "
                     'date. Q3 2025 was Oct 15, 2025, so the pattern fits. CONFIRM BEFORE ACTING. || This rung replaces '
@@ -11067,21 +11097,23 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     '11.0-12.0bn euro range AND gross margin inside 55-57%, AND net bookings do not fall against Q2. '
                     'LEAVE IT if sales miss the low end or bookings drop - ASML grows revenue 9.8% while trading at '
                     '30x forward earnings, so the multiple depends entirely on the order book.',
-            'c': 'planned'},
+            'c': 'done'},
            {'d': '2026-10-15',
             't': 'TSM',
             'k': 'earnings',
-            'w': 'TEST PASSED 15 Oct (TSMC 6-K): Q3 gross margin 66.4% (test: 65% or above), operating margin 58.7%, '
-                 'net margin 51.1%; revenue US$46.72bn +41.2% YoY; net income +68.7% YoY; 2nm already 8% of wafer '
-                 'revenue, 3nm 33%. Q4 guided US$52.3-54.3bn at 65-67% gross margin. ORDER 15 Oct night: 23 sh, LIMIT '
-                 'at the ask, cap 434.30 (14 Oct close 430.00 +1%); about 10,010 incl. commission = the remaining '
-                 'room. Day order, do not chase; if unfilled, re-place next session within +1% of the latest close. || '
-                 'Q3 2026 results',
+            'w': 'FILLED 15 Oct: 23 sh at 417.4235 = 9,621.29 incl. est. commission (cap was 434.30; the hot PPI print '
+                 'took the ADR down, so the fill came 2.9% under the 14 Oct close). Position 170.5 sh, cost 64,477.71, '
+                 'room 9,522.29. | TEST PASSED 15 Oct (TSMC 6-K): Q3 gross margin 66.4% (test: 65% or above), '
+                 'operating margin 58.7%, net margin 51.1%; revenue US$46.72bn +41.2% YoY; net income +68.7% YoY; 2nm '
+                 'already 8% of wafer revenue, 3nm 33%. Q4 guided US$52.3-54.3bn at 65-67% gross margin. ORDER 15 Oct '
+                 'night: 23 sh, LIMIT at the ask, cap 434.30 (14 Oct close 430.00 +1%); about 10,010 incl. commission '
+                 '= the remaining room. Day order, do not chase; if unfilled, re-place next session within +1% of the '
+                 'latest close. || Q3 2026 results',
             'a': 'BUY',
-            'amt': 10010.0,
+            'amt': 9621.29,
             'cond': 'Deploy the balance only if gross margin lands at 65% or above. Q2 was 67.7%; Q3 guided 65-67%; '
                     'the 2nm ramp costs 3-4pp and overseas fabs 2-3pp.',
-            'c': 'planned'},
+            'c': 'done'},
            {'d': '2026-10-28',
             't': 'MSFT',
             'k': 'earnings',
@@ -15533,8 +15565,9 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'k': 'limit',
             'w': 'Any close at or below $380',
             'a': 'LIMIT',
-            'amt': 10078.47,
-            'cond': 'Overrides the October date trigger - deploy immediately.',
+            'amt': 9522.29,
+            'cond': 'UPDATED 15 Oct: the October rung is filled (23 sh at 417.42); this standing order now covers only '
+                    'the remaining budget room of 9,522.29. Overrides any date trigger - deploy immediately.',
             'c': 'standing'},
            {'d': '',
             'dl': 'Standing - checked daily by the price alert',
@@ -15588,9 +15621,12 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'a': 'BUY',
             'amt': 8277.68,
             'c': 'planned',
-            'w': 'ORDER RECEIVED 13 Oct 23:00 Bangkok - 20 sh LIMIT 413, but entered as a DAY order (not GTD): if '
-                 'unfilled tonight, re-enter nightly or set validity GTD 19 Oct. Tranche 2 - healthcare, CARRIED from '
-                 '12 Oct: LIMIT 20 shares at $413, GTD to 19 Oct (= $8,277.68 incl. commission)',
+            'w': 'NOT ON THE 15 OCT ORDER SCREEN - the 13/14 Oct Day orders at 413 appear to have expired unfilled and '
+                 'no ISRG order was open tonight. Outcome to confirm with Salee; results about 20-21 Oct, so do not '
+                 'leave a new order open into the print. | ORDER RECEIVED 13 Oct 23:00 Bangkok - 20 sh LIMIT 413, but '
+                 'entered as a DAY order (not GTD): if unfilled tonight, re-enter nightly or set validity GTD 19 Oct. '
+                 'Tranche 2 - healthcare, CARRIED from 12 Oct: LIMIT 20 shares at $413, GTD to 19 Oct (= $8,277.68 '
+                 'incl. commission)',
             'cond': '12 Oct Day order expired (ISRG traded ~427). Set Validity GTD with end date 19 Oct so it waits '
                     'each session; results about 20-21 Oct, so do not leave an order open into the print. Do not raise '
                     'the limit.'}]}
@@ -16904,9 +16940,9 @@ BUYPLAN = {'title': 'Buying plan 12-30 Oct 2026',
            'amt': 6680.0,
            'lim': 1650.0,
            'cap': 1666.5,
-           'tac': 'PASSED. 4 shares, Day LIMIT at the ask, cap $1,666.50 (14 Oct close $1,650 +1%). If the ask is '
-                  'above the cap, leave the order at the cap; if unfilled, re-place next session within 1% of the '
-                  'latest close.',
+           'tac': 'FILLED 15 Oct: 4 sh at 1,614.9799 (Day limit at the ask; cap 1,666.50 never tested). PASSED. 4 '
+                  'shares, Day LIMIT at the ask, cap $1,666.50 (14 Oct close $1,650 +1%). If the ask is above the cap, '
+                  'leave the order at the cap; if unfilled, re-place next session within 1% of the latest close.',
            'cond': 'Test passed 15 Oct: sales 11.66bn euro, GM 57.5%, 2027-28 supply short of demand, 2026 raised to '
                    '44-45bn.',
            'sh': 4},
@@ -16917,8 +16953,9 @@ BUYPLAN = {'title': 'Buying plan 12-30 Oct 2026',
            'amt': 10010.0,
            'lim': 430.0,
            'cap': 434.3,
-           'tac': 'PASSED. 23 shares, Day LIMIT at the ask, cap $434.30 (14 Oct close +1%). If the ADR opens above the '
-                  'cap, leave the order at the cap; if unfilled, re-place next session within 1% of the latest close.',
+           'tac': 'FILLED 15 Oct: 23 sh at 417.4235 (Day limit at the ask; cap 434.30 never tested). PASSED. 23 '
+                  'shares, Day LIMIT at the ask, cap $434.30 (14 Oct close +1%). If the ADR opens above the cap, leave '
+                  'the order at the cap; if unfilled, re-place next session within 1% of the latest close.',
            'cond': 'Test passed 15 Oct: gross margin 66.4% vs 65% required; Q4 guided 65-67%.',
            'sh': 23},
           {'bkk': 'Thu 29 Oct',
