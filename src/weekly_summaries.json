@@ -4262,6 +4262,10 @@
      "text": "13 Oct detail (Intelligent Investor slide #81): CXMT targets DDR5 RDIMM server memory on a 4F2 cell (smaller than the industry's 6F2, so potentially cheaper bits) by end-2026; CXMT DRAM share ~10% in Q2 2026. Reaction: SK Hynix -10.1%, Samsung -7.4%, Micron -3.9%, SOX -2.7%. Korea fell more because it carries more commodity DRAM; Micron is the most HBM-weighted of the three."
     },
     {
+     "s": "+",
+     "text": "15 Oct - Citi rebuttal (via ลงทุนอะไรดี): the CXMT 4F2 scare is overdone. 4F2 is not new - Samsung and SK hynix have had it for years and are keeping it for 1d-nm/0a-nm nodes with EUV; CXMT is on 1y-nm, about four generations behind the big three, with mass production not expected before 2028 and costs possibly 10-20% higher from yield and limited EUV access. Supports the segment view: server-DDR5 threat medium and later than feared; HBM threat low."
+    },
+    {
      "s": "0",
      "text": "Position facts at 12 Oct close: price $989.04, board fair value $1,486, upside +50.2%, quality 10/10, priority 50.2 (rank #2 of 63), budget still open $13,715."
     },
