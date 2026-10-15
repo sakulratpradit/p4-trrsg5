@@ -3,9 +3,12 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Oct 15, 2026 - TWO FILLS BOOKED from the POEMS order screen (22:08 Bangkok): TSM 23 sh at 417.4235 = 9,621.29 and '
- 'ASML 4 sh at 1,614.9799 = 6,473.74, both incl. estimated commission (true up from the contract notes). TSM now 170.5 '
- 'sh / cost 64,477.71 / room 9,522.29; ASML 17 sh / cost 22,867.80 / room 18,132.20. Free cash 38,955.80 (+ SGOV '
+ASOF = ('Oct 15, 2026 - META RESULTS DATE CONFIRMED by Meta IR: Wed 21 Oct after the close (not 29 Oct). The $12,760.48 META '
+ 'decision moves from 30 Oct to Thu 22 Oct night Bangkok (23 Oct Thai holiday). AAPL watch moved to 2 Nov (Firstrade '
+ 'calendar, estimated). Source: Firstrade Q3 earnings calendar slide checked against Meta press release. || PREVIOUS '
+ 'ENTRY: Oct 15, 2026 - TWO FILLS BOOKED from the POEMS order screen (22:08 Bangkok): TSM 23 sh at 417.4235 = 9,621.29 '
+ 'and ASML 4 sh at 1,614.9799 = 6,473.74, both incl. estimated commission (true up from the contract notes). TSM now '
+ '170.5 sh / cost 64,477.71 / room 9,522.29; ASML 17 sh / cost 22,867.80 / room 18,132.20. Free cash 38,955.80 (+ SGOV '
  "79,991.56 parked). ISRG: no order on tonight's screen - outcome of the 13/14 Oct Day limits to confirm. || PREVIOUS "
  'ENTRY: Oct 15, 2026 - TSMC RUNG RELEASED on the Schedule and Buy Plan: row 2026-10-15 TSM set to BUY 10,010 (23 sh, '
  'cap 434.30 off the 14 Oct close of 430.00) after the earnings refresh scored GM 66.4% as a PASS. Two orders tonight: '
@@ -11156,13 +11159,15 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'the thesis is intact and Tranche 2 proceeds normally. ⚠️ The Q3 date is ESTIMATED from prior '
                     'years and must be confirmed.',
             'c': 'planned'},
-           {'d': '2026-10-29',
+           {'d': '2026-11-02',
             'dl': 'Apple FQ4 2026 print - late October',
             't': 'AAPL',
             'k': 'catalyst',
             'a': 'WATCH',
             'amt': None,
-            'w': 'The first December-quarter guide, and the first read on iPhone Duo - do not pay up into it',
+            'w': 'Firstrade calendar (15 Oct) lists Apple at 2 Nov after the close, not 29 Oct - Apple has not '
+                 'announced; treat as estimated. | The first December-quarter guide, and the first read on iPhone Duo '
+                 '- do not pay up into it',
             'cond': '⚠️ AAPL closed 332.27 on 11 Sep, ABOVE the 44-analyst average target of 324.40 to 325.66, at 36.1 '
                     'times forward earnings. CFO Kevan Parekh guided September revenue growth of only 9-11% and gross '
                     'margin DOWN to 47-48% from 50.1%, and that 50.1% itself carried about 2 points of tariff-refund '
@@ -11171,7 +11176,7 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'with any Duo demand signal in the guide. THE TEST TO ADD: a December guide that is strong on '
                     'iPhone AND gross margin holding above 47% WITHOUT a tariff-refund benefit. Budget stays 24,000, '
                     '46 shares held.',
-            'c': 'planned'},
+            'c': 'estimated'},
            {'d': '2026-10-30',
             't': 'CAT',
             'k': 'buy',
@@ -11184,10 +11189,13 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'transportation business is immaterial to group earnings or is not growing with data-centre demand '
                     '- in that case cap CAT at 7,500 total and release the remaining 7,500 to the power group.',
             'c': 'open'},
-           {'d': '2026-10-30',
+           {'d': '2026-10-22',
             't': 'META',
             'k': 'earnings',
-            'w': 'ROLLED IN 10 Oct: rung 1 ($705 limit, 9 Oct) expired unfilled, so this decision now covers '
+            'w': 'DATE CONFIRMED BY META 15 Oct: Q3 results WEDNESDAY 21 OCT after the US close (call 4:30 pm ET = '
+                 '03:30 Thu 22 Oct Bangkok), a week EARLIER than our 29 Oct estimate. Decision moves 30 Oct -> 22 Oct: '
+                 'act Thursday 22 Oct night from 20:30 Bangkok (23 Oct is a Thai holiday, so do not slip to Friday). | '
+                 'ROLLED IN 10 Oct: rung 1 ($705 limit, 9 Oct) expired unfilled, so this decision now covers '
                  '$12,760.48 (both rungs). | Q3 2026 results (29 Oct, after the close) - META rung 2 of 2: DECIDE '
                  '$6,380.24 (plus rung 1 if its $705 limit did not fill). MOVED 28 Oct -> 30 Oct on 3 Oct so the '
                  'decision follows the results',
@@ -11196,7 +11204,7 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'cond': 'DEPLOY $6,380.24 ONLY IF revenue growth holds at or above 25% AND net income recovers clear of '
                     'the Q3 2025 weakness. LEAVE IT if capex rises again without revenue acceleration, or margins '
                     'compress further. Rungs 1 + 2 = $12,760.48, exactly the budget left.',
-            'c': 'estimated'},
+            'c': 'confirmed'},
            {'d': '2026-11-01',
             'dl': "⚠️⚠️ CLOCK CHANGE 1 NOVEMBER - Salee's trading window moves one hour LATER. Correct my own standing "
                   'note.',
@@ -16978,15 +16986,16 @@ BUYPLAN = {'title': 'Buying plan 12-30 Oct 2026',
            'cap': None,
            'tac': 'Results about 28 Oct. Day LIMIT at the 29 Oct close, cap +1%.',
            'cond': 'Rung 2 of 3. Hold back if the power-generation business is not growing with data-centre demand.'},
-          {'bkk': 'Fri 30 Oct',
-           'us': 'Fri 30 Oct',
+          {'bkk': 'Thu 22 Oct',
+           'us': 'Thu 22 Oct',
            't': 'META',
            'a': 'DECIDE',
            'amt': 12760.48,
            'lim': None,
            'cap': None,
-           'tac': 'Results 29 Oct after the US close. Act the next session: Day LIMIT at the 29 Oct close, cap +1%. Do '
-                  'not buy in the first 30 minutes after the open (results days swing hardest).',
+           'tac': 'DATE CONFIRMED: results Wed 21 Oct after the US close. Act Thu 22 Oct night (NOT Fri 23 Oct - Thai '
+                  'holiday): Day LIMIT at the 21 Oct close, cap +1%. Do not buy in the first 30 minutes after the open '
+                  '(results days swing hardest).',
            'cond': 'Buy only if revenue growth is 25% or more AND profit recovers. Cut to half if AI spending jumps '
                    'while ad growth slows below 15%.'},
           {'bkk': 'Wed 28 Oct',
@@ -16999,8 +17008,8 @@ BUYPLAN = {'title': 'Buying plan 12-30 Oct 2026',
            'tac': 'No order - budget is full.',
            'cond': 'Disclosure test: does Vertiv publish orders, backlog and book-to-bill again? Third quarter missing '
                    'would be a pattern.'},
-          {'bkk': 'Thu 29 Oct',
-           'us': 'Thu 29 Oct',
+          {'bkk': 'Mon 2 Nov (est.)',
+           'us': '2 Nov AMC',
            't': 'AAPL',
            'a': 'WATCH',
            'amt': 0,
