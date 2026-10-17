@@ -608,6 +608,10 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
 <div class="note" id="bubnote">Bottom-right = fat margins at a reasonable multiple. Dashed lines = median of shown names. Unlabeled small bubbles: hover for details.</div>
 <div class="bub-card" id="bubwrap"><svg id="bubble" viewBox="0 0 940 560" role="img" aria-label="Bubble chart of gross margin versus P/E, bubble size is position market value"></svg><div class="bub-tip" id="bubtip"></div></div>
 
+<h2 id="peglens">PEG lens <span class="n">x = EPS growth expected over the next 12 months (consensus next-12-month EPS vs trailing, from the board's P/E and forward P/E) · y = forward P/E · filled bubble = owned (area = position value) · hollow ring = watchlist · colour = group</span></h2>
+<div class="note" id="pegnote">The price you pay for growth. Bottom-right = cheap for its growth; top-left = paying up for a slow grower. Lines at 25x and 20% follow the common convention; the dotted line is the no-risk P/E (1 ÷ 10-year yield) — anything above it has to earn its premium with growth. Hover any bubble for its PEG.</div>
+<div class="bub-card" id="pegwrap"><svg id="pegsvg" viewBox="0 0 940 560" role="img" aria-label="Scatter of expected EPS growth versus forward P/E, coloured by group"></svg><div class="bub-tip" id="pegtip"></div><div class="glegend" id="peglegend" style="margin-top:6px"></div></div>
+
 <h2>Metric matrix <span class="n">your notebook, digitized — 30 metrics × <span id="mcount"></span> stocks</span></h2>
 <div class="legend">
   <span><span class="dot" style="background:var(--good)"></span>▲ favorable</span>
@@ -933,6 +937,7 @@ function renderBubble(){
       skipped.length ? skipped.join(", ")+" — no earnings yet, nothing to plot on a P/E axis"
                      : "Nothing to plot for this selection"}</text>`;
     const t0=document.getElementById("bubtip"); if(t0) t0.style.display="none";
+    renderPEG();
     return;
   }
   const W=940, H=560, m={t:30, r:30, b:56, l:64};
@@ -984,6 +989,67 @@ function renderBubble(){
     c.addEventListener("mouseleave",()=>{ tip.style.display="none"; });
   });
   svg.addEventListener("click",e=>{ if(!e.target.classList.contains("bub")) tip.style.display="none"; });
+  renderPEG();
+}
+
+function renderPEG(){
+  const svg = document.getElementById("pegsvg"); if(!svg) return;
+  const tip=document.getElementById("pegtip"), wrap=document.getElementById("pegwrap"), note=document.getElementById("pegnote"), leg=document.getElementById("peglegend");
+  /* growth = consensus next-12-month EPS / trailing EPS - 1, derived from the two P/Es the board already carries */
+  const V = vis().filter(s=>s.fpe!=null && s.pe!=null && s.pe>0 && s.fpe>0).map(s=>({s, gr:(s.pe/s.fpe-1)*100, held:POS[s.t]&&POS[s.t].shares!=null}));
+  const skipped = vis().filter(s=>!(s.fpe!=null && s.pe!=null && s.pe>0 && s.fpe>0)).map(s=>s.t);
+  const ust = (typeof RISK!=="undefined" && RISK.ust10) ? RISK.ust10 : null;
+  const zeroPE = ust ? 100/ust : null;
+  note.innerHTML = "The price you pay for growth. Bottom-right = cheap for its growth; top-left = paying up for a slow grower. Lines at 25x and 20% follow the common convention"
+    + (zeroPE?`; the dotted line at <b>${zeroPE.toFixed(1)}x</b> is the no-risk P/E (1 ÷ ${ust}% 10-year) — above it, the premium has to be earned by growth`:"")
+    + ". Hover any bubble for its PEG." + (skipped.length?` <b>Not plotted (no trailing or forward earnings): ${skipped.join(", ")}.</b>`:"");
+  if(!V.length){ svg.innerHTML=`<text class="axis-cap" x="470" y="250" text-anchor="middle">Nothing to plot for this selection</text>`; tip.style.display="none"; leg.innerHTML=""; return; }
+  const W=940, H=560, m={t:30, r:30, b:56, l:64}, iw=W-m.l-m.r, ih=H-m.t-m.b;
+  const XMIN=-20, XMAX=160;                       /* growth axis, clamped; beyond 160% drawn at the edge with a + */
+  const ys=V.map(x=>x.s.fpe);
+  const ymin=Math.max(4,Math.floor(Math.min(...ys)*0.8)), ymax=Math.ceil(Math.max(...ys)*1.25);
+  const cl=v=>Math.max(XMIN,Math.min(XMAX,v));
+  const X=v=>m.l+(cl(v)-XMIN)/(XMAX-XMIN)*iw;
+  const LY=v=>m.t+ih-(Math.log(v)-Math.log(ymin))/(Math.log(ymax)-Math.log(ymin))*ih;
+  const sizes=V.map(x=>mv(x.s)??0), maxS=Math.max(...sizes,1), R=v=>Math.max(7, Math.sqrt(v/maxS)*40);
+  let g="";
+  for(let gx=XMIN; gx<=XMAX; gx+=20){ g+=`<line x1="${X(gx)}" y1="${m.t}" x2="${X(gx)}" y2="${m.t+ih}" stroke="var(--grid)"/><text class="axis-t" x="${X(gx)}" y="${m.t+ih+20}" text-anchor="middle">${gx===XMAX?gx+"%+":gx+"%"}</text>`; }
+  [5,10,15,20,25,30,40,50,80,130,200].filter(v=>v>=ymin&&v<=ymax).forEach(v=>{ g+=`<line x1="${m.l}" y1="${LY(v)}" x2="${m.l+iw}" y2="${LY(v)}" stroke="var(--grid)"/><text class="axis-t" x="${m.l-8}" y="${LY(v)+5}" text-anchor="end">${v}x</text>`; });
+  g+=`<line x1="${m.l}" y1="${m.t+ih}" x2="${m.l+iw}" y2="${m.t+ih}" stroke="var(--axis)" stroke-width="1.5"/><line x1="${m.l}" y1="${m.t}" x2="${m.l}" y2="${m.t+ih}" stroke="var(--axis)" stroke-width="1.5"/>`;
+  /* convention lines: 25x and 20%; no-risk P/E dotted */
+  if(25>=ymin&&25<=ymax) g+=`<line x1="${m.l}" y1="${LY(25)}" x2="${m.l+iw}" y2="${LY(25)}" stroke="var(--axis)" stroke-dasharray="4 5"/>`;
+  g+=`<line x1="${X(20)}" y1="${m.t}" x2="${X(20)}" y2="${m.t+ih}" stroke="var(--axis)" stroke-dasharray="4 5"/>`;
+  if(zeroPE&&zeroPE>=ymin&&zeroPE<=ymax) g+=`<line x1="${m.l}" y1="${LY(zeroPE)}" x2="${m.l+iw}" y2="${LY(zeroPE)}" stroke="var(--warn)" stroke-dasharray="2 4"/><text class="quad" x="${m.l+iw-8}" y="${LY(zeroPE)-4}" text-anchor="end" fill="var(--warn)">no-risk P/E ${zeroPE.toFixed(1)}x</text>`;
+  g+=`<text class="quad" x="${m.l+8}" y="${m.t+16}">expensive · slow — paying for durability</text>`;
+  g+=`<text class="quad" x="${m.l+iw-8}" y="${m.t+16}" text-anchor="end">expensive · fast — paying for growth</text>`;
+  g+=`<text class="quad" x="${m.l+8}" y="${m.t+ih-10}">cheap · slow</text>`;
+  g+=`<text class="quad" x="${m.l+iw-8}" y="${m.t+ih-10}" text-anchor="end">cheap · fast ✓</text>`;
+  g+=`<text class="axis-cap" x="${m.l+iw/2}" y="${H-12}" text-anchor="middle">Expected EPS growth, next 12 months (%)</text>`;
+  g+=`<text class="axis-cap" x="18" y="${m.t+ih/2}" text-anchor="middle" transform="rotate(-90 18 ${m.t+ih/2})">Forward P/E (log scale)</text>`;
+  const order=[...V].sort((a,b)=>(mv(b.s)??0)-(mv(a.s)??0));
+  const labelSet = new Set(order.filter(x=>x.held).slice(0,22).map(x=>x.s.t));
+  order.forEach(x=>{
+    const s=x.s, r=x.held?R(mv(s)??0):7, cx=X(x.gr), cy=LY(s.fpe), col=`var(--s${slot(s)})`;
+    g+= x.held
+      ? `<circle class="pb" data-t="${s.t}" cx="${cx}" cy="${cy}" r="${r}" fill="${col}" fill-opacity="0.55" stroke="var(--surface-1)" stroke-width="2"/>`
+      : `<circle class="pb" data-t="${s.t}" cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${col}" stroke-width="2.5"/>`;
+    if(x.gr>XMAX) g+=`<text class="axis-t" x="${cx+r+2}" y="${cy+4}" fill="${col}">+</text>`;
+    if(labelSet.has(s.t) || !x.held){ const ly=cy-r-5; g+=`<text class="blab" x="${cx}" y="${ly<m.t+12?cy+4:ly}" text-anchor="middle" pointer-events="none" ${x.held?"":'style="font-weight:500;opacity:.8"'}>${s.t}</text>`; }
+  });
+  svg.innerHTML=g;
+  /* group legend with counts for the plotted set */
+  const cnt={}; V.forEach(x=>{ cnt[x.s.g]=(cnt[x.s.g]||0)+1; });
+  leg.innerHTML = GROUPS.map((n,i)=>cnt[i]?`<div class="gl"><span class="dot" style="background:var(--s${i+1})"></span><span>${n}</span><span>${cnt[i]}</span><span></span></div>`:"").join("");
+  svg.querySelectorAll(".pb").forEach(c=>{
+    ["mousemove","click"].forEach(ev=>c.addEventListener(ev,e=>{
+      const s=STOCKS.find(q=>q.t===c.dataset.t), x=V.find(q=>q.s.t===s.t), peg=x.gr>0?s.fpe/x.gr:null;
+      const wr=wrap.getBoundingClientRect();
+      tip.style.display="block"; tip.style.left=Math.min(e.clientX-wr.left+14, wr.width-185)+"px"; tip.style.top=(e.clientY-wr.top+10)+"px";
+      tip.innerHTML=`<b>${s.t}</b> · ${s.name}<br><span style="color:var(--s${slot(s)})">${GROUPS[s.g]}</span><br>Fwd P/E <b>${fmt(s.fpe,1)}x</b> · trailing <b>${fmt(s.pe,1)}x</b><br>EPS growth next 12m <b>${x.gr>=0?"+":""}${fmt(x.gr,0)}%</b><br>PEG <b>${peg!=null?fmt(peg,2):"n/m"}</b>${x.held?`<br>Position <b>${money(mv(s))}</b>`:"<br><i>watchlist</i>"}`;
+    }));
+    c.addEventListener("mouseleave",()=>{ tip.style.display="none"; });
+  });
+  svg.addEventListener("click",e=>{ if(!e.target.classList.contains("pb")) tip.style.display="none"; });
 }
 
 /* ============ portfolio wheel (whole book, always) ============
@@ -2859,7 +2925,7 @@ function renderMap(){
    ["After October?",go("schedule",null,"Schedule")],["Sold, and P&amp;L?",go("selling",null,"Selling")],["A slide I sent?",'<a href="slides.html?v=20261017a">Slides</a>']
   ];
   var rooms=[
-   {p:"main",n:"Overview",s:["Ticker tape and headline tiles (positions, value, cash + SGOV park)",go("main","approvals","Approvals &amp; standing decisions"),go("main","ladders","Price ladders &amp; stops"),"Fair-value ladder, Valuation map","Metric matrix (rows 27-29 = Quality, Priority, Rank)","Position cards"]},
+   {p:"main",n:"Overview",s:["Ticker tape and headline tiles (positions, value, cash + SGOV park)",go("main","approvals","Approvals &amp; standing decisions"),go("main","ladders","Price ladders &amp; stops"),go("main","peglens","Fair-value ladder, Valuation map, PEG lens"),"Metric matrix (rows 27-29 = Quality, Priority, Rank)","Position cards"]},
    {p:"wheel",n:"Wheel",s:["Plan against reality","Portfolio wheel","Investment by group","Allocated budget by stock"]},
    {p:"groups",n:"Portfolio",s:["Totals &amp; returns","Win / loss record","Quality scorecard",go("groups","risk","Risk sensitivity"),"Value history","P&amp;L by group and by stock"]},
    {p:"trading",n:"Trading",s:["Cash balance - free, parked in SGOV, total; reconciliation entries","Daily trading activity","Monthly summary"]},
