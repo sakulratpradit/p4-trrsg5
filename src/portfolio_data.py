@@ -3,30 +3,32 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Oct 18, 2026 - BUY/SELL PLAN 19-30 OCT written. Two standing rules fired on the Fri 16 Oct close and were not '
- 'flagged by the price refresh: NVDA rung 1 ($7,000, close $214.13 at or below $215) -> BUY 32 sh Mon 19 Oct, limit '
- '$214.13, cap $216.27; CRWD sell-stop (close $227.39 below $243) -> SELL 20 sh Mon 19 Oct, floor $225.12, est. net '
- '$4,538.07. ISRG: the 13 Oct $413 GTD order is cancelled (not on the 15 Oct screen); decide after the Tue 20 Oct '
- 'results (proposed test pending Salee). META decide Thu 22 Oct (up to $12,760.48). No SGOV sale needed: free cash '
- '$38,963.81 covers NVDA + META. || PREVIOUS ENTRY: Oct 17, 2026 (run 00:30 UTC) - DAILY PRICE REFRESH: 63 of 63 '
- "closes updated to the Fri 2026-10-16 close (stockanalysis.com quote pages stamped 'At close: Oct 16, 2026, 4:00 PM "
- "EDT', validated against history tables; every number from a tool call this session). Third straight risk-off day, "
- 'the broadest yet: 14 moves past the 6% gate, each confirmed via a second independent source - RKLB -7.98 (digrin '
- '50.84), PANW -7.63 (fool.com quote widget 342.00, day range identical), STX -7.50 (financialcontent.com 639.01 at '
- '4:00 PM EDT Oct 16), PLTR -7.22 (digrin), DDOG -7.19 (digrin), COHR -7.06 (digrin), FTNT -7.03 (Google Finance beta '
- "'Closed: Oct 16' 169.13), CRWD -7.02 (digrin), ARM -6.94 (digrin), SNDK -6.85 (digrin), TSEM -6.78 (Google Finance "
- "'Closed: Oct 16' 195.58), CIEN -6.67 (Google Finance 'Chiusura: 16 ott' 332.73), BE -6.34 (digrin), NET -6.33 "
- '(benzinga Close 296.16/-6.37% dated Oct 16 6:14 PM EDT; quote-page closing print 296.30 kept). ETN quote page was '
- 'STALE (stamped Oct 15) - history-table fallback per resolution rule step 4: close 391.25 (-2.79%). MPWR, SE and STRL '
- 'history pages lagged (no Oct 16 row); their quote pages passed both the stamp and prev-close tests. LHX +3.33 the '
- 'largest gainer; AAPL +0.43, GE +0.59, V +0.72 the only other greens - V closes above its stored range again - hi52 '
- '399.75 -> 402.61 and ath -> 402.61 (max(ath, close) precedent), a new all-time high. CIEN hi52/lo52 remain None per '
- 'precedent. SPY 763.25 (2026-10-16, -1.11%) written to BENCH; spyHigh stays 779.09 of 2026-10-06 (SPY 2.03% below the '
- 'high - the -15% crash-reserve trigger NOT tripped). SPY 763.25 appended to the daily risk series; UST10 SKIPPED for '
- "2026-10-16 - ycharts still shows Oct 15 (5.10, next release Oct 16 pending) and the mortgagenewsdaily 10-day table's "
- 'newest Close row is also Oct 15 (5.067); its top-of-page 5.100 carries no date stamp, so nothing met the provenance '
- "bar. HISTORY row appended for 2026-10-16; the 2026-10-15 row's sha set to 3ae567d (its push commit). Prices only; "
- 'fundamentals, POS, TRADES, GROUPS untouched.')
+ASOF = ('Oct 18, 2026 - ISRG TEST APPROVED by Salee: buy the $8,277.68 rung on Wed 21 Oct (Bangkok night) only if worldwide '
+ 'da Vinci procedure growth is at or above 15% and full-year procedure-growth guidance is not lowered; otherwise hold '
+ 'and revisit 10 Dec. Results Tue 20 Oct. || PREVIOUS ENTRY: Oct 18, 2026 - BUY/SELL PLAN 19-30 OCT written. Two '
+ 'standing rules fired on the Fri 16 Oct close and were not flagged by the price refresh: NVDA rung 1 ($7,000, close '
+ '$214.13 at or below $215) -> BUY 32 sh Mon 19 Oct, limit $214.13, cap $216.27; CRWD sell-stop (close $227.39 below '
+ '$243) -> SELL 20 sh Mon 19 Oct, floor $225.12, est. net $4,538.07. ISRG: the 13 Oct $413 GTD order is cancelled (not '
+ 'on the 15 Oct screen); decide after the Tue 20 Oct results (proposed test pending Salee). META decide Thu 22 Oct (up '
+ 'to $12,760.48). No SGOV sale needed: free cash $38,963.81 covers NVDA + META. || PREVIOUS ENTRY: Oct 17, 2026 (run '
+ '00:30 UTC) - DAILY PRICE REFRESH: 63 of 63 closes updated to the Fri 2026-10-16 close (stockanalysis.com quote pages '
+ "stamped 'At close: Oct 16, 2026, 4:00 PM EDT', validated against history tables; every number from a tool call this "
+ 'session). Third straight risk-off day, the broadest yet: 14 moves past the 6% gate, each confirmed via a second '
+ 'independent source - RKLB -7.98 (digrin 50.84), PANW -7.63 (fool.com quote widget 342.00, day range identical), STX '
+ '-7.50 (financialcontent.com 639.01 at 4:00 PM EDT Oct 16), PLTR -7.22 (digrin), DDOG -7.19 (digrin), COHR -7.06 '
+ "(digrin), FTNT -7.03 (Google Finance beta 'Closed: Oct 16' 169.13), CRWD -7.02 (digrin), ARM -6.94 (digrin), SNDK "
+ "-6.85 (digrin), TSEM -6.78 (Google Finance 'Closed: Oct 16' 195.58), CIEN -6.67 (Google Finance 'Chiusura: 16 ott' "
+ '332.73), BE -6.34 (digrin), NET -6.33 (benzinga Close 296.16/-6.37% dated Oct 16 6:14 PM EDT; quote-page closing '
+ 'print 296.30 kept). ETN quote page was STALE (stamped Oct 15) - history-table fallback per resolution rule step 4: '
+ 'close 391.25 (-2.79%). MPWR, SE and STRL history pages lagged (no Oct 16 row); their quote pages passed both the '
+ 'stamp and prev-close tests. LHX +3.33 the largest gainer; AAPL +0.43, GE +0.59, V +0.72 the only other greens - V '
+ 'closes above its stored range again - hi52 399.75 -> 402.61 and ath -> 402.61 (max(ath, close) precedent), a new '
+ 'all-time high. CIEN hi52/lo52 remain None per precedent. SPY 763.25 (2026-10-16, -1.11%) written to BENCH; spyHigh '
+ 'stays 779.09 of 2026-10-06 (SPY 2.03% below the high - the -15% crash-reserve trigger NOT tripped). SPY 763.25 '
+ 'appended to the daily risk series; UST10 SKIPPED for 2026-10-16 - ycharts still shows Oct 15 (5.10, next release Oct '
+ "16 pending) and the mortgagenewsdaily 10-day table's newest Close row is also Oct 15 (5.067); its top-of-page 5.100 "
+ "carries no date stamp, so nothing met the provenance bar. HISTORY row appended for 2026-10-16; the 2026-10-15 row's "
+ 'sha set to 3ae567d (its push commit). Prices only; fundamentals, POS, TRADES, GROUPS untouched.')
 
 GROUPS = ['Hyperscalers & Model Owners',
  'AI Chips & Chip Design',
@@ -11061,13 +11063,12 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'k': 'earnings',
             'a': 'DECIDE',
             'amt': 8277.68,
-            'c': 'estimated',
+            'c': 'confirmed',
             'w': 'Decide the rung that expired unfilled ($8,277.68 of the $15,618.32 room) after the results. No order '
                  'before the print.',
-            'cond': "PROPOSED TEST - NEEDS SALEE'S OK BEFORE ANY ORDER: worldwide da Vinci procedure growth at or "
-                    'above 15% and full-year procedure-growth guidance not lowered. Pass = Day LIMIT at the 20 Oct '
-                    'close, cap +1%, not in the first 30 minutes. Fail = hold, revisit 10 Dec. Last close $426.70, '
-                    'fair value $504.15.'}]}
+            'cond': 'TEST APPROVED BY SALEE 18 OCT: worldwide da Vinci procedure growth at or above 15% and full-year '
+                    'procedure-growth guidance not lowered. Pass = Day LIMIT at the 20 Oct close, cap +1%, not in the '
+                    'first 30 minutes. Fail = hold, revisit 10 Dec. Last close $426.70, fair value $504.15.'}]}
 
 SELLBOOK = {'updated': '2026-10-18',
  'comm': '0.20% + 7% VAT (0.214%), minimum 8.56',
@@ -12400,7 +12401,7 @@ BUYPLAN = {'title': 'Buy/Sell plan 19-30 Oct 2026',
            'amt': 8277.68,
            'tac': 'Results Tue 20 Oct (after the US close expected). No order before. If the test passes: Day LIMIT at '
                   'the 20 Oct close, cap +1%, not in the first 30 minutes.',
-           'cond': "PROPOSED test - needs Salee's OK: da Vinci procedure growth at or above 15% and full-year guidance "
+           'cond': 'Test APPROVED by Salee 18 Oct: da Vinci procedure growth at or above 15% and full-year guidance '
                    'not lowered. The $413 GTD order of 13 Oct is cancelled.'},
           {'bkk': 'Thu 22 Oct',
            'us': 'Thu 22 Oct',
