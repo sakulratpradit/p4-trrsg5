@@ -3,25 +3,30 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Oct 17, 2026 (run 00:30 UTC) - DAILY PRICE REFRESH: 63 of 63 closes updated to the Fri 2026-10-16 close '
- "(stockanalysis.com quote pages stamped 'At close: Oct 16, 2026, 4:00 PM EDT', validated against history tables; "
- 'every number from a tool call this session). Third straight risk-off day, the broadest yet: 14 moves past the 6% '
- 'gate, each confirmed via a second independent source - RKLB -7.98 (digrin 50.84), PANW -7.63 (fool.com quote widget '
- '342.00, day range identical), STX -7.50 (financialcontent.com 639.01 at 4:00 PM EDT Oct 16), PLTR -7.22 (digrin), '
- "DDOG -7.19 (digrin), COHR -7.06 (digrin), FTNT -7.03 (Google Finance beta 'Closed: Oct 16' 169.13), CRWD -7.02 "
- "(digrin), ARM -6.94 (digrin), SNDK -6.85 (digrin), TSEM -6.78 (Google Finance 'Closed: Oct 16' 195.58), CIEN -6.67 "
- "(Google Finance 'Chiusura: 16 ott' 332.73), BE -6.34 (digrin), NET -6.33 (benzinga Close 296.16/-6.37% dated Oct 16 "
- '6:14 PM EDT; quote-page closing print 296.30 kept). ETN quote page was STALE (stamped Oct 15) - history-table '
- 'fallback per resolution rule step 4: close 391.25 (-2.79%). MPWR, SE and STRL history pages lagged (no Oct 16 row); '
- 'their quote pages passed both the stamp and prev-close tests. LHX +3.33 the largest gainer; AAPL +0.43, GE +0.59, V '
- '+0.72 the only other greens - V closes above its stored range again - hi52 399.75 -> 402.61 and ath -> 402.61 '
- '(max(ath, close) precedent), a new all-time high. CIEN hi52/lo52 remain None per precedent. SPY 763.25 (2026-10-16, '
- '-1.11%) written to BENCH; spyHigh stays 779.09 of 2026-10-06 (SPY 2.03% below the high - the -15% crash-reserve '
- 'trigger NOT tripped). SPY 763.25 appended to the daily risk series; UST10 SKIPPED for 2026-10-16 - ycharts still '
- "shows Oct 15 (5.10, next release Oct 16 pending) and the mortgagenewsdaily 10-day table's newest Close row is also "
- 'Oct 15 (5.067); its top-of-page 5.100 carries no date stamp, so nothing met the provenance bar. HISTORY row appended '
- "for 2026-10-16; the 2026-10-15 row's sha set to 3ae567d (its push commit). Prices only; fundamentals, POS, TRADES, "
- 'GROUPS untouched.')
+ASOF = ('Oct 18, 2026 - BUY/SELL PLAN 19-30 OCT written. Two standing rules fired on the Fri 16 Oct close and were not '
+ 'flagged by the price refresh: NVDA rung 1 ($7,000, close $214.13 at or below $215) -> BUY 32 sh Mon 19 Oct, limit '
+ '$214.13, cap $216.27; CRWD sell-stop (close $227.39 below $243) -> SELL 20 sh Mon 19 Oct, floor $225.12, est. net '
+ '$4,538.07. ISRG: the 13 Oct $413 GTD order is cancelled (not on the 15 Oct screen); decide after the Tue 20 Oct '
+ 'results (proposed test pending Salee). META decide Thu 22 Oct (up to $12,760.48). No SGOV sale needed: free cash '
+ '$38,963.81 covers NVDA + META. || PREVIOUS ENTRY: Oct 17, 2026 (run 00:30 UTC) - DAILY PRICE REFRESH: 63 of 63 '
+ "closes updated to the Fri 2026-10-16 close (stockanalysis.com quote pages stamped 'At close: Oct 16, 2026, 4:00 PM "
+ "EDT', validated against history tables; every number from a tool call this session). Third straight risk-off day, "
+ 'the broadest yet: 14 moves past the 6% gate, each confirmed via a second independent source - RKLB -7.98 (digrin '
+ '50.84), PANW -7.63 (fool.com quote widget 342.00, day range identical), STX -7.50 (financialcontent.com 639.01 at '
+ '4:00 PM EDT Oct 16), PLTR -7.22 (digrin), DDOG -7.19 (digrin), COHR -7.06 (digrin), FTNT -7.03 (Google Finance beta '
+ "'Closed: Oct 16' 169.13), CRWD -7.02 (digrin), ARM -6.94 (digrin), SNDK -6.85 (digrin), TSEM -6.78 (Google Finance "
+ "'Closed: Oct 16' 195.58), CIEN -6.67 (Google Finance 'Chiusura: 16 ott' 332.73), BE -6.34 (digrin), NET -6.33 "
+ '(benzinga Close 296.16/-6.37% dated Oct 16 6:14 PM EDT; quote-page closing print 296.30 kept). ETN quote page was '
+ 'STALE (stamped Oct 15) - history-table fallback per resolution rule step 4: close 391.25 (-2.79%). MPWR, SE and STRL '
+ 'history pages lagged (no Oct 16 row); their quote pages passed both the stamp and prev-close tests. LHX +3.33 the '
+ 'largest gainer; AAPL +0.43, GE +0.59, V +0.72 the only other greens - V closes above its stored range again - hi52 '
+ '399.75 -> 402.61 and ath -> 402.61 (max(ath, close) precedent), a new all-time high. CIEN hi52/lo52 remain None per '
+ 'precedent. SPY 763.25 (2026-10-16, -1.11%) written to BENCH; spyHigh stays 779.09 of 2026-10-06 (SPY 2.03% below the '
+ 'high - the -15% crash-reserve trigger NOT tripped). SPY 763.25 appended to the daily risk series; UST10 SKIPPED for '
+ "2026-10-16 - ycharts still shows Oct 15 (5.10, next release Oct 16 pending) and the mortgagenewsdaily 10-day table's "
+ 'newest Close row is also Oct 15 (5.067); its top-of-page 5.100 carries no date stamp, so nothing met the provenance '
+ "bar. HISTORY row appended for 2026-10-16; the 2026-10-15 row's sha set to 3ae567d (its push commit). Prices only; "
+ 'fundamentals, POS, TRADES, GROUPS untouched.')
 
 GROUPS = ['Hyperscalers & Model Owners',
  'AI Chips & Chip Design',
@@ -4290,7 +4295,7 @@ TRADES = [{'date': 'Mar 2, 2026',
           'matches to the cent) = 6,473.74. Rung 1 of the post-results ladder. Position now 17 sh, cost 22,867.80 of '
           '41,000 budget (room 18,132.20: rung 2 of 6,606 on the January results, 10,000 deliberately held back).'}]
 
-SELLPLAN = []
+SELLPLAN = ['CRWD']
 
 CASH = {'currency': 'USD',
  'amount': 38963.81,
@@ -5173,7 +5178,7 @@ M3 = {'GOOGL': {'pfcf': 73.06, 'ev': 21.6, 'de': 0.18},
  'CIEN': {'pfcf': None, 'ev': None, 'de': None}}
 
 SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
- 'updated': 'Oct 15, 2026',
+ 'updated': 'Oct 18, 2026',
  'note': '⚠️ READ THIS FIRST. On 10 Sep 2026 the board was restructured to 10 groups, 38 funded names, 5 back-up names '
          'and 13 sells, and ALL 38 budgets were reset. EVERY AMOUNT WRITTEN IN A ROW DATED BEFORE 10 SEP 2026 REFERS '
          'TO THE OLD BUDGET and must be checked against the new one before it is acted on - the tranche sizes in those '
@@ -10743,7 +10748,9 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'dl': 'Standing',
             't': 'NVDA',
             'k': 'limit',
-            'w': 'Ladder rung 1 - any close at or below $215 (raised from $200, Salee approved 4 Oct)',
+            'w': '⚠️ TRIGGERED by the Fri 16 Oct close of $214.13 (at or below $215) - order placed as the dated row '
+                 'Mon 19 Oct. Mark done when filled. | Ladder rung 1 - any close at or below $215 (raised from $200, '
+                 'Salee approved 4 Oct)',
             'a': 'LIMIT',
             'amt': 7000,
             'cond': '-12.4% from the 4 Sep close of $230.36.',
@@ -10964,8 +10971,9 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             't': 'CRWD',
             'k': 'stop',
             'a': 'STOP',
-            'w': 'SELL STOP (Salee approved 5 Oct): sell the remaining 20 CRWD if any close is at or below $243 (10% '
-                 'under the 2 Oct close of $270.04).',
+            'w': '⚠️ STOP FIRED by the Fri 16 Oct close of $227.39 (below $243) - sell order is the dated row Mon 19 '
+                 'Oct. | SELL STOP (Salee approved 5 Oct): sell the remaining 20 CRWD if any close is at or below $243 '
+                 '(10% under the 2 Oct close of $270.04).',
             'amt': 0,
             'cond': 'Protects the half kept for momentum. Otherwise decide at the 10 Dec review after Q3 results on 1 '
                     'Dec. Keep the remaining 20 if margin is rising toward 8%.',
@@ -11010,18 +11018,58 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'k': 'tranche',
             'a': 'BUY',
             'amt': 8277.68,
-            'c': 'planned',
-            'w': 'NOT ON THE 15 OCT ORDER SCREEN - the 13/14 Oct Day orders at 413 appear to have expired unfilled and '
-                 'no ISRG order was open tonight. Outcome to confirm with Salee; results about 20-21 Oct, so do not '
-                 'leave a new order open into the print. | ORDER RECEIVED 13 Oct 23:00 Bangkok - 20 sh LIMIT 413, but '
-                 'entered as a DAY order (not GTD): if unfilled tonight, re-enter nightly or set validity GTD 19 Oct. '
-                 'Tranche 2 - healthcare, CARRIED from 12 Oct: LIMIT 20 shares at $413, GTD to 19 Oct (= $8,277.68 '
-                 'incl. commission)',
+            'c': 'cancelled',
+            'w': 'CANCELLED 18 Oct: the $413 GTD order (to 19 Oct) was not on the 15 Oct POEMS order screen and the '
+                 'stock closed $426.70 on 16 Oct - no order sits open into the 20 Oct results. Replaced by the 21 Oct '
+                 'DECIDE row. | NOT ON THE 15 OCT ORDER SCREEN - the 13/14 Oct Day orders at 413 appear to have '
+                 'expired unfilled and no ISRG order was open tonight. Outcome to confirm with Salee; results about '
+                 '20-21 Oct, so do not leave a new order open into the print. | ORDER RECEIVED 13 Oct 23:00 Bangkok - '
+                 '20 sh LIMIT 413, but entered as a DAY order (not GTD): if unfilled tonight, re-enter nightly or set '
+                 'validity GTD 19 Oct. Tranche 2 - healthcare, CARRIED from 12 Oct: LIMIT 20 shares at $413, GTD to 19 '
+                 'Oct (= $8,277.68 incl. commission)',
             'cond': '12 Oct Day order expired (ISRG traded ~427). Set Validity GTD with end date 19 Oct so it waits '
                     'each session; results about 20-21 Oct, so do not leave an order open into the print. Do not raise '
-                    'the limit.'}]}
+                    'the limit.'},
+           {'d': '2026-10-19',
+            'dl': 'Mon 19 Oct - sell-stop fired',
+            't': 'CRWD',
+            'k': 'stop',
+            'a': 'SELL',
+            'amt': 4538.07,
+            'c': 'confirmed',
+            'w': 'SELL the remaining 20 CRWD - the $243 stop (approved 5 Oct) fired on the Fri 16 Oct close of '
+                 '$227.39.',
+            'cond': 'Est. proceeds 4,538.07 net (20 x 227.39 = 4,547.80, commission 9.73). Day LIMIT SELL at the floor '
+                    '$225.12 (Friday close -1%): fills at the market price if the stock opens above it. If it opens '
+                    'below the floor, re-place Tuesday at Monday close -1%. Exit within two sessions - a stop that '
+                    'waits for a bounce is not a stop.'},
+           {'d': '2026-10-19',
+            'dl': 'Mon 19 Oct - ladder rung 1 triggered',
+            't': 'NVDA',
+            'k': 'limit',
+            'a': 'BUY',
+            'amt': 7000,
+            'c': 'confirmed',
+            'w': 'NVDA rung 1 - $7,000. Triggered by the Fri 16 Oct close of $214.13 (rule: any close at or below '
+                 '$215, approved 4 Oct).',
+            'cond': '32 shares, Day LIMIT $214.13, cap $216.27 (+1%). If unfilled, the rung stays live: re-place each '
+                    'session while the latest close is at or below $215. Rung 2 ($5,619.72 at or below $180) '
+                    'unchanged. Profitable company - the rate rule does not apply.'},
+           {'d': '2026-10-21',
+            'dl': 'ISRG Q3 results Tue 20 Oct (date from Intuitive IR calendar via ad-hoc-news; time to confirm)',
+            't': 'ISRG',
+            'k': 'earnings',
+            'a': 'DECIDE',
+            'amt': 8277.68,
+            'c': 'estimated',
+            'w': 'Decide the rung that expired unfilled ($8,277.68 of the $15,618.32 room) after the results. No order '
+                 'before the print.',
+            'cond': "PROPOSED TEST - NEEDS SALEE'S OK BEFORE ANY ORDER: worldwide da Vinci procedure growth at or "
+                    'above 15% and full-year procedure-growth guidance not lowered. Pass = Day LIMIT at the 20 Oct '
+                    'close, cap +1%, not in the first 30 minutes. Fail = hold, revisit 10 Dec. Last close $426.70, '
+                    'fair value $504.15.'}]}
 
-SELLBOOK = {'updated': '2026-10-03',
+SELLBOOK = {'updated': '2026-10-18',
  'comm': '0.20% + 7% VAT (0.214%), minimum 8.56',
  'note': "SEP 12, 2026 - ZETA'S LIMIT LOWERED 32.50 TO 31.00, and NOT because of the viral 'rich before 2030' graphic "
          "that prompted the review. ⚠️ THE OLD LIMIT WAS ABOVE THE STREET'S OWN TARGET: consensus 31.36 across 15 "
@@ -11460,7 +11508,28 @@ SELLBOOK = {'updated': '2026-10-03',
            'fillDate': '2026-10-05',
            'fillPx': 271.2501,
            'proceeds': 5413.27,
-           'realized': 3456.21}]}
+           'realized': 3456.21},
+          {'t': 'CRWD',
+           'name': 'CrowdStrike',
+           'g': 'AI Software, Security & Infrastructure',
+           'sh': 20,
+           'avg': 97.853,
+           'cost': 1957.06,
+           'refPx': 227.39,
+           'refDate': '2026-10-16',
+           'limit': 225.12,
+           'when': 'Mon 19 Oct - Day LIMIT at the floor $225.12; out within two sessions',
+           'conv': 'High',
+           'why': 'SELL STOP FIRED: the Fri 16 Oct close of $227.39 is below the $243 stop approved 5 Oct for the half '
+                  'kept for momentum. Quality score 5 after the 18 Oct Rule-of-40 change.',
+           'after': 'Position closed. CrowdStrike leaves the board as a holding; the 1 Dec results are read for the 10 '
+                    'Dec review only.',
+           'budget': None,
+           'status': 'open',
+           'fillDate': None,
+           'fillPx': None,
+           'proceeds': None,
+           'realized': None}]}
 
 HISTORY = [{'d': '2026-07-28',
   'sha': 'aec52e7',
@@ -12288,106 +12357,51 @@ RISK = {'asof': '2026-10-11',
          'as the nightly refresh adds one day at a time. Regression shows association, not cause, and says nothing '
          'about future returns.'}
 
-BUYPLAN = {'title': 'Buying plan 12-30 Oct 2026',
- 'made': '2026-10-12',
- 'pxNote': 'Friday 9 Oct closes',
+BUYPLAN = {'title': 'Buy/Sell plan 19-30 Oct 2026',
+ 'made': '2026-10-18',
+ 'pxNote': 'Friday 16 Oct closes',
  'hours': 'POEMS follows the US market: 20:30 to 03:00 Bangkok time (US daylight time, until 1 Nov). Place Day orders '
           'after 20:30; an unfilled Day order expires at 03:00.',
- 'holidays': 'Thai holidays 13 Oct and 23 Oct: if POEMS will not take orders on those days, place them the evening '
-             'before.',
+ 'holidays': 'Thai holiday Fri 23 Oct (Chulalongkorn Day): the US market is open; if POEMS will not take orders that '
+             'day, nothing is scheduled for it anyway.',
  'rules': ['LIMIT orders only - never market orders.',
            'Never more than +1% above the reference close.',
            'Commission 0.214%, minimum $8.56 - share counts already allow for it.',
            'Send the POEMS confirmation the same day; Claude books the fill.'],
- 'rows': [{'bkk': 'Mon 12 Oct',
-           'us': 'Mon 12 Oct',
-           't': 'APH',
-           'a': 'BUY',
-           'amt': 6497.8,
-           'lim': 87.24,
-           'cap': 88.11,
-           'tac': 'Day LIMIT at Friday close. If not filled, raise once to the cap (+1%) next session; never chase '
-                  'above it.',
-           'cond': 'None. Profitable, below fair value.',
-           'sh': 73},
-          {'bkk': 'Mon 12 Oct',
-           'us': 'Mon 12 Oct',
-           't': 'CRDO',
-           'a': 'BUY',
-           'amt': 5149.51,
-           'lim': 216.55,
-           'cap': 218.72,
-           'tac': 'Day LIMIT at Friday close. Swings 5-10% a day: if it opens more than 5% lower, keep the same limit '
-                  '(it fills cheaper); if it opens more than 3% higher, do not chase - re-place next session.',
-           'cond': 'None. Results early Dec; $5,149 of budget stays in reserve.',
-           'sh': 23},
-          {'bkk': 'Mon 12 Oct',
-           'us': 'Mon 12 Oct',
-           't': 'V',
-           'a': 'BUY',
-           'amt': 2093.01,
-           'lim': 385.45,
-           'cap': 389.3,
-           'tac': 'Day LIMIT at Friday close, cap +1%. Small, steady stock - one order is enough.',
-           'cond': 'None.',
-           'sh': 5},
-          {'bkk': 'Tue 13 Oct (GTD to 19 Oct)',
-           'us': '13-19 Oct',
-           't': 'ISRG',
-           'a': 'LIMIT',
-           'amt': 8277.68,
-           'lim': 413.0,
-           'cap': 413.0,
+ 'rows': [{'bkk': 'Mon 19 Oct',
+           'us': 'Mon 19 Oct',
+           't': 'CRWD',
+           'a': 'SELL',
+           'amt': 4538.07,
+           'lim': 225.12,
+           'cap': 225.12,
            'sh': 20,
-           'tac': '20 shares, LIMIT $413, Validity GTD end 19 Oct. Do NOT raise. Cancel before the ~20 Oct results if '
-                  'unfilled.',
-           'cond': 'Carried from 9 Oct (expired unfilled). $8,277.68 = 20 x 413 + commission; budget room is '
-                   '$8,618.32.'},
-          {'bkk': 'Thu 15 Oct',
-           'us': 'Thu 15 Oct',
-           't': 'ASML',
+           'tac': 'SELL STOP FIRED (Friday close $227.39, below $243). Day LIMIT SELL 20 sh at the floor $225.12 - it '
+                  'fills at the market if the stock is above the floor. If it opens below, re-place Tuesday at Monday '
+                  'close -1%. Out within two sessions.',
+           'cond': 'Stop approved 5 Oct. Est. net proceeds $4,538.07; realised gain about +$2,581.01 on the 20 shares '
+                   '(avg cost $97.85).'},
+          {'bkk': 'Mon 19 Oct',
+           'us': 'Mon 19 Oct',
+           't': 'NVDA',
            'a': 'BUY',
-           'amt': 6680.0,
-           'lim': 1650.0,
-           'cap': 1666.5,
-           'tac': 'FILLED 15 Oct: 4 sh at 1,614.9799 (Day limit at the ask; cap 1,666.50 never tested). PASSED. 4 '
-                  'shares, Day LIMIT at the ask, cap $1,666.50 (14 Oct close $1,650 +1%). If the ask is above the cap, '
-                  'leave the order at the cap; if unfilled, re-place next session within 1% of the latest close.',
-           'cond': 'Test passed 15 Oct: sales 11.66bn euro, GM 57.5%, 2027-28 supply short of demand, 2026 raised to '
-                   '44-45bn.',
-           'sh': 4},
-          {'bkk': 'Thu 15 Oct',
-           'us': 'Thu 15 Oct',
-           't': 'TSM',
-           'a': 'BUY',
-           'amt': 10010.0,
-           'lim': 430.0,
-           'cap': 434.3,
-           'tac': 'FILLED 15 Oct: 23 sh at 417.4235 (Day limit at the ask; cap 434.30 never tested). PASSED. 23 '
-                  'shares, Day LIMIT at the ask, cap $434.30 (14 Oct close +1%). If the ADR opens above the cap, leave '
-                  'the order at the cap; if unfilled, re-place next session within 1% of the latest close.',
-           'cond': 'Test passed 15 Oct: gross margin 66.4% vs 65% required; Q4 guided 65-67%.',
-           'sh': 23},
-          {'bkk': 'Thu 29 Oct',
-           'us': 'Thu 29 Oct',
-           't': 'MSFT',
+           'amt': 7000,
+           'lim': 214.13,
+           'cap': 216.27,
+           'sh': 32,
+           'tac': 'Rung 1 TRIGGERED (Friday close $214.13, at or below $215). Day LIMIT $214.13; if it opens higher, '
+                  'raise once to the cap $216.27, never above. Unfilled = rung stays live while closes are at or below '
+                  '$215.',
+           'cond': 'Ladder approved 4 Oct. Rung 2 ($5,619.72) waits for a close at or below $180.'},
+          {'bkk': 'Wed 21 Oct',
+           'us': 'Wed 21 Oct',
+           't': 'ISRG',
            'a': 'DECIDE',
-           'amt': 7121.04,
-           'lim': None,
-           'cap': None,
-           'tac': 'Results expected 28 Oct after the US close (date estimated, confirm). Act the next session: Day '
-                  'LIMIT at the 28 Oct close, cap +1%.',
-           'cond': 'Watch the gap between AI spending and AI revenue, not Azure alone. Buy only if revenue keeps pace '
-                   'with capex.'},
-          {'bkk': 'Fri 30 Oct',
-           'us': 'Fri 30 Oct',
-           't': 'CAT',
-           'a': 'BUY',
-           'amt': 5000.0,
-           'lim': None,
-           'cap': None,
-           'tac': 'Results about 28 Oct. Day LIMIT at the 29 Oct close, cap +1%.',
-           'cond': 'Rung 2 of 3. Hold back if the power-generation business is not growing with data-centre demand.'},
+           'amt': 8277.68,
+           'tac': 'Results Tue 20 Oct (after the US close expected). No order before. If the test passes: Day LIMIT at '
+                  'the 20 Oct close, cap +1%, not in the first 30 minutes.',
+           'cond': "PROPOSED test - needs Salee's OK: da Vinci procedure growth at or above 15% and full-year guidance "
+                   'not lowered. The $413 GTD order of 13 Oct is cancelled.'},
           {'bkk': 'Thu 22 Oct',
            'us': 'Thu 22 Oct',
            't': 'META',
@@ -12410,6 +12424,26 @@ BUYPLAN = {'title': 'Buying plan 12-30 Oct 2026',
            'tac': 'No order - budget is full.',
            'cond': 'Disclosure test: does Vertiv publish orders, backlog and book-to-bill again? Third quarter missing '
                    'would be a pattern.'},
+          {'bkk': 'Thu 29 Oct',
+           'us': 'Thu 29 Oct',
+           't': 'MSFT',
+           'a': 'DECIDE',
+           'amt': 7121.04,
+           'lim': None,
+           'cap': None,
+           'tac': 'Results expected 28 Oct after the US close (date estimated, confirm). Act the next session: Day '
+                  'LIMIT at the 28 Oct close, cap +1%.',
+           'cond': 'Watch the gap between AI spending and AI revenue, not Azure alone. Buy only if revenue keeps pace '
+                   'with capex.'},
+          {'bkk': 'Fri 30 Oct',
+           'us': 'Fri 30 Oct',
+           't': 'CAT',
+           'a': 'BUY',
+           'amt': 5000.0,
+           'lim': None,
+           'cap': None,
+           'tac': 'Results about 28 Oct. Day LIMIT at the 29 Oct close, cap +1%.',
+           'cond': 'Rung 2 of 3. Hold back if the power-generation business is not growing with data-centre demand.'},
           {'bkk': 'Mon 2 Nov (est.)',
            'us': '2 Nov AMC',
            't': 'AAPL',
@@ -12418,21 +12452,10 @@ BUYPLAN = {'title': 'Buying plan 12-30 Oct 2026',
            'lim': None,
            'cap': None,
            'tac': 'No order - budget is full.',
-           'cond': 'First December-quarter guide and iPhone Duo read. Do not pay up.'},
-          {'bkk': 'Tue 13 Oct',
-           'us': 'Tue 13 Oct',
-           't': 'SGOV',
-           'a': 'PARK',
-           'amt': 80000.0,
-           'lim': 100.53,
-           'cap': 100.55,
-           'sh': 794,
-           'tac': "Day LIMIT at the ask ($100.53). Price barely moves, so no chasing needed. Place AFTER tonight's "
-                  'four stock orders fill or are placed.',
-           'cond': 'Earns ~3.9% a year (before any US withholding) instead of 0% at the broker. Sell slices the '
-                   'session before each later buy.'}],
- 'note': 'Same orders as the Schedule tab (rows dated 12-30 Oct that are still open). Cancelled and superseded rows '
-         'are left out. This tab adds the Bangkok evening to act, the limit price and the tactic.'}
+           'cond': 'First December-quarter guide and iPhone Duo read. Do not pay up.'}],
+ 'note': 'Same orders as the Schedule tab (rows dated 19-30 Oct that are still open), buys AND sells. Cancelled and '
+         'filled rows are left out. This tab adds the Bangkok evening to act, the limit price and the tactic. For a '
+         'SELL the Cap column is the FLOOR - never sell below it in that session.'}
 
 METRICS3 = M3  # alias: per-ticker pfcf / ev (EV/EBITDA) / de (Debt/Equity)
 
