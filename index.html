@@ -1612,6 +1612,19 @@ function toggleLog(){
   b.textContent = on ? `Hide change log ▴` : `Show change log (${n} entries) ▾`;
 }
 
+/* ============ Rule of 40 used for scoring (approved 18 Oct 2026) ============
+   Worked out twice: revenue growth + FCF margin (s.r40) and revenue growth + net margin.
+   The LOWER of the two scores. FCF flatters share-paid software (stock pay is added back);
+   net income flatters heavy builders (depreciation lags the spending). Missing FCF version = 0.
+   One-off exception: if net income is distorted by a flagged non-cash item, the FCF version is used. */
+const R40_ONEOFF = {"LITE":"FY2026 (to 27 Jun 2026) GAAP net loss of $6.94bn includes a $7.76bn non-cash loss on exchanging its convertible notes for shares (results 11 Aug 2026); non-GAAP net income was +$782m. Net-income version ignored until this rolls out of the trailing 12 months."};
+function r40ni(s){ return (s.revG==null||s.pm==null)?null:s.revG+s.pm; }
+function r40used(s){
+  if(s.r40==null) return 0;
+  const n=r40ni(s);
+  if(n==null||R40_ONEOFF[s.t]) return s.r40;
+  return Math.min(s.r40,n);
+}
 /* ============ metric matrix (metrics = rows, grouped columns) ============ */
 const ROWS = [
  {g:"Position"},
@@ -1649,6 +1662,7 @@ const ROWS = [
  {n:"23b",l:"Debt / Equity",              f:s=>{const v=(M3[s.t]||{}).de; return v==null?"—":`<span class="${v<1?'pos':(v>2?'neg':'')}">${fmt(v,2)}</span>`;}},
  {n:"24", l:"Rule of 40 (FCF)",           f:s=>pct(s.r40)},
  {n:"24b",l:"Rule of 40 (NI)",            f:s=>(s.revG==null||s.pm==null)?"—":pct(s.revG+s.pm)},
+ {n:"24c",l:"Rule of 40 used (lower of 24 / 24b)", f:s=>{if(s.r40==null) return "—"; const v=r40used(s); const ex=R40_ONEOFF[s.t]; return `<span title="${ex?('One-off exception - FCF version used: '+ex.replace(/"/g,'&quot;')):'Lower of the FCF and net-income versions'}"><b>${pct(v)}</b>${ex?' <span style="color:var(--warn)">*</span>':''}</span>`;}},
  {n:"25", l:"Free cash flow ($B)",        f:s=>`<span class="${s.fcfB<0?'neg':''}">${fmt(s.fcfB,1)}</span>`},
  {n:"26", l:"CAPEX ($B)",                 f:s=>fmt(s.capexB,1)},
  {g:"Quality & priority (allocation method, 12 Oct 2026)"},
@@ -1657,7 +1671,7 @@ const ROWS = [
  {n:"27b",l:"&nbsp;&nbsp;Gross margin ≥50% (1 / 0)",f:s=>((s.gm||0)>=50?"1":"0")},
  {n:"27c",l:"&nbsp;&nbsp;ROE ≥20% = 2 · ≥10% = 1 · else 0",          f:s=>{const v=s.roe||0; return v>=20?"2":(v>=10?"1":"0");}},
  {n:"27d",l:"&nbsp;&nbsp;Free cash flow > 0 (2 / 0)",f:s=>((s.fcfB||0)>0?"2":"0")},
- {n:"27e",l:"&nbsp;&nbsp;Rule of 40 (FCF) ≥40 = 2 · ≥25 = 1 · else 0",   f:s=>{const v=s.r40||0; return v>=40?"2":(v>=25?"1":"0");}},
+ {n:"27e",l:"&nbsp;&nbsp;Rule of 40 used (row 24c) ≥40 = 2 · ≥25 = 1 · else 0",   f:s=>{const v=r40used(s); return v>=40?"2":(v>=25?"1":"0");}},
  {n:"27f",l:"&nbsp;&nbsp;Debt/Equity < 1 (1 / 0)",  f:s=>{const v=(M3[s.t]||{}).de; return (v!=null&&v<1)?"1":"0";}},
  {n:"28", l:"% upside to avg fair value",   f:s=>{const u=conv(s); return u==null?"—":`<span class="${u>=20?'pos':(u<0?'neg':'')}">${pct(u)}</span>`;}},
  {n:"29", l:"Priority (row 28 × row 27 ÷ 10)", f:s=>{const u=conv(s); if(u==null) return "—"; const v=u*qualityScore(s,M3[s.t]||{})/10; return `<span class="${v>=30?'pos':(v<0?'neg':'')}"><b>${v.toFixed(1)}</b></span>`;}},
@@ -2321,7 +2335,7 @@ var SCHED_FILTER = "all";
 
 /* Allocation method (approved 12 Oct 2026) - rendered at the top of the Budget Tiers tab */
 function qualityScore(s,m){
-  var sc=0, pm=s.pm||0, gm=s.gm||0, roe=s.roe||0, fcf=s.fcfB||0, r40=s.r40||0, de=(m&&m.de!=null)?m.de:null;
+  var sc=0, pm=s.pm||0, gm=s.gm||0, roe=s.roe||0, fcf=s.fcfB||0, r40=r40used(s), de=(m&&m.de!=null)?m.de:null;
   sc+= pm>=15?2:(pm>=5?1:0); sc+= gm>=50?1:0; sc+= roe>=20?2:(roe>=10?1:0); sc+= fcf>0?2:0; sc+= r40>=40?2:(r40>=25?1:0); sc+= (de!=null&&de<1)?1:0;
   return sc;
 }

@@ -7,12 +7,29 @@ the end is rebuilt from live board data every time notes.html is generated.
 """
 import html
 
+# Rule of 40 one-off exceptions: net income distorted by a flagged non-cash item -> FCF version used.
+# Keep in step with R40_ONEOFF in index.html.
+R40_ONEOFF = {
+    'LITE': 'FY2026 GAAP net loss of $6.94bn includes a $7.76bn non-cash loss on exchanging its convertible notes for shares (results 11 Aug 2026)',
+}
+
+
+def r40_used(s):
+    """Lower of revenue growth + FCF margin (s['r40']) and revenue growth + net margin. Missing FCF version = 0."""
+    f = s.get('r40')
+    if f is None:
+        return 0
+    if s.get('revG') is None or s.get('pm') is None or s['t'] in R40_ONEOFF:
+        return f
+    return min(f, s['revG'] + s['pm'])
+
+
 THRESHOLDS = [
     ('Net profit margin', 'Profit after everything, as % of sales', '15% or more = 2 points · 5% to 15% = 1 point · under 5% = 0'),
     ('Gross margin', 'What is left after the direct cost of making the product', '50% or more = 1 point · under 50% = 0'),
     ('Return on equity', 'Profit earned on the shareholders’ money', '20% or more = 2 points · 10% to 20% = 1 point · under 10% = 0'),
     ('Free cash flow', 'Real cash left after running and investing in the business', 'positive = 2 points · zero or negative = 0'),
-    ('Rule of 40', 'Sales growth % plus profit margin % added together', '40 or more = 2 points · 25 to 40 = 1 point · under 25 = 0'),
+    ('Rule of 40', 'Sales growth % plus margin %, worked out twice (free-cash-flow margin and net profit margin); the LOWER of the two counts (since 18 Oct 2026)', '40 or more = 2 points · 25 to 40 = 1 point · under 25 = 0'),
     ('Debt to equity', 'Borrowings compared with shareholders’ money', 'debt smaller than equity (below 1.0) = 1 point · otherwise 0'),
 ]
 
@@ -45,7 +62,7 @@ def build(P):
     def score(s):
         m = M3.get(s['t'], {})
         pm = s.get('pm') or 0; gm = s.get('gm') or 0; roe = s.get('roe') or 0
-        f = s.get('fcfB') or 0; r = s.get('r40') or 0; de = m.get('de')
+        f = s.get('fcfB') or 0; r = r40_used(s); de = m.get('de')
         return ((2 if pm >= 15 else (1 if pm >= 5 else 0)) + (1 if gm >= 50 else 0)
                 + (2 if roe >= 20 else (1 if roe >= 10 else 0)) + (2 if f > 0 else 0)
                 + (2 if r >= 40 else (1 if r >= 25 else 0)) + (1 if (de is not None and de < 1) else 0))
@@ -64,7 +81,7 @@ def build(P):
     e = html.escape
     H = []
     H.append('<div class="card method"><h2>How we rank the stocks (method approved 12 Oct 2026)</h2>')
-    H.append('<div class="meta">Saved 13 Oct 2026 for the record · the live version is on the dashboard: Method &amp; Budget Tiers tab, and rows 27–30 of the data matrix on the Portfolio tab</div>')
+    H.append('<div class="meta">Saved 13 Oct 2026 for the record · the live version is on the dashboard: Method &amp; Budget Tiers tab, and rows 27–30 of the data matrix on the Overview tab</div>')
 
     H.append('<h3>1. The idea in one line</h3>')
     H.append('<p>The old way gave every stock a budget so the board was spread across many kinds of company. The new way asks one question for every dollar: <b>where is it most likely to earn the roughly 15% a year the $2.0M goal needs?</b> Diversification is still a limit (no sector or name too big), but it is no longer the reason to buy.</p>')
@@ -72,6 +89,7 @@ def build(P):
     H.append('<h3>2. Quality score, 0 to 10</h3>')
     H.append('<p>Six yes/no checks on the company’s own numbers, taken straight from the board data. Add the points. A missing figure scores zero, so a thin data record drags a score down — I flag that when it affects a decision.</p>')
     H.append(_tbl(['Check', 'What it measures', 'Points'], [[e(a), e(b), e(c)] for a, b, c in THRESHOLDS]))
+    H.append('<p><b>Rule of 40 change, 18 Oct 2026:</b> it is now worked out twice and the lower figure scores. The free-cash-flow version flatters software companies that pay staff in shares (the share pay is added back to cash flow) — CrowdStrike reads 52.5 on cash flow but 25.0 on net profit. The net-profit version flatters heavy builders whose depreciation lags their spending — Oracle reads −18.4 on cash flow but +48.0 on net profit. Taking the lower catches both. Effect on the day: CRWD, PANW, NET and DDOG each lost one point; no other name changed. <b>One-off exception:</b> where net profit is distorted by a flagged non-cash item, the cash-flow version is used — Lumentum, whose year to June 2026 carries a $7.76bn non-cash loss on exchanging its convertible notes for shares.</p>')
     H.append('<p><b>How to read it:</b> 9–10 = a money machine (Nvidia, Broadcom, Micron, TSMC). 7–8 = good business with one soft spot. 5–6 = cyclical, capital-heavy or indebted. 4 or less = the numbers do not yet support the story.</p>')
 
     H.append('<h3>3. Worked examples (12 Oct 2026 closes)</h3>')
