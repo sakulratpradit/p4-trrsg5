@@ -64,7 +64,7 @@ def build(P):
     e = html.escape
     H = []
     H.append('<div class="card method"><h2>How we rank the stocks (method approved 12 Oct 2026)</h2>')
-    H.append('<div class="meta">Saved 13 Oct 2026 for the record · the live version is on the dashboard: Method &amp; Budget Tiers tab, and rows 27–29 of the data matrix on the Portfolio tab</div>')
+    H.append('<div class="meta">Saved 13 Oct 2026 for the record · the live version is on the dashboard: Method &amp; Budget Tiers tab, and rows 27–30 of the data matrix on the Portfolio tab</div>')
 
     H.append('<h3>1. The idea in one line</h3>')
     H.append('<p>The old way gave every stock a budget so the board was spread across many kinds of company. The new way asks one question for every dollar: <b>where is it most likely to earn the roughly 15% a year the $2.0M goal needs?</b> Diversification is still a limit (no sector or name too big), but it is no longer the reason to buy.</p>')

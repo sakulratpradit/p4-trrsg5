@@ -1653,14 +1653,15 @@ const ROWS = [
  {n:"26", l:"CAPEX ($B)",                 f:s=>fmt(s.capexB,1)},
  {g:"Quality & priority (allocation method, 12 Oct 2026)"},
  {n:"27", l:"Quality score (0-10)",         f:s=>{const q=qualityScore(s,M3[s.t]||{}); return `<span class="${q>=8?'pos':(q<=4?'neg':'')}"><b>${q}</b></span>`;}},
- {n:"27a",l:"&nbsp;&nbsp;Net margin (2 / 1 / 0)",   f:s=>{const v=s.pm||0; return v>=15?"2":(v>=5?"1":"0");}},
+ {n:"27a",l:"&nbsp;&nbsp;Net margin ≥15% = 2 · ≥5% = 1 · else 0",   f:s=>{const v=s.pm||0; return v>=15?"2":(v>=5?"1":"0");}},
  {n:"27b",l:"&nbsp;&nbsp;Gross margin ≥50% (1 / 0)",f:s=>((s.gm||0)>=50?"1":"0")},
- {n:"27c",l:"&nbsp;&nbsp;ROE (2 / 1 / 0)",          f:s=>{const v=s.roe||0; return v>=20?"2":(v>=10?"1":"0");}},
+ {n:"27c",l:"&nbsp;&nbsp;ROE ≥20% = 2 · ≥10% = 1 · else 0",          f:s=>{const v=s.roe||0; return v>=20?"2":(v>=10?"1":"0");}},
  {n:"27d",l:"&nbsp;&nbsp;Free cash flow > 0 (2 / 0)",f:s=>((s.fcfB||0)>0?"2":"0")},
- {n:"27e",l:"&nbsp;&nbsp;Rule of 40 (2 / 1 / 0)",   f:s=>{const v=s.r40||0; return v>=40?"2":(v>=25?"1":"0");}},
+ {n:"27e",l:"&nbsp;&nbsp;Rule of 40 (FCF) ≥40 = 2 · ≥25 = 1 · else 0",   f:s=>{const v=s.r40||0; return v>=40?"2":(v>=25?"1":"0");}},
  {n:"27f",l:"&nbsp;&nbsp;Debt/Equity < 1 (1 / 0)",  f:s=>{const v=(M3[s.t]||{}).de; return (v!=null&&v<1)?"1":"0";}},
- {n:"28", l:"Priority (upside × quality ÷ 10)", f:s=>{const u=conv(s); if(u==null) return "—"; const v=u*qualityScore(s,M3[s.t]||{})/10; return `<span class="${v>=30?'pos':(v<0?'neg':'')}"><b>${v.toFixed(1)}</b></span>`;}},
- {n:"29", l:"Priority rank (of board)",     f:s=>{const r=prioRank()[s.t]; return r==null?"—":`#${r}`;}},
+ {n:"28", l:"% upside to avg fair value",   f:s=>{const u=conv(s); return u==null?"—":`<span class="${u>=20?'pos':(u<0?'neg':'')}">${pct(u)}</span>`;}},
+ {n:"29", l:"Priority (row 28 × row 27 ÷ 10)", f:s=>{const u=conv(s); if(u==null) return "—"; const v=u*qualityScore(s,M3[s.t]||{})/10; return `<span class="${v>=30?'pos':(v<0?'neg':'')}"><b>${v.toFixed(1)}</b></span>`;}},
+ {n:"30", l:"Priority rank (of board)",     f:s=>{const r=prioRank()[s.t]; return r==null?"—":`#${r}`;}},
 ];
 /* rank every board name with a fair value by priority (highest first); cached per render */
 let _PRANK=null;
@@ -2965,7 +2966,7 @@ function renderMap(){
    ["After October?",go("schedule",null,"Schedule")],["Sold, and P&amp;L?",go("selling",null,"Selling")],["A slide I sent?",'<a href="slides.html?v=20261017a">Slides</a>']
   ];
   var rooms=[
-   {p:"main",n:"Overview",s:["Ticker tape and headline tiles (positions, value, cash + SGOV park)",go("main","approvals","Approvals &amp; standing decisions"),go("main","ladders","Price ladders &amp; stops"),go("main","peglens","Fair-value ladder, Valuation map, PEG lens"),"Metric matrix (rows 27-29 = Quality, Priority, Rank)","Position cards"]},
+   {p:"main",n:"Overview",s:["Ticker tape and headline tiles (positions, value, cash + SGOV park)",go("main","approvals","Approvals &amp; standing decisions"),go("main","ladders","Price ladders &amp; stops"),go("main","peglens","Fair-value ladder, Valuation map, PEG lens"),"Metric matrix (rows 27-30 = Quality, Upside, Priority, Rank)","Position cards"]},
    {p:"wheel",n:"Wheel",s:["Plan against reality","Portfolio wheel","Investment by group","Allocated budget by stock"]},
    {p:"groups",n:"Portfolio",s:["Totals &amp; returns","Win / loss record","Quality scorecard",go("groups","risk","Risk sensitivity"),"Value history","P&amp;L by group and by stock"]},
    {p:"trading",n:"Trading",s:["Cash balance - free, parked in SGOV, total; reconciliation entries","Daily trading activity","Monthly summary"]},
@@ -2982,7 +2983,7 @@ function renderMap(){
   H.push('<div class="qi2">'+qi.map(function(q){return '<span><b>'+q[0]+'</b> '+q[1]+'</span>';}).join('')+'</div>');
   H.push('<button class="more" onclick="var d=document.getElementById(\'mapdet\');d.hidden=!d.hidden;this.textContent=d.hidden?\'Room by room, in detail \\u25be\':\'Hide details \\u25b4\'">Room by room, in detail \u25be</button>');
   H.push('<div id="mapdet" hidden>'+rooms.map(function(r){ return '<div class="room"><h3>'+(r.h||(r.n+' <button class="go" onclick="showTab(\''+r.p+'\')">open &rarr;</button>'))+'</h3><ul>'+r.s.map(function(x){return '<li>'+x+'</li>';}).join('')+'</ul></div>'; }).join('')
-    +'<p class="sub">Overview, Wheel and Portfolio are three views of the same numbers; Schedule and Buy Plan are the same orders at two zoom levels; the Method tab and matrix rows 27-29 are the same ranking in two places.</p></div>');
+    +'<p class="sub">Overview, Wheel and Portfolio are three views of the same numbers; Schedule and Buy Plan are the same orders at two zoom levels; the Method tab and matrix rows 27-30 are the same ranking in two places.</p></div>');
   el.innerHTML=H.join('');
 }
 function showTab(p){ const b=document.querySelector('.tab[data-p="'+p+'"]'); if(b) b.click(); }
