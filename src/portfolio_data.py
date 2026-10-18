@@ -11118,21 +11118,16 @@ SELLBOOK = {'updated': '2026-10-18',
          'moving the five best legacy names (CRWD, INTC, TER, CDNS, FSLR) to BACK-UP status instead of selling them - '
          'it kept 6,931 of unrealised gain out of the tax net. ⚠️ Tax adviser sign-off is still required before '
          'execution, even at +139.',
- 'rules': ['Sell the thesis, not the price. Every row is here because the BUSINESS fails the 5-10 year growth mandate.',
-           'TIER A (8 names: HUBB, QCOM, AAOI, IBM, BWXT, MPWR, FN, ONDS) - too small to wait. Sell at market '
-           'regardless of price. Commission runs 0.4-0.8% each way at these sizes; MPWR is a single share. Waiting has '
-           'no option value.',
-           'TIER B (3 names: ZETA, CRM, IREN) - real gains, +3,270 between them. Work limit orders above market and '
-           'let them fill.',
-           'TIER C (2 names: COHR, AMKR) - underwater and outside the map. Sell on any rally toward cost. No deadline, '
-           'but no attachment either.',
-           '⚠️ A BACK-UP NAME IS NOT A SELL. CRWD, INTC, TER, CDNS and FSLR are held with zero budget and a written '
-           'promotion trigger each. They are reviewed every 3 months, next on 10 Dec 2026 - they are not on this page '
-           'and must not be sold by habit.',
-           'QCOM was UNPAUSED on 10 Sep 2026. The old row held it pending confirmation of the Amazon agreement with a '
-           '16 Sep decision date; the restructure supersedes that. 5.2% revenue growth fails the mandate either way, '
-           'and the position is 1,914.',
-           "Claude never executes. Every line is Salee's to place at POEMS."],
+ 'rules': ['Sell the thesis, not the price: a row is here only because the business fails the 5-year mandate, or '
+           'because a sell-stop or trim you approved has fired.',
+           'A sell-stop fires on a CLOSE at or below its level, never on an intraday dip. Sell the next session and be '
+           'out within two sessions - a stop that waits for a bounce is not a stop.',
+           'Order type: Day LIMIT SELL at the floor (last close -1%). It fills at the market price if the stock is '
+           'above the floor. Never lower the floor again in the same session.',
+           'A back-up name (held, zero budget) is not a sell. It is reviewed at the quarterly review (next 10 Dec '
+           '2026), not sold by habit.',
+           'Claude never executes. Every line is yours to place at POEMS; report the fill and positions, cost and cash '
+           'update together.'],
  'rows': [{'t': 'ORCL',
            'name': 'Oracle',
            'g': 'AI Software, Security & Infrastructure',
