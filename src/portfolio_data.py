@@ -3,7 +3,12 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Oct 18, 2026 - ISRG TEST APPROVED by Salee: buy the $8,277.68 rung on Wed 21 Oct (Bangkok night) only if worldwide '
+ASOF = ('Oct 19, 2026 - STRL APPROVED by Salee: $15,000 budget (1.5% minimum position) in two halves, conditional on the Q3 '
+ 'results Wed 28 Oct (backlog growing, data-centre revenue growing, margins holding, guidance not cut). Half 1 $7,500 '
+ 'decide Thu 29 Oct; half 2 earliest 5 Nov. Funded by selling 100 SGOV (~$10,055) on Wed 28 Oct; crash reserve '
+ 'untouched. STRL fair value moved to the current analyst mean $836.71 (was a stale $918.67); 2 Jan price derived at '
+ '$306.22 from YTD +38.58%. Revenue growth and Rule of 40 still blank - fill from the Q3 release. || PREVIOUS ENTRY: '
+ 'Oct 18, 2026 - ISRG TEST APPROVED by Salee: buy the $8,277.68 rung on Wed 21 Oct (Bangkok night) only if worldwide '
  'da Vinci procedure growth is at or above 15% and full-year procedure-growth guidance is not lowered; otherwise hold '
  'and revisit 10 Dec. Results Tue 20 Oct. || PREVIOUS ENTRY: Oct 18, 2026 - BUY/SELL PLAN 19-30 OCT written. Two '
  'standing rules fired on the Fri 16 Oct close and were not flagged by the price refresh: NVDA rung 1 ($7,000, close '
@@ -1914,13 +1919,13 @@ STOCKS = [{'an': 83,
   'ex': 'NASDAQ',
   'fcfB': 0.482,
   'fpe': 23.77,
-  'fvAvg': 918.67,
+  'fvAvg': 836.71,
   'fvMax': 1000,
   'fvMin': 754,
   'g': 6,
   'gm': 23.81,
   'hi52': 1005.68,
-  'jan2': None,
+  'jan2': 306.22,
   'lo52': 263.45,
   'mcapB': 12.9776,
   'name': 'Sterling Infrastructure',
@@ -2052,7 +2057,7 @@ POS = {'GOOGL': {'budget': 78000, 'cost': 59475.92, 'shares': 217},
  'APP': {'budget': 18000, 'cost': None, 'shares': None},
  'COHR': {'budget': None, 'cost': None, 'shares': None},
  'PWR': {'budget': None, 'cost': None, 'shares': None},
- 'STRL': {'budget': None, 'cost': None, 'shares': None},
+ 'STRL': {'budget': 15000, 'cost': None, 'shares': None},
  'FSLR': {'budget': None, 'cost': 2003.56, 'shares': 10},
  'NFLX': {'budget': None, 'cost': None, 'shares': None},
  'CAT': {'budget': 15000, 'cost': 4888.55, 'shares': 6},
@@ -5180,7 +5185,7 @@ M3 = {'GOOGL': {'pfcf': 73.06, 'ev': 21.6, 'de': 0.18},
  'CIEN': {'pfcf': None, 'ev': None, 'de': None}}
 
 SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
- 'updated': 'Oct 18, 2026',
+ 'updated': 'Oct 19, 2026',
  'note': '⚠️ READ THIS FIRST. On 10 Sep 2026 the board was restructured to 10 groups, 38 funded names, 5 back-up names '
          'and 13 sells, and ALL 38 budgets were reset. EVERY AMOUNT WRITTEN IN A ROW DATED BEFORE 10 SEP 2026 REFERS '
          'TO THE OLD BUDGET and must be checked against the new one before it is acted on - the tranche sizes in those '
@@ -11068,7 +11073,44 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                  'before the print.',
             'cond': 'TEST APPROVED BY SALEE 18 OCT: worldwide da Vinci procedure growth at or above 15% and full-year '
                     'procedure-growth guidance not lowered. Pass = Day LIMIT at the 20 Oct close, cap +1%, not in the '
-                    'first 30 minutes. Fail = hold, revisit 10 Dec. Last close $426.70, fair value $504.15.'}]}
+                    'first 30 minutes. Fail = hold, revisit 10 Dec. Last close $426.70, fair value $504.15.'},
+           {'d': '2026-10-29',
+            'dl': 'STRL Q3 results Wed 28 Oct (date announced by Sterling) - act Thu 29 Oct night',
+            't': 'STRL',
+            'k': 'earnings',
+            'a': 'DECIDE',
+            'amt': 7500,
+            'c': 'confirmed',
+            'w': 'STERLING - first half ($7,500) of a $15,000 position, APPROVED BY SALEE 19 OCT, conditional on the '
+                 'Q3 test. Board #2 on priority; down 58% from its $1,006 high and the cause is not yet explained.',
+            'cond': 'THE TEST (all four): (1) signed backlog still growing from $4.33bn; (2) data-centre '
+                    '(E-Infrastructure) revenue still growing; (3) margins holding - no big fall in gross or operating '
+                    'margin; (4) full-year guidance not cut. FAIL any one, or the 58% fall is explained by a lost '
+                    'hyperscaler customer = stays WATCH, budget returns to the pool. PASS = Day LIMIT at the 28 Oct '
+                    'close, cap +1%, not in the first 30 minutes. Paid from the SGOV slice sold Wed 28 Oct, not from '
+                    'the $50k crash reserve. Fair value moved to the current analyst mean $836.71 (8 analysts) from a '
+                    'stale $918.67.'},
+           {'d': '2026-11-05',
+            'dl': 'STRL second half - at least one week after the first',
+            't': 'STRL',
+            'k': 'buy',
+            'a': 'DECIDE',
+            'amt': 7500,
+            'c': 'planned',
+            'w': 'STERLING second half ($7,500). Only if the first half filled on the 29 Oct test pass and nothing in '
+                 'the following week breaks the thesis.',
+            'cond': 'Day LIMIT at the previous close, cap +1%. Skip if the first half was not bought.'},
+           {'d': '2026-10-28',
+            'dl': 'Cash for STRL / MSFT / CAT if all pass',
+            't': 'SGOV',
+            'k': 'cash',
+            'a': 'SELL',
+            'amt': 10055,
+            'c': 'planned',
+            'w': 'SELL 100 SGOV (about $10,055) - the session BEFORE the 29-30 Oct buys (T+1 settlement).',
+            'cond': 'If every buy to 30 Oct passes (NVDA, ISRG, META, MSFT, CAT, STRL half 1) free cash would go about '
+                    '$4,200 negative; this slice covers it with room to spare. SGOV left after: about $69,800, still '
+                    'above the $50,000 crash reserve. If tests fail, the cash simply waits.'}]}
 
 SELLBOOK = {'updated': '2026-10-18',
  'comm': '0.20% + 7% VAT (0.214%), minimum 8.56',
@@ -12420,6 +12462,18 @@ BUYPLAN = {'title': 'Buy/Sell plan 19-30 Oct 2026',
            'tac': 'No order - budget is full.',
            'cond': 'Disclosure test: does Vertiv publish orders, backlog and book-to-bill again? Third quarter missing '
                    'would be a pattern.'},
+          {'bkk': 'Wed 28 Oct',
+           'us': 'Wed 28 Oct',
+           't': 'SGOV',
+           'a': 'SELL',
+           'amt': 10055,
+           'lim': 100.5,
+           'cap': 100.5,
+           'sh': 100,
+           'tac': 'SELL 100 SGOV, Day LIMIT at $100.50 (price barely moves). Session BEFORE the 29-30 Oct buys so the '
+                  'cash settles in time.',
+           'cond': 'Covers STRL + MSFT + CAT if they all pass. SGOV stays above the $50,000 crash reserve (about '
+                   '$69,800 left).'},
           {'bkk': 'Thu 29 Oct',
            'us': 'Thu 29 Oct',
            't': 'MSFT',
@@ -12431,6 +12485,15 @@ BUYPLAN = {'title': 'Buy/Sell plan 19-30 Oct 2026',
                   'LIMIT at the 28 Oct close, cap +1%.',
            'cond': 'Watch the gap between AI spending and AI revenue, not Azure alone. Buy only if revenue keeps pace '
                    'with capex.'},
+          {'bkk': 'Thu 29 Oct',
+           'us': 'Thu 29 Oct',
+           't': 'STRL',
+           'a': 'DECIDE',
+           'amt': 7500,
+           'tac': 'Results Wed 28 Oct. If the test passes: Day LIMIT at the 28 Oct close, cap +1%, not in the first 30 '
+                  'minutes. Half 2 ($7,500) earliest 5 Nov.',
+           'cond': 'APPROVED by Salee 19 Oct: backlog still growing, data-centre revenue growing, margins holding, '
+                   'guidance not cut. Fail any = stays WATCH.'},
           {'bkk': 'Fri 30 Oct',
            'us': 'Fri 30 Oct',
            't': 'CAT',
