@@ -3,37 +3,41 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Oct 19, 2026 - STRL APPROVED by Salee: $15,000 budget (1.5% minimum position) in two halves, conditional on the Q3 '
- 'results Wed 28 Oct (backlog growing, data-centre revenue growing, margins holding, guidance not cut). Half 1 $7,500 '
- 'decide Thu 29 Oct; half 2 earliest 5 Nov. Funded by selling 100 SGOV (~$10,055) on Wed 28 Oct; crash reserve '
- 'untouched. STRL fair value moved to the current analyst mean $836.71 (was a stale $918.67); 2 Jan price derived at '
- '$306.22 from YTD +38.58%. Revenue growth and Rule of 40 still blank - fill from the Q3 release. || PREVIOUS ENTRY: '
- 'Oct 18, 2026 - ISRG TEST APPROVED by Salee: buy the $8,277.68 rung on Wed 21 Oct (Bangkok night) only if worldwide '
- 'da Vinci procedure growth is at or above 15% and full-year procedure-growth guidance is not lowered; otherwise hold '
- 'and revisit 10 Dec. Results Tue 20 Oct. || PREVIOUS ENTRY: Oct 18, 2026 - BUY/SELL PLAN 19-30 OCT written. Two '
- 'standing rules fired on the Fri 16 Oct close and were not flagged by the price refresh: NVDA rung 1 ($7,000, close '
- '$214.13 at or below $215) -> BUY 32 sh Mon 19 Oct, limit $214.13, cap $216.27; CRWD sell-stop (close $227.39 below '
- '$243) -> SELL 20 sh Mon 19 Oct, floor $225.12, est. net $4,538.07. ISRG: the 13 Oct $413 GTD order is cancelled (not '
- 'on the 15 Oct screen); decide after the Tue 20 Oct results (proposed test pending Salee). META decide Thu 22 Oct (up '
- 'to $12,760.48). No SGOV sale needed: free cash $38,963.81 covers NVDA + META. || PREVIOUS ENTRY: Oct 17, 2026 (run '
- '00:30 UTC) - DAILY PRICE REFRESH: 63 of 63 closes updated to the Fri 2026-10-16 close (stockanalysis.com quote pages '
- "stamped 'At close: Oct 16, 2026, 4:00 PM EDT', validated against history tables; every number from a tool call this "
- 'session). Third straight risk-off day, the broadest yet: 14 moves past the 6% gate, each confirmed via a second '
- 'independent source - RKLB -7.98 (digrin 50.84), PANW -7.63 (fool.com quote widget 342.00, day range identical), STX '
- '-7.50 (financialcontent.com 639.01 at 4:00 PM EDT Oct 16), PLTR -7.22 (digrin), DDOG -7.19 (digrin), COHR -7.06 '
- "(digrin), FTNT -7.03 (Google Finance beta 'Closed: Oct 16' 169.13), CRWD -7.02 (digrin), ARM -6.94 (digrin), SNDK "
- "-6.85 (digrin), TSEM -6.78 (Google Finance 'Closed: Oct 16' 195.58), CIEN -6.67 (Google Finance 'Chiusura: 16 ott' "
- '332.73), BE -6.34 (digrin), NET -6.33 (benzinga Close 296.16/-6.37% dated Oct 16 6:14 PM EDT; quote-page closing '
- 'print 296.30 kept). ETN quote page was STALE (stamped Oct 15) - history-table fallback per resolution rule step 4: '
- 'close 391.25 (-2.79%). MPWR, SE and STRL history pages lagged (no Oct 16 row); their quote pages passed both the '
- 'stamp and prev-close tests. LHX +3.33 the largest gainer; AAPL +0.43, GE +0.59, V +0.72 the only other greens - V '
- 'closes above its stored range again - hi52 399.75 -> 402.61 and ath -> 402.61 (max(ath, close) precedent), a new '
- 'all-time high. CIEN hi52/lo52 remain None per precedent. SPY 763.25 (2026-10-16, -1.11%) written to BENCH; spyHigh '
- 'stays 779.09 of 2026-10-06 (SPY 2.03% below the high - the -15% crash-reserve trigger NOT tripped). SPY 763.25 '
- 'appended to the daily risk series; UST10 SKIPPED for 2026-10-16 - ycharts still shows Oct 15 (5.10, next release Oct '
- "16 pending) and the mortgagenewsdaily 10-day table's newest Close row is also Oct 15 (5.067); its top-of-page 5.100 "
- "carries no date stamp, so nothing met the provenance bar. HISTORY row appended for 2026-10-16; the 2026-10-15 row's "
- 'sha set to 3ae567d (its push commit). Prices only; fundamentals, POS, TRADES, GROUPS untouched.')
+ASOF = ('Oct 19, 2026 - FILLS BOOKED from the POEMS order screen (21:43 Bangkok): NVDA BUY 32 at 215.8482 = 6,921.92 (rung 1; '
+ 'position 452 sh, cost 86,302.20, room 8,697.80) and CRWD SELL 20 at 229.1648 = 4,573.49 net, realised +2,616.43 - '
+ 'CrowdStrike fully exited. Commissions estimated (0.214%) - true up from the contract notes. Free cash 36,615.38 (+ '
+ 'SGOV 794 sh). || PREVIOUS ENTRY: Oct 19, 2026 - STRL APPROVED by Salee: $15,000 budget (1.5% minimum position) in '
+ 'two halves, conditional on the Q3 results Wed 28 Oct (backlog growing, data-centre revenue growing, margins holding, '
+ 'guidance not cut). Half 1 $7,500 decide Thu 29 Oct; half 2 earliest 5 Nov. Funded by selling 100 SGOV (~$10,055) on '
+ 'Wed 28 Oct; crash reserve untouched. STRL fair value moved to the current analyst mean $836.71 (was a stale '
+ '$918.67); 2 Jan price derived at $306.22 from YTD +38.58%. Revenue growth and Rule of 40 still blank - fill from the '
+ 'Q3 release. || PREVIOUS ENTRY: Oct 18, 2026 - ISRG TEST APPROVED by Salee: buy the $8,277.68 rung on Wed 21 Oct '
+ '(Bangkok night) only if worldwide da Vinci procedure growth is at or above 15% and full-year procedure-growth '
+ 'guidance is not lowered; otherwise hold and revisit 10 Dec. Results Tue 20 Oct. || PREVIOUS ENTRY: Oct 18, 2026 - '
+ 'BUY/SELL PLAN 19-30 OCT written. Two standing rules fired on the Fri 16 Oct close and were not flagged by the price '
+ 'refresh: NVDA rung 1 ($7,000, close $214.13 at or below $215) -> BUY 32 sh Mon 19 Oct, limit $214.13, cap $216.27; '
+ 'CRWD sell-stop (close $227.39 below $243) -> SELL 20 sh Mon 19 Oct, floor $225.12, est. net $4,538.07. ISRG: the 13 '
+ 'Oct $413 GTD order is cancelled (not on the 15 Oct screen); decide after the Tue 20 Oct results (proposed test '
+ 'pending Salee). META decide Thu 22 Oct (up to $12,760.48). No SGOV sale needed: free cash $38,963.81 covers NVDA + '
+ 'META. || PREVIOUS ENTRY: Oct 17, 2026 (run 00:30 UTC) - DAILY PRICE REFRESH: 63 of 63 closes updated to the Fri '
+ "2026-10-16 close (stockanalysis.com quote pages stamped 'At close: Oct 16, 2026, 4:00 PM EDT', validated against "
+ 'history tables; every number from a tool call this session). Third straight risk-off day, the broadest yet: 14 moves '
+ 'past the 6% gate, each confirmed via a second independent source - RKLB -7.98 (digrin 50.84), PANW -7.63 (fool.com '
+ 'quote widget 342.00, day range identical), STX -7.50 (financialcontent.com 639.01 at 4:00 PM EDT Oct 16), PLTR -7.22 '
+ "(digrin), DDOG -7.19 (digrin), COHR -7.06 (digrin), FTNT -7.03 (Google Finance beta 'Closed: Oct 16' 169.13), CRWD "
+ "-7.02 (digrin), ARM -6.94 (digrin), SNDK -6.85 (digrin), TSEM -6.78 (Google Finance 'Closed: Oct 16' 195.58), CIEN "
+ "-6.67 (Google Finance 'Chiusura: 16 ott' 332.73), BE -6.34 (digrin), NET -6.33 (benzinga Close 296.16/-6.37% dated "
+ 'Oct 16 6:14 PM EDT; quote-page closing print 296.30 kept). ETN quote page was STALE (stamped Oct 15) - history-table '
+ 'fallback per resolution rule step 4: close 391.25 (-2.79%). MPWR, SE and STRL history pages lagged (no Oct 16 row); '
+ 'their quote pages passed both the stamp and prev-close tests. LHX +3.33 the largest gainer; AAPL +0.43, GE +0.59, V '
+ '+0.72 the only other greens - V closes above its stored range again - hi52 399.75 -> 402.61 and ath -> 402.61 '
+ '(max(ath, close) precedent), a new all-time high. CIEN hi52/lo52 remain None per precedent. SPY 763.25 (2026-10-16, '
+ '-1.11%) written to BENCH; spyHigh stays 779.09 of 2026-10-06 (SPY 2.03% below the high - the -15% crash-reserve '
+ 'trigger NOT tripped). SPY 763.25 appended to the daily risk series; UST10 SKIPPED for 2026-10-16 - ycharts still '
+ "shows Oct 15 (5.10, next release Oct 16 pending) and the mortgagenewsdaily 10-day table's newest Close row is also "
+ 'Oct 15 (5.067); its top-of-page 5.100 carries no date stamp, so nothing met the provenance bar. HISTORY row appended '
+ "for 2026-10-16; the 2026-10-15 row's sha set to 3ae567d (its push commit). Prices only; fundamentals, POS, TRADES, "
+ 'GROUPS untouched.')
 
 GROUPS = ['Hyperscalers & Model Owners',
  'AI Chips & Chip Design',
@@ -2009,7 +2013,7 @@ POS = {'GOOGL': {'budget': 78000, 'cost': 59475.92, 'shares': 217},
  'MSFT': {'budget': 58000, 'cost': 52878.96, 'shares': 117},
  'META': {'budget': 52000, 'cost': 39239.51, 'shares': 59.5},
  'AAPL': {'budget': 11437.61, 'cost': 11437.61, 'shares': 46},
- 'NVDA': {'budget': 95000, 'cost': 79380.28, 'shares': 420},
+ 'NVDA': {'budget': 95000, 'cost': 86302.2, 'shares': 452},
  'TSM': {'budget': 74000, 'cost': 64477.71, 'shares': 170.5},
  'AVGO': {'budget': 50000, 'cost': 30125.18, 'shares': 88.5},
  'AMD': {'budget': 24000, 'cost': 13789.22, 'shares': 55},
@@ -2050,7 +2054,7 @@ POS = {'GOOGL': {'budget': 78000, 'cost': 59475.92, 'shares': 217},
  'V': {'budget': 9000, 'cost': 6769.05, 'shares': 18},
  'HOOD': {'budget': None, 'cost': None, 'shares': None},
  'SE': {'budget': 0, 'cost': None, 'shares': None},
- 'CRWD': {'budget': None, 'cost': 1957.06, 'shares': 20},
+ 'CRWD': {'budget': None, 'cost': None, 'shares': None},
  'PANW': {'budget': 9494.82, 'cost': 9494.82, 'shares': 38},
  'NET': {'budget': None, 'cost': None, 'shares': None},
  'FTNT': {'budget': None, 'cost': None, 'shares': None},
@@ -4300,42 +4304,70 @@ TRADES = [{'date': 'Mar 2, 2026',
   'note': 'ASML 4 at 1,614.9799 (POEMS Day limit at the ask, POEMS order 600536, Done 10:36:51 pm Bangkok; cap was '
           '1,666.50). Gross 6,459.92 + commission 13.82 (0.214%, min 8.56 - CONFIRMED 16 Oct: POEMS position cost '
           'matches to the cent) = 6,473.74. Rung 1 of the post-results ladder. Position now 17 sh, cost 22,867.80 of '
-          '41,000 budget (room 18,132.20: rung 2 of 6,606 on the January results, 10,000 deliberately held back).'}]
+          '41,000 budget (room 18,132.20: rung 2 of 6,606 on the January results, 10,000 deliberately held back).'},
+ {'date': 'Oct 19, 2026',
+  'action': 'BUY',
+  't': 'NVDA',
+  'shares': 32,
+  'price': 215.8482,
+  'amount': 6921.92,
+  'est': True,
+  'note': 'NVDA ladder rung 1 (close $214.13 on 16 Oct at or below $215, approved 4 Oct). 32 at 215.8482, Day LIMIT '
+          '216 (cap 216.27), Done 9:43:46 pm Bangkok, POEMS order 697610 (an earlier 215 limit, order 697043, was '
+          'withdrawn). Gross 6,907.14 + commission 14.78 (0.214%, est. - true up from the contract note) = 6,921.92. '
+          'Position now 452 sh, cost 86,302.20 of 95,000 (room 8,697.80: rung 2 5,619.72 at or below $180, rung 3 '
+          '3,000 after the 18 Nov results).'},
+ {'date': 'Oct 19, 2026',
+  'action': 'SELL',
+  't': 'CRWD',
+  'shares': 20,
+  'price': 229.1648,
+  'amount': 4573.49,
+  'est': True,
+  'cost_released': 1957.06,
+  'note': 'SELL STOP EXECUTED - last 20 CROWDSTRIKE at 229.1648 (stop $243 fired on the 16 Oct close of $227.39; Day '
+          'LIMIT 229, floor was 225.12), Done 9:39:01 pm Bangkok, POEMS order 696416. Gross 4,583.30 less fees 9.81 '
+          '(est. 0.214% - the 5 Oct sale carried 11.73 incl. SEC/TAF; true up from the contract note) = 4,573.49. Cost '
+          'of the 20 sold 1,957.06, so REALISED PLUS 2,616.43 (+133.7%). CrowdStrike fully exited: 40 shares, total '
+          'realised about +6,072.64.'}]
 
-SELLPLAN = ['CRWD']
+SELLPLAN = []
 
 CASH = {'currency': 'USD',
- 'amount': 38963.81,
+ 'amount': 36615.38,
  'broker': 'POEMS (Phillip Securities)',
- 'asof': 'Oct 16, 2026 - POEMS Live Cash Balance 06:45 am Bangkok: USD 55,058.84, shown BEFORE settlement of the 15 '
-         'Oct buys. Board cash = 55,058.84 less TSM 9,621.29 and ASML 6,473.74 = 38,963.81 after settlement. Versus '
-         'the derived 55,050.83, POEMS is +8.01 higher with no trades in between - a small credit (interest or '
-         'dividend) to itemise from the October statement with the earlier +146.84 and +96.46. Positions reconciled '
-         'the same morning: 37 stock lines + SGOV, cost 777,052.88, match POEMS to the cent, and the POEMS cost on TSM '
-         '(64,477.71) and ASML (22,867.80) confirms the two commission estimates exactly. || PREVIOUS: Oct 15, 2026 - '
-         "after tonight's two fills (TSM 23 sh 9,621.29, ASML 4 sh 6,473.74, both incl. estimated commission) "
-         'totalling 16,095.03: 55,050.83 - 16,095.03 = 38,955.80. SGOV 79,991.56 still parked, so total liquid = '
-         '118,947.36. To be read against the POEMS Live Cash Balance after T+1 settlement. || PREVIOUS: Oct 13, 2026 - '
-         'SGOV PARK FILLED: 794 sh at 100.5299 (POEMS, Done 11:04:13 pm Bangkok) = gross 79,820.74 + est. commission '
-         '170.82 = 79,991.56. Free cash 135,042.39 - 79,991.56 = 55,050.83. SGOV held as a cash-equivalent (see '
-         'parked), so total liquid = 135,042.39. To be read against the POEMS Live Cash Balance after T+1 settlement. '
-         '|| PREVIOUS: Oct 13, 2026 - after the 12 Oct fills (APH, CRDO, V) totalling 12,973.99 incl. estimated '
-         'commission: 148,016.38 - 12,973.99 = 135,042.39. To be read against the POEMS Live Cash Balance after '
-         'settlement. || PREVIOUS: Oct 10, 2026 - POEMS Live Cash Balance 07:53 am Bangkok: USD 170,344.36, shown '
-         'BEFORE settlement of the 9 Oct buys. Board cash = 170,344.36 less MRVL 12,712.45 and AMAT 9,615.53 = '
-         '148,016.38 after settlement. Versus the 6 Oct balance of 170,247.90, POEMS is +96.46 higher with no trades '
-         'in between - a further early-October credit (most likely dividends), to itemise from the October statement '
-         'together with the earlier +146.84. Positions reconciled the same morning: 37 lines, cost 667,992.30, match '
-         'POEMS to the cent. || PREVIOUS: Oct 6, 2026 - POEMS Live Cash Balance 170,247.90. RECONCILED 7 Oct: POEMS '
-         'statement cash at 30 Sep = 168,539.69; less MU buy 1 Oct 14,703.40, plus ORCL 10,851.50 and CRWD 5,413.27 '
-         'sale proceeds = 170,101.06; the remaining +146.84 is early-October credits (most likely dividends) to '
-         'itemise from the October statement. (The earlier +172.61 figure came from a board-derived cash that was '
-         '25.77 too low.) || PREVIOUS: Oct 6, 2026 - read off the POEMS Live Cash Balance screen (09:23 am, before '
-         'settlement of the 5 Oct sales): USD 170,247.90. Derived from the board: 153,810.52 + 10,851.50 (ORCL) + '
-         '5,413.27 (CRWD) = 170,075.29; POEMS is +172.61 higher - most likely dividends/interest credited since 2 Oct, '
-         'to be itemised. || PREVIOUS: Oct 2, 2026 (153862.15 less 51.63 of commission under-booked on the five orders '
-         'of 28 Sep and 1 Oct, found when the POEMS positions screen of 2 Oct was reconciled. Positions now match '
-         'POEMS to the cent on all 38 lines. Cash itself is derived, not yet read off a POEMS cash screen)',
+ 'asof': "Oct 19, 2026 - after tonight's two fills: CRWD sale +4,573.49 (est. fees) and NVDA buy -6,921.92 (est. "
+         'commission): 38,963.81 + 4,573.49 - 6,921.92 = 36,615.38. CRWD proceeds settle T+1. SGOV 794 sh still '
+         'parked. To be read against the POEMS Live Cash Balance. || PREVIOUS: Oct 16, 2026 - POEMS Live Cash Balance '
+         '06:45 am Bangkok: USD 55,058.84, shown BEFORE settlement of the 15 Oct buys. Board cash = 55,058.84 less TSM '
+         '9,621.29 and ASML 6,473.74 = 38,963.81 after settlement. Versus the derived 55,050.83, POEMS is +8.01 higher '
+         'with no trades in between - a small credit (interest or dividend) to itemise from the October statement with '
+         'the earlier +146.84 and +96.46. Positions reconciled the same morning: 37 stock lines + SGOV, cost '
+         '777,052.88, match POEMS to the cent, and the POEMS cost on TSM (64,477.71) and ASML (22,867.80) confirms the '
+         "two commission estimates exactly. || PREVIOUS: Oct 15, 2026 - after tonight's two fills (TSM 23 sh 9,621.29, "
+         'ASML 4 sh 6,473.74, both incl. estimated commission) totalling 16,095.03: 55,050.83 - 16,095.03 = 38,955.80. '
+         'SGOV 79,991.56 still parked, so total liquid = 118,947.36. To be read against the POEMS Live Cash Balance '
+         'after T+1 settlement. || PREVIOUS: Oct 13, 2026 - SGOV PARK FILLED: 794 sh at 100.5299 (POEMS, Done 11:04:13 '
+         'pm Bangkok) = gross 79,820.74 + est. commission 170.82 = 79,991.56. Free cash 135,042.39 - 79,991.56 = '
+         '55,050.83. SGOV held as a cash-equivalent (see parked), so total liquid = 135,042.39. To be read against the '
+         'POEMS Live Cash Balance after T+1 settlement. || PREVIOUS: Oct 13, 2026 - after the 12 Oct fills (APH, CRDO, '
+         'V) totalling 12,973.99 incl. estimated commission: 148,016.38 - 12,973.99 = 135,042.39. To be read against '
+         'the POEMS Live Cash Balance after settlement. || PREVIOUS: Oct 10, 2026 - POEMS Live Cash Balance 07:53 am '
+         'Bangkok: USD 170,344.36, shown BEFORE settlement of the 9 Oct buys. Board cash = 170,344.36 less MRVL '
+         '12,712.45 and AMAT 9,615.53 = 148,016.38 after settlement. Versus the 6 Oct balance of 170,247.90, POEMS is '
+         '+96.46 higher with no trades in between - a further early-October credit (most likely dividends), to itemise '
+         'from the October statement together with the earlier +146.84. Positions reconciled the same morning: 37 '
+         'lines, cost 667,992.30, match POEMS to the cent. || PREVIOUS: Oct 6, 2026 - POEMS Live Cash Balance '
+         '170,247.90. RECONCILED 7 Oct: POEMS statement cash at 30 Sep = 168,539.69; less MU buy 1 Oct 14,703.40, plus '
+         'ORCL 10,851.50 and CRWD 5,413.27 sale proceeds = 170,101.06; the remaining +146.84 is early-October credits '
+         '(most likely dividends) to itemise from the October statement. (The earlier +172.61 figure came from a '
+         'board-derived cash that was 25.77 too low.) || PREVIOUS: Oct 6, 2026 - read off the POEMS Live Cash Balance '
+         'screen (09:23 am, before settlement of the 5 Oct sales): USD 170,247.90. Derived from the board: 153,810.52 '
+         '+ 10,851.50 (ORCL) + 5,413.27 (CRWD) = 170,075.29; POEMS is +172.61 higher - most likely dividends/interest '
+         'credited since 2 Oct, to be itemised. || PREVIOUS: Oct 2, 2026 (153862.15 less 51.63 of commission '
+         'under-booked on the five orders of 28 Sep and 1 Oct, found when the POEMS positions screen of 2 Oct was '
+         'reconciled. Positions now match POEMS to the cent on all 38 lines. Cash itself is derived, not yet read off '
+         'a POEMS cash screen)',
  'parked': {'t': 'SGOV',
             'name': 'iShares 0-3 Month Treasury Bond ETF',
             'shares': 794,
@@ -4381,14 +4413,14 @@ REALIZED = [{'t': 'HOOD', 'g': 8, 'amount': 897.82},
  {'t': 'SKHY', 'g': 3, 'amount': 950.77},
  {'t': 'INTC', 'g': 2, 'amount': 1968.56},
  {'t': 'ORCL', 'g': 5, 'amount': -1376.93},
- {'t': 'CRWD', 'g': 5, 'amount': 3456.21}]
+ {'t': 'CRWD', 'g': 5, 'amount': 6072.64}]
 
 TOTALS = {'investedEverUSD': 773097.25,
  'investedEverTHB': 24617752,
- 'soldCostUSD': 88435.33,
- 'soldCostTHB': 2880069,
- 'realizedUSD': 3279.04,
- 'realizedTHB': 108594,
+ 'soldCostUSD': 90392.39,
+ 'soldCostTHB': 2945924,
+ 'realizedUSD': 5895.47,
+ 'realizedTHB': 196637,
  'fx': 33.65,
  'inceptionDate': 'Jul 15, 2025',
  'targetUSD': 1000000,
@@ -4635,13 +4667,13 @@ SOLD = [{'t': 'HOOD',
   'g': 5,
   'lastDate': '2026-10-05'},
  {'t': 'CRWD',
-  'qty': 20,
-  'costUSD': 1957.06,
-  'costTHB': 65855,
-  'glUSD': 3456.21,
-  'glTHB': 116301,
+  'qty': 40,
+  'costUSD': 3914.12,
+  'costTHB': 131710,
+  'glUSD': 6072.64,
+  'glTHB': 204344,
   'g': 5,
-  'lastDate': '2026-10-05'}]
+  'lastDate': '2026-10-19'}]
 
 MONTHLY = [{'ym': '2025-07',
   'buyUSD': 19750.54,
@@ -8326,8 +8358,8 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'k': 'trigger',
             'a': 'DECIDE',
             'amt': 0,
-            'w': 'DECIDE the last 20 CRWD after Q3 results (1 Dec). Back-up held with zero budget; stop at $243 '
-                 'meanwhile.',
+            'w': 'CLOSED 19 Oct - CRWD fully sold by the $243 stop; nothing left to decide on 10 Dec. | DECIDE the '
+                 'last 20 CRWD after Q3 results (1 Dec). Back-up held with zero budget; stop at $243 meanwhile.',
             'cond': 'Promote to funded when forward P/E falls below ~80 OR net margin rises above 8%. REFRESHED 10 Sep '
                     '2026: forward P/E is 147.47, not the 177.75 this board carried - the multiple has compressed, but '
                     'it is still nearly twice the trigger. Net margin 0.83%. Q2 FY2027 (ended 31 Jul 2026): revenue '
@@ -8335,7 +8367,7 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'loss a year earlier; free cash flow 377.4m. ⚠️ THE CASH TEST IS THE ONE THAT FAILS: TTM free cash '
                     'flow 1.61bn against TTM stock compensation of 1.244bn, so only 366m of the cash flow is left once '
                     'the staff are paid - a 212.77bn market cap on that is 581 times. Held at +112%.',
-            'c': 'open'},
+            'c': 'cancelled'},
            {'d': '2026-12-10',
             'dl': '⚠️ SYSTEMATIC FAULT FIXED - and the refresh will re-create it',
             't': 'CRWD',
@@ -8376,10 +8408,11 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'k': 'data',
             'a': 'DECIDE',
             'amt': 0,
-            'c': 'open',
-            'w': 'THE BOARD HOLDS $21,798.35 OF REAL MONEY IN EIGHT NAMES THAT CARRY NO APPROVED BUDGET AT ALL. THIS '
-                 'IS THE MIRROR IMAGE OF THE FAULT I HAVE BEEN CHASING FOR A MONTH: I KEPT FINDING APPROVED MONEY WITH '
-                 'NO RULE. THIS IS SPENT MONEY WITH NO APPROVAL.',
+            'c': 'cancelled',
+            'w': 'CLOSED 19 Oct - CRWD fully sold by the $243 stop; nothing left to decide on 10 Dec. | THE BOARD '
+                 'HOLDS $21,798.35 OF REAL MONEY IN EIGHT NAMES THAT CARRY NO APPROVED BUDGET AT ALL. THIS IS THE '
+                 'MIRROR IMAGE OF THE FAULT I HAVE BEEN CHASING FOR A MONTH: I KEPT FINDING APPROVED MONEY WITH NO '
+                 'RULE. THIS IS SPENT MONEY WITH NO APPROVAL.',
             'cond': 'FOUND WHILE CHECKING A SLIDE, WHICH IS HOW EVERY ONE OF THESE HAS BEEN FOUND. CrowdStrike '
                     'appeared on the "Companies Building the Next Decade" slide, and when I looked it up the board '
                     'showed 40 SHARES AT A COST OF $3,914.12 AGAINST A BUDGET OF NONE. THE SWEEP THEN FOUND SEVEN '
@@ -10755,13 +10788,13 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'dl': 'Standing',
             't': 'NVDA',
             'k': 'limit',
-            'w': '⚠️ TRIGGERED by the Fri 16 Oct close of $214.13 (at or below $215) - order placed as the dated row '
-                 'Mon 19 Oct. Mark done when filled. | Ladder rung 1 - any close at or below $215 (raised from $200, '
-                 'Salee approved 4 Oct)',
+            'w': 'DONE 19 Oct - rung 1 filled (32 at 215.85). | ⚠️ TRIGGERED by the Fri 16 Oct close of $214.13 (at or '
+                 'below $215) - order placed as the dated row Mon 19 Oct. Mark done when filled. | Ladder rung 1 - any '
+                 'close at or below $215 (raised from $200, Salee approved 4 Oct)',
             'a': 'LIMIT',
             'amt': 7000,
             'cond': '-12.4% from the 4 Sep close of $230.36.',
-            'c': 'standing'},
+            'c': 'done'},
            {'d': '',
             'dl': 'Standing',
             't': 'NVDA',
@@ -10978,13 +11011,13 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             't': 'CRWD',
             'k': 'stop',
             'a': 'STOP',
-            'w': '⚠️ STOP FIRED by the Fri 16 Oct close of $227.39 (below $243) - sell order is the dated row Mon 19 '
-                 'Oct. | SELL STOP (Salee approved 5 Oct): sell the remaining 20 CRWD if any close is at or below $243 '
-                 '(10% under the 2 Oct close of $270.04).',
+            'w': 'DONE 19 Oct - sold 20 at 229.16; position closed. | ⚠️ STOP FIRED by the Fri 16 Oct close of $227.39 '
+                 '(below $243) - sell order is the dated row Mon 19 Oct. | SELL STOP (Salee approved 5 Oct): sell the '
+                 'remaining 20 CRWD if any close is at or below $243 (10% under the 2 Oct close of $270.04).',
             'amt': 0,
             'cond': 'Protects the half kept for momentum. Otherwise decide at the 10 Dec review after Q3 results on 1 '
                     'Dec. Keep the remaining 20 if margin is rising toward 8%.',
-            'c': 'standing'},
+            'c': 'done'},
            {'d': '',
             't': 'CASH',
             'k': 'admin',
@@ -11042,10 +11075,11 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             't': 'CRWD',
             'k': 'stop',
             'a': 'SELL',
-            'amt': 4538.07,
-            'c': 'confirmed',
-            'w': 'SELL the remaining 20 CRWD - the $243 stop (approved 5 Oct) fired on the Fri 16 Oct close of '
-                 '$227.39.',
+            'amt': 4573.49,
+            'c': 'done',
+            'w': 'FILLED 19 Oct: 20 sh at 229.1648, net 4,573.49, realised +2,616.43 (POEMS 696416). CrowdStrike fully '
+                 'exited. | SELL the remaining 20 CRWD - the $243 stop (approved 5 Oct) fired on the Fri 16 Oct close '
+                 'of $227.39.',
             'cond': 'Est. proceeds 4,538.07 net (20 x 227.39 = 4,547.80, commission 9.73). Day LIMIT SELL at the floor '
                     '$225.12 (Friday close -1%): fills at the market price if the stock opens above it. If it opens '
                     'below the floor, re-place Tuesday at Monday close -1%. Exit within two sessions - a stop that '
@@ -11055,10 +11089,11 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             't': 'NVDA',
             'k': 'limit',
             'a': 'BUY',
-            'amt': 7000,
-            'c': 'confirmed',
-            'w': 'NVDA rung 1 - $7,000. Triggered by the Fri 16 Oct close of $214.13 (rule: any close at or below '
-                 '$215, approved 4 Oct).',
+            'amt': 6921.92,
+            'c': 'done',
+            'w': 'FILLED 19 Oct: 32 sh at 215.8482 = 6,921.92 incl. est. commission (POEMS 697610). | NVDA rung 1 - '
+                 '$7,000. Triggered by the Fri 16 Oct close of $214.13 (rule: any close at or below $215, approved 4 '
+                 'Oct).',
             'cond': '32 shares, Day LIMIT $214.13, cap $216.27 (+1%). If unfilled, the rung stays live: re-place each '
                     'session while the latest close is at or below $215. Rung 2 ($5,619.72 at or below $180) '
                     'unchanged. Profitable company - the rate rule does not apply.'},
@@ -11112,7 +11147,7 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     '$4,200 negative; this slice covers it with room to spare. SGOV left after: about $69,800, still '
                     'above the $50,000 crash reserve. If tests fail, the cash simply waits.'}]}
 
-SELLBOOK = {'updated': '2026-10-18',
+SELLBOOK = {'updated': '2026-10-19',
  'comm': '0.20% + 7% VAT (0.214%), minimum 8.56',
  'note': "SEP 12, 2026 - ZETA'S LIMIT LOWERED 32.50 TO 31.00, and NOT because of the viral 'rich before 2030' graphic "
          "that prompted the review. ⚠️ THE OLD LIMIT WAS ABOVE THE STREET'S OWN TARGET: consensus 31.36 across 15 "
@@ -11560,14 +11595,14 @@ SELLBOOK = {'updated': '2026-10-18',
            'conv': 'High',
            'why': 'SELL STOP FIRED: the Fri 16 Oct close of $227.39 is below the $243 stop approved 5 Oct for the half '
                   'kept for momentum. Quality score 5 after the 18 Oct Rule-of-40 change.',
-           'after': 'Position closed. CrowdStrike leaves the board as a holding; the 1 Dec results are read for the 10 '
-                    'Dec review only.',
+           'after': 'Position closed 19 Oct (POEMS 696416). CrowdStrike leaves the holdings; total realised on 40 '
+                    'shares about +6,072.64.',
            'budget': None,
-           'status': 'open',
-           'fillDate': None,
-           'fillPx': None,
-           'proceeds': None,
-           'realized': None}]}
+           'status': 'done',
+           'fillDate': '2026-10-19',
+           'fillPx': 229.1648,
+           'proceeds': 4573.49,
+           'realized': 2616.43}]}
 
 HISTORY = [{'d': '2026-07-28',
   'sha': 'aec52e7',
@@ -12406,32 +12441,7 @@ BUYPLAN = {'title': 'Buy/Sell plan 19-30 Oct 2026',
            'Never more than +1% above the reference close.',
            'Commission 0.214%, minimum $8.56 - share counts already allow for it.',
            'Send the POEMS confirmation the same day; Claude books the fill.'],
- 'rows': [{'bkk': 'Mon 19 Oct',
-           'us': 'Mon 19 Oct',
-           't': 'CRWD',
-           'a': 'SELL',
-           'amt': 4538.07,
-           'lim': 225.12,
-           'cap': 225.12,
-           'sh': 20,
-           'tac': 'SELL STOP FIRED (Friday close $227.39, below $243). Day LIMIT SELL 20 sh at the floor $225.12 - it '
-                  'fills at the market if the stock is above the floor. If it opens below, re-place Tuesday at Monday '
-                  'close -1%. Out within two sessions.',
-           'cond': 'Stop approved 5 Oct. Est. net proceeds $4,538.07; realised gain about +$2,581.01 on the 20 shares '
-                   '(avg cost $97.85).'},
-          {'bkk': 'Mon 19 Oct',
-           'us': 'Mon 19 Oct',
-           't': 'NVDA',
-           'a': 'BUY',
-           'amt': 7000,
-           'lim': 214.13,
-           'cap': 216.27,
-           'sh': 32,
-           'tac': 'Rung 1 TRIGGERED (Friday close $214.13, at or below $215). Day LIMIT $214.13; if it opens higher, '
-                  'raise once to the cap $216.27, never above. Unfilled = rung stays live while closes are at or below '
-                  '$215.',
-           'cond': 'Ladder approved 4 Oct. Rung 2 ($5,619.72) waits for a close at or below $180.'},
-          {'bkk': 'Wed 21 Oct',
+ 'rows': [{'bkk': 'Wed 21 Oct',
            'us': 'Wed 21 Oct',
            't': 'ISRG',
            'a': 'DECIDE',
