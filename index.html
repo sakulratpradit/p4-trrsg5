@@ -2395,8 +2395,8 @@ function renderTiers(){
     {lab:"Tier 1",rng:"$100,000 and above",lo:100000,hi:Infinity,v:"--pb8",ink:"--pinv"},
     {lab:"Tier 2",rng:"$50,000 – $99,999",lo:50000,hi:100000,v:"--pb7",ink:"--pinv"},
     {lab:"Tier 3",rng:"$25,000 – $49,999",lo:25000,hi:50000,v:"--pb6",ink:"--pinv"},
-    {lab:"Tier 4",rng:"$10,000 – $24,999",lo:10000,hi:25000,v:"--pb4",ink:"--pinv"},
-    {lab:"Tier 5",rng:"under $10,000",lo:0.01,hi:10000,v:"--pb3",ink:"--pinv"}
+    {lab:"Tier 4",rng:"$15,000 – $24,999 (the 1.5% minimum)",lo:15000,hi:25000,v:"--pb4",ink:"--pinv"},
+    {lab:"Tier 5",rng:"under $15,000 — below the minimum, to be raised to $15,000 or exited",lo:0.01,hi:15000,v:"--pb3",ink:"--pinv"}
   ];
   var pick=function(T){ return rows.filter(function(r){ return r.b>=T.lo && r.b<T.hi; }); };
   var sum=function(a){ return a.reduce(function(x,r){ return x+r.b; },0); };
@@ -2410,7 +2410,9 @@ function renderTiers(){
   H.push('<h3>Budget tiers &mdash; where the '+m0(TARGET)+' is committed</h3>');
   H.push('<p class="sub">Every name carrying a budget, sorted by the size of its limit. '+
     'Read live from the position book, so this can never drift from the rest of the board. '+
-    'Budgets are ceilings, not orders — the pale overlay on each bar is the part already spent.</p>');
+    'Budgets are ceilings, not orders — the pale overlay on each bar is the part already spent. '+
+    'Policy (method of 12 Oct 2026): every position is built to at least 1.5% of the $1.0M target, i.e. $15,000, or exited; '+
+    'Tier 4 starts at that floor. Tier 5 lists the names still below it — it is a to-do list, not a tier, and disappears once every budget is at or above $15,000.</p>');
 
   H.push('<div class="schead">');
   H.push('<div class="kpi"><div class="k">Target</div><div class="v">'+m0(TARGET)+'</div><div class="m">the Pillar 4 mandate</div></div>');
