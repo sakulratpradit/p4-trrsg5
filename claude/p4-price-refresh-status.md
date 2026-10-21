@@ -1,5 +1,17 @@
 # P4 price refresh status
 
+- **Run time:** 2026-10-21 03:33 UTC (scheduled 03:30 backup run) — **NO-OP: the 00:30 run already succeeded.** FIRST CHECK passed: all 63 of 63 tickers carry pxd = 2026-10-20, the most recent completed US trading day, so this run stopped per the job rules and changed no prices.
+- **Trading date recorded:** 2026-10-20 (Tue) — written by the 00:30 run.
+- **Result:** NOT PUSHED by this run (nothing to push); board is current via the 00:30 run's push.
+- **Commit:** 5e42bd5 (the 00:30 run's price push; repo HEAD at this run's start: ac86149).
+- **Prices changed this run:** 0 (63 of 63 changed by the 00:30 run).
+- **Unresolved tickers:** none.
+- **Blockers:** none. Known open gap carried over, not touched by this run per the stop rule: UST10 2026-10-20 still absent from risk_series.json (ycharts had not served it at 00:30; the monthly risk run copes with gaps).
+
+---
+
+## Retained report of the successful 00:30 UTC run (2026-10-21), which did the work
+
 - **Run time:** 2026-10-21 00:33–01:05 UTC (scheduled 00:30 run)
 - **Trading date recorded:** 2026-10-20 (Tue)
 - **Result:** PUSHED
