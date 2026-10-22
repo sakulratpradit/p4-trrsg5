@@ -181,8 +181,10 @@ S&P 500 BENCHMARK (added 7 Oct 2026, quality scorecard tile 2)
 After the stock closes are written, also read SPY's official close from
 https://stockanalysis.com/etf/spy/ (quote page, same rules as stocks) and set
 BENCH['spyLast'] (float) and BENCH['spyLastD'] ('YYYY-MM-DD') in portfolio_data.py
-with the safe constant-edit helper. Touch nothing else in BENCH. If SPY cannot
-be read, leave BENCH unchanged - the tile still works with the older value.
+with the safe constant-edit helper. Do the same for QQQ from
+https://stockanalysis.com/etf/qqq/ -> BENCH['qqqLast'] and BENCH['qqqLastD'] (added 22 Oct 2026, second
+benchmark tile). Touch nothing else in BENCH. If SPY or QQQ cannot be read, leave that pair unchanged -
+the tiles still work with the older value.
 
 
 ## S&P 500 running high (added 10 Oct 2026, crash-reserve rule)
