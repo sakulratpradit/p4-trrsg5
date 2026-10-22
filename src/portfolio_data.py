@@ -11250,7 +11250,21 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'sends the POEMS statement line; (2) Claude drafts the reclaim request to POEMS citing the iShares '
                     'QII memo; (3) the SGOV yield assumption on the Portfolio tab (3.6%) is cut to the net rate until '
                     'resolved. Thai-side treatment of foreign income held at a Thai broker is a separate question for '
-                    'the tax adviser. Reminder also set in the chat for 09:00 Bangkok on 9 Nov.'}]}
+                    'the tax adviser. Reminder also set in the chat for 09:00 Bangkok on 9 Nov.'},
+           {'d': '2026-12-10',
+            'dl': 'Quarterly review - META after the final rung',
+            't': 'META',
+            'k': 'thesis',
+            'a': 'WATCH',
+            'amt': 0,
+            'c': 'open',
+            'w': 'META: budget full after the 22 Oct fill (77.5 sh, cost $51,119). Two items for the review: (1) free '
+                 'cash flow turned NEGATIVE in Q3 (-$2.1bn; capex $34.9bn) - must be positive again; (2) NEW 22 Oct: '
+                 'Meta announced a new class of NON-VOTING shares to help fund its AI build-out (Reuters) - not known '
+                 'when the 22 Oct test was run.',
+            'cond': 'Check whether any non-voting shares have been ISSUED (dilution for existing holders) or only '
+                    'authorised, and how much. If both items are adverse by 10 Dec, cut the budget to the cost already '
+                    'spent and add no further money; no sale on these alone.'}]}
 
 SELLBOOK = {'updated': '2026-10-19',
  'comm': '0.20% + 7% VAT (0.214%), minimum 8.56',
