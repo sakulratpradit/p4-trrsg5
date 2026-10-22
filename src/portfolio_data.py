@@ -3,7 +3,10 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Oct 22, 2026 (run 00:30 UTC) - DAILY PRICE REFRESH: 63 of 63 closes updated to the Wed 2026-10-21 close '
+ASOF = ("Oct 22, 2026 - META BOOKED: 18 sh at 658.5807 = 11,879.82 (POEMS Today's Orders 22:24 Bangkok). Position 77.5 sh, "
+ 'cost 51,119.33, room 880.67 - budget full. Free cash 24,735.56. PROCESS FIX: a DECIDE row is now rewritten to BUY / '
+ 'HOLD on the dashboard at the moment the decision is given in chat, not when the fill is booked. || PREVIOUS ENTRY: '
+ 'Oct 22, 2026 (run 00:30 UTC) - DAILY PRICE REFRESH: 63 of 63 closes updated to the Wed 2026-10-21 close '
  "(stockanalysis.com quote pages stamped 'At close: Oct 21, 2026, 4:00 PM EDT', previous close validated against the "
  'history tables; every number from a tool call this session). FOUR MOVES PAST THE 6% GATE, all confirmed real via a '
  'second independent source and pushed with --allow: SPCX +7.79 (fool.com quote page, last-close table dated '
@@ -2076,7 +2079,7 @@ STOCKS = [{'an': 83,
 POS = {'GOOGL': {'budget': 78000, 'cost': 59475.92, 'shares': 217},
  'AMZN': {'budget': 48600.75, 'cost': 48600.75, 'shares': 209},
  'MSFT': {'budget': 58000, 'cost': 52878.96, 'shares': 117},
- 'META': {'budget': 52000, 'cost': 39239.51, 'shares': 59.5},
+ 'META': {'budget': 52000, 'cost': 51119.33, 'shares': 77.5},
  'AAPL': {'budget': 11437.61, 'cost': 11437.61, 'shares': 46},
  'NVDA': {'budget': 95000, 'cost': 86302.2, 'shares': 452},
  'TSM': {'budget': 74000, 'cost': 64477.71, 'shares': 170.5},
@@ -4394,45 +4397,58 @@ TRADES = [{'date': 'Mar 2, 2026',
           'LIMIT 229, floor was 225.12), Done 9:39:01 pm Bangkok, POEMS order 696416. Gross 4,583.30 less fees 9.81 '
           '(est. 0.214% - the 5 Oct sale carried 11.73 incl. SEC/TAF; true up from the contract note) = 4,573.49. Cost '
           'of the 20 sold 1,957.06, so REALISED PLUS 2,616.43 (+133.7%). CrowdStrike fully exited: 40 shares, total '
-          'realised about +6,072.64.'}]
+          'realised about +6,072.64.'},
+ {'date': 'Oct 22, 2026',
+  'action': 'BUY',
+  't': 'META',
+  'shares': 18,
+  'price': 658.5807,
+  'amount': 11879.82,
+  'est': True,
+  'note': 'META final rung - Q3 test PASSED (revenue +26% vs 25% bar; net income $9.86bn vs $2.71bn; capex floor '
+          'raised $130bn to $135bn but revenue accelerated, so the half-rung condition was not met). 18 at 658.5807, '
+          'Day LIMIT, Done by 22:24 Bangkok (stock -6% on the day after a negative free-cash-flow quarter). Gross '
+          '11,854.45 + commission 25.37 (0.214%, est.) = 11,879.82. Position 77.5 sh, cost 51,119.33 of 52,000 (room '
+          '880.67) - budget effectively full; next look 10 Dec (free cash flow must turn positive).'}]
 
 SELLPLAN = []
 
 CASH = {'currency': 'USD',
- 'amount': 36615.38,
+ 'amount': 24735.56,
  'broker': 'POEMS (Phillip Securities)',
- 'asof': "Oct 19, 2026 - after tonight's two fills: CRWD sale +4,573.49 (est. fees) and NVDA buy -6,921.92 (est. "
-         'commission): 38,963.81 + 4,573.49 - 6,921.92 = 36,615.38. CRWD proceeds settle T+1. SGOV 794 sh still '
-         'parked. To be read against the POEMS Live Cash Balance. || PREVIOUS: Oct 16, 2026 - POEMS Live Cash Balance '
-         '06:45 am Bangkok: USD 55,058.84, shown BEFORE settlement of the 15 Oct buys. Board cash = 55,058.84 less TSM '
-         '9,621.29 and ASML 6,473.74 = 38,963.81 after settlement. Versus the derived 55,050.83, POEMS is +8.01 higher '
-         'with no trades in between - a small credit (interest or dividend) to itemise from the October statement with '
-         'the earlier +146.84 and +96.46. Positions reconciled the same morning: 37 stock lines + SGOV, cost '
-         '777,052.88, match POEMS to the cent, and the POEMS cost on TSM (64,477.71) and ASML (22,867.80) confirms the '
-         "two commission estimates exactly. || PREVIOUS: Oct 15, 2026 - after tonight's two fills (TSM 23 sh 9,621.29, "
-         'ASML 4 sh 6,473.74, both incl. estimated commission) totalling 16,095.03: 55,050.83 - 16,095.03 = 38,955.80. '
-         'SGOV 79,991.56 still parked, so total liquid = 118,947.36. To be read against the POEMS Live Cash Balance '
-         'after T+1 settlement. || PREVIOUS: Oct 13, 2026 - SGOV PARK FILLED: 794 sh at 100.5299 (POEMS, Done 11:04:13 '
-         'pm Bangkok) = gross 79,820.74 + est. commission 170.82 = 79,991.56. Free cash 135,042.39 - 79,991.56 = '
-         '55,050.83. SGOV held as a cash-equivalent (see parked), so total liquid = 135,042.39. To be read against the '
-         'POEMS Live Cash Balance after T+1 settlement. || PREVIOUS: Oct 13, 2026 - after the 12 Oct fills (APH, CRDO, '
-         'V) totalling 12,973.99 incl. estimated commission: 148,016.38 - 12,973.99 = 135,042.39. To be read against '
-         'the POEMS Live Cash Balance after settlement. || PREVIOUS: Oct 10, 2026 - POEMS Live Cash Balance 07:53 am '
-         'Bangkok: USD 170,344.36, shown BEFORE settlement of the 9 Oct buys. Board cash = 170,344.36 less MRVL '
-         '12,712.45 and AMAT 9,615.53 = 148,016.38 after settlement. Versus the 6 Oct balance of 170,247.90, POEMS is '
-         '+96.46 higher with no trades in between - a further early-October credit (most likely dividends), to itemise '
-         'from the October statement together with the earlier +146.84. Positions reconciled the same morning: 37 '
-         'lines, cost 667,992.30, match POEMS to the cent. || PREVIOUS: Oct 6, 2026 - POEMS Live Cash Balance '
-         '170,247.90. RECONCILED 7 Oct: POEMS statement cash at 30 Sep = 168,539.69; less MU buy 1 Oct 14,703.40, plus '
-         'ORCL 10,851.50 and CRWD 5,413.27 sale proceeds = 170,101.06; the remaining +146.84 is early-October credits '
-         '(most likely dividends) to itemise from the October statement. (The earlier +172.61 figure came from a '
-         'board-derived cash that was 25.77 too low.) || PREVIOUS: Oct 6, 2026 - read off the POEMS Live Cash Balance '
-         'screen (09:23 am, before settlement of the 5 Oct sales): USD 170,247.90. Derived from the board: 153,810.52 '
-         '+ 10,851.50 (ORCL) + 5,413.27 (CRWD) = 170,075.29; POEMS is +172.61 higher - most likely dividends/interest '
-         'credited since 2 Oct, to be itemised. || PREVIOUS: Oct 2, 2026 (153862.15 less 51.63 of commission '
-         'under-booked on the five orders of 28 Sep and 1 Oct, found when the POEMS positions screen of 2 Oct was '
-         'reconciled. Positions now match POEMS to the cent on all 38 lines. Cash itself is derived, not yet read off '
-         'a POEMS cash screen)',
+ 'asof': 'Oct 22, 2026 - after META buy 18 sh at 658.5807 = 11,879.82 incl. est. commission: 36,615.38 - 11,879.82 = '
+         "24,735.56. SGOV 794 sh parked. || PREVIOUS: Oct 19, 2026 - after tonight's two fills: CRWD sale +4,573.49 "
+         '(est. fees) and NVDA buy -6,921.92 (est. commission): 38,963.81 + 4,573.49 - 6,921.92 = 36,615.38. CRWD '
+         'proceeds settle T+1. SGOV 794 sh still parked. To be read against the POEMS Live Cash Balance. || PREVIOUS: '
+         'Oct 16, 2026 - POEMS Live Cash Balance 06:45 am Bangkok: USD 55,058.84, shown BEFORE settlement of the 15 '
+         'Oct buys. Board cash = 55,058.84 less TSM 9,621.29 and ASML 6,473.74 = 38,963.81 after settlement. Versus '
+         'the derived 55,050.83, POEMS is +8.01 higher with no trades in between - a small credit (interest or '
+         'dividend) to itemise from the October statement with the earlier +146.84 and +96.46. Positions reconciled '
+         'the same morning: 37 stock lines + SGOV, cost 777,052.88, match POEMS to the cent, and the POEMS cost on TSM '
+         '(64,477.71) and ASML (22,867.80) confirms the two commission estimates exactly. || PREVIOUS: Oct 15, 2026 - '
+         "after tonight's two fills (TSM 23 sh 9,621.29, ASML 4 sh 6,473.74, both incl. estimated commission) "
+         'totalling 16,095.03: 55,050.83 - 16,095.03 = 38,955.80. SGOV 79,991.56 still parked, so total liquid = '
+         '118,947.36. To be read against the POEMS Live Cash Balance after T+1 settlement. || PREVIOUS: Oct 13, 2026 - '
+         'SGOV PARK FILLED: 794 sh at 100.5299 (POEMS, Done 11:04:13 pm Bangkok) = gross 79,820.74 + est. commission '
+         '170.82 = 79,991.56. Free cash 135,042.39 - 79,991.56 = 55,050.83. SGOV held as a cash-equivalent (see '
+         'parked), so total liquid = 135,042.39. To be read against the POEMS Live Cash Balance after T+1 settlement. '
+         '|| PREVIOUS: Oct 13, 2026 - after the 12 Oct fills (APH, CRDO, V) totalling 12,973.99 incl. estimated '
+         'commission: 148,016.38 - 12,973.99 = 135,042.39. To be read against the POEMS Live Cash Balance after '
+         'settlement. || PREVIOUS: Oct 10, 2026 - POEMS Live Cash Balance 07:53 am Bangkok: USD 170,344.36, shown '
+         'BEFORE settlement of the 9 Oct buys. Board cash = 170,344.36 less MRVL 12,712.45 and AMAT 9,615.53 = '
+         '148,016.38 after settlement. Versus the 6 Oct balance of 170,247.90, POEMS is +96.46 higher with no trades '
+         'in between - a further early-October credit (most likely dividends), to itemise from the October statement '
+         'together with the earlier +146.84. Positions reconciled the same morning: 37 lines, cost 667,992.30, match '
+         'POEMS to the cent. || PREVIOUS: Oct 6, 2026 - POEMS Live Cash Balance 170,247.90. RECONCILED 7 Oct: POEMS '
+         'statement cash at 30 Sep = 168,539.69; less MU buy 1 Oct 14,703.40, plus ORCL 10,851.50 and CRWD 5,413.27 '
+         'sale proceeds = 170,101.06; the remaining +146.84 is early-October credits (most likely dividends) to '
+         'itemise from the October statement. (The earlier +172.61 figure came from a board-derived cash that was '
+         '25.77 too low.) || PREVIOUS: Oct 6, 2026 - read off the POEMS Live Cash Balance screen (09:23 am, before '
+         'settlement of the 5 Oct sales): USD 170,247.90. Derived from the board: 153,810.52 + 10,851.50 (ORCL) + '
+         '5,413.27 (CRWD) = 170,075.29; POEMS is +172.61 higher - most likely dividends/interest credited since 2 Oct, '
+         'to be itemised. || PREVIOUS: Oct 2, 2026 (153862.15 less 51.63 of commission under-booked on the five orders '
+         'of 28 Sep and 1 Oct, found when the POEMS positions screen of 2 Oct was reconciled. Positions now match '
+         'POEMS to the cent on all 38 lines. Cash itself is derived, not yet read off a POEMS cash screen)',
  'parked': {'t': 'SGOV',
             'name': 'iShares 0-3 Month Treasury Bond ETF',
             'shares': 794,
@@ -5285,7 +5301,7 @@ M3 = {'GOOGL': {'pfcf': 73.06, 'ev': 21.6, 'de': 0.18},
  'CIEN': {'pfcf': None, 'ev': None, 'de': None}}
 
 SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
- 'updated': 'Oct 21, 2026',
+ 'updated': 'Oct 22, 2026',
  'note': '⚠️ READ THIS FIRST. On 10 Sep 2026 the board was restructured to 10 groups, 38 funded names, 5 back-up names '
          'and 13 sells, and ALL 38 budgets were reset. EVERY AMOUNT WRITTEN IN A ROW DATED BEFORE 10 SEP 2026 REFERS '
          'TO THE OLD BUDGET and must be checked against the new one before it is acted on - the tranche sizes in those '
@@ -6686,19 +6702,21 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
            {'d': '2026-10-22',
             't': 'META',
             'k': 'earnings',
-            'w': 'DATE CONFIRMED BY META 15 Oct: Q3 results WEDNESDAY 21 OCT after the US close (call 4:30 pm ET = '
+            'w': 'FILLED 22 Oct: 18 sh at 658.5807 = 11,879.82 incl. est. commission. TEST PASSED on the 21 Oct '
+                 'results (revenue +26%, net income $9.86bn vs $2.71bn); decided BUY in chat 22 Oct before the open. | '
+                 'DATE CONFIRMED BY META 15 Oct: Q3 results WEDNESDAY 21 OCT after the US close (call 4:30 pm ET = '
                  '03:30 Thu 22 Oct Bangkok), a week EARLIER than our 29 Oct estimate. Decision moves 30 Oct -> 22 Oct: '
                  'act Thursday 22 Oct night from 20:30 Bangkok (23 Oct is a Thai holiday, so do not slip to Friday). | '
                  'ROLLED IN 10 Oct: rung 1 ($705 limit, 9 Oct) expired unfilled, so this decision now covers '
                  '$12,760.48 (both rungs). | Q3 2026 results (29 Oct, after the close) - META rung 2 of 2: DECIDE '
                  '$6,380.24 (plus rung 1 if its $705 limit did not fill). MOVED 28 Oct -> 30 Oct on 3 Oct so the '
                  'decision follows the results',
-            'a': 'DECIDE',
-            'amt': 12760.48,
+            'a': 'BUY',
+            'amt': 11879.82,
             'cond': 'DEPLOY $6,380.24 ONLY IF revenue growth holds at or above 25% AND net income recovers clear of '
                     'the Q3 2025 weakness. LEAVE IT if capex rises again without revenue acceleration, or margins '
                     'compress further. Rungs 1 + 2 = $12,760.48, exactly the budget left.',
-            'c': 'confirmed'},
+            'c': 'done'},
            {'d': '2026-11-01',
             'dl': "⚠️⚠️ CLOCK CHANGE 1 NOVEMBER - Salee's trading window moves one hour LATER. Correct my own standing "
                   'note.',
@@ -12580,19 +12598,7 @@ BUYPLAN = {'title': 'Buy/Sell plan 19-30 Oct 2026',
            'Never more than +1% above the reference close.',
            'Commission 0.214%, minimum $8.56 - share counts already allow for it.',
            'Send the POEMS confirmation the same day; Claude books the fill.'],
- 'rows': [{'bkk': 'Thu 22 Oct',
-           'us': 'Thu 22 Oct',
-           't': 'META',
-           'a': 'DECIDE',
-           'amt': 12760.48,
-           'lim': None,
-           'cap': None,
-           'tac': 'DATE CONFIRMED: results Wed 21 Oct after the US close. Act Thu 22 Oct night (NOT Fri 23 Oct - Thai '
-                  'holiday): Day LIMIT at the 21 Oct close, cap +1%. Do not buy in the first 30 minutes after the open '
-                  '(results days swing hardest).',
-           'cond': 'Buy only if revenue growth is 25% or more AND profit recovers. Cut to half if AI spending jumps '
-                   'while ad growth slows below 15%.'},
-          {'bkk': 'Wed 28 Oct',
+ 'rows': [{'bkk': 'Wed 28 Oct',
            'us': 'Wed 28 Oct',
            't': 'VRT',
            'a': 'WATCH',
