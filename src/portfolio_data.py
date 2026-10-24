@@ -5337,7 +5337,7 @@ M3 = {'GOOGL': {'pfcf': 73.06, 'ev': 21.6, 'de': 0.18},
  'CIEN': {'pfcf': None, 'ev': None, 'de': None}}
 
 SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
- 'updated': '2026-10-23',
+ 'updated': '2026-10-24',
  'note': '⚠️ READ THIS FIRST. On 10 Sep 2026 the board was restructured to 10 groups, 38 funded names, 5 back-up names '
          'and 13 sells, and ALL 38 budgets were reset. EVERY AMOUNT WRITTEN IN A ROW DATED BEFORE 10 SEP 2026 REFERS '
          'TO THE OLD BUDGET and must be checked against the new one before it is acted on - the tranche sizes in those '
@@ -6785,13 +6785,29 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
            {'d': '2026-11-04',
             't': 'APP',
             'k': 'earnings',
-            'w': 'Q3 2026 results',
+            'w': "Q3 2026 results - RULE WRITTEN 24 Oct at Salee's instruction: half 1 = $9,000 of the $18,000 budget. "
+                 'If PASS: Day LIMIT at the results-day close, cap +1%, next session, not in the first 30 minutes. '
+                 'Half 2 ($9,000) not before the Q4 results (Feb 2027), and only if revenue growth re-accelerates.',
             'a': 'DECIDE',
-            'amt': 5000,
-            'cond': 'THE NUMBER IS E-COMMERCE PIXEL ADDITIONS - they slowed to ~750 in June from ~950 in May. Growth '
-                    'ran 68>66>59>53>guided 47%. SEC closed its inquiry with no action; CapitalWatch retracted. A '
-                    'SECOND guidance miss means the edge is eroding, not pausing.',
-            'c': 'estimated'},
+            'amt': 9000,
+            'cond': 'PASS = ALL FOUR. (1) Q3 revenue at or above $2.08bn - the consensus, which is the top of the '
+                    "company's own $2.055-2.085bn range (46-48% growth). Q2 MISSED by $20m; meeting the range is not "
+                    'enough, it must clear it. (2) Adjusted EBITDA margin at or above 80% (guided about 83%) - compute '
+                    'costs must not be eating the margin. (3) NO SECOND GUIDE-DOWN: the Q4 revenue guidance midpoint '
+                    'must be at or above consensus. A second soft guide means the ad-model edge is eroding, not '
+                    'pausing. (4) No new government inquiry or legal action (the SEC closed its inquiry with no '
+                    'action; the Jan 2026 short-seller allegations are disputed). FAIL ANY = no order, stays WATCH, '
+                    'revisit 10 Dec. ⚠️ WHY NOT THE "50% GROWTH" BAR PROPOSED IN CHAT 23 OCT: AppLovin itself guides '
+                    '46-48%, so a 50% bar would fail by design - corrected before writing. ⚠️ BEFORE 4 NOV: refresh '
+                    'the fair value (board $656.20 equals one August analyst target and is stale) and the flagged '
+                    'fields (revenue growth on the board 66.4% vs reported Q2 52.8%). Context: down about 60% in 2026; '
+                    'beta about 2.5 - expect 15-20% moves on the print either way. || PREVIOUS RULE (replaced): THE '
+                    'NUMBER IS E-COMMERCE PIXEL ADDITIONS - they slowed to ~750 in June from ~950 in May. Growth ran '
+                    '68>66>59>53>guided 47%. SEC closed its inquiry with no action; CapitalWatch retracted. A SECOND '
+                    'guidance miss means the edge is eroding, not pausing.',
+            'c': 'estimated',
+            'dl': 'Results date ESTIMATED - AppLovin announced on 7 Oct that it will report; Q3 2025 was 5 Nov. '
+                  'CONFIRM the date before acting.'},
            {'d': '2026-11-05',
             't': 'SPCX',
             'k': 'earnings',
@@ -7744,9 +7760,10 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'a': 'DECIDE',
             'amt': 0,
             'c': 'open',
-            'w': 'THE "APPROVED MONEY WITH NO WRITTEN RULE" LIST IS EXACTLY FOUR NAMES AND $53,000: SNPS $13,000, APP '
-                 '$18,000, SE $13,000 AND LHX $9,000 - EACH WITH ZERO INVESTED AND ZERO BUY ROWS. I HAVE BEEN CALLING '
-                 'THESE "THE FOURTH INSTANCE" AND "THE FIFTH" WITHOUT EVER RUNNING THE COUNT.',
+            'w': 'UPDATE 24 Oct: APP NOW HAS A WRITTEN RULE (4 Nov row, $9,000 half 1). | THE "APPROVED MONEY WITH NO '
+                 'WRITTEN RULE" LIST IS EXACTLY FOUR NAMES AND $53,000: SNPS $13,000, APP $18,000, SE $13,000 AND LHX '
+                 '$9,000 - EACH WITH ZERO INVESTED AND ZERO BUY ROWS. I HAVE BEEN CALLING THESE "THE FOURTH INSTANCE" '
+                 'AND "THE FIFTH" WITHOUT EVER RUNNING THE COUNT.',
             'cond': '⚠️ A CORRECTION TO MY OWN BOOKKEEPING, AND IT IS THE SAME CLASS OF ERROR I HAVE MADE TWICE '
                     'BEFORE: I ASSERTED A COUNT WITHOUT COMPUTING IT. I have repeatedly told Salee that a name was '
                     '"the fourth" or "the fifth" instance of approved money with no rule. I NEVER RAN THE SWEEP. HERE '
@@ -10590,16 +10607,17 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'dl': 'Standing - promoted to Tier 4 on Sep 7',
             't': 'APP',
             'k': 'tranche',
-            'a': 'DECIDE',
-            'amt': 10000.0,
-            'w': 'Tier 4 budget of 10,000 - deploy the second 5,000 on evidence, not on the promotion',
+            'a': 'HOLD',
+            'amt': 0,
+            'w': 'SUPERSEDED 24 Oct by the written 4 Nov rule ($9,000 half 1 of the $18,000 budget set at the 10 Sep '
+                 'reset). | Was: Tier 4 budget of 10,000 - deploy the second 5,000 on evidence, not on the promotion',
             'cond': 'Best growth-to-price on the board outside the mega-caps: revenue +66.4%, net margin 64.3%, return '
                     'on equity 266.4%, Rule of 40 at 138.5. Deploy the added 5,000 ONLY on the Nov 4 print, and only '
                     'if e-commerce pixel additions re-accelerate - they slowed to ~750 in June from ~950 in May and '
                     'guidance has stepped down 68>66>59>53>47%. ⚠️ Four board fields are still flagged wrong for this '
                     'name (forward P/E should be 17.72 not 24.17, ROE 203.69 not 266.44, debt/equity 1.11 not 1.63, '
                     'revenue growth 53% not 66.4%); on the corrected figures it is CHEAPER, not dearer.',
-            'c': 'planned'},
+            'c': 'done'},
            {'d': '',
             'dl': 'Standing',
             't': 'ASML',
