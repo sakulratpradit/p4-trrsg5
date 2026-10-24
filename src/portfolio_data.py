@@ -11319,9 +11319,22 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                  'cash flow turned NEGATIVE in Q3 (-$2.1bn; capex $34.9bn) - must be positive again; (2) NEW 22 Oct: '
                  'Meta announced a new class of NON-VOTING shares to help fund its AI build-out (Reuters) - not known '
                  'when the 22 Oct test was run.',
-            'cond': 'Check whether any non-voting shares have been ISSUED (dilution for existing holders) or only '
-                    'authorised, and how much. If both items are adverse by 10 Dec, cut the budget to the cost already '
-                    'spent and add no further money; no sale on these alone.'}]}
+            'cond': "ANSWERED 24 Oct FROM META'S OWN SEC FILING (Schedule 14C, 21 Oct): the Class C non-voting shares "
+                    'are a STOCK DIVIDEND to every holder - one Class C for each Class A and B share - effective 19 '
+                    'Jan 2027, paid within five business days after. Nothing is sold for cash yet, so on the day it is '
+                    'like the 2014 Google GOOG/GOOGL split: our economic stake does not change (77.5 META -> also '
+                    'about 77.5 Class C; check how POEMS handles the half share). THE ADVERSE EVENT IS LATER: Meta '
+                    'SELLING new Class C for cash (to fund AI, acquisitions, or sovereign investors) - that dilutes us '
+                    'economically, and Class C will likely trade at a discount and may be left out of indices. Founder '
+                    'terms: Zuckerberg (60.6% of votes, 13.4% of economics) may sell up to 20% of his Class C freely - '
+                    'about 10% of his stake - including to pay the proposed California wealth tax (Proposition 40, '
+                    'ballot 3 Nov); he committed to stay a California resident for 8 years. RULE FOR 10 DEC: item (2) '
+                    'counts as adverse ONLY if Meta has announced or done a cash sale of Class C by then. If FCF is '
+                    'still negative AND a cash raise is announced, cut the budget to the cost already spent and add no '
+                    'further money; no sale on these alone. || Was: Check whether any non-voting shares have been '
+                    'ISSUED (dilution for existing holders) or only authorised, and how much. If both items are '
+                    'adverse by 10 Dec, cut the budget to the cost already spent and add no further money; no sale on '
+                    'these alone.'}]}
 
 SELLBOOK = {'updated': '2026-10-19',
  'comm': '0.20% + 7% VAT (0.214%), minimum 8.56',
