@@ -10080,14 +10080,15 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'w': 'Q1 FY2027 results - rung 2',
             'a': 'DECIDE',
             'amt': 3418.42,
-            'cond': '⚠️ NOTE 25 Oct: the 30 Sep print showed DRAM bits only MID-SINGLE-DIGIT (growth was price, not '
-                    'volume), so 17 Dec can at best be the FIRST double-digit quarter - under this rule the earliest '
-                    'this rung can fire is the March 2027 results. The $10,000 parked tranche has the same volume '
-                    'test. NO PRICE LINE on MU: a price drop would bypass the volume test, which is the whole '
-                    'protection against buying a memory peak. | Deploy ONLY if DRAM bits grow double-digit for a '
-                    'SECOND consecutive quarter. Two in a row means the story has genuinely turned from price to '
-                    'volume; one is noise. If Sep 30 failed its test, this rung does not fire either - do not average '
-                    'into a rolling cycle.',
+            'cond': '⚠️ OVERRIDE BY SALEE 25 Oct: this $3,418.42 rung may now ALSO fill on a CLOSE BELOW $800 (see the '
+                    'MU standing line), even though the volume test has not passed. | ⚠️ NOTE 25 Oct: the 30 Sep print '
+                    'showed DRAM bits only MID-SINGLE-DIGIT (growth was price, not volume), so 17 Dec can at best be '
+                    'the FIRST double-digit quarter - under this rule the earliest this rung can fire is the March '
+                    '2027 results. The $10,000 parked tranche has the same volume test. NO PRICE LINE on MU: a price '
+                    'drop would bypass the volume test, which is the whole protection against buying a memory peak. | '
+                    'Deploy ONLY if DRAM bits grow double-digit for a SECOND consecutive quarter. Two in a row means '
+                    'the story has genuinely turned from price to volume; one is noise. If Sep 30 failed its test, '
+                    'this rung does not fire either - do not average into a rolling cycle.',
             'c': 'estimated'},
            {'d': '2026-12-20',
             'dl': 'GAO statutory deadline - 100 days from the 11 Sep filing',
@@ -11398,7 +11399,23 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                  'extra',
             'cond': "Added 25 Oct at Salee's instruction. 22 Oct close $162.77; fair value $271.92 (+67%); net margin "
                     '33.8%; forward P/E 25. Act the next session after a close below $150: Day LIMIT at that close, '
-                    'cap +1%. Once filled, the 10 Nov row is done.'}]}
+                    'cap +1%. Once filled, the 10 Nov row is done.'},
+           {'d': '',
+            't': 'MU',
+            'k': 'trigger',
+            'a': 'TRIGGER',
+            'amt': 3418.42,
+            'c': 'standing',
+            'w': '⚠️ OVERRIDE (Salee 25 Oct): rung 2 ($3,418.42) may fill EARLY if MU closes below $800 - same money '
+                 'as the 17 Dec row, not extra',
+            'cond': 'SALEE OVERRODE THE SEPTEMBER VOLUME RULE FOR THIS RUNG ONLY, knowing that the 30 Sep DRAM bit '
+                    'growth was mid-single-digit (price-led) and that the rule would otherwise hold this money until '
+                    'March 2027 at the earliest. Claude advised against it: a falling MU price can mean the memory '
+                    'cycle is turning, not a bargain. Act the next session after a close below $800: Day LIMIT at that '
+                    'close, cap +1%. Once filled, the 17 Dec row is done. THE $10,000 PARKED TRANCHE IS NOT AFFECTED - '
+                    'it still needs two consecutive double-digit DRAM bit quarters and 2027 HBM sold out. Hold back '
+                    'even below $800 if TrendForce reports DRAM contract prices flat or falling (the 1 Oct cancel '
+                    'rule). 22 Oct close $856.49; fair value $1,486.'}]}
 
 SELLBOOK = {'updated': '2026-10-19',
  'comm': '0.20% + 7% VAT (0.214%), minimum 8.56',
@@ -12952,8 +12969,8 @@ BUYPLAN = {'title': 'Buy/Sell plan 26 Oct - 10 Nov 2026',
          'left out. Results come out at night; we act the NEXT Bangkok evening. IF EVERY TEST PASSES the buys total '
          'about $44,800, funded by cash $24,736 + two SGOV sales (~$21,000). STANDING PRICE LINES, ANY NIGHT (act only '
          'on a CLOSE below the line): AVGO $310 · AMD $470 · TSM $380 · NVDA $180 · PLTR $150 · CRDO $150 (moves its '
-         '10 Nov rung earlier). Wed 28 Oct: Fed decision - Claude runs the 10-year check (the rate rule) before the '
-         '29-30 Oct buys. For a SELL the Cap column is the FLOOR.',
+         '10 Nov rung earlier) · MU $800 (override 25 Oct; $3,418 only). Wed 28 Oct: Fed decision - Claude runs the '
+         '10-year check (the rate rule) before the 29-30 Oct buys. For a SELL the Cap column is the FLOOR.',
  'from': '2026-10-26',
  'to': '2026-11-10'}
 
