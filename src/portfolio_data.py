@@ -5337,7 +5337,7 @@ M3 = {'GOOGL': {'pfcf': 73.06, 'ev': 21.6, 'de': 0.18},
  'CIEN': {'pfcf': None, 'ev': None, 'de': None}}
 
 SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
- 'updated': '2026-10-24',
+ 'updated': '2026-10-25',
  'note': '⚠️ READ THIS FIRST. On 10 Sep 2026 the board was restructured to 10 groups, 38 funded names, 5 back-up names '
          'and 13 sells, and ALL 38 budgets were reset. EVERY AMOUNT WRITTEN IN A ROW DATED BEFORE 10 SEP 2026 REFERS '
          'TO THE OLD BUDGET and must be checked against the new one before it is acted on - the tranche sizes in those '
@@ -6861,8 +6861,10 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'a': 'BUY',
             'amt': 5149.5,
             'w': 'Tier A rung 2 of 2 - BUY $5,149.50',
-            'cond': 'Second half, after the Micron (30 Sep) and Meta (28 Oct) decisions. ⚠️ Clocks change 1 Nov: US '
-                    'session now opens 21:30 Bangkok.',
+            'cond': 'PRICE LINE ADDED 25 Oct (Salee): this same rung may fill EARLY if CRDO CLOSES BELOW $150 - next '
+                    'session, Day LIMIT at that close, cap +1%. No new money; if it fills early this row is marked '
+                    'done and nothing is bought on 10 Nov. | Second half, after the Micron (30 Sep) and Meta (28 Oct) '
+                    'decisions. ⚠️ Clocks change 1 Nov: US session now opens 21:30 Bangkok.',
             'c': 'planned'},
            {'d': '2026-11-10',
             't': 'ETN',
@@ -10078,9 +10080,14 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'w': 'Q1 FY2027 results - rung 2',
             'a': 'DECIDE',
             'amt': 3418.42,
-            'cond': 'Deploy ONLY if DRAM bits grow double-digit for a SECOND consecutive quarter. Two in a row means '
-                    'the story has genuinely turned from price to volume; one is noise. If Sep 30 failed its test, '
-                    'this rung does not fire either - do not average into a rolling cycle.',
+            'cond': '⚠️ NOTE 25 Oct: the 30 Sep print showed DRAM bits only MID-SINGLE-DIGIT (growth was price, not '
+                    'volume), so 17 Dec can at best be the FIRST double-digit quarter - under this rule the earliest '
+                    'this rung can fire is the March 2027 results. The $10,000 parked tranche has the same volume '
+                    'test. NO PRICE LINE on MU: a price drop would bypass the volume test, which is the whole '
+                    'protection against buying a memory peak. | Deploy ONLY if DRAM bits grow double-digit for a '
+                    'SECOND consecutive quarter. Two in a row means the story has genuinely turned from price to '
+                    'volume; one is noise. If Sep 30 failed its test, this rung does not fire either - do not average '
+                    'into a rolling cycle.',
             'c': 'estimated'},
            {'d': '2026-12-20',
             'dl': 'GAO statutory deadline - 100 days from the 11 Sep filing',
@@ -11380,7 +11387,18 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                  'Oct to fund the November rungs.',
             'cond': 'Sell ONLY what the approved buys need: CRDO $5,149.50 + V $2,093 + VST $3,433.35 if it passes. '
                     'Cut or skip if APP/STRL/VST failed and cash already covers it. SGOV stays above the $50,000 crash '
-                    'reserve (about $58,700 left after both sales).'}]}
+                    'reserve (about $58,700 left after both sales).'},
+           {'d': '',
+            't': 'CRDO',
+            'k': 'trigger',
+            'a': 'TRIGGER',
+            'amt': 5149.5,
+            'c': 'standing',
+            'w': 'Rung 2 ($5,149.50) may fill EARLY if CRDO closes below $150 - the same money as the 10 Nov row, not '
+                 'extra',
+            'cond': "Added 25 Oct at Salee's instruction. 22 Oct close $162.77; fair value $271.92 (+67%); net margin "
+                    '33.8%; forward P/E 25. Act the next session after a close below $150: Day LIMIT at that close, '
+                    'cap +1%. Once filled, the 10 Nov row is done.'}]}
 
 SELLBOOK = {'updated': '2026-10-19',
  'comm': '0.20% + 7% VAT (0.214%), minimum 8.56',
@@ -12880,7 +12898,7 @@ BUYPLAN = {'title': 'Buy/Sell plan 26 Oct - 10 Nov 2026',
            't': 'CRDO',
            'bkk': 'Tue 10 Nov',
            'tac': 'Day LIMIT at the 9 Nov close, cap +1%.',
-           'cond': 'Rung 2 of 2.',
+           'cond': 'Rung 2 of 2. May fill earlier on a close below $150 (price line added 25 Oct).',
            'a': None,
            'lim': None,
            'cap': None,
@@ -12933,9 +12951,9 @@ BUYPLAN = {'title': 'Buy/Sell plan 26 Oct - 10 Nov 2026',
  'note': 'ONE PAGE FOR 26 OCT - 10 NOV: the same orders as the Schedule tab, buys AND sells, filled and cancelled rows '
          'left out. Results come out at night; we act the NEXT Bangkok evening. IF EVERY TEST PASSES the buys total '
          'about $44,800, funded by cash $24,736 + two SGOV sales (~$21,000). STANDING PRICE LINES, ANY NIGHT (act only '
-         'on a CLOSE below the line): AVGO $310 · AMD $470 · TSM $380 · NVDA $180 · PLTR $150. Wed 28 Oct: Fed '
-         'decision - Claude runs the 10-year check (the rate rule) before the 29-30 Oct buys. For a SELL the Cap '
-         'column is the FLOOR.',
+         'on a CLOSE below the line): AVGO $310 · AMD $470 · TSM $380 · NVDA $180 · PLTR $150 · CRDO $150 (moves its '
+         '10 Nov rung earlier). Wed 28 Oct: Fed decision - Claude runs the 10-year check (the rate rule) before the '
+         '29-30 Oct buys. For a SELL the Cap column is the FLOOR.',
  'from': '2026-10-26',
  'to': '2026-11-10'}
 
