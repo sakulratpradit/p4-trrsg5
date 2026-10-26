@@ -128,6 +128,14 @@ THE JOB
      "today" in the container is NOT the trading day you are recording.
    - Also extend `hi52` / `lo52` if today's close sits outside the stored range.
    - Update ASOF to the date of the closes you just wrote.
+   - PRICE-LINKED RATIOS (added 26 Oct 2026 after a staleness audit found 35 of 56 stored
+     P/Es off by more than 10%): for every ticker whose price you changed, ALSO rewrite
+       pe   = round(price / eps, 2)            if eps > 0, else None   (eps is the board's own, ex one-offs)
+       ps   = round(mcapB / revB, 2)           if revB
+       fpe, peg, and M3 pfcf: multiply the stored value by (new_price / old_price), round 2
+       M3 ev: leave unchanged (needs net debt)
+     These are derived numbers; the earnings job still resets them at each print. Do NOT
+     touch eps, revB, fcfB or any other fundamental.
 4. cd deploy/src && python3 gen_dashboard.py ../index.html ../../us-portfolio-dashboard.html && cd ../..
 5. cd deploy && python3 src/sanity_check.py --new ../us-portfolio-dashboard.html
    THIS IS A HARD GATE. Exit 1 means DO NOT PUSH.
