@@ -1,0 +1,614 @@
+[
+ {
+  "n": 102,
+  "c": 0,
+  "d": "25 Oct",
+  "t": "Memory, networking & optics - the bandwidth layer that keeps AI clusters fed with data: MU, SK Hynix, ANET, MRVL, CRDO (@stockswithpawan)",
+  "v": "none",
+  "img": "slides/01-semiconductor-industry/2026-10-25-memory-networking-optics.png",
+  "claim": "Educational framework: HBM memory -> switching -> interconnect -> optical links. Names: Micron (HBM / AI DRAM), SK Hynix (HBM leader), Arista (AI Ethernet switching), Marvell (interconnect silicon), Credo (high-speed connectivity). Bottlenecks: HBM supply, bandwidth, latency, optics. HBM remains tight; networking is a second-wave spend. No figures.",
+  "x": "Graded NOTED - no numbers, no errors; filed on Salee's instruction (25 Oct). Part 2 of the three-slide series (#99 compute, #100 power & cooling). WE HOLD 4 OF 5 (SK Hynix quarantined on unreliable ADR data). Room and upside to our fair value at 22 Oct closes: MU $13,715 / +73% (rung 2 on 17 Dec); CRDO $5,615 / +67% (rung 2 on 10 Nov); ANET $0 / +12% (full); MRVL $415 / +13%. The money left in this layer sits in the two names with the most upside. PENDING SALEE: proposed price lines that only move the same rungs earlier, no new money - MU below $800, CRDO below $150 (\"Add MU/CRDO lines\")."
+ },
+ {
+  "n": 101,
+  "c": 1,
+  "d": "25 Oct",
+  "t": "NVIDIA ecosystem - powering the AI stack: supply chain, infrastructure and who buys the compute (moomoo, 23 Oct 2026)",
+  "v": "none",
+  "img": "slides/02-ai-infrastructure-datacentre/2026-10-23-moomoo-nvidia-ecosystem-map.png",
+  "claim": "Map of 34 names around NVIDIA: chip fabrication (TSM, ASML), AI memory (SK Hynix, Samsung, MU, ALAB), system architecture (ARM, AMD), AI servers (SMCI, HPE, DELL, Lenovo), AI network (CSCO, ANET), power & cooling (VRT, GEV, ETN, NVT), biggest investments (INTC, SpaceX), enterprise software (PLTR, IBM, NOW, SNOW, DDOG, CRWD) and the buyers/operators of NVIDIA compute (MSFT, AMZN, GOOG, META, ORCL, CRWV, NBIS, IREN).",
+  "x": "Graded NOTED - clean, dated, no errors found; filed on Salee's instruction (25 Oct). A MIRROR OF OUR BOOK: we hold 15 of the 34 (TSM, ASML, MU, ALAB, NVDA, AMD, ANET, VRT, GEV, ETN, PLTR, MSFT, AMZN, GOOGL, META), watch 5 (ARM, ORCL, SPCX, DDOG, CRWD), 14 off the board. THE ONE EMPTY LAYER IS AI SERVERS - deliberate: box assemblers on thin margins (same reason Celestica was passed). ⚠️ CONCENTRATION: almost everything we own hangs off one root - AI spending; when it shook on 22 Oct (META negative FCF) nearly the whole book fell together. 10 Dec review numbers: top seven = 59.5% of the book vs 34.5% for the S&P 500; LLY, NFLX and V are the candidates to soften it."
+ },
+ {
+  "n": 100,
+  "c": 2,
+  "d": "25 Oct",
+  "t": "Power, cooling & electrical - the physical infrastructure enabling dense AI racks: VRT, ETN, NVT, ABB, CEG (@stockswithpawan)",
+  "v": "none",
+  "img": "slides/03-power-and-energy/2026-10-25-power-cooling-electrical.png",
+  "claim": "Educational framework: utility power -> electrical gear -> rack density -> cooling -> uptime. Names: Vertiv (thermal & power systems), Eaton (electrical distribution), nVent (racks, cabling & thermal), ABB (electrification), Constellation (power supply). Dense clusters need more power, higher cooling, redundancy and faster build-out; power can gate deployments and cooling spend rises with rack density. No figures.",
+  "x": "Graded NOTED - no numbers, no errors; filed on Salee's instruction (25 Oct). Part 1 of a three-slide series (#99 is compute silicon). WE HOLD 3 OF 5 AND ALL THREE BUDGETS ARE FULL: VRT room $292 (disclosure test at Q3, 28 Oct), ETN $119, CEG $111. The power group also holds GEV (order-book test at Q3, 28 Oct) and VST (DECIDE $3,433 on 10 Nov). nVent and ABB are not on the board. THE GAP IS COOLING: VRT is the only cooling name - Trane (TT) is the data-centre cooling candidate on the 10 Dec review; compare with nVent there. Jensen at GTC Berlin (Oct 2026) confirmed power, not chips, is the bottleneck - supports the group despite the 22 Oct falls (GEV -10.6%, VST -9.8%) on the Meta financing scare."
+ },
+ {
+  "n": 99,
+  "c": 0,
+  "d": "25 Oct",
+  "t": "Compute silicon: the performance layer - NVDA, AMD, AVGO, TSM, INTC (@stockswithpawan)",
+  "v": "none",
+  "img": "slides/01-semiconductor-industry/2026-10-25-compute-silicon-performance-layer.png",
+  "claim": "Educational framework: AI spending starts with silicon - GPU compute (NVDA), accelerator challenger (AMD), custom AI ASICs (AVGO), advanced manufacturing (TSM), foundry / AI optionality (INTC). GPUs still lead training, custom silicon is rising, foundry capacity stays strategic. No figures.",
+  "x": "Graded NOTED - no numbers, no errors; filed on Salee's instruction (25 Oct). Part 3 of a series (power & cooling; memory, networking & optics; compute). WE HOLD 4 OF 5 AND EVERY ONE HAS A WRITTEN BUY LINE (22 Oct closes): NVDA rung 2 below $180 ($212, -15%; $5,620) plus rung 3 $3,000 on 18 Nov only if gross margin is 72%+; AVGO below $310 ($323, -4% - the closest line on the board); AMD below $470 or margin improvement at results ~3-4 Nov ($508; $10,211); TSM below $380 ($412; $9,522). About $45k of approved money sits behind price lines in this layer, so a deeper sell-off buys it automatically at prices set in calm. INTC not on the board - foundry turnaround not yet in the profits."
+ },
+ {
+  "n": 98,
+  "c": 4,
+  "d": "23 Oct",
+  "t": "SpaceX plans up to 80,000 cell towers for Starlink Mobile, taking aim at America's biggest wireless carriers (Space Fans)",
+  "v": "none",
+  "img": "slides/05-defence-and-space/2026-10-23-spacex-80000-cell-sites-starlink-mobile.png",
+  "claim": "SpaceX is reported (Bloomberg, 22-23 Oct 2026) to be in talks with tower companies for access to at least 80,000 US cell sites for a nationwide Starlink Mobile network - deals potentially worth billions. Own direct-to-device service targeted for early 2028 after a second-generation constellation deploys next year; also agreed to buy up to 14MHz of 800MHz spectrum from Grain Management (on top of the EchoStar spectrum).",
+  "x": "Graded NOTED - TRUE, confirmed by Bloomberg via Mobile World Live; filed on Salee's instruction (24 Oct). CORRECTION ON RECORD: on 23 Oct Claude said the 80,000 figure was not confirmed - the search ran before the Bloomberg report surfaced. It is a CHANGE OF PLAN: in August SpaceX (Shotwell) said it would build on rooftops and Starlink dish sites and would not need many billions upfront; leasing 80,000 tower sites is the costlier, full fourth-carrier route. Crown Castle CEO: talking to all parties. AT&T: catching up takes a lot of years and huge investment. BOARD: SPCX stays WATCH-only (no budget) - loss-making under the rate rule, about 63x sales, vendor data unreliable until audited full-year numbers, and the mobile revenue arrives 2028, outside the near-term window. Clear beneficiaries are tower REITs (CCI, AMT, SBAC) and the pressure falls on carriers (T, VZ, TMUS) - none on the board."
+ },
+ {
+  "n": 97,
+  "c": 0,
+  "d": "23 Oct",
+  "t": "CUDA eats the whole AI ecosystem - NVIDIA from cloud to start-up (NPK Invest)",
+  "v": "none",
+  "img": "slides/01-semiconductor-industry/2026-10-23-nvidia-cuda-ecosystem.png",
+  "claim": "NVIDIA's CUDA software platform sits under every layer of AI: cloud providers (AWS, Google Cloud, Azure, Oracle), AI labs, neoclouds (CoreWeave, Nebius, IREN, Crusoe, Lambda), hardware makers (Dell, Supermicro, HPE, Lenovo, ASUS, Foxconn) and 10,000+ start-ups; over 10 million developers. The post itself cautions that CUDA does not mean every company must buy NVIDIA GPUs.",
+  "x": "Graded NOTED - accurate summary of the NVDA moat, nothing new; filed on Salee's instruction (23 Oct). The moat is the software and the ~10m developers trained on it: switching chips means rewriting code. THE THREAT IS ON THE SAME CHART: the cloud providers (AMZN, GOOGL, MSFT, META - all held) are building their own chips, designed by AVGO and MRVL (also held), so the board owns both sides - the hedge noted 16 Sep. THE TEST: NVDA gross margin at the 18 Nov results - rung 3 ($3,000) buys only at 72%+; below that custom silicon is biting and the limits pause. Conflict note: the chart lists Anthropic, which makes Claude - no view given on that item."
+ },
+ {
+  "n": 96,
+  "c": 4,
+  "d": "21 Oct",
+  "t": "Elon Musk - from millionaire (1999, ~$22m) to billionaire (2012, ~$2bn) to trillionaire (2026, ~$1.1tn after the SpaceX listing): timeline of Zip2, PayPal, Tesla, SpaceX, Starlink",
+  "v": "none",
+  "img": "slides/05-defence-and-space/2026-10-21-elon-musk-timeline-trillionaire.png",
+  "claim": "Timeline: Zip2 co-founded 1995, sold to Compaq 1999 for $307m (Musk ~$22m); X.com 1999 became PayPal, sold to eBay 2002 for $1.5bn (Musk ~$175-180m); SpaceX founded 2002; invested in Tesla 2004, CEO from 2008; Starlink launched 2015; net worth about $1.1tn in 2026 after the SpaceX stock-market debut (June 2026).",
+  "x": "Graded NOTED - biography, filed on Salee's instruction for the record. Investment reading: the figure that matters is the ownership behind the $1.1tn - Musk holds about 48% of SPCX (6.42bn shares) under a 366-day lock-up to June 2027, plus about 20% of TSLA. Our positions are unchanged: TSLA sold 8 Sep; SPCX on AVOID through the staggered lock-up releases (about 3bn shares Sep-Dec 2026, the next ~1.3bn tied to the Q3 release of 20 Oct) and loss-making under the rate rule. A founder's net worth is not a reason to buy his companies; the test is the same as for every name - profit, cash flow and price against fair value."
+ },
+ {
+  "n": 94,
+  "c": 1,
+  "d": "21 Oct",
+  "t": "Anthropic reported to add a $45bn AI-compute deal with Nscale on top of an existing $44.6bn contract - nearly $90bn combined, on NVIDIA Vera Rubin chips (Thai post)",
+  "v": "none",
+  "img": "slides/02-ai-infrastructure-datacentre/2026-10-21-anthropic-nscale-45bn-compute.png",
+  "claim": "As stated by the post: Anthropic is preparing a further $45bn compute deal with Nscale; Nscale already holds a $44.6bn contract; the two together would be close to $90bn, using NVIDIA Vera Rubin systems. Checked: TechCrunch/Bloomberg reported on 26 Aug 2026 that Anthropic signed a roughly $45bn, six-year deal to rent compute from Nscale on NVIDIA Vera Rubin chips at Nscale's West Virginia site, starting late 2027 - reported by sources, not an official announcement. The $44.6bn prior contract and the ~$90bn total are the post's figures and were not verified.",
+  "x": "NOT GRADED - CONFLICT DISCLOSED. This item is about Anthropic and I am made by Anthropic, so under the standing rule (12 Sep 2026) no view is given on Anthropic or its prospects; filed on Salee's instruction. What is said here is arithmetic and sourcing only, for the NVDA holding (452 sh): (1) a $45bn six-year rental is about $7.5bn a year of compute, of which perhaps half to two thirds is the cost of NVIDIA systems - a few billion a year against NVIDIA data-centre revenue already above $150bn a year, i.e. low single digits of revenue; (2) it is Nscale, not Anthropic, that buys the GPUs, and Nscale must borrow to do so - the AI-compute debt-cost question raised on 10 Oct (Fed hike odds, 10-year above 5%) applies to it; (3) the chips are Vera Rubin, the generation AFTER Blackwell, deliveries from late 2027 - this is 2028 revenue for NVIDIA, not 2026; (4) per the 15 Sep standing note on compute-deal headlines, a reported figure is a ceiling of intent, not booked revenue, until a company reports it. No change to any NVDA rung or date."
+ },
+ {
+  "n": 92,
+  "c": 1,
+  "d": "19 Oct",
+  "t": "Coherent (COHR) - where is the real value? Price $232.90, up 100.17% over one year (20 Oct 2025 - 16 Oct 2026), high above $400 in June (NPK Invest, Thai)",
+  "v": "none",
+  "img": "slides/02-ai-infrastructure-datacentre/2026-10-19-cohr-where-is-the-real-value.png",
+  "claim": "Cover slide only: COHR at $232.90 on 16 Oct 2026, +$116.55 (+100.17%) over one year, after peaking above $400 in June. Pictures optical transceivers, lenses and fibre for AI data centres. The valuation argument itself is not on this page.",
+  "x": "Graded NOTED. The price matches our board to the cent ($232.90, 16 Oct close; 52-week range $84.35 - $440.00, so 47% off the high). On our own numbers COHR looks cheap but is low quality: average fair value $391 (+68% upside, analyst range $230 - $465) against a QUALITY SCORE OF 2 OUT OF 10 (its only points: net margin 11.3% = 1, debt/equity 0.30 = 1) - gross margin 37.5% (hardware), ROE 7.4%, free cash flow MINUS $1.0bn over the last 12 months, Rule of 40 only 8.1, trailing P/E 78.8, forward 39.5. Upside x quality = priority 13.6, rank #41 of 63. We sold COHR in September and it sits on the 10 Dec screen list; what would put it back on the buy list is free cash flow turning positive for two quarters, not a further price fall. No action."
+ },
+ {
+  "n": 91,
+  "c": 9,
+  "d": "18 Oct",
+  "t": "Anthropic opens a Singapore office and signs an MOU with the Singapore government (SanookAi post, Thai)",
+  "v": "none",
+  "img": "slides/10-ai-tools/2026-10-18-anthropic-singapore-office-mou.png",
+  "claim": "As stated by the post: Anthropic has opened an office in Singapore and signed an MOU with the government covering AI safety testing, helping SMEs adopt AI, skills training and sharing research on how AI affects work. Over 1,500 GovTech engineers use Claude Code; Grab saves about 40,000 sales-team hours a quarter with an AI assistant; thousands of Sea (Shopee, Garena) staff use Claude to write code; Singapore ranks second in the world for Claude use per head of population. The post notes there is no comparable announcement for Thailand.",
+  "x": "NOT GRADED - CONFLICT DISCLOSED. This item is about Anthropic and I am made by Anthropic, so under our standing rule (12 Sep 2026) I give no view, grade or investment reading on it. Filed on Salee's instruction (18 Oct 2026) for the record only. Figures are the post's and have not been checked by me."
+ },
+ {
+  "n": 88,
+  "c": 1,
+  "d": "16 Oct",
+  "t": "20 growth stocks shaping the AI future - five groups: compute (NVDA, AMD, AVGO, MU), storage and photonics (SNDK, MRVL, CRDO, LITE), infrastructure and cloud (COHR, VRT, NBIS, IREN), power (APLD, VST, CEG, OKLO), applications, space and robotics (PLTR, RKLB, ASTS, OUST)",
+  "v": "none",
+  "img": "slides/02-ai-infrastructure-datacentre/2026-10-16-20-growth-stocks-shaping-the-ai-future.png",
+  "claim": "Twenty names grouped into five layers of the AI build-out, each with a one-line role (AI computing, flash storage, optical networking, data-centre infrastructure, nuclear power, LiDAR and so on). No figures.",
+  "x": "Graded REJECT, filed at Salee request under AI infrastructure. A ticker poster with no numbers. We already own twelve of the twenty (NVDA, AMD, AVGO, MU, MRVL, CRDO, LITE, VRT, VST, CEG, PLTR, RKLB), SanDisk is the 10 Dec memory decision, and the other seven are either loss-making neoclouds and miners (NBIS, IREN, APLD) that fail the rate rule, or pre-revenue stories (OKLO, ASTS, OUST) that fail the Quality score. Coherent is the one name on the page not yet looked at properly; it sits in the same photonics group as Lumentum and goes on the 10 Dec screen list. Nothing changes."
+ },
+ {
+  "n": 87,
+  "c": 0,
+  "d": "16 Oct",
+  "t": "Study Wealth (Thai) - Applied Materials: the company that benefits from five AI-chip bottlenecks (GAA, HBM, CoWoS/panel packaging, hybrid bonding, inspection)",
+  "v": "none",
+  "img": "slides/01-semiconductor-industry/2026-10-16-study-wealth-amat-five-bottlenecks.png",
+  "claim": "AMAT does not make the chips but sells the tools behind five hard steps: (1) GAA transistors need atomic-level deposition (Trillium ALD, Precision Selective Nitride, in use at 2nm and below); (2) HBM stacking needs CMP, ECD copper, PECVD stress films and eBeam defect review - new DRAM and packaging tools launched June 2026; (3) CoWoS and panel-level packaging - AMAT bought the NEXX business from ASMPT in 2026 for large-panel plating; (4) hybrid bonding - BESI joined the AMAT EPIC Center on 1 Oct 2026, raising switching costs; (5) inspection - VeritySEM 7AP and SEMVision G7AP. The writer notes AMAT does not break out revenue by technology, so the ~25% growth cannot be attributed to any one of these.",
+  "x": "Graded NOTED - a well-argued post with its own caveats, and both dated claims check out against AMAT press releases (NEXX acquisition from ASMPT; Besi partnership expansion dated 1 Oct 2026). Nothing here changes a decision: we hold 57 AMAT at 19,702 cost, bought on exactly this picks-and-shovels logic, and the board already carries it at about +25% revenue growth. Two things I take from it: the Besi tie-up makes hybrid bonding a two-vendor process, which is good for lock-in and bad for anyone hoping AMAT does it alone; and the writer is right that the mix is undisclosed - the test that matters is the mid-November FQ4 print, where I will read the DRAM and advanced-packaging commentary, not the tech list. Not a reason to add before then."
+ },
+ {
+  "n": 86,
+  "c": 6,
+  "d": "15 Oct",
+  "t": "Fin Fix - 10 stocks with strong moats: AMZN, TSM, ACT (Aduro Clean), PLTR, ASML, META, NVDA, ZETA, GOOG, AVGO",
+  "v": "none",
+  "img": "slides/07-valuation-and-method/2026-10-15-fin-fix-10-stocks-with-strong-moats.png",
+  "claim": "Ten quality businesses with durable advantages and long-term compounding, each with a named moat type: ecosystem (AMZN), cost and scale (TSM), IP and green (Aduro), data (PLTR), technology (ASML), network effect (META), tech leadership (NVDA), data and AI (ZETA), search and AI (GOOG), diversified (AVGO).",
+  "x": "Graded REJECT, filed at Salee request. Eight of the ten are the obvious mega-caps everyone lists (we own seven: AMZN, TSM, ASML, META, NVDA, GOOGL, AVGO - PLTR fails our rate rule and sits at #58 on the ranking). The tell is #3 and #8. Aduro Clean Technologies is a pre-commercial plastics-recycling microcap: fiscal 2026 revenue CAD 167,206 (thousands, not millions), operating loss CAD 26.9m, pilot plant ran 47 hours continuously in June, first commercial plant still in permitting with no build date. A business with no revenue cannot have a moat, only a patent and a hope. Zeta Global is ad-tech we analysed before and passed on. Two promotional names slipped in among eight real ones is the shape of a paid placement, not research. Nothing new on any name we hold; the moat test that matters is our Quality score, not a shield icon."
+ },
+ {
+  "n": 85,
+  "c": 0,
+  "d": "15 Oct",
+  "t": "ASML Q3 2026 - queue to 2030: sales 11,662m euro, net profit 4,960m, gross margin 57.5%, full year raised to 44-45bn (DeepStock insight, Thai)",
+  "v": "none",
+  "img": "slides/01-semiconductor-industry/2026-10-15-asml-q3-2026-queue-to-2030.png",
+  "claim": "Three points: (1) Q3 sales 11,662m euro, net profit 4,960m, gross margin 57.5%, 2026 guidance raised to 44,000-45,000m; (2) customers showing interest in 2029-2030 orders while ASML says planned 2027-2028 capacity is not enough; (3) ASML benefits from current EUV, High-NA and the upgrade business. Source cited: ASML Q3 2026 results and management interview, 14 Oct 2026.",
+  "x": "Graded NOTED - figures match the ASML 6-K to the euro. Our written test (buy rung 1 if the 2027 outlook is not cut) PASSED: ASML said planned supply for 2027 and 2028 will not fully meet demand and it is looking to lift 2028 capacity beyond the +30% already announced. Order for 15 Oct night: 4 sh, limit at the ask, cap 1,734.90 (13 Oct close +1%), about 6,955 incl. commission; rung 2 (6,606) on the January results; 10,000 held back. Caution: the crates marked SOLD OUT with customer names are the artist’s - ASML said supply short of demand, not sold out, and named no customers. Allocation is not price."
+ },
+ {
+  "n": 84,
+  "c": 9,
+  "d": "14 Oct",
+  "t": "The full AI software stack explained - nine levels from models to evaluation (Raju Dandigam)",
+  "v": "none",
+  "img": "slides/10-ai-tools/2026-10-14-full-ai-stack-explained-9-levels.png",
+  "claim": "Reference card, no financial claims. Level 1 models (OpenAI, Gemini, Grok, DeepSeek, Qwen, Claude, Kimi, Mistral, Meta); 2 inference and access (Hugging Face, Together, Fireworks, Cerebras, vLLM); 3 agent frameworks (LangGraph, CrewAI, Microsoft Agent Framework); 4 tools and protocols (MCP, A2A, Browserbase); 5 memory; 6 vector databases (Postgres, Pinecone, MongoDB, Elasticsearch, AWS S3 Vectors); 7 embeddings and rerankers (incl. Nvidia); 8 data extraction; 9 evals and observability.",
+  "x": "Filed at Salee’s request under a new AI tools shelf. Disclosure: Claude (level 1) is made by Anthropic, which makes me, so no view on the models layer. Investment reading: of the ~80 names only a handful are listed - Microsoft, Meta, Alphabet, Amazon, Nvidia (all owned), MongoDB and Elastic (not on board). Levels 2-9 are mostly private, venture-funded and open-source: this is the layer where the AI money is spent, not earned, which is why our board sits at the chip, power and cloud layers underneath it."
+ },
+ {
+  "n": 83,
+  "c": 7,
+  "d": "14 Oct",
+  "t": "Leaders of the future market - 20 companies, 6 industries: defence, AI cloud, power, semis and photonics, space, physical AI (Thai)",
+  "v": "none",
+  "img": "slides/08-index-and-diversification/2026-10-14-future-leaders-20-companies-6-industries.png",
+  "claim": "A theme map, no figures: PLTR, KRKNF (defence/autonomy); IREN, SPENG, CIFR, NBIS, ALAB, CRDO (AI cloud and data centre); OKLO, VST, VRT (power); AVGO, MU, AXTI, AAOI, AEHR (semis and photonics); RKLB, SATL, PL (space); OUST (physical AI).",
+  "x": "Graded NOTED. We own eight of the twenty - Palantir, Astera Labs, Credo, Vistra, Vertiv, Broadcom, Micron, Rocket Lab - and sold AAOI in September. The rest is the long tail the gates already exclude: Oklo, Cipher, Nebius, IREN, Satellogic, Planet, Ouster, Aehr and AXT are loss-making or too small for the 1.5% position rule; Kraken Robotics is an OTC Canadian listing. One name for the 10 Dec review list only: AXT (GaAs/InP substrates for optical chips) - a real bottleneck material, but a ~1bn company that swings with China export rules."
+ },
+ {
+  "n": 82,
+  "c": 1,
+  "d": "13 Oct",
+  "t": "CPU vs GPU vs TPU vs NPU vs LPU vs DPU - the six AI processors and when each is used (Brij Kishore Pandey)",
+  "v": "none",
+  "img": "slides/02-ai-infrastructure-datacentre/2026-10-13-cpu-gpu-tpu-npu-lpu-dpu-explainer.png",
+  "claim": "Reference card, no financial claims: CPU = orchestration (Intel/AMD); GPU = training and inference, HBM + CUDA (Nvidia/AMD); TPU = Google-scale tensor maths, tied to Google Cloud; NPU = low-power on-device inference in phones; LPU = low-latency LLM serving on on-chip SRAM, needs many linked chips; DPU = SmartNIC that offloads networking, encryption and storage from the CPU/GPU.",
+  "x": "Graded NOTED - a clean explainer worth keeping for the family. Who on our board makes each: GPU - Nvidia and AMD (both owned); TPU - designed by Google (owned) and built by Broadcom (owned), so the TPU is not a threat to us, it is two of our holdings; NPU - Apple (owned) and Qualcomm (not on board); DPU - Nvidia (Mellanox) and Marvell (owned); CPU - AMD (owned) and Intel (not on board); LPU - Groq, private. The honest limitation the card shows: every accelerator except the GPU is tied to one owner or one use, which is why the GPU ecosystem keeps the pricing power."
+ },
+ {
+  "n": 80,
+  "c": 0,
+  "d": "13 Oct",
+  "t": "DRAM demand from humanoid robots could rise 20x by 2030 (Musk / The Monopolist, Thai)",
+  "v": "none",
+  "img": "slides/01-semiconductor-industry/2026-10-13-humanoid-dram-demand-20x-2030.png",
+  "claim": "Headline only: memory demand for humanoid robots may grow up to 20 times by 2030, attributed to Elon Musk. No unit count, no base year, no source figure on the slide.",
+  "x": "Filed on request - same claim as the Micron / robot DRAM slide commented on 12 Oct (see that note: a 20x rise from a tiny base is still small next to data-centre HBM; the Micron case rests on AI servers, not robots). Board: Micron owned, priority rank #2 in the 12 Oct ranking; Tesla not on board."
+ },
+ {
+  "n": 79,
+  "c": 0,
+  "d": "12 Oct",
+  "t": "TSMC outsources more CoWoS packaging - GlobalFoundries 2bn interposer deal (TrendForce)",
+  "v": "none",
+  "img": "slides/01-semiconductor-industry/2026-10-12-tsmc-cowos-outsourcing-gf.png",
+  "claim": "CoWoS packaging split by stage: compute dies (2-4nm, up to ~30k dollars a wafer) stay in-house at TSMC; silicon interposers (65/90nm) are outsourced - GlobalFoundries new ~2bn deal with a New York fab from 1H28, plus VIS and UMC; chip-on-wafer bonding partly outsourced to ASE; wafer-on-substrate assembly outsourced to ASE, Amkor and SPIL. Sources: Commercial Times, ETNews, Andrew Lu.",
+  "x": "💡 <b>TSMC keeps the expensive part and hands out the cheap parts</b> - the 2-4nm compute dies (the high-margin work) stay in-house, while older-node interposers and assembly go to partners. That protects gross margin, which is exactly our 15 Oct TSMC test (buy 10,078 only at 65% or more). 📊 It also loosens the CoWoS bottleneck: more packaging capacity means more AI chips shipped by Nvidia and Broadcom (both owned). ⚠️ The GlobalFoundries fab only starts in 1H28 - this helps 2028, not 2026-27. Board: TSMC owned (147.5 sh); Amkor sold earlier; GlobalFoundries, UMC, ASE not on board (UMC and ASE are Taiwanese, allowed). 🎯 No new names; read TSMC 15 Oct results for CoWoS capacity and margin."
+ },
+ {
+  "n": 78,
+  "c": 1,
+  "d": "12 Oct",
+  "t": "5 business layers driving the AI data centre - power, compute, networking, cooling, operators (30 names, Thai)",
+  "v": "none",
+  "img": "slides/02-ai-infrastructure-datacentre/2026-10-12-five-layers-ai-data-center.png",
+  "claim": "Power: VST, CEG, ETN, PWR, GEV, Enbridge. Compute: NVDA, AMD, AVGO, INTC, ARM, MU. Networking: ANET, MRVL, CRDO, CSCO, LITE, AAOI. Cooling: VRT, TT, MOD, CARR, JCI, NVT. Operators: DLR, EQIX, AMZN, MSFT, GOOGL, ORCL.",
+  "x": "📊 <b>We own 16 of the 30</b> and at least one name in every layer: power (Vistra, Constellation, Eaton, GE Vernova), compute (Nvidia, AMD, Broadcom, Micron), networking (Arista, Marvell, Credo, Lumentum), cooling (Vertiv), operators (Amazon, Microsoft, Alphabet). ⚠️ Slide error: Enbridge trades as ENB, not ENS (ENS is EnerSys). ⚠️ AAOI fails our no-China rule (sold 9 Sep); Oracle sold 5 Oct. 💡 <b>The thin layer is cooling</b> - one holding (Vertiv). Trane is already on the 10 Dec agenda, and the 12 Oct allocation plan gives Vertiv first call on the ranked pool (+$10,000 if it passes the 28 Oct disclosure test). 🎯 No new names; the layer map confirms the 10 Dec priorities."
+ },
+ {
+  "n": 77,
+  "c": 8,
+  "d": "12 Oct",
+  "t": "12 stocks with exposure to physical AI - robots, autonomy, sensors, chips (LeifInvests)",
+  "v": "none",
+  "img": "slides/09-robotics-and-humanoids/2026-10-12-physical-ai-12-stocks.png",
+  "claim": "Physical AI exposure across 12 names: Tesla (Optimus, robotaxi), Amazon (warehouse robots, Zoox), Symbotic (warehouse automation), Ouster (lidar), Qualcomm (edge AI chips), Ondas (drones, counter-drone), Teradyne (industrial and mobile robots), Intuitive Surgical (da Vinci), AeroVironment (drones, loitering munitions), Cognex (machine vision), BlackBerry (QNX embedded software), Vishay Precision (force and torque sensors).",
+  "x": "📊 <b>We own 5 of the 12</b>: Amazon, Intuitive Surgical, Teradyne, Cognex and AeroVironment. Sold earlier: Tesla, Qualcomm, Ondas. Not on board: Symbotic, Ouster, BlackBerry, Vishay Precision. 💡 <b>Only two of our five are meaningful positions</b> (Amazon about 6.6%, Intuitive Surgical about 1.9%); Teradyne, Cognex and AeroVironment are each under 0.5% and are exactly the tail the 12 Oct allocation plan sends to the 10 Dec BUILD-or-EXIT vote. ⚠️ For physical AI the profitable exposure is Amazon (robots inside a cash-rich business) and Intuitive Surgical (robots already paid for by hospitals); the small specialists mostly lose money or depend on defence budgets. 🎯 At 10 Dec: keep at most one small robotics name as a BUILD (Teradyne vs Cognex), exit the others."
+ },
+ {
+  "n": 76,
+  "c": 1,
+  "d": "12 Oct",
+  "t": "The AI networking stack (English version of slide 71) - 25 names in 5 layers, Goldman 15bn to 154bn",
+  "v": "none",
+  "img": "slides/02-ai-infrastructure-datacentre/2026-10-12-ai-networking-stack-english.png",
+  "claim": "Same 25 names and five layers as slide 71: switches (NVDA, ANET, CSCO, HPE, NOK); networking chips (AVGO, MRVL, ALAB, CRDO, SMTC); photonics (LITE, COHR, AAOI, MTSI, AXTI); fibre and connectors (GLW, APH, TEL, CIEN, ADTN); contract makers (FN, CLS, SANM, TTMI, FLEX). Goldman Sachs AI networking market 15bn to 154bn. Constrained optical supply.",
+  "x": "📊 <b>Already commented - see slide 71</b> (same content, Thai version). In short: we own 8 of the 25 (Nvidia, Arista, Broadcom, Marvell, Astera Labs, Credo, Lumentum, Amphenol), about a quarter of our stocks; Coherent, Corning, Ciena and Fabrinet are on the board without shares. ⚠️ AAOI and AXT fail our no-China rule (AAOI was owned and sold 9 Sep). ⚠️ All five layers fall together if cloud-giant capex is cut. 🎯 No new names; watch hyperscaler capex in late-October results."
+ },
+ {
+  "n": 75,
+  "c": 0,
+  "d": "12 Oct",
+  "t": "No ASML, no chips (Thai version) - 7 designers, 3 foundries, EUV machines at 150-200m each",
+  "v": "none",
+  "img": "slides/01-semiconductor-industry/2026-10-12-no-asml-no-chips-thai.png",
+  "claim": "Same map as slide 72 in Thai: Apple, AMD, Nvidia, Qualcomm, Tesla (AI6 from 2027), Microsoft (Azure chip) and Amazon (Trainium/Inferentia) feed TSMC (3nm, 2nm), Samsung (3nm, 4nm) and Intel (18A); all depend on ASML, the only EUV maker. Adds: EUV is the only way to make 7nm and smaller; each machine costs about 150-200 million dollars.",
+  "x": "📊 <b>Two small corrections</b>: TSMC made its first 7nm chips with older DUV machines, so EUV became essential from 5nm down, not 7nm; and 150-200m is the standard EUV price - the newest High-NA machines cost roughly double. 💡 That price is the moat: three customers buying a handful of 200m-plus machines a year gives ASML pricing power no rival can copy. ⚠️ Same simplification as slide 72: most Amazon and Microsoft AI chips are still made at TSMC. 📊 Board: ASML 13 sh, +41%, 19% below our fair value; TSMC 147.5 sh owned. 🎯 Q3 results 14 Oct (third-party date, confirm); decide the 7,000 rung on 15 Oct - buy only if the 2027 outlook is not cut and orders hold."
+ },
+ {
+  "n": 74,
+  "c": 1,
+  "d": "12 Oct",
+  "t": "AAOI (Applied Optoelectronics) - revenue path to 10bn by 2030, US factory pitch (NPK Invest, 4 panels)",
+  "v": "none",
+  "img": "slides/02-ai-infrastructure-datacentre/2026-10-12-aaoi-revenue-path-2030.png",
+  "claim": "Shares up about 300% in a year to 109.64. Revenue path: trailing 0.4bn, 2026E 1.1bn, 2027E 2.6bn, then 6.0bn, 8.0bn and 10.0bn for 2028-2030. Products: 400G/800G/1.6T optical transceivers, its own lasers, networking gear for AI data centres. Pitch: US-based factory (designed, built and tested in the USA) as the edge.",
+  "x": "⚠️ <b>Read the bar legend</b>: only 2026-2027 are company guidance or analyst consensus; <b>2028-2030 (6bn, 8bn, 10bn) are a scenario</b> - 25 times trailing sales in four years, from a company that still loses money on a GAAP basis. ⚠️ <b>The made-in-USA pitch is half the story</b>: AAOI also runs plants in Taiwan and Ningbo, China, so it still fails our no-China rule. ⚠️ It filed a 600 million dollar at-the-market share sale on 21 Aug 2026 - growth funded by issuing new stock. 📊 Our history: owned, SOLD 9 Sep at 112.40 (realised minus 223); price on this slide 109.64 - essentially where we exited. 💡 Our exposure to the same optics boom is Lumentum (owned, at fair value) with Coherent and Fabrinet on the board. 🎯 No change: not on the board. Would revisit only if fully out of China plus two years of steady profit with no new share sales."
+ },
+ {
+  "n": 73,
+  "c": 1,
+  "d": "12 Oct",
+  "t": "AI data centre map - market size and share by layer (650 Group and J.P. Morgan)",
+  "v": "none",
+  "img": "slides/02-ai-infrastructure-datacentre/2026-10-12-ai-data-center-tam-map-jpm.png",
+  "claim": "2026E market sizes with 2026-2030 growth: AI servers 349bn (36% a year; Nvidia 50%, Super Micro 12%, Dell 10%); AI switching 26bn (42%; Nvidia 42%, Celestica 18%, Arista 18%, Cisco 5%); AI Ethernet switches 20bn (49%; Celestica 26%, Arista 26%, Nvidia 18%); scale-across 2bn (100%; Ciena 47%, Arista 16%); storage 7bn (15%; white box 76%). Optics: Coherent, Lumentum, Fabrinet; DSP chips: Broadcom, Marvell, Credo. Shares are 2025.",
+  "x": "📊 <b>A credible source</b> (650 Group research with J.P. Morgan), and it shows where the money is: servers are 349bn, more than 13 times all switching. 💡 <b>We own the leader in most boxes</b>: Nvidia (servers and switching), Arista (switching and scale-across), Lumentum (optics), Broadcom, Marvell and Credo (DSP chips). On the board without shares: Ciena (47% of the fastest-growing box), Coherent, Fabrinet. ⚠️ Lenovo is Chinese, so excluded; Super Micro has an accounting history. 💡 <b>The one name worth knowing that we do not track: Celestica</b> (Canada) - 26% of AI Ethernet switches, level with Arista, by building switches to the cloud giants own designs. ⚠️ Fastest growth is on the smallest base: scale-across is only 2bn, so 100% a year adds less money than servers growing 36%. 🎯 No new names; Ciena and Celestica are candidates only if the 10 Dec review wants more networking, which our 25% weight argues against."
+ },
+ {
+  "n": 72,
+  "c": 0,
+  "d": "11 Oct",
+  "t": "No ASML, no chips - 7 designers, 3 foundries, one EUV machine maker",
+  "v": "none",
+  "img": "slides/01-semiconductor-industry/2026-10-11-no-asml-no-chips.png",
+  "claim": "Seven chip designers (Apple, Nvidia, AMD, Qualcomm, Tesla AI6 from 2027, Microsoft Azure chip, Amazon AWS chip) feed three foundries (TSMC, Samsung, Intel), and all three depend on ASML, the only maker of EUV lithography machines. Different foundries, same Dutch machine.",
+  "x": "📊 <b>The core fact is right</b>: ASML is the sole EUV supplier, so every leading-edge chip passes through its machines. ⚠️ <b>The arrows are simplified</b>: most Amazon and Microsoft AI chips are still made at TSMC; Intel makes only some parts or future generations for them. Tesla AI6 at Samsung Texas is correct. 💡 <b>We own the whole spine</b>: ASML 13 sh (+41%, 19% below our fair value), TSMC 147.5 sh (+22%), plus 5 of the 7 designers (Nvidia, Apple, AMD, Microsoft, Amazon). Not owned: Qualcomm, Tesla, Samsung, Intel. ⚠️ A monopoly is not a free lunch: ASML sales swing with chipmaker capex, and export rules (China) cap part of its market. 🎯 Plan unchanged: ASML Q3 results 14 Oct, decide the 7,000 rung on 15 Oct; 6,605.94 at the late-January print; 10,000 held back."
+ },
+ {
+  "n": 71,
+  "c": 1,
+  "d": "11 Oct",
+  "t": "AI networking sector map - 25 stocks in 5 layers (Silicon and Light), Goldman networking estimate",
+  "v": "none",
+  "img": "slides/02-ai-infrastructure-datacentre/2026-10-11-ai-networking-5-layer-map.png",
+  "claim": "Goldman Sachs is cited as sizing AI networking at $15bn growing to $154bn (a market estimate, not revenue). Five layers: (1) switches - NVDA, ANET, CSCO, HPE, NOK; (2) networking chips - AVGO, MRVL, ALAB, CRDO, SMTC; (3) photonics - LITE, COHR, AAOI, MTSI, AXTI; (4) fibre and connectors - GLW, APH, TEL, CIEN, ADTN; (5) contract makers - FN, CLS, SANM, TTMI, FLEX. Thesis: no need to guess the GPU winner, every camp needs the network. Watch optical supply, and hyperscaler capex in late-October results.",
+  "x": "📊 <b>We already own 8 of the 25, about $208k or a quarter of our stocks</b>: Nvidia, Arista, Broadcom, Marvell, Astera Labs, Credo, Lumentum and Amphenol. Four more are on the board without shares (Coherent, Corning, Ciena, Fabrinet). ⚠️ <b>This is the same AI bet in another form</b> - if hyperscalers cut capex, all five layers fall together. ⚠️ AXT (AXTI) makes its wafers in China, so it fails our no-China rule. The Goldman figure was not checked word for word (Goldman published an optical networking report in May 2026). 💡 Arista, Marvell and Astera Labs trade above our fair value; Broadcom (+45%) and Credo (+26%) are the cheapest owned names. 🎯 No new names. Watch: hyperscaler capex in late-October results (Microsoft, Alphabet, Meta, Amazon)."
+ },
+ {
+  "n": 69,
+  "c": 1,
+  "d": "10 Oct",
+  "t": "Anthropic compute deals - about $585bn across many suppliers (Google, Amazon, Nvidia, AMD and others)",
+  "v": "none",
+  "img": "slides/02-ai-infrastructure-datacentre/2026-10-10-anthropic-compute-deals-585b.png",
+  "claim": "Slide (NPK Invest): Anthropic compute commitments since 2025 total about $585bn - Google/Broadcom $200bn over 5 years (Apr 26), Amazon Web Services $100bn over 10 years (Apr 26), Fluidstack $50bn, Nscale $45bn, SpaceX/xAI $45bn, Lambda $35bn, Microsoft/Nvidia $30bn, AMD $20bn, TeraWulf $19bn, Akamai $11.6bn, Meta $10bn, Volta $10bn, Riot $9.1bn, CoreWeave (undisclosed). Spread across GPUs, TPUs, custom chips and CPUs.",
+  "x": "🔒 <b>CONFLICT DISCLOSED - no view given.</b> Claude is made by Anthropic, so under our standing rule (12 Sep 2026) this note gives no opinion on Anthropic or on any investment decision that depends on it. Filed as a factual record only. 📌 Board names that appear as suppliers: Alphabet, Amazon, Nvidia, AMD, Broadcom, Microsoft, Meta (all owned). 📌 Status of the IPO (public sources, 10 Oct): a draft S-1 was filed confidentially on 1 Jun 2026; reports said a listing could come as early as Oct 2026; no public S-1, price, date, exchange or ticker has been found. Our rule: nothing to test until the public S-1 is published. For any buy-or-not judgement, ask an adviser with no link to Anthropic."
+ },
+ {
+  "n": 68,
+  "c": 0,
+  "d": "10 Oct",
+  "t": "The 5 layers of memory - equipment, memory makers, packaging, storage, AI demand (30 names)",
+  "v": "none",
+  "img": "slides/01-semiconductor-industry/2026-10-10-memory-5-layers.png",
+  "claim": "Equipment (ASML, Applied Materials, Lam Research, KLA, Teradyne, Onto); memory makers (Micron, SK Hynix, Samsung, Western Digital, SanDisk, Kioxia); packaging and test (TSMC, Amkor, ASE, BESI, Disco, ASMPT); storage platforms (Pure Storage, NetApp, Dell, HPE, Western Digital, SanDisk); AI demand (Nvidia, Broadcom, AMD, Meta, Amazon, Alphabet).",
+  "x": "📊 <b>We own 13 of the 30</b>: ASML, Applied Materials, Lam Research, KLA, Teradyne (back-up), Micron, TSMC, Nvidia, Broadcom, AMD, Meta, Amazon, Alphabet. <b>Sold</b>: SK Hynix (+$951, overpriced US listing), Amkor. <b>10 Dec</b>: SanDisk as a possible second memory name. Not on board: Samsung, Kioxia, BESI, Disco, ASMPT (no normal US listing); Western Digital, ASE, Onto; storage box-makers Pure, NetApp, Dell, HPE (thinner margins). 💡 <b>Memory is ONE stock for us - Micron, about $50.9k (6% of stocks), +36%</b> - plus the machines that make it (all five big equipment makers). The memory boom is a price cycle: when it turns, makers fall hard. 🎯 <b>No action</b>; Micron stays on its 17 Dec results test with $10k parked."
+ },
+ {
+  "n": 67,
+  "c": 1,
+  "d": "10 Oct",
+  "t": "The photonics stack - 7 layers from materials to end markets (28 names)",
+  "v": "none",
+  "img": "slides/02-ai-infrastructure-datacentre/2026-10-10-photonics-stack-7-layers.png",
+  "claim": "Foundation (Intel, AMD, Qualcomm, Broadcom); materials (Corning, MP Materials, Albemarle, STMicro); wafers (AXT, IQE, Tower, GlobalFoundries); integration (Marvell, Credo, Astera Labs, Fabrinet); components (Lumentum, AAOI, IPG Photonics, Aehr); systems and modules (Coherent, POET, Lumentum, Ciena); end markets (Nvidia, Tesla, Alphabet, Lockheed).",
+  "x": "⚠️ <b>Padded at the bottom</b>: IQE is London-listed; AXT makes its wafers in China (no-China rule); MP Materials and Albemarle are magnets and lithium, not photonics; Intel and Qualcomm are a stretch as the \"foundation\". 📊 <b>We own 8 of the 28</b>: Nvidia, Alphabet, Lumentum, Marvell, Credo, Astera Labs, AMD, Broadcom. <b>Already on the 10 Dec agenda</b>: Tower Semiconductor, Ciena, MP Materials. <b>Watch</b>: Corning, Aehr. <b>Sold</b>: Coherent, Fabrinet, AAOI, Intel (+$3,132), Qualcomm, Tesla. 💡 Light-and-connectivity exposure is about $109k (13% of stocks) - enough for a theme every account is now pushing. 🎯 <b>No action</b>; same picture as Slide #61."
+ },
+ {
+  "n": 66,
+  "c": 1,
+  "d": "9 Oct",
+  "t": "Jensen Huang's 5-layer AI stack - energy, chips, cloud, models, apps (25 names)",
+  "v": "none",
+  "img": "slides/02-ai-infrastructure-datacentre/2026-10-09-nvidia-5-layer-ai-stack.png",
+  "claim": "Based on Nvidia's \"AI five-layer cake\" (Nvidia blog, 2026; not new). Energy (Constellation, Vistra, Oklo, Bloom, GE Vernova); chips (Nvidia, AMD, Broadcom, Micron, SanDisk); cloud and data centres (Nebius, IREN, CoreWeave, Applied Digital, DigitalOcean); models (Microsoft, Alphabet, Meta, Amazon, Oracle); applications (Palantir, Tesla, ServiceNow, Snowflake, Salesforce). Ticker picks are the poster's, not Jensen's.",
+  "x": "📊 <b>We own 12 of the 25</b>: Constellation, Vistra, GE Vernova, Nvidia, AMD, Broadcom, Micron, Microsoft, Alphabet, Meta, Amazon, Palantir. <b>Sold</b>: Nebius, IREN, CoreWeave, Oracle, Tesla, ServiceNow, Salesforce. <b>Watch</b>: SanDisk (10 Dec), Bloom. Not on the board: Oklo (no revenue yet), Applied Digital, DigitalOcean, Snowflake. 💡 <b>Same verdict as Slides #64 and #65</b>: heavy in energy, chips and models; nothing in the debt-funded cloud layer, which the rate rule keeps us out of. 🎯 <b>No action</b>."
+ },
+ {
+  "n": 65,
+  "c": 1,
+  "d": "9 Oct",
+  "t": "AI infrastructure industry supply chain - 7 layers, 28 names (moomoo, 8 Oct)",
+  "v": "none",
+  "img": "slides/02-ai-infrastructure-datacentre/2026-10-09-moomoo-ai-infrastructure-7-layers.png",
+  "claim": "moomoo map dated 8 Oct 2026: chips (Nvidia, AMD, Broadcom, Intel); foundry and packaging (TSMC, Intel, ASE, Amkor); data-centre solutions (Dell, HPE, Super Micro, Vertiv); memory (Samsung, SK Hynix, Micron, SanDisk); optical (Lumentum, Coherent, Marvell, Corning); AI cloud (CoreWeave, Nebius, IREN, Oracle); energy (GE Vernova, Constellation, Vistra, Bloom).",
+  "x": "📊 <b>We own 11 of the 28</b>, the profitable leader in every layer: Nvidia, AMD, Broadcom, TSMC, Vertiv, Micron, Lumentum, Marvell, GE Vernova, Constellation, Vistra. <b>Sold</b>: Intel (+$3,132), Amkor, SK Hynix, Coherent, CoreWeave, Nebius, IREN, Oracle. <b>Watch</b>: SanDisk (10 Dec), Corning, Bloom. Skipped on purpose: Dell, HPE, Super Micro (thin-margin box makers); Samsung and ASE trade outside the US. 💡 <b>The one layer we own nothing in - AI cloud - is the one where all four companies build data centres on borrowed money</b>; it was hit hardest in the 8 Oct sell-off, and it is exactly what the rate rule keeps us out of. Same picture as Slide #64 (10-layer map). 🎯 <b>No action</b>."
+ },
+ {
+  "n": 64,
+  "c": 1,
+  "d": "9 Oct",
+  "t": "AI data centre value chain - 10 layers from power to AI, about 70 US tickers (Thai)",
+  "v": "none",
+  "img": "slides/02-ai-infrastructure-datacentre/2026-10-09-ai-datacentre-10-layer-map.png",
+  "claim": "Thai map of the AI data-centre stack in 10 layers: 1 memory (DRAM, SK Hynix, Micron, SanDisk); 2 AI chips (Nvidia, AMD, Broadcom, Marvell, Arm, TSMC); 3 advanced packaging and test (Applied Materials, Lam, KLA, ASML, Onto, Amkor, Axcelis, FormFactor, Teradyne); 4 networking and optics (Broadcom, Arista, Marvell, Credo, Astera, Lumentum, Coherent, AAOI, Ciena, Amphenol, Corning, F5); 5 servers/ODM (Dell, Super Micro, HPE, Celestica, Flex, Sanmina, Avnet, Arrow); 6 storage (Seagate, SanDisk, Everpure, NetApp, Dell, HPE, Super Micro); 7 power (Bloom, Vertiv, Eaton, GE Vernova, Quanta, Vicor, Powell, Hubbell, nVent, Sterling, Constellation); 8 cooling (Vertiv, Modine, Johnson Controls, Carrier, nVent); 9 cloud and data-centre owners (Microsoft, Amazon, Alphabet, Meta, Oracle, Nebius, CoreWeave, Equinix, Digital Realty, DigitalBridge); 10 chip-design software (Cadence, Synopsys, Ansys).",
+  "x": "📊 <b>We own names in 8 of the 10 layers</b>: memory (Micron), chips (Nvidia, AMD, Broadcom, Marvell, TSMC), equipment (Applied Materials, Lam, KLA, ASML, Teradyne), networking (Broadcom, Arista, Marvell, Credo, Astera, Lumentum, Amphenol), power (Vertiv, Eaton, GE Vernova, Constellation, plus Vistra), cooling (Vertiv), cloud (Microsoft, Amazon, Alphabet, Meta) and design software (Cadence). 💡 <b>The two gaps are on purpose</b>: servers (Dell, Super Micro, HPE) assemble boxes on thin margins while the value goes to the chips inside; storage is covered by the SanDisk decision on 10 Dec. ⚠️ <b>The reminder</b>: owning every layer means one theme - if AI spending slows all ten fall together (8 Oct: our holdings -2.4%). Only non-AI names reduce that risk - the 10 Dec concentration check. 🎯 <b>No new names</b>."
+ },
+ {
+  "n": 63,
+  "c": 1,
+  "d": "7 Oct",
+  "t": "3 AI bottleneck groups that could still grow a lot - networking, cooling, energy (15 names, Thai)",
+  "v": "none",
+  "img": "slides/02-ai-infrastructure-datacentre/2026-10-07-3-bottlenecks-networking-cooling-energy.png",
+  "claim": "Thai slide: three bottlenecks for AI data centres. 1 Networking (fastest growth, but many names have little room left above analyst targets): Astera Labs, Credo, Marvell, Lumentum, Arista. 2 Cooling (widest spread - stock choice matters more than buying the group): Vertiv, Eaton, nVent, Modine, AAON. 3 Energy (slower, but the longest revenue visibility and clearest bottleneck): Constellation, Vistra, Bloom Energy, GE Vernova, Quanta Services. Three things to watch: valuation plus follow-on stocks, real bottlenecks measured by backlog and margins (not just revenue growth), and the weighting - networking fast, cooling selective, energy long runway.",
+  "x": "📊 <b>Our board already owns 10 of these 15</b>. Networking, all 5: Astera Labs (+54%), Credo (+55%), Marvell (+77%), Lumentum (+39%), Arista (+35%). Cooling: Vertiv (+3%), Eaton (+6%). Energy: Constellation (+14%), Vistra (+14%), GE Vernova (+7%). Bloom Energy and Quanta are watch-only; nVent, Modine and AAON are not on the board. 💡 <b>The slide agrees with how we built the board</b>: networking is where our biggest gains already are, so we add slowly; cooling and energy are where the planned buys sit - Credo, Vertiv, Eaton and Constellation rungs on 13 Oct, and the Vistra test after results on 10 Nov. ⚠️ <b>Its best line</b>: judge a bottleneck by backlog and profit margins, not revenue growth alone - the same test we use. ⚠️ <b>Bloom</b>: the slide itself calls it high-risk after a big run; it stays watch-only. 🎯 <b>No new names, no change to the schedule</b>."
+ },
+ {
+  "n": 62,
+  "c": 8,
+  "d": "7 Oct",
+  "t": "Robotics stocks map - Goldman now sees 6.5 million humanoid units a year by 2035 (41 names, 6 layers)",
+  "v": "none",
+  "img": "slides/09-robotics-and-humanoids/2026-10-07-goldman-6-5m-robotics-stocks.png",
+  "claim": "Goldman now sees 6.5 million humanoid robot units by 2035. Who captures it? Humanoids: Tesla, Ubtech, Hyundai, Agility, Dobot, XPeng, Xiaomi. Machine vision and sensors: Cognex, Zebra, Trimble, Keyence, Ouster, Innoviz, VPG. Warehouse and logistics: Symbotic, Daifuku, Kion, Amazon, MercadoLibre, GXO, Samsara. Industrial robots: Fanuc, ABB, Yaskawa, Teradyne, Rockwell, Honeywell, Siemens. Surgical and medical: Intuitive Surgical, Stryker, Medtronic, J&J, Globus Medical, Procept. Chips and batteries: Nvidia, AMD, Qualcomm, Ambarella, Ambiq, QuantumScape.",
+  "x": "✅ <b>Checked</b>: Goldman Sachs did raise its forecast in September 2026 to 6.5 million humanoid robots a year by 2035, roughly 5 times its earlier number (247wallst, 13-14 Sep). 📊 <b>Our board already owns 6 names on this map</b>: Nvidia (+27%), AMD (+159%), Amazon (+10%), Teradyne (+21%, owns Universal Robots), Cognex (+1%) and Intuitive Surgical (−6%, with an $8,618 buy due 9 Oct). We SOLD Tesla (−$687), MercadoLibre (+$273) and Qualcomm (+$11). ⚠️ <b>Most of the humanoid row is off limits</b>: Ubtech, Dobot, XPeng and Xiaomi are Chinese (our no-China rule); Agility is private; Hyundai, Fanuc, ABB, Yaskawa, Siemens, Keyence, Kion and Daifuku trade in the US only as thinly traded foreign over-the-counter shares. 💡 <b>The point</b>: the forecast is big, but the money most likely flows to the suppliers - the AI chips that act as the brain, the vision systems, the test equipment - and we already own those. Buying a humanoid maker today is buying a story with no profits yet. 🎯 <b>No action</b>. The 16 Sep answer still stands: no extra money into humanoids. It is on the 10 Dec agenda."
+ },
+ {
+  "n": 61,
+  "c": 1,
+  "d": "7 Oct",
+  "t": "10 photonics stocks to watch - if photonics is the next AI infrastructure wave",
+  "v": "none",
+  "img": "slides/02-ai-infrastructure-datacentre/2026-10-07-10-photonics-stocks-to-watch.png",
+  "claim": "Watchlist slide: Coherent (COHR), Lumentum (LITE), Tower Semiconductor (TSEM), Corning (GLW), Ciena (CIEN), Viavi (VIAV), Aehr Test Systems (AEHR), AXT (AXTI), Applied Optoelectronics (AAOI) and Marvell (MRVL). Thesis: AI compute needs more data, more data needs more bandwidth, and more bandwidth needs optical links - optical data, AI interconnect, fibre infrastructure and silicon photonics. Labelled speculative, not financial advice.",
+  "x": "✅ <b>Checked</b>: the CEO names match each company. The theme is the same one as our 1 Oct photonics slide (the 7-layer chain). 📊 <b>Our board already covers it</b>: we OWN <b>Lumentum</b> (+39%) and <b>Marvell</b> (+77%, with a $13,127 buy due 9 Oct). <b>Coherent, Tower, Corning and Ciena</b> are on the watch list (Ciena jumped about 14% on 6 Oct). We SOLD <b>Coherent</b> (−$434) and <b>Applied Optoelectronics</b> (−$223) in September. <b>Viavi, Aehr and AXT</b> are not on the board. ⚠️ <b>Leave out</b>: AXT makes most of its products in China (near our no-China rule); Aehr and Applied Optoelectronics are small, lumpy, and depend on a few customers. 💡 <b>The point</b>: we already own the two highest-quality ways into this theme (Marvell designs the chips, Lumentum makes the lasers). Adding more photonics would raise concentration, not quality. 🎯 <b>No action</b> beyond the planned 9 Oct Marvell buy."
+ },
+ {
+  "n": 60,
+  "c": 0,
+  "d": "5 Oct",
+  "t": "Nvidia full-stack AI factory - six customer groups, investments across every AI layer, and a record $235bn buyback (Nvidia)",
+  "v": "none",
+  "img": "slides/01-semiconductor-industry/2026-10-05-nvidia-full-stack-ai-factory-buybacks.png",
+  "claim": "Nvidia slide: CUDA programmability and the full-stack AI factory serve six customer groups - cloud providers (AWS, Azure, Google Cloud, Oracle, Meta), AI labs that run their own chips, 10,000+ AI start-ups, neoclouds (CoreWeave, Nebius, Lambda and others), server makers (Dell, Supermicro, Foxconn and others) and enterprise/industrial users. Nvidia holds strategic stakes in every layer: applications, models, infrastructure, chips (Coherent, Corning, Intel, Lumentum, Marvell, MediaTek) and energy. Buybacks: $10bn FY24, $34bn FY25, $40bn FY26, $53bn FY27 so far (already $13bn above all of FY26). Total authorisation $235bn = $85bn remaining plus $150bn new.",
+  "x": "✅ <b>Checked</b>: the $150bn buyback increase is real - announced 28 Sep 2026, the largest increase in history. 📊 <b>Size in context</b>: Nvidia is worth about $5.66 trillion, so the full $235bn authorisation is about 4% of the company and the $53bn bought so far this year is about 1%. Helpful, not a game-changer. 💡 <b>What the slide really shows</b>: Nvidia is no longer selling only chips; it sells to six different customer groups, so it does not depend on any one buyer. It also invests in its own customers and suppliers, including our holdings Marvell and Coherent (watch list). ⚠️ <b>The catch</b>: some of those customers (neoclouds such as CoreWeave and Nebius) are partly funded by Nvidia and then buy Nvidia chips - circular money that flatters sales if the AI build slows. ⚠️ <b>Disclosure</b>: Anthropic, the company that makes Claude, appears on this slide as an Nvidia investment and customer; no view is given on that stake. <b>Our position</b>: 420 shares, cost $79,380, about $98,260 (+24%). No change - the ladder stands: $7,000 at or below $215, $5,619.72 at or below $180, $3,000 after Q3 on 18 Nov only if gross margin is 72% or higher."
+ },
+ {
+  "n": 42,
+  "c": 6,
+  "d": "24 Sep",
+  "t": "Four levels of AI use: thought partner to autopilot",
+  "v": "none",
+  "img": "slides/07-valuation-and-method/2026-09-24-ai-maturity-4-levels.png",
+  "claim": "L1 thought partner, L2 co-worker, L3 make tools, L4 autopilot - with a wall between L2 and L3",
+  "x": "<b>Salee asked where this board sits. Answer: solidly L3, and past the wall the slide says most organisations never cross.</b> Evidence, not opinion: a 94-ticker dashboard that did not exist before, a 41-slide library with written comments, scheduled jobs that refresh 94 prices and the earnings data twice a day on their own, a sanity gate that blocks a bad price from ever reaching the page, an owner rule that the broker is truth for cost and quantity, and a written decision record. Those are tools, not usage. <b>L4 partially exists and is deliberately limited:</b> the data pipeline runs unattended (autopilot for facts), while every dollar still needs Salee to place the order at POEMS. 🎯 <b>That limit is a feature.</b> L4 in marketing means closing sales without a human; in investing it would mean an unsupervised system spending money - the one place autonomy is not an advantage. The gap worth closing is not autonomy but coverage: the automatic jobs own prices and earnings, and until this week nobody owned the value-history chart. Ownership gaps, not ambition gaps, are what break an L3 system."
+ },
+ {
+  "n": 41,
+  "c": 6,
+  "d": "24 Sep",
+  "t": "20 prompts for problem-solving (working method)",
+  "v": "none",
+  "img": "slides/07-valuation-and-method/2026-09-24-20-claude-prompts-problem-solving.png",
+  "claim": "Fill-in-the-blank prompt templates: decision, scenario, failure mode, post-mortem",
+  "x": "Filed as a method tool, not an investment slide. <b>How to use:</b> replace the [brackets] with real facts and send the whole thing; the answer comes back in that shape. <b>Why it beats an open question:</b> Salee sets the output format, forces the reasoning he wants (5 argues against the recommendation, 12 rebuilds from first principles, 19 traces second and third effects), and gets answers that stay comparable over time. <b>The five that fit the four pillars:</b> 2 Decision Framework for any buy or sell; 7 Scenario Planning for the 2035 target; 11 Failure Mode Mapping before signing a lease; 19 Second-Order Thinking for Subway decisions; 20 Post-Mortem after a trade goes wrong. 💡 Worked example: <i>I need to choose between selling CRWD on 13 October and keeping it. Goal 2x by 2035. Constraint: no new cash until January 2027. Risk: it sits at a 52-week high. Compare the trade-offs, recommend, and note what could change the recommendation.</i> Prompts 2 and 4 on the slide carry identical text - a printing error in the original."
+ },
+ {
+  "n": 40,
+  "c": 0,
+  "d": "24 Sep",
+  "t": "Six processor types: CPU, GPU, TPU, NPU, LPU, DPU",
+  "v": "none",
+  "img": "slides/01-semiconductor-industry/2026-09-24-six-processor-types-cpu-gpu-tpu-npu-lpu-dpu.png",
+  "claim": "Each chip solves a different bottleneck - not a ranking",
+  "x": "<b>We cover five of the six through companies we already own.</b> GPU: NVIDIA $94,714 and AMD $33,804. CPU: AMD (Intel sold 24 Sep). TPU: Alphabet $73,309, with Broadcom $31,417 co-designing the chips. NPU: Apple $15,503. DPU: NVIDIA, Marvell $12,654, Astera Labs $5,407. 🎯 <b>The gap is LPU</b> - fast chat-response chips - because Groq and Cerebras are private. No listed pure play, nothing to buy. 💡 Two lessons: we got this coverage by owning good businesses, not by buying one company per chip category; and ⚠️ <b>whoever wins, TSMC makes them</b> - $65,869 of our money, one company on one island, which is the concentration risk behind this whole board. The slide is right that this is not a ranking: these chips remove different bottlenecks, which is why the market grows in several directions at once. No change to plans."
+ },
+ {
+  "n": 39,
+  "c": 6,
+  "d": "23 Sep",
+  "t": "4 dimensions of strong leadership (EQ, SQ, AQ, IQ)",
+  "v": "none",
+  "img": "slides/07-valuation-and-method/2026-09-23-4-dimensions-of-strong-leadership.png",
+  "claim": "Emotional, social, adversity and intellectual quotients",
+  "x": "Not an investment slide, filed for method. It maps onto how this board is run. <b>IQ</b> is the written rule set: conviction level, time horizon and what would change my mind on every recommendation. <b>AQ</b> is the sell discipline - Intel, SK Hynix, CrowdStrike and First Solar go because they have no place in the plan, not because of news. <b>EQ</b> is the rule that stops us chasing a stock the week it jumps 30%. <b>SQ</b> is the division of labour: Claude researches and recommends, Salee places every order at POEMS, and the RSN board gets a written record. 💡 The one line worth keeping for investing: <b>ask better questions and seek diverse perspectives</b> - most of our costly errors came from taking a slide at face value, not from a bad calculation."
+ },
+ {
+  "n": 37,
+  "c": 0,
+  "d": "22 Sep",
+  "t": "Revenue mix of NVIDIA, Broadcom, Micron and AMD",
+  "v": "none",
+  "img": "slides/01-semiconductor-industry/2026-09-22-chip-revenue-mix-nvda-avgo-mu-amd.png",
+  "claim": "NVIDIA 93% data centre; Broadcom 70% chips, 30% software; Micron 61% data centre; AMD 58% data centre",
+  "x": "Sent as the next trillion-dollar chip makers, but all four have already crossed $1 trillion on our board (NVIDIA $5.5T, Broadcom $1.7T, Micron $1.2T, AMD $1.0T). We own all four, worth $198,457 (26% of holdings). 🎯 <b>The lesson is dependence.</b> NVIDIA earns 93 cents of every dollar from data centres, so it is the purest AI bet and the most exposed if AI spending slows. <b>Broadcom is the best cushion:</b> 30% of its sales is steady software (VMware) that does not depend on the AI cycle. Micron sells memory, whose prices swing hard; its low 7x forward earnings reflects that. AMD still earns 42% outside data centres (PCs, gaming, embedded), which is why its profit margin is only 16%. Figures not re-checked quarter by quarter; scale matches our board. No change to plans."
+ },
+ {
+  "n": 35,
+  "c": 1,
+  "d": "22 Sep",
+  "t": "Around 50 AI stocks, money flows into 8 layers",
+  "v": "none",
+  "img": "slides/02-ai-infrastructure-datacentre/2026-09-22-50-ai-stocks-8-layers.png",
+  "claim": "Software, AI clouds, hyperscalers, chips, networking, servers, power, data centres (29 names)",
+  "x": "We own 17 of the 29 names, worth $579,542.64, or 77% of our $756,500.73 of holdings. <b>Where we are:</b> chips (5 of 6, 35% of holdings) and hyperscalers (all 5, 32%) are our core; networking (3 of 4, 5%) and power (3 of 5, 4%) are building up under the October plan; software is only Palantir (1%). <b>Three layers are empty on purpose:</b> AI clouds (CoreWeave, Nebius, IREN) carry heavy debt and depend on a few customers; servers (Dell, HPE) have thin margins; data centre landlords and ex-bitcoin miners are debt-funded property plays. ⚠️ <b>The slide makes the key point itself: one company revenue is another company cost.</b> Hyperscaler spending pays our chip, networking and power companies, so about 77% of our money rides on one spending cycle. The 10 December healthcare screen is the planned offset. Of the 12 names we do not own, only Arm (up 34% last week) and Coherent are on our watch board; no new buy."
+ },
+ {
+  "n": 33,
+  "c": 1,
+  "d": "21 Sep",
+  "t": "8 top stocks to watch in 2027",
+  "v": "none",
+  "img": "slides/02-ai-infrastructure-datacentre/2026-09-21-8-stocks-to-watch-2027.png",
+  "claim": "GEV, VRT, CRDO, ANET, AVGO, TSM, CAMT, MU",
+  "x": "<b>We already own 7 of the 8</b>, worth $150,291.60, with $101,708.40 of approved budget still unspent across them. The only name we do not have is Camtek (CAMT), an Israeli chip-inspection maker. We already cover that job with KLA, the larger leader. No new name needed; the plan is to finish buying what is already approved."
+ },
+ {
+  "n": 32,
+  "c": 7,
+  "d": "21 Sep",
+  "t": "10 industries that will shape the future (19 names)",
+  "v": "none",
+  "img": "slides/08-index-and-diversification/2026-09-21-10-future-industries.png",
+  "claim": "Obesity, hair loss, humanoids, AI power, nuclear, space, quantum, AI agents, gene editing, AI chips",
+  "x": "We hold 6 of the 19 names (NVDA, MSFT, GEV, RKLB, PLTR, AMD) worth $163,127.99. The list mixes two kinds of industry: <b>ones already making big profits</b> (AI chips, AI power, AI software), where our money already sits, and <b>small, mostly loss-making bets</b> (hair loss, quantum, gene editing, small nuclear, space). Doubling in five years does not need the second kind. 🎯 <b>The one real gap is obesity treatment: Eli Lilly is large, profitable and has no link to AI spending.</b> Added to the 10 December healthcare screen, not a buy. Unitree and Sun Pharma are not US-listed."
+ },
+ {
+  "n": 31,
+  "c": 0,
+  "d": "21 Sep",
+  "t": "Why is NVIDIA the cheapest chip stock? (forward P/E of 8 names)",
+  "v": "none",
+  "img": "slides/01-semiconductor-industry/2026-09-21-chip-forward-pe-nvidia-cheapest.png",
+  "claim": "Intel 59x, AMD 44x, ASML 29x, TSMC 20x, Broadcom 19x, Qualcomm 19x, NVIDIA 17x, Micron 6x",
+  "x": "Figures match our board, except Broadcom (board 23.6x) and Intel (board 69.3x). 🎯 Checked against growth and profit, <b>NVIDIA (83% growth, 64 cents profit per dollar) and TSMC are the cheapest for what you get</b>. Broadcom is fair. <b>Micron is low because the market expects its profits to fall</b>, not a bargain. ASML is a premium paid for being irreplaceable. <b>AMD pays for hope</b> (40% growth, only 16 cents profit). <b>Intel is high because it earns almost nothing</b> and is losing money, and Qualcomm at 18x is not cheap for 5% growth. No change to plans."
+ },
+ {
+  "n": 30,
+  "c": 7,
+  "d": "21 Sep",
+  "t": "10 themes to get rich in 5 years (30 names)",
+  "v": "none",
+  "img": "slides/08-index-and-diversification/2026-09-21-10-themes-5-years.png",
+  "claim": "Ten themes, three stocks each",
+  "x": "Filed, no action. We already own most of the list. ⚫ Two errors: <b>SkyWater's ticker is SKYT, not SKHY</b>, and it lists SpaceX as <b>private while also giving it a ticker</b>. The names we do not have (Tesla, Rockwell, Eli Lilly, Thermo Fisher, Cameco) are the same robotics and healthcare gaps already on the 10 December list."
+ },
+ {
+  "n": 29,
+  "c": 0,
+  "d": "20 Sep",
+  "t": "Micron revenue growth \"3.3x NVIDIA\"",
+  "v": "none",
+  "img": "slides/01-semiconductor-industry/2026-09-20-micron-growth-3.3x-nvidia.png",
+  "claim": "MU 346%, SK hynix 257%, NVDA 106%, PLTR 93%, AVGO 86%",
+  "x": "Filed only. One quarter's growth, and most of Micron's comes from <b>higher memory prices, not more chips sold</b>. That is why the 30 September print is the test."
+ },
+ {
+  "n": 28,
+  "c": 1,
+  "d": "20 Sep",
+  "t": "Truist — the AI stack, ~$8T by 2030",
+  "v": "none",
+  "img": "slides/02-ai-infrastructure-datacentre/2026-09-20-truist-ai-stack-8t-2030.png",
+  "claim": "App $2.1T + Cloud $2.1T + Hardware $3-4T",
+  "x": "Filed. 💡 The arithmetic: 2.1 + 2.1 + 3 to 4 = <b>$7.2T to $8.2T</b>. \"~$8T\" is the top of the range, not the middle. It is a broker slide promoting Nebius. We are heaviest in the hardware layer."
+ },
+ {
+  "n": 25,
+  "c": 8,
+  "d": "19 Sep",
+  "t": "Humanoid robot anatomy — 12 components",
+  "v": "none",
+  "img": "slides/09-robotics-and-humanoids/2026-09-19-humanoid-robot-anatomy.png",
+  "claim": "The 12 key parts that bring robots closer to humans",
+  "x": "A clear teaching diagram with <b>no companies, no prices and no numbers</b> — nothing to act on. 💡 Worth keeping for one reason: the parts it names are where the money actually is. <b>Actuators (3, 5, 10), sensors (1, 12), vision and the chest compute unit (4)</b> are the high-value content; the frame, feet and battery case are commodity metalwork. Our only exposure sits in <b>ISRG and CGNX</b> — and Group 7 is still misnamed \"Healthcare &amp; Robotics\" while holding no actuator or sensor maker at all."
+ },
+ {
+  "n": 21,
+  "c": 0,
+  "d": "18 Sep",
+  "t": "\"Intel CEO confirms memory crisis — prices up 5–7×\"",
+  "v": "wrong",
+  "claim": "Memory prices up 5–7×, worst in 2027",
+  "x": "<b>True backwards, false forwards.</b> ~5× is right for conventional DRAM <i>contract</i> prices over four quarters; <b>7× is unsupported</b>. The quarterly rises go <b>+93–98% → +58–63% → +13–18%</b> — the acceleration is gone. NAND goes the <i>other</i> way in 2027; HBM never inflated at all. <b>Intel sold its NAND business — it buys memory, it doesn't make it.</b> Traces to one AI-translated Korean page. 🟡 Found an ambiguity in our own Micron condition with 12 days to run."
+ },
+ {
+  "n": 18,
+  "c": 1,
+  "d": "19 Sep",
+  "t": "AI Cloud middle layer \"eats the margin\"",
+  "v": "wrong",
+  "img": "slides/02-ai-infrastructure-datacentre/2026-09-19-ai-cloud-middle-layer-margin.png",
+  "claim": "The AI-cloud middleman collects the compute margin",
+  "x": "<b>Exactly backwards, and our own board proves it.</b> Bottom (suppliers) NVDA <b>+63.66%</b>, MU +55.91%. Top (customers) MSFT +40.3%, GOOGL +37.9%. <b>Middle: CRWV −25.4%, NBIS −32.7%, IREN −99.4% — every one loses money.</b> 💡 Why it fools people: their <i>gross</i> margins are superb (67–77%). The money dies below the gross line — <b>GPU depreciation and interest on the debt that bought them.</b> We own none of the middle layer and banked <b>+$1,074.73</b> exiting it."
+ },
+ {
+  "n": 15,
+  "c": 2,
+  "d": "19 Sep",
+  "t": "Oracle invests in 1.7 GW of wind",
+  "v": "wrong",
+  "img": "slides/03-power-and-energy/2026-09-19-oracle-1.7gw-wind.png",
+  "claim": "Not enough power for AI — Oracle invests 1.7 GW of wind",
+  "x": "<b>The number is right, the noun is wrong.</b> These are <b>power purchase agreements, not ownership</b> — RWE's own release says \"virtual power purchase agreement… for 433 megawatts\" on wind farms <b>commissioned in 2008 and 2009. Zero Oracle capex.</b> Immaterial beside <b>$28,499m of capex in one quarter</b> and <b>−$28.7bn trailing free cash flow</b>. 🎯 <b>Oracle is becoming the middle layer</b> — the CoreWeave model at mega-cap scale. 💡 <i>When a company says \"invest\", ask whether anything appears on its balance sheet.</i>"
+ },
+ {
+  "n": 13,
+  "c": 2,
+  "d": "18 Sep",
+  "t": "OKLO \"double bottom alert\"",
+  "v": "wrong",
+  "claim": "Call setup / put setup off 4-hour, 1-hour and 15-minute charts",
+  "x": "<b>Not an investment slide — an options day-trading sheet.</b> Its chart tops out at $52 while OKLO's all-time high is <b>$193.84</b> — a window that excludes an 81% collapse, then prints \"DOUBLE BOTTOM\" in green. <b>This board does not trade options.</b>"
+ },
+ {
+  "n": 12,
+  "c": 2,
+  "d": "17 Sep",
+  "t": "Amazon–Generac deal",
+  "v": "wrong",
+  "claim": "An \"$8 billion deal\" between Amazon and Generac",
+  "x": "<b>The headline is wrong.</b> The 8-K promises <b>$2.4bn of expected deliveries</b>; the $8bn is the level at which Amazon's <i>warrant</i> fully vests. That is 1.1% of Amazon's capex guide. 🎯 <b>Third time in a month a supplier paid its customer in equity</b> — after Google at TeraWulf and Cipher. <i>Read the exhibit, not the headline.</i>"
+ },
+ {
+  "n": 11,
+  "c": 3,
+  "d": "19 Sep",
+  "t": "18 biotech names by theme",
+  "v": "none",
+  "img": "slides/04-biotech-industry/2026-09-19-18-biotech-names-part1.png",
+  "claim": "\"Money is flowing into biotech\" — 18 names to watch",
+  "x": "<b>Interesting as a field, wrong for this board as built.</b> Only 1 of 18 is ours (TEM, no budget). <b>A clinical trial either works or it doesn't</b> — a coin flip with a scientific prior, not volatility. The metric that decides survival is <b>cash runway</b>, and the slide gives it for <b>zero of the eighteen</b>. An AI-designed drug passes the same trials — <b>AI can make you fail faster and cheaper; it cannot make biology work.</b> 💡 The list is secretly two: <b>tools (Illumina, Bruker, 10x, Twist, Natera) vs clinical-stage coin flips</b>. 🟡 And it exposed that <b>Group 7 is misnamed</b>."
+ },
+ {
+  "n": 10,
+  "c": 4,
+  "d": "18 Sep",
+  "t": "7 defense & aerospace stocks",
+  "v": "none",
+  "img": "slides/05-defence-and-space/2026-09-18-7-defense-aerospace-stocks.png",
+  "claim": "LMT, NOC, GD, RTX, BA, PLTR, AXON benefit from a changing world",
+  "x": "<b>Yes defence is interesting — we already decided that, approved $35,000, and spent $5,700.88.</b> <b>Group 9 is the worst-deployed group on the board at 16.3%.</b> And the allocation is backwards: <b>LHX (+8.11% net margin) has $9,000 approved and ZERO invested; RKLB (−21.52%, ranked 80th of 81) holds the largest budget at $15,000.</b> Only Palantir of the seven is ours. <b>Fix the budget we have before adding a name.</b>"
+ },
+ {
+  "n": 5,
+  "c": 6,
+  "d": "17 Sep",
+  "t": "Magnificent 7 cash",
+  "v": "wrong",
+  "claim": "Apple looks cash-poor next to its peers",
+  "x": "<b>Measured the wrong line.</b> Apple holds <b>$146,517m</b> — second of the seven — because <b>$84,118m sits in long-term marketable securities that cash charts drop</b>. 💡 On <i>net</i> cash the ranking inverts and <b>Amazon, the chart's №2, is $5.9bn in debt</b>. The big piles are working capital for a construction programme, not trophies."
+ },
+ {
+  "n": 4,
+  "c": 6,
+  "d": "18 Sep",
+  "t": "\"11 stocks you haven't missed yet\"",
+  "v": "wrong",
+  "claim": "Eleven stocks still early enough to buy",
+  "x": "<b>The worst-made slide yet.</b> SEZL appears <b>twice</b>; <b>Nebius is given Pat Gelsinger as CEO</b>; IREN is labelled \"$REN\"; <b>AppLovin carries an Apple logo</b>; <b>Micron carries an AMD logo</b>. And every price on it is below the market — a list titled \"stocks you haven't missed\" has already missed them."
+ },
+ {
+  "n": 3,
+  "c": 6,
+  "d": "~Sep",
+  "t": "PEG ratio / Lumentum",
+  "v": "wrong",
+  "claim": "A PEG of 0.32 makes it cheap",
+  "x": "<b>PEG is the weakest number on any slide.</b> Separately, LITE's −230% net margin proved <b>real</b> — a $7,756.6m non-cash loss on settling convertible notes, while free cash flow was +$300.1m. 💡 <i>An implausible number is not necessarily a wrong number.</i>"
+ },
+ {
+  "n": 2,
+  "c": 6,
+  "d": "~Sep",
+  "t": "Eight biggest pullbacks from all-time high",
+  "v": "none",
+  "claim": "Stocks far below their highs = opportunity",
+  "x": "Reviewed name by name; no position changes. A large fall is a fact about the price, not a fact about the business."
+ },
+ {
+  "n": 1,
+  "c": 6,
+  "d": "~Sep",
+  "t": "Humanoid robots (Musk 1bn / XPeng 10 min)",
+  "v": "none",
+  "claim": "One billion humanoids within ten years",
+  "x": "Vocabulary added to the dictionary — takt time, nameplate capacity, pre-orders vs shipments, disclosed vs asserted. No position changes."
+ }
+]
