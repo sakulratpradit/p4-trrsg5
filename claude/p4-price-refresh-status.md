@@ -1,17 +1,16 @@
-# P4 price refresh status
+# P4 price refresh — last run status
 
-- Run time (UTC): 2026-10-23 00:33 - 01:0x (00:30 scheduled run)
-- Trading date recorded: 2026-10-22 (Thu)
-- Result: PUSHED
-- Commit: ec6c645 ("Daily price refresh 2026-10-23 run (closes of 2026-10-22): 63 prices")
-- Prices changed: 63 of 63 (plus SPY 763.96 and QQQ 704.47 to BENCH, both 2026-10-22)
-- Largest move: COHR -12.51% (237.53 -> 207.82)
-- 6% gate: THIRTY-TWO tickers tripped it (Lam Research supply-warning selloff, chips industry-wide; SPY only -1.18%, QQQ -2.86%). Every one verified against a dated second independent source before pushing with --allow: COHR, LRCX, LITE, TSEM, ALAB, FN, CIEN, CRDO, GEV, TER, VST, STRL, KLAC, SPCX, MPWR, MRVL, BE, SNDK, AMAT, AMD, GLW, PWR, STX, VRT, APH, ARM, ANET, META, ASML, SNPS, ETN, MU. Sources and per-ticker figures are in the ASOF entry. Sanity gate: PASS.
-- Quote/history disagreements: none among the 60 history rows fetched (all matched the quote closes exactly).
-- Stale/lagging sources: MPWR quote page stale again ('Oct 22, 11:07 AM EDT - Market open') -> history-table fallback 1167.93, confirmed EXACT by gurufocus (10/22/2026 17:32, 'fell 9.0% to 1167.93'). TSEM and CDNS history pages lagged (no Oct 22 row); their quote pages passed both the stamp and prev-close tests and were used. Benzinga was stale for COHR/ALAB/APH/FN/TSEM (fell back to digrin, marketchameleon, stockinvest.us, ycharts); Google Finance stale (Sep 25 caches) on every name tried; digrin stale for AMD/KLAC(0.26% off)/MPWR.
-- Unresolved tickers: none.
-- 52-week ranges extended: FSLR lo52 171.25, KTOS lo52 38.27, BWXT lo52 127.30, SE lo52 75.69; V hi52/ath 414.34 and AAPL hi52/ath 348.22 (new all-time highs).
-- HISTORY row appended for 2026-10-22 (n=36, mv 774,693.43, unreal +60,787.43 = +8.51%, cash 24,735.56); the 2026-10-21 row's sha set to 78bd44f. Risk series: spy[2026-10-22]=763.96 appended; ust10 gap 2026-10-21=5.13 backfilled (ycharts, released Oct 22 16:15 EDT); ust10 for 2026-10-22 not yet published - skipped.
-- Crash reserve: SPY 1.94% below spyHigh 779.09 - the -15% trigger NOT tripped.
-- Live page: push accepted (ddfa383..ec6c645). Could NOT fetch https://sakulratpradit.github.io/p4-trrsg5/ from this sandbox (WebFetch provenance restriction) and the Pages-build API is blocked by the proxy, so live rendering was verified locally instead: node check_dashboard.js on the pushed index.html printed "table rows rendered: 867 / ZERO PAGE ERRORS".
-- Blockers: none.
+- **Run time (UTC):** 2026-10-27 00:30 run (started 00:32, finished ~01:1x UTC)
+- **Trading date recorded:** 2026-10-26 (Monday close)
+- **Status:** PUSHED
+- **Commit:** 277c77c (`Daily price refresh 2026-10-26: 61 prices`)
+- **Prices changed:** 61 of 63 (SPY 765.37 and QQQ 712.20 also written to BENCH; SPY appended to the risk series)
+- **Unresolved tickers (prices left at 2026-10-23):**
+  - **FSLR** — quote/stat header intraday ("10:34 AM EDT - Market open"); history's Oct 26 row internally impossible (close 169.11 below its own low 169.38 on 87k volume) and discarded per the sanity rule; Google Finance cached Sep 29, benzinga cached Nov 2024, gurufocus undated, digrin monthly only. everhint's after-hours wrap shows a new 52-week low 168.41 touched, 168.09 after hours — the stale board price 171.99 likely overstates Monday's close by ~2%.
+  - **CGNX** — history table ends Oct 23; every header (stockanalysis stats/market-cap/overview, stocktitan, Google Finance, benzinga, marketscreener) stale or intraday. No dated Oct 26 close anywhere.
+- **Sanity gate:** blocked ARM +6.19%, LITE +8.19%, TSEM +6.68%; each verified against a dated second source (ARM: gurufocus 10/26 16:05 "$223.35" EXACT; LITE: gurufocus 10/26 16:13 "$818.10" EXACT + thecerbatgem prev close 756.17 identical; TSEM: aaii dated Oct 26 intraday +9.13% from prior close 167.560 identical — direction and size) and pushed with `--allow ARM --allow LITE --allow TSEM`. Re-run: PASS.
+- **History-table fallbacks (headers intraday/stale):** KTOS 40.43, BE 203.92, STRL 360.72, CIEN 335.93 — all history rows internally consistent on normal volume. BWXT quote close 131.20 kept (history page never surfaced; stated prev close 127.19 = Friday's verified close).
+- **UST10:** skipped for 2026-10-26 — ycharts latest period is Oct 23 (5.00, next release Oct 27 16:15 EDT); mortgagenewsdaily's dated table ends at an Oct-25 row and its live 4.964 is undated.
+- **ath note:** CRWD (261.83), FTNT (183.33), NET (331.86) closed above their stored `ath` but below `hi52`; board precedent extends ath only together with hi52, so ath was left untouched — flagging for the interactive session to reconcile.
+- **Live page:** push confirmed on origin/main (277c77c); the built page renders locally with ZERO PAGE ERRORS (Playwright). The GitHub Pages URL could not be re-fetched from this sandbox (WebFetch provenance approval has no one to answer in a scheduled run) — not verified end-to-end this run.
+- **Blockers:** none.
