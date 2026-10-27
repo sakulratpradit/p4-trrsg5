@@ -3,208 +3,17 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Oct 27, 2026 (run 00:30 UTC) - DAILY PRICE REFRESH: 61 of 63 closes updated to the Mon 2026-10-26 close '
- "(stockanalysis.com quote/statistics-page headers stamped 'At close: Oct 26, 2026, 4:00 PM EDT', previous close or "
- 'implied previous close validated against the history tables; every number from a tool call this session). A broad '
- 'rebound day: SPY +0.71%, QQQ +1.11%. THREE MOVES PAST THE 6% GATE, all confirmed real via a dated second independent '
- "source and pushed with --allow: LITE +8.19 (gurufocus 10/26/2026 16:13 'rose by 8.2% to a current price of $818.10' "
- '- EXACT; thecerbatgem 26 Oct: last 818.10, day high 840.47 identical, prev close 756.17 identical), TSEM +6.68 (aaii '
- 'dated Oct 26 2026, 1:16 PM CST: intraday 182.865, +9.13% from prior close 167.560 identical to the board - direction '
- "and size; quote-page closing print 178.75 kept per the rules), ARM +6.19 (gurufocus 10/26/2026 16:05 'rose 6.2% to a "
- "current price of $223.35' - EXACT). TWO UNRESOLVED, prices left at 2026-10-23 per resolution rule step 5: FSLR "
- "(quote/stat header intraday-stamped '10:34 AM EDT - Market open'; history Oct 26 row internally impossible - close "
- '169.11 BELOW its own stated low 169.38 on 87k volume - whole table discarded per the sanity rule; Google Finance '
- "cached Sep 29, benzinga cached Nov 2024, gurufocus price undated, digrin monthly only; everhint's 26 Oct after-hours "
- 'wrap shows a new 52-week low 168.41 touched and 168.09 after hours, so Monday likely closed ~169 and the stale '
- '171.99 overstates it slightly - no dated official close surfaced) and CGNX (history table ends Oct 23; stockanalysis '
- 'headers intraday or stale; stocktitan, Google Finance, benzinga and marketscreener all cached Oct 23 or older). FOUR '
- 'HISTORY-TABLE FALLBACKS per resolution rule step 4, headers intraday or stale, history rows internally consistent on '
- 'normal volume: KTOS 40.43 (+4.52), BE 203.92 (+5.49; its intraday stat header read +7.83% at 11:44 AM), STRL 360.72 '
- "(+1.53), CIEN 335.93 (+4.89). BWXT quote close 131.20 (stamped Oct 26 4:00 PM, stated prev close 127.19 = Friday's "
- 'verified close; its history page again never surfaced in search). AVGO, LRCX, NFLX and SE history pages lagged (no '
- 'Oct 26 row); their quote/stat headers passed both the stamp and prev-close tests. CAT prev-close test passed against '
- 'the Oct 23 ADJUSTED close 685.37 (ex-dividend); official close 692.13 written. Largest moves: LITE +8.19, TSEM '
- '+6.68, ARM +6.19, COHR +5.83, SNPS +5.62, BE +5.49, GEV +4.92, CIEN +4.89, KTOS +4.52, DDOG +3.93, GLW +3.27, FN '
- '+3.27, LRCX +3.22, PWR +3.20. lo52 extended: NFLX 65.04 -> 63.9; SE 74.63 -> 74.01. ath untouched (board precedent '
- 'extends ath only together with hi52; CRWD/FTNT/NET closes above stored ath left to the interactive session). SPY '
- '765.37 (2026-10-26, +0.71%) and QQQ 712.20 (+1.11%) written to BENCH; spyHigh stays 779.09 of 2026-10-06 (SPY 1.76% '
- 'below the high - the -15% crash-reserve trigger NOT tripped). SPY 765.37 appended to the daily risk series; UST10 '
- 'for 2026-10-26 NOT YET PUBLISHED (ycharts latest period Oct 23 2026 = 5.00, updated Oct 26 16:18 EDT, next release '
- "Oct 27 16:15 EDT; mortgagenewsdaily's dated table ends at an Oct-25 row 4.965 and its live 4.964 carries no date) - "
- "skipped, the monthly risk run copes with gaps. HISTORY row appended for 2026-10-26; the 2026-10-23 row's sha set to "
- 'b9f43a2 (its push commit). Prices only; fundamentals, POS, TRADES, GROUPS untouched. || PREVIOUS ENTRY: Oct 26, 2026 '
- '- CRDO BOOKED: 34 sh at 148.76 = 5,068.66 (POEMS order 1054748, Done 22:20 Bangkok; limit raised once from 147.29 to '
- 'the 148.76 cap). Position 111 sh, cost 17,453.25, room 546.75. Free cash 19,666.90. The 10 Nov CRDO rung is done '
- '(same money). || PREVIOUS ENTRY: Oct 26, 2026 - EARNINGS BACKFILL: SNDK, TER, CDNS, ARM, CEG, VRT, FTNT, VST, GLW, '
- 'GEV, APP, APH (+HOOD FCF fields) had fundamentals older than their last quarterly report (missed Jul-Aug refreshes); '
- 'refreshed from stockanalysis.com TTM figures. pe set to price/eps for every name (board eps, which excludes one-off '
- 'gains where noted). || PREVIOUS ENTRY: Oct 26, 2026 - FAIR VALUE & RATIO RESYNC: analyst targets '
- '(an/fvAvg/fvMin/fvMax) and price-linked ratios (pe/fpe/peg/ps; M3 pfcf/ev/de) re-read from stockanalysis.com for 63 '
- 'of 63 names; 0 names left unchanged. Fair values had last been refreshed in early August for most names. || PREVIOUS '
- 'ENTRY: Oct 26, 2026 (MANUAL RUN - both scheduled runs on Sat 24 Oct failed with a usage-limit error) - DAILY PRICE '
- "REFRESH: 63 of 63 closes updated to the Fri 2026-10-23 close (stockanalysis.com quote pages stamped 'At close: Oct "
- "23, 2026, 4:00 PM EDT', previous close validated against the history tables; every number from a tool call this "
- "session). A calmer, mixed day after Thursday's chip selloff: SPY -0.52%, QQQ -0.01%. FIVE MOVES PAST THE 6% GATE, "
- "all confirmed real via a dated second independent source and pushed with --allow: BE -11.24 (benzinga 'Last update: "
- "Oct 23, 7:59 PM' close 193.30, day range 189.00-206.00 identical - EXACT; digrin 193.30), CRDO -9.51 (stockscan.io "
- "'latest closing price as of October 23, 2026 is $147.29', -9.51% - EXACT; financialcontent 147.29 -9.51%), CRWD "
- "+8.25 (benzinga 'Last update: Oct 23, 7:59 PM' close 257.57, day range 234.79-257.91 identical - EXACT), NET +7.29 "
- "(benzinga 'Last update: Oct 23, 4:05 PM' 326.00 +7.37%, day low 299.27 identical - direction and size; quote-page "
- "closing-auction print 325.73 kept per the rules), PANW +7.22 (benzinga 'Last update: Oct 23, 7:59 PM' close 380.55, "
- 'day range 351.24-381.49 identical - EXACT). CRDO closed 147.29 - BELOW the $150 line Salee added 25 Oct for rung 2 '
- "($5,149.50); MU closed 877.55, above its $800 override line. TWO SOURCE NOTES: FN's overview page never surfaced in "
- "search, so its close 314.94 (-2.73) was read from the stockanalysis statistics-page header stamped 'At close: Oct "
- "23, 2026, 4:00 PM EDT' (implied previous close 317.67 = history prior-day close; history row 314.94 matched); BWXT's "
- 'history page never surfaced in search, so its quote close 127.19 (stamped Oct 23 4:00 PM, prev close 127.30) was '
- "validated against benzinga's 'Last update: Oct 22, 4:14 PM' close 127.30. No quote/history disagreements - all 62 "
- 'fetched history rows matched the quote closes exactly; no stale quote pages. Largest other moves: AVAV +4.72, STRL '
- '-4.70, DDOG +4.62, FTNT +4.05, GE -2.69, RKLB +2.69, MU +2.46, CAT -2.42, MPWR -2.38. NVDA 210.96 (-0.59), AVGO '
- '321.68, AMD 516.79 (+1.74), TSM 418.51, META 642.62, MSFT 524.51. lo52 extended: BWXT 127.3 -> 127.19; APP 262.19 -> '
- '260.25; SE 75.69 -> 74.63. SPY 759.97 (2026-10-23, -0.52%) and QQQ 704.40 (-0.01%) written to BENCH; spyHigh stays '
- '779.09 of 2026-10-06 (SPY 2.45% below the high - the -15% crash-reserve trigger NOT tripped). SPY 759.97 appended to '
- 'the daily risk series; UST10 2026-10-23 = 5.00 (ycharts, period Oct 23 2026, updated Oct 23 18:01 EDT; '
- 'mortgagenewsdaily 10-day table close 4.997 agrees) and the 2026-10-22 gap = 4.96 backfilled (ycharts; '
- 'mortgagenewsdaily close 4.965 agrees). HISTORY row appended for 2026-10-23 (n=36, mv 775,751.94, unreal 61,845.94 = '
- "8.66%); the 2026-10-22 row's sha set to ec6c645 (its push commit). Prices only; fundamentals, POS, TRADES, GROUPS "
- 'untouched. || PREVIOUS ENTRY: Oct 23, 2026 (run 00:30 UTC) - DAILY PRICE REFRESH: 63 of 63 closes updated to the Thu '
- "2026-10-22 close (stockanalysis.com quote pages stamped 'At close: Oct 22, 2026, 4:00 PM EDT', previous close "
- 'validated against the history tables; every number from a tool call this session). BROADEST RISK-OFF DAY ON THIS '
- 'BOARD: the Lam Research supply-warning selloff (LRCX CFO cited supply-chain constraints on the Oct 21 call; chip '
- 'stocks sold off industry-wide while SPY fell only 1.18% and QQQ 2.86%) put THIRTY-TWO moves past the 6% gate, every '
- 'one confirmed real via a dated second independent source and pushed with --allow: COHR -12.51 (digrin 207.82 EXACT), '
- "LRCX -11.76 (stocktitan.net close wrap published Oct 22 'biggest percentage fall among the chip stocks, 11.76%' "
- "EXACT), LITE -11.54 (benzinga Oct 22 7:01 PM 752.54 EXACT), TSEM -11.52 (ycharts 'Oct 22, 16:00' 167.69 vs 167.71, "
- "known 2-3c lag), ALAB -11.11 (marketchameleon 'As of October 22, 2026, declined to 257.82' EXACT), FN -10.78 "
- "(stockinvest.us 'closed 317.67 on October 22, 2026, -10.78%' EXACT), CIEN -10.71 (benzinga Oct 22 2:52 PM intraday "
- '-9.84%, direction and size; history row 322.64 matched the quote exactly), CRDO -10.70 (digrin 162.77 EXACT), GEV '
- '-10.64 (benzinga Oct 22 close 827.42 EXACT), TER -10.63 (benzinga Oct 22 4:26 PM 308.75 EXACT), VST -9.81 (benzinga '
- '140.83 EXACT), STRL -9.72 (benzinga 372.83 EXACT), KLAC -9.55 (digrin 148.21 vs 147.83, direction and size), SPCX '
- "-9.14 (stocktitan 'SpaceX after a 9.14% fall' EXACT), MPWR -8.99 (gurufocus 10/22/2026 17:32 'fell 9.0% to 1167.93' "
- 'EXACT), MRVL -8.70 (digrin 223.47 EXACT), BE -8.70 (benzinga close 217.77 EXACT), SNDK -8.51 (benzinga close 1260.93 '
- 'EXACT), AMAT -8.16 (benzinga Oct 22 4:04 PM 376.84 -7.85%, direction and size; day range identical), AMD -8.10 '
- "(benzinga Oct 22 4:22 PM 507.93 EXACT; 247wallst Oct 22 'AMD sank 8%'), GLW -8.10 (benzinga 123.99 EXACT), PWR -8.10 "
- '(benzinga close 552.44 EXACT), STX -7.86 (benzinga Oct 22 4:06 PM 644.36 -7.54%, direction and size; day range '
- 'identical), VRT -7.81 (benzinga 195.59 EXACT), APH -7.74 (digrin 73.07 EXACT), ARM -7.28 (benzinga Oct 22 7:59 PM '
- "210.10 EXACT), ANET -7.19 (benzinga close 171.07 EXACT), META -6.98 (stocktitan close wrap 'Meta closed down 6.98%' "
- 'EXACT), ASML -6.93 (benzinga 1560.54 EXACT), SNPS -6.36 (benzinga 422.48 EXACT), ETN -6.33 (benzinga 368.99 EXACT), '
- 'MU -6.26 (benzinga close 856.49 EXACT). TWO STALE QUOTE PAGES, history-table fallback per resolution rule step 4: '
- "MPWR again (stamped 'Oct 22, 11:07 AM EDT - Market open') - history close 1167.93, confirmed by the gurufocus print "
- "above; TSEM's HISTORY page lagged (no Oct 22 row) while its quote page was current and passed both tests - quote "
- '167.71 kept, ycharts confirmed. CDNS history also lagged (no Oct 22 row); its quote page passed both the stamp and '
- 'prev-close tests (309.65, -5.04). No quote/history disagreements among the 60 fetched history rows - all matched the '
- 'quote closes exactly. Gainers were scarce: ISRG +3.67 (443.85), NFLX +3.09, LHX +2.70, PANW +2.21, V +1.59, AAPL '
- '+1.23, AVAV +0.16; NVDA -4.40 (212.21), GOOGL -3.15, MSFT -2.23, AMZN -4.57, META closed 648.85 the day after '
- "Salee's final 18-sh rung filled at 658.5807. FSLR lo52 171.8 -> 171.25; KTOS lo52 38.73 -> 38.27; V hi52 407.85 -> "
- '414.34; BWXT lo52 134.24 -> 127.3; AAPL hi52 343.99 -> 348.22; SE lo52 77.05 -> 75.69; AAPL and V ath extended with '
- 'hi52 (max(ath, close) precedent), new all-time highs on a deep red day. SPY 763.96 (2026-10-22, -1.18%) and QQQ '
- '704.47 (-2.86%) written to BENCH; spyHigh stays 779.09 of 2026-10-06 (SPY 1.94% below the high - the -15% '
- 'crash-reserve trigger NOT tripped). SPY 763.96 appended to the daily risk series; ust10 gap 2026-10-21 = 5.13 '
- 'backfilled (ycharts, period Oct 21 2026, released Oct 22 16:15 EDT); UST10 for 2026-10-22 NOT YET PUBLISHED (ycharts '
- "next release Oct 23 16:15 EDT; mortgagenewsdaily's 10-day table ends at Oct 20) - skipped, the monthly risk run "
- "copes with gaps. HISTORY row appended for 2026-10-22; the 2026-10-21 row's sha set to 78bd44f (its push commit). "
- 'Prices only; fundamentals, POS, TRADES, GROUPS untouched. || PREVIOUS ENTRY: Oct 22, 2026 - META BOOKED: 18 sh at '
- "658.5807 = 11,879.82 (POEMS Today's Orders 22:24 Bangkok). Position 77.5 sh, cost 51,119.33, room 880.67 - budget "
- 'full. Free cash 24,735.56. PROCESS FIX: a DECIDE row is now rewritten to BUY / HOLD on the dashboard at the moment '
- 'the decision is given in chat, not when the fill is booked. || PREVIOUS ENTRY: Oct 22, 2026 (run 00:30 UTC) - DAILY '
- "PRICE REFRESH: 63 of 63 closes updated to the Wed 2026-10-21 close (stockanalysis.com quote pages stamped 'At close: "
- "Oct 21, 2026, 4:00 PM EDT', previous close validated against the history tables; every number from a tool call this "
- 'session). FOUR MOVES PAST THE 6% GATE, all confirmed real via a second independent source and pushed with --allow: '
- 'SPCX +7.79 (fool.com quote page, last-close table dated 2026-10-21, close 159.31, day range 156.93-166.18 - EXACT '
- 'match; 220.8M shares, by far the heaviest volume on the board), BE +7.13 (247wallst.com published Oct 21 11:57 am '
- "ET, 'up 7% in morning trading' at 237.27 ahead of the Q3 report, page widget later 239.64 +7.63% - direction and "
- "size confirmed), DDOG +6.50 (gurufocus dated 10/21/2026 16:17, 'rose 6.5% to a current price of $273.09' - EXACT "
- 'match), CRDO +6.28 (digrin 182.28 - EXACT match). TWO STALE QUOTE PAGES, history-table fallback per resolution rule '
- "step 4: MPWR (stamped 'Oct 21, 3:20 PM EDT - Market open') - history close 1283.32 confirmed by ycharts 'Oct 21, "
- "16:00' 1283.30 (ycharts' known 2-3c lag); ETN (stamped 'Oct 21, 10:13 AM EDT - Market open') - history close 393.94 "
- "confirmed EXACTLY by financialcontent.com 'Last Trade: Oct 21st, 8:41 PM EDT' 393.94 +3.13%. ONE QUOTE/HISTORY "
- 'DISAGREEMENT, quote kept per the partial-capture rule: KTOS quote closing print 38.73 vs history 38.74 (-0.60 on the '
- 'day). CDNS, LHX and CGNX history pages lagged (no Oct 21 row); their quote pages passed both the stamp and '
- 'prev-close tests. Largest other moves: CIEN +5.67, RKLB +5.44, NET +5.32, CRWD +5.26, PLTR +4.74, CEG +4.60, VST '
- '+3.87, HOOD +3.79, NFLX -5.31, SE -3.10, ISRG -2.26 (the day after results - far milder than the -7% after-hours '
- 'print; the ISRG decision already sits at 10 Dec). KTOS lo52 38.96 -> 38.73; AVAV lo52 117.63 -> 117.51; NFLX lo52 '
- '65.08 -> 65.04; AAPL hi52 343.67 -> 343.99 and ath -> 343.99 (max(ath, close) precedent), a new all-time high; V '
- 'hi52 406.57 -> 407.85 and ath -> 407.85, another all-time high. SPY 773.09 (2026-10-21, +0.53%) written to BENCH; '
- 'spyHigh stays 779.09 of 2026-10-06 (SPY 0.77% below the high - the -15% crash-reserve trigger NOT tripped). SPY '
- '773.09 appended to the daily risk series; ust10 gap 2026-10-20 = 5.12 backfilled (ycharts, period Oct 20 2026, '
- 'released 18:00 EDT); UST10 for 2026-10-21 NOT YET PUBLISHED (ycharts next release Oct 21 18:00 EDT not yet served; '
- "mortgagenewsdaily's 10-day table ends at Oct 19) - skipped, the monthly risk run copes with gaps. HISTORY row "
- "appended for 2026-10-21; the 2026-10-20 row's sha set to 5e42bd5 (its push commit). Prices only; fundamentals, POS, "
- 'TRADES, GROUPS untouched. || PREVIOUS ENTRY: Oct 21, 2026 - SCHEDULE: 9 Nov WATCH row added for the first SGOV '
- 'dividend (US withholding check - expect about $239 gross on 794 sh; $203 = 15% withheld, $167 = 30%). SGOV yield '
- 'assumption cut to 3.6% from 3.9% (iShares: 3.74% SEC yield, 3.64% trailing). ISRG 21 Oct test: da Vinci procedure '
- 'growth about 14% (below the 15% bar) - HOLD, no order tonight; decision moved to 10 Dec. || PREVIOUS ENTRY: Oct 21, '
- '2026 (run 00:30 UTC) - DAILY PRICE REFRESH: 63 of 63 closes updated to the Tue 2026-10-20 close (stockanalysis.com '
- "quote pages stamped 'At close: Oct 20, 2026, 4:00 PM EDT', previous close validated against the history tables; "
- 'every number from a tool call this session). TWO MOVES PAST THE 6% GATE, both confirmed real via a second '
- "independent source and pushed with --allow: SE -9.09 (stockstory.org, published Oct 20 20:05 UTC, 'closed the day at "
- "$80.17, down 9.4%' - direction and size confirmed; quote-page closing-auction print 80.43 kept per the rules; "
- "benzinga 1:20 PM had -8.33%), TSEM -8.25 (gurufocus dated 10/20/2026 16:39, 'closing at $183.78' - EXACT match). "
- 'CGNX history page lagged (no Oct 20 row); its quote page passed both the stamp and prev-close tests (56.77, +2.92). '
- 'No quote/history disagreements - all 62 fetched history rows matched the quote closes exactly; no stale quote pages '
- 'today (ETN and TSEM both current again). Largest other moves: GE -3.67, PWR -3.62, LRCX -3.21, ARM -3.07, KLAC '
- '-2.80, STRL -2.65, STX +2.17, LHX +2.02. KTOS lo52 39.17 -> 38.96; AVAV lo52 117.9 -> 117.63; BWXT lo52 134.35 -> '
- '134.24; V hi52 402.92 -> 406.57 and ath -> 406.57 (max(ath, close) precedent), another all-time high. ISRG closed '
- '438.00 (+1.11) BEFORE its Q3 results, then traded ~-7% after hours (407.46 at 7:58 PM EDT) - the board carries the '
- "official close only; Salee's conditional ISRG test decision is Wed 21 Oct. NFLX closed 68.69 (-1.66) and traded "
- '-5.78% after hours post-results. SPY 769.05 (2026-10-20, +0.34%) written to BENCH; spyHigh stays 779.09 of '
- '2026-10-06 (SPY 1.29% below the high - the -15% crash-reserve trigger NOT tripped). SPY 769.05 appended to the daily '
- 'risk series; UST10 for 2026-10-20 NOT YET PUBLISHED (ycharts latest period Oct 19 2026, 5.15, next release Oct 20 '
- '18:00 EDT not yet served) - instead the two open gaps were backfilled from the same ycharts daily table: 2026-10-16 '
- "= 5.09 and 2026-10-19 = 5.15 (values match the series' existing ycharts scale). HISTORY row appended for 2026-10-20; "
- "the 2026-10-19 row's sha set to 8aaacf3 (its push commit). Prices only; fundamentals, POS, TRADES, GROUPS untouched. "
- '|| PREVIOUS ENTRY: Oct 20, 2026 (run 00:30 UTC) - DAILY PRICE REFRESH: 63 of 63 closes updated to the Mon 2026-10-19 '
- "close (stockanalysis.com quote pages stamped 'At close: Oct 19, 2026, 4:00 PM EDT', previous close validated against "
- 'the history tables; every number from a tool call this session; NVDA and SE independently re-fetched by the main '
- 'session as a cross-check, exact match). Broad rebound, no move past the 6% gate - largest moves SE -5.65, SNDK '
- '+5.53, DDOG +5.36, AMZN +4.98, PLTR +4.36, MRVL +4.06; NVDA 217.09 (+1.38), CRWD closed 228.10 (+0.31) the day '
- "Salee's exit filled. TWO HISTORY-FALLBACKS per resolution rule step 4: ETN quote page stale again (stamped 'Oct 19, "
- "10:10 AM EDT - Market open') - history close 391.50 (+0.06%) confirmed EXACTLY by Google Finance 'Closed: Oct 19, "
- "4:00:07 PM GMT-4'; TSEM quote page stale (stamped Oct 16) - history close 200.30 (+2.41%) confirmed EXACTLY by "
- "ycharts 'Oct 19, 16:00'. QUOTE/HISTORY DISAGREEMENTS, quote kept per the partial-capture rule: NET (history Oct 19 "
- 'row a 9:41 AM partial, vol 215k, close 300.68 discarded; quote 297.58 +0.43), BWXT (history 135.77 on light volume '
- 'vs quote 135.83; quote kept, -0.86). CGNX and LHX history pages lagged (no Oct 19 row); their quote pages passed '
- 'both the stamp and prev-close tests. FSLR lo52 172.11 -> 171.8; KTOS lo52 39.33 -> 39.17; AVAV lo52 120.6 -> 117.9; '
- 'V hi52 402.61 -> 402.92; V ath 402.61 -> 402.92. SPY 766.48 (2026-10-19, +0.42%) written to BENCH; spyHigh stays '
- '779.09 of 2026-10-06 (SPY 1.62% below the high - the -15% crash-reserve trigger NOT tripped). SPY 766.48 appended to '
- "the daily risk series; UST10 SKIPPED for 2026-10-19 - mortgagenewsdaily's 10-day table ends at an Oct-18-dated close "
- '(5.064) and ycharts at Oct 16 (5.09); the undated live tickers (5.077, 5.144) did not meet the provenance bar. '
- 'HISTORY row appended for 2026-10-19 (n=36 after the CRWD exit; mv 796,904.83; realised 5,895.47 and cash 36,615.38 '
- "per the 19 Oct fills); the 2026-10-16 row's sha set to 6deb64b (its push commit). Prices only; fundamentals, POS, "
- 'TRADES, GROUPS untouched. || PREVIOUS ENTRY: Oct 19, 2026 - FILLS BOOKED from the POEMS order screen (21:43 '
- 'Bangkok): NVDA BUY 32 at 215.8482 = 6,921.92 (rung 1; position 452 sh, cost 86,302.20, room 8,697.80) and CRWD SELL '
- '20 at 229.1648 = 4,573.49 net, realised +2,616.43 - CrowdStrike fully exited. Commissions estimated (0.214%) - true '
- 'up from the contract notes. Free cash 36,615.38 (+ SGOV 794 sh). || PREVIOUS ENTRY: Oct 19, 2026 - STRL APPROVED by '
- 'Salee: $15,000 budget (1.5% minimum position) in two halves, conditional on the Q3 results Wed 28 Oct (backlog '
- 'growing, data-centre revenue growing, margins holding, guidance not cut). Half 1 $7,500 decide Thu 29 Oct; half 2 '
- 'earliest 5 Nov. Funded by selling 100 SGOV (~$10,055) on Wed 28 Oct; crash reserve untouched. STRL fair value moved '
- 'to the current analyst mean $836.71 (was a stale $918.67); 2 Jan price derived at $306.22 from YTD +38.58%. Revenue '
- 'growth and Rule of 40 still blank - fill from the Q3 release. || PREVIOUS ENTRY: Oct 18, 2026 - ISRG TEST APPROVED '
- 'by Salee: buy the $8,277.68 rung on Wed 21 Oct (Bangkok night) only if worldwide da Vinci procedure growth is at or '
- 'above 15% and full-year procedure-growth guidance is not lowered; otherwise hold and revisit 10 Dec. Results Tue 20 '
- 'Oct. || PREVIOUS ENTRY: Oct 18, 2026 - BUY/SELL PLAN 19-30 OCT written. Two standing rules fired on the Fri 16 Oct '
- 'close and were not flagged by the price refresh: NVDA rung 1 ($7,000, close $214.13 at or below $215) -> BUY 32 sh '
- 'Mon 19 Oct, limit $214.13, cap $216.27; CRWD sell-stop (close $227.39 below $243) -> SELL 20 sh Mon 19 Oct, floor '
- '$225.12, est. net $4,538.07. ISRG: the 13 Oct $413 GTD order is cancelled (not on the 15 Oct screen); decide after '
- 'the Tue 20 Oct results (proposed test pending Salee). META decide Thu 22 Oct (up to $12,760.48). No SGOV sale '
- 'needed: free cash $38,963.81 covers NVDA + META. || PREVIOUS ENTRY: Oct 17, 2026 (run 00:30 UTC) - DAILY PRICE '
- "REFRESH: 63 of 63 closes updated to the Fri 2026-10-16 close (stockanalysis.com quote pages stamped 'At close: Oct "
- "16, 2026, 4:00 PM EDT', validated against history tables; every number from a tool call this session). Third "
- 'straight risk-off day, the broadest yet: 14 moves past the 6% gate, each confirmed via a second independent source - '
- 'RKLB -7.98 (digrin 50.84), PANW -7.63 (fool.com quote widget 342.00, day range identical), STX -7.50 '
- '(financialcontent.com 639.01 at 4:00 PM EDT Oct 16), PLTR -7.22 (digrin), DDOG -7.19 (digrin), COHR -7.06 (digrin), '
- "FTNT -7.03 (Google Finance beta 'Closed: Oct 16' 169.13), CRWD -7.02 (digrin), ARM -6.94 (digrin), SNDK -6.85 "
- "(digrin), TSEM -6.78 (Google Finance 'Closed: Oct 16' 195.58), CIEN -6.67 (Google Finance 'Chiusura: 16 ott' "
- '332.73), BE -6.34 (digrin), NET -6.33 (benzinga Close 296.16/-6.37% dated Oct 16 6:14 PM EDT; quote-page closing '
- 'print 296.30 kept). ETN quote page was STALE (stamped Oct 15) - history-table fallback per resolution rule step 4: '
- 'close 391.25 (-2.79%). MPWR, SE and STRL history pages lagged (no Oct 16 row); their quote pages passed both the '
- 'stamp and prev-close tests. LHX +3.33 the largest gainer; AAPL +0.43, GE +0.59, V +0.72 the only other greens - V '
- 'closes above its stored range again - hi52 399.75 -> 402.61 and ath -> 402.61 (max(ath, close) precedent), a new '
- 'all-time high. CIEN hi52/lo52 remain None per precedent. SPY 763.25 (2026-10-16, -1.11%) written to BENCH; spyHigh '
- 'stays 779.09 of 2026-10-06 (SPY 2.03% below the high - the -15% crash-reserve trigger NOT tripped). SPY 763.25 '
- 'appended to the daily risk series; UST10 SKIPPED for 2026-10-16 - ycharts still shows Oct 15 (5.10, next release Oct '
- "16 pending) and the mortgagenewsdaily 10-day table's newest Close row is also Oct 15 (5.067); its top-of-page 5.100 "
- "carries no date stamp, so nothing met the provenance bar. HISTORY row appended for 2026-10-16; the 2026-10-15 row's "
- 'sha set to 3ae567d (its push commit). Prices only; fundamentals, POS, TRADES, GROUPS untouched.')
+ASOF = ('Oct 27, 2026 (run 03:30 UTC, second pass) - DAILY PRICE REFRESH: 62 of 63 closes now at the Mon 2026-10-26 close. '
+ "This pass resolved FSLR, left unresolved by the 00:30 run: the stockanalysis quote page now reads 'At close: Oct 26, "
+ "2026, 4:00 PM EDT' at 168.15 (-2.23%), stated previous close 171.99 identical to the history table's Oct 23 close - "
+ "both resolution-rule tests pass. The history table's own Oct 26 row remains internally impossible (close 169.11 "
+ 'below its stated low 169.38 on 87k volume) and was discarded; quote page taken per the rules. lo52 extended 171.25 '
+ '-> 168.15 (close below the stored low). CGNX still UNRESOLVED, price left at the 2026-10-23 close: quote page '
+ 'intraday-stamped 12:03 PM EDT (56.63), marketscreener real-time estimate 3:41 PM EDT (56.30), Google Finance beta '
+ 'cached Sep 25, fool.com quote page mixing Oct 23 data, gurufocus 55.63 undated - no dated official Oct 26 close '
+ 'anywhere. ust10 for 2026-10-26 skipped again: the MND 10-day table still ends at an Oct-25 row, ycharts next release '
+ 'Oct 27 16:15 EDT. SPY/QQQ already at 2026-10-26 from the 00:30 run, untouched. Every number from a tool call this '
+ 'session.')
 
 GROUPS = ['Hyperscalers & Model Owners',
  'AI Chips & Chip Design',
@@ -1155,7 +964,7 @@ STOCKS = [{'an': 61,
   'epsG': 38.6,
   'ex': 'NASDAQ',
   'fcfB': 1.5,
-  'fpe': 8.16,
+  'fpe': 7.98,
   'fvAvg': 273.67,
   'fvMax': 402.0,
   'fvMin': 191.0,
@@ -1163,15 +972,15 @@ STOCKS = [{'an': 61,
   'gm': 44.02,
   'hi52': 320.95,
   'jan2': None,
-  'lo52': 171.25,
-  'mcapB': 18.5162,
+  'lo52': 168.15,
+  'mcapB': 18.1028,
   'name': 'First Solar',
-  'pe': 10.6,
-  'peg': 0.47,
+  'pe': 10.37,
+  'peg': 0.46,
   'pm': 32.47,
-  'price': 171.99,
-  'ps': 3.44,
-  'pxd': '2026-10-23',
+  'price': 168.15,
+  'ps': 3.36,
+  'pxd': '2026-10-26',
   'r40': 51.7,
   'revB': 5.38,
   'revG': 23.8,
@@ -5469,7 +5278,7 @@ M3 = {'GOOGL': {'pfcf': 72.73, 'ev': 21.91, 'de': 0.19},
  'COHR': {'pfcf': None, 'ev': 30.05, 'de': 0.32},
  'PWR': {'pfcf': 37.06, 'ev': 28.98, 'de': 0.68},
  'STRL': {'pfcf': 22.89, 'ev': 15.04, 'de': 0.24},
- 'FSLR': {'pfcf': 12.32, 'ev': 7.1, 'de': 0.02},
+ 'FSLR': {'pfcf': 12.04, 'ev': 7.1, 'de': 0.02},
  'NFLX': {'pfcf': 23.07, 'ev': 17.53, 'de': 0.6},
  'CAT': {'pfcf': 35.37, 'ev': 21.84, 'de': 2.33},
  'GE': {'pfcf': 37.17, 'ev': 26.34, 'de': 1.16},
@@ -12740,12 +12549,12 @@ HISTORY = [{'d': '2026-07-28',
  {'d': '2026-10-26',
   'sha': 'live',
   'n': 36,
-  'mv': 791307.67,
+  'mv': 791269.27,
   'cost': 718974.66,
-  'unreal': 72333.01,
+  'unreal': 72294.61,
   'unrealPct': 10.06,
   'real': 5895.47,
-  'net': 78228.48,
+  'net': 78190.08,
   'cash': 19666.9}]
 
 BENCH = {'note': 'S&P 500 comparison. SPY month-end closes, dividend-adjusted (digrin.com, read 7 Oct 2026). Flows = monthly '
