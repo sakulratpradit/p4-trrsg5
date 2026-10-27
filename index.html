@@ -574,7 +574,7 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
     <button class="tab" data-p="tiers">Method &amp; Budget Tiers</button>
     <button class="tab" data-p="terms">Dictionary</button>
     <a class="tab" href="notes.html" style="text-decoration:none;display:inline-block">Notes ↗</a>
-    <a class="tab" href="slides.html?v=20261027d" style="text-decoration:none;display:inline-block">Slides ↗</a>
+    <a class="tab" href="slides.html?v=20261027e" style="text-decoration:none;display:inline-block">Slides ↗</a>
   </div>
   <div class="searchwrap">
     <div class="sbox">
@@ -2968,7 +2968,7 @@ function renderMap(){
    R(724,438,216,110,'trading','\ud83e\uddfe','Trading','the ledger and the cash'),
    '<text class="fl" x="22" y="590">GARDEN \u00b7 two pages of their own</text>',
    R(40,598,440,36,'notes.html','\ud83d\udcdd','Notes \u2197','',true).replace('<text class="hn"','<text class="hn" display="none"'),
-   R(500,598,440,36,'slides.html?v=20261027d','\ud83d\uddbc','Slides \u2197','',true).replace('<text class="hn"','<text class="hn" display="none"'),
+   R(500,598,440,36,'slides.html?v=20261027e','\ud83d\uddbc','Slides \u2197','',true).replace('<text class="hn"','<text class="hn" display="none"'),
    '</svg>'];
   /* fix the two garden rooms: icon + name on one line */
   var g=svg.join('').replace(/<text class="ic" x="([\d.]+)" y="([\d.]+)" text-anchor="middle">([^<]*)<\/text><text class="nm" x="([\d.]+)" y="([\d.]+)" text-anchor="middle">(Notes|Slides)/g,
@@ -2977,7 +2977,7 @@ function renderMap(){
    ["Cash?",go("main",null,"Overview")],["Buy or sell tonight?",go("buyplan",null,"Buy/Sell Plan")],["Approved, due when?",go("main","approvals","Approvals")],
    ["Buy / sell price?",go("main","ladders","Price ladders")],["Best for new money?",go("tiers",null,"Method")],["How is the book?",go("groups",null,"Portfolio")],
    ["Crash reserve? 10-yr?",go("groups","risk","Risk")],["Said about a stock?",'<a href="notes.html">Notes</a>'],["A word?",go("terms",null,"Dictionary")],
-   ["After October?",go("schedule",null,"Schedule")],["Sell tonight?",go("selling",null,"Selling")],["A slide I sent?",'<a href="slides.html?v=20261027d">Slides</a>']
+   ["After October?",go("schedule",null,"Schedule")],["Sell tonight?",go("selling",null,"Selling")],["A slide I sent?",'<a href="slides.html?v=20261027e">Slides</a>']
   ];
   var rooms=[
    {p:"main",n:"Overview",s:["Ticker tape and headline tiles (positions, value, cash + SGOV park)",go("main","approvals","Approvals &amp; standing decisions"),go("main","ladders","Price ladders &amp; stops"),go("main","peglens","Fair-value ladder, Valuation map, PEG lens"),"Metric matrix (rows 27-30 = Quality, Upside, Priority, Rank)","Position cards"]},
@@ -2991,7 +2991,7 @@ function renderMap(){
    {p:"tiers",n:"Method &amp; Budget Tiers",s:["How we allocate money (12 Oct 2026) with the live priority table","Mandate in one bar; tier by tier","Control sheet - all "+STOCKS.length+" names"]},
    {p:"terms",n:"Dictionary",s:["Twelve topics, from Reading a company to Competition"]},
    {h:'<a href="notes.html">Notes &#8599;</a>',s:["Chips: All / Only owned / Red flags / Follow-ups / How we rank stocks","Type a symbol to jump to one stock"]},
-   {h:'<a href="slides.html?v=20261027d">Slides &#8599;</a>',s:["Nine shelves, every filed slide with its verdict"]}
+   {h:'<a href="slides.html?v=20261027e">Slides &#8599;</a>',s:["Nine shelves, every filed slide with its verdict"]}
   ];
   var H=['<div class="plan">'+g+'</div>'];
   H.push('<div class="qi2">'+qi.map(function(q){return '<span><b>'+q[0]+'</b> '+q[1]+'</span>';}).join('')+'</div>');
