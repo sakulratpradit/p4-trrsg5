@@ -3,24 +3,28 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Oct 28, 2026 - SGOV SLICE 1 BOOKED: SELL 100 at 100.6901 = 10,047.46 net (POEMS 1187938, 22:29 Bangkok). Cash '
- '29,714.36; SGOV 694 sh parked (cost 69,917.06). || PREVIOUS ENTRY: Oct 28, 2026 13:16 Bangkok - PRICES OF THE 36 '
- 'HOLDINGS SET TO THE TUE 2026-10-27 CLOSE FROM SALEE\'S POEMS POSITIONS SCREEN (US market closed; POEMS "Current '
- 'Price" column; SGOV mark 100.68). Reason: every web source reachable from the sandbox served pre-close cached pages '
- 'for Oct 27 through both scheduled runs (00:30 and 03:30 UTC) and manual checks at 03:30-04:50 UTC, so 0 of 63 could '
- 'be written by the job. The 27 watch names (no position) stay at the 26 Oct close until the next successful run. '
- 'Moves of 6%+ vs 26 Oct: CDNS +6.5%, ALAB +10.5%, CRDO +10.8%, RKLB +8.3% - consistent with the reported 27 Oct '
- 'session (AMD +5.5%, AVGO +4%, MU +2.8%, chips rally). Positions and cost on the same screen reconcile to the board '
- 'to the cent on all 36 lines (641,827.76 NASD + 247,167.89 NYSE incl. SGOV = 888,995.64). pe/ps/fpe/peg/pfcf rescaled '
- 'with price per the 26 Oct rule. || PREVIOUS ENTRY: Oct 28, 2026 (runs 00:30 + 03:30 UTC) - DAILY PRICE REFRESH: BOTH '
- 'overnight passes could not resolve the Tue 2026-10-27 close for any ticker. 03:30 pass sampled 14 stockanalysis.com '
- 'quote/history pages: every capture predated the 4:00 PM close (freshest stamps 10:05-11:25 AM EDT Oct 27; some '
- 'caches as old as May 2025), and Google Finance (Sep 24/25 caches), marketscreener (Sep 4) and ycharts (Oct 26 18:04 '
- 'EDT) were equally stale. Per the leave-unchanged rule nothing was written: all 63 prices, mcaps, P/E block, SPY/QQQ '
- 'and pxd stay at the Mon 2026-10-26 close (CGNX still 2026-10-23); no HISTORY row; risk_series ust10/spy 10-27 '
- 'skipped (sources unreadable; ust10 2026-10-26 = 5.00 was already added by the 00:30 pass). Oct-26 baseline '
- 'cross-checked against 9 history tables - all matched. Every number checked came from a tool call this session; the '
- 'next scheduled pass retries.')
+ASOF = ('Oct 29, 2026 04:45 Bangkok - RESULTS SCORED: MSFT PASS (BUY 9 sh tonight, limit 531.01, cap 536.32); STRL FAIL '
+ '(signed backlog 4.14bn < 4.33bn; budget back to pool; half 2 cancelled); GEV thesis intact (Power orders +178%, '
+ 'Electrification -9% on a tough comparison); VRT partial disclosure; GOOGL Q3 cloud doubled but FCF -9.1bn + June '
+ '84.75bn equity raise - 19 Nov tranche pending Salee. Fed held 3.75-4.00% (10-2, Cook and Hammack for a hike). SGOV 4 '
+ 'Nov sale no longer needed. || PREVIOUS ENTRY: Oct 28, 2026 - SGOV SLICE 1 BOOKED: SELL 100 at 100.6901 = 10,047.46 '
+ 'net (POEMS 1187938, 22:29 Bangkok). Cash 29,714.36; SGOV 694 sh parked (cost 69,917.06). || PREVIOUS ENTRY: Oct 28, '
+ "2026 13:16 Bangkok - PRICES OF THE 36 HOLDINGS SET TO THE TUE 2026-10-27 CLOSE FROM SALEE'S POEMS POSITIONS SCREEN "
+ '(US market closed; POEMS "Current Price" column; SGOV mark 100.68). Reason: every web source reachable from the '
+ 'sandbox served pre-close cached pages for Oct 27 through both scheduled runs (00:30 and 03:30 UTC) and manual checks '
+ 'at 03:30-04:50 UTC, so 0 of 63 could be written by the job. The 27 watch names (no position) stay at the 26 Oct '
+ 'close until the next successful run. Moves of 6%+ vs 26 Oct: CDNS +6.5%, ALAB +10.5%, CRDO +10.8%, RKLB +8.3% - '
+ 'consistent with the reported 27 Oct session (AMD +5.5%, AVGO +4%, MU +2.8%, chips rally). Positions and cost on the '
+ 'same screen reconcile to the board to the cent on all 36 lines (641,827.76 NASD + 247,167.89 NYSE incl. SGOV = '
+ '888,995.64). pe/ps/fpe/peg/pfcf rescaled with price per the 26 Oct rule. || PREVIOUS ENTRY: Oct 28, 2026 (runs 00:30 '
+ '+ 03:30 UTC) - DAILY PRICE REFRESH: BOTH overnight passes could not resolve the Tue 2026-10-27 close for any ticker. '
+ '03:30 pass sampled 14 stockanalysis.com quote/history pages: every capture predated the 4:00 PM close (freshest '
+ 'stamps 10:05-11:25 AM EDT Oct 27; some caches as old as May 2025), and Google Finance (Sep 24/25 caches), '
+ 'marketscreener (Sep 4) and ycharts (Oct 26 18:04 EDT) were equally stale. Per the leave-unchanged rule nothing was '
+ 'written: all 63 prices, mcaps, P/E block, SPY/QQQ and pxd stay at the Mon 2026-10-26 close (CGNX still 2026-10-23); '
+ 'no HISTORY row; risk_series ust10/spy 10-27 skipped (sources unreadable; ust10 2026-10-26 = 5.00 was already added '
+ 'by the 00:30 pass). Oct-26 baseline cross-checked against 9 history tables - all matched. Every number checked came '
+ 'from a tool call this session; the next scheduled pass retries.')
 
 GROUPS = ['Hyperscalers & Model Owners',
  'AI Chips & Chip Design',
@@ -2113,7 +2117,7 @@ POS = {'GOOGL': {'budget': 78000, 'cost': 59475.92, 'shares': 217},
  'APP': {'budget': 18000, 'cost': None, 'shares': None},
  'COHR': {'budget': None, 'cost': None, 'shares': None},
  'PWR': {'budget': None, 'cost': None, 'shares': None},
- 'STRL': {'budget': 15000, 'cost': None, 'shares': None},
+ 'STRL': {'budget': None, 'cost': None, 'shares': None},
  'FSLR': {'budget': None, 'cost': 2003.56, 'shares': 10},
  'NFLX': {'budget': None, 'cost': None, 'shares': None},
  'CAT': {'budget': 15000, 'cost': 4888.55, 'shares': 6},
@@ -5321,7 +5325,7 @@ M3 = {'GOOGL': {'pfcf': 73.6, 'ev': 21.91, 'de': 0.19},
  'KTOS': {'pfcf': None, 'ev': 69.16, 'de': 0.06}}
 
 SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
- 'updated': '2026-10-28',
+ 'updated': '2026-10-29',
  'note': '⚠️ READ THIS FIRST. On 10 Sep 2026 the board was restructured to 10 groups, 38 funded names, 5 back-up names '
          'and 13 sells, and ALL 38 budgets were reset. EVERY AMOUNT WRITTEN IN A ROW DATED BEFORE 10 SEP 2026 REFERS '
          'TO THE OLD BUDGET and must be checked against the new one before it is acted on - the tranche sizes in those '
@@ -6650,10 +6654,16 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
            {'d': '2026-10-28',
             't': 'MSFT',
             'k': 'earnings',
-            'a': 'DECIDE',
-            'amt': 5121.04,
-            'w': 'Q1 FY2027 results - the only rung on the last unplanned mega-cap holding. ⚠️ AMOUNT CORRECTED 24 Oct '
-                 'from $7,121.04 to $5,121.04 = the real room (budget 58,000 less cost 52,878.96); the old figure was '
+            'a': 'BUY',
+            'amt': 4837.21,
+            'w': 'TEST PASSED 28 Oct (decided in chat 29 Oct 04:30 Bangkok): Azure +48% ($33.17bn) vs the ~45% bar; '
+                 "quarter capex $45.2bn, $5bn BELOW Microsoft's own ~$50bn projection, and no raise to the ~$175bn "
+                 'calendar-2026 figure reported. Revenue $92.3bn (+19%) vs guided $89.85-90.95bn; GAAP EPS $4.92. '
+                 'ORDER Thu 29 Oct Bangkok: BUY 9 sh, Day LIMIT $531.01 (28 Oct close), may raise ONCE to the cap '
+                 '$536.32; not in the first 30 minutes. About $4,837 at the cap. Stock was +3.7% after hours '
+                 '(~$550.68): if it opens above the cap, DO NOT CHASE - the order simply does not fill. | Q1 FY2027 '
+                 'results - the only rung on the last unplanned mega-cap holding. ⚠️ AMOUNT CORRECTED 24 Oct from '
+                 '$7,121.04 to $5,121.04 = the real room (budget 58,000 less cost 52,878.96); the old figure was '
                  '$2,000 above the budget. RESULTS DATE STILL ESTIMATED (28 Oct after close) - confirm.',
             'cond': 'ACT 29 OCT (Bangkok evening): results are expected 28 Oct after the US close, so the order goes '
                     "in the next session. || DATE IS ESTIMATED, NOT CONFIRMED. Microsoft's IR site says only 'the next "
@@ -6668,15 +6678,19 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'lands at or above the guided ~45% constant currency AND management does NOT raise the ~175bn '
                     'FY2027 capex figure again. If Azure comes in below 40%, or capex is raised while revenue guidance '
                     'is not, leave the room unfunded and revisit in January.',
-            'c': 'estimated'},
+            'c': 'open'},
            {'d': '2026-10-28',
             'dl': 'Vertiv Q3 2026 print - late October, date estimated',
             't': 'VRT',
             'k': 'thesis',
-            'a': 'DECIDE',
+            'a': 'HOLD',
             'amt': None,
-            'w': 'THE DISCLOSURE TEST - if orders, backlog and book-to-bill are STILL missing, that is three quarters '
-                 'and a pattern',
+            'w': 'RESULT 28 Oct: PARTIAL PASS. Orders are back in the release - organic orders "more than doubled" '
+                 '(growth only, no $ figure). Backlog and book-to-bill STILL not disclosed (third quarter running). '
+                 'Offsetting evidence: customer prepayments (current deferred revenue) $4.12bn, 3.6x a year ago; sales '
+                 '+61% to $4.31bn; adj. op margin 25.2%; FY guidance raised. Budget full ($292 room) - no order. Carry '
+                 'the disclosure point to 10 Dec. | THE DISCLOSURE TEST - if orders, backlog and book-to-bill are '
+                 'STILL missing, that is three quarters and a pattern',
             'cond': '⚠️ VERTIV DISCLOSED ORGANIC ORDERS UP ~252%, BACKLOG OF 15.0 BILLION UP 109% AND BOOK-TO-BILL OF '
                     '~2.9x IN ITS Q4 2025 RELEASE OF 11 FEB 2026. IN Q1 2026 AND Q2 2026 ALL THREE ARE ABSENT - the '
                     'words orders, backlog and book-to-bill do not appear in either release, and the Q2 deck says only '
@@ -6690,7 +6704,7 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     're-underwrite the 21,000 budget at the 10 December review. IF THE FIGURES RETURN AND ARE STRONG: '
                     'the thesis is intact and Tranche 2 proceeds normally. ⚠️ The Q3 date is ESTIMATED from prior '
                     'years and must be confirmed.',
-            'c': 'planned'},
+            'c': 'done'},
            {'d': '2026-11-02',
             'dl': 'Apple FQ4 2026 print - late October',
             't': 'AAPL',
@@ -7060,8 +7074,10 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
            {'d': '2026-11-19',
             't': 'GOOGL',
             'k': 'tranche',
-            'w': 'Tranche 3 - after both the Final Judgment and Q3 results. ⚠️ AMOUNT CORRECTED 16 SEP FROM 20,524.08 '
-                 'TO 18,524.08 - THE OLD FIGURE WAS 2,000 MORE THAN THE BUDGET ALLOWS.',
+            'w': '⚠️ PENDING SALEE (29 Oct): proposed conversion to DECIDE - Q3 showed FCF -$9.1bn and the June '
+                 '$84.75bn equity raise (META-rule conditions). Do not place until decided. | Tranche 3 - after both '
+                 'the Final Judgment and Q3 results. ⚠️ AMOUNT CORRECTED 16 SEP FROM 20,524.08 TO 18,524.08 - THE OLD '
+                 'FIGURE WAS 2,000 MORE THAN THE BUDGET ALLOWS.',
             'a': 'BUY',
             'amt': 18524.08,
             'cond': '⚠️⚠️ DATA FAULT FOUND AND FIXED ON 16 SEPTEMBER, AND IT IS THE SECOND OF ITS CLASS ON THIS BOARD '
@@ -11257,11 +11273,19 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'dl': 'STRL Q3 results Wed 28 Oct (date announced by Sterling) - act Thu 29 Oct night',
             't': 'STRL',
             'k': 'earnings',
-            'a': 'DECIDE',
-            'amt': 7500,
-            'c': 'confirmed',
-            'w': 'STERLING - first half ($7,500) of a $15,000 position, APPROVED BY SALEE 19 OCT, conditional on the '
-                 'Q3 test. Board #2 on priority; down 58% from its $1,006 high and the cause is not yet explained.',
+            'a': 'HOLD',
+            'amt': 0,
+            'c': 'done',
+            'w': 'TEST FAILED 28 Oct (decided in chat 29 Oct): (1) SIGNED BACKLOG $4.14bn, DOWN from $4.33bn at 30 Jun '
+                 '(-4.4% q/q) - the written bar was "still growing from $4.33bn". The other three PASSED: '
+                 'E-Infrastructure revenue $1.30bn (+212%); consolidated operating margin 19.6% vs 18.2% (E-Infra '
+                 'segment 22.6% vs 25.6%); full-year guidance RAISED. Context: combined backlog $6.14bn vs $5.62bn '
+                 '(+9% q/q) because unsigned awards rose to $2.00bn from $1.28bn - work is being awarded faster than '
+                 'it is signed; revenue burned through backlog (+127%). Per the 19 Oct approval: fail any one = WATCH '
+                 'and the budget returns to the pool. No order. Stock +8% after hours (~$420). RE-TEST: Q4 results '
+                 '(~Feb 2027) - signed backlog back above $4.33bn. | STERLING - first half ($7,500) of a $15,000 '
+                 'position, APPROVED BY SALEE 19 OCT, conditional on the Q3 test. Board #2 on priority; down 58% from '
+                 'its $1,006 high and the cause is not yet explained.',
             'cond': 'THE TEST (all four): (1) signed backlog still growing from $4.33bn; (2) data-centre '
                     '(E-Infrastructure) revenue still growing; (3) margins holding - no big fall in gross or operating '
                     'margin; (4) full-year guidance not cut. FAIL any one, or the 58% fall is explained by a lost '
@@ -11273,11 +11297,12 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'dl': 'STRL second half - at least one week after the first',
             't': 'STRL',
             'k': 'buy',
-            'a': 'DECIDE',
-            'amt': 7500,
-            'c': 'planned',
-            'w': 'STERLING second half ($7,500). Only if the first half filled on the 29 Oct test pass and nothing in '
-                 'the following week breaks the thesis.',
+            'a': 'HOLD',
+            'amt': 0,
+            'c': 'done',
+            'w': 'CANCELLED 29 Oct - half 1 not bought (signed-backlog test failed). | STERLING second half ($7,500). '
+                 'Only if the first half filled on the 29 Oct test pass and nothing in the following week breaks the '
+                 'thesis.',
             'cond': 'Day LIMIT at the previous close, cap +1%. Skip if the first half was not bought.'},
            {'d': '2026-10-28',
             'dl': 'Cash for STRL / MSFT / CAT if all pass',
@@ -11347,9 +11372,15 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'k': 'earnings',
             'a': 'WATCH',
             'amt': 0,
-            'c': 'confirmed',
-            'w': 'GE Vernova Q3 results - Wed 28 Oct BEFORE the US open (webcast 7:30 am ET = 18:30 Bangkok). '
-                 'Confirmed by GE Vernova.',
+            'c': 'done',
+            'w': 'RESULT 28 Oct: Power orders $21.8bn, +178% organic (21 HA gas turbines) - PASS, emphatically. '
+                 'Electrification orders $5.4bn, -9% organic vs a year-ago quarter inflated by large '
+                 'synchronous-condenser orders; book-to-bill ~1.4 and equipment backlog $42.2bn (+60%). Total orders '
+                 '$29.3bn (+96%), backlog $197bn, FCF $5.4bn; FY26 guidance raised (FCF $16-17bn from $11.5-12.5bn). '
+                 'Also agreed to buy Trench Group (HV grid equipment) for ~$9bn, close late 2027 - the stock slid on '
+                 'the deal. VERDICT: thesis intact; Electrification flagged as a one-quarter comparison effect. Budget '
+                 'full ($519 room) - no order, no sale. | GE Vernova Q3 results - Wed 28 Oct BEFORE the US open '
+                 '(webcast 7:30 am ET = 18:30 Bangkok). Confirmed by GE Vernova.',
             'cond': 'THE TEST WRITTEN 14 SEP: if Power or Electrification EQUIPMENT ORDERS FALL year on year, no more '
                     'money to GEV. Budget is full ($519 left), so this decides hold vs review, not a buy. Fell 10.6% '
                     'on 22 Oct on the Meta financing scare, not company news.'},
@@ -11358,9 +11389,15 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'k': 'earnings',
             'a': 'WATCH',
             'amt': 0,
-            'c': 'confirmed',
-            'w': 'Alphabet Q3 results - Wed 28 Oct after the US close (call 4:30 pm ET = 03:30 Thu Bangkok). Confirmed '
-                 'by Alphabet IR 6 Oct.',
+            'c': 'done',
+            'w': 'RESULT 28 Oct: Cloud $30.7bn (about double a year ago), Cloud operating income $11.1bn (36% margin). '
+                 'BUT revenue $127.6bn missed consensus slightly, GAAP EPS $2.12 vs ~$3.02 expected (an $8.7bn paper '
+                 'loss on equity stakes), quarter capex $51.4bn, FREE CASH FLOW -$9.1bn (second negative quarter). '
+                 'Stock -8% after hours (~$299). NOTE MISSED BY THE BOARD: Alphabet raised $84.75bn of new equity in '
+                 'June 2026 (Berkshire $10bn). Same two conditions that triggered the META rule on 27 Oct (negative '
+                 'FCF + equity raise). PROPOSED to Salee 29 Oct: convert the 19 Nov $18,524 tranche to a DECIDE with a '
+                 'written test - awaiting approval. | Alphabet Q3 results - Wed 28 Oct after the US close (call 4:30 '
+                 'pm ET = 03:30 Thu Bangkok). Confirmed by Alphabet IR 6 Oct.',
             'cond': 'Feeds the 19 Nov $18,524 tranche 3: watch Google Cloud growth and capex against revenue. No order '
                     'this week.'},
            {'d': '2026-10-29',
@@ -11375,11 +11412,13 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
            {'d': '2026-11-04',
             't': 'SGOV',
             'k': 'cash',
-            'a': 'SELL',
-            'amt': 10550,
-            'c': 'planned',
-            'w': 'SELL about 105 SGOV (about $10,550) on Wed 4 Nov - MOVED 26 Oct from 9 Nov because CRDO was bought '
-                 'early: the 5 Nov APP + STRL buys need the cash first (T+1 settlement).',
+            'a': 'HOLD',
+            'amt': 0,
+            'c': 'done',
+            'w': 'NOT NEEDED (29 Oct): with STRL out, cash after MSFT (~$4.8k) and CAT ($5k) is about $19.9k, enough '
+                 'for APP $9,000 + V $2,093 + VST $3,433 ($14.5k). Skipped to save two commissions; re-add only if a '
+                 'new buy is approved. | SELL about 105 SGOV (about $10,550) on Wed 4 Nov - MOVED 26 Oct from 9 Nov '
+                 'because CRDO was bought early: the 5 Nov APP + STRL buys need the cash first (T+1 settlement).',
             'cond': 'Sell ONLY what approved buys need: APP $9,000 and STRL $7,500 on 5 Nov, V $2,093 and VST $3,433 '
                     'on 10 Nov, if they pass. Cut or skip if tests fail. SGOV stays above the $50,000 crash reserve '
                     '(about $59,000 left after both sales). Day LIMIT at the prior close (floor).'},
@@ -12807,51 +12846,16 @@ BUYPLAN = {'title': 'Buy/Sell plan 26 Oct - 10 Nov 2026',
            'Commission 0.214%, minimum $8.56 - share counts already allow for it.',
            'Send the POEMS confirmation the same day; Claude books the fill.'],
  'rows': [{'d': '2026-10-28',
-           't': 'GEV',
-           'bkk': 'Wed 28 Oct (results 18:30)',
-           'tac': 'No order - budget full.',
-           'cond': 'Equipment orders must not fall year on year.',
-           'a': None,
-           'lim': None,
-           'cap': None,
-           'amt': None},
-          {'d': '2026-10-28',
-           't': 'GOOGL',
-           'bkk': 'Thu 29 Oct morning (results)',
-           'tac': 'No order this week.',
-           'cond': 'Cloud growth vs capex - feeds the 19 Nov $18,524 tranche.',
-           'a': None,
-           'lim': None,
-           'cap': None,
-           'amt': None},
-          {'d': '2026-10-28',
            't': 'MSFT',
-           'bkk': 'Thu 29 Oct',
-           'tac': 'If PASS: Day LIMIT at the 28 Oct close, cap +1%.',
-           'cond': 'Azure at or above ~45% AND FY27 capex (~$175bn) NOT raised again. Amount corrected to the real '
-                   'room $5,121.',
+           'bkk': 'Thu 29 Oct (tonight)',
+           'tac': 'BUY 9 sh, Day LIMIT $531.01, raise once to $536.32 at most. Not in the first 30 min. AH +3.7% - if '
+                  'it opens above the cap, let it go.',
+           'cond': 'PASSED: Azure +48%, capex $5bn under its own guide, not raised.',
            'a': None,
-           'lim': None,
-           'cap': None,
-           'amt': None},
-          {'d': '2026-10-28',
-           't': 'VRT',
-           'bkk': 'Thu 29 Oct',
-           'tac': 'No order - budget full.',
-           'cond': 'Disclosure test: orders, backlog, book-to-bill published again? A third miss = a pattern.',
-           'a': None,
-           'lim': None,
-           'cap': None,
-           'amt': None},
-          {'d': '2026-10-29',
-           't': 'STRL',
-           'bkk': 'Thu 29 Oct',
-           'tac': 'If PASS: Day LIMIT at the 28 Oct close, cap +1%, not in the first 30 min.',
-           'cond': 'Backlog growing, data-centre revenue growing, margins holding, guidance not cut. Fail any = WATCH.',
-           'a': None,
-           'lim': None,
-           'cap': None,
-           'amt': None},
+           'lim': 531.01,
+           'cap': 536.32,
+           'amt': 4837.21,
+           'sh': 9},
           {'d': '2026-10-29',
            't': 'AMZN',
            'bkk': 'Fri 30 Oct morning (results)',
@@ -12899,15 +12903,6 @@ BUYPLAN = {'title': 'Buy/Sell plan 26 Oct - 10 Nov 2026',
            'cap': None,
            'amt': None},
           {'d': '2026-11-05',
-           't': 'STRL',
-           'bkk': 'Thu 5 Nov',
-           'tac': 'Half 2 - Day LIMIT at the 4 Nov close, cap +1%.',
-           'cond': 'Only if half 1 filled on 29 Oct and nothing has broken the thesis since.',
-           'a': None,
-           'lim': None,
-           'cap': None,
-           'amt': None},
-          {'d': '2026-11-05',
            't': 'SPCX',
            'bkk': 'Fri 6 Nov morning (results)',
            'tac': 'No order - AVOID.',
@@ -12922,15 +12917,6 @@ BUYPLAN = {'title': 'Buy/Sell plan 26 Oct - 10 Nov 2026',
            'tac': 'No order - over budget; rate rule.',
            'cond': 'Loss-making: no new money unless the 10-year is below 5% on 10 Dec.',
            'a': None,
-           'lim': None,
-           'cap': None,
-           'amt': None},
-          {'d': '2026-11-04',
-           't': 'SGOV',
-           'a': 'SELL',
-           'bkk': 'Wed 4 Nov',
-           'tac': 'SELL ~105 SGOV, Day LIMIT at the 3 Nov close (floor).',
-           'cond': 'Cash for the 5 Nov APP/STRL buys and the 10 Nov V/VST rungs - only what passing tests need.',
            'lim': None,
            'cap': None,
            'amt': None},
@@ -12980,12 +12966,13 @@ BUYPLAN = {'title': 'Buy/Sell plan 26 Oct - 10 Nov 2026',
            'cap': None,
            'amt': None}],
  'note': 'ONE PAGE FOR 26 OCT - 10 NOV: the same orders as the Schedule tab, buys AND sells, filled and cancelled rows '
-         'left out. Results come out at night; we act the NEXT Bangkok evening. IF EVERY TEST PASSES the buys total '
-         'about $44,800, funded by cash $29,714 (after the 28 Oct SGOV sale of 100 sh) + a second SGOV sale (~105 sh '
-         'on 4 Nov). STANDING PRICE LINES, ANY NIGHT (act only on a CLOSE below the line): AVGO $310 · AMD $470 · TSM '
-         '$380 · NVDA $180 · PLTR $150 · CRDO $150 - HIT and FILLED 26 Oct (34 sh at 148.76) · MU $800 (override 25 '
-         'Oct; $3,418 only). Wed 28 Oct: Fed decision - Claude runs the 10-year check (the rate rule) before the 29-30 '
-         'Oct buys. For a SELL the Cap column is the FLOOR.',
+         'left out. Results come out at night; we act the NEXT Bangkok evening. STRL FAILED 28 Oct (signed backlog '
+         'down) and is out; the second SGOV sale is no longer needed. Remaining buys if every test passes: MSFT '
+         '~$4.8k, CAT $5k, APP $9k, V $2.1k, VST $3.4k, funded by cash $29,714 (after the 28 Oct SGOV sale of 100 sh) '
+         '+ a second SGOV sale (~105 sh on 4 Nov). STANDING PRICE LINES, ANY NIGHT (act only on a CLOSE below the '
+         'line): AVGO $310 · AMD $470 · TSM $380 · NVDA $180 · PLTR $150 · CRDO $150 - HIT and FILLED 26 Oct (34 sh at '
+         '148.76) · MU $800 (override 25 Oct; $3,418 only). Wed 28 Oct: Fed decision - Claude runs the 10-year check '
+         '(the rate rule) before the 29-30 Oct buys. For a SELL the Cap column is the FLOOR.',
  'from': '2026-10-26',
  'to': '2026-11-10'}
 
