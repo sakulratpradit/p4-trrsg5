@@ -1,14 +1,18 @@
-# P4 price refresh — last run status
+# P4 price refresh status
 
-- **Run time (UTC):** 2026-10-27 03:30 run (started 03:33, finished ~03:50 UTC) — second pass of the day
-- **Trading date recorded:** 2026-10-26 (Monday close)
-- **Status:** PUSHED
-- **Commit:** 07cf48d (`Daily price refresh 2026-10-26 second pass: FSLR resolved at 168.15`)
-- **Prices changed:** 1 (FSLR). The 00:30 run (277c77c) had already pushed 61/63; this pass found the board current and only worked the two stragglers.
-- **FSLR RESOLVED at 168.15 (-2.23%), pxd 2026-10-26:** the stockanalysis quote page, intraday-stamped at 00:30, now reads "At close: Oct 26, 2026, 4:00 PM EDT" at 168.15 with stated previous close 171.99 — identical to the history table's Oct 23 close, so both resolution-rule tests pass. The history table's own Oct 26 row is STILL internally impossible (close 169.11 below its stated low 169.38 on 87k volume) and was discarded; quote page taken per the partial-capture rule. This is also consistent with the 00:30 run's everhint after-hours read (~168). lo52 extended 171.25 → 168.15; mcapB scaled to 18.1028; pe 10.37, ps 3.36, fpe 7.98, peg 0.46, M3 pfcf 12.04 rewritten per the price-linked-ratio rule. HISTORY's existing 2026-10-26 'live' row recomputed (mv 791,269.27, net 78,190.08) — not duplicated.
-- **CGNX still UNRESOLVED, price left at the 2026-10-23 close (55.55):** quote page intraday-stamped "Oct 26, 12:03 PM EDT" (56.63); statistics page stamped at the Oct 23 close; market-cap page cached Oct 19; history table ends Oct 23; marketscreener a real-time estimate at 3:41 PM EDT (56.30, no Market Closed stamp); Google Finance beta cached Sep 25; fool.com quote page mixing Oct 23 data; gurufocus 55.63 undated (and stamped "EST" in October). No dated official Oct 26 close anywhere. Intraday reads cluster +1.3–1.9%, so the stale 55.55 likely understates Monday by ~1–2%.
-- **UST10 (risk series):** skipped again for 2026-10-26 — MND's 10-day table still ends at an Oct-25 row (4.965) and ycharts' next release is Oct 27 16:15 EDT. (MND's Oct 26 4:15 PM ET MBS recap showed 4.988, but it is not labeled a close and is not one of the two designated sources.) The monthly risk run copes with the gap.
-- **SPY/QQQ BENCH, risk-series spy row, spyHigh:** already current at 2026-10-26 from the 00:30 run — untouched.
-- **Sanity gate:** PASS, exit 0 (1 price changed, FSLR -2.23%, under the 6% threshold; no --allow needed).
-- **Live page:** push confirmed on origin/main (07cf48d). The GitHub Pages URL could not be re-fetched end-to-end from this sandbox (WebFetch provenance approval has no one to answer in a scheduled run); the built page was verified by sanity_check and the data round-trip instead.
-- **Blockers:** none.
+- **Run time (UTC):** 2026-10-28 00:32 - 02:50 (00:30 scheduled pass)
+- **Trading date recorded:** NONE - target was Tue 2026-10-27; no ticker could be resolved to that close
+- **Pushed:** PUSHED - commit `88f1a23` ("Daily price refresh 2026-10-28 00:30 UTC: 0 prices ... ust10 2026-10-26=5.00 back-filled")
+- **Prices changed:** 0 of 63. All prices, mcaps, pxd, SPY/QQQ BENCH values left at the Mon 2026-10-26 close (CGNX still 2026-10-23). No HISTORY row added (one row per trading day; 2026-10-26 already present).
+- **What did land:** `risk_series.json` ust10["2026-10-26"] = 5.00 (ycharts 10-Year Treasury Rate page, stamped "Last Value 5.00% for Oct 26 2026, Last Updated: Oct 26 2026, 18:04 EDT") - this fills the gap both 2026-10-27 runs reported skipping. ASOF rewritten to describe this run. Local Playwright render check of the pushed page: 870 table rows, ZERO PAGE ERRORS.
+- **Unresolved tickers:** all 63 (GOOGL MSFT AMZN META NVDA AVGO AMD ARM MRVL CDNS SNPS MPWR TSM ASML LRCX AMAT KLAC TER MU SNDK STX ANET APH GLW LITE COHR ALAB CRDO FN FSLR CGNX SPCX RKLB PLTR LHX KTOS AVAV DDOG ISRG ORCL V HOOD PANW CRWD FTNT NET BWXT GEV ETN VRT PWR BE CEG VST AAPL NFLX APP SE CAT GE STRL TSEM CIEN), plus SPY and QQQ.
+
+## Blocker (verbatim finding)
+
+Every stockanalysis.com quote AND history page served to this sandbox tonight was a cached snapshot taken BEFORE the Oct 27 4:00 PM EDT close. Across ~80 fetches of 63 tickers + SPY/QQQ between 00:35 and 02:35 UTC, the freshest snapshot seen was stamped "Oct 27, 2026, 1:04 PM EDT - Market open"; most were 9:36 AM-11:26 AM EDT; retries of the same URL returned randomly older shards (MSFT "At close: Sep 2, 2025", NVDA "At close: May 22, 2025", ANET flipping between "At close: Oct 26, 2026" and "At close: Jul 7, 2025", marketscreener GOOGL "May 08, 2024"). Google Finance (GOOGL cached "Chiusura: 25 set"), fool.com live coverage (May 2026 cache) and marketscreener were equally stale, so the >6%-move second-sourcing would also have been impossible. Resolution rule test (a) (stamp = "Oct 27, 4:00 PM EDT") failed for every name; the history tables' own Oct 27 rows were intraday partial captures (e.g. GOOGL 7.5M shares vs 18-29M normal) and were NOT used. Per the rules, a missing value over an invented one: nothing was written.
+
+Waited through five 10-minute probe cycles (01:40-02:35 UTC) for a cache rollover; none came. The 03:30 UTC second pass should retry - yesterday's runs got post-close pages in this same window, so this looks like upstream-cache timing, not a permanent outage.
+
+Also: the live page https://sakulratpradit.github.io/p4-trrsg5/ could not be verified from this sandbox (WebFetch provenance refusal; browser gets ERR_TUNNEL_CONNECTION_FAILED on github.io). The pushed index.html itself renders clean locally.
+
+ust10/spy rows for 2026-10-27 skipped: SPY close unresolved; ycharts prints the 10-27 Treasury value ~16:15 EDT Oct 28. MND /treasury/10yr was unreachable (provenance refusal).
