@@ -3,15 +3,14 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Oct 28, 2026 (run 00:30 UTC) - DAILY PRICE REFRESH: COULD NOT RESOLVE THE Tue 2026-10-27 CLOSE FOR ANY TICKER. Every '
- 'stockanalysis.com quote and history snapshot served tonight predated the 4:00 PM close (snapshot stamps ranged 8:33 '
- 'AM-1:04 PM EDT Oct 27; repeated retries over two hours returned cache copies as old as May 2024, and Google Finance, '
- 'marketscreener and fool.com were equally stale). Per the leave-unchanged rule, all 63 prices, mcaps, P/E block, '
- 'SPY/QQQ and pxd stay at the Mon 2026-10-26 close (CGNX still 2026-10-23). One fix landed: ust10 2026-10-26 = 5.00 '
- "added to risk_series.json (ycharts, stamped 'Last Updated: Oct 26 2026, 18:04 EDT'), filling the gap both Oct-27 "
- 'runs skipped. ust10/spy rows for 10-27 skipped (SPY close unresolved; ycharts 10-27 print due ~16:15 EDT Oct 28). No '
- 'HISTORY row added (no new closes). Every number from a tool call this session; the 03:30 UTC pass retries the '
- 'closes.')
+ASOF = ('Oct 28, 2026 (runs 00:30 + 03:30 UTC) - DAILY PRICE REFRESH: BOTH overnight passes could not resolve the Tue '
+ '2026-10-27 close for any ticker. 03:30 pass sampled 14 stockanalysis.com quote/history pages: every capture predated '
+ 'the 4:00 PM close (freshest stamps 10:05-11:25 AM EDT Oct 27; some caches as old as May 2025), and Google Finance '
+ '(Sep 24/25 caches), marketscreener (Sep 4) and ycharts (Oct 26 18:04 EDT) were equally stale. Per the '
+ 'leave-unchanged rule nothing was written: all 63 prices, mcaps, P/E block, SPY/QQQ and pxd stay at the Mon '
+ '2026-10-26 close (CGNX still 2026-10-23); no HISTORY row; risk_series ust10/spy 10-27 skipped (sources unreadable; '
+ 'ust10 2026-10-26 = 5.00 was already added by the 00:30 pass). Oct-26 baseline cross-checked against 9 history tables '
+ '- all matched. Every number checked came from a tool call this session; the next scheduled pass retries.')
 
 GROUPS = ['Hyperscalers & Model Owners',
  'AI Chips & Chip Design',
