@@ -3,28 +3,30 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Oct 29, 2026 04:45 Bangkok - RESULTS SCORED: MSFT PASS (BUY 9 sh tonight, limit 531.01, cap 536.32); STRL FAIL '
- '(signed backlog 4.14bn < 4.33bn; budget back to pool; half 2 cancelled); GEV thesis intact (Power orders +178%, '
- 'Electrification -9% on a tough comparison); VRT partial disclosure; GOOGL Q3 cloud doubled but FCF -9.1bn + June '
- '84.75bn equity raise - 19 Nov tranche pending Salee. Fed held 3.75-4.00% (10-2, Cook and Hammack for a hike). SGOV 4 '
- 'Nov sale no longer needed. || PREVIOUS ENTRY: Oct 28, 2026 - SGOV SLICE 1 BOOKED: SELL 100 at 100.6901 = 10,047.46 '
- 'net (POEMS 1187938, 22:29 Bangkok). Cash 29,714.36; SGOV 694 sh parked (cost 69,917.06). || PREVIOUS ENTRY: Oct 28, '
- "2026 13:16 Bangkok - PRICES OF THE 36 HOLDINGS SET TO THE TUE 2026-10-27 CLOSE FROM SALEE'S POEMS POSITIONS SCREEN "
- '(US market closed; POEMS "Current Price" column; SGOV mark 100.68). Reason: every web source reachable from the '
- 'sandbox served pre-close cached pages for Oct 27 through both scheduled runs (00:30 and 03:30 UTC) and manual checks '
- 'at 03:30-04:50 UTC, so 0 of 63 could be written by the job. The 27 watch names (no position) stay at the 26 Oct '
- 'close until the next successful run. Moves of 6%+ vs 26 Oct: CDNS +6.5%, ALAB +10.5%, CRDO +10.8%, RKLB +8.3% - '
- 'consistent with the reported 27 Oct session (AMD +5.5%, AVGO +4%, MU +2.8%, chips rally). Positions and cost on the '
- 'same screen reconcile to the board to the cent on all 36 lines (641,827.76 NASD + 247,167.89 NYSE incl. SGOV = '
- '888,995.64). pe/ps/fpe/peg/pfcf rescaled with price per the 26 Oct rule. || PREVIOUS ENTRY: Oct 28, 2026 (runs 00:30 '
- '+ 03:30 UTC) - DAILY PRICE REFRESH: BOTH overnight passes could not resolve the Tue 2026-10-27 close for any ticker. '
- '03:30 pass sampled 14 stockanalysis.com quote/history pages: every capture predated the 4:00 PM close (freshest '
- 'stamps 10:05-11:25 AM EDT Oct 27; some caches as old as May 2025), and Google Finance (Sep 24/25 caches), '
- 'marketscreener (Sep 4) and ycharts (Oct 26 18:04 EDT) were equally stale. Per the leave-unchanged rule nothing was '
- 'written: all 63 prices, mcaps, P/E block, SPY/QQQ and pxd stay at the Mon 2026-10-26 close (CGNX still 2026-10-23); '
- 'no HISTORY row; risk_series ust10/spy 10-27 skipped (sources unreadable; ust10 2026-10-26 = 5.00 was already added '
- 'by the 00:30 pass). Oct-26 baseline cross-checked against 9 history tables - all matched. Every number checked came '
- 'from a tool call this session; the next scheduled pass retries.')
+ASOF = ('Oct 29, 2026 - GOOGL TEST APPROVED (Salee): 19 Nov $18,524 tranche moved to a 10 Dec DECIDE - buy only if no further '
+ 'share sale AND a credible path back to positive free cash flow; fail = budget cut to cost spent, no sale. || '
+ 'PREVIOUS ENTRY: Oct 29, 2026 04:45 Bangkok - RESULTS SCORED: MSFT PASS (BUY 9 sh tonight, limit 531.01, cap 536.32); '
+ 'STRL FAIL (signed backlog 4.14bn < 4.33bn; budget back to pool; half 2 cancelled); GEV thesis intact (Power orders '
+ '+178%, Electrification -9% on a tough comparison); VRT partial disclosure; GOOGL Q3 cloud doubled but FCF -9.1bn + '
+ 'June 84.75bn equity raise - 19 Nov tranche pending Salee. Fed held 3.75-4.00% (10-2, Cook and Hammack for a hike). '
+ 'SGOV 4 Nov sale no longer needed. || PREVIOUS ENTRY: Oct 28, 2026 - SGOV SLICE 1 BOOKED: SELL 100 at 100.6901 = '
+ '10,047.46 net (POEMS 1187938, 22:29 Bangkok). Cash 29,714.36; SGOV 694 sh parked (cost 69,917.06). || PREVIOUS '
+ "ENTRY: Oct 28, 2026 13:16 Bangkok - PRICES OF THE 36 HOLDINGS SET TO THE TUE 2026-10-27 CLOSE FROM SALEE'S POEMS "
+ 'POSITIONS SCREEN (US market closed; POEMS "Current Price" column; SGOV mark 100.68). Reason: every web source '
+ 'reachable from the sandbox served pre-close cached pages for Oct 27 through both scheduled runs (00:30 and 03:30 '
+ 'UTC) and manual checks at 03:30-04:50 UTC, so 0 of 63 could be written by the job. The 27 watch names (no position) '
+ 'stay at the 26 Oct close until the next successful run. Moves of 6%+ vs 26 Oct: CDNS +6.5%, ALAB +10.5%, CRDO '
+ '+10.8%, RKLB +8.3% - consistent with the reported 27 Oct session (AMD +5.5%, AVGO +4%, MU +2.8%, chips rally). '
+ 'Positions and cost on the same screen reconcile to the board to the cent on all 36 lines (641,827.76 NASD + '
+ '247,167.89 NYSE incl. SGOV = 888,995.64). pe/ps/fpe/peg/pfcf rescaled with price per the 26 Oct rule. || PREVIOUS '
+ 'ENTRY: Oct 28, 2026 (runs 00:30 + 03:30 UTC) - DAILY PRICE REFRESH: BOTH overnight passes could not resolve the Tue '
+ '2026-10-27 close for any ticker. 03:30 pass sampled 14 stockanalysis.com quote/history pages: every capture predated '
+ 'the 4:00 PM close (freshest stamps 10:05-11:25 AM EDT Oct 27; some caches as old as May 2025), and Google Finance '
+ '(Sep 24/25 caches), marketscreener (Sep 4) and ycharts (Oct 26 18:04 EDT) were equally stale. Per the '
+ 'leave-unchanged rule nothing was written: all 63 prices, mcaps, P/E block, SPY/QQQ and pxd stay at the Mon '
+ '2026-10-26 close (CGNX still 2026-10-23); no HISTORY row; risk_series ust10/spy 10-27 skipped (sources unreadable; '
+ 'ust10 2026-10-26 = 5.00 was already added by the 00:30 pass). Oct-26 baseline cross-checked against 9 history tables '
+ '- all matched. Every number checked came from a tool call this session; the next scheduled pass retries.')
 
 GROUPS = ['Hyperscalers & Model Owners',
  'AI Chips & Chip Design',
@@ -7071,39 +7073,49 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                     'IN A YEAR AND NVIDIA BUYS MEMORY BY THE TONNE. MORE UNITS AT A THINNER MARGIN IS A DIFFERENT '
                     'INVESTMENT FROM MORE UNITS AT THE SAME MARGIN. THE PRINT ON 18 NOVEMBER IS THE TRIGGER, NOT THE '
                     'HEADLINE.'},
-           {'d': '2026-11-19',
+           {'d': '2026-12-10',
             't': 'GOOGL',
             'k': 'tranche',
-            'w': '⚠️ PENDING SALEE (29 Oct): proposed conversion to DECIDE - Q3 showed FCF -$9.1bn and the June '
-                 '$84.75bn equity raise (META-rule conditions). Do not place until decided. | Tranche 3 - after both '
-                 'the Final Judgment and Q3 results. ⚠️ AMOUNT CORRECTED 16 SEP FROM 20,524.08 TO 18,524.08 - THE OLD '
-                 'FIGURE WAS 2,000 MORE THAN THE BUDGET ALLOWS.',
-            'a': 'BUY',
+            'w': 'GOOGL tranche 3 ($18,524.08) - CONVERTED 29 Oct from an automatic 19 Nov BUY to a 10 Dec DECIDE '
+                 '(Salee: "Approve GOOGL test"). Reason: Q3 2026 free cash flow -$9.1bn (second negative quarter) and '
+                 'the June 2026 $84.75bn share sale - the same two conditions that triggered the META rule on 27 Oct.',
+            'a': 'DECIDE',
             'amt': 18524.08,
-            'cond': '⚠️⚠️ DATA FAULT FOUND AND FIXED ON 16 SEPTEMBER, AND IT IS THE SECOND OF ITS CLASS ON THIS BOARD '
-                    '(the first was the MRVL 4,000 error of 11 September). THIS ROW COMMITTED 20,524.08. THE GOOGL '
-                    'BUDGET IS 78,000 AND 59,475.92 IS ALREADY INVESTED, SO ONLY 18,524.08 REMAINS. The row was '
-                    'promising 2,000 THAT DOES NOT EXIST. It is now 18,524.08 and the rung closes the budget exactly. '
-                    '⚠️ THE LESSON IS THE SAME BOTH TIMES: A SCHEDULE AMOUNT MUST BE DERIVED FROM BUDGET MINUS '
-                    'INVESTED, NEVER TYPED FROM MEMORY. Two faults of one kind in six days is a process problem, not '
-                    'bad luck, and a budget-versus-schedule reconciliation now belongs on the 10 December agenda. || '
-                    '20,524.08 = the entire remaining room on the 80,000 budget. Deliberately dated AFTER two '
-                    'information events, not before: the Final Judgment due ~Oct 2 and Q3 2026 results ~Oct 28 '
-                    '(estimated, not confirmed by Alphabet). || THE CASE: Q2 2026 revenue 119.8bn +24%, GOOGLE CLOUD '
-                    '24.8bn +82%, operating margin 34%. Position is 217 shares at 59,475.92, up 23.5%, and the stock '
-                    'sits about 19% below its 408.61 high. 63 analysts average 428.07. || ⚠️ THREE THINGS TO CHECK AT '
-                    'Q3, NONE OF WHICH ARE IN THE PRICE STORY: (1) FY2026 capex guidance was RAISED to 195-205bn from '
-                    "180-190bn, with management saying capex will 'increase significantly in 2027'; (2) Q2 FREE CASH "
-                    'FLOW WAS NEGATIVE 5,855m; (3) SHARE BUYBACKS HAVE STOPPED - 0 repurchased in Q2 and 0 '
-                    'year-to-date, while the 0.22 dividend continues. A company spending 200bn a year with negative '
-                    'free cash flow has stopped returning capital. That is the trade-off being made, and it is worth '
-                    'watching rather than assuming. || ⚠️ THE TRAILING P/E OF ~17 IS AN ARTEFACT, NOT CHEAPNESS: Q2 '
-                    "'other income' carried a 98.0bn net gain, mostly unrealised equity marks, which added 77.1bn to "
-                    'net income after tax. Forward P/E of about 25 is the real figure. || ⚠️ EUROPE IS STILL LIVE: the '
-                    'European Commission fined Google 890m euro on Jul 23, 2026 under the Digital Markets Act - 460m '
-                    'for self-preferencing in Search and 430m on Play anti-steering - and ordered the non-compliance '
-                    'ended. Separate from the older EUR2.95bn ad-tech decision where the Commission still wants a '
-                    'STRUCTURAL remedy.',
+            'cond': 'BUY THE TRANCHE ONLY IF BOTH: (1) NO FURTHER SHARE SALE - no new equity offering, at-the-market '
+                    'programme or other cash sale of shares announced since the June $84.75bn raise; and (2) A '
+                    'CREDIBLE PATH BACK TO POSITIVE FREE CASH FLOW - management guiding capex growth below '
+                    "operating-cash-flow growth for 2027, or Q4 free cash flow (late Jan) visibly better than Q3's "
+                    '-$9.1bn. Cloud growth staying near the Q3 pace (revenue ~$30.7bn, 36% margin) is the supporting '
+                    'check, not the gate. FAIL either = no new money; budget cut to the cost already spent '
+                    '($59,475.92), as with META; NO SALE on these alone (217 sh held). If the 10 Dec evidence is '
+                    'mixed, the default is to wait for the Q4 results rather than buy. || PREVIOUS (19 Nov plan): ⚠️ '
+                    'PENDING SALEE (29 Oct): proposed conversion to DECIDE - Q3 showed FCF -$9.1bn and the June '
+                    '$84.75bn equity raise (META-rule conditions). Do not place until decided. | Tranche 3 - after '
+                    'both the Final Judgment and Q3 results. ⚠️ AMOUNT CORRECTED 16 SEP FROM 20,524.08 TO 18,524.08 - '
+                    'THE OLD FIGURE WAS 2,000 MORE THAN THE BUDGET ALLOWS. | ⚠️⚠️ DATA FAULT FOUND AND FIXED ON 16 '
+                    'SEPTEMBER, AND IT IS THE SECOND OF ITS CLASS ON THIS BOARD (the first was the MRVL 4,000 error of '
+                    '11 September). THIS ROW COMMITTED 20,524.08. THE GOOGL BUDGET IS 78,000 AND 59,475.92 IS ALREADY '
+                    'INVESTED, SO ONLY 18,524.08 REMAINS. The row was promising 2,000 THAT DOES NOT EXIST. It is now '
+                    '18,524.08 and the rung closes the budget exactly. ⚠️ THE LESSON IS THE SAME BOTH TIMES: A '
+                    'SCHEDULE AMOUNT MUST BE DERIVED FROM BUDGET MINUS INVESTED, NEVER TYPED FROM MEMORY. Two faults '
+                    'of one kind in six days is a process problem, not bad luck, and a budget-versus-schedule '
+                    'reconciliation now belongs on the 10 December agenda. || 20,524.08 = the entire remaining room on '
+                    'the 80,000 budget. Deliberately dated AFTER two information events, not before: the Final '
+                    'Judgment due ~Oct 2 and Q3 2026 results ~Oct 28 (estimated, not confirmed by Alphabet). || THE '
+                    'CASE: Q2 2026 revenue 119.8bn +24%, GOOGLE CLOUD 24.8bn +82%, operating margin 34%. Position is '
+                    '217 shares at 59,475.92, up 23.5%, and the stock sits about 19% below its 408.61 high. 63 '
+                    'analysts average 428.07. || ⚠️ THREE THINGS TO CHECK AT Q3, NONE OF WHICH ARE IN THE PRICE STORY: '
+                    '(1) FY2026 capex guidance was RAISED to 195-205bn from 180-190bn, with management saying capex '
+                    "will 'increase significantly in 2027'; (2) Q2 FREE CASH FLOW WAS NEGATIVE 5,855m; (3) SHARE "
+                    'BUYBACKS HAVE STOPPED - 0 repurchased in Q2 and 0 year-to-date, while the 0.22 dividend '
+                    'continues. A company spending 200bn a year with negative free cash flow has stopped returning '
+                    'capital. That is the trade-off being made, and it is worth watching rather than assuming. || ⚠️ '
+                    "THE TRAILING P/E OF ~17 IS AN ARTEFACT, NOT CHEAPNESS: Q2 'other income' carried a 98.0bn net "
+                    'gain, mostly unrealised equity marks, which added 77.1bn to net income after tax. Forward P/E of '
+                    'about 25 is the real figure. || ⚠️ EUROPE IS STILL LIVE: the European Commission fined Google '
+                    '890m euro on Jul 23, 2026 under the Digital Markets Act - 460m for self-preferencing in Search '
+                    'and 430m on Play anti-steering - and ordered the non-compliance ended. Separate from the older '
+                    'EUR2.95bn ad-tech decision where the Commission still wants a STRUCTURAL remedy.',
             'c': 'planned'},
            {'d': '2026-11-19',
             'dl': 'Waymo - check at Q3, do not re-rate on it',
