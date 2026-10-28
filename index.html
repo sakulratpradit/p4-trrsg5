@@ -628,6 +628,10 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
 </div>
 <div class="tbl-wrap"><table id="matrix"></table></div>
 
+<h2 id="growthmap">Growth × P/E map <span class="n">x = trailing P/E (linear; hollow dashed ring = forward P/E where there are no trailing earnings) · y = revenue growth, year on year (TTM) · filled bubble = owned (area = position value) · hollow ring = watchlist · colour = group · lines at P/E 30 and growth 10%</span></h2>
+<div class="note" id="grnote">Top-left = growing fast at a modest multiple. Bottom-right = paying a lot for slow growth.</div>
+<div class="bub-card" id="grwrap"><svg id="grsvg" viewBox="0 0 940 600" role="img" aria-label="Scatter of trailing P/E versus year-on-year revenue growth for owned and watchlist names"></svg><div class="bub-tip" id="grtip"></div><div class="glegend" id="grlegend" style="margin-top:6px"></div></div>
+
 <h2>Position cards <span class="n">charts load as you scroll · edits recompute instantly (in-memory until I bake them in)</span></h2>
 <div class="cards" id="cards"></div>
 </div><!-- /page-main -->
@@ -947,7 +951,7 @@ function renderBubble(){
       skipped.length ? skipped.join(", ")+" — no earnings yet, nothing to plot on a P/E axis"
                      : "Nothing to plot for this selection"}</text>`;
     const t0=document.getElementById("bubtip"); if(t0) t0.style.display="none";
-    renderPEG();
+    renderPEG(); renderGrowth();
     return;
   }
   const W=940, H=560, m={t:30, r:30, b:56, l:64};
@@ -999,7 +1003,7 @@ function renderBubble(){
     c.addEventListener("mouseleave",()=>{ tip.style.display="none"; });
   });
   svg.addEventListener("click",e=>{ if(!e.target.classList.contains("bub")) tip.style.display="none"; });
-  renderPEG();
+  renderPEG(); renderGrowth();
 }
 
 function renderPEG(){
@@ -1060,6 +1064,75 @@ function renderPEG(){
     c.addEventListener("mouseleave",()=>{ tip.style.display="none"; });
   });
   svg.addEventListener("click",e=>{ if(!e.target.classList.contains("pb")) tip.style.display="none"; });
+}
+
+
+/* ============ growth x P/E map (revenue growth YoY vs trailing P/E) - added 29 Oct 2026 at Salee's request ============ */
+function renderGrowth(){
+  const svg=document.getElementById("grsvg"); if(!svg) return;
+  const tip=document.getElementById("grtip"), wrap=document.getElementById("grwrap"), note=document.getElementById("grnote"), leg=document.getElementById("grlegend");
+  const V = vis().filter(s=>s.revG!=null && ((s.pe!=null&&s.pe>0)||(s.fpe!=null&&s.fpe>0)))
+    .map(s=>({s, pe:(s.pe!=null&&s.pe>0)?s.pe:s.fpe, fwd:!(s.pe!=null&&s.pe>0), held:POS[s.t]&&POS[s.t].shares!=null}));
+  const skipped = vis().filter(s=>!V.find(x=>x.s.t===s.t)).map(s=>s.t);
+  const XMIN=0, XMAX=100, YMIN=-10, YMAX=120, PEL=30, GL=10;
+  const quad = x => (x.pe<=PEL ? (x.s.revG>=GL?"Strong value":"Value trap?") : (x.s.revG>=GL?"High hopes":"Uh oh"));
+  const cnt={"Strong value":[0,0],"High hopes":[0,0],"Value trap?":[0,0],"Uh oh":[0,0]};
+  V.forEach(x=>{ cnt[quad(x)][x.held?0:1]++; });
+  note.innerHTML = "Top-left = <b>strong value</b> (growing 10%+ at a P/E of 30 or less); top-right = <b>high hopes</b> (fast but dear); bottom-left = <b>value trap?</b> (cheap but slow); bottom-right = <b>uh oh</b> (dear and slow). "
+    + Object.entries(cnt).map(([k,v])=>`${k}: <b>${v[0]}</b> owned, ${v[1]} watch`).join(" · ")
+    + ". P/E above 100 or growth above 120% is drawn at the edge with a +. Hover a bubble for its numbers."
+    + (skipped.length?` <b>Not plotted (no earnings or no growth figure): ${skipped.join(", ")}.</b>`:"");
+  if(!V.length){ svg.innerHTML=`<text class="axis-cap" x="470" y="280" text-anchor="middle">Nothing to plot for this selection</text>`; tip.style.display="none"; leg.innerHTML=""; return; }
+  const W=940, H=600, m={t:46, r:30, b:56, l:64}, iw=W-m.l-m.r, ih=H-m.t-m.b;
+  const cx_=v=>Math.max(XMIN,Math.min(XMAX,v)), cy_=v=>Math.max(YMIN,Math.min(YMAX,v));
+  const X=v=>m.l+(cx_(v)-XMIN)/(XMAX-XMIN)*iw, Y=v=>m.t+ih-(cy_(v)-YMIN)/(YMAX-YMIN)*ih;
+  const sizes=V.map(x=>mv(x.s)??0), maxS=Math.max(...sizes,1), R=v=>Math.max(7, Math.sqrt(v/maxS)*40);
+  let g="";
+  /* quadrant tints */
+  g+=`<rect x="${X(0)}" y="${Y(YMAX)}" width="${X(PEL)-X(0)}" height="${Y(GL)-Y(YMAX)}" fill="var(--good)" opacity="0.07"/>`;
+  g+=`<rect x="${X(PEL)}" y="${Y(GL)}" width="${X(XMAX)-X(PEL)}" height="${Y(YMIN)-Y(GL)}" fill="var(--bad)" opacity="0.07"/>`;
+  for(let gx=XMIN; gx<=XMAX; gx+=10){ g+=`<line x1="${X(gx)}" y1="${m.t}" x2="${X(gx)}" y2="${m.t+ih}" stroke="var(--grid)"/><text class="axis-t" x="${X(gx)}" y="${m.t+ih+20}" text-anchor="middle">${gx===XMAX?gx+"x+":gx+"x"}</text>`; }
+  for(let gy=YMIN; gy<=YMAX; gy+=10){ g+=`<line x1="${m.l}" y1="${Y(gy)}" x2="${m.l+iw}" y2="${Y(gy)}" stroke="var(--grid)"/><text class="axis-t" x="${m.l-8}" y="${Y(gy)+5}" text-anchor="end">${gy===YMAX?gy+"%+":gy+"%"}</text>`; }
+  g+=`<line x1="${m.l}" y1="${Y(0)}" x2="${m.l+iw}" y2="${Y(0)}" stroke="var(--axis)" stroke-width="1"/>`;
+  g+=`<line x1="${m.l}" y1="${m.t+ih}" x2="${m.l+iw}" y2="${m.t+ih}" stroke="var(--axis)" stroke-width="1.5"/><line x1="${m.l}" y1="${m.t}" x2="${m.l}" y2="${m.t+ih}" stroke="var(--axis)" stroke-width="1.5"/>`;
+  g+=`<line x1="${X(PEL)}" y1="${m.t}" x2="${X(PEL)}" y2="${m.t+ih}" stroke="var(--axis)" stroke-width="1.5" stroke-dasharray="6 4"/><text class="quad" x="${X(PEL)+4}" y="${m.t+ih-24}">P/E = 30</text>`;
+  g+=`<line x1="${m.l}" y1="${Y(GL)}" x2="${m.l+iw}" y2="${Y(GL)}" stroke="var(--axis)" stroke-width="1.5" stroke-dasharray="6 4"/><text class="quad" x="${m.l+iw-8}" y="${Y(GL)-5}" text-anchor="end">growth = 10%</text>`;
+  g+=`<text class="quad" x="${m.l+8}" y="${m.t-12}" fill="var(--good)">STRONG VALUE · cheap · fast ✓</text>`;
+  g+=`<text class="quad" x="${m.l+iw-8}" y="${m.t-12}" text-anchor="end">HIGH HOPES · dear · fast</text>`;
+  g+=`<text class="quad" x="${m.l+8}" y="${m.t+ih-10}">VALUE TRAP? · cheap · slow</text>`;
+  g+=`<text class="quad" x="${m.l+iw-8}" y="${m.t+ih-10}" text-anchor="end" fill="var(--bad)">UH OH · dear · slow</text>`;
+  g+=`<text class="axis-cap" x="${m.l+iw/2}" y="${H-12}" text-anchor="middle">P/E ratio (trailing) — lower is cheaper</text>`;
+  g+=`<text class="axis-cap" x="18" y="${m.t+ih/2}" text-anchor="middle" transform="rotate(-90 18 ${m.t+ih/2})">Revenue growth, YoY (TTM) — higher is better</text>`;
+  const order=[...V].sort((a,b)=>(mv(b.s)??0)-(mv(a.s)??0));
+  const LBL=[];
+  order.forEach(x=>{
+    const s=x.s, r=x.held?R(mv(s)??0):7, cx=X(x.pe), cy=Y(s.revG), col=`var(--s${slot(s)})`;
+    if(x.held) g+= x.fwd
+      ? `<circle class="gb" data-t="${s.t}" cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${col}" stroke-width="3" stroke-dasharray="5 3"/>`
+      : `<circle class="gb" data-t="${s.t}" cx="${cx}" cy="${cy}" r="${r}" fill="${col}" fill-opacity="0.55" stroke="var(--surface-1)" stroke-width="2"/>`;
+    else g+=`<circle class="gb" data-t="${s.t}" cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${col}" stroke-width="2.5" ${x.fwd?'stroke-dasharray="4 3"':''}/>`;
+    if(x.pe>XMAX) g+=`<text class="axis-t" x="${cx-r-8}" y="${cy+4}" fill="${col}">+</text>`;
+    if(s.revG>YMAX) g+=`<text class="axis-t" x="${cx+r+2}" y="${cy+10}" fill="${col}">↑</text>`;
+    let ly=cy-r-5; if(ly<m.t+10) ly=cy+r+12;
+    /* simple de-collision: nudge a label down until it clears every label already placed */
+    const w=s.t.length*7.2; let tries=0;
+    while(tries<8 && LBL.some(b=>Math.abs(b.x-cx)<(b.w+w)/2+2 && Math.abs(b.y-ly)<11)){ ly+=11; tries++; }
+    LBL.push({x:cx,y:ly,w:w});
+    g+=`<text class="blab" x="${cx}" y="${ly}" text-anchor="middle" pointer-events="none" ${x.held?"":'style="font-weight:500;opacity:.75"'}>${s.t}</text>`;
+  });
+  svg.innerHTML=g;
+  const gc={}; V.forEach(x=>{ gc[x.s.g]=(gc[x.s.g]||0)+1; });
+  leg.innerHTML = GROUPS.map((n,i)=>gc[i]?`<div class="gl"><span class="dot" style="background:var(--s${i+1})"></span><span>${n}</span><span>${gc[i]}</span><span></span></div>`:"").join("");
+  svg.querySelectorAll(".gb").forEach(c=>{
+    ["mousemove","click"].forEach(ev=>c.addEventListener(ev,e=>{
+      const s=STOCKS.find(q=>q.t===c.dataset.t), x=V.find(q=>q.s.t===s.t);
+      const wr=wrap.getBoundingClientRect();
+      tip.style.display="block"; tip.style.left=Math.min(e.clientX-wr.left+14, wr.width-190)+"px"; tip.style.top=(e.clientY-wr.top+10)+"px";
+      tip.innerHTML=`<b>${s.t}</b> · ${s.name}<br><span style="color:var(--s${slot(s)})">${GROUPS[s.g]}</span><br><b>${quad(x)}</b><br>${x.fwd?"Forward":"Trailing"} P/E <b>${fmt(x.pe,1)}x</b>${x.fwd?" (no trailing earnings)":""}<br>Revenue growth <b>${s.revG>=0?"+":""}${fmt(s.revG,1)}%</b><br>Net margin <b>${s.pm!=null?fmt(s.pm,1)+"%":"—"}</b>${x.held?`<br>Position <b>${money(mv(s))}</b>`:"<br><i>watchlist</i>"}`;
+    }));
+    c.addEventListener("mouseleave",()=>{ tip.style.display="none"; });
+  });
+  svg.addEventListener("click",e=>{ if(!e.target.classList.contains("gb")) tip.style.display="none"; });
 }
 
 /* ============ portfolio wheel (whole book, always) ============
