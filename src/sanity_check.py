@@ -98,6 +98,8 @@ def main():
 
     base = consts_from_html(read_git(a.base, "index.html", a.repo))
     new = consts_from_html(open(a.new, encoding="utf-8").read())
+    newhtml = open(a.new, encoding="utf-8").read()
+    ledger = consts_from_html(newhtml, ("TRADES", "MONTHLY", "TOTALS"))
 
     b, n = index_by_ticker(base["STOCKS"]), index_by_ticker(new["STOCKS"])
 
@@ -141,6 +143,49 @@ def main():
                     "%-6s price %+.2f%% but mcapB %+.2f%% (%.1f pp apart) -- "
                     "market cap and price should scale together" % (t, d, dm, abs(dm - d))
                 )
+
+    # ---- LEDGER GATE (added 2026-10-29) --------------------------------------
+    # Every booked fill must also move MONTHLY and TOTALS.investedEverUSD.
+    # October 2026 shipped with six buys and a sale missing from MONTHLY because
+    # fill bookings only touched POS/TRADES/CASH. These checks make that a FAIL.
+    import datetime as _dt
+    from collections import defaultdict as _dd
+    tb, tn, ts, tk = _dd(float), _dd(int), _dd(float), _dd(int)
+    for tr in ledger["TRADES"]:
+        if tr.get("t") == "SGOV":          # parked cash, not a stock trade
+            continue
+        ym = _dt.datetime.strptime(tr["date"], "%b %d, %Y").strftime("%Y-%m")
+        if tr["action"] == "BUY":
+            tb[ym] += tr["amount"]; tn[ym] += 1
+        elif tr["action"] == "SELL":
+            ts[ym] += tr["amount"]; tk[ym] += 1
+    mon = {m["ym"]: m for m in ledger["MONTHLY"]}
+    first = min(tb) if tb else None
+    # (1) cumulative buys since TRADES begins must tie (month-boundary BKK/NY
+    #     dating may shift a fill between adjacent months, never lose it)
+    if first:
+        mb = sum(m["buyUSD"] for k, m in mon.items() if k >= first)
+        if abs(mb - sum(tb.values())) > 0.02:
+            fails.append("LEDGER MONTHLY buys since %s = %.2f but TRADES buys = %.2f -- "
+                         "a fill was booked without updating MONTHLY" % (first, mb, sum(tb.values())))
+    # (2) from Oct 2026 every month must tie exactly, lots included
+    for ym in sorted(set(tb) | set(ts)):
+        if ym < "2026-10":
+            continue
+        m = mon.get(ym)
+        if not m:
+            fails.append("LEDGER MONTHLY has no %s row but TRADES has fills in it" % ym); continue
+        if abs(m["buyUSD"] - tb[ym]) > 0.02 or m["buyLots"] != tn[ym]:
+            fails.append("LEDGER %s buys MONTHLY %.2f/%d lots vs TRADES %.2f/%d"
+                         % (ym, m["buyUSD"], m["buyLots"], tb[ym], tn[ym]))
+        if abs(m["sellUSD"] - ts[ym]) > 0.02 or m["sellLots"] != tk[ym]:
+            fails.append("LEDGER %s sells MONTHLY %.2f/%d lots vs TRADES %.2f/%d"
+                         % (ym, m["sellUSD"], m["sellLots"], ts[ym], tk[ym]))
+    # (3) total ever invested = sum of all monthly buys
+    allb = sum(m["buyUSD"] for m in ledger["MONTHLY"])
+    inv = ledger["TOTALS"].get("investedEverUSD")
+    if inv is None or abs(allb - inv) > 0.02:
+        fails.append("LEDGER TOTALS.investedEverUSD %s != sum of MONTHLY buys %.2f" % (inv, allb))
 
     if moves and base["ASOF"] == new["ASOF"]:
         warns.append("ASOF unchanged (%r) while %d prices moved -- update ASOF"

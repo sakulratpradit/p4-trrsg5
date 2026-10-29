@@ -63,7 +63,17 @@ git commit -m "<what changed and why>"
 git push origin main
 ```
 
-Optional: `python3 build_workbook_v2.py` for the Excel workbook, and
+### Booking a fill (interactive session) — five places, not three
+A POEMS fill must update **all** of: `POS`, `TRADES`, `CASH`, the month's
+`MONTHLY` row (buyUSD/buyLots or sellUSD/sellLots/realized, plus byStock and
+byGroup), and `TOTALS.investedEverUSD` (buys only). Then rebuild the Excel
+workbook. On 29 Oct 2026 the October `MONTHLY` row was found missing six buys
+and a sale because bookings since 12 Oct touched only the first three; the
+LEDGER gate in `sanity_check.py` now blocks that. SGOV is parked cash and is
+kept out of `MONTHLY`.
+
+Required after any fill: `python3 build_workbook_v2.py` (the Excel workbook
+had drifted unrebuilt from 7 Sep to 29 Oct). Optional:
 `node check_dashboard.js` (Playwright at `/opt/pw-browsers/chromium`,
 `--no-sandbox`) which must print ZERO PAGE ERRORS.
 
@@ -125,6 +135,8 @@ this page and makes decisions from it.
 | **FAIL** | price moves more than 6% in one refresh (override: `--allow TICKER`) |
 | **FAIL** | price is null, zero, negative, or not a number |
 | **FAIL** | a ticker present in the previous build has vanished |
+| **FAIL** | LEDGER: October-2026-onward month in `MONTHLY` doesn't tie to `TRADES` (USD and lot count, SGOV excluded) |
+| **FAIL** | LEDGER: cumulative `MONTHLY` buys don't tie to `TRADES` buys, or `TOTALS.investedEverUSD` ≠ sum of `MONTHLY` buys |
 | **WARN** | `mcapB` drifts >3pp from the `price` move |
 | **WARN** | `ASOF` unchanged while prices moved |
 
