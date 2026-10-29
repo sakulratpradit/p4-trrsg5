@@ -1,34 +1,15 @@
 # P4 price refresh — status
 
-- Run time: 2026-10-29 00:33–02:20 UTC (00:30 scheduled pass)
-- Trading date recorded: **2026-10-28** (Wed)
-- Result: **PUSHED** — commit `eb2990a` ("Daily price refresh 2026-10-28: 48 prices"), fast-forward on main from 4e71c89, no force.
-- Prices changed: **48 of 63** (all 48 get pxd 2026-10-28). Largest move: **VRT +16.48% → 242.94**.
-- Sanity gate: PASS with `--allow SNPS FN ORCL BE STRL VRT STX SNDK` (each >6% vs stored; verification below). MU +5.86% under threshold.
-- HISTORY row 2026-10-28 appended: mv 819,022.76, cost 718,974.66, unreal +100,048.10 (+13.92%), net 105,943.57, cash 29,714.36.
-- BENCH: qqqLast 725.61 / 2026-10-28 (post-close fool.com article quote box). **spyLast/spyHigh unchanged** — SPY close not cleanly readable (two fool alias captures disagreed 771.62 vs 772.31; stockanalysis frozen). risk_series: **spy and ust10 both skipped** (10-27 and 10-28 are gaps; mortgagenewsdaily unreachable via proxy provenance, ycharts cache frozen pre-close).
-
-## Sources this run (third night of frozen caches)
-stockanalysis.com, Google Finance and ycharts proxy captures were all frozen at Oct-27 morning or older (NVDA quote May-2025, MSFT Sep-2025) — primary source unusable again. Prices came from **fool.com quote pages carrying a dated "last close | USD x | 2026-10-28" line**, cross-checked per ticker: back-out of the day change had to equal the board's POEMS-exact Oct-27 close (held on every one of the 36 holdings tested), close within the day's range. For pages mid-cache-rollover, the refreshed previous-close field was used as the close; this reading was validated by 8 clean pages where field == dated close, and independently by 247wallst.com sidebars matching **MU 983.23, SNDK 1404.77, STX 697.97, VRT 242.94, ORCL 144.54 to the cent**.
-
-## 6% movers — verification detail
-- ORCL 144.54 (+10.73% d/d, investor-day guidance): fool market-wrap stated close + 247wallst winners list — strong.
-- VRT 242.94 (+16.49% d/d, Q3 beat/raised guidance): 247wallst sidebar exact + gurufocus "surge 16%" — strong.
-- SNDK 1404.77 / STX 697.97 / (MU 983.23): 247wallst sidebar exact — strong.
-- BE 228.08 (+4.31% d/d; +11.85% vs stored Oct-26): dated fool close; marketbeat Oct-28 headline "+4.3%" matches d/d move — good.
-- FN 367.30 (+7.55% d/d): dated fool close, internally consistent OHLC; marketbeat Oct-28 "up 4.7%" (intraday) confirms direction only — weaker.
-- STRL 388.87 (+5.52% d/d): dated fool close; marketbeat Oct-28 "shares gap up" headline; open 391.80 consistent with gap — weaker.
-- SNPS 481.89 (+1.57% d/d; +6.07% vs stored Oct-26): clean dated fool close; the unverified leg is Oct-27 (+4.4%), consistent with the EDA rally (CDNS +6.5% Oct-27 POEMS-verified) — weakest of the allowed set; price itself is from a dated close line.
-
-## Unresolved (left at prior close, pxd untouched)
-- Holdings at 10-27 (POEMS): **CDNS, CRDO, AVAV, GEV, ETN, CEG** — every fool quote alias and fool.com.au page served a pre-close or 1-2-day-old capture; no dated Oct-28 close found.
-- Watch at 10-26: **ARM, MPWR, COHR, SPCX, LHX, PWR, GE, TSEM, CIEN** (COHR's fool page resolves to the delisted "Coherent Inc"; SPCX only has a /quote/crypto/ page).
-- marketscreener blocked by sandbox provenance permission (unattended run, no one to approve).
-
-## Live page
-Playwright check on the pushed index.html: 871 rows, **ZERO PAGE ERRORS**. Direct fetch of https://sakulratpradit.github.io/p4-trrsg5/ was blocked by the sandbox's URL-provenance rule, and the Pages build-status API is blocked by the proxy — could not confirm the deploy itself; the pushed content renders clean locally.
-
-## Notes for the next pass / interactive session
-- fool.com quote pages + fool.com.au ticker pages (Close Price stamped 07:00 AEDT = 4 PM ET) are currently the only sources that roll past the close; 247wallst "Companies Mentioned" sidebars give exact closes on same-day articles and make a good second source.
-- CGNX: fool's dated Oct-28 page implies an Oct-27 close of 58.32 vs POEMS 58.22 (10 c) — written 58.43 for 10-28 regardless (dated close, in range); flagging the 10 c discrepancy.
-- FTNT closed −6.02% d/d at 174.08 and was −26% after hours (earnings); LITE +8.6% AH; MU/TER/KLAC/STX also moved AH. Thursday's refresh will see large d/d gaps on these — they are real.
+- **Run time:** 2026-10-29 03:32–04:30 UTC (scheduled 03:30 pass)
+- **Trading date recorded:** 2026-10-28 (6 tickers + SPY/QQQ benchmarks); 2026-10-27 (5 tickers, verified closes)
+- **Result:** PUSHED
+- **Commit:** 05a9cd1 (on top of 3c80f05; fast-forward, no force)
+- **Prices changed:** 11 of the 15 left over from the 00:30 pass (which had already set 48/63 to 10-28)
+  - 10-28 closes: ETN 392.88 (+2.26%), GEV 878.03 (−1.90%), PWR 606.89 (+7.62%*), COHR 239.59 (+8.17%*), SPCX 145.23 (−1.14%), CIEN 363.21 (+8.12%*)
+  - verified 10-27 closes (10-28 unreadable): ARM 226.60, GE 297.66, MPWR 1211.89, LHX 259.40, TSEM 189.08
+  - *sanity gate tripped >6% vs the 10-26 base; each confirmed by a second independent source and pushed with `--allow PWR --allow COHR --allow CIEN` (exit 0). The one-day moves were ≤4.9%; the excess is the missed 10-27 session.
+- **Benchmarks / series:** BENCH spyLast 772.31 / spyLastD 2026-10-28 (marketchameleon dated close; spyHigh 779.09 unchanged). risk_series: spy 10-27 = 769.66 (SSGA official), spy 10-28 = 772.31, ust10 10-27 = 4.99 (ycharts). ust10 10-28 SKIPPED — ycharts/MND not yet updated at run time; fool.com Oct-28 market wrap printed 5.02% at close, for the next run to confirm.
+- **Unresolved tickers (4):** CDNS 343.08, CRDO 167.43, AVAV 126.73, CEG 258.98 — all still at their 10-27 close, which heygotrade's dated close pages confirm to the cent, so the stored values are verified-correct but one day stale. No trustworthy 10-28 close was readable for them.
+- **Derived fields:** mcapB scaled with price; pe/ps recomputed; fpe/peg/M3-pfcf scaled; HISTORY 10-28 row mv updated in place 819,022.76 → 819,026.79 for the new ETN/GEV closes (no duplicate row).
+- **Source conditions (4th night running):** stockanalysis quote/history, Google Finance (both URL forms), tipranks, marketscreener, financialcontent, benzinga all serving pre-close or weeks-old caches. What worked: 247wallst Oct-28 article sidebars (validated to the cent against the board's already-verified MSFT/ORCL/NVDA/MU/GOOGL/VRT 10-28 closes), heygotrade dated close pages (rolling over to 10-28 during the run — CIEN caught it), marketbeat Oct-28 alerts' "previously closed at" fields for 10-27 closes. Every accepted price had its implied previous close reconciled against the board's stored prior close.
+- **Blockers:** Live page https://sakulratpradit.github.io/p4-trrsg5/ could not be fetched from this sandbox (WebFetch provenance block; Pages API 403 via proxy). Render verified locally instead: `node src/check_dashboard.js` on the pushed build printed ZERO PAGE ERRORS, 871 table rows. stockanalysis bare quote pages also hit the provenance block all run (unattended session cannot approve), so the primary-source rule fell through to the second-source list throughout.
