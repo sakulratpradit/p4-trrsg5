@@ -3,55 +3,57 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Oct 30, 2026 11:10 Bangkok - POEMS POSITIONS RECONCILED (screen 10:56 SGT, after the 29 Oct close): 36 lines + SGOV '
- 'match to the cent; market value 874,941.02 ties. Nine NYSE marks set from POEMS (APH 82.08, ANET 184.22, CAT 647.39, '
- "ETN 393.72, TSM 431.81, VRT 245.92, V 410.54, VST 140.95; SGOV 100.71) - all within 0.2% of the job's closes; ratios "
- 'rescaled. No fill tonight yet: CAT 7 sh LIMIT 647.39 (cap 653.86) is the only order. || PREVIOUS ENTRY: Oct 30, 2026 '
- '08:40 Bangkok - AMZN Q3 read recorded (AWS +39%, backlog $578bn, TTM FCF -$42.4bn, no order - over budget); CAT '
- 'order set: 7 sh Day LIMIT 647.22, cap 653.69. || PREVIOUS ENTRY: Oct 30, 2026 (00:30 UTC job) - DAILY PRICE REFRESH: '
- 'all 63 prices set to the Thu 2026-10-29 close. Primary source this run: marketbeat.com dated daily-price tables / '
- "closing-price headers (pages updated 10/29, 'Closing price 4:00 PM Eastern' stamps), every ticker's prior close "
- 'cross-checked against the stored board value; stockanalysis.com and Google Finance caches still frozen pre-close '
- '(5th night); GEV from the fool.com quote page previous-close field (887.85; method validated to the cent on GOOGL '
- 'and MSFT this run). Big earnings-reaction day: 6%-movers verified + allowed: GOOGL 283.82 -12.64% (Q3 miss/FCF, fool '
- 'prev-close field exact + news), FTNT 139.10 -20.09% (service-revenue forecast cut; 247wallst sidebar exact), MRVL '
- '218.34 -13.24% (Lumentum deal talks; fool widget -13.24% exact), CAT 647.22 -9.49% (sales outlook; 247wallst sidebar '
- '647.39), LHX 279.12 +7.10% (Q3 beat + raised FY guide; investing.com 278.65 +6.92%), AVAV 134.88 +7.09% (gurufocus '
- '+7.1%). SPY 769.36 and QQQ 715.34 (10-29, marketbeat closing headers; prev closes match board); spyHigh unchanged '
- '779.09. risk_series spy 10-29 added; ust10 10-29 skipped (ycharts H15 only through 10-27; yahoo close bar printed '
- '4.99 for reference). HISTORY 10-29 row added (first row including the 29 Oct MSFT buy, 126 sh). Note: TSEM 187.92 '
- 'written from a dated 10/29 marketbeat header whose implied 10/28 prev close (193.52) could not be cross-checked - '
- 'flagged for the next run. Every number from a tool call this session. || PREVIOUS ENTRY: Oct 29, 2026 23:00 Bangkok '
- '- GOOGL 10 Dec test (1) CLARIFIED: Q3 ATM share sales of $12.4bn were draws under the $40bn ATM announced in the '
- 'June $84.75bn raise, so they do not fail the test; a new or upsized programme would. No order, budget or price '
- 'changed. || PREVIOUS ENTRY: Oct 29, 2026 22:30 Bangkok - MSFT BOOKED 9 sh at 525.4031 = 4,738.75; cash 24,975.30. '
- 'FULL POEMS RECONCILIATION: 36 lines + SGOV match to the cent; cash corrected by 0.10 (CRWD 19 Oct fee true-up); SGOV '
- 'sale trued up to 10,047.25 (realised -27.25); October MONTHLY rebuilt (6 buys + 1 sale had been missing); October '
- 'dividends 251.31 itemised. Prices: 54 names at the 28 Oct close, 9 at 27 Oct - the 29 Oct close is written by the '
- 'next morning run. || PREVIOUS ENTRY: Oct 29, 2026 (03:30 UTC job) - DAILY PRICE REFRESH, 2nd pass: 11 more of the 15 '
- 'stragglers resolved. Wed 2026-10-28 close written for ETN 392.88, GEV 878.03, PWR 606.89, COHR 239.59, SPCX 145.23, '
- 'CIEN 363.21 (54 of 63 now at 10-28); verified Tue 10-27 close written for ARM 226.60, GE 297.66, MPWR 1211.89, LHX '
- '259.40, TSEM 189.08 (marketbeat prev-close fields / heygotrade dated closes; every prev-close cross-checked against '
- 'the stored prior close to the cent). Sources: 247wallst Oct-28 article sidebars validated to the cent on '
- 'MSFT/ORCL/NVDA/MU/GOOGL/VRT; heygotrade dated close pages; stockanalysis/Google Finance/tipranks/marketscreener '
- 'caches still frozen pre-close (4th night). 6%-movers vs last build, verified + allowed: PWR +7.6% (sidebar + '
- '247wallst company page, prev 578.8x both), COHR +8.2% (sidebar; prev 235.79 = heygotrade 10-27 close exact), CIEN '
- '+8.1% (heygotrade 10-28 close 363.21 +3.43%; gurufocus +3.4% same evening). Unresolved, left at their verified 10-27 '
- 'close: CDNS 343.08, CRDO 167.43, AVAV 126.73, CEG 258.98 (heygotrade 10-27 closes match the board to the cent; no '
- 'readable 10-28 close). SPY 772.31 10-28 (marketchameleon dated close; SSGA official 10-27 769.66 added to '
- 'risk_series with ycharts ust10 4.99 10-27; ust10 10-28 skipped - named sources not yet updated, fool.com wrap '
- 'printed 5.02 at close for reference). HISTORY 10-28 row mv updated in place for the new ETN/GEV closes. || PREVIOUS '
- 'ENTRY: Oct 29, 2026 (00:30 UTC job) - DAILY PRICE REFRESH: 48 of 63 set to the Wed 2026-10-28 close (fool.com dated '
- 'quote pages; stockanalysis/Google Finance/ycharts caches frozen pre-close for a third night). 15 unresolved stay at '
- 'their prior close: holdings CDNS CRDO AVAV GEV ETN CEG (10-27), watch ARM MPWR COHR SPCX LHX PWR GE TSEM CIEN '
- '(10-26). QQQ 725.61 (10-28); SPY, spyHigh and risk_series spy/ust10 left unchanged - no clean close readable. '
- 'HISTORY row 10-28 added. 6%-movers verified: ORCL 144.54 +10.73% d/d, VRT 242.94 +16.49% d/d, MU 983.23, SNDK '
- '1404.77, STX 697.97 (247wallst sidebar matches to the cent); SNPS FN BE STRL on dated fool closes + headline '
- 'corroboration. || PREVIOUS ENTRY: Oct 29, 2026 - GOOGL TEST APPROVED (Salee): 19 Nov $18,524 tranche moved to a 10 '
- 'Dec DECIDE - buy only if no further share sale AND a credible path back to positive free cash flow; fail = budget '
- 'cut to cost spent, no sale. || PREVIOUS ENTRY: Oct 29, 2026 04:45 Bangkok - RESULTS SCORED: MSFT PASS (BUY 9 sh '
- 'tonight, limit 531.01, cap 536.32); STRL FAIL (signed backlog 4.14bn < 4.33bn; budget back to pool; half 2 '
- 'cancelled); GEV thesis intact (Power orders +178%, Electrification -9% on a tough comparison); VRT partial '
+ASOF = ('Oct 30, 2026 21:45 Bangkok - CAT BOOKED: 7 sh at 633.5642 = 4,444.44 (rung 2 of 3; Power Generation test passed). '
+ 'Position 13 sh, cost 9,332.99; cash 20,530.86. October MONTHLY and investedEver updated with the fill. || PREVIOUS '
+ 'ENTRY: Oct 30, 2026 11:10 Bangkok - POEMS POSITIONS RECONCILED (screen 10:56 SGT, after the 29 Oct close): 36 lines '
+ '+ SGOV match to the cent; market value 874,941.02 ties. Nine NYSE marks set from POEMS (APH 82.08, ANET 184.22, CAT '
+ "647.39, ETN 393.72, TSM 431.81, VRT 245.92, V 410.54, VST 140.95; SGOV 100.71) - all within 0.2% of the job's "
+ 'closes; ratios rescaled. No fill tonight yet: CAT 7 sh LIMIT 647.39 (cap 653.86) is the only order. || PREVIOUS '
+ 'ENTRY: Oct 30, 2026 08:40 Bangkok - AMZN Q3 read recorded (AWS +39%, backlog $578bn, TTM FCF -$42.4bn, no order - '
+ 'over budget); CAT order set: 7 sh Day LIMIT 647.22, cap 653.69. || PREVIOUS ENTRY: Oct 30, 2026 (00:30 UTC job) - '
+ 'DAILY PRICE REFRESH: all 63 prices set to the Thu 2026-10-29 close. Primary source this run: marketbeat.com dated '
+ "daily-price tables / closing-price headers (pages updated 10/29, 'Closing price 4:00 PM Eastern' stamps), every "
+ "ticker's prior close cross-checked against the stored board value; stockanalysis.com and Google Finance caches still "
+ 'frozen pre-close (5th night); GEV from the fool.com quote page previous-close field (887.85; method validated to the '
+ 'cent on GOOGL and MSFT this run). Big earnings-reaction day: 6%-movers verified + allowed: GOOGL 283.82 -12.64% (Q3 '
+ 'miss/FCF, fool prev-close field exact + news), FTNT 139.10 -20.09% (service-revenue forecast cut; 247wallst sidebar '
+ 'exact), MRVL 218.34 -13.24% (Lumentum deal talks; fool widget -13.24% exact), CAT 647.22 -9.49% (sales outlook; '
+ '247wallst sidebar 647.39), LHX 279.12 +7.10% (Q3 beat + raised FY guide; investing.com 278.65 +6.92%), AVAV 134.88 '
+ '+7.09% (gurufocus +7.1%). SPY 769.36 and QQQ 715.34 (10-29, marketbeat closing headers; prev closes match board); '
+ 'spyHigh unchanged 779.09. risk_series spy 10-29 added; ust10 10-29 skipped (ycharts H15 only through 10-27; yahoo '
+ 'close bar printed 4.99 for reference). HISTORY 10-29 row added (first row including the 29 Oct MSFT buy, 126 sh). '
+ 'Note: TSEM 187.92 written from a dated 10/29 marketbeat header whose implied 10/28 prev close (193.52) could not be '
+ 'cross-checked - flagged for the next run. Every number from a tool call this session. || PREVIOUS ENTRY: Oct 29, '
+ '2026 23:00 Bangkok - GOOGL 10 Dec test (1) CLARIFIED: Q3 ATM share sales of $12.4bn were draws under the $40bn ATM '
+ 'announced in the June $84.75bn raise, so they do not fail the test; a new or upsized programme would. No order, '
+ 'budget or price changed. || PREVIOUS ENTRY: Oct 29, 2026 22:30 Bangkok - MSFT BOOKED 9 sh at 525.4031 = 4,738.75; '
+ 'cash 24,975.30. FULL POEMS RECONCILIATION: 36 lines + SGOV match to the cent; cash corrected by 0.10 (CRWD 19 Oct '
+ 'fee true-up); SGOV sale trued up to 10,047.25 (realised -27.25); October MONTHLY rebuilt (6 buys + 1 sale had been '
+ 'missing); October dividends 251.31 itemised. Prices: 54 names at the 28 Oct close, 9 at 27 Oct - the 29 Oct close is '
+ 'written by the next morning run. || PREVIOUS ENTRY: Oct 29, 2026 (03:30 UTC job) - DAILY PRICE REFRESH, 2nd pass: 11 '
+ 'more of the 15 stragglers resolved. Wed 2026-10-28 close written for ETN 392.88, GEV 878.03, PWR 606.89, COHR '
+ '239.59, SPCX 145.23, CIEN 363.21 (54 of 63 now at 10-28); verified Tue 10-27 close written for ARM 226.60, GE '
+ '297.66, MPWR 1211.89, LHX 259.40, TSEM 189.08 (marketbeat prev-close fields / heygotrade dated closes; every '
+ 'prev-close cross-checked against the stored prior close to the cent). Sources: 247wallst Oct-28 article sidebars '
+ 'validated to the cent on MSFT/ORCL/NVDA/MU/GOOGL/VRT; heygotrade dated close pages; stockanalysis/Google '
+ 'Finance/tipranks/marketscreener caches still frozen pre-close (4th night). 6%-movers vs last build, verified + '
+ 'allowed: PWR +7.6% (sidebar + 247wallst company page, prev 578.8x both), COHR +8.2% (sidebar; prev 235.79 = '
+ 'heygotrade 10-27 close exact), CIEN +8.1% (heygotrade 10-28 close 363.21 +3.43%; gurufocus +3.4% same evening). '
+ 'Unresolved, left at their verified 10-27 close: CDNS 343.08, CRDO 167.43, AVAV 126.73, CEG 258.98 (heygotrade 10-27 '
+ 'closes match the board to the cent; no readable 10-28 close). SPY 772.31 10-28 (marketchameleon dated close; SSGA '
+ 'official 10-27 769.66 added to risk_series with ycharts ust10 4.99 10-27; ust10 10-28 skipped - named sources not '
+ 'yet updated, fool.com wrap printed 5.02 at close for reference). HISTORY 10-28 row mv updated in place for the new '
+ 'ETN/GEV closes. || PREVIOUS ENTRY: Oct 29, 2026 (00:30 UTC job) - DAILY PRICE REFRESH: 48 of 63 set to the Wed '
+ '2026-10-28 close (fool.com dated quote pages; stockanalysis/Google Finance/ycharts caches frozen pre-close for a '
+ 'third night). 15 unresolved stay at their prior close: holdings CDNS CRDO AVAV GEV ETN CEG (10-27), watch ARM MPWR '
+ 'COHR SPCX LHX PWR GE TSEM CIEN (10-26). QQQ 725.61 (10-28); SPY, spyHigh and risk_series spy/ust10 left unchanged - '
+ 'no clean close readable. HISTORY row 10-28 added. 6%-movers verified: ORCL 144.54 +10.73% d/d, VRT 242.94 +16.49% '
+ 'd/d, MU 983.23, SNDK 1404.77, STX 697.97 (247wallst sidebar matches to the cent); SNPS FN BE STRL on dated fool '
+ 'closes + headline corroboration. || PREVIOUS ENTRY: Oct 29, 2026 - GOOGL TEST APPROVED (Salee): 19 Nov $18,524 '
+ 'tranche moved to a 10 Dec DECIDE - buy only if no further share sale AND a credible path back to positive free cash '
+ 'flow; fail = budget cut to cost spent, no sale. || PREVIOUS ENTRY: Oct 29, 2026 04:45 Bangkok - RESULTS SCORED: MSFT '
+ 'PASS (BUY 9 sh tonight, limit 531.01, cap 536.32); STRL FAIL (signed backlog 4.14bn < 4.33bn; budget back to pool; '
+ 'half 2 cancelled); GEV thesis intact (Power orders +178%, Electrification -9% on a tough comparison); VRT partial '
  'disclosure; GOOGL Q3 cloud doubled but FCF -9.1bn + June 84.75bn equity raise - 19 Nov tranche pending Salee. Fed '
  'held 3.75-4.00% (10-2, Cook and Hammack for a hike). SGOV 4 Nov sale no longer needed. || PREVIOUS ENTRY: Oct 28, '
  '2026 - SGOV SLICE 1 BOOKED: SELL 100 at 100.6901 = 10,047.46 net (POEMS 1187938, 22:29 Bangkok). Cash 29,714.36; '
@@ -2133,7 +2135,7 @@ POS = {'AAPL': {'budget': 11437.61, 'cost': 11437.61, 'shares': 46},
  'AVGO': {'budget': 50000, 'cost': 30125.18, 'shares': 88.5},
  'BE': {'budget': None, 'cost': None, 'shares': None},
  'BWXT': {'budget': None, 'cost': None, 'shares': None},
- 'CAT': {'budget': 15000, 'cost': 4888.55, 'shares': 6},
+ 'CAT': {'budget': 15000, 'cost': 9332.99, 'shares': 13},
  'CDNS': {'budget': 3918.01, 'cost': 3918.01, 'shares': 12},
  'CEG': {'budget': 17000, 'cost': 16888.73, 'shares': 64},
  'CGNX': {'budget': 4067.62, 'cost': 4067.62, 'shares': 62},
@@ -4479,56 +4481,69 @@ TRADES = [{'action': 'BUY',
   'realised': -27.25,
   'shares': 100,
   't': 'SGOV'},
- {'date': 'Oct 29, 2026',
-  'action': 'BUY',
-  't': 'MSFT',
-  'shares': 9,
-  'price': 525.4031,
+ {'action': 'BUY',
   'amount': 4738.75,
+  'date': 'Oct 29, 2026',
   'est': True,
   'note': 'MSFT final rung - Q1 FY27 test PASSED (Azure +48%, quarter capex $45.2bn under its own ~$50bn guide, capex '
           'plan maintained). Day LIMIT 531.01 (28 Oct close) placed with the stock at ~$525 after the post-results pop '
           'faded in a tech sell-off; Done 22:15:19 Bangkok at 525.4031. Gross 4,728.63 + est. commission 10.12 = '
-          '4,738.75. Position 126 sh, cost 57,617.71 of 58,000 (room 382.29) - budget effectively full.'}]
+          '4,738.75. Position 126 sh, cost 57,617.71 of 58,000 (room 382.29) - budget effectively full.',
+  'price': 525.4031,
+  'shares': 9,
+  't': 'MSFT'},
+ {'action': 'BUY',
+  'amount': 4444.44,
+  'date': 'Oct 30, 2026',
+  'est': True,
+  'note': 'CATERPILLAR RUNG 2 OF 3 - Q3 test PASSED 29 Oct (Power Generation sales $3.42bn, +30%). Stock fell 9.5% on '
+          '29 Oct (outlook not raised) and a further ~2% on 30 Oct; Day LIMIT lowered to 636.00 with the price at '
+          '633.81 (reference close 647.39, cap 653.86). Done 21:35 Bangkok at 633.5642. Gross 4,434.95 + est. '
+          'commission 9.49 (0.214%) = 4,444.44. Position 13 sh, cost 9,332.99 of 15,000; rung 3 ($5,000) on 11 Nov.',
+  'price': 633.5642,
+  'shares': 7,
+  't': 'CAT'}]
 
 SELLPLAN = []
 
-CASH = {'amount': 24975.3,
- 'asof': 'Oct 29, 2026 22:16 Bangkok - POEMS Cash Balance (Live) 29,714.05 after the SGOV sale (10,047.25), before the '
-         'MSFT buy; less MSFT 9 sh at 525.4031 = 4,738.75 (est. commission) = 24,975.30. Board now matches POEMS to '
-         'the cent (the +0.10 carried since 19 Oct is removed). || PREVIOUS: Oct 28, 2026 - after SGOV sale 100 sh at '
-         '100.6901 = 10,047.46 net of est. commission: 19,666.90 + 10,047.46 = 29,714.36 (proceeds settle 29 Oct). '
-         'POEMS Live Cash Balance read 22:30 Bangkok BEFORE the sale: 19,666.80 (board 19,666.90 - 10 cents, carried '
-         'from 26 Oct). SGOV 694 sh parked. || PREVIOUS: Oct 26, 2026 - after CRDO buy 34 sh at 148.76 = 5,068.66 '
-         'incl. est. commission: 24,735.56 - 5,068.66 = 19,666.90. POEMS Live Cash Balance read 21:15 Bangkok before '
-         "the order: 24,735.46 (10 cents below the board's 24,735.56 - to itemise at the next statement). SGOV 794 sh "
-         'parked. || PREVIOUS: Oct 22, 2026 - after META buy 18 sh at 658.5807 = 11,879.82 incl. est. commission: '
-         "36,615.38 - 11,879.82 = 24,735.56. SGOV 794 sh parked. || PREVIOUS: Oct 19, 2026 - after tonight's two "
-         'fills: CRWD sale +4,573.49 (est. fees) and NVDA buy -6,921.92 (est. commission): 38,963.81 + 4,573.49 - '
-         '6,921.92 = 36,615.38. CRWD proceeds settle T+1. SGOV 794 sh still parked. To be read against the POEMS Live '
-         'Cash Balance. || PREVIOUS: Oct 16, 2026 - POEMS Live Cash Balance 06:45 am Bangkok: USD 55,058.84, shown '
-         'BEFORE settlement of the 15 Oct buys. Board cash = 55,058.84 less TSM 9,621.29 and ASML 6,473.74 = 38,963.81 '
-         'after settlement. Versus the derived 55,050.83, POEMS is +8.01 higher with no trades in between - a small '
-         'credit (interest or dividend) to itemise from the October statement with the earlier +146.84 and +96.46. '
-         'Positions reconciled the same morning: 37 stock lines + SGOV, cost 777,052.88, match POEMS to the cent, and '
-         'the POEMS cost on TSM (64,477.71) and ASML (22,867.80) confirms the two commission estimates exactly. || '
-         "PREVIOUS: Oct 15, 2026 - after tonight's two fills (TSM 23 sh 9,621.29, ASML 4 sh 6,473.74, both incl. "
-         'estimated commission) totalling 16,095.03: 55,050.83 - 16,095.03 = 38,955.80. SGOV 79,991.56 still parked, '
-         'so total liquid = 118,947.36. To be read against the POEMS Live Cash Balance after T+1 settlement. || '
-         'PREVIOUS: Oct 13, 2026 - SGOV PARK FILLED: 794 sh at 100.5299 (POEMS, Done 11:04:13 pm Bangkok) = gross '
-         '79,820.74 + est. commission 170.82 = 79,991.56. Free cash 135,042.39 - 79,991.56 = 55,050.83. SGOV held as a '
-         'cash-equivalent (see parked), so total liquid = 135,042.39. To be read against the POEMS Live Cash Balance '
-         'after T+1 settlement. || PREVIOUS: Oct 13, 2026 - after the 12 Oct fills (APH, CRDO, V) totalling 12,973.99 '
-         'incl. estimated commission: 148,016.38 - 12,973.99 = 135,042.39. To be read against the POEMS Live Cash '
-         'Balance after settlement. || PREVIOUS: Oct 10, 2026 - POEMS Live Cash Balance 07:53 am Bangkok: USD '
-         '170,344.36, shown BEFORE settlement of the 9 Oct buys. Board cash = 170,344.36 less MRVL 12,712.45 and AMAT '
-         '9,615.53 = 148,016.38 after settlement. Versus the 6 Oct balance of 170,247.90, POEMS is +96.46 higher with '
-         'no trades in between - a further early-October credit (most likely dividends), to itemise from the October '
-         'statement together with the earlier +146.84. Positions reconciled the same morning: 37 lines, cost '
-         '667,992.30, match POEMS to the cent. || PREVIOUS: Oct 6, 2026 - POEMS Live Cash Balance 170,247.90. '
-         'RECONCILED 7 Oct: POEMS statement cash at 30 Sep = 168,539.69; less MU buy 1 Oct 14,703.40, plus ORCL '
-         '10,851.50 and CRWD 5,413.27 sale proceeds = 170,101.06; the remaining +146.84 is early-October credits (most '
-         'likely dividends) to itemise from the October statement. (The earlier +172.61 figure came from a '
+CASH = {'amount': 20530.86,
+ 'asof': 'Oct 30, 2026 21:35 Bangkok - after CAT buy 7 sh at 633.5642 = 4,444.44 (est. commission): 24,975.30 - '
+         "4,444.44 = 20,530.86. To be read against the POEMS Live Cash Balance (the app's SGD buying power is not "
+         'comparable). || PREVIOUS: Oct 29, 2026 22:16 Bangkok - POEMS Cash Balance (Live) 29,714.05 after the SGOV '
+         'sale (10,047.25), before the MSFT buy; less MSFT 9 sh at 525.4031 = 4,738.75 (est. commission) = 24,975.30. '
+         'Board now matches POEMS to the cent (the +0.10 carried since 19 Oct is removed). || PREVIOUS: Oct 28, 2026 - '
+         'after SGOV sale 100 sh at 100.6901 = 10,047.46 net of est. commission: 19,666.90 + 10,047.46 = 29,714.36 '
+         '(proceeds settle 29 Oct). POEMS Live Cash Balance read 22:30 Bangkok BEFORE the sale: 19,666.80 (board '
+         '19,666.90 - 10 cents, carried from 26 Oct). SGOV 694 sh parked. || PREVIOUS: Oct 26, 2026 - after CRDO buy '
+         '34 sh at 148.76 = 5,068.66 incl. est. commission: 24,735.56 - 5,068.66 = 19,666.90. POEMS Live Cash Balance '
+         "read 21:15 Bangkok before the order: 24,735.46 (10 cents below the board's 24,735.56 - to itemise at the "
+         'next statement). SGOV 794 sh parked. || PREVIOUS: Oct 22, 2026 - after META buy 18 sh at 658.5807 = '
+         '11,879.82 incl. est. commission: 36,615.38 - 11,879.82 = 24,735.56. SGOV 794 sh parked. || PREVIOUS: Oct 19, '
+         "2026 - after tonight's two fills: CRWD sale +4,573.49 (est. fees) and NVDA buy -6,921.92 (est. commission): "
+         '38,963.81 + 4,573.49 - 6,921.92 = 36,615.38. CRWD proceeds settle T+1. SGOV 794 sh still parked. To be read '
+         'against the POEMS Live Cash Balance. || PREVIOUS: Oct 16, 2026 - POEMS Live Cash Balance 06:45 am Bangkok: '
+         'USD 55,058.84, shown BEFORE settlement of the 15 Oct buys. Board cash = 55,058.84 less TSM 9,621.29 and ASML '
+         '6,473.74 = 38,963.81 after settlement. Versus the derived 55,050.83, POEMS is +8.01 higher with no trades in '
+         'between - a small credit (interest or dividend) to itemise from the October statement with the earlier '
+         '+146.84 and +96.46. Positions reconciled the same morning: 37 stock lines + SGOV, cost 777,052.88, match '
+         'POEMS to the cent, and the POEMS cost on TSM (64,477.71) and ASML (22,867.80) confirms the two commission '
+         "estimates exactly. || PREVIOUS: Oct 15, 2026 - after tonight's two fills (TSM 23 sh 9,621.29, ASML 4 sh "
+         '6,473.74, both incl. estimated commission) totalling 16,095.03: 55,050.83 - 16,095.03 = 38,955.80. SGOV '
+         '79,991.56 still parked, so total liquid = 118,947.36. To be read against the POEMS Live Cash Balance after '
+         'T+1 settlement. || PREVIOUS: Oct 13, 2026 - SGOV PARK FILLED: 794 sh at 100.5299 (POEMS, Done 11:04:13 pm '
+         'Bangkok) = gross 79,820.74 + est. commission 170.82 = 79,991.56. Free cash 135,042.39 - 79,991.56 = '
+         '55,050.83. SGOV held as a cash-equivalent (see parked), so total liquid = 135,042.39. To be read against the '
+         'POEMS Live Cash Balance after T+1 settlement. || PREVIOUS: Oct 13, 2026 - after the 12 Oct fills (APH, CRDO, '
+         'V) totalling 12,973.99 incl. estimated commission: 148,016.38 - 12,973.99 = 135,042.39. To be read against '
+         'the POEMS Live Cash Balance after settlement. || PREVIOUS: Oct 10, 2026 - POEMS Live Cash Balance 07:53 am '
+         'Bangkok: USD 170,344.36, shown BEFORE settlement of the 9 Oct buys. Board cash = 170,344.36 less MRVL '
+         '12,712.45 and AMAT 9,615.53 = 148,016.38 after settlement. Versus the 6 Oct balance of 170,247.90, POEMS is '
+         '+96.46 higher with no trades in between - a further early-October credit (most likely dividends), to itemise '
+         'from the October statement together with the earlier +146.84. Positions reconciled the same morning: 37 '
+         'lines, cost 667,992.30, match POEMS to the cent. || PREVIOUS: Oct 6, 2026 - POEMS Live Cash Balance '
+         '170,247.90. RECONCILED 7 Oct: POEMS statement cash at 30 Sep = 168,539.69; less MU buy 1 Oct 14,703.40, plus '
+         'ORCL 10,851.50 and CRWD 5,413.27 sale proceeds = 170,101.06; the remaining +146.84 is early-October credits '
+         '(most likely dividends) to itemise from the October statement. (The earlier +172.61 figure came from a '
          'board-derived cash that was 25.77 too low.) || PREVIOUS: Oct 6, 2026 - read off the POEMS Live Cash Balance '
          'screen (09:23 am, before settlement of the 5 Oct sales): USD 170,247.90. Derived from the board: 153,810.52 '
          '+ 10,851.50 (ORCL) + 5,413.27 (CRWD) = 170,075.29; POEMS is +172.61 higher - most likely dividends/interest '
@@ -4602,8 +4617,8 @@ TOTALS = {'dividendsNote': 'Cash dividends after US withholding tax, Mar-Oct 202
  'dividendsUSD': 1112.66,
  'fx': 33.65,
  'inceptionDate': 'Jul 15, 2025',
- 'investedEverTHB': 26122048,
- 'investedEverUSD': 817801.43,
+ 'investedEverTHB': 26271603,
+ 'investedEverUSD': 822245.87,
  'realizedTHB': 198379,
  'realizedUSD': 5895.37,
  'reconNote': '30 Oct 2026 POEMS reconciliation (positions screen 10:56 SGT, after the 29 Oct close): all 36 stock '
@@ -5281,28 +5296,30 @@ MONTHLY = [{'buyLots': 4,
   'sellLots': 17,
   'sellUSD': 43902.03,
   'ym': '2026-09'},
- {'buyLots': 12,
-  'buyUSD': 94709.55,
-  'byGroup': [{'g': 3, 'buy': 14703.4, 'sell': 0.0, 'real': 0.0},
-              {'g': 1, 'buy': 19634.37, 'sell': 0.0, 'real': 0.0},
-              {'g': 2, 'buy': 25710.56, 'sell': 0.0, 'real': 0.0},
-              {'g': 4, 'buy': 16087.59, 'sell': 0.0, 'real': 0.0},
-              {'g': 8, 'buy': 1955.06, 'sell': 0.0, 'real': 0.0},
-              {'g': 0, 'buy': 16618.57, 'sell': 0.0, 'real': 0.0},
-              {'g': 5, 'buy': 0.0, 'sell': 20838.16, 'real': 4695.61}],
-  'byStock': [{'t': 'MU', 'buy': 14703.4, 'sell': 0.0, 'real': 0.0},
-              {'t': 'MRVL', 'buy': 12712.45, 'sell': 0.0, 'real': 0.0},
-              {'t': 'AMAT', 'buy': 9615.53, 'sell': 0.0, 'real': 0.0},
-              {'t': 'APH', 'buy': 6335.33, 'sell': 0.0, 'real': 0.0},
-              {'t': 'CRDO', 'buy': 9752.26, 'sell': 0.0, 'real': 0.0},
-              {'t': 'V', 'buy': 1955.06, 'sell': 0.0, 'real': 0.0},
-              {'t': 'TSM', 'buy': 9621.29, 'sell': 0.0, 'real': 0.0},
-              {'t': 'ASML', 'buy': 6473.74, 'sell': 0.0, 'real': 0.0},
-              {'t': 'NVDA', 'buy': 6921.92, 'sell': 0.0, 'real': 0.0},
-              {'t': 'META', 'buy': 11879.82, 'sell': 0.0, 'real': 0.0},
-              {'t': 'MSFT', 'buy': 4738.75, 'sell': 0.0, 'real': 0.0},
-              {'t': 'ORCL', 'buy': 0.0, 'sell': 10851.5, 'real': -1376.93},
-              {'t': 'CRWD', 'buy': 0.0, 'sell': 9986.66, 'real': 6072.54}],
+ {'buyLots': 13,
+  'buyUSD': 99153.99,
+  'byGroup': [{'buy': 14703.4, 'g': 3, 'real': 0.0, 'sell': 0.0},
+              {'buy': 19634.37, 'g': 1, 'real': 0.0, 'sell': 0.0},
+              {'buy': 25710.56, 'g': 2, 'real': 0.0, 'sell': 0.0},
+              {'buy': 16087.59, 'g': 4, 'real': 0.0, 'sell': 0.0},
+              {'buy': 1955.06, 'g': 8, 'real': 0.0, 'sell': 0.0},
+              {'buy': 16618.57, 'g': 0, 'real': 0.0, 'sell': 0.0},
+              {'buy': 0.0, 'g': 5, 'real': 4695.61, 'sell': 20838.16},
+              {'buy': 4444.44, 'g': 6, 'real': 0.0, 'sell': 0.0}],
+  'byStock': [{'buy': 14703.4, 'real': 0.0, 'sell': 0.0, 't': 'MU'},
+              {'buy': 12712.45, 'real': 0.0, 'sell': 0.0, 't': 'MRVL'},
+              {'buy': 9615.53, 'real': 0.0, 'sell': 0.0, 't': 'AMAT'},
+              {'buy': 6335.33, 'real': 0.0, 'sell': 0.0, 't': 'APH'},
+              {'buy': 9752.26, 'real': 0.0, 'sell': 0.0, 't': 'CRDO'},
+              {'buy': 1955.06, 'real': 0.0, 'sell': 0.0, 't': 'V'},
+              {'buy': 9621.29, 'real': 0.0, 'sell': 0.0, 't': 'TSM'},
+              {'buy': 6473.74, 'real': 0.0, 'sell': 0.0, 't': 'ASML'},
+              {'buy': 6921.92, 'real': 0.0, 'sell': 0.0, 't': 'NVDA'},
+              {'buy': 11879.82, 'real': 0.0, 'sell': 0.0, 't': 'META'},
+              {'buy': 4738.75, 'real': 0.0, 'sell': 0.0, 't': 'MSFT'},
+              {'buy': 0.0, 'real': -1376.93, 'sell': 10851.5, 't': 'ORCL'},
+              {'buy': 0.0, 'real': 6072.54, 'sell': 9986.66, 't': 'CRWD'},
+              {'buy': 4444.44, 'real': 0.0, 'sell': 0.0, 't': 'CAT'}],
   'realizedTHB': 158007,
   'realizedUSD': 4695.61,
   'sellLots': 3,
@@ -6800,7 +6817,7 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                  '- do not pay up into it'},
            {'a': 'BUY',
             'amt': 5000,
-            'c': 'open',
+            'c': 'done',
             'cond': 'DATE CORRECTED 27 Sep 2026: the original 14 Oct date sat BEFORE Caterpillar reports Q3 (scheduled '
                     'on or about 28 Oct), so the condition attached to this rung could not be tested. Now placed two '
                     'days after the report. THE TEST: hold this rung if Q3 shows the power-generation / energy & '
@@ -6809,15 +6826,17 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'd': '2026-10-30',
             'k': 'buy',
             't': 'CAT',
-            'w': 'ORDER Fri 30 Oct (after 21:00 Bangkok): BUY 7 sh Day LIMIT 647.39 (29 Oct close per the POEMS mark; '
-                 "the job's 647.22 superseded 11:10); may raise once to the cap 653.86. Cost 4,541.43 at the limit / "
-                 '4,586.81 at the cap incl. 0.214% commission. | TEST PASSED 29 Oct (Q3 results, before the US open): '
-                 'Power Generation sales $3.42bn, +30%, on turbines and large engines for data centres; record '
-                 'backlog; adj. EPS $7.20 vs $7.04. Revenue $20.68bn in line; outlook NOT raised (mid- to high-teens '
-                 'growth kept); $128m tariff refund flattered profit. Stock about -9% pre-market (~$648) on the '
-                 'un-raised outlook. ORDER Fri 30 Oct Bangkok: Day LIMIT at the 29 Oct close, cap +1%, about $5,000 - '
-                 'the fall makes this rung cheaper, not riskier; the power-generation test is what counts. | '
-                 'CATERPILLAR rung 2 of 3 (5,000 of 15,000). MOVED from 14 Oct to 30 Oct on 27 Sep.'},
+            'w': 'DONE 30 Oct 21:35 Bangkok: BOUGHT 7 sh at 633.5642 = 4,444.44 (limit lowered to 636.00 with the '
+                 'stock at 633.81, below the 647.39 reference). Position 13 sh, cost 9,332.99. | ORDER Fri 30 Oct '
+                 "(after 21:00 Bangkok): BUY 7 sh Day LIMIT 647.39 (29 Oct close per the POEMS mark; the job's 647.22 "
+                 'superseded 11:10); may raise once to the cap 653.86. Cost 4,541.43 at the limit / 4,586.81 at the '
+                 'cap incl. 0.214% commission. | TEST PASSED 29 Oct (Q3 results, before the US open): Power Generation '
+                 'sales $3.42bn, +30%, on turbines and large engines for data centres; record backlog; adj. EPS $7.20 '
+                 'vs $7.04. Revenue $20.68bn in line; outlook NOT raised (mid- to high-teens growth kept); $128m '
+                 'tariff refund flattered profit. Stock about -9% pre-market (~$648) on the un-raised outlook. ORDER '
+                 'Fri 30 Oct Bangkok: Day LIMIT at the 29 Oct close, cap +1%, about $5,000 - the fall makes this rung '
+                 'cheaper, not riskier; the power-generation test is what counts. | CATERPILLAR rung 2 of 3 (5,000 of '
+                 '15,000). MOVED from 14 Oct to 30 Oct on 27 Sep.'},
            {'a': 'BUY',
             'amt': 11879.82,
             'c': 'done',
@@ -13028,8 +13047,8 @@ BUYPLAN = {'from': '2026-10-26',
            'amt': None,
            'bkk': 'Fri 30 Oct',
            'cap': None,
-           'cond': 'PASSED 29 Oct: Power Generation +30%. Stock -9% on an un-raised outlook - a cheaper rung, same '
-                   'test.',
+           'cond': 'DONE 30 Oct: 7 sh at 633.5642 = 4,444.44. | PASSED 29 Oct: Power Generation +30%. Stock -9% on an '
+                   'un-raised outlook - a cheaper rung, same test.',
            'd': '2026-10-30',
            'lim': None,
            't': 'CAT',
