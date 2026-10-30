@@ -1,24 +1,14 @@
 # P4 price refresh — status
 
-- **Run time:** 2026-10-30 00:33–01:55 UTC (scheduled 00:30 pass)
-- **Trading date recorded:** 2026-10-29 — **all 63 tickers** (first full-board close in one pass since the cache freeze began)
-- **Result:** PUSHED
-- **Commit:** 1aaf719 (on top of 914bdb5; fast-forward, no force; remote main confirmed at 1aaf719)
-- **Prices changed:** 63 of 63, plus SPY/QQQ benchmarks
-- **Big earnings-reaction day.** Sanity gate tripped 6 names; each verified against a second independent source and pushed with `--allow GOOGL --allow FTNT --allow MRVL --allow CAT --allow LHX --allow AVAV` (exit 0):
-  - GOOGL 283.82 (−12.64%) — Q3 FCF/ATM reaction; fool.com prev-close field 283.82 exact + marketbeat −12.6% alert + broad news coverage
-  - FTNT 139.10 (−20.09%) — service-revenue forecast cut; 247wallst sidebar 139.10 −20.09% EXACT
-  - MRVL 218.34 (−13.24%) — Lumentum acquisition-talks reaction; fool.com widget −13.24% exact; yahoo "Marvell Sinks 13%"
-  - CAT 647.22 (−9.27% vs board; −9.49% d/d per table) — moderate sales outlook; 247wallst sidebar 647.39 −9.25% (17¢ apart; took the dated marketbeat table close)
-  - LHX 279.12 (+7.60% vs board 10-27 close; +7.10% d/d) — Q3 beat + raised FY guide; investing.com gainers table 278.65 +6.92%
-  - AVAV 134.88 (+6.43% vs board 10-27 close; +7.09% d/d) — gurufocus "+7.1%" corroboration
-- **Benchmarks / series:** BENCH spyLast 769.36 / spyLastD 2026-10-29 (SPY −0.38%; index −0.30% per yahoo close bar — consistent); qqqLast 715.34 / 2026-10-29 (−1.42%; Nasdaq −1.38%). spyHigh unchanged at 779.09 (10-06). SPY is 1.25% below spyHigh — crash-reserve trigger (−15%) nowhere near. risk_series: spy 10-29 = 769.36 added; **ust10 10-29 SKIPPED** — ycharts H15 table only runs through 10-27 (4.99) and the mortgagenewsdaily page never surfaced in search; yahoo's markets-closed bar printed 10-Yr 4.9890 (−0.056) for the next run to confirm.
+- **Run time:** 2026-10-30 03:33–03:40 UTC (scheduled 03:30 pass)
+- **Trading date recorded:** 2026-10-29 — already complete before this pass started
+- **Result:** NOT PUSHED by this pass — **NO-OP by design.** First check met: all 63 of 63 tickers already had pxd = 2026-10-29 (the most recent completed US trading day), so the 00:30 pass succeeded and this pass stopped per the job rules. No prices, benchmarks, HISTORY or risk_series rows were touched.
+- **Commit:** none from this pass. Board state verified on remote main at 2111089 (30 Oct POEMS reconciliation, interactive session 11:10 Bangkok — 36 lines + SGOV tie to the cent, MV 874,941.02; nine NYSE marks set from POEMS). The 00:30 refresh itself pushed as 1aaf719; its full report is in this file's git history (commit d4b3acb).
+- **Prices changed:** 0 (00:30 pass changed 63 of 63 plus SPY/QQQ).
 - **Unresolved tickers:** none.
-- **Derived fields:** mcapB scaled with price; pe/ps recomputed; fpe/peg/M3-pfcf scaled; hi52/lo52 extended where breached. HISTORY 10-29 row appended: n=36, mv 804,909.40, cost 723,713.41 (first row including the 29 Oct MSFT buy), unreal +81,196.0 (11.22%), net +87,091.36, cash 24,975.30. Portfolio gave back ~14.1k of mv vs the 10-28 row on the GOOGL/MRVL/CAT day.
-- **Sources this run (5th night of the freeze):** stockanalysis quote+history (GOOGL sample: frozen at Oct 27 11:21 AM EDT), Google Finance both URL forms (Oct 16 / Sep 24 caches), ycharts companies (Oct 27), marketscreener (Sep 17), benzinga (Jun 2025), marketchameleon (Oct 26), statmuse (undated latest price) — all unusable. **What worked: marketbeat.com daily-price tables and closing-price headers** ("Closing price 4:00 PM Eastern", pages updated 10/29). Staleness there is per-ticker AND per-URL-variant — a frozen /chart page often sits next to a fresh /price-history/, lowercase-ticker, or compound-path page of the same stock, so stale names were resolved by rotating URL forms. Every accepted price had its table prev-close or header-implied prev-close reconciled against the board's stored prior close (most to the cent). GEV came from the fool.com quote-page previous-close field (887.85; that field was validated to the cent against the official close on GOOGL 283.82 and MSFT 530.14 this run).
-- **Flags for the next run:**
-  - TSEM 187.92 accepted from a dated 10/29 marketbeat header whose implied 10/28 prev close (193.52) could not be cross-checked (board had only the 10-27 close 189.08); net move vs board just −0.61%. Also note marketbeat's own stale TSEM table printed a 10/22 close of 167.71 (−11.5%) that contradicts the board's verified 10-27 189.08 — marketbeat TSEM data looks flaky; re-verify from a second source when caches thaw.
-  - ARM 228.77 accepted from a dated 10/29 closing header (implied 10/28 prev 235.90 unverifiable; net vs board +0.96%). ARM showed a further −7.76% in extended trading (earnings?) — tomorrow's session will be a 6% trip.
-  - AMZN closed 243.79 (−4.25%) but traded −7.35% after hours (earnings reaction); INTC −17% AH per yahoo. Friday's refresh will see large gaps.
-  - Board's stored 10-28 closes differ by a few cents from marketbeat's tables on several names (TSM 439.51 vs 439.35; ANET 186.72 vs 186.84; APH 80.96 vs 81.10; LHX 259.40 vs 259.05 for 10-27) — the fool-sourced values from the prior run and marketbeat's feed disagree at the cent level; not corrected, only noted.
-- **Blockers:** Live page https://sakulratpradit.github.io/p4-trrsg5/ could not be fetched (WebFetch provenance permission cannot be answered in an unattended run; raw fetch is firewalled). Render verified locally instead: `node src/check_dashboard.js` on the pushed index.html printed ZERO PAGE ERRORS, 878 table rows. stockanalysis bare quote/history pages were fetchable this run but frozen pre-close, so the primary-source rule fell through to the second-source list throughout.
+- **Blockers:** none this pass.
+- **Flags carried forward for the next run (from the 00:30 report, still open):**
+  - risk_series **ust10 2026-10-29 still missing** (ycharts H15 ran only through 10-27; yahoo close bar printed 4.9890 for reference — confirm from a named source).
+  - TSEM 187.92 (10/29) accepted from a marketbeat header whose implied 10/28 prev close (193.52) was never cross-checked; marketbeat TSEM data looks flaky — re-verify when caches thaw.
+  - ARM 228.77 accepted with unverifiable prev close; ARM traded −7.76% AH on 10/29 — Friday's session will trip the 6% gate.
+  - AMZN −7.35% AH and INTC −17% AH on 10/29 earnings reactions — expect several 6% trips in the Fri 10-31 (for the 10-30 close) runs.
