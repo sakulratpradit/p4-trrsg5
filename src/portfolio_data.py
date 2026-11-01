@@ -3,94 +3,98 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ("Nov 1, 2026 - Earnings rows added for this week's holdings: PLTR Mon 2 Nov, AMD and ANET Tue 3 Nov (all after the "
- 'close, company-confirmed); AAPL 2 Nov now confirmed by Apple IR. All WATCH - no order on the prints; buy routes stay '
- 'the standing lines (PLTR $150, AMD $470). || PREVIOUS ENTRY: Nov 1, 2026 - META 10 Dec row: S&P outlook cut to '
- 'negative (AA- affirmed, 30 Oct; FOCF -$71bn forecast for 2027, leverage 1.1x vs 1.0x threshold) recorded. No price, '
- 'budget or order changed. || PREVIOUS ENTRY: Oct 31, 2026 09:50 Bangkok - ALL 63 PRICES AT THE FRI 30 OCT CLOSE (the '
- '00:30 UTC price job did not run - scheduled jobs on claude-fable-5 are failing on the usage limit). 36 HOLDINGS from '
- "Salee's POEMS positions screen 09:36 SGT: all 36 lines + SGOV match quantity and cost to the cent incl. the 30 Oct "
- 'CAT fill (cost 798,074.91; MV 843,570.71; CAT commission estimate 9.49 confirmed). 27 WATCH NAMES from marketbeat '
- "10/30 4:00 PM closing headers / fool.com 'last close 2026-10-30' / massive.com / financialcontent, each "
- 'cross-checked against the prior close or a second source. SPY 755.72 (-1.77%), QQQ 690.49 (-3.47%). Semiconductor '
- 'sell-off day (Intel -29% on a weak Q4 guide; SOX about -7 to -9%): 6%+ moves verified - holdings AMD -10.9%, MRVL '
- '-10.0%, ALAB -10.9%, CRDO -8.7%, LITE -8.6%, ANET -8.3%, AMAT -7.5%, TER -7.4%, RKLB -7.4%, ASML -6.6%, AVAV -6.5%, '
- 'PLTR -6.3%, LRCX -6.0%, ETN -6.0%; watch SNDK -13.5%, DDOG -11.5%, TSEM -11.4%, COHR -11.2%, APP -10.4%, ARM -10.0%, '
- 'NET -9.5%, BE -8.6%, STX -8.0%, CIEN -8.0%, STRL -7.4%, HOOD -7.2%, SPCX -6.4%, ORCL -6.3%, FN -6.3%. Ratios '
- 'rescaled with price. HISTORY 10-30 row added (stocks MV 773,664.08, unrealised +45,506.23 / +6.25%). Note: 8 NYSE '
- 'watch closes of 29 Oct (COHR FN LHX ORCL NET PWR GE CIEN) were 3:59 PM prints, cents off the official close - '
- "superseded by today's verified closes. AMZN/CAT/LHX Q3 fundamentals still pending (earnings job failed). || PREVIOUS "
- 'ENTRY: Oct 30, 2026 21:45 Bangkok - CAT BOOKED: 7 sh at 633.5642 = 4,444.44 (rung 2 of 3; Power Generation test '
- 'passed). Position 13 sh, cost 9,332.99; cash 20,530.86. October MONTHLY and investedEver updated with the fill. || '
- 'PREVIOUS ENTRY: Oct 30, 2026 11:10 Bangkok - POEMS POSITIONS RECONCILED (screen 10:56 SGT, after the 29 Oct close): '
- '36 lines + SGOV match to the cent; market value 874,941.02 ties. Nine NYSE marks set from POEMS (APH 82.08, ANET '
- '184.22, CAT 647.39, ETN 393.72, TSM 431.81, VRT 245.92, V 410.54, VST 140.95; SGOV 100.71) - all within 0.2% of the '
- "job's closes; ratios rescaled. No fill tonight yet: CAT 7 sh LIMIT 647.39 (cap 653.86) is the only order. || "
- 'PREVIOUS ENTRY: Oct 30, 2026 08:40 Bangkok - AMZN Q3 read recorded (AWS +39%, backlog $578bn, TTM FCF -$42.4bn, no '
- 'order - over budget); CAT order set: 7 sh Day LIMIT 647.22, cap 653.69. || PREVIOUS ENTRY: Oct 30, 2026 (00:30 UTC '
- 'job) - DAILY PRICE REFRESH: all 63 prices set to the Thu 2026-10-29 close. Primary source this run: marketbeat.com '
- "dated daily-price tables / closing-price headers (pages updated 10/29, 'Closing price 4:00 PM Eastern' stamps), "
- "every ticker's prior close cross-checked against the stored board value; stockanalysis.com and Google Finance caches "
- 'still frozen pre-close (5th night); GEV from the fool.com quote page previous-close field (887.85; method validated '
- 'to the cent on GOOGL and MSFT this run). Big earnings-reaction day: 6%-movers verified + allowed: GOOGL 283.82 '
- '-12.64% (Q3 miss/FCF, fool prev-close field exact + news), FTNT 139.10 -20.09% (service-revenue forecast cut; '
- '247wallst sidebar exact), MRVL 218.34 -13.24% (Lumentum deal talks; fool widget -13.24% exact), CAT 647.22 -9.49% '
- '(sales outlook; 247wallst sidebar 647.39), LHX 279.12 +7.10% (Q3 beat + raised FY guide; investing.com 278.65 '
- '+6.92%), AVAV 134.88 +7.09% (gurufocus +7.1%). SPY 769.36 and QQQ 715.34 (10-29, marketbeat closing headers; prev '
- 'closes match board); spyHigh unchanged 779.09. risk_series spy 10-29 added; ust10 10-29 skipped (ycharts H15 only '
- 'through 10-27; yahoo close bar printed 4.99 for reference). HISTORY 10-29 row added (first row including the 29 Oct '
- 'MSFT buy, 126 sh). Note: TSEM 187.92 written from a dated 10/29 marketbeat header whose implied 10/28 prev close '
- '(193.52) could not be cross-checked - flagged for the next run. Every number from a tool call this session. || '
- 'PREVIOUS ENTRY: Oct 29, 2026 23:00 Bangkok - GOOGL 10 Dec test (1) CLARIFIED: Q3 ATM share sales of $12.4bn were '
- 'draws under the $40bn ATM announced in the June $84.75bn raise, so they do not fail the test; a new or upsized '
- 'programme would. No order, budget or price changed. || PREVIOUS ENTRY: Oct 29, 2026 22:30 Bangkok - MSFT BOOKED 9 sh '
- 'at 525.4031 = 4,738.75; cash 24,975.30. FULL POEMS RECONCILIATION: 36 lines + SGOV match to the cent; cash corrected '
- 'by 0.10 (CRWD 19 Oct fee true-up); SGOV sale trued up to 10,047.25 (realised -27.25); October MONTHLY rebuilt (6 '
- 'buys + 1 sale had been missing); October dividends 251.31 itemised. Prices: 54 names at the 28 Oct close, 9 at 27 '
- 'Oct - the 29 Oct close is written by the next morning run. || PREVIOUS ENTRY: Oct 29, 2026 (03:30 UTC job) - DAILY '
- 'PRICE REFRESH, 2nd pass: 11 more of the 15 stragglers resolved. Wed 2026-10-28 close written for ETN 392.88, GEV '
- '878.03, PWR 606.89, COHR 239.59, SPCX 145.23, CIEN 363.21 (54 of 63 now at 10-28); verified Tue 10-27 close written '
- 'for ARM 226.60, GE 297.66, MPWR 1211.89, LHX 259.40, TSEM 189.08 (marketbeat prev-close fields / heygotrade dated '
- 'closes; every prev-close cross-checked against the stored prior close to the cent). Sources: 247wallst Oct-28 '
- 'article sidebars validated to the cent on MSFT/ORCL/NVDA/MU/GOOGL/VRT; heygotrade dated close pages; '
- 'stockanalysis/Google Finance/tipranks/marketscreener caches still frozen pre-close (4th night). 6%-movers vs last '
- 'build, verified + allowed: PWR +7.6% (sidebar + 247wallst company page, prev 578.8x both), COHR +8.2% (sidebar; prev '
- '235.79 = heygotrade 10-27 close exact), CIEN +8.1% (heygotrade 10-28 close 363.21 +3.43%; gurufocus +3.4% same '
- 'evening). Unresolved, left at their verified 10-27 close: CDNS 343.08, CRDO 167.43, AVAV 126.73, CEG 258.98 '
- '(heygotrade 10-27 closes match the board to the cent; no readable 10-28 close). SPY 772.31 10-28 (marketchameleon '
- 'dated close; SSGA official 10-27 769.66 added to risk_series with ycharts ust10 4.99 10-27; ust10 10-28 skipped - '
- 'named sources not yet updated, fool.com wrap printed 5.02 at close for reference). HISTORY 10-28 row mv updated in '
- 'place for the new ETN/GEV closes. || PREVIOUS ENTRY: Oct 29, 2026 (00:30 UTC job) - DAILY PRICE REFRESH: 48 of 63 '
- 'set to the Wed 2026-10-28 close (fool.com dated quote pages; stockanalysis/Google Finance/ycharts caches frozen '
- 'pre-close for a third night). 15 unresolved stay at their prior close: holdings CDNS CRDO AVAV GEV ETN CEG (10-27), '
- 'watch ARM MPWR COHR SPCX LHX PWR GE TSEM CIEN (10-26). QQQ 725.61 (10-28); SPY, spyHigh and risk_series spy/ust10 '
- 'left unchanged - no clean close readable. HISTORY row 10-28 added. 6%-movers verified: ORCL 144.54 +10.73% d/d, VRT '
- '242.94 +16.49% d/d, MU 983.23, SNDK 1404.77, STX 697.97 (247wallst sidebar matches to the cent); SNPS FN BE STRL on '
- 'dated fool closes + headline corroboration. || PREVIOUS ENTRY: Oct 29, 2026 - GOOGL TEST APPROVED (Salee): 19 Nov '
- '$18,524 tranche moved to a 10 Dec DECIDE - buy only if no further share sale AND a credible path back to positive '
- 'free cash flow; fail = budget cut to cost spent, no sale. || PREVIOUS ENTRY: Oct 29, 2026 04:45 Bangkok - RESULTS '
- 'SCORED: MSFT PASS (BUY 9 sh tonight, limit 531.01, cap 536.32); STRL FAIL (signed backlog 4.14bn < 4.33bn; budget '
- 'back to pool; half 2 cancelled); GEV thesis intact (Power orders +178%, Electrification -9% on a tough comparison); '
- 'VRT partial disclosure; GOOGL Q3 cloud doubled but FCF -9.1bn + June 84.75bn equity raise - 19 Nov tranche pending '
- 'Salee. Fed held 3.75-4.00% (10-2, Cook and Hammack for a hike). SGOV 4 Nov sale no longer needed. || PREVIOUS ENTRY: '
- 'Oct 28, 2026 - SGOV SLICE 1 BOOKED: SELL 100 at 100.6901 = 10,047.46 net (POEMS 1187938, 22:29 Bangkok). Cash '
- '29,714.36; SGOV 694 sh parked (cost 69,917.06). || PREVIOUS ENTRY: Oct 28, 2026 13:16 Bangkok - PRICES OF THE 36 '
- 'HOLDINGS SET TO THE TUE 2026-10-27 CLOSE FROM SALEE\'S POEMS POSITIONS SCREEN (US market closed; POEMS "Current '
- 'Price" column; SGOV mark 100.68). Reason: every web source reachable from the sandbox served pre-close cached pages '
- 'for Oct 27 through both scheduled runs (00:30 and 03:30 UTC) and manual checks at 03:30-04:50 UTC, so 0 of 63 could '
- 'be written by the job. The 27 watch names (no position) stay at the 26 Oct close until the next successful run. '
- 'Moves of 6%+ vs 26 Oct: CDNS +6.5%, ALAB +10.5%, CRDO +10.8%, RKLB +8.3% - consistent with the reported 27 Oct '
- 'session (AMD +5.5%, AVGO +4%, MU +2.8%, chips rally). Positions and cost on the same screen reconcile to the board '
- 'to the cent on all 36 lines (641,827.76 NASD + 247,167.89 NYSE incl. SGOV = 888,995.64). pe/ps/fpe/peg/pfcf rescaled '
- 'with price per the 26 Oct rule. || PREVIOUS ENTRY: Oct 28, 2026 (runs 00:30 + 03:30 UTC) - DAILY PRICE REFRESH: BOTH '
- 'overnight passes could not resolve the Tue 2026-10-27 close for any ticker. 03:30 pass sampled 14 stockanalysis.com '
- 'quote/history pages: every capture predated the 4:00 PM close (freshest stamps 10:05-11:25 AM EDT Oct 27; some '
- 'caches as old as May 2025), and Google Finance (Sep 24/25 caches), marketscreener (Sep 4) and ycharts (Oct 26 18:04 '
- 'EDT) were equally stale. Per the leave-unchanged rule nothing was written: all 63 prices, mcaps, P/E block, SPY/QQQ '
- 'and pxd stay at the Mon 2026-10-26 close (CGNX still 2026-10-23); no HISTORY row; risk_series ust10/spy 10-27 '
- 'skipped (sources unreadable; ust10 2026-10-26 = 5.00 was already added by the 00:30 pass). Oct-26 baseline '
- 'cross-checked against 9 history tables - all matched. Every number checked came from a tool call this session; the '
- 'next scheduled pass retries.')
+ASOF = ("Nov 1, 2026 - SCHEDULE CLEANED at Salee's instruction: 103 live rows kept (Nov 2026 onward + standing rules; stale "
+ 'FN, LHX and 19 Nov GOOGL notes also removed), 139 history rows archived to src/schedule_archive_2026-11-01.json. '
+ 'BUY/SELL PLAN rolled to 1-15 Nov: firm V $2,093 (10 Nov) and CAT $5,000 (11 Nov); decide APP $9,000 (5 Nov) and VST '
+ '$3,433 (10 Nov); APP and VST results dates confirmed. || PREVIOUS ENTRY: Nov 1, 2026 - Earnings rows added for this '
+ "week's holdings: PLTR Mon 2 Nov, AMD and ANET Tue 3 Nov (all after the close, company-confirmed); AAPL 2 Nov now "
+ 'confirmed by Apple IR. All WATCH - no order on the prints; buy routes stay the standing lines (PLTR $150, AMD $470). '
+ '|| PREVIOUS ENTRY: Nov 1, 2026 - META 10 Dec row: S&P outlook cut to negative (AA- affirmed, 30 Oct; FOCF -$71bn '
+ 'forecast for 2027, leverage 1.1x vs 1.0x threshold) recorded. No price, budget or order changed. || PREVIOUS ENTRY: '
+ 'Oct 31, 2026 09:50 Bangkok - ALL 63 PRICES AT THE FRI 30 OCT CLOSE (the 00:30 UTC price job did not run - scheduled '
+ "jobs on claude-fable-5 are failing on the usage limit). 36 HOLDINGS from Salee's POEMS positions screen 09:36 SGT: "
+ 'all 36 lines + SGOV match quantity and cost to the cent incl. the 30 Oct CAT fill (cost 798,074.91; MV 843,570.71; '
+ 'CAT commission estimate 9.49 confirmed). 27 WATCH NAMES from marketbeat 10/30 4:00 PM closing headers / fool.com '
+ "'last close 2026-10-30' / massive.com / financialcontent, each cross-checked against the prior close or a second "
+ 'source. SPY 755.72 (-1.77%), QQQ 690.49 (-3.47%). Semiconductor sell-off day (Intel -29% on a weak Q4 guide; SOX '
+ 'about -7 to -9%): 6%+ moves verified - holdings AMD -10.9%, MRVL -10.0%, ALAB -10.9%, CRDO -8.7%, LITE -8.6%, ANET '
+ '-8.3%, AMAT -7.5%, TER -7.4%, RKLB -7.4%, ASML -6.6%, AVAV -6.5%, PLTR -6.3%, LRCX -6.0%, ETN -6.0%; watch SNDK '
+ '-13.5%, DDOG -11.5%, TSEM -11.4%, COHR -11.2%, APP -10.4%, ARM -10.0%, NET -9.5%, BE -8.6%, STX -8.0%, CIEN -8.0%, '
+ 'STRL -7.4%, HOOD -7.2%, SPCX -6.4%, ORCL -6.3%, FN -6.3%. Ratios rescaled with price. HISTORY 10-30 row added '
+ '(stocks MV 773,664.08, unrealised +45,506.23 / +6.25%). Note: 8 NYSE watch closes of 29 Oct (COHR FN LHX ORCL NET '
+ "PWR GE CIEN) were 3:59 PM prints, cents off the official close - superseded by today's verified closes. AMZN/CAT/LHX "
+ 'Q3 fundamentals still pending (earnings job failed). || PREVIOUS ENTRY: Oct 30, 2026 21:45 Bangkok - CAT BOOKED: 7 '
+ 'sh at 633.5642 = 4,444.44 (rung 2 of 3; Power Generation test passed). Position 13 sh, cost 9,332.99; cash '
+ '20,530.86. October MONTHLY and investedEver updated with the fill. || PREVIOUS ENTRY: Oct 30, 2026 11:10 Bangkok - '
+ 'POEMS POSITIONS RECONCILED (screen 10:56 SGT, after the 29 Oct close): 36 lines + SGOV match to the cent; market '
+ 'value 874,941.02 ties. Nine NYSE marks set from POEMS (APH 82.08, ANET 184.22, CAT 647.39, ETN 393.72, TSM 431.81, '
+ "VRT 245.92, V 410.54, VST 140.95; SGOV 100.71) - all within 0.2% of the job's closes; ratios rescaled. No fill "
+ 'tonight yet: CAT 7 sh LIMIT 647.39 (cap 653.86) is the only order. || PREVIOUS ENTRY: Oct 30, 2026 08:40 Bangkok - '
+ 'AMZN Q3 read recorded (AWS +39%, backlog $578bn, TTM FCF -$42.4bn, no order - over budget); CAT order set: 7 sh Day '
+ 'LIMIT 647.22, cap 653.69. || PREVIOUS ENTRY: Oct 30, 2026 (00:30 UTC job) - DAILY PRICE REFRESH: all 63 prices set '
+ 'to the Thu 2026-10-29 close. Primary source this run: marketbeat.com dated daily-price tables / closing-price '
+ "headers (pages updated 10/29, 'Closing price 4:00 PM Eastern' stamps), every ticker's prior close cross-checked "
+ 'against the stored board value; stockanalysis.com and Google Finance caches still frozen pre-close (5th night); GEV '
+ 'from the fool.com quote page previous-close field (887.85; method validated to the cent on GOOGL and MSFT this run). '
+ 'Big earnings-reaction day: 6%-movers verified + allowed: GOOGL 283.82 -12.64% (Q3 miss/FCF, fool prev-close field '
+ 'exact + news), FTNT 139.10 -20.09% (service-revenue forecast cut; 247wallst sidebar exact), MRVL 218.34 -13.24% '
+ '(Lumentum deal talks; fool widget -13.24% exact), CAT 647.22 -9.49% (sales outlook; 247wallst sidebar 647.39), LHX '
+ '279.12 +7.10% (Q3 beat + raised FY guide; investing.com 278.65 +6.92%), AVAV 134.88 +7.09% (gurufocus +7.1%). SPY '
+ '769.36 and QQQ 715.34 (10-29, marketbeat closing headers; prev closes match board); spyHigh unchanged 779.09. '
+ 'risk_series spy 10-29 added; ust10 10-29 skipped (ycharts H15 only through 10-27; yahoo close bar printed 4.99 for '
+ 'reference). HISTORY 10-29 row added (first row including the 29 Oct MSFT buy, 126 sh). Note: TSEM 187.92 written '
+ 'from a dated 10/29 marketbeat header whose implied 10/28 prev close (193.52) could not be cross-checked - flagged '
+ 'for the next run. Every number from a tool call this session. || PREVIOUS ENTRY: Oct 29, 2026 23:00 Bangkok - GOOGL '
+ '10 Dec test (1) CLARIFIED: Q3 ATM share sales of $12.4bn were draws under the $40bn ATM announced in the June '
+ '$84.75bn raise, so they do not fail the test; a new or upsized programme would. No order, budget or price changed. '
+ '|| PREVIOUS ENTRY: Oct 29, 2026 22:30 Bangkok - MSFT BOOKED 9 sh at 525.4031 = 4,738.75; cash 24,975.30. FULL POEMS '
+ 'RECONCILIATION: 36 lines + SGOV match to the cent; cash corrected by 0.10 (CRWD 19 Oct fee true-up); SGOV sale trued '
+ 'up to 10,047.25 (realised -27.25); October MONTHLY rebuilt (6 buys + 1 sale had been missing); October dividends '
+ '251.31 itemised. Prices: 54 names at the 28 Oct close, 9 at 27 Oct - the 29 Oct close is written by the next morning '
+ 'run. || PREVIOUS ENTRY: Oct 29, 2026 (03:30 UTC job) - DAILY PRICE REFRESH, 2nd pass: 11 more of the 15 stragglers '
+ 'resolved. Wed 2026-10-28 close written for ETN 392.88, GEV 878.03, PWR 606.89, COHR 239.59, SPCX 145.23, CIEN 363.21 '
+ '(54 of 63 now at 10-28); verified Tue 10-27 close written for ARM 226.60, GE 297.66, MPWR 1211.89, LHX 259.40, TSEM '
+ '189.08 (marketbeat prev-close fields / heygotrade dated closes; every prev-close cross-checked against the stored '
+ 'prior close to the cent). Sources: 247wallst Oct-28 article sidebars validated to the cent on '
+ 'MSFT/ORCL/NVDA/MU/GOOGL/VRT; heygotrade dated close pages; stockanalysis/Google Finance/tipranks/marketscreener '
+ 'caches still frozen pre-close (4th night). 6%-movers vs last build, verified + allowed: PWR +7.6% (sidebar + '
+ '247wallst company page, prev 578.8x both), COHR +8.2% (sidebar; prev 235.79 = heygotrade 10-27 close exact), CIEN '
+ '+8.1% (heygotrade 10-28 close 363.21 +3.43%; gurufocus +3.4% same evening). Unresolved, left at their verified 10-27 '
+ 'close: CDNS 343.08, CRDO 167.43, AVAV 126.73, CEG 258.98 (heygotrade 10-27 closes match the board to the cent; no '
+ 'readable 10-28 close). SPY 772.31 10-28 (marketchameleon dated close; SSGA official 10-27 769.66 added to '
+ 'risk_series with ycharts ust10 4.99 10-27; ust10 10-28 skipped - named sources not yet updated, fool.com wrap '
+ 'printed 5.02 at close for reference). HISTORY 10-28 row mv updated in place for the new ETN/GEV closes. || PREVIOUS '
+ 'ENTRY: Oct 29, 2026 (00:30 UTC job) - DAILY PRICE REFRESH: 48 of 63 set to the Wed 2026-10-28 close (fool.com dated '
+ 'quote pages; stockanalysis/Google Finance/ycharts caches frozen pre-close for a third night). 15 unresolved stay at '
+ 'their prior close: holdings CDNS CRDO AVAV GEV ETN CEG (10-27), watch ARM MPWR COHR SPCX LHX PWR GE TSEM CIEN '
+ '(10-26). QQQ 725.61 (10-28); SPY, spyHigh and risk_series spy/ust10 left unchanged - no clean close readable. '
+ 'HISTORY row 10-28 added. 6%-movers verified: ORCL 144.54 +10.73% d/d, VRT 242.94 +16.49% d/d, MU 983.23, SNDK '
+ '1404.77, STX 697.97 (247wallst sidebar matches to the cent); SNPS FN BE STRL on dated fool closes + headline '
+ 'corroboration. || PREVIOUS ENTRY: Oct 29, 2026 - GOOGL TEST APPROVED (Salee): 19 Nov $18,524 tranche moved to a 10 '
+ 'Dec DECIDE - buy only if no further share sale AND a credible path back to positive free cash flow; fail = budget '
+ 'cut to cost spent, no sale. || PREVIOUS ENTRY: Oct 29, 2026 04:45 Bangkok - RESULTS SCORED: MSFT PASS (BUY 9 sh '
+ 'tonight, limit 531.01, cap 536.32); STRL FAIL (signed backlog 4.14bn < 4.33bn; budget back to pool; half 2 '
+ 'cancelled); GEV thesis intact (Power orders +178%, Electrification -9% on a tough comparison); VRT partial '
+ 'disclosure; GOOGL Q3 cloud doubled but FCF -9.1bn + June 84.75bn equity raise - 19 Nov tranche pending Salee. Fed '
+ 'held 3.75-4.00% (10-2, Cook and Hammack for a hike). SGOV 4 Nov sale no longer needed. || PREVIOUS ENTRY: Oct 28, '
+ '2026 - SGOV SLICE 1 BOOKED: SELL 100 at 100.6901 = 10,047.46 net (POEMS 1187938, 22:29 Bangkok). Cash 29,714.36; '
+ 'SGOV 694 sh parked (cost 69,917.06). || PREVIOUS ENTRY: Oct 28, 2026 13:16 Bangkok - PRICES OF THE 36 HOLDINGS SET '
+ 'TO THE TUE 2026-10-27 CLOSE FROM SALEE\'S POEMS POSITIONS SCREEN (US market closed; POEMS "Current Price" column; '
+ 'SGOV mark 100.68). Reason: every web source reachable from the sandbox served pre-close cached pages for Oct 27 '
+ 'through both scheduled runs (00:30 and 03:30 UTC) and manual checks at 03:30-04:50 UTC, so 0 of 63 could be written '
+ 'by the job. The 27 watch names (no position) stay at the 26 Oct close until the next successful run. Moves of 6%+ vs '
+ '26 Oct: CDNS +6.5%, ALAB +10.5%, CRDO +10.8%, RKLB +8.3% - consistent with the reported 27 Oct session (AMD +5.5%, '
+ 'AVGO +4%, MU +2.8%, chips rally). Positions and cost on the same screen reconcile to the board to the cent on all 36 '
+ 'lines (641,827.76 NASD + 247,167.89 NYSE incl. SGOV = 888,995.64). pe/ps/fpe/peg/pfcf rescaled with price per the 26 '
+ 'Oct rule. || PREVIOUS ENTRY: Oct 28, 2026 (runs 00:30 + 03:30 UTC) - DAILY PRICE REFRESH: BOTH overnight passes '
+ 'could not resolve the Tue 2026-10-27 close for any ticker. 03:30 pass sampled 14 stockanalysis.com quote/history '
+ 'pages: every capture predated the 4:00 PM close (freshest stamps 10:05-11:25 AM EDT Oct 27; some caches as old as '
+ 'May 2025), and Google Finance (Sep 24/25 caches), marketscreener (Sep 4) and ycharts (Oct 26 18:04 EDT) were equally '
+ 'stale. Per the leave-unchanged rule nothing was written: all 63 prices, mcaps, P/E block, SPY/QQQ and pxd stay at '
+ 'the Mon 2026-10-26 close (CGNX still 2026-10-23); no HISTORY row; risk_series ust10/spy 10-27 skipped (sources '
+ 'unreadable; ust10 2026-10-26 = 5.00 was already added by the 00:30 pass). Oct-26 baseline cross-checked against 9 '
+ 'history tables - all matched. Every number checked came from a tool call this session; the next scheduled pass '
+ 'retries.')
 
 GROUPS = ['Hyperscalers & Model Owners',
  'AI Chips & Chip Design',
@@ -5453,1431 +5457,8 @@ M3 = {'AAPL': {'de': 0.78, 'ev': 29.84, 'pfcf': 37.25},
  'VRT': {'de': 0.7, 'ev': 28.01, 'pfcf': 30.08},
  'VST': {'de': 3.73, 'ev': 10.1, 'pfcf': 20.92}}
 
-SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
- 'items': [{'a': 'ADMIN',
-            'amt': 200000,
-            'c': 'done',
-            'cond': 'Landed early: the row was dated 14 Sep after a one-week delay from 7 Sep for currency and banking '
-                    'reasons.',
-            'd': '2026-09-09',
-            'k': 'admin',
-            't': '',
-            'w': '200,000 ARRIVED at POEMS - confirmed on the Sep 9 statement (cash 216,131.61).'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'confirmed',
-            'cond': 'Free monthly signal - most companies report quarterly. July was +44.7% YoY.',
-            'd': '2026-09-10',
-            'k': 'data',
-            't': 'TSM',
-            'w': 'TSMC August monthly revenue (13:30 Taipei)'},
-           {'a': 'BUY',
-            'amt': 4686.38,
-            'c': 'done',
-            'cond': "THE TEST AS WRITTEN WAS: 'Deploy the full room only if OCI growth accelerates AND new RPO arrives "
-                    "with prepaid hardware. Leave it if free cash flow deteriorates further.' SCORED AGAINST THE "
-                    'ACTUAL PRINT: (1) OCI - Cloud Infrastructure revenue 7,388m, UP 121%, and Q2 guidance has total '
-                    'cloud growth at 64-70% against the 62% just delivered, so the guide itself accelerates. PASS. (2) '
-                    "RPO AND PREPAYMENTS - RPO 664bn, up 209bn year on year, with 'more than 30 billion of additional "
-                    "AI cloud contracts' booked in the quarter, and the capex schedule shows 11,363m of 'customer "
-                    "prepayments with significant financing component'. The prepaid hardware is there and it is "
-                    'quantified. PASS. (3) FREE CASH FLOW - GAAP free cash flow was NEGATIVE 5,396m against negative '
-                    '362m a year earlier, so worse year on year. BUT FY2026 ran at negative 23,686m, about 5.9bn a '
-                    'quarter, so this quarter is slightly BETTER than that run rate. And operating cash flow was a '
-                    "RECORD 23,103m, UP 184%. On Oracle's own 'net cash outlay for capital expenditures' of 17,966m - "
-                    'capex of 28,499m less the 11,363m customers prepaid - cash in exceeded cash out by about 5.1bn. '
-                    'NOT A FURTHER DETERIORATION. ⚠️ NEW RISK NOT IN THE ORIGINAL TEST: S&P downgraded Oracle to '
-                    "BBB-/A-3 from BBB/A-2 on 9 Jul 2026, 'On Rising Business Risk And Weaker Cash Flow'. BBB- is one "
-                    'notch above sub-investment grade. Trade press reporting S&P also puts roughly half of the 638bn '
-                    'RPO with OpenAI - press characterisation, NOT verified against any Oracle filing or the S&P text. '
-                    'WHY ONE ORDER AND NOT TWO: the room is 4,686 on a 1,000,000 book, 0.47%. Two POEMS orders cost '
-                    '17.12 in commission, 0.37% of the trade, to reduce a risk that is already a rounding error. '
-                    'Splitting a position this small is uneconomic - the same logic that put the sub-2,100 legacy '
-                    'names into Tier A. THE NEXT DECISION IS WHETHER ORCL DESERVES MORE THAN 13,000, and that belongs '
-                    'to the 10 Dec review.',
-            'd': '2026-09-11',
-            'k': 'earnings',
-            't': 'ORCL',
-            'w': 'SUPERSEDED 3 Oct 2026 (Salee approved the rate review and watch-list cut): Oracle is to be SOLD (see '
-                 'the 5 Oct row). | Q1 FY2027 REPORTED 10 Sep. Condition met - deploy the full remaining room of '
-                 '4,686.38 in ONE order.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'FPS-Q4-REPORT-SEP15 || ⚠️ FIRST, A CATEGORY CORRECTION: A SOCIAL-MEDIA GRAPHIC GROUPS FPS WITH '
-                    'QUANTA, STERLING AND MASTEC AS IF IT WERE A CONSTRUCTION CONTRACTOR. IT IS NOT. Forgent Power '
-                    "Solutions (NYSE, CIK 2080126, SIC 3620 'Electrical Industrial Apparatus') MANUFACTURES electrical "
-                    'distribution equipment - transfer switches, switchgear, transformers, power distribution units. '
-                    'It is in the SAME category as Eaton and Vertiv, which this board already funds at 11,000 and '
-                    '21,000. Anyone buying it as a contractor is buying something else. || WHAT IS GENUINELY STRONG: '
-                    'fiscal Q3 2026, the three months to 31 Mar, revenue 378.7m PLUS 103%, gross margin 34.6%, '
-                    'operating income 39.3m, net income 24.5m. ⚠️ BACKLOG 1.98bn, PLUS 157% YEAR ON YEAR, WITH A '
-                    'BOOK-TO-BILL OF 2.3 TIMES - it is booking more than twice what it ships. Ten analysts, average '
-                    'target 59.90 against a 31.82 close. || ⚠️ WHAT ARGUES FOR WAITING, AND THERE IS A LOT OF IT. IPO '
-                    '5 FEB 2026 AT 27.00. A FOLLOW-ON OFFERING PRICED 27 MAR AT 49.00 - anyone who bought that deal is '
-                    'down about 35%. THE IPO LOCK-UP ON 56 MILLION SHARES EXPIRED 4 AUG 2026, five weeks ago. The '
-                    'stock is 31.82 against a 66.00 high - DOWN 52%. Trailing earnings of 567 times are meaningless on '
-                    'a near-zero prior-year base; forward earnings of 31.6 times assume guidance of 73 to 82% revenue '
-                    'growth is delivered. ⚠️ AND THERE IS LITIGATION ONCE REMOVED: a plaintiff alleges he was squeezed '
-                    'out of a 50% stake in MGM Transformers, the business Neos Partners rolled into what became '
-                    'Forgent, and seeks up to 200m; the motion to dismiss was DENIED on 31 Oct 2025. The defendants '
-                    'are Neos Partners LP and MGM Transformers, NOT Forgent Power Solutions Inc - real but once '
-                    "removed. || THE RULE THAT APPLIES IS THIS BOARD'S OWN, WRITTEN ON SKHY, SPCX AND CRWD: VENDOR "
-                    'DATA ON RECENTLY-LISTED SECURITIES IS UNRELIABLE, and FPS proves it here - revG and Rule of 40 '
-                    'are both BLANK on this board. A first full-year report with audited numbers fixes that. WAIT FOR '
-                    '15 SEPTEMBER. It is three days away and it costs nothing.',
-            'd': '2026-09-15',
-            'dl': 'Forgent Power Solutions fiscal Q4 and full-year results - three days away',
-            'k': 'earnings',
-            't': 'FPS',
-            'w': 'REMOVED FROM BOARD 3 Oct 2026 (Salee approved the rate review and watch-list cut) - watch list cut '
-                 'to 25 (cap 30). | FIRST FULL YEAR SINCE THE FEB 2026 IPO. Do nothing before it. FPS is down 52% from '
-                 'its high, its IPO lock-up expired 4 Aug, and this board carries it with revG and Rule of 40 BLANK - '
-                 'the signature of a recently-listed name with unreliable vendor data.'},
-           {'a': 'WATCH',
-            'amt': None,
-            'c': 'estimated',
-            'cond': 'NOT a buy trigger. A price target is a 12-month view of the business; it is not a bet on one '
-                    'launch outcome. Flight 13 (Jul 24) already succeeded on the ship - 20 Starlink V3 satellites '
-                    'deployed, first intact splashdown - while Super Heavy relit only 10 engines and was destroyed on '
-                    'water impact. A clean Flight 14 removes a known risk; it does not revalue a 2-trillion-dollar '
-                    'company by 48%. Watch it for the booster, not for the stock.',
-            'd': '2026-09-15',
-            'k': 'event',
-            't': 'SPCX',
-            'w': 'Starship Flight 14 - first orbital flight attempt (NET, per FCC filing of Aug 31)'},
-           {'a': 'DECIDE',
-            'amt': 0,
-            'c': 'confirmed',
-            'cond': '⚠️ THE ODDS OF A **HIKE** - not a hold, not a cut - MOVED FROM ABOUT 59-71% TO ABOUT 87-90% '
-                    'BETWEEN 8 AND 11 SEPTEMBER, after August core CPI printed PLUS 0.3% against 0.2% consensus and '
-                    'PPI PLUS 0.4%, the largest since May. The 10-year rose about 19bp to 4.92-4.99%; Brent approached '
-                    '109-110. Between 8 and 11 Sep equal-weight S&P fell 1.9% and small caps over 2% WHILE MEGA-CAPS '
-                    'WERE FLAT - a discount-rate shock, not a growth scare, which is why the speculative nuclear, '
-                    'space, quantum and neocloud names on this board fell 6-22%. ⚠️ SIX TRANCHE-1 BUYS WORTH 46,526.13 '
-                    'FALL THE NEXT DAY, 17 SEP - TSM 15,000, GEV 7,852.70, VRT 6,475.56, PANW 6,238.85, CEG 5,959.02, '
-                    'V 5,000. THE MONEY GOES IN AFTER THE DECISION IS KNOWN, WHICH IS THE RIGHT ORDER. ALL SIX PROCEED '
-                    'UNCHANGED - a tranche is a DOLLAR allocation, so a lower price buys more shares. ⚠️ WHAT WOULD '
-                    'CHANGE THAT: not the hike, which is priced, but a dot plot pointing to a SECOND hike, which is '
-                    "not. Even then the answer is to hold rung 2, not cancel rung 1. Sourced to Charles Schwab's "
-                    'timestamped 11 Sep note, Quartz of the same date, and two independent weekly recaps; CME Group '
-                    'named for the probabilities. ⚠️ No Reuters/AP/Bloomberg report was read - CNBC returned 403.',
-            'd': '2026-09-16',
-            'k': 'macro',
-            't': '',
-            'w': 'FOMC decision + dot plot - a rate HIKE is now ~87-90% priced, and SIX BUYS LAND THE NEXT DAY'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'confirmed',
-            'cond': 'ADDED 14 SEP after the InnovestX calendar flagged it and our board did not carry it. This is the '
-                    'consumer read that lands hours before the Fed decides. It matters to V (tranche 1 lands the next '
-                    'day) and to the whole "is the hike justified" question. Census release schedule confirmed at '
-                    'census.gov.',
-            'd': '2026-09-16',
-            'k': 'macro',
-            't': '',
-            'w': 'US RETAIL SALES (August) - 8:30am ET, Census Bureau. Same morning as the FOMC decision.'},
-           {'a': 'DECIDE',
-            'amt': 0,
-            'c': 'confirmed',
-            'cond': 'THE QUESTION IS A GOOD ONE AND IT DESERVES THE FULL ANSWER, NOT A ONE-LINE NO. || ⚠️⚠️ REASON '
-                    'ONE, AND IT IS THE WHOLE ARGUMENT: IT IS NOT A LUMP SUM. THE 46,526.13 IS AN OUTPUT, NOT AN '
-                    'INPUT. NOBODY EVER DECIDED TO SPEND 46,526.13 TOMORROW. SIX SEPARATE POSITION DECISIONS, TAKEN ON '
-                    'DIFFERENT DAYS FOR DIFFERENT REASONS, HAPPEN TO LAND ON THE SAME DATE. Look at where each one '
-                    'actually goes: GEV ends at EXACTLY 10,000.00 invested. VRT ends at EXACTLY 10,000.00. CEG ends at '
-                    'EXACTLY 10,000.00. PANW ends at 9,999.47. THOSE ARE NOT SPENDING DECISIONS, THEY ARE SIZING '
-                    'DECISIONS - each tranche was calculated to bring a position TO A LEVEL, and the total is just '
-                    'what the six add up to. || 💡 AND THE TIME DIVERSIFICATION SALEE IS ASKING FOR IS ALREADY BUILT IN '
-                    'TWICE OVER. FIRST, AT THE POSITION LEVEL: NOT ONE OF THE SIX GOES TO ITS FULL BUDGET TOMORROW. '
-                    'TSM reaches 74.2% of its 74,000. PANW reaches 90.9% of 11,000. GEV 76.9%. CEG 58.8%. V 55.6% - '
-                    'and that one OPENS the position. VRT 47.6%. Every one keeps room for a later rung at a different '
-                    'price. SECOND, AT THE BOARD LEVEL: THIS IS ONE OF THREE SCHEDULED DEPLOYMENT DAYS - 46,526.13 ON '
-                    '17 SEPTEMBER, 42,419.52 ON 9 OCTOBER (AMAT, ISRG, META, MRVL) AND 35,913.27 ON 19 NOVEMBER '
-                    '(GOOGL, KLAC, LRCX). THE MONEY IS ALREADY SPREAD ACROSS NINE WEEKS. Splitting tomorrow would be a '
-                    'THIRD layer of time-splitting on top of two that already exist. || ⚠️ REASON TWO: THIS BOARD '
-                    'ALREADY HAS A WRITTEN RULE ON EXACTLY THIS AND IT WAS HARDER TO KEEP LAST TIME. On 14 September, '
-                    'about VRT, it recorded that A DOLLAR AMOUNT ON A DATE BEATS A PRICE WITH NO DATE, and that '
-                    'waiting for a level that may never arrive is how people end up owning fourteen shares forever. '
-                    'Then PANW ROSE 13.09% IN ONE SESSION AND THE BOARD REFUSED TO DELAY IT, writing: "IF I NOW DELAY '
-                    'PANW BECAUSE THE PRICE WENT UP, I AM DOING THE SAME THING IN REVERSE - LETTING A PRICE LEVEL '
-                    'OVERRIDE A WRITTEN DATE. A RULE THAT ONLY SURVIVES WHEN IT IS CONVENIENT IS NOT A RULE." ⚠️ WE '
-                    'PAID ABOUT 790 DOLLARS TO KEEP THAT RULE TWO DAYS AGO. Moving six dates now, for a softer reason '
-                    'than the one we already refused, would retire it. || 📊 REASON THREE - THE ARITHMETIC, BECAUSE IT '
-                    'SHOULD NOT BE HAND-WAVED. POEMS CHARGES A FLAT 8.56 PER TRADE. SIX TRADES IN ONE DAY COST 51.36, '
-                    'WHICH IS 0.110% OF THE MONEY. SPLITTING OVER TWO DAYS MEANS TWELVE TRADES AT 102.72, OR 0.221%. '
-                    'OVER THREE DAYS, EIGHTEEN TRADES AT 154.08, OR 0.331%. SO THE THREE-DAY SPLIT COSTS AN EXTRA '
-                    '102.72 - CERTAIN, KNOWN, PAID WHATEVER HAPPENS. || ⚠️⚠️ AND WHAT DOES THAT 102.72 BUY? IT BUYS A '
-                    'NARROWER RANGE OF ENTRY PRICES - NOT A BETTER ONE. SPREADING PURCHASES OVER THREE DAYS CUTS THE '
-                    'SPREAD OF POSSIBLE AVERAGE ENTRY PRICES BY ROUGHLY FORTY-TWO PERCENT, WHICH SOUNDS GOOD UNTIL YOU '
-                    'NOTICE IT IS SYMMETRIC: IT REMOVES THE GOOD OUTCOMES EXACTLY AS MUCH AS THE BAD ONES. THE '
-                    'EXPECTED PRICE IS UNCHANGED. You are paying a certain fee to reduce uncertainty, and that is only '
-                    'worth doing IF THE UNCERTAINTY WOULD MAKE YOU DO SOMETHING FOOLISH. ⚠️ FOR SOMEONE FOLLOWING A '
-                    'WRITTEN MULTI-RUNG PLAN IT WOULD NOT - BECAUSE THAT IS WHAT THE LATER RUNGS ARE FOR. If these six '
-                    'fall next week, the remaining budget buys them cheaper. THE PLAN ALREADY CONTAINS THE ANSWER TO A '
-                    'BAD ENTRY. || ⚠️⚠️⚠️ REASON FOUR, AND THIS ONE IS PRACTICAL AND CUTS AGAINST SPLITTING HARDEST: '
-                    'IF SALEE SPLITS INTO FRIDAY 18 SEPTEMBER, HE BUYS ON TRIPLE WITCHING - the quarterly expiry of '
-                    'index futures and options, routinely the highest-volume and most erratic session of the quarter - '
-                    'AND ON THE SAME DAY AS THE BANK OF JAPAN DECISION. THAT IS A WORSE DAY TO BUY, NOT A SAFER ONE. '
-                    'SPLITTING INTO THE 18TH WOULD INCREASE THE TIMING RISK IT IS MEANT TO REDUCE. || ✅ THE ONE '
-                    'CONCESSION I WOULD MAKE, IF THE EVENT CALENDAR GENUINELY WORRIES HIM: SPLIT ONLY TSM. It is '
-                    '15,000, which is 32.2% of the day - by far the largest single commitment and nearly a third of '
-                    'the risk. Half tomorrow, half on MONDAY 21 SEPTEMBER, skipping triple witching entirely. THAT '
-                    'COSTS ONE EXTRA 8.56, NOT 102.72, AND ADDRESSES A THIRD OF THE EXPOSURE FOR EIGHT PERCENT OF THE '
-                    'COST. The other five proceed untouched. ⚠️ THIS IS A CONCESSION TO COMFORT, NOT AN IMPROVEMENT TO '
-                    'THE PLAN, AND I WOULD NOT VOLUNTEER IT IF HE HAD NOT ASKED. || ⚠️⚠️ AND NOW THE PART THAT MATTERS '
-                    'MORE THAN THE WHOLE TIMING QUESTION - HOW THE SIX ORDERS ARE PLACED. THIS MORNING WE LEARNED, '
-                    'EXPENSIVELY AND THREE SESSIONS RUNNING, THAT A DAY ORDER WITH A LIMIT ON THE WRONG SIDE OF THE '
-                    'MARKET SIMPLY DIES AT THE CLOSE AND HAS TO BE RETYPED. THE BUY-SIDE VERSION OF THAT RULE IS THE '
-                    'MIRROR IMAGE AND IT MUST BE SAID PLAINLY: FOR A SELL, THE LIMIT GOES AT OR JUST BELOW THE LAST '
-                    'TRADE. FOR A BUY, THE LIMIT GOES AT OR JUST ABOVE THE LAST TRADE. A BUY LIMIT SET ABOVE THE '
-                    'MARKET FILLS AT THE LIMIT OR BETTER - MEANING LOWER - AND CANNOT FILL WORSE. A BUY LIMIT SET '
-                    'BELOW THE MARKET IS NOT AN ENTRY, IT IS A WISH WITH A DEADLINE, AND IT IS EXACTLY THE ERROR THAT '
-                    'COST US THREE SESSIONS ON CRM AND FN. || ✅ THE EXECUTION INSTRUCTION FOR TOMORROW, AND IT IS '
-                    "SALEE'S TO PLACE - I DO NOT PLACE ORDERS: (1) USE A LIMIT ON EVERY ONE OF THE SIX, NEVER A MARKET "
-                    'ORDER - a market order accepts whatever the book offers and on a post-Fed session that can be '
-                    'several percent worse than the screen. (2) SET EACH LIMIT AT OR ONE OR TWO TICKS ABOVE THE LAST '
-                    'TRADE, NOT BELOW IT. (3) USE GTC - GOOD-TILL-CANCELLED - RATHER THAN DAY, SO AN UNFILLED ORDER '
-                    'SURVIVES THE CLOSE INSTEAD OF NEEDING TO BE RETYPED EVERY MORNING. ⚠️ GETTING THESE THREE RIGHT '
-                    'IS WORTH MORE THAN ANY DAY-SPLITTING DECISION, BECAUSE A BADLY PLACED ORDER ON A 15,000 TRANCHE '
-                    'COSTS FAR MORE THAN 102.72. || 💡 ONE REASSURANCE ON SIZE: AFTER TOMORROW, CASH FALLS FROM '
-                    '236,324.23 TO 189,798.10 AND THE BOARD IS STILL ONLY 61.96% DEPLOYED AGAINST ITS 1,000,000. THERE '
-                    'IS NO LIQUIDITY STRAIN AND NO ALL-IN MOMENT HERE. This is 4.65% of the total programme going to '
-                    'work in one session, spread across six companies in five different groups. || ✅ DECISION: ALL SIX '
-                    'PROCEED ON 17 SEPTEMBER AS WRITTEN - CEG 5,959.02, GEV 7,852.70, PANW 6,238.85, TSM 15,000.00, V '
-                    '5,000.00, VRT 6,475.56. ⚠️ WHAT WOULD CHANGE MY MIND: a single-session index move of more than '
-                    'about 3% on the Fed decision, which is not a timing question but a THESIS question and would '
-                    'pause everything rather than stagger it. ⚠️ AND WHAT WOULD NOT CHANGE MY MIND: any of the six '
-                    'simply opening higher tomorrow. WE ALREADY REFUSED THAT ARGUMENT ON PANW TWO DAYS AGO AND THE '
-                    'RULE ONLY WORKS IF IT WORKS BOTH TIMES.',
-            'd': '2026-09-17',
-            'dl': '⚠️ READ THIS BEFORE PLACING ANY OF THE SIX ORDERS',
-            'k': 'decision',
-            't': '',
-            'w': "❓ SALEE ASKED ON 16 SEPTEMBER WHETHER TO SPLIT TOMORROW'S 46,526.13 ACROSS 2-3 DAYS FOR TIME "
-                 'DIVERSIFICATION. ANSWER: NO - PROCEED IN ONE DAY. CONVICTION HIGH. ⚠️ BUT THE EXECUTION ADVICE BELOW '
-                 'MATTERS MORE THAN THE TIMING QUESTION.'},
-           {'a': 'BUY',
-            'amt': 0,
-            'c': 'confirmed',
-            'cond': '⚠️⚠️ WHAT ACTUALLY HAPPENED ON 16 SEPTEMBER, FROM THE FEDERAL RESERVE\'S OWN PRESS RELEASE: "The '
-                    'Committee decided to raise the target range for the federal funds rate by 1/4 percentage point to '
-                    '3-3/4 to 4 percent." UNANIMOUS, 12-0. THE FIRST RATE HIKE SINCE 2023. Chair Kevin Warsh said '
-                    'inflation "is too high and has been for too long" and that the Fed had "removed a dose of '
-                    'accommodation". ⚠️ THE PROJECTIONS SIGNAL ONE MORE HIKE IN 2026. Markets were firm into 2pm and '
-                    'then SOLD OFF DURING THE PRESS CONFERENCE. || INDEX CLOSES: DOW 51,461.90 DOWN 1.21% (about 600 '
-                    'points), S&P 500 7,551.81 DOWN 0.45%, NASDAQ COMPOSITE 25,978.42 ESSENTIALLY FLAT AT MINUS 0.01%. '
-                    'Nine of eleven S&P sectors fell. || ✅ THE WRITTEN CONDITION FROM LAST NIGHT WAS: "A '
-                    'SINGLE-SESSION INDEX MOVE OF MORE THAN ABOUT 3% ON THE FED DECISION WOULD PAUSE EVERYTHING RATHER '
-                    'THAN STAGGER IT." THE MOVE WAS 1.21% ON THE DOW AND 0.45% ON THE S&P - WELL INSIDE THE THRESHOLD. '
-                    'ALL SIX TRANCHES PROCEED. The rule was written before the event and it is honoured after it. || 💡 '
-                    'AND THE SECTOR DETAIL IS GENUINELY REASSURING FOR OUR THREE POWER NAMES. A RATE HIKE IS NORMALLY '
-                    'BAD FOR UTILITIES AND THE S&P UTILITIES SECTOR FELL 1.2% ON THE DAY - BUT CEG FELL ONLY 0.14% AND '
-                    'GEV ROSE 4.79%, WITH VRT UP 2.05%. THE AI-POWER COMPLEX DECOUPLED FROM THE REGULATED-UTILITY '
-                    'COMPLEX ON A DAY THAT SHOULD HAVE HURT BOTH. GEV rose on a Morgan Stanley conference presentation '
-                    'citing gas-turbine backlog and data-centre demand. ⚠️ ONE DAY IS NOT A TREND AND I WILL NOT CALL '
-                    'IT ONE, BUT IT IS THE FIRST DIRECT TEST OF WHETHER THESE ARE RATE-SENSITIVE UTILITIES OR '
-                    'AI-DEMAND STOCKS, AND THEY TRADED AS THE SECOND. || ⚠️ SEMICONDUCTORS ALSO HELD - which is why '
-                    'the Nasdaq was flat while the Dow lost 600 points. INTEL ROSE ABOUT 4.3-4.6% on reports of a '
-                    'possible memory partnership with SK HYNIX (both names we hold), AMD +3.8%, and COHERENT AND '
-                    'LUMENTUM BOTH ROSE ABOUT 6% - LITE IS OURS AND STILL CARRIES THE OPEN MINUS 230.1% NET MARGIN '
-                    'FAULT, SO THE RALLY CHANGES NOTHING THERE. TSM ITSELF ROSE 1.17%. || 📋 THE SIX ORDER TICKETS, '
-                    'BUILT ON THE 16 SEPTEMBER CLOSES (verified against two independent sources) WITH THE LIMIT SET '
-                    'ONE PERCENT ABOVE EACH CLOSE. TSM: close 417.72, LIMIT 421.90, 35 SHARES, 14,766.50 plus '
-                    'commission. GEV: close 925.09, LIMIT 934.34, 8 SHARES, 7,474.72. VRT: close 239.41, LIMIT 241.80, '
-                    '26 SHARES, 6,286.80. PANW: close 375.65, LIMIT 379.41, 16 SHARES, 6,070.56. CEG: close 259.53, '
-                    'LIMIT 262.13, 22 SHARES, 5,766.86. V: close 370.93, LIMIT 374.64, 13 SHARES, 4,870.32. TOTAL WITH '
-                    'ALL SIX COMMISSIONS: 45,287.12 IF EVERY ONE FILLS AT ITS CEILING, OR 44,839.09 IF EVERY ONE FILLS '
-                    'AT THE 16 SEPTEMBER CLOSE. ⚠️ THAT IS 1,239.01 LESS THAN THE PLANNED 46,526.13 - THE DIFFERENCE '
-                    'IS WHOLE-SHARE ROUNDING AND IT SIMPLY STAYS IN CASH FOR THE NEXT RUNG. || ⚠️⚠️ AND NOW A '
-                    'CORRECTION TO MY OWN ADVICE FROM LAST NIGHT, WHICH I GOT WRONG. I TOLD SALEE THAT SPLITTING '
-                    'ACROSS TWO DAYS WOULD COST AN EXTRA 51.36 IN COMMISSION. THAT IS ONLY TRUE IF EACH ORDER IS CUT '
-                    'IN HALF, MAKING TWELVE TRADES. ✅ IT DOES NOT HAVE TO BE DONE THAT WAY. SPLITTING BY STOCK - THREE '
-                    'COMPLETE ORDERS TONIGHT AND THREE COMPLETE ORDERS ON MONDAY - IS STILL SIX TRADES AND STILL '
-                    '51.36. IT COSTS NOTHING EXTRA AT ALL. My cost objection was built on an assumption I never stated '
-                    'and it does not survive contact with the actual arithmetic. || ✅ SO THE TWO-DAY SPLIT IS NOW A '
-                    'FREE CHOICE RATHER THAN A PAID ONE, AND IF SALEE WANTS IT, THE GROUPING IS: DAY ONE TONIGHT - '
-                    'TSM, V AND CEG, 25,429.36, WHICH IS 56.2% OF THE MONEY AND IS THE THREE THAT DID NOT MOVE ON THE '
-                    'FED DAY (TSM +1.17%, V MINUS 1.25%, CEG MINUS 0.14%). DAY TWO ON MONDAY 21 SEPTEMBER - GEV, VRT '
-                    'AND PANW, 19,857.76, WHICH IS THE THREE THAT DID MOVE (GEV +4.79% AND VRT +2.05%, WITH PANW '
-                    'ALREADY CARRYING A 13% NEWS PREMIUM FROM 14 SEPTEMBER). BUY WHAT DID NOT MOVE; WAIT ON WHAT '
-                    'JUMPED. || ⚠️⚠️ AND THE ONE HARD RULE ON THE SPLIT: NOT FRIDAY 18 SEPTEMBER. That is TRIPLE '
-                    'WITCHING - the quarterly expiry of index futures and options, routinely the most erratic session '
-                    'of the quarter - AND the Bank of Japan decision lands the same day. THE SECOND DAY MUST BE MONDAY '
-                    '21 SEPTEMBER. || 📊 THE VOLATILITY READING THAT DROVE THE GROUPING, FROM THE 15 AND 16 SEPTEMBER '
-                    'DAILY RANGES: V IS THE CALMEST AT A 1.60% AVERAGE DAILY RANGE, THEN TSM 1.85%, CEG 3.05%, GEV '
-                    '3.62%, PANW 3.77% AND VRT THE JUMPIEST AT 3.94%. ⚠️ THE TWO CALMEST ARE ALSO THE TWO WHERE '
-                    "SPLITTING WOULD HAVE HELPED LEAST, AND TSM IS 32% OF THE DAY'S MONEY - WHICH IS WHY IT GOES FIRST "
-                    'IN EITHER SCENARIO. || ✅ MY RECOMMENDATION REMAINS SCENARIO ONE - ALL SIX TONIGHT - BUT THE '
-                    'MARGIN IS NOW THIN AND I WILL SAY SO HONESTLY. The written date is worth keeping and the Fed move '
-                    'was inside the threshold. BUT NOW THAT THE SPLIT COSTS NOTHING, SCENARIO TWO IS A PERFECTLY '
-                    'RESPECTABLE CHOICE AND I WILL NOT ARGUE HARD AGAINST IT. THE ONE THING THAT WOULD BE WRONG IS '
-                    'BUYING ON FRIDAY. || ⚠️⚠️ THE MOST IMPORTANT PRACTICAL WARNING: THESE PRICES ARE THE 16 SEPTEMBER '
-                    'CLOSE AND THE MARKET DOES NOT OPEN FOR ANOTHER FOURTEEN HOURS. PRICES WILL MOVE. THE RULE, NOT '
-                    'THE NUMBER, IS WHAT TO FOLLOW: LOOK AT THE LAST TRADED PRICE IN POEMS, ADD ONE PERCENT, THAT IS '
-                    'THE LIMIT; THEN DIVIDE THE DOLLAR AMOUNT BY THAT LIMIT AND ROUND DOWN TO A WHOLE SHARE. ⚠️ IF ANY '
-                    'OF THE SIX HAS MOVED MORE THAN ABOUT 2% FROM THE CLOSE ABOVE, RECALCULATE RATHER THAN TYPING MY '
-                    'NUMBER. THIS IS EXACTLY THE ERROR I MADE ON CRM AND FN YESTERDAY - SETTING A LIMIT FROM A STALE '
-                    'PRICE - AND I AM NOT REPEATING IT. || 💡 AND THE ONE THING THAT MOST NEEDS SAYING PLAINLY, BECAUSE '
-                    'IT IS THE PART PEOPLE GET WRONG: THE LIMIT IS A CEILING, NOT A PRICE. SETTING TSM AT 421.90 DOES '
-                    'NOT MEAN PAYING 421.90. IF TSM IS TRADING AT 417 YOU PAY ABOUT 417. THE 421.90 ONLY STOPS YOU '
-                    'PAYING MORE THAN THAT. A BUY LIMIT FILLS AT THE LIMIT OR BETTER - MEANING LOWER - AND CAN NEVER '
-                    'FILL WORSE. THERE IS NO PENALTY FOR SETTING IT A LITTLE HIGH, AND THERE IS A REAL PENALTY FOR '
-                    'SETTING IT TOO LOW: THE ORDER SIMPLY DOES NOT FILL. || ORDER TYPE ON ALL SIX: BUY, LIMIT, GTC '
-                    "(GOOD-TILL-CANCELLED), NEVER MARKET, NEVER DAY. ⚠️ ALL SIX ORDERS ARE SALEE'S TO PLACE AT POEMS - "
-                    'I DO NOT PLACE ORDERS.',
-            'd': '2026-09-17',
-            'dl': '📋 THE ACTUAL ORDER TICKETS - and the Fed HIKED',
-            'k': 'decision',
-            't': '',
-            'w': '⚠️⚠️ THE FED RAISED RATES ON 16 SEPTEMBER - IT DID NOT CUT. +0.25% TO 3.75-4.00%, THE FIRST HIKE '
-                 'SINCE 2023, WITH ONE MORE SIGNALLED FOR 2026. ALL SIX TRANCHES STILL PROCEED: THE INDEX MOVE WAS '
-                 'INSIDE THE 3% THRESHOLD I WROTE LAST NIGHT.'},
-           {'a': 'BUY',
-            'amt': 5959.02,
-            'c': 'planned',
-            'cond': 'Utilities. Rate-sensitive, which is why this waits until after the FOMC. || ⚠️ WHAT WOULD CHANGE '
-                    'MY MIND (written 14 Sep): CONSTELLATION IS OWNED FOR CONTRACTED POWER, NOT FOR GROWTH, AND IT IS '
-                    'THE CHEAPEST NAME BEING BOUGHT ON THURSDAY AT 20.41 TIMES TRAILING AND 20.31 FORWARD - almost no '
-                    'growth is priced in. THE TEST IS THE CONTRACTS: any quarter in which the company reports NET '
-                    'CANCELLATION of datacentre power purchase agreements, or fails to add a new one for two '
-                    'consecutive quarters, stops Tranche 2. A SECOND test: net margin falling below 8%, against 12.69% '
-                    'today. ⚠️ THE REAL RISK HERE IS REGULATORY, NOT COMMERCIAL - a ruling restricting '
-                    'behind-the-meter datacentre supply would hit the thesis faster than any earnings miss, and it '
-                    'would not show up in the numbers first.',
-            'd': '2026-09-17',
-            'k': 'tranche',
-            't': 'CEG',
-            'w': 'Tranche 1'},
-           {'a': 'BUY',
-            'amt': 7852.7,
-            'c': 'planned',
-            'cond': '$176bn backlog and $7.53bn FCF justify a position. WARNING: forward P/E 53.97 vs trailing 29.15 - '
-                    'consensus expects earnings to FALL. || ⚠️ WHAT WOULD CHANGE MY MIND (written 14 Sep): GE VERNOVA '
-                    'IS THE WEAKEST-MARGIN NAME IN GROUP 6 AT A 20.28% GROSS MARGIN, AND IT IS FUNDED FOR ORDERS, NOT '
-                    'FOR MARGIN. THE TEST IS THE ORDER BOOK: a quarter in which Power or Electrification EQUIPMENT '
-                    'ORDERS FALL YEAR ON YEAR stops Tranche 2. A SECOND test: revenue growth staying below 10% for two '
-                    'consecutive quarters, against 10.3% today - it is already at the line. ⚠️ AND A DATA FAULT IS '
-                    'STILL OPEN ON THIS NAME: the board carries a forward P/E of 53.19 against a vendor figure of '
-                    '45.50, unreconciled since before 10 September. That must be settled before any Tranche 2, not '
-                    'after.',
-            'd': '2026-09-17',
-            'k': 'tranche',
-            't': 'GEV',
-            'w': 'Tranche 1'},
-           {'a': 'BUY',
-            'amt': 6238.85,
-            'c': 'confirmed',
-            'cond': '⚠️ PRICE CHANGED MATERIALLY BEFORE THE TRANCHE. PANW CLOSED 373.94 ON MONDAY 14 SEPTEMBER, UP '
-                    '13.09% IN ONE SESSION, against the 330.65 this board carried from 11 September. CRWD rose 13.85% '
-                    'and Zscaler 12% the same day. THE CAUSE IS SOURCED AND IT IS THE SAME EVENT THAT KNOCKED THE '
-                    'NIKKEI DOWN: the AI-safety warnings of 12-14 September. Semiconductors fell and CYBERSECURITY '
-                    'ROSE ON THE SAME TAPE, on the reasoning that a more dangerous threat environment expands security '
-                    'budgets. || WHAT THE PREMIUM COSTS, EXACTLY: 6,238.85 buys about 16.68 shares at 373.94 against '
-                    'about 18.87 at 330.65 - ABOUT 2.2 FEWER SHARES. In portfolio terms it is 13% worse on 13% of '
-                    "Thursday's 46,526.13 of deployment, which is roughly 790 DOLLARS of damage on the day's money. || "
-                    '⚠️ AND THE TRANCHE STILL PROCEEDS IN FULL. HERE IS WHY, AND IT IS A CONSISTENCY ARGUMENT RATHER '
-                    'THAN A PRICE ONE. On 14 September this board told Salee, about VRT, that a dollar amount on a '
-                    'date beats a price with no date, and that waiting for a level that may never arrive is how people '
-                    'end up owning fourteen shares forever. IF I NOW DELAY PANW BECAUSE THE PRICE WENT UP, I AM DOING '
-                    'THE SAME THING IN REVERSE - letting a price level override a written date. A rule that only '
-                    'survives when it is convenient is not a rule. 790 dollars is not worth breaking it for. || ⚠️ '
-                    'WHAT WOULD HAVE CHANGED MY MIND: a move this size driven by nothing, or one that took the '
-                    'position past its budget. Neither applies - the budget is 11,000 with only 3,760.62 spent, so '
-                    'this is rung 2 of a multi-rung plan and a poor entry is recoverable by the later rungs. ⚠️ AND '
-                    'THE HONEST RISK: Dan Ives said on the record that he expected the AI names to recover quickly '
-                    'from this same news, which implies the security pop may fade too. If PANW gives back the 13% by '
-                    'the October review, the later rungs buy it cheaper and the plan works as designed. Conviction '
-                    'HIGH on proceeding. || ⚠️ DATA FAULT FOUND AND FIXED ON 16 SEPTEMBER: THIS TRANCHE APPEARED TWICE '
-                    'ON THE 17 SEPTEMBER SCHEDULE - once as "planned" and once as "confirmed" - BOTH FOR 6,238.85. It '
-                    'was the only duplicated tranche row on the whole board (every other date/ticker pair appears '
-                    'once). The two rows have been merged into this one. NO MONEY WAS EVER DOUBLE-COMMITTED - the day '
-                    'total was always 46,526.13 counting PANW once - but a reader of the schedule would have seen '
-                    '52,764.98 and that was wrong. The original wording is preserved below. || Cybersecurity was only '
-                    '$7,675 of $20,000 deployed - one of the two largest unfunded non-AI groups. || ⚠️⚠️ WHAT WOULD '
-                    'CHANGE MY MIND (written 14 Sep) - AND THIS ONE NEEDS THE HARSHEST TEST OF THE SIX, BECAUSE ITS '
-                    'TRAILING P/E IS 888.23. That number is real: a 70.36% gross margin sitting on a 2.67% NET margin '
-                    'means almost the entire gross profit is being spent before it reaches the bottom line. THE TEST '
-                    'IS THAT THE GAP MUST CLOSE: GAAP NET MARGIN MUST REACH 8% WITHIN FOUR QUARTERS, or Tranche 2 does '
-                    'not go in. A SECOND test: revenue growth falling below 18%, against 24.5% today. ⚠️ A Rule of 40 '
-                    'of 60.3 is genuinely excellent and is why this is funded at all - but a company earning 2.67% net '
-                    'on 70% gross is spending its way to growth, and if the spending does not convert, the multiple '
-                    'has nothing underneath it.',
-            'd': '2026-09-17',
-            'k': 'tranche',
-            't': 'PANW',
-            'w': 'Tranche 1 - ⚠️ PROCEEDS IN FULL, but Salee is paying a 13% news premium and must know it.'},
-           {'a': 'BUY',
-            'amt': 15000,
-            'c': 'planned',
-            'cond': 'Forward P/E 18.4 on a 64.2% gross margin and 30.6% revenue growth - best risk-adjusted name on '
-                    'the board. Remaining $10,078 waits for the October print. || ⚠️ WHAT WOULD CHANGE MY MIND '
-                    '(written 14 Sep): MONTHLY REVENUE IS THE TELL AND IT COMES EVERY MONTH - TSMC reports it around '
-                    'the 10th. TWO CONSECUTIVE MONTHS OF YEAR-ON-YEAR REVENUE GROWTH BELOW 20% would stop Tranche 2, '
-                    'against 30.6% today. A SECOND test: gross margin falling below 55% on any quarterly report, '
-                    'against 64.23% today - that would mean either pricing power or the N2 ramp is going wrong. This '
-                    'is the largest single allocation on the board at 74,000 and the cheapest quality on it at 18.15 '
-                    'times forward earnings, so the bar to stop buying is deliberately high and deliberately numeric.',
-            'd': '2026-09-17',
-            'k': 'tranche',
-            't': 'TSM',
-            'w': 'Tranche 1 - core position'},
-           {'a': 'BUY',
-            'amt': 5000,
-            'c': 'planned',
-            'cond': 'Digital Fintech was $0 deployed. NOT bought for valuation - PEG 2.11, only 10.3% upside. Bought '
-                    'because Visa never lends, so it carries no credit risk. Ballast, not engine. || ⚠️ WHAT WOULD '
-                    'CHANGE MY MIND (written 14 Sep): THIS BUY OPENS A NEW GROUP AND IS THE ONLY NAME OF THE SIX WE DO '
-                    'NOT ALREADY OWN - zero shares held today. Visa is here for the quality: an 80.18% gross margin '
-                    'and a 50.78% net margin, the best pair on the entire board. THE TEST IS PAYMENT VOLUME: two '
-                    'consecutive quarters of total payments volume growth below 5% would stop Tranche 2, against '
-                    'revenue growth of 14.37% today. A SECOND test: net margin falling below 45%, which would mean '
-                    'either pricing or the interchange regime has changed. ⚠️ AND ONE NON-FINANCIAL TEST THAT MATTERS '
-                    'MORE THAN BOTH: an adverse final ruling in any interchange or anti-steering case that forces a '
-                    'change to the business model. A 50% net margin invites regulators.',
-            'd': '2026-09-17',
-            'k': 'tranche',
-            't': 'V',
-            'w': 'Tranche 1 - opens group 14'},
-           {'a': 'BUY',
-            'amt': 6475.56,
-            'c': 'planned',
-            'cond': 'AI infrastructure, group 17 Power. || ⚠️ WHAT WOULD CHANGE MY MIND (written 14 Sep): THE '
-                    'DISCLOSURE TEST, ALREADY ON THE SCHEDULE FOR THE Q3 PRINT. Vertiv published organic orders up '
-                    'about 252%, backlog of 15.0 BILLION up 109% and book-to-bill of about 2.9x in its Q4 2025 '
-                    'release, then published NONE of the three in Q1 2026 or Q2 2026. IF Q3 MAKES IT THREE CONSECUTIVE '
-                    'QUARTERS WITH NO ORDER FIGURES, TRANCHE 2 DOES NOT GO IN and the 21,000 budget is re-underwritten '
-                    'in December. A SECOND test: adjusted operating margin falling below 20%, against guidance of '
-                    '23.3-24.3%. ⚠️ Note this name is 61.01 times TRAILING earnings - the most expensive thing being '
-                    'bought on Thursday.',
-            'd': '2026-09-17',
-            'k': 'tranche',
-            't': 'VRT',
-            'w': 'Tranche 1'},
-           {'a': 'WATCH',
-            'amt': None,
-            'c': 'planned',
-            'cond': '⚠️ A SECOND CENTRAL BANK ON THE CALENDAR THAT WAS NOT THERE BEFORE. The BoJ meets 17-18 SEPTEMBER '
-                    'with the decision on Friday 18th; the policy rate is 1.0% after a 25bp rise in June 2026, it was '
-                    'held in July on an 8-1 vote with one member dissenting FOR 1.25%, and consensus expects 1.25%. '
-                    'GOVERNOR KAZUO UEDA SIGNALLED ON 2 SEPTEMBER THAT EVERY MEETING IS LIVE - ⚠️ though I could not '
-                    'retrieve his verbatim words: NOT FOUND. ⚠️ WHY IT MATTERS HERE: our six Tranche-1 buys land on '
-                    'THURSDAY 17 SEPTEMBER, i.e. BETWEEN the Fed on Wednesday and the BoJ on Friday, rather than '
-                    'cleanly after one decision. THAT STILL CHANGES NOTHING - a tranche is a dollar allocation, not a '
-                    'share count. The yen has strengthened about 3.56% in a month and sits near 154.34 per dollar. A '
-                    'hawkish BoJ strengthens the yen further, which pressures Japanese exporters and can unwind '
-                    'yen-funded carry positions globally. WATCH, PLACE NOTHING.',
-            'd': '2026-09-18',
-            'dl': 'Bank of Japan decision, ~03:00 GMT',
-            'k': 'macro',
-            't': '',
-            'w': 'BANK OF JAPAN expected to raise 1.00% to 1.25% - the DAY AFTER our six buys'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'confirmed',
-            'cond': '⚠️ ADDED 14 SEP - THIS WAS MISSING FROM OUR BOARD AND IT SITS ONE DAY AFTER SIX BUYS TOTALLING '
-                    '46,526.13. Verified against the Cboe 2026 expiration calendar and the CME E-mini S&P contract '
-                    'specification (third Friday of the quarter-end month). || WHAT IT IS, PLAINLY: four times a year, '
-                    'three different kinds of derivative contract all expire on the same morning. Dealers who have '
-                    'been hedging those contracts must unwind, and the unwinding is mechanical - it has nothing to do '
-                    'with whether a company is good or bad. Volume on the open and the close is several times normal '
-                    'and prices can move sharply in both directions within minutes. || WHY IT MATTERS TO US THIS '
-                    'QUARTER: BoJ decides the same day, and our six tranches were placed the evening before. A red '
-                    'Friday 18 September on any of CEG, GEV, PANW, TSM, V or VRT is NOT evidence the tranche was '
-                    'wrong. Do not judge a buy by the first session after a triple witching. || ACTION: none. We do '
-                    'not trade the expiry. This row exists so a violent Friday is not misread as a thesis failure.',
-            'd': '2026-09-18',
-            'k': 'macro',
-            't': '',
-            'w': '⚠️ TRIPLE WITCHING - quarterly expiry of index futures, index options and single-stock options, US '
-                 'cash open.'},
-           {'a': 'BUY',
-            'amt': 25577.03,
-            'c': 'confirmed',
-            'cond': 'EXACTLY AS PLANNED AND AT OR INSIDE EVERY LIMIT - THIS IS THE FIRST TIME IN WEEKS THAT APPROVED '
-                    'MONEY BECAME INVESTED MONEY ON SCHEDULE, AND IT DESERVES SAYING. || THE FILLS: CONSTELLATION '
-                    'ENERGY 22 SHARES AT $264.35 FOR $5,828.15 - the limit was $264.35 and it filled exactly there. '
-                    'TAIWAN SEMICONDUCTOR 35 SHARES AT $425.80 FOR $14,934.89 - limit $425.80, filled exactly. VISA 13 '
-                    'SHARES AT AN AVERAGE OF $369.5165 FOR $4,813.99 - the limit was $369.80 and it filled BELOW it, '
-                    'which is the small reward for using a limit order rather than a market order. ALL THREE WERE DAY '
-                    'ORDERS AND ALL THREE WERE DONE. || WHAT THE THREE BUYS DID TO THE BOARD: CEG GOES FROM 15 SHARES '
-                    'AND $4,040.98 TO 37 SHARES AND $9,869.13, LEAVING $7,130.87 OF ITS $17,000 UNSPENT. TSM GOES FROM '
-                    '112.5 SHARES AND $39,921.53 TO 147.5 AND $54,856.42, LEAVING $19,143.58 OF ITS $74,000. VISA '
-                    'OPENS AT 13 SHARES - ITS FIRST EVER POSITION - LEAVING $4,186.01 OF ITS $9,000. 💡 VISA MATTERS '
-                    "MORE THAN ITS SIZE SUGGESTS: LAST NIGHT'S MOAT RANKING PUT IT SECOND OF 81 NAMES ON THIS BOARD, "
-                    'AND UNTIL TONIGHT WE OWNED NONE OF IT. || THE FABRINET SALE: 3 SHARES AT $406.22 FOR PROCEEDS OF '
-                    '$1,210.07 AGAINST A COST OF $1,604.56 - A REALISED LOSS OF $394.49. ⚠️ AND NOTE WHAT FABRINET '
-                    'WAS: ONE OF THE EIGHT POSITIONS HELD WITH NO APPROVED BUDGET, IDENTIFIED LAST NIGHT. SELLING IT '
-                    'RESOLVES ONE ORPHAN. SEVEN REMAIN, HOLDING $20,193.79 - AND ONE OF THOSE SEVEN TURNED OUT NOT TO '
-                    'EXIST AT ALL. || ⚠️ THE REJECTED ORDER IS NOT A TECHNICAL GLITCH - SEE THE SALESFORCE ROW. A SELL '
-                    'ORDER FOR SHARES THAT ARE NOT THERE IS REJECTED BY THE BROKER, AND THAT IS ALMOST CERTAINLY WHAT '
-                    'HAPPENED. || THE SIX-NAME PLAN IS NOW HALF DONE. STILL TO PLACE ON MONDAY 21 SEPTEMBER - NOT '
-                    'FRIDAY, BECAUSE FRIDAY IS TRIPLE WITCHING AND THE BANK OF JAPAN: GEV, VRT AND PANW. ⚠️ '
-                    'RECALCULATE ALL THREE LIMITS FROM THE LIVE LAST TRADED PRICE PLUS 1%, NOT FROM ANY NUMBER IN AN '
-                    'OLD MESSAGE. AT THE 17 SEPTEMBER CLOSES THAT MEANS ROUGHLY GEV $934.18, VRT $243.90 AND PANW '
-                    '$379.21 - BUT CHECK THE LIVE PRICE FIRST.',
-            'd': '2026-09-18',
-            'dl': '✅ THREE BUYS AND ONE SELL EXECUTED 17 SEPTEMBER - the plan was followed',
-            'k': 'trade',
-            't': 'CASH',
-            'w': 'CEG 22 @ $264.35, TSM 35 @ $425.80 AND V 13 @ $369.5165 ALL FILLED. FN 3 SOLD @ $406.22. ⚠️ THE CRM '
-                 'SELL AT $260 WAS REJECTED. NET CASH OUT $24,366.96.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'confirmed',
-            'cond': '⚠️ THE HONEST HEADLINE FIRST: NO TIER-ONE SOURCE EXPLAINING THE 17 SEPTEMBER RALLY COULD BE '
-                    'RETRIEVED. Reuters, CNBC, Bloomberg and the Wall Street Journal were all unfetchable. SO WHAT '
-                    'FOLLOWS IS MECHANISMS, NOT A VERIFIED CAUSE, AND IT IS LABELLED AS SUCH. The one sourced '
-                    'characterisation found was tier-two and called it "a fast counter-trend squeeze" driven by "heavy '
-                    'institutional call buying and short covering" after weeks of underperformance - EXPLICITLY NOT A '
-                    'SUSTAINED REVERSAL. || WHAT ACTUALLY HAPPENED, IN ORDER. 16 SEPTEMBER, THE DAY OF THE HIKE: DOW '
-                    'MINUS 1.21%, S&P MINUS 0.45%, NASDAQ MINUS 0.01%. 17 SEPTEMBER, THE DAY AFTER: SEMICONDUCTORS LED '
-                    'EVERYTHING - ALAB PLUS 9.06%, INTC PLUS 7.67%, ORCL PLUS 5.19%, MRVL PLUS 4.81%, CRDO PLUS 4.19%, '
-                    'ALL VERIFIED TO THE CENT AGAINST TWO INDEPENDENT SOURCES. So the market fell on the news and rose '
-                    'the next day. || THE FOUR MECHANISMS THAT PLAUSIBLY EXPLAIN IT, STRONGEST FIRST. (1) THE HIKE WAS '
-                    'ALREADY IN THE PRICE. Markets do not react to events, they react to the DIFFERENCE between the '
-                    'event and what was expected. A 0.25% rise that everyone expected is not news on the day it '
-                    'happens - it was news weeks earlier when people started expecting it. 💡 THINK OF THE SUBWAY '
-                    'SHOPS: IF EVERY SUPPLIER HAS BEEN TELLING SALEE FOR A MONTH THAT BREAD WILL COST 2% MORE, THE DAY '
-                    'THE INVOICE ARRIVES IS NOT A SHOCK. HE ALREADY CHANGED HIS PRICES. (2) A RATE RISE IS A STATEMENT '
-                    'ABOUT THE ECONOMY, NOT ONLY ABOUT MONEY. A central bank raises rates when it believes growth is '
-                    'strong enough to bear it. For companies whose profits depend on a capital-spending boom, "the '
-                    'economy is strong" can outweigh "borrowing costs 0.25% more." (3) 🎯 AND THIS IS THE ONE WORTH '
-                    'REMEMBERING, BECAUSE IT IS ABOUT OUR OWN BOARD. A RATE RISE HURTS MOST THE COMPANIES WHOSE '
-                    'PROFITS ARE FAR IN THE FUTURE, BECAUSE MONEY PROMISED IN 2035 IS WORTH LESS WHEN INTEREST RATES '
-                    'ARE HIGHER. NVIDIA EARNED $59.7 BILLION LAST QUARTER. ITS VALUE IS NOT MOSTLY IN 2035 - IT IS '
-                    'LARGELY IN THE CASH IT IS EARNING NOW. A company earning nothing today is far more sensitive to '
-                    'the rate than a company earning tens of billions today. ⚠️ BUT I WILL NOT OVERSTATE THIS: ROCKET '
-                    'LAB, WHICH EARNS NOTHING, ALSO ROSE 6.72% THAT DAY. THE MECHANISM IS REAL; IT WAS NOT THE ONLY '
-                    "THING OPERATING. (4) SOME OF IT WAS NOT THE FED AT ALL. Intel's jump had a sourced "
-                    'company-specific driver - reported SK hynix talks over an Ohio memory site. THAT IS NOT A '
-                    'MONETARY-POLICY STORY IN ANY SENSE. || 🎯 THE LESSON THAT MATTERS MORE THAN THE EXPLANATION: THIS '
-                    'BOARD WROTE A RULE BEFORE THE MEETING - PROCEED WITH THE TRANCHES UNLESS THE MARKET FALLS MORE '
-                    'THAN 3%. IT FELL 1.21% AT WORST. THE RULE SAID GO, AND SALEE WENT, AND THE THREE BUYS FILLED AT '
-                    'OR INSIDE EVERY LIMIT. ⚠️ HAD THERE BEEN NO WRITTEN RULE, THE 16 SEPTEMBER HEADLINES - "Dow, S&P '
-                    '500 plummet after Fed hikes, forecasts further hikes ahead" - WOULD HAVE MADE BUYING THE NEXT DAY '
-                    'FEEL RECKLESS. IT WAS NOT RECKLESS. IT WAS THE PLAN. A TWO-DAY MARKET MOVE IS NOISE; A WRITTEN '
-                    'THRESHOLD IS A DECISION. THAT IS THE WHOLE ARGUMENT FOR WRITING RULES IN ADVANCE, AND IT JUST '
-                    'PAID FOR ITSELF.',
-            'd': '2026-09-18',
-            'dl': 'Q1 ANSWERED - why stocks rose the day AFTER a rate rise, and why the written rule mattered more',
-            'k': 'thesis',
-            't': 'CASH',
-            'w': 'THE HIKE WAS ALREADY IN THE PRICE; A RISE SIGNALS CONFIDENCE IN GROWTH; AND COMPANIES EARNING BIG '
-                 'MONEY TODAY ARE LESS RATE-SENSITIVE THAN COMPANIES EARNING NOTHING. ⚠️ BUT NO TIER-ONE SOURCE COULD '
-                 'BE RETRIEVED - THESE ARE MECHANISMS, NOT A VERIFIED CAUSE.'},
-           {'a': 'DECIDE',
-            'amt': 0,
-            'c': 'done',
-            'cond': '⚠️⚠️ THIS IS THE MOST IMPORTANT THING ON THE BOARD TONIGHT AND IT NEEDS SALEE TO CHECK ONE '
-                    'SCREEN. THE BOARD CARRIED 21 SALESFORCE SHARES AT A COST OF $3,749.91. POEMS DOES NOT LIST '
-                    'SALESFORCE IN THE POSITIONS AT ALL, AND THE SELL ORDER FOR 21 SHARES AT $260 WAS **REJECTED**. || '
-                    '🎯 I DID NOT GUESS AT THIS. THE ARITHMETIC PROVES IT, TWICE, INDEPENDENTLY. PROOF ONE - THE '
-                    "POSITION TOTAL. Board invested capital after tonight's four trades comes to $597,032.57. POEMS "
-                    "PRINTS A TOTAL OPEN COST OF $593,282.66. THE DIFFERENCE IS $3,749.91, WHICH IS SALESFORCE'S COST "
-                    'TO THE PENNY. PROOF TWO - THE CASH. Board cash of $236,324.23 less the four transactions POEMS '
-                    'itself printed (CEG minus 5,828.15, TSM minus 14,934.89, FN plus 1,210.07, V minus 4,813.99, a '
-                    'net of minus 24,366.96) gives $211,957.27. POEMS SHOWS $217,447.38. THE GAP IS $5,490.11. || 💡 '
-                    'ONE EVENT EXPLAINS BOTH GAPS: SALESFORCE WAS SOLD AND THIS BOARD NEVER RECORDED IT. The proceeds '
-                    'are already sitting in the cash balance, which is why cash is HIGHER than my arithmetic, and the '
-                    'shares are already gone, which is why the position total is LOWER. That is also why a sell order '
-                    'for shares we no longer hold was rejected. || ⚠️ WHAT I HAVE DONE AND DELIBERATELY NOT DONE. I '
-                    'HAVE ZEROED THE POSITION AND SET CASH TO THE POEMS FIGURE. I HAVE **NOT** BOOKED A REALISED GAIN, '
-                    'BECAUSE I DO NOT HAVE THE SALE PRICE. Working backwards, $5,490.11 of proceeds on 21 shares after '
-                    'an $8.56 commission implies a sale price near $261.85 and a gain of about $1,740.20 - BUT THAT IS '
-                    'A RECONSTRUCTION, NOT A RECORD, AND I WILL NOT PUT A MANUFACTURED NUMBER INTO LIFETIME REALISED. '
-                    'LIFETIME REALISED THEREFORE STANDS AT MINUS $3,459.80 AND IS UNDERSTATED BY ROUGHLY $1,740. || '
-                    'ACTION FOR SALEE, AND IT TAKES TWO MINUTES: OPEN POEMS, GO TO ORDER STATUS, CHANGE "TODAY\'S '
-                    'ORDERS" TO A DATE RANGE COVERING THE LAST SIXTY DAYS, AND FIND THE SALESFORCE SELL. SEND ME THE '
-                    'DATE, QUANTITY AND EXECUTED PRICE AND I WILL BOOK IT PROPERLY. || 🎯 AND THE LESSON, WHICH IS THE '
-                    'SAME ONE THIS BOARD LEARNED LAST NIGHT FROM THE OPPOSITE DIRECTION: SALESFORCE WAS ONE OF THE '
-                    'EIGHT POSITIONS HELD WITH NO APPROVED BUDGET. A NAME WITH NO BUDGET HAS NO CEILING, NO RULE - '
-                    'AND, IT TURNS OUT, NOBODY WATCHING WHETHER IT IS STILL THERE. THE ORPHAN LIST WAS NOT A TIDINESS '
-                    'PROBLEM.',
-            'd': '2026-09-18',
-            'dl': '⚠️⚠️ SALESFORCE IS NOT IN THE ACCOUNT - proved twice by arithmetic, sale never recorded',
-            'k': 'data',
-            't': 'CRM',
-            'w': 'REMOVED FROM BOARD 3 Oct 2026 (Salee approved the rate review and watch-list cut) - watch list cut '
-                 'to 25 (cap 30). | THE BOARD SAID 21 SHARES AT $3,749.91. POEMS DOES NOT LIST IT, AND THE SELL ORDER '
-                 'WAS REJECTED. POSITION ZEROED, CASH SET TO POEMS. ⚠️ REALISED GAIN NOT BOOKED - I DO NOT HAVE THE '
-                 'SALE PRICE AND WILL NOT INVENT ONE.'},
-           {'a': 'BUY',
-            'amt': 19907.88,
-            'c': 'open',
-            'cond': '⚠️⚠️ A CORRECTION TO MY OWN ADVICE, AND IT IS THE FOURTH THIS WEEK. I TOLD SALEE TO PUT DAY TWO '
-                    'ON MONDAY 21 SEPTEMBER RATHER THAN FRIDAY 18, BECAUSE FRIDAY IS TRIPLE WITCHING - the third '
-                    'Friday of the month, when stock options, index options and index futures all expire together and '
-                    'trading volume runs several times normal. THAT FACT IS CORRECT. MY CONCLUSION FROM IT WAS NOT. || '
-                    '💡 I WAS PROTECTING AGAINST A RISK THAT A LIMIT ORDER ALREADY NEUTRALISES. THE DANGER OF A '
-                    'VOLATILE SESSION IS PAYING TOO MUCH. A LIMIT ORDER MAKES THAT IMPOSSIBLE - THE WORST OUTCOME IS '
-                    'NOT AN EXPENSIVE FILL, IT IS NO FILL AT ALL, AND A NON-FILL COSTS NOTHING AND CAN SIMPLY BE '
-                    'RE-PLACED ON MONDAY. I ADDED A DELAY TO GUARD AGAINST A LOSS THAT THE ORDER TYPE HAD ALREADY '
-                    'GUARDED AGAINST. || AND THE DELAY IS NOT FREE, WHICH IS THE POINT THIS BOARD MEASURED ONLY LAST '
-                    'NIGHT: THE FOUR JULY SALES RAISED $15,507.20 AND SIMPLY HOLDING THEM WOULD HAVE BEEN WORTH '
-                    '$2,892.77 MORE - ABOUT 18.7% IN TWO MONTHS - BECAUSE THE CASH WAS NEVER REDEPLOYED. I HAVE SPENT '
-                    "A WEEK TELLING SALEE THAT THE BOARD'S REAL FAULT IS THE DISTANCE BETWEEN A DECISION AND AN ORDER. "
-                    'IT WOULD BE INCONSISTENT TO THEN ADD THREE DAYS TO A DECISION ALREADY MADE, FOR A REASON THE '
-                    'ORDER TYPE HANDLES. CONSISTENCY WITH A STATED PRINCIPLE BEATS CONSISTENCY WITH A PRIOR CALENDAR '
-                    'CHOICE. || ⚠️ I ALSO CITED A BANK OF JAPAN MEETING AS A SECOND REASON FOR MONDAY. I CANNOT SOURCE '
-                    'THAT DATE AND I AM WITHDRAWING IT RATHER THAN LEANING ON IT. NO SOURCED DATE FOUND. || THE ONE '
-                    'PIECE OF THE ORIGINAL CAUTION THAT SURVIVES AND SHOULD BE FOLLOWED: TRIPLE-WITCHING DISTORTION '
-                    'CONCENTRATES IN THE CLOSING AUCTION, WHICH SETS SETTLEMENT PRICES. PLACE EARLY IN THE SESSION AND '
-                    'AVOID THE FINAL THIRTY MINUTES - IN BANGKOK THAT MEANS PLACING BETWEEN 20:30 AND ABOUT 22:00 ON '
-                    'FRIDAY EVENING, NOT NEAR 03:00 ON SATURDAY MORNING. || THE THREE ORDERS, EACH CHECKED AGAINST ITS '
-                    'OWN BUDGET. GEV: 17 September close $924.93, limit $934.18, 8 shares = $7,473.44 plus $8.56 = '
-                    '$7,482.00. Budget $13,000 with $2,147.30 already invested, so $10,852.70 available - FITS, and '
-                    'leaves $3,370.70. VRT: close $241.49, limit $243.90, 26 shares = $6,341.40 plus commission = '
-                    '$6,349.96. Budget $21,000 with $3,524.44 invested, $17,475.56 available - FITS, and leaves '
-                    '$11,125.60. PANW: close $375.46, limit $379.21, 16 shares = $6,067.36 plus commission = '
-                    '$6,075.92. Budget $11,000 with $3,760.62 invested, $7,239.38 available - FITS, and leaves '
-                    '$1,163.46, which is less than one share, SO PALO ALTO IS EFFECTIVELY FULLY DEPLOYED AFTER THIS '
-                    'ORDER. || TOTAL ALL-IN $19,907.88. CASH GOES FROM $217,447.38 TO $197,539.50. INVESTED CAPITAL '
-                    'GOES FROM $593,282.66 TO $613,190.54, WHICH IS 61.3% OF THE MILLION-DOLLAR BOARD - THE HIGHEST IT '
-                    'HAS EVER BEEN. || ⚠️ IF ANY OF THE THREE DOES NOT FILL BY THE CLOSE, DO NOT CHASE IT AND DO NOT '
-                    'RAISE THE LIMIT. RE-PLACE IT ON MONDAY AT THE NEW LAST TRADED PRICE PLUS 1%. A NON-FILL IS NOT A '
-                    'LOSS. Chasing a price upward on a triple-witching Friday is exactly the mistake the limit order '
-                    'exists to prevent, and it is the same error I made with the FN 550 limit and had to withdraw. || '
-                    'THE TIME DIVERSIFICATION SALEE WANTED IS PRESERVED: THURSDAY 17 SEPTEMBER AND FRIDAY 18 SEPTEMBER '
-                    'ARE STILL TWO DIFFERENT SESSIONS AT TWO DIFFERENT PRICES. Splitting across consecutive days '
-                    'rather than across a weekend gives up very little - the purpose was never to wait, it was to '
-                    'avoid putting $45,000 into a single print.',
-            'd': '2026-09-18',
-            'dl': '✅ DAY 2 MOVED FORWARD TO FRIDAY 18 SEPTEMBER - and my Monday advice was wrong',
-            'k': 'trade',
-            't': 'GEV',
-            'w': 'PLACE ALL THREE ON FRIDAY 18 SEPTEMBER, NOT MONDAY. GEV 8 SHARES AT LIMIT $934.18, VRT 26 AT '
-                 '$243.90, PANW 16 AT $379.21 - ALL DAY LIMIT ORDERS, ALL RECALCULATED FROM VERIFIED 17 SEPTEMBER '
-                 'CLOSES. TOTAL $19,907.88 INCLUDING $25.68 OF COMMISSION.'},
-           {'a': 'BUY',
-            'amt': 19500.640000000003,
-            'c': 'confirmed',
-            'cond': '🎯 THE THING WORTH RECORDING IS NOT THAT THE ORDERS FILLED. IT IS **HOW** THEY FILLED. I GAVE '
-                    'THREE LIMITS CALCULATED AS THE 17 SEPTEMBER CLOSE PLUS 1%: PANW $379.21, VRT $243.90, GEV '
-                    '$934.18. **SALEE USED $358.30, $242.50 AND $931.00 - LOWER ON EVERY ONE - AND EVERY ONE FILLED.** '
-                    '|| THE ARITHMETIC OF THAT DECISION: PANW 16 SHARES AT $357.6224 AGAINST MY $379.21 IS **$345.40 '
-                    'BETTER**. VRT 26 AT $242.50 AGAINST $243.90 IS $36.40 BETTER. GEV 8 AT $931.00 AGAINST $934.18 IS '
-                    '$25.44 BETTER. **TOTAL $407.24 BETTER THAN THE PLAN I WROTE**, on a $19,500 order - just over 2%. '
-                    "|| 💡 AND PANW FILLED AT **$357.6224**, WHICH IS BELOW SALEE'S OWN $358.30 LIMIT AND IS NOT A "
-                    'ROUND NUMBER - it is the weighted average of several partial fills. THAT IS THE SECOND TIME IN '
-                    'TWO SESSIONS A LIMIT ORDER HAS FILLED BELOW ITS OWN CEILING, AFTER VISA ON 17 SEPTEMBER AT '
-                    '$369.5165 AGAINST A $369.80 LIMIT. || 🎯 THE LESSON, AND IT CUTS AGAINST ME: **MY PLUS-1% RULE IS '
-                    'A SAFETY MARGIN, NOT A TARGET.** I have been treating the last close plus 1% as the right limit. '
-                    'It is actually the WIDEST limit that is still safe. Salee set tighter ceilings, accepted the risk '
-                    'of a non-fill, and was paid $407.24 for it. ⚠️ THE RULE SHOULD BE RESTATED: **PLUS 1% IS THE '
-                    'MAXIMUM, NOT THE RECOMMENDATION. START AT OR NEAR THE LAST CLOSE AND ONLY WIDEN TOWARD PLUS 1% IF '
-                    'A FILL MATTERS MORE THAN THE PRICE.** That goes into the method for 10 December. || THE POSITIONS '
-                    'AFTER THESE FILLS: PANW: 16 shares at 357.6224 for $5,730.52 all-in, taking it from 22 shares and '
-                    '$3,760.62 to 38 shares and $9,491.14 against a $11,000 budget, leaving $1,508.86 || VRT: 26 '
-                    'shares at 242.5000 for $6,313.56 all-in, taking it from 14 shares and $3,524.44 to 40 shares and '
-                    '$9,838.00 against a $21,000 budget, leaving $11,162.00 || GEV: 8 shares at 931.0000 for $7,456.56 '
-                    'all-in, taking it from 2 shares and $2,147.30 to 10 shares and $9,603.86 against a $13,000 '
-                    'budget, leaving $3,396.14. || ⚠️ PALO ALTO IS NOW EFFECTIVELY FULLY DEPLOYED - $1,508.86 REMAINS, '
-                    'WHICH IS FOUR SHARES. AND NOTE THE GOOD NEWS HIDDEN IN THE CHEAPER FILL: BECAUSE PANW CAME IN '
-                    '$345 BELOW MY LIMIT, IT LEAVES **MORE** BUDGET HEADROOM THAN PLANNED, NOT LESS. || ⚠️ CASH IS '
-                    '**COMPUTED, NOT READ FROM POEMS**: $217,447.38 LESS $19,500.64 IS $197,946.74. The three executed '
-                    'prices and quantities come from the POEMS order screen and the $8.56 commission is the known flat '
-                    'rate, so the arithmetic is sound - BUT THE LAST TIME I ASSUMED A CASH FIGURE THE BOARD WAS '
-                    'CARRYING A PHANTOM SALESFORCE POSITION. **SALEE: SEND THE POEMS LIVE CASH BALANCE AND POSITIONS '
-                    'SCREEN WHEN CONVENIENT AND I WILL RECONCILE TO THE PENNY.** || ⚠️ AND THE SALESFORCE QUESTION IS '
-                    'STILL OPEN FROM 18 SEPTEMBER: 21 shares at $3,749.91 vanished from the account, the proceeds are '
-                    'in the cash, and lifetime realised is understated by roughly $1,740. THE TRADE HISTORY LOOKUP HAS '
-                    'NOT YET BEEN DONE. || 🎯 AND THE BIGGER PICTURE, WHICH IS THE REAL HEADLINE: **THE SIX-NAME PLAN '
-                    'IS COMPLETE.** Across 17 and 18 September, $44,867.67 MOVED FROM CASH INTO SIX COMPANIES, EVERY '
-                    'ONE AT OR INSIDE ITS LIMIT. Invested capital rises to $612,783.30 - **61.3% OF THE BOARD, THE '
-                    'HIGHEST IT HAS EVER BEEN** - and cash falls to $197,946.74, under $200,000 for the first time. '
-                    'AFTER A MONTH OF ME WRITING THAT THE FAULT WAS THE DISTANCE BETWEEN A DECISION AND AN ORDER, '
-                    'SALEE CLOSED THAT DISTANCE TWICE IN TWO DAYS.',
-            'd': '2026-09-19',
-            'dl': '✅✅ ALL THREE DAY-2 ORDERS FILLED - AND SALEE BEAT MY LIMITS BY $407.24',
-            'k': 'trade',
-            't': 'CASH',
-            'w': 'PANW 16 AT $357.6224, VRT 26 AT $242.50, GEV 8 AT $931.00. TOTAL $19,500.64 INCLUDING $25.68 '
-                 'COMMISSION. 🎯 SALEE SET **LOWER LIMITS THAN I RECOMMENDED ON ALL THREE** AND ALL THREE STILL FILLED. '
-                 'THAT IS BETTER EXECUTION THAN MY PLAN, BY $407.24.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'confirmed',
-            'cond': 'THE FOLDERS: **01-semiconductor-industry, 02-ai-infrastructure-datacentre, 03-power-and-energy, '
-                    '04-biotech-industry, 05-defence-and-space, 06-market-structure-and-trading, '
-                    '07-valuation-and-method.** Eight images filed, each renamed to a dated, readable name. Plus '
-                    '**slides/README.md**, an index of every slide sent in the last month with its date, its claim and '
-                    'MY VERDICT, colour-coded: green acted on, yellow changed a rule or a field, red no action with '
-                    'the reason, black factually wrong. || ⚠️⚠️ THE WARNING THAT MATTERS MORE THAN THE FOLDERS. WHEN I '
-                    'WENT TO COLLECT THE IMAGES, **ONLY EIGHT WERE STILL ON DISK.** Everything older had already been '
-                    'cleared by the system. THE PICTURES ARE EPHEMERAL. 🎯 **BUT EVERY VERDICT SURVIVED**, because they '
-                    'were written into this board and this repository on the day. SO THE WORKING RULE FROM NOW ON: '
-                    '**SEND THE SLIDE AND ASK ME TO FILE IT THE SAME DAY.** After a few days only the analysis can be '
-                    'recovered, not the image. || 💡 AND THE REASON I BUILT AN INDEX RATHER THAN JUST A FOLDER OF '
-                    'PICTURES: **A SAVED SLIDE WITHOUT ITS VERDICT IS WORSE THAN USELESS - IT IS A CLAIM WITH NO '
-                    'ANSWER ATTACHED.** Re-reading "Intel CEO confirms memory crisis, prices up 5-7x" in six months '
-                    'without the finding that **the quarterly rises had already collapsed from plus 93-98% to plus '
-                    '13-18%** would simply re-plant the original error. THE PICTURE IS THE QUESTION. THE INDEX IS THE '
-                    'ANSWER. || 🎯 AND THE INDEX MAKES ONE THING VISIBLE THAT NO SINGLE REPLY COULD: **COUNT THE GREEN '
-                    'ROWS.** Across twenty-five-plus slides in a month, the genuinely actionable ones are a handful - '
-                    "and the slides' REAL contribution has been something else entirely: **THEY FORCED CHECKS THAT "
-                    'FOUND FAULTS IN OUR OWN BOARD.** The eight orphan positions. The four unruled budgets. The '
-                    'phantom Salesforce holding. The ambiguous Micron gross-margin condition with twelve days to run. '
-                    "The misnamed Group 7. The clock change on 1 November. **NONE OF THOSE CAME FROM A SLIDE'S "
-                    "CONTENT. ALL OF THEM CAME FROM CHECKING A SLIDE AGAINST OUR OWN NUMBERS.** || ON TODAY'S "
-                    'SEMICONDUCTOR MARKET-CAP SLIDE ITSELF, FILED AS THE FIRST ENTRY: THE FIGURES CHECK OUT AGAINST '
-                    'OUR BOARD WITHIN ABOUT 10%, MOSTLY SLIGHTLY STALE - NVDA $5.2T vs our $5.31T, TSM $2.1T vs '
-                    '$2.08T, LRCX AND AMAT EXACT. ⚠️ TWO QUIBBLES: **ARISTA MAKES NETWORK SWITCHES AND SANDISK MAKES '
-                    'MEMORY - NEITHER IS A CHIP DESIGNER**, and **CXMT AT $565bn IS CHINESE AND CANNOT BE BOUGHT '
-                    'THROUGH POEMS.** AND THE DEEPER POINT: **A SIZE CHART IS NOT A RANKING.** NVIDIA IS TWENTY-FOUR '
-                    "TIMES ASML'S MARKET VALUE, AND ASML IS THE ONE COMPANY ON THAT PAGE NOBODY CAN REPLACE.",
-            'd': '2026-09-19',
-            'dl': '🎯 SLIDE LIBRARY CREATED - filed by industry, with the VERDICT not just the picture',
-            'k': 'data',
-            't': 'CASH',
-            'w': 'SALEE ASKED FOR THE SLIDES TO BE SAVED BY CATEGORY. DONE - **slides/ IN THE REPOSITORY, SEVEN '
-                 'INDUSTRY FOLDERS, WITH AN INDEX OF EVERY SLIDE AND ITS VERDICT.** ⚠️ AND A WARNING FOUND WHILE DOING '
-                 'IT: **ONLY THE LAST 8 IMAGES WERE STILL ON DISK. THE OTHER ~25 PICTURES ARE ALREADY GONE.**'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'confirmed',
-            'cond': '⚠️⚠️ **NOTHING TO BUY HERE, AND ONE THING TO GUARD AGAINST.** Announced by S&P Dow Jones Indices '
-                    'on 4 September 2026, effective 21 September. || **BE IS THE ONE THAT CONCERNS US.** On 5 '
-                    'September this board recorded a formal NO on Bloom Energy and reconfirmed it the same day: live '
-                    'securities class action with a LEAD-PLAINTIFF DEADLINE OF 28 SEPTEMBER, class period 27 Feb 2025 '
-                    'to 8 Jul 2026, arising from a Hunterbrook report alleging Bloom understated its reliance on '
-                    'scandium from China; EV/EBITDA 118; price-to-FCF 76; debt-to-equity 1.71. ⚠️ INDEX INCLUSION '
-                    'MEANS EVERY TRACKER FUND MUST BUY IT, WHICH COMMONLY LIFTS A SHARE PRICE AROUND THE EFFECTIVE '
-                    'DATE. THAT PRICE MOVE IS A MECHANICAL FLOW, NOT A JUDGEMENT ON THE LAWSUIT OR THE BALANCE SHEET. '
-                    'IF BE RISES NEXT WEEK, OUR REASON FOR SAYING NO IS UNCHANGED. The lawsuit deadline falls SEVEN '
-                    'DAYS AFTER inclusion. || 💡 **ILMN IS THE INTERESTING ONE AND STILL NOT A BUY THIS WEEK.** '
-                    'Illumina headed the "tools, not clinical coin flips" list this board drew from the 18-name '
-                    'biotech slide on 19 September - a sequencing-instrument business that sells to every drug '
-                    'programme regardless of which one works, which is the only biotech shape this board has said it '
-                    'would consider. But a name being bought mechanically by every index fund on a known date is the '
-                    'worst week of the year to pay for it. **ACTION: none before 10 December. Then either write ILMN a '
-                    'dated screening row or record that biotech stays at zero deliberately.** || ⚠️ **AXTI JOINS THE '
-                    'SMALLCAP 600** and this board took an AXTI entry decision on 22 August that never produced a '
-                    'budget. Same fault class as SNPS, APP, SE and LHX, one level down.',
-            'd': '2026-09-21',
-            'dl': '⚠️ S&P 500 rebalance takes effect - BE joins, and this board has a written NO on it',
-            'k': 'data',
-            't': '',
-            'w': 'S&P 500 QUARTERLY REBALANCE EFFECTIVE MONDAY 21 SEPTEMBER. **ADDED: BLOOM ENERGY (BE), ILLUMINA '
-                 '(ILMN), EVERPURE (P). REMOVED: MOLSON COORS (TAP), THE TRADE DESK (TTD), BUILDERS FIRSTSOURCE '
-                 '(BLDR).** AXT (AXTI) joins the S&P SmallCap 600; PANW and ANET move into the S&P 100.'},
-           {'a': 'AVOID',
-            'amt': 0,
-            'c': 'confirmed',
-            'cond': 'S&P Dow Jones Indices press release of 4 Sep 2026: Bloom Energy (BE), Illumina (ILMN) and '
-                    'Everpure (P) join the S&P 500 "prior to the open of trading on Monday, September 21, 2026"; '
-                    'Molson Coors (TAP), The Trade Desk (TTD) and Builders FirstSource (BLDR) come out. Stated reason: '
-                    '"The changes ensure that each index is more representative of its market capitalization range." '
-                    '|| ⚠️ INDEX INCLUSION IS NOT A VERDICT ON THE BUSINESS. Every S&P 500 tracker fund must now own '
-                    'BE, which creates forced buying into the 21st - and forced buying is not the same as informed '
-                    'buying. The index committee is matching a market-cap range, not endorsing the accounts. || OUR '
-                    'POSITION IS UNCHANGED AND THE REASONS ARE UNCHANGED: the class-action lead-plaintiff deadline is '
-                    '28 September, the class period runs 27 Feb 2025 to 8 Jul 2026, the allegation is that Bloom '
-                    'understated its reliance on Chinese scandium, and EV/EBITDA is 118. A stock can join the index '
-                    'and still be a bad purchase. ⚠️ IF ANYTHING, INCLUSION MAKES THE ENTRY WORSE, because the index '
-                    'bid is a known, dated, mechanical buyer we would be paying up alongside. || NOT ON THE BOARD, '
-                    'STAYING OFF. Conviction HIGH.',
-            'd': '2026-09-21',
-            'k': 'event',
-            't': 'BE',
-            'w': '⚠️ BLOOM ENERGY JOINS THE S&P 500 before the open - and we are still not buying it.'},
-           {'a': 'ADMIN',
-            'amt': 21000,
-            'c': 'done',
-            'cond': 'Approved by Salee 26 Sep 2026 (proposal-2026-09-26-power-group-expansion-cat-bloom). Power & '
-                    "Electrification was 6.3% of holdings ($47,477) while Oracle's force majeure on Project Jupiter "
-                    'proved the binding constraint is getting power to the site. Rungs, not lumps. Priority 1 '
-                    '(existing approved room) is spent before the two new budget lines.',
-            'd': '2026-09-26',
-            'k': 'admin',
-            't': '',
-            'w': 'POWER GROUP EXPANSION APPROVED. New budget lines opened: CAT 15,000 and BE 6,000. Existing power '
-                 'room 31,663.86 unchanged. Total plan 52,663.86.'},
-           {'a': 'AVOID',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'ERROR AND CORRECTION. On 26 Sep a 6,000 budget was opened for BE as part of the power-group '
-                    'expansion. That proposal did NOT disclose the standing AVOID already on this board, dated 21 Sep, '
-                    'conviction HIGH: a securities class action with a lead-plaintiff deadline of 28 Sep 2026, class '
-                    'period 27 Feb 2025 to 8 Jul 2026, alleging Bloom understated its reliance on scandium from China, '
-                    'and EV/EBITDA of 118. Confirmed 27 Sep against Levi & Korsinsky and Pomerantz filings. Salee '
-                    'spotted the contradiction on the board before any order was placed. The earlier AVOID stands and '
-                    'was never overturned by evidence - only overlooked. NOT ON THE BOARD, STAYING OFF. The 6,000 is '
-                    'released back to the power group. CAT 15,000 is unaffected and rung 1 proceeds on 28 Sep. '
-                    'REOPENING TEST: the litigation resolved or dismissed, AND the scandium supply dependence '
-                    'disclosed and quantified in a filing, AND EV/EBITDA back under 40.',
-            'd': '2026-09-27',
-            'k': 'admin',
-            't': 'BE',
-            'w': '⚠️ BLOOM ENERGY BUDGET REVOKED - the 6,000 line opened on 26 Sep is cancelled and both BUY rungs are '
-                 'deleted.'},
-           {'a': 'AVOID',
-            'amt': 0,
-            'c': 'confirmed',
-            'cond': 'DO NOT BUY. Class period 27 Feb 2025 - 8 Jul 2026; alleges Bloom understated reliance on scandium '
-                    'from China. EV/EBITDA 118. Not on the board and staying off.',
-            'd': '2026-09-28',
-            'k': 'legal',
-            't': 'BE',
-            'w': 'Class action lead-plaintiff deadline'},
-           {'a': 'BUY',
-            'amt': 31663.86,
-            'c': 'done',
-            'cond': 'Already-approved budgets. No new authority needed. Place as five separate POEMS orders. This '
-                    'comes BEFORE any CAT or BE order.',
-            'd': '2026-09-28',
-            'k': 'buy',
-            't': '',
-            'w': 'PRIORITY 1 - DONE. All five existing-room orders filled 28 Sep: VRT 44 at 246.40, CEG 27 at 259.43, '
-                 'VST 49 at 137.3325, GEV 3 at 953.66, ETN 7 at 427.60. Total 30,472.48 incl. commissions.'},
-           {'a': 'BUY',
-            'amt': 5000,
-            'c': 'done',
-            'cond': 'Conviction High. 28.4x forward earnings and 14.5% margin against GE Vernova 55.7x and Vertiv '
-                    '36.6x - the market still prices CAT as a construction-equipment company. Also the only name in '
-                    'the group whose demand does not depend on AI capex alone. No single order above 5,000.',
-            'd': '2026-09-28',
-            'k': 'buy',
-            't': 'CAT',
-            'w': 'CATERPILLAR rung 1 of 3 - DONE. 6 shares at 813.0178, cost 4,886.67 incl. commission (order '
-                 '6151869).'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'confirmed',
-            'cond': 'ADDED 14 SEP - missing from our board. CPI is the number the newspapers print; PCE is the number '
-                    'the Fed actually targets at 2%. They differ because PCE allows for people substituting cheaper '
-                    'goods and weights healthcare differently. When the two disagree, the Fed follows PCE. || This '
-                    'lands the same morning as Jabil and the same day as MICRON - 30 September is the single densest '
-                    'day of the month for us. Confirmed on bea.gov release schedule.',
-            'd': '2026-09-30',
-            'k': 'macro',
-            't': '',
-            'w': "US PCE and CORE PCE (August) - 8:30am ET, Bureau of Economic Analysis. The Fed's own preferred "
-                 'inflation measure.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'confirmed',
-            'cond': 'ADDED 14 SEP. Jabil builds the physical hardware - racks, power, liquid-cooling assemblies - for '
-                    'the hyperscalers, and it guides a FULL NEW FISCAL YEAR on this call rather than one quarter. That '
-                    'forward number is a demand signal for VRT, CEG, GEV and the whole Group 6 power book, from a '
-                    "company with no incentive to talk our book. || Date confirmed from Jabil's own announcement: "
-                    '"Wednesday, September 30, 2026 - 8:30 a.m. ET", results released before the open. || ⚠️ WE DO NOT '
-                    'OWN JBL AND THIS IS NOT A PROPOSAL TO. It is a free read-across that reports 6.5 hours before '
-                    "Micron. Read Jabil's FY27 guidance in the morning, then decide Micron in the evening.",
-            'd': '2026-09-30',
-            'k': 'data',
-            't': '',
-            'w': 'JABIL (JBL) Q4 + FY2026, 8:30am ET - NOT OURS, but the cleanest outside read on AI datacentre '
-                 'hardware demand.'},
-           {'a': 'BUY',
-            'amt': 4000,
-            'c': 'done',
-            'cond': 'SCORED 1 OCT 2026 (Bangkok morning) FROM THE PREPARED REMARKS: FQ4 revenue $54.2bn (guide was '
-                    '$50.0bn, Street $51bn), non-GAAP gross margin 87.0% (up 210bp sequentially; test was at or above '
-                    '86%), EPS $33.42 (guide $30.73). FQ1 2027 GUIDE: revenue $61.5bn plus or minus $1.5bn, gross '
-                    'margin about 86.25%, EPS $38.15 plus or minus $1.00. Both tests pass: margin at or above 86%, and '
-                    'the quarter after is guided UP 13% sequentially at a margin above 85%. 26 Strategic Customer '
-                    'Agreements, $32bn of commitments (mostly cash deposits), covering over 35% of revenue through '
-                    '2030 - up from 16 and $22bn. Micron: agreements completed for the VAST MAJORITY of calendar 2027 '
-                    'HBM bit supply with significant price increases year over year; supply-demand expected much '
-                    'tighter in 2027 and 2028. FY2026 free cash flow $62.3bn against net capex $27.4bn - the '
-                    'FCF-equals-capex worry from FQ3 is resolved. Stock flat after hours around $1,066. || THIS RUNG: '
-                    '$4,000 released. Order Thursday night 1 Oct Bangkok, limit at or below $1,070, not in the first '
-                    '30 minutes. || ⚠️⚠️ TWO WEEKS OUT, AND THE 16 SEPTEMBER SUPERCYCLE RESEARCH CHANGES WHAT TO LOOK '
-                    'FOR ON THE PRINT. DO NOT READ THE REVENUE LINE FIRST. READ THE GROSS MARGIN AND THE GUIDANCE FOR '
-                    'THE QUARTER AFTER. || WHERE MICRON ACTUALLY STANDS, FROM THE FILING: FISCAL Q3 2026, QUARTER '
-                    'ENDED 28 MAY 2026, REPORTED 24 JUNE. REVENUE 41,456 MILLION AGAINST 9,301 MILLION A YEAR EARLIER '
-                    '- UP ABOUT 346%. GAAP GROSS MARGIN 84.6%. GAAP NET INCOME 28,243 MILLION, GAAP DILUTED EPS 24.67. '
-                    'Guidance for fiscal Q4: REVENUE 50.0bn PLUS OR MINUS 1.0bn, GROSS MARGIN ABOUT 86%, GAAP DILUTED '
-                    'EPS 30.73 PLUS OR MINUS 1.00. Sanjay',
-            'd': '2026-09-30',
-            'k': 'earnings',
-            't': 'MU',
-            'w': 'Q4 FY2026 scored 1 Oct - PASSED. Rung fires: $4,000'},
-           {'a': 'DECIDE',
-            'amt': 0,
-            'c': 'open',
-            'cond': 'THIS IS THE MOST URGENT ITEM ON THE BOARD AND IT HAS TWELVE DAYS TO RUN. || THE FACTS, ALL FROM '
-                    "MICRON'S OWN RELEASE FOR FISCAL Q3 2026, THE QUARTER ENDED 28 MAY 2026, FILED WITH THE SEC. "
-                    'REVENUE $41,456 MILLION AGAINST $9,300 MILLION A YEAR EARLIER - UP 346%. GAAP GROSS MARGIN '
-                    '**84.6%**, NON-GAAP 84.9%. GAAP NET INCOME $28,243 MILLION. GAAP DILUTED EPS $24.67 AGAINST $1.68 '
-                    'A YEAR EARLIER. OPERATING CASH FLOW $25,388 MILLION. AND THE GUIDANCE FOR FISCAL Q4, WHICH '
-                    'REPORTS ON **30 SEPTEMBER 2026**: REVENUE "$50.0bn plus or minus $1.0bn", GROSS MARGIN "~86%", '
-                    'DILUTED EPS "$30.73 plus or minus $1.00". || ⚠️⚠️ HERE IS THE PROBLEM, AND IT IS OURS, NOT '
-                    'MICRON\'S. OUR CONDITION SAYS "GROSS MARGIN AT OR ABOVE 86%". THREE DIFFERENT NUMBERS CURRENTLY '
-                    "ANSWER TO THAT PHRASE: THE BOARD'S OWN gm FIELD OF **72.57**, WHICH IS A TRAILING TWELVE-MONTH "
-                    'FIGURE; THE LATEST REPORTED QUARTER OF **84.6%** GAAP; AND THE COMPANY\'S GUIDE OF **"~86%"** FOR '
-                    'THE QUARTER ABOUT TO BE REPORTED. READ AGAINST THE TRAILING FIELD THE CONDITION CAN NEVER '
-                    'TRIGGER. READ AGAINST THE QUARTER IT IS SITTING EXACTLY ON THE LINE, WITH A TILDE IN FRONT OF IT. '
-                    '|| 💡 THIS IS THE SAME FAULT AS THE PALO ALTO MARGIN AND THE APPLIED MATERIALS GROWTH FIELD, AND I '
-                    'HAVE NOW MET IT THREE TIMES IN A WEEK: A CONDITION WRITTEN WITHOUT NAMING ITS PERIOD IS NOT A '
-                    'CONDITION, IT IS A CONVERSATION WAITING TO HAPPEN AT THE WORST POSSIBLE MOMENT. || THE FIX, TO BE '
-                    'APPLIED BEFORE 30 SEPTEMBER: THE CONDITION MEANS **GAAP GROSS MARGIN FOR THE SINGLE FISCAL '
-                    "QUARTER AS REPORTED IN MICRON'S OWN EARNINGS RELEASE, AT OR ABOVE 86.0%**. NOT TRAILING, NOT "
-                    'NON-GAAP, NOT AN ANALYST FIGURE. AND BECAUSE THE GUIDE IS "~86%", A PRINT OF 85.x IS A **FAIL**, '
-                    'NOT A NEAR-MISS TO BE ARGUED ABOUT ON THE NIGHT. ⚠️ THE SECOND LIMB - "DRAM CONTRACT PRICES STILL '
-                    'RISING" - ALSO NEEDS A SOURCE NAMED NOW: TRENDFORCE\'S PUBLISHED QUARTER-ON-QUARTER CONVENTIONAL '
-                    "DRAM CONTRACT-PRICE CHANGE, POSITIVE. ITS 3Q26 FORECAST IS PLUS 13 TO 18%, SO ON TODAY'S EVIDENCE "
-                    "THAT LIMB PASSES - BUT SEE THE DECELERATION ROW. || THE BOARD'S gm FIELD OF 72.57 IS NOT WRONG - "
-                    'STATING THE PERIOD BEFORE THE VERDICT, IT IS A TRAILING FIGURE AND IS ARITHMETICALLY DEFENSIBLE. '
-                    'BUT IT UNDERSTATES THE CURRENT RUN-RATE BY TWELVE POINTS AND IT IS USELESS FOR TESTING A '
-                    'CONDITION. SAME CONCLUSION AS AMAT: EITHER REFRESH IT OR ADD A SEPARATE LATEST-QUARTER FIELD. || '
-                    'POSITION FOR CONTEXT: MU IS $51,000 APPROVED WITH $22,581.58 INVESTED IN 35.45 SHARES, $28,418.42 '
-                    "UNSPENT, AND IT IS THE BOARD'S SIXTH-RANKED NAME ON THE MOAT MEASURES. THE EXISTING ROWS ARE "
-                    '$4,000 ON 30 SEPTEMBER AND $3,418.42 ON 17 DECEMBER. NOTHING IS BEING CHANGED TONIGHT EXCEPT THE '
-                    'DEFINITION OF THE TEST - AND DEFINING A TEST BEFORE IT IS TAKEN IS NOT MOVING THE GOALPOSTS, IT '
-                    'IS THE OPPOSITE.',
-            'd': '2026-09-30',
-            'dl': '⚠️⚠️ MU - THE 86% CONDITION IS AMBIGUOUS AND MICRON GUIDES TO EXACTLY 86%. DISAMBIGUATE BEFORE THE '
-                  'PRINT.',
-            'k': 'budget',
-            't': 'MU',
-            'w': 'OUR WRITTEN CONDITION RELEASES MU MONEY ONLY IF THE 30 SEPTEMBER PRINT SHOWS GROSS MARGIN AT OR '
-                 'ABOVE 86%. MICRON\'S OWN FQ4 GUIDANCE IS "~86%". ⚠️ AND THE BOARD\'S OWN gm FIELD READS 72.57 WHILE '
-                 'THE LATEST REPORTED QUARTER WAS 84.6% GAAP. THE SAME WORD MEANS THREE DIFFERENT NUMBERS. FIX THIS '
-                 'BEFORE 30 SEPTEMBER, NOT AFTER.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'open',
-            'cond': 'THE SLIDE DESCRIBES **MULTIPLE COMPRESSION**, ALSO CALLED DE-RATING, AND IT IS THE SINGLE MOST '
-                    'IMPORTANT IDEA IN AI INVESTING RIGHT NOW. IN PLAIN TERMS: P/E IS PRICE DIVIDED BY EARNINGS PER '
-                    'SHARE. IF EARNINGS DOUBLE BUT THE SHARE PRICE ONLY RISES A FIFTH, THE P/E **FALLS** EVEN THOUGH '
-                    'NOTHING BAD HAPPENED. THE COMPANY LOOKS CHEAPER EVERY QUARTER WHILE DOING BETTER EVERY QUARTER. '
-                    '|| 🎯 AND THE SLIDE\'S OWN CONCLUSION IS CORRECT AND WORTH READING TWICE: "ดู P/E '
-                    'ต่ำอย่างเดียวไม่พอ! ต้องดูอนาคตธุรกิจ" - LOOKING AT A LOW P/E ALONE IS NOT ENOUGH, YOU MUST LOOK '
-                    'AT THE FUTURE OF THE BUSINESS. THAT IS BETTER ADVICE THAN MOST OF THE TWENTY SLIDES BEFORE IT. || '
-                    "THE ARITHMETIC THAT MAKES IT CONCRETE, RUN ON THIS BOARD'S OWN 17 SEPTEMBER FIELDS. MICRON AT "
-                    '$977.50 ON A FORWARD P/E OF 6.99 IMPLIES FORWARD EARNINGS OF **$139.84 A SHARE**. IF THE MARKET '
-                    'BELIEVED THOSE EARNINGS WERE DURABLE IT WOULD PAY AN ORDINARY SEMICONDUCTOR MULTIPLE OF ABOUT 15 '
-                    'TIMES FOR THEM - WHICH AT $977.50 IMPLIES SUSTAINABLE EARNINGS OF ONLY **$65.17 A SHARE, OR 47% '
-                    'OF THE RUN-RATE**. THE MARKET IS NOT OFFERING A DISCOUNT. IT IS FORECASTING THAT PROFITS MORE '
-                    'THAN HALVE. || 🎯 THIS IS THE **THIRD INDEPENDENT ROUTE TO THE SAME CONCLUSION IN TWENTY-FOUR '
-                    'HOURS**, WHICH IS WHY IT BELONGS ON THE 30 SEPTEMBER ROW AND NOT ON A FUTURE AGENDA. ONE: THE '
-                    'MOAT RANKING PUT MICRON 6th OF 81 AND I WROTE THEN THAT "THE RANKING CANNOT TELL A DURABLE MOAT '
-                    'FROM A GOOD YEAR". TWO: THE MEMORY RESEARCH SHOWED CONVENTIONAL DRAM CONTRACT-PRICE RISES '
-                    'DECELERATING FROM PLUS 93-98% TO PLUS 13-18% IN THREE QUARTERS. THREE: THIS SLIDE SHOWS THE '
-                    'MARKET HAS **ALREADY PRICED THAT IN**. THREE DIFFERENT METHODS, THREE DIFFERENT SOURCES, ONE '
-                    'ANSWER: THESE ARE PEAK-CYCLE EARNINGS AND EVERYONE KNOWS IT. || ⚠️ WHICH SHARPENS THE 30 '
-                    'SEPTEMBER DECISION RATHER THAN SOFTENING IT. THE CONDITION - GAAP GROSS MARGIN FOR THE SINGLE '
-                    'QUARTER AT OR ABOVE 86.0%, AND DRAM CONTRACT PRICES STILL RISING - IS EXACTLY THE RIGHT TEST FOR '
-                    'A PEAK-CYCLE BUSINESS, BECAUSE IT ASKS WHETHER THE PEAK IS STILL RISING RATHER THAN WHETHER THE '
-                    'PRICE LOOKS CHEAP. A 6.99x FORWARD MULTIPLE IS NOT AN ARGUMENT FOR BUYING MORE. IT IS THE MARKET '
-                    "AGREEING WITH OUR CONDITION. || ⚠️ AND NOTE MICRON'S PEG ON OUR BOARD READS **0.03**. Last week "
-                    'this board wrote a full dictionary entry on why PEG is the weakest number on any slide. A PEG of '
-                    '0.03 divides a low multiple by a 695.9% earnings growth rate that obviously cannot repeat, and '
-                    'produces a number that looks like the bargain of the century. IT IS THE SAME ERROR IN A DIFFERENT '
-                    'DRESS. THE SLIDE, TO ITS CREDIT, DOES NOT QUOTE PEG AT ALL.',
-            'd': '2026-09-30',
-            'dl': '🎯 THE DE-RATING SLIDE IS RIGHT, AND IT IS THE THIRD ROUTE TO THE SAME MU CONCLUSION IN 24 HOURS',
-            'k': 'thesis',
-            't': 'MU',
-            'w': 'A FALLING P/E ON RISING EARNINGS IS THE MARKET SAYING "I DO NOT BELIEVE THESE EARNINGS WILL LAST". '
-                 "AT 6.99x FORWARD AND $977.50, THE MARKET IS PRICING MICRON'S SUSTAINABLE EARNINGS AT ABOUT **47% OF "
-                 'THE CURRENT RUN-RATE** - IT EXPECTS PROFITS TO MORE THAN HALVE. THAT IS NOT A BARGAIN. IT IS A '
-                 'FORECAST.'},
-           {'a': 'BUY',
-            'amt': '15000',
-            'c': 'done',
-            'cond': 'THE PRINT: revenue $54.2bn vs $50bn guide, non-GAAP gross margin 87.0%, EPS $33.42; FQ1 2027 '
-                    'guided $61.5bn at 86.25% and EPS $38.15; 26 SCAs with $32bn of deposits covering over 35% of '
-                    'revenue through 2030; vast majority of calendar-2027 HBM bit supply contracted at higher prices; '
-                    'FY26 FCF $62.3bn vs capex $27.4bn; DIO 129 days; first-half FY27 capex about $25bn with '
-                    'second-half construction capex meaningfully higher. || AGAINST THE WRITTEN RULES: $4,000 rung (GM '
-                    'at or above 86% and next quarter guided up) PASSED. $11,000 rule (GM at or above 86% AND '
-                    'TrendForce Q4 DRAM contract prices still rising, +10-15% published 30 Sep) PASSED. $10,000 parked '
-                    '(DRAM bits double-digit two quarters running AND 2027 HBM sold out) FAILED on the bits leg - DRAM '
-                    'bits mid-single-digit, growth was price not volume. $3,418 rung waits for the 17 Dec print. || '
-                    'Honest note: the simplified rule I gave Salee in chat on 30 Sep (full $28,418 if revenue guided '
-                    'at or above $50bn, margin at or above 85% and SCAs expanded) would have released everything. The '
-                    'board rules written on 16 Sep are more specific and more conservative, and they govern. The '
-                    'difference is the $10,000 that waits for volume evidence. || WHAT WOULD CANCEL IT: TrendForce '
-                    'reporting flat or falling DRAM contract prices in any quarter, or FQ1 2027 gross margin printing '
-                    'below 85%.',
-            'd': '2026-10-01',
-            'dl': '🎯 MU Q4 FY2026 SCORED - $15,000 of the $28,418 released; $10,000 stays parked; $3,418 waits for 17 '
-                  'Dec',
-            'k': 'decision',
-            't': 'MU',
-            'w': 'DONE 1 Oct 11:26 PM Bangkok: 14 sh at 1,048 (limit 1,070), 14,680.56 incl. commission, POEMS '
-                 '6386278'},
-           {'a': 'BUY',
-            'amt': '11000',
-            'c': 'done',
-            'cond': 'THE FAULT AS FOUND: the written MU plan described a 40,000 budget while the board carried 51,000, '
-                    'leaving ABOUT 11,000 WITH NO RULE ATTACHED TO IT. The arithmetic ties exactly - 28,418.42 remains '
-                    'of the 51,000 budget, of which 4,000 is the 30 September rung, 3,418.42 the 17 December rung and '
-                    '10,000 was explicitly parked, TOTAL 17,418.42, LEAVING 11,000.00 UNGOVERNED. || ⚠️ THE SUPERCYCLE '
-                    'SLIDE OF 16 SEPTEMBER IS WHAT CLOSED IT, BECAUSE THE RESEARCH BEHIND IT PRODUCED THE RIGHT TEST. '
-                    'THE RULE IS NOW WRITTEN AND IT IS DELIBERATELY HARSH: THE 11,000 IS RELEASED ONLY IF BOTH OF '
-                    "THESE HOLD TOGETHER. (1) MICRON'S FISCAL Q4, REPORTING 30 SEPTEMBER 2026, DELIVERS A GROSS MARGIN "
-                    'AT OR ABOVE THE GUIDED 86% - the company guided revenue of 50.0bn plus or minus 1.0bn and gross '
-                    'margin of about 86% on 24 June. (2) FOURTH-QUARTER 2026 CONVENTIONAL DRAM CONTRACT PRICES ARE '
-                    'STILL RISING QUARTER ON QUARTER when TrendForce publishes them. || ⚠️⚠️ AND THE OTHER HALF OF THE '
-                    'RULE MATTERS MORE: IF DRAM CONTRACT PRICES GO FLAT OR NEGATIVE IN ANY QUARTER, THE 11,000 IS '
-                    "CANCELLED, NOT DEFERRED. It returns to unallocated cash and Micron's budget falls to 40,000, "
-                    'which is what the written plan always said. A parked amount with no cancellation condition is not '
-                    'a plan, it is a drawer. || 📊 THE ONE SERIES THAT MATTERS MORE THAN THE 1.6 TRILLION HEADLINE - '
-                    'CONVENTIONAL DRAM CONTRACT PRICES, QUARTER ON QUARTER (TrendForce): 1Q26 UP TO PLUS 98%. 2Q26 '
-                    'PLUS 58 TO 63%. 3Q26 PLUS 13 TO 18%. ⚠️ PRICES ARE STILL RISING, BUT THE RATE OF INCREASE HAS '
-                    'FALLEN BY ROUGHLY FIVE SIXTHS IN TWO QUARTERS. TrendForce, 3 July 2026, verbatim: "Weaker demand '
-                    'from consumer applications and the impact of a higher comparison base are expected to moderate '
-                    'contract price increases" - and the same release says record prices have reached customers\' '
-                    '"affordability limit". 3Q26 NAND is plus 10 to 15%. THIS IS THE BOARD\'S MEMORY CYCLE GAUGE FROM '
-                    'NOW ON. THE HEADLINE MARKET SIZE IS A LAGGING NUMBER; THE CONTRACT PRICE IS A LEADING ONE. || ⚠️ '
-                    'WHY THE TEST IS BUILT THIS WAY AND NOT ON THE HEADLINE: the 1.6 trillion number is SEVEN TWELFTHS '
-                    'ACTUAL AND FIVE TWELFTHS PROJECTED, and the same body forecast 975 BILLION for 2026 as recently '
-                    'as 2 DECEMBER 2025. A number that has moved 70% in nine months is not a foundation for committing '
-                    '11,000 dollars. A contract price that TrendForce publishes every quarter is.',
-            'd': '2026-10-01',
-            'dl': 'Standing',
-            'k': 'watch',
-            't': 'MU',
-            'w': '✅ 16 SEPTEMBER RULE MET ON THE 1 OCT SCORING - THE $11,000 IS RELEASED. Both legs hold: (1) FQ4 '
-                 'gross margin 87.0% non-GAAP, at or above the guided 86%; (2) TrendForce Q4 2026 outlook published 30 '
-                 'Sep: conventional DRAM contract prices +10-15% QoQ, NAND +15-20%, HBM blended ASP 2027 +121% YoY - '
-                 'still rising. The cancellation clause stays live: if any later quarter prints flat or negative DRAM '
-                 'contract pricing, the money not yet spent returns to cash. Order Thursday night 1 Oct Bangkok, limit '
-                 'at or below $1,070, together with the $4,000 rung: $15,000 total, about 14 shares.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'done',
-            'cond': '⚠️ THE VERDICT IS ALREADY IN AND GOOGLE WON THE PART THAT MATTERED. On Sep 2, 2026 Judge Brinkema '
-                    "REJECTED the DOJ's AdX divestiture - the order reads that the divestiture proposals 'be and are "
-                    "REJECTED' - and ACCEPTED the behavioural remedies as modified by the court. NO BREAKUP. || What "
-                    'does NOT yet exist is the Final Judgment: the parties have 30 days from Sep 2 to propose it '
-                    'jointly, so on or about Oct 2. The Memorandum Opinion is UNDER SEAL, so which behavioural terms '
-                    'survived, what modifications were imposed, the remedy duration and the trustee arrangements are '
-                    'all still unknown. Anyone modelling this today is modelling something not public. || Read the '
-                    'terms when filed; the structural risk that justified holding the tranche back is gone.',
-            'd': '2026-10-02',
-            'k': 'legal',
-            't': 'GOOGL',
-            'w': 'CLEARED 3 Oct: 2 Oct was the deadline for the parties to FILE proposed final judgments, not the '
-                 "judge's ruling. The full remedies opinion unsealed 16 Sep caps what the judgment can contain: "
-                 'worldwide behavioural remedies for 6 years (AdX/DFP open to rivals via Prebid, bid data shared, no '
-                 'AdWords preference, court monitor with source-code access); NO divestiture and NO springing breakup. '
-                 'Nothing materially harsher than the September terms is possible, so the Alphabet hold is lifted: '
-                 'tranche 3 (18,524.08) on 19 Nov stands. Google will appeal the liability finding. | Ad-tech Final '
-                 'Judgment due - the terms, not the verdict'},
-           {'a': 'ADMIN',
-            'amt': 0,
-            'c': 'standing',
-            'cond': 'Set 3 Oct 2026 with the 10-year at 5.28% (30-year 5.63%), WTI 91, Brent ~102, September payrolls '
-                    '+29k. Covers first buys and adds in: Rocket Lab, AeroVironment, AST SpaceMobile, IonQ, Nebius, '
-                    'CoreWeave, IREN, Kratos, Ondas, Oklo and any other name with negative net margin or negative free '
-                    'cash flow. Does NOT touch the 9 Oct and 13 Oct orders (all profitable companies). LIFTED WHEN: '
-                    'the 10-year closes below 4.5%, or the Fed signals cuts. Reason: a bond paying 5%+ with no risk '
-                    'makes distant, uncertain profits worth much less today, so loss-making growth stocks fall '
-                    'hardest.',
-            'd': '2026-10-03',
-            'k': 'admin',
-            't': '',
-            'w': 'RATE RULE (approved by Salee 3 Oct): WHILE THE US 10-YEAR YIELD IS ABOVE 5%, NO NEW MONEY INTO '
-                 'COMPANIES THAT ARE NOT YET PROFITABLE. Existing holdings are kept; only new buys stop.'},
-           {'a': 'ADMIN',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'Removed (31): QCOM, MCHP, AMBA, INTC, AMKR, SKHY, AAOI, AXTI, DELL, IBM, CRM, NOW, SNOW, IREN, '
-                    'NBIS, CRWV, IONQ, OKLO, XE, LEU, NEE, AEP, FPS, HUBB, TEM, ZETA, SHOP, CRCL, ASTS, LUNR, ONDS. '
-                    'Board 94 -> 63 names (38 held incl. ORCL/CRWD/FSLR to be sold, + 25 watch). About $26,200 of '
-                    'budget freed or cancelled and $13,000 paused. Proposal: '
-                    'claude/proposal-2026-10-03-rate-review-and-watchlist-30.md',
-            'd': '2026-10-03',
-            'k': 'admin',
-            't': '',
-            'w': 'RATE REVIEW + WATCH-LIST CUT APPROVED (Salee, 3 Oct): SELL Oracle; stop new money in Vistra and '
-                 'Rocket Lab; cancel L3Harris budget ($9,000); pause Synopsys to December; watch list 56 -> 25 with a '
-                 'cap of 30.'},
-           {'a': 'SELL',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'Free cash flow -28.7bn, the worst on the board: the AI build is funded with debt, and borrowing '
-                    'at 5%+ is what this market punishes; most contracted revenue depends on one customer (OpenAI). '
-                    'Cost 12,228.43; value ~10,672 at the 1 Oct close (-12.7%). Expected commission ~23 (0.214%). '
-                    'Proceeds go to cash for January.',
-            'd': '2026-10-05',
-            'k': 'sell',
-            't': 'ORCL',
-            'w': 'DONE 5 Oct: sold all 75 ORCL at 145.00 - proceeds 10,851.50, realised -1,376.93. SELL ALL 75 ORACLE '
-                 '- approved by Salee 3 Oct. Limit near the market; any US session from Monday 5 Oct.'},
-           {'a': 'SELL',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'LIMIT at live price -0.3%, after 9:00 pm Bangkok. Reason: 148x forward earnings and 0.8% net '
-                    'margin as Fed hike odds rise (72% by 9 Dec); half kept to respect the momentum (all-time high).',
-            'd': '2026-10-05',
-            'k': 'thesis',
-            't': 'CRWD',
-            'w': 'DONE 5 Oct: sold 20 CRWD at 271.25 - proceeds 5,413.27, realised +3,456.21; 20 kept with the $243 '
-                 'stop. SELL HALF - 20 of 40 CRWD on 5 Oct (Salee approved 5 Oct: "yes half CRWD"; was all 40). Ref '
-                 'close 270.04, about 5,401 vs cost of 20 sh 1,957.06 - banks about +3,430. Keep 20 with a stop at '
-                 '$243.'},
-           {'a': 'HOLD',
-            'amt': 0,
-            'c': 'cancelled',
-            'cond': 'Hold 10 shares as a zero-budget back-up. Decide at the 10 Dec review. What would change this: a '
-                    'US policy change that cuts the manufacturing tax credits for US-made solar panels.',
-            'd': '2026-10-05',
-            'k': 'thesis',
-            't': 'FSLR',
-            'w': 'CANCELLED 4 Oct (Salee: "keep FSLR"). Was: sell all 10 FSLR on 5 Oct as an orphan. Kept because it '
-                 'passes every screen - forward P/E 11.3, net margin 32.5%, EPS +38.6% - and selling would only '
-                 'realise about -257 to tidy the board.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'SCORED 8 Oct (TSMC investor site): September NT$511,857m, +54.6% YoY, -0.6% vs August. Q3 total '
-                    'NT$1,494,243m, +51.0% YoY; Jan-Sep +41.1%. Far above the 20% stop line (two months below 20% '
-                    'would stop Tranche 2) - plan unchanged; the 15 Oct gross-margin test (>= 65%) decides the '
-                    'remaining $10,078. Note: a Thai social post quoted Q3 as NT$1,576,900m - wrong; the +51% growth '
-                    'figure is right. || Monthly signal.',
-            'd': '2026-10-08',
-            'k': 'data',
-            't': 'TSM',
-            'w': 'TSMC September monthly revenue - RESULT: NT$511,857m, +54.6% YoY (GREEN)'},
-           {'a': 'BUY',
-            'amt': 9913.37,
-            'c': 'done',
-            'cond': 'Same MU read-across as ASML.',
-            'd': '2026-10-09',
-            'k': 'tranche',
-            't': 'AMAT',
-            'w': 'DONE 9 Oct: 19 at 505.00 (limit 505), 9,615.53 incl. commission. AMAT room left 2,297.84. | Tranche '
-                 '2 - semicap'},
-           {'a': 'BUY',
-            'amt': 8618.32,
-            'c': 'done',
-            'cond': 'Budget raised 20,000 -> 25,000 on Sep 8 with the 5,000 taken from AEP (unspent). 66.8% gross '
-                    'margin, 20.7% revenue growth, 28.5% net margin, 39.3% below its 603.88 high, 33 analysts average '
-                    'fair value 504.15. The only healthcare holding and currently 14.9% underwater.',
-            'd': '2026-10-09',
-            'k': 'tranche',
-            't': 'ISRG',
-            'w': 'NOT FILLED 9 Oct - the 20 at $413 Day limit EXPIRED (ISRG low stayed above 413; POEMS 9 Oct price '
-                 '423.96). CARRIED TO 13 OCT (see that row). | Tranche 2 - healthcare'},
-           {'a': 'BUY',
-            'amt': 6380.24,
-            'c': 'done',
-            'cond': 'LIMIT ORDER AT $705, NOT MARKET (approved 3 Oct; Meta closed 725.93 on 1 Oct). If it has not '
-                    'filled by the 9 Oct close, do NOT chase: the $6,380.24 rolls into rung 2 after Q3 (30 Oct), which '
-                    'then decides up to $12,760.49 on the same Q3 test. || HALF of the $12,760.49 budget left. The old '
-                    'plan ($10,760.49 + $10,000 = $20,760.49) was $8,000 more than the budget allowed; split into two '
-                    "equal rungs at Salee's approval on 21 Sep. Position at approval: 59.5 shares, cost $39,239.51 "
-                    '(avg $659.49), worth $40,597.44 at $682.31, up $1,357.93 (+3.5%). Forward P/E 20.94; revenue '
-                    'growth 28.0%. Limit: last close +1% MAXIMUM, not the recommendation.',
-            'd': '2026-10-09',
-            'k': 'tranche',
-            't': 'META',
-            'w': 'NOT FILLED 9 Oct - the 9 at $705 Day limit EXPIRED (POEMS 9 Oct price 718.67). As written: do NOT '
-                 'chase - the $6,380.24 rolls into rung 2 on 30 Oct after Q3 results. | Tranche 2 - META rung 1 of 2: '
-                 'BUY $6,380.24 as a LIMIT AT $705 (about 9 shares) - Salee approved 3 Oct'},
-           {'a': 'BUY',
-            'amt': 13127.34,
-            'c': 'done',
-            'cond': 'LIMIT ORDER AT $275, not at market (Salee approved 7 Oct): Marvell closed 287.01 on 6 Oct, 13.6% '
-                    'above our average fair value of 252.56 (range 110-385). Up to $13,127.34 = about 47 shares at 275 '
-                    'incl. fees. If not filled on 9 Oct, carry the same limit to the 13 Oct batch and decide there; '
-                    'pay up to $290 only on strong new Marvell news (e.g. a new custom-chip customer). || ⚠️ DATA '
-                    'FAULT CLOSED 14 SEP 2026. THIS ROW SAID 17,127.34 AND THAT WAS WRONG BY EXACTLY 4,000. The budget '
-                    'is 21,000 and 7,872.66 is already invested in 48.5 shares, so the real remaining room is '
-                    '13,127.34. The stale figure had been carried since before the 10 September restructure and was '
-                    'flagged on 9, 11 and 14 September. IT IS NOW CORRECTED IN THE ROW ITSELF. Anyone who had placed '
-                    '17,127.34 would have overspent the line by 4,000 and broken the 1,000,000 budget. || WARNING: '
-                    'rose 7.1% on 4 Sep, cutting upside to consensus from 20.9% to 13.0%. Forward P/E 35.5, EV/EBITDA '
-                    '69, price/FCF 124. || 14 SEP CONTEXT: MRVL appears on BOTH circulating slides this week - the '
-                    "@LeifInvests buy-under list at 190, and the 'BofA 8 stocks' slide. BofA's real 14 Sep note does "
-                    'carry MRVL with a 365 price objective, the second-highest implied upside on its list, against '
-                    '218.82 on 14 Sep. ⚠️ THAT DOES NOT CHANGE THE SIZE OR THE DATE. Q2 FY27 was a record - revenue '
-                    '2.739bn up 37%, data centre 2,171.5m up 46% and accelerating, 79% OF ALL REVENUE. Marvell won the '
-                    'Google TPU custom-silicon agreement on 19 Aug (Google took a warrant over about 58.97m shares). '
-                    '⚠️ BUT THE 10-K DISCLOSES DISTRIBUTOR A AT 37% OF REVENUE AND DIRECT CUSTOMER A AT 14%, AND GAAP '
-                    'NET MARGIN IS ONLY 11.2% (308.0m on 2.739bn) AGAINST A NON-GAAP GROSS MARGIN 5.8 POINTS ABOVE '
-                    'GAAP. Forward P/E 40.1, trailing 73.5. Highest concentration of the eight. Tranche 2 proceeds at '
-                    '13,127.34 on 9 October as planned.',
-            'd': '2026-10-09',
-            'k': 'tranche',
-            't': 'MRVL',
-            'w': 'DONE 9 Oct: 47 at 269.90 (limit 275), 12,712.45 incl. commission. | Tranche 2 - largest line - LIMIT '
-                 'ORDER AT $275 (Salee approved 7 Oct)'},
-           {'a': 'ADMIN',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'Existing shares in these names are HELD, not sold. CDNS and TER kept with budget = current cost. '
-                    'AMZN budget raised by $600.75 to match actual spend. Total budget now $934,604.58.',
-            'd': '2026-10-13',
-            'k': 'admin',
-            't': '',
-            'w': 'BUDGET RESET IN FORCE - withdrawn budgets back to cash: AAPL 12,562.39, ANET 9,414.43, ALAB '
-                 '7,194.53, AVAV 7,241.70, CGNX 7,932.38, LITE 4,627.26, PANW 1,508.86, SE 13,000, RKLB 10,000 = '
-                 '$73,481.55'},
-           {'a': 'BUY',
-            'amt': 6497.8,
-            'c': 'done',
-            'cond': 'MOVED 12 Oct: 13 Oct is a Thai public holiday, so these orders go in on Monday 12 Oct (US session '
-                    '20:30-03:00 Bangkok). || Profitable, priced below the analyst average, and had no rule until now. '
-                    'Limit at or near last close; never more than +1%. US session opens 20:30 Bangkok.',
-            'd': '2026-10-12',
-            'k': 'tranche',
-            't': 'APH',
-            'w': 'DONE 12 Oct: APH 73 at 86.60 = 6,335.33 | Tier A rung 1 of 2 - BUY $6,497.80 (budget reset, 21 Sep)'},
-           {'a': 'BUY',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'REMOVED 8 Oct: the 28 Sep power-group buys already used this budget - CEG budget 17,000.00, '
-                    'invested 16,888.73, room only 111.27, so the old $3,565.43 rung would have overspent. Do NOT '
-                    'place. || Profitable, priced below the analyst average, and had no rule until now. Limit at or '
-                    'near last close; never more than +1%. US session opens 20:30 Bangkok.',
-            'd': '2026-10-13',
-            'k': 'tranche',
-            't': 'CEG',
-            'w': 'SUPERSEDED - NO BUDGET LEFT (Salee approved 8 Oct). Was: Tier A rung 1 of 2 - BUY $3,565.43 (budget '
-                 'reset, 21 Sep)'},
-           {'a': 'BUY',
-            'amt': 5149.51,
-            'c': 'done',
-            'cond': 'MOVED 12 Oct: 13 Oct is a Thai public holiday, so these orders go in on Monday 12 Oct (US session '
-                    '20:30-03:00 Bangkok). || Profitable, priced below the analyst average, and had no rule until now. '
-                    'Limit at or near last close; never more than +1%. US session opens 20:30 Bangkok.',
-            'd': '2026-10-12',
-            'k': 'tranche',
-            't': 'CRDO',
-            'w': 'DONE 12 Oct: CRDO 23 at 203.20 = 4,683.6 | Tier A rung 1 of 2 - BUY $5,149.51 (budget reset, 21 '
-                 'Sep)'},
-           {'a': 'BUY',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'REMOVED 8 Oct: the 28 Sep power-group buys already used this budget - ETN budget 11,000.00, '
-                    'invested 10,881.31, room only 118.69, so the old $1,560.22 rung would have overspent. Do NOT '
-                    'place. || Profitable, priced below the analyst average, and had no rule until now. Limit at or '
-                    'near last close; never more than +1%. US session opens 20:30 Bangkok.',
-            'd': '2026-10-13',
-            'k': 'tranche',
-            't': 'ETN',
-            'w': 'SUPERSEDED - NO BUDGET LEFT (Salee approved 8 Oct). Was: Tier A rung 1 of 2 - BUY $1,560.22 (budget '
-                 'reset, 21 Sep)'},
-           {'a': 'BUY',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'Profitable, priced below the analyst average, and had no rule until now. Limit at or near last '
-                    'close; never more than +1%. US session opens 20:30 Bangkok.',
-            'd': '2026-10-13',
-            'k': 'tranche',
-            't': 'LHX',
-            'w': 'CANCELLED 3 Oct 2026 (Salee approved the rate review and watch-list cut): slow growth (VST sales '
-                 '+7.4%, EPS -6.1%; LHX sales +7.3%, EPS +10.6%) while the 10-year is above 5%. No money moves. | Tier '
-                 'A rung 1 of 2 - BUY $4,500.00 (budget reset, 21 Sep)'},
-           {'a': 'SELL',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'Executed. Reason was the 43% ADR premium and no budget, not the business. Promote rule stands: '
-                    'premium below 10% plus an audited KRW 62.17tn itemisation brings SKHY back as a funded name.',
-            'd': '2026-10-13',
-            'k': 'thesis',
-            't': 'SKHY',
-            'w': 'SELL ALL SKHY - DONE 24 Sep: 15 shares at 191.51, market-on-open, realised +950.75 (+49.7%).'},
-           {'a': 'BUY',
-            'amt': 2093.01,
-            'c': 'done',
-            'cond': 'MOVED 12 Oct: 13 Oct is a Thai public holiday, so these orders go in on Monday 12 Oct (US session '
-                    '20:30-03:00 Bangkok). || Profitable, priced below the analyst average, and had no rule until now. '
-                    'Limit at or near last close; never more than +1%. US session opens 20:30 Bangkok.',
-            'd': '2026-10-12',
-            'k': 'tranche',
-            't': 'V',
-            'w': 'DONE 12 Oct: V 5 at 389.30 = 1,955.06 | Tier A rung 1 of 2 - BUY $2,093.01 (budget reset, 21 Sep)'},
-           {'a': 'BUY',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'REMOVED 8 Oct: the 28 Sep power-group buys already used this budget - VRT budget 21,000.00, '
-                    'invested 20,707.73, room only 292.27, so the old $5,581.00 rung would have overspent. Do NOT '
-                    'place. || Profitable, priced below the analyst average, and had no rule until now. Limit at or '
-                    'near last close; never more than +1%. US session opens 20:30 Bangkok.',
-            'd': '2026-10-13',
-            'k': 'tranche',
-            't': 'VRT',
-            'w': 'SUPERSEDED - NO BUDGET LEFT (Salee approved 8 Oct). Was: Tier A rung 1 of 2 - BUY $5,581.00 (budget '
-                 'reset, 21 Sep)'},
-           {'a': 'BUY',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'Profitable, priced below the analyst average, and had no rule until now. Limit at or near last '
-                    'close; never more than +1%. US session opens 20:30 Bangkok.',
-            'd': '2026-10-13',
-            'k': 'tranche',
-            't': 'VST',
-            'w': 'CANCELLED 3 Oct 2026 (Salee approved the rate review and watch-list cut): slow growth (VST sales '
-                 '+7.4%, EPS -6.1%; LHX sales +7.3%, EPS +10.6%) while the 10-year is above 5%. No money moves. | Tier '
-                 'A rung 1 of 2 - BUY $3,433.36 (budget reset, 21 Sep)'},
-           {'a': 'BUY',
-            'amt': 8277.68,
-            'c': 'done',
-            'cond': 'MOVED 12 Oct: 13 Oct is a Thai public holiday, so these orders go in on Monday 12 Oct (US session '
-                    '20:30-03:00 Bangkok). || The 9 Oct limit at 413 expired unfilled (closed 423.96). Same limit, '
-                    'same size: about 20 shares at 413 = ~8,277.68 incl. commission, within the 8,618.32 room (budget '
-                    '25,000, cost 16,381.68). Do not raise the limit to chase. If unfilled on 13 Oct, carry once more '
-                    'to the 21 Oct results check (Q3 earnings, about 20 Oct). If POEMS does not take orders on the 13 '
-                    'Oct Thai holiday, place on 12 Oct.',
-            'd': '2026-10-12',
-            'k': 'tranche',
-            't': 'ISRG',
-            'w': 'EXPIRED 12 Oct (limit 413, closed above it; POEMS 391158). Carried to 13 Oct. | Tranche 2 - '
-                 'healthcare, CARRIED from 9 Oct: LIMIT 20 shares at $413, Day order (= $8,277.68 incl. commission; '
-                 'budget room $8,618.32)'},
-           {'a': 'BUY',
-            'amt': 6473.74,
-            'c': 'done',
-            'cond': '⚠️ DATE IS THIRD-PARTY SOURCED, NOT CONFIRMED BY ASML. MarketScreener and stockanalysis.com both '
-                    "give Oct 14 for the Q3 print; ASML's own calendar is a JavaScript widget that would not yield a "
-                    'date. Q3 2025 was Oct 15, 2025, so the pattern fits. CONFIRM BEFORE ACTING. || This rung replaces '
-                    'the Oct 9 tranche of 13,605.94, which sat FIVE DAYS BEFORE the results - an avoidable coin-flip. '
-                    'Buy on the information, not just before it. || DEPLOY IF: Q3 net sales land inside the guided '
-                    '11.0-12.0bn euro range AND gross margin inside 55-57%, AND net bookings do not fall against Q2. '
-                    'LEAVE IT if sales miss the low end or bookings drop - ASML grows revenue 9.8% while trading at '
-                    '30x forward earnings, so the multiple depends entirely on the order book.',
-            'd': '2026-10-15',
-            'k': 'earnings',
-            't': 'ASML',
-            'w': 'FILLED 15 Oct: 4 sh at 1,614.9799 = 6,473.74 incl. est. commission (cap was 1,666.50). Position 17 '
-                 'sh, cost 22,867.80, room 18,132.20 - rung 2 (6,606) waits for the January results; 10,000 held back. '
-                 '| TEST PASSED 15 Oct (ASML 6-K, 14 Oct): Q3 sales 11,662m euro (inside 11.0-12.0bn), gross margin '
-                 '57.5% (above the 55-57% band), 2026 raised to 44-45bn, and no cut to 2027 - ASML says planned '
-                 '2027-28 supply will not fully meet demand and is looking to lift 2028 capacity beyond +30%. Net '
-                 'bookings are not in the release, so that leg could not be checked; sales, margin and outlook carry '
-                 'it. CPI/10-year check not tripped (3.7% headline, core 2.6%, 10Y ~5.3% < 5.4%) - full size. ORDER 15 '
-                 'Oct night: 4 sh, LIMIT at the ask, cap 1,666.50 (14 Oct close 1,650.00 +1% - ASML fell 3.9% on the '
-                 'CPI risk-off day); about 6,680 incl. commission; Day order, do not chase - if unfilled, reset to the '
-                 'next close and re-place within +1%. || Q3 2026 results - rung 1 of 2'},
-           {'a': 'BUY',
-            'amt': 9621.29,
-            'c': 'done',
-            'cond': 'Deploy the balance only if gross margin lands at 65% or above. Q2 was 67.7%; Q3 guided 65-67%; '
-                    'the 2nm ramp costs 3-4pp and overseas fabs 2-3pp.',
-            'd': '2026-10-15',
-            'k': 'earnings',
-            't': 'TSM',
-            'w': 'FILLED 15 Oct: 23 sh at 417.4235 = 9,621.29 incl. est. commission (cap was 434.30; the hot PPI print '
-                 'took the ADR down, so the fill came 2.9% under the 14 Oct close). Position 170.5 sh, cost 64,477.71, '
-                 'room 9,522.29. | TEST PASSED 15 Oct (TSMC 6-K): Q3 gross margin 66.4% (test: 65% or above), '
-                 'operating margin 58.7%, net margin 51.1%; revenue US$46.72bn +41.2% YoY; net income +68.7% YoY; 2nm '
-                 'already 8% of wafer revenue, 3nm 33%. Q4 guided US$52.3-54.3bn at 65-67% gross margin. ORDER 15 Oct '
-                 'night: 23 sh, LIMIT at the ask, cap 434.30 (14 Oct close 430.00 +1%); about 10,010 incl. commission '
-                 '= the remaining room. Day order, do not chase; if unfilled, re-place next session within +1% of the '
-                 'latest close. || Q3 2026 results'},
-           {'a': 'BUY',
-            'amt': 4738.75,
-            'c': 'done',
-            'cond': 'ACT 29 OCT (Bangkok evening): results are expected 28 Oct after the US close, so the order goes '
-                    "in the next session. || DATE IS ESTIMATED, NOT CONFIRMED. Microsoft's IR site says only 'the next "
-                    "earnings release will be announced soon'; Oct 28 comes from the pattern - the last four reports "
-                    'were all Wednesdays (Oct 29 2025, Jan 28, Apr 29, Jul 29 2026). One source says Oct 29. Confirm '
-                    'the date before acting. || THE NUMBER IS THE GAP BETWEEN CAPEX AND REVENUE, not Azure. Azure is '
-                    'guided to ACCELERATE to about 45% in constant currency from 43%, and Azure passed 100bn of annual '
-                    'revenue for the first time - that part of the story is working. The risk is the spend: capital '
-                    'expenditure was 115.9bn in FY2026 and management guides FY2027 to approximately 175bn, up about '
-                    '51%, while total revenue is guided to grow only 16-17% (89.85-90.95bn for this quarter). A gap '
-                    'that wide is the same dynamic already flagged on ORCL. || DEPLOY THE FULL ROOM ONLY IF: Azure '
-                    'lands at or above the guided ~45% constant currency AND management does NOT raise the ~175bn '
-                    'FY2027 capex figure again. If Azure comes in below 40%, or capex is raised while revenue guidance '
-                    'is not, leave the room unfunded and revisit in January.',
-            'd': '2026-10-28',
-            'k': 'earnings',
-            't': 'MSFT',
-            'w': 'FILLED 29 Oct: 9 sh at 525.4031 = 4,738.75 incl. est. commission (below the 531.01 limit - bought '
-                 'into the tech sell-off). Position 126 sh, cost 57,617.71; budget effectively full. | TEST PASSED 28 '
-                 'Oct (decided in chat 29 Oct 04:30 Bangkok): Azure +48% ($33.17bn) vs the ~45% bar; quarter capex '
-                 "$45.2bn, $5bn BELOW Microsoft's own ~$50bn projection, and no raise to the ~$175bn calendar-2026 "
-                 'figure reported. Revenue $92.3bn (+19%) vs guided $89.85-90.95bn; GAAP EPS $4.92. ORDER Thu 29 Oct '
-                 'Bangkok: BUY 9 sh, Day LIMIT $531.01 (28 Oct close), may raise ONCE to the cap $536.32; not in the '
-                 'first 30 minutes. About $4,837 at the cap. Stock was +3.7% after hours (~$550.68): if it opens above '
-                 'the cap, DO NOT CHASE - the order simply does not fill. | Q1 FY2027 results - the only rung on the '
-                 'last unplanned mega-cap holding. ⚠️ AMOUNT CORRECTED 24 Oct from $7,121.04 to $5,121.04 = the real '
-                 'room (budget 58,000 less cost 52,878.96); the old figure was $2,000 above the budget. RESULTS DATE '
-                 'STILL ESTIMATED (28 Oct after close) - confirm.'},
-           {'a': 'HOLD',
-            'amt': None,
-            'c': 'done',
-            'cond': '⚠️ VERTIV DISCLOSED ORGANIC ORDERS UP ~252%, BACKLOG OF 15.0 BILLION UP 109% AND BOOK-TO-BILL OF '
-                    '~2.9x IN ITS Q4 2025 RELEASE OF 11 FEB 2026. IN Q1 2026 AND Q2 2026 ALL THREE ARE ABSENT - the '
-                    'words orders, backlog and book-to-bill do not appear in either release, and the Q2 deck says only '
-                    "'strong pipeline momentum' and 'strong backlog' with NO NUMBER. ⚠️ NO SOURCED CAUSE FOUND. TWO "
-                    'QUARTERS IS A CHANGE OF FORMAT; THREE IS A PATTERN. On a name trading at 58.18 times trailing '
-                    'earnings with guidance RAISED to 30-32% organic growth, the metric management has stopped showing '
-                    'is the one that most needs seeing. ⚠️ PRECEDENT THAT THIS MATTERS: in March 2025 Vertiv fell '
-                    "sharply when TD Cowen's Michael Elias described an 'air pocket in equipment ordering' and "
-                    "Barclays' Julian Mitchell cut his target to 100, saying orders did not support hopes for "
-                    'high-teens 2026 growth. IF Q3 COMES WITH NO ORDER FIGURES: do not add Tranche 2, and '
-                    're-underwrite the 21,000 budget at the 10 December review. IF THE FIGURES RETURN AND ARE STRONG: '
-                    'the thesis is intact and Tranche 2 proceeds normally. ⚠️ The Q3 date is ESTIMATED from prior '
-                    'years and must be confirmed.',
-            'd': '2026-10-28',
-            'dl': 'Vertiv Q3 2026 print - late October, date estimated',
-            'k': 'thesis',
-            't': 'VRT',
-            'w': 'RESULT 28 Oct: PARTIAL PASS. Orders are back in the release - organic orders "more than doubled" '
-                 '(growth only, no $ figure). Backlog and book-to-bill STILL not disclosed (third quarter running). '
-                 'Offsetting evidence: customer prepayments (current deferred revenue) $4.12bn, 3.6x a year ago; sales '
-                 '+61% to $4.31bn; adj. op margin 25.2%; FY guidance raised. Budget full ($292 room) - no order. Carry '
-                 'the disclosure point to 10 Dec. | THE DISCLOSURE TEST - if orders, backlog and book-to-bill are '
-                 'STILL missing, that is three quarters and a pattern'},
-           {'a': 'WATCH',
-            'amt': None,
-            'c': 'confirmed',
-            'cond': '⚠️ AAPL closed 332.27 on 11 Sep, ABOVE the 44-analyst average target of 324.40 to 325.66, at 36.1 '
-                    'times forward earnings. CFO Kevan Parekh guided September revenue growth of only 9-11% and gross '
-                    'margin DOWN to 47-48% from 50.1%, and that 50.1% itself carried about 2 points of tariff-refund '
-                    "benefit. Verbatim on anything beyond September: 'Beyond September, we're not providing any "
-                    "color.' iPhone Duo pre-orders open 16 OCT and it ships 23 OCT, so this print is the FIRST quarter "
-                    'with any Duo demand signal in the guide. THE TEST TO ADD: a December guide that is strong on '
-                    'iPhone AND gross margin holding above 47% WITHOUT a tariff-refund benefit. Budget stays 24,000, '
-                    '46 shares held.',
-            'd': '2026-11-02',
-            'dl': 'Apple FQ4 2026 print - late October',
-            'k': 'catalyst',
-            't': 'AAPL',
-            'w': 'CONFIRMED by Apple IR: Mon 2 Nov, call 5:00 pm ET (= 05:00 Tue 3 Nov Bangkok, after the 1 Nov clock '
-                 'change). | Firstrade calendar (15 Oct) lists Apple at 2 Nov after the close, not 29 Oct - Apple has '
-                 'not announced; treat as estimated. | The first December-quarter guide, and the first read on iPhone '
-                 'Duo - do not pay up into it'},
-           {'a': 'BUY',
-            'amt': 5000,
-            'c': 'done',
-            'cond': 'DATE CORRECTED 27 Sep 2026: the original 14 Oct date sat BEFORE Caterpillar reports Q3 (scheduled '
-                    'on or about 28 Oct), so the condition attached to this rung could not be tested. Now placed two '
-                    'days after the report. THE TEST: hold this rung if Q3 shows the power-generation / energy & '
-                    'transportation business is immaterial to group earnings or is not growing with data-centre demand '
-                    '- in that case cap CAT at 7,500 total and release the remaining 7,500 to the power group.',
-            'd': '2026-10-30',
-            'k': 'buy',
-            't': 'CAT',
-            'w': 'DONE 30 Oct 21:35 Bangkok: BOUGHT 7 sh at 633.5642 = 4,444.44 (limit lowered to 636.00 with the '
-                 'stock at 633.81, below the 647.39 reference). Position 13 sh, cost 9,332.99. | ORDER Fri 30 Oct '
-                 "(after 21:00 Bangkok): BUY 7 sh Day LIMIT 647.39 (29 Oct close per the POEMS mark; the job's 647.22 "
-                 'superseded 11:10); may raise once to the cap 653.86. Cost 4,541.43 at the limit / 4,586.81 at the '
-                 'cap incl. 0.214% commission. | TEST PASSED 29 Oct (Q3 results, before the US open): Power Generation '
-                 'sales $3.42bn, +30%, on turbines and large engines for data centres; record backlog; adj. EPS $7.20 '
-                 'vs $7.04. Revenue $20.68bn in line; outlook NOT raised (mid- to high-teens growth kept); $128m '
-                 'tariff refund flattered profit. Stock about -9% pre-market (~$648) on the un-raised outlook. ORDER '
-                 'Fri 30 Oct Bangkok: Day LIMIT at the 29 Oct close, cap +1%, about $5,000 - the fall makes this rung '
-                 'cheaper, not riskier; the power-generation test is what counts. | CATERPILLAR rung 2 of 3 (5,000 of '
-                 '15,000). MOVED from 14 Oct to 30 Oct on 27 Sep.'},
-           {'a': 'BUY',
-            'amt': 11879.82,
-            'c': 'done',
-            'cond': 'DEPLOY $6,380.24 ONLY IF revenue growth holds at or above 25% AND net income recovers clear of '
-                    'the Q3 2025 weakness. LEAVE IT if capex rises again without revenue acceleration, or margins '
-                    'compress further. Rungs 1 + 2 = $12,760.48, exactly the budget left.',
-            'd': '2026-10-22',
-            'k': 'earnings',
-            't': 'META',
-            'w': 'FILLED 22 Oct: 18 sh at 658.5807 = 11,879.82 incl. est. commission. TEST PASSED on the 21 Oct '
-                 'results (revenue +26%, net income $9.86bn vs $2.71bn); decided BUY in chat 22 Oct before the open. | '
-                 'DATE CONFIRMED BY META 15 Oct: Q3 results WEDNESDAY 21 OCT after the US close (call 4:30 pm ET = '
-                 '03:30 Thu 22 Oct Bangkok), a week EARLIER than our 29 Oct estimate. Decision moves 30 Oct -> 22 Oct: '
-                 'act Thursday 22 Oct night from 20:30 Bangkok (23 Oct is a Thai holiday, so do not slip to Friday). | '
-                 'ROLLED IN 10 Oct: rung 1 ($705 limit, 9 Oct) expired unfilled, so this decision now covers '
-                 '$12,760.48 (both rungs). | Q3 2026 results (29 Oct, after the close) - META rung 2 of 2: DECIDE '
-                 '$6,380.24 (plus rung 1 if its $705 limit did not fill). MOVED 28 Oct -> 30 Oct on 3 Oct so the '
-                 'decision follows the results'},
-           {'a': 'WATCH',
+SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
+ 'items': [{'a': 'WATCH',
             'amt': 0,
             'c': 'open',
             'cond': 'A SMALL CORRECTION WITH A REAL CONSEQUENCE, AND I AM RECORDING IT BEFORE IT CATCHES US RATHER '
@@ -6906,9 +5487,64 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                  'YORK PLUS 12**. THE US REGULAR SESSION MOVES FROM 20:30-03:00 BANGKOK TO **21:30-04:00 BANGKOK**. ⚠️ '
                  "MY STANDING NOTE SAYS 'BANGKOK = NEW YORK + 11' WITH NO QUALIFIER. THAT IS ONLY TRUE IN THE AMERICAN "
                  'SUMMER.'},
+           {'a': 'WATCH',
+            'amt': None,
+            'c': 'confirmed',
+            'cond': '⚠️ AAPL closed 332.27 on 11 Sep, ABOVE the 44-analyst average target of 324.40 to 325.66, at 36.1 '
+                    'times forward earnings. CFO Kevan Parekh guided September revenue growth of only 9-11% and gross '
+                    'margin DOWN to 47-48% from 50.1%, and that 50.1% itself carried about 2 points of tariff-refund '
+                    "benefit. Verbatim on anything beyond September: 'Beyond September, we're not providing any "
+                    "color.' iPhone Duo pre-orders open 16 OCT and it ships 23 OCT, so this print is the FIRST quarter "
+                    'with any Duo demand signal in the guide. THE TEST TO ADD: a December guide that is strong on '
+                    'iPhone AND gross margin holding above 47% WITHOUT a tariff-refund benefit. Budget stays 24,000, '
+                    '46 shares held.',
+            'd': '2026-11-02',
+            'dl': 'Apple FQ4 2026 print - late October',
+            'k': 'catalyst',
+            't': 'AAPL',
+            'w': 'CONFIRMED by Apple IR: Mon 2 Nov, call 5:00 pm ET (= 05:00 Tue 3 Nov Bangkok, after the 1 Nov clock '
+                 'change). | Firstrade calendar (15 Oct) lists Apple at 2 Nov after the close, not 29 Oct - Apple has '
+                 'not announced; treat as estimated. | The first December-quarter guide, and the first read on iPhone '
+                 'Duo - do not pay up into it'},
+           {'a': 'WATCH',
+            'amt': 0,
+            'c': 'confirmed',
+            'cond': 'NO ORDER ON THE PRINT. The only buy route is the standing line: Day LIMIT at or below $150 (close '
+                    '30 Oct $184.11, 18.5% above). Read for the board: US commercial revenue growth, total growth vs '
+                    'the ~79% trailing pace, and adjusted operating margin. Forward P/E ~97 - any guide below the '
+                    'run-rate can move the stock 15-20%.',
+            'd': '2026-11-02',
+            'dl': 'Palantir Q3 2026 results',
+            'k': 'earnings',
+            't': 'PLTR',
+            'w': 'Palantir Q3 2026 results - Mon 2 Nov after the close (company release 12 Oct) = early Tue 3 Nov '
+                 'Bangkok. Held 40 sh, cost $5,533.09, budget $16,000.'},
+           {'a': 'WATCH',
+            'amt': 0,
+            'c': 'confirmed',
+            'cond': 'NO ORDER ON THE PRINT. Buy route is the standing line: Day LIMIT at or below $470 (close 30 Oct '
+                    "$504.80, 7.4% above, after -10.9% on Intel's warning). Read: data-centre GPU revenue and the Q4 "
+                    'guide; PC/client weakness (the Intel read-across) is the risk to watch, not the AI business.',
+            'd': '2026-11-03',
+            'dl': 'AMD Q3 2026 results',
+            'k': 'earnings',
+            't': 'AMD',
+            'w': 'AMD Q3 2026 results - Tue 3 Nov after the close, call 5 pm ET (GlobeNewswire) = early Wed 4 Nov '
+                 'Bangkok. Held 55 sh, cost $13,789.22, budget $24,000.'},
+           {'a': 'WATCH',
+            'amt': 0,
+            'c': 'confirmed',
+            'cond': 'NO ORDER - budget full. Read: AI back-end networking revenue and the 2027 outlook; feeds the 10 '
+                    'Dec review.',
+            'd': '2026-11-03',
+            'dl': 'Arista Q3 2026 results',
+            'k': 'earnings',
+            't': 'ANET',
+            'w': 'Arista Q3 2026 results - Tue 3 Nov after the close, call 4:30 pm ET (Business Wire) = early Wed 4 '
+                 'Nov Bangkok. Held 98 sh, budget = cost $15,585.57 (full).'},
            {'a': 'DECIDE',
             'amt': 9000,
-            'c': 'estimated',
+            'c': 'confirmed',
             'cond': 'PASS = ALL FOUR. (1) Q3 revenue at or above $2.08bn - the consensus, which is the top of the '
                     "company's own $2.055-2.085bn range (46-48% growth). Q2 MISSED by $20m; meeting the range is not "
                     'enough, it must clear it. (2) Adjusted EBITDA margin at or above 80% (guided about 83%) - compute '
@@ -6929,9 +5565,29 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                   'CONFIRM the date before acting.',
             'k': 'earnings',
             't': 'APP',
-            'w': "Q3 2026 results - RULE WRITTEN 24 Oct at Salee's instruction: half 1 = $9,000 of the $18,000 budget. "
-                 'If PASS: Day LIMIT at the results-day close, cap +1%, next session, not in the first 30 minutes. '
-                 'Half 2 ($9,000) not before the Q4 results (Feb 2027), and only if revenue growth re-accelerates.'},
+            'w': 'DATE CONFIRMED by AppLovin: results Wed 4 Nov after the close = early Thu 5 Nov Bangkok; act Thu 5 '
+                 "Nov evening if PASS. | Q3 2026 results - RULE WRITTEN 24 Oct at Salee's instruction: half 1 = $9,000 "
+                 'of the $18,000 budget. If PASS: Day LIMIT at the results-day close, cap +1%, next session, not in '
+                 'the first 30 minutes. Half 2 ($9,000) not before the Q4 results (Feb 2027), and only if revenue '
+                 'growth re-accelerates.'},
+           {'a': 'WATCH',
+            'amt': 0,
+            'c': 'estimated',
+            'cond': 'NO ACTION ON THE RUMOUR - no sale, no buy (both budgets effectively full). WHEN TERMS ARE '
+                    'ANNOUNCED, score four things: (1) PRICE/PREMIUM paid for LITE (market value ~$83-91bn before the '
+                    'premium); (2) CASH vs STOCK mix - Marvell had only ~$3.9bn cash, so this is mostly shares or '
+                    "heavy debt; estimate dilution for MRVL holders; (3) whether the combined company's earnings per "
+                    'share rise or fall in year 2 (accretion); (4) REGULATORY path - China SAMR approval has delayed '
+                    'or blocked large US chip deals before. Because we own both sides, a premium paid by MRVL holders '
+                    'is partly received by our LITE shares (about $24k MRVL vs $10.5k LITE at the 28 Oct close). If '
+                    'the deal is all-stock at a large premium with no EPS accretion by year 2, review MRVL sizing at '
+                    '10 Dec; if terms are reasonable, hold both through closing.',
+            'd': '2026-11-05',
+            'k': 'event',
+            't': 'MRVL',
+            'w': 'MARVELL-LUMENTUM DEAL - terms expected "as soon as next week" (Bloomberg, 28 Oct). We hold BOTH: '
+                 'MRVL 95.5 sh (cost $20,585) and LITE 11.5 sh (cost $9,373). Reported 28 Oct after the close: MRVL '
+                 'about -8% after hours, LITE about +9-11%.'},
            {'a': 'DECIDE',
             'amt': None,
             'c': 'estimated',
@@ -6956,60 +5612,22 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'k': 'earnings',
             't': 'RKLB',
             'w': 'Q3 2026 results'},
-           {'a': 'BUY',
-            'amt': 6497.8,
-            'c': 'done',
-            'cond': 'Second half, after the Micron (30 Sep) and Meta (28 Oct) decisions. ⚠️ Clocks change 1 Nov: US '
-                    'session now opens 21:30 Bangkok.',
-            'd': '2026-11-10',
-            'k': 'tranche',
-            't': 'APH',
-            'w': 'CANCELLED 12 Oct 2026 (Salee approved the allocation-efficiency plan, Phase 1): rung 2 of Amphenol '
-                 '($6,497.80) - only 8% below fair value after rung 1. Money returns to the ranked pool. | Tier A rung '
-                 '2 of 2 - BUY $6,497.80'},
-           {'a': 'HOLD',
+           {'a': 'WATCH',
             'amt': 0,
-            'c': 'done',
-            'cond': 'Second half, after the Micron (30 Sep) and Meta (28 Oct) decisions. ⚠️ Clocks change 1 Nov: US '
-                    'session now opens 21:30 Bangkok.',
-            'd': '2026-11-10',
-            'k': 'tranche',
-            't': 'CEG',
-            'w': 'SUPERSEDED 24 Oct - rung 2 was already bought on 28 Sep; room left is under $300, less than one '
-                 'share. No order. | Was: BUY $3,565.44. Tier A rung 2 of 2 - BUY $3,565.44'},
-           {'a': 'HOLD',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'PRICE LINE ADDED 25 Oct (Salee): this same rung may fill EARLY if CRDO CLOSES BELOW $150 - next '
-                    'session, Day LIMIT at that close, cap +1%. No new money; if it fills early this row is marked '
-                    'done and nothing is bought on 10 Nov. | Second half, after the Micron (30 Sep) and Meta (28 Oct) '
-                    'decisions. ⚠️ Clocks change 1 Nov: US session now opens 21:30 Bangkok.',
-            'd': '2026-11-10',
-            'k': 'tranche',
-            't': 'CRDO',
-            'w': 'MOVED to Mon 26 Oct - the $150 price line was hit on the 23 Oct close ($147.29). | Was: Tier A rung '
-                 '2 of 2 - BUY $5,149.50'},
-           {'a': 'HOLD',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'Second half, after the Micron (30 Sep) and Meta (28 Oct) decisions. ⚠️ Clocks change 1 Nov: US '
-                    'session now opens 21:30 Bangkok.',
-            'd': '2026-11-10',
-            'k': 'tranche',
-            't': 'ETN',
-            'w': 'SUPERSEDED 24 Oct - rung 2 was already bought on 28 Sep; room left is under $300, less than one '
-                 'share. No order. | Was: BUY $1,560.23. Tier A rung 2 of 2 - BUY $1,560.23'},
-           {'a': 'BUY',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'Second half, after the Micron (30 Sep) and Meta (28 Oct) decisions. ⚠️ Clocks change 1 Nov: US '
-                    'session now opens 21:30 Bangkok.',
-            'd': '2026-11-10',
-            'k': 'tranche',
-            't': 'LHX',
-            'w': 'CANCELLED 3 Oct 2026 (Salee approved the rate review and watch-list cut): slow growth (VST sales '
-                 '+7.4%, EPS -6.1%; LHX sales +7.3%, EPS +10.6%) while the 10-year is above 5%. No money moves. | Tier '
-                 'A rung 2 of 2 - BUY $4,500.00'},
+            'c': 'confirmed',
+            'cond': 'SGOV income is 100% qualified interest income (iShares 2026 QII memo), which US law exempts from '
+                    'withholding for non-US investors with a W-8BEN on file. If POEMS withheld anything: (1) Salee '
+                    'sends the POEMS statement line; (2) Claude drafts the reclaim request to POEMS citing the iShares '
+                    'QII memo; (3) the SGOV yield assumption on the Portfolio tab (3.6%) is cut to the net rate until '
+                    'resolved. Thai-side treatment of foreign income held at a Thai broker is a separate question for '
+                    'the tax adviser. Reminder also set in the chat for 09:00 Bangkok on 9 Nov.',
+            'd': '2026-11-09',
+            'dl': 'Mon 9 Nov - SGOV first dividend: US withholding check',
+            'k': 'tax',
+            't': 'SGOV',
+            'w': 'CHECK THE FIRST SGOV DIVIDEND FOR US WITHHOLDING TAX. Ex-date Mon 2 Nov, pay date about Fri 6 Nov. '
+                 'Expected gross = 794 sh x about $0.30 = about $239. Credited about $239 = exempt (correct); about '
+                 '$203 = 15% withheld; about $167 = 30% withheld.'},
            {'a': 'WATCH',
             'amt': None,
             'c': 'planned',
@@ -7028,16 +5646,6 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             't': 'MP',
             'w': "China's 0.1% rare-earth extraterritorial rule comes back unless extended - watch magnets, motors, "
                  'robotics, autos, defence'},
-           {'a': 'BUY',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'Second half, after the Micron (30 Sep) and Meta (28 Oct) decisions. ⚠️ Clocks change 1 Nov: US '
-                    'session now opens 21:30 Bangkok.',
-            'd': '2026-11-10',
-            'k': 'tranche',
-            't': 'SNPS',
-            'w': 'MERGED into the 10 Dec decision 3 Oct 2026 (Salee approved the rate review and watch-list cut). | '
-                 'Tier A rung 2 of 2 - BUY $6,500.00'},
            {'a': 'WATCH',
             'amt': 0,
             'c': 'confirmed',
@@ -7049,39 +5657,31 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
            {'a': 'BUY',
             'amt': 2093.0,
             'c': 'planned',
-            'cond': 'Second half, after the Micron (30 Sep) and Meta (28 Oct) decisions. ⚠️ Clocks change 1 Nov: US '
-                    'session now opens 21:30 Bangkok.',
+            'cond': 'Firm rung - no test. Day LIMIT at the 9 Nov close, cap +1%. US session 21:30-04:00 Bangkok from 2 '
+                    'Nov.',
             'd': '2026-11-10',
             'k': 'tranche',
             't': 'V',
             'w': 'Tier A rung 2 of 2 - BUY $2,093.00'},
-           {'a': 'HOLD',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'Second half, after the Micron (30 Sep) and Meta (28 Oct) decisions. ⚠️ Clocks change 1 Nov: US '
-                    'session now opens 21:30 Bangkok.',
-            'd': '2026-11-10',
-            'k': 'tranche',
-            't': 'VRT',
-            'w': 'SUPERSEDED 24 Oct - rung 2 was already bought on 28 Sep; room left is under $300, less than one '
-                 'share. No order. | Was: BUY $5,581.00. Tier A rung 2 of 2 - BUY $5,581.00'},
            {'a': 'DECIDE',
             'amt': 3433.35,
             'c': 'planned',
-            'cond': 'Second half, after the Micron (30 Sep) and Meta (28 Oct) decisions. ⚠️ Clocks change 1 Nov: US '
-                    'session now opens 21:30 Bangkok.',
+            'cond': 'Q3 test: adjusted EBITDA growth 20% or more AND full-year guidance holds. If PASS: Day LIMIT at '
+                    'the 9 Nov close, cap +1%.',
             'd': '2026-11-10',
             'k': 'tranche',
             't': 'VST',
-            'w': 'REINSTATED AS A Q3 TEST (Salee approved 3 Oct): DECIDE $3,433.35 after Vistra Q3 results (early '
-                 'Nov). The 3 Oct cut used GAAP figures (sales +7.4%, EPS -6.1%) that are distorted by hedge '
-                 'mark-to-market; adjusted EBITDA rose 31% to $1.77bn in Q2 with full-year guidance reaffirmed. BUY '
-                 'only if Q3 adjusted EBITDA growth is still 20% or more AND full-year guidance holds. Otherwise leave '
-                 'it. The 13 Oct rung stays cancelled.'},
+            'w': 'RESULTS CONFIRMED: Vistra reports Fri 6 Nov, call 10:00 am ET (company release). Score Sat 7 Nov; '
+                 'act Tue 10 Nov evening if PASS. | REINSTATED AS A Q3 TEST (Salee approved 3 Oct): DECIDE $3,433.35 '
+                 'after Vistra Q3 results (early Nov). The 3 Oct cut used GAAP figures (sales +7.4%, EPS -6.1%) that '
+                 'are distorted by hedge mark-to-market; adjusted EBITDA rose 31% to $1.77bn in Q2 with full-year '
+                 'guidance reaffirmed. BUY only if Q3 adjusted EBITDA growth is still 20% or more AND full-year '
+                 'guidance holds. Otherwise leave it. The 13 Oct rung stays cancelled.'},
            {'a': 'BUY',
             'amt': 5000,
             'c': 'open',
-            'cond': 'Final rung. Completes the 15,000 budget.',
+            'cond': "Final rung - completes the $15,000 budget (room $5,667 after the 30 Oct fill). Rung 2's test "
+                    '(Power Generation +30%) already passed. Day LIMIT at the 10 Nov close, cap +1%.',
             'd': '2026-11-11',
             'k': 'buy',
             't': 'CAT',
@@ -7195,129 +5795,6 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                  'THAT IS ACCURATE - IT IS THE UNITS CLAIM, CORRECTLY RENDERED. THE ANONYMOUS POST 24 HOURS EARLIER '
                  'TURNED THE SAME REMARK INTO "70% GROWTH TO $673 BILLION", WHICH WAS WRONG IN THE YEAR, THE UNIT AND '
                  'THE SOURCE.'},
-           {'a': 'DECIDE',
-            'amt': 18524.08,
-            'c': 'planned',
-            'cond': 'CLARIFIED 29 Oct (no change of substance): the June $84.75bn raise INCLUDED an at-the-market '
-                    '(ATM) programme of up to $40bn (8-K, 1-4 Jun 2026). Alphabet sold $12.4bn under it in Q3 (12M '
-                    'Class A $4.3bn + 24M Class C $8.1bn); $27.6bn remains. Draws within that $40bn are the June raise '
-                    'itself, NOT a fail of test (1). Test (1) FAILS only on: a new offering, a new or upsized ATM '
-                    'beyond $40bn, or another cash sale of shares outside the June package. Expect the remaining '
-                    '$27.6bn to be sold - that dilution is already in the June number. || BUY THE TRANCHE ONLY IF '
-                    'BOTH: (1) NO FURTHER SHARE SALE - no new equity offering, at-the-market programme or other cash '
-                    'sale of shares announced since the June $84.75bn raise; and (2) A CREDIBLE PATH BACK TO POSITIVE '
-                    'FREE CASH FLOW - management guiding capex growth below operating-cash-flow growth for 2027, or Q4 '
-                    "free cash flow (late Jan) visibly better than Q3's -$9.1bn. Cloud growth staying near the Q3 pace "
-                    '(revenue ~$30.7bn, 36% margin) is the supporting check, not the gate. FAIL either = no new money; '
-                    'budget cut to the cost already spent ($59,475.92), as with META; NO SALE on these alone (217 sh '
-                    'held). If the 10 Dec evidence is mixed, the default is to wait for the Q4 results rather than '
-                    'buy. || PREVIOUS (19 Nov plan): ⚠️ PENDING SALEE (29 Oct): proposed conversion to DECIDE - Q3 '
-                    'showed FCF -$9.1bn and the June $84.75bn equity raise (META-rule conditions). Do not place until '
-                    'decided. | Tranche 3 - after both the Final Judgment and Q3 results. ⚠️ AMOUNT CORRECTED 16 SEP '
-                    'FROM 20,524.08 TO 18,524.08 - THE OLD FIGURE WAS 2,000 MORE THAN THE BUDGET ALLOWS. | ⚠️⚠️ DATA '
-                    'FAULT FOUND AND FIXED ON 16 SEPTEMBER, AND IT IS THE SECOND OF ITS CLASS ON THIS BOARD (the first '
-                    'was the MRVL 4,000 error of 11 September). THIS ROW COMMITTED 20,524.08. THE GOOGL BUDGET IS '
-                    '78,000 AND 59,475.92 IS ALREADY INVESTED, SO ONLY 18,524.08 REMAINS. The row was promising 2,000 '
-                    'THAT DOES NOT EXIST. It is now 18,524.08 and the rung closes the budget exactly. ⚠️ THE LESSON IS '
-                    'THE SAME BOTH TIMES: A SCHEDULE AMOUNT MUST BE DERIVED FROM BUDGET MINUS INVESTED, NEVER TYPED '
-                    'FROM MEMORY. Two faults of one kind in six days is a process problem, not bad luck, and a '
-                    'budget-versus-schedule reconciliation now belongs on the 10 December agenda. || 20,524.08 = the '
-                    'entire remaining room on the 80,000 budget. Deliberately dated AFTER two information events, not '
-                    'before: the Final Judgment due ~Oct 2 and Q3 2026 results ~Oct 28 (estimated, not confirmed by '
-                    'Alphabet). || THE CASE: Q2 2026 revenue 119.8bn +24%, GOOGLE CLOUD 24.8bn +82%, operating margin '
-                    '34%. Position is 217 shares at 59,475.92, up 23.5%, and the stock sits about 19% below its 408.61 '
-                    'high. 63 analysts average 428.07. || ⚠️ THREE THINGS TO CHECK AT Q3, NONE OF WHICH ARE IN THE '
-                    'PRICE STORY: (1) FY2026 capex guidance was RAISED to 195-205bn from 180-190bn, with management '
-                    "saying capex will 'increase significantly in 2027'; (2) Q2 FREE CASH FLOW WAS NEGATIVE 5,855m; "
-                    '(3) SHARE BUYBACKS HAVE STOPPED - 0 repurchased in Q2 and 0 year-to-date, while the 0.22 dividend '
-                    'continues. A company spending 200bn a year with negative free cash flow has stopped returning '
-                    'capital. That is the trade-off being made, and it is worth watching rather than assuming. || ⚠️ '
-                    "THE TRAILING P/E OF ~17 IS AN ARTEFACT, NOT CHEAPNESS: Q2 'other income' carried a 98.0bn net "
-                    'gain, mostly unrealised equity marks, which added 77.1bn to net income after tax. Forward P/E of '
-                    'about 25 is the real figure. || ⚠️ EUROPE IS STILL LIVE: the European Commission fined Google '
-                    '890m euro on Jul 23, 2026 under the Digital Markets Act - 460m for self-preferencing in Search '
-                    'and 430m on Play anti-steering - and ordered the non-compliance ended. Separate from the older '
-                    'EUR2.95bn ad-tech decision where the Commission still wants a STRUCTURAL remedy.',
-            'd': '2026-12-10',
-            'k': 'tranche',
-            't': 'GOOGL',
-            'w': 'GOOGL tranche 3 ($18,524.08) - CONVERTED 29 Oct from an automatic 19 Nov BUY to a 10 Dec DECIDE '
-                 '(Salee: "Approve GOOGL test"). Reason: Q3 2026 free cash flow -$9.1bn (second negative quarter) and '
-                 'the June 2026 $84.75bn share sale - the same two conditions that triggered the META rule on 27 Oct.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'planned',
-            'cond': 'RECORDED 16 SEPTEMBER FROM A THAI INFOGRAPHIC ON WAYMO ENTERING JAPAN. THE ANNOUNCEMENT IS '
-                    "GENUINE AND VERY RECENT: Waymo's own blog is dated 14 SEPTEMBER 2026 and the Nihon Kotsu and GO "
-                    'releases 15 SEPTEMBER 2026. Almost every claim on the slide checks out. || ✅ CONFIRMED: Tokyo, '
-                    'partnership with GO and Nihon Kotsu, commercial service TARGETED in 2027, Level 4 with NO SAFETY '
-                    'DRIVER ("完全無人走行" - fully unmanned - in both Japanese releases), testing began in 2025 (Reuters, '
-                    '10 Apr 2025: 25 Jaguar I-PACE vehicles with human drivers across seven Tokyo wards), hailing '
-                    'through the GO app, and the ageing-society and driver-shortage rationale (Japanese taxi drivers '
-                    'down about 20%). Nihon Kotsu calls it "国内初" - JAPAN\'S FIRST Level 4 fully driverless commercial '
-                    'taxi operation. || ⚠️ ONE DISTORTION: "starts with about 100 vehicles" IS BACKWARDS. The releases '
-                    'say the service STARTS WITH A SMALL FLEET AND EXPANDS TO ABOUT 100 VEHICLES IN PHASES. A hundred '
-                    'is the destination, not the starting line. || ⚠️ AND ONE CLAIM THAT IS NOT TRUE TODAY: "Alphabet '
-                    'proves it can scale outside the USA." ALL FOURTEEN OF WAYMO\'S COMMERCIAL CITIES ARE IN THE '
-                    'UNITED STATES as of 1 September 2026. London is still only testing. The first city-level fully '
-                    'driverless commercial robotaxi permit OUTSIDE THE US went to WERIDE IN ABU DHABI in October 2025, '
-                    'not to Waymo. Tokyo would be the proof - IN 2027, IF THE PERMITS COME. || ⚠️⚠️ NOW THE ONLY '
-                    "NUMBER THAT MATTERS TO US, AND IT IS SOBERING. ALPHABET DOES NOT DISCLOSE WAYMO'S REVENUE AT ALL. "
-                    'Waymo sits inside "Other Bets" alongside Wing, Calico and X. OTHER BETS - WHICH IS BIGGER THAN '
-                    "WAYMO - PRODUCED 382 MILLION DOLLARS OF REVENUE IN Q2 2026 AGAINST ALPHABET'S 119,796 MILLION. "
-                    'THAT IS 0.32% - ABOUT ONE THIRD OF ONE PERCENT. It LOST 1,799m against 40,770m of operating '
-                    'income, a 4.41% DRAG. CFO Anat Ashkenazi, 22 July 2026, verbatim: "In other bets, revenues were '
-                    "$382 million, and operating loss was $1.8 billion, as we continue to expand Waymo's business and "
-                    'invest in key other bets." Full year 2025 was the same shape: Other Bets 1,537m of revenue '
-                    '(0.38%) and a 7,515m loss (5.8% of operating income) - though 2,100m of that was a ONE-OFF '
-                    "NON-CASH STOCK COMPENSATION CHARGE from marking Waymo's valuation up, not a cash burn. || 📊 THE "
-                    "SIZE TEST, DONE PROPERLY: Waymo's 16bn-dollar round of 2 FEBRUARY 2026 valued it at 126 BILLION "
-                    'post-money (Dragoneer, DST Global and Sequoia leading; Alphabet funded "a significant portion"). '
-                    "ALPHABET'S OWN MARKET VALUE IS 4,223bn. SO EVEN IF ALPHABET OWNED 100% OF WAYMO - IT DOES NOT, "
-                    'AND ITS PERCENTAGE IS NOT DISCLOSED - WAYMO WOULD BE 2.98% OF ALPHABET. That is the answer to "is '
-                    'Waymo a big deal for Alphabet": IT IS A REAL OPTION, NOT A SECOND ENGINE, AND IT IS NOT WHY WE '
-                    'OWN THE SHARES. || THE OPERATING PROGRESS IS GENUINELY IMPRESSIVE AND SHOULD BE SAID PLAINLY: '
-                    'OVER 500,000 PAID TRIPS A WEEK (Co-CEO Tekedra Mawakana, 14 Sep 2026), DOUBLED IN UNDER A YEAR '
-                    '(Sundar Pichai, 29 Apr 2026), 14 US CITIES, MORE THAN 4,000 VEHICLES, AND 220.6 MILLION '
-                    "RIDER-ONLY MILES THROUGH MARCH 2026. Waymo's own safety page claims 94% fewer serious-injury "
-                    'crashes than the human benchmark. || ⚠️ AND THE RISKS ARE REAL AND DATED, NOT HYPOTHETICAL. NHTSA '
-                    'opened a probe in October 2025 over a school-bus incident and EXPANDED it on 3 December 2025; '
-                    'Waymo issued a VOLUNTARY SOFTWARE RECALL ON OVER 3,000 VEHICLES in December 2025. ON 23 JANUARY '
-                    '2026 A DRIVERLESS WAYMO STRUCK A NINE-YEAR-OLD PEDESTRIAN IN A SANTA MONICA SCHOOL ZONE (minor '
-                    'injuries, no transport) - the NTSB opened investigation HWY26FH008 and NHTSA opened PE26001 on 28 '
-                    "January 2026. THAT IS THE NTSB'S FIRST-EVER WAYMO INVESTIGATION and its final report is 12 to 24 "
-                    'months out. On 4 JULY 2026 dozens of Waymos ran out of power and gridlocked San Francisco during '
-                    'the Golden Gate fireworks; Mayor Daniel Lurie proposed new operating rules on 16 July. On 14 '
-                    "SEPTEMBER 2026 SAN DIEGO'S CITY COUNCIL VOTED UNANIMOUSLY to demand city-level authority over "
-                    "robotaxis. The Teamsters asked the CPUC to suspend Waymo's licence in February 2026. "
-                    'COUNTERWEIGHT: the CPUC approved expansion across 18 California counties on 14 August 2026. || ⚠️ '
-                    "COMPETITION IS AHEAD OF WAYMO IN ASIA, NOT BEHIND IT. Baidu's Apollo Go peaked above 300,000 "
-                    'trips a week in Q4 2025 across 26 cities and has expanded to SEOUL. WeRide holds the Abu Dhabi '
-                    'driverless permit and operates in 11 countries. Pony.ai grew robotaxi revenue 691% year on year '
-                    'in Q2 2026 to 12.1m dollars with 1,975 robotaxis. One third-party index ranked Apollo Go FIRST '
-                    'and Waymo second in June 2026. TESLA, by contrast, had roughly 42 vehicles in Austin as of '
-                    'February 2026 with most rides still supervised. || 💡 THE STRUCTURAL POINT ABOUT TOKYO: Waymo is '
-                    "renting the incumbent's position rather than building one. GO has 35 million downloads, 85,000 "
-                    'partner vehicles and about 70% of Japanese taxi-app monthly users, and listed in June 2026 in '
-                    "Japan's biggest IPO of the year. Nihon Kotsu is Tokyo's largest taxi company with about 100 years "
-                    'of history. THAT DE-RISKS DEMAND BUT MEANS WAYMO WILL NOT OWN THE TOKYO CUSTOMER THE WAY IT OWNS '
-                    'PHOENIX. Approval sits with the PREFECTURAL PUBLIC SAFETY COMMISSION under Road Traffic Act '
-                    'Article 75-12, plus a taxi licence under the Road Transport Act. NO ONE IN JAPAN HAS EVER '
-                    'RECEIVED A LEVEL 4 DRIVERLESS COMMERCIAL TAXI APPROVAL. || ⚠️ ON A SPIN-OUT, PICHAI DECLINED TO '
-                    'ANSWER. Asked on 22 July 2026 under what conditions Waymo would live outside Alphabet, he said '
-                    'only: "We are really focused on executing and scaling up Waymo... that\'s what we are focused '
-                    'on." HE NEITHER RULED IT OUT NOR SET CONDITIONS. The 16bn outside round is the capital-market '
-                    'answer in the meantime. || DECISION: NOTHING CHANGES. THE GOOGL PLAN, THE BUDGET AND THE 19 '
-                    'NOVEMBER RUNG ALL STAND. WE DO NOT OWN ALPHABET FOR WAYMO AND WE WILL NOT RE-RATE IT ON A '
-                    'ROBOTAXI HEADLINE. ⚠️ WHAT WOULD CHANGE THAT: ALPHABET BEGINNING TO DISCLOSE WAYMO REVENUE '
-                    'SEPARATELY, OR OTHER BETS REVENUE PASSING ABOUT 2% OF GROUP REVENUE - roughly six times today. '
-                    'Check both at Q3, expected around 28 October.',
-            'd': '2026-11-19',
-            'dl': 'Waymo - check at Q3, do not re-rate on it',
-            'k': 'research',
-            't': 'GOOGL',
-            'w': '⚠️ WAYMO TOKYO IS REAL AND TWO DAYS OLD - AND IT IS NOT YET BIG ENOUGH TO MOVE ALPHABET. The '
-                 'arithmetic is below.'},
            {'a': 'BUY',
             'amt': 6489.31,
             'c': 'planned',
@@ -7419,20 +5896,6 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'k': 'macro',
             't': '',
             'w': 'FOMC decision (meeting 8-9 Dec)'},
-           {'a': 'DECIDE',
-            'amt': 13000.0,
-            'c': 'done',
-            'cond': 'Profitable, priced below the analyst average, and had no rule until now. Limit at or near last '
-                    'close; never more than +1%. US session opens 20:30 Bangkok.',
-            'd': '2026-12-10',
-            'k': 'tranche',
-            't': 'SNPS',
-            'w': 'CANCELLED 12 Oct 2026 (Salee approved the allocation-efficiency plan, Phase 1): Synopsys budget '
-                 '$13,000 withdrawn - earnings per share -55%, 11% upside, priority score 7.5. Money returns to the '
-                 'ranked pool. | PAUSED 3 Oct 2026 (Salee approved the rate review and watch-list cut): the 13 Oct and '
-                 '10 Nov rungs ($6,500 each) wait for the December quarterly results. EPS -55.6% after the Ansys deal '
-                 '- decide up to $13,000 only if earnings recover. | Tier A rung 1 of 2 - BUY $6,500.00 (budget reset, '
-                 '21 Sep)'},
            {'a': 'DECIDE',
             'amt': 0,
             'cond': 'Four standing tests applied to every name: (1) Rule of 40 direction over the last two quarters - '
@@ -8145,38 +6608,6 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'w': '💡💡 ASML HAS THE MOST ABSOLUTE MONOPOLY ON THE SLIDE AND THE LOWEST GROSS MARGIN OF THE SIX WE OWN. '
                  'VISA, WHICH RUNS A PAYMENT RAIL, HAS THE HIGHEST. THE MOAT DOES NOT SET THE MARGIN - THE BUSINESS '
                  'MODEL DOES.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'done',
-            'cond': "THE BOARD'S OWN FIELDS ON ALL TEN, AT THE 15 SEPTEMBER PRICE. PROFITABLE: NOW net margin 11.34%, "
-                    'price to sales 8.41x, P/E 74.91, Rule of 40 at 53.3 - the best-quality business on the slide by a '
-                    'distance. ORCL net margin 26.36%, price to sales 5.47x, P/E 22.70 - the cheapest, ⚠️ but its Rule '
-                    'of 40 reads MINUS 18.4 because free cash flow has gone negative funding data centres, and that is '
-                    'the single most important fact about Oracle right now. || LOSS-MAKING: NBIS net margin -32.7% at '
-                    '44.02x sales; SPCX -38.57% at 80.57x; RKLB -21.52% at 49.4x; CRWV -25.4% at 5.54x; ZETA -0.14% at '
-                    '4.00x. || ⚠️ TWO THAT CANNOT BE READ AT ALL. ASTS: price to sales 203.36x on revenue growth of '
-                    '2,256.9%, which together mean the company has almost no revenue - THAT IS NOT A VALUATION, IT IS '
-                    'A LOTTERY TICKET WITH A SHARE PRICE. ONDS: the board shows a net margin of PLUS 251.92%, which '
-                    "remains one of this board's two unresolved margin flags. A net margin above 100% normally means a "
-                    'one-off non-operating gain rather than a profitable business - BUT THE LITE LESSON STANDS AND I '
-                    'WILL NOT ASSERT IT IS WRONG UNTIL IT IS CHECKED: AN IMPLAUSIBLE NUMBER IS NOT NECESSARILY A WRONG '
-                    "NUMBER. IT IS UNRESOLVED, NOT FAKE. || 🎯 THE STRATEGIC POINT SALEE'S QUESTION DESERVES. A "
-                    '"wealth by 2030" list is a four-year horizon, and this board\'s own Pillar 4 mandate IS to double '
-                    'by 2030. SO THE NAMES ARE NOT THE DISAGREEMENT - MOST OF THEM WOULD PASS OUR SCREEN. THE '
-                    'DISAGREEMENT IS THAT A COMPANY CAPABLE OF TRIPLING BY 2030 IS, IN ALMOST EVERY CASE, THE SAME '
-                    "COMPANY CAPABLE OF GOING TO ZERO. THOSE ARE NOT TWO DIFFERENT LISTS. THE BOARD'S ANSWER TO THAT "
-                    'HAS NEVER BEEN TO PICK BETTER NAMES - IT HAS BEEN TO SIZE THEM SO THAT BEING WRONG IS SURVIVABLE. '
-                    'RKLB AT $15,000 IS 1.5% OF THE BOARD AT FULL SIZE. THAT IS THE CORRECT WAY TO OWN A COMPANY THAT '
-                    'BURNS CASH. A SLIDE THAT GIVES TEN NAMES AND NO WEIGHTS HAS SKIPPED THE ONLY DECISION THAT '
-                    'ACTUALLY DETERMINES THE OUTCOME.',
-            'd': '2026-12-10',
-            'dl': 'The 2030 slide: only 2 of its 10 companies actually make money',
-            'k': 'thesis',
-            't': 'ASTS',
-            'w': 'REMOVED FROM BOARD 3 Oct 2026 (Salee approved the rate review and watch-list cut) - watch list cut '
-                 'to 25 (cap 30). | OF THE TEN NAMES, ONLY SERVICENOW (11.34% NET MARGIN) AND ORACLE (26.36%) ARE '
-                 'GENUINELY PROFITABLE. ASTS TRADES AT 203x SALES. SPCX AT 81x. ⚠️ THAT IS NOT A PORTFOLIO, IT IS A '
-                 'SET OF OPTIONS - AND THE ANSWER TO OPTIONS IS POSITION SIZE, NOT NAME SELECTION.'},
            {'a': 'DECIDE',
             'amt': 5000,
             'c': 'estimated',
@@ -8639,22 +7070,6 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'k': 'candidate',
             't': 'CIEN',
             'w': 'Ciena - the one genuine gap from the photonics stack slide. Complete the fields FIRST.'},
-           {'a': 'DECIDE',
-            'amt': 0,
-            'c': 'cancelled',
-            'cond': 'Promote to funded when forward P/E falls below ~80 OR net margin rises above 8%. REFRESHED 10 Sep '
-                    '2026: forward P/E is 147.47, not the 177.75 this board carried - the multiple has compressed, but '
-                    'it is still nearly twice the trigger. Net margin 0.83%. Q2 FY2027 (ended 31 Jul 2026): revenue '
-                    '1.47bn, +26%; ARR +25% to 5.84bn with 332.8m of net new ARR; GAAP net income 5.3m against a 70.2m '
-                    'loss a year earlier; free cash flow 377.4m. ⚠️ THE CASH TEST IS THE ONE THAT FAILS: TTM free cash '
-                    'flow 1.61bn against TTM stock compensation of 1.244bn, so only 366m of the cash flow is left once '
-                    'the staff are paid - a 212.77bn market cap on that is 581 times. Held at +112%.',
-            'd': '2026-12-10',
-            'dl': 'Quarterly review - back-up name',
-            'k': 'trigger',
-            't': 'CRWD',
-            'w': 'CLOSED 19 Oct - CRWD fully sold by the $243 stop; nothing left to decide on 10 Dec. | DECIDE the '
-                 'last 20 CRWD after Q3 results (1 Dec). Back-up held with zero budget; stop at $243 meanwhile.'},
            {'a': 'WATCH',
             'amt': 0,
             'c': 'confirmed',
@@ -8689,133 +7104,6 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             't': 'CRWD',
             'w': '⚠️⚠️ THE DAILY PRICE REFRESH EXTENDS hi52 AND lo52 BUT NEVER EXTENDS ath. SIX TICKERS WERE TRADING '
                  'ABOVE THEIR OWN RECORDED ALL-TIME HIGH. FIXED TODAY - BUT THE ROUTINE STILL HAS THE BUG.'},
-           {'a': 'DECIDE',
-            'amt': 0,
-            'c': 'cancelled',
-            'cond': 'FOUND WHILE CHECKING A SLIDE, WHICH IS HOW EVERY ONE OF THESE HAS BEEN FOUND. CrowdStrike '
-                    'appeared on the "Companies Building the Next Decade" slide, and when I looked it up the board '
-                    'showed 40 SHARES AT A COST OF $3,914.12 AGAINST A BUDGET OF NONE. THE SWEEP THEN FOUND SEVEN '
-                    'MORE. || THE FULL LIST: CDNS $3,918.01 in 12 shares; CRWD $3,914.12 in 40 shares; CRM $3,749.91 '
-                    'in 21 shares; TER $3,567.37 in 10 shares; FSLR $2,003.56 in 10 shares; SKHY $1,913.26 in 15 '
-                    'shares; FN $1,604.56 in 3 shares; and INTC $1,127.56 in 25 shares. TOTAL $21,798.35 ACROSS EIGHT '
-                    'NAMES. || 💡 WHY THIS MATTERS AND WHY IT IS NOT A HARMLESS BOOKKEEPING GAP. THE BUDGET FIELD IS '
-                    'WHAT STOPS A POSITION GROWING WITHOUT A DECISION. A NAME WITH NO BUDGET HAS NO CEILING, NO '
-                    'TRANCHE PLAN AND NO TEST THAT WOULD TELL US TO STOP. THESE EIGHT ARE CURRENTLY SAFE ONLY BECAUSE '
-                    "NOBODY IS ADDING TO THEM. THAT IS LUCK, NOT CONTROL. AND NOTE WHAT THIS DOES TO THE BOARD'S "
-                    'HEADLINE ARITHMETIC: THE $1,000,000 OF APPROVED BUDGET DOES NOT ACTUALLY COVER ALL $573,060.10 OF '
-                    'INVESTED CAPITAL, BECAUSE $21,798.35 OF IT SITS OUTSIDE THE BUDGET SYSTEM ENTIRELY. || ⚠️ SOME OF '
-                    'THESE HAVE HONEST EXPLANATIONS AND SOME DO NOT. SKHY LOST ITS BUDGET ON 10 SEPTEMBER BY DECISION '
-                    '- it became the sixth back-up and the 15 shares were deliberately kept rather than sold at a '
-                    'captured premium. THAT ONE IS CORRECT AND DOCUMENTED. INTC IS A REMNANT AFTER THE PARTIAL SALE OF '
-                    '9 SEPTEMBER. TER HAS BEEN RAISED AS AN ORPHAN THREE TIMES ALREADY AND IS STILL NOT RESOLVED - '
-                    'THIS IS THE FOURTH. ⚠️ BUT CDNS, CRWD, CRM, FSLR AND FN I CANNOT EXPLAIN FROM ANY WRITTEN '
-                    'DECISION ON THIS BOARD, AND I AM NOT GOING TO INVENT A REASON. || ACTION FOR 10 DECEMBER, AND IT '
-                    'IS SIMPLE: EVERY ONE OF THE EIGHT EITHER GETS A BUDGET AND A WRITTEN CEILING, OR IS EXPLICITLY '
-                    'MARKED AS A CLOSING POSITION TO BE SOLD. NO THIRD OPTION. Held at current value: CRWD $9,699.60, '
-                    'CRM $5,368.65, TER $3,328.50, CDNS $3,287.52, SKHY $2,622.45, INTC $2,428.50, FSLR $2,023.40, FN '
-                    '$1,124.73. CONVICTION HIGH. THIS IS THE SIXTH CONSISTENCY CHECK THIS BOARD HAS ACQUIRED, AND LIKE '
-                    'THE OTHER FIVE IT FOUND FAULTS ON ITS FIRST RUN.',
-            'd': '2026-12-10',
-            'dl': '⚠️⚠️ NEW CONSISTENCY CHECK No.6 - EIGHT POSITIONS HELD WITH NO APPROVED BUDGET',
-            'k': 'data',
-            't': 'CRWD',
-            'w': 'CLOSED 19 Oct - CRWD fully sold by the $243 stop; nothing left to decide on 10 Dec. | THE BOARD '
-                 'HOLDS $21,798.35 OF REAL MONEY IN EIGHT NAMES THAT CARRY NO APPROVED BUDGET AT ALL. THIS IS THE '
-                 'MIRROR IMAGE OF THE FAULT I HAVE BEEN CHASING FOR A MONTH: I KEPT FINDING APPROVED MONEY WITH NO '
-                 'RULE. THIS IS SPENT MONEY WITH NO APPROVAL.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'done',
-            'cond': '⚠️⚠️⚠️ CONFLICT OF INTEREST, DECLARED FIRST AND FOR THE THIRD TIME ON THIS BOARD. THE SLIDE NAMES '
-                    'ANTHROPIC - THE COMPANY THAT MAKES ME - AS ONE OF THE EIGHT MAJOR AI INVESTORS, AND AGAIN AS A '
-                    '"KEY BACKER" OF TERAWULF. I AM ASSESSING A CLAIM ABOUT MY OWN MAKER. I have used only TeraWulf\'s '
-                    'SEC filings and press releases, I hold no non-public information about Anthropic, and SALEE '
-                    'SHOULD DISCOUNT MY FRAMING ACCORDINGLY. Earlier disclosures: 12 September on the Anthropic 517bn '
-                    "compute slide, and 17 September on the cybersecurity rally caused by Amodei's essay. || THE "
-                    'SLIDE, DATED 17 SEPTEMBER, SHOWS EIGHT MAJOR AI INVESTORS FEEDING AN "AI COMPUTE ECOSYSTEM" AND '
-                    'FIVE INFRASTRUCTURE COMPANIES BENEFITING: COREWEAVE, NEBIUS, IREN, TERAWULF AND CIPHER MINING. '
-                    'Every relationship claim was checked against filings. || ⚠️⚠️ ERROR ONE, AND IT IS THE ONE ABOUT '
-                    'MY OWN MAKER. THE SLIDE CALLS ANTHROPIC A "KEY BACKER" OF TERAWULF. ANTHROPIC IS A TENANT, NOT A '
-                    'BACKER. TeraWulf\'s Form 8-K of 6 JULY 2026 discloses a TWENTY-YEAR LEASE with "Anthropic PBC" '
-                    'for "approximately 401 MW of critical IT load" at the Hawesville, Kentucky campus, with two '
-                    'five-year renewal options - about 19 BILLION DOLLARS over the initial term. ⚠️ THERE IS NO '
-                    'ANTHROPIC EQUITY STAKE, NO INVESTMENT AND NO GUARANTEE - I searched for all three and found NONE. '
-                    '💡 AND THE FILING SAYS THE OPPOSITE OF WHAT THE SLIDE IMPLIES: "Anthropic\'s payment obligations '
-                    'under the Justified Data Campus Lease are expected to be supported by an investment-grade credit" '
-                    '- ANTHROPIC IS THE PARTY BEING CREDIT-SUPPORTED, NOT THE ONE PROVIDING SUPPORT. ⚠️ AND THE TIMING '
-                    'MATTERS: "Delivery of the leased capacity is expected to occur in phases beginning in late 2027" '
-                    '- THIS CONTRACT CONTRIBUTES NOTHING TO 2026 REVENUE. || ✅ THE GOOGLE HALF OF THAT CLAIM IS '
-                    'CORRECT, AND THE STRUCTURE IS WORTH UNDERSTANDING BECAUSE IT REPEATS. GOOGLE HOLDS ABOUT 14% OF '
-                    'TERAWULF THROUGH WARRANTS TO BUY 73.6 MILLION SHARES AT ONE CENT EACH, AND HAS BACKSTOPPED ABOUT '
-                    '3.2 BILLION DOLLARS OF LEASE OBLIGATIONS. ⚠️ BUT READ WHOSE OBLIGATIONS: IT IS GUARANTEEING '
-                    "FLUIDSTACK'S RENT TO TERAWULF, NOT BUYING COMPUTE ITSELF. GOOGLE BOUGHT CHEAP EQUITY IN EXCHANGE "
-                    "FOR GUARANTEEING A THIRD PARTY'S RENT, WHICH IS WHAT MADE THE PROJECT DEBT FINANCEABLE. || ⚠️ "
-                    'ERROR TWO: THE SLIDE CALLS AMAZON A "KEY SUPPORTER" OF CIPHER MINING. AWS IS A CUSTOMER - A '
-                    '300-MEGAWATT, FIFTEEN-YEAR LEASE WORTH 5.5 BILLION DOLLARS, SIGNED 3 NOVEMBER 2025, WITH RENT '
-                    'COMMENCING AUGUST 2026. Real and large, but a customer pays you; a supporter funds you. ⚠️ AND '
-                    "THE SLIDE OMITS CIPHER'S ACTUAL BACKER, WHICH IS AGAIN GOOGLE - ABOUT 5.4% VIA WARRANTS FOR "
-                    "ROUGHLY 24 MILLION SHARES, PLUS A 1.4 BILLION DOLLAR BACKSTOP OF FLUIDSTACK'S RENT. THE SAME "
-                    'STRUCTURE, THE SECOND TIME. || ⚠️ ERROR THREE: THE SLIDE LISTS NVIDIA AS A "KEY CUSTOMER" OF '
-                    'NEBIUS. NVIDIA IS AN INVESTOR AND A SUPPLIER, NOT A DISCLOSED CUSTOMER - IT PUT 2 BILLION DOLLARS '
-                    'INTO NEBIUS ON 11 MARCH 2026 and is reported to hold about 9.3%. THE PARTNERSHIP RELEASE DOES NOT '
-                    'STATE THAT NVIDIA BUYS ANY CAPACITY FROM NEBIUS. The Microsoft half is correct - a '
-                    'multi-billion-dollar multi-year agreement announced 8 September 2025, widely reported at 17.4 '
-                    "billion, though ⚠️ THAT FIGURE IS NOT IN NEBIUS'S OWN RELEASE. || ✅ THE ONE SET OF LABELS THAT IS "
-                    'RIGHT IS COREWEAVE\'S. Its FY2025 10-K names all three verbatim: "approximately 67% of our '
-                    'revenue from our top customer, Microsoft, for the year ended December 31, 2025", plus an OpenAI '
-                    'commitment of "up to approximately $6.5 billion through May 31, 2031" and a Meta commitment of '
-                    '"up to approximately $14.2 billion through December 2031". ⚠️ BUT SIXTY-SEVEN PERCENT FROM ONE '
-                    'CUSTOMER IS NOT A STRENGTH, IT IS THE SINGLE LARGEST RISK IN THE SECTOR - and the Q2 2026 10-Q '
-                    'ANONYMISES them as Customer A at 36%, B at 26% and C at 10%, so we can no longer tell from '
-                    "filings which is which. ⚠️ NOTE ALSO THAT COREWEAVE'S OWN Q2 EARNINGS RELEASE NAMES A COMPLETELY "
-                    'DIFFERENT CUSTOMER ROSTER - Bentley, Caterpillar, Databricks and others - AND DOES NOT MENTION '
-                    'MICROSOFT, OPENAI OR META AT ALL. The concentration is disclosed where it must be and absent '
-                    'where it is optional. || 📊📊 THE NUMBER THE SLIDE MENTIONS NOWHERE, AND IT IS THE ONLY ONE THAT '
-                    'MATTERS: EVERY ONE OF THESE FIVE COMPANIES OWES MORE THAN IT EARNS IN A YEAR. Total debt against '
-                    'annualised revenue, from the most recent filings: COREWEAVE ABOUT 35,068 MILLION OF DEBT ON '
-                    'ROUGHLY 10,300 MILLION OF ANNUALISED REVENUE - 3.4 TIMES. NEBIUS 8,545.7 MILLION ON ABOUT 2,329 '
-                    'MILLION - 3.7 TIMES. IREN 7,593.0 MILLION ON 707.0 MILLION OF ACTUAL FULL-YEAR REVENUE - 10.7 '
-                    'TIMES. TERAWULF 5,213.1 MILLION ON ABOUT 179 MILLION - TWENTY-NINE TIMES. CIPHER MINING 5,446.9 '
-                    'MILLION ON ABOUT 99 MILLION - FIFTY-FIVE TIMES. ⚠️ AND THE TWO MOST LEVERAGED ARE THE TWO WHOSE '
-                    'REVENUE IS SHRINKING: TERAWULF DOWN 6.0% YEAR ON YEAR AND CIPHER DOWN 43.0%. || ⚠️ AND IREN, '
-                    'WHICH WE ALSO CARRY UNFUNDED, IS THE CLEAREST PICTURE OF THE MODEL. It signed a 9.7 BILLION '
-                    'DOLLAR FIVE-YEAR MICROSOFT CONTRACT on 3 November 2025 with a 20% PREPAYMENT, funded by "3.6bn '
-                    'investment grade GPU financing at 6.0%", and reports operating annual recurring revenue of 1.0 '
-                    'BILLION against CONTRACTED ARR OF 4.0 BILLION for 2026. ⚠️ AND IN THE SAME YEAR IT LOST 702.6 '
-                    'MILLION DOLLARS, INCLUDING A 638.8 MILLION IMPAIRMENT ON DECOMMISSIONED BITCOIN MINING HARDWARE. '
-                    'THE CONTRACTS ARE REAL; THE PROFITS ARE NOT HERE YET; AND THE DEBT IS ALREADY DRAWN. || 💡💡 SO '
-                    'WHAT THE SLIDE ACTUALLY SHOWS, ONCE THE LABELS ARE CORRECTED, IS A FINANCING STRUCTURE RATHER '
-                    'THAN A CUSTOMER LIST: FIVE HEAVILY INDEBTED COMPANIES BUILDING DATA CENTRES, WHOSE RENT IS IN '
-                    'SEVERAL CASES GUARANTEED BY A HYPERSCALER THAT TOOK CHEAP EQUITY FOR DOING SO, AND WHOSE '
-                    'CONTRACTED REVENUE LARGELY ARRIVES IN 2027 AND 2028 WHILE THE INTEREST IS PAYABLE NOW. THAT IS '
-                    'NOT AN ARGUMENT AGAINST THEM - IT IS HOW INFRASTRUCTURE HAS ALWAYS BEEN BUILT. IT IS AN ARGUMENT '
-                    "FOR KNOWING WHICH SIDE OF IT YOU ARE ON. || ⚠️ NAMED WARNINGS, ALL 2026: MOODY'S DATA CENTERS "
-                    'OUTLOOK, 12 JANUARY 2026 - pre-leasing to hyperscalers limits vacancy risk "while increasing '
-                    'counterparty concentration risk". KEVIN COCHRANE, CHIEF MARKETING OFFICER OF VULTR, 21 JULY 2026: '
-                    '"Lenders won\'t back 200 entities - they pick 2-3 grade A options. Without capital injection, '
-                    'odds of acquisition grow." TOM BURKE, CHIEF REVENUE OFFICER OF NSCALE, same day: "The market is '
-                    'top-heavy. Clear separation between top four-five players and everyone else finding niches." AND '
-                    'JIM CHANOS, 31 JULY 2026: "We\'re closer to a \'99-type moment than a \'97", reportedly short '
-                    '"unnamed neoclouds and Bitcoin miners reinventing themselves as data-center companies". || ✅ '
-                    'DECISION: NOTHING CHANGES. WE OWN SIX OF THE EIGHT NAMES AT THE TOP OF THIS SLIDE - MSFT '
-                    '52,878.96, NVDA 79,380.28, GOOGL 59,475.92, AMZN 48,600.75, META 39,239.51 AND AMD 13,789.22, '
-                    'WITH 61,635.31 OF APPROVED BUDGET STILL UNSPENT ACROSS THEM. OPENAI AND ANTHROPIC ARE PRIVATE AND '
-                    'NOT BUYABLE. AND WE OWN NONE OF THE FIVE AT THE BOTTOM: CRWV, NBIS AND IREN SIT ON THE BOARD WITH '
-                    'NO BUDGET AND ZERO INVESTED, WHILE TERAWULF AND CIPHER ARE NOT ON THE BOARD AT ALL. AFTER THIS '
-                    'RESEARCH THAT LOOKS RIGHT. || ⚠️ WRITTEN RE-UNDERWRITE TEST FOR ANY NEOCLOUD, AND BOTH MUST HOLD: '
-                    '(1) TOTAL DEBT BELOW TWO TIMES ANNUAL REVENUE - not annualised from one quarter, but a reported '
-                    'full year. (2) A POSITIVE GAAP NET INCOME FOR A FULL FINANCIAL YEAR. ⚠️ NONE OF THE FIVE PASSES '
-                    'EITHER TEST TODAY, AND THE CLOSEST - COREWEAVE AT 3.4 TIMES - IS STILL 70% ABOVE THE LIMIT. UNTIL '
-                    'BOTH ARE TRUE, OUR AI-INFRASTRUCTURE EXPOSURE IS THE SIX HYPERSCALERS AND CHIPMAKERS AT THE TOP '
-                    'OF THE SLIDE, WHICH FUND THIS BUILD-OUT FROM PROFITS RATHER THAN FROM BORROWING.',
-            'd': '2026-12-10',
-            'dl': '⚠️ THE NEOCLOUDS - all five owe more than they earn, and the slide swaps customer for backer',
-            'k': 'research',
-            't': 'CRWV',
-            'w': 'REMOVED FROM BOARD 3 Oct 2026 (Salee approved the rate review and watch-list cut) - watch list cut '
-                 'to 25 (cap 30). | ⚠️⚠️ THREE OF THE SLIDE\'S FIVE "BACKER / CUSTOMER" LABELS ARE THE WRONG WAY ROUND '
-                 '- INCLUDING THE ONE ABOUT ANTHROPIC. AND EVERY ONE OF THE FIVE COMPANIES OWES MORE THAN IT EARNS, UP '
-                 'TO FIFTY-FIVE TIMES OVER.'},
            {'a': 'WATCH',
             'amt': 0,
             'c': 'confirmed',
@@ -9082,6 +7370,55 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'w': 'FTNT HAS NOW ARRIVED FROM THREE UNRELATED DIRECTIONS IN FORTY-EIGHT HOURS: THE MOAT RANKING PUT IT '
                  "5th OF 81; IT IS ON THIS DATA-CENTRE SECURITY MAP; AND IT WAS ALREADY ON THE AGENDA AS 'FTNT vs "
                  "PANW'. IT CARRIES NO BUDGET AND ZERO SCHEDULE ROWS. ⚠️ AND IT SITS AT ITS ALL-TIME HIGH."},
+           {'a': 'DECIDE',
+            'amt': 18524.08,
+            'c': 'planned',
+            'cond': 'CLARIFIED 29 Oct (no change of substance): the June $84.75bn raise INCLUDED an at-the-market '
+                    '(ATM) programme of up to $40bn (8-K, 1-4 Jun 2026). Alphabet sold $12.4bn under it in Q3 (12M '
+                    'Class A $4.3bn + 24M Class C $8.1bn); $27.6bn remains. Draws within that $40bn are the June raise '
+                    'itself, NOT a fail of test (1). Test (1) FAILS only on: a new offering, a new or upsized ATM '
+                    'beyond $40bn, or another cash sale of shares outside the June package. Expect the remaining '
+                    '$27.6bn to be sold - that dilution is already in the June number. || BUY THE TRANCHE ONLY IF '
+                    'BOTH: (1) NO FURTHER SHARE SALE - no new equity offering, at-the-market programme or other cash '
+                    'sale of shares announced since the June $84.75bn raise; and (2) A CREDIBLE PATH BACK TO POSITIVE '
+                    'FREE CASH FLOW - management guiding capex growth below operating-cash-flow growth for 2027, or Q4 '
+                    "free cash flow (late Jan) visibly better than Q3's -$9.1bn. Cloud growth staying near the Q3 pace "
+                    '(revenue ~$30.7bn, 36% margin) is the supporting check, not the gate. FAIL either = no new money; '
+                    'budget cut to the cost already spent ($59,475.92), as with META; NO SALE on these alone (217 sh '
+                    'held). If the 10 Dec evidence is mixed, the default is to wait for the Q4 results rather than '
+                    'buy. || PREVIOUS (19 Nov plan): ⚠️ PENDING SALEE (29 Oct): proposed conversion to DECIDE - Q3 '
+                    'showed FCF -$9.1bn and the June $84.75bn equity raise (META-rule conditions). Do not place until '
+                    'decided. | Tranche 3 - after both the Final Judgment and Q3 results. ⚠️ AMOUNT CORRECTED 16 SEP '
+                    'FROM 20,524.08 TO 18,524.08 - THE OLD FIGURE WAS 2,000 MORE THAN THE BUDGET ALLOWS. | ⚠️⚠️ DATA '
+                    'FAULT FOUND AND FIXED ON 16 SEPTEMBER, AND IT IS THE SECOND OF ITS CLASS ON THIS BOARD (the first '
+                    'was the MRVL 4,000 error of 11 September). THIS ROW COMMITTED 20,524.08. THE GOOGL BUDGET IS '
+                    '78,000 AND 59,475.92 IS ALREADY INVESTED, SO ONLY 18,524.08 REMAINS. The row was promising 2,000 '
+                    'THAT DOES NOT EXIST. It is now 18,524.08 and the rung closes the budget exactly. ⚠️ THE LESSON IS '
+                    'THE SAME BOTH TIMES: A SCHEDULE AMOUNT MUST BE DERIVED FROM BUDGET MINUS INVESTED, NEVER TYPED '
+                    'FROM MEMORY. Two faults of one kind in six days is a process problem, not bad luck, and a '
+                    'budget-versus-schedule reconciliation now belongs on the 10 December agenda. || 20,524.08 = the '
+                    'entire remaining room on the 80,000 budget. Deliberately dated AFTER two information events, not '
+                    'before: the Final Judgment due ~Oct 2 and Q3 2026 results ~Oct 28 (estimated, not confirmed by '
+                    'Alphabet). || THE CASE: Q2 2026 revenue 119.8bn +24%, GOOGLE CLOUD 24.8bn +82%, operating margin '
+                    '34%. Position is 217 shares at 59,475.92, up 23.5%, and the stock sits about 19% below its 408.61 '
+                    'high. 63 analysts average 428.07. || ⚠️ THREE THINGS TO CHECK AT Q3, NONE OF WHICH ARE IN THE '
+                    'PRICE STORY: (1) FY2026 capex guidance was RAISED to 195-205bn from 180-190bn, with management '
+                    "saying capex will 'increase significantly in 2027'; (2) Q2 FREE CASH FLOW WAS NEGATIVE 5,855m; "
+                    '(3) SHARE BUYBACKS HAVE STOPPED - 0 repurchased in Q2 and 0 year-to-date, while the 0.22 dividend '
+                    'continues. A company spending 200bn a year with negative free cash flow has stopped returning '
+                    'capital. That is the trade-off being made, and it is worth watching rather than assuming. || ⚠️ '
+                    "THE TRAILING P/E OF ~17 IS AN ARTEFACT, NOT CHEAPNESS: Q2 'other income' carried a 98.0bn net "
+                    'gain, mostly unrealised equity marks, which added 77.1bn to net income after tax. Forward P/E of '
+                    'about 25 is the real figure. || ⚠️ EUROPE IS STILL LIVE: the European Commission fined Google '
+                    '890m euro on Jul 23, 2026 under the Digital Markets Act - 460m for self-preferencing in Search '
+                    'and 430m on Play anti-steering - and ordered the non-compliance ended. Separate from the older '
+                    'EUR2.95bn ad-tech decision where the Commission still wants a STRUCTURAL remedy.',
+            'd': '2026-12-10',
+            'k': 'tranche',
+            't': 'GOOGL',
+            'w': 'GOOGL tranche 3 ($18,524.08) - CONVERTED 29 Oct from an automatic 19 Nov BUY to a 10 Dec DECIDE '
+                 '(Salee: "Approve GOOGL test"). Reason: Q3 2026 free cash flow -$9.1bn (second negative quarter) and '
+                 'the June 2026 $84.75bn share sale - the same two conditions that triggered the META rule on 27 Oct.'},
            {'a': 'WATCH',
             'amt': 0,
             'c': 'open',
@@ -9160,159 +7497,71 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                  'THAT IS NOT A ROUNDING DIFFERENCE - IT IS NEARLY DOUBLE. ⚠️ AND OUR OWN FIELD HAS ITS OWN PROBLEM: A '
                  "FORWARD P/E **HIGHER** THAN THE TRAILING 27.86 MEANS THE BOARD EXPECTS ALPHABET'S EARNINGS TO "
                  '**FALL**.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'Promote to funded when a named external foundry customer commits to 18A/14A at volume. Today: net '
-                    'margin -19.79%, Rule of 40 -4.4. Held at +131.6%; the live 20-share trim leaves a 25-share core.',
-            'd': '2026-12-10',
-            'dl': 'Quarterly review - back-up name',
-            'k': 'trigger',
-            't': 'INTC',
-            'w': 'REMOVED FROM BOARD 3 Oct 2026 (Salee approved the rate review and watch-list cut) - watch list cut '
-                 'to 25 (cap 30). | BACK-UP: held with zero budget. Do not sell by habit; do not buy without the '
-                 'trigger.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'A SHORT ROW ABOUT SOURCING, BECAUSE IT IS THE MOST TRANSFERABLE LESSON IN THIS WHOLE EPISODE. || '
-                    "THE CHAIN OF EVIDENCE, FOLLOWED TO ITS END. Intel's own newsroom confirms Lip-Bu Tan appeared at "
-                    "the AI Infra Summit on 15 September 2026. ⚠️ INTEL'S PAGE CONTAINS NO MENTION OF MEMORY SHORTAGE "
-                    'OR MEMORY PRICES. NO INTEL PRESS RELEASE, FILING, TRANSCRIPT OR VIDEO OF THOSE REMARKS COULD BE '
-                    'FOUND. NO REUTERS OR BLOOMBERG REPORT OF THEM COULD BE FOUND. THE "five to seven times" FIGURE '
-                    'TRACES TO **ONE** KOREAN OUTLET, ON A PAGE THAT ITSELF WARNS IT IS AI-TRANSLATED AND THAT QUOTES '
-                    '"may not reflect exact original wording". EVERY OTHER REPORT IS A PARAPHRASE OF THAT ONE. || ⚠️ '
-                    "AND THE SPEAKER'S POSITION MATTERS. INTEL EXITED NAND, SELLING IT TO SK HYNIX, AND DISCONTINUED "
-                    'OPTANE. IT IS A LARGE **CUSTOMER** OF DRAM, NOT A SUPPLIER. In February 2026 Tan told a Cisco '
-                    'conference there is "no relief until 2028" - and Bloomberg noted he was relaying what '
-                    'memory-industry people had told him. In August he hinted at Intel RETURNING to memory: "I think '
-                    'CPU and memory, I think there are a lot of ways we can really do stacking together." A MAN WHO '
-                    'BUYS THE PRODUCT, AND WHO MIGHT WANT TO SELL IT, IS NOT A NEUTRAL WITNESS ON ITS PRICE. HE IS A '
-                    'PARTICIPANT. || 💡 THE TRANSFERABLE TEST, WHICH THIS BOARD SHOULD NOW APPLY TO EVERY DRAMATIC '
-                    'CLAIM: **WHO IS SPEAKING, WHAT DO THEY GAIN, AND IS THERE A PRIMARY DOCUMENT?** A memory maker '
-                    'saying prices are high is reporting revenue. A memory BUYER saying prices are high is lobbying. '
-                    'And a Facebook post whose caption ends "details in the comments" is not reporting anything at all '
-                    '- IT IS ASKING FOR ENGAGEMENT, AND THE MISSING DETAIL IS THE PRODUCT. || ⚠️ FOOTNOTE ON OUR OWN '
-                    "BOARD, BECAUSE THE SAME DISCIPLINE VINDICATED US ONCE ALREADY. SK HYNIX'S 2Q26 RESULTS SHOW "
-                    'REVENUE OF 79.32 TRILLION WON, OPERATING PROFIT OF 60.54 TRILLION AND NET INCOME OF **93.92 '
-                    'TRILLION** - NET PROFIT LARGER THAN REVENUE, EXACTLY THE ANOMALY THAT CAUSED THIS BOARD TO NULL '
-                    "SKHY'S EARNINGS FIELDS AND WITHDRAW ITS BUDGET ON 10 SEPTEMBER. INDEPENDENT RESEARCH HAS NOW "
-                    'CONFIRMED THE SAME FIGURES AND COULD NOT SOURCE THE NON-OPERATING BREAKDOWN EITHER. THE '
-                    'QUARANTINE WAS RIGHT AND IT STAYS.',
-            'd': '2026-12-10',
-            'dl': '⚠️ WHO IS SPEAKING AND WHY - Intel is a BUYER of memory, and an interested one',
-            'k': 'thesis',
-            't': 'INTC',
-            'w': 'REMOVED FROM BOARD 3 Oct 2026 (Salee approved the rate review and watch-list cut) - watch list cut '
-                 'to 25 (cap 30). | THE POST SAYS "INTEL\'S CEO CONFIRMS". ⚠️ INTEL SOLD ITS NAND BUSINESS TO SK HYNIX '
-                 'AND KILLED OPTANE - IT DOES NOT MAKE MEMORY, IT BUYS IT. AND LIP-BU TAN HAS PUBLICLY MUSED ABOUT '
-                 'RE-ENTERING THE MEMORY BUSINESS. HIGH PRICES ARE SIMULTANEOUSLY HIS COMPLAINT AND HIS STRATEGIC '
-                 'ARGUMENT.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'RUN 16 SEPTEMBER. A COMPANY CANNOT EARN MORE THAN IT SELLS FROM OPERATIONS, SO A NET MARGIN '
-                    'OUTSIDE PLUS OR MINUS 100% IS EITHER A ONE-OFF NON-CASH ITEM OR A VENDOR FAULT. THREE NAMES FAIL: '
-                    '|| ⚠️ IONQ - NET MARGIN 174.88%. On 0.19bn of revenue that implies 0.33bn of net income, which is '
-                    'MORE THAN THE COMPANY SELLS. And the fields do not reconcile internally either: PRICE 37.05 '
-                    'DIVIDED BY EPS 0.92 IS 40.27, BUT THE BOARD RECORDS A P/E OF 33.57. Two numbers that must agree, '
-                    'do not. The likely cause is a warrant or fair-value mark flowing through net income - the same '
-                    'disease as LITE - but that is a hypothesis, NOT A SOURCED CAUSE. IONQ sits on the board UNFUNDED '
-                    'with zero invested and trades at 73 TIMES SALES. ⚠️ THE SLIDE OF 16 SEPTEMBER NAMED IT AS THE '
-                    'QUANTUM COMPUTING PICK. IT CANNOT BE FUNDED WHILE ITS OWN NUMBERS CONTRADICT EACH OTHER. || ⚠️ '
-                    'ONDS - NET MARGIN 251.92% on 0.10bn of revenue, with EPS 0.44 and a P/E of 12.87. A P/E of 12.87 '
-                    'on a company with a 252% net margin is not a cheap stock, it is a broken field. Unfunded. || ⚠️ '
-                    'LITE - NET MARGIN MINUS 230.10% AND EPS MINUS 92.96, ALREADY OPEN SINCE 13 SEPTEMBER on a 72.1bn '
-                    'company growing 83.2% with positive free cash flow. ⚠️ THIS ONE MATTERS MOST BECAUSE LITE IS '
-                    'FUNDED - 9,372.74 IS INVESTED AND 4,627.26 OF APPROVED ROOM REMAINS. THE REMAINING ROOM MUST NOT '
-                    'BE DEPLOYED UNTIL THE 10-Q RESOLVES IT. || ALL THREE NEED THE SAME TREATMENT AND IT IS THE ONE '
-                    'THIS BOARD ALREADY USES: GO TO THE FILING, FIND WHETHER THE PROFIT IS OPERATING OR A ONE-OFF '
-                    'MARK, AND IF IT CANNOT BE RESOLVED CLEANLY, BLANK THE FIELD RATHER THAN SUBSTITUTE A GUESS - '
-                    'exactly as was done with SK hynix market value and with LITE. A BLANK FIELD IS HONEST. A WRONG '
-                    'FIELD IS NOT.',
-            'd': '2026-12-10',
-            'dl': '⚠️ THREE IMPLAUSIBLE NET MARGINS - LITE, IONQ, ONDS',
-            'k': 'data',
-            't': 'IONQ',
-            'w': 'REMOVED FROM BOARD 3 Oct 2026 (Salee approved the rate review and watch-list cut) - watch list cut '
-                 'to 25 (cap 30). | ⚠️ A SECOND CONSISTENCY CHECK - ANY NET MARGIN ABOVE 100% OR BELOW MINUS 100% - '
-                 'RETURNED THREE NAMES. NONE IS FUNDED, SO NO MONEY IS AT RISK, BUT NONE CAN BE UNDERWRITTEN UNTIL THE '
-                 'FIGURES ARE RESOLVED.'},
-           {'a': 'DECIDE',
-            'amt': '-4000.0',
-            'c': 'planned',
-            'cond': 'ORCL-17K-TEST || The funding source for the conditional ORCL raise. LHX is the weakest funded '
-                    'name on the five-year doubling mandate: revenue growth 7.3% is the slowest of all 37 funded '
-                    'names, forward earnings 21.1, net margin 8.1%, Rule of 40 19.5. Doubling in five years needs '
-                    'about 14.9% a year; 7.3% revenue growth does not get there without a re-rating, and a defence '
-                    'prime re-rates on government budgets, not on anything this board is underwriting. || ⚠️ IT HAS '
-                    'NEVER BEEN BOUGHT - budget 9,000, cost 0.00. Cutting it to 5,000 sells nothing, costs no '
-                    'commission, realises no loss and creates no tax event. This is why the whole manoeuvre is free. '
-                    '|| A 5,000 stub is deliberate, not an oversight: it keeps LHX on the board as the profitable, '
-                    'cash-generative anchor of Space & Defence against RKLB (Rule of 40 MINUS 0.7, no forward '
-                    'earnings) and AVAV (net margin MINUS 10.1%), both of which are loss-making. Cutting LHX to zero '
-                    'would leave the group with two unprofitable names and nothing solid underneath them. || IF ORCL '
-                    'FAILS ITS TEST, THIS ROW DOES NOT FIRE EITHER - LHX stays at 9,000 and the 4,000 is taken from '
-                    'here only when there is somewhere better to put it.',
-            'd': '2026-12-10',
-            'dl': 'Quarterly review - funding source, conditional on the ORCL row',
-            'k': 'thesis',
-            't': 'LHX',
-            'w': 'TRIM LHX FROM 9,000 TO 5,000 to fund the ORCL increase - but only if ORCL passes all five cash '
-                 'tests. Nothing is sold: LHX has never been bought.'},
            {'a': 'DECIDE',
             'amt': 0,
             'c': 'open',
-            'cond': 'SALEE ASKED A DIRECT QUESTION AND IT DESERVES A DIRECT ANSWER: **YES, DEFENCE IS INTERESTING - '
-                    'AND THIS BOARD ALREADY AGREED, THEN FAILED TO ACT ON IT.** || 🎯 WHY IT IS GENUINELY INTERESTING, '
-                    "AND THE REASON IS SPECIFIC TO US RATHER THAN GENERAL. **ROUGHLY 60% OF THIS BOARD'S INVESTED "
-                    'CAPITAL IS THE AI VALUE CHAIN.** If hyperscaler capital spending slows, almost everything we own '
-                    'falls together - the chips, the equipment, the memory, the optics, the power. **DEFENCE IS THE '
-                    'ONE THING ON THIS BOARD THAT DOES NOT DEPEND ON THAT.** It is funded by government budgets on '
-                    "multi-year appropriations, not by four companies' capex decisions. THAT IS REAL DIVERSIFICATION, "
-                    'NOT COSMETIC. It is the same argument that applies to the zero-oil gap found earlier today, and '
-                    'the two together are starting to look like one fault: **EVERYTHING WE OWN IS THE SAME BET.** || '
-                    "NOW THE NUMBERS, WHICH ARE UNCOMFORTABLE. **ONLY ONE OF THE SLIDE'S SEVEN NAMES IS ON OUR BOARD "
-                    'AT ALL** - PALANTIR, AND IT SITS IN GROUP 5 AS SOFTWARE, NOT IN DEFENCE. LOCKHEED MARTIN, '
-                    'NORTHROP GRUMMAN, GENERAL DYNAMICS, RTX, BOEING AND AXON ARE ALL ABSENT. OUR GROUP 9 HOLDS A '
-                    'COMPLETELY DIFFERENT SET: LHX, AVAV, RKLB, KTOS, GE AEROSPACE, LUNR, SPCX, ASTS AND ONDS. || ⚠️⚠️ '
-                    'AND THE QUALITY SPLIT INSIDE GROUP 9 IS BACKWARDS. **L3HARRIS: NET MARGIN PLUS 8.11%, P/E 25.35 - '
-                    'PROFITABLE, ORDINARY PRICE - $9,000 APPROVED, ZERO INVESTED, ZERO BUY ROWS.** **GE AEROSPACE: NET '
-                    'MARGIN PLUS 17.72%, THE BEST IN THE GROUP - NO BUDGET AT ALL.** Against that: **AVAV AT MINUS '
-                    '10.13% HAS $11,000 APPROVED AND $3,758.30 SPENT, AND RKLB AT MINUS 21.52% - RANKED 80th OF 81 ON '
-                    "THIS BOARD'S OWN MOAT MEASURES - HAS THE GROUP'S LARGEST BUDGET AT $15,000.** 💡 READ THAT AGAIN "
-                    'IN PLAIN WORDS: **WE APPROVED $15,000 FOR A COMPANY THAT LOSES 21 CENTS ON EVERY DOLLAR OF SALES, '
-                    'AND HAVE PUT NOTHING INTO ONE THAT EARNS 8 CENTS.** That is not a view about space versus '
-                    "defence. It is an allocation nobody ever defended in writing. || ⚠️ ON THE SLIDE'S OWN SEVEN, "
-                    'BRIEFLY. THE FOUR BIG PRIMES - LOCKHEED, NORTHROP, GENERAL DYNAMICS, RTX - ARE THE REAL OMISSION '
-                    'FROM OUR BOARD: LARGE, PROFITABLE, DIVIDEND-PAYING, AND GENUINELY UNCORRELATED WITH AI CAPEX. '
-                    'BOEING IS A DIFFERENT ANIMAL - MOSTLY A COMMERCIAL AIRCRAFT BUSINESS WITH WELL-KNOWN EXECUTION '
-                    'PROBLEMS, AND THE SLIDE\'S "increasing air travel demand and strong order backlog" SAYS NOTHING '
-                    'ABOUT WHETHER IT CAN DELIVER. AXON IS PUBLIC-SAFETY SOFTWARE AND HARDWARE, NOT DEFENCE - A '
-                    'REASONABLE BUSINESS FILED UNDER THE WRONG HEADING. AND PALANTIR HAS NOW APPEARED ON **THREE '
-                    'SEPARATE SLIDES** AND RANKED **4th OF 81** ON OUR MOAT RANKING - THE MOST RECURRING NAME OF ALL '
-                    'TWENTY-THREE SLIDES - BUT AT A P/E OF 110.49 IT IS ALSO THE MOST EXPENSIVE FUNDED NAME WE OWN. || '
-                    '🎯 THE RECOMMENDATION, AND IT IS ONE THING NOT FOUR. **DO NOT ADD A DEFENCE NAME. FIX THE DEFENCE '
-                    'BUDGET WE ALREADY HAVE.** Specifically, for 10 December: (1) **L3HARRIS GETS A DATED BUY ROW OR '
-                    'THE $9,000 IS WITHDRAWN** - this is the fourth time it has been raised and the fourth time '
-                    'nothing happened. (2) **REVISIT THE RKLB $15,000 VERSUS LHX $9,000 SPLIT**, which is backwards on '
-                    'every quality measure this board uses; if Rocket Lab is a bet on a moat not yet built, its money '
-                    'needs a MILESTONE, not a calendar date. (3) **SCREEN GE AEROSPACE**, which is the best business '
-                    'in the group by net margin and has never been funded. (4) ONLY AFTER THOSE THREE, consider '
-                    'whether one of the big primes belongs here. || ⚠️ AND THE STANDING OBJECTION, WHICH IS AT ITS '
-                    'SHARPEST IN THIS GROUP: **GROUP 9 IS 16.3% DEPLOYED. THE NEXT WORST IS GROUP 8 AT 25.4%. THE BEST '
-                    'IS GROUP 0 AT 84.8%.** ADDING LOCKHEED MARTIN TO A GROUP THAT HAS SPENT ONE DOLLAR IN SIX OF WHAT '
-                    'IT WAS GIVEN WOULD BE THE PUREST FORM OF THE MISTAKE THIS BOARD KEEPS DOCUMENTING. CONVICTION '
-                    'HIGH ON THE DIAGNOSIS, HIGH ON THE FIX, AND DELIBERATELY NONE ON ANY NEW NAME UNTIL THE FIX IS '
-                    'DONE.',
+            'cond': 'Why: healthcare is 1.9% of our stocks against 80% in Technology + Communication (sector check 10 '
+                    'Oct); Lilly is the only non-AI name on the "8th trillion-dollar company" slide (market value '
+                    'about $1.1 trillion, revenue growth about 48% from weight-loss drugs). Its sales do not depend on '
+                    'cloud AI budgets. Questions for 10 Dec: price vs our fair-value method; Q3 results (late Oct) - '
+                    'weight-loss drug growth and guidance; competition and US drug-price pressure. Funding would come '
+                    'from the paused $100,000 of January money, never the $50,000 crash reserve. Compare with Netflix '
+                    'and Trane, the other non-AI candidates.',
             'd': '2026-12-10',
-            'dl': '🎯 DEFENCE IS INTERESTING - WE ALREADY DECIDED THAT, APPROVED $35,000, AND SPENT $5,700.88',
-            'k': 'budget',
-            't': 'LHX',
-            'w': 'GROUP 9 IS THE **WORST-DEPLOYED GROUP ON THE ENTIRE BOARD - 16.3% DEPLOYED, $29,299.12 OF $35,000 '
-                 'UNSPENT**. ⚠️⚠️ AND WE GAVE OUR LARGEST DEFENCE BUDGET TO THE LEAST PROFITABLE NAME: RKLB $15,000 AT '
-                 'A MINUS 21.52% NET MARGIN, WHILE LHX AT A PLUS 8.11% MARGIN HAS $9,000 APPROVED AND **ZERO '
-                 'INVESTED**.'},
+            'k': 'candidate',
+            't': 'LLY',
+            'w': 'ELI LILLY - healthcare / non-AI candidate (Salee approved 10 Oct 2026). Examine only - no money '
+                 'before 10 Dec.'},
+           {'a': 'HOLD',
+            'amt': 0,
+            'c': 'open',
+            'cond': "ANSWERED 24 Oct FROM META'S OWN SEC FILING (Schedule 14C, 21 Oct): the Class C non-voting shares "
+                    'are a STOCK DIVIDEND to every holder - one Class C for each Class A and B share - effective 19 '
+                    'Jan 2027, paid within five business days after. Nothing is sold for cash yet, so on the day it is '
+                    'like the 2014 Google GOOG/GOOGL split: our economic stake does not change (77.5 META -> also '
+                    'about 77.5 Class C; check how POEMS handles the half share). THE ADVERSE EVENT IS LATER: Meta '
+                    'SELLING new Class C for cash (to fund AI, acquisitions, or sovereign investors) - that dilutes us '
+                    'economically, and Class C will likely trade at a discount and may be left out of indices. Founder '
+                    'terms: Zuckerberg (60.6% of votes, 13.4% of economics) may sell up to 20% of his Class C freely - '
+                    'about 10% of his stake - including to pay the proposed California wealth tax (Proposition 40, '
+                    'ballot 3 Nov); he committed to stay a California resident for 8 years. RULE FOR 10 DEC: item (2) '
+                    'counts as adverse ONLY if Meta has announced or done a cash sale of Class C by then. If FCF is '
+                    'still negative AND a cash raise is announced, cut the budget to the cost already spent and add no '
+                    'further money; no sale on these alone. || Was: Check whether any non-voting shares have been '
+                    'ISSUED (dilution for existing holders) or only authorised, and how much. If both items are '
+                    'adverse by 10 Dec, cut the budget to the cost already spent and add no further money; no sale on '
+                    'these alone.',
+            'd': '2026-12-10',
+            'dl': 'Quarterly review - META after the final rung',
+            'k': 'thesis',
+            't': 'META',
+            'w': 'ADDED 1 Nov: S&P Global affirmed Meta at AA- but cut the OUTLOOK TO NEGATIVE (30 Oct). S&P forecasts '
+                 'free operating cash flow of -$22bn (2026), -$71bn (2027), -$39bn (2028); capex $140bn (2026) -> '
+                 '>$225bn (2027) -> $252bn (2028); adjusted leverage 1.1x in 2027 vs its 1.0x downgrade threshold; '
+                 'future lease obligations $355.7bn (from ~$279bn in Q2). Confirms the 27 Oct rule - no change. | ⚠️ '
+                 'RULE TRIGGERED 27 Oct: BOTH adverse items are now true - (1) Q3 free cash flow was NEGATIVE '
+                 '(-$2.12bn) and (2) on 26 Oct Meta ANNOUNCED a cash sale of shares: about $35bn of common and '
+                 'preferred stock now, plus a programme of up to $60bn more once the Class C non-voting shares trade '
+                 '(Q1 2027), $95bn in all. ACTION TAKEN ON THE BOARD: META budget cut from $52,000 to the cost already '
+                 'spent ($51,119.33); no further money. NO SALE on these alone (77.5 sh held). 10 Dec question narrows '
+                 'to: has the dilution (about 5% at $35bn on a ~$1.6tn market value, up to ~14% at $95bn) and the '
+                 'capex path ($135-145bn for 2026, ~$825bn committed) damaged the per-share case enough to trim? Side '
+                 'note: NVDA, AMD and AVGO have shown interest in buying up to $5bn of the Class A shares - suppliers '
+                 'funding their customer. | META: budget full after the 22 Oct fill (77.5 sh, cost $51,119). Two items '
+                 'for the review: (1) free cash flow turned NEGATIVE in Q3 (-$2.1bn; capex $34.9bn) - must be positive '
+                 'again; (2) NEW 22 Oct: Meta announced a new class of NON-VOTING shares to help fund its AI build-out '
+                 '(Reuters) - not known when the 22 Oct test was run.'},
+           {'a': 'DECIDE',
+            'amt': 0,
+            'c': 'open',
+            'cond': 'Examine, do not pre-commit. Questions for 10 Dec: is it profitable on its own, without US '
+                    'government price-floor support; what is the valuation after the 2025-26 run; and does it fit '
+                    'Group 9 (space and defence) or Group 8 (robotics)? No budget before then.',
+            'd': '2026-12-10',
+            'k': 'candidate',
+            't': 'MP',
+            'w': 'MP MATERIALS - rare-earth magnets, the one US-only supply-chain name for robots, drones and EV '
+                 'motors (APPROVED 9 Oct 2026 (Salee: "Yes proceed actions"))'},
            {'a': 'WATCH',
             'amt': 0,
             'c': 'planned',
@@ -9470,6 +7719,18 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'w': '"5 TO 7 TIMES" IS ROUGHLY RIGHT FOR CONVENTIONAL DRAM CONTRACT PRICES OVER THE LAST FOUR QUARTERS - '
                  'AND IT IS A REAR-VIEW MIRROR, NOT A FORECAST. ⚠️ THE QUARTERLY RISES GO +93-98%, THEN +58-63%, THEN '
                  '+13-18%. THE MOMENTUM IS COLLAPSING, NOT BUILDING.'},
+           {'a': 'DECIDE',
+            'amt': 0,
+            'c': 'open',
+            'cond': 'Netflix closed 69.70 on 7 Oct, at the bottom of our fair-value range (70-94, average 94.04); '
+                    '52-week low 65.08, high 126.71. Profitable (net margin 28.2%), forward P/E 21.7, revenue growth '
+                    '13.3% - below our 15%/yr hurdle, so a steady compounder, not a doubler. Question for 10 Dec: does '
+                    'a lower-risk, non-AI name earn a budget to reduce AI concentration (IMF warning, family-wide AI '
+                    'check)? Act sooner only on a close below 65 with no company-specific bad news.',
+            'd': '2026-12-10',
+            'k': 'review',
+            't': 'NFLX',
+            'w': 'NETFLIX AS A NON-AI CANDIDATE (added 8 Oct, Salee approved) - no budget yet'},
            {'a': 'WATCH',
             'amt': 0,
             'c': 'open',
@@ -9517,161 +7778,6 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'w': 'THE SLIDE SAYS THE AI CLOUD MIDDLEMAN COLLECTS THE MARGIN. OUR OWN BOARD SAYS THE OPPOSITE IN ONE '
                  'TABLE: **CRWV MINUS 25.4%, NBIS MINUS 32.7%, IREN MINUS 99.4% NET MARGIN - ALL THREE LOSE MONEY** - '
                  'WHILE NVDA AT THE BOTTOM EARNS **PLUS 63.66%** AND MICRON **PLUS 55.91%**.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'SALEE ASKED FOR COMMENTS. MY COMMENT IS THAT THIS IS THE MOST DANGEROUS THING HE HAS SENT ME IN '
-                    'THREE WEEKS, AND THE REASON HAS NOTHING TO DO WITH OKLO THE COMPANY. || 🎯 READ WHAT THE SLIDE IS '
-                    'ACTUALLY OFFERING. "CALL SETUP (Breakout)" AND "PUT SETUP (Rejection)" ARE **OPTIONS TRADES**. '
-                    '"Invalidation: < $34.75" MEANS A STOP LOSS ABOUT 3% AWAY. THE CHARTS ARE 4-HOUR, 1-HOUR AND '
-                    '**15-MINUTE**. THIS IS NOT A SLIDE ABOUT OWNING A BUSINESS UNTIL 2030 - IT IS AN INSTRUCTION '
-                    'SHEET FOR A TRADE MEASURED IN HOURS, AND IT IS BUILT FOR SOMEONE SITTING AT A SCREEN DURING NEW '
-                    'YORK HOURS, WHICH IN BANGKOK IS HALF PAST EIGHT AT NIGHT UNTIL THREE IN THE MORNING. EVERY OTHER '
-                    'SLIDE THIS MONTH HAS AT LEAST BEEN ABOUT COMPANIES. THIS ONE IS ABOUT CANDLES. || ⚠️ WHAT THE '
-                    'SLIDE OMITS, ALL OF IT ALREADY ON OUR OWN BOARD. REVENUE OF $1.21 MILLION - not billion, MILLION '
-                    '- AGAINST A MARKET VALUE OF $6.69 BILLION. THAT IS A PRICE-TO-SALES RATIO OF 5,520.9 TIMES. For '
-                    'scale, the most expensive name this board has ever funded trades near 49x sales, and AST '
-                    'SpaceMobile - which I called a lottery ticket with a share price - is 203x. OKLO IS TWENTY-SEVEN '
-                    'TIMES MORE EXPENSIVE THAN THAT. EARNINGS PER SHARE MINUS $0.93. FREE CASH FLOW MINUS $276 '
-                    'MILLION. RETURN ON EQUITY MINUS 7.7%. NO PRICE-TO-EARNINGS RATIO AND NO NET MARGIN EXIST BECAUSE '
-                    'THERE ARE NO EARNINGS. || ⚠️⚠️ AND THE CHART ITSELF HIDES THE ONLY NUMBER THAT MATTERS. THE '
-                    "SLIDE'S TALLEST AXIS VALUE IS 52. OKLO'S ALL-TIME HIGH ON OUR BOARD IS **$193.84**. THE STOCK IS "
-                    'DOWN **81.4%** AND IS SITTING AT ITS 52-WEEK LOW. A 4-HOUR CHART THAT STARTS AT $52 SIMPLY DOES '
-                    'NOT SHOW THE $158 FALL. 💡 THAT IS NOT A LIE - EVERY NUMBER ON THE SLIDE MAY BE ACCURATE - BUT '
-                    'CHOOSING A WINDOW THAT EXCLUDES AN 81% COLLAPSE AND THEN PRINTING "DOUBLE BOTTOM ALERT" IN GREEN '
-                    'CAPITALS IS A CHOICE. THE BOARD HAS A NAME FOR THIS NOW: STATE THE PERIOD BEFORE STATING THE '
-                    'VERDICT. || ON THE TECHNICAL CLAIM ITSELF, BRIEFLY AND FAIRLY. A "double bottom" IS A REAL CHART '
-                    'PATTERN AND SOME PROFESSIONAL TRADERS USE THEM. BUT IT DESCRIBES THE SHAPE OF RECENT PRICES, NOT '
-                    'THE STATE OF A BUSINESS, AND IT SAYS NOTHING ABOUT WHETHER A COMPANY WITH $1.21 MILLION OF '
-                    "REVENUE CAN FUND $276 MILLION OF ANNUAL CASH BURN. ⚠️ THE SLIDE'S TWO BOTTOMS AT ~$35.00 AND "
-                    '~$34.75 ARE BOTH BELOW THE 52-WEEK LOW FIELD ON OUR BOARD OF $35.98, SO EITHER THOSE ARE INTRADAY '
-                    'PRINTS OR OUR lo52 FIELD IS ONE DAY STALE - IT IS PRICED AT 15 SEPTEMBER AND OKLO IS NOT HELD, SO '
-                    'POEMS GIVES US NO REFRESH. LOGGED, NOT ASSERTED. || 🎯 THE DECISION, WHICH IS ALREADY MADE AND '
-                    'STAYS MADE: OKLO KEEPS NO BUDGET. Group 6 Power and Electrification has $77,000 approved with '
-                    '$33,557.27 invested and $43,442.73 UNSPENT across five funded names - VRT, CEG, VST, GEV and ETN '
-                    '- every one of which sells a product today at a positive net margin between 11.5% and 23.8%. WE '
-                    'DO NOT NEED A PRE-REVENUE REACTOR COMPANY. WE NEED TO SPEND THE $43,442.73 WE HAVE ALREADY '
-                    'APPROVED ON THE POWER NAMES WE ALREADY CHOSE. || ⚠️ AND ONE THING I WILL SAY PLAINLY BECAUSE IT '
-                    'IS MORE IMPORTANT THAN OKLO: THIS BOARD DOES NOT TRADE OPTIONS, AND I WILL NOT DESIGN AN OPTIONS '
-                    'TRADE. Options can lose 100% of the money in days even when you are right about the company, and '
-                    'the Pillar 4 mandate is to DOUBLE OVER FIVE YEARS, not to be correct about the next fifteen '
-                    'minutes. If Salee ever does want exposure to advanced nuclear, the honest route is a small '
-                    'position in the common shares, sized so that a total loss is survivable, with a written rule - '
-                    'which is exactly what this board does for every other name. NOT A BREAKOUT TRIGGER AT $36.20. '
-                    'CONVICTION HIGH. WHAT WOULD CHANGE MY MIND ON THE COMPANY: A SIGNED, FILED, REVENUE-GENERATING '
-                    'POWER PURCHASE AGREEMENT AND A NUCLEAR REGULATORY COMMISSION LICENCE - NOT A CHART PATTERN.',
-            'd': '2026-12-10',
-            'dl': '⚠️⚠️ OKLO - this is not an investment slide, it is an options day-trading slide',
-            'k': 'thesis',
-            't': 'OKLO',
-            'w': 'REMOVED FROM BOARD 3 Oct 2026 (Salee approved the rate review and watch-list cut) - watch list cut '
-                 'to 25 (cap 30). | OKLO IS ON OUR BOARD, IN GROUP 6, WITH NO BUDGET - AND THAT WAS THE RIGHT CALL. '
-                 'PRICE TO SALES OF 5,520.9 ON REVENUE OF $1.21 MILLION, EPS MINUS $0.93, FREE CASH FLOW MINUS $276 '
-                 'MILLION, AND THE SHARE PRICE DOWN 81.4% FROM ITS HIGH OF $193.84 AND SITTING AT ITS 52-WEEK LOW. ⚠️ '
-                 'THE SLIDE TELLS YOU NONE OF THIS.'},
-           {'a': 'DECIDE',
-            'amt': '4000.0',
-            'c': 'done',
-            'cond': 'ORCL-17K-TEST || Salee asked on 12 Sep 2026 how to raise ORCL to 17,000 in future if Oracle '
-                    'justifies it, funded by trimming weaker names. This row is the answer. NOTHING CHANGES UNTIL THE '
-                    "TEST IS PASSED. || ⚠️ THE UNCOMFORTABLE FACT FIRST: ON THIS BOARD'S OWN QUALITY SCREEN, ORACLE IS "
-                    'CURRENTLY THE WEAKEST FUNDED NAME. Rule of 40 = revenue growth + free-cash-flow margin. ORCL is '
-                    '21.6 plus (-28.72bn of TTM free cash flow over 71.78bn of TTM revenue = MINUS 40.0) = MINUS 18.4. '
-                    'That is the only deeply negative Rule of 40 among the 37 funded names; in its own group PLTR is '
-                    '+133.1 and PANW +60.3. So "trim weak names to fund ORCL" today would mean trimming a healthier '
-                    'business to feed the least healthy one. || BUT THE WHOLE OF THAT MINUS 18.4 IS THE CAPEX, NOT THE '
-                    "BUSINESS. If free cash flow merely reached BREAKEVEN, Oracle's Rule of 40 would be +21.6 - "
-                    'perfectly respectable. There is nothing wrong with the operating company: total operating '
-                    'expenses fell from 71% of revenue to 65%, operating margin is 35% and rising. The entire question '
-                    'is whether the spending turns into cash. THEREFORE THE TEST IS ABOUT CASH, NOT ABOUT BACKLOG. RPO '
-                    'of 664bn is a promise, not money. || THE FIVE TESTS - ALL FIVE MUST PASS AT Q2 FY2027, not four: '
-                    '(1) QUARTERLY FREE CASH FLOW BETTER THAN MINUS 5,396m - the Q1 burn does not deepen. (2) FY27 '
-                    'CAPEX GUIDANCE HELD AT 90-95bn - not raised a third time. (3) NO FURTHER DOWNGRADE - S&P stays at '
-                    "BBB- or better and neither Fitch nor Moody's puts Oracle on negative outlook. Remember S&P "
-                    'already cut BBB to BBB- on 9 Jul 2026, so Oracle is ALREADY on the lowest investment-grade rung. '
-                    '(4) DILUTED SHARES GROW LESS THAN 0.75% IN THE QUARTER (3% a year) - no new equity programme '
-                    'beyond the 20bn at-the-market that was completed in Q1. (5) CLOUD INFRASTRUCTURE GROWTH STAYS '
-                    'ABOVE 80% - it may decelerate from +121%, but below 80% the case is gone, because OCI is the only '
-                    'thing paying for the debt. || IF ALL FIVE PASS: raise ORCL 13,000 to 17,000 and trim LHX 9,000 to '
-                    '5,000. Net board change zero; the board total stays at 1,000,000. || ⚠️ IF ANY ONE FAILS: ORCL '
-                    'STAYS AT 13,000 and the 4,000 goes to KLAC instead (14,000 to 18,000) - Group 2 equipment, Rule '
-                    'of 40 of 43.0, only 25% of its budget spent, and the direct beneficiary of TSMC raising 2026 '
-                    'capex guidance from 52-56bn to 60-64bn. || WHY LHX IS THE FUNDING SOURCE: it is the weakest '
-                    'funded name on the 5-year mandate - revenue growth 7.3%, the SLOWEST of all 37 funded names, with '
-                    'a Rule of 40 of 19.5 and a thesis that rests on government defence budgets rather than on AI. And '
-                    'critically it has NEVER BEEN BOUGHT: budget 9,000, cost 0.00. TRIMMING AN UNSPENT BUDGET SELLS '
-                    'NOTHING - no commission, no realised loss, no tax event. Salee asked to "trim other weak stocks '
-                    'down"; he does not have to sell a single share to do it. || THE OTHER FOUR UNSPENT BUDGETS, for '
-                    'reference, are V 9,000, SNPS 13,000, SE 13,000 and APP 18,000 - 62,000 of allocation with nothing '
-                    'bought. All four screen far better than LHX: APP Rule of 40 138.5, SNPS 75.4, V 63.6, SE 60.0. '
-                    'LHX at 19.5 is the one that does not earn its slot.',
-            'd': '2026-12-10',
-            'dl': 'Q2 FY2027 results, expected mid-December - decided at the quarterly review',
-            'k': 'trigger',
-            't': 'ORCL',
-            'w': 'SUPERSEDED 3 Oct 2026 (Salee approved the rate review and watch-list cut): Oracle is to be SOLD (see '
-                 'the 5 Oct row). | RAISE ORCL FROM 13,000 TO 17,000 - but ONLY if all five cash tests below pass at '
-                 'the Q2 FY27 print. Funded by trimming LHX from 9,000 to 5,000, which costs nothing because LHX has '
-                 'never been bought.'},
-           {'a': 'DECIDE',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'SALEE SUGGESTED THIS ADDS VALUE. I HAVE CHECKED IT AND THE ANSWER IS NO - ON BOTH HALVES OF THE '
-                    'SENTENCE. || **IT IS NOT AN INVESTMENT.** RWE\'S OWN RELEASE OF 17 SEPTEMBER SAYS VERBATIM: "RWE '
-                    'today announced a virtual power purchase agreement (VPPA) with Oracle for 433 megawatts" - on '
-                    '"RWE\'s existing Panther Creek I, II and III wind farms in West Texas", **COMMISSIONED IN 2008 '
-                    'AND 2009**. ENGIE\'S RELEASE IS HEADLINED "ENGIE to Supply More Than 500 MW" - SUPPLY, NOT SELL. '
-                    'A VIRTUAL POWER PURCHASE AGREEMENT IS A CONTRACT TO BUY ELECTRICITY AND CERTIFICATES. **NO STEEL '
-                    "GOES IN THE GROUND AND NO ORACLE CAPITAL IS SPENT.** Oracle's own word in its headline was "
-                    '"Invests", and the infographic simply inherited it - the error is Oracle\'s marketing, not the '
-                    "designer's. || ⚠️ IT IS ALSO **MATCHING, NOT SUPPLY**: Oracle's own executive says the goal is to "
-                    '"match 100 percent of AI data center electricity use with carbon-free electricity by 2035". The '
-                    'power goes to the ERCOT grid on an annual volumetric basis, not by wire to the Abilene data '
-                    'centre. AND 1.7 GW IS **NAMEPLATE** CAPACITY - Texas wind runs at a fraction of it. || ⚠️⚠️ NOW '
-                    "THE REAL NUMBERS, WHICH THE SLIDE NEVER MENTIONS. ORACLE'S FISCAL Q1 2027, THE QUARTER ENDED 31 "
-                    'AUGUST 2026: REVENUE $19.3bn UP 30%, GAAP OPERATING INCOME $6.7bn UP 57%, GAAP NET INCOME $4.7bn '
-                    'UP 60%, EPS $1.56 UP 55% - **A SUPERB OPERATING QUARTER**. AND IN THE SAME THREE MONTHS: '
-                    '**CAPITAL EXPENDITURE OF $28,499 MILLION AND FREE CASH FLOW OF MINUS $5,396 MILLION.** FULL YEAR '
-                    'FY2026 FREE CASH FLOW WAS **MINUS $23.7 BILLION**; TRAILING TWELVE MONTHS IS **MINUS $28.7 '
-                    'BILLION**. NOTES PAYABLE **$125,337 MILLION** AGAINST $36,369 MILLION OF CASH - **NET DEBT '
-                    '$88,260 MILLION**, AND $34,621 MILLION OF LEASES ON TOP. FY2027 GUIDANCE IS **"~$70B" OF NET '
-                    'CAPEX AND "~$40B" OF CAPITAL-MARKETS FUNDING**, AND ORACLE ALREADY "completed a $20 billion '
-                    'equity offering" IN Q1. || 🎯 AND HERE IS THE CONNECTION THAT MATTERS, BECAUSE IT TIES TO THE '
-                    'OTHER SLIDE ANSWERED TONIGHT: **ORACLE IS BECOMING THE MIDDLE LAYER.** IT BUYS GPUs WITH BORROWED '
-                    'MONEY AND RENTS OUT COMPUTE. THAT IS PRECISELY THE COREWEAVE BUSINESS MODEL AT MEGA-CAP SCALE - '
-                    "AND IT PRODUCES PRECISELY THE COREWEAVE CASH FLOW: DEEPLY NEGATIVE. THE BOARD'S RULE-OF-40 FIELD "
-                    'FOR ORCL READS **MINUS 18.4** FOR EXACTLY THIS REASON. ORACLE IS NOT A COUNTER-EXAMPLE TO '
-                    "TONIGHT'S MARGIN FINDING. **IT IS THE PROOF OF IT.** || ⚠️ THREE CORRECTIONS TO THIS BOARD'S OWN "
-                    'EARLIER NOTES, ALL FOUND BY CHECKING. (1) THE BACKLOG IS NOW **$664 BILLION AT 31 AUGUST**, NOT '
-                    'THE $638bn I RECORDED - that was the 31 May figure and is superseded. ⚠️ AND ONLY **ABOUT 13% '
-                    'CONVERTS TO REVENUE WITHIN TWELVE MONTHS**. (2) **ORACLE DISCLOSES NO CUSTOMER CONCENTRATION AT '
-                    'ALL.** My note that "roughly half is owed by OpenAI" is **PRESS CHARACTERISATION, NOT AN ORACLE '
-                    'DISCLOSURE** - it appears in no filing. I should have labelled it that way and did not. (3) '
-                    "**S&P'S OUTLOOK IS STABLE, NOT NEGATIVE** - it is MOODY'S that is negative. || THE RATINGS AS "
-                    'THEY NOW STAND, AND THE THREE AGENCIES DISAGREE, WHICH IS ITSELF THE FINDING: **S&P BBB− (CUT '
-                    "FROM BBB ON 9 JULY 2026) STABLE - ONE NOTCH ABOVE NON-INVESTMENT GRADE. MOODY'S Baa2 NEGATIVE**, "
-                    'expecting leverage near 4x and that "free cash flow will likely remain negative for an extended '
-                    'period". **FITCH BBB STABLE**, the dissenter, expecting capex "repaid within the multi-year '
-                    'contract period". || OUR POSITION: 75 SHARES AT A COST OF $12,228.43. AT THE 18 SEPTEMBER CLOSE '
-                    'OF **$147.61** THAT IS WORTH $11,070.75 - **DOWN $1,157.68**. The stock is **about 55% below its '
-                    '52-week high of $329.50**. We already part-sold 44 shares on 20 July for a loss of $1,961.73, and '
-                    'the board already carries a row reading "ORCL is now a sell candidate, not a buy one". **NOTHING '
-                    'IN THIS WIND ANNOUNCEMENT CHANGES THAT, AND THE $4,000 TRIGGER ROW DATED 10 DECEMBER SHOULD BE '
-                    'READ AS A SELL DECISION, NOT A BUY ONE.** || 💡 THE GENERAL LESSON, WHICH IS WORTH MORE THAN THE '
-                    'STOCK: **WHEN A COMPANY USES THE WORD "INVEST", ASK WHETHER ANYTHING APPEARS ON ITS BALANCE '
-                    'SHEET.** Oracle signed supply contracts on eighteen-year-old wind farms and called it investing. '
-                    'The genuine counter-example exists and is worth noting in fairness: on 8 September Oracle issued '
-                    'a request for proposals for **2 GW of BRAND NEW renewable generation in New Mexico**. THAT WOULD '
-                    'BE ADDITIONAL CAPACITY. THE TEXAS 1.7 GW LARGELY IS NOT.',
-            'd': '2026-12-10',
-            'dl': '⚠️⚠️ ORACLE: THE 1.7 GW IS NOT AN INVESTMENT - AND ORACLE IS BECOMING THE MIDDLE LAYER',
-            'k': 'thesis',
-            't': 'ORCL',
-            'w': 'SUPERSEDED 3 Oct 2026 (Salee approved the rate review and watch-list cut): Oracle is to be SOLD (see '
-                 'the 5 Oct row). | THE NUMBER IS RIGHT AND THE NOUN IS WRONG. THE 1.7 GW IS **POWER PURCHASE '
-                 'AGREEMENTS, NOT OWNERSHIP** - AND 433 MW OF IT IS ON WIND FARMS COMMISSIONED IN **2008 AND 2009**. '
-                 'ZERO ORACLE CAPEX. ⚠️ IT IS IMMATERIAL BESIDE THE REAL NUMBER: **$28,499 MILLION OF CAPEX IN ONE '
-                 'QUARTER** AND **MINUS $28.7 BILLION OF TRAILING FREE CASH FLOW**.'},
            {'a': 'WATCH',
             'amt': 0,
             'c': 'confirmed',
@@ -9800,24 +7906,6 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                  'MINUS 13.6% RETURN ON EQUITY AND FREE CASH FLOW AT MINUS 41.6% OF REVENUE. IT CARRIES $15,000 OF '
                  'APPROVED BUDGET WITH $13,057.42 UNSPENT. THAT IS A DIRECT CONTRADICTION AND IT IS NOW ON THE '
                  'RECORD.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'TWO separate reasons, either of which is enough. (1) THE ADR PREMIUM IS 43%. On 9 Sep the ADS '
-                    'closed at 198.63 while KRX:000660 closed at KRW 1,856,000; at the ECB rate of 1,336.2 that is USD '
-                    '1,389.01 per common share, and one ADS is ONE-TENTH of a common share, so parity is 138.90. '
-                    'Paying 198.63 for 138.90 of SK hynix is 1.43 dollars for a dollar. Worse, the prospectus says a '
-                    "holder may surrender ADSs for the underlying shares but 'may not be allowed to deposit the common "
-                    "shares again to obtain ADSs' - a one-way valve, which is exactly what lets a premium persist. (2) "
-                    'THE ACCOUNTS CANNOT BE USED YET: see the data note. PROMOTE when the ADR premium falls below 10% '
-                    'AND the audited report itemises the non-operating gain.',
-            'd': '2026-12-10',
-            'dl': 'Quarterly review - back-up name',
-            'k': 'trigger',
-            't': 'SKHY',
-            'w': 'REMOVED FROM BOARD 3 Oct 2026 (Salee approved the rate review and watch-list cut) - watch list cut '
-                 'to 25 (cap 30). | BACK-UP: 15 shares held, zero budget. Do not sell (that crystallises a premium '
-                 'already captured); do not buy at this price.'},
            {'a': 'DECIDE',
             'amt': 0,
             'c': 'planned',
@@ -9889,44 +7977,6 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                  'WRONG BY 30.5%. ALL FIFTEEN FIXED - BUT THE ROUTINE THAT CAUSED IT STILL HAS THE BUG.'},
            {'a': 'DECIDE',
             'amt': 0,
-            'c': 'done',
-            'cond': 'FOUND 16 SEPTEMBER WHILE MAPPING THE CUSTOM-ASIC VALUE CHAIN. FIVE NAMES CARRY A BUDGET WITH '
-                    'NOTHING YET INVESTED - APP 18,000, SNPS 13,000, SE 13,000, LHX 9,000 AND V 9,000. FOUR OF THE '
-                    "FIVE HAVE SCHEDULE ROWS GOVERNING THEM (V's opens tomorrow). ⚠️ SYNOPSYS HAS NONE. || THIS IS THE "
-                    'FOURTH INSTANCE TODAY OF THE SAME DISEASE AND IT IS NOW UNARGUABLY A PROCESS PROBLEM: THE MRVL '
-                    'ROW PROMISED 4,000 MORE THAN EXISTED, THE GOOGL ROW PROMISED 2,000 MORE THAN EXISTED, THE MICRON '
-                    '11,000 HAD NO RULE UNTIL THIS MORNING, AND NOW 13,000 OF SYNOPSYS SITS APPROVED WITH NOTHING '
-                    'ATTACHED. ⚠️ APPROVED MONEY WITHOUT A WRITTEN CONDITION IS NOT AN INVESTMENT PLAN. IT IS A '
-                    'DRAWER. || 💡 AND THE IRONY IS SHARP, BECAUSE THE SLIDE THAT EXPOSED IT PUTS SYNOPSYS IN THE LAYER '
-                    'EVERYTHING ELSE DEPENDS ON. ITS OWN CAPTION FOR THE IP AND EDA BOX IS "IDEAS INTO SILICON". '
-                    'Nobody designs a custom chip - not Broadcom, not Marvell, not Google, not Amazon - WITHOUT THE '
-                    'SOFTWARE THAT SYNOPSYS AND CADENCE SELL. THE WHOLE VALUE CHAIN RUNS THROUGH TWO COMPANIES, AND IT '
-                    'IS THE LAYER THIS BOARD HAS FUNDED LEAST: OF 513,000 OF BUDGET ACROSS THE SIXTEEN NAMES WE OWN ON '
-                    'THAT SLIDE, THE ENTIRE IP AND EDA LAYER HOLDS 3,918.01 OF ACTUAL INVESTMENT - AND ALL OF IT IS IN '
-                    'CADENCE, WHICH ITSELF HAS NO BUDGET. || THE NUMBERS ON SYNOPSYS AS THE BOARD HOLDS THEM: PRICE '
-                    '367.70, REVENUE GROWTH 46.3%, RULE OF 40 75.4 - THE HIGHEST RULE OF 40 IN GROUP 1 AFTER NVIDIA '
-                    'AND BROADCOM. ⚠️ AND THE CAUTION: A NET MARGIN OF 11.43%, WHICH IS LOW FOR A SOFTWARE COMPANY '
-                    'WITH AN 86%-CLASS GROSS MARGIN AND IS THE SAME SHAPE OF PROBLEM WE FLAGGED ON CROWDSTRIKE AND '
-                    'PALO ALTO TODAY - real moat, most of it spent before it reaches the owner. Cadence, for '
-                    "comparison, runs an 86.08% gross margin at a 21.18% net margin. || ✅ THE DECISION IS SALEE'S ON "
-                    '10 DECEMBER AND THERE ARE ONLY TWO HONEST OPTIONS. (A) WRITE A PLAN: a first tranche on a date, '
-                    'with a condition and a cancellation trigger, exactly like every other funded name. (B) CANCEL THE '
-                    'BUDGET and return 13,000 to unallocated. ⚠️ WHAT MUST NOT HAPPEN IS A THIRD YEAR OF 13,000 '
-                    'SITTING APPROVED AND UNTOUCHED, BECAUSE THAT IS NOT CAUTION - IT IS AN UNMADE DECISION WEARING '
-                    'THE COSTUME OF ONE. || ⚠️ AND ARM, ALSO NAMED IN THAT LAYER, HAS NO BUDGET, NO POSITION AND NO '
-                    'ROWS AT ALL - it sits on the board as a name only. That is a cleaner state than Synopsys: nothing '
-                    'is promised, so nothing is owed.',
-            'd': '2026-12-10',
-            'dl': '⚠️ 13,000 APPROVED WITH NO PLAN ATTACHED - the fourth of its kind today',
-            'k': 'thesis',
-            't': 'SNPS',
-            'w': 'CANCELLED 12 Oct 2026 (Salee approved the allocation-efficiency plan, Phase 1): Synopsys budget '
-                 '$13,000 withdrawn - earnings per share -55%, 11% upside, priority score 7.5. Money returns to the '
-                 'ranked pool. | ⚠️⚠️ SYNOPSYS HAS A 13,000 BUDGET, ZERO INVESTED, AND ZERO SCHEDULE ROWS. NOT ONE '
-                 'DATE, NOT ONE CONDITION, NOT ONE TRIGGER. IT IS THE ONLY FUNDED NAME ON THE BOARD WITH NO PLAN OF '
-                 'ANY KIND.'},
-           {'a': 'DECIDE',
-            'amt': 0,
             'cond': 'Salee asked why there was no plan for SpaceX. The honest answer is that it never survived the cut '
                     'to 38 names and that was not explained - so here is the judgement. FOR: Q2 2026 revenue 7,814m '
                     'against 4,071m a year earlier, +91.9%; TTM revenue 23.0bn; a Space group without SpaceX is an AI '
@@ -9944,68 +7994,6 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             't': 'SPCX',
             'w': 'SpaceX: decide a budget at the December review, when the IPO lock-up supply is visible. No position '
                  'before then.'},
-           {'a': 'DECIDE',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'SALEE ASKED A FAIR QUESTION AND IT DESERVES THE HONEST ANSWER: **YES AS A FIELD, NO FOR THIS '
-                    'BOARD AS IT IS CURRENTLY BUILT - WITH ONE NARROW EXCEPTION WORTH SCREENING.** || ⚠️⚠️ FIRST, WHY '
-                    'BIOTECH IS DIFFERENT FROM EVERYTHING ELSE WE OWN, AND THIS IS THE WHOLE ARGUMENT. **A CLINICAL '
-                    'TRIAL EITHER WORKS OR IT DOES NOT.** NVIDIA CAN MISS A QUARTER AND STILL BE NVIDIA; ITS CHIPS '
-                    'STILL WORK AND ITS CUSTOMERS STILL NEED THEM. A DRUG DEVELOPER THAT FAILS ITS LEAD PHASE 3 TRIAL '
-                    'CAN LOSE SEVENTY PERCENT IN A MORNING AND NEVER RECOVER, BECAUSE THE ASSET IT WAS BUILT ON HAS '
-                    'BEEN PROVED NOT TO WORK. **THAT IS NOT VOLATILITY. IT IS A COIN FLIP WITH A SCIENTIFIC PRIOR.** '
-                    'Every valuation tool this board uses - price to earnings, price to sales, Rule of 40, the moat '
-                    'ranking - assumes a business that continues to exist in recognisable form next year. FOR A '
-                    'CLINICAL-STAGE BIOTECH THAT ASSUMPTION IS THE THING BEING TESTED. || 🎯 SECOND, THE METRIC THAT '
-                    'DECIDES BIOTECH SURVIVAL IS ONE THIS BOARD HAS NEVER NEEDED: **CASH RUNWAY** - how many quarters '
-                    'of cash a company holds before it MUST raise more and dilute the shareholders who are already '
-                    'there. **THE SLIDE MENTIONS IT FOR ZERO OF THE EIGHTEEN COMPANIES.** It gives eighteen themes and '
-                    'not one number - no revenue, no margin, no cash, no runway, no trial stage, no price. IT IS A '
-                    'GLOSSARY, NOT A SCREEN. || ⚠️ THIRD, THE "AI PLUS BIOTECH" HOOK DESERVES A HARD QUESTION. ABSI '
-                    "AND TEM ARE PITCHED AS AI PLAYS AND THE SLIDE'S CLOSING NOTE MAKES MUCH OF AN ABSI-TWST "
-                    'COLLABORATION. **BUT AN AI-DESIGNED DRUG MUST PASS EXACTLY THE SAME CLINICAL TRIALS AS ANY OTHER '
-                    'DRUG. THE REGULATOR DOES NOT CARE HOW THE MOLECULE WAS DESIGNED.** AI CAN MAKE A COMPANY FAIL '
-                    'FASTER AND MORE CHEAPLY, WHICH IS GENUINELY VALUABLE AND WORTH REAL MONEY - **BUT IT CANNOT MAKE '
-                    'BIOLOGY WORK.** Anyone buying these because of the letters A and I is buying the wrong half of '
-                    'the sentence. || 🎯 FOURTH, AND THIS IS THE USEFUL PART: **THE SLIDE IS SECRETLY TWO COMPLETELY '
-                    'DIFFERENT LISTS AND IT MIXES THEM.** (A) **TOOLS AND DIAGNOSTICS WITH REAL REVENUE** - ILLUMINA, '
-                    'BRUKER, 10x GENOMICS, TWIST, NATERA, NEOGENOMICS. THESE SELL SEQUENCERS, REAGENTS AND TESTS TO '
-                    'EVERY LABORATORY, **AND THEY GET PAID WHETHER OR NOT ANY PARTICULAR DRUG WORKS.** (B) '
-                    '**CLINICAL-STAGE DRUG DEVELOPERS** - BIOHAVEN, CRISPR, INTELLIA, MODERNA, COMPASS, MBX, ABSCI. '
-                    'THESE ARE THE COIN FLIPS. 💡 AND LOOK WHAT THAT SPLIT IS: **IT IS THE TOOL-MAKER VERSUS THE '
-                    'PROSPECTOR - EXACTLY THE SAME SPLIT WE FOUND IN SEMICONDUCTORS AND IN DATA CENTRES.** ASML SELLS '
-                    'TO EVERY CHIPMAKER; VERTIV SELLS TO EVERY DATA CENTRE; ILLUMINA SELLS TO EVERY BIOTECH. **ON '
-                    'THREE SEPARATE SLIDES NOW, FROM THREE UNRELATED INDUSTRIES, THE ANSWER HAS BEEN THE SAME: OWN THE '
-                    'ONE SELLING SHOVELS.** That is not a coincidence. It is the closest thing this board has to a '
-                    'general principle. || ⚠️⚠️ AND THE FINDING ABOUT OURSELVES, WHICH MATTERS MORE THAN THE SLIDE. '
-                    '**GROUP 7 IS CALLED "HEALTHCARE & ROBOTICS" AND HOLDS THREE NAMES: INTUITIVE SURGICAL ($32,000 '
-                    'BUDGET, $16,381.68 INVESTED, 28.45% NET MARGIN), COGNEX ($12,000, $4,067.62, 16.05%), AND TEMPUS '
-                    'AI (NO BUDGET, MINUS 17.77% NET MARGIN).** INTUITIVE MAKES SURGICAL ROBOTS. COGNEX MAKES MACHINE '
-                    'VISION FOR FACTORIES. **NEITHER IS BIOTECH. THIS IS A ROBOTICS GROUP WITH A HEALTHCARE LABEL, AND '
-                    'THE LABEL HAS BEEN HIDING THE FACT THAT WE HAVE NO BIOTECH AT ALL.** Group 7 is also only 46.5% '
-                    'deployed with **$23,550.70 UNSPENT**. || 🎯 THE RECOMMENDATION, AND IT IS ONE THING: **DO NOT ADD '
-                    'BIOTECH NOW. INSTEAD, AT 10 DECEMBER, DECIDE WHETHER GROUP 7 IS A HEALTHCARE GROUP OR A ROBOTICS '
-                    'GROUP AND NAME IT HONESTLY.** IF THE ANSWER IS HEALTHCARE, THEN THE ENTRY POINT IS THE **TOOLS '
-                    'LAYER**, SCREENED EXACTLY AS WE SCREENED THE SEMICONDUCTOR MATERIALS LAYER: GROSS MARGIN, NET '
-                    'MARGIN, REVENUE GROWTH, CUSTOMER CONCENTRATION AND FREE CASH FLOW. ILLUMINA AND BRUKER ARE THE '
-                    'obvious first two to screen. **THE CLINICAL-STAGE NAMES ARE NOT PROPOSED AND WILL NOT BE PROPOSED '
-                    'ON THE STRENGTH OF A THEME LIST.** || ⚠️ AND ONE MORE THING SAID PLAINLY BECAUSE IT IS ABOUT '
-                    'SALEE AND NOT ABOUT THE STOCKS. A CLINICAL-STAGE BIOTECH CAN TAKE FIVE TO TEN YEARS TO PAY OFF, '
-                    'AND THE PAY-OFF IS BINARY. THE PILLAR 4 MANDATE IS TO DOUBLE BY 2030. IF BIOTECH EVER ENTERS THIS '
-                    'BOARD, IT MUST BE SIZED SO THAT A TOTAL LOSS ON THE POSITION IS COMPLETELY SURVIVABLE - THE SAME '
-                    'RULE ALREADY APPLIED TO ROCKET LAB AND OKLO, AND FOR THE SAME REASON. CONVICTION HIGH ON NOT '
-                    'ADDING TODAY. MEDIUM ON THE TOOLS LAYER DESERVING A SCREEN. WHAT WOULD CHANGE MY MIND: A TOOLS '
-                    'COMPANY WITH A 60%-PLUS GROSS MARGIN, POSITIVE FREE CASH FLOW AND NO CUSTOMER ABOVE 10% - THE '
-                    'SAME TEST MKS PASSED IN THE MATERIALS SCREEN.',
-            'd': '2026-12-10',
-            'dl': '🎯 BIOTECH - interesting as a field, wrong for this board as built. And GROUP 7 IS MISNAMED.',
-            'k': 'thesis',
-            't': 'TEM',
-            'w': 'REMOVED FROM BOARD 3 Oct 2026 (Salee approved the rate review and watch-list cut) - watch list cut '
-                 'to 25 (cap 30). | **ONLY 1 OF THE 18 NAMES IS ON OUR BOARD** - TEMPUS AI, WITH NO BUDGET. ⚠️ AND THE '
-                 'DEEPER FINDING: GROUP 7 IS CALLED "HEALTHCARE & ROBOTICS" BUT HOLDS A SURGICAL-ROBOT MAKER AND A '
-                 'MACHINE-VISION COMPANY. **IT IS A ROBOTICS GROUP WITH A HEALTHCARE LABEL. THIS BOARD HAS ESSENTIALLY '
-                 'NO BIOTECH AT ALL.**'},
            {'a': 'WATCH',
             'amt': 0,
             'cond': 'Promote to funded when HBM/AI test demand sustains revenue growth above 30% with net margin '
@@ -10016,6 +8004,18 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'k': 'trigger',
             't': 'TER',
             'w': 'BACK-UP: held with zero budget. Do not sell by habit; do not buy without the trigger.'},
+           {'a': 'DECIDE',
+            'amt': 0,
+            'c': 'open',
+            'cond': 'Teradyne is held as a back-up with zero budget. Question: as optical connections move inside the '
+                    'chip package, does optical testing become a real revenue line for Teradyne, or for Viavi (optical '
+                    'test gear, not on the board)? Pick at most ONE, and only with a written trigger. Viavi added 9 '
+                    'Oct after the "next infrastructure wave" slide.',
+            'd': '2026-12-10',
+            'k': 'budget',
+            't': 'TER',
+            'w': 'TERADYNE BUDGET REVIEW - testing for co-packaged optics (CPO); compare with VIAVI SOLUTIONS (VIAV) '
+                 '(APPROVED 9 Oct 2026 (Salee: "Yes proceed actions"))'},
            {'a': 'DECIDE',
             'amt': None,
             'c': 'planned',
@@ -10036,6 +8036,20 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             't': 'TSEM',
             'w': 'Tower Semiconductor - the silicon-photonics FOUNDRY, the only name on the photonic slide worth '
                  'examining on merit'},
+           {'a': 'DECIDE',
+            'amt': 0,
+            'c': 'open',
+            'cond': 'Why: Vertiv is our ONLY cooling name while AI racks move to liquid cooling, and Trane is an '
+                    'Industrials name, so it adds AI exposure while cutting our 80% Technology + Communication weight '
+                    '(sector check 10 Oct). Questions for 10 Dec: price vs our fair-value method; growth of '
+                    'data-centre / thermal orders; does it beat Modine, Johnson Controls, Carrier and nVent on margins '
+                    'and cash flow? Funding would come from the paused $100,000 of January money, never the $50,000 '
+                    'crash reserve.',
+            'd': '2026-12-10',
+            'k': 'candidate',
+            't': 'TT',
+            'w': 'TRANE TECHNOLOGIES - data-centre cooling candidate (Salee approved 10 Oct 2026). Examine only - no '
+                 'money before 10 Dec.'},
            {'a': 'WATCH',
             'amt': 0,
             'c': 'open',
@@ -10082,70 +8096,6 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
                  'MEDIUM-VOLTAGE POWER, LOW-VOLTAGE POWER, UNINTERRUPTIBLE POWER, SERVER CABINETS AND COOLING. EATON '
                  'APPEARS IN **FOUR**. NO OTHER US-LISTED COMPANY APPEARS IN MORE THAN TWO. WE OWN BOTH, AND SALEE IS '
                  'BUYING MORE VERTIV TONIGHT.'},
-           {'a': 'DECIDE',
-            'amt': 0,
-            'c': 'open',
-            'cond': 'Netflix closed 69.70 on 7 Oct, at the bottom of our fair-value range (70-94, average 94.04); '
-                    '52-week low 65.08, high 126.71. Profitable (net margin 28.2%), forward P/E 21.7, revenue growth '
-                    '13.3% - below our 15%/yr hurdle, so a steady compounder, not a doubler. Question for 10 Dec: does '
-                    'a lower-risk, non-AI name earn a budget to reduce AI concentration (IMF warning, family-wide AI '
-                    'check)? Act sooner only on a close below 65 with no company-specific bad news.',
-            'd': '2026-12-10',
-            'k': 'review',
-            't': 'NFLX',
-            'w': 'NETFLIX AS A NON-AI CANDIDATE (added 8 Oct, Salee approved) - no budget yet'},
-           {'a': 'DECIDE',
-            'amt': 0,
-            'c': 'open',
-            'cond': 'Examine, do not pre-commit. Questions for 10 Dec: is it profitable on its own, without US '
-                    'government price-floor support; what is the valuation after the 2025-26 run; and does it fit '
-                    'Group 9 (space and defence) or Group 8 (robotics)? No budget before then.',
-            'd': '2026-12-10',
-            'k': 'candidate',
-            't': 'MP',
-            'w': 'MP MATERIALS - rare-earth magnets, the one US-only supply-chain name for robots, drones and EV '
-                 'motors (APPROVED 9 Oct 2026 (Salee: "Yes proceed actions"))'},
-           {'a': 'DECIDE',
-            'amt': 0,
-            'c': 'open',
-            'cond': 'Teradyne is held as a back-up with zero budget. Question: as optical connections move inside the '
-                    'chip package, does optical testing become a real revenue line for Teradyne, or for Viavi (optical '
-                    'test gear, not on the board)? Pick at most ONE, and only with a written trigger. Viavi added 9 '
-                    'Oct after the "next infrastructure wave" slide.',
-            'd': '2026-12-10',
-            'k': 'budget',
-            't': 'TER',
-            'w': 'TERADYNE BUDGET REVIEW - testing for co-packaged optics (CPO); compare with VIAVI SOLUTIONS (VIAV) '
-                 '(APPROVED 9 Oct 2026 (Salee: "Yes proceed actions"))'},
-           {'a': 'DECIDE',
-            'amt': 0,
-            'c': 'open',
-            'cond': 'Why: Vertiv is our ONLY cooling name while AI racks move to liquid cooling, and Trane is an '
-                    'Industrials name, so it adds AI exposure while cutting our 80% Technology + Communication weight '
-                    '(sector check 10 Oct). Questions for 10 Dec: price vs our fair-value method; growth of '
-                    'data-centre / thermal orders; does it beat Modine, Johnson Controls, Carrier and nVent on margins '
-                    'and cash flow? Funding would come from the paused $100,000 of January money, never the $50,000 '
-                    'crash reserve.',
-            'd': '2026-12-10',
-            'k': 'candidate',
-            't': 'TT',
-            'w': 'TRANE TECHNOLOGIES - data-centre cooling candidate (Salee approved 10 Oct 2026). Examine only - no '
-                 'money before 10 Dec.'},
-           {'a': 'DECIDE',
-            'amt': 0,
-            'c': 'open',
-            'cond': 'Why: healthcare is 1.9% of our stocks against 80% in Technology + Communication (sector check 10 '
-                    'Oct); Lilly is the only non-AI name on the "8th trillion-dollar company" slide (market value '
-                    'about $1.1 trillion, revenue growth about 48% from weight-loss drugs). Its sales do not depend on '
-                    'cloud AI budgets. Questions for 10 Dec: price vs our fair-value method; Q3 results (late Oct) - '
-                    'weight-loss drug growth and guidance; competition and US drug-price pressure. Funding would come '
-                    'from the paused $100,000 of January money, never the $50,000 crash reserve. Compare with Netflix '
-                    'and Trane, the other non-AI candidates.',
-            'd': '2026-12-10',
-            'k': 'candidate',
-            't': 'LLY',
-            'w': 'ELI LILLY - healthcare / non-AI candidate (Salee approved 10 Oct 2026). Examine only - no money '
-                 'before 10 Dec.'},
            {'a': 'DECIDE',
             'amt': 0,
             'c': 'confirmed',
@@ -10343,204 +8293,6 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             't': '',
             'w': 'NEW MONEY: final top-up to bring total funding to $1,000,000 (about $39,269.96 - confirm exact '
                  'figure against POEMS)'},
-           {'a': 'WATCH',
-            'amt': None,
-            'c': 'planned',
-            'cond': '⚠️ HARD OFFICIAL CAUSE, NOT SPECULATION. The SAUDI MINISTRY OF ENERGY shut the EAST-WEST CRUDE '
-                    'OIL PIPELINE after drone strikes on FRIDAY 11 SEPTEMBER 2026 in the Riyadh and Medina areas; the '
-                    "Saudi Ministry of Foreign Affairs said it reserves the right to take 'all measures necessary'. "
-                    'The pipeline runs 1,200km from ABQAIQ TO YANBU and moves FOUR TO FIVE MILLION BARRELS A DAY - '
-                    "ABOUT 4-5% OF GLOBAL SUPPLY. Iraq's PM Ali al-Zaidi's office said the drones launched from Iraq's "
-                    'MAYSAN PROVINCE; he ordered an investigation and dismissed the operations commander there. NO '
-                    'GROUP HAS CLAIMED RESPONSIBILITY. Brent about 107.55 (+2.8%), WTI about 102.90 (+2.9%); Brent is '
-                    'UP ABOUT 18% IN A MONTH and about 59% in a year, against roughly 72 dollars on 28 February 2026. '
-                    '⚠️ CAPACITY IS REPORTED VARIOUSLY AS 4-5, 6-7 AND 7 MILLION BARRELS A DAY - UNRESOLVED. ⚠️ I '
-                    'COULD NOT REACH THE EIA TO CHECK INVENTORIES: NOT FOUND. ⚠️ WHY IT IS ON THIS BOARD AT ALL: '
-                    'Pillar 4 owns no energy producer, so higher oil helps us nowhere and hurts us in two places - it '
-                    'feeds the inflation the Fed is responding to, and it raises the operating cost of every '
-                    'datacentre and every industrial name we own. IT IS AN INPUT COST AND AN INFLATION SIGNAL FOR US, '
-                    'NOT AN OPPORTUNITY. NOTHING IS TO BE TRADED ON IT.',
-            'd': '',
-            'dl': 'Standing - global supply risk',
-            'k': 'risk',
-            't': '',
-            'w': 'OIL: Saudi East-West pipeline shut after drone strikes - Brent about 107.55, up ~18% in a month'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'standing',
-            'cond': "RAISED 14 SEP, NOT A PROPOSAL TO BUY TODAY. ADI is the only one of the slide's eight absent from "
-                    'our 94 tickers, and the reflex answer - "industrial analog, not AI" - is WRONG on the numbers. || '
-                    "Q3 FY26 (ended 1 Aug 2026) was ADI's FIRST FOUR-BILLION-DOLLAR QUARTER: revenue 4.02bn, UP 40%; "
-                    'industrial 1.97bn UP 53%; COMMUNICATIONS 655m UP 84%; GAAP gross margin 67.3%; net income 1.34bn. '
-                    '|| ⚠️ THE PART THAT MATTERS, FROM NAMED EXECUTIVES ON THE RECORD. CFO Richard Puccio: "Data '
-                    'Center, which now accounts for 80% of our communications revenue continued to accelerate with '
-                    'MORE THAN 100% YEAR-OVER-YEAR GROWTH IN BOTH OPTICAL AND POWER." CEO Vincent Roche: "data center '
-                    'capacity is now measured in gigawatts rather than flops and tops" and "100 gigawatts equivalent '
-                    'infrastructure built for data centers between now and 2031. EACH GIGAWATT GENERATES A 1 BILLION '
-                    'TO 1.5 BILLION DOLLAR ANALOG SAM" - a 100 to 150 billion dollar addressable market, quantified by '
-                    'the chief executive on the record. || AND THE CYCLE HAS NOT EVEN TURNED YET. Puccio: "most of our '
-                    'business is still shipping well below historical consumption levels" and "we still think that we '
-                    'have not seen really any restocking activity from inventory from our customers." Growing 40% '
-                    "BEFORE the restocking. || ⚠️ WHY NOT TODAY: (1) the board's field discipline requires complete "
-                    'data on every ticker and CIEN is already carried as an incomplete-fields fault - I will not '
-                    "repeat it mid-week; (2) GROUP 6 POWER & ELECTRIFICATION HAS 51,274 OF UNSPENT ROOM and ADI's "
-                    'optical-and-power datacentre thesis is a Group 6 argument, which is exactly the allocation '
-                    'question the 10 December review exists to settle; (3) forward P/E 23.81 is the second-cheapest of '
-                    'the eight after NVDA and is not going anywhere in twelve weeks. || BRING TO 10 DECEMBER WITH: '
-                    'full field set, Q4 FY26 actual against the 4.3bn +/- 100m guide, and whether the '
-                    'optical-and-power line is disclosed separately by then. Conviction MEDIUM on the thesis, HIGH on '
-                    'deferring the decision.',
-            'd': '',
-            'dl': 'Standing',
-            'k': 'watch',
-            't': '',
-            'w': '⚠️ 10 DECEMBER AGENDA - ANALOG DEVICES (ADI) is the ONE name on the 14 Sep BofA slide we do NOT own, '
-                 'and the case for it is better than the slide knows.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'standing',
-            'cond': 'A WATCH ROW MEANS: DO NOTHING TODAY. NO ORDER. NO MONEY. READ WHAT HAPPENS AND TELL ME. THAT IS '
-                    'THE WHOLE INSTRUCTION. || The Schedule uses five words and only two of them ever move money: BUY '
-                    'means place a specific dollar amount at POEMS on that date - the row states the amount. DECIDE '
-                    'means a written test is being applied to fresh information on that date and the answer may be '
-                    'buy, may be nothing - the row states the test. WATCH means gather information only; there is no '
-                    'order and no amount, and the row usually carries amt 0 or none. AVOID means a written reason '
-                    'exists not to act, and it stands until the reason is retired. ADMIN means money movement or '
-                    'paperwork, not an investment decision. || ⚠️ A WATCH ROW ON AN UNFUNDED NAME - NO BUDGET, NO '
-                    'SHARES - CANNOT COST SALEE ANYTHING BY BEING IGNORED. The worst case of missing one is that a '
-                    'later decision is made with less information, not that money is lost. If Salee is ever unsure '
-                    'what a row wants, the test is simple: IF THERE IS NO DOLLAR AMOUNT ON THE ROW, THERE IS NOTHING '
-                    'TO PLACE.',
-            'd': '',
-            'dl': 'Standing',
-            'k': 'watch',
-            't': '',
-            'w': '⚠️ WHAT "WATCH" MEANS ON THIS SCHEDULE - written 15 Sep because the word was not defined anywhere.'},
-           {'a': 'ADMIN',
-            'amt': 0,
-            'c': 'standing',
-            'cond': 'WRITTEN 15 SEP 2026 IN ANSWER TO SALEE ASKING WHETHER THE BUDGET SHOULD GO ABOVE 1.0 MILLION. THE '
-                    'ARITHMETIC ANSWERS IT BEFORE ANY OPINION DOES. || THE FOUR NUMBERS: budget target 1,000,000.00; '
-                    'INVESTED TODAY 573,060.10; CASH AT POEMS 236,324.23; SO THE MONEY ACTUALLY IN THE ACCOUNT IS '
-                    '809,384.33. ⚠️ THAT LEAVES 190,615.67 OF THE EXISTING PLAN STILL TO BE CONTRIBUTED, AND '
-                    '426,939.90 OF BUDGET UNSPENT - 43% OF THE PLAN HAS NOT BEEN DEPLOYED. || ⚠️ YOU CANNOT RAISE A '
-                    'BUDGET YOU HAVE NOT YET FILLED. Asking for more than a million while 190,616 of the first million '
-                    'has not arrived and 426,940 of it is unspent is answering a question the board is not yet asking. '
-                    'THE CONSTRAINT TODAY IS NOT THE SIZE OF THE BUDGET. IT IS THE PACE OF DEPLOYMENT AND THE QUALITY '
-                    'OF THE NAMES. || THE SECOND REASON IS BIGGER THAN PILLAR 4 AND IT IS NOT MINE TO DECIDE. US '
-                    "equity is 10% of Salee's stated pillar weights - real estate 75%, Thai equity 10%, US equity 10%, "
-                    'Subway 5%. RAISING PILLAR 4 ABOVE 1.0 MILLION MEANS LOWERING ONE OF THE OTHER THREE, and that is '
-                    'a decision about the whole household balance sheet - the Ratchadapisek house, the eleven condo '
-                    'units, the two Subway branches - not a decision about US stocks. ⚠️ IT ALSO BELONGS WITH THE TAX '
-                    'ADVISER, WHO STILL HAS FOUR UNSIGNED SELL DECISIONS OUTSTANDING. || 💡 WHAT I WOULD DO INSTEAD, '
-                    'AND IT IS FREE: GROUP 6 POWER AND ELECTRIFICATION HAS 49,270.88 OF BUDGET ALREADY APPROVED AND '
-                    'UNSPENT (77,000 allocated, 27,729.12 invested across CEG, GEV, VRT, ETN and VST). If Salee is '
-                    'persuaded by the power thesis - and the sourced evidence for it is the strongest thing in this '
-                    "week's reading - THE MONEY IS ALREADY THERE AND ALREADY HIS. Deploying approved room needs no new "
-                    'capital, no new pillar decision and no adviser sign-off. THE 17 SEPTEMBER TRANCHES ALREADY START '
-                    'THAT. || DECISION: NO CHANGE TO THE 1,000,000 TARGET. Conviction HIGH. ⚠️ WHAT WOULD CHANGE MY '
-                    'MIND: the 1,000,000 being fully funded AND fully deployed AND the pillar weights being re-argued '
-                    'with the adviser. All three, not one. Revisit at the 10 DECEMBER review, not before.',
-            'd': '',
-            'dl': '⚠️ STANDING - the answer to "more than 1 million"',
-            'k': 'admin',
-            't': '',
-            'w': '⚠️⚠️ THE 1,000,000 PLAN IS NOT YET FUNDED. ABOUT 190,616 OF IT HAS NEVER ARRIVED IN THE ACCOUNT. '
-                 'Raising the budget is the wrong question until that is closed.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'standing',
-            'cond': '⚠️⚠️ CONFLICT DISCLOSED: THAT SLIDE IS ABOUT ANTHROPIC AND I AM MADE BY ANTHROPIC. I WILL NOT '
-                    "GIVE A VIEW ON ANTHROPIC'S PROSPECTS. What follows is arithmetic and sourcing only, and it "
-                    'applies to ANY AI compute headline Salee is sent. || FOUR TESTS, IN ORDER. (1) DOES THE TABLE ADD '
-                    'UP TO THE HEADLINE? On that slide the eight dollar figures sum to about 305 BILLION against a 517 '
-                    'BILLION headline, and the capacity column sums to 9.76 GIGAWATTS against a 14.8 GW headline. IT '
-                    "DOES NOT ADD UP BECAUSE THE HEADLINE CAME FROM A LONGER LIST (The Information's) THAT THE TABLE "
-                    'ONLY PARTLY REPRODUCES - including omitting the largest reported deal, a roughly 200bn Google and '
-                    'Broadcom arrangement, while keeping a small superseded Google line. (2) IS IT A COMMITMENT OR A '
-                    'CEILING? Most of these figures are "UP TO" numbers. Of the 517bn, only about 139 BILLION is firm, '
-                    'disclosed by a party and non-cancellable. ⚠️ THE 45 BILLION SpaceX LINE IS TERMINABLE BY EITHER '
-                    "PARTY ON 90 DAYS' NOTICE per the S-1 - that is about 3.75bn of real exposure, not 45bn. (3) IS IT "
-                    'DOUBLE-COUNTED? Chips and buildings are counted separately though the chips go INSIDE the '
-                    "buildings; a 50bn line on that slide is the buyer's OWN capex, not a purchase from a vendor; and "
-                    'one vendor appears twice. (4) WHO SAID IT? About 56% of that total rests on ANONYMOUS SOURCES. || '
-                    '💡 AND THE TWO NUMBERS THAT PUT EVERY SUCH HEADLINE IN PROPORTION, WHICH SALEE SHOULD MEMORISE: '
-                    'AMAZON, ALPHABET, MICROSOFT AND META WILL SPEND ROUGHLY 720 TO 760 BILLION DOLLARS OF CAPEX IN '
-                    '2026 ALONE (Amazon 220bn, Alphabet 195-205bn, Microsoft about 175bn, Meta 130-145bn - all from '
-                    'their own guidance). A 517 BILLION FIGURE SPREAD OVER TEN YEARS IS LESS THAN ONE YEAR OF WHAT '
-                    'THOSE FOUR ARE ALREADY SPENDING. ⚠️ AND ONLY 7,481 MEGAWATTS IS ACTUALLY UNDER CONSTRUCTION IN '
-                    'ALL OF NORTH AMERICA, WITH OVER 80% ALREADY PRE-LEASED (CBRE H1 2026). A single company claiming '
-                    '14.8 GW is claiming twice everything being built on the continent. || THE LESSON FOR US: THESE '
-                    'HEADLINES DESCRIBE DEMAND FOR WHAT WE ALREADY OWN. They are not a reason to buy more, and they '
-                    'are not a reason to raise a budget.',
-            'd': '',
-            'dl': '⚠️ STANDING - re-read before believing any compute-deal total',
-            'k': 'watch',
-            't': '',
-            'w': '⚠️ HOW TO READ AN AI COMPUTE-DEAL HEADLINE - written 15 Sep after the "517 billion dollars" slide.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'standing',
-            'cond': 'RUN 15 SEP 2026 against the Stockify "3 ways to analyse a stock" framework - Income Statement for '
-                    'GROWTH, Balance Sheet for SAFETY, Cash Flow for REALITY. THE FRAMEWORK IS SOUND AND WE SHOULD '
-                    'KEEP IT. THE THRESHOLDS ARE NOT OURS AND APPLYING THEM LITERALLY WOULD SELL THE ENTIRE BOARD. || '
-                    '⚠️ WE ALREADY CARRY SIX OF ITS NINE METRICS AND SALEE SHOULD KNOW WHERE: D/E is in M3 as "de"; '
-                    'P/E is "pe"; NET MARGIN is "pm"; EPS GROWTH is "epsG"; P/FCF is in M3 as "pfcf"; and FCF YIELD is '
-                    'derivable as fcfB divided by mcapB. THREE ARE MISSING: CURRENT RATIO, PRICE-TO-BOOK AND OPERATING '
-                    'MARGIN. || THE RESULTS, 37 FUNDED NAMES. ✅ SAFETY IS OUR STRENGTH: 29 of 34 pass D/E under 1, '
-                    'MEDIAN D/E 0.31. ✅ GROWTH IS OUR STRENGTH: 31 of 37 pass net margin over 10% with a MEDIAN OF '
-                    '27.6%; 28 of 33 pass EPS growth over 10%; median revenue growth 28%. ⚠️⚠️ CASH IS WHERE WE FAIL '
-                    'AND IT IS NOT CLOSE: ONLY 3 OF 37 PASS FCF YIELD OVER 4% (MEDIAN 1.94%), ONLY 1 OF 31 PASSES '
-                    'P/FCF UNDER 20 (MEDIAN 47.3), AND ONLY 5 OF 34 PASS P/E BETWEEN 10 AND 25 (MEDIAN 42.3). || 💡 '
-                    'THAT PATTERN IS NOT A FAILURE, IT IS A DESCRIPTION, AND IT IS THE MOST USEFUL SENTENCE ON THIS '
-                    'ROW: WE OWN HIGH-MARGIN, LOW-DEBT COMPANIES THAT ARE PUTTING EVERY DOLLAR OF CASH BACK INTO THE '
-                    'GROUND. That is exactly what AI infrastructure looks like in a capex boom. ⚠️ AND IT IS ALSO THE '
-                    'BUBBLE RISK STATED AS ONE NUMBER: A MEDIAN FCF YIELD OF 1.94% MEANS THE BOARD PAYS LESS IN '
-                    'COMPANY CASH FLOW THAN A US TREASURY BILL. We are paid in FUTURE cash, not current cash. If the '
-                    'capex cycle turns, that is where it shows first. || THE FIVE THAT PASS P/E 10-25: CEG 20.41, ORCL '
-                    '22.29, MU 22.61, MSFT 22.78, META 24.00 - ⚠️ NOTE ALL FIVE ARE CORE HOLDINGS, NOT SPECULATIONS. '
-                    'THE ONLY NAME PASSING BOTH CASH TESTS IS SE (Sea Limited) AT A P/FCF OF 16.06 AND A 7.22% FCF '
-                    'YIELD - AND WE HAVE A 13,000 BUDGET ON IT THAT HAS NEVER BEEN DEPLOYED. Worth a look at the 10 '
-                    'December review. || DECISION: ADOPT THE FRAMEWORK, REJECT THE THRESHOLDS, ADD THE THREE MISSING '
-                    'METRICS. ⚠️ OUR OWN THRESHOLDS, WHICH ALREADY EXIST IN WRITING AND SHOULD BE USED INSTEAD: '
-                    'revenue growth ABOVE 15% (the Sep 7 cut), GAAP PROFITABLE (the Sep 8 cut), RULE OF 40 ABOVE 40, '
-                    "and stock compensation UNDER 20% OF REVENUE. Those are growth-mandate tests. The slide's are "
-                    'value-mandate tests. Conviction HIGH.',
-            'd': '',
-            'dl': '⚠️ STANDING - our own scorecard',
-            'k': 'watch',
-            't': '',
-            'w': '⚠️⚠️ THE THREE-STATEMENT TEST RUN ON OUR OWN BOARD: ZERO OF 37 FUNDED NAMES PASS ALL THREE. Here is '
-                 'what that actually means.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'standing',
-            'cond': 'RAISED 15 SEP 2026, NOT A PROPOSAL TO BUY. ⚠️ FIRST THE MANDATE POINT: HAMMOND POWER SOLUTIONS '
-                    '(HPS.A) IS LISTED IN TORONTO, NOT THE UNITED STATES. It is outside Pillar 4 whatever its merits, '
-                    'exactly like Samsung, MediaTek and Quanta Computer. THAT LEAVES THREE: Advanced Energy (AEIS), '
-                    "AAON and Dycom (DY). || ⚠️ I HAVE NOT VERIFIED ANY OF THE SLIDE'S FIGURES AND I WILL NOT ADD A "
-                    'NAME ON A SLIDE. What the slide claims: AAON Q2 revenue +101% with backlog +98% to 2.0bn; DY Q2 '
-                    'revenue 2.0bn +45.6% with backlog 12.2bn +53.2%; AEIS data-centre revenue 192m +35% with 800VDC '
-                    'full production targeted 2028. If those hold up they are strong numbers. || 💡 WHY IT IS WORTH THE '
-                    '10 DECEMBER ARGUMENT ANYWAY, AND THE REASON IS OUR OWN DATA: GROUP 6 HAS 49,270.88 OF APPROVED '
-                    'BUDGET UNSPENT, AND OUR EXISTING POWER NAMES SCORE POORLY ON OUR OWN RULE OF 40 - VRT 50.0 is the '
-                    'ONLY one that passes, against PWR 33.25, GEV 29.4, ETN 28.7, CEG 27.2 and VST 16.7. ⚠️ A GROUP '
-                    'WITH 49,000 OF UNSPENT ROOM AND FIVE OF SIX NAMES BELOW THE 40 BAR IS EXACTLY WHERE A NEW IDEA '
-                    "SHOULD BE TESTED. || THE SLIDE'S OWN FRAME IS ALSO CORRECT AND WORTH KEEPING: grid, then "
-                    'transform the power, then power the rack, then remove the heat, then connect the compute. ⚠️ WE '
-                    'OWN THE TRANSFORM AND RACK-POWER LINKS THROUGH ETN AND VRT AND THE GENERATION LINK THROUGH CEG, '
-                    'GEV AND VST - BUT WE OWN NOTHING IN COOLING AND NOTHING IN FIBRE. That is a real gap in a thesis '
-                    'we already fund at 77,000. || BRING TO 10 DECEMBER WITH: verified filings for AEIS, AAON and DY; '
-                    'revenue growth, GAAP profitability, Rule of 40 and stock compensation against our written '
-                    'screens; and an explicit answer to whether they displace an existing Group 6 name or use the '
-                    'unspent room. Conviction MEDIUM that at least one deserves funding; Conviction HIGH on not '
-                    'deciding today.',
-            'd': '',
-            'dl': '⚠️ 10 DECEMBER - four AI-infrastructure names we do not own',
-            'k': 'watch',
-            't': '',
-            'w': '⚠️ THE "HIDDEN STOCKS BEHIND THE AI BOOM" FOUR - AEIS, AAON, DY AND HPS.A - NONE IS ON OUR BOARD, '
-                 'AND ONE OF THEM CANNOT BE.'},
            {'a': 'DECIDE',
             'amt': 0,
             'c': 'standing',
@@ -10588,84 +8340,6 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             't': '',
             'w': '⚠️ COMFORT SYSTEMS (FIX) PASSES ALL FOUR OF OUR WRITTEN SCREENS - THE FIRST NEW NAME THIS MONTH TO '
                  'DO SO. But it is NOT the cooling name I said we were missing, and that correction matters.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'standing',
-            'cond': 'WRITTEN 15 SEP 2026 while testing Comfort Systems against our own screens. THE RULE OF 40 - '
-                    'revenue growth percent plus free-cash-flow margin percent - WAS DESIGNED FOR SOFTWARE COMPANIES, '
-                    'where free cash flow is a reasonable proxy for structural profitability because there is little '
-                    'working capital. ⚠️ IT BREAKS ON PERCENTAGE-OF-COMPLETION CONTRACTORS. || THE EVIDENCE: FIX '
-                    'scored 80.9 on the June quarter and 40.9 on FY2025 - a forty-point swing in the same business '
-                    'within six months. The difference is not profitability; it is that Q2 free cash flow of 999.320m '
-                    'was dominated by BILLINGS IN EXCESS OF COSTS, which is customers PAYING IN ADVANCE for '
-                    'data-centre work not yet performed. That cash unwinds as the work is done. A CONTRACTOR WINNING '
-                    'LOTS OF NEW PREPAID WORK LOOKS SPECTACULAR ON RULE OF 40; THE SAME CONTRACTOR MERELY EXECUTING '
-                    'ITS BACKLOG LOOKS ORDINARY. || ⚠️ THE FIX, WHEN WE ASSESS ANY CONTRACTOR OR CAPITAL-PROJECT '
-                    'BUSINESS - which includes FIX, EMCOR, IES, Limbach, Quanta Services (PWR) and Sterling (STRL), '
-                    'two of which are already on our board: USE OPERATING MARGIN AND BACKLOG CONVERSION INSTEAD. For '
-                    'FIX those read Q2 operating margin 17.1% against 13.8% a year earlier, and backlog of 14.06bn '
-                    'converting 65-75% within twelve months. THOSE are the honest numbers. || THIS IS THE SECOND '
-                    'LIMITATION FOUND IN OUR SCREENS TODAY - the first being that the whole three-statement value '
-                    'framework rejects our entire growth book. A screen that flatters a business for taking customer '
-                    'deposits is a screen that must be read, not obeyed.',
-            'd': '',
-            'dl': '⚠️ SCREEN LIMITATION - written 15 Sep',
-            'k': 'watch',
-            't': '',
-            'w': '⚠️ OUR RULE-OF-40 SCREEN DOES NOT WORK ON CONTRACTORS, AND FIX IS THE PROOF.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'standing',
-            'cond': 'WRITTEN 15 SEP 2026 after the Apple supply-chain slide put AMKR and COHR on a buy list FOUR DAYS '
-                    'after we sold both. || THE THREE OCCURRENCES: (1) THE PHOTONIC PRICE-TARGET SLIDE put AAOI and '
-                    'TSLA on a buy list - we had sold AAOI on 9 SEPTEMBER and TSLA on 8 SEPTEMBER. (2) THE '
-                    '@LeifInvests BUY-UNDER LIST contained TEN names of which FOUR were ours already sold - AAOI 9 '
-                    'Sep, TSLA 8 Sep, NBIS 21 Jul, CRWV 17 Jul. (3) THE APPLE SUPPLY-CHAIN SLIDE of 15 SEPTEMBER lists '
-                    'AMKR and COHR, BOTH SOLD ON 11 SEPTEMBER for a combined realised loss of 1,108.52. || 💡 WHY IT '
-                    'HAPPENS, AND IT IS NOT A CONSPIRACY: THESE SLIDES ARE SECTOR ROLL-CALLS, NOT FILTERS. They list '
-                    'the companies in a theme - every optical name, every Apple supplier, every power name - because a '
-                    'complete-looking list is what gets shared. A PORTFOLIO IS THE OPPOSITE OF A ROLL-CALL: IT IS WHAT '
-                    'IS LEFT AFTER YOU REMOVE THINGS FOR WRITTEN REASONS. So a name we exited on evidence will keep '
-                    'reappearing on lists assembled by category, and its reappearance carries NO information at all. '
-                    '|| ⚠️ THE TEST SALEE CAN APPLY HIMSELF, AND IT TAKES TEN SECONDS: DOES THE SLIDE SAY WHY EACH '
-                    'NAME IS THERE, OR ONLY THAT IT IS THERE? A list with a reason per name is research. A list of '
-                    'logos in a category is a directory. THE APPLE SLIDE GIVES NO REASON FOR ANY OF ITS TWENTY-FOUR '
-                    'NAMES - it is a directory, and a useful one for understanding the industry, but it is not a buy '
-                    'list and its own publisher does not claim it is.',
-            'd': '',
-            'dl': '⚠️ PATTERN - third time in one week',
-            'k': 'watch',
-            't': '',
-            'w': '⚠️⚠️ THREE CIRCULATING SLIDES IN ONE WEEK HAVE RECOMMENDED NAMES WE HAD JUST SOLD. This is now a '
-                 'pattern, not a coincidence, and Salee should know how to spot it.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'standing',
-            'cond': "NOTED 15 SEP 2026. The slide's final panel lists COM7, SPVI, SYNEX and CPW as the Thai "
-                    'distribution channel for Apple products. ⚠️ ALL FOUR ARE LISTED ON THE STOCK EXCHANGE OF '
-                    'THAILAND, WHICH PUTS THEM ENTIRELY OUTSIDE PILLAR 4 - our mandate is US-listed only. THEY ARE '
-                    "PILLAR 3. || ⚠️ AND PILLAR 3 IS THE GAP IN SALEE'S WHOLE STRUCTURE. The stated pillar weights are "
-                    'real estate 75%, THAI EQUITY 10%, US equity 10%, Subway 5% - so Thai equity is meant to be the '
-                    'SAME SIZE AS THIS ENTIRE BOARD. BUT NO PILLAR 3 PORTFOLIO EXISTS. There is no board, no budget, '
-                    'no positions and no written objective for it, and I have offered twice to build one. || 💡 WHY '
-                    'THESE FOUR ARE AN UNUSUALLY GOOD STARTING POINT FOR THAT CONVERSATION, RATHER THAN A '
-                    'RECOMMENDATION: (1) SALEE CAN SEE THEM. COM7 and SPVI run the shops he walks past; this is the '
-                    'same advantage he has at Subway, where he knows what the queue looks like before any analyst '
-                    'does. (2) THEY FIT THE PILLAR 3 MANDATE, WHICH IS INCOME PLUS MODEST GROWTH - 5% dividend yield '
-                    'plus 3% capital gain - NOT the 2x-in-five-years growth mandate that governs this board. Thai '
-                    'retail distributors are dividend businesses, not compounders. (3) THEY ARE A DIFFERENT BET FROM '
-                    'PILLAR 4 EVEN THOUGH APPLE APPEARS IN BOTH: here the driver is THAI CONSUMER CREDIT AND FOOTFALL, '
-                    'not AI datacentre capex. ⚠️ THAT IS GENUINE DIVERSIFICATION, WHICH BUYING MORE AI NAMES IS NOT. '
-                    '|| ⚠️ WHAT I AM NOT SAYING: I have researched NONE of these four - no revenue, no margin, no '
-                    'dividend, no balance sheet - and I will not put a Thai name on a US board. THE OFFER STANDS: say '
-                    'the word and I will build Pillar 3 properly, starting with a written objective and a screen, '
-                    'exactly as this board was built. Until then this row exists so the idea is not lost.',
-            'd': '',
-            'dl': '⚠️ PILLAR 3 - the real opportunity on the Apple slide',
-            'k': 'admin',
-            't': '',
-            'w': "💡 THE APPLE SLIDE'S MOST USEFUL SECTION FOR SALEE IS THE ONE PILLAR 4 CANNOT TOUCH: THE FOUR THAI "
-                 'DISTRIBUTORS.'},
            {'a': 'DECIDE',
             'amt': 0,
             'c': 'standing',
@@ -10696,16 +8370,18 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             't': '',
             'w': '⚠️⚠️ GROUPS 4 AND 6 TOGETHER HOLD 92,197.15 OF APPROVED BUDGET THAT HAS NEVER BEEN DEPLOYED. That is '
                  'the real answer to every "should we buy more" question this week.'},
-           {'a': 'SELL',
-            'amt': 1055.3,
-            'c': 'done',
-            'cond': 'Loss-making (-9.6% net margin) at 55x forward, and the weakest of eight optical names held.',
+           {'a': 'HOLD',
+            'amt': 25997.8,
+            'c': 'planned',
+            'cond': 'First call: VERTIV +$10,000 if the 28 Oct disclosure test passes (orders, backlog and '
+                    'book-to-bill published again) - half on 29 Oct, half on a pullback. Remainder waits for the 10 '
+                    'Dec ranking.',
             'd': '',
-            'dl': "On Salee's instruction",
-            'k': 'liquidation',
-            't': 'AAOI',
-            'w': 'DONE - all 10 shares sold by 9 Sep 2026 (in the SOLD book; loss 223.15). Row closed 2 Oct after the '
-                 'POEMS positions screen confirmed no AAOI holding. SELL all 10 shares (~$1055.3 at the Sep 4 close)'},
+            'dl': 'Standing - ranked pool',
+            'k': 'pool',
+            't': '',
+            'w': 'RANKED POOL $25,997.80 freed 12 Oct (SNPS $13,000 + APH rung 2 $6,497.80 + LRCX cut $6,500). Funds '
+                 'open budgets in priority order (upside to fair value x quality / 10).'},
            {'a': 'HOLD',
             'amt': 0,
             'c': 'standing',
@@ -10718,38 +8394,6 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'k': 'watch',
             't': 'AAPL',
             'w': 'Budget cut 25,000 -> 15,000; 10,000 moved to META'},
-           {'a': 'AVOID',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'Salee asked for deep research after AMBA appeared on a Thai AI-sector slide. Verdict: NO. || ⚠️ '
-                    'GROWTH IS DECELERATING EVERY QUARTER: +31.2% -> +20.1% -> +16.9% -> +13.2% (Q3 FY26 through Q2 '
-                    'FY27). Non-GAAP gross margin fell in three of the four: 60.9 -> 59.8 -> 59.9 -> 59.3. Q2 FY27, '
-                    'reported Sep 3: revenue 108.1m, GAAP net loss 6.7m. || ⚠️ GAAP LOSS-MAKING IN ALL FIVE OF THE '
-                    'LAST FIVE QUARTERS. Trailing net income -56.32m, net margin -13.48%. || ⚠️ STOCK COMPENSATION IS '
-                    "21% OF REVENUE - 22.7m on 108.1m. The whole non-GAAP 'profit' of 8.2m is less than half the SBC "
-                    'added back to create it. FY2026 SBC was 98.0m against 390.7m of revenue. || ⚠️ ONE DISTRIBUTOR IS '
-                    "60.2% OF REVENUE (WT Microelectronics; ~70% in FY2026). Company's own risk factor: 'A substantial "
-                    'portion of our revenue is processed through a single distributor and the loss of this distributor '
-                    "may cause disruptions.' || FORWARD P/E 71.49 on a business growing 13%. || THIS FAILS THE SAME "
-                    'TWO TESTS SALEE APPROVED THIS WEEK: the under-15% growth screen that cut 15 names on Sep 7, and '
-                    'the loss-making screen that cut 14 more on Sep 8. It fails BOTH. || ⚠️ THE REAL REASON IT LOOKS '
-                    'INTERESTING IS A TAKEOVER RUMOUR, NOT THE BUSINESS. The Financial Times reported on Jul 31, 2026 '
-                    'that NXP is in talks to acquire it; the stock rose 16% that day. Six weeks on there is no deal, '
-                    'no confirmation and no denial, and the Sep 3 earnings call did not mention it. Craig-Hallum cut '
-                    'to Hold with the target 95 -> 70 on Sep 4; Bank of America cut 96 -> 70 on Sep 6. Buying on a bid '
-                    'rumour is an event bet with a deadline on the upside and none on the downside - a different '
-                    'activity from owning a business for five years. || WHAT WOULD CHANGE THIS: two consecutive '
-                    'quarters of revenue growth RE-ACCELERATING above 20% with SBC falling below 15% of revenue. That '
-                    'would mean the edge-infrastructure pivot (the new X7 accelerator, the Capgemini and Macnica '
-                    'agreements of Sep 3) is working and the dilution is contained. Re-underwrite then, not before. || '
-                    'Kept on the board as an UNFUNDED WATCH row so the verdict is visible and dated rather than '
-                    're-litigated.',
-            'd': '',
-            'dl': 'Standing',
-            'k': 'watch',
-            't': 'AMBA',
-            'w': 'REMOVED FROM BOARD 3 Oct 2026 (Salee approved the rate review and watch-list cut) - watch list cut '
-                 'to 25 (cap 30). | Researched Sep 9 and REJECTED - do not buy'},
            {'a': 'TRIGGER',
             'amt': 10210.78,
             'c': 'standing',
@@ -10758,21 +8402,6 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'k': 'trigger',
             't': 'AMD',
             'w': 'Buy the remaining $10,210.78 only below $470, or after results show margin improvement'},
-           {'a': 'HOLD',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'Best growth-to-price on the board outside the mega-caps: revenue +66.4%, net margin 64.3%, return '
-                    'on equity 266.4%, Rule of 40 at 138.5. Deploy the added 5,000 ONLY on the Nov 4 print, and only '
-                    'if e-commerce pixel additions re-accelerate - they slowed to ~750 in June from ~950 in May and '
-                    'guidance has stepped down 68>66>59>53>47%. ⚠️ Four board fields are still flagged wrong for this '
-                    'name (forward P/E should be 17.72 not 24.17, ROE 203.69 not 266.44, debt/equity 1.11 not 1.63, '
-                    'revenue growth 53% not 66.4%); on the corrected figures it is CHEAPER, not dearer.',
-            'd': '',
-            'dl': 'Standing - promoted to Tier 4 on Sep 7',
-            'k': 'tranche',
-            't': 'APP',
-            'w': 'SUPERSEDED 24 Oct by the written 4 Nov rule ($9,000 half 1 of the $18,000 budget set at the 10 Sep '
-                 'reset). | Was: Tier 4 budget of 10,000 - deploy the second 5,000 on evidence, not on the promotion'},
            {'a': 'HOLD',
             'amt': 0,
             'c': 'standing',
@@ -10788,69 +8417,6 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'k': 'watch',
             't': 'ASML',
             'w': '10,000 of room held back deliberately'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'standing',
-            'cond': 'WRITTEN 15 SEP 2026 after a Thai summary of Reuters (14 Sep) and of ASML and Intel statements '
-                    'dated 8 SEPTEMBER 2026. THE ARTICLE IS UNUSUALLY GOOD AND I FOUND NOTHING FALSE IN IT - which is '
-                    'itself worth recording after a week of slides that failed. || WHAT IS CONFIRMED: INTEL HAS RUN '
-                    'OVER ONE MILLION WAFERS THROUGH HIGH-NA EUV and is using it in High-Volume Manufacturing on SOME '
-                    'layers of Intel 18A - the FIRST chipmaker to do so. TSMC will adopt High-NA for its highest-end '
-                    'nodes FROM 2030, and TSMC and ASML have begun a 12-inch photomask programme with a pilot line in '
-                    '2031 and production in 2033. SAMSUNG AND SK HYNIX TARGET 2028 FOR DRAM. The optical aperture '
-                    'rises from 0.33 on the NXE to 0.55 on the EXE; the TWINSCAN EXE:5200B resolves about 8 nanometres '
-                    'with imaging contrast roughly 40% above NXE. || ⚠️⚠️ THE ECONOMICS CUT BOTH WAYS AND THE '
-                    'SLIDE-READER USUALLY MISSES IT. A HIGH-NA MACHINE COSTS ABOUT 400 MILLION DOLLARS AGAINST ABOUT '
-                    '200 MILLION FOR CURRENT EUV - TWICE THE PRICE. That is good for revenue per unit and BAD for unit '
-                    'volume, because a customer buying one High-NA tool may be deferring two NXE tools. ASML earns '
-                    'more per machine and ships fewer machines, and which effect dominates is an empirical question '
-                    'the company has not answered. ⚠️ ONLY ABOUT TEN HIGH-NA SYSTEMS ARE PLANNED FOR 2027 DELIVERY, TO '
-                    'INTEL, SAMSUNG AND SK HYNIX. This is not yet a volume product. || ⚠️⚠️ AND THE REAL TECHNICAL '
-                    'LIMITATION, WHICH THE ARTICLE CORRECTLY STATES AND WHICH IS THE SHARPEST THING ON THE PAGE: '
-                    'HIGH-NA HAS A SMALLER EXPOSURE FIELD THAN NXE. It prints a smaller area per shot. THAT MAKES IT '
-                    'AWKWARD FOR EXACTLY THE CHIPS THE AI BOOM NEEDS - large datacentre processors and AI accelerators '
-                    'are BIG dies, and a smaller field means stitching or splitting them. ASML and the chipmakers are '
-                    'developing larger photomasks precisely to solve this, which is why the 12-inch mask programme '
-                    'runs to 2033. SO HIGH-NA ARRIVES FIRST FOR SMALLER, DENSER LOGIC AND FOR DRAM - NOT FIRST FOR THE '
-                    'BIGGEST AI ACCELERATORS. || 💡 THE CAPACITY NUMBER IS THE ONE THAT MATTERS TO US: ASML CAN BUILD '
-                    'ABOUT 80 EUV MACHINES IN 2027 AND IS STUDYING WHETHER TO EXCEED 110 IN 2028 - roughly a 38% '
-                    'increase - AFTER SAYING 2027 CAPACITY IS CLOSE TO FULLY BOOKED. ⚠️ BUT REUTERS FRAMES THE 110 AS '
-                    'UNDER EVALUATION, NOT A COMMITTED TARGET, AND ASML HAS NOT CONFIRMED IT. Treat it as a demand '
-                    'signal, not a forecast. CFO Roger Dassen said on 15 July that 2027 EUV capacity was close to '
-                    'fully booked with substantial 2028 orders already secured - that IS company-sourced and is the '
-                    'stronger fact. || ⚠️ WHAT THE ARTICLE DOES NOT SAY, AND OUR BOARD DOES: ASML IS THE WEAKEST '
-                    'GROWER OF THE FOUR SEMICAP NAMES WE OWN. Our board carries revenue growth of 9.8% and a Rule of '
-                    '40 of 38.4 - below the 40 bar - against LRCX at +30%, AMAT at +25% and KLAC at +15.2%. ⚠️ AND '
-                    'THAT FIELD NEEDS CHECKING BEFORE 15 OCTOBER: ASML reported Q2 2026 net sales of 9.3 BILLION '
-                    'EUROS, UP 20.8% year on year, which does not sit easily with a 9.8 figure - the difference is '
-                    'probably trailing-twelve-month versus quarterly, or euro versus dollar, but it must be resolved '
-                    'before a 7,000 tranche is placed on it. || DECISION: NO CHANGE. The 15 OCTOBER Q3 print is '
-                    'exactly the right place to decide rung 1 of 7,000, and the 10,000 held back deliberately stays '
-                    'held back. Conviction HIGH on the plan. ⚠️ WHAT I WILL READ ON 15 OCTOBER: whether ASML confirms '
-                    'the 2028 capacity expansion; whether High-NA units shipped are disclosed; whether the Q3 guide of '
-                    '11.0 to 12.0 BILLION EUROS at a 55-57% gross margin is met; and ⚠️ whether bookings are disclosed '
-                    'at all, since there is an unverified report that ASML has stopped reporting quarterly bookings - '
-                    'if true, that removes the single best forward indicator this name has and is itself a reason to '
-                    'slow down.',
-            'd': '',
-            'dl': '⚠️ READ BEFORE THE 15 OCTOBER ASML DECISION',
-            'k': 'watch',
-            't': 'ASML',
-            'w': '⚠️ HIGH-NA EUV IS REAL AND CONFIRMED - BUT IT CUTS BOTH WAYS FOR ASML, AND THE LIMITATION IS THE '
-                 'PART NOBODY REPORTS.'},
-           {'a': 'WATCH',
-            'amt': None,
-            'c': 'standing',
-            'cond': 'OpenAI has published NO numerical performance figure for its own Broadcom-built chip - only that '
-                    "performance per watt will be 'substantially better than current state-of-the-art', with a report "
-                    'promised later. Until real numbers land, the case that OpenAI shifts inference to its own silicon '
-                    'is unquantified. Watch for the report; it cuts both ways for Broadcom (it builds the chip) and '
-                    'for merchant GPU demand.',
-            'd': '',
-            'dl': "Standing - OpenAI said 'in the coming months'",
-            'k': 'product',
-            't': 'AVGO',
-            'w': 'Jalapeno technical report with actual performance numbers'},
            {'a': 'LIMIT',
             'amt': 4874.82,
             'c': 'standing',
@@ -10860,179 +8426,16 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             'k': 'limit',
             't': 'AVGO',
             'w': 'Any close at or below $310'},
-           {'a': 'SELL',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'SALEE RE-PLACED THIS EXACTLY AS RECOMMENDED after the first 262.00 limit expired on 14 September. '
-                    'Order 5476543, limit 262.00, quantity 21, DAY validity, NYSE, stamped 23:52:15 on 15 September. '
-                    'STATUS ON THE SCREENSHOT: "Order Received", 21 remaining, Total Executed column empty. ⚠️ NOTHING '
-                    'HAS EXECUTED, SO NO POSITION, CASH OR REALISED FIGURE HAS CHANGED AND THE BOARD REFLECTS THAT '
-                    'EXACTLY. || ⚠️ THE ARITHMETIC IS WORSE THAN I WROTE IT THIS MORNING, AND THE CORRECTION IS MINE. '
-                    'I said the limit sat about 1% above the market. IT DOES NOT. CRM CLOSED AT 255.65 ON TUESDAY 15 '
-                    'SEPTEMBER, so 262.00 IS 2.48% ABOVE THE MARKET, not 1%. I was working from an 11 September price '
-                    'of 247.72 and a guess; the refreshed close says otherwise. A sell limit 2.5% above the last trade '
-                    'does not fill unless the stock moves up to meet it. || ⚠️⚠️ AND THE FIRST THING TO CHECK IS '
-                    'WHETHER THESE ORDERS ARE STILL ALIVE AT ALL. The POEMS stamps are 23:52 and 23:54 ON 15 '
-                    'SEPTEMBER. Bangkok runs ELEVEN HOURS AHEAD OF NEW YORK, so those stamps are about 12:52 and 12:54 '
-                    "IN THE AFTERNOON, NEW YORK TIME, ON TUESDAY 15 SEPTEMBER - the middle of Tuesday's US session, "
-                    "not before Wednesday's. A DAY ORDER PLACED MID-SESSION COVERS THAT SESSION AND DIES AT ITS CLOSE. "
-                    "Tuesday's session has already closed - at 03:00 Bangkok this morning - and neither limit was "
-                    'reached, because CRM closed at 255.65 against a 262.00 limit and FN closed at 374.91 against a '
-                    '382.00 limit. ON THAT READING BOTH ORDERS HAVE ALREADY EXPIRED UNFILLED, EXACTLY LIKE THE 14 '
-                    'SEPTEMBER PAIR. || I CANNOT PROVE IT FROM THE SCREENSHOT AND I WILL NOT PRETEND OTHERWISE. If '
-                    "POEMS stamped those times in New York rather than Bangkok, 11:52 PM is AFTER Tuesday's close and "
-                    'the orders are queued for TODAY\'S session instead. The screenshot says "Order Received", which '
-                    'is what a queued order looks like - and also what an order looks like in a screenshot taken '
-                    'before the close. SALEE CAN SETTLE THIS IN THIRTY SECONDS BY OPENING THE POEMS ORDER BOOK: if the '
-                    'status now reads EXPIRED, they are dead and must be re-placed; if it still reads ORDER RECEIVED, '
-                    'they run today. || 💡 AND HERE IS THE PART THAT SHOULD CHANGE HOW THIS FEELS: CRM IS A WINNER, NOT '
-                    'A PROBLEM. 21 shares cost 3,749.91, which is 178.57 a share. At 255.65 the holding is worth '
-                    '5,368.65. THAT IS AN UNREALISED GAIN OF 1,618.74, OR PLUS 43.2%. There is no urgency here and no '
-                    'loss to stop. Selling is a portfolio-tidiness decision, not a rescue. || THE WRITTEN RULE STANDS '
-                    'AND THE DATE IS NOW CLOSE: IF IT HAS NOT FILLED BY 22 SEPTEMBER, RE-ARGUE THE SALE ITSELF RATHER '
-                    'THAN THE PRICE. ⚠️ TAX ADVISER SIGN-OFF ON ALL FOUR SELLS REMAINS OUTSTANDING - and on a 43% gain '
-                    'that matters more here than on the others, because this one crystallises a profit.',
-            'd': '',
-            'dl': '⚠️ SELL ORDER - CHECK STATUS, IT MAY HAVE ALREADY EXPIRED',
-            'k': 'sell',
-            't': 'CRM',
-            'w': 'REMOVED FROM BOARD 3 Oct 2026 (Salee approved the rate review and watch-list cut) - watch list cut '
-                 'to 25 (cap 30). | ✅ RE-PLACED AT 262.00 AS RECOMMENDED - order 5476543, 21 shares, DAY validity. ⚠️ '
-                 'NOTHING EXECUTED, AND THE 262.00 LIMIT SITS 2.48% ABOVE THE 15 SEP CLOSE OF 255.65.'},
-           {'a': 'SELL',
-            'amt': 0,
-            'c': 'confirmed',
-            'cond': 'TWO ACTIONS ON 15 SEPTEMBER. FIRST, ORDER 5476514 - THE 550.00 LIMIT - WAS WITHDRAWN at 23:53:35, '
-                    'and that was unambiguously right: FN closed Tuesday at 374.91, so 550.00 was 46.7% ABOVE THE '
-                    'MARKET and was never going to fill. ⚠️ THAT ORDER WAS MY ERROR AND CANCELLING IT CLOSED IT OUT. '
-                    'SECOND, ORDER 5476610 went in at 23:54:18 - LIMIT 382.00, quantity 3, DAY validity, NYSE. Status '
-                    '"Order Received", 3 remaining, nothing executed. || ⚠️⚠️ NOW THE HONEST CORRECTION, BECAUSE I GOT '
-                    'THIS WRONG TWICE IN ONE DAY. This morning I praised the 382.00 limit as "a limit AT the market" '
-                    'and called it an improvement on my own advice. THE PRINCIPLE IS RIGHT. THE NUMBER IS NOT. FN '
-                    'CLOSED AT 374.91 ON TUESDAY, SO 382.00 IS 1.89% ABOVE THE LAST TRADE - it is not at the market, '
-                    'it is above it, and that is precisely why it did not fill. I was reading a stale 11 September '
-                    'price of 414.58 and a guess of "around 383". || 💡 KEEP THE PRINCIPLE, FIX THE NUMBER. THE '
-                    'PRINCIPLE IS WORTH KEEPING AND I SHOULD HAVE GIVEN IT THE FIRST TIME INSTEAD OF SAYING "SELL AT '
-                    'THE MARKET": A MARKET ORDER ACCEPTS WHATEVER PRICE THE BOOK OFFERS, AND ON A THREE-SHARE LOT IN A '
-                    'THIN BOOK THAT CAN BE SEVERAL PERCENT WORSE THAN THE SCREEN; A SELL LIMIT FILLS AT THE LIMIT OR '
-                    'BETTER AND CANNOT FILL WORSE. THE RULE: NEVER USE A MARKET ORDER WHEN A LIMIT CAN DO THE SAME JOB '
-                    'WITH A FLOOR UNDER IT. BUT A SELL LIMIT ONLY DOES THE SAME JOB IF IT IS SET AT OR JUST BELOW THE '
-                    'LAST TRADE. SET ABOVE IT, IT IS NOT AN EXIT - IT IS A WISH WITH A DEADLINE. || ⚠️⚠️ AND THAT IS '
-                    'NOW THREE SESSIONS RUNNING OF THE SAME MISTAKE, SO IT IS A PATTERN AND NOT AN ACCIDENT: 12 SEP a '
-                    'limit above the market, expired; 14 SEP a limit above the market, expired; 15 SEP two more limits '
-                    'above the market. EVERY ONE OF THEM WAS A DAY ORDER, SO EVERY ONE DIED THE SAME AFTERNOON AND HAD '
-                    "TO BE RETYPED. THE FIX IS TWO CHANGES AT ONCE, AND BOTH ARE SALEE'S TO MAKE AT POEMS - I DO NOT "
-                    'PLACE ORDERS: (1) SET THE LIMIT AT OR ONE OR TWO TICKS BELOW THE LAST TRADE, NOT ABOVE IT; (2) '
-                    'USE GTC - GOOD-TILL-CANCELLED - INSTEAD OF DAY, SO THE ORDER SURVIVES THE CLOSE INSTEAD OF '
-                    'NEEDING TO BE RETYPED EVERY MORNING. || ⚠️⚠️ AND THE FIRST THING TO CHECK IS WHETHER THESE ORDERS '
-                    'ARE STILL ALIVE AT ALL. The POEMS stamps are 23:52 and 23:54 ON 15 SEPTEMBER. Bangkok runs ELEVEN '
-                    'HOURS AHEAD OF NEW YORK, so those stamps are about 12:52 and 12:54 IN THE AFTERNOON, NEW YORK '
-                    "TIME, ON TUESDAY 15 SEPTEMBER - the middle of Tuesday's US session, not before Wednesday's. A DAY "
-                    "ORDER PLACED MID-SESSION COVERS THAT SESSION AND DIES AT ITS CLOSE. Tuesday's session has already "
-                    'closed - at 03:00 Bangkok this morning - and neither limit was reached, because CRM closed at '
-                    '255.65 against a 262.00 limit and FN closed at 374.91 against a 382.00 limit. ON THAT READING '
-                    'BOTH ORDERS HAVE ALREADY EXPIRED UNFILLED, EXACTLY LIKE THE 14 SEPTEMBER PAIR. || I CANNOT PROVE '
-                    'IT FROM THE SCREENSHOT AND I WILL NOT PRETEND OTHERWISE. If POEMS stamped those times in New York '
-                    "rather than Bangkok, 11:52 PM is AFTER Tuesday's close and the orders are queued for TODAY'S "
-                    'session instead. The screenshot says "Order Received", which is what a queued order looks like - '
-                    'and also what an order looks like in a screenshot taken before the close. SALEE CAN SETTLE THIS '
-                    'IN THIRTY SECONDS BY OPENING THE POEMS ORDER BOOK: if the status now reads EXPIRED, they are dead '
-                    'and must be re-placed; if it still reads ORDER RECEIVED, they run today. || THE REASON FOR '
-                    'SELLING IS UNCHANGED AND IT WAS NEVER THE PRICE OR THE SECTOR: three shares worth about 1,125 '
-                    'CANNOT PAY THEIR OWN 8.56 COMMISSION, which is 0.76% of the proceeds on the way out and was 0.53% '
-                    "on the way in. The position cost 1,604.56 and is worth 1,124.73 at Tuesday's close - AN "
-                    'UNREALISED LOSS OF 479.83, OR MINUS 29.9%. FN appeared on the optical slide of 15 September with '
-                    'respectable numbers - 35.7% revenue growth, Rule of 40 35.8 - AND THAT CHANGED NOTHING, because '
-                    'the problem is the size of the holding, not the quality of the company. ⚠️ TAX ADVISER SIGN-OFF '
-                    'OUTSTANDING, and an FN LOSS of this size may be USEFUL to Salee rather than harmful.',
-            'd': '',
-            'dl': '⚠️ SELL ORDER - CHECK STATUS, IT MAY HAVE ALREADY EXPIRED',
-            'k': 'sell',
-            't': 'FN',
-            'w': '✅ THE 550.00 LIMIT WITHDRAWN - RIGHT CALL, IT WAS 46.7% ABOVE THE MARKET AND IT WAS MY ERROR. ⚠️ BUT '
-                 'THE 382.00 REPLACEMENT IS NOT "AT THE MARKET" EITHER - IT IS 1.89% ABOVE THE 15 SEP CLOSE OF '
-                 '374.91.'},
-           {'a': 'HOLD',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'Forward P/E 55.7. Condition set 21 Sep.',
-            'd': '',
-            'k': 'trigger',
-            't': 'GEV',
-            'w': 'SUPERSEDED - no order. The $3,396.14 this trigger reserved was spent on 28 Sep (3 sh at $953.66, a '
-                 'deliberate override above $850). Room left is $519.22 (budget 13,000 vs cost 12,480.78), less than '
-                 'one share. Found 23 Oct when GEV closed at $827.42 (22 Oct), below the old $850 line. | Was: Buy the '
-                 'remaining $3,396.14 only below $850'},
-           {'a': 'WATCH',
-            'amt': None,
+           {'a': 'ADMIN',
+            'amt': 50000,
             'c': 'standing',
-            'cond': 'Astra (Sep 3) leads on agentic computer use and coding, and Google is reported to have slipped on '
-                    'Gemini Pro delivery. GOOGL is the clearest listed name under pressure from this release. If the '
-                    'next Gemini regains parity, the pressure lifts and the 80,000 budget stands. If it slips a second '
-                    'time, reassess the budget - not the holding.',
+            'cond': 'Spend only if the S&P 500 closes 15% or more below its all-time high. Buy only names already on '
+                    'the board at or below our fair value, in two halves at least one week apart. Not a budget for new '
+                    'names. Reviewed at every quarterly review.',
             'd': '',
-            'dl': 'Standing - no announced date',
-            'k': 'competitive',
-            't': 'GOOGL',
-            'w': 'Next Gemini frontier release / Gemini Pro delivery'},
-           {'a': 'SELL',
-            'amt': 3096.1,
-            'c': 'done',
-            'cond': 'Executed. Position closed. Sold into the 14A evaluation story - no named customer, no capacity '
-                    'reservation, foundry external revenue about 293m. We hold the sold-out side through TSMC.',
-            'd': '',
-            'dl': 'This week',
-            'k': 'tranche',
-            't': 'INTC',
-            'w': 'SELL ALL INTEL - DONE 24 Sep: 25 shares at 124.19, market-on-open, realised +1,968.54 (2.7x cost).'},
-           {'a': 'SELL',
-            'amt': 1874.25,
-            'c': 'done',
-            'cond': 'Bitcoin miner, -99.4% net margin at 101x forward. Consistent with cutting the whole mining group.',
-            'd': '',
-            'dl': "On Salee's instruction",
-            'k': 'liquidation',
-            't': 'IREN',
-            'w': 'REMOVED FROM BOARD 3 Oct 2026 (Salee approved the rate review and watch-list cut) - watch list cut '
-                 'to 25 (cap 30). | SELL all 45 shares (~$1874.25 at the Sep 4 close)'},
-           {'a': 'TRIGGER',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'At its 52-week low on a CEO ouster while guidance was RAISED; record $42bn backlog, forward P/E '
-                    '21.1. Not in any tranche.',
-            'd': '',
-            'dl': 'Standing',
-            'k': 'trigger',
-            't': 'LHX',
-            'w': 'CANCELLED 4 Oct: superseded by the 3 Oct decisions (LHX budget cancelled; RKLB budget capped at cost '
-                 "under the rate rule). | Deploy from the buffer at Salee's discretion"},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'standing',
-            'cond': 'FOUND 15 SEP 2026 while running the three-statement scorecard across the board. THE FIGURES DO '
-                    'NOT COHERE. A company with a 72.1 BILLION market cap, revenue growing 83.2%, a Rule of 40 of 87.0 '
-                    'and POSITIVE free cash flow of 0.11bn cannot plausibly be losing 2.3 TIMES ITS REVENUE at the net '
-                    'line. ⚠️ AN EPS OF MINUS 92.96 AGAINST A SHARE PRICE AROUND 815 IS THE SPECIFIC NUMBER THAT LOOKS '
-                    'WRONG. || THE THREE POSSIBILITIES, IN ORDER OF LIKELIHOOD: (1) a genuine ONE-OFF NON-CASH CHARGE '
-                    '- Lumentum has convertible notes, and mark-to-market on convertible debt or a large goodwill '
-                    'impairment can produce exactly this shape, in which case the number is RIGHT but MEANINGLESS as a '
-                    'margin and must be labelled; (2) a VENDOR DATA FAULT of the kind already found on SKHY and FPS, '
-                    'where a recently-restructured or heavily-diluted security produces nonsense per-share figures; '
-                    '(3) a units or sign error in our own extraction. || ⚠️ WHY IT MATTERS RATHER THAN BEING A '
-                    'CURIOSITY: WE HOLD 11.5 SHARES AT A COST OF 9,372.74 AGAINST A 14,000 BUDGET, so 4,627.26 of room '
-                    'remains and any future rung would be sized against fields we cannot currently trust. IT ALSO '
-                    'POISONS ANY BOARD-WIDE SCREEN - a single minus-230% observation drags a median or an average '
-                    'badly. || ACTION: RESOLVE FROM THE 10-Q BEFORE ANY FURTHER LITE DEPLOYMENT AND BEFORE THE 10 '
-                    'DECEMBER REVIEW. If it is a one-off charge, record the charge and the adjusted margin side by '
-                    'side. If it is bad vendor data, blank the field rather than carry a false one. ⚠️ AND THE '
-                    'STANDING RKLB FAULT IS STILL OPEN ALONGSIDE IT: Rule of 40 reads MINUS 0.7 and does not reconcile '
-                    '- it should be about PLUS 4.2. Two fields, same review, same discipline.',
-            'd': '',
-            'dl': '⚠️ OPEN DATA FAULT - fix before the 10 Dec review',
-            'k': 'watch',
-            't': 'LITE',
-            'w': '⚠️⚠️ LUMENTUM NET MARGIN READS MINUS 230.1% AND EPS READS MINUS 92.96. THAT IS ALMOST CERTAINLY '
-                 'WRONG AND WE HOLD 9,372.74 IN IT.'},
+            'k': 'admin',
+            't': 'CASH',
+            'w': 'CRASH RESERVE - $50,000 of the January money (approved 9 Oct 2026)'},
            {'a': 'HOLD',
             'amt': 0,
             'c': 'standing',
@@ -11070,531 +8473,6 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             't': 'MU',
             'w': '10,000 STAYS PARKED after the 1 Oct scoring - the volume test FAILED even though the print was a '
                  'record'},
-           {'a': 'WATCH',
-            'amt': None,
-            'c': 'standing',
-            'cond': 'Epoch AI ranked Astra first; Artificial Analysis scored it FLAT versus its predecessor and behind '
-                    "Claude Fable 5.1. OpenAI's own 99.9% ARC-AGI-3 figure was 62.7% on ARC Prize's standard harness, "
-                    'and OpenAI edited several published numbers after release. Treat the token-demand thesis as '
-                    'unconfirmed until the independent scorers agree. Convergence upward would upgrade this from '
-                    'narrative to fact.',
-            'd': '',
-            'dl': 'Standing - next scoring cycle',
-            'k': 'thesis',
-            't': 'NVDA',
-            'w': 'Whether independent benchmarks converge on Astra being a genuine leap'},
-           {'a': 'LIMIT',
-            'amt': 7000,
-            'c': 'done',
-            'cond': '-12.4% from the 4 Sep close of $230.36.',
-            'd': '',
-            'dl': 'Standing',
-            'k': 'limit',
-            't': 'NVDA',
-            'w': 'DONE 19 Oct - rung 1 filled (32 at 215.85). | ⚠️ TRIGGERED by the Fri 16 Oct close of $214.13 (at or '
-                 'below $215) - order placed as the dated row Mon 19 Oct. Mark done when filled. | Ladder rung 1 - any '
-                 'close at or below $215 (raised from $200, Salee approved 4 Oct)'},
-           {'a': 'LIMIT',
-            'amt': 5619.72,
-            'c': 'standing',
-            'cond': "-21.9%. The 'something broke and I want to own it anyway' price.",
-            'd': '',
-            'dl': 'Standing',
-            'k': 'limit',
-            't': 'NVDA',
-            'w': 'Ladder rung 2 - any close at or below $180'},
-           {'a': 'SELL',
-            'amt': 1524.0,
-            'c': 'done',
-            'cond': 'Recorded going-concern doubt; board margin and return figures do not reconcile and are '
-                    'unverified.',
-            'd': '',
-            'dl': "On Salee's instruction",
-            'k': 'liquidation',
-            't': 'ONDS',
-            'w': 'REMOVED FROM BOARD 3 Oct 2026 (Salee approved the rate review and watch-list cut) - watch list cut '
-                 'to 25 (cap 30). | SELL all 200 shares (~$1524.0 at the Sep 4 close)'},
-           {'a': 'DECIDE',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'RAISED 15 SEP 2026 in answer to Salee asking whether the NVDA/ORCL weights are right. THEY ARE - '
-                    'AND THE MORE IMPORTANT FINDING IS UNDERNEATH. || THE WEIGHTS: NVDA 95,000 of budget against ORCL '
-                    '13,000 - 7.3 TO 1. By money actually spent, 79,380.28 against 12,228.43 - 6.5 TO 1. NVDA is 9.5% '
-                    'of the million-dollar plan; ORCL is 1.3%. ⚠️ AND ORCL HAS ONLY 771.57 OF ROOM LEFT, with the '
-                    'position already recorded as COMPLETE on 11 September. THERE IS NOTHING LEFT TO ALLOCATE. The '
-                    'discipline already did the work. || ⚠️ BUT THE POSITION IS LOSING ON BOTH COUNTS. 75 shares cost '
-                    '12,228.43 and are worth about 10,859 at the 14 Sep close of 144.79 - AN UNREALISED LOSS OF ABOUT '
-                    '1,369, MINUS 11.2%. AND WE ALREADY REALISED MINUS 1,961.73 ON AN EARLIER ORCL SALE. ORACLE IS '
-                    'DOWN ABOUT 47% FROM ITS 329.50 HIGH. || ⚠️⚠️ THE FACTS THAT MATTER, NONE OF WHICH ARE ON THE '
-                    'SLIDE. (1) S&P DOWNGRADED ORACLE TO BBB- ON 9 JULY 2026 - ONE NOTCH ABOVE JUNK - citing mounting '
-                    "debt, negative cash flow and OpenAI concentration. Moody's has it Baa2 NEGATIVE. THAT is the "
-                    'balance-sheet risk, not a ratio. (2) TTM FREE CASH FLOW IS MINUS 28.72 BILLION, not the "5 '
-                    'billion" the slide quotes - the slide used the QUARTER (minus 5.396bn) and did not say so. (3) '
-                    'GROSS MARGIN IS COMPRESSING FROM ABOUT 67% TO ABOUT 60% YEAR ON YEAR - that, not the debt, is '
-                    'what triggered the post-earnings fade and the price-target cuts from BMO, RBC and Stifel. (4) THE '
-                    '664 BILLION BACKLOG IS REAL BUT ONLY ~13% CONVERTS TO REVENUE WITHIN TWELVE MONTHS, and it grew '
-                    'just 26bn quarter-on-quarter against 209bn year-on-year - DECELERATING SHARPLY. || ⚠️ AND OUR OWN '
-                    "BOARD ALREADY SAYS IT: ORCL'S RULE OF 40 IS MINUS 18.4, THE WORST OF ANY FUNDED NAME, because the "
-                    "cash burn overwhelms the growth. It fails our own written test, not just the slide's. || THE 10 "
-                    'DECEMBER QUESTION IS THEREFORE NOT "HOW MUCH MORE ORACLE" BUT "WHY DO WE STILL OWN IT". THE '
-                    'HONEST CASE TO KEEP: 29.6% revenue growth, 24.6% net margin, forward P/E 16.99, a contracted '
-                    '664bn backlog, and a consensus target of about 239. THE CASE TO SELL: Rule of 40 of minus 18.4, '
-                    'one notch above junk, cash burn of 28.7bn a year, margin compression, and a position already '
-                    '11.2% underwater on top of a realised loss. ⚠️ I AM NOT RECOMMENDING A SALE TODAY - the tax '
-                    'adviser already has four unsigned sells and this board does not add a fifth on a slide. DECIDE IT '
-                    'PROPERLY ON 10 DECEMBER. Conviction MEDIUM on keeping; Conviction HIGH that it must be argued '
-                    'rather than drifted.',
-            'd': '',
-            'dl': '⚠️ 10 DECEMBER - ORCL is now a sell candidate, not a buy one',
-            'k': 'watch',
-            't': 'ORCL',
-            'w': 'SUPERSEDED 3 Oct 2026 (Salee approved the rate review and watch-list cut): Oracle is to be SOLD (see '
-                 'the 5 Oct row). | ⚠️⚠️ ORACLE IS THE WORST-SCORING FUNDED NAME ON THIS BOARD AND S&P HAS IT ONE '
-                 'NOTCH ABOVE JUNK. The allocation question Salee asked is already settled - the real question is '
-                 'whether we still want it at all.'},
-           {'a': 'DECIDE',
-            'amt': 0,
-            'c': 'cancelled',
-            'cond': 'Same thesis as the CrowdStrike rung. Cheaper on 87x forward but EPS fell 75%. Prefer this rung '
-                    'only if platform consolidation shows in billings; otherwise favour the CRWD rung. Do not fund '
-                    'both at full size in the same month.',
-            'd': '',
-            'dl': 'Standing - deployable now',
-            'k': 'thesis',
-            't': 'PANW',
-            'w': "CANCELLED 21 Sep (budget reset approved by Salee): Deploy room into cyber on the Astra 'Critical' "
-                 'cyber rating'},
-           {'a': 'TRIGGER',
-            'amt': 10466.91,
-            'c': 'standing',
-            'cond': 'Forward P/E 85.7 and priced near the analyst average; wait for a better price. Condition set in '
-                    'the 21 Sep budget reset.',
-            'd': '',
-            'k': 'trigger',
-            't': 'PLTR',
-            'w': 'Buy the remaining $10,466.91 only below $150'},
-           {'a': 'SELL',
-            'amt': 1914.99,
-            'c': 'done',
-            'cond': 'UNPAUSED. The old row held Qualcomm pending confirmation of the Amazon agreement with a 16 Sep '
-                    'decision date. The restructure supersedes it: 5.2% revenue growth cannot serve a mandate to '
-                    'double in five years whatever the agreement turns out to be, and the position is 11 shares worth '
-                    '1,914 - too small for the outcome to matter either way.',
-            'd': '',
-            'dl': "On Salee's instruction - restructure of 10 Sep 2026",
-            'k': 'liquidation',
-            't': 'QCOM',
-            'w': 'REMOVED FROM BOARD 3 Oct 2026 (Salee approved the rate review and watch-list cut) - watch list cut '
-                 'to 25 (cap 30). | Sell all 11 shares at market. Tier A.'},
-           {'a': 'LIMIT',
-            'amt': 0,
-            'c': 'done',
-            'cond': '-14.4% from the Sep 4 close of 64.26; the zone a dilution announcement plausibly hands over '
-                    '(52-week range 37.57-151.00). Position is 23 sh at 84.46 avg, -24% - no averaging down beyond '
-                    'this rung just to repair the lot; the market does not know the cost basis.',
-            'd': '',
-            'dl': 'Standing',
-            'k': 'limit',
-            't': 'RKLB',
-            'w': 'CANCELLED 4 Oct: the rate rule of 3 Oct (no new money into unprofitable companies while the 10-year '
-                 'is above 5%) and the RKLB budget cap at cost make this limit void. Re-open only if the rule is '
-                 'lifted. | Rung 1 - any close at or below $55'},
-           {'a': 'TRIGGER',
-            'amt': 0,
-            'c': 'cancelled',
-            'cond': 'The $8.0bn Iridium deal leans on a $3.6bn bridge loan; the refinancing (equity/converts/term '
-                    'debt) is the live overhang. Deploy on the day terms price ONLY if total equity dilution is <=15% '
-                    'and the thesis is intact. Punitive terms or heavier dilution CUTS this plan instead of funding '
-                    'it.',
-            'd': '',
-            'dl': 'Standing - S-4 filed Aug 13; financing terms pending',
-            'k': 'trigger',
-            't': 'RKLB',
-            'w': 'CANCELLED 21 Sep (budget reset approved by Salee): Rung 2 - Iridium financing pricing day'},
-           {'a': 'TRIGGER',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'BUDGET CUT 15,000 -> 5,000 on 21 Sep. The remaining $3,057.42 is released ONLY after a successful '
-                    "Neutron first flight. Deploy after EITHER a successful Neutron first flight (the stated 'Q4 2026' "
-                    'is a PAD-DELIVERY target, not a launch date) OR the Iridium deal closing on sane terms. Paying '
-                    "70+ for a de-risked RKLB beats paying 64 for a diluted question mark. Context: Berenberg's Sep 3 "
-                    'initiation (Buy, PT 83) sits BELOW the 18-analyst mean of 112.94 - a conservative Buy, not a new '
-                    'bull high. Rungs 1-3 total 8,057.42 = exactly the room on the 10,000 budget.',
-            'd': '',
-            'dl': 'Standing',
-            'k': 'trigger',
-            't': 'RKLB',
-            'w': 'CANCELLED 4 Oct: superseded by the 3 Oct decisions (LHX budget cancelled; RKLB budget capped at cost '
-                 'under the rate rule). | Rung 3 - pay up AFTER de-risking'},
-           {'a': 'DECIDE',
-            'amt': 0,
-            'c': 'cancelled',
-            'cond': 'Revenue +43.1% with EPS +34.2% and a Rule of 40 of 60.0 - the fastest grower in the tier that is '
-                    'also profitable. ⚠️ Net margin is thin at 5.9%, so the case rests on growth, not on quality. Not '
-                    'yet held; needs an entry decision.',
-            'd': '',
-            'dl': 'Standing - promoted to Tier 4 on Sep 7',
-            'k': 'tranche',
-            't': 'SE',
-            'w': 'CANCELLED 21 Sep (budget reset approved by Salee): Tier 4 budget of 10,000 - deploy the second 5,000 '
-                 'on evidence, not on the promotion'},
-           {'a': 'AVOID',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'FOUND 15 SEP 2026 by mapping our board onto a world-semiconductor market-cap graphic - the '
-                    'graphic was RIGHT and WE were wrong, which is worth saying plainly. || THE EVIDENCE: SK hynix was '
-                    'KRW 1,198.075 TRILLION on 4 SEPTEMBER 2026 (Joongang Enews, 11:16 KST, share price 1,640,500 '
-                    'won). companiesmarketcap independently shows about 895.78 BILLION DOLLARS for September 2026. Our '
-                    '1,385.35 lands squarely in the KRW-TRILLION series, not the USD-billion one - SK hynix passed '
-                    '1,306.86tn won by 8 September. ⚠️ THE MOST LIKELY CAUSE IS A TRILLION-WON FIGURE STAMPED WITH A '
-                    'DOLLAR SIGN. || ⚠️ AND I COULD NOT RESOLVE IT CLEANLY, WHICH IS WHY IT IS BLANKED RATHER THAN '
-                    'REPLACED. The implied share count reconciles (1,385.35 / 190.07 = 7.29bn, consistent with ~728m '
-                    'Seoul shares at a 1-for-10 ADR ratio) but the PRICE does not: a Seoul share at 1,640,500 won is '
-                    'about 1,205 dollars, so a tenth is about 120 dollars, yet the ADR trades near 175. THE RATIO, THE '
-                    'SHARE COUNT OR THE PRICE IS WRONG AND I CANNOT TELL WHICH FROM HERE. || ACTION TAKEN: mcapB, ps '
-                    'and pfcf BLANKED. Price set to 175.63 from the POEMS statement, which is a primary source. ⚠️ '
-                    'THIS IS THE SAME DISCIPLINE APPLIED TO LITE THIS MORNING - BLANK A FIELD RATHER THAN CARRY A '
-                    'FALSE ONE. || ⚠️ THIS IS THE FOURTH SKHY DATA FAULT AND THE NAME HAS BEEN QUARANTINED WITH NO '
-                    'BUDGET SINCE 10 SEPTEMBER. THAT QUARANTINE IS NOW FULLY VINDICATED. The position is 15 shares at '
-                    'a cost of 1,913.26, currently about 2,634 - up about 37.7% - and it stays exactly as it is. '
-                    'Resolve the ADR ratio from the F-1 or the depositary before the 10 DECEMBER review.',
-            'd': '',
-            'dl': '⚠️ OPEN DATA FAULT - 4th on this ticker',
-            'k': 'watch',
-            't': 'SKHY',
-            'w': 'REMOVED FROM BOARD 3 Oct 2026 (Salee approved the rate review and watch-list cut) - watch list cut '
-                 'to 25 (cap 30). | ⚠️⚠️ OUR SK HYNIX MARKET CAP READ 1,385 BILLION DOLLARS. THE REAL FIGURE IS ABOUT '
-                 '880-896 BILLION. THE FIELD IS NOW BLANKED.'},
-           {'a': 'AVOID',
-            'amt': None,
-            'c': 'standing',
-            'cond': 'DO NOT BUY INTO THIS. Staggered releases per the Jun 11 2026 prospectus: 319m on Sep 9, ~328m on '
-                    'Sep 24, ~319m on Oct 9, ~319m on Oct 24, then roughly 1.3 BILLION on the Q3 earnings trigger in '
-                    "November, then 455.8m on Dec 8-9. Musk's own 6.42bn shares (48.4%) sit under a separate 366-day "
-                    'lock-up expiring Jun 2027. || The stock is already BELOW its 161 first-day close at 147.95 '
-                    'despite being up ~18% over the past month, and that is with only the earlier tranches released. '
-                    'Adding a further 3 billion shares of potential supply into a name with one public quarter of '
-                    'history is a reason to wait, not to hurry. Revisit only after the November release is absorbed.',
-            'd': '',
-            'dl': 'Rolling - Sep 9, Sep 24, Oct 9, Oct 24, Nov, Dec 8-9',
-            'k': 'supply',
-            't': 'SPCX',
-            'w': 'Lock-up expiry calendar - about 3.04 billion shares released between Sep and Dec 2026'},
-           {'a': 'WATCH',
-            'amt': None,
-            'c': 'standing',
-            'cond': 'IPO was Jun 12 2026 at 135; only ONE public quarter exists (10-Q filed Aug 4). Q2 showed a 541m '
-                    'net loss on 15.83bn of AI capex against 2.56bn of AI revenue. Net margin -35.66%, forward P/E '
-                    '48.4. Analyst targets run 117 to 450 with Raymond James at 800 - a spread that wide IS the '
-                    'uncertainty made visible, the same pattern flagged on MU. Morningstar published that the company '
-                    'is worth less than half its IPO valuation. Also note SPCX absorbed xAI in the Feb 2026 merger, so '
-                    'buying it ADDS to an AI book already at ~82% concentration. Wait for a second public quarter '
-                    'before assigning any budget.',
-            'd': '',
-            'dl': 'Standing - needs a second public quarter',
-            'k': 'thesis',
-            't': 'SPCX',
-            'w': 'Whether to open a position at all - no budget assigned'},
-           {'a': 'LIMIT',
-            'amt': 9522.29,
-            'c': 'standing',
-            'cond': 'UPDATED 15 Oct: the October rung is filled (23 sh at 417.42); this standing order now covers only '
-                    'the remaining budget room of 9,522.29. Overrides any date trigger - deploy immediately.',
-            'd': '',
-            'dl': 'Standing',
-            'k': 'limit',
-            't': 'TSM',
-            'w': 'Any close at or below $380'},
-           {'a': 'STOP',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'Protects the half kept for momentum. Otherwise decide at the 10 Dec review after Q3 results on 1 '
-                    'Dec. Keep the remaining 20 if margin is rising toward 8%.',
-            'd': '',
-            'dl': 'Standing - checked daily by the price alert',
-            'k': 'stop',
-            't': 'CRWD',
-            'w': 'DONE 19 Oct - sold 20 at 229.16; position closed. | ⚠️ STOP FIRED by the Fri 16 Oct close of $227.39 '
-                 '(below $243) - sell order is the dated row Mon 19 Oct. | SELL STOP (Salee approved 5 Oct): sell the '
-                 'remaining 20 CRWD if any close is at or below $243 (10% under the 2 Oct close of $270.04).'},
-           {'a': 'ADMIN',
-            'amt': 50000,
-            'c': 'standing',
-            'cond': 'Spend only if the S&P 500 closes 15% or more below its all-time high. Buy only names already on '
-                    'the board at or below our fair value, in two halves at least one week apart. Not a budget for new '
-                    'names. Reviewed at every quarterly review.',
-            'd': '',
-            'k': 'admin',
-            't': 'CASH',
-            'w': 'CRASH RESERVE - $50,000 of the January money (approved 9 Oct 2026)'},
-           {'a': 'PARK',
-            'amt': 79991.56,
-            'c': 'done',
-            'cond': 'POEMS pays no interest on cash; SGOV earns the T-bill rate (3-month bill about 3.9%, before any '
-                    'US withholding). Keep about $46,000 as cash for the October buys. Before each later buy, SELL '
-                    'that amount of SGOV the session before (settles T+1). Booked as cash-equivalent, not as a stock '
-                    'holding.',
-            'd': '2026-10-13',
-            'k': 'cash',
-            't': 'SGOV',
-            'w': 'DONE 13 Oct 23:04 Bangkok - 794 sh at 100.5299, cost 79,991.56 incl. est. commission. NOT PLACED 12 '
-                 'Oct - carried to 13 Oct. PARK IDLE CASH - buy about 794 shares of SGOV (iShares 0-3 Month Treasury '
-                 'Bond ETF) with a LIMIT at the ask (~$100.53). About $80,000 incl. commission.'},
-           {'a': 'HOLD',
-            'amt': 25997.8,
-            'c': 'planned',
-            'cond': 'First call: VERTIV +$10,000 if the 28 Oct disclosure test passes (orders, backlog and '
-                    'book-to-bill published again) - half on 29 Oct, half on a pullback. Remainder waits for the 10 '
-                    'Dec ranking.',
-            'd': '',
-            'dl': 'Standing - ranked pool',
-            'k': 'pool',
-            't': '',
-            'w': 'RANKED POOL $25,997.80 freed 12 Oct (SNPS $13,000 + APH rung 2 $6,497.80 + LRCX cut $6,500). Funds '
-                 'open budgets in priority order (upside to fair value x quality / 10).'},
-           {'a': 'BUY',
-            'amt': 8277.68,
-            'c': 'cancelled',
-            'cond': '12 Oct Day order expired (ISRG traded ~427). Set Validity GTD with end date 19 Oct so it waits '
-                    'each session; results about 20-21 Oct, so do not leave an order open into the print. Do not raise '
-                    'the limit.',
-            'd': '2026-10-13',
-            'k': 'tranche',
-            't': 'ISRG',
-            'w': 'CANCELLED 18 Oct: the $413 GTD order (to 19 Oct) was not on the 15 Oct POEMS order screen and the '
-                 'stock closed $426.70 on 16 Oct - no order sits open into the 20 Oct results. Replaced by the 21 Oct '
-                 'DECIDE row. | NOT ON THE 15 OCT ORDER SCREEN - the 13/14 Oct Day orders at 413 appear to have '
-                 'expired unfilled and no ISRG order was open tonight. Outcome to confirm with Salee; results about '
-                 '20-21 Oct, so do not leave a new order open into the print. | ORDER RECEIVED 13 Oct 23:00 Bangkok - '
-                 '20 sh LIMIT 413, but entered as a DAY order (not GTD): if unfilled tonight, re-enter nightly or set '
-                 'validity GTD 19 Oct. Tranche 2 - healthcare, CARRIED from 12 Oct: LIMIT 20 shares at $413, GTD to 19 '
-                 'Oct (= $8,277.68 incl. commission)'},
-           {'a': 'SELL',
-            'amt': 4573.49,
-            'c': 'done',
-            'cond': 'Est. proceeds 4,538.07 net (20 x 227.39 = 4,547.80, commission 9.73). Day LIMIT SELL at the floor '
-                    '$225.12 (Friday close -1%): fills at the market price if the stock opens above it. If it opens '
-                    'below the floor, re-place Tuesday at Monday close -1%. Exit within two sessions - a stop that '
-                    'waits for a bounce is not a stop.',
-            'd': '2026-10-19',
-            'dl': 'Mon 19 Oct - sell-stop fired',
-            'k': 'stop',
-            't': 'CRWD',
-            'w': 'FILLED 19 Oct: 20 sh at 229.1648, net 4,573.49, realised +2,616.43 (POEMS 696416). CrowdStrike fully '
-                 'exited. | SELL the remaining 20 CRWD - the $243 stop (approved 5 Oct) fired on the Fri 16 Oct close '
-                 'of $227.39.'},
-           {'a': 'BUY',
-            'amt': 6921.92,
-            'c': 'done',
-            'cond': '32 shares, Day LIMIT $214.13, cap $216.27 (+1%). If unfilled, the rung stays live: re-place each '
-                    'session while the latest close is at or below $215. Rung 2 ($5,619.72 at or below $180) '
-                    'unchanged. Profitable company - the rate rule does not apply.',
-            'd': '2026-10-19',
-            'dl': 'Mon 19 Oct - ladder rung 1 triggered',
-            'k': 'limit',
-            't': 'NVDA',
-            'w': 'FILLED 19 Oct: 32 sh at 215.8482 = 6,921.92 incl. est. commission (POEMS 697610). | NVDA rung 1 - '
-                 '$7,000. Triggered by the Fri 16 Oct close of $214.13 (rule: any close at or below $215, approved 4 '
-                 'Oct).'},
-           {'a': 'DECIDE',
-            'amt': 8277.68,
-            'c': 'done',
-            'cond': 'TEST APPROVED BY SALEE 18 OCT: worldwide da Vinci procedure growth at or above 15% and full-year '
-                    'procedure-growth guidance not lowered. Pass = Day LIMIT at the 20 Oct close, cap +1%, not in the '
-                    'first 30 minutes. Fail = hold, revisit 10 Dec. Last close $426.70, fair value $504.15.',
-            'd': '2026-10-21',
-            'dl': 'ISRG Q3 results Tue 20 Oct (date from Intuitive IR calendar via ad-hoc-news; time to confirm)',
-            'k': 'earnings',
-            't': 'ISRG',
-            'w': 'RESULT 20 Oct: FAILED the test - da Vinci procedure growth about 14% (15% only with Ion included); '
-                 'full-year guidance midpoint held at 14.5% but the range narrowed to 14-15%; revenue +22%, GAAP gross '
-                 'margin 68.4%, 546 systems placed. Shares about -7% after hours. HOLD - no order; the $8,277.68 rung '
-                 'and the $15,618 room move to the 10 Dec review. | Decide the rung that expired unfilled ($8,277.68 '
-                 'of the $15,618.32 room) after the results. No order before the print.'},
-           {'a': 'HOLD',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'THE TEST (all four): (1) signed backlog still growing from $4.33bn; (2) data-centre '
-                    '(E-Infrastructure) revenue still growing; (3) margins holding - no big fall in gross or operating '
-                    'margin; (4) full-year guidance not cut. FAIL any one, or the 58% fall is explained by a lost '
-                    'hyperscaler customer = stays WATCH, budget returns to the pool. PASS = Day LIMIT at the 28 Oct '
-                    'close, cap +1%, not in the first 30 minutes. Paid from the SGOV slice sold Wed 28 Oct, not from '
-                    'the $50k crash reserve. Fair value moved to the current analyst mean $836.71 (8 analysts) from a '
-                    'stale $918.67.',
-            'd': '2026-10-29',
-            'dl': 'STRL Q3 results Wed 28 Oct (date announced by Sterling) - act Thu 29 Oct night',
-            'k': 'earnings',
-            't': 'STRL',
-            'w': 'TEST FAILED 28 Oct (decided in chat 29 Oct): (1) SIGNED BACKLOG $4.14bn, DOWN from $4.33bn at 30 Jun '
-                 '(-4.4% q/q) - the written bar was "still growing from $4.33bn". The other three PASSED: '
-                 'E-Infrastructure revenue $1.30bn (+212%); consolidated operating margin 19.6% vs 18.2% (E-Infra '
-                 'segment 22.6% vs 25.6%); full-year guidance RAISED. Context: combined backlog $6.14bn vs $5.62bn '
-                 '(+9% q/q) because unsigned awards rose to $2.00bn from $1.28bn - work is being awarded faster than '
-                 'it is signed; revenue burned through backlog (+127%). Per the 19 Oct approval: fail any one = WATCH '
-                 'and the budget returns to the pool. No order. Stock +8% after hours (~$420). RE-TEST: Q4 results '
-                 '(~Feb 2027) - signed backlog back above $4.33bn. | STERLING - first half ($7,500) of a $15,000 '
-                 'position, APPROVED BY SALEE 19 OCT, conditional on the Q3 test. Board #2 on priority; down 58% from '
-                 'its $1,006 high and the cause is not yet explained.'},
-           {'a': 'HOLD',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'Day LIMIT at the previous close, cap +1%. Skip if the first half was not bought.',
-            'd': '2026-11-05',
-            'dl': 'STRL second half - at least one week after the first',
-            'k': 'buy',
-            't': 'STRL',
-            'w': 'CANCELLED 29 Oct - half 1 not bought (signed-backlog test failed). | STERLING second half ($7,500). '
-                 'Only if the first half filled on the 29 Oct test pass and nothing in the following week breaks the '
-                 'thesis.'},
-           {'a': 'SELL',
-            'amt': 10047.46,
-            'c': 'done',
-            'cond': 'If every buy to 30 Oct passes (NVDA, ISRG, META, MSFT, CAT, STRL half 1) free cash would go about '
-                    '$4,200 negative; this slice covers it with room to spare. SGOV left after: about $69,800, still '
-                    'above the $50,000 crash reserve. If tests fail, the cash simply waits.',
-            'd': '2026-10-28',
-            'dl': 'Cash for STRL / MSFT / CAT if all pass',
-            'k': 'cash',
-            't': 'SGOV',
-            'w': 'FILLED 28 Oct: 100 sh at 100.6901 = 10,047.46 net (est.), Done 22:29 Bangkok. | SELL 100 SGOV (about '
-                 '$10,055) - the session BEFORE the 29-30 Oct buys (T+1 settlement).'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'confirmed',
-            'cond': 'SGOV income is 100% qualified interest income (iShares 2026 QII memo), which US law exempts from '
-                    'withholding for non-US investors with a W-8BEN on file. If POEMS withheld anything: (1) Salee '
-                    'sends the POEMS statement line; (2) Claude drafts the reclaim request to POEMS citing the iShares '
-                    'QII memo; (3) the SGOV yield assumption on the Portfolio tab (3.6%) is cut to the net rate until '
-                    'resolved. Thai-side treatment of foreign income held at a Thai broker is a separate question for '
-                    'the tax adviser. Reminder also set in the chat for 09:00 Bangkok on 9 Nov.',
-            'd': '2026-11-09',
-            'dl': 'Mon 9 Nov - SGOV first dividend: US withholding check',
-            'k': 'tax',
-            't': 'SGOV',
-            'w': 'CHECK THE FIRST SGOV DIVIDEND FOR US WITHHOLDING TAX. Ex-date Mon 2 Nov, pay date about Fri 6 Nov. '
-                 'Expected gross = 794 sh x about $0.30 = about $239. Credited about $239 = exempt (correct); about '
-                 '$203 = 15% withheld; about $167 = 30% withheld.'},
-           {'a': 'HOLD',
-            'amt': 0,
-            'c': 'open',
-            'cond': "ANSWERED 24 Oct FROM META'S OWN SEC FILING (Schedule 14C, 21 Oct): the Class C non-voting shares "
-                    'are a STOCK DIVIDEND to every holder - one Class C for each Class A and B share - effective 19 '
-                    'Jan 2027, paid within five business days after. Nothing is sold for cash yet, so on the day it is '
-                    'like the 2014 Google GOOG/GOOGL split: our economic stake does not change (77.5 META -> also '
-                    'about 77.5 Class C; check how POEMS handles the half share). THE ADVERSE EVENT IS LATER: Meta '
-                    'SELLING new Class C for cash (to fund AI, acquisitions, or sovereign investors) - that dilutes us '
-                    'economically, and Class C will likely trade at a discount and may be left out of indices. Founder '
-                    'terms: Zuckerberg (60.6% of votes, 13.4% of economics) may sell up to 20% of his Class C freely - '
-                    'about 10% of his stake - including to pay the proposed California wealth tax (Proposition 40, '
-                    'ballot 3 Nov); he committed to stay a California resident for 8 years. RULE FOR 10 DEC: item (2) '
-                    'counts as adverse ONLY if Meta has announced or done a cash sale of Class C by then. If FCF is '
-                    'still negative AND a cash raise is announced, cut the budget to the cost already spent and add no '
-                    'further money; no sale on these alone. || Was: Check whether any non-voting shares have been '
-                    'ISSUED (dilution for existing holders) or only authorised, and how much. If both items are '
-                    'adverse by 10 Dec, cut the budget to the cost already spent and add no further money; no sale on '
-                    'these alone.',
-            'd': '2026-12-10',
-            'dl': 'Quarterly review - META after the final rung',
-            'k': 'thesis',
-            't': 'META',
-            'w': 'ADDED 1 Nov: S&P Global affirmed Meta at AA- but cut the OUTLOOK TO NEGATIVE (30 Oct). S&P forecasts '
-                 'free operating cash flow of -$22bn (2026), -$71bn (2027), -$39bn (2028); capex $140bn (2026) -> '
-                 '>$225bn (2027) -> $252bn (2028); adjusted leverage 1.1x in 2027 vs its 1.0x downgrade threshold; '
-                 'future lease obligations $355.7bn (from ~$279bn in Q2). Confirms the 27 Oct rule - no change. | ⚠️ '
-                 'RULE TRIGGERED 27 Oct: BOTH adverse items are now true - (1) Q3 free cash flow was NEGATIVE '
-                 '(-$2.12bn) and (2) on 26 Oct Meta ANNOUNCED a cash sale of shares: about $35bn of common and '
-                 'preferred stock now, plus a programme of up to $60bn more once the Class C non-voting shares trade '
-                 '(Q1 2027), $95bn in all. ACTION TAKEN ON THE BOARD: META budget cut from $52,000 to the cost already '
-                 'spent ($51,119.33); no further money. NO SALE on these alone (77.5 sh held). 10 Dec question narrows '
-                 'to: has the dilution (about 5% at $35bn on a ~$1.6tn market value, up to ~14% at $95bn) and the '
-                 'capex path ($135-145bn for 2026, ~$825bn committed) damaged the per-share case enough to trim? Side '
-                 'note: NVDA, AMD and AVGO have shown interest in buying up to $5bn of the Class A shares - suppliers '
-                 'funding their customer. | META: budget full after the 22 Oct fill (77.5 sh, cost $51,119). Two items '
-                 'for the review: (1) free cash flow turned NEGATIVE in Q3 (-$2.1bn; capex $34.9bn) - must be positive '
-                 'again; (2) NEW 22 Oct: Meta announced a new class of NON-VOTING shares to help fund its AI build-out '
-                 '(Reuters) - not known when the 22 Oct test was run.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'THE TEST WRITTEN 14 SEP: if Power or Electrification EQUIPMENT ORDERS FALL year on year, no more '
-                    'money to GEV. Budget is full ($519 left), so this decides hold vs review, not a buy. Fell 10.6% '
-                    'on 22 Oct on the Meta financing scare, not company news.',
-            'd': '2026-10-28',
-            'k': 'earnings',
-            't': 'GEV',
-            'w': 'RESULT 28 Oct: Power orders $21.8bn, +178% organic (21 HA gas turbines) - PASS, emphatically. '
-                 'Electrification orders $5.4bn, -9% organic vs a year-ago quarter inflated by large '
-                 'synchronous-condenser orders; book-to-bill ~1.4 and equipment backlog $42.2bn (+60%). Total orders '
-                 '$29.3bn (+96%), backlog $197bn, FCF $5.4bn; FY26 guidance raised (FCF $16-17bn from $11.5-12.5bn). '
-                 'Also agreed to buy Trench Group (HV grid equipment) for ~$9bn, close late 2027 - the stock slid on '
-                 'the deal. VERDICT: thesis intact; Electrification flagged as a one-quarter comparison effect. Budget '
-                 'full ($519 room) - no order, no sale. | GE Vernova Q3 results - Wed 28 Oct BEFORE the US open '
-                 '(webcast 7:30 am ET = 18:30 Bangkok). Confirmed by GE Vernova.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'Feeds the 19 Nov $18,524 tranche 3: watch Google Cloud growth and capex against revenue. No order '
-                    'this week.',
-            'd': '2026-10-28',
-            'k': 'earnings',
-            't': 'GOOGL',
-            'w': 'RESULT 28 Oct: Cloud $30.7bn (about double a year ago), Cloud operating income $11.1bn (36% margin). '
-                 'BUT revenue $127.6bn missed consensus slightly, GAAP EPS $2.12 vs ~$3.02 expected (an $8.7bn paper '
-                 'loss on equity stakes), quarter capex $51.4bn, FREE CASH FLOW -$9.1bn (second negative quarter). '
-                 'Stock -8% after hours (~$299). NOTE MISSED BY THE BOARD: Alphabet raised $84.75bn of new equity in '
-                 'June 2026 (Berkshire $10bn). Same two conditions that triggered the META rule on 27 Oct (negative '
-                 'FCF + equity raise). PROPOSED to Salee 29 Oct: convert the 19 Nov $18,524 tranche to a DECIDE with a '
-                 'written test - awaiting approval. | Alphabet Q3 results - Wed 28 Oct after the US close (call 4:30 '
-                 'pm ET = 03:30 Thu Bangkok). Confirmed by Alphabet IR 6 Oct.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'No order - AMZN is already $600 over its $48,000 budget. Watch AWS growth and capex; read for the '
-                    'whole AI-spending chain.',
-            'd': '2026-10-29',
-            'k': 'earnings',
-            't': 'AMZN',
-            'w': 'RESULT 29 Oct: AWS $46.0bn +39% (fastest in years), AWS operating income $17.8bn; AWS backlog '
-                 '$578bn. Group sales $201.9bn +12% (in line), EPS $1.89 vs ~$1.96 expected. Q4 guide sales '
-                 "$240-247bn, op income $28.5-33.5bn. Q3 capex $77.3bn; 2026 cash capex ~$220bn and 'meaningfully more "
-                 "in 2027'. TTM FREE CASH FLOW -$42.4bn (was +$14.8bn). Stock closed 243.79 (-4.3%), about -6% after "
-                 'hours (~$229). No share sale (count +1% YoY, compensation). NO ORDER - AMZN is $600.75 over its '
-                 '$48,000 budget and has no rows left. Negative FCF is half of the META/GOOGL rule; the other half '
-                 '(selling shares for cash) is absent. Carried to the 10 Dec review. | Amazon Q3 results - Thu 29 Oct '
-                 'after the US close. Confirmed by Amazon.'},
-           {'a': 'HOLD',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'Sell ONLY what approved buys need: APP $9,000 and STRL $7,500 on 5 Nov, V $2,093 and VST $3,433 '
-                    'on 10 Nov, if they pass. Cut or skip if tests fail. SGOV stays above the $50,000 crash reserve '
-                    '(about $59,000 left after both sales). Day LIMIT at the prior close (floor).',
-            'd': '2026-11-04',
-            'k': 'cash',
-            't': 'SGOV',
-            'w': 'NOT NEEDED (29 Oct): with STRL out, cash after MSFT (~$4.8k) and CAT ($5k) is about $19.9k, enough '
-                 'for APP $9,000 + V $2,093 + VST $3,433 ($14.5k). Skipped to save two commissions; re-add only if a '
-                 'new buy is approved. | SELL about 105 SGOV (about $10,550) on Wed 4 Nov - MOVED 26 Oct from 9 Nov '
-                 'because CRDO was bought early: the 5 Nov APP + STRL buys need the cash first (T+1 settlement).'},
-           {'a': 'BUY',
-            'amt': 5068.66,
-            'c': 'done',
-            'cond': 'WHY IT FELL (checked 26 Oct): MaxLinear said on its 22 Oct call it targets 20-30% of 1.6T active '
-                    'electrical cables (AECs) within a couple of years from about 2027-28, a market where Credo holds '
-                    'an estimated 93-99%; Edgewater Research reports Cisco seeking quotes for its own 1.6T AEC '
-                    'programme and sees limited near-term 1.6T deployments. No guidance cut, no analyst downgrade '
-                    'found; FY2028 revenue estimates were about 0.2% ABOVE their 30 Sep level, forward P/E fell from '
-                    '~27x to ~20x. Our test for price lines was "forecasts not cut" - it passes. Competition is the '
-                    'risk to watch at the December results (fiscal Q2): any guide-down or share-loss comment there = '
-                    'no more money. Net margin 33.8%; fair value $271.92. Same money as the 10 Nov rung, which is now '
-                    'done.',
-            'd': '2026-10-26',
-            'k': 'trigger',
-            't': 'CRDO',
-            'w': 'FILLED 26 Oct: 34 sh at 148.76 (the cap) = 5,068.66 incl. est. commission; Done 22:20 Bangkok. '
-                 'Position 111 sh, cost 17,453.25; room 546.75. | PRICE LINE HIT - CRDO closed $147.29 on Fri 23 Oct, '
-                 'below the $150 line (approved 25 Oct). BUY rung 2 tonight, Mon 26 Oct Bangkok evening: 34 sh, Day '
-                 'LIMIT $147.29, cap $148.76 (+1%), about $5,068.66 incl. commission at the cap. Not in the first 30 '
-                 'minutes. Do not chase above the cap.'},
            {'a': 'TRIGGER',
             'amt': 3418.42,
             'c': 'standing',
@@ -11611,80 +8489,41 @@ SCHEDULE = {'horizon': 'Sep 2026 - Mar 2027',
             't': 'MU',
             'w': '⚠️ OVERRIDE (Salee 25 Oct): rung 2 ($3,418.42) may fill EARLY if MU closes below $800 - same money '
                  'as the 17 Dec row, not extra'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'estimated',
-            'cond': 'NO ACTION ON THE RUMOUR - no sale, no buy (both budgets effectively full). WHEN TERMS ARE '
-                    'ANNOUNCED, score four things: (1) PRICE/PREMIUM paid for LITE (market value ~$83-91bn before the '
-                    'premium); (2) CASH vs STOCK mix - Marvell had only ~$3.9bn cash, so this is mostly shares or '
-                    "heavy debt; estimate dilution for MRVL holders; (3) whether the combined company's earnings per "
-                    'share rise or fall in year 2 (accretion); (4) REGULATORY path - China SAMR approval has delayed '
-                    'or blocked large US chip deals before. Because we own both sides, a premium paid by MRVL holders '
-                    'is partly received by our LITE shares (about $24k MRVL vs $10.5k LITE at the 28 Oct close). If '
-                    'the deal is all-stock at a large premium with no EPS accretion by year 2, review MRVL sizing at '
-                    '10 Dec; if terms are reasonable, hold both through closing.',
-            'd': '2026-11-05',
-            'k': 'event',
-            't': 'MRVL',
-            'w': 'MARVELL-LUMENTUM DEAL - terms expected "as soon as next week" (Bloomberg, 28 Oct). We hold BOTH: '
-                 'MRVL 95.5 sh (cost $20,585) and LITE 11.5 sh (cost $9,373). Reported 28 Oct after the close: MRVL '
-                 'about -8% after hours, LITE about +9-11%.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'confirmed',
-            'cond': 'NO ORDER ON THE PRINT. The only buy route is the standing line: Day LIMIT at or below $150 (close '
-                    '30 Oct $184.11, 18.5% above). Read for the board: US commercial revenue growth, total growth vs '
-                    'the ~79% trailing pace, and adjusted operating margin. Forward P/E ~97 - any guide below the '
-                    'run-rate can move the stock 15-20%.',
-            'd': '2026-11-02',
-            'dl': 'Palantir Q3 2026 results',
-            'k': 'earnings',
+           {'a': 'LIMIT',
+            'amt': 5619.72,
+            'c': 'standing',
+            'cond': "-21.9%. The 'something broke and I want to own it anyway' price.",
+            'd': '',
+            'dl': 'Standing',
+            'k': 'limit',
+            't': 'NVDA',
+            'w': 'Ladder rung 2 - any close at or below $180'},
+           {'a': 'TRIGGER',
+            'amt': 10466.91,
+            'c': 'standing',
+            'cond': 'Forward P/E 85.7 and priced near the analyst average; wait for a better price. Condition set in '
+                    'the 21 Sep budget reset.',
+            'd': '',
+            'k': 'trigger',
             't': 'PLTR',
-            'w': 'Palantir Q3 2026 results - Mon 2 Nov after the close (company release 12 Oct) = early Tue 3 Nov '
-                 'Bangkok. Held 40 sh, cost $5,533.09, budget $16,000.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'confirmed',
-            'cond': 'NO ORDER ON THE PRINT. Buy route is the standing line: Day LIMIT at or below $470 (close 30 Oct '
-                    "$504.80, 7.4% above, after -10.9% on Intel's warning). Read: data-centre GPU revenue and the Q4 "
-                    'guide; PC/client weakness (the Intel read-across) is the risk to watch, not the AI business.',
-            'd': '2026-11-03',
-            'dl': 'AMD Q3 2026 results',
-            'k': 'earnings',
-            't': 'AMD',
-            'w': 'AMD Q3 2026 results - Tue 3 Nov after the close, call 5 pm ET (GlobeNewswire) = early Wed 4 Nov '
-                 'Bangkok. Held 55 sh, cost $13,789.22, budget $24,000.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'confirmed',
-            'cond': 'NO ORDER - budget full. Read: AI back-end networking revenue and the 2027 outlook; feeds the 10 '
-                    'Dec review.',
-            'd': '2026-11-03',
-            'dl': 'Arista Q3 2026 results',
-            'k': 'earnings',
-            't': 'ANET',
-            'w': 'Arista Q3 2026 results - Tue 3 Nov after the close, call 4:30 pm ET (Business Wire) = early Wed 4 '
-                 'Nov Bangkok. Held 98 sh, budget = cost $15,585.57 (full).'}],
- 'note': '⚠️ READ THIS FIRST. On 10 Sep 2026 the board was restructured to 10 groups, 38 funded names, 5 back-up names '
-         'and 13 sells, and ALL 38 budgets were reset. EVERY AMOUNT WRITTEN IN A ROW DATED BEFORE 10 SEP 2026 REFERS '
-         'TO THE OLD BUDGET and must be checked against the new one before it is acted on - the tranche sizes in those '
-         'rows are stale even where the instruction still makes sense. || SEVEN ORPHAN ROWS DELETED on 10 Sep: FSLR '
-         '10,000 and CAT 10,000 (Tier-4 tranches), CRWD 6,086 and CRWD 6,085.88, BWXT 3,006, FPS 5,000, LUNR 5,000 - '
-         'every one of them an instruction to spend money on a ticker that no longer has a budget. || QCOM CONVERTED '
-         'from a 16 Sep decision to an unconditional Tier A sale. || FIVE BACK-UP TRIGGER ROWS ADDED (CRWD, CDNS, TER, '
-         'INTC, FSLR) plus the standing quarterly review dated 10 Dec 2026. Sep 8, 2026: the MCD Tranche-1 line (5,000 '
-         "dated Sep 17) DELETED at Salee's instruction. McDonald's left the board on Sep 5 and the line was an "
-         'instruction to spend 5,000 on a ticker the dashboard no longer carries. Its own condition text claimed MCD '
-         "was 'the only consumer name funded' - it never was: MCD's budget field was null on every build in git "
-         'history. So no budget is released by this deletion and the plan stays at exactly 1,000,000. || Sep 6, 2026: '
-         "RKLB Tranche-2 single line (8,057.42 dated Oct 9) replaced with a three-rung plan at Salee's instruction - a "
-         '55 limit, an Iridium-financing trigger, and a post-de-risking trigger; total unchanged at exactly the room. '
-         "|| Sep 5, 2026: board focused at Salee's instruction - 49 watchlist names removed (181 -> 132) and six "
-         'holdings marked for liquidation. Claude does not place trades; the SELL rows are for Salee to execute at '
-         'POEMS. Every dated commitment agreed with Salee. Amounts are budget room, not orders. Nothing executes '
-         "automatically - each BUY line still needs Salee's instruction on the day. Rebuilt whenever a plan changes; "
-         'see the change log for the reason behind each edit.',
- 'updated': '2026-10-29'}
+            'w': 'Buy the remaining $10,466.91 only below $150'},
+           {'a': 'LIMIT',
+            'amt': 9522.29,
+            'c': 'standing',
+            'cond': 'UPDATED 15 Oct: the October rung is filled (23 sh at 417.42); this standing order now covers only '
+                    'the remaining budget room of 9,522.29. Overrides any date trigger - deploy immediately.',
+            'd': '',
+            'dl': 'Standing',
+            'k': 'limit',
+            't': 'TSM',
+            'w': 'Any close at or below $380'}],
+ 'note': "CLEANED 1 Nov 2026 at Salee's instruction: only plans from 1 November 2026 onward are shown - open dated "
+         'rows (Nov 2026 to Feb 2027) plus the standing rules that are still live (price lines, triggers, holds, the '
+         'crash reserve and the ranked pool). 139 history rows (everything dated before 1 Nov, every done or cancelled '
+         'row, and undated commentary notes) were moved to src/schedule_archive_2026-11-01.json and git history - '
+         'nothing is lost. Claude does not place trades; every BUY/SELL row is for Salee to place at POEMS as a Day '
+         'LIMIT order. Amounts are budget room, not orders.',
+ 'updated': '2026-11-01'}
 
 SELLBOOK = {'comm': '0.20% + 7% VAT (0.214%), minimum 8.56',
  'note': "SEP 12, 2026 - ZETA'S LIMIT LOWERED 32.50 TO 31.00, and NOT because of the viral 'rich before 2030' graphic "
@@ -13091,137 +9930,105 @@ RISK = {'asof': '2026-10-11',
  'to': '2026-10-09',
  'ust10': 5.24}
 
-BUYPLAN = {'from': '2026-10-26',
- 'holidays': 'No US market holiday in this window. US election day Tue 3 Nov - the market is open.',
- 'hours': 'POEMS follows the US market. UNTIL FRI 30 OCT: 20:30 to 03:00 Bangkok. FROM MON 2 NOV (US clocks go back on '
-          '1 Nov): 21:30 to 04:00 Bangkok. Place Day orders after the open; an unfilled Day order expires at the '
-          'close.',
- 'made': '2026-10-24',
- 'note': 'ONE PAGE FOR 26 OCT - 10 NOV: the same orders as the Schedule tab, buys AND sells, filled and cancelled rows '
-         'left out. Results come out at night; we act the NEXT Bangkok evening. STRL FAILED 28 Oct (signed backlog '
-         'down) and is out; the second SGOV sale is no longer needed. MSFT FILLED 29 Oct (9 sh at 525.40). Remaining '
-         'buys if every test passes: CAT $5k, APP $9k, V $2.1k, VST $3.4k, funded by cash $29,714 (after the 28 Oct '
-         'SGOV sale of 100 sh) + a second SGOV sale (~105 sh on 4 Nov). STANDING PRICE LINES, ANY NIGHT (act only on a '
-         'CLOSE below the line): AVGO $310 · AMD $470 · TSM $380 · NVDA $180 · PLTR $150 · CRDO $150 - HIT and FILLED '
-         '26 Oct (34 sh at 148.76) · MU $800 (override 25 Oct; $3,418 only). Wed 28 Oct: Fed decision - Claude runs '
-         'the 10-year check (the rate rule) before the 29-30 Oct buys. For a SELL the Cap column is the FLOOR.',
- 'pxNote': '23 Oct closes',
- 'rows': [{'a': None,
-           'amt': None,
-           'bkk': 'Fri 30 Oct morning (results)',
-           'cap': None,
-           'cond': 'AWS growth and capex.',
-           'd': '2026-10-29',
-           'lim': None,
-           't': 'AMZN',
-           'tac': 'No order - over budget.'},
-          {'a': None,
-           'amt': None,
-           'bkk': 'Fri 30 Oct',
-           'cap': None,
-           'cond': 'DONE 30 Oct: 7 sh at 633.5642 = 4,444.44. | PASSED 29 Oct: Power Generation +30%. Stock -9% on an '
-                   'un-raised outlook - a cheaper rung, same test.',
-           'd': '2026-10-30',
-           'lim': None,
-           't': 'CAT',
-           'tac': 'Day LIMIT at the 29 Oct close, cap +1%.'},
-          {'a': None,
-           'amt': None,
-           'bkk': 'Sun 1 Nov',
-           'cap': None,
+BUYPLAN = {'from': '2026-11-01',
+ 'holidays': 'No US market holiday in this window: Tue 3 Nov (US election day) and Wed 11 Nov (Veterans Day) are '
+             'normal trading days.',
+ 'hours': 'US clocks went back on 1 Nov: from Mon 2 Nov POEMS follows the US session 21:30 to 04:00 Bangkok. Place Day '
+          'orders after 22:00 (not in the first 30 minutes); an unfilled Day order expires at the close.',
+ 'made': '2026-11-01',
+ 'note': 'ONE PAGE FOR 1 - 15 NOV. Results come out in the Bangkok early morning; we act the SAME Bangkok evening at '
+         'the earliest. FIRM: V $2,093 (Tue 10 Nov), CAT rung 3 $5,000 (Wed 11 Nov). DECIDE ON RESULTS: APP $9,000 '
+         '(Thu 5 Nov, all four tests), VST $3,433 (Tue 10 Nov, adj. EBITDA +20% and guide held). If all pass: $19,526 '
+         'of buys against cash $20,531 - no SGOV sale needed. STANDING PRICE LINES, ANY NIGHT (act only on a CLOSE at '
+         'or below the line; distance from the 30 Oct close): AVGO $310 (-4.9%) | AMD $470 (-6.9%) | TSM $380 (-6.4%) '
+         '| MU $800 ($3,418 only, -9.6%) | NVDA $180 (-12.0%) | PLTR $150 (-18.5%). If a line fills, fund it by '
+         "selling SGOV the session before, keeping the $50,000 crash reserve. NO ORDER on this week's results of "
+         'holdings (AAPL, PLTR 2 Nov; AMD, ANET 3 Nov) - only the lines above can trigger a buy.',
+ 'pxNote': '30 Oct closes',
+ 'rows': [{'bkk': 'Sun 1 Nov',
            'cond': 'US clocks go back: from Mon 2 Nov the market runs 21:30-04:00 Bangkok.',
            'd': '2026-11-01',
-           'lim': None,
            't': 'CASH',
            'tac': 'Nothing to do.'},
-          {'a': None,
-           'amt': None,
-           'bkk': 'Tue 3 Nov morning (results)',
-           'cap': None,
-           'cond': 'December-quarter guide. Do not pay up.',
+          {'bkk': 'Tue 3 Nov ~05:00 (results)',
+           'cond': 'December-quarter guide and iPhone Duo. ~38x forward earnings - do not pay up.',
            'd': '2026-11-02',
-           'lim': None,
            't': 'AAPL',
            'tac': 'No order - budget full.'},
-          {'a': None,
-           'amt': None,
-           'bkk': 'Thu 5 Nov',
-           'cap': None,
+          {'bkk': 'Tue 3 Nov morning (results)',
+           'cond': 'US commercial growth and margin; P/E ~97 means a 15-20% swing is possible.',
+           'd': '2026-11-02',
+           't': 'PLTR',
+           'tac': 'No order on the print - line $150 only.'},
+          {'bkk': 'Wed 4 Nov ~05:00 (results)',
+           'cond': 'Data-centre GPU revenue and Q4 guide; PC weakness after Intel is the risk.',
+           'd': '2026-11-03',
+           't': 'AMD',
+           'tac': 'No order on the print - line $470 only.'},
+          {'bkk': 'Wed 4 Nov morning (results)',
+           'cond': 'AI networking revenue and the 2027 outlook - feeds 10 Dec.',
+           'd': '2026-11-03',
+           't': 'ANET',
+           'tac': 'No order - budget full.'},
+          {'bkk': 'Thu 5 Nov evening (after 22:00)',
            'cond': 'All four: revenue >= $2.08bn, adj. EBITDA margin >= 80%, Q4 guide not below consensus, no new '
-                   'inquiry. Date to confirm.',
+                   'inquiry. Results Wed 4 Nov after the close (confirmed).',
            'd': '2026-11-04',
-           'lim': None,
            't': 'APP',
-           'tac': 'If PASS: Day LIMIT at the 4 Nov close, cap +1%, not in the first 30 min.'},
-          {'a': None,
-           'amt': None,
-           'bkk': 'Fri 6 Nov morning (results)',
-           'cap': None,
-           'cond': 'Second public quarter and a large lock-up release.',
+           'tac': 'If PASS: Day LIMIT at the 4 Nov close, cap +1%. Do not chase a gap up.'},
+          {'bkk': 'When terms are announced',
+           'cond': 'Lumentum deal: premium, cash vs shares, year-2 EPS effect, China approval. We hold both sides.',
            'd': '2026-11-05',
-           'lim': None,
+           't': 'MRVL',
+           'tac': 'No order - score the deal first.'},
+          {'bkk': 'Fri 6 Nov morning (results, est.)',
+           'cond': 'Second public quarter and the large lock-up release; loss-making, so the rate rule applies.',
+           'd': '2026-11-05',
            't': 'SPCX',
-           'tac': 'No order - AVOID.'},
-          {'a': None,
-           'amt': None,
-           'bkk': 'Tue 10 Nov morning (results)',
-           'cap': None,
-           'cond': 'Loss-making: no new money unless the 10-year is below 5% on 10 Dec.',
+           'tac': 'No order - avoid.'},
+          {'bkk': 'Tue 10 Nov morning (results, est.)',
+           'cond': 'Neutron progress and Iridium financing terms.',
            'd': '2026-11-09',
-           'lim': None,
            't': 'RKLB',
-           'tac': 'No order - over budget; rate rule.'},
-          {'a': None,
-           'amt': None,
-           'bkk': 'Tue 10 Nov',
-           'cap': None,
+           'tac': 'No order - capped at cost; rate rule.'},
+          {'a': 'WATCH',
+           'bkk': 'Mon 9 Nov',
+           'cond': 'First SGOV dividend (paid ~6 Nov): $239 = no US tax withheld, $203 = 15%, $167 = 30%. Send the '
+                   'POEMS line.',
+           'd': '2026-11-09',
+           't': 'SGOV',
+           'tac': 'No order - a check.'},
+          {'bkk': 'Tue 10 Nov',
            'cond': "China's rare-earth export rule may return unless extended.",
            'd': '2026-11-10',
-           'lim': None,
            't': 'MP',
            'tac': 'No order - not funded.'},
-          {'a': None,
-           'amt': None,
-           'bkk': 'Tue 10 Nov',
-           'cap': None,
+          {'bkk': 'Tue 10 Nov',
            'cond': 'October monthly revenue - a free monthly read.',
            'd': '2026-11-10',
-           'lim': None,
            't': 'TSM',
            'tac': 'No order - the $380 line stands.'},
-          {'a': None,
-           'amt': None,
-           'bkk': 'Tue 10 Nov',
-           'cap': None,
-           'cond': 'Rung 2 of 2.',
+          {'bkk': 'Tue 10 Nov evening (after 22:00)',
+           'cond': 'Firm rung 2 of 2 - no test.',
            'd': '2026-11-10',
-           'lim': None,
            't': 'V',
            'tac': 'Day LIMIT at the 9 Nov close, cap +1%.'},
-          {'a': None,
-           'amt': None,
-           'bkk': 'Tue 10 Nov',
-           'cap': None,
-           'cond': 'Q3 test approved 3 Oct (results early Nov).',
+          {'bkk': 'Tue 10 Nov evening (after 22:00)',
+           'cond': 'Results Fri 6 Nov (confirmed). PASS = adj. EBITDA growth >= 20% AND full-year guidance held.',
            'd': '2026-11-10',
-           'lim': None,
            't': 'VST',
            'tac': 'If PASS: Day LIMIT at the 9 Nov close, cap +1%.'},
-          {'a': 'WATCH',
-           'amt': None,
-           'bkk': 'Mon 9 Nov',
-           'cap': None,
-           'cond': 'First SGOV dividend (paid ~6 Nov): $239 = no US tax withheld, $203 = 15%, $167 = 30%.',
-           'd': '2026-11-09',
-           'lim': None,
-           't': 'SGOV',
-           'tac': 'No order - a check.'}],
+          {'bkk': 'Wed 11 Nov evening (after 22:00)',
+           'cond': 'Rung 3 of 3 - completes the $15,000 budget.',
+           'd': '2026-11-11',
+           't': 'CAT',
+           'tac': 'Day LIMIT at the 10 Nov close, cap +1%.'}],
  'rules': ['LIMIT orders only - never market orders.',
            'Never more than +1% above the reference close.',
            'Commission 0.214%, minimum $8.56 - share counts already allow for it.',
            'Send the POEMS confirmation the same day; Claude books the fill.'],
- 'title': 'Buy/Sell plan 26 Oct - 10 Nov 2026',
- 'to': '2026-11-10'}
+ 'title': 'Buy/Sell plan 1 - 15 Nov 2026',
+ 'to': '2026-11-15'}
 
 METRICS3 = M3  # alias: per-ticker pfcf / ev (EV/EBITDA) / de (Debt/Equity)
 
