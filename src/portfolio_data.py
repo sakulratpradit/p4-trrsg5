@@ -3,10 +3,11 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Nov 2, 2026 - Earnings rows added for three more holdings this week (Earnings Whispers calendar): ETN Tue 3 Nov '
- 'before the open, ALAB Tue 3 Nov after the close, LITE Thu 5 Nov after the close. All WATCH - no order. || PREVIOUS '
- "ENTRY: Nov 1, 2026 - SCHEDULE CLEANED at Salee's instruction: 103 live rows kept (Nov 2026 onward + standing rules; "
- 'stale FN, LHX and 19 Nov GOOGL notes also removed), 139 history rows archived to '
+ASOF = ('Nov 2, 2026 - Macro WATCH rows added: US midterm elections (Tue 3 Nov) and October jobs report (Fri 6 Nov, 20:30 '
+ 'Bangkok). No order. || PREVIOUS ENTRY: Nov 2, 2026 - Earnings rows added for three more holdings this week (Earnings '
+ 'Whispers calendar): ETN Tue 3 Nov before the open, ALAB Tue 3 Nov after the close, LITE Thu 5 Nov after the close. '
+ "All WATCH - no order. || PREVIOUS ENTRY: Nov 1, 2026 - SCHEDULE CLEANED at Salee's instruction: 103 live rows kept "
+ '(Nov 2026 onward + standing rules; stale FN, LHX and 19 Nov GOOGL notes also removed), 139 history rows archived to '
  'src/schedule_archive_2026-11-01.json. BUY/SELL PLAN rolled to 1-15 Nov: firm V $2,093 (10 Nov) and CAT $5,000 (11 '
  'Nov); decide APP $9,000 (5 Nov) and VST $3,433 (10 Nov); APP and VST results dates confirmed. || PREVIOUS ENTRY: Nov '
  "1, 2026 - Earnings rows added for this week's holdings: PLTR Mon 2 Nov, AMD and ANET Tue 3 Nov (all after the close, "
@@ -5566,6 +5567,17 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
             't': 'ETN',
             'w': 'Eaton Q3 2026 results - Tue 3 Nov BEFORE the open (Earnings Whispers week of 2 Nov) = Tue 3 Nov '
                  '~18:30 Bangkok. Held 26 sh, cost $10,881.31, budget $11,000 (room $119 - effectively full).'},
+           {'a': 'WATCH',
+            'amt': 0,
+            'c': 'confirmed',
+            'cond': 'No order on the result. Read: which party controls Congress - matters for tariffs, chip export '
+                    'rules, energy/nuclear policy and the 2027 budget. A volatile session is likely; standing price '
+                    'lines still apply only on a CLOSE.',
+            'd': '2026-11-03',
+            'dl': 'US midterm elections',
+            'k': 'macro',
+            't': 'MACRO',
+            'w': 'US midterm elections - Tue 3 Nov (market open as normal). Results arrive during Wed 4 Nov Bangkok.'},
            {'a': 'DECIDE',
             'amt': 9000,
             'c': 'confirmed',
@@ -5640,6 +5652,16 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
             'k': 'earnings',
             't': 'SPCX',
             'w': 'Q3 2026 results - the second public quarter AND the trigger for the largest lock-up release'},
+           {'a': 'WATCH',
+            'amt': 0,
+            'c': 'confirmed',
+            'cond': 'Feeds the December Fed decision (hike odds ~83-85% after the 3.6% PCE). Strong jobs = higher hike '
+                    'odds = the rate rule stays on. Same day as Vistra results.',
+            'd': '2026-11-06',
+            'dl': 'US October jobs report (nonfarm payrolls)',
+            'k': 'macro',
+            't': 'MACRO',
+            'w': 'US October jobs report - Fri 6 Nov 8:30 am ET = 20:30 Bangkok, before the US open.'},
            {'a': 'WATCH',
             'amt': 0,
             'c': 'estimated',
@@ -10017,6 +10039,11 @@ BUYPLAN = {'from': '2026-11-01',
            'd': '2026-11-03',
            't': 'ALAB',
            'tac': 'No order - budget = cost.'},
+          {'bkk': 'Wed 4 Nov (results)',
+           'cond': 'US midterm elections - market open; expect a volatile session.',
+           'd': '2026-11-03',
+           't': 'MACRO',
+           'tac': 'No order.'},
           {'bkk': 'Thu 5 Nov evening (after 22:00)',
            'cond': 'All four: revenue >= $2.08bn, adj. EBITDA margin >= 80%, Q4 guide not below consensus, no new '
                    'inquiry. Results Wed 4 Nov after the close (confirmed).',
@@ -10037,6 +10064,11 @@ BUYPLAN = {'from': '2026-11-01',
            'cond': 'Read with the Marvell deal terms; watch GAAP vs adjusted EPS.',
            'd': '2026-11-05',
            't': 'LITE',
+           'tac': 'No order.'},
+          {'bkk': 'Fri 6 Nov 20:30',
+           'cond': 'October jobs report - feeds the December Fed hike odds.',
+           'd': '2026-11-06',
+           't': 'MACRO',
            'tac': 'No order.'},
           {'bkk': 'Tue 10 Nov morning (results, est.)',
            'cond': 'Neutron progress and Iridium financing terms.',
