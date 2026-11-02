@@ -3,59 +3,61 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ("Nov 1, 2026 - SCHEDULE CLEANED at Salee's instruction: 103 live rows kept (Nov 2026 onward + standing rules; stale "
- 'FN, LHX and 19 Nov GOOGL notes also removed), 139 history rows archived to src/schedule_archive_2026-11-01.json. '
- 'BUY/SELL PLAN rolled to 1-15 Nov: firm V $2,093 (10 Nov) and CAT $5,000 (11 Nov); decide APP $9,000 (5 Nov) and VST '
- '$3,433 (10 Nov); APP and VST results dates confirmed. || PREVIOUS ENTRY: Nov 1, 2026 - Earnings rows added for this '
- "week's holdings: PLTR Mon 2 Nov, AMD and ANET Tue 3 Nov (all after the close, company-confirmed); AAPL 2 Nov now "
- 'confirmed by Apple IR. All WATCH - no order on the prints; buy routes stay the standing lines (PLTR $150, AMD $470). '
- '|| PREVIOUS ENTRY: Nov 1, 2026 - META 10 Dec row: S&P outlook cut to negative (AA- affirmed, 30 Oct; FOCF -$71bn '
- 'forecast for 2027, leverage 1.1x vs 1.0x threshold) recorded. No price, budget or order changed. || PREVIOUS ENTRY: '
- 'Oct 31, 2026 09:50 Bangkok - ALL 63 PRICES AT THE FRI 30 OCT CLOSE (the 00:30 UTC price job did not run - scheduled '
- "jobs on claude-fable-5 are failing on the usage limit). 36 HOLDINGS from Salee's POEMS positions screen 09:36 SGT: "
- 'all 36 lines + SGOV match quantity and cost to the cent incl. the 30 Oct CAT fill (cost 798,074.91; MV 843,570.71; '
- 'CAT commission estimate 9.49 confirmed). 27 WATCH NAMES from marketbeat 10/30 4:00 PM closing headers / fool.com '
- "'last close 2026-10-30' / massive.com / financialcontent, each cross-checked against the prior close or a second "
- 'source. SPY 755.72 (-1.77%), QQQ 690.49 (-3.47%). Semiconductor sell-off day (Intel -29% on a weak Q4 guide; SOX '
- 'about -7 to -9%): 6%+ moves verified - holdings AMD -10.9%, MRVL -10.0%, ALAB -10.9%, CRDO -8.7%, LITE -8.6%, ANET '
- '-8.3%, AMAT -7.5%, TER -7.4%, RKLB -7.4%, ASML -6.6%, AVAV -6.5%, PLTR -6.3%, LRCX -6.0%, ETN -6.0%; watch SNDK '
- '-13.5%, DDOG -11.5%, TSEM -11.4%, COHR -11.2%, APP -10.4%, ARM -10.0%, NET -9.5%, BE -8.6%, STX -8.0%, CIEN -8.0%, '
- 'STRL -7.4%, HOOD -7.2%, SPCX -6.4%, ORCL -6.3%, FN -6.3%. Ratios rescaled with price. HISTORY 10-30 row added '
- '(stocks MV 773,664.08, unrealised +45,506.23 / +6.25%). Note: 8 NYSE watch closes of 29 Oct (COHR FN LHX ORCL NET '
- "PWR GE CIEN) were 3:59 PM prints, cents off the official close - superseded by today's verified closes. AMZN/CAT/LHX "
- 'Q3 fundamentals still pending (earnings job failed). || PREVIOUS ENTRY: Oct 30, 2026 21:45 Bangkok - CAT BOOKED: 7 '
- 'sh at 633.5642 = 4,444.44 (rung 2 of 3; Power Generation test passed). Position 13 sh, cost 9,332.99; cash '
- '20,530.86. October MONTHLY and investedEver updated with the fill. || PREVIOUS ENTRY: Oct 30, 2026 11:10 Bangkok - '
- 'POEMS POSITIONS RECONCILED (screen 10:56 SGT, after the 29 Oct close): 36 lines + SGOV match to the cent; market '
- 'value 874,941.02 ties. Nine NYSE marks set from POEMS (APH 82.08, ANET 184.22, CAT 647.39, ETN 393.72, TSM 431.81, '
- "VRT 245.92, V 410.54, VST 140.95; SGOV 100.71) - all within 0.2% of the job's closes; ratios rescaled. No fill "
- 'tonight yet: CAT 7 sh LIMIT 647.39 (cap 653.86) is the only order. || PREVIOUS ENTRY: Oct 30, 2026 08:40 Bangkok - '
- 'AMZN Q3 read recorded (AWS +39%, backlog $578bn, TTM FCF -$42.4bn, no order - over budget); CAT order set: 7 sh Day '
- 'LIMIT 647.22, cap 653.69. || PREVIOUS ENTRY: Oct 30, 2026 (00:30 UTC job) - DAILY PRICE REFRESH: all 63 prices set '
- 'to the Thu 2026-10-29 close. Primary source this run: marketbeat.com dated daily-price tables / closing-price '
- "headers (pages updated 10/29, 'Closing price 4:00 PM Eastern' stamps), every ticker's prior close cross-checked "
- 'against the stored board value; stockanalysis.com and Google Finance caches still frozen pre-close (5th night); GEV '
- 'from the fool.com quote page previous-close field (887.85; method validated to the cent on GOOGL and MSFT this run). '
- 'Big earnings-reaction day: 6%-movers verified + allowed: GOOGL 283.82 -12.64% (Q3 miss/FCF, fool prev-close field '
- 'exact + news), FTNT 139.10 -20.09% (service-revenue forecast cut; 247wallst sidebar exact), MRVL 218.34 -13.24% '
- '(Lumentum deal talks; fool widget -13.24% exact), CAT 647.22 -9.49% (sales outlook; 247wallst sidebar 647.39), LHX '
- '279.12 +7.10% (Q3 beat + raised FY guide; investing.com 278.65 +6.92%), AVAV 134.88 +7.09% (gurufocus +7.1%). SPY '
- '769.36 and QQQ 715.34 (10-29, marketbeat closing headers; prev closes match board); spyHigh unchanged 779.09. '
- 'risk_series spy 10-29 added; ust10 10-29 skipped (ycharts H15 only through 10-27; yahoo close bar printed 4.99 for '
- 'reference). HISTORY 10-29 row added (first row including the 29 Oct MSFT buy, 126 sh). Note: TSEM 187.92 written '
- 'from a dated 10/29 marketbeat header whose implied 10/28 prev close (193.52) could not be cross-checked - flagged '
- 'for the next run. Every number from a tool call this session. || PREVIOUS ENTRY: Oct 29, 2026 23:00 Bangkok - GOOGL '
- '10 Dec test (1) CLARIFIED: Q3 ATM share sales of $12.4bn were draws under the $40bn ATM announced in the June '
- '$84.75bn raise, so they do not fail the test; a new or upsized programme would. No order, budget or price changed. '
- '|| PREVIOUS ENTRY: Oct 29, 2026 22:30 Bangkok - MSFT BOOKED 9 sh at 525.4031 = 4,738.75; cash 24,975.30. FULL POEMS '
- 'RECONCILIATION: 36 lines + SGOV match to the cent; cash corrected by 0.10 (CRWD 19 Oct fee true-up); SGOV sale trued '
- 'up to 10,047.25 (realised -27.25); October MONTHLY rebuilt (6 buys + 1 sale had been missing); October dividends '
- '251.31 itemised. Prices: 54 names at the 28 Oct close, 9 at 27 Oct - the 29 Oct close is written by the next morning '
- 'run. || PREVIOUS ENTRY: Oct 29, 2026 (03:30 UTC job) - DAILY PRICE REFRESH, 2nd pass: 11 more of the 15 stragglers '
- 'resolved. Wed 2026-10-28 close written for ETN 392.88, GEV 878.03, PWR 606.89, COHR 239.59, SPCX 145.23, CIEN 363.21 '
- '(54 of 63 now at 10-28); verified Tue 10-27 close written for ARM 226.60, GE 297.66, MPWR 1211.89, LHX 259.40, TSEM '
- '189.08 (marketbeat prev-close fields / heygotrade dated closes; every prev-close cross-checked against the stored '
- 'prior close to the cent). Sources: 247wallst Oct-28 article sidebars validated to the cent on '
+ASOF = ('Nov 2, 2026 - Earnings rows added for three more holdings this week (Earnings Whispers calendar): ETN Tue 3 Nov '
+ 'before the open, ALAB Tue 3 Nov after the close, LITE Thu 5 Nov after the close. All WATCH - no order. || PREVIOUS '
+ "ENTRY: Nov 1, 2026 - SCHEDULE CLEANED at Salee's instruction: 103 live rows kept (Nov 2026 onward + standing rules; "
+ 'stale FN, LHX and 19 Nov GOOGL notes also removed), 139 history rows archived to '
+ 'src/schedule_archive_2026-11-01.json. BUY/SELL PLAN rolled to 1-15 Nov: firm V $2,093 (10 Nov) and CAT $5,000 (11 '
+ 'Nov); decide APP $9,000 (5 Nov) and VST $3,433 (10 Nov); APP and VST results dates confirmed. || PREVIOUS ENTRY: Nov '
+ "1, 2026 - Earnings rows added for this week's holdings: PLTR Mon 2 Nov, AMD and ANET Tue 3 Nov (all after the close, "
+ 'company-confirmed); AAPL 2 Nov now confirmed by Apple IR. All WATCH - no order on the prints; buy routes stay the '
+ 'standing lines (PLTR $150, AMD $470). || PREVIOUS ENTRY: Nov 1, 2026 - META 10 Dec row: S&P outlook cut to negative '
+ '(AA- affirmed, 30 Oct; FOCF -$71bn forecast for 2027, leverage 1.1x vs 1.0x threshold) recorded. No price, budget or '
+ 'order changed. || PREVIOUS ENTRY: Oct 31, 2026 09:50 Bangkok - ALL 63 PRICES AT THE FRI 30 OCT CLOSE (the 00:30 UTC '
+ "price job did not run - scheduled jobs on claude-fable-5 are failing on the usage limit). 36 HOLDINGS from Salee's "
+ 'POEMS positions screen 09:36 SGT: all 36 lines + SGOV match quantity and cost to the cent incl. the 30 Oct CAT fill '
+ '(cost 798,074.91; MV 843,570.71; CAT commission estimate 9.49 confirmed). 27 WATCH NAMES from marketbeat 10/30 4:00 '
+ "PM closing headers / fool.com 'last close 2026-10-30' / massive.com / financialcontent, each cross-checked against "
+ 'the prior close or a second source. SPY 755.72 (-1.77%), QQQ 690.49 (-3.47%). Semiconductor sell-off day (Intel -29% '
+ 'on a weak Q4 guide; SOX about -7 to -9%): 6%+ moves verified - holdings AMD -10.9%, MRVL -10.0%, ALAB -10.9%, CRDO '
+ '-8.7%, LITE -8.6%, ANET -8.3%, AMAT -7.5%, TER -7.4%, RKLB -7.4%, ASML -6.6%, AVAV -6.5%, PLTR -6.3%, LRCX -6.0%, '
+ 'ETN -6.0%; watch SNDK -13.5%, DDOG -11.5%, TSEM -11.4%, COHR -11.2%, APP -10.4%, ARM -10.0%, NET -9.5%, BE -8.6%, '
+ 'STX -8.0%, CIEN -8.0%, STRL -7.4%, HOOD -7.2%, SPCX -6.4%, ORCL -6.3%, FN -6.3%. Ratios rescaled with price. HISTORY '
+ '10-30 row added (stocks MV 773,664.08, unrealised +45,506.23 / +6.25%). Note: 8 NYSE watch closes of 29 Oct (COHR FN '
+ "LHX ORCL NET PWR GE CIEN) were 3:59 PM prints, cents off the official close - superseded by today's verified closes. "
+ 'AMZN/CAT/LHX Q3 fundamentals still pending (earnings job failed). || PREVIOUS ENTRY: Oct 30, 2026 21:45 Bangkok - '
+ 'CAT BOOKED: 7 sh at 633.5642 = 4,444.44 (rung 2 of 3; Power Generation test passed). Position 13 sh, cost 9,332.99; '
+ 'cash 20,530.86. October MONTHLY and investedEver updated with the fill. || PREVIOUS ENTRY: Oct 30, 2026 11:10 '
+ 'Bangkok - POEMS POSITIONS RECONCILED (screen 10:56 SGT, after the 29 Oct close): 36 lines + SGOV match to the cent; '
+ 'market value 874,941.02 ties. Nine NYSE marks set from POEMS (APH 82.08, ANET 184.22, CAT 647.39, ETN 393.72, TSM '
+ "431.81, VRT 245.92, V 410.54, VST 140.95; SGOV 100.71) - all within 0.2% of the job's closes; ratios rescaled. No "
+ 'fill tonight yet: CAT 7 sh LIMIT 647.39 (cap 653.86) is the only order. || PREVIOUS ENTRY: Oct 30, 2026 08:40 '
+ 'Bangkok - AMZN Q3 read recorded (AWS +39%, backlog $578bn, TTM FCF -$42.4bn, no order - over budget); CAT order set: '
+ '7 sh Day LIMIT 647.22, cap 653.69. || PREVIOUS ENTRY: Oct 30, 2026 (00:30 UTC job) - DAILY PRICE REFRESH: all 63 '
+ 'prices set to the Thu 2026-10-29 close. Primary source this run: marketbeat.com dated daily-price tables / '
+ "closing-price headers (pages updated 10/29, 'Closing price 4:00 PM Eastern' stamps), every ticker's prior close "
+ 'cross-checked against the stored board value; stockanalysis.com and Google Finance caches still frozen pre-close '
+ '(5th night); GEV from the fool.com quote page previous-close field (887.85; method validated to the cent on GOOGL '
+ 'and MSFT this run). Big earnings-reaction day: 6%-movers verified + allowed: GOOGL 283.82 -12.64% (Q3 miss/FCF, fool '
+ 'prev-close field exact + news), FTNT 139.10 -20.09% (service-revenue forecast cut; 247wallst sidebar exact), MRVL '
+ '218.34 -13.24% (Lumentum deal talks; fool widget -13.24% exact), CAT 647.22 -9.49% (sales outlook; 247wallst sidebar '
+ '647.39), LHX 279.12 +7.10% (Q3 beat + raised FY guide; investing.com 278.65 +6.92%), AVAV 134.88 +7.09% (gurufocus '
+ '+7.1%). SPY 769.36 and QQQ 715.34 (10-29, marketbeat closing headers; prev closes match board); spyHigh unchanged '
+ '779.09. risk_series spy 10-29 added; ust10 10-29 skipped (ycharts H15 only through 10-27; yahoo close bar printed '
+ '4.99 for reference). HISTORY 10-29 row added (first row including the 29 Oct MSFT buy, 126 sh). Note: TSEM 187.92 '
+ 'written from a dated 10/29 marketbeat header whose implied 10/28 prev close (193.52) could not be cross-checked - '
+ 'flagged for the next run. Every number from a tool call this session. || PREVIOUS ENTRY: Oct 29, 2026 23:00 Bangkok '
+ '- GOOGL 10 Dec test (1) CLARIFIED: Q3 ATM share sales of $12.4bn were draws under the $40bn ATM announced in the '
+ 'June $84.75bn raise, so they do not fail the test; a new or upsized programme would. No order, budget or price '
+ 'changed. || PREVIOUS ENTRY: Oct 29, 2026 22:30 Bangkok - MSFT BOOKED 9 sh at 525.4031 = 4,738.75; cash 24,975.30. '
+ 'FULL POEMS RECONCILIATION: 36 lines + SGOV match to the cent; cash corrected by 0.10 (CRWD 19 Oct fee true-up); SGOV '
+ 'sale trued up to 10,047.25 (realised -27.25); October MONTHLY rebuilt (6 buys + 1 sale had been missing); October '
+ 'dividends 251.31 itemised. Prices: 54 names at the 28 Oct close, 9 at 27 Oct - the 29 Oct close is written by the '
+ 'next morning run. || PREVIOUS ENTRY: Oct 29, 2026 (03:30 UTC job) - DAILY PRICE REFRESH, 2nd pass: 11 more of the 15 '
+ 'stragglers resolved. Wed 2026-10-28 close written for ETN 392.88, GEV 878.03, PWR 606.89, COHR 239.59, SPCX 145.23, '
+ 'CIEN 363.21 (54 of 63 now at 10-28); verified Tue 10-27 close written for ARM 226.60, GE 297.66, MPWR 1211.89, LHX '
+ '259.40, TSEM 189.08 (marketbeat prev-close fields / heygotrade dated closes; every prev-close cross-checked against '
+ 'the stored prior close to the cent). Sources: 247wallst Oct-28 article sidebars validated to the cent on '
  'MSFT/ORCL/NVDA/MU/GOOGL/VRT; heygotrade dated close pages; stockanalysis/Google Finance/tipranks/marketscreener '
  'caches still frozen pre-close (4th night). 6%-movers vs last build, verified + allowed: PWR +7.6% (sidebar + '
  '247wallst company page, prev 578.8x both), COHR +8.2% (sidebar; prev 235.79 = heygotrade 10-27 close exact), CIEN '
@@ -5521,6 +5523,17 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
                  'Bangkok. Held 40 sh, cost $5,533.09, budget $16,000.'},
            {'a': 'WATCH',
             'amt': 0,
+            'c': 'estimated',
+            'cond': 'NO ORDER - budget = cost. Read: revenue growth and the Q4 guide for PCIe/CXL connectivity; fell '
+                    '10.9% on 30 Oct with the chip sell-off.',
+            'd': '2026-11-03',
+            'dl': 'Astera Labs Q3 2026 results',
+            'k': 'earnings',
+            't': 'ALAB',
+            'w': 'Astera Labs Q3 2026 results - Tue 3 Nov after the close (Earnings Whispers) = early Wed 4 Nov '
+                 'Bangkok. Held 15 sh, budget = cost $3,805.47 (on hold since Sep).'},
+           {'a': 'WATCH',
+            'amt': 0,
             'c': 'confirmed',
             'cond': 'NO ORDER ON THE PRINT. Buy route is the standing line: Day LIMIT at or below $470 (close 30 Oct '
                     "$504.80, 7.4% above, after -10.9% on Intel's warning). Read: data-centre GPU revenue and the Q4 "
@@ -5542,6 +5555,17 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
             't': 'ANET',
             'w': 'Arista Q3 2026 results - Tue 3 Nov after the close, call 4:30 pm ET (Business Wire) = early Wed 4 '
                  'Nov Bangkok. Held 98 sh, budget = cost $15,585.57 (full).'},
+           {'a': 'WATCH',
+            'amt': 0,
+            'c': 'estimated',
+            'cond': 'NO ORDER - budget full. Read: data-centre electrical orders and backlog, and whether the 2026 '
+                    'guide is raised. Feeds the 10 Dec power-group review.',
+            'd': '2026-11-03',
+            'dl': 'Eaton Q3 2026 results',
+            'k': 'earnings',
+            't': 'ETN',
+            'w': 'Eaton Q3 2026 results - Tue 3 Nov BEFORE the open (Earnings Whispers week of 2 Nov) = Tue 3 Nov '
+                 '~18:30 Bangkok. Held 26 sh, cost $10,881.31, budget $11,000 (room $119 - effectively full).'},
            {'a': 'DECIDE',
             'amt': 9000,
             'c': 'confirmed',
@@ -5570,6 +5594,18 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
                  'of the $18,000 budget. If PASS: Day LIMIT at the results-day close, cap +1%, next session, not in '
                  'the first 30 minutes. Half 2 ($9,000) not before the Q4 results (Feb 2027), and only if revenue '
                  'growth re-accelerates.'},
+           {'a': 'WATCH',
+            'amt': 0,
+            'c': 'estimated',
+            'cond': 'NO ORDER. Read together with the MRVL row: any Marvell deal terms may come with or before the '
+                    'print. Check GAAP vs adjusted EPS - the August quarter carried a $7.8bn non-cash debt-exchange '
+                    'charge.',
+            'd': '2026-11-05',
+            'dl': 'Lumentum FQ1 2027 results',
+            'k': 'earnings',
+            't': 'LITE',
+            'w': 'Lumentum fiscal Q1 2027 results - Thu 5 Nov after the close (Earnings Whispers) = early Fri 6 Nov '
+                 'Bangkok. Held 11.5 sh, budget = cost $9,372.74.'},
            {'a': 'WATCH',
             'amt': 0,
             'c': 'estimated',
@@ -9943,7 +9979,8 @@ BUYPLAN = {'from': '2026-11-01',
          'or below the line; distance from the 30 Oct close): AVGO $310 (-4.9%) | AMD $470 (-6.9%) | TSM $380 (-6.4%) '
          '| MU $800 ($3,418 only, -9.6%) | NVDA $180 (-12.0%) | PLTR $150 (-18.5%). If a line fills, fund it by '
          "selling SGOV the session before, keeping the $50,000 crash reserve. NO ORDER on this week's results of "
-         'holdings (AAPL, PLTR 2 Nov; AMD, ANET 3 Nov) - only the lines above can trigger a buy.',
+         'holdings (AAPL, PLTR 2 Nov; ETN, AMD, ANET, ALAB 3 Nov; LITE 5 Nov) - only the lines above can trigger a '
+         'buy.',
  'pxNote': '30 Oct closes',
  'rows': [{'bkk': 'Sun 1 Nov',
            'cond': 'US clocks go back: from Mon 2 Nov the market runs 21:30-04:00 Bangkok.',
@@ -9970,6 +10007,16 @@ BUYPLAN = {'from': '2026-11-01',
            'd': '2026-11-03',
            't': 'ANET',
            'tac': 'No order - budget full.'},
+          {'bkk': 'Tue 3 Nov ~18:30 (results)',
+           'cond': 'Data-centre electrical orders, backlog and guide.',
+           'd': '2026-11-03',
+           't': 'ETN',
+           'tac': 'No order - budget full.'},
+          {'bkk': 'Wed 4 Nov morning (results)',
+           'cond': 'Revenue growth and Q4 guide.',
+           'd': '2026-11-03',
+           't': 'ALAB',
+           'tac': 'No order - budget = cost.'},
           {'bkk': 'Thu 5 Nov evening (after 22:00)',
            'cond': 'All four: revenue >= $2.08bn, adj. EBITDA margin >= 80%, Q4 guide not below consensus, no new '
                    'inquiry. Results Wed 4 Nov after the close (confirmed).',
@@ -9986,6 +10033,11 @@ BUYPLAN = {'from': '2026-11-01',
            'd': '2026-11-05',
            't': 'SPCX',
            'tac': 'No order - avoid.'},
+          {'bkk': 'Fri 6 Nov morning (results)',
+           'cond': 'Read with the Marvell deal terms; watch GAAP vs adjusted EPS.',
+           'd': '2026-11-05',
+           't': 'LITE',
+           'tac': 'No order.'},
           {'bkk': 'Tue 10 Nov morning (results, est.)',
            'cond': 'Neutron progress and Iridium financing terms.',
            'd': '2026-11-09',
