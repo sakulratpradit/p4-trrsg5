@@ -1,14 +1,15 @@
 # P4 price refresh — status
 
-- **Run time:** 2026-10-30 03:33–03:40 UTC (scheduled 03:30 pass)
-- **Trading date recorded:** 2026-10-29 — already complete before this pass started
-- **Result:** NOT PUSHED by this pass — **NO-OP by design.** First check met: all 63 of 63 tickers already had pxd = 2026-10-29 (the most recent completed US trading day), so the 00:30 pass succeeded and this pass stopped per the job rules. No prices, benchmarks, HISTORY or risk_series rows were touched.
-- **Commit:** none from this pass. Board state verified on remote main at 2111089 (30 Oct POEMS reconciliation, interactive session 11:10 Bangkok — 36 lines + SGOV tie to the cent, MV 874,941.02; nine NYSE marks set from POEMS). The 00:30 refresh itself pushed as 1aaf719; its full report is in this file's git history (commit d4b3acb).
-- **Prices changed:** 0 (00:30 pass changed 63 of 63 plus SPY/QQQ).
-- **Unresolved tickers:** none.
-- **Blockers:** none this pass.
-- **Flags carried forward for the next run (from the 00:30 report, still open):**
-  - risk_series **ust10 2026-10-29 still missing** (ycharts H15 ran only through 10-27; yahoo close bar printed 4.9890 for reference — confirm from a named source).
-  - TSEM 187.92 (10/29) accepted from a marketbeat header whose implied 10/28 prev close (193.52) was never cross-checked; marketbeat TSEM data looks flaky — re-verify when caches thaw.
-  - ARM 228.77 accepted with unverifiable prev close; ARM traded −7.76% AH on 10/29 — Friday's session will trip the 6% gate.
-  - AMZN −7.35% AH and INTC −17% AH on 10/29 earnings reactions — expect several 6% trips in the Fri 10-31 (for the 10-30 close) runs.
+- **Run time:** 2026-11-03 00:33–01:25 UTC (scheduled 00:30 pass; container restarted once mid-run, resumed cleanly)
+- **Trading date recorded:** 2026-11-02 (Monday)
+- **Result:** **PUSHED** — all 63 of 63 prices set to the Mon 2026-11-02 close, plus SPY/QQQ.
+- **Commit:** 7b927b3 (5a50305..7b927b3 on main). Sanity gate PASS (12 movers ≥6% individually verified and allowed). Local Playwright render check on the built page: 881 table rows, ZERO PAGE ERRORS. Live-page fetch could not be checked from this sandbox (Pages API blocked by proxy; public URL not fetchable under provenance rules) — the push itself succeeded and Pages deploys from main.
+- **Prices changed:** 63 of 63 (+ SPY 752.10, QQQ 681.09, both 2026-11-02; spyHigh unchanged 779.09).
+- **Sources:** stockanalysis.com and Google Finance caches again frozen pre-close (quote + history both ended at Oct 30), so primary was marketbeat.com "Closing price 4:00 PM Eastern" headers last-updated 11/2/2026 — every ticker's implied previous close ties to the stored 30 Oct close to the cent. 14 NYSE names were written from the financialcontent.com "Official Closing Price 7:00 PM EST, Nov 2" print instead of marketbeat's 3:59 PM consolidated print (TSM 398.63, ANET 164.14, APH 79.84, GLW 123.20, FN 314.70, LHX 278.96, ORCL 119.22, V 425.51, NET 265.17, ETN 366.07, BE 196.25, SE 75.48, GE 315.78, CIEN 284.34; largest gaps vs marketbeat: ETN +0.89, FN +0.84, ORCL +0.43, GLW -0.31, CIEN +0.25).
+- **Quote page vs history table disagreements:** none usable — both stockanalysis pages were stale for every ticker sampled; the whole board came from the fallback sources above. Marketbeat vs financialcontent official-close disagreements are the 14 NYSE names listed, official close taken each time.
+- **Largest move:** LITE -18.59% (684.40; Marvell-Lumentum all-stock deal arb — MRVL itself -12.72% at 171.41, both confirmed on ycharts "Nov 02, 16:00" stamps; 4.5×MRVL implies ~771 vs LITE 684, a wide spread for a 1H-2028 close).
+- **6%+ movers, all verified on a second source and passed with --allow:** LITE -18.59%, MRVL -12.72%, CIEN -11.34% (financialcontent official, 2 mirrors), ALAB -11.22% (financialcontent exact), ORCL -8.76% (financialcontent official 119.22; gurufocus headline -8.8%; marketbeat's 118.79/-9.09% rejected as a 3:59 print), DDOG -8.15% (financialcontent exact), STX -7.88% (ycharts), AMD -7.52% (ycharts), CRDO -7.27% (ycharts), FTNT -7.25% (ycharts within $0.02), TSEM -6.70% (financialcontent exact), SNDK -6.59% (marketscreener exact, dated 2026-11-02).
+- **Unresolved tickers:** none. Caveat: 7 NYSE names (COHR, BWXT, GEV, VRT, PWR, VST, CAT) are at the marketbeat 3:59 PM print because every financialcontent official-close mirror for them was stale or showed only after-hours "Last Trade" lines — they may sit cents off the auction close (the FC after-hours prints differed by $0.10–$0.84). PLTR reported after the close; its after-hours -2.84% is NOT on the board (close 178.34).
+- **Also updated:** pxd=2026-11-02 on all 63; mcapB/pe/ps/fpe/peg/M3-pfcf rescaled with price; V new 52-week high 425.51; APP lo52 extended to 228.85; HISTORY 2026-11-02 row (36 positions, MV 754,096.50, unrealised +25,938.65 / +3.56%, cash 20,530.86); BENCH spy/qqq; risk_series spy 11-02 = 752.1.
+- **Skipped:** risk_series ust10 for 11-02 — mortgagenewsdaily's newest dated row is mislabeled "Nov 01 2026" (close 4.931) and its header 4.895 carries no date; ycharts 10-yr indicator ends Oct 30 (4.94). Left for the next run per the gap rule.
+- **Blockers:** none fatal. GitHub Pages build-status API is blocked by the sandbox proxy ("Access to this GitHub API path is not permitted"), so live-render verification was done locally via src/check_dashboard.js instead.
