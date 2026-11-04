@@ -16,6 +16,31 @@ sys.path.insert(0, HERE)
 import portfolio_data as P
 from gen_stock_notes import FOLLOW_UPS, week_label
 import method_note
+import re as _re
+
+
+def agenda_html():
+    """Markdown-ish agenda file -> HTML card for the Notes tab chip."""
+    path=os.path.join(HERE,'agenda_dec10.md')
+    if not os.path.exists(path): return ''
+    out=['<div class="card method">']; inlist=False
+    for line in open(path,encoding='utf-8'):
+        line=line.rstrip('\n')
+        t=html.escape(line)
+        t=_re.sub(r'\*\*(.+?)\*\*',r'<b>\1</b>',t); t=_re.sub(r'(?<!\*)\*(?!\*)(.+?)\*',r'<i>\1</i>',t)
+        if line.startswith('# '): out.append('<h2>'+t[2:]+'</h2>'); continue
+        if line.startswith('## '):
+            if inlist: out.append('</ul>'); inlist=False
+            out.append('<h3>'+t[3:]+'</h3>'); continue
+        m=_re.match(r'^(\d+)\. (.*)',line)
+        if m or line.startswith('- '):
+            if not inlist: out.append('<ul>'); inlist=True
+            body=t[m.end(1)+2:] if m else t[2:]
+            out.append('<li>'+(('<b>'+m.group(1)+'.</b> ') if m else '')+body+'</li>'); continue
+        if inlist: out.append('</ul>'); inlist=False
+        if line.strip(): out.append('<p>'+t+'</p>')
+    if inlist: out.append('</ul>')
+    out.append('</div>'); return ''.join(out)
 
 def _ov(v):
     """Company overview record; tolerates the older plain-string format."""
@@ -81,7 +106,7 @@ def build(out_path):
         })
     fups = [{'t': f[0], 'type': f[1], 'text': f[2], 'raised': f[3]} for f in FOLLOW_UPS]
     today = datetime.date.today().strftime('%b %d, %Y')
-    data = json.dumps({'stocks': stocks, 'fups': fups, 'gen': today, 'method': method_note.build(P)},
+    data = json.dumps({'stocks': stocks, 'fups': fups, 'gen': today, 'method': method_note.build(P), 'agenda': agenda_html()},
                       ensure_ascii=False).replace('</', '<\\/')
 
     page = """<!doctype html>
@@ -156,6 +181,7 @@ footer{color:var(--mut);font-size:12px;text-align:center;padding:20px}
     <div class="chip warn" data-f="warn">⚠ Red flags</div>
     <div class="chip" data-f="fup">Open follow-ups</div>
     <div class="chip" data-f="method">How we rank stocks</div>
+    <div class="chip" data-f="agenda">10 Dec agenda</div>
   </div>
   <button id="back">‹ Back to all stocks</button>
   <div id="out"></div>
@@ -210,6 +236,7 @@ function render(){
   const term = q.value.trim().toUpperCase();
   back.style.display='none';
   if(filter==='method'){ out.innerHTML = DATA.method; return; }
+  if(filter==='agenda'){ out.innerHTML = DATA.agenda; return; }
   if(filter==='fup'){
     out.innerHTML = DATA.fups.map(f => '<div class="fup"><b>'+esc(f.t)+'</b> · '+esc(f.type)+' · raised '+esc(f.raised)+'<br>'+esc(f.text)+'</div>').join('');
     return;
