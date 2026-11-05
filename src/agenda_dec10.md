@@ -9,6 +9,7 @@ Answer given to Salee: no rule change now, few expected. Our rules rest on compa
 3. **FSLR budget** — revisit the zero budget only if the rate rule relaxes (loss-making on free cash flow).
 4. **Chip export rules** — any new China controls after NVDA's 18 Nov results (NVDA, AMD).
 5. **Concentration** — ~77% of holdings ride one AI capex cycle; 37% in chips. Now with the policy angle.
+6. **State data-centre politics (added 5 Nov)** — Democratic governors-elect in Texas (Hinojosa), Ohio and Georgia campaigned on data-centre moratoria or subsidy cuts. Texas is ~30% of planned US capacity by 2028 (Bloom Energy). Abbott had already paused new grid connections in Aug. Power group (VST, CEG, GEV, ETN, VRT, CAT — 12% of cost) fell 9-14% on 4 Nov. Check by 10 Dec: has any moratorium actually been enacted (most need legislatures, which meet from Jan 2027)? Have hyperscalers cut 2027 capex guides? VST's 6 Nov results and 10 Nov DECIDE are the first test. Do not react to campaign promises; react to enacted rules and to capex guidance.
 Also noted: tariffs a mild positive for AAPL/TSM/CAT (no rule change); defence-budget trims irrelevant (RKLB capped at cost, LHX off the board).
 
 ## B. Positions to decide
