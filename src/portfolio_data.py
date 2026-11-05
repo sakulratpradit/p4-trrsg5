@@ -5719,7 +5719,10 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
             'c': 'estimated',
             'cond': 'Deal announced 2 Nov: 4.500 MRVL per LITE share (see the MRVL row). NO ORDER. Read together with '
                     'the MRVL row: any Marvell deal terms may come with or before the print. Check GAAP vs adjusted '
-                    'EPS - the August quarter carried a $7.8bn non-cash debt-exchange charge.',
+                    'EPS - the August quarter carried a $7.8bn non-cash debt-exchange charge. COHR read-across (Q1 '
+                    'FY27, 4 Nov): revenue +50%, DC +85%, but OCF -92.7m, capex 776m, inventory +760m, FCF -868m, '
+                    'borrowed 773m; $20bn 5-yr LTA. Score LITE on the same three lines first - operating cash flow, '
+                    'capex, inventory - then EPS.',
             'd': '2026-11-05',
             'dl': 'Lumentum FQ1 2027 results',
             'k': 'earnings',
