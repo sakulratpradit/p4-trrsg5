@@ -1,0 +1,28 @@
+<div class="card method layers">
+<h2>AI layers - who sells what</h2>
+<p class="sub">One page for seven board names: MRVL, AVGO, ANET, ALAB, LITE, APP, COHR. Think of an AI data centre as a city: the GPUs are the factories; everything else is the roads, power lines and telephone wires that connect them. Six of the seven sell the wiring. One (APP) sells something built on top. Added 5 Nov 2026; companion to Slide #109 "Layers of AI".</p>
+
+<div class="stack">
+  <div class="layer l4"><div class="ln">4 &middot; Applications</div><div class="lb"><b>APP</b> AppLovin - sells ad placements inside mobile games and e-commerce; its AI engine (Axon) picks the ad. Gets paid by advertisers' marketing budgets, not by data-centre capex.</div></div>
+  <div class="layer l3"><div class="ln">3 &middot; Network (rack to rack)</div><div class="lb"><b>ANET</b> Arista - finished Ethernet switches with its own software (EOS). <b>AVGO</b> Broadcom - the Tomahawk switch chips inside those switches.</div></div>
+  <div class="layer l2"><div class="ln">2 &middot; Links (chip to chip, rack to rack)</div><div class="lb"><b>ALAB</b> Astera Labs - retimers and switches that clean up short copper links inside a rack (PCIe, CXL, Scorpio). <b>LITE</b> Lumentum and <b>COHR</b> Coherent - lasers and optical transceivers for links longer than a few metres. <b>MRVL</b> Marvell - the DSP chip inside every transceiver that turns electrical signals into light and back.</div></div>
+  <div class="layer l1"><div class="ln">1 &middot; Compute (custom AI chips)</div><div class="lb"><b>AVGO</b> Broadcom - designs custom AI chips (XPUs) for Google (TPU), Meta and OpenAI. <b>MRVL</b> Marvell - the same for Amazon (Trainium) and Microsoft (Maia). TSMC makes them.</div></div>
+  <div class="layer l0"><div class="ln">Foundation</div><div class="lb">GPUs: <b>NVDA</b>, <b>AMD</b> &middot; Memory: <b>MU</b> &middot; Foundry: <b>TSM</b> &middot; Power and cooling: <b>VRT</b>, <b>ETN</b>, <b>GEV</b>, <b>VST</b></div></div>
+</div>
+
+<h3>Company by company</h3>
+<table>
+<tr><th>Ticker</th><th>What it sells</th><th>Who pays it</th><th>Board status (5 Nov)</th></tr>
+<tr><td><b>AVGO</b></td><td>Custom AI chips for hyperscalers; switch chips; VMware software (cash cow, not AI)</td><td>Google, Meta, OpenAI; switch makers incl. Arista</td><td>Held 88.5 sh; standing line $310</td></tr>
+<tr><td><b>MRVL</b></td><td>Custom AI chips (Amazon, Microsoft); DSP chips inside optical transceivers; buying Lumentum to own the laser too</td><td>Amazon, Microsoft; transceiver makers</td><td>Held 95.5 sh; combined MRVL+LITE budget at 10 Dec</td></tr>
+<tr><td><b>LITE</b></td><td>Laser chips (EML, CPO) and optical transceivers for fibre links between racks</td><td>Transceiver assemblers, hyperscalers, Nvidia</td><td>Held 11.5 sh; being acquired by MRVL (all stock, close 1H 2028)</td></tr>
+<tr><td><b>COHR</b></td><td>Finished optical transceivers and lasers - the other big optics maker</td><td>Hyperscalers, Nvidia systems</td><td>Sold (small loss); one optics name is enough - LITE kept</td></tr>
+<tr><td><b>ALAB</b></td><td>Retimers and fabric switches for short copper links inside a rack</td><td>Nvidia-system builders, hyperscalers</td><td>Held 15 sh; watch Nvidia building the function in</td></tr>
+<tr><td><b>ANET</b></td><td>Finished Ethernet switches + EOS software for GPU clusters</td><td>Meta, Microsoft, other hyperscalers</td><td>Held 98 sh; results WATCH row</td></tr>
+<tr><td><b>APP</b></td><td>AI ad engine (Axon) for mobile games, now e-commerce; 84% EBITDA margin</td><td>Game studios and online retailers (ad budgets)</td><td>Buy order 5 Nov; budget $18,000</td></tr>
+</table>
+
+<h3>The one thing to remember</h3>
+<p><b>AVGO, MRVL, ALAB, LITE and ANET all get paid the same way</b> - a hyperscaler decides to build a cluster. They rise and fall together (power and semis fell 9-14% together on 4 Nov). <b>APP gets paid when an advertiser's budget grows.</b> That is the real diversification in this list, and why APP is not "more semi exposure".</p>
+<p><b>What would hurt each one:</b> AVGO and MRVL - a hyperscaler cuts its custom-chip programme or Nvidia wins it back. LITE and COHR - a pause in optics orders or China export rules. ALAB - Nvidia integrates the retimer. ANET - InfiniBand or white-box switches win. APP - Apple/Google privacy rules, an ad-spending recession, or a short-seller report on its data use.</p>
+</div>

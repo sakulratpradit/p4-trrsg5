@@ -42,6 +42,11 @@ def agenda_html():
     if inlist: out.append('</ul>')
     out.append('</div>'); return ''.join(out)
 
+def layers_html():
+    """Hand-written HTML fragment (ai_layers.html) -> Notes tab chip."""
+    path=os.path.join(HERE,'ai_layers.html')
+    return open(path,encoding='utf-8').read() if os.path.exists(path) else ''
+
 def _ov(v):
     """Company overview record; tolerates the older plain-string format."""
     if isinstance(v, str):
@@ -106,7 +111,7 @@ def build(out_path):
         })
     fups = [{'t': f[0], 'type': f[1], 'text': f[2], 'raised': f[3]} for f in FOLLOW_UPS]
     today = datetime.date.today().strftime('%b %d, %Y')
-    data = json.dumps({'stocks': stocks, 'fups': fups, 'gen': today, 'method': method_note.build(P), 'agenda': agenda_html()},
+    data = json.dumps({'stocks': stocks, 'fups': fups, 'gen': today, 'method': method_note.build(P), 'agenda': agenda_html(), 'layers': layers_html()},
                       ensure_ascii=False).replace('</', '<\\/')
 
     page = """<!doctype html>
@@ -131,6 +136,13 @@ header a{color:#cfe0ff}
 .card.method .pos{color:var(--green);font-weight:600}
 .card.method .neg{color:var(--red);font-weight:600}
 .card.method ol{padding-left:20px}
+.layers .sub{color:var(--mut);font-size:15px}
+.layers .stack{display:flex;flex-direction:column;gap:6px;margin:10px 0 16px}
+.layers .layer{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.layers .ln{flex:0 0 130px;padding:8px 10px;font-weight:700;font-size:14px;color:#fff;background:var(--blue)}
+.layers .lb{padding:8px 10px;font-size:15px;line-height:1.45}
+.layers .l4 .ln{background:#7a3e9d}.layers .l3 .ln{background:#1f6fb2}.layers .l2 .ln{background:#1e7b34}.layers .l1 .ln{background:#b35a00}.layers .l0 .ln{background:#555}
+@media(max-width:520px){.layers .layer{flex-direction:column}.layers .ln{flex:none}}
 .wrap{max-width:860px;margin:0 auto;padding:14px}
 #search{width:100%;font-size:22px;padding:14px 16px;border:2px solid var(--line);border-radius:14px;background:var(--card);margin:4px 0 12px}
 #search:focus{outline:none;border-color:var(--blue)}
@@ -182,6 +194,7 @@ footer{color:var(--mut);font-size:12px;text-align:center;padding:20px}
     <div class="chip" data-f="fup">Open follow-ups</div>
     <div class="chip" data-f="method">How we rank stocks</div>
     <div class="chip" data-f="agenda">10 Dec agenda</div>
+    <div class="chip" data-f="layers">AI layers: who sells what</div>
   </div>
   <button id="back">‹ Back to all stocks</button>
   <div id="out"></div>
@@ -237,6 +250,7 @@ function render(){
   back.style.display='none';
   if(filter==='method'){ out.innerHTML = DATA.method; return; }
   if(filter==='agenda'){ out.innerHTML = DATA.agenda; return; }
+  if(filter==='layers'){ out.innerHTML = DATA.layers; return; }
   if(filter==='fup'){
     out.innerHTML = DATA.fups.map(f => '<div class="fup"><b>'+esc(f.t)+'</b> · '+esc(f.type)+' · raised '+esc(f.raised)+'<br>'+esc(f.text)+'</div>').join('');
     return;
