@@ -1,0 +1,143 @@
+[
+ {
+  "a": "WATCH",
+  "amt": 0,
+  "c": "open",
+  "cond": "A SMALL CORRECTION WITH A REAL CONSEQUENCE, AND I AM RECORDING IT BEFORE IT CATCHES US RATHER THAN AFTER. || THIS BOARD HAS CARRIED THE NOTE \"BANGKOK = NEW YORK + 11 HOURS, US SESSION 20:30-03:00 BANGKOK\" FOR WEEKS. IT IS CORRECT TODAY, BECAUSE NEW YORK IS ON EASTERN **DAYLIGHT** TIME. IT STOPS BEING CORRECT ON **SUNDAY 1 NOVEMBER 2026**, WHEN AMERICAN CLOCKS GO BACK AN HOUR AND NEW YORK RETURNS TO EASTERN **STANDARD** TIME. THAILAND DOES NOT OBSERVE DAYLIGHT SAVING AT ALL, SO THE WHOLE DIFFERENCE MOVES TO TWELVE HOURS. || WHAT CHANGES FOR SALEE, EXACTLY: THE US MARKET OPENS AT 9:30 IN THE MORNING NEW YORK TIME ALL YEAR. TODAY THAT IS **20:30 BANGKOK**. FROM 1 NOVEMBER IT IS **21:30 BANGKOK**. THE CLOSE MOVES FROM 03:00 TO **04:00 BANGKOK**. MY STANDING ADVICE TO PLACE ORDERS BETWEEN 20:30 AND ABOUT 22:00 THEREFORE BECOMES **21:30 TO ABOUT 23:00** FROM 1 NOVEMBER. || ⚠️ WHY IT MATTERS MORE THAN IT SOUNDS: A DAY ORDER PLACED AT 20:45 BANGKOK ON 2 NOVEMBER WOULD BE PLACED **FORTY-FIVE MINUTES BEFORE THE MARKET OPENS**, NOT FIFTEEN MINUTES AFTER. Depending on the broker it either queues, is rejected, or sits in a pre-market session with far worse prices. THE BOARD HAS ALREADY LOST MONEY ONCE THIS MONTH TO A MISREAD PRICE; LOSING IT TO A MISREAD CLOCK WOULD BE WORSE, BECAUSE IT IS ENTIRELY AVOIDABLE. || THE UK AND EUROPE CHANGE ON A DIFFERENT DATE FROM THE UNITED STATES, SO BETWEEN LATE OCTOBER AND EARLY NOVEMBER THE GAPS ARE BRIEFLY UNUSUAL. THIS BOARD ONLY TRADES US EQUITIES, SO ONLY THE 1 NOVEMBER DATE MATTERS TO US. NOTHING ELSE ON THE BOARD CHANGES.",
+  "d": "2026-11-01",
+  "dl": "⚠️⚠️ CLOCK CHANGE 1 NOVEMBER - Salee's trading window moves one hour LATER. Correct my own standing note.",
+  "k": "watch",
+  "t": "CASH",
+  "w": "ON SUNDAY 1 NOVEMBER 2026 US DAYLIGHT SAVING ENDS. BANGKOK GOES FROM **NEW YORK PLUS 11** TO **NEW YORK PLUS 12**. THE US REGULAR SESSION MOVES FROM 20:30-03:00 BANGKOK TO **21:30-04:00 BANGKOK**. ⚠️ MY STANDING NOTE SAYS 'BANGKOK = NEW YORK + 11' WITH NO QUALIFIER. THAT IS ONLY TRUE IN THE AMERICAN SUMMER."
+ },
+ {
+  "a": "WATCH",
+  "amt": null,
+  "c": "confirmed",
+  "cond": "⚠️ AAPL closed 332.27 on 11 Sep, ABOVE the 44-analyst average target of 324.40 to 325.66, at 36.1 times forward earnings. CFO Kevan Parekh guided September revenue growth of only 9-11% and gross margin DOWN to 47-48% from 50.1%, and that 50.1% itself carried about 2 points of tariff-refund benefit. Verbatim on anything beyond September: 'Beyond September, we're not providing any color.' iPhone Duo pre-orders open 16 OCT and it ships 23 OCT, so this print is the FIRST quarter with any Duo demand signal in the guide. THE TEST TO ADD: a December guide that is strong on iPhone AND gross margin holding above 47% WITHOUT a tariff-refund benefit. Budget stays 24,000, 46 shares held.",
+  "d": "2026-11-02",
+  "dl": "Apple FQ4 2026 print - late October",
+  "k": "catalyst",
+  "t": "AAPL",
+  "w": "CONFIRMED by Apple IR: Mon 2 Nov, call 5:00 pm ET (= 05:00 Tue 3 Nov Bangkok, after the 1 Nov clock change). | Firstrade calendar (15 Oct) lists Apple at 2 Nov after the close, not 29 Oct - Apple has not announced; treat as estimated. | The first December-quarter guide, and the first read on iPhone Duo - do not pay up into it"
+ },
+ {
+  "a": "WATCH",
+  "amt": 0,
+  "c": "confirmed",
+  "cond": "NO ORDER ON THE PRINT. The only buy route is the standing line: Day LIMIT at or below $150 (close 30 Oct $184.11, 18.5% above). Read for the board: US commercial revenue growth, total growth vs the ~79% trailing pace, and adjusted operating margin. Forward P/E ~97 - any guide below the run-rate can move the stock 15-20%.",
+  "d": "2026-11-02",
+  "dl": "Palantir Q3 2026 results",
+  "k": "earnings",
+  "t": "PLTR",
+  "w": "Palantir Q3 2026 results - Mon 2 Nov after the close (company release 12 Oct) = early Tue 3 Nov Bangkok. Held 40 sh, cost $5,533.09, budget $16,000."
+ },
+ {
+  "a": "WATCH",
+  "amt": 0,
+  "c": "estimated",
+  "cond": "NO ORDER - budget = cost. Read: revenue growth and the Q4 guide for PCIe/CXL connectivity; fell 10.9% on 30 Oct with the chip sell-off.",
+  "d": "2026-11-03",
+  "dl": "Astera Labs Q3 2026 results",
+  "k": "earnings",
+  "t": "ALAB",
+  "w": "Astera Labs Q3 2026 results - Tue 3 Nov after the close (Earnings Whispers) = early Wed 4 Nov Bangkok. Held 15 sh, budget = cost $3,805.47 (on hold since Sep)."
+ },
+ {
+  "a": "WATCH",
+  "amt": 0,
+  "c": "confirmed",
+  "cond": "NO ORDER ON THE PRINT. Buy route is the standing line: Day LIMIT at or below $470 (close 30 Oct $504.80, 7.4% above, after -10.9% on Intel's warning). Read: data-centre GPU revenue and the Q4 guide; PC/client weakness (the Intel read-across) is the risk to watch, not the AI business.",
+  "d": "2026-11-03",
+  "dl": "AMD Q3 2026 results",
+  "k": "earnings",
+  "t": "AMD",
+  "w": "AMD Q3 2026 results - Tue 3 Nov after the close, call 5 pm ET (GlobeNewswire) = early Wed 4 Nov Bangkok. Held 55 sh, cost $13,789.22, budget $24,000."
+ },
+ {
+  "a": "WATCH",
+  "amt": 0,
+  "c": "confirmed",
+  "cond": "NO ORDER - budget full. Read: AI back-end networking revenue and the 2027 outlook; feeds the 10 Dec review.",
+  "d": "2026-11-03",
+  "dl": "Arista Q3 2026 results",
+  "k": "earnings",
+  "t": "ANET",
+  "w": "Arista Q3 2026 results - Tue 3 Nov after the close, call 4:30 pm ET (Business Wire) = early Wed 4 Nov Bangkok. Held 98 sh, budget = cost $15,585.57 (full)."
+ },
+ {
+  "a": "WATCH",
+  "amt": 0,
+  "c": "estimated",
+  "cond": "NO ORDER - budget full. Read: data-centre electrical orders and backlog, and whether the 2026 guide is raised. Feeds the 10 Dec power-group review.",
+  "d": "2026-11-03",
+  "dl": "Eaton Q3 2026 results",
+  "k": "earnings",
+  "t": "ETN",
+  "w": "Eaton Q3 2026 results - Tue 3 Nov BEFORE the open (Earnings Whispers week of 2 Nov) = Tue 3 Nov ~18:30 Bangkok. Held 26 sh, cost $10,881.31, budget $11,000 (room $119 - effectively full)."
+ },
+ {
+  "a": "WATCH",
+  "amt": 0,
+  "c": "confirmed",
+  "cond": "No order on the result. Read: which party controls Congress - matters for tariffs, chip export rules, energy/nuclear policy and the 2027 budget. A volatile session is likely; standing price lines still apply only on a CLOSE.",
+  "d": "2026-11-03",
+  "dl": "US midterm elections",
+  "k": "macro",
+  "t": "MACRO",
+  "w": "US midterm elections - Tue 3 Nov (market open as normal). Results arrive during Wed 4 Nov Bangkok."
+ },
+ {
+  "a": "WATCH",
+  "amt": 0,
+  "c": "done",
+  "cond": "Deal announced 2 Nov: 4.500 MRVL per LITE share (see the MRVL row). NO ORDER. Read together with the MRVL row: any Marvell deal terms may come with or before the print. Check GAAP vs adjusted EPS - the August quarter carried a $7.8bn non-cash debt-exchange charge. COHR read-across (Q1 FY27, 4 Nov): revenue +50%, DC +85%, but OCF -92.7m, capex 776m, inventory +760m, FCF -868m, borrowed 773m; $20bn 5-yr LTA. Score LITE on the same three lines first - operating cash flow, capex, inventory - then EPS.",
+  "d": "2026-11-05",
+  "dl": "Lumentum FQ1 2027 results",
+  "k": "earnings",
+  "t": "LITE",
+  "w": "CORRECTION: Lumentum reported FQ1 2027 on 2 Nov with the Marvell deal, not 5 Nov (Earnings Whispers date was wrong). Revenue $1.26bn (+136% YoY); FQ2 guide $1.575-1.625bn. Cash-flow lines (OCF, capex, inventory) still to be scored against the COHR read-across - carried to the 10 Dec MRVL+LITE budget item. Lumentum fiscal Q1 2027 results - Thu 5 Nov after the close (Earnings Whispers) = early Fri 6 Nov Bangkok. Held 11.5 sh, budget = cost $9,372.74."
+ },
+ {
+  "a": "WATCH",
+  "amt": 0,
+  "c": "done",
+  "cond": "NO ACTION ON THE RUMOUR - no sale, no buy (both budgets effectively full). WHEN TERMS ARE ANNOUNCED, score four things: (1) PRICE/PREMIUM paid for LITE (market value ~$83-91bn before the premium); (2) CASH vs STOCK mix - Marvell had only ~$3.9bn cash, so this is mostly shares or heavy debt; estimate dilution for MRVL holders; (3) whether the combined company's earnings per share rise or fall in year 2 (accretion); (4) REGULATORY path - China SAMR approval has delayed or blocked large US chip deals before. Because we own both sides, a premium paid by MRVL holders is partly received by our LITE shares (about $24k MRVL vs $10.5k LITE at the 28 Oct close). If the deal is all-stock at a large premium with no EPS accretion by year 2, review MRVL sizing at 10 Dec; if terms are reasonable, hold both through closing.",
+  "d": "2026-11-05",
+  "k": "event",
+  "t": "MRVL",
+  "w": "DEAL ANNOUNCED 2 Nov (Marvell release): ALL-STOCK, fixed 4.500 MRVL per LITE share; implied $1,132/LITE = 23.9% premium to the 28 Oct unaffected close; EV ~$115bn; pro forma 67% MRVL / 33% LITE holders; non-GAAP EPS accretive in year 1; >$1bn cost synergies; close expected 1H 2028; needs both shareholder votes + regulatory approvals (China SAMR not named). MRVL Q3 prelim in line with guide. SCORED: (1) premium 23.9% - moderate, but MRVL has fallen ~22% since 28 Oct, so at the 30 Oct close the offer is worth ~$884/LITE, BELOW LITE's unaffected price; (2) no cash/no new debt - MRVL holders diluted to 67%; (3) accretion claimed on NON-GAAP only - check GAAP in the S-4; (4) ~18 months to close, China approval the main risk. OUR POSITION: MRVL 95.5 sh + LITE 11.5 sh (-> 51.75 MRVL sh at close) = 147.25 MRVL sh, ~$28.9k at 30 Oct closes, ~3.6% of the book. ACTION: HOLD BOTH, no buy, no sale. Re-size at the 10 Dec review as ONE combined line (budgets MRVL $21,000 + LITE $9,372.74). | MARVELL-LUMENTUM DEAL - terms expected \"as soon as next week\" (Bloomberg, 28 Oct). We hold BOTH: MRVL 95.5 sh (cost $20,585) and LITE 11.5 sh (cost $9,373). Reported 28 Oct after the close: MRVL about -8% after hours, LITE about +9-11%."
+ },
+ {
+  "a": "HOLD",
+  "amt": 0,
+  "c": "cancelled",
+  "cond": "Claude's standing view (25 Oct) is on record: a falling memory price can mean the cycle is turning, not a bargain - this fill is Salee's override, not Claude's recommendation. Fund from cash.",
+  "d": "2026-11-05",
+  "dl": "MU $800 override line HIT - buy rung 2",
+  "k": "trigger",
+  "t": "MU",
+  "w": "CANCELLED 5 Nov by Salee, on Claude's advice: the override is withdrawn. Reasons on record - gross margin 80.7% and forward P/E 4.5x are what a memory-cycle top looks like; growth is price-led (DRAM bits mid-single-digit on 30 Sep); TrendForce's Q4 contract-price forecast decelerated to +3-8% from +15-20%; the whole memory group fell on 4 Nov with no company news. The $3,418.42 stays for the 17 Dec DECIDE (double-digit DRAM bit growth required). | ⚠️ $800 OVERRIDE LINE HIT: MU closed 795.23 on Wed 4 Nov (POEMS mark; -7.0% on the day, memory sold off with SNDK -7.9%, STX -8.1%). Per Salee's 25 Oct override: act the next session - BUY 4 sh Day LIMIT 795.23, may raise once to the cap 803.18 (~$3,219.60). Hold-back check done: TrendForce's latest forecast (Q4 PC DRAM +3-8% QoQ, server +13-18% in Q3) shows contract prices still rising, so the 1 Oct cancel rule does not apply. Once filled the 17 Dec rung-2 row is done; the $10,000 parked tranche is unchanged (still needs two double-digit DRAM-bit quarters)."
+ },
+ {
+  "a": "DECIDE",
+  "amt": null,
+  "c": "estimated",
+  "cond": "DATE ESTIMATED - SpaceX has not confirmed it; consensus expectation is early November. This single date is BOTH things at once: the second public quarter (the data the standing row has been waiting for) and the event that releases roughly 1.3 BILLION shares from lock-up. That is why it is the right moment to look and the wrong moment to pre-empt. || THE NUMBERS TO READ: whether the AI capex line is converting to revenue (Q2 was a 541m net loss on 15.83bn of AI capex against 2.56bn of AI revenue), and whether revenue growth holds near the 91.9% posted in Q2. Consensus has 2026 revenue at 44.63bn and 2027 at 105.89bn - both about +138%. On consensus 2027 EPS of 1.60 the stock trades at 92x; on 2026 EPS of 0.09 it is not meaningfully valued at all. || STILL NO BUDGET ASSIGNED. Do not assign one before this print.",
+  "d": "2026-11-05",
+  "k": "earnings",
+  "t": "SPCX",
+  "w": "Q3 2026 results - the second public quarter AND the trigger for the largest lock-up release"
+ },
+ {
+  "a": "WATCH",
+  "amt": 0,
+  "c": "confirmed",
+  "cond": "Feeds the December Fed decision (hike odds ~83-85% after the 3.6% PCE). Strong jobs = higher hike odds = the rate rule stays on. Same day as Vistra results.",
+  "d": "2026-11-06",
+  "dl": "US October jobs report (nonfarm payrolls)",
+  "k": "macro",
+  "t": "MACRO",
+  "w": "US October jobs report - Fri 6 Nov 8:30 am ET = 20:30 Bangkok, before the US open."
+ }
+]

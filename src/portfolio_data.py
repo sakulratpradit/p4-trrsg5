@@ -3,12 +3,17 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Nov 7, 2026 09:40 Bangkok - 6 NOV CLOSE BOOKED FROM POEMS (positions 07:30 SGT): all 36 lines + SGOV tie to the cent '
- '(cost 798,074.91; MV 787,577.23; stocks unrealised -10,320.68, -1.42%). NO FILLS: the 6 Nov AMD (24 sh at 404.40) '
- 'and TSM (26 sh at 353.10) Day LIMIT orders EXPIRED - closes 449.04 / 375.44. All three lines still met on the close, '
- 'so MON 9 NOV after 22:00: AMD 22 sh LIMIT 449.04 / cap 453.53 + TSM 25 sh LIMIT 375.44 / cap 379.19 (~$19,300 from '
- 'cash) and SELL 150 SGOV at 100.49. TUE: AVGO 16 sh (if Mon close <= 310) + V + VST (results PASSED: adj. EBITDA '
- '+50%, guide midpoint raised). WED: CAT. SPY 735.36 (+0.3%), QQQ 656.29 (+1.4%). || PREVIOUS ENTRY: Nov 6, 2026 11:30 '
+ASOF = ("Nov 7, 2026 14:30 Bangkok - SCHEDULE CLEANED at Salee's instruction: 13 rows dated before Mon 9 Nov archived to "
+ 'src/schedule_archive_2026-11-09.json; the APP $320 trigger kept as a standing row. BUY/SELL PLAN ROLLED to 9 - 30 '
+ 'Nov: week 1 unchanged (AMD + TSM + SGOV sale Mon; AVGO + V + VST Tue; CAT Wed); NVDA DECIDE $3,000 on 18 Nov '
+ 'results; ⚠️ KLAC/LRCX tranche 3 (19 Nov, $10,889) flagged - cannot be funded without breaching the $50,000 SGOV '
+ 'reserve; decide by 16 Nov (new money or defer to 10 Dec). Thanksgiving 26 Nov added. || PREVIOUS ENTRY: Nov 7, 2026 '
+ '09:40 Bangkok - 6 NOV CLOSE BOOKED FROM POEMS (positions 07:30 SGT): all 36 lines + SGOV tie to the cent (cost '
+ '798,074.91; MV 787,577.23; stocks unrealised -10,320.68, -1.42%). NO FILLS: the 6 Nov AMD (24 sh at 404.40) and TSM '
+ '(26 sh at 353.10) Day LIMIT orders EXPIRED - closes 449.04 / 375.44. All three lines still met on the close, so MON '
+ '9 NOV after 22:00: AMD 22 sh LIMIT 449.04 / cap 453.53 + TSM 25 sh LIMIT 375.44 / cap 379.19 (~$19,300 from cash) '
+ 'and SELL 150 SGOV at 100.49. TUE: AVGO 16 sh (if Mon close <= 310) + V + VST (results PASSED: adj. EBITDA +50%, '
+ 'guide midpoint raised). WED: CAT. SPY 735.36 (+0.3%), QQQ 656.29 (+1.4%). || PREVIOUS ENTRY: Nov 6, 2026 11:30 '
  'Bangkok - 5 NOV CLOSE BOOKED FROM POEMS (positions 10:49 SGT): all 36 lines + SGOV tie to the cent (cost 798,074.91; '
  'MV 768,116.69; stocks unrealised -29,753.46, -4.09%). NO FILLS on 5 Nov: AMD (-13% intraday, closed -17.3% at '
  "404.40) and APP (+31% to 356.10) orders were not placed on Claude's advice. Lines hit on the close: TSM $380 "
@@ -5564,124 +5569,7 @@ M3 = {'AAPL': {'de': 0.78, 'ev': 29.84, 'pfcf': 36.57},
  'VST': {'de': 3.73, 'ev': 10.1, 'pfcf': 20.32}}
 
 SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
- 'items': [{'a': 'WATCH',
-            'amt': 0,
-            'c': 'open',
-            'cond': 'A SMALL CORRECTION WITH A REAL CONSEQUENCE, AND I AM RECORDING IT BEFORE IT CATCHES US RATHER '
-                    'THAN AFTER. || THIS BOARD HAS CARRIED THE NOTE "BANGKOK = NEW YORK + 11 HOURS, US SESSION '
-                    '20:30-03:00 BANGKOK" FOR WEEKS. IT IS CORRECT TODAY, BECAUSE NEW YORK IS ON EASTERN **DAYLIGHT** '
-                    'TIME. IT STOPS BEING CORRECT ON **SUNDAY 1 NOVEMBER 2026**, WHEN AMERICAN CLOCKS GO BACK AN HOUR '
-                    'AND NEW YORK RETURNS TO EASTERN **STANDARD** TIME. THAILAND DOES NOT OBSERVE DAYLIGHT SAVING AT '
-                    'ALL, SO THE WHOLE DIFFERENCE MOVES TO TWELVE HOURS. || WHAT CHANGES FOR SALEE, EXACTLY: THE US '
-                    'MARKET OPENS AT 9:30 IN THE MORNING NEW YORK TIME ALL YEAR. TODAY THAT IS **20:30 BANGKOK**. FROM '
-                    '1 NOVEMBER IT IS **21:30 BANGKOK**. THE CLOSE MOVES FROM 03:00 TO **04:00 BANGKOK**. MY STANDING '
-                    'ADVICE TO PLACE ORDERS BETWEEN 20:30 AND ABOUT 22:00 THEREFORE BECOMES **21:30 TO ABOUT 23:00** '
-                    'FROM 1 NOVEMBER. || ⚠️ WHY IT MATTERS MORE THAN IT SOUNDS: A DAY ORDER PLACED AT 20:45 BANGKOK ON '
-                    '2 NOVEMBER WOULD BE PLACED **FORTY-FIVE MINUTES BEFORE THE MARKET OPENS**, NOT FIFTEEN MINUTES '
-                    'AFTER. Depending on the broker it either queues, is rejected, or sits in a pre-market session '
-                    'with far worse prices. THE BOARD HAS ALREADY LOST MONEY ONCE THIS MONTH TO A MISREAD PRICE; '
-                    'LOSING IT TO A MISREAD CLOCK WOULD BE WORSE, BECAUSE IT IS ENTIRELY AVOIDABLE. || THE UK AND '
-                    'EUROPE CHANGE ON A DIFFERENT DATE FROM THE UNITED STATES, SO BETWEEN LATE OCTOBER AND EARLY '
-                    'NOVEMBER THE GAPS ARE BRIEFLY UNUSUAL. THIS BOARD ONLY TRADES US EQUITIES, SO ONLY THE 1 NOVEMBER '
-                    'DATE MATTERS TO US. NOTHING ELSE ON THE BOARD CHANGES.',
-            'd': '2026-11-01',
-            'dl': "⚠️⚠️ CLOCK CHANGE 1 NOVEMBER - Salee's trading window moves one hour LATER. Correct my own standing "
-                  'note.',
-            'k': 'watch',
-            't': 'CASH',
-            'w': 'ON SUNDAY 1 NOVEMBER 2026 US DAYLIGHT SAVING ENDS. BANGKOK GOES FROM **NEW YORK PLUS 11** TO **NEW '
-                 'YORK PLUS 12**. THE US REGULAR SESSION MOVES FROM 20:30-03:00 BANGKOK TO **21:30-04:00 BANGKOK**. ⚠️ '
-                 "MY STANDING NOTE SAYS 'BANGKOK = NEW YORK + 11' WITH NO QUALIFIER. THAT IS ONLY TRUE IN THE AMERICAN "
-                 'SUMMER.'},
-           {'a': 'WATCH',
-            'amt': None,
-            'c': 'confirmed',
-            'cond': '⚠️ AAPL closed 332.27 on 11 Sep, ABOVE the 44-analyst average target of 324.40 to 325.66, at 36.1 '
-                    'times forward earnings. CFO Kevan Parekh guided September revenue growth of only 9-11% and gross '
-                    'margin DOWN to 47-48% from 50.1%, and that 50.1% itself carried about 2 points of tariff-refund '
-                    "benefit. Verbatim on anything beyond September: 'Beyond September, we're not providing any "
-                    "color.' iPhone Duo pre-orders open 16 OCT and it ships 23 OCT, so this print is the FIRST quarter "
-                    'with any Duo demand signal in the guide. THE TEST TO ADD: a December guide that is strong on '
-                    'iPhone AND gross margin holding above 47% WITHOUT a tariff-refund benefit. Budget stays 24,000, '
-                    '46 shares held.',
-            'd': '2026-11-02',
-            'dl': 'Apple FQ4 2026 print - late October',
-            'k': 'catalyst',
-            't': 'AAPL',
-            'w': 'CONFIRMED by Apple IR: Mon 2 Nov, call 5:00 pm ET (= 05:00 Tue 3 Nov Bangkok, after the 1 Nov clock '
-                 'change). | Firstrade calendar (15 Oct) lists Apple at 2 Nov after the close, not 29 Oct - Apple has '
-                 'not announced; treat as estimated. | The first December-quarter guide, and the first read on iPhone '
-                 'Duo - do not pay up into it'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'confirmed',
-            'cond': 'NO ORDER ON THE PRINT. The only buy route is the standing line: Day LIMIT at or below $150 (close '
-                    '30 Oct $184.11, 18.5% above). Read for the board: US commercial revenue growth, total growth vs '
-                    'the ~79% trailing pace, and adjusted operating margin. Forward P/E ~97 - any guide below the '
-                    'run-rate can move the stock 15-20%.',
-            'd': '2026-11-02',
-            'dl': 'Palantir Q3 2026 results',
-            'k': 'earnings',
-            't': 'PLTR',
-            'w': 'Palantir Q3 2026 results - Mon 2 Nov after the close (company release 12 Oct) = early Tue 3 Nov '
-                 'Bangkok. Held 40 sh, cost $5,533.09, budget $16,000.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'estimated',
-            'cond': 'NO ORDER - budget = cost. Read: revenue growth and the Q4 guide for PCIe/CXL connectivity; fell '
-                    '10.9% on 30 Oct with the chip sell-off.',
-            'd': '2026-11-03',
-            'dl': 'Astera Labs Q3 2026 results',
-            'k': 'earnings',
-            't': 'ALAB',
-            'w': 'Astera Labs Q3 2026 results - Tue 3 Nov after the close (Earnings Whispers) = early Wed 4 Nov '
-                 'Bangkok. Held 15 sh, budget = cost $3,805.47 (on hold since Sep).'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'confirmed',
-            'cond': 'NO ORDER ON THE PRINT. Buy route is the standing line: Day LIMIT at or below $470 (close 30 Oct '
-                    "$504.80, 7.4% above, after -10.9% on Intel's warning). Read: data-centre GPU revenue and the Q4 "
-                    'guide; PC/client weakness (the Intel read-across) is the risk to watch, not the AI business.',
-            'd': '2026-11-03',
-            'dl': 'AMD Q3 2026 results',
-            'k': 'earnings',
-            't': 'AMD',
-            'w': 'AMD Q3 2026 results - Tue 3 Nov after the close, call 5 pm ET (GlobeNewswire) = early Wed 4 Nov '
-                 'Bangkok. Held 55 sh, cost $13,789.22, budget $24,000.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'confirmed',
-            'cond': 'NO ORDER - budget full. Read: AI back-end networking revenue and the 2027 outlook; feeds the 10 '
-                    'Dec review.',
-            'd': '2026-11-03',
-            'dl': 'Arista Q3 2026 results',
-            'k': 'earnings',
-            't': 'ANET',
-            'w': 'Arista Q3 2026 results - Tue 3 Nov after the close, call 4:30 pm ET (Business Wire) = early Wed 4 '
-                 'Nov Bangkok. Held 98 sh, budget = cost $15,585.57 (full).'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'estimated',
-            'cond': 'NO ORDER - budget full. Read: data-centre electrical orders and backlog, and whether the 2026 '
-                    'guide is raised. Feeds the 10 Dec power-group review.',
-            'd': '2026-11-03',
-            'dl': 'Eaton Q3 2026 results',
-            'k': 'earnings',
-            't': 'ETN',
-            'w': 'Eaton Q3 2026 results - Tue 3 Nov BEFORE the open (Earnings Whispers week of 2 Nov) = Tue 3 Nov '
-                 '~18:30 Bangkok. Held 26 sh, cost $10,881.31, budget $11,000 (room $119 - effectively full).'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'confirmed',
-            'cond': 'No order on the result. Read: which party controls Congress - matters for tariffs, chip export '
-                    'rules, energy/nuclear policy and the 2027 budget. A volatile session is likely; standing price '
-                    'lines still apply only on a CLOSE.',
-            'd': '2026-11-03',
-            'dl': 'US midterm elections',
-            'k': 'macro',
-            't': 'MACRO',
-            'w': 'US midterm elections - Tue 3 Nov (market open as normal). Results arrive during Wed 4 Nov Bangkok.'},
-           {'a': 'BUY',
+ 'items': [{'a': 'BUY',
             'amt': 10210.78,
             'c': 'open',
             'cond': 'RESULTS PASSED 3 Nov (DC +97%, non-GAAP GM 56%, Q4 guide ~$17bn). 5 Nov fall = AI data-centre '
@@ -5702,7 +5590,7 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
                  'order 24 sh LIMIT 404.40 EXPIRED unfilled (closed 449.04, +11.1%). Still 4.5% below the $470 line.'},
            {'a': 'TRIGGER',
             'amt': 9000,
-            'c': 'open',
+            'c': 'standing',
             'cond': 'PASSED ALL FOUR 4 Nov: PASS = ALL FOUR. (1) Q3 revenue at or above $2.08bn - the consensus, which '
                     "is the top of the company's own $2.055-2.085bn range (46-48% growth). Q2 MISSED by $20m; meeting "
                     'the range is not enough, it must clear it. (2) Adjusted EBITDA margin at or above 80% (guided '
@@ -5718,109 +5606,16 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
                     '(replaced): THE NUMBER IS E-COMMERCE PIXEL ADDITIONS - they slowed to ~750 in June from ~950 in '
                     'May. Growth ran 68>66>59>53>guided 47%. SEC closed its inquiry with no action; CapitalWatch '
                     'retracted. A SECOND guidance miss means the edge is eroding, not pausing.',
-            'd': '2026-11-06',
-            'dl': 'Results date ESTIMATED - AppLovin announced on 7 Oct that it will report; Q3 2025 was 5 Nov. '
-                  'CONFIRM the date before acting.',
+            'd': '',
+            'dl': 'Standing',
             'k': 'earnings',
             't': 'APP',
-            'w': 'DEFERRED 6 Nov: APP closed 356.10 (+31.0%) on the results + target raises (BTIG 450, Needham 475) + '
-                 'rotation out of chips. Our cap was 274.47 - no chasing. New condition: BUY the first $9,000 on any '
-                 "close at or below $320 (about 44x this year's earnings, where the 5 Nov plan priced it), or "
-                 're-decide at the 10 Dec review. Budget $18,000 unchanged. 6 Nov close 391.22 (+9.9% more) - 22% '
-                 'above the $320 line.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'Deal announced 2 Nov: 4.500 MRVL per LITE share (see the MRVL row). NO ORDER. Read together with '
-                    'the MRVL row: any Marvell deal terms may come with or before the print. Check GAAP vs adjusted '
-                    'EPS - the August quarter carried a $7.8bn non-cash debt-exchange charge. COHR read-across (Q1 '
-                    'FY27, 4 Nov): revenue +50%, DC +85%, but OCF -92.7m, capex 776m, inventory +760m, FCF -868m, '
-                    'borrowed 773m; $20bn 5-yr LTA. Score LITE on the same three lines first - operating cash flow, '
-                    'capex, inventory - then EPS.',
-            'd': '2026-11-05',
-            'dl': 'Lumentum FQ1 2027 results',
-            'k': 'earnings',
-            't': 'LITE',
-            'w': 'CORRECTION: Lumentum reported FQ1 2027 on 2 Nov with the Marvell deal, not 5 Nov (Earnings Whispers '
-                 'date was wrong). Revenue $1.26bn (+136% YoY); FQ2 guide $1.575-1.625bn. Cash-flow lines (OCF, capex, '
-                 'inventory) still to be scored against the COHR read-across - carried to the 10 Dec MRVL+LITE budget '
-                 'item. Lumentum fiscal Q1 2027 results - Thu 5 Nov after the close (Earnings Whispers) = early Fri 6 '
-                 'Nov Bangkok. Held 11.5 sh, budget = cost $9,372.74.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'NO ACTION ON THE RUMOUR - no sale, no buy (both budgets effectively full). WHEN TERMS ARE '
-                    'ANNOUNCED, score four things: (1) PRICE/PREMIUM paid for LITE (market value ~$83-91bn before the '
-                    'premium); (2) CASH vs STOCK mix - Marvell had only ~$3.9bn cash, so this is mostly shares or '
-                    "heavy debt; estimate dilution for MRVL holders; (3) whether the combined company's earnings per "
-                    'share rise or fall in year 2 (accretion); (4) REGULATORY path - China SAMR approval has delayed '
-                    'or blocked large US chip deals before. Because we own both sides, a premium paid by MRVL holders '
-                    'is partly received by our LITE shares (about $24k MRVL vs $10.5k LITE at the 28 Oct close). If '
-                    'the deal is all-stock at a large premium with no EPS accretion by year 2, review MRVL sizing at '
-                    '10 Dec; if terms are reasonable, hold both through closing.',
-            'd': '2026-11-05',
-            'k': 'event',
-            't': 'MRVL',
-            'w': 'DEAL ANNOUNCED 2 Nov (Marvell release): ALL-STOCK, fixed 4.500 MRVL per LITE share; implied '
-                 '$1,132/LITE = 23.9% premium to the 28 Oct unaffected close; EV ~$115bn; pro forma 67% MRVL / 33% '
-                 'LITE holders; non-GAAP EPS accretive in year 1; >$1bn cost synergies; close expected 1H 2028; needs '
-                 'both shareholder votes + regulatory approvals (China SAMR not named). MRVL Q3 prelim in line with '
-                 'guide. SCORED: (1) premium 23.9% - moderate, but MRVL has fallen ~22% since 28 Oct, so at the 30 Oct '
-                 "close the offer is worth ~$884/LITE, BELOW LITE's unaffected price; (2) no cash/no new debt - MRVL "
-                 'holders diluted to 67%; (3) accretion claimed on NON-GAAP only - check GAAP in the S-4; (4) ~18 '
-                 'months to close, China approval the main risk. OUR POSITION: MRVL 95.5 sh + LITE 11.5 sh (-> 51.75 '
-                 'MRVL sh at close) = 147.25 MRVL sh, ~$28.9k at 30 Oct closes, ~3.6% of the book. ACTION: HOLD BOTH, '
-                 'no buy, no sale. Re-size at the 10 Dec review as ONE combined line (budgets MRVL $21,000 + LITE '
-                 '$9,372.74). | MARVELL-LUMENTUM DEAL - terms expected "as soon as next week" (Bloomberg, 28 Oct). We '
-                 'hold BOTH: MRVL 95.5 sh (cost $20,585) and LITE 11.5 sh (cost $9,373). Reported 28 Oct after the '
-                 'close: MRVL about -8% after hours, LITE about +9-11%.'},
-           {'a': 'HOLD',
-            'amt': 0,
-            'c': 'cancelled',
-            'cond': "Claude's standing view (25 Oct) is on record: a falling memory price can mean the cycle is "
-                    "turning, not a bargain - this fill is Salee's override, not Claude's recommendation. Fund from "
-                    'cash.',
-            'd': '2026-11-05',
-            'dl': 'MU $800 override line HIT - buy rung 2',
-            'k': 'trigger',
-            't': 'MU',
-            'w': "CANCELLED 5 Nov by Salee, on Claude's advice: the override is withdrawn. Reasons on record - gross "
-                 'margin 80.7% and forward P/E 4.5x are what a memory-cycle top looks like; growth is price-led (DRAM '
-                 "bits mid-single-digit on 30 Sep); TrendForce's Q4 contract-price forecast decelerated to +3-8% from "
-                 '+15-20%; the whole memory group fell on 4 Nov with no company news. The $3,418.42 stays for the 17 '
-                 'Dec DECIDE (double-digit DRAM bit growth required). | ⚠️ $800 OVERRIDE LINE HIT: MU closed 795.23 on '
-                 "Wed 4 Nov (POEMS mark; -7.0% on the day, memory sold off with SNDK -7.9%, STX -8.1%). Per Salee's 25 "
-                 'Oct override: act the next session - BUY 4 sh Day LIMIT 795.23, may raise once to the cap 803.18 '
-                 "(~$3,219.60). Hold-back check done: TrendForce's latest forecast (Q4 PC DRAM +3-8% QoQ, server "
-                 '+13-18% in Q3) shows contract prices still rising, so the 1 Oct cancel rule does not apply. Once '
-                 'filled the 17 Dec rung-2 row is done; the $10,000 parked tranche is unchanged (still needs two '
-                 'double-digit DRAM-bit quarters).'},
-           {'a': 'DECIDE',
-            'amt': None,
-            'c': 'estimated',
-            'cond': 'DATE ESTIMATED - SpaceX has not confirmed it; consensus expectation is early November. This '
-                    'single date is BOTH things at once: the second public quarter (the data the standing row has been '
-                    'waiting for) and the event that releases roughly 1.3 BILLION shares from lock-up. That is why it '
-                    'is the right moment to look and the wrong moment to pre-empt. || THE NUMBERS TO READ: whether the '
-                    'AI capex line is converting to revenue (Q2 was a 541m net loss on 15.83bn of AI capex against '
-                    '2.56bn of AI revenue), and whether revenue growth holds near the 91.9% posted in Q2. Consensus '
-                    'has 2026 revenue at 44.63bn and 2027 at 105.89bn - both about +138%. On consensus 2027 EPS of '
-                    '1.60 the stock trades at 92x; on 2026 EPS of 0.09 it is not meaningfully valued at all. || STILL '
-                    'NO BUDGET ASSIGNED. Do not assign one before this print.',
-            'd': '2026-11-05',
-            'k': 'earnings',
-            't': 'SPCX',
-            'w': 'Q3 2026 results - the second public quarter AND the trigger for the largest lock-up release'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'confirmed',
-            'cond': 'Feeds the December Fed decision (hike odds ~83-85% after the 3.6% PCE). Strong jobs = higher hike '
-                    'odds = the rate rule stays on. Same day as Vistra results.',
-            'd': '2026-11-06',
-            'dl': 'US October jobs report (nonfarm payrolls)',
-            'k': 'macro',
-            't': 'MACRO',
-            'w': 'US October jobs report - Fri 6 Nov 8:30 am ET = 20:30 Bangkok, before the US open.'},
+            'w': 'Any close at or below $320 - BUY the first $9,000 (Day LIMIT at that close, cap +1%). Set 6 Nov '
+                 'after the +31% results day (tests passed, price failed). Else re-decide 10 Dec. DEFERRED 6 Nov: APP '
+                 'closed 356.10 (+31.0%) on the results + target raises (BTIG 450, Needham 475) + rotation out of '
+                 'chips. Our cap was 274.47 - no chasing. New condition: BUY the first $9,000 on any close at or below '
+                 "$320 (about 44x this year's earnings, where the 5 Nov plan priced it), or re-decide at the 10 Dec "
+                 'review. Budget $18,000 unchanged. 6 Nov close 391.22 (+9.9% more) - 22% above the $320 line.'},
            {'a': 'WATCH',
             'amt': 0,
             'c': 'estimated',
@@ -5917,11 +5712,14 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
            {'a': 'DECIDE',
             'amt': 3000,
             'c': 'estimated',
-            'cond': 'BUY $3,000 only if gross margin is 72% or above (below that, custom silicon is biting - cancel '
-                    'this rung and pause the limits). Cut from $8,000 on 4 Oct so the ladder (7,000 + 5,619.72 + 3,000 '
-                    '= 15,619.72) matches the remaining budget exactly; it had been overcommitted by $5,000. || Buy '
-                    'only if data-centre growth holds ABOVE 80% YoY and gross margin at 73%+. NOT triggers: '
-                    "acquisition headlines, GPU launches, 'AI king' commentary. NVDA is already 13.3% of the book.",
+            'cond': 'Funding: fits inside the reserve - ~30 SGOV (544 -> ~514 sh, ~$51,600). Sell SGOV Wed 18 Nov '
+                    'evening only if the results PASS at 05:00 Thu 19 Nov Bangkok; buy Thu 19 Nov evening at the 18 '
+                    'Nov close, cap +1%. BUY $3,000 only if gross margin is 72% or above (below that, custom silicon '
+                    'is biting - cancel this rung and pause the limits). Cut from $8,000 on 4 Oct so the ladder (7,000 '
+                    '+ 5,619.72 + 3,000 = 15,619.72) matches the remaining budget exactly; it had been overcommitted '
+                    'by $5,000. || Buy only if data-centre growth holds ABOVE 80% YoY and gross margin at 73%+. NOT '
+                    "triggers: acquisition headlines, GPU launches, 'AI king' commentary. NVDA is already 13.3% of the "
+                    'book.',
             'd': '2026-11-18',
             'k': 'earnings',
             't': 'NVDA',
@@ -6023,18 +5821,26 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
                  'THAT IS ACCURATE - IT IS THE UNITS CLAIM, CORRECTLY RENDERED. THE ANONYMOUS POST 24 HOURS EARLIER '
                  'TURNED THE SAME REMARK INTO "70% GROWTH TO $673 BILLION", WHICH WAS WRONG IN THE YEAR, THE UNIT AND '
                  'THE SOURCE.'},
-           {'a': 'BUY',
+           {'a': 'DECIDE',
             'amt': 6489.31,
             'c': 'planned',
-            'cond': 'After the November cluster confirms.',
+            'cond': '⚠️ FUNDING (flagged 7 Nov): after the 9-11 Nov buys free cash is ~$1,000 and SGOV ~544 sh '
+                    '(~$54,700). Funding this tranche from SGOV would take it to ~$44,000, below the $50,000 crash '
+                    'reserve. DECIDE BY MON 16 NOV: (a) new money arrives -> buy as planned; (b) no new money -> DEFER '
+                    "to the 10 Dec review (Claude's recommendation: the reserve rule is senior to a planned tranche). "
+                    'After the November cluster confirms.',
             'd': '2026-11-19',
             'k': 'tranche',
             't': 'KLAC',
             'w': 'Tranche 3 - semicap'},
-           {'a': 'BUY',
+           {'a': 'DECIDE',
             'amt': 4399.88,
             'c': 'planned',
-            'cond': 'After the November cluster confirms.',
+            'cond': '⚠️ FUNDING (flagged 7 Nov): after the 9-11 Nov buys free cash is ~$1,000 and SGOV ~544 sh '
+                    '(~$54,700). Funding this tranche from SGOV would take it to ~$44,000, below the $50,000 crash '
+                    'reserve. DECIDE BY MON 16 NOV: (a) new money arrives -> buy as planned; (b) no new money -> DEFER '
+                    "to the 10 Dec review (Claude's recommendation: the reserve rule is senior to a planned tranche). "
+                    'After the November cluster confirms.',
             'd': '2026-11-19',
             'k': 'tranche',
             't': 'LRCX',
@@ -8777,13 +8583,35 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
             'w': 'Tue 10 Nov evening (after 22:00), from the SGOV proceeds: BUY 16 sh Day LIMIT at the 9 Nov close, '
                  'cap +1% (~$4,700) - ONLY IF the 9 Nov close is still at or below $310 (closed 293.69 on 6 Nov). If '
                  "it closes above $310 on Monday, no order - the line waits for the next close at or below. Monday's "
-                 'cash goes to AMD + TSM first.'}],
- 'note': "CLEANED 1 Nov 2026 at Salee's instruction: only plans from 1 November 2026 onward are shown - open dated "
-         'rows (Nov 2026 to Feb 2027) plus the standing rules that are still live (price lines, triggers, holds, the '
-         'crash reserve and the ranked pool). 139 history rows (everything dated before 1 Nov, every done or cancelled '
-         'row, and undated commentary notes) were moved to src/schedule_archive_2026-11-01.json and git history - '
-         'nothing is lost. Claude does not place trades; every BUY/SELL row is for Salee to place at POEMS as a Day '
-         'LIMIT order. Amounts are budget room, not orders.',
+                 'cash goes to AMD + TSM first.'},
+           {'a': 'WATCH',
+            'amt': 0,
+            'c': 'estimated',
+            'cond': '',
+            'd': '2026-11-12',
+            'dl': 'US October CPI (date estimated)',
+            'k': 'macro',
+            't': 'MACRO',
+            'w': 'US CPI for October - about Thu 12 Nov 20:30 Bangkok (BLS date to confirm). Feeds the December Fed '
+                 'odds and the 10-year; the rate rule relaxes only on a 10-year close below 4.5%. No order.'},
+           {'a': 'WATCH',
+            'amt': 0,
+            'c': 'confirmed',
+            'cond': '',
+            'd': '2026-11-26',
+            'dl': 'US Thanksgiving - market closed',
+            'k': 'macro',
+            't': 'MACRO',
+            'w': 'Thu 26 Nov: US market CLOSED (Thanksgiving). Fri 27 Nov: early close 13:00 ET = 01:00 Sat Bangkok - '
+                 'place any Friday order before 23:00 Bangkok. No order planned.'}],
+ 'note': "CLEANED 7 Nov 2026 at Salee's instruction: rows dated before Mon 9 Nov archived to "
+         'src/schedule_archive_2026-11-09.json (13 rows; the APP $320 trigger kept as a standing row). Earlier '
+         "history: schedule_archive_2026-11-01.json (139 rows). CLEANED 1 Nov 2026 at Salee's instruction: only plans "
+         'from 1 November 2026 onward are shown - open dated rows (Nov 2026 to Feb 2027) plus the standing rules that '
+         'are still live (price lines, triggers, holds, the crash reserve and the ranked pool). 139 history rows '
+         '(everything dated before 1 Nov, every done or cancelled row, and undated commentary notes) were moved to '
+         'src/schedule_archive_2026-11-01.json and git history - nothing is lost. Claude does not place trades; every '
+         'BUY/SELL row is for Salee to place at POEMS as a Day LIMIT order. Amounts are budget room, not orders.',
  'updated': '2026-11-07'}
 
 SELLBOOK = {'comm': '0.20% + 7% VAT (0.214%), minimum 8.56',
@@ -10241,93 +10069,26 @@ RISK = {'asof': '2026-10-11',
  'to': '2026-10-09',
  'ust10': 5.24}
 
-BUYPLAN = {'from': '2026-11-01',
- 'holidays': 'No US market holiday in this window: Tue 3 Nov (US election day) and Wed 11 Nov (Veterans Day) are '
-             'normal trading days.',
- 'hours': 'US clocks went back on 1 Nov: from Mon 2 Nov POEMS follows the US session 21:30 to 04:00 Bangkok. Place Day '
-          'orders after 22:00 (not in the first 30 minutes); an unfilled Day order expires at the close.',
- 'made': '2026-11-01',
- 'note': 'ONE PAGE FOR 1 - 15 NOV. UPDATED 7 Nov (Sat) after the 6 Nov close: both 6 Nov orders EXPIRED unfilled (AMD '
-         'at 404.40, TSM at 353.10 - the market bounced 6-11% above the limits; no chasing). All three lines are STILL '
-         'met on the 6 Nov close: AMD 449.04 (< $470), TSM 375.44 (< $380), AVGO 293.69 (< $310). MON 9 NOV (after '
-         '22:00): AMD 22 sh LIMIT 449.04 / cap 453.53 (~$9,900) + TSM 25 sh LIMIT 375.44 / cap 379.19 (~$9,400) = '
-         '~$19,300 from cash $20,531; SELL 150 SGOV at 100.49 (~$15,040) the same evening for Tuesday. TUE 10 NOV: '
-         'AVGO 16 sh at the Mon close cap +1% (~$4,700, only if Mon close <= $310) + V $2,093 + VST $3,433 (RESULTS '
-         'PASSED: adj. EBITDA +50%, guide midpoint raised). WED 11 NOV: CAT rung 3 $5,000. APP DEFERRED: closed 391.22 '
-         '- line $320 or 10 Dec. MU: no buy; $3,418 waits for the 17 Dec volume test. STANDING LINES STILL OPEN (close '
-         'at or below; distance from the 6 Nov close): NVDA $180 (-3.6%) | PLTR $150 (-6.5%). Crash reserve: S&P is '
-         '5.6% below its 6 Oct high - the -15% rule ($50,000) is not triggered. No chasing on any order; never in the '
-         'first 30 minutes.',
+BUYPLAN = {'from': '2026-11-09',
+ 'holidays': 'Thu 26 Nov: US market closed (Thanksgiving). Fri 27 Nov: early close 13:00 ET = 01:00 Sat Bangkok. Wed '
+             '11 Nov (Veterans Day) is a normal trading day.',
+ 'hours': 'POEMS follows the US session 21:30 to 04:00 Bangkok. Place Day orders after 22:00 (not in the first 30 '
+          'minutes); an unfilled Day order expires at the close.',
+ 'made': '2026-11-07',
+ 'note': 'ONE PAGE FOR 9 - 30 NOV (rolled 7 Nov). WEEK 1 - all three price lines are met on the 6 Nov close: MON 9 NOV '
+         '(after 22:00): AMD 22 sh LIMIT 449.04 / cap 453.53 (~$9,900) + TSM 25 sh LIMIT 375.44 / cap 379.19 (~$9,400) '
+         'from cash $20,531; SELL 150 SGOV at 100.49 (~$15,040) the same evening for Tuesday. TUE 10 NOV: AVGO 16 sh '
+         'at the Mon close cap +1% (~$4,700, only if the Mon close is <= $310) + V $2,093 + VST $3,433 (results '
+         'PASSED: adj. EBITDA +50%, guide midpoint raised). WED 11 NOV: CAT rung 3 $5,000. After week 1, if everything '
+         'fills: cash ~$1,000, SGOV 544 sh (~$54,700). WEEK 2-3: NVDA results Wed 18 Nov - DECIDE $3,000 (fits inside '
+         'the reserve). ⚠️ KLAC $6,489 + LRCX $4,400 tranche 3 on 19 Nov CANNOT be funded without taking SGOV below '
+         'the $50,000 crash reserve - DECIDE BY MON 16 NOV: new money, or defer both to 10 Dec (recommended). THU 26 '
+         'NOV: market closed; Fri 27 Nov early close. MON 30 NOV: SPCX lock-up (watch). STANDING LINES (close at or '
+         'below): NVDA $180 | PLTR $150 | APP $320 (first $9,000). MU: no buy; $3,418 waits for the 17 Dec volume '
+         'test. Crash reserve: S&P is 5.6% below its 6 Oct high - the -15% rule ($50,000) is not triggered. No chasing '
+         'on any order; never in the first 30 minutes.',
  'pxNote': '6 Nov closes',
- 'rows': [{'bkk': 'Sun 1 Nov',
-           'cond': 'US clocks go back: from Mon 2 Nov the market runs 21:30-04:00 Bangkok.',
-           'd': '2026-11-01',
-           't': 'CASH',
-           'tac': 'Nothing to do.'},
-          {'bkk': 'Tue 3 Nov ~05:00 (results)',
-           'cond': 'December-quarter guide and iPhone Duo. ~38x forward earnings - do not pay up.',
-           'd': '2026-11-02',
-           't': 'AAPL',
-           'tac': 'No order - budget full.'},
-          {'bkk': 'Tue 3 Nov morning (results)',
-           'cond': 'US commercial growth and margin; P/E ~97 means a 15-20% swing is possible.',
-           'd': '2026-11-02',
-           't': 'PLTR',
-           'tac': 'No order on the print - line $150 only.'},
-          {'bkk': 'Wed 4 Nov morning (results)',
-           'cond': 'Revenue growth and Q4 guide.',
-           'd': '2026-11-03',
-           't': 'ALAB',
-           'tac': 'No order - budget = cost.'},
-          {'bkk': 'Wed 4 Nov ~05:00 (results)',
-           'cond': 'Data-centre GPU revenue and Q4 guide; PC weakness after Intel is the risk.',
-           'd': '2026-11-03',
-           't': 'AMD',
-           'tac': 'No order on the print - line $470 only.'},
-          {'bkk': 'Wed 4 Nov morning (results)',
-           'cond': 'AI networking revenue and the 2027 outlook - feeds 10 Dec.',
-           'd': '2026-11-03',
-           't': 'ANET',
-           'tac': 'No order - budget full.'},
-          {'bkk': 'Tue 3 Nov ~18:30 (results)',
-           'cond': 'Data-centre electrical orders, backlog and guide.',
-           'd': '2026-11-03',
-           't': 'ETN',
-           'tac': 'No order - budget full.'},
-          {'bkk': 'Wed 4 Nov (results)',
-           'cond': 'US midterm elections - market open; expect a volatile session.',
-           'd': '2026-11-03',
-           't': 'MACRO',
-           'tac': 'No order.'},
-          {'bkk': 'Fri 6 Nov morning (results)',
-           'cond': 'Read with the Marvell deal terms; watch GAAP vs adjusted EPS.',
-           'd': '2026-11-05',
-           't': 'LITE',
-           'tac': 'No order.'},
-          {'bkk': 'When terms are announced',
-           'cond': 'ANNOUNCED 2 Nov: all-stock, 4.5 MRVL per LITE, 23.9% premium, close 1H 2028. Scored - hold both, '
-                   're-size 10 Dec.',
-           'd': '2026-11-05',
-           't': 'MRVL',
-           'tac': 'No order - HOLD both.'},
-          {'bkk': 'Fri 6 Nov morning (results, est.)',
-           'cond': 'Second public quarter and the large lock-up release; loss-making, so the rate rule applies.',
-           'd': '2026-11-05',
-           't': 'SPCX',
-           'tac': 'No order - avoid.'},
-          {'a': None,
-           'bkk': 'Fri 6 Nov',
-           'cond': 'Closed 391.22 Fri (+31% Thu, +10% Fri). Passed the tests, failed the price.',
-           'd': '2026-11-06',
-           't': 'APP',
-           'tac': 'NO ORDER - deferred. New line: buy $9,000 on any close at or below $320, else re-decide 10 Dec.'},
-          {'bkk': 'Fri 6 Nov 20:30',
-           'cond': 'October jobs report - feeds the December Fed hike odds.',
-           'd': '2026-11-06',
-           't': 'MACRO',
-           'tac': 'Done: +165k jobs vs 65k, unemployment 4.1%, wages +3.1% (per slide). December hike odds up; rate '
-                  'rule stays on.'},
-          {'a': 'BUY',
+ 'rows': [{'a': 'BUY',
            'bkk': 'Mon 9 Nov evening (after 22:00)',
            'cap': 453.53,
            'cond': '5 Nov not placed; 6 Nov order at 404.40 expired (closed 449.04, +11%). Still below the $470 line; '
@@ -10389,13 +10150,48 @@ BUYPLAN = {'from': '2026-11-01',
            'cond': 'Rung 3 of 3 - completes the $15,000 budget.',
            'd': '2026-11-11',
            't': 'CAT',
-           'tac': 'Day LIMIT at the 10 Nov close, cap +1%.'}],
+           'tac': 'Day LIMIT at the 10 Nov close, cap +1%.'},
+          {'bkk': 'Thu 12 Nov 20:30 (est.)',
+           'cond': 'US October CPI - feeds December Fed odds. Rate rule stays on until the 10Y closes below 4.5%.',
+           'd': '2026-11-12',
+           't': 'MACRO',
+           'tac': 'No order.'},
+          {'a': 'DECIDE',
+           'bkk': 'Thu 19 Nov ~05:00 (results); act Thu 19 Nov evening',
+           'cond': 'Q3 FY2027 results Wed 18 Nov after the close. Ladder rung 3: DECIDE $3,000. Sell ~30 SGOV Wed '
+                   'evening only on a PASS; keeps SGOV above the $50,000 reserve.',
+           'd': '2026-11-18',
+           't': 'NVDA',
+           'tac': 'If PASS: BUY $3,000 Day LIMIT at the 18 Nov close, cap +1%.'},
+          {'a': 'DECIDE',
+           'bkk': 'Thu 19 Nov evening (after 22:00)',
+           'cond': '⚠️ Tranche 3 ($6,489) cannot be funded without SGOV falling below the $50,000 reserve. Decide by '
+                   'Mon 16 Nov: new money, or defer to 10 Dec (recommended).',
+           'd': '2026-11-19',
+           't': 'KLAC',
+           'tac': 'DEFER to 10 Dec unless new money arrives by 16 Nov.'},
+          {'a': 'DECIDE',
+           'bkk': 'Thu 19 Nov evening (after 22:00)',
+           'cond': '⚠️ Tranche 3 ($4,400) - same funding constraint as KLAC.',
+           'd': '2026-11-19',
+           't': 'LRCX',
+           'tac': 'DEFER to 10 Dec unless new money arrives by 16 Nov.'},
+          {'bkk': 'Thu 26 Nov',
+           'cond': 'US Thanksgiving - market closed. Fri 27 Nov early close 01:00 Sat Bangkok.',
+           'd': '2026-11-26',
+           't': 'MACRO',
+           'tac': 'No order.'},
+          {'bkk': 'Mon 30 Nov (approx.)',
+           'cond': 'About 1.3bn SPCX shares unlock - the supply event. Not funded; rate rule.',
+           'd': '2026-11-30',
+           't': 'SPCX',
+           'tac': 'No order - watch only (10 Dec item).'}],
  'rules': ['LIMIT orders only - never market orders.',
            'Never more than +1% above the reference close.',
            'Commission 0.214%, minimum $8.56 - share counts already allow for it.',
            'Send the POEMS confirmation the same day; Claude books the fill.'],
- 'title': 'Buy/Sell plan 1 - 15 Nov 2026',
- 'to': '2026-11-15'}
+ 'title': 'Buy/Sell plan 9 - 30 Nov 2026',
+ 'to': '2026-11-30'}
 
 METRICS3 = M3  # alias: per-ticker pfcf / ev (EV/EBITDA) / de (Debt/Equity)
 
