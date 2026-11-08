@@ -12,13 +12,19 @@ Answer given to Salee: no rule change now, few expected. Our rules rest on compa
 6. **State data-centre politics (added 5 Nov)** — Democratic governors-elect in Texas (Hinojosa), Ohio and Georgia campaigned on data-centre moratoria or subsidy cuts. Texas is ~30% of planned US capacity by 2028 (Bloom Energy). Abbott had already paused new grid connections in Aug. Power group (VST, CEG, GEV, ETN, VRT, CAT — 12% of cost) fell 9-14% on 4 Nov. Check by 10 Dec: has any moratorium actually been enacted (most need legislatures, which meet from Jan 2027)? Have hyperscalers cut 2027 capex guides? VST's 6 Nov results and 10 Nov DECIDE are the first test. Do not react to campaign promises; react to enacted rules and to capex guidance.
 Also noted: tariffs a mild positive for AAPL/TSM/CAT (no rule change); defence-budget trims irrelevant (RKLB capped at cost, LHX off the board).
 
+## A2. Funding after the Board decision of 8 Nov (added 8 Nov)
+The Board cut the new money to **$100,000** and moved it to **February 2027** (was $150,000 in January), because of poor recent performance and macro uncertainty. The $39,269.96 February top-up to $1,000,000 is cancelled; total funding is now about **$910,730**. The $50,000 crash reserve stays, held in SGOV from existing cash.
+1. **Close the gap** — approved but unspent room is ~$196,880 (holding budgets $170,882 + ranked pool $25,998). Money to fund it through February is ~$140,271 (cash $20,531 + SGOV above the floor $19,740 + February $100,000). Trim about **$56,600** of budgets, lowest priority first.
+2. **Rank the $100,000** — what it buys first, in 2-3 rounds after the Jan-Feb results (finish line end-March 2027). Candidates in the queue: KLAC tranche 3 $6,489.31 and LRCX tranche 3 $4,399.88 (deferred 8 Nov), GOOGL tranche 3 $18,524.08, AVGO $5,000, MU $3,418.42 (17 Dec), ASML rung 2 $6,605.94 (27 Jan), APP $9,000 (line $320), PLTR $10,466.91 (line $150), NVDA rung 2 $5,619.72 (line $180), the ranked pool, and any new names (Trane, Lilly, MP).
+3. **Funding gate until February** — confirm the rule: a line that fires before February waits; no SGOV sale below $50,000 except under the crash-reserve rule.
+
 ## B. Positions to decide
 - **GOOGL tranche 3** ($18,524.08): buy only if (1) no further share sale outside the June $84.75bn package (the $40bn ATM is part of it) and (2) a credible path back to positive free cash flow. Fail = budget cut to cost ($59,475.92), no sale.
 - **META** — rule triggered 27 Oct (negative FCF + ~$95bn share sales); S&P outlook negative 30 Oct. Hold, no new money. Watch the 2027 capex figure.
 - **AMZN** — over budget by $600.75; TTM FCF −$42.4bn. Hold; review the Q4 print in late Jan.
 - **MRVL + LITE** — all-stock deal (4.5 MRVL per LITE; close 1H 2028). Set ONE combined budget (MRVL $21,000 + LITE $9,372.74). Verify break fees in the 8-K (per 4 Nov slide: MRVL pays $3.2bn if regulators block, $5.8bn if it walks; LITE pays $2.9bn).
 - **VRT** — orders/backlog disclosure still partial for a third quarter.
-- **APP** — balance-sheet check (if the 5 Nov half 1 was bought).
+- **APP** — not bought: passed the 4 Nov results tests but closed +31% (356.10) then 391.22. Standing line $320 for the first $9,000; re-decide here.
 - **STRL** — failed the 28 Oct backlog test; re-test at the Q4 results (~Feb).
 
 ## C. Rules and method

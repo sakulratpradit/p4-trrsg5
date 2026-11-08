@@ -3,7 +3,13 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ("Nov 7, 2026 14:30 Bangkok - SCHEDULE CLEANED at Salee's instruction: 13 rows dated before Mon 9 Nov archived to "
+ASOF = ('Nov 8, 2026 10:30 Bangkok - BOARD DECISION (Salee): (1) KLAC and LRCX tranche 3 (19 Nov, $10,889) DEFERRED to the 10 '
+ 'Dec review; (2) new money CUT to $100,000 and MOVED to February 2027 (was $150,000 in January); the $39,269.96 '
+ 'February top-up is cancelled - funding target now $910,730.04, not $1,000,000. Crash reserve unchanged at $50,000, '
+ 'held in SGOV from existing cash. FUNDING GATE to February: only ~$4,700 spendable above the reserve after the 9-11 '
+ 'Nov buys (NVDA $3,000 on 18 Nov fits); any other line that fires waits for the February money. 10 Dec must close a '
+ '~$56,600 gap between approved room and money. Week of 9 Nov unchanged. || PREVIOUS ENTRY: Nov 7, 2026 14:30 Bangkok '
+ "- SCHEDULE CLEANED at Salee's instruction: 13 rows dated before Mon 9 Nov archived to "
  'src/schedule_archive_2026-11-09.json; the APP $320 trigger kept as a standing row. BUY/SELL PLAN ROLLED to 9 - 30 '
  'Nov: week 1 unchanged (AMD + TSM + SGOV sale Mon; AVGO + V + VST Tue; CAT Wed); NVDA DECIDE $3,000 on 18 Nov '
  'results; ⚠️ KLAC/LRCX tranche 3 (19 Nov, $10,889) flagged - cannot be funded without breaching the $50,000 SGOV '
@@ -4774,7 +4780,7 @@ TOTALS = {'dividendsNote': 'Cash dividends after US withholding tax, Mar-Oct 202
               'carries ANET (-61.82) and TER (-118.25) at a lower cost than the cash paid in June.',
  'soldCostTHB': 2945924,
  'soldCostUSD': 90392.39,
- 'targetUSD': 1000000}
+ 'targetUSD': 910730.04}
 
 SOLD = [{'costTHB': 64909.61,
   'costUSD': 1933.56,
@@ -5605,7 +5611,11 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
                     'in 2026; beta about 2.5 - expect 15-20% moves on the print either way. || PREVIOUS RULE '
                     '(replaced): THE NUMBER IS E-COMMERCE PIXEL ADDITIONS - they slowed to ~750 in June from ~950 in '
                     'May. Growth ran 68>66>59>53>guided 47%. SEC closed its inquiry with no action; CapitalWatch '
-                    'retracted. A SECOND guidance miss means the edge is eroding, not pausing.',
+                    'retracted. A SECOND guidance miss means the edge is eroding, not pausing. || FUNDING (8 Nov): no '
+                    'new money until Feb 2027 ($100,000). Until then a buy is paid only from cash plus SGOV above the '
+                    '$50,000 crash-reserve floor (~$4,700 after the 9-11 Nov buys, ~$1,700 after NVDA 18 Nov). If this '
+                    'fires before February and does not fit, it WAITS for the February money - no SGOV sale below the '
+                    'floor.',
             'd': '',
             'dl': 'Standing',
             'k': 'earnings',
@@ -5824,28 +5834,32 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
            {'a': 'DECIDE',
             'amt': 6489.31,
             'c': 'planned',
-            'cond': '⚠️ FUNDING (flagged 7 Nov): after the 9-11 Nov buys free cash is ~$1,000 and SGOV ~544 sh '
-                    '(~$54,700). Funding this tranche from SGOV would take it to ~$44,000, below the $50,000 crash '
-                    'reserve. DECIDE BY MON 16 NOV: (a) new money arrives -> buy as planned; (b) no new money -> DEFER '
-                    "to the 10 Dec review (Claude's recommendation: the reserve rule is senior to a planned tranche). "
-                    'After the November cluster confirms.',
-            'd': '2026-11-19',
+            'cond': 'BOARD DECISION 8 Nov 2026 (Salee): deferred - could not be funded without taking SGOV below the '
+                    '$50,000 crash reserve. At 10 Dec: keep, cut or move into the February $100,000 plan. FUNDING (8 '
+                    'Nov): no new money until Feb 2027 ($100,000). Until then a buy is paid only from cash plus SGOV '
+                    'above the $50,000 crash-reserve floor (~$4,700 after the 9-11 Nov buys, ~$1,700 after NVDA 18 '
+                    'Nov). If this fires before February and does not fit, it WAITS for the February money - no SGOV '
+                    'sale below the floor.',
+            'd': '2026-12-10',
             'k': 'tranche',
             't': 'KLAC',
-            'w': 'Tranche 3 - semicap'},
+            'w': 'BOARD DECISION 8 Nov 2026 (Salee): tranche 3 DEFERRED from 19 Nov to the 10 Dec review. Tranche 3 - '
+                 'semicap'},
            {'a': 'DECIDE',
             'amt': 4399.88,
             'c': 'planned',
-            'cond': '⚠️ FUNDING (flagged 7 Nov): after the 9-11 Nov buys free cash is ~$1,000 and SGOV ~544 sh '
-                    '(~$54,700). Funding this tranche from SGOV would take it to ~$44,000, below the $50,000 crash '
-                    'reserve. DECIDE BY MON 16 NOV: (a) new money arrives -> buy as planned; (b) no new money -> DEFER '
-                    "to the 10 Dec review (Claude's recommendation: the reserve rule is senior to a planned tranche). "
-                    'After the November cluster confirms.',
-            'd': '2026-11-19',
+            'cond': 'BOARD DECISION 8 Nov 2026 (Salee): deferred - could not be funded without taking SGOV below the '
+                    '$50,000 crash reserve. At 10 Dec: keep, cut or move into the February $100,000 plan. FUNDING (8 '
+                    'Nov): no new money until Feb 2027 ($100,000). Until then a buy is paid only from cash plus SGOV '
+                    'above the $50,000 crash-reserve floor (~$4,700 after the 9-11 Nov buys, ~$1,700 after NVDA 18 '
+                    'Nov). If this fires before February and does not fit, it WAITS for the February money - no SGOV '
+                    'sale below the floor.',
+            'd': '2026-12-10',
             'k': 'tranche',
             't': 'LRCX',
-            'w': 'Tranche 3 - semicap. CUT 12 Oct from $10,899.88 to $4,399.88 (Phase 1; 15% upside, priority score '
-                 '13). $6,500 returns to the ranked pool.'},
+            'w': 'BOARD DECISION 8 Nov 2026 (Salee): tranche 3 DEFERRED from 19 Nov to the 10 Dec review. Tranche 3 - '
+                 'semicap. CUT 12 Oct from $10,899.88 to $4,399.88 (Phase 1; 15% upside, priority score 13). $6,500 '
+                 'returns to the ranked pool.'},
            {'a': 'WATCH',
             'amt': 0,
             'c': 'estimated',
@@ -6646,7 +6660,11 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
             'amt': 5000,
             'c': 'estimated',
             'cond': 'Buy only if AI revenue hits the guided $21.7bn. WARNING: AVGO is more expensive than NVDA on '
-                    'EVERY valuation measure while growing slower with a third of the ROE.',
+                    'EVERY valuation measure while growing slower with a third of the ROE. || FUNDING (8 Nov): no new '
+                    'money until Feb 2027 ($100,000). Until then a buy is paid only from cash plus SGOV above the '
+                    '$50,000 crash-reserve floor (~$4,700 after the 9-11 Nov buys, ~$1,700 after NVDA 18 Nov). If this '
+                    'fires before February and does not fit, it WAITS for the February money - no SGOV sale below the '
+                    'floor.',
             'd': '2026-12-10',
             'k': 'earnings',
             't': 'AVGO',
@@ -7446,7 +7464,11 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
                     'about 25 is the real figure. || ⚠️ EUROPE IS STILL LIVE: the European Commission fined Google '
                     '890m euro on Jul 23, 2026 under the Digital Markets Act - 460m for self-preferencing in Search '
                     'and 430m on Play anti-steering - and ordered the non-compliance ended. Separate from the older '
-                    'EUR2.95bn ad-tech decision where the Commission still wants a STRUCTURAL remedy.',
+                    'EUR2.95bn ad-tech decision where the Commission still wants a STRUCTURAL remedy. || FUNDING (8 '
+                    'Nov): no new money until Feb 2027 ($100,000). Until then a buy is paid only from cash plus SGOV '
+                    'above the $50,000 crash-reserve floor (~$4,700 after the 9-11 Nov buys, ~$1,700 after NVDA 18 '
+                    'Nov). If this fires before February and does not fit, it WAITS for the February money - no SGOV '
+                    'sale below the floor.',
             'd': '2026-12-10',
             'k': 'tranche',
             't': 'GOOGL',
@@ -8211,7 +8233,11 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
                     'drop would bypass the volume test, which is the whole protection against buying a memory peak. | '
                     'Deploy ONLY if DRAM bits grow double-digit for a SECOND consecutive quarter. Two in a row means '
                     'the story has genuinely turned from price to volume; one is noise. If Sep 30 failed its test, '
-                    'this rung does not fire either - do not average into a rolling cycle.',
+                    'this rung does not fire either - do not average into a rolling cycle. || FUNDING (8 Nov): no new '
+                    'money until Feb 2027 ($100,000). Until then a buy is paid only from cash plus SGOV above the '
+                    '$50,000 crash-reserve floor (~$4,700 after the 9-11 Nov buys, ~$1,700 after NVDA 18 Nov). If this '
+                    'fires before February and does not fit, it WAITS for the February money - no SGOV sale below the '
+                    'floor.',
             'd': '2026-12-17',
             'k': 'earnings',
             't': 'MU',
@@ -8290,21 +8316,26 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
             'w': 'NEUTRON FIRST LAUNCH - the actual investment case. Electron is a small rocket; Neutron is the one '
                  'that competes for real payloads. It has still not flown.'},
            {'a': 'ADMIN',
-            'amt': 150000,
+            'amt': 100000,
             'c': 'planned',
-            'cond': 'APPROVED 9 Oct 2026 (Salee: "Yes proceed actions"): the 10-year Treasury is at 5.36%, the highest '
-                    'since 2002. (1) None of the $150,000 is deployed by fixed weights on arrival; the 10 Dec review '
-                    'decides the split. (2) $50,000 is held as a CRASH RESERVE: it is spent only if the S&P 500 closes '
-                    '15% or more below its all-time high, and then only on names already on the board trading at or '
-                    'below our fair value, in two halves at least one week apart. (3) The other $100,000 follows the '
-                    '10 Dec verdicts. || WAS: Account then about $960,730. First use: Tier B names that have passed '
-                    'their conditions; the rest by fixed weights across the ~12 core names, first US trading Tuesday '
-                    'after arrival.',
-            'd': '2027-01-05',
+            'cond': 'BOARD DECISION 8 Nov 2026 (Salee): (1) Injection cut to $100,000 (was $150,000 in January) and '
+                    'deferred to February 2027. (2) The $50,000 crash reserve is ALREADY HELD in SGOV from existing '
+                    'cash, so it does not come out of this money. (3) The $100,000 is deployed by the 10 Dec priority '
+                    'ranking in 2-3 rounds after the Jan-Feb results; nothing goes in by fixed weights on arrival. || '
+                    'WAS (9 Oct): APPROVED 9 Oct 2026 (Salee: "Yes proceed actions"): the 10-year Treasury is at '
+                    '5.36%, the highest since 2002. (1) None of the $150,000 is deployed by fixed weights on arrival; '
+                    'the 10 Dec review decides the split. (2) $50,000 is held as a CRASH RESERVE: it is spent only if '
+                    'the S&P 500 closes 15% or more below its all-time high, and then only on names already on the '
+                    'board trading at or below our fair value, in two halves at least one week apart. (3) The other '
+                    '$100,000 follows the 10 Dec verdicts. || WAS: Account then about $960,730. First use: Tier B '
+                    'names that have passed their conditions; the rest by fixed weights across the ~12 core names, '
+                    'first US trading Tuesday after arrival.',
+            'd': '2027-02-02',
             'k': 'admin',
             't': '',
-            'w': 'NEW MONEY: +$150,000 arrives at POEMS (Salee, January 2027) - DEPLOYMENT PAUSED until the 10 Dec '
-                 'review; $50,000 ring-fenced as a CRASH RESERVE'},
+            'w': 'NEW MONEY: +$100,000 arrives at POEMS in FEBRUARY 2027 (date to confirm; first US trading Tuesday '
+                 'shown) - Board decision 8 Nov 2026: cut from $150,000 and moved from January because of poor recent '
+                 'performance and macro uncertainty. Deployment follows the 10 Dec verdicts.'},
            {'a': 'DECIDE',
             'amt': 6605.94,
             'c': 'estimated',
@@ -8313,21 +8344,26 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
                     '2027, a TUESDAY, which suggests an algorithmic guess. Confirm when ASML publishes its 2027 '
                     'calendar. || THE FULL-YEAR BOOKINGS NUMBER IS THE ONE THAT MATTERS: Q4 2025 booked 13.2bn euro of '
                     'which 7.4bn was EUV. Deploy if FY2026 lands inside the guided 43-45bn euro with 2027 guidance '
-                    'intact.',
+                    'intact. || FUNDING (8 Nov): no new money until Feb 2027 ($100,000). Until then a buy is paid only '
+                    'from cash plus SGOV above the $50,000 crash-reserve floor (~$4,700 after the 9-11 Nov buys, '
+                    '~$1,700 after NVDA 18 Nov). If this fires before February and does not fit, it WAITS for the '
+                    'February money - no SGOV sale below the floor.',
             'd': '2027-01-27',
             'k': 'earnings',
             't': 'ASML',
             'w': 'Q4 and full-year 2026 results - rung 2 of 2'},
            {'a': 'ADMIN',
             'amt': 39269.96,
-            'c': 'planned',
+            'c': 'cancelled',
             'cond': 'All new money is in by February 2027 (Salee, 21 Sep). Invested the same day-rule: fixed weights '
                     'across the core names. From then on the budget is fixed at $1,000,000.',
             'd': '2027-02-02',
             'k': 'admin',
             't': '',
-            'w': 'NEW MONEY: final top-up to bring total funding to $1,000,000 (about $39,269.96 - confirm exact '
-                 'figure against POEMS)'},
+            'w': 'CANCELLED 8 Nov 2026 (Board): the final top-up to $1,000,000 is replaced by the single $100,000 '
+                 'February injection. Total funding is now about $910,730 (Sep base $810,730.04 + $100,000), not '
+                 '$1,000,000. || WAS: NEW MONEY: final top-up to bring total funding to $1,000,000 (about $39,269.96 - '
+                 'confirm exact figure against POEMS)'},
            {'a': 'DECIDE',
             'amt': 0,
             'c': 'standing',
@@ -8472,7 +8508,8 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
             'd': '',
             'k': 'admin',
             't': 'CASH',
-            'w': 'CRASH RESERVE - $50,000 of the January money (approved 9 Oct 2026)'},
+            'w': 'CRASH RESERVE - $50,000 held in SGOV from existing cash (SGOV must stay at or above $50,000). '
+                 'Approved 9 Oct 2026; funding source changed 8 Nov 2026 (no longer from the January money).'},
            {'a': 'HOLD',
             'amt': 0,
             'c': 'standing',
@@ -8530,7 +8567,10 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
            {'a': 'LIMIT',
             'amt': 5619.72,
             'c': 'standing',
-            'cond': "-21.9%. The 'something broke and I want to own it anyway' price.",
+            'cond': "-21.9%. The 'something broke and I want to own it anyway' price. || FUNDING (8 Nov): no new money "
+                    'until Feb 2027 ($100,000). Until then a buy is paid only from cash plus SGOV above the $50,000 '
+                    'crash-reserve floor (~$4,700 after the 9-11 Nov buys, ~$1,700 after NVDA 18 Nov). If this fires '
+                    'before February and does not fit, it WAITS for the February money - no SGOV sale below the floor.',
             'd': '',
             'dl': 'Standing',
             'k': 'limit',
@@ -8540,7 +8580,10 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
             'amt': 10466.91,
             'c': 'standing',
             'cond': 'Forward P/E 85.7 and priced near the analyst average; wait for a better price. Condition set in '
-                    'the 21 Sep budget reset.',
+                    'the 21 Sep budget reset. || FUNDING (8 Nov): no new money until Feb 2027 ($100,000). Until then a '
+                    'buy is paid only from cash plus SGOV above the $50,000 crash-reserve floor (~$4,700 after the '
+                    '9-11 Nov buys, ~$1,700 after NVDA 18 Nov). If this fires before February and does not fit, it '
+                    'WAITS for the February money - no SGOV sale below the floor.',
             'd': '',
             'k': 'trigger',
             't': 'PLTR',
@@ -8603,7 +8646,22 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
             'k': 'macro',
             't': 'MACRO',
             'w': 'Thu 26 Nov: US market CLOSED (Thanksgiving). Fri 27 Nov: early close 13:00 ET = 01:00 Sat Bangkok - '
-                 'place any Friday order before 23:00 Bangkok. No order planned.'}],
+                 'place any Friday order before 23:00 Bangkok. No order planned.'},
+           {'a': 'ADMIN',
+            'amt': 0,
+            'c': 'standing',
+            'cond': 'Unspent approved room is ~$196,880 (holding budgets $170,882 + ranked pool $25,998) against '
+                    '~$140,271 of money to fund it through February (cash $20,531 + SGOV above the floor $19,740 + '
+                    'February $100,000): a gap of about $56,600 for the 10 Dec review to close by trimming budgets.',
+            'd': '',
+            'dl': 'Standing - funding gate to Feb 2027',
+            'k': 'admin',
+            't': 'CASH',
+            'w': 'FUNDING GATE until the February 2027 money (Board, 8 Nov 2026). After the 9-11 Nov buys: cash '
+                 '~$1,000 + SGOV ~544 sh (~$54,700). Spendable without breaking the $50,000 crash reserve: ~$4,700 '
+                 '(NVDA rung 3 $3,000 on 18 Nov fits). Every other buy - standing lines NVDA $180 / PLTR $150 / APP '
+                 '$320, the 10 Dec decisions, MU 17 Dec, ASML 27 Jan - waits for the February $100,000 unless the S&P '
+                 'falls 15% (crash reserve).'}],
  'note': "CLEANED 7 Nov 2026 at Salee's instruction: rows dated before Mon 9 Nov archived to "
          'src/schedule_archive_2026-11-09.json (13 rows; the APP $320 trigger kept as a standing row). Earlier '
          "history: schedule_archive_2026-11-01.json (139 rows). CLEANED 1 Nov 2026 at Salee's instruction: only plans "
@@ -8612,7 +8670,7 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
          '(everything dated before 1 Nov, every done or cancelled row, and undated commentary notes) were moved to '
          'src/schedule_archive_2026-11-01.json and git history - nothing is lost. Claude does not place trades; every '
          'BUY/SELL row is for Salee to place at POEMS as a Day LIMIT order. Amounts are budget room, not orders.',
- 'updated': '2026-11-07'}
+ 'updated': '2026-11-08'}
 
 SELLBOOK = {'comm': '0.20% + 7% VAT (0.214%), minimum 8.56',
  'note': "SEP 12, 2026 - ZETA'S LIMIT LOWERED 32.50 TO 31.00, and NOT because of the viral 'rich before 2030' graphic "
@@ -9952,14 +10010,15 @@ APPROVALS = [{'after': 'Same night (9 Oct): Marvell 47 shares filled at $269.90 
   'd': '2026-10-09',
   'items': [{'due': '2026-12-10',
              'k': 'PAUSE',
-             'text': 'The January $150,000 (arrives about 5 Jan 2027) is NOT spread across our core names on arrival. '
-                     'The 10 Dec review decides how it is used.'},
+             'text': 'SUPERSEDED 8 Nov: now $100,000 in February 2027. The January $150,000 (arrives about 5 Jan 2027) '
+                     'is NOT spread across our core names on arrival. The 10 Dec review decides how it is used.'},
             {'check': 'spx15',
              'due': '',
              'k': 'RESERVE',
-             'text': '$50,000 of it is a CRASH RESERVE. Spend it only if the S&P 500 closes 15% or more below its '
-                     'all-time high - and then only on names already on the board, at or below our fair value, in two '
-                     'halves at least one week apart.'},
+             'text': '$50,000 CRASH RESERVE, held in SGOV from existing cash (changed 8 Nov - no longer from the '
+                     'January money). Spend it only if the S&P 500 closes 15% or more below its all-time high - and '
+                     'then only on names already on the board, at or below our fair value, in two halves at least one '
+                     'week apart.'},
             {'due': '2026-12-10',
              'k': '10 DEC',
              'text': 'Add MP Materials (US rare-earth magnets) to the review. Examine only - no money before then.'},
@@ -9980,11 +10039,11 @@ APPROVALS = [{'after': 'Same night (9 Oct): Marvell 47 shares filled at $269.90 
   'items': [{'due': '2026-12-10',
              'k': '10 DEC',
              'text': 'Add Trane Technologies (TT) as a data-centre cooling candidate. Examine only - no money before '
-                     'the review. Any money would come from the paused $100,000 of January money.'},
+                     'the review. Any money would come from the February 2027 $100,000 (Board, 8 Nov).'},
             {'due': '2026-12-10',
              'k': '10 DEC',
              'text': 'Add Eli Lilly (LLY) as a healthcare, non-AI candidate. Examine only - no money before the '
-                     'review. Any money would come from the paused $100,000 of January money.'}],
+                     'review. Any money would come from the February 2027 $100,000 (Board, 8 Nov).'}],
   'title': 'Approval 10 Oct 2026',
   'why': 'Our portfolio is 80% Technology + Communication and only 1.9% healthcare; cooling is the one data-centre '
          'layer where we own a single name (Vertiv). These candidates add exposure that does not depend on the same AI '
@@ -10006,13 +10065,38 @@ APPROVALS = [{'after': 'Same night (9 Oct): Marvell 47 shares filled at $269.90 
              'k': 'PHASE 3',
              'text': '10 Dec review: cut 37 holdings to about 28 - each sub-1% holding gets BUILD (to at least 1.5%) '
                      'or EXIT. Exit candidates: Cognex, First Solar, Cadence, Teradyne vs Viavi, AeroVironment.'},
-            {'due': '2027-01-05',
+            {'due': '2027-02-02',
              'k': 'PHASE 4',
-             'text': 'January $150,000: $50,000 crash reserve straight into SGOV; $100,000 deployed by priority '
-                     'ranking in 2-3 rounds after Jan-Feb results. Finish line end-Feb 2027.'}],
+             'text': 'CHANGED 8 Nov (Board): February 2027 $100,000, all deployable - the $50,000 crash reserve is '
+                     'already held in SGOV. Deployed by priority ranking in 2-3 rounds after the Jan-Feb results; '
+                     'finish line end-March 2027. || WAS: January $150,000: $50,000 crash reserve straight into SGOV; '
+                     '$100,000 deployed by priority ranking in 2-3 rounds after Jan-Feb results. Finish line end-Feb '
+                     '2027.'}],
   'title': 'Approval 12 Oct 2026 - allocation efficiency plan',
   'why': 'The $2.0M goal needs about 15% a year on nearly every dollar. Idle cash, a long tail of tiny positions and '
-         'budgets aimed at low-upside names were the three leaks.'}]
+         'budgets aimed at low-upside names were the three leaks.'},
+ {'by': 'Salee (RSN Board) - "Defer KLAC and LRCX to Dec 10; reduce the new money injection to only $100,000; defer to '
+        'February 2027"',
+  'd': '2026-11-08',
+  'items': [{'due': '2026-12-10',
+             'k': 'DEFER',
+             'text': 'KLAC tranche 3 ($6,489.31) and LRCX tranche 3 ($4,399.88) moved from 19 Nov to the 10 Dec '
+                     'review.'},
+            {'due': '2027-02-02',
+             'k': 'NEW MONEY',
+             'text': 'Injection cut to $100,000 (was $150,000) and moved from January to February 2027. The separate '
+                     '$39,269.96 February top-up to $1,000,000 is cancelled. Total funding about $910,730.'},
+            {'due': '',
+             'k': 'FUNDING GATE',
+             'text': 'Until February, buys are paid only from cash and SGOV above the $50,000 floor (~$4,700 after the '
+                     '9-11 Nov buys). Standing lines that fire before then wait for the February money.'},
+            {'due': '2026-12-10',
+             'k': '10 DEC',
+             'text': 'Close the funding gap: ~$196,880 of approved room vs ~$140,271 of money through February - trim '
+                     'about $56,600 of budgets and rank what the $100,000 buys.'}],
+  'title': 'Board decision 8 Nov 2026 - new money cut and deferred',
+  'why': 'Poor current performance (stocks -1.4% against cost on 6 Nov after -4.1% on 5 Nov) and several open macro '
+         'risks: rates near 5%, the post-midterm data-centre politics, and the 5 Nov chip rout.'}]
 
 RISK = {'asof': '2026-10-11',
  'beta': 1.61,
@@ -10081,12 +10165,13 @@ BUYPLAN = {'from': '2026-11-09',
          'at the Mon close cap +1% (~$4,700, only if the Mon close is <= $310) + V $2,093 + VST $3,433 (results '
          'PASSED: adj. EBITDA +50%, guide midpoint raised). WED 11 NOV: CAT rung 3 $5,000. After week 1, if everything '
          'fills: cash ~$1,000, SGOV 544 sh (~$54,700). WEEK 2-3: NVDA results Wed 18 Nov - DECIDE $3,000 (fits inside '
-         'the reserve). ⚠️ KLAC $6,489 + LRCX $4,400 tranche 3 on 19 Nov CANNOT be funded without taking SGOV below '
-         'the $50,000 crash reserve - DECIDE BY MON 16 NOV: new money, or defer both to 10 Dec (recommended). THU 26 '
-         'NOV: market closed; Fri 27 Nov early close. MON 30 NOV: SPCX lock-up (watch). STANDING LINES (close at or '
-         'below): NVDA $180 | PLTR $150 | APP $320 (first $9,000). MU: no buy; $3,418 waits for the 17 Dec volume '
-         'test. Crash reserve: S&P is 5.6% below its 6 Oct high - the -15% rule ($50,000) is not triggered. No chasing '
-         'on any order; never in the first 30 minutes.',
+         'the reserve). KLAC + LRCX tranche 3 DEFERRED to 10 Dec (Board, 8 Nov). NEW MONEY: $100,000 in FEBRUARY 2027 '
+         '(Board, 8 Nov; was $150,000 in January) - until then only ~$4,700 is spendable above the $50,000 SGOV '
+         'reserve, so a standing line that fires waits for February. THU 26 NOV: market closed; Fri 27 Nov early '
+         'close. MON 30 NOV: SPCX lock-up (watch). STANDING LINES (close at or below): NVDA $180 | PLTR $150 | APP '
+         '$320 (first $9,000). MU: no buy; $3,418 waits for the 17 Dec volume test. Crash reserve: S&P is 5.6% below '
+         'its 6 Oct high - the -15% rule ($50,000) is not triggered. No chasing on any order; never in the first 30 '
+         'minutes.',
  'pxNote': '6 Nov closes',
  'rows': [{'a': 'BUY',
            'bkk': 'Mon 9 Nov evening (after 22:00)',
@@ -10163,19 +10248,11 @@ BUYPLAN = {'from': '2026-11-09',
            'd': '2026-11-18',
            't': 'NVDA',
            'tac': 'If PASS: BUY $3,000 Day LIMIT at the 18 Nov close, cap +1%.'},
-          {'a': 'DECIDE',
-           'bkk': 'Thu 19 Nov evening (after 22:00)',
-           'cond': '⚠️ Tranche 3 ($6,489) cannot be funded without SGOV falling below the $50,000 reserve. Decide by '
-                   'Mon 16 Nov: new money, or defer to 10 Dec (recommended).',
+          {'bkk': '-',
+           'cond': 'BOARD 8 Nov: KLAC $6,489 + LRCX $4,400 tranche 3 deferred to the 10 Dec review.',
            'd': '2026-11-19',
            't': 'KLAC',
-           'tac': 'DEFER to 10 Dec unless new money arrives by 16 Nov.'},
-          {'a': 'DECIDE',
-           'bkk': 'Thu 19 Nov evening (after 22:00)',
-           'cond': '⚠️ Tranche 3 ($4,400) - same funding constraint as KLAC.',
-           'd': '2026-11-19',
-           't': 'LRCX',
-           'tac': 'DEFER to 10 Dec unless new money arrives by 16 Nov.'},
+           'tac': 'No order in November.'},
           {'bkk': 'Thu 26 Nov',
            'cond': 'US Thanksgiving - market closed. Fri 27 Nov early close 01:00 Sat Bangkok.',
            'd': '2026-11-26',
