@@ -3,7 +3,10 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ("Nov 9, 2026 10:30 Bangkok - ⚠️ NVDA BUYS SUSPENDED (pending Salee): Jensen Huang's 8 Nov letter admitted a personal "
+ASOF = ('Nov 9, 2026 13:00 Bangkok - APPROVED (Salee): RKLB budget set to cost $1,942.58 - no new money (loss-making, rate '
+ 'rule; revisit after Neutron flies and the 10-year is below 5.00%). FSLR added as a 10 Dec candidate for up to '
+ '$10,000 of the February money - no budget until it ranks in. Funding gap unchanged at ~$56,600. || PREVIOUS ENTRY: '
+ "Nov 9, 2026 10:30 Bangkok - ⚠️ NVDA BUYS SUSPENDED (pending Salee): Jensen Huang's 8 Nov letter admitted a personal "
  "relationship with a person reportedly linked to a foreign intelligence effort; NVIDIA's board opened an independent "
  'investigation (independent directors + outside counsel), says it has no reason to believe secrets or national '
  'security were compromised, and keeps Huang as CEO. The $180 line (rung 2) and the 18 Nov rung 3 ($3,000) are on hold '
@@ -2296,7 +2299,7 @@ POS = {'AAPL': {'budget': 11437.61, 'cost': 11437.61, 'shares': 46},
  'PANW': {'budget': 9494.82, 'cost': 9494.82, 'shares': 38},
  'PLTR': {'budget': 16000, 'cost': 5533.09, 'shares': 40},
  'PWR': {'budget': None, 'cost': None, 'shares': None},
- 'RKLB': {'budget': None, 'cost': 1942.58, 'shares': 23},
+ 'RKLB': {'budget': 1942.58, 'cost': 1942.58, 'shares': 23},
  'SE': {'budget': 0, 'cost': None, 'shares': None},
  'SNDK': {'budget': None, 'cost': None, 'shares': None},
  'SNPS': {'budget': 0, 'cost': None, 'shares': None},
@@ -7275,15 +7278,24 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
             't': 'FORM',
             'w': '⚠️ FormFactor - THE THESIS IS HALF TRUE, THE TRANSMISSION TO THE STOCK IS NOT. NOT BOUGHT. '
                  'Re-underwrite only on the two written triggers.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'cond': 'Promote to funded when US solar policy clarifies and bookings hold. Already the cheapest legacy '
-                    'name at 11.6x forward with a 32.47% net margin and Rule of 40 51.7. Held at +6.4%.',
+           {'a': 'DECIDE',
+            'amt': 10000,
+            'c': 'planned',
+            'cond': 'APPROVED 9 Nov 2026 (Salee, "agree as recommendations"): FSLR added as a 10 Dec candidate at up '
+                    'to $10,000; no budget is set until it ranks in (keeps the funding gap at ~$56,600). Case: forward '
+                    'P/E 9.6, net margin 37%, return on capital 20.6%, analyst average $273.67 (+36% vs $201.14). '
+                    'Against: revenue -4%, negative free cash flow from factory building, profit leans on US '
+                    'manufacturing tax credits. BUY CONDITION if it ranks in: Q4 results (Feb) show bookings holding '
+                    'and no cut to the tax credits; Day LIMIT at the prior close, cap +1%. || Promote to funded when '
+                    'US solar policy clarifies and bookings hold. Already the cheapest legacy name at 11.6x forward '
+                    'with a 32.47% net margin and Rule of 40 51.7. Held at +6.4%.',
             'd': '2026-12-10',
             'dl': 'Quarterly review - back-up name',
             'k': 'trigger',
             't': 'FSLR',
-            'w': 'BACK-UP: held with zero budget (sale cancelled 4 Oct by Salee). Do not sell by habit; do not buy '
+            'w': 'CANDIDATE for the February 2027 $100,000: up to $10,000 (~1.1% of the book). Ranked at the 10 Dec '
+                 'review against GOOGL, KLAC/LRCX, ASML and APP on upside x quality. Not funded before February. '
+                 'BACK-UP: held with zero budget (sale cancelled 4 Oct by Salee). Do not sell by habit; do not buy '
                  'without the trigger.'},
            {'a': 'DECIDE',
             'amt': 0,
@@ -7923,23 +7935,25 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
            {'a': 'DECIDE',
             'amt': 0,
             'c': 'open',
-            'cond': 'SALEE ASKED WHETHER THE TEN NAMES ARE WORTH ACTING ON. REDWIRE IS THE ONLY ONE OF THE TEN NOT ON '
-                    'THIS BOARD AT ALL, AND I AM NOT PROPOSING TO ADD IT - NOT BECAUSE THE COMPANY IS BAD, BUT BECAUSE '
-                    'GROUP 9 SPACE AND DEFENCE ALREADY HOLDS $35,000 OF APPROVED BUDGET AGAINST $5,700.88 INVESTED. WE '
-                    'HAVE $29,299.12 OF SPACE MONEY WE HAVE NOT SPENT. ADDING AN ELEVENTH NAME TO A GROUP THAT CANNOT '
-                    'DEPLOY THE TEN IT HAS IS THE EXACT MISTAKE THIS BOARD KEEPS WRITING DOWN. || GROUP 9 AS IT '
-                    'STANDS: RKLB $15,000 budget / $1,942.58 invested; AVAV $11,000 / $3,758.30; LHX $9,000 / ZERO '
-                    'INVESTED; and SPCX, ASTS, LUNR, KTOS, ONDS and GE all carrying no budget. ⚠️ LHX IS A '
-                    "NINE-THOUSAND-DOLLAR BUDGET WITH NOTHING SPENT AND IT IS MEANT TO BE THE GROUP'S PROFITABLE "
-                    'ANCHOR - that is the same "approved money with no written rule" fault as SNPS, TER and ARM. || ⚠️ '
-                    'RKLB ALSO STILL CARRIES THE RULE-OF-40 FAULT: THE FIELD READS MINUS 0.7 AND SHOULD BE ABOUT PLUS '
-                    '4.2. Unfixed since it was found. It stays on the 10 December list. || ON SPCX, NOTHING CHANGES '
-                    'FROM THE 10 SEPTEMBER DECISION AND THE SLIDE GIVES NO REASON TO REVISIT IT EARLY: trailing '
-                    'operating cash flow of $9,900m against capex of $42,415m means FREE CASH FLOW OF MINUS $32,515m - '
-                    'a $32bn annual burn on $23bn of revenue at a $2.0 trillion market value, which is 87x sales. AND '
-                    'THE FLOAT IS 11% - 1.53bn of 13.57bn shares. A PRICE SET BY AN 11% FLOAT IS A QUEUE, NOT A PRICE. '
-                    'DECISION STAYS DEFERRED TO 10 DECEMBER WHEN LOCK-UP SUPPLY IS VISIBLE. THE LOCK-UP EXPIRY COULD '
-                    'NOT BE SOURCED AND NONE IS ASSERTED.',
+            'cond': 'APPROVED 9 Nov 2026 (Salee, "agree as recommendations"): RKLB budget formally set to cost '
+                    '($1,942.58) - no new money. Hold the 23 shares. Revisit only after a successful Neutron first '
+                    'flight AND the 10-year below 5.00%. || SALEE ASKED WHETHER THE TEN NAMES ARE WORTH ACTING ON. '
+                    'REDWIRE IS THE ONLY ONE OF THE TEN NOT ON THIS BOARD AT ALL, AND I AM NOT PROPOSING TO ADD IT - '
+                    'NOT BECAUSE THE COMPANY IS BAD, BUT BECAUSE GROUP 9 SPACE AND DEFENCE ALREADY HOLDS $35,000 OF '
+                    'APPROVED BUDGET AGAINST $5,700.88 INVESTED. WE HAVE $29,299.12 OF SPACE MONEY WE HAVE NOT SPENT. '
+                    'ADDING AN ELEVENTH NAME TO A GROUP THAT CANNOT DEPLOY THE TEN IT HAS IS THE EXACT MISTAKE THIS '
+                    'BOARD KEEPS WRITING DOWN. || GROUP 9 AS IT STANDS: RKLB $15,000 budget / $1,942.58 invested; AVAV '
+                    '$11,000 / $3,758.30; LHX $9,000 / ZERO INVESTED; and SPCX, ASTS, LUNR, KTOS, ONDS and GE all '
+                    'carrying no budget. ⚠️ LHX IS A NINE-THOUSAND-DOLLAR BUDGET WITH NOTHING SPENT AND IT IS MEANT TO '
+                    'BE THE GROUP\'S PROFITABLE ANCHOR - that is the same "approved money with no written rule" fault '
+                    'as SNPS, TER and ARM. || ⚠️ RKLB ALSO STILL CARRIES THE RULE-OF-40 FAULT: THE FIELD READS MINUS '
+                    '0.7 AND SHOULD BE ABOUT PLUS 4.2. Unfixed since it was found. It stays on the 10 December list. '
+                    '|| ON SPCX, NOTHING CHANGES FROM THE 10 SEPTEMBER DECISION AND THE SLIDE GIVES NO REASON TO '
+                    'REVISIT IT EARLY: trailing operating cash flow of $9,900m against capex of $42,415m means FREE '
+                    'CASH FLOW OF MINUS $32,515m - a $32bn annual burn on $23bn of revenue at a $2.0 trillion market '
+                    'value, which is 87x sales. AND THE FLOAT IS 11% - 1.53bn of 13.57bn shares. A PRICE SET BY AN 11% '
+                    'FLOAT IS A QUEUE, NOT A PRICE. DECISION STAYS DEFERRED TO 10 DECEMBER WHEN LOCK-UP SUPPLY IS '
+                    'VISIBLE. THE LOCK-UP EXPIRY COULD NOT BE SOURCED AND NONE IS ASSERTED.',
             'd': '2026-12-10',
             'dl': 'RKLB - $13,057.42 approved and unspent across 6 rows. Fire them or withdraw them.',
             'k': 'budget',
@@ -7952,22 +7966,25 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
            {'a': 'DECIDE',
             'amt': 0,
             'c': 'open',
-            'cond': 'RAISED TWICE TONIGHT FROM TWO DIFFERENT SLIDES, WHICH IS USUALLY THE SIGN THAT A DECISION IS '
-                    'OVERDUE. THE MOAT RANKING MAKES IT CONCRETE. THE BOTTOM EIGHT OF 81: AMKR 74th, LEU 75th, INTC '
-                    '76th, AXTI 77th, KTOS 78th, AVAV 79th, RKLB 80th, AAOI 81st. ⚠️ OF THOSE EIGHT, ONLY TWO CARRY '
-                    'ANY BUDGET AT ALL - AVAV AT $11,000 AND RKLB AT $15,000. SO THE TWO LARGEST UNSPENT BUDGETS IN '
-                    'THE WEAKEST CORNER OF THE BOARD ARE BOTH IN GROUP 9. || ⚠️ I WANT TO BE FAIR TO ROCKET LAB, '
-                    'BECAUSE A LOW RANK HERE IS NOT AUTOMATICALLY A VERDICT. THESE FOUR MEASURES REWARD MATURE, '
-                    'CASH-GENERATIVE BUSINESSES AND PUNISH ANY COMPANY BUILDING FACTORIES AND ROCKETS BEFORE IT HAS '
-                    'REVENUE. NVIDIA WOULD HAVE RANKED BADLY ON THESE FIELDS IN 2015 TOO, AND THE BOARD HAS ALREADY '
-                    'WRITTEN DOWN THAT LESSON. THE RANKING MEASURES A MOAT THAT EXISTS TODAY, NOT ONE BEING DUG. || '
-                    'BUT THAT DEFENCE CUTS A SPECIFIC WAY AND NOT A GENERAL ONE. IF RKLB IS A BET ON A MOAT NOT YET '
-                    'BUILT, THEN THE $13,057.42 NEEDS A MILESTONE, NOT A DATE. THE SIX EXISTING SCHEDULE ROWS ARE '
-                    'CALENDAR ROWS. A BETTER RULE WOULD RELEASE THE MONEY ON EVIDENCE - NEUTRON REACHING A FIRST '
-                    'SUCCESSFUL FLIGHT, OR FREE CASH FLOW REACHING BREAK-EVEN - AND CANCEL IT, NOT DEFER IT, IF '
-                    'NEITHER ARRIVES. THAT IS THE SAME SHAPE AS THE MU CONDITION AND THE LITE CONDITION, BOTH OF WHICH '
-                    "THIS BOARD HAS ALREADY PROVED IT CAN WRITE. || ⚠️ ALSO STILL UNFIXED: RKLB'S RULE-OF-40 FIELD "
-                    'READS MINUS 0.7 AND SHOULD BE ABOUT PLUS 4.2. RAISED REPEATEDLY, NEVER CORRECTED.',
+            'cond': 'APPROVED 9 Nov 2026 (Salee, "agree as recommendations"): RKLB budget formally set to cost '
+                    '($1,942.58) - no new money. Hold the 23 shares. Revisit only after a successful Neutron first '
+                    'flight AND the 10-year below 5.00%. || RAISED TWICE TONIGHT FROM TWO DIFFERENT SLIDES, WHICH IS '
+                    'USUALLY THE SIGN THAT A DECISION IS OVERDUE. THE MOAT RANKING MAKES IT CONCRETE. THE BOTTOM EIGHT '
+                    'OF 81: AMKR 74th, LEU 75th, INTC 76th, AXTI 77th, KTOS 78th, AVAV 79th, RKLB 80th, AAOI 81st. ⚠️ '
+                    'OF THOSE EIGHT, ONLY TWO CARRY ANY BUDGET AT ALL - AVAV AT $11,000 AND RKLB AT $15,000. SO THE '
+                    'TWO LARGEST UNSPENT BUDGETS IN THE WEAKEST CORNER OF THE BOARD ARE BOTH IN GROUP 9. || ⚠️ I WANT '
+                    'TO BE FAIR TO ROCKET LAB, BECAUSE A LOW RANK HERE IS NOT AUTOMATICALLY A VERDICT. THESE FOUR '
+                    'MEASURES REWARD MATURE, CASH-GENERATIVE BUSINESSES AND PUNISH ANY COMPANY BUILDING FACTORIES AND '
+                    'ROCKETS BEFORE IT HAS REVENUE. NVIDIA WOULD HAVE RANKED BADLY ON THESE FIELDS IN 2015 TOO, AND '
+                    'THE BOARD HAS ALREADY WRITTEN DOWN THAT LESSON. THE RANKING MEASURES A MOAT THAT EXISTS TODAY, '
+                    'NOT ONE BEING DUG. || BUT THAT DEFENCE CUTS A SPECIFIC WAY AND NOT A GENERAL ONE. IF RKLB IS A '
+                    'BET ON A MOAT NOT YET BUILT, THEN THE $13,057.42 NEEDS A MILESTONE, NOT A DATE. THE SIX EXISTING '
+                    'SCHEDULE ROWS ARE CALENDAR ROWS. A BETTER RULE WOULD RELEASE THE MONEY ON EVIDENCE - NEUTRON '
+                    'REACHING A FIRST SUCCESSFUL FLIGHT, OR FREE CASH FLOW REACHING BREAK-EVEN - AND CANCEL IT, NOT '
+                    'DEFER IT, IF NEITHER ARRIVES. THAT IS THE SAME SHAPE AS THE MU CONDITION AND THE LITE CONDITION, '
+                    "BOTH OF WHICH THIS BOARD HAS ALREADY PROVED IT CAN WRITE. || ⚠️ ALSO STILL UNFIXED: RKLB'S "
+                    'RULE-OF-40 FIELD READS MINUS 0.7 AND SHOULD BE ABOUT PLUS 4.2. RAISED REPEATEDLY, NEVER '
+                    'CORRECTED.',
             'd': '2026-12-10',
             'dl': '⚠️ RKLB RANKS 80th OF 81 ON MOAT PROXIES AND HOLDS THE LARGEST BUDGET IN THE BOTTOM TWENTY',
             'k': 'thesis',
