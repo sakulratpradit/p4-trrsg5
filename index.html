@@ -273,6 +273,27 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
 .wheel-card{background:var(--surface-1); border:1px solid var(--ring); border-radius:12px; padding:14px 18px 10px; position:relative}
 .wheel-card svg{width:100%; max-width:900px; height:auto; display:block; margin:0 auto}
 .wheel-card .wseg{cursor:pointer}
+.wheel-card.fly svg{max-width:720px; min-width:0 !important}
+#page-fly h2{display:block; line-height:1.35}
+#page-fly h2 .n{display:block; margin-top:3px}
+.flab{fill:#fff; font-weight:700; pointer-events:none; paint-order:stroke; stroke:rgba(0,0,0,.28); stroke-width:2px}
+.flab.l0{font-size:15px}.flab.l1{font-size:12.5px}.flab.l2{font-size:12px; font-weight:650; stroke:rgba(0,0,0,.45)}
+.flab .fsub{font-weight:600; opacity:.95}
+#flyM .flab{stroke:rgba(0,0,0,.35)}
+.fc1{font-size:13px; fill:var(--ink-3)}.fc2{font-size:22px; font-weight:750; fill:var(--ink-1)}.fc3{font-size:14px; font-weight:650; fill:var(--ink-2)}
+.fseg{cursor:pointer}.fseg:hover{opacity:.85}
+.flyinfo{font-size:13px; color:var(--ink-1); padding:8px 4px 2px; min-height:40px; line-height:1.45}
+.fnote{color:var(--ink-3); font-size:12px}
+.flytabwrap{overflow-x:auto; margin:10px 0 6px}
+.flytab{border-collapse:collapse; width:100%; min-width:560px; font-size:12.5px; font-variant-numeric:tabular-nums}
+.flytab th{font-size:11px; color:var(--ink-3); text-align:right; padding:5px 8px; border-bottom:1px solid var(--grid); font-weight:600}
+.flytab td{text-align:right; padding:4px 8px; border-bottom:1px solid var(--grid)}
+.flytab td:first-child,.flytab th:first-child{text-align:left}
+.flytab tr.lv0 td{font-weight:750; background:var(--chip)}
+.flytab tr.lv1 td{font-weight:650}.flytab tr.lv1 td:first-child{padding-left:18px}
+.flytab tr.lv2 td:first-child{padding-left:34px; color:var(--ink-2)}
+.flytab td.pos{color:var(--good)}.flytab td.neg{color:var(--bad)}
+
 .wheel-card .wlab{font-weight:700; letter-spacing:.02em; paint-order:stroke; stroke-linejoin:round; pointer-events:none}
 .wheel-card .wlab.in{fill:#ffffff; stroke:#0b1526; stroke-width:3.8px; stroke-opacity:.85}
 .wheel-card .wlab.out{fill:var(--ink-1); stroke:var(--surface-1); stroke-width:3.6px}
@@ -565,6 +586,7 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
     <button class="tab" data-p="map">🗺 Map</button>
     <button class="tab on" data-p="main">Overview</button>
     <button class="tab" data-p="wheel">Wheel</button>
+    <button class="tab" data-p="fly">Flywheels</button>
     <button class="tab" data-p="groups">Portfolio</button>
     <button class="tab" data-p="trading">Trading</button>
     <button class="tab" data-p="vision">Vision</button>
@@ -662,6 +684,15 @@ footer{margin-top:34px; font-size:11px; color:var(--ink-3); line-height:1.7}
 
 <h2>Allocated budget by stock <span class="n">not what you own &mdash; what you have <em>committed</em> to own &middot; each wedge is one stock's allocated budget and the wider the wedge the bigger the commitment &middot; the <b>solid</b> inner part of each wedge is money already invested and the <b>faded</b> outer part is budget still unspent, so a wedge that looks hollow is one you have promised money to but not yet bought &middot; the table underneath lists every budgeted stock</span></h2>
 <div class="wheel-card" id="bwheelwrap"><svg id="bwheel" viewBox="0 0 1248 1074" role="img" aria-label="Donut chart of allocated budget per stock: wedge width is that stock's share of total allocated budget, the solid part is invested and the faded part is still unspent"></svg><div class="glegend" id="bwlegend"></div><div class="bub-tip" id="bwheeltip"></div></div></div>
+</div>
+
+<div class="page" id="page-fly">
+<h2>Flywheel 1 &mdash; budgets vs actuals <span class="n">owned stocks only, in three clusters &middot; inner ring = cluster, middle = group, outer = stock &middot; wedge width = <b>budget</b> &middot; the <b>solid</b> part of each wedge is money already invested, the pale part is room still unspent &middot; a red rim means invested above budget &middot; * = no budget set (shown at cost)</span></h2>
+<div class="wheel-card fly"><svg id="flyB" viewBox="0 0 720 720" role="img" aria-label="Sunburst of budgets by cluster, group and stock, with the invested share filled in"></svg><div class="flyinfo" id="flyBinfo"></div></div>
+<div class="flytabwrap" id="flyBtab"></div>
+<h2>Flywheel 2 &mdash; market value vs cost <span class="n">same three rings &middot; wedge width = <b>cost</b> &middot; colour = profit or loss (green gain, red loss, grey near zero; full colour at &plusmn;30%) &middot; the thin inner band shows the cluster colour &middot; prices = last booked close</span></h2>
+<div class="wheel-card fly"><svg id="flyM" viewBox="0 0 720 720" role="img" aria-label="Sunburst of cost by cluster, group and stock, coloured by profit or loss"></svg><div class="flyinfo" id="flyMinfo"></div></div>
+<div class="flytabwrap" id="flyMtab"></div>
 </div>
 
 <div class="page" id="page-groups">
@@ -3055,6 +3086,7 @@ function renderMap(){
   var rooms=[
    {p:"main",n:"Overview",s:["Ticker tape and headline tiles (positions, value, cash + SGOV park)",go("main","approvals","Approvals &amp; standing decisions"),go("main","ladders","Price ladders &amp; stops"),go("main","peglens","Fair-value ladder, Valuation map, PEG lens"),"Metric matrix (rows 27-30 = Quality, Upside, Priority, Rank)","Position cards"]},
    {p:"wheel",n:"Wheel",s:["Plan against reality","Portfolio wheel","Investment by group","Allocated budget by stock"]},
+   {p:"fly",n:"Flywheels",s:["Budgets vs actuals: cluster, group, stock","Market value vs cost: cluster, group, stock","Two tables with $ and % for every line"]},
    {p:"groups",n:"Portfolio",s:["Totals &amp; returns","Win / loss record","Quality scorecard",go("groups","risk","Risk sensitivity"),"Value history","P&amp;L by group and by stock"]},
    {p:"trading",n:"Trading",s:["Cash balance - free, parked in SGOV, total; reconciliation entries","Daily trading activity","Monthly summary"]},
    {p:"vision",n:"Vision",s:["Dad's vision","Expected return"]},
@@ -3087,10 +3119,121 @@ document.querySelectorAll(".tab[data-p]").forEach(b=>b.onclick=()=>{
   if(b.dataset.p==="tiers") renderTiers();
   if(b.dataset.p==="terms") renderTerms();
   if(b.dataset.p==="map") renderMap();
+  if(b.dataset.p==="fly") renderFlywheels();
   /* the wheel fits its own viewBox from getBBox(), which reports zeros while the
      tab is hidden — so redraw it the moment the tab actually becomes visible */
   if(b.dataset.p==="wheel"){ renderWheel(); renderGroupWheel(); renderBudgetWheel(); renderPlanReality(); }
 });
+
+/* ============ Flywheels: 3 clusters -> groups -> held stocks ============ */
+const FLY_CLUSTERS=[
+  {k:"C1",n:"AI Hyperscalers",g:[0],col:"#2a78d6"},
+  {k:"C2",n:"AI-related",g:[1,2,3,4,6],col:"#d88a00"},
+  {k:"C3",n:"Non-AI",g:[5,8,7,9],col:"#1a9e70"}
+];
+const FLY_GNAME={0:"Hyperscalers",1:"AI Chips",2:"Foundry & Equipment",3:"Memory",4:"Networking",6:"Power & Electrification",5:"AI Software",8:"Digital Platforms",7:"Healthcare",9:"Space & Defence"};
+function flyData(){
+  const out=[];
+  FLY_CLUSTERS.forEach(c=>{
+    const C={k:c.k,n:c.n,col:c.col,groups:[]};
+    c.g.forEach((gi,j)=>{
+      const st=STOCKS.filter(s=>s.g===gi && POS[s.t] && POS[s.t].shares>0 && s.price!=null).map(s=>{
+        const P=POS[s.t], cost=P.cost||0, nob=(P.budget==null);
+        return {t:s.t,name:s.name,budget:nob?cost:P.budget,nob:nob,cost:cost,mv:P.shares*s.price,sh:P.shares,px:s.price};
+      }).sort((a,b)=>b.budget-a.budget);
+      if(st.length) C.groups.push({gi:gi,n:FLY_GNAME[gi]||GROUPS[gi],full:GROUPS[gi],stocks:st,shade:j});
+    });
+    out.push(C);
+  });
+  const sum=(arr,k)=>arr.reduce((a,x)=>a+x[k],0);
+  out.forEach(C=>{ C.groups.forEach(G=>{ ["budget","cost","mv"].forEach(k=>G[k]=sum(G.stocks,k)); });
+                   ["budget","cost","mv"].forEach(k=>C[k]=sum(C.groups,k)); });
+  const T={budget:sum(out,"budget"),cost:sum(out,"cost"),mv:sum(out,"mv")};
+  return {C:out,T:T};
+}
+function flyMix(hex,w){ const h=hex.replace("#",""); const c=[0,2,4].map(i=>parseInt(h.substr(i,2),16));
+  return "#"+c.map(v=>Math.round(v+(255-v)*w).toString(16).padStart(2,"0")).join(""); }
+function flyPL(p){ const g=[0,131,0], r=[208,59,59], n=[150,148,140]; const u=Math.max(-1,Math.min(1,p/30));
+  const a=u>=0?g:r, f=Math.abs(u); return "rgb("+[0,1,2].map(i=>Math.round(n[i]+(a[i]-n[i])*f)).join(",")+")"; }
+function renderFlywheel(mode){
+  const svg=document.getElementById(mode==="b"?"flyB":"flyM"); if(!svg) return;
+  const D=flyData(), CX=360, CY=360, R=[[72,150],[154,240],[244,350]];
+  const size=x=> mode==="b"? x.budget : x.cost;
+  const tot=size(D.T);
+  const usd=v=>"$"+Math.round(v).toLocaleString("en-US");
+  const usdk=v=>Math.abs(v)>=1e6?"$"+(v/1e6).toFixed(2)+"m":"$"+(v/1e3).toFixed(1)+"k";
+  const pct=(a,b)=>b?(a/b*100):0;
+  const pt=(r,deg)=>{const a=(deg-90)*Math.PI/180; return [CX+r*Math.cos(a),CY+r*Math.sin(a)];};
+  const arc=(r0,r1,a0,a1)=>{ if(a1-a0>=359.99) a1=a0+359.99; const lg=(a1-a0)>180?1:0, p0=pt(r1,a0),p1=pt(r1,a1),p2=pt(r0,a1),p3=pt(r0,a0);
+    return `M${p0[0].toFixed(2)} ${p0[1].toFixed(2)}A${r1} ${r1} 0 ${lg} 1 ${p1[0].toFixed(2)} ${p1[1].toFixed(2)}L${p2[0].toFixed(2)} ${p2[1].toFixed(2)}A${r0} ${r0} 0 ${lg} 0 ${p3[0].toFixed(2)} ${p3[1].toFixed(2)}Z`; };
+  const segs=[], labs=[]; let a=0; const info={};
+  const metric=x=> mode==="b"
+     ? {main:usdk(x.budget), sub:pct(x.cost,x.budget).toFixed(0)+"% in", tip:`Budget ${usd(x.budget)} · invested ${usd(x.cost)} (${pct(x.cost,x.budget).toFixed(1)}%) · room ${usd(x.budget-x.cost)} · ${pct(x.budget,tot).toFixed(1)}% of all budgets`}
+     : {main:usdk(x.mv), sub:((x.mv/x.cost-1)*100>=0?"+":"")+((x.mv/x.cost-1)*100).toFixed(1)+"%", tip:`Value ${usd(x.mv)} · cost ${usd(x.cost)} · P/L ${(x.mv-x.cost>=0?"+":"−")+usd(Math.abs(x.mv-x.cost))} (${((x.mv/x.cost-1)*100).toFixed(1)}%) · ${pct(x.cost,tot).toFixed(1)}% of cost`};
+  const draw=(x,lev,a0,a1,base,label,id)=>{
+    const [r0,r1]=R[lev]; info[id]={name:label,m:metric(x),nob:x.nob};
+    if(mode==="b"){
+      const f=Math.min(1,x.cost/(x.budget||1)), rf=r0+(r1-r0)*f;
+      segs.push(`<path class="fseg" data-id="${id}" d="${arc(r0,r1,a0,a1)}" fill="${flyMix(base,0.72)}" stroke="var(--surface-1)" stroke-width="1.5"/>`);
+      segs.push(`<path class="fseg" data-id="${id}" d="${arc(r0,rf,a0,a1)}" fill="${base}" stroke="var(--surface-1)" stroke-width="1.5"/>`);
+      if(x.cost>x.budget+0.5) segs.push(`<path d="${arc(r1-4,r1,a0,a1)}" fill="#d03b3b"/>`);
+    } else {
+      const p=(x.mv/x.cost-1)*100;
+      segs.push(`<path class="fseg" data-id="${id}" d="${arc(r0,r1,a0,a1)}" fill="${flyPL(p)}" stroke="var(--surface-1)" stroke-width="1.5"/>`);
+      segs.push(`<path d="${arc(r0,r0+5,a0,a1)}" fill="${base}" pointer-events="none"/>`);
+    }
+    const span=a1-a0, mid=(a0+a1)/2, rm=(r0+r1)/2, m=metric(x);
+    if(lev<2){
+      const arcLen=span*Math.PI/180*rm; if(arcLen<40) return;
+      const flip=(mid>90&&mid<270), rot=flip?mid-180:mid, [x0,y0]=pt(rm,mid);
+      const lines = arcLen>120 ? [label,m.main+" · "+m.sub] : arcLen>70 ? [label,m.sub] : [m.sub];
+      const fs=lev===0?15:12.5, lh=fs*1.15, start=-(lines.length-1)*lh/2;
+      labs.push(`<text transform="translate(${x0.toFixed(1)},${y0.toFixed(1)}) rotate(${rot.toFixed(1)})" text-anchor="middle" class="flab l${lev}">`+
+        lines.map((s,i)=>`<tspan x="0" y="${(start+i*lh+fs*0.35).toFixed(1)}"${i?' class="fsub"':''}>${s}</tspan>`).join("")+`</text>`);
+    } else {
+      if(span<3.2) return;
+      const left=(mid>180), rot=left?mid+90:mid-90, [x0,y0]=pt(r0+8,mid);
+      const txt = span>=5.5 ? `${label}  ${m.sub}` : label;
+      labs.push(`<text transform="translate(${x0.toFixed(1)},${y0.toFixed(1)}) rotate(${rot.toFixed(1)})" text-anchor="${left?'end':'start'}" dy="4" class="flab l2">${txt}</text>`);
+    }
+  };
+  D.C.forEach(C=>{
+    const ca=size(C)/tot*360; draw(C,0,a,a+ca,C.col,C.n,C.k);
+    let ga=a; C.groups.forEach(G=>{ const gs=size(G)/tot*360, gcol=flyMix(C.col,Math.min(0.5,G.shade*0.11));
+      draw(G,1,ga,ga+gs,gcol,G.n,C.k+"g"+G.gi);
+      let sa=ga; G.stocks.forEach(S=>{ const ss=size(S)/tot*360; draw(S,2,sa,sa+ss,gcol,S.t+(S.nob?"*":""),"s"+S.t); sa+=ss; });
+      ga+=gs; });
+    a+=ca; });
+  const T=D.T, tm=metric(T);
+  const center = mode==="b"
+    ? [`<tspan x="${CX}" y="${CY-26}" class="fc1">All budgets</tspan>`,`<tspan x="${CX}" y="${CY}" class="fc2">${usd(T.budget)}</tspan>`,`<tspan x="${CX}" y="${CY+22}" class="fc1">invested ${usd(T.cost)}</tspan>`,`<tspan x="${CX}" y="${CY+42}" class="fc3">${pct(T.cost,T.budget).toFixed(1)}% deployed</tspan>`]
+    : [`<tspan x="${CX}" y="${CY-26}" class="fc1">Market value</tspan>`,`<tspan x="${CX}" y="${CY}" class="fc2">${usd(T.mv)}</tspan>`,`<tspan x="${CX}" y="${CY+22}" class="fc1">cost ${usd(T.cost)}</tspan>`,`<tspan x="${CX}" y="${CY+42}" class="fc3" fill="${T.mv>=T.cost?'var(--good)':'var(--bad)'}">${tm.sub} · ${(T.mv-T.cost>=0?"+":"−")+usd(Math.abs(T.mv-T.cost))}</tspan>`];
+  svg.innerHTML=segs.join("")+labs.join("")+`<text text-anchor="middle">${center.join("")}</text>`;
+  const box=document.getElementById(mode==="b"?"flyBinfo":"flyMinfo");
+  const show=id=>{ const I=info[id]; if(!I) return; box.innerHTML=`<b>${I.name}</b>${I.nob?' <span class="fnote">(no budget set - shown at cost)</span>':''}<br>${I.m.tip}`; };
+  svg.querySelectorAll(".fseg").forEach(p=>{ p.addEventListener("mouseenter",()=>show(p.dataset.id)); p.addEventListener("click",()=>show(p.dataset.id)); });
+  box.innerHTML=`<span class="fnote">Hover or tap any ring. ${tm.tip}</span>`;
+  renderFlyTable(mode,D);
+}
+function renderFlyTable(mode,D){
+  const el=document.getElementById(mode==="b"?"flyBtab":"flyMtab"); if(!el) return;
+  const usd=v=>(v<0?"−":"")+"$"+Math.round(Math.abs(v)).toLocaleString("en-US");
+  const sg=v=>(v>=0?"+":"")+v.toFixed(1)+"%";
+  const tot = mode==="b"? D.T.budget : D.T.cost;
+  const row=(x,lv,name)=>{
+    if(mode==="b"){ const room=x.budget-x.cost, dp=x.budget?x.cost/x.budget*100:0;
+      return `<tr class="lv${lv}"><td>${name}</td><td>${usd(x.budget)}</td><td>${(x.budget/tot*100).toFixed(1)}%</td><td>${usd(x.cost)}</td><td>${dp.toFixed(1)}%</td><td class="${room<-0.5?'neg':''}">${usd(room)}</td></tr>`; }
+    const pl=x.mv-x.cost, pp=(x.mv/x.cost-1)*100;
+    return `<tr class="lv${lv}"><td>${name}</td><td>${usd(x.cost)}</td><td>${(x.cost/tot*100).toFixed(1)}%</td><td>${usd(x.mv)}</td><td class="${pl>=0?'pos':'neg'}">${pl>=0?"+":""}${usd(pl)}</td><td class="${pl>=0?'pos':'neg'}">${sg(pp)}</td></tr>`;
+  };
+  const head = mode==="b" ? "<th></th><th>Budget</th><th>% of all</th><th>Invested</th><th>% deployed</th><th>Room left</th>"
+                          : "<th></th><th>Cost</th><th>% of cost</th><th>Market value</th><th>P/L $</th><th>P/L %</th>";
+  let h=`<table class="flytab"><thead><tr>${head}</tr></thead><tbody>`;
+  D.C.forEach(C=>{ h+=row(C,0,C.n); C.groups.forEach(G=>{ h+=row(G,1,G.n); G.stocks.forEach(S=>{ h+=row(S,2,S.t+(S.nob?" *":"")); }); }); });
+  h+=row(D.T,0,"All holdings")+"</tbody></table>";
+  el.innerHTML=h;
+}
+function renderFlywheels(){ renderFlywheel("b"); renderFlywheel("m"); }
 
 /* ============ theme + boot ============ */
 function applyTheme(dark){
