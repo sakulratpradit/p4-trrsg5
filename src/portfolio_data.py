@@ -3,51 +3,56 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Nov 8, 2026 10:30 Bangkok - BOARD DECISION (Salee): (1) KLAC and LRCX tranche 3 (19 Nov, $10,889) DEFERRED to the 10 '
- 'Dec review; (2) new money CUT to $100,000 and MOVED to February 2027 (was $150,000 in January); the $39,269.96 '
- 'February top-up is cancelled - funding target now $910,730.04, not $1,000,000. Crash reserve unchanged at $50,000, '
- 'held in SGOV from existing cash. FUNDING GATE to February: only ~$4,700 spendable above the reserve after the 9-11 '
- 'Nov buys (NVDA $3,000 on 18 Nov fits); any other line that fires waits for the February money. 10 Dec must close a '
- '~$56,600 gap between approved room and money. Week of 9 Nov unchanged. || PREVIOUS ENTRY: Nov 7, 2026 14:30 Bangkok '
- "- SCHEDULE CLEANED at Salee's instruction: 13 rows dated before Mon 9 Nov archived to "
- 'src/schedule_archive_2026-11-09.json; the APP $320 trigger kept as a standing row. BUY/SELL PLAN ROLLED to 9 - 30 '
- 'Nov: week 1 unchanged (AMD + TSM + SGOV sale Mon; AVGO + V + VST Tue; CAT Wed); NVDA DECIDE $3,000 on 18 Nov '
- 'results; ⚠️ KLAC/LRCX tranche 3 (19 Nov, $10,889) flagged - cannot be funded without breaching the $50,000 SGOV '
- 'reserve; decide by 16 Nov (new money or defer to 10 Dec). Thanksgiving 26 Nov added. || PREVIOUS ENTRY: Nov 7, 2026 '
- '09:40 Bangkok - 6 NOV CLOSE BOOKED FROM POEMS (positions 07:30 SGT): all 36 lines + SGOV tie to the cent (cost '
- '798,074.91; MV 787,577.23; stocks unrealised -10,320.68, -1.42%). NO FILLS: the 6 Nov AMD (24 sh at 404.40) and TSM '
- '(26 sh at 353.10) Day LIMIT orders EXPIRED - closes 449.04 / 375.44. All three lines still met on the close, so MON '
- '9 NOV after 22:00: AMD 22 sh LIMIT 449.04 / cap 453.53 + TSM 25 sh LIMIT 375.44 / cap 379.19 (~$19,300 from cash) '
- 'and SELL 150 SGOV at 100.49. TUE: AVGO 16 sh (if Mon close <= 310) + V + VST (results PASSED: adj. EBITDA +50%, '
- 'guide midpoint raised). WED: CAT. SPY 735.36 (+0.3%), QQQ 656.29 (+1.4%). || PREVIOUS ENTRY: Nov 6, 2026 11:30 '
- 'Bangkok - 5 NOV CLOSE BOOKED FROM POEMS (positions 10:49 SGT): all 36 lines + SGOV tie to the cent (cost 798,074.91; '
- 'MV 768,116.69; stocks unrealised -29,753.46, -4.09%). NO FILLS on 5 Nov: AMD (-13% intraday, closed -17.3% at '
- "404.40) and APP (+31% to 356.10) orders were not placed on Claude's advice. Lines hit on the close: TSM $380 "
- '(353.10) and AVGO $310 (291.53). TONIGHT Fri 6 Nov after 22:00: AMD 24 sh LIMIT 404.40 / cap 408.44; TSM 26 sh LIMIT '
- '353.10 / cap 356.63 - ~$18,930 from cash 20,531. APP deferred (new line $320). AVGO Mon 9 Nov after a ~160 sh SGOV '
- 'sale. Watch closes: 26 verified; TSEM left at 4 Nov. SPY 733.00 (-4.4%), QQQ 647.05 (-6.5%). || PREVIOUS ENTRY: Nov '
- "5, 2026 11:20 Bangkok - MU OVERRIDE WITHDRAWN by Salee on Claude's advice: no MU buy tonight; the $800 line is "
- 'removed and the $3,418.42 waits for the 17 Dec volume test. Tonight: AMD 20 sh LIMIT 488.78 / cap 493.67 and APP 32 '
- 'sh LIMIT 271.75 / cap 274.47 only. || PREVIOUS ENTRY: Nov 5, 2026 10:10 Bangkok - MU $800 OVERRIDE LINE HIT (4 Nov '
- "close 795.23): BUY 4 sh LIMIT 795.23 / cap 803.18 tonight (Salee's 25 Oct override; TrendForce contract prices still "
- "rising, hold-back rule not triggered). Tonight's three buys: AMD 20 sh, APP 32 sh, MU 4 sh. || PREVIOUS ENTRY: Nov "
- "5, 2026 09:30 Bangkok - ALL 63 PRICES AT THE WED 4 NOV CLOSE. 36 HOLDINGS from Salee's POEMS positions screen 09:47 "
- 'SGT: all lines + SGOV match quantity and cost to the cent (798,074.91); MV 831,356.50 incl. SGOV ties; stocks MV '
- '761,644.21, unrealised +33486.36 (+4.60%). 27 WATCH NAMES from financialcontent.com official/4:00 PM closes '
- '(marketbeat/stockanalysis/fool caches stale), each tied to the prior close or a second source; the 8 names left at 2 '
- 'Nov yesterday now carry their verified 3 Nov->4 Nov chain. SPY 766.81 (+1.65%), QQQ 691.95 (+0.97%). Semis/infra '
- 'fell while the index rose: 6%+ moves verified - MSFT +6.7%, AMZN +6.1%, MRVL -7.1%, TER -6.8%, MU -7.0%, SNDK -7.9%, '
- 'STX -8.1%, APH -6.2%, LITE -7.9%, CRDO -9.5%, CGNX -8.7%, LHX -6.9%, KTOS -12.3%, AVAV -8.3%, DDOG -12.7%, ISRG '
- '+9.4%, BWXT -7.8%, GEV -9.3%, ETN -9.9%, VRT -12.9%, PWR -11.7%, CEG -6.7%, VST -13.8%, APP +10.7%, SE +6.3%, STRL '
- '-21.5%. ⚠️ AMD ORDER NOT PLACED on 4 Nov (Salee); AMD closed 488.78, above the $470 line - re-set tonight: BUY 20 sh '
- 'LIMIT 488.78 / cap 493.67. APP RESULTS PASSED ALL FOUR TESTS (rev $2.18bn, adj. EBITDA margin 84%, Q4 guide '
- '$2.37-2.40bn vs $2.25bn, no inquiry): BUY 32 sh LIMIT 271.75 / cap 274.47 tonight; +16% after hours so it may not '
- 'fill - no chasing. || PREVIOUS ENTRY: Nov 4, 2026 15:00 Bangkok - PRICES AT THE TUE 3 NOV CLOSE (the 00:30 UTC price '
- "job did not write them). 36 HOLDINGS from Salee's POEMS positions screen 15:23 SGT: all lines + SGOV match quantity "
- 'and cost to the cent (798,074.91); MV 840,540.75 incl. SGOV ties; stocks MV 770,835.39, unrealised +42677.54 '
- '(+5.86%). 19 WATCH NAMES verified (marketbeat 4:00 PM headers with implied prev close = stored 2 Nov close; '
- 'stockscan/financialcontent official closes for NYSE): SNDK, SNPS, MPWR, STX, GLW, COHR, FN, SPCX, KTOS, ORCL, HOOD, '
- 'CRWD, FTNT, BWXT, PWR, GE, NFLX, APP 245.51 (+7.3%), STRL. 8 LEFT AT THE 2 NOV CLOSE - sources disagree or '
+ASOF = ("Nov 9, 2026 10:30 Bangkok - ⚠️ NVDA BUYS SUSPENDED (pending Salee): Jensen Huang's 8 Nov letter admitted a personal "
+ "relationship with a person reportedly linked to a foreign intelligence effort; NVIDIA's board opened an independent "
+ 'investigation (independent directors + outside counsel), says it has no reason to believe secrets or national '
+ 'security were compromised, and keeps Huang as CEO. The $180 line (rung 2) and the 18 Nov rung 3 ($3,000) are on hold '
+ 'until the results and a first board update. 452 shares HELD - no sale. Tonight unchanged: AMD 22 sh at 449.04, TSM '
+ '25 sh at 375.44, sell 150 SGOV at 100.49. || PREVIOUS ENTRY: Nov 8, 2026 10:30 Bangkok - BOARD DECISION (Salee): (1) '
+ 'KLAC and LRCX tranche 3 (19 Nov, $10,889) DEFERRED to the 10 Dec review; (2) new money CUT to $100,000 and MOVED to '
+ 'February 2027 (was $150,000 in January); the $39,269.96 February top-up is cancelled - funding target now '
+ '$910,730.04, not $1,000,000. Crash reserve unchanged at $50,000, held in SGOV from existing cash. FUNDING GATE to '
+ 'February: only ~$4,700 spendable above the reserve after the 9-11 Nov buys (NVDA $3,000 on 18 Nov fits); any other '
+ 'line that fires waits for the February money. 10 Dec must close a ~$56,600 gap between approved room and money. Week '
+ "of 9 Nov unchanged. || PREVIOUS ENTRY: Nov 7, 2026 14:30 Bangkok - SCHEDULE CLEANED at Salee's instruction: 13 rows "
+ 'dated before Mon 9 Nov archived to src/schedule_archive_2026-11-09.json; the APP $320 trigger kept as a standing '
+ 'row. BUY/SELL PLAN ROLLED to 9 - 30 Nov: week 1 unchanged (AMD + TSM + SGOV sale Mon; AVGO + V + VST Tue; CAT Wed); '
+ 'NVDA DECIDE $3,000 on 18 Nov results; ⚠️ KLAC/LRCX tranche 3 (19 Nov, $10,889) flagged - cannot be funded without '
+ 'breaching the $50,000 SGOV reserve; decide by 16 Nov (new money or defer to 10 Dec). Thanksgiving 26 Nov added. || '
+ 'PREVIOUS ENTRY: Nov 7, 2026 09:40 Bangkok - 6 NOV CLOSE BOOKED FROM POEMS (positions 07:30 SGT): all 36 lines + SGOV '
+ 'tie to the cent (cost 798,074.91; MV 787,577.23; stocks unrealised -10,320.68, -1.42%). NO FILLS: the 6 Nov AMD (24 '
+ 'sh at 404.40) and TSM (26 sh at 353.10) Day LIMIT orders EXPIRED - closes 449.04 / 375.44. All three lines still met '
+ 'on the close, so MON 9 NOV after 22:00: AMD 22 sh LIMIT 449.04 / cap 453.53 + TSM 25 sh LIMIT 375.44 / cap 379.19 '
+ '(~$19,300 from cash) and SELL 150 SGOV at 100.49. TUE: AVGO 16 sh (if Mon close <= 310) + V + VST (results PASSED: '
+ 'adj. EBITDA +50%, guide midpoint raised). WED: CAT. SPY 735.36 (+0.3%), QQQ 656.29 (+1.4%). || PREVIOUS ENTRY: Nov '
+ '6, 2026 11:30 Bangkok - 5 NOV CLOSE BOOKED FROM POEMS (positions 10:49 SGT): all 36 lines + SGOV tie to the cent '
+ '(cost 798,074.91; MV 768,116.69; stocks unrealised -29,753.46, -4.09%). NO FILLS on 5 Nov: AMD (-13% intraday, '
+ "closed -17.3% at 404.40) and APP (+31% to 356.10) orders were not placed on Claude's advice. Lines hit on the close: "
+ 'TSM $380 (353.10) and AVGO $310 (291.53). TONIGHT Fri 6 Nov after 22:00: AMD 24 sh LIMIT 404.40 / cap 408.44; TSM 26 '
+ 'sh LIMIT 353.10 / cap 356.63 - ~$18,930 from cash 20,531. APP deferred (new line $320). AVGO Mon 9 Nov after a ~160 '
+ 'sh SGOV sale. Watch closes: 26 verified; TSEM left at 4 Nov. SPY 733.00 (-4.4%), QQQ 647.05 (-6.5%). || PREVIOUS '
+ "ENTRY: Nov 5, 2026 11:20 Bangkok - MU OVERRIDE WITHDRAWN by Salee on Claude's advice: no MU buy tonight; the $800 "
+ 'line is removed and the $3,418.42 waits for the 17 Dec volume test. Tonight: AMD 20 sh LIMIT 488.78 / cap 493.67 and '
+ 'APP 32 sh LIMIT 271.75 / cap 274.47 only. || PREVIOUS ENTRY: Nov 5, 2026 10:10 Bangkok - MU $800 OVERRIDE LINE HIT '
+ "(4 Nov close 795.23): BUY 4 sh LIMIT 795.23 / cap 803.18 tonight (Salee's 25 Oct override; TrendForce contract "
+ "prices still rising, hold-back rule not triggered). Tonight's three buys: AMD 20 sh, APP 32 sh, MU 4 sh. || PREVIOUS "
+ "ENTRY: Nov 5, 2026 09:30 Bangkok - ALL 63 PRICES AT THE WED 4 NOV CLOSE. 36 HOLDINGS from Salee's POEMS positions "
+ 'screen 09:47 SGT: all lines + SGOV match quantity and cost to the cent (798,074.91); MV 831,356.50 incl. SGOV ties; '
+ 'stocks MV 761,644.21, unrealised +33486.36 (+4.60%). 27 WATCH NAMES from financialcontent.com official/4:00 PM '
+ 'closes (marketbeat/stockanalysis/fool caches stale), each tied to the prior close or a second source; the 8 names '
+ 'left at 2 Nov yesterday now carry their verified 3 Nov->4 Nov chain. SPY 766.81 (+1.65%), QQQ 691.95 (+0.97%). '
+ 'Semis/infra fell while the index rose: 6%+ moves verified - MSFT +6.7%, AMZN +6.1%, MRVL -7.1%, TER -6.8%, MU -7.0%, '
+ 'SNDK -7.9%, STX -8.1%, APH -6.2%, LITE -7.9%, CRDO -9.5%, CGNX -8.7%, LHX -6.9%, KTOS -12.3%, AVAV -8.3%, DDOG '
+ '-12.7%, ISRG +9.4%, BWXT -7.8%, GEV -9.3%, ETN -9.9%, VRT -12.9%, PWR -11.7%, CEG -6.7%, VST -13.8%, APP +10.7%, SE '
+ '+6.3%, STRL -21.5%. ⚠️ AMD ORDER NOT PLACED on 4 Nov (Salee); AMD closed 488.78, above the $470 line - re-set '
+ 'tonight: BUY 20 sh LIMIT 488.78 / cap 493.67. APP RESULTS PASSED ALL FOUR TESTS (rev $2.18bn, adj. EBITDA margin '
+ '84%, Q4 guide $2.37-2.40bn vs $2.25bn, no inquiry): BUY 32 sh LIMIT 271.75 / cap 274.47 tonight; +16% after hours so '
+ 'it may not fill - no chasing. || PREVIOUS ENTRY: Nov 4, 2026 15:00 Bangkok - PRICES AT THE TUE 3 NOV CLOSE (the '
+ "00:30 UTC price job did not write them). 36 HOLDINGS from Salee's POEMS positions screen 15:23 SGT: all lines + SGOV "
+ 'match quantity and cost to the cent (798,074.91); MV 840,540.75 incl. SGOV ties; stocks MV 770,835.39, unrealised '
+ '+42677.54 (+5.86%). 19 WATCH NAMES verified (marketbeat 4:00 PM headers with implied prev close = stored 2 Nov '
+ 'close; stockscan/financialcontent official closes for NYSE): SNDK, SNPS, MPWR, STX, GLW, COHR, FN, SPCX, KTOS, ORCL, '
+ 'HOOD, CRWD, FTNT, BWXT, PWR, GE, NFLX, APP 245.51 (+7.3%), STRL. 8 LEFT AT THE 2 NOV CLOSE - sources disagree or '
  'unconfirmed: ARM, DDOG, TSEM, LHX, NET, BE, SE, CIEN. SPY 754.35, QQQ 685.28. 6%+ moves verified on a second source: '
  'MPWR +6.8%, CRDO +7.8%, FN +15.4%, GEV +6.5%, ETN +7.0%, PWR +6.1%, APP +7.3%, STRL +7.7%. AMD closed 483.90 (above '
  'the $470 line) after a results PASS - order tonight 20 sh LIMIT 483.90 / cap 488.74. || PREVIOUS ENTRY: Nov 4, 2026 '
@@ -5719,21 +5724,30 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
             'k': 'buy',
             't': 'CAT',
             'w': 'CATERPILLAR rung 3 of 3 (5,000 of 15,000).'},
-           {'a': 'DECIDE',
+           {'a': 'WATCH',
             'amt': 3000,
             'c': 'estimated',
-            'cond': 'Funding: fits inside the reserve - ~30 SGOV (544 -> ~514 sh, ~$51,600). Sell SGOV Wed 18 Nov '
-                    'evening only if the results PASS at 05:00 Thu 19 Nov Bangkok; buy Thu 19 Nov evening at the 18 '
-                    'Nov close, cap +1%. BUY $3,000 only if gross margin is 72% or above (below that, custom silicon '
-                    'is biting - cancel this rung and pause the limits). Cut from $8,000 on 4 Oct so the ladder (7,000 '
-                    '+ 5,619.72 + 3,000 = 15,619.72) matches the remaining budget exactly; it had been overcommitted '
-                    'by $5,000. || Buy only if data-centre growth holds ABOVE 80% YoY and gross margin at 73%+. NOT '
-                    "triggers: acquisition headlines, GPU launches, 'AI king' commentary. NVDA is already 13.3% of the "
-                    'book.',
+            'cond': "⚠️ NVDA BUYS SUSPENDED 9 Nov 2026 (Claude; pending Salee's confirmation): on 8 Nov Jensen Huang "
+                    'admitted, in a letter to staff, a personal relationship with a person US intelligence reportedly '
+                    "links to a foreign intelligence effort; NVIDIA's board formed a committee of independent "
+                    'directors with outside counsel to investigate. The board says it has "no reason to believe" '
+                    'national security or NVIDIA secrets were compromised and has confidence in Huang, who remains '
+                    'CEO. Key-person and export-control/regulatory risk is now open. No new NVDA money until (a) the '
+                    '18 Nov results and call AND (b) the board gives a first update. HOLD the 452 shares - no sale. '
+                    'Sell/review triggers: the investigation finds a compromise; Huang leaves without a named '
+                    'successor; or export licences or penalties hit NVIDIA. || Funding: fits inside the reserve - ~30 '
+                    'SGOV (544 -> ~514 sh, ~$51,600). Sell SGOV Wed 18 Nov evening only if the results PASS at 05:00 '
+                    'Thu 19 Nov Bangkok; buy Thu 19 Nov evening at the 18 Nov close, cap +1%. BUY $3,000 only if gross '
+                    'margin is 72% or above (below that, custom silicon is biting - cancel this rung and pause the '
+                    'limits). Cut from $8,000 on 4 Oct so the ladder (7,000 + 5,619.72 + 3,000 = 15,619.72) matches '
+                    'the remaining budget exactly; it had been overcommitted by $5,000. || Buy only if data-centre '
+                    'growth holds ABOVE 80% YoY and gross margin at 73%+. NOT triggers: acquisition headlines, GPU '
+                    "launches, 'AI king' commentary. NVDA is already 13.3% of the book.",
             'd': '2026-11-18',
             'k': 'earnings',
             't': 'NVDA',
-            'w': 'Q3 FY2027 results - ladder rung 3: DECIDE $3,000 (cut from $8,000 on 4 Oct)'},
+            'w': 'SUSPENDED 9 Nov - rung 3 ($3,000) NOT decided on these results; read the results and the '
+                 'investigation together. Q3 FY2027 results - ladder rung 3: DECIDE $3,000 (cut from $8,000 on 4 Oct)'},
            {'a': 'WATCH',
             'amt': 0,
             'c': 'open',
@@ -8564,18 +8578,28 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
             'w': "WITHDRAWN 5 Nov (Salee, on Claude's advice) after the line was hit at 795.23 and not acted on. The "
                  'September volume rule applies again: no price line on MU. | ⚠️ OVERRIDE (Salee 25 Oct): rung 2 '
                  '($3,418.42) may fill EARLY if MU closes below $800 - same money as the 17 Dec row, not extra'},
-           {'a': 'LIMIT',
+           {'a': 'HOLD',
             'amt': 5619.72,
             'c': 'standing',
-            'cond': "-21.9%. The 'something broke and I want to own it anyway' price. || FUNDING (8 Nov): no new money "
-                    'until Feb 2027 ($100,000). Until then a buy is paid only from cash plus SGOV above the $50,000 '
-                    'crash-reserve floor (~$4,700 after the 9-11 Nov buys, ~$1,700 after NVDA 18 Nov). If this fires '
-                    'before February and does not fit, it WAITS for the February money - no SGOV sale below the floor.',
+            'cond': "⚠️ NVDA BUYS SUSPENDED 9 Nov 2026 (Claude; pending Salee's confirmation): on 8 Nov Jensen Huang "
+                    'admitted, in a letter to staff, a personal relationship with a person US intelligence reportedly '
+                    "links to a foreign intelligence effort; NVIDIA's board formed a committee of independent "
+                    'directors with outside counsel to investigate. The board says it has "no reason to believe" '
+                    'national security or NVIDIA secrets were compromised and has confidence in Huang, who remains '
+                    'CEO. Key-person and export-control/regulatory risk is now open. No new NVDA money until (a) the '
+                    '18 Nov results and call AND (b) the board gives a first update. HOLD the 452 shares - no sale. '
+                    'Sell/review triggers: the investigation finds a compromise; Huang leaves without a named '
+                    "successor; or export licences or penalties hit NVIDIA. || -21.9%. The 'something broke and I want "
+                    "to own it anyway' price. || FUNDING (8 Nov): no new money until Feb 2027 ($100,000). Until then a "
+                    'buy is paid only from cash plus SGOV above the $50,000 crash-reserve floor (~$4,700 after the '
+                    '9-11 Nov buys, ~$1,700 after NVDA 18 Nov). If this fires before February and does not fit, it '
+                    'WAITS for the February money - no SGOV sale below the floor.',
             'd': '',
             'dl': 'Standing',
             'k': 'limit',
             't': 'NVDA',
-            'w': 'Ladder rung 2 - any close at or below $180'},
+            'w': 'SUSPENDED 9 Nov (was: LIMIT, any close at or below $180, rung 2 $5,619.72). Ladder rung 2 - any '
+                 'close at or below $180'},
            {'a': 'TRIGGER',
             'amt': 10466.91,
             'c': 'standing',
@@ -10164,14 +10188,14 @@ BUYPLAN = {'from': '2026-11-09',
          'from cash $20,531; SELL 150 SGOV at 100.49 (~$15,040) the same evening for Tuesday. TUE 10 NOV: AVGO 16 sh '
          'at the Mon close cap +1% (~$4,700, only if the Mon close is <= $310) + V $2,093 + VST $3,433 (results '
          'PASSED: adj. EBITDA +50%, guide midpoint raised). WED 11 NOV: CAT rung 3 $5,000. After week 1, if everything '
-         'fills: cash ~$1,000, SGOV 544 sh (~$54,700). WEEK 2-3: NVDA results Wed 18 Nov - DECIDE $3,000 (fits inside '
-         'the reserve). KLAC + LRCX tranche 3 DEFERRED to 10 Dec (Board, 8 Nov). NEW MONEY: $100,000 in FEBRUARY 2027 '
-         '(Board, 8 Nov; was $150,000 in January) - until then only ~$4,700 is spendable above the $50,000 SGOV '
-         'reserve, so a standing line that fires waits for February. THU 26 NOV: market closed; Fri 27 Nov early '
-         'close. MON 30 NOV: SPCX lock-up (watch). STANDING LINES (close at or below): NVDA $180 | PLTR $150 | APP '
-         '$320 (first $9,000). MU: no buy; $3,418 waits for the 17 Dec volume test. Crash reserve: S&P is 5.6% below '
-         'its 6 Oct high - the -15% rule ($50,000) is not triggered. No chasing on any order; never in the first 30 '
-         'minutes.',
+         'fills: cash ~$1,000, SGOV 544 sh (~$54,700). WEEK 2-3: ⚠️ NVDA BUYS SUSPENDED 9 Nov (CEO disclosure + board '
+         'investigation): results Wed 18 Nov are read, not acted on; the $180 line is on hold. KLAC + LRCX tranche 3 '
+         'DEFERRED to 10 Dec (Board, 8 Nov). NEW MONEY: $100,000 in FEBRUARY 2027 (Board, 8 Nov; was $150,000 in '
+         'January) - until then only ~$4,700 is spendable above the $50,000 SGOV reserve, so a standing line that '
+         'fires waits for February. THU 26 NOV: market closed; Fri 27 Nov early close. MON 30 NOV: SPCX lock-up '
+         '(watch). STANDING LINES (close at or below): NVDA $180 SUSPENDED | PLTR $150 | APP $320 (first $9,000). MU: '
+         'no buy; $3,418 waits for the 17 Dec volume test. Crash reserve: S&P is 5.6% below its 6 Oct high - the -15% '
+         'rule ($50,000) is not triggered. No chasing on any order; never in the first 30 minutes.',
  'pxNote': '6 Nov closes',
  'rows': [{'a': 'BUY',
            'bkk': 'Mon 9 Nov evening (after 22:00)',
@@ -10241,13 +10265,13 @@ BUYPLAN = {'from': '2026-11-09',
            'd': '2026-11-12',
            't': 'MACRO',
            'tac': 'No order.'},
-          {'a': 'DECIDE',
+          {'a': None,
            'bkk': 'Thu 19 Nov ~05:00 (results); act Thu 19 Nov evening',
-           'cond': 'Q3 FY2027 results Wed 18 Nov after the close. Ladder rung 3: DECIDE $3,000. Sell ~30 SGOV Wed '
-                   'evening only on a PASS; keeps SGOV above the $50,000 reserve.',
+           'cond': '⚠️ NVDA buys suspended 9 Nov: CEO personal-conduct disclosure and board investigation (independent '
+                   'directors, outside counsel). Results Wed 18 Nov.',
            'd': '2026-11-18',
            't': 'NVDA',
-           'tac': 'If PASS: BUY $3,000 Day LIMIT at the 18 Nov close, cap +1%.'},
+           'tac': 'No order. Read results + any board update. HOLD the 452 shares.'},
           {'bkk': '-',
            'cond': 'BOARD 8 Nov: KLAC $6,489 + LRCX $4,400 tranche 3 deferred to the 10 Dec review.',
            'd': '2026-11-19',
