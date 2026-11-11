@@ -187,6 +187,10 @@ tbody tr.group:hover td, tbody tr.group:hover th{background:var(--chip)}
 .card .head{display:flex; justify-content:space-between; align-items:baseline}
 .card .head .t{font-size:17px; font-weight:700; display:flex; gap:8px; align-items:center}
 .card .head .p{font-size:17px; font-weight:650; font-variant-numeric:tabular-nums}
+
+.pline{font-size:12px; line-height:1.4; padding:6px 9px; border-radius:8px; background:var(--chip); border-left:3px solid var(--s1); color:var(--ink-1)}
+.pline.susp{border-left-color:var(--warn)}
+.pline.hit{border-left-color:var(--good)}
 .card .gname{font-size:10.5px; color:var(--ink-3); text-transform:uppercase; letter-spacing:.05em}
 .card .cdesc{font-size:11.5px; line-height:1.45; color:var(--ink-2); background:var(--chip); border-left:3px solid var(--s1); border-radius:0 6px 6px 0; padding:6px 9px; margin:6px 0 2px}
 .card .cfacts{display:block; margin-top:5px; font-size:10.5px; font-weight:600; color:var(--ink-3)}
@@ -808,6 +812,17 @@ const pstat = t => { const p=(typeof POS!=="undefined"&&POS[t])||{}; const sh=p.
     const st=((typeof SCHEDULE!=="undefined"&&SCHEDULE.items)||[]).find(i=>i.t===t&&i.a==="STOP"&&i.c==="standing");
     const m=st&&/\$(\d[\d,.]*)/.exec(st.w||""); return ["hold", m?"HOLD · stop $"+m[1]:"HOLD · no new money"]; }
   return ["watch","WATCH"]; };
+const PL_RE=/(?:below|LIMIT (?:ORDER )?AT)\s*\$(\d{1,3}(?:,\d{3})*(?:\.\d+)?)/i;
+function plHtml(t){
+  const it=((typeof SCHEDULE!=="undefined"&&SCHEDULE.items)||[]).filter(i=>i.t===t&&!i.d&&i.c==="standing"&&PL_RE.test(i.w||"")&&(["LIMIT","TRIGGER"].includes(i.a)||(i.a==="HOLD"&&/^SUSPENDED/.test(i.w||""))));
+  if(!it.length) return "";
+  const s=STOCKS.find(x=>x.t===t), p=s&&s.price;
+  return it.map(i=>{ const lv=parseFloat(PL_RE.exec(i.w)[1].replace(/,/g,"")), susp=i.a==="HOLD", hit=p&&p<=lv;
+    const d=!p?"":(p>lv?"$"+p.toLocaleString("en-US")+" &mdash; needs a "+((1-lv/p)*100).toFixed(1)+"% fall to reach it":"$"+p.toLocaleString("en-US")+" &mdash; below the line");
+    const amt=i.amt?" &middot; $"+Math.round(i.amt).toLocaleString("en-US")+" set aside":"";
+    const lead=susp?"SUSPENDED &mdash; no buying":(hit?"HIT &mdash; last close is at or below the line":"buy on a close at or below");
+    return `<div class="pline${susp?" susp":(hit?" hit":"")}"><b>Price line $${lv.toLocaleString("en-US")}</b> &middot; ${lead} &middot; last close ${d}${amt}</div>`; }).join("");
+}
 let SFILTER = "all";
 const statOk = t => SFILTER==="all" ? true
                   : (SFILTER==="plan" ? pstat(t)[0]!=="watch" : pstat(t)[0]===SFILTER);
@@ -1819,6 +1834,7 @@ function renderCards(){
       </div>
       <div class="gname">${GROUPS[s.g]}</div>
       ${ovHtml(s.t)}
+      ${plHtml(s.t)}
       <div class="chips">
         <span class="chip">YTD <b>${pct(ytd(s))}</b></span>
         <span class="chip">Conviction <b>${pct(conv(s))}</b></span>
@@ -3294,7 +3310,8 @@ if(matchMedia && matchMedia("(prefers-color-scheme: dark)").matches) applyTheme(
   var LV=/(?:below|LIMIT (?:ORDER )?AT)\s*\$(\d{1,3}(?:,\d{3})*(?:\.\d+)?)/i;
   var today=new Date().toISOString().slice(0,10);
   var items=SCHEDULE.items||[];
-  var std=items.filter(function(i){return i.c==='standing' && ['LIMIT','TRIGGER','STOP'].indexOf(i.a)>=0 && LV.test(i.w||'');});
+  var isSusp=function(i){return i.a==='HOLD' && /^SUSPENDED/.test(i.w||'');};
+  var std=items.filter(function(i){return i.c==='standing' && (['LIMIT','TRIGGER','STOP'].indexOf(i.a)>=0 || isSusp(i)) && LV.test(i.w||'');});
   var tick={}; std.forEach(function(i){tick[i.t]=1;}); items.forEach(function(i){if(i.a==='BUY'&&i.d&&i.d>=today&&i.c!=='done'&&i.c!=='cancelled'&&/LIMIT (?:ORDER )?AT\s*\$/i.test((i.cond||'')+' '+(i.w||'')))tick[i.t]=1;});
   var dated=items.filter(function(i){return tick[i.t] && i.d && i.d>=today && i.c!=='done' && i.c!=='cancelled' && ['BUY','SELL','DECIDE'].indexOf(i.a)>=0 && (i.amt||0)>0 || (tick[i.t] && i.d && i.d>=today && i.a==='SELL' && i.c==='planned');});
   var f=function(n){return '$'+Number(n).toLocaleString('en-US',{maximumFractionDigits:2});};
@@ -3307,11 +3324,12 @@ if(matchMedia && matchMedia("(prefers-color-scheme: dark)").matches) applyTheme(
     r.sort(function(a,b){return (b.lv||0)-(a.lv||0);});
     r.forEach(function(x,k){
       var i=x.i, stop=i.a==='STOP'||i.a==='SELL';
-      var kind=x.dated?(i.a==='SELL'?'Dated sell '+i.d:(i.a==='DECIDE'?'Decide '+i.d:'Dated buy '+i.d)):(stop?'SELL STOP':'Buy rung');
+      var susp=!x.dated&&isSusp(i);
+      var kind=x.dated?(i.a==='SELL'?'Dated sell '+i.d:(i.a==='DECIDE'?'Decide '+i.d:'Dated buy '+i.d)):(stop?'SELL STOP':(susp?'Buy rung (suspended)':'Buy rung'));
       var dist=(x.lv&&p)?((x.lv/p-1)*100):null;
       var hit=x.lv&&p&&p<=x.lv&&!x.dated;
       var money=stop?(i.a==='SELL'?(i.w.match(/\d+ (?:of \d+ )?CRWD|ALL \d+ \w+/)||[''])[0]:('all '+sh+' sh')):(i.amt?f(i.amt)+(p&&x.lv?' &asymp; '+Math.floor(i.amt/Math.min(p,x.lv))+' sh':''):'');
-      var st=hit?'<b style="color:'+(stop?'var(--bad)':'var(--good)')+'">HIT - reply to Claude</b>':(x.dated?'<span style="color:var(--ink-3)">'+(i.cond||'').slice(0,60)+'</span>':'waiting');
+      var st=susp?'<b style="color:#b97a00">SUSPENDED - no buying</b>':hit?'<b style="color:'+(stop?'var(--bad)':'var(--good)')+'">HIT - reply to Claude</b>':(x.dated?'<span style="color:var(--ink-3)">'+(i.cond||'').slice(0,60)+'</span>':'waiting');
       html+='<tr style="border-top:1px solid var(--ring)"><td>'+(k===0?'<b>'+t+'</b><br><span style="color:var(--ink-3);font-size:11px">close '+(p?f(p):'-')+(sh?' &middot; '+sh+' sh':'')+'</span>':'')+'</td><td'+(stop?' style="color:var(--bad)"':'')+'>'+kind+'</td><td style="text-align:right">'+(x.lv?f(x.lv):'-')+'</td><td style="text-align:right">'+(dist===null?'-':(dist>0?'+':'')+dist.toFixed(1)+'%')+'</td><td style="text-align:right">'+money+'</td><td>'+st+'</td></tr>';
     });
   });
