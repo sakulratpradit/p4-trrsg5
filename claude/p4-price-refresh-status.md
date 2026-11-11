@@ -1,9 +1,21 @@
-# P4 price-refresh status — run of 2026-11-10 03:35 UTC (03:30 job)
+# P4 price-refresh status — run of 2026-11-11 00:33 UTC (00:30 job)
 
-- **Run time:** 2026-11-10 03:35 UTC
-- **Trading date recorded:** 2026-11-09 (Mon) — already on the board
-- **Result:** NOT PUSHED (price data) — first-check short-circuit: **63/63 tickers at pxd 2026-11-09**, the most recent completed US trading day. The 00:30 UTC run succeeded (commit `7055ba1`, status `77a11c9`); nothing left to do. This file updated in a status-only commit.
-- **Prices changed this pass:** 0
-- **Unresolved tickers:** none (63/63 current)
-- **Verified at stop:** ASOF stamped "Nov 10, 2026 07:42 Bangkok … board now fully at 9 Nov closes"; BENCH SPY 752.69 / QQQ 679.35 (11-09), spyHigh 779.09 (10-06) unchanged; HISTORY has the 11-09 row (mv 760,568.42, 'live'); risk_series spy and ust10 both end 2026-11-09 (ust10 4.90). No edits made.
-- **Blockers:** none. Carried over from the 00:30 report: the stop rule's "80 or more tickers" threshold can never be met literally on a 63-name board — short-circuited on 63/63 = all; worth rewording in price_refresh.md. ust10 11-06 remains skipped per the gap rule.
+- **Run time:** 2026-11-11 00:33–02:55 UTC
+- **Trading date recorded:** 2026-11-10 (Tue)
+- **Result:** PUSHED — commit `72a90f5` (data) on top of `35c925b`; this file in a follow-up status commit.
+- **Prices changed:** 61 of 63. Sanity gate PASS with `--allow RKLB`.
+- **Largest move:** RKLB +6.54% (58.86 → 62.71) — over the 6% rule, verified on ycharts ("62.56, Nov 10 16:00, +6.29%"; ycharts prints 2–3c low per the job notes, here ~15c low but placement/direction confirm). Allowed. Next: NVDA −5.47% (178.67 → 168.89, implied prev 178.66 ties the board), FN −4.80%, COHR −4.68%, BE −4.36%, NET +4.10%, AVGO +3.91%.
+- **Unresolved tickers (left at the 9 Nov close, pxd 2026-11-09):**
+  - **FSLR 191.61** — sources contradicted each other: in.marketscreener's 5-day table dated the 191.61 close "10/11" while www.marketscreener dated the same value "09/11" (stamped 2026-11-09 EST); two other mirrors gave undated prices (190.70 −2.03%, 180.10 +2.17%) whose implied prev closes tie to nothing on the board. Nothing trustworthy → unchanged per rule 5.
+  - **GEV 829.34** — ~10 mirrors tried (marketscreener de/uk/au/sa/ca/es + zonebourse ch), freshest cache was the 9 Nov close (829.34, ties the board); es mirror served a "PTS"-denominated page with no timestamp. Unchanged.
+- **Benchmarks:** SPY 749.92 (−0.37%), spyLastD 2026-11-10, from two marketscreener mirrors with "Market Closed – NYSE 2026-11-10 16:00 EST" stamps; prev 752.69 ties. spyHigh unchanged 779.09 (10-06). **QQQ: no 10 Nov print found** (freshest mirror = 9 Nov 679.35, already on the board) — qqqLast/qqqLastD left at 2026-11-09 per the leave-unchanged rule. risk_series: spy 2026-11-10 = 749.92 added; **ust10 2026-11-10 skipped** (mortgagenewsdaily's 10-day table ends at Nov 09 4.869; ycharts ends Nov 06).
+- **HISTORY:** 2026-11-10 row added — n 36, mv 758,867.92, cost 743,762.72 (reflects the 10 Nov AMD/V/VST fills booked in 35c925b), unreal +15,105.20 (+2.03%), real 6,550.09, net +21,655.29, cash 20,885.19. Previous row's sha set 'live' → '35c925b'.
+- **Sources this run:** stockanalysis.com (primary) was unusable — every quote and history page fetched (GOOGL, MSFT, AMZN, NVDA, SNPS, LRCX, MPWR, SPY, QQQ) was a stale cache, freshest = the 9 Nov close, some intraday or weeks old. Google Finance caches Sep 25–Oct 26. webull/benzinga undated or mixed-age — rejected. All 61 closes came from the **marketscreener / zonebourse / it-de-es mirror family**: pages carrying an explicit dated "Market Closed" stamp equal to 2026-11-10 21:00/22:00 UTC, each validated by prev-close == board's 9 Nov value (or implied prev within 0.1%). Fresh-cache hit rate per mirror ~20–25%, so most tickers took 3–7 fetches.
+- **Quote-header vs 5-day-table disagreements (header with the Market-Closed stamp taken each time):** AMAT 372.53 vs 372.63; MPWR 1357.60 vs 1357.29; MU 725.11 vs 724.61; CDNS 331.64 vs 331.70; FTNT 123.57 vs 123.55. All ≤ 0.07%.
+- **Other notes for the main session:**
+  1. FN: marketscreener consistently shows the 9 Nov close as **365.94** vs the board's POEMS-sourced 366.08 (−0.04%). Today's 348.52 was validated against 365.94.
+  2. AAPL hi52 (348.91) is stale: the 9 Nov close 350.69 exceeded it but yesterday's run didn't extend it; today's close 348.51 is back inside the range, so per the own-day rule I left it. Worth a one-line fix in the interactive session.
+  3. risk_series spy 2026-11-06 holds 735.36; marketscreener's table and stockanalysis both print the 6 Nov SPY close as **735.29**. Not corrected (not today's mandate) — flagged.
+  4. TSM was resolved via the **NYSE ADR listing** on ch.zonebourse (marketscreener id 40246786) — the generic marketscreener TSMC id (6492349) serves the Taiwan TWD listing. Noting the id for future runs.
+  5. Live-page check could not be run from this sandbox: `sakulratpradit.github.io` is refused by both the egress proxy and WebFetch allowlist. Substitute verification: push confirmed (35c925b..72a90f5) and `node src/check_dashboard.js` on the pushed index.html printed "table rows rendered: 888 / ZERO PAGE ERRORS".
+- **Blockers:** none fatal. Carried forward: the stop rule's "80 or more tickers" threshold still can't be met literally on a 63-name board (today 0/63 were current, so the run proceeded regardless).
