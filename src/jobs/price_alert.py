@@ -129,6 +129,17 @@ def main():
                 if dd <= -15:
                     out.append(f"CRASH RESERVE: S&P 500 (SPY {B['spyLast']:,.2f}, {B.get('spyLastD','')}) is {dd:.1f}% below its high - "
                                f"the $50,000 reserve from the {a['title']} may now be used (board names at or below fair value, two halves a week apart).")
+            if i.get("check") == "ust525":
+                try:
+                    import json as _json, os as _os
+                    _u = _json.load(open(_os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), "risk_series.json")))["ust10"]
+                    _d = max(_u); _y = _u[_d]
+                    if _y > 5.25:
+                        out.append(f"RATE TRIPWIRE: the 10-year Treasury closed at {_y:.2f}% on {_d}, above 5.25% - all buying stops except the standing price lines (approved 11 Nov).")
+                    elif _y >= 5.00:
+                        out.append(f"VALUATION GATE ON: the 10-year Treasury closed at {_y:.2f}% on {_d} (5.00% or more) - no new money above 35x forward earnings without a price line.")
+                except Exception:
+                    pass
             if i.get("due"):
                 n = (dt.date.fromisoformat(i["due"]) - dt.date.today()).days
                 if 0 <= n <= 2:

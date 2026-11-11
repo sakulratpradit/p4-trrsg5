@@ -29,6 +29,8 @@ The Board cut the new money to **$100,000** and moved it to **February 2027** (w
 - **STRL** — failed the 28 Oct backlog test; re-test at the Q4 results (~Feb).
 
 ## C. Rules and method
+- **Price-line method (added 11 Nov)** — three methods are in use: a % pullback from the 4 Sep close (AVGO $310 = −13% from $357.90; NVDA $180 = −21.9% from $230.36), a valuation call with no recorded formula (TSM $380, PLTR $150, AMD $470), and an earnings multiple (APP $320 = ~44x this year's earnings). Adopt ONE written method — proposal: the lower of (a) fair value less a 25-30% margin of safety and (b) the price at a target forward P/E, rounded, re-set each quarter. At today's lines: AVGO, TSM and APP all sit at ~17.8x forward earnings; NVDA 14.9x; PLTR 78.8x.
+- **Rate rules approved 11 Nov** — tripwire (10-year close above 5.25%) and valuation gate (35x forward earnings while the 10-year is at or above 5.00%). Review both here; give ISRG a price line or keep its room on hold.
 - **Sell conditions** — write a numeric sell/review condition for every held name, as buys already have (from the Peter Lynch slide, 1 Nov). Example: AMD margin below X% two quarters running → review.
 - **Budget vs schedule reconciliation** — every scheduled amount must equal budget minus invested (two faults found in Sep).
 - **90-day rule check (21 Dec)** — target 90% invested / 10% cash.
