@@ -1,21 +1,20 @@
-# P4 price-refresh status — run of 2026-11-11 00:33 UTC (00:30 job)
+# P4 price-refresh status
 
-- **Run time:** 2026-11-11 00:33–02:55 UTC
-- **Trading date recorded:** 2026-11-10 (Tue)
-- **Result:** PUSHED — commit `72a90f5` (data) on top of `35c925b`; this file in a follow-up status commit.
-- **Prices changed:** 61 of 63. Sanity gate PASS with `--allow RKLB`.
-- **Largest move:** RKLB +6.54% (58.86 → 62.71) — over the 6% rule, verified on ycharts ("62.56, Nov 10 16:00, +6.29%"; ycharts prints 2–3c low per the job notes, here ~15c low but placement/direction confirm). Allowed. Next: NVDA −5.47% (178.67 → 168.89, implied prev 178.66 ties the board), FN −4.80%, COHR −4.68%, BE −4.36%, NET +4.10%, AVGO +3.91%.
-- **Unresolved tickers (left at the 9 Nov close, pxd 2026-11-09):**
-  - **FSLR 191.61** — sources contradicted each other: in.marketscreener's 5-day table dated the 191.61 close "10/11" while www.marketscreener dated the same value "09/11" (stamped 2026-11-09 EST); two other mirrors gave undated prices (190.70 −2.03%, 180.10 +2.17%) whose implied prev closes tie to nothing on the board. Nothing trustworthy → unchanged per rule 5.
-  - **GEV 829.34** — ~10 mirrors tried (marketscreener de/uk/au/sa/ca/es + zonebourse ch), freshest cache was the 9 Nov close (829.34, ties the board); es mirror served a "PTS"-denominated page with no timestamp. Unchanged.
-- **Benchmarks:** SPY 749.92 (−0.37%), spyLastD 2026-11-10, from two marketscreener mirrors with "Market Closed – NYSE 2026-11-10 16:00 EST" stamps; prev 752.69 ties. spyHigh unchanged 779.09 (10-06). **QQQ: no 10 Nov print found** (freshest mirror = 9 Nov 679.35, already on the board) — qqqLast/qqqLastD left at 2026-11-09 per the leave-unchanged rule. risk_series: spy 2026-11-10 = 749.92 added; **ust10 2026-11-10 skipped** (mortgagenewsdaily's 10-day table ends at Nov 09 4.869; ycharts ends Nov 06).
-- **HISTORY:** 2026-11-10 row added — n 36, mv 758,867.92, cost 743,762.72 (reflects the 10 Nov AMD/V/VST fills booked in 35c925b), unreal +15,105.20 (+2.03%), real 6,550.09, net +21,655.29, cash 20,885.19. Previous row's sha set 'live' → '35c925b'.
-- **Sources this run:** stockanalysis.com (primary) was unusable — every quote and history page fetched (GOOGL, MSFT, AMZN, NVDA, SNPS, LRCX, MPWR, SPY, QQQ) was a stale cache, freshest = the 9 Nov close, some intraday or weeks old. Google Finance caches Sep 25–Oct 26. webull/benzinga undated or mixed-age — rejected. All 61 closes came from the **marketscreener / zonebourse / it-de-es mirror family**: pages carrying an explicit dated "Market Closed" stamp equal to 2026-11-10 21:00/22:00 UTC, each validated by prev-close == board's 9 Nov value (or implied prev within 0.1%). Fresh-cache hit rate per mirror ~20–25%, so most tickers took 3–7 fetches.
-- **Quote-header vs 5-day-table disagreements (header with the Market-Closed stamp taken each time):** AMAT 372.53 vs 372.63; MPWR 1357.60 vs 1357.29; MU 725.11 vs 724.61; CDNS 331.64 vs 331.70; FTNT 123.57 vs 123.55. All ≤ 0.07%.
-- **Other notes for the main session:**
-  1. FN: marketscreener consistently shows the 9 Nov close as **365.94** vs the board's POEMS-sourced 366.08 (−0.04%). Today's 348.52 was validated against 365.94.
-  2. AAPL hi52 (348.91) is stale: the 9 Nov close 350.69 exceeded it but yesterday's run didn't extend it; today's close 348.51 is back inside the range, so per the own-day rule I left it. Worth a one-line fix in the interactive session.
-  3. risk_series spy 2026-11-06 holds 735.36; marketscreener's table and stockanalysis both print the 6 Nov SPY close as **735.29**. Not corrected (not today's mandate) — flagged.
-  4. TSM was resolved via the **NYSE ADR listing** on ch.zonebourse (marketscreener id 40246786) — the generic marketscreener TSMC id (6492349) serves the Taiwan TWD listing. Noting the id for future runs.
-  5. Live-page check could not be run from this sandbox: `sakulratpradit.github.io` is refused by both the egress proxy and WebFetch allowlist. Substitute verification: push confirmed (35c925b..72a90f5) and `node src/check_dashboard.js` on the pushed index.html printed "table rows rendered: 888 / ZERO PAGE ERRORS".
-- **Blockers:** none fatal. Carried forward: the stop rule's "80 or more tickers" threshold still can't be met literally on a 63-name board (today 0/63 were current, so the run proceeded regardless).
+- **Run time (UTC):** 2026-11-11 03:33–04:05 (the 03:30 UTC pass)
+- **Trading date recorded:** 2026-11-10
+- **Result:** PUSHED
+- **Commit:** 59cf382 (`Daily price refresh 2026-11-11 catch-up: FSLR 180.98, GEV 797.04`)
+- **Prices changed:** 2 (the 00:30 run had already booked the other 61; board is now **63/63 at the 10 Nov close**)
+  - **GEV** 829.34 → **797.04** (−3.89%). Source: marketscreener page frame, explicit "Nov 10, 2026, 4:00 PM EST, market closed" stamp, prior close ties at 829.34. Confirmed by ycharts 796.78 @ Nov 10 16:00 and a 247wallst sidebar at 797.04 / −3.89%.
+  - **FSLR** 191.61 → **180.98** (−5.55%). Source: marketscreener page frame, "Nov 10, 2026, 4:00 PM EST" close, prior close ties at 191.61. Confirmed directionally by foxbusiness intraday 180.60 @ 2:09 PM EST.
+- **Quote/history disagreements:**
+  - **GEV:** stockanalysis /history/ printed a Nov-10 "close" of 779.15 — but ycharts' 16:00 print (796.78) sat **above that row's own stated high (793.71)**, and 779 matched the 10:04 AM price in press coverage. Classic partial-session capture; the history row was **discarded** and the dated marketscreener close taken instead.
+  - **FSLR:** fool.com quote page was internally inconsistent (191.41 vs a day range contradicted by two intraday sources) — discarded.
+- **Unresolved / skipped:**
+  - **QQQ** (BENCH qqqLast): left at 9 Nov (679.35). Every quotable source was stale (stockanalysis quote+history at Nov 6, marketscreener at Oct 23, benzinga at 2022(!), fool at Mar 2026). ycharts shows **674.99 −0.64% @ Nov 10 16:00** (prev-close ties) but is confirmation-grade only per the job rules.
+  - **UST10**: no 10 Nov print released yet (ycharts lists it as "next release"); mortgagenewsdaily unreachable via search provenance. Skipped — series copes with gaps.
+- **Sanity gate:** PASS, nothing blocked. Both moves under the 6% threshold; no --allow needed.
+- **HISTORY:** the existing 2026-11-10 row was restated with the corrected GEV/FSLR closes (mv 758,867.92 → 758,341.72; unreal 15,105.20 → 14,579.00; net 21,655.29 → 21,129.09). No duplicate date.
+- **Blockers / notes:**
+  - Live-page render check could **not** be performed from this sandbox: WebFetch refused the github.io URL (not on the session allowlist, and search would not surface it) and the shell proxy blocks github.io. The push itself succeeded (8e456c6 → 59cf382, fast-forward, no force).
+  - Source staleness was widespread this run: stockanalysis quote pages (Nov 6 caches), Google Finance both cache forms (Oct 26 / Sep 25), tipranks (Nov 6), marketscreener uk mirror (March 2026!). The dated marketscreener article frames were the only quotable Nov-10 closes.
