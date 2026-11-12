@@ -3,237 +3,242 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Nov 12, 2026 22:30 Bangkok - CAT final rung FILLED: 9 sh at 594.9699 = 5,366.19; position 22 sh, cost 14,699.18 of '
- '15,000 (budget complete). Cash 15,519.81. || PREVIOUS ENTRY: Nov 12, 2026 18:30 Bangkok - DECIDED (Salee): NVDA - '
- 'hold all 452 sh; decide BUY / HOLD / SELL on Thu 19 Nov after the 18 Nov results. The proposed pre-set trim rule is '
- 'not adopted. || PREVIOUS ENTRY: Nov 12, 2026 17:30 Bangkok - ⚠️ NVDA: board met 11 Nov to discuss removing the CEO '
- '(WSJ); no outcome reported; ~-8% pre-market. Megaspeed network: $7.5bn of chips (The Information); DOJ/FBI/Congress '
- 'reported looking. Trigger 2 has NOT fired. Proposed rule (pending Salee): on CEO removal/resignation or a formal '
- 'action naming NVIDIA, sell ~70 sh next session to ~8% of stocks; otherwise hold to the 19 Nov decision. Tonight '
- 'unchanged: CAT 9 sh LIMIT 601.61 / cap 607.63. || PREVIOUS ENTRY: Nov 12, 2026 07:30 Bangkok - 11 NOV CLOSE BOOKED '
- 'FROM POEMS (positions 06:27 SGT): 36 lines + SGOV tie to the cent (cost 798,568.02; MV 834,438.72). Stocks MV '
- '779,755.84, unrealised +35,993.12 (+4.84%); NVDA 10.1% of stocks. TRUE-UPS: Frankfurt AMD purchase cost 10,921.04 '
- '(was 10,902.39 est.), realised on the swap ~+655.85; SGOV sale 15,041.67; AMD/V/VST costs confirmed. Cash 20,886.00 '
- 'after settlement (live 24,913.98 before the 10 Nov trades settle). CAT order EXPIRED (closed 601.61) - re-set '
- 'tonight: 9 sh LIMIT 601.61 / cap 607.63. No line hit. 10-year 4.98% on 10 Nov - gate not active. SPY 759.81 (+1.3%), '
- 'QQQ 690.38 (+2.3%); all 27 watch closes verified. || PREVIOUS ENTRY: Nov 11, 2026 12:30 Bangkok - APPROVED (Salee): '
- '(1) RATE TRIPWIRE at a 10-year close above 5.25%; (2) VALUATION GATE at 35x forward earnings while the 10-year is at '
- "or above 5.00% - ISRG's $15,618 of room on hold; (3) NVDA tactics - hold 452 sh, no buying, hold-vs-trim on 19 Nov, "
- 'four triggers; scenario table saved on the 18 Nov row (worst case $100-110). Tonight unchanged: CAT 9 sh LIMIT '
- '584.57 / cap 590.42. || PREVIOUS ENTRY: Nov 11, 2026 10:00 Bangkok - OCTOBER CPI SCORED (released 10 Nov): +0.4% m/m '
- 'vs +0.3% expected, core +0.3% vs +0.2%; December Fed hike ~85-88% priced; 10-year ~4.96% - rate rule stays on. '
- 'TONIGHT: CAT 9 sh LIMIT 584.57 / cap 590.42. || PREVIOUS ENTRY: Nov 11, 2026 10:50 Bangkok - PRICE REFRESH (03:30 '
- 'UTC catch-up run): resolved the two tickers the 00:30 run left at 9 Nov. GEV 797.04 (-3.89%, marketscreener 4:00 PM '
- 'EST close; ycharts 796.78 @ Nov 10 16:00 confirms; stockanalysis /history/ Nov-10 row 779.15 was a partial-session '
- 'capture and was discarded). FSLR 180.98 (-5.55%, marketscreener 4:00 PM EST close; foxbusiness intraday 180.60 @ '
- '2:09 PM confirms). All 63 of 63 closes now at 10 Nov. QQQ still unresolved (every quotable source stale; ycharts '
- '674.99 -0.64% @ Nov 10 16:00 is confirmation-grade only) - qqqLast stays at 9 Nov. UST10 10-Nov print not yet '
- 'released - skipped. HISTORY 10-Nov row restated with the corrected GEV/FSLR closes. || PREVIOUS ENTRY: Nov 11, 2026 '
- '09:40 Bangkok - DAILY PRICE REFRESH: 61 of 63 closes booked for 10 Nov (source: marketscreener/zonebourse dated '
- 'Market-Closed quotes; stockanalysis.com served stale caches all run). NVDA 168.89 (-5.47%), MU 725.11, AVGO 331.98 '
- '(+3.91%), RKLB 62.71 (+6.54%, verified ycharts 62.56 @ Nov 10 16:00). UNRESOLVED (left at 9 Nov): FSLR 191.61, GEV '
- '829.34. SPY 749.92 (-0.37%); QQQ and UST10 had no 10 Nov print available - qqqLast and risk ust10 left at 9 Nov. || '
- 'PREVIOUS ENTRY: Nov 10, 2026 23:20 Bangkok - FOUR FILLS BOOKED (POEMS Orders screen): AMD swap - SOLD 22 on '
- 'Frankfurt at EUR 469.95 (realised +654.72 USD est.), BOUGHT 19 on Nasdaq at 529.59; V 5 sh at 421.3999; VST 26 sh at '
- '130.6541. AMD 74 sh cost 23,872.96 (budget 24,000), V 23 sh cost 8,884.61 (9,000), VST 132 sh cost 18,282.55 '
- '(18,310.33) - all three budgets complete. Cash 20,885.19 (est.; FX and commissions to true up from the 11 Nov '
- 'screens). Prices still at the 9 Nov close. || PREVIOUS ENTRY: Nov 10, 2026 16:30 Bangkok - TSM OCTOBER REVENUE '
- 'SCORED: NT$586.89bn, a monthly record, +59.7% y/y (+14.7% m/m). No order - TSM is above its $380 line. || PREVIOUS '
- "ENTRY: Nov 10, 2026 14:00 Bangkok - ⚠️ NVDA ESCALATED: Bloomberg reports NVIDIA's general counsel contacted Commerce "
- "about the Megaspeed probe (which later stalled) and that NVIDIA's inventory count to the US government undercounted "
- '~50,000 chips. No formal action against NVIDIA. Buys stay suspended; 452 sh HELD (10.6% of stocks); new trigger = '
- 'any formal government action or CEO/GC departure; hold-vs-trim decision brought forward to Thu 19 Nov after the 18 '
- 'Nov results. || PREVIOUS ENTRY: Nov 10, 2026 11:00 Bangkok - RKLB Q3 SCORED: record revenue $267.8m (+73%), backlog '
- '$3.57bn, but Neutron first flight slipped into 2027 - Neutron watch row moved from 31 Dec 2026 to mid-2027 '
- '(placeholder); budget = cost unchanged, no order. || PREVIOUS ENTRY: Nov 10, 2026 07:42 Bangkok - DAILY PRICE '
- 'REFRESH: SE 77.96 (+2.94%), STRL 290.67 (+14.97%, sector rally - verified marketscreener + ycharts), TSEM 152.29 '
- '(+10.89%, Q3 earnings - verified webull + marketscreener) booked for 9 Nov; board now fully at 9 Nov closes. || '
- 'PREVIOUS ENTRY: Nov 10, 2026 09:30 Bangkok - 9 NOV CLOSE BOOKED FROM POEMS (positions 07:38 SGT): 36 USD lines + '
- 'SGOV tie; total cost 793,865.54 ties. ⚠️ AMD 22 sh BOUGHT ON FRANKFURT by mistake (EUR 439.70; USD 10,902.39 at '
- 'POEMS rate) - merged into AMD (77 sh, cost 24,691.61, $691.61 over budget); swap to Nasdaq planned 10 Nov. SGOV sold '
- '150 at 100.495; 544 left. TSM rejected; TSM 388.62 and AVGO 319.48 closed above their lines - no orders. NVDA 178.67 '
- '(below the suspended $180 line). Board stocks MV 760,568.42, unrealised +21,508.18 (+2.91%). Cash 24,932.95 after '
- 'settlement (est.). SPY 752.69 (+2.4%), QQQ 679.35 (+3.5%). Watch: 24 verified; STRL, SE, TSEM left at 6 Nov. || '
- "PREVIOUS ENTRY: Nov 9, 2026 23:55 Bangkok - CASH 20,793.35 (POEMS, before tonight's orders): SGOV first dividend "
- '225.76 net (694 sh x $0.328581, US tax 0% - W-8BEN working; net yield ~3.9%), ASML dividend 29.51, +7.22 '
- 'late-October credit to itemise. TONIGHT: SGOV SOLD 150 @ 100.495; AMD 22 sh FILLED ON FRANKFURT (FWB) at EUR 439.70 '
- 'by mistake - to be booked at the POEMS USD cost and swapped to Nasdaq on Tue 10 Nov 22:00-23:30 Bangkok; TSM order '
- 'REJECTED (likely buying power) - not re-entered (391, above the $380 line). || PREVIOUS ENTRY: Nov 9, 2026 13:00 '
- 'Bangkok - APPROVED (Salee): RKLB budget set to cost $1,942.58 - no new money (loss-making, rate rule; revisit after '
- 'Neutron flies and the 10-year is below 5.00%). FSLR added as a 10 Dec candidate for up to $10,000 of the February '
- 'money - no budget until it ranks in. Funding gap unchanged at ~$56,600. || PREVIOUS ENTRY: Nov 9, 2026 10:30 Bangkok '
- "- ⚠️ NVDA BUYS SUSPENDED (pending Salee): Jensen Huang's 8 Nov letter admitted a personal relationship with a person "
- "reportedly linked to a foreign intelligence effort; NVIDIA's board opened an independent investigation (independent "
- 'directors + outside counsel), says it has no reason to believe secrets or national security were compromised, and '
- 'keeps Huang as CEO. The $180 line (rung 2) and the 18 Nov rung 3 ($3,000) are on hold until the results and a first '
- 'board update. 452 shares HELD - no sale. Tonight unchanged: AMD 22 sh at 449.04, TSM 25 sh at 375.44, sell 150 SGOV '
- 'at 100.49. || PREVIOUS ENTRY: Nov 8, 2026 10:30 Bangkok - BOARD DECISION (Salee): (1) KLAC and LRCX tranche 3 (19 '
- 'Nov, $10,889) DEFERRED to the 10 Dec review; (2) new money CUT to $100,000 and MOVED to February 2027 (was $150,000 '
- 'in January); the $39,269.96 February top-up is cancelled - funding target now $910,730.04, not $1,000,000. Crash '
- 'reserve unchanged at $50,000, held in SGOV from existing cash. FUNDING GATE to February: only ~$4,700 spendable '
- 'above the reserve after the 9-11 Nov buys (NVDA $3,000 on 18 Nov fits); any other line that fires waits for the '
- 'February money. 10 Dec must close a ~$56,600 gap between approved room and money. Week of 9 Nov unchanged. || '
- "PREVIOUS ENTRY: Nov 7, 2026 14:30 Bangkok - SCHEDULE CLEANED at Salee's instruction: 13 rows dated before Mon 9 Nov "
- 'archived to src/schedule_archive_2026-11-09.json; the APP $320 trigger kept as a standing row. BUY/SELL PLAN ROLLED '
- 'to 9 - 30 Nov: week 1 unchanged (AMD + TSM + SGOV sale Mon; AVGO + V + VST Tue; CAT Wed); NVDA DECIDE $3,000 on 18 '
- 'Nov results; ⚠️ KLAC/LRCX tranche 3 (19 Nov, $10,889) flagged - cannot be funded without breaching the $50,000 SGOV '
- 'reserve; decide by 16 Nov (new money or defer to 10 Dec). Thanksgiving 26 Nov added. || PREVIOUS ENTRY: Nov 7, 2026 '
- '09:40 Bangkok - 6 NOV CLOSE BOOKED FROM POEMS (positions 07:30 SGT): all 36 lines + SGOV tie to the cent (cost '
- '798,074.91; MV 787,577.23; stocks unrealised -10,320.68, -1.42%). NO FILLS: the 6 Nov AMD (24 sh at 404.40) and TSM '
- '(26 sh at 353.10) Day LIMIT orders EXPIRED - closes 449.04 / 375.44. All three lines still met on the close, so MON '
- '9 NOV after 22:00: AMD 22 sh LIMIT 449.04 / cap 453.53 + TSM 25 sh LIMIT 375.44 / cap 379.19 (~$19,300 from cash) '
- 'and SELL 150 SGOV at 100.49. TUE: AVGO 16 sh (if Mon close <= 310) + V + VST (results PASSED: adj. EBITDA +50%, '
- 'guide midpoint raised). WED: CAT. SPY 735.36 (+0.3%), QQQ 656.29 (+1.4%). || PREVIOUS ENTRY: Nov 6, 2026 11:30 '
- 'Bangkok - 5 NOV CLOSE BOOKED FROM POEMS (positions 10:49 SGT): all 36 lines + SGOV tie to the cent (cost 798,074.91; '
- 'MV 768,116.69; stocks unrealised -29,753.46, -4.09%). NO FILLS on 5 Nov: AMD (-13% intraday, closed -17.3% at '
- "404.40) and APP (+31% to 356.10) orders were not placed on Claude's advice. Lines hit on the close: TSM $380 "
- '(353.10) and AVGO $310 (291.53). TONIGHT Fri 6 Nov after 22:00: AMD 24 sh LIMIT 404.40 / cap 408.44; TSM 26 sh LIMIT '
- '353.10 / cap 356.63 - ~$18,930 from cash 20,531. APP deferred (new line $320). AVGO Mon 9 Nov after a ~160 sh SGOV '
- 'sale. Watch closes: 26 verified; TSEM left at 4 Nov. SPY 733.00 (-4.4%), QQQ 647.05 (-6.5%). || PREVIOUS ENTRY: Nov '
- "5, 2026 11:20 Bangkok - MU OVERRIDE WITHDRAWN by Salee on Claude's advice: no MU buy tonight; the $800 line is "
- 'removed and the $3,418.42 waits for the 17 Dec volume test. Tonight: AMD 20 sh LIMIT 488.78 / cap 493.67 and APP 32 '
- 'sh LIMIT 271.75 / cap 274.47 only. || PREVIOUS ENTRY: Nov 5, 2026 10:10 Bangkok - MU $800 OVERRIDE LINE HIT (4 Nov '
- "close 795.23): BUY 4 sh LIMIT 795.23 / cap 803.18 tonight (Salee's 25 Oct override; TrendForce contract prices still "
- "rising, hold-back rule not triggered). Tonight's three buys: AMD 20 sh, APP 32 sh, MU 4 sh. || PREVIOUS ENTRY: Nov "
- "5, 2026 09:30 Bangkok - ALL 63 PRICES AT THE WED 4 NOV CLOSE. 36 HOLDINGS from Salee's POEMS positions screen 09:47 "
- 'SGT: all lines + SGOV match quantity and cost to the cent (798,074.91); MV 831,356.50 incl. SGOV ties; stocks MV '
- '761,644.21, unrealised +33486.36 (+4.60%). 27 WATCH NAMES from financialcontent.com official/4:00 PM closes '
- '(marketbeat/stockanalysis/fool caches stale), each tied to the prior close or a second source; the 8 names left at 2 '
- 'Nov yesterday now carry their verified 3 Nov->4 Nov chain. SPY 766.81 (+1.65%), QQQ 691.95 (+0.97%). Semis/infra '
- 'fell while the index rose: 6%+ moves verified - MSFT +6.7%, AMZN +6.1%, MRVL -7.1%, TER -6.8%, MU -7.0%, SNDK -7.9%, '
- 'STX -8.1%, APH -6.2%, LITE -7.9%, CRDO -9.5%, CGNX -8.7%, LHX -6.9%, KTOS -12.3%, AVAV -8.3%, DDOG -12.7%, ISRG '
- '+9.4%, BWXT -7.8%, GEV -9.3%, ETN -9.9%, VRT -12.9%, PWR -11.7%, CEG -6.7%, VST -13.8%, APP +10.7%, SE +6.3%, STRL '
- '-21.5%. ⚠️ AMD ORDER NOT PLACED on 4 Nov (Salee); AMD closed 488.78, above the $470 line - re-set tonight: BUY 20 sh '
- 'LIMIT 488.78 / cap 493.67. APP RESULTS PASSED ALL FOUR TESTS (rev $2.18bn, adj. EBITDA margin 84%, Q4 guide '
- '$2.37-2.40bn vs $2.25bn, no inquiry): BUY 32 sh LIMIT 271.75 / cap 274.47 tonight; +16% after hours so it may not '
- 'fill - no chasing. || PREVIOUS ENTRY: Nov 4, 2026 15:00 Bangkok - PRICES AT THE TUE 3 NOV CLOSE (the 00:30 UTC price '
- "job did not write them). 36 HOLDINGS from Salee's POEMS positions screen 15:23 SGT: all lines + SGOV match quantity "
- 'and cost to the cent (798,074.91); MV 840,540.75 incl. SGOV ties; stocks MV 770,835.39, unrealised +42677.54 '
- '(+5.86%). 19 WATCH NAMES verified (marketbeat 4:00 PM headers with implied prev close = stored 2 Nov close; '
- 'stockscan/financialcontent official closes for NYSE): SNDK, SNPS, MPWR, STX, GLW, COHR, FN, SPCX, KTOS, ORCL, HOOD, '
- 'CRWD, FTNT, BWXT, PWR, GE, NFLX, APP 245.51 (+7.3%), STRL. 8 LEFT AT THE 2 NOV CLOSE - sources disagree or '
- 'unconfirmed: ARM, DDOG, TSEM, LHX, NET, BE, SE, CIEN. SPY 754.35, QQQ 685.28. 6%+ moves verified on a second source: '
- 'MPWR +6.8%, CRDO +7.8%, FN +15.4%, GEV +6.5%, ETN +7.0%, PWR +6.1%, APP +7.3%, STRL +7.7%. AMD closed 483.90 (above '
- 'the $470 line) after a results PASS - order tonight 20 sh LIMIT 483.90 / cap 488.74. || PREVIOUS ENTRY: Nov 4, 2026 '
- '11:45 Bangkok - AMD RESULTS SCORED: test (b) PASSED (data centre +97%, non-GAAP GM 56%, Q4 guide ~$17bn vs '
- '$16.23bn). Order tonight: BUY 20 sh Day LIMIT 483.90 (3 Nov close), cap 488.74; ~+7% after hours, so it fills only '
- 'on a pullback - no chasing. No SGOV sale needed for AMD/APP; SGOV top-up decided Mon 9 Nov for the 10-11 Nov buys. '
- '|| PREVIOUS ENTRY: Nov 3, 2026 15:00 Bangkok - POEMS POSITIONS RECONCILED (screen 15:48 SGT, after the Mon 2 Nov '
- 'close): 36 lines + SGOV match quantity and cost to the cent (798,074.91); MV 823,848.13 incl. SGOV ties. CAT 613.62, '
- 'VST 134.61, VRT 224.24, GEV 862.25 set to the POEMS marks; SGOV 100.43. Stocks MV 754,149.71, unrealised +25,991.86 '
- '(+3.57%). ⚠️ AMD CLOSED 466.84 - BELOW THE $470 STANDING LINE (results tonight after the close). || PREVIOUS ENTRY: '
- 'Nov 3, 2026 (00:30 UTC job) - DAILY PRICE REFRESH: all 63 prices at the Mon 2026-11-02 close. Primary source: '
- "marketbeat.com 'Closing price 4:00 PM Eastern' headers last-updated 11/2/2026 (stockanalysis.com and Google Finance "
- "caches again frozen pre-close); 14 NYSE names written from the financialcontent.com 'Official Closing Price' 7:00 PM "
- 'print instead of the marketbeat 3:59 PM print (largest gaps: ORCL 119.22 vs 118.79, ETN 366.07 vs 365.18, FN 314.70 '
- 'vs 313.86, CIEN 284.34 vs 284.09); 7 NYSE names (COHR BWXT GEV VRT PWR VST CAT) kept at the marketbeat 3:59 PM print '
- "- every official-close mirror stale - so they may sit cents off the auction close. Every ticker's implied previous "
- 'close ties to the stored 30 Oct close to the cent. Semis/optics follow-through sell-off: 6%+ movers verified on a '
- "second source and allowed: LITE -18.59% and MRVL -12.72% (deal arb; ycharts 'Nov 02, 16:00' stamps), ALAB -11.22%, "
- 'CIEN -11.34%, ORCL -8.76% (financialcontent official; gurufocus headline -8.8%), DDOG -8.15%, STX -7.93%, AMD '
- '-7.58%, CRDO -7.27%, FTNT -7.25%, TSEM -6.70%, SNDK -6.59% (marketscreener 2026-11-02 exact). Counter-moves: GE '
- '+4.63%, FSLR +4.39%, V +2.88% (new 52w high 425.51), AMZN +2.20%. PLTR reported after the close; its -2.84% '
- 'after-hours print is NOT on the board (close 178.34). SPY 752.10 -0.48% and QQQ 681.09 -1.36% (11-02); spyHigh '
- 'unchanged 779.09 (SPY -3.5% off the high; crash-reserve trigger 662.23). risk_series spy 11-02 added; ust10 11-02 '
- "skipped (mortgagenewsdaily's newest dated row is mislabeled 'Nov 01', ycharts ends 10-30). HISTORY 11-02 row added. "
- 'pe/ps/fpe/peg/M3-pfcf rescaled with price. Every number from a tool call this session. || PREVIOUS ENTRY: Nov 2, '
- '2026 - MARVELL-LUMENTUM DEAL ANNOUNCED: all-stock, 4.500 MRVL per LITE (implied $1,132, +23.9% vs 28 Oct), EV '
- '~$115bn, close 1H 2028. Scored on the 5 Nov row: HOLD both, no order; combined ~147.25 MRVL sh after close. || '
- 'PREVIOUS ENTRY: Nov 2, 2026 - Macro WATCH rows added: US midterm elections (Tue 3 Nov) and October jobs report (Fri '
- '6 Nov, 20:30 Bangkok). No order. || PREVIOUS ENTRY: Nov 2, 2026 - Earnings rows added for three more holdings this '
- 'week (Earnings Whispers calendar): ETN Tue 3 Nov before the open, ALAB Tue 3 Nov after the close, LITE Thu 5 Nov '
- "after the close. All WATCH - no order. || PREVIOUS ENTRY: Nov 1, 2026 - SCHEDULE CLEANED at Salee's instruction: 103 "
- 'live rows kept (Nov 2026 onward + standing rules; stale FN, LHX and 19 Nov GOOGL notes also removed), 139 history '
- 'rows archived to src/schedule_archive_2026-11-01.json. BUY/SELL PLAN rolled to 1-15 Nov: firm V $2,093 (10 Nov) and '
- 'CAT $5,000 (11 Nov); decide APP $9,000 (5 Nov) and VST $3,433 (10 Nov); APP and VST results dates confirmed. || '
- "PREVIOUS ENTRY: Nov 1, 2026 - Earnings rows added for this week's holdings: PLTR Mon 2 Nov, AMD and ANET Tue 3 Nov "
- '(all after the close, company-confirmed); AAPL 2 Nov now confirmed by Apple IR. All WATCH - no order on the prints; '
- 'buy routes stay the standing lines (PLTR $150, AMD $470). || PREVIOUS ENTRY: Nov 1, 2026 - META 10 Dec row: S&P '
- 'outlook cut to negative (AA- affirmed, 30 Oct; FOCF -$71bn forecast for 2027, leverage 1.1x vs 1.0x threshold) '
- 'recorded. No price, budget or order changed. || PREVIOUS ENTRY: Oct 31, 2026 09:50 Bangkok - ALL 63 PRICES AT THE '
- 'FRI 30 OCT CLOSE (the 00:30 UTC price job did not run - scheduled jobs on claude-fable-5 are failing on the usage '
- "limit). 36 HOLDINGS from Salee's POEMS positions screen 09:36 SGT: all 36 lines + SGOV match quantity and cost to "
- 'the cent incl. the 30 Oct CAT fill (cost 798,074.91; MV 843,570.71; CAT commission estimate 9.49 confirmed). 27 '
- "WATCH NAMES from marketbeat 10/30 4:00 PM closing headers / fool.com 'last close 2026-10-30' / massive.com / "
- 'financialcontent, each cross-checked against the prior close or a second source. SPY 755.72 (-1.77%), QQQ 690.49 '
- '(-3.47%). Semiconductor sell-off day (Intel -29% on a weak Q4 guide; SOX about -7 to -9%): 6%+ moves verified - '
- 'holdings AMD -10.9%, MRVL -10.0%, ALAB -10.9%, CRDO -8.7%, LITE -8.6%, ANET -8.3%, AMAT -7.5%, TER -7.4%, RKLB '
- '-7.4%, ASML -6.6%, AVAV -6.5%, PLTR -6.3%, LRCX -6.0%, ETN -6.0%; watch SNDK -13.5%, DDOG -11.5%, TSEM -11.4%, COHR '
- '-11.2%, APP -10.4%, ARM -10.0%, NET -9.5%, BE -8.6%, STX -8.0%, CIEN -8.0%, STRL -7.4%, HOOD -7.2%, SPCX -6.4%, ORCL '
- '-6.3%, FN -6.3%. Ratios rescaled with price. HISTORY 10-30 row added (stocks MV 773,664.08, unrealised +45,506.23 / '
- '+6.25%). Note: 8 NYSE watch closes of 29 Oct (COHR FN LHX ORCL NET PWR GE CIEN) were 3:59 PM prints, cents off the '
- "official close - superseded by today's verified closes. AMZN/CAT/LHX Q3 fundamentals still pending (earnings job "
- 'failed). || PREVIOUS ENTRY: Oct 30, 2026 21:45 Bangkok - CAT BOOKED: 7 sh at 633.5642 = 4,444.44 (rung 2 of 3; Power '
- 'Generation test passed). Position 13 sh, cost 9,332.99; cash 20,530.86. October MONTHLY and investedEver updated '
- 'with the fill. || PREVIOUS ENTRY: Oct 30, 2026 11:10 Bangkok - POEMS POSITIONS RECONCILED (screen 10:56 SGT, after '
- 'the 29 Oct close): 36 lines + SGOV match to the cent; market value 874,941.02 ties. Nine NYSE marks set from POEMS '
- '(APH 82.08, ANET 184.22, CAT 647.39, ETN 393.72, TSM 431.81, VRT 245.92, V 410.54, VST 140.95; SGOV 100.71) - all '
- "within 0.2% of the job's closes; ratios rescaled. No fill tonight yet: CAT 7 sh LIMIT 647.39 (cap 653.86) is the "
- 'only order. || PREVIOUS ENTRY: Oct 30, 2026 08:40 Bangkok - AMZN Q3 read recorded (AWS +39%, backlog $578bn, TTM FCF '
- '-$42.4bn, no order - over budget); CAT order set: 7 sh Day LIMIT 647.22, cap 653.69. || PREVIOUS ENTRY: Oct 30, 2026 '
- '(00:30 UTC job) - DAILY PRICE REFRESH: all 63 prices set to the Thu 2026-10-29 close. Primary source this run: '
- "marketbeat.com dated daily-price tables / closing-price headers (pages updated 10/29, 'Closing price 4:00 PM "
- "Eastern' stamps), every ticker's prior close cross-checked against the stored board value; stockanalysis.com and "
- 'Google Finance caches still frozen pre-close (5th night); GEV from the fool.com quote page previous-close field '
- '(887.85; method validated to the cent on GOOGL and MSFT this run). Big earnings-reaction day: 6%-movers verified + '
- 'allowed: GOOGL 283.82 -12.64% (Q3 miss/FCF, fool prev-close field exact + news), FTNT 139.10 -20.09% '
- '(service-revenue forecast cut; 247wallst sidebar exact), MRVL 218.34 -13.24% (Lumentum deal talks; fool widget '
- '-13.24% exact), CAT 647.22 -9.49% (sales outlook; 247wallst sidebar 647.39), LHX 279.12 +7.10% (Q3 beat + raised FY '
- 'guide; investing.com 278.65 +6.92%), AVAV 134.88 +7.09% (gurufocus +7.1%). SPY 769.36 and QQQ 715.34 (10-29, '
- 'marketbeat closing headers; prev closes match board); spyHigh unchanged 779.09. risk_series spy 10-29 added; ust10 '
- '10-29 skipped (ycharts H15 only through 10-27; yahoo close bar printed 4.99 for reference). HISTORY 10-29 row added '
- '(first row including the 29 Oct MSFT buy, 126 sh). Note: TSEM 187.92 written from a dated 10/29 marketbeat header '
- 'whose implied 10/28 prev close (193.52) could not be cross-checked - flagged for the next run. Every number from a '
- 'tool call this session. || PREVIOUS ENTRY: Oct 29, 2026 23:00 Bangkok - GOOGL 10 Dec test (1) CLARIFIED: Q3 ATM '
- 'share sales of $12.4bn were draws under the $40bn ATM announced in the June $84.75bn raise, so they do not fail the '
- 'test; a new or upsized programme would. No order, budget or price changed. || PREVIOUS ENTRY: Oct 29, 2026 22:30 '
- 'Bangkok - MSFT BOOKED 9 sh at 525.4031 = 4,738.75; cash 24,975.30. FULL POEMS RECONCILIATION: 36 lines + SGOV match '
- 'to the cent; cash corrected by 0.10 (CRWD 19 Oct fee true-up); SGOV sale trued up to 10,047.25 (realised -27.25); '
- 'October MONTHLY rebuilt (6 buys + 1 sale had been missing); October dividends 251.31 itemised. Prices: 54 names at '
- 'the 28 Oct close, 9 at 27 Oct - the 29 Oct close is written by the next morning run. || PREVIOUS ENTRY: Oct 29, 2026 '
- '(03:30 UTC job) - DAILY PRICE REFRESH, 2nd pass: 11 more of the 15 stragglers resolved. Wed 2026-10-28 close written '
- 'for ETN 392.88, GEV 878.03, PWR 606.89, COHR 239.59, SPCX 145.23, CIEN 363.21 (54 of 63 now at 10-28); verified Tue '
- '10-27 close written for ARM 226.60, GE 297.66, MPWR 1211.89, LHX 259.40, TSEM 189.08 (marketbeat prev-close fields / '
- 'heygotrade dated closes; every prev-close cross-checked against the stored prior close to the cent). Sources: '
- '247wallst Oct-28 article sidebars validated to the cent on MSFT/ORCL/NVDA/MU/GOOGL/VRT; heygotrade dated close '
- 'pages; stockanalysis/Google Finance/tipranks/marketscreener caches still frozen pre-close (4th night). 6%-movers vs '
- 'last build, verified + allowed: PWR +7.6% (sidebar + 247wallst company page, prev 578.8x both), COHR +8.2% (sidebar; '
- 'prev 235.79 = heygotrade 10-27 close exact), CIEN +8.1% (heygotrade 10-28 close 363.21 +3.43%; gurufocus +3.4% same '
- 'evening). Unresolved, left at their verified 10-27 close: CDNS 343.08, CRDO 167.43, AVAV 126.73, CEG 258.98 '
- '(heygotrade 10-27 closes match the board to the cent; no readable 10-28 close). SPY 772.31 10-28 (marketchameleon '
- 'dated close; SSGA official 10-27 769.66 added to risk_series with ycharts ust10 4.99 10-27; ust10 10-28 skipped - '
- 'named sources not yet updated, fool.com wrap printed 5.02 at close for reference). HISTORY 10-28 row mv updated in '
- 'place for the new ETN/GEV closes. || PREVIOUS ENTRY: Oct 29, 2026 (00:30 UTC job) - DAILY PRICE REFRESH: 48 of 63 '
- 'set to the Wed 2026-10-28 close (fool.com dated quote pages; stockanalysis/Google Finance/ycharts caches frozen '
- 'pre-close for a third night). 15 unresolved stay at their prior close: holdings CDNS CRDO AVAV GEV ETN CEG (10-27), '
- 'watch ARM MPWR COHR SPCX LHX PWR GE TSEM CIEN (10-26). QQQ 725.61 (10-28); SPY, spyHigh and risk_series spy/ust10 '
- 'left unchanged - no clean close readable. HISTORY row 10-28 added. 6%-movers verified: ORCL 144.54 +10.73% d/d, VRT '
- '242.94 +16.49% d/d, MU 983.23, SNDK 1404.77, STX 697.97 (247wallst sidebar matches to the cent); SNPS FN BE STRL on '
- 'dated fool closes + headline corroboration. || PREVIOUS ENTRY: Oct 29, 2026 - GOOGL TEST APPROVED (Salee): 19 Nov '
- '$18,524 tranche moved to a 10 Dec DECIDE - buy only if no further share sale AND a credible path back to positive '
- 'free cash flow; fail = budget cut to cost spent, no sale. || PREVIOUS ENTRY: Oct 29, 2026 04:45 Bangkok - RESULTS '
- 'SCORED: MSFT PASS (BUY 9 sh tonight, limit 531.01, cap 536.32); STRL FAIL (signed backlog 4.14bn < 4.33bn; budget '
- 'back to pool; half 2 cancelled); GEV thesis intact (Power orders +178%, Electrification -9% on a tough comparison); '
- 'VRT partial disclosure; GOOGL Q3 cloud doubled but FCF -9.1bn + June 84.75bn equity raise - 19 Nov tranche pending '
- 'Salee. Fed held 3.75-4.00% (10-2, Cook and Hammack for a hike). SGOV 4 Nov sale no longer needed. || PREVIOUS ENTRY: '
- 'Oct 28, 2026 - SGOV SLICE 1 BOOKED: SELL 100 at 100.6901 = 10,047.46 net (POEMS 1187938, 22:29 Bangkok). Cash '
- '29,714.36; SGOV 694 sh parked (cost 69,917.06). || PREVIOUS ENTRY: Oct 28, 2026 13:16 Bangkok - PRICES OF THE 36 '
- 'HOLDINGS SET TO THE TUE 2026-10-27 CLOSE FROM SALEE\'S POEMS POSITIONS SCREEN (US market closed; POEMS "Current '
- 'Price" column; SGOV mark 100.68). Reason: every web source reachable from the sandbox served pre-close cached pages '
- 'for Oct 27 through both scheduled runs (00:30 and 03:30 UTC) and manual checks at 03:30-04:50 UTC, so 0 of 63 could '
- 'be written by the job. The 27 watch names (no position) stay at the 26 Oct close until the next successful run. '
- 'Moves of 6%+ vs 26 Oct: CDNS +6.5%, ALAB +10.5%, CRDO +10.8%, RKLB +8.3% - consistent with the reported 27 Oct '
- 'session (AMD +5.5%, AVGO +4%, MU +2.8%, chips rally). Positions and cost on the same screen reconcile to the board '
- 'to the cent on all 36 lines (641,827.76 NASD + 247,167.89 NYSE incl. SGOV = 888,995.64). pe/ps/fpe/peg/pfcf rescaled '
- 'with price per the 26 Oct rule. || PREVIOUS ENTRY: Oct 28, 2026 (runs 00:30 + 03:30 UTC) - DAILY PRICE REFRESH: BOTH '
- 'overnight passes could not resolve the Tue 2026-10-27 close for any ticker. 03:30 pass sampled 14 stockanalysis.com '
- 'quote/history pages: every capture predated the 4:00 PM close (freshest stamps 10:05-11:25 AM EDT Oct 27; some '
- 'caches as old as May 2025), and Google Finance (Sep 24/25 caches), marketscreener (Sep 4) and ycharts (Oct 26 18:04 '
- 'EDT) were equally stale. Per the leave-unchanged rule nothing was written: all 63 prices, mcaps, P/E block, SPY/QQQ '
- 'and pxd stay at the Mon 2026-10-26 close (CGNX still 2026-10-23); no HISTORY row; risk_series ust10/spy 10-27 '
- 'skipped (sources unreadable; ust10 2026-10-26 = 5.00 was already added by the 00:30 pass). Oct-26 baseline '
- 'cross-checked against 9 history tables - all matched. Every number checked came from a tool call this session; the '
- 'next scheduled pass retries.')
+ASOF = ('Nov 12, 2026 23:30 Bangkok - ⚠️ NVDA TRIGGER 2 FIRED: Jensen Huang resigned as CEO and director; CFO Colette Kress '
+ 'interim CEO; Harvey Jones Chair. NVDA ~165 (-5%) at 13:45 New York after opening ~-13%. Results now Tue 17 Nov US '
+ "(04:20 Wed 18 Nov Bangkok). No formal government action. Salee's decision stands: hold 452 sh, no order, decide "
+ 'after the results. ⚠️ 10-year ~5.09-5.11% intraday - if it CLOSES at or above 5.00% the valuation gate turns ACTIVE '
+ '(tripwire 5.25%). || PREVIOUS ENTRY: Nov 12, 2026 22:30 Bangkok - CAT final rung FILLED: 9 sh at 594.9699 = '
+ '5,366.19; position 22 sh, cost 14,699.18 of 15,000 (budget complete). Cash 15,519.81. || PREVIOUS ENTRY: Nov 12, '
+ '2026 18:30 Bangkok - DECIDED (Salee): NVDA - hold all 452 sh; decide BUY / HOLD / SELL on Thu 19 Nov after the 18 '
+ 'Nov results. The proposed pre-set trim rule is not adopted. || PREVIOUS ENTRY: Nov 12, 2026 17:30 Bangkok - ⚠️ NVDA: '
+ 'board met 11 Nov to discuss removing the CEO (WSJ); no outcome reported; ~-8% pre-market. Megaspeed network: $7.5bn '
+ 'of chips (The Information); DOJ/FBI/Congress reported looking. Trigger 2 has NOT fired. Proposed rule (pending '
+ 'Salee): on CEO removal/resignation or a formal action naming NVIDIA, sell ~70 sh next session to ~8% of stocks; '
+ 'otherwise hold to the 19 Nov decision. Tonight unchanged: CAT 9 sh LIMIT 601.61 / cap 607.63. || PREVIOUS ENTRY: Nov '
+ '12, 2026 07:30 Bangkok - 11 NOV CLOSE BOOKED FROM POEMS (positions 06:27 SGT): 36 lines + SGOV tie to the cent (cost '
+ '798,568.02; MV 834,438.72). Stocks MV 779,755.84, unrealised +35,993.12 (+4.84%); NVDA 10.1% of stocks. TRUE-UPS: '
+ 'Frankfurt AMD purchase cost 10,921.04 (was 10,902.39 est.), realised on the swap ~+655.85; SGOV sale 15,041.67; '
+ 'AMD/V/VST costs confirmed. Cash 20,886.00 after settlement (live 24,913.98 before the 10 Nov trades settle). CAT '
+ 'order EXPIRED (closed 601.61) - re-set tonight: 9 sh LIMIT 601.61 / cap 607.63. No line hit. 10-year 4.98% on 10 Nov '
+ '- gate not active. SPY 759.81 (+1.3%), QQQ 690.38 (+2.3%); all 27 watch closes verified. || PREVIOUS ENTRY: Nov 11, '
+ '2026 12:30 Bangkok - APPROVED (Salee): (1) RATE TRIPWIRE at a 10-year close above 5.25%; (2) VALUATION GATE at 35x '
+ "forward earnings while the 10-year is at or above 5.00% - ISRG's $15,618 of room on hold; (3) NVDA tactics - hold "
+ '452 sh, no buying, hold-vs-trim on 19 Nov, four triggers; scenario table saved on the 18 Nov row (worst case '
+ '$100-110). Tonight unchanged: CAT 9 sh LIMIT 584.57 / cap 590.42. || PREVIOUS ENTRY: Nov 11, 2026 10:00 Bangkok - '
+ 'OCTOBER CPI SCORED (released 10 Nov): +0.4% m/m vs +0.3% expected, core +0.3% vs +0.2%; December Fed hike ~85-88% '
+ 'priced; 10-year ~4.96% - rate rule stays on. TONIGHT: CAT 9 sh LIMIT 584.57 / cap 590.42. || PREVIOUS ENTRY: Nov 11, '
+ '2026 10:50 Bangkok - PRICE REFRESH (03:30 UTC catch-up run): resolved the two tickers the 00:30 run left at 9 Nov. '
+ 'GEV 797.04 (-3.89%, marketscreener 4:00 PM EST close; ycharts 796.78 @ Nov 10 16:00 confirms; stockanalysis '
+ '/history/ Nov-10 row 779.15 was a partial-session capture and was discarded). FSLR 180.98 (-5.55%, marketscreener '
+ '4:00 PM EST close; foxbusiness intraday 180.60 @ 2:09 PM confirms). All 63 of 63 closes now at 10 Nov. QQQ still '
+ 'unresolved (every quotable source stale; ycharts 674.99 -0.64% @ Nov 10 16:00 is confirmation-grade only) - qqqLast '
+ 'stays at 9 Nov. UST10 10-Nov print not yet released - skipped. HISTORY 10-Nov row restated with the corrected '
+ 'GEV/FSLR closes. || PREVIOUS ENTRY: Nov 11, 2026 09:40 Bangkok - DAILY PRICE REFRESH: 61 of 63 closes booked for 10 '
+ 'Nov (source: marketscreener/zonebourse dated Market-Closed quotes; stockanalysis.com served stale caches all run). '
+ 'NVDA 168.89 (-5.47%), MU 725.11, AVGO 331.98 (+3.91%), RKLB 62.71 (+6.54%, verified ycharts 62.56 @ Nov 10 16:00). '
+ 'UNRESOLVED (left at 9 Nov): FSLR 191.61, GEV 829.34. SPY 749.92 (-0.37%); QQQ and UST10 had no 10 Nov print '
+ 'available - qqqLast and risk ust10 left at 9 Nov. || PREVIOUS ENTRY: Nov 10, 2026 23:20 Bangkok - FOUR FILLS BOOKED '
+ '(POEMS Orders screen): AMD swap - SOLD 22 on Frankfurt at EUR 469.95 (realised +654.72 USD est.), BOUGHT 19 on '
+ 'Nasdaq at 529.59; V 5 sh at 421.3999; VST 26 sh at 130.6541. AMD 74 sh cost 23,872.96 (budget 24,000), V 23 sh cost '
+ '8,884.61 (9,000), VST 132 sh cost 18,282.55 (18,310.33) - all three budgets complete. Cash 20,885.19 (est.; FX and '
+ 'commissions to true up from the 11 Nov screens). Prices still at the 9 Nov close. || PREVIOUS ENTRY: Nov 10, 2026 '
+ '16:30 Bangkok - TSM OCTOBER REVENUE SCORED: NT$586.89bn, a monthly record, +59.7% y/y (+14.7% m/m). No order - TSM '
+ 'is above its $380 line. || PREVIOUS ENTRY: Nov 10, 2026 14:00 Bangkok - ⚠️ NVDA ESCALATED: Bloomberg reports '
+ "NVIDIA's general counsel contacted Commerce about the Megaspeed probe (which later stalled) and that NVIDIA's "
+ 'inventory count to the US government undercounted ~50,000 chips. No formal action against NVIDIA. Buys stay '
+ 'suspended; 452 sh HELD (10.6% of stocks); new trigger = any formal government action or CEO/GC departure; '
+ 'hold-vs-trim decision brought forward to Thu 19 Nov after the 18 Nov results. || PREVIOUS ENTRY: Nov 10, 2026 11:00 '
+ 'Bangkok - RKLB Q3 SCORED: record revenue $267.8m (+73%), backlog $3.57bn, but Neutron first flight slipped into 2027 '
+ '- Neutron watch row moved from 31 Dec 2026 to mid-2027 (placeholder); budget = cost unchanged, no order. || PREVIOUS '
+ 'ENTRY: Nov 10, 2026 07:42 Bangkok - DAILY PRICE REFRESH: SE 77.96 (+2.94%), STRL 290.67 (+14.97%, sector rally - '
+ 'verified marketscreener + ycharts), TSEM 152.29 (+10.89%, Q3 earnings - verified webull + marketscreener) booked for '
+ '9 Nov; board now fully at 9 Nov closes. || PREVIOUS ENTRY: Nov 10, 2026 09:30 Bangkok - 9 NOV CLOSE BOOKED FROM '
+ 'POEMS (positions 07:38 SGT): 36 USD lines + SGOV tie; total cost 793,865.54 ties. ⚠️ AMD 22 sh BOUGHT ON FRANKFURT '
+ 'by mistake (EUR 439.70; USD 10,902.39 at POEMS rate) - merged into AMD (77 sh, cost 24,691.61, $691.61 over budget); '
+ 'swap to Nasdaq planned 10 Nov. SGOV sold 150 at 100.495; 544 left. TSM rejected; TSM 388.62 and AVGO 319.48 closed '
+ 'above their lines - no orders. NVDA 178.67 (below the suspended $180 line). Board stocks MV 760,568.42, unrealised '
+ '+21,508.18 (+2.91%). Cash 24,932.95 after settlement (est.). SPY 752.69 (+2.4%), QQQ 679.35 (+3.5%). Watch: 24 '
+ 'verified; STRL, SE, TSEM left at 6 Nov. || PREVIOUS ENTRY: Nov 9, 2026 23:55 Bangkok - CASH 20,793.35 (POEMS, before '
+ "tonight's orders): SGOV first dividend 225.76 net (694 sh x $0.328581, US tax 0% - W-8BEN working; net yield ~3.9%), "
+ 'ASML dividend 29.51, +7.22 late-October credit to itemise. TONIGHT: SGOV SOLD 150 @ 100.495; AMD 22 sh FILLED ON '
+ 'FRANKFURT (FWB) at EUR 439.70 by mistake - to be booked at the POEMS USD cost and swapped to Nasdaq on Tue 10 Nov '
+ '22:00-23:30 Bangkok; TSM order REJECTED (likely buying power) - not re-entered (391, above the $380 line). || '
+ 'PREVIOUS ENTRY: Nov 9, 2026 13:00 Bangkok - APPROVED (Salee): RKLB budget set to cost $1,942.58 - no new money '
+ '(loss-making, rate rule; revisit after Neutron flies and the 10-year is below 5.00%). FSLR added as a 10 Dec '
+ 'candidate for up to $10,000 of the February money - no budget until it ranks in. Funding gap unchanged at ~$56,600. '
+ "|| PREVIOUS ENTRY: Nov 9, 2026 10:30 Bangkok - ⚠️ NVDA BUYS SUSPENDED (pending Salee): Jensen Huang's 8 Nov letter "
+ "admitted a personal relationship with a person reportedly linked to a foreign intelligence effort; NVIDIA's board "
+ 'opened an independent investigation (independent directors + outside counsel), says it has no reason to believe '
+ 'secrets or national security were compromised, and keeps Huang as CEO. The $180 line (rung 2) and the 18 Nov rung 3 '
+ '($3,000) are on hold until the results and a first board update. 452 shares HELD - no sale. Tonight unchanged: AMD '
+ '22 sh at 449.04, TSM 25 sh at 375.44, sell 150 SGOV at 100.49. || PREVIOUS ENTRY: Nov 8, 2026 10:30 Bangkok - BOARD '
+ 'DECISION (Salee): (1) KLAC and LRCX tranche 3 (19 Nov, $10,889) DEFERRED to the 10 Dec review; (2) new money CUT to '
+ '$100,000 and MOVED to February 2027 (was $150,000 in January); the $39,269.96 February top-up is cancelled - funding '
+ 'target now $910,730.04, not $1,000,000. Crash reserve unchanged at $50,000, held in SGOV from existing cash. FUNDING '
+ 'GATE to February: only ~$4,700 spendable above the reserve after the 9-11 Nov buys (NVDA $3,000 on 18 Nov fits); any '
+ 'other line that fires waits for the February money. 10 Dec must close a ~$56,600 gap between approved room and '
+ "money. Week of 9 Nov unchanged. || PREVIOUS ENTRY: Nov 7, 2026 14:30 Bangkok - SCHEDULE CLEANED at Salee's "
+ 'instruction: 13 rows dated before Mon 9 Nov archived to src/schedule_archive_2026-11-09.json; the APP $320 trigger '
+ 'kept as a standing row. BUY/SELL PLAN ROLLED to 9 - 30 Nov: week 1 unchanged (AMD + TSM + SGOV sale Mon; AVGO + V + '
+ 'VST Tue; CAT Wed); NVDA DECIDE $3,000 on 18 Nov results; ⚠️ KLAC/LRCX tranche 3 (19 Nov, $10,889) flagged - cannot '
+ 'be funded without breaching the $50,000 SGOV reserve; decide by 16 Nov (new money or defer to 10 Dec). Thanksgiving '
+ '26 Nov added. || PREVIOUS ENTRY: Nov 7, 2026 09:40 Bangkok - 6 NOV CLOSE BOOKED FROM POEMS (positions 07:30 SGT): '
+ 'all 36 lines + SGOV tie to the cent (cost 798,074.91; MV 787,577.23; stocks unrealised -10,320.68, -1.42%). NO '
+ 'FILLS: the 6 Nov AMD (24 sh at 404.40) and TSM (26 sh at 353.10) Day LIMIT orders EXPIRED - closes 449.04 / 375.44. '
+ 'All three lines still met on the close, so MON 9 NOV after 22:00: AMD 22 sh LIMIT 449.04 / cap 453.53 + TSM 25 sh '
+ 'LIMIT 375.44 / cap 379.19 (~$19,300 from cash) and SELL 150 SGOV at 100.49. TUE: AVGO 16 sh (if Mon close <= 310) + '
+ 'V + VST (results PASSED: adj. EBITDA +50%, guide midpoint raised). WED: CAT. SPY 735.36 (+0.3%), QQQ 656.29 (+1.4%). '
+ '|| PREVIOUS ENTRY: Nov 6, 2026 11:30 Bangkok - 5 NOV CLOSE BOOKED FROM POEMS (positions 10:49 SGT): all 36 lines + '
+ 'SGOV tie to the cent (cost 798,074.91; MV 768,116.69; stocks unrealised -29,753.46, -4.09%). NO FILLS on 5 Nov: AMD '
+ "(-13% intraday, closed -17.3% at 404.40) and APP (+31% to 356.10) orders were not placed on Claude's advice. Lines "
+ 'hit on the close: TSM $380 (353.10) and AVGO $310 (291.53). TONIGHT Fri 6 Nov after 22:00: AMD 24 sh LIMIT 404.40 / '
+ 'cap 408.44; TSM 26 sh LIMIT 353.10 / cap 356.63 - ~$18,930 from cash 20,531. APP deferred (new line $320). AVGO Mon '
+ '9 Nov after a ~160 sh SGOV sale. Watch closes: 26 verified; TSEM left at 4 Nov. SPY 733.00 (-4.4%), QQQ 647.05 '
+ "(-6.5%). || PREVIOUS ENTRY: Nov 5, 2026 11:20 Bangkok - MU OVERRIDE WITHDRAWN by Salee on Claude's advice: no MU buy "
+ 'tonight; the $800 line is removed and the $3,418.42 waits for the 17 Dec volume test. Tonight: AMD 20 sh LIMIT '
+ '488.78 / cap 493.67 and APP 32 sh LIMIT 271.75 / cap 274.47 only. || PREVIOUS ENTRY: Nov 5, 2026 10:10 Bangkok - MU '
+ "$800 OVERRIDE LINE HIT (4 Nov close 795.23): BUY 4 sh LIMIT 795.23 / cap 803.18 tonight (Salee's 25 Oct override; "
+ "TrendForce contract prices still rising, hold-back rule not triggered). Tonight's three buys: AMD 20 sh, APP 32 sh, "
+ 'MU 4 sh. || PREVIOUS ENTRY: Nov 5, 2026 09:30 Bangkok - ALL 63 PRICES AT THE WED 4 NOV CLOSE. 36 HOLDINGS from '
+ "Salee's POEMS positions screen 09:47 SGT: all lines + SGOV match quantity and cost to the cent (798,074.91); MV "
+ '831,356.50 incl. SGOV ties; stocks MV 761,644.21, unrealised +33486.36 (+4.60%). 27 WATCH NAMES from '
+ 'financialcontent.com official/4:00 PM closes (marketbeat/stockanalysis/fool caches stale), each tied to the prior '
+ 'close or a second source; the 8 names left at 2 Nov yesterday now carry their verified 3 Nov->4 Nov chain. SPY '
+ '766.81 (+1.65%), QQQ 691.95 (+0.97%). Semis/infra fell while the index rose: 6%+ moves verified - MSFT +6.7%, AMZN '
+ '+6.1%, MRVL -7.1%, TER -6.8%, MU -7.0%, SNDK -7.9%, STX -8.1%, APH -6.2%, LITE -7.9%, CRDO -9.5%, CGNX -8.7%, LHX '
+ '-6.9%, KTOS -12.3%, AVAV -8.3%, DDOG -12.7%, ISRG +9.4%, BWXT -7.8%, GEV -9.3%, ETN -9.9%, VRT -12.9%, PWR -11.7%, '
+ 'CEG -6.7%, VST -13.8%, APP +10.7%, SE +6.3%, STRL -21.5%. ⚠️ AMD ORDER NOT PLACED on 4 Nov (Salee); AMD closed '
+ '488.78, above the $470 line - re-set tonight: BUY 20 sh LIMIT 488.78 / cap 493.67. APP RESULTS PASSED ALL FOUR TESTS '
+ '(rev $2.18bn, adj. EBITDA margin 84%, Q4 guide $2.37-2.40bn vs $2.25bn, no inquiry): BUY 32 sh LIMIT 271.75 / cap '
+ '274.47 tonight; +16% after hours so it may not fill - no chasing. || PREVIOUS ENTRY: Nov 4, 2026 15:00 Bangkok - '
+ "PRICES AT THE TUE 3 NOV CLOSE (the 00:30 UTC price job did not write them). 36 HOLDINGS from Salee's POEMS positions "
+ 'screen 15:23 SGT: all lines + SGOV match quantity and cost to the cent (798,074.91); MV 840,540.75 incl. SGOV ties; '
+ 'stocks MV 770,835.39, unrealised +42677.54 (+5.86%). 19 WATCH NAMES verified (marketbeat 4:00 PM headers with '
+ 'implied prev close = stored 2 Nov close; stockscan/financialcontent official closes for NYSE): SNDK, SNPS, MPWR, '
+ 'STX, GLW, COHR, FN, SPCX, KTOS, ORCL, HOOD, CRWD, FTNT, BWXT, PWR, GE, NFLX, APP 245.51 (+7.3%), STRL. 8 LEFT AT THE '
+ '2 NOV CLOSE - sources disagree or unconfirmed: ARM, DDOG, TSEM, LHX, NET, BE, SE, CIEN. SPY 754.35, QQQ 685.28. 6%+ '
+ 'moves verified on a second source: MPWR +6.8%, CRDO +7.8%, FN +15.4%, GEV +6.5%, ETN +7.0%, PWR +6.1%, APP +7.3%, '
+ 'STRL +7.7%. AMD closed 483.90 (above the $470 line) after a results PASS - order tonight 20 sh LIMIT 483.90 / cap '
+ '488.74. || PREVIOUS ENTRY: Nov 4, 2026 11:45 Bangkok - AMD RESULTS SCORED: test (b) PASSED (data centre +97%, '
+ 'non-GAAP GM 56%, Q4 guide ~$17bn vs $16.23bn). Order tonight: BUY 20 sh Day LIMIT 483.90 (3 Nov close), cap 488.74; '
+ '~+7% after hours, so it fills only on a pullback - no chasing. No SGOV sale needed for AMD/APP; SGOV top-up decided '
+ 'Mon 9 Nov for the 10-11 Nov buys. || PREVIOUS ENTRY: Nov 3, 2026 15:00 Bangkok - POEMS POSITIONS RECONCILED (screen '
+ '15:48 SGT, after the Mon 2 Nov close): 36 lines + SGOV match quantity and cost to the cent (798,074.91); MV '
+ '823,848.13 incl. SGOV ties. CAT 613.62, VST 134.61, VRT 224.24, GEV 862.25 set to the POEMS marks; SGOV 100.43. '
+ 'Stocks MV 754,149.71, unrealised +25,991.86 (+3.57%). ⚠️ AMD CLOSED 466.84 - BELOW THE $470 STANDING LINE (results '
+ 'tonight after the close). || PREVIOUS ENTRY: Nov 3, 2026 (00:30 UTC job) - DAILY PRICE REFRESH: all 63 prices at the '
+ "Mon 2026-11-02 close. Primary source: marketbeat.com 'Closing price 4:00 PM Eastern' headers last-updated 11/2/2026 "
+ '(stockanalysis.com and Google Finance caches again frozen pre-close); 14 NYSE names written from the '
+ "financialcontent.com 'Official Closing Price' 7:00 PM print instead of the marketbeat 3:59 PM print (largest gaps: "
+ 'ORCL 119.22 vs 118.79, ETN 366.07 vs 365.18, FN 314.70 vs 313.86, CIEN 284.34 vs 284.09); 7 NYSE names (COHR BWXT '
+ 'GEV VRT PWR VST CAT) kept at the marketbeat 3:59 PM print - every official-close mirror stale - so they may sit '
+ "cents off the auction close. Every ticker's implied previous close ties to the stored 30 Oct close to the cent. "
+ 'Semis/optics follow-through sell-off: 6%+ movers verified on a second source and allowed: LITE -18.59% and MRVL '
+ "-12.72% (deal arb; ycharts 'Nov 02, 16:00' stamps), ALAB -11.22%, CIEN -11.34%, ORCL -8.76% (financialcontent "
+ 'official; gurufocus headline -8.8%), DDOG -8.15%, STX -7.93%, AMD -7.58%, CRDO -7.27%, FTNT -7.25%, TSEM -6.70%, '
+ 'SNDK -6.59% (marketscreener 2026-11-02 exact). Counter-moves: GE +4.63%, FSLR +4.39%, V +2.88% (new 52w high '
+ '425.51), AMZN +2.20%. PLTR reported after the close; its -2.84% after-hours print is NOT on the board (close '
+ '178.34). SPY 752.10 -0.48% and QQQ 681.09 -1.36% (11-02); spyHigh unchanged 779.09 (SPY -3.5% off the high; '
+ "crash-reserve trigger 662.23). risk_series spy 11-02 added; ust10 11-02 skipped (mortgagenewsdaily's newest dated "
+ "row is mislabeled 'Nov 01', ycharts ends 10-30). HISTORY 11-02 row added. pe/ps/fpe/peg/M3-pfcf rescaled with price. "
+ 'Every number from a tool call this session. || PREVIOUS ENTRY: Nov 2, 2026 - MARVELL-LUMENTUM DEAL ANNOUNCED: '
+ 'all-stock, 4.500 MRVL per LITE (implied $1,132, +23.9% vs 28 Oct), EV ~$115bn, close 1H 2028. Scored on the 5 Nov '
+ 'row: HOLD both, no order; combined ~147.25 MRVL sh after close. || PREVIOUS ENTRY: Nov 2, 2026 - Macro WATCH rows '
+ 'added: US midterm elections (Tue 3 Nov) and October jobs report (Fri 6 Nov, 20:30 Bangkok). No order. || PREVIOUS '
+ 'ENTRY: Nov 2, 2026 - Earnings rows added for three more holdings this week (Earnings Whispers calendar): ETN Tue 3 '
+ 'Nov before the open, ALAB Tue 3 Nov after the close, LITE Thu 5 Nov after the close. All WATCH - no order. || '
+ "PREVIOUS ENTRY: Nov 1, 2026 - SCHEDULE CLEANED at Salee's instruction: 103 live rows kept (Nov 2026 onward + "
+ 'standing rules; stale FN, LHX and 19 Nov GOOGL notes also removed), 139 history rows archived to '
+ 'src/schedule_archive_2026-11-01.json. BUY/SELL PLAN rolled to 1-15 Nov: firm V $2,093 (10 Nov) and CAT $5,000 (11 '
+ 'Nov); decide APP $9,000 (5 Nov) and VST $3,433 (10 Nov); APP and VST results dates confirmed. || PREVIOUS ENTRY: Nov '
+ "1, 2026 - Earnings rows added for this week's holdings: PLTR Mon 2 Nov, AMD and ANET Tue 3 Nov (all after the close, "
+ 'company-confirmed); AAPL 2 Nov now confirmed by Apple IR. All WATCH - no order on the prints; buy routes stay the '
+ 'standing lines (PLTR $150, AMD $470). || PREVIOUS ENTRY: Nov 1, 2026 - META 10 Dec row: S&P outlook cut to negative '
+ '(AA- affirmed, 30 Oct; FOCF -$71bn forecast for 2027, leverage 1.1x vs 1.0x threshold) recorded. No price, budget or '
+ 'order changed. || PREVIOUS ENTRY: Oct 31, 2026 09:50 Bangkok - ALL 63 PRICES AT THE FRI 30 OCT CLOSE (the 00:30 UTC '
+ "price job did not run - scheduled jobs on claude-fable-5 are failing on the usage limit). 36 HOLDINGS from Salee's "
+ 'POEMS positions screen 09:36 SGT: all 36 lines + SGOV match quantity and cost to the cent incl. the 30 Oct CAT fill '
+ '(cost 798,074.91; MV 843,570.71; CAT commission estimate 9.49 confirmed). 27 WATCH NAMES from marketbeat 10/30 4:00 '
+ "PM closing headers / fool.com 'last close 2026-10-30' / massive.com / financialcontent, each cross-checked against "
+ 'the prior close or a second source. SPY 755.72 (-1.77%), QQQ 690.49 (-3.47%). Semiconductor sell-off day (Intel -29% '
+ 'on a weak Q4 guide; SOX about -7 to -9%): 6%+ moves verified - holdings AMD -10.9%, MRVL -10.0%, ALAB -10.9%, CRDO '
+ '-8.7%, LITE -8.6%, ANET -8.3%, AMAT -7.5%, TER -7.4%, RKLB -7.4%, ASML -6.6%, AVAV -6.5%, PLTR -6.3%, LRCX -6.0%, '
+ 'ETN -6.0%; watch SNDK -13.5%, DDOG -11.5%, TSEM -11.4%, COHR -11.2%, APP -10.4%, ARM -10.0%, NET -9.5%, BE -8.6%, '
+ 'STX -8.0%, CIEN -8.0%, STRL -7.4%, HOOD -7.2%, SPCX -6.4%, ORCL -6.3%, FN -6.3%. Ratios rescaled with price. HISTORY '
+ '10-30 row added (stocks MV 773,664.08, unrealised +45,506.23 / +6.25%). Note: 8 NYSE watch closes of 29 Oct (COHR FN '
+ "LHX ORCL NET PWR GE CIEN) were 3:59 PM prints, cents off the official close - superseded by today's verified closes. "
+ 'AMZN/CAT/LHX Q3 fundamentals still pending (earnings job failed). || PREVIOUS ENTRY: Oct 30, 2026 21:45 Bangkok - '
+ 'CAT BOOKED: 7 sh at 633.5642 = 4,444.44 (rung 2 of 3; Power Generation test passed). Position 13 sh, cost 9,332.99; '
+ 'cash 20,530.86. October MONTHLY and investedEver updated with the fill. || PREVIOUS ENTRY: Oct 30, 2026 11:10 '
+ 'Bangkok - POEMS POSITIONS RECONCILED (screen 10:56 SGT, after the 29 Oct close): 36 lines + SGOV match to the cent; '
+ 'market value 874,941.02 ties. Nine NYSE marks set from POEMS (APH 82.08, ANET 184.22, CAT 647.39, ETN 393.72, TSM '
+ "431.81, VRT 245.92, V 410.54, VST 140.95; SGOV 100.71) - all within 0.2% of the job's closes; ratios rescaled. No "
+ 'fill tonight yet: CAT 7 sh LIMIT 647.39 (cap 653.86) is the only order. || PREVIOUS ENTRY: Oct 30, 2026 08:40 '
+ 'Bangkok - AMZN Q3 read recorded (AWS +39%, backlog $578bn, TTM FCF -$42.4bn, no order - over budget); CAT order set: '
+ '7 sh Day LIMIT 647.22, cap 653.69. || PREVIOUS ENTRY: Oct 30, 2026 (00:30 UTC job) - DAILY PRICE REFRESH: all 63 '
+ 'prices set to the Thu 2026-10-29 close. Primary source this run: marketbeat.com dated daily-price tables / '
+ "closing-price headers (pages updated 10/29, 'Closing price 4:00 PM Eastern' stamps), every ticker's prior close "
+ 'cross-checked against the stored board value; stockanalysis.com and Google Finance caches still frozen pre-close '
+ '(5th night); GEV from the fool.com quote page previous-close field (887.85; method validated to the cent on GOOGL '
+ 'and MSFT this run). Big earnings-reaction day: 6%-movers verified + allowed: GOOGL 283.82 -12.64% (Q3 miss/FCF, fool '
+ 'prev-close field exact + news), FTNT 139.10 -20.09% (service-revenue forecast cut; 247wallst sidebar exact), MRVL '
+ '218.34 -13.24% (Lumentum deal talks; fool widget -13.24% exact), CAT 647.22 -9.49% (sales outlook; 247wallst sidebar '
+ '647.39), LHX 279.12 +7.10% (Q3 beat + raised FY guide; investing.com 278.65 +6.92%), AVAV 134.88 +7.09% (gurufocus '
+ '+7.1%). SPY 769.36 and QQQ 715.34 (10-29, marketbeat closing headers; prev closes match board); spyHigh unchanged '
+ '779.09. risk_series spy 10-29 added; ust10 10-29 skipped (ycharts H15 only through 10-27; yahoo close bar printed '
+ '4.99 for reference). HISTORY 10-29 row added (first row including the 29 Oct MSFT buy, 126 sh). Note: TSEM 187.92 '
+ 'written from a dated 10/29 marketbeat header whose implied 10/28 prev close (193.52) could not be cross-checked - '
+ 'flagged for the next run. Every number from a tool call this session. || PREVIOUS ENTRY: Oct 29, 2026 23:00 Bangkok '
+ '- GOOGL 10 Dec test (1) CLARIFIED: Q3 ATM share sales of $12.4bn were draws under the $40bn ATM announced in the '
+ 'June $84.75bn raise, so they do not fail the test; a new or upsized programme would. No order, budget or price '
+ 'changed. || PREVIOUS ENTRY: Oct 29, 2026 22:30 Bangkok - MSFT BOOKED 9 sh at 525.4031 = 4,738.75; cash 24,975.30. '
+ 'FULL POEMS RECONCILIATION: 36 lines + SGOV match to the cent; cash corrected by 0.10 (CRWD 19 Oct fee true-up); SGOV '
+ 'sale trued up to 10,047.25 (realised -27.25); October MONTHLY rebuilt (6 buys + 1 sale had been missing); October '
+ 'dividends 251.31 itemised. Prices: 54 names at the 28 Oct close, 9 at 27 Oct - the 29 Oct close is written by the '
+ 'next morning run. || PREVIOUS ENTRY: Oct 29, 2026 (03:30 UTC job) - DAILY PRICE REFRESH, 2nd pass: 11 more of the 15 '
+ 'stragglers resolved. Wed 2026-10-28 close written for ETN 392.88, GEV 878.03, PWR 606.89, COHR 239.59, SPCX 145.23, '
+ 'CIEN 363.21 (54 of 63 now at 10-28); verified Tue 10-27 close written for ARM 226.60, GE 297.66, MPWR 1211.89, LHX '
+ '259.40, TSEM 189.08 (marketbeat prev-close fields / heygotrade dated closes; every prev-close cross-checked against '
+ 'the stored prior close to the cent). Sources: 247wallst Oct-28 article sidebars validated to the cent on '
+ 'MSFT/ORCL/NVDA/MU/GOOGL/VRT; heygotrade dated close pages; stockanalysis/Google Finance/tipranks/marketscreener '
+ 'caches still frozen pre-close (4th night). 6%-movers vs last build, verified + allowed: PWR +7.6% (sidebar + '
+ '247wallst company page, prev 578.8x both), COHR +8.2% (sidebar; prev 235.79 = heygotrade 10-27 close exact), CIEN '
+ '+8.1% (heygotrade 10-28 close 363.21 +3.43%; gurufocus +3.4% same evening). Unresolved, left at their verified 10-27 '
+ 'close: CDNS 343.08, CRDO 167.43, AVAV 126.73, CEG 258.98 (heygotrade 10-27 closes match the board to the cent; no '
+ 'readable 10-28 close). SPY 772.31 10-28 (marketchameleon dated close; SSGA official 10-27 769.66 added to '
+ 'risk_series with ycharts ust10 4.99 10-27; ust10 10-28 skipped - named sources not yet updated, fool.com wrap '
+ 'printed 5.02 at close for reference). HISTORY 10-28 row mv updated in place for the new ETN/GEV closes. || PREVIOUS '
+ 'ENTRY: Oct 29, 2026 (00:30 UTC job) - DAILY PRICE REFRESH: 48 of 63 set to the Wed 2026-10-28 close (fool.com dated '
+ 'quote pages; stockanalysis/Google Finance/ycharts caches frozen pre-close for a third night). 15 unresolved stay at '
+ 'their prior close: holdings CDNS CRDO AVAV GEV ETN CEG (10-27), watch ARM MPWR COHR SPCX LHX PWR GE TSEM CIEN '
+ '(10-26). QQQ 725.61 (10-28); SPY, spyHigh and risk_series spy/ust10 left unchanged - no clean close readable. '
+ 'HISTORY row 10-28 added. 6%-movers verified: ORCL 144.54 +10.73% d/d, VRT 242.94 +16.49% d/d, MU 983.23, SNDK '
+ '1404.77, STX 697.97 (247wallst sidebar matches to the cent); SNPS FN BE STRL on dated fool closes + headline '
+ 'corroboration. || PREVIOUS ENTRY: Oct 29, 2026 - GOOGL TEST APPROVED (Salee): 19 Nov $18,524 tranche moved to a 10 '
+ 'Dec DECIDE - buy only if no further share sale AND a credible path back to positive free cash flow; fail = budget '
+ 'cut to cost spent, no sale. || PREVIOUS ENTRY: Oct 29, 2026 04:45 Bangkok - RESULTS SCORED: MSFT PASS (BUY 9 sh '
+ 'tonight, limit 531.01, cap 536.32); STRL FAIL (signed backlog 4.14bn < 4.33bn; budget back to pool; half 2 '
+ 'cancelled); GEV thesis intact (Power orders +178%, Electrification -9% on a tough comparison); VRT partial '
+ 'disclosure; GOOGL Q3 cloud doubled but FCF -9.1bn + June 84.75bn equity raise - 19 Nov tranche pending Salee. Fed '
+ 'held 3.75-4.00% (10-2, Cook and Hammack for a hike). SGOV 4 Nov sale no longer needed. || PREVIOUS ENTRY: Oct 28, '
+ '2026 - SGOV SLICE 1 BOOKED: SELL 100 at 100.6901 = 10,047.46 net (POEMS 1187938, 22:29 Bangkok). Cash 29,714.36; '
+ 'SGOV 694 sh parked (cost 69,917.06). || PREVIOUS ENTRY: Oct 28, 2026 13:16 Bangkok - PRICES OF THE 36 HOLDINGS SET '
+ 'TO THE TUE 2026-10-27 CLOSE FROM SALEE\'S POEMS POSITIONS SCREEN (US market closed; POEMS "Current Price" column; '
+ 'SGOV mark 100.68). Reason: every web source reachable from the sandbox served pre-close cached pages for Oct 27 '
+ 'through both scheduled runs (00:30 and 03:30 UTC) and manual checks at 03:30-04:50 UTC, so 0 of 63 could be written '
+ 'by the job. The 27 watch names (no position) stay at the 26 Oct close until the next successful run. Moves of 6%+ vs '
+ '26 Oct: CDNS +6.5%, ALAB +10.5%, CRDO +10.8%, RKLB +8.3% - consistent with the reported 27 Oct session (AMD +5.5%, '
+ 'AVGO +4%, MU +2.8%, chips rally). Positions and cost on the same screen reconcile to the board to the cent on all 36 '
+ 'lines (641,827.76 NASD + 247,167.89 NYSE incl. SGOV = 888,995.64). pe/ps/fpe/peg/pfcf rescaled with price per the 26 '
+ 'Oct rule. || PREVIOUS ENTRY: Oct 28, 2026 (runs 00:30 + 03:30 UTC) - DAILY PRICE REFRESH: BOTH overnight passes '
+ 'could not resolve the Tue 2026-10-27 close for any ticker. 03:30 pass sampled 14 stockanalysis.com quote/history '
+ 'pages: every capture predated the 4:00 PM close (freshest stamps 10:05-11:25 AM EDT Oct 27; some caches as old as '
+ 'May 2025), and Google Finance (Sep 24/25 caches), marketscreener (Sep 4) and ycharts (Oct 26 18:04 EDT) were equally '
+ 'stale. Per the leave-unchanged rule nothing was written: all 63 prices, mcaps, P/E block, SPY/QQQ and pxd stay at '
+ 'the Mon 2026-10-26 close (CGNX still 2026-10-23); no HISTORY row; risk_series ust10/spy 10-27 skipped (sources '
+ 'unreadable; ust10 2026-10-26 = 5.00 was already added by the 00:30 pass). Oct-26 baseline cross-checked against 9 '
+ 'history tables - all matched. Every number checked came from a tool call this session; the next scheduled pass '
+ 'retries.')
 
 GROUPS = ['Hyperscalers & Model Owners',
  'AI Chips & Chip Design',
@@ -5971,68 +5976,84 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
                  '(room 5,667.01). Final rung. CATERPILLAR rung 3 of 3 (5,000 of 15,000).'},
            {'a': 'DECIDE',
             'amt': 0,
-            'c': 'estimated',
-            'cond': 'DECIDED 12 Nov 2026 (Salee): "For NVDA decide on 19 Nov whether Buy/Sell." No sale and no buy '
-                    'before then - HOLD all 452 sh. The pre-set trim rule Claude proposed on 12 Nov (sell ~70 sh if '
-                    'the CEO goes or a formal action is disclosed) is NOT adopted. If a trigger fires before 19 Nov, '
-                    'Claude reports it the same day and Salee decides. On Thu 19 Nov, after the 18 Nov results: BUY '
-                    '(resume the $180 line / rung 3), HOLD, or SELL (trim toward 8% of stocks). || ⚠️ ESCALATED AGAIN '
-                    "12 Nov: (1) WSJ (via Motley Fool/Yahoo, Fortune): NVIDIA's board met Wed 11 Nov to discuss "
-                    'REMOVING the CEO; no outcome reported by 16:15 Bangkok 12 Nov; no successor named. NVDA about -7 '
-                    'to -9% pre-market (~$158-161) after closing 173.73. (2) The Information (via Fortune): Megaspeed '
-                    'moved at least $7.5bn of NVIDIA chips; DOJ, FBI and Congress reported to be looking at the '
-                    'matter; the House passed the Remote Access Security Act (Senate next); FT: NVIDIA now requires '
-                    'cloud clients to sell at least 51% to non-Chinese customers. No formal action naming NVIDIA yet, '
-                    'and trigger 2 (CEO leaves) has NOT fired - but it may within hours. UPDATED ODDS (Claude): A '
-                    'cleared 15% $200-215 | B drags on 35% $155-180 | C CEO leaves 38% $130-150 | D worst case 12% '
-                    '$100-110 -> weighted ~$156, about the pre-market price. PRE-SET RULE (proposed 12 Nov - NOT '
-                    'ADOPTED): if the CEO is removed or resigns, or any formal government action naming NVIDIA is '
-                    'disclosed -> SELL about 70 sh at the next US session (Day LIMIT near the live bid, after the '
-                    'first 30 minutes) to bring NVDA to ~8% of stocks; keep ~382 sh. If the board keeps him -> hold '
-                    'all 452 and decide on 19 Nov as planned. No sale on the pre-market gap alone. || NVDA SCENARIOS '
-                    "(Claude's judgment, 11 Nov; forward EPS ~$12.09, price 168.89 = 14x): A CLEARED (30%) $200-215 | "
-                    'B DRAGS ON (40%) $155-180 | C CEO LEAVES, orderly, no charges (20%) $130-150 | D WORST CASE - '
-                    'formal government action, CEO out, China licences lost (10%) $100-110. Odds-weighted ~$168 = '
-                    "today's price. On 452 sh: A +$17,200, B flat, C -$13,100, D -$28,900 (-3.8% of stocks). Trim to "
-                    '8% of stocks = sell ~93 sh; cuts the worst case by ~$5,900. || ⚠️ ESCALATED 10 Nov (Bloomberg, '
-                    "via Business Today): the story now touches NVIDIA's OWN conduct. (1) In late summer 2025 NVIDIA's "
-                    'general counsel called the Commerce under-secretary who runs export controls about the Megaspeed '
-                    'case; afterwards BIS investigators were told to route NVIDIA requests through his office - '
-                    "described as highly unusual - and the probe later stalled. (2) Bloomberg's trade-record analysis "
-                    "says NVIDIA's inventory count given to the US government undercounted chips sold to Megaspeed by "
-                    'about 50,000 units (billions of dollars); NVIDIA says it later inspected more warehouses but gave '
-                    "no number. NVIDIA says its counsel did not know of the CEO's relationship. No charge, penalty or "
-                    'licence action against NVIDIA. NEW 4th TRIGGER: any FORMAL government action naming NVIDIA '
-                    '(subpoena, charge, settlement, licence suspension disclosed in a filing) or the departure of the '
-                    'CEO or general counsel -> review a trim the same day. REVIEW BROUGHT FORWARD: decide hold vs trim '
-                    'on Thu 19 Nov after the 18 Nov results, not 10 Dec. || ⚠️ NVDA BUYS SUSPENDED 9 Nov 2026 (Claude; '
-                    "pending Salee's confirmation): on 8 Nov Jensen Huang admitted, in a letter to staff, a personal "
-                    'relationship with a person US intelligence reportedly links to a foreign intelligence effort; '
-                    "NVIDIA's board formed a committee of independent directors with outside counsel to investigate. "
-                    'The board says it has "no reason to believe" national security or NVIDIA secrets were compromised '
-                    'and has confidence in Huang, who remains CEO. Key-person and export-control/regulatory risk is '
-                    'now open. No new NVDA money until (a) the 18 Nov results and call AND (b) the board gives a first '
-                    'update. HOLD the 452 shares - no sale. Sell/review triggers: the investigation finds a '
-                    'compromise; Huang leaves without a named successor; or export licences or penalties hit NVIDIA. '
-                    '|| Funding: fits inside the reserve - ~30 SGOV (544 -> ~514 sh, ~$51,600). Sell SGOV Wed 18 Nov '
-                    'evening only if the results PASS at 05:00 Thu 19 Nov Bangkok; buy Thu 19 Nov evening at the 18 '
-                    'Nov close, cap +1%. BUY $3,000 only if gross margin is 72% or above (below that, custom silicon '
-                    'is biting - cancel this rung and pause the limits). Cut from $8,000 on 4 Oct so the ladder (7,000 '
-                    '+ 5,619.72 + 3,000 = 15,619.72) matches the remaining budget exactly; it had been overcommitted '
-                    'by $5,000. || Buy only if data-centre growth holds ABOVE 80% YoY and gross margin at 73%+. NOT '
-                    "triggers: acquisition headlines, GPU launches, 'AI king' commentary. NVDA is already 13.3% of the "
-                    'book.',
-            'd': '2026-11-18',
+            'c': 'confirmed',
+            'cond': '⚠️ TRIGGER 2 FIRED 12 Nov 2026: Jensen Huang RESIGNED as President, CEO and director, effective '
+                    'immediately (NVIDIA press release, 12 Nov). CFO Colette Kress is Interim CEO and stays CFO; the '
+                    "board is searching inside and outside for a permanent CEO. Harvey C. Jones named the company's "
+                    "first Chair. The release says nothing about the investigation's findings, export compliance or "
+                    'any government inquiry. No formal government action naming NVIDIA reported (trigger 4 NOT fired); '
+                    'JPMorgan: risk of tighter China shipment rules has risen; NBC source calls the woman a Chinese '
+                    'spy (unconfirmed). PRICE: opened about -12 to -14% (~$150-153), recovered to 165.07 (-4.98%) at '
+                    "13:45 New York; 11 Nov close 173.73. That is ABOVE Claude's scenario-C range ($130-150). RESULTS "
+                    'DATE: the release gives Q3 FY2027 results on TUESDAY 17 NOV, ~1:20 pm Pacific (04:20 Wed 18 Nov '
+                    'Bangkok), call 05:00 Bangkok - one day earlier than the 18 Nov on this board. First session to '
+                    'act on the results is Wed 18 Nov evening Bangkok. STANDING DECISION (Salee, 12 Nov) UNCHANGED '
+                    'until he says otherwise: hold all 452 sh, no order; decide after the results. Reported to Salee '
+                    'the same evening (23:30 Bangkok). Disclosure: Claude is made by Anthropic; NVIDIA is a reported '
+                    'investor in Anthropic. || DECIDED 12 Nov 2026 (Salee): "For NVDA decide on 19 Nov whether '
+                    'Buy/Sell." No sale and no buy before then - HOLD all 452 sh. The pre-set trim rule Claude '
+                    'proposed on 12 Nov (sell ~70 sh if the CEO goes or a formal action is disclosed) is NOT adopted. '
+                    'If a trigger fires before 19 Nov, Claude reports it the same day and Salee decides. On Thu 19 '
+                    'Nov, after the 18 Nov results: BUY (resume the $180 line / rung 3), HOLD, or SELL (trim toward 8% '
+                    "of stocks). || ⚠️ ESCALATED AGAIN 12 Nov: (1) WSJ (via Motley Fool/Yahoo, Fortune): NVIDIA's "
+                    'board met Wed 11 Nov to discuss REMOVING the CEO; no outcome reported by 16:15 Bangkok 12 Nov; no '
+                    'successor named. NVDA about -7 to -9% pre-market (~$158-161) after closing 173.73. (2) The '
+                    'Information (via Fortune): Megaspeed moved at least $7.5bn of NVIDIA chips; DOJ, FBI and Congress '
+                    'reported to be looking at the matter; the House passed the Remote Access Security Act (Senate '
+                    'next); FT: NVIDIA now requires cloud clients to sell at least 51% to non-Chinese customers. No '
+                    'formal action naming NVIDIA yet, and trigger 2 (CEO leaves) has NOT fired - but it may within '
+                    'hours. UPDATED ODDS (Claude): A cleared 15% $200-215 | B drags on 35% $155-180 | C CEO leaves 38% '
+                    '$130-150 | D worst case 12% $100-110 -> weighted ~$156, about the pre-market price. PRE-SET RULE '
+                    '(proposed 12 Nov - NOT ADOPTED): if the CEO is removed or resigns, or any formal government '
+                    'action naming NVIDIA is disclosed -> SELL about 70 sh at the next US session (Day LIMIT near the '
+                    'live bid, after the first 30 minutes) to bring NVDA to ~8% of stocks; keep ~382 sh. If the board '
+                    'keeps him -> hold all 452 and decide on 19 Nov as planned. No sale on the pre-market gap alone. '
+                    "|| NVDA SCENARIOS (Claude's judgment, 11 Nov; forward EPS ~$12.09, price 168.89 = 14x): A CLEARED "
+                    '(30%) $200-215 | B DRAGS ON (40%) $155-180 | C CEO LEAVES, orderly, no charges (20%) $130-150 | D '
+                    'WORST CASE - formal government action, CEO out, China licences lost (10%) $100-110. Odds-weighted '
+                    "~$168 = today's price. On 452 sh: A +$17,200, B flat, C -$13,100, D -$28,900 (-3.8% of stocks). "
+                    'Trim to 8% of stocks = sell ~93 sh; cuts the worst case by ~$5,900. || ⚠️ ESCALATED 10 Nov '
+                    "(Bloomberg, via Business Today): the story now touches NVIDIA's OWN conduct. (1) In late summer "
+                    "2025 NVIDIA's general counsel called the Commerce under-secretary who runs export controls about "
+                    'the Megaspeed case; afterwards BIS investigators were told to route NVIDIA requests through his '
+                    "office - described as highly unusual - and the probe later stalled. (2) Bloomberg's trade-record "
+                    "analysis says NVIDIA's inventory count given to the US government undercounted chips sold to "
+                    'Megaspeed by about 50,000 units (billions of dollars); NVIDIA says it later inspected more '
+                    "warehouses but gave no number. NVIDIA says its counsel did not know of the CEO's relationship. No "
+                    'charge, penalty or licence action against NVIDIA. NEW 4th TRIGGER: any FORMAL government action '
+                    'naming NVIDIA (subpoena, charge, settlement, licence suspension disclosed in a filing) or the '
+                    'departure of the CEO or general counsel -> review a trim the same day. REVIEW BROUGHT FORWARD: '
+                    'decide hold vs trim on Thu 19 Nov after the 18 Nov results, not 10 Dec. || ⚠️ NVDA BUYS SUSPENDED '
+                    "9 Nov 2026 (Claude; pending Salee's confirmation): on 8 Nov Jensen Huang admitted, in a letter to "
+                    'staff, a personal relationship with a person US intelligence reportedly links to a foreign '
+                    "intelligence effort; NVIDIA's board formed a committee of independent directors with outside "
+                    'counsel to investigate. The board says it has "no reason to believe" national security or NVIDIA '
+                    'secrets were compromised and has confidence in Huang, who remains CEO. Key-person and '
+                    'export-control/regulatory risk is now open. No new NVDA money until (a) the 18 Nov results and '
+                    'call AND (b) the board gives a first update. HOLD the 452 shares - no sale. Sell/review triggers: '
+                    'the investigation finds a compromise; Huang leaves without a named successor; or export licences '
+                    'or penalties hit NVIDIA. || Funding: fits inside the reserve - ~30 SGOV (544 -> ~514 sh, '
+                    '~$51,600). Sell SGOV Wed 18 Nov evening only if the results PASS at 05:00 Thu 19 Nov Bangkok; buy '
+                    'Thu 19 Nov evening at the 18 Nov close, cap +1%. BUY $3,000 only if gross margin is 72% or above '
+                    '(below that, custom silicon is biting - cancel this rung and pause the limits). Cut from $8,000 '
+                    'on 4 Oct so the ladder (7,000 + 5,619.72 + 3,000 = 15,619.72) matches the remaining budget '
+                    'exactly; it had been overcommitted by $5,000. || Buy only if data-centre growth holds ABOVE 80% '
+                    "YoY and gross margin at 73%+. NOT triggers: acquisition headlines, GPU launches, 'AI king' "
+                    'commentary. NVDA is already 13.3% of the book.',
+            'd': '2026-11-17',
             'k': 'earnings',
             't': 'NVDA',
-            'w': 'DECIDE Thu 19 Nov (Bangkok) after the 18 Nov results - BUY, HOLD or SELL (Salee, 12 Nov). Hold all '
-                 '452 sh until then. APPROVED 11 Nov 2026 (Salee): tactics agreed - HOLD 452 sh, no buying, decide '
-                 'hold vs trim Thu 19 Nov after the results; any of the four triggers before then = review a trim that '
-                 'day. DECIDE Thu 19 Nov (Bangkok) after the 18 Nov results: HOLD all 452 sh, or TRIM toward 8% of '
-                 'stocks (about 110 sh) - based on the results, what management says about the Megaspeed inventory '
-                 'count and the board investigation, and whether any formal government action has been disclosed. No '
-                 'buy. SUSPENDED 9 Nov - rung 3 ($3,000) NOT decided on these results; read the results and the '
-                 'investigation together. Q3 FY2027 results - ladder rung 3: DECIDE $3,000 (cut from $8,000 on 4 Oct)'},
+            'w': '⚠️ CEO RESIGNED 12 Nov (trigger 2 fired) - Kress interim CEO. Results now TUE 17 NOV US (04:20 Wed '
+                 "18 Nov Bangkok). DECIDE BUY / HOLD / SELL after the results - Salee's date is Thu 19 Nov; the first "
+                 'session to act is Wed 18 Nov evening. Hold all 452 sh until then. DECIDE Thu 19 Nov (Bangkok) after '
+                 'the 18 Nov results - BUY, HOLD or SELL (Salee, 12 Nov). Hold all 452 sh until then. APPROVED 11 Nov '
+                 '2026 (Salee): tactics agreed - HOLD 452 sh, no buying, decide hold vs trim Thu 19 Nov after the '
+                 'results; any of the four triggers before then = review a trim that day. DECIDE Thu 19 Nov (Bangkok) '
+                 'after the 18 Nov results: HOLD all 452 sh, or TRIM toward 8% of stocks (about 110 sh) - based on the '
+                 'results, what management says about the Megaspeed inventory count and the board investigation, and '
+                 'whether any formal government action has been disclosed. No buy. SUSPENDED 9 Nov - rung 3 ($3,000) '
+                 'NOT decided on these results; read the results and the investigation together. Q3 FY2027 results - '
+                 'ladder rung 3: DECIDE $3,000 (cut from $8,000 on 4 Oct)'},
            {'a': 'WATCH',
             'amt': 0,
             'c': 'open',
@@ -8885,50 +8906,52 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
            {'a': 'HOLD',
             'amt': 5619.72,
             'c': 'standing',
-            'cond': 'DECIDED 12 Nov 2026 (Salee): "For NVDA decide on 19 Nov whether Buy/Sell." No sale and no buy '
-                    'before then - HOLD all 452 sh. The pre-set trim rule Claude proposed on 12 Nov (sell ~70 sh if '
-                    'the CEO goes or a formal action is disclosed) is NOT adopted. If a trigger fires before 19 Nov, '
-                    'Claude reports it the same day and Salee decides. On Thu 19 Nov, after the 18 Nov results: BUY '
-                    '(resume the $180 line / rung 3), HOLD, or SELL (trim toward 8% of stocks). || ⚠️ ESCALATED AGAIN '
-                    "12 Nov: (1) WSJ (via Motley Fool/Yahoo, Fortune): NVIDIA's board met Wed 11 Nov to discuss "
-                    'REMOVING the CEO; no outcome reported by 16:15 Bangkok 12 Nov; no successor named. NVDA about -7 '
-                    'to -9% pre-market (~$158-161) after closing 173.73. (2) The Information (via Fortune): Megaspeed '
-                    'moved at least $7.5bn of NVIDIA chips; DOJ, FBI and Congress reported to be looking at the '
-                    'matter; the House passed the Remote Access Security Act (Senate next); FT: NVIDIA now requires '
-                    'cloud clients to sell at least 51% to non-Chinese customers. No formal action naming NVIDIA yet, '
-                    'and trigger 2 (CEO leaves) has NOT fired - but it may within hours. UPDATED ODDS (Claude): A '
-                    'cleared 15% $200-215 | B drags on 35% $155-180 | C CEO leaves 38% $130-150 | D worst case 12% '
-                    '$100-110 -> weighted ~$156, about the pre-market price. PRE-SET RULE (proposed 12 Nov - NOT '
-                    'ADOPTED): if the CEO is removed or resigns, or any formal government action naming NVIDIA is '
-                    'disclosed -> SELL about 70 sh at the next US session (Day LIMIT near the live bid, after the '
-                    'first 30 minutes) to bring NVDA to ~8% of stocks; keep ~382 sh. If the board keeps him -> hold '
-                    'all 452 and decide on 19 Nov as planned. No sale on the pre-market gap alone. || APPROVED 11 Nov '
-                    '2026 (Salee): suspension and the four triggers confirmed. 10 Nov close 168.89 (below the '
-                    'suspended $180 line - no buy). || ⚠️ ESCALATED 10 Nov (Bloomberg, via Business Today): the story '
-                    "now touches NVIDIA's OWN conduct. (1) In late summer 2025 NVIDIA's general counsel called the "
-                    'Commerce under-secretary who runs export controls about the Megaspeed case; afterwards BIS '
-                    'investigators were told to route NVIDIA requests through his office - described as highly unusual '
-                    "- and the probe later stalled. (2) Bloomberg's trade-record analysis says NVIDIA's inventory "
-                    'count given to the US government undercounted chips sold to Megaspeed by about 50,000 units '
-                    '(billions of dollars); NVIDIA says it later inspected more warehouses but gave no number. NVIDIA '
-                    "says its counsel did not know of the CEO's relationship. No charge, penalty or licence action "
-                    'against NVIDIA. NEW 4th TRIGGER: any FORMAL government action naming NVIDIA (subpoena, charge, '
-                    'settlement, licence suspension disclosed in a filing) or the departure of the CEO or general '
-                    'counsel -> review a trim the same day. REVIEW BROUGHT FORWARD: decide hold vs trim on Thu 19 Nov '
-                    'after the 18 Nov results, not 10 Dec. || 9 Nov: NVDA CLOSED 178.67 (-4.3%), BELOW the suspended '
-                    '$180 line - no buy (suspension in force). || ⚠️ NVDA BUYS SUSPENDED 9 Nov 2026 (Claude; confirmed '
-                    'by Salee 11 Nov): on 8 Nov Jensen Huang admitted, in a letter to staff, a personal relationship '
-                    "with a person US intelligence reportedly links to a foreign intelligence effort; NVIDIA's board "
-                    'formed a committee of independent directors with outside counsel to investigate. The board says '
-                    'it has "no reason to believe" national security or NVIDIA secrets were compromised and has '
-                    'confidence in Huang, who remains CEO. Key-person and export-control/regulatory risk is now open. '
-                    'No new NVDA money until (a) the 18 Nov results and call AND (b) the board gives a first update. '
-                    'HOLD the 452 shares - no sale. Sell/review triggers: the investigation finds a compromise; Huang '
-                    'leaves without a named successor; or export licences or penalties hit NVIDIA. || -21.9%. The '
-                    "'something broke and I want to own it anyway' price. || FUNDING (8 Nov): no new money until Feb "
-                    '2027 ($100,000). Until then a buy is paid only from cash plus SGOV above the $50,000 '
-                    'crash-reserve floor (~$4,700 after the 9-11 Nov buys, ~$1,700 after NVDA 18 Nov). If this fires '
-                    'before February and does not fit, it WAITS for the February money - no SGOV sale below the floor.',
+            'cond': '⚠️ 12 Nov: CEO RESIGNED (trigger 2 fired); Kress interim CEO; results Tue 17 Nov US. Line stays '
+                    'SUSPENDED; decision after the results (Salee). || DECIDED 12 Nov 2026 (Salee): "For NVDA decide '
+                    'on 19 Nov whether Buy/Sell." No sale and no buy before then - HOLD all 452 sh. The pre-set trim '
+                    'rule Claude proposed on 12 Nov (sell ~70 sh if the CEO goes or a formal action is disclosed) is '
+                    'NOT adopted. If a trigger fires before 19 Nov, Claude reports it the same day and Salee decides. '
+                    'On Thu 19 Nov, after the 18 Nov results: BUY (resume the $180 line / rung 3), HOLD, or SELL (trim '
+                    'toward 8% of stocks). || ⚠️ ESCALATED AGAIN 12 Nov: (1) WSJ (via Motley Fool/Yahoo, Fortune): '
+                    "NVIDIA's board met Wed 11 Nov to discuss REMOVING the CEO; no outcome reported by 16:15 Bangkok "
+                    '12 Nov; no successor named. NVDA about -7 to -9% pre-market (~$158-161) after closing 173.73. (2) '
+                    'The Information (via Fortune): Megaspeed moved at least $7.5bn of NVIDIA chips; DOJ, FBI and '
+                    'Congress reported to be looking at the matter; the House passed the Remote Access Security Act '
+                    '(Senate next); FT: NVIDIA now requires cloud clients to sell at least 51% to non-Chinese '
+                    'customers. No formal action naming NVIDIA yet, and trigger 2 (CEO leaves) has NOT fired - but it '
+                    'may within hours. UPDATED ODDS (Claude): A cleared 15% $200-215 | B drags on 35% $155-180 | C CEO '
+                    'leaves 38% $130-150 | D worst case 12% $100-110 -> weighted ~$156, about the pre-market price. '
+                    'PRE-SET RULE (proposed 12 Nov - NOT ADOPTED): if the CEO is removed or resigns, or any formal '
+                    'government action naming NVIDIA is disclosed -> SELL about 70 sh at the next US session (Day '
+                    'LIMIT near the live bid, after the first 30 minutes) to bring NVDA to ~8% of stocks; keep ~382 '
+                    'sh. If the board keeps him -> hold all 452 and decide on 19 Nov as planned. No sale on the '
+                    'pre-market gap alone. || APPROVED 11 Nov 2026 (Salee): suspension and the four triggers '
+                    'confirmed. 10 Nov close 168.89 (below the suspended $180 line - no buy). || ⚠️ ESCALATED 10 Nov '
+                    "(Bloomberg, via Business Today): the story now touches NVIDIA's OWN conduct. (1) In late summer "
+                    "2025 NVIDIA's general counsel called the Commerce under-secretary who runs export controls about "
+                    'the Megaspeed case; afterwards BIS investigators were told to route NVIDIA requests through his '
+                    "office - described as highly unusual - and the probe later stalled. (2) Bloomberg's trade-record "
+                    "analysis says NVIDIA's inventory count given to the US government undercounted chips sold to "
+                    'Megaspeed by about 50,000 units (billions of dollars); NVIDIA says it later inspected more '
+                    "warehouses but gave no number. NVIDIA says its counsel did not know of the CEO's relationship. No "
+                    'charge, penalty or licence action against NVIDIA. NEW 4th TRIGGER: any FORMAL government action '
+                    'naming NVIDIA (subpoena, charge, settlement, licence suspension disclosed in a filing) or the '
+                    'departure of the CEO or general counsel -> review a trim the same day. REVIEW BROUGHT FORWARD: '
+                    'decide hold vs trim on Thu 19 Nov after the 18 Nov results, not 10 Dec. || 9 Nov: NVDA CLOSED '
+                    '178.67 (-4.3%), BELOW the suspended $180 line - no buy (suspension in force). || ⚠️ NVDA BUYS '
+                    'SUSPENDED 9 Nov 2026 (Claude; confirmed by Salee 11 Nov): on 8 Nov Jensen Huang admitted, in a '
+                    'letter to staff, a personal relationship with a person US intelligence reportedly links to a '
+                    "foreign intelligence effort; NVIDIA's board formed a committee of independent directors with "
+                    'outside counsel to investigate. The board says it has "no reason to believe" national security or '
+                    'NVIDIA secrets were compromised and has confidence in Huang, who remains CEO. Key-person and '
+                    'export-control/regulatory risk is now open. No new NVDA money until (a) the 18 Nov results and '
+                    'call AND (b) the board gives a first update. HOLD the 452 shares - no sale. Sell/review triggers: '
+                    'the investigation finds a compromise; Huang leaves without a named successor; or export licences '
+                    "or penalties hit NVIDIA. || -21.9%. The 'something broke and I want to own it anyway' price. || "
+                    'FUNDING (8 Nov): no new money until Feb 2027 ($100,000). Until then a buy is paid only from cash '
+                    'plus SGOV above the $50,000 crash-reserve floor (~$4,700 after the 9-11 Nov buys, ~$1,700 after '
+                    'NVDA 18 Nov). If this fires before February and does not fit, it WAITS for the February money - '
+                    'no SGOV sale below the floor.',
             'd': '',
             'dl': 'Standing',
             'k': 'limit',
@@ -10587,7 +10610,12 @@ APPROVALS = [{'after': 'Same night (9 Oct): Marvell 47 shares filled at $269.90 
             {'due': '2026-11-19',
              'k': 'NVDA',
              'text': '12 Nov (Salee): decide on 19 Nov whether to buy or sell - no sale and no buy before then. The '
-                     'pre-set trim rule proposed on 12 Nov is not adopted; Claude reports any trigger the same day.'}],
+                     'pre-set trim rule proposed on 12 Nov is not adopted; Claude reports any trigger the same day.'},
+            {'due': '2026-11-19',
+             'k': 'NVDA',
+             'text': '12 Nov 23:30 Bangkok: TRIGGER 2 FIRED - CEO resigned, CFO Kress interim CEO; reported to Salee '
+                     'the same evening. Results are now Tue 17 Nov US (Wed 18 Nov 04:20 Bangkok). Standing decision '
+                     'unchanged: hold 452 sh, decide after the results.'}],
   'title': 'Approval 11 Nov 2026 - two rate rules and NVDA tactics',
   'why': 'October CPI came in hotter than expected (+0.4% m/m, core +0.3%), a December Fed hike is ~85-88% priced and '
          "the 10-year is back near 5%. Our holdings' forward earnings yield (5.4%) is only ~0.4 points above the "
@@ -10729,12 +10757,13 @@ BUYPLAN = {'from': '2026-11-09',
            't': 'CAT',
            'tac': 'Done - CAT budget complete.'},
           {'a': 'DECIDE',
-           'bkk': 'Thu 19 Nov ~05:00 (results); act Thu 19 Nov evening',
-           'cond': '⚠️ 12 Nov: board met to discuss removing the CEO (WSJ); no outcome yet; NVDA ~-8% pre-market. '
-                   'Megaspeed: $7.5bn of chips; DOJ/FBI/Congress reported looking.',
-           'd': '2026-11-18',
+           'bkk': 'Wed 18 Nov ~04:20 (results); act from Wed 18 Nov evening',
+           'cond': '⚠️ 12 Nov: CEO Jensen Huang RESIGNED (trigger 2 fired); CFO Colette Kress interim CEO; NVDA ~165 '
+                   '(-5%) after opening ~-13%. Results moved up to Tue 17 Nov US. No formal government action yet.',
+           'd': '2026-11-17',
            't': 'NVDA',
-           'tac': 'No order before 19 Nov (Salee, 12 Nov). Thu 19 Nov: decide BUY, HOLD or SELL after the results.'},
+           'tac': 'No order before the results (Salee, 12 Nov). After the results: decide BUY, HOLD or SELL - Wed 18 '
+                  'Nov evening at the earliest, Thu 19 Nov as set.'},
           {'bkk': '-',
            'cond': 'BOARD 8 Nov: KLAC $6,489 + LRCX $4,400 tranche 3 deferred to the 10 Dec review.',
            'd': '2026-11-19',
