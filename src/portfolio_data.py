@@ -3,7 +3,7 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Nov 13, 2026 10:30 Bangkok - AMAT Q4 FY2026 SCORED: revenue $10.41bn (+53%), non-GAAP EPS $4.16 (+92%), Q1 guide '
+ASOF = ('Nov 13, 2026 18:55 Bangkok - AMAT Q4 FY2026 SCORED: revenue $10.41bn (+53%), non-GAAP EPS $4.16 (+92%), Q1 guide '
  "$11.1bn / EPS $4.35; China 25% of revenue. Hold, no order. Notes tab: new 'Rate gates' card (why 35x and 5.25%). || "
  'PREVIOUS ENTRY: Nov 13, 2026 11:05 Bangkok - DAILY PRICE REFRESH (03:30 UTC pass): 60 remaining closes + SPY/QQQ '
  'booked for 12 Nov (board now 63 of 63 at the 12 Nov close). Sources: per-ticker rotation of marketscreener mirrors '
