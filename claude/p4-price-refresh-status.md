@@ -1,27 +1,14 @@
-# P4 price-refresh status
+# P4 price refresh status
 
-- **Run time (UTC):** 2026-11-12 03:37 (03:30 scheduled pass)
-- **Trading date recorded:** none this run — board already current
-- **Result:** NOT PUSHED (no price edits; status-only commit)
-- **Commit hash:** status commit only (see git log); last data commit remains 339827f
-- **Prices changed:** 0
-- **Unresolved tickers:** none
-
-## Detail
-
-First check passed: all 63 of 63 tickers already carry pxd = 2026-11-11, the most
-recent completed US trading day (the 12 Nov session had not opened at run time).
-The 11 Nov close was booked by the interactive POEMS session (commit 339827f) and
-confirmed by the 00:30 pass (commit c05f3aa). Per the job's first-check rule, this
-pass stopped without fetching or writing any prices.
-
-State verified this run:
-- STOCKS: 63/63 at pxd 2026-11-11
-- BENCH: spyLast 759.81 (2026-11-11), qqqLast 690.38 (2026-11-11), spyHigh 779.09 (2026-10-06) — unchanged
-- HISTORY: 2026-11-11 row present (mv 779,755.84, unreal +35,993.12 / +4.84%); no duplicate added
-- risk_series: spy has 2026-11-11 (759.81); ust10 latest is 2026-11-10 (4.98).
-  No 11 Nov ust10 row is expected — 11 Nov was Veterans Day and the US bond
-  market was closed (equities traded), so there is no 10-year close for that
-  date. Not a gap to fill.
-
-No sanity-gate action, no sources consulted, no blockers.
+- **Run:** 2026-11-13 00:30 UTC pass (started 00:33, finished ~01:05 UTC)
+- **Trading date recorded:** 2026-11-12 (Thursday close) — PARTIAL, 3 of 63 tickers
+- **Result:** PUSHED
+- **Commit:** e5357b0 (b81a63d..e5357b0 main)
+- **Prices changed:** 3 — NVDA 166.19 (-4.34%), AMD 585.30 (+5.86%), AVGO 364.36 (+5.54%); pxd 2026-11-12; mcapB scaled, pe/ps rewritten, fpe/peg/M3-pfcf rescaled. Sanity gate PASS, no --allow needed (largest move AMD +5.86%).
+- **Sources:** every quote source served stale caches this pass — stockanalysis.com quote pages stamped Nov 6–9 or intraday Nov 12 (MSFT served a Sep 2025 snapshot), /history/ tables ending Nov 6–9, Google Finance caches Oct 8–26 (both URL forms), marketscreener intraday 09:32 EST, ycharts ust10 ending Nov 9. The three closes written came from the approved fool.com fallback: the "Stock Market Today, Nov. 12" article (published 4:58 PM ET, after the close) quote box for NVDA, cross-confirmed by stocktitan.net's close log (NVDA 166.19 / -4.34% at 4:00 PM ET, Wed close 173.73 = board's 11 Nov value to the cent); AMD and AVGO closes from the same two articles, both tying to the board's 11 Nov closes exactly (552.90 × 1.0586 = 585.30; 345.22 × 1.0554 = 364.36).
+- **Unresolved (left at the 11 Nov close, pxd 2026-11-11):** the other 60 tickers — no source with a dated 12 Nov close was reachable. A stale price is recoverable; a wrong one is not.
+- **SPY/QQQ:** left at 11 Nov (759.81 / 690.38). Only percentage moves were printed post-close (SPY -0.35%, QQQ -0.32%, stocktitan); no dated close level readable, and back-solving from rounded percentages is not allowed. BENCH and risk_series spy skipped.
+- **UST10:** 12 Nov close UNRESOLVED — mortgagenewsdaily's /treasury/10yr page did not surface; ycharts ends Nov 9 (4.88). ⚠️ NOTE FOR THE MAIN SESSION: the board header says the 10-year traded ~5.09–5.11% intraday on 12 Nov; whether it CLOSED ≥5.00% (valuation gate) could not be verified this pass — check at the next session.
+- **HISTORY row for 2026-11-12:** NOT appended — with only 3 of 36 position prices at the 12 Nov close, mv would blend two dates. The 03:30 pass should append it after a full refresh (no duplicate-date risk since the row doesn't exist yet).
+- **Live page:** could not be verified from this sandbox — the GitHub Pages URL is blocked by the fetch allowlist and the Pages-build API path is blocked by the proxy. The built index.html passed sanity_check (exit 0) before push.
+- **Blocker verbatim:** all quote sources served stale caches tonight (Nov 6–9 or intraday 12 Nov); 60 tickers, SPY/QQQ and the 10-year left for the 03:30 pass.
