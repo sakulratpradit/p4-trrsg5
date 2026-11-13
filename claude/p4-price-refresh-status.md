@@ -1,14 +1,31 @@
 # P4 price refresh status
 
-- **Run:** 2026-11-13 00:30 UTC pass (started 00:33, finished ~01:05 UTC)
-- **Trading date recorded:** 2026-11-12 (Thursday close) — PARTIAL, 3 of 63 tickers
-- **Result:** PUSHED
-- **Commit:** e5357b0 (b81a63d..e5357b0 main)
-- **Prices changed:** 3 — NVDA 166.19 (-4.34%), AMD 585.30 (+5.86%), AVGO 364.36 (+5.54%); pxd 2026-11-12; mcapB scaled, pe/ps rewritten, fpe/peg/M3-pfcf rescaled. Sanity gate PASS, no --allow needed (largest move AMD +5.86%).
-- **Sources:** every quote source served stale caches this pass — stockanalysis.com quote pages stamped Nov 6–9 or intraday Nov 12 (MSFT served a Sep 2025 snapshot), /history/ tables ending Nov 6–9, Google Finance caches Oct 8–26 (both URL forms), marketscreener intraday 09:32 EST, ycharts ust10 ending Nov 9. The three closes written came from the approved fool.com fallback: the "Stock Market Today, Nov. 12" article (published 4:58 PM ET, after the close) quote box for NVDA, cross-confirmed by stocktitan.net's close log (NVDA 166.19 / -4.34% at 4:00 PM ET, Wed close 173.73 = board's 11 Nov value to the cent); AMD and AVGO closes from the same two articles, both tying to the board's 11 Nov closes exactly (552.90 × 1.0586 = 585.30; 345.22 × 1.0554 = 364.36).
-- **Unresolved (left at the 11 Nov close, pxd 2026-11-11):** the other 60 tickers — no source with a dated 12 Nov close was reachable. A stale price is recoverable; a wrong one is not.
-- **SPY/QQQ:** left at 11 Nov (759.81 / 690.38). Only percentage moves were printed post-close (SPY -0.35%, QQQ -0.32%, stocktitan); no dated close level readable, and back-solving from rounded percentages is not allowed. BENCH and risk_series spy skipped.
-- **UST10:** 12 Nov close UNRESOLVED — mortgagenewsdaily's /treasury/10yr page did not surface; ycharts ends Nov 9 (4.88). ⚠️ NOTE FOR THE MAIN SESSION: the board header says the 10-year traded ~5.09–5.11% intraday on 12 Nov; whether it CLOSED ≥5.00% (valuation gate) could not be verified this pass — check at the next session.
-- **HISTORY row for 2026-11-12:** NOT appended — with only 3 of 36 position prices at the 12 Nov close, mv would blend two dates. The 03:30 pass should append it after a full refresh (no duplicate-date risk since the row doesn't exist yet).
-- **Live page:** could not be verified from this sandbox — the GitHub Pages URL is blocked by the fetch allowlist and the Pages-build API path is blocked by the proxy. The built index.html passed sanity_check (exit 0) before push.
-- **Blocker verbatim:** all quote sources served stale caches tonight (Nov 6–9 or intraday 12 Nov); 60 tickers, SPY/QQQ and the 10-year left for the 03:30 pass.
+- **Run time (UTC):** 2026-11-13 03:33–04:15 (scheduled 03:30 pass)
+- **Trading date recorded:** 2026-11-12 (Thu)
+- **Status:** PUSHED
+- **Commit:** 279bfbc (main, 89ff85b → 279bfbc, fast-forward push, no force)
+- **Prices changed:** 60 stocks + SPY + QQQ (board now **63 of 63 at the 12 Nov close**; NVDA/AMD/AVGO were done by the 00:30 pass)
+- **Sanity gate:** PASS, exit 0, no `--allow` needed — largest moves KTOS -5.29%, ANET +5.06%, SNDK -4.11%, FN -4.11%, all under the 6% threshold
+- **Render check:** `node check_dashboard.js` → 893 table rows, ZERO PAGE ERRORS
+
+## Unresolved
+- **UST10 (risk_series):** SKIPPED for both 11 Nov and 12 Nov. 11 Nov was Veterans Day (bond market closed; mortgagenewsdaily's thin 4.985 row not trusted). The 12 Nov close is not yet published anywhere reachable (FRED DGS10 ends 10 Nov at 4.98; MND's table ends 11 Nov; CNBC's 12 Nov headline says the 10-year moved back above 5% intraday). **The valuation-gate check (10-year ≥ 5.00%) is still PENDING a published 12 Nov close** — the main session's provisional ~5.13% note stands unconfirmed. Next run should pick up the 12 Nov print from FRED/MND.
+
+## Source notes (what was stale / broken tonight)
+- stockanalysis.com: stale for every ticker sampled (quote pages Sep 25–Nov 9; history tables ended Nov 6). SPY ETF page stale at Nov 6.
+- Google Finance: stale per-ticker (Sep 25–Oct 27) except GOOGL and TER, which served fresh "Closed: Nov 12, 4:00 PM GMT-5" pages.
+- marketscreener mirrors (www/uk/ca/in/ae/sa/au/hk): per-ticker cache lottery; fresh Nov-12 pages (with 5-day tables whose 11 Nov rows tie the board to the cent) for AMZN, MSFT, MPWR, ASML, MU, ARM, PANW, SE, SPCX, GE, SPY.
+- stocktitan.net: explicit "closed at $X on November 12" lines for 24 tickers; stale pages are self-dated so never dangerous. Its SPCX page is broken (March 2026 price).
+- fool.com quote pages: the dated "Last close" field was calibrated against MPWR/SE/KTOS (matches independent dated closes to the cent) and used for 21 tickers; every one's day-change ties the stored 11 Nov close. The headline "current price" on these pages is a late consolidated print a few cents off the official close — not used.
+- foxbusiness: usable only when stamped exactly 4:00 PM (KLAC, LITE, QQQ); rejected intraday captures for LRCX (2:42 PM), FN (3:59 PM), CIEN (2:15 PM). TSM page errored.
+- heygotrade: dated "Nov 12 Close" for KTOS; second-source confirmation for AAPL (354.88); stale for others.
+- treasury.gov daily table returned "No Results Found"; ycharts indicator page returned empty.
+
+## Verbatim blockers
+None blocking. Could not verify the live page at https://sakulratpradit.github.io/p4-trrsg5/ from this sandbox (egress proxy refuses github.io and WebFetch has no provenance for it) — verified the built HTML locally with Playwright instead; the push to main succeeded so Pages will serve 279bfbc.
+
+## Also updated
+- BENCH: spyLast 757.12 / qqqLast 688.17 (both 2026-11-12); spyHigh unchanged 779.09 (SPY -2.8% off the high; crash-reserve trigger 662.23 not near).
+- HISTORY 2026-11-12 row: n 36, mv 783,528.05, cost 749,128.91 (includes the 12 Nov CAT fill), unreal +34,399.14 (+4.59%), cash 15,519.81.
+- risk_series spy 2026-11-12 = 757.12 added; ust10 skipped as above.
+- pe/ps/fpe/peg and M3 pfcf rescaled with price for all 60 tickers.
