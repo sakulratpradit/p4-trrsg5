@@ -52,6 +52,11 @@ def macro_html():
     path=os.path.join(HERE,'macro.html')
     return open(path,encoding='utf-8').read() if os.path.exists(path) else ''
 
+def gates_html():
+    """Hand-written HTML fragment (gates.html) -> Notes tab chip."""
+    path=os.path.join(HERE,'gates.html')
+    return open(path,encoding='utf-8').read() if os.path.exists(path) else ''
+
 def _ov(v):
     """Company overview record; tolerates the older plain-string format."""
     if isinstance(v, str):
@@ -116,7 +121,7 @@ def build(out_path):
         })
     fups = [{'t': f[0], 'type': f[1], 'text': f[2], 'raised': f[3]} for f in FOLLOW_UPS]
     today = datetime.date.today().strftime('%b %d, %Y')
-    data = json.dumps({'stocks': stocks, 'fups': fups, 'gen': today, 'method': method_note.build(P), 'agenda': agenda_html(), 'layers': layers_html(), 'macro': macro_html()},
+    data = json.dumps({'stocks': stocks, 'fups': fups, 'gen': today, 'method': method_note.build(P), 'agenda': agenda_html(), 'layers': layers_html(), 'macro': macro_html(), 'gates': gates_html()},
                       ensure_ascii=False).replace('</', '<\\/')
 
     page = """<!doctype html>
@@ -203,6 +208,7 @@ footer{color:var(--mut);font-size:12px;text-align:center;padding:20px}
     <div class="chip" data-f="agenda">10 Dec agenda</div>
     <div class="chip" data-f="layers">AI layers: who sells what</div>
     <div class="chip" data-f="macro">MACRO</div>
+    <div class="chip" data-f="gates">Rate gates</div>
   </div>
   <button id="back">‹ Back to all stocks</button>
   <div id="out"></div>
@@ -260,6 +266,7 @@ function render(){
   if(filter==='agenda'){ out.innerHTML = DATA.agenda; return; }
   if(filter==='layers'){ out.innerHTML = DATA.layers; return; }
   if(filter==='macro'){ out.innerHTML = DATA.macro; return; }
+  if(filter==='gates'){ out.innerHTML = DATA.gates; return; }
   if(filter==='fup'){
     out.innerHTML = DATA.fups.map(f => '<div class="fup"><b>'+esc(f.t)+'</b> · '+esc(f.type)+' · raised '+esc(f.raised)+'<br>'+esc(f.text)+'</div>').join('');
     return;
