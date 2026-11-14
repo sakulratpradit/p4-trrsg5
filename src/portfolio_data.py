@@ -3,11 +3,14 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Nov 13, 2026 18:55 Bangkok - AMAT Q4 FY2026 SCORED: revenue $10.41bn (+53%), non-GAAP EPS $4.16 (+92%), Q1 guide '
- "$11.1bn / EPS $4.35; China 25% of revenue. Hold, no order. Notes tab: new 'Rate gates' card (why 35x and 5.25%). || "
- 'PREVIOUS ENTRY: Nov 13, 2026 11:05 Bangkok - DAILY PRICE REFRESH (03:30 UTC pass): 60 remaining closes + SPY/QQQ '
- 'booked for 12 Nov (board now 63 of 63 at the 12 Nov close). Sources: per-ticker rotation of marketscreener mirrors '
- 'with dated Market-Closed stamps and 5-day tables (MSFT 523.00, AMZN 267.44, GOOGL 298.70, MPWR 1447.40, ASML '
+ASOF = ('Nov 14, 2026 09:20 Bangkok - PLANS ROLLED (Salee): Buy/Sell plan now 16 - 30 Nov (no scheduled buys; NVDA decision '
+ 'after the 17 Nov results; PANW results 18 Nov; FOMC minutes, PCE). Schedule now from 30 Nov onward - 17 earlier rows '
+ 'archived; added MRVL results 1 Dec, FX update 1 Dec, jobs report 4 Dec, NVDA governance DECIDE 10 Dec. || PREVIOUS '
+ 'ENTRY: Nov 13, 2026 18:55 Bangkok - AMAT Q4 FY2026 SCORED: revenue $10.41bn (+53%), non-GAAP EPS $4.16 (+92%), Q1 '
+ "guide $11.1bn / EPS $4.35; China 25% of revenue. Hold, no order. Notes tab: new 'Rate gates' card (why 35x and "
+ '5.25%). || PREVIOUS ENTRY: Nov 13, 2026 11:05 Bangkok - DAILY PRICE REFRESH (03:30 UTC pass): 60 remaining closes + '
+ 'SPY/QQQ booked for 12 Nov (board now 63 of 63 at the 12 Nov close). Sources: per-ticker rotation of marketscreener '
+ 'mirrors with dated Market-Closed stamps and 5-day tables (MSFT 523.00, AMZN 267.44, GOOGL 298.70, MPWR 1447.40, ASML '
  '1497.12, MU 798.44, ARM 199.78, PANW 322.66, SE 74.52, SPCX 139.94, SPY 757.12), stocktitan dated closes (META '
  '623.61, SNPS, SNDK, APH, COHR, CRDO, FSLR, RKLB, AVAV, DDOG, V, CRWD, FTNT, NET, BWXT, GEV, ETN, VRT, PWR, BE, CEG, '
  'VST, CAT, STRL), fool.com dated last-close fields calibrated against MPWR/SE/KTOS (LRCX, PLTR, GLW, TSM, ANET, ALAB, '
@@ -5826,29 +5829,8 @@ M3 = {'AAPL': {'de': 0.78, 'ev': 29.84, 'pfcf': 36.26},
  'VRT': {'de': 0.7, 'ev': 28.01, 'pfcf': 28.53},
  'VST': {'de': 3.73, 'ev': 7.94, 'pfcf': 17.08}}
 
-SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
- 'items': [{'a': 'BUY',
-            'amt': 10210.78,
-            'c': 'done',
-            'cond': 'RESULTS PASSED 3 Nov (DC +97%, non-GAAP GM 56%, Q4 guide ~$17bn). 5 Nov fall = AI data-centre '
-                    'regulation fears after the midterms, QCOM handset -26%, H200s held in Hong Kong, plus AMD sharing '
-                    'HBM cost rises with hyperscalers (margin worry). Thesis intact - price only. || Wed 4 Nov evening '
-                    '(after 22:00): BUY the remaining $10,210.78 if EITHER (a) the 3 Nov close is still at or below '
-                    '$470, OR (b) results show margin improvement (data-centre GPU growth and a Q4 guide at or above '
-                    'consensus). Day LIMIT at the 3 Nov close, cap +1%; about 21 shares. Funding: cash $20,530.86 '
-                    "covers APP + next week's buys, so sell ~102 SGOV the session before (keeps SGOV above the $50,000 "
-                    'crash reserve). If results are weak AND the price falls well below $470, still buy only at the '
-                    'limit - do not chase either way.',
-            'd': '2026-11-09',
-            'dl': 'AMD $470 line hit - decide after results',
-            'k': 'trigger',
-            't': 'AMD',
-            'w': 'FILLED 9 Nov - BUT ON FRANKFURT: 22 sh at EUR 439.70 (~$495.56 incl. fees at POEMS rate) instead of '
-                 'Nasdaq at 449.04. AMD closed 508.58 (+13.3%). Swap on 10 Nov (see the 10 Nov AMD row). Mon 9 Nov '
-                 'evening (after 22:00): BUY 22 sh Day LIMIT 449.04 (6 Nov close), raise once to cap 453.53 (~$9,900; '
-                 'budget room 10,210.78). HISTORY: 5 Nov not placed (-13% intraday, closed 404.40); 6 Nov order 24 sh '
-                 'LIMIT 404.40 EXPIRED unfilled (closed 449.04, +11.1%). Still 4.5% below the $470 line.'},
-           {'a': 'TRIGGER',
+SCHEDULE = {'horizon': '30 Nov 2026 - Feb 2027 (and standing rules)',
+ 'items': [{'a': 'TRIGGER',
             'amt': 9000,
             'c': 'standing',
             'cond': 'PASSED ALL FOUR 4 Nov: PASS = ALL FOUR. (1) Q3 revenue at or above $2.08bn - the consensus, which '
@@ -5880,298 +5862,6 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
                  'chips. Our cap was 274.47 - no chasing. New condition: BUY the first $9,000 on any close at or below '
                  "$320 (about 44x this year's earnings, where the 5 Nov plan priced it), or re-decide at the 10 Dec "
                  'review. Budget $18,000 unchanged. 6 Nov close 391.22 (+9.9% more) - 22% above the $320 line.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'Neutron qualification progress and Iridium financing terms.',
-            'd': '2026-11-09',
-            'k': 'earnings',
-            't': 'RKLB',
-            'w': 'SCORED 10 Nov: Q3 2026 (9 Nov, after the close): record revenue $267.8m (+73%, above the $250-265m '
-                 'guide), GAAP gross margin 33.6%, GAAP EPS -0.12 (missed), adj. EBITDA -$18.0m, first positive GAAP '
-                 'operating cash flow (+$7.2m), backlog $3.57bn (+52% q/q; ~$515m of Neutron launch deals), cash '
-                 '$4.7bn, debt ~nil. Q4 guide $270-290m. ⚠️ NEUTRON FIRST FLIGHT SLIPPED INTO 2027 (voids found in the '
-                 'stage-1 forward tank dome; replacement dome built, qualification still ahead). Shares about -6 to '
-                 '-8% after hours. No order - budget = cost (9 Nov decision) stands.'},
-           {'a': 'SELL',
-            'amt': 15000,
-            'c': 'done',
-            'cond': 'UPDATED 7 Nov: Mon 9 Nov evening SELL 150 SGOV Day LIMIT at the 6 Nov mark 100.49 (~$15,040 net). '
-                    'Funds Tue 10 Nov (AVGO ~4,700 + V 2,093 + VST 3,433 = ~10,230) and Wed 11 Nov CAT 5,000, with '
-                    "Monday's leftover cash (~1,200). Leaves 544 sh (~$54,700) above the $50,000 crash reserve. ALSO "
-                    'check the first SGOV dividend line (paid ~6 Nov): $239 = no US tax withheld, $203 = 15%, $167 = '
-                    '30%. UPDATED 6 Nov: Mon 9 Nov evening SELL about 160 SGOV (~$16,070) to fund AVGO 16 sh (~$4,675, '
-                    '$310 line hit 5 Nov), V $2,093, VST $3,433 (if PASS) and CAT $5,000 on 9-11 Nov; leaves 534 sh '
-                    '(~$53,600) above the $50,000 crash reserve. SGOV income is 100% qualified interest income '
-                    '(iShares 2026 QII memo), which US law exempts from withholding for non-US investors with a W-8BEN '
-                    'on file. If POEMS withheld anything: (1) Salee sends the POEMS statement line; (2) Claude drafts '
-                    'the reclaim request to POEMS citing the iShares QII memo; (3) the SGOV yield assumption on the '
-                    'Portfolio tab (3.6%) is cut to the net rate until resolved. Thai-side treatment of foreign income '
-                    'held at a Thai broker is a separate question for the tax adviser. Reminder also set in the chat '
-                    'for 09:00 Bangkok on 9 Nov.',
-            'd': '2026-11-09',
-            'dl': 'Mon 9 Nov - SGOV first dividend: US withholding check',
-            'k': 'tax',
-            't': 'SGOV',
-            'w': 'DONE 9 Nov: SOLD 150 at 100.495 (POEMS 5118917, 23:35 Bangkok) - booked from the 10 Nov positions '
-                 'screen. DIVIDEND CHECKED: 225.76 net on 694 sh, US tax 0%. CHECK THE FIRST SGOV DIVIDEND FOR US '
-                 'WITHHOLDING TAX. Ex-date Mon 2 Nov, pay date about Fri 6 Nov. Expected gross = 794 sh x about $0.30 '
-                 '= about $239. Credited about $239 = exempt (correct); about $203 = 15% withheld; about $167 = 30% '
-                 'withheld.'},
-           {'a': 'WATCH',
-            'amt': None,
-            'c': 'planned',
-            'cond': 'MOFCOM Notice 2025 No. 61 of 9 Oct 2025 requires a Chinese export permit for goods made ANYWHERE '
-                    "whose Chinese-origin rare-earth content is 0.1% or more of the item's value. Suspended 7 Nov "
-                    '2025; THE SUSPENSION EXPIRES 10 NOVEMBER 2026. ⚠️ I could not verify from a Chinese government '
-                    'source whether it will be extended: NOT FOUND. Still in force and never suspended: 2024 '
-                    'Announcement No. 46 Article 1 (no dual-use exports to US military end users), 2025 No. 10 '
-                    '(tungsten, tellurium, bismuth, molybdenum, indium) and 2025 No. 18 (seven medium and heavy rare '
-                    'earths). This is a board-wide supply risk, not a single-name one. NO POSITION IS TAKEN IN MP '
-                    'MATERIALS - it ran a MINUS 29.5% operating margin on 108.5m of Q2 revenue at a 9.0bn market cap '
-                    'and names no humanoid customer.',
-            'd': '2026-11-10',
-            'dl': 'Hard expiry - China MOFCOM',
-            'k': 'risk',
-            't': 'MP',
-            'w': "China's 0.1% rare-earth extraterritorial rule comes back unless extended - watch magnets, motors, "
-                 'robotics, autos, defence'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'Monthly signal.',
-            'd': '2026-11-10',
-            'k': 'data',
-            't': 'TSM',
-            'w': 'SCORED 10 Nov: October revenue NT$586.89bn - a monthly RECORD (previous NT$514.81bn, Aug), +59.7% '
-                 'y/y, +14.7% m/m; Jan-Oct NT$4.49tn, +43.3%. Q4 guide $52.3-54.3bn (midpoint ~+58% y/y). Same-day '
-                 'slide: board approved ~$41bn more capital appropriations, ~$147bn approved in 2026 vs ~$64bn of '
-                 'capex this year (unverified; approvals are spent over several years). Demand read: strong. NO ORDER '
-                 '- TSM closed 388.62 on 9 Nov, above the $380 line; the line stays. TSMC October monthly revenue'},
-           {'a': 'BUY',
-            'amt': 2093.0,
-            'c': 'done',
-            'cond': 'Firm rung - no test. Day LIMIT at the 9 Nov close, cap +1%. US session 21:30-04:00 Bangkok from 2 '
-                    'Nov.',
-            'd': '2026-11-10',
-            'k': 'tranche',
-            't': 'V',
-            'w': 'FILLED 10 Nov: 5 sh at 421.3999 = 2,115.56. Position 23 sh, cost 8,884.61 of 9,000 - budget '
-                 'complete. Tue 10 Nov evening (after 22:00): BUY 5 sh Day LIMIT 422.16 (9 Nov close), raise once to '
-                 '426.38. Budget room 2,230.95 - completes the V budget. Tier A rung 2 of 2 - BUY $2,093.00'},
-           {'a': 'BUY',
-            'amt': 3433.35,
-            'c': 'done',
-            'cond': 'Texas read (call, secondary source): CEO Burke called a Texas moratorium "a bridge too far from '
-                    'where the dialogue is"; data-centre pacing was already slowing before the election; tightening '
-                    'from data centres not meaningful until late 2027 / early 2028; Comanche Peak second unit and '
-                    'Beaver Valley still uncontracted. New 207 MW 20-year PPA at Odessa (Texas). Revenue $6.35bn '
-                    'missed the $6.79bn consensus - EBITDA is the metric that matters here. || Q3 test: adjusted '
-                    'EBITDA growth 20% or more AND full-year guidance holds. If PASS: Day LIMIT at the 9 Nov close, '
-                    'cap +1%.',
-            'd': '2026-11-10',
-            'k': 'tranche',
-            't': 'VST',
-            'w': 'FILLED 10 Nov: 26 sh at 130.6541 = 3,405.57. Position 132 sh, cost 18,282.55 of 18,310.33 - budget '
-                 'complete. Tue 10 Nov evening (after 22:00): BUY 25 sh Day LIMIT 133.92 (9 Nov close), raise once to '
-                 '135.26 - results PASSED. Tue 10 Nov evening (after 22:00): BUY $3,433.35 Day LIMIT at the 9 Nov '
-                 'close, cap +1%. RESULTS PASSED 6 Nov: Q3 adjusted EBITDA $2,378m vs $1,581m = +50.4% (test: >= 20%); '
-                 'FY2026 guide narrowed to $7.1-7.5bn inside the old $6.8-7.6bn with the midpoint raised to $7.3bn '
-                 '(test: held). New 2027 guide $7.7-8.5bn; FCF before growth 2026 $4.3-4.7bn; extra $1.5bn buyback; '
-                 '~98% of 2027 generation hedged. Completes the VST budget.'},
-           {'a': 'BUY',
-            'amt': 5366.19,
-            'c': 'done',
-            'cond': "Final rung - completes the $15,000 budget (room $5,667 after the 30 Oct fill). Rung 2's test "
-                    '(Power Generation +30%) already passed. Day LIMIT at the 10 Nov close, cap +1%.',
-            'd': '2026-11-12',
-            'k': 'buy',
-            't': 'CAT',
-            'w': 'FILLED 12 Nov: 9 sh at 594.9699 = 5,366.19 (limit 597, below the 601.61 plan limit). Position 22 sh, '
-                 'cost 14,699.18 of 15,000 - budget complete. Thu 12 Nov evening (after 22:00): BUY 9 sh Day LIMIT '
-                 '601.61 (11 Nov close), raise once to 607.63 (~$5,426; room 5,667.01). Final rung. HISTORY: 11 Nov '
-                 'order 9 sh LIMIT 584.57 EXPIRED unfilled (POEMS 5321990) - CAT traded ~592-594 and closed 601.61 '
-                 '(+2.9%). Wed 11 Nov evening (after 22:00): BUY 9 sh Day LIMIT 584.57 (10 Nov close), raise once to '
-                 '590.42 (~$5,272; room 5,667.01). Final rung - completes the $15,000 budget. Wed 11 Nov evening '
-                 '(after 22:00): BUY Day LIMIT at the 10 Nov close, cap +1% - about 9 sh at the 9 Nov close 598.88 '
-                 '(room 5,667.01). Final rung. CATERPILLAR rung 3 of 3 (5,000 of 15,000).'},
-           {'a': 'DECIDE',
-            'amt': 0,
-            'c': 'confirmed',
-            'cond': '⚠️ TRIGGER 2 FIRED 12 Nov 2026: Jensen Huang RESIGNED as President, CEO and director, effective '
-                    'immediately (NVIDIA press release, 12 Nov). CFO Colette Kress is Interim CEO and stays CFO; the '
-                    "board is searching inside and outside for a permanent CEO. Harvey C. Jones named the company's "
-                    "first Chair. The release says nothing about the investigation's findings, export compliance or "
-                    'any government inquiry. No formal government action naming NVIDIA reported (trigger 4 NOT fired); '
-                    'JPMorgan: risk of tighter China shipment rules has risen; NBC source calls the woman a Chinese '
-                    'spy (unconfirmed). PRICE: opened about -12 to -14% (~$150-153), recovered to 165.07 (-4.98%) at '
-                    "13:45 New York; 11 Nov close 173.73. That is ABOVE Claude's scenario-C range ($130-150). RESULTS "
-                    'DATE: the release gives Q3 FY2027 results on TUESDAY 17 NOV, ~1:20 pm Pacific (04:20 Wed 18 Nov '
-                    'Bangkok), call 05:00 Bangkok - one day earlier than the 18 Nov on this board. First session to '
-                    'act on the results is Wed 18 Nov evening Bangkok. STANDING DECISION (Salee, 12 Nov) UNCHANGED '
-                    'until he says otherwise: hold all 452 sh, no order; decide after the results. Reported to Salee '
-                    'the same evening (23:30 Bangkok). Disclosure: Claude is made by Anthropic; NVIDIA is a reported '
-                    'investor in Anthropic. || DECIDED 12 Nov 2026 (Salee): "For NVDA decide on 19 Nov whether '
-                    'Buy/Sell." No sale and no buy before then - HOLD all 452 sh. The pre-set trim rule Claude '
-                    'proposed on 12 Nov (sell ~70 sh if the CEO goes or a formal action is disclosed) is NOT adopted. '
-                    'If a trigger fires before 19 Nov, Claude reports it the same day and Salee decides. On Thu 19 '
-                    'Nov, after the 18 Nov results: BUY (resume the $180 line / rung 3), HOLD, or SELL (trim toward 8% '
-                    "of stocks). || ⚠️ ESCALATED AGAIN 12 Nov: (1) WSJ (via Motley Fool/Yahoo, Fortune): NVIDIA's "
-                    'board met Wed 11 Nov to discuss REMOVING the CEO; no outcome reported by 16:15 Bangkok 12 Nov; no '
-                    'successor named. NVDA about -7 to -9% pre-market (~$158-161) after closing 173.73. (2) The '
-                    'Information (via Fortune): Megaspeed moved at least $7.5bn of NVIDIA chips; DOJ, FBI and Congress '
-                    'reported to be looking at the matter; the House passed the Remote Access Security Act (Senate '
-                    'next); FT: NVIDIA now requires cloud clients to sell at least 51% to non-Chinese customers. No '
-                    'formal action naming NVIDIA yet, and trigger 2 (CEO leaves) has NOT fired - but it may within '
-                    'hours. UPDATED ODDS (Claude): A cleared 15% $200-215 | B drags on 35% $155-180 | C CEO leaves 38% '
-                    '$130-150 | D worst case 12% $100-110 -> weighted ~$156, about the pre-market price. PRE-SET RULE '
-                    '(proposed 12 Nov - NOT ADOPTED): if the CEO is removed or resigns, or any formal government '
-                    'action naming NVIDIA is disclosed -> SELL about 70 sh at the next US session (Day LIMIT near the '
-                    'live bid, after the first 30 minutes) to bring NVDA to ~8% of stocks; keep ~382 sh. If the board '
-                    'keeps him -> hold all 452 and decide on 19 Nov as planned. No sale on the pre-market gap alone. '
-                    "|| NVDA SCENARIOS (Claude's judgment, 11 Nov; forward EPS ~$12.09, price 168.89 = 14x): A CLEARED "
-                    '(30%) $200-215 | B DRAGS ON (40%) $155-180 | C CEO LEAVES, orderly, no charges (20%) $130-150 | D '
-                    'WORST CASE - formal government action, CEO out, China licences lost (10%) $100-110. Odds-weighted '
-                    "~$168 = today's price. On 452 sh: A +$17,200, B flat, C -$13,100, D -$28,900 (-3.8% of stocks). "
-                    'Trim to 8% of stocks = sell ~93 sh; cuts the worst case by ~$5,900. || ⚠️ ESCALATED 10 Nov '
-                    "(Bloomberg, via Business Today): the story now touches NVIDIA's OWN conduct. (1) In late summer "
-                    "2025 NVIDIA's general counsel called the Commerce under-secretary who runs export controls about "
-                    'the Megaspeed case; afterwards BIS investigators were told to route NVIDIA requests through his '
-                    "office - described as highly unusual - and the probe later stalled. (2) Bloomberg's trade-record "
-                    "analysis says NVIDIA's inventory count given to the US government undercounted chips sold to "
-                    'Megaspeed by about 50,000 units (billions of dollars); NVIDIA says it later inspected more '
-                    "warehouses but gave no number. NVIDIA says its counsel did not know of the CEO's relationship. No "
-                    'charge, penalty or licence action against NVIDIA. NEW 4th TRIGGER: any FORMAL government action '
-                    'naming NVIDIA (subpoena, charge, settlement, licence suspension disclosed in a filing) or the '
-                    'departure of the CEO or general counsel -> review a trim the same day. REVIEW BROUGHT FORWARD: '
-                    'decide hold vs trim on Thu 19 Nov after the 18 Nov results, not 10 Dec. || ⚠️ NVDA BUYS SUSPENDED '
-                    "9 Nov 2026 (Claude; pending Salee's confirmation): on 8 Nov Jensen Huang admitted, in a letter to "
-                    'staff, a personal relationship with a person US intelligence reportedly links to a foreign '
-                    "intelligence effort; NVIDIA's board formed a committee of independent directors with outside "
-                    'counsel to investigate. The board says it has "no reason to believe" national security or NVIDIA '
-                    'secrets were compromised and has confidence in Huang, who remains CEO. Key-person and '
-                    'export-control/regulatory risk is now open. No new NVDA money until (a) the 18 Nov results and '
-                    'call AND (b) the board gives a first update. HOLD the 452 shares - no sale. Sell/review triggers: '
-                    'the investigation finds a compromise; Huang leaves without a named successor; or export licences '
-                    'or penalties hit NVIDIA. || Funding: fits inside the reserve - ~30 SGOV (544 -> ~514 sh, '
-                    '~$51,600). Sell SGOV Wed 18 Nov evening only if the results PASS at 05:00 Thu 19 Nov Bangkok; buy '
-                    'Thu 19 Nov evening at the 18 Nov close, cap +1%. BUY $3,000 only if gross margin is 72% or above '
-                    '(below that, custom silicon is biting - cancel this rung and pause the limits). Cut from $8,000 '
-                    'on 4 Oct so the ladder (7,000 + 5,619.72 + 3,000 = 15,619.72) matches the remaining budget '
-                    'exactly; it had been overcommitted by $5,000. || Buy only if data-centre growth holds ABOVE 80% '
-                    "YoY and gross margin at 73%+. NOT triggers: acquisition headlines, GPU launches, 'AI king' "
-                    'commentary. NVDA is already 13.3% of the book.',
-            'd': '2026-11-17',
-            'k': 'earnings',
-            't': 'NVDA',
-            'w': '⚠️ CEO RESIGNED 12 Nov (trigger 2 fired) - Kress interim CEO. Results now TUE 17 NOV US (04:20 Wed '
-                 "18 Nov Bangkok). DECIDE BUY / HOLD / SELL after the results - Salee's date is Thu 19 Nov; the first "
-                 'session to act is Wed 18 Nov evening. Hold all 452 sh until then. DECIDE Thu 19 Nov (Bangkok) after '
-                 'the 18 Nov results - BUY, HOLD or SELL (Salee, 12 Nov). Hold all 452 sh until then. APPROVED 11 Nov '
-                 '2026 (Salee): tactics agreed - HOLD 452 sh, no buying, decide hold vs trim Thu 19 Nov after the '
-                 'results; any of the four triggers before then = review a trim that day. DECIDE Thu 19 Nov (Bangkok) '
-                 'after the 18 Nov results: HOLD all 452 sh, or TRIM toward 8% of stocks (about 110 sh) - based on the '
-                 'results, what management says about the Megaspeed inventory count and the board investigation, and '
-                 'whether any formal government action has been disclosed. No buy. SUSPENDED 9 Nov - rung 3 ($3,000) '
-                 'NOT decided on these results; read the results and the investigation together. Q3 FY2027 results - '
-                 'ladder rung 3: DECIDE $3,000 (cut from $8,000 on 4 Oct)'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'open',
-            'cond': "EVERY FIGURE HERE IS FROM NVIDIA'S OWN RELEASES, ITS 10-Q FOR THE QUARTER ENDED 26 JULY 2026, OR "
-                    "NAMED PRESS COVERAGE OF THE 26 AUGUST EARNINGS CALL. || ⚠️ FIRST, THE YEAR. NVIDIA'S FISCAL YEAR "
-                    'ENDS IN LATE JANUARY. THE "70%" WAS SAID ABOUT **FISCAL 2028**, THE YEAR ENDING JANUARY 2028. '
-                    'FISCAL 2027, THE YEAR WE ARE IN, IS ALREADY RUNNING AT ROUGHLY PLUS 90% ON CONSENSUS OF $411.49 '
-                    'BILLION FROM 52 ANALYSTS. SO ANYONE READING "70% GROWTH IN 2027" IS UNDERSTATING THE CURRENT '
-                    'YEAR. || SECOND, "DOUBLE" AND "70%" ARE NOT TWO VERSIONS OF ONE NUMBER. Huang on 17 September, at '
-                    'a summit in Scotland: "I expect Nvidia to sell twice as many chips this next year as we do this '
-                    'year." THAT IS **UNITS**, CALENDAR 2027 VS 2026. The 70% was said three weeks earlier on the 26 '
-                    'August call and is **DOLLARS**, fiscal 2028. Different quantity, different unit, different '
-                    'period, different day. || THIRD, THE $673 BILLION IS NOT A COMPANY FIGURE AT ALL. IT IS CNBC '
-                    'APPLYING THE 70% TO THE THEN-CURRENT CONSENSUS BASE. Marketplace ran the same arithmetic off a '
-                    'later base and got "$690 billion to $700 billion". ⚠️ IT IS NOT BOOKINGS, NOT GUIDANCE, AND NOT A '
-                    'MARKET SIZE. The genuine cumulative figure Huang gave at GTC on 16 March 2026 was "I see through '
-                    '2027 at least $1 trillion" of demand and purchase orders for Blackwell and Rubin - and THAT one '
-                    "is CUMULATIVE AND MULTI-YEAR, not one year's revenue. || ⚠️ AND HUANG HIMSELF FLAGGED THE STATUS "
-                    'OF THE 70%: "It is the case that we\'ve never forecasted, never guided to a year in advance." '
-                    'NVIDIA\'S ONLY FORMAL GUIDANCE IS ONE QUARTER: Q3 FY2027 REVENUE OF "$108.0 billion, plus or '
-                    'minus 2%" WITH GROSS MARGIN OF "74.0%, plus or minus 50 basis points" - AND, IMPORTANTLY, "NVIDIA '
-                    'is not assuming any Data Center compute revenue from China in its outlook." THE ONLY FULL-YEAR '
-                    'ITEM IN THE OUTLOOK IS A TAX RATE. || THE ACTUAL RESULTS, WHICH ARE EXTRAORDINARY AND WHICH THE '
-                    'SLIDE BURIES: Q2 FY2027, QUARTER ENDED 26 JULY 2026 - REVENUE $96.2bn UP 106%, DATA CENTRE '
-                    '$89.0bn UP 117%, GAAP GROSS MARGIN 75.0%, GAAP OPERATING INCOME $63.7bn UP 124%, GAAP NET INCOME '
-                    '$59.7bn UP 126%, GAAP DILUTED EPS $2.46 UP 128%. FY2026 revenue was $215.9bn up 65%. Trailing '
-                    'twelve months $302.9bn. || ⚠️⚠️ THE THREE THINGS THE SLIDE DOES NOT MENTION, AND THEY ARE WHAT '
-                    'ACTUALLY MATTER TO US. (1) MARGIN. Gross margin is 75.0% now, guided to 74.0% next quarter, and '
-                    'reportedly 71-72% in Q4 FY2027 before settling at 72-73% in FY2028, on memory prices. 70% REVENUE '
-                    'GROWTH WITH THREE POINTS OF MARGIN COMPRESSION IS A DIFFERENT EARNINGS STORY FROM 70% AT A '
-                    'CONSTANT MARGIN. (2) CONCENTRATION. The 10-Q says verbatim: "Five direct customers accounted for '
-                    '22%, 14%, 13%, 11%, and 10% of our accounts receivable balance as of July 26, 2026" - SEVENTY '
-                    'PERCENT OF RECEIVABLES IN FIVE CUSTOMERS, up from three customers at 25/18/13 in January. (3) THE '
-                    'CIRCLE. NVIDIA HOLDS $51,157 MILLION OF NON-MARKETABLE EQUITY SECURITIES, "primarily in '
-                    'privately-held companies" - and secondary analyses of the same 10-Q put total equity investments '
-                    'near $99bn and supply and capacity commitments at $279bn, up from $119bn a quarter earlier. ⚠️ '
-                    'THOSE SECONDARY FIGURES CONFLICT WITH EACH OTHER AND ARE NOT VERBATIM FILING TEXT - I REPORT THEM '
-                    'AS UNVERIFIED. BUT THE DIRECTION IS CLEAR AND IT IS THE SAME PATTERN THIS BOARD RECORDED FOR '
-                    'GOOGLE AT TERAWULF AND AMAZON AT GENERAC: THE SELLER IS FUNDING THE BUYER. WHEN A SUPPLIER '
-                    'INVESTS IN ITS OWN CUSTOMERS, SOME OF THE REVENUE GROWTH IS ITS OWN MONEY COMING BACK. || 🎯 DOES '
-                    'ANY OF THIS CHANGE OUR PLAN? NO, AND THE PLAN WAS ALREADY BUILT FOR THIS. NVDA IS THE LARGEST '
-                    'POSITION ON THE BOARD - 420 SHARES, $79,380.28 OF COST, 13.9% OF ALL INVESTED CAPITAL, $15,619.72 '
-                    'OF THE $95,000 BUDGET STILL UNSPENT. THERE ARE ALREADY THREE ROWS AGAINST IT: AN $8,000 EARNINGS '
-                    'DECISION ON 18 NOVEMBER AND TWO STANDING LIMIT ROWS OF $7,000 AND $5,619.72. THOSE ROWS DO NOT '
-                    'NEED CHANGING BECAUSE A CEO REMARK AT A CONFERENCE IS NOT A TRIGGER. THE TRIGGER IS THE PRINT. || '
-                    'AT THE 17 SEPTEMBER CLOSE OF $219.34 THE POSITION IS WORTH $92,122.80 AGAINST $79,380.28 OF COST '
-                    '- PLUS $12,742.52, OR 16.05%. THE BOARD CARRIES IT AT 25.7x TRAILING EARNINGS AND 17.5x FORWARD, '
-                    'WHICH FOR A COMPANY GROWING REVENUE 106% IS NOT AN EXPENSIVE MULTIPLE - IT IS THE CHEAPEST '
-                    'FAST-GROWING NAME ON THE BOARD ON A PRICE-TO-EARNINGS-GROWTH BASIS AT 0.4. THE RISK HERE HAS '
-                    'NEVER BEEN THE MULTIPLE. IT IS THAT 13.9% OF OUR CAPITAL SITS IN ONE COMPANY WHOSE FIVE LARGEST '
-                    'CUSTOMERS ARE ALSO, INCREASINGLY, COMPANIES IT HAS INVESTED IN. CONVICTION HIGH ON HOLDING, '
-                    'MEDIUM ON ADDING, AND THE 18 NOVEMBER ROW STAYS EXACTLY AS WRITTEN. || WHAT WOULD CHANGE MY MIND: '
-                    'GROSS MARGIN GUIDED BELOW 70%, OR TWO CONSECUTIVE QUARTERS OF DECELERATING DATA CENTRE REVENUE, '
-                    'OR THE 10-Q SHOWING CUSTOMER-INVESTMENT COMMITMENTS GROWING FASTER THAN DATA CENTRE REVENUE.',
-            'd': '2026-11-18',
-            'dl': 'NVDA - the "70%" is FISCAL 2028, not 2027, and the $673bn is a journalist\'s arithmetic',
-            'k': 'thesis',
-            't': 'NVDA',
-            'w': 'THE SLIDE WELDED TOGETHER TWO REAL BUT SEPARATE STATEMENTS MADE THREE WEEKS APART. ⚠️ THE 70% '
-                 'APPLIES TO FISCAL 2028, NOT 2027 - AND FY2027 IS ALREADY RUNNING AT ABOUT +90%. THE SLIDE '
-                 'UNDERSTATES THIS YEAR WHILE SOUNDING LIKE IT OVERSTATES IT.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'confirmed',
-            'cond': 'NO NEW RESEARCH WAS NEEDED FOR THIS SLIDE - THE CLAIM WAS ALREADY VERIFIED YESTERDAY AND IT '
-                    'CHECKS OUT. Huang, 17 September 2026, at a summit in Scotland, verbatim: "I expect Nvidia to sell '
-                    'twice as many chips this next year as we do this year." THAT IS CHIPS - UNITS - FOR CALENDAR 2027 '
-                    'AGAINST CALENDAR 2026. Money & Banking renders it as ยอดขายชิป (chip sales volume) พุ่งเท่าตัว '
-                    '(doubling). CORRECT. It makes no dollar claim at all, and that restraint is the mark of a '
-                    'professional desk. || 🎯 THE LESSON IS THE VALUABLE PART, AND IT ARRIVED BY ACCIDENT. THE SAME '
-                    'SENTENCE, FROM THE SAME MAN, ON THE SAME DAY, REACHED THIS BOARD TWICE IN TWENTY-FOUR HOURS. THE '
-                    'ANONYMOUS VERSION WELDED IT TO A SEPARATE STATEMENT MADE THREE WEEKS EARLIER ABOUT **FISCAL 2028 '
-                    "REVENUE**, ATTACHED A **$673 BILLION** FIGURE THAT WAS A JOURNALIST'S ARITHMETIC ON A CONSENSUS "
-                    'BASE, AND LABELLED THE WHOLE THING "2027". THE NAMED, DATED, PROFESSIONAL OUTLET SAID ONE TRUE '
-                    'THING AND STOPPED. || 💡 THE THREE MARKS OF A SOURCE WORTH READING, ALL VISIBLE WITHOUT ANY '
-                    'FINANCIAL KNOWLEDGE: IT IS **DATED** (18 ก.ย. 2569, PRINTED TOP LEFT). IT IS **NAMED** (Money & '
-                    'Banking Online, with its website on the page). AND IT **CLAIMS LESS THAN IT COULD** - no dollar '
-                    'target, no exclamation mark, no "details in the comments". ⚠️ A SOURCE THAT CLAIMS LESS IS '
-                    'USUALLY WORTH MORE. That test costs nothing to apply and it would have caught both of the last '
-                    'two bad slides. || NOTHING CHANGES ON THE BOARD. NVDA IS 420 SHARES AT $79,380.28 OF COST, 13.9% '
-                    'OF ALL INVESTED CAPITAL, WORTH $92,122.80 AT THE 17 SEPTEMBER CLOSE OF $219.34 - PLUS $12,742.52 '
-                    'OR 16.05%. $15,619.72 OF THE $95,000 BUDGET REMAINS. THE 18 NOVEMBER $8,000 EARNINGS ROW AND THE '
-                    'TWO STANDING LIMIT ROWS STAND UNCHANGED. || ⚠️ AND THE CAUTION FROM YESTERDAY STANDS TOO, BECAUSE '
-                    'THIS SLIDE DOES NOT ADDRESS IT: DOUBLING THE NUMBER OF CHIPS SOLD IS NOT THE SAME AS DOUBLING '
-                    'PROFIT. GROSS MARGIN IS 75.0% NOW AND GUIDED TO 74.0% NEXT QUARTER, AND THE MEMORY WORK DONE '
-                    'TONIGHT SHOWS WHY THAT PRESSURE IS REAL - CONVENTIONAL DRAM CONTRACT PRICES ROSE ABOUT FIVE TIMES '
-                    'IN A YEAR AND NVIDIA BUYS MEMORY BY THE TONNE. MORE UNITS AT A THINNER MARGIN IS A DIFFERENT '
-                    'INVESTMENT FROM MORE UNITS AT THE SAME MARGIN. THE PRINT ON 18 NOVEMBER IS THE TRIGGER, NOT THE '
-                    'HEADLINE.',
-            'd': '2026-11-18',
-            'dl': '💡 THE SAME NVDA STORY, TOLD CORRECTLY THIS TIME - a live lesson in source quality',
-            'k': 'thesis',
-            't': 'NVDA',
-            'w': "MONEY & BANKING'S 18 SEPTEMBER HEADLINE SAYS NVIDIA EXPECTS NEXT YEAR'S **CHIP SALES** TO DOUBLE. "
-                 'THAT IS ACCURATE - IT IS THE UNITS CLAIM, CORRECTLY RENDERED. THE ANONYMOUS POST 24 HOURS EARLIER '
-                 'TURNED THE SAME REMARK INTO "70% GROWTH TO $673 BILLION", WHICH WAS WRONG IN THE YEAR, THE UNIT AND '
-                 'THE SOURCE.'},
            {'a': 'DECIDE',
             'amt': 6489.31,
             'c': 'planned',
@@ -6282,9 +5972,12 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
             'c': 'confirmed',
             'cond': 'Last policy meeting of 2026.',
             'd': '2026-12-09',
+            'dl': 'Fed December decision - 02:00 Thu 10 Dec Bangkok',
             'k': 'macro',
             't': '',
-            'w': 'FOMC decision (meeting 8-9 Dec)'},
+            'w': 'FOMC decision (meeting 8-9 Dec US) - statement ~02:00 Thu 10 Dec Bangkok, a few hours before our '
+                 'review. A hike is widely expected after the hot October CPI. Read the 10-year close that night '
+                 'against the 5.00% gate and 5.25% tripwire.'},
            {'a': 'DECIDE',
             'amt': 0,
             'cond': 'Four standing tests applied to every name: (1) Rule of 40 direction over the last two quarters - '
@@ -6576,9 +6269,12 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
             'dl': 'AMAT - India is immaterial; the revenue-growth field is the thing to fix',
             'k': 'data',
             't': 'AMAT',
-            'w': 'YES, AMAT IS CORE - $22,000 BUDGET, FOURTH LARGEST IN GROUP 2, $10,086.63 INVESTED IN 38 SHARES, '
-                 "$11,913.37 STILL UNSPENT. THE INDIA NEWS CHANGES NOTHING. THE BOARD'S 7.8% REVENUE-GROWTH FIELD IS A "
-                 'TRAILING FIGURE THAT NOW BADLY UNDERSTATES THE RUN-RATE.'},
+            'w': 'UPDATE 14 Nov: AMAT is now 57 sh, cost $19,702.16 of the $22,000 budget - room $2,297.84 (the '
+                 '38-share figures below are from September). Q4 FY2026 scored 12 Nov: revenue +53%, non-GAAP EPS '
+                 '+92%, Q1 guide $11.1bn. Room goes into the 10 Dec ranking. || YES, AMAT IS CORE - $22,000 BUDGET, '
+                 'FOURTH LARGEST IN GROUP 2, $10,086.63 INVESTED IN 38 SHARES, $11,913.37 STILL UNSPENT. THE INDIA '
+                 "NEWS CHANGES NOTHING. THE BOARD'S 7.8% REVENUE-GROWTH FIELD IS A TRAILING FIGURE THAT NOW BADLY "
+                 'UNDERSTATES THE RUN-RATE.'},
            {'a': 'WATCH',
             'amt': 0,
             'c': 'open',
@@ -9003,62 +8699,6 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
             'k': 'limit',
             't': 'TSM',
             'w': 'Any close at or below $380'},
-           {'a': 'BUY',
-            'amt': 9522.29,
-            'c': 'cancelled',
-            'cond': 'Standing line, no results test. TSM October revenue is out Tue 10 Nov - a free check after the '
-                    'fact. Funded from cash (20,531 covers AMD ~9,730 + TSM ~9,200 = 18,930; ~1,600 left).',
-            'd': '2026-11-09',
-            'dl': 'TSM $380 standing line hit',
-            'k': 'order',
-            't': 'TSM',
-            'w': 'REJECTED by POEMS 9 Nov 23:33 (reason to confirm - most likely buying power after the Frankfurt AMD '
-                 'buy). Not re-entered: TSM traded ~391 and CLOSED 388.62, above the $380 line, so the line is no '
-                 'longer met. The standing $380 line stays. Mon 9 Nov evening (after 22:00): BUY 25 sh Day LIMIT '
-                 '375.44 (6 Nov close), raise once to cap 379.19 (~$9,400). The $380 line is still met (closed '
-                 '375.44). HISTORY: 6 Nov order 26 sh LIMIT 353.10 EXPIRED unfilled (closed +6.3%). Completes the TSM '
-                 'budget.'},
-           {'a': 'BUY',
-            'amt': 4874.82,
-            'c': 'cancelled',
-            'cond': 'Priority: AMD and TSM on Monday from cash (~$19,300 of $20,531); AVGO, V and VST on Tuesday from '
-                    "Monday's SGOV sale (settles T+1). Not tonight: cash after AMD + TSM is ~1,600. SGOV proceeds "
-                    'settle T+1, so sell Mon, buy Mon with the proceeds (POEMS allows the buy against the sale the '
-                    'same session, as on 28-29 Oct).',
-            'd': '2026-11-10',
-            'dl': 'AVGO $310 standing line hit',
-            'k': 'order',
-            't': 'AVGO',
-            'w': 'NO ORDER: AVGO closed 319.48 on 9 Nov, above the $310 line (condition was a Monday close at or below '
-                 '$310). The standing $310 line stays. Tue 10 Nov evening (after 22:00), from the SGOV proceeds: BUY '
-                 '16 sh Day LIMIT at the 9 Nov close, cap +1% (~$4,700) - ONLY IF the 9 Nov close is still at or below '
-                 '$310 (closed 293.69 on 6 Nov). If it closes above $310 on Monday, no order - the line waits for the '
-                 "next close at or below. Monday's cash goes to AMD + TSM first."},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'done',
-            'cond': '',
-            'd': '2026-11-10',
-            'dl': 'US October CPI - hotter than expected',
-            'k': 'macro',
-            't': 'MACRO',
-            'w': 'DONE 10 Nov (released Tue, not Thu): October CPI +0.4% m/m (consensus +0.3%), core +0.3% (consensus '
-                 '+0.2%); no y/y figure because October 2025 data was not collected in the shutdown. Drivers: '
-                 'transport services +0.8%, medical goods +0.5%, shelter +0.3%. 10-year up ~6bp to about 4.96%; '
-                 'markets price a December Fed HIKE at ~85-88% (CME FedWatch), with some talk of 50bp. RATE RULE STAYS '
-                 'ON - a 10-year close below 4.5% is further away. No order. US CPI for October - about Thu 12 Nov '
-                 '20:30 Bangkok (BLS date to confirm). Feeds the December Fed odds and the 10-year; the rate rule '
-                 'relaxes only on a 10-year close below 4.5%. No order.'},
-           {'a': 'WATCH',
-            'amt': 0,
-            'c': 'confirmed',
-            'cond': '',
-            'd': '2026-11-26',
-            'dl': 'US Thanksgiving - market closed',
-            'k': 'macro',
-            't': 'MACRO',
-            'w': 'Thu 26 Nov: US market CLOSED (Thanksgiving). Fri 27 Nov: early close 13:00 ET = 01:00 Sat Bangkok - '
-                 'place any Friday order before 23:00 Bangkok. No order planned.'},
            {'a': 'ADMIN',
             'amt': 0,
             'c': 'standing',
@@ -9075,27 +8715,6 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
                  '($9,522) and AVGO $310 ($4,875) lines if they fire again. NVDA (suspended), PLTR $150 and APP $320, '
                  'the 10 Dec decisions, MU 17 Dec and ASML 27 Jan wait for the February $100,000 unless the S&P falls '
                  '15%.'},
-           {'a': 'SELL',
-            'amt': 0,
-            'c': 'done',
-            'cond': 'Why: the FRA line is in euros, thinner to sell later, carries EUR/USD risk and higher fees '
-                    '(~0.45%); swapping before the EUR purchase settles on 11 Nov lets the two EUR legs net off, so '
-                    'little currency is converted. Expected: FRA sale ~EUR 9,930 net -> realised ~+EUR 210 (~+$235) on '
-                    'the Frankfurt lot; Nasdaq buy ~$10,200. After: AMD 75 sh, cost ~$24,000 = budget. Alternative if '
-                    'Salee prefers not to trade: ask POEMS whether the 22 sh can be transferred to the US line (same '
-                    'ISIN) for a fee.',
-            'd': '2026-11-10',
-            'dl': 'AMD Frankfurt -> Nasdaq swap',
-            'k': 'order',
-            't': 'AMD',
-            'w': 'DONE 10 Nov: SOLD 22 on FRA at EUR 469.95 (realised about EUR 583.55 = $654.72), then BOUGHT 19 on '
-                 'NASD at 529.59. AMD now 74 sh, all Nasdaq, cost 23,872.96 of 24,000 - budget effectively full. Tue '
-                 '10 Nov 22:00-23:15 Bangkok (Nasdaq and Xetra both open): (1) SELL 22 AMD on FRA (Frankfurt), Day '
-                 'LIMIT at the live FRA bid (about EUR 450-455 if AMD is near $508 and EUR/USD ~1.12); do not go below '
-                 'EUR 445. (2) Within two minutes BUY AMD on NASD, Day LIMIT at the live ask: 20 sh if AMD is below '
-                 '$510, 19 sh if above (keeps AMD inside its $24,000 budget). Not a new decision - the sell leg '
-                 'captures the same price, so the no-chasing cap does not apply. Sell first: the TSM rejection showed '
-                 'buying power is tight until the sale settles.'},
            {'a': 'ADMIN',
             'amt': 0,
             'c': 'standing',
@@ -9138,32 +8757,58 @@ SCHEDULE = {'horizon': 'Nov 2026 - Mar 2027',
                  'the valuation gate while the 10-year is at or above 5.00% - forward P/E 37.4 at the 10 Nov close '
                  '450.04. Hold the 38 shares. Released when the 10-year is below 5.00% AND a buy condition is written, '
                  'or when ISRG gets a price line at the 10 Dec review.'},
+           {'a': 'DECIDE',
+            'amt': 0,
+            'c': 'planned',
+            'cond': 'Carried from the 17 Nov DECIDE row (archived 14 Nov to src/schedule_archive_2026-11-14.json with '
+                    'its full history). 12 Nov: Jensen Huang resigned as CEO and director; CFO Colette Kress interim '
+                    'CEO; Harvey Jones Chair. Megaspeed chip-count report (Bloomberg ~50,000 units; The Information '
+                    '$7.5bn) and DOJ/FBI/Congress interest still open; no formal action naming NVIDIA as of 14 Nov. '
+                    '452 sh held, cost $86,302.20.',
+            'd': '2026-12-10',
+            'dl': 'NVDA governance after the CEO change - resume the $180 line?',
+            'k': 'review',
+            't': 'NVDA',
+            'w': 'NVDA GOVERNANCE at the 10 Dec review: resume the suspended $180 line ($5,619.72) and rung 3, or keep '
+                 'them suspended; is NVDA above 10% of stocks still acceptable after the CEO change; what finding '
+                 'would trigger a sale. Inputs: the buy/hold/sell decision taken after the 17 Nov results, the '
+                 'permanent-CEO search, and any formal government action.'},
            {'a': 'WATCH',
             'amt': 0,
             'c': 'confirmed',
-            'cond': 'Company release (SEC exhibit 99.1), quarter ended 25 Oct 2026: revenue $10,409m (+53% y/y); '
-                    'Semiconductor Systems $7,996m (~+64%); services (AGS) $1,896m (~+26%); non-GAAP gross margin '
-                    '50.6%; non-GAAP EPS $4.16 (+92%); China 25% of revenue (29% a year ago); free cash flow $2,616m; '
-                    'buybacks $2,000m + dividends $421m. FY2026: revenue $34,446m (+21%), non-GAAP EPS $12.89 (+37%), '
-                    'FCF $6,196m. Q1 FY2027 guide: revenue $11.1bn +/- $0.5bn, non-GAAP EPS $4.35 +/- 0.20 - another '
-                    'step up. Thesis intact (equipment demand for AI chips); China share falling is a plus for '
-                    'export-rule risk. After-hours move not verified. Position 57 sh, cost 19,702.16 of 22,000 - room '
-                    '2,297.84, no order scheduled; forward P/E ~21.6x, so the valuation gate does not apply. Any use '
-                    'of the room is a 10 Dec decision (funding gate until Feb).',
-            'd': '2026-11-12',
+            'cond': 'Read: data-centre growth and custom-chip (Amazon/Microsoft) revenue, guidance, and any update on '
+                    'the Lumentum deal (close 1H 2028) incl. break fees. 95.5 MRVL sh held.',
+            'd': '2026-12-01',
+            'dl': 'MRVL results - Tue 1 Dec US, 04:30 Wed 2 Dec Bangkok',
             'k': 'earnings',
-            't': 'AMAT',
-            'w': 'Q4 FY2026 results (12 Nov, after the close): revenue +53%, non-GAAP EPS +92%, Q1 guide $11.1bn / '
-                 '$4.35 - strong; China down to 25%. HOLD - no order; room $2,297.84 goes to the 10 Dec ranking.'}],
- 'note': "CLEANED 7 Nov 2026 at Salee's instruction: rows dated before Mon 9 Nov archived to "
-         'src/schedule_archive_2026-11-09.json (13 rows; the APP $320 trigger kept as a standing row). Earlier '
-         "history: schedule_archive_2026-11-01.json (139 rows). CLEANED 1 Nov 2026 at Salee's instruction: only plans "
-         'from 1 November 2026 onward are shown - open dated rows (Nov 2026 to Feb 2027) plus the standing rules that '
-         'are still live (price lines, triggers, holds, the crash reserve and the ranked pool). 139 history rows '
-         '(everything dated before 1 Nov, every done or cancelled row, and undated commentary notes) were moved to '
-         'src/schedule_archive_2026-11-01.json and git history - nothing is lost. Claude does not place trades; every '
-         'BUY/SELL row is for Salee to place at POEMS as a Day LIMIT order. Amounts are budget room, not orders.',
- 'updated': '2026-11-08'}
+            't': 'MRVL',
+            'w': 'Q3 FY2027 results Tue 1 Dec 1:30 pm Pacific = 04:30 Wed 2 Dec Bangkok (company-confirmed). No order '
+                 '- feeds the combined MRVL + LITE budget at the 10 Dec review.'},
+           {'a': 'WATCH',
+            'amt': 0,
+            'c': 'planned',
+            'cond': 'Also 10 Dec and 31 Dec. FX changes the baht value of the book only, never an order.',
+            'd': '2026-12-01',
+            'dl': 'Monthly FX update - set USD/THB on the dashboard',
+            'k': 'admin',
+            't': 'FX',
+            'w': 'Monthly FX update: set the dashboard USD/THB to the 1 Dec rate (now 33.65, set 1 Oct). Rule: first '
+                 'trading day of each month, or mid-month if spot moves more than 1.5% (~0.50 baht).'},
+           {'a': 'WATCH',
+            'amt': 0,
+            'c': 'estimated',
+            'cond': 'Feeds the 9 Dec Fed decision and the 10-year. No order is ever set on a data release.',
+            'd': '2026-12-04',
+            'dl': 'US November jobs report (date to confirm)',
+            'k': 'macro',
+            't': 'MACRO',
+            'w': 'US November jobs report - expected Fri 4 Dec, 20:30 Bangkok (first Friday; date to confirm). Last '
+                 'one (Oct): +165,000 vs 65,000 expected.'}],
+ 'note': 'From Mon 30 Nov onward (Salee, 14 Nov); 16-30 Nov is on the Buy/Sell plan tab. Rows dated before 30 Nov are '
+         'archived in src/schedule_archive_2026-11-14.json (17 rows), -11-09 (13) and -11-01 (139) - nothing is lost. '
+         'Claude does not place trades; every BUY/SELL row is for Salee to place at POEMS as a Day LIMIT order. '
+         'Amounts are budget room, not orders.',
+ 'updated': '2026-11-14'}
 
 SELLBOOK = {'comm': '0.20% + 7% VAT (0.214%), minimum 8.56',
  'note': "SEP 12, 2026 - ZETA'S LIMIT LOWERED 32.50 TO 31.00, and NOT because of the viral 'rich before 2030' graphic "
@@ -10724,99 +10369,65 @@ RISK = {'asof': '2026-10-11',
  'to': '2026-10-09',
  'ust10': 5.24}
 
-BUYPLAN = {'from': '2026-11-09',
- 'holidays': 'Thu 26 Nov: US market closed (Thanksgiving). Fri 27 Nov: early close 13:00 ET = 01:00 Sat Bangkok. Wed '
-             '11 Nov (Veterans Day) is a normal trading day.',
+BUYPLAN = {'from': '2026-11-16',
+ 'holidays': 'Thu 26 Nov: US market closed (Thanksgiving). Fri 27 Nov: early close 13:00 ET = 01:00 Sat Bangkok.',
  'hours': 'POEMS follows the US session 21:30 to 04:00 Bangkok. Place Day orders after 22:00 (not in the first 30 '
           'minutes); an unfilled Day order expires at the close.',
- 'made': '2026-11-07',
- 'note': 'ONE PAGE FOR 9 - 30 NOV. UPDATED 12 Nov after the 11 Nov close (Nasdaq +1.6%; chips rallied). DONE THIS '
-         'WEEK: SGOV sold 150 (15,041.67); AMD swap (Frankfurt lot sold for ~$656 gain, 19 bought on Nasdaq - AMD 74 '
-         'sh, budget full); V 5 sh and VST 26 sh (both budgets complete). CAT: 11 Nov order expired (closed 601.61). '
-         'THU 12 NOV (after 22:00): CAT 9 sh LIMIT 601.61 / cap 607.63 - final rung. Cash ~$20,886 after settlement; '
-         'SGOV 544 sh (~$54,700). NO ORDER: TSM (413.35, line $380), AVGO (345.22, line $310), PLTR (172.40, line '
-         '$150), APP (404.77, line $320). NVDA: 173.73, buys SUSPENDED; hold-vs-trim decided Thu 19 Nov after the 18 '
-         'Nov results. RATES: 10-year 4.98% on 10 Nov (bond market closed 11 Nov) - valuation gate armed at 5.00%, '
-         'tripwire at 5.25%. KLAC + LRCX deferred to 10 Dec; new money $100,000 in Feb 2027. ALWAYS CHECK THE MARKET '
-         'FIELD SAYS NASD/NYSE BEFORE SUBMITTING. No chasing; never in the first 30 minutes.',
- 'pxNote': '11 Nov closes',
- 'rows': [{'bkk': 'Mon 9 Nov (done)',
-           'cond': 'Filled ON FRANKFURT: 22 sh at EUR 439.70 (~$495.56). Closed 508.58 on Nasdaq.',
-           'd': '2026-11-09',
-           't': 'AMD',
-           'tac': 'Done - swap on 10 Nov.'},
-          {'bkk': 'Tue 10 Nov morning (results, est.)',
-           'cond': 'Neutron progress and Iridium financing terms.',
-           'd': '2026-11-09',
-           't': 'RKLB',
-           'tac': 'No order - capped at cost; rate rule.'},
-          {'bkk': 'Mon 9 Nov (done)',
-           'cond': 'Sold 150 at 100.495 (~$15,042). Dividend 225.76, US tax 0%.',
-           'd': '2026-11-09',
-           't': 'SGOV',
-           'tac': 'Done - 544 sh left (~$54,700).'},
-          {'bkk': 'Mon 9 Nov',
-           'cond': 'Order REJECTED; closed 388.62, above the $380 line.',
-           'd': '2026-11-09',
-           't': 'TSM',
-           'tac': 'No order - the $380 line stays.'},
-          {'a': None,
-           'bkk': 'Tue 10 Nov 22:00-23:15',
-           'cond': 'SWAP DONE: sold 22 on FRA at EUR 469.95 (gain ~EUR 584), bought 19 on NASD at 529.59.',
-           'd': '2026-11-10',
-           't': 'AMD',
-           'tac': 'Done - AMD 74 sh, all Nasdaq, budget full.'},
-          {'bkk': 'Tue 10 Nov',
-           'cond': 'Closed 319.48 on 9 Nov - above the $310 line.',
-           'd': '2026-11-10',
-           't': 'AVGO',
-           'tac': 'No order - the $310 line stays.'},
-          {'bkk': 'Tue 10 Nov (done)',
-           'cond': 'October CPI +0.4% m/m vs +0.3% expected; core +0.3% vs +0.2%. December Fed hike ~85-88% priced.',
-           'd': '2026-11-10',
+ 'made': '2026-11-14',
+ 'note': 'ONE PAGE FOR 16 - 30 NOV. Made Sat 14 Nov from the 12 Nov closes. NO SCHEDULED BUYS: every November rung is '
+         'done (CAT filled 12 Nov - budget complete). THE ONE DECISION: NVDA - results Tue 17 Nov US (04:20 Wed 18 Nov '
+         'Bangkok), the first under interim CEO Colette Kress after Jensen Huang resigned on 12 Nov. Salee decides BUY '
+         '/ HOLD / SELL after the results; earliest session to act Wed 18 Nov evening. Hold all 452 sh until then. '
+         'EVERY EVENING CHECK the standing lines on the close: TSM $380 (12 Nov 405.49), AVGO $310 (364.36), PLTR $150 '
+         '(171.58, waits for Feb money), APP $320 (393.68, waits for Feb money). A line acts only on a CLOSE at or '
+         'below it - Day LIMIT at that close, one raise to +1%. RATES: 10-year ~5.13% on 12 Nov - VALUATION GATE '
+         'ACTIVE (nothing above 35x forward earnings without a price line; ISRG $15,618 and GEV $519 on hold). '
+         'TRIPWIRE at a close above 5.25% - all buying stops except the lines. MONEY: cash $15,519.81 after CAT; SGOV '
+         '544 sh (~$54,700) holds the $50,000 crash reserve. Funding gate to February: a line that fires and does not '
+         'fit waits. KLAC + LRCX deferred to 10 Dec; new money $100,000 in Feb 2027. ALWAYS CHECK THE MARKET FIELD '
+         'SAYS NASD/NYSE BEFORE SUBMITTING. No chasing; never in the first 30 minutes.',
+ 'pxNote': '12 Nov closes',
+ 'rows': [{'bkk': 'Tue 17 Nov 00:00',
+           'cond': 'Fed Chair Kevin Warsh speaks (opening remarks, San Francisco Fed productivity and jobs '
+                   'conference).',
+           'd': '2026-11-16',
            't': 'MACRO',
-           'tac': 'No order. Rate rule stays on.'},
-          {'bkk': 'Tue 10 Nov',
-           'cond': "China's rare-earth export rule may return unless extended.",
-           'd': '2026-11-10',
-           't': 'MP',
-           'tac': 'No order - not funded.'},
-          {'bkk': 'Tue 10 Nov',
-           'cond': 'October revenue NT$586.89bn - record, +59.7% y/y. Demand strong.',
-           'd': '2026-11-10',
-           't': 'TSM',
-           'tac': 'No order - closed 388.62, above the $380 line.'},
-          {'a': None,
-           'bkk': 'Tue 10 Nov evening (after 22:00)',
-           'cond': 'FILLED 5 sh at 421.40.',
-           'd': '2026-11-10',
-           't': 'V',
-           'tac': 'Done - V budget complete.'},
-          {'a': None,
-           'bkk': 'Tue 10 Nov evening (after 22:00)',
-           'cond': 'FILLED 26 sh at 130.65 (results passed 6 Nov).',
-           'd': '2026-11-10',
-           't': 'VST',
-           'tac': 'Done - VST budget complete.'},
-          {'a': None,
-           'bkk': 'Thu 12 Nov 22:27',
-           'cond': 'FILLED 9 sh at 594.97 (limit 597).',
-           'd': '2026-11-12',
-           't': 'CAT',
-           'tac': 'Done - CAT budget complete.'},
+           'tac': 'No order. Read for December-hike hints.'},
+          {'bkk': 'Tue 17 Nov 20:30',
+           'cond': 'US October retail sales.',
+           'd': '2026-11-17',
+           't': 'MACRO',
+           'tac': 'No order.'},
           {'a': 'DECIDE',
            'bkk': 'Wed 18 Nov ~04:20 (results); act from Wed 18 Nov evening',
-           'cond': '⚠️ 12 Nov: CEO Jensen Huang RESIGNED (trigger 2 fired); CFO Colette Kress interim CEO; NVDA ~165 '
-                   '(-5%) after opening ~-13%. Results moved up to Tue 17 Nov US. No formal government action yet.',
+           'cond': '⚠️ CEO Jensen Huang RESIGNED 12 Nov (trigger 2 fired); CFO Colette Kress interim CEO; Harvey Jones '
+                   'Chair. Closed 166.19 on 12 Nov (opened ~-13%). Watch: guidance, gross margin (73%+ was the old buy '
+                   'test), China, the Megaspeed chip count, any government action.',
            'd': '2026-11-17',
            't': 'NVDA',
-           'tac': 'No order before the results (Salee, 12 Nov). After the results: decide BUY, HOLD or SELL - Wed 18 '
-                  'Nov evening at the earliest, Thu 19 Nov as set.'},
+           'tac': 'No order before the results (Salee, 12 Nov). Claude scores them Wed morning; Salee decides BUY / '
+                  'HOLD / SELL - Wed 18 Nov evening at the earliest, Thu 19 Nov as set.'},
+          {'bkk': 'Thu 19 Nov 02:00',
+           'cond': 'FOMC minutes of the 27-28 Oct meeting.',
+           'd': '2026-11-18',
+           't': 'MACRO',
+           'tac': 'No order.'},
+          {'bkk': 'Thu 19 Nov morning (after the US close)',
+           'cond': 'Q1 FY2027 results Wed 18 Nov (company-confirmed). Budget full; ~80x forward earnings - the '
+                   'valuation gate applies.',
+           'd': '2026-11-18',
+           't': 'PANW',
+           'tac': 'No order - watch only.'},
           {'bkk': '-',
            'cond': 'BOARD 8 Nov: KLAC $6,489 + LRCX $4,400 tranche 3 deferred to the 10 Dec review.',
            'd': '2026-11-19',
            't': 'KLAC',
            'tac': 'No order in November.'},
+          {'bkk': 'Wed 25 Nov 20:30',
+           'cond': 'US Q3 GDP (2nd estimate) and October PCE inflation; Fed Beige Book 02:00 Thu 26 Nov.',
+           'd': '2026-11-25',
+           't': 'MACRO',
+           'tac': "No order. PCE is the Fed's gauge - watch the 10-year close that night."},
           {'bkk': 'Thu 26 Nov',
            'cond': 'US Thanksgiving - market closed. Fri 27 Nov early close 01:00 Sat Bangkok.',
            'd': '2026-11-26',
@@ -10831,7 +10442,7 @@ BUYPLAN = {'from': '2026-11-09',
            'Never more than +1% above the reference close.',
            'Commission 0.214%, minimum $8.56 - share counts already allow for it.',
            'Send the POEMS confirmation the same day; Claude books the fill.'],
- 'title': 'Buy/Sell plan 9 - 30 Nov 2026',
+ 'title': 'Buy/Sell plan 16 - 30 Nov 2026',
  'to': '2026-11-30'}
 
 METRICS3 = M3  # alias: per-ticker pfcf / ev (EV/EBITDA) / de (Debt/Equity)
