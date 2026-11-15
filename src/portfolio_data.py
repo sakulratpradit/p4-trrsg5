@@ -3,18 +3,21 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Nov 15, 2026 13:37 Bangkok - NVDA row: Musk backs a petition to reinstate Huang; Kalshi 9% odds of return; '
- "'handshake deals' claim unverified. No order change. || PREVIOUS ENTRY: Nov 14, 2026 10:37 Bangkok - ONE LIST, TWO "
- "VIEWS (Salee approved): 'Next 30 Days' tab now rolls forward by itself every day (today to today + 30); Schedule tab "
- 'shows later items plus standing rules. Plan rows merged into the Schedule list; US market holidays to Feb 2027 '
- 'added; NVDA results row restored. No rule, budget or number changed. || PREVIOUS ENTRY: Nov 14, 2026 09:20 Bangkok - '
- 'PLANS ROLLED (Salee): Buy/Sell plan now 16 - 30 Nov (no scheduled buys; NVDA decision after the 17 Nov results; PANW '
- 'results 18 Nov; FOMC minutes, PCE). Schedule now from 30 Nov onward - 17 earlier rows archived; added MRVL results 1 '
- 'Dec, FX update 1 Dec, jobs report 4 Dec, NVDA governance DECIDE 10 Dec. || PREVIOUS ENTRY: Nov 13, 2026 18:55 '
- 'Bangkok - AMAT Q4 FY2026 SCORED: revenue $10.41bn (+53%), non-GAAP EPS $4.16 (+92%), Q1 guide $11.1bn / EPS $4.35; '
- "China 25% of revenue. Hold, no order. Notes tab: new 'Rate gates' card (why 35x and 5.25%). || PREVIOUS ENTRY: Nov "
- '13, 2026 11:05 Bangkok - DAILY PRICE REFRESH (03:30 UTC pass): 60 remaining closes + SPY/QQQ booked for 12 Nov '
- '(board now 63 of 63 at the 12 Nov close). Sources: per-ticker rotation of marketscreener mirrors with dated '
+ASOF = ("Nov 15, 2026 14:49 Bangkok - NEW (Salee): Portfolio tab 'Performance by year' (2025 from 15 Jul, 2026 so far, since "
+ 'start, since the first daily value 28 Jul 2026; a new row each January; 31 Dec 2025 value is an ESTIMATE until the '
+ 'POEMS statement arrives). Vision tab: market value vs the 2x goal ($2.0M by 2035 on $1.0M) with year-end milestones. '
+ '|| PREVIOUS ENTRY: Nov 15, 2026 13:37 Bangkok - NVDA row: Musk backs a petition to reinstate Huang; Kalshi 9% odds '
+ "of return; 'handshake deals' claim unverified. No order change. || PREVIOUS ENTRY: Nov 14, 2026 10:37 Bangkok - ONE "
+ "LIST, TWO VIEWS (Salee approved): 'Next 30 Days' tab now rolls forward by itself every day (today to today + 30); "
+ 'Schedule tab shows later items plus standing rules. Plan rows merged into the Schedule list; US market holidays to '
+ 'Feb 2027 added; NVDA results row restored. No rule, budget or number changed. || PREVIOUS ENTRY: Nov 14, 2026 09:20 '
+ 'Bangkok - PLANS ROLLED (Salee): Buy/Sell plan now 16 - 30 Nov (no scheduled buys; NVDA decision after the 17 Nov '
+ 'results; PANW results 18 Nov; FOMC minutes, PCE). Schedule now from 30 Nov onward - 17 earlier rows archived; added '
+ 'MRVL results 1 Dec, FX update 1 Dec, jobs report 4 Dec, NVDA governance DECIDE 10 Dec. || PREVIOUS ENTRY: Nov 13, '
+ '2026 18:55 Bangkok - AMAT Q4 FY2026 SCORED: revenue $10.41bn (+53%), non-GAAP EPS $4.16 (+92%), Q1 guide $11.1bn / '
+ "EPS $4.35; China 25% of revenue. Hold, no order. Notes tab: new 'Rate gates' card (why 35x and 5.25%). || PREVIOUS "
+ 'ENTRY: Nov 13, 2026 11:05 Bangkok - DAILY PRICE REFRESH (03:30 UTC pass): 60 remaining closes + SPY/QQQ booked for '
+ '12 Nov (board now 63 of 63 at the 12 Nov close). Sources: per-ticker rotation of marketscreener mirrors with dated '
  'Market-Closed stamps and 5-day tables (MSFT 523.00, AMZN 267.44, GOOGL 298.70, MPWR 1447.40, ASML 1497.12, MU '
  '798.44, ARM 199.78, PANW 322.66, SE 74.52, SPCX 139.94, SPY 757.12), stocktitan dated closes (META 623.61, SNPS, '
  'SNDK, APH, COHR, CRDO, FSLR, RKLB, AVAV, DDOG, V, CRWD, FTNT, NET, BWXT, GEV, ETN, VRT, PWR, BE, CEG, VST, CAT, '
@@ -5018,7 +5021,19 @@ TOTALS = {'dividendsNote': 'November 2026 (POEMS transaction details, 9 Nov): AS
               '(-118.25) at a lower cost than the cash paid in June.',
  'soldCostTHB': 3313417,
  'soldCostUSD': 101313.43,
- 'targetUSD': 910730.04}
+ 'targetUSD': 910730.04,
+ 'yearEnd': {'2025': {'est': True,
+                      'mv': 153245.03,
+                      'src': 'ESTIMATE (14 Nov 2026): no stock market value is on file for 31 Dec 2025 (the daily '
+                             "history starts 28 Jul 2026). Estimated by growing each month's Jul-Dec 2025 net money in "
+                             '(POEMS-scaled ledger, $146,735.67) with the Nasdaq-100 (QQQ, dividend-adjusted) from '
+                             'mid-month to 31 Dec 2025. Replace with the POEMS statement value for 31 Dec 2025 when '
+                             'Salee sends it.'}},
+ 'yearNote': 'Calendar years, stocks only (SGOV and cash excluded, as in the lifetime tile). Money in = buys minus '
+             'sale proceeds by month (POEMS-scaled ledger for Jul 2025-Feb 2026, the trade ledger after). Year-end '
+             'values come from the daily history automatically; only 31 Dec 2025 is an estimate. Return % = Modified '
+             "Dietz: gain divided by the start value plus each month's money in, weighted by the share of the year it "
+             'was invested. Dividends ($1,367.93 so far) are not included.'}
 
 SOLD = [{'costTHB': 64909.61,
   'costUSD': 1933.56,
