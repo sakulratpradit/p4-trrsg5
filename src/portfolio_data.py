@@ -3,275 +3,281 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Nov 15, 2026 18:05 Bangkok - SPCX 10 Dec row: Starship upper stage caught from orbit for the first time (14 Nov). No '
- "order. || PREVIOUS ENTRY: Nov 15, 2026 14:49 Bangkok - NEW (Salee): Portfolio tab 'Performance by year' (2025 from "
- '15 Jul, 2026 so far, since start, since the first daily value 28 Jul 2026; a new row each January; 31 Dec 2025 value '
- 'is an ESTIMATE until the POEMS statement arrives). Vision tab: market value vs the 2x goal ($2.0M by 2035 on $1.0M) '
- 'with year-end milestones. || PREVIOUS ENTRY: Nov 15, 2026 13:37 Bangkok - NVDA row: Musk backs a petition to '
- "reinstate Huang; Kalshi 9% odds of return; 'handshake deals' claim unverified. No order change. || PREVIOUS ENTRY: "
- "Nov 14, 2026 10:37 Bangkok - ONE LIST, TWO VIEWS (Salee approved): 'Next 30 Days' tab now rolls forward by itself "
- 'every day (today to today + 30); Schedule tab shows later items plus standing rules. Plan rows merged into the '
- 'Schedule list; US market holidays to Feb 2027 added; NVDA results row restored. No rule, budget or number changed. '
- '|| PREVIOUS ENTRY: Nov 14, 2026 09:20 Bangkok - PLANS ROLLED (Salee): Buy/Sell plan now 16 - 30 Nov (no scheduled '
- 'buys; NVDA decision after the 17 Nov results; PANW results 18 Nov; FOMC minutes, PCE). Schedule now from 30 Nov '
- 'onward - 17 earlier rows archived; added MRVL results 1 Dec, FX update 1 Dec, jobs report 4 Dec, NVDA governance '
- 'DECIDE 10 Dec. || PREVIOUS ENTRY: Nov 13, 2026 18:55 Bangkok - AMAT Q4 FY2026 SCORED: revenue $10.41bn (+53%), '
- "non-GAAP EPS $4.16 (+92%), Q1 guide $11.1bn / EPS $4.35; China 25% of revenue. Hold, no order. Notes tab: new 'Rate "
- "gates' card (why 35x and 5.25%). || PREVIOUS ENTRY: Nov 13, 2026 11:05 Bangkok - DAILY PRICE REFRESH (03:30 UTC "
- 'pass): 60 remaining closes + SPY/QQQ booked for 12 Nov (board now 63 of 63 at the 12 Nov close). Sources: per-ticker '
- 'rotation of marketscreener mirrors with dated Market-Closed stamps and 5-day tables (MSFT 523.00, AMZN 267.44, GOOGL '
- '298.70, MPWR 1447.40, ASML 1497.12, MU 798.44, ARM 199.78, PANW 322.66, SE 74.52, SPCX 139.94, SPY 757.12), '
- 'stocktitan dated closes (META 623.61, SNPS, SNDK, APH, COHR, CRDO, FSLR, RKLB, AVAV, DDOG, V, CRWD, FTNT, NET, BWXT, '
- 'GEV, ETN, VRT, PWR, BE, CEG, VST, CAT, STRL), fool.com dated last-close fields calibrated against MPWR/SE/KTOS '
- '(LRCX, PLTR, GLW, TSM, ANET, ALAB, ORCL, HOOD, CGNX, NFLX, APP, AAPL, MRVL, CDNS, ISRG, LHX, AMAT, TSEM, FN, STX, '
- 'CIEN), foxbusiness 4:00 PM stamps (KLAC 157.30, LITE 624.65, QQQ 688.17), google finance (TER 263.75), heygotrade '
- 'dated closes (KTOS 34.75, AAPL confirm). Every ticker validated by its prior-day value tying the stored 11 Nov '
- 'close. Largest moves: KTOS -5.29%, ANET +5.06%, SNDK -4.11%, FN -4.11% (all under the 6% gate). SPY 757.12 (-0.35%), '
- 'QQQ 688.17 (-0.32%); spyHigh unchanged 779.09. UST10: 12 Nov close NOT YET PUBLISHED (FRED/MND end 10-11 Nov; CNBC '
- 'headline says back above 5% intraday) - risk_series ust10 SKIPPED for 11 and 12 Nov (11 Nov was Veterans Day, bond '
- "market closed; MND's thin 4.985 row not trusted) - the valuation-gate check still PENDING a published 12 Nov close. "
- 'HISTORY 11-12 row added. pe/ps/fpe/peg/M3-pfcf rescaled with price. Every number from a tool call this session. || '
- 'PREVIOUS ENTRY: Nov 13, 2026 07:50 Bangkok - DAILY PRICE REFRESH (00:30 UTC pass, PARTIAL - 3 of 63): NVDA 166.19 '
- '(-4.34%), AMD 585.30 (+5.86%), AVGO 364.36 (+5.54%) booked for 12 Nov from post-close articles (fool.com 4:58 PM ET '
- 'quote box + stocktitan close log; both tie to the 11 Nov closes to the cent). All quote sources (stockanalysis, '
- 'Google Finance, marketscreener, ycharts) served stale caches tonight (Nov 6-9 or intraday 12 Nov) - remaining 60 '
- 'tickers, SPY/QQQ and the 10-year LEFT at 11 Nov values for the 03:30 pass. 10-year 12 Nov close UNRESOLVED '
- '(valuation-gate check pending). || PREVIOUS ENTRY: Nov 12, 2026 23:30 Bangkok - ⚠️ NVDA TRIGGER 2 FIRED: Jensen '
- 'Huang resigned as CEO and director; CFO Colette Kress interim CEO; Harvey Jones Chair. NVDA ~165 (-5%) at 13:45 New '
- "York after opening ~-13%. Results now Tue 17 Nov US (04:20 Wed 18 Nov Bangkok). No formal government action. Salee's "
- 'decision stands: hold 452 sh, no order, decide after the results. ⚠️ 10-year ~5.09-5.11% intraday - if it CLOSES at '
- 'or above 5.00% the valuation gate turns ACTIVE (tripwire 5.25%). || PREVIOUS ENTRY: Nov 12, 2026 22:30 Bangkok - CAT '
- 'final rung FILLED: 9 sh at 594.9699 = 5,366.19; position 22 sh, cost 14,699.18 of 15,000 (budget complete). Cash '
- '15,519.81. || PREVIOUS ENTRY: Nov 12, 2026 18:30 Bangkok - DECIDED (Salee): NVDA - hold all 452 sh; decide BUY / '
- 'HOLD / SELL on Thu 19 Nov after the 18 Nov results. The proposed pre-set trim rule is not adopted. || PREVIOUS '
- 'ENTRY: Nov 12, 2026 17:30 Bangkok - ⚠️ NVDA: board met 11 Nov to discuss removing the CEO (WSJ); no outcome '
- 'reported; ~-8% pre-market. Megaspeed network: $7.5bn of chips (The Information); DOJ/FBI/Congress reported looking. '
- 'Trigger 2 has NOT fired. Proposed rule (pending Salee): on CEO removal/resignation or a formal action naming NVIDIA, '
- 'sell ~70 sh next session to ~8% of stocks; otherwise hold to the 19 Nov decision. Tonight unchanged: CAT 9 sh LIMIT '
- '601.61 / cap 607.63. || PREVIOUS ENTRY: Nov 12, 2026 07:30 Bangkok - 11 NOV CLOSE BOOKED FROM POEMS (positions 06:27 '
- 'SGT): 36 lines + SGOV tie to the cent (cost 798,568.02; MV 834,438.72). Stocks MV 779,755.84, unrealised +35,993.12 '
- '(+4.84%); NVDA 10.1% of stocks. TRUE-UPS: Frankfurt AMD purchase cost 10,921.04 (was 10,902.39 est.), realised on '
- 'the swap ~+655.85; SGOV sale 15,041.67; AMD/V/VST costs confirmed. Cash 20,886.00 after settlement (live 24,913.98 '
- 'before the 10 Nov trades settle). CAT order EXPIRED (closed 601.61) - re-set tonight: 9 sh LIMIT 601.61 / cap '
- '607.63. No line hit. 10-year 4.98% on 10 Nov - gate not active. SPY 759.81 (+1.3%), QQQ 690.38 (+2.3%); all 27 watch '
- 'closes verified. || PREVIOUS ENTRY: Nov 11, 2026 12:30 Bangkok - APPROVED (Salee): (1) RATE TRIPWIRE at a 10-year '
- "close above 5.25%; (2) VALUATION GATE at 35x forward earnings while the 10-year is at or above 5.00% - ISRG's "
- '$15,618 of room on hold; (3) NVDA tactics - hold 452 sh, no buying, hold-vs-trim on 19 Nov, four triggers; scenario '
- 'table saved on the 18 Nov row (worst case $100-110). Tonight unchanged: CAT 9 sh LIMIT 584.57 / cap 590.42. || '
- 'PREVIOUS ENTRY: Nov 11, 2026 10:00 Bangkok - OCTOBER CPI SCORED (released 10 Nov): +0.4% m/m vs +0.3% expected, core '
- '+0.3% vs +0.2%; December Fed hike ~85-88% priced; 10-year ~4.96% - rate rule stays on. TONIGHT: CAT 9 sh LIMIT '
- '584.57 / cap 590.42. || PREVIOUS ENTRY: Nov 11, 2026 10:50 Bangkok - PRICE REFRESH (03:30 UTC catch-up run): '
- 'resolved the two tickers the 00:30 run left at 9 Nov. GEV 797.04 (-3.89%, marketscreener 4:00 PM EST close; ycharts '
- '796.78 @ Nov 10 16:00 confirms; stockanalysis /history/ Nov-10 row 779.15 was a partial-session capture and was '
- 'discarded). FSLR 180.98 (-5.55%, marketscreener 4:00 PM EST close; foxbusiness intraday 180.60 @ 2:09 PM confirms). '
- 'All 63 of 63 closes now at 10 Nov. QQQ still unresolved (every quotable source stale; ycharts 674.99 -0.64% @ Nov 10 '
- '16:00 is confirmation-grade only) - qqqLast stays at 9 Nov. UST10 10-Nov print not yet released - skipped. HISTORY '
- '10-Nov row restated with the corrected GEV/FSLR closes. || PREVIOUS ENTRY: Nov 11, 2026 09:40 Bangkok - DAILY PRICE '
- 'REFRESH: 61 of 63 closes booked for 10 Nov (source: marketscreener/zonebourse dated Market-Closed quotes; '
- 'stockanalysis.com served stale caches all run). NVDA 168.89 (-5.47%), MU 725.11, AVGO 331.98 (+3.91%), RKLB 62.71 '
- '(+6.54%, verified ycharts 62.56 @ Nov 10 16:00). UNRESOLVED (left at 9 Nov): FSLR 191.61, GEV 829.34. SPY 749.92 '
- '(-0.37%); QQQ and UST10 had no 10 Nov print available - qqqLast and risk ust10 left at 9 Nov. || PREVIOUS ENTRY: Nov '
- '10, 2026 23:20 Bangkok - FOUR FILLS BOOKED (POEMS Orders screen): AMD swap - SOLD 22 on Frankfurt at EUR 469.95 '
- '(realised +654.72 USD est.), BOUGHT 19 on Nasdaq at 529.59; V 5 sh at 421.3999; VST 26 sh at 130.6541. AMD 74 sh '
- 'cost 23,872.96 (budget 24,000), V 23 sh cost 8,884.61 (9,000), VST 132 sh cost 18,282.55 (18,310.33) - all three '
- 'budgets complete. Cash 20,885.19 (est.; FX and commissions to true up from the 11 Nov screens). Prices still at the '
- '9 Nov close. || PREVIOUS ENTRY: Nov 10, 2026 16:30 Bangkok - TSM OCTOBER REVENUE SCORED: NT$586.89bn, a monthly '
- 'record, +59.7% y/y (+14.7% m/m). No order - TSM is above its $380 line. || PREVIOUS ENTRY: Nov 10, 2026 14:00 '
- "Bangkok - ⚠️ NVDA ESCALATED: Bloomberg reports NVIDIA's general counsel contacted Commerce about the Megaspeed probe "
- "(which later stalled) and that NVIDIA's inventory count to the US government undercounted ~50,000 chips. No formal "
- 'action against NVIDIA. Buys stay suspended; 452 sh HELD (10.6% of stocks); new trigger = any formal government '
- 'action or CEO/GC departure; hold-vs-trim decision brought forward to Thu 19 Nov after the 18 Nov results. || '
- 'PREVIOUS ENTRY: Nov 10, 2026 11:00 Bangkok - RKLB Q3 SCORED: record revenue $267.8m (+73%), backlog $3.57bn, but '
- 'Neutron first flight slipped into 2027 - Neutron watch row moved from 31 Dec 2026 to mid-2027 (placeholder); budget '
- '= cost unchanged, no order. || PREVIOUS ENTRY: Nov 10, 2026 07:42 Bangkok - DAILY PRICE REFRESH: SE 77.96 (+2.94%), '
- 'STRL 290.67 (+14.97%, sector rally - verified marketscreener + ycharts), TSEM 152.29 (+10.89%, Q3 earnings - '
- 'verified webull + marketscreener) booked for 9 Nov; board now fully at 9 Nov closes. || PREVIOUS ENTRY: Nov 10, 2026 '
- '09:30 Bangkok - 9 NOV CLOSE BOOKED FROM POEMS (positions 07:38 SGT): 36 USD lines + SGOV tie; total cost 793,865.54 '
- 'ties. ⚠️ AMD 22 sh BOUGHT ON FRANKFURT by mistake (EUR 439.70; USD 10,902.39 at POEMS rate) - merged into AMD (77 '
- 'sh, cost 24,691.61, $691.61 over budget); swap to Nasdaq planned 10 Nov. SGOV sold 150 at 100.495; 544 left. TSM '
- 'rejected; TSM 388.62 and AVGO 319.48 closed above their lines - no orders. NVDA 178.67 (below the suspended $180 '
- 'line). Board stocks MV 760,568.42, unrealised +21,508.18 (+2.91%). Cash 24,932.95 after settlement (est.). SPY '
- '752.69 (+2.4%), QQQ 679.35 (+3.5%). Watch: 24 verified; STRL, SE, TSEM left at 6 Nov. || PREVIOUS ENTRY: Nov 9, 2026 '
- "23:55 Bangkok - CASH 20,793.35 (POEMS, before tonight's orders): SGOV first dividend 225.76 net (694 sh x $0.328581, "
- 'US tax 0% - W-8BEN working; net yield ~3.9%), ASML dividend 29.51, +7.22 late-October credit to itemise. TONIGHT: '
- 'SGOV SOLD 150 @ 100.495; AMD 22 sh FILLED ON FRANKFURT (FWB) at EUR 439.70 by mistake - to be booked at the POEMS '
- 'USD cost and swapped to Nasdaq on Tue 10 Nov 22:00-23:30 Bangkok; TSM order REJECTED (likely buying power) - not '
- 're-entered (391, above the $380 line). || PREVIOUS ENTRY: Nov 9, 2026 13:00 Bangkok - APPROVED (Salee): RKLB budget '
- 'set to cost $1,942.58 - no new money (loss-making, rate rule; revisit after Neutron flies and the 10-year is below '
- '5.00%). FSLR added as a 10 Dec candidate for up to $10,000 of the February money - no budget until it ranks in. '
- 'Funding gap unchanged at ~$56,600. || PREVIOUS ENTRY: Nov 9, 2026 10:30 Bangkok - ⚠️ NVDA BUYS SUSPENDED (pending '
- "Salee): Jensen Huang's 8 Nov letter admitted a personal relationship with a person reportedly linked to a foreign "
- "intelligence effort; NVIDIA's board opened an independent investigation (independent directors + outside counsel), "
- 'says it has no reason to believe secrets or national security were compromised, and keeps Huang as CEO. The $180 '
- 'line (rung 2) and the 18 Nov rung 3 ($3,000) are on hold until the results and a first board update. 452 shares HELD '
- '- no sale. Tonight unchanged: AMD 22 sh at 449.04, TSM 25 sh at 375.44, sell 150 SGOV at 100.49. || PREVIOUS ENTRY: '
- 'Nov 8, 2026 10:30 Bangkok - BOARD DECISION (Salee): (1) KLAC and LRCX tranche 3 (19 Nov, $10,889) DEFERRED to the 10 '
- 'Dec review; (2) new money CUT to $100,000 and MOVED to February 2027 (was $150,000 in January); the $39,269.96 '
- 'February top-up is cancelled - funding target now $910,730.04, not $1,000,000. Crash reserve unchanged at $50,000, '
- 'held in SGOV from existing cash. FUNDING GATE to February: only ~$4,700 spendable above the reserve after the 9-11 '
- 'Nov buys (NVDA $3,000 on 18 Nov fits); any other line that fires waits for the February money. 10 Dec must close a '
- '~$56,600 gap between approved room and money. Week of 9 Nov unchanged. || PREVIOUS ENTRY: Nov 7, 2026 14:30 Bangkok '
- "- SCHEDULE CLEANED at Salee's instruction: 13 rows dated before Mon 9 Nov archived to "
- 'src/schedule_archive_2026-11-09.json; the APP $320 trigger kept as a standing row. BUY/SELL PLAN ROLLED to 9 - 30 '
- 'Nov: week 1 unchanged (AMD + TSM + SGOV sale Mon; AVGO + V + VST Tue; CAT Wed); NVDA DECIDE $3,000 on 18 Nov '
- 'results; ⚠️ KLAC/LRCX tranche 3 (19 Nov, $10,889) flagged - cannot be funded without breaching the $50,000 SGOV '
- 'reserve; decide by 16 Nov (new money or defer to 10 Dec). Thanksgiving 26 Nov added. || PREVIOUS ENTRY: Nov 7, 2026 '
- '09:40 Bangkok - 6 NOV CLOSE BOOKED FROM POEMS (positions 07:30 SGT): all 36 lines + SGOV tie to the cent (cost '
- '798,074.91; MV 787,577.23; stocks unrealised -10,320.68, -1.42%). NO FILLS: the 6 Nov AMD (24 sh at 404.40) and TSM '
- '(26 sh at 353.10) Day LIMIT orders EXPIRED - closes 449.04 / 375.44. All three lines still met on the close, so MON '
- '9 NOV after 22:00: AMD 22 sh LIMIT 449.04 / cap 453.53 + TSM 25 sh LIMIT 375.44 / cap 379.19 (~$19,300 from cash) '
- 'and SELL 150 SGOV at 100.49. TUE: AVGO 16 sh (if Mon close <= 310) + V + VST (results PASSED: adj. EBITDA +50%, '
- 'guide midpoint raised). WED: CAT. SPY 735.36 (+0.3%), QQQ 656.29 (+1.4%). || PREVIOUS ENTRY: Nov 6, 2026 11:30 '
- 'Bangkok - 5 NOV CLOSE BOOKED FROM POEMS (positions 10:49 SGT): all 36 lines + SGOV tie to the cent (cost 798,074.91; '
- 'MV 768,116.69; stocks unrealised -29,753.46, -4.09%). NO FILLS on 5 Nov: AMD (-13% intraday, closed -17.3% at '
- "404.40) and APP (+31% to 356.10) orders were not placed on Claude's advice. Lines hit on the close: TSM $380 "
- '(353.10) and AVGO $310 (291.53). TONIGHT Fri 6 Nov after 22:00: AMD 24 sh LIMIT 404.40 / cap 408.44; TSM 26 sh LIMIT '
- '353.10 / cap 356.63 - ~$18,930 from cash 20,531. APP deferred (new line $320). AVGO Mon 9 Nov after a ~160 sh SGOV '
- 'sale. Watch closes: 26 verified; TSEM left at 4 Nov. SPY 733.00 (-4.4%), QQQ 647.05 (-6.5%). || PREVIOUS ENTRY: Nov '
- "5, 2026 11:20 Bangkok - MU OVERRIDE WITHDRAWN by Salee on Claude's advice: no MU buy tonight; the $800 line is "
- 'removed and the $3,418.42 waits for the 17 Dec volume test. Tonight: AMD 20 sh LIMIT 488.78 / cap 493.67 and APP 32 '
- 'sh LIMIT 271.75 / cap 274.47 only. || PREVIOUS ENTRY: Nov 5, 2026 10:10 Bangkok - MU $800 OVERRIDE LINE HIT (4 Nov '
- "close 795.23): BUY 4 sh LIMIT 795.23 / cap 803.18 tonight (Salee's 25 Oct override; TrendForce contract prices still "
- "rising, hold-back rule not triggered). Tonight's three buys: AMD 20 sh, APP 32 sh, MU 4 sh. || PREVIOUS ENTRY: Nov "
- "5, 2026 09:30 Bangkok - ALL 63 PRICES AT THE WED 4 NOV CLOSE. 36 HOLDINGS from Salee's POEMS positions screen 09:47 "
- 'SGT: all lines + SGOV match quantity and cost to the cent (798,074.91); MV 831,356.50 incl. SGOV ties; stocks MV '
- '761,644.21, unrealised +33486.36 (+4.60%). 27 WATCH NAMES from financialcontent.com official/4:00 PM closes '
- '(marketbeat/stockanalysis/fool caches stale), each tied to the prior close or a second source; the 8 names left at 2 '
- 'Nov yesterday now carry their verified 3 Nov->4 Nov chain. SPY 766.81 (+1.65%), QQQ 691.95 (+0.97%). Semis/infra '
- 'fell while the index rose: 6%+ moves verified - MSFT +6.7%, AMZN +6.1%, MRVL -7.1%, TER -6.8%, MU -7.0%, SNDK -7.9%, '
- 'STX -8.1%, APH -6.2%, LITE -7.9%, CRDO -9.5%, CGNX -8.7%, LHX -6.9%, KTOS -12.3%, AVAV -8.3%, DDOG -12.7%, ISRG '
- '+9.4%, BWXT -7.8%, GEV -9.3%, ETN -9.9%, VRT -12.9%, PWR -11.7%, CEG -6.7%, VST -13.8%, APP +10.7%, SE +6.3%, STRL '
- '-21.5%. ⚠️ AMD ORDER NOT PLACED on 4 Nov (Salee); AMD closed 488.78, above the $470 line - re-set tonight: BUY 20 sh '
- 'LIMIT 488.78 / cap 493.67. APP RESULTS PASSED ALL FOUR TESTS (rev $2.18bn, adj. EBITDA margin 84%, Q4 guide '
- '$2.37-2.40bn vs $2.25bn, no inquiry): BUY 32 sh LIMIT 271.75 / cap 274.47 tonight; +16% after hours so it may not '
- 'fill - no chasing. || PREVIOUS ENTRY: Nov 4, 2026 15:00 Bangkok - PRICES AT THE TUE 3 NOV CLOSE (the 00:30 UTC price '
- "job did not write them). 36 HOLDINGS from Salee's POEMS positions screen 15:23 SGT: all lines + SGOV match quantity "
- 'and cost to the cent (798,074.91); MV 840,540.75 incl. SGOV ties; stocks MV 770,835.39, unrealised +42677.54 '
- '(+5.86%). 19 WATCH NAMES verified (marketbeat 4:00 PM headers with implied prev close = stored 2 Nov close; '
- 'stockscan/financialcontent official closes for NYSE): SNDK, SNPS, MPWR, STX, GLW, COHR, FN, SPCX, KTOS, ORCL, HOOD, '
- 'CRWD, FTNT, BWXT, PWR, GE, NFLX, APP 245.51 (+7.3%), STRL. 8 LEFT AT THE 2 NOV CLOSE - sources disagree or '
- 'unconfirmed: ARM, DDOG, TSEM, LHX, NET, BE, SE, CIEN. SPY 754.35, QQQ 685.28. 6%+ moves verified on a second source: '
- 'MPWR +6.8%, CRDO +7.8%, FN +15.4%, GEV +6.5%, ETN +7.0%, PWR +6.1%, APP +7.3%, STRL +7.7%. AMD closed 483.90 (above '
- 'the $470 line) after a results PASS - order tonight 20 sh LIMIT 483.90 / cap 488.74. || PREVIOUS ENTRY: Nov 4, 2026 '
- '11:45 Bangkok - AMD RESULTS SCORED: test (b) PASSED (data centre +97%, non-GAAP GM 56%, Q4 guide ~$17bn vs '
- '$16.23bn). Order tonight: BUY 20 sh Day LIMIT 483.90 (3 Nov close), cap 488.74; ~+7% after hours, so it fills only '
- 'on a pullback - no chasing. No SGOV sale needed for AMD/APP; SGOV top-up decided Mon 9 Nov for the 10-11 Nov buys. '
- '|| PREVIOUS ENTRY: Nov 3, 2026 15:00 Bangkok - POEMS POSITIONS RECONCILED (screen 15:48 SGT, after the Mon 2 Nov '
- 'close): 36 lines + SGOV match quantity and cost to the cent (798,074.91); MV 823,848.13 incl. SGOV ties. CAT 613.62, '
- 'VST 134.61, VRT 224.24, GEV 862.25 set to the POEMS marks; SGOV 100.43. Stocks MV 754,149.71, unrealised +25,991.86 '
- '(+3.57%). ⚠️ AMD CLOSED 466.84 - BELOW THE $470 STANDING LINE (results tonight after the close). || PREVIOUS ENTRY: '
- 'Nov 3, 2026 (00:30 UTC job) - DAILY PRICE REFRESH: all 63 prices at the Mon 2026-11-02 close. Primary source: '
- "marketbeat.com 'Closing price 4:00 PM Eastern' headers last-updated 11/2/2026 (stockanalysis.com and Google Finance "
- "caches again frozen pre-close); 14 NYSE names written from the financialcontent.com 'Official Closing Price' 7:00 PM "
- 'print instead of the marketbeat 3:59 PM print (largest gaps: ORCL 119.22 vs 118.79, ETN 366.07 vs 365.18, FN 314.70 '
- 'vs 313.86, CIEN 284.34 vs 284.09); 7 NYSE names (COHR BWXT GEV VRT PWR VST CAT) kept at the marketbeat 3:59 PM print '
- "- every official-close mirror stale - so they may sit cents off the auction close. Every ticker's implied previous "
- 'close ties to the stored 30 Oct close to the cent. Semis/optics follow-through sell-off: 6%+ movers verified on a '
- "second source and allowed: LITE -18.59% and MRVL -12.72% (deal arb; ycharts 'Nov 02, 16:00' stamps), ALAB -11.22%, "
- 'CIEN -11.34%, ORCL -8.76% (financialcontent official; gurufocus headline -8.8%), DDOG -8.15%, STX -7.93%, AMD '
- '-7.58%, CRDO -7.27%, FTNT -7.25%, TSEM -6.70%, SNDK -6.59% (marketscreener 2026-11-02 exact). Counter-moves: GE '
- '+4.63%, FSLR +4.39%, V +2.88% (new 52w high 425.51), AMZN +2.20%. PLTR reported after the close; its -2.84% '
- 'after-hours print is NOT on the board (close 178.34). SPY 752.10 -0.48% and QQQ 681.09 -1.36% (11-02); spyHigh '
- 'unchanged 779.09 (SPY -3.5% off the high; crash-reserve trigger 662.23). risk_series spy 11-02 added; ust10 11-02 '
- "skipped (mortgagenewsdaily's newest dated row is mislabeled 'Nov 01', ycharts ends 10-30). HISTORY 11-02 row added. "
- 'pe/ps/fpe/peg/M3-pfcf rescaled with price. Every number from a tool call this session. || PREVIOUS ENTRY: Nov 2, '
- '2026 - MARVELL-LUMENTUM DEAL ANNOUNCED: all-stock, 4.500 MRVL per LITE (implied $1,132, +23.9% vs 28 Oct), EV '
- '~$115bn, close 1H 2028. Scored on the 5 Nov row: HOLD both, no order; combined ~147.25 MRVL sh after close. || '
- 'PREVIOUS ENTRY: Nov 2, 2026 - Macro WATCH rows added: US midterm elections (Tue 3 Nov) and October jobs report (Fri '
- '6 Nov, 20:30 Bangkok). No order. || PREVIOUS ENTRY: Nov 2, 2026 - Earnings rows added for three more holdings this '
- 'week (Earnings Whispers calendar): ETN Tue 3 Nov before the open, ALAB Tue 3 Nov after the close, LITE Thu 5 Nov '
- "after the close. All WATCH - no order. || PREVIOUS ENTRY: Nov 1, 2026 - SCHEDULE CLEANED at Salee's instruction: 103 "
- 'live rows kept (Nov 2026 onward + standing rules; stale FN, LHX and 19 Nov GOOGL notes also removed), 139 history '
- 'rows archived to src/schedule_archive_2026-11-01.json. BUY/SELL PLAN rolled to 1-15 Nov: firm V $2,093 (10 Nov) and '
- 'CAT $5,000 (11 Nov); decide APP $9,000 (5 Nov) and VST $3,433 (10 Nov); APP and VST results dates confirmed. || '
- "PREVIOUS ENTRY: Nov 1, 2026 - Earnings rows added for this week's holdings: PLTR Mon 2 Nov, AMD and ANET Tue 3 Nov "
- '(all after the close, company-confirmed); AAPL 2 Nov now confirmed by Apple IR. All WATCH - no order on the prints; '
- 'buy routes stay the standing lines (PLTR $150, AMD $470). || PREVIOUS ENTRY: Nov 1, 2026 - META 10 Dec row: S&P '
- 'outlook cut to negative (AA- affirmed, 30 Oct; FOCF -$71bn forecast for 2027, leverage 1.1x vs 1.0x threshold) '
- 'recorded. No price, budget or order changed. || PREVIOUS ENTRY: Oct 31, 2026 09:50 Bangkok - ALL 63 PRICES AT THE '
- 'FRI 30 OCT CLOSE (the 00:30 UTC price job did not run - scheduled jobs on claude-fable-5 are failing on the usage '
- "limit). 36 HOLDINGS from Salee's POEMS positions screen 09:36 SGT: all 36 lines + SGOV match quantity and cost to "
- 'the cent incl. the 30 Oct CAT fill (cost 798,074.91; MV 843,570.71; CAT commission estimate 9.49 confirmed). 27 '
- "WATCH NAMES from marketbeat 10/30 4:00 PM closing headers / fool.com 'last close 2026-10-30' / massive.com / "
- 'financialcontent, each cross-checked against the prior close or a second source. SPY 755.72 (-1.77%), QQQ 690.49 '
- '(-3.47%). Semiconductor sell-off day (Intel -29% on a weak Q4 guide; SOX about -7 to -9%): 6%+ moves verified - '
- 'holdings AMD -10.9%, MRVL -10.0%, ALAB -10.9%, CRDO -8.7%, LITE -8.6%, ANET -8.3%, AMAT -7.5%, TER -7.4%, RKLB '
- '-7.4%, ASML -6.6%, AVAV -6.5%, PLTR -6.3%, LRCX -6.0%, ETN -6.0%; watch SNDK -13.5%, DDOG -11.5%, TSEM -11.4%, COHR '
- '-11.2%, APP -10.4%, ARM -10.0%, NET -9.5%, BE -8.6%, STX -8.0%, CIEN -8.0%, STRL -7.4%, HOOD -7.2%, SPCX -6.4%, ORCL '
- '-6.3%, FN -6.3%. Ratios rescaled with price. HISTORY 10-30 row added (stocks MV 773,664.08, unrealised +45,506.23 / '
- '+6.25%). Note: 8 NYSE watch closes of 29 Oct (COHR FN LHX ORCL NET PWR GE CIEN) were 3:59 PM prints, cents off the '
- "official close - superseded by today's verified closes. AMZN/CAT/LHX Q3 fundamentals still pending (earnings job "
- 'failed). || PREVIOUS ENTRY: Oct 30, 2026 21:45 Bangkok - CAT BOOKED: 7 sh at 633.5642 = 4,444.44 (rung 2 of 3; Power '
- 'Generation test passed). Position 13 sh, cost 9,332.99; cash 20,530.86. October MONTHLY and investedEver updated '
- 'with the fill. || PREVIOUS ENTRY: Oct 30, 2026 11:10 Bangkok - POEMS POSITIONS RECONCILED (screen 10:56 SGT, after '
- 'the 29 Oct close): 36 lines + SGOV match to the cent; market value 874,941.02 ties. Nine NYSE marks set from POEMS '
- '(APH 82.08, ANET 184.22, CAT 647.39, ETN 393.72, TSM 431.81, VRT 245.92, V 410.54, VST 140.95; SGOV 100.71) - all '
- "within 0.2% of the job's closes; ratios rescaled. No fill tonight yet: CAT 7 sh LIMIT 647.39 (cap 653.86) is the "
- 'only order. || PREVIOUS ENTRY: Oct 30, 2026 08:40 Bangkok - AMZN Q3 read recorded (AWS +39%, backlog $578bn, TTM FCF '
- '-$42.4bn, no order - over budget); CAT order set: 7 sh Day LIMIT 647.22, cap 653.69. || PREVIOUS ENTRY: Oct 30, 2026 '
- '(00:30 UTC job) - DAILY PRICE REFRESH: all 63 prices set to the Thu 2026-10-29 close. Primary source this run: '
- "marketbeat.com dated daily-price tables / closing-price headers (pages updated 10/29, 'Closing price 4:00 PM "
- "Eastern' stamps), every ticker's prior close cross-checked against the stored board value; stockanalysis.com and "
- 'Google Finance caches still frozen pre-close (5th night); GEV from the fool.com quote page previous-close field '
- '(887.85; method validated to the cent on GOOGL and MSFT this run). Big earnings-reaction day: 6%-movers verified + '
- 'allowed: GOOGL 283.82 -12.64% (Q3 miss/FCF, fool prev-close field exact + news), FTNT 139.10 -20.09% '
- '(service-revenue forecast cut; 247wallst sidebar exact), MRVL 218.34 -13.24% (Lumentum deal talks; fool widget '
- '-13.24% exact), CAT 647.22 -9.49% (sales outlook; 247wallst sidebar 647.39), LHX 279.12 +7.10% (Q3 beat + raised FY '
- 'guide; investing.com 278.65 +6.92%), AVAV 134.88 +7.09% (gurufocus +7.1%). SPY 769.36 and QQQ 715.34 (10-29, '
- 'marketbeat closing headers; prev closes match board); spyHigh unchanged 779.09. risk_series spy 10-29 added; ust10 '
- '10-29 skipped (ycharts H15 only through 10-27; yahoo close bar printed 4.99 for reference). HISTORY 10-29 row added '
- '(first row including the 29 Oct MSFT buy, 126 sh). Note: TSEM 187.92 written from a dated 10/29 marketbeat header '
- 'whose implied 10/28 prev close (193.52) could not be cross-checked - flagged for the next run. Every number from a '
- 'tool call this session. || PREVIOUS ENTRY: Oct 29, 2026 23:00 Bangkok - GOOGL 10 Dec test (1) CLARIFIED: Q3 ATM '
- 'share sales of $12.4bn were draws under the $40bn ATM announced in the June $84.75bn raise, so they do not fail the '
- 'test; a new or upsized programme would. No order, budget or price changed. || PREVIOUS ENTRY: Oct 29, 2026 22:30 '
- 'Bangkok - MSFT BOOKED 9 sh at 525.4031 = 4,738.75; cash 24,975.30. FULL POEMS RECONCILIATION: 36 lines + SGOV match '
- 'to the cent; cash corrected by 0.10 (CRWD 19 Oct fee true-up); SGOV sale trued up to 10,047.25 (realised -27.25); '
- 'October MONTHLY rebuilt (6 buys + 1 sale had been missing); October dividends 251.31 itemised. Prices: 54 names at '
- 'the 28 Oct close, 9 at 27 Oct - the 29 Oct close is written by the next morning run. || PREVIOUS ENTRY: Oct 29, 2026 '
- '(03:30 UTC job) - DAILY PRICE REFRESH, 2nd pass: 11 more of the 15 stragglers resolved. Wed 2026-10-28 close written '
- 'for ETN 392.88, GEV 878.03, PWR 606.89, COHR 239.59, SPCX 145.23, CIEN 363.21 (54 of 63 now at 10-28); verified Tue '
- '10-27 close written for ARM 226.60, GE 297.66, MPWR 1211.89, LHX 259.40, TSEM 189.08 (marketbeat prev-close fields / '
- 'heygotrade dated closes; every prev-close cross-checked against the stored prior close to the cent). Sources: '
- '247wallst Oct-28 article sidebars validated to the cent on MSFT/ORCL/NVDA/MU/GOOGL/VRT; heygotrade dated close '
- 'pages; stockanalysis/Google Finance/tipranks/marketscreener caches still frozen pre-close (4th night). 6%-movers vs '
- 'last build, verified + allowed: PWR +7.6% (sidebar + 247wallst company page, prev 578.8x both), COHR +8.2% (sidebar; '
- 'prev 235.79 = heygotrade 10-27 close exact), CIEN +8.1% (heygotrade 10-28 close 363.21 +3.43%; gurufocus +3.4% same '
- 'evening). Unresolved, left at their verified 10-27 close: CDNS 343.08, CRDO 167.43, AVAV 126.73, CEG 258.98 '
- '(heygotrade 10-27 closes match the board to the cent; no readable 10-28 close). SPY 772.31 10-28 (marketchameleon '
- 'dated close; SSGA official 10-27 769.66 added to risk_series with ycharts ust10 4.99 10-27; ust10 10-28 skipped - '
- 'named sources not yet updated, fool.com wrap printed 5.02 at close for reference). HISTORY 10-28 row mv updated in '
- 'place for the new ETN/GEV closes. || PREVIOUS ENTRY: Oct 29, 2026 (00:30 UTC job) - DAILY PRICE REFRESH: 48 of 63 '
- 'set to the Wed 2026-10-28 close (fool.com dated quote pages; stockanalysis/Google Finance/ycharts caches frozen '
- 'pre-close for a third night). 15 unresolved stay at their prior close: holdings CDNS CRDO AVAV GEV ETN CEG (10-27), '
- 'watch ARM MPWR COHR SPCX LHX PWR GE TSEM CIEN (10-26). QQQ 725.61 (10-28); SPY, spyHigh and risk_series spy/ust10 '
- 'left unchanged - no clean close readable. HISTORY row 10-28 added. 6%-movers verified: ORCL 144.54 +10.73% d/d, VRT '
- '242.94 +16.49% d/d, MU 983.23, SNDK 1404.77, STX 697.97 (247wallst sidebar matches to the cent); SNPS FN BE STRL on '
- 'dated fool closes + headline corroboration. || PREVIOUS ENTRY: Oct 29, 2026 - GOOGL TEST APPROVED (Salee): 19 Nov '
- '$18,524 tranche moved to a 10 Dec DECIDE - buy only if no further share sale AND a credible path back to positive '
- 'free cash flow; fail = budget cut to cost spent, no sale. || PREVIOUS ENTRY: Oct 29, 2026 04:45 Bangkok - RESULTS '
- 'SCORED: MSFT PASS (BUY 9 sh tonight, limit 531.01, cap 536.32); STRL FAIL (signed backlog 4.14bn < 4.33bn; budget '
- 'back to pool; half 2 cancelled); GEV thesis intact (Power orders +178%, Electrification -9% on a tough comparison); '
- 'VRT partial disclosure; GOOGL Q3 cloud doubled but FCF -9.1bn + June 84.75bn equity raise - 19 Nov tranche pending '
- 'Salee. Fed held 3.75-4.00% (10-2, Cook and Hammack for a hike). SGOV 4 Nov sale no longer needed. || PREVIOUS ENTRY: '
- 'Oct 28, 2026 - SGOV SLICE 1 BOOKED: SELL 100 at 100.6901 = 10,047.46 net (POEMS 1187938, 22:29 Bangkok). Cash '
- '29,714.36; SGOV 694 sh parked (cost 69,917.06). || PREVIOUS ENTRY: Oct 28, 2026 13:16 Bangkok - PRICES OF THE 36 '
- 'HOLDINGS SET TO THE TUE 2026-10-27 CLOSE FROM SALEE\'S POEMS POSITIONS SCREEN (US market closed; POEMS "Current '
- 'Price" column; SGOV mark 100.68). Reason: every web source reachable from the sandbox served pre-close cached pages '
- 'for Oct 27 through both scheduled runs (00:30 and 03:30 UTC) and manual checks at 03:30-04:50 UTC, so 0 of 63 could '
- 'be written by the job. The 27 watch names (no position) stay at the 26 Oct close until the next successful run. '
- 'Moves of 6%+ vs 26 Oct: CDNS +6.5%, ALAB +10.5%, CRDO +10.8%, RKLB +8.3% - consistent with the reported 27 Oct '
- 'session (AMD +5.5%, AVGO +4%, MU +2.8%, chips rally). Positions and cost on the same screen reconcile to the board '
- 'to the cent on all 36 lines (641,827.76 NASD + 247,167.89 NYSE incl. SGOV = 888,995.64). pe/ps/fpe/peg/pfcf rescaled '
- 'with price per the 26 Oct rule. || PREVIOUS ENTRY: Oct 28, 2026 (runs 00:30 + 03:30 UTC) - DAILY PRICE REFRESH: BOTH '
- 'overnight passes could not resolve the Tue 2026-10-27 close for any ticker. 03:30 pass sampled 14 stockanalysis.com '
- 'quote/history pages: every capture predated the 4:00 PM close (freshest stamps 10:05-11:25 AM EDT Oct 27; some '
- 'caches as old as May 2025), and Google Finance (Sep 24/25 caches), marketscreener (Sep 4) and ycharts (Oct 26 18:04 '
- 'EDT) were equally stale. Per the leave-unchanged rule nothing was written: all 63 prices, mcaps, P/E block, SPY/QQQ '
- 'and pxd stay at the Mon 2026-10-26 close (CGNX still 2026-10-23); no HISTORY row; risk_series ust10/spy 10-27 '
- 'skipped (sources unreadable; ust10 2026-10-26 = 5.00 was already added by the 00:30 pass). Oct-26 baseline '
- 'cross-checked against 9 history tables - all matched. Every number checked came from a tool call this session; the '
- 'next scheduled pass retries.')
+ASOF = ('Nov 15, 2026 21:30 Bangkok - 13 NOV CLOSE BOOKED FROM POEMS (positions 21:07 SGT): 36 lines + SGOV tie to the cent '
+ '(cost 803,934.21; MV 824,227.04). Stocks MV 769,522.40, unrealised +20,393.49. ⚠️ CASH: Frankfurt sale proceeds are '
+ 'held in EUR 10,293.18, not USD - board cash 15,289.09 (USD 3,942.92 + EUR at 1.1023); realised on the swap re-booked '
+ '+571.30. CAT commission confirmed. 10-year 5.15% (13 Nov) - VALUATION GATE ACTIVE; tripwire 5.25% is 0.10 away. No '
+ 'price line hit (TSM 398.73, AVGO 347.01, PLTR 167.99, APP 409.10; NVDA 162.85, line suspended). SPY 754.37, QQQ '
+ '679.89; 27 watch closes verified. || PREVIOUS ENTRY: Nov 15, 2026 18:05 Bangkok - SPCX 10 Dec row: Starship upper '
+ 'stage caught from orbit for the first time (14 Nov). No order. || PREVIOUS ENTRY: Nov 15, 2026 14:49 Bangkok - NEW '
+ "(Salee): Portfolio tab 'Performance by year' (2025 from 15 Jul, 2026 so far, since start, since the first daily "
+ 'value 28 Jul 2026; a new row each January; 31 Dec 2025 value is an ESTIMATE until the POEMS statement arrives). '
+ 'Vision tab: market value vs the 2x goal ($2.0M by 2035 on $1.0M) with year-end milestones. || PREVIOUS ENTRY: Nov '
+ "15, 2026 13:37 Bangkok - NVDA row: Musk backs a petition to reinstate Huang; Kalshi 9% odds of return; 'handshake "
+ "deals' claim unverified. No order change. || PREVIOUS ENTRY: Nov 14, 2026 10:37 Bangkok - ONE LIST, TWO VIEWS (Salee "
+ "approved): 'Next 30 Days' tab now rolls forward by itself every day (today to today + 30); Schedule tab shows later "
+ 'items plus standing rules. Plan rows merged into the Schedule list; US market holidays to Feb 2027 added; NVDA '
+ 'results row restored. No rule, budget or number changed. || PREVIOUS ENTRY: Nov 14, 2026 09:20 Bangkok - PLANS '
+ 'ROLLED (Salee): Buy/Sell plan now 16 - 30 Nov (no scheduled buys; NVDA decision after the 17 Nov results; PANW '
+ 'results 18 Nov; FOMC minutes, PCE). Schedule now from 30 Nov onward - 17 earlier rows archived; added MRVL results 1 '
+ 'Dec, FX update 1 Dec, jobs report 4 Dec, NVDA governance DECIDE 10 Dec. || PREVIOUS ENTRY: Nov 13, 2026 18:55 '
+ 'Bangkok - AMAT Q4 FY2026 SCORED: revenue $10.41bn (+53%), non-GAAP EPS $4.16 (+92%), Q1 guide $11.1bn / EPS $4.35; '
+ "China 25% of revenue. Hold, no order. Notes tab: new 'Rate gates' card (why 35x and 5.25%). || PREVIOUS ENTRY: Nov "
+ '13, 2026 11:05 Bangkok - DAILY PRICE REFRESH (03:30 UTC pass): 60 remaining closes + SPY/QQQ booked for 12 Nov '
+ '(board now 63 of 63 at the 12 Nov close). Sources: per-ticker rotation of marketscreener mirrors with dated '
+ 'Market-Closed stamps and 5-day tables (MSFT 523.00, AMZN 267.44, GOOGL 298.70, MPWR 1447.40, ASML 1497.12, MU '
+ '798.44, ARM 199.78, PANW 322.66, SE 74.52, SPCX 139.94, SPY 757.12), stocktitan dated closes (META 623.61, SNPS, '
+ 'SNDK, APH, COHR, CRDO, FSLR, RKLB, AVAV, DDOG, V, CRWD, FTNT, NET, BWXT, GEV, ETN, VRT, PWR, BE, CEG, VST, CAT, '
+ 'STRL), fool.com dated last-close fields calibrated against MPWR/SE/KTOS (LRCX, PLTR, GLW, TSM, ANET, ALAB, ORCL, '
+ 'HOOD, CGNX, NFLX, APP, AAPL, MRVL, CDNS, ISRG, LHX, AMAT, TSEM, FN, STX, CIEN), foxbusiness 4:00 PM stamps (KLAC '
+ '157.30, LITE 624.65, QQQ 688.17), google finance (TER 263.75), heygotrade dated closes (KTOS 34.75, AAPL confirm). '
+ 'Every ticker validated by its prior-day value tying the stored 11 Nov close. Largest moves: KTOS -5.29%, ANET '
+ '+5.06%, SNDK -4.11%, FN -4.11% (all under the 6% gate). SPY 757.12 (-0.35%), QQQ 688.17 (-0.32%); spyHigh unchanged '
+ '779.09. UST10: 12 Nov close NOT YET PUBLISHED (FRED/MND end 10-11 Nov; CNBC headline says back above 5% intraday) - '
+ "risk_series ust10 SKIPPED for 11 and 12 Nov (11 Nov was Veterans Day, bond market closed; MND's thin 4.985 row not "
+ 'trusted) - the valuation-gate check still PENDING a published 12 Nov close. HISTORY 11-12 row added. '
+ 'pe/ps/fpe/peg/M3-pfcf rescaled with price. Every number from a tool call this session. || PREVIOUS ENTRY: Nov 13, '
+ '2026 07:50 Bangkok - DAILY PRICE REFRESH (00:30 UTC pass, PARTIAL - 3 of 63): NVDA 166.19 (-4.34%), AMD 585.30 '
+ '(+5.86%), AVGO 364.36 (+5.54%) booked for 12 Nov from post-close articles (fool.com 4:58 PM ET quote box + '
+ 'stocktitan close log; both tie to the 11 Nov closes to the cent). All quote sources (stockanalysis, Google Finance, '
+ 'marketscreener, ycharts) served stale caches tonight (Nov 6-9 or intraday 12 Nov) - remaining 60 tickers, SPY/QQQ '
+ 'and the 10-year LEFT at 11 Nov values for the 03:30 pass. 10-year 12 Nov close UNRESOLVED (valuation-gate check '
+ 'pending). || PREVIOUS ENTRY: Nov 12, 2026 23:30 Bangkok - ⚠️ NVDA TRIGGER 2 FIRED: Jensen Huang resigned as CEO and '
+ 'director; CFO Colette Kress interim CEO; Harvey Jones Chair. NVDA ~165 (-5%) at 13:45 New York after opening ~-13%. '
+ "Results now Tue 17 Nov US (04:20 Wed 18 Nov Bangkok). No formal government action. Salee's decision stands: hold 452 "
+ 'sh, no order, decide after the results. ⚠️ 10-year ~5.09-5.11% intraday - if it CLOSES at or above 5.00% the '
+ 'valuation gate turns ACTIVE (tripwire 5.25%). || PREVIOUS ENTRY: Nov 12, 2026 22:30 Bangkok - CAT final rung FILLED: '
+ '9 sh at 594.9699 = 5,366.19; position 22 sh, cost 14,699.18 of 15,000 (budget complete). Cash 15,519.81. || PREVIOUS '
+ 'ENTRY: Nov 12, 2026 18:30 Bangkok - DECIDED (Salee): NVDA - hold all 452 sh; decide BUY / HOLD / SELL on Thu 19 Nov '
+ 'after the 18 Nov results. The proposed pre-set trim rule is not adopted. || PREVIOUS ENTRY: Nov 12, 2026 17:30 '
+ 'Bangkok - ⚠️ NVDA: board met 11 Nov to discuss removing the CEO (WSJ); no outcome reported; ~-8% pre-market. '
+ 'Megaspeed network: $7.5bn of chips (The Information); DOJ/FBI/Congress reported looking. Trigger 2 has NOT fired. '
+ 'Proposed rule (pending Salee): on CEO removal/resignation or a formal action naming NVIDIA, sell ~70 sh next session '
+ 'to ~8% of stocks; otherwise hold to the 19 Nov decision. Tonight unchanged: CAT 9 sh LIMIT 601.61 / cap 607.63. || '
+ 'PREVIOUS ENTRY: Nov 12, 2026 07:30 Bangkok - 11 NOV CLOSE BOOKED FROM POEMS (positions 06:27 SGT): 36 lines + SGOV '
+ 'tie to the cent (cost 798,568.02; MV 834,438.72). Stocks MV 779,755.84, unrealised +35,993.12 (+4.84%); NVDA 10.1% '
+ 'of stocks. TRUE-UPS: Frankfurt AMD purchase cost 10,921.04 (was 10,902.39 est.), realised on the swap ~+655.85; SGOV '
+ 'sale 15,041.67; AMD/V/VST costs confirmed. Cash 20,886.00 after settlement (live 24,913.98 before the 10 Nov trades '
+ 'settle). CAT order EXPIRED (closed 601.61) - re-set tonight: 9 sh LIMIT 601.61 / cap 607.63. No line hit. 10-year '
+ '4.98% on 10 Nov - gate not active. SPY 759.81 (+1.3%), QQQ 690.38 (+2.3%); all 27 watch closes verified. || PREVIOUS '
+ 'ENTRY: Nov 11, 2026 12:30 Bangkok - APPROVED (Salee): (1) RATE TRIPWIRE at a 10-year close above 5.25%; (2) '
+ "VALUATION GATE at 35x forward earnings while the 10-year is at or above 5.00% - ISRG's $15,618 of room on hold; (3) "
+ 'NVDA tactics - hold 452 sh, no buying, hold-vs-trim on 19 Nov, four triggers; scenario table saved on the 18 Nov row '
+ '(worst case $100-110). Tonight unchanged: CAT 9 sh LIMIT 584.57 / cap 590.42. || PREVIOUS ENTRY: Nov 11, 2026 10:00 '
+ 'Bangkok - OCTOBER CPI SCORED (released 10 Nov): +0.4% m/m vs +0.3% expected, core +0.3% vs +0.2%; December Fed hike '
+ '~85-88% priced; 10-year ~4.96% - rate rule stays on. TONIGHT: CAT 9 sh LIMIT 584.57 / cap 590.42. || PREVIOUS ENTRY: '
+ 'Nov 11, 2026 10:50 Bangkok - PRICE REFRESH (03:30 UTC catch-up run): resolved the two tickers the 00:30 run left at '
+ '9 Nov. GEV 797.04 (-3.89%, marketscreener 4:00 PM EST close; ycharts 796.78 @ Nov 10 16:00 confirms; stockanalysis '
+ '/history/ Nov-10 row 779.15 was a partial-session capture and was discarded). FSLR 180.98 (-5.55%, marketscreener '
+ '4:00 PM EST close; foxbusiness intraday 180.60 @ 2:09 PM confirms). All 63 of 63 closes now at 10 Nov. QQQ still '
+ 'unresolved (every quotable source stale; ycharts 674.99 -0.64% @ Nov 10 16:00 is confirmation-grade only) - qqqLast '
+ 'stays at 9 Nov. UST10 10-Nov print not yet released - skipped. HISTORY 10-Nov row restated with the corrected '
+ 'GEV/FSLR closes. || PREVIOUS ENTRY: Nov 11, 2026 09:40 Bangkok - DAILY PRICE REFRESH: 61 of 63 closes booked for 10 '
+ 'Nov (source: marketscreener/zonebourse dated Market-Closed quotes; stockanalysis.com served stale caches all run). '
+ 'NVDA 168.89 (-5.47%), MU 725.11, AVGO 331.98 (+3.91%), RKLB 62.71 (+6.54%, verified ycharts 62.56 @ Nov 10 16:00). '
+ 'UNRESOLVED (left at 9 Nov): FSLR 191.61, GEV 829.34. SPY 749.92 (-0.37%); QQQ and UST10 had no 10 Nov print '
+ 'available - qqqLast and risk ust10 left at 9 Nov. || PREVIOUS ENTRY: Nov 10, 2026 23:20 Bangkok - FOUR FILLS BOOKED '
+ '(POEMS Orders screen): AMD swap - SOLD 22 on Frankfurt at EUR 469.95 (realised +654.72 USD est.), BOUGHT 19 on '
+ 'Nasdaq at 529.59; V 5 sh at 421.3999; VST 26 sh at 130.6541. AMD 74 sh cost 23,872.96 (budget 24,000), V 23 sh cost '
+ '8,884.61 (9,000), VST 132 sh cost 18,282.55 (18,310.33) - all three budgets complete. Cash 20,885.19 (est.; FX and '
+ 'commissions to true up from the 11 Nov screens). Prices still at the 9 Nov close. || PREVIOUS ENTRY: Nov 10, 2026 '
+ '16:30 Bangkok - TSM OCTOBER REVENUE SCORED: NT$586.89bn, a monthly record, +59.7% y/y (+14.7% m/m). No order - TSM '
+ 'is above its $380 line. || PREVIOUS ENTRY: Nov 10, 2026 14:00 Bangkok - ⚠️ NVDA ESCALATED: Bloomberg reports '
+ "NVIDIA's general counsel contacted Commerce about the Megaspeed probe (which later stalled) and that NVIDIA's "
+ 'inventory count to the US government undercounted ~50,000 chips. No formal action against NVIDIA. Buys stay '
+ 'suspended; 452 sh HELD (10.6% of stocks); new trigger = any formal government action or CEO/GC departure; '
+ 'hold-vs-trim decision brought forward to Thu 19 Nov after the 18 Nov results. || PREVIOUS ENTRY: Nov 10, 2026 11:00 '
+ 'Bangkok - RKLB Q3 SCORED: record revenue $267.8m (+73%), backlog $3.57bn, but Neutron first flight slipped into 2027 '
+ '- Neutron watch row moved from 31 Dec 2026 to mid-2027 (placeholder); budget = cost unchanged, no order. || PREVIOUS '
+ 'ENTRY: Nov 10, 2026 07:42 Bangkok - DAILY PRICE REFRESH: SE 77.96 (+2.94%), STRL 290.67 (+14.97%, sector rally - '
+ 'verified marketscreener + ycharts), TSEM 152.29 (+10.89%, Q3 earnings - verified webull + marketscreener) booked for '
+ '9 Nov; board now fully at 9 Nov closes. || PREVIOUS ENTRY: Nov 10, 2026 09:30 Bangkok - 9 NOV CLOSE BOOKED FROM '
+ 'POEMS (positions 07:38 SGT): 36 USD lines + SGOV tie; total cost 793,865.54 ties. ⚠️ AMD 22 sh BOUGHT ON FRANKFURT '
+ 'by mistake (EUR 439.70; USD 10,902.39 at POEMS rate) - merged into AMD (77 sh, cost 24,691.61, $691.61 over budget); '
+ 'swap to Nasdaq planned 10 Nov. SGOV sold 150 at 100.495; 544 left. TSM rejected; TSM 388.62 and AVGO 319.48 closed '
+ 'above their lines - no orders. NVDA 178.67 (below the suspended $180 line). Board stocks MV 760,568.42, unrealised '
+ '+21,508.18 (+2.91%). Cash 24,932.95 after settlement (est.). SPY 752.69 (+2.4%), QQQ 679.35 (+3.5%). Watch: 24 '
+ 'verified; STRL, SE, TSEM left at 6 Nov. || PREVIOUS ENTRY: Nov 9, 2026 23:55 Bangkok - CASH 20,793.35 (POEMS, before '
+ "tonight's orders): SGOV first dividend 225.76 net (694 sh x $0.328581, US tax 0% - W-8BEN working; net yield ~3.9%), "
+ 'ASML dividend 29.51, +7.22 late-October credit to itemise. TONIGHT: SGOV SOLD 150 @ 100.495; AMD 22 sh FILLED ON '
+ 'FRANKFURT (FWB) at EUR 439.70 by mistake - to be booked at the POEMS USD cost and swapped to Nasdaq on Tue 10 Nov '
+ '22:00-23:30 Bangkok; TSM order REJECTED (likely buying power) - not re-entered (391, above the $380 line). || '
+ 'PREVIOUS ENTRY: Nov 9, 2026 13:00 Bangkok - APPROVED (Salee): RKLB budget set to cost $1,942.58 - no new money '
+ '(loss-making, rate rule; revisit after Neutron flies and the 10-year is below 5.00%). FSLR added as a 10 Dec '
+ 'candidate for up to $10,000 of the February money - no budget until it ranks in. Funding gap unchanged at ~$56,600. '
+ "|| PREVIOUS ENTRY: Nov 9, 2026 10:30 Bangkok - ⚠️ NVDA BUYS SUSPENDED (pending Salee): Jensen Huang's 8 Nov letter "
+ "admitted a personal relationship with a person reportedly linked to a foreign intelligence effort; NVIDIA's board "
+ 'opened an independent investigation (independent directors + outside counsel), says it has no reason to believe '
+ 'secrets or national security were compromised, and keeps Huang as CEO. The $180 line (rung 2) and the 18 Nov rung 3 '
+ '($3,000) are on hold until the results and a first board update. 452 shares HELD - no sale. Tonight unchanged: AMD '
+ '22 sh at 449.04, TSM 25 sh at 375.44, sell 150 SGOV at 100.49. || PREVIOUS ENTRY: Nov 8, 2026 10:30 Bangkok - BOARD '
+ 'DECISION (Salee): (1) KLAC and LRCX tranche 3 (19 Nov, $10,889) DEFERRED to the 10 Dec review; (2) new money CUT to '
+ '$100,000 and MOVED to February 2027 (was $150,000 in January); the $39,269.96 February top-up is cancelled - funding '
+ 'target now $910,730.04, not $1,000,000. Crash reserve unchanged at $50,000, held in SGOV from existing cash. FUNDING '
+ 'GATE to February: only ~$4,700 spendable above the reserve after the 9-11 Nov buys (NVDA $3,000 on 18 Nov fits); any '
+ 'other line that fires waits for the February money. 10 Dec must close a ~$56,600 gap between approved room and '
+ "money. Week of 9 Nov unchanged. || PREVIOUS ENTRY: Nov 7, 2026 14:30 Bangkok - SCHEDULE CLEANED at Salee's "
+ 'instruction: 13 rows dated before Mon 9 Nov archived to src/schedule_archive_2026-11-09.json; the APP $320 trigger '
+ 'kept as a standing row. BUY/SELL PLAN ROLLED to 9 - 30 Nov: week 1 unchanged (AMD + TSM + SGOV sale Mon; AVGO + V + '
+ 'VST Tue; CAT Wed); NVDA DECIDE $3,000 on 18 Nov results; ⚠️ KLAC/LRCX tranche 3 (19 Nov, $10,889) flagged - cannot '
+ 'be funded without breaching the $50,000 SGOV reserve; decide by 16 Nov (new money or defer to 10 Dec). Thanksgiving '
+ '26 Nov added. || PREVIOUS ENTRY: Nov 7, 2026 09:40 Bangkok - 6 NOV CLOSE BOOKED FROM POEMS (positions 07:30 SGT): '
+ 'all 36 lines + SGOV tie to the cent (cost 798,074.91; MV 787,577.23; stocks unrealised -10,320.68, -1.42%). NO '
+ 'FILLS: the 6 Nov AMD (24 sh at 404.40) and TSM (26 sh at 353.10) Day LIMIT orders EXPIRED - closes 449.04 / 375.44. '
+ 'All three lines still met on the close, so MON 9 NOV after 22:00: AMD 22 sh LIMIT 449.04 / cap 453.53 + TSM 25 sh '
+ 'LIMIT 375.44 / cap 379.19 (~$19,300 from cash) and SELL 150 SGOV at 100.49. TUE: AVGO 16 sh (if Mon close <= 310) + '
+ 'V + VST (results PASSED: adj. EBITDA +50%, guide midpoint raised). WED: CAT. SPY 735.36 (+0.3%), QQQ 656.29 (+1.4%). '
+ '|| PREVIOUS ENTRY: Nov 6, 2026 11:30 Bangkok - 5 NOV CLOSE BOOKED FROM POEMS (positions 10:49 SGT): all 36 lines + '
+ 'SGOV tie to the cent (cost 798,074.91; MV 768,116.69; stocks unrealised -29,753.46, -4.09%). NO FILLS on 5 Nov: AMD '
+ "(-13% intraday, closed -17.3% at 404.40) and APP (+31% to 356.10) orders were not placed on Claude's advice. Lines "
+ 'hit on the close: TSM $380 (353.10) and AVGO $310 (291.53). TONIGHT Fri 6 Nov after 22:00: AMD 24 sh LIMIT 404.40 / '
+ 'cap 408.44; TSM 26 sh LIMIT 353.10 / cap 356.63 - ~$18,930 from cash 20,531. APP deferred (new line $320). AVGO Mon '
+ '9 Nov after a ~160 sh SGOV sale. Watch closes: 26 verified; TSEM left at 4 Nov. SPY 733.00 (-4.4%), QQQ 647.05 '
+ "(-6.5%). || PREVIOUS ENTRY: Nov 5, 2026 11:20 Bangkok - MU OVERRIDE WITHDRAWN by Salee on Claude's advice: no MU buy "
+ 'tonight; the $800 line is removed and the $3,418.42 waits for the 17 Dec volume test. Tonight: AMD 20 sh LIMIT '
+ '488.78 / cap 493.67 and APP 32 sh LIMIT 271.75 / cap 274.47 only. || PREVIOUS ENTRY: Nov 5, 2026 10:10 Bangkok - MU '
+ "$800 OVERRIDE LINE HIT (4 Nov close 795.23): BUY 4 sh LIMIT 795.23 / cap 803.18 tonight (Salee's 25 Oct override; "
+ "TrendForce contract prices still rising, hold-back rule not triggered). Tonight's three buys: AMD 20 sh, APP 32 sh, "
+ 'MU 4 sh. || PREVIOUS ENTRY: Nov 5, 2026 09:30 Bangkok - ALL 63 PRICES AT THE WED 4 NOV CLOSE. 36 HOLDINGS from '
+ "Salee's POEMS positions screen 09:47 SGT: all lines + SGOV match quantity and cost to the cent (798,074.91); MV "
+ '831,356.50 incl. SGOV ties; stocks MV 761,644.21, unrealised +33486.36 (+4.60%). 27 WATCH NAMES from '
+ 'financialcontent.com official/4:00 PM closes (marketbeat/stockanalysis/fool caches stale), each tied to the prior '
+ 'close or a second source; the 8 names left at 2 Nov yesterday now carry their verified 3 Nov->4 Nov chain. SPY '
+ '766.81 (+1.65%), QQQ 691.95 (+0.97%). Semis/infra fell while the index rose: 6%+ moves verified - MSFT +6.7%, AMZN '
+ '+6.1%, MRVL -7.1%, TER -6.8%, MU -7.0%, SNDK -7.9%, STX -8.1%, APH -6.2%, LITE -7.9%, CRDO -9.5%, CGNX -8.7%, LHX '
+ '-6.9%, KTOS -12.3%, AVAV -8.3%, DDOG -12.7%, ISRG +9.4%, BWXT -7.8%, GEV -9.3%, ETN -9.9%, VRT -12.9%, PWR -11.7%, '
+ 'CEG -6.7%, VST -13.8%, APP +10.7%, SE +6.3%, STRL -21.5%. ⚠️ AMD ORDER NOT PLACED on 4 Nov (Salee); AMD closed '
+ '488.78, above the $470 line - re-set tonight: BUY 20 sh LIMIT 488.78 / cap 493.67. APP RESULTS PASSED ALL FOUR TESTS '
+ '(rev $2.18bn, adj. EBITDA margin 84%, Q4 guide $2.37-2.40bn vs $2.25bn, no inquiry): BUY 32 sh LIMIT 271.75 / cap '
+ '274.47 tonight; +16% after hours so it may not fill - no chasing. || PREVIOUS ENTRY: Nov 4, 2026 15:00 Bangkok - '
+ "PRICES AT THE TUE 3 NOV CLOSE (the 00:30 UTC price job did not write them). 36 HOLDINGS from Salee's POEMS positions "
+ 'screen 15:23 SGT: all lines + SGOV match quantity and cost to the cent (798,074.91); MV 840,540.75 incl. SGOV ties; '
+ 'stocks MV 770,835.39, unrealised +42677.54 (+5.86%). 19 WATCH NAMES verified (marketbeat 4:00 PM headers with '
+ 'implied prev close = stored 2 Nov close; stockscan/financialcontent official closes for NYSE): SNDK, SNPS, MPWR, '
+ 'STX, GLW, COHR, FN, SPCX, KTOS, ORCL, HOOD, CRWD, FTNT, BWXT, PWR, GE, NFLX, APP 245.51 (+7.3%), STRL. 8 LEFT AT THE '
+ '2 NOV CLOSE - sources disagree or unconfirmed: ARM, DDOG, TSEM, LHX, NET, BE, SE, CIEN. SPY 754.35, QQQ 685.28. 6%+ '
+ 'moves verified on a second source: MPWR +6.8%, CRDO +7.8%, FN +15.4%, GEV +6.5%, ETN +7.0%, PWR +6.1%, APP +7.3%, '
+ 'STRL +7.7%. AMD closed 483.90 (above the $470 line) after a results PASS - order tonight 20 sh LIMIT 483.90 / cap '
+ '488.74. || PREVIOUS ENTRY: Nov 4, 2026 11:45 Bangkok - AMD RESULTS SCORED: test (b) PASSED (data centre +97%, '
+ 'non-GAAP GM 56%, Q4 guide ~$17bn vs $16.23bn). Order tonight: BUY 20 sh Day LIMIT 483.90 (3 Nov close), cap 488.74; '
+ '~+7% after hours, so it fills only on a pullback - no chasing. No SGOV sale needed for AMD/APP; SGOV top-up decided '
+ 'Mon 9 Nov for the 10-11 Nov buys. || PREVIOUS ENTRY: Nov 3, 2026 15:00 Bangkok - POEMS POSITIONS RECONCILED (screen '
+ '15:48 SGT, after the Mon 2 Nov close): 36 lines + SGOV match quantity and cost to the cent (798,074.91); MV '
+ '823,848.13 incl. SGOV ties. CAT 613.62, VST 134.61, VRT 224.24, GEV 862.25 set to the POEMS marks; SGOV 100.43. '
+ 'Stocks MV 754,149.71, unrealised +25,991.86 (+3.57%). ⚠️ AMD CLOSED 466.84 - BELOW THE $470 STANDING LINE (results '
+ 'tonight after the close). || PREVIOUS ENTRY: Nov 3, 2026 (00:30 UTC job) - DAILY PRICE REFRESH: all 63 prices at the '
+ "Mon 2026-11-02 close. Primary source: marketbeat.com 'Closing price 4:00 PM Eastern' headers last-updated 11/2/2026 "
+ '(stockanalysis.com and Google Finance caches again frozen pre-close); 14 NYSE names written from the '
+ "financialcontent.com 'Official Closing Price' 7:00 PM print instead of the marketbeat 3:59 PM print (largest gaps: "
+ 'ORCL 119.22 vs 118.79, ETN 366.07 vs 365.18, FN 314.70 vs 313.86, CIEN 284.34 vs 284.09); 7 NYSE names (COHR BWXT '
+ 'GEV VRT PWR VST CAT) kept at the marketbeat 3:59 PM print - every official-close mirror stale - so they may sit '
+ "cents off the auction close. Every ticker's implied previous close ties to the stored 30 Oct close to the cent. "
+ 'Semis/optics follow-through sell-off: 6%+ movers verified on a second source and allowed: LITE -18.59% and MRVL '
+ "-12.72% (deal arb; ycharts 'Nov 02, 16:00' stamps), ALAB -11.22%, CIEN -11.34%, ORCL -8.76% (financialcontent "
+ 'official; gurufocus headline -8.8%), DDOG -8.15%, STX -7.93%, AMD -7.58%, CRDO -7.27%, FTNT -7.25%, TSEM -6.70%, '
+ 'SNDK -6.59% (marketscreener 2026-11-02 exact). Counter-moves: GE +4.63%, FSLR +4.39%, V +2.88% (new 52w high '
+ '425.51), AMZN +2.20%. PLTR reported after the close; its -2.84% after-hours print is NOT on the board (close '
+ '178.34). SPY 752.10 -0.48% and QQQ 681.09 -1.36% (11-02); spyHigh unchanged 779.09 (SPY -3.5% off the high; '
+ "crash-reserve trigger 662.23). risk_series spy 11-02 added; ust10 11-02 skipped (mortgagenewsdaily's newest dated "
+ "row is mislabeled 'Nov 01', ycharts ends 10-30). HISTORY 11-02 row added. pe/ps/fpe/peg/M3-pfcf rescaled with price. "
+ 'Every number from a tool call this session. || PREVIOUS ENTRY: Nov 2, 2026 - MARVELL-LUMENTUM DEAL ANNOUNCED: '
+ 'all-stock, 4.500 MRVL per LITE (implied $1,132, +23.9% vs 28 Oct), EV ~$115bn, close 1H 2028. Scored on the 5 Nov '
+ 'row: HOLD both, no order; combined ~147.25 MRVL sh after close. || PREVIOUS ENTRY: Nov 2, 2026 - Macro WATCH rows '
+ 'added: US midterm elections (Tue 3 Nov) and October jobs report (Fri 6 Nov, 20:30 Bangkok). No order. || PREVIOUS '
+ 'ENTRY: Nov 2, 2026 - Earnings rows added for three more holdings this week (Earnings Whispers calendar): ETN Tue 3 '
+ 'Nov before the open, ALAB Tue 3 Nov after the close, LITE Thu 5 Nov after the close. All WATCH - no order. || '
+ "PREVIOUS ENTRY: Nov 1, 2026 - SCHEDULE CLEANED at Salee's instruction: 103 live rows kept (Nov 2026 onward + "
+ 'standing rules; stale FN, LHX and 19 Nov GOOGL notes also removed), 139 history rows archived to '
+ 'src/schedule_archive_2026-11-01.json. BUY/SELL PLAN rolled to 1-15 Nov: firm V $2,093 (10 Nov) and CAT $5,000 (11 '
+ 'Nov); decide APP $9,000 (5 Nov) and VST $3,433 (10 Nov); APP and VST results dates confirmed. || PREVIOUS ENTRY: Nov '
+ "1, 2026 - Earnings rows added for this week's holdings: PLTR Mon 2 Nov, AMD and ANET Tue 3 Nov (all after the close, "
+ 'company-confirmed); AAPL 2 Nov now confirmed by Apple IR. All WATCH - no order on the prints; buy routes stay the '
+ 'standing lines (PLTR $150, AMD $470). || PREVIOUS ENTRY: Nov 1, 2026 - META 10 Dec row: S&P outlook cut to negative '
+ '(AA- affirmed, 30 Oct; FOCF -$71bn forecast for 2027, leverage 1.1x vs 1.0x threshold) recorded. No price, budget or '
+ 'order changed. || PREVIOUS ENTRY: Oct 31, 2026 09:50 Bangkok - ALL 63 PRICES AT THE FRI 30 OCT CLOSE (the 00:30 UTC '
+ "price job did not run - scheduled jobs on claude-fable-5 are failing on the usage limit). 36 HOLDINGS from Salee's "
+ 'POEMS positions screen 09:36 SGT: all 36 lines + SGOV match quantity and cost to the cent incl. the 30 Oct CAT fill '
+ '(cost 798,074.91; MV 843,570.71; CAT commission estimate 9.49 confirmed). 27 WATCH NAMES from marketbeat 10/30 4:00 '
+ "PM closing headers / fool.com 'last close 2026-10-30' / massive.com / financialcontent, each cross-checked against "
+ 'the prior close or a second source. SPY 755.72 (-1.77%), QQQ 690.49 (-3.47%). Semiconductor sell-off day (Intel -29% '
+ 'on a weak Q4 guide; SOX about -7 to -9%): 6%+ moves verified - holdings AMD -10.9%, MRVL -10.0%, ALAB -10.9%, CRDO '
+ '-8.7%, LITE -8.6%, ANET -8.3%, AMAT -7.5%, TER -7.4%, RKLB -7.4%, ASML -6.6%, AVAV -6.5%, PLTR -6.3%, LRCX -6.0%, '
+ 'ETN -6.0%; watch SNDK -13.5%, DDOG -11.5%, TSEM -11.4%, COHR -11.2%, APP -10.4%, ARM -10.0%, NET -9.5%, BE -8.6%, '
+ 'STX -8.0%, CIEN -8.0%, STRL -7.4%, HOOD -7.2%, SPCX -6.4%, ORCL -6.3%, FN -6.3%. Ratios rescaled with price. HISTORY '
+ '10-30 row added (stocks MV 773,664.08, unrealised +45,506.23 / +6.25%). Note: 8 NYSE watch closes of 29 Oct (COHR FN '
+ "LHX ORCL NET PWR GE CIEN) were 3:59 PM prints, cents off the official close - superseded by today's verified closes. "
+ 'AMZN/CAT/LHX Q3 fundamentals still pending (earnings job failed). || PREVIOUS ENTRY: Oct 30, 2026 21:45 Bangkok - '
+ 'CAT BOOKED: 7 sh at 633.5642 = 4,444.44 (rung 2 of 3; Power Generation test passed). Position 13 sh, cost 9,332.99; '
+ 'cash 20,530.86. October MONTHLY and investedEver updated with the fill. || PREVIOUS ENTRY: Oct 30, 2026 11:10 '
+ 'Bangkok - POEMS POSITIONS RECONCILED (screen 10:56 SGT, after the 29 Oct close): 36 lines + SGOV match to the cent; '
+ 'market value 874,941.02 ties. Nine NYSE marks set from POEMS (APH 82.08, ANET 184.22, CAT 647.39, ETN 393.72, TSM '
+ "431.81, VRT 245.92, V 410.54, VST 140.95; SGOV 100.71) - all within 0.2% of the job's closes; ratios rescaled. No "
+ 'fill tonight yet: CAT 7 sh LIMIT 647.39 (cap 653.86) is the only order. || PREVIOUS ENTRY: Oct 30, 2026 08:40 '
+ 'Bangkok - AMZN Q3 read recorded (AWS +39%, backlog $578bn, TTM FCF -$42.4bn, no order - over budget); CAT order set: '
+ '7 sh Day LIMIT 647.22, cap 653.69. || PREVIOUS ENTRY: Oct 30, 2026 (00:30 UTC job) - DAILY PRICE REFRESH: all 63 '
+ 'prices set to the Thu 2026-10-29 close. Primary source this run: marketbeat.com dated daily-price tables / '
+ "closing-price headers (pages updated 10/29, 'Closing price 4:00 PM Eastern' stamps), every ticker's prior close "
+ 'cross-checked against the stored board value; stockanalysis.com and Google Finance caches still frozen pre-close '
+ '(5th night); GEV from the fool.com quote page previous-close field (887.85; method validated to the cent on GOOGL '
+ 'and MSFT this run). Big earnings-reaction day: 6%-movers verified + allowed: GOOGL 283.82 -12.64% (Q3 miss/FCF, fool '
+ 'prev-close field exact + news), FTNT 139.10 -20.09% (service-revenue forecast cut; 247wallst sidebar exact), MRVL '
+ '218.34 -13.24% (Lumentum deal talks; fool widget -13.24% exact), CAT 647.22 -9.49% (sales outlook; 247wallst sidebar '
+ '647.39), LHX 279.12 +7.10% (Q3 beat + raised FY guide; investing.com 278.65 +6.92%), AVAV 134.88 +7.09% (gurufocus '
+ '+7.1%). SPY 769.36 and QQQ 715.34 (10-29, marketbeat closing headers; prev closes match board); spyHigh unchanged '
+ '779.09. risk_series spy 10-29 added; ust10 10-29 skipped (ycharts H15 only through 10-27; yahoo close bar printed '
+ '4.99 for reference). HISTORY 10-29 row added (first row including the 29 Oct MSFT buy, 126 sh). Note: TSEM 187.92 '
+ 'written from a dated 10/29 marketbeat header whose implied 10/28 prev close (193.52) could not be cross-checked - '
+ 'flagged for the next run. Every number from a tool call this session. || PREVIOUS ENTRY: Oct 29, 2026 23:00 Bangkok '
+ '- GOOGL 10 Dec test (1) CLARIFIED: Q3 ATM share sales of $12.4bn were draws under the $40bn ATM announced in the '
+ 'June $84.75bn raise, so they do not fail the test; a new or upsized programme would. No order, budget or price '
+ 'changed. || PREVIOUS ENTRY: Oct 29, 2026 22:30 Bangkok - MSFT BOOKED 9 sh at 525.4031 = 4,738.75; cash 24,975.30. '
+ 'FULL POEMS RECONCILIATION: 36 lines + SGOV match to the cent; cash corrected by 0.10 (CRWD 19 Oct fee true-up); SGOV '
+ 'sale trued up to 10,047.25 (realised -27.25); October MONTHLY rebuilt (6 buys + 1 sale had been missing); October '
+ 'dividends 251.31 itemised. Prices: 54 names at the 28 Oct close, 9 at 27 Oct - the 29 Oct close is written by the '
+ 'next morning run. || PREVIOUS ENTRY: Oct 29, 2026 (03:30 UTC job) - DAILY PRICE REFRESH, 2nd pass: 11 more of the 15 '
+ 'stragglers resolved. Wed 2026-10-28 close written for ETN 392.88, GEV 878.03, PWR 606.89, COHR 239.59, SPCX 145.23, '
+ 'CIEN 363.21 (54 of 63 now at 10-28); verified Tue 10-27 close written for ARM 226.60, GE 297.66, MPWR 1211.89, LHX '
+ '259.40, TSEM 189.08 (marketbeat prev-close fields / heygotrade dated closes; every prev-close cross-checked against '
+ 'the stored prior close to the cent). Sources: 247wallst Oct-28 article sidebars validated to the cent on '
+ 'MSFT/ORCL/NVDA/MU/GOOGL/VRT; heygotrade dated close pages; stockanalysis/Google Finance/tipranks/marketscreener '
+ 'caches still frozen pre-close (4th night). 6%-movers vs last build, verified + allowed: PWR +7.6% (sidebar + '
+ '247wallst company page, prev 578.8x both), COHR +8.2% (sidebar; prev 235.79 = heygotrade 10-27 close exact), CIEN '
+ '+8.1% (heygotrade 10-28 close 363.21 +3.43%; gurufocus +3.4% same evening). Unresolved, left at their verified 10-27 '
+ 'close: CDNS 343.08, CRDO 167.43, AVAV 126.73, CEG 258.98 (heygotrade 10-27 closes match the board to the cent; no '
+ 'readable 10-28 close). SPY 772.31 10-28 (marketchameleon dated close; SSGA official 10-27 769.66 added to '
+ 'risk_series with ycharts ust10 4.99 10-27; ust10 10-28 skipped - named sources not yet updated, fool.com wrap '
+ 'printed 5.02 at close for reference). HISTORY 10-28 row mv updated in place for the new ETN/GEV closes. || PREVIOUS '
+ 'ENTRY: Oct 29, 2026 (00:30 UTC job) - DAILY PRICE REFRESH: 48 of 63 set to the Wed 2026-10-28 close (fool.com dated '
+ 'quote pages; stockanalysis/Google Finance/ycharts caches frozen pre-close for a third night). 15 unresolved stay at '
+ 'their prior close: holdings CDNS CRDO AVAV GEV ETN CEG (10-27), watch ARM MPWR COHR SPCX LHX PWR GE TSEM CIEN '
+ '(10-26). QQQ 725.61 (10-28); SPY, spyHigh and risk_series spy/ust10 left unchanged - no clean close readable. '
+ 'HISTORY row 10-28 added. 6%-movers verified: ORCL 144.54 +10.73% d/d, VRT 242.94 +16.49% d/d, MU 983.23, SNDK '
+ '1404.77, STX 697.97 (247wallst sidebar matches to the cent); SNPS FN BE STRL on dated fool closes + headline '
+ 'corroboration. || PREVIOUS ENTRY: Oct 29, 2026 - GOOGL TEST APPROVED (Salee): 19 Nov $18,524 tranche moved to a 10 '
+ 'Dec DECIDE - buy only if no further share sale AND a credible path back to positive free cash flow; fail = budget '
+ 'cut to cost spent, no sale. || PREVIOUS ENTRY: Oct 29, 2026 04:45 Bangkok - RESULTS SCORED: MSFT PASS (BUY 9 sh '
+ 'tonight, limit 531.01, cap 536.32); STRL FAIL (signed backlog 4.14bn < 4.33bn; budget back to pool; half 2 '
+ 'cancelled); GEV thesis intact (Power orders +178%, Electrification -9% on a tough comparison); VRT partial '
+ 'disclosure; GOOGL Q3 cloud doubled but FCF -9.1bn + June 84.75bn equity raise - 19 Nov tranche pending Salee. Fed '
+ 'held 3.75-4.00% (10-2, Cook and Hammack for a hike). SGOV 4 Nov sale no longer needed. || PREVIOUS ENTRY: Oct 28, '
+ '2026 - SGOV SLICE 1 BOOKED: SELL 100 at 100.6901 = 10,047.46 net (POEMS 1187938, 22:29 Bangkok). Cash 29,714.36; '
+ 'SGOV 694 sh parked (cost 69,917.06). || PREVIOUS ENTRY: Oct 28, 2026 13:16 Bangkok - PRICES OF THE 36 HOLDINGS SET '
+ 'TO THE TUE 2026-10-27 CLOSE FROM SALEE\'S POEMS POSITIONS SCREEN (US market closed; POEMS "Current Price" column; '
+ 'SGOV mark 100.68). Reason: every web source reachable from the sandbox served pre-close cached pages for Oct 27 '
+ 'through both scheduled runs (00:30 and 03:30 UTC) and manual checks at 03:30-04:50 UTC, so 0 of 63 could be written '
+ 'by the job. The 27 watch names (no position) stay at the 26 Oct close until the next successful run. Moves of 6%+ vs '
+ '26 Oct: CDNS +6.5%, ALAB +10.5%, CRDO +10.8%, RKLB +8.3% - consistent with the reported 27 Oct session (AMD +5.5%, '
+ 'AVGO +4%, MU +2.8%, chips rally). Positions and cost on the same screen reconcile to the board to the cent on all 36 '
+ 'lines (641,827.76 NASD + 247,167.89 NYSE incl. SGOV = 888,995.64). pe/ps/fpe/peg/pfcf rescaled with price per the 26 '
+ 'Oct rule. || PREVIOUS ENTRY: Oct 28, 2026 (runs 00:30 + 03:30 UTC) - DAILY PRICE REFRESH: BOTH overnight passes '
+ 'could not resolve the Tue 2026-10-27 close for any ticker. 03:30 pass sampled 14 stockanalysis.com quote/history '
+ 'pages: every capture predated the 4:00 PM close (freshest stamps 10:05-11:25 AM EDT Oct 27; some caches as old as '
+ 'May 2025), and Google Finance (Sep 24/25 caches), marketscreener (Sep 4) and ycharts (Oct 26 18:04 EDT) were equally '
+ 'stale. Per the leave-unchanged rule nothing was written: all 63 prices, mcaps, P/E block, SPY/QQQ and pxd stay at '
+ 'the Mon 2026-10-26 close (CGNX still 2026-10-23); no HISTORY row; risk_series ust10/spy 10-27 skipped (sources '
+ 'unreadable; ust10 2026-10-26 = 5.00 was already added by the 00:30 pass). Oct-26 baseline cross-checked against 9 '
+ 'history tables - all matched. Every number checked came from a tool call this session; the next scheduled pass '
+ 'retries.')
 
 GROUPS = ['Hyperscalers & Model Owners',
  'AI Chips & Chip Design',
@@ -292,7 +298,7 @@ STOCKS = [{'an': 61,
   'epsG': 88.9,
   'ex': 'NASDAQ',
   'fcfB': 19.75,
-  'fpe': 22.33,
+  'fpe': 22.11,
   'fqd': '2026-09-30',
   'fvAvg': 429.12,
   'fvMax': 500.0,
@@ -303,14 +309,14 @@ STOCKS = [{'an': 61,
   'hi52': 408.61,
   'jan2': 316.9,
   'lo52': 187.82,
-  'mcapB': 3656.9,
+  'mcapB': 3621.03,
   'name': 'Alphabet',
-  'pe': 15.6,
-  'peg': 1.68,
+  'pe': 15.45,
+  'peg': 1.66,
   'pm': 50.03,
-  'price': 298.7,
-  'ps': 7.76,
-  'pxd': '2026-11-12',
+  'price': 295.77,
+  'ps': 7.68,
+  'pxd': '2026-11-13',
   'r40': 26.4,
   'revB': 471.1,
   'revG': 22.21,
@@ -325,7 +331,7 @@ STOCKS = [{'an': 61,
   'epsG': 36.2,
   'ex': 'NASDAQ',
   'fcfB': 59.96,
-  'fpe': 26.45,
+  'fpe': 26.49,
   'fqd': '2026-09-30',
   'fvAvg': 601.73,
   'fvMax': 870.0,
@@ -336,14 +342,14 @@ STOCKS = [{'an': 61,
   'hi52': 555.45,
   'jan2': 482.24,
   'lo52': 349.2,
-  'mcapB': 3895.74,
+  'mcapB': 3902.29,
   'name': 'Microsoft',
-  'pe': 27.31,
+  'pe': 27.36,
   'peg': 1.66,
   'pm': 41.17,
-  'price': 523.0,
-  'ps': 11.24,
-  'pxd': '2026-11-12',
+  'price': 523.88,
+  'ps': 11.26,
+  'pxd': '2026-11-13',
   'r40': 35.2,
   'revB': 346.45,
   'revG': 17.92,
@@ -358,7 +364,7 @@ STOCKS = [{'an': 61,
   'epsG': 75.0,
   'ex': 'NASDAQ',
   'fcfB': -42.4,
-  'fpe': 28.46,
+  'fpe': 28.38,
   'fqd': '2026-09-30',
   'fvAvg': 331.72,
   'fvMax': 405.0,
@@ -369,14 +375,14 @@ STOCKS = [{'an': 61,
   'hi52': 284.02,
   'jan2': 231.34,
   'lo52': 196.0,
-  'mcapB': 2885.33,
+  'mcapB': 2876.91,
   'name': 'Amazon',
-  'pe': 21.62,
+  'pe': 21.56,
   'peg': 1.39,
   'pm': 16.9,
-  'price': 267.44,
-  'ps': 3.62,
-  'pxd': '2026-11-12',
+  'price': 266.66,
+  'ps': 3.61,
+  'pxd': '2026-11-13',
   'r40': 9.7,
   'revB': 797.46,
   'revG': 15.0,
@@ -391,7 +397,7 @@ STOCKS = [{'an': 61,
   'epsG': 29.5,
   'ex': 'NASDAQ',
   'fcfB': 25.13,
-  'fpe': 18.93,
+  'fpe': 19.48,
   'fvAvg': 844.77,
   'fvMax': 1050.0,
   'fvMin': 629.06,
@@ -401,14 +407,14 @@ STOCKS = [{'an': 61,
   'hi52': 796.25,
   'jan2': 649.25,
   'lo52': 520.26,
-  'mcapB': 1592.76,
+  'mcapB': 1638.94,
   'name': 'Meta Platforms',
-  'pe': 21.27,
-  'peg': 0.98,
+  'pe': 21.89,
+  'peg': 1.01,
   'pm': 31.14,
-  'price': 623.61,
-  'ps': 6.59,
-  'pxd': '2026-11-12',
+  'price': 641.69,
+  'ps': 6.78,
+  'pxd': '2026-11-13',
   'r40': 37.9,
   'revB': 241.61,
   'revG': 27.5,
@@ -423,7 +429,7 @@ STOCKS = [{'an': 61,
   'epsG': 125.4,
   'ex': 'NASDAQ',
   'fcfB': 127.01,
-  'fpe': 13.75,
+  'fpe': 13.47,
   'fvAvg': 328.95,
   'fvMax': 515.0,
   'fvMin': 180.0,
@@ -432,15 +438,15 @@ STOCKS = [{'an': 61,
   'gm': 75.0,
   'hi52': 239.24,
   'jan2': 189.6,
-  'lo52': 164.07,
-  'mcapB': 4023.38,
+  'lo52': 162.85,
+  'mcapB': 3942.52,
   'name': 'NVIDIA',
-  'pe': 21.01,
-  'peg': 0.29,
+  'pe': 20.59,
+  'peg': 0.28,
   'pm': 63.66,
-  'price': 166.19,
-  'ps': 13.28,
-  'pxd': '2026-11-12',
+  'price': 162.85,
+  'ps': 13.01,
+  'pxd': '2026-11-13',
   'r40': 125.3,
   'revB': 302.98,
   'revG': 83.4,
@@ -455,7 +461,7 @@ STOCKS = [{'an': 61,
   'epsG': 100.0,
   'ex': 'NASDAQ',
   'fcfB': 39.4,
-  'fpe': 20.97,
+  'fpe': 19.97,
   'fvAvg': 529.1,
   'fvMax': 660.0,
   'fvMin': 215.88,
@@ -465,14 +471,14 @@ STOCKS = [{'an': 61,
   'hi52': 495.0,
   'jan2': 352.78,
   'lo52': 273.0,
-  'mcapB': 1731.57,
+  'mcapB': 1649.12,
   'name': 'Broadcom',
-  'pe': 46.47,
-  'peg': 0.37,
+  'pe': 44.26,
+  'peg': 0.35,
   'pm': 42.94,
-  'price': 364.36,
-  'ps': 19.43,
-  'pxd': '2026-11-12',
+  'price': 347.01,
+  'ps': 18.5,
+  'pxd': '2026-11-13',
   'r40': 92.9,
   'revB': 89.12,
   'revG': 48.7,
@@ -487,7 +493,7 @@ STOCKS = [{'an': 61,
   'epsG': 128.2,
   'ex': 'NASDAQ',
   'fcfB': 6.76,
-  'fpe': 52.67,
+  'fpe': 48.06,
   'fqd': '2026-09-26',
   'fvAvg': 637.61,
   'fvMax': 1250.0,
@@ -498,14 +504,14 @@ STOCKS = [{'an': 61,
   'hi52': 649.42,
   'jan2': 218.9,
   'lo52': 149.22,
-  'mcapB': 955.48,
+  'mcapB': 871.83,
   'name': 'Advanced Micro Devices',
-  'pe': 126.96,
-  'peg': 0.8,
+  'pe': 115.85,
+  'peg': 0.73,
   'pm': 16.77,
-  'price': 585.3,
-  'ps': 21.03,
-  'pxd': '2026-11-12',
+  'price': 534.06,
+  'ps': 19.19,
+  'pxd': '2026-11-13',
   'r40': 56.8,
   'revB': 45.44,
   'revG': 41.9,
@@ -520,7 +526,7 @@ STOCKS = [{'an': 61,
   'epsG': 11.54,
   'ex': 'NASDAQ',
   'fcfB': 1.21,
-  'fpe': 83.66,
+  'fpe': 79.79,
   'fqd': '2026-09-30',
   'fvAvg': 290.71,
   'fvMax': 500.0,
@@ -531,14 +537,14 @@ STOCKS = [{'an': 61,
   'hi52': 452.7,
   'jan2': 112.83,
   'lo52': 100.02,
-  'mcapB': 213.39,
+  'mcapB': 203.51,
   'name': 'Arm Holdings',
-  'pe': 229.63,
-  'peg': 2.74,
+  'pe': 219.0,
+  'peg': 2.61,
   'pm': 17.13,
-  'price': 199.78,
-  'ps': 39.08,
-  'pxd': '2026-11-12',
+  'price': 190.53,
+  'ps': 37.27,
+  'pxd': '2026-11-13',
   'r40': 46.0,
   'revB': 5.46,
   'revG': 23.79,
@@ -553,7 +559,7 @@ STOCKS = [{'an': 61,
   'epsG': None,
   'ex': 'NASDAQ',
   'fcfB': 1.73,
-  'fpe': 29.1,
+  'fpe': 27.74,
   'fvAvg': 341.44,
   'fvMax': 450.0,
   'fvMin': 229.95,
@@ -563,14 +569,14 @@ STOCKS = [{'an': 61,
   'hi52': 329.88,
   'jan2': 86.74,
   'lo52': 61.44,
-  'mcapB': 144.03,
+  'mcapB': 137.29,
   'name': 'Marvell Technology',
-  'pe': 54.82,
-  'peg': 0.51,
+  'pe': 52.26,
+  'peg': 0.49,
   'pm': 27.9,
-  'price': 164.45,
-  'ps': 15.24,
-  'pxd': '2026-11-12',
+  'price': 156.76,
+  'ps': 14.53,
+  'pxd': '2026-11-13',
   'r40': 49.1,
   'revB': 9.45,
   'revG': 30.7,
@@ -586,7 +592,7 @@ STOCKS = [{'an': 61,
   'epsG': 29.6,
   'ex': 'NASDAQ',
   'fcfB': 1.76,
-  'fpe': 38.74,
+  'fpe': 37.54,
   'fqd': '2026-09-30',
   'fvAvg': 406.24,
   'fvMax': 470.0,
@@ -597,14 +603,14 @@ STOCKS = [{'an': 61,
   'hi52': 416.69,
   'jan2': 315.7,
   'lo52': 262.75,
-  'mcapB': 91.9,
+  'mcapB': 89.06,
   'name': 'Cadence Design Systems',
-  'pe': 66.27,
-  'peg': 2.57,
+  'pe': 64.22,
+  'peg': 2.49,
   'pm': 22.51,
-  'price': 333.32,
-  'ps': 14.99,
-  'pxd': '2026-11-12',
+  'price': 323.01,
+  'ps': 14.53,
+  'pxd': '2026-11-13',
   'r40': 46.4,
   'revB': 6.13,
   'revG': 17.6,
@@ -619,7 +625,7 @@ STOCKS = [{'an': 61,
   'epsG': -55.6,
   'ex': 'NASDAQ',
   'fcfB': 2.74,
-  'fpe': 26.17,
+  'fpe': 25.75,
   'fvAvg': 586.95,
   'fvMax': 700.0,
   'fvMin': 475.0,
@@ -629,14 +635,14 @@ STOCKS = [{'an': 61,
   'hi52': 626.24,
   'jan2': None,
   'lo52': 366.0,
-  'mcapB': 88.6,
+  'mcapB': 87.17,
   'name': 'Synopsys',
-  'pe': 81.75,
-  'peg': 1.03,
+  'pe': 80.43,
+  'peg': 1.01,
   'pm': 11.43,
-  'price': 462.69,
-  'ps': 9.41,
-  'pxd': '2026-11-12',
+  'price': 455.2,
+  'ps': 9.26,
+  'pxd': '2026-11-13',
   'r40': 75.4,
   'revB': 9.42,
   'revG': 46.3,
@@ -651,7 +657,7 @@ STOCKS = [{'an': 61,
   'epsG': 42.1,
   'ex': 'NASDAQ',
   'fcfB': 0.63,
-  'fpe': 44.81,
+  'fpe': 43.05,
   'fqd': '2026-09-30',
   'fvAvg': 1800.0,
   'fvMax': 2100.0,
@@ -662,14 +668,14 @@ STOCKS = [{'an': 61,
   'hi52': 1714.09,
   'jan2': 927.61,
   'lo52': 702.32,
-  'mcapB': 71.13,
+  'mcapB': 68.34,
   'name': 'Monolithic Power',
-  'pe': 79.88,
-  'peg': 1.4,
+  'pe': 76.74,
+  'peg': 1.35,
   'pm': 23.85,
-  'price': 1447.4,
-  'ps': 19.02,
-  'pxd': '2026-11-12',
+  'price': 1390.54,
+  'ps': 18.27,
+  'pxd': '2026-11-13',
   'r40': 50.8,
   'revB': 3.74,
   'revG': 34.0,
@@ -684,7 +690,7 @@ STOCKS = [{'an': 61,
   'epsG': 60.8,
   'ex': 'NYSE',
   'fcfB': 45.75,
-  'fpe': 19.0,
+  'fpe': 18.68,
   'fvAvg': 584.39,
   'fvMax': 1000.0,
   'fvMin': 440.0,
@@ -694,14 +700,14 @@ STOCKS = [{'an': 61,
   'hi52': 485.8,
   'jan2': 311.98,
   'lo52': 223.7,
-  'mcapB': 1955.98,
+  'mcapB': 1923.37,
   'name': 'Taiwan Semiconductor',
-  'pe': 26.82,
+  'pe': 26.37,
   'peg': None,
   'pm': 51.12,
-  'price': 405.49,
-  'ps': 12.77,
-  'pxd': '2026-11-12',
+  'price': 398.73,
+  'ps': 12.56,
+  'pxd': '2026-11-13',
   'r40': 66.1,
   'revB': 153.19,
   'revG': 36.2,
@@ -716,7 +722,7 @@ STOCKS = [{'an': 61,
   'epsG': 44.6,
   'ex': 'NASDAQ',
   'fcfB': 11.49,
-  'fpe': 23.55,
+  'fpe': 23.52,
   'fvAvg': 2152.0,
   'fvMax': 2851.0,
   'fvMin': 868.02,
@@ -726,14 +732,14 @@ STOCKS = [{'an': 61,
   'hi52': 1999.96,
   'jan2': 1133.76,
   'lo52': 683.48,
-  'mcapB': 584.63,
+  'mcapB': 583.86,
   'name': 'ASML Holding',
-  'pe': 38.15,
+  'pe': 38.1,
   'peg': None,
   'pm': 34.14,
-  'price': 1497.12,
-  'ps': 13.22,
-  'pxd': '2026-11-12',
+  'price': 1495.16,
+  'ps': 13.2,
+  'pxd': '2026-11-13',
   'r40': 48.5,
   'revB': 44.21,
   'revG': 22.5,
@@ -748,7 +754,7 @@ STOCKS = [{'an': 61,
   'epsG': 47.8,
   'ex': 'NASDAQ',
   'fcfB': 6.54,
-  'fpe': 22.76,
+  'fpe': 21.99,
   'fvAvg': 364.03,
   'fvMax': 500.0,
   'fvMin': 255.0,
@@ -758,14 +764,14 @@ STOCKS = [{'an': 61,
   'hi52': 438.5,
   'jan2': 177.85,
   'lo52': 90.94,
-  'mcapB': 292.52,
+  'mcapB': 282.69,
   'name': 'Lam Research',
-  'pe': 34.84,
-  'peg': 0.81,
+  'pe': 33.67,
+  'peg': 0.78,
   'pm': 32.34,
-  'price': 233.78,
-  'ps': 11.19,
-  'pxd': '2026-11-12',
+  'price': 225.92,
+  'ps': 10.81,
+  'pxd': '2026-11-13',
   'r40': 58.4,
   'revB': 26.13,
   'revG': 33.3,
@@ -780,7 +786,7 @@ STOCKS = [{'an': 61,
   'epsG': 38.6,
   'ex': 'NASDAQ',
   'fcfB': 5.62,
-  'fpe': 21.61,
+  'fpe': 21.02,
   'fvAvg': 627.83,
   'fvMax': 900.0,
   'fvMin': 358.0,
@@ -790,14 +796,14 @@ STOCKS = [{'an': 61,
   'hi52': 739.67,
   'jan2': 267.08,
   'lo52': 154.47,
-  'mcapB': 302.45,
+  'mcapB': 294.15,
   'name': 'Applied Materials',
-  'pe': 32.84,
-  'peg': 0.69,
+  'pe': 31.94,
+  'peg': 0.67,
   'pm': 30.05,
-  'price': 380.95,
-  'ps': 9.81,
-  'pxd': '2026-11-12',
+  'price': 370.5,
+  'ps': 9.54,
+  'pxd': '2026-11-13',
   'r40': 26.0,
   'revB': 30.84,
   'revG': 7.8,
@@ -812,7 +818,7 @@ STOCKS = [{'an': 61,
   'epsG': 25.1,
   'ex': 'NASDAQ',
   'fcfB': 4.04,
-  'fpe': 28.8,
+  'fpe': 27.89,
   'fqd': '2026-09-30',
   'fvAvg': 232.38,
   'fvMax': 325.0,
@@ -823,14 +829,14 @@ STOCKS = [{'an': 61,
   'hi52': 307.37,
   'jan2': 125.97,
   'lo52': 83.22,
-  'mcapB': 205.47,
+  'mcapB': 198.96,
   'name': 'KLA Corporation',
-  'pe': 39.42,
-  'peg': 1.43,
+  'pe': 38.17,
+  'peg': 1.38,
   'pm': 36.24,
-  'price': 157.3,
-  'ps': 14.16,
-  'pxd': '2026-11-12',
+  'price': 152.32,
+  'ps': 13.71,
+  'pxd': '2026-11-13',
   'r40': 43.6,
   'revB': 14.51,
   'revG': 15.79,
@@ -846,7 +852,7 @@ STOCKS = [{'an': 61,
   'epsG': 217.1,
   'ex': 'NASDAQ',
   'fcfB': 1.02,
-  'fpe': 28.3,
+  'fpe': 26.78,
   'fqd': '2026-09-27',
   'fvAvg': 445.47,
   'fvMax': 550.0,
@@ -857,14 +863,14 @@ STOCKS = [{'an': 61,
   'hi52': 487.91,
   'jan2': 199.29,
   'lo52': 102.42,
-  'mcapB': 41.54,
+  'mcapB': 39.3,
   'name': 'Teradyne',
-  'pe': 30.28,
-  'peg': 0.78,
+  'pe': 28.65,
+  'peg': 0.74,
   'pm': 27.5,
-  'price': 263.75,
-  'ps': 8.31,
-  'pxd': '2026-11-12',
+  'price': 249.55,
+  'ps': 7.86,
+  'pxd': '2026-11-13',
   'r40': 95.3,
   'revB': 5.0,
   'revG': 74.9,
@@ -879,7 +885,7 @@ STOCKS = [{'an': 61,
   'epsG': 879.3,
   'ex': 'NASDAQ',
   'fcfB': 58.96,
-  'fpe': 4.51,
+  'fpe': 4.4,
   'fvAvg': 1562.0,
   'fvMax': 3000.0,
   'fvMin': 361.0,
@@ -889,14 +895,14 @@ STOCKS = [{'an': 61,
   'hi52': 1255.0,
   'jan2': 295.13,
   'lo52': 103.38,
-  'mcapB': 901.75,
+  'mcapB': 879.02,
   'name': 'Micron Technology',
-  'pe': 10.74,
+  'pe': 10.47,
   'peg': 0.07,
   'pm': 63.8,
-  'price': 798.44,
-  'ps': 6.77,
-  'pxd': '2026-11-12',
+  'price': 778.31,
+  'ps': 6.6,
+  'pxd': '2026-11-13',
   'r40': 300.6,
   'revB': 133.19,
   'revG': 256.3,
@@ -911,7 +917,7 @@ STOCKS = [{'an': 61,
   'epsG': None,
   'ex': 'NASDAQ',
   'fcfB': 17.37,
-  'fpe': 4.36,
+  'fpe': 4.12,
   'fqd': '2026-10-02',
   'fvAvg': 2029.0,
   'fvMax': 3000.0,
@@ -922,14 +928,14 @@ STOCKS = [{'an': 61,
   'hi52': 2354.39,
   'jan2': 244.35,
   'lo52': 40.1,
-  'mcapB': 138.82,
+  'mcapB': 131.05,
   'name': 'SanDisk',
-  'pe': 7.46,
+  'pe': 7.04,
   'peg': None,
   'pm': 67.04,
-  'price': 937.46,
-  'ps': 4.79,
-  'pxd': '2026-11-12',
+  'price': 885.01,
+  'ps': 4.52,
+  'pxd': '2026-11-13',
   'r40': 332.3,
   'revB': 28.97,
   'revG': 272.4,
@@ -944,7 +950,7 @@ STOCKS = [{'an': 61,
   'epsG': 144.7,
   'ex': 'NASDAQ',
   'fcfB': 4.16,
-  'fpe': 15.6,
+  'fpe': 15.12,
   'fqd': '2026-10-02',
   'fvAvg': 1092.0,
   'fvMax': 1600.0,
@@ -955,14 +961,14 @@ STOCKS = [{'an': 61,
   'hi52': 1145.0,
   'jan2': 286.835,
   'lo52': 138.3,
-  'mcapB': 123.36,
+  'mcapB': 119.55,
   'name': 'Seagate Technology',
-  'pe': 28.6,
-  'peg': 0.2,
+  'pe': 27.72,
+  'peg': 0.19,
   'pm': 31.9,
-  'price': 545.14,
-  'ps': 8.94,
-  'pxd': '2026-11-12',
+  'price': 528.29,
+  'ps': 8.66,
+  'pxd': '2026-11-13',
   'r40': 74.5,
   'revB': 13.8,
   'revG': 44.4,
@@ -977,7 +983,7 @@ STOCKS = [{'an': 61,
   'epsG': 42.4,
   'ex': 'NYSE',
   'fcfB': 5.02,
-  'fpe': 44.44,
+  'fpe': 42.43,
   'fqd': '2026-09-30',
   'fvAvg': 243.59,
   'fvMax': 290.0,
@@ -988,14 +994,14 @@ STOCKS = [{'an': 61,
   'hi52': 216.74,
   'jan2': 134.05,
   'lo52': 114.52,
-  'mcapB': 258.5,
+  'mcapB': 246.82,
   'name': 'Arista Networks',
-  'pe': 55.4,
-  'peg': 1.76,
+  'pe': 52.9,
+  'peg': 1.68,
   'pm': 39.97,
-  'price': 206.63,
-  'ps': 21.74,
-  'pxd': '2026-11-12',
+  'price': 197.29,
+  'ps': 20.76,
+  'pxd': '2026-11-13',
   'r40': 80.7,
   'revB': 11.89,
   'revG': 40.7,
@@ -1010,7 +1016,7 @@ STOCKS = [{'an': 61,
   'epsG': 53.9,
   'ex': 'NYSE',
   'fcfB': 5.14,
-  'fpe': 26.74,
+  'fpe': 26.27,
   'fqd': '2026-09-30',
   'fvAvg': 102.97,
   'fvMax': 116.0,
@@ -1021,14 +1027,14 @@ STOCKS = [{'an': 61,
   'hi52': 89.26,
   'jan2': 68.56,
   'lo52': 51.38,
-  'mcapB': 196.34,
+  'mcapB': 192.91,
   'name': 'Amphenol',
-  'pe': 28.74,
-  'peg': 1.36,
+  'pe': 28.24,
+  'peg': 1.34,
   'pm': 17.95,
-  'price': 79.62,
-  'ps': 5.94,
-  'pxd': '2026-11-12',
+  'price': 78.23,
+  'ps': 5.84,
+  'pxd': '2026-11-13',
   'r40': 73.1,
   'revB': 33.05,
   'revG': 57.56,
@@ -1043,7 +1049,7 @@ STOCKS = [{'an': 61,
   'epsG': 55.1,
   'ex': 'NYSE',
   'fcfB': 2.47,
-  'fpe': 31.75,
+  'fpe': 30.31,
   'fqd': '2026-09-30',
   'fvAvg': 187.41,
   'fvMax': 238.0,
@@ -1054,14 +1060,14 @@ STOCKS = [{'an': 61,
   'hi52': 271.78,
   'jan2': 88.91,
   'lo52': 54.37,
-  'mcapB': 102.95,
+  'mcapB': 98.28,
   'name': 'Corning',
-  'pe': 48.78,
-  'peg': 0.98,
+  'pe': 46.57,
+  'peg': 0.94,
   'pm': 12.1,
-  'price': 119.5,
-  'ps': 5.81,
-  'pxd': '2026-11-12',
+  'price': 114.08,
+  'ps': 5.55,
+  'pxd': '2026-11-13',
   'r40': 32.7,
   'revB': 17.72,
   'revG': 18.8,
@@ -1076,7 +1082,7 @@ STOCKS = [{'an': 61,
   'epsG': None,
   'ex': 'NASDAQ',
   'fcfB': 0.3001,
-  'fpe': 28.68,
+  'fpe': 27.39,
   'fqd': '2026-09-26',
   'fvAvg': 1165.0,
   'fvMax': 1500.0,
@@ -1087,14 +1093,14 @@ STOCKS = [{'an': 61,
   'hi52': 1133.4,
   'jan2': 379.38,
   'lo52': 101.61,
-  'mcapB': 48.6,
+  'mcapB': 46.42,
   'name': 'Lumentum',
   'pe': None,
-  'peg': 0.24,
+  'peg': 0.23,
   'pm': -175.8,
-  'price': 624.65,
-  'ps': 12.99,
-  'pxd': '2026-11-12',
+  'price': 596.62,
+  'ps': 12.41,
+  'pxd': '2026-11-13',
   'r40': 111.2,
   'revB': 3.74,
   'revG': 103.19,
@@ -1109,7 +1115,7 @@ STOCKS = [{'an': 61,
   'epsG': None,
   'ex': 'NYSE',
   'fcfB': -1.83,
-  'fpe': 24.71,
+  'fpe': 23.23,
   'fqd': '2026-09-30',
   'fvAvg': 394.79,
   'fvMax': 500.0,
@@ -1120,14 +1126,14 @@ STOCKS = [{'an': 61,
   'hi52': 440.0,
   'jan2': 194.33,
   'lo52': 84.35,
-  'mcapB': 45.39,
+  'mcapB': 42.67,
   'name': 'Coherent',
-  'pe': 48.05,
-  'peg': 0.48,
+  'pe': 45.17,
+  'peg': 0.45,
   'pm': 12.18,
-  'price': 232.08,
-  'ps': 5.74,
-  'pxd': '2026-11-12',
+  'price': 218.15,
+  'ps': 5.4,
+  'pxd': '2026-11-13',
   'r40': 7.7,
   'revB': 7.91,
   'revG': 30.88,
@@ -1142,7 +1148,7 @@ STOCKS = [{'an': 61,
   'epsG': 127.9,
   'ex': 'NASDAQ',
   'fcfB': 0.34,
-  'fpe': 40.54,
+  'fpe': 39.48,
   'fqd': '2026-09-30',
   'fvAvg': 388.36,
   'fvMax': 500.0,
@@ -1153,14 +1159,14 @@ STOCKS = [{'an': 61,
   'hi52': 499.48,
   'jan2': 171.69,
   'lo52': 97.89,
-  'mcapB': 39.04,
+  'mcapB': 38.02,
   'name': 'Astera Labs',
-  'pe': 90.04,
-  'peg': 0.77,
+  'pe': 87.68,
+  'peg': 0.75,
   'pm': 29.64,
-  'price': 227.79,
-  'ps': 25.03,
-  'pxd': '2026-11-12',
+  'price': 221.83,
+  'ps': 24.38,
+  'pxd': '2026-11-13',
   'r40': 137.4,
   'revB': 1.56,
   'revG': 115.3,
@@ -1175,7 +1181,7 @@ STOCKS = [{'an': 61,
   'epsG': 311.6,
   'ex': 'NASDAQ',
   'fcfB': 0.41,
-  'fpe': 19.17,
+  'fpe': 18.03,
   'fvAvg': 284.05,
   'fvMax': 315.0,
   'fvMin': 235.0,
@@ -1185,14 +1191,14 @@ STOCKS = [{'an': 61,
   'hi52': 308.67,
   'jan2': 148.4,
   'lo52': 86.49,
-  'mcapB': 26.08,
+  'mcapB': 24.53,
   'name': 'Credo Technology',
-  'pe': 49.23,
-  'peg': 0.37,
+  'pe': 46.31,
+  'peg': 0.35,
   'pm': 33.84,
-  'price': 139.81,
-  'ps': 16.4,
-  'pxd': '2026-11-12',
+  'price': 131.51,
+  'ps': 15.43,
+  'pxd': '2026-11-13',
   'r40': 190.7,
   'revB': 1.59,
   'revG': 165.1,
@@ -1207,7 +1213,7 @@ STOCKS = [{'an': 61,
   'epsG': 36.6,
   'ex': 'NYSE',
   'fcfB': -0.19,
-  'fpe': 19.38,
+  'fpe': 17.96,
   'fqd': '2026-09-25',
   'fvAvg': 687.78,
   'fvMax': 800.0,
@@ -1218,14 +1224,14 @@ STOCKS = [{'an': 61,
   'hi52': 748.89,
   'jan2': 464.74,
   'lo52': 272.49,
-  'mcapB': 12.69,
+  'mcapB': 11.76,
   'name': 'Fabrinet',
-  'pe': 26.7,
+  'pe': 24.75,
   'peg': None,
   'pm': 9.35,
-  'price': 353.83,
-  'ps': 2.47,
-  'pxd': '2026-11-12',
+  'price': 327.98,
+  'ps': 2.29,
+  'pxd': '2026-11-13',
   'r40': 39.3,
   'revB': 5.14,
   'revG': 43.0,
@@ -1241,7 +1247,7 @@ STOCKS = [{'an': 61,
   'epsG': 21.6,
   'ex': 'NASDAQ',
   'fcfB': 1.5,
-  'fpe': 8.18,
+  'fpe': 8.14,
   'fqd': '2026-09-30',
   'fvAvg': 273.67,
   'fvMax': 402.0,
@@ -1252,14 +1258,14 @@ STOCKS = [{'an': 61,
   'hi52': 320.95,
   'jan2': None,
   'lo52': 168.15,
-  'mcapB': 18.55,
+  'mcapB': 18.45,
   'name': 'First Solar',
-  'pe': 9.97,
+  'pe': 9.92,
   'peg': 0.44,
   'pm': 37.12,
-  'price': 172.3,
-  'ps': 3.7,
-  'pxd': '2026-11-12',
+  'price': 171.39,
+  'ps': 3.68,
+  'pxd': '2026-11-13',
   'r40': 26.0,
   'revB': 5.01,
   'revG': -4.0,
@@ -1274,7 +1280,7 @@ STOCKS = [{'an': 61,
   'epsG': 121.88,
   'ex': 'NASDAQ',
   'fcfB': 0.29,
-  'fpe': 28.31,
+  'fpe': 27.89,
   'fqd': '2026-10-04',
   'fvAvg': 79.37,
   'fvMax': 92.0,
@@ -1285,14 +1291,14 @@ STOCKS = [{'an': 61,
   'hi52': 72.88,
   'jan2': 36.43,
   'lo52': 33.45,
-  'mcapB': 8.46,
+  'mcapB': 8.33,
   'name': 'Cognex',
-  'pe': 35.75,
+  'pe': 35.21,
   'peg': None,
   'pm': 21.5,
-  'price': 50.77,
-  'ps': 7.52,
-  'pxd': '2026-11-12',
+  'price': 50.01,
+  'ps': 7.41,
+  'pxd': '2026-11-13',
   'r40': 41.2,
   'revB': 1.125,
   'revG': 15.82,
@@ -1307,7 +1313,7 @@ STOCKS = [{'an': 61,
   'epsG': None,
   'ex': 'NASDAQ',
   'fcfB': -32.52,
-  'fpe': 49.65,
+  'fpe': 49.36,
   'fvAvg': 258.49,
   'fvMax': 800.0,
   'fvMin': 70.0,
@@ -1317,14 +1323,14 @@ STOCKS = [{'an': 61,
   'hi52': 225.64,
   'jan2': None,
   'lo52': 104.83,
-  'mcapB': 1898.99,
+  'mcapB': 1887.73,
   'name': 'SpaceX',
   'pe': None,
   'peg': None,
   'pm': -10.71,
-  'price': 139.94,
-  'ps': 59.27,
-  'pxd': '2026-11-12',
+  'price': 139.11,
+  'ps': 58.92,
+  'pxd': '2026-11-13',
   'r40': None,
   'revB': 32.04,
   'revG': 121.85,
@@ -1350,14 +1356,14 @@ STOCKS = [{'an': 61,
   'hi52': 151.0,
   'jan2': 70.63,
   'lo52': 37.57,
-  'mcapB': 38.35,
+  'mcapB': 36.83,
   'name': 'Rocket Lab',
   'pe': None,
   'peg': None,
   'pm': -25.73,
-  'price': 64.07,
-  'ps': 43.49,
-  'pxd': '2026-11-12',
+  'price': 61.53,
+  'ps': 41.77,
+  'pxd': '2026-11-13',
   'r40': 22.1,
   'revB': 0.8819,
   'revG': 59.1,
@@ -1372,7 +1378,7 @@ STOCKS = [{'an': 61,
   'epsG': 127.0,
   'ex': 'NASDAQ',
   'fcfB': 4.05,
-  'fpe': 90.19,
+  'fpe': 88.3,
   'fqd': '2026-09-30',
   'fvAvg': 206.66,
   'fvMax': 265.0,
@@ -1383,14 +1389,14 @@ STOCKS = [{'an': 61,
   'hi52': 209.05,
   'jan2': 181.3,
   'lo52': 106.37,
-  'mcapB': 411.32,
+  'mcapB': 402.71,
   'name': 'Palantir',
-  'pe': 119.99,
-  'peg': 1.7,
+  'pe': 117.48,
+  'peg': 1.66,
   'pm': 50.34,
-  'price': 171.58,
-  'ps': 56.42,
-  'pxd': '2026-11-12',
+  'price': 167.99,
+  'ps': 55.24,
+  'pxd': '2026-11-13',
   'r40': 118.5,
   'revB': 7.29,
   'revG': 62.9,
@@ -1405,7 +1411,7 @@ STOCKS = [{'an': 61,
   'epsG': 25.7,
   'ex': 'NYSE',
   'fcfB': 3.64,
-  'fpe': 21.59,
+  'fpe': 21.63,
   'fqd': '2026-10-02',
   'fvAvg': 323.67,
   'fvMax': 443.0,
@@ -1416,14 +1422,14 @@ STOCKS = [{'an': 61,
   'hi52': 379.23,
   'jan2': None,
   'lo52': 233.63,
-  'mcapB': 50.63,
+  'mcapB': 50.72,
   'name': 'L3Harris Technologies',
-  'pe': 25.36,
+  'pe': 25.41,
   'peg': 1.3,
   'pm': 8.76,
-  'price': 271.84,
+  'price': 272.35,
   'ps': 2.17,
-  'pxd': '2026-11-12',
+  'pxd': '2026-11-13',
   'r40': 22.3,
   'revB': 23.33,
   'revG': 6.7,
@@ -1438,7 +1444,7 @@ STOCKS = [{'an': 61,
   'epsG': -7.7,
   'ex': 'NASDAQ',
   'fcfB': -0.123,
-  'fpe': 36.72,
+  'fpe': 35.83,
   'fqd': '2026-09-27',
   'fvAvg': 98.33,
   'fvMax': 150.0,
@@ -1448,15 +1454,15 @@ STOCKS = [{'an': 61,
   'gm': 23.0,
   'hi52': 134.0,
   'jan2': None,
-  'lo52': 34.75,
-  'mcapB': 6.53,
+  'lo52': 33.91,
+  'mcapB': 6.37,
   'name': 'Kratos Defense & Security',
-  'pe': 289.58,
+  'pe': 282.58,
   'peg': None,
   'pm': 1.34,
-  'price': 34.75,
-  'ps': 3.96,
-  'pxd': '2026-11-12',
+  'price': 33.91,
+  'ps': 3.86,
+  'pxd': '2026-11-13',
   'r40': 14.8,
   'revB': 1.65,
   'revG': 22.27,
@@ -1471,7 +1477,7 @@ STOCKS = [{'an': 61,
   'epsG': None,
   'ex': 'NASDAQ',
   'fcfB': -0.025,
-  'fpe': 36.03,
+  'fpe': 35.04,
   'fvAvg': 213.07,
   'fvMax': 315.0,
   'fvMin': 148.57,
@@ -1481,14 +1487,14 @@ STOCKS = [{'an': 61,
   'hi52': 417.86,
   'jan2': 248.45,
   'lo52': 117.51,
-  'mcapB': 6.1,
+  'mcapB': 5.93,
   'name': 'AeroVironment',
   'pe': None,
-  'peg': 1.05,
+  'peg': 1.02,
   'pm': -10.13,
-  'price': 120.84,
-  'ps': 3.05,
-  'pxd': '2026-11-12',
+  'price': 117.52,
+  'ps': 2.97,
+  'pxd': '2026-11-13',
   'r40': 83.2,
   'revB': 2.0,
   'revG': 84.4,
@@ -1503,7 +1509,7 @@ STOCKS = [{'an': 61,
   'epsG': 132.26,
   'ex': 'NASDAQ',
   'fcfB': 1.11,
-  'fpe': 69.57,
+  'fpe': 69.46,
   'fqd': '2026-09-30',
   'fvAvg': 293.0,
   'fvMax': 350.0,
@@ -1514,14 +1520,14 @@ STOCKS = [{'an': 61,
   'hi52': 293.26,
   'jan2': 133.77,
   'lo52': 98.01,
-  'mcapB': 65.66,
+  'mcapB': 65.55,
   'name': 'Datadog',
-  'pe': 256.19,
+  'pe': 255.77,
   'peg': 2.81,
   'pm': 6.13,
-  'price': 184.46,
-  'ps': 15.34,
-  'pxd': '2026-11-12',
+  'price': 184.16,
+  'ps': 15.32,
+  'pxd': '2026-11-13',
   'r40': 59.1,
   'revB': 4.28,
   'revG': 33.21,
@@ -1536,7 +1542,7 @@ STOCKS = [{'an': 61,
   'epsG': 9.1,
   'ex': 'NASDAQ',
   'fcfB': 3.22,
-  'fpe': 36.51,
+  'fpe': 36.82,
   'fvAvg': 478.3,
   'fvMax': 685.0,
   'fvMin': 324.0,
@@ -1546,14 +1552,14 @@ STOCKS = [{'an': 61,
   'hi52': 603.88,
   'jan2': 566.78,
   'lo52': 328.57,
-  'mcapB': 155.39,
+  'mcapB': 156.7,
   'name': 'Intuitive Surgical',
-  'pe': 53.19,
-  'peg': 2.34,
+  'pe': 53.64,
+  'peg': 2.36,
   'pm': 25.54,
-  'price': 439.89,
-  'ps': 13.42,
-  'pxd': '2026-11-12',
+  'price': 443.59,
+  'ps': 13.53,
+  'pxd': '2026-11-13',
   'r40': 48.3,
   'revB': 11.58,
   'revG': 20.45,
@@ -1568,7 +1574,7 @@ STOCKS = [{'an': 61,
   'epsG': 47.7,
   'ex': 'NYSE',
   'fcfB': -28.73,
-  'fpe': 14.92,
+  'fpe': 14.71,
   'fvAvg': 236.54,
   'fvMax': 400.0,
   'fvMin': 110.0,
@@ -1578,14 +1584,14 @@ STOCKS = [{'an': 61,
   'hi52': 345.72,
   'jan2': 193.84,
   'lo52': 114.5,
-  'mcapB': 384.36,
+  'mcapB': 379.04,
   'name': 'Oracle',
-  'pe': 19.92,
-  'peg': 0.5,
+  'pe': 19.64,
+  'peg': 0.49,
   'pm': 26.36,
-  'price': 127.11,
-  'ps': 5.35,
-  'pxd': '2026-11-12',
+  'price': 125.35,
+  'ps': 5.28,
+  'pxd': '2026-11-13',
   'r40': -18.4,
   'revB': 71.78,
   'revG': 21.6,
@@ -1600,7 +1606,7 @@ STOCKS = [{'an': 61,
   'epsG': 20.78,
   'ex': 'NYSE',
   'fcfB': 21.19,
-  'fpe': 28.85,
+  'fpe': 29.22,
   'fqd': '2026-09-30',
   'fvAvg': 426.82,
   'fvMax': 480.0,
@@ -1608,17 +1614,17 @@ STOCKS = [{'an': 61,
   'fvd': '2026-10-28',
   'g': 8,
   'gm': 80.18,
-  'hi52': 425.51,
+  'hi52': 425.76,
   'jan2': 349.77,
   'lo52': 293.89,
-  'mcapB': 771.52,
+  'mcapB': 781.52,
   'name': 'Visa',
-  'pe': 34.12,
-  'peg': 2.0,
+  'pe': 34.56,
+  'peg': 2.03,
   'pm': 51.21,
-  'price': 420.31,
-  'ps': 16.81,
-  'pxd': '2026-11-12',
+  'price': 425.76,
+  'ps': 17.03,
+  'pxd': '2026-11-13',
   'r40': 60.92,
   'revB': 45.9,
   'revG': 14.75,
@@ -1633,7 +1639,7 @@ STOCKS = [{'an': 61,
   'epsG': -10.3,
   'ex': 'NASDAQ',
   'fcfB': 3.02,
-  'fpe': 32.73,
+  'fpe': 31.33,
   'fqd': '2026-09-30',
   'fvAvg': 134.9,
   'fvMax': 170.0,
@@ -1644,14 +1650,14 @@ STOCKS = [{'an': 61,
   'hi52': 153.86,
   'jan2': 115.27,
   'lo52': 59.68,
-  'mcapB': 73.25,
+  'mcapB': 70.11,
   'name': 'Robinhood Markets',
-  'pe': 37.66,
-  'peg': 1.58,
+  'pe': 36.04,
+  'peg': 1.51,
   'pm': 39.2,
-  'price': 81.35,
-  'ps': 14.42,
-  'pxd': '2026-11-12',
+  'price': 77.86,
+  'ps': 13.8,
+  'pxd': '2026-11-13',
   'r40': 80.2,
   'revB': 5.08,
   'revG': 20.8,
@@ -1666,7 +1672,7 @@ STOCKS = [{'an': 61,
   'epsG': -75.0,
   'ex': 'NASDAQ',
   'fcfB': 4.11,
-  'fpe': 76.97,
+  'fpe': 76.87,
   'fvAvg': 398.52,
   'fvMax': 525.0,
   'fvMin': 190.0,
@@ -1676,14 +1682,14 @@ STOCKS = [{'an': 61,
   'hi52': 419.91,
   'jan2': 184.81,
   'lo52': 139.57,
-  'mcapB': 263.93,
+  'mcapB': 263.59,
   'name': 'Palo Alto Networks',
-  'pe': 806.65,
-  'peg': 4.1,
+  'pe': 805.6,
+  'peg': 4.09,
   'pm': 2.67,
-  'price': 322.66,
-  'ps': 22.99,
-  'pxd': '2026-11-12',
+  'price': 322.24,
+  'ps': 22.96,
+  'pxd': '2026-11-13',
   'r40': 60.3,
   'revB': 11.48,
   'revG': 24.5,
@@ -1699,7 +1705,7 @@ STOCKS = [{'an': 61,
   'epsG': None,
   'ex': 'NASDAQ',
   'fcfB': 1.53,
-  'fpe': 162.72,
+  'fpe': 160.41,
   'fvAvg': 247.25,
   'fvMax': 325.0,
   'fvMin': 132.0,
@@ -1709,14 +1715,14 @@ STOCKS = [{'an': 61,
   'hi52': 278.86,
   'jan2': 118.5,
   'lo52': 85.68,
-  'mcapB': 235.89,
+  'mcapB': 232.54,
   'name': 'CrowdStrike',
-  'pe': 5746.75,
-  'peg': 5.55,
+  'pe': 5665.25,
+  'peg': 5.47,
   'pm': 0.83,
-  'price': 229.87,
-  'ps': 43.76,
-  'pxd': '2026-11-12',
+  'price': 226.61,
+  'ps': 43.14,
+  'pxd': '2026-11-13',
   'r40': 52.5,
   'revB': 5.39,
   'revG': 24.2,
@@ -1731,7 +1737,7 @@ STOCKS = [{'an': 61,
   'epsG': 26.3,
   'ex': 'NASDAQ',
   'fcfB': 3.43,
-  'fpe': 36.88,
+  'fpe': 36.22,
   'fqd': '2026-09-30',
   'fvAvg': 169.31,
   'fvMax': 225.0,
@@ -1742,14 +1748,14 @@ STOCKS = [{'an': 61,
   'hi52': 194.75,
   'jan2': 79.22,
   'lo52': 70.12,
-  'mcapB': 94.9,
+  'mcapB': 93.2,
   'name': 'Fortinet',
-  'pe': 42.2,
-  'peg': 2.26,
+  'pe': 41.44,
+  'peg': 2.22,
   'pm': 28.96,
-  'price': 129.54,
-  'ps': 12.04,
-  'pxd': '2026-11-12',
+  'price': 127.22,
+  'ps': 11.82,
+  'pxd': '2026-11-13',
   'r40': 63.8,
   'revB': 7.88,
   'revG': 20.23,
@@ -1764,7 +1770,7 @@ STOCKS = [{'an': 61,
   'epsG': None,
   'ex': 'NYSE',
   'fcfB': 0.32,
-  'fpe': 215.04,
+  'fpe': 206.47,
   'fqd': '2026-09-30',
   'fvAvg': 343.42,
   'fvMax': 430.0,
@@ -1775,14 +1781,14 @@ STOCKS = [{'an': 61,
   'hi52': 360.93,
   'jan2': 182.78,
   'lo52': 158.83,
-  'mcapB': 113.06,
+  'mcapB': 108.56,
   'name': 'Cloudflare',
   'pe': None,
-  'peg': 4.31,
+  'peg': 4.14,
   'pm': -8.75,
-  'price': 318.5,
-  'ps': 41.41,
-  'pxd': '2026-11-12',
+  'price': 305.81,
+  'ps': 39.76,
+  'pxd': '2026-11-13',
   'r40': 37.8,
   'revB': 2.73,
   'revG': 26.06,
@@ -1797,7 +1803,7 @@ STOCKS = [{'an': 61,
   'epsG': 13.7,
   'ex': 'NYSE',
   'fcfB': 0.37,
-  'fpe': 24.9,
+  'fpe': 24.7,
   'fqd': '2026-09-30',
   'fvAvg': 209.44,
   'fvMax': 290.0,
@@ -1807,15 +1813,15 @@ STOCKS = [{'an': 61,
   'gm': 22.08,
   'hi52': 241.82,
   'jan2': 174.53,
-  'lo52': 123.99,
-  'mcapB': 11.47,
+  'lo52': 122.97,
+  'mcapB': 11.38,
   'name': 'BWX Technologies',
-  'pe': 30.46,
-  'peg': 1.87,
+  'pe': 30.21,
+  'peg': 1.85,
   'pm': 10.44,
-  'price': 123.99,
-  'ps': 3.19,
-  'pxd': '2026-11-12',
+  'price': 122.97,
+  'ps': 3.16,
+  'pxd': '2026-11-13',
   'r40': 22.9,
   'revB': 3.6,
   'revG': 12.6,
@@ -1830,7 +1836,7 @@ STOCKS = [{'an': 61,
   'epsG': 522.1,
   'ex': 'NYSE',
   'fcfB': 17.11,
-  'fpe': 38.96,
+  'fpe': 38.23,
   'fqd': '2026-09-30',
   'fvAvg': 1224.0,
   'fvMax': 1450.0,
@@ -1841,14 +1847,14 @@ STOCKS = [{'an': 61,
   'hi52': 1195.94,
   'jan2': 661.19,
   'lo52': 530.16,
-  'mcapB': 217.99,
+  'mcapB': 213.9,
   'name': 'GE Vernova',
-  'pe': 21.43,
-  'peg': 0.99,
+  'pe': 21.03,
+  'peg': 0.97,
   'pm': 23.52,
-  'price': 818.49,
-  'ps': 4.95,
-  'pxd': '2026-11-12',
+  'price': 803.13,
+  'ps': 4.86,
+  'pxd': '2026-11-13',
   'r40': 55.8,
   'revB': 44.04,
   'revG': 16.91,
@@ -1863,7 +1869,7 @@ STOCKS = [{'an': 61,
   'epsG': 0.2,
   'ex': 'NYSE',
   'fcfB': 3.8,
-  'fpe': 23.68,
+  'fpe': 23.28,
   'fqd': '2026-09-30',
   'fvAvg': 485.47,
   'fvMax': 534.0,
@@ -1874,14 +1880,14 @@ STOCKS = [{'an': 61,
   'hi52': 459.96,
   'jan2': 323.21,
   'lo52': 311.92,
-  'mcapB': 139.43,
+  'mcapB': 137.07,
   'name': 'Eaton',
-  'pe': 35.87,
-  'peg': 1.79,
+  'pe': 35.26,
+  'peg': 1.76,
   'pm': 12.18,
-  'price': 359.04,
-  'ps': 4.36,
-  'pxd': '2026-11-12',
+  'price': 352.97,
+  'ps': 4.29,
+  'pxd': '2026-11-13',
   'r40': 32.0,
   'revB': 31.98,
   'revG': 20.1,
@@ -1896,7 +1902,7 @@ STOCKS = [{'an': 61,
   'epsG': 101.9,
   'ex': 'NYSE',
   'fcfB': 3.15,
-  'fpe': 26.45,
+  'fpe': 25.49,
   'fqd': '2026-09-30',
   'fvAvg': 333.0,
   'fvMax': 427.0,
@@ -1907,14 +1913,14 @@ STOCKS = [{'an': 61,
   'hi52': 379.93,
   'jan2': 169.47,
   'lo52': 118.7,
-  'mcapB': 80.7,
+  'mcapB': 77.79,
   'name': 'Vertiv Holdings',
-  'pe': 39.19,
-  'peg': 0.67,
+  'pe': 37.77,
+  'peg': 0.65,
   'pm': 16.0,
-  'price': 209.64,
-  'ps': 6.15,
-  'pxd': '2026-11-12',
+  'price': 202.07,
+  'ps': 5.93,
+  'pxd': '2026-11-13',
   'r40': 59.3,
   'revB': 13.12,
   'revG': 35.27,
@@ -1929,7 +1935,7 @@ STOCKS = [{'an': 61,
   'epsG': 62.5,
   'ex': 'NYSE',
   'fcfB': 3.21,
-  'fpe': 32.59,
+  'fpe': 32.37,
   'fqd': '2026-09-30',
   'fvAvg': 760.39,
   'fvMax': 945.0,
@@ -1940,14 +1946,14 @@ STOCKS = [{'an': 61,
   'hi52': 788.75,
   'jan2': 439.53,
   'lo52': 363.01,
-  'mcapB': 91.15,
+  'mcapB': 90.53,
   'name': 'Quanta Services',
-  'pe': 54.86,
-  'peg': 1.57,
+  'pe': 54.48,
+  'peg': 1.56,
   'pm': 4.52,
-  'price': 606.16,
-  'ps': 2.44,
-  'pxd': '2026-11-12',
+  'price': 602.01,
+  'ps': 2.42,
+  'pxd': '2026-11-13',
   'r40': 39.5,
   'revB': 37.29,
   'revG': 30.9,
@@ -1962,7 +1968,7 @@ STOCKS = [{'an': 61,
   'epsG': None,
   'ex': 'NYSE',
   'fcfB': 0.437,
-  'fpe': 41.67,
+  'fpe': 39.62,
   'fvAvg': 284.77,
   'fvMax': 380.0,
   'fvMin': 102.0,
@@ -1972,14 +1978,14 @@ STOCKS = [{'an': 61,
   'hi52': 322.83,
   'jan2': 98.69,
   'lo52': 18.12,
-  'mcapB': 59.47,
+  'mcapB': 56.54,
   'name': 'Bloom Energy',
-  'pe': 117.4,
-  'peg': 0.44,
+  'pe': 111.62,
+  'peg': 0.42,
   'pm': 13.53,
-  'price': 201.93,
-  'ps': 15.53,
-  'pxd': '2026-11-12',
+  'price': 191.99,
+  'ps': 14.77,
+  'pxd': '2026-11-13',
   'r40': 122.0,
   'revB': 3.83,
   'revG': 110.59,
@@ -1994,7 +2000,7 @@ STOCKS = [{'an': 61,
   'epsG': 42.7,
   'ex': 'NASDAQ',
   'fcfB': 1.32,
-  'fpe': 22.33,
+  'fpe': 22.16,
   'fqd': '2026-09-30',
   'fvAvg': 338.07,
   'fvMax': 395.0,
@@ -2005,14 +2011,14 @@ STOCKS = [{'an': 61,
   'hi52': 412.7,
   'jan2': 358.0,
   'lo52': 228.63,
-  'mcapB': 100.85,
+  'mcapB': 100.06,
   'name': 'Constellation Energy',
-  'pe': 22.7,
-  'peg': 1.36,
+  'pe': 22.52,
+  'peg': 1.35,
   'pm': 12.76,
-  'price': 282.4,
-  'ps': 2.94,
-  'pxd': '2026-11-12',
+  'price': 280.2,
+  'ps': 2.92,
+  'pxd': '2026-11-13',
   'r40': 41.7,
   'revB': 34.25,
   'revG': 37.9,
@@ -2027,7 +2033,7 @@ STOCKS = [{'an': 61,
   'epsG': 167.4,
   'ex': 'NYSE',
   'fcfB': 2.61,
-  'fpe': 14.23,
+  'fpe': 14.07,
   'fqd': '2026-09-30',
   'fvAvg': 208.86,
   'fvMax': 305.0,
@@ -2038,14 +2044,14 @@ STOCKS = [{'an': 61,
   'hi52': 219.82,
   'jan2': 163.89,
   'lo52': 131.18,
-  'mcapB': 45.37,
+  'mcapB': 44.86,
   'name': 'Vistra',
-  'pe': 17.96,
+  'pe': 17.76,
   'peg': 0.38,
   'pm': 13.15,
-  'price': 134.51,
-  'ps': 2.2,
-  'pxd': '2026-11-12',
+  'price': 133.01,
+  'ps': 2.18,
+  'pxd': '2026-11-13',
   'r40': 32.5,
   'revB': 20.59,
   'revG': 19.8,
@@ -2060,7 +2066,7 @@ STOCKS = [{'an': 61,
   'epsG': 20.4,
   'ex': 'NASDAQ',
   'fcfB': 136.68,
-  'fpe': 38.7,
+  'fpe': 38.85,
   'fqd': '2026-09-26',
   'fvAvg': 333.28,
   'fvMax': 405.0,
@@ -2068,17 +2074,17 @@ STOCKS = [{'an': 61,
   'fvd': '2026-11-04',
   'g': 8,
   'gm': 48.65,
-  'hi52': 354.88,
+  'hi52': 356.27,
   'jan2': 270.51,
   'lo52': 201.5,
-  'mcapB': 5181.15,
+  'mcapB': 5201.44,
   'name': 'Apple',
-  'pe': 39.52,
-  'peg': 3.49,
+  'pe': 39.67,
+  'peg': 3.5,
   'pm': 27.61,
-  'price': 354.88,
-  'ps': 10.82,
-  'pxd': '2026-11-12',
+  'price': 356.27,
+  'ps': 10.86,
+  'pxd': '2026-11-13',
   'r40': 43.6,
   'revB': 478.8,
   'revG': 15.1,
@@ -2093,7 +2099,7 @@ STOCKS = [{'an': 61,
   'epsG': 49.0,
   'ex': 'NASDAQ',
   'fcfB': 11.38,
-  'fpe': 17.47,
+  'fpe': 17.32,
   'fvAvg': 84.83,
   'fvMax': 126.0,
   'fvMin': 57.0,
@@ -2103,14 +2109,14 @@ STOCKS = [{'an': 61,
   'hi52': 126.71,
   'jan2': None,
   'lo52': 61.99,
-  'mcapB': 261.04,
+  'mcapB': 258.79,
   'name': 'Netflix',
-  'pe': 18.17,
-  'peg': 0.83,
+  'pe': 18.01,
+  'peg': 0.82,
   'pm': 29.69,
-  'price': 62.69,
-  'ps': 5.25,
-  'pxd': '2026-11-12',
+  'price': 62.15,
+  'ps': 5.2,
+  'pxd': '2026-11-13',
   'r40': 34.7,
   'revB': 49.73,
   'revG': 11.8,
@@ -2125,7 +2131,7 @@ STOCKS = [{'an': 61,
   'epsG': 74.3,
   'ex': 'NASDAQ',
   'fcfB': 4.88,
-  'fpe': 21.93,
+  'fpe': 22.79,
   'fqd': '2026-09-30',
   'fvAvg': 471.69,
   'fvMax': 790.0,
@@ -2136,14 +2142,14 @@ STOCKS = [{'an': 61,
   'hi52': 745.61,
   'jan2': 618.32,
   'lo52': 228.85,
-  'mcapB': 132.25,
+  'mcapB': 137.43,
   'name': 'AppLovin',
-  'pe': 26.51,
-  'peg': 0.67,
+  'pe': 27.55,
+  'peg': 0.7,
   'pm': 65.89,
-  'price': 393.68,
-  'ps': 17.38,
-  'pxd': '2026-11-12',
+  'price': 409.1,
+  'ps': 18.06,
+  'pxd': '2026-11-13',
   'r40': 121.9,
   'revB': 7.61,
   'revG': 57.79,
@@ -2158,7 +2164,7 @@ STOCKS = [{'an': 61,
   'epsG': 21.9,
   'ex': 'NYSE',
   'fcfB': 4.33,
-  'fpe': 19.01,
+  'fpe': 19.22,
   'fqd': '2026-09-30',
   'fvAvg': 150.04,
   'fvMax': 195.0,
@@ -2169,14 +2175,14 @@ STOCKS = [{'an': 61,
   'hi52': 199.3,
   'jan2': 133.52,
   'lo52': 74.01,
-  'mcapB': 45.65,
+  'mcapB': 46.16,
   'name': 'Sea Limited',
-  'pe': 26.81,
-  'peg': 0.9,
+  'pe': 27.11,
+  'peg': 0.91,
   'pm': 5.97,
-  'price': 74.52,
-  'ps': 1.51,
-  'pxd': '2026-11-12',
+  'price': 75.36,
+  'ps': 1.53,
+  'pxd': '2026-11-13',
   'r40': 58.4,
   'revB': 30.32,
   'revG': 44.11,
@@ -2191,7 +2197,7 @@ STOCKS = [{'an': 61,
   'epsG': 35.5,
   'ex': 'NYSE',
   'fcfB': 9.62,
-  'fpe': 20.9,
+  'fpe': 20.72,
   'fqd': '2026-09-30',
   'fvAvg': 945.76,
   'fvMax': 1155.0,
@@ -2202,14 +2208,14 @@ STOCKS = [{'an': 61,
   'hi52': 1073.46,
   'jan2': None,
   'lo52': 405.46,
-  'mcapB': 278.22,
+  'mcapB': 275.88,
   'name': 'Caterpillar',
-  'pe': 23.76,
-  'peg': 1.14,
+  'pe': 23.56,
+  'peg': 1.13,
   'pm': 15.21,
-  'price': 605.28,
-  'ps': 3.58,
-  'pxd': '2026-11-12',
+  'price': 600.2,
+  'ps': 3.55,
+  'pxd': '2026-11-13',
   'r40': 27.4,
   'revB': 77.77,
   'revG': 15.1,
@@ -2224,7 +2230,7 @@ STOCKS = [{'an': 61,
   'epsG': 15.62,
   'ex': 'NYSE',
   'fcfB': 8.02,
-  'fpe': 37.23,
+  'fpe': 37.34,
   'fvAvg': 378.9,
   'fvMax': 435.0,
   'fvMin': 280.0,
@@ -2234,14 +2240,14 @@ STOCKS = [{'an': 61,
   'hi52': 388.84,
   'jan2': None,
   'lo52': 263.8,
-  'mcapB': 343.28,
+  'mcapB': 344.27,
   'name': 'GE Aerospace',
-  'pe': 38.16,
-  'peg': 2.37,
+  'pe': 38.27,
+  'peg': 2.38,
   'pm': 17.31,
-  'price': 330.86,
-  'ps': 6.53,
-  'pxd': '2026-11-12',
+  'price': 331.81,
+  'ps': 6.55,
+  'pxd': '2026-11-13',
   'r40': 34.9,
   'revB': 52.58,
   'revG': 19.63,
@@ -2256,7 +2262,7 @@ STOCKS = [{'an': 61,
   'epsG': 74.7,
   'ex': 'NASDAQ',
   'fcfB': 0.471,
-  'fpe': 13.42,
+  'fpe': 13.01,
   'fqd': '2026-09-30',
   'fvAvg': 836.71,
   'fvMax': 1000.0,
@@ -2267,14 +2273,14 @@ STOCKS = [{'an': 61,
   'hi52': 1005.68,
   'jan2': 306.22,
   'lo52': 263.45,
-  'mcapB': 9.23,
+  'mcapB': 8.95,
   'name': 'Sterling Infrastructure',
-  'pe': 16.92,
-  'peg': 0.34,
+  'pe': 16.4,
+  'peg': 0.33,
   'pm': 12.85,
-  'price': 301.6,
-  'ps': 2.14,
-  'pxd': '2026-11-12',
+  'price': 292.39,
+  'ps': 2.07,
+  'pxd': '2026-11-13',
   'r40': 104.1,
   'revB': 4.31,
   'revG': 93.15,
@@ -2289,7 +2295,7 @@ STOCKS = [{'an': 61,
   'epsG': 60.3,
   'ex': 'NASDAQ',
   'fcfB': 0.27,
-  'fpe': 30.59,
+  'fpe': 28.46,
   'fqd': '2026-09-30',
   'fvAvg': 312.93,
   'fvMax': 355.0,
@@ -2300,14 +2306,14 @@ STOCKS = [{'an': 61,
   'hi52': 319.94,
   'jan2': None,
   'lo52': 64.59,
-  'mcapB': 17.84,
+  'mcapB': 16.6,
   'name': 'Tower Semiconductor',
-  'pe': 50.76,
-  'peg': 0.71,
+  'pe': 47.23,
+  'peg': 0.66,
   'pm': 19.36,
-  'price': 157.86,
-  'ps': 9.7,
-  'pxd': '2026-11-12',
+  'price': 146.89,
+  'ps': 9.03,
+  'pxd': '2026-11-13',
   'r40': 32.0,
   'revB': 1.84,
   'revG': 17.5,
@@ -2322,7 +2328,7 @@ STOCKS = [{'an': 61,
   'epsG': None,
   'ex': 'NYSE',
   'fcfB': 0.814,
-  'fpe': 28.25,
+  'fpe': 26.96,
   'fvAvg': 512.99,
   'fvMax': 660.0,
   'fvMin': 347.0,
@@ -2332,14 +2338,14 @@ STOCKS = [{'an': 61,
   'hi52': None,
   'jan2': None,
   'lo52': None,
-  'mcapB': 41.68,
+  'mcapB': 39.77,
   'name': 'Ciena',
-  'pe': 65.77,
-  'peg': 0.38,
+  'pe': 62.76,
+  'peg': 0.36,
   'pm': 10.87,
-  'price': 293.99,
-  'ps': 6.92,
-  'pxd': '2026-11-12',
+  'price': 280.54,
+  'ps': 6.6,
+  'pxd': '2026-11-13',
   'r40': 46.1,
   'revB': 6.021,
   'revG': 32.57,
@@ -4757,16 +4763,20 @@ TRADES = [{'action': 'BUY',
   'shares': 150,
   't': 'SGOV'},
  {'action': 'SELL',
-  'amount': 11576.89,
+  'amount': 11492.34,
   'cost_released': 10921.04,
   'date': 'Nov 10, 2026',
   'est': True,
-  'note': 'RE-ESTIMATED 12 Nov at the rate POEMS used for the purchase (1.12395): proceeds EUR 10,300.18 = 11,576.89, '
-          'cost 10,921.04, realised +655.85. Settles 12 Nov - final USD credit to confirm from the transaction '
-          'details. | AMD FRANKFURT LOT SOLD (swap leg 1) - POEMS, Done ~23:00 Bangkok, 22 sh at EUR 469.95 (first '
-          'order at EUR 480 withdrawn). Gross EUR 10,338.90 less est. charges EUR 38.72 = EUR 10,300.18; cost EUR '
-          '9,716.63 -> realised EUR 583.55. USD at the POEMS published rate 1.12203: proceeds 11,557.11, cost '
-          '10,902.39, realised +654.72 - true up to the settlement FX. Price column is in EUR.',
+  'note': 'TRUED UP 15 Nov from the POEMS live cash screen: the Frankfurt sale was credited in EUROS, not converted - '
+          'EUR 10,293.18 held (net of ~EUR 45.72 charges). Booked at the 10 Nov (sale-date) EUR/USD close 1.1165 = USD '
+          '11,492.34; cost 10,921.04 -> realised +571.30 (was +655.85 est.). Stays an estimate until the euros are '
+          'converted to USD; the later FX move is a cash gain/loss, not a stock gain. || RE-ESTIMATED 12 Nov at the '
+          'rate POEMS used for the purchase (1.12395): proceeds EUR 10,300.18 = 11,576.89, cost 10,921.04, realised '
+          '+655.85. Settles 12 Nov - final USD credit to confirm from the transaction details. | AMD FRANKFURT LOT '
+          'SOLD (swap leg 1) - POEMS, Done ~23:00 Bangkok, 22 sh at EUR 469.95 (first order at EUR 480 withdrawn). '
+          'Gross EUR 10,338.90 less est. charges EUR 38.72 = EUR 10,300.18; cost EUR 9,716.63 -> realised EUR 583.55. '
+          'USD at the POEMS published rate 1.12203: proceeds 11,557.11, cost 10,902.39, realised +654.72 - true up to '
+          'the settlement FX. Price column is in EUR.',
   'price': 469.95,
   'realised': 655.85,
   'shares': 22,
@@ -4816,64 +4826,67 @@ TRADES = [{'action': 'BUY',
 
 SELLPLAN = []
 
-CASH = {'amount': 15519.81,
- 'asof': 'Nov 12, 2026 22:30 Bangkok - after the CAT buy 9 sh at 594.9699 = 5,366.19 (est. commission): 20,886.00 - '
-         "5,366.19 = 15,519.81. To be read against the POEMS Live Cash Balance; the Frankfurt sale's USD credit "
-         '(~11,576.89) is still an estimate. || PREVIOUS: Nov 12, 2026 06:28 SGT - POEMS Live Cash Balance USD '
-         '24,913.98, BEFORE settlement of the 10 Nov trades (11 Nov was a US bank holiday, so they settle 12 Nov). '
-         'Path: 20,793.35 + SGOV sale 15,041.67 = 35,835.02 (POEMS, 10 Nov) - Frankfurt AMD purchase 10,921.04 '
-         '(settled 11 Nov) = 24,913.98. Board cash after settlement = 24,913.98 + Frankfurt sale ~11,576.89 (EUR '
-         '10,300.18, est.) - AMD 10,083.74 - V 2,115.56 - VST 3,405.57 = 20,886.00. No EUR balance shown. || PREVIOUS: '
-         "Nov 10, 2026 23:20 Bangkok - after tonight's four fills (POEMS Orders screen 23:14): 24,932.95 + AMD "
-         'Frankfurt sale 11,557.11 (EUR 10,300.18 at 1.12203) - AMD Nasdaq 10,083.74 - V 2,115.56 - VST 3,405.57 = '
-         '20,885.19 (commissions estimated). About EUR 583.55 of this may sit as a EUR balance (the net of the two '
-         'Frankfurt legs) - to confirm on the 11 Nov Live Cash Balance. || PREVIOUS: Nov 10, 2026 07:39 Bangkok - '
-         'POEMS Live Cash Balance USD 20,793.35, BEFORE settlement of the 9 Nov trades. Board cash after settlement = '
-         '20,793.35 + SGOV sale 15,041.99 (est.) - AMD Frankfurt buy 10,902.39 (EUR 9,716.63 at POEMS rate 1.12203; '
-         "settles in EUR 11 Nov - actual FX to true up) = 24,932.95. The app's SGD buying power (30,745.69) is not "
-         'comparable. || PREVIOUS: Nov 9, 2026 - POEMS USD transaction details (updated 07:45 AM, before the 9 Nov '
-         'orders): balance c/f 20,793.35. Since the 30 Oct CAT buy: +7.22 already in the POEMS 1 Nov brought-forward '
-         '(24,982.52 vs board 24,975.30 - a late-October credit to itemise from the October statement), +29.51 ASML '
-         'dividend (5 Nov; 17 sh x $2.095824 less 15% Dutch tax and fees), +225.76 SGOV dividend (6 Nov; 694 sh x '
-         '$0.328581, US tax 0%). 20,530.86 + 262.49 = 20,793.35, ties to POEMS. The 9 Nov SGOV sale (150 @ 100.495) '
-         'and AMD buy (22 sh on FWB) are booked from the 10 Nov positions screen. || PREVIOUS: Oct 30, 2026 21:35 '
-         'Bangkok - after CAT buy 7 sh at 633.5642 = 4,444.44 (est. commission): 24,975.30 - 4,444.44 = 20,530.86. To '
-         "be read against the POEMS Live Cash Balance (the app's SGD buying power is not comparable). || PREVIOUS: Oct "
-         '29, 2026 22:16 Bangkok - POEMS Cash Balance (Live) 29,714.05 after the SGOV sale (10,047.25), before the '
-         'MSFT buy; less MSFT 9 sh at 525.4031 = 4,738.75 (est. commission) = 24,975.30. Board now matches POEMS to '
-         'the cent (the +0.10 carried since 19 Oct is removed). || PREVIOUS: Oct 28, 2026 - after SGOV sale 100 sh at '
-         '100.6901 = 10,047.46 net of est. commission: 19,666.90 + 10,047.46 = 29,714.36 (proceeds settle 29 Oct). '
-         'POEMS Live Cash Balance read 22:30 Bangkok BEFORE the sale: 19,666.80 (board 19,666.90 - 10 cents, carried '
-         'from 26 Oct). SGOV 694 sh parked. || PREVIOUS: Oct 26, 2026 - after CRDO buy 34 sh at 148.76 = 5,068.66 '
-         'incl. est. commission: 24,735.56 - 5,068.66 = 19,666.90. POEMS Live Cash Balance read 21:15 Bangkok before '
-         "the order: 24,735.46 (10 cents below the board's 24,735.56 - to itemise at the next statement). SGOV 794 sh "
-         'parked. || PREVIOUS: Oct 22, 2026 - after META buy 18 sh at 658.5807 = 11,879.82 incl. est. commission: '
-         "36,615.38 - 11,879.82 = 24,735.56. SGOV 794 sh parked. || PREVIOUS: Oct 19, 2026 - after tonight's two "
-         'fills: CRWD sale +4,573.49 (est. fees) and NVDA buy -6,921.92 (est. commission): 38,963.81 + 4,573.49 - '
-         '6,921.92 = 36,615.38. CRWD proceeds settle T+1. SGOV 794 sh still parked. To be read against the POEMS Live '
-         'Cash Balance. || PREVIOUS: Oct 16, 2026 - POEMS Live Cash Balance 06:45 am Bangkok: USD 55,058.84, shown '
-         'BEFORE settlement of the 15 Oct buys. Board cash = 55,058.84 less TSM 9,621.29 and ASML 6,473.74 = 38,963.81 '
-         'after settlement. Versus the derived 55,050.83, POEMS is +8.01 higher with no trades in between - a small '
-         'credit (interest or dividend) to itemise from the October statement with the earlier +146.84 and +96.46. '
-         'Positions reconciled the same morning: 37 stock lines + SGOV, cost 777,052.88, match POEMS to the cent, and '
-         'the POEMS cost on TSM (64,477.71) and ASML (22,867.80) confirms the two commission estimates exactly. || '
-         "PREVIOUS: Oct 15, 2026 - after tonight's two fills (TSM 23 sh 9,621.29, ASML 4 sh 6,473.74, both incl. "
-         'estimated commission) totalling 16,095.03: 55,050.83 - 16,095.03 = 38,955.80. SGOV 79,991.56 still parked, '
-         'so total liquid = 118,947.36. To be read against the POEMS Live Cash Balance after T+1 settlement. || '
-         'PREVIOUS: Oct 13, 2026 - SGOV PARK FILLED: 794 sh at 100.5299 (POEMS, Done 11:04:13 pm Bangkok) = gross '
-         '79,820.74 + est. commission 170.82 = 79,991.56. Free cash 135,042.39 - 79,991.56 = 55,050.83. SGOV held as a '
-         'cash-equivalent (see parked), so total liquid = 135,042.39. To be read against the POEMS Live Cash Balance '
-         'after T+1 settlement. || PREVIOUS: Oct 13, 2026 - after the 12 Oct fills (APH, CRDO, V) totalling 12,973.99 '
-         'incl. estimated commission: 148,016.38 - 12,973.99 = 135,042.39. To be read against the POEMS Live Cash '
-         'Balance after settlement. || PREVIOUS: Oct 10, 2026 - POEMS Live Cash Balance 07:53 am Bangkok: USD '
-         '170,344.36, shown BEFORE settlement of the 9 Oct buys. Board cash = 170,344.36 less MRVL 12,712.45 and AMAT '
-         '9,615.53 = 148,016.38 after settlement. Versus the 6 Oct balance of 170,247.90, POEMS is +96.46 higher with '
-         'no trades in between - a further early-October credit (most likely dividends), to itemise from the October '
-         'statement together with the earlier +146.84. Positions reconciled the same morning: 37 lines, cost '
-         '667,992.30, match POEMS to the cent. || PREVIOUS: Oct 6, 2026 - POEMS Live Cash Balance 170,247.90. '
-         'RECONCILED 7 Oct: POEMS statement cash at 30 Sep = 168,539.69; less MU buy 1 Oct 14,703.40, plus ORCL '
-         '10,851.50 and CRWD 5,413.27 sale proceeds = 170,101.06; the remaining +146.84 is early-October credits (most '
-         'likely dividends) to itemise from the October statement. (The earlier +172.61 figure came from a '
+CASH = {'amount': 15289.09,
+ 'asof': 'Nov 15, 2026 21:08 SGT - POEMS Live Cash Balance: USD 3,942.92 + EUR 10,293.18. The 10-12 Nov trades have '
+         'settled; USD ties exactly (24,913.98 - AMD 10,083.74 - V 2,115.56 - VST 3,405.57 - CAT 5,366.19 = 3,942.92). '
+         'The Frankfurt sale was credited in EUR (board had assumed a USD credit of 11,576.89). EUR valued at 1.1023 '
+         '(13 Nov close) = USD 11,346.17; board cash = 15,289.09. || PREVIOUS: Nov 12, 2026 22:30 Bangkok - after the '
+         'CAT buy 9 sh at 594.9699 = 5,366.19 (est. commission): 20,886.00 - 5,366.19 = 15,519.81. To be read against '
+         "the POEMS Live Cash Balance; the Frankfurt sale's USD credit (~11,576.89) is still an estimate. || PREVIOUS: "
+         'Nov 12, 2026 06:28 SGT - POEMS Live Cash Balance USD 24,913.98, BEFORE settlement of the 10 Nov trades (11 '
+         'Nov was a US bank holiday, so they settle 12 Nov). Path: 20,793.35 + SGOV sale 15,041.67 = 35,835.02 (POEMS, '
+         '10 Nov) - Frankfurt AMD purchase 10,921.04 (settled 11 Nov) = 24,913.98. Board cash after settlement = '
+         '24,913.98 + Frankfurt sale ~11,576.89 (EUR 10,300.18, est.) - AMD 10,083.74 - V 2,115.56 - VST 3,405.57 = '
+         "20,886.00. No EUR balance shown. || PREVIOUS: Nov 10, 2026 23:20 Bangkok - after tonight's four fills (POEMS "
+         'Orders screen 23:14): 24,932.95 + AMD Frankfurt sale 11,557.11 (EUR 10,300.18 at 1.12203) - AMD Nasdaq '
+         '10,083.74 - V 2,115.56 - VST 3,405.57 = 20,885.19 (commissions estimated). About EUR 583.55 of this may sit '
+         'as a EUR balance (the net of the two Frankfurt legs) - to confirm on the 11 Nov Live Cash Balance. || '
+         'PREVIOUS: Nov 10, 2026 07:39 Bangkok - POEMS Live Cash Balance USD 20,793.35, BEFORE settlement of the 9 Nov '
+         'trades. Board cash after settlement = 20,793.35 + SGOV sale 15,041.99 (est.) - AMD Frankfurt buy 10,902.39 '
+         "(EUR 9,716.63 at POEMS rate 1.12203; settles in EUR 11 Nov - actual FX to true up) = 24,932.95. The app's "
+         'SGD buying power (30,745.69) is not comparable. || PREVIOUS: Nov 9, 2026 - POEMS USD transaction details '
+         '(updated 07:45 AM, before the 9 Nov orders): balance c/f 20,793.35. Since the 30 Oct CAT buy: +7.22 already '
+         'in the POEMS 1 Nov brought-forward (24,982.52 vs board 24,975.30 - a late-October credit to itemise from the '
+         'October statement), +29.51 ASML dividend (5 Nov; 17 sh x $2.095824 less 15% Dutch tax and fees), +225.76 '
+         'SGOV dividend (6 Nov; 694 sh x $0.328581, US tax 0%). 20,530.86 + 262.49 = 20,793.35, ties to POEMS. The 9 '
+         'Nov SGOV sale (150 @ 100.495) and AMD buy (22 sh on FWB) are booked from the 10 Nov positions screen. || '
+         'PREVIOUS: Oct 30, 2026 21:35 Bangkok - after CAT buy 7 sh at 633.5642 = 4,444.44 (est. commission): '
+         "24,975.30 - 4,444.44 = 20,530.86. To be read against the POEMS Live Cash Balance (the app's SGD buying power "
+         'is not comparable). || PREVIOUS: Oct 29, 2026 22:16 Bangkok - POEMS Cash Balance (Live) 29,714.05 after the '
+         'SGOV sale (10,047.25), before the MSFT buy; less MSFT 9 sh at 525.4031 = 4,738.75 (est. commission) = '
+         '24,975.30. Board now matches POEMS to the cent (the +0.10 carried since 19 Oct is removed). || PREVIOUS: Oct '
+         '28, 2026 - after SGOV sale 100 sh at 100.6901 = 10,047.46 net of est. commission: 19,666.90 + 10,047.46 = '
+         '29,714.36 (proceeds settle 29 Oct). POEMS Live Cash Balance read 22:30 Bangkok BEFORE the sale: 19,666.80 '
+         '(board 19,666.90 - 10 cents, carried from 26 Oct). SGOV 694 sh parked. || PREVIOUS: Oct 26, 2026 - after '
+         'CRDO buy 34 sh at 148.76 = 5,068.66 incl. est. commission: 24,735.56 - 5,068.66 = 19,666.90. POEMS Live Cash '
+         "Balance read 21:15 Bangkok before the order: 24,735.46 (10 cents below the board's 24,735.56 - to itemise at "
+         'the next statement). SGOV 794 sh parked. || PREVIOUS: Oct 22, 2026 - after META buy 18 sh at 658.5807 = '
+         '11,879.82 incl. est. commission: 36,615.38 - 11,879.82 = 24,735.56. SGOV 794 sh parked. || PREVIOUS: Oct 19, '
+         "2026 - after tonight's two fills: CRWD sale +4,573.49 (est. fees) and NVDA buy -6,921.92 (est. commission): "
+         '38,963.81 + 4,573.49 - 6,921.92 = 36,615.38. CRWD proceeds settle T+1. SGOV 794 sh still parked. To be read '
+         'against the POEMS Live Cash Balance. || PREVIOUS: Oct 16, 2026 - POEMS Live Cash Balance 06:45 am Bangkok: '
+         'USD 55,058.84, shown BEFORE settlement of the 15 Oct buys. Board cash = 55,058.84 less TSM 9,621.29 and ASML '
+         '6,473.74 = 38,963.81 after settlement. Versus the derived 55,050.83, POEMS is +8.01 higher with no trades in '
+         'between - a small credit (interest or dividend) to itemise from the October statement with the earlier '
+         '+146.84 and +96.46. Positions reconciled the same morning: 37 stock lines + SGOV, cost 777,052.88, match '
+         'POEMS to the cent, and the POEMS cost on TSM (64,477.71) and ASML (22,867.80) confirms the two commission '
+         "estimates exactly. || PREVIOUS: Oct 15, 2026 - after tonight's two fills (TSM 23 sh 9,621.29, ASML 4 sh "
+         '6,473.74, both incl. estimated commission) totalling 16,095.03: 55,050.83 - 16,095.03 = 38,955.80. SGOV '
+         '79,991.56 still parked, so total liquid = 118,947.36. To be read against the POEMS Live Cash Balance after '
+         'T+1 settlement. || PREVIOUS: Oct 13, 2026 - SGOV PARK FILLED: 794 sh at 100.5299 (POEMS, Done 11:04:13 pm '
+         'Bangkok) = gross 79,820.74 + est. commission 170.82 = 79,991.56. Free cash 135,042.39 - 79,991.56 = '
+         '55,050.83. SGOV held as a cash-equivalent (see parked), so total liquid = 135,042.39. To be read against the '
+         'POEMS Live Cash Balance after T+1 settlement. || PREVIOUS: Oct 13, 2026 - after the 12 Oct fills (APH, CRDO, '
+         'V) totalling 12,973.99 incl. estimated commission: 148,016.38 - 12,973.99 = 135,042.39. To be read against '
+         'the POEMS Live Cash Balance after settlement. || PREVIOUS: Oct 10, 2026 - POEMS Live Cash Balance 07:53 am '
+         'Bangkok: USD 170,344.36, shown BEFORE settlement of the 9 Oct buys. Board cash = 170,344.36 less MRVL '
+         '12,712.45 and AMAT 9,615.53 = 148,016.38 after settlement. Versus the 6 Oct balance of 170,247.90, POEMS is '
+         '+96.46 higher with no trades in between - a further early-October credit (most likely dividends), to itemise '
+         'from the October statement together with the earlier +146.84. Positions reconciled the same morning: 37 '
+         'lines, cost 667,992.30, match POEMS to the cent. || PREVIOUS: Oct 6, 2026 - POEMS Live Cash Balance '
+         '170,247.90. RECONCILED 7 Oct: POEMS statement cash at 30 Sep = 168,539.69; less MU buy 1 Oct 14,703.40, plus '
+         'ORCL 10,851.50 and CRWD 5,413.27 sale proceeds = 170,101.06; the remaining +146.84 is early-October credits '
+         '(most likely dividends) to itemise from the October statement. (The earlier +172.61 figure came from a '
          'board-derived cash that was 25.77 too low.) || PREVIOUS: Oct 6, 2026 - read off the POEMS Live Cash Balance '
          'screen (09:23 am, before settlement of the 5 Oct sales): USD 170,247.90. Derived from the board: 153,810.52 '
          '+ 10,851.50 (ORCL) + 5,413.27 (CRWD) = 170,075.29; POEMS is +172.61 higher - most likely dividends/interest '
@@ -4882,7 +4895,12 @@ CASH = {'amount': 15519.81,
          'reconciled. Positions now match POEMS to the cent on all 38 lines. Cash itself is derived, not yet read off '
          'a POEMS cash screen)',
  'broker': 'POEMS (Phillip Securities)',
- 'currency': 'USD',
+ 'currency': 'USD (incl. EUR 10,293.18 = $11,346.17 at 1.1023 - to convert)',
+ 'eur': {'amount': 10293.18,
+         'note': 'Frankfurt AMD sale proceeds (10 Nov) held in EUR at POEMS - convert to USD.',
+         'rate': 1.1023,
+         'rateDate': '2026-11-13',
+         'usd': 11346.17},
  'parked': {'commission': 149.31,
             'cost': 54805.3,
             'date': '2026-10-13',
@@ -4896,9 +4914,9 @@ CASH = {'amount': 15519.81,
                         'tax': 0.0}],
             'est': True,
             'gross': 69767.75,
-            'mark': 100.52,
-            'markDate': '2026-11-11',
-            'markSrc': 'POEMS positions screen 12 Nov 06:27 SGT (after the 11 Nov close)',
+            'mark': 100.56,
+            'markDate': '2026-11-13',
+            'markSrc': 'POEMS positions screen 15 Nov 21:07 SGT (Fri 13 Nov close)',
             'name': 'iShares 0-3 Month Treasury Bond ETF',
             'note': '9 Nov: SOLD 150 at 100.495 (POEMS 5118917, Done 23:35 Bangkok): gross 15,074.25 less fees 32.58 = '
                     '15,041.67 (POEMS, credited 10 Nov). Cost released 15,111.76 (POEMS average 100.74504) -> about '
@@ -4950,7 +4968,7 @@ REALIZED = [{'amount': 897.82, 'g': 8, 't': 'HOOD'},
  {'amount': 1968.56, 'g': 2, 't': 'INTC'},
  {'amount': -1376.93, 'g': 5, 't': 'ORCL'},
  {'amount': 6072.54, 'g': 5, 't': 'CRWD'},
- {'amount': 655.85, 'g': 1, 't': 'AMD'}]
+ {'amount': 571.3, 'g': 1, 't': 'AMD'}]
 
 TOTALS = {'dividendsNote': 'November 2026 (POEMS transaction details, 9 Nov): ASML 29.51 (5 Nov, Dutch tax 15%), SGOV 225.76 (6 '
                   'Nov, US tax 0%; SGOV income counted here as dividends). Plus 7.22 unexplained late-October credit '
@@ -4966,60 +4984,67 @@ TOTALS = {'dividendsNote': 'November 2026 (POEMS transaction details, 9 Nov): AS
  'inceptionDate': 'Jul 15, 2025',
  'investedEverTHB': 27344772,
  'investedEverUSD': 854137.97,
- 'realizedTHB': 220448,
- 'realizedUSD': 6551.22,
- 'reconNote': '12 Nov 2026 POEMS reconciliation (positions 06:27 SGT, after the 11 Nov close): 36 stock lines + SGOV '
-              'match quantity and cost to the cent - total cost 798,568.02, MV 834,438.72 both tie. The Frankfurt line '
-              'is gone; AMD 74 sh cost 23,872.96, V 23 sh 8,884.61, VST 132 sh 18,282.55 confirm the 10 Nov commission '
-              'estimates exactly. Cash: transaction details to 10 Nov = 35,835.02 (SGOV sale credited 15,041.67, 0.32 '
-              'below estimate); live cash 24,913.98 after the Frankfurt purchase was debited 10,921.04 (EUR/USD '
-              '1.12395; 18.65 above the 10 Nov estimate). Still to settle 12 Nov (11 Nov was a US bank holiday): '
-              'Frankfurt sale ~+11,576.89, AMD -10,083.74, V -2,115.56, VST -3,405.57 -> board cash 20,886.00. CAT '
-              'order 5321990 (9 sh at 584.57) EXPIRED - CAT closed 601.61. Watch: all 27 closes verified (Seeking '
-              'Alpha 4:00 PM stamps and/or a validated 24/7 Wall St strip). | 10 Nov 2026 POEMS reconciliation '
-              '(positions screen 07:38 SGT, after the 9 Nov close): 36 USD stock lines match quantity and cost to the '
-              'cent; NEW FRA line AMD 22 sh EUR 9,716.63 (USD 10,902.39 at POEMS rate 1.12203) merged into AMD on the '
-              'board; SGOV 544 sh cost 54,805.30 after the 150 sh sale at 100.495. Total cost 793,865.54 ties. MV: '
-              'POEMS 814,961.08 marks the FRA line at a stale EUR 441.95 (= $495.88); the board marks all 77 AMD at '
-              'the Nasdaq close 508.58, so board MV is 279.34 higher - explained. TSM order rejected (reason to '
-              'confirm). Watch: 24 closes verified; STRL, SE, TSEM left at 6 Nov (unverified). | 7 Nov 2026 POEMS '
-              'reconciliation (positions screen 07:30 SGT, after the 6 Nov close): all 36 stock lines and SGOV match '
-              'quantity and cost to the cent (798,074.91); MV 787,577.23 incl. SGOV ties. No fills on 6 Nov: AMD 24 sh '
-              'LIMIT 404.40 and TSM 26 sh LIMIT 353.10 both EXPIRED (orders 1871912, 1872232, placed 23:29-23:30 '
-              'Bangkok) - the market bounced 6-11% above the limits. All 36 holding prices from the POEMS marks; 27 '
-              'watch closes verified (TSEM back on a verified print: 130.99 on 5 Nov, 137.34 on 6 Nov). | 6 Nov 2026 '
-              'POEMS reconciliation (positions screen 10:49 SGT, after the 5 Nov close): all 36 stock lines and SGOV '
-              'match quantity and cost to the cent (798,074.91); MV 768,116.69 incl. SGOV ties. No fills on 5 Nov (AMD '
-              "and APP orders not placed on the -13% / +31% session, on Claude's advice). All 36 holding prices from "
-              'the POEMS marks; 26 watch closes verified by two sources; TSEM left at the 4 Nov close (no verified 5 '
-              'Nov print). | 5 Nov 2026 POEMS reconciliation (positions screen 09:47 SGT, after the 4 Nov close): all '
-              '36 stock lines and SGOV match quantity and cost to the cent (798,074.91); MV 831,356.50 incl. SGOV '
-              'ties. All 36 holding prices from the POEMS marks. AMD order of 4 Nov was NOT placed (Salee); AMD closed '
-              '488.78. | 4 Nov 2026 POEMS reconciliation (positions screen 15:23 SGT, after the 3 Nov close): all 36 '
-              'stock lines and SGOV match quantity and cost to the cent (798,074.91); MV 840,540.75 incl. SGOV ties. '
-              'All 36 holding prices set from the POEMS marks (the 00:30 UTC price job did not write the 3 Nov close). '
-              '| 3 Nov 2026 POEMS reconciliation (positions screen 15:48 SGT, after the 2 Nov close): all 36 stock '
-              'lines and SGOV match quantity and cost to the cent (798,074.91); market value 823,848.13 incl. SGOV '
-              'ties. 32 of 36 prices already matched the 00:30 job; CAT, VST, VRT and GEV set to the POEMS marks (3:59 '
-              'PM prints corrected by 0.10-0.84); SGOV mark 100.43. | 31 Oct 2026 POEMS reconciliation (positions '
-              'screen 09:36 SGT, after the 30 Oct close): all 36 stock lines and SGOV match quantity and cost to the '
-              'cent incl. the 30 Oct CAT fill (stocks 728,157.85 + SGOV 69,917.06 = 798,074.91 - the CAT commission '
-              'estimate 9.49 is confirmed exact). Market value 843,570.71 incl. SGOV. All 36 holding prices set to the '
-              '30 Oct close from the POEMS marks. | 30 Oct 2026 POEMS reconciliation (positions screen 10:56 SGT, '
-              'after the 29 Oct close): all 36 stock lines and SGOV match quantity and cost to the cent (stocks '
-              '723,713.41 + SGOV 69,917.06 = 793,630.47); market value 874,941.02 incl. SGOV. Nine NYSE closes '
-              "replaced by the POEMS marks (APH, ANET, CAT, ETN, TSM, VRT, V, VST, SGOV; all within 0.2% of the job's "
-              'sources). CAT rung 2 not yet filled. | 29 Oct 2026 POEMS reconciliation (positions screen 22:16 + '
-              'transaction history to 28 Oct): all 36 stock lines and SGOV match quantity and cost to the cent before '
-              'the MSFT fill; cash 29,714.05 after the SGOV sale. Board cash had carried +0.10 since 19 Oct (CRWD sale '
-              'booked 4,573.49 vs POEMS 4,573.39) - corrected. MONTHLY October rebuilt from POEMS: it had been missing '
-              'six buys (TSM, ASML, NVDA, META, CRDO 26 Oct, MSFT) and the 19 Oct CRWD sale, so investedEverUSD was '
-              'understated by $44.7k. | 7 Oct 2026 POEMS reconciliation (Mar-Sep statements + realized P/L report): '
-              'positions and cost match POEMS to the cent at 30 Sep; realized P/L 3,279.04 matches POEMS (Salesforce '
-              'CRM 21 sh sold 16 Sep, +1,740.20, had been missing). investedEverUSD = sum of MONTHLY buys (cash paid '
-              'incl. fees). It exceeds held cost + sold cost by 3,695.59: 3,515.52 in Jul 2025-Feb 2026 board months '
-              '(not yet checked - needs those POEMS statements) and 180.07 because POEMS carries ANET (-61.82) and TER '
-              '(-118.25) at a lower cost than the cash paid in June.',
+ 'realizedTHB': 217603,
+ 'realizedUSD': 6466.67,
+ 'reconNote': '15 Nov 2026 POEMS reconciliation (positions 21:07 SGT Sun, Fri 13 Nov closes): 36 stock lines + SGOV '
+              'match quantity and cost to the cent - total cost 803,934.21, MV 824,227.04 both tie. CAT 22 sh cost '
+              '14,699.18 confirms the 12 Nov commission estimate exactly. CASH: live USD 3,942.92 (= 24,913.98 - AMD '
+              '10,083.74 - V 2,115.56 - VST 3,405.57 - CAT 5,366.19, exact) PLUS EUR 10,293.18 - the Frankfurt sale '
+              'proceeds were credited in euros, not USD. Valued at EUR/USD 1.1023 (13 Nov) = USD 11,346.17; board cash '
+              '15,289.09. Realised on the Frankfurt lot re-booked at the sale-date rate 1.1165: +571.30 (was +655.85). '
+              'FX move since the sale: -146.16 (in cash, not stock P/L). | 12 Nov 2026 POEMS reconciliation (positions '
+              '06:27 SGT, after the 11 Nov close): 36 stock lines + SGOV match quantity and cost to the cent - total '
+              'cost 798,568.02, MV 834,438.72 both tie. The Frankfurt line is gone; AMD 74 sh cost 23,872.96, V 23 sh '
+              '8,884.61, VST 132 sh 18,282.55 confirm the 10 Nov commission estimates exactly. Cash: transaction '
+              'details to 10 Nov = 35,835.02 (SGOV sale credited 15,041.67, 0.32 below estimate); live cash 24,913.98 '
+              'after the Frankfurt purchase was debited 10,921.04 (EUR/USD 1.12395; 18.65 above the 10 Nov estimate). '
+              'Still to settle 12 Nov (11 Nov was a US bank holiday): Frankfurt sale ~+11,576.89, AMD -10,083.74, V '
+              '-2,115.56, VST -3,405.57 -> board cash 20,886.00. CAT order 5321990 (9 sh at 584.57) EXPIRED - CAT '
+              'closed 601.61. Watch: all 27 closes verified (Seeking Alpha 4:00 PM stamps and/or a validated 24/7 Wall '
+              'St strip). | 10 Nov 2026 POEMS reconciliation (positions screen 07:38 SGT, after the 9 Nov close): 36 '
+              'USD stock lines match quantity and cost to the cent; NEW FRA line AMD 22 sh EUR 9,716.63 (USD 10,902.39 '
+              'at POEMS rate 1.12203) merged into AMD on the board; SGOV 544 sh cost 54,805.30 after the 150 sh sale '
+              'at 100.495. Total cost 793,865.54 ties. MV: POEMS 814,961.08 marks the FRA line at a stale EUR 441.95 '
+              '(= $495.88); the board marks all 77 AMD at the Nasdaq close 508.58, so board MV is 279.34 higher - '
+              'explained. TSM order rejected (reason to confirm). Watch: 24 closes verified; STRL, SE, TSEM left at 6 '
+              'Nov (unverified). | 7 Nov 2026 POEMS reconciliation (positions screen 07:30 SGT, after the 6 Nov '
+              'close): all 36 stock lines and SGOV match quantity and cost to the cent (798,074.91); MV 787,577.23 '
+              'incl. SGOV ties. No fills on 6 Nov: AMD 24 sh LIMIT 404.40 and TSM 26 sh LIMIT 353.10 both EXPIRED '
+              '(orders 1871912, 1872232, placed 23:29-23:30 Bangkok) - the market bounced 6-11% above the limits. All '
+              '36 holding prices from the POEMS marks; 27 watch closes verified (TSEM back on a verified print: 130.99 '
+              'on 5 Nov, 137.34 on 6 Nov). | 6 Nov 2026 POEMS reconciliation (positions screen 10:49 SGT, after the 5 '
+              'Nov close): all 36 stock lines and SGOV match quantity and cost to the cent (798,074.91); MV 768,116.69 '
+              'incl. SGOV ties. No fills on 5 Nov (AMD and APP orders not placed on the -13% / +31% session, on '
+              "Claude's advice). All 36 holding prices from the POEMS marks; 26 watch closes verified by two sources; "
+              'TSEM left at the 4 Nov close (no verified 5 Nov print). | 5 Nov 2026 POEMS reconciliation (positions '
+              'screen 09:47 SGT, after the 4 Nov close): all 36 stock lines and SGOV match quantity and cost to the '
+              'cent (798,074.91); MV 831,356.50 incl. SGOV ties. All 36 holding prices from the POEMS marks. AMD order '
+              'of 4 Nov was NOT placed (Salee); AMD closed 488.78. | 4 Nov 2026 POEMS reconciliation (positions screen '
+              '15:23 SGT, after the 3 Nov close): all 36 stock lines and SGOV match quantity and cost to the cent '
+              '(798,074.91); MV 840,540.75 incl. SGOV ties. All 36 holding prices set from the POEMS marks (the 00:30 '
+              'UTC price job did not write the 3 Nov close). | 3 Nov 2026 POEMS reconciliation (positions screen 15:48 '
+              'SGT, after the 2 Nov close): all 36 stock lines and SGOV match quantity and cost to the cent '
+              '(798,074.91); market value 823,848.13 incl. SGOV ties. 32 of 36 prices already matched the 00:30 job; '
+              'CAT, VST, VRT and GEV set to the POEMS marks (3:59 PM prints corrected by 0.10-0.84); SGOV mark 100.43. '
+              '| 31 Oct 2026 POEMS reconciliation (positions screen 09:36 SGT, after the 30 Oct close): all 36 stock '
+              'lines and SGOV match quantity and cost to the cent incl. the 30 Oct CAT fill (stocks 728,157.85 + SGOV '
+              '69,917.06 = 798,074.91 - the CAT commission estimate 9.49 is confirmed exact). Market value 843,570.71 '
+              'incl. SGOV. All 36 holding prices set to the 30 Oct close from the POEMS marks. | 30 Oct 2026 POEMS '
+              'reconciliation (positions screen 10:56 SGT, after the 29 Oct close): all 36 stock lines and SGOV match '
+              'quantity and cost to the cent (stocks 723,713.41 + SGOV 69,917.06 = 793,630.47); market value '
+              '874,941.02 incl. SGOV. Nine NYSE closes replaced by the POEMS marks (APH, ANET, CAT, ETN, TSM, VRT, V, '
+              "VST, SGOV; all within 0.2% of the job's sources). CAT rung 2 not yet filled. | 29 Oct 2026 POEMS "
+              'reconciliation (positions screen 22:16 + transaction history to 28 Oct): all 36 stock lines and SGOV '
+              'match quantity and cost to the cent before the MSFT fill; cash 29,714.05 after the SGOV sale. Board '
+              'cash had carried +0.10 since 19 Oct (CRWD sale booked 4,573.49 vs POEMS 4,573.39) - corrected. MONTHLY '
+              'October rebuilt from POEMS: it had been missing six buys (TSM, ASML, NVDA, META, CRDO 26 Oct, MSFT) and '
+              'the 19 Oct CRWD sale, so investedEverUSD was understated by $44.7k. | 7 Oct 2026 POEMS reconciliation '
+              '(Mar-Sep statements + realized P/L report): positions and cost match POEMS to the cent at 30 Sep; '
+              'realized P/L 3,279.04 matches POEMS (Salesforce CRM 21 sh sold 16 Sep, +1,740.20, had been missing). '
+              'investedEverUSD = sum of MONTHLY buys (cash paid incl. fees). It exceeds held cost + sold cost by '
+              '3,695.59: 3,515.52 in Jul 2025-Feb 2026 board months (not yet checked - needs those POEMS statements) '
+              'and 180.07 because POEMS carries ANET (-61.82) and TER (-118.25) at a lower cost than the cash paid in '
+              'June.',
  'soldCostTHB': 3313417,
  'soldCostUSD': 101313.43,
  'targetUSD': 910730.04,
@@ -5279,8 +5304,8 @@ SOLD = [{'costTHB': 64909.61,
  {'costTHB': 367493,
   'costUSD': 10921.04,
   'g': 1,
-  'glTHB': 22069,
-  'glUSD': 655.85,
+  'glTHB': 19224,
+  'glUSD': 571.3,
   'lastDate': '2026-11-10',
   'qty': 22,
   't': 'AMD'}]
@@ -5731,17 +5756,17 @@ MONTHLY = [{'buyLots': 4,
   'ym': '2026-10'},
  {'buyLots': 5,
   'buyUSD': 31892.1,
-  'byGroup': [{'buy': 21004.78, 'g': 1, 'real': 655.85, 'sell': 11576.89},
+  'byGroup': [{'buy': 21004.78, 'g': 1, 'real': 571.3, 'sell': 11492.34},
               {'buy': 2115.56, 'g': 8, 'real': 0.0, 'sell': 0.0},
               {'buy': 8771.76, 'g': 6, 'real': 0.0, 'sell': 0.0}],
-  'byStock': [{'buy': 21004.78, 'real': 655.85, 'sell': 11576.89, 't': 'AMD'},
+  'byStock': [{'buy': 21004.78, 'real': 571.3, 'sell': 11492.34, 't': 'AMD'},
               {'buy': 2115.56, 'real': 0.0, 'sell': 0.0, 't': 'V'},
               {'buy': 3405.57, 'real': 0.0, 'sell': 0.0, 't': 'VST'},
               {'buy': 5366.19, 'real': 0.0, 'sell': 0.0, 't': 'CAT'}],
-  'realizedTHB': 22069,
-  'realizedUSD': 655.85,
+  'realizedTHB': 19224,
+  'realizedUSD': 571.3,
   'sellLots': 1,
-  'sellUSD': 11576.89,
+  'sellUSD': 11492.34,
   'ym': '2026-11'}]
 
 THBFX = {'AAPL': 32.4331,
@@ -9053,7 +9078,23 @@ SCHEDULE = {'horizon': 'after the next 30 days, and standing rules',
             'k': 'holiday',
             't': 'MACRO',
             'tac': 'No order.',
-            'w': 'NYSE/Nasdaq holiday (third Monday of February).'}],
+            'w': 'NYSE/Nasdaq holiday (third Monday of February).'},
+           {'a': 'ADMIN',
+            'amt': 0,
+            'bkk': 'Mon 16 Nov, any time POEMS currency conversion is open',
+            'c': 'planned',
+            'cond': 'Not a stock trade - no limit or 30-minute rule. Check the rate POEMS quotes against the market '
+                    'EUR/USD before confirming.',
+            'd': '2026-11-16',
+            'dl': 'Convert the EUR 10,293.18 at POEMS into USD',
+            'k': 'admin',
+            't': 'CASH',
+            'tac': 'Salee converts all EUR to USD at POEMS (currency conversion / FX). Send the confirmation; Claude '
+                   'books the USD amount and the final realised gain.',
+            'w': 'The Frankfurt AMD sale (10 Nov) was credited in euros: EUR 10,293.18 sits in the POEMS account. The '
+                 'board is USD-based; euros earn nothing here and move with EUR/USD (1.1165 on 10 Nov, 1.1023 on 13 '
+                 "Nov = -$146 so far). Convert all of it; no view on the euro's direction - the point is to remove a "
+                 'currency position we never meant to hold.'}],
  'note': "ONE LIST, TWO VIEWS (Salee approved 14 Nov 2026): the 'Next 30 Days' tab shows every dated item from today "
          'to today + 30 days and moves forward by itself each day; this tab shows everything later, plus the standing '
          'rules (price lines, gates, holds) that never expire. Past and done rows drop off by themselves; Claude '
@@ -10367,7 +10408,17 @@ HISTORY = [{'cash': 19542.79,
   'real': 6551.22,
   'sha': 'live',
   'unreal': 34399.14,
-  'unrealPct': 4.59}]
+  'unrealPct': 4.59},
+ {'cash': 15289.09,
+  'cost': 749128.91,
+  'd': '2026-11-13',
+  'mv': 769522.4,
+  'n': 36,
+  'net': 26860.16,
+  'real': 6466.67,
+  'sha': 'live',
+  'unreal': 20393.49,
+  'unrealPct': 2.72}]
 
 BENCH = {'flows': {'2025-07': 19503.41,
            '2025-08': 36284.04,
@@ -10409,8 +10460,8 @@ BENCH = {'flows': {'2025-07': 19503.41,
          '2026-07': 687.99,
          '2026-08': 716.76,
          '2026-09': 739.77},
- 'qqqLast': 688.17,
- 'qqqLastD': '2026-11-12',
+ 'qqqLast': 679.89,
+ 'qqqLastD': '2026-11-13',
  'spy': {'2025-06': 609.57,
          '2025-07': 623.6,
          '2025-08': 636.4,
@@ -10429,8 +10480,8 @@ BENCH = {'flows': {'2025-07': 19503.41,
          '2026-09': 762.63},
  'spyHigh': 779.09,
  'spyHighD': '2026-10-06',
- 'spyLast': 757.12,
- 'spyLastD': '2026-11-12'}
+ 'spyLast': 754.37,
+ 'spyLastD': '2026-11-13'}
 
 APPROVALS = [{'after': 'Same night (9 Oct): Marvell 47 shares filled at $269.90 and Applied Materials 19 at $505.00. Intuitive '
            'Surgical (limit $413) did not fill - carried to 13 Oct at the same limit. Meta (limit $705) did not fill - '
@@ -10623,9 +10674,10 @@ RISK = {'asof': '2026-10-11',
 BUYPLAN = {'hours': 'POEMS follows the US session 21:30 to 04:00 Bangkok. Place Day orders after 22:00 (not in the first 30 '
           'minutes); an unfilled Day order expires at the close.',
  'made': '2026-11-14',
- 'note': 'No scheduled buys right now - every November rung is done. THE NEXT DECISION: NVDA after its 17 Nov US '
-         'results (04:20 Wed 18 Nov Bangkok) - Salee decides buy / hold / sell; hold all 452 sh until then. RATES (12 '
-         'Nov): 10-year ~5.13% - VALUATION GATE ACTIVE (nothing above 35x forward earnings without a price line); '
+ 'note': 'No scheduled buys right now - every November rung is done. CASH: convert the EUR 10,293.18 from the '
+         'Frankfurt sale into USD (Mon 16 Nov). THE NEXT DECISION: NVDA after its 17 Nov US results (04:20 Wed 18 Nov '
+         'Bangkok) - Salee decides buy / hold / sell; hold all 452 sh until then. RATES (13 Nov): 10-year 5.15% - '
+         'VALUATION GATE ACTIVE; tripwire 0.10 away (nothing above 35x forward earnings without a price line); '
          'TRIPWIRE at a close above 5.25%. MONEY: SGOV 544 sh (~$54,700) holds the $50,000 crash reserve; funding gate '
          'until the February $100,000 - a line that fires and does not fit waits. ALWAYS CHECK THE MARKET FIELD SAYS '
          'NASD/NYSE BEFORE SUBMITTING. No chasing; never in the first 30 minutes.',
