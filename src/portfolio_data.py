@@ -3,28 +3,29 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Nov 15, 2026 21:30 Bangkok - 13 NOV CLOSE BOOKED FROM POEMS (positions 21:07 SGT): 36 lines + SGOV tie to the cent '
- '(cost 803,934.21; MV 824,227.04). Stocks MV 769,522.40, unrealised +20,393.49. ⚠️ CASH: Frankfurt sale proceeds are '
- 'held in EUR 10,293.18, not USD - board cash 15,289.09 (USD 3,942.92 + EUR at 1.1023); realised on the swap re-booked '
- '+571.30. CAT commission confirmed. 10-year 5.15% (13 Nov) - VALUATION GATE ACTIVE; tripwire 5.25% is 0.10 away. No '
- 'price line hit (TSM 398.73, AVGO 347.01, PLTR 167.99, APP 409.10; NVDA 162.85, line suspended). SPY 754.37, QQQ '
- '679.89; 27 watch closes verified. || PREVIOUS ENTRY: Nov 15, 2026 18:05 Bangkok - SPCX 10 Dec row: Starship upper '
- 'stage caught from orbit for the first time (14 Nov). No order. || PREVIOUS ENTRY: Nov 15, 2026 14:49 Bangkok - NEW '
- "(Salee): Portfolio tab 'Performance by year' (2025 from 15 Jul, 2026 so far, since start, since the first daily "
- 'value 28 Jul 2026; a new row each January; 31 Dec 2025 value is an ESTIMATE until the POEMS statement arrives). '
- 'Vision tab: market value vs the 2x goal ($2.0M by 2035 on $1.0M) with year-end milestones. || PREVIOUS ENTRY: Nov '
- "15, 2026 13:37 Bangkok - NVDA row: Musk backs a petition to reinstate Huang; Kalshi 9% odds of return; 'handshake "
- "deals' claim unverified. No order change. || PREVIOUS ENTRY: Nov 14, 2026 10:37 Bangkok - ONE LIST, TWO VIEWS (Salee "
- "approved): 'Next 30 Days' tab now rolls forward by itself every day (today to today + 30); Schedule tab shows later "
- 'items plus standing rules. Plan rows merged into the Schedule list; US market holidays to Feb 2027 added; NVDA '
- 'results row restored. No rule, budget or number changed. || PREVIOUS ENTRY: Nov 14, 2026 09:20 Bangkok - PLANS '
- 'ROLLED (Salee): Buy/Sell plan now 16 - 30 Nov (no scheduled buys; NVDA decision after the 17 Nov results; PANW '
- 'results 18 Nov; FOMC minutes, PCE). Schedule now from 30 Nov onward - 17 earlier rows archived; added MRVL results 1 '
- 'Dec, FX update 1 Dec, jobs report 4 Dec, NVDA governance DECIDE 10 Dec. || PREVIOUS ENTRY: Nov 13, 2026 18:55 '
- 'Bangkok - AMAT Q4 FY2026 SCORED: revenue $10.41bn (+53%), non-GAAP EPS $4.16 (+92%), Q1 guide $11.1bn / EPS $4.35; '
- "China 25% of revenue. Hold, no order. Notes tab: new 'Rate gates' card (why 35x and 5.25%). || PREVIOUS ENTRY: Nov "
- '13, 2026 11:05 Bangkok - DAILY PRICE REFRESH (03:30 UTC pass): 60 remaining closes + SPY/QQQ booked for 12 Nov '
- '(board now 63 of 63 at the 12 Nov close). Sources: per-ticker rotation of marketscreener mirrors with dated '
+ASOF = ("Nov 15, 2026 21:24 Bangkok - NVDA row: Blackwell 'fingerprints' report on six Chinese models (no proof of where or "
+ 'how; not a trigger). || PREVIOUS ENTRY: Nov 15, 2026 21:30 Bangkok - 13 NOV CLOSE BOOKED FROM POEMS (positions 21:07 '
+ 'SGT): 36 lines + SGOV tie to the cent (cost 803,934.21; MV 824,227.04). Stocks MV 769,522.40, unrealised +20,393.49. '
+ '⚠️ CASH: Frankfurt sale proceeds are held in EUR 10,293.18, not USD - board cash 15,289.09 (USD 3,942.92 + EUR at '
+ '1.1023); realised on the swap re-booked +571.30. CAT commission confirmed. 10-year 5.15% (13 Nov) - VALUATION GATE '
+ 'ACTIVE; tripwire 5.25% is 0.10 away. No price line hit (TSM 398.73, AVGO 347.01, PLTR 167.99, APP 409.10; NVDA '
+ '162.85, line suspended). SPY 754.37, QQQ 679.89; 27 watch closes verified. || PREVIOUS ENTRY: Nov 15, 2026 18:05 '
+ 'Bangkok - SPCX 10 Dec row: Starship upper stage caught from orbit for the first time (14 Nov). No order. || PREVIOUS '
+ "ENTRY: Nov 15, 2026 14:49 Bangkok - NEW (Salee): Portfolio tab 'Performance by year' (2025 from 15 Jul, 2026 so far, "
+ 'since start, since the first daily value 28 Jul 2026; a new row each January; 31 Dec 2025 value is an ESTIMATE until '
+ 'the POEMS statement arrives). Vision tab: market value vs the 2x goal ($2.0M by 2035 on $1.0M) with year-end '
+ 'milestones. || PREVIOUS ENTRY: Nov 15, 2026 13:37 Bangkok - NVDA row: Musk backs a petition to reinstate Huang; '
+ "Kalshi 9% odds of return; 'handshake deals' claim unverified. No order change. || PREVIOUS ENTRY: Nov 14, 2026 10:37 "
+ "Bangkok - ONE LIST, TWO VIEWS (Salee approved): 'Next 30 Days' tab now rolls forward by itself every day (today to "
+ 'today + 30); Schedule tab shows later items plus standing rules. Plan rows merged into the Schedule list; US market '
+ 'holidays to Feb 2027 added; NVDA results row restored. No rule, budget or number changed. || PREVIOUS ENTRY: Nov 14, '
+ '2026 09:20 Bangkok - PLANS ROLLED (Salee): Buy/Sell plan now 16 - 30 Nov (no scheduled buys; NVDA decision after the '
+ '17 Nov results; PANW results 18 Nov; FOMC minutes, PCE). Schedule now from 30 Nov onward - 17 earlier rows archived; '
+ 'added MRVL results 1 Dec, FX update 1 Dec, jobs report 4 Dec, NVDA governance DECIDE 10 Dec. || PREVIOUS ENTRY: Nov '
+ '13, 2026 18:55 Bangkok - AMAT Q4 FY2026 SCORED: revenue $10.41bn (+53%), non-GAAP EPS $4.16 (+92%), Q1 guide $11.1bn '
+ "/ EPS $4.35; China 25% of revenue. Hold, no order. Notes tab: new 'Rate gates' card (why 35x and 5.25%). || PREVIOUS "
+ 'ENTRY: Nov 13, 2026 11:05 Bangkok - DAILY PRICE REFRESH (03:30 UTC pass): 60 remaining closes + SPY/QQQ booked for '
+ '12 Nov (board now 63 of 63 at the 12 Nov close). Sources: per-ticker rotation of marketscreener mirrors with dated '
  'Market-Closed stamps and 5-day tables (MSFT 523.00, AMZN 267.44, GOOGL 298.70, MPWR 1447.40, ASML 1497.12, MU '
  '798.44, ARM 199.78, PANW 322.66, SE 74.52, SPCX 139.94, SPY 757.12), stocktitan dated closes (META 623.61, SNPS, '
  'SNDK, APH, COHR, CRDO, FSLR, RKLB, AVAV, DDOG, V, CRWD, FTNT, NET, BWXT, GEV, ETN, VRT, PWR, BE, CEG, VST, CAT, '
@@ -8869,8 +8870,15 @@ SCHEDULE = {'horizon': 'after the next 30 days, and standing rules',
             'amt': 0,
             'bkk': 'Wed 18 Nov ~04:20 (results); act from Wed 18 Nov evening',
             'c': 'confirmed',
-            'cond': '15 Nov: CEO-RETURN PRESSURE. Elon Musk (13 Nov): "A petition is underway to reinstate Jensen and '
-                    'I\'m signing it too"; Mediaite reports Musk saying critical deals will be lost without Huang and '
+            'cond': '15 Nov: BLACKWELL FINGERPRINTS (The Register, 13 Nov). Ex-OpenAI engineer Will DePue published a '
+                    "forensic report: weight-initialisation 'fingerprints' tie six Chinese open-weight models "
+                    '(DeepSeek-V4-Pro/V4-Flash, Kimi K3, MiniMax-M3, Ant Group) to Nvidia Blackwell; four to '
+                    'GB200/GB300. It does NOT show where the chips were (could be rented via US clouds) and does not '
+                    'prove a violation; no Nvidia or government response. Adds to export-control pressure (AI '
+                    'Overwatch Act, Cloud Security Act, chip bills pending) - NOT trigger 4 (no formal action naming '
+                    'NVIDIA). Read at the 17 Nov call: China, cloud-rental controls, the Megaspeed count. || 15 Nov: '
+                    'CEO-RETURN PRESSURE. Elon Musk (13 Nov): "A petition is underway to reinstate Jensen and I\'m '
+                    'signing it too"; Mediaite reports Musk saying critical deals will be lost without Huang and '
                     '60,000+ shareholders petitioning; employees also petitioned the board; investor Brad Gerstner '
                     'urged a slow, deliberate process. No board statement. Kalshi (14 Nov): Huang return 9% - Rene '
                     'Haas 26%, Ian Buck 16%, Kress 11%; new CEO named before 16 Dec 14%, before 1 Feb 54%. UNVERIFIED: '
