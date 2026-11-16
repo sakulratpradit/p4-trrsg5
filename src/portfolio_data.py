@@ -3,27 +3,29 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ("Nov 15, 2026 21:24 Bangkok - NVDA row: Blackwell 'fingerprints' report on six Chinese models (no proof of where or "
- 'how; not a trigger). || PREVIOUS ENTRY: Nov 15, 2026 21:30 Bangkok - 13 NOV CLOSE BOOKED FROM POEMS (positions 21:07 '
- 'SGT): 36 lines + SGOV tie to the cent (cost 803,934.21; MV 824,227.04). Stocks MV 769,522.40, unrealised +20,393.49. '
- '⚠️ CASH: Frankfurt sale proceeds are held in EUR 10,293.18, not USD - board cash 15,289.09 (USD 3,942.92 + EUR at '
- '1.1023); realised on the swap re-booked +571.30. CAT commission confirmed. 10-year 5.15% (13 Nov) - VALUATION GATE '
- 'ACTIVE; tripwire 5.25% is 0.10 away. No price line hit (TSM 398.73, AVGO 347.01, PLTR 167.99, APP 409.10; NVDA '
- '162.85, line suspended). SPY 754.37, QQQ 679.89; 27 watch closes verified. || PREVIOUS ENTRY: Nov 15, 2026 18:05 '
- 'Bangkok - SPCX 10 Dec row: Starship upper stage caught from orbit for the first time (14 Nov). No order. || PREVIOUS '
- "ENTRY: Nov 15, 2026 14:49 Bangkok - NEW (Salee): Portfolio tab 'Performance by year' (2025 from 15 Jul, 2026 so far, "
- 'since start, since the first daily value 28 Jul 2026; a new row each January; 31 Dec 2025 value is an ESTIMATE until '
- 'the POEMS statement arrives). Vision tab: market value vs the 2x goal ($2.0M by 2035 on $1.0M) with year-end '
- 'milestones. || PREVIOUS ENTRY: Nov 15, 2026 13:37 Bangkok - NVDA row: Musk backs a petition to reinstate Huang; '
- "Kalshi 9% odds of return; 'handshake deals' claim unverified. No order change. || PREVIOUS ENTRY: Nov 14, 2026 10:37 "
- "Bangkok - ONE LIST, TWO VIEWS (Salee approved): 'Next 30 Days' tab now rolls forward by itself every day (today to "
- 'today + 30); Schedule tab shows later items plus standing rules. Plan rows merged into the Schedule list; US market '
- 'holidays to Feb 2027 added; NVDA results row restored. No rule, budget or number changed. || PREVIOUS ENTRY: Nov 14, '
- '2026 09:20 Bangkok - PLANS ROLLED (Salee): Buy/Sell plan now 16 - 30 Nov (no scheduled buys; NVDA decision after the '
- '17 Nov results; PANW results 18 Nov; FOMC minutes, PCE). Schedule now from 30 Nov onward - 17 earlier rows archived; '
- 'added MRVL results 1 Dec, FX update 1 Dec, jobs report 4 Dec, NVDA governance DECIDE 10 Dec. || PREVIOUS ENTRY: Nov '
- '13, 2026 18:55 Bangkok - AMAT Q4 FY2026 SCORED: revenue $10.41bn (+53%), non-GAAP EPS $4.16 (+92%), Q1 guide $11.1bn '
- "/ EPS $4.35; China 25% of revenue. Hold, no order. Notes tab: new 'Rate gates' card (why 35x and 5.25%). || PREVIOUS "
+ASOF = ('Nov 16, 2026 23:28 Bangkok - Next 30 Days: Anthropic (ANT) IPO row added for Thu 19 Nov (reported date; range $70-78 '
+ 'per the S-1/A). Conflict disclosed - facts only, no view; no budget, no order. || PREVIOUS ENTRY: Nov 15, 2026 21:24 '
+ "Bangkok - NVDA row: Blackwell 'fingerprints' report on six Chinese models (no proof of where or how; not a trigger). "
+ '|| PREVIOUS ENTRY: Nov 15, 2026 21:30 Bangkok - 13 NOV CLOSE BOOKED FROM POEMS (positions 21:07 SGT): 36 lines + '
+ 'SGOV tie to the cent (cost 803,934.21; MV 824,227.04). Stocks MV 769,522.40, unrealised +20,393.49. ⚠️ CASH: '
+ 'Frankfurt sale proceeds are held in EUR 10,293.18, not USD - board cash 15,289.09 (USD 3,942.92 + EUR at 1.1023); '
+ 'realised on the swap re-booked +571.30. CAT commission confirmed. 10-year 5.15% (13 Nov) - VALUATION GATE ACTIVE; '
+ 'tripwire 5.25% is 0.10 away. No price line hit (TSM 398.73, AVGO 347.01, PLTR 167.99, APP 409.10; NVDA 162.85, line '
+ 'suspended). SPY 754.37, QQQ 679.89; 27 watch closes verified. || PREVIOUS ENTRY: Nov 15, 2026 18:05 Bangkok - SPCX '
+ '10 Dec row: Starship upper stage caught from orbit for the first time (14 Nov). No order. || PREVIOUS ENTRY: Nov 15, '
+ "2026 14:49 Bangkok - NEW (Salee): Portfolio tab 'Performance by year' (2025 from 15 Jul, 2026 so far, since start, "
+ 'since the first daily value 28 Jul 2026; a new row each January; 31 Dec 2025 value is an ESTIMATE until the POEMS '
+ 'statement arrives). Vision tab: market value vs the 2x goal ($2.0M by 2035 on $1.0M) with year-end milestones. || '
+ 'PREVIOUS ENTRY: Nov 15, 2026 13:37 Bangkok - NVDA row: Musk backs a petition to reinstate Huang; Kalshi 9% odds of '
+ "return; 'handshake deals' claim unverified. No order change. || PREVIOUS ENTRY: Nov 14, 2026 10:37 Bangkok - ONE "
+ "LIST, TWO VIEWS (Salee approved): 'Next 30 Days' tab now rolls forward by itself every day (today to today + 30); "
+ 'Schedule tab shows later items plus standing rules. Plan rows merged into the Schedule list; US market holidays to '
+ 'Feb 2027 added; NVDA results row restored. No rule, budget or number changed. || PREVIOUS ENTRY: Nov 14, 2026 09:20 '
+ 'Bangkok - PLANS ROLLED (Salee): Buy/Sell plan now 16 - 30 Nov (no scheduled buys; NVDA decision after the 17 Nov '
+ 'results; PANW results 18 Nov; FOMC minutes, PCE). Schedule now from 30 Nov onward - 17 earlier rows archived; added '
+ 'MRVL results 1 Dec, FX update 1 Dec, jobs report 4 Dec, NVDA governance DECIDE 10 Dec. || PREVIOUS ENTRY: Nov 13, '
+ '2026 18:55 Bangkok - AMAT Q4 FY2026 SCORED: revenue $10.41bn (+53%), non-GAAP EPS $4.16 (+92%), Q1 guide $11.1bn / '
+ "EPS $4.35; China 25% of revenue. Hold, no order. Notes tab: new 'Rate gates' card (why 35x and 5.25%). || PREVIOUS "
  'ENTRY: Nov 13, 2026 11:05 Bangkok - DAILY PRICE REFRESH (03:30 UTC pass): 60 remaining closes + SPY/QQQ booked for '
  '12 Nov (board now 63 of 63 at the 12 Nov close). Sources: per-ticker rotation of marketscreener mirrors with dated '
  'Market-Closed stamps and 5-day tables (MSFT 523.00, AMZN 267.44, GOOGL 298.70, MPWR 1447.40, ASML 1497.12, MU '
@@ -9102,7 +9104,35 @@ SCHEDULE = {'horizon': 'after the next 30 days, and standing rules',
             'w': 'The Frankfurt AMD sale (10 Nov) was credited in euros: EUR 10,293.18 sits in the POEMS account. The '
                  'board is USD-based; euros earn nothing here and move with EUR/USD (1.1165 on 10 Nov, 1.1023 on 13 '
                  "Nov = -$146 so far). Convert all of it; no view on the euro's direction - the point is to remove a "
-                 'currency position we never meant to hold.'}],
+                 'currency position we never meant to hold.'},
+           {'a': 'WATCH',
+            'amt': 0,
+            'bkk': 'Thu 19 Nov evening (US open 21:30 Bangkok) - date reported, not in the filing',
+            'c': 'estimated',
+            'cond': 'OUR RULES, applied mechanically: (1) no budget exists, so no order can be placed; (2) funding '
+                    'gate - new names wait for the February $100,000 and the 10 Dec ranking; (3) an order needs a '
+                    'reference close, so nothing can be bought on the first day under the order rule; (4) rate rules - '
+                    'if the company is loss-making it is barred while the 10-year is at or above 4.5%; if profitable '
+                    'but above 35x forward earnings it needs a price line (10-year 5.15%); (5) precedent - SpaceX '
+                    '(listed 12 Jun) is still unfunded, decided after its lock-up. HOLDINGS TOUCHED: AMZN, GOOGL, MSFT '
+                    "and NVDA hold stakes; a market price replaces private-round marks in their 'other income' "
+                    '(earnings-quality item already on the 10 Dec agenda). See project doc '
+                    'decision-2026-09-12-anthropic-ipo-conflict-disclosed.',
+            'd': '2026-11-19',
+            'dl': 'Anthropic (ANT) IPO - reported first trading day. CONFLICT: Claude is made by Anthropic - facts '
+                  'only, no view',
+            'k': 'event',
+            't': 'ANT',
+            'tac': 'No order. Not on the board; no budget. Any budget is a Board decision at the 10 Dec review, with '
+                   'advice from someone who has no stake.',
+            'w': 'FACTS (S-1/A of 10 Nov, via FinanceFeeds 11 Nov): range $70-$78; 825,000,000 Class A shares (801.4m '
+                 'from the company, 23.6m from sellers) plus an option of 123.75m; ticker ANT on Nasdaq; $26.0bn '
+                 'concurrent private placement of non-voting Class N shares to seven strategic buyers; Class T share '
+                 "lets the Long-Term Benefit Trust elect a board majority (public benefit corporation, 'controlled "
+                 "company'); lock-ups up to 180 days (365 for co-founders and some large holders). Pricing 18 Nov and "
+                 "first trade 19 Nov are REPORTED (CNBC), not in the filing. ARITHMETIC (the article's): gross "
+                 'proceeds ~$57.8bn at $70 to ~$64.4bn at $78; ~$916bn to ~$1.02tn on 13.09bn basic shares. Profit or '
+                 'loss for a full period was not in the article - to read in the S-1/A.'}],
  'note': "ONE LIST, TWO VIEWS (Salee approved 14 Nov 2026): the 'Next 30 Days' tab shows every dated item from today "
          'to today + 30 days and moves forward by itself each day; this tab shows everything later, plus the standing '
          'rules (price lines, gates, holds) that never expire. Past and done rows drop off by themselves; Claude '
