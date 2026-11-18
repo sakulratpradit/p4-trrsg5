@@ -1,20 +1,18 @@
 # P4 price refresh status
 
-- **Run time (UTC):** 2026-11-17 03:33–03:40 (scheduled 03:30 pass)
-- **Trading date recorded:** 2026-11-16 (Mon) — already fully recorded before this run
-- **Status:** NOT PUSHED (no price edits needed) — status-doc-only commit pushed
-- **Commit:** see this commit (status doc only); data commit is a308d5c (interactive session's 16 Nov POEMS booking, 08:55 Bangkok)
-- **Prices changed by this run:** 0 — first-check stop: **63 of 63 tickers already carry pxd 2026-11-16**, the most recent completed US trading day
-- **Sanity gate:** not run (no new build; nothing touched)
-
-## What was already current (verified from the freshly-pulled mirror)
-- STOCKS: 63/63 at the 16 Nov close (interactive session booked it from POEMS, commit a308d5c)
-- BENCH: spyLast 739.95 / qqqLast 661.75, both dated 2026-11-16; spyHigh unchanged 779.09 (2026-10-06) — SPY is 5.0% off the high; crash-reserve trigger (−15% → 662.23) not near
-- HISTORY: 2026-11-16 row present (n 36, mv 736,908.70, cost 749,128.91, unreal −12,220.21 / −1.63%, cash 15,232.47)
-- risk_series: spy 2026-11-16 = 739.95 and ust10 2026-11-16 = 5.12 both present — the UST10 gap flagged in the 13 Nov status is closed; valuation gate (10-year ≥ 5.00%) is ACTIVE per the board's own note (5.115%)
-
-## Unresolved
-None. No ticker left stale; no source consulted (none needed).
-
-## Verbatim blockers
-None. This run made no data edits by design — re-editing a board that is already complete at the target date only risks clobbering the interactive session's same-morning work. Note: the job's first-check threshold reads "80 or more tickers" but the board holds 63 total; applied as 63/63 = complete. The main session may want to update that threshold in price_refresh.md.
+- **Run:** 2026-11-18 00:32–03:05 UTC (00:30 pass)
+- **Trading date recorded:** 2026-11-17
+- **Result:** PUSHED — commit `ae1bcaf` (36a1aae..ae1bcaf, no force)
+- **Prices changed:** 63 of 63 (every ticker moved; pxd set to 2026-11-17 on all)
+- **Benchmarks:** SPY 732.44, QQQ 656.95 (both 2026-11-17); spyHigh unchanged at 779.09
+- **HISTORY row appended:** 2026-11-17 — mv 739,880.57, cost 758,481.32, unreal −18,600.75 (−2.45%), cash 5,880.06
+- **risk_series.json:** spy[2026-11-17]=732.44 appended; **ust10 SKIPPED** — the 17 Nov 10-year close was not yet published anywhere dated (mortgagenewsdaily table and ycharts both ended at 16 Nov = 5.132 / 5.12; CNBC 403). Needs backfill by a later session.
+- **Sanity gate:** PASS, no --allow needed (largest move FSLR −5.84%)
+- **Unresolved tickers:** none
+- **Sources & deviations (verbatim blockers):**
+  - stockanalysis.com (the primary) served stale caches for the entire run: quote pages stamped "At close: Nov 13" (GOOGL's "Nov 17, 9:15 AM EST - Market open"), history tables ending Nov 13–16. Zero tickers resolvable from the primary; same failure mode as the 11-12 Nov run.
+  - 61 closes taken from Google Finance pages carrying an explicit "Closed: Nov 17, 4:00 PM GMT-5" stamp. GF serves randomly stale per-URL caches (some months old); fresh pages were found by rotating rare URL variants (hl=th/ja/fi/..., ucbcb=1, ved-param URLs) surfaced via extended search. Every accepted price was validated by implied previous close (price − day change) against the board's POEMS-verified 16 Nov close.
+  - MU from a fool.com article quote box labeled "As of 4:00 PM ET 11/17/26" (close 712.42 inside day range 666.88–726.99); SPCX from the fool.com quote page with "Last close 2026-11-16" printed (141.69).
+  - Prev-close tie was exact (≤1¢) on 59 of 63. Four small mismatches vs the board's stored 16 Nov closes, close itself Nov-17-stamped in each case: GLW (implied 106.21 vs stored 106.17), LHX (261.58 vs 261.75), V (426.53 vs 426.46), APH (75.46 vs 75.43). Worth a glance at the next POEMS reconciliation.
+  - Live-page verification NOT possible from this sandbox (github.io firewalled; WebFetch provenance blocked it). Verified instead with Playwright on the built file: 901 table rows, ZERO PAGE ERRORS. Repo HEAD confirmed at ae1bcaf.
+- **Note for the 03:30 pass:** all 63 pxd = 2026-11-17 → first-check stop applies; only ust10 remains open.
