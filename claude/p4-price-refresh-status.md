@@ -1,5 +1,17 @@
 # P4 price refresh status
 
+- **Run:** 2026-11-18 03:32–03:40 UTC (03:30 pass)
+- **Result:** NOT PUSHED (no data changes) — **first-check stop**: all 63 tickers already carry `pxd = 2026-11-17`, the most recent completed US session, from the successful 00:30 pass. BENCH (SPY 732.44 / QQQ 656.95, both 2026-11-17), the 2026-11-17 HISTORY row, and risk_series spy[2026-11-17] are all in place. Nothing to do.
+- **Trading date recorded:** 2026-11-17 (by the 00:30 pass)
+- **Commit hash:** data push was `ae1bcaf` (00:30 pass); this pass commits only this status file
+- **Prices changed this pass:** 0
+- **Unresolved tickers:** none
+- **Open item (carried):** risk_series **ust10[2026-11-17] still missing** — per the first-check rule this pass made no data edits; needs backfill by the next writer (monthly risk run copes with gaps).
+
+---
+
+## Record of the 00:30 pass (the run that did the work)
+
 - **Run:** 2026-11-18 00:32–03:05 UTC (00:30 pass)
 - **Trading date recorded:** 2026-11-17
 - **Result:** PUSHED — commit `ae1bcaf` (36a1aae..ae1bcaf, no force)
@@ -15,4 +27,3 @@
   - MU from a fool.com article quote box labeled "As of 4:00 PM ET 11/17/26" (close 712.42 inside day range 666.88–726.99); SPCX from the fool.com quote page with "Last close 2026-11-16" printed (141.69).
   - Prev-close tie was exact (≤1¢) on 59 of 63. Four small mismatches vs the board's stored 16 Nov closes, close itself Nov-17-stamped in each case: GLW (implied 106.21 vs stored 106.17), LHX (261.58 vs 261.75), V (426.53 vs 426.46), APH (75.46 vs 75.43). Worth a glance at the next POEMS reconciliation.
   - Live-page verification NOT possible from this sandbox (github.io firewalled; WebFetch provenance blocked it). Verified instead with Playwright on the built file: 901 table rows, ZERO PAGE ERRORS. Repo HEAD confirmed at ae1bcaf.
-- **Note for the 03:30 pass:** all 63 pxd = 2026-11-17 → first-check stop applies; only ust10 remains open.
