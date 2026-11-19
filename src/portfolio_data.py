@@ -3,35 +3,41 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Nov 19, 2026 09:05 Bangkok - DAILY PRICE REFRESH (00:30 UTC pass): 61 of 63 closes booked for 18 Nov + SPY 730.20 / '
- 'QQQ 659.51. UNRESOLVED (left at 17 Nov): GEV (every source stale) and COHR (sources conflict 210.87 vs 212.84). '
- 'Largest moves: PANW +9.90% (results day, verified twice), CRWD +7.95% (verified twice), FTNT +5.87%, NET +5.66%, AMD '
- '+5.31%; NVDA -2.89% to 150.96, a new 52-week low, day after results. Primary (stockanalysis) and Google Finance both '
- "served stale caches all night; closes came from fool.com post-close pages (printed 'Last close 2026-11-18' dates / "
- "quote boxes stamped 'As of 4:00 PM ET 11/18/26', each validated against the board's POEMS-reconciled 17 Nov close) "
- 'plus two dated post-close recaps. 10-year 18 Nov close not yet on MND/ycharts - risk_series ust10 skipped (news '
- 'sources print ~5.07). || PREVIOUS ENTRY: Nov 18, 2026 17:56 Bangkok - MU and SNDK rows: TrendForce sees HBM prices '
- 'more than doubling in 2027 but NAND falling from Q2 2027. No order. || PREVIOUS ENTRY: Nov 18, 2026 15:33 Bangkok - '
- 'DECIDED (Salee): NVDA - HOLD all 452 sh, no buy, no trim, until further advice from Claude; buying stays suspended; '
- 'reviewed 10 Dec. || PREVIOUS ENTRY: Nov 18, 2026 13:42 Bangkok - 17 NOV CLOSE RECONCILED WITH POEMS (positions 14:39 '
- 'SGT): 36 lines + SGOV tie to the cent (cost 813,286.62; MV 794,601.53); TSM fill confirmed. Stocks MV 739,880.57, '
- 'unrealised -18,600.75 (-2.45%). Cash 5,889.84 (+9.78 credit to itemise). 10-year 5.10% (17 Nov) - valuation gate '
- 'active, tripwire not hit. No line hit: PLTR 156.56 (line 150), AVGO 341.60 (310), APP 398.94 (320); NVDA 155.46 '
- "(fair value re-read after the results: $279.63, was $328.95), ~+2-4% after hours on the results - Salee's decision "
- 'pending. SPY 732.44 (-6.0% from its high). || PREVIOUS ENTRY: Nov 18, 2026 09:50 Bangkok - DAILY PRICE REFRESH '
- '(00:30 UTC pass): all 63 closes booked for 17 Nov + SPY 732.44 / QQQ 656.95. Largest moves: ARM +4.8%, AVAV -4.6%, '
- 'ALAB +4.6%, DDOG -4.4%; none >=6%. Primary (stockanalysis) served stale caches all night - closes sourced from '
- "Google Finance pages with explicit 'Closed: Nov 17, 4:00 PM GMT-5' stamps, each validated against the board's 16 Nov "
- 'close; MU from a fool.com post-close quote box (As of 4:00 PM ET 11/17/26), SPCX from the fool.com quote page (last '
- 'close 2026-11-16 printed). 10-year yield close for 17 Nov not yet published (MND/ycharts end 16 Nov) - risk_series '
- 'ust10 skipped for the day. || PREVIOUS ENTRY: Nov 18, 2026 05:37 Bangkok - NVDA Q3 FY2027 SCORED: revenue $115.8bn '
- '(+103%), data centre +110%, margin 74.9%, EPS $2.68 - beat; Q4 guide $130bn (14 weeks), margin 71-72%. No charge, no '
- 'penalty; investigation open; board not reinstating Huang. Closed 155.46, ~+3-4% after hours. Salee to decide buy / '
- 'hold / sell. || PREVIOUS ENTRY: Nov 17, 2026 23:05 Bangkok - TSM LINE BUY FILLED: 26 sh at 358.94 = 9,352.41; '
- 'position 196.5 sh, cost 73,830.12 of 74,000 (budget complete). Cash 5,880.06. Next: NVDA results 04:20 Wed Bangkok. '
- '|| PREVIOUS ENTRY: Nov 17, 2026 08:55 Bangkok - 16 NOV CLOSE BOOKED FROM POEMS (positions 09:41 SGT): 36 lines + '
- 'SGOV tie to the cent (cost 803,934.21; MV 791,624.22). Stocks MV 736,908.70, unrealised -12,220.21 (-1.63%). ⚠️ TSM '
- '$380 LINE HIT (closed 373.45): TONIGHT after 22:00 BUY 25 sh Day LIMIT 373.45 / cap 377.18 (~$9,356, from cash). EUR '
+ASOF = ('Nov 19, 2026 10:50 Bangkok - DAILY PRICE REFRESH (03:30 UTC pass): 00:30 pass had already booked 61/63 for 18 Nov; '
+ 'this pass resolved GEV 772.22 (-0.99%, fool.com quote page dated last-close row 2026-11-18, internals validate '
+ 'against the POEMS-reconciled 17 Nov close 779.91; stockanalysis/Google Finance/marketscreener all still stale). COHR '
+ 'STILL UNRESOLVED, left at 17 Nov 210.86: no source shows a dated 18 Nov close (ycharts 210.88 intraday 14:41 '
+ 'suggests roughly flat, but intraday is not a close). 62/63 now at 18 Nov. UST10 18 Nov close not yet published on '
+ 'MND or ycharts (both end 17 Nov) - risk_series ust10 skipped again. || PREVIOUS ENTRY: Nov 19, 2026 09:05 Bangkok - '
+ 'DAILY PRICE REFRESH (00:30 UTC pass): 61 of 63 closes booked for 18 Nov + SPY 730.20 / QQQ 659.51. UNRESOLVED (left '
+ 'at 17 Nov): GEV (every source stale) and COHR (sources conflict 210.87 vs 212.84). Largest moves: PANW +9.90% '
+ '(results day, verified twice), CRWD +7.95% (verified twice), FTNT +5.87%, NET +5.66%, AMD +5.31%; NVDA -2.89% to '
+ '150.96, a new 52-week low, day after results. Primary (stockanalysis) and Google Finance both served stale caches '
+ "all night; closes came from fool.com post-close pages (printed 'Last close 2026-11-18' dates / quote boxes stamped "
+ "'As of 4:00 PM ET 11/18/26', each validated against the board's POEMS-reconciled 17 Nov close) plus two dated "
+ 'post-close recaps. 10-year 18 Nov close not yet on MND/ycharts - risk_series ust10 skipped (news sources print '
+ '~5.07). || PREVIOUS ENTRY: Nov 18, 2026 17:56 Bangkok - MU and SNDK rows: TrendForce sees HBM prices more than '
+ 'doubling in 2027 but NAND falling from Q2 2027. No order. || PREVIOUS ENTRY: Nov 18, 2026 15:33 Bangkok - DECIDED '
+ '(Salee): NVDA - HOLD all 452 sh, no buy, no trim, until further advice from Claude; buying stays suspended; reviewed '
+ '10 Dec. || PREVIOUS ENTRY: Nov 18, 2026 13:42 Bangkok - 17 NOV CLOSE RECONCILED WITH POEMS (positions 14:39 SGT): 36 '
+ 'lines + SGOV tie to the cent (cost 813,286.62; MV 794,601.53); TSM fill confirmed. Stocks MV 739,880.57, unrealised '
+ '-18,600.75 (-2.45%). Cash 5,889.84 (+9.78 credit to itemise). 10-year 5.10% (17 Nov) - valuation gate active, '
+ 'tripwire not hit. No line hit: PLTR 156.56 (line 150), AVGO 341.60 (310), APP 398.94 (320); NVDA 155.46 (fair value '
+ "re-read after the results: $279.63, was $328.95), ~+2-4% after hours on the results - Salee's decision pending. SPY "
+ '732.44 (-6.0% from its high). || PREVIOUS ENTRY: Nov 18, 2026 09:50 Bangkok - DAILY PRICE REFRESH (00:30 UTC pass): '
+ 'all 63 closes booked for 17 Nov + SPY 732.44 / QQQ 656.95. Largest moves: ARM +4.8%, AVAV -4.6%, ALAB +4.6%, DDOG '
+ '-4.4%; none >=6%. Primary (stockanalysis) served stale caches all night - closes sourced from Google Finance pages '
+ "with explicit 'Closed: Nov 17, 4:00 PM GMT-5' stamps, each validated against the board's 16 Nov close; MU from a "
+ 'fool.com post-close quote box (As of 4:00 PM ET 11/17/26), SPCX from the fool.com quote page (last close 2026-11-16 '
+ 'printed). 10-year yield close for 17 Nov not yet published (MND/ycharts end 16 Nov) - risk_series ust10 skipped for '
+ 'the day. || PREVIOUS ENTRY: Nov 18, 2026 05:37 Bangkok - NVDA Q3 FY2027 SCORED: revenue $115.8bn (+103%), data '
+ 'centre +110%, margin 74.9%, EPS $2.68 - beat; Q4 guide $130bn (14 weeks), margin 71-72%. No charge, no penalty; '
+ 'investigation open; board not reinstating Huang. Closed 155.46, ~+3-4% after hours. Salee to decide buy / hold / '
+ 'sell. || PREVIOUS ENTRY: Nov 17, 2026 23:05 Bangkok - TSM LINE BUY FILLED: 26 sh at 358.94 = 9,352.41; position '
+ '196.5 sh, cost 73,830.12 of 74,000 (budget complete). Cash 5,880.06. Next: NVDA results 04:20 Wed Bangkok. || '
+ 'PREVIOUS ENTRY: Nov 17, 2026 08:55 Bangkok - 16 NOV CLOSE BOOKED FROM POEMS (positions 09:41 SGT): 36 lines + SGOV '
+ 'tie to the cent (cost 803,934.21; MV 791,624.22). Stocks MV 736,908.70, unrealised -12,220.21 (-1.63%). ⚠️ TSM $380 '
+ 'LINE HIT (closed 373.45): TONIGHT after 22:00 BUY 25 sh Day LIMIT 373.45 / cap 377.18 (~$9,356, from cash). EUR '
  'converted: cash 15,232.47; Frankfurt swap final gain +368.51. Chip sell-off: SPY 739.95 (-1.9%), QQQ 661.75 (-2.7%); '
  'NVDA 156.14 (-4.1%), MU -7.6%, MRVL -7.3%, LITE -8.5%. 10-year 5.115% - gate active, tripwire not hit. AVGO 333.40 '
  '(line 310), PLTR 160.39 (line 150), APP 415.22 (line 320) - not hit. 27 watch closes verified. || PREVIOUS ENTRY: '
@@ -1878,7 +1884,7 @@ STOCKS = [{'an': 61,
   'epsG': 522.1,
   'ex': 'NYSE',
   'fcfB': 17.11,
-  'fpe': 37.13,
+  'fpe': 36.76,
   'fqd': '2026-09-30',
   'fvAvg': 1224.0,
   'fvMax': 1450.0,
@@ -1889,14 +1895,14 @@ STOCKS = [{'an': 61,
   'hi52': 1195.94,
   'jan2': 661.19,
   'lo52': 530.16,
-  'mcapB': 207.71,
+  'mcapB': 205.66,
   'name': 'GE Vernova',
-  'pe': 20.42,
-  'peg': 0.94,
+  'pe': 20.22,
+  'peg': 0.93,
   'pm': 23.52,
-  'price': 779.91,
-  'ps': 4.72,
-  'pxd': '2026-11-17',
+  'price': 772.22,
+  'ps': 4.67,
+  'pxd': '2026-11-18',
   'r40': 55.8,
   'revB': 44.04,
   'revG': 16.91,
@@ -5908,7 +5914,7 @@ M3 = {'AAPL': {'de': 0.78, 'ev': 29.84, 'pfcf': 36.23},
  'FSLR': {'de': 0.02, 'ev': 7.1, 'pfcf': 11.23},
  'FTNT': {'de': 0.36, 'ev': 49.52, 'pfcf': 30.07},
  'GE': {'de': 1.16, 'ev': 26.34, 'pfcf': 41.41},
- 'GEV': {'de': 0.28, 'ev': 52.98, 'pfcf': 13.8},
+ 'GEV': {'de': 0.28, 'ev': 52.98, 'pfcf': 13.66},
  'GLW': {'de': 0.71, 'ev': 27.77, 'pfcf': 43.88},
  'GOOGL': {'de': 0.19, 'ev': 21.91, 'pfcf': 177.26},
  'HOOD': {'de': 2.4, 'ev': 29.41, 'pfcf': 24.28},
@@ -10630,12 +10636,12 @@ HISTORY = [{'cash': 19542.79,
  {'d': '2026-11-18',
   'sha': 'live',
   'n': 36,
-  'mv': 744727.13,
+  'mv': 744627.16,
   'cost': 758481.32,
-  'unreal': -13754.19,
-  'unrealPct': -1.81,
+  'unreal': -13854.16,
+  'unrealPct': -1.83,
   'real': 6263.88,
-  'net': -7490.31,
+  'net': -7590.28,
   'cash': 5889.84}]
 
 BENCH = {'flows': {'2025-07': 19503.41,
