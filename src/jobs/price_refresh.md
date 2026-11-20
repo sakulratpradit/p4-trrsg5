@@ -204,3 +204,34 @@ After SPY is refreshed, append one row to each series in src/risk_series.json (J
   - spy[<trading date>] = SPY official close (same value as BENCH['spyLast']).
   - ust10[<trading date>] = 10-year Treasury yield close in % (2 decimals). Source: https://www.mortgagenewsdaily.com/treasury/10yr (10-day table, "Close" column) or https://ycharts.com/indicators/10year_treasury_constant_maturity_rate; find either via WebSearch first (provenance rule).
 Never overwrite an existing date except to correct a value confirmed by a second source. If either value cannot be read, skip that series for the day - the monthly risk run copes with gaps.
+
+
+## YEAR PRICES - start and end of each calendar year (added 20 Nov 2026, Salee's request)
+The Overview matrix has a group "Price by year" (start price, end price, % change for 2026, 2027, 2028).
+Each stock carries `yr`, e.g. `'yr': {'2026': {'c': 145.98, 'cd': '2026-11-19', 'o': 189.6}}`:
+  o  = the official OPENING price on the first US trading day of that year
+  c  = the last close dated in that year;  cd = that close's date
+`c` and `cd` are written by gen_dashboard.py on every build from `price` / `pxd` - DO NOT edit them in a
+normal run. A year's close freezes by itself once prices move into the next year.
+
+TWO EXTRA DUTIES, both only around the turn of the year:
+
+A. LAST TRADING DAY OF THE YEAR (2026: Thu 31 Dec; 2027: Fri 31 Dec; 2028: Fri 29 Dec).
+   On the run that books that day's closes, try harder than usual to resolve EVERY ticker - an unresolved
+   ticker would freeze the year at an earlier close. After the build, list any ticker whose
+   `yr[<year>]['cd']` is not the last trading day. If such a ticker is first resolved on a later run
+   (its `pxd` already in the new year), set `yr[<old year>]['c']` and `['cd']` by hand to the official
+   last-trading-day close from the /history/ table (validation rules above apply) and say so in the report.
+
+B. FIRST TRADING DAY OF THE YEAR (2027: Mon 4 Jan; 2028: Mon 3 Jan).
+   On the run that books that day's closes, ALSO write `yr['<new year>']['o']` for all tickers = that
+   day's official OPEN, read from the /history/ table row for that date (the Open column is reliable even
+   when the row's close is a partial capture). Sanity: low <= open <= high on that row; otherwise leave
+   `o` as None for that ticker and list it. `o` is the ONE extra field this job owns, and only on this
+   duty. Until `o` is written the page shows the prior year's final close marked "prev close", so a miss
+   is visible and recoverable: fill any missing `o` on any later run in January from the same history row.
+   Never write `o` from memory or from a later day's price.
+
+SPLITS: if a ticker splits, its stored `o`/`c` for earlier dates must be divided by the split ratio in the
+same commit that adjusts `jan2`, `hi52`, `lo52` and `ath` - report it; do not do it silently.
+Known gap: CAT has no 2026 `o` (its 2 Jan 2026 open was not found on 20 Nov 2026); `jan2` stays None.
