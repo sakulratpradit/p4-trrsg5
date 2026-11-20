@@ -3,122 +3,125 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ("Nov 20, 2026 23:22 Bangkok - NVDA 10 Dec review row: added Bill Ackman's public criticism of the Nvidia board (X "
- "post, 18 Nov; comment only, no formal action) and Huang's stated willingness to return (17 Nov; board says no). Hold "
- 'unchanged; none of the four alert conditions met. No price, position or cash change. || PREVIOUS ENTRY: Nov 20, 2026 '
- '18:40 Bangkok - OVERVIEW MATRIX: added units held, cost per unit, market price per unit and gain/loss in dollars to '
- 'the Position group; new group "Price by year" with start price, end price and % change for 2026, 2027 and 2028 plus '
- 'change since the 2026 start (Salee, 20 Nov). Year-end closes freeze automatically; year-start opens are booked by '
- 'the price job. FSLR 2026 start price 265.86 added (financialcontent.com daily row, 2 Jan 2026 open); CAT 2 Jan 2026 '
- 'open not found - left blank. No price, position or cash change. || PREVIOUS ENTRY: Nov 20, 2026 10:55 Bangkok - '
- 'DAILY PRICE REFRESH (03:30 UTC pass): resolved the 3 names the 00:30 pass left unresolved - all 63 of 63 now at 19 '
- "Nov. COHR 214.94 (+0.99%; StockTitan 'Last updated: November 19, 2026 at 19:59 EST', after-hours 209.24 quoted "
- "against 'the $214.94 close'; corroborated by yahoo close widget +1.08% and stockstory intraday 214.44 at 12:20 ET - "
- 'the +10.78% buyback headline was a 10:00 ET spike that faded with the tape). GEV 756.28 (-2.06%; stockanalysis quote '
- "page 'At close: Nov 19, 2026, 4:00 PM EST', stated previous close 772.22 chains exactly to the stored 18 Nov close; "
- "its /history/ table stale at Nov 13 so the chain test used the board's own verified 18 Nov value). SNDK 755.16 "
- "PRE-SPLIT (-2.71%; same StockTitan stamp, after-hours 736.80 against 'the $755.16 close'; corroborated by marketbeat "
- "dated alert headline 'Shares Down 2.7%' 2026-11-19; the +6.29% pre-split intraday headline also faded). *** SNDK "
- 'SPLIT 8-FOR-1 WARNING STANDS: split-adjusted trading starts Fri 20 Nov; eps, hi52/lo52 and fundamentals MUST be '
- 'split-adjusted by the interactive/earnings jobs BEFORE the next price refresh books a post-split close (expect ~1/8, '
- 'about 94; the 6% gate will trip) ***. HISTORY 11-19 row recomputed in place (GEV held, 13 sh: mv -207.22). '
- 'pe/ps/fpe/peg/M3-pfcf rescaled with price for the 3 names. SPY/QQQ/UST10/risk_series already booked by the 00:30 '
- 'pass - untouched. Every number from a tool call this session. || PREVIOUS ENTRY: Nov 20, 2026 08:01 Bangkok - DAILY '
- 'PRICE REFRESH (00:30 UTC pass): 60 of 63 closes booked for 19 Nov + SPY 715.87 (-1.96%) / QQQ 645.04 (-2.19%); S&P '
- '500 7,175.83 -2.02% (broad AI sell-off). COHR advanced to its verified 18 Nov close 212.84 (fool dated row x2, '
- 'chains to the 17 Nov 210.86; resolves the 210.87-vs-212.84 conflict in favour of 212.84); COHR 19 Nov close '
- 'UNRESOLVED (+10.78% at 10:00 ET per dated article, close not published on any usable source). GEV UNRESOLVED again, '
- 'left at 18 Nov 772.22 (marketbeat headline says -2.2% on a downgrade but the body is unreadable; every quote mirror '
- 'stale). SNDK left at 18 Nov 776.22: 19 Nov close not found AND *** SNDK SPLIT 8-FOR-1 AFTER THE 19 NOV CLOSE - '
- 'split-adjusted trading starts Fri 20 Nov; POS shares, eps, hi52/lo52 and fundamentals MUST be split-adjusted by the '
- 'interactive/earnings jobs BEFORE the next price refresh books a post-split close (expect ~1/8 of the old price; the '
- '6% gate will trip) ***. 6%+ movers verified on second sources and allowed: AMD -7.72% to 489.19 (China short-report; '
- 'fool header + JKN dated close + ycharts chain) and PANW +6.42% to 361.73 (Q1 beat + Applied Compute deal; fool stats '
- '+ Wall Street Republic dated wrap, both exactly 361.73). Other large moves: MU -2.10% 690.44, VRT -4.88%, AVAV '
- '-5.14%, CEG -4.08%, SE -3.88%, CAT -3.83%. NVDA -3.30% to 145.98, another 52-week low (Q3 beat landed after the '
- 'close; stock indicated up after hours - not on the board). Sources: stockanalysis and Google Finance caches stale '
- "all night again; closes from fool.com dated 'Last close 2026-11-19' rows / post-close stats blocks, each validated "
- 'by the exact previous-close chain to the stored 18 Nov close, plus dated post-close recaps; ycharts 16:00 stamps '
- "used as corroboration only. Vendor note: fool's own 18 Nov reference differed from the board's on AMAT (351.77 vs "
- "352.30), CGNX (49.04 vs 49.13) and BWXT (117.66 vs 117.93) - day proven by fool's printed 18 Nov date; gap noted, "
- 'not resolved. UST10: ycharts 18 Nov 5.07 added to risk_series; 19 Nov 5.04 (-3bp) added from a dated market wrap '
- 'consistent with the ycharts chain. HISTORY 11-19 row added. pe/ps/fpe/peg/M3-pfcf rescaled with price. Every number '
- 'from a tool call this session. || PREVIOUS ENTRY: Nov 19, 2026 20:32 Bangkok - 2025 RECONCILED LINE BY LINE from the '
- '12 POEMS monthly Excel files (Jan-Dec 2025): 41 buys, no sells, 148,594.96 - all six months and lot counts match the '
- 'ledger to the cent; month-end cost ties each month; cash chain ties to 218,059.23 at 31 Dec 2025. Dividends: +83.43 '
- 'for 2025 added (total 1,451.36). No price, position or cash change today. || PREVIOUS ENTRY: Nov 19, 2026 19:01 '
- 'Bangkok - 31 DEC 2025 ACTUAL BOOKED: stock value 168,180.04 (POEMS Transactions History Jan-Dec 2025, sent by Salee '
- '19 Nov) replaces the 153,245.03 estimate in Performance by year; 2025 cost 148,594.96 matches the monthly ledger to '
- 'the cent, so the 2025 money-in months now use the ledger exactly (was scaled to 146,735.67) and the 3,515.52 end-Feb '
- 'difference sits in Jan-Feb 2026 only; total money in unchanged. No price, position or cash change. || PREVIOUS '
- 'ENTRY: Nov 19, 2026 10:50 Bangkok - DAILY PRICE REFRESH (03:30 UTC pass): 00:30 pass had already booked 61/63 for 18 '
- 'Nov; this pass resolved GEV 772.22 (-0.99%, fool.com quote page dated last-close row 2026-11-18, internals validate '
- 'against the POEMS-reconciled 17 Nov close 779.91; stockanalysis/Google Finance/marketscreener all still stale). COHR '
- 'STILL UNRESOLVED, left at 17 Nov 210.86: no source shows a dated 18 Nov close (ycharts 210.88 intraday 14:41 '
- 'suggests roughly flat, but intraday is not a close). 62/63 now at 18 Nov. UST10 18 Nov close not yet published on '
- 'MND or ycharts (both end 17 Nov) - risk_series ust10 skipped again. || PREVIOUS ENTRY: Nov 19, 2026 09:05 Bangkok - '
- 'DAILY PRICE REFRESH (00:30 UTC pass): 61 of 63 closes booked for 18 Nov + SPY 730.20 / QQQ 659.51. UNRESOLVED (left '
- 'at 17 Nov): GEV (every source stale) and COHR (sources conflict 210.87 vs 212.84). Largest moves: PANW +9.90% '
- '(results day, verified twice), CRWD +7.95% (verified twice), FTNT +5.87%, NET +5.66%, AMD +5.31%; NVDA -2.89% to '
- '150.96, a new 52-week low, day after results. Primary (stockanalysis) and Google Finance both served stale caches '
- "all night; closes came from fool.com post-close pages (printed 'Last close 2026-11-18' dates / quote boxes stamped "
- "'As of 4:00 PM ET 11/18/26', each validated against the board's POEMS-reconciled 17 Nov close) plus two dated "
- 'post-close recaps. 10-year 18 Nov close not yet on MND/ycharts - risk_series ust10 skipped (news sources print '
- '~5.07). || PREVIOUS ENTRY: Nov 18, 2026 17:56 Bangkok - MU and SNDK rows: TrendForce sees HBM prices more than '
- 'doubling in 2027 but NAND falling from Q2 2027. No order. || PREVIOUS ENTRY: Nov 18, 2026 15:33 Bangkok - DECIDED '
- '(Salee): NVDA - HOLD all 452 sh, no buy, no trim, until further advice from Claude; buying stays suspended; reviewed '
- '10 Dec. || PREVIOUS ENTRY: Nov 18, 2026 13:42 Bangkok - 17 NOV CLOSE RECONCILED WITH POEMS (positions 14:39 SGT): 36 '
- 'lines + SGOV tie to the cent (cost 813,286.62; MV 794,601.53); TSM fill confirmed. Stocks MV 739,880.57, unrealised '
- '-18,600.75 (-2.45%). Cash 5,889.84 (+9.78 credit to itemise). 10-year 5.10% (17 Nov) - valuation gate active, '
- 'tripwire not hit. No line hit: PLTR 156.56 (line 150), AVGO 341.60 (310), APP 398.94 (320); NVDA 155.46 (fair value '
- "re-read after the results: $279.63, was $328.95), ~+2-4% after hours on the results - Salee's decision pending. SPY "
- '732.44 (-6.0% from its high). || PREVIOUS ENTRY: Nov 18, 2026 09:50 Bangkok - DAILY PRICE REFRESH (00:30 UTC pass): '
- 'all 63 closes booked for 17 Nov + SPY 732.44 / QQQ 656.95. Largest moves: ARM +4.8%, AVAV -4.6%, ALAB +4.6%, DDOG '
- '-4.4%; none >=6%. Primary (stockanalysis) served stale caches all night - closes sourced from Google Finance pages '
- "with explicit 'Closed: Nov 17, 4:00 PM GMT-5' stamps, each validated against the board's 16 Nov close; MU from a "
- 'fool.com post-close quote box (As of 4:00 PM ET 11/17/26), SPCX from the fool.com quote page (last close 2026-11-16 '
- 'printed). 10-year yield close for 17 Nov not yet published (MND/ycharts end 16 Nov) - risk_series ust10 skipped for '
- 'the day. || PREVIOUS ENTRY: Nov 18, 2026 05:37 Bangkok - NVDA Q3 FY2027 SCORED: revenue $115.8bn (+103%), data '
- 'centre +110%, margin 74.9%, EPS $2.68 - beat; Q4 guide $130bn (14 weeks), margin 71-72%. No charge, no penalty; '
- 'investigation open; board not reinstating Huang. Closed 155.46, ~+3-4% after hours. Salee to decide buy / hold / '
- 'sell. || PREVIOUS ENTRY: Nov 17, 2026 23:05 Bangkok - TSM LINE BUY FILLED: 26 sh at 358.94 = 9,352.41; position '
- '196.5 sh, cost 73,830.12 of 74,000 (budget complete). Cash 5,880.06. Next: NVDA results 04:20 Wed Bangkok. || '
- 'PREVIOUS ENTRY: Nov 17, 2026 08:55 Bangkok - 16 NOV CLOSE BOOKED FROM POEMS (positions 09:41 SGT): 36 lines + SGOV '
- 'tie to the cent (cost 803,934.21; MV 791,624.22). Stocks MV 736,908.70, unrealised -12,220.21 (-1.63%). ⚠️ TSM $380 '
- 'LINE HIT (closed 373.45): TONIGHT after 22:00 BUY 25 sh Day LIMIT 373.45 / cap 377.18 (~$9,356, from cash). EUR '
- 'converted: cash 15,232.47; Frankfurt swap final gain +368.51. Chip sell-off: SPY 739.95 (-1.9%), QQQ 661.75 (-2.7%); '
- 'NVDA 156.14 (-4.1%), MU -7.6%, MRVL -7.3%, LITE -8.5%. 10-year 5.115% - gate active, tripwire not hit. AVGO 333.40 '
- '(line 310), PLTR 160.39 (line 150), APP 415.22 (line 320) - not hit. 27 watch closes verified. || PREVIOUS ENTRY: '
- 'Nov 17, 2026 00:41 Bangkok - NVDA row + 10 Dec agenda: SemiAnalysis reportedly cut AI chip spending forecasts (2028 '
- '-28%, 2030 -40%; second-hand). No order. || PREVIOUS ENTRY: Nov 16, 2026 23:33 Bangkok - ⚠️ NVDA: Commerce export '
- 'rule adds licence requirements for advanced chips to Singapore, Malaysia, Thailand, Indonesia, Brazil (trigger 3 '
- "touched - not a penalty on NVIDIA); Trump 'would not mind' Huang returning. NVDA ~159.61 (-2%) early. Plan "
- "unchanged: decide after the 17 Nov results. Watch TSM vs its $380 line on tonight's close. || PREVIOUS ENTRY: Nov "
- '16, 2026 23:28 Bangkok - Next 30 Days: Anthropic (ANT) IPO row added for Thu 19 Nov (reported date; range $70-78 per '
- 'the S-1/A). Conflict disclosed - facts only, no view; no budget, no order. || PREVIOUS ENTRY: Nov 15, 2026 21:24 '
- "Bangkok - NVDA row: Blackwell 'fingerprints' report on six Chinese models (no proof of where or how; not a trigger). "
- '|| PREVIOUS ENTRY: Nov 15, 2026 21:30 Bangkok - 13 NOV CLOSE BOOKED FROM POEMS (positions 21:07 SGT): 36 lines + '
- 'SGOV tie to the cent (cost 803,934.21; MV 824,227.04). Stocks MV 769,522.40, unrealised +20,393.49. ⚠️ CASH: '
- 'Frankfurt sale proceeds are held in EUR 10,293.18, not USD - board cash 15,289.09 (USD 3,942.92 + EUR at 1.1023); '
- 'realised on the swap re-booked +571.30. CAT commission confirmed. 10-year 5.15% (13 Nov) - VALUATION GATE ACTIVE; '
- 'tripwire 5.25% is 0.10 away. No price line hit (TSM 398.73, AVGO 347.01, PLTR 167.99, APP 409.10; NVDA 162.85, line '
- 'suspended). SPY 754.37, QQQ 679.89; 27 watch closes verified. || PREVIOUS ENTRY: Nov 15, 2026 18:05 Bangkok - SPCX '
- '10 Dec row: Starship upper stage caught from orbit for the first time (14 Nov). No order. || PREVIOUS ENTRY: Nov 15, '
- "2026 14:49 Bangkok - NEW (Salee): Portfolio tab 'Performance by year' (2025 from 15 Jul, 2026 so far, since start, "
- 'since the first daily value 28 Jul 2026; a new row each January; 31 Dec 2025 value is an ESTIMATE until the POEMS '
- 'statement arrives). Vision tab: market value vs the 2x goal ($2.0M by 2035 on $1.0M) with year-end milestones. || '
- 'PREVIOUS ENTRY: Nov 15, 2026 13:37 Bangkok - NVDA row: Musk backs a petition to reinstate Huang; Kalshi 9% odds of '
- "return; 'handshake deals' claim unverified. No order change. || PREVIOUS ENTRY: Nov 14, 2026 10:37 Bangkok - ONE "
- "LIST, TWO VIEWS (Salee approved): 'Next 30 Days' tab now rolls forward by itself every day (today to today + 30); "
- 'Schedule tab shows later items plus standing rules. Plan rows merged into the Schedule list; US market holidays to '
- 'Feb 2027 added; NVDA results row restored. No rule, budget or number changed. || PREVIOUS ENTRY: Nov 14, 2026 09:20 '
- 'Bangkok - PLANS ROLLED (Salee): Buy/Sell plan now 16 - 30 Nov (no scheduled buys; NVDA decision after the 17 Nov '
- 'results; PANW results 18 Nov; FOMC minutes, PCE). Schedule now from 30 Nov onward - 17 earlier rows archived; added '
- 'MRVL results 1 Dec, FX update 1 Dec, jobs report 4 Dec, NVDA governance DECIDE 10 Dec. || PREVIOUS ENTRY: Nov 13, '
- '2026 18:55 Bangkok - AMAT Q4 FY2026 SCORED: revenue $10.41bn (+53%), non-GAAP EPS $4.16 (+92%), Q1 guide $11.1bn / '
- "EPS $4.35; China 25% of revenue. Hold, no order. Notes tab: new 'Rate gates' card (why 35x and 5.25%). || PREVIOUS "
- 'ENTRY: Nov 13, 2026 11:05 Bangkok - DAILY PRICE REFRESH (03:30 UTC pass): 60 remaining closes + SPY/QQQ booked for '
- '12 Nov (board now 63 of 63 at the 12 Nov close). Sources: per-ticker rotation of marketscreener mirrors with dated '
+ASOF = ("Nov 20, 2026 23:33 Bangkok - NVDA 10 Dec review row: added the New York Times report of 20 Nov on Huang's conduct "
+ 'toward staff (complaints, at least two confidential settlements; no legal finding). Hold unchanged; none of the four '
+ 'alert conditions met. No price, position or cash change. || PREVIOUS ENTRY: Nov 20, 2026 23:22 Bangkok - NVDA 10 Dec '
+ "review row: added Bill Ackman's public criticism of the Nvidia board (X post, 18 Nov; comment only, no formal "
+ "action) and Huang's stated willingness to return (17 Nov; board says no). Hold unchanged; none of the four alert "
+ 'conditions met. No price, position or cash change. || PREVIOUS ENTRY: Nov 20, 2026 18:40 Bangkok - OVERVIEW MATRIX: '
+ 'added units held, cost per unit, market price per unit and gain/loss in dollars to the Position group; new group '
+ '"Price by year" with start price, end price and % change for 2026, 2027 and 2028 plus change since the 2026 start '
+ '(Salee, 20 Nov). Year-end closes freeze automatically; year-start opens are booked by the price job. FSLR 2026 start '
+ 'price 265.86 added (financialcontent.com daily row, 2 Jan 2026 open); CAT 2 Jan 2026 open not found - left blank. No '
+ 'price, position or cash change. || PREVIOUS ENTRY: Nov 20, 2026 10:55 Bangkok - DAILY PRICE REFRESH (03:30 UTC '
+ 'pass): resolved the 3 names the 00:30 pass left unresolved - all 63 of 63 now at 19 Nov. COHR 214.94 (+0.99%; '
+ "StockTitan 'Last updated: November 19, 2026 at 19:59 EST', after-hours 209.24 quoted against 'the $214.94 close'; "
+ 'corroborated by yahoo close widget +1.08% and stockstory intraday 214.44 at 12:20 ET - the +10.78% buyback headline '
+ "was a 10:00 ET spike that faded with the tape). GEV 756.28 (-2.06%; stockanalysis quote page 'At close: Nov 19, "
+ "2026, 4:00 PM EST', stated previous close 772.22 chains exactly to the stored 18 Nov close; its /history/ table "
+ "stale at Nov 13 so the chain test used the board's own verified 18 Nov value). SNDK 755.16 PRE-SPLIT (-2.71%; same "
+ "StockTitan stamp, after-hours 736.80 against 'the $755.16 close'; corroborated by marketbeat dated alert headline "
+ "'Shares Down 2.7%' 2026-11-19; the +6.29% pre-split intraday headline also faded). *** SNDK SPLIT 8-FOR-1 WARNING "
+ 'STANDS: split-adjusted trading starts Fri 20 Nov; eps, hi52/lo52 and fundamentals MUST be split-adjusted by the '
+ 'interactive/earnings jobs BEFORE the next price refresh books a post-split close (expect ~1/8, about 94; the 6% gate '
+ 'will trip) ***. HISTORY 11-19 row recomputed in place (GEV held, 13 sh: mv -207.22). pe/ps/fpe/peg/M3-pfcf rescaled '
+ 'with price for the 3 names. SPY/QQQ/UST10/risk_series already booked by the 00:30 pass - untouched. Every number '
+ 'from a tool call this session. || PREVIOUS ENTRY: Nov 20, 2026 08:01 Bangkok - DAILY PRICE REFRESH (00:30 UTC pass): '
+ '60 of 63 closes booked for 19 Nov + SPY 715.87 (-1.96%) / QQQ 645.04 (-2.19%); S&P 500 7,175.83 -2.02% (broad AI '
+ 'sell-off). COHR advanced to its verified 18 Nov close 212.84 (fool dated row x2, chains to the 17 Nov 210.86; '
+ 'resolves the 210.87-vs-212.84 conflict in favour of 212.84); COHR 19 Nov close UNRESOLVED (+10.78% at 10:00 ET per '
+ 'dated article, close not published on any usable source). GEV UNRESOLVED again, left at 18 Nov 772.22 (marketbeat '
+ 'headline says -2.2% on a downgrade but the body is unreadable; every quote mirror stale). SNDK left at 18 Nov '
+ '776.22: 19 Nov close not found AND *** SNDK SPLIT 8-FOR-1 AFTER THE 19 NOV CLOSE - split-adjusted trading starts Fri '
+ '20 Nov; POS shares, eps, hi52/lo52 and fundamentals MUST be split-adjusted by the interactive/earnings jobs BEFORE '
+ 'the next price refresh books a post-split close (expect ~1/8 of the old price; the 6% gate will trip) ***. 6%+ '
+ 'movers verified on second sources and allowed: AMD -7.72% to 489.19 (China short-report; fool header + JKN dated '
+ 'close + ycharts chain) and PANW +6.42% to 361.73 (Q1 beat + Applied Compute deal; fool stats + Wall Street Republic '
+ 'dated wrap, both exactly 361.73). Other large moves: MU -2.10% 690.44, VRT -4.88%, AVAV -5.14%, CEG -4.08%, SE '
+ '-3.88%, CAT -3.83%. NVDA -3.30% to 145.98, another 52-week low (Q3 beat landed after the close; stock indicated up '
+ 'after hours - not on the board). Sources: stockanalysis and Google Finance caches stale all night again; closes from '
+ "fool.com dated 'Last close 2026-11-19' rows / post-close stats blocks, each validated by the exact previous-close "
+ 'chain to the stored 18 Nov close, plus dated post-close recaps; ycharts 16:00 stamps used as corroboration only. '
+ "Vendor note: fool's own 18 Nov reference differed from the board's on AMAT (351.77 vs 352.30), CGNX (49.04 vs 49.13) "
+ "and BWXT (117.66 vs 117.93) - day proven by fool's printed 18 Nov date; gap noted, not resolved. UST10: ycharts 18 "
+ 'Nov 5.07 added to risk_series; 19 Nov 5.04 (-3bp) added from a dated market wrap consistent with the ycharts chain. '
+ 'HISTORY 11-19 row added. pe/ps/fpe/peg/M3-pfcf rescaled with price. Every number from a tool call this session. || '
+ 'PREVIOUS ENTRY: Nov 19, 2026 20:32 Bangkok - 2025 RECONCILED LINE BY LINE from the 12 POEMS monthly Excel files '
+ '(Jan-Dec 2025): 41 buys, no sells, 148,594.96 - all six months and lot counts match the ledger to the cent; '
+ 'month-end cost ties each month; cash chain ties to 218,059.23 at 31 Dec 2025. Dividends: +83.43 for 2025 added '
+ '(total 1,451.36). No price, position or cash change today. || PREVIOUS ENTRY: Nov 19, 2026 19:01 Bangkok - 31 DEC '
+ '2025 ACTUAL BOOKED: stock value 168,180.04 (POEMS Transactions History Jan-Dec 2025, sent by Salee 19 Nov) replaces '
+ 'the 153,245.03 estimate in Performance by year; 2025 cost 148,594.96 matches the monthly ledger to the cent, so the '
+ '2025 money-in months now use the ledger exactly (was scaled to 146,735.67) and the 3,515.52 end-Feb difference sits '
+ 'in Jan-Feb 2026 only; total money in unchanged. No price, position or cash change. || PREVIOUS ENTRY: Nov 19, 2026 '
+ '10:50 Bangkok - DAILY PRICE REFRESH (03:30 UTC pass): 00:30 pass had already booked 61/63 for 18 Nov; this pass '
+ 'resolved GEV 772.22 (-0.99%, fool.com quote page dated last-close row 2026-11-18, internals validate against the '
+ 'POEMS-reconciled 17 Nov close 779.91; stockanalysis/Google Finance/marketscreener all still stale). COHR STILL '
+ 'UNRESOLVED, left at 17 Nov 210.86: no source shows a dated 18 Nov close (ycharts 210.88 intraday 14:41 suggests '
+ 'roughly flat, but intraday is not a close). 62/63 now at 18 Nov. UST10 18 Nov close not yet published on MND or '
+ 'ycharts (both end 17 Nov) - risk_series ust10 skipped again. || PREVIOUS ENTRY: Nov 19, 2026 09:05 Bangkok - DAILY '
+ 'PRICE REFRESH (00:30 UTC pass): 61 of 63 closes booked for 18 Nov + SPY 730.20 / QQQ 659.51. UNRESOLVED (left at 17 '
+ 'Nov): GEV (every source stale) and COHR (sources conflict 210.87 vs 212.84). Largest moves: PANW +9.90% (results '
+ 'day, verified twice), CRWD +7.95% (verified twice), FTNT +5.87%, NET +5.66%, AMD +5.31%; NVDA -2.89% to 150.96, a '
+ 'new 52-week low, day after results. Primary (stockanalysis) and Google Finance both served stale caches all night; '
+ "closes came from fool.com post-close pages (printed 'Last close 2026-11-18' dates / quote boxes stamped 'As of 4:00 "
+ "PM ET 11/18/26', each validated against the board's POEMS-reconciled 17 Nov close) plus two dated post-close recaps. "
+ '10-year 18 Nov close not yet on MND/ycharts - risk_series ust10 skipped (news sources print ~5.07). || PREVIOUS '
+ 'ENTRY: Nov 18, 2026 17:56 Bangkok - MU and SNDK rows: TrendForce sees HBM prices more than doubling in 2027 but NAND '
+ 'falling from Q2 2027. No order. || PREVIOUS ENTRY: Nov 18, 2026 15:33 Bangkok - DECIDED (Salee): NVDA - HOLD all 452 '
+ 'sh, no buy, no trim, until further advice from Claude; buying stays suspended; reviewed 10 Dec. || PREVIOUS ENTRY: '
+ 'Nov 18, 2026 13:42 Bangkok - 17 NOV CLOSE RECONCILED WITH POEMS (positions 14:39 SGT): 36 lines + SGOV tie to the '
+ 'cent (cost 813,286.62; MV 794,601.53); TSM fill confirmed. Stocks MV 739,880.57, unrealised -18,600.75 (-2.45%). '
+ 'Cash 5,889.84 (+9.78 credit to itemise). 10-year 5.10% (17 Nov) - valuation gate active, tripwire not hit. No line '
+ 'hit: PLTR 156.56 (line 150), AVGO 341.60 (310), APP 398.94 (320); NVDA 155.46 (fair value re-read after the results: '
+ "$279.63, was $328.95), ~+2-4% after hours on the results - Salee's decision pending. SPY 732.44 (-6.0% from its "
+ 'high). || PREVIOUS ENTRY: Nov 18, 2026 09:50 Bangkok - DAILY PRICE REFRESH (00:30 UTC pass): all 63 closes booked '
+ 'for 17 Nov + SPY 732.44 / QQQ 656.95. Largest moves: ARM +4.8%, AVAV -4.6%, ALAB +4.6%, DDOG -4.4%; none >=6%. '
+ 'Primary (stockanalysis) served stale caches all night - closes sourced from Google Finance pages with explicit '
+ "'Closed: Nov 17, 4:00 PM GMT-5' stamps, each validated against the board's 16 Nov close; MU from a fool.com "
+ 'post-close quote box (As of 4:00 PM ET 11/17/26), SPCX from the fool.com quote page (last close 2026-11-16 printed). '
+ '10-year yield close for 17 Nov not yet published (MND/ycharts end 16 Nov) - risk_series ust10 skipped for the day. '
+ '|| PREVIOUS ENTRY: Nov 18, 2026 05:37 Bangkok - NVDA Q3 FY2027 SCORED: revenue $115.8bn (+103%), data centre +110%, '
+ 'margin 74.9%, EPS $2.68 - beat; Q4 guide $130bn (14 weeks), margin 71-72%. No charge, no penalty; investigation '
+ 'open; board not reinstating Huang. Closed 155.46, ~+3-4% after hours. Salee to decide buy / hold / sell. || PREVIOUS '
+ 'ENTRY: Nov 17, 2026 23:05 Bangkok - TSM LINE BUY FILLED: 26 sh at 358.94 = 9,352.41; position 196.5 sh, cost '
+ '73,830.12 of 74,000 (budget complete). Cash 5,880.06. Next: NVDA results 04:20 Wed Bangkok. || PREVIOUS ENTRY: Nov '
+ '17, 2026 08:55 Bangkok - 16 NOV CLOSE BOOKED FROM POEMS (positions 09:41 SGT): 36 lines + SGOV tie to the cent (cost '
+ '803,934.21; MV 791,624.22). Stocks MV 736,908.70, unrealised -12,220.21 (-1.63%). ⚠️ TSM $380 LINE HIT (closed '
+ '373.45): TONIGHT after 22:00 BUY 25 sh Day LIMIT 373.45 / cap 377.18 (~$9,356, from cash). EUR converted: cash '
+ '15,232.47; Frankfurt swap final gain +368.51. Chip sell-off: SPY 739.95 (-1.9%), QQQ 661.75 (-2.7%); NVDA 156.14 '
+ '(-4.1%), MU -7.6%, MRVL -7.3%, LITE -8.5%. 10-year 5.115% - gate active, tripwire not hit. AVGO 333.40 (line 310), '
+ 'PLTR 160.39 (line 150), APP 415.22 (line 320) - not hit. 27 watch closes verified. || PREVIOUS ENTRY: Nov 17, 2026 '
+ '00:41 Bangkok - NVDA row + 10 Dec agenda: SemiAnalysis reportedly cut AI chip spending forecasts (2028 -28%, 2030 '
+ '-40%; second-hand). No order. || PREVIOUS ENTRY: Nov 16, 2026 23:33 Bangkok - ⚠️ NVDA: Commerce export rule adds '
+ 'licence requirements for advanced chips to Singapore, Malaysia, Thailand, Indonesia, Brazil (trigger 3 touched - not '
+ "a penalty on NVIDIA); Trump 'would not mind' Huang returning. NVDA ~159.61 (-2%) early. Plan unchanged: decide after "
+ "the 17 Nov results. Watch TSM vs its $380 line on tonight's close. || PREVIOUS ENTRY: Nov 16, 2026 23:28 Bangkok - "
+ 'Next 30 Days: Anthropic (ANT) IPO row added for Thu 19 Nov (reported date; range $70-78 per the S-1/A). Conflict '
+ 'disclosed - facts only, no view; no budget, no order. || PREVIOUS ENTRY: Nov 15, 2026 21:24 Bangkok - NVDA row: '
+ "Blackwell 'fingerprints' report on six Chinese models (no proof of where or how; not a trigger). || PREVIOUS ENTRY: "
+ 'Nov 15, 2026 21:30 Bangkok - 13 NOV CLOSE BOOKED FROM POEMS (positions 21:07 SGT): 36 lines + SGOV tie to the cent '
+ '(cost 803,934.21; MV 824,227.04). Stocks MV 769,522.40, unrealised +20,393.49. ⚠️ CASH: Frankfurt sale proceeds are '
+ 'held in EUR 10,293.18, not USD - board cash 15,289.09 (USD 3,942.92 + EUR at 1.1023); realised on the swap re-booked '
+ '+571.30. CAT commission confirmed. 10-year 5.15% (13 Nov) - VALUATION GATE ACTIVE; tripwire 5.25% is 0.10 away. No '
+ 'price line hit (TSM 398.73, AVGO 347.01, PLTR 167.99, APP 409.10; NVDA 162.85, line suspended). SPY 754.37, QQQ '
+ '679.89; 27 watch closes verified. || PREVIOUS ENTRY: Nov 15, 2026 18:05 Bangkok - SPCX 10 Dec row: Starship upper '
+ 'stage caught from orbit for the first time (14 Nov). No order. || PREVIOUS ENTRY: Nov 15, 2026 14:49 Bangkok - NEW '
+ "(Salee): Portfolio tab 'Performance by year' (2025 from 15 Jul, 2026 so far, since start, since the first daily "
+ 'value 28 Jul 2026; a new row each January; 31 Dec 2025 value is an ESTIMATE until the POEMS statement arrives). '
+ 'Vision tab: market value vs the 2x goal ($2.0M by 2035 on $1.0M) with year-end milestones. || PREVIOUS ENTRY: Nov '
+ "15, 2026 13:37 Bangkok - NVDA row: Musk backs a petition to reinstate Huang; Kalshi 9% odds of return; 'handshake "
+ "deals' claim unverified. No order change. || PREVIOUS ENTRY: Nov 14, 2026 10:37 Bangkok - ONE LIST, TWO VIEWS (Salee "
+ "approved): 'Next 30 Days' tab now rolls forward by itself every day (today to today + 30); Schedule tab shows later "
+ 'items plus standing rules. Plan rows merged into the Schedule list; US market holidays to Feb 2027 added; NVDA '
+ 'results row restored. No rule, budget or number changed. || PREVIOUS ENTRY: Nov 14, 2026 09:20 Bangkok - PLANS '
+ 'ROLLED (Salee): Buy/Sell plan now 16 - 30 Nov (no scheduled buys; NVDA decision after the 17 Nov results; PANW '
+ 'results 18 Nov; FOMC minutes, PCE). Schedule now from 30 Nov onward - 17 earlier rows archived; added MRVL results 1 '
+ 'Dec, FX update 1 Dec, jobs report 4 Dec, NVDA governance DECIDE 10 Dec. || PREVIOUS ENTRY: Nov 13, 2026 18:55 '
+ 'Bangkok - AMAT Q4 FY2026 SCORED: revenue $10.41bn (+53%), non-GAAP EPS $4.16 (+92%), Q1 guide $11.1bn / EPS $4.35; '
+ "China 25% of revenue. Hold, no order. Notes tab: new 'Rate gates' card (why 35x and 5.25%). || PREVIOUS ENTRY: Nov "
+ '13, 2026 11:05 Bangkok - DAILY PRICE REFRESH (03:30 UTC pass): 60 remaining closes + SPY/QQQ booked for 12 Nov '
+ '(board now 63 of 63 at the 12 Nov close). Sources: per-ticker rotation of marketscreener mirrors with dated '
  'Market-Closed stamps and 5-day tables (MSFT 523.00, AMZN 267.44, GOOGL 298.70, MPWR 1447.40, ASML 1497.12, MU '
  '798.44, ARM 199.78, PANW 322.66, SE 74.52, SPCX 139.94, SPY 757.12), stocktitan dated closes (META 623.61, SNPS, '
  'SNDK, APH, COHR, CRDO, FSLR, RKLB, AVAV, DDOG, V, CRWD, FTNT, NET, BWXT, GEV, ETN, VRT, PWR, BE, CEG, VST, CAT, '
@@ -9052,7 +9055,15 @@ SCHEDULE = {'horizon': 'after the next 30 days, and standing rules',
                     'said on Tue 17 Nov he would be willing to return; chairman Harvey Jones said on the results call '
                     'the board does not intend to reinstate him. NOT one of the four alert conditions - HOLD '
                     "unchanged. Watch for a formal step by a large shareholder or a change in the board's position; "
-                    'either goes into this review.',
+                    'either goes into this review. || 20 Nov (Thai slide, graded Useful): NEW YORK TIMES REPORT, 20 '
+                    'Nov - based on dozens of accounts and documents from current and former employees, it says Huang '
+                    'routinely berated staff with graphic threats and personal insults; human-resources complaints '
+                    'piled up and at least two senior leaders received confidential settlements (read via Newser '
+                    'summary, not the Times itself). No lawsuit, regulator or legal finding is described; the summary '
+                    'does not say the threats were meant literally. Nvidia did not comment in that summary; another '
+                    'outlet reports a spokesperson denying the allegations. EFFECT: makes reinstatement less likely '
+                    'and adds to the governance questions; nothing about sales, customers or guidance. NOT one of the '
+                    'four alert conditions - HOLD unchanged.',
             'd': '2026-12-10',
             'dl': 'NVDA governance after the CEO change - resume the $180 line?',
             'k': 'review',
