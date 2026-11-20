@@ -3,64 +3,67 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Nov 20, 2026 18:40 Bangkok - OVERVIEW MATRIX: added units held, cost per unit, market price per unit and gain/loss '
- 'in dollars to the Position group; new group "Price by year" with start price, end price and % change for 2026, 2027 '
- 'and 2028 plus change since the 2026 start (Salee, 20 Nov). Year-end closes freeze automatically; year-start opens '
- 'are booked by the price job. FSLR 2026 start price 265.86 added (financialcontent.com daily row, 2 Jan 2026 open); '
- 'CAT 2 Jan 2026 open not found - left blank. No price, position or cash change. || PREVIOUS ENTRY: Nov 20, 2026 10:55 '
- 'Bangkok - DAILY PRICE REFRESH (03:30 UTC pass): resolved the 3 names the 00:30 pass left unresolved - all 63 of 63 '
- "now at 19 Nov. COHR 214.94 (+0.99%; StockTitan 'Last updated: November 19, 2026 at 19:59 EST', after-hours 209.24 "
- "quoted against 'the $214.94 close'; corroborated by yahoo close widget +1.08% and stockstory intraday 214.44 at "
- '12:20 ET - the +10.78% buyback headline was a 10:00 ET spike that faded with the tape). GEV 756.28 (-2.06%; '
- "stockanalysis quote page 'At close: Nov 19, 2026, 4:00 PM EST', stated previous close 772.22 chains exactly to the "
- "stored 18 Nov close; its /history/ table stale at Nov 13 so the chain test used the board's own verified 18 Nov "
- "value). SNDK 755.16 PRE-SPLIT (-2.71%; same StockTitan stamp, after-hours 736.80 against 'the $755.16 close'; "
- "corroborated by marketbeat dated alert headline 'Shares Down 2.7%' 2026-11-19; the +6.29% pre-split intraday "
- 'headline also faded). *** SNDK SPLIT 8-FOR-1 WARNING STANDS: split-adjusted trading starts Fri 20 Nov; eps, '
- 'hi52/lo52 and fundamentals MUST be split-adjusted by the interactive/earnings jobs BEFORE the next price refresh '
- 'books a post-split close (expect ~1/8, about 94; the 6% gate will trip) ***. HISTORY 11-19 row recomputed in place '
- '(GEV held, 13 sh: mv -207.22). pe/ps/fpe/peg/M3-pfcf rescaled with price for the 3 names. SPY/QQQ/UST10/risk_series '
- 'already booked by the 00:30 pass - untouched. Every number from a tool call this session. || PREVIOUS ENTRY: Nov 20, '
- '2026 08:01 Bangkok - DAILY PRICE REFRESH (00:30 UTC pass): 60 of 63 closes booked for 19 Nov + SPY 715.87 (-1.96%) / '
- 'QQQ 645.04 (-2.19%); S&P 500 7,175.83 -2.02% (broad AI sell-off). COHR advanced to its verified 18 Nov close 212.84 '
- '(fool dated row x2, chains to the 17 Nov 210.86; resolves the 210.87-vs-212.84 conflict in favour of 212.84); COHR '
- '19 Nov close UNRESOLVED (+10.78% at 10:00 ET per dated article, close not published on any usable source). GEV '
- 'UNRESOLVED again, left at 18 Nov 772.22 (marketbeat headline says -2.2% on a downgrade but the body is unreadable; '
- 'every quote mirror stale). SNDK left at 18 Nov 776.22: 19 Nov close not found AND *** SNDK SPLIT 8-FOR-1 AFTER THE '
- '19 NOV CLOSE - split-adjusted trading starts Fri 20 Nov; POS shares, eps, hi52/lo52 and fundamentals MUST be '
- 'split-adjusted by the interactive/earnings jobs BEFORE the next price refresh books a post-split close (expect ~1/8 '
- 'of the old price; the 6% gate will trip) ***. 6%+ movers verified on second sources and allowed: AMD -7.72% to '
- '489.19 (China short-report; fool header + JKN dated close + ycharts chain) and PANW +6.42% to 361.73 (Q1 beat + '
- 'Applied Compute deal; fool stats + Wall Street Republic dated wrap, both exactly 361.73). Other large moves: MU '
- '-2.10% 690.44, VRT -4.88%, AVAV -5.14%, CEG -4.08%, SE -3.88%, CAT -3.83%. NVDA -3.30% to 145.98, another 52-week '
- 'low (Q3 beat landed after the close; stock indicated up after hours - not on the board). Sources: stockanalysis and '
- "Google Finance caches stale all night again; closes from fool.com dated 'Last close 2026-11-19' rows / post-close "
- 'stats blocks, each validated by the exact previous-close chain to the stored 18 Nov close, plus dated post-close '
- "recaps; ycharts 16:00 stamps used as corroboration only. Vendor note: fool's own 18 Nov reference differed from the "
- "board's on AMAT (351.77 vs 352.30), CGNX (49.04 vs 49.13) and BWXT (117.66 vs 117.93) - day proven by fool's printed "
- '18 Nov date; gap noted, not resolved. UST10: ycharts 18 Nov 5.07 added to risk_series; 19 Nov 5.04 (-3bp) added from '
- 'a dated market wrap consistent with the ycharts chain. HISTORY 11-19 row added. pe/ps/fpe/peg/M3-pfcf rescaled with '
- 'price. Every number from a tool call this session. || PREVIOUS ENTRY: Nov 19, 2026 20:32 Bangkok - 2025 RECONCILED '
- 'LINE BY LINE from the 12 POEMS monthly Excel files (Jan-Dec 2025): 41 buys, no sells, 148,594.96 - all six months '
- 'and lot counts match the ledger to the cent; month-end cost ties each month; cash chain ties to 218,059.23 at 31 Dec '
- '2025. Dividends: +83.43 for 2025 added (total 1,451.36). No price, position or cash change today. || PREVIOUS ENTRY: '
- 'Nov 19, 2026 19:01 Bangkok - 31 DEC 2025 ACTUAL BOOKED: stock value 168,180.04 (POEMS Transactions History Jan-Dec '
- '2025, sent by Salee 19 Nov) replaces the 153,245.03 estimate in Performance by year; 2025 cost 148,594.96 matches '
- 'the monthly ledger to the cent, so the 2025 money-in months now use the ledger exactly (was scaled to 146,735.67) '
- 'and the 3,515.52 end-Feb difference sits in Jan-Feb 2026 only; total money in unchanged. No price, position or cash '
- 'change. || PREVIOUS ENTRY: Nov 19, 2026 10:50 Bangkok - DAILY PRICE REFRESH (03:30 UTC pass): 00:30 pass had already '
- 'booked 61/63 for 18 Nov; this pass resolved GEV 772.22 (-0.99%, fool.com quote page dated last-close row 2026-11-18, '
- 'internals validate against the POEMS-reconciled 17 Nov close 779.91; stockanalysis/Google Finance/marketscreener all '
- 'still stale). COHR STILL UNRESOLVED, left at 17 Nov 210.86: no source shows a dated 18 Nov close (ycharts 210.88 '
- 'intraday 14:41 suggests roughly flat, but intraday is not a close). 62/63 now at 18 Nov. UST10 18 Nov close not yet '
- 'published on MND or ycharts (both end 17 Nov) - risk_series ust10 skipped again. || PREVIOUS ENTRY: Nov 19, 2026 '
- '09:05 Bangkok - DAILY PRICE REFRESH (00:30 UTC pass): 61 of 63 closes booked for 18 Nov + SPY 730.20 / QQQ 659.51. '
- 'UNRESOLVED (left at 17 Nov): GEV (every source stale) and COHR (sources conflict 210.87 vs 212.84). Largest moves: '
- 'PANW +9.90% (results day, verified twice), CRWD +7.95% (verified twice), FTNT +5.87%, NET +5.66%, AMD +5.31%; NVDA '
- '-2.89% to 150.96, a new 52-week low, day after results. Primary (stockanalysis) and Google Finance both served stale '
- "caches all night; closes came from fool.com post-close pages (printed 'Last close 2026-11-18' dates / quote boxes "
- "stamped 'As of 4:00 PM ET 11/18/26', each validated against the board's POEMS-reconciled 17 Nov close) plus two "
- 'dated post-close recaps. 10-year 18 Nov close not yet on MND/ycharts - risk_series ust10 skipped (news sources print '
+ASOF = ("Nov 20, 2026 23:22 Bangkok - NVDA 10 Dec review row: added Bill Ackman's public criticism of the Nvidia board (X "
+ "post, 18 Nov; comment only, no formal action) and Huang's stated willingness to return (17 Nov; board says no). Hold "
+ 'unchanged; none of the four alert conditions met. No price, position or cash change. || PREVIOUS ENTRY: Nov 20, 2026 '
+ '18:40 Bangkok - OVERVIEW MATRIX: added units held, cost per unit, market price per unit and gain/loss in dollars to '
+ 'the Position group; new group "Price by year" with start price, end price and % change for 2026, 2027 and 2028 plus '
+ 'change since the 2026 start (Salee, 20 Nov). Year-end closes freeze automatically; year-start opens are booked by '
+ 'the price job. FSLR 2026 start price 265.86 added (financialcontent.com daily row, 2 Jan 2026 open); CAT 2 Jan 2026 '
+ 'open not found - left blank. No price, position or cash change. || PREVIOUS ENTRY: Nov 20, 2026 10:55 Bangkok - '
+ 'DAILY PRICE REFRESH (03:30 UTC pass): resolved the 3 names the 00:30 pass left unresolved - all 63 of 63 now at 19 '
+ "Nov. COHR 214.94 (+0.99%; StockTitan 'Last updated: November 19, 2026 at 19:59 EST', after-hours 209.24 quoted "
+ "against 'the $214.94 close'; corroborated by yahoo close widget +1.08% and stockstory intraday 214.44 at 12:20 ET - "
+ 'the +10.78% buyback headline was a 10:00 ET spike that faded with the tape). GEV 756.28 (-2.06%; stockanalysis quote '
+ "page 'At close: Nov 19, 2026, 4:00 PM EST', stated previous close 772.22 chains exactly to the stored 18 Nov close; "
+ "its /history/ table stale at Nov 13 so the chain test used the board's own verified 18 Nov value). SNDK 755.16 "
+ "PRE-SPLIT (-2.71%; same StockTitan stamp, after-hours 736.80 against 'the $755.16 close'; corroborated by marketbeat "
+ "dated alert headline 'Shares Down 2.7%' 2026-11-19; the +6.29% pre-split intraday headline also faded). *** SNDK "
+ 'SPLIT 8-FOR-1 WARNING STANDS: split-adjusted trading starts Fri 20 Nov; eps, hi52/lo52 and fundamentals MUST be '
+ 'split-adjusted by the interactive/earnings jobs BEFORE the next price refresh books a post-split close (expect ~1/8, '
+ 'about 94; the 6% gate will trip) ***. HISTORY 11-19 row recomputed in place (GEV held, 13 sh: mv -207.22). '
+ 'pe/ps/fpe/peg/M3-pfcf rescaled with price for the 3 names. SPY/QQQ/UST10/risk_series already booked by the 00:30 '
+ 'pass - untouched. Every number from a tool call this session. || PREVIOUS ENTRY: Nov 20, 2026 08:01 Bangkok - DAILY '
+ 'PRICE REFRESH (00:30 UTC pass): 60 of 63 closes booked for 19 Nov + SPY 715.87 (-1.96%) / QQQ 645.04 (-2.19%); S&P '
+ '500 7,175.83 -2.02% (broad AI sell-off). COHR advanced to its verified 18 Nov close 212.84 (fool dated row x2, '
+ 'chains to the 17 Nov 210.86; resolves the 210.87-vs-212.84 conflict in favour of 212.84); COHR 19 Nov close '
+ 'UNRESOLVED (+10.78% at 10:00 ET per dated article, close not published on any usable source). GEV UNRESOLVED again, '
+ 'left at 18 Nov 772.22 (marketbeat headline says -2.2% on a downgrade but the body is unreadable; every quote mirror '
+ 'stale). SNDK left at 18 Nov 776.22: 19 Nov close not found AND *** SNDK SPLIT 8-FOR-1 AFTER THE 19 NOV CLOSE - '
+ 'split-adjusted trading starts Fri 20 Nov; POS shares, eps, hi52/lo52 and fundamentals MUST be split-adjusted by the '
+ 'interactive/earnings jobs BEFORE the next price refresh books a post-split close (expect ~1/8 of the old price; the '
+ '6% gate will trip) ***. 6%+ movers verified on second sources and allowed: AMD -7.72% to 489.19 (China short-report; '
+ 'fool header + JKN dated close + ycharts chain) and PANW +6.42% to 361.73 (Q1 beat + Applied Compute deal; fool stats '
+ '+ Wall Street Republic dated wrap, both exactly 361.73). Other large moves: MU -2.10% 690.44, VRT -4.88%, AVAV '
+ '-5.14%, CEG -4.08%, SE -3.88%, CAT -3.83%. NVDA -3.30% to 145.98, another 52-week low (Q3 beat landed after the '
+ 'close; stock indicated up after hours - not on the board). Sources: stockanalysis and Google Finance caches stale '
+ "all night again; closes from fool.com dated 'Last close 2026-11-19' rows / post-close stats blocks, each validated "
+ 'by the exact previous-close chain to the stored 18 Nov close, plus dated post-close recaps; ycharts 16:00 stamps '
+ "used as corroboration only. Vendor note: fool's own 18 Nov reference differed from the board's on AMAT (351.77 vs "
+ "352.30), CGNX (49.04 vs 49.13) and BWXT (117.66 vs 117.93) - day proven by fool's printed 18 Nov date; gap noted, "
+ 'not resolved. UST10: ycharts 18 Nov 5.07 added to risk_series; 19 Nov 5.04 (-3bp) added from a dated market wrap '
+ 'consistent with the ycharts chain. HISTORY 11-19 row added. pe/ps/fpe/peg/M3-pfcf rescaled with price. Every number '
+ 'from a tool call this session. || PREVIOUS ENTRY: Nov 19, 2026 20:32 Bangkok - 2025 RECONCILED LINE BY LINE from the '
+ '12 POEMS monthly Excel files (Jan-Dec 2025): 41 buys, no sells, 148,594.96 - all six months and lot counts match the '
+ 'ledger to the cent; month-end cost ties each month; cash chain ties to 218,059.23 at 31 Dec 2025. Dividends: +83.43 '
+ 'for 2025 added (total 1,451.36). No price, position or cash change today. || PREVIOUS ENTRY: Nov 19, 2026 19:01 '
+ 'Bangkok - 31 DEC 2025 ACTUAL BOOKED: stock value 168,180.04 (POEMS Transactions History Jan-Dec 2025, sent by Salee '
+ '19 Nov) replaces the 153,245.03 estimate in Performance by year; 2025 cost 148,594.96 matches the monthly ledger to '
+ 'the cent, so the 2025 money-in months now use the ledger exactly (was scaled to 146,735.67) and the 3,515.52 end-Feb '
+ 'difference sits in Jan-Feb 2026 only; total money in unchanged. No price, position or cash change. || PREVIOUS '
+ 'ENTRY: Nov 19, 2026 10:50 Bangkok - DAILY PRICE REFRESH (03:30 UTC pass): 00:30 pass had already booked 61/63 for 18 '
+ 'Nov; this pass resolved GEV 772.22 (-0.99%, fool.com quote page dated last-close row 2026-11-18, internals validate '
+ 'against the POEMS-reconciled 17 Nov close 779.91; stockanalysis/Google Finance/marketscreener all still stale). COHR '
+ 'STILL UNRESOLVED, left at 17 Nov 210.86: no source shows a dated 18 Nov close (ycharts 210.88 intraday 14:41 '
+ 'suggests roughly flat, but intraday is not a close). 62/63 now at 18 Nov. UST10 18 Nov close not yet published on '
+ 'MND or ycharts (both end 17 Nov) - risk_series ust10 skipped again. || PREVIOUS ENTRY: Nov 19, 2026 09:05 Bangkok - '
+ 'DAILY PRICE REFRESH (00:30 UTC pass): 61 of 63 closes booked for 18 Nov + SPY 730.20 / QQQ 659.51. UNRESOLVED (left '
+ 'at 17 Nov): GEV (every source stale) and COHR (sources conflict 210.87 vs 212.84). Largest moves: PANW +9.90% '
+ '(results day, verified twice), CRWD +7.95% (verified twice), FTNT +5.87%, NET +5.66%, AMD +5.31%; NVDA -2.89% to '
+ '150.96, a new 52-week low, day after results. Primary (stockanalysis) and Google Finance both served stale caches '
+ "all night; closes came from fool.com post-close pages (printed 'Last close 2026-11-18' dates / quote boxes stamped "
+ "'As of 4:00 PM ET 11/18/26', each validated against the board's POEMS-reconciled 17 Nov close) plus two dated "
+ 'post-close recaps. 10-year 18 Nov close not yet on MND/ycharts - risk_series ust10 skipped (news sources print '
  '~5.07). || PREVIOUS ENTRY: Nov 18, 2026 17:56 Bangkok - MU and SNDK rows: TrendForce sees HBM prices more than '
  'doubling in 2027 but NAND falling from Q2 2027. No order. || PREVIOUS ENTRY: Nov 18, 2026 15:33 Bangkok - DECIDED '
  '(Salee): NVDA - HOLD all 452 sh, no buy, no trim, until further advice from Claude; buying stays suspended; reviewed '
@@ -9040,7 +9043,16 @@ SCHEDULE = {'horizon': 'after the next 30 days, and standing rules',
                     'src/schedule_archive_2026-11-14.json with its full history). 12 Nov: Jensen Huang resigned as CEO '
                     'and director; CFO Colette Kress interim CEO; Harvey Jones Chair. Megaspeed chip-count report '
                     '(Bloomberg ~50,000 units; The Information $7.5bn) and DOJ/FBI/Congress interest still open; no '
-                    'formal action naming NVIDIA as of 14 Nov. 452 sh held, cost $86,302.20.',
+                    'formal action naming NVIDIA as of 14 Nov. 452 sh held, cost $86,302.20. || 20 Nov (slide, graded '
+                    'Useful): SHAREHOLDER PRESSURE ON THE BOARD - on Wed 18 Nov Bill Ackman (Pershing Square) posted '
+                    'on X that Nvidia\'s board acted against shareholders\' interests, "panicked" over headlines, '
+                    "breached its duty of care and was wrong to rule out Huang's return before the facts were known "
+                    '(Fox Business, 18 Nov). COMMENT ONLY: no proxy fight, letter, special meeting or director '
+                    'nomination reported; his shareholding is not stated; Nvidia had not replied. Also reported: Huang '
+                    'said on Tue 17 Nov he would be willing to return; chairman Harvey Jones said on the results call '
+                    'the board does not intend to reinstate him. NOT one of the four alert conditions - HOLD '
+                    "unchanged. Watch for a formal step by a large shareholder or a change in the board's position; "
+                    'either goes into this review.',
             'd': '2026-12-10',
             'dl': 'NVDA governance after the CEO change - resume the $180 line?',
             'k': 'review',
