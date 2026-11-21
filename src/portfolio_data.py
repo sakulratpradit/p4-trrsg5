@@ -3,9 +3,14 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ("Nov 20, 2026 23:33 Bangkok - NVDA 10 Dec review row: added the New York Times report of 20 Nov on Huang's conduct "
- 'toward staff (complaints, at least two confidential settlements; no legal finding). Hold unchanged; none of the four '
- 'alert conditions met. No price, position or cash change. || PREVIOUS ENTRY: Nov 20, 2026 23:22 Bangkok - NVDA 10 Dec '
+ASOF = ('Nov 21, 2026 09:48 Bangkok - 20 NOV SELL-OFF (S&P -3.7%, Nasdaq-100 -5.6%; NVDA -14.01% to 125.53): AVGO $310 line '
+ 'fired on the 20 Nov close (304.41) - BUY 15 sh planned for Mon 23 Nov (row added). NVDA alert condition 1 met '
+ '(California AG subpoena 19 Nov; Reuters: SEC examining accounting) - Claude advises hold with written sell-half '
+ 'triggers, awaiting Salee. Rows added: 23 Nov overseas data-centre penalty (statement only), 4 Dec NVDA 10-Q '
+ 'deadline. Prices not changed here - the price job books the 20 Nov closes. || PREVIOUS ENTRY: Nov 20, 2026 23:33 '
+ "Bangkok - NVDA 10 Dec review row: added the New York Times report of 20 Nov on Huang's conduct toward staff "
+ '(complaints, at least two confidential settlements; no legal finding). Hold unchanged; none of the four alert '
+ 'conditions met. No price, position or cash change. || PREVIOUS ENTRY: Nov 20, 2026 23:22 Bangkok - NVDA 10 Dec '
  "review row: added Bill Ackman's public criticism of the Nvidia board (X post, 18 Nov; comment only, no formal "
  "action) and Huang's stated willingness to return (17 Nov; board says no). Hold unchanged; none of the four alert "
  'conditions met. No price, position or cash change. || PREVIOUS ENTRY: Nov 20, 2026 18:40 Bangkok - OVERVIEW MATRIX: '
@@ -8819,8 +8824,11 @@ SCHEDULE = {'horizon': 'after the next 30 days, and standing rules',
            {'a': 'LIMIT',
             'amt': 4874.82,
             'c': 'standing',
-            'cond': 'LINE HIT 5 Nov (close 291.53, -6.0% below the line). Order Mon 9 Nov after the SGOV sale: BUY 16 '
-                    'sh Day LIMIT at the 6 Nov close, cap +1% (budget room 4,874.82). || -13% from the 4 Sep close of '
+            'cond': 'LINE HIT AGAIN 20 Nov: close 304.41 (-12.19%; financialcontent.com daily row, % confirmed by two '
+                    'market recaps). Order planned for Mon 23 Nov - see the dated row. Earlier hit 5 Nov (close '
+                    '291.53): the order for 9 Nov did not fill - no AVGO trade is booked after 4 Sep. || LINE HIT 5 '
+                    'Nov (close 291.53, -6.0% below the line). Order Mon 9 Nov after the SGOV sale: BUY 16 sh Day '
+                    'LIMIT at the 6 Nov close, cap +1% (budget room 4,874.82). || -13% from the 4 Sep close of '
                     '$357.90.',
             'd': '',
             'dl': 'Standing',
@@ -8895,57 +8903,66 @@ SCHEDULE = {'horizon': 'after the next 30 days, and standing rules',
            {'a': 'HOLD',
             'amt': 5619.72,
             'c': 'standing',
-            'cond': 'DECIDED 18 Nov 2026 (Salee): "Agree HOLD on NVDA as your view till further advice by you." HOLD '
-                    'all 452 sh - no buy, no trim. Buying stays SUSPENDED (the $180 line and rung 3) until Claude '
-                    'advises otherwise; next scheduled look is the 10 Dec review, after the 1-2 Dec House interviews. '
-                    'Claude reports the same day and advises if: a formal government action names NVIDIA; the board '
-                    'investigation finds a compromise; the general counsel leaves; guidance is cut or gross margin is '
-                    "guided below 70%. No sale happens without Salee's word. || ⚠️ 12 Nov: CEO RESIGNED (trigger 2 "
-                    'fired); Kress interim CEO; results Tue 17 Nov US. Line stays SUSPENDED; decision after the '
-                    'results (Salee). || DECIDED 12 Nov 2026 (Salee): "For NVDA decide on 19 Nov whether Buy/Sell." No '
-                    'sale and no buy before then - HOLD all 452 sh. The pre-set trim rule Claude proposed on 12 Nov '
-                    '(sell ~70 sh if the CEO goes or a formal action is disclosed) is NOT adopted. If a trigger fires '
-                    'before 19 Nov, Claude reports it the same day and Salee decides. On Thu 19 Nov, after the 18 Nov '
-                    'results: BUY (resume the $180 line / rung 3), HOLD, or SELL (trim toward 8% of stocks). || ⚠️ '
-                    "ESCALATED AGAIN 12 Nov: (1) WSJ (via Motley Fool/Yahoo, Fortune): NVIDIA's board met Wed 11 Nov "
-                    'to discuss REMOVING the CEO; no outcome reported by 16:15 Bangkok 12 Nov; no successor named. '
-                    'NVDA about -7 to -9% pre-market (~$158-161) after closing 173.73. (2) The Information (via '
-                    'Fortune): Megaspeed moved at least $7.5bn of NVIDIA chips; DOJ, FBI and Congress reported to be '
-                    'looking at the matter; the House passed the Remote Access Security Act (Senate next); FT: NVIDIA '
-                    'now requires cloud clients to sell at least 51% to non-Chinese customers. No formal action naming '
-                    'NVIDIA yet, and trigger 2 (CEO leaves) has NOT fired - but it may within hours. UPDATED ODDS '
-                    '(Claude): A cleared 15% $200-215 | B drags on 35% $155-180 | C CEO leaves 38% $130-150 | D worst '
-                    'case 12% $100-110 -> weighted ~$156, about the pre-market price. PRE-SET RULE (proposed 12 Nov - '
-                    'NOT ADOPTED): if the CEO is removed or resigns, or any formal government action naming NVIDIA is '
-                    'disclosed -> SELL about 70 sh at the next US session (Day LIMIT near the live bid, after the '
-                    'first 30 minutes) to bring NVDA to ~8% of stocks; keep ~382 sh. If the board keeps him -> hold '
-                    'all 452 and decide on 19 Nov as planned. No sale on the pre-market gap alone. || APPROVED 11 Nov '
-                    '2026 (Salee): suspension and the four triggers confirmed. 10 Nov close 168.89 (below the '
-                    'suspended $180 line - no buy). || ⚠️ ESCALATED 10 Nov (Bloomberg, via Business Today): the story '
-                    "now touches NVIDIA's OWN conduct. (1) In late summer 2025 NVIDIA's general counsel called the "
-                    'Commerce under-secretary who runs export controls about the Megaspeed case; afterwards BIS '
-                    'investigators were told to route NVIDIA requests through his office - described as highly unusual '
-                    "- and the probe later stalled. (2) Bloomberg's trade-record analysis says NVIDIA's inventory "
-                    'count given to the US government undercounted chips sold to Megaspeed by about 50,000 units '
-                    '(billions of dollars); NVIDIA says it later inspected more warehouses but gave no number. NVIDIA '
-                    "says its counsel did not know of the CEO's relationship. No charge, penalty or licence action "
-                    'against NVIDIA. NEW 4th TRIGGER: any FORMAL government action naming NVIDIA (subpoena, charge, '
-                    'settlement, licence suspension disclosed in a filing) or the departure of the CEO or general '
-                    'counsel -> review a trim the same day. REVIEW BROUGHT FORWARD: decide hold vs trim on Thu 19 Nov '
-                    'after the 18 Nov results, not 10 Dec. || 9 Nov: NVDA CLOSED 178.67 (-4.3%), BELOW the suspended '
-                    '$180 line - no buy (suspension in force). || ⚠️ NVDA BUYS SUSPENDED 9 Nov 2026 (Claude; confirmed '
-                    'by Salee 11 Nov): on 8 Nov Jensen Huang admitted, in a letter to staff, a personal relationship '
-                    "with a person US intelligence reportedly links to a foreign intelligence effort; NVIDIA's board "
-                    'formed a committee of independent directors with outside counsel to investigate. The board says '
-                    'it has "no reason to believe" national security or NVIDIA secrets were compromised and has '
-                    'confidence in Huang, who remains CEO. Key-person and export-control/regulatory risk is now open. '
-                    'No new NVDA money until (a) the 18 Nov results and call AND (b) the board gives a first update. '
-                    'HOLD the 452 shares - no sale. Sell/review triggers: the investigation finds a compromise; Huang '
-                    'leaves without a named successor; or export licences or penalties hit NVIDIA. || -21.9%. The '
-                    "'something broke and I want to own it anyway' price. || FUNDING (8 Nov): no new money until Feb "
-                    '2027 ($100,000). Until then a buy is paid only from cash plus SGOV above the $50,000 '
-                    'crash-reserve floor (~$4,700 after the 9-11 Nov buys, ~$1,700 after NVDA 18 Nov). If this fires '
-                    'before February and does not fit, it WAITS for the February money - no SGOV sale below the floor.',
+            'cond': 'ALERT 21 Nov - CONDITION 1 MET (formal government action names Nvidia): California AG Rob Bonta '
+                    'announced a subpoena to Nvidia on 19 Nov (whether chips or confidential information reached China '
+                    'and whether investors were misled; corporate securities law). Also Reuters 20 Nov: SEC '
+                    'enforcement staff are examining potential accounting issues (two unnamed sources; formal or '
+                    'informal not stated; issues not named). NVDA closed 125.53 on 20 Nov (-14.01%). CLAUDE ADVICE 21 '
+                    'Nov: keep holding 452 sh, no sale on Monday; buying stays suspended. SELL HALF (226 sh) on the '
+                    'next session if any of: Nvidia confirms a formal SEC investigation into revenue or a restatement; '
+                    'the 10-Q for the quarter ended 25 Oct is not filed by 4 Dec; the auditor raises a concern. '
+                    'Awaiting Salee. || DECIDED 18 Nov 2026 (Salee): "Agree HOLD on NVDA as your view till further '
+                    'advice by you." HOLD all 452 sh - no buy, no trim. Buying stays SUSPENDED (the $180 line and rung '
+                    '3) until Claude advises otherwise; next scheduled look is the 10 Dec review, after the 1-2 Dec '
+                    'House interviews. Claude reports the same day and advises if: a formal government action names '
+                    'NVIDIA; the board investigation finds a compromise; the general counsel leaves; guidance is cut '
+                    "or gross margin is guided below 70%. No sale happens without Salee's word. || ⚠️ 12 Nov: CEO "
+                    'RESIGNED (trigger 2 fired); Kress interim CEO; results Tue 17 Nov US. Line stays SUSPENDED; '
+                    'decision after the results (Salee). || DECIDED 12 Nov 2026 (Salee): "For NVDA decide on 19 Nov '
+                    'whether Buy/Sell." No sale and no buy before then - HOLD all 452 sh. The pre-set trim rule Claude '
+                    'proposed on 12 Nov (sell ~70 sh if the CEO goes or a formal action is disclosed) is NOT adopted. '
+                    'If a trigger fires before 19 Nov, Claude reports it the same day and Salee decides. On Thu 19 '
+                    'Nov, after the 18 Nov results: BUY (resume the $180 line / rung 3), HOLD, or SELL (trim toward 8% '
+                    "of stocks). || ⚠️ ESCALATED AGAIN 12 Nov: (1) WSJ (via Motley Fool/Yahoo, Fortune): NVIDIA's "
+                    'board met Wed 11 Nov to discuss REMOVING the CEO; no outcome reported by 16:15 Bangkok 12 Nov; no '
+                    'successor named. NVDA about -7 to -9% pre-market (~$158-161) after closing 173.73. (2) The '
+                    'Information (via Fortune): Megaspeed moved at least $7.5bn of NVIDIA chips; DOJ, FBI and Congress '
+                    'reported to be looking at the matter; the House passed the Remote Access Security Act (Senate '
+                    'next); FT: NVIDIA now requires cloud clients to sell at least 51% to non-Chinese customers. No '
+                    'formal action naming NVIDIA yet, and trigger 2 (CEO leaves) has NOT fired - but it may within '
+                    'hours. UPDATED ODDS (Claude): A cleared 15% $200-215 | B drags on 35% $155-180 | C CEO leaves 38% '
+                    '$130-150 | D worst case 12% $100-110 -> weighted ~$156, about the pre-market price. PRE-SET RULE '
+                    '(proposed 12 Nov - NOT ADOPTED): if the CEO is removed or resigns, or any formal government '
+                    'action naming NVIDIA is disclosed -> SELL about 70 sh at the next US session (Day LIMIT near the '
+                    'live bid, after the first 30 minutes) to bring NVDA to ~8% of stocks; keep ~382 sh. If the board '
+                    'keeps him -> hold all 452 and decide on 19 Nov as planned. No sale on the pre-market gap alone. '
+                    '|| APPROVED 11 Nov 2026 (Salee): suspension and the four triggers confirmed. 10 Nov close 168.89 '
+                    '(below the suspended $180 line - no buy). || ⚠️ ESCALATED 10 Nov (Bloomberg, via Business Today): '
+                    "the story now touches NVIDIA's OWN conduct. (1) In late summer 2025 NVIDIA's general counsel "
+                    'called the Commerce under-secretary who runs export controls about the Megaspeed case; afterwards '
+                    'BIS investigators were told to route NVIDIA requests through his office - described as highly '
+                    "unusual - and the probe later stalled. (2) Bloomberg's trade-record analysis says NVIDIA's "
+                    'inventory count given to the US government undercounted chips sold to Megaspeed by about 50,000 '
+                    'units (billions of dollars); NVIDIA says it later inspected more warehouses but gave no number. '
+                    "NVIDIA says its counsel did not know of the CEO's relationship. No charge, penalty or licence "
+                    'action against NVIDIA. NEW 4th TRIGGER: any FORMAL government action naming NVIDIA (subpoena, '
+                    'charge, settlement, licence suspension disclosed in a filing) or the departure of the CEO or '
+                    'general counsel -> review a trim the same day. REVIEW BROUGHT FORWARD: decide hold vs trim on Thu '
+                    '19 Nov after the 18 Nov results, not 10 Dec. || 9 Nov: NVDA CLOSED 178.67 (-4.3%), BELOW the '
+                    'suspended $180 line - no buy (suspension in force). || ⚠️ NVDA BUYS SUSPENDED 9 Nov 2026 (Claude; '
+                    'confirmed by Salee 11 Nov): on 8 Nov Jensen Huang admitted, in a letter to staff, a personal '
+                    'relationship with a person US intelligence reportedly links to a foreign intelligence effort; '
+                    "NVIDIA's board formed a committee of independent directors with outside counsel to investigate. "
+                    'The board says it has "no reason to believe" national security or NVIDIA secrets were compromised '
+                    'and has confidence in Huang, who remains CEO. Key-person and export-control/regulatory risk is '
+                    'now open. No new NVDA money until (a) the 18 Nov results and call AND (b) the board gives a first '
+                    'update. HOLD the 452 shares - no sale. Sell/review triggers: the investigation finds a '
+                    'compromise; Huang leaves without a named successor; or export licences or penalties hit NVIDIA. '
+                    "|| -21.9%. The 'something broke and I want to own it anyway' price. || FUNDING (8 Nov): no new "
+                    'money until Feb 2027 ($100,000). Until then a buy is paid only from cash plus SGOV above the '
+                    '$50,000 crash-reserve floor (~$4,700 after the 9-11 Nov buys, ~$1,700 after NVDA 18 Nov). If this '
+                    'fires before February and does not fit, it WAITS for the February money - no SGOV sale below the '
+                    'floor.',
             'd': '',
             'dl': 'Standing',
             'k': 'limit',
@@ -9457,7 +9474,51 @@ SCHEDULE = {'horizon': 'after the next 30 days, and standing rules',
             'k': 'admin',
             't': '',
             'w': "2027 START PRICES - first US trading day of 2027 (Mon 4 Jan). The price job books each stock's "
-                 'official opening price on the morning of 5 Jan Bangkok; the 2027 % change then runs against it.'}],
+                 'official opening price on the morning of 5 Jan Bangkok; the 2027 % change then runs against it.'},
+           {'a': 'BUY',
+            'amt': 4874.82,
+            'bkk': 'Mon 23 Nov evening, after 22:00 Bangkok',
+            'c': 'planned',
+            'cap': 307.45,
+            'cond': 'FIVE CHECKS: money - paid from cash 5,889.84 (no SGOV sale needed); rates - 10-year 4.92% on 20 '
+                    'Nov (one source, to confirm), valuation gate lifts but AVGO is ~20x forward earnings anyway; rank '
+                    '- AVGO a priority name with budget room 19,874.82; price - close 304.41 is below the $310 line '
+                    'written on 4 Sep; order - Day LIMIT at the reference close, one raise to +1%. Est. cost 15 x '
+                    '304.41 = 4,566.15 + 9.77 commission = 4,575.92 at the limit; 4,621.62 at the cap. Do NOT place if '
+                    'AVGO-specific bad news comes out before Monday (guidance, customer loss) or if the overseas '
+                    'data-centre penalty becomes a formal order naming its customers.',
+            'd': '2026-11-23',
+            'dl': 'AVGO $310 line HIT (closed 304.41 on Fri 20 Nov) - buy the line budget',
+            'k': 'limit',
+            'lim': 304.41,
+            'sh': 15,
+            't': 'AVGO',
+            'tac': 'BUY 15 sh on NASD, Day LIMIT 304.41 (20 Nov close); may be raised ONCE to 307.45. Not in the first '
+                   '30 minutes; no chasing. Check Market = NASD, currency USD.',
+            'w': 'AVGO price line fired on the 20 Nov close (304.41). Buy 15 sh with the $4,874.82 line budget.'},
+           {'a': 'WATCH',
+            'amt': 0,
+            'c': 'planned',
+            'd': '2026-12-04',
+            'k': 'event',
+            't': 'NVDA',
+            'w': 'NVDA 10-Q DEADLINE - quarterly report for the quarter ended 25 Oct 2026 is due by Fri 4 Dec (40 '
+                 'days). A late filing or a filing that discloses the SEC probe in detail is a sell-half trigger under '
+                 'the 21 Nov advice.',
+            'cond': 'Added 21 Nov after the Reuters SEC report and the California AG subpoena. Check the filing on '
+                    'sec.gov / news on 4-5 Dec.'},
+           {'a': 'WATCH',
+            'amt': 0,
+            'c': 'planned',
+            'd': '2026-11-23',
+            'k': 'macro',
+            't': '',
+            'w': 'OVERSEAS DATA-CENTRE PENALTY - Trump said at a White House news conference on 20 Nov that US '
+                 'companies building data centres abroad would face a "tremendous tax". Statement only: no rate, start '
+                 'date, order or law. Watch for a formal order.',
+            'cond': 'Touches the hyperscalers we hold (GOOGL, MSFT, AMZN, META) and their suppliers; Pillar 3: US '
+                    'hyperscaler tenants of Thai estates (WHA, AMATA, WHAUP) - keeps the no-new-money stance. Same '
+                    'week as the 16 Nov chip-licence rule for Southeast Asia.'}],
  'note': "ONE LIST, TWO VIEWS (Salee approved 14 Nov 2026): the 'Next 30 Days' tab shows every dated item from today "
          'to today + 30 days and moves forward by itself each day; this tab shows everything later, plus the standing '
          'rules (price lines, gates, holds) that never expire. Past and done rows drop off by themselves; Claude '
