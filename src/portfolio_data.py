@@ -3,27 +3,30 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Nov 21, 2026 09:48 Bangkok - 20 NOV SELL-OFF (S&P -3.7%, Nasdaq-100 -5.6%; NVDA -14.01% to 125.53): AVGO $310 line '
- 'fired on the 20 Nov close (304.41) - BUY 15 sh planned for Mon 23 Nov (row added). NVDA alert condition 1 met '
- '(California AG subpoena 19 Nov; Reuters: SEC examining accounting) - Claude advises hold with written sell-half '
- 'triggers, awaiting Salee. Rows added: 23 Nov overseas data-centre penalty (statement only), 4 Dec NVDA 10-Q '
- 'deadline. Prices not changed here - the price job books the 20 Nov closes. || PREVIOUS ENTRY: Nov 20, 2026 23:33 '
- "Bangkok - NVDA 10 Dec review row: added the New York Times report of 20 Nov on Huang's conduct toward staff "
- '(complaints, at least two confidential settlements; no legal finding). Hold unchanged; none of the four alert '
- 'conditions met. No price, position or cash change. || PREVIOUS ENTRY: Nov 20, 2026 23:22 Bangkok - NVDA 10 Dec '
- "review row: added Bill Ackman's public criticism of the Nvidia board (X post, 18 Nov; comment only, no formal "
- "action) and Huang's stated willingness to return (17 Nov; board says no). Hold unchanged; none of the four alert "
- 'conditions met. No price, position or cash change. || PREVIOUS ENTRY: Nov 20, 2026 18:40 Bangkok - OVERVIEW MATRIX: '
- 'added units held, cost per unit, market price per unit and gain/loss in dollars to the Position group; new group '
- '"Price by year" with start price, end price and % change for 2026, 2027 and 2028 plus change since the 2026 start '
- '(Salee, 20 Nov). Year-end closes freeze automatically; year-start opens are booked by the price job. FSLR 2026 start '
- 'price 265.86 added (financialcontent.com daily row, 2 Jan 2026 open); CAT 2 Jan 2026 open not found - left blank. No '
- 'price, position or cash change. || PREVIOUS ENTRY: Nov 20, 2026 10:55 Bangkok - DAILY PRICE REFRESH (03:30 UTC '
- 'pass): resolved the 3 names the 00:30 pass left unresolved - all 63 of 63 now at 19 Nov. COHR 214.94 (+0.99%; '
- "StockTitan 'Last updated: November 19, 2026 at 19:59 EST', after-hours 209.24 quoted against 'the $214.94 close'; "
- 'corroborated by yahoo close widget +1.08% and stockstory intraday 214.44 at 12:20 ET - the +10.78% buyback headline '
- "was a 10:00 ET spike that faded with the tape). GEV 756.28 (-2.06%; stockanalysis quote page 'At close: Nov 19, "
- "2026, 4:00 PM EST', stated previous close 772.22 chains exactly to the stored 18 Nov close; its /history/ table "
+ASOF = ('Nov 21, 2026 15:46 Bangkok - NVDA DECIDED 21 Nov (Salee): "Agree with plans on NVDA not trim yet" - hold 452 sh, no '
+ 'trim, no buying; sell half (226 sh) if a formal SEC revenue investigation or restatement is confirmed, the 10-Q is '
+ 'not filed by 4 Dec, or the auditor raises a concern. Recorded on the NVDA rows and in Approvals. No price, position '
+ 'or cash change. || PREVIOUS ENTRY: Nov 21, 2026 09:48 Bangkok - 20 NOV SELL-OFF (S&P -3.7%, Nasdaq-100 -5.6%; NVDA '
+ '-14.01% to 125.53): AVGO $310 line fired on the 20 Nov close (304.41) - BUY 15 sh planned for Mon 23 Nov (row '
+ 'added). NVDA alert condition 1 met (California AG subpoena 19 Nov; Reuters: SEC examining accounting) - Claude '
+ 'advises hold with written sell-half triggers, awaiting Salee. Rows added: 23 Nov overseas data-centre penalty '
+ '(statement only), 4 Dec NVDA 10-Q deadline. Prices not changed here - the price job books the 20 Nov closes. || '
+ 'PREVIOUS ENTRY: Nov 20, 2026 23:33 Bangkok - NVDA 10 Dec review row: added the New York Times report of 20 Nov on '
+ "Huang's conduct toward staff (complaints, at least two confidential settlements; no legal finding). Hold unchanged; "
+ 'none of the four alert conditions met. No price, position or cash change. || PREVIOUS ENTRY: Nov 20, 2026 23:22 '
+ "Bangkok - NVDA 10 Dec review row: added Bill Ackman's public criticism of the Nvidia board (X post, 18 Nov; comment "
+ "only, no formal action) and Huang's stated willingness to return (17 Nov; board says no). Hold unchanged; none of "
+ 'the four alert conditions met. No price, position or cash change. || PREVIOUS ENTRY: Nov 20, 2026 18:40 Bangkok - '
+ 'OVERVIEW MATRIX: added units held, cost per unit, market price per unit and gain/loss in dollars to the Position '
+ 'group; new group "Price by year" with start price, end price and % change for 2026, 2027 and 2028 plus change since '
+ 'the 2026 start (Salee, 20 Nov). Year-end closes freeze automatically; year-start opens are booked by the price job. '
+ 'FSLR 2026 start price 265.86 added (financialcontent.com daily row, 2 Jan 2026 open); CAT 2 Jan 2026 open not found '
+ '- left blank. No price, position or cash change. || PREVIOUS ENTRY: Nov 20, 2026 10:55 Bangkok - DAILY PRICE REFRESH '
+ '(03:30 UTC pass): resolved the 3 names the 00:30 pass left unresolved - all 63 of 63 now at 19 Nov. COHR 214.94 '
+ "(+0.99%; StockTitan 'Last updated: November 19, 2026 at 19:59 EST', after-hours 209.24 quoted against 'the $214.94 "
+ "close'; corroborated by yahoo close widget +1.08% and stockstory intraday 214.44 at 12:20 ET - the +10.78% buyback "
+ "headline was a 10:00 ET spike that faded with the tape). GEV 756.28 (-2.06%; stockanalysis quote page 'At close: Nov "
+ "19, 2026, 4:00 PM EST', stated previous close 772.22 chains exactly to the stored 18 Nov close; its /history/ table "
  "stale at Nov 13 so the chain test used the board's own verified 18 Nov value). SNDK 755.16 PRE-SPLIT (-2.71%; same "
  "StockTitan stamp, after-hours 736.80 against 'the $755.16 close'; corroborated by marketbeat dated alert headline "
  "'Shares Down 2.7%' 2026-11-19; the +6.29% pre-split intraday headline also faded). *** SNDK SPLIT 8-FOR-1 WARNING "
@@ -8907,16 +8910,17 @@ SCHEDULE = {'horizon': 'after the next 30 days, and standing rules',
                     'announced a subpoena to Nvidia on 19 Nov (whether chips or confidential information reached China '
                     'and whether investors were misled; corporate securities law). Also Reuters 20 Nov: SEC '
                     'enforcement staff are examining potential accounting issues (two unnamed sources; formal or '
-                    'informal not stated; issues not named). NVDA closed 125.53 on 20 Nov (-14.01%). CLAUDE ADVICE 21 '
-                    'Nov: keep holding 452 sh, no sale on Monday; buying stays suspended. SELL HALF (226 sh) on the '
-                    'next session if any of: Nvidia confirms a formal SEC investigation into revenue or a restatement; '
-                    'the 10-Q for the quarter ended 25 Oct is not filed by 4 Dec; the auditor raises a concern. '
-                    'Awaiting Salee. || DECIDED 18 Nov 2026 (Salee): "Agree HOLD on NVDA as your view till further '
-                    'advice by you." HOLD all 452 sh - no buy, no trim. Buying stays SUSPENDED (the $180 line and rung '
-                    '3) until Claude advises otherwise; next scheduled look is the 10 Dec review, after the 1-2 Dec '
-                    'House interviews. Claude reports the same day and advises if: a formal government action names '
-                    'NVIDIA; the board investigation finds a compromise; the general counsel leaves; guidance is cut '
-                    "or gross margin is guided below 70%. No sale happens without Salee's word. || ⚠️ 12 Nov: CEO "
+                    'informal not stated; issues not named). NVDA closed 125.53 on 20 Nov (-14.01%). DECIDED 21 Nov '
+                    '(Salee): "Agree with plans on NVDA not trim yet." Keep holding 452 sh, no trim; buying stays '
+                    'suspended. SELL HALF (226 sh) on the next session if any of: Nvidia confirms a formal SEC '
+                    'investigation into revenue or a restatement; the 10-Q for the quarter ended 25 Oct is not filed '
+                    'by 4 Dec; the auditor raises a concern. Claude reports any trigger the same day and Salee gives '
+                    'the word before any sale. || DECIDED 18 Nov 2026 (Salee): "Agree HOLD on NVDA as your view till '
+                    'further advice by you." HOLD all 452 sh - no buy, no trim. Buying stays SUSPENDED (the $180 line '
+                    'and rung 3) until Claude advises otherwise; next scheduled look is the 10 Dec review, after the '
+                    '1-2 Dec House interviews. Claude reports the same day and advises if: a formal government action '
+                    'names NVIDIA; the board investigation finds a compromise; the general counsel leaves; guidance is '
+                    "cut or gross margin is guided below 70%. No sale happens without Salee's word. || ⚠️ 12 Nov: CEO "
                     'RESIGNED (trigger 2 fired); Kress interim CEO; results Tue 17 Nov US. Line stays SUSPENDED; '
                     'decision after the results (Salee). || DECIDED 12 Nov 2026 (Salee): "For NVDA decide on 19 Nov '
                     'whether Buy/Sell." No sale and no buy before then - HOLD all 452 sh. The pre-set trim rule Claude '
@@ -9080,7 +9084,12 @@ SCHEDULE = {'horizon': 'after the next 30 days, and standing rules',
                     'does not say the threats were meant literally. Nvidia did not comment in that summary; another '
                     'outlet reports a spokesperson denying the allegations. EFFECT: makes reinstatement less likely '
                     'and adds to the governance questions; nothing about sales, customers or guidance. NOT one of the '
-                    'four alert conditions - HOLD unchanged.',
+                    'four alert conditions - HOLD unchanged. || 21 Nov DECISION (Salee): after alert condition 1 was '
+                    'met (California AG subpoena 19 Nov; Reuters 20 Nov: SEC enforcement staff examining potential '
+                    'accounting issues) and NVDA fell 14.01% to 125.53 on 20 Nov - keep holding 452 sh, no trim yet, '
+                    'no buying. Sell half (226 sh) on the next session if Nvidia confirms a formal SEC investigation '
+                    'into revenue or a restatement, the 10-Q for the quarter ended 25 Oct is not filed by 4 Dec, or '
+                    'the auditor raises a concern.',
             'd': '2026-12-10',
             'dl': 'NVDA governance after the CEO change - resume the $180 line?',
             'k': 'review',
@@ -9506,7 +9515,7 @@ SCHEDULE = {'horizon': 'after the next 30 days, and standing rules',
                  'days). A late filing or a filing that discloses the SEC probe in detail is a sell-half trigger under '
                  'the 21 Nov advice.',
             'cond': 'Added 21 Nov after the Reuters SEC report and the California AG subpoena. Check the filing on '
-                    'sec.gov / news on 4-5 Dec.'},
+                    'sec.gov / news on 4-5 Dec. Sell-half triggers approved by Salee 21 Nov.'},
            {'a': 'WATCH',
             'amt': 0,
             'c': 'planned',
@@ -11086,8 +11095,9 @@ APPROVALS = [{'after': 'Same night (9 Oct): Marvell 47 shares filled at $269.90 
   'd': '2026-11-18',
   'items': [{'due': '2026-12-10',
              'k': 'NVDA',
-             'text': 'HOLD all 452 shares. No buy (the $180 line and rung 3 stay suspended) and no trim, until Claude '
-                     'advises otherwise. Reviewed on 10 Dec, after the 1-2 Dec House interviews.'},
+             'text': '[UPDATED 21 Nov - see the 21 Nov decision] HOLD all 452 shares. No buy (the $180 line and rung 3 '
+                     'stay suspended) and no trim, until Claude advises otherwise. Reviewed on 10 Dec, after the 1-2 '
+                     'Dec House interviews.'},
             {'due': '',
              'k': 'ALERTS',
              'text': 'Claude reports the same day and advises if: a formal government action names NVIDIA; the board '
@@ -11096,7 +11106,31 @@ APPROVALS = [{'after': 'Same night (9 Oct): Marvell 47 shares filled at $269.90 
   'title': 'Decision 18 Nov 2026 - NVDA: hold',
   'why': 'After the Q3 FY2027 results (revenue $115.8bn, +103%; margin 74.9%; Q4 guide $130bn, margin 71-72%; no '
          "charge, no penalty). The CEO has left and the board investigation is still open. Claude's view was hold - no "
-         "buy, no trim; Salee agreed: 'HOLD on NVDA as your view till further advice by you.'"}]
+         "buy, no trim; Salee agreed: 'HOLD on NVDA as your view till further advice by you.'"},
+ {'by': 'Salee, 21 Nov 2026 - "Agree with plans on NVDA not trim yet"',
+  'd': '2026-11-21',
+  'items': [{'due': '2026-12-10',
+             'k': 'NVDA',
+             'text': 'HOLD all 452 shares - no trim yet, no buying (the $180 line and rung 3 stay suspended). Reviewed '
+                     'on 10 Dec.'},
+            {'due': '2026-12-04',
+             'k': 'SELL HALF',
+             'text': 'Sell 226 shares (half) on the next US session if ANY of: Nvidia confirms a formal SEC '
+                     'investigation into its revenue, or announces a restatement; the 10-Q for the quarter ended 25 '
+                     'Oct 2026 is not filed by Fri 4 Dec; the auditor raises a concern. Claude reports the trigger the '
+                     'same day; the order follows the usual rules (Day LIMIT, never in the first 30 minutes).'},
+            {'due': '',
+             'k': 'ALERTS',
+             'text': 'Unchanged from 18 Nov: Claude reports the same day if the board investigation finds a '
+                     'compromise, the general counsel leaves, guidance is cut or gross margin is guided below 70%, or '
+                     'the Justice Department acts against Nvidia itself.'}],
+  'title': 'Decision 21 Nov 2026 - NVDA: hold, with sell-half triggers',
+  'why': 'Alert condition 1 met: California AG Rob Bonta announced a subpoena to Nvidia on 19 Nov (chips or '
+         'confidential information reaching China; whether investors were misled). Reuters, 20 Nov: SEC enforcement '
+         'staff are examining potential accounting issues (two unnamed sources; stage and issues not stated). NVDA '
+         'fell 14.01% to 125.53 on 20 Nov; the position is -$29,563 (-34.3%). Claude advised hold, not sell, because '
+         'free cash flow of $148.6bn in the last 12 months backs the earnings, the SEC report is thin, and the 10-Q '
+         '(by 4 Dec) and House interviews (1-2 Dec) bring facts within two weeks. Conviction low.'}]
 
 RISK = {'asof': '2026-10-11',
  'beta': 1.61,
