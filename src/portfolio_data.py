@@ -3,13 +3,18 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Nov 22, 2026 23:56 Bangkok - ONE PRICE-LINE METHOD ADOPTED (Salee, 22 Nov): Approvals entry added; 11 Nov "write one '
- 'method" item closed; monthly FX row replaced by the weekly Monday reset; AVGO 23 Nov order unchanged (line now '
- '$320). No price, position or cash change. || PREVIOUS ENTRY: Nov 22, 2026 23:54 Bangkok - WEEKLY PRICE LINES + FX: '
- 'one method for all 63 stocks; 10-year 4.92% (2026-11-20) -> bond-beating P/E 18.45x; USD/THB 33.94 -> 33.94 '
- '(2026-11-20). Standing rows reset: APP $320 -> $330, AVGO $310 -> $320, NVDA $180, -> $195, PLTR $150 -> $35. Closes '
- 'at or below their line: NVDA, AVGO, TSM, AMAT, MU, STX, CRDO, FN, FSLR, ORCL, VST, NFLX, SE, CAT, STRL. First run in '
- "the main session at Salee's request (22 Nov). 10-year 4.92% from three market recaps (cappnotes, "
+ASOF = ('Nov 23, 2026 06:55 Bangkok - WEEKLY PRICE LINES + FX: one method for all 63 stocks; 10-year 4.92% (2026-11-20) -> '
+ 'bond-beating P/E 18.45x; USD/THB 33.94 -> 33.94 (2026-11-20). Standing rows reset: APP $330 -> $330, AVGO $320 -> '
+ '$320, NVDA $195 -> $195, PLTR $35 -> $35. Closes at or below their line: NVDA, AVGO, TSM, AMAT, MU, STX, CRDO, FN, '
+ 'FSLR, ORCL, VST, NFLX, SE, CAT, STRL. Weekly run 23 Nov. 10-year 4.92% (20 Nov): US Treasury daily par yield curve '
+ "CSV and YCharts 10 Year Treasury Rate. USD/THB 33.94: Trading Economics ('fell to 33.9420 on November 20, 2026'). || "
+ 'PREVIOUS ENTRY: Nov 22, 2026 23:56 Bangkok - ONE PRICE-LINE METHOD ADOPTED (Salee, 22 Nov): Approvals entry added; '
+ '11 Nov "write one method" item closed; monthly FX row replaced by the weekly Monday reset; AVGO 23 Nov order '
+ 'unchanged (line now $320). No price, position or cash change. || PREVIOUS ENTRY: Nov 22, 2026 23:54 Bangkok - WEEKLY '
+ 'PRICE LINES + FX: one method for all 63 stocks; 10-year 4.92% (2026-11-20) -> bond-beating P/E 18.45x; USD/THB 33.94 '
+ '-> 33.94 (2026-11-20). Standing rows reset: APP $320 -> $330, AVGO $310 -> $320, NVDA $180, -> $195, PLTR $150 -> '
+ '$35. Closes at or below their line: NVDA, AVGO, TSM, AMAT, MU, STX, CRDO, FN, FSLR, ORCL, VST, NFLX, SE, CAT, STRL. '
+ "First run in the main session at Salee's request (22 Nov). 10-year 4.92% from three market recaps (cappnotes, "
  'thewallstreetrepublic, cnttrading); USD/THB 33.94 from Trading Economics (33.9420 on 20 Nov). || PREVIOUS ENTRY: Nov '
  "22, 2026 21:57 Bangkok - FRIDAY 20 NOV CLOSES BOOKED (partial, main session at Salee's request - both scheduled runs "
  'on Sat 21 Nov did not book them). 22 of 63 tickers at 20 Nov: DIRECT closes (each matches the reported % move on the '
@@ -11265,8 +11270,8 @@ PLINES = {'set': '2026-11-23',
  'bpe': 18.45,
  'fx': 33.94,
  'fxd': '2026-11-20',
- 'src': "First run in the main session at Salee's request (22 Nov). 10-year 4.92% from three market recaps (cappnotes, "
-        'thewallstreetrepublic, cnttrading); USD/THB 33.94 from Trading Economics (33.9420 on 20 Nov).',
+ 'src': 'Weekly run 23 Nov. 10-year 4.92% (20 Nov): US Treasury daily par yield curve CSV and YCharts 10 Year Treasury '
+        "Rate. USD/THB 33.94: Trading Economics ('fell to 33.9420 on November 20, 2026').",
  'method': 'Line = lower of (a) fair value x 0.70 and (b) forward EPS x 100/(10-year + 0.5); rounded down ($1 under '
            '$100, $5 to $999, $10 above). Adopted by Salee 22 Nov 2026; reset every Monday with the latest 10-year '
            'close and USD/THB. A hit buys only where a standing line row has money; otherwise it is information.',
@@ -11339,7 +11344,12 @@ PLINES = {'set': '2026-11-23',
            'STRL': {'line': 410, 'a': 585.7, 'b': 414.57, 'eps': 22.47, 'fv': 836.71, 'by': 'b', 'pxset': 273.25},
            'TSEM': {'line': 95, 'a': 219.05, 'b': 95.2, 'eps': 5.16, 'fv': 312.93, 'by': 'b', 'pxset': 127.77},
            'CIEN': {'line': 190, 'a': 359.09, 'b': 192.06, 'eps': 10.41, 'fv': 512.99, 'by': 'b', 'pxset': 262.63}},
- 'history': []}
+ 'history': [{'set': '2026-11-23',
+              'ust10': 4.92,
+              'ust10d': '2026-11-20',
+              'bpe': 18.45,
+              'fx': 33.94,
+              'fxd': '2026-11-20'}]}
 
 METRICS3 = M3  # alias: per-ticker pfcf / ev (EV/EBITDA) / de (Debt/Equity)
 
