@@ -12,7 +12,7 @@ import json, re, sys
 import portfolio_data as P
 
 CONSTS = ["ASOF", "GROUPS", "STOCKS", "POS", "TRADES", "SELLPLAN", "CASH",
-          "REALIZED", "TOTALS", "SOLD", "MONTHLY", "THBFX", "M3", "SCHEDULE", "SELLBOOK", "HISTORY", "BENCH", "APPROVALS", "RISK", "BUYPLAN"]
+          "REALIZED", "TOTALS", "SOLD", "MONTHLY", "THBFX", "M3", "SCHEDULE", "SELLBOOK", "HISTORY", "BENCH", "APPROVALS", "RISK", "BUYPLAN", "PLINES"]
 
 def roll_years(stocks):
     """Year start / end prices for the Overview matrix (added 20 Nov 2026).

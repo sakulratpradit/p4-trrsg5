@@ -90,6 +90,38 @@ def main():
             out.append(f"SELL STOP: {t} closed {px:,.2f} <= {level:,.2f} ({S[t].get('pxd')}). "
                        f"Rule: {i['w'][:80]}. Sell all {sh:g} shares, about ${sh * px:,.0f}.")
 
+    # 1c) one-method price lines for every stock (PLINES, reset every Monday) - information unless a
+    #     standing row above has money behind it. Held names with budget room are listed separately.
+    PL = getattr(p, "PLINES", {}) or {}
+    funded = {i["t"] for i in p.SCHEDULE["items"] if not i.get("d") and i.get("c") == "standing" and i.get("a") in ("LIMIT", "TRIGGER")}
+    susp = {i["t"] for i in p.SCHEDULE["items"] if not i.get("d") and i.get("c") == "standing" and i.get("a") == "HOLD" and str(i.get("w", "")).startswith("SUSPENDED")}
+    hits_room, hits_other = [], []
+    for t, L in (PL.get("lines") or {}).items():
+        px = (S.get(t) or {}).get("price")
+        if not L.get("line") or not px or px > L["line"] or t in funded:
+            continue
+        if t in susp:
+            hits_other.append(f"{t} {px:,.2f}<=${L['line']:,} (SUSPENDED - no buying)")
+            continue
+        pos = p.POS.get(t) or {}
+        room = (pos.get("budget") or 0) - (pos.get("cost") or 0)
+        if pos.get("shares") and room > 50:
+            hits_room.append(f"{t} {px:,.2f} <= ${L['line']:,} (room ${room:,.0f})")
+        else:
+            hits_other.append(f"{t} {px:,.2f}<=${L['line']:,}")
+    if hits_room:
+        out.append(f"LINE HIT, HELD WITH BUDGET ROOM (one method, set {PL.get('set')}): " + "; ".join(hits_room)
+                   + ". No standing order - the funding gate holds these for the February money unless Salee decides otherwise.")
+    if hits_other:
+        out.append(f"LINE HIT, INFORMATION ONLY (no budget room or watch list): " + ", ".join(hits_other) + ".")
+    if PL.get("set"):
+        try:
+            age = (dt.date.today() - dt.date.fromisoformat(PL["set"])).days
+            if age > 8:
+                out.append(f"STALE LINES: price lines were last set {PL['set']} ({age} days) - the Monday reset may have failed.")
+        except Exception:
+            pass
+
     # 2) dated limit buys still open (e.g. Meta $705 until its date)
     for i in p.SCHEDULE["items"]:
         if i.get("a") != "BUY" or i.get("c") == "done" or not i.get("d") or i["d"] < today:

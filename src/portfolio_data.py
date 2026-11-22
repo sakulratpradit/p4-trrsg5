@@ -3,9 +3,17 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ("Nov 22, 2026 21:57 Bangkok - FRIDAY 20 NOV CLOSES BOOKED (partial, main session at Salee's request - both scheduled "
- 'runs on Sat 21 Nov did not book them). 22 of 63 tickers at 20 Nov: DIRECT closes (each matches the reported % move '
- 'on the 19 Nov board close): NVDA 125.53, AVGO 304.41, AMD 424.39, MU 594.51, STX 457.01, BE 142.39, CAT 510.45, MSFT '
+ASOF = ('Nov 22, 2026 23:56 Bangkok - ONE PRICE-LINE METHOD ADOPTED (Salee, 22 Nov): Approvals entry added; 11 Nov "write one '
+ 'method" item closed; monthly FX row replaced by the weekly Monday reset; AVGO 23 Nov order unchanged (line now '
+ '$320). No price, position or cash change. || PREVIOUS ENTRY: Nov 22, 2026 23:54 Bangkok - WEEKLY PRICE LINES + FX: '
+ 'one method for all 63 stocks; 10-year 4.92% (2026-11-20) -> bond-beating P/E 18.45x; USD/THB 33.94 -> 33.94 '
+ '(2026-11-20). Standing rows reset: APP $320 -> $330, AVGO $310 -> $320, NVDA $180, -> $195, PLTR $150 -> $35. Closes '
+ 'at or below their line: NVDA, AVGO, TSM, AMAT, MU, STX, CRDO, FN, FSLR, ORCL, VST, NFLX, SE, CAT, STRL. First run in '
+ "the main session at Salee's request (22 Nov). 10-year 4.92% from three market recaps (cappnotes, "
+ 'thewallstreetrepublic, cnttrading); USD/THB 33.94 from Trading Economics (33.9420 on 20 Nov). || PREVIOUS ENTRY: Nov '
+ "22, 2026 21:57 Bangkok - FRIDAY 20 NOV CLOSES BOOKED (partial, main session at Salee's request - both scheduled runs "
+ 'on Sat 21 Nov did not book them). 22 of 63 tickers at 20 Nov: DIRECT closes (each matches the reported % move on the '
+ '19 Nov board close): NVDA 125.53, AVGO 304.41, AMD 424.39, MU 594.51, STX 457.01, BE 142.39, CAT 510.45, MSFT '
  '484.52, AAPL 342.56, AMZN 246.82, ARM 152.20 (market recaps: thewallstreetrepublic, cappnotes, 247wallst, '
  'cnttrading, stocktitan; AMZN, ARM and AVGO also from the financialcontent daily row). FROM THE REPORTED % MOVE x the '
  '19 Nov close (approximate, within ~0.05%): ANET -11.6%, LITE -13.94%, COHR -12.90%, ALAB -14.77%, GEV -7.5%, VRT '
@@ -6106,35 +6114,30 @@ SCHEDULE = {'horizon': 'after the next 30 days, and standing rules',
  'items': [{'a': 'TRIGGER',
             'amt': 9000,
             'c': 'standing',
-            'cond': 'PASSED ALL FOUR 4 Nov: PASS = ALL FOUR. (1) Q3 revenue at or above $2.08bn - the consensus, which '
-                    "is the top of the company's own $2.055-2.085bn range (46-48% growth). Q2 MISSED by $20m; meeting "
-                    'the range is not enough, it must clear it. (2) Adjusted EBITDA margin at or above 80% (guided '
-                    'about 83%) - compute costs must not be eating the margin. (3) NO SECOND GUIDE-DOWN: the Q4 '
-                    'revenue guidance midpoint must be at or above consensus. A second soft guide means the ad-model '
-                    'edge is eroding, not pausing. (4) No new government inquiry or legal action (the SEC closed its '
-                    'inquiry with no action; the Jan 2026 short-seller allegations are disputed). FAIL ANY = no order, '
-                    'stays WATCH, revisit 10 Dec. ⚠️ WHY NOT THE "50% GROWTH" BAR PROPOSED IN CHAT 23 OCT: AppLovin '
-                    'itself guides 46-48%, so a 50% bar would fail by design - corrected before writing. ⚠️ BEFORE 4 '
-                    'NOV: refresh the fair value (board $656.20 equals one August analyst target and is stale) and the '
-                    'flagged fields (revenue growth on the board 66.4% vs reported Q2 52.8%). Context: down about 60% '
-                    'in 2026; beta about 2.5 - expect 15-20% moves on the print either way. || PREVIOUS RULE '
-                    '(replaced): THE NUMBER IS E-COMMERCE PIXEL ADDITIONS - they slowed to ~750 in June from ~950 in '
-                    'May. Growth ran 68>66>59>53>guided 47%. SEC closed its inquiry with no action; CapitalWatch '
-                    'retracted. A SECOND guidance miss means the edge is eroding, not pausing. || FUNDING (8 Nov): no '
-                    'new money until Feb 2027 ($100,000). Until then a buy is paid only from cash plus SGOV above the '
-                    '$50,000 crash-reserve floor (~$4,700 after the 9-11 Nov buys, ~$1,700 after NVDA 18 Nov). If this '
-                    'fires before February and does not fit, it WAITS for the February money - no SGOV sale below the '
-                    'floor.',
+            'cond': 'LINE RESET 2026-11-23: $320 -> $330 (10-year 4.92% on 2026-11-20; P/E 18.45x). || PASSED ALL FOUR '
+                    '4 Nov: PASS = ALL FOUR. (1) Q3 revenue at or above $2.08bn - the consensus, which is the top of '
+                    "the company's own $2.055-2.085bn range (46-48% growth). Q2 MISSED by $20m; meeting the range is "
+                    'not enough, it must clear it. (2) Adjusted EBITDA margin at or above 80% (guided about 83%) - '
+                    'compute costs must not be eating the margin. (3) NO SECOND GUIDE-DOWN: the Q4 revenue guidance '
+                    'midpoint must be at or above consensus. A second soft guide means the ad-model edge is eroding, '
+                    'not pausing. (4) No new government inquiry or legal action (the SEC closed its inquiry with no '
+                    'action; the Jan 2026 short-seller allegations are disputed). FAIL ANY = no order, stays WATCH, '
+                    'revisit 10 Dec. ⚠️ WHY NOT THE "50% GROWTH" BAR PROPOSED IN CHAT 23 OCT: AppLovin itself guides '
+                    '46-48%, so a 50% bar would fail by design - corrected before writing. ⚠️ BEFORE 4 NOV: refresh '
+                    'the fair value (board $656.20 equals one August analyst target and is stale) and the flagged '
+                    'fields (revenue growth on the board 66.4% vs reported Q2 52.8%). Context: down about 60% in 2026; '
+                    'beta about 2.5 - expect 15-20% moves on the print either way. || PREVIOUS RULE (replaced): THE '
+                    'NUMBER IS E-COMMERCE PIXEL ADDITIONS - they slowed to ~750 in June from ~950 in May. Growth ran '
+                    '68>66>59>53>guided 47%. SEC closed its inquiry with no action; CapitalWatch retracted. A SECOND '
+                    'guidance miss means the edge is eroding, not pausing. || FUNDING (8 Nov): no new money until Feb '
+                    '2027 ($100,000). Until then a buy is paid only from cash plus SGOV above the $50,000 '
+                    'crash-reserve floor (~$4,700 after the 9-11 Nov buys, ~$1,700 after NVDA 18 Nov). If this fires '
+                    'before February and does not fit, it WAITS for the February money - no SGOV sale below the floor.',
             'd': '',
             'dl': 'Standing',
             'k': 'earnings',
             't': 'APP',
-            'w': 'Any close at or below $320 - BUY the first $9,000 (Day LIMIT at that close, cap +1%). Set 6 Nov '
-                 'after the +31% results day (tests passed, price failed). Else re-decide 10 Dec. DEFERRED 6 Nov: APP '
-                 'closed 356.10 (+31.0%) on the results + target raises (BTIG 450, Needham 475) + rotation out of '
-                 'chips. Our cap was 274.47 - no chasing. New condition: BUY the first $9,000 on any close at or below '
-                 "$320 (about 44x this year's earnings, where the 5 Nov plan priced it), or re-decide at the 10 Dec "
-                 'review. Budget $18,000 unchanged. 6 Nov close 391.22 (+9.9% more) - 22% above the $320 line.'},
+            'w': 'Any close at or below $330 (one method, set 2026-11-23)'},
            {'a': 'DECIDE',
             'amt': 6489.31,
             'c': 'planned',
@@ -8839,17 +8842,17 @@ SCHEDULE = {'horizon': 'after the next 30 days, and standing rules',
            {'a': 'LIMIT',
             'amt': 4874.82,
             'c': 'standing',
-            'cond': 'LINE HIT AGAIN 20 Nov: close 304.41 (-12.19%; financialcontent.com daily row, % confirmed by two '
-                    'market recaps). Order planned for Mon 23 Nov - see the dated row. Earlier hit 5 Nov (close '
-                    '291.53): the order for 9 Nov did not fill - no AVGO trade is booked after 4 Sep. || LINE HIT 5 '
-                    'Nov (close 291.53, -6.0% below the line). Order Mon 9 Nov after the SGOV sale: BUY 16 sh Day '
-                    'LIMIT at the 6 Nov close, cap +1% (budget room 4,874.82). || -13% from the 4 Sep close of '
-                    '$357.90.',
+            'cond': 'LINE RESET 2026-11-23: $310 -> $320 (10-year 4.92% on 2026-11-20; P/E 18.45x). || LINE HIT AGAIN '
+                    '20 Nov: close 304.41 (-12.19%; financialcontent.com daily row, % confirmed by two market recaps). '
+                    'Order planned for Mon 23 Nov - see the dated row. Earlier hit 5 Nov (close 291.53): the order for '
+                    '9 Nov did not fill - no AVGO trade is booked after 4 Sep. || LINE HIT 5 Nov (close 291.53, -6.0% '
+                    'below the line). Order Mon 9 Nov after the SGOV sale: BUY 16 sh Day LIMIT at the 6 Nov close, cap '
+                    '+1% (budget room 4,874.82). || -13% from the 4 Sep close of $357.90.',
             'd': '',
             'dl': 'Standing',
             'k': 'limit',
             't': 'AVGO',
-            'w': 'Any close at or below $310'},
+            'w': 'Any close at or below $320 (one method, set 2026-11-23)'},
            {'a': 'ADMIN',
             'amt': 50000,
             'c': 'standing',
@@ -8918,85 +8921,85 @@ SCHEDULE = {'horizon': 'after the next 30 days, and standing rules',
            {'a': 'HOLD',
             'amt': 5619.72,
             'c': 'standing',
-            'cond': 'ALERT 21 Nov - CONDITION 1 MET (formal government action names Nvidia): California AG Rob Bonta '
-                    'announced a subpoena to Nvidia on 19 Nov (whether chips or confidential information reached China '
-                    'and whether investors were misled; corporate securities law). Also Reuters 20 Nov: SEC '
-                    'enforcement staff are examining potential accounting issues (two unnamed sources; formal or '
-                    'informal not stated; issues not named). NVDA closed 125.53 on 20 Nov (-14.01%). DECIDED 21 Nov '
-                    '(Salee): "Agree with plans on NVDA not trim yet." Keep holding 452 sh, no trim; buying stays '
-                    'suspended. SELL HALF (226 sh) on the next session if any of: Nvidia confirms a formal SEC '
-                    'investigation into revenue or a restatement; the 10-Q for the quarter ended 25 Oct is not filed '
-                    'by 4 Dec; the auditor raises a concern. Claude reports any trigger the same day and Salee gives '
-                    'the word before any sale. || DECIDED 18 Nov 2026 (Salee): "Agree HOLD on NVDA as your view till '
-                    'further advice by you." HOLD all 452 sh - no buy, no trim. Buying stays SUSPENDED (the $180 line '
-                    'and rung 3) until Claude advises otherwise; next scheduled look is the 10 Dec review, after the '
-                    '1-2 Dec House interviews. Claude reports the same day and advises if: a formal government action '
-                    'names NVIDIA; the board investigation finds a compromise; the general counsel leaves; guidance is '
-                    "cut or gross margin is guided below 70%. No sale happens without Salee's word. || ⚠️ 12 Nov: CEO "
-                    'RESIGNED (trigger 2 fired); Kress interim CEO; results Tue 17 Nov US. Line stays SUSPENDED; '
-                    'decision after the results (Salee). || DECIDED 12 Nov 2026 (Salee): "For NVDA decide on 19 Nov '
-                    'whether Buy/Sell." No sale and no buy before then - HOLD all 452 sh. The pre-set trim rule Claude '
-                    'proposed on 12 Nov (sell ~70 sh if the CEO goes or a formal action is disclosed) is NOT adopted. '
-                    'If a trigger fires before 19 Nov, Claude reports it the same day and Salee decides. On Thu 19 '
-                    'Nov, after the 18 Nov results: BUY (resume the $180 line / rung 3), HOLD, or SELL (trim toward 8% '
-                    "of stocks). || ⚠️ ESCALATED AGAIN 12 Nov: (1) WSJ (via Motley Fool/Yahoo, Fortune): NVIDIA's "
-                    'board met Wed 11 Nov to discuss REMOVING the CEO; no outcome reported by 16:15 Bangkok 12 Nov; no '
-                    'successor named. NVDA about -7 to -9% pre-market (~$158-161) after closing 173.73. (2) The '
-                    'Information (via Fortune): Megaspeed moved at least $7.5bn of NVIDIA chips; DOJ, FBI and Congress '
-                    'reported to be looking at the matter; the House passed the Remote Access Security Act (Senate '
-                    'next); FT: NVIDIA now requires cloud clients to sell at least 51% to non-Chinese customers. No '
-                    'formal action naming NVIDIA yet, and trigger 2 (CEO leaves) has NOT fired - but it may within '
-                    'hours. UPDATED ODDS (Claude): A cleared 15% $200-215 | B drags on 35% $155-180 | C CEO leaves 38% '
-                    '$130-150 | D worst case 12% $100-110 -> weighted ~$156, about the pre-market price. PRE-SET RULE '
-                    '(proposed 12 Nov - NOT ADOPTED): if the CEO is removed or resigns, or any formal government '
-                    'action naming NVIDIA is disclosed -> SELL about 70 sh at the next US session (Day LIMIT near the '
-                    'live bid, after the first 30 minutes) to bring NVDA to ~8% of stocks; keep ~382 sh. If the board '
-                    'keeps him -> hold all 452 and decide on 19 Nov as planned. No sale on the pre-market gap alone. '
-                    '|| APPROVED 11 Nov 2026 (Salee): suspension and the four triggers confirmed. 10 Nov close 168.89 '
-                    '(below the suspended $180 line - no buy). || ⚠️ ESCALATED 10 Nov (Bloomberg, via Business Today): '
-                    "the story now touches NVIDIA's OWN conduct. (1) In late summer 2025 NVIDIA's general counsel "
-                    'called the Commerce under-secretary who runs export controls about the Megaspeed case; afterwards '
-                    'BIS investigators were told to route NVIDIA requests through his office - described as highly '
-                    "unusual - and the probe later stalled. (2) Bloomberg's trade-record analysis says NVIDIA's "
-                    'inventory count given to the US government undercounted chips sold to Megaspeed by about 50,000 '
-                    'units (billions of dollars); NVIDIA says it later inspected more warehouses but gave no number. '
-                    "NVIDIA says its counsel did not know of the CEO's relationship. No charge, penalty or licence "
-                    'action against NVIDIA. NEW 4th TRIGGER: any FORMAL government action naming NVIDIA (subpoena, '
-                    'charge, settlement, licence suspension disclosed in a filing) or the departure of the CEO or '
-                    'general counsel -> review a trim the same day. REVIEW BROUGHT FORWARD: decide hold vs trim on Thu '
-                    '19 Nov after the 18 Nov results, not 10 Dec. || 9 Nov: NVDA CLOSED 178.67 (-4.3%), BELOW the '
-                    'suspended $180 line - no buy (suspension in force). || ⚠️ NVDA BUYS SUSPENDED 9 Nov 2026 (Claude; '
-                    'confirmed by Salee 11 Nov): on 8 Nov Jensen Huang admitted, in a letter to staff, a personal '
-                    'relationship with a person US intelligence reportedly links to a foreign intelligence effort; '
-                    "NVIDIA's board formed a committee of independent directors with outside counsel to investigate. "
-                    'The board says it has "no reason to believe" national security or NVIDIA secrets were compromised '
-                    'and has confidence in Huang, who remains CEO. Key-person and export-control/regulatory risk is '
-                    'now open. No new NVDA money until (a) the 18 Nov results and call AND (b) the board gives a first '
-                    'update. HOLD the 452 shares - no sale. Sell/review triggers: the investigation finds a '
-                    'compromise; Huang leaves without a named successor; or export licences or penalties hit NVIDIA. '
-                    "|| -21.9%. The 'something broke and I want to own it anyway' price. || FUNDING (8 Nov): no new "
-                    'money until Feb 2027 ($100,000). Until then a buy is paid only from cash plus SGOV above the '
-                    '$50,000 crash-reserve floor (~$4,700 after the 9-11 Nov buys, ~$1,700 after NVDA 18 Nov). If this '
-                    'fires before February and does not fit, it WAITS for the February money - no SGOV sale below the '
-                    'floor.',
+            'cond': 'LINE RESET 2026-11-23: $180, -> $195 (10-year 4.92% on 2026-11-20; P/E 18.45x). || ALERT 21 Nov - '
+                    'CONDITION 1 MET (formal government action names Nvidia): California AG Rob Bonta announced a '
+                    'subpoena to Nvidia on 19 Nov (whether chips or confidential information reached China and whether '
+                    'investors were misled; corporate securities law). Also Reuters 20 Nov: SEC enforcement staff are '
+                    'examining potential accounting issues (two unnamed sources; formal or informal not stated; issues '
+                    'not named). NVDA closed 125.53 on 20 Nov (-14.01%). DECIDED 21 Nov (Salee): "Agree with plans on '
+                    'NVDA not trim yet." Keep holding 452 sh, no trim; buying stays suspended. SELL HALF (226 sh) on '
+                    'the next session if any of: Nvidia confirms a formal SEC investigation into revenue or a '
+                    'restatement; the 10-Q for the quarter ended 25 Oct is not filed by 4 Dec; the auditor raises a '
+                    'concern. Claude reports any trigger the same day and Salee gives the word before any sale. || '
+                    'DECIDED 18 Nov 2026 (Salee): "Agree HOLD on NVDA as your view till further advice by you." HOLD '
+                    'all 452 sh - no buy, no trim. Buying stays SUSPENDED (the $180 line and rung 3) until Claude '
+                    'advises otherwise; next scheduled look is the 10 Dec review, after the 1-2 Dec House interviews. '
+                    'Claude reports the same day and advises if: a formal government action names NVIDIA; the board '
+                    'investigation finds a compromise; the general counsel leaves; guidance is cut or gross margin is '
+                    "guided below 70%. No sale happens without Salee's word. || ⚠️ 12 Nov: CEO RESIGNED (trigger 2 "
+                    'fired); Kress interim CEO; results Tue 17 Nov US. Line stays SUSPENDED; decision after the '
+                    'results (Salee). || DECIDED 12 Nov 2026 (Salee): "For NVDA decide on 19 Nov whether Buy/Sell." No '
+                    'sale and no buy before then - HOLD all 452 sh. The pre-set trim rule Claude proposed on 12 Nov '
+                    '(sell ~70 sh if the CEO goes or a formal action is disclosed) is NOT adopted. If a trigger fires '
+                    'before 19 Nov, Claude reports it the same day and Salee decides. On Thu 19 Nov, after the 18 Nov '
+                    'results: BUY (resume the $180 line / rung 3), HOLD, or SELL (trim toward 8% of stocks). || ⚠️ '
+                    "ESCALATED AGAIN 12 Nov: (1) WSJ (via Motley Fool/Yahoo, Fortune): NVIDIA's board met Wed 11 Nov "
+                    'to discuss REMOVING the CEO; no outcome reported by 16:15 Bangkok 12 Nov; no successor named. '
+                    'NVDA about -7 to -9% pre-market (~$158-161) after closing 173.73. (2) The Information (via '
+                    'Fortune): Megaspeed moved at least $7.5bn of NVIDIA chips; DOJ, FBI and Congress reported to be '
+                    'looking at the matter; the House passed the Remote Access Security Act (Senate next); FT: NVIDIA '
+                    'now requires cloud clients to sell at least 51% to non-Chinese customers. No formal action naming '
+                    'NVIDIA yet, and trigger 2 (CEO leaves) has NOT fired - but it may within hours. UPDATED ODDS '
+                    '(Claude): A cleared 15% $200-215 | B drags on 35% $155-180 | C CEO leaves 38% $130-150 | D worst '
+                    'case 12% $100-110 -> weighted ~$156, about the pre-market price. PRE-SET RULE (proposed 12 Nov - '
+                    'NOT ADOPTED): if the CEO is removed or resigns, or any formal government action naming NVIDIA is '
+                    'disclosed -> SELL about 70 sh at the next US session (Day LIMIT near the live bid, after the '
+                    'first 30 minutes) to bring NVDA to ~8% of stocks; keep ~382 sh. If the board keeps him -> hold '
+                    'all 452 and decide on 19 Nov as planned. No sale on the pre-market gap alone. || APPROVED 11 Nov '
+                    '2026 (Salee): suspension and the four triggers confirmed. 10 Nov close 168.89 (below the '
+                    'suspended $180 line - no buy). || ⚠️ ESCALATED 10 Nov (Bloomberg, via Business Today): the story '
+                    "now touches NVIDIA's OWN conduct. (1) In late summer 2025 NVIDIA's general counsel called the "
+                    'Commerce under-secretary who runs export controls about the Megaspeed case; afterwards BIS '
+                    'investigators were told to route NVIDIA requests through his office - described as highly unusual '
+                    "- and the probe later stalled. (2) Bloomberg's trade-record analysis says NVIDIA's inventory "
+                    'count given to the US government undercounted chips sold to Megaspeed by about 50,000 units '
+                    '(billions of dollars); NVIDIA says it later inspected more warehouses but gave no number. NVIDIA '
+                    "says its counsel did not know of the CEO's relationship. No charge, penalty or licence action "
+                    'against NVIDIA. NEW 4th TRIGGER: any FORMAL government action naming NVIDIA (subpoena, charge, '
+                    'settlement, licence suspension disclosed in a filing) or the departure of the CEO or general '
+                    'counsel -> review a trim the same day. REVIEW BROUGHT FORWARD: decide hold vs trim on Thu 19 Nov '
+                    'after the 18 Nov results, not 10 Dec. || 9 Nov: NVDA CLOSED 178.67 (-4.3%), BELOW the suspended '
+                    '$180 line - no buy (suspension in force). || ⚠️ NVDA BUYS SUSPENDED 9 Nov 2026 (Claude; confirmed '
+                    'by Salee 11 Nov): on 8 Nov Jensen Huang admitted, in a letter to staff, a personal relationship '
+                    "with a person US intelligence reportedly links to a foreign intelligence effort; NVIDIA's board "
+                    'formed a committee of independent directors with outside counsel to investigate. The board says '
+                    'it has "no reason to believe" national security or NVIDIA secrets were compromised and has '
+                    'confidence in Huang, who remains CEO. Key-person and export-control/regulatory risk is now open. '
+                    'No new NVDA money until (a) the 18 Nov results and call AND (b) the board gives a first update. '
+                    'HOLD the 452 shares - no sale. Sell/review triggers: the investigation finds a compromise; Huang '
+                    'leaves without a named successor; or export licences or penalties hit NVIDIA. || -21.9%. The '
+                    "'something broke and I want to own it anyway' price. || FUNDING (8 Nov): no new money until Feb "
+                    '2027 ($100,000). Until then a buy is paid only from cash plus SGOV above the $50,000 '
+                    'crash-reserve floor (~$4,700 after the 9-11 Nov buys, ~$1,700 after NVDA 18 Nov). If this fires '
+                    'before February and does not fit, it WAITS for the February money - no SGOV sale below the floor.',
             'd': '',
             'dl': 'Standing',
             'k': 'limit',
             't': 'NVDA',
-            'w': 'SUSPENDED 9 Nov (was: LIMIT, any close at or below $180, rung 2 $5,619.72). Ladder rung 2 - any '
-                 'close at or below $180'},
+            'w': 'SUSPENDED - no buying until Salee lifts it. Line under the one method: any close at or below $195'},
            {'a': 'TRIGGER',
             'amt': 10466.91,
             'c': 'standing',
-            'cond': 'Forward P/E 85.7 and priced near the analyst average; wait for a better price. Condition set in '
-                    'the 21 Sep budget reset. || FUNDING (8 Nov): no new money until Feb 2027 ($100,000). Until then a '
-                    'buy is paid only from cash plus SGOV above the $50,000 crash-reserve floor (~$4,700 after the '
-                    '9-11 Nov buys, ~$1,700 after NVDA 18 Nov). If this fires before February and does not fit, it '
-                    'WAITS for the February money - no SGOV sale below the floor.',
+            'cond': 'LINE RESET 2026-11-23: $150 -> $35 (10-year 4.92% on 2026-11-20; P/E 18.45x). || Forward P/E 85.7 '
+                    'and priced near the analyst average; wait for a better price. Condition set in the 21 Sep budget '
+                    'reset. || FUNDING (8 Nov): no new money until Feb 2027 ($100,000). Until then a buy is paid only '
+                    'from cash plus SGOV above the $50,000 crash-reserve floor (~$4,700 after the 9-11 Nov buys, '
+                    '~$1,700 after NVDA 18 Nov). If this fires before February and does not fit, it WAITS for the '
+                    'February money - no SGOV sale below the floor.',
             'd': '',
             'k': 'trigger',
             't': 'PLTR',
-            'w': 'Buy the remaining $10,466.91 only below $150'},
+            'w': 'Any close at or below $35 (one method, set 2026-11-23)'},
            {'a': 'TRIGGER',
             'amt': 0,
             'c': 'done',
@@ -9126,17 +9129,19 @@ SCHEDULE = {'horizon': 'after the next 30 days, and standing rules',
            {'a': 'WATCH',
             'amt': 0,
             'bkk': 'Tue 1 Dec',
-            'c': 'planned',
-            'cond': "22 Nov: set to 33.94 early at Salee's request (20 Nov rate, Trading Economics; was 33.65 since 1 "
-                    'Oct). The 1 Dec update still runs. || Also 10 Dec and 31 Dec. FX changes the baht value of the '
-                    'book only, never an order.',
+            'c': 'cancelled',
+            'cond': 'Replaced by the weekly Monday update (Salee, 22 Nov): USD/THB is reset with the price lines every '
+                    "Monday. || 22 Nov: set to 33.94 early at Salee's request (20 Nov rate, Trading Economics; was "
+                    '33.65 since 1 Oct). The 1 Dec update still runs. || Also 10 Dec and 31 Dec. FX changes the baht '
+                    'value of the book only, never an order.',
             'd': '2026-12-01',
             'dl': 'Monthly FX update - set USD/THB on the dashboard',
             'k': 'admin',
             't': 'FX',
             'tac': 'Claude updates the dashboard rate.',
-            'w': 'Monthly FX update: set the dashboard USD/THB to the 1 Dec rate (now 33.65, set 1 Oct). Rule: first '
-                 'trading day of each month, or mid-month if spot moves more than 1.5% (~0.50 baht).'},
+            'w': '[REPLACED 22 Nov] Monthly FX update: set the dashboard USD/THB to the 1 Dec rate (now 33.65, set 1 '
+                 'Oct). Rule: first trading day of each month, or mid-month if spot moves more than 1.5% (~0.50 '
+                 'baht).'},
            {'a': 'WATCH',
             'amt': 0,
             'bkk': 'Fri 4 Dec 20:30',
@@ -9503,13 +9508,15 @@ SCHEDULE = {'horizon': 'after the next 30 days, and standing rules',
             'bkk': 'Mon 23 Nov evening, after 22:00 Bangkok',
             'c': 'planned',
             'cap': 307.45,
-            'cond': 'FIVE CHECKS: money - paid from cash 5,889.84 (no SGOV sale needed); rates - 10-year 4.92% on 20 '
-                    'Nov (one source, to confirm), valuation gate lifts but AVGO is ~20x forward earnings anyway; rank '
-                    '- AVGO a priority name with budget room 19,874.82; price - close 304.41 is below the $310 line '
-                    'written on 4 Sep; order - Day LIMIT at the reference close, one raise to +1%. Est. cost 15 x '
-                    '304.41 = 4,566.15 + 9.77 commission = 4,575.92 at the limit; 4,621.62 at the cap. Do NOT place if '
-                    'AVGO-specific bad news comes out before Monday (guidance, customer loss) or if the overseas '
-                    'data-centre penalty becomes a formal order naming its customers.',
+            'cond': '22 Nov: under the one method the AVGO line is now $320 (was $310); the 20 Nov close of 304.41 is '
+                    'below both, so this order stands unchanged. || FIVE CHECKS: money - paid from cash 5,889.84 (no '
+                    'SGOV sale needed); rates - 10-year 4.92% on 20 Nov (one source, to confirm), valuation gate lifts '
+                    'but AVGO is ~20x forward earnings anyway; rank - AVGO a priority name with budget room 19,874.82; '
+                    'price - close 304.41 is below the $310 line written on 4 Sep; order - Day LIMIT at the reference '
+                    'close, one raise to +1%. Est. cost 15 x 304.41 = 4,566.15 + 9.77 commission = 4,575.92 at the '
+                    'limit; 4,621.62 at the cap. Do NOT place if AVGO-specific bad news comes out before Monday '
+                    '(guidance, customer loss) or if the overseas data-centre penalty becomes a formal order naming '
+                    'its customers.',
             'd': '2026-11-23',
             'dl': 'AVGO $310 line HIT (closed 304.41 on Fri 20 Nov) - buy the line budget',
             'k': 'limit',
@@ -9541,7 +9548,17 @@ SCHEDULE = {'horizon': 'after the next 30 days, and standing rules',
                  'date, order or law. Watch for a formal order.',
             'cond': 'Touches the hyperscalers we hold (GOOGL, MSFT, AMZN, META) and their suppliers; Pillar 3: US '
                     'hyperscaler tenants of Thai estates (WHA, AMATA, WHAUP) - keeps the no-new-money stance. Same '
-                    'week as the 16 Nov chip-licence rule for Southeast Asia.'}],
+                    'week as the 16 Nov chip-licence rule for Southeast Asia.'},
+           {'a': 'WATCH',
+            'amt': 0,
+            'c': 'standing',
+            'd': '',
+            'k': 'admin',
+            't': '',
+            'w': 'WEEKLY RESET - every Monday (Bangkok): price lines for all stocks reset with the latest 10-year '
+                 'close, and USD/THB updated (scheduled task; Salee, 22 Nov).',
+            'cond': 'Script: src/jobs/weekly_lines.py; playbook: src/jobs/weekly_lines.md. The daily price alert also '
+                    'lists every stock that closes at or below its line.'}],
  'note': "ONE LIST, TWO VIEWS (Salee approved 14 Nov 2026): the 'Next 30 Days' tab shows every dated item from today "
          'to today + 30 days and moves forward by itself each day; this tab shows everything later, plus the standing '
          'rules (price lines, gates, holds) that never expire. Past and done rows drop off by themselves; Claude '
@@ -11087,10 +11104,10 @@ APPROVALS = [{'after': 'Same night (9 Oct): Marvell 47 shares filled at $269.90 
                      'before then (compromise found; CEO or general counsel leaves; export licences or penalties; any '
                      "formal government action naming NVIDIA) = review a trim the same day. Worst case in Claude's "
                      'scenarios: $100-110.'},
-            {'due': '2026-12-10',
+            {'due': '',
              'k': '10 DEC',
-             'text': 'Write ONE method for setting price lines (today three different methods are in use, and the TSM, '
-                     'PLTR and AMD lines have no recorded formula).'},
+             'text': '[DONE 22 Nov - see the 22 Nov decision] Write ONE method for setting price lines (today three '
+                     'different methods are in use, and the TSM, PLTR and AMD lines have no recorded formula).'},
             {'due': '',
              'k': 'NVDA',
              'text': '[CLOSED 18 Nov - see the 18 Nov decision] 12 Nov (Salee): decide on 19 Nov whether to buy or '
@@ -11144,7 +11161,34 @@ APPROVALS = [{'after': 'Same night (9 Oct): Marvell 47 shares filled at $269.90 
          'staff are examining potential accounting issues (two unnamed sources; stage and issues not stated). NVDA '
          'fell 14.01% to 125.53 on 20 Nov; the position is -$29,563 (-34.3%). Claude advised hold, not sell, because '
          'free cash flow of $148.6bn in the last 12 months backs the earnings, the SEC report is thin, and the 10-Q '
-         '(by 4 Dec) and House interviews (1-2 Dec) bring facts within two weeks. Conviction low.'}]
+         '(by 4 Dec) and House interviews (1-2 Dec) bring facts within two weeks. Conviction low.'},
+ {'by': 'Salee, 22 Nov 2026 - "Yes adopt that above one method for every line both own and watch stocks ... Please run '
+        'on every Monday of new week. Do not wait until 10 Dec"',
+  'd': '2026-11-22',
+  'items': [{'due': '',
+             'k': 'METHOD',
+             'text': 'ONE METHOD for every price line, held and watch stocks: line = the LOWER of (a) fair value x '
+                     '0.70 and (b) forward EPS x 100 / (10-year yield + 0.5); rounded down ($1 under $100, $5 to $999, '
+                     '$10 above). No forward earnings = no line. Shown on the Overview matrix ("Price line" rows).'},
+            {'due': '',
+             'k': 'WEEKLY',
+             'text': 'Every Monday (Bangkok): the lines are reset with the latest 10-year close, and the dashboard '
+                     'USD/THB rate is updated at the same time (replaces the monthly FX rule). Run by a scheduled '
+                     'task.'},
+            {'due': '',
+             'k': 'MONEY',
+             'text': 'A line hit buys only where a standing line row has money (now AVGO $4,874.82; APP $9,000 and '
+                     'PLTR $10,466.91 wait for February). Every other hit is information: until February, buys come '
+                     'only from cash and SGOV above the $50,000 reserve.'},
+            {'due': '',
+             'k': 'FIRST SET',
+             'text': 'Set 22 Nov for the week of 23 Nov: 10-year 4.92% (20 Nov) -> 18.45x; USD/THB 33.94. Standing '
+                     'lines reset: AVGO $310 -> $320, APP $320 -> $330, PLTR $150 -> $35, NVDA (suspended) $180 -> '
+                     '$195.'}],
+  'title': 'Decision 22 Nov 2026 - one price-line method, reset weekly',
+  'why': 'Until now lines were set three different ways, some with no written formula. The one method ties every line '
+         'to the bond market: as the 10-year rises, the P/E we are willing to pay falls. Tested on 22 Nov, it '
+         'reproduced the September lines for AVGO ($310), APP ($320) and TSM ($380) from the formula alone.'}]
 
 RISK = {'asof': '2026-10-11',
  'beta': 1.61,
@@ -11214,6 +11258,88 @@ BUYPLAN = {'hours': 'POEMS follows the US session 21:30 to 04:00 Bangkok. Place 
            'Never more than +1% above the reference close.',
            'Commission 0.214%, minimum $8.56 - share counts already allow for it.',
            'Send the POEMS confirmation the same day; Claude books the fill.']}
+
+PLINES = {'set': '2026-11-23',
+ 'ust10': 4.92,
+ 'ust10d': '2026-11-20',
+ 'bpe': 18.45,
+ 'fx': 33.94,
+ 'fxd': '2026-11-20',
+ 'src': "First run in the main session at Salee's request (22 Nov). 10-year 4.92% from three market recaps (cappnotes, "
+        'thewallstreetrepublic, cnttrading); USD/THB 33.94 from Trading Economics (33.9420 on 20 Nov).',
+ 'method': 'Line = lower of (a) fair value x 0.70 and (b) forward EPS x 100/(10-year + 0.5); rounded down ($1 under '
+           '$100, $5 to $999, $10 above). Adopted by Salee 22 Nov 2026; reset every Monday with the latest 10-year '
+           'close and USD/THB. A hit buys only where a standing line row has money; otherwise it is information.',
+ 'lines': {'GOOGL': {'line': 245, 'a': 300.38, 'b': 246.68, 'eps': 13.37, 'fv': 429.12, 'by': 'b', 'pxset': 265.3},
+           'MSFT': {'line': 360, 'a': 421.21, 'b': 364.94, 'eps': 19.78, 'fv': 601.73, 'by': 'b', 'pxset': 484.52},
+           'AMZN': {'line': 170, 'a': 232.2, 'b': 173.43, 'eps': 9.4, 'fv': 331.72, 'by': 'b', 'pxset': 246.82},
+           'META': {'line': 590, 'a': 591.34, 'b': 607.74, 'eps': 32.94, 'fv': 844.77, 'by': 'a', 'pxset': 596.22},
+           'NVDA': {'line': 195, 'a': 195.74, 'b': 222.51, 'eps': 12.06, 'fv': 279.63, 'by': 'a', 'pxset': 125.53},
+           'AVGO': {'line': 320, 'a': 370.37, 'b': 320.66, 'eps': 17.38, 'fv': 529.1, 'by': 'b', 'pxset': 304.41},
+           'AMD': {'line': 200, 'a': 446.33, 'b': 204.98, 'eps': 11.11, 'fv': 637.61, 'by': 'b', 'pxset': 424.39},
+           'ARM': {'line': 44, 'a': 203.5, 'b': 44.1, 'eps': 2.39, 'fv': 290.71, 'by': 'b', 'pxset': 152.2},
+           'MRVL': {'line': 100, 'a': 239.01, 'b': 104.24, 'eps': 5.65, 'fv': 341.44, 'by': 'b', 'pxset': 138.47},
+           'CDNS': {'line': 155, 'a': 284.37, 'b': 158.85, 'eps': 8.61, 'fv': 406.24, 'by': 'b', 'pxset': 304.88},
+           'SNPS': {'line': 325, 'a': 410.87, 'b': 326.01, 'eps': 17.67, 'fv': 586.95, 'by': 'b', 'pxset': 430.91},
+           'MPWR': {'line': 595, 'a': 1260.0, 'b': 596.12, 'eps': 32.31, 'fv': 1800.0, 'by': 'b', 'pxset': 1295.86},
+           'TSM': {'line': 390, 'a': 409.07, 'b': 393.54, 'eps': 21.33, 'fv': 584.39, 'by': 'b', 'pxset': 318.71},
+           'ASML': {'line': 1170, 'a': 1506.4, 'b': 1172.31, 'eps': 63.54, 'fv': 2152.0, 'by': 'b', 'pxset': 1266.28},
+           'LRCX': {'line': 185, 'a': 254.82, 'b': 189.48, 'eps': 10.27, 'fv': 364.03, 'by': 'b', 'pxset': 203.68},
+           'AMAT': {'line': 350, 'a': 408.92, 'b': 354.06, 'eps': 19.19, 'fv': 584.17, 'by': 'b', 'pxset': 338.93},
+           'KLAC': {'line': 100, 'a': 162.67, 'b': 100.74, 'eps': 5.46, 'fv': 232.38, 'by': 'b', 'pxset': 141.48},
+           'TER': {'line': 170, 'a': 311.83, 'b': 171.95, 'eps': 9.32, 'fv': 445.47, 'by': 'b', 'pxset': 227.43},
+           'MU': {'line': 1090, 'a': 1093.4, 'b': 3264.54, 'eps': 176.94, 'fv': 1562.0, 'by': 'a', 'pxset': 594.51},
+           'SNDK': {'line': 175, 'a': 179.14, 'b': 3964.9, 'eps': 214.9, 'fv': 255.92, 'by': 'a', 'pxset': 633.96},
+           'STX': {'line': 640, 'a': 764.4, 'b': 644.64, 'eps': 34.94, 'fv': 1092.0, 'by': 'b', 'pxset': 457.01},
+           'ANET': {'line': 85, 'a': 170.51, 'b': 85.79, 'eps': 4.65, 'fv': 243.59, 'by': 'b', 'pxset': 167.6},
+           'APH': {'line': 54, 'a': 72.08, 'b': 54.98, 'eps': 2.98, 'fv': 102.97, 'by': 'b', 'pxset': 75.61},
+           'GLW': {'line': 69, 'a': 131.19, 'b': 69.37, 'eps': 3.76, 'fv': 187.41, 'by': 'b', 'pxset': 105.97},
+           'LITE': {'line': 400, 'a': 815.5, 'b': 402.03, 'eps': 21.79, 'fv': 1165.0, 'by': 'b', 'pxset': 460.55},
+           'COHR': {'line': 170, 'a': 276.35, 'b': 173.25, 'eps': 9.39, 'fv': 394.79, 'by': 'b', 'pxset': 187.21},
+           'ALAB': {'line': 100, 'a': 271.85, 'b': 103.69, 'eps': 5.62, 'fv': 388.36, 'by': 'b', 'pxset': 180.35},
+           'CRDO': {'line': 130, 'a': 198.84, 'b': 134.69, 'eps': 7.3, 'fv': 284.05, 'by': 'b', 'pxset': 117.76},
+           'FN': {'line': 335, 'a': 481.45, 'b': 337.08, 'eps': 18.27, 'fv': 687.78, 'by': 'b', 'pxset': 311.71},
+           'FSLR': {'line': 190, 'a': 191.57, 'b': 387.82, 'eps': 21.02, 'fv': 273.67, 'by': 'a', 'pxset': 151.95},
+           'CGNX': {'line': 33, 'a': 55.56, 'b': 33.03, 'eps': 1.79, 'fv': 79.37, 'by': 'b', 'pxset': 47.66},
+           'SPCX': {'line': 52, 'a': 180.94, 'b': 52.03, 'eps': 2.82, 'fv': 258.49, 'by': 'b', 'pxset': 138.43},
+           'RKLB': {'line': None,
+                    'a': 71.5,
+                    'b': None,
+                    'eps': None,
+                    'fv': 102.15,
+                    'by': None,
+                    'why': 'no forward earnings - no line'},
+           'PLTR': {'line': 35, 'a': 144.66, 'b': 35.05, 'eps': 1.9, 'fv': 206.66, 'by': 'b', 'pxset': 153.68},
+           'LHX': {'line': 225, 'a': 226.57, 'b': 232.29, 'eps': 12.59, 'fv': 323.67, 'by': 'a', 'pxset': 256.54},
+           'KTOS': {'line': 17, 'a': 68.83, 'b': 17.53, 'eps': 0.95, 'fv': 98.33, 'by': 'b', 'pxset': 29.65},
+           'AVAV': {'line': 61, 'a': 149.15, 'b': 61.81, 'eps': 3.35, 'fv': 213.07, 'by': 'b', 'pxset': 95.91},
+           'DDOG': {'line': 48, 'a': 205.1, 'b': 48.89, 'eps': 2.65, 'fv': 293.0, 'by': 'b', 'pxset': 166.46},
+           'ISRG': {'line': 220, 'a': 334.81, 'b': 222.32, 'eps': 12.05, 'fv': 478.3, 'by': 'b', 'pxset': 407.24},
+           'ORCL': {'line': 155, 'a': 165.58, 'b': 157.19, 'eps': 8.52, 'fv': 236.54, 'by': 'b', 'pxset': 110.57},
+           'V': {'line': 265, 'a': 298.77, 'b': 268.82, 'eps': 14.57, 'fv': 426.82, 'by': 'b', 'pxset': 402.25},
+           'HOOD': {'line': 45, 'a': 94.43, 'b': 45.94, 'eps': 2.49, 'fv': 134.9, 'by': 'b', 'pxset': 62.2},
+           'PANW': {'line': 77, 'a': 280.0, 'b': 77.12, 'eps': 4.18, 'fv': 400.0, 'by': 'b', 'pxset': 361.73},
+           'CRWD': {'line': 26, 'a': 173.07, 'b': 26.01, 'eps': 1.41, 'fv': 247.25, 'by': 'b', 'pxset': 243.46},
+           'FTNT': {'line': 64, 'a': 118.52, 'b': 64.76, 'eps': 3.51, 'fv': 169.31, 'by': 'b', 'pxset': 131.46},
+           'NET': {'line': 27, 'a': 240.39, 'b': 27.31, 'eps': 1.48, 'fv': 343.42, 'by': 'b', 'pxset': 303.68},
+           'BWXT': {'line': 91, 'a': 146.61, 'b': 91.88, 'eps': 4.98, 'fv': 209.44, 'by': 'b', 'pxset': 117.06},
+           'GEV': {'line': 385, 'a': 856.8, 'b': 387.63, 'eps': 21.01, 'fv': 1224.0, 'by': 'b', 'pxset': 699.56},
+           'ETN': {'line': 275, 'a': 339.83, 'b': 279.7, 'eps': 15.16, 'fv': 485.47, 'by': 'b', 'pxset': 330.57},
+           'VRT': {'line': 145, 'a': 233.1, 'b': 146.31, 'eps': 7.93, 'fv': 333.0, 'by': 'b', 'pxset': 166.31},
+           'PWR': {'line': 340, 'a': 532.27, 'b': 343.17, 'eps': 18.6, 'fv': 760.39, 'by': 'b', 'pxset': 587.43},
+           'BE': {'line': 89, 'a': 199.34, 'b': 89.48, 'eps': 4.85, 'fv': 284.77, 'by': 'b', 'pxset': 142.39},
+           'CEG': {'line': 230, 'a': 236.65, 'b': 233.39, 'eps': 12.65, 'fv': 338.07, 'by': 'b', 'pxset': 252.03},
+           'VST': {'line': 145, 'a': 146.2, 'b': 174.54, 'eps': 9.46, 'fv': 208.86, 'by': 'a', 'pxset': 124.15},
+           'AAPL': {'line': 165, 'a': 233.3, 'b': 169.19, 'eps': 9.17, 'fv': 333.28, 'by': 'b', 'pxset': 342.56},
+           'NFLX': {'line': 59, 'a': 59.38, 'b': 66.24, 'eps': 3.59, 'fv': 84.83, 'by': 'a', 'pxset': 58.46},
+           'APP': {'line': 330, 'a': 330.18, 'b': 331.18, 'eps': 17.95, 'fv': 471.69, 'by': 'a', 'pxset': 379.02},
+           'SE': {'line': 72, 'a': 105.03, 'b': 72.32, 'eps': 3.92, 'fv': 150.04, 'by': 'b', 'pxset': 65.94},
+           'CAT': {'line': 530, 'a': 662.03, 'b': 534.5, 'eps': 28.97, 'fv': 945.76, 'by': 'b', 'pxset': 510.45},
+           'GE': {'line': 160, 'a': 265.23, 'b': 164.02, 'eps': 8.89, 'fv': 378.9, 'by': 'b', 'pxset': 318.88},
+           'STRL': {'line': 410, 'a': 585.7, 'b': 414.57, 'eps': 22.47, 'fv': 836.71, 'by': 'b', 'pxset': 273.25},
+           'TSEM': {'line': 95, 'a': 219.05, 'b': 95.2, 'eps': 5.16, 'fv': 312.93, 'by': 'b', 'pxset': 127.77},
+           'CIEN': {'line': 190, 'a': 359.09, 'b': 192.06, 'eps': 10.41, 'fv': 512.99, 'by': 'b', 'pxset': 262.63}},
+ 'history': []}
 
 METRICS3 = M3  # alias: per-ticker pfcf / ev (EV/EBITDA) / de (Debt/Equity)
 
