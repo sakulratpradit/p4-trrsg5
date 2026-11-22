@@ -1,0 +1,89 @@
+<div class="card method macro plnote">
+<h2>Price line - how every line is calculated</h2>
+<p class="sub">Filed 23 Nov 2026 at Salee's request. Method adopted by Salee on 22 Nov 2026 for every stock on the board, held and watch. Lines are reset every Monday with the latest 10-year Treasury close, together with the USD/THB rate (scheduled task, 06:31 Bangkok). The live lines are on the Overview tab, metric matrix, group "Price line - one method". Figures below are the first set: 10-year 4.92% on 2026-11-20, USD/THB 33.94.</p>
+
+<h3>1. The one rule</h3>
+<pre style="font-size:13px;line-height:1.5;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px;overflow-x:auto">Price line = the LOWER of
+  (a) Fair value x 0.70                     fair value = analysts' average target
+  (b) Forward EPS x bond-beating P/E        forward EPS = price / forward P/E
+      bond-beating P/E = 100 / (10-year yield + 0.5)
+Rounded DOWN: $1 under $100, $5 from $100 to $999, $10 above $1,000.
+No forward earnings = no line.</pre>
+<p><b>(a)</b> is a 30% safety margin below what analysts think the stock is worth. <b>(b)</b> is the price at which the company earns 0.5 point a year more on our money than the risk-free 10-year bond. Taking the lower of the two means both tests must pass.</p>
+
+<h3>2. Why the bond sets the price - the economics</h3>
+<p><b>Equation 1 - earnings yield.</b> Earnings yield = 1 / P/E. At 35x: 1/35 = 2.86% a year, against 5.00% from the bond - 2.14 points behind.</p>
+<p><b>Equation 2 - years to catch up.</b> Years = ln(bond yield x P/E) / ln(1 + earnings growth). At 35x and 5%: 0.05 x 35 = 1.75; at 15% growth about 4.0 years, 20% about 3.1, 25% about 2.5.</p>
+<p><b>Equation 3 - the standard valuation equation (Gordon growth).</b> Justified P/E = 1 / (bond yield + risk premium - long-run growth). With a 4% risk premium (an assumption) and a 5% bond, investors need 9% a year; 35x is justified only if earnings grow about 6.1% a year forever. Same growth, different bond yields:</p>
+<div style="overflow-x:auto"><table>
+<tr><th>10-year</th><th>4.00%</th><th>4.50%</th><th>5.00%</th><th>5.25%</th><th>5.50%</th></tr>
+<tr><td>Highest justified P/E</td><td>53.8x</td><td>42.4x</td><td><b>35.0x</b></td><td>32.2x</td><td>29.8x</td></tr>
+</table></div>
+<p>35x was set by judgment on 11 Nov; this shows it fits a 5% bond. Each +0.25 point on the yield removes about 2.8x from the P/E a buyer can justify. The line in section 1 uses the stricter bond-beating P/E (18.45x at 4.92%) because it ignores growth on purpose: in a 5% world we only want to buy what already beats the bond on today's earnings.</p>
+
+<h3>3. Worked example - AVGO (set 23 Nov)</h3>
+<div style="overflow-x:auto"><table>
+<tr><th>Step</th><th>Calculation</th><th>Result</th></tr>
+<tr><td>1. Bond-beating P/E</td><td>100 / (4.92 + 0.5)</td><td><b>18.45x</b></td></tr>
+<tr><td>2. Forward EPS</td><td>price / forward P/E</td><td>$17.38</td></tr>
+<tr><td>3. (a) Fair value x 0.70</td><td>$529.10 x 0.70</td><td>$370.37</td></tr>
+<tr><td>4. (b) Forward EPS x P/E</td><td>$17.38 x 18.45</td><td>$320.66</td></tr>
+<tr><td>5. Lower, rounded down to $5</td><td>min(a, b)</td><td><b>$320</b></td></tr>
+<tr><td>6. Check</td><td>Close 20 Nov $304.41 is below $320</td><td>Line HIT - order Mon 23 Nov (15 sh, limit $304.41, cap $307.45)</td></tr>
+</table></div>
+<p><b>Test of the method (22 Nov):</b> from the formula alone it reproduced the September judgment lines for AVGO ($310), APP ($320) and TSM ($380).</p>
+
+<h3>4. What a line hit means - money still decides</h3>
+<p>1. <b>Standing line with money</b> (AVGO $4,874.82; APP $9,000 and PLTR $10,466.91 wait for February): a close at or below the line = buy the next evening - Day LIMIT at that close, one raise to +1%, after 22:00 Bangkok, never in the first 30 minutes.<br>
+2. <b>Held with budget room, no standing order:</b> waits for the February $100,000 (funding gate), unless Salee decides otherwise.<br>
+3. <b>Everything else:</b> information only - the stock is in its buy zone, but there is no budget.<br>
+4. <b>Suspended</b> (NVDA): no buying until Salee lifts it, whatever the line says.<br>
+The five checks still apply in order: Money, Rates, Rank, Price, Order. Buying at a line is always at or below 18.45x forward earnings, so the 35x valuation gate is satisfied automatically.</p>
+
+<h3>5. Lines for the stocks we own (set 23 Nov; closes of 19-20 Nov)</h3>
+<div style="overflow-x:auto"><table>
+<tr><th>Stock</th><th>(a) FV x 0.70</th><th>(b) EPS x 18.45</th><th>Line</th><th>Last close</th><th>vs line</th><th>Status</th></tr>
+<tr><td><b>GOOGL</b></td><td>$300</td><td>$247</td><td><b>$245</b></td><td>$265.30<br><small>2026-11-20</small></td><td>+8.3%</td><td>Above line</td></tr>
+<tr><td><b>MSFT</b></td><td>$421</td><td>$365</td><td><b>$360</b></td><td>$484.52<br><small>2026-11-20</small></td><td>+34.6%</td><td>Above line</td></tr>
+<tr><td><b>AMZN</b></td><td>$232</td><td>$173</td><td><b>$170</b></td><td>$246.82<br><small>2026-11-20</small></td><td>+45.2%</td><td>Above line</td></tr>
+<tr><td><b>META</b></td><td>$591</td><td>$608</td><td><b>$590</b></td><td>$596.22<br><small>2026-11-19</small></td><td>+1.1%</td><td>Above line</td></tr>
+<tr><td><b>NVDA</b></td><td>$196</td><td>$223</td><td><b>$195</b></td><td>$125.53<br><small>2026-11-20</small></td><td>-35.6%</td><td>Suspended</td></tr>
+<tr><td><b>AVGO</b></td><td>$370</td><td>$321</td><td><b>$320</b></td><td>$304.41<br><small>2026-11-20</small></td><td>-4.9%</td><td>HIT - order</td></tr>
+<tr><td><b>AMD</b></td><td>$446</td><td>$205</td><td><b>$200</b></td><td>$424.39<br><small>2026-11-20</small></td><td>+112.2%</td><td>Above line</td></tr>
+<tr><td><b>MRVL</b></td><td>$239</td><td>$104</td><td><b>$100</b></td><td>$138.47<br><small>2026-11-19</small></td><td>+38.5%</td><td>Above line</td></tr>
+<tr><td><b>CDNS</b></td><td>$284</td><td>$159</td><td><b>$155</b></td><td>$304.88<br><small>2026-11-19</small></td><td>+96.7%</td><td>Above line</td></tr>
+<tr><td><b>TSM</b></td><td>$409</td><td>$394</td><td><b>$390</b></td><td>$318.71<br><small>2026-11-20</small></td><td>-18.3%</td><td>HIT - waits for Feb (room $170)</td></tr>
+<tr><td><b>ASML</b></td><td>$1,506</td><td>$1,172</td><td><b>$1,170</b></td><td>$1,266.28<br><small>2026-11-20</small></td><td>+8.2%</td><td>Above line</td></tr>
+<tr><td><b>LRCX</b></td><td>$255</td><td>$189</td><td><b>$185</b></td><td>$203.68<br><small>2026-11-19</small></td><td>+10.1%</td><td>Above line</td></tr>
+<tr><td><b>AMAT</b></td><td>$409</td><td>$354</td><td><b>$350</b></td><td>$338.93<br><small>2026-11-19</small></td><td>-3.2%</td><td>HIT - waits for Feb (room $2,298)</td></tr>
+<tr><td><b>KLAC</b></td><td>$163</td><td>$101</td><td><b>$100</b></td><td>$141.48<br><small>2026-11-19</small></td><td>+41.5%</td><td>Above line</td></tr>
+<tr><td><b>TER</b></td><td>$312</td><td>$172</td><td><b>$170</b></td><td>$227.43<br><small>2026-11-19</small></td><td>+33.8%</td><td>Above line</td></tr>
+<tr><td><b>MU</b></td><td>$1,093</td><td>$3,265</td><td><b>$1,090</b></td><td>$594.51<br><small>2026-11-20</small></td><td>-45.5%</td><td>HIT - waits for Feb (room $13,715)</td></tr>
+<tr><td><b>ANET</b></td><td>$171</td><td>$86</td><td><b>$85</b></td><td>$167.60<br><small>2026-11-20</small></td><td>+97.2%</td><td>Above line</td></tr>
+<tr><td><b>APH</b></td><td>$72</td><td>$55</td><td><b>$54</b></td><td>$75.61<br><small>2026-11-19</small></td><td>+40.0%</td><td>Above line</td></tr>
+<tr><td><b>LITE</b></td><td>$816</td><td>$402</td><td><b>$400</b></td><td>$460.55<br><small>2026-11-20</small></td><td>+15.1%</td><td>Above line</td></tr>
+<tr><td><b>ALAB</b></td><td>$272</td><td>$104</td><td><b>$100</b></td><td>$180.35<br><small>2026-11-20</small></td><td>+80.3%</td><td>Above line</td></tr>
+<tr><td><b>CRDO</b></td><td>$199</td><td>$135</td><td><b>$130</b></td><td>$117.76<br><small>2026-11-19</small></td><td>-9.4%</td><td>HIT - waits for Feb (room $547)</td></tr>
+<tr><td><b>FSLR</b></td><td>$192</td><td>$388</td><td><b>$190</b></td><td>$151.95<br><small>2026-11-19</small></td><td>-20.0%</td><td>HIT - no budget room</td></tr>
+<tr><td><b>CGNX</b></td><td>$56</td><td>$33</td><td><b>$33</b></td><td>$47.66<br><small>2026-11-19</small></td><td>+44.4%</td><td>Above line</td></tr>
+<tr><td><b>RKLB</b></td><td>$72</td><td>—</td><td><b>—</b></td><td>$50.99<br><small>2026-11-19</small></td><td>—</td><td>No line (no forward earnings)</td></tr>
+<tr><td><b>PLTR</b></td><td>$145</td><td>$35</td><td><b>$35</b></td><td>$153.68<br><small>2026-11-19</small></td><td>+339.1%</td><td>Above line</td></tr>
+<tr><td><b>AVAV</b></td><td>$149</td><td>$62</td><td><b>$61</b></td><td>$95.91<br><small>2026-11-19</small></td><td>+57.2%</td><td>Above line</td></tr>
+<tr><td><b>ISRG</b></td><td>$335</td><td>$222</td><td><b>$220</b></td><td>$407.24<br><small>2026-11-19</small></td><td>+85.1%</td><td>Above line</td></tr>
+<tr><td><b>V</b></td><td>$299</td><td>$269</td><td><b>$265</b></td><td>$402.25<br><small>2026-11-19</small></td><td>+51.8%</td><td>Above line</td></tr>
+<tr><td><b>PANW</b></td><td>$280</td><td>$77</td><td><b>$77</b></td><td>$361.73<br><small>2026-11-19</small></td><td>+369.8%</td><td>Above line</td></tr>
+<tr><td><b>GEV</b></td><td>$857</td><td>$388</td><td><b>$385</b></td><td>$699.56<br><small>2026-11-20</small></td><td>+81.7%</td><td>Above line</td></tr>
+<tr><td><b>ETN</b></td><td>$340</td><td>$280</td><td><b>$275</b></td><td>$330.57<br><small>2026-11-19</small></td><td>+20.2%</td><td>Above line</td></tr>
+<tr><td><b>VRT</b></td><td>$233</td><td>$146</td><td><b>$145</b></td><td>$166.31<br><small>2026-11-20</small></td><td>+14.7%</td><td>Above line</td></tr>
+<tr><td><b>CEG</b></td><td>$237</td><td>$233</td><td><b>$230</b></td><td>$252.03<br><small>2026-11-19</small></td><td>+9.6%</td><td>Above line</td></tr>
+<tr><td><b>VST</b></td><td>$146</td><td>$175</td><td><b>$145</b></td><td>$124.15<br><small>2026-11-19</small></td><td>-14.4%</td><td>HIT - no budget room</td></tr>
+<tr><td><b>AAPL</b></td><td>$233</td><td>$169</td><td><b>$165</b></td><td>$342.56<br><small>2026-11-20</small></td><td>+107.6%</td><td>Above line</td></tr>
+<tr><td><b>CAT</b></td><td>$662</td><td>$534</td><td><b>$530</b></td><td>$510.45<br><small>2026-11-20</small></td><td>-3.7%</td><td>HIT - waits for Feb (room $301)</td></tr>
+</table></div>
+
+<h3>6. Known limits</h3>
+<p>1. <b>Fast growers get very low lines</b> (PLTR $35, PANW $77, ISRG $220) because (b) ignores growth. Intended while the 10-year is near 5%. <b>What would change it:</b> if the 10-year stays below 4.5% for a month, use earnings two years ahead for names growing faster than 30%.<br>
+2. <b>Peak-earnings cyclicals</b> (MU, SNDK, STX) get very high (b) values, so (a) sets their line; Micron's money still follows its volume test (5 Nov).<br>
+3. <b>(a) depends on analysts' targets</b>, which lag bad news - NVDA's fair value predates the SEC report of 20 Nov. Stale targets are flagged by the earnings job.<br>
+4. <b>Lines move every Monday.</b> A 0.25-point rise in the 10-year lowers every (b) value by about 4%.</p>
+</div>
