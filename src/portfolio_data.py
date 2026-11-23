@@ -3,7 +3,10 @@ Edit values here, then run gen_dashboard.py to regenerate the dashboard.
 Do NOT change ticker/name/ex/g or POS (positions) during fundamentals refreshes.
 """
 
-ASOF = ('Nov 23, 2026 12:35 Bangkok - POEMS TRUE-UP, FRI 20 NOV CLOSES: all 36 holdings + SGOV reconciled to the POEMS '
+ASOF = ('Nov 23, 2026 22:02 Bangkok - AVGO FILL BOOKED: 15 sh at 308.005 = 4,629.97 (POEMS 6327855, 22:01 Bangkok; limit 310 '
+ "placed above the 307.45 cap - exception on Salee's decision). AVGO 103.5 sh, cost 34,755.15; cash 1,267.41; AVGO "
+ 'line budget used. NVDA 10 Dec row: Huang reinstated as CEO (23 Nov). Prices still at the 20 Nov close. || PREVIOUS '
+ 'ENTRY: Nov 23, 2026 12:35 Bangkok - POEMS TRUE-UP, FRI 20 NOV CLOSES: all 36 holdings + SGOV reconciled to the POEMS '
  'positions screen (23 Nov 13:28) - quantity and cost tie to the cent (813,286.62), MV 719,025.51 ties; stocks '
  '664,277.35 vs cost 758,481.32 (-94,203.97, -12.42%). 20 holdings moved from 19 Nov to 20 Nov closes (largest: CRDO '
  '-15.2%, MRVL -11.7%, RKLB -10.9%, AMAT -10.7%, KLAC -10.3%, LRCX -10.0%, TER -10.0%); 6 derived prices corrected. '
@@ -2566,7 +2569,7 @@ POS = {'AAPL': {'budget': 11437.61, 'cost': 11437.61, 'shares': 46},
  'ARM': {'budget': None, 'cost': None, 'shares': None},
  'ASML': {'budget': 41000, 'cost': 22867.8, 'shares': 17},
  'AVAV': {'budget': 3758.3, 'cost': 3758.3, 'shares': 18},
- 'AVGO': {'budget': 50000, 'cost': 30125.18, 'shares': 88.5},
+ 'AVGO': {'budget': 50000, 'cost': 34755.15, 'shares': 103.5},
  'BE': {'budget': None, 'cost': None, 'shares': None},
  'BWXT': {'budget': None, 'cost': None, 'shares': None},
  'CAT': {'budget': 15000, 'cost': 14699.18, 'shares': 22},
@@ -5039,16 +5042,30 @@ TRADES = [{'action': 'BUY',
           'from cash; SGOV untouched.',
   'price': 358.94,
   'shares': 26,
-  't': 'TSM'}]
+  't': 'TSM'},
+ {'action': 'BUY',
+  'amount': 4629.97,
+  'date': 'Nov 23, 2026',
+  'est': True,
+  'note': 'AVGO $320 LINE BUY (line fired on the 20 Nov close of 304.41) - POEMS order 6327855, NASD, Day LIMIT, Done '
+          '23:01 SGT (22:01 Bangkok), 15 sh at 308.005. Gross 4,620.08 + commission est. 9.89 (0.214%) = 4,629.97. '
+          'EXCEPTION to the order rule: Salee placed the limit at 310, above the +1% cap of 307.45; the fill (308.005) '
+          "was 0.56 above the cap (about $8 on 15 sh) - recorded on Salee's decision. Position 103.5 sh, cost "
+          '34,755.15 of 50,000. Paid from cash; SGOV untouched. True up the commission from the POEMS contract note.',
+  'price': 308.005,
+  'shares': 15,
+  't': 'AVGO'}]
 
 SELLPLAN = []
 
-CASH = {'amount': 5897.38,
- 'asof': 'Nov 23, 2026 13:34 SGT - POEMS Live Cash Balance USD 5,897.38, no intraday transactions. Board had 5,889.84: '
-         'POEMS is +7.54 higher with no trades since 17 Nov - a second small credit (most likely a dividend) to '
-         'itemise with the +9.78 of 18 Nov from the Transactions History. || PREVIOUS: Nov 18, 2026 14:37 SGT - POEMS '
-         'Live Cash Balance USD 5,889.84, with the 17 Nov TSM buy (-9,352.41) already applied. Board had 5,880.06: '
-         'POEMS is +9.78 higher - a small credit (most likely a dividend) to itemise from the Transactions History. || '
+CASH = {'amount': 1267.41,
+ 'asof': 'Nov 23, 2026 22:05 Bangkok - after the AVGO buy 15 sh at 308.005 = 4,629.97 (est. commission): 5,897.38 - '
+         '4,629.97 = 1,267.41. To be read against the POEMS Live Cash Balance (settles T+1). || PREVIOUS: Nov 23, 2026 '
+         '13:34 SGT - POEMS Live Cash Balance USD 5,897.38, no intraday transactions. Board had 5,889.84: POEMS is '
+         '+7.54 higher with no trades since 17 Nov - a second small credit (most likely a dividend) to itemise with '
+         'the +9.78 of 18 Nov from the Transactions History. || PREVIOUS: Nov 18, 2026 14:37 SGT - POEMS Live Cash '
+         'Balance USD 5,889.84, with the 17 Nov TSM buy (-9,352.41) already applied. Board had 5,880.06: POEMS is '
+         '+9.78 higher - a small credit (most likely a dividend) to itemise from the Transactions History. || '
          'PREVIOUS: Nov 17, 2026 23:10 Bangkok - after the TSM buy 26 sh at 358.94 = 9,352.41 (est. commission): '
          '15,232.47 - 9,352.41 = 5,880.06. To be read against the POEMS Live Cash Balance. || PREVIOUS: Nov 17, 2026 '
          '09:42 SGT - POEMS Live Cash Balance USD 15,232.47; the EUR line is gone - EUR 10,293.18 converted to USD '
@@ -5210,8 +5227,8 @@ TOTALS = {'dividendsNote': '23 Nov 2026: a further +7.54 unidentified credit in 
  'dividendsUSD': 1451.36,
  'fx': 33.94,
  'inceptionDate': 'Jul 15, 2025',
- 'investedEverTHB': 27659481,
- 'investedEverUSD': 863490.38,
+ 'investedEverTHB': 27816622,
+ 'investedEverUSD': 868120.35,
  'realizedTHB': 210779,
  'realizedUSD': 6263.88,
  'reconNote': '23 Nov 2026 POEMS reconciliation (positions 13:28 SGT, Fri 20 Nov closes): 36 stock lines + SGOV match '
@@ -6008,9 +6025,9 @@ MONTHLY = [{'buyLots': 4,
   'sellLots': 3,
   'sellUSD': 20838.16,
   'ym': '2026-10'},
- {'buyLots': 6,
-  'buyUSD': 41244.51,
-  'byGroup': [{'buy': 21004.78, 'g': 1, 'real': 368.51, 'sell': 11289.55},
+ {'buyLots': 7,
+  'buyUSD': 45874.48,
+  'byGroup': [{'buy': 25634.75, 'g': 1, 'real': 368.51, 'sell': 11289.55},
               {'buy': 2115.56, 'g': 8, 'real': 0.0, 'sell': 0.0},
               {'buy': 8771.76, 'g': 6, 'real': 0.0, 'sell': 0.0},
               {'buy': 9352.41, 'g': 2, 'real': 0.0, 'sell': 0.0}],
@@ -6018,7 +6035,8 @@ MONTHLY = [{'buyLots': 4,
               {'buy': 2115.56, 'real': 0.0, 'sell': 0.0, 't': 'V'},
               {'buy': 3405.57, 'real': 0.0, 'sell': 0.0, 't': 'VST'},
               {'buy': 5366.19, 'real': 0.0, 'sell': 0.0, 't': 'CAT'},
-              {'buy': 9352.41, 'real': 0.0, 'sell': 0.0, 't': 'TSM'}],
+              {'buy': 9352.41, 'real': 0.0, 'sell': 0.0, 't': 'TSM'},
+              {'buy': 4629.97, 'real': 0.0, 'sell': 0.0, 't': 'AVGO'}],
   'realizedTHB': 12400,
   'realizedUSD': 368.51,
   'sellLots': 1,
@@ -6035,7 +6053,7 @@ THBFX = {'AAPL': 32.4331,
  'APP': 33.44,
  'ASML': 32.372,
  'AVAV': 32.3497,
- 'AVGO': 31.6503,
+ 'AVGO': 31.9553,
  'BWXT': 32.42,
  'CDNS': 32.32,
  'CEG': 33.0112,
@@ -8861,14 +8879,17 @@ SCHEDULE = {'horizon': 'after the next 30 days, and standing rules',
             't': 'ASML',
             'w': '10,000 of room held back deliberately'},
            {'a': 'LIMIT',
-            'amt': 4874.82,
-            'c': 'standing',
-            'cond': 'LINE RESET 2026-11-23: $310 -> $320 (10-year 4.92% on 2026-11-20; P/E 18.45x). || LINE HIT AGAIN '
-                    '20 Nov: close 304.41 (-12.19%; financialcontent.com daily row, % confirmed by two market recaps). '
-                    'Order planned for Mon 23 Nov - see the dated row. Earlier hit 5 Nov (close 291.53): the order for '
-                    '9 Nov did not fill - no AVGO trade is booked after 4 Sep. || LINE HIT 5 Nov (close 291.53, -6.0% '
-                    'below the line). Order Mon 9 Nov after the SGOV sale: BUY 16 sh Day LIMIT at the 6 Nov close, cap '
-                    '+1% (budget room 4,874.82). || -13% from the 4 Sep close of $357.90.',
+            'amt': 0,
+            'c': 'done',
+            'cond': 'LINE BUDGET USED 23 Nov: 15 sh at 308.005 = 4,629.97 (244.85 of the 4,874.82 left unspent). '
+                    'Further AVGO money is the 10 Dec results decision (row above). The line itself stays on the '
+                    'Overview matrix as information. || LINE RESET 2026-11-23: $310 -> $320 (10-year 4.92% on '
+                    '2026-11-20; P/E 18.45x). || LINE HIT AGAIN 20 Nov: close 304.41 (-12.19%; financialcontent.com '
+                    'daily row, % confirmed by two market recaps). Order planned for Mon 23 Nov - see the dated row. '
+                    'Earlier hit 5 Nov (close 291.53): the order for 9 Nov did not fill - no AVGO trade is booked '
+                    'after 4 Sep. || LINE HIT 5 Nov (close 291.53, -6.0% below the line). Order Mon 9 Nov after the '
+                    'SGOV sale: BUY 16 sh Day LIMIT at the 6 Nov close, cap +1% (budget room 4,874.82). || -13% from '
+                    'the 4 Sep close of $357.90.',
             'd': '',
             'dl': 'Standing',
             'k': 'limit',
@@ -9125,7 +9146,15 @@ SCHEDULE = {'horizon': 'after the next 30 days, and standing rules',
                     'accounting issues) and NVDA fell 14.01% to 125.53 on 20 Nov - keep holding 452 sh, no trim yet, '
                     'no buying. Sell half (226 sh) on the next session if Nvidia confirms a formal SEC investigation '
                     'into revenue or a restatement, the 10-Q for the quarter ended 25 Oct is not filed by 4 Dec, or '
-                    'the auditor raises a concern.',
+                    'the auditor raises a concern. || 23 Nov: BOARD REINSTATED HUANG AS CEO (unanimous, 8:55 a.m. ET, '
+                    '12 days after his resignation): board says it is satisfied after meetings with him and that '
+                    'senior US government officials told it his return poses no national security risk. New: an '
+                    'independent National Security and Export Control committee; a Chief Compliance Officer search. '
+                    "Jones stays chair; Kress back to CFO. The board's own investigation continues; nothing new on the "
+                    'SEC review, the California subpoena, the Justice/Commerce probes or the 1-2 Dec House interviews. '
+                    'NVDA about +27% before the open (159.48 at 9:00 ET). Claude: keep holding 452 sh, no buying; '
+                    'sell-half triggers unchanged. New question for 10 Dec: the board reversed itself in 12 days under '
+                    'public pressure while its investigation is open.',
             'd': '2026-12-10',
             'dl': 'NVDA governance after the CEO change - resume the $180 line?',
             'k': 'review',
@@ -9525,9 +9554,9 @@ SCHEDULE = {'horizon': 'after the next 30 days, and standing rules',
             'w': "2027 START PRICES - first US trading day of 2027 (Mon 4 Jan). The price job books each stock's "
                  'official opening price on the morning of 5 Jan Bangkok; the 2027 % change then runs against it.'},
            {'a': 'BUY',
-            'amt': 4874.82,
+            'amt': 4629.97,
             'bkk': 'Mon 23 Nov evening, after 22:00 Bangkok',
-            'c': 'planned',
+            'c': 'done',
             'cap': 307.45,
             'cond': '22 Nov: under the one method the AVGO line is now $320 (was $310); the 20 Nov close of 304.41 is '
                     'below both, so this order stands unchanged. || FIVE CHECKS: money - paid from cash 5,889.84 (no '
@@ -9546,7 +9575,8 @@ SCHEDULE = {'horizon': 'after the next 30 days, and standing rules',
             't': 'AVGO',
             'tac': 'BUY 15 sh on NASD, Day LIMIT 304.41 (20 Nov close); may be raised ONCE to 307.45. Not in the first '
                    '30 minutes; no chasing. Check Market = NASD, currency USD.',
-            'w': 'AVGO price line fired on the 20 Nov close (304.41). Buy 15 sh with the $4,874.82 line budget.'},
+            'w': 'FILLED 23 Nov: 15 sh at 308.005 = 4,629.97 (POEMS 6327855, Done 22:01 Bangkok). Limit placed at 310 '
+                 '(above the 307.45 cap - exception, Salee). Position 103.5 sh, cost 34,755.15 of 50,000.'},
            {'a': 'WATCH',
             'amt': 0,
             'c': 'planned',
