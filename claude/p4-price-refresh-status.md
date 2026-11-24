@@ -1,41 +1,36 @@
-# P4 price refresh status
+# P4 Price Refresh — Status
 
-- **Run time (UTC):** 2026-11-24 00:33–02:00 (00:30 UTC pass)
-- **Trading date recorded:** 2026-11-23 (Mon) — the Huang-reinstatement rally session
-- **Result:** PUSHED
-- **Commit:** b5790a91abe27af9d2fb6a03c94212b66b98dfa6 (remote main confirmed via ls-remote)
-- **Prices changed:** 29 of 63 (27 of 36 held positions, ~91% of stock MV now at the 23 Nov close)
-- **Largest move:** NVDA +31.48% to 165.05 (Jensen Huang reinstated as CEO; +$954B market cap day). Sector sweep: ALAB +23.2%, CRDO +22.6%, MU +19.0%, MRVL +18.4%, LITE +18.2%, KLAC +15.0%, TSM +14.1%, VRT +12.1%, APH +11.0%. Indexes: S&P 500 7,237.17 +4.73%, Nasdaq 24,089.56 +6.51%, QQQ 651.03 +7.00%, VIX 26.62 -25.8%.
-- **Sanity gate:** PASS (exit 0) with --allow on the 22 names that moved >6%; every one verified as described below. No internal-impossibility rows used; no thresholds raised.
+**Run:** 2026-11-24 03:40 UTC (03:30 UTC Tue–Sat job)
+**Trading date recorded:** 2026-11-23 (Mon)
+**Result:** PUSHED
+**Commit:** e420207 (70be41f..e420207, main)
+**Prices changed:** 23 watch-list tickers + SPY benchmark + risk_series spy row
+**Sanity gate:** PASS (exit 0), with --allow ARM STX COHR HOOD BE TSEM
+**Live render:** build passed gen_dashboard + sanity gate; local Playwright check_dashboard.js = ZERO PAGE ERRORS, 921 rows. Live github.io page not fetchable from sandbox (network-firewalled) — serves the byte-identical pushed index.html.
 
-## Source situation tonight (00:33–02:00 UTC)
-stockanalysis.com (primary) served a stale Fri 20 Nov snapshot SITE-WIDE (crawl stamp Nov 21) — quote AND history pages, for every ticker sampled, including ?-param variants. Google Finance caches ran Sep 18–Oct 26. statmuse/financialcontent/fool quote pages also pre-close or garbled. Same failure mode as the 27–28 Oct incident recorded in ASOF. Usable post-close sources found this run:
-1. fool.com same-day articles, quote widgets stamped "As of 4:00 PM ET 11/23/26" — proven exact vs independent sources on NVDA/AMD/MU (writes: NVDA 165.05, AMD 453.46, MU 707.70, ASML 1383.78, MRVL 144.74, TSM trajectory; fool post-close ticker bar at 4:40–5:16 PM EST = closing values, cross-proven on NVDA+AMZN: AAPL 349.08, META 597.60, MSFT 492.50, SPCX 133.35)
-2. financefeeds.com post-close wrap ("Updated 23 Nov, after the 4:00 pm ET close") — close table corroborated all of the above and supplied TSM 363.60, ORCL 113.68
-3. StockTitan /overview and /company pages with explicit "closed at $X on November 23, 2026" + consistent same-evening after-hours quotes (the same source the 20 Nov run used): ANET 178.31, GEV 756.71, ISRG 416.23, VRT 186.35, CAT 547.04, CRDO 122.46, ETN 336.34, APH 77.41, KLAC 145.85, FSLR 146.53, RKLB 49.63, LITE 544.38, ALAB 222.12, VST 123.87
-4. foxbusiness/massive.com at-close captures: AMZN 255.39, GOOGL 282.10, CEG 251.72
-5. marketscreener fresh mirrors (NVDA 165.05, confirmed) — most regional mirrors stale
+## What happened
+All 36 held positions were already at the 23 Nov close (POEMS true-up, prior commit 70be41f). This run cleared the remaining stale **watch-list** names (not held → no MV/HISTORY impact). The existing 2026-11-23 HISTORY row was left unchanged (no held price moved); no duplicate row added.
 
-## Quote page vs other sources — disagreements and which was taken
-- **MSFT:** marketscreener ae mirror showed 495.43 as the 23 Nov row — rejected as a ~3:51–4:08 PM print (MSFT faded into the close; its own header showed +1.86%≠table). Took 492.50 (fool post-close bar ×3 pages + financefeeds); ycharts showed 492.61 ("Nov 23 16:00") — 11c above the booked value, unresolved to the cent but immaterial (0.02%).
-- **NVDA:** 247 Wall St's 4:10 PM movers strip said 164.50 — rejected (strip proven ~0.3% off); official 165.05 from fool widget + marketscreener + financefeeds.
-- **VST:** three captures within 5c (fox 3:59 PM 123.82, massive series 123.85, StockTitan "closed at 123.87"); took StockTitan's dated close print.
-- **CRWD (watch):** financefeeds 208.97 vs 247wallst 207.68 — CONFLICT, left unresolved at the stale 19 Nov 243.46.
+## 23 resolved (prior → 23 Nov close)
+ARM 152.20→176.67 · SNPS 430.91→426.99 · MPWR 1295.86→1333.88 · STX 457.01→520.10 · GLW 105.97→108.31 · COHR 187.21→215.81 · FN 311.71→329.40 · LHX 256.54→254.82 · KTOS 29.65→28.50 · DDOG 166.46→169.02 · HOOD 62.20→67.37 · FTNT 131.46→131.10 · NET 303.68→291.13 · BWXT 117.06→115.83 · PWR 587.43→609.00 · BE 142.39→168.15 · NFLX 58.46→58.10 · APP 379.02→373.92 · SE 65.94→65.53 · GE 318.88→321.26 · STRL 273.25→278.77 · TSEM 127.77→136.81 · CIEN 262.63→264.60
+(mcapB, pe, ps, fpe, peg, M3 pfcf rescaled with price for each.)
 
-## >6% verification notes (per the gate rule)
-Multi-source exact: NVDA, GOOGL, META, TSM, AMD, MU, MRVL(fool widget; move corroborated by connectivity-peer prints), ASML(fool widget + gurufocus 9:55am 1387.63 same level), LITE(fool wrap +18.20% + StockTitan print 544.38), ALAB(StockTitan 222.12 + 247wallst 222.20 + marketbeat +23.2%), CEG(massive at-close + tipranks intraday +5.8%), VST(three captures), GEV(StockTitan + tipranks intraday +9.1%).
-StockTitan dated close + sector-tape corroboration only (flagging honestly): ANET +6.4%, CAT +7.2%, CRDO +22.6%, ETN +8.0%, APH +11.0%, KLAC +15.0%, FSLR +6.5%, RKLB +9.3%. Each page carried a consistent same-evening after-hours quote vs its stated close; magnitudes consistent with SOXX +13.63% / sector wraps. Salee's morning POEMS reconciliation remains the authoritative true-up.
+## Six >6% moves — verified vs 2nd source, --allow'd
+- ARM +16.1%: Fox dated 4PM 176.67 (prev 152.20 chains) + ycharts 176.84 (+16.19%)
+- STX +13.8%: Fool dated 520.10 (11-23) + ycharts 519.28 (+13.63%)
+- COHR +15.3%: StockTitan 215.81 (11-23) + ycharts 215.82 (+15.28%)
+- HOOD +8.3%: StockTitan 67.37 + Fool 67.37 (both dated 11-23)
+- BE +18.1%: StockTitan 168.15 + Fox 168.11 (+18.05%)
+- TSEM +7.1%: Fox dated 4PM 136.81 + Fool 136.81 (both 11-23)
 
-## Unresolved (left at prior close, pxd untouched)
-- Held: AMAT, LRCX, PANW, V, PLTR, CDNS, TER, CGNX, AVAV (~$59k MV, 9% of stock MV) — no post-close print found from a permitted dated source.
-- Watch: ARM (+16.1% per financefeeds but no level), APP, HOOD, NFLX, SE, GE, STRL, TSEM, CIEN, SNDK, STX, SNPS, MPWR, GLW, COHR, FN, DDOG, NET, FTNT, BWXT, PWR, KTOS, LHX, BE (fool wrap +18.09%, no print), CRWD (conflict).
-- **SPY 23 Nov close NOT found** — BENCH spyLast/spyHighD stay at 20 Nov (689.81); risk_series spy 2026-11-23 skipped. QQQ WAS booked (651.03). risk_series spy 2026-11-20 = 689.81 back-filled (was missing; value from massive.com SPY page prev-close this session, ties BENCH).
-- **ust10 2026-11-23** not yet published on mortgagenewsdaily (page still showed the 20 Nov close 4.940) — skipped, gaps OK.
+## Quote vs history / source disagreements
+- stockanalysis.com (primary) was serving a STALE 20 Nov snapshot site-wide all run; its /history/ tables ended weeks back (FN Oct 26, STRL Nov 6). Fell back to Fox Business dated-4PM quote pages (prev-close chain-validated), StockTitan dated closes, and Motley Fool dated last-close lines; ycharts used only as 2nd-source confirmation (runs a few cents light, never quoted as the close).
+- **FN & STRL cross-contaminated** across Fox/Fool (their day-change *bases* were swapped). Untangled by each page's day-change base price: the name trading ~285 on 20 Nov (=FN) went +44.5 → **FN 329.40**; the name at 247.92 on 20 Nov (=STRL) went +30.85 → **STRL 278.77**. FN additionally chain-validated on Fox (prev close 284.99 = FN's own 20 Nov).
 
-## Also done
-- HISTORY row appended for 2026-11-23: n=36, mv=731,037.68, cost=763,111.29 (incl. yesterday's AVGO fill), unreal -32,073.61 (-4.20%), cash 1,267.41. NOTE: mv still carries 9 held names at 20 Nov marks — true mv is somewhat higher; the morning POEMS true-up should correct it.
-- pe/ps/fpe/peg/M3-pfcf rescaled for the 29 names per the 26 Oct rule. hi52 extended where applicable.
-- Live-page verification: sakulratpradit.github.io is refused by the sandbox proxy (known since the 20 Nov run) — remote main == pushed commit verified via ls-remote instead.
+## UNRESOLVED (left at prior close)
+- **CRWD** — left at 243.46 (11-19). No clean dated 23 Nov 4:00PM close: ycharts 204.60 was 14:54 *intraday*, Fool price undated, Google Finance cache stale (Oct). Prior overnight run also flagged CRWD source-conflicted. A stale price is recoverable; a wrong one is not.
+- **SNDK** — left at 633.96. 8-for-1 split completed ~20 Nov (post-split 23 Nov close ≈ 87.71 per StockTitan). Booking a price-only split against the stored pre-split eps 15.70 would ship a wrong P/E to the board. **Per the standing split warning, eps, hi52/lo52, ath, jan2 and the post-split price must be adjusted together in one commit by the interactive/earnings job.** Flagged for that session.
 
-## For the 03:30 UTC pass
-9 held + 25 watch names still need the 23 Nov close; stockanalysis snapshots may have refreshed by then (first check: 29 tickers already have pxd 2026-11-23 — threshold of 80 NOT met, so the pass will run). SPY and ust10 also still needed. StockTitan /company/<T> and /overview/<T> variants were the most productive fallback tonight.
+## Benchmarks / series
+- SPY 23 Nov **722.29** (+4.71% vs 689.81) — stockanalysis ETF quote (prev close 689.81 chains), finimize and Fox all agree. spyHigh unchanged (722.29 < 779.09). QQQ already at 23 Nov (651.03).
+- risk_series: spy[2026-11-23]=722.29 added. **ust10 23 Nov skipped** — ycharts published only through 19 Nov (5.04%); news wraps said "~4.95%" but gave no precise dated close. Per README, gap tolerated.
