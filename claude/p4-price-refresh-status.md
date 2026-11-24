@@ -2,7 +2,8 @@
 
 - **Run time (UTC):** 2026-11-24 00:33–02:00 (00:30 UTC pass)
 - **Trading date recorded:** 2026-11-23 (Mon) — the Huang-reinstatement rally session
-- **Result:** PUSHED (pending — see commit line below, updated after push)
+- **Result:** PUSHED
+- **Commit:** b5790a91abe27af9d2fb6a03c94212b66b98dfa6 (remote main confirmed via ls-remote)
 - **Prices changed:** 29 of 63 (27 of 36 held positions, ~91% of stock MV now at the 23 Nov close)
 - **Largest move:** NVDA +31.48% to 165.05 (Jensen Huang reinstated as CEO; +$954B market cap day). Sector sweep: ALAB +23.2%, CRDO +22.6%, MU +19.0%, MRVL +18.4%, LITE +18.2%, KLAC +15.0%, TSM +14.1%, VRT +12.1%, APH +11.0%. Indexes: S&P 500 7,237.17 +4.73%, Nasdaq 24,089.56 +6.51%, QQQ 651.03 +7.00%, VIX 26.62 -25.8%.
 - **Sanity gate:** PASS (exit 0) with --allow on the 22 names that moved >6%; every one verified as described below. No internal-impossibility rows used; no thresholds raised.
