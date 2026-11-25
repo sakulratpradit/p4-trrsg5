@@ -1,36 +1,34 @@
-# P4 Price Refresh — Status
+# P4 price refresh status
 
-**Run:** 2026-11-24 03:40 UTC (03:30 UTC Tue–Sat job)
-**Trading date recorded:** 2026-11-23 (Mon)
-**Result:** PUSHED
-**Commit:** e420207 (70be41f..e420207, main)
-**Prices changed:** 23 watch-list tickers + SPY benchmark + risk_series spy row
-**Sanity gate:** PASS (exit 0), with --allow ARM STX COHR HOOD BE TSEM
-**Live render:** build passed gen_dashboard + sanity gate; local Playwright check_dashboard.js = ZERO PAGE ERRORS, 921 rows. Live github.io page not fetchable from sandbox (network-firewalled) — serves the byte-identical pushed index.html.
+- **Run time:** 2026-11-25 00:33–03:05 UTC (00:30 UTC job)
+- **Trading date recorded:** 2026-11-24 (Tue) — plus CRWD un-staled to its 2026-11-23 close
+- **Status:** PUSHED
+- **Commit:** 49b3efc (on top of 96f97df; fast-forward push, no force, no rejection)
+- **Prices changed:** 21 of 63 (20 at the 24 Nov close + CRWD at its verified 23 Nov close). Sanity gate PASS (exit 0) with `--allow AMD ARM MU TSEM KLAC CRWD`. Playwright check on the built page: ZERO PAGE ERRORS, 921 rows.
 
-## What happened
-All 36 held positions were already at the 23 Nov close (POEMS true-up, prior commit 70be41f). This run cleared the remaining stale **watch-list** names (not held → no MV/HISTORY impact). The existing 2026-11-23 HISTORY row was left unchanged (no held price moved); no duplicate row added.
+## Sources (stockanalysis.com was unusable)
+- stockanalysis.com quote pages served a stale **Nov 20** snapshot; /history/ tables ended **Nov 23** — no Nov 24 row all session. Google Finance caches were weeks old (Sep 21 / Oct 26). marketscreener Nov 12. ycharts a day behind. fool.com quote pages were intraday snapshots (AVGO shown 304.28 vs true close 301.08) — rejected.
+- Closes came from per-ticker **dated 4:00 PM sources**, each chain-validated (its stated previous close vs the board's verified 23 Nov close): Fox Business dated-4PM pages, financialcontent.com (V explicitly flagged "Official Closing Price"), Schwab wallst 3:59–4:00 PM snapshots, the StockTitan Nov-24 live-close article, chroniclejournal 4 PM print. Caches on all of these are per-URL lotteries of mixed ages; only dated post-close copies were accepted.
 
-## 23 resolved (prior → 23 Nov close)
-ARM 152.20→176.67 · SNPS 430.91→426.99 · MPWR 1295.86→1333.88 · STX 457.01→520.10 · GLW 105.97→108.31 · COHR 187.21→215.81 · FN 311.71→329.40 · LHX 256.54→254.82 · KTOS 29.65→28.50 · DDOG 166.46→169.02 · HOOD 62.20→67.37 · FTNT 131.46→131.10 · NET 303.68→291.13 · BWXT 117.06→115.83 · PWR 587.43→609.00 · BE 142.39→168.15 · NFLX 58.46→58.10 · APP 379.02→373.92 · SE 65.94→65.53 · GE 318.88→321.26 · STRL 273.25→278.77 · TSEM 127.77→136.81 · CIEN 262.63→264.60
-(mcapB, pe, ps, fpe, peg, M3 pfcf rescaled with price for each.)
+## Changed (close, day move)
+GOOGL 279.05 −1.08% · MSFT 496.13 +0.74% · AMZN 252.29 −1.21% · META 589.82 −1.30% · NVDA 155.38 −5.86% (Fox + StockTitan) · AVGO 301.08 −3.98% · AMD 413.27 −8.86% (financialcontent 4PM + StockTitan % match) · ARM 161.56 −8.55% (Fox + thepilotnews 4PM) · MU 629.79 −11.01% (StockTitan + Schwab; **Fox printed 630.07 — discarded**, 2-vs-1) · TSEM 123.47 −9.75% (Fox + Schwab) · KLAC 133.65 −8.36% (chroniclejournal 4PM close; 2nd source was Fox **intraday** corroboration of the move, not a second close print) · GLW 101.88 −5.94% · PLTR 161.18 · PANW 352.99 · LHX 258.03 · SE 65.00 · APP 381.11 · V 416.78 · AAPL 354.07 · GE 318.04 · **CRWD 208.97, pxd 2026-11-23** (−14.17% post-earnings; fox 208.96 vs financialcontent/Schwab 208.97, took the 2-source value; its Nov-24 close looked ≈210.9 on Schwab 3:59 PM but no second close print — left for the next run).
 
-## Six >6% moves — verified vs 2nd source, --allow'd
-- ARM +16.1%: Fox dated 4PM 176.67 (prev 152.20 chains) + ycharts 176.84 (+16.19%)
-- STX +13.8%: Fool dated 520.10 (11-23) + ycharts 519.28 (+13.63%)
-- COHR +15.3%: StockTitan 215.81 (11-23) + ycharts 215.82 (+15.28%)
-- HOOD +8.3%: StockTitan 67.37 + Fool 67.37 (both dated 11-23)
-- BE +18.1%: StockTitan 168.15 + Fox 168.11 (+18.05%)
-- TSEM +7.1%: Fox dated 4PM 136.81 + Fool 136.81 (both 11-23)
+## Source disagreements
+- MU: Fox 630.07 vs StockTitan/Schwab 629.79 → took 629.79.
+- CRWD 23 Nov: fox 208.96 vs financialcontent + Schwab prev-close 208.97 → took 208.97.
+- Small prev-close mismatches vs the board (noted, closes still chain-consistent): GLW prev shown 108.28 vs board 108.31; LHX 254.87 vs 254.82; GE 321.27 vs 321.26; NET 291.01 vs 291.13 (NET not updated).
+- GE's Fox page labeling was ambiguous (close vs prev swapped); resolved by arithmetic + the board's prev close; only −1.0%.
 
-## Quote vs history / source disagreements
-- stockanalysis.com (primary) was serving a STALE 20 Nov snapshot site-wide all run; its /history/ tables ended weeks back (FN Oct 26, STRL Nov 6). Fell back to Fox Business dated-4PM quote pages (prev-close chain-validated), StockTitan dated closes, and Motley Fool dated last-close lines; ycharts used only as 2nd-source confirmation (runs a few cents light, never quoted as the close).
-- **FN & STRL cross-contaminated** across Fox/Fool (their day-change *bases* were swapped). Untangled by each page's day-change base price: the name trading ~285 on 20 Nov (=FN) went +44.5 → **FN 329.40**; the name at 247.92 on 20 Nov (=STRL) went +30.85 → **STRL 278.77**. FN additionally chain-validated on Fox (prev close 284.99 = FN's own 20 Nov).
-
-## UNRESOLVED (left at prior close)
-- **CRWD** — left at 243.46 (11-19). No clean dated 23 Nov 4:00PM close: ycharts 204.60 was 14:54 *intraday*, Fool price undated, Google Finance cache stale (Oct). Prior overnight run also flagged CRWD source-conflicted. A stale price is recoverable; a wrong one is not.
-- **SNDK** — left at 633.96. 8-for-1 split completed ~20 Nov (post-split 23 Nov close ≈ 87.71 per StockTitan). Booking a price-only split against the stored pre-split eps 15.70 would ship a wrong P/E to the board. **Per the standing split warning, eps, hi52/lo52, ath, jan2 and the post-split price must be adjusted together in one commit by the interactive/earnings job.** Flagged for that session.
+## Unresolved (left at prior closes) — 42
+- **BE**: Fox had a dated Nov-24 3:59 PM close **156.38 (−7.00%)** but no second source could confirm → reverted per the >6% rule. First candidate for the 03:30 run.
+- **SNDK**: 8-for-1 split still unbooked — price-only booking would corrupt P/E vs pre-split eps 15.70; needs the interactive/earnings job (standing warning).
+- No dated Nov-24 close reachable (caches stale or intraday-stamped): CDNS SNPS MPWR TSM ASML LRCX AMAT TER STX ANET APH LITE COHR ALAB CRDO FN FSLR CGNX SPCX RKLB KTOS AVAV DDOG ISRG ORCL HOOD FTNT NET BWXT GEV ETN VRT PWR CEG VST NFLX CAT STRL CIEN. Several had intraday Nov-24 candidates (CAT 539.50 @2:08PM, FTNT 134.21 @1:43PM, CRDO 106.87 @3:32PM, ALAB ~191.30 fool undated, SNPS ~415.03 fool undated, STRL 256.74 @10:07AM) — none accepted as closes.
 
 ## Benchmarks / series
-- SPY 23 Nov **722.29** (+4.71% vs 689.81) — stockanalysis ETF quote (prev close 689.81 chains), finimize and Fox all agree. spyHigh unchanged (722.29 < 779.09). QQQ already at 23 Nov (651.03).
-- risk_series: spy[2026-11-23]=722.29 added. **ust10 23 Nov skipped** — ycharts published only through 19 Nov (5.04%); news wraps said "~4.95%" but gave no precise dated close. Per README, gap tolerated.
+- QQQ 638.10 (24 Nov) booked, chain-valid vs 651.03. **SPY 24 Nov close not found in any dated source** (StockTitan gave only −0.51%, no price; all quote caches intraday or Nov 23) → spyLast stays 722.29 / 2026-11-23; spyHigh unchanged (779.09). SPY is well above the −15% crash-reserve trigger either way.
+- risk_series: spy 24 Nov **skipped** (no close); ust10 24 Nov **skipped** (not published); backfilled the gap **ust10[2026-11-23] = 4.91** from mortgagenewsdaily's page dated 11/23 (4.909; caveat: page headline figure, not the 10-day Close table).
+- HISTORY row 2026-11-24 appended: n 36, mv 722,509.17, cost 763,111.29, unreal −40,602.12 (−5.32%), real 6,263.88, net −34,338.24, cash 1,267.41. **15 held names inside mv are still at 23 Nov marks** — the row will true up as the 03:30 run fills the gaps.
+
+## Blockers verbatim
+- "URL_NOT_ON_ALLOWLIST" — the live page https://sakulratpradit.github.io/p4-trrsg5/ cannot be fetched from this sandbox (not in any search result), so live rendering was verified locally instead: `node check_dashboard.js` → "ZERO PAGE ERRORS".
+- First check at 00:33 UTC: 0 of 63 tickers had pxd 2026-11-24, so this run proceeded as the first attempt; 42 tickers remain for the 03:30 UTC run, whose first check will see 20/63 at Nov 24 and continue.
