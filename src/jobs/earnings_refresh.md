@@ -47,6 +47,8 @@ THEN, in order:
 
 IF THE PUSH IS REJECTED, someone else pushed first. That is the system working. NEVER use git push --force, git push -f, or git reset --hard FETCH_HEAD to win — that is exactly how commits ec7015f and 5fdc1dd were destroyed. Instead: git fetch origin main; git reset --hard origin/main (discards YOUR build, keeps THEIRS); re-run extract_data.py; re-apply your fundamentals edits to that fresh base; repeat steps 5-8. Retry at most 3 times, then stop and report.
 
+ONE-OFF DATA CHECK (added 28 Nov 2026, remove once done): GEV fcfB is 17.11 on revB 44.04 (FCF margin 38.9%), far above GE Vernova's history. FCF margin now scores in the Quality score (>=15% = 2 points). Verify GEV's trailing-12-month free cash flow (operating cash flow minus capex) from its latest 10-Q / cash-flow statement; correct fcfB if wrong (and r40 = revG + FCF margin), note any one-off customer deposits in the stock's note, and report it.
+
 Report which tickers you updated, any figure that surprised you versus consensus, any one-off item inflating a headline number, and anything the sanity gate blocked. Every figure must come from a real source — if you cannot find a number, leave the old value and say so. Do not estimate.
 
 FINAL STEP - ALWAYS: write the project doc `claude/p4-earnings-refresh-status.md` (overwrite) with run time, PUSHED/NOT PUSHED/NOTHING TO DO, tickers updated, and any blocker verbatim.

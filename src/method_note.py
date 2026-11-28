@@ -14,6 +14,15 @@ R40_ONEOFF = {
 }
 
 
+def fcf_pts(s):
+    """FCF margin (fcfB / revB) >= 15% = 2, > 0 = 1, else 0. Keep in step with fcfPts() in index.html (28 Nov 2026)."""
+    f, r = s.get('fcfB'), s.get('revB')
+    if f is None or not r:
+        return 0
+    m = f / r * 100
+    return 2 if m >= 15 else (1 if m > 0 else 0)
+
+
 def r40_used(s):
     """Lower of revenue growth + FCF margin (s['r40']) and revenue growth + net margin. Missing FCF version = 0."""
     f = s.get('r40')
@@ -28,7 +37,7 @@ THRESHOLDS = [
     ('Net profit margin', 'Profit after everything, as % of sales', '15% or more = 2 points · 5% to 15% = 1 point · under 5% = 0'),
     ('Gross margin', 'What is left after the direct cost of making the product', '50% or more = 1 point · under 50% = 0'),
     ('Return on equity', 'Profit earned on the shareholders’ money', '20% or more = 2 points · 10% to 20% = 1 point · under 10% = 0'),
-    ('Free cash flow', 'Real cash left after running and investing in the business', 'positive = 2 points · zero or negative = 0'),
+    ('Free-cash-flow margin', 'Real cash left after running and investing in the business, as % of sales (since 28 Nov 2026; before that: any positive free cash flow = 2)', '15% or more = 2 points · above 0% to 15% = 1 point · zero or negative = 0'),
     ('Rule of 40', 'Sales growth % plus margin %, worked out twice (free-cash-flow margin and net profit margin); the LOWER of the two counts (since 18 Oct 2026)', '40 or more = 2 points · 25 to 40 = 1 point · under 25 = 0'),
     ('Debt to equity', 'Borrowings compared with shareholders’ money', 'debt smaller than equity (below 1.0) = 1 point · otherwise 0'),
 ]
@@ -64,7 +73,7 @@ def build(P):
         pm = s.get('pm') or 0; gm = s.get('gm') or 0; roe = s.get('roe') or 0
         f = s.get('fcfB') or 0; r = r40_used(s); de = m.get('de')
         return ((2 if pm >= 15 else (1 if pm >= 5 else 0)) + (1 if gm >= 50 else 0)
-                + (2 if roe >= 20 else (1 if roe >= 10 else 0)) + (2 if f > 0 else 0)
+                + (2 if roe >= 20 else (1 if roe >= 10 else 0)) + fcf_pts(s)
                 + (2 if r >= 40 else (1 if r >= 25 else 0)) + (1 if (de is not None and de < 1) else 0))
 
     rows = []
@@ -90,6 +99,7 @@ def build(P):
     H.append('<p>Six yes/no checks on the company’s own numbers, taken straight from the board data. Add the points. A missing figure scores zero, so a thin data record drags a score down — I flag that when it affects a decision.</p>')
     H.append(_tbl(['Check', 'What it measures', 'Points'], [[e(a), e(b), e(c)] for a, b, c in THRESHOLDS]))
     H.append('<p><b>Rule of 40 change, 18 Oct 2026:</b> it is now worked out twice and the lower figure scores. The free-cash-flow version flatters software companies that pay staff in shares (the share pay is added back to cash flow) — CrowdStrike reads 52.5 on cash flow but 25.0 on net profit. The net-profit version flatters heavy builders whose depreciation lags their spending — Oracle reads −18.4 on cash flow but +48.0 on net profit. Taking the lower catches both. Effect on the day: CRWD, PANW, NET and DDOG each lost one point; no other name changed. <b>One-off exception:</b> where net profit is distorted by a flagged non-cash item, the cash-flow version is used — Lumentum, whose year to June 2026 carries a $7.76bn non-cash loss on exchanging its convertible notes for shares.</p>')
+    H.append('<p><b>Free-cash-flow margin change, 28 Nov 2026:</b> the cash check used to give 2 points to any company with positive free cash flow, so a business keeping $4 of every $100 of sales scored the same as one keeping $44. It now scores the margin: 15% or more = 2, positive but under 15% = 1, zero or negative = 0 (15% matches the net-margin bar). 17 of 63 board names lost one point; none gained. The top of the ranking barely moved. The worked examples below are kept as they were on 12 Oct.</p>')
     H.append('<p><b>How to read it:</b> 9–10 = a money machine (Nvidia, Broadcom, Micron, TSMC). 7–8 = good business with one soft spot. 5–6 = cyclical, capital-heavy or indebted. 4 or less = the numbers do not yet support the story.</p>')
 
     H.append('<h3>3. Worked examples (12 Oct 2026 closes)</h3>')
