@@ -36,7 +36,7 @@ def r40_used(s):
 THRESHOLDS = [
     ('Net profit margin', 'Profit after everything, as % of sales', '15% or more = 2 points · 5% to 15% = 1 point · under 5% = 0'),
     ('Gross margin', 'What is left after the direct cost of making the product', '50% or more = 1 point · under 50% = 0'),
-    ('Return on equity', 'Profit earned on the shareholders’ money', '20% or more = 2 points · 10% to 20% = 1 point · under 10% = 0'),
+    ('Return on invested capital (ROIC)', 'Profit earned on ALL the money in the business, shareholders’ plus borrowed (since 28 Nov 2026; replaced return on equity; ROE used only if ROIC is missing)', '20% or more = 2 points · 10% to 20% = 1 point · under 10% = 0'),
     ('Free-cash-flow margin', 'Real cash left after running and investing in the business, as % of sales (since 28 Nov 2026; before that: any positive free cash flow = 2)', '15% or more = 2 points · above 0% to 15% = 1 point · zero or negative = 0'),
     ('Rule of 40', 'Sales growth % plus margin %, worked out twice (free-cash-flow margin and net profit margin); the LOWER of the two counts (since 18 Oct 2026)', '40 or more = 2 points · 25 to 40 = 1 point · under 25 = 0'),
     ('Debt to equity', 'Borrowings compared with shareholders’ money', 'debt smaller than equity (below 1.0) = 1 point · otherwise 0'),
@@ -70,7 +70,7 @@ def build(P):
 
     def score(s):
         m = M3.get(s['t'], {})
-        pm = s.get('pm') or 0; gm = s.get('gm') or 0; roe = s.get('roe') or 0
+        pm = s.get('pm') or 0; gm = s.get('gm') or 0; roe = s['roi'] if s.get('roi') is not None else (s.get('roe') or 0)
         f = s.get('fcfB') or 0; r = r40_used(s); de = m.get('de')
         return ((2 if pm >= 15 else (1 if pm >= 5 else 0)) + (1 if gm >= 50 else 0)
                 + (2 if roe >= 20 else (1 if roe >= 10 else 0)) + fcf_pts(s)
@@ -99,13 +99,14 @@ def build(P):
     H.append('<p>Six yes/no checks on the company’s own numbers, taken straight from the board data. Add the points. A missing figure scores zero, so a thin data record drags a score down — I flag that when it affects a decision.</p>')
     H.append(_tbl(['Check', 'What it measures', 'Points'], [[e(a), e(b), e(c)] for a, b, c in THRESHOLDS]))
     H.append('<p><b>Rule of 40 change, 18 Oct 2026:</b> it is now worked out twice and the lower figure scores. The free-cash-flow version flatters software companies that pay staff in shares (the share pay is added back to cash flow) — CrowdStrike reads 52.5 on cash flow but 25.0 on net profit. The net-profit version flatters heavy builders whose depreciation lags their spending — Oracle reads −18.4 on cash flow but +48.0 on net profit. Taking the lower catches both. Effect on the day: CRWD, PANW, NET and DDOG each lost one point; no other name changed. <b>One-off exception:</b> where net profit is distorted by a flagged non-cash item, the cash-flow version is used — Lumentum, whose year to June 2026 carries a $7.76bn non-cash loss on exchanging its convertible notes for shares.</p>')
+    H.append('<p><b>ROIC replaces ROE, 28 Nov 2026:</b> return on equity can be pumped up by borrowing or buying back shares, because both shrink the equity it divides by (Caterpillar showed 55.5% ROE but 18.3% ROIC; Vistra 43.0% vs 11.8%). Return on invested capital counts borrowed money as capital too, so it shows the real operating return. Same bars: 20% or more = 2, 10% to 20% = 1, under 10% = 0 - and 10% is roughly the cost of capital (10-year yield about 4.9% plus a 4-5% equity risk premium), so under 10% a company earns less than investors demand. ROE is used only when the ROIC figure is missing (marked * in matrix row 27c). Effect at 27 Nov closes: 18 of 63 names changed; Credo rose to #1.</p>')
     H.append('<p><b>Free-cash-flow margin change, 28 Nov 2026:</b> the cash check used to give 2 points to any company with positive free cash flow, so a business keeping $4 of every $100 of sales scored the same as one keeping $44. It now scores the margin: 15% or more = 2, positive but under 15% = 1, zero or negative = 0 (15% matches the net-margin bar). 17 of 63 board names lost one point; none gained. The top of the ranking barely moved. The worked examples below are kept as they were on 12 Oct.</p>')
     H.append('<p><b>How to read it:</b> 9–10 = a money machine (Nvidia, Broadcom, Micron, TSMC). 7–8 = good business with one soft spot. 5–6 = cyclical, capital-heavy or indebted. 4 or less = the numbers do not yet support the story.</p>')
 
     H.append('<h3>3. Worked examples (12 Oct 2026 closes)</h3>')
-    H.append('<p>Columns are the six checks in the same order as the table above: net margin, gross margin, return on equity, free cash flow, Rule of 40, debt to equity.</p>')
+    H.append('<p>Columns are the six checks in the same order as the table above: net margin, gross margin, return on equity, free cash flow, Rule of 40, debt to equity - scored as on 12 Oct, before the 28 Nov changes (ROE is now ROIC; free cash flow is now graded by margin).</p>')
     ex = [['<b>' + e(t) + '</b> ' + e(n), '<b>' + str(q) + '</b>'] + [e(x) for x in parts] + [e(why)] for t, n, q, parts, why in EXAMPLES]
-    H.append(_tbl(['Stock', 'Score', 'Net margin', 'Gross margin', 'ROE', 'Free cash flow', 'Rule of 40', 'Debt/equity', 'Why'], ex))
+    H.append(_tbl(['Stock', 'Score', 'Net margin', 'Gross margin', 'ROE (old check)', 'Free cash flow', 'Rule of 40', 'Debt/equity', 'Why'], ex))
 
     H.append('<h3>4. Priority = upside × quality ÷ 10</h3>')
     H.append('<p><b>Upside</b> is how far the price sits below our fair value: fair value ÷ price − 1. <b>Priority</b> multiplies that upside (in %) by the quality score and divides by 10, so a 10-quality stock keeps its full upside and a 5-quality stock keeps half.</p>')
