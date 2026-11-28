@@ -67,6 +67,16 @@ def pline_html():
     path=os.path.join(HERE,'pline_note.html')
     return open(path,encoding='utf-8').read() if os.path.exists(path) else ''
 
+def fcf_html():
+    """Hand-written HTML fragment (fcf_note.html) -> Notes tab chip (filed 28 Nov 2026)."""
+    path=os.path.join(HERE,'fcf_note.html')
+    return open(path,encoding='utf-8').read() if os.path.exists(path) else ''
+
+def expat_html():
+    """Hand-written HTML fragment (expat_note.html) -> Notes tab chip (filed 28 Nov 2026)."""
+    path=os.path.join(HERE,'expat_note.html')
+    return open(path,encoding='utf-8').read() if os.path.exists(path) else ''
+
 def rules_html():
     """Hand-written HTML fragment (rules_sheet.html) -> Notes tab chip."""
     path=os.path.join(HERE,'rules_sheet.html')
@@ -136,7 +146,7 @@ def build(out_path):
         })
     fups = [{'t': f[0], 'type': f[1], 'text': f[2], 'raised': f[3]} for f in FOLLOW_UPS]
     today = datetime.date.today().strftime('%b %d, %Y')
-    data = json.dumps({'stocks': stocks, 'fups': fups, 'gen': today, 'method': method_note.build(P), 'agenda': agenda_html(), 'layers': layers_html(), 'macro': macro_html(), 'gates': gates_html(), 'perf': perf_html(), 'rules': rules_html(), 'pline': pline_html()},
+    data = json.dumps({'stocks': stocks, 'fups': fups, 'gen': today, 'method': method_note.build(P), 'agenda': agenda_html(), 'layers': layers_html(), 'macro': macro_html(), 'gates': gates_html(), 'perf': perf_html(), 'rules': rules_html(), 'pline': pline_html(), 'fcf': fcf_html(), 'expat': expat_html()},
                       ensure_ascii=False).replace('</', '<\\/')
 
     page = """<!doctype html>
@@ -224,6 +234,8 @@ footer{color:var(--mut);font-size:12px;text-align:center;padding:20px}
     <div class="chip" data-f="layers">AI layers: who sells what</div>
     <div class="chip" data-f="macro">MACRO</div>
     <div class="chip" data-f="pline">Price line calculation</div>
+    <div class="chip" data-f="fcf">FCF margin</div>
+    <div class="chip" data-f="expat">Expats leaving Bangkok (P2)</div>
     <div class="chip" data-f="rules">All rules on one sheet</div>
     <div class="chip" data-f="gates">Rate gates</div>
     <div class="chip" data-f="perf">Performance &amp; 2× goal</div>
@@ -287,6 +299,8 @@ function render(){
   if(filter==='gates'){ out.innerHTML = DATA.gates; return; }
   if(filter==='rules'){ out.innerHTML = DATA.rules; return; }
   if(filter==='pline'){ out.innerHTML = DATA.pline; return; }
+  if(filter==='fcf'){ out.innerHTML = DATA.fcf; return; }
+  if(filter==='expat'){ out.innerHTML = DATA.expat; return; }
   if(filter==='perf'){ out.innerHTML = DATA.perf; return; }
   if(filter==='fup'){
     out.innerHTML = DATA.fups.map(f => '<div class="fup"><b>'+esc(f.t)+'</b> · '+esc(f.type)+' · raised '+esc(f.raised)+'<br>'+esc(f.text)+'</div>').join('');
